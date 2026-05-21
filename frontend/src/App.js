@@ -5,7 +5,7 @@ import "./App.css";
 const API = "http://localhost:5000/api";
 
 function formatTime(date) {
-  return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
 }
 
 /* ───────── Main App ───────── */

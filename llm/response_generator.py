@@ -55,7 +55,7 @@ def generate_response(
 
 def _full_response(url: str, payload: dict) -> str:
     try:
-        r = requests.post(url, json=payload, timeout=120)
+        r = requests.post(url, json=payload, timeout=300)
         r.raise_for_status()
         return r.json()["message"]["content"]
     except requests.exceptions.ConnectionError:
@@ -68,7 +68,7 @@ def _full_response(url: str, payload: dict) -> str:
 
 def _stream_response(url: str, payload: dict) -> Generator:
     try:
-        with requests.post(url, json=payload, stream=True, timeout=120) as r:
+        with requests.post(url, json=payload, stream=True, timeout=300) as r:
             r.raise_for_status()
             for line in r.iter_lines():
                 if line:

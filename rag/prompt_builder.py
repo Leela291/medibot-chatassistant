@@ -11,7 +11,7 @@ def build_rag_prompt(
 ) -> str:
     history_text = "\n".join(
         f"{m['role'].capitalize()}: {m['content']}"
-        for m in history[-6:]
+        for m in history[-2:]
     )
     return RAG_PROMPT_TEMPLATE.format(
         context=context,

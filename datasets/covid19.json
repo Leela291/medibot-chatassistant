@@ -1,0 +1,137 @@
+{
+  "disease": "COVID-19",
+  "overview": "COVID-19 (Coronavirus Disease 2019) is a contagious respiratory illness caused by SARS-CoV-2. It affects multiple organ systems with a clinical spectrum ranging from asymptomatic infection to severe disease and death. First identified in Wuhan, China in late 2019, it became a global pandemic in 2020.",
+  "types": [
+    {
+      "name": "Mild COVID-19",
+      "description": "Symptoms like fever, cough, and fatigue without shortness of breath or pneumonia. Managed at home with rest and monitoring."
+    },
+    {
+      "name": "Moderate COVID-19",
+      "description": "Lower respiratory tract involvement with SpO2 90–94%. May require supplemental oxygen but not ICU care."
+    },
+    {
+      "name": "Severe COVID-19",
+      "description": "SpO2 below 90%, severe pneumonia, or signs of organ stress. Requires hospitalization and high-flow oxygen or ventilation."
+    },
+    {
+      "name": "Critical COVID-19",
+      "description": "Acute respiratory distress syndrome (ARDS), septic shock, or multi-organ failure. Requires ICU admission."
+    },
+    {
+      "name": "Long COVID (Post-COVID Condition)",
+      "description": "Persistent symptoms lasting beyond 4–12 weeks after initial infection including fatigue, brain fog, and breathlessness."
+    }
+  ],
+  "symptoms": [
+    "Fever or chills",
+    "Dry cough",
+    "Shortness of breath or difficulty breathing",
+    "Fatigue and body aches",
+    "Headache",
+    "Loss of taste or smell (anosmia/ageusia)",
+    "Sore throat",
+    "Runny or congested nose",
+    "Nausea, vomiting, or diarrhea",
+    "Skin rash (in some cases)"
+  ],
+  "causes": [
+    "SARS-CoV-2 virus (Betacoronavirus family)",
+    "Inhalation of respiratory droplets or aerosols from infected persons",
+    "Touching contaminated surfaces and then touching face (less common)",
+    "Close contact in poorly ventilated indoor spaces",
+    "Exposure in healthcare settings without proper PPE"
+  ],
+  "risk_factors": [
+    "Age 65 years and older",
+    "Obesity (BMI ≥ 30)",
+    "Diabetes mellitus",
+    "Chronic lung disease (COPD, asthma)",
+    "Cardiovascular disease",
+    "Immunocompromised state (cancer, HIV, transplant)",
+    "Chronic kidney or liver disease",
+    "Pregnancy",
+    "Smoking",
+    "Crowded living or working conditions"
+  ],
+  "diagnosis": [
+    "RT-PCR (reverse transcription polymerase chain reaction) — gold standard",
+    "Rapid Antigen Test (RAT) — quick results, lower sensitivity",
+    "CT scan of chest — shows ground-glass opacities in pneumonia",
+    "Pulse oximetry — monitors blood oxygen (SpO2)",
+    "Blood tests: CBC, CRP, D-dimer, ferritin, LFT, RFT",
+    "Antibody/serology test — detects past infection, not suitable for acute diagnosis"
+  ],
+  "treatment": {
+    "antiviral_drugs": [
+      "Remdesivir — for hospitalized patients requiring oxygen",
+      "Nirmatrelvir + Ritonavir (Paxlovid) — for high-risk outpatients within 5 days of symptoms",
+      "Molnupiravir — alternative antiviral for eligible outpatients"
+    ],
+    "anti_inflammatory": [
+      "Dexamethasone — for patients requiring supplemental oxygen or ventilation",
+      "Baricitinib or Tocilizumab — for hospitalized patients with severe inflammation"
+    ],
+    "supportive_care": [
+      "Oxygen therapy via nasal cannula, face mask, or high-flow nasal oxygen (HFNO)",
+      "Mechanical ventilation for ARDS",
+      "Prone positioning to improve oxygenation",
+      "IV fluids and electrolyte management",
+      "Anticoagulation (heparin) to prevent blood clots"
+    ],
+    "home_management": [
+      "Rest and adequate hydration (2–3 litres/day)",
+      "Paracetamol or ibuprofen for fever and pain",
+      "Monitor SpO2 with pulse oximeter daily",
+      "Isolate to prevent spread to others",
+      "Seek help immediately if SpO2 drops below 94%"
+    ]
+  },
+  "complications": [
+    "Viral pneumonia and ARDS (Acute Respiratory Distress Syndrome)",
+    "Blood clots (deep vein thrombosis, pulmonary embolism)",
+    "Myocarditis and cardiac arrhythmias",
+    "Acute kidney injury",
+    "Neurological effects — stroke, encephalitis, Guillain-Barré syndrome",
+    "Secondary bacterial or fungal infections",
+    "Multisystem Inflammatory Syndrome in Children (MIS-C)",
+    "Long COVID — persistent fatigue, cognitive impairment, breathlessness"
+  ],
+  "prevention": [
+    "Vaccination with approved COVID-19 vaccines (primary series + boosters)",
+    "Wear well-fitted mask (N95/KN95) in crowded or poorly ventilated spaces",
+    "Wash hands regularly with soap for at least 20 seconds",
+    "Maintain physical distance from sick individuals",
+    "Ensure good ventilation indoors — open windows or use air purifiers",
+    "Avoid large gatherings during high transmission periods",
+    "Stay home and isolate if symptomatic",
+    "Follow local public health guidelines"
+  ],
+  "emergency_signs": [
+    "Persistent chest pain or pressure",
+    "Severe shortness of breath at rest or inability to speak in full sentences",
+    "SpO2 below 94% on pulse oximeter",
+    "Bluish lips, face, or fingertips (cyanosis)",
+    "Confusion, disorientation, or altered consciousness",
+    "High fever (above 39.4°C / 103°F) not responding to medication",
+    "Sudden inability to stay awake"
+  ],
+  "faqs": [
+    {
+      "question": "How long should I isolate if I test positive for COVID-19?",
+      "answer": "Generally, isolate for at least 5 days from symptom onset. You may end isolation after day 5 if fever-free for 24 hours without fever-reducing medicine and symptoms are improving. Wear a mask around others through day 10."
+    },
+    {
+      "question": "Can I get COVID-19 again after recovering?",
+      "answer": "Yes. Reinfection is possible, especially with new variants. Immunity from prior infection wanes over months. Vaccination — even after natural infection — significantly reduces risk and severity of reinfection."
+    },
+    {
+      "question": "What is Long COVID?",
+      "answer": "Long COVID (Post-COVID Condition) is defined by WHO as symptoms persisting 3 months after COVID-19 infection, lasting at least 2 months. Common symptoms include fatigue, brain fog, breathlessness, and joint pain. Vaccinated individuals are less likely to develop Long COVID."
+    },
+    {
+      "question": "Do antibiotics work for COVID-19?",
+      "answer": "No. COVID-19 is caused by a virus, and antibiotics are ineffective against viruses. Antibiotics may be prescribed only if a secondary bacterial infection is confirmed."
+    }
+  ]
+}

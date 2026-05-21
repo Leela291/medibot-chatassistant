@@ -1,0 +1,137 @@
+{
+  "disease": "Typhoid Fever",
+  "overview": "Typhoid fever is a systemic bacterial infectious disease caused by Salmonella enterica serotype Typhi. It is transmitted through contaminated food and water and remains a major public health concern in South Asia, Africa, and Latin America. Approximately 9.2 million typhoid cases occur globally each year, causing around 133,000 deaths. With appropriate antibiotic treatment, the case fatality rate drops below 1%, but rising drug resistance is a growing challenge.",
+  "types": [
+    {
+      "name": "Typhoid Fever (Enteric Fever)",
+      "description": "Caused by Salmonella Typhi. Gradual onset with rising fever, abdominal symptoms, and risk of serious complications including intestinal perforation."
+    },
+    {
+      "name": "Paratyphoid Fever",
+      "description": "Caused by Salmonella Paratyphi A, B, or C. Similar clinical presentation to typhoid but generally milder. No vaccine currently protects against paratyphoid."
+    },
+    {
+      "name": "Multidrug-Resistant (MDR) Typhoid",
+      "description": "Strains resistant to ampicillin, chloramphenicol, and trimethoprim-sulfamethoxazole. Particularly prevalent in South Asia."
+    },
+    {
+      "name": "Extensively Drug-Resistant (XDR) Typhoid",
+      "description": "Strains resistant to fluoroquinolones, cephalosporins, and multiple other antibiotics. Mainly treated with azithromycin (uncomplicated) or carbapenems (complicated). First reported in Pakistan (2016)."
+    },
+    {
+      "name": "Chronic Typhoid Carrier State",
+      "description": "1–4% of patients continue to shed Salmonella Typhi in stool or urine for 12+ months after apparent recovery, often without symptoms, acting as long-term reservoirs of infection."
+    }
+  ],
+  "symptoms": [
+    "Gradually rising fever (reaching 39–40°C over 1–2 weeks)",
+    "Headache",
+    "Fatigue and malaise",
+    "Loss of appetite (anorexia)",
+    "Abdominal pain or discomfort",
+    "Constipation (more common in adults) or diarrhea (more common in children)",
+    "Dry cough",
+    "Nausea and vomiting",
+    "Muscle aches",
+    "Rose spots — faint pinkish rash on trunk (seen in some patients)",
+    "Hepatosplenomegaly (enlarged liver and spleen)",
+    "Relative bradycardia (slow heart rate relative to fever level)"
+  ],
+  "causes": [
+    "Ingestion of food or water contaminated with Salmonella Typhi from infected human feces",
+    "Consumption of raw fruits and vegetables washed with contaminated water",
+    "Eating food handled by chronic carriers without proper hand hygiene",
+    "Drinking untreated well or municipal water in endemic regions",
+    "Poor sanitation infrastructure allowing sewage to contaminate water supplies"
+  ],
+  "risk_factors": [
+    "Living in or travelling to South Asia (India, Pakistan, Bangladesh), Africa, or Latin America",
+    "Drinking untreated or poorly treated water",
+    "Eating street food or raw produce in endemic areas",
+    "Poor personal hygiene, especially inadequate handwashing",
+    "Young children and infants (higher risk of severe disease)",
+    "People taking acid-suppressing medications (PPIs reduce stomach acid defense against bacteria)",
+    "Close contact with a known typhoid case or carrier",
+    "Attending mass gatherings in endemic regions",
+    "Immunocompromised individuals"
+  ],
+  "diagnosis": [
+    "Blood culture — gold standard (sensitivity ~50% single culture, higher with multiple)",
+    "Bone marrow culture — highest sensitivity (~80%), used when blood culture negative",
+    "Stool and urine cultures — useful in later stages of disease",
+    "Widal test — serological test, low reliability (poor sensitivity and specificity)",
+    "Typhidot / TUBEX tests — newer serology with variable reliability",
+    "PCR testing — rapid and sensitive, useful in research settings but not widely available",
+    "Clinical diagnosis — based on gradual fever progression, travel history, and symptoms"
+  ],
+  "treatment": {
+    "first_line_antibiotics": [
+      "Ceftriaxone (IV) — for uncomplicated and complicated cases, widely used empirically",
+      "Azithromycin (oral) — for uncomplicated typhoid, effective against many resistant strains",
+      "Fluoroquinolones (Ciprofloxacin) — where susceptibility confirmed; resistance is common in South Asia"
+    ],
+    "resistant_typhoid": [
+      "Carbapenems (Meropenem, Imipenem) — for XDR typhoid or complicated cases unresponsive to other drugs",
+      "Azithromycin — preferred for XDR uncomplicated cases"
+    ],
+    "supportive_care": [
+      "Adequate hydration with oral or IV fluids",
+      "Paracetamol for fever control (avoid NSAIDs)",
+      "Nutritional support — small, frequent, easily digestible meals",
+      "Bed rest during acute phase",
+      "Monitoring for and managing complications (perforation, haemorrhage)"
+    ],
+    "surgical_management": [
+      "Emergency surgery for intestinal perforation or haemorrhage",
+      "Bowel repair or resection depending on severity"
+    ]
+  },
+  "complications": [
+    "Intestinal perforation (most serious complication — occurs in ~1–3% of hospitalized cases)",
+    "Gastrointestinal haemorrhage (bleeding in intestine)",
+    "Encephalopathy (typhoid toxin affecting brain — confusion, altered consciousness)",
+    "Myocarditis (heart inflammation)",
+    "Hepatitis (liver inflammation)",
+    "Pneumonia",
+    "Bone and joint infections (rare)",
+    "Haemolytic anaemia",
+    "Chronic carrier state",
+    "Relapse (up to 10% of treated patients — usually milder than initial illness)"
+  ],
+  "prevention": [
+    "Practice strict hand hygiene — wash hands with soap before eating and after using the toilet",
+    "Drink only clean, treated, or boiled water",
+    "Avoid raw produce that cannot be peeled or was washed in untreated water",
+    "Avoid street food or uncooked foods in endemic areas",
+    "Vaccination before travel to endemic regions",
+    "Improve sanitation and sewage infrastructure at community level",
+    "Identify and treat or monitor chronic carriers, especially those in food-handling roles",
+    "Ensure safe food handling practices — proper cooking and storage"
+  ],
+  "emergency_signs": [
+    "Sudden severe abdominal pain with rigid, board-like abdomen (suspect intestinal perforation)",
+    "Passing blood in stool or signs of severe internal bleeding",
+    "Confusion, altered consciousness, or delirium (encephalopathy)",
+    "High fever persisting for more than 2–3 weeks despite treatment",
+    "Signs of shock — rapid weak pulse, cold clammy skin, very low blood pressure",
+    "Inability to drink fluids or persistent vomiting (risk of dehydration)"
+  ],
+  "faqs": [
+    {
+      "question": "How is typhoid fever different from malaria?",
+      "answer": "Both cause fever in tropical regions, but typhoid is bacterial (Salmonella Typhi, spread by contaminated food/water) while malaria is parasitic (Plasmodium, spread by mosquito bites). Typhoid typically has a gradual fever onset and abdominal symptoms, while malaria features cyclical chills and sweating. Blood culture confirms typhoid; blood smear or RDT confirms malaria."
+    },
+    {
+      "question": "Is the typhoid vaccine fully protective?",
+      "answer": "No. Available vaccines offer 50–80% protection. The typhoid conjugate vaccine (TCV) provides stronger, longer-lasting immunity especially in young children. No vaccine currently protects against paratyphoid fever. Food and water hygiene remain essential even after vaccination."
+    },
+    {
+      "question": "Can typhoid recur after treatment?",
+      "answer": "Yes. Up to 10% of patients may experience relapse, usually within 2–3 weeks after apparent recovery. Relapse is generally milder. Completing the full antibiotic course reduces this risk."
+    },
+    {
+      "question": "What are chronic typhoid carriers?",
+      "answer": "About 1–4% of typhoid patients become chronic carriers — they continue to shed bacteria in stool or urine for 12 months or more without feeling ill. Carriers can unknowingly spread infection, especially if they handle food. Prolonged antibiotic treatment (e.g., ciprofloxacin for 4 weeks) can sometimes clear the carrier state."
+    }
+  ]
+}
