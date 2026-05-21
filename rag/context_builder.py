@@ -2,7 +2,7 @@
 """Formats retrieved chunks into a clean context string for the LLM."""
 
 
-def build_context(chunks: list[dict], max_chars: int = 3000) -> str:
+def build_context(chunks: list[dict], max_chars: int = 800) -> str:
     """
     Build a formatted context block from retrieved chunks.
 
@@ -24,7 +24,8 @@ def build_context(chunks: list[dict], max_chars: int = 3000) -> str:
         text    = chunk.get("text", "").strip()
         score   = chunk.get("score", 0.0)
 
-        entry = f"[{i}] Disease: {disease} (relevance: {score:.2f})\n{text}"
+        # entry = f"[{i}] Disease: {disease} (relevance: {score:.2f})\n{text}"
+        entry = f"{disease}\n{text}"
         total += len(entry)
 
         if total > max_chars and sections:

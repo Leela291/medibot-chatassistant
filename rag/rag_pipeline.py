@@ -42,7 +42,12 @@ def run_rag(
     parsed = parse_response(raw_answer)
 
     # 5. Collect source diseases
-    sources = list({c["disease"] for c in retrieved_chunks})
+    sources = list({
+        c["disease"]["name"]
+        if isinstance(c["disease"], dict)
+        else c["disease"]
+        for c in retrieved_chunks
+    })
 
     return {
         "answer":  parsed,

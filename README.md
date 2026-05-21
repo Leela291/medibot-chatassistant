@@ -54,7 +54,7 @@ cd medibot-chatbot
 ### Step 2 — Pull AI models (run once, takes 5-10 min)
 
 ```bash
-ollama pull llama3.2
+ollama pull llama3.2:1b
 ollama pull nomic-embed-text
 ```
 
@@ -77,7 +77,7 @@ Create a file named `.env` in the root folder with:
 
 ```env
 OLLAMA_BASE_URL=http://localhost:11434
-OLLAMA_LLM_MODEL=llama3.2
+OLLAMA_LLM_MODEL=llama3.2:1b
 OLLAMA_EMBED_MODEL=nomic-embed-text
 CHUNK_SIZE=512
 CHUNK_OVERLAP=64

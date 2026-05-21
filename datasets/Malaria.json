@@ -1,0 +1,138 @@
+{
+  "disease": "Malaria",
+  "overview": "Malaria is a life-threatening parasitic disease caused by Plasmodium parasites, transmitted to humans through the bites of infected female Anopheles mosquitoes. It remains a major global health problem, especially in tropical and subtropical regions. Though preventable and treatable, malaria causes hundreds of millions of infections annually and is a leading cause of mortality in children under five.",
+  "types": [
+    {
+      "name": "Plasmodium falciparum Malaria",
+      "description": "The most dangerous species, responsible for the majority of severe malaria cases and deaths. Causes cerebral malaria, severe anemia, and multi-organ failure."
+    },
+    {
+      "name": "Plasmodium vivax Malaria",
+      "description": "Can remain dormant in the liver as hypnozoites and cause relapses months or years after initial infection. Common in Asia and Latin America."
+    },
+    {
+      "name": "Plasmodium ovale Malaria",
+      "description": "Similar to P. vivax; milder disease with potential for relapse due to liver dormancy. Mainly found in West Africa."
+    },
+    {
+      "name": "Plasmodium malariae Malaria",
+      "description": "Causes a mild, chronic infection. Can persist at low levels in blood for years if untreated. Associated with kidney disease in chronic cases."
+    },
+    {
+      "name": "Plasmodium knowlesi Malaria",
+      "description": "A zoonotic species naturally infecting macaque monkeys. Can cause rapidly progressing severe disease in humans. Found in forested regions of Southeast Asia."
+    }
+  ],
+  "symptoms": [
+    "Fever (often cyclical — every 48 or 72 hours)",
+    "Chills and rigors",
+    "Profuse sweating",
+    "Severe headache",
+    "Muscle and joint pain",
+    "Fatigue and weakness",
+    "Nausea and vomiting",
+    "Abdominal pain",
+    "Anaemia (pallor, weakness, fatigue)",
+    "Enlarged spleen (splenomegaly) in chronic cases",
+    "Jaundice (yellowing of skin and eyes) due to red blood cell destruction"
+  ],
+  "causes": [
+    "Bite of infected female Anopheles mosquito injecting Plasmodium sporozoites",
+    "Blood transfusion with infected blood (rare)",
+    "Congenital transmission from infected mother to newborn",
+    "Shared use of contaminated needles (rare)",
+    "Parasites invade liver cells then red blood cells, causing their rupture"
+  ],
+  "risk_factors": [
+    "Living in or travelling to malaria-endemic tropical regions (Sub-Saharan Africa, South Asia, Southeast Asia)",
+    "Lack of mosquito net or repellent use",
+    "Outdoor exposure at night (when Anopheles mosquitoes are most active)",
+    "Children under 5 years",
+    "Pregnant women (increased susceptibility)",
+    "People with no prior immunity (first-time travellers to endemic areas)",
+    "HIV/AIDS and other immunosuppressive conditions",
+    "Poor sanitation and stagnant water near homes"
+  ],
+  "diagnosis": [
+    "Microscopy of thick and thin blood smear — gold standard for species identification",
+    "Rapid Diagnostic Tests (RDTs) — detect malaria antigens, fast results in field settings",
+    "PCR (Polymerase Chain Reaction) — highly sensitive, used in research and low-parasitemia cases",
+    "Complete blood count (CBC) — reveals anaemia and low platelets",
+    "Liver function tests and renal function tests in severe cases"
+  ],
+  "treatment": {
+    "uncomplicated_malaria": [
+      "Artemisinin-based Combination Therapy (ACT) — first-line treatment recommended by WHO",
+      "Artemether + Lumefantrine (Coartem) — most widely used ACT",
+      "Artesunate + Amodiaquine",
+      "Artesunate + Mefloquine — used in Southeast Asia",
+      "Chloroquine — only for P. vivax, P. ovale, P. malariae where resistant strains absent"
+    ],
+    "severe_malaria": [
+      "Intravenous (IV) Artesunate — first-line for severe malaria",
+      "Followed by full course of ACT after patient can take oral medication",
+      "IV Quinine + Doxycycline — alternative if artesunate unavailable",
+      "Supportive care: IV fluids, blood transfusion, oxygen, seizure management"
+    ],
+    "radical_cure_relapse_prevention": [
+      "Primaquine — to eliminate P. vivax and P. ovale dormant liver stages (hypnozoites)",
+      "G6PD testing required before Primaquine to avoid haemolysis in deficient patients",
+      "Tafenoquine — newer alternative to Primaquine for radical cure (single dose)"
+    ],
+    "prevention_chemoprophylaxis": [
+      "Atovaquone-Proguanil (Malarone) — for travellers",
+      "Doxycycline — for travellers to resistant areas",
+      "Mefloquine — weekly prophylaxis option"
+    ]
+  },
+  "complications": [
+    "Cerebral malaria — confusion, seizures, coma (mainly P. falciparum)",
+    "Severe anaemia requiring blood transfusion",
+    "Acute respiratory distress syndrome (ARDS)",
+    "Acute kidney injury (blackwater fever — haemoglobin in urine)",
+    "Hypoglycaemia (especially in pregnant women and children)",
+    "Splenic rupture",
+    "Pulmonary oedema",
+    "Shock and multi-organ failure",
+    "Death if untreated severe malaria"
+  ],
+  "prevention": [
+    "Sleep under insecticide-treated bed nets (ITNs) every night",
+    "Indoor residual spraying (IRS) with approved insecticides",
+    "Use of insect repellents (DEET-based) on exposed skin",
+    "Wear long-sleeved clothing and long trousers at night",
+    "Malaria vaccination: RTS,S/AS01 (Mosquirix) and R21/Matrix-M — for children in high-transmission areas",
+    "Seasonal Malaria Chemoprevention (SMC) for children in Sahel region",
+    "Intermittent Preventive Treatment in Pregnancy (IPTp) using sulfadoxine-pyrimethamine",
+    "Eliminate standing water and mosquito breeding sites near homes",
+    "Take prescribed chemoprophylaxis before and during travel to endemic areas"
+  ],
+  "emergency_signs": [
+    "Altered consciousness, confusion, or coma (cerebral malaria)",
+    "Multiple seizures",
+    "Severe respiratory distress or laboured breathing",
+    "Inability to sit or stand (extreme weakness/prostration)",
+    "Passage of dark red/black urine (blackwater fever)",
+    "Heavy bleeding or signs of severe anaemia (extreme pallor)",
+    "Persistent vomiting — unable to take oral medication",
+    "Hypoglycaemia (low blood sugar)"
+  ],
+  "faqs": [
+    {
+      "question": "Can malaria be completely cured?",
+      "answer": "Yes, with correct treatment. P. falciparum malaria is curable with ACT. P. vivax and P. ovale require additional treatment with Primaquine to eliminate dormant liver stages and prevent relapse."
+    },
+    {
+      "question": "Can malaria relapse after treatment?",
+      "answer": "Yes. P. vivax and P. ovale form dormant liver stages (hypnozoites) that can reactivate weeks to years later. Primaquine or Tafenoquine is required for radical cure and relapse prevention."
+    },
+    {
+      "question": "Is malaria contagious from person to person?",
+      "answer": "Malaria cannot spread directly between people through casual contact. It is transmitted only via infected Anopheles mosquito bites. However, it can rarely spread through blood transfusion, organ transplant, or from mother to unborn child."
+    },
+    {
+      "question": "Is there a vaccine for malaria?",
+      "answer": "Yes. RTS,S/AS01 (Mosquirix) and R21/Matrix-M are WHO-recommended malaria vaccines for children in moderate-to-high transmission areas. They reduce severe malaria cases significantly but are not 100% protective — other preventive measures remain essential."
+    }
+  ]
+}
