@@ -1,0 +1,770 @@
+{
+  "disease": "Influenza (Flu)",
+  "sources": [
+    "Gamblin & Skehel – Influenza Hemagglutinin and Neuraminidase Membrane Glycoproteins, Journal of Biological Chemistry (2010)",
+    "Dangi & Jain – Influenza Virus: A Brief Overview, Proc. Natl. Acad. Sci. India (2012)",
+    "CDC Pink Book – Chapter 12: Influenza, Epidemiology and Prevention of Vaccine-Preventable Diseases (2024)"
+  ],
+  "intents": [
+
+    {
+      "tag": "about_influenza_cdc",
+      "patterns": [
+        "what is influenza",
+        "define influenza",
+        "what kind of illness is influenza",
+        "tell me about the flu",
+        "influenza overview",
+        "basic facts about flu",
+        "what does influenza mean"
+      ],
+      "responses": [
+        "Influenza is an infectious viral illness. The name 'influenza' originated in 15th-century Italy from an epidemic attributed to 'influence of the stars.' It is caused by single-stranded RNA viruses of the Orthomyxovirus family.",
+        "Influenza is a highly contagious airborne disease that causes acute febrile respiratory illness, resulting in variable degrees of systemic symptoms ranging from mild fatigue to respiratory failure and death.",
+        "Influenza virus infects 5–15% of the global population annually. It leads to high morbidity in all age groups and high mortality particularly in children, adults over 60, patients with chronic illnesses, and pregnant women."
+      ]
+    },
+
+    {
+      "tag": "influenza_name_origin",
+      "patterns": [
+        "where did the name influenza come from",
+        "origin of the word influenza",
+        "why is it called influenza",
+        "history of the name flu",
+        "what does the word influenza mean"
+      ],
+      "responses": [
+        "The name 'influenza' originated in 15th-century Italy, from an epidemic attributed to 'influence of the stars.' This reflects the historical belief that celestial bodies influenced disease outbreaks.",
+        "The first documented pandemic that clearly fits the description of influenza occurred in 1580. At least four pandemics occurred in the 19th century, three in the 20th century, and one in the 21st century."
+      ]
+    },
+
+    {
+      "tag": "influenza_virus_classification",
+      "patterns": [
+        "what family does influenza belong to",
+        "influenza virus classification",
+        "influenza Orthomyxoviridae",
+        "what type of virus is influenza",
+        "influenza RNA virus",
+        "is influenza a DNA or RNA virus"
+      ],
+      "responses": [
+        "Influenza viruses are single-stranded, negative-sense, segmented RNA viruses belonging to the family Orthomyxoviridae. They are about 80–120 nm in size and roughly spherical or ovoid in shape.",
+        "All three subtypes of influenza virus (A, B, C) are similar in structure but vary antigenically. Each contains a genome of eight RNA segments of variable length encoding 11 proteins.",
+        "Influenza A viruses are classified into subtypes based on their two surface glycoproteins: Hemagglutinin (HA) and Neuraminidase (NA). To date, 16 HA subtypes (H1–H16) and 9 NA subtypes (N1–N9) have been identified."
+      ]
+    },
+
+    {
+      "tag": "influenza_types_abc",
+      "patterns": [
+        "types of influenza",
+        "influenza A B C differences",
+        "what is influenza A",
+        "what is influenza B",
+        "what is influenza C",
+        "difference between influenza A and B",
+        "which type of flu is most dangerous"
+      ],
+      "responses": [
+        "Influenza has three types that affect humans — A, B, and C. Type A is the most common and severe. Type B is mild and more common in children. Type C is rare and not virulent.",
+        "Influenza A has a wide host range (humans, birds, horses, pigs, ferrets, seals, whales, mink, cats, dogs) and can cause pandemics and epidemics. Influenza B and C have limited host ranges, mainly affecting humans.",
+        "Key differences: Type A — most frequent, virulent, pandemic/epidemic potential, high antigenic variation (both shift and drift), reservoir in wild aquatic birds. Type B — mild, epidemic only, low mutation rate (only drift), no animal reservoir. Type C — rare, sporadic, no antigenic recombination."
+      ]
+    },
+
+    {
+      "tag": "virus_structure_proteins",
+      "patterns": [
+        "structure of influenza virus",
+        "influenza virus proteins",
+        "viral proteins in influenza",
+        "what proteins does influenza have",
+        "influenza HA NA M1 M2",
+        "influenza virus components",
+        "what is inside the influenza virus"
+      ],
+      "responses": [
+        "The influenza virus is enclosed by a lipid bilayer envelope from the host membrane. It contains two major surface glycoproteins — Hemagglutinin (HA) and Neuraminidase (NA) — which act as antigenic determinants and trigger immune responses.",
+        "Influenza encodes 11 proteins: surface glycoproteins (HA, NA), polymerase proteins (PB1, PB1-F2, PB2, PA), nucleoprotein (NP), matrix proteins (M1, M2 ion channel), and nonstructural proteins (NS1, NS2). Each plays a distinct role in the virus life cycle.",
+        "The eight RNA genome segments encode proteins with specific functions: HA for cell entry, NA for virus release, PA for endonuclease activity, PB1 for mRNA transcription, PB2 for replication, PB1-F2 for apoptosis, M1 for structural stability, M2 as ion channel, NP for nuclear transport, NS1 for immune evasion, and NS2 for nuclear import."
+      ]
+    },
+
+    {
+      "tag": "hemagglutinin_function",
+      "patterns": [
+        "what does hemagglutinin do",
+        "role of HA in influenza",
+        "hemagglutinin function",
+        "how does hemagglutinin work",
+        "HA protein influenza",
+        "influenza cell attachment"
+      ],
+      "responses": [
+        "Hemagglutinin (HA) is a trimer of identical subunits responsible for two key functions: binding to sialic acid receptors on target cells to initiate infection, and fusing the virus membrane with the endosomal membrane to release the viral genome into the host cell.",
+        "HA binds to sialic acid on the surface of respiratory epithelial cells. Human influenza viruses prefer sialic acid in alpha-2,6-linkage to galactose, while avian viruses prefer alpha-2,3-linked sialic acid. This receptor specificity determines which host species a virus can infect.",
+        "HA is produced as a precursor (HA0) that must be cleaved into two subunits (HA1 and HA2) by host enzymes for the virus to become infectious. Some highly pathogenic H5 and H7 viruses have multiple basic residues at the cleavage site, making them highly infectious and pathogenic."
+      ]
+    },
+
+    {
+      "tag": "neuraminidase_function",
+      "patterns": [
+        "what does neuraminidase do",
+        "role of NA in influenza",
+        "neuraminidase function",
+        "how neuraminidase works",
+        "NA protein influenza",
+        "virus release from cells"
+      ],
+      "responses": [
+        "Neuraminidase (NA) is a mushroom-shaped tetramer on the virus surface. Its primary role is to remove sialic acid from infected cell surfaces so that newly assembled virus particles can be released and spread to infect new cells.",
+        "Without neuraminidase activity, newly made viruses would remain stuck to the infected cell surface, preventing spread. NA also helps virus particles spread through the mucus of the respiratory tract.",
+        "NA is the target of antiviral drugs like oseltamivir (Tamiflu) and zanamivir (Relenza). These drugs mimic sialic acid and block the NA enzyme, preventing virus release and limiting infection spread."
+      ]
+    },
+
+    {
+      "tag": "sialic_acid_receptor",
+      "patterns": [
+        "what is sialic acid in flu",
+        "influenza sialic acid receptor",
+        "how flu attaches to cells",
+        "alpha 2-6 vs alpha 2-3 sialic acid",
+        "bird flu human receptor difference",
+        "receptor binding specificity influenza"
+      ],
+      "responses": [
+        "Influenza viruses bind to sialic acid receptors on host cell surfaces. Human influenza viruses prefer sialic acid in alpha-2,6-linkage (predominant in human respiratory tract), while avian influenza viruses prefer alpha-2,3-linkage (predominant in bird intestinal tracts).",
+        "Swine influenza viruses can bind both alpha-2,6 and alpha-2,3-linked sialic acids, which is why pigs can act as mixing vessels for human, avian, and swine influenza viruses — enabling genetic reassortment.",
+        "The 2009 pandemic H1N1 (swine-origin) virus was well adapted to mammalian hosts and could bind both alpha-2,6 and alpha-2,3-linked receptors, found in the conjunctiva, distal airways, and alveolar pneumocytes."
+      ]
+    },
+
+    {
+      "tag": "m2_protein_ion_channel",
+      "patterns": [
+        "what is M2 protein",
+        "M2 ion channel influenza",
+        "how does M2 work in flu",
+        "amantadine target flu",
+        "proton channel influenza virus",
+        "virus uncoating flu"
+      ],
+      "responses": [
+        "The M2 protein is a 97-residue ion channel protein embedded in the influenza virus envelope. It forms tetramers of transmembrane helices to create a proton channel. After endocytosis, M2 acidifies the viral interior, causing the viral genome to be released into the host cell cytoplasm.",
+        "Two conserved residues in the M2 proton channel — His37 and Trp41 — are critical for proton transport. His37 is protonated at low pH triggering proton flow, while Trp41 forms a gate that opens at low pH to allow proton flow.",
+        "Adamantane drugs (amantadine, rimantadine) work by blocking the M2 proton channel, preventing viral uncoating and genome release. However, most current influenza A and B strains have developed resistance to adamantanes."
+      ]
+    },
+
+    {
+      "tag": "virus_replication_lifecycle",
+      "patterns": [
+        "how does influenza replicate",
+        "life cycle of influenza virus",
+        "influenza replication steps",
+        "how flu virus makes copies",
+        "influenza viral replication mechanism",
+        "flu virus inside cell"
+      ],
+      "responses": [
+        "The influenza life cycle: (1) HA binds to sialic acid receptors on host cell surface; (2) virus is internalized by receptor-mediated endocytosis into an endosome; (3) M2 protein acidifies the endosome; (4) HA undergoes conformational change, fusing viral and endosomal membranes; (5) viral ribonucleoprotein (vRNP) is released into cytoplasm.",
+        "Once the vRNP reaches the nucleus, viral polymerase initiates transcription via the 'cap snatching mechanism' — PB2 binds the 5' cap of host mRNA, and PA cleaves it 10–13 nucleotides downstream to prime viral mRNA synthesis. New viral proteins are made and transported to the cell membrane.",
+        "New viral RNA is replicated in the nucleus and exported to the cytoplasm. Viral proteins (HA, NA, M2) are processed in the endoplasmic reticulum, glycosylated in the Golgi apparatus, and transported to the cell membrane where new virus particles assemble and bud off, disseminated by NA activity."
+      ]
+    },
+
+    {
+      "tag": "cap_snatching",
+      "patterns": [
+        "what is cap snatching",
+        "influenza cap snatching mechanism",
+        "how flu steals host mRNA cap",
+        "PB2 influenza transcription",
+        "viral mRNA transcription mechanism"
+      ],
+      "responses": [
+        "Influenza uses a unique 'cap snatching' mechanism for viral mRNA transcription. The PB2 subunit of the viral polymerase binds to the 5' cap (m7GTP) of a host pre-mRNA, and the PA subunit (which has endonuclease activity) cleaves the host mRNA 10–13 nucleotides downstream of the cap.",
+        "The cleaved capped fragment is then used as a primer to initiate viral mRNA transcription. This allows the virus to hijack the host cell's transcription machinery to produce viral proteins.",
+        "Cap snatching is a potential drug target because it is unique to influenza viruses. Cap-dependent endonuclease inhibitors (like baloxavir marboxil) target this mechanism and are FDA-approved for influenza treatment."
+      ]
+    },
+
+    {
+      "tag": "antigenic_drift_shift_advanced",
+      "patterns": [
+        "antigenic drift influenza",
+        "antigenic shift influenza",
+        "how does flu virus change",
+        "genetic reassortment flu",
+        "why does influenza mutate",
+        "influenza genetic variation"
+      ],
+      "responses": [
+        "Antigenic drift refers to small, gradual point mutations in the surface glycoproteins (HA and NA) caused by error-prone viral RNA polymerase (RdRP). These minor changes accumulate over time and allow the virus to escape prior immunity, causing seasonal epidemics and requiring annual vaccine updates.",
+        "Antigenic shift is a sudden, major change resulting from genetic reassortment — when two different influenza viruses infect the same cell simultaneously and exchange entire RNA gene segments. This creates a completely new virus subtype that humans have no immunity against, causing pandemics.",
+        "Pigs serve as key 'mixing vessels' for antigenic shift because they can be infected by human, avian, and swine influenza viruses simultaneously. The 2009 H1N1 pandemic virus arose from reassortment of North American swine, Eurasian swine, human, and avian influenza gene segments inside pigs."
+      ]
+    },
+
+    {
+      "tag": "ns1_immune_evasion",
+      "patterns": [
+        "how does flu evade immune system",
+        "NS1 protein influenza",
+        "influenza immune evasion",
+        "interferon and flu",
+        "NS1 interferon",
+        "flu blocking immune response"
+      ],
+      "responses": [
+        "The nonstructural protein NS1 of influenza viruses helps the virus evade host immune defenses by inhibiting IRF3 (Interferon Regulatory Factor 3), a transcription factor that triggers production of interferon-beta (IFN-β), a key antiviral cytokine.",
+        "By suppressing IFN-β production, NS1 allows the virus to replicate more extensively before the innate immune response kicks in. This is one reason why highly pathogenic strains like H5N1 can be so devastating — their NS1 proteins are particularly effective at immune evasion.",
+        "NS1 also suppresses host protein production, further giving the virus a replication advantage. This property makes NS1 an important target for antiviral drug development."
+      ]
+    },
+
+    {
+      "tag": "cytokine_storm",
+      "patterns": [
+        "cytokine storm influenza",
+        "inflammatory response flu",
+        "why does flu cause severe illness",
+        "flu immune overreaction",
+        "proinflammatory cytokines flu",
+        "TNF influenza",
+        "what causes severe flu illness"
+      ],
+      "responses": [
+        "Common flu symptoms like fever, headache, and fatigue result from huge amounts of proinflammatory cytokines and chemokines (such as interferon, TNF-α, IL-1, IL-6) produced by influenza-infected cells. This immune response, while necessary, can cause severe collateral damage.",
+        "In severe influenza (especially H5N1 and some H1N1 cases), an excessive and dysregulated immune response called a 'cytokine storm' occurs. Key cytokines involved include TNF-α, IL-6, IL-1, MCP-1, RANTES, MIP-1, and IP-10, which flood the lungs and cause acute respiratory distress.",
+        "Patients who died or developed ARDS from pandemic H1N1 had markedly elevated plasma levels of IL-6, IL-10, IL-15, and TNF-α throughout illness. H5N1 induces proinflammatory cytokines more strongly than pandemic H1N1 or seasonal H1N1, contributing to its higher lethality."
+      ]
+    },
+
+    {
+      "tag": "host_immune_response",
+      "patterns": [
+        "immune response to influenza",
+        "how does body fight flu",
+        "flu and innate immunity",
+        "adaptive immune response flu",
+        "IgA and influenza",
+        "T cells and flu",
+        "flu antibodies"
+      ],
+      "responses": [
+        "The host immune response to influenza involves both innate and adaptive components. Innate immunity is the first line of defense, mediated by Type I Interferon (IFN) produced by infected respiratory epithelial cells and alveolar macrophages.",
+        "The adaptive immune response to influenza includes humoral immunity (antibodies against HA and NA that block infection and virus release) and cell-mediated immunity (cytotoxic T cells that kill infected cells). Both are important for recovery and long-term protection.",
+        "Respiratory epithelial cells and alveolar macrophages are the primary targets for influenza. Their infection triggers production of cytokines that recruit monocytes, neutrophils, dendritic cells, and lymphocytes — amplifying the inflammatory response and clearing the virus."
+      ]
+    },
+
+    {
+      "tag": "clinical_features_cdc",
+      "patterns": [
+        "flu symptoms list",
+        "clinical features influenza",
+        "what are flu symptoms",
+        "influenza signs",
+        "flu symptoms cdc",
+        "respiratory symptoms flu",
+        "systemic symptoms flu"
+      ],
+      "responses": [
+        "Influenza symptoms appear suddenly and include: Respiratory — cough, sore throat, runny or stuffy nose; Systemic — fever, chills, headache, malaise, myalgia (muscle aches); and Gastrointestinal — vomiting and diarrhea (especially in children).",
+        "The incubation period for influenza is usually 2 days but can range from 1 to 4 days. On average, about 8% of the U.S. population gets sick from influenza each season (range 3%–11%).",
+        "Recovery is usually rapid. Fever generally resolves within 3–4 days and other symptoms within approximately 7 days. Some patients may have lingering weakness (asthenia) for several weeks."
+      ]
+    },
+
+    {
+      "tag": "incubation_period_cdc",
+      "patterns": [
+        "flu incubation period",
+        "how long before flu symptoms appear",
+        "flu exposure to symptoms",
+        "days before you feel sick with flu",
+        "how long does flu take to develop"
+      ],
+      "responses": [
+        "The incubation period for influenza is usually 2 days but can range from 1 to 4 days (CDC Pink Book 2024).",
+        "After exposure to the flu virus, most people develop symptoms within 1–5 days. During the incubation period, people may feel well but can already be contagious to others."
+      ]
+    },
+
+    {
+      "tag": "communicability_period",
+      "patterns": [
+        "how long is flu contagious",
+        "flu communicability period",
+        "when does flu stop being contagious",
+        "flu infectious period",
+        "how long can you spread flu"
+      ],
+      "responses": [
+        "Adults are contagious from 1 day before symptom onset to 5–7 days after. Children can remain contagious for up to 10 days after symptom onset (CDC Pink Book 2024).",
+        "Patients with 2009 H1N1 typically presented symptoms within a week of exposure and remained infectious for about 8 days after onset of symptoms."
+      ]
+    },
+
+    {
+      "tag": "flu_transmission_routes",
+      "patterns": [
+        "how does flu spread",
+        "flu transmission",
+        "droplet transmission flu",
+        "aerosol flu transmission",
+        "fomite transmission flu",
+        "can you catch flu from surfaces"
+      ],
+      "responses": [
+        "Influenza spreads via three main routes: (1) Large respiratory droplets — person-to-person transmission when an infected person coughs or sneezes; (2) Aerosol transmission of small droplets through the air; (3) Fomite exposure — touching contaminated surfaces and then touching the mouth, nose, or eyes.",
+        "Large droplet transmission is the primary route. This is why flu spreads readily in crowded, poorly ventilated indoor settings where people are in close proximity.",
+        "Influenza occurs throughout the world. In the northern hemisphere it circulates October through April or May; in the southern hemisphere April through September; and year-round in tropical climates."
+      ]
+    },
+
+    {
+      "tag": "flu_reservoir",
+      "patterns": [
+        "animal reservoir for influenza",
+        "where does flu come from",
+        "flu in animals",
+        "wild birds and influenza",
+        "influenza reservoir species",
+        "flu reservoir host"
+      ],
+      "responses": [
+        "Wild aquatic birds (especially waterfowl) are the primary reservoir for influenza A viruses. In birds, infection is largely intestinal, waterborne, and often asymptomatic.",
+        "Influenza A also naturally infects pigs, horses, seals, whales, ferrets, mink, giant anteaters, cats, and dogs. Type B generally infects only humans. Type C infects only humans.",
+        "Pigs are particularly important as 'mixing vessels' for influenza reassortment because they can be simultaneously infected by human, avian, and swine influenza A viruses, potentially generating new pandemic strains."
+      ]
+    },
+
+    {
+      "tag": "influenza_complications_cdc",
+      "patterns": [
+        "flu complications",
+        "influenza complications list",
+        "what diseases can flu cause",
+        "serious flu complications",
+        "flu and pneumonia",
+        "flu brain complications",
+        "flu heart complications",
+        "Reye syndrome flu",
+        "Guillain Barre flu"
+      ],
+      "responses": [
+        "Common influenza complications include: secondary bacterial pneumonia (caused by Streptococcus pneumoniae, Haemophilus influenzae, or Staphylococcus aureus), exacerbations of underlying respiratory conditions, otitis media (ear infection), laryngotracheobronchitis, and bronchitis.",
+        "Less common but serious complications include: primary viral pneumonia, encephalitis, aseptic meningitis, transverse myelitis, myocarditis (heart inflammation), pericarditis, Guillain-Barré syndrome (GBS), and Reye Syndrome.",
+        "Reye Syndrome is a rare but serious complication that occurs almost exclusively in children taking aspirin during influenza B (or varicella) infection. It causes severe vomiting and confusion that may progress to coma due to brain swelling. Aspirin should never be given to children under 18 with flu."
+      ]
+    },
+
+    {
+      "tag": "reye_syndrome",
+      "patterns": [
+        "what is Reye syndrome",
+        "Reye syndrome and flu",
+        "aspirin and flu children",
+        "why no aspirin for children with flu",
+        "flu aspirin danger"
+      ],
+      "responses": [
+        "Reye Syndrome is a serious complication that occurs almost exclusively in children who take aspirin or salicylate-containing products during influenza B (or varicella) infection. It presents with severe vomiting and confusion that may progress to coma due to swelling of the brain.",
+        "Aspirin and salicylate-containing products should NEVER be given to children or adolescents with flu symptoms due to the risk of Reye Syndrome. Use acetaminophen or ibuprofen instead.",
+        "For pain and fever control in flu patients, acetaminophen (Tylenol) or ibuprofen are safe options. Aspirin is contraindicated in anyone under 18 years old with a viral illness."
+      ]
+    },
+
+    {
+      "tag": "flu_diagnosis_modern",
+      "patterns": [
+        "how is flu diagnosed",
+        "flu test types",
+        "rapid flu test",
+        "RT-PCR flu",
+        "influenza diagnostic tests",
+        "molecular flu test",
+        "antigen flu test",
+        "flu SC2 multiplex assay"
+      ],
+      "responses": [
+        "Influenza laboratory tests include: (1) Molecular assays — rapid molecular tests, RT-PCR (most sensitive and specific), and other nucleic acid amplification tests (NAATs); (2) Antigen detection tests — rapid influenza diagnostic tests (RIDTs) and immunofluorescence assays (DFA/IFA).",
+        "RT-PCR is the gold standard for influenza diagnosis. It can distinguish between seasonal H1N1, H3N2, pandemic H1N1, and influenza B. The Flu SC2 Multiplex Assay is a real-time RT-PCR test that simultaneously detects SARS-CoV-2, influenza A, and influenza B in one test.",
+        "Serology testing is no longer used for clinical diagnosis of influenza but is still used for research studies. Rapid Influenza Diagnostic Tests (RIDTs) have lower sensitivity and may miss cases — negative RIDT results do not rule out flu, especially during high flu season.",
+        "RIDT tests cannot distinguish between seasonal H1N1, H3N2, and pandemic H1N1. DFA tests can distinguish influenza from other respiratory viruses like adenovirus and RSV but cannot subtype influenza. RT-PCR is needed to distinguish pandemic from seasonal influenza subtypes."
+      ]
+    },
+
+    {
+      "tag": "antiviral_drugs_advanced",
+      "patterns": [
+        "antiviral drugs for influenza",
+        "Tamiflu oseltamivir",
+        "Relenza zanamivir",
+        "neuraminidase inhibitors flu",
+        "adamantane antiviral flu",
+        "baloxavir flu treatment",
+        "FDA approved flu drugs",
+        "cap endonuclease inhibitor flu"
+      ],
+      "responses": [
+        "Two main classes of antivirals are approved for influenza: (1) Neuraminidase inhibitors — oseltamivir (Tamiflu), zanamivir (Relenza), and peramivir — which block the NA enzyme to prevent virus release; (2) Cap-dependent endonuclease inhibitors — such as baloxavir marboxil — which block viral mRNA transcription via the cap snatching mechanism.",
+        "Adamantane drugs (amantadine, rimantadine) work by blocking the M2 proton channel, preventing viral uncoating. However, most current influenza A and B viruses have developed high resistance to adamantanes, so they are no longer recommended for use.",
+        "The 2009 H1N1 pandemic virus was initially susceptible to oseltamivir, but oseltamivir-resistant mutants bearing the H275Y mutation emerged. This mutation reduces oseltamivir binding by a factor of 265 but has only a minor effect on sensitivity to zanamivir."
+      ]
+    },
+
+    {
+      "tag": "tamiflu_resistance",
+      "patterns": [
+        "Tamiflu resistance",
+        "oseltamivir resistant flu",
+        "H274Y mutation flu",
+        "flu drug resistance",
+        "zanamivir resistant flu",
+        "antiviral resistance influenza"
+      ],
+      "responses": [
+        "The key mutation conferring Tamiflu (oseltamivir) resistance in N1 neuraminidase is H274Y (also written H275Y in N2 numbering). This substitution reduces oseltamivir binding by a factor of 265 but has only about a 2-fold effect on zanamivir sensitivity.",
+        "In the winter of 2007–2008, Tamiflu-resistant H1N1 viruses unexpectedly dominated worldwide flu isolates despite little drug usage, demonstrating the potential for drug-resistant strains to emerge and spread without drug selection pressure.",
+        "Resistance to oseltamivir arises when the H274Y mutation causes the bulkier tyrosine residue to push the Glu-276 side chain toward the Tamiflu-binding site, disrupting the hydrophobic pocket needed for oseltamivir binding. Zanamivir is unaffected because it binds through hydrogen bonds rather than hydrophobic contacts."
+      ]
+    },
+
+    {
+      "tag": "vaccine_types_detailed",
+      "patterns": [
+        "types of flu vaccine",
+        "inactivated flu vaccine IIV",
+        "live attenuated flu vaccine LAIV",
+        "recombinant flu vaccine RIV",
+        "nasal spray flu vaccine",
+        "trivalent quadrivalent flu vaccine",
+        "flu shot types"
+      ],
+      "responses": [
+        "Influenza vaccines come in three forms: (1) Inactivated Influenza Vaccine (IIV) — injected, contains killed virus, safe for most people including pregnant women and immunocompromised; (2) Live Attenuated Influenza Vaccine (LAIV) — nasal spray, contains weakened live virus, approved for healthy non-pregnant individuals aged 2–49; (3) Recombinant Influenza Vaccine (RIV) — egg-free, made using recombinant technology.",
+        "The standard annual flu vaccine is trivalent (three strains: A/H1N1, A/H3N2, and one B strain) or quadrivalent (four strains: two A and two B). WHO recommends two vaccines per year globally — one for the Northern Hemisphere and one for the Southern Hemisphere.",
+        "The first inactivated flu vaccine was developed in the late 1930s and 1940s. The first live attenuated flu vaccine was licensed in 2003. A non-live, recombinant influenza vaccine not requiring isolation or growth in hen's eggs was licensed in 2013."
+      ]
+    },
+
+    {
+      "tag": "vaccine_composition",
+      "patterns": [
+        "how is flu vaccine made",
+        "flu vaccine composition",
+        "how are flu strains selected for vaccine",
+        "WHO flu vaccine recommendation",
+        "annual flu vaccine strains",
+        "flu vaccine egg based"
+      ],
+      "responses": [
+        "Each year, WHO analyzes circulating influenza strains worldwide and recommends the composition of the annual flu vaccine for both the Northern and Southern hemispheres. The vaccine is reformulated annually to match the predicted dominant circulating strains.",
+        "Most flu vaccines are grown in embryonated hens' eggs. Macfarlane Burnet discovered in 1936 that influenza virus could be grown in embryonated hen's eggs, which led to the development of the first inactivated vaccines.",
+        "Currently marketed influenza vaccines work by generating antibodies against the viral hemagglutinin (HA) protein, which is the main target of protective immunity. Both HA and NA are important immunogens in anti-influenza vaccines."
+      ]
+    },
+
+    {
+      "tag": "vaccine_safety_iiv",
+      "patterns": [
+        "flu shot side effects",
+        "inactivated flu vaccine side effects",
+        "IIV safety",
+        "flu shot reactions",
+        "fever after flu shot",
+        "febrile seizure flu shot"
+      ],
+      "responses": [
+        "Common side effects of the inactivated influenza vaccine (IIV) include soreness, redness, tenderness, or swelling at the injection site. These local reactions are the most common adverse events and are transient, generally lasting 1–2 days.",
+        "Nonspecific systemic symptoms — fever, chills, malaise, and myalgia — occur less often and usually in those with no prior exposure to the viral antigens. These symptoms usually occur within 6–12 hours and last 1–2 days.",
+        "In some seasons, IIV has been associated with a slightly increased risk of febrile seizures in young children on the same day or day after vaccination, especially when given together with pneumococcal (PCV13) and DTaP vaccines. However, most febrile seizures are brief and have a good prognosis."
+      ]
+    },
+
+    {
+      "tag": "vaccine_safety_riv",
+      "patterns": [
+        "recombinant flu vaccine side effects",
+        "RIV flu vaccine safety",
+        "egg free flu vaccine side effects",
+        "RIV reactions"
+      ],
+      "responses": [
+        "During pre-licensure clinical trials for Recombinant Influenza Vaccine (RIV), the most common injection-site reactions for adults aged 18–49 were tenderness (48%) and pain (37%). Common systemic reactions were headache (20%), fatigue (17%), and muscle pain (13%).",
+        "Two serious adverse events (pleuropericarditis and vasovagal syncope) were assessed as possibly related to RIV vaccination. After licensure, a review of VAERS reports from 2013–2016 found 88 reports; allergic reactions were the most common. No deaths were reported."
+      ]
+    },
+
+    {
+      "tag": "vaccine_safety_laiv",
+      "patterns": [
+        "nasal spray flu vaccine side effects",
+        "LAIV side effects",
+        "live attenuated flu vaccine safety",
+        "FluMist side effects"
+      ],
+      "responses": [
+        "Common side effects of the Live Attenuated Influenza Vaccine (LAIV) nasal spray in children include runny nose and nasal congestion. In adults, reported reactions include headache, sore throat, tiredness/weakness, muscle aches, cough, chills, and sinusitis.",
+        "LAIV is contraindicated during pregnancy. Persons at high risk for influenza complications (immunosuppressed or with chronic pulmonary/cardiac disease) should receive IIV rather than LAIV, as limited safety data is available for LAIV in these groups."
+      ]
+    },
+
+    {
+      "tag": "guillain_barre_vaccine",
+      "patterns": [
+        "Guillain Barre syndrome flu vaccine",
+        "GBS flu shot",
+        "neurological side effect flu vaccine",
+        "paralysis from flu shot",
+        "GBS after influenza vaccine"
+      ],
+      "responses": [
+        "Guillain-Barré Syndrome (GBS) is a serious neurological condition that can cause paralysis. It is known to occur rarely after multiple infectious illnesses, including influenza itself. Safety monitoring of seasonal IIV over many years has not detected a clear link to GBS.",
+        "If there is a risk of GBS from IIV, it would be no more than 1 to 2 cases per million people vaccinated. Importantly, studies suggest the risk of GBS after influenza illness is higher than the potential risk of developing GBS after vaccination."
+      ]
+    },
+
+    {
+      "tag": "vaccine_pregnancy",
+      "patterns": [
+        "flu vaccine during pregnancy",
+        "is flu shot safe in pregnancy",
+        "influenza vaccination pregnant women",
+        "LAIV pregnancy",
+        "flu vaccine preterm birth"
+      ],
+      "responses": [
+        "Pregnant women are at increased risk for severe influenza illness and complications due to changes in immunologic, heart, and lung function. Some studies also suggest influenza infection is associated with preterm delivery and fetal demise.",
+        "ACIP and the American College of Obstetricians & Gynecologists recommend that women who are pregnant, might be pregnant, or are up to two weeks postpartum during flu season receive any licensed, age-appropriate IIV or RIV vaccine. LAIV (nasal spray) is contraindicated during pregnancy.",
+        "Flu vaccination can occur at any time during pregnancy, before and during the flu season. It protects both the mother and helps provide immunity to the newborn in the first months of life."
+      ]
+    },
+
+    {
+      "tag": "vaccine_storage",
+      "patterns": [
+        "how to store flu vaccine",
+        "flu vaccine storage temperature",
+        "flu shot refrigerator temperature",
+        "LAIV storage",
+        "vaccine cold chain flu"
+      ],
+      "responses": [
+        "Influenza vaccines (IIV, RIV, and LAIV) should be maintained at refrigerator temperature between 2°C and 8°C (36°F and 46°F).",
+        "LAIV sprayers must be kept in the carton until use to protect from light. For complete information on best practices and recommendations, refer to CDC's Vaccine Storage and Handling Toolkit."
+      ]
+    },
+
+    {
+      "tag": "historical_pandemics",
+      "patterns": [
+        "history of influenza pandemics",
+        "past flu pandemics",
+        "Spanish flu 1918",
+        "Asian flu 1957",
+        "Hong Kong flu 1968",
+        "flu pandemics 20th century",
+        "swine flu 2009 history"
+      ],
+      "responses": [
+        "Major 20th-century influenza pandemics: (1) Spanish Flu 1918–1919 (H1N1) — most devastating, estimated 21 million to 50 million deaths worldwide, unusually high mortality in young adults; (2) Asian Flu 1957–1958 (H2N2) — killed approximately 2 million people, highest attack rate in children 5–19; (3) Hong Kong Flu 1968–1969 (H3N2) — killed approximately 1 million people.",
+        "The first documented influenza pandemic occurred in 1580. Over the past 400 years, at least 31 pandemics have been recorded. The 21st century's first pandemic was the 2009 H1N1 swine flu, which spread to 206 countries and caused at least 6,770 deaths by November 2009.",
+        "The 1957 Asian flu (H2N2) was a reassortant virus with five genes similar to the 1918 H1N1 virus and three genes acquired from avian influenza (H2, N2, PB1). The 1968 Hong Kong flu arose when the H2 and PB1 genes were replaced by avian H3 and PB1 genes, creating the H3N2 subtype that still circulates today."
+      ]
+    },
+
+    {
+      "tag": "pandemic_H1N1_2009",
+      "patterns": [
+        "2009 swine flu pandemic",
+        "H1N1 2009 pandemic",
+        "swine origin influenza 2009",
+        "SO-IVA flu",
+        "2009 flu origin",
+        "swine flu origin"
+      ],
+      "responses": [
+        "The 2009 H1N1 pandemic virus (SO-IVA — Swine-Origin Influenza Virus A) emerged in Mexico and the USA in early April 2009. It spread rapidly to 206 countries. WHO declared a Phase 6 pandemic alert — the highest level — on June 11, 2009.",
+        "The 2009 H1N1 virus arose from a complex genetic reassortment of avian, human, and swine influenza A gene segments: HA, NS, and NP from classical swine lineage; NA and M from Eurasian swine; PB1 from human H3N2 (originally from birds); PA and PB2 from North American avian influenza.",
+        "In India, as of January 2010, over 28,000 confirmed cases and 1,152 deaths were reported (case fatality rate of 4%). The first death in India was reported on August 3rd in Pune. Unlike seasonal flu, the 2009 pandemic severely affected healthy young adults aged 18–50 rather than the elderly."
+      ]
+    },
+
+    {
+      "tag": "cross_reactive_immunity",
+      "patterns": [
+        "cross reactive flu immunity",
+        "universal flu vaccine",
+        "broadly neutralizing antibodies flu",
+        "1918 and 2009 flu similarity",
+        "older adults immune to H1N1",
+        "pre-existing flu immunity"
+      ],
+      "responses": [
+        "Antigenic similarities between the 1918 H1N1 virus and the 2009 pandemic H1N1 resulted in long-term cross-reactive immunity. Many persons born before 1947 showed decreased risk of 2009 H1N1 infection, likely due to prior exposure to antigenically similar strains.",
+        "An ideal flu vaccine would induce broadly cross-reactive antibodies that neutralize all viruses within a subtype — or better, all influenza viruses. Cross-reactive antibodies against HA that block virus infection have been developed; they bind near the stem region of HA close to the virus membrane.",
+        "These broadly neutralizing antibodies appear to block infection by preventing low pH-induced conformational changes in HA required for membrane fusion, rather than blocking receptor binding. They hold promise as therapeutic antibodies or as the basis for a 'universal' flu vaccine."
+      ]
+    },
+
+    {
+      "tag": "influenza_surveillance_cdc",
+      "patterns": [
+        "influenza surveillance CDC",
+        "flu monitoring USA",
+        "how is flu tracked",
+        "flu surveillance system",
+        "influenza reporting US",
+        "NNDSS influenza",
+        "flu mortality surveillance"
+      ],
+      "responses": [
+        "Influenza-associated deaths in children under 18 and human infection with novel influenza A viruses are nationally notifiable conditions reported through the National Notifiable Diseases Surveillance System (NNDSS). Other influenza infections are not nationally notifiable but may be reported in some states.",
+        "U.S. influenza surveillance consists of five information categories: viral surveillance, outpatient illness surveillance, mortality surveillance, hospitalization surveillance, and summary of geographic spread.",
+        "Influenza surveillance goals include: monitoring prevalence of circulating strains to guide vaccine formulation; estimating influenza-related morbidity, mortality, and economic impact; rapidly detecting outbreaks; and assisting disease control through rapid preventive action such as chemoprophylaxis of unvaccinated high-risk patients."
+      ]
+    },
+
+    {
+      "tag": "ha_subtypes_phylogeny",
+      "patterns": [
+        "how many HA subtypes are there",
+        "influenza HA subtypes",
+        "H1 H2 H3 H5 subtypes",
+        "hemagglutinin phylogenetic groups",
+        "flu subtype classification",
+        "16 HA subtypes influenza"
+      ],
+      "responses": [
+        "There are 16 hemagglutinin (HA) subtypes (H1–H16) and 9 neuraminidase (NA) subtypes (N1–N9) in influenza A viruses. All subtypes are found in avian species, predominantly waterfowl.",
+        "Phylogenetically, HA subtypes fall into two groups: Group 1 contains H1, H2, H5, H6, H8, H9, H11, H12, H13, H16; Group 2 contains H3, H4, H7, H10, H14, H15. NAs also form two groups: Group 1 (N1, N4, N5, N8) and Group 2 (N2, N3, N6, N7, N9).",
+        "Known human pandemics were caused by H1N1 (1918, 1977, 2009), H2N2 (1957), and H3N2 (1968). Currently, H1N1 and H3N2 are the most frequently circulating subtypes in humans."
+      ]
+    },
+
+    {
+      "tag": "na_structure_subtypes",
+      "patterns": [
+        "neuraminidase subtypes",
+        "structure of neuraminidase",
+        "NA phylogenetic groups",
+        "N1 N2 subtypes",
+        "neuraminidase active site"
+      ],
+      "responses": [
+        "Neuraminidase is a mushroom-shaped tetramer with the head suspended from the virus membrane on a thin stalk (~60 Å long). Each subunit has a six-bladed propeller-like structure with an enzyme active site at roughly the center, containing conserved charged amino acid residues.",
+        "The nine NA subtypes of influenza A fall into two phylogenetic groups: Group 1 (N1, N4, N5, N8) and Group 2 (N2, N3, N6, N7, N9). A key structural difference between the groups is the conformation of the '150-loop' adjacent to the active site, creating a large cavity in Group 1 NAs that is absent in Group 2.",
+        "The NA active site contains three conserved arginine residues (Arg-118, Arg-292, Arg-371) that form salt bridges with sialic acid. Anti-NA drugs (Tamiflu, Relenza) target this conserved active site, which is why they work against both Group 1 and Group 2 NAs."
+      ]
+    },
+
+    {
+      "tag": "h5n1_avian_flu",
+      "patterns": [
+        "H5N1 bird flu",
+        "avian influenza H5N1",
+        "highly pathogenic H5N1",
+        "H5N1 human infection",
+        "H5N1 why dangerous",
+        "bird flu pandemic risk"
+      ],
+      "responses": [
+        "H5N1 is a highly pathogenic avian influenza A virus. Some H5 and H7 subtypes have acquired multiple basic residues at the HA cleavage site, which are recognized by an intracellular enzyme, making cleavage efficient and the virus highly infectious and pathogenic.",
+        "H5N1 continues to spread in avian populations worldwide (excluding the Americas). Human infections cause severe disease with high mortality. H5N1 induces proinflammatory cytokines (including TNF-α, IFN-β, IL-6) more strongly than seasonal or pandemic H1N1 viruses.",
+        "H5N1 has been considered a potential pandemic threat because of its high mortality rate in infected humans. However, it currently does not spread efficiently from human to human — a key characteristic required for a pandemic strain. Mutations near the H5 receptor-binding site that increase affinity for human receptors are closely monitored."
+      ]
+    },
+
+    {
+      "tag": "influenza_lung_pathology",
+      "patterns": [
+        "flu lung damage",
+        "influenza lung pathology",
+        "flu ARDS",
+        "acute respiratory distress syndrome flu",
+        "diffuse alveolar damage flu",
+        "H1N1 lung damage"
+      ],
+      "responses": [
+        "The main pathological changes in fatal influenza cases are localized to the lungs. Histopathological findings include diffuse alveolar damage with hyaline membranes, septal edema, tracheitis, and necrotizing bronchiolitis.",
+        "Cytopathic effects are found in bronchial and alveolar epithelial cells, including epithelial hyperplasia and squamous metaplasia of large airways, pulmonary vascular congestion, and alveolar hemorrhage.",
+        "In severe pandemic H1N1 cases, critically ill patients developed Acute Respiratory Distress Syndrome (ARDS) with refractory hypoxemia leading to respiratory failure, secondary bacterial infections, septic shock, and multi-organ dysfunction."
+      ]
+    },
+
+    {
+      "tag": "influenza_like_illness",
+      "patterns": [
+        "what is influenza like illness",
+        "ILI definition",
+        "flu vs influenza like illness",
+        "fever cough flu definition",
+        "other viruses that mimic flu"
+      ],
+      "responses": [
+        "Influenza-Like Illness (ILI) is defined as sudden onset of fever ≥38°C with cough or sore throat and/or runny nose, in the absence of other diagnoses. Many viruses can cause ILI, including adenoviruses, enteroviruses, paramyxoviruses, and flaviviruses like dengue.",
+        "Accurate diagnosis of influenza A or B based solely on clinical criteria is difficult because of overlapping symptoms caused by various viruses associated with upper respiratory tract infection (URTI). Laboratory testing is essential to confirm influenza versus other causes of ILI.",
+        "The early presentation of mild or moderate dengue fever may initially mimic influenza. Adenoviruses, enteroviruses, and paramyxoviruses may also initially cause influenza-like symptoms."
+      ]
+    },
+
+    {
+      "tag": "pandemic_criteria_who",
+      "patterns": [
+        "what makes flu a pandemic",
+        "WHO pandemic criteria",
+        "pandemic phase 6 WHO",
+        "flu pandemic definition",
+        "how is pandemic declared"
+      ],
+      "responses": [
+        "A flu pandemic occurs when a new influenza virus emerges and spreads across at least two continents through community transmission. WHO declared the 2009 H1N1 outbreak a Phase 6 pandemic — the highest alert level — on June 11, 2009.",
+        "Pandemics occur roughly every 10–50 years when a new version of the influenza virus emerges in the human population. The new virus typically spreads in previously healthy people who have no prior immunity to it, causing widespread illness and death.",
+        "For a pandemic, the virus must: (1) contain a novel HA (or NA) to which humans have no prior immunity; (2) be able to cause disease in humans; (3) be able to spread efficiently from human to human."
+      ]
+    },
+
+    {
+      "tag": "drug_development_future",
+      "patterns": [
+        "new flu drugs",
+        "future influenza treatment",
+        "novel antiviral flu",
+        "flu drug development",
+        "universal flu therapy",
+        "combination flu therapy"
+      ],
+      "responses": [
+        "The unexplained worldwide spread of Tamiflu-resistant H1N1 in 2008 has stimulated development of alternative anti-influenza drugs and combination therapies — similar to HIV drug cocktails — to combat drug resistance.",
+        "Future therapeutic targets include: the M2 proton channel conserved residues (His37, Trp41), the cap snatching endonuclease mechanism (PA protein), the HA stem region (target of broadly neutralizing antibodies), and cell signaling pathways activated during flu infection.",
+        "Cross-reactive broadly neutralizing antibodies against the HA stem region hold promise for therapeutic use and for developing a universal influenza vaccine that works against all flu strains without annual reformulation."
+      ]
+    },
+
+    {
+      "tag": "pig_as_mixing_vessel",
+      "patterns": [
+        "why is pig a mixing vessel for flu",
+        "pigs and influenza reassortment",
+        "swine flu reservoir",
+        "pig influenza mixing",
+        "how do new flu strains emerge in pigs"
+      ],
+      "responses": [
+        "Pigs are considered key 'mixing vessels' for influenza because they can be simultaneously infected by human, avian, and swine influenza A viruses. Both alpha-2,6 (human-type) and alpha-2,3 (avian-type) sialic acid receptors are present in the pig respiratory tract, allowing infection by all these virus types.",
+        "When multiple flu strains infect the same pig cell, their segmented RNA genomes can be shuffled and exchanged during viral replication (genetic reassortment / antigenic shift). The resulting hybrid virus may contain new combinations of genes that allow it to infect and spread efficiently in humans.",
+        "Pigs do not typically show significant illness from influenza A viruses, but they act as silent reservoirs where reassortment events can generate new pandemic strains — as happened with the 2009 H1N1 virus."
+      ]
+    }
+
+  ]
+}

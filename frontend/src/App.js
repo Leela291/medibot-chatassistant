@@ -23,6 +23,8 @@ function App() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [uploadedFile, setUploadedFile] = useState(null);
   const [dragOver, setDragOver] = useState(false);
+  const [speakingMessageId, setSpeakingMessageId] = useState(null);
+
   const bottomRef = useRef(null);
   const fileInputRef = useRef(null);
   const inputRef = useRef(null);
@@ -30,6 +32,36 @@ function App() {
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
+
+  const toggleSpeak = (text, msgIndex) => {
+    const synth = window.speechSynthesis;
+
+    // Already reading this message → stop
+    if (speakingMessageId === msgIndex) {
+      synth.cancel();
+      setSpeakingMessageId(null);
+      return;
+    }
+    // Stop whatever was playing before
+    synth.cancel();
+    // Strip markdown so it reads naturally (no "asterisk asterisk bold text asterisk asterisk")
+    const clean = text
+      .replace(/\*\*(.*?)\*\*/g, "$1")
+      .replace(/\*(.*?)\*/g, "$1")
+      .replace(/#{1,6}\s?/g, "")
+      .replace(/\n/g, " ");
+
+    const utterance = new SpeechSynthesisUtterance(clean);
+    utterance.lang = "en-US";
+    utterance.rate = 1.3;
+    utterance.pitch = 1.0;
+
+    utterance.onend  = () => setSpeakingMessageId(null);
+    utterance.onerror = () => setSpeakingMessageId(null);
+
+    synth.speak(utterance);
+    setSpeakingMessageId(msgIndex);
+  };
 
   /* ── Send message ── */
   const sendMessage = useCallback(async (overrideText) => {
@@ -85,6 +117,7 @@ function App() {
           time: formatTime(new Date()),
           sources: data.sources,
           isEmergency: data.is_emergency,
+          id: Date.now(),
         },
       ]);
     } catch (err) {
@@ -155,17 +188,19 @@ function App() {
 
   /* ── Quick topics ── */
   const topics = [
-    { label: "Asthma", icon: "🫁", color: "#6C5CE7" },
-    { label: "Dengue", icon: "🦟", color: "#E17055" },
-    { label: "Diabetes", icon: "🩸", color: "#00B894" },
-    { label: "Hyperthyroidism", icon: "🦋", color: "#0984E3" },
+    { label: "Cold", icon: "❄️", color: "#6C5CE7" },
+    { label: "Dengue Fever", icon: "🦟", color: "#E17055" },
+    { label: "Covid19", icon: "🦠", color: "#00B894" },
+    { label: "Flu", icon: "🤧", color: "#0984E3" },
+    { label: "Asthma", icon: "🫁", color: "#FD79A8" },
+    { label: "Diabetes", icon: "🍬", color: "#00CEC9" },
   ];
 
   const quickActions = [
     { label: "Symptoms", query: (t) => `What are the symptoms of ${t}?` },
     { label: "Treatment", query: (t) => `How is ${t} treated?` },
     { label: "Prevention", query: (t) => `How to prevent ${t}?` },
-    { label: "Emergency Signs", query: (t) => `What are the emergency signs of ${t}?` },
+
   ];
 
   return (
@@ -341,6 +376,34 @@ function App() {
                     </div>
                   )}
                 </div>
+
+                {/* 🔊 Speak button — sits right below the bot reply bubble */}
+                {m.role === "bot" && m.text && (
+                  <button
+                    className={`speak-btn ${speakingMessageId === i ? "speaking" : ""}`}
+                    onClick={() => toggleSpeak(m.text, i)}
+                    title={speakingMessageId === i ? "Stop reading" : "Read aloud"}
+                  >
+                    {speakingMessageId === i ? (
+                      <>
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13">
+                          <rect x="5" y="5" width="14" height="14" rx="2" />
+                        </svg>
+                        Stop
+                      </>
+                    ) : (
+                      <>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="13" height="13">
+                          <polygon points="11,5 6,9 2,9 2,15 6,15 11,19" />
+                          <path d="M15.54 8.46a5 5 0 0 1 0 7.07" strokeLinecap="round"/>
+                          <path d="M19.07 4.93a10 10 0 0 1 0 14.14" strokeLinecap="round"/>
+                        </svg>
+                        Read aloud
+                      </>
+                    )}
+                  </button>
+                )}
+                
                 <span className="message-time">{m.time}</span>
               </div>
               {m.role === "user" && (

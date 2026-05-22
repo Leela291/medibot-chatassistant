@@ -824,3 +824,31 @@ body {
     padding: 12px;
   }
 }
+
+.speak-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  color: #555;
+}
+.speak-btn.speaking {
+  color: #e53e3e;
+  border-color: #e53e3e;
+  background: #23dd54;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.voice-btn.listening { color: red; animation: pulse 1s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }

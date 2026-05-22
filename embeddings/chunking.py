@@ -48,23 +48,44 @@ def chunk_text(text: str, chunk_size: int = CHUNK_SIZE,
     return chunks
 
 
+def _chunk_one(obj: dict, source: str) -> list[dict]:
+    """Chunk a single disease dict and return list of chunk dicts."""
+    disease_name = obj.get("disease", Path(source).stem)
+    sentences    = flatten_json(obj)
+    full_text    = "\n".join(sentences)
+    raw_chunks   = chunk_text(full_text)
+    return [
+        {"text": c, "source": source, "disease": disease_name}
+        for c in raw_chunks
+    ]
+
+
 def load_and_chunk_dataset(json_path: str) -> list[dict]:
     """
     Load a disease JSON file and return a list of chunk dicts:
     {"text": ..., "source": ..., "disease": ...}
+
+    Handles both formats:
+      - plain dict  { ... }           (single disease)
+      - list        [ {...}, {...} ]   (multiple diseases, e.g. 1.json)
     """
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    disease_name = data.get("disease", Path(json_path).stem)
-    sentences = flatten_json(data)
-    full_text = "\n".join(sentences)
+    # ── normalise to a list of disease dicts ─────────────────────────
+    if isinstance(data, dict):
+        items = [data]
+    elif isinstance(data, list):
+        items = data
+    else:
+        raise ValueError(f"Unexpected JSON structure in {json_path}: {type(data)}")
 
-    raw_chunks = chunk_text(full_text)
-    return [
-        {"text": c, "source": json_path, "disease": disease_name}
-        for c in raw_chunks
-    ]
+    # ── chunk every disease object and combine ────────────────────────
+    all_chunks = []
+    for obj in items:
+        all_chunks.extend(_chunk_one(obj, json_path))
+
+    return all_chunks
 
 
 def load_all_datasets(datasets_dir: str = DATASETS_DIR) -> list[dict]:

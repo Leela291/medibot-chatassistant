@@ -1,0 +1,2081 @@
+{
+  "chatbot_metadata": {
+    "description": "A comprehensive chatbot knowledge base for gastritis, gastroparesis, and digestive health, compiled from medical documents and dietary guides.",
+    "sources": [
+      "New Approaches in Gastritis Treatment (InTech, Marcial et al., 2011)",
+      "Eating for Gastroparesis (UW Medicine / Harborview, 2023)",
+      "Diet for Gastroparesis (Cleveland Clinic, 2016)",
+      "Low FODMAP Diet for IBS/Gas/Bloating (Updated 2021)",
+      "The Gastritis Healing Book (L.G. Capellan)",
+      "NIDDK (National Institute of Diabetes and Digestive and Kidney Diseases) – Gastritis & Gastropathy (2025)",
+      "NIDDK – Gastroparesis Treatment (2025)",
+      "ACG Clinical Practice Guideline: H. pylori Treatment 2024",
+      "Mayo Clinic – IBS Symptoms, Causes & Diagnosis (2024)",
+      "StatPearls / NCBI NIH – Gastroparesis (February 2024)",
+      "Cleveland Clinic – IBS (2023)"
+    ]
+  },
+  "conditions": {
+    "gastritis": {
+      "definition": "Gastritis is inflammation of the stomach lining (gastric mucosa). The mucosal barrier normally protects the stomach from acid and pepsin; gastritis occurs when this balance is disrupted, allowing irritation and inflammation.",
+      "types": [
+        {
+          "name": "Acute Gastritis",
+          "description": "Sudden inflammation of the stomach lining, ranging from mild to severe. Classic symptoms are nausea and pain or discomfort in the upper abdomen.",
+          "common_causes": [
+            "NSAIDs (aspirin, ibuprofen, naproxen)",
+            "Helicobacter pylori infection",
+            "Excessive alcohol consumption",
+            "Corrosive substances",
+            "Acute stress reactions",
+            "Viral infections",
+            "Smoking"
+          ]
+        },
+        {
+          "name": "Chronic Gastritis",
+          "description": "Progressive inflammation developing gradually over time; often initially asymptomatic. Symptoms may include dull upper abdominal pain, fullness, and loss of appetite.",
+          "common_causes": [
+            "H. pylori infection (most common)",
+            "Long-term NSAID use",
+            "Chronic stress",
+            "Alcohol abuse",
+            "Low stomach acid",
+            "Autoimmune factors"
+          ]
+        },
+        {
+          "name": "Reactive/Chemical Gastritis",
+          "description": "Defined by foveolar elongation, edema, and vasodilatation with few inflammatory cells. Results from duodenogastric bile reflux or NSAIDs use.",
+          "common_causes": [
+            "Duodenogastric bile reflux",
+            "NSAID use"
+          ]
+        },
+        {
+          "name": "Acute Stress Gastritis",
+          "description": "Most serious form; occurs in critically ill patients (e.g., ICU). Stress erosions may develop suddenly as a result of severe trauma.",
+          "common_causes": [
+            "Severe physical trauma",
+            "Critical illness",
+            "Major surgery"
+          ]
+        },
+        {
+          "name": "Atrophic Gastritis",
+          "description": "Results from chronic gastritis leading to atrophy (wasting away) of the gastric lining. Final stage of chronic gastritis; may be a precursor to gastric cancer.",
+          "common_causes": [
+            "Long-standing H. pylori infection",
+            "Autoimmune response"
+          ]
+        },
+        {
+          "name": "Hemorrhagic Gastritis",
+          "description": "Caused by superficial erosions leading to bleeding.",
+          "common_causes": [
+            "Erosion of the mucosa",
+            "NSAIDs",
+            "Alcohol"
+          ]
+        },
+        {
+          "name": "Eosinophilic Gastritis",
+          "description": "Rare type characterized by eosinophils in the mucosa, sometimes linked to food allergies.",
+          "common_causes": [
+            "Allergic reactions",
+            "Food sensitivities"
+          ]
+        },
+        {
+          "name": "Lymphocytic Gastritis",
+          "description": "Chronic inflammation characterized by lymphocyte accumulation in the gastric mucosa.",
+          "common_causes": [
+            "Autoimmune factors",
+            "H. pylori"
+          ]
+        }
+      ],
+      "symptoms": [
+        "Stomach pain or discomfort in the upper abdomen",
+        "Heartburn or acid reflux",
+        "Nausea and vomiting",
+        "Loss of appetite",
+        "Fatigue and indigestion",
+        "Abdominal bloating or swelling",
+        "Diarrhea",
+        "Belching and gas",
+        "Dizziness",
+        "Feeling full quickly after eating",
+        "Weight loss (in severe/chronic cases)",
+        "Chest pain (in severe cases)",
+        "Note: Some people with chronic gastritis may have NO symptoms"
+      ],
+      "diagnosis": [
+        "Medical history and physical examination",
+        "Endoscopy or gastroscopy to examine the stomach lining",
+        "Biopsy to detect H. pylori and assess tissue changes",
+        "H. pylori breath test or stool antigen test",
+        "X-rays or barium swallow to identify structural abnormalities",
+        "Blood tests (for anemia, autoimmune antibodies)"
+      ],
+      "key_causes": {
+        "NSAID_damage": "NSAIDs (aspirin, ibuprofen, naproxen) cause gastric damage by: (1) direct topical irritation on the gastric epithelium; (2) systemic suppression of mucosal prostaglandin synthesis. This reduces mucus/bicarbonate secretion, blood flow, cell turnover, and repair.",
+        "H_pylori": "H. pylori is the most aggressive cause of gastritis. The bacteria uses adhesins on its outer cell wall to attach to gastric mucus and epithelial cells, establishing infection. Untreated infection can lead to gastric ulcer or gastric cancer.",
+        "dietary_factors": "Acidic foods (citrus, tomatoes), carbonated drinks, coffee, alcohol, excessively hot/cold foods, processed foods, excessive salt, and overeating all contribute to gastric irritation.",
+        "stress": "Chronic stress decreases protective gastric factors, increases acid production, and may lead to unhealthy coping behaviors (alcohol, smoking, poor diet).",
+        "other": "Imbalanced diet, abrasive compounds, stomach acid damaging its own lining"
+      },
+      "official_source_notes": {
+        "source": "NIDDK / NIH",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/gastritis-gastropathy",
+        "key_facts": [
+          "The majority of people with gastritis or gastropathy do NOT have any symptoms.",
+          "H. pylori gastritis is one of the most common types — it is chronic and a major cause of peptic ulcer disease.",
+          "H. pylori may spread through contact with an infected person's vomit, stool, or saliva, or through contaminated food or water.",
+          "Autoimmune gastritis can cause problems absorbing iron and vitamin B12 from food.",
+          "Less common causes include infections with viruses, parasites, fungi, and bacteria other than H. pylori, typically in people with weakened immune systems.",
+          "Gastritis may lead to erosions or ulcers, causing stomach bleeding — symptoms include black/tarry stool or red/maroon blood in stool (seek emergency care immediately).",
+          "Researchers have not found that eating, diet, and nutrition play a major role in causing most cases of gastritis or gastropathy."
+        ]
+      },
+      "diagnosis_niddk": {
+        "source": "NIDDK",
+        "procedures": [
+          "Upper GI Endoscopy with biopsy — doctor uses a flexible tube with a camera (endoscope) to view the esophagus, stomach, and duodenum; biopsies taken to detect H. pylori and tissue changes.",
+          "Upper GI Series (Barium swallow) — X-ray procedure using barium to check for signs of gastritis or gastropathy.",
+          "H. pylori urea breath test — patient swallows a liquid containing urea; if H. pylori present, it breaks it down into carbon dioxide detectable in breath.",
+          "H. pylori stool antigen test — detects H. pylori antigens in stool sample.",
+          "Blood tests — for anemia, autoimmune antibodies, vitamin B12 levels."
+        ],
+        "when_to_seek_emergency_care": [
+          "Black or tarry stool",
+          "Red or maroon blood in stool",
+          "Vomiting blood",
+          "Severe abdominal pain"
+        ]
+      }
+    },
+    "gastroparesis": {
+      "definition": "Gastroparesis (also called delayed gastric emptying) is a disorder in which the stomach takes too long to empty its contents into the small intestine. It happens when the nerves to the stomach are damaged or stop working.",
+      "symptoms": [
+        "Heartburn",
+        "Nausea",
+        "Vomiting undigested food",
+        "Feeling full quickly when eating (early satiety)",
+        "Weight loss",
+        "Bloating",
+        "Erratic blood sugar levels (especially in diabetics)",
+        "Poor appetite",
+        "Abdominal discomfort",
+        "Reflux"
+      ],
+      "risk_factors": [
+        "Diabetes (most common cause — diabetic gastroparesis)",
+        "Nerve damage from surgery",
+        "Viral infections affecting stomach nerves",
+        "Certain medications",
+        "Hypothyroidism",
+        "Parkinson's disease",
+        "Scleroderma"
+      ],
+      "diabetes_connection": "Diabetes increases the risk for gastroparesis. Gastroparesis causes unpredictable food absorption, leading to erratic blood sugar levels. High blood sugar directly interferes with normal stomach emptying. Managing blood sugar is a key part of managing diabetic gastroparesis.",
+      "official_source_niddk": {
+        "source": "NIDDK / NIH + StatPearls NCBI (2024)",
+        "urls": [
+          "https://www.niddk.nih.gov/health-information/digestive-diseases/gastroparesis",
+          "https://www.ncbi.nlm.nih.gov/books/NBK551528/"
+        ],
+        "definition_expanded": "Gastroparesis is a disorder that slows or stops the movement of food from your stomach to your small intestine, even though there is no blockage. The condition lasts at least 3 months in the absence of mechanical obstruction. It involves abnormalities in gastrointestinal motor function, including the parasympathetic and sympathetic nervous systems, gastric smooth muscle cells, pacemaker cells, and the pyloric sphincter.",
+        "epidemiology": "Incidence ranges from 6.3 to 17.2 per 100,000 person-years. Nausea is the most common symptom, reported in over 90% of patients. Vomiting and bloating affect 68–84% and 75% of patients respectively.",
+        "causes_by_prevalence": [
+          {
+            "cause": "Idiopathic (unknown)",
+            "percentage": ">50%",
+            "notes": "Cannot be prevented; no identifiable cause"
+          },
+          {
+            "cause": "Diabetic gastroparesis",
+            "percentage": "~25-30%",
+            "notes": "Most common known cause; high blood glucose directly worsens stomach emptying"
+          },
+          {
+            "cause": "Post-surgical",
+            "percentage": "~5-10%",
+            "notes": "Nerve damage from abdominal/esophageal surgery"
+          },
+          {
+            "cause": "Post-infectious (viral)",
+            "percentage": "~5%",
+            "notes": "Stomach virus damaging vagus nerve"
+          },
+          {
+            "cause": "Other conditions",
+            "percentage": "Remaining",
+            "notes": "Hypothyroidism, Parkinson's disease, scleroderma, certain medications"
+          }
+        ],
+        "diagnosis": [
+          "Gastric emptying scintigraphy (GES) — nuclear medicine test, gold standard; measures how fast food leaves the stomach",
+          "Gastric emptying breath test (GEBT) — non-radioactive alternative",
+          "Upper endoscopy — to rule out blockage or other diseases",
+          "Upper GI series — X-ray with barium",
+          "Gastric manometry — measures pressure and movement in stomach muscles",
+          "Wireless motility capsule"
+        ],
+        "complications": [
+          "Malnutrition and dehydration",
+          "Bezoar formation (hardened mass of undigested food that can block stomach emptying)",
+          "Erratic blood glucose levels (especially dangerous in diabetes)",
+          "Bacterial overgrowth in the stomach",
+          "Reduced quality of life"
+        ]
+      },
+      "treatment_niddk": {
+        "source": "NIDDK + StatPearls NCBI",
+        "dietary_management": [
+          "Eat 6 small meals per day instead of 3 large ones",
+          "Start with liquids when symptoms are severe; advance to soft/pureed foods as tolerated",
+          "Reduce fat intake — fat slows gastric emptying",
+          "Reduce fiber intake — high fiber can cause bezoar formation",
+          "Chew all food to mashed potato/pudding consistency",
+          "Sit upright for at least 1 hour after eating",
+          "Drink fluids between meals, not during",
+          "Keep blood glucose within target range if diabetic — hyperglycemia worsens gastroparesis"
+        ],
+        "medications": [
+          {
+            "name": "Metoclopramide",
+            "class": "Prokinetic",
+            "notes": "Only FDA-approved drug for gastroparesis in the US. Helps stomach muscles work better. Maximum 12 weeks use due to risk of tardive dyskinesia (involuntary movements)."
+          },
+          {
+            "name": "Domperidone",
+            "class": "Prokinetic",
+            "notes": "Available in some countries; not FDA-approved in the US. Can cause cardiac side effects."
+          },
+          {
+            "name": "Erythromycin",
+            "class": "Antibiotic / Prokinetic",
+            "notes": "Low-dose erythromycin improves gastric emptying through motilin receptor stimulation. Short-term use preferred."
+          },
+          {
+            "name": "Antiemetics (Prochlorperazine, Diphenhydramine, Ondansetron)",
+            "class": "Antiemetic",
+            "notes": "Provide symptomatic relief of nausea and vomiting. Do not improve gastric emptying."
+          },
+          {
+            "name": "Non-narcotic pain medicines",
+            "class": "Analgesic",
+            "notes": "For abdominal pain due to gastroparesis; narcotic opioids should be avoided as they worsen gastroparesis."
+          }
+        ],
+        "surgical_and_procedural": [
+          {
+            "name": "Gastric Electrical Stimulation (GES)",
+            "description": "A device surgically implanted in the abdomen that sends mild electrical pulses to the stomach muscles. Used only for diabetes-related or idiopathic gastroparesis when medications fail. Not suitable for all patients."
+          },
+          {
+            "name": "Jejunostomy tube (J-tube)",
+            "description": "Feeding tube placed directly into the small intestine to bypass the stomach entirely — used in severe malnutrition cases."
+          },
+          {
+            "name": "Parenteral nutrition",
+            "description": "IV nutrition delivered directly into the bloodstream — for the most severe cases."
+          },
+          {
+            "name": "Botulinum toxin injection (pylorus)",
+            "description": "Injection into the pyloric sphincter to relax it and improve emptying. Evidence is limited."
+          }
+        ]
+      }
+    },
+    "IBS_and_bloating": {
+      "definition": "Irritable Bowel Syndrome (IBS) and associated gas/bloating can be triggered by fermentable carbohydrates (FODMAPs) that pull excess water into the small intestine and are fermented by gut bacteria, producing gas.",
+      "symptoms": [
+        "Abdominal bloating",
+        "Excessive gas",
+        "Abdominal pain and cramping",
+        "Nausea",
+        "Diarrhea",
+        "Constipation",
+        "Alternating diarrhea and constipation"
+      ],
+      "FODMAP_explanation": "FODMAP stands for Fermentable Oligosaccharides, Disaccharides, Monosaccharides, And Polyols. These are poorly absorbed carbohydrates and sugar alcohols found in many foods. They draw excess water into the small intestine and are fermented by gut bacteria, causing bloating, gas, pain, and altered bowel habits.",
+      "official_source_mayo": {
+        "source": "Mayo Clinic (2024) + Cleveland Clinic (2023)",
+        "urls": [
+          "https://www.mayoclinic.org/diseases-conditions/irritable-bowel-syndrome/symptoms-causes/syc-20360016",
+          "https://my.clevelandclinic.org/health/diseases/4342-irritable-bowel-syndrome-ibs"
+        ],
+        "prevalence": "Affects approximately 7–16% of the US population; about 1 in 10 adults. Most common in women and people under 50.",
+        "ibs_types": [
+          {
+            "type": "IBS-C (Constipation-predominant)",
+            "description": "Mostly constipation, hard or lumpy stools"
+          },
+          {
+            "type": "IBS-D (Diarrhea-predominant)",
+            "description": "Mostly diarrhea, loose or watery stools"
+          },
+          {
+            "type": "IBS-M (Mixed)",
+            "description": "Alternating constipation and diarrhea"
+          },
+          {
+            "type": "IBS-U (Unsubtyped)",
+            "description": "Doesn't fit cleanly into above categories"
+          }
+        ],
+        "rome_iv_diagnostic_criteria": "Recurrent abdominal pain at least 1 day per week on average, associated with 2+ of: (1) related to defecation, (2) associated with change in stool frequency, (3) associated with change in stool form/appearance.",
+        "causes_and_mechanisms": [
+          "Disorder of gut-brain interaction — bidirectional communication between brain and gut is dysregulated",
+          "Visceral hypersensitivity — gut nerves more sensitive than normal",
+          "Altered gut microbiome composition",
+          "Food intolerances (especially FODMAPs)",
+          "Psychological stress amplifies symptoms through gut-brain axis",
+          "Post-infectious IBS can develop after a GI infection",
+          "Hormonal factors — more common and worse symptoms in women"
+        ],
+        "alarm_symptoms_requiring_medical_evaluation": [
+          "Blood in stool",
+          "Unintended weight loss",
+          "Unexplained vomiting",
+          "Symptoms starting after age 50",
+          "Symptoms occurring at night during normal sleeping hours",
+          "Fever",
+          "Abdominal pain unrelieved by bowel movement"
+        ],
+        "treatment_overview": {
+          "lifestyle": [
+            "Eat smaller, more frequent meals",
+            "Exercise regularly",
+            "Deep breathing and yoga to reduce stress",
+            "Identify and avoid personal food triggers",
+            "Maintain a consistent daily eating schedule"
+          ],
+          "dietary": [
+            "Low FODMAP diet — most evidence-based dietary approach for IBS",
+            "Increase soluble fiber gradually (e.g., psyllium/ispaghula husk)",
+            "Avoid known trigger foods (varies per individual)",
+            "Limit caffeine, alcohol, fatty foods, and carbonated drinks"
+          ],
+          "medications": [
+            {
+              "name": "Antispasmodics (e.g., hyoscine, mebeverine)",
+              "use": "Abdominal cramping and pain"
+            },
+            {
+              "name": "Osmotic laxatives (e.g., polyethylene glycol)",
+              "use": "IBS-C — constipation"
+            },
+            {
+              "name": "Loperamide (Imodium)",
+              "use": "IBS-D — diarrhea (reduces frequency, not pain)"
+            },
+            {
+              "name": "Low-dose antidepressants (TCAs, SSRIs)",
+              "use": "Gut-brain axis modulation; particularly for pain"
+            },
+            {
+              "name": "Rifaximin (antibiotic)",
+              "use": "IBS-D — targets gut bacteria causing symptoms"
+            },
+            {
+              "name": "Linaclotide / Lubiprostone",
+              "use": "IBS-C — prescription secretagogues"
+            },
+            {
+              "name": "Peppermint oil capsules",
+              "use": "Antispasmodic effect on gut muscles; reduces pain"
+            }
+          ],
+          "psychological_therapies": [
+            "Cognitive Behavioral Therapy (CBT) — strong evidence for IBS",
+            "Gut-directed hypnotherapy",
+            "Mindfulness-based stress reduction (MBSR)"
+          ],
+          "important_note": "There is currently no cure for IBS. IBS does NOT cause permanent damage to the intestines and does NOT increase cancer risk. Symptoms can be well-managed with the right combination of diet, lifestyle, and medication."
+        }
+      }
+    },
+    "GERD": {
+      "definition": "Gastroesophageal Reflux Disease (GERD) occurs when stomach acid frequently flows back (refluxes) into the esophagus, irritating the lining. It is a chronic, often lifelong condition.",
+      "source": "Mayo Clinic / NIDDK",
+      "prevalence": "Affects approximately 20% of adults in Western countries. One of the most common gastrointestinal conditions worldwide.",
+      "symptoms": [
+        "Heartburn — burning sensation in chest, usually after eating, worse when lying down",
+        "Acid regurgitation — sour or bitter taste in mouth",
+        "Difficulty swallowing (dysphagia)",
+        "Chest pain",
+        "Feeling of a lump in the throat",
+        "Chronic cough, laryngitis, or new/worsening asthma (atypical symptoms)",
+        "Sleep disruption"
+      ],
+      "causes_and_risk_factors": [
+        "Weakened or abnormally relaxed lower esophageal sphincter (LES)",
+        "Hiatal hernia",
+        "Obesity",
+        "Pregnancy",
+        "Certain foods and beverages (fatty foods, chocolate, mint, alcohol, coffee, acidic foods)",
+        "Smoking",
+        "Certain medications (aspirin, ibuprofen, calcium channel blockers)",
+        "Delayed gastric emptying (gastroparesis)"
+      ],
+      "complications": [
+        "Esophagitis (inflammation of esophagus lining)",
+        "Esophageal stricture (narrowing due to scarring)",
+        "Barrett's esophagus (pre-cancerous cell change in esophagus lining)",
+        "Esophageal cancer (rare, associated with Barrett's esophagus)"
+      ],
+      "diagnosis": [
+        "Clinical diagnosis based on symptoms (most common)",
+        "Upper GI endoscopy — to assess esophageal damage",
+        "Ambulatory acid (pH) probe test — measures acid in esophagus over 24 hours",
+        "Esophageal manometry — measures muscle contractions",
+        "Upper GI barium X-ray"
+      ],
+      "treatment": {
+        "lifestyle_changes": [
+          "Maintain healthy weight",
+          "Eat smaller, more frequent meals",
+          "Do not lie down within 2-3 hours of eating",
+          "Elevate head of bed by 6-8 inches",
+          "Avoid trigger foods (chocolate, mint, fatty foods, acidic foods, caffeine, alcohol)",
+          "Quit smoking",
+          "Wear loose-fitting clothing"
+        ],
+        "medications": [
+          {
+            "name": "Antacids (Tums, Rolaids, Maalox)",
+            "use": "Quick symptom relief; neutralize acid; do not heal esophagus"
+          },
+          {
+            "name": "H2 receptor blockers (Famotidine)",
+            "use": "Reduce acid production; faster onset than PPIs"
+          },
+          {
+            "name": "Proton Pump Inhibitors / PPIs (Omeprazole, Esomeprazole, Lansoprazole)",
+            "use": "Most effective for reducing acid production and healing esophagus; first-line for moderate-severe GERD"
+          },
+          {
+            "name": "Prokinetics (Metoclopramide)",
+            "use": "Helps stomach empty faster; used if delayed gastric emptying is contributing"
+          },
+          {
+            "name": "Baclofen",
+            "use": "Reduces frequency of LES relaxations; used in refractory GERD"
+          }
+        ],
+        "surgery": "Fundoplication (Nissen fundoplication) — surgical procedure wrapping stomach top around LES to strengthen it. Considered when lifestyle + medications fail or patient prefers to avoid long-term medication."
+      },
+      "foods_to_avoid": [
+        "Chocolate",
+        "Peppermint and spearmint",
+        "Fatty or fried foods",
+        "Coffee and caffeinated beverages",
+        "Carbonated beverages",
+        "Alcohol",
+        "Acidic foods (tomatoes, citrus fruits)",
+        "Spicy foods",
+        "Onions and garlic"
+      ],
+      "foods_that_help": [
+        "Non-acidic vegetables (green beans, broccoli, asparagus, cauliflower, leafy greens)",
+        "Non-citrus fruits (bananas, melons, apples, pears)",
+        "Lean proteins (chicken, fish, tofu)",
+        "Whole grains (oatmeal, brown rice, whole grain bread)",
+        "Ginger (natural anti-inflammatory)",
+        "Low-fat or fat-free dairy",
+        "Herbal teas (chamomile, licorice — non-mint)"
+      ]
+    },
+    "peptic_ulcer": {
+      "definition": "Peptic ulcers are open sores that develop on the inner lining of the stomach (gastric ulcer), the upper portion of the small intestine (duodenal ulcer), or rarely the esophagus. They occur when the protective mucus layer is reduced or stomach acid erodes the lining.",
+      "source": "Mayo Clinic / NIDDK",
+      "symptoms": [
+        "Burning stomach pain (most common) — may improve with eating or antacids",
+        "Feeling of fullness, bloating, or belching",
+        "Nausea",
+        "Heartburn",
+        "Dark, tarry, or bloody stools (severe — seek emergency care)",
+        "Vomiting blood (severe — seek emergency care)",
+        "Unexplained weight loss"
+      ],
+      "causes": [
+        {
+          "cause": "H. pylori infection",
+          "notes": "Most common cause globally; bacteria weaken mucus protective coating"
+        },
+        {
+          "cause": "NSAIDs (aspirin, ibuprofen, naproxen)",
+          "notes": "Block prostaglandin synthesis that protects stomach lining; especially risky with long-term use"
+        },
+        {
+          "cause": "Excess acid production",
+          "notes": "Zollinger-Ellison syndrome (rare) causes overproduction of stomach acid"
+        },
+        {
+          "cause": "Smoking",
+          "notes": "Increases stomach acid and reduces healing"
+        },
+        {
+          "cause": "Alcohol",
+          "notes": "Irritates and erodes stomach lining"
+        }
+      ],
+      "treatment": {
+        "h_pylori_related": "H. pylori eradication therapy (see H. pylori treatment 2024 section) + PPI for mucosal healing",
+        "nsaid_related": "Stop or reduce NSAIDs; use PPIs or misoprostol for gastroprotection; consider acetaminophen as alternative",
+        "general": [
+          "PPIs for 4-8 weeks to heal the ulcer",
+          "H2 receptor antagonists as alternative",
+          "Antacids for symptom relief",
+          "Sucralfate — coats the ulcer lining",
+          "Avoid smoking and alcohol during healing"
+        ],
+        "diet_guidance": [
+          "Eat small, frequent meals",
+          "Avoid spicy foods, acidic foods, coffee, and alcohol",
+          "Probiotics may help restore gut flora during antibiotic therapy",
+          "Cabbage juice has traditional use for ulcers (contains glutamine)",
+          "Honey (especially Manuka honey) shows mild H. pylori inhibitory effects in some studies"
+        ]
+      },
+      "when_to_see_doctor_urgently": [
+        "Vomiting blood or vomit that looks like coffee grounds",
+        "Blood in stool or black/tarry stool",
+        "Sudden, severe abdominal pain (possible perforation — emergency)"
+      ]
+    }
+  },
+  "treatment_approaches": {
+    "conventional_medical": {
+      "gastritis_drugs": [
+        {
+          "class": "Proton Pump Inhibitors (PPIs)",
+          "examples": [
+            "Omeprazole (OPZ)",
+            "Lansoprazole",
+            "Esomeprazole"
+          ],
+          "mechanism": "Block the proton pump (H+/K+ ATPase), suppressing gastric acid secretion by over 80% at 40mg dose.",
+          "use": "First-line treatment for gastritis, peptic ulcers, H. pylori eradication (as part of triple therapy), NSAID-induced gastropathy.",
+          "notes": "Side effects possible with long-term use. May contribute to gastric gland toxicity; Vitamin C co-administration may mitigate this."
+        },
+        {
+          "class": "H2 Receptor Antagonists",
+          "examples": [
+            "Ranitidine",
+            "Famotidine"
+          ],
+          "mechanism": "Block histamine H2 receptors, reducing stomach acid production.",
+          "use": "Gastritis, peptic ulcers, GERD. Therapy goal: raise gastric pH above 4.5."
+        },
+        {
+          "class": "Antacids / Acid Neutralizers",
+          "examples": [
+            "Bismuth compounds",
+            "Sucralfate"
+          ],
+          "mechanism": "Neutralize existing stomach acid; some (sucralfate) also coat and protect the mucosal lining.",
+          "use": "Symptom relief; gastroprotection especially when co-prescribed with NSAIDs."
+        },
+        {
+          "class": "Prostaglandin Analogues",
+          "examples": [
+            "Misoprostol"
+          ],
+          "mechanism": "Synthetic prostaglandin E1 that protects the gastric mucosa by stimulating mucus/bicarbonate secretion and reducing acid.",
+          "use": "Prevention of NSAID-induced gastropathy."
+        },
+        {
+          "class": "H. pylori Triple Therapy",
+          "components": [
+            "Clarithromycin (antibiotic)",
+            "Amoxicillin (antibiotic)",
+            "Omeprazole (PPI)"
+          ],
+          "notes": "Success rate approximately 80%, decreasing worldwide due to H. pylori antibiotic resistance. Side effects from multiple drugs are common.",
+          "use": "Eradication of H. pylori infection."
+        }
+      ],
+      "therapy_goals": [
+        "Raise gastric pH above 4.5 to stop autodigestive processes",
+        "Raise pH above 6.0 for treating actively bleeding peptic ulcers",
+        "Eradicate H. pylori when present",
+        "Support mucosal healing",
+        "Relieve pain and inflammation"
+      ],
+      "h_pylori_updated_2024": {
+        "source": "ACG Clinical Practice Guideline 2024",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12063324/",
+        "key_changes_from_2017": [
+          "Bismuth Quadruple Therapy (BQT) is now the PREFERRED first-line treatment — NOT clarithromycin-based triple therapy.",
+          "Clarithromycin and levofloxacin-based regimens are NOT recommended unless susceptibility testing confirms effectiveness.",
+          "In the US, clarithromycin, metronidazole, and levofloxacin resistance rates exceed 30%; amoxicillin, rifabutin, and tetracycline resistance remains low.",
+          "14-day treatment duration recommended for all regimens (achieves >90% eradication vs 75-85% for triple therapy).",
+          "Vonoprazan (potassium-competitive acid blocker / PCAB) is now recognized as an alternative to PPI in dual or triple therapy."
+        ],
+        "first_line_regimens": [
+          {
+            "name": "Optimized Bismuth Quadruple Therapy (BQT) — PREFERRED",
+            "components": [
+              "PPI (proton pump inhibitor)",
+              "Bismuth",
+              "Nitroimidazole (metronidazole)",
+              "Tetracycline"
+            ],
+            "duration": "14 days",
+            "notes": "Do NOT substitute doxycycline for tetracycline (reduces eradication by 10-17%). Each drug must be at sufficient dose and frequency."
+          },
+          {
+            "name": "Rifabutin Triple Therapy",
+            "components": [
+              "PPI",
+              "Amoxicillin",
+              "Rifabutin"
+            ],
+            "duration": "14 days",
+            "notes": "Alternative first-line option for patients without penicillin allergy."
+          },
+          {
+            "name": "Vonoprazan Dual Therapy",
+            "components": [
+              "Vonoprazan (PCAB)",
+              "Amoxicillin"
+            ],
+            "duration": "14 days",
+            "notes": "New approach using potent acid blocker. Recognized in 2024 ACG guideline."
+          }
+        ],
+        "salvage_therapy": [
+          "Optimized BQT if not previously used",
+          "Rifabutin triple therapy if BQT was previously used",
+          "Susceptibility-guided therapy is ideal but testing is not always accessible"
+        ],
+        "global_prevalence": "H. pylori infects approximately half the world's population (systematic review, Gastroenterology 2017)",
+        "eradication_importance": "Eradication is strongly linked to preventing peptic ulcer recurrence and reducing gastric cancer risk. Chronic H. pylori infection is the leading risk factor for gastric cancer."
+      }
+    },
+    "natural_and_herbal": {
+      "probiotics_LAB": {
+        "overview": "Lactic acid bacteria (LAB) including Lactobacillus and Bifidobacterium species are proposed as natural alternatives for gastric health. They resist acid and bile, can transiently colonize the stomach, and competitively exclude pathogenic bacteria.",
+        "key_strains": [
+          {
+            "name": "Lactobacillus reuteri ATCC 55730",
+            "benefit": "Colonizes the GI tract and generates immune responses; stimulates T-helper cells in the ileum."
+          },
+          {
+            "name": "L. johnsonii La1",
+            "benefit": "Pronounced anti-inflammatory effect on H. pylori-associated gastritis; reduces pro-inflammatory chemokines in gastric mucosa."
+          },
+          {
+            "name": "L. casei",
+            "benefit": "Inhibits H. pylori growth; reduces urease activity in gastric epithelial cells."
+          },
+          {
+            "name": "L. acidophilus",
+            "benefit": "Bactericidal activity against H. pylori; used in probiotic fermented milk products."
+          },
+          {
+            "name": "Bifidobacterium bifidum CECT 7366",
+            "benefit": "Partially relieves H. pylori-induced gastric tissue damage; decreases H. pylori pathogenicity."
+          },
+          {
+            "name": "Streptococcus thermophilus CRL 1190",
+            "benefit": "EPS-producing strain shown to prevent and treat chronic gastritis in animal models; activates mucin synthesis; modulates inflammatory cytokines (reduces TNF-alpha, IFN-gamma; increases IL-10)."
+          }
+        ],
+        "exopolysaccharides": "EPS (exopolysaccharides) produced by certain LAB strains can inhibit H. pylori adhesion to the mucus layer, strengthen the mucus barrier, and modulate mucosal immune responses.",
+        "probiotic_foods": [
+          "Yogurt with live cultures",
+          "Fermented milk (kefir)",
+          "Commercially available probiotic supplements (consult healthcare provider for strain selection)"
+        ]
+      },
+      "medicinal_plants": {
+        "overview": "Plant extracts have been used for centuries for gastric conditions. Active compounds include phenolics, flavonoids, polysaccharides, terpenes, and essential oils. Always consult a healthcare provider before use.",
+        "notable_plants": [
+          {
+            "name": "Green Tea (Camellia sinensis)",
+            "active_compound": "Catechins",
+            "benefit": "Inhibits H. pylori urease; bactericidal and bacteriostatic effects in vitro; consumption before infection prevents mucosal inflammation; after infection reduces gastritis severity.",
+            "use": "Beverage (tea)"
+          },
+          {
+            "name": "Licorice Root (Glycyrrhiza glabra)",
+            "active_compound": "Polysaccharides (arabinose, galactose, glucose, glucuronic acid); DGL (deglycyrrhizinated licorice extract)",
+            "benefit": "Interacts with H. pylori outer-membrane adhesins, preventing adhesion to gastric mucus. DGL increases gastric mucus and bicarbonate production; has bactericidal properties.",
+            "use": "Syrup, tea, chewable tablets (DGL form preferred for long-term use)"
+          },
+          {
+            "name": "Chamomile (Matricaria chamomilla)",
+            "benefit": "Soothing and anti-inflammatory properties; calms stomach pain.",
+            "use": "Steep chamomile flowers in boiled water; let cool before drinking"
+          },
+          {
+            "name": "Aloe Vera",
+            "active_compound": "Acemannan",
+            "benefit": "Anti-inflammatory and regenerative effects on gastric mucosa.",
+            "use": "Pure juice (1/4 to 1/2 cup) or freeze-dried powder between or before meals; remove outer layer to avoid irritants"
+          },
+          {
+            "name": "Cranberry Juice",
+            "benefit": "High molecular mass constituent inhibits H. pylori adhesion to human gastric mucus and erythrocytes.",
+            "use": "Dietary supplement (anti-adhesion effect)"
+          },
+          {
+            "name": "Turmeric (Curcuma longa)",
+            "active_compound": "Curcuminoids",
+            "benefit": "Reduces serum nitric oxide and lipid peroxidation in gastritis; inhibits iNOS expression; maintains cellular glutathione stores.",
+            "use": "Dietary spice; supplement"
+          },
+          {
+            "name": "Peppermint (Mentha piperita)",
+            "benefit": "Digestive and anti-flatulence; relieves gastritis, dyspepsia, and biliary disorders.",
+            "use": "Infusion/tea (NOTE: avoid in GERD/reflux as it can relax the lower esophageal sphincter)"
+          },
+          {
+            "name": "Slippery Elm",
+            "active_compound": "Mucilage",
+            "benefit": "Soothes and protects the stomach lining.",
+            "use": "One teaspoon of powder in warm water before meals"
+          },
+          {
+            "name": "Pomegranate (Punica granatum)",
+            "benefit": "Anti-ulcer activity; hepatoprotective; tonic effect on gastric diseases.",
+            "use": "Fresh fruit, juice"
+          },
+          {
+            "name": "Okra (Abelmoschus esculentus)",
+            "active_compound": "Glycosylated compounds",
+            "benefit": "Inhibits adhesion of H. pylori to human gastric mucosa.",
+            "use": "Fresh fruit, cooked vegetable"
+          }
+        ]
+      },
+      "supplements_for_gastritis": [
+        {
+          "name": "DGL (Deglycyrrhizinated Licorice)",
+          "dosage": "1–3 chewable tablets before meals",
+          "benefit": "Increases gastric mucus and bicarbonate production; safe for long-term use; bactericidal properties."
+        },
+        {
+          "name": "Slippery Elm",
+          "dosage": "1 teaspoon powder in warm water before meals",
+          "benefit": "Contains mucilage that coats and protects the stomach lining."
+        },
+        {
+          "name": "L-Glutamine",
+          "dosage": "5–10 grams daily on an empty stomach",
+          "benefit": "Amino acid supporting cell health; repairs stomach lining; helps prevent toxins entering bloodstream."
+        },
+        {
+          "name": "Zinc Carnosine",
+          "dosage": "150 mg per day in divided doses",
+          "benefit": "Supports gastric healing and reduces inflammation without inhibiting stomach acid."
+        },
+        {
+          "name": "Aloe Vera Juice",
+          "dosage": "1/4 to 1/2 cup between or before meals",
+          "benefit": "Anti-inflammatory and regenerative effects (acemannan)."
+        },
+        {
+          "name": "Probiotics",
+          "dosage": "Varies by strain; consult healthcare provider",
+          "benefit": "Promotes gut health; may help manage H. pylori-associated gastritis."
+        },
+        {
+          "name": "Digestive Enzymes",
+          "dosage": "Per product label; consult doctor",
+          "benefit": "Aid food breakdown and nutrient absorption. Use with care to avoid irritation."
+        },
+        {
+          "name": "Multivitamins",
+          "dosage": "Per product label",
+          "benefit": "Prevent deficiencies common in gastritis (especially vitamin B12 and iron). Use non-irritating forms (sprays or sublinguals)."
+        }
+      ],
+      "home_remedies": [
+        {
+          "name": "Potato Juice",
+          "preparation": "Juice raw potatoes and consume immediately.",
+          "benefit": "Acts as a natural antacid; calms stomach pain."
+        },
+        {
+          "name": "Chamomile Tea",
+          "preparation": "Steep chamomile flowers in boiled water; let cool before drinking.",
+          "benefit": "Soothing and anti-inflammatory."
+        },
+        {
+          "name": "Nopal Water (Cactus Water)",
+          "preparation": "Soak cut nopal (prickly pear cactus) leaf in water overnight; drink before meals.",
+          "benefit": "Gastroprotective effects due to mucilage content."
+        },
+        {
+          "name": "Aloe Vera Water",
+          "preparation": "Remove the outer layer of aloe vera leaf; blend the inner gel with a little water. Consume on an empty stomach.",
+          "benefit": "Anti-inflammatory and regenerative."
+        }
+      ]
+    },
+    "gastroparesis_medical": {
+      "source": "NIDDK + StatPearls NCBI 2024",
+      "overview": "Treatment of gastroparesis depends on the cause, severity, and response to therapy. Dietary modification is the first step. Medications help when diet alone is insufficient. Surgical options are reserved for severe refractory cases.",
+      "medications": [
+        {
+          "name": "Metoclopramide (Reglan)",
+          "class": "Prokinetic / Dopamine D2 receptor antagonist",
+          "use": "First-line FDA-approved drug for gastroparesis in the US; improves gastric motility and reduces nausea/vomiting",
+          "dosage": "5-10 mg before meals and at bedtime",
+          "warnings": "Maximum recommended use: 12 weeks. Risk of tardive dyskinesia (involuntary muscle movements) with prolonged use — FDA black box warning."
+        },
+        {
+          "name": "Erythromycin",
+          "class": "Antibiotic / Motilin receptor agonist",
+          "use": "Low-dose erythromycin improves gastric emptying; not used for infection but for motility benefit",
+          "warnings": "Risk of tachyphylaxis (diminishing effect over time); cardiac side effects possible; short-term use preferred."
+        },
+        {
+          "name": "Domperidone",
+          "class": "Prokinetic (peripheral dopamine antagonist)",
+          "use": "Effective prokinetic; reduces nausea and vomiting. Not FDA-approved in the US but used in many other countries.",
+          "warnings": "Cardiac QT prolongation risk; requires special access program in the US."
+        },
+        {
+          "name": "Ondansetron (Zofran)",
+          "class": "Antiemetic (5-HT3 antagonist)",
+          "use": "Relief of nausea; does not improve gastric emptying rate",
+          "dosage": "4 or 8 mg up to 3 times daily"
+        },
+        {
+          "name": "Prochlorperazine",
+          "class": "Antiemetic (phenothiazine)",
+          "use": "Symptomatic relief of nausea and vomiting",
+          "dosage": "5-10 mg up to 3 times daily"
+        },
+        {
+          "name": "Diphenhydramine (Benadryl)",
+          "class": "Antiemetic (antihistamine H1 blocker)",
+          "use": "Mild antiemetic; often used for nausea relief in gastroparesis",
+          "dosage": "12.5-25 mg up to 4 times daily"
+        },
+        {
+          "name": "Tricyclic Antidepressants (low-dose nortriptyline or amitriptyline)",
+          "class": "Antidepressant / Gut-brain axis modulator",
+          "use": "For nausea and abdominal pain not responding to prokinetics; modulates gut-brain communication",
+          "warnings": "Anticholinergic effects may further delay gastric emptying at higher doses."
+        }
+      ],
+      "nutritional_support": {
+        "enteral_nutrition": "Jejunostomy tube (J-tube) feeding used when oral intake is insufficient; bypasses the stomach.",
+        "parenteral_nutrition": "IV nutrition delivery directly into bloodstream; used in most severe cases when GI tract cannot be used.",
+        "oral_supplements": "Liquid nutritional supplements (Ensure, Boost) are often better tolerated than solid foods and provide necessary calories and protein."
+      }
+    }
+  },
+  "diet_guidance": {
+    "gastritis_diet": {
+      "healing_program_overview": "The gastritis healing program focuses on three pillars: (1) Diet change, (2) Habit and lifestyle change, (3) Stress management. A 90-day healing period is recommended.",
+      "foods_to_eliminate": [
+        "Acidic fruits (citrus — lemons, oranges, grapefruit)",
+        "Acidic vegetables (tomatoes, tomato sauce, tomato paste)",
+        "Sugary and carbonated drinks (soda, energy drinks)",
+        "Coffee and caffeine",
+        "Alcohol",
+        "Processed and packaged foods (additives and preservatives worsen inflammation)",
+        "Fatty and fried foods",
+        "Dairy products (can irritate some people)",
+        "Gluten-containing foods (for sensitive individuals)",
+        "Very spicy foods",
+        "Extremely hot or cold foods",
+        "Excessive salt",
+        "Chocolate and mint"
+      ],
+      "healing_foods_to_include": [
+        {
+          "category": "High pH foods (above 5)",
+          "examples": [
+            "Papaya",
+            "Kale",
+            "Chicken (lean)",
+            "Fish (lean)",
+            "Sweet potatoes",
+            "Banana",
+            "Oats (if no gluten sensitivity)",
+            "Cooked spinach",
+            "Carrots",
+            "Pumpkin"
+          ]
+        },
+        {
+          "category": "Antioxidant-rich foods",
+          "examples": [
+            "Spinach",
+            "Broccoli (cooked, well-tolerated)",
+            "Berries (in moderation)",
+            "Sweet potatoes",
+            "Turmeric"
+          ]
+        },
+        {
+          "category": "Omega-3 and essential fatty acids",
+          "examples": [
+            "Salmon",
+            "Cod",
+            "Other fatty fish",
+            "Walnuts (in moderation)",
+            "Flaxseed oil"
+          ]
+        },
+        {
+          "category": "Lean proteins",
+          "examples": [
+            "Chicken breast",
+            "Turkey",
+            "Fish (cod, salmon, white fish)",
+            "Tofu",
+            "Eggs",
+            "Egg whites"
+          ]
+        },
+        {
+          "category": "Easy-to-digest soft/cooked foods",
+          "examples": [
+            "White rice",
+            "Oatmeal with almond milk",
+            "Mashed potatoes (no skin)",
+            "Cooked vegetables",
+            "Applesauce",
+            "Bananas",
+            "Well-cooked pasta (gluten-free if needed)"
+          ]
+        },
+        {
+          "category": "Soothing beverages",
+          "examples": [
+            "Chamomile tea",
+            "Ginger tea (mild)",
+            "Aloe vera juice",
+            "Bone broth",
+            "Water",
+            "Herbal teas (non-caffeinated, non-mint)"
+          ]
+        }
+      ],
+      "ingredient_substitutions": [
+        {
+          "avoid": "Raw onion",
+          "substitute": "Fennel, leeks (well-cooked)"
+        },
+        {
+          "avoid": "Garlic",
+          "substitute": "Asafoetida powder, Italian seasoning (herbs only)"
+        },
+        {
+          "avoid": "Vinegar",
+          "substitute": "Sumac or citrus zest (small amounts)"
+        },
+        {
+          "avoid": "Chocolate",
+          "substitute": "Carob"
+        },
+        {
+          "avoid": "Regular wheat flour/pasta",
+          "substitute": "Gluten-free flour and pasta"
+        },
+        {
+          "avoid": "Regular milk",
+          "substitute": "Almond milk, rice milk, oat milk (if tolerated)"
+        },
+        {
+          "avoid": "Butter (for cooking)",
+          "substitute": "Extra virgin olive oil, coconut oil (in moderation)"
+        }
+      ],
+      "bad_habits_to_avoid": [
+        "Skipping meals (prolongs stomach acid exposure to the lining)",
+        "Excessive salt intake (worsens inflammation)",
+        "Insufficient chewing (causes friction and irritation)",
+        "Eating extremely hot or cold foods",
+        "Drinking while eating (dilutes stomach acid, disrupts digestion)",
+        "Overeating (prolongs food in stomach, increases acid irritation)",
+        "Lying down right after eating",
+        "Smoking (impairs mucosal defense)",
+        "Excessive NSAID use (aspirin, ibuprofen)",
+        "Excessive alcohol",
+        "Stress eating or skipping meals due to stress"
+      ],
+      "positive_habits": [
+        "Eat 5–6 small meals per day",
+        "Chew food thoroughly (to mashed potato consistency)",
+        "Sit upright for at least 1 hour after eating",
+        "Drink beverages between meals (not during)",
+        "Stay hydrated throughout the day (sip, don't gulp)",
+        "Exercise moderately — walking improves gastric motility",
+        "Practice stress management (mindfulness, meditation, diaphragmatic breathing)",
+        "Plan meals in advance to avoid impulsive poor food choices",
+        "Cook in larger batches to have gastritis-friendly food ready",
+        "Maintain a food diary to identify personal triggers"
+      ]
+    },
+    "gastroparesis_diet": {
+      "overview": "The goal is to reduce symptoms and maintain adequate nutrition. Liquids pass through the stomach more easily than solids. When symptoms are active, start with a liquid diet and advance to soft foods as tolerated.",
+      "meal_frequency": "Eat 5–6 small meals per day. Each meal should be approximately 1 to 1.5 cups of food. Avoid large meals.",
+      "key_principles": [
+        "Reduce fat intake — fat slows stomach emptying",
+        "Reduce fiber intake — high fiber can cause bezoar formation (a blockage in the stomach)",
+        "Chew all food to a mashed potato or pudding-like consistency",
+        "Drink beverages between meals, not during",
+        "Sit upright for 2–3 hours after eating",
+        "Avoid lying down or reclining after eating",
+        "Avoid carbonated beverages and chewing gum (cause air bubbles)",
+        "Avoid alcohol (impairs gastric emptying)",
+        "Exercise (walking after meals helps stomach emptying)",
+        "Keep blood sugar controlled if diabetic"
+      ],
+      "foods_to_choose": {
+        "grains": {
+          "qualities": "Less than 3g fiber per serving; white/refined flour; soft",
+          "examples": [
+            "Saltines",
+            "White bread",
+            "White rice",
+            "Cream of wheat",
+            "Cream of rice",
+            "Pretzels",
+            "Graham crackers",
+            "Fine-ground grits",
+            "Low-fiber cold cereal"
+          ]
+        },
+        "protein": {
+          "qualities": "Lean (less than 5% fat); well-cooked; very tender; moist; finely chopped",
+          "examples": [
+            "Canned tuna",
+            "Eggs",
+            "Turkey (skinless)",
+            "Tofu",
+            "Salmon",
+            "Lean ground beef (<5% fat)",
+            "Creamy nut butter (1 tbsp)",
+            "White fish",
+            "Chicken breast"
+          ]
+        },
+        "dairy": {
+          "qualities": "Low-fat (less than 2% fat); low-lactose; fortified",
+          "examples": [
+            "Lactose-free milk",
+            "Rice milk",
+            "Skim/1%/2% milk",
+            "Almond/soy/cashew milk",
+            "Sherbet",
+            "Low-fat yogurt",
+            "Liquid nutritional supplements (less than 3g fiber/cup)"
+          ]
+        },
+        "vegetables": {
+          "qualities": "Less than 3g fiber per serving; well-cooked; canned; no skin",
+          "examples": [
+            "Carrots (1/2 cup, cooked)",
+            "Mashed potatoes (no skin)",
+            "Green beans (3/4 cup, cooked)",
+            "Iceberg lettuce",
+            "Vegetable juice (strained)",
+            "Cooked spinach (3/4 cup)",
+            "Cooked squash (1 cup)"
+          ]
+        },
+        "fruits": {
+          "qualities": "Less than 3g fiber per serving; well-cooked or canned; no skin",
+          "examples": [
+            "Cantaloupe",
+            "Bananas",
+            "Peach or pear cups in water (canned)",
+            "Honeydew",
+            "Watermelon (2 cups)",
+            "Applesauce (no skin)",
+            "Fruit nectar (1/2 cup)"
+          ]
+        },
+        "fats": {
+          "qualities": "Liquid oils",
+          "examples": [
+            "Canola oil",
+            "Olive oil",
+            "Avocado oil",
+            "Sesame oil"
+          ]
+        },
+        "beverages": {
+          "qualities": "Low sugar; high in electrolytes",
+          "examples": [
+            "Clear broths",
+            "Pedialyte",
+            "Gelatin (Jell-O)",
+            "Popsicles",
+            "Sports drinks mixed with water",
+            "Water"
+          ]
+        }
+      },
+      "foods_to_avoid": {
+        "grains": [
+          "Barley",
+          "Brown rice",
+          "Quinoa",
+          "Bran or buckwheat",
+          "Popcorn",
+          "Oats",
+          "Whole grain/wheat products",
+          "Granola",
+          "High-fiber cereal"
+        ],
+        "protein": [
+          "Sausage and hot dogs",
+          "Shellfish",
+          "Pork chops",
+          "Nuts",
+          "Bacon",
+          "Steak",
+          "Beans and lentils",
+          "Crunchy nut butters",
+          "Sushi",
+          "Roast beef",
+          "Fried meats"
+        ],
+        "dairy": [
+          "Coconut and pea milk",
+          "Whole-fat milk products",
+          "All cheese products"
+        ],
+        "vegetables_avoid": [
+          "Asparagus",
+          "Broccoli and cauliflower (raw)",
+          "Brussels sprouts",
+          "Cabbage",
+          "Corn",
+          "Green peas",
+          "Lima beans",
+          "Mushrooms",
+          "Okra",
+          "Onions",
+          "Parsnips",
+          "Green peppers",
+          "Pickles",
+          "Potato skins",
+          "Raw spinach",
+          "Salsa",
+          "Olives",
+          "All raw vegetables"
+        ],
+        "fruits_avoid": [
+          "Oranges",
+          "Grapefruit",
+          "Tomatoes",
+          "Avocados",
+          "Berries",
+          "Coconut",
+          "Dried fruit",
+          "Pineapple",
+          "Fresh fruit (except recommended ones)"
+        ],
+        "fats_avoid": [
+          "Butter and Ghee",
+          "Shortening",
+          "Coconut milk/oil",
+          "Pizza",
+          "Lard",
+          "Mayonnaise"
+        ],
+        "beverages_avoid": [
+          "Coffee",
+          "Soda and carbonated beverages",
+          "Milkshakes and ice cream",
+          "Sweet tea",
+          "Caffeinated tea",
+          "Alcoholic beverages"
+        ]
+      },
+      "sample_meal_plan_1": {
+        "breakfast": "1 slice white toast, 1 egg scrambled in 1 tsp canola oil, 1 cup peach nectar",
+        "morning_snack": "Smoothie: 1/2 banana, 1/2 cup low-fat Greek yogurt, 1 cup 2% milk",
+        "lunch": "2 oz canned chicken mixed with 1 tsp mayonnaise, 9 saltine crackers, 1/2 cup applesauce",
+        "afternoon_snack": "1 slice white toast with 1 tbsp smooth peanut butter",
+        "dinner": "2 oz baked fish, 1/2 cup mashed potatoes, 3/4 cup green beans sautéed in 1 tsp olive oil",
+        "evening_snack": "1 packet instant breakfast mixed with 1 cup 2% milk"
+      },
+      "sample_meal_plan_2": {
+        "breakfast": "1 cup cooked cream of rice or Cheerios in 1/2 cup 1% milk, 1 scrambled egg in 1 tsp canola oil",
+        "morning_snack": "1/2 cup fruit canned in juice, 1/4 cup low-fat cottage cheese",
+        "lunch": "1 cup broth-based soup (chicken noodle/rice), 6 saltines softened in soup, 1/2 cup applesauce",
+        "afternoon_snack": "4 oz plain yogurt, 1 small banana",
+        "dinner": "3 oz baked fish or chicken (cut small), 1/2 cup mashed potatoes, 1/2 cup cooked carrots in 1 tsp olive oil",
+        "evening_snack": "1 can low-fat liquid nutritional supplement"
+      },
+      "smoothie_guidelines": [
+        "Do not use raw eggs — use pasteurized products (e.g., Eggbeaters)",
+        "Bananas contain soluble fiber, which affects gastroparesis less than insoluble fiber",
+        "Choose products with less than 3g insoluble fiber per serving",
+        "Use low-fat dairy or dairy alternatives (almond/soy milk and yogurt)",
+        "Boost protein with unflavored 100% whey protein powder or low-fiber plant-based protein",
+        "Prepared smoothie options: Carnation Instant Breakfast, Boost Breeze, Ensure Clear",
+        "Electrolyte solutions for hydration: Nuun Tablets, Pedialyte, Electrolit, Liquid IV"
+      ]
+    },
+    "low_FODMAP_diet": {
+      "overview": "The low FODMAP diet eliminates fermentable carbohydrates that trigger IBS, gas, and bloating symptoms. Symptom improvement may take up to 12 weeks.",
+      "FODMAP_stands_for": "Fermentable Oligosaccharides, Disaccharides, Monosaccharides, And Polyols",
+      "foods_safe_to_eat": {
+        "vegetables": [
+          "Arugula (2 cups)",
+          "Aubergine/eggplant (1 cup)",
+          "Bean sprouts (3/4 cup)",
+          "Bok choy",
+          "Broccoli (up to 3/4 cup)",
+          "Carrots (1 medium)",
+          "Cherry tomatoes",
+          "Corn (1/2 cob)",
+          "Cucumber (1/2 cup)",
+          "Edamame (frozen, 1/2 cup beans only)",
+          "Kale (1/2 cup)",
+          "Lettuce/leafy greens",
+          "Oyster mushrooms (1 cup)",
+          "Olives",
+          "Potatoes (unpeeled, 1/2 medium)",
+          "Spinach (2 cups)",
+          "Spring onion (green part only)",
+          "Squash",
+          "Swiss chard",
+          "Tomatoes",
+          "Zucchini (up to 1/3 cup)"
+        ],
+        "fruits": [
+          "Banana (1/3 ripe or unripe)",
+          "Blueberries (1/4 cup)",
+          "Cantaloupe (3/4 cup)",
+          "Clementine (1 medium)",
+          "Grapes (1 cup)",
+          "Honeydew melon (1/2 cup)",
+          "Kiwifruit (2 small)",
+          "Mandarin oranges (2 small)",
+          "Oranges (1 medium)",
+          "Papaya (1 cup)",
+          "Pineapple (1 cup)",
+          "Raspberries (30 berries)",
+          "Strawberries (10 medium)",
+          "Watermelon (only 1.5 tbsp — high FODMAP in larger amounts)"
+        ],
+        "grains_starches": [
+          "White and brown rice",
+          "Rice cakes",
+          "Gluten-free grains (pasta, bread, tortillas)",
+          "Wheat-free flour",
+          "Gluten-free oats",
+          "Quinoa",
+          "Corn tortillas",
+          "Polenta",
+          "Cream of rice",
+          "Grits",
+          "Cheerios",
+          "Corn Flakes"
+        ],
+        "protein": [
+          "Beef",
+          "Chicken",
+          "Canned tuna",
+          "Eggs",
+          "Fish",
+          "Lamb",
+          "Pork",
+          "Poultry",
+          "Tofu (2/3 cup)",
+          "Peanut butter (less than 4 tbsp)"
+        ],
+        "dairy_safe": [
+          "Almond milk (1 cup)",
+          "Lactose-free milk",
+          "Lactose-free yogurt",
+          "Rice milk",
+          "Sherbet",
+          "Swiss cheese (2 slices)",
+          "Goat's milk yogurt (3/4 cup)",
+          "Lactose-free cottage cheese/sour cream"
+        ],
+        "nuts_seeds": [
+          "10 almonds",
+          "10 Brazil nuts",
+          "10 hazelnuts",
+          "1 tbsp flax seeds",
+          "20 macadamia nuts",
+          "32 peanuts",
+          "10 pecans",
+          "10 walnuts",
+          "2 tbsp chia seeds",
+          "2 tbsp pumpkin seeds"
+        ]
+      },
+      "foods_to_avoid": {
+        "vegetables_avoid": [
+          "Artichoke",
+          "Asparagus (5+ spears)",
+          "Beans (all types)",
+          "Beets (large amounts)",
+          "Broccoli (more than 3/4 cup)",
+          "Cauliflower (more than 3/4 cup)",
+          "Garlic",
+          "Hummus",
+          "Kidney beans",
+          "Leek bulb",
+          "Lentils",
+          "Mushrooms (most types)",
+          "Onions",
+          "Shallots",
+          "Snow peas",
+          "Sugar peas",
+          "Tomato sauce and paste",
+          "Radicchio"
+        ],
+        "fruits_avoid": [
+          "Apples",
+          "Apricots",
+          "Avocado (1/2 or more)",
+          "Blackberries (2/3 cup+)",
+          "Canned fruit in natural juices",
+          "Cherries (1 cup)",
+          "Dried fruit (more than 1 tbsp)",
+          "Figs",
+          "Fruit juices",
+          "Mango (fresh/dried, more than 1/5 cup)",
+          "Nectarines",
+          "Peach",
+          "Pears",
+          "Persimmon",
+          "Plum",
+          "Prunes",
+          "Raisins (more than 1 tbsp)",
+          "Watermelon (1 cup+)"
+        ],
+        "grains_avoid": [
+          "Barley",
+          "Inulin",
+          "Wheat/gluten-containing foods",
+          "Flour tortillas",
+          "Rye",
+          "Pea starch",
+          "Pea protein"
+        ],
+        "dairy_avoid": [
+          "Buttermilk (more than 1 tbsp)",
+          "Condensed milk",
+          "Cow's milk",
+          "Ice cream (regular)",
+          "Sour cream",
+          "Soy milk/products",
+          "Whipped cream"
+        ],
+        "sweeteners_avoid": [
+          "Agave syrup",
+          "Artificial sweeteners",
+          "High fructose corn syrup",
+          "Honey (more than 1 tsp)",
+          "Molasses",
+          "Sugar alcohols (sorbitol, mannitol, xylitol, isomalt)",
+          "Sugar-free gum/treats"
+        ],
+        "seasonings_avoid": [
+          "Onion powder",
+          "Garlic salt/powder",
+          "Ketchup",
+          "Prebiotics (inulin, chicory root)",
+          "Salad dressings (most commercial)"
+        ],
+        "beverages_avoid": [
+          "Rum",
+          "Fruit juices",
+          "Soda",
+          "Oolong tea",
+          "Chamomile tea (large amounts)",
+          "Fennel herbal tea",
+          "Teas with chicory root/inulin/FOS"
+        ]
+      },
+      "nutrition_tips": [
+        "Make dietary changes gradually",
+        "Keep a food diary — note what improves and worsens symptoms",
+        "Eat on a regular schedule; aim for 5–6 small meals/snacks daily",
+        "Don't skip meals",
+        "Drink 6–8 cups of water plus other beverages daily",
+        "A low-fat diet is often better tolerated",
+        "Avoid fried and high-fat foods",
+        "Limit acidic, spicy, fried, or greasy foods if you have GERD",
+        "Increase fiber gradually (not all at once)",
+        "Symptom improvement may take up to 12 weeks",
+        "Personal triggers vary — what affects one person may not affect another",
+        "For more information: Monash University FODMAP resources and IFFGD.org"
+      ]
+    }
+  },
+  "recipes": {
+    "gastritis_friendly_breakfasts": [
+      {
+        "name": "Classic Oatmeal",
+        "servings": 1,
+        "prep_time": "5 min",
+        "cook_time": "10 min",
+        "ingredients": [
+          "Oats",
+          "Almond milk",
+          "Banana",
+          "Pinch of salt",
+          "Vanilla extract",
+          "Optional: coconut flakes, walnuts, maple syrup"
+        ],
+        "notes": "Substitute banana with pear if preferred. Use gluten-free oats if gluten-sensitive.",
+        "calories": 295
+      },
+      {
+        "name": "Scrambled Eggs with Spinach",
+        "servings": 1,
+        "prep_time": "10 min",
+        "cook_time": "5 min",
+        "ingredients": [
+          "Eggs",
+          "Fresh spinach",
+          "Olive oil (1 tsp)",
+          "Salt",
+          "Optional: black olives, gluten-free toast"
+        ],
+        "notes": "High protein; easy to make."
+      }
+    ],
+    "gastritis_friendly_lunches_dinners": [
+      {
+        "name": "Chicken Vegetable Stir-Fry",
+        "servings": 1,
+        "prep_time": "20 min",
+        "cook_time": "15 min",
+        "ingredients": [
+          "Chicken breast",
+          "Broccoli (small amount, cooked well)",
+          "Carrot",
+          "Zucchini",
+          "Optional: mushrooms",
+          "Olive or coconut oil",
+          "Ginger",
+          "Coconut aminos or Bragg liquid aminos",
+          "Sesame oil",
+          "Arrowroot flour or cornstarch"
+        ],
+        "calories": 179
+      },
+      {
+        "name": "Chicken Vegetable Soup",
+        "servings": 4,
+        "prep_time": "15 min",
+        "cook_time": "30 min",
+        "description": "Comforting chicken soup with soft vegetables; ideal for lighter meals or flare-ups.",
+        "calories": 149
+      },
+      {
+        "name": "Baked Cod with Vegetables",
+        "servings": 1,
+        "prep_time": "20 min",
+        "cook_time": "20 min",
+        "ingredients": [
+          "Cod fillet",
+          "Herbs (fresh or dried)",
+          "Olive oil",
+          "Soft vegetables (cooked Brussels sprouts or carrots or green beans)"
+        ],
+        "calories": 189
+      },
+      {
+        "name": "Glazed Salmon with Broccoli",
+        "servings": 2,
+        "prep_time": "10 min",
+        "cook_time": "20 min",
+        "description": "Salmon with a mild sweet glaze, served with steamed broccoli.",
+        "calories": 184
+      },
+      {
+        "name": "Cream of Broccoli Soup",
+        "servings": 2,
+        "prep_time": "15 min",
+        "cook_time": "20 min",
+        "description": "Creamy texture without cream or butter.",
+        "calories": 131
+      },
+      {
+        "name": "Creamy Pumpkin Soup",
+        "servings": 1,
+        "prep_time": "15 min",
+        "cook_time": "25 min",
+        "description": "Rich pumpkin soup; no cream required.",
+        "calories": 217
+      }
+    ],
+    "gastritis_friendly_sides": [
+      {
+        "name": "Sautéed Potatoes",
+        "servings": 2,
+        "prep_time": "10 min",
+        "cook_time": "20 min",
+        "ingredients": [
+          "3 medium potatoes",
+          "1 tbsp olive oil",
+          "1–2 tbsp fresh parsley",
+          "1/2 tsp dried rosemary",
+          "1/2 tsp salt"
+        ],
+        "preparation": "Peel and cut potatoes, boil until tender (15–18 min), drain. Sauté in oil over medium-high heat until golden (5–10 min). Add salt, rosemary, parsley; sauté 30–60 more seconds.",
+        "nutrition_per_serving": {
+          "calories": 245,
+          "fat_g": 3.6,
+          "protein_g": 4.3,
+          "carbs_g": 45,
+          "fiber_g": 5
+        }
+      },
+      {
+        "name": "Simple Vegetable Rice",
+        "servings": 2,
+        "prep_time": "15 min",
+        "cook_time": "20 min",
+        "ingredients": [
+          "3/4 cup white rice",
+          "1.5 cups vegetable broth",
+          "1/2 medium carrot (diced)",
+          "1/2 celery stalk",
+          "1/2 cup zucchini (diced)",
+          "1/4 leek (finely chopped)",
+          "1 tbsp olive oil",
+          "1/2 tsp salt"
+        ],
+        "preparation": "Sauté vegetables in oil for 5 min. Boil broth and salt, add rice; cook until drying. Stir in veggies; cover and cook for 15 min.",
+        "nutrition_per_serving": {
+          "calories": 304,
+          "fat_g": 4,
+          "protein_g": 5.4,
+          "carbs_g": 57,
+          "fiber_g": 3
+        }
+      },
+      {
+        "name": "Turmeric Coconut Rice",
+        "servings": 2,
+        "prep_time": "10 min",
+        "cook_time": "15 min",
+        "ingredients": [
+          "3/4 cup white rice",
+          "1/2 cup coconut milk",
+          "1 cup water or broth",
+          "1/2 tsp turmeric",
+          "1 tsp salt",
+          "Optional: 1/4–1/2 tsp fresh ginger"
+        ],
+        "preparation": "Boil water, turmeric, salt, and ginger; add rice and coconut milk. Reduce heat, stir, and cover for 15–18 min.",
+        "notes": "Turmeric can cause discomfort for some individuals with gastritis — introduce cautiously.",
+        "nutrition_per_serving": {
+          "calories": 347,
+          "fat_g": 9,
+          "protein_g": 4.7,
+          "carbs_g": 55,
+          "fiber_g": 2
+        }
+      },
+      {
+        "name": "Roasted Butternut Squash",
+        "servings": 2,
+        "prep_time": "10 min",
+        "cook_time": "30 min",
+        "ingredients": [
+          "400g butternut squash",
+          "1.5 tbsp fresh herbs",
+          "1 tbsp olive oil",
+          "1/2 tsp salt",
+          "Optional: dash of cumin"
+        ],
+        "preparation": "Preheat oven to 400°F. Toss squash pieces with oil, herbs, and salt. Spread on baking sheet. Bake 20 min, stir, bake another 10 min."
+      }
+    ],
+    "gastroparesis_smoothies": [
+      {
+        "name": "Peachy Cinnamon Smoothie",
+        "ingredients": [
+          "1 cup peaches canned in their own juice",
+          "1/2 cup low-fat yogurt",
+          "1/2 cup 1% milk or milk alternative",
+          "1 tbsp honey (pasteurized)",
+          "Pinch of cinnamon",
+          "3 ice cubes"
+        ],
+        "protein_g": 8,
+        "insoluble_fiber_g": 0,
+        "per_portion": "10 oz"
+      },
+      {
+        "name": "Banana Flip Smoothie",
+        "ingredients": [
+          "1 banana",
+          "1 package vanilla Instant Breakfast",
+          "1 cup 1% milk or milk alternative",
+          "1/4 cup fruit nectar",
+          "1 cup low-fat peach yogurt",
+          "1 tsp vanilla extract"
+        ],
+        "protein_g": 12,
+        "insoluble_fiber_g": 1,
+        "per_portion": "10 oz"
+      },
+      {
+        "name": "Banana Rice Smoothie",
+        "ingredients": [
+          "1/2 cup cooked cream of rice (chilled)",
+          "1 frozen banana",
+          "1 cup 1% milk or milk alternative",
+          "1 tbsp honey (pasteurized)",
+          "1 tsp vanilla extract"
+        ],
+        "protein_g": 8,
+        "insoluble_fiber_g": 0,
+        "per_portion": "10 oz"
+      },
+      {
+        "name": "Carrot Smoothie",
+        "ingredients": [
+          "1 cup carrot juice",
+          "1 cup plain low-fat yogurt",
+          "1 banana",
+          "1/2 cup Eggbeaters (pasteurized)",
+          "3 ice cubes"
+        ],
+        "protein_g": 28,
+        "insoluble_fiber_g": 3,
+        "per_portion": "10 oz"
+      },
+      {
+        "name": "Sherbet Shake",
+        "ingredients": [
+          "1 cup any flavor sherbet",
+          "1/2 cup 1% milk or milk alternative"
+        ],
+        "protein_g": 5,
+        "insoluble_fiber_g": 0,
+        "per_portion": "10 oz"
+      },
+      {
+        "name": "Blueberry Smoothie",
+        "ingredients": [
+          "4 oz silken tofu or 2 scoops protein powder",
+          "1 banana",
+          "1/4 cup frozen blueberries",
+          "1 cup 1% milk or milk alternative"
+        ],
+        "protein_g": 20,
+        "insoluble_fiber_g": 3,
+        "per_portion": "10 oz"
+      },
+      {
+        "name": "Tropical Banana Smoothie",
+        "ingredients": [
+          "2 ripe bananas",
+          "1/2 cup peaches canned in juice",
+          "1 cup mango or guava nectar",
+          "1/2 cup 1% milk or milk alternative",
+          "3 ice cubes"
+        ],
+        "protein_g": 7.5,
+        "insoluble_fiber_g": 2,
+        "per_portion": "10 oz"
+      },
+      {
+        "name": "Raspberry Rice Smoothie",
+        "ingredients": [
+          "1/2 cup cooked cooled white rice",
+          "1 banana",
+          "1/4 cup frozen raspberries",
+          "1/2 cup plain low-fat yogurt",
+          "2 cups 1% milk",
+          "1 tbsp honey (pasteurized)"
+        ],
+        "protein_g": 20,
+        "insoluble_fiber_g": 2,
+        "per_portion": "10 oz"
+      },
+      {
+        "name": "Strawberry Smoothie",
+        "ingredients": [
+          "1 cup 1% milk or milk alternative",
+          "6 oz low-fat strawberry yogurt",
+          "4 oz silken tofu or protein powder",
+          "1/4 cup strawberries (fresh or frozen)",
+          "1/2 tsp vanilla extract"
+        ],
+        "protein_g": 24,
+        "insoluble_fiber_g": 3,
+        "per_portion": "10 oz"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "What is the difference between gastritis and gastroparesis?",
+      "answer": "Gastritis is inflammation of the stomach lining, caused by factors like H. pylori infection, NSAIDs, alcohol, or stress. Gastroparesis is a motility disorder where the stomach empties too slowly due to nerve damage, not inflammation. Both can cause nausea and discomfort, but they have different causes, diagnoses, and management strategies."
+    },
+    {
+      "question": "What foods should I avoid with gastritis?",
+      "answer": "Avoid acidic foods (citrus, tomatoes), alcohol, coffee, carbonated drinks, spicy foods, fried/fatty foods, processed foods, excessive salt, and NSAIDs. Also avoid overeating and skipping meals. Refer to the gastritis_diet section for a detailed list."
+    },
+    {
+      "question": "What foods should I avoid with gastroparesis?",
+      "answer": "Avoid high-fat foods, high-fiber foods, raw vegetables, tough meats, beans/lentils, most raw fruits, carbonated beverages, alcohol, and coffee. Fat and fiber both slow stomach emptying. Refer to the gastroparesis_diet section for a complete food list."
+    },
+    {
+      "question": "Can I use probiotics for gastritis?",
+      "answer": "Yes, certain probiotic strains (especially Lactobacillus and Bifidobacterium species) have shown benefits for gastritis, particularly H. pylori-associated gastritis. They can help competitively exclude H. pylori, reduce inflammation, and support mucosal healing. Always consult your healthcare provider for strain-specific recommendations."
+    },
+    {
+      "question": "What is H. pylori and how is it treated?",
+      "answer": "Helicobacter pylori is a bacterium that infects the gastric mucosa and is the most aggressive cause of chronic gastritis, peptic ulcers, and gastric cancer. Standard treatment is triple therapy: two antibiotics (clarithromycin + amoxicillin) plus a proton pump inhibitor (e.g., omeprazole), taken for 10–14 days. Success rate is about 80%, decreasing due to antibiotic resistance. Natural anti-adhesion compounds (cranberry, licorice root, green tea catechins) may complement conventional treatment."
+    },
+    {
+      "question": "How long does it take to heal gastritis?",
+      "answer": "This varies significantly by cause and severity. Acute gastritis from a specific trigger (e.g., stopping NSAIDs) may resolve in days to weeks. Chronic gastritis from H. pylori requires treatment of the infection. The Gastritis Healing Book recommends a 90-day foundational healing period combining diet change, lifestyle modification, and stress management. Always work with a healthcare provider."
+    },
+    {
+      "question": "What is the Low FODMAP diet and who is it for?",
+      "answer": "The Low FODMAP diet is designed for people with IBS, gas, bloating, and bowel irritability. It eliminates fermentable carbohydrates (FODMAPs) that pull water into the small intestine and are fermented by gut bacteria, causing symptoms. It typically involves a strict elimination phase followed by gradual reintroduction to identify personal triggers. Symptom improvement may take up to 12 weeks."
+    },
+    {
+      "question": "Can diet alone cure gastritis?",
+      "answer": "Diet is a crucial part of gastritis management but may not be sufficient alone. If H. pylori is present, antibiotic eradication therapy is necessary. NSAIDs should be stopped if possible. Diet changes reduce irritation, support mucosal healing, and decrease inflammation, but they work best alongside appropriate medical treatment and lifestyle changes."
+    },
+    {
+      "question": "What natural remedies help with gastritis?",
+      "answer": "Evidence-supported options include: DGL licorice (increases mucus protection), Slippery Elm (mucilage coating), Aloe Vera juice (anti-inflammatory), L-Glutamine (stomach lining repair), Zinc Carnosine (healing, anti-inflammatory), probiotics (Lactobacillus strains), green tea catechins (anti-H. pylori), chamomile tea (soothing), and potato juice (natural antacid). Always consult a healthcare provider before starting supplements."
+    },
+    {
+      "question": "I have gastroparesis and diabetes — what should I know?",
+      "answer": "Diabetes is the most common cause of gastroparesis. Gastroparesis makes blood sugar control very difficult because food absorption becomes unpredictable. You should monitor blood sugar more frequently, work with a diabetes educator and dietitian to adjust your insulin timing, and keep blood sugars in goal ranges — high blood sugar directly worsens stomach emptying. Focus on small, frequent low-fat, low-fiber meals."
+    },
+    {
+      "question": "What beverages are safe with gastroparesis?",
+      "answer": "Safe options include clear broths, Pedialyte, gelatin, popsicles, sports drinks mixed with water, and water. Avoid coffee, soda and carbonated beverages, milkshakes, sweet tea, caffeinated teas, and alcohol. Smoothies made with low-fat, low-fiber ingredients are excellent for maintaining calories and nutrition."
+    },
+    {
+      "question": "Is gluten-free diet needed for gastritis?",
+      "answer": "Not necessarily for everyone. The Gastritis Healing Book recommends eliminating gluten as part of an anti-inflammatory gastritis healing program, as it may irritate sensitive individuals. However, this is not a universal medical recommendation. If you have celiac disease or proven gluten sensitivity, a gluten-free diet is medically necessary. Discuss with your healthcare provider."
+    },
+    {
+      "question": "What is the difference between gastritis and GERD?",
+      "answer": "Gastritis is inflammation of the stomach lining itself, caused by H. pylori, NSAIDs, alcohol, or stress. GERD (Gastroesophageal Reflux Disease) is when stomach acid frequently flows back into the esophagus, causing heartburn and esophageal damage. They can co-exist — for example, low stomach acid from gastritis may contribute to GERD, and NSAID use can cause both."
+    },
+    {
+      "question": "What is the difference between gastritis and a peptic ulcer?",
+      "answer": "Gastritis is inflammation of the stomach lining; it may or may not cause visible tissue damage. A peptic ulcer is an open sore (erosion through the full mucosal layer) in the stomach or duodenum. Untreated gastritis, especially from H. pylori, can progress to peptic ulcer disease. Both share similar causes (H. pylori, NSAIDs)."
+    },
+    {
+      "question": "What is the updated H. pylori treatment in 2024?",
+      "answer": "The 2024 ACG (American College of Gastroenterology) guidelines now recommend Bismuth Quadruple Therapy (BQT) as the preferred first-line treatment — consisting of a PPI, bismuth, nitroimidazole, and tetracycline for 14 days. The older clarithromycin-based triple therapy is no longer recommended as first-line because resistance to clarithromycin exceeds 30% in many US regions. Alternative options include rifabutin triple therapy or vonoprazan dual therapy. Always follow your doctor's guidance based on your local resistance patterns."
+    },
+    {
+      "question": "What medications are used for gastroparesis?",
+      "answer": "The only FDA-approved medication specifically for gastroparesis in the US is metoclopramide (Reglan) — a prokinetic drug that helps the stomach contract and empty faster. It should be used for no more than 12 weeks due to risk of tardive dyskinesia. Other options include low-dose erythromycin (for motility), antiemetics like ondansetron and prochlorperazine (for nausea relief), and domperidone (not FDA-approved in the US). For pain, non-narcotic medicines are preferred as opioids worsen gastroparesis."
+    },
+    {
+      "question": "Is IBS dangerous? Does it cause cancer?",
+      "answer": "No, IBS (Irritable Bowel Syndrome) does NOT cause permanent damage to the intestines and does NOT increase the risk of colon cancer. It is a functional disorder — meaning the bowel works abnormally but is not structurally damaged. IBS is a chronic, manageable condition. However, certain symptoms like blood in stool, unintended weight loss, or symptoms starting after age 50 require medical evaluation to rule out more serious conditions."
+    },
+    {
+      "question": "How do I know if I have H. pylori?",
+      "answer": "H. pylori can be detected through: (1) Urea breath test — drink a liquid containing urea; if H. pylori is present, it breaks it into carbon dioxide detectable in your breath; (2) Stool antigen test — detects H. pylori proteins in stool; (3) Blood antibody test — shows past or present infection; (4) Endoscopy with biopsy — the most definitive test, allows direct examination of stomach lining and tissue testing. Your doctor will choose the appropriate test based on your symptoms and situation."
+    },
+    {
+      "question": "What are warning signs I need to go to emergency care for stomach problems?",
+      "answer": "Seek emergency care immediately if you have: black, tarry, or bloody stool (may indicate stomach or intestinal bleeding); vomiting blood or material that looks like coffee grounds; sudden, severe abdominal pain (possible ulcer perforation — a medical emergency); signs of severe dehydration (dizziness, no urination, rapid heartbeat). These are potentially life-threatening and require immediate medical attention."
+    },
+    {
+      "question": "Can children get gastritis?",
+      "answer": "Yes, children can develop gastritis. H. pylori infection can occur in childhood, and H. pylori bacteria may spread through contact with an infected person's vomit, stool, or saliva. NSAIDs and certain infections can also cause gastritis in children. Symptoms in children may include abdominal pain, nausea, vomiting, and poor appetite. A pediatric gastroenterologist should be consulted for proper diagnosis and treatment."
+    },
+    {
+      "question": "Can I exercise with gastritis or gastroparesis?",
+      "answer": "Yes — moderate exercise is generally beneficial. For gastritis, exercise helps manage stress (a major gastritis trigger) and supports overall digestive health. For gastroparesis, walking after meals is specifically recommended as it has been shown to improve stomach emptying in healthy individuals. Avoid vigorous exercise immediately after eating. High-impact exercises that compress the abdomen may worsen symptoms. Always follow your healthcare provider's guidance."
+    },
+    {
+      "question": "What is Gastric Electrical Stimulation (GES) for gastroparesis?",
+      "answer": "Gastric Electrical Stimulation (GES) is a device surgically implanted in the abdomen that sends mild electrical pulses to the stomach muscles to help control nausea and vomiting in gastroparesis. It is used only for gastroparesis caused by diabetes or unknown causes (idiopathic), and only when medications fail to control symptoms. It is approved by the FDA under a humanitarian device exemption. GES improves symptoms in many patients but does not consistently improve gastric emptying rates."
+    }
+  ],
+  "stress_and_lifestyle": {
+    "stress_impact": "Chronic stress reduces protective gastric factors, increases stomach acid production, and influences unhealthy coping behaviors (alcohol, smoking, poor diet). The gut-brain relationship is well established — psychological well-being directly affects digestive health.",
+    "stress_management_techniques": [
+      "Mindfulness meditation",
+      "Diaphragmatic (belly) breathing",
+      "Progressive muscle relaxation",
+      "Yoga and gentle stretching",
+      "Regular moderate exercise (especially walking)",
+      "Adequate sleep",
+      "Identifying and reducing stress triggers",
+      "Cognitive behavioral therapy (for chronic anxiety)"
+    ],
+    "adaptogenic_supplements": [
+      {
+        "name": "Rhodiola Rosea",
+        "benefit": "Helps the body adapt to physical and mental stress; may reduce stress-related digestive symptoms."
+      },
+      {
+        "name": "Ashwagandha",
+        "benefit": "Reduces cortisol levels; supports adrenal health and stress resilience."
+      }
+    ],
+    "lifestyle_recommendations": [
+      "Quit smoking — smoking impairs gastric mucosal defense",
+      "Avoid or minimize NSAID use; use acetaminophen (paracetamol) as an alternative when appropriate",
+      "Walk or exercise moderately after meals",
+      "Maintain a consistent eating schedule",
+      "Plan meals in advance to reduce food-related stress and impulsive poor choices",
+      "Cook larger batches to have gastritis-friendly food readily available"
+    ]
+  },
+  "chatbot_intents": [
+    {
+      "intent": "ask_about_gastritis",
+      "sample_queries": [
+        "What is gastritis?",
+        "Tell me about gastritis",
+        "What causes gastritis?",
+        "Explain gastritis to me"
+      ],
+      "response_source": "conditions.gastritis"
+    },
+    {
+      "intent": "ask_about_gastroparesis",
+      "sample_queries": [
+        "What is gastroparesis?",
+        "Tell me about delayed gastric emptying",
+        "What causes gastroparesis?"
+      ],
+      "response_source": "conditions.gastroparesis"
+    },
+    {
+      "intent": "ask_about_IBS",
+      "sample_queries": [
+        "What is IBS?",
+        "I have bloating and gas",
+        "What is FODMAP?",
+        "Tell me about irritable bowel syndrome"
+      ],
+      "response_source": "conditions.IBS_and_bloating"
+    },
+    {
+      "intent": "gastritis_symptoms",
+      "sample_queries": [
+        "What are the symptoms of gastritis?",
+        "How do I know if I have gastritis?",
+        "Signs of gastritis"
+      ],
+      "response_source": "conditions.gastritis.symptoms"
+    },
+    {
+      "intent": "gastritis_diet_foods_to_eat",
+      "sample_queries": [
+        "What can I eat with gastritis?",
+        "Good foods for gastritis",
+        "Gastritis-friendly foods",
+        "What should I eat for gastritis?"
+      ],
+      "response_source": "diet_guidance.gastritis_diet.healing_foods_to_include"
+    },
+    {
+      "intent": "gastritis_diet_foods_to_avoid",
+      "sample_queries": [
+        "What foods to avoid with gastritis?",
+        "What not to eat with gastritis?",
+        "Foods that make gastritis worse"
+      ],
+      "response_source": "diet_guidance.gastritis_diet.foods_to_eliminate"
+    },
+    {
+      "intent": "gastroparesis_diet_foods_to_eat",
+      "sample_queries": [
+        "What can I eat with gastroparesis?",
+        "Gastroparesis food list",
+        "Safe foods for gastroparesis"
+      ],
+      "response_source": "diet_guidance.gastroparesis_diet.foods_to_choose"
+    },
+    {
+      "intent": "gastroparesis_diet_foods_to_avoid",
+      "sample_queries": [
+        "What to avoid with gastroparesis?",
+        "Foods bad for gastroparesis",
+        "Gastroparesis food restrictions"
+      ],
+      "response_source": "diet_guidance.gastroparesis_diet.foods_to_avoid"
+    },
+    {
+      "intent": "FODMAP_safe_foods",
+      "sample_queries": [
+        "What can I eat on low FODMAP?",
+        "Low FODMAP safe foods",
+        "What foods are low FODMAP?"
+      ],
+      "response_source": "diet_guidance.low_FODMAP_diet.foods_safe_to_eat"
+    },
+    {
+      "intent": "FODMAP_avoid_foods",
+      "sample_queries": [
+        "What to avoid on low FODMAP?",
+        "High FODMAP foods to avoid",
+        "FODMAP foods list"
+      ],
+      "response_source": "diet_guidance.low_FODMAP_diet.foods_to_avoid"
+    },
+    {
+      "intent": "natural_remedies_gastritis",
+      "sample_queries": [
+        "Natural remedies for gastritis",
+        "Home remedies for stomach pain",
+        "Herbal treatment gastritis",
+        "Supplements for gastritis"
+      ],
+      "response_source": "treatment_approaches.natural_and_herbal"
+    },
+    {
+      "intent": "H_pylori_info",
+      "sample_queries": [
+        "What is H. pylori?",
+        "How is H. pylori treated?",
+        "H. pylori infection",
+        "Helicobacter pylori"
+      ],
+      "response_source": "conditions.gastritis.key_causes.H_pylori + treatment_approaches.conventional_medical.gastritis_drugs"
+    },
+    {
+      "intent": "meal_plan_request",
+      "sample_queries": [
+        "Give me a meal plan for gastritis",
+        "Sample menu for gastroparesis",
+        "What should I eat today?"
+      ],
+      "response_source": "diet_guidance.gastroparesis_diet.sample_meal_plan_1"
+    },
+    {
+      "intent": "smoothie_recipes",
+      "sample_queries": [
+        "Smoothie recipes for gastroparesis",
+        "Smoothies for stomach problems",
+        "Easy smoothie recipes"
+      ],
+      "response_source": "recipes.gastroparesis_smoothies"
+    },
+    {
+      "intent": "stress_management",
+      "sample_queries": [
+        "How does stress affect gastritis?",
+        "Stress and stomach problems",
+        "How to manage stress with gastritis"
+      ],
+      "response_source": "stress_and_lifestyle"
+    },
+    {
+      "intent": "ask_about_GERD",
+      "sample_queries": [
+        "What is GERD?",
+        "Acid reflux symptoms",
+        "Heartburn vs gastritis",
+        "Difference GERD gastritis"
+      ],
+      "response_source": "conditions.GERD"
+    },
+    {
+      "intent": "ask_about_peptic_ulcer",
+      "sample_queries": [
+        "What is a peptic ulcer?",
+        "Stomach ulcer symptoms",
+        "How to treat ulcer",
+        "Difference gastritis ulcer"
+      ],
+      "response_source": "conditions.peptic_ulcer"
+    },
+    {
+      "intent": "h_pylori_2024_treatment",
+      "sample_queries": [
+        "Latest H. pylori treatment",
+        "2024 H pylori guidelines",
+        "Bismuth therapy H pylori",
+        "Best antibiotic for H pylori"
+      ],
+      "response_source": "treatment_approaches.conventional_medical.h_pylori_updated_2024"
+    },
+    {
+      "intent": "gastroparesis_medications",
+      "sample_queries": [
+        "Medications for gastroparesis",
+        "Metoclopramide gastroparesis",
+        "Drugs for delayed stomach emptying"
+      ],
+      "response_source": "treatment_approaches.gastroparesis_medical"
+    },
+    {
+      "intent": "ibs_types_and_treatment",
+      "sample_queries": [
+        "Types of IBS",
+        "IBS treatment options",
+        "IBS-C vs IBS-D",
+        "Medications for IBS"
+      ],
+      "response_source": "conditions.IBS_and_bloating.official_source_mayo.treatment_overview"
+    },
+    {
+      "intent": "emergency_warning_signs",
+      "sample_queries": [
+        "When to go to ER for stomach",
+        "Dangerous stomach symptoms",
+        "Emergency gastritis signs",
+        "Blood in stool what to do"
+      ],
+      "response_source": "conditions.gastritis.official_source_notes.key_facts + conditions.peptic_ulcer.when_to_see_doctor_urgently"
+    }
+  ],
+  "quick_reference_summary": {
+    "gastritis_in_brief": {
+      "what": "Inflammation of stomach lining (mucosa)",
+      "most_common_cause": "H. pylori bacterial infection",
+      "key_treatment": "Antibiotics (for H. pylori) + PPIs; dietary modification; avoid NSAIDs/alcohol",
+      "when_to_see_doctor": "Persistent pain, nausea, bloody stool, vomiting blood",
+      "source": "NIDDK / NIH"
+    },
+    "gastroparesis_in_brief": {
+      "what": "Stomach takes too long to empty (delayed gastric emptying); nerves to stomach damaged",
+      "most_common_cause": "Idiopathic (>50%) or Diabetic",
+      "key_treatment": "Small frequent low-fat low-fiber meals; metoclopramide (FDA-approved); blood sugar control in diabetes",
+      "when_to_see_doctor": "Persistent nausea/vomiting, weight loss, inability to eat, blood sugar problems",
+      "source": "NIDDK / NIH + StatPearls NCBI 2024"
+    },
+    "IBS_in_brief": {
+      "what": "Disorder of gut-brain interaction causing abdominal pain with altered bowel habits",
+      "most_common_cause": "Gut-brain axis dysfunction; food triggers (FODMAPs); stress; microbiome changes",
+      "key_treatment": "Low FODMAP diet; stress management; fiber; antispasmodics; CBT",
+      "does_not_cause": "Tissue damage, cancer, or permanent intestinal injury",
+      "source": "Mayo Clinic 2024"
+    },
+    "GERD_in_brief": {
+      "what": "Chronic acid reflux causing heartburn and esophageal damage",
+      "most_common_cause": "Weakened lower esophageal sphincter; obesity; certain foods",
+      "key_treatment": "Lifestyle changes; PPIs or H2 blockers; avoid trigger foods",
+      "serious_complication": "Barrett's esophagus (pre-cancerous); get regular monitoring if diagnosed",
+      "source": "Mayo Clinic / NIDDK"
+    },
+    "h_pylori_in_brief": {
+      "what": "Bacterial infection of stomach lining — most common cause of chronic gastritis and peptic ulcers",
+      "global_prevalence": "Infects approximately 50% of the world's population",
+      "preferred_treatment_2024": "Bismuth Quadruple Therapy (BQT) for 14 days — PPI + Bismuth + Nitroimidazole + Tetracycline",
+      "important": "Clarithromycin-based triple therapy is no longer recommended first-line (>30% resistance in US)",
+      "source": "ACG Clinical Guideline 2024"
+    }
+  }
+}

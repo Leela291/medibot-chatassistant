@@ -1,137 +1,2572 @@
-{
-  "disease": "Typhoid Fever",
-  "overview": "Typhoid fever is a systemic bacterial infectious disease caused by Salmonella enterica serotype Typhi. It is transmitted through contaminated food and water and remains a major public health concern in South Asia, Africa, and Latin America. Approximately 9.2 million typhoid cases occur globally each year, causing around 133,000 deaths. With appropriate antibiotic treatment, the case fatality rate drops below 1%, but rising drug resistance is a growing challenge.",
-  "types": [
-    {
-      "name": "Typhoid Fever (Enteric Fever)",
-      "description": "Caused by Salmonella Typhi. Gradual onset with rising fever, abdominal symptoms, and risk of serious complications including intestinal perforation."
+[
+  {
+    "meta": {
+    "disease_name": "Typhoid Fever",
+    "alternate_names": ["Enteric Fever"]
     },
-    {
-      "name": "Paratyphoid Fever",
-      "description": "Caused by Salmonella Paratyphi A, B, or C. Similar clinical presentation to typhoid but generally milder. No vaccine currently protects against paratyphoid."
+    "case_definitions": {
+      "confirmed_case": {
+        "criteria": [
+          "Isolation of Salmonella Typhi from blood",
+          "Isolation from stool",
+          "Isolation from urine",
+          "Isolation from bone marrow",
+          "Isolation from other sterile sites"
+        ],
+        "clinical_illness_required": false
+      },
+      "probable_case": {
+        "criteria": [
+          "Compatible clinical illness",
+          "Epidemiological link to confirmed case"
+        ]
+      },
+      "suspect_case": {
+        "criteria": [
+          "Compatible illness lasting at least 7 days",
+          "No laboratory confirmation"
+        ],
+        "reportable": false
+      },
+      "confirmed": {
+        "definition": "Laboratory confirmation of Salmonella Typhi infection",
+        "laboratory_criteria": [
+          "Isolation from blood",
+          "Isolation from stool",
+          "Isolation from urine",
+          "Isolation from bone marrow",
+          "Isolation from rectal swab",
+          "Isolation from sterile body sites",
+          "Isolation from vomitus or deep tissue"
+        ],
+        "clinical_symptoms_required": false,
+        "criteria": [
+          "Persistent fever ≥3 days",
+          "Isolation of S. Typhi from blood or bone marrow"
+        ]
+      },
+      "probable": {
+        "definition": "Clinical illness with epidemiological linkage",
+        "criteria": [
+          "Compatible clinical illness",
+          "Direct epidemiological link to a confirmed case"
+        ]
+      },
+      "suspected": {
+        "definition": "Compatible illness without laboratory confirmation",
+        "minimum_duration": "≥7 days"
+      },
+      "suspected_or_probable": {
+        "criteria": [
+          "Fever ≥38°C for ≥5 days",
+          "Rising fever trend",
+          "No alternative diagnosis"
+        ]
+      },
+      "chronic_carrier": {
+        "definition": "Excretion of S. Typhi in stool or urine for >1 year"
+      }
     },
-    {
-      "name": "Multidrug-Resistant (MDR) Typhoid",
-      "description": "Strains resistant to ampicillin, chloramphenicol, and trimethoprim-sulfamethoxazole. Particularly prevalent in South Asia."
+    "clinical_presentation": {
+      "early_symptoms": [
+        "Gradual onset fever",
+        "Headache",
+        "Malaise",
+        "Anorexia",
+        "Lethargy",
+        "Dry cough",
+        "Stepwise rising fever",
+        "Coated tongue",
+        "Weakness",
+        "Fatigue",
+        "Myalgia",
+        "Sweating",
+        "Loss of appetite",
+        "Weight loss"
+      ],
+      "gastrointestinal_features": [
+        "Constipation (more common)",
+        "Diarrhea (less common)",
+        "Abdominal pain",
+        "Abdominal tenderness",
+        "Abdominal distension",
+        "Diarrhea",
+        "Constipation"
+      ],
+      "systemic_features": [
+        "Relative bradycardia",
+        "Hepatomegaly",
+        "Splenomegaly",
+        "Mental dullness",
+        "Slight deafness"
+      ],
+      "dermatologic_signs": {
+        "rash_name": "Rose spots",
+        "appearance": "Rose-colored maculopapular lesions",
+        "locations": [
+          "Abdomen",
+          "Back",
+          "Arms",
+          "Legs"
+        ],
+        "duration_days": "2–4"
+      },
+      "severity": {
+        "untreated_fatality_rate": "10–20%",
+        "treated_fatality_rate": "<1%",
+        "relapse_rate": "Up to 10%"
+      },
+      "complications": [
+        "Intestinal hemorrhage",
+        "Intestinal perforation",
+        "Sepsis",
+        "Neurologic manifestations"
+      ],
+      "most_common_scenario": "Fever without focus",
+      "age_specific_features": {
+        "infants_and_under_5": [
+          "Fever",
+          "Vomiting",
+          "Diarrhea"
+        ],
+        "older_children": [
+          "Step-ladder fever over 5–7 days",
+          "Anorexia",
+          "Abdominal pain",
+          "Cough",
+          "Lethargy",
+          "Toxic appearance",
+          "Tender abdomen",
+          "Soft splenomegaly",
+          "Hepatomegaly",
+          "Relative bradycardia"
+        ]
+      },
+      "rash": {
+        "rose_spots": "Rarely seen in Indian children"
+      },
+      "incubation_period_days": {
+        "typical": "7–14",
+        "range": "7–21"
+      },
+      "dermatologic": {
+        "rash": "Rose spots"
+      },
+      "late_and_severe_features": [
+        "Delirium",
+        "Intestinal perforation",
+        "Gastrointestinal hemorrhage",
+        "Encephalitis",
+        "Cranial neuritis",
+        "Septic shock"
+      ],
+      "clinical_suspicion_rule": "Any patient with fever >3 days with no clear focus in endemic area"
     },
-    {
-      "name": "Extensively Drug-Resistant (XDR) Typhoid",
-      "description": "Strains resistant to fluoroquinolones, cephalosporins, and multiple other antibiotics. Mainly treated with azithromycin (uncomplicated) or carbapenems (complicated). First reported in Pakistan (2016)."
+    "epidemiology": {
+      "reservoir": "Humans only",
+      "carrier_state": {
+        "chronic_carrier_rate": "1–5%",
+        "high_risk_groups": [
+          "Women",
+          "Age >50 years",
+          "Gallbladder disease",
+          "Schistosomiasis",
+          "Gallbladder carcinoma",
+          "Gallbladder disease patients",
+          "Cholelithiasis patients"
+        ],
+        "chronic_carriage_rate": "1–5%",
+        "duration": "Months to years",
+        "risk_factors": [
+          "Female sex",
+          "Age >50 years",
+          "Gallbladder disease",
+          "Schistosomiasis",
+          "Gallstones",
+          "Gallbladder malignancy"
+        ],
+        "chronic_carriers_percentage": "≈4%",
+        "duration_of_shedding": "Up to 1 year"
+      },
+      "global_burden": {
+        "annual_cases_worldwide": "≈22 million",
+        "annual_deaths_worldwide": "≈200,000",
+        "high_risk_regions": [
+          "South Asia",
+          "Southeast Asia",
+          "Africa",
+          "Caribbean",
+          "Central and South America"
+        ],
+        "annual_cases": "11–20 million",
+        "annual_deaths": "130,000–160,000",
+        "trend": "Declining globally, persistent in LMICs",
+        "case_fatality_treated": "<2%",
+        "case_fatality_untreated": "10–20%",
+        "highest_burden_regions": [
+          "South Asia",
+          "Southeast Asia",
+          "Africa",
+          "Central America",
+          "South America",
+          "Caribbean"
+        ]
+      },
+      "travel_risk": {
+        "highest_risk_travel": [
+          "India",
+          "Pakistan",
+          "Bangladesh"
+        ],
+        "high_risk_travelers": "Visiting friends and relatives (VFRs)"
+      },
+      "global_statistics": {
+        "annual_cases": ">22 million",
+        "annual_deaths": ">200,000",
+        "mortality_rate": "1–4%"
+      },
+      "geographical_distribution": {
+        "low_incidence": [
+          "North America",
+          "Europe"
+        ],
+        "high_incidence": [
+          "Central Asia",
+          "Southeast Asia",
+          "Sub-Saharan Africa"
+        ]
+      },
+      "risk_environments": [
+        "Urban areas",
+        "Poor sanitation regions",
+        "Limited clean water access"
+      ],
+      "most_affected_group": "Children aged 5–10 years",
+      "global_distribution": [
+        "South Asia",
+        "Southeast Asia",
+        "Sub-Saharan Africa",
+        "Oceania (island nations)"
+      ],
+      "burden": {
+        "global_cases": "Millions annually",
+        "global_deaths": "Thousands annually",
+        "trend": "Declining since 2000 but still endemic"
+      },
+      "high_risk_groups": [
+        "Children (5–15 years)",
+        "Children under 5 years",
+        "Elderly",
+        "Low-income populations",
+        "Immunocompromised individuals",
+        "People with achlorhydria",
+        "Children 5–15 years",
+        "Immunocompromised",
+        "Low socioeconomic populations",
+        "People with low gastric acidity"
+      ],
+      "regional_example_sri_lanka": {
+        "high_incidence_districts": [
+          "Vavuniya",
+          "Jaffna",
+          "Nuwara Eliya",
+          "Colombo",
+          "Kegalle"
+        ],
+        "contributing_factors": [
+          "Water scarcity",
+          "Contaminated springs",
+          "Unsafe food practices",
+          "Poor sanitation"
+        ]
+      },
+      "high_burden_regions": [
+        "South Asia",
+        "Southeast Asia",
+        "Sub-Saharan Africa"
+      ],
+      "seasonality": "Higher incidence during rainy/summer seasons",
+      "high_risk_regions": [
+        "South Asia",
+        "Southeast Asia",
+        "Pakistan",
+        "India",
+        "Bangladesh",
+        "South-Central Asia",
+        "Southern Africa"
+      ],
+      "pakistan_specific": {
+        "incidence_rate": "412.9 per 100,000",
+        "high_risk_age_groups": [
+          "2–10 years",
+          "Up to 25 years"
+        ],
+        "seasonality": "Higher incidence in summer",
+        "carrier_rate": "Up to 9% among food handlers"
+      },
+      "travel_association": {
+        "most_common_source": "Travel to endemic areas",
+        "highest_risk_destinations": [
+          "India",
+          "Pakistan",
+          "Bangladesh"
+        ],
+        "high_risk_travelers": "Visiting friends and relatives (VFRs)"
+      },
+      "global_cases_per_year": "≈26 million",
+      "global_deaths_per_year": "≈215,000"
     },
-    {
-      "name": "Chronic Typhoid Carrier State",
-      "description": "1–4% of patients continue to shed Salmonella Typhi in stool or urine for 12+ months after apparent recovery, often without symptoms, acting as long-term reservoirs of infection."
-    }
-  ],
-  "symptoms": [
-    "Gradually rising fever (reaching 39–40°C over 1–2 weeks)",
-    "Headache",
-    "Fatigue and malaise",
-    "Loss of appetite (anorexia)",
-    "Abdominal pain or discomfort",
-    "Constipation (more common in adults) or diarrhea (more common in children)",
-    "Dry cough",
-    "Nausea and vomiting",
-    "Muscle aches",
-    "Rose spots — faint pinkish rash on trunk (seen in some patients)",
-    "Hepatosplenomegaly (enlarged liver and spleen)",
-    "Relative bradycardia (slow heart rate relative to fever level)"
-  ],
-  "causes": [
-    "Ingestion of food or water contaminated with Salmonella Typhi from infected human feces",
-    "Consumption of raw fruits and vegetables washed with contaminated water",
-    "Eating food handled by chronic carriers without proper hand hygiene",
-    "Drinking untreated well or municipal water in endemic regions",
-    "Poor sanitation infrastructure allowing sewage to contaminate water supplies"
-  ],
-  "risk_factors": [
-    "Living in or travelling to South Asia (India, Pakistan, Bangladesh), Africa, or Latin America",
-    "Drinking untreated or poorly treated water",
-    "Eating street food or raw produce in endemic areas",
-    "Poor personal hygiene, especially inadequate handwashing",
-    "Young children and infants (higher risk of severe disease)",
-    "People taking acid-suppressing medications (PPIs reduce stomach acid defense against bacteria)",
-    "Close contact with a known typhoid case or carrier",
-    "Attending mass gatherings in endemic regions",
-    "Immunocompromised individuals"
-  ],
-  "diagnosis": [
-    "Blood culture — gold standard (sensitivity ~50% single culture, higher with multiple)",
-    "Bone marrow culture — highest sensitivity (~80%), used when blood culture negative",
-    "Stool and urine cultures — useful in later stages of disease",
-    "Widal test — serological test, low reliability (poor sensitivity and specificity)",
-    "Typhidot / TUBEX tests — newer serology with variable reliability",
-    "PCR testing — rapid and sensitive, useful in research settings but not widely available",
-    "Clinical diagnosis — based on gradual fever progression, travel history, and symptoms"
-  ],
-  "treatment": {
-    "first_line_antibiotics": [
-      "Ceftriaxone (IV) — for uncomplicated and complicated cases, widely used empirically",
-      "Azithromycin (oral) — for uncomplicated typhoid, effective against many resistant strains",
-      "Fluoroquinolones (Ciprofloxacin) — where susceptibility confirmed; resistance is common in South Asia"
+    "transmission": {
+      "primary_route": "Fecal–oral",
+      "common_vehicles": [
+        "Contaminated drinking water",
+        "Food handled by infected persons",
+        "Raw vegetables fertilized with night soil",
+        "Shellfish from sewage-contaminated waters",
+        "Unpasteurized milk"
+      ],
+      "additional_routes": [
+        "Sexual transmission (documented, especially MSM)"
+      ],
+      "route": "Fecal–oral",
+      "modes": [
+        "Contaminated drinking water",
+        "Contaminated food",
+        "Street food vendors",
+        "Poor hand hygiene",
+        "Sewage-contaminated agriculture",
+        "Fecal–oral route",
+        "Contaminated water"
+      ],
+      "non_vectors": [
+        "Livestock",
+        "Household pets"
+      ],
+      "risk_factors": [
+        "Poor sanitation",
+        "Unsafe drinking water",
+        "Poor food hygiene",
+        "Chronic carriers handling food",
+        "Inadequate hygiene",
+        "Contaminated food",
+        "High population density",
+        "Inadequate hand hygiene",
+        "Street food consumption",
+        "Chronic carriers",
+        "Poor hand hygiene",
+        "Unsafe water supply",
+        "Poor personal hygiene",
+        "Overcrowding",
+        "Low socioeconomic status",
+        "Flooding",
+        "Contact with infected persons or carriers"
+      ],
+      "chronic_carriers": {
+        "definition": "Excretion of Salmonella Typhi in stool or urine for ≥1 year",
+        "restrictions": "Excluded from food handling until 3 negative stool cultures (1 month apart)"
+      },
+      "cycles": {
+        "short_cycle": "Local contamination (food handlers, households)",
+        "long_cycle": "Environmental contamination (water sources)"
+      },
+      "transmission_cycles": {
+        "short_cycle": "Person-to-person via food handlers",
+        "long_cycle": "Environmental contamination of water sources"
+      },
+      "mode": "Fecal–oral",
+      "sources": [
+        "Contaminated drinking water",
+        "Contaminated food",
+        "Raw fruits and vegetables",
+        "Dairy products",
+        "Street food",
+        "Food handlers who are chronic carriers"
+      ],
+      "primary_mode": "Fecal–oral",
+      "vehicles": [
+        "Contaminated drinking water",
+        "Food handled by infected persons",
+        "Shellfish from sewage-contaminated water",
+        "Vegetables grown in night soil"
+      ],
+      "non_causes": [
+        "Floods in non-endemic countries",
+        "Natural disasters alone"
+      ],
+      "routes": [
+        "Contaminated drinking water",
+        "Food handled by infected persons",
+        "Raw vegetables fertilized with night soil",
+        "Shellfish from sewage-contaminated waters",
+        "Unpasteurized milk and milk products"
+      ],
+      "additional_modes": [
+        "Sexual transmission (documented)"
+      ],
+      "primary_modes": [
+        "Contaminated drinking water",
+        "Contaminated food",
+        "Poor food handling"
+      ],
+      "high_risk_foods": [
+        "Ice cream",
+        "Raw fruits and vegetables",
+        "Shellfish",
+        "Food fertilized with sewage"
+      ],
+      "dose_response": {
+        "high_dose": "Short incubation, high attack rate",
+        "low_dose": "Long incubation, lower attack rate"
+      }
+    },
+    "incubation_and_communicability": {
+      "incubation_period": {
+        "average_days": "8–14",
+        "range_days": "3–60+"
+      },
+      "communicability": {
+        "start": "First week of illness",
+        "end": "Through convalescence",
+        "chronic": "Permanent if carrier develops"
+      },
+      "period_of_communicability": {
+        "start": "First week of illness",
+        "end": "Throughout convalescence",
+        "chronic": "Indefinite in carriers"
+      }
+    },
+    "laboratory_diagnosis": {
+      "preferred_tests": [
+        "Blood culture (early disease)",
+        "Stool culture (after first week)",
+        "Urine culture"
+      ],
+      "gold_standard": "Bone marrow culture",
+      "not_recommended": [
+        "Widal test (low specificity)"
+      ],
+      "specimen_rules": [
+        "Collect before antibiotics or 48h after stopping",
+        "Specimens collected ≥24h apart"
+      ],
+      "preferred_specimens": [
+        "Blood (early disease)",
+        "Stool (after first week)",
+        "Urine"
+      ],
+      "testing_notes": [
+        "Multiple cultures increase sensitivity",
+        "Outbreaks must be clearly indicated on requisition"
+      ],
+      "not_recommended_tests": [
+        "Widal test (low sensitivity and specificity)"
+      ]
+    },
+    "treatment": {
+      "general_principles": [
+        "Antibiotics required to prevent complications",
+        "Treatment guided by susceptibility testing",
+        "Start antibiotics early",
+        "Do not delay treatment for lab results",
+        "Supportive care essential"
+      ],
+      "first_line": {
+        "adults": [
+          "Ciprofloxacin (if susceptible)",
+          "Azithromycin"
+        ],
+        "children": [
+          "Ceftriaxone"
+        ]
+      },
+      "alternative_agents": [
+        "Cefixime",
+        "Ceftriaxone (parenteral)",
+        "Azithromycin (uncomplicated cases)"
+      ],
+      "resistance_notes": [
+        "Multidrug resistance common",
+        "High fluoroquinolone resistance in Indian subcontinent",
+        "Nalidixic acid resistance predicts fluoroquinolone failure",
+        {
+          "resistant_to": [
+            "Chloramphenicol",
+            "Ampicillin",
+            "Cotrimoxazole",
+            "Fluoroquinolones"
+          ],
+          "reason": "Multidrug-resistant Salmonella strains"
+        }
+      ],
+      "severe_cases": [
+        "Ceftriaxone",
+        "Adjunct corticosteroids for critically ill patients",
+        "Adjunct corticosteroids"
+      ],
+      "principles": [
+        "Early antibiotic therapy",
+        "Culture-guided treatment when possible",
+        "Do not rely on clinical diagnosis alone",
+        "Supportive care",
+        "Do not delay treatment awaiting cultures",
+        "Supportive care (hydration, nutrition)",
+        "Do not delay treatment awaiting culture results",
+        "Supportive care (hydration, nutrition, antipyretics)"
+      ],
+      "first_line_antibiotics": [
+        "Ciprofloxacin",
+        "Ofloxacin",
+        "Ampicillin",
+        "Amoxicillin",
+        "Trimethoprim-sulfamethoxazole",
+        "Chloramphenicol",
+        "Cephalosporins"
+      ],
+      "alternative_antibiotics": [
+        "Chloramphenicol",
+        "Amoxicillin",
+        "Trimethoprim–sulfamethoxazole"
+      ],
+      "drug_resistant_cases": [
+        "Ceftriaxone",
+        "Azithromycin"
+      ],
+      "treatment_duration": "Up to 21 days",
+      "steroids": {
+        "drug": "Dexamethasone",
+        "benefit": "Reduced mortality in severe disease",
+        "indication": [
+          "Shock",
+          "Severe encephalopathy"
+        ]
+      },
+      "chronic_carrier_management": {
+        "duration": "4–6 weeks",
+        "drugs": [
+          "Amoxicillin",
+          "TMP-SMX",
+          "Ciprofloxacin"
+        ]
+      },
+      "empirical_therapy": {
+        "severe_or_complicated": {
+          "first_line": "Ceftriaxone",
+          "alternatives": [
+            "Cefotaxime (with hepatitis)",
+            "Aztreonam (penicillin allergy)"
+          ]
+        },
+        "outpatient": {
+          "first_line": "Cefixime",
+          "alternative": "Azithromycin (penicillin allergy)"
+        }
+      },
+      "dosage_guidelines": {
+        "ceftriaxone": "100 mg/kg/day (max 4 g)",
+        "cefotaxime": "150–200 mg/kg/day (max 8 g)",
+        "cefixime": "20 mg/kg/day (max 1200 mg)",
+        "azithromycin": "20 mg/kg/day (max 1 g)",
+        "aztreonam": "50–100 mg/kg/day (max 8 g)"
+      },
+      "duration": {
+        "standard": "14 days or 7 days after defervescence (whichever is later)",
+        "azithromycin": "7 days"
+      },
+      "antibiotics": {
+        "uncomplicated": [
+          "Cefixime",
+          "Azithromycin"
+        ],
+        "severe_or_complicated": [
+          "Ceftriaxone",
+          "Cefotaxime"
+        ],
+        "drug_dosage_mg_per_kg_per_day": {
+          "Ceftriaxone": "100 (max 4 g)",
+          "Cefotaxime": "150–200 (max 8 g)",
+          "Cefixime": "20 (max 1200 mg)",
+          "Azithromycin": "20 (max 1 g)"
+        }
+      },
+      "antimicrobial_resistance": {
+        "MDR": [
+          "Chloramphenicol",
+          "Ampicillin",
+          "Trimethoprim-sulfamethoxazole"
+        ],
+        "NARST": "Nalidixic-acid-resistant strains",
+        "concern": "Fluoroquinolone resistance increasing"
+      },
+      "resistance_concern": [
+        "Multidrug-resistant strains",
+        "Ceftriaxone-resistant outbreaks reported"
+      ],
+      "recommended_antibiotics": [
+        {
+          "uncomplicated": [
+            "Azithromycin",
+            "Cefixime"
+          ],
+          "severe_or_hospitalized": [
+            "Ceftriaxone",
+            "Cefotaxime"
+          ],
+          "extensively_drug_resistant": [
+            "Azithromycin",
+            "Meropenem"
+          ],
+          "adults": [
+            "Ciprofloxacin (if susceptible)",
+            "Azithromycin"
+          ],
+          "children": [
+            "Ceftriaxone"
+          ]
+        },
+        "Ceftriaxone",
+        "Azithromycin"
+      ],
+      "historical_drugs": [
+        "Chloramphenicol",
+        "Ampicillin",
+        "Co-trimoxazole"
+      ],
+      "current_first_line": [
+        "Ceftriaxone",
+        "Azithromycin"
+      ],
+      "alternative_drugs": [
+        "Ofloxacin",
+        "Gatifloxacin"
+      ],
+      "drug_resistance": {
+        "mdr": "Common",
+        "fluoroquinolone_resistance": "Increasing",
+        "cephalosporin_resistance": "Emerging"
+      },
+      "alternative": "Ciprofloxacin (resistance dependent)",
+      "relapse_rate": "15–35%",
+      "notes": "Multiple relapses may occur",
+      "treatment_goals": [
+        "Resolve symptoms",
+        "Prevent complications",
+        "Prevent relapse",
+        "Eliminate carriage"
+      ],
+      "resistance_considerations": [
+        "Multidrug resistance common",
+        "High fluoroquinolone resistance in South Asia",
+        "Nalidixic acid resistance predicts treatment failure"
+      ],
+      "primary_treatment": "Antibiotic therapy",
+      "treatment_challenges": [
+        "Antimicrobial resistance",
+        "Higher treatment cost in endemic regions"
+      ],
+      "post_treatment_considerations": [
+        "Patients may continue to carry bacteria",
+        "Bacteria can be shed in faeces",
+        "Risk of transmission persists"
+      ],
+      "patient_instructions": [
+        "Complete full antibiotic course",
+        "Wash hands with soap after using toilet",
+        "Avoid preparing food for others",
+        "Undergo testing to confirm bacterial clearance"
+      ]
+    },
+    "carrier_management": {
+      "definition": "Excretion of Salmonella Typhi for >1 year",
+      "treatment": {
+        "preferred": [
+          "Ciprofloxacin 750 mg BID × 28 days",
+          "Norfloxacin 400 mg BID × 28 days"
+        ],
+        "success_rate": "80–90%"
+      },
+      "clearance_requirements": {
+        "stool_cultures": 6,
+        "urine_culture": 1,
+        "interval": "≥72 hours apart"
+      },
+      "treatment_options": [
+        "Ciprofloxacin 750 mg BID for 28 days",
+        "Norfloxacin 400 mg BID for 28 days"
+      ],
+      "treatment_success_rate": "80–90%",
+      "clearance_testing": {
+        "stool_cultures_required": 6,
+        "urine_cultures_required": 1,
+        "spacing": "≥72 hours apart"
+      }
+    },
+    "public_health_reporting": {
+      "laboratory_reporting": {
+        "timeframe": "Within 1 working day",
+        "requirements": [
+          "Immediate notification",
+          "Submission of isolates for confirmation"
+        ],
+        "mandatory": true
+      },
+      "public_health_followup": [
+        "Case investigation",
+        "Source identification",
+        "Contact tracing",
+        "Carrier assessment"
+      ],
+      "public_health_actions": [
+        "Case investigation",
+        "Source identification",
+        "Contact tracing",
+        "Carrier assessment",
+        "Outbreak surveillance"
+      ]
+    },
+    "case_control_measures": {
+      "isolation": {
+        "standard_precautions": true,
+        "contact_precautions": [
+          "Incontinent adults",
+          "Diapered children"
+        ]
+      },
+      "exclusion_criteria": {
+        "food_handlers": {
+          "requirement": "≥3–4 negative stool cultures",
+          "timing": "≥48h post-antibiotics"
+        },
+        "childcare": {
+          "under_5": "3 negative stool cultures",
+          "over_5": "Exclude until symptoms resolve"
+        }
+      }
+    },
+    "contact_management": {
+      "contacts_defined_as": [
+        "Household members",
+        "Sexual partners",
+        "Travel companions"
+      ],
+      "symptomatic_contacts": [
+        {
+          "action": [
+            "Clinical assessment",
+            "Stool culture",
+            "Exclude from high-risk work"
+          ]
+        },
+        "Clinical evaluation",
+        "Stool cultures",
+        "Exclude from high-risk settings"
+      ],
+      "asymptomatic_contacts": {
+        "high_risk_occupations": "Screen but do not exclude unless positive"
+      },
+      "defined_contacts": [
+        "Household members",
+        "Sexual partners",
+        "Travel companions"
+      ]
+    },
+    "outbreak_management": {
+      "definition": "Cases exceeding expected baseline",
+      "key_actions": [
+        "Identify common source",
+        "Environmental investigation",
+        "Public notification",
+        "Enhanced surveillance",
+        "Environmental assessment"
+      ],
+      "vaccination_role": "Not recommended for outbreak control"
+    },
+    "prevention": {
+      "vaccination": {
+        "recommended_for": [
+          "Travelers to endemic areas",
+          "Laboratory workers",
+          "Household contacts of carriers",
+          "Travelers to endemic regions"
+        ],
+        "protection_duration_years": "2–3",
+        "limitations": [
+          "Not fully protective",
+          "No vaccine for Paratyphi",
+          "Reduced effectiveness with high bacterial load",
+          "Not 100% effective"
+        ],
+        "available_vaccines": [
+          {
+            "name": "Ty21a (oral)",
+            "efficacy": "67–80%",
+            "age_limit": "≥6 years",
+            "booster": "Every 5 years"
+          },
+          {
+            "name": "Vi polysaccharide (injectable)",
+            "efficacy": "55–72%",
+            "age_limit": "≥2 years",
+            "booster": "Every 2 years"
+          },
+          "Typhoid conjugate vaccine (TCV)",
+          "Vi polysaccharide vaccine",
+          "Ty21a oral vaccine"
+        ],
+        "types": [
+          "Typhoid conjugate vaccine (TCV)",
+          "Vi polysaccharide vaccine",
+          "Ty21a live oral vaccine",
+          "Oral",
+          "Parenteral"
+        ],
+        "who_recommendation": [
+          "Endemic regions",
+          "Outbreak control",
+          "Routine childhood immunization",
+          "Routine use in endemic regions",
+          "Outbreak response",
+          "Travelers to endemic areas"
+        ],
+        "who_recommendations": [
+          "Routine use in endemic regions",
+          "Outbreak control",
+          "Travelers to endemic areas"
+        ],
+        "available": true,
+        "oral_vaccine": {
+          "minimum_age": "6 years",
+          "schedule": "4 doses, alternate days"
+        },
+        "injectable_vaccine": {
+          "minimum_age": "2 years",
+          "timing": "2 weeks before exposure"
+        },
+        "typhoid_conjugate_vaccine": {
+          "description": "Purified Vi antigen linked to a carrier protein",
+          "dose_schedule": "Single injectable dose",
+          "age_eligibility": {
+            "children": "From 6 months of age",
+            "adults": "Up to 45 years or 65 years (depending on vaccine)"
+          },
+          "advantages": [
+            "Long-lasting immunity",
+            "Single-dose schedule",
+            "Suitable for infants"
+          ]
+        },
+        "older_vaccines": {
+          "injectable_polysaccharide_vaccine": {
+            "minimum_age": "2 years",
+            "limitations": [
+              "Shorter immunity",
+              "Requires booster doses"
+            ]
+          },
+          "oral_live_attenuated_vaccine": {
+            "minimum_age": "6 years",
+            "limitations": [
+              "Shorter immunity",
+              "Not suitable for young children"
+            ]
+          }
+        }
+      },
+      "food_and_water_safety": [
+        "Drink boiled or bottled water",
+        "Avoid ice",
+        "Avoid raw foods",
+        "Consume pasteurized dairy only",
+        "Avoid street food",
+        "Boiled or bottled water"
+      ],
+      "hygiene": [
+        "Hand washing after defecation",
+        "Hand washing before food preparation",
+        "Handwashing after defecation",
+        "Safe food and water practices"
+      ],
+      "public_health_measures": [
+        "Safe drinking water",
+        "Proper sewage disposal",
+        "Hand hygiene",
+        "Early outbreak detection"
+      ],
+      "water": [
+        "Safe drinking water",
+        "Boiled or treated water"
+      ],
+      "food_safety": [
+        "Hand washing",
+        "Proper cooking",
+        "Avoid raw food",
+        "Clean food surfaces",
+        "Hand hygiene",
+        "Safe food preparation",
+        "Food handler screening"
+      ],
+      "sanitation": [
+        "Proper sewage disposal",
+        "No human excreta as fertilizer",
+        "Safe disposal of human waste",
+        "Sewage treatment",
+        "Avoid use of human excreta as fertilizer"
+      ],
+      "health_education": [
+        "Community awareness",
+        "School education",
+        "Healthcare worker training"
+      ],
+      "water_and_sanitation": [
+        "Safe water supply",
+        "Improved sanitation",
+        "Proper sewage disposal",
+        "Safe drinking water",
+        "Sewage treatment"
+      ],
+      "hygiene_measures": [
+        "Safe drinking water",
+        "Proper sewage disposal",
+        "Hand hygiene",
+        "Food safety practices",
+        "Hand washing after defecation",
+        "Hand washing before food handling",
+        "Hand washing",
+        "Boiled water",
+        "Avoid street food",
+        "Avoid raw produce",
+        "Fly control"
+      ],
+      "vaccines": {
+        "available": [
+          "Oral live attenuated Ty21a",
+          "Vi polysaccharide injectable"
+        ],
+        "conjugate_vaccines": {
+          "benefits": [
+            "Longer protection",
+            "Effective in young children",
+            "Higher efficacy"
+          ],
+          "example": "Vi-rEPA conjugate vaccine"
+        },
+        "vi_polysaccharide": {
+          "age": ">2 years",
+          "revaccination_years": 3
+        },
+        "typhoid_conjugate_vaccine": {
+          "age": "≥6 months",
+          "protection": "≥3 years"
+        }
+      },
+      "who_should_be_vaccinated": [
+        "Household contacts",
+        "Healthcare workers",
+        "Food handlers"
+      ],
+      "water_safety": [
+        "Clean drinking water",
+        "Proper water treatment"
+      ],
+      "food_hygiene": [
+        "Hand washing",
+        "Avoid raw food",
+        "Eat freshly cooked food"
+      ],
+      "core_strategies": [
+        "Access to safe drinking water",
+        "Adequate sanitation",
+        "Food hygiene",
+        "Hand hygiene",
+        "Vaccination"
+      ]
+    },
+    "disease": "typhoid fever",
+    "domain": "Healthcare",
+    "subdomain": "Pediatric Infectious Diseases",
+    "topic": "Enteric Fever (Typhoid & Paratyphoid)",
+    "source": [
+      {
+        "disease_name": "Typhoid Fever",
+        "alternate_names": [
+          "Enteric Fever"
+        ],
+        "causative_agent": "Salmonella enterica serotype Typhi",
+        "last_compiled": "2026-01",
+        "source_documents": [
+          "Typhoid Investigative Guidelines (Aug 2025)",
+          "Communicable Disease Management Protocol – Typhoid Fever (Dec 2024 update)"
+        ]
+      },
+      {
+        "title": "Typhoid enteric fever – part 1",
+        "journal": "Update in Anaesthesia",
+        "publisher": "World Federation of Societies of Anaesthesiologists (WFSA)",
+        "original_release": "Anaesthesia Tutorial of the Week 338",
+        "publication_year": 2016,
+        "authors": [
+          "Falan Mouton",
+          "Esohe I. Ohuoba",
+          "Faye M. Evans",
+          "Ibironke Desalu"
+        ]
+      },
+      {
+        "version": "1.0",
+        "last_updated": "2026",
+        "data_sources": [
+          "WHO / WER reports",
+          "IAP Standard Treatment Guidelines",
+          "Anaesthesia Tutorials",
+          "National communicable disease manuals",
+          "Uploaded PDFs (throyidfever series)"
+        ],
+        "intended_use": "Medical education, public health awareness, chatbot assistance",
+        "disclaimer": "Information-only. Not a substitute for professional medical care."
+      },
+      {
+        "knowledge_type": "Medical",
+        "topic": "Enteric (Typhoid) Fever",
+        "version": "Final-Master",
+        "last_updated": "2026",
+        "sources": [
+          "WHO / WER reports",
+          "IAP Standard Treatment Guidelines",
+          "NICD Manuals",
+          "WFSA Anaesthesia Tutorials",
+          "National surveillance documents",
+          "Uploaded PDFs (throyidfever series)"
+        ],
+        "disclaimer": "For education and chatbot assistance only. Not a substitute for medical diagnosis or treatment."
+      },
+      {
+        "title": "Complications and mortality of typhoid fever: A global systematic review and meta-analysis",
+        "authors": [
+          "Christian S. Marchello",
+          "Megan Birkhold",
+          "John A. Crump"
+        ],
+        "journal": "Journal of Infection 81 (2020) 902-910",
+        "doi": "10.1016/j.jinf.2020.10.030"
+      },
+      {
+        "condition": "Typhoid Fever",
+        "alternate_names": [
+          "Enteric Fever"
+        ],
+        "pathogen": "Salmonella enterica serotype Typhi",
+        "disease_category": "Bacterial enteric infection",
+        "last_updated": "2026-01",
+        "data_source": "Communicable Disease Management Protocols"
+      },
+      {
+        "disease": "Typhoid Fever",
+        "alternate_name": "Enteric Fever",
+        "guideline_title": "Typhoid Management Guidelines 2022",
+        "issuing_body": "Medical Microbiology & Infectious Diseases Society of Pakistan",
+        "geographic_context": "Endemic regions with high antimicrobial resistance",
+        "last_updated": "2022-06-22"
+      }
     ],
-    "resistant_typhoid": [
-      "Carbapenems (Meropenem, Imipenem) — for XDR typhoid or complicated cases unresponsive to other drugs",
-      "Azithromycin — preferred for XDR uncomplicated cases"
+    "definition": {
+      "description": "Typhoid fever, also known as enteric fever, is a bacterial infection of the gastrointestinal system caused by Salmonella enterica serotypes Typhi and Paratyphi.",
+      "host_specificity": "Humans are the only reservoir",
+      "bacterial_characteristics": [
+        "Gram-negative bacilli",
+        "Facultative anaerobes",
+        "Flagellated and motile",
+        "Non-spore forming",
+        "Highly antigenic"
+      ],
+      "types": {
+        "typhoid": {
+          "organism": "Salmonella typhi",
+          "global_proportion": "≈80%"
+        },
+        "paratyphoid": {
+          "organisms": [
+            "Salmonella paratyphi A",
+            "Salmonella paratyphi B"
+          ],
+          "global_proportion": "≈20%"
+        }
+      },
+      "bacterial_features": [
+        "Gram-negative",
+        "Non-lactose fermenting"
+      ]
+    },
+    "causative_agents": {
+      "primary": [
+        "Salmonella Typhi",
+        "Salmonella Paratyphi"
+      ],
+      "notes": [
+        "Animals are NOT carriers of typhoid Salmonella",
+        "Non-typhoidal Salmonella causes gastroenteritis, not typhoid"
+      ]
+    },
+    "pathophysiology": {
+      "entry": "Ingestion of contaminated food or water",
+      "intestinal_phase": [
+        "Bacteria cross intestinal epithelium",
+        "Attach to Peyer’s patches (terminal ileum)"
+      ],
+      "systemic_spread": [
+        "Phagocytosed by macrophages",
+        "Spread via lymphatics",
+        "Involvement of spleen, liver, bone marrow"
+      ],
+      "gallbladder_cycle": "Bacteria secreted into GI tract from gallbladder",
+      "tissue_damage": [
+        "Inflammation of Peyer’s patches",
+        "Necrosis and ulceration",
+        "Bleeding and perforation"
+      ],
+      "virulence_factors": [
+        "Vi antigen (capsule)",
+        "O antigen (LPS endotoxin)",
+        "H antigen (flagella)",
+        "Typhoid toxin",
+        "Type III secretion system"
+      ],
+      "infection_process": [
+        "Survival through stomach acid",
+        "Attachment to intestinal mucosa",
+        "Invasion via M cells",
+        "Replication inside macrophages",
+        "Primary bacteremia (asymptomatic)",
+        "Secondary bacteremia (symptomatic)"
+      ],
+      "affected_organs": [
+        "Intestine (Peyer’s patches)",
+        "Liver",
+        "Spleen",
+        "Bone marrow",
+        "Gallbladder"
+      ],
+      "complications": [
+        "Intestinal ulceration",
+        "Hemorrhage",
+        "Septic shock",
+        "Chronic carrier state"
+      ]
+    },
+    "incubation_period": {
+      "range": "3 days – 3 weeks",
+      "factors_affecting_duration": [
+        "Immune status",
+        "Bacterial load",
+        "Gastric acidity"
+      ],
+      "average": "7–14 days",
+      "range_days": "7–14",
+      "typhoid": "1–3 weeks",
+      "paratyphoid": "1–10 days"
+    },
+    "clinical_features": {
+      "general_symptoms": [
+        "Prolonged fever",
+        "Frontal headache",
+        "Fatigue",
+        "Flu-like symptoms (>75%)",
+        "Headache",
+        "Anorexia",
+        "Lethargy",
+        "Persistent high fever",
+        "Malaise",
+        "Abdominal discomfort"
+      ],
+      "gastrointestinal": [
+        "Abdominal pain",
+        "Nausea",
+        "Vomiting",
+        "Diarrhea",
+        "Constipation",
+        "GI bleeding",
+        "Anorexia",
+        {
+          "children": "Diarrhea common",
+          "older_children_and_adults": [
+            "Constipation",
+            "Diarrhea"
+          ]
+        },
+        "Diarrhea (more common in children)",
+        "Constipation (more common in adults)",
+        {
+          "children": [
+            "Diarrhea",
+            "Vomiting",
+            "Abdominal pain"
+          ],
+          "older_children_and_adults": [
+            "Constipation",
+            "Diarrhea",
+            "Abdominal discomfort"
+          ]
+        }
+      ],
+      "physical_signs": [
+        "Hepatomegaly",
+        "Splenomegaly",
+        "Rose spots (transient rash)",
+        {
+          "rose_spots": {
+            "description": "Faint pink maculopapular rash on trunk",
+            "frequency": "<7% in LMIC, up to 19% in high-income countries"
+          }
+        },
+        "Relative bradycardia",
+        "Rose spots (transient maculopapular rash)"
+      ],
+      "neurological": [
+        "Delirium",
+        "Meningitis",
+        "Guillain–Barré syndrome",
+        "Encephalopathy",
+        "Meningitis (rare)"
+      ],
+      "children": {
+        "common": [
+          "Fever",
+          "Vomiting",
+          "Diarrhea",
+          "Abdominal pain"
+        ],
+        "older_children": [
+          "Step-ladder fever pattern",
+          "Cough",
+          "Hepatomegaly",
+          "Splenomegaly",
+          "Relative bradycardia"
+        ]
+      },
+      "adults": [
+        "Abdominal pain",
+        "Diarrhea or constipation",
+        "Headache",
+        "Relative bradycardia"
+      ],
+      "severe_risk_factors": [
+        "Immunosuppression",
+        "Low gastric acidity",
+        "High bacterial load ingestion"
+      ],
+      "general": [
+        "Prolonged fever",
+        "Headache",
+        "Malaise",
+        "Anorexia",
+        "Weight loss",
+        "Fatigue"
+      ],
+      "early_symptoms": [
+        "Gradual onset fever",
+        "Malaise",
+        "Headache",
+        "Poor appetite",
+        "Constipation",
+        "Fever",
+        "Anorexia",
+        "Lethargy",
+        "Dry cough",
+        "Abdominal pain"
+      ],
+      "advanced_symptoms": [
+        "High-grade fever (39–40°C)",
+        "Rose-colored rash",
+        "Abdominal pain",
+        "Diarrhea",
+        "Abdominal distension",
+        "Weakness"
+      ],
+      "physical_findings": [
+        "Relative bradycardia",
+        "Splenomegaly",
+        "Hepatomegaly",
+        "Abdominal tenderness"
+      ],
+      "later_symptoms": [
+        "Prolonged fever",
+        "Mental dullness or stupor",
+        "Diarrhea (sometimes)",
+        "Hepatosplenomegaly",
+        "Rose spots rash"
+      ],
+      "rash_description": {
+        "type": "Maculopapular",
+        "location": "Upper abdomen",
+        "size_cm": 2,
+        "duration_days": "2–4",
+        "characteristic": "Blanches on pressure"
+      },
+      "severity": {
+        "untreated_mortality_rate": "Up to 10%",
+        "relapse_rate": "Common if untreated or inadequately treated"
+      }
+    },
+    "complications": [
+      {
+        "intestinal": [
+          {
+            "perforation": {
+              "incidence": "1–3%",
+              "most_common_site": "Terminal ileum",
+              "mortality": "Up to 40%"
+            },
+            "bleeding": true
+          },
+          "Intestinal perforation",
+          "Gastrointestinal bleeding",
+          "Intestinal hemorrhage",
+          "Intestinal perforation (terminal ileum)"
+        ],
+        "systemic": [
+          "Myocarditis",
+          "Endocarditis",
+          "Hepatitis",
+          "Pancreatitis",
+          "Renal failure",
+          "Pneumonia",
+          "DIC",
+          "Sepsis",
+          "Shock",
+          "Acute kidney injury",
+          "Disseminated intravascular coagulation"
+        ],
+        "carriage": {
+          "rate": "Up to 4% become chronic carriers",
+          "shedding": [
+            "Urine",
+            "Stool"
+          ]
+        },
+        "extra_intestinal": [
+          "Hepatitis",
+          "Pneumonia",
+          "Encephalopathy",
+          "Myocarditis",
+          "Acute kidney injury"
+        ],
+        "risk_statistics": {
+          "children": "27%",
+          "adults": "17%"
+        },
+        "overall_rate": "10–15% of hospitalized patients",
+        "major_life_threatening": [
+          "Intestinal hemorrhage",
+          "Intestinal perforation",
+          "Encephalopathy",
+          "Hemodynamic shock"
+        ],
+        "intestinal_perforation": {
+          "outbreak_rate": "Up to 40%",
+          "mortality_rate": "18–43%"
+        },
+        "mortality": {
+          "treated": "<1–2%",
+          "untreated": "10–20%",
+          "with_perforation": "18–43%"
+        }
+      },
+      "Intestinal hemorrhage",
+      "Intestinal perforation",
+      "Pneumonia",
+      "Meningitis",
+      "Myocarditis",
+      "Cholecystitis",
+      "Osteomyelitis",
+      "Nephritis",
+      "Sepsis"
     ],
+    "diagnosis": {
+      "clinical_note": "Clinical features alone are insufficient for diagnosis",
+      "gold_standard": [
+        "Culture-based isolation",
+        "Blood culture",
+        "Bone marrow culture"
+      ],
+      "diagnostic_tests": {
+        "bone_marrow_culture": {
+          "sensitivity": "55–90%",
+          "advantage": "Positive even after antibiotics"
+        },
+        "blood_culture": "Commonly used",
+        "stool_culture": "Helpful for carriers",
+        "urine_culture": "Supportive",
+        "skin_biopsy": "Rose spots"
+      },
+      "serology": {
+        "widal_test": {
+          "status": "Low reliability",
+          "limitations": [
+            "High false positives",
+            "Cross-reactivity",
+            "Affected by vaccination",
+            "Low sensitivity and specificity",
+            "False positives (malaria, rickettsial disease)",
+            "False negatives after antibiotics",
+            "Low sensitivity",
+            "False positives",
+            "Low specificity",
+            "Baseline titers in endemic areas",
+            "Baseline titers in endemic regions"
+          ],
+          "detects": [
+            "IgM",
+            "IgG"
+          ],
+          "positive_cutoff": "≥1:160",
+          "utility": "Supportive only",
+          "positive_titer": "≥1:160",
+          "role": "Supportive only"
+        },
+        "role": "Supportive only, not diagnostic",
+        "typhi_dot_eia": {
+          "specificity": "≈37%",
+          "status": "Not recommended for clinical decisions"
+        },
+        "typhidot_m": {
+          "detects": "IgM antibodies",
+          "advantage": "Early diagnosis",
+          "accuracy": ">93% sensitivity"
+        }
+      },
+      "advanced_methods": {
+        "pcr": {
+          "accuracy": "High",
+          "limitations": "Expensive, limited availability"
+        }
+      },
+      "blood_culture": {
+        "yield": {
+          "week_1": "≈90%",
+          "week_4": "≈40%"
+        },
+        "sample_volume": "5–10 mL",
+        "blood_to_broth_ratio": "1:5",
+        "automation": "BACTEC improves yield and cost-effectiveness"
+      },
+      "bone_marrow_culture": {
+        "indication": "Pyrexia of unknown origin or late illness",
+        "advantage": "Remains positive even after antibiotics"
+      },
+      "not_recommended": [
+        "Routine stool culture",
+        "Routine urine culture",
+        "Widal test due to poor specificity"
+      ],
+      "culture_methods": {
+        "blood_culture": {
+          "sensitivity": "40–60%",
+          "best_time": "First week (up to 90% yield)",
+          "volume": {
+            "children": "2–4 mL",
+            "adults": "10–15 mL"
+          }
+        },
+        "bone_marrow_culture": {
+          "sensitivity": ">80%",
+          "use_case": "Previously treated or prolonged illness",
+          "note": "Invasive; not routine"
+        },
+        "stool_culture": {
+          "use": "Carrier detection",
+          "note": "Poor yield in acute illness"
+        },
+        "urine_culture": {
+          "use": "Chronic urinary carriage"
+        },
+        "blood": "Moderate sensitivity",
+        "bone_marrow": "Highest sensitivity",
+        "stool": "Useful for carrier detection",
+        "urine": "Occasionally positive"
+      },
+      "molecular_tests": {
+        "PCR": {
+          "status": "Research use only",
+          "samples": [
+            "Blood",
+            "Urine"
+          ]
+        }
+      },
+      "clinical_challenges": [
+        "Non-specific symptoms",
+        "Confusion with other febrile illnesses"
+      ],
+      "laboratory_confirmation": {
+        "blood_culture": {
+          "gold_standard": true,
+          "sensitivity": "40–70%",
+          "limitations": [
+            "Reduced by prior antibiotics",
+            "Low use in LMIC outpatient settings"
+          ],
+          "best_time": "First week of illness"
+        },
+        "bone_marrow_culture": {
+          "sensitivity": ">80%",
+          "use_case": "Prior antibiotic exposure"
+        },
+        "stool_and_urine_culture": "Useful for carrier detection",
+        "stool_culture": "Carrier detection",
+        "urine_culture": "Chronic urinary carriage"
+      },
+      "serology_limitations": [
+        "Variable antibody response",
+        "Cross-reactivity with other bacteria"
+      ],
+      "surveillance_issues": [
+        "Underdiagnosis in children",
+        "Underreporting in LMICs"
+      ],
+      "clinical_challenge": "Non-specific febrile illness",
+      "serological_tests": {
+        "widal_test": {
+          "advantages": [
+            "Cheap",
+            "Widely available"
+          ],
+          "limitations": [
+            "Low sensitivity",
+            "Low specificity"
+          ]
+        },
+        "tubex_tf": {
+          "sensitivity": "41.86%",
+          "specificity": "95.97%"
+        },
+        "typhidot": {
+          "sensitivity": "26.7%",
+          "specificity": "61.5%",
+          "recommendation": "Not reliable"
+        },
+        "igm_dipstick": {
+          "target": "S. Typhi IgM antibodies",
+          "use": "Rapid screening"
+        }
+      },
+      "molecular_diagnosis": {
+        "method": "PCR",
+        "advantages": [
+          "High sensitivity",
+          "Early detection",
+          "Useful when cultures are negative"
+        ]
+      },
+      "confirmed_case": "Isolation of Salmonella Typhi or Paratyphi from clinical specimen",
+      "presumptive_case": "Compatible illness with epidemiological link",
+      "suspect_case": "Compatible illness lasting ≥1 week",
+      "preferred_specimens": [
+        "Blood",
+        "Stool",
+        "Urine",
+        "Bone marrow"
+      ],
+      "clinical_criteria": [
+        "Fever > 3 days",
+        "GI symptoms",
+        "Travel or residence in endemic area"
+      ],
+      "laboratory_tests": {
+        "blood_culture": {
+          "status": "Most common",
+          "sensitivity": "30–50%",
+          "best_time": "Second week"
+        },
+        "stool_culture": {
+          "best_time": "Second and third week",
+          "sensitivity": "≈37%"
+        },
+        "bone_marrow_culture": {
+          "gold_standard": true,
+          "sensitivity": "≈90%",
+          "limitations": [
+            "Invasive",
+            "Expensive"
+          ]
+        },
+        "serological_tests": [
+          "Widal test",
+          "Antibody detection"
+        ],
+        "molecular_tests": [
+          "PCR for typhoid DNA"
+        ]
+      }
+    },
+    "surgical_management": {
+      "indication": "Intestinal perforation only",
+      "contraindication": "No surgery without perforation",
+      "note": "Surgery may spread infection if performed unnecessarily"
+    },
+    "sepsis_management": {
+      "guidelines": "Surviving Sepsis Campaign",
+      "adult_protocol": [
+        "Blood cultures within 3 hours",
+        "Early broad-spectrum antibiotics",
+        "30 mL/kg IV fluids",
+        "Maintain MAP 55–65 mmHg"
+      ],
+      "paediatric_protocol": [
+        "20 mL/kg fluid boluses",
+        "Early antibiotics (<1 hour)",
+        "Urine output ≥1 mL/kg/hr",
+        "Hb goal ≥10 g/dL initially"
+      ]
+    },
+    "chatbot_metadata": {
+      "supported_intents": [
+        "What is typhoid fever?",
+        "Symptoms of typhoid",
+        "Transmission of typhoid",
+        "Diagnosis methods",
+        "Treatment options",
+        "Complications",
+        "Sepsis management",
+        "Vaccination",
+        "Prevention tips"
+      ],
+      "intended_users": [
+        "Medical students",
+        "Healthcare professionals",
+        "Public health workers",
+        "General public"
+      ]
+    },
+    "guideline": {
+      "name": "Standard Treatment Guidelines 2022",
+      "organization": "Indian Academy of Pediatrics (IAP)",
+      "lead_author": "Tapisha Gupta",
+      "year": 2022,
+      "country": "India"
+    },
+    "laboratory_findings": {
+      "hemogram": {
+        "tlc": "Normal or low",
+        "neutrophilia": true,
+        "thrombocytopenia": true,
+        "eosinopenia": "Highly consistent finding",
+        "transaminases": "Mild elevation possible"
+      },
+      "hematology": [
+        "Normal or low total leukocyte count",
+        "Neutrophilia",
+        "Thrombocytopenia",
+        "Eosinopenia (consistent finding)",
+        "Mild elevation of liver enzymes"
+      ],
+      "biochemistry": [
+        "Mildly elevated transaminases",
+        "Electrolyte imbalance in severe disease"
+      ],
+      "common_results": [
+        "Anemia",
+        "Relative leukopenia",
+        "Occasional thrombocytopenia",
+        "Mildly raised ESR",
+        "Raised liver transaminases",
+        "Raised serum bilirubin",
+        "Hyponatremia",
+        "Hypokalemia"
+      ],
+      "tests_to_rule_out": [
+        "Malaria",
+        "Dengue",
+        "Acute viral hepatitis"
+      ]
+    },
+    "steroids": {
+      "indication": "Severe illness only",
+      "criteria": [
+        "Shock",
+        "Coma",
+        "Altered sensorium"
+      ],
+      "regimen": {
+        "dexamethasone": {
+          "loading_dose": "3 mg/kg",
+          "maintenance": "1 mg/kg every 6 hours for 2 days"
+        }
+      },
+      "warning": "Prolonged use increases relapse risk"
+    },
+    "treatment_response": {
+      "delayed_defervescence": {
+        "definition": "No fever resolution by day 7 but child clinically improving",
+        "action": "Continue same antibiotic till day 10"
+      },
+      "clinical_failure": {
+        "definition": "Persistent fever + toxic child after 7 days",
+        "evaluate_for": [
+          "Complications (abscess, HLH)",
+          "Coinfections (malaria, hepatitis A)",
+          "Drug fever",
+          "Thrombophlebitis",
+          "Incorrect diagnosis"
+        ]
+      }
+    },
+    "antimicrobial_resistance": {
+      "important_notes": [
+        "Quinolones contraindicated in children",
+        "Aminoglycosides ineffective (intracellular organism)"
+      ],
+      "mic_guidance": {
+        "ceftriaxone": {
+          "excellent_outcome": "MIC ≤1",
+          "resistance_cutoff": {
+            "CLSI": "≥4",
+            "EUCAST": ">2"
+          }
+        }
+      },
+      "resistant_infections": {
+        "first_choice": "Azithromycin",
+        "severe_or_unstable": "Meropenem"
+      },
+      "mdr_definition": "Resistance to ampicillin, chloramphenicol, TMP-SMX",
+      "fluoroquinolone_resistance": "Common in Asia",
+      "xdr_definition": "Resistance to first-line + fluoroquinolones + cephalosporins",
+      "public_health_concern": "Emerging ceftriaxone resistance",
+      "mdr": "Resistance to ampicillin, chloramphenicol, TMP-SMX",
+      "xdr": "Resistance to first-line + fluoroquinolones + cephalosporins",
+      "emerging_threats": [
+        "Ceftriaxone resistance",
+        "Azithromycin resistance"
+      ]
+    },
+    "carrier_state": {
+      "definition": "Chronic gallbladder carriage with continuous shedding",
+      "pediatric_relevance": "Uncommon",
+      "screening": "Not routinely recommended",
+      "treatment": [
+        "TMP-SMX 10 mg/kg/day for 6–12 weeks",
+        "Amoxicillin 75–100 mg/kg/day for 4–6 weeks"
+      ],
+      "prevalence": "2–5% of infected individuals",
+      "risk_factors": [
+        "Older age",
+        "Pre-existing gallbladder disease",
+        "Gallstones",
+        "Female sex"
+      ],
+      "public_health_significance": [
+        "Sustains endemic transmission",
+        "Foodborne outbreaks via carriers",
+        "Sustained transmission",
+        "Foodborne outbreaks",
+        "Increased gallbladder cancer risk"
+      ],
+      "long_term_risk": "Increased risk of hepatobiliary cancer",
+      "public_health_impact": [
+        "Sustained transmission",
+        "Foodborne outbreaks",
+        "Increased gallbladder cancer risk"
+      ]
+    },
+    "relapse": {
+      "rate": "5–20%",
+      "timing": "2–3 weeks after fever resolution",
+      "severity": "Usually milder",
+      "management": "Same antibiotic as initial episode"
+    },
+    "chatbot_readiness": {
+      "supported_intents": [
+        "What is enteric fever?",
+        "Symptoms in children",
+        "Diagnosis of typhoid",
+        "Blood culture timing",
+        "Empirical antibiotics",
+        "Drug dosages",
+        "Steroid use",
+        "Delayed defervescence",
+        "Clinical failure",
+        "Antibiotic resistance",
+        "Carrier state",
+        "Relapse management"
+      ],
+      "target_users": [
+        "Medical students",
+        "Pediatric residents",
+        "Clinicians",
+        "Healthcare chatbots"
+      ]
+    },
+    "vaccination": {
+      "available_vaccines": [
+        "Vi polysaccharide vaccine",
+        "Ty21a live attenuated vaccine",
+        "Typhoid conjugate vaccine"
+      ],
+      "age_eligibility": "≥2 years",
+      "efficacy": "55–72%",
+      "duration_of_protection": "≈3 years",
+      "who_recommendations": [
+        "Endemic regions",
+        "Travelers",
+        "Outbreak control",
+        "School-based immunization"
+      ]
+    },
+    "public_health": {
+      "notifiable_disease": true,
+      "control_measures": [
+        "Case isolation",
+        "Contact tracing",
+        "Carrier treatment",
+        "Food handler restrictions",
+        "Surveillance",
+        "Carrier identification",
+        "Vaccination campaigns",
+        "Case reporting",
+        "Outbreak investigation"
+      ],
+      "disease_status": "Notifiable disease"
+    },
+    "knowledge_domain": "Infectious Diseases",
+    "pathogenesis": {
+      "entry": "Ingestion of contaminated food or water",
+      "early_phase": "Silent primary bacteremia",
+      "target_system": "Reticuloendothelial system",
+      "cellular_mechanism": "Intracellular multiplication inside macrophages",
+      "systemic_spread": "Secondary bacteremia leading to clinical illness",
+      "intestinal_phase": "Invasion of Peyer’s patches in terminal ileum",
+      "systemic_phase": "Intracellular multiplication in macrophages",
+      "secondary_bacteremia": "Onset of clinical symptoms",
+      "gallbladder_colonization": "Source of relapse and chronic carriage",
+      "process": [
+        "Survives gastric acid",
+        "Invades intestinal mucosa",
+        "Multiplies in Peyer’s patches",
+        "Spreads to lymph nodes",
+        "Disseminates via bloodstream",
+        "Colonizes liver, spleen, bone marrow",
+        "Excreted via stool"
+      ]
+    },
+    "chatbot_capabilities": {
+      "supported_intents": [
+        "What is typhoid fever?",
+        "How does typhoid spread?",
+        "Symptoms of typhoid",
+        "Complications of typhoid",
+        "Diagnosis methods",
+        "Carrier state explanation",
+        "Vaccination information",
+        "Prevention tips",
+        "Epidemiology data"
+      ],
+      "safe_use_note": "Information-only. Not a substitute for medical diagnosis or treatment."
+    },
+    "disease_profile": {
+      "name": "Enteric Fever",
+      "common_name": "Typhoid Fever",
+      "causative_agents": {
+        "typhoid": "Salmonella enterica serovar Typhi",
+        "paratyphoid": [
+          "Salmonella Paratyphi A",
+          "Salmonella Paratyphi B",
+          "Salmonella Paratyphi C"
+        ]
+      },
+      "reservoir": "Humans only",
+      "bacterial_characteristics": {
+        "gram_stain": "Gram-negative",
+        "shape": "Rod-shaped bacillus",
+        "motility": "Motile (peritrichous flagella)",
+        "oxygen_requirement": "Facultative anaerobe",
+        "antigens": {
+          "O": "Somatic antigen",
+          "H": "Flagellar antigen",
+          "Vi": {
+            "role": [
+              "Virulence factor",
+              "Immune evasion",
+              "Carrier state association"
+            ],
+            "present_in": [
+              "S. Typhi",
+              "S. Paratyphi C"
+            ],
+            "presence": [
+              "S. Typhi",
+              "S. Paratyphi C"
+            ],
+            "functions": [
+              "Virulence factor",
+              "Immune evasion",
+              "Associated with chronic carriage"
+            ]
+          }
+        },
+        "family": "Enterobacteriaceae",
+        "fermentation": "Non-lactose fermenter"
+      },
+      "synonyms": [
+        "Typhoid",
+        "Paratyphoid Fever"
+      ]
+    },
+    "public_health_and_surveillance": {
+      "notifiable_disease": true,
+      "control_measures": [
+        "Case reporting",
+        "Outbreak investigation",
+        "Carrier identification",
+        "Vaccination campaigns"
+      ]
+    },
+    "chatbot_support": {
+      "supported_intents": [
+        "What is typhoid fever?",
+        "How does typhoid spread?",
+        "Symptoms of typhoid",
+        "Diagnosis methods",
+        "Treatment options",
+        "Drug resistance",
+        "Complications",
+        "Carrier state",
+        "Vaccination information",
+        "Prevention tips",
+        "Public health reporting"
+      ],
+      "conversation_style": [
+        "Educational",
+        "Student-friendly",
+        "Public-health focused"
+      ]
+    },
+    "key_stats": {
+      "total_studies": 113,
+      "confirmed_cases": 10335,
+      "complications_rate": "26.3%",
+      "global_cfr": "2.0% (95% CI 1.4-2.8%)",
+      "tip_cfr_median": "15.5%"
+    },
+    "cfr_by_region": {
+      "Asia": "0.9%",
+      "Africa": "5.4%",
+      "Oceania": "7.2%",
+      "Americas": "6.7%"
+    },
+    "top_complications": [
+      {
+        "name": "Delirium",
+        "prevalence": "26.6%"
+      },
+      {
+        "name": "Anemia",
+        "prevalence": "21.4%"
+      },
+      {
+        "name": "Encephalopathy",
+        "prevalence": "3.6%"
+      },
+      {
+        "name": "Gastrointestinal hemorrhage",
+        "prevalence": "3.1%"
+      },
+      {
+        "name": "TIP",
+        "prevalence": "1.3%"
+      }
+    ],
+    "full_text_snippet": "Objectives: Updated estimates of the prevalence of complications and CFR... [truncated; use for RAG].",
+    "public_health_recommendations": [
+      "Improved sanitation infrastructure",
+      "Rational antibiotic use",
+      "Surveillance and diagnostics",
+      "School-based vaccination programs",
+      "Health education"
+    ],
+    "keywords": [
+      "Typhoid",
+      "Salmonella Typhi",
+      "Enteric fever",
+      "Drug resistance",
+      "Food-borne disease",
+      "Water-borne disease"
+    ],
+    "source_metadata": {
+      "article_title": "A review: Typhoid fever",
+      "journal": "Journal of Bacteriology & Infectious Diseases",
+      "year": 2018,
+      "authors": [
+        "Nusrat Yasin",
+        "Azmat Jabeen",
+        "Iqbal Nisa",
+        "Umber Tasleem"
+      ]
+    },
+    "reporting_and_surveillance": {
+      "purpose": [
+        "Identify public health sources of infection",
+        "Stop transmission from food handlers or contaminated products",
+        "Assess risk of spread to others",
+        "Identify additional cases"
+      ],
+      "laboratory_reporting": {
+        "who_must_report": [
+          "Laboratories",
+          "Physicians"
+        ],
+        "timeframe": "Within 1 working day",
+        "notes": [
+          "Do not delay reporting for serotyping",
+          "Isolates must be sent for serotyping if unavailable locally"
+        ]
+      },
+      "local_health_department_actions": [
+        "Report confirmed and presumptive cases to OHD",
+        "Begin investigation within 1 working day",
+        "Use official case investigation forms",
+        "Encourage isolate forwarding to CPHL",
+        "Complete outbreak summary forms if needed",
+        "Manage carrier agreements for chronic carriers"
+      ]
+    },
+    "etiology": {
+      "typhoid": {
+        "agent": "Salmonella enterica serotype Typhi",
+        "type": "Gram-negative bacillus",
+        "environmental_survival": [
+          "Weeks to months in water or ice",
+          "Killed by sunlight, drying, disinfectants, chlorination"
+        ]
+      },
+      "paratyphoid": [
+        {
+          "agents": [
+            "Salmonella Paratyphi A",
+            "Salmonella Paratyphi B",
+            "Salmonella Paratyphi C"
+          ],
+          "severity": "Usually milder than typhoid"
+        },
+        "Salmonella Paratyphi A",
+        "Salmonella Paratyphi B",
+        "Salmonella Paratyphi C"
+      ],
+      "organism": "Salmonella enterica subsp. enterica serotype Typhi",
+      "organism_type": "Gram-negative bacillus",
+      "infectious_dose": "Low in susceptible individuals",
+      "environmental_survival": [
+        "Survives weeks in water",
+        "Survives months in ice",
+        "Destroyed by sunlight, drying, disinfectants, chlorination"
+      ],
+      "transmission": "Fecal–oral",
+      "relative_severity": {
+        "typhi": "More severe",
+        "paratyphi": "Less severe"
+      },
+      "family": "Enterobacteriaceae",
+      "bacterial_characteristics": {
+        "gram_stain": "Gram-negative",
+        "motility": "Motile (flagella)",
+        "acid_sensitivity": "Acid-sensitive except some resistant strains"
+      },
+      "risk_factors": [
+        "Contaminated food and water",
+        "Poor sanitation",
+        "Overcrowding",
+        "Malnutrition",
+        "Use of broad-spectrum antibiotics",
+        "Reduced gastric acidity",
+        "Poor personal hygiene"
+      ]
+    },
+    "reservoirs_and_carriers": {
+      "reservoir": "Humans only",
+      "carrier_statistics": {
+        "chronic_carrier_rate": "2–5%",
+        "high_risk_groups": [
+          "Middle-aged individuals",
+          "Women",
+          "Persons with gall bladder disease"
+        ]
+      },
+      "carrier_characteristics": {
+        "excretion": [
+          "Stool",
+          "Urine"
+        ],
+        "organism_load": "Up to 10^11 organisms per gram of stool"
+      }
+    },
+    "communicability": {
+      "start": "About 1 week after symptom onset",
+      "duration": [
+        "During illness",
+        "Through convalescence",
+        "Permanently in carriers"
+      ]
+    },
+    "laboratory_services": {
+      "provided_by": "Center for Public Health Laboratories (CPHL)",
+      "services": [
+        "Isolate confirmation",
+        "Serotyping",
+        "Blood and stool cultures",
+        "Carrier state follow-up cultures"
+      ],
+      "specimen_rules": [
+        "Stool must be collected before antibiotics or 48h after stopping",
+        "Proper double packaging required"
+      ]
+    },
+    "case_management": {
+      "isolation": {
+        "standard_precautions": true,
+        "contact_precautions": "Required for diapered or incontinent children"
+      },
+      "work_restrictions": {
+        "food_handlers": "Excluded until cleared",
+        "healthcare_and_childcare": "Excluded until clearance"
+      }
+    },
+    "clearance_criteria": {
+      "acute_cases": {
+        "stool_cultures": 4,
+        "urine_cultures": 1,
+        "timing_rules": [
+          "Asymptomatic",
+          "48h post-antibiotics",
+          "24h apart"
+        ]
+      },
+      "chronic_carriers": {
+        "stool_cultures": 6,
+        "urine_culture": 1,
+        "interval": "≥72 hours apart"
+      }
+    },
+    "special_situations": {
+      "daycare": [
+        "Exclude cases",
+        "Conduct stool screening",
+        "Cohorting if necessary",
+        "Weekly follow-up"
+      ],
+      "food_handlers": [
+        "Environmental evaluation",
+        "Employee stool testing",
+        "Patron illness investigation"
+      ],
+      "healthcare_facilities": [
+        "Consult infection control",
+        "Evaluate for outbreaks"
+      ]
+    },
+    "chatbot_intent_examples": [
+      "What are the symptoms of typhoid fever?",
+      "How is typhoid transmitted?",
+      "When should typhoid be reported?",
+      "What tests confirm typhoid?",
+      "Who should not work if diagnosed with typhoid?",
+      "How long is the incubation period?",
+      "Is vaccination available for typhoid?"
+    ],
+    "clinical_illness": {
+      "general_description": "Systemic bacterial illness with gradual onset",
+      "early_symptoms": [
+        "Sustained fever",
+        "Headache",
+        "Malaise",
+        "Anorexia",
+        "Lethargy",
+        "Dry cough"
+      ],
+      "gastrointestinal_symptoms": [
+        "Constipation (more common)",
+        "Diarrhea (less common)",
+        "Abdominal pain",
+        "Abdominal tenderness"
+      ],
+      "systemic_findings": [
+        "Relative bradycardia",
+        "Hepatomegaly",
+        "Splenomegaly",
+        "Mental dullness",
+        "Slight deafness",
+        "Parotitis"
+      ],
+      "dermatologic_signs": {
+        "name": "Rose spots",
+        "description": "Rose-colored maculopapular lesions",
+        "locations": [
+          "Abdomen",
+          "Back",
+          "Arms",
+          "Legs"
+        ],
+        "duration_days": "2–4",
+        "blanching": true
+      },
+      "disease_course": {
+        "untreated_duration": "Up to 4 weeks of continuous fever",
+        "post_fever_fatigue": "May persist for months"
+      },
+      "complications": [
+        "Intestinal hemorrhage",
+        "Intestinal perforation",
+        "Sepsis",
+        "Neurologic manifestations"
+      ],
+      "severity": {
+        "untreated_case_fatality": "10–20%",
+        "treated_case_fatality": "<1%",
+        "relapse_rate": "Up to 10%"
+      }
+    },
+    "infection_control": {
+      "precautions": {
+        "routine": true,
+        "contact_precautions": [
+          "Incontinent adults",
+          "Diapered children",
+          "Poor hygiene compliance"
+        ]
+      },
+      "work_and_school_exclusion": {
+        "food_handlers": {
+          "requirement": "≥3 negative stool cultures",
+          "timing": "≥48h after antibiotics"
+        },
+        "childcare_attendees": {
+          "under_5_years": "3 negative stool cultures",
+          "over_5_years": "Exclude until symptom-free"
+        }
+      }
+    },
+    "microbiological_diagnosis": {
+      "gold_standard": "Blood culture",
+      "culture_sources": [
+        "Blood",
+        "Bone marrow",
+        "Urine",
+        "Stool",
+        "Rose spot biopsy",
+        "Duodenal aspirate"
+      ],
+      "culture_sensitivity": {
+        "blood": "40–80%",
+        "bone_marrow": "≈90% (even after antibiotics)"
+      },
+      "blood_culture_guidelines": {
+        "timing": "Before antibiotics whenever possible",
+        "volume_adults_ml": 20,
+        "volume_children_ml": {
+          "<5_years": "3–5",
+          "5–12_years": "5–10",
+          ">12_years": "10–15"
+        },
+        "repeat_culture": "If no response after 7–9 days"
+      },
+      "serology": {
+        "tests": [
+          "Widal",
+          "TyphiDOT"
+        ],
+        "recommendation": "NOT recommended due to low sensitivity and specificity"
+      }
+    },
+    "drug_resistance_classification": {
+      "non_resistant": "Sensitive to first-line drugs and cephalosporins",
+      "mdr": "Resistant to first-line drugs, sensitive to cephalosporins",
+      "xdr": "Resistant to first-line, fluoroquinolones, and cephalosporins",
+      "esbl_positive": "Cephalosporin resistant, may be sensitive to older agents"
+    },
+    "management_principles": {
+      "general_rules": [
+        "Always send blood cultures before antibiotics",
+        "Do not use serological tests",
+        "Do not rush antibiotic change before 5–7 days",
+        "Monitor for complications closely"
+      ]
+    },
     "supportive_care": [
-      "Adequate hydration with oral or IV fluids",
-      "Paracetamol for fever control (avoid NSAIDs)",
-      "Nutritional support — small, frequent, easily digestible meals",
-      "Bed rest during acute phase",
-      "Monitoring for and managing complications (perforation, haemorrhage)"
+      "Antipyretics",
+      "Adequate hydration",
+      "Electrolyte correction",
+      "Soft, easily digestible diet",
+      "Monitoring vitals and labs in severe disease"
     ],
-    "surgical_management": [
-      "Emergency surgery for intestinal perforation or haemorrhage",
-      "Bowel repair or resection depending on severity"
+    "empiric_treatment": {
+      "initial_options": [
+        "Oral Azithromycin",
+        "IV Ceftriaxone"
+      ],
+      "escalation_criteria": [
+        "No improvement after 5 days",
+        "Clinical deterioration",
+        "Development of complications"
+      ],
+      "escalation_drug": "IV Carbapenem"
+    },
+    "definitive_treatment": {
+      "non_resistant": {
+        "duration_days": 14,
+        "options": [
+          "Ceftriaxone",
+          "Cefixime",
+          "Ciprofloxacin",
+          "Chloramphenicol",
+          "Trimethoprim-Sulfamethoxazole",
+          "Ampicillin/Amoxicillin"
+        ]
+      },
+      "mdr": {
+        "drug": "Third-generation cephalosporins",
+        "duration_days": 14
+      },
+      "xdr": {
+        "stable_patient": "Azithromycin",
+        "unstable_patient": [
+          "Meropenem",
+          "Imipenem",
+          "Ertapenem"
+        ],
+        "duration_days": "10–14"
+      },
+      "esbl_positive": {
+        "strategy": "De-escalate to susceptible first-line agent",
+        "duration_days": 14
+      }
+    },
+    "antibiotic_dosing": {
+      "azithromycin": {
+        "<60kg": "1g loading, then 500mg daily for 7–10 days",
+        ">60kg": "1g daily for 7–10 days"
+      },
+      "ceftriaxone": "1–2g daily (10–14 days)",
+      "cefixime": "400mg q12h (10–14 days)",
+      "meropenem": "1g q8h IV (10–14 days)",
+      "imipenem": "500mg q6h or 1g q8h IV",
+      "ertapenem": "1g daily IV"
+    },
+    "complicated_typhoid": {
+      "features": [
+        "Jaundice",
+        "Altered mental status",
+        "Severe abdominal pain",
+        "GI bleeding",
+        "Septic shock"
+      ],
+      "management": "Tertiary care center"
+    },
+    "follow_up": {
+      "monitoring_period_months": 3,
+      "watch_for": [
+        "Relapse",
+        "Complications",
+        "Chronic carriage"
+      ]
+    },
+    "signs_and_symptoms": {
+      "general": [
+        "High fever",
+        "Weakness",
+        "Fatigue",
+        "Sweating",
+        "Loss of appetite",
+        "Weight loss"
+      ],
+      "gastrointestinal": [
+        "Abdominal pain",
+        "Diarrhea",
+        "Constipation",
+        "Extremely swollen abdomen"
+      ],
+      "neurological": [
+        "Headache",
+        "Confusion (severe cases)"
+      ],
+      "dermatological": [
+        "Rose spots (rash)"
+      ],
+      "respiratory": [
+        "Dry cough"
+      ]
+    },
+    "widal_test": {
+      "purpose": "Detection of antibodies against Salmonella antigens",
+      "antigens_tested": [
+        "O",
+        "H",
+        "AH",
+        "BH"
+      ],
+      "procedure": [
+        "Add positive control",
+        "Add negative control",
+        "Add patient serum",
+        "Add specific antigens",
+        "Mix and rock slide",
+        "Observe agglutination within 1 minute"
+      ],
+      "interpretation": {
+        "positive": "Visible agglutination",
+        "negative": "No agglutination"
+      }
+    },
+    "outcomes_and_learning": {
+      "key_understandings": [
+        "Disease pathology",
+        "Modes of transmission",
+        "Diagnostic techniques",
+        "Treatment strategies",
+        "Preventive measures"
+      ]
+    },
+    "chatbot_use_cases": [
+      "Symptom checker",
+      "Patient education",
+      "Medical student learning",
+      "Public health awareness",
+      "Diagnostic guidance (non-clinical)"
+    ],
+    "key_facts": {
+      "annual_global_cases": 9000000,
+      "annual_global_deaths": 110000,
+      "data_reference_year": 2019,
+      "severity": "Can cause serious complications or death if untreated",
+      "antibiotic_resistance": "Increasing and complicating treatment",
+      "vaccine_availability": "WHO-prequalified typhoid conjugate vaccines available"
+    },
+    "overview": {
+      "infection_process": [
+        "Ingestion of Salmonella Typhi",
+        "Bacterial multiplication in intestine",
+        "Spread into bloodstream"
+      ],
+      "global_challenges": [
+        "Urbanization",
+        "Climate change",
+        "Antimicrobial resistance",
+        "Poor access to safe water",
+        "Inadequate sanitation"
+      ]
+    },
+    "symptoms": {
+      "common_symptoms": [
+        "Prolonged high fever",
+        "Fatigue",
+        "Headache",
+        "Nausea",
+        "Abdominal pain",
+        "Constipation",
+        "Diarrhoea"
+      ],
+      "additional_symptoms": [
+        "Rash"
+      ],
+      "severe_outcomes": [
+        "Serious complications",
+        "Death"
+      ],
+      "diagnostic_confirmation": [
+        "Blood testing"
+      ]
+    },
+    "epidemiology_and_burden": {
+      "global_distribution": [
+        "WHO African Region",
+        "WHO Eastern Mediterranean Region",
+        "WHO South-East Asia Region",
+        "WHO Western Pacific Region"
+      ],
+      "high_risk_populations": [
+        "Children",
+        "Populations without safe water",
+        "Populations with poor sanitation"
+      ],
+      "historical_trend": {
+        "industrialized_countries": "Drastic reduction due to antibiotics and improved living conditions",
+        "developing_countries": "Ongoing public health problem"
+      }
+    },
+    "risk_factors": {
+      "environmental": [
+        "Lack of safe drinking water",
+        "Poor sanitation",
+        "Urban overcrowding"
+      ],
+      "individual": [
+        "Poor hygiene",
+        "Exposure during travel to endemic areas"
+      ]
+    },
+    "traveller_guidance": {
+      "risk_level": "Present in all endemic regions",
+      "vaccination_recommendation": "Vaccination recommended for high-risk destinations",
+      "food_and_water_safety": [
+        "Eat food that is fully cooked and hot",
+        "Avoid raw milk and raw milk products",
+        "Drink boiled or pasteurized milk",
+        "Avoid ice made from unsafe water",
+        "Boil or disinfect drinking water",
+        "Wash hands frequently with soap",
+        "Wash and peel fruits and vegetables"
+      ]
+    },
+    "who_response": {
+      "sage_recommendation": {
+        "year": 2017,
+        "action": "Add typhoid conjugate vaccine to routine childhood immunization in endemic countries",
+        "priority_countries": [
+          "High disease burden countries",
+          "Countries with high antibiotic resistance"
+        ]
+      },
+      "gavi_support": {
+        "start_year": 2019,
+        "purpose": "Funding support for typhoid conjugate vaccine introduction"
+      },
+      "who_prequalification": {
+        "vaccines_prequalified": 2,
+        "status_year": 2023,
+        "key_benefit": "Longer-lasting immunity with single dose"
+      },
+      "public_health_impact": [
+        "Reduced typhoid burden",
+        "Lives saved",
+        "Reduced antibiotic use",
+        "Slower development of antimicrobial resistance"
+      ]
+    },
+    "chatbot_applications": [
+      "WHO health education chatbot",
+      "Symptom awareness assistant",
+      "Vaccination eligibility checker",
+      "Traveller safety chatbot",
+      "Public health surveillance support",
+      "Antibiotic resistance education"
+    ],
+    "chatbot_intents": [
+      "{\"symptom_check\": [\"What are symptoms of typhoid?\", \"How does typhoid start?\"], \"diagnosis\": [\"How is typhoid confirmed?\", \"Which test is best for typhoid?\"], \"treatment\": [\"What antibiotics treat typhoid?\", \"Is typhoid curable?\"], \"prevention\": [\"How can typhoid be prevented?\", \"Is there a vaccine for typhoid?\"], \"public_health\": [\"When should typhoid be reported?\", \"Who must be excluded from work?\"]}",
+      "What is typhoid fever?",
+      "How does typhoid spread?",
+      "Symptoms of typhoid",
+      "Complications",
+      "Diagnosis methods",
+      "Treatment options",
+      "Antibiotic resistance",
+      "Carrier state",
+      "Vaccination information",
+      "Prevention tips",
+      "Public health reporting",
+      "{\"symptom_assessment\": [\"What are the symptoms of typhoid?\", \"How does typhoid fever start?\"], \"diagnosis\": [\"How is typhoid diagnosed?\", \"Which test confirms typhoid?\"], \"treatment\": [\"How is typhoid treated?\", \"Which antibiotics cure typhoid?\"], \"prevention\": [\"How can typhoid be prevented?\", \"Is there a typhoid vaccine?\"], \"public_health\": [\"When must typhoid be reported?\", \"Who must stop working if infected?\"]}",
+      "{\"symptoms\": [\"What are symptoms of typhoid?\", \"How does typhoid start?\"], \"diagnosis\": [\"Which test confirms typhoid?\", \"Why is Widal not recommended?\"], \"treatment\": [\"How is XDR typhoid treated?\", \"What antibiotics are used for typhoid?\"], \"prevention\": [\"Is there a typhoid vaccine?\", \"How can typhoid be prevented?\"]}",
+      "Drug dosage guidance",
+      "Difference between typhoid and paratyphoid",
+      "What is the case fatality ratio of typhoid fever?",
+      "What are the most common complications of typhoid fever?",
+      "How does typhoid CFR differ by region?",
+      "What factors increase typhoid mortality?",
+      "Recommendations from the study?"
     ]
-  },
-  "complications": [
-    "Intestinal perforation (most serious complication — occurs in ~1–3% of hospitalized cases)",
-    "Gastrointestinal haemorrhage (bleeding in intestine)",
-    "Encephalopathy (typhoid toxin affecting brain — confusion, altered consciousness)",
-    "Myocarditis (heart inflammation)",
-    "Hepatitis (liver inflammation)",
-    "Pneumonia",
-    "Bone and joint infections (rare)",
-    "Haemolytic anaemia",
-    "Chronic carrier state",
-    "Relapse (up to 10% of treated patients — usually milder than initial illness)"
-  ],
-  "prevention": [
-    "Practice strict hand hygiene — wash hands with soap before eating and after using the toilet",
-    "Drink only clean, treated, or boiled water",
-    "Avoid raw produce that cannot be peeled or was washed in untreated water",
-    "Avoid street food or uncooked foods in endemic areas",
-    "Vaccination before travel to endemic regions",
-    "Improve sanitation and sewage infrastructure at community level",
-    "Identify and treat or monitor chronic carriers, especially those in food-handling roles",
-    "Ensure safe food handling practices — proper cooking and storage"
-  ],
-  "emergency_signs": [
-    "Sudden severe abdominal pain with rigid, board-like abdomen (suspect intestinal perforation)",
-    "Passing blood in stool or signs of severe internal bleeding",
-    "Confusion, altered consciousness, or delirium (encephalopathy)",
-    "High fever persisting for more than 2–3 weeks despite treatment",
-    "Signs of shock — rapid weak pulse, cold clammy skin, very low blood pressure",
-    "Inability to drink fluids or persistent vomiting (risk of dehydration)"
-  ],
-  "faqs": [
-    {
-      "question": "How is typhoid fever different from malaria?",
-      "answer": "Both cause fever in tropical regions, but typhoid is bacterial (Salmonella Typhi, spread by contaminated food/water) while malaria is parasitic (Plasmodium, spread by mosquito bites). Typhoid typically has a gradual fever onset and abdominal symptoms, while malaria features cyclical chills and sweating. Blood culture confirms typhoid; blood smear or RDT confirms malaria."
-    },
-    {
-      "question": "Is the typhoid vaccine fully protective?",
-      "answer": "No. Available vaccines offer 50–80% protection. The typhoid conjugate vaccine (TCV) provides stronger, longer-lasting immunity especially in young children. No vaccine currently protects against paratyphoid fever. Food and water hygiene remain essential even after vaccination."
-    },
-    {
-      "question": "Can typhoid recur after treatment?",
-      "answer": "Yes. Up to 10% of patients may experience relapse, usually within 2–3 weeks after apparent recovery. Relapse is generally milder. Completing the full antibiotic course reduces this risk."
-    },
-    {
-      "question": "What are chronic typhoid carriers?",
-      "answer": "About 1–4% of typhoid patients become chronic carriers — they continue to shed bacteria in stool or urine for 12 months or more without feeling ill. Carriers can unknowingly spread infection, especially if they handle food. Prolonged antibiotic treatment (e.g., ciprofloxacin for 4 weeks) can sometimes clear the carrier state."
-    }
-  ]
-}
+  }
+]

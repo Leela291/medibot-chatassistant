@@ -1,138 +1,5233 @@
-{
-  "disease": "Malaria",
-  "overview": "Malaria is a life-threatening parasitic disease caused by Plasmodium parasites, transmitted to humans through the bites of infected female Anopheles mosquitoes. It remains a major global health problem, especially in tropical and subtropical regions. Though preventable and treatable, malaria causes hundreds of millions of infections annually and is a leading cause of mortality in children under five.",
-  "types": [
-    {
-      "name": "Plasmodium falciparum Malaria",
-      "description": "The most dangerous species, responsible for the majority of severe malaria cases and deaths. Causes cerebral malaria, severe anemia, and multi-organ failure."
-    },
-    {
-      "name": "Plasmodium vivax Malaria",
-      "description": "Can remain dormant in the liver as hypnozoites and cause relapses months or years after initial infection. Common in Asia and Latin America."
-    },
-    {
-      "name": "Plasmodium ovale Malaria",
-      "description": "Similar to P. vivax; milder disease with potential for relapse due to liver dormancy. Mainly found in West Africa."
-    },
-    {
-      "name": "Plasmodium malariae Malaria",
-      "description": "Causes a mild, chronic infection. Can persist at low levels in blood for years if untreated. Associated with kidney disease in chronic cases."
-    },
-    {
-      "name": "Plasmodium knowlesi Malaria",
-      "description": "A zoonotic species naturally infecting macaque monkeys. Can cause rapidly progressing severe disease in humans. Found in forested regions of Southeast Asia."
-    }
-  ],
-  "symptoms": [
-    "Fever (often cyclical — every 48 or 72 hours)",
-    "Chills and rigors",
-    "Profuse sweating",
-    "Severe headache",
-    "Muscle and joint pain",
-    "Fatigue and weakness",
-    "Nausea and vomiting",
-    "Abdominal pain",
-    "Anaemia (pallor, weakness, fatigue)",
-    "Enlarged spleen (splenomegaly) in chronic cases",
-    "Jaundice (yellowing of skin and eyes) due to red blood cell destruction"
-  ],
-  "causes": [
-    "Bite of infected female Anopheles mosquito injecting Plasmodium sporozoites",
-    "Blood transfusion with infected blood (rare)",
-    "Congenital transmission from infected mother to newborn",
-    "Shared use of contaminated needles (rare)",
-    "Parasites invade liver cells then red blood cells, causing their rupture"
-  ],
-  "risk_factors": [
-    "Living in or travelling to malaria-endemic tropical regions (Sub-Saharan Africa, South Asia, Southeast Asia)",
-    "Lack of mosquito net or repellent use",
-    "Outdoor exposure at night (when Anopheles mosquitoes are most active)",
-    "Children under 5 years",
-    "Pregnant women (increased susceptibility)",
-    "People with no prior immunity (first-time travellers to endemic areas)",
-    "HIV/AIDS and other immunosuppressive conditions",
-    "Poor sanitation and stagnant water near homes"
-  ],
-  "diagnosis": [
-    "Microscopy of thick and thin blood smear — gold standard for species identification",
-    "Rapid Diagnostic Tests (RDTs) — detect malaria antigens, fast results in field settings",
-    "PCR (Polymerase Chain Reaction) — highly sensitive, used in research and low-parasitemia cases",
-    "Complete blood count (CBC) — reveals anaemia and low platelets",
-    "Liver function tests and renal function tests in severe cases"
-  ],
-  "treatment": {
-    "uncomplicated_malaria": [
-      "Artemisinin-based Combination Therapy (ACT) — first-line treatment recommended by WHO",
-      "Artemether + Lumefantrine (Coartem) — most widely used ACT",
-      "Artesunate + Amodiaquine",
-      "Artesunate + Mefloquine — used in Southeast Asia",
-      "Chloroquine — only for P. vivax, P. ovale, P. malariae where resistant strains absent"
+[
+  {
+    "source": [
+      {
+        "organization": "World Health Organization",
+        "document": "International Travel and Health – Chapter 7: Malaria",
+        "year": 2016,
+        "credibility": "authoritative"
+      },
+      {
+        "title": "Malaria",
+        "author": "Kemi Keshinro",
+        "qualification": "PGY4 Internal Medicine/Pediatrics",
+        "source_type": "medical lecture slides",
+        "credibility": "high"
+      },
+      {
+        "document": "Diagnosis and Treatment of Malaria",
+        "year": 2013,
+        "authority": "National Vector Borne Disease Control Programme (NVBDCP), Government of India",
+        "scope": "India national malaria treatment guidelines"
+      },
+      {
+        "title": "Malaria",
+        "publisher": "Institute of Tropical Medicine",
+        "document_type": "lecture notes",
+        "pages": 56,
+        "last_updated": "2025-01-22",
+        "credibility": "high"
+      },
+      {
+        "title": "Lecture 8: Plasmodium (Malaria)",
+        "department": "Medical Laboratory Techniques Department",
+        "lecturer": "Dr. Fatima H. Abbas",
+        "institution": "Al-Mustaqbal University College",
+        "document_type": "medical lecture slides",
+        "pages": 13,
+        "credibility": "academic"
+      },
+      {
+        "title": "Malaria",
+        "publisher": "Centre for Opportunistic, Tropical and Hospital Infections (COTHI)",
+        "institution": "National Institute for Communicable Diseases (NICD), South Africa",
+        "editor_introduction": "Prof. Lucille Blumberg",
+        "document_type": "public health and academic monograph",
+        "pages": 44,
+        "credibility": "authoritative"
+      },
+      {
+        "title": "WHO Guidelines for Malaria",
+        "publication_date": "2023-03-14",
+        "publisher": "World Health Organization",
+        "programme": "Global Malaria Programme",
+        "document_code": "WHO/UCN/GMP/2023.01",
+        "license": "CC BY-NC-SA 3.0 IGO",
+        "scope": "Global",
+        "credibility": "authoritative WHO guideline"
+      },
+      {
+        "title": "The Diagnosis and Treatment of Malaria in Pregnancy",
+        "guideline_number": "Green-top Guideline No. 54b",
+        "publisher": "Royal College of Obstetricians and Gynaecologists (RCOG)",
+        "publication_date": "2010-04",
+        "edition": "First edition",
+        "country_context": "United Kingdom",
+        "target_users": [
+          "obstetricians",
+          "physicians",
+          "infectious disease specialists",
+          "emergency clinicians"
+        ],
+        "credibility": "national clinical guideline"
+      },
+      {
+        "title": "Malaria: An Overview",
+        "authors": [
+          "Muluemebet Fikadu",
+          "Ephrem Ashenafi"
+        ],
+        "journal": "Infection and Drug Resistance",
+        "year": 2023,
+        "institution": "Addis Ababa University, Ethiopia",
+        "article_type": "review",
+        "license": "CC BY-NC 3.0",
+        "credibility": "peer-reviewed open-access"
+      },
+      {
+        "title": "Malaria Surveillance and Investigation Protocol",
+        "publication_date": "2025-02",
+        "issuing_body": "Bureau for Public Health – Office of Epidemiology and Prevention Services",
+        "division": "Division of Communicable Disease Epidemiology",
+        "jurisdiction": "West Virginia, United States",
+        "document_type": "Public health surveillance and investigation protocol",
+        "pages": 10,
+        "credibility": "state public health authority"
+      },
+      {
+        "document": "Chapter 1: Introduction",
+        "file_name": "chapter_1.pdf",
+        "chapter_focus": [
+          "history of malaria",
+          "global epidemiology",
+          "Plasmodium biology",
+          "life cycle",
+          "pathogenesis",
+          "antimalarial chemotherapy",
+          "drug resistance"
+        ],
+        "academic_context": "doctoral-level biomedical research",
+        "credibility": "peer-reviewed academic thesis content"
+      },
+      {
+        "title": "National Guidelines for Malaria Diagnosis, Treatment and Preventive Therapies",
+        "year": 2020,
+        "country": "United Republic of Tanzania",
+        "issuing_authority": "Ministry of Health, Community Development, Gender, Elderly and Children",
+        "programme": "National Malaria Control Programme (NMCP)",
+        "policy_alignment": "WHO Test, Treat and Track (T3)",
+        "scope": "national clinical and public health malaria management",
+        "pages": 148
+      },
+      {
+        "title": "Malaria",
+        "file_name": "Malaria (1).pdf",
+        "document_length_pages": 21,
+        "document_type": "academic teaching material",
+        "credibility": "standard parasitology reference"
+      },
+      {
+        "title": "Severe malaria",
+        "author": "Nicholas J. White",
+        "journal": "Malaria Journal",
+        "year": 2022,
+        "volume": 21,
+        "article_number": 284,
+        "doi": "10.1186/s12936-022-04301-8",
+        "article_type": "review",
+        "license": "Creative Commons Attribution 4.0",
+        "credibility": "high-impact peer-reviewed review"
+      },
+      {
+        "title": "Malaria: Prevention, Diagnosis, and Treatment",
+        "authors": [
+          "S. David Shahbodaghi",
+          "Nicholas A. Rathjen"
+        ],
+        "journal": "American Family Physician",
+        "volume": 106,
+        "issue": 3,
+        "pages": "270–278",
+        "publication_date": "2022-09",
+        "country_context": "United States",
+        "credibility": "peer-reviewed clinical guideline review"
+      },
+      {
+        "title": "Malaria: biochemical, physiological, diagnostic, and therapeutic updates",
+        "journal": "PeerJ",
+        "year": 2024,
+        "doi": "10.7717/peerj.17084",
+        "article_type": "narrative review",
+        "license": "CC BY 4.0",
+        "authors": [
+          "Enas El Saftawy",
+          "Mohamed F. Farag",
+          "Hossam H. Gebreil",
+          "Mohamed Abdelfatah",
+          "Basma Emad Aboulhoda",
+          "Mansour Alghamdi",
+          "Emad A. Albadawi",
+          "Marwa Ali Abd Elkhalek"
+        ],
+        "scope": [
+          "biochemical changes",
+          "physiological alterations",
+          "diagnostic advancements",
+          "therapeutic innovations"
+        ]
+      },
+      {
+        "title": "Malaria",
+        "author": "Dr. Piyush Tailor",
+        "designation": "Associate Professor",
+        "institution": "Government Medical College, Surat",
+        "document_type": "medical lecture slides",
+        "pages": 31,
+        "academic_level": "MBBS / undergraduate medicine"
+      },
+      {
+        "title": "Lesson 1: Introduction to Malaria",
+        "platform": "WikiEducator",
+        "last_modified": "2008-02-24",
+        "access_count": 103280,
+        "license": "Creative Commons Attribution Share-Alike",
+        "document_type": "educational course material",
+        "total_pages": 26
+      },
+      {
+        "title": "Malaria",
+        "file_name": "Malaria1222.pdf",
+        "document_type": "comprehensive reference document",
+        "total_pages": 57,
+        "content_style": "encyclopedic / academic",
+        "primary_focus": [
+          "biology",
+          "clinical medicine",
+          "public health",
+          "epidemiology",
+          "prevention",
+          "history"
+        ]
+      }
     ],
-    "severe_malaria": [
-      "Intravenous (IV) Artesunate — first-line for severe malaria",
-      "Followed by full course of ACT after patient can take oral medication",
-      "IV Quinine + Doxycycline — alternative if artesunate unavailable",
-      "Supportive care: IV fluids, blood transfusion, oxygen, seizure management"
+    "domain": "public_health",
+    "topic": "malaria",
+    "audience": [
+      "travellers",
+      "healthcare advisors",
+      "students",
+      "general public"
     ],
-    "radical_cure_relapse_prevention": [
-      "Primaquine — to eliminate P. vivax and P. ovale dormant liver stages (hypnozoites)",
-      "G6PD testing required before Primaquine to avoid haemolysis in deficient patients",
-      "Tafenoquine — newer alternative to Primaquine for radical cure (single dose)"
+    "overview": {
+      "definition": "Malaria is a life-threatening parasitic disease transmitted by female Anopheles mosquitoes, mainly in tropical and subtropical regions.",
+      "global_risk": {
+        "countries_at_risk": 91,
+        "annual_travellers_exposed": "125+ million",
+        "high_risk_group": "Non-immune travellers"
+      }
+    },
+    "causative_agent": {
+      "type": "protozoan parasite",
+      "genus": "Plasmodium",
+      "species": [
+        {
+          "name": "Plasmodium falciparum",
+          "severity": "most dangerous",
+          "notes": "Highest mortality and complications"
+        },
+        {
+          "name": "Plasmodium vivax",
+          "severity": "moderate",
+          "notes": "Causes relapses due to liver dormancy"
+        },
+        {
+          "name": "Plasmodium ovale",
+          "severity": "moderate",
+          "notes": "Can relapse"
+        },
+        {
+          "name": "Plasmodium malariae",
+          "severity": "low",
+          "notes": "Chronic infections possible"
+        },
+        {
+          "name": "Plasmodium knowlesi",
+          "severity": "potentially severe",
+          "notes": "Zoonotic, found in Southeast Asia forests"
+        }
+      ]
+    },
+    "transmission": {
+      "vector": "Female Anopheles mosquito",
+      "biting_time": "dusk to dawn",
+      "human_to_human": false,
+      "other_modes": [
+        "blood transfusion (rare)",
+        "congenital (rare)",
+        "blood transfusion",
+        "shared needles",
+        "congenital malaria",
+        "organ transplantation",
+        "congenital transmission"
+      ],
+      "primary": "Bite of infected female Anopheles mosquito",
+      "secondary": [
+        "blood transfusion",
+        "organ transplantation",
+        "shared contaminated needles",
+        "congenital (mother to fetus)",
+        "congenital transmission",
+        "rare local mosquito outbreaks"
+      ],
+      "mosquito_behavior": {
+        "active_time": "dusk to dawn",
+        "important_vectors": [
+          "Anopheles gambiae",
+          "Anopheles funestus"
+        ],
+        "vector_species_count": ">400 (≈30 major vectors)"
+      },
+      "primary_vector": "female Anopheles mosquito",
+      "other_possible_vectors": [
+        "Culex",
+        "Aedes",
+        "Mansonia"
+      ],
+      "mosquito_development_time_days": "≈10",
+      "infective_stage_to_humans": "sporozoite",
+      "secondary_transmission": [
+        "blood transfusion (rare)",
+        "organ transplantation",
+        "congenital transmission"
+      ]
+    },
+    "incubation_period": {
+      "minimum_days": 7,
+      "maximum_months": 3,
+      "note": "Symptoms may appear later for vivax and ovale species",
+      "plasmodium_falciparum": "9–14 days",
+      "plasmodium_vivax": "12–18 days",
+      "plasmodium_ovale": "12–18 days",
+      "plasmodium_malariae": "18–40 days",
+      "plasmodium_knowlesi": "10–12 days",
+      "modifying_factors": [
+        "chemoprophylaxis may delay symptoms",
+        "partial immunity may mask symptoms"
+      ],
+      "range_days": "7–14",
+      "species_variation": [
+        "shorter in P. falciparum",
+        "longer in P. vivax and P. malariae"
+      ]
+    },
+    "symptoms": {
+      "common": [
+        "fever",
+        "chills",
+        "headache",
+        "muscle pain",
+        "weakness",
+        "vomiting",
+        "diarrhoea"
+      ],
+      "severe": [
+        "coma",
+        "seizures",
+        "acute renal failure",
+        "pulmonary oedema",
+        "circulatory collapse",
+        "death"
+      ],
+      "emergency_rule": "Fever within 3 months of travel to a malaria-risk area is a medical emergency"
+    },
+    "high_risk_groups": [
+      "non-immune travellers",
+      "pregnant women",
+      "young children",
+      "elderly travellers",
+      "immunosuppressed individuals",
+      "visiting friends and relatives (VFR travellers)",
+      "children under 5",
+      "non-immune travelers",
+      "immunocompromised individuals",
+      "VFR travelers (visiting friends and relatives)",
+      "HIV-infected individuals",
+      "young children under 5",
+      "non-immune individuals",
+      "immunocompromised patients (HIV, chemotherapy)",
+      "splenectomized individuals",
+      "elderly"
     ],
-    "prevention_chemoprophylaxis": [
-      "Atovaquone-Proguanil (Malarone) — for travellers",
-      "Doxycycline — for travellers to resistant areas",
-      "Mefloquine — weekly prophylaxis option"
+    "geographical_distribution": {
+      "regions": [
+        "Sub-Saharan Africa",
+        "South Asia",
+        "Southeast Asia",
+        "Latin America",
+        "Caribbean (limited)"
+      ],
+      "altitude_limit_meters": 1500,
+      "seasonality": "highest after rainy season",
+      "urban_risk": "low except in Africa and parts of India"
+    },
+    "prevention_strategy": {
+      "principle": "ABCDE",
+      "details": {
+        "A": "Aware of risk and symptoms",
+        "B": "Avoid mosquito bites",
+        "C": "Chemoprophylaxis when appropriate",
+        "D": "Diagnosis and treatment immediately if fever occurs",
+        "E": "Avoid mosquito breeding environments"
+      }
+    },
+    "mosquito_bite_prevention": {
+      "repellents": [
+        "DEET",
+        "Icaridin",
+        "IR3535"
+      ],
+      "physical_measures": [
+        "insecticide-treated mosquito nets",
+        "protective clothing",
+        "window and door screens",
+        "air-conditioning"
+      ],
+      "chemical_measures": [
+        "aerosol insecticides",
+        "mosquito coils",
+        "electric vaporizers"
+      ]
+    },
+    "chemoprophylaxis": {
+      "general_rules": [
+        "No drug gives 100% protection",
+        "Adherence is critical",
+        "Continue drugs after leaving risk area"
+      ],
+      "common_drugs": [
+        "atovaquone–proguanil",
+        "doxycycline",
+        "mefloquine",
+        "chloroquine (limited use)"
+      ],
+      "post_travel_duration": {
+        "standard": "4 weeks",
+        "exception": "atovaquone–proguanil: 7 days"
+      },
+      "short_term_travel": {
+        "drug": "Doxycycline",
+        "dose": "100 mg daily (adults)",
+        "duration": "2 days before to 4 weeks after travel",
+        "contraindications": [
+          "pregnancy",
+          "children < 8 years"
+        ]
+      },
+      "long_term_exposure": {
+        "drug": "Mefloquine",
+        "dose": "250 mg weekly",
+        "contraindications": [
+          "psychiatric illness",
+          "seizure disorders",
+          "cardiac disease"
+        ]
+      }
+    },
+    "treatment": {
+      "diagnosis": [
+        "microscopy",
+        "rapid diagnostic test"
+      ],
+      "uncomplicated_falciparum": [
+        "artemether–lumefantrine",
+        "dihydroartemisinin–piperaquine",
+        "atovaquone–proguanil",
+        "artemether-lumefantrine (3 days)"
+      ],
+      "severe_malaria": {
+        "first_line": "intravenous artesunate",
+        "setting": "intensive care unit",
+        "treatment": "injectable antimalarials",
+        "preferred": [
+          "artemisinin or quinine",
+          "parenteral artesunate",
+          "intravenous quinine"
+        ],
+        "hospitalization": true,
+        "drug": "intravenous artesunate",
+        "step_down": "oral ACT after stabilization"
+      },
+      "chloroquine_sensitive": {
+        "drug": "chloroquine",
+        "regions": [
+          "Central America west of Panama Canal",
+          "Haiti",
+          "Dominican Republic",
+          "Middle East"
+        ]
+      },
+      "chloroquine_resistant_falciparum": [
+        "atovaquone–proguanil",
+        "artemether–lumefantrine",
+        "quinine + doxycycline/clindamycin",
+        "mefloquine (limited use)"
+      ],
+      "relapse_prevention": {
+        "drug": "primaquine",
+        "target": "hypnozoites",
+        "duration_days": 14
+      },
+      "drug_classes": [
+        "blood schizonticides",
+        "antifolates",
+        "antimitochondrials",
+        "redox agents"
+      ],
+      "falciparum": [
+        "artemisinin-based combination therapy (ACT)",
+        "quinine + doxycycline/clindamycin",
+        "atovaquone + proguanil"
+      ],
+      "vivax_ovale": [
+        "chloroquine",
+        "primaquine for hypnozoites",
+        {
+          "blood_stage": "ACT or chloroquine (sensitive areas)",
+          "radical_cure": {
+            "drug": "primaquine",
+            "duration_days": "7–14",
+            "requirement": "G6PD testing"
+          }
+        }
+      ],
+      "core_therapy": "artemisinin-based combination therapy (ACT)",
+      "indication": "especially for P. falciparum malaria",
+      "public_health_effect": [
+        "reduces disease severity",
+        "prevents deaths",
+        "reduces transmission"
+      ],
+      "p_vivax": "chloroquine 25 mg/kg + primaquine 14 days",
+      "p_falciparum": "severity and resistance based",
+      "mixed_infection": "treat as falciparum + primaquine",
+      "chloroquine": {
+        "mechanism": [
+          "enters parasite food vacuole",
+          "raises vacuolar pH",
+          "binds free heme",
+          "prevents heme polymerization",
+          "toxic heme accumulation → parasite lysis"
+        ],
+        "traditional_regimen": {
+          "day_1": "600 mg + 300 mg after 6 hours",
+          "day_2": "300 mg",
+          "day_3": "300 mg"
+        }
+      },
+      "drug_resistance": {
+        "noted_for": [
+          "chloroquine",
+          "quinine"
+        ]
+      },
+      "artemisinin_therapy": {
+        "source": "sweet wormwood (Artemisia annua)",
+        "derivatives": [
+          "artemether",
+          "arteether"
+        ],
+        "therapy_type": "ACT (artemisinin combination therapy)"
+      },
+      "other_antimalarials": [
+        "lumefantrine",
+        "mefloquine",
+        "sulfadoxine-pyrimethamine"
+      ],
+      "plasmodium_vivax_treatment": {
+        "blood_stage": [
+          "chloroquine",
+          "ACT"
+        ],
+        "radical_cure": {
+          "drug": "primaquine",
+          "dose": "30 mg once daily",
+          "duration_days": 14
+        }
+      },
+      "pregnancy": {
+        "first_trimester": "quinine + clindamycin",
+        "second_third_trimester": "ACT"
+      },
+      "general_principle": "combination therapy to prevent resistance",
+      "first_line": "artemisinin-based combination therapy (ACT)"
+    },
+    "standby_emergency_treatment": {
+      "indication": "Remote areas without quick medical access",
+      "rules": [
+        "Do not use same drug as prophylaxis",
+        "Seek medical care after SBET",
+        "Complete full course"
+      ],
+      "recommended_drugs": [
+        "artemether–lumefantrine",
+        "atovaquone–proguanil"
+      ]
+    },
+    "drug_resistance": {
+      "chloroquine_resistance": "widespread",
+      "mefloquine_resistance": [
+        "Cambodia",
+        "southeastern Myanmar",
+        "Thailand"
+      ],
+      "artemisinin_resistance": [
+        "Cambodia",
+        "Myanmar",
+        "Thailand",
+        "Viet Nam",
+        "Lao PDR"
+      ],
+      "definition": "parasite survival despite adequate drug exposure and absorption",
+      "causes": [
+        "incomplete treatment",
+        "low dosage",
+        "vomiting",
+        "poor absorption",
+        "poor drug quality"
+      ],
+      "why_act_effective": "multiple drugs act on different parasite targets",
+      "suspect_resistance_when": "symptoms persist after 72 hours of full treatment",
+      "falciparum": "multidrug resistance including artemisinin",
+      "vivax": "rising chloroquine resistance",
+      "drivers": [
+        "incomplete treatment",
+        "monotherapy",
+        "vector resistance"
+      ],
+      "mechanisms": [
+        {
+          "quinolines": "PfMDR1-mediated drug efflux",
+          "antifolates": "DHFR mutations",
+          "artemisinin": {
+            "marker": "PfKelch13",
+            "region": "Greater Mekong",
+            "africa_status": "limited spread"
+          }
+        },
+        "transporter gene mutations",
+        "altered drug targets",
+        "long drug half-life selective pressure"
+      ],
+      "major_regions": "Southeast Asia",
+      "key_drugs_with_resistance": [
+        "chloroquine",
+        "sulfadoxine-pyrimethamine",
+        "artemisinin partner drugs"
+      ],
+      "genetic_basis": {
+        "mutation_rate": "1.0–9.7 × 10⁻⁹ per bp per generation",
+        "markers": [
+          "PfCRT",
+          "PfMDR1",
+          "PfKelch13"
+        ]
+      },
+      "chloroquine": "widespread resistance",
+      "proguanil": "rapid resistance",
+      "artemisinin": {
+        "emergence": "since 2001",
+        "regions": [
+          "Southeast Asia",
+          "parts of Africa"
+        ]
+      },
+      "mitigation": [
+        "combination therapy",
+        "new drug development"
+      ]
+    },
+    "special_populations": {
+      "pregnancy": {
+        "risk": "high maternal and fetal mortality",
+        "recommended_prophylaxis": "mefloquine (where indicated)",
+        "contraindicated": [
+          "doxycycline",
+          "primaquine"
+        ],
+        "first_trimester": "Quinine (or Artesunate if severe)",
+        "second_third_trimester": "Artemether-Lumefantrine",
+        "prevention": "Intermittent Preventive Treatment in Pregnancy (IPTp)"
+      },
+      "children": {
+        "note": "Falciparum malaria is a medical emergency",
+        "prophylaxis": "weight-based dosing",
+        "contraindicated": "doxycycline under 8 years"
+      },
+      "immunosuppressed": {
+        "risk": "higher severity",
+        "advice": "strict prevention and early treatment"
+      },
+      "infants_and_children": {
+        "dose_adjustment": "weight-based dosing",
+        "high_risk": "children under 5 years"
+      },
+      "neonates": {
+        "approach": "specialist management"
+      },
+      "hiv_coinfection": {
+        "considerations": [
+          "drug-drug interactions",
+          "immune status"
+        ]
+      }
+    },
+    "countries_with_malaria": {
+      "count": "100+",
+      "examples": [
+        "India",
+        "Nigeria",
+        "Brazil",
+        "Indonesia",
+        "Thailand",
+        "Kenya",
+        "Papua New Guinea"
+      ]
+    },
+    "disease": "malaria",
+    "subdomain": "infectious_diseases",
+    "key_facts": {
+      "definition": "Malaria is a life-threatening parasitic disease transmitted to humans through the bite of infected female Anopheles mosquitoes.",
+      "global_population_at_risk": "3.2–3.4 billion",
+      "most_affected_region": "Sub-Saharan Africa",
+      "global_burden_2015": {
+        "cases": "214 million",
+        "deaths": "438,000",
+        "africa_share_cases": "89%",
+        "africa_share_deaths": "91%"
+      },
+      "global_risk_population_fraction": "≈50%",
+      "annual_cases_2015": "≈214 million",
+      "annual_deaths_2015": "≈438,000",
+      "africa_share_cases": ">80%",
+      "africa_share_deaths": ">90%",
+      "child_mortality_africa": "≈1 child per minute",
+      "vector_biting_time": "dusk to dawn",
+      "immunity": "rapidly wanes without repeated exposure",
+      "high_risk_travelers": "non-immune travelers",
+      "core_control_message": "early diagnosis and prompt treatment reduce severe disease and death",
+      "global_deaths_per_year": "≈500,000",
+      "most_affected_group": "children under 5 years",
+      "us_annual_cases": "≈2,000",
+      "us_case_type": "almost exclusively imported",
+      "primary_vector": "female Anopheles mosquito",
+      "most_lethal_species": "Plasmodium falciparum"
+    },
+    "etiology": {
+      "causative_agent": "Plasmodium (protozoan parasite)",
+      "species": [
+        "Plasmodium falciparum",
+        "Plasmodium vivax",
+        "Plasmodium ovale",
+        "Plasmodium malariae",
+        "Plasmodium knowlesi"
+      ],
+      "zoonotic_species": [
+        "Plasmodium knowlesi"
+      ],
+      "genus": "Plasmodium",
+      "known_species_total": ">200",
+      "pathogenic_to_humans": "≥13 species",
+      "major_human_species": [
+        "Plasmodium falciparum",
+        "Plasmodium vivax",
+        "Plasmodium malariae",
+        "Plasmodium ovale (curtisi, wallikeri)",
+        "Plasmodium knowlesi"
+      ],
+      "most_virulent": "Plasmodium falciparum",
+      "origin": "photosynthetic protozoa (dinoflagellates)"
+    },
+    "epidemiology": {
+      "countries_at_risk": 106,
+      "high_transmission_zones": [
+        "Sub-Saharan Africa",
+        "Papua New Guinea",
+        "Parts of South and Southeast Asia"
+      ],
+      "low_or_no_transmission_areas": [
+        "high altitudes",
+        "cold seasons",
+        "deserts (except oases)"
+      ],
+      "united_states": {
+        "status": "eradicated",
+        "annual_imported_cases": "1500–2000",
+        "common_source": "travel to endemic regions",
+        "special_cases": "airport malaria (rare)"
+      },
+      "countries_affected": "~100",
+      "most_affected_region": "Sub-Saharan Africa",
+      "top_burden_countries": [
+        "Nigeria",
+        "DR Congo",
+        "Ivory Coast",
+        "Mozambique",
+        "Niger"
+      ],
+      "global_cases_2018": "228 million",
+      "global_deaths_2018": "405,000",
+      "trend": "decline slowed in recent years",
+      "annual_cases": "350–500 million",
+      "annual_deaths": ">1 million",
+      "highest_mortality_region": "Sub-Saharan Africa",
+      "most_affected_group": "children",
+      "susceptible_age_group": "children under 15 years (≈65%)",
+      "pregnancy_risk": "≈125 million pregnant women at risk annually",
+      "predisposing_factors": [
+        "rainfall",
+        "high temperature",
+        "high humidity",
+        "stagnant water",
+        "rural environment"
+      ],
+      "population_at_risk": "≈50% of world population",
+      "us_trend": "increasing incidence since 2011",
+      "reason_for_us_increase": "increased international travel",
+      "eradication_status_us": "eliminated mid-20th century",
+      "global_cases_2024": "≈282 million",
+      "global_deaths_2024": "≈610,000",
+      "africa_burden": "≈95% of cases and deaths",
+      "high_risk_groups": [
+        "children under 5",
+        "pregnant women",
+        "HIV-infected individuals",
+        "non-immune travelers"
+      ]
+    },
+    "plasmodium_species_details": {
+      "falciparum": {
+        "severity": "most severe",
+        "mortality": "highest",
+        "distribution": "mostly Africa",
+        "special_notes": [
+          "causes cerebral malaria",
+          "major cause of death in children under 5",
+          "placental sequestration in pregnancy"
+        ]
+      },
+      "vivax": {
+        "distribution": "widest globally",
+        "unique_feature": "hypnozoite (dormant liver stage)",
+        "relapse": true,
+        "major_countries": [
+          "India",
+          "Ethiopia",
+          "Pakistan"
+        ],
+        "africa_prevalence": "low due to Duffy gene absence"
+      },
+      "ovale": {
+        "relapse": true,
+        "severity": "moderate"
+      },
+      "malariae": {
+        "pattern": "quartan malaria",
+        "severity": "mild to moderate",
+        "chronic_infection": true
+      },
+      "knowlesi": {
+        "origin": "monkeys",
+        "region": "Southeast Asia",
+        "risk": "can be fatal if untreated",
+        "misdiagnosis": "resembles P. malariae"
+      }
+    },
+    "life_cycle": {
+      "human_stages": [
+        "sporozoite",
+        "liver schizont",
+        "merozoite",
+        "ring form",
+        "trophozoite",
+        "schizont",
+        "gametocyte"
+      ],
+      "mosquito_stages": [
+        "gametocytes ingestion",
+        "zygote",
+        "ookinete",
+        "oocyst",
+        "sporozoites in salivary glands",
+        "gametocyte ingestion",
+        "sporozoite"
+      ],
+      "reproduction": {
+        "asexual": "human host",
+        "sexual": "mosquito host"
+      },
+      "key_points": [
+        "liver stage asymptomatic",
+        "hypnozoites only in vivax and ovale",
+        "blood-stage causes symptoms",
+        "gametocytes enable transmission"
+      ],
+      "phases": {
+        "asexual_phase": {
+          "name": "schizogony",
+          "host": "human",
+          "sites": [
+            "liver (exoerythrocytic)",
+            "red blood cells (erythrocytic)"
+          ]
+        },
+        "sexual_phase": {
+          "name": "sporogony",
+          "host": "mosquito",
+          "origin_of_gametocytes": "human RBCs"
+        }
+      },
+      "generation_pattern": "alternation of asexual and sexual generations",
+      "hosts": [
+        {
+          "definitive_host": "female Anopheles mosquito",
+          "intermediate_host": "human"
+        },
+        "human (asexual cycle)",
+        "mosquito (sexual cycle)"
+      ],
+      "stages": [
+        "infective sporozoites injected during mosquito bite",
+        "liver (pre-erythrocytic) stage with asexual multiplication",
+        "blood (erythrocytic) stage causing symptoms",
+        "gametocyte development in human blood",
+        "sexual reproduction and sporogony in mosquito",
+        {
+          "pre_erythrocytic": {
+            "location": "liver hepatocytes",
+            "infective_form": "sporozoite",
+            "outcome": "release of thousands of merozoites",
+            "hypnozoites": {
+              "present_in": [
+                "P. vivax",
+                "P. ovale"
+              ],
+              "dormancy_duration": "months to 4 years",
+              "role": "relapse"
+            }
+          },
+          "erythrocytic": {
+            "target": "red blood cells",
+            "cell_preference": {
+              "young_rbc": [
+                "P. vivax",
+                "P. ovale"
+              ],
+              "any_age_rbc": [
+                "P. falciparum",
+                "P. knowlesi"
+              ],
+              "senescent_rbc": [
+                "P. malariae"
+              ]
+            },
+            "forms": [
+              "trophozoite",
+              "schizont",
+              "merozoite"
+            ],
+            "clinical_significance": "causes symptoms"
+          },
+          "sexual": {
+            "gametocytes": "formed in human blood",
+            "mosquito_midgut": [
+              "gamete formation",
+              "zygote",
+              "ookinete",
+              "oocyst"
+            ],
+            "final_stage": "sporozoites migrate to salivary glands"
+          }
+        }
+      ],
+      "incubation": {
+        "falciparum_days": "≈10–14",
+        "other_species": "often longer",
+        "asymptomatic_phase": "liver stage"
+      },
+      "relapse_mechanism": {
+        "species": [
+          "P. vivax",
+          "P. ovale"
+        ],
+        "cause": "reactivation of hypnozoites"
+      },
+      "in_human": {
+        "infective_stage": "sporozoite",
+        "pre_erythrocytic_stage": {
+          "site": "liver",
+          "duration_days": {
+            "falciparum": 6,
+            "vivax": 8,
+            "ovale": 9,
+            "malariae": 15
+          },
+          "clinical_symptoms": "absent"
+        },
+        "erythrocytic_stage": {
+          "site": "red blood cells",
+          "forms": [
+            "ring",
+            "trophozoite",
+            "schizont"
+          ],
+          "pathological_stage": true
+        },
+        "hypnozoites": {
+          "present_in": [
+            "P. vivax",
+            "P. ovale"
+          ],
+          "role": "relapse"
+        }
+      },
+      "in_mosquito": {
+        "sexual_cycle": [
+          "gametocytes",
+          "gametes",
+          "zygote",
+          "ookinete",
+          "oocyst",
+          "sporozoites"
+        ],
+        "exflagellation": "male gametocyte produces 5–8 microgametes",
+        "transmission_ready_day": "≈10"
+      },
+      "major_cycles": [
+        "Asexual cycle in humans",
+        "Sexual cycle in Anopheles mosquito"
+      ],
+      "asexual_cycle_in_human": {
+        "liver_stage": {
+          "infective_event": "mosquito injects infected saliva",
+          "infective_form": "sporozoites",
+          "time_to_liver_invasion_minutes": "30–60",
+          "hepatocyte_events": [
+            "sporozoite → schizont",
+            "schizont → cryptozoites",
+            "rupture of hepatocyte"
+          ],
+          "replicative_process": "pre-erythrocytic schizogony",
+          "blood_release_form": "metacryptozoites"
+        },
+        "hypnozoite_stage": {
+          "species": [
+            "Plasmodium vivax",
+            "Plasmodium ovale"
+          ],
+          "description": "dormant liver stage",
+          "outcome": "reactivation causing relapse",
+          "relapse_duration": "up to 5 years"
+        },
+        "blood_stage": {
+          "entry_form": "metacryptozoites",
+          "erythrocytic_forms": [
+            "ring form (trophozoite)",
+            "trophozoite",
+            "schizont",
+            "merozoite"
+          ],
+          "hemoglobin_breakdown": {
+            "by_product": "hemozoin",
+            "appearance": "golden-brown to black granules"
+          },
+          "cycle_duration_hours": 48,
+          "sexual_forms": "gametocytes formed after several cycles"
+        }
+      },
+      "sexual_cycle_in_mosquito": {
+        "event": "female Anopheles bites infected human",
+        "mosquito_stomach": {
+          "digested_forms": "all parasite stages except gametocytes",
+          "surviving_form": "gametocyte"
+        },
+        "final_infective_form": "sporozoites"
+      },
+      "cycle_in_brief": {
+        "mosquito_to_liver": [
+          "sporozoites",
+          "schizonts",
+          "cryptozoites",
+          "metacryptozoites",
+          "hypnozoites"
+        ],
+        "liver_to_rbc": [
+          "trophozoites",
+          "merozoites",
+          "gametocytes"
+        ],
+        "human_to_mosquito": [
+          "gametocytes",
+          "sporozoites"
+        ]
+      },
+      "human_liver_stage": {
+        "infective_form": "sporozoite",
+        "site": "hepatocytes",
+        "duration_days": "5–25",
+        "events": [
+          "asymptomatic replication",
+          "formation of thousands of merozoites"
+        ],
+        "hypnozoites": {
+          "present_in": [
+            "P. vivax",
+            "P. ovale"
+          ],
+          "role": "cause relapse months to years later"
+        }
+      },
+      "human_blood_stage": {
+        "infective_form": "merozoite",
+        "rbc_cycle_hours": "24–72",
+        "replication_output": "16–32 merozoites per RBC",
+        "symptom_trigger": "rupture of infected RBCs"
+      },
+      "mosquito_stage": {
+        "ingested_form": "gametocytes",
+        "sexual_reproduction": true,
+        "final_form": "sporozoites in salivary glands",
+        "sporogony_duration_days": "10–14"
+      }
+    },
+    "clinical_features": {
+      "common_symptoms": [
+        "headache",
+        "fever",
+        "chills",
+        "sweats",
+        "fatigue",
+        "myalgia",
+        "arthralgia",
+        "nausea",
+        "vomiting",
+        "diarrhea"
+      ],
+      "less_common_symptoms": [
+        "nausea",
+        "vomiting",
+        "diarrhea",
+        "jaundice",
+        "anorexia"
+      ],
+      "fever_pattern": {
+        "falciparum": "irregular",
+        "vivax_ovale": "every 48 hours",
+        "malariae": "every 72 hours",
+        "knowlesi": "every 24 hours",
+        "general": "high-grade fever with chills",
+        "stages": [
+          "cold stage (shivering)",
+          "hot stage (fever)",
+          "sweating stage"
+        ],
+        "plasmodium_vivax": "classically alternate-day fever",
+        "plasmodium_falciparum": "continuous fever"
+      },
+      "common": [
+        "fever",
+        "chills",
+        "headache",
+        "myalgia",
+        "fatigue"
+      ],
+      "fever_patterns": {
+        "falciparum": "irregular",
+        "vivax_ovale": "48 hours",
+        "malariae": "72 hours",
+        "knowlesi": "24 hours"
+      },
+      "atypical": [
+        "diarrhea",
+        "abdominal pain",
+        "anemia",
+        "splenomegaly"
+      ],
+      "benign_malaria": {
+        "symptoms": [
+          "periodic fever",
+          "rigor",
+          "anemia",
+          "splenomegaly",
+          "headache",
+          "nausea",
+          "vomiting"
+        ],
+        "febrile_paroxysm_stages": [
+          "cold stage (15–60 min)",
+          "hot stage (2–6 hours, up to 41°C)",
+          "sweating stage"
+        ]
+      },
+      "incubation_period_days": {
+        "plasmodium_vivax": "14 (8–31)",
+        "plasmodium_falciparum": "12 (8–14)",
+        "plasmodium_ovale": "14 (8–31)",
+        "plasmodium_malariae": "28 (18–40)"
+      },
+      "uncomplicated_malaria": [
+        "fever >37.5°C",
+        "headache",
+        "rigors (cold shivers/hot sweats)",
+        "myalgia/arthralgia",
+        "nausea, vomiting, diarrhea",
+        "loss of appetite",
+        "lethargy"
+      ],
+      "severe_malaria": [
+        "impaired consciousness",
+        "inability to sit or stand",
+        "multiple convulsions",
+        "respiratory distress",
+        "circulatory collapse",
+        "jaundice",
+        "pulmonary edema",
+        "ARDS",
+        "hemoglobinuria"
+      ],
+      "symptoms": [
+        "fever",
+        "chills",
+        "sweats",
+        "headache",
+        "muscle pain",
+        "nausea",
+        "vomiting",
+        "diarrhoea",
+        "cough",
+        "general malaise"
+      ],
+      "signs": [
+        "jaundice",
+        "pallor",
+        "splenomegaly",
+        "respiratory distress",
+        "altered consciousness",
+        "hepatomegaly"
+      ],
+      "high_risk_population": [
+        "children under 5",
+        "non-immune individuals"
+      ],
+      "early_symptoms": [
+        "flu-like symptoms"
+      ],
+      "other_symptoms": [
+        "headache",
+        "joint pain"
+      ]
+    },
+    "complications": [
+      {
+        "neurological": [
+          "cerebral malaria",
+          "seizures",
+          "coma"
+        ],
+        "metabolic": [
+          "hypoglycemia",
+          "lactic acidosis"
+        ],
+        "renal": [
+          "acute renal failure",
+          "blackwater fever"
+        ],
+        "respiratory": [
+          "non-cardiogenic pulmonary edema"
+        ],
+        "hematologic": [
+          "severe anemia",
+          "hemolysis",
+          "coagulopathy"
+        ],
+        "mortality_notes": {
+          "cerebral_malaria": "15% children, 20% adults even with treatment",
+          "pulmonary_edema": "up to 80% fatal in pregnancy"
+        }
+      },
+      "severe anemia",
+      "hemolytic jaundice",
+      "hypoglycemia",
+      "blackwater fever",
+      "acute renal failure",
+      "cerebral malaria",
+      "pulmonary edema",
+      "pneumonia",
+      "coagulopathy",
+      "bleeding tendency",
+      "shock",
+      {
+        "cerebral_malaria": {
+          "cause": "capillary blockage in brain",
+          "outcomes": [
+            "seizures",
+            "coma",
+            "death within 48 hours if untreated",
+            "long-term neurological damage"
+          ]
+        },
+        "respiratory": {
+          "condition": "acute respiratory distress syndrome",
+          "mortality": "≈40% in adults"
+        },
+        "renal": [
+          "acute kidney failure",
+          "blackwater fever"
+        ],
+        "pregnancy_related": [
+          "miscarriage",
+          "stillbirth",
+          "low birth weight",
+          "infant mortality"
+        ]
+      }
+    ],
+    "immunity_and_genetics": {
+      "partial_immunity": "develops after repeated exposure",
+      "protective_traits": [
+        "sickle cell trait",
+        "thalassemia",
+        "hemoglobin C",
+        "hemoglobin E",
+        "G6PD deficiency",
+        "absence of Duffy gene",
+        "ovalocytosis"
+      ]
+    },
+    "diagnosis": {
+      "gold_standard": "microscopy (thick and thin blood films)",
+      "other_methods": [
+        "rapid diagnostic tests (RDT)",
+        "PCR",
+        "serology (IFA, ELISA)"
+      ],
+      "methods": [
+        {
+          "thick_smear": "high sensitivity",
+          "thin_smear": [
+            "species identification",
+            "parasitaemia estimation"
+          ],
+          "rdt": {
+            "best_for": "P. falciparum",
+            "limitations": [
+              "heat sensitivity",
+              "pfhrp2 deletions",
+              "no parasite count"
+            ]
+          },
+          "pcr": "reference standard for low parasitaemia",
+          "serology": "not for acute diagnosis"
+        },
+        "microscopic examination of stained blood smears",
+        "rapid diagnostic tests (RDTs)",
+        "molecular techniques (PCR)",
+        "LAMP for low parasitaemia detection"
+      ],
+      "diagnostic_principles": [
+        "parasite confirmation essential",
+        "repeat testing if suspicion remains",
+        "parasites do not exclude co-infection"
+      ],
+      "recommendation": "Test all flu-like illness after travel to malaria risk areas regardless of season or prophylaxis use.",
+      "principle": "parasite-based confirmation before treatment whenever possible",
+      "core_rule": "Treat any malaria in pregnancy as an emergency",
+      "rdt_limitations": [
+        "miss low parasitaemia",
+        "reduced sensitivity for P. vivax"
+      ],
+      "exclusion_rule": "three negative blood films 12–24 hours apart rule out malaria",
+      "important_notes": [
+        "prophylaxis does not exclude malaria",
+        "parasites may be sequestered in placenta",
+        "low parasitaemia does not exclude severe disease"
+      ],
+      "clinical_diagnosis": {
+        "accuracy": "low",
+        "reason": "symptom overlap with other tropical diseases"
+      },
+      "laboratory_methods": {
+        "microscopy": "blood smear parasite detection",
+        "rdt": {
+          "targets": [
+            "HRP-2",
+            "LDH",
+            "aldolase"
+          ]
+        },
+        "molecular": {
+          "pcr": "high sensitivity",
+          "limitation": "high cost, research use"
+        },
+        "emerging": [
+          "dielectrophoretic detection",
+          "magnetophoretic detection",
+          "biosensor-based methods"
+        ]
+      },
+      "rapid_diagnostic_tests": {
+        "target_antigens": [
+          "HRP2"
+        ],
+        "limitations": [
+          "false negatives",
+          "HRP2/3 gene deletions",
+          "detects only P. falciparum and P. vivax",
+          "no parasite density",
+          "must be used with microscopy in US",
+          "cannot quantify parasitemia",
+          "HRP2 persistence",
+          "HRP2 gene deletions"
+        ],
+        "role": "adjunctive only",
+        "advantages": [
+          "fast",
+          "high sensitivity",
+          "high negative predictive value"
+        ],
+        "fda_approved_test": "BinaxNOW",
+        "targets": [
+          "HRP2",
+          "pLDH",
+          "aldolase"
+        ]
+      },
+      "molecular_methods": [
+        "PCR",
+        "qPCR",
+        "ddPCR"
+      ],
+      "diagnostic_rule": "laboratory confirmation required due to nonspecific symptoms",
+      "recommended_methods": [
+        "malaria rapid diagnostic tests (mRDTs)",
+        "light microscopy (Giemsa-stained blood smear)"
+      ],
+      "diagnostic_rules": [
+        "No treatment without confirmation",
+        "Microscopy preferred at hospital level",
+        "mRDT preferred at community and primary care level"
+      ],
+      "common_rdt_antigens": [
+        "HRP2",
+        "pLDH"
+      ],
+      "limitations": [
+        "HRP2 gene deletions",
+        "false negatives at low parasitemia"
+      ],
+      "thin_smear": [
+        "species identification",
+        "parasite density",
+        "species identification and parasite density"
+      ],
+      "thick_smear": "parasite detection",
+      "rdt": {
+        "advantages": "rapid, field use",
+        "limitations": "no parasite count"
+      },
+      "molecular": [
+        {
+          "methods": [
+            "PCR",
+            "QT-NASBA"
+          ],
+          "accuracy": "higher than microscopy"
+        },
+        "PCR",
+        {
+          "PCR": {
+            "sensitivity": "highest",
+            "use": "reference labs and returning travellers"
+          }
+        }
+      ],
+      "emergency_rule": "do not delay treatment",
+      "essential_tests": [
+        "thin blood smear (species + stage)",
+        "thick blood smear (density)",
+        "full blood count",
+        "blood glucose",
+        "lactate"
+      ],
+      "prognostic_markers": [
+        ">20% pigment-containing parasites",
+        ">5% pigment-containing neutrophils",
+        "low platelet count"
+      ],
+      "limitations_of_rdt": [
+        "no parasite quantification",
+        "persistent positivity after clearance"
+      ],
+      "rule_out_criteria": "three negative smears 12 hours apart",
+      "parasitological": [
+        "peripheral blood smear",
+        "thick smear",
+        "thin smear"
+      ],
+      "serology": [
+        "IgM antibody for P. vivax",
+        "IgM antibody for P. falciparum"
+      ],
+      "clinical_suspicion": [
+        "fever with travel or residence in endemic area",
+        "pallor in children",
+        "hemoglobin <8 g/dL"
+      ],
+      "detection_limit": "≈100 parasites/µL"
+    },
+    "prevention": {
+      "vector_control": [
+        "insecticide-treated nets (ITN)",
+        "indoor residual spraying",
+        "larval control",
+        {
+          "insecticide_treated_nets": {
+            "pyrethroid_only_llins": {
+              "recommendation": "strong",
+              "evidence_certainty": "high",
+              "use_case": "areas with ongoing malaria transmission"
+            },
+            "pyrethroid_pbo_llins": {
+              "recommendation": "conditional",
+              "evidence_certainty": "moderate",
+              "use_case": "areas with pyrethroid resistance",
+              "notes": [
+                "higher cost",
+                "reduced wash durability of PBO"
+              ]
+            },
+            "pyrethroid_chlorfenapyr_llins": {
+              "recommendation": "strong",
+              "evidence_certainty": "moderate",
+              "use_case": "areas with pyrethroid resistance",
+              "status": "preferred over pyrethroid-only LLINs"
+            },
+            "pyrethroid_pyriproxyfen_llins": {
+              "recommendation": "conditional",
+              "evidence_certainty": "moderate",
+              "use_case": "areas with pyrethroid resistance",
+              "limitations": [
+                "poor cost-effectiveness",
+                "coverage concerns"
+              ]
+            }
+          },
+          "indoor_residual_spraying": {
+            "standard_setting": {
+              "recommendation": "strong",
+              "evidence_certainty": "low",
+              "requirements": [
+                "indoor-feeding vectors",
+                "sprayable structures",
+                "susceptible vectors"
+              ]
+            },
+            "humanitarian_emergencies": {
+              "recommendation": "conditional",
+              "evidence_certainty": "very low"
+            }
+          },
+          "co_deployment_itn_irs": {
+            "recommendation": "against",
+            "rationale": "priority should be optimal coverage of one intervention"
+          },
+          "supplementary_measures": {
+            "larviciding": {
+              "recommendation": "conditional",
+              "use_case": "few, fixed, findable breeding sites"
+            },
+            "house_screening": {
+              "recommendation": "conditional",
+              "evidence_certainty": "low to moderate"
+            },
+            "space_spraying": {
+              "recommendation": "against",
+              "reason": "short-lived effect, low impact"
+            },
+            "topical_repellents": {
+              "recommendation": "against for community control",
+              "note": "may provide individual protection"
+            }
+          }
+        },
+        {
+          "methods": [
+            "insecticide-treated nets",
+            "indoor residual spraying"
+          ],
+          "itn_insecticides": [
+            "pyrethroids",
+            "pyrethroid + piperonyl butoxide (PBO)"
+          ],
+          "irs_insecticide_classes": [
+            "pyrethroids",
+            "carbamates",
+            "organophosphates",
+            "neonicotinoids"
+          ]
+        },
+        "mosquito nets",
+        "DDT spraying",
+        "repellents",
+        "larval source management",
+        "house screening"
+      ],
+      "chemoprophylaxis": [
+        true,
+        "mefloquine",
+        "doxycycline",
+        "atovaquone-proguanil"
+      ],
+      "pregnancy_specific": "intermittent preventive treatment (IPTp)",
+      "individual": [
+        "insecticide-treated bed nets",
+        "chemoprophylaxis",
+        "standby emergency treatment"
+      ],
+      "population": [
+        "vector control",
+        "residual spraying",
+        "larval control"
+      ],
+      "community_level": [
+        "vector control",
+        "indoor residual spraying (IRS)",
+        "long-lasting insecticidal nets (LLINs)"
+      ],
+      "individual_level": [
+        "bed nets",
+        "repellents",
+        "window and door screens",
+        "coils and sprays",
+        "chemoprophylaxis for travelers"
+      ],
+      "preventive_chemotherapies": {
+        "iptp": {
+          "target": "pregnant women",
+          "drug": "sulfadoxine-pyrimethamine",
+          "start": "second trimester",
+          "minimum_doses": 3,
+          "recommendation": "strong"
+        },
+        "pmc": {
+          "target": "young children in perennial transmission areas",
+          "recommendation": "conditional",
+          "delivery_platforms": [
+            "EPI",
+            "community health workers"
+          ]
+        },
+        "smc": {
+          "target": "children in seasonal transmission areas",
+          "drug_regimen": "SP + amodiaquine",
+          "recommendation": "strong"
+        },
+        "iptsc": {
+          "target": "school-aged children",
+          "recommendation": "conditional"
+        },
+        "pdmc": {
+          "target": "children discharged after severe anemia",
+          "recommendation": "conditional"
+        }
+      },
+      "vaccination": {
+        "rts_s_as01": {
+          "recommendation": "strong",
+          "target_group": "children from 5 months",
+          "schedule": "4-dose (or 5-dose seasonal)",
+          "use": "part of integrated malaria control"
+        }
+      },
+      "travel_risk_assessment": [
+        "destination",
+        "season",
+        "itinerary"
+      ],
+      "highest_risk_regions": [
+        "sub-Saharan Africa",
+        "Indian subcontinent",
+        "Southeast Asia"
+      ],
+      "seasonal_risk": "highest during and just after rainy season",
+      "mosquito_avoidance": [
+        "insecticide-treated bed nets",
+        "protective clothing",
+        "permethrin-treated clothing",
+        "window screens"
+      ],
+      "repellents": {
+        "recommended": [
+          "DEET 20–30%",
+          "picaridin 20%"
+        ],
+        "note": "higher concentrations do not increase protection"
+      },
+      "chemoprophylaxis_principle": "all travelers to endemic regions should receive prophylaxis",
+      "chemoprophylaxis_options": {
+        "chloroquine_sensitive_areas": [
+          "chloroquine",
+          "hydroxychloroquine"
+        ],
+        "chloroquine_resistant_areas": [
+          "atovaquone-proguanil",
+          "doxycycline",
+          "mefloquine"
+        ],
+        "vivax_dominant_areas": [
+          "primaquine",
+          "tafenoquine"
+        ]
+      },
+      "vaccine": {
+        "status": "WHO-recommended",
+        "name": "RTS,S",
+        "target": "children in endemic areas",
+        "note": "adjunct to other preventive measures"
+      },
+      "environmental_control": [
+        "water management",
+        "guppy fish",
+        "oil covering stagnant water"
+      ],
+      "personal_protection": [
+        "insecticide-treated bed nets",
+        "repellents (DEET, picaridin)",
+        "protective clothing"
+      ],
+      "intermittent_preventive_therapy": [
+        "pregnant women",
+        "infants",
+        "seasonal childhood malaria"
+      ]
+    },
+    "vaccine": {
+      "name": "RTS,S (Mosquirix)",
+      "approved": 2015,
+      "target_group": "children 6 weeks–17 months",
+      "status": "WHO review and pilot implementation"
+    },
+    "travel_malaria": {
+      "incubation_in_travelers": "9–14 days (can be months)",
+      "most_cases": "within 30 days after return",
+      "most_common_species": [
+        "Plasmodium falciparum",
+        "Plasmodium vivax"
+      ],
+      "main_risk_factor": "no or poor chemoprophylaxis"
+    },
+    "global_progress": {
+      "since_2000": {
+        "incidence_reduction": "37%",
+        "mortality_reduction": "60%",
+        "child_deaths_reduction": "65%"
+      },
+      "elimination_milestones": [
+        "Europe reported zero indigenous cases in 2015",
+        "57 countries reduced cases by ≥75%"
+      ]
+    },
+    "applicability": "India",
+    "program_objectives": [
+      "early diagnosis of malaria",
+      "prompt and complete treatment",
+      "prevention of severe malaria and deaths",
+      "prevention of malaria transmission",
+      "prevention of drug resistance"
+    ],
+    "diagnostic_policy": {
+      "suspected_case_definition": "All fever cases after ruling out other common causes",
+      "diagnostic_methods": [
+        "microscopy (peripheral blood smear)",
+        "rapid diagnostic test (RDT – monovalent or bivalent)"
+      ],
+      "policy_notes": [
+        "Presumptive single-dose chloroquine is stopped",
+        "If diagnosis is delayed, full chloroquine for 3 days may be given in high suspicion",
+        "All confirmed cases must receive full therapeutic dose"
+      ]
+    },
+    "diagnosis_flow": {
+      "microscopy_available_within_24h": {
+        "p_vivax": "Chloroquine 3 days + Primaquine 14 days",
+        "p_falciparum": {
+          "north_eastern_states": "ACT-AL 3 days + Primaquine single dose (day 2)",
+          "other_states": "ACT-SP 3 days + Primaquine single dose (day 2)"
+        },
+        "mixed_infection": {
+          "north_eastern_states": "ACT-AL 3 days + Primaquine 14 days",
+          "other_states": "ACT-SP 3 days + Primaquine 14 days"
+        },
+        "negative": "No antimalarial treatment"
+      },
+      "rdt_without_microscopy": {
+        "monovalent_rdt": {
+          "pf_positive": "Treat as P. falciparum (state-specific ACT)",
+          "negative_high_suspicion": "Chloroquine 25 mg/kg over 3 days"
+        },
+        "bivalent_rdt": {
+          "pv_positive": "Chloroquine 3 days + Primaquine 14 days",
+          "pf_positive": "ACT (state-specific) + Primaquine single dose",
+          "mixed": "ACT + Primaquine 14 days",
+          "negative": "No antimalarial"
+        }
+      }
+    },
+    "treatment_vivax": {
+      "chloroquine": {
+        "total_dose": "25 mg/kg over 3 days",
+        "schedule": [
+          "10 mg/kg day 1",
+          "10 mg/kg day 2",
+          "5 mg/kg day 3"
+        ]
+      },
+      "primaquine": {
+        "dose": "0.25 mg/kg daily for 14 days",
+        "contraindications": [
+          "pregnancy",
+          "infants < 1 year",
+          "G6PD deficiency"
+        ],
+        "note": "Must be given under supervision"
+      }
+    },
+    "treatment_falciparum": {
+      "north_eastern_states": {
+        "drug": "ACT-AL (Artemether–Lumefantrine)",
+        "duration": "3 days",
+        "primaquine": "0.75 mg/kg single dose on day 2",
+        "contraindications": [
+          "1st trimester pregnancy",
+          "children < 5 kg"
+        ]
+      },
+      "other_states": {
+        "drug": "ACT-SP (Artesunate + Sulfadoxine-Pyrimethamine)",
+        "duration": "3 days",
+        "primaquine": "0.75 mg/kg single dose on day 2",
+        "pregnancy_note": "Not in 1st trimester"
+      }
+    },
+    "treatment_mixed_infection": {
+      "policy": "Treat as falciparum malaria + full primaquine",
+      "regimen": "ACT (state-specific) + Primaquine 0.25 mg/kg daily for 14 days"
+    },
+    "treatment_pregnancy": {
+      "first_trimester": "Quinine 10 mg/kg three times daily for 7 days",
+      "second_third_trimester": {
+        "north_eastern_states": "ACT-AL",
+        "other_states": "ACT-SP"
+      },
+      "primaquine": "Contraindicated in all trimesters"
+    },
+    "severe_malaria": {
+      "definition": [
+        "altered consciousness",
+        "convulsions",
+        "severe anemia",
+        "renal failure",
+        "pulmonary edema",
+        "hypoglycemia",
+        "shock",
+        "bleeding",
+        "hyperparasitemia",
+        "Life-threatening falciparum infection",
+        "Malaria with life-threatening complications"
+      ],
+      "initial_management": {
+        "immediate_actions": [
+          "RDT + blood smear",
+          "start parenteral antimalarial",
+          "urgent referral"
+        ]
+      },
+      "parenteral_treatment_options": [
+        "Artesunate 2.4 mg/kg IV/IM at 0, 12, 24 hrs then daily",
+        "Artemether 3.2 mg/kg IM then 1.6 mg/kg daily",
+        "Arteether 150 mg IM daily (adults only)",
+        "Quinine 20 mg/kg loading then 10 mg/kg every 8 hrs"
+      ],
+      "follow_up_oral": {
+        "after_artemisinin": "Full course of ACT",
+        "after_quinine": "Quinine + doxycycline or clindamycin for 7 days"
+      },
+      "donts": [
+        "no corticosteroids",
+        "no mannitol",
+        "no heparin",
+        "no overhydration",
+        "avoid mefloquine in cerebral malaria"
+      ],
+      "features": [
+        "coma",
+        "repeated convulsions",
+        "severe anemia",
+        "renal failure",
+        "pulmonary edema",
+        "hypoglycemia",
+        "shock",
+        "hemoglobinuria"
+      ],
+      "prognostic_markers": {
+        "parasitaemia": {
+          "0.5%": "severe",
+          "2%": "very severe",
+          ">10%": "poor prognosis",
+          ">25%": "often fatal"
+        }
+      },
+      "clinical_features": [
+        "impaired consciousness",
+        "severe anemia",
+        "respiratory distress",
+        "hypoglycemia",
+        "renal failure",
+        "shock"
+      ],
+      "treatment": {
+        "first_line": "Injectable Artesunate",
+        "route": [
+          "intravenous",
+          "intramuscular"
+        ],
+        "follow_up": "full oral ACT after stabilization"
+      },
+      "management_principles": [
+        "emergency treatment",
+        "hospital admission",
+        "continuous monitoring"
+      ]
+    },
+    "referral_criteria": [
+      "fever persists > 24 hours",
+      "continuous vomiting",
+      "increasing headache",
+      "altered sensorium",
+      "convulsions",
+      "bleeding",
+      "jaundice",
+      "severe weakness",
+      "suspected severe anemia"
+    ],
+    "supportive_care": {
+      "paracetamol": {
+        "role": "symptomatic fever control",
+        "safe_in": "all ages including pregnancy",
+        "note": "does not treat malaria itself"
+      }
+    },
+    "community_level_guidance": {
+      "first_dose": "always under supervision",
+      "vomiting_rule": "repeat dose if vomited within 15 minutes",
+      "education": [
+        "complete full treatment",
+        "return if fever persists",
+        "use insecticide-treated nets"
+      ]
+    },
+    "summary": {
+      "global_importance": "Major cause of morbidity and mortality in tropical regions",
+      "primary_transmission": "Female Anopheles mosquito bite (night-biting)",
+      "high_risk_parasite": "Plasmodium falciparum",
+      "asymptomatic_carriage": "Common in semi-immune populations",
+      "clinical_diagnosis": "Unreliable without parasite confirmation"
+    },
+    "plasmodium_species": {
+      "falciparum": {
+        "severity": "highest",
+        "mortality": "high",
+        "features": [
+          "cerebral malaria",
+          "severe anemia",
+          "renal failure",
+          "high parasitaemia",
+          "sequestration in deep organs"
+        ],
+        "no_hypnozoites": true
+      },
+      "vivax": {
+        "distribution": "widest",
+        "hypnozoites": true,
+        "relapse": true,
+        "special_notes": [
+          "infects reticulocytes",
+          "requires primaquine for radical cure",
+          "Duffy antigen dependent"
+        ]
+      },
+      "ovale": {
+        "hypnozoites": true,
+        "relapse": true,
+        "geography": "mainly West Africa"
+      },
+      "malariae": {
+        "chronic_infection": true,
+        "fever_pattern": "72-hour (quartan)",
+        "complication": "nephrotic syndrome"
+      },
+      "knowlesi": {
+        "zoonotic": true,
+        "reservoir": "monkeys",
+        "cycle_duration": "24 hours",
+        "region": "Southeast Asia",
+        "diagnostic_note": "often misidentified as P. malariae"
+      },
+      "human_species": [
+        {
+          "name": "Plasmodium vivax",
+          "cycle_hours": 48,
+          "features": [
+            "most common globally",
+            "relapses due to liver stages"
+          ]
+        },
+        {
+          "name": "Plasmodium ovale",
+          "cycle_hours": 48,
+          "features": [
+            "rare (<5%)",
+            "relapses",
+            "chronic course"
+          ]
+        },
+        {
+          "name": "Plasmodium malariae",
+          "cycle_hours": 72,
+          "features": [
+            "quartan fever",
+            "chronic infection"
+          ]
+        },
+        {
+          "name": "Plasmodium falciparum",
+          "cycle_hours": 48,
+          "features": [
+            "most common in Africa",
+            "causes severe and cerebral malaria",
+            "high mortality"
+          ]
+        }
+      ]
+    },
+    "pathophysiology": {
+      "fever_mechanism": "RBC lysis releasing hemozoin and cytokines",
+      "anemia_causes": [
+        "hemolysis",
+        "bone marrow suppression",
+        "hypersplenism"
+      ],
+      "cerebral_malaria": {
+        "mechanism": [
+          "cytoadherence",
+          "sequestration",
+          "microvascular obstruction",
+          "cytokine-mediated injury"
+        ],
+        "mortality_share": "≈80% of falciparum deaths"
+      },
+      "hypoglycemia": [
+        "parasite glucose consumption",
+        "cytokine effects",
+        "quinine-induced insulin release"
+      ],
+      "uncomplicated_malaria": {
+        "mechanism": [
+          "rupture of infected RBCs",
+          "macrophage ingestion of merozoites",
+          "TNF-α release"
+        ],
+        "fever_patterns": {
+          "tertian_48h": [
+            "P. vivax",
+            "P. ovale"
+          ],
+          "quartan_72h": [
+            "P. malariae"
+          ],
+          "irregular": [
+            "P. falciparum"
+          ]
+        }
+      },
+      "severe_malaria": {
+        "key_processes": [
+          "cytoadherence",
+          "rosetting",
+          "sequestration"
+        ],
+        "molecular_basis": {
+          "virulence_proteins": [
+            "PfEMP1",
+            "rifin",
+            "stevor"
+          ],
+          "knobs": "PfEMP1-mediated protrusions on infected RBCs",
+          "endothelial_receptors": [
+            "CD36",
+            "ICAM-1",
+            "CSA",
+            "TSP",
+            "P-selectin",
+            "protein C receptor"
+          ]
+        },
+        "cerebral_malaria": {
+          "mechanism": "binding of parasitized RBCs to brain endothelium",
+          "outcome": "microvascular obstruction and hypoxia"
+        },
+        "toxin_mediated_damage": {
+          "toxin": "glycosylphosphatidylinositol (GPI)",
+          "effect": "excess cytokine production",
+          "result": [
+            "high-grade fever",
+            "bone marrow suppression",
+            "endothelial damage"
+          ]
+        }
+      },
+      "key_event": "sequestration of parasitized erythrocytes",
+      "mechanisms": [
+        "PfEMP1-mediated cytoadherence",
+        "microvascular obstruction",
+        "tissue hypoxia",
+        "release of toxic haem products"
+      ],
+      "not_supported": [
+        "primary cytokine storm",
+        "murine cerebral malaria models"
+      ],
+      "key_mechanisms": [
+        "destruction of red blood cells",
+        "bone marrow suppression",
+        "microvascular obstruction",
+        "immune activation"
+      ],
+      "falciparum_specific": {
+        "adhesion_proteins": "PfEMP1 knobs",
+        "effects": [
+          "sequestration in capillaries",
+          "organ hypoxia",
+          "cerebral malaria",
+          "placental malaria"
+        ]
+      },
+      "anemia_mechanism": [
+        "hemolysis of infected RBCs",
+        "hemolysis of uninfected RBCs",
+        "reduced erythropoiesis"
+      ]
+    },
+    "special_conditions": {
+      "blackwater_fever": {
+        "mechanism": "massive hemolysis",
+        "features": [
+          "dark urine",
+          "jaundice",
+          "renal failure"
+        ],
+        "mortality": "high"
+      },
+      "hyperreactive_malaria_splenomegaly": {
+        "immune_mediated": true,
+        "IgM_levels": "very high",
+        "treatment": "ACT + long-term prophylaxis"
+      },
+      "burkitts_lymphoma": {
+        "association": "chronic malaria + EBV",
+        "common_region": "sub-Saharan Africa",
+        "tumor_type": "B-cell"
+      },
+      "nephrotic_syndrome": {
+        "species": "P. malariae",
+        "mechanism": "immune complex glomerulonephritis"
+      },
+      "pregnancy": {
+        "safe_drugs": [
+          "chloroquine",
+          "quinine"
+        ],
+        "contraindicated": [
+          "primaquine",
+          "doxycycline",
+          "halofantrine"
+        ]
+      },
+      "epilepsy": "avoid mefloquine",
+      "cardiac_disease": "avoid halofantrine",
+      "renal_failure": "dose adjustment after day 3"
+    },
+    "vaccination": {
+      "name": "RTS,S (Mosquirix)",
+      "status": "phase 4",
+      "target": "children in endemic areas",
+      "limitations": "partial protection"
+    },
+    "taxonomy": {
+      "kingdom": "Protista",
+      "phylum": "Apicomplexa",
+      "class": "Sporozoa",
+      "order": "Haemosporida",
+      "genus": "Plasmodium",
+      "notes": [
+        "Previously grouped under sporozoa",
+        "Characterized by apical complex for host cell penetration",
+        "Obligate intracellular parasites"
+      ]
+    },
+    "human_malaria_species": {
+      "plasmodium_vivax": {
+        "disease_name": "Benign tertian malaria",
+        "features": [
+          "hypnozoites present",
+          "relapsing malaria",
+          "typical rigor"
+        ]
+      },
+      "plasmodium_falciparum": {
+        "disease_name": "Malignant tertian malaria",
+        "severity": "most severe",
+        "fatality": "responsible for most malaria deaths",
+        "special_features": [
+          "cerebral malaria",
+          "sequestration in deep capillaries",
+          "knob formation on RBCs"
+        ],
+        "subgenus": "Laverania"
+      },
+      "plasmodium_malariae": {
+        "disease_name": "Benign quartan malaria",
+        "features": [
+          "72-hour fever cycle",
+          "renal complications possible",
+          "chronic infection"
+        ]
+      },
+      "plasmodium_ovale": {
+        "disease_name": "Benign tertian malaria",
+        "features": [
+          "mild disease",
+          "hypnozoites present",
+          "relapses"
+        ]
+      },
+      "plasmodium_knowlesi": {
+        "reservoir": "long-tailed macaque monkeys",
+        "human_infection": true,
+        "note": "zoonotic malaria"
+      }
+    },
+    "vector": {
+      "type": "female Anopheles mosquito",
+      "species_count": ">60 worldwide",
+      "india_vectors": [
+        "Anopheles culicifacies",
+        "Anopheles fluviatilis",
+        "Anopheles stephensi",
+        "Anopheles minimus",
+        "Anopheles philippinensis",
+        "Anopheles sundaicus"
+      ],
+      "feeding_behavior": {
+        "male": "feeds on plant juices",
+        "female": "requires blood meal for egg development"
+      },
+      "identified_species": ">400",
+      "effective_vectors": "~30",
+      "biting_time": "dusk to dawn",
+      "ecological_notes": [
+        "species distribution is stable",
+        "introduction of non-native vectors causes epidemics",
+        "eradication of indigenous vectors is difficult"
+      ]
+    },
+    "hosts": {
+      "definitive_host": "female Anopheles mosquito",
+      "intermediate_host": "human"
+    },
+    "human_infection_process": {
+      "infective_stage": "sporozoite",
+      "source": "mosquito salivary gland",
+      "average_sporozoites_injected": "10–15 (may reach hundreds)",
+      "initial_fate": [
+        "many destroyed by phagocytes",
+        "some reach liver hepatocytes"
+      ]
+    },
+    "pre_erythrocytic_stage": {
+      "location": "hepatocytes",
+      "time_to_reach_liver": "< 1 hour",
+      "schizont_size_micrometers": "45–60",
+      "merozoites_released": "2,000–50,000",
+      "pigment": "absent",
+      "rupture_time_days": "6–15",
+      "special_forms": {
+        "hypnozoites": {
+          "present_in": [
+            "P. vivax",
+            "P. ovale"
+          ],
+          "role": "cause relapse"
+        },
+        "absent_in": [
+          "P. falciparum",
+          "P. malariae"
+        ]
+      }
+    },
+    "erythrocytic_stage": {
+      "rbc_receptor": "glycophorin",
+      "entry_mechanism": "invagination",
+      "early_form": "ring form (young trophozoite)",
+      "nutrition": "hemoglobin digestion",
+      "waste_product": "hemozoin (malaria pigment)",
+      "schizont_content": "8–32 merozoites",
+      "cycle_effect": "progressive parasitemia and fever"
+    },
+    "malarial_pigment_characteristics": {
+      "plasmodium_vivax": "fine golden-brown dust",
+      "plasmodium_falciparum": "few solid black blocks",
+      "plasmodium_malariae": "coarse dark brown particles",
+      "plasmodium_ovale": "blackish-brown particles"
+    },
+    "malignant_tertian_malaria": {
+      "cause": "Plasmodium falciparum",
+      "major_forms": [
+        "cerebral malaria",
+        "algid malaria",
+        "septicemic malaria"
+      ],
+      "cerebral_malaria": {
+        "mortality": {
+          "children": "15%",
+          "adults": "20%"
+        },
+        "mechanism": [
+          "knob formation on RBCs",
+          "cytoadherence",
+          "capillary plugging",
+          "cerebral ischemia"
+        ]
+      }
+    },
+    "special_complications": {
+      "blackwater_fever": {
+        "definition": "malarial hemoglobinuria",
+        "associated_with": [
+          "falciparum malaria",
+          "quinine use",
+          "G6PD deficiency"
+        ],
+        "features": [
+          "dark urine",
+          "renal failure",
+          "circulatory collapse"
+        ]
+      },
+      "algid_malaria": {
+        "features": [
+          "shock",
+          "cold clammy skin",
+          "hypotension",
+          "vomiting",
+          "diarrhea"
+        ]
+      },
+      "septicemic_malaria": {
+        "mortality": "≈80%",
+        "feature": "multi-organ failure"
+      }
+    },
+    "transfusion_and_congenital_malaria": {
+      "transfusion_malaria": {
+        "incubation": "short",
+        "hypnozoites": false,
+        "relapse": false
+      },
+      "congenital_malaria": "transplacental merozoite transmission"
+    },
+    "anemia_mechanisms": [
+      "immune-mediated hemolysis",
+      "bone marrow suppression",
+      "splenic clearance",
+      "iron trapping in hemozoin",
+      "antimalarial drugs in G6PD deficiency"
+    ],
+    "laboratory_diagnosis": {
+      "gold_standard": "peripheral blood smear",
+      "thin_smear": {
+        "use": [
+          "species identification",
+          "parasite morphology"
+        ],
+        "stains": [
+          "Giemsa",
+          "Leishman",
+          "JSB",
+          "Field stain"
+        ]
+      },
+      "thick_smear": {
+        "sensitivity": "highest",
+        "detection_limit": "≈20 parasites/μL",
+        "examination_rule": "200 oil immersion fields before negative"
+      }
+    },
+    "advanced_diagnostics": {
+      "qbc": {
+        "principle": "acridine orange fluorescence",
+        "advantage": "rapid",
+        "limitation": "expensive"
+      },
+      "rapid_antigen_tests": {
+        "pf_hrp2": {
+          "target": "P. falciparum",
+          "limitations": [
+            "cannot detect other species",
+            "remains positive after cure"
+          ]
+        },
+        "dual_antigen_test": {
+          "targets": [
+            "PfHRP2",
+            "pLDH"
+          ],
+          "advantage": "detects mixed infections",
+          "limitation": "species differentiation incomplete"
+        }
+      },
+      "molecular": {
+        "dna_probe": "detects <10 parasites/μL",
+        "pcr": [
+          "species identification",
+          "drug resistance detection"
+        ]
+      }
+    },
+    "disease_overview": {
+      "name": "Malaria in pregnancy",
+      "definition": "A preventable and treatable parasitic disease caused by Plasmodium species, requiring a mosquito vector and a vertebrate host.",
+      "history": {
+        "earliest_records": "Chinese medical texts ~2700 BC",
+        "etiology_discovery": "Plasmodium identified in human blood in 1880",
+        "vector_role_elucidated": "Mosquito transmission clarified ~17 years later",
+        "etymology": "Italian 'mal' (bad) + 'aria' (air)"
+      },
+      "importance": "medical emergency",
+      "global_significance": "most important parasitic infection in humans",
+      "uk_imported_cases_per_year": "~1500",
+      "mortality_uk": "0.5–1%",
+      "dominant_species_uk": "Plasmodium falciparum",
+      "type": "vector-borne infectious disease",
+      "causative_agent": "protozoan parasites of genus Plasmodium",
+      "mode_of_transmission": "bite of infective female Anopheles mosquito",
+      "vector_requirement": "mosquito must have taken prior blood meal from infected person"
+    },
+    "causative_parasites": {
+      "human_species": [
+        "Plasmodium falciparum",
+        "Plasmodium vivax",
+        "Plasmodium ovale",
+        "Plasmodium malariae",
+        "Plasmodium knowlesi"
+      ],
+      "species_profiles": {
+        "falciparum": {
+          "virulence": "highest",
+          "dominant_region": "Africa",
+          "pathology": [
+            "rapid RBC invasion and destruction",
+            "severe anemia",
+            "central nervous system involvement",
+            "multi-organ failure"
+          ]
+        },
+        "vivax": {
+          "virulence": "generally lower",
+          "distribution": "widest",
+          "special_features": [
+            "hypnozoites (dormant liver stage)",
+            "relapsing malaria",
+            "risk of splenomegaly and splenic rupture"
+          ]
+        },
+        "ovale": {
+          "features": [
+            "hypnozoites",
+            "relapsing malaria",
+            "generally mild disease"
+          ]
+        },
+        "malariae": {
+          "features": [
+            "chronic infection",
+            "quartan fever pattern",
+            "renal complications possible"
+          ]
+        },
+        "knowlesi": {
+          "status": "fifth human malaria parasite",
+          "reservoir": "long-tailed macaque monkeys",
+          "region": "Southeast Asia",
+          "risk": "potentially lethal due to 24-hour replication cycle",
+          "diagnostic_issue": "often misidentified as P. malariae"
+        }
+      },
+      "species": [
+        "Plasmodium falciparum",
+        "Plasmodium vivax",
+        "Plasmodium ovale",
+        "Plasmodium malariae",
+        "Plasmodium knowlesi (rare)"
+      ],
+      "pregnancy_specific_pathophysiology": {
+        "falciparum": [
+          "placental sequestration",
+          "cytoadherence",
+          "rosetting",
+          "evasion of splenic clearance"
+        ],
+        "non_falciparum": "no placental sequestration"
+      }
+    },
+    "vector_biology": {
+      "vector": "female Anopheles mosquito",
+      "species_count": {
+        "recognized": "~460",
+        "vectors_of_human_malaria": "~60"
+      },
+      "african_major_vectors": [
+        "Anopheles gambiae",
+        "Anopheles arabiensis",
+        "Anopheles funestus"
+      ],
+      "transmission_requirements": [
+        "female blood feeding on vertebrates",
+        "mosquito immune tolerance allowing parasite development to salivary glands"
+      ]
+    },
+    "global_distribution": {
+      "origin": "P. falciparum likely originated in Africa",
+      "historical_trend": [
+        "global prevalence in early 1900s",
+        "decline after DDT introduction",
+        "eradication in Europe and America",
+        "resurgence in parts of Asia after program cessation"
+      ],
+      "current_status": "More than half of the world population remains at risk"
+    },
+    "africa_context": {
+      "drivers_of_high_transmission": [
+        "favorable climate",
+        "limited health infrastructure",
+        "poverty",
+        "drug and insecticide resistance",
+        "counterfeit antimalarials",
+        "high HIV prevalence",
+        "population movement and conflict"
+      ]
+    },
+    "south_africa_context": {
+      "historical_distribution": [
+        "Limpopo",
+        "Mpumalanga",
+        "KwaZulu-Natal",
+        "northern Gauteng"
+      ],
+      "control_history": [
+        "early larviciding and quinine",
+        "IRS with pyrethrum and later DDT",
+        "vector elimination successes",
+        "drug policy shifts due to resistance"
+      ],
+      "recent_strategies": [
+        "reintroduction of DDT",
+        "ACT adoption (artemether-lumefantrine)",
+        "goal of malaria elimination"
+      ]
+    },
+    "surveillance_and_research": {
+      "vcrl_functions": [
+        "vector identification",
+        "insecticide resistance monitoring",
+        "operational research",
+        "training and technical support",
+        "evaluation of new control methods"
+      ],
+      "drug_resistance_tracking": {
+        "methods": [
+          "clinical efficacy monitoring",
+          "molecular marker surveillance"
+        ],
+        "purpose": "early detection and timely policy change"
+      }
+    },
+    "special_topics": {
+      "sterile_insect_technique": {
+        "principle": "release of sterilized males to suppress vector populations",
+        "advantages": [
+          "non-chemical",
+          "resistance management",
+          "environmental protection"
+        ]
+      },
+      "odyssean_malaria": {
+        "definition": "malaria transmission outside endemic areas via transported mosquitoes",
+        "examples": [
+          "airport malaria",
+          "suitcase/baggage malaria",
+          "minibus or taxi-rank malaria"
+        ],
+        "risk": "higher mortality due to delayed diagnosis"
+      },
+      "elimination_challenge": {
+        "asymptomatic_carriers": true,
+        "submicroscopic_infections": true,
+        "emerging_tools": [
+          "LAMP"
+        ]
+      }
+    },
+    "guideline_principles": {
+      "evidence_framework": "GRADE",
+      "recommendation_types": [
+        "strong recommendation",
+        "conditional recommendation",
+        "good practice statement"
+      ],
+      "policy_rule": "Recommendations may be adapted nationally based on epidemiology and resources"
+    },
+    "case_management": {
+      "diagnosis": {
+        "rule": "All suspected cases must be parasitologically confirmed",
+        "methods": [
+          "microscopy",
+          "rapid diagnostic tests"
+        ],
+        "quality_requirement": "quality assurance mandatory"
+      },
+      "treatment_uncomplicated_falciparum": {
+        "first_line": "artemisinin-based combination therapy (ACT)",
+        "recommended_acts": [
+          "artemether-lumefantrine",
+          "artesunate-amodiaquine",
+          "artesunate-mefloquine",
+          "dihydroartemisinin-piperaquine",
+          "artesunate-sulfadoxine-pyrimethamine",
+          "artesunate-pyronaridine"
+        ],
+        "duration": "3 days"
+      },
+      "special_groups": {
+        "pregnancy_first_trimester": {
+          "recommended": "artemether-lumefantrine",
+          "contraindicated": [
+            "antifolate-containing ACTs"
+          ]
+        },
+        "young_children": {
+          "weight_below_5kg": "same mg/kg ACT dosing"
+        },
+        "hiv_coinfection": {
+          "avoid": [
+            "AS+SP with cotrimoxazole",
+            "AS+AQ with efavirenz"
+          ]
+        },
+        "non_immune_travellers": {
+          "treatment": "ACT"
+        }
+      },
+      "vivax_and_ovale_management": {
+        "blood_stage": {
+          "chloroquine_sensitive": "chloroquine or ACT",
+          "chloroquine_resistant": "ACT"
+        },
+        "relapse_prevention": {
+          "primaquine_14_day": {
+            "dose": "0.25 mg/kg/day",
+            "g6pd_testing": "required"
+          },
+          "primaquine_7_day": {
+            "dose": "0.5 mg/kg/day",
+            "benefit": "better adherence",
+            "recommendation": "conditional"
+          }
+        }
+      },
+      "severe_malaria": {
+        "first_line": "intravenous or intramuscular artesunate",
+        "minimum_duration": "24 hours",
+        "completion": "3-day ACT after oral tolerance",
+        "child_dosing": {
+          "below_20kg": "3 mg/kg per dose",
+          "others": "2.4 mg/kg per dose"
+        },
+        "pre_referral": {
+          "preferred": "IM artesunate",
+          "alternative": "rectal artesunate (children <6 years)"
+        }
+      }
+    },
+    "elimination_and_surveillance": {
+      "not_recommended": [
+        "mass testing and treatment (MTaT)",
+        "routine testing at points of entry"
+      ],
+      "conditionally_recommended": [
+        "targeted drug administration",
+        "reactive drug administration",
+        "reactive case detection and treatment",
+        "reactive indoor residual spraying"
+      ],
+      "surveillance_role": "core function in elimination and prevention of re-establishment"
+    },
+    "key_good_practice_statements": [
+      "Do not scale back vector control in areas with ongoing transmission",
+      "Use WHO-prequalified products only",
+      "First-line treatment drugs should not be used for chemoprevention",
+      "Fixed-dose combinations preferred over loose tablets"
+    ],
+    "effects_of_malaria_in_pregnancy": {
+      "maternal": [
+        "severe anaemia",
+        "hypoglycaemia",
+        "pulmonary oedema",
+        "acute respiratory distress syndrome",
+        "renal failure",
+        "shock",
+        "death"
+      ],
+      "fetal": [
+        "miscarriage",
+        "stillbirth",
+        "preterm birth",
+        "fetal growth restriction",
+        "low birth weight",
+        "congenital malaria"
+      ]
+    },
+    "risk_groups": [
+      "pregnant women with no immunity",
+      "immigrants visiting friends and relatives",
+      "women not taking prophylaxis",
+      "women with poor adherence to prophylaxis",
+      "women receiving incorrect advice"
+    ],
+    "definitions": {
+      "severe_malaria": {
+        "description": "Malaria with clinical or laboratory evidence of vital organ dysfunction",
+        "parasitaemia_threshold": "≥2% parasitised red blood cells",
+        "note": "parasitaemia may be lower in severe disease"
+      },
+      "uncomplicated_malaria": {
+        "definition": "<2% parasitaemia with no severity features"
+      },
+      "congenital_malaria": {
+        "definition": "transmission from mother to baby in utero or during delivery"
+      }
+    },
+    "severity_assessment": {
+      "importance": "guides treatment and predicts mortality",
+      "fatality_rates": {
+        "uncomplicated_falciparum": "~0.1%",
+        "severe_malaria_nonpregnant": "15–20%",
+        "severe_malaria_pregnant": "~50%"
+      }
+    },
+    "treatment_principles": {
+      "general": [
+        "admit all pregnant women with malaria",
+        "severe cases require ICU or HDU",
+        "do not delay treatment",
+        "seek specialist advice"
+      ],
+      "decision_factors": [
+        "disease severity",
+        "Plasmodium species",
+        "geographic resistance patterns",
+        "previous prophylaxis"
+      ],
+      "empiric_treatment": "start immediately if suspicion is high",
+      "hospitalization_indications": [
+        "severe malaria",
+        "children",
+        "pregnancy",
+        "immunocompromised",
+        "non-immune patients"
+      ]
+    },
+    "drug_treatment": {
+      "severe_malaria": {
+        "first_line": "intravenous artesunate",
+        "alternative": "intravenous quinine if artesunate unavailable",
+        "step_down": "switch to oral therapy when tolerated"
+      },
+      "uncomplicated_falciparum": {
+        "recommended": [
+          "oral quinine + clindamycin (7 days)",
+          "artemether-lumefantrine",
+          "atovaquone-proguanil"
+        ]
+      },
+      "non_falciparum": {
+        "vivax_ovale_malariae": "chloroquine",
+        "resistant_vivax": "treat as falciparum"
+      },
+      "contraindicated": [
+        "primaquine during pregnancy"
+      ]
+    },
+    "management_of_complications": {
+      "hypoglycaemia": {
+        "risk": "high, especially with quinine",
+        "management": "frequent glucose monitoring and correction"
+      },
+      "severe_anaemia": {
+        "management": "slow transfusion with packed cells"
+      },
+      "pulmonary_oedema": {
+        "prevention": "careful fluid balance",
+        "mortality": ">50%"
+      },
+      "convulsions": {
+        "treatment": "intravenous or rectal diazepam"
+      },
+      "secondary_infection": {
+        "action": "start broad-spectrum antibiotics"
+      }
+    },
+    "obstetric_management": {
+      "general_principles": [
+        "maternal life takes priority",
+        "prompt antimalarial treatment reduces fetal risk",
+        "uncomplicated malaria is not an indication for induction"
+      ],
+      "fetal_monitoring": [
+        "cardiotocography in severe disease",
+        "monitor fetal growth after recovery"
+      ],
+      "labour_and_delivery": [
+        "no routine induction",
+        "instrumental delivery if indicated",
+        "early caesarean role unproven"
+      ]
+    },
+    "post_recovery_care": {
+      "antenatal_follow_up": [
+        "monitor haemoglobin",
+        "monitor platelets",
+        "monitor glucose",
+        "serial fetal growth scans"
+      ],
+      "relapse_awareness": [
+        "higher with P. vivax and P. ovale",
+        "prompt blood film if fever recurs"
+      ]
+    },
+    "vertical_transmission": {
+      "risk_factors": [
+        "maternal infection at delivery",
+        "positive placental blood film"
+      ],
+      "neonatal_management": [
+        "blood films at birth",
+        "weekly blood films for 28 days"
+      ],
+      "note": "primaquine is unnecessary and unsafe in neonates"
+    },
+    "reporting_requirements": {
+      "uk_rule": "malaria in pregnancy is a notifiable disease",
+      "action": [
+        "report to public health authorities",
+        "send blood films to Malaria Reference Laboratory"
+      ],
+      "reporting_timeframe": "within 1 week",
+      "report_to": "local health department",
+      "cdc_reporting": "mandatory via WVEDSS"
+    },
+    "disease_identity": {
+      "name": "Malaria",
+      "definition": "A parasitic infection caused by Plasmodium species transmitted primarily through the bite of an infected female Anopheles mosquito.",
+      "etymology": "Italian 'mal aria' meaning bad air",
+      "regions": [
+        "tropical regions",
+        "subtropical regions"
+      ],
+      "public_health_importance": "Potentially fatal disease requiring rapid diagnosis, treatment, and reporting"
+    },
+    "global_burden": {
+      "cases_2019": "≈229 million",
+      "deaths_2019": "≈409,000",
+      "africa_case_share": "≈94%",
+      "africa_death_share": "≈94%",
+      "children_under_5_deaths": "≈67% of total malaria deaths",
+      "trend": {
+        "decline_until": "early 2010s",
+        "resurgence_since": 2014
+      }
+    },
+    "management_principles": {
+      "core_rules": [
+        "early diagnosis",
+        "prompt treatment",
+        "prevent progression to severe malaria"
+      ],
+      "who_recommendation": "use combination therapy for all malaria episodes"
+    },
+    "pharmacological_classes": {
+      "quinoline_derivatives": {
+        "examples": [
+          "chloroquine",
+          "amodiaquine",
+          "quinine",
+          "mefloquine",
+          "lumefantrine",
+          "primaquine"
+        ],
+        "mechanism": [
+          "inhibition of hemozoin formation",
+          "toxic free heme accumulation"
+        ],
+        "special_note": "primaquine active against liver stage and gametocytes"
+      },
+      "antifolates": {
+        "class_I": {
+          "target": "DHPS",
+          "example": "sulfadoxine"
+        },
+        "class_II": {
+          "target": "DHFR",
+          "examples": [
+            "proguanil",
+            "pyrimethamine"
+          ]
+        }
+      },
+      "artemisinin_derivatives": {
+        "examples": [
+          "artesunate",
+          "artemether",
+          "arteether",
+          "dihydroartemisinin"
+        ],
+        "mechanism": "heme-activated free radical damage to parasite proteins",
+        "property": "selective toxicity"
+      }
+    },
+    "vaccines": {
+      "categories": [
+        "pre-erythrocytic",
+        "erythrocytic",
+        "transmission-blocking"
+      ],
+      "rts_s_as01": {
+        "target": "Pf circumsporozoite protein",
+        "mechanism": "IgG and CD4+ T-cell response",
+        "who_status": "recommended",
+        "schedule": "4 doses",
+        "target_population": "children ≥5 months",
+        "regions": "moderate to high transmission areas"
+      },
+      "licensed": [
+        {
+          "name": "RTS,S (Mosquirix)",
+          "target": "children under 5",
+          "impact": "reduced malaria incidence and all-cause mortality"
+        },
+        {
+          "name": "R21/Matrix-M",
+          "efficacy": "≈77%",
+          "who_endorsement": 2023
+        }
+      ],
+      "future_research": [
+        "mRNA vaccines",
+        "blood-stage vaccines",
+        "transmission-blocking vaccines"
+      ]
+    },
+    "key_conclusion": {
+      "status": "malaria remains a major global killer",
+      "current_challenge": "drug and insecticide resistance",
+      "priority": "development of new antimalarials with novel mechanisms"
+    },
+    "global_and_us_context": {
+      "global_population_at_risk": "≈3.3 billion people",
+      "malaria_endemic_countries_2021": 84,
+      "trend": "global reduction since 2000 with residual risk",
+      "united_states_status": {
+        "classification": "non-endemic",
+        "annual_cases": "~2,000 (mostly imported)",
+        "recent_local_transmission": {
+          "year": 2023,
+          "states": [
+            "Florida",
+            "Texas",
+            "Maryland",
+            "Arkansas"
+          ],
+          "note": "small, isolated outbreaks"
+        }
+      },
+      "west_virginia_context": {
+        "annual_cases": "1–2",
+        "case_type": "travel-associated",
+        "risk_factor": "presence of competent Anopheles vectors"
+      }
+    },
+    "etiologic_agent": {
+      "genus": "Plasmodium",
+      "human_species": [
+        "Plasmodium falciparum",
+        "Plasmodium vivax",
+        "Plasmodium ovale",
+        "Plasmodium malariae",
+        "Plasmodium knowlesi"
+      ],
+      "most_severe_species": "Plasmodium falciparum",
+      "common_species": [
+        "Plasmodium vivax",
+        "Plasmodium falciparum"
+      ]
+    },
+    "reservoir": {
+      "primary": "Humans",
+      "note": "only significant reservoir for transmission"
+    },
+    "mode_of_transmission": {
+      "primary": "Bite of infected female Anopheles mosquito",
+      "secondary": [
+        "blood transfusion",
+        "organ or tissue transplantation",
+        "needle sharing",
+        "congenital (mother to child)"
+      ],
+      "sporogonic_cycle": {
+        "location": "mosquito",
+        "duration_days": "10–14",
+        "infective_stage": "sporozoites"
+      },
+      "transmission_requirements": [
+        "infective mosquito",
+        "susceptible human host",
+        "suitable environmental temperature"
+      ],
+      "temperature_constraints": {
+        "Plasmodium falciparum": "ceases below 20°C",
+        "Plasmodium vivax": "ceases below 16°C"
+      }
+    },
+    "period_of_communicability": {
+      "human_to_mosquito": {
+        "vivax_ovale": "gametocytes appear within 3 days",
+        "falciparum": "gametocytes appear after 10–14 days"
+      },
+      "duration_without_treatment": {
+        "plasmodium_falciparum": "<1 year",
+        "plasmodium_vivax": "up to 5 years",
+        "plasmodium_malariae": "decades (≥40 years documented)"
+      },
+      "blood_transfusion_risk": {
+        "stored_blood_infectious_period": "≥1 month"
+      }
+    },
+    "clinical_presentation": {
+      "categories": [
+        "uncomplicated malaria",
+        "severe malaria"
+      ],
+      "uncomplicated_malaria": {
+        "common_symptoms": [
+          "fever",
+          "chills",
+          "sweats",
+          "headache",
+          "nausea",
+          "vomiting",
+          "body aches"
+        ],
+        "classic_paroxysm": {
+          "cold_stage": "shivering and sensation of cold",
+          "hot_stage": "fever, headache, vomiting, seizures in children",
+          "sweating_stage": "profuse sweating, fatigue, temperature normalization",
+          "attack_duration_hours": "6–10",
+          "periodicity": "every other day (rare)"
+        }
+      },
+      "severe_malaria": {
+        "definition": "Malaria with organ failure or metabolic abnormalities",
+        "major_complications": [
+          "cerebral malaria",
+          "pulmonary edema",
+          "acute renal failure",
+          "severe anemia",
+          "bleeding",
+          "hypoglycemia",
+          "metabolic acidosis"
+        ],
+        "progression": "can rapidly progress to death within hours or days"
+      },
+      "incubation": "6–7 days to several months",
+      "symptoms": [
+        "fever",
+        "chills",
+        "headache",
+        "myalgias",
+        "malaise",
+        "gastrointestinal symptoms (children)"
+      ],
+      "important_notes": [
+        "no typical fever pattern",
+        "often misdiagnosed as viral illness",
+        "clinical deterioration may occur within 24–36 hours in non-immune patients"
+      ],
+      "emergency_flag": "suspected P. falciparum infection"
+    },
+    "disease_control_objectives": [
+      "prevent mosquito exposure in endemic regions",
+      "ensure early diagnosis and treatment",
+      "prevent progression to severe disease",
+      "prevent local transmission"
+    ],
+    "disease_prevention_objectives": {
+      "traveler_education": [
+        "importance of reporting illness after travel",
+        "importance of malaria chemoprophylaxis"
+      ]
+    },
+    "prevention_and_control_measures": {
+      "vaccine_status": "no commercially available malaria vaccine (per protocol)",
+      "personal_protection": [
+        "chemoprophylaxis before, during, and after travel",
+        "mosquito bite prevention"
+      ],
+      "chemoprophylaxis_us_options": [
+        "atovaquone-proguanil",
+        "doxycycline",
+        "mefloquine"
+      ]
+    },
+    "treatment_guidelines": {
+      "general_rule": "Initiate treatment as soon as possible",
+      "decision_factors": [
+        "infecting species",
+        "drug resistance patterns",
+        "severity of illness"
+      ],
+      "severe_malaria_management": {
+        "care_setting": "intensive care",
+        "therapy": "parenteral treatment",
+        "parasitemia_threshold": "<1% before oral switch",
+        "iv_artesunate_indications": [
+          "parasitemia >10%",
+          "evidence of complications"
+        ]
+      }
+    },
+    "case_ascertainment_criteria": {
+      "clinical": "any symptoms compatible with malaria",
+      "laboratory": "detection of any Plasmodium species",
+      "epidemiologic": "travel to or from malaria-endemic area within past year"
+    },
+    "case_definitions": {
+      "suspected_case": {
+        "criteria": [
+          "positive rapid diagnostic test without confirmatory testing",
+          "fever or history of fever",
+          "malaria-like symptoms"
+        ]
+      },
+      "confirmed_case": {
+        "criteria": [
+          "species-specific antigen detection",
+          "PCR detection of Plasmodium DNA",
+          "microscopic identification on blood smear",
+          "positive malaria rapid diagnostic test (mRDT)",
+          "positive microscopy (blood smear)"
+        ]
+      }
+    },
+    "case_classification_rules": {
+      "new_case": "infection with a different Plasmodium species",
+      "relapse_or_treatment_failure": "same species recurrence in US"
+    },
+    "outbreak_definition": {
+      "criteria": [
+        "increase in locally acquired cases",
+        "any local transmission after ≥5 years absence"
+      ],
+      "exclusion": "imported cases without secondary spread"
+    },
+    "roles_and_responsibilities": {
+      "healthcare_providers": [
+        "report suspected or confirmed cases",
+        "submit laboratory results",
+        "consult CDC Malaria Hotline"
+      ],
+      "laboratories": [
+        "perform smear, RDT, or PCR testing",
+        "report positive results to local health department"
+      ],
+      "local_health_departments": [
+        "conduct case investigation",
+        "collect travel history",
+        "educate patient and family",
+        "conduct environmental assessments",
+        "enter data into WVEDSS"
+      ],
+      "state_health_department": [
+        "review case reports",
+        "report cases to CDC",
+        "coordinate mosquito surveillance",
+        "provide technical consultation"
+      ]
+    },
+    "occupational_health_guidance": {
+      "risk_assessment": "required for field investigations",
+      "preventive_measures": [
+        "chemoprophylaxis when indicated",
+        "use of DEET-based repellents (20–30%)",
+        "protective clothing",
+        "treated clothing"
+      ],
+      "monitoring": "health surveillance and reporting"
+    },
+    "surveillance": {
+      "objectives": [
+        "monitor imported malaria cases",
+        "identify invasive Anopheles species",
+        "detect local transmission"
+      ],
+      "indicators": [
+        "completeness of clinical data",
+        "laboratory confirmation",
+        "travel and exposure history"
+      ]
+    },
+    "malaria_overview": {
+      "definition": "Malaria is a parasitic infectious disease caused by protozoan parasites of the genus Plasmodium.",
+      "disease_type": "vector-borne parasitic disease",
+      "treatability": "curable but threatened by drug resistance",
+      "global_risk_population": "≈3.2 billion people",
+      "annual_deaths_2017": "≈435,000"
+    },
+    "historical_background": {
+      "ancient_records": [
+        "Mesopotamia",
+        "India (Atharvaveda)",
+        "China (Nei Ching)",
+        "Egypt",
+        "Greece",
+        "Rome"
+      ],
+      "ancient_concepts": [
+        "miasma (bad air)",
+        "association with swamps and stagnant water"
+      ],
+      "key_discoveries": {
+        "1880": {
+          "scientist": "Charles Louis Alphonse Laveran",
+          "discovery": "Plasmodium parasite in human blood"
+        },
+        "1885": {
+          "scientists": [
+            "Ettore Marchiafava",
+            "Angelo Celli"
+          ],
+          "contribution": "established genus Plasmodium"
+        },
+        "1897": {
+          "scientist": "Sir Ronald Ross",
+          "discovery": "mosquito transmission of malaria"
+        }
+      },
+      "disease_name_origin": "Italian 'mal aria' meaning bad air"
+    },
+    "plasmodium_taxonomy": {
+      "domain": "Eukaryota",
+      "phylum": "Apicomplexa",
+      "genus": "Plasmodium",
+      "known_species": ">100",
+      "human_infecting_species": [
+        "Plasmodium falciparum",
+        "Plasmodium vivax",
+        "Plasmodium ovale (curtisi, wallikeri)",
+        "Plasmodium malariae",
+        "Plasmodium knowlesi"
+      ],
+      "origin": "zoonotic transmission from non-human primates in Africa"
+    },
+    "global_epidemiology": {
+      "historical_distribution": "all continents except Antarctica",
+      "reduction_1900_2002": {
+        "countries_at_risk": "reduced from ~140 to ~88"
+      },
+      "current_distribution": {
+        "endemic_countries": 87,
+        "highest_burden_region": "Sub-Saharan Africa"
+      },
+      "species_distribution": {
+        "plasmodium_falciparum": [
+          "Sub-Saharan Africa",
+          "Southeast Asia"
+        ],
+        "plasmodium_vivax": [
+          "South America",
+          "Southeast Asia",
+          "Western Pacific"
+        ]
+      },
+      "high_risk_groups": [
+        "children under 5",
+        "pregnant women",
+        "immunocompromised individuals"
+      ],
+      "poverty_link": "malaria is both a cause and consequence of poverty"
+    },
+    "life_cycle_plasmodium_falciparum": {
+      "hosts": {
+        "definitive_host": "female Anopheles mosquito",
+        "intermediate_host": "human"
+      },
+      "stages": {
+        "sporogonic_stage": {
+          "host": "mosquito",
+          "key_events": [
+            "gamete fusion",
+            "zygote formation",
+            "ookinete",
+            "oocyst",
+            "sporozoite migration to salivary glands"
+          ]
+        },
+        "exoerythrocytic_stage": {
+          "host": "human liver",
+          "duration_days": "~6",
+          "output": "~40,000 merozoites per hepatocyte",
+          "clinical_symptoms": "absent"
+        },
+        "intraerythrocytic_stage": {
+          "host": "human red blood cells",
+          "cycle_length_hours": 48,
+          "forms": [
+            "ring",
+            "trophozoite",
+            "schizont"
+          ],
+          "merozoites_per_schizont": "16–32",
+          "clinical_significance": "all malaria symptoms occur at this stage"
+        }
+      },
+      "special_forms": {
+        "hypnozoites": {
+          "species": [
+            "P. vivax",
+            "P. ovale"
+          ],
+          "function": "cause relapse months to years later"
+        }
+      }
+    },
+    "pathogenesis": {
+      "infection_types": [
+        "asymptomatic",
+        "uncomplicated malaria",
+        "severe malaria"
+      ],
+      "uncomplicated_malaria": {
+        "symptoms": [
+          "fever",
+          "chills",
+          "sweats",
+          "headache",
+          "myalgia",
+          "fatigue",
+          "nausea",
+          "vomiting"
+        ],
+        "fever_periodicity": {
+          "tertian_48h": [
+            "P. falciparum",
+            "P. vivax",
+            "P. ovale"
+          ],
+          "quartan_72h": [
+            "P. malariae"
+          ],
+          "quotidian_24h": [
+            "P. knowlesi"
+          ]
+        }
+      },
+      "severe_malaria": {
+        "main_cause": "Plasmodium falciparum",
+        "core_features": [
+          "severe anemia",
+          "metabolic acidosis",
+          "cerebral malaria"
+        ],
+        "mechanism": [
+          "cytoadherence",
+          "sequestration of infected RBCs",
+          "microvascular obstruction"
+        ],
+        "organ_damage": [
+          "brain",
+          "kidneys",
+          "lungs"
+        ],
+        "mortality_timeline": "death may occur within 48 hours of symptom onset"
+      },
+      "key_events": [
+        "PRBC adhesion to endothelium via ICAM-1",
+        "PfEMP1-mediated cytoadherence",
+        "GPI toxin release",
+        "cytokine storm",
+        "microvascular obstruction"
+      ],
+      "cerebral_malaria": {
+        "mechanism": [
+          "sequestration",
+          "endothelial damage",
+          "micro-hemorrhage",
+          "axonal injury"
+        ]
+      },
+      "fever_induction": {
+        "pathway": [
+          "plasmodial DNA",
+          "TLR-9 activation",
+          "NF-κB signaling",
+          "prostaglandin release"
+        ]
+      }
+    },
+    "antimalarial_chemotherapy": {
+      "treatment_principle": "rapid parasite clearance to prevent progression to severe disease",
+      "frontline_therapy": "artemisinin-based combination therapies (ACTs)",
+      "severe_malaria": {
+        "treatment": "IV or IM artesunate",
+        "follow_up": "3-day oral ACT"
+      }
+    },
+    "history_of_antimalarial_drugs": {
+      "quinine": {
+        "origin": "cinchona bark",
+        "era": "1600s",
+        "limitations": [
+          "toxicity",
+          "cinchonism",
+          "emerging resistance"
+        ]
+      },
+      "chloroquine": {
+        "era": "1930s–1960s",
+        "impact": "key drug in WHO Global Malaria Eradication Programme",
+        "failure": "widespread resistance"
+      },
+      "antifolates": {
+        "examples": [
+          "sulfadoxine-pyrimethamine",
+          "proguanil"
+        ],
+        "status": "limited use due to resistance"
+      },
+      "artemisinin": {
+        "discovery": "Tu Youyou, 1972",
+        "source": "Artemisia annua",
+        "properties": [
+          "fast-acting",
+          "low toxicity",
+          "short half-life"
+        ]
+      }
+    },
+    "artemisinin_combination_therapies": {
+      "rationale": [
+        "reduce resistance",
+        "improve efficacy",
+        "ensure parasite clearance"
+      ],
+      "who_recommended_acts": [
+        "artemether-lumefantrine",
+        "artesunate-mefloquine",
+        "artesunate-amodiaquine",
+        "dihydroartemisinin-piperaquine",
+        "artesunate-sulfadoxine-pyrimethamine"
+      ],
+      "treatment_duration_days": 3
+    },
+    "policy_principles": {
+      "core_policy": "Test, Treat and Track",
+      "rules": [
+        "All suspected malaria cases must be tested",
+        "Only confirmed cases should be treated with antimalarials",
+        "All confirmed cases must be reported to the surveillance system"
+      ],
+      "first_line_uncomplicated": "Artemether-Lumefantrine (AL)",
+      "first_line_severe": "Injectable Artesunate"
+    },
+    "malaria_risk_stratification": {
+      "approach": "geographical risk stratification",
+      "risk_levels": [
+        "very low transmission",
+        "low transmission",
+        "moderate transmission",
+        "high transmission"
+      ],
+      "purpose": [
+        "tailored interventions",
+        "resource optimization",
+        "elimination targeting"
+      ]
+    },
+    "case_classification": {
+      "types": [
+        "uncomplicated malaria",
+        "severe malaria"
+      ]
+    },
+    "uncomplicated_malaria": {
+      "clinical_features": [
+        "fever",
+        "chills",
+        "headache",
+        "vomiting",
+        "joint pain",
+        "weakness"
+      ],
+      "treatment": {
+        "first_line": {
+          "drug": "Artemether-Lumefantrine (AL)",
+          "duration_days": 3,
+          "administration": "oral"
+        },
+        "alternative_acts": [
+          "Dihydroartemisinin-Piperaquine",
+          "Artesunate-Amodiaquine",
+          "Artesunate-Mefloquine"
+        ],
+        "plus_primaquine": {
+          "indication": "transmission reduction",
+          "dose": "single low dose",
+          "contraindication": "G6PD deficiency (when applicable)"
+        }
+      },
+      "supportive_care": [
+        "paracetamol for fever",
+        "oral fluids",
+        "nutrition advice"
+      ]
+    },
+    "preventive_therapies": {
+      "iptp": {
+        "drug": "Sulfadoxine-Pyrimethamine",
+        "target_group": "pregnant women",
+        "goal": "prevent maternal anemia and low birth weight"
+      },
+      "chemoprophylaxis": {
+        "target_groups": [
+          "non-immune travelers",
+          "special risk populations"
+        ]
+      },
+      "vector_control": [
+        "long-lasting insecticide-treated nets (LLINs)",
+        "indoor residual spraying (IRS)",
+        "larval source management"
+      ]
+    },
+    "anaemia_and_malaria": {
+      "relationship": "malaria causes hemolysis and bone marrow suppression",
+      "severity_classification": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "management": [
+        "treat malaria",
+        "manage anemia severity",
+        "blood transfusion when indicated"
+      ]
+    },
+    "commodities_and_logistics": {
+      "items": [
+        "mRDTs",
+        "ACTs",
+        "injectable artesunate",
+        "microscopy supplies"
+      ],
+      "quality_assurance": [
+        "diagnostic QA systems",
+        "pharmacovigilance",
+        "adverse drug reaction reporting"
+      ]
+    },
+    "act_resistance_mitigation": {
+      "strategies": [
+        "mandatory parasitological diagnosis",
+        "ban on ACT monotherapy",
+        "treatment adherence enforcement",
+        "monitor therapeutic efficacy"
+      ],
+      "surveillance_markers": [
+        "treatment failure rates",
+        "delayed parasite clearance"
+      ]
+    },
+    "surveillance_and_reporting": {
+      "framework": "Malaria Case-Based Surveillance (MCBS)",
+      "reporting_requirements": [
+        "all confirmed cases reported",
+        "use of national health information systems"
+      ],
+      "objectives": [
+        "monitor trends",
+        "detect outbreaks",
+        "support elimination efforts"
+      ]
+    },
+    "social_and_behavior_change": {
+      "focus": [
+        "early care seeking",
+        "treatment adherence",
+        "net usage",
+        "community awareness"
+      ]
+    },
+    "introduction": {
+      "definition": "Malaria is a mosquito-borne infectious disease of humans and animals caused by protists of the genus Plasmodium.",
+      "transmission": "bite of infected female mosquito injecting parasites via saliva",
+      "primary_target_organs": [
+        "liver",
+        "red blood cells"
+      ],
+      "common_symptoms": [
+        "fever",
+        "headache"
+      ],
+      "severe_outcomes": [
+        "coma",
+        "death"
+      ],
+      "geographical_distribution": [
+        "Sub-Saharan Africa",
+        "Asia",
+        "Americas",
+        "tropical and subtropical regions"
+      ],
+      "etymology": {
+        "origin": "Italian",
+        "term": "mala aria",
+        "meaning": "bad air"
+      },
+      "historical_names": [
+        "ague",
+        "marsh fever"
+      ],
+      "non_endemic_regions_today": [
+        "Europe",
+        "North America (imported cases only)"
+      ]
+    },
+    "history": {
+      "ancient_records": [
+        "China (2700 BC)",
+        "Roman Empire (Roman fever)"
+      ],
+      "key_milestones": [
+        {
+          "year": 1820,
+          "event": "Quinine purified from cinchona bark"
+        },
+        {
+          "year": 1880,
+          "event": "Laveran identifies malaria parasite"
+        },
+        {
+          "year": 1898,
+          "event": "Ronald Ross proves mosquito transmission"
+        },
+        {
+          "year": 1934,
+          "event": "Chloroquine discovered"
+        },
+        {
+          "year": 1939,
+          "event": "DDT insecticide tested"
+        },
+        {
+          "year": 1952,
+          "event": "Malaria eliminated in USA"
+        },
+        {
+          "year": 1955,
+          "event": "WHO Global Malaria Eradication Campaign"
+        },
+        {
+          "year": 1957,
+          "event": "Chloroquine resistance documented"
+        },
+        {
+          "year": 1976,
+          "event": "Plasmodium cultured in vitro"
+        },
+        {
+          "year": 1992,
+          "event": "RTS,S vaccine enters trials"
+        },
+        {
+          "year": 2001,
+          "event": "ACT adopted as first-line therapy"
+        },
+        {
+          "year": 2008,
+          "event": "Global Malaria Action Plan endorsed"
+        }
+      ]
+    },
+    "causative_agents": {
+      "genus": "Plasmodium",
+      "human_species": [
+        "Plasmodium falciparum",
+        "Plasmodium vivax",
+        "Plasmodium ovale",
+        "Plasmodium malariae",
+        "Plasmodium knowlesi",
+        {
+          "name": "Plasmodium falciparum",
+          "severity": "most severe",
+          "mortality": "responsible for majority of deaths",
+          "special_features": [
+            "cytoadherence",
+            "cerebral malaria",
+            "high drug resistance"
+          ]
+        },
+        {
+          "name": "Plasmodium vivax",
+          "severity": "moderate",
+          "special_features": [
+            "hypnozoites",
+            "relapses"
+          ]
+        },
+        {
+          "name": "Plasmodium knowlesi",
+          "severity": "potentially severe",
+          "type": "zoonotic (simian malaria)"
+        },
+        {
+          "name": "Plasmodium ovale",
+          "severity": "mild",
+          "special_features": [
+            "hypnozoites",
+            "relapses"
+          ]
+        },
+        {
+          "name": "Plasmodium malariae",
+          "severity": "mild but chronic",
+          "special_features": [
+            "long-lasting infections"
+          ]
+        }
+      ],
+      "avian_species_examples": [
+        "Plasmodium relictum",
+        "Plasmodium gallinaceum"
+      ],
+      "monkey_species_examples": [
+        "Plasmodium cynomolgi",
+        "Plasmodium brasilianum",
+        "Plasmodium simium"
+      ],
+      "scientific_classification": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae"
+      }
+    },
+    "types_of_malaria": {
+      "plasmodium_falciparum": {
+        "severity": "most severe",
+        "common_region": "Africa",
+        "features": [
+          "cerebral malaria",
+          "high mortality",
+          "drug resistance"
+        ]
+      },
+      "plasmodium_vivax": {
+        "severity": "mild to moderate",
+        "relapse": true,
+        "liver_stage": true,
+        "global_distribution": "widest"
+      },
+      "plasmodium_malariae": {
+        "severity": "mild",
+        "chronicity": "decades possible",
+        "fever_pattern": "quartan"
+      },
+      "plasmodium_ovale": {
+        "severity": "mild",
+        "relapse": true
+      },
+      "plasmodium_knowlesi": {
+        "zoonotic": true,
+        "reservoir": "macaques"
+      }
+    },
+    "recurrent_malaria": {
+      "recrudescence": "parasites persist in blood after inadequate treatment",
+      "relapse": {
+        "cause": "hypnozoites in liver",
+        "species": [
+          "P. vivax",
+          "P. ovale"
+        ],
+        "timeframe_weeks": "8–24"
+      },
+      "reinfection": "new mosquito-borne infection"
+    },
+    "genetic_resistance": {
+      "protective_factors": [
+        "sickle cell trait",
+        "thalassemia",
+        "G6PD deficiency",
+        "Duffy antigen negativity"
+      ],
+      "mechanism_sickle_cell": "parasite cannot complete life cycle in distorted RBCs"
+    },
+    "signs_and_symptoms": {
+      "incubation_period_days": {
+        "falciparum": "9–14",
+        "vivax": "12–18",
+        "ovale": "12–18",
+        "malariae": "18–40"
+      },
+      "classic_paroxysm": [
+        "cold stage",
+        "hot stage",
+        "sweating stage"
+      ],
+      "severe_signs": [
+        "coma",
+        "convulsions",
+        "hypoglycemia",
+        "severe anemia",
+        "renal failure",
+        "pulmonary edema",
+        "shock"
+      ],
+      "early_symptoms": [
+        "fever",
+        "chills",
+        "headache",
+        "fatigue",
+        "vomiting",
+        "diarrhea"
+      ],
+      "severe_symptoms": [
+        "severe anemia",
+        "jaundice",
+        "convulsions",
+        "coma",
+        "kidney failure",
+        "respiratory distress"
+      ]
+    },
+    "prognosis": {
+      "uncomplicated": "complete recovery",
+      "severe": "mortality up to 20%",
+      "long_term_effects": [
+        "neurological deficits",
+        "epilepsy",
+        "cognitive impairment"
+      ]
+    },
+    "prevention_and_control": {
+      "vector_control": [
+        "indoor residual spraying",
+        "environmental management",
+        "larvivorous fish"
+      ],
+      "personal_protection": [
+        "insecticide-treated bed nets",
+        "protective clothing"
+      ],
+      "chemoprophylaxis": [
+        "mefloquine",
+        "doxycycline",
+        "atovaquone-proguanil"
+      ],
+      "vaccines": {
+        "status": "under development",
+        "types": [
+          "pre-erythrocytic",
+          "blood-stage",
+          "transmission-blocking"
+        ]
+      }
+    },
+    "core_message": {
+      "severity": "medical emergency",
+      "global_importance": "major cause of preventable childhood death",
+      "key_problem": "frequent misdiagnosis, especially in high-transmission settings",
+      "key_intervention": "early artesunate + antibiotics saves lives"
+    },
+    "definition_of_severe_malaria": {
+      "conceptual_definition": "malaria with substantially increased risk of death at presentation compared to other malaria cases in the same setting",
+      "typical_case_fatality": {
+        "uncomplicated_malaria": "0.01–0.1%",
+        "severe_malaria": ">5% (often 8–50% depending on syndrome)"
+      }
+    },
+    "evolution_of_who_definitions": {
+      "1985": {
+        "features": [
+          "hyperparasitaemia >5%",
+          "coma persisting >6 hours",
+          "hematocrit <20%",
+          "jaundice alone",
+          "acid–base disturbances",
+          "hyperpyrexia",
+          "vomiting",
+          "haemoglobinuria"
+        ],
+        "limitations": "low specificity"
+      },
+      "1988": {
+        "changes": [
+          "hyperparasitaemia removed",
+          "haematocrit threshold lowered to 15%",
+          "convulsions added",
+          "Blantyre Coma Scale adopted"
+        ]
+      },
+      "1995": {
+        "major_change": "very inclusive definition",
+        "new_features": [
+          "prostration",
+          "respiratory distress"
+        ],
+        "impact": "high sensitivity, low specificity"
+      },
+      "2013": {
+        "approach": "separate pragmatic (clinical) and strict (research) definitions",
+        "key_update": "definitions linked to mortality risk"
+      }
+    },
+    "current_strict_research_definition": {
+      "criteria": [
+        {
+          "name": "impaired_consciousness",
+          "threshold": "GCS <11 (adults) or Blantyre <3 (children)"
+        },
+        {
+          "name": "acidosis",
+          "thresholds": [
+            "lactate >5 mmol/L",
+            "bicarbonate <15 mmol/L",
+            "base deficit >8 meq/L"
+          ]
+        },
+        {
+          "name": "hypoglycaemia",
+          "threshold": "<2.2 mmol/L (<40 mg/dL)"
+        },
+        {
+          "name": "severe_anaemia",
+          "thresholds": [
+            "Hb <5 g/dL (children)",
+            "Hb <7 g/dL (adults)"
+          ],
+          "requirement": "parasite count >10,000/µL"
+        },
+        {
+          "name": "renal_failure",
+          "threshold": "creatinine >265 µmol/L or urea >20 mmol/L"
+        },
+        {
+          "name": "jaundice",
+          "threshold": "bilirubin >50 µmol/L + parasitaemia >100,000/µL"
+        },
+        {
+          "name": "pulmonary_oedema",
+          "criteria": "radiological or SpO2 <92% on room air"
+        },
+        {
+          "name": "shock",
+          "criteria": "hypotension or impaired perfusion"
+        },
+        {
+          "name": "hyperparasitaemia",
+          "threshold": ">10% parasitized erythrocytes"
+        }
+      ]
+    },
+    "major_clinical_syndromes": {
+      "cerebral_malaria": {
+        "definition": "unrousable coma due to falciparum malaria",
+        "mortality": "12–20% (reduced by ~30% with artesunate)",
+        "sequelae": [
+          "stroke",
+          "epilepsy",
+          "cognitive impairment",
+          "neurodevelopmental delay"
+        ],
+        "specific_sign": "malaria retinopathy"
+      },
+      "metabolic_acidosis": {
+        "mechanism": [
+          "lactic acidosis",
+          "gut-derived organic acids",
+          "impaired perfusion"
+        ],
+        "prognosis": "very poor unless rapidly treated"
+      },
+      "acute_kidney_injury": {
+        "common_in": "older children and adults",
+        "management": "early renal replacement therapy",
+        "outcome": "full recovery in survivors"
+      },
+      "severe_anaemia": {
+        "dominant_in": "high-transmission settings",
+        "acute_mortality": "<1%",
+        "long_term_risk": "high post-discharge mortality",
+        "transfusion_thresholds": {
+          "children_high_transmission": "Hb ≤5 g/dL",
+          "low_transmission": "Hb ≤7 g/dL"
+        }
+      },
+      "pulmonary_oedema": {
+        "mortality": "very high",
+        "mechanism": "capillary leak, not fluid overload"
+      }
+    },
+    "parasite_density_and_prognosis": {
+      "principle": "mortality increases with total parasite biomass",
+      "limitation": "peripheral parasitaemia underestimates biomass due to sequestration",
+      "high_risk_threshold": ">100,000 parasites/µL in non-immune adults"
+    },
+    "misdiagnosis": {
+      "scale": "≈30% of children diagnosed with severe malaria have another cause",
+      "common_alternative": "bacterial sepsis",
+      "consequence": "inflated malaria mortality estimates",
+      "key_solution": "treat malaria and sepsis together"
+    },
+    "immediate_management": {
+      "gold_standard": "parenteral artesunate",
+      "dose": {
+        "children_under_20kg": "3 mg/kg",
+        "others": "2.4 mg/kg"
+      },
+      "antibiotics": {
+        "indication": "all suspected severe malaria in high-transmission areas",
+        "example": "ceftriaxone"
+      },
+      "contraindicated_practices": [
+        "aggressive fluid boluses",
+        "mannitol for cerebral malaria",
+        "high-dose phenobarbital prophylaxis"
+      ]
+    },
+    "pre_referral_management": {
+      "rectal_artesunate": {
+        "benefit": "≈25% mortality reduction",
+        "controversy": "WHO moratorium criticized",
+        "author_position": "should be used"
+      }
+    },
+    "species_specific_notes": {
+      "plasmodium_falciparum": "most severe, sequestration-based pathology",
+      "plasmodium_knowlesi": {
+        "features": "high parasitaemia, no cerebral malaria",
+        "note": "P. malariae >1% should be assumed P. knowlesi"
+      },
+      "plasmodium_vivax": {
+        "severity": "usually lower mortality",
+        "exceptions": [
+          "pulmonary oedema",
+          "recurrent severe anaemia"
+        ],
+        "issue": "frequent overdiagnosis"
+      }
+    },
+    "long_term_outcomes": {
+      "children": [
+        "epilepsy",
+        "learning difficulties",
+        "behavioral disorders"
+      ],
+      "anaemia": "increased mortality up to 6 months post-discharge"
+    },
+    "policy_implications": {
+      "priorities": [
+        "earlier artesunate delivery",
+        "routine antibiotics",
+        "support microscopy",
+        "reduce diagnostic delay"
+      ],
+      "research_gap": "better specificity in African children"
+    },
+    "differential_diagnosis": [
+      "bacterial sepsis",
+      "dengue",
+      "chikungunya",
+      "typhoid fever",
+      "viral hemorrhagic fever",
+      "meningitis",
+      "pneumonia",
+      "influenza",
+      "COVID-19",
+      "yellow fever",
+      "zika"
+    ],
+    "severity_classification": {
+      "uncomplicated_malaria": {
+        "features": [
+          "fever",
+          "headache",
+          "vomiting",
+          "myalgia",
+          "weakness"
+        ]
+      },
+      "severe_malaria": {
+        "definition": "malaria with organ dysfunction or high parasitemia",
+        "criteria": [
+          "GCS < 11",
+          "convulsions",
+          "severe anemia",
+          "acute kidney injury",
+          "hypoglycemia",
+          "ARDS",
+          "shock",
+          "DIC",
+          "acidosis",
+          "coma",
+          "liver dysfunction",
+          "parasitemia > 5%"
+        ],
+        "high_risk_groups": [
+          "children",
+          "pregnant patients",
+          "non-immune individuals"
+        ]
+      }
+    },
+    "treatment_uncomplicated_malaria": {
+      "who_recommendation": "artemisinin combination therapy (ACT)",
+      "preferred_acts": [
+        "artemether-lumefantrine",
+        "atovaquone-proguanil",
+        "chloroquine (sensitive areas only)"
+      ],
+      "falciparum_or_unknown_species": [
+        "ACT",
+        "atovaquone-proguanil",
+        "quinine + doxycycline/tetracycline/clindamycin"
+      ],
+      "vivax_or_ovale": {
+        "acute_treatment": "same as falciparum",
+        "antirelapse": [
+          "primaquine",
+          "tafenoquine"
+        ],
+        "requirement": "G6PD testing"
+      }
+    },
+    "treatment_severe_malaria": {
+      "primary_cause": [
+        "Plasmodium falciparum",
+        "Plasmodium knowlesi"
+      ],
+      "first_line": "intravenous artesunate",
+      "dose": "2.4 mg/kg at 0, 12, and 24 hours",
+      "monitoring": "blood smears every 12 hours",
+      "step_down": "oral ACT when parasitemia <1%",
+      "max_duration_iv": "≤7 days",
+      "contraindications": "only allergy to artemisinins",
+      "not_recommended": [
+        "exchange transfusion"
+      ]
+    },
+    "pregnancy": {
+      "risk": "high maternal and fetal morbidity and mortality",
+      "safe_drugs_all_trimesters": [
+        "chloroquine",
+        "hydroxychloroquine",
+        "quinine + clindamycin",
+        "mefloquine"
+      ],
+      "acts": {
+        "second_third_trimester": "all ACTs",
+        "first_trimester": "artemether-lumefantrine acceptable"
+      },
+      "contraindicated": [
+        "primaquine",
+        "tafenoquine"
+      ],
+      "neonatal_consideration": "test infants for G6PD if mother had vivax or ovale malaria"
+    },
+    "post_treatment_follow_up": {
+      "severe_malaria": "screen for hemolytic anemia within 30 days",
+      "vivax_ovale": "ensure completion of antirelapse therapy"
+    },
+    "support_resources": {
+      "cdc_malaria_hotline": [
+        "770-488-7788",
+        "855-856-4713",
+        "770-488-7100 (after hours)"
+      ]
+    },
+    "global_context": {
+      "who_estimated_cases_2023": "249 million",
+      "main_risk_groups": [
+        "children under 5 years (≈61% of deaths)",
+        "pregnant women (≈125 million at risk)"
+      ],
+      "drivers_of_resurgence": [
+        "climate change",
+        "drug resistance",
+        "diagnostic limitations"
+      ]
+    },
+    "parasite_life_cycle_notes": {
+      "liver_stage": "asymptomatic replication",
+      "blood_stage": "clinical disease",
+      "hypnozoites": [
+        "Plasmodium vivax",
+        "Plasmodium ovale"
+      ],
+      "relapse_mechanism": "reactivation of dormant hypnozoites",
+      "recrudescence": [
+        "Plasmodium falciparum",
+        "Plasmodium malariae"
+      ]
+    },
+    "biochemical_changes": {
+      "hypoglycemia": {
+        "mechanisms": [
+          "parasite glucose consumption",
+          "inhibition of gluconeogenesis via TNF, IL-1, IL-6",
+          "ATP-sensitive K+ channel inhibition → hyperinsulinemia",
+          "enhanced glucose uptake via GLUT1 in infected erythrocytes",
+          "loss of appetite and reduced AMPK activity"
+        ],
+        "clinical_significance": "marker of severe malaria"
+      },
+      "dyslipidemia": {
+        "general_pattern": [
+          "↓ total cholesterol",
+          "↓ HDL",
+          "↓ LDL",
+          "↑ triglycerides"
+        ],
+        "species_variation": {
+          "P. vivax": "lower TC, LDL, HDL; higher TAG",
+          "P. falciparum": "marked HDL reduction"
+        },
+        "reversibility": "normalizes after antimalarial therapy"
+      },
+      "renal_dysfunction": {
+        "common_in": [
+          "P. falciparum",
+          "P. malariae"
+        ],
+        "features": [
+          "↑ urea",
+          "↑ creatinine",
+          "oliguria",
+          "metabolic acidosis",
+          "hyperkalemia",
+          "hyponatremia"
+        ],
+        "pathogenesis": [
+          "microvascular sequestration",
+          "immune-complex glomerulopathy"
+        ]
+      },
+      "hepatic_dysfunction": {
+        "markers": [
+          "↑ AST",
+          "↑ ALT",
+          "↑ bilirubin (conjugated and unconjugated)"
+        ],
+        "jaundice_incidence": "5.3–45% in severe P. falciparum",
+        "mechanisms": [
+          "hepatocyte invasion",
+          "hemolysis",
+          "sinusoidal obstruction",
+          "oxidative injury"
+        ]
+      },
+      "oxidative_stress": {
+        "sources": [
+          "host immune ROS/RNS",
+          "free heme from hemoglobin digestion"
+        ],
+        "antioxidant_depletion": [
+          "↓ SOD",
+          "↓ catalase",
+          "↓ GPx",
+          "↓ GST",
+          "↓ vitamins A, C, E"
+        ],
+        "dual_role": [
+          "parasite killing",
+          "host endothelial injury"
+        ]
+      }
+    },
+    "limitations_of_biochemical_markers": {
+      "issues": [
+        "low specificity",
+        "overlap with metabolic diseases",
+        "requires correlation with exposure history"
+      ],
+      "recommendation": "use as adjuncts, not standalone diagnostics"
+    },
+    "diagnostic_updates": {
+      "conventional": {
+        "microscopy": {
+          "status": "gold standard",
+          "limitations": [
+            "time-consuming",
+            "requires expertise"
+          ]
+        }
+      },
+      "rapid_diagnostic_tests": {
+        "targets": [
+          "Pf-HRP-II",
+          "pLDH",
+          "pALD"
+        ],
+        "limitations": [
+          "HRP-II gene deletions",
+          "false positives post-treatment",
+          "limited species differentiation"
+        ]
+      },
+      "biosensors": {
+        "general_structure": [
+          "bioreceptor",
+          "transducer",
+          "signal processor"
+        ],
+        "targets": [
+          "hemozoin",
+          "LDH",
+          "MSP-3",
+          "GDH"
+        ],
+        "types": {
+          "magneto_optical": "detects paramagnetic hemozoin",
+          "electrochemical": {
+            "advantages": [
+              "high sensitivity",
+              "low sample volume"
+            ],
+            "limitations": [
+              "temperature sensitivity",
+              "short shelf life"
+            ]
+          },
+          "optical": {
+            "SPR": {
+              "advantages": [
+                "label-free",
+                "real-time"
+              ],
+              "limitations": [
+                "motion sensitive",
+                "needs automation"
+              ]
+            },
+            "SERS": "highly specific for hemozoin"
+          },
+          "fluorescence": {
+            "detection_limit": "as low as 0.3 ng/mL Pf-LDH"
+          }
+        }
+      },
+      "lab_on_chip": {
+        "principle": "margination of infected RBCs",
+        "enhancement": "magnetic hemozoin separation"
+      },
+      "molecular_diagnostics": {
+        "multiplex_PCR": {
+          "sensitivity": "≈5 parasites/µL",
+          "use": "detect asymptomatic reservoirs"
+        },
+        "LAMP": {
+          "advantages": [
+            "isothermal",
+            "≈99% sensitivity",
+            "field-deployable"
+          ]
+        }
+      }
+    },
+    "therapeutic_updates": {
+      "conventional_drugs": {
+        "classes": [
+          "quinolines",
+          "antifolates",
+          "artemisinin derivatives",
+          "antibiotics"
+        ],
+        "major_issues": [
+          "drug resistance",
+          "toxicity",
+          "poor solubility"
+        ]
+      },
+      "falcipain_inhibitors": {
+        "targets": [
+          "falcipain-2",
+          "falcipain-3"
+        ],
+        "examples": [
+          "quinoline-4-carboxamides",
+          "E-chalcones",
+          "tetracycline derivatives"
+        ]
+      },
+      "phytotherapy": {
+        "examples": [
+          "Buchholzia coriacea",
+          "Gymnema inodorum",
+          "Anogeissus leiocarpus",
+          "Bidens pilosa",
+          "Syzygium guineense"
+        ],
+        "benefits": [
+          "antioxidant",
+          "biochemical normalization"
+        ],
+        "limitation": "lack of large clinical trials"
+      },
+      "nano_medicine": {
+        "rationale": "enhanced RBC and parasite targeting",
+        "benefits": [
+          "improved bioavailability",
+          "lower dose",
+          "longer half-life"
+        ],
+        "types": [
+          "liposomes",
+          "polymeric nanoparticles",
+          "solid lipid nanoparticles",
+          "green silver nanoparticles"
+        ],
+        "delivery_modes": {
+          "passive": "via tubovesicular membrane",
+          "active": "ligand-receptor targeting"
+        }
+      },
+      "combination_therapy": {
+        "standard_ACTs": [
+          "artemether-lumefantrine",
+          "artesunate-amodiaquine"
+        ],
+        "triple_combinations": [
+          "amodiaquine + artemether + lumefantrine",
+          "mefloquine + DHA + piperaquine"
+        ],
+        "purpose": "counter emerging resistance"
+      },
+      "anti_relapse": {
+        "drug": "tafenoquine",
+        "class": "8-aminoquinoline",
+        "indication": "P. vivax and P. ovale relapse prevention"
+      }
+    },
+    "burden_of_disease": {
+      "global_importance": "major public health burden",
+      "comparison_context": "often compared with COVID-19 burden",
+      "high_burden_regions": [
+        "tropical regions",
+        "subtropical regions"
+      ]
+    },
+    "causative_species": {
+      "human_plasmodium_species": [
+        {
+          "name": "Plasmodium falciparum",
+          "features": [
+            "most common",
+            "most deadly",
+            "causes cerebral malaria"
+          ]
+        },
+        {
+          "name": "Plasmodium vivax",
+          "features": [
+            "common",
+            "causes relapse if treatment incomplete",
+            "forms hypnozoites"
+          ]
+        },
+        {
+          "name": "Plasmodium ovale",
+          "features": [
+            "causes relapse"
+          ]
+        },
+        {
+          "name": "Plasmodium malariae",
+          "features": [
+            "chronic infection"
+          ]
+        }
+      ]
+    },
+    "morphology": {
+      "plasmodium_vivax": [
+        "ring form",
+        "mature ring",
+        "trophozoite",
+        "early schizont",
+        "schizont",
+        "gametocytes"
+      ],
+      "plasmodium_falciparum": [
+        "marginal ring",
+        "young trophozoite",
+        "trophozoite",
+        "schizont",
+        "banana-shaped gametocyte"
+      ],
+      "plasmodium_malariae": [
+        "band form trophozoite",
+        "early schizont",
+        "mature schizont"
+      ],
+      "plasmodium_ovale": [
+        "oval RBCs",
+        "ring form",
+        "trophozoite",
+        "schizont"
+      ]
+    },
+    "relapse": {
+      "species": "Plasmodium vivax",
+      "cause": "hypnozoites (hepatic sporozoites)",
+      "duration": "relapse may occur up to 5 years",
+      "management_note": "eradication (radical cure) required"
+    },
+    "blackwater_fever": {
+      "cause": "Plasmodium falciparum",
+      "pathogenesis": [
+        "massive intravascular hemolysis",
+        "severe acute hemolytic anemia"
+      ],
+      "features": [
+        "hemoglobinuria",
+        "raised bilirubin",
+        "acute tubular necrosis",
+        "acute renal failure"
+      ]
+    },
+    "investigations_for_complications": {
+      "hemolysis": [
+        "hemoglobin",
+        "serum LDH",
+        "serum bilirubin"
+      ],
+      "renal": [
+        "serum creatinine",
+        "serum electrolytes"
+      ],
+      "hepatic": [
+        "ALT"
+      ],
+      "coagulation": [
+        "BT",
+        "CT",
+        "APTT"
+      ],
+      "metabolic": [
+        "blood glucose",
+        "arterial blood gas"
+      ],
+      "pulmonary": [
+        "chest X-ray"
+      ]
+    },
+    "adjuvant_therapy": [
+      "NSAIDs for fever",
+      "proton pump inhibitors (omeprazole, pantoprazole)",
+      "glucose supplementation to prevent hypoglycemia",
+      "adequate fluids to prevent renal toxicity and blackwater fever"
+    ],
+    "exam_oriented_points": {
+      "protective_conditions": [
+        "sickle cell disease protects against severe malaria"
+      ],
+      "special_management": [
+        "primaquine modification required in G6PD deficiency"
+      ],
+      "discussion_topics": [
+        "HCQ vs chloroquine mechanism",
+        "safety of HCQ/CHQ prophylaxis",
+        "role of sweet wormwood"
+      ]
+    },
+    "learning_objectives": [
+      "Outline the public health importance of malaria",
+      "List characteristics that differentiate malaria vectors from other mosquitoes",
+      "List Plasmodium species causing malaria in humans",
+      "Describe the malaria parasite life cycle",
+      "Differentiate the clinical course of malaria"
+    ],
+    "disease_definition": {
+      "name": "Malaria",
+      "definition": "A febrile disease caused by blood parasites of the genus Plasmodium transmitted by the bite of an infected female Anopheles mosquito",
+      "disease_type": "vector-borne parasitic disease"
+    },
+    "public_health_importance": {
+      "global_distribution": "predominantly sub-Saharan Africa",
+      "global_risk_population": "≈20% of world population",
+      "annual_global_cases": "300–400 million",
+      "high_risk_groups": [
+        "children under 5 years",
+        "pregnant women"
+      ],
+      "regional_burden": {
+        "africa_share": "≈90% of global illness",
+        "child_fever_cases": "≈95% in African health facilities"
+      },
+      "epidemic_behavior": [
+        "epidemics in highland areas",
+        "spread to previously malaria-free regions"
+      ]
+    },
+    "public_health_impact": {
+      "health_effects": [
+        "premature death",
+        "chronic illness",
+        "pregnancy complications",
+        "impaired child development"
+      ],
+      "economic_impact": {
+        "household_costs": [
+          "treatment costs",
+          "transport to health facilities",
+          "lost work days",
+          "school absenteeism",
+          "burial costs"
+        ],
+        "government_costs": [
+          "health facility maintenance",
+          "drug procurement",
+          "vector control interventions",
+          "lost productivity"
+        ],
+        "macro_economic_effect": "≈1% annual reduction in economic growth in endemic regions"
+      }
+    },
+    "malaria_vectors": {
+      "vector_type": "female Anopheles mosquito",
+      "important_species": [
+        "Anopheles gambiae sensu lato",
+        "Anopheles funestus"
+      ],
+      "vector_distribution": "varies by region",
+      "vector_preference": "human blood (anthropophilic)",
+      "biting_time": "dusk to dawn"
+    },
+    "mosquito_biology": {
+      "life_stages": [
+        "egg",
+        "larva",
+        "pupa",
+        "adult"
+      ],
+      "aquatic_stages": [
+        "egg",
+        "larva",
+        "pupa"
+      ],
+      "adult_behavior": {
+        "feeding": {
+          "female": "blood meal required for egg development",
+          "male": "plant juices"
+        },
+        "resting": [
+          "indoor",
+          "outdoor"
+        ]
+      },
+      "development_time": {
+        "31C": "7–14 days",
+        "20C": "≈20 days"
+      }
+    },
+    "vector_identification": {
+      "adult_mosquito_features": [
+        "long segmented antennae",
+        "long proboscis",
+        "body and wings covered with scales",
+        "distinct wing vein pattern"
+      ],
+      "anopheline_vs_culicine": {
+        "female": {
+          "anopheline": "palps as long as proboscis",
+          "culicine": "palps shorter than proboscis"
+        },
+        "male": {
+          "anopheline": "palps longer than proboscis, club-shaped",
+          "culicine": "palps longer than proboscis, tapered"
+        },
+        "eggs": {
+          "anopheline": "floats",
+          "culex": "rafts",
+          "aedes": "single floating eggs"
+        },
+        "larvae": {
+          "anopheline": "rests parallel to water surface",
+          "culicine": "rests at an angle with siphon"
+        },
+        "adult_resting": {
+          "anopheline": "rests at an angle",
+          "culicine": "rests parallel to surface"
+        }
+      }
+    },
+    "malaria_life_cycle": {
+      "human_stage": {
+        "infective_stage": "sporozoites",
+        "liver_stage": {
+          "process": "schizogony",
+          "duration_days": "9–14",
+          "output": "merozoites"
+        },
+        "blood_stage": {
+          "rbc_invasion": true,
+          "forms": [
+            "ring",
+            "schizont",
+            "merozoite"
+          ],
+          "symptom_trigger": "rupture of infected RBCs"
+        }
+      },
+      "mosquito_stage": {
+        "ingested_form": "gametocytes",
+        "final_stage": "sporozoites in salivary glands"
+      }
+    },
+    "clinical_classification": {
+      "types": [
+        "uncomplicated malaria",
+        "severe and complicated malaria"
+      ],
+      "uncomplicated_malaria": {
+        "symptoms": [
+          "fever",
+          "chills",
+          "nausea",
+          "vomiting",
+          "headache",
+          "joint pain",
+          "profuse sweating"
+        ],
+        "treatment_rationale": [
+          "prevent progression",
+          "reduce community transmission"
+        ]
+      },
+      "severe_malaria": {
+        "definition": "life-threatening malaria affecting multiple organ systems",
+        "system_effects": {
+          "central_nervous": [
+            "convulsions",
+            "coma",
+            "mental disturbance"
+          ],
+          "respiratory": [
+            "rapid or difficult breathing"
+          ],
+          "urinary": [
+            "acute renal failure",
+            "hemoglobinuria"
+          ],
+          "gastrointestinal": [
+            "vomiting",
+            "diarrhea",
+            "dehydration"
+          ],
+          "circulatory": [
+            "shock",
+            "severe anemia",
+            "bleeding"
+          ]
+        }
+      }
+    },
+    "key_concepts_glossary": {
+      "incubation_period": "time from infective bite to symptom onset",
+      "schizogony": "asexual reproduction in human host",
+      "sporozoite": "infective form injected by mosquito",
+      "sporogony": "parasite development in mosquito",
+      "vector": "organism transmitting disease between hosts"
+    },
+    "education_and_training_notes": {
+      "emphasis": [
+        "early diagnosis",
+        "prompt treatment",
+        "vector identification skills",
+        "community prevention"
+      ],
+      "next_unit_focus": "clinical assessment of malaria"
+    },
+    "core_definition": {
+      "disease_name": "Malaria",
+      "definition": "A mosquito-borne infectious disease caused by single-celled eukaryotic parasites of the genus Plasmodium, transmitted to humans through the bite of infected female Anopheles mosquitoes.",
+      "disease_type": "vector-borne parasitic disease"
+    },
+    "immune_evasion": {
+      "strategies": [
+        "antigenic variation",
+        "intracellular survival in RBCs",
+        "rosetting with uninfected RBCs",
+        "sequestration in tissues"
+      ],
+      "genome_allocation": "≈10% of parasite genome dedicated to immune evasion"
+    },
+    "genetic_resistance_in_humans": {
+      "protective_traits": [
+        "sickle cell trait",
+        "thalassemia",
+        "G6PD deficiency",
+        "Duffy antigen negativity"
+      ],
+      "evolutionary_significance": "strong selective pressure on human genome"
+    },
+    "classification": {
+      "uncomplicated_malaria": {
+        "management": "oral antimalarials",
+        "duration_days": "3–7"
+      },
+      "severe_malaria": {
+        "criteria": [
+          "coma",
+          "convulsions",
+          "parasitemia >5%",
+          "acidosis",
+          "renal failure",
+          "ARDS"
+        ],
+        "fatality_rate": "13–20% even with treatment"
+      }
+    },
+    "climate_change_effects": {
+      "temperature_optimum_celsius": 27,
+      "altitude_limit_meters": 1500,
+      "effects": [
+        "expanded geographic range",
+        "longer transmission seasons",
+        "increased outbreaks after floods",
+        "vector insecticide resistance"
+      ]
+    },
+    "socioeconomic_impact": {
+      "economic_loss_africa_usd_per_year": "≈12 billion",
+      "health_system_burden": [
+        "30–50% hospital admissions",
+        "up to 40% public health spending"
+      ],
+      "education_impact": [
+        "school absenteeism",
+        "cognitive impairment after cerebral malaria"
+      ]
+    },
+    "chatbot_intents": [
+      "What is malaria?",
+      "How is malaria transmitted?",
+      "What are malaria symptoms?",
+      "Is malaria dangerous?",
+      "How to prevent malaria while travelling?",
+      "Which malaria medicines should I take?",
+      "What to do if fever occurs after travel?",
+      "Is malaria risky during pregnancy?",
+      "Is malaria common in my destination?",
+      "Explain malaria life cycle",
+      "Why is falciparum malaria dangerous?",
+      "What causes cerebral malaria?",
+      "How is malaria diagnosed?",
+      "What is the treatment for malaria?",
+      "Why does malaria relapse?",
+      "What is blackwater fever?",
+      "Is there a malaria vaccine?",
+      "How to prevent malaria?",
+      "Why is malaria common in Africa?",
+      "Which malaria species are dangerous?",
+      "How is malaria treated?",
+      "Is malaria dangerous in pregnancy?",
+      "What genetic traits protect against malaria?",
+      "What is the malaria life cycle?",
+      "How is malaria diagnosed in India?",
+      "What is the treatment for P. vivax malaria?",
+      "What drug is used for falciparum malaria?",
+      "What is ACT-SP and ACT-AL?",
+      "What is the treatment for malaria in pregnancy?",
+      "How is severe malaria treated?",
+      "When should a malaria patient be referred?",
+      "Why does malaria drug resistance occur?",
+      "What is malaria chemoprophylaxis?",
+      "Which malaria drugs are contraindicated in pregnancy?",
+      "Explain malaria classification",
+      "Describe malaria life cycle",
+      "Differentiate Plasmodium species",
+      "Explain febrile paroxysm",
+      "What are hypnozoites?",
+      "How is malaria diagnosed in the lab?",
+      "Difference between thick and thin smear",
+      "What causes anemia in malaria?",
+      "Which Plasmodium species infect humans?",
+      "Explain the malaria life cycle",
+      "What are the symptoms of malaria?",
+      "Who is at high risk for malaria?",
+      "What is ACT therapy?",
+      "How can malaria be prevented?",
+      "What is odyssean malaria?",
+      "How is malaria being eliminated in South Africa?",
+      "Why is malaria dangerous in pregnancy?",
+      "How is malaria diagnosed in pregnancy?",
+      "What is severe malaria in pregnancy?",
+      "Which drugs are safe for malaria in pregnancy?",
+      "Why is primaquine avoided in pregnancy?",
+      "How is severe malaria treated in pregnancy?",
+      "What are fetal risks of malaria?",
+      "What is congenital malaria?",
+      "When should pregnant women be admitted for malaria?",
+      "Why does malaria cause fever?",
+      "What causes severe malaria?",
+      "What drugs treat malaria?",
+      "How do antimalarial drugs work?",
+      "Why does drug resistance occur?",
+      "How is malaria prevented?",
+      "What is severe malaria?",
+      "How long is the incubation period for malaria?",
+      "When should malaria be reported?",
+      "What is the treatment for severe malaria?",
+      "Can malaria be transmitted in the United States?",
+      "What are public health responsibilities for malaria cases?",
+      "Explain the history of malaria",
+      "Describe the Plasmodium life cycle",
+      "What are ACTs?",
+      "Why does drug resistance develop?",
+      "What is the national treatment for malaria?",
+      "How is malaria diagnosed in Tanzania?",
+      "What is first-line treatment for severe malaria?",
+      "Can malaria be treated without a test?",
+      "What is IPTp?",
+      "How is malaria managed in pregnancy?",
+      "What is ACT resistance?",
+      "When should malaria cases be reported?",
+      "Different types of malaria",
+      "Why does malaria recur?",
+      "Which drugs are safe in pregnancy?",
+      "Why is malaria dangerous?",
+      "How is severe malaria defined?",
+      "Why is severe malaria often misdiagnosed?",
+      "What is the role of artesunate?",
+      "Why give antibiotics with artesunate?",
+      "How does parasite density affect prognosis?",
+      "How is severe malaria diagnosed?",
+      "What are long-term effects of severe malaria?",
+      "Is severe malaria caused by P. vivax possible?",
+      "Who should receive malaria prophylaxis?",
+      "What are symptoms of malaria?",
+      "What is the treatment for uncomplicated malaria?",
+      "How is malaria treated in pregnancy?",
+      "Why is G6PD testing needed?",
+      "What biochemical changes occur in malaria?",
+      "Why does malaria cause hypoglycemia?",
+      "How does malaria affect liver and kidney function?",
+      "What are modern diagnostic methods for malaria?",
+      "What are biosensors in malaria diagnosis?",
+      "What is lab-on-a-chip malaria testing?",
+      "What new treatments are being researched for malaria?",
+      "What is nanomedicine in malaria treatment?",
+      "Why is combination therapy used in malaria?",
+      "What is tafenoquine used for?",
+      "Explain the life cycle of malaria",
+      "Different species of Plasmodium",
+      "What are complications of malaria?",
+      "Explain chloroquine mechanism of action",
+      "Why is malaria a public health problem?",
+      "What mosquito transmits malaria?",
+      "How do you differentiate anopheline mosquitoes?",
+      "Which Plasmodium species cause malaria?",
+      "What is the incubation period of malaria?",
+      "What is uncomplicated malaria?",
+      "What vaccines are available for malaria?",
+      "How does climate change affect malaria?",
+      "What are the WHO guidelines for malaria?",
+      "How is malaria prevented according to WHO?",
+      "Which bed nets does WHO recommend?",
+      "What malaria prevention is recommended in pregnancy?",
+      "What is seasonal malaria chemoprevention?",
+      "What strategies are used for malaria elimination?"
     ]
   },
-  "complications": [
-    "Cerebral malaria — confusion, seizures, coma (mainly P. falciparum)",
-    "Severe anaemia requiring blood transfusion",
-    "Acute respiratory distress syndrome (ARDS)",
-    "Acute kidney injury (blackwater fever — haemoglobin in urine)",
-    "Hypoglycaemia (especially in pregnant women and children)",
-    "Splenic rupture",
-    "Pulmonary oedema",
-    "Shock and multi-organ failure",
-    "Death if untreated severe malaria"
-  ],
-  "prevention": [
-    "Sleep under insecticide-treated bed nets (ITNs) every night",
-    "Indoor residual spraying (IRS) with approved insecticides",
-    "Use of insect repellents (DEET-based) on exposed skin",
-    "Wear long-sleeved clothing and long trousers at night",
-    "Malaria vaccination: RTS,S/AS01 (Mosquirix) and R21/Matrix-M — for children in high-transmission areas",
-    "Seasonal Malaria Chemoprevention (SMC) for children in Sahel region",
-    "Intermittent Preventive Treatment in Pregnancy (IPTp) using sulfadoxine-pyrimethamine",
-    "Eliminate standing water and mosquito breeding sites near homes",
-    "Take prescribed chemoprophylaxis before and during travel to endemic areas"
-  ],
-  "emergency_signs": [
-    "Altered consciousness, confusion, or coma (cerebral malaria)",
-    "Multiple seizures",
-    "Severe respiratory distress or laboured breathing",
-    "Inability to sit or stand (extreme weakness/prostration)",
-    "Passage of dark red/black urine (blackwater fever)",
-    "Heavy bleeding or signs of severe anaemia (extreme pallor)",
-    "Persistent vomiting — unable to take oral medication",
-    "Hypoglycaemia (low blood sugar)"
-  ],
-  "faqs": [
-    {
-      "question": "Can malaria be completely cured?",
-      "answer": "Yes, with correct treatment. P. falciparum malaria is curable with ACT. P. vivax and P. ovale require additional treatment with Primaquine to eliminate dormant liver stages and prevent relapse."
+  {
+    "source": [
+      {
+        "title": "Management of Severe Malaria: A Practical Handbook",
+        "edition": "3rd",
+        "year": 2012,
+        "publisher": "World Health Organization",
+        "programme": "Global Malaria Programme",
+        "isbn": "9789241548526",
+        "audience": [
+          "clinicians",
+          "hospital staff",
+          "health workers in endemic and non-endemic areas"
+        ],
+        "credibility": "WHO guideline"
+      }
+    ],
+    "disease": "severe malaria",
+    "definition": {
+      "severe_malaria": "Malaria with clinical or laboratory evidence of vital organ dysfunction",
+      "clinical_rule": "Low threshold for starting parenteral treatment when severe malaria is suspected"
     },
-    {
-      "question": "Can malaria relapse after treatment?",
-      "answer": "Yes. P. vivax and P. ovale form dormant liver stages (hypnozoites) that can reactivate weeks to years later. Primaquine or Tafenoquine is required for radical cure and relapse prevention."
+    "epidemiology": {
+      "global_population_at_risk": ">40%",
+      "countries_with_transmission": 99,
+      "high_mortality_group": "Children under 5 years in sub-Saharan Africa",
+      "non_endemic_risk": "Returned travelers"
     },
-    {
-      "question": "Is malaria contagious from person to person?",
-      "answer": "Malaria cannot spread directly between people through casual contact. It is transmitted only via infected Anopheles mosquito bites. However, it can rarely spread through blood transfusion, organ transplant, or from mother to unborn child."
+    "severe_malaria_types": {
+      "severe_falciparum_malaria": {
+        "mortality": "highest",
+        "note": "Responsible for nearly all malaria deaths"
+      },
+      "severe_vivax_malaria": {
+        "severity": "less common but potentially fatal",
+        "common_complications": [
+          "severe anemia",
+          "respiratory distress"
+        ]
+      },
+      "severe_knowlesi_malaria": {
+        "replication_cycle": "24 hours",
+        "risk": "rapid parasitemia increase",
+        "diagnostic_issue": "misidentified as P. malariae",
+        "confirmation": "PCR"
+      }
     },
-    {
-      "question": "Is there a vaccine for malaria?",
-      "answer": "Yes. RTS,S/AS01 (Mosquirix) and R21/Matrix-M are WHO-recommended malaria vaccines for children in moderate-to-high transmission areas. They reduce severe malaria cases significantly but are not 100% protective — other preventive measures remain essential."
-    }
-  ]
-}
+    "clinical_features_severe_malaria": {
+      "neurological": [
+        "impaired consciousness",
+        "unrousable coma",
+        "multiple convulsions (>2 in 24h)",
+        "abnormal posturing"
+      ],
+      "respiratory": [
+        "deep breathing (metabolic acidosis)",
+        "acute pulmonary oedema",
+        "ARDS"
+      ],
+      "circulatory": [
+        "shock",
+        "circulatory collapse"
+      ],
+      "renal": [
+        "acute kidney injury",
+        "oliguria",
+        "anuria"
+      ],
+      "hematological": [
+        "severe anemia",
+        "abnormal bleeding",
+        "DIC",
+        "haemoglobinuria"
+      ],
+      "metabolic": [
+        "hypoglycaemia",
+        "metabolic acidosis",
+        "hyperlactataemia"
+      ],
+      "hepatic": [
+        "clinical jaundice with organ dysfunction"
+      ]
+    },
+    "high_risk_groups": [
+      "children under 5",
+      "pregnant women (2nd and 3rd trimester)",
+      "non-immune travelers",
+      "HIV/AIDS patients",
+      "splenectomized patients"
+    ],
+    "parasitaemia_risk": {
+      "low_transmission_areas": "risk increases >100,000 parasites/µL (~2.5%)",
+      "any_setting_high_risk": ">20% parasitaemia",
+      "note": "Low peripheral parasitaemia does not exclude severe disease"
+    },
+    "diagnosis": {
+      "clinical_principle": "High index of suspicion in any febrile illness with exposure history",
+      "gold_standard": "Microscopy (thick and thin blood films)",
+      "rdt_use": {
+        "when_microscopy_unavailable": true,
+        "pfhrp2_limitations": [
+          "cannot monitor treatment response",
+          "remains positive up to 4 weeks"
+        ]
+      },
+      "monitoring": {
+        "parasite_counts": "every 12 hours for first 2–3 days",
+        "importance": "detect treatment failure or resistance"
+      }
+    },
+    "general_management": {
+      "admission": [
+        "acute illness ward",
+        "ICU if available"
+      ],
+      "immediate_actions": [
+        "rapid clinical assessment",
+        "blood glucose check",
+        "seizure control",
+        "start parenteral antimalarial immediately"
+      ],
+      "first_line_antimalarial": {
+        "drug": "intravenous artesunate",
+        "replacement_of": "quinine",
+        "minimum_duration": "24 hours"
+      },
+      "step_down_therapy": "full course of oral ACT after parenteral therapy"
+    },
+    "antimalarial_drugs": {
+      "preferred": "artesunate (IV or IM)",
+      "alternatives": [
+        "artemether (IM)",
+        "quinine (IV)"
+      ],
+      "pre_referral": [
+        "rectal artesunate",
+        "suppository artemisinin"
+      ]
+    },
+    "nursing_care": {
+      "priority": "life-saving",
+      "key_measures": [
+        "maintain airway",
+        "lateral or semi-prone positioning",
+        "frequent turning (every 2 hours)",
+        "strict fluid balance monitoring",
+        "frequent vital signs monitoring"
+      ],
+      "coma_monitoring": [
+        "Blantyre coma scale (children)",
+        "Glasgow coma scale (adults)"
+      ]
+    },
+    "fluid_management": {
+      "children": "3–4 ml/kg/hour",
+      "adults": "1–2 ml/kg/hour",
+      "rule": "avoid rapid bolus",
+      "urine_output_target": ">1 ml/kg/hour"
+    },
+    "management_of_complications": {
+      "hypoglycaemia": {
+        "threshold": "<3 mmol/L",
+        "treatment": "10% dextrose bolus + infusion",
+        "monitoring": "frequent glucose checks"
+      },
+      "convulsions": {
+        "first_line": "benzodiazepines",
+        "second_line": "phenytoin",
+        "warning": "high-dose phenobarbitone increases mortality"
+      },
+      "severe_anaemia": {
+        "transfusion_thresholds": {
+          "high_transmission": "Hb ≤4 g/dL",
+          "low_transmission": "Hb ≤7 g/dL"
+        }
+      },
+      "shock": {
+        "management": [
+          "maintenance fluids",
+          "broad-spectrum antibiotics"
+        ]
+      },
+      "respiratory_distress": {
+        "cause": "metabolic acidosis",
+        "management": [
+          "oxygen",
+          "correct anemia",
+          "cautious fluids"
+        ]
+      },
+      "acute_kidney_injury": {
+        "monitoring": [
+          "urine output",
+          "creatinine"
+        ],
+        "advanced": "dialysis if available"
+      }
+    },
+    "pregnancy": {
+      "risk": "high maternal and fetal mortality",
+      "treatment": "same principles as non-pregnant adults",
+      "complications": [
+        "hypoglycaemia",
+        "pulmonary oedema",
+        "severe anemia"
+      ]
+    },
+    "prognostic_indicators": {
+      "poor_outcome_markers": [
+        "coma",
+        "severe acidosis",
+        "hyperparasitaemia",
+        "renal failure",
+        "hypoglycaemia",
+        "shock"
+      ]
+    },
+    "common_errors": {
+      "diagnosis": [
+        "failure to test for malaria",
+        "false reassurance from low parasitaemia"
+      ],
+      "management": [
+        "delayed parenteral treatment",
+        "fluid overload",
+        "use of contraindicated drugs"
+      ]
+    },
+    "chatbot_intents": [
+      "What is severe malaria?",
+      "When is malaria considered severe?",
+      "How is severe malaria diagnosed?",
+      "What is first-line treatment for severe malaria?",
+      "How is cerebral malaria managed?",
+      "What complications occur in severe malaria?",
+      "How is severe malaria treated in children?",
+      "How is severe malaria treated in pregnancy?",
+      "Why was artesunate preferred over quinine?",
+      "What nursing care is required in severe malaria?"
+    ]
+  }
+]
