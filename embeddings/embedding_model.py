@@ -13,21 +13,30 @@ from llm.config import OLLAMA_BASE_URL, OLLAMA_EMBED_MODEL
 # 8 is safe for local Ollama; raise to 16 if your machine has more RAM
 MAX_WORKERS = 4
 
+
 def get_embedding(text: str) -> np.ndarray:
     """Return a numpy embedding vector for a single text string."""
     url = f"{OLLAMA_BASE_URL}/api/embeddings"
     payload = {"model": OLLAMA_EMBED_MODEL, "prompt": text}
 
     try:
-        r = requests.post(url, json=payload, timeout=60)
+        r = requests.post(url, json=payload, timeout=90)
         r.raise_for_status()
         return np.array(r.json()["embedding"], dtype=np.float32)
+    
+    except requests.exceptions.HTTPError as e:
+        error_body = ""
+        try:
+            error_body = r.json() if 'r' in locals() else r.text
+        except:
+            error_body = r.text if 'r' in locals() else str(e)
+        raise RuntimeError(f"❌ Ollama 500 Error for model '{OLLAMA_EMBED_MODEL}':\n{error_body}") from e
+    
     except requests.exceptions.ConnectionError:
-        raise RuntimeError("Ollama server not reachable. Run `ollama serve`.")
-    except KeyError:
-        raise RuntimeError(f"Model '{OLLAMA_EMBED_MODEL}' may not support embeddings. "
-                           f"Run `ollama pull {OLLAMA_EMBED_MODEL}`.")
-
+        raise RuntimeError("❌ Cannot connect to Ollama. Run `ollama serve` in another terminal.")
+    
+    except Exception as e:
+        raise RuntimeError(f"❌ Unexpected embedding error: {e}") from e
 
 def get_embeddings_batch(texts: list[str],
                          max_workers: int = MAX_WORKERS) -> np.ndarray:
@@ -65,10 +74,13 @@ def get_embeddings_batch(texts: list[str],
                 except Exception as e:
                     idx = futures[future]
                     # on error keep a zero vector so vstack never fails
-                    results[idx] = np.zeros(
-                        results[next(r for r in results if r is not None)].shape,
-                        dtype=np.float32
-                    ) if any(r is not None for r in results) else np.zeros(768, dtype=np.float32)
+                    # fallback zero vector
+                    existing = next((r for r in results if r is not None), None)
+
+                    if existing is not None:
+                        results[idx] = np.zeros(existing.shape, dtype=np.float32)
+                    else:
+                        results[idx] = np.zeros(768, dtype=np.float32)
                     tqdm.write(f"  [WARNING] chunk {idx} failed: {e}")
                 finally:
                     bar.update(1)

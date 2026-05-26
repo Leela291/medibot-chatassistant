@@ -2,7 +2,7 @@
 """Formats retrieved chunks into a clean context string for the LLM."""
 
 
-def build_context(chunks: list[dict], max_chars: int = 800) -> str:
+def build_context(chunks: list[dict], max_chars: int = 1200) -> str:
     """
     Build a formatted context block from retrieved chunks.
 
