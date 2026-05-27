@@ -64,21 +64,49 @@ def load_and_chunk_dataset(json_path: str) -> list[dict]:
     """
     Load a disease JSON file and return a list of chunk dicts:
     {"text": ..., "source": ..., "disease": ...}
-
-    Handles both formats:
-      - plain dict  { ... }           (single disease)
-      - list        [ {...}, {...} ]   (multiple diseases, e.g. 1.json)
     """
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # ── normalise to a list of disease dicts ─────────────────────────
-    if isinstance(data, dict):
-        items = [data]
-    elif isinstance(data, list):
-        items = data
+    # 1. Normalize the root object (handle if it's wrapped in a list)
+    if isinstance(data, list) and len(data) > 0:
+        primary_obj = data[0]
+    elif isinstance(data, dict):
+        primary_obj = data
     else:
-        raise ValueError(f"Unexpected JSON structure in {json_path}: {type(data)}")
+        primary_obj = {}
+
+    # 2. Robustly extract the disease name across different schemas
+    disease_name = None
+    
+    # Check direct "disease" key
+    if "disease" in primary_obj:
+        val = primary_obj["disease"]
+        if isinstance(val, dict) and "name" in val:  # Handles asthma.json
+            disease_name = val["name"]
+        elif isinstance(val, str):
+            disease_name = val
+            
+    # Check "summary_profile" nesting (from our previous fix)
+    elif "summary_profile" in primary_obj and "disease" in primary_obj["summary_profile"]:
+        disease_name = primary_obj["summary_profile"]["disease"]
+        
+    # Check "disease_identity" nesting
+    elif "disease_identity" in primary_obj and "name" in primary_obj["disease_identity"]:
+        disease_name = primary_obj["disease_identity"]["name"]
+
+    # Fallback to the filename if the key is missing entirely
+    disease_name = disease_name or Path(json_path).stem
+
+    # 3. Flatten and chunk as normal
+    sentences = flatten_json(data)
+    full_text = "\n".join(sentences)
+
+    raw_chunks = chunk_text(full_text)
+    return [
+        {"text": c, "source": json_path, "disease": disease_name}
+        for c in raw_chunks
+    ]
 
     # ── chunk every disease object and combine ────────────────────────
     all_chunks = []
