@@ -13,7 +13,6 @@ from llm.config import TOP_K_RESULTS
 _index = None
 _metadata = None
 
-
 def _ensure_loaded():
     global _index, _metadata
     if _index is None:
@@ -45,7 +44,6 @@ def retrieve(query: str, top_k: int = TOP_K_RESULTS) -> list[dict]:
         results.append(chunk)
 
     return results
-
 
 def reload_index():
     """Force-reload the FAISS index from disk."""

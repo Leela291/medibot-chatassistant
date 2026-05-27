@@ -13,7 +13,7 @@ function App() {
   const [messages, setMessages] = useState([
     {
       role: "bot",
-      text: "Hello! I'm **MediBot** — your AI-powered medical assistant.\n\nI can help you with information about **Asthma**, **Dengue**, **Diabetes**, and **Hyperthyroidism**.\n\nYou can also **upload patient records** (PDF, images, CSV) and I'll analyze them for you.",
+      text: "Hello! I'm **MediBot** — your AI-powered medical assistant.\n\nI can help you with information about common diseases.\n\nYou can also **upload patient records** (PDF, images, CSV) and I'll analyze them for you.",
       time: formatTime(new Date()),
     },
   ]);
@@ -23,18 +23,56 @@ function App() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [uploadedFile, setUploadedFile] = useState(null);
   const [dragOver, setDragOver] = useState(false);
+  const [speakingMessageId, setSpeakingMessageId] = useState(null);
+
   const bottomRef = useRef(null);
   const fileInputRef = useRef(null);
   const inputRef = useRef(null);
+  const abortControllerRef = useRef(null);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
 
+  const toggleSpeak = (text, msgIndex) => {
+    const synth = window.speechSynthesis;
+
+    // Already reading this message → stop
+    if (speakingMessageId === msgIndex) {
+      synth.cancel();
+      setSpeakingMessageId(null);
+      return;
+    }
+    // Stop whatever was playing before
+    synth.cancel();
+    // Strip markdown so it reads naturally (no "asterisk asterisk bold text asterisk asterisk")
+    const clean = text
+      .replace(/\*\*(.*?)\*\*/g, "$1")
+      .replace(/\*(.*?)\*/g, "$1")
+      .replace(/#{1,6}\s?/g, "")
+      .replace(/\n/g, " ");
+
+    const utterance = new SpeechSynthesisUtterance(clean);
+    utterance.lang = "en-US";
+    utterance.rate = 1.5;
+    utterance.pitch = 1.0;
+
+    utterance.onend  = () => setSpeakingMessageId(null);
+    utterance.onerror = () => setSpeakingMessageId(null);
+
+    synth.speak(utterance);
+    setSpeakingMessageId(msgIndex);
+  };
+
   /* ── Send message ── */
   const sendMessage = useCallback(async (overrideText) => {
     const text = (overrideText || input).trim();
     if (!text && !uploadedFile) return;
+
+    // Cancel any previous request
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
 
     const userMsg = {
       role: "user",
@@ -42,15 +80,17 @@ function App() {
       time: formatTime(new Date()),
       file: uploadedFile ? uploadedFile.name : null,
     };
+
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
     setLoading(true);
+
+    abortControllerRef.current = new AbortController();   // ← New
 
     try {
       let data;
 
       if (uploadedFile) {
-        // File upload flow
         const formData = new FormData();
         formData.append("file", uploadedFile);
         formData.append("message", text || "Analyze this patient record");
@@ -59,11 +99,11 @@ function App() {
         const res = await fetch(`${API}/chat/upload`, {
           method: "POST",
           body: formData,
+          signal: abortControllerRef.current.signal,   // ← Important
         });
         data = await res.json();
         setUploadedFile(null);
       } else {
-        // Normal chat flow
         const res = await fetch(`${API}/chat`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -71,6 +111,7 @@ function App() {
             message: text,
             session_id: sessionId,
           }),
+          signal: abortControllerRef.current.signal,   // ← Important
         });
         data = await res.json();
       }
@@ -85,21 +126,35 @@ function App() {
           time: formatTime(new Date()),
           sources: data.sources,
           isEmergency: data.is_emergency,
+          id: Date.now(),
         },
       ]);
     } catch (err) {
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "bot",
-          text: "⚠️ Unable to connect to MediBot server. Please make sure the backend is running on port 5000.",
-          time: formatTime(new Date()),
-          isError: true,
-        },
-      ]);
+      if (err.name === "AbortError") {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "bot",
+            text: "❌️ Request cancelled. Feel free to ask something else!",
+            time: formatTime(new Date()),
+            isError: true,
+          },
+        ]);
+      } else {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "bot",
+            text: "⚠️ Unable to connect to MediBot server.",
+            time: formatTime(new Date()),
+            isError: true,
+          },
+        ]);
+      }
     }
+
     setLoading(false);
-    inputRef.current?.focus();
+    abortControllerRef.current = null;
   }, [input, uploadedFile, sessionId]);
 
   /* ── New session ── */
@@ -155,17 +210,19 @@ function App() {
 
   /* ── Quick topics ── */
   const topics = [
-    { label: "Asthma", icon: "🫁", color: "#6C5CE7" },
-    { label: "Dengue", icon: "🦟", color: "#E17055" },
-    { label: "Diabetes", icon: "🩸", color: "#00B894" },
-    { label: "Hyperthyroidism", icon: "🦋", color: "#0984E3" },
+    { label: "Cold", icon: "❄️", color: "#6C5CE7" },
+    { label: "Dengue Fever", icon: "🦟", color: "#E17055" },
+    { label: "Covid19", icon: "🦠", color: "#00B894" },
+    { label: "Flu", icon: "🤧", color: "#0984E3" },
+    { label: "Asthma", icon: "🫁", color: "#FD79A8" },
+    { label: "Diabetes", icon: "🍬", color: "#00CEC9" },
   ];
 
   const quickActions = [
     { label: "Symptoms", query: (t) => `What are the symptoms of ${t}?` },
     { label: "Treatment", query: (t) => `How is ${t} treated?` },
     { label: "Prevention", query: (t) => `How to prevent ${t}?` },
-    { label: "Emergency Signs", query: (t) => `What are the emergency signs of ${t}?` },
+
   ];
 
   return (
@@ -309,12 +366,10 @@ function App() {
               className={`message-row ${m.role} ${m.isEmergency ? "emergency" : ""} ${m.isError ? "error" : ""}`}
             >
               {m.role === "bot" && (
-                <div className="avatar bot-avatar">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
-                    <path d="M12 2L12 22M2 12L22 12" strokeLinecap="round" />
-                  </svg>
-                </div>
-              )}
+                    <div className="avatar bot-avatar">
+                      <span className="bot-emoji">🤖</span>
+                    </div>
+                  )}
               <div className="message-content">
                 <div className={`message-bubble ${m.role}`}>
                   {m.file && (
@@ -341,14 +396,39 @@ function App() {
                     </div>
                   )}
                 </div>
+
+                {/* 🔊 Speak button — sits right below the bot reply bubble */}
+                {m.role === "bot" && m.text && (
+                  <button
+                    className={`speak-btn ${speakingMessageId === i ? "speaking" : ""}`}
+                    onClick={() => toggleSpeak(m.text, i)}
+                    title={speakingMessageId === i ? "Stop reading" : "Read aloud"}
+                  >
+                    {speakingMessageId === i ? (
+                      <>
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13">
+                          <rect x="5" y="5" width="14" height="14" rx="2" />
+                        </svg>
+                        Stop
+                      </>
+                    ) : (
+                      <>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="13" height="13">
+                          <polygon points="11,5 6,9 2,9 2,15 6,15 11,19" />
+                          <path d="M15.54 8.46a5 5 0 0 1 0 7.07" strokeLinecap="round"/>
+                          <path d="M19.07 4.93a10 10 0 0 1 0 14.14" strokeLinecap="round"/>
+                        </svg>
+                        Read aloud
+                      </>
+                    )}
+                  </button>
+                )}
+                
                 <span className="message-time">{m.time}</span>
               </div>
               {m.role === "user" && (
                 <div className="avatar user-avatar">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
+                  <span className="user-emoji">👤</span>
                 </div>
               )}
             </div>
@@ -357,9 +437,7 @@ function App() {
           {loading && (
             <div className="message-row bot">
               <div className="avatar bot-avatar">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
-                  <path d="M12 2L12 22M2 12L22 12" strokeLinecap="round" />
-                </svg>
+                <span className="bot-emoji">🤖</span>
               </div>
               <div className="message-content">
                 <div className="message-bubble bot typing-bubble">
@@ -411,37 +489,39 @@ function App() {
         {/* Input Area */}
         <div className="input-area">
           <div className="input-wrapper">
-            <button
-              className="attach-btn"
-              onClick={() => fileInputRef.current?.click()}
-              title="Upload patient records"
-            >
+            <button className="attach-btn" onClick={() => fileInputRef.current?.click()} disabled={loading}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
                 <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
+
             <input
               ref={inputRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && sendMessage()}
-              placeholder={
-                uploadedFile
-                  ? `Ask about ${uploadedFile.name}...`
-                  : "Describe your symptoms or ask a medical question..."
-              }
+              onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && !loading && sendMessage()}
+              placeholder={uploadedFile ? `Ask about ${uploadedFile.name}...` : "Describe your symptoms..."}
+              disabled={loading}
               className="chat-input"
             />
-            <button
-              className={`send-btn ${(input.trim() || uploadedFile) ? "active" : ""}`}
-              onClick={() => sendMessage()}
-              disabled={!input.trim() && !uploadedFile}
-            >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
-                <line x1="22" y1="2" x2="11" y2="13" />
-                <polygon points="22,2 15,22 11,13 2,9" />
-              </svg>
-            </button>
+            {loading ? (
+              <button className="cancel-btn" onClick={() => {
+                abortControllerRef.current?.abort();
+              }}>
+                Cancel
+              </button>
+            ) : (
+              <button
+                className={`send-btn ${(input.trim() || uploadedFile) ? "active" : ""}`}
+                onClick={() => sendMessage()}
+                disabled={!input.trim() && !uploadedFile}
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22,2 15,22 11,13 2,9" />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
       </main>

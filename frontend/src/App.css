@@ -476,29 +476,7 @@ body {
   flex-direction: row-reverse;
 }
 
-/* ── Avatars ── */
-.avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.bot-avatar {
-  background: var(--accent-gradient);
-  color: white;
-  box-shadow: var(--accent-glow);
-}
-
-.user-avatar {
-  background: var(--bg-surface);
-  color: var(--accent-primary);
-  border: 1px solid var(--border-medium);
-}
+/* Avatars: consolidated and styled further below */
 
 /* ── Message Bubbles ── */
 .message-content {
@@ -720,7 +698,7 @@ body {
 
 .input-wrapper:focus-within {
   border-color: var(--accent-primary);
-  box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.15);
 }
 
 .attach-btn {
@@ -823,4 +801,90 @@ body {
   .input-area {
     padding: 12px;
   }
+}
+
+/* Bot Avatar */
+.bot-avatar {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gradient);
+  box-shadow: var(--accent-glow);
+  border-radius: 50%;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 50%;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.bot-emoji, .user-emoji {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-btn {
+  background: var(--emergency-red);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+
+.cancel-btn:hover {
+  background: #ff3749;
+  transform: translateY(-1px);
+}
+
+.speak-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 5px 12px;
+  font-size: 12.5px;
+  font-weight: 500;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--border-medium);
+  border-radius: 30px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.speak-btn:hover {
+  background: rgba(0, 210, 255, 0.1);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.speak-btn.speaking {
+  background: rgba(46, 213, 115, 0.15);
+  border-color: #2ed573;
+  color: #2ed573;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.9; }
 }
