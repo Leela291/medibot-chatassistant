@@ -213,6 +213,69 @@ body {
   flex-shrink: 0;
 }
 
+/* Horizontal slider for topics */
+.topics-slider {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+.topics-slider::-webkit-scrollbar {
+  height: 8px;
+}
+.topics-slider::-webkit-scrollbar-thumb {
+  background: var(--bg-surface);
+  border-radius: 9999px;
+}
+
+/* Make each topic a compact card inside the slider */
+.topics-slider .topic-btn {
+  min-width: 100px;
+  max-width: 100px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.topic-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.topic-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Compact quick-action buttons */
+.quick-action-btn {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-medium);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  line-height: 1;
+}
+.quick-action-btn:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  background: rgba(0, 210, 255, 0.06);
+}
+
 /* ── Upload Zone ── */
 .upload-zone {
   border: 2px dashed var(--border-medium);
@@ -455,9 +518,9 @@ body {
   display: flex;
   gap: 12px;
   margin-bottom: 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: none;
+  padding: 0 10px;
   animation: fadeIn 0.3s ease-out;
 }
 
@@ -480,8 +543,21 @@ body {
 
 /* ── Message Bubbles ── */
 .message-content {
-  max-width: 75%;
+  /* Allow message bubble to expand with available space (leave room for avatar) */
+  max-width: calc(100% - 100px);
   min-width: 80px;
+}
+
+/* For very large screens, keep a readable line length */
+@media (min-width: 1200px) {
+  .message-row {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .message-content {
+    max-width: 85%;
+  }
 }
 
 .message-bubble {
@@ -887,4 +963,32 @@ body {
 @keyframes pulse {
   0%, 100% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.08); opacity: 0.9; }
+}
+
+/* Mobile overlay and sidebar width tweaks */
+@media (max-width: 768px) {
+  .sidebar {
+    width: min(85vw, 320px);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 90;
+  }
+}
+
+/* Hide overlay on larger screens */
+.sidebar-overlay {
+  display: none;
 }

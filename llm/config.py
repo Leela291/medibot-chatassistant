@@ -12,7 +12,7 @@ OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
 # ── RAG settings ─────────────────────────────────────────────────────────────
 CHUNK_SIZE        = int(os.getenv("CHUNK_SIZE", 256))
 CHUNK_OVERLAP     = int(os.getenv("CHUNK_OVERLAP", 64))
-TOP_K_RESULTS     = int(os.getenv("TOP_K_RESULTS", 3))
+TOP_K_RESULTS     = int(os.getenv("TOP_K_RESULTS", 2))
 
 # ── FAISS settings ────────────────────────────────────────────────────────────
 FAISS_INDEX_PATH  = os.getenv("FAISS_INDEX_PATH", "vector_db/db/faiss.index")

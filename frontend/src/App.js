@@ -210,19 +210,23 @@ function App() {
 
   /* ── Quick topics ── */
   const topics = [
-    { label: "Cold", icon: "❄️", color: "#6C5CE7" },
-    { label: "Dengue Fever", icon: "🦟", color: "#E17055" },
-    { label: "Covid19", icon: "🦠", color: "#00B894" },
+    { label: "Common Cold", icon: "❄️", color: "#6C5CE7" },
     { label: "Flu", icon: "🤧", color: "#0984E3" },
+    { label: "Covid19", icon: "🦠", color: "#00B894" },
     { label: "Asthma", icon: "🫁", color: "#FD79A8" },
     { label: "Diabetes", icon: "🍬", color: "#00CEC9" },
+    { label: "Dengue Fever", icon: "🦟", color: "#E17055" },
+    { label: "Malaria", icon: "🩸", color: "#2d3436" },
+    { label: "Tuberculosis", icon: "🦠", color: "#d63031" },
+    { label: "Typhoid", icon: "🤒", color: "#e84393" },
+    { label: "Diarrhoeal", icon: "🤢", color: "#e17055" },
   ];
 
   const quickActions = [
     { label: "Symptoms", query: (t) => `What are the symptoms of ${t}?` },
     { label: "Treatment", query: (t) => `How is ${t} treated?` },
     { label: "Prevention", query: (t) => `How to prevent ${t}?` },
-
+    { label: "Food", query: (t) => `What food is recommended for ${t}?` },
   ];
 
   return (
@@ -252,8 +256,9 @@ function App() {
 
         <div className="sidebar-section">
           <h3 className="section-title">Quick Topics</h3>
+          <div className="topics-slider">
           {topics.map((t) => (
-            <button
+            <div
               key={t.label}
               className="topic-btn"
               onClick={() => sendMessage(`Tell me about ${t.label}`)}
@@ -261,9 +266,26 @@ function App() {
               <span className="topic-icon" style={{ background: t.color }}>
                 {t.icon}
               </span>
-              {t.label}
-            </button>
+              <span className="topic-label">{t.label}</span>
+
+              <div className="topic-actions">
+                {quickActions.map((a) => (
+                  <button
+                    key={a.label}
+                    className="quick-action-btn"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      sendMessage(a.query(t.label));
+                    }}
+                    title={`${a.label} about ${t.label}`}
+                  >
+                    {a.label}
+                  </button>
+                ))}
+              </div>
+            </div>
           ))}
+          </div>
         </div>
 
         <div className="sidebar-section">
@@ -300,6 +322,12 @@ function App() {
           </div>
         </div>
       </aside>
+      {sidebarOpen && (
+        <div
+          className="sidebar-overlay"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
 
       {/* ── Main Chat ── */}
       <main className="chat-main">
@@ -330,36 +358,6 @@ function App() {
 
         {/* Messages */}
         <div className="messages-container">
-          {messages.length === 1 && (
-            <div className="welcome-cards">
-              <h3 className="welcome-title">What would you like to know?</h3>
-              <div className="cards-grid">
-                {topics.map((t) => (
-                  <div key={t.label} className="welcome-card" onClick={() => sendMessage(`Tell me about ${t.label}`)}>
-                    <div className="card-icon" style={{ background: `${t.color}20`, color: t.color }}>
-                      {t.icon}
-                    </div>
-                    <h4>{t.label}</h4>
-                    <div className="card-actions">
-                      {quickActions.map((a) => (
-                        <button
-                          key={a.label}
-                          className="card-action-btn"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            sendMessage(a.query(t.label));
-                          }}
-                        >
-                          {a.label}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
           {messages.map((m, i) => (
             <div
               key={i}
