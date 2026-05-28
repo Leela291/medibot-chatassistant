@@ -9,6 +9,9 @@ OLLAMA_BASE_URL   = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 OLLAMA_LLM_MODEL  = os.getenv("OLLAMA_LLM_MODEL", "llama3.2:1b")
 OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
 
+# ── API settings ───────────────────────────────────────────────────────
+OPENFDA_API_KEY = os.getenv("OPENFDA_API_KEY", "TcUuE16FSG3oEohZWkekpFpibcGSnI7mfoNccJYJ")
+
 # ── RAG settings ─────────────────────────────────────────────────────────────
 CHUNK_SIZE        = int(os.getenv("CHUNK_SIZE", 256))
 CHUNK_OVERLAP     = int(os.getenv("CHUNK_OVERLAP", 64))
