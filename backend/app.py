@@ -4,13 +4,13 @@ Flask application entry point.
 """
 import sys
 import os
-from dotenv import load_dotenv  # 1. IMPORT THIS FIRST
+from dotenv import load_dotenv
 
 # Make project root importable
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Quick test to print in your terminal window when booting up
-print("🔑 FDA API Key successfully loaded into memory:",{"OPENFDA_API_KEY"} is not None)
+print("🔑 FDA API Key successfully loaded into memory:", {"OPENFDA_API_KEY"} is not None)
 
 from flask import Flask
 from flask_cors import CORS

@@ -25,7 +25,7 @@ METADATA_PATH     = os.getenv("METADATA_PATH", "vector_db/db/metadata.pkl")
 DATASETS_DIR      = os.getenv("DATASETS_DIR", "datasets")
 
 # ── Session / Memory ──────────────────────────────────────────────────────────
-MAX_HISTORY_TURNS = int(os.getenv("MAX_HISTORY_TURNS", 5))
+MAX_HISTORY_TURNS = int(os.getenv("MAX_HISTORY_TURNS", 3))
 
 # ── Generation parameters ─────────────────────────────────────────────────────
 LLM_TEMPERATURE   = float(os.getenv("LLM_TEMPERATURE", 0.3))
