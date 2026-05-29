@@ -101,8 +101,16 @@ function App() {
           body: formData,
           signal: abortControllerRef.current.signal,   // ← Important
         });
+        if (!res.ok) {
+          throw new Error(`Upload failed: ${res.status}`);
+        }
         data = await res.json();
         setUploadedFile(null);
+
+        if (fileInputRef.current) {
+          fileInputRef.current.value = "";
+        }
+
       } else {
         const res = await fetch(`${API}/chat`, {
           method: "POST",
@@ -171,34 +179,65 @@ function App() {
   };
 
   /* ── File handling ── */
-  const handleFileSelect = (e) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      const validTypes = [
-        "application/pdf",
-        "image/png",
-        "image/jpeg",
-        "image/jpg",
-        "text/csv",
-        "application/vnd.ms-excel",
-        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-      ];
-      if (validTypes.includes(file.type) || file.name.endsWith(".csv")) {
-        setUploadedFile(file);
-      } else {
-        alert("Please upload PDF, Image (PNG/JPG), or CSV/Excel files only.");
-      }
+const handleFileSelect = (e) => {
+  const file = e.target.files?.[0];
+  if (file) {
+    const validTypes = [
+      "application/pdf",
+      "image/png",
+      "image/jpeg",
+      "image/jpg",
+      "text/csv",
+      "text/plain",
+      "application/json",
+      "application/vnd.ms-excel",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    ];
+
+    if (
+      validTypes.includes(file.type) ||
+      file.name.match(/\.(csv|xls|xlsx|txt|json)$/i)
+    ) {
+      setUploadedFile(file);
+    } else {
+      alert(
+        "Please upload PDF, Image (PNG/JPG), CSV, Excel, TXT, or JSON files only."
+      );
     }
-  };
+  }
+  // Important: allows re-selecting the same file
+  e.target.value = "";
+};
 
   const handleDrop = (e) => {
-    e.preventDefault();
-    setDragOver(false);
-    const file = e.dataTransfer.files?.[0];
-    if (file) {
-      setUploadedFile(file);
-    }
-  };
+  e.preventDefault();
+  setDragOver(false);
+
+  const file = e.dataTransfer.files?.[0];
+
+  if (!file) return;
+
+  const validTypes = [
+    "application/pdf",
+    "image/png",
+    "image/jpeg",
+    "image/jpg",
+    "text/csv",
+    "text/plain",
+    "application/json",
+    "application/vnd.ms-excel",
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  ];
+
+  if (
+    validTypes.includes(file.type) ||
+    file.name.match(/\.(csv|xls|xlsx|txt|json)$/i)
+  ) {
+    setUploadedFile(file);
+  } else {
+    alert("Please upload PDF, Image (PNG/JPG), CSV, Excel, TXT, or JSON files only.");
+  }
+};
 
   /* ── Render markdown-lite ── */
   const renderText = (text) => {
@@ -467,7 +506,12 @@ function App() {
             </div>
             <button
               className="remove-file-btn"
-              onClick={() => setUploadedFile(null)}
+              onClick={() => {
+              if (fileInputRef.current) {
+                fileInputRef.current.value = "";
+              }
+              setUploadedFile(() => null);
+            }}
             >
               ✕
             </button>

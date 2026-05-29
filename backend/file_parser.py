@@ -128,8 +128,8 @@ def _parse_image(file_storage, filename):
             }
     except ImportError:
         pass
-    except Exception:
-        pass
+    except Exception as e:
+        print("OCR Error:", e)
 
     # Fallback: try to read basic image info
     try:
