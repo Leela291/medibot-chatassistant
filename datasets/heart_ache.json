@@ -1,0 +1,262 @@
+{
+  "disease": {
+    "id": "DIS-013",
+    "name": "Coronary Artery Disease",
+    "scientific_name": "Angina Pectoris",
+    "icd_10_code": "I25",
+    "category": "Cardiovascular Disease",
+    "overview": {
+      "description": "Coronary Artery Disease (CAD) is a condition where the major blood vessels supplying the heart (coronary arteries) become narrowed or blocked by plaque buildup (atherosclerosis). This limits blood flow to the heart muscle, causing chest pain (angina) or leading to a heart attack (myocardial infarction).",
+      "affected_organ": "Heart (Coronary Arteries)",
+      "prevalence": "The most common type of heart disease; affects over 244 million people worldwide.",
+      "age_group": "Common in middle-aged and older adults, risk increases with age.",
+      "is_contagious": false,
+      "is_curable": false,
+      "is_manageable": true,
+      "chronic": true
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Stable Angina",
+        "description": "Chest pain that occurs predictably during physical exertion or stress. Relieved by rest or nitroglycerin.",
+        "common_in": "CAD patients with moderate arterial narrowing"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Unstable Angina",
+        "description": "Chest pain that occurs unexpectedly, even at rest. It is severe, lasts longer, and does not respond well to medication. It is a medical emergency.",
+        "common_in": "Patients at immediate risk of heart attack"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Microvascular Angina",
+        "description": "Chest pain caused by spasms or blockages in the heart's smallest blood vessels rather than the main arteries.",
+        "common_in": "Women and younger individuals"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Asymptomatic CAD",
+        "frequency": "Plaque buildup without noticeable symptoms",
+        "impact": "Managed with lifestyle adjustments and cholesterol-lowering drugs"
+      },
+      {
+        "level": 2,
+        "name": "Chronic Stable Angina",
+        "frequency": "Predictable chest pain during physical activity",
+        "impact": "Requires daily medication (beta-blockers, nitroglycerin) to improve blood flow"
+      },
+      {
+        "level": 3,
+        "name": "Acute Coronary Syndrome (ACS) / Heart Attack",
+        "frequency": "Sudden occlusion of a coronary artery leading to heart muscle damage",
+        "impact": "CRITICAL EMERGENCY. Requires immediate angioplasty, thrombolytics, or bypass surgery"
+      }
+    ],
+
+    "causes": {
+      "genetic_factors": [
+        "Family history of early heart disease",
+        "Genetic predisposition to high blood pressure or hypercholesterolemia"
+      ],
+      "environmental_triggers": [
+        "Smoking and tobacco use (major risk factor)",
+        "Sedentary lifestyle and lack of physical exercise",
+        "High-fat, high-sodium diet",
+        "Chronic mental stress",
+        "Excessive alcohol intake"
+      ],
+      "other_causes": [
+        "Hypertension (high blood pressure)",
+        "Diabetes mellitus",
+        "Hyperlipidemia (high cholesterol)",
+        "Obesity"
+      ]
+    },
+
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-301",
+          "name": "Chest Pain (Angina)",
+          "description": "Pressure, squeezing, fullness, or pain in the center of the chest. May feel like a heavy weight sitting on the chest.",
+          "severity": "Moderate to Severe",
+          "onset": "Triggered by exercise, stress, or cold weather"
+        },
+        {
+          "id": "SYM-302",
+          "name": "Shortness of Breath (Dyspnea)",
+          "description": "Feeling winded or having difficulty catching breath, especially with physical exertion.",
+          "severity": "Moderate to Severe",
+          "onset": "Gradual or sudden"
+        },
+        {
+          "id": "SYM-303",
+          "name": "Pain Radiating to Arm, Neck, or Jaw",
+          "description": "Discomfort that spreads from the chest to the left shoulder, left arm, neck, jaw, or back.",
+          "severity": "Moderate to Severe",
+          "onset": "Often co-occurs with chest pressure"
+        }
+      ],
+      "secondary_symptoms": [
+        "Lightheadedness, dizziness, or feeling faint",
+        "Cold sweats (diaphoresis)",
+        "Nausea, indigestion, or heartburn-like pain (more common in women)",
+        "Fatigue or extreme weakness"
+      ],
+      "warning_signs_of_attack": [
+        "Chest pain/pressure lasting more than 5 minutes that does not go away with rest or nitroglycerin",
+        "Pain spreading to left shoulder, arm, throat, or jaw",
+        "Unexplained sweating combined with shortness of breath",
+        "Rapid or irregular pulse",
+        "Feeling of impending doom or panic"
+      ],
+      "symptoms_in_children": [
+        "Rare. Congenital coronary artery anomalies present with chest pain during competitive sports or feeding difficulties in infants"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Family history of cardiovascular events",
+        "Evaluation of symptom triggers, duration, and relief factors",
+        "Assessment of cardiovascular risk factors (diabetes, smoking)"
+      ],
+      "physical_examination": [
+        "Auscultation of heart sounds for murmurs or extra beats",
+        "Measuring blood pressure and heart rate",
+        "Checking pulse strength in limbs"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Electrocardiogram (ECG / EKG)",
+          "description": "Measures electrical activity of the heart.",
+          "purpose": "Detects ischemia, arrhythmia, or past heart attack patterns",
+          "key_metric": "ST-segment elevation or depression indicates active heart muscle distress"
+        },
+        {
+          "test_name": "Echocardiogram",
+          "description": "Ultrasound of the heart.",
+          "purpose": "Evaluates heart pumping efficiency (Ejection Fraction) and valve structure",
+          "key_metric": "Ejection Fraction < 50% indicates reduced heart function"
+        },
+        {
+          "test_name": "Cardiac stress test",
+          "description": "ECG monitoring while walking on a treadmill or under pharmacological stimulation.",
+          "purpose": "Evaluates heart performance under workload"
+        },
+        {
+          "test_name": "Cardiac Catheterization (Coronary Angiogram)",
+          "description": "Contrast dye is injected into arteries, and X-rays are taken to look for blockages.",
+          "purpose": "Gold standard for identifying exact locations of artery narrowing",
+          "key_metric": "Percentage blockage (> 70% narrowing is hemodynamically significant)"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "All medications should be taken only under the supervision of a licensed physician. Self-medication can be dangerous.",
+      "categories": [
+        {
+          "category_id": "MED-CAT-41",
+          "category_name": "Antiplatelets (Blood Thinners)",
+          "purpose": "Prevent blood clots from forming in narrowed coronary arteries, reducing heart attack risk",
+          "medicines": [
+            {
+              "name": "Aspirin (Low-Dose)",
+              "brand_examples": ["Ecotrin", "Ecosprin"],
+              "form": "Tablet",
+              "dosage": "75-150 mg once daily",
+              "use_case": "Primary and secondary prevention of cardiovascular events",
+              "side_effects": ["Stomach irritation", "Increased bleeding risk", "Bruising"]
+            },
+            {
+              "name": "Clopidogrel",
+              "brand_examples": ["Plavix", "Clopilet"],
+              "form": "Tablet",
+              "dosage": "75 mg once daily",
+              "use_case": "Used in patients allergic to aspirin or after stent placement",
+              "side_effects": ["Bleeding", "Skin rash"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-42",
+          "category_name": "Nitrates (Vasodilators)",
+          "purpose": "Relax and widen blood vessels, allowing more blood to reach the heart muscle and relieving chest pain",
+          "onset": "Within 1-3 minutes (sublingual)",
+          "medicines": [
+            {
+              "name": "Nitroglycerin",
+              "brand_examples": ["Nitrostat", "Angised"],
+              "form": "Sublingual Tablet, Spray",
+              "dosage": "0.3-0.6 mg placed under the tongue during acute chest pain",
+              "use_case": "Immediate relief of stable angina attacks",
+              "side_effects": ["Severe headache", "Dizziness", "Flushing", "Low blood pressure"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-43",
+          "category_name": "Beta-Blockers",
+          "purpose": "Lower heart rate and blood pressure, reducing the heart's oxygen demand",
+          "medicines": [
+            {
+              "name": "Metoprolol",
+              "brand_examples": ["Lopressor", "Metolar"],
+              "form": "Tablet, Extended-Release",
+              "dosage": "25-100 mg daily",
+              "use_case": "Long-term control of stable angina",
+              "side_effects": ["Fatigue", "Cold extremities", "Slow heart rate (bradycardia)"]
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "A heart-healthy diet prevents plaque progression and manages blood pressure and cholesterol levels.",
+      "recommended_foods": [
+        {
+          "category": "Cardioprotective Foods",
+          "items": [
+            {
+              "food": "Olive Oil and Avocados",
+              "benefit": "Rich in monounsaturated fats that lower LDL (bad) cholesterol",
+              "frequency": "Daily in moderation"
+            },
+            {
+              "food": "Walnuts, Almonds, Chia Seeds",
+              "benefit": "Contain Omega-3 fatty acids and fiber that lower lipid counts",
+              "frequency": "Daily (small handful)"
+            },
+            {
+              "food": "Oats, Barley, Beans",
+              "benefit": "Soluble fiber binds to cholesterol in the digestive tract, preventing absorption",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Foods to Avoid",
+          "items": [
+            {
+              "food": "High-Sodium Foods (Processed meats, Pickles, Canned soups)",
+              "benefit": "Sodium raises blood pressure, placing extra strain on coronary arteries",
+              "frequency": "Strictly limit (< 1500 mg per day)"
+            },
+            {
+              "food": "Trans Fats and Saturated Fats (Fried foods, Fatty red meats)",
+              "benefit": "Accelerate arterial plaque buildup (atherosclerosis)",
+              "frequency": "Strictly avoid"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
