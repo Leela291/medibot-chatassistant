@@ -1,51 +1,64 @@
 # embeddings/embedding_model.py
 """
-Generates embeddings via Ollama's /api/embeddings endpoint.
-
-Key fix: get_embeddings_batch() now fires requests in parallel using
-a thread pool instead of one-by-one, giving ~6-8x speedup on CPU.
+Generates embeddings via Ollama's /api/embeddings endpoint, 
+with a fallback to the Gemini API if local connection fails.
 """
 import requests
 import numpy as np
+import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 from llm.config import OLLAMA_BASE_URL, OLLAMA_EMBED_MODEL
+
 # 8 is safe for local Ollama; raise to 16 if your machine has more RAM
 MAX_WORKERS = 4
 
-
 def get_embedding(text: str) -> np.ndarray:
     """Return a numpy embedding vector for a single text string."""
+    gemini_key = os.getenv("GEMINI_API_KEY")
+    if not gemini_key or gemini_key.strip() == "":
+        gemini_key = None
+
     url = f"{OLLAMA_BASE_URL}/api/embeddings"
     payload = {"model": OLLAMA_EMBED_MODEL, "prompt": text}
 
     try:
+        # Try Ollama first (with a reasonable timeout)
         r = requests.post(url, json=payload, timeout=90)
         r.raise_for_status()
         return np.array(r.json()["embedding"], dtype=np.float32)
     
-    except requests.exceptions.HTTPError as e:
-        error_body = ""
-        try:
-            error_body = r.json() if 'r' in locals() else r.text
-        except:
-            error_body = r.text if 'r' in locals() else str(e)
-        raise RuntimeError(f"❌ Ollama 500 Error for model '{OLLAMA_EMBED_MODEL}':\n{error_body}") from e
-    
-    except requests.exceptions.ConnectionError:
-        raise RuntimeError("❌ Cannot connect to Ollama. Run `ollama serve` in another terminal.")
-    
-    except Exception as e:
-        raise RuntimeError(f"❌ Unexpected embedding error: {e}") from e
+    except Exception as ollama_err:
+        # If Ollama fails, attempt the Gemini Fallback
+        if gemini_key:
+            try:
+                gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key={gemini_key}"
+                gemini_payload = {
+                    "model": "models/text-embedding-004",
+                    "content": {
+                        "parts": [{"text": text}]
+                    }
+                }
+                r = requests.post(gemini_url, json=gemini_payload, timeout=20)
+                r.raise_for_status()
+                embedding_vals = r.json()["embedding"]["values"]
+                return np.array(embedding_vals, dtype=np.float32)
+            except Exception as gemini_err:
+                raise RuntimeError(
+                    f"❌ Embedding failed.\nOllama error: {ollama_err}\n"
+                    f"Gemini fallback error: {gemini_err}"
+                ) from gemini_err
+        else:
+            raise RuntimeError(
+                f"❌ Cannot connect to Ollama and no valid GEMINI_API_KEY found.\n"
+                f"Ollama error: {ollama_err}"
+            ) from ollama_err
 
 def get_embeddings_batch(texts: list[str],
                          max_workers: int = MAX_WORKERS) -> np.ndarray:
     """
     Return a 2-D numpy array of embeddings for a list of texts.
-
-    Fires up to `max_workers` requests to Ollama in parallel so the
-    total time is roughly:  (total_chunks / max_workers) × per_chunk_time
-    instead of:             total_chunks × per_chunk_time
+    Fires up to `max_workers` requests in parallel.
     """
     total   = len(texts)
     results = [None] * total          # pre-allocate to keep original order
@@ -60,7 +73,6 @@ def get_embeddings_batch(texts: list[str],
             for i, t in enumerate(texts)
         }
 
-        # tqdm progress bar — shows speed, ETA, and completion %
         with tqdm(total=total,
                   desc="  Embedding chunks",
                   unit="chunk",
@@ -73,21 +85,19 @@ def get_embeddings_batch(texts: list[str],
                     results[idx] = emb
                 except Exception as e:
                     idx = futures[future]
-                    # on error keep a zero vector so vstack never fails
-                    # fallback zero vector
+                    # On error, create a zero vector to prevent vstack crashes
                     existing = next((r for r in results if r is not None), None)
-
-                    if existing is not None:
-                        results[idx] = np.zeros(existing.shape, dtype=np.float32)
-                    else:
-                        results[idx] = np.zeros(768, dtype=np.float32)
+                    
+                    # Assume dimension is 768 for both Ollama/Gemini if no existing vectors
+                    dim = existing.shape[0] if existing is not None else 768 
+                    results[idx] = np.zeros(dim, dtype=np.float32)
+                    
                     tqdm.write(f"  [WARNING] chunk {idx} failed: {e}")
                 finally:
                     bar.update(1)
 
     return np.vstack(results)
 
-
 def embedding_dimension() -> int:
-    """Return the dimension of the embedding model (probe with a dummy text)."""
+    """Return the dimension of the embedding model."""
     return get_embedding("test").shape[0]

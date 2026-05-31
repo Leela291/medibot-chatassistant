@@ -1,0 +1,308 @@
+{
+  "disease": {
+    "id": "DIS-011",
+    "name": "Hyperthyroidism",
+    "scientific_name": "Thyrotoxicosis",
+    "icd_10_code": "E05",
+    "category": "Endocrine Disease",
+    "overview": {
+      "description": "Hyperthyroidism is a condition in which the thyroid gland is overactive and produces excessive amounts of thyroid hormones (thyroxine/T4 and triiodothyronine/T3). This accelerates the body's metabolism, causing rapid heartbeat, weight loss, increased appetite, and anxiety.",
+      "affected_organ": "Thyroid Gland",
+      "prevalence": "Affects approximately 1.2% of the population in the United States; more common in women.",
+      "age_group": "Mainly adults aged 20-50, but can affect any age.",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": true
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Graves' Disease",
+        "description": "An autoimmune disorder where the immune system attacks the thyroid, causing it to produce too much hormone. It is the most common cause of hyperthyroidism.",
+        "common_in": "Women under 40"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Toxic Nodular Goiter (Plummer's Disease)",
+        "description": "One or more adenomas (nodules) in the thyroid gland start producing thyroid hormones independently, escaping regulation.",
+        "common_in": "Older adults, particularly in iodine-deficient areas"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Thyroiditis",
+        "description": "Inflammation of the thyroid gland that causes stored thyroid hormones to leak out into the blood.",
+        "common_in": "Postpartum women, post-viral infections"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Subclinical",
+        "frequency": "Asymptomatic or very mild symptoms",
+        "nighttime_symptoms": "None",
+        "lung_function": "N/A",
+        "impact": "Low TSH, normal free T3/T4"
+      },
+      {
+        "level": 2,
+        "name": "Overt Hyperthyroidism",
+        "frequency": "Noticeable symptoms (weight loss, tremors, heat intolerance)",
+        "lung_function": "N/A",
+        "impact": "Low TSH, high free T3/T4; requires medical treatment"
+      },
+      {
+        "level": 3,
+        "name": "Thyroid Storm (Thyrotoxic Crisis)",
+        "frequency": "Severe life-threatening exacerbation (high fever, tachycardia, agitation, delirium)",
+        "lung_function": "N/A",
+        "impact": "Critical medical emergency; high mortality rate if untreated"
+      }
+    ],
+
+    "causes": {
+      "genetic_factors": [
+        "Family history of thyroid disorders or autoimmune conditions",
+        "Associated genes (HLA-DR3, CTLA4, PTPN22)"
+      ],
+      "environmental_triggers": [
+        "Excessive iodine intake (diet or supplements)",
+        "Stressful life events",
+        "Pregnancy (triggering postpartum thyroiditis)",
+        "Smoking (increases risk of Graves' ophthalmopathy)",
+        "Viral or bacterial infections"
+      ],
+      "other_causes": [
+        "Amiodarone medication (contains high levels of iodine)",
+        "Thyroid hormone over-medication",
+        "Pituitary adenoma (rare TSH-secreting tumor)"
+      ]
+    },
+
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-101",
+          "name": "Unexplained Weight Loss",
+          "description": "Losing weight despite having an increased appetite and eating more food.",
+          "severity": "Moderate to Severe",
+          "onset": "Gradual over weeks or months"
+        },
+        {
+          "id": "SYM-102",
+          "name": "Rapid Heart Rate (Tachycardia)",
+          "description": "Heart rate exceeding 100 beats per minute, or palpitations (pounding heart).",
+          "severity": "Moderate to Severe",
+          "onset": "Constant or episodic"
+        },
+        {
+          "id": "SYM-103",
+          "name": "Heat Intolerance & Sweating",
+          "description": "Feeling excessively warm when others are comfortable, and sweating abnormally.",
+          "severity": "Mild to Moderate",
+          "onset": "Gradual"
+        },
+        {
+          "id": "SYM-104",
+          "name": "Tremors",
+          "description": "Fine trembling or shaking in the hands and fingers.",
+          "severity": "Mild to Moderate",
+          "onset": "Noticeable when holding hands out"
+        }
+      ],
+      "secondary_symptoms": [
+        "Anxiety, irritability, and mood swings",
+        "Difficulty sleeping (insomnia)",
+        "Muscle weakness, particularly in thighs and upper arms",
+        "More frequent bowel movements or diarrhea",
+        "Goiter (an enlarged thyroid gland, visible swelling at the base of neck)",
+        "Fatigue and tiredness despite restless energy",
+        "Fine, brittle hair and thin skin"
+      ],
+      "warning_signs_of_attack": [
+        "High fever (above 103 F / 39.4 C)",
+        "Extreme rapid heartbeat (tachycardia > 140 bpm)",
+        "Agitation, confusion, delirium, or hallucinations",
+        "Shortness of breath or chest pain",
+        "Nausea, vomiting, or yellowing of the skin (jaundice)"
+      ],
+      "symptoms_in_children": [
+        "Rapid growth and bone maturation",
+        "Behavioral problems and declining school performance",
+        "Hyperactivity and short attention span",
+        "Increased appetite with failure to gain weight"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Family history of thyroid or autoimmune diseases",
+        "Current medication list, including iodine-containing drugs",
+        "Evaluation of symptom onset and history of pregnancy"
+      ],
+      "physical_examination": [
+        "Palpation of the thyroid gland to check size and consistency",
+        "Checking heart rate and blood pressure",
+        "Assessing hand tremors and muscle reflexes",
+        "Checking eyes for redness, swelling, or bulging (exophthalmos)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "TSH Blood Test",
+          "description": "Measures Thyroid Stimulating Hormone levels.",
+          "purpose": "First-line screening test for thyroid function",
+          "key_metric": "TSH level < 0.4 mIU/L indicates overactive thyroid"
+        },
+        {
+          "test_name": "Free T4 and T3 Blood Tests",
+          "description": "Measures unbound thyroxine (T4) and triiodothyronine (T3) levels.",
+          "purpose": "Confirms hyperthyroidism and assesses severity",
+          "key_metric": "Elevated Free T4 (> 1.8 ng/dL) or Free T3 (> 4.4 pg/mL)"
+        },
+        {
+          "test_name": "Radioactive Iodine Uptake (RAIU) Test",
+          "description": "Patient swallows a small dose of radioactive iodine, and thyroid uptake is measured.",
+          "purpose": "Differentiates causes of hyperthyroidism",
+          "key_metric": "High uptake indicates Graves' disease; low uptake indicates thyroiditis"
+        },
+        {
+          "test_name": "Thyroid Ultrasound",
+          "description": "Imaging of the thyroid gland using sound waves.",
+          "purpose": "Detects thyroid nodules and enlargement",
+          "key_metric": "Increased vascularity ('thyroid inferno' in Graves')"
+        },
+        {
+          "test_name": "TSHR Antibody (TRAb / TSI) Test",
+          "description": "Measures thyroid-stimulating immunoglobulin antibodies.",
+          "purpose": "Confirms Graves' disease diagnosis",
+          "key_metric": "Positive result indicates autoimmune Graves' disease"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "All medications should be taken only under the supervision of a licensed physician. Self-medication can be dangerous.",
+      "categories": [
+        {
+          "category_id": "MED-CAT-21",
+          "category_name": "Antithyroid Drugs (Thionamides)",
+          "purpose": "Inhibit the thyroid gland from producing new thyroid hormones",
+          "onset": "Within 2-6 weeks for clinical improvement",
+          "duration": "Typically 12-18 months of maintenance therapy",
+          "medicines": [
+            {
+              "name": "Methimazole",
+              "brand_examples": ["Tapazole"],
+              "form": "Tablet",
+              "dosage": "5-30 mg daily depending on severity",
+              "use_case": "First-line treatment for Graves' disease",
+              "side_effects": ["Skin rash", "Joint pain", "Nausea", "Agranulocytosis (rare/severe: low white blood cells)"]
+            },
+            {
+              "name": "Propylthiouracil (PTU)",
+              "brand_examples": ["PTU"],
+              "form": "Tablet",
+              "dosage": "100-300 mg daily in divided doses",
+              "use_case": "Preferred in first trimester of pregnancy and thyroid storm",
+              "side_effects": ["Liver damage warning", "Agranulocytosis", "Skin rash"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-22",
+          "category_name": "Beta-Blockers",
+          "purpose": "Relieve symptoms such as rapid heart rate, tremors, and anxiety without affecting thyroid hormone levels",
+          "onset": "Within hours",
+          "duration": "Temporary use until antithyroid treatments take effect",
+          "medicines": [
+            {
+              "name": "Propranolol",
+              "brand_examples": ["Inderal"],
+              "form": "Tablet, Injection",
+              "dosage": "10-40 mg three to four times daily",
+              "use_case": "Symptom control for tachycardia and tremors",
+              "side_effects": ["Fatigue", "Cold hands", "Shortness of breath in asthma patients"]
+            },
+            {
+              "name": "Atenolol",
+              "brand_examples": ["Tenormin"],
+              "form": "Tablet",
+              "dosage": "25-100 mg once daily",
+              "use_case": "Once-daily symptom control",
+              "side_effects": ["Dizziness", "Bradycardia"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-23",
+          "category_name": "Radioactive Iodine Therapy (RAI)",
+          "purpose": "Destroys thyroid cells, shrinking the thyroid gland and stopping overproduction",
+          "note": "Causes permanent hypothyroidism in most patients, requiring lifelong thyroid hormone replacement",
+          "medicines": [
+            {
+              "name": "Sodium Iodide I-131",
+              "brand_examples": ["Hicon"],
+              "form": "Oral Capsule or Liquid",
+              "dosage": "Single dose calculated based on thyroid size",
+              "use_case": "Definitive treatment for Graves' disease and toxic nodules",
+              "side_effects": ["Neck soreness", "Temporary worsening of hyperthyroid symptoms", "Hypothyroidism"]
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet supports thyroid recovery by managing metabolic demands and reducing hyperthyroid symptoms. Nutritional adjustments help maintain healthy weight and bone density.",
+      "recommended_foods": [
+        {
+          "category": "Low-Iodine Foods",
+          "items": [
+            {
+              "food": "Non-iodized Salt",
+              "benefit": "Avoids feeding the thyroid with excess iodine which stimulates hormone production",
+              "frequency": "Daily use in cooking"
+            },
+            {
+              "food": "Fresh Fruits and Vegetables",
+              "benefit": "Naturally low in iodine, high in essential vitamins",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Egg Whites",
+              "benefit": "Provides protein without the iodine found in egg yolks",
+              "frequency": "Regular"
+            }
+          ]
+        },
+        {
+          "category": "Cruciferous Vegetables (Goitrogenic Foods)",
+          "items": [
+            {
+              "food": "Broccoli, Cabbage, Brussels Sprouts, Cauliflower",
+              "benefit": "Contain goitrogens which naturally reduce thyroid hormone production",
+              "frequency": "Several servings per week"
+            }
+          ]
+        },
+        {
+          "category": "Calcium and Vitamin D (Bone Support)",
+          "items": [
+            {
+              "food": "Spinach, Collard Greens, Okra",
+              "benefit": "Hyperthyroidism depletes calcium from bones; green leafy vegetables support bone health",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Fortified Low-Iodine Foods (or supplements)",
+              "benefit": "Aids in calcium absorption to prevent osteoporosis",
+              "frequency": "Daily"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

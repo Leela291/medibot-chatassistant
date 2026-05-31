@@ -103,11 +103,33 @@ def _parse_pdf(file_storage, filename):
         "error": None,
     }
 
-
 # ── Image Parser (OCR) ──────────────────────────────────────────
 def _parse_image(file_storage, filename):
-    """Extract text from images using pytesseract OCR or describe the image."""
-    # Try pytesseract first
+    """Extract text from images using pytesseract OCR and base64-encode for vision processing."""
+    import base64
+
+    # Determine the correct MIME type for Gemini
+    ext = os.path.splitext(filename)[1].lower()
+    mime_map = {
+        ".png": "image/png",
+        ".jpg": "image/jpeg",
+        ".jpeg": "image/jpeg",
+        ".webp": "image/webp",
+        ".heic": "image/heic"
+    }
+    mime_type = mime_map.get(ext, "image/jpeg") # Default to jpeg
+
+    # 1. Base64 encode the image
+    try:
+        file_storage.stream.seek(0)
+        img_bytes = file_storage.stream.read()
+        base64_str = base64.b64encode(img_bytes).decode('utf-8')
+        file_storage.stream.seek(0)  # Reset stream pointer
+    except Exception as e:
+        base64_str = None
+        print(f"[file_parser Error] Failed to base64-encode image: {e}")
+
+    # Try pytesseract for OCR first (if it's a medical report)
     try:
         from PIL import Image
         import pytesseract
@@ -122,16 +144,19 @@ def _parse_image(file_storage, filename):
             return {
                 "success": True,
                 "filename": filename,
-                "filetype": os.path.splitext(filename)[1].lower(),
+                "filetype": ext,
+                "mime_type": mime_type,  # <--- Added dynamically
                 "content": content,
+                "base64_image": base64_str,
+                "is_image": True,
                 "error": None,
             }
     except ImportError:
         pass
-    except Exception as e:
-        print("OCR Error:", e)
+    except Exception:
+        pass
 
-    # Fallback: try to read basic image info
+    # Fallback: return visual reference for LLM
     try:
         from PIL import Image
 
@@ -142,33 +167,24 @@ def _parse_image(file_storage, filename):
         return {
             "success": True,
             "filename": filename,
-            "filetype": os.path.splitext(filename)[1].lower(),
-            "content": (
-                f"[Image uploaded: {filename}]\n"
-                f"Dimensions: {w}x{h} pixels\n"
-                f"Color mode: {mode}\n\n"
-                f"Note: OCR (Tesseract) is not installed, so I cannot read text from this image. "
-                f"To enable image text extraction, install Tesseract OCR and pytesseract:\n"
-                f"  pip install pytesseract Pillow\n"
-                f"  Also install Tesseract: https://github.com/tesseract-ocr/tesseract\n\n"
-                f"You can still describe what's in the image in the chat, and I'll help analyze it."
-            ),
+            "filetype": ext,
+            "mime_type": mime_type, # <--- Added dynamically
+            "content": f"[Visual Image Uploaded: {filename} (Dimensions: {w}x{h}, Mode: {mode})]",
+            "base64_image": base64_str,
+            "is_image": True,
             "error": None,
         }
     except ImportError:
         return {
             "success": True,
             "filename": filename,
-            "filetype": os.path.splitext(filename)[1].lower(),
-            "content": (
-                f"[Image uploaded: {filename}]\n\n"
-                f"I received the image but cannot process it without Pillow installed.\n"
-                f"Run: pip install Pillow\n\n"
-                f"Please describe what you see in the image, and I'll help analyze it."
-            ),
+            "filetype": ext,
+            "mime_type": mime_type, # <--- Added dynamically
+            "content": f"[Visual Image Uploaded: {filename}]",
+            "base64_image": base64_str,
+            "is_image": True,
             "error": None,
         }
-
 
 # ── CSV Parser ───────────────────────────────────────────────────
 def _parse_csv(file_storage, filename):

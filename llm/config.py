@@ -11,6 +11,7 @@ OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
 
 # ── API settings ───────────────────────────────────────────────────────
 OPENFDA_API_KEY = os.getenv("OPENFDA_API_KEY", "TcUuE16FSG3oEohZWkekpFpibcGSnI7mfoNccJYJ")
+GEMINI_MODEL    = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
 
 # ── RAG settings ─────────────────────────────────────────────────────────────
 CHUNK_SIZE        = int(os.getenv("CHUNK_SIZE", 256))
