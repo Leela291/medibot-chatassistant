@@ -1,0 +1,4859 @@
+[
+  {
+    "disease": "dengue fever",
+    "clinical_course": {
+      "phases": [
+        {
+          "name": "Febrile Phase",
+          "duration_days": "2–7",
+          "features": [
+            "High-grade fever",
+            "Headache",
+            "Retro-orbital pain",
+            "Myalgia",
+            "Arthralgia",
+            "Rash",
+            "Mild bleeding"
+          ]
+        },
+        {
+          "name": "Critical Phase",
+          "features": [
+            "Plasma leakage",
+            "Rising hematocrit",
+            "Thrombocytopenia",
+            "Shock risk"
+          ]
+        },
+        {
+          "name": "Convalescent Phase",
+          "features": [
+            "Reabsorption of plasma",
+            "Improving platelet count",
+            "Clinical recovery"
+          ]
+        },
+        "Febrile phase",
+        "Critical phase",
+        "Convalescent phase"
+      ]
+    },
+    "case_definitions": {
+      "probable_case": {
+        "criteria": [
+          "Clinical features of dengue fever",
+          "Positive Rapid Diagnostic Test (RDT)",
+          "Meets suspected case definition",
+          "Epidemiological link (entomological index present OR travel/residence in endemic area within 15 days)"
+        ],
+        "note": "RDT has poor sensitivity and specificity"
+      },
+      "confirmed_case": {
+        "criteria": [
+          "Virus isolation",
+          "NS1 antigen positive by ELISA",
+          "IgM ELISA positive",
+          "IgG seroconversion (4-fold rise)",
+          "PCR positive",
+          "RT-PCR positive",
+          "NS1 antigen positive",
+          "IgM positive (with confirmation due to cross-reactivity)"
+        ],
+        "definition": "Probable case with laboratory confirmation"
+      },
+      "probable": {
+        "criteria": [
+          "Compatible clinical illness",
+          "NS1 or IgM positive by non-ELISA / RDT"
+        ],
+        "note": "RDT positive = probable only"
+      },
+      "confirmed": {
+        "criteria": [
+          "NS1 ELISA positive",
+          "IgM ELISA positive",
+          "PCR positive",
+          "Virus isolation",
+          "IgG seroconversion (4-fold rise)"
+        ]
+      },
+      "dengue_fever": {
+        "criteria": [
+          "Acute fever 2–7 days",
+          "Two or more symptoms",
+          "Headache / myalgia / rash / bleeding"
+        ]
+      },
+      "dengue_haemorrhagic_fever": {
+        "criteria": [
+          "Fever",
+          "Hemorrhagic tendency",
+          "Platelets <100000/mm3",
+          "Evidence of plasma leakage"
+        ]
+      },
+      "dengue_shock_syndrome": {
+        "criteria": [
+          "All DHF criteria",
+          "Rapid weak pulse",
+          "Narrow pulse pressure ≤20 mmHg",
+          "Hypotension or shock"
+        ]
+      },
+      "suspected_case": {
+        "criteria": [
+          "Fever >38.5°C for 2–7 days",
+          "One or more symptoms: headache, joint pain, muscle pain, retro-orbital pain, nausea, vomiting, swollen glands, rash"
+        ]
+      },
+      "not_a_case": {
+        "criteria": [
+          "RT-PCR negative",
+          "NS1 negative",
+          "IgM negative"
+        ],
+        "follow_up": "Screen 25–100% for other Viral Hemorrhagic Fevers (VHF)"
+      },
+      "probable_dengue": {
+        "criteria": [
+          "Acute febrile illness (2–7 days)",
+          "At least two of: headache, retro-orbital pain, myalgia, arthralgia, rash, hemorrhagic manifestations",
+          "OR positive non-ELISA NS1 / IgM test during outbreak",
+          "Fever",
+          "At least two of: nausea/vomiting, rash, aches and pains, positive tourniquet test, leukopenia, or warning signs"
+        ]
+      },
+      "confirmed_dengue": {
+        "laboratory_criteria": [
+          "Virus isolation",
+          "IgM antibody positive by ELISA",
+          "NS1 antigen positive by ELISA",
+          "IgG seroconversion with fourfold rise",
+          "PCR positive for dengue RNA"
+        ]
+      },
+      "dengue_with_warning_signs": {
+        "clinical": [
+          "Abdominal pain or tenderness",
+          "Persistent vomiting",
+          "Clinical fluid accumulation",
+          "Mucosal bleeding",
+          "Lethargy or restlessness",
+          "Liver enlargement >2 cm"
+        ],
+        "laboratory": [
+          "Rising hematocrit with rapid platelet fall"
+        ]
+      },
+      "severe_dengue": {
+        "plasma_leakage": [
+          "Shock (DSS)",
+          "Fluid accumulation with respiratory distress"
+        ],
+        "severe_bleeding": "As assessed clinically",
+        "severe_organ_involvement": [
+          "Liver: AST or ALT ≥1000 IU",
+          "CNS: impaired consciousness or seizures",
+          "Cardiac involvement",
+          "Other organ dysfunction"
+        ]
+      },
+      "warning_signs": [
+        "Abdominal pain or tenderness",
+        "Persistent vomiting",
+        "Clinical fluid accumulation",
+        "Mucosal bleeding",
+        "Lethargy",
+        "Restlessness",
+        "Liver enlargement >2 cm",
+        "Laboratory: rising hematocrit with rapid platelet decrease"
+      ],
+      "community_case_definition_note": "Broad simplified definitions recommended for community surveillance to maximize case detection"
+    },
+    "classification": {
+      "asymptomatic": true,
+      "symptomatic": {
+        "mild_dengue": {
+          "features": [
+            "Fever without complications"
+          ],
+          "management": "Home care"
+        },
+        "moderate_dengue": {
+          "features": [
+            "Warning signs present",
+            "Minor bleeding",
+            "Hematocrit rise"
+          ],
+          "management": "Close monitoring / Hospitalization"
+        },
+        "severe_dengue": {
+          "features": [
+            "Severe bleeding",
+            "Shock (DSS)",
+            "Organ failure"
+          ],
+          "management": "Tertiary care"
+        }
+      },
+      "group_A": {
+        "label": "Dengue without warning signs",
+        "severity": "Mild",
+        "management": "Home or OPD"
+      },
+      "group_B": {
+        "label": "Dengue with warning signs / risk factors",
+        "severity": "Moderate",
+        "management": "Hospital admission"
+      },
+      "group_C": {
+        "label": "Severe Dengue",
+        "severity": "Life-threatening",
+        "management": "ICU / Tertiary care"
+      }
+    },
+    "warning_signs": [
+      "Persistent vomiting",
+      "Severe abdominal pain",
+      "Bleeding from any site",
+      "Decreased urine output",
+      "Respiratory distress",
+      "Restlessness or lethargy",
+      "Shock or impending shock",
+      "Rapidly falling platelet count",
+      "Lethargy or restlessness",
+      "Clinical fluid accumulation",
+      "Hepatomegaly >2 cm",
+      "Rising hematocrit with falling platelets",
+      "Syncope or giddiness",
+      "Bleeding",
+      "Lethargy",
+      "Shock signs",
+      "High grade fever",
+      "Convulsions or encephalopathy",
+      "Fluid overload",
+      "Plasma leakage",
+      "Worsening abdominal pain",
+      "Mucosal bleeding",
+      "Liver enlargement",
+      "Serosal effusion",
+      "High hematocrit with low platelets",
+      "Bleeding from mucosa",
+      "Hepatomegaly",
+      "Rapid platelet drop with rising hematocrit"
+    ],
+    "expanded_dengue_syndrome": {
+      "cns": [
+        "Encephalopathy",
+        "Encephalitis",
+        "Seizures",
+        "Intracranial bleeding"
+      ],
+      "gastrointestinal": [
+        "Acute hepatitis",
+        "Fulminant liver failure",
+        "Pancreatitis"
+      ],
+      "renal": [
+        "Acute renal failure",
+        "Acute tubular necrosis",
+        "Nephritis",
+        "Acute kidney injury"
+      ],
+      "cardiac": [
+        "Myocarditis",
+        "Arrhythmia",
+        "Cardiomyopathy",
+        "Pericarditis"
+      ],
+      "respiratory": [
+        "ARDS",
+        "Pulmonary edema",
+        "Pleural effusion",
+        "Pulmonary hemorrhage"
+      ],
+      "eye": [
+        "Conjunctival bleed",
+        "Macular hemorrhage",
+        "Optic neuritis"
+      ],
+      "neurological": [
+        "Encephalopathy",
+        "Seizures",
+        "Intracranial bleed",
+        "Encephalitis",
+        "Guillain–Barré syndrome"
+      ],
+      "hepatic": [
+        "Acute hepatitis",
+        "Fulminant liver failure",
+        "Severe hepatitis"
+      ],
+      "ocular": [
+        "Macular hemorrhage",
+        "Optic neuritis"
+      ],
+      "description": "Unusual or atypical organ involvement in DF/DHF",
+      "organ_involvement": {
+        "central_nervous_system": [
+          "Encephalopathy",
+          "Encephalitis",
+          "Febrile seizures",
+          "Intracranial bleed"
+        ],
+        "gastrointestinal": [
+          "Acute hepatitis",
+          "Fulminant hepatic failure",
+          "Cholecystitis",
+          "Cholangitis",
+          "Acute pancreatitis"
+        ],
+        "renal": [
+          "Acute renal failure",
+          "Hemolytic uremic syndrome",
+          "Acute tubular necrosis"
+        ],
+        "cardiac": [
+          "Arrhythmia",
+          "Cardiomyopathy",
+          "Myocarditis",
+          "Pericardial effusion"
+        ],
+        "respiratory": [
+          "Pulmonary edema",
+          "ARDS",
+          "Pulmonary hemorrhage",
+          "Pleural effusion"
+        ],
+        "ocular": [
+          "Conjunctival bleed",
+          "Macular hemorrhage",
+          "Visual impairment",
+          "Optic neuritis"
+        ]
+      },
+      "others": [
+        "Myositis",
+        "Hemophagocytic syndrome"
+      ]
+    },
+    "diagnosis": {
+      "day_1_to_5": [
+        "NS1 ELISA",
+        "PCR"
+      ],
+      "after_day_5": [
+        "IgM ELISA"
+      ],
+      "rdt_policy": "RDT positive = probable case only",
+      "supportive_labs": [
+        "CBC",
+        "Hematocrit",
+        "Platelet count",
+        "LFT",
+        "Coagulation profile",
+        "White blood cell count",
+        "Liver enzymes"
+      ],
+      "early_phase": [
+        "Virus isolation",
+        "RT-PCR",
+        "NS1 antigen detection"
+      ],
+      "late_phase": [
+        "IgM ELISA",
+        "IgG seroconversion (four-fold rise)"
+      ],
+      "diagnostic_limitations": [
+        "Cross-reactivity with other flaviviruses",
+        "Under-reporting common"
+      ],
+      "early_febrile_phase": {
+        "tests": [
+          "RT-PCR",
+          "NS1 antigen detection",
+          "Virus isolation"
+        ],
+        "ns1_sensitivity": {
+          "primary_infection": ">90%",
+          "secondary_infection": "60–80%"
+        }
+      },
+      "critical_and_late_phase": {
+        "tests": [
+          "IgM ELISA",
+          "IgG ELISA",
+          "Hemagglutination inhibition assay"
+        ],
+        "interpretation": {
+          "primary_infection": "IgM dominant",
+          "secondary_infection": "Early IgG dominance",
+          "igM_igG_ratio": "Used to differentiate infection type"
+        }
+      },
+      "combined_testing": {
+        "best_performance": "NS1 + IgM + IgG",
+        "sensitivity": "≈90%",
+        "specificity": "≈89%"
+      },
+      "primary_method": "Blood test",
+      "test_purposes": [
+        "Detect dengue virus",
+        "Identify virus strain",
+        "Rule out similar infections"
+      ],
+      "timing_note": "Testing guided by symptom onset and exposure history",
+      "early_phase_tests": [
+        "RT-PCR",
+        "NS1 antigen ELISA"
+      ],
+      "late_phase_tests": [
+        "IgM ELISA",
+        "IgG serology"
+      ],
+      "most_reliable": "Nucleic acid amplification tests",
+      "differential_diagnosis": [
+        "Malaria",
+        "Influenza",
+        "Chikungunya",
+        "Zika",
+        "Measles",
+        "Leptospirosis"
+      ],
+      "molecular_tests": [
+        "Nucleic acid amplification tests (NAATs)"
+      ],
+      "serology": {
+        "igm": {
+          "use": "Important diagnostic tool",
+          "limitation": "Cross-reactivity with other flaviviruses"
+        }
+      },
+      "clinical_criteria": [
+        "Fever plus two of: nausea/vomiting, rash, aches, leukopenia, positive tourniquet test, warning signs"
+      ],
+      "laboratory_findings": [
+        "Leukopenia (early)",
+        "Thrombocytopenia",
+        "Elevated AST/ALT",
+        "Hemoconcentration",
+        "Hypoalbuminemia"
+      ],
+      "confirmatory_tests": {
+        "early_phase": [
+          "RT-PCR",
+          "Virus isolation",
+          "NS1 antigen detection"
+        ],
+        "late_phase": [
+          "IgM ELISA",
+          "IgG serology (paired samples)"
+        ]
+      },
+      "test_performance_notes": {
+        "ns1_sensitivity_primary": ">90%",
+        "ns1_sensitivity_secondary": "60–80%",
+        "cross_reactivity": "Possible with other flaviviruses"
+      },
+      "clinical_basis": "Diagnosis can be made without serology",
+      "initial_investigations": [
+        "CBC",
+        "Platelet count",
+        "Hematocrit"
+      ],
+      "laboratory_trends": {
+        "leukopenia": "Appears first",
+        "thrombocytopenia": "Falls after afebrile phase",
+        "hematocrit": {
+          "increase": "Plasma leakage",
+          "decrease": "Bleeding"
+        }
+      },
+      "imaging": [
+        "Right lateral decubitus chest X-ray",
+        "Abdominal ultrasound (gall bladder edema, ascites)"
+      ],
+      "serology_notes": {
+        "ns1": "Early positive, reduced in secondary infection",
+        "igm": "May be absent in 20% of secondary infections",
+        "igg": "Rises rapidly in secondary infection",
+        "warning": "Do not rely solely on serology"
+      }
+    },
+    "treatment": {
+      "general": [
+        "Adequate fluids",
+        "Rest",
+        "Paracetamol only",
+        "Avoid NSAIDs and aspirin",
+        "Adequate oral/IV fluids",
+        "Close monitoring"
+      ],
+      "monitoring": [
+        "Blood pressure",
+        "Hematocrit",
+        "Platelet count",
+        "Urine output",
+        "Consciousness level"
+      ],
+      "dengue_fever_and_dhf_1_2": {
+        "management": [
+          "Oral/IV fluids",
+          "Observation"
+        ]
+      },
+      "dhf_3_4": {
+        "management": [
+          "Crystalloid fluids",
+          "Blood transfusion if severe bleeding",
+          "Platelet transfusion if <10000/mm3"
+        ]
+      },
+      "fluid_management": {
+        "preferred_fluids": [
+          "Normal saline",
+          "Ringer’s lactate",
+          "0.9% Normal Saline",
+          "Ringer’s Lactate",
+          "Hartmann’s Solution"
+        ],
+        "avoid": [
+          "Hypotonic fluids"
+        ],
+        "objective": [
+          "Maintain organ perfusion",
+          "Prevent hypovolemic shock"
+        ],
+        "risk": "Fluid overload"
+      },
+      "severe_cases": [
+        "Judicious IV fluids",
+        "Blood transfusion for bleeding",
+        "Colloids if refractory shock",
+        "Vasopressors if fluid unresponsive",
+        "Intravenous fluids",
+        "Blood transfusion",
+        "Close monitoring for shock",
+        "Hospitalization",
+        "Blood or platelet transfusion",
+        "Intensive care monitoring"
+      ],
+      "simple_dengue_home_care": [
+        "Paracetamol as advised",
+        "Avoid aspirin or Dispirin",
+        "Hydrotherapy if fever >102°F",
+        "Plenty of fluids (water, shikanji)",
+        "Continue normal feeding",
+        "Adequate rest"
+      ],
+      "hospital_referral_required_if": [
+        "Any bleeding",
+        "Signs of shock",
+        "Suspected DHF or DSS"
+      ],
+      "important_note": [
+        "Not every patient needs platelet transfusion",
+        "Early diagnosis saves lives"
+      ],
+      "specific_antiviral": "None available",
+      "core_principle": "Supportive management",
+      "outpatient_management": {
+        "criteria": [
+          "Early febrile phase",
+          "No warning signs"
+        ],
+        "monitoring": "Daily clinical monitoring"
+      },
+      "hospital_management": {
+        "indications": [
+          "Plasma leakage",
+          "Critical phase",
+          "Shock"
+        ]
+      },
+      "blood_products": {
+        "indications": [
+          "Severe bleeding",
+          "Refractory shock"
+        ],
+        "types": [
+          "Packed red cells",
+          "Platelets",
+          "Fresh frozen plasma"
+        ]
+      },
+      "current_status": "No approved antiviral therapy",
+      "standard_care": [
+        "Supportive treatment",
+        "Fluid management",
+        "Monitoring for warning signs"
+      ],
+      "drug_restrictions": [
+        "Avoid NSAIDs",
+        "Avoid aspirin"
+      ],
+      "management_strategy": "Supportive care only",
+      "home_care": [
+        "Adequate hydration",
+        "Plenty of rest",
+        "Acetaminophen (paracetamol) for pain and fever"
+      ],
+      "medications_to_avoid": [
+        "Aspirin",
+        "Ibuprofen",
+        "Other NSAIDs",
+        "NSAIDs"
+      ],
+      "reason_for_avoidance": "Increased risk of life-threatening bleeding",
+      "management_principle": "Supportive care",
+      "mild_cases": [
+        "Oral hydration",
+        "Paracetamol",
+        "Rest",
+        "Oral fluids"
+      ],
+      "contraindicated_drugs": [
+        "Aspirin",
+        "NSAIDs",
+        "Steroids"
+      ],
+      "management": "Supportive care"
+    },
+    "platelet_transfusion_guidelines": {
+      "indications": [
+        "Platelet count <10000/mm3",
+        "Any thrombocytopenia with bleeding"
+      ],
+      "not_indicated": [
+        "Prophylactic transfusion if platelets >10000/mm3"
+      ]
+    },
+    "admission_criteria": [
+      "Any warning signs",
+      "Significant bleeding",
+      "Persistent fever >40°C",
+      "Shock or circulatory failure",
+      "Neurological symptoms",
+      "Any warning sign",
+      "Persistent high fever",
+      "Postural hypotension",
+      "Shock"
+    ],
+    "discharge_criteria": [
+      "Afebrile for 24 hours",
+      "Platelet count >50000/mm3",
+      "Stable vitals",
+      "Good urine output",
+      "Clinical improvement",
+      "Afebrile for 24–48 hours",
+      "Stable hemodynamics",
+      "Platelet count rising (>50,000/mm³)",
+      "No respiratory distress",
+      {
+        "mandatory": [
+          "Afebrile ≥24 hours without antipyretics",
+          "Improving appetite and general condition",
+          "Stable hematocrit or baseline value",
+          "No pleural effusion or ascites",
+          "Normal organ function tests",
+          "Platelet count >50,000/mm³",
+          "No complications"
+        ]
+      },
+      "Afebrile for ≥24 hours",
+      "Platelet count >50000/cumm",
+      "Return of appetite",
+      "At least 2–3 days after recovery from shock",
+      "Afebrile >24 hours",
+      "Improved appetite",
+      "Platelets >50,000/mm3",
+      "≥2–3 days post-shock recovery"
+    ],
+    "home_care_criteria": {
+      "allowed_if": [
+        "Stable vitals",
+        "Platelet count >100000/mm3",
+        "No bleeding",
+        "No warning signs"
+      ],
+      "return_immediately_if": [
+        "Bleeding",
+        "Persistent vomiting",
+        "Abdominal pain",
+        "Reduced urine output",
+        "Altered sensorium"
+      ]
+    },
+    "nursing_care": {
+      "focus_areas": [
+        "Early detection of shock",
+        "Fluid balance",
+        "Monitoring bleeding",
+        "Monitoring urine output",
+        "Neurological status"
+      ]
+    },
+    "public_health_notes": {
+      "high_risk_groups": [
+        "Infants",
+        "Elderly",
+        "Pregnant women",
+        "Diabetes",
+        "Hypertension",
+        "CKD",
+        "CLD",
+        "Immunocompromised"
+      ],
+      "key_message": "Fluid management and early detection of warning signs save lives",
+      "urban_association": true,
+      "traveler_risk": "Second most common cause of fever after malaria",
+      "surveillance_importance": true
+    },
+    "emergency_contacts": {
+      "helpline": "DISHA",
+      "numbers": [
+        "0471-2552056",
+        "1056"
+      ],
+      "availability": "24x7"
+    },
+    "transmission": {
+      "primary_mode": "Bite of infected female Aedes mosquito",
+      "vector": [
+        "Aedes aegypti",
+        "Aedes albopictus",
+        {
+          "species": "Aedes mosquito",
+          "characteristics": [
+            "Bites during daytime",
+            "Bold and aggressive",
+            "Breeds in clean stagnant water"
+          ]
+        }
+      ],
+      "vector_characteristics": {
+        "feeding_time": "Day time",
+        "flight_range_meters": 400,
+        "egg_survival": "Up to 1 year in dry conditions"
+      },
+      "other_modes": [
+        "Blood transfusion",
+        "Organ transplantation",
+        "Vertical transmission (rare)",
+        "Perinatal transmission"
+      ],
+      "cycles": [
+        "Enzootic (monkey–mosquito)",
+        "Epizootic (spillover)",
+        "Epidemic (human–mosquito–human)"
+      ],
+      "incubation": {
+        "intrinsic_days": "5–7",
+        "extrinsic_days": "8–12"
+      },
+      "infectious_period_human": {
+        "start": "2 days before fever",
+        "end": "5 days after fever onset"
+      },
+      "mode": "Mosquito bite",
+      "seasonality_india": {
+        "high_risk_months": [
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "association": "Rainy and post-rainy season"
+      },
+      "human_to_mosquito_cycle": [
+        "Mosquito bites infected person",
+        "Virus multiplies in mosquito",
+        "Mosquito bites healthy person",
+        "Virus transmitted to new host"
+      ],
+      "human_infectious_period": "During febrile phase",
+      "extrinsic_incubation_period_days": "8–10",
+      "temperature_effects": {
+        "higher_temperature": [
+          "Faster larval growth",
+          "Shorter extrinsic incubation",
+          "Increased biting frequency"
+        ],
+        "2_degree_celsius_rise_effect": "Reduces EIP and increases transmission"
+      },
+      "cycle": "Human–mosquito–human",
+      "intrinsic_incubation_days": "4–10",
+      "extrinsic_incubation_days": "8–12",
+      "vertical_transmission": "Rare, limited epidemiological role",
+      "mosquito_species": "Aedes mosquitoes",
+      "human_to_human": "Not transmitted by casual contact",
+      "exceptions": [
+        "Mother-to-child during pregnancy or childbirth"
+      ],
+      "primary": "Mosquito bite",
+      "additional_routes": [
+        "Blood transfusion",
+        "Organ transplantation",
+        "Vertical transmission (mother to child)",
+        "Rare human-to-human transmission"
+      ],
+      "geographical_limits": {
+        "latitude": "35°N–35°S",
+        "altitude_meters": "<1000"
+      },
+      "vector_species": [
+        "Aedes aegypti",
+        "Aedes albopictus"
+      ],
+      "human_to_mosquito": {
+        "period": "Up to 2 days before symptoms until 2 days after fever resolves",
+        "includes": [
+          "Symptomatic",
+          "Pre-symptomatic",
+          "Asymptomatic"
+        ]
+      },
+      "other_routes": [
+        "Mother-to-child transmission",
+        "Blood transfusion (rare)",
+        "Organ transplantation (rare)",
+        "Laboratory exposure (rare)",
+        "Transovarial transmission in mosquitoes"
+      ],
+      "primary_vector": "Female Aedes mosquitoes",
+      "main_species": [
+        "Aedes aegypti"
+      ],
+      "other_vectors": [
+        "Aedes albopictus",
+        "Aedes polynesiensis",
+        "Aedes scutellaris"
+      ],
+      "biting_pattern": [
+        "Daytime biting",
+        "Peak at dawn and dusk"
+      ],
+      "additional_transmission_routes": [
+        "Blood transfusion",
+        "Organ transplantation",
+        "Vertical transmission (mother to child)"
+      ],
+      "vector_behavior": {
+        "biting_time": [
+          "Early morning",
+          "Evening before sunset"
+        ],
+        "feeding_pattern": "Daytime feeder"
+      },
+      "additional_modes": [
+        "Congenital transmission (mother to child)",
+        "Blood transfusion",
+        "Organ transplantation"
+      ]
+    },
+    "epidemiology": {
+      "endemic_regions": "All Indian States/UTs except Ladakh",
+      "seasonality": "Post-monsoon peak (July–November)",
+      "urban_rural_trend": "Shift from urban to rural transmission",
+      "risk_factors_environmental": [
+        "Stagnant water",
+        "Poor water storage",
+        "Construction sites",
+        "Urbanization",
+        "Climate change"
+      ],
+      "distribution": "Tropical and subtropical regions",
+      "trend": "Increasing incidence and geographic spread",
+      "risk_factors": [
+        "Unplanned urbanization",
+        "Poor water storage",
+        "Solid waste accumulation",
+        "Global travel",
+        "Climate change"
+      ],
+      "global_distribution": "All WHO regions except Europe",
+      "high_burden_regions": [
+        "South-East Asia",
+        "Western Pacific",
+        "Americas",
+        "Asia (~70%)",
+        "Africa",
+        "Southeast Asia"
+      ],
+      "recent_trends": [
+        "Explosive outbreaks in 2023–2024",
+        "Expansion into Europe",
+        "Climate-driven spread"
+      ],
+      "endemic_countries": ">100",
+      "global_population_at_risk": "≈3.9 billion",
+      "annual_infections_estimated": "≈390 million",
+      "annual_deaths_estimated": "≈25,000",
+      "urban_association": true,
+      "climate_change_impact": [
+        "Expanded mosquito range",
+        "Longer transmission seasons"
+      ]
+    },
+    "pathophysiology": {
+      "core_mechanisms": [
+        "Antibody-dependent enhancement (ADE)",
+        "Cytokine storm",
+        "Vasculopathy",
+        "Coagulopathy"
+      ],
+      "ade": {
+        "description": "Non-neutralizing antibodies enhance viral entry into macrophages",
+        "risk": "Secondary heterologous infection"
+      },
+      "cytokine_storm": {
+        "mediators": [
+          "TNF-α",
+          "IFN-γ",
+          "IL-6",
+          "IL-8",
+          "IL-10"
+        ],
+        "effects": [
+          "Shock",
+          "Organ dysfunction"
+        ]
+      },
+      "vasculopathy": {
+        "features": [
+          "Capillary leakage",
+          "Hemoconcentration",
+          "Pleural effusion",
+          "Ascites"
+        ]
+      },
+      "coagulopathy": {
+        "features": [
+          "Prolonged aPTT",
+          "Low fibrinogen",
+          "Thrombocytopenia",
+          "DIC"
+        ]
+      },
+      "initial_infection": [
+        "Virus enters skin via mosquito saliva",
+        "Infects keratinocytes and Langerhans cells",
+        "Virus enters via mosquito saliva",
+        "Infects dendritic cells (Langerhans cells)"
+      ],
+      "systemic_spread": [
+        "Lymph node replication",
+        "Viremia",
+        "Cytokine storm"
+      ],
+      "severe_disease_mechanism": [
+        "Capillary leakage",
+        "Bone marrow suppression",
+        "Reduced platelet production",
+        "Hypovolemic shock"
+      ],
+      "viral_entry_receptors": [
+        "DC-SIGN",
+        "Mannose receptor",
+        "CLEC5A"
+      ],
+      "severe_disease_mechanisms": [
+        "Endothelial dysfunction",
+        "Capillary leakage",
+        "Bone marrow suppression",
+        "Immune-mediated coagulopathy",
+        "Cytokine storm"
+      ],
+      "key_mechanisms": [
+        "High viral load",
+        "Immune activation",
+        "Cytokine and chemokine imbalance",
+        "Endothelial dysfunction",
+        "Antibody-dependent enhancement (ADE)",
+        "Cytokine storm",
+        "Bone marrow suppression",
+        "Platelet destruction"
+      ],
+      "plasma_leakage": "Functional, reversible endothelial changes",
+      "thrombocytopenia_causes": [
+        "Bone marrow suppression",
+        "Platelet destruction",
+        "Peripheral consumption"
+      ],
+      "severe_outcomes": [
+        "Shock",
+        "Severe bleeding",
+        "Organ impairment"
+      ],
+      "plasma_leak": "Selective, transient, non-inflammatory",
+      "bleeding_causes": [
+        "Vasculopathy",
+        "Thrombocytopenia",
+        "Platelet dysfunction",
+        "Coagulopathy"
+      ]
+    },
+    "clinical_phases": [
+      {
+        "phase": "Febrile",
+        "duration_days": "2–7",
+        "features": [
+          "High-grade fever",
+          "Headache",
+          "Retro-orbital pain",
+          "Myalgia",
+          "Arthralgia",
+          "Maculopapular rash",
+          "Leucopenia",
+          "Mild bleeding"
+        ]
+      },
+      {
+        "phase": "Critical",
+        "duration_hours": "24–48",
+        "features": [
+          "Plasma leakage",
+          "Rising hematocrit",
+          "Rapid platelet fall",
+          "Shock",
+          "Organ impairment"
+        ]
+      },
+      {
+        "phase": "Recovery",
+        "duration_days": "2–3",
+        "features": [
+          "Fluid reabsorption",
+          "Rising platelets",
+          "Convalescent rash",
+          "Pruritus"
+        ]
+      },
+      {
+        "phase": "Febrile",
+        "features": [
+          "High fever",
+          "Headache",
+          "Retro-orbital pain",
+          "Myalgia",
+          "Arthralgia",
+          "Rash",
+          "Leukopenia"
+        ]
+      },
+      {
+        "phase": "Critical",
+        "features": [
+          "Plasma leakage",
+          "Rising hematocrit",
+          "Thrombocytopenia",
+          "Shock"
+        ]
+      },
+      {
+        "phase": "Recovery",
+        "features": [
+          "Fluid reabsorption",
+          "Rising platelets",
+          "Clinical improvement"
+        ]
+      },
+      {
+        "febrile_phase": {
+          "features": [
+            "High fever",
+            "Viremia",
+            "Headache",
+            "Myalgia",
+            "Petechiae"
+          ]
+        },
+        "critical_phase": {
+          "onset": "Around day 3–5",
+          "features": [
+            "Plasma leakage",
+            "Hemoconcentration (>20%)",
+            "Risk of shock",
+            "Gastrointestinal bleeding"
+          ]
+        },
+        "convalescent_phase": {
+          "features": [
+            "Fluid reabsorption",
+            "Hemodynamic stabilization",
+            "Recovery"
+          ]
+        }
+      },
+      {
+        "febrile_phase": {
+          "duration_days": "2–7",
+          "features": [
+            "High fever (40–41°C)",
+            "Severe headache",
+            "Retro-orbital pain",
+            "Muscle and joint pain",
+            "Nausea and vomiting",
+            "Skin rash",
+            "Mild bleeding (nose, gums)"
+          ]
+        },
+        "critical_phase": {
+          "timing": "After fever subsides",
+          "hallmark": "Plasma leakage",
+          "warning_signs": [
+            "Severe abdominal pain",
+            "Persistent vomiting",
+            "Rapid breathing",
+            "Bleeding",
+            "Lethargy or restlessness",
+            "Rising hematocrit",
+            "Falling platelets"
+          ],
+          "risks": [
+            "Shock",
+            "Internal bleeding",
+            "Organ failure"
+          ]
+        },
+        "recovery_phase": {
+          "duration_days": "2–3",
+          "features": [
+            "Fluid reabsorption",
+            "Improved appetite",
+            "Severe itching",
+            "Slow heart rate (bradycardia)",
+            "Gradual platelet recovery"
+          ]
+        }
+      },
+      {
+        "febrile_phase": {
+          "duration_days": "2–7",
+          "features": [
+            "High fever (>40°C)",
+            "Severe headache",
+            "Retro-orbital pain",
+            "Myalgia",
+            "Arthralgia",
+            "Nausea",
+            "Vomiting",
+            "Early rash",
+            "Leukopenia"
+          ]
+        },
+        "critical_phase": {
+          "timing": "As fever subsides",
+          "duration_days": "1–2",
+          "hallmark": "Plasma leakage",
+          "features": [
+            "Rising hematocrit",
+            "Rapid platelet fall",
+            "Pleural effusion",
+            "Ascites",
+            "Shock",
+            "Severe bleeding",
+            "Organ dysfunction"
+          ]
+        },
+        "recovery_phase": {
+          "duration_days": "2–3",
+          "features": [
+            "Fluid reabsorption",
+            "Hemodynamic stabilization",
+            "Bradycardia",
+            "Severe itching",
+            "Convalescent rash",
+            "Fatigue (weeks in adults)"
+          ]
+        }
+      },
+      {
+        "febrile_phase": {
+          "duration_days": "2–7",
+          "features": [
+            "High fever (may be biphasic)",
+            "Myalgia",
+            "Headache",
+            "Retro-orbital pain",
+            "Arthralgia",
+            "Maculopapular rash",
+            "Epistaxis",
+            "Pharyngitis",
+            "Febrile seizures"
+          ],
+          "laboratory_trend": "WBC drops before platelets"
+        },
+        "critical_phase": {
+          "timing": "At fever defervescence",
+          "duration_hours": "24–48",
+          "hallmark": "Plasma leakage",
+          "signs": [
+            "Pleural effusion",
+            "Ascites",
+            "Periorbital edema",
+            "Rising hematocrit >20%",
+            "Narrow pulse pressure <20 mmHg"
+          ],
+          "shock_note": "Child may appear well despite compensated shock"
+        },
+        "recovery_phase": {
+          "duration_days": "2–3",
+          "features": [
+            "Improving appetite",
+            "Diuresis",
+            "Falling hematocrit",
+            "Rising platelets",
+            "Severe itching (palms and soles)",
+            "Bradycardia"
+          ],
+          "risk": "Fluid overload if IV fluids not reduced"
+        }
+      },
+      {
+        "febrile_phase": {
+          "duration_days": "3–7",
+          "features": [
+            "High spiking fever",
+            "Headache",
+            "Retro-orbital pain",
+            "Myalgia",
+            "Arthralgia",
+            "Backache",
+            "Anorexia",
+            "Nausea",
+            "Skin flushing",
+            "Morbilliform rash",
+            "Leukopenia"
+          ]
+        },
+        "critical_phase": {
+          "timing": "At defervescence",
+          "duration_hours": "24–48",
+          "hallmark": "Plasma leakage",
+          "features": [
+            "Rising hematocrit (>20%)",
+            "Rapid platelet fall",
+            "Narrow pulse pressure",
+            "Pleural effusion",
+            "Ascites",
+            "Shock"
+          ],
+          "note": "Patient may worsen when fever subsides"
+        },
+        "recovery_phase": {
+          "features": [
+            "Reabsorption of extravascular fluid",
+            "Improving appetite",
+            "Polyuria",
+            "Itchy rash",
+            "Bradycardia",
+            "Rising WBC then platelets"
+          ],
+          "risk": "Fluid overload if IV fluids continued"
+        }
+      }
+    ],
+    "severe_dengue_criteria": {
+      "shock": true,
+      "severe_bleeding": true,
+      "organ_dysfunction": [
+        "Liver (AST/ALT ≥1000)",
+        "CNS (GCS <9, encephalopathy)",
+        "Kidney (AKI)",
+        "Heart (myocarditis)",
+        "Lungs (ARDS)"
+      ]
+    },
+    "platelet_transfusion": {
+      "indicated_if": [
+        "Active bleeding with thrombocytopenia",
+        "Platelets <10,000/mm³ (even without bleeding)"
+      ],
+      "not_indicated": [
+        "Prophylactic transfusion without bleeding"
+      ],
+      "indications": [
+        "Active bleeding with thrombocytopenia",
+        "Platelets <10000/mm3"
+      ],
+      "not_recommended": [
+        "Prophylactic transfusion without bleeding"
+      ]
+    },
+    "high_risk_groups": [
+      "Infants",
+      "Children <10 years",
+      "Elderly >65 years",
+      "Pregnant women",
+      "Obesity",
+      "Diabetes",
+      "Hypertension",
+      "CKD",
+      "CLD",
+      "Patients on steroids or NSAIDs",
+      "Children",
+      "Elderly",
+      "Immunocompromised",
+      "Pregnant patients",
+      "Expatriate workers",
+      "G6PD deficiency",
+      "Beta thalassemia major",
+      "Congenital heart disease",
+      "Chronic kidney disease",
+      "Diabetes mellitus",
+      "Patients on NSAIDs or steroids"
+    ],
+    "pediatric_specific": {
+      "differences": [
+        "Undifferentiated febrile illness common",
+        "Higher risk of shock",
+        "Rapid progression"
+      ],
+      "management_notes": [
+        "Weight-based fluid dosing",
+        "Early PICU for severe cases"
+      ]
+    },
+    "monitoring": {
+      "vitals_frequency": "Every 30 min until stable, then 2–4 hourly",
+      "labs": [
+        "Serial hematocrit",
+        "Platelet count",
+        "Urine output"
+      ]
+    },
+    "key_clinical_rules": [
+      "Platelet count alone does not predict bleeding",
+      "Early shock recognition saves lives",
+      "Excess fluids cause harm",
+      "No role of steroids"
+    ],
+    "disease_overview": {
+      "name": "Dengue Fever",
+      "severe_forms": [
+        "Dengue Haemorrhagic Fever (DHF)",
+        "Dengue Shock Syndrome (DSS)"
+      ],
+      "classification": "Mosquito-borne viral disease",
+      "public_health_importance": "Fastest emerging arboviral disease globally",
+      "population_at_risk": {
+        "global": "≈2.5 billion",
+        "asia_pacific_share": "≈75%"
+      },
+      "public_health_status": [
+        "Neglected Tropical Disease (WHO)",
+        "Disease of poverty"
+      ],
+      "global_distribution": {
+        "endemic_countries": ">100",
+        "highest_burden_regions": [
+          "South-East Asia",
+          "South America",
+          "Tropical and Subtropical regions"
+        ]
+      },
+      "global_burden": {
+        "annual_infections": 390000000,
+        "symptomatic_cases": 96000000,
+        "annual_deaths": 20000
+      },
+      "type": "Vector-borne arboviral disease",
+      "global_importance": "Most rapidly spreading arboviral disease",
+      "estimated_annual_infections": 50000000,
+      "who_priority": "Neglected Tropical Disease",
+      "virus_family": "Flaviviridae",
+      "genus": "Flavivirus",
+      "genome": "Single-stranded RNA",
+      "serotypes": [
+        "DENV-1",
+        "DENV-2",
+        "DENV-3",
+        "DENV-4"
+      ],
+      "treatment_availability": "No specific antiviral treatment",
+      "global_risk": "≈50% of world population at risk",
+      "ksa_history": {
+        "first_reported": 1994,
+        "first_location": "Jeddah",
+        "first_serotype": "DENV-2"
+      }
+    },
+    "etiology": {
+      "virus_family": "Flaviviridae",
+      "genus": "Flavivirus",
+      "genome": {
+        "type": "Single-stranded RNA",
+        "length_nt": 11644
+      },
+      "structural_proteins": [
+        "C",
+        "M",
+        "E"
+      ],
+      "non_structural_proteins": [
+        "NS1",
+        "NS2A",
+        "NS2B",
+        "NS3",
+        "NS4A",
+        "NS4B",
+        "NS5"
+      ],
+      "serotypes": [
+        "DENV-1",
+        "DENV-2",
+        "DENV-3",
+        "DENV-4"
+      ],
+      "genotypes": {
+        "DENV-1": 3,
+        "DENV-2": 6,
+        "DENV-3": 4,
+        "DENV-4": 4
+      },
+      "immunity": {
+        "primary": "Lifelong immunity to same serotype",
+        "secondary": "Temporary cross-protection only",
+        "risk": "Secondary infection increases severity risk",
+        "homologous": "Lifelong immunity to same serotype",
+        "heterologous": "Temporary cross-protection"
+      },
+      "virus": {
+        "name": "Dengue virus (DENV)",
+        "family": "Flaviviridae",
+        "genus": "Flavivirus",
+        "serotypes": [
+          "DENV-1",
+          "DENV-2",
+          "DENV-3",
+          "DENV-4"
+        ]
+      },
+      "viral_structure": {
+        "particle_shape": "Spherical",
+        "diameter_nm": "40–50",
+        "genome": {
+          "type": "Single-stranded positive-sense RNA",
+          "length_kb": "~11"
+        },
+        "key_proteins": [
+          "Envelope glycoprotein (E)",
+          "NS1 (non-structural protein)"
+        ]
+      }
+    },
+    "vectors": {
+      "primary": {
+        "species": "Aedes aegypti",
+        "behavior": [
+          {
+            "feeding": "Day-biting, multiple feeds",
+            "host_preference": "Strongly anthropophilic",
+            "habitat": "Urban, domestic containers"
+          },
+          "Highly anthropophilic",
+          "Daytime biting",
+          "Multiple bites per feeding",
+          "Indoor resting"
+        ],
+        "vectorial_capacity": "High",
+        "breeding_sites": [
+          "Water storage containers",
+          "Discarded tyres",
+          "Flower pots",
+          "Coolers"
+        ]
+      },
+      "secondary": {
+        "species": "Aedes albopictus",
+        "behavior": {
+          "feeding": "Single-feed, aggressive",
+          "host_preference": "Humans and animals",
+          "habitat": "Peri-urban, rural"
+        },
+        "vectorial_capacity": "Lower in urban epidemics",
+        "role": "Expanding geographic spread"
+      },
+      "primary_vector": {
+        "species": "Aedes aegypti",
+        "behavior": [
+          "Highly anthropophilic",
+          "Daytime feeder",
+          "Breeds in stagnant clean water",
+          "Urban adapted"
+        ],
+        "characteristics": [
+          "Daytime biting",
+          "Urban adaptation",
+          "Breeds in clean stagnant water",
+          "Indoor resting"
+        ]
+      },
+      "secondary_vector": {
+        "species": "Aedes albopictus",
+        "characteristics": [
+          "Originally Asian",
+          "Now globally expanded",
+          "Contributes to spread"
+        ]
+      },
+      "life_cycle": {
+        "stages": [
+          "Egg",
+          "Larva",
+          "Pupa",
+          "Adult"
+        ],
+        "larval_duration_days": "7–9",
+        "pupal_duration_days": "2–3",
+        "temperature_reference_celsius": 25
+      },
+      "secondary_vectors": [
+        "Aedes albopictus",
+        "Aedes polynesiensis",
+        "Aedes scutellaris",
+        "Aedes niveus (sylvatic)"
+      ],
+      "life_cycle_days": {
+        "average": "8–10",
+        "stages": [
+          "Egg",
+          "Larva",
+          "Pupa",
+          "Adult"
+        ]
+      }
+    },
+    "clinical_spectrum": {
+      "iceberg_phenomenon": {
+        "asymptomatic": "Majority",
+        "dengue_fever": "Common",
+        "dhf": "Less common",
+        "dss": "Least but most severe"
+      },
+      "asymptomatic": "Majority of infections",
+      "undifferentiated_fever": {
+        "features": [
+          "Mild fever",
+          "Clinically indistinguishable",
+          "Often undiagnosed"
+        ]
+      },
+      "dengue_fever": {
+        "common_in": [
+          "Adults",
+          "Older children"
+        ],
+        "features": [
+          "Biphasic high-grade fever (3–7 days)",
+          "Severe headache (retrobulbar)",
+          "Myalgia",
+          "Arthralgia",
+          "Vomiting",
+          "Abdominal pain",
+          "Diarrhea",
+          "Cutaneous rash (50–82%)"
+        ],
+        "bleeding": "Rare but possible"
+      },
+      "dengue_shock_syndrome": {
+        "definition": "DHF with circulatory failure",
+        "features": [
+          "Weak rapid pulse",
+          "Narrow pulse pressure <20 mmHg",
+          "Cold clammy skin",
+          "Restlessness",
+          "Cyanosis",
+          "Hypotension",
+          "Altered consciousness"
+        ],
+        "mortality_risk": "High without prompt treatment"
+      },
+      "non_severe_dengue": {
+        "features": [
+          "Acute fever",
+          "Headache",
+          "Myalgia",
+          "Arthralgia",
+          "Rash",
+          "Leukopenia"
+        ]
+      },
+      "severe_dengue": {
+        "features": [
+          "Severe plasma leakage",
+          "Severe bleeding",
+          "Severe organ involvement",
+          "Severe abdominal pain",
+          "Difficulty breathing",
+          "Life-threatening bleeding"
+        ],
+        "percent": "1–2%",
+        "highest_risk_scenario": "Second infection with a different serotype"
+      },
+      "phases": [
+        "Febrile phase",
+        "Critical phase",
+        "Recovery phase"
+      ],
+      "classic_dengue": [
+        "High fever (39–40°C)",
+        "Headache",
+        "Myalgia",
+        "Arthralgia",
+        "Rash",
+        "Retro-orbital pain"
+      ],
+      "dengue_hemorrhagic_fever": {
+        "criteria": [
+          "Fever",
+          "Bleeding manifestations",
+          "Plasma leakage",
+          "Thrombocytopenia"
+        ]
+      },
+      "asymptomatic_percent": 75,
+      "symptomatic_percent": 25,
+      "typical_course": {
+        "stage_1": {
+          "description": "Sudden onset fever with muscle and joint pain",
+          "additional_symptoms": [
+            "Severe headache",
+            "Retro-orbital pain",
+            "Nausea",
+            "Vomiting",
+            "Swollen glands",
+            "Rash"
+          ]
+        },
+        "stage_2": {
+          "timing_days": "After 3–5 days",
+          "features": [
+            "Second fever spike",
+            "Possible rash"
+          ]
+        }
+      }
+    },
+    "laboratory_diagnosis": {
+      "early_phase": [
+        "NS1 ELISA",
+        "PCR"
+      ],
+      "late_phase": [
+        "IgM ELISA",
+        "IgG seroconversion"
+      ],
+      "supportive": [
+        "CBC",
+        "Hematocrit",
+        "Platelet count",
+        "LFT",
+        "Coagulation profile"
+      ],
+      "direct_detection": [
+        "Virus isolation (cell culture)",
+        "RT-PCR",
+        "Real-time PCR"
+      ],
+      "antigen_detection": {
+        "ns1": {
+          "detectable_days": "Day 1 to Day 9+",
+          "advantages": [
+            "Early diagnosis",
+            "High sensitivity and specificity"
+          ]
+        }
+      },
+      "serology": {
+        "igM": {
+          "method": "MAC-ELISA",
+          "appearance_days": "5–7"
+        },
+        "igG": {
+          "use": "Primary vs secondary infection",
+          "marker": "Four-fold rise"
+        },
+        "limitations": [
+          "Cross-reactivity with flaviviruses"
+        ],
+        "limitation": "Cross-reactivity with flaviviruses"
+      },
+      "definitive_methods": [
+        "Virus isolation",
+        "Viral RNA detection",
+        "Antigen detection",
+        "Serology"
+      ],
+      "virus_isolation_methods": [
+        "Mosquito inoculation (gold standard)",
+        "Mosquito cell culture (C6/36)",
+        "Mammalian cell culture",
+        "Infant mouse inoculation"
+      ],
+      "molecular": {
+        "rt_pcr": {
+          "advantages": [
+            "Rapid",
+            "Serotype-specific",
+            "High sensitivity"
+          ],
+          "limitations": [
+            "False positives due to contamination",
+            "Cannot replace virus isolation for surveillance"
+          ]
+        }
+      },
+      "early_phase_tests": [
+        {
+          "rt_pcr": {
+            "timing_days": "≤7 days",
+            "role": "Gold standard, serotype-specific"
+          },
+          "ns1_antigen": {
+            "timing_days": "1–5 (up to 12)",
+            "role": "Early antigen detection"
+          }
+        },
+        "Virus isolation",
+        "RT-PCR",
+        "NS1 antigen detection"
+      ],
+      "late_phase_tests": [
+        {
+          "igM": {
+            "appearance": "After day 5",
+            "duration": "Up to 12 weeks"
+          },
+          "igG": {
+            "role": "Past infection or secondary infection",
+            "note": "Single IgG not diagnostic"
+          }
+        },
+        "IgM ELISA",
+        "IgG serology (paired samples)",
+        "IgG ELISA",
+        "IgM/IgG ratio"
+      ],
+      "supportive_labs": [
+        "CBC",
+        "Hematocrit",
+        "Platelet count",
+        "Liver enzymes"
+      ],
+      "hematological_findings": [
+        "Leukopenia",
+        "Thrombocytopenia",
+        "Hemoconcentration"
+      ],
+      "diagnostic_note": "Laboratory confirmation not always required for clinical management",
+      "interpretation_rules": {
+        "primary_infection": "IgM/IgG ratio >1.2",
+        "secondary_infection": "IgM/IgG ratio <1.2"
+      },
+      "typical_lab_findings": {
+        "DF": [
+          "Leukopenia",
+          "Mild thrombocytopenia",
+          "Mild AST elevation"
+        ],
+        "DHF": [
+          "Marked thrombocytopenia",
+          "Hemoconcentration",
+          "Hypoalbuminemia",
+          "Elevated AST > ALT",
+          "Coagulation abnormalities"
+        ]
+      }
+    },
+    "management": {
+      "general_principles": [
+        "No antiviral therapy",
+        "Early recognition of warning signs",
+        "Judicious fluid therapy"
+      ],
+      "medications": {
+        "allowed": [
+          "Paracetamol"
+        ],
+        "avoid": [
+          "Aspirin",
+          "NSAIDs",
+          "Steroids"
+        ]
+      }
+    },
+    "fluid_management": {
+      "preferred": [
+        "Normal saline",
+        "Ringer lactate"
+      ],
+      "avoid": [
+        "Hypotonic fluids"
+      ],
+      "risk": "Overhydration causes pulmonary edema",
+      "preferred_fluids": [
+        "Normal saline",
+        "Ringer lactate"
+      ],
+      "goal": "Prevent shock without causing fluid overload",
+      "major_risk": "Pulmonary edema from overhydration",
+      "therapy_of_choice": "Isotonic crystalloid solutions",
+      "shock_management": "Prompt IV fluid resuscitation",
+      "monitoring_parameters": [
+        "Hematocrit",
+        "Urine output",
+        "Vital signs",
+        "Pulse pressure"
+      ],
+      "overhydration_risk": "High during recovery phase",
+      "first_line": "Isotonic crystalloids",
+      "target_urine_output": "≥0.5 mL/kg/hour",
+      "colloids": "Second line if crystalloids fail",
+      "monitoring": [
+        "Vital signs",
+        "Hematocrit",
+        "Urine output",
+        "Pulse pressure"
+      ]
+    },
+    "surveillance": {
+      "types": [
+        "Epidemiological surveillance",
+        "Entomological surveillance",
+        "Laboratory surveillance"
+      ],
+      "indices": [
+        "House Index",
+        "Container Index",
+        "Breteau Index"
+      ],
+      "entomological_indices": [
+        "House Index",
+        "Container Index",
+        "Breteau Index"
+      ]
+    },
+    "vector_control": {
+      "environmental": [
+        "Source reduction",
+        "Water container management"
+      ],
+      "biological": [
+        "Larvivorous fish",
+        "Bacterial larvicides"
+      ],
+      "chemical": [
+        "Larvicides",
+        "Space spraying (ULV)"
+      ],
+      "integrated_vector_management": true,
+      "strategies": [
+        "Integrated Vector Management (IVM)",
+        "Environmental management",
+        "Chemical control",
+        "Biological control"
+      ],
+      "community_role": [
+        "Source reduction",
+        "Behavior change communication (COMBI)",
+        "Essential for sustainable control"
+      ],
+      "core_strategy": "Integrated Vector Management (IVM)",
+      "methods": [
+        "Source reduction",
+        "Environmental management",
+        "Biological control",
+        "Chemical control",
+        "Personal protection"
+      ],
+      "key_limitation": "Insecticide spraying alone is insufficient"
+    },
+    "outbreak_response": {
+      "components": [
+        "Early detection",
+        "Rapid response teams",
+        "Case investigation",
+        "Risk communication"
+      ]
+    },
+    "key_public_health_messages": [
+      "Most dengue deaths are preventable",
+      "Early fluid management saves lives",
+      "Vector control is the only prevention",
+      "Community participation is critical"
+    ],
+    "cause": {
+      "agent": "Dengue virus",
+      "virus_types": [
+        "Type 1",
+        "Type 2",
+        "Type 3",
+        "Type 4"
+      ]
+    },
+    "incubation_period": {
+      "average_days": 5,
+      "range_days": [
+        3,
+        10
+      ]
+    },
+    "types_of_dengue": [
+      {
+        "type": "Classical (Simple) Dengue Fever",
+        "fatal": false
+      },
+      {
+        "type": "Dengue Haemorrhagic Fever (DHF)",
+        "fatal": true
+      },
+      {
+        "type": "Dengue Shock Syndrome (DSS)",
+        "fatal": true
+      }
+    ],
+    "symptoms": {
+      "classical_dengue": [
+        "Sudden high fever with chills",
+        "Severe headache",
+        "Muscle and joint pain",
+        "Pain behind eyes",
+        "Extreme weakness",
+        "Loss of appetite",
+        "Nausea",
+        "Altered taste sensation",
+        "Mild throat pain",
+        "Abdominal pain",
+        "Depressed feeling",
+        "Skin rash (pinkish-red)"
+      ],
+      "rash_description": {
+        "appearance": "Diffuse flushing or pinhead eruptions",
+        "locations": [
+          "Face",
+          "Neck",
+          "Chest"
+        ],
+        "progression": "Becomes more prominent later"
+      },
+      "duration": "5–7 days",
+      "common_symptoms": [
+        "High fever (up to 104°F / 40°C)",
+        "Rash",
+        "Intense pain behind the eyes",
+        "Muscle pain",
+        "Bone pain",
+        "Joint pain",
+        "Nausea",
+        "Vomiting"
+      ],
+      "symptom_notes": [
+        "Symptoms often resemble influenza",
+        "Most infections cause mild or no symptoms"
+      ]
+    },
+    "danger_signs": {
+      "dhf_indicators": [
+        "Bleeding from nose",
+        "Bleeding from gums",
+        "Blood in stool",
+        "Blood in vomit",
+        "Bluish-black bleeding spots on skin",
+        "Positive tourniquet test"
+      ],
+      "dss_indicators": [
+        "Cold clammy skin despite fever",
+        "Extreme restlessness",
+        "Weak rapid pulse",
+        "Low blood pressure",
+        "Loss of consciousness"
+      ]
+    },
+    "prevention": {
+      "core_principles": [
+        "Prevent mosquito breeding",
+        "Prevent mosquito bites"
+      ],
+      "anti_breeding_measures": [
+        "Remove stagnant water",
+        "Clean drains and ditches",
+        "Empty and dry coolers weekly",
+        "Cover water tanks tightly",
+        "Dispose old tyres and containers"
+      ],
+      "chemical_control": {
+        "petrol_or_kerosene": {
+          "dose": "30 ml per 100 litres of water",
+          "frequency": "Weekly",
+          "purpose": "Prevents mosquito breeding"
+        }
+      },
+      "biological_control": [
+        "Larvivorous fish (Gambusia, Lebister)"
+      ],
+      "primary_strategy": "Prevent mosquito bites",
+      "personal_protection": [
+        "EPA-registered insect repellents (20–30% DEET)",
+        "Cover exposed skin",
+        "Use mosquito nets",
+        "Repair window and door screens",
+        "Protective clothing",
+        "Mosquito nets",
+        "DEET-based repellents",
+        "Permethrin-treated clothing"
+      ],
+      "environmental_control": [
+        "Remove standing water",
+        "Dispose of containers holding water",
+        "Fill low-lying water collection areas"
+      ],
+      "mosquito_control": [
+        "Eliminate standing water",
+        "Environmental sanitation",
+        "Community-based vector control"
+      ],
+      "household_measures": [
+        "Window and door screens",
+        "Air conditioning",
+        "Regular container cleaning"
+      ]
+    },
+    "personal_protection": [
+      "Wire mesh on doors and windows",
+      "Mosquito repellents (sprays, creams, coils, mats)",
+      "Indigenous smoke (googal)",
+      "Full-sleeve clothing",
+      "Avoid shorts and T-shirts for children",
+      "Insecticidal sprays weekly inside house"
+    ],
+    "household_measures": [
+      "Spray behind photo frames and curtains",
+      "Keep surroundings clean",
+      "Remove wild vegetation within 100m",
+      "Cooperate with government spray workers"
+    ],
+    "community_guidance": [
+      "Report mosquito density to local health authorities",
+      "Inform authorities if fever cases increase",
+      "Use mosquito net for dengue patient during first 5–6 days"
+    ],
+    "key_public_messages": [
+      "Aedes mosquitoes bite during daytime",
+      "Dengue prevention is easy and cheap",
+      "Early treatment prevents death",
+      "Community participation is essential"
+    ],
+    "helpline_information": {
+      "service": "DORC Dengue Information Helpline",
+      "phone": "011-26589712",
+      "availability": "Anytime"
+    },
+    "risk_factors": {
+      "environmental": [
+        "Rainfall",
+        "Temperature",
+        "Stagnant water",
+        "Climate change",
+        "Urbanization",
+        "Poor water management",
+        "High temperature",
+        "High humidity",
+        "Unplanned urbanization"
+      ],
+      "socioeconomic": [
+        "Rapid urbanization",
+        "Poor waste management",
+        "Inadequate water supply",
+        "Poverty"
+      ],
+      "population_factors": [
+        "Population movement",
+        "Global travel",
+        "Globalization"
+      ],
+      "future_risk_projection": {
+        "additional_population_at_risk_by_2080": 2000000000,
+        "reason": "Climate change"
+      },
+      "host": [
+        "Secondary dengue infection",
+        "Infancy",
+        "Young children",
+        "Chronic diseases (diabetes, asthma, sickle cell disease)"
+      ],
+      "immunological": [
+        "Antibody-dependent enhancement (ADE)",
+        "Maternal antibodies in infants"
+      ],
+      "housing_and_wash": [
+        "Poor water supply",
+        "Inadequate waste management",
+        "Standing water in containers"
+      ],
+      "population_risks": [
+        "Children",
+        "Elderly",
+        "People sleeping outdoors during daytime",
+        "Pregnant women",
+        "People requiring blood transfusion or organ transplant"
+      ],
+      "overcrowding": "Increases outbreak risk"
+    },
+    "experimental_and_future_therapies": {
+      "antiviral_research": [
+        "Glycyrrhizin",
+        "Ribavirin",
+        "6-azauridine"
+      ],
+      "phytomedicine": [
+        "Sulfated polysaccharides from seaweeds"
+      ],
+      "status": "Under research, not standard care"
+    },
+    "prevention_and_control": {
+      "primary_strategy": "Vector control",
+      "direct_methods": [
+        "Insecticides",
+        "Repellents",
+        "Larviciding",
+        "Space spraying"
+      ],
+      "indirect_methods": [
+        "Environmental sanitation",
+        "Source reduction",
+        "House improvement"
+      ],
+      "community_role": [
+        "Eliminate breeding sites",
+        "Participate in control programs"
+      ],
+      "vector_control": [
+        "Source reduction",
+        "Insecticides",
+        "Insect growth regulators",
+        {
+          "environmental": [
+            "Eliminate stagnant water",
+            "Proper waste management"
+          ],
+          "chemical": [
+            "Larvicides",
+            "Insect growth regulators"
+          ],
+          "biological": [
+            "Larvivorous fish",
+            "Copepods",
+            "Wolbachia-based control"
+          ],
+          "genetic": [
+            "Sterile insect technique",
+            "Genetically modified mosquitoes"
+          ]
+        },
+        "Eliminate stagnant water",
+        "Cover and clean water containers weekly",
+        "Proper waste disposal",
+        "Larvicides and insecticides",
+        "Environmental management",
+        "Personal protection"
+      ],
+      "biological": [
+        "Wolbachia-based control",
+        "Sterile insect technique"
+      ],
+      "community_measures": [
+        "Public awareness",
+        "Surveillance",
+        "Early outbreak detection"
+      ],
+      "personal_protection": [
+        "Protective clothing",
+        "Insect repellents (DEET)",
+        "Screened or air-conditioned rooms",
+        "Mosquito nets",
+        "Repellents",
+        "Window screens",
+        "Daytime mosquito avoidance",
+        "Clothing that covers skin",
+        "Window and door screens",
+        "DEET-based repellents",
+        "Indoor residual spraying",
+        "Outdoor space spraying",
+        "Screens",
+        "Air-conditioned or netted rooms"
+      ],
+      "community_actions": [
+        "Health education",
+        "Community engagement",
+        "Active mosquito surveillance"
+      ],
+      "most_effective_strategy": "Elimination of mosquito breeding sites",
+      "environmental_measures": [
+        "Cover water containers",
+        "Empty and clean containers regularly",
+        "Remove standing water in flowerpots",
+        "Clean up used tyres",
+        "Community clean-up campaigns",
+        "Proper garbage disposal"
+      ],
+      "larviciding": {
+        "use_case": "Fixed and identifiable water bodies",
+        "limitation": "Costly and less effective in scattered habitats"
+      },
+      "vaccine_status_2014": "No approved vaccine",
+      "vector_control_measures": [
+        "Eliminate standing water",
+        "Environmental modification",
+        "Biological control (fish, copepods)",
+        "Wolbachia-based mosquito control"
+      ],
+      "spraying_note": "Generalized insecticide spraying has limited effectiveness",
+      "emerging_strategies": [
+        "Genetically modified mosquitoes",
+        "Wolbachia-infected mosquitoes"
+      ],
+      "vaccine_status": {
+        "licensed": "Limited and controversial",
+        "challenge": "Need for tetravalent protection"
+      }
+    },
+    "key_conclusions": [
+      "Dengue burden is rapidly increasing",
+      "Early diagnosis is critical",
+      "Fluid management saves lives",
+      "Climate change will worsen transmission",
+      "Integrated vector control is essential",
+      "Dengue burden is increasing globally",
+      "Treatment remains supportive",
+      "Early recognition of warning signs is critical",
+      "Vaccines and antivirals are promising but incomplete",
+      "Vector control remains the cornerstone of prevention"
+    ],
+    "virus": {
+      "name": "Dengue virus (DENV)",
+      "family": "Flaviviridae",
+      "genus": "Flavivirus",
+      "serotypes": [
+        "DEN-1",
+        "DEN-2",
+        "DEN-3",
+        "DEN-4"
+      ],
+      "genetic_variability": "Multiple genotypes per serotype",
+      "high_risk_genotypes": [
+        "Asian genotypes of DEN-2",
+        "Asian genotypes of DEN-3"
+      ],
+      "genome": {
+        "type": "Single-stranded positive-sense RNA",
+        "structure": [
+          "Capsid (C)",
+          "Pre-membrane (prM)",
+          "Envelope (E)",
+          "Non-structural proteins NS1–NS5"
+        ]
+      }
+    },
+    "who_case_classification_2009": {
+      "dengue": {
+        "criteria": [
+          "Fever",
+          "Nausea or vomiting",
+          "Rash",
+          "Aches and pains",
+          "Leukopenia",
+          "Tourniquet test positive"
+        ]
+      },
+      "dengue_with_warning_signs": {
+        "warning_signs": [
+          "Abdominal pain or tenderness",
+          "Persistent vomiting",
+          "Clinical fluid accumulation",
+          "Mucosal bleeding",
+          "Lethargy or restlessness",
+          "Liver enlargement >2 cm",
+          "Rising hematocrit with falling platelets"
+        ]
+      },
+      "severe_dengue": {
+        "criteria": [
+          "Shock (DSS)",
+          "Respiratory distress",
+          "Severe bleeding",
+          "Severe organ involvement (AST/ALT ≥1000, CNS, heart)"
+        ]
+      }
+    },
+    "clinical_management": {
+      "general_principles": [
+        "No specific antiviral treatment",
+        "Early recognition of warning signs",
+        "Careful fluid management"
+      ],
+      "medications": {
+        "recommended": [
+          "Paracetamol"
+        ],
+        "contraindicated": [
+          "Aspirin",
+          "NSAIDs",
+          "Steroids"
+        ]
+      }
+    },
+    "blood_products": {
+      "platelet_transfusion": {
+        "indications": [
+          "Severe bleeding",
+          "Very low platelets with clinical bleeding"
+        ],
+        "not_recommended": [
+          "Prophylactic transfusion without bleeding"
+        ]
+      },
+      "packed_red_cells": "For significant hemorrhage",
+      "ffp": "For coagulopathy with bleeding",
+      "prophylactic_use": "Not recommended"
+    },
+    "case_fatality": {
+      "without_proper_care": "Up to 20%",
+      "with_early_fluid_management": "<1%"
+    },
+    "outbreak_preparedness": {
+      "components": [
+        "Early detection",
+        "Rapid response",
+        "Surge capacity planning",
+        "Risk communication"
+      ]
+    },
+    "vaccines_and_future": {
+      "status_2009": "No licensed vaccine",
+      "research_focus": [
+        "Live attenuated vaccines",
+        "Antiviral drug development"
+      ]
+    },
+    "key_messages": [
+      "Dengue is one disease with variable severity",
+      "Warning signs guide triage and admission",
+      "Early fluids save lives",
+      "Vector control is the only prevention"
+    ],
+    "global_epidemiology": {
+      "disease": "Dengue fever",
+      "endemic_countries": ">100",
+      "population_at_risk": "≈50% of world population",
+      "annual_cases_estimated": 390000000,
+      "symptomatic_cases": 96000000,
+      "regional_distribution": {
+        "asia": "≈70% of global burden",
+        "other_regions": [
+          "Americas",
+          "Western Pacific",
+          "Africa"
+        ]
+      },
+      "future_projection": {
+        "population_at_risk_by_2080": 6100000000,
+        "key_drivers": [
+          "Climate change",
+          "Urbanization",
+          "Global travel"
+        ]
+      },
+      "annual_infections_estimated": 390000000,
+      "high_burden_regions": [
+        "South-East Asia",
+        "Western Pacific",
+        "Americas",
+        "Africa"
+      ],
+      "trend": "Most rapidly spreading mosquito-borne viral disease",
+      "incidence_increase": "≈30-fold increase in last 50 years",
+      "annual_infections_estimate": 50000000,
+      "endemic_regions": [
+        "South-East Asia",
+        "Western Pacific",
+        "Americas",
+        "Africa",
+        "Eastern Mediterranean"
+      ],
+      "non_endemic_region": "Europe (imported cases only)",
+      "urban_rural_shift": "Expansion from urban to rural areas",
+      "epidemic_pattern": "Cyclical outbreaks every 3–5 years"
+    },
+    "virus_and_serotypes": {
+      "virus_name": "Dengue virus (DENV)",
+      "family": "Flaviviridae",
+      "genus": "Flavivirus",
+      "serotypes": [
+        "DENV-1",
+        "DENV-2",
+        "DENV-3",
+        "DENV-4"
+      ],
+      "immunity_profile": {
+        "primary_infection": "Serotype-specific long-term immunity",
+        "secondary_infection": "Higher risk of severe dengue",
+        "mechanism": "Antibody-dependent enhancement (ADE)"
+      }
+    },
+    "vectors_and_transmission": {
+      "primary_vectors": [
+        "Aedes aegypti",
+        "Aedes albopictus"
+      ],
+      "secondary_vectors": [
+        "Aedes polynesiensis",
+        "Aedes niveus",
+        "Aedes albopictus",
+        "Aedes scutellaris"
+      ],
+      "mosquito_characteristics": [
+        "Daytime biting",
+        "Urban adaptation",
+        "Highly anthropophilic"
+      ],
+      "transmission_modes": [
+        "Mosquito bite (primary)",
+        "Vertical transmission in mosquitoes",
+        "Mother-to-child transmission",
+        "Blood transfusion (rare)",
+        "Organ transplantation (rare)",
+        "Needlestick injury (rare)"
+      ],
+      "incubation": {
+        "intrinsic_days": "4–10",
+        "extrinsic_days": "5–14",
+        "temperature_effect": "Shorter EIP at 25–30°C",
+        "human_days": "5–7 (up to 14)",
+        "mosquito_days": "7–14"
+      },
+      "mechanical_transmission": {
+        "description": "Immediate transmission without midgut replication",
+        "evidence": "Observed in household clusters"
+      },
+      "primary_vector": "Aedes aegypti",
+      "vector_characteristics": [
+        "Daytime biting",
+        "Urban adaptation",
+        "Anthropophilic",
+        "Indoor resting",
+        "Daytime biter",
+        "Highly domestic",
+        "Breeds in clean stagnant water",
+        "Eggs survive months in dry conditions"
+      ],
+      "transmission_routes": [
+        "Mosquito bite (primary)",
+        "Blood transfusion (rare)",
+        "Vertical transmission",
+        "Needlestick injury (rare)"
+      ],
+      "vector_behavior": [
+        "Daytime biting",
+        "Peak activity early morning and evening",
+        "Prefers human hosts",
+        "Breeds in artificial water containers"
+      ],
+      "geographic_range": {
+        "latitude": "35°N–35°S",
+        "altitude": "<1000 meters"
+      },
+      "additional_transmission_routes": [
+        "Blood transfusion",
+        "Organ transplantation",
+        "Vertical transmission (mother to child)"
+      ],
+      "secondary_vector": "Aedes albopictus",
+      "transmission_cycles": [
+        "Urban/epidemic cycle",
+        "Rural/endemic cycle",
+        "Sylvatic (forest) cycle"
+      ],
+      "human_viremia": {
+        "starts": "2 days before fever",
+        "duration_days": "5–7 after fever onset"
+      }
+    },
+    "clinical_classification_who_2009": {
+      "dengue_without_warning_signs": {
+        "features": [
+          "Fever",
+          "Headache",
+          "Myalgia",
+          "Rash",
+          "Mild bleeding"
+        ]
+      },
+      "dengue_with_warning_signs": {
+        "warning_signs": [
+          "Persistent vomiting",
+          "Severe abdominal pain",
+          "Lethargy",
+          "Mucosal bleeding",
+          "Rapid breathing"
+        ]
+      },
+      "severe_dengue": {
+        "criteria": [
+          "Shock",
+          "Severe plasma leakage",
+          "Severe bleeding",
+          "Severe organ involvement"
+        ]
+      }
+    },
+    "treatment_and_management": {
+      "antiviral_status": "No approved antiviral treatment",
+      "supportive_care": [
+        "Rest",
+        "Hydration",
+        "Close monitoring"
+      ],
+      "medications": {
+        "recommended": [
+          "Paracetamol (acetaminophen)"
+        ],
+        "avoid": [
+          "Aspirin",
+          "Ibuprofen",
+          "NSAIDs"
+        ]
+      },
+      "hospitalization_indications": [
+        "Warning signs present",
+        "Severe dengue",
+        "Hemodynamic instability"
+      ],
+      "severe_case_management": [
+        "Intravenous fluids",
+        "Electrolyte correction",
+        "Blood transfusion if required",
+        "Intensive monitoring"
+      ],
+      "general_principles": [
+        "No antiviral therapy",
+        "Supportive care only",
+        "Avoid NSAIDs and aspirin",
+        "Supportive care",
+        "Careful fluid management",
+        "Early detection of severe cases"
+      ],
+      "group_a_home_care": [
+        "Adequate oral fluids",
+        "Bed rest",
+        "Paracetamol (max 4g/day adults)",
+        "Daily monitoring for warning signs"
+      ],
+      "group_b_hospital_care": [
+        "IV fluids (Normal saline or Ringer lactate)",
+        "Strict intake/output monitoring",
+        "Frequent hematocrit and platelet checks"
+      ],
+      "group_c_severe_management": [
+        "Rapid fluid resuscitation",
+        "Management of shock",
+        "Blood transfusion if severe bleeding",
+        "ICU monitoring"
+      ],
+      "home_management": [
+        "Oral rehydration",
+        "Daily follow-up",
+        "Paracetamol only"
+      ],
+      "hospital_management": [
+        "IV fluids (minimal effective volume)",
+        "Monitor urine output (0.5–1 mL/kg/hr)",
+        "Monitor hematocrit and vitals"
+      ],
+      "severe_dengue_management": [
+        "ICU care",
+        "Early blood transfusion if unstable",
+        "Avoid invasive procedures"
+      ],
+      "contraindicated": [
+        "Aspirin",
+        "Ibuprofen",
+        "NSAIDs",
+        "Intramuscular injections"
+      ]
+    },
+    "emerging_antiviral_research": {
+      "jnj_a07": {
+        "mechanism": "Blocks NS3–NS4B interaction",
+        "coverage": "All four serotypes",
+        "status": "Preclinical / experimental"
+      },
+      "natural_compounds": [
+        "Flavonoids",
+        "Silymarin",
+        "Baicalein"
+      ]
+    },
+    "vaccines": {
+      "approved_vaccines": {
+        "dengvaxia_cyd_tdv": {
+          "type": "Live attenuated",
+          "eligibility": "Previously infected individuals",
+          "efficacy": "≈60%",
+          "risk": "Severe dengue in seronegative individuals"
+        },
+        "tak_003_qdenga": {
+          "type": "Live attenuated",
+          "efficacy": {
+            "symptomatic": "61.2%",
+            "hospitalization": "84%",
+            "dhf": "70%"
+          }
+        }
+      },
+      "pipeline_vaccines": {
+        "butantan_dv": {
+          "type": "Single-dose tetravalent",
+          "efficacy": {
+            "overall": "80%",
+            "previously_infected": "89%"
+          }
+        },
+        "dengusiil": {
+          "status": "Clinical trials",
+          "response": "High seroconversion"
+        }
+      },
+      "development_challenges": [
+        "Balanced immunity to all serotypes",
+        "Antibody-dependent enhancement",
+        "Limited animal models",
+        "ADE",
+        "Balanced tetravalent immunity",
+        "Lack of animal models"
+      ],
+      "licensed": {
+        "dengvaxia": {
+          "type": "Live attenuated",
+          "limitation": "Risk in seronegative individuals"
+        }
+      },
+      "candidates": [
+        "DENVax",
+        "TV003 / TV005",
+        "DNA vaccines",
+        "Subunit vaccines",
+        "Inactivated vaccines"
+      ],
+      "dengvaxia": {
+        "type": "Live attenuated tetravalent",
+        "eligible_population": "Seropositive individuals ≥9 years",
+        "risk": "Severe dengue in seronegative children"
+      },
+      "tak_003": {
+        "developer": "Takeda",
+        "status": "Phase 3 completed",
+        "mechanism": "Live attenuated DENV2 backbone"
+      },
+      "latv": {
+        "status": "Phase 3 trials",
+        "advantage": "Single-dose protection"
+      }
+    },
+    "vector_control_strategies": {
+      "conventional": [
+        "Insecticides",
+        "Source reduction",
+        "Mosquito surveillance"
+      ],
+      "biological": {
+        "wolbachia": {
+          "mechanism": "Reduces viral replication",
+          "field_results": "Reduced dengue transmission"
+        }
+      },
+      "genetic": [
+        "Genetically modified Aedes mosquitoes"
+      ]
+    },
+    "future_technologies": {
+      "stem_cell_therapy": {
+        "role": "Reduces inflammation and organ damage",
+        "evidence": "Animal models"
+      },
+      "wearable_biosensors": {
+        "use": "Early detection and real-time monitoring"
+      }
+    },
+    "disease_identity": {
+      "name": "Dengue fever",
+      "virus": "Dengue virus (DENV)",
+      "family": "Flaviviridae",
+      "genus": "Flavivirus",
+      "global_burden": {
+        "annual_infections": "100–400 million",
+        "annual_deaths": "22,000–40,000",
+        "population_at_risk": "≈50% of world population"
+      },
+      "alternate_names": [
+        "Break-bone fever",
+        "Dengue hemorrhagic fever (severe form)",
+        "Dandy fever",
+        "Breakbone fever"
+      ],
+      "classification": "Arthropod-borne viral disease",
+      "category": "Arthropod-borne viral disease",
+      "neglected_tropical_disease": true,
+      "virus_family": "Flaviviridae",
+      "virus_genus": "Flavivirus",
+      "serotypes": [
+        "DEN-1",
+        "DEN-2",
+        "DEN-3",
+        "DEN-4",
+        "DENV-1",
+        "DENV-2",
+        "DENV-3",
+        "DENV-4"
+      ],
+      "genotypes": {
+        "DEN-1": 3,
+        "DEN-2": 2,
+        "DEN-3": 4,
+        "DEN-4": 4
+      },
+      "main_vector": "Aedes aegypti",
+      "disease_type": "Arboviral infection"
+    },
+    "virus_structure_and_genome": {
+      "virion": {
+        "shape": "Spherical, enveloped",
+        "diameter_nm": 50,
+        "symmetry": "Icosahedral"
+      },
+      "genome": {
+        "type": "Positive-sense single-stranded RNA",
+        "features": [
+          "5′ cap",
+          "No 3′ poly-A tail"
+        ],
+        "expression": "Single polyprotein ORF"
+      },
+      "proteins": {
+        "structural": [
+          "Capsid (C)",
+          "Membrane (M)",
+          "Envelope (E)"
+        ],
+        "non_structural": [
+          "NS1",
+          "NS2A",
+          "NS2B",
+          "NS3",
+          "NS4A",
+          "NS4B",
+          "NS5"
+        ]
+      },
+      "key_functions": {
+        "E_protein": "Cell attachment, membrane fusion, neutralizing antibody target",
+        "NS1": "Immune evasion, complement inhibition",
+        "NS3_NS5": "Protease and RNA-dependent RNA polymerase"
+      }
+    },
+    "serotypes_and_immunity": {
+      "serotypes": [
+        "DENV-1",
+        "DENV-2",
+        "DENV-3",
+        "DENV-4"
+      ],
+      "primary_infection": {
+        "immunity": "Lifelong to same serotype",
+        "severity": "Usually mild to moderate"
+      },
+      "secondary_infection": {
+        "risk": "High",
+        "mechanism": "Antibody-dependent enhancement (ADE)",
+        "outcome": [
+          "DHF",
+          "DSS"
+        ]
+      }
+    },
+    "viral_replication_cycle": {
+      "entry": "Receptor-mediated endocytosis",
+      "host_receptors": [
+        "Heparan sulfate",
+        "Hsp70 / Hsp90",
+        "CD14",
+        "GRP78/BiP",
+        "Laminin receptor",
+        "C-type lectin receptors"
+      ],
+      "replication_site": "Endoplasmic reticulum (ER)",
+      "assembly": "Budding into ER lumen",
+      "maturation": "prM cleavage in trans-Golgi network",
+      "release": "Exocytosis of mature virions"
+    },
+    "pathogenesis": {
+      "target_cells": [
+        "Monocytes",
+        "Macrophages",
+        "Dendritic cells",
+        "Endothelial cells"
+      ],
+      "severity_drivers": [
+        "High viremia",
+        "Secondary infection",
+        "Host genetics",
+        "Immune dysregulation"
+      ],
+      "immune_mechanisms": {
+        "innate": [
+          "Type I interferons (IFN-α/β)",
+          "NK cell activation",
+          "Complement activation"
+        ],
+        "adaptive": [
+          "IgM → IgG antibody switch",
+          "CD4 and CD8 T cell responses",
+          "Immunopathology in secondary infection"
+        ]
+      },
+      "cell_targets": [
+        "Dendritic cells",
+        "Monocytes",
+        "Macrophages",
+        "Endothelial cells"
+      ],
+      "mechanisms": [
+        "Antibody-dependent enhancement (ADE)",
+        "Cytokine release",
+        "Endothelial dysfunction",
+        "Bone marrow suppression"
+      ],
+      "key_receptors": [
+        "DC-SIGN",
+        "Mannose receptor",
+        "C-type lectins"
+      ]
+    },
+    "co_infections": {
+      "common": [
+        "Zika virus",
+        "Chikungunya",
+        "Malaria",
+        "COVID-19",
+        "West Nile virus"
+      ],
+      "clinical_impact": [
+        "Increased severity",
+        "Diagnostic confusion",
+        "Higher hospitalization risk"
+      ]
+    },
+    "diagnostics": {
+      "early_phase": [
+        "RT-PCR",
+        "Virus isolation",
+        "NS1 antigen detection"
+      ],
+      "late_phase": [
+        "IgM ELISA",
+        "IgG ELISA",
+        "Hemagglutination inhibition test"
+      ],
+      "rapid_tests": {
+        "targets": [
+          "NS1",
+          "IgM",
+          "IgG"
+        ],
+        "advantages": [
+          "Low cost",
+          "Fast results",
+          "Minimal training required"
+        ],
+        "limitations": [
+          "Lower sensitivity in secondary infection",
+          "Serotype variability"
+        ]
+      }
+    },
+    "antiviral_research": {
+      "viral_targets": [
+        "Envelope protein (fusion inhibitors)",
+        "NS3 protease",
+        "NS5 polymerase"
+      ],
+      "host_targets": [
+        "α-glucosidase",
+        "IMP dehydrogenase"
+      ],
+      "ideal_drug_profile": [
+        "Effective against all serotypes",
+        "Oral",
+        "Low resistance risk"
+      ]
+    },
+    "core_chatbot_messages": [
+      "Dengue severity depends on immune history",
+      "Secondary infection is the highest risk",
+      "Early diagnosis saves lives",
+      "Vector control remains essential",
+      "Supportive care is currently the only treatment"
+    ],
+    "overview": {
+      "definition": "Dengue fever is a mosquito-borne viral illness caused by dengue virus infection.",
+      "severity_range": [
+        "Asymptomatic",
+        "Mild flu-like illness",
+        "Severe dengue (dengue hemorrhagic fever)"
+      ],
+      "key_risk_fact": "Second infection with a different dengue virus strain increases risk of severe disease."
+    },
+    "causative_agent": {
+      "virus": "Dengue virus (DENV)",
+      "strains": [
+        "DENV-1",
+        "DENV-2",
+        "DENV-3",
+        "DENV-4"
+      ],
+      "immunity": {
+        "after_infection": "Long-term immunity to the same strain",
+        "cross_strain_effect": "Increased severity risk due to antibody-dependent enhancement (ADE)"
+      }
+    },
+    "geographical_distribution": {
+      "common_regions": [
+        "Central America",
+        "South America",
+        "Africa",
+        "Asia",
+        "Pacific Islands"
+      ],
+      "global_risk_population": "More than half of the world’s population",
+      "high_risk_groups": [
+        "Children",
+        "Elderly",
+        "Pregnant women",
+        "Frequent travelers to endemic regions"
+      ]
+    },
+    "incubation_and_course": {
+      "incubation_period_days": {
+        "min": 4,
+        "max": 10,
+        "range": "3–14",
+        "most_common": "4–7"
+      },
+      "typical_duration_days": {
+        "min": 3,
+        "max": 7
+      },
+      "progression_risk": "About 1 in 20 cases progress to severe dengue",
+      "clinical_outcomes": [
+        "Asymptomatic infection",
+        "Undifferentiated febrile illness",
+        "Dengue fever",
+        "Dengue hemorrhagic fever",
+        "Dengue shock syndrome"
+      ],
+      "overall_duration_days": "2–7 (longer with complications)",
+      "clinical_outcomes_distribution": {
+        "asymptomatic": "≈80%",
+        "mild_to_moderate": "≈15%",
+        "severe": "<5%",
+        "fatal": "<1% with proper care"
+      }
+    },
+    "severe_dengue": {
+      "description": "A life-threatening complication occurring after fever subsides",
+      "onset_window_hours": "24–48 hours after fever goes away",
+      "warning_signs": [
+        "Severe abdominal pain",
+        "Frequent vomiting",
+        "Vomiting blood",
+        "Blood in stool",
+        "Nosebleeds",
+        "Bleeding gums",
+        "Extreme tiredness",
+        "Restlessness",
+        "Irritability"
+      ],
+      "emergency_instruction": "Immediate emergency care required"
+    },
+    "pathophysiology_simple": {
+      "mechanism": [
+        "Virus multiplies in bloodstream",
+        "Immune response damages blood vessels",
+        "Platelet destruction and plasma leakage",
+        "Risk of internal bleeding and shock"
+      ]
+    },
+    "hospital_care": {
+      "indications": [
+        "Severe dengue symptoms",
+        "Warning signs present",
+        "High-risk patients"
+      ],
+      "possible_interventions": [
+        "Intravenous fluids",
+        "Close monitoring",
+        "Blood transfusion if required"
+      ]
+    },
+    "prognosis": {
+      "mild_cases": "Full recovery expected",
+      "severe_cases_with_treatment": ">99% survival rate",
+      "risk_without_treatment": "High mortality",
+      "severe_cases_without_treatment": "Up to 26% mortality",
+      "long_term_effects": [
+        "Fatigue",
+        "Memory and concentration problems",
+        "Prolonged fatigue",
+        "Cognitive complaints (rare)"
+      ],
+      "overall_recovery": "Most recover fully",
+      "mortality_severe": "1–5%",
+      "mortality_shock_without_care": "Up to 26%"
+    },
+    "pregnancy_considerations": {
+      "possible_complications": [
+        "Miscarriage",
+        "Preterm birth",
+        "Low birth weight"
+      ],
+      "recommendation": "Avoid travel to dengue-endemic areas during pregnancy"
+    },
+    "reinfection": {
+      "possibility": true,
+      "severity_risk": "Higher with subsequent infections",
+      "prevention_focus": "Vaccination discussion and mosquito avoidance"
+    },
+    "vaccination": {
+      "availability": "Two vaccines exist (one available in the U.S.)",
+      "target_group": [
+        "Children in endemic areas",
+        "Selected high-risk adults"
+      ],
+      "note": "Eligibility depends on prior dengue exposure",
+      "dengvaxia": {
+        "type": "Live attenuated (CYD-TDV)",
+        "eligible": "Seropositive individuals aged 9–45 years",
+        "risk": "Severe dengue in seronegative individuals"
+      },
+      "ksa_status": "Not approved in KSA",
+      "future_candidates": "Multiple vaccines under evaluation",
+      "available_vaccines": {
+        "dengvaxia": {
+          "type": "Live attenuated",
+          "eligibility": "Previously infected individuals only",
+          "dosing": "3 doses at 6-month intervals",
+          "note": "Manufacturing to cease by 2026"
+        },
+        "qdenga": {
+          "type": "Live attenuated tetravalent",
+          "eligibility": "Age ≥4 years",
+          "dosing": "2 doses, 3 months apart",
+          "prior_infection_required": false
+        }
+      },
+      "schedule": "3 doses, 6 months apart",
+      "age_group": "9–45 years",
+      "safety_note": "Risk in seronegative individuals",
+      "who_recommendation": "Pre-vaccination screening strategy",
+      "integration_rule": "Vaccination should complement vector control and clinical care"
+    },
+    "when_to_seek_care": {
+      "see_doctor_if": [
+        "Any dengue symptoms after travel",
+        "Living in endemic region with fever"
+      ],
+      "go_to_er_if": [
+        "Any warning signs of severe dengue",
+        "Bleeding",
+        "Severe abdominal pain",
+        "Persistent vomiting"
+      ]
+    },
+    "key_chatbot_messages": [
+      "Dengue is spread by mosquitoes, not casual contact",
+      "Second dengue infection is more dangerous",
+      "Avoid aspirin and NSAIDs",
+      "Warning signs require emergency care",
+      "Most patients recover fully with early care"
+    ],
+    "virus_characteristics": {
+      "virus_name": "Dengue virus (DENV)",
+      "genome": {
+        "type": "Single-stranded positive-sense RNA",
+        "length_kb": 11,
+        "open_reading_frame": "Single ORF"
+      },
+      "serotypes": [
+        "DENV-1",
+        "DENV-2",
+        "DENV-3",
+        "DENV-4"
+      ],
+      "immunity": {
+        "homotypic": "Lifelong immunity to same serotype",
+        "heterotypic": "Temporary and partial",
+        "risk": "Secondary infection increases severe dengue risk"
+      },
+      "structural_proteins": [
+        "Capsid (C)",
+        "pre-Membrane (prM)",
+        "Envelope (E)",
+        "prM/M"
+      ],
+      "non_structural_proteins": [
+        "NS1",
+        "NS2A",
+        "NS2B",
+        "NS3",
+        "NS4A",
+        "NS4B",
+        "NS5"
+      ],
+      "particle_size_nm": 50,
+      "genetic_variability": "Multiple genotypes within each serotype",
+      "high_risk_genotypes": [
+        "Asian genotype DENV-2",
+        "Asian genotype DENV-3"
+      ]
+    },
+    "clinical_stages": {
+      "febrile_phase": {
+        "duration_days": "3–7",
+        "features": [
+          "High fever (≥38.5°C)",
+          "Headache",
+          "Myalgia",
+          "Arthralgia",
+          "Vomiting",
+          "Transient macular rash",
+          "Mild bleeding (petechiae, bruising)",
+          "Palpable liver"
+        ],
+        "laboratory_findings": [
+          "Leukopenia",
+          "Mild to moderate thrombocytopenia",
+          "Raised liver enzymes"
+        ]
+      },
+      "critical_phase": {
+        "timing": "Around defervescence (day 4–7)",
+        "hallmark": "Plasma leakage",
+        "features": [
+          "Rising hematocrit",
+          "Rapid platelet fall",
+          "Pleural effusion",
+          "Ascites",
+          "Persistent vomiting",
+          "Severe abdominal pain",
+          "Mucosal bleeding",
+          "Restlessness"
+        ],
+        "shock_criteria": [
+          "Pulse pressure ≤20 mmHg",
+          "Cold clammy skin",
+          "Hypotension"
+        ]
+      },
+      "recovery_phase": {
+        "duration_hours": "48–72",
+        "features": [
+          "Reabsorption of extravascular fluid",
+          "Hemodynamic stabilization",
+          "Improving platelet count",
+          "Convalescent itchy rash",
+          "Fatigue lasting weeks"
+        ]
+      }
+    },
+    "severe_complications": {
+      "hemorrhagic": [
+        "Gastrointestinal bleeding",
+        "Mucosal bleeding",
+        "Severe thrombocytopenia"
+      ],
+      "organ_involvement": {
+        "neurological": [
+          "Encephalitis",
+          "Encephalopathy",
+          "Guillain–Barré syndrome",
+          "Transverse myelitis"
+        ],
+        "cardiac": [
+          "Myocarditis"
+        ],
+        "hepatic": [
+          "Acute liver failure"
+        ],
+        "renal": [
+          "Acute kidney injury"
+        ]
+      }
+    },
+    "key_chatbot_rules": [
+      "Critical phase begins after fever subsides",
+      "Rapid platelet fall + rising hematocrit = danger",
+      "Secondary infection is highest risk",
+      "Fluid management saves lives",
+      "Vector control is the main prevention strategy"
+    ],
+    "incubation_and_phases": {
+      "incubation_period_days": {
+        "typical": "5–7",
+        "range": "3–14"
+      },
+      "clinical_phases": {
+        "febrile_phase": {
+          "duration_days": "2–7",
+          "features": [
+            "High fever",
+            "Headache",
+            "Retro-orbital pain",
+            "Muscle and joint pain",
+            "Nausea",
+            "Vomiting",
+            "Rash",
+            "Mild bleeding (petechiae, gums, nose)"
+          ]
+        },
+        "critical_phase": {
+          "timing": "24–48 hours after defervescence",
+          "hallmark": "Plasma leakage",
+          "features": [
+            "Severe abdominal pain",
+            "Persistent vomiting",
+            "Clinical fluid accumulation",
+            "Mucosal bleeding",
+            "Lethargy or restlessness",
+            "Rising hematocrit",
+            "Rapid platelet drop",
+            "Shock"
+          ]
+        },
+        "recovery_phase": {
+          "duration_hours": "48–72",
+          "features": [
+            "Fluid reabsorption",
+            "Hemodynamic stabilization",
+            "Rising WBC first, platelets later",
+            "Convalescent rash (isles of white in sea of red)",
+            "General improvement"
+          ]
+        }
+      }
+    },
+    "severity_classification": {
+      "group_a_mild": {
+        "label": "Dengue without warning signs",
+        "management": "Home care",
+        "criteria": [
+          "No warning signs",
+          "Able to tolerate oral fluids",
+          "Urine output at least once every 6 hours"
+        ]
+      },
+      "group_b_moderate": {
+        "label": "Dengue with warning signs or risk factors",
+        "management": "In-hospital care",
+        "criteria": [
+          "Any warning sign",
+          "Comorbidities (pregnancy, diabetes, renal failure)",
+          "Social risk factors (living alone, far from hospital)"
+        ]
+      },
+      "group_c_severe": {
+        "label": "Severe dengue",
+        "management": "Hospitalization / ICU",
+        "criteria": [
+          "Severe plasma leakage leading to shock",
+          "Severe bleeding",
+          "Severe organ impairment (liver, CNS, heart)"
+        ]
+      },
+      "uncomplicated_dengue": {
+        "percentage": "~80%",
+        "outcome": "Self-limiting"
+      },
+      "severe_dengue": {
+        "percentage": "~5%",
+        "criteria": [
+          "Severe plasma leakage",
+          "Severe bleeding",
+          "Severe organ dysfunction",
+          "Severe organ involvement"
+        ],
+        "medical_emergency": true
+      },
+      "dengue_without_danger_signs": {
+        "features": [
+          "High fever 39–40°C",
+          "Headache",
+          "Retro-orbital pain",
+          "Myalgia",
+          "Rash",
+          "Biphasic fever"
+        ],
+        "note": "Fever >6 days suggests alternate diagnosis"
+      },
+      "dengue_with_danger_signs": {
+        "danger_signs": [
+          "Persistent vomiting",
+          "Severe abdominal pain",
+          "Unable to take orally",
+          "Bleeding from any site",
+          "Severe lethargy",
+          "Restlessness",
+          "Pleural effusion",
+          "Ascites",
+          "Tender hepatomegaly",
+          "Rapid platelet fall",
+          "Rising hematocrit"
+        ]
+      }
+    },
+    "recovery_and_discharge": {
+      "recovery_criteria": [
+        "Stable vitals",
+        "Normal temperature",
+        "No bleeding",
+        "Good urine output",
+        "Stable hematocrit",
+        "Improving rash or itching"
+      ],
+      "discharge_criteria": [
+        "Afebrile for ≥24 hours",
+        "Clinical improvement",
+        "Platelet count >50,000/mm³",
+        "No respiratory distress",
+        "2–3 days after shock recovery"
+      ]
+    },
+    "surveillance_and_reporting": {
+      "system": "HESN Plus (Health Electronic Surveillance Network)",
+      "notification_importance": [
+        "Early outbreak prevention",
+        "Rapid response",
+        "Early treatment"
+      ],
+      "reporting_entities": [
+        "Primary Health Centers",
+        "Hospitals",
+        "Private clinics",
+        "Laboratories"
+      ],
+      "vhf_screening": {
+        "conditions": [
+          "Chikungunya",
+          "Yellow fever",
+          "West Nile",
+          "Zika",
+          "Alkhurma",
+          "Rift Valley Fever",
+          "Crimean-Congo",
+          "Ebola/Marburg"
+        ]
+      }
+    },
+    "core_chatbot_rules": [
+      "Warning signs often appear after fever subsides",
+      "Rising hematocrit with falling platelets = danger",
+      "Avoid aspirin and NSAIDs",
+      "Early reporting prevents outbreaks",
+      "Vector control is the primary prevention",
+      "Second dengue infection is more dangerous",
+      "Early fluid management saves lives",
+      "Vector control is the main preventive strategy",
+      "Critical phase often begins after fever subsides",
+      "Rising hematocrit + falling platelets = danger",
+      "Avoid aspirin and NSAIDs completely",
+      "Most dengue patients do NOT need platelet transfusion",
+      "Timely fluid management prevents death",
+      "Single dengue case can trigger outbreak action",
+      "Second infection is the highest risk for severe dengue",
+      "Avoid NSAIDs and aspirin",
+      "Vector control is the most effective prevention",
+      "Early supportive care dramatically reduces mortality",
+      "Most dengue infections are asymptomatic",
+      "Warning signs appear as fever subsides",
+      "Secondary infection carries highest risk",
+      "Vector control is the cornerstone of prevention",
+      "Critical phase starts when fever subsides",
+      "Pulse pressure <20 mmHg is an emergency",
+      "Paracetamol is the only antipyretic",
+      "Hematocrit guides fluid vs blood decisions",
+      "Overhydration kills as often as underhydration",
+      "Most pediatric dengue deaths are preventable",
+      "Dengue is one disease with variable severity",
+      "Warning signs appear near fever defervescence",
+      "Secondary infection increases severity risk",
+      "Early IV fluids reduce mortality dramatically",
+      "Overhydration is as dangerous as underhydration",
+      "Vector control is the foundation of prevention",
+      "Fever subsidence can mark clinical worsening",
+      "Rising hematocrit is more critical than platelet count",
+      "Plasma leakage lasts 24–48 hours",
+      "Overhydration is dangerous during recovery"
+    ],
+    "virology": {
+      "virus_name": "Dengue virus (DENV)",
+      "genome": {
+        "type": "Positive-sense single-stranded RNA",
+        "length_nucleotides": "~11,000",
+        "structure": "Single open reading frame",
+        "expression": "Single polyprotein",
+        "length_bases": "≈10,700"
+      },
+      "proteins": {
+        "structural": [
+          "Capsid (C)",
+          "pre-Membrane (prM)",
+          "Envelope (E)",
+          "prM/M"
+        ],
+        "non_structural": [
+          "NS1",
+          "NS2A",
+          "NS2B",
+          "NS3",
+          "NS4A",
+          "NS4B",
+          "NS5"
+        ]
+      },
+      "serotypes": [
+        "DENV-1",
+        "DENV-2",
+        "DENV-3",
+        "DENV-4",
+        "DENV-5 (reported 2013)"
+      ],
+      "immunity_profile": {
+        "primary_infection": "Lifelong immunity to the same serotype",
+        "secondary_infection": "Short-term cross-immunity only",
+        "risk_mechanism": "Antibody-dependent enhancement (ADE)"
+      },
+      "virus": "Dengue virus (DENV)",
+      "family": "Flaviviridae",
+      "genus": "Flavivirus",
+      "virus_family": "Flaviviridae",
+      "immunity": {
+        "same_serotype": "Lifelong immunity",
+        "other_serotypes": "Temporary partial protection",
+        "maximum_lifetime_infections": 4,
+        "secondary_infection_risk": "High risk of severe dengue"
+      }
+    },
+    "complications": {
+      "hematological": [
+        "Severe thrombocytopenia",
+        "Internal bleeding"
+      ],
+      "organ_related": {
+        "liver": [
+          "Acute liver failure"
+        ],
+        "kidney": [
+          "Acute kidney injury"
+        ],
+        "heart": [
+          "Myocarditis"
+        ],
+        "neurological": [
+          "Encephalopathy",
+          "Seizures",
+          "Cognitive impairment"
+        ]
+      },
+      "special_populations": {
+        "pregnancy": [
+          "Miscarriage",
+          "Preterm birth",
+          "Low birth weight"
+        ],
+        "children": "Higher severity risk",
+        "elderly": "Higher mortality risk"
+      },
+      "hematologic": [
+        "Severe thrombocytopenia",
+        "Disseminated bleeding"
+      ],
+      "neurologic": [
+        "Encephalitis",
+        "Encephalopathy",
+        "Guillain–Barré syndrome",
+        "Transverse myelitis",
+        "Seizures"
+      ],
+      "cardiac": [
+        "Myocarditis"
+      ],
+      "hepatic": [
+        "Acute liver failure"
+      ],
+      "renal": [
+        "Acute kidney injury"
+      ]
+    },
+    "public_health": {
+      "surveillance_importance": true,
+      "blood_donation_restriction_months": 6,
+      "economic_burden_usd": "≈8.9 billion annually",
+      "awareness_days": [
+        "International Anti-Dengue Day – 15 June",
+        "National Dengue Day (India) – 16 May"
+      ]
+    },
+    "epidemiology_in_children": {
+      "importance": "One of the most common causes of undifferentiated tropical fever in hospitalized children in India",
+      "icu_data": {
+        "multicenter_study": "34 ICUs across India",
+        "dengue_contribution_percent": 23
+      },
+      "mortality_risk": {
+        "children_under_15": "4 times higher risk of death compared to adults",
+        "case_fatality_trend": {
+          "1996": "3.3%",
+          "2010": "0.4%",
+          "reason_for_decline": "Early diagnosis and improved clinical management"
+        }
+      }
+    },
+    "natural_history_in_children": {
+      "phase_1_febrile": {
+        "duration_days": "2–5",
+        "features": [
+          "Continuous or biphasic fever",
+          "Child usually febrile throughout"
+        ]
+      },
+      "phase_2_critical": {
+        "onset_days": "Day 3–4 of illness",
+        "key_events": [
+          "Plasma leakage",
+          "Hemoconcentration",
+          "Hypotensive or compensated shock",
+          "Progressive organ dysfunction"
+        ]
+      },
+      "phase_3_convalescent": {
+        "onset": "After day 6–7",
+        "duration_days": "2–3",
+        "features": [
+          "Reabsorption of extravascular fluid",
+          "Clinical improvement"
+        ]
+      }
+    },
+    "diagnostic_approach": {
+      "ns1_antigen": {
+        "appearance": "At symptom onset",
+        "trend": "Declines over next few days",
+        "preferred_test": "ELISA (higher sensitivity than rapid tests)"
+      },
+      "igm_antibody": {
+        "appearance": "After day 5",
+        "positivity": {
+          "day_10": "≈70%",
+          "day_14": "≈100%"
+        },
+        "limitation": "Can remain positive up to 1 year"
+      },
+      "igg_antibody": {
+        "primary_infection": "Appears after 1–2 weeks and persists for life",
+        "secondary_infection": "Appears early within first few days"
+      },
+      "molecular_tests": {
+        "types": [
+          "Standalone dengue PCR",
+          "Tropical fever multiplex PCR"
+        ],
+        "use_case": "Early infection",
+        "note": "Not superior to NS1 + IgM + IgG combination"
+      },
+      "best_diagnostic_strategy": "Simultaneous NS1 + IgM + IgG testing at presentation"
+    },
+    "severity_based_management": {
+      "group_a_outpatient": {
+        "criteria": [
+          "No warning signs",
+          "Stable vitals",
+          "Adequate oral intake"
+        ],
+        "management": [
+          "Paracetamol for fever",
+          "Monitor hydration",
+          "Watch for warning signs",
+          "Monitor for fever defervescence",
+          "CBC when clinically indicated"
+        ]
+      },
+      "group_b_inpatient": {
+        "criteria": [
+          "Any warning sign present",
+          "High-risk comorbid conditions"
+        ],
+        "monitoring": [
+          "Strict fluid intake/output",
+          "Vital signs every 4 hours or more",
+          "Serial hematocrit and platelet counts"
+        ]
+      },
+      "group_c_severe_or_shock": {
+        "criteria": [
+          "Hypotensive or compensated shock",
+          "Severe plasma leakage",
+          "Severe bleeding",
+          "Severe organ dysfunction"
+        ],
+        "care_setting": "Pediatric Intensive Care Unit (PICU)"
+      }
+    },
+    "laboratory_monitoring_in_hospital": {
+      "hematocrit": {
+        "significance": "Marker of capillary leak",
+        "critical_value": "≥20% rise from baseline"
+      },
+      "platelets": {
+        "trend": "Rapid fall during critical phase",
+        "recovery_marker": "Rising count indicates improvement"
+      },
+      "wbc": {
+        "pattern": "Leukopenia with atypical lymphocytes",
+        "recovery_marker": "Rise precedes platelet recovery"
+      },
+      "liver_function": {
+        "pattern": "AST > ALT",
+        "severe_disease": "Very high transaminases, low albumin"
+      },
+      "coagulation": {
+        "findings": [
+          "Low fibrinogen",
+          "Prolonged PT / PTT"
+        ]
+      },
+      "ferritin": {
+        "finding": "Markedly elevated in severe dengue and HLH"
+      },
+      "renal": {
+        "findings": [
+          "Elevated creatinine",
+          "Proteinuria",
+          "Hyponatremia"
+        ]
+      }
+    },
+    "fluid_management_principles": {
+      "core_rule": "Avoid fluid overload",
+      "risk": "Capillary leak leads to fluid creep and respiratory worsening",
+      "fluids": {
+        "crystalloids": [
+          "Normal saline",
+          "Ringer lactate"
+        ],
+        "colloids": [
+          "Dextran 40",
+          "Polygeline"
+        ]
+      },
+      "shock_resuscitation": {
+        "initial_bolus": "10–20 mL/kg over 30 minutes",
+        "assessment": [
+          "Hematocrit",
+          "Pulse pressure",
+          "Urine output"
+        ]
+      },
+      "preferred_fluids": "Isotonic crystalloids",
+      "infant_exception": "0.45% DNS for <6 months",
+      "bolus_response": "Most shock responds to 10 ml/kg NS",
+      "max_iv_duration_post_afebrile": {
+        "shock": "≤48 hours",
+        "non_shock": "≤72 hours"
+      },
+      "platelet_transfusion": "Not routinely recommended"
+    },
+    "indications_for_picu": [
+      "Severe plasma leakage with hypoperfusion",
+      "Fluid accumulation with respiratory distress",
+      "Severe bleeding",
+      "Myocardial dysfunction",
+      "Acute kidney injury",
+      "CNS dysfunction",
+      "ALT or AST >1000 IU",
+      "Dengue-associated HLH"
+    ],
+    "key_pediatric_chatbot_rules": [
+      "Critical phase often begins when fever subsides",
+      "Rising hematocrit with falling platelets is an emergency",
+      "Children deteriorate rapidly—continuous monitoring is essential",
+      "Avoid fluid overload at all costs",
+      "Paracetamol only; NSAIDs are contraindicated"
+    ],
+    "clinical_criteria": {
+      "dengue_fever": {
+        "definition": "Acute febrile illness of 2–7 days duration",
+        "required_features": [
+          "Headache",
+          "Retro-orbital pain",
+          "Myalgia",
+          "Arthralgia",
+          "Rash",
+          "Hemorrhagic manifestations"
+        ],
+        "minimum_required": "Any two or more"
+      },
+      "dengue_hemorrhagic_fever": {
+        "criteria": [
+          "Meets Dengue Fever criteria",
+          "Hemorrhagic manifestations",
+          "Platelet count <100000/cumm",
+          "Evidence of plasma leakage"
+        ],
+        "plasma_leakage_indicators": [
+          "≥20% rise in hematocrit",
+          ">20% fall in hematocrit after fluid replacement",
+          "Pleural effusion",
+          "Ascites",
+          "Hypoproteinemia"
+        ]
+      },
+      "dengue_shock_syndrome": {
+        "definition": "DHF with circulatory failure",
+        "shock_indicators": [
+          "Rapid weak pulse",
+          "Narrow pulse pressure ≤20 mmHg",
+          "Hypotension for age",
+          "Cold clammy skin",
+          "Restlessness"
+        ]
+      }
+    },
+    "case_definition": {
+      "probable_case": {
+        "definition": "Clinical dengue criteria met",
+        "note": "Rapid Diagnostic Test (RDT) positive cases are considered probable due to low reliability"
+      },
+      "confirmed_case": {
+        "laboratory_confirmation": [
+          "Virus isolation",
+          "IgM ELISA positive",
+          "NS1 antigen ELISA positive",
+          "Four-fold rise in IgG",
+          "PCR positive"
+        ]
+      }
+    },
+    "diagnostic_testing": {
+      "early_phase": {
+        "days": "1–5",
+        "tests": [
+          "NS1 ELISA"
+        ]
+      },
+      "late_phase": {
+        "day": "≥5",
+        "tests": [
+          "IgM MAC-ELISA"
+        ]
+      },
+      "rdt_policy": {
+        "status": "Not reliable",
+        "reason": [
+          "High false positivity",
+          "Variable sensitivity and specificity",
+          "Batch-to-batch variation"
+        ]
+      }
+    },
+    "case_classification": {
+      "mild_dengue": {
+        "management": "Home management",
+        "features": [
+          "No plasma leakage",
+          "Stable vitals",
+          "No organ involvement"
+        ]
+      },
+      "moderate_dengue": {
+        "features": [
+          "Warning signs",
+          "Recurrent vomiting",
+          "Abdominal pain",
+          "Minor bleeding",
+          "Pleural effusion or ascites"
+        ],
+        "management": "Close monitoring / possible hospitalization"
+      },
+      "severe_dengue": {
+        "features": [
+          "Significant hemorrhage",
+          "DHF III or IV",
+          "Shock",
+          "Severe organ involvement",
+          "Metabolic or electrolyte abnormalities"
+        ],
+        "management": "Tertiary level care"
+      }
+    },
+    "treatment_principles": {
+      "general": [
+        "Adequate fluids",
+        "Rest",
+        "Paracetamol only"
+      ],
+      "contraindicated": [
+        "Aspirin",
+        "NSAIDs"
+      ],
+      "monitoring": [
+        "Blood pressure",
+        "Hematocrit",
+        "Platelet count",
+        "Level of consciousness"
+      ]
+    },
+    "severe_bleeding_management": {
+      "actions": [
+        "Control bleeding immediately",
+        "Suspect internal bleeding",
+        "Urgent blood transfusion if needed"
+      ],
+      "platelet_transfusion_indications": [
+        "Platelet count <10000/cumm without bleeding",
+        "Thrombocytopenia with active bleeding",
+        "Coagulopathy with prolonged shock"
+      ],
+      "important_note": "Whole blood has no role in treating thrombocytopenia alone"
+    },
+    "follow_up": {
+      "home_managed_patients": [
+        "Educate about danger signs",
+        "Review after 24 hours"
+      ],
+      "hospitalized_patients": [
+        "Daily hematocrit and platelet monitoring",
+        "Repeat samples if tested within first 5 days"
+      ]
+    },
+    "key_facts": {
+      "annual_global_infections": 390000000,
+      "annual_clinical_cases": 96000000,
+      "annual_severe_cases": 500000,
+      "case_fatality_rate_severe_percent": 2.5,
+      "high_burden_regions": [
+        "Asia",
+        "Latin America"
+      ],
+      "epidemic_risk_condition": "Presence of Aedes mosquito vector"
+    },
+    "infectious_agent": {
+      "name": "Dengue virus",
+      "type": "Virus",
+      "serotypes": [
+        "DENV-1",
+        "DENV-2",
+        "DENV-3",
+        "DENV-4"
+      ],
+      "vector": [
+        "Aedes aegypti",
+        "Aedes albopictus"
+      ],
+      "reservoir": "Humans"
+    },
+    "incubation_and_infectiousness": {
+      "incubation_period_days": {
+        "typical": "4–7",
+        "range": "3–10"
+      },
+      "infectious_period_human": {
+        "start": "After first symptoms",
+        "duration_days": "4–5",
+        "maximum_days": 12,
+        "mechanism": "Transmission to mosquitoes during this period"
+      }
+    },
+    "epidemic_thresholds": {
+      "local_level": "Single dengue case may trigger action",
+      "subnational_level": [
+        "Increase above historical baseline",
+        "Rising vector density"
+      ],
+      "national_level_signals": [
+        "Change in circulating serotype or genotype",
+        "Increase in clinical severity",
+        "Increase in seropositivity rate",
+        "Introduction of vector into new ecological niche"
+      ]
+    },
+    "attack_rate": {
+      "typical_outbreak_percent": "40–50%",
+      "maximum_reported_percent": "80–90%",
+      "note": "Varies by outbreak and population susceptibility"
+    },
+    "differential_diagnosis": [
+      "Zika",
+      "Chikungunya",
+      "Yellow fever",
+      "Lassa fever",
+      "Crimean-Congo hemorrhagic fever",
+      "Ebola",
+      "Marburg",
+      "Hantavirus pulmonary syndrome",
+      "Malaria",
+      "Typhoid fever"
+    ],
+    "treatment_and_care": {
+      "specific_treatment": "None (no cure)",
+      "core_principles": [
+        "Supportive care",
+        "Early detection of severe cases",
+        "Careful fluid management"
+      ],
+      "medications_to_avoid": [
+        "Aspirin",
+        "Ibuprofen",
+        "Other NSAIDs"
+      ],
+      "severe_dengue_outcome": {
+        "mortality_without_proper_care_percent": ">20%",
+        "mortality_with_good_care_percent": "<1%"
+      }
+    },
+    "immunity": {
+      "after_natural_infection": {
+        "same_serotype": "Lifelong immunity",
+        "other_serotypes": "Partial and transient protection"
+      },
+      "vaccine_efficacy": {
+        "overall_dengue_percent": 59,
+        "severe_dengue_percent": 79
+      }
+    },
+    "interventions_not_recommended": [
+      "Night-time bednets (unless daytime sleepers or hospitalized patients)",
+      "Mosquito coils",
+      "Aerosol bug sprays"
+    ],
+    "community_and_risk_communication": {
+      "core_objectives": [
+        "Promote preventive behaviors",
+        "Counter rumors and misinformation",
+        "Build trust in response activities"
+      ],
+      "communication_channels": [
+        "Social media",
+        "Face-to-face interactions",
+        "Community meetings"
+      ]
+    },
+    "monitoring_and_indicators": {
+      "epidemic_tracking": [
+        "Weekly dengue cases",
+        "Weekly dengue hemorrhagic fever cases",
+        "Case fatality rate"
+      ],
+      "program_indicators": [
+        "Number of volunteers trained",
+        "Healthcare-seeking behavior for suspected dengue",
+        "Population knowledge of cause, symptoms, prevention",
+        "Vaccination coverage (if applicable)"
+      ]
+    },
+    "cross_sector_impacts": {
+      "wash": "Poor water and waste management increase breeding sites",
+      "nutrition": "Malnutrition increases severe dengue risk",
+      "shelter": "Outdoor daytime sleeping increases exposure",
+      "mental_health": [
+        "Anxiety",
+        "Fear of stigma",
+        "Stress during pregnancy"
+      ],
+      "gender": {
+        "children": "Female children may experience more severe disease",
+        "women": "Risk of severe vaginal bleeding during menstruation or pregnancy",
+        "programming_note": "Gender-sensitive vector control approaches needed"
+      },
+      "education": [
+        "Schools without screens or covered containers increase risk",
+        "Schools are key venues for health education"
+      ],
+      "livelihoods": [
+        "Reduced productivity",
+        "Loss of income due to illness"
+      ]
+    },
+    "global_burden": {
+      "endemic_countries": ">110",
+      "annual_infections_estimated": {
+        "min": 50000000,
+        "max": 528000000
+      },
+      "annual_hospitalizations": 500000,
+      "annual_deaths": 25000,
+      "population_at_risk": "≈2.5 billion",
+      "highest_burden_regions": [
+        "South-East Asia",
+        "Western Pacific",
+        "Americas",
+        "Africa"
+      ],
+      "trend": "30-fold increase since 1960",
+      "drivers": [
+        "Urbanization",
+        "Population growth",
+        "International travel",
+        "Climate change"
+      ]
+    },
+    "immunity_and_risk": {
+      "primary_infection": {
+        "immunity": "Lifelong to same serotype",
+        "severity": "Usually mild or asymptomatic"
+      },
+      "secondary_infection": {
+        "risk": "High risk of severe dengue",
+        "mechanism": "Antibody-dependent enhancement (ADE)"
+      },
+      "risk_factors_for_severe_disease": [
+        "Secondary infection",
+        "Female sex",
+        "High body mass index",
+        "High viral load",
+        "Young age (children)",
+        "Chronic disease (diabetes, asthma)",
+        "Certain genetic polymorphisms",
+        "G6PD deficiency"
+      ]
+    },
+    "classification_systems": {
+      "who_2009": {
+        "uncomplicated_dengue": true,
+        "severe_dengue": [
+          "Severe plasma leakage",
+          "Severe bleeding",
+          "Severe organ involvement"
+        ]
+      },
+      "who_1997_legacy": {
+        "grades": [
+          "Grade I",
+          "Grade II",
+          "Grade III (shock)",
+          "Grade IV (undetectable BP)"
+        ],
+        "dengue_shock_syndrome": [
+          "Grade III",
+          "Grade IV"
+        ]
+      }
+    },
+    "epidemiological_context": {
+      "endemic_status": "Highly endemic",
+      "major_outbreaks": [
+        {
+          "year": 2011,
+          "note": "Largest epidemic"
+        },
+        {
+          "year": 2015,
+          "deaths": 8
+        },
+        {
+          "year": 2016,
+          "deaths": 4
+        }
+      ],
+      "notable_case": "Congenital dengue death reported in 2017",
+      "seasonality": "Increases after rainy season"
+    },
+    "vector_characteristics": {
+      "primary_vectors": [
+        "Aedes aegypti",
+        "Aedes albopictus"
+      ],
+      "behavior": {
+        "biting_time": [
+          "Sunrise",
+          "Early evening"
+        ],
+        "feeding_pattern": "Multiple humans in a single feed",
+        "resting_sites": [
+          "Under tables",
+          "Shoes",
+          "Dark clothes",
+          "Damp indoor areas"
+        ],
+        "flight_range_meters": {
+          "typical": 100,
+          "maximum": 200
+        }
+      },
+      "breeding": {
+        "water_type": "Clean stagnant water",
+        "egg_survival": "Up to 1 year in dry conditions",
+        "hatching_time_days": 7
+      }
+    },
+    "natural_history": {
+      "phases": [
+        "Febrile",
+        "Critical",
+        "Recovery"
+      ],
+      "key_principle": "Incorrect fluid management during critical phase causes mortality"
+    },
+    "shock_definition": {
+      "compensated_shock": {
+        "features": [
+          "Tachycardia",
+          "Pulse pressure <20 mmHg",
+          "Normal systolic BP"
+        ]
+      },
+      "decompensated_shock": {
+        "features": [
+          "Hypotension",
+          "Cold peripheries",
+          "Altered sensorium",
+          "Prolonged CRT"
+        ]
+      }
+    },
+    "home_management": {
+      "allowed": "Only if no danger signs",
+      "instructions": [
+        "Adequate rest",
+        "Paracetamol only (no NSAIDs)",
+        "ORS preferred fluid",
+        "Avoid dark/red fluids if vomiting",
+        "Return immediately if danger signs appear",
+        "Review if fever >3 days"
+      ]
+    },
+    "shock_management": {
+      "initial_bolus": "10–20 ml/kg normal saline",
+      "third_bolus": {
+        "type": "Dextran 40",
+        "dose": "10 ml/kg",
+        "max_frequency": "3 times per 24 hours"
+      },
+      "bleeding_management": {
+        "indication": "Falling HCT with shock",
+        "treatment": "Packed cells or whole blood 10 ml/kg"
+      }
+    },
+    "organ_involvement_management": {
+      "encephalopathy": [
+        "Head elevation 30°",
+        "Early intubation",
+        "Minimal IV fluids (<80% maintenance)",
+        "Dexamethasone",
+        "Anticonvulsants",
+        "Lactulose if ammonia elevated"
+      ],
+      "renal_failure": "Early renal replacement if needed",
+      "hepatic_failure": "Monitor AST/ALT (>1000 severe)"
+    },
+    "fluid_overload": {
+      "early_signs": [
+        "Puffy eyelids",
+        "Ascites",
+        "Dyspnea"
+      ],
+      "management": [
+        "Reduce fluids",
+        "Frusemide 0.5–1 mg/kg",
+        "Colloids preferred if shock persists"
+      ]
+    },
+    "common_misconceptions": [
+      "Platelet count predicts bleeding severity",
+      "Serology mandatory for diagnosis",
+      "NSAIDs are safe in dengue",
+      "Hematocrit is less important than platelets",
+      "More fluids always improve outcomes"
+    ],
+    "referral_rules": {
+      "must_refer": [
+        "Severe dengue",
+        "High-risk patients needing special care"
+      ],
+      "transport_requirements": [
+        "Stabilize before transfer",
+        "IV fluids running",
+        "Continuous monitoring",
+        "Trained escort",
+        "Complete documentation"
+      ]
+    },
+    "burden_of_disease": {
+      "dalys_global_2001": 528,
+      "children_risk": "Higher risk of severe dengue",
+      "case_fatality_rate": {
+        "with_proper_management": "<1%",
+        "poor_access_to_care": "3–5% in focal outbreaks"
+      },
+      "economic_costs": {
+        "ambulatory_case_usd": 514,
+        "hospitalized_case_usd": 1491,
+        "average_case_cost_usd": 828,
+        "estimated_annual_reported_cost_usd": 440000000
+      },
+      "underreporting": "Major limitation in burden estimation"
+    },
+    "transmission_cycle": {
+      "primary_host": "Humans",
+      "vector": "Female Aedes mosquitoes",
+      "extrinsic_incubation_days": "8–12",
+      "intrinsic_incubation_days": "4–10",
+      "vector_behavior": [
+        "Highly anthropophilic",
+        "Multiple bites per feeding cycle",
+        "Indoor resting",
+        "Daytime biting"
+      ],
+      "vertical_transmission": "Rare, limited epidemiological significance",
+      "sylvatic_cycle": "Exists in parts of Africa and Asia"
+    },
+    "host_and_immunity": {
+      "primary_infection": {
+        "outcome": "Often asymptomatic or mild",
+        "immunity": "Lifelong to same serotype"
+      },
+      "secondary_infection": {
+        "risk": "Major risk factor for severe dengue",
+        "mechanism": "Antibody-dependent enhancement (ADE)"
+      },
+      "infant_risk": "Severe dengue in infants born to immune mothers",
+      "host_risk_factors": [
+        "Secondary infection",
+        "Young age",
+        "Chronic diseases (asthma, diabetes, sickle cell disease)",
+        "Genetic background"
+      ]
+    },
+    "who_2009_case_classification": {
+      "probable_dengue": {
+        "criteria": [
+          "Residence or travel to endemic area",
+          "Fever",
+          "At least 2 clinical features"
+        ],
+        "clinical_features": [
+          "Nausea/vomiting",
+          "Rash",
+          "Aches and pains",
+          "Positive tourniquet test",
+          "Leukopenia"
+        ]
+      },
+      "warning_signs": [
+        "Abdominal pain or tenderness",
+        "Persistent vomiting",
+        "Clinical fluid accumulation",
+        "Mucosal bleeding",
+        "Lethargy or restlessness",
+        "Liver enlargement >2 cm",
+        "Rising hematocrit with rapid platelet drop"
+      ],
+      "severe_dengue": {
+        "criteria": [
+          "Severe plasma leakage leading to shock or respiratory distress",
+          "Severe bleeding",
+          "Severe organ involvement"
+        ],
+        "organ_involvement_thresholds": {
+          "liver": "AST or ALT ≥1000",
+          "cns": "Impaired consciousness",
+          "heart": "Myocardial dysfunction"
+        }
+      }
+    },
+    "clinical_management_principles": {
+      "core_strategy": "Early recognition and careful fluid management",
+      "treatment_type": "Supportive care only",
+      "key_message": "Incorrect fluid therapy is a major cause of death"
+    },
+    "surveillance_and_response": {
+      "surveillance_types": [
+        "Epidemiological",
+        "Entomological",
+        "Virological"
+      ],
+      "outbreak_response": [
+        "Early detection",
+        "Rapid case management scale-up",
+        "Intensified vector control",
+        "Risk communication"
+      ],
+      "international_health_regulations": "Dengue may constitute a public health emergency of international concern"
+    },
+    "vaccines_and_antivirals": {
+      "status_2009": {
+        "licensed_vaccine": "None",
+        "licensed_antiviral": "None"
+      },
+      "research_focus": [
+        "Live attenuated vaccines",
+        "Tetravalent vaccine formulations",
+        "Antiviral drug development"
+      ]
+    },
+    "global_and_regional_burden": {
+      "global_status": "Hyperendemic in tropical and subtropical regions",
+      "annual_infections_estimate": "100–400 million",
+      "population_at_risk": "Nearly 50% of world population",
+      "countries_endemic": ">110",
+      "annual_deaths_estimate": "12,500–25,000",
+      "trend": "≈30-fold increase from 1960 to 2010",
+      "pakistan_context": {
+        "first_DHF_outbreak": 1994,
+        "major_outbreaks": [
+          2006,
+          2011
+        ],
+        "peak_season": "Post-monsoon",
+        "dominant_serotypes": [
+          "DENV-2",
+          "DENV-3"
+        ]
+      }
+    },
+    "incubation_and_natural_history": {
+      "incubation_period_days": {
+        "range": "3–14",
+        "typical": "3–7"
+      },
+      "infection_outcomes": [
+        "Asymptomatic",
+        "Undifferentiated febrile illness",
+        "Dengue fever (DF)",
+        "Dengue hemorrhagic fever (DHF)",
+        "Dengue shock syndrome (DSS)",
+        "Expanded dengue syndrome"
+      ]
+    },
+    "dengue_hemorrhagic_fever": {
+      "diagnostic_criteria": [
+        "Fever (2–7 days)",
+        "Hemorrhagic manifestations",
+        "Thrombocytopenia",
+        "Evidence of plasma leakage"
+      ],
+      "grading": {
+        "Grade I–II": "DHF",
+        "Grade III–IV": "Dengue shock syndrome (DSS)"
+      }
+    },
+    "management_principles": {
+      "antiviral": "None available",
+      "core_strategy": "Early detection and careful fluid management",
+      "allowed_antipyretic": "Paracetamol only",
+      "contraindicated": [
+        "Aspirin",
+        "NSAIDs",
+        "Intramuscular injections"
+      ]
+    },
+    "special_populations": {
+      "pregnancy": "High-risk; multidisciplinary care required",
+      "infants": "Risk due to maternal antibodies",
+      "secondary_infections": "Higher severity risk"
+    },
+    "source": [
+      {
+        "document": "National Guidelines for Clinical Management of Dengue Fever",
+        "year": 2023,
+        "authority": "NCVBDC, Ministry of Health & Family Welfare, Government of India",
+        "geography": "India",
+        "last_updated": "2023"
+      },
+      {
+        "title": "Comprehensive Guidelines for Prevention and Control of Dengue and Dengue Haemorrhagic Fever",
+        "publisher": "World Health Organization – South-East Asia Regional Office",
+        "year": 2011,
+        "isbn": "978-92-9022-394-8",
+        "scope": "Clinical management, epidemiology, vector control, surveillance, outbreak response"
+      },
+      {
+        "title": "Dengue Fever: Causes, Treatment & Prevention",
+        "type": "Public Health Education Material",
+        "compiled_by": "Dr. Bir Singh, MD",
+        "institution": "Disease Outbreak Response Cell (DORC), AIIMS",
+        "publication_date": "May 2007",
+        "intended_audience": "General public",
+        "language": "English",
+        "geography": "India"
+      },
+      {
+        "title": "Dengue Fever: A Review Article",
+        "authors": [
+          "R. Prem Kumar",
+          "R. Sunith",
+          "A. Karthikeyan",
+          "V. Pradeep Kumar"
+        ],
+        "journal": "International Journal of Current Microbiology and Applied Sciences",
+        "year": 2020,
+        "volume_issue": "Vol 9, Issue 1",
+        "pages": "1502–1510",
+        "doi": "10.20546/ijcmas.2020.901.168",
+        "article_type": "Review Article",
+        "intended_use": "Academic / Clinical / Public Health"
+      },
+      {
+        "title": "Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control",
+        "edition": "New edition",
+        "year": 2009,
+        "publisher": "World Health Organization (WHO)",
+        "isbn": "978-92-4-154787-1",
+        "validity_period": "2009–2014",
+        "intended_users": [
+          "Clinicians",
+          "Laboratory personnel",
+          "Vector control staff",
+          "Public health officials",
+          "Researchers"
+        ]
+      },
+      {
+        "title": "Dengue fever: epidemiology, clinical manifestations, diagnosis, and therapeutic strategies",
+        "authors": [
+          "Teddy Namirimu",
+          "Sunjoo Kim"
+        ],
+        "journal": "Annals of Clinical Microbiology",
+        "year": 2024,
+        "volume_issue": "27(2)",
+        "pages": "131–141",
+        "doi": "10.5145/ACM.2024.27.2.7",
+        "article_type": "Review Article",
+        "license": "CC BY-NC-ND 4.0",
+        "intended_use": [
+          "Clinical",
+          "Research",
+          "Public Health"
+        ]
+      },
+      {
+        "title": "Dengue virus: Etiology, epidemiology, pathobiology, and developments in diagnosis and control",
+        "journal": "Infection, Genetics and Evolution",
+        "year": 2025,
+        "article_type": "Comprehensive Review",
+        "license": "CC BY 4.0",
+        "publisher": "Elsevier",
+        "intended_chatbot_scope": [
+          "Medical education",
+          "Clinical decision support",
+          "Public health surveillance",
+          "Research assistance"
+        ]
+      },
+      {
+        "source": "Cleveland Clinic",
+        "document_type": "Patient Education Guide",
+        "disease": "Dengue Fever",
+        "audience": "General public",
+        "medical_level": "Non-clinical, safety-focused",
+        "last_reviewed": "Not specified"
+      },
+      {
+        "title": "Dengue Fever: Stages, Complication, Diagnosis, and Prevention Strategies",
+        "authors": [
+          "Poulomi Biswas",
+          "Santosh Ganguly",
+          "Biplab Debnath"
+        ],
+        "journal": "Asian Journal of Pharmaceutical and Clinical Research",
+        "volume": 14,
+        "issue": 5,
+        "year": 2021,
+        "article_type": "Review Article",
+        "license": "CC BY 4.0",
+        "geographical_focus": "Global with Asia emphasis"
+      },
+      {
+        "title": "Dengue Fever Disease: Guidance for Surveillance, Case Diagnosis, and Management",
+        "version": "V1.3",
+        "year": 2023,
+        "country": "Kingdom of Saudi Arabia",
+        "issuing_authority": "Public Health Authority (WEQYAH)",
+        "ministries_involved": [
+          "Ministry of Health (MOH)",
+          "Ministry of Environment, Water and Agriculture (MEWA)",
+          "Ministry of Municipal & Rural Affairs and Housing (MOMRA)"
+        ],
+        "document_scope": [
+          "Surveillance",
+          "Case definition",
+          "Diagnosis",
+          "Clinical management",
+          "Notification & reporting",
+          "Prevention and control"
+        ]
+      },
+      {
+        "document_title": "Dengue fever",
+        "document_type": "Comprehensive medical review",
+        "language": "English",
+        "scope": [
+          "Clinical features",
+          "Diagnosis",
+          "Treatment",
+          "Epidemiology",
+          "Prevention",
+          "Vaccines",
+          "Public health impact"
+        ],
+        "last_updated_context": "Includes data up to 2024–2025"
+      },
+      {
+        "title": "Dengue in Children",
+        "guideline_type": "Standard Treatment Guidelines",
+        "issuing_body": "Indian Academy of Pediatrics (IAP)",
+        "year": 2022,
+        "country": "India",
+        "target_population": "Children",
+        "document_scope": [
+          "Case definitions",
+          "Clinical staging",
+          "Diagnosis",
+          "Fluid management",
+          "Shock management",
+          "Discharge criteria"
+        ]
+      },
+      {
+        "document_type": "Training Presentation",
+        "topic": "Dengue Fever",
+        "year": 2016,
+        "intended_audience": [
+          "Medical Officers",
+          "Primary Health Care Staff",
+          "Nursing Staff",
+          "Public Health Workers"
+        ],
+        "data_source": "ppt2016a.pdf"
+      },
+      {
+        "document_title": "Dengue Fever – Epidemic Control Toolkit (Response Managers)",
+        "last_update": "2022-06-28",
+        "issuing_context": "Public Health / Humanitarian Response",
+        "primary_users": [
+          "Response managers",
+          "Public health officials",
+          "Red Cross / Red Crescent volunteers",
+          "Outbreak response teams"
+        ],
+        "scope": [
+          "Case definitions",
+          "Epidemic thresholds",
+          "Risk factors",
+          "Transmission",
+          "Clinical features",
+          "Diagnosis",
+          "Treatment principles",
+          "Prevention and control",
+          "Community engagement",
+          "Monitoring and indicators",
+          "Cross-sector impact"
+        ]
+      },
+      {
+        "title": "Dengue fever: a Wikipedia clinical review",
+        "authors": [
+          "James M. Heilman",
+          "Jacob De Wolff",
+          "Graham M. Beards",
+          "Brian J. Basden"
+        ],
+        "journal": "Open Medicine",
+        "year": 2014,
+        "volume": 8,
+        "issue": 4,
+        "pages": "e105–e115",
+        "article_type": "Peer-reviewed clinical review",
+        "license": "CC BY-SA 2.5",
+        "intended_chatbot_use": [
+          "Clinical education",
+          "Public health",
+          "Symptom triage",
+          "Research assistance"
+        ]
+      },
+      {
+        "document_title": "Guideline for the Management of Dengue Fever in Children",
+        "country": "Maldives",
+        "year": 2022,
+        "issuing_authority": "Ministry of Health, Republic of Maldives",
+        "document_number": "MOH-QA/G/22/117-0",
+        "primary_focus": "Pediatric dengue management",
+        "target_users": [
+          "Doctors",
+          "Nurses",
+          "Peripheral health centers",
+          "Referral hospitals",
+          "Clinical decision-support systems"
+        ]
+      },
+      {
+        "title": "Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control",
+        "edition": "New edition",
+        "year": 2009,
+        "publisher": "World Health Organization",
+        "isbn": "978-92-4-154787-1",
+        "expiry_note": "Expected validity until 2014, subject to new evidence",
+        "document_scope": [
+          "Epidemiology",
+          "Clinical management",
+          "Vector control",
+          "Laboratory diagnosis",
+          "Surveillance and outbreak response",
+          "Vaccines and antivirals"
+        ],
+        "intended_users": [
+          "Clinicians",
+          "Laboratory personnel",
+          "Vector control staff",
+          "Public health officials",
+          "Researchers",
+          "National guideline developers"
+        ]
+      },
+      {
+        "sources": [
+          {
+            "title": "Dengue Fever",
+            "journal": "Journal of Islamabad Medical & Dental College",
+            "year": 2012,
+            "pages": "41–47",
+            "article_type": "Review article",
+            "geographic_focus": "Pakistan"
+          },
+          {
+            "title": "Dengue infection: global importance, immunopathology and management",
+            "journal": "Clinical Medicine (Royal College of Physicians)",
+            "year": 2022,
+            "volume_issue": "22(1)",
+            "pages": "9–13",
+            "article_type": "CME review",
+            "geographic_focus": "Global"
+          }
+        ],
+        "intended_chatbot_use": [
+          "Clinical education",
+          "Symptom triage",
+          "Disease explanation",
+          "Decision-support"
+        ]
+      }
+    ],
+    "chatbot_intents": [
+      "Dengue severity depends on immune history",
+      "Secondary infection is the highest risk",
+      "Early diagnosis saves lives",
+      "Vector control remains essential",
+      "Supportive care is currently the only treatment",
+      "Dengue is spread by mosquitoes, not casual contact",
+      "Second dengue infection is more dangerous",
+      "Avoid aspirin and NSAIDs",
+      "Warning signs require emergency care",
+      "Most patients recover fully with early care",
+      "Critical phase begins after fever subsides",
+      "Rapid platelet fall + rising hematocrit = danger",
+      "Secondary infection is highest risk",
+      "Fluid management saves lives",
+      "Vector control is the main prevention strategy",
+      "Warning signs often appear after fever subsides",
+      "Rising hematocrit with falling platelets = danger",
+      "Early reporting prevents outbreaks",
+      "Vector control is the primary prevention",
+      "Early fluid management saves lives",
+      "Vector control is the main preventive strategy",
+      "Critical phase often begins after fever subsides",
+      "Rising hematocrit + falling platelets = danger",
+      "Avoid aspirin and NSAIDs completely",
+      "Most dengue patients do NOT need platelet transfusion",
+      "Timely fluid management prevents death",
+      "Single dengue case can trigger outbreak action",
+      "Second infection is the highest risk for severe dengue",
+      "Avoid NSAIDs and aspirin",
+      "Vector control is the most effective prevention",
+      "Early supportive care dramatically reduces mortality",
+      "Most dengue infections are asymptomatic",
+      "Warning signs appear as fever subsides",
+      "Secondary infection carries highest risk",
+      "Vector control is the cornerstone of prevention",
+      "Critical phase starts when fever subsides",
+      "Pulse pressure <20 mmHg is an emergency",
+      "Paracetamol is the only antipyretic",
+      "Hematocrit guides fluid vs blood decisions",
+      "Overhydration kills as often as underhydration",
+      "Most pediatric dengue deaths are preventable",
+      "Dengue is one disease with variable severity",
+      "Warning signs appear near fever defervescence",
+      "Secondary infection increases severity risk",
+      "Early IV fluids reduce mortality dramatically",
+      "Overhydration is as dangerous as underhydration",
+      "Vector control is the foundation of prevention",
+      "Fever subsidence can mark clinical worsening",
+      "Rising hematocrit is more critical than platelet count",
+      "Plasma leakage lasts 24–48 hours",
+      "Overhydration is dangerous during recovery",
+      "Aedes mosquitoes bite during daytime",
+      "Dengue prevention is easy and cheap",
+      "Early treatment prevents death",
+      "Community participation is essential",
+      "Warning signs guide triage and admission",
+      "Early fluids save lives",
+      "Vector control is the only prevention",
+      "Most dengue deaths are preventable",
+      "Community participation is critical",
+      "Dengue burden is rapidly increasing",
+      "Early diagnosis is critical",
+      "Climate change will worsen transmission",
+      "Integrated vector control is essential",
+      "Dengue burden is increasing globally",
+      "Treatment remains supportive",
+      "Early recognition of warning signs is critical",
+      "Vaccines and antivirals are promising but incomplete",
+      "Vector control remains the cornerstone of prevention",
+      "Platelet count alone does not predict bleeding",
+      "Early shock recognition saves lives",
+      "Excess fluids cause harm",
+      "No role of steroids",
+      "Critical phase often begins when fever subsides",
+      "Rising hematocrit with falling platelets is an emergency",
+      "Children deteriorate rapidly—continuous monitoring is essential",
+      "Avoid fluid overload at all costs",
+      "Paracetamol only; NSAIDs are contraindicated"
+    ],
+    "summary_profile": {
+      "disease": "Dengue Fever",
+      "aliases": [
+        "Breakbone Fever",
+        "Dengue Hemorrhagic Fever (severe form)",
+        "Dengue Shock Syndrome",
+        "Dengue Virus Infection",
+        "Classic Dengue"
+      ],
+      "description": "Dengue is a mosquito-borne viral infection caused by the dengue virus (DENV), with four distinct serotypes (DENV-1, DENV-2, DENV-3, DENV-4). It is transmitted primarily by Aedes aegypti and Aedes albopictus mosquitoes. The disease is widespread in tropical and subtropical regions and has seen a dramatic increase globally. While most cases are mild and self-limiting, secondary infections with a different serotype significantly increase the risk of severe dengue, which can lead to plasma leakage, severe bleeding, organ impairment, and death if not managed properly.",
+      "common_symptoms": [
+        "High fever (39–40°C / 102–104°F) — often sudden onset",
+        "Severe headache",
+        "Pain behind the eyes (retro-orbital pain)",
+        "Muscle pain and joint pain (myalgia and arthralgia) — hence 'breakbone fever'",
+        "Nausea and vomiting",
+        "Swollen lymph glands",
+        "Rash (maculopapular or scarlet-like, appearing 2–5 days after fever)",
+        "Fatigue and general weakness",
+        "Mild bleeding from nose or gums",
+        "Loss of appetite"
+      ],
+      "severe_symptoms": [
+        "Severe abdominal pain or tenderness",
+        "Persistent vomiting (3 or more times in 24 hours)",
+        "Bleeding from gums, nose, or under the skin (petechiae, purpura)",
+        "Blood in vomit or stool (black tarry stools)",
+        "Rapid breathing or difficulty breathing",
+        "Fatigue, restlessness, or lethargy",
+        "Cold, clammy skin or pale extremities",
+        "Liver enlargement",
+        "Fluid accumulation (pleural effusion or ascites)"
+      ],
+      "causes": [
+        "Dengue virus (DENV) — four serotypes (DENV-1 to DENV-4)",
+        "Bite from infected female Aedes mosquitoes (primarily Aedes aegypti)",
+        "Mosquitoes bite during daytime, especially early morning and late afternoon",
+        "Human-to-mosquito-to-human transmission cycle",
+        "Rare cases of mother-to-child transmission or through blood transfusion/organ transplant"
+      ],
+      "risk_factors": [
+        "Living in or traveling to tropical/subtropical endemic areas",
+        "Previous dengue infection (especially with a different serotype)",
+        "Infants, young children, and elderly",
+        "Pregnant women",
+        "People with chronic conditions (diabetes, asthma, heart disease)",
+        "Poor urban sanitation and stagnant water breeding sites",
+        "Climate change and increased rainfall leading to mosquito proliferation"
+      ],
+      "diagnosis_methods": [
+        "NS1 antigen test (highly effective in first 5 days)",
+        "RT-PCR (detects viral RNA — gold standard in early phase)",
+        "IgM and IgG antibody tests (ELISA)",
+        "Complete blood count (shows thrombocytopenia and leukopenia)",
+        "Liver function tests (often elevated)",
+        "Tourniquet test (for capillary fragility)"
+      ],
+      "treatment_options": [
+        "No specific antiviral treatment available",
+        "Supportive care is the mainstay",
+        "Hospitalization for severe cases with close monitoring",
+        "Judicious intravenous fluid therapy (critical in plasma leakage phase)",
+        "Blood transfusion in cases of severe bleeding",
+        "Oxygen support if needed"
+      ],
+      "medications": [
+        "Paracetamol (Acetaminophen) — for fever and pain (avoid NSAIDs and Aspirin due to bleeding risk)",
+        "Oral rehydration salts (ORS) or IV fluids",
+        "Antiemetics for severe vomiting",
+        "No antibiotics or antivirals are effective against dengue virus"
+      ],
+      "lifestyle_home_remedies": [
+        "Complete bed rest during the febrile phase",
+        "Stay well hydrated (drink plenty of fluids)",
+        "Use cool compresses or sponging to reduce fever",
+        "Mosquito protection — use repellents, nets, and wear long clothing",
+        "Eliminate breeding sites (remove stagnant water)",
+        "Monitor platelet count and warning signs daily"
+      ],
+      "diet_recommended": [
+        "High-protein soft diet (khichdi, dal, boiled eggs, soup)",
+        "Fresh fruits (papaya, pomegranate, kiwi — help in platelet recovery)",
+        "Coconut water and fresh juices",
+        "Warm soups and porridge",
+        "Yogurt and probiotic-rich foods",
+        "Plenty of fluids — water, ORS, herbal teas"
+      ],
+      "diet_to_avoid": [
+        "Spicy, oily, and fried foods",
+        "NSAIDs (Ibuprofen, Aspirin) — increases bleeding risk",
+        "Caffeine and alcohol (can cause dehydration)",
+        "Foods with dark colors (hard to detect blood in stool/vomit)",
+        "Raw or street food (risk of secondary infection)"
+      ],
+      "complications": [
+        "Severe Dengue (Dengue Hemorrhagic Fever / Dengue Shock Syndrome)",
+        "Plasma leakage leading to shock",
+        "Internal bleeding",
+        "Organ impairment (liver, heart, kidneys, brain)",
+        "Encephalitis or encephalopathy",
+        "Acute respiratory distress",
+        "Multi-organ failure",
+        "Death (if not treated promptly)"
+      ],
+      "when_to_see_doctor": "Consult a doctor immediately if you have high fever along with severe headache, eye pain, muscle/joint pain, or rash after visiting an endemic area. Early detection significantly reduces complications.",
+      "emergency_signs": [
+        "Severe abdominal pain",
+        "Persistent vomiting (not able to keep fluids down)",
+        "Bleeding from gums, nose, or in vomit/stool",
+        "Extreme fatigue, restlessness, or drowsiness",
+        "Cold, clammy skin or rapid weak pulse",
+        "Difficulty breathing or shortness of breath",
+        "Sudden drop in platelet count with rising hematocrit",
+        "Confusion or seizures"
+      ]
+    }
+  }
+]

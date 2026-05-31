@@ -1,0 +1,1125 @@
+{
+  "disease": {
+    "id": "DIS-001",
+    "name": "Asthma",
+    "scientific_name": "Bronchial Asthma",
+    "icd_10_code": "J45",
+    "category": "Chronic Respiratory Disease",
+    "overview": {
+      "description": "Asthma is a chronic inflammatory disease of the airways (bronchi) in the lungs. The airways become swollen and narrow, making it difficult to breathe. It is a long-term condition that can be managed but not cured.",
+      "affected_organ": "Lungs / Airways (Bronchi)",
+      "prevalence": "Approximately 262 million people affected worldwide (WHO, 2023)",
+      "age_group": "All age groups; often starts in childhood",
+      "is_contagious": false,
+      "is_curable": false,
+      "is_manageable": true,
+      "chronic": true
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Allergic Asthma (Extrinsic)",
+        "description": "Triggered by allergens such as pollen, dust mites, pet dander, or mold. Most common type.",
+        "common_in": "Children and young adults"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Non-Allergic Asthma (Intrinsic)",
+        "description": "Not triggered by allergens. Caused by stress, exercise, cold air, smoke, or infections.",
+        "common_in": "Adults"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Exercise-Induced Bronchoconstriction (EIB)",
+        "description": "Triggered by physical activity. Airways narrow during or after exercise.",
+        "common_in": "Athletes and active individuals"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Occupational Asthma",
+        "description": "Caused by workplace irritants such as chemicals, dust, gases, or fumes.",
+        "common_in": "Adults in industrial or chemical work environments"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Cough-Variant Asthma",
+        "description": "Main symptom is persistent dry cough, with little to no wheezing or shortness of breath.",
+        "common_in": "Children"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Nocturnal Asthma",
+        "description": "Symptoms worsen at night due to hormonal changes, lying down position, or dust mites in bedding.",
+        "common_in": "All age groups"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Severe Asthma",
+        "description": "Does not respond well to standard treatments. Requires advanced therapy.",
+        "common_in": "Adults"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Aspirin-Exacerbated Respiratory Disease (AERD)",
+        "description": "Asthma triggered by aspirin or NSAIDs combined with nasal polyps.",
+        "common_in": "Adults aged 30-50"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Intermittent",
+        "frequency": "Symptoms ≤2 days/week",
+        "nighttime_symptoms": "≤2 nights/month",
+        "lung_function": "FEV1 ≥80% predicted",
+        "impact": "No interference with normal activity"
+      },
+      {
+        "level": 2,
+        "name": "Mild Persistent",
+        "frequency": "Symptoms >2 days/week but not daily",
+        "nighttime_symptoms": "3-4 nights/month",
+        "lung_function": "FEV1 ≥80% predicted",
+        "impact": "Minor limitation of normal activity"
+      },
+      {
+        "level": 3,
+        "name": "Moderate Persistent",
+        "frequency": "Daily symptoms",
+        "nighttime_symptoms": ">1 night/week but not nightly",
+        "lung_function": "FEV1 60-79% predicted",
+        "impact": "Some limitation of normal activity"
+      },
+      {
+        "level": 4,
+        "name": "Severe Persistent",
+        "frequency": "Symptoms throughout the day",
+        "nighttime_symptoms": "Often 7 nights/week",
+        "lung_function": "FEV1 <60% predicted",
+        "impact": "Extremely limited normal activity"
+      }
+    ],
+
+    "causes": {
+      "genetic_factors": [
+        "Family history of asthma or allergies",
+        "Atopy (genetic tendency to develop allergic diseases)",
+        "Gene mutations related to immune response (ORMDL3, GSDMB, IL-4, IL-13)"
+      ],
+      "environmental_triggers": [
+        "Allergens: pollen, dust mites, pet dander, cockroach droppings, mold spores",
+        "Air pollution: smoke, smog, vehicle exhaust",
+        "Tobacco smoke (active and passive)",
+        "Strong odors and chemical fumes",
+        "Cold or dry air",
+        "Weather changes",
+        "Exercise or physical exertion",
+        "Respiratory infections (common cold, flu, COVID-19)",
+        "Occupational chemicals: latex, flour dust, animal proteins",
+        "Stress and emotional upset"
+      ],
+      "other_causes": [
+        "Gastroesophageal reflux disease (GERD)",
+        "Obesity",
+        "Hormonal changes (menstruation, pregnancy)",
+        "Certain medications: aspirin, beta-blockers, NSAIDs",
+        "Food additives: sulfites, preservatives",
+        "Early childhood respiratory infections"
+      ]
+    },
+
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-001",
+          "name": "Wheezing",
+          "description": "A high-pitched whistling sound when breathing, especially during exhalation.",
+          "severity": "Moderate to Severe",
+          "onset": "During or after exposure to triggers"
+        },
+        {
+          "id": "SYM-002",
+          "name": "Shortness of Breath (Dyspnea)",
+          "description": "Feeling of not being able to get enough air or breathlessness.",
+          "severity": "Moderate to Severe",
+          "onset": "During exertion or at rest in severe cases"
+        },
+        {
+          "id": "SYM-003",
+          "name": "Chest Tightness",
+          "description": "A squeezing or pressure sensation in the chest.",
+          "severity": "Mild to Severe",
+          "onset": "Often early morning or at night"
+        },
+        {
+          "id": "SYM-004",
+          "name": "Chronic Cough",
+          "description": "Persistent cough, especially at night or early morning. May produce mucus.",
+          "severity": "Mild to Moderate",
+          "onset": "Night or early morning; after exercise"
+        }
+      ],
+      "secondary_symptoms": [
+        "Difficulty sleeping due to breathing issues",
+        "Fatigue and tiredness",
+        "Rapid breathing (tachypnea)",
+        "Anxiety or panic during attacks",
+        "Frequent respiratory infections",
+        "Neck muscles visibly strained when breathing",
+        "Bluish tint to lips or fingernails (cyanosis — severe/emergency)"
+      ],
+      "warning_signs_of_attack": [
+        "Rapidly worsening shortness of breath",
+        "No improvement after using rescue inhaler",
+        "Difficulty speaking in full sentences",
+        "Cyanosis (blue lips or fingertips)",
+        "Confusion or altered consciousness",
+        "Peak flow reading below 50% personal best"
+      ],
+      "symptoms_in_children": [
+        "Frequent coughing, especially during play or at night",
+        "Wheezing or whistling sound when breathing",
+        "Shortness of breath or rapid breathing",
+        "Chest tightness",
+        "Weakness or tiredness during play",
+        "Repeated episodes of bronchitis or pneumonia"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Family history of asthma or allergies",
+        "Description of symptoms and triggers",
+        "History of allergic conditions (eczema, rhinitis)"
+      ],
+      "physical_examination": [
+        "Listening to lungs with stethoscope for wheezing",
+        "Checking nasal passages and throat",
+        "Observing breathing rate and chest expansion"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Spirometry",
+          "description": "Measures lung function — specifically FEV1 and FVC to detect airflow obstruction.",
+          "purpose": "Confirms asthma and severity",
+          "key_metric": "FEV1/FVC ratio < 0.7 indicates obstruction"
+        },
+        {
+          "test_name": "Peak Flow Measurement",
+          "description": "Measures how fast air can be exhaled using a peak flow meter.",
+          "purpose": "Monitors asthma control at home",
+          "key_metric": "Compared to personal best"
+        },
+        {
+          "test_name": "Bronchodilator Reversibility Test",
+          "description": "Spirometry before and after bronchodilator use.",
+          "purpose": "Confirms reversible airway obstruction typical of asthma",
+          "key_metric": "≥12% and 200mL improvement in FEV1"
+        },
+        {
+          "test_name": "Methacholine Challenge Test",
+          "description": "Inhaling methacholine to trigger mild airway narrowing.",
+          "purpose": "Diagnoses asthma when spirometry is normal",
+          "key_metric": "Positive if FEV1 drops ≥20%"
+        },
+        {
+          "test_name": "Allergy Testing",
+          "description": "Skin prick test or blood test (IgE levels) to identify allergens.",
+          "purpose": "Identifies allergic asthma triggers"
+        },
+        {
+          "test_name": "FeNO Test (Fractional exhaled Nitric Oxide)",
+          "description": "Measures inflammation level in airways.",
+          "purpose": "Detects eosinophilic airway inflammation",
+          "key_metric": ">25 ppb suggests eosinophilic asthma"
+        },
+        {
+          "test_name": "Chest X-Ray / CT Scan",
+          "description": "Imaging of lungs to rule out other conditions.",
+          "purpose": "Excludes pneumonia, COPD, or other lung disease"
+        },
+        {
+          "test_name": "Blood Test (CBC & IgE)",
+          "description": "Complete blood count and total IgE levels.",
+          "purpose": "Detect eosinophilia and allergic response"
+        },
+        {
+          "test_name": "Pulse Oximetry",
+          "description": "Non-invasive measurement of blood oxygen saturation.",
+          "purpose": "Assess severity during asthma attacks"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "All medications should be taken only under the supervision of a licensed physician. Self-medication can be dangerous.",
+      "categories": [
+        {
+          "category_id": "MED-CAT-01",
+          "category_name": "Short-Acting Beta-2 Agonists (SABA) — Rescue Inhalers",
+          "purpose": "Quick relief during asthma attacks by relaxing airway muscles",
+          "onset": "Within 5-15 minutes",
+          "duration": "4-6 hours",
+          "medicines": [
+            {
+              "name": "Salbutamol (Albuterol)",
+              "brand_examples": ["Ventolin", "Proventil", "Asthalin"],
+              "form": "Inhaler (MDI), Nebulizer solution, Syrup, Tablet",
+              "dosage": "1-2 puffs every 4-6 hours as needed",
+              "use_case": "Acute asthma attack relief",
+              "side_effects": ["Tremors", "Rapid heartbeat", "Headache", "Nervousness"]
+            },
+            {
+              "name": "Levosalbutamol (Levalbuterol)",
+              "brand_examples": ["Xopenex"],
+              "form": "Inhaler, Nebulizer",
+              "dosage": "0.63-1.25 mg every 6-8 hours",
+              "use_case": "Acute relief with fewer cardiovascular side effects",
+              "side_effects": ["Tremors", "Palpitations"]
+            },
+            {
+              "name": "Terbutaline",
+              "brand_examples": ["Bricanyl", "Terbasmin"],
+              "form": "Inhaler, Tablet, Injection",
+              "dosage": "Inhaler: 0.25-0.5 mg every 4-6 hours",
+              "use_case": "Acute bronchospasm relief",
+              "side_effects": ["Tremors", "Tachycardia", "Hypokalemia"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-02",
+          "category_name": "Inhaled Corticosteroids (ICS) — Controller Medicines",
+          "purpose": "Reduce airway inflammation and prevent asthma symptoms",
+          "onset": "Several days to weeks for full effect",
+          "duration": "Long-term use",
+          "medicines": [
+            {
+              "name": "Budesonide",
+              "brand_examples": ["Pulmicort", "Budecort"],
+              "form": "Inhaler, Nebulizer",
+              "dosage": "200-800 mcg/day (divided doses)",
+              "use_case": "Long-term asthma control",
+              "side_effects": ["Oral thrush", "Hoarseness", "Adrenal suppression (high dose)"]
+            },
+            {
+              "name": "Fluticasone Propionate",
+              "brand_examples": ["Flixotide", "Flovent"],
+              "form": "Inhaler",
+              "dosage": "100-500 mcg twice daily",
+              "use_case": "Daily inflammation control",
+              "side_effects": ["Oral candidiasis", "Dysphonia", "Bruising"]
+            },
+            {
+              "name": "Beclomethasone Dipropionate",
+              "brand_examples": ["Beclovent", "QVAR"],
+              "form": "Inhaler",
+              "dosage": "100-400 mcg twice daily",
+              "use_case": "Mild to moderate persistent asthma",
+              "side_effects": ["Hoarseness", "Oral thrush"]
+            },
+            {
+              "name": "Mometasone Furoate",
+              "brand_examples": ["Asmanex"],
+              "form": "Inhaler",
+              "dosage": "110-440 mcg once or twice daily",
+              "use_case": "Moderate to severe persistent asthma",
+              "side_effects": ["Headache", "Oral candidiasis"]
+            },
+            {
+              "name": "Ciclesonide",
+              "brand_examples": ["Alvesco"],
+              "form": "Inhaler",
+              "dosage": "80-320 mcg once daily",
+              "use_case": "Mild to moderate asthma",
+              "side_effects": ["Minimal due to local activation"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-03",
+          "category_name": "Long-Acting Beta-2 Agonists (LABA) — Combination Controllers",
+          "purpose": "Sustained bronchodilation, always used with ICS",
+          "onset": "15-30 minutes",
+          "duration": "12-24 hours",
+          "medicines": [
+            {
+              "name": "Salmeterol",
+              "brand_examples": ["Serevent"],
+              "form": "Inhaler",
+              "dosage": "50 mcg twice daily (always with ICS)",
+              "use_case": "Moderate to severe asthma maintenance",
+              "side_effects": ["Tremors", "Headache", "Palpitations"]
+            },
+            {
+              "name": "Formoterol (Eformoterol)",
+              "brand_examples": ["Foradil", "Oxis"],
+              "form": "Inhaler, Nebulizer",
+              "dosage": "6-12 mcg twice daily (with ICS)",
+              "use_case": "Maintenance and acute symptom relief (SMART therapy)",
+              "side_effects": ["Tremors", "Muscle cramps", "Tachycardia"]
+            },
+            {
+              "name": "Indacaterol",
+              "brand_examples": ["Onbrez"],
+              "form": "Inhaler",
+              "dosage": "75-150 mcg once daily",
+              "use_case": "Once-daily long-term bronchodilation",
+              "side_effects": ["Cough after inhalation", "Headache"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-04",
+          "category_name": "Combination Inhalers (ICS + LABA)",
+          "purpose": "Combined anti-inflammatory and bronchodilator effect",
+          "medicines": [
+            {
+              "name": "Fluticasone + Salmeterol",
+              "brand_examples": ["Seretide", "Advair", "Combitide"],
+              "form": "Inhaler (MDI / DPI)",
+              "dosage": "1 puff twice daily",
+              "use_case": "Moderate to severe persistent asthma"
+            },
+            {
+              "name": "Budesonide + Formoterol",
+              "brand_examples": ["Symbicort", "Forair", "DuoResp"],
+              "form": "Inhaler",
+              "dosage": "1-2 puffs twice daily",
+              "use_case": "MART / SMART therapy — maintenance and rescue"
+            },
+            {
+              "name": "Fluticasone Furoate + Vilanterol",
+              "brand_examples": ["Relvar", "Breo Ellipta"],
+              "form": "Inhaler (DPI)",
+              "dosage": "1 inhalation once daily",
+              "use_case": "Once-daily severe asthma control"
+            },
+            {
+              "name": "Mometasone + Formoterol",
+              "brand_examples": ["Dulera"],
+              "form": "Inhaler",
+              "dosage": "2 puffs twice daily",
+              "use_case": "Moderate to severe asthma"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-05",
+          "category_name": "Leukotriene Receptor Antagonists (LTRA)",
+          "purpose": "Block leukotrienes that cause airway swelling and mucus production",
+          "onset": "Within hours; full effect in weeks",
+          "medicines": [
+            {
+              "name": "Montelukast",
+              "brand_examples": ["Singulair", "Montair"],
+              "form": "Tablet, Chewable tablet, Granules",
+              "dosage": "Adults: 10 mg once daily; Children 2-5 yrs: 4 mg",
+              "use_case": "Mild persistent asthma; allergic asthma; exercise-induced",
+              "side_effects": ["Headache", "Abdominal pain", "Mood/behavior changes (rare)"]
+            },
+            {
+              "name": "Zafirlukast",
+              "brand_examples": ["Accolate"],
+              "form": "Tablet",
+              "dosage": "20 mg twice daily",
+              "use_case": "Asthma prevention and management",
+              "side_effects": ["Liver enzyme elevation", "Headache", "Nausea"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-06",
+          "category_name": "Oral / Systemic Corticosteroids",
+          "purpose": "Reduce severe inflammation during acute attacks or step-up therapy",
+          "note": "Used short-term for exacerbations; avoid long-term due to side effects",
+          "medicines": [
+            {
+              "name": "Prednisolone",
+              "brand_examples": ["Omnacortil", "Wysolone"],
+              "form": "Tablet, Syrup",
+              "dosage": "Adults: 30-60 mg/day for 5-7 days; taper as needed",
+              "use_case": "Moderate-severe exacerbations, refractory asthma",
+              "side_effects": ["Weight gain", "Hyperglycemia", "Hypertension", "Osteoporosis (long-term)"]
+            },
+            {
+              "name": "Dexamethasone",
+              "brand_examples": ["Decadron", "Dexona"],
+              "form": "Tablet, Injection",
+              "dosage": "0.6 mg/kg/day (emergency use)",
+              "use_case": "Severe acute asthma attack",
+              "side_effects": ["Immunosuppression", "Hyperglycemia"]
+            },
+            {
+              "name": "Methylprednisolone",
+              "brand_examples": ["Solu-Medrol", "Medrol"],
+              "form": "Tablet, Injection",
+              "dosage": "40-125 mg IV in hospital setting",
+              "use_case": "Hospitalized severe asthma",
+              "side_effects": ["Fluid retention", "Mood changes"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-07",
+          "category_name": "Biologics (Anti-Asthma Monoclonal Antibodies)",
+          "purpose": "Target specific immune pathways in severe, refractory asthma",
+          "note": "For severe uncontrolled asthma not responding to standard therapy",
+          "medicines": [
+            {
+              "name": "Omalizumab",
+              "brand_examples": ["Xolair"],
+              "form": "Subcutaneous Injection",
+              "dosage": "75-375 mg every 2-4 weeks",
+              "use_case": "Moderate-severe allergic asthma with elevated IgE",
+              "mechanism": "Anti-IgE antibody",
+              "side_effects": ["Injection site reaction", "Anaphylaxis (rare)"]
+            },
+            {
+              "name": "Mepolizumab",
+              "brand_examples": ["Nucala"],
+              "form": "Subcutaneous Injection",
+              "dosage": "100 mg every 4 weeks",
+              "use_case": "Severe eosinophilic asthma",
+              "mechanism": "Anti-IL-5 antibody",
+              "side_effects": ["Headache", "Back pain", "Injection site reaction"]
+            },
+            {
+              "name": "Benralizumab",
+              "brand_examples": ["Fasenra"],
+              "form": "Subcutaneous Injection",
+              "dosage": "30 mg every 4 weeks (first 3 doses), then every 8 weeks",
+              "use_case": "Severe eosinophilic asthma",
+              "mechanism": "Anti-IL-5 receptor alpha antibody",
+              "side_effects": ["Injection site pain", "Pharyngitis"]
+            },
+            {
+              "name": "Dupilumab",
+              "brand_examples": ["Dupixent"],
+              "form": "Subcutaneous Injection",
+              "dosage": "200-300 mg every 2 weeks",
+              "use_case": "Moderate-severe asthma with type 2 inflammation",
+              "mechanism": "Anti-IL-4/IL-13 receptor antibody",
+              "side_effects": ["Injection site reaction", "Eosinophilia"]
+            },
+            {
+              "name": "Tezepelumab",
+              "brand_examples": ["Tezspire"],
+              "form": "Subcutaneous Injection",
+              "dosage": "210 mg every 4 weeks",
+              "use_case": "Severe uncontrolled asthma (all phenotypes)",
+              "mechanism": "Anti-TSLP antibody",
+              "side_effects": ["Pharyngitis", "Arthralgia"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-08",
+          "category_name": "Methylxanthines",
+          "purpose": "Bronchodilation; adjunct therapy in difficult-to-treat asthma",
+          "medicines": [
+            {
+              "name": "Theophylline",
+              "brand_examples": ["Theo-Dur", "Aminophylline"],
+              "form": "Tablet, Capsule, Injection",
+              "dosage": "Adults: 200-400 mg twice daily (SR form)",
+              "use_case": "Add-on therapy in severe asthma; useful where inhalers aren't available",
+              "side_effects": ["Nausea", "Vomiting", "Palpitations", "Seizures (toxicity)"],
+              "monitoring": "Serum level monitoring required (5-15 mcg/mL)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-09",
+          "category_name": "Short-Acting Muscarinic Antagonists (SAMA)",
+          "purpose": "Bronchodilation by blocking muscarinic receptors",
+          "medicines": [
+            {
+              "name": "Ipratropium Bromide",
+              "brand_examples": ["Atrovent", "Ipravent"],
+              "form": "Inhaler, Nebulizer",
+              "dosage": "0.5 mg (2.5 mL) nebulized every 4-6 hours",
+              "use_case": "Add-on therapy in acute severe asthma attacks alongside SABA",
+              "side_effects": ["Dry mouth", "Urinary retention", "Blurred vision"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-10",
+          "category_name": "Long-Acting Muscarinic Antagonists (LAMA)",
+          "purpose": "Sustained bronchodilation for add-on therapy",
+          "medicines": [
+            {
+              "name": "Tiotropium",
+              "brand_examples": ["Spiriva Respimat"],
+              "form": "Inhaler",
+              "dosage": "2.5 mcg once daily (2 puffs)",
+              "use_case": "Add-on therapy in adults with uncontrolled asthma despite ICS/LABA",
+              "side_effects": ["Dry mouth", "Constipation", "Urinary retention"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-11",
+          "category_name": "Antihistamines (for Allergic Component)",
+          "purpose": "Reduce allergic response that triggers asthma",
+          "medicines": [
+            {
+              "name": "Cetirizine",
+              "brand_examples": ["Zyrtec", "Cetzine"],
+              "form": "Tablet, Syrup",
+              "dosage": "10 mg once daily",
+              "use_case": "Allergic rhinitis comorbid with asthma",
+              "side_effects": ["Drowsiness", "Dry mouth"]
+            },
+            {
+              "name": "Loratadine",
+              "brand_examples": ["Claritin", "Lorfast"],
+              "form": "Tablet, Syrup",
+              "dosage": "10 mg once daily",
+              "use_case": "Non-sedating option for allergic asthma",
+              "side_effects": ["Headache", "Minimal sedation"]
+            },
+            {
+              "name": "Fexofenadine",
+              "brand_examples": ["Allegra"],
+              "form": "Tablet",
+              "dosage": "60-180 mg once or twice daily",
+              "use_case": "Allergic rhinitis in asthma patients",
+              "side_effects": ["Headache", "Back pain"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-12",
+          "category_name": "Mast Cell Stabilizers",
+          "purpose": "Prevent mast cell degranulation and allergen-triggered airway inflammation",
+          "medicines": [
+            {
+              "name": "Sodium Cromoglicate (Cromolyn Sodium)",
+              "brand_examples": ["Intal"],
+              "form": "Inhaler, Nebulizer",
+              "dosage": "2 puffs 4 times daily",
+              "use_case": "Prophylaxis of exercise-induced and allergic asthma",
+              "side_effects": ["Throat irritation", "Coughing", "Bad taste"],
+              "note": "Less commonly used today; no bronchodilatory effect"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-13",
+          "category_name": "Emergency / Hospital Medications",
+          "purpose": "Life-saving treatment during severe asthma attacks",
+          "medicines": [
+            {
+              "name": "Epinephrine (Adrenaline)",
+              "brand_examples": ["EpiPen", "Adrenalin"],
+              "form": "Injection (IM/IV)",
+              "dosage": "0.3-0.5 mg IM (1:1000) for anaphylaxis/severe attack",
+              "use_case": "Anaphylaxis, life-threatening asthma",
+              "side_effects": ["Tachycardia", "Hypertension", "Anxiety"]
+            },
+            {
+              "name": "Magnesium Sulfate",
+              "brand_examples": ["MgSO4"],
+              "form": "IV Injection",
+              "dosage": "1.2-2 g IV over 20 minutes",
+              "use_case": "Severe acute asthma not responding to first-line treatment",
+              "side_effects": ["Flushing", "Hypotension", "Loss of reflexes (high dose)"]
+            },
+            {
+              "name": "Helium-Oxygen (Heliox)",
+              "form": "Inhalation therapy",
+              "use_case": "Reduces work of breathing in critical asthma",
+              "note": "Adjunctive therapy in ICU setting"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet plays a vital supportive role in managing asthma. A proper diet can reduce airway inflammation, boost immune function, and minimize triggers.",
+      "recommended_foods": [
+        {
+          "category": "Anti-Inflammatory Foods",
+          "items": [
+            {
+              "food": "Fatty Fish (Salmon, Mackerel, Tuna, Sardines)",
+              "benefit": "Rich in omega-3 fatty acids; reduce airway inflammation",
+              "frequency": "2-3 times per week"
+            },
+            {
+              "food": "Turmeric",
+              "benefit": "Curcumin reduces inflammatory cytokines; natural anti-inflammatory",
+              "frequency": "Daily in cooking or warm milk (golden milk)"
+            },
+            {
+              "food": "Ginger",
+              "benefit": "Contains gingerols; relaxes airway muscles and reduces inflammation",
+              "frequency": "Daily in tea or meals"
+            },
+            {
+              "food": "Garlic",
+              "benefit": "Allicin has anti-inflammatory and immunomodulatory effects",
+              "frequency": "Daily in meals (raw or cooked)"
+            },
+            {
+              "food": "Green leafy vegetables (Spinach, Kale, Methi/Fenugreek)",
+              "benefit": "Rich in magnesium, antioxidants, and vitamins that support lung function",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Vitamin C Rich Foods",
+          "items": [
+            {
+              "food": "Oranges, Lemons, Amla (Indian Gooseberry)",
+              "benefit": "Antioxidant; reduces bronchoconstriction; protects lungs from oxidative stress",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Bell Peppers (Capsicum)",
+              "benefit": "Highest natural source of Vitamin C; anti-inflammatory",
+              "frequency": "3-4 times per week"
+            },
+            {
+              "food": "Strawberries, Kiwi",
+              "benefit": "Vitamin C and antioxidants; help neutralize airway inflammation",
+              "frequency": "Daily to alternate days"
+            }
+          ]
+        },
+        {
+          "category": "Vitamin D Rich Foods",
+          "items": [
+            {
+              "food": "Egg yolks, Fortified milk, Fortified cereals",
+              "benefit": "Vitamin D deficiency linked to increased asthma severity; supports immune regulation",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Mushrooms (sun-exposed)",
+              "benefit": "Plant source of Vitamin D; anti-inflammatory",
+              "frequency": "3-4 times per week"
+            }
+          ]
+        },
+        {
+          "category": "Magnesium Rich Foods",
+          "items": [
+            {
+              "food": "Nuts (Almonds, Cashews, Brazil nuts)",
+              "benefit": "Magnesium acts as a natural bronchodilator; relaxes airway smooth muscle",
+              "frequency": "Daily (handful)"
+            },
+            {
+              "food": "Seeds (Pumpkin seeds, Sunflower seeds, Flaxseeds)",
+              "benefit": "Magnesium and omega-3 content; reduce inflammation",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Dark Chocolate (70%+ cocoa)",
+              "benefit": "Theophylline content helps dilate bronchi; magnesium source",
+              "frequency": "Moderate — 1-2 squares daily"
+            },
+            {
+              "food": "Whole grains (Brown rice, Oats, Quinoa)",
+              "benefit": "Magnesium and fibre; low glycemic index reduces inflammation",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Antioxidant Rich Foods",
+          "items": [
+            {
+              "food": "Blueberries, Blackberries, Pomegranate",
+              "benefit": "High flavonoid content; reduce oxidative stress in airways",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Tomatoes",
+              "benefit": "Lycopene; reduces airway hyperresponsiveness",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Green tea",
+              "benefit": "Catechins (EGCG) have bronchodilatory and anti-inflammatory effects",
+              "frequency": "1-2 cups per day"
+            },
+            {
+              "food": "Carrots, Sweet Potatoes",
+              "benefit": "Beta-carotene; protects lungs from oxidative damage",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Probiotic and Gut Health Foods",
+          "items": [
+            {
+              "food": "Yogurt (plain, unsweetened)",
+              "benefit": "Probiotics reduce allergic response and modulate immune system",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Kefir",
+              "benefit": "Probiotic-rich; reduces inflammation and allergic sensitization",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Fermented foods (Idli, Dosa batter, Kimchi)",
+              "benefit": "Support gut microbiome which is linked to reduced asthma severity",
+              "frequency": "Regular"
+            }
+          ]
+        },
+        {
+          "category": "Hydration",
+          "items": [
+            {
+              "food": "Warm Water / Warm fluids",
+              "benefit": "Thins mucus secretions; prevents airway dryness",
+              "frequency": "8-10 glasses per day"
+            },
+            {
+              "food": "Warm ginger-honey water",
+              "benefit": "Soothes airways; anti-inflammatory",
+              "frequency": "1-2 times daily"
+            },
+            {
+              "food": "Herbal teas (Tulsi, Ginger, Licorice root)",
+              "benefit": "Traditional bronchodilatory and anti-inflammatory properties",
+              "frequency": "1-2 cups daily"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Sulfite-containing foods",
+          "reason": "Sulfites act as airway irritants",
+          "examples": ["Pickles", "Dried fruits (raisins, apricots)", "Wine", "Shrimp", "Bottled lemon juice"]
+        },
+        {
+          "food": "Processed and Junk Food",
+          "reason": "High in trans fats, additives, and preservatives that increase airway inflammation",
+          "examples": ["Chips", "Instant noodles", "Fast food burgers", "Packaged snacks"]
+        },
+        {
+          "food": "Cold and Iced Foods/Drinks",
+          "reason": "Can trigger airway constriction via temperature sensitivity",
+          "examples": ["Ice cream", "Cold water", "Iced beverages", "Cold desserts"]
+        },
+        {
+          "food": "High-Allergen Foods",
+          "reason": "Common food allergens can trigger asthma in sensitized individuals",
+          "examples": ["Peanuts", "Tree nuts", "Shellfish", "Milk (in sensitive patients)", "Wheat (in sensitive patients)", "Eggs (in some)"]
+        },
+        {
+          "food": "Histamine-rich Foods",
+          "reason": "Histamine causes bronchoconstriction in asthma patients",
+          "examples": ["Alcohol (especially red wine, beer)", "Fermented cheese", "Canned fish", "Vinegar", "Processed meats"]
+        },
+        {
+          "food": "High Saturated Fat Foods",
+          "reason": "Promote systemic inflammation worsening asthma",
+          "examples": ["Fatty red meat", "Butter", "Full-fat cheese", "Palm oil", "Hydrogenated oils"]
+        },
+        {
+          "food": "Salty Foods",
+          "reason": "High sodium increases airway responsiveness",
+          "examples": ["Salted snacks", "Processed meats", "Soy sauce", "Canned soups"]
+        },
+        {
+          "food": "Sugary Foods and Beverages",
+          "reason": "Refined sugar promotes inflammation",
+          "examples": ["Soft drinks", "Candy", "Pastries", "Sugary cereals"]
+        },
+        {
+          "food": "Artificial Additives",
+          "reason": "Food dyes, MSG, and artificial preservatives may trigger attacks",
+          "examples": ["Tartrazine (Yellow dye No. 5)", "MSG", "Sodium benzoate"]
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This is a general guideline. Individual dietary needs may vary. Consult a dietitian.",
+        "early_morning": "Warm water with honey and ginger + 4-5 soaked almonds",
+        "breakfast": "Oatmeal with blueberries and flaxseeds OR Vegetable upma with green chutney + 1 glass warm turmeric milk",
+        "mid_morning": "1 orange or 1 kiwi OR 1 cup green tea",
+        "lunch": "Brown rice + dal (lentil soup) + stir-fried spinach with garlic + 1 bowl plain yogurt",
+        "evening_snack": "Roasted pumpkin seeds + warm ginger tea OR 1 banana",
+        "dinner": "Grilled fish (salmon/mackerel) or paneer with vegetables + whole wheat chapati + cooked carrots and sweet potato",
+        "before_bed": "Warm turmeric milk (golden milk)"
+      },
+      "special_dietary_notes": [
+        "Maintain healthy weight — obesity worsens asthma significantly",
+        "Follow Mediterranean diet pattern for best anti-inflammatory outcomes",
+        "Avoid known personal food triggers — keep a food diary",
+        "Eat small, frequent meals to prevent GERD which can worsen asthma",
+        "Do not skip meals; low blood sugar can heighten stress responses"
+      ]
+    },
+
+    "lifestyle_management": {
+      "trigger_avoidance": [
+        "Use air purifiers with HEPA filters at home",
+        "Keep windows closed during high pollen seasons",
+        "Wash bedding in hot water weekly to eliminate dust mites",
+        "Use hypoallergenic pillows and mattress covers",
+        "Avoid pet dander — keep pets out of bedroom",
+        "Do not smoke and avoid secondhand smoke",
+        "Avoid strong perfumes, cleaning chemicals, or aerosols",
+        "Wear a scarf or mask in cold weather",
+        "Monitor outdoor air quality and avoid going out on high pollution days",
+        "Use exhaust fans in kitchen to remove cooking fumes"
+      ],
+      "breathing_exercises": [
+        {
+          "name": "Pursed Lip Breathing",
+          "description": "Inhale through nose for 2 counts, exhale slowly through pursed lips for 4 counts",
+          "benefit": "Slows breathing rate; improves gas exchange",
+          "frequency": "3-4 times daily"
+        },
+        {
+          "name": "Diaphragmatic Breathing (Belly Breathing)",
+          "description": "Breathe using diaphragm, not chest; belly should rise while inhaling",
+          "benefit": "Strengthens diaphragm; reduces hyperventilation",
+          "frequency": "10 minutes twice daily"
+        },
+        {
+          "name": "Buteyko Breathing Technique",
+          "description": "Controlled slow nasal breathing to reduce over-breathing",
+          "benefit": "Reduces frequency and severity of asthma episodes",
+          "frequency": "20-30 minutes daily"
+        },
+        {
+          "name": "Pranayama (Anulom Vilom / Nadi Shodhana)",
+          "description": "Alternate nostril breathing for 5-10 minutes",
+          "benefit": "Balances nervous system; reduces stress-triggered asthma",
+          "frequency": "Daily in the morning"
+        }
+      ],
+      "physical_activity": {
+        "recommended": [
+          "Swimming (warm, humid air is gentle on airways)",
+          "Walking (light to moderate pace)",
+          "Yoga and stretching",
+          "Cycling (avoid high-pollution areas)",
+          "Light to moderate aerobic exercise"
+        ],
+        "precautions": [
+          "Always carry rescue inhaler during exercise",
+          "Use a pre-exercise bronchodilator if prescribed",
+          "Warm up for 10 minutes before intense activity",
+          "Cool down gradually after exercise",
+          "Avoid exercising in cold dry air or high pollen conditions",
+          "Monitor breathing and stop if symptoms develop"
+        ],
+        "note": "Exercise is beneficial for lung health and weight management. Consult doctor before starting a new exercise program."
+      },
+      "mental_health": [
+        "Practice stress management — stress is a known asthma trigger",
+        "Mindfulness meditation and progressive muscle relaxation",
+        "Cognitive Behavioral Therapy (CBT) for anxiety related to breathlessness",
+        "Join asthma support groups for emotional wellbeing",
+        "Adequate sleep (7-9 hours) to support immune function"
+      ]
+    },
+
+    "asthma_action_plan": {
+      "green_zone": {
+        "peak_flow": "80-100% of personal best",
+        "symptoms": "No symptoms; breathing is good; can do all activities",
+        "action": "Continue regular medications as prescribed. No changes needed."
+      },
+      "yellow_zone": {
+        "peak_flow": "50-79% of personal best",
+        "symptoms": "Cough, wheeze, chest tightness, or shortness of breath; waking at night",
+        "action": "Take rescue inhaler (2-4 puffs salbutamol). If no improvement in 20 minutes, repeat. Contact doctor if not improving."
+      },
+      "red_zone": {
+        "peak_flow": "Below 50% of personal best",
+        "symptoms": "Severe symptoms; rescue inhaler is not helping; cannot speak in full sentences",
+        "action": "MEDICAL EMERGENCY. Use rescue inhaler immediately. Call emergency services / go to nearest hospital. Do not drive yourself."
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Status Asthmaticus",
+        "description": "Prolonged severe asthma attack not responding to bronchodilators. Life-threatening.",
+        "severity": "Critical"
+      },
+      {
+        "complication": "Respiratory Failure",
+        "description": "Inability to breathe adequately; may require mechanical ventilation.",
+        "severity": "Critical"
+      },
+      {
+        "complication": "Pneumothorax",
+        "description": "Lung collapse due to severe air trapping.",
+        "severity": "Severe"
+      },
+      {
+        "complication": "Airway Remodeling",
+        "description": "Permanent structural changes in airways due to chronic inflammation.",
+        "severity": "Long-term/Chronic"
+      },
+      {
+        "complication": "COPD Overlap",
+        "description": "Chronic obstructive pulmonary disease features developing alongside asthma (ACOS).",
+        "severity": "Chronic"
+      },
+      {
+        "complication": "Sleep Apnea",
+        "description": "Nocturnal asthma can contribute to obstructive sleep apnea.",
+        "severity": "Moderate"
+      },
+      {
+        "complication": "Psychological Impact",
+        "description": "Anxiety, depression, and reduced quality of life due to chronic condition.",
+        "severity": "Moderate"
+      }
+    ],
+
+    "special_populations": {
+      "asthma_in_children": {
+        "key_points": [
+          "Most common chronic disease in children",
+          "Symptoms may change with age; some children outgrow asthma",
+          "Spacers should be used with MDI inhalers in children under 8",
+          "Trigger identification is crucial (pet dander, exercise, infections)",
+          "Schools should have asthma action plans on file",
+          "Parents and teachers must be educated on recognizing and managing attacks"
+        ]
+      },
+      "asthma_in_pregnancy": {
+        "key_points": [
+          "Poorly controlled asthma is more dangerous than medications during pregnancy",
+          "Most asthma medications (ICS, SABA) are considered safe in pregnancy",
+          "Monitor asthma carefully — it may worsen in 1/3rd of pregnant women",
+          "Avoid oral corticosteroids in first trimester if possible",
+          "Inform all healthcare providers about asthma status",
+          "Ensure adequate Vitamin D and folate intake"
+        ]
+      },
+      "asthma_in_elderly": {
+        "key_points": [
+          "Often underdiagnosed or confused with COPD or heart failure",
+          "Age-related muscle weakness affects inhaler technique — use spacers",
+          "Higher risk of medication side effects (oral corticosteroids, theophylline)",
+          "Multiple comorbidities common (GERD, heart disease, obesity)",
+          "Influenza and pneumococcal vaccines strongly recommended"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza (Flu) Vaccine",
+        "frequency": "Annually (every year before flu season)",
+        "reason": "Respiratory infections are a major trigger; flu can cause severe exacerbations"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV13 / PPSV23)",
+        "frequency": "Once (with booster at 65 if given earlier)",
+        "reason": "Prevents bacterial pneumonia which can worsen asthma"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "frequency": "As per national guidelines",
+        "reason": "COVID-19 can trigger severe asthma exacerbations"
+      },
+      {
+        "vaccine": "Pertussis (Tdap)",
+        "frequency": "Every 10 years",
+        "reason": "Whooping cough severely worsens respiratory symptoms"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Symptoms are frequent (more than 2 days/week)",
+      "Waking up at night due to asthma",
+      "Rescue inhaler being used more than twice a week",
+      "Asthma limiting daily activities or exercise",
+      "Symptoms not improving after 48-72 hours",
+      "Peak flow below 80% of personal best for more than 2 days",
+      "Any episode requiring emergency room visit",
+      "Before starting new medications or making changes to current regimen"
+    ],
+
+    "emergency_signs": [
+      "Severe difficulty breathing — unable to speak in full sentences",
+      "Lips or fingernails turning blue (cyanosis)",
+      "No relief after 2-3 doses of rescue inhaler",
+      "Straining neck or chest muscles to breathe",
+      "Confusion, drowsiness, or altered consciousness",
+      "Silent chest (no wheezing sounds — indicates critical narrowing)",
+      "Peak flow < 50% of personal best"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "Is asthma curable?",
+        "answer": "No, asthma is a chronic condition with no cure. However, with proper medication and lifestyle management, most patients can live normal, active lives with minimal symptoms."
+      },
+      {
+        "question": "Can children outgrow asthma?",
+        "answer": "Yes, approximately 50% of children with asthma may experience significant improvement or apparent remission during adolescence. However, asthma can return in adulthood."
+      },
+      {
+        "question": "Are asthma inhalers safe for long-term use?",
+        "answer": "Yes, inhaled corticosteroids and other maintenance inhalers are generally safe for long-term use at prescribed doses. The benefits far outweigh the risks of uncontrolled asthma."
+      },
+      {
+        "question": "Can exercise make asthma worse?",
+        "answer": "Exercise-induced bronchoconstriction occurs in many asthma patients, but regular, properly managed exercise is beneficial. Using a rescue inhaler before exercise and warming up properly helps prevent attacks."
+      },
+      {
+        "question": "Can stress trigger asthma?",
+        "answer": "Yes. Emotional stress and anxiety cause hyperventilation and can trigger or worsen asthma symptoms. Stress management is an important part of asthma care."
+      },
+      {
+        "question": "Is asthma hereditary?",
+        "answer": "Asthma has a genetic component. If one or both parents have asthma or allergies (atopy), the child has a higher risk of developing asthma."
+      },
+      {
+        "question": "What is the difference between a rescue inhaler and a controller inhaler?",
+        "answer": "A rescue inhaler (like salbutamol) provides quick relief during an attack by relaxing airway muscles. A controller inhaler (like budesonide) is taken daily to prevent inflammation and reduce attack frequency — it does not provide immediate relief."
+      },
+      {
+        "question": "Can diet alone control asthma?",
+        "answer": "No. Diet is supportive, not curative. A healthy anti-inflammatory diet reduces severity and frequency of episodes, but prescribed medications are essential for asthma control."
+      }
+    ],
+
+    "references": [
+      "Global Initiative for Asthma (GINA) Guidelines 2023",
+      "World Health Organization (WHO) — Asthma Fact Sheet 2023",
+      "National Asthma Education and Prevention Program (NAEPP) — NHLBI",
+      "British Thoracic Society (BTS) Asthma Guidelines",
+      "Indian Chest Society (ICS) Asthma Management Guidelines",
+      "American Academy of Allergy, Asthma & Immunology (AAAAI)",
+      "Medscape: Asthma Clinical Overview",
+      "UpToDate: Asthma in Adults — Overview of Treatment"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-ASTHMA-001",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-05-25",
+      "last_updated": "2026-05-25",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is intended for educational and informational purposes for the MedoAir chatbot. It does not replace professional medical advice, diagnosis, or treatment. Always consult a licensed physician for medical decisions.",
+      "tags": ["asthma", "respiratory", "chronic disease", "bronchial", "lungs", "breathlessness", "inhaler", "GINA", "medoair"]
+    }
+  }
+}
+

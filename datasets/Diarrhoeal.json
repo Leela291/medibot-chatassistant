@@ -1,0 +1,5422 @@
+[
+  {
+    "topic": "Diarrhoeal Disease",
+    "overview": {
+      "definition": "Diarrhoea is defined as the passage of three or more loose or liquid stools per day, or more frequent passage than is normal for the individual.",
+      "global_impact": {
+        "child_deaths_per_year": 443832,
+        "rank_under_5": "Third leading cause of death",
+        "most_affected_groups": [
+          "Children under 5 years",
+          "Malnourished children",
+          "Children with impaired immunity",
+          "People living with HIV"
+        ]
+      },
+      "global_significance": "Diarrheal diseases remain one of the leading preventable causes of death, especially among children under five in developing countries.",
+      "daily_fluid_context": "More than 98% of intestinal fluid is normally reabsorbed; diarrhea disrupts this balance."
+    },
+    "clinical_types": [
+      {
+        "type": "Acute watery diarrhoea",
+        "duration": "Several hours to days",
+        "example": "Cholera"
+      },
+      {
+        "type": "Acute bloody diarrhoea",
+        "other_name": "Dysentery"
+      },
+      {
+        "type": "Persistent diarrhoea",
+        "duration": "14 days or longer"
+      },
+      {
+        "acute_watery_diarrhoea": {
+          "duration": "Hours to days",
+          "characteristics": [
+            "Large volume watery stools",
+            "Rapid dehydration risk"
+          ],
+          "examples": [
+            "Cholera"
+          ]
+        },
+        "acute_bloody_diarrhoea": {
+          "alias": "Dysentery",
+          "characteristics": [
+            "Blood in stool",
+            "Intestinal inflammation"
+          ]
+        },
+        "persistent_diarrhoea": {
+          "duration": "14 days or longer",
+          "characteristics": [
+            "Malabsorption",
+            "Weight loss",
+            "High mortality risk"
+          ]
+        }
+      },
+      {
+        "acute_watery_diarrhea": {
+          "duration": "Hours to days",
+          "common_agents": [
+            "Rotavirus",
+            "Escherichia coli",
+            "Vibrio cholerae"
+          ]
+        },
+        "bloody_diarrhea": {
+          "alias": "Dysentery",
+          "cause": "Bacterial invasion"
+        },
+        "persistent_diarrhea": {
+          "duration": ">14 days"
+        }
+      }
+    ],
+    "causes": {
+      "infectious_agents": {
+        "viral": [
+          "Rotavirus",
+          "Norovirus",
+          "Adenovirus",
+          "Astrovirus",
+          "Sapovirus"
+        ],
+        "bacterial": [
+          "Escherichia coli",
+          "Salmonella spp.",
+          "Shigella spp.",
+          "Campylobacter spp."
+        ],
+        "parasitic": [
+          "Cryptosporidium",
+          "Giardia",
+          "Entamoeba spp."
+        ]
+      },
+      "risk_factors": [
+        "Poor sanitation",
+        "Unsafe drinking water",
+        "Poor personal hygiene",
+        "Improper food preparation",
+        "Unsafe water storage",
+        "Consumption of seafood from polluted water"
+      ],
+      "malnutrition_link": {
+        "description": "Malnutrition increases vulnerability to diarrhoea, and diarrhoea worsens malnutrition, creating a vicious cycle.",
+        "impact": "Major cause of malnutrition in children under 5"
+      },
+      "infectious": {
+        "viral": [
+          {
+            "common_under_5": [
+              "Rotavirus",
+              "Norovirus",
+              "Adenovirus",
+              "Astrovirus"
+            ],
+            "additional": [
+              "Sapovirus"
+            ]
+          },
+          "Rotavirus",
+          "Norovirus"
+        ],
+        "bacterial": [
+          "Escherichia coli",
+          "Salmonella spp.",
+          "Shigella spp.",
+          "Campylobacter spp.",
+          "E. coli",
+          "Salmonella",
+          "Shigella",
+          "Campylobacter"
+        ],
+        "parasitic": [
+          {
+            "common": [
+              "Cryptosporidium",
+              "Giardia",
+              "Entamoeba spp."
+            ],
+            "age_group_prevalence": "Common in children aged 3–5 years"
+          },
+          "Giardia"
+        ]
+      },
+      "non_infectious_contributors": [
+        "Malnutrition",
+        "Poor immunity"
+      ],
+      "non_infectious": [
+        "Food poisoning",
+        "Food intolerances",
+        "Medications",
+        "Digestive disorders",
+        "Post-surgical changes",
+        "Stress and emotional factors"
+      ]
+    },
+    "transmission": [
+      "Faeces-contaminated water",
+      "Contaminated food",
+      "Person-to-person contact",
+      "Poor hygiene practices",
+      "Animal faeces",
+      {
+        "routes": [
+          "Fecal–oral",
+          "Contaminated water",
+          "Contaminated food",
+          "Person-to-person contact",
+          "Animal reservoirs (context dependent)"
+        ],
+        "pathogen_specific_patterns": {
+          "low_infectious_dose": [
+            "Shigella",
+            "Norovirus",
+            "Cryptosporidium"
+          ],
+          "high_infectious_dose": [
+            "ETEC",
+            "Vibrio cholerae"
+          ]
+        }
+      },
+      {
+        "mode": "Fecal-oral transmission",
+        "pathogens": {
+          "viruses": [
+            "Rotavirus"
+          ],
+          "bacteria": [
+            "Shigella",
+            "Vibrio cholerae",
+            "Salmonella",
+            "Pathogenic E. coli"
+          ],
+          "protozoa": [
+            "Giardia",
+            "Entamoeba"
+          ],
+          "helminths": [
+            "Various intestinal worms"
+          ]
+        },
+        "risk_factors": [
+          "Poor sanitation",
+          "Unsafe drinking water",
+          "Contaminated food",
+          "Crowded living conditions",
+          "Poor hand hygiene"
+        ]
+      },
+      {
+        "primary_route": "Fecal–oral",
+        "direct_routes": [
+          "Person-to-person via contaminated hands",
+          "Fomites (utensils, toys)"
+        ],
+        "indirect_routes": [
+          "Contaminated water",
+          "Contaminated food",
+          "Agricultural and seafood contamination"
+        ],
+        "host_susceptibility_factors": [
+          "Malnutrition",
+          "Reduced gastric acidity",
+          "Young age",
+          "H. pylori infection"
+        ]
+      },
+      {
+        "primary_route": "Fecal–oral",
+        "modes": [
+          "Direct person-to-person",
+          "Contaminated food",
+          "Contaminated water",
+          "Flies as mechanical vectors"
+        ]
+      }
+    ],
+    "dehydration": {
+      "description": "Loss of water and electrolytes such as sodium, chloride, potassium, and bicarbonate during diarrhoeal episodes.",
+      "severity_levels": {
+        "severe_dehydration": {
+          "criteria": [
+            "Lethargy or unconsciousness",
+            "Sunken eyes",
+            "Unable to drink or drinks poorly",
+            "Skin pinch returns very slowly (≥2 seconds)"
+          ]
+        },
+        "some_dehydration": {
+          "criteria": [
+            "Restlessness or irritability",
+            "Sunken eyes",
+            "Drinks eagerly, thirsty"
+          ]
+        },
+        "no_dehydration": {
+          "criteria": [
+            "Insufficient signs to classify as some or severe dehydration"
+          ]
+        }
+      },
+      "core_threat": "Loss of water and electrolytes",
+      "electrolytes_lost": [
+        "Sodium",
+        "Chloride",
+        "Potassium",
+        "Bicarbonate"
+      ],
+      "severity_classification": {
+        "severe_dehydration": {
+          "criteria": [
+            "Lethargic or unconscious",
+            "Sunken eyes",
+            "Unable to drink or drinks poorly",
+            "Skin pinch returns very slowly (≥2 seconds)"
+          ],
+          "action": "Immediate medical emergency"
+        },
+        "some_dehydration": {
+          "criteria": [
+            "Restless or irritable",
+            "Sunken eyes",
+            "Drinks eagerly, thirsty"
+          ],
+          "action": "Start ORS immediately"
+        },
+        "no_dehydration": {
+          "criteria": [
+            "No sufficient signs of dehydration"
+          ],
+          "action": "Continue fluids and feeding"
+        }
+      },
+      "electrolyte_losses": [
+        "Sodium",
+        "Potassium",
+        "Chloride",
+        "Bicarbonate"
+      ],
+      "severity": {
+        "none": {
+          "signs": [],
+          "management": "Extra fluids, normal feeding"
+        },
+        "some": {
+          "signs": [
+            "Restless or irritable",
+            "Sunken eyes",
+            "Drinks eagerly",
+            "Skin pinch returns slowly"
+          ],
+          "management": "ORS for 4 hours"
+        },
+        "severe": {
+          "signs": [
+            "Lethargic or unconscious",
+            "Unable to drink",
+            "Skin pinch ≥2 seconds"
+          ],
+          "management": "Immediate IV fluids"
+        }
+      },
+      "early_signs": [
+        "Thirst",
+        "Restlessness",
+        "Irritability"
+      ],
+      "moderate_signs": [
+        "Loss of skin turgor",
+        "Sunken eyes",
+        "Sunken fontanelle in infants"
+      ],
+      "severe_signs": [
+        "Lethargy",
+        "Diminished consciousness",
+        "Little or no urine output",
+        "Low blood pressure",
+        "Rapid weak pulse",
+        "Cold or cyanotic extremities"
+      ],
+      "outcomes_if_untreated": [
+        "Seizures",
+        "Brain damage",
+        "Death"
+      ]
+    },
+    "prevention": {
+      "key_measures": [
+        "Access to safe drinking water",
+        "Improved sanitation facilities",
+        "Hand washing with soap",
+        "Exclusive breastfeeding for first 6 months",
+        "Good food hygiene",
+        "Health education",
+        "Rotavirus vaccination"
+      ],
+      "core_measures": [
+        "Safe drinking water access",
+        "Improved sanitation",
+        "Hand washing with soap",
+        "Safe food preparation",
+        "Health education"
+      ],
+      "child_specific": [
+        "Exclusive breastfeeding for first 6 months",
+        "Rotavirus vaccination"
+      ],
+      "vaccination": [
+        {
+          "rotavirus": {
+            "impact": "Major reduction in severe diarrhoea and mortality",
+            "coverage_priority": "Low-income countries"
+          }
+        },
+        "Rotavirus",
+        "Cholera (selective use)",
+        "Typhoid",
+        {
+          "rotavirus": {
+            "importance": "Leading cause of severe diarrhea",
+            "annual_deaths": 500000,
+            "vaccine_efficacy_against_severe_percent": "90–100",
+            "potential_lives_saved": {
+              "annual": 225000,
+              "20_years": 2500000
+            }
+          }
+        },
+        {
+          "rotavirus": {
+            "effect": "Major reduction in severe diarrhea and deaths"
+          }
+        }
+      ],
+      "behavioral": [
+        "Handwashing with soap",
+        "Safe food handling",
+        "Exclusive breastfeeding for 6 months"
+      ],
+      "environmental": [
+        "Safe drinking water",
+        "Improved sanitation",
+        "Proper waste disposal"
+      ],
+      "water": [
+        "Source protection",
+        "Household water treatment",
+        "Safe storage"
+      ],
+      "hygiene": [
+        {
+          "handwashing_effectiveness_percent": "42–47",
+          "acceptable_alternatives": [
+            "Soap",
+            "Ashes"
+          ],
+          "key_action": "Hand-washing with soap",
+          "alternatives": [
+            "Ash when soap unavailable"
+          ],
+          "impact": {
+            "diarrhea_reduction_percent": 45,
+            "combined_with_sanitation_reduction_percent": 65
+          }
+        },
+        "Handwashing with soap",
+        "Safe sanitation"
+      ],
+      "sanitation": [
+        "Eliminate open defecation",
+        "Safe feces disposal",
+        "Fly control",
+        {
+          "methods": [
+            "Covered pit latrines",
+            "Ventilated pit latrines",
+            "Flush/pour toilets",
+            "Community sewer systems"
+          ],
+          "impact": {
+            "diarrhea_reduction_percent": 36
+          }
+        }
+      ],
+      "nutrition": {
+        "exclusive_breastfeeding": {
+          "duration_months": 6,
+          "mortality_reduction_factor": 6.1
+        },
+        "exclusive_breastfeeding_months": 6,
+        "continued_breastfeeding_months": 24
+      },
+      "water_safety": [
+        {
+          "problem": "Contamination at source, transport, and point-of-use",
+          "solutions": [
+            "Boiling",
+            "Chlorination",
+            "Filtration",
+            "Solar disinfection",
+            "Household water treatment and safe storage"
+          ],
+          "impact": {
+            "diarrhea_reduction_percent": "30–50"
+          }
+        },
+        "Boiled water",
+        "Filtered water",
+        "Bottled water"
+      ],
+      "infant_and_young_child_feeding": {
+        "exclusive_breastfeeding": {
+          "duration_months": 6,
+          "mortality_protection": {
+            "non_breastfed_under_2_months_risk_multiplier": 25,
+            "cow_milk_risk_multiplier": 18
+          }
+        },
+        "continued_breastfeeding": {
+          "recommended_until_months": 24,
+          "benefits": [
+            "Faster recovery",
+            "Reduced dehydration",
+            "Prevention of weight loss"
+          ]
+        }
+      },
+      "water_sanitation_hygiene": {
+        "handwashing_effectiveness_percent": "30–48",
+        "safe_water_impact": {
+          "mortality_reduction_percent": "21–30"
+        }
+      },
+      "supplementation": [
+        "Zinc",
+        "Vitamin A"
+      ],
+      "food_safety": [
+        "Proper cooking",
+        "Avoid raw foods",
+        "Safe storage",
+        "Reheating cooked food"
+      ],
+      "public_health": [
+        "Vaccination (rotavirus)",
+        "Exclusive breastfeeding for 6 months",
+        "Avoid unnecessary antibiotics",
+        "Good nutrition"
+      ],
+      "water_and_sanitation": {
+        "sanitation_improvement_reduction_percent": "22–36",
+        "population_without_improved_sanitation_2008_percent": 48,
+        "open_defecation_percent_developing_countries": 21
+      },
+      "handwashing": {
+        "diarrhea_risk_reduction_percent": 47,
+        "critical_times": [
+          "After defecation",
+          "After cleaning child",
+          "Before food preparation",
+          "Before feeding children"
+        ]
+      }
+    },
+    "treatment": {
+      "standard_care": [
+        {
+          "method": "Oral Rehydration Solution (ORS)",
+          "description": "Mixture of clean water, sugar, and salt to replace lost fluids and electrolytes"
+        },
+        {
+          "method": "Zinc supplementation",
+          "duration": "10–14 days",
+          "benefits": {
+            "diarrhoea_duration_reduction": "25%",
+            "stool_volume_reduction": "30%"
+          }
+        }
+      ],
+      "advanced_care": [
+        "Intravenous fluids for severe dehydration or shock",
+        "Medical consultation for persistent diarrhoea",
+        "Immediate care if blood is present in stool",
+        "Antibiotics only for bloody diarrhoea",
+        "Hospital referral if symptoms worsen"
+      ],
+      "nutrition": [
+        {
+          "recommendation": "Continue nutrient-rich foods including breast milk during diarrhoeal episodes",
+          "during_episode": [
+            "Continue breastfeeding",
+            "Age-appropriate diet"
+          ],
+          "after_recovery": [
+            "Nutrient-dense foods",
+            "Micronutrient replenishment"
+          ]
+        },
+        "Continue breastfeeding",
+        "Provide nutrient-rich foods"
+      ],
+      "first_line": {
+        "oral_rehydration_solution": {
+          "components": [
+            "Clean water",
+            "Salt",
+            "Sugar"
+          ],
+          "function": "Replaces lost fluids and electrolytes",
+          "cost": "Low-cost, few cents per treatment"
+        }
+      },
+      "adjunct_therapy": [
+        {
+          "zinc_supplementation": {
+            "duration_days": "10–14",
+            "benefits": {
+              "duration_reduction_percent": 25,
+              "stool_volume_reduction_percent": 30
+            }
+          }
+        },
+        "Zinc supplementation for children"
+      ],
+      "nutrition_support": {
+        "during_diarrhoea": [
+          "Continue breastfeeding",
+          "Provide nutrient-rich foods"
+        ],
+        "post_recovery": [
+          "Nutritious diet to prevent malnutrition"
+        ]
+      },
+      "core": {
+        "oral_rehydration_solution": {
+          "components": [
+            "Water",
+            "Glucose",
+            "Salt"
+          ],
+          "role": "Replaces fluids and electrolytes"
+        },
+        "zinc": {
+          "dose": {
+            "≤6_months": "10 mg/day",
+            ">6_months": "20 mg/day"
+          },
+          "duration_days": "10–14",
+          "benefits": [
+            "Reduced duration",
+            "Reduced severity",
+            "Lower recurrence risk"
+          ]
+        }
+      },
+      "antibiotics": {
+        "indications": [
+          "Dysentery",
+          "Suspected cholera"
+        ],
+        "first_line": "Ciprofloxacin",
+        "contraindications": [
+          "Uncomplicated viral diarrhoea",
+          "Suspected STEC"
+        ]
+      },
+      "rehydration": {
+        "ors": {
+          "components": [
+            "Clean water",
+            "Salt",
+            "Sugar"
+          ],
+          "role": "Replaces fluids and electrolytes",
+          "purpose": "Prevent and treat dehydration",
+          "note": "Does not stop diarrhea directly"
+        },
+        "intravenous": "Required for severe dehydration",
+        "home_fluids": [
+          "Coconut water",
+          "Clear soups"
+        ]
+      },
+      "pharmacological": {
+        "antibiotics": "Only for bacterial causes under medical supervision"
+      },
+      "hospitalization": "Required in severe dehydration",
+      "oral_rehydration_therapy": {
+        "components": [
+          "Clean water",
+          "Sugar",
+          "Salt"
+        ],
+        "effectiveness": {
+          "dehydration_reversal_percent": 90,
+          "lives_saved_since_1970s": 50000000
+        },
+        "cost_usd": "<0.30",
+        "low_osmolarity_ors": {
+          "benefits": [
+            "33% less IV fluid need",
+            "25% less stool volume",
+            "30% less vomiting"
+          ],
+          "recommended_by": [
+            "WHO",
+            "UNICEF"
+          ]
+        }
+      },
+      "zinc_supplementation": {
+        "recommended_duration_days": "10–14",
+        "benefits": {
+          "acute_duration_reduction_percent": 25,
+          "persistent_duration_reduction_percent": 29,
+          "treatment_failure_or_death_reduction_percent": 40
+        },
+        "additional_effects": [
+          "Reduced antibiotic misuse",
+          "Protection against future episodes up to 3 months"
+        ]
+      },
+      "micronutrients": {
+        "vitamin_a": {
+          "mortality_reduction_diarrhea_percent": 32,
+          "overall_child_mortality_reduction_percent": 23
+        }
+      },
+      "core_principle": "Correction of fluid and electrolyte loss",
+      "diet": {
+        "recommendations": [
+          "Light, bland foods",
+          "Avoid dairy during acute episodes"
+        ]
+      },
+      "medications": {
+        "antidiarrheals": {
+          "use": "Adults only, non-infectious cases"
+        },
+        "antibiotics": {
+          "use": "Confirmed bacterial infections only"
+        },
+        "probiotics": {
+          "role": "Restore gut flora"
+        }
+      },
+      "cornerstone": "Oral rehydration therapy (ORT)",
+      "ors": {
+        "mechanism": "Sodium–glucose co-transport restores water absorption",
+        "low_osmolarity_benefits": {
+          "stool_reduction_percent": 20,
+          "vomiting_reduction_percent": 30,
+          "iv_fluids_reduction_percent": 33
+        }
+      },
+      "zinc": {
+        "course_days": "10–14",
+        "benefits": {
+          "acute_duration_reduction_percent": 25,
+          "persistent_failure_or_death_reduction_percent": 40
+        }
+      },
+      "feeding": {
+        "recommendation": "Continue feeding and breastfeeding during diarrhoea"
+      }
+    },
+    "epidemiology": {
+      "developing_countries": {
+        "water_access_lack": 780000000,
+        "sanitation_lack": 2500000000,
+        "average_episodes_under_3": 3
+      },
+      "annual_global_cases": "1.7–5 billion",
+      "global_deaths_2019": 1530000,
+      "trend": {
+        "1990_deaths": 2900000,
+        "2021_rank": "13th leading cause of death globally",
+        "overall": "Mortality declining, morbidity remains high"
+      },
+      "children_under_5": {
+        "burden": "Second leading cause of death",
+        "average_episodes_per_year_developing_countries": 3
+      },
+      "global": {
+        "annual_cases": "2–5 billion",
+        "children_under_5_cases": "≈1.7 billion annually",
+        "older_adults_cases_2021": ">380 million",
+        "point_prevalence_global_percent": "7–10"
+      },
+      "india": {
+        "annual_cases": ">100 crore",
+        "children_under_5_two_week_prevalence_percent": 9,
+        "children_under_5_point_prevalence_percent": 7.3,
+        "rural_prevalence_percent": 7.7,
+        "urban_prevalence_percent": 6.2,
+        "surveillance_source": "Integrated Disease Surveillance Programme (IDSP)"
+      },
+      "age_pattern": {
+        "children": "Highest burden",
+        "older_adults": "≈15% prevalence in last two years"
+      }
+    },
+    "who_response": {
+      "strategies": [
+        "Support national diarrhoea management policies",
+        "Improve access to water and sanitation",
+        "Research new prevention and control strategies",
+        "Implement household water treatment solutions",
+        "Promote rotavirus immunization",
+        "Train community-level health workers"
+      ]
+    },
+    "disease": "diarrhoeal disease",
+    "definitions": {
+      "diarrhoea": {
+        "medical_definition": "Passage of three or more loose or liquid stools per day, or more frequent passage than is normal for the individual.",
+        "not_diarrhoea": [
+          "Frequent passage of formed stools",
+          "Loose or pasty stools in breastfed infants"
+        ],
+        "definition": "Passage of three or more loose or liquid stools per day, or more frequent passage than normal for the individual.",
+        "exclusions": [
+          "Frequent formed stools",
+          "Loose or pasty stools in exclusively breastfed infants"
+        ]
+      },
+      "acute_gastroenteritis": {
+        "definition": "Acute onset of diarrhoea often accompanied by vomiting, commonly viral in origin"
+      }
+    },
+    "global_burden": {
+      "child_mortality": {
+        "rank": 3,
+        "age_group": "Under 5 years",
+        "annual_deaths": 443832
+      },
+      "high_risk_populations": [
+        "Children under 5 years",
+        "Malnourished children",
+        "Children with impaired immunity",
+        "People living with HIV"
+      ],
+      "low_income_countries": {
+        "avg_episodes_per_child_under_3": 3,
+        "unsafe_water_population": 780000000,
+        "lack_of_sanitation_population": 2500000000
+      },
+      "annual_cases_worldwide": 2300000000,
+      "annual_deaths_worldwide": 1300000,
+      "under_5_deaths": {
+        "annual": 499000,
+        "proportion": "1 in 8 child deaths",
+        "regions_most_affected": [
+          "Sub-Saharan Africa",
+          "South Asia"
+        ]
+      },
+      "long_term_impact": [
+        "Growth faltering",
+        "Cognitive impairment",
+        "Increased post-episode mortality (2–3 months)"
+      ],
+      "annual_deaths": 1800000,
+      "percentage_under_five": 90,
+      "global_episodes_per_year": "2–4 billion",
+      "dalys_lost_million": 72.8,
+      "treatment_gap": {
+        "children_receiving_appropriate_treatment_percent": "<50",
+        "trend": "Declining in some LMICs"
+      },
+      "annual_child_deaths": 1600000,
+      "daily_child_deaths": 4000,
+      "rank_under_five": "Second leading cause of death",
+      "share_of_deaths_in_developing_countries_percent": 90,
+      "hospitalizations": "Millions annually",
+      "most_affected_regions": [
+        "Sub-Saharan Africa",
+        "South Asia",
+        "Low-income and fragile settings"
+      ],
+      "annual_episodes_global": 3000000000,
+      "annual_child_deaths_under_5": 2000000,
+      "episodes_per_child_per_year": {
+        "developing_countries": "3–10",
+        "developed_countries": "1–2"
+      },
+      "highest_mortality_age_group": "6–12 months",
+      "primary_reason_high_risk": [
+        "Immature immune system",
+        "Decline of maternal antibodies",
+        "Introduction of contaminated complementary foods",
+        "Increased contact with fecal matter due to crawling"
+      ],
+      "mortality_trends": {
+        "deaths_1980": 4600000,
+        "deaths_2015": 526000,
+        "mortality_reduction_percent": 89
+      },
+      "daily_global_impact": {
+        "episodes_per_day": 4700000,
+        "severe_cases_per_day": 100000,
+        "daily_deaths": 1600,
+        "share_of_under5_mortality_percent": 9
+      },
+      "regional_concentration": {
+        "sub_saharan_africa_and_south_asia_percent": 90
+      },
+      "share_of_under5_mortality_percent": 16,
+      "ranking": "Second leading cause of death after pneumonia",
+      "comparison": "Kills more children than AIDS, malaria, and measles combined",
+      "annual_cases_under_5": 2500000000,
+      "incidence_trend": "Relatively stable over past two decades"
+    },
+    "transmission_routes": [
+      "Faeces-contaminated drinking water",
+      "Contaminated food",
+      "Person-to-person contact",
+      "Poor hand hygiene",
+      "Unsafe domestic water storage",
+      "Animal faeces exposure",
+      "Seafood from polluted water"
+    ],
+    "danger_signs": {
+      "immediate_medical_attention": [
+        "Blood in stool",
+        "Signs of severe dehydration",
+        "Persistent diarrhoea >14 days",
+        "High fever",
+        "Repeated vomiting",
+        "Persistent vomiting",
+        "Lethargy or unconsciousness"
+      ]
+    },
+    "who_guidelines": {
+      "priority_actions": [
+        "Strengthen diarrhoea case management",
+        "Expand ORS and zinc coverage",
+        "Improve water and sanitation infrastructure",
+        "Promote rotavirus immunization",
+        "Train community health workers"
+      ]
+    },
+    "high_risk_groups": [
+      "Children under 5 years",
+      "Infants under 24 months",
+      "Malnourished children",
+      "Immunocompromised individuals",
+      "Children with HIV",
+      "Populations lacking safe water and sanitation"
+    ],
+    "clinical_syndromes": {
+      "acute_watery_diarrhoea": {
+        "features": [
+          "Watery stools",
+          "Vomiting may precede diarrhoea",
+          "High dehydration risk"
+        ],
+        "common_causes": [
+          "Rotavirus",
+          "Norovirus",
+          "ETEC",
+          "Vibrio cholerae"
+        ]
+      },
+      "bloody_diarrhoea": {
+        "alias": "dysentery",
+        "features": [
+          "Visible blood or mucus in stool",
+          "Fever",
+          "Abdominal cramps",
+          "Tenesmus"
+        ],
+        "common_causes": [
+          "Shigella",
+          "Campylobacter",
+          "Salmonella",
+          "Entamoeba histolytica"
+        ]
+      },
+      "persistent_diarrhoea": {
+        "duration": ">14 days",
+        "features": [
+          "Malabsorption",
+          "Weight loss",
+          "Micronutrient deficiency",
+          "High mortality risk"
+        ]
+      },
+      "acute_watery_diarrhea": {
+        "risk": "High dehydration risk",
+        "common_pathogens": [
+          "Rotavirus",
+          "Enterotoxigenic E. coli (ETEC)",
+          "Vibrio cholerae"
+        ],
+        "definition": "Non-bloody diarrhea lasting <14 days",
+        "proportion": 84.6
+      },
+      "persistent_diarrhea": {
+        "duration": ">14 days",
+        "association": [
+          "Malnutrition",
+          "High mortality risk"
+        ],
+        "definition": "Diarrhea lasting ≥14 days",
+        "overall_frequency": 9.6,
+        "clinical_significance": [
+          "Growth faltering",
+          "Higher mortality risk"
+        ]
+      },
+      "bloody_diarrhea": {
+        "alias": "Dysentery",
+        "association": [
+          "Intestinal damage",
+          "Secondary sepsis"
+        ]
+      },
+      "bloody_diarrhea_dysentery": {
+        "definition": "Diarrhea with visible blood in stool",
+        "proportion": 15.4,
+        "associated_features": [
+          "Abdominal pain",
+          "Tenesmus",
+          "High stool frequency"
+        ]
+      }
+    },
+    "etiology": {
+      "priority_pathogens": [
+        "Rotavirus",
+        "Shigella",
+        "Cryptosporidium",
+        "ST-ETEC"
+      ],
+      "viral": [
+        {
+          "rotavirus": {
+            "importance": "Most common cause of severe diarrhea in young children",
+            "genotypes_common": [
+              "G1P[8]",
+              "G2P[4]",
+              "G3P[8]",
+              "G4P[8]",
+              "G9P[8]"
+            ],
+            "lifetime_risk": "≈95% infected by age five",
+            "hospitalization_share_percent": 40,
+            "annual_deaths": ">500000",
+            "mechanism": [
+              "Destruction of intestinal villi",
+              "Inhibition of glucose-stimulated sodium absorption"
+            ]
+          },
+          "norovirus": {
+            "genogroup": "GII (most common globally)",
+            "feature": "High asymptomatic carriage"
+          },
+          "adenovirus": [
+            "40",
+            "41"
+          ],
+          "astrovirus": [
+            "1–8"
+          ]
+        },
+        "Rotavirus",
+        "Norovirus",
+        "Adenovirus",
+        "Astrovirus",
+        "Coronavirus",
+        "Cytomegalovirus"
+      ],
+      "bacterial": [
+        {
+          "shigella": {
+            "major_species": "S flexneri",
+            "high_mortality_risk": true,
+            "global_distribution": "99% of cases in LMIC",
+            "infectious_dose": "Very low",
+            "clinical_features": [
+              "Fever",
+              "Bloody diarrhea",
+              "Dysentery"
+            ],
+            "toxin": "Shiga toxin"
+          },
+          "salmonella": [
+            "S typhimurium",
+            "S enteritidis",
+            {
+              "non_typhoidal": {
+                "cases_per_year": "~1 billion",
+                "presentation": [
+                  "Diarrhea",
+                  "Fever"
+                ]
+              },
+              "typhoidal": {
+                "systemic_spread": true,
+                "annual_cases": "~20 million"
+              }
+            }
+          ],
+          "campylobacter": [
+            "C jejuni",
+            "C coli"
+          ],
+          "vibrio_cholerae": {
+            "epidemic_serogroups": [
+              "O1",
+              "O139"
+            ],
+            "pattern": "Large-scale outbreaks",
+            "infectious_dose": "Very high",
+            "mechanism": "Massive chloride secretion causing extreme fluid loss"
+          },
+          "escherichia_coli_pathotypes": [
+            "ETEC",
+            "EPEC",
+            "EAEC",
+            "EIEC",
+            "STEC"
+          ],
+          "escherichia_coli": {
+            "pathotypes": {
+              "ETEC": {
+                "common_in": [
+                  "Children in LMIC",
+                  "Travelers"
+                ],
+                "toxins": [
+                  "Heat-stable toxin (ST)",
+                  "Heat-labile toxin (LT)"
+                ]
+              },
+              "EPEC": {
+                "association": [
+                  "Persistent diarrhea",
+                  "Hospitalization"
+                ]
+              },
+              "EAEC": {
+                "features": [
+                  "Biofilm formation",
+                  "Persistent watery diarrhea",
+                  "Growth impairment"
+                ]
+              }
+            }
+          }
+        },
+        "Shigella spp.",
+        "Salmonella",
+        "Campylobacter jejuni",
+        "Enteroadherent E. coli",
+        "Enteroinvasive E. coli",
+        "Enterohemorrhagic E. coli",
+        "Vibrio cholerae",
+        "Yersinia enterocolitica",
+        "Staphylococcus aureus",
+        "Clostridium perfringens"
+      ],
+      "protozoal": {
+        "cryptosporidium": {
+          "species": [
+            "C hominis",
+            "C parvum"
+          ],
+          "mortality_risk": "High in infants"
+        },
+        "giardia": {
+          "association": "Often asymptomatic in endemic areas"
+        },
+        "entamoeba_histolytica": {
+          "causes": [
+            "Amebic dysentery",
+            "Liver abscess"
+          ]
+        }
+      },
+      "infectious": {
+        "viral": {
+          "children_under_5": [
+            "Rotavirus (≈40% of cases)",
+            "Adenovirus 40/41",
+            "Astrovirus"
+          ],
+          "adults": [
+            "Norovirus"
+          ]
+        },
+        "bacterial": [
+          "Shigella",
+          "Salmonella",
+          "Campylobacter",
+          "Escherichia coli (ETEC, EPEC, EAEC, STEC)",
+          "Vibrio cholerae",
+          "Clostridioides difficile"
+        ],
+        "parasitic": [
+          "Giardia",
+          "Cryptosporidium",
+          "Entamoeba histolytica",
+          "Cyclospora"
+        ]
+      },
+      "non_infectious": [
+        "Lactose intolerance",
+        "Celiac disease",
+        "Irritable bowel syndrome",
+        "Inflammatory bowel disease",
+        "Hyperthyroidism",
+        "Bile acid malabsorption",
+        "Medication-induced diarrhea"
+      ],
+      "parasitic": [
+        "Giardia lamblia",
+        "Entamoeba histolytica",
+        "Cryptosporidium",
+        "Cyclospora",
+        "Isospora",
+        "Microsporidia"
+      ],
+      "drug_induced": [
+        "Antibiotic-associated diarrhea",
+        "Clostridium difficile"
+      ]
+    },
+    "complications": {
+      "intestinal": [
+        "Toxic megacolon",
+        "Intestinal perforation",
+        "Rectal prolapse",
+        "Persistent diarrhoea"
+      ],
+      "systemic": [
+        "Sepsis",
+        "Bacteremia",
+        "Hemolytic uremic syndrome",
+        "Electrolyte imbalance",
+        "Shock"
+      ],
+      "postinfectious": [
+        "Reactive arthritis",
+        "Guillain–Barré syndrome",
+        "Growth and cognitive impairment"
+      ],
+      "acute": [
+        "Severe dehydration",
+        "Electrolyte imbalance",
+        "Kidney impairment",
+        "Shock"
+      ],
+      "long_term": [
+        "Malnutrition",
+        "Stunted growth",
+        "Cognitive impairment",
+        "Reduced quality of life"
+      ],
+      "common": [
+        "Dehydration",
+        "Electrolyte imbalance",
+        "Malnutrition"
+      ],
+      "severe": [
+        "Kidney damage",
+        "Shock",
+        "Secondary infections",
+        "Hospitalization",
+        "Death (in untreated severe cases)"
+      ]
+    },
+    "case_definition": {
+      "standard_definition": "Three or more loose or liquid stools per day, or more frequent passage than normal for the individual.",
+      "exclusions": [
+        "Frequent formed stools",
+        "Loose or pasty stools in breastfed infants"
+      ],
+      "community_case_definition": {
+        "purpose": "Early detection and referral",
+        "characteristic": "Broad and simplified"
+      },
+      "who_definition": "Three or more loose or liquid stools per day, or more frequent passage than normal for the individual",
+      "classification": [
+        "Acute watery diarrhea",
+        "Bloody diarrhea (dysentery)"
+      ],
+      "standard": "Three or more loose stools in a 24-hour period",
+      "study_variations": [
+        "≥2 loose stools/day",
+        "≥3 loose stools/day",
+        "≥4 loose stools/day",
+        "Caretaker-defined diarrhoea"
+      ],
+      "notes": "Variation in definitions affects incidence estimates",
+      "operational_definition": "Three or more loose or watery stools in 24 hours within the two weeks preceding the survey",
+      "coding": {
+        "no_diarrhea": 0,
+        "yes_diarrhea": 1
+      },
+      "recall_period": "Two weeks prior to survey",
+      "case": "Child meeting WHO definition",
+      "control": "Child not meeting WHO definition",
+      "population": "Children under 5 years of age",
+      "diarrhoea_definition_variants": [
+        "≥2 loose stools per day",
+        "≥3 loose stools per day (most common)",
+        "≥4 loose stools per day",
+        "Local caregiver-based definitions"
+      ],
+      "bloody_stool_included_in_some_studies": true,
+      "disease_scope": "Morbidity and mortality attributable to diarrhoeal illness",
+      "who_standard": "Passing three or more loose or watery stools in 24 hours",
+      "icd10_categories": [
+        "Infective neonatal diarrhea",
+        "Non-infective neonatal diarrhea",
+        "Functional diarrhea",
+        "Unspecified diarrhea",
+        "IBS with diarrhea"
+      ]
+    },
+    "alert_and_epidemic_thresholds": {
+      "alert_threshold": "Predefined number of alerts suggesting a possible outbreak",
+      "epidemic_threshold": "Minimum number of cases indicating outbreak onset",
+      "reference": "Based on historical baseline data",
+      "action_required": "Immediate notification to health authorities"
+    },
+    "risk_factors": {
+      "environmental": [
+        "Water contaminated with human faeces",
+        "Sewage leakage",
+        "Inadequate sanitation facilities",
+        "Unsafe drinking water",
+        "Poor sanitation",
+        "Open defecation",
+        "Contaminated food",
+        "Flooding and climate change",
+        "Contaminated food or water"
+      ],
+      "behavioral": [
+        "Poor personal hygiene",
+        "Unsafe food preparation",
+        "Improper domestic water storage",
+        "Poor hand hygiene",
+        "Unsafe infant feeding practices",
+        "Improper water storage",
+        "Unsafe food handling",
+        "Lack of exclusive breastfeeding",
+        "Travel to high-risk areas",
+        "Poor nutrition"
+      ],
+      "food_related": [
+        "Unwashed fruits and vegetables",
+        "Raw or undercooked seafood",
+        "Food exposed to flies"
+      ],
+      "contextual": [
+        "Overcrowded living conditions",
+        "Humanitarian crises",
+        "Limited access to healthcare"
+      ],
+      "socioeconomic": [
+        "Lack of access to safe drinking water",
+        "Poor sanitation",
+        "Unsafe waste disposal",
+        "Limited access to healthcare",
+        "Low education levels",
+        "Poverty",
+        "Limited education"
+      ],
+      "household": [
+        "Poor hygiene practices",
+        "Unsafe food preparation",
+        "Inadequate water storage"
+      ],
+      "biological": [
+        "Young age",
+        "Malnutrition",
+        "HIV infection",
+        "Weakened immune system",
+        "Lack of exclusive breastfeeding",
+        "Zinc deficiency",
+        "Vitamin A deficiency",
+        "Immunodeficiency"
+      ],
+      "medications": {
+        "note": "Over 700 drugs can cause diarrhea",
+        "common_classes": [
+          "Antibiotics",
+          "Laxatives",
+          "Antacids",
+          "Chemotherapy drugs"
+        ]
+      },
+      "demographic": [
+        "Children under 5",
+        "Adults over 65"
+      ],
+      "medical": [
+        "Weakened immune system",
+        "Chronic diseases",
+        "Frequent antibiotic use"
+      ]
+    },
+    "attack_rate": {
+      "definition": "Risk of acquiring disease during a specific period",
+      "variability_factors": [
+        "Infectious agent",
+        "Population density",
+        "Socioeconomic conditions"
+      ],
+      "example": {
+        "pathogen": "Shigella",
+        "median_attack_rate_percent": "1–33"
+      }
+    },
+    "vulnerable_groups": [
+      "Children under five years",
+      "Malnourished individuals",
+      "Immunosuppressed persons",
+      "People with chronic diseases",
+      "Individuals without access to rehydration therapy"
+    ],
+    "infectious_agents": {
+      "viral": [
+        "Rotavirus",
+        "Norovirus",
+        "Adenovirus"
+      ],
+      "bacterial": [
+        "Shigella",
+        "Vibrio cholerae",
+        "Campylobacter",
+        "Escherichia coli",
+        "Salmonella",
+        "Clostridium difficile"
+      ],
+      "protozoal": [
+        "Cryptosporidium",
+        "Entamoeba histolytica"
+      ],
+      "most_common_low_income": [
+        "Rotavirus",
+        "Escherichia coli"
+      ]
+    },
+    "reservoirs_and_hosts": {
+      "human_only": [
+        "Rotavirus",
+        "Shigella"
+      ],
+      "human_and_animal": [
+        "E. coli",
+        "Cryptosporidium"
+      ],
+      "host_susceptibility_factors": [
+        "Age",
+        "Immunity",
+        "Genetic factors",
+        "Nutritional status"
+      ]
+    },
+    "modes_of_transmission": {
+      "primary": "Faecal–oral",
+      "mechanisms": [
+        "Contaminated hands",
+        "Contaminated surfaces",
+        "Unsafe water",
+        "Unsafe food"
+      ],
+      "vector_assisted": [
+        "Flies mechanically transferring pathogens"
+      ]
+    },
+    "incubation_periods": {
+      "rotavirus": "<48 hours",
+      "e_coli": "3–8 days",
+      "cryptosporidium": "2–10 days",
+      "shigella": "1–3 weeks"
+    },
+    "period_of_infectiousness": {
+      "e_coli": {
+        "adults": "≈1 week",
+        "children": "Longer duration"
+      },
+      "rotavirus": {
+        "shedding_start": "2 days before symptoms",
+        "shedding_duration": "Up to 10 days",
+        "immunodeficient": ">30 days possible"
+      }
+    },
+    "clinical_presentation": {
+      "core_symptoms": [
+        "Three or more loose stools in 24 hours",
+        "Abdominal pain",
+        "Fever",
+        "Nausea",
+        "Vomiting"
+      ],
+      "clinical_types": {
+        "watery_diarrhoea": {
+          "duration": "Hours to days",
+          "example": "Cholera"
+        },
+        "bloody_diarrhoea": {
+          "alias": "Dysentery"
+        },
+        "chronic_diarrhoea": {
+          "duration": "14 days or more"
+        }
+      },
+      "severe_outcomes": [
+        "Dehydration",
+        "Sepsis",
+        "Death"
+      ]
+    },
+    "diagnosis": {
+      "laboratory_tests": [
+        "Faecal leukocytes test",
+        "Faecal lactoferrin assay",
+        "Stool culture",
+        "Antigen detection",
+        "Toxin testing for C. difficile"
+      ],
+      "standard_methods": [
+        "Stool culture",
+        "Microscopy"
+      ],
+      "limitations": [
+        "Low sensitivity",
+        "Delayed results",
+        "Reduced accuracy after antibiotic use"
+      ],
+      "recommended_approach": "Syndromic diagnosis is preferred in low-resource settings",
+      "routine": "Usually clinical; stool cultures often not required",
+      "indications_for_testing": [
+        "Bloody diarrhea",
+        "Persistent diarrhea",
+        "Severe disease",
+        "Immunocompromised patients",
+        "Travel-related diarrhea"
+      ],
+      "tests": [
+        "Stool microscopy and culture",
+        "Ova and parasite testing (high-risk only)",
+        "C. difficile toxin",
+        "Hydrogen breath test",
+        "Fecal calprotectin",
+        "Colonoscopy (chronic cases)"
+      ],
+      "initial": [
+        "Clinical history",
+        "Physical examination"
+      ],
+      "laboratory": [
+        "Stool examination",
+        "Blood tests",
+        "Electrolyte assessment"
+      ],
+      "advanced": [
+        "Endoscopy",
+        "Imaging",
+        "Functional tests"
+      ],
+      "core_methods": [
+        "Clinical history",
+        "Microscopic stool examination"
+      ],
+      "special_tests": {
+        "widal_test": "Typhoid exclusion",
+        "stool_findings": {
+          "entamoeba": {
+            "cysts": "Formed stool",
+            "trophozoites": "Diarrhoeic stool"
+          }
+        }
+      }
+    },
+    "immunity": {
+      "types": [
+        "Active immunity",
+        "Passive immunity"
+      ],
+      "rotavirus_vaccine": {
+        "efficacy_low_mortality_settings": "80–90%",
+        "efficacy_high_mortality_settings": "40–60%",
+        "protection_duration": "At least 2 years"
+      }
+    },
+    "prevention_and_control": {
+      "vaccination": [
+        "Oral rotavirus vaccines (WHO recommended)"
+      ],
+      "water_safety": [
+        "Chlorination",
+        "Filtration",
+        "Boiling",
+        "Solar disinfection"
+      ],
+      "hygiene": [
+        "Handwashing with soap",
+        "Safe disposal of faeces"
+      ],
+      "food_safety": [
+        "Cook food thoroughly",
+        "Wash or peel fruits and vegetables",
+        "Protect food from flies"
+      ],
+      "community_actions": [
+        "Risk communication",
+        "Rumor and misinformation management",
+        "Distribution of soap and water treatment tablets"
+      ]
+    },
+    "sectoral_impact": {
+      "wash": "Primary driver of transmission",
+      "nutrition": "Malnutrition increases severity and spread",
+      "education": "School sanitation affects transmission",
+      "livelihoods": "High treatment costs can push families into poverty",
+      "gender": {
+        "note": "Higher mortality among female children aged 1–5 in some contexts"
+      }
+    },
+    "source": [
+      {
+        "domain": "Healthcare",
+        "topic": "Diarrhoeal Disease",
+        "version": "1.0",
+        "last_updated": "2026-01-30"
+      },
+      {
+        "domain": "healthcare",
+        "topic": "diarrhoeal_disease",
+        "scope": "global_with_focus_on_developing_countries",
+        "last_updated": "2026-01-30",
+        "primary_sources": [
+          "WHO guidelines",
+          "GEMS study",
+          "MAL-ED study",
+          "Kotloff et al. 2017"
+        ]
+      },
+      {
+        "domain": "public_health",
+        "topic": "diarrhoeal_diseases",
+        "document_source": "Epidemic Control Toolkit – Response Managers",
+        "last_update": "2022-06-28",
+        "primary_authority": "WHO / IFRC",
+        "intended_use": [
+          "Health education chatbot",
+          "Epidemic surveillance support",
+          "Community risk communication",
+          "Decision support for volunteers"
+        ]
+      },
+      "Disease Control Priorities in Developing Countries – Chapter 19",
+      {
+        "domain": "infectious_diseases",
+        "topic": "diarrheal_diseases",
+        "source": {
+          "journal": "The Open Infectious Diseases Journal",
+          "year": 2010,
+          "volume": 4,
+          "pages": "113–124",
+          "authors": [
+            "Jill W. Ahs",
+            "Wenjing Tao",
+            "Jenny Löfgren",
+            "Birger C. Forsberg"
+          ]
+        },
+        "target_context": [
+          "Low-income countries",
+          "Middle-income countries"
+        ]
+      },
+      {
+        "domain": "public_health",
+        "topic": "acute_diarrheal_diseases_under_five",
+        "source": {
+          "journal": "Scholars Journal of Applied Medical Sciences",
+          "year": 2017,
+          "volume_issue": "5(2B)",
+          "pages": "442–452",
+          "doi": "10.36347/sjams.2017.v05i02.029",
+          "study_type": "Community-based cross-sectional study",
+          "location": "Gaza Strip, Palestine"
+        }
+      },
+      {
+        "domain": "global_health",
+        "topic": "diarrhoeal_disease_global_burden",
+        "source": {
+          "journal": "Bulletin of the World Health Organization",
+          "year": 2003,
+          "volume": 81,
+          "issue": 3,
+          "pages": "197–204",
+          "authors": [
+            "Margaret Kosek",
+            "Caryn Bern",
+            "Richard L. Guerrant"
+          ],
+          "study_type": "Structured literature review and meta-analysis"
+        }
+      },
+      {
+        "domain": "global_public_health",
+        "topic": "diarrheal_disease",
+        "source": {
+          "title": "Diarrheal Disease: Solutions to Defeat a Global Killer",
+          "organization": "PATH",
+          "type": "Global health policy and intervention report"
+        },
+        "intended_chatbot_use": [
+          "health_education",
+          "community_awareness",
+          "policy_support",
+          "intervention_guidance",
+          "ngo_program_support"
+        ]
+      },
+      {
+        "domain": "clinical_medicine",
+        "topic": "diarrhea",
+        "source_file": "Diarrhea.pdf",
+        "language_variants": [
+          "diarrhea (American English)",
+          "diarrhoea / diarrhœa (British English)"
+        ],
+        "primary_references": [
+          "WHO",
+          "CDC",
+          "World Gastroenterology Organization"
+        ]
+      },
+      {
+        "domain": "medicine",
+        "topic": "diarrhea",
+        "source": "Diarrhea definition.pdf",
+        "language": [
+          "American English: diarrhea",
+          "British English: diarrhoea"
+        ],
+        "specialists_involved": [
+          "General practitioner",
+          "Gastroenterologist",
+          "Infectious disease specialist",
+          "Pediatrician"
+        ]
+      },
+      {
+        "domain": "child_public_health",
+        "topic": "diarrheal_disease_under_five",
+        "source": {
+          "journal": "Children (MDPI)",
+          "year": 2022,
+          "article_id": "children9050658",
+          "doi": "10.3390/children9050658",
+          "study_design": "Cross-sectional analysis",
+          "data_source": "National Family Health Survey-4 (NFHS-4), 2015–2016",
+          "geographical_focus": "Rural India"
+        }
+      },
+      {
+        "domain": "child_public_health",
+        "topic": "diarrheal_disease_under_five",
+        "source": {
+          "journal": "Scientific Reports (Nature)",
+          "year": 2025,
+          "article_id": "s41598-025-22690-z",
+          "doi": "10.1038/s41598-025-22690-z",
+          "study_design": "Community-based unmatched case–control study",
+          "study_period": "February 1–28, 2023",
+          "location": "Damboya District, Kembata Zone, Central Ethiopia"
+        }
+      },
+      {
+        "domain": "public_health",
+        "subdomain": "childhood_diarrheal_diseases",
+        "study_type": "systematic_review_and_meta_analysis",
+        "journal": "BMC Infectious Diseases",
+        "year": 2025,
+        "doi": "10.1186/s12879-025-11595-x",
+        "registration": "PROSPERO CRD42024608702",
+        "region": "East Africa",
+        "countries_covered": [
+          "Ethiopia",
+          "Uganda",
+          "Tanzania",
+          "Rwanda",
+          "Malawi",
+          "Kenya",
+          "Somalia",
+          "Zambia",
+          "South Sudan",
+          "Zimbabwe"
+        ]
+      },
+      {
+        "domain": "global_public_health",
+        "topic": "global_burden_of_diarrhoeal_disease",
+        "source": {
+          "journal": "Bulletin of the World Health Organization",
+          "year": 2003,
+          "authors": [
+            "Margaret Kosek",
+            "Caryn Bern",
+            "Richard L. Guerrant"
+          ],
+          "study_type": "Structured literature review and meta-analysis",
+          "publication_period_reviewed": "1992–2000",
+          "who_regions": [
+            "African Region (AFRO)",
+            "Region of the Americas (AMRO)",
+            "Eastern Mediterranean Region (EMRO)",
+            "South-East Asia Region (SEARO)",
+            "Western Pacific Region (WPRO)"
+          ]
+        }
+      },
+      {
+        "domain": "public_health",
+        "subdomain": "childhood_diarrheal_disease",
+        "source": {
+          "journal": "PLOS ONE",
+          "year": 2025,
+          "doi": "10.1371/journal.pone.0326501",
+          "study_type": "Systematic review and meta-analysis",
+          "registration": "PROSPERO CRD42024579271",
+          "time_window": "2013–2023",
+          "regions": [
+            "East Africa",
+            "West Africa",
+            "Central Africa",
+            "North Africa",
+            "Southern Africa"
+          ]
+        }
+      },
+      {
+        "domain": "global_child_health",
+        "topic": "diarrheal_diseases",
+        "source": {
+          "publisher": "Elsevier",
+          "year": 2005,
+          "authors": [
+            "A. Baqui",
+            "R. Heinzen",
+            "M. Santosham",
+            "R. Black"
+          ],
+          "institution": "Johns Hopkins Bloomberg School of Public Health",
+          "article_type": "Narrative review"
+        }
+      },
+      {
+        "domain": "global_child_health",
+        "topic": "diarrheal_disease_prevention_and_control",
+        "source": {
+          "organization": [
+            "PATH",
+            "UNICEF",
+            "USAID"
+          ],
+          "document_title": "Diarrheal Disease: A Global Killer",
+          "pages_used": "15–26",
+          "document_type": "Policy and intervention evidence report"
+        }
+      },
+      {
+        "domain": "global_child_health",
+        "topic": "diarrheal_diseases",
+        "source": {
+          "book": "Disease Control Priorities, Third Edition (DCP3)",
+          "chapter": "Chapter 9 – Diarrheal Diseases",
+          "year": 2016,
+          "authors": [
+            "Gerald T. Keusch",
+            "Christa Fischer Walker",
+            "Jai K. Das",
+            "Susan Horton",
+            "Demissie Habte"
+          ],
+          "publisher": "World Bank",
+          "population_focus": "Children 0–4 years",
+          "geographic_focus": "Low- and middle-income countries (LMICs)"
+        }
+      },
+      {
+        "domain": "global_child_health",
+        "topic": "childhood_diarrhoeal_disease",
+        "source": {
+          "title": "Diarrhoea: Why children are still dying and what can be done",
+          "organizations": [
+            "UNICEF",
+            "World Health Organization"
+          ],
+          "year": 2009,
+          "isbn": [
+            "978-92-806-4462-3",
+            "978-92-4-159841-5"
+          ],
+          "document_type": "Global policy and evidence report",
+          "target_population": "Children under 5 years"
+        }
+      },
+      {
+        "domain": "paediatric_infectious_diseases",
+        "topic": "paediatric_diarrhoeal_diseases",
+        "source": {
+          "title": "Paediatric Infectious Diarrhoea in Resource-Limited Settings",
+          "author": "Gianluca Russo, MD, PhD",
+          "document_type": "Clinical teaching material",
+          "target_setting": "Low- and middle-income countries",
+          "population": "Children under 5 years"
+        }
+      },
+      {
+        "domain": "public_health_epidemiology",
+        "topic": "diarrheal_disease_burden_india",
+        "source": {
+          "journal": "BMC Public Health",
+          "year": 2022,
+          "doi": "10.1186/s12889-022-12515-3",
+          "authors": [
+            "Deepak Kumar Behera",
+            "Sanghamitra Mishra"
+          ],
+          "data_source": "Global Burden of Disease Study 2019 (IHME)",
+          "study_period": "1990–2019",
+          "geographic_focus": "India"
+        }
+      },
+      {
+        "domain": "global_public_health_policy",
+        "topic": "control_of_diarrheal_diseases",
+        "source": {
+          "archive": "World Bank Group Archives",
+          "folder_title": "Policy and Research Unit – 12.1.2 Control of Diarrheal Diseases (CDD)",
+          "folder_id": "1046812",
+          "dates": "January–October 1980",
+          "institutions": [
+            "World Bank",
+            "World Health Organization (WHO)"
+          ],
+          "document_type": "Policy framework and research synthesis",
+          "historical_role": "Foundation of modern diarrhoeal disease control strategy"
+        }
+      },
+      {
+        "domain": "infectious_diseases_epidemiology",
+        "topic": "diarrheal_syndromes_children_under_5",
+        "study_name": "Vaccine Impact on Diarrhea in Africa (VIDA)",
+        "source": {
+          "journal": "Clinical Infectious Diseases",
+          "year": 2023,
+          "doi": "10.1093/cid/ciad022",
+          "study_period": "2015–2018",
+          "comparison_study": "Global Enteric Multicenter Study (GEMS, 2007–2011)",
+          "countries": [
+            "The Gambia",
+            "Mali",
+            "Kenya"
+          ],
+          "funding": "Bill & Melinda Gates Foundation"
+        }
+      }
+    ],
+    "syndromic_classification": {
+      "acute_watery_diarrhea": {
+        "duration": "< 14 days",
+        "key_risks": [
+          "Rapid dehydration",
+          "Electrolyte loss"
+        ],
+        "common_causes": [
+          "Rotavirus",
+          "ETEC",
+          "Cholera"
+        ],
+        "danger_level": "High in infants and young children"
+      },
+      "persistent_diarrhea": {
+        "duration": "≥ 14 days",
+        "key_risks": [
+          "Malnutrition",
+          "Wasting",
+          "High mortality"
+        ],
+        "associated_conditions": [
+          "HIV infection",
+          "Severe malnutrition"
+        ]
+      },
+      "bloody_diarrhea": {
+        "alternate_name": "Dysentery",
+        "features": [
+          "Visible blood in stool",
+          "Abdominal cramps",
+          "Tenesmus",
+          "Fever"
+        ],
+        "common_cause": "Shigella",
+        "complications": [
+          "Sepsis",
+          "Severe nutritional loss"
+        ]
+      }
+    },
+    "treatment_protocols": {
+      "oral_rehydration_therapy": {
+        "purpose": "Prevent and treat dehydration",
+        "recommended_formula": {
+          "sodium_mEq_per_L": 75,
+          "glucose_mmol_per_L": 75,
+          "osmolarity_mOsm_per_L": 245
+        }
+      },
+      "zinc_supplementation": {
+        "age_under_6_months": "10 mg daily for 10–14 days",
+        "age_above_6_months": "20 mg daily for 10–14 days",
+        "benefits": [
+          "Shorter duration of diarrhea",
+          "Reduced severity",
+          "Lower recurrence"
+        ]
+      },
+      "feeding_guidelines": [
+        "Continue breastfeeding",
+        "Continue complementary feeding",
+        "Increase fluids during illness",
+        "Increase food intake after recovery"
+      ],
+      "antibiotic_use": {
+        "indicated_for": [
+          "Bloody diarrhea",
+          "Shigellosis"
+        ],
+        "preferred_drug": "Ciprofloxacin",
+        "warning": "Avoid indiscriminate antibiotic use due to resistance"
+      }
+    },
+    "prevention_strategies": {
+      "exclusive_breastfeeding": {
+        "recommended_duration": "First 6 months",
+        "benefit": "Reduces diarrhea-related death by over 6 times"
+      },
+      "complementary_feeding": {
+        "start_age_months": 6,
+        "importance": "Prevents malnutrition and reduces severity of infections"
+      },
+      "vaccination": {
+        "rotavirus": {
+          "impact": "Prevents one-third of severe watery diarrhea deaths",
+          "priority": "High"
+        },
+        "measles": {
+          "impact": "Reduces diarrhea-related mortality indirectly",
+          "coverage_goal": "≥80%"
+        },
+        "cholera": {
+          "priority": "Low compared to ORT",
+          "use_case": "Epidemics and humanitarian settings"
+        }
+      },
+      "water_sanitation_hygiene": {
+        "handwashing_effectiveness": "Reduces diarrhea incidence by ~33%",
+        "sanitation_impact": "Reduces child mortality by ~55%"
+      }
+    },
+    "public_health_impact": {
+      "incidence": {
+        "children_under_5": "≈3.2 episodes per child per year"
+      },
+      "mortality_trend": {
+        "1980s": "≈4.6 million deaths/year",
+        "2000s": "≈1.6–2.6 million deaths/year",
+        "primary_reason_for_decline": "Improved case management and ORT"
+      }
+    },
+    "long_term_effects": {
+      "child_development": [
+        "Reduced cognitive performance",
+        "Lower concentration",
+        "Growth retardation"
+      ],
+      "risk_multiplier": "Persistent diarrhea increases death risk up to 17× in malnourished infants"
+    },
+    "chatbot_ready_faq_intents": {
+      "what_is_diarrhea": "Diarrhea means passing three or more loose stools in a day.",
+      "is_diarrhea_dangerous": "Yes, especially in children due to dehydration.",
+      "what_should_i_give_first": "Start oral rehydration solution immediately.",
+      "should_i_stop_food": "No, continue feeding and breastfeeding.",
+      "when_to_see_doctor": "If there is blood in stool, fever, or signs of dehydration."
+    },
+    "core_definitions": {
+      "diarrhea": {
+        "definition": "Passage of three or more loose or watery stools within a 24-hour period, or a decrease in stool consistency from what is normal for the patient.",
+        "primary_cause_context": "Gastrointestinal infection"
+      }
+    },
+    "pathophysiology": {
+      "mechanism": {
+        "ion_transport_disruption": [
+          "Increased chloride secretion",
+          "Decreased sodium absorption"
+        ],
+        "water_movement": "Water moves into intestinal lumen to restore ion balance",
+        "result": "Large fluid and electrolyte loss"
+      },
+      "electrolytes_lost": [
+        "Sodium",
+        "Potassium",
+        "Chloride",
+        "Bicarbonate"
+      ],
+      "watery_diarrhea": {
+        "severity_by_weight_loss": {
+          "mild": "<5%",
+          "moderate": "5–10%",
+          "severe": ">10%"
+        },
+        "mechanism": "Massive fluid and electrolyte loss"
+      },
+      "inflammatory_diarrhea": {
+        "features": [
+          "Mucosal ulceration",
+          "Blood and mucus in stool",
+          "Cytokine-mediated metabolic derangement"
+        ],
+        "treatment_implication": "Antibiotics required"
+      },
+      "persistent_diarrhea": {
+        "mortality_share_percent": "Up to 50",
+        "key_pathogens": [
+          "Enteroaggregative E. coli",
+          "Shigella dysenteriae type 1",
+          "Cryptosporidium",
+          "Giardia"
+        ]
+      }
+    },
+    "secondary_complications": {
+      "acute": [
+        "Bacteremia",
+        "Sepsis"
+      ],
+      "post_infectious": [
+        "Hemolytic uremic syndrome",
+        "Guillain–Barré syndrome",
+        "Reactive arthritis"
+      ],
+      "long_term": [
+        "Growth faltering",
+        "Cognitive impairment",
+        "Reduced physical fitness"
+      ]
+    },
+    "host_susceptibility": {
+      "malnutrition": {
+        "impact": [
+          "Increased infection risk",
+          "More severe dehydration",
+          "Longer illness duration"
+        ],
+        "attributable_fraction_child_deaths_percent": 61
+      },
+      "hiv": {
+        "higher_risk_pathogens": [
+          "Campylobacter",
+          "Cryptosporidium",
+          "Shigella",
+          "Salmonella"
+        ],
+        "severity": "More frequent and more severe disease"
+      }
+    },
+    "clinical_classification": {
+      "acute_watery_diarrhea": {
+        "features": [
+          "Watery stools",
+          "Rapid dehydration risk"
+        ],
+        "common_agents": [
+          "Rotavirus",
+          "ETEC",
+          "Vibrio cholerae"
+        ]
+      },
+      "dysentery": {
+        "features": [
+          "Blood or mucus in stool",
+          "Fever",
+          "Tenesmus"
+        ],
+        "common_agents": [
+          "Shigella",
+          "Salmonella",
+          "Campylobacter",
+          "Entamoeba histolytica"
+        ]
+      },
+      "persistent_diarrhea": {
+        "duration": ">14 days",
+        "mortality_risk_multiplier": 10,
+        "common_agents": [
+          "Giardia",
+          "Cryptosporidium",
+          "EAEC",
+          "EPEC"
+        ]
+      }
+    },
+    "case_management": {
+      "assessment": [
+        "Dehydration status",
+        "Type of diarrhea",
+        "Nutritional status"
+      ],
+      "rehydration": {
+        "ors": {
+          "type": "Hypo-osmolar ORS",
+          "dose_some_dehydration": "75 ml/kg over 4 hours",
+          "function": [
+            "Correct dehydration",
+            "Correct metabolic acidosis"
+          ]
+        },
+        "intravenous": {
+          "indication": "Severe dehydration",
+          "fluid": "Ringer’s lactate"
+        }
+      },
+      "zinc": {
+        "dose_mg_per_day": "10–20",
+        "duration_days": "10–14",
+        "benefits": [
+          "Reduced severity",
+          "Reduced duration",
+          "Reduced recurrence"
+        ]
+      },
+      "antibiotics": {
+        "recommended_for": [
+          "Dysentery",
+          "Cholera",
+          "Selected persistent diarrhea"
+        ],
+        "first_line_shigella": "Ciprofloxacin",
+        "contraindicated": [
+          "Uncomplicated watery diarrhea",
+          "Suspected STEC"
+        ]
+      },
+      "antimotility_agents": {
+        "children": "Contraindicated",
+        "bloody_diarrhea": "Contraindicated"
+      }
+    },
+    "study_population": {
+      "sample_size": 705,
+      "respondents": "Ever-married women with at least one child under five",
+      "study_period": "One month post-2014 Gaza conflict",
+      "geographical_coverage": [
+        "North Governorate",
+        "Gaza City",
+        "South Governorates"
+      ],
+      "settings": [
+        "Refugee camps",
+        "Urban areas",
+        "Rural areas"
+      ],
+      "total_children": 188521,
+      "age_range_months": "0–59",
+      "respondent": "Mother or primary caregiver",
+      "sampling_method": "Stratified two-stage sampling",
+      "analysis_software": "STATA 13.1",
+      "total_participants": 492,
+      "cases": 163,
+      "controls": 329,
+      "response_rate_percent": 98.8,
+      "child_age_range_months": "0–59",
+      "residency_requirement_months": 6
+    },
+    "prevalence": {
+      "overall": {
+        "period_prevalence_last_month_percent": 46.1,
+        "point_prevalence_24h_percent": 17.7
+      },
+      "by_governorate": {
+        "north": {
+          "period_prevalence_percent": 80.4,
+          "point_prevalence_percent": 10.3
+        },
+        "gaza_city": {
+          "period_prevalence_percent": 33.1,
+          "point_prevalence_percent": 20.1
+        },
+        "south": {
+          "period_prevalence_percent": 33.1,
+          "point_prevalence_percent": 20.9
+        }
+      },
+      "by_residence": {
+        "refugee_camps": {
+          "period_prevalence_percent": 59.2
+        },
+        "villages": {
+          "period_prevalence_percent": 31.25
+        },
+        "cities": {
+          "period_prevalence_percent": 45.8
+        }
+      }
+    },
+    "child_related_risk_factors": {
+      "age": {
+        "highest_risk": "6 months",
+        "pattern": "Risk increases after 6 months with introduction of complementary feeding"
+      },
+      "sex": {
+        "association": "No statistically significant difference"
+      },
+      "exclusive_breastfeeding": {
+        "no_exclusive_breastfeeding_percent_of_cases": 63.3,
+        "protective_effect": true
+      },
+      "complementary_feeding": {
+        "association": "No significant effect on point prevalence"
+      }
+    },
+    "parental_and_socioeconomic_factors": {
+      "maternal_education": {
+        "association": "Strong inverse relationship with diarrhea prevalence",
+        "effect": "Higher education reduces risk"
+      },
+      "paternal_education": {
+        "association": "Not statistically significant"
+      },
+      "family_income": {
+        "low_income_less_than_1000_NIS": {
+          "higher_period_prevalence": true
+        }
+      },
+      "parental_employment": {
+        "association": "No significant effect"
+      }
+    },
+    "housing_and_environmental_factors": {
+      "water_source": {
+        "mobile_tankers": {
+          "higher_period_prevalence": true
+        }
+      },
+      "refrigerator_availability": {
+        "absence": {
+          "higher_point_prevalence": true
+        }
+      },
+      "sewage_system": {
+        "open_sewage": {
+          "trend": "Higher prevalence"
+        }
+      },
+      "animal_breeding": {
+        "associated_animals": [
+          "Sheep",
+          "Rabbits",
+          "Birds",
+          "Dogs"
+        ],
+        "effect": "Significant increase in diarrheal episodes"
+      }
+    },
+    "hygienic_practices": {
+      "handwashing_children": {
+        "with_water_only": {
+          "protective_effect": true
+        },
+        "with_soap_and_water": {
+          "strong_protective_effect": true
+        }
+      },
+      "water_tank_cleaning": {
+        "drinking_water_tanks": {
+          "reduced_diarrhea": true
+        },
+        "domestic_water_tanks": {
+          "reduced_diarrhea": true
+        }
+      }
+    },
+    "clinical_features_reported": {
+      "frequency_of_stools": {
+        "three_or_more_times_percent": 45.1
+      },
+      "abdominal_pain_or_colic_percent": 80.4,
+      "blood_in_stool_percent": 34.2,
+      "vomiting_percent": 51.1,
+      "contact_with_diarrheal_case_percent": 36.7,
+      "dehydration_status": {
+        "none_percent": 93.0,
+        "weak_percent": 28.5,
+        "moderate_percent": 30.5,
+        "severe_percent": 2.7
+      }
+    },
+    "home_management_practices": {
+      "increased_fluids_percent": 62.1,
+      "ors_use_percent": 54.0,
+      "anti_diarrheal_drugs_percent": 61.4,
+      "herbal_remedies_percent": 40.3,
+      "commonly_used_herbs": [
+        "Chamomile",
+        "Ginger",
+        "Caraway",
+        "Anise oil"
+      ],
+      "potentially_harmful_practices": [
+        "Use of volatile oils with estrogenic effects",
+        "Overuse of anti-diarrheal drugs"
+      ]
+    },
+    "knowledge_and_beliefs": {
+      "perceived_causes": {
+        "contaminated_food": 67.0,
+        "teething": 47.1,
+        "common_cold": 69.6
+      },
+      "misconceptions": [
+        "Teething as a primary cause",
+        "Common cold causing diarrhea"
+      ]
+    },
+    "information_sources": {
+      "primary": "Primary health care centers",
+      "secondary": [
+        "Television",
+        "Friends",
+        "Internet",
+        "Magazines"
+      ]
+    },
+    "public_health_implications": {
+      "key_drivers": [
+        "Poor water quality",
+        "Poor sanitation",
+        "Overcrowding",
+        "Post-conflict displacement"
+      ],
+      "critical_gaps": [
+        "Inappropriate drug use",
+        "Low ORS utilization",
+        "Persistent misconceptions"
+      ],
+      "priority_actions": [
+        "Syndrome-based diarrhoea classification",
+        "Improved management of dysentery and persistent diarrhoea",
+        "Expanded ORT coverage",
+        "Integrated management of childhood illness (IMCI)"
+      ],
+      "surveillance_recommendation": "Classify diarrhoea by syndrome at population level",
+      "priority_interventions": [
+        "Improve access to protected drinking water",
+        "Expand rotavirus vaccination coverage",
+        "Promote safe waste disposal systems",
+        "Improve sanitation infrastructure",
+        "Family planning education",
+        "Reduce time to fetch water",
+        "Handwashing with soap promotion",
+        "Safe drinking water access",
+        "Improved sanitation and latrines",
+        "Proper solid and liquid waste management",
+        "Exclusive breastfeeding promotion",
+        "Maternal education programs"
+      ],
+      "target_groups": [
+        "Households with multiple young children",
+        "Large families",
+        "Rural and peri-urban communities"
+      ],
+      "high_priority_groups": [
+        "Children aged 6–23 months",
+        "Low-income households",
+        "Large families",
+        "Regions in Southern and North Africa"
+      ]
+    },
+    "global_morbidity": {
+      "median_episodes_under_5_per_year": 3.2,
+      "age_specific_incidence": {
+        "0_5_months": 2.7,
+        "6_11_months": 4.8,
+        "1_year": 3.9,
+        "2_years": 2.6,
+        "3_years": 1.5,
+        "4_years": 1.4
+      },
+      "pattern": "Highest incidence in infants 6–11 months; steady decline with age",
+      "trend_over_decades": "No significant decline in morbidity since 1950s",
+      "median_episodes_per_child_per_year_under_5": 3.2,
+      "age_specific_median_incidence": {
+        "0_5_months": 2.7,
+        "6_11_months": 4.8,
+        "1_year": 3.9,
+        "2_years": 2.6,
+        "3_years": 1.5,
+        "4_years": 1.4
+      },
+      "highest_risk_age_group": "6–11 months",
+      "trend_over_time": {
+        "1955_1979": "≈3 episodes per child-year",
+        "1980_1989": "≈3 episodes per child-year",
+        "1992_2000": "3.2 episodes per child-year",
+        "interpretation": "No meaningful decline in diarrhoeal morbidity over four decades"
+      }
+    },
+    "global_mortality": {
+      "median_mortality_rate_under_5_per_1000_per_year": 4.9,
+      "age_specific_mortality_per_1000": {
+        "under_1_year": 8.5,
+        "1_4_years": 3.8
+      },
+      "annual_child_deaths_estimate": {
+        "median": 2500000,
+        "range_25_75_percentile": "2.1–4.7 million"
+      },
+      "share_of_under_5_deaths_percent": 21,
+      "trend": {
+        "1955_1979": 13.6,
+        "1980_1989": 5.6,
+        "1992_2000": 4.9,
+        "interpretation": "Substantial mortality decline, especially in infants"
+      },
+      "median_mortality_per_1000_children_per_year": {
+        "under_1_year": 8.5,
+        "1_4_years": 3.8,
+        "under_5_years": 4.9
+      },
+      "fraction_of_under_5_deaths_due_to_diarrhoea_percent": 21,
+      "estimated_annual_deaths_under_5": {
+        "median": 2500000,
+        "range": [
+          2100000,
+          4700000
+        ]
+      },
+      "mortality_trend": {
+        "1955_1979": 13.6,
+        "1980_1989": 5.6,
+        "1992_2000": 4.9,
+        "unit": "deaths per 1000 children per year",
+        "interpretation": "Substantial decline in mortality despite stable morbidity"
+      }
+    },
+    "case_fatality": {
+      "estimated_overall_percent": 0.15,
+      "comparison": {
+        "1982": 0.6,
+        "1992": 0.3
+      },
+      "key_driver_of_decline": "Increased use of oral rehydration therapy",
+      "reported_case_fatality_ratios": [
+        {
+          "age_group": "Under 5",
+          "value_percent": 0.11
+        },
+        {
+          "age_group": "Under 1",
+          "value_percent": 1.8
+        },
+        {
+          "age_group": "1–3 years",
+          "value_percent": 0.75
+        }
+      ],
+      "overall_estimated_case_fatality_percent": 0.15,
+      "historical_comparison": {
+        "1982": 0.6,
+        "1992": 0.3,
+        "interpretation": "Marked reduction in diarrhoea fatality over time"
+      }
+    },
+    "geographical_focus": {
+      "regions_covered": [
+        "Sub-Saharan Africa",
+        "South-East Asia",
+        "Eastern Mediterranean",
+        "Western Pacific",
+        "Latin America"
+      ],
+      "china_included": true,
+      "data_limitation": "Sparse vital registration in many regions"
+    },
+    "surveillance_characteristics": {
+      "morbidity_studies": {
+        "count": 27,
+        "method": "Prospective active surveillance",
+        "follow_up_frequency": [
+          "Daily",
+          "2–3 times per week",
+          "Weekly"
+        ]
+      },
+      "mortality_studies": {
+        "count": 34,
+        "countries": 21,
+        "method": "Active surveillance with verbal autopsy"
+      }
+    },
+    "key_findings": {
+      "mortality_vs_morbidity": {
+        "mortality": "Declining",
+        "morbidity": "Persistently high"
+      },
+      "population_growth_effect": "Total disease burden remains high despite mortality decline",
+      "highest_risk_age": "Infants under 1 year"
+    },
+    "major_contributing_factors": {
+      "protective": [
+        "Oral rehydration therapy",
+        "Improved breastfeeding",
+        "Better sanitation",
+        "Measles immunization"
+      ],
+      "risk_amplifiers": [
+        "Malnutrition",
+        "HIV infection",
+        "Persistent diarrhoea",
+        "Dysentery"
+      ]
+    },
+    "diarrhoea_clinical_syndromes": {
+      "acute_watery": {
+        "mortality_role": "Primary cause historically",
+        "current_trend": "Declining proportion of deaths"
+      },
+      "dysentery": {
+        "trend": "Increasing share of diarrhoeal deaths where ORT is common"
+      },
+      "persistent_diarrhoea": {
+        "impact": [
+          "Higher mortality risk",
+          "Long-term growth impairment"
+        ]
+      }
+    },
+    "nutrition_interaction": {
+      "relationship": "Bidirectional",
+      "effects_of_malnutrition": [
+        "Longer duration of diarrhoea",
+        "Higher mortality risk",
+        "Prolonged diarrhoea duration",
+        "Increased mortality risk"
+      ],
+      "global_trend": "Decline in stunting except in East Africa",
+      "effects_of_diarrhoea": [
+        "Impaired linear growth",
+        "Reduced physical fitness",
+        "Impaired cognitive development"
+      ],
+      "regional_exception": "Stunting did not decline in East Africa"
+    },
+    "hiv_context": {
+      "children": {
+        "effects": [
+          "Higher incidence",
+          "Longer duration",
+          "Increased severity",
+          "Higher mortality"
+        ]
+      },
+      "adults": {
+        "major_issue": "Chronic diarrhoea"
+      },
+      "note": "Overall burden underestimated in high-HIV regions"
+    },
+    "limitations": {
+      "data_gaps": [
+        "Sparse vital registration",
+        "Variable verbal autopsy accuracy",
+        "Non-representative study sites"
+      ],
+      "uncertainty": "Regional estimates subject to wide confidence ranges",
+      "no_laboratory_confirmation": true,
+      "recall_bias_possible": true,
+      "behavioral_self_reporting_bias": true,
+      "high_heterogeneity": true,
+      "english_language_only": true,
+      "geographic_skew": "Majority of studies from Ethiopia",
+      "publication_bias_detected": true,
+      "verbal_autopsy_variability": true,
+      "regional_data_gaps": true,
+      "heterogeneous_definitions": true,
+      "underrepresentation_of_hiv_effects": true,
+      "high_between_study_heterogeneity": true,
+      "observational_designs_only": true,
+      "english_language_restriction": true
+    },
+    "core_definition": {
+      "who_definition": "Passage of three or more loose or liquid stools per day, or more frequently than is normal for the individual.",
+      "disease_nature": "Symptom of gastrointestinal infection caused by bacterial, viral, or parasitic organisms",
+      "primary_transmission": "Fecal–oral route",
+      "clinical_definition": "Passing loose or watery stools at least three times per day, or more frequently than normal for an individual",
+      "life_threatening_mechanism": "Rapid fluid and electrolyte loss leading to dehydration",
+      "special_cases": {
+        "breastfed_infants": "Loose pasty stools are normal and not considered diarrhoea"
+      }
+    },
+    "disease_impact": {
+      "short_term": [
+        "Severe dehydration",
+        "Electrolyte imbalance",
+        "Shock",
+        "Death"
+      ],
+      "long_term": [
+        "Malnutrition",
+        "Stunted growth",
+        "Reduced cognitive development",
+        "Increased susceptibility to future infections"
+      ],
+      "nutrition_interaction": {
+        "relationship": "Bidirectional",
+        "note": "Many children dying of diarrhea would survive if adequately nourished"
+      }
+    },
+    "treatment_gaps": {
+      "children_receiving_recommended_treatment_percent": "~33",
+      "ors_use_trend": "Declining or stagnating in multiple countries",
+      "primary_barriers": [
+        "Lack of caregiver confidence",
+        "Poor access",
+        "Low awareness",
+        "Socioeconomic inequality"
+      ]
+    },
+    "economic_impact": {
+      "health_budget_burden_sub_saharan_africa_percent": 12,
+      "gdp_loss_low_income_countries_percent": 9,
+      "education_impact": [
+        "School absenteeism",
+        "Reduced learning outcomes"
+      ]
+    },
+    "program_evidence": {
+      "egypt_ors_program": {
+        "infant_death_reduction_percent": 82,
+        "older_child_death_reduction_percent": 62
+      },
+      "malawi_school_water_program": {
+        "diarrhea_reduction_percent": 90,
+        "school_absence_reduction_percent": 57
+      },
+      "burundi_ors_social_marketing": {
+        "ors_use_increase_percent": {
+          "baseline": 20,
+          "post_campaign": 75
+        }
+      }
+    },
+    "future_threats": [
+      "Climate change",
+      "Flood-related outbreaks",
+      "Urban overcrowding",
+      "Humanitarian emergencies"
+    ],
+    "strategic_recommendations": {
+      "core_principle": "Coordinated prevention + treatment approach",
+      "required_actions": [
+        "Reprioritize diarrheal disease globally",
+        "Scale up ORS and zinc",
+        "Expand vaccination",
+        "Invest in water and sanitation",
+        "Promote behavior change communication"
+      ]
+    },
+    "definition": {
+      "who_definition": "Three or more loose or liquid stools per day, or more frequent passage than normal for the individual.",
+      "duration_typical": "Several days",
+      "normal_variants": [
+        "Loose stools in exclusively breastfed infants"
+      ],
+      "clinical_definition": "Frequent passage of loose or watery stools occurring more than three times per day.",
+      "associated_effects": [
+        "Dehydration",
+        "Abdominal cramps",
+        "Urgency",
+        "Electrolyte loss",
+        "Possible fever or nausea"
+      ],
+      "disease_classification": "Gastrointestinal disorder",
+      "duration_types": [
+        "Acute",
+        "Chronic"
+      ]
+    },
+    "classification": {
+      "by_duration": {
+        "acute": {
+          "duration": "<14 days",
+          "subtype": "Acute Watery Diarrhea (AWD)"
+        },
+        "persistent": {
+          "duration": "14–28 days"
+        },
+        "chronic": {
+          "duration": ">4 weeks"
+        }
+      },
+      "by_stool_characteristics": {
+        "watery": "No visible blood",
+        "bloody": {
+          "alias": "Dysentery",
+          "indicates": "Mucosal invasion"
+        }
+      },
+      "by_mechanism": {
+        "secretory": {
+          "mechanism": "Increased secretion or reduced absorption of electrolytes",
+          "key_feature": "Persists during fasting",
+          "classic_example": "Cholera"
+        },
+        "osmotic": {
+          "mechanism": "Unabsorbed solutes draw water into bowel",
+          "resolves_when_fasting": true,
+          "examples": [
+            "Lactose intolerance",
+            "Excess sorbitol",
+            "Fructose malabsorption"
+          ]
+        },
+        "exudative": {
+          "mechanism": "Blood and pus leakage due to inflammation",
+          "examples": [
+            "Ulcerative colitis",
+            "Severe bacterial infection"
+          ]
+        },
+        "inflammatory": {
+          "mechanism": "Mucosal damage with protein-rich fluid loss",
+          "examples": [
+            "Crohn’s disease",
+            "Infectious enteritis",
+            "Tuberculosis"
+          ]
+        }
+      }
+    },
+    "clinical_features": {
+      "core_symptoms": [
+        "Loose or watery stools",
+        "Increased stool frequency",
+        "Abdominal cramps",
+        "Nausea",
+        "Vomiting",
+        "Fever"
+      ],
+      "dehydration_signs": {
+        "early": [
+          "Thirst",
+          "Irritability",
+          "Loss of skin turgor"
+        ],
+        "severe": [
+          "Decreased urination",
+          "Sunken eyes",
+          "Rapid heart rate",
+          "Low blood pressure",
+          "Reduced consciousness"
+        ]
+      },
+      "viral_diarrhea": {
+        "features": [
+          "Vomiting",
+          "Watery stools",
+          "Short duration (2–4 days)"
+        ],
+        "main_threat": "Dehydration"
+      },
+      "bacterial_diarrhea": {
+        "features": [
+          "Fever",
+          "Bloody stools if invasive"
+        ]
+      }
+    },
+    "management": {
+      "core_principle": "Fluid and electrolyte replacement",
+      "oral_rehydration": {
+        "ors": {
+          "components": [
+            "1 liter clean water",
+            "3 g salt",
+            "18 g sugar"
+          ],
+          "effectiveness": "Prevents and reverses dehydration"
+        },
+        "home_fluids": [
+          "Salted rice water",
+          "Soup with salt",
+          "Coconut water (unsweetened)"
+        ]
+      },
+      "feeding": {
+        "recommendation": "Continue breastfeeding and age-appropriate feeding",
+        "breastfeeding": "Always continue"
+      },
+      "zinc": {
+        "children_over_6_months": "Recommended",
+        "benefits": [
+          "Shorter duration",
+          "Reduced severity",
+          "Prevention of recurrence"
+        ]
+      },
+      "medications": {
+        "antibiotics": {
+          "use": "Limited to specific bacterial infections",
+          "avoid_in": [
+            "Uncomplicated watery diarrhea",
+            "Suspected STEC infection"
+          ]
+        },
+        "antimotility_agents": {
+          "example": "Loperamide",
+          "contraindicated_in": [
+            "Bloody diarrhea",
+            "Severe infection"
+          ]
+        }
+      },
+      "rehydration": {
+        "severe": {
+          "route": "Intravenous",
+          "fluid": "Ringer’s lactate or normal saline",
+          "dose": "30 ml/kg first hour, then 70 ml/kg over 3–5 hours"
+        },
+        "mild_to_moderate": {
+          "route": "Oral or nasogastric",
+          "ors_dose": "75 ml/kg over 4 hours"
+        }
+      },
+      "home_made_ors": {
+        "recipe": [
+          "1 liter clean water",
+          "1 level teaspoon salt",
+          "8 level teaspoons sugar"
+        ]
+      }
+    },
+    "terminology": {
+      "etymology": {
+        "origin_language": "Greek",
+        "root_word": "diarrhoia",
+        "components": {
+          "dia": "through",
+          "rhein": "to flow"
+        },
+        "meaning": "A flowing through",
+        "historical_path": [
+          "Greek",
+          "Latin (diarrhoea)",
+          "Middle English (14th century)"
+        ]
+      }
+    },
+    "types_of_diarrhea": {
+      "by_duration": {
+        "acute": {
+          "duration": "<2 weeks",
+          "common_causes": [
+            "Infections",
+            "Contaminated food or water"
+          ],
+          "natural_course": "Often self-limiting"
+        },
+        "persistent": {
+          "duration": "2–4 weeks",
+          "possible_causes": [
+            "Lingering infection",
+            "Malabsorption",
+            "Gut sensitivity"
+          ]
+        },
+        "chronic": {
+          "duration": ">4 weeks",
+          "associated_conditions": [
+            "IBS",
+            "IBD",
+            "Celiac disease",
+            "Pancreatic disorders"
+          ]
+        }
+      },
+      "by_mechanism": {
+        "osmotic": {
+          "mechanism": "Unabsorbed solutes pull water into intestine",
+          "examples": [
+            "Lactose intolerance",
+            "Sugar substitutes"
+          ],
+          "improves_with_fasting": true
+        },
+        "secretory": {
+          "mechanism": "Active secretion of water and electrolytes",
+          "examples": [
+            "Cholera",
+            "Hormonal disorders",
+            "Certain medications"
+          ],
+          "improves_with_fasting": false
+        },
+        "inflammatory": {
+          "mechanism": "Damage to intestinal lining",
+          "features": [
+            "Blood",
+            "Mucus",
+            "Fever"
+          ],
+          "examples": [
+            "Shigella infection",
+            "Ulcerative colitis",
+            "Crohn’s disease"
+          ]
+        },
+        "malabsorptive": {
+          "mechanism": "Failure to absorb nutrients",
+          "features": [
+            "Bulky stools",
+            "Greasy stools",
+            "Weight loss"
+          ],
+          "examples": [
+            "Celiac disease",
+            "Chronic pancreatitis"
+          ]
+        },
+        "motility_related": {
+          "mechanism": "Altered intestinal transit time",
+          "examples": [
+            "IBS",
+            "Hyperthyroidism",
+            "Post-surgical states"
+          ]
+        }
+      },
+      "special_types": [
+        "Traveler’s diarrhea",
+        "Drug-induced diarrhea"
+      ]
+    },
+    "symptoms": {
+      "general": [
+        "Frequent loose or watery stools",
+        "Urgency",
+        "Abdominal cramps",
+        "Bloating",
+        "Nausea",
+        "Vomiting",
+        "Fever",
+        "Fatigue"
+      ],
+      "red_flags": [
+        "Blood or mucus in stool",
+        "High fever",
+        "Severe abdominal pain"
+      ],
+      "dehydration_signs": [
+        "Dry mouth",
+        "Extreme thirst",
+        "Dark urine",
+        "Dizziness",
+        "Sunken eyes",
+        "Reduced urination"
+      ],
+      "infant_specific": [
+        "Poor feeding",
+        "Irritability",
+        "Unusual sleepiness",
+        "Vomiting"
+      ]
+    },
+    "differential_diagnosis": {
+      "diarrhea_vs_dysentery": {
+        "diarrhea": {
+          "stool": "Large volume, watery",
+          "blood": false,
+          "severity": "Mild to moderate"
+        },
+        "dysentery": {
+          "stool": "Small volume with blood and mucus",
+          "blood": true,
+          "severity": "Severe",
+          "causative_agents": [
+            "Shigella",
+            "Entamoeba histolytica"
+          ]
+        }
+      }
+    },
+    "faq_knowledge": {
+      "diarrhea_causes_dehydration": true,
+      "spicy_food_trigger": true,
+      "alcohol_related": true,
+      "stress_related": true,
+      "covid_symptom": {
+        "prevalence_percent": "7–20"
+      },
+      "pregnancy_symptom": false
+    },
+    "when_to_seek_medical_care": [
+      "Diarrhea lasting more than 2–3 days",
+      "Blood or mucus in stool",
+      "High fever",
+      "Severe abdominal pain",
+      "Signs of dehydration",
+      "Diarrhea in infants or elderly"
+    ],
+    "overall_prevalence": {
+      "rural_india_percent": 9.57,
+      "comparison_nfhs4": {
+        "urban_percent": 8.24,
+        "rural_percent": 9.57
+      }
+    },
+    "age_specific_prevalence": {
+      "0_11_months": 14.41,
+      "12_23_months": 13.89,
+      "24_35_months": 8.92,
+      "36_47_months": 5.99,
+      "48_59_months": 4.75,
+      "trend": "Risk decreases sharply with age"
+    },
+    "sociodemographic_factors": {
+      "sex_of_child": {
+        "male_percent": 9.88,
+        "female_percent": 9.23,
+        "adjusted_odds_ratio_female": 0.897
+      },
+      "social_group": {
+        "scheduled_caste": {
+          "prevalence_percent": 9.89,
+          "reference_group": true
+        },
+        "scheduled_tribe": {
+          "prevalence_percent": 8.33,
+          "adjusted_odds_ratio": 0.811
+        },
+        "obc": {
+          "prevalence_percent": 9.88,
+          "adjusted_odds_ratio": 0.902
+        }
+      },
+      "religion": {
+        "hindu": {
+          "prevalence_percent": 9.57,
+          "reference_group": true
+        },
+        "muslim": {
+          "prevalence_percent": 10.32,
+          "adjusted_odds_ratio": 1.217
+        },
+        "other": {
+          "prevalence_percent": 7.16,
+          "adjusted_odds_ratio": 1.163
+        }
+      },
+      "maternal_age": {
+        "15_24_years": {
+          "prevalence_percent": 10.9,
+          "highest_risk": true
+        },
+        "25_34_years": {
+          "prevalence_percent": 8.81
+        },
+        "35_49_years": {
+          "prevalence_percent": 8.65
+        }
+      },
+      "wealth_index": {
+        "poor": 9.97,
+        "middle": 9.44,
+        "rich": 8.45
+      }
+    },
+    "child_health_factors": {
+      "birth_weight": {
+        "low_birth_weight": {
+          "prevalence_percent": 10.76,
+          "adjusted_odds_ratio": 1.135
+        },
+        "normal_birth_weight": {
+          "prevalence_percent": 9.04
+        }
+      },
+      "nutritional_status": {
+        "undernourished": {
+          "prevalence_percent": 10.37,
+          "adjusted_odds_ratio": 1.097
+        },
+        "normal": {
+          "prevalence_percent": 9.26
+        }
+      },
+      "breastfeeding_status": {
+        "currently_breastfeeding": {
+          "prevalence_percent": 10.55,
+          "note": "Higher observed prevalence due to age confounding"
+        },
+        "not_breastfeeding": {
+          "prevalence_percent": 7.42
+        }
+      }
+    },
+    "household_environmental_factors": {
+      "drinking_water_source": {
+        "unimproved": {
+          "prevalence_percent": 7.74,
+          "reference_group": true
+        },
+        "improved": {
+          "prevalence_percent": 9.69,
+          "adjusted_odds_ratio": 1.115,
+          "note": "Likely contamination at point-of-use"
+        }
+      },
+      "toilet_facility": {
+        "unimproved": {
+          "prevalence_percent": 10.06
+        },
+        "improved": {
+          "prevalence_percent": 8.84
+        }
+      },
+      "shared_toilet": {
+        "shared": {
+          "prevalence_percent": 10.1
+        },
+        "not_shared": {
+          "prevalence_percent": 8.36
+        }
+      },
+      "child_stool_disposal": {
+        "improper": {
+          "prevalence_percent": 10.15,
+          "adjusted_odds_ratio": 1.061
+        },
+        "proper": {
+          "prevalence_percent": 7.7
+        }
+      },
+      "housing_quality": {
+        "rudimentary_roof": {
+          "prevalence_percent": 10.57,
+          "adjusted_odds_ratio": 1.113
+        },
+        "unclean_floor": {
+          "prevalence_percent": 10.29
+        }
+      }
+    },
+    "regional_variation": {
+      "central_india": {
+        "prevalence_percent": 13.18,
+        "adjusted_odds_ratio": 1.51,
+        "highest_risk_region": true
+      },
+      "east": {
+        "prevalence_percent": 9.15,
+        "adjusted_odds_ratio": 1.077
+      },
+      "west": {
+        "prevalence_percent": 9.53,
+        "adjusted_odds_ratio": 1.201
+      },
+      "northeast": {
+        "prevalence_percent": 4.04,
+        "adjusted_odds_ratio": 0.719
+      },
+      "south": {
+        "prevalence_percent": 6.53,
+        "adjusted_odds_ratio": 0.788
+      }
+    },
+    "key_interpretations": {
+      "highest_risk_group": "Infants aged 0–11 months",
+      "major_drivers": [
+        "Low birth weight",
+        "Undernutrition",
+        "Poor sanitation",
+        "Improper stool disposal",
+        "Low-quality housing"
+      ],
+      "protective_factors": [
+        "Increasing child age",
+        "Female sex",
+        "Improved sanitation",
+        "Better housing materials"
+      ],
+      "mortality_decline_reason": [
+        "Improved case management",
+        "Better access to treatment",
+        "Public health interventions"
+      ],
+      "persistent_challenges": [
+        "Unsafe water and sanitation",
+        "Child malnutrition",
+        "Inequities in access to care"
+      ],
+      "pd_remains_major_problem": true,
+      "rotavirus_vaccine_reduced_but_not_eliminated_disease": true,
+      "cryptosporidium_is_critical_target": true,
+      "socioeconomic_factors_are_key": true
+    },
+    "public_health_recommendations": {
+      "priority_actions": [
+        "Improve sanitation and latrine use",
+        "Promote safe child stool disposal",
+        "Improve drinking water handling at household level",
+        "Target low-birth-weight and undernourished children",
+        "Focus interventions in central and eastern India"
+      ],
+      "community_strategies": [
+        "Health education",
+        "Handwashing promotion",
+        "WASH infrastructure investment"
+      ],
+      "priority_groups": [
+        "Children aged 6–23 months"
+      ],
+      "interventions": [
+        "Promote soap-based handwashing",
+        "Improve latrine quality",
+        "Protect drinking water sources",
+        "Discourage cow milk and adult food for young children",
+        "Maternal education on diarrhoea prevention"
+      ]
+    },
+    "global_and_national_context": {
+      "global_childhood_cases_per_year": 1700000000,
+      "global_under_five_deaths_per_year": 525000,
+      "sub_saharan_africa_share_percent": 90,
+      "ethiopia_rank": "Top 10 countries for fatal childhood diarrhoea",
+      "local_prevalence_damboya_percent": 12,
+      "local_rank_of_disease": "Second leading cause of illness after pneumonia"
+    },
+    "sociodemographic_characteristics": {
+      "child_sex": {
+        "male_percent_cases": 54.0,
+        "female_percent_cases": 46.0
+      },
+      "median_child_age_months": 18,
+      "maternal_marital_status": {
+        "married_percent": 98.2
+      },
+      "residence": {
+        "rural_percent": 89.0,
+        "urban_percent": 11.0
+      }
+    },
+    "environmental_factors": {
+      "latrine_availability": {
+        "present_percent": 97.5
+      },
+      "latrine_type": {
+        "unimproved": {
+          "aor": 5.54,
+          "ci": "2.79–11.00"
+        },
+        "improved": {
+          "reference": true
+        }
+      },
+      "water_source": {
+        "unprotected": {
+          "aor": 4.98,
+          "ci": "2.32–10.68"
+        },
+        "protected": {
+          "reference": true
+        }
+      },
+      "handwashing_facility_near_toilet": {
+        "absent_percent_cases": 64.2
+      }
+    },
+    "behavioral_factors": {
+      "soap_use_for_handwashing": {
+        "not_using_soap": {
+          "aor": 4.1,
+          "ci": "2.36–7.10"
+        }
+      },
+      "handwashing_at_critical_times": {
+        "poor_practice": {
+          "aor": 1.87,
+          "ci": "1.11–3.17"
+        },
+        "critical_times": [
+          "Before food preparation",
+          "Before feeding the child",
+          "After using the toilet",
+          "After cleaning the child"
+        ]
+      },
+      "maternal_knowledge_of_diarrhea": {
+        "poor_knowledge": {
+          "aor": 1.92,
+          "ci": "1.01–3.65"
+        },
+        "knowledge_definition": "Ability to name at least three diarrhoea transmission routes"
+      }
+    },
+    "feeding_practices": {
+      "high_risk_foods": {
+        "cow_milk": {
+          "aor": 6.93,
+          "ci": "1.92–24.95",
+          "risk_reason": "Often unboiled or improperly handled"
+        },
+        "adult_food": {
+          "aor": 6.58,
+          "ci": "1.48–29.14"
+        }
+      },
+      "protective_food": {
+        "packed_milk": {
+          "reference": true
+        }
+      }
+    },
+    "age_related_risk": {
+      "6_11_months": {
+        "aor": 3.92,
+        "ci": "1.50–10.24",
+        "highest_risk": true
+      },
+      "12_23_months": {
+        "aor": 2.45,
+        "ci": "1.09–5.50"
+      },
+      "24_59_months": {
+        "reference": true
+      }
+    },
+    "non_significant_factors": [
+      "Family size",
+      "Family income",
+      "Child immunization status",
+      "Household waste disposal",
+      "Availability of handwashing facility alone"
+    ],
+    "modifiable_vs_nonmodifiable": {
+      "nonmodifiable": [
+        "Child age"
+      ],
+      "modifiable": [
+        "Water source",
+        "Latrine type",
+        "Handwashing behavior",
+        "Soap use",
+        "Child feeding practices",
+        "Maternal knowledge"
+      ]
+    },
+    "data_summary": {
+      "total_studies_included": 60,
+      "total_children_analyzed": 162388,
+      "study_design_distribution": {
+        "cross_sectional_percent": 93.33,
+        "other_designs_percent": 6.67
+      },
+      "publication_year_range": "2020–2024",
+      "analysis_software": [
+        "STATA 17",
+        "R 4.4.2"
+      ]
+    },
+    "pooled_prevalence": {
+      "overall_prevalence_percent": 24.6,
+      "confidence_interval_95": [
+        22.7,
+        26.6,
+        21.77,
+        25.42
+      ],
+      "heterogeneity": {
+        "i_squared_percent": 99,
+        "p_value": "<0.0001"
+      },
+      "interpretation": "Nearly one in four children under five in East Africa experienced diarrhea",
+      "overall_percent": 23.59
+    },
+    "country_level_prevalence": {
+      "uganda": {
+        "pooled_prevalence_percent": 31
+      },
+      "tanzania": {
+        "pooled_prevalence_percent": 31
+      },
+      "ethiopia": {
+        "pooled_prevalence_percent": 23
+      },
+      "other_countries_combined": {
+        "pooled_prevalence_percent": 24
+      }
+    },
+    "key_determinants_pooled_effects": {
+      "water_source": {
+        "unprotected_vs_protected": {
+          "odds_ratio": 1.92,
+          "confidence_interval_95": [
+            1.39,
+            2.65
+          ],
+          "significance": true
+        }
+      },
+      "rotavirus_vaccination": {
+        "not_vaccinated_vs_vaccinated": {
+          "odds_ratio": 2.06,
+          "confidence_interval_95": [
+            1.1,
+            3.85
+          ],
+          "significance": true
+        }
+      },
+      "waste_disposal": {
+        "improper_vs_proper": {
+          "odds_ratio": 1.67,
+          "confidence_interval_95": [
+            1.1,
+            2.53
+          ],
+          "significance": true
+        }
+      },
+      "family_size": {
+        "more_than_4_members": {
+          "odds_ratio": 1.38,
+          "confidence_interval_95": [
+            1.1,
+            1.72
+          ],
+          "significance": true
+        }
+      },
+      "number_of_under_five_children": {
+        "two_or_more_vs_one": {
+          "odds_ratio": 1.6,
+          "confidence_interval_95": [
+            1.27,
+            2.03
+          ],
+          "significance": true
+        }
+      },
+      "toilet_type": {
+        "unimproved_vs_improved": {
+          "odds_ratio": 1.11,
+          "confidence_interval_95": [
+            1.01,
+            1.21
+          ],
+          "significance": true
+        }
+      },
+      "time_to_fetch_water": {
+        "more_than_30_minutes": {
+          "odds_ratio": 1.35,
+          "confidence_interval_95": [
+            1.05,
+            1.73
+          ],
+          "significance": true
+        }
+      }
+    },
+    "non_significant_factors_pooled": [
+      "Child sex",
+      "Vitamin A supplementation",
+      "Maternal working status",
+      "Maternal diarrhea status",
+      "Availability of television",
+      "Latrine availability alone",
+      "Maternal education level",
+      "General immunization status"
+    ],
+    "risk_factor_categories": {
+      "environmental": [
+        "Unprotected drinking water",
+        "Unimproved toilet facilities",
+        "Improper waste disposal",
+        "Long distance to water source"
+      ],
+      "household": [
+        "Large family size",
+        "Multiple under-five children"
+      ],
+      "health_system": [
+        "Lack of rotavirus vaccination",
+        "Limited healthcare access"
+      ]
+    },
+    "study_selection_criteria": {
+      "morbidity_studies": {
+        "requirements": [
+          "Prospective active surveillance",
+          "Stable populations",
+          "Minimum 1 year follow-up",
+          "Children under 5",
+          "Developing countries (including China)"
+        ],
+        "total_studies_included": 27
+      },
+      "mortality_studies": {
+        "requirements": [
+          "Active surveillance of deaths",
+          "Primary cause listed as diarrhoea",
+          "Prospective or retrospective design",
+          "Excludes vital statistics–only studies"
+        ],
+        "total_studies_included": 34,
+        "countries_covered": 21
+      }
+    },
+    "regional_patterns": {
+      "highest_burden_regions": [
+        "Sub-Saharan Africa",
+        "South-East Asia"
+      ],
+      "china_inclusion": {
+        "included_in_this_review": true,
+        "excluded_in_previous_reviews": true
+      },
+      "population_growth_effect": "Total morbidity burden increasing despite mortality decline"
+    },
+    "intervention_effects": {
+      "oral_rehydration_therapy": {
+        "global_coverage_1984_percent": "<15",
+        "global_coverage_1993_percent": "~40",
+        "primary_effect": "Reduction in mortality, not incidence"
+      },
+      "other_interventions": [
+        "Breastfeeding promotion",
+        "Improved weaning practices",
+        "Improved sanitation",
+        "Measles immunization"
+      ],
+      "syndrome_shift": {
+        "trend": "Relative increase in deaths from dysentery and persistent diarrhoea",
+        "reason": "Better survival from acute watery diarrhoea"
+      }
+    },
+    "hiv_aids_interaction": {
+      "excluded_from_analysis": true,
+      "known_effects": [
+        "Higher diarrhoea incidence",
+        "Longer duration",
+        "Greater severity",
+        "Higher mortality"
+      ],
+      "interpretation": "True global burden likely underestimated in high HIV prevalence areas"
+    },
+    "data_coverage": {
+      "total_studies": 66,
+      "total_participants": 260226,
+      "study_designs": {
+        "cross_sectional": 60,
+        "case_control": 2,
+        "prospective_cohort": 2,
+        "mixed_methods": 2
+      },
+      "study_settings": {
+        "community_based": 56,
+        "population_survey": 8,
+        "health_institution": 1,
+        "internally_displaced_persons": 1
+      },
+      "quality_assessment": {
+        "tool": "Newcastle–Ottawa Scale (modified)",
+        "included_quality": "Good or Very Good (≥7/10)"
+      }
+    },
+    "regional_prevalence": {
+      "southern_africa": {
+        "percent": 30.14,
+        "ci_95": [
+          23.37,
+          36.9
+        ],
+        "highest_burden": true
+      },
+      "north_africa": {
+        "percent": 28.16,
+        "ci_95": [
+          26.52,
+          29.79
+        ]
+      },
+      "central_africa": {
+        "percent": 25.25,
+        "ci_95": [
+          16.4,
+          34.11
+        ]
+      },
+      "east_africa": {
+        "percent": 24.92,
+        "ci_95": [
+          21.82,
+          28.03
+        ]
+      },
+      "west_africa": {
+        "percent": 15.11,
+        "ci_95": [
+          13.46,
+          16.76
+        ],
+        "lowest_burden": true
+      }
+    },
+    "highest_country_prevalence_reported": [
+      {
+        "country": "South Africa",
+        "percent": 67.3
+      },
+      {
+        "country": "South Sudan",
+        "percent": 64.2
+      },
+      {
+        "country": "Uganda",
+        "percent": 62.4
+      },
+      {
+        "country": "Ethiopia",
+        "percent": 41.75
+      }
+    ],
+    "significant_risk_factors_pooled": {
+      "wash_related": {
+        "poor_handwashing": {
+          "aor": 4.69,
+          "ci_95": [
+            2.44,
+            9.04
+          ],
+          "impact": "Strongest modifiable risk factor"
+        },
+        "unimproved_water_source": {
+          "aor": 1.68,
+          "ci_95": [
+            1.44,
+            1.95
+          ]
+        },
+        "poor_solid_waste_management": {
+          "aor": 2.29,
+          "ci_95": [
+            1.64,
+            3.2
+          ]
+        },
+        "poor_liquid_waste_management": {
+          "aor": 1.72,
+          "ci_95": [
+            1.71,
+            1.723
+          ]
+        },
+        "lack_of_latrine": {
+          "aor": 1.17,
+          "ci_95": [
+            1.13,
+            1.22
+          ]
+        }
+      },
+      "child_factors": {
+        "age_6_11_months": {
+          "aor": 1.72,
+          "ci_95": [
+            1.61,
+            1.84
+          ],
+          "risk_note": "Highest vulnerability due to mobility and exposure"
+        },
+        "age_12_23_months": {
+          "aor": 2.92,
+          "ci_95": [
+            1.6,
+            5.31
+          ]
+        },
+        "no_exclusive_breastfeeding": {
+          "aor": 3.06,
+          "ci_95": [
+            2.12,
+            4.43
+          ]
+        }
+      },
+      "household_and_social": {
+        "more_than_two_under_five_children": {
+          "aor": 1.48,
+          "ci_95": [
+            1.28,
+            1.71
+          ]
+        },
+        "large_family_size": {
+          "aor": 2.34,
+          "ci_95": [
+            1.42,
+            3.85
+          ]
+        },
+        "maternal_or_caregiver_illiteracy": {
+          "aor": 2.43,
+          "ci_95": [
+            1.95,
+            3.03
+          ]
+        },
+        "low_socioeconomic_status": {
+          "aor": 1.44,
+          "ci_95": [
+            1.1,
+            1.88
+          ]
+        }
+      }
+    },
+    "protective_factors": {
+      "protected_water_source": {
+        "aor": 0.29,
+        "ci_95": [
+          0.18,
+          0.48
+        ],
+        "risk_reduction_percent": 71
+      },
+      "ventilated_improved_pit_latrine": {
+        "aor": 0.85,
+        "ci_95": [
+          0.77,
+          0.95
+        ]
+      }
+    },
+    "heterogeneity_and_bias": {
+      "publication_bias": {
+        "egger_test_p": 0.001,
+        "adjustment": "Trim-and-fill applied"
+      },
+      "meta_regression": {
+        "publication_year": "Not significant",
+        "sample_size": "Not significant",
+        "region": "Not significant"
+      },
+      "sensitivity_analysis": "Stable results; no single study altered pooled estimate"
+    },
+    "diarrhea_definition_and_types": {
+      "clinical_definition": "Frequent passage of loose or watery stools",
+      "classification_by_duration": {
+        "acute": "<14 days",
+        "persistent": "≥14 days"
+      },
+      "classification_by_presentation": {
+        "noninflammatory": "Watery diarrhea",
+        "inflammatory": {
+          "alias": "Dysentery",
+          "feature": "Blood and mucus in stool"
+        }
+      }
+    },
+    "diarrhea_malnutrition_interaction": {
+      "relationship": "Bidirectional",
+      "malnutrition_effects": [
+        "Increased incidence of diarrhea",
+        "Longer duration",
+        "Greater severity",
+        "Higher fatality risk"
+      ],
+      "diarrhea_effects_on_nutrition": [
+        "Reduced food intake",
+        "Malabsorption of macro- and micronutrients",
+        "Direct nutrient loss",
+        "Increased metabolic demand"
+      ],
+      "growth_impact": {
+        "weight_loss": "≈0.5 kg/year (dysentery)",
+        "height_loss": "≈1.25 cm/year (dysentery)",
+        "growth_retardation_contribution_percent": "10–80"
+      }
+    },
+    "immunological_mechanisms": {
+      "effects_of_malnutrition": [
+        "Impaired cell-mediated immunity",
+        "Reduced IgA-producing cells in intestinal mucosa",
+        "Flattened intestinal villi",
+        "Reduced gastric acid secretion"
+      ],
+      "micronutrient_deficiencies": [
+        "Vitamin A",
+        "Zinc",
+        "Iron",
+        "Folic acid",
+        "Pyridoxine"
+      ],
+      "vicious_cycle": "Infection → immune suppression → diarrhea → malnutrition → infection"
+    },
+    "nutrient_malabsorption": {
+      "rotavirus": {
+        "fat_absorption_reduction_percent": 42,
+        "carbohydrate_absorption_reduction_percent": 48,
+        "total_carbohydrate_loss_percent": 55
+      },
+      "shigellosis": {
+        "protein_loss": "High",
+        "vitamin_a_loss": "High"
+      },
+      "giardiasis": {
+        "vitamin_a_malabsorption": true
+      },
+      "zinc_loss": "Negative zinc balance during diarrhea"
+    },
+    "clinical_management": {
+      "core_components": [
+        "Fluid and electrolyte replacement",
+        "Zinc supplementation",
+        "Antimicrobial therapy when indicated",
+        "Continued feeding"
+      ]
+    },
+    "rehydration_therapy": {
+      "ors_standard": {
+        "sodium_mmol_per_l": 90,
+        "glucose_mmol_per_l": 111,
+        "osmolarity_mosm_per_l": 311
+      },
+      "ors_low_osmolarity": {
+        "sodium_mmol_per_l": 75,
+        "glucose_mmol_per_l": 75,
+        "osmolarity_mosm_per_l": 245,
+        "benefits": {
+          "iv_fluid_reduction_percent": 33,
+          "stool_output_reduction_percent": 20,
+          "vomiting_reduction_percent": 30
+        }
+      },
+      "coverage_gap": {
+        "children_receiving_ors_percent": 20,
+        "barriers": [
+          "Lack of awareness",
+          "Limited access",
+          "Perception ORS is not a medicine"
+        ],
+        "decline_countries_count": 23,
+        "decline_africa_count": 14,
+        "key_barriers": [
+          "Lack of caregiver confidence",
+          "Limited access",
+          "Low awareness"
+        ]
+      },
+      "problem": "Diarrheal deaths caused primarily by severe dehydration",
+      "ors_ort": {
+        "definition": "Replacement of fluids and electrolytes lost during diarrhea",
+        "effectiveness": {
+          "dehydration_reversal_percent": 90,
+          "lives_saved_since_1970s": 50000000
+        },
+        "cost_usd_per_treatment": "<0.30"
+      },
+      "low_osmolarity_ors": {
+        "introduced_year": 2001,
+        "benefits_vs_old_formula": {
+          "iv_fluid_reduction_percent": 33,
+          "stool_volume_reduction_percent": 25,
+          "vomiting_reduction_percent": 30
+        },
+        "recommended_by": [
+          "WHO",
+          "UNICEF"
+        ]
+      }
+    },
+    "zinc_and_vitamin_a": {
+      "zinc": {
+        "dose_mg_per_day": "10–20",
+        "duration_days": "10–14",
+        "effects": [
+          "Reduced duration",
+          "Reduced severity",
+          "Improved gut repair",
+          "Enhanced immunity"
+        ]
+      },
+      "vitamin_a": {
+        "indication": "Deficiency or severe diarrhea",
+        "dose_units": {
+          "children": 200000,
+          "infants": 100000
+        },
+        "benefits": [
+          "Reduced mortality",
+          "Prevention of blindness",
+          "Improved immune response"
+        ]
+      }
+    },
+    "feeding_recommendations": {
+      "general": "Continue normal feeding during diarrhea",
+      "breastfeeding": {
+        "recommendation": "Always continue",
+        "benefits": [
+          "Reduced stool volume",
+          "Shorter duration",
+          "Better hydration"
+        ]
+      },
+      "energy_needs": {
+        "convalescent_phase_kj_per_kg_per_day": "100–160",
+        "feeding_frequency": "≥6 times/day"
+      }
+    },
+    "persistent_diarrhea": {
+      "incidence_percent": 10,
+      "association": [
+        "Severe malnutrition",
+        "High mortality risk"
+      ],
+      "management_focus": [
+        "Nutritional rehabilitation",
+        "Micronutrient supplementation",
+        "Treatment of systemic infections"
+      ]
+    },
+    "severe_malnutrition_management": {
+      "rehydration": {
+        "route": "Oral or nasogastric preferred",
+        "iv_fluids": "Avoid unless shock",
+        "potassium_supplementation": {
+          "dose_ml_per_kg_per_day": 4,
+          "duration_days": 14
+        }
+      },
+      "feeding": {
+        "marasmus_kcal_per_kg_per_day": 110,
+        "kwashiorkor_start_kcal_per_kg_per_day": 50,
+        "feeding_interval": "Every 2 hours"
+      }
+    },
+    "global_context": {
+      "leading_child_killers": [
+        "Diarrheal disease",
+        "Acute respiratory infections (pneumonia)"
+      ],
+      "key_message": "Most diarrheal deaths are preventable with low-cost, proven interventions"
+    },
+    "handwashing_and_hygiene": {
+      "behavior_change_note": "Most effective when combined with sanitation and hygiene packages",
+      "impact_statistics": {
+        "optimal_handwashing_with_soap": {
+          "diarrhea_reduction_percent": 45,
+          "respiratory_infection_reduction_percent": 33
+        },
+        "sanitation_plus_hygiene": {
+          "diarrhea_reduction_percent": 65
+        }
+      },
+      "chatbot_guidance": [
+        "Wash hands with soap after toilet use",
+        "Wash hands before preparing food",
+        "Wash hands before feeding children"
+      ]
+    },
+    "infant_and_young_child_feeding": {
+      "highest_risk_period": "Introduction of foods other than breast milk",
+      "mortality_risk_ratios": {
+        "not_breastfed_under_2_months": {
+          "risk_multiplier": 25,
+          "cause": "Dehydration due to diarrhea"
+        },
+        "cow_milk_fed_infants": {
+          "risk_multiplier": 18,
+          "comparison": "Exclusively breastfed infants"
+        }
+      },
+      "exclusive_breastfeeding": {
+        "recommended_duration_months": 6,
+        "continued_breastfeeding_months": "6–24",
+        "mechanisms_of_protection": [
+          "Avoids contaminated food and water",
+          "Provides antibodies and immune factors",
+          "Anti-inflammatory and immunomodulatory effects"
+        ],
+        "global_coverage_issue": {
+          "exclusively_breastfed_first_4_months_percent": 35
+        },
+        "lives_saved_annually_estimate": 1500000
+      },
+      "relative_risk_table_summary": {
+        "diarrhea_mortality_under_2_months": {
+          "breast_only": 1.0,
+          "breast_plus_other": 3.1,
+          "other_only": 24.7
+        },
+        "diarrhea_mortality_2_11_months": {
+          "breast_only": 1.0,
+          "breast_plus_other": 2.5,
+          "other_only": 3.5
+        }
+      }
+    },
+    "rotavirus_and_vaccination": {
+      "disease_burden": {
+        "annual_child_deaths": 500000,
+        "global_exposure": "Nearly every child infected by age 3"
+      },
+      "vaccines": {
+        "licensed_vaccines": [
+          {
+            "name": "Rotarix",
+            "manufacturer": "GlaxoSmithKline"
+          },
+          {
+            "name": "RotaTeq",
+            "manufacturer": "Merck"
+          }
+        ],
+        "efficacy_against_severe_rotavirus_percent": "90–100",
+        "hospitalization_reduction_us_percent": 80
+      },
+      "future_impact": {
+        "annual_deaths_preventable": 225000,
+        "twenty_year_projection_lives_saved": 2500000
+      }
+    },
+    "zinc_and_micronutrients": {
+      "zinc": {
+        "role": "Restores gut integrity and immune function",
+        "administration": [
+          "Syrup",
+          "Dispersible tablet"
+        ],
+        "recommended_duration_days": "10–14",
+        "benefits": {
+          "acute_diarrhea_duration_reduction_percent": 25,
+          "persistent_diarrhea_duration_reduction_percent": 29,
+          "treatment_failure_or_death_reduction_percent": 40,
+          "future_diarrhea_prevention_months": 3
+        }
+      },
+      "vitamin_a": {
+        "risk_increase_if_deficient": {
+          "diarrhea_mortality_multiplier": 2
+        },
+        "supplementation_benefits": {
+          "overall_child_mortality_reduction_percent": 23,
+          "diarrhea_mortality_reduction_percent": 32
+        }
+      }
+    },
+    "water_and_sanitation": {
+      "contaminated_water": "Major cause of diarrheal disease",
+      "household_water_disinfection": {
+        "example_program": "POUZN (India)",
+        "expected_impact": "50% reduction in diarrhea cases"
+      },
+      "equity_issue": {
+        "poorest_households": {
+          "higher_diarrhea_deaths": true,
+          "lower_ort_use": true
+        }
+      }
+    },
+    "integrated_strategy": {
+      "core_interventions": [
+        "Exclusive breastfeeding",
+        "Handwashing with soap",
+        "Improved sanitation",
+        "Safe drinking water",
+        "ORS and ORT",
+        "Zinc supplementation",
+        "Rotavirus vaccination",
+        "Vitamin A supplementation"
+      ],
+      "principle": "No single intervention is sufficient",
+      "policy_message": "Prevention and treatment must be implemented together"
+    },
+    "future_directions": {
+      "new_interventions_under_development": [
+        "ETEC vaccines",
+        "Shigella vaccines",
+        "Affordable cholera vaccines",
+        "Starch-based ORS",
+        "Point-of-care diagnostics (lab-on-a-card)"
+      ]
+    },
+    "definitions_and_classification": {
+      "clinical_definition": "Frequent passage of loose or watery stools",
+      "major_clinical_presentations": [
+        {
+          "type": "Acute watery diarrhea",
+          "primary_risk": "Dehydration",
+          "mortality_driver": "Fluid loss and shock"
+        },
+        {
+          "type": "Acute inflammatory diarrhea",
+          "alias": "Bloody diarrhea / dysentery",
+          "primary_risk": "Intestinal tissue damage and malnutrition"
+        },
+        {
+          "type": "Persistent diarrhea",
+          "duration": "≥14 days",
+          "primary_risk": "High mortality and severe malnutrition"
+        }
+      ],
+      "acute_diarrhea": {
+        "definition": "Three or more loose or watery stools in 24 hours"
+      },
+      "dysentery": {
+        "definition": "Diarrhea with visible blood and mucus",
+        "implication": "Invasive or cytotoxic pathogens"
+      },
+      "persistent_diarrhea": {
+        "definition": "Diarrhea lasting more than 14 days",
+        "risk": "High mortality and malnutrition"
+      },
+      "pathophysiologic_types": {
+        "watery": {
+          "mechanism": "Enterotoxin-induced hypersecretion without mucosal damage"
+        },
+        "inflammatory": {
+          "mechanism": "Mucosal invasion or cytotoxic injury",
+          "stool_features": [
+            "Mucus",
+            "Leukocytes",
+            "Sometimes blood"
+          ]
+        },
+        "dysenteric": {
+          "mechanism": "Severe mucosal damage",
+          "stool_features": [
+            "Always blood",
+            "Mucus"
+          ]
+        }
+      }
+    },
+    "incidence_and_age_pattern": {
+      "average_episodes_per_child_per_year": {
+        "lmics": 2.7,
+        "uncertainty_range": [
+          2.1,
+          3.2
+        ]
+      },
+      "severity_distribution": {
+        "mild_self_limited_percent": ">98",
+        "severe_percent": "0.5–2"
+      },
+      "age_peak": {
+        "highest_risk_months": "6–11",
+        "reasons": [
+          "Waning maternal immunity",
+          "Introduction of complementary foods",
+          "Increased infant mobility"
+        ]
+      },
+      "progression_risk": {
+        "watery_to_persistent_percent": "5–15",
+        "relative_risk_after_prolonged_diarrhea": 6.09
+      }
+    },
+    "etiology_and_pathogens": {
+      "major_mortality_contributors_percent": {
+        "rotavirus": 27.8,
+        "enteropathogenic_e_coli": 11.1
+      },
+      "major_moderate_to_severe_pathogens": [
+        "Rotavirus",
+        "Cryptosporidium",
+        "Enterotoxigenic E. coli",
+        "Shigella"
+      ],
+      "age_specific_patterns": {
+        "first_year": [
+          "Rotavirus",
+          "Cryptosporidium"
+        ],
+        "12_23_months": [
+          "Rotavirus",
+          "Shigella"
+        ],
+        "24_59_months": [
+          "Shigella",
+          "Rotavirus"
+        ]
+      }
+    },
+    "subclinical_infections_and_eed": {
+      "concepts": [
+        "Subclinical enteric infections",
+        "Environmental Enteric Dysfunction (EED)"
+      ],
+      "effects": [
+        "Chronic intestinal inflammation",
+        "Reduced nutrient absorption",
+        "Growth faltering and stunting",
+        "Poor vaccine response"
+      ],
+      "biomarkers": {
+        "intestinal_permeability": [
+          "Lactulose-to-mannitol ratio",
+          "Alpha-1 antitrypsin"
+        ],
+        "inflammation": [
+          "Myeloperoxidase",
+          "Neopterin",
+          "Calprotectin"
+        ]
+      }
+    },
+    "interventions": {
+      "therapeutic": {
+        "ors": {
+          "mortality_prevention_percent": 93,
+          "mechanism": "Preserved sodium–glucose co-transport",
+          "recommended_formulation": "Low-osmolarity ORS"
+        },
+        "zinc": {
+          "dose_days": "10–14",
+          "benefits": [
+            "Reduced duration",
+            "Reduced severity",
+            "Reduced treatment failure or death"
+          ]
+        },
+        "antibiotics": {
+          "indicated_for": [
+            "Bloody diarrhea",
+            "Dysentery"
+          ],
+          "not_indicated_for": [
+            "Uncomplicated watery diarrhea"
+          ]
+        }
+      },
+      "preventive": {
+        "exclusive_breastfeeding": {
+          "protective_effect": "Strongest modifiable factor",
+          "effect_on_prolonged_diarrhea": "Major reduction"
+        },
+        "vaccines": {
+          "rotavirus": {
+            "preventable_deaths_per_year": "70,000–85,000",
+            "hospitalization_reduction_percent": 94
+          },
+          "cholera": {
+            "global_cases_per_year": 2800000,
+            "global_deaths_per_year": 91000
+          }
+        },
+        "wash": {
+          "improved_water_risk_reduction_percent": 17,
+          "improved_sanitation_risk_reduction_percent": 36,
+          "handwashing_with_soap_risk_reduction_percent": 45
+        }
+      }
+    },
+    "nutrition_and_recovery": {
+      "bidirectional_relationship": "Diarrhea ↔ Malnutrition",
+      "feeding_guidance": [
+        "Continue feeding during diarrhea",
+        "Continue breastfeeding always",
+        "No need for specialized diets in most cases"
+      ],
+      "zinc_prevention_effect": {
+        "diarrhea_incidence_reduction_percent": 13
+      }
+    },
+    "cost_effectiveness": {
+      "most_cost_effective": [
+        "ORS",
+        "Zinc supplementation",
+        "Rotavirus vaccination",
+        "Household water treatment"
+      ],
+      "moderate_cost_effectiveness": [
+        "Sanitation",
+        "Piped water",
+        "Cholera vaccine (selected settings)"
+      ]
+    },
+    "geographical_distribution": {
+      "regions_with_highest_burden": [
+        "Sub-Saharan Africa",
+        "South Asia"
+      ],
+      "share_of_global_deaths_percent": {
+        "africa_and_south_asia": ">80"
+      },
+      "top_15_countries_by_deaths_2004": [
+        {
+          "country": "India",
+          "deaths": 386600
+        },
+        {
+          "country": "Nigeria",
+          "deaths": 151700
+        },
+        {
+          "country": "DR Congo",
+          "deaths": 89900
+        },
+        {
+          "country": "Afghanistan",
+          "deaths": 82100
+        },
+        {
+          "country": "Ethiopia",
+          "deaths": 73700
+        },
+        {
+          "country": "Pakistan",
+          "deaths": 53300
+        },
+        {
+          "country": "Bangladesh",
+          "deaths": 50800
+        },
+        {
+          "country": "China",
+          "deaths": 40000
+        },
+        {
+          "country": "Uganda",
+          "deaths": 29300
+        },
+        {
+          "country": "Kenya",
+          "deaths": 27400
+        },
+        {
+          "country": "Niger",
+          "deaths": 26400
+        },
+        {
+          "country": "Burkina Faso",
+          "deaths": 24300
+        },
+        {
+          "country": "Tanzania",
+          "deaths": 23900
+        },
+        {
+          "country": "Mali",
+          "deaths": 20900
+        },
+        {
+          "country": "Angola",
+          "deaths": 19700
+        }
+      ]
+    },
+    "age_and_vulnerability": {
+      "highest_risk_age": "First two years of life",
+      "reasons": [
+        "Immature immune system",
+        "Higher body water proportion",
+        "Higher metabolic rate",
+        "Limited kidney ability to conserve water",
+        "Introduction of contaminated complementary foods"
+      ]
+    },
+    "main_types_of_diarrhoea": {
+      "acute_watery": {
+        "duration": "Hours to days",
+        "primary_risk": "Severe dehydration",
+        "common_pathogens": [
+          "Rotavirus",
+          "Enterotoxigenic E. coli",
+          "Vibrio cholerae"
+        ]
+      },
+      "bloody_diarrhoea": {
+        "alias": "Dysentery",
+        "primary_risk": "Intestinal damage and nutrient loss",
+        "main_pathogen": "Shigella"
+      },
+      "persistent_diarrhoea": {
+        "duration": "14 days or more",
+        "high_risk_groups": [
+          "Undernourished children",
+          "Children with HIV"
+        ],
+        "mortality_risk": "Very high"
+      }
+    },
+    "causes_and_transmission": {
+      "pathogen_categories": {
+        "viral": [
+          "Rotavirus",
+          "Norovirus",
+          "Adenovirus"
+        ],
+        "bacterial": [
+          "E. coli",
+          "Shigella",
+          "Campylobacter",
+          "Salmonella",
+          "Vibrio cholerae"
+        ],
+        "protozoal": [
+          "Cryptosporidium",
+          "Giardia"
+        ]
+      },
+      "transmission_route": "Fecal–oral",
+      "common_pathways": [
+        "Contaminated water",
+        "Contaminated food",
+        "Unwashed hands",
+        "Unsafe disposal of child faeces"
+      ]
+    },
+    "nutrition_and_diarrhoea_cycle": {
+      "relationship": "Bidirectional",
+      "effects_of_undernutrition": [
+        "More severe diarrhoea",
+        "Longer duration",
+        "Higher mortality risk"
+      ],
+      "effects_of_diarrhoea": [
+        "Reduced nutrient absorption",
+        "Loss of appetite",
+        "Increased stunting risk"
+      ],
+      "stunting_link": {
+        "risk_increases_with_each_episode": true
+      }
+    },
+    "hiv_interaction": {
+      "increased_risk": true,
+      "persistent_diarrhoea_mortality_multiplier": 11,
+      "management": "Same diarrhoea treatment principles as non-HIV children, plus ART evaluation"
+    },
+    "prevention_measures": {
+      "water_sanitation_hygiene": {
+        "attributable_deaths_percent": 88,
+        "handwashing_with_soap": {
+          "diarrhoea_reduction_percent": ">40"
+        },
+        "improved_sanitation": {
+          "median_incidence_reduction_percent": 36
+        },
+        "household_water_treatment": {
+          "incidence_reduction_percent": "Up to 47"
+        }
+      },
+      "breastfeeding": {
+        "exclusive_first_6_months": "Strong protection",
+        "mortality_risk_if_not_breastfed_under_2_months": "6x higher",
+        "current_coverage_percent": 37
+      },
+      "micronutrients": {
+        "vitamin_a": {
+          "mortality_reduction_percent_range": [
+            19,
+            54
+          ]
+        },
+        "zinc": {
+          "reduces_incidence": true
+        }
+      },
+      "immunization": {
+        "rotavirus": {
+          "share_of_hospitalizations_percent": 40,
+          "annual_deaths": "350,000–600,000",
+          "who_recommendation": "Universal inclusion"
+        },
+        "measles": {
+          "diarrhoea_as_complication": true
+        }
+      }
+    },
+    "coverage_gaps": {
+      "ors_and_feeding_coverage_percent": 39,
+      "lowest_coverage_regions": [
+        "Africa",
+        "South Asia"
+      ],
+      "inequities": [
+        "Rural households",
+        "Poorest households"
+      ]
+    },
+    "seven_point_plan": {
+      "treatment_package": [
+        "Low-osmolarity ORS",
+        "Zinc supplementation",
+        "Continued feeding"
+      ],
+      "prevention_package": [
+        "Rotavirus and measles vaccination",
+        "Exclusive breastfeeding",
+        "Vitamin A supplementation",
+        "Handwashing with soap",
+        "Improved drinking water",
+        "Household water treatment and safe storage",
+        "Community-wide sanitation"
+      ]
+    },
+    "etiology_and_relative_frequency": {
+      "most_common_agents_percent": {
+        "rotavirus": 20,
+        "escherichia_coli": 11,
+        "campylobacter": 7,
+        "shigella": 5
+      },
+      "seasonality": {
+        "bacterial_and_parasitic": "Peak during summer or dry seasons"
+      }
+    },
+    "bacterial_pathogens": {
+      "escherichia_coli": {
+        "general": "Colonizes infant gut within hours of birth; most strains harmless",
+        "diarrheagenic_types": {
+          "ETEC": {
+            "presentation": "Acute watery secretory diarrhea"
+          },
+          "EPEC": {
+            "presentation": "Watery diarrhea",
+            "high_risk_age": "<2 years, especially <6 months"
+          },
+          "EIEC": {
+            "presentation": "Bloody mucoid diarrhea with fever"
+          },
+          "EHEC": {
+            "presentation": "Bloody diarrhea",
+            "complication": {
+              "hemolytic_uremic_syndrome_percent": "6–8"
+            }
+          },
+          "EAggEC": {
+            "presentation": "Watery or persistent diarrhea",
+            "special_population": "HIV-infected children"
+          }
+        }
+      },
+      "shigella": {
+        "annual_dysenteric_cases": 160000000,
+        "most_affected": "Toddlers and older children",
+        "subgroups": {
+          "S_flexneri": "Most common in developing countries, persistent illness",
+          "S_sonnei": "Milder disease, common in developed countries",
+          "S_dysenteriae_type_1": {
+            "severity": "Very severe epidemics",
+            "case_fatality_percent": "Up to 10"
+          }
+        }
+      },
+      "campylobacter": {
+        "presentation": [
+          "Watery diarrhea",
+          "Sometimes dysentery"
+        ],
+        "peak_age": "<2 years",
+        "risk_factors": [
+          "Presence of animals in cooking area",
+          "Poultry exposure"
+        ],
+        "complication": "Rare Guillain–Barré syndrome"
+      },
+      "vibrio_cholerae": {
+        "key_serogroups": [
+          "O1",
+          "O139"
+        ],
+        "hallmark": "Massive fluid loss",
+        "death_without_treatment": "Within 12–18 hours",
+        "stool_description": "Watery, colorless, mucus flecks",
+        "special_risks": [
+          "Hypoglycemia",
+          "Electrolyte imbalance"
+        ]
+      },
+      "salmonella": {
+        "reservoir": "Animals",
+        "common_features": [
+          "Fever",
+          "Vomiting",
+          "Watery diarrhea"
+        ],
+        "bacteremia_percent": "1–5",
+        "typhoid_fever": {
+          "annual_cases": 21000000,
+          "annual_deaths": 600000,
+          "complications": [
+            "Intestinal perforation",
+            "Hemorrhage",
+            "Shock",
+            "Meningitis"
+          ]
+        }
+      }
+    },
+    "viral_pathogens": {
+      "rotavirus": {
+        "global_deaths_per_year": 500000,
+        "hospitalization_share_percent": 33,
+        "peak_age_months": "4–23",
+        "immunity": "Repeated infections confer increasing protection"
+      }
+    },
+    "parasitic_pathogens": {
+      "giardia_lamblia": {
+        "prevalence_percent_developing_regions": "20–30",
+        "features": [
+          "Often asymptomatic",
+          "Chronic infection causes malabsorption"
+        ],
+        "nutrient_losses": [
+          "Lipids",
+          "Lactose",
+          "Vitamin A",
+          "Vitamin B12"
+        ]
+      },
+      "entamoeba_histolytica": {
+        "asymptomatic_carriers_percent": 90,
+        "acute_features": [
+          "Bloody diarrhea",
+          "Abdominal pain",
+          "Asthenia"
+        ],
+        "complications": [
+          "Liver abscess",
+          "Rare cerebral abscess"
+        ]
+      }
+    },
+    "dehydration_assessment": {
+      "categories": [
+        "No dehydration",
+        "Some dehydration",
+        "Severe dehydration"
+      ],
+      "severe_signs": [
+        "Lethargy or unconsciousness",
+        "Sunken eyes",
+        "Very slow skin pinch",
+        "Poor drinking"
+      ]
+    },
+    "antimicrobial_therapy": {
+      "general_rule": "Not routinely recommended",
+      "indications": [
+        "Cholera",
+        "Dysentery",
+        "Severe bacterial infection",
+        "Immunocompromised child"
+      ],
+      "examples": {
+        "shigella": [
+          "Ciprofloxacin",
+          "TMP/SMX"
+        ],
+        "cholera": [
+          "Doxycycline (>8 years)",
+          "TMP/SMX"
+        ],
+        "giardia": [
+          "Metronidazole"
+        ]
+      }
+    },
+    "micronutrient_supplementation": {
+      "zinc": {
+        "benefits": [
+          "Shorter duration",
+          "Reduced severity",
+          "Reduced mortality in persistent diarrhea (up to 75%)"
+        ]
+      },
+      "vitamin_a": {
+        "evidence": "Inconsistent benefit for acute diarrhea"
+      }
+    },
+    "epidemiology_summary": {
+      "episodes_per_child_per_year": 3,
+      "highest_mortality_age": "<1 year",
+      "trend": {
+        "mortality": "Decreasing",
+        "morbidity": "Stable"
+      }
+    },
+    "study_design": {
+      "type": "Age-stratified matched case-control study",
+      "dataset": "GBD 2019",
+      "coverage": {
+        "countries": 204,
+        "diseases": 369,
+        "risk_factors": 87
+      },
+      "etiologies_analyzed": 13,
+      "risk_factors_analyzed": 20,
+      "stratification": [
+        "Age group",
+        "Sex",
+        "Year"
+      ],
+      "population": "Children 0–59 months",
+      "cases_definition": {
+        "diarrhea": "≥3 loose stools in 24 hours with onset ≤7 days",
+        "moderate_to_severe_criteria": [
+          "Sunken eyes",
+          "Decreased skin turgor",
+          "IV hydration",
+          "Blood in stool",
+          "Hospital admission recommended"
+        ]
+      },
+      "sample_size": {
+        "total_cases": 4606,
+        "by_country": {
+          "Gambia": 1574,
+          "Mali": 1550,
+          "Kenya": 1482
+        }
+      }
+    },
+    "mortality_burden_2019": {
+      "all_ages": {
+        "deaths": 632344.7,
+        "uncertainty_interval": [
+          358561,
+          1056036
+        ],
+        "mortality_rate_per_100k": 45.46,
+        "ui_rate": [
+          25.78,
+          75.93
+        ]
+      },
+      "under_5": {
+        "deaths": 55309.61,
+        "uncertainty_interval": [
+          39882.77,
+          73621.29
+        ],
+        "mortality_rate_per_100k": 47.24,
+        "ui_rate": [
+          34.06,
+          62.88
+        ]
+      }
+    },
+    "age_specific_mortality_2019": {
+      "5_14_years": {
+        "mortality_rate": 6.31
+      },
+      "15_49_years": {
+        "mortality_rate": 6.65
+      },
+      "50_69_years": {
+        "mortality_rate": 62.76
+      },
+      "70_plus_years": {
+        "mortality_rate": 682.21,
+        "highest_risk_group": true
+      }
+    },
+    "sex_differences": {
+      "pattern": "Females have higher diarrhea mortality than males across all age groups",
+      "under_5": {
+        "male_mortality_rate": 36.53,
+        "female_mortality_rate": 59.01
+      },
+      "70_plus": {
+        "male_mortality_rate": 495.2,
+        "female_mortality_rate": 846.84
+      }
+    },
+    "time_trends_mortality": {
+      "all_ages": {
+        "1990_rate": 126,
+        "2019_rate": 45
+      },
+      "under_5": {
+        "1990_rate": 309,
+        "2019_rate": 47
+      },
+      "interpretation": "Strong decline in mortality across all ages, but diarrhea remains a major cause of death"
+    },
+    "dalys_burden": {
+      "all_ages_2019": {
+        "rate_per_100k": 1446
+      },
+      "under_5_2019": {
+        "rate_per_100k": 4283
+      },
+      "trend": {
+        "1990_to_2019": "DALYs declined substantially, but remain high in children under 5 and adults over 70"
+      }
+    },
+    "etiology_of_deaths_2019": {
+      "under_5_top_pathogens": [
+        {
+          "pathogen": "Adenovirus",
+          "deaths": 8864.36
+        },
+        {
+          "pathogen": "Campylobacter",
+          "deaths": 8435.41
+        },
+        {
+          "pathogen": "Cryptosporidium",
+          "deaths": 5074.18
+        }
+      ],
+      "all_ages_top_pathogens": [
+        {
+          "pathogen": "Campylobacter",
+          "deaths": 44353.98
+        },
+        {
+          "pathogen": "Cryptosporidium",
+          "deaths": 36007.17
+        },
+        {
+          "pathogen": "Norovirus",
+          "deaths": 29924.36
+        }
+      ],
+      "important_note": "Rotavirus is not the leading cause of death in India despite global trends"
+    },
+    "risk_factors_under_5": {
+      "environmental": {
+        "unsafe_water_sanitation_handwashing": {
+          "mortality_rate": 43.36
+        },
+        "unsafe_water_source": {
+          "mortality_rate": 38.6
+        },
+        "unsafe_sanitation": {
+          "mortality_rate": 22.36
+        }
+      },
+      "behavioral": {
+        "child_and_maternal_malnutrition": {
+          "mortality_rate": 44.36
+        },
+        "child_wasting": {
+          "mortality_rate": 35.46
+        },
+        "suboptimal_breastfeeding": {
+          "mortality_rate": 8.78
+        },
+        "low_birth_weight": {
+          "mortality_rate": 6.91
+        },
+        "vitamin_a_deficiency": {
+          "mortality_rate": 1.02
+        }
+      }
+    },
+    "risk_factors_all_ages": {
+      "dominant_risk": "Unsafe water sources",
+      "environmental_mortality_rate": 41.31
+    },
+    "policy_recommendations": {
+      "priority_interventions": [
+        "Universal access to safe drinking water",
+        "Improved household sanitation",
+        "Promotion of exclusive breastfeeding",
+        "Nutrition support for mothers and children",
+        "Safe stool disposal",
+        "Rotavirus vaccination",
+        "Strengthened diarrhea case management"
+      ],
+      "policy_message": "Declining burden does not justify reduced investment"
+    },
+    "problem_statement": {
+      "core_issue": "Diarrhoeal diseases are a leading cause of morbidity and mortality among children under 5 in developing countries",
+      "estimated_burden_1980s": {
+        "annual_child_deaths_under_5": 5000000,
+        "average_episodes_per_100_children_per_year": 220,
+        "deaths_per_100_children_per_year": 1.4
+      },
+      "policy_constraint": {
+        "primary_health_care_budget_usd_per_capita": "1–5",
+        "implication": "Only highly cost-effective interventions are feasible"
+      }
+    },
+    "strategic_principle": {
+      "key_insight": "Oral rehydration alone is insufficient",
+      "recommended_approach": "Multifaceted, mutually reinforcing interventions",
+      "reasoning": [
+        "ORS reduces mortality but not morbidity",
+        "ORS has limited impact on dysentery and persistent diarrhoea",
+        "Operational constraints limit ORS coverage",
+        "Transmission and nutrition factors must be addressed"
+      ]
+    },
+    "four_part_cdd_strategy": {
+      "1_case_management": {
+        "goal": "Reduce mortality during diarrhoeal episodes",
+        "components": [
+          "Early use of oral rehydration therapy (ORT)",
+          "Home-based ORS administration",
+          "ORS use at health facilities",
+          "Appropriate feeding during illness and recovery",
+          "Selective use of drugs when indicated"
+        ]
+      },
+      "2_increasing_host_resistance": {
+        "goal": "Reduce susceptibility and severity",
+        "components": [
+          "Improved maternal nutrition (prenatal and postnatal)",
+          "Exclusive breastfeeding (4–6 months)",
+          "Improved weaning practices (4–18 months)",
+          "Supplementary feeding (6–59 months)",
+          "Growth monitoring using growth charts",
+          "Immunization (measles, rotavirus, cholera when available)"
+        ]
+      },
+      "3_reducing_transmission": {
+        "goal": "Interrupt fecal–oral spread",
+        "components": [
+          "Improved water supply",
+          "Improved excreta disposal",
+          "Handwashing and personal hygiene",
+          "Domestic hygiene",
+          "Food hygiene (safe preparation and storage)",
+          "Control of zoonotic reservoirs",
+          "Fly control"
+        ]
+      },
+      "4_epidemic_control": {
+        "goal": "Prevent and control outbreaks",
+        "components": [
+          "Epidemic surveillance",
+          "Early outbreak investigation",
+          "Rapid implementation of control measures"
+        ]
+      }
+    },
+    "classification_of_interventions": {
+      "category_1": {
+        "definition": "Proven effective, feasible, and affordable",
+        "examples": [
+          "Oral rehydration therapy",
+          "Continued feeding",
+          "Breastfeeding promotion"
+        ],
+        "policy_action": "Immediate scale-up"
+      },
+      "category_2": {
+        "definition": "Theoretically effective but insufficient field evidence",
+        "examples": [
+          "Supplementary feeding",
+          "Improved hygiene behaviors",
+          "New vaccines (at the time)"
+        ],
+        "policy_action": "Field research and pilot programs"
+      },
+      "category_3": {
+        "definition": "Ineffective, infeasible, or too costly",
+        "policy_action": "Not recommended"
+      }
+    },
+    "measles_and_diarrhoea_link": {
+      "key_finding": "A substantial proportion of diarrhoeal deaths are measles-associated",
+      "measles_associated_diarrhoea": {
+        "with_measles": "1 week before to 4 weeks after rash",
+        "post_measles": "4–26 weeks after rash"
+      },
+      "estimated_impact": {
+        "diarrhoea_episodes_attributable_percent": "1–7",
+        "diarrhoea_deaths_attributable_percent": "9–77"
+      },
+      "immunization_effect": {
+        "diarrhoea_morbidity_reduction_percent": "0.6–3.8",
+        "diarrhoea_mortality_reduction_percent": "6–26",
+        "coverage_dependency": true
+      }
+    },
+    "cost_effectiveness_logic": {
+      "core_rule": "Interventions must reduce large disease burden at low cost",
+      "ors": {
+        "effect": "Major mortality reduction",
+        "cost": "Very low",
+        "priority": "Highest"
+      },
+      "immunization": {
+        "effect": "Reduces deaths not prevented by ORS",
+        "cost": "Moderate",
+        "priority": "High"
+      },
+      "infrastructure": {
+        "effect": "Reduces transmission",
+        "cost": "High",
+        "priority": "Long-term investment"
+      }
+    },
+    "key_policy_conclusions": {
+      "no_single_solution": true,
+      "ors_is_essential_but_not_sufficient": true,
+      "integration_required": true,
+      "nutrition_and_hygiene_are_central": true,
+      "prevention_and_treatment_must_run_in_parallel": true
+    },
+    "historical_significance": {
+      "introduced": [
+        "ORS as cornerstone therapy",
+        "Integrated diarrhoeal disease control",
+        "Cost-effectiveness-based intervention selection"
+      ],
+      "influence": [
+        "WHO CDD Programme",
+        "UNICEF diarrhoea strategies",
+        "Modern IMCI guidelines"
+      ]
+    },
+    "persistent_diarrhea_epidemiology": {
+      "by_age_group": {
+        "0_11_months": 11.3,
+        "12_23_months": 9.9,
+        "24_59_months": 7.3
+      },
+      "by_country": {
+        "Kenya": 15.5,
+        "Gambia": 9.3,
+        "Mali": 4.3
+      },
+      "by_diarrhea_type": {
+        "watery": 9.7,
+        "bloody": 9.4
+      }
+    },
+    "etiology_by_syndrome": {
+      "acute_watery_diarrhea": {
+        "infants": {
+          "rotavirus": 0.16,
+          "cryptosporidium": 0.13
+        },
+        "older_children": {
+          "shigella": 0.17,
+          "campylobacter": "high",
+          "h_pylori": "moderate"
+        }
+      },
+      "bloody_diarrhea": {
+        "all_ages": {
+          "shigella": "dominant",
+          "campylobacter": "important contributor"
+        }
+      },
+      "persistent_watery_diarrhea": {
+        "infants": {
+          "cryptosporidium": 0.16,
+          "norovirus": 0.12
+        },
+        "toddlers": {
+          "shigella": 0.25,
+          "cryptosporidium": 0.23,
+          "st_etec": 0.2
+        },
+        "older_children": {
+          "st_etec": 0.21,
+          "cryptosporidium": 0.13,
+          "campylobacter": 0.1
+        }
+      }
+    },
+    "pathogens_and_pd_risk": {
+      "increased_odds": [
+        "Cryptosporidium"
+      ],
+      "decreased_odds": [
+        "Rotavirus",
+        "Shigella",
+        "Helicobacter pylori"
+      ]
+    },
+    "clinical_risk_factors_for_pd": {
+      "demographic": [
+        "Age <12 months",
+        "Residence in Kenya or The Gambia"
+      ],
+      "socioeconomic": [
+        "Caretaker education < primary school",
+        "No household electricity"
+      ],
+      "clinical": [
+        "Severe dehydration",
+        "Lethargy",
+        "High stool frequency (>5/day)",
+        "Severe Vesikari score"
+      ]
+    },
+    "nutrition_and_growth": {
+      "stunting": {
+        "categorical": "Not independently associated with PD",
+        "continuous_haz": "Lower HAZ trends toward higher PD risk"
+      },
+      "growth_faltering": {
+        "acute_watery_diarrhea": "Significant",
+        "persistent_watery_diarrhea": "Significant",
+        "persistent_bloody_diarrhea": "Not significant"
+      }
+    },
+    "treatment_effects": {
+      "antibiotics": {
+        "overall_pd_reduction": {
+          "with_antibiotics": 7.4,
+          "without_antibiotics": 10.1
+        },
+        "effective_for": [
+          "Shigella-associated diarrhea",
+          "Bloody diarrhea duration reduction"
+        ],
+        "not_effective_for": [
+          "Preventing PD in dysentery"
+        ]
+      },
+      "zinc": {
+        "coverage": {
+          "Kenya": 96.7,
+          "Mali": 5.7,
+          "Gambia": 48.5
+        },
+        "effect": "Reduced PD risk in The Gambia only"
+      }
+    },
+    "time_trends_gems_vs_vida": {
+      "mali": {
+        "pd_odds": "Significant decrease"
+      },
+      "kenya": {
+        "pd_odds": "Moderate decrease"
+      },
+      "gambia": {
+        "pd_odds": "More than two-fold increase"
+      }
+    },
+    "mortality_outcomes": {
+      "total_deaths": 37,
+      "pd_vs_non_pd": {
+        "pd": 1.36,
+        "non_pd": 0.69
+      },
+      "statistical_significance": false
+    },
+    "programmatic_implications": {
+      "clinical": [
+        "Early identification of high-risk infants",
+        "Aggressive management of dehydration",
+        "Targeted antibiotic use for shigellosis"
+      ],
+      "public_health": [
+        "Improve maternal education",
+        "Expand access to electricity and basic infrastructure",
+        "Accelerate Shigella vaccine development",
+        "Strengthen zinc use messaging"
+      ]
+    },
+    "chatbot_intents": [
+      "['What is diarrhoea', 'Types of diarrhoea', 'Causes of diarrhoea', 'How diarrhoea spreads']",
+      "['Does my child have dehydration', 'Is diarrhoea dangerous', 'How long is diarrhoea normal']",
+      "['How to prepare ORS', 'When to give zinc', 'Home care for diarrhoea', 'how_to_prepare_ors', 'when_to_give_zinc', 'when_to_use_antibiotics', 'when_to_use_ors', 'role_of_zinc', 'when_hospitalization_is_needed', 'how_to_use_ors', 'safe_home_management', 'is_diarrhea_treatable', 'should_i_continue_eating', 'when_to_use_medicine', 'what_to_eat_during_diarrhea']",
+      "['How to prevent diarrhoea', 'Importance of hand washing', 'Role of vaccines', 'vaccination_info', 'hygiene_practices', 'feeding_advice', 'how_to_prevent_diarrhoea', 'water_and_food_safety', 'vaccination_information', 'how_to_prevent_diarrhea', 'importance_of_handwashing', 'role_of_breastfeeding', 'water_safety_methods', 'role_of_vaccines', 'how_to_prevent_child_diarrhea', 'importance_of_sanitation', 'safe_child_feeding_practices']",
+      "['When to see a doctor', 'Emergency warning signs', 'emergency_signs', 'when_to_see_doctor', 'hospital_referral_decision', 'is_this_an_emergency', 'signs_of_dehydration', 'when_to_hospitalize']",
+      "['what_is_diarrhoea', 'types_of_diarrhoea', 'how_diarrhoea_spreads', 'what_is_diarrhoeal_disease', 'how_it_spreads', 'who_is_most_at_risk', 'what_is_diarrhea', 'why_diarrhea_is_dangerous', 'types_of_diarrhea', 'what_is_diarrheal_disease', 'global_burden_of_diarrhea', 'difference_between_diarrhea_and_dysentery', 'what_causes_childhood_diarrhea', 'importance_of_handwashing', 'what_is_the_global_burden_of_diarrhea', 'why_diarrhea_is_still_common', 'what_is_childhood_diarrhea', 'how_common_is_diarrhea_in_africa', 'why_diarrhea_kills_children', 'how_handwashing_prevents_diarrhea', 'why_children_die_from_diarrhea', 'what_is_paediatric_diarrhea', 'how_diarrhea_control_programs_work', 'why_measles_vaccine_reduces_diarrhea_deaths']",
+      "['is_my_child_dehydrated', 'bloody_stool_check', 'diarrhoea_duration_check', 'do_i_have_diarrhea', 'signs_of_dehydration']",
+      "['does_this_count_as_diarrhoea', 'signs_of_dehydration', 'is_it_severe', 'does_my_child_have_diarrhea', 'do_i_have_diarrhea']",
+      "['outbreak_alert', 'community_reporting', 'referral_guidance']",
+      "['signs_of_dehydration', 'is_this_dysentery', 'is_diarrhea_persistent']",
+      "['diarrhea_prevalence_in_children', 'risk_factors_in_conflict_zones', 'global_diarrhoea_burden', 'diarrhoea_deaths_in_children', 'incidence_of_diarrhoea_under_five', 'diarrhea_prevalence_in_rural_india', 'most_affected_children_groups']",
+      "['importance_of_breastfeeding', 'handwashing_and_water_safety', 'how_to_prevent_diarrhea_in_children', 'importance_of_clean_water', 'how_to_prevent_diarrhea', 'importance_of_handwashing_and_water', 'how_to_prevent_childhood_diarrhea', 'importance_of_vaccines_and_clean_water', 'role_of_breastfeeding_and_vaccines', 'role_of_handwashing_and_breastfeeding', 'importance_of_handwashing_and_sanitation', 'how_to_prevent_diarrhea_in_india', 'how_to_reduce_persistent_diarrhea', 'role_of_zinc_and_antibiotics']",
+      "['does_teething_cause_diarrhea', 'are_herbal_remedies_safe']",
+      "['is_diarrhoea_mortality_declining', 'why_diarrhoea_cases_are_still_high']",
+      "['why_infants_are_most_at_risk', 'role_of_malnutrition_and_hiv']",
+      "['impact_of_ors', 'imci_approach_explained']",
+      "['why_diarrhea_is_neglected', 'cost_effective_interventions', 'impact_of_vaccines']",
+      "['what_is_diarrhea', 'is_diarrhea_dangerous']",
+      "['is_my_child_at_risk', 'risk_factors_for_child_diarrhea', 'is_my_child_at_high_risk', 'why_children_get_diarrhea', 'is_my_child_at_risk_of_diarrhea', 'what_increases_diarrhea_risk', 'signs_of_severe_diarrhea', 'danger_signs_of_diarrhea', 'signs_of_dehydration', 'when_is_diarrhea_dangerous', 'who_is_most_at_risk_in_india', 'why_female_children_have_higher_risk', 'which_children_are_high_risk', 'why_infants_have_more_persistent_diarrhea']",
+      "['where_to_target_interventions', 'which_factors_matter_most', 'key_determinants_of_diarrhea', 'which_factors_are_modifiable', 'key_determinants_of_childhood_diarrhea', 'where_should_interventions_focus']",
+      "['what_is_childhood_diarrhea', 'how_common_is_diarrhea_in_east_africa']",
+      "['how_many_children_die_from_diarrhea', 'average_diarrhea_episodes_per_child', 'how_many_people_die_from_diarrhea_in_india', 'diarrhea_mortality_trends_india']",
+      "['has_diarrhea_mortality_decreased', 'why_morbidity_remains_high']",
+      "['what_interventions_reduce_diarrhea_deaths', 'role_of_ors_in_diarrhea_control']",
+      "['where_should_interventions_focus', 'most_effective_diarrhea_prevention_factors']",
+      "['how_diarrhea_causes_malnutrition', 'what_to_feed_during_diarrhea']",
+      "['how_to_use_ors', 'role_of_zinc_and_vitamin_a', 'how_to_prepare_and_use_ors', 'role_of_zinc_in_diarrhea', 'when_are_antibiotics_needed', 'why_zinc_is_important', 'how_to_prepare_ors']",
+      "['why_ors_coverage_is_low', 'how_to_reduce_childhood_diarrhea_deaths', 'most_effective_diarrhea_interventions', 'why_integrated_strategies_work']",
+      "['why_exclusive_breastfeeding_is_important', 'feeding_during_and_after_diarrhea']",
+      "['most_effective_diarrhea_interventions', 'why_mortality_fell_but_incidence_did_not', 'what_is_the_7_point_plan', 'why_diarrhea_remains_a_top_killer', 'what_interventions_reduce_diarrhea_deaths']",
+      "['leading_causes_of_diarrhea_deaths_in_india']",
+      "['why_ors_is_not_enough', 'what_is_the_cdd_strategy']",
+      "['which_interventions_are_most_cost_effective', 'how_to_prioritize_diarrhea_control']",
+      "['history_of_diarrhea_control', 'origin_of_ors_strategy']",
+      "['what_is_persistent_diarrhea', 'which_pathogens_cause_long_diarrhea', 'when_are_antibiotics_useful']",
+      "['vida_vs_gems_comparison', 'impact_of_rotavirus_vaccine']",
+      "['What is diarrhoea?', 'Causes of diarrhoea', 'Types of diarrhoea', 'Symptoms of dehydration', 'How to treat diarrhoea at home', 'When to see a doctor', 'How to prevent diarrhoea', 'Role of ORS and zinc', 'WHO guidelines on diarrhoea']",
+      "Declining substantially",
+      "Persistently high",
+      "Diarrhoea remains one of the leading causes of child illness and death",
+      "≈3 episodes per child per year in developing countries",
+      "Dehydration",
+      "Malnutrition",
+      "Diarrhea is both a fluid and nutritional disease",
+      "Diarrhea ↔ Malnutrition ↔ Immune deficiency",
+      "Second leading cause of death",
+      "525000",
+      "Leading cause of malnutrition in children under five",
+      "['Humanitarian emergencies', 'Displacement camps', 'Peri-urban slums', 'WASH infrastructure breakdown']"
+    ],
+    "summary_profile": {
+      "disease": "Diarrhoeal Disease",
+      "aliases": [
+        "Acute Diarrhea",
+        "Gastroenteritis",
+        "Infectious Diarrhea",
+        "Loose Motions",
+        "Traveler's Diarrhea",
+        "Acute Gastroenteritis (AGE)",
+        "Stomach Flu (viral)"
+      ],
+      "description": "Diarrhoeal disease is characterized by the passage of three or more loose or liquid stools per day. It is one of the most common health problems worldwide and a major cause of malnutrition and death, especially in children under 5 years. Most cases are caused by infectious agents (viruses, bacteria, or parasites) transmitted through contaminated food or water. While most episodes are self-limiting, severe or prolonged diarrhea can lead to dangerous dehydration and electrolyte imbalance.",
+      "common_symptoms": [
+        "Frequent loose or watery stools (3 or more times per day)",
+        "Abdominal cramps or pain",
+        "Nausea and vomiting",
+        "Bloating and gas",
+        "Mild to moderate dehydration",
+        "Loss of appetite",
+        "General weakness and fatigue",
+        "Low-grade fever (especially in bacterial or viral cases)"
+      ],
+      "severe_symptoms": [
+        "Bloody or black stools (dysentery)",
+        "High fever (>39°C)",
+        "Severe abdominal pain",
+        "Persistent vomiting preventing fluid intake",
+        "Signs of severe dehydration (sunken eyes, dry mouth, no tears, reduced urine)",
+        "Confusion or irritability",
+        "Rapid heartbeat and breathing",
+        "Seizures (especially in children)"
+      ],
+      "causes": [
+        "Viruses (Rotavirus, Norovirus, Adenovirus — most common in children)",
+        "Bacteria (Escherichia coli, Salmonella, Shigella, Campylobacter, Vibrio cholerae)",
+        "Parasites (Giardia, Entamoeba histolytica, Cryptosporidium)",
+        "Contaminated food and drinking water",
+        "Poor hand hygiene",
+        "Food poisoning",
+        "Antibiotic-associated diarrhea (Clostridium difficile)"
+      ],
+      "risk_factors": [
+        "Young children (especially under 5 years)",
+        "Elderly people",
+        "Malnutrition",
+        "Weakened immune system (HIV, cancer treatment)",
+        "Travel to areas with poor sanitation",
+        "Consumption of unsafe water or street food",
+        "Living in overcrowded conditions",
+        "Lack of breastfeeding in infants"
+      ],
+      "diagnosis_methods": [
+        "Clinical assessment based on history and symptoms",
+        "Stool examination and microscopy",
+        "Stool culture for bacterial pathogens",
+        "Rapid antigen tests for Rotavirus and Norovirus",
+        "PCR panel for multiple pathogens",
+        "Electrolyte and kidney function blood tests",
+        "Complete blood count"
+      ],
+      "treatment_options": [
+        "Oral Rehydration Therapy (ORT) is the cornerstone of treatment",
+        "Zinc supplementation (especially in children)",
+        "Continued feeding and nutrition",
+        "Antibiotics only for specific bacterial causes (e.g., cholera, severe shigellosis)",
+        "Antiparasitic drugs when parasites are identified",
+        "Intravenous fluids in severe dehydration or shock"
+      ],
+      "medications": [
+        "Oral Rehydration Salts (ORS)",
+        "Zinc sulfate (20 mg/day for 10–14 days in children)",
+        "Probiotics (Saccharomyces boulardii or Lactobacillus GG)",
+        "Racecadotril (for reducing stool output)",
+        "Antibiotics: Azithromycin, Ciprofloxacin, or Doxycycline (only when indicated)",
+        "Metronidazole or Tinidazole (for amoebiasis or giardiasis)",
+        "Paracetamol for fever and discomfort"
+      ],
+      "lifestyle_home_remedies": [
+        "Drink plenty of clean fluids (ORS, coconut water, clear soups)",
+        "Rest and avoid strenuous activity",
+        "Maintain strict hand hygiene",
+        "Use clean and safe drinking water",
+        "Gradually resume normal diet after improvement"
+      ],
+      "diet_recommended": [
+        "BRAT diet (Bananas, Rice, Applesauce, Toast)",
+        "Khichdi, dalia, boiled rice with curd",
+        "Bananas and boiled potatoes",
+        "Clear soups and broths",
+        "Yogurt with live cultures (probiotics)",
+        "Coconut water and pomegranate juice",
+        "Well-cooked vegetables"
+      ],
+      "diet_to_avoid": [
+        "Dairy products (except curd/yogurt) during acute phase",
+        "Spicy, oily, and fried foods",
+        "Caffeine and carbonated drinks",
+        "High-fiber foods (raw vegetables, whole grains)",
+        "Sugary foods and artificial sweeteners",
+        "Street food and outside meals"
+      ],
+      "complications": [
+        "Severe dehydration",
+        "Electrolyte imbalance (low potassium, sodium)",
+        "Malnutrition",
+        "Acute kidney injury",
+        "Seizures in children",
+        "Hemolytic Uremic Syndrome (in some E. coli cases)",
+        "Persistent diarrhea leading to stunted growth in children",
+        "Secondary bacterial infections"
+      ],
+      "when_to_see_doctor": "Seek medical care if diarrhea lasts more than 2 days, if there is blood in stool, high fever, severe dehydration, or if the patient is a young child, elderly, or has underlying health conditions.",
+      "emergency_signs": [
+        "Signs of severe dehydration (very dry mouth, sunken eyes, lethargy, cold extremities)",
+        "Bloody diarrhea",
+        "Persistent high fever",
+        "Inability to drink fluids",
+        "Confusion or unconsciousness",
+        "Seizures",
+        "Severe abdominal pain with distension",
+        "No urine output for 6+ hours"
+      ]
+    }
+  }
+]

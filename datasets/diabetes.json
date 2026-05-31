@@ -1,0 +1,1504 @@
+{
+  "disease": {
+    "id": "DIS-002",
+    "name": "Diabetes Mellitus",
+    "scientific_name": "Diabetes Mellitus",
+    "icd_10_code": "E10-E14",
+    "category": "Chronic Metabolic Disease",
+    "overview": {
+      "description": "Diabetes Mellitus is a group of chronic metabolic diseases characterized by high blood glucose (hyperglycemia) resulting from defects in insulin secretion, insulin action, or both. Insulin is a hormone produced by the pancreas that allows sugar (glucose) from food to enter cells and be used for energy.",
+      "affected_organ": "Pancreas (primary), also affects kidneys, eyes, nerves, heart, and blood vessels",
+      "prevalence": "Approximately 537 million adults affected worldwide (IDF, 2023); 77 million in India alone",
+      "age_group": "All age groups; Type 1 common in children; Type 2 more common in adults 40+",
+      "is_contagious": false,
+      "is_curable": false,
+      "is_manageable": true,
+      "chronic": true
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Type 1 Diabetes (T1D)",
+        "description": "An autoimmune condition where the immune system destroys insulin-producing beta cells in the pancreas. Little to no insulin is produced. Requires lifelong insulin therapy.",
+        "common_in": "Children, adolescents, and young adults",
+        "onset": "Sudden",
+        "cause": "Autoimmune destruction of pancreatic beta cells",
+        "insulin_dependent": true,
+        "percentage_of_cases": "5-10%"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Type 2 Diabetes (T2D)",
+        "description": "The body either doesn't produce enough insulin or doesn't use it effectively (insulin resistance). Most common type. Strongly linked to lifestyle factors.",
+        "common_in": "Adults over 40; increasingly seen in younger populations due to obesity",
+        "onset": "Gradual",
+        "cause": "Insulin resistance + progressive beta cell dysfunction",
+        "insulin_dependent": false,
+        "percentage_of_cases": "90-95%"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Gestational Diabetes (GDM)",
+        "description": "Diabetes that develops during pregnancy in women who didn't have diabetes before. Usually resolves after delivery but increases risk of Type 2 later.",
+        "common_in": "Pregnant women (typically 24-28 weeks of gestation)",
+        "onset": "During pregnancy",
+        "cause": "Pregnancy hormones causing insulin resistance",
+        "insulin_dependent": "Sometimes",
+        "percentage_of_cases": "2-10% of pregnancies"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "MODY (Maturity-Onset Diabetes of the Young)",
+        "description": "A rare monogenic form caused by single-gene mutations. Diagnosed in adolescents and young adults.",
+        "common_in": "Young adults under 25 with strong family history",
+        "onset": "Gradual",
+        "cause": "Single gene mutations affecting insulin secretion",
+        "insulin_dependent": false,
+        "percentage_of_cases": "1-2%"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "LADA (Latent Autoimmune Diabetes in Adults)",
+        "description": "A slow-progressing form of autoimmune diabetes that begins in adulthood. Often misdiagnosed as Type 2.",
+        "common_in": "Adults over 30",
+        "onset": "Gradual (slower than Type 1)",
+        "cause": "Autoimmune (similar to Type 1 but slower progression)",
+        "insulin_dependent": "Eventually",
+        "percentage_of_cases": "< 5%"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Prediabetes",
+        "description": "Blood sugar levels are higher than normal but not high enough for a diabetes diagnosis. Highly reversible with lifestyle changes.",
+        "common_in": "Adults; over 374 million affected globally",
+        "fasting_glucose_range": "100-125 mg/dL",
+        "hba1c_range": "5.7-6.4%",
+        "reversible": true
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Secondary Diabetes",
+        "description": "Diabetes caused by other conditions or medications.",
+        "causes": [
+          "Pancreatitis or pancreatic surgery",
+          "Cushing's syndrome",
+          "Acromegaly",
+          "Long-term corticosteroid use",
+          "Cystic fibrosis",
+          "Hemochromatosis"
+        ]
+      }
+    ],
+
+    "blood_sugar_reference_values": {
+      "units": "mg/dL (milligrams per deciliter)",
+      "normal": {
+        "fasting": "70-99 mg/dL",
+        "post_meal_2hr": "< 140 mg/dL",
+        "hba1c": "< 5.7%",
+        "random": "< 140 mg/dL"
+      },
+      "prediabetes": {
+        "fasting": "100-125 mg/dL",
+        "post_meal_2hr": "140-199 mg/dL",
+        "hba1c": "5.7-6.4%"
+      },
+      "diabetes": {
+        "fasting": "≥ 126 mg/dL (on 2 separate occasions)",
+        "post_meal_2hr": "≥ 200 mg/dL",
+        "hba1c": "≥ 6.5%",
+        "random_with_symptoms": "≥ 200 mg/dL"
+      },
+      "target_for_managed_diabetes": {
+        "fasting": "80-130 mg/dL",
+        "post_meal_2hr": "< 180 mg/dL",
+        "hba1c": "< 7% (for most adults)",
+        "hba1c_elderly": "< 8% (less strict for elderly)"
+      }
+    },
+
+    "causes": {
+      "type1_causes": [
+        "Autoimmune destruction of beta cells (T-cell mediated)",
+        "Genetic susceptibility (HLA-DR3, HLA-DR4 genes)",
+        "Environmental triggers: viral infections (Coxsackievirus, Enteroviruses)",
+        "Early exposure to cow's milk proteins (possible trigger)",
+        "Vitamin D deficiency during childhood"
+      ],
+      "type2_causes": [
+        "Obesity and excess body fat (especially abdominal/visceral fat)",
+        "Physical inactivity and sedentary lifestyle",
+        "Unhealthy diet high in refined carbohydrates and sugar",
+        "Insulin resistance in muscle, liver, and fat cells",
+        "Family history and genetics",
+        "Age (risk increases after 40)",
+        "Ethnicity (South Asians, Africans, Hispanics have higher risk)",
+        "Polycystic Ovary Syndrome (PCOS)",
+        "History of gestational diabetes",
+        "High blood pressure and dyslipidemia",
+        "Sleep disorders (sleep apnea, insufficient sleep)",
+        "Chronic stress and high cortisol levels"
+      ],
+      "gestational_diabetes_causes": [
+        "Placental hormones causing insulin resistance",
+        "Pre-existing obesity",
+        "Advanced maternal age (>35 years)",
+        "Previous gestational diabetes",
+        "Family history of diabetes",
+        "PCOS"
+      ]
+    },
+
+    "risk_factors": [
+      "BMI ≥ 25 kg/m² (overweight) or ≥ 23 for Asians",
+      "Waist circumference > 90 cm (men) or > 80 cm (women)",
+      "First-degree relative with diabetes",
+      "Sedentary lifestyle",
+      "Impaired fasting glucose or prediabetes",
+      "Hypertension (BP ≥ 140/90 mmHg)",
+      "HDL cholesterol < 35 mg/dL or triglycerides > 250 mg/dL",
+      "History of cardiovascular disease",
+      "PCOS or other insulin resistance syndromes",
+      "Age > 45 years",
+      "History of gestational diabetes or baby > 4 kg at birth",
+      "Habitual smoking",
+      "Chronic use of corticosteroids, antipsychotics, or thiazides"
+    ],
+
+    "symptoms": {
+      "classic_symptoms": [
+        {
+          "id": "SYM-001",
+          "name": "Polyuria (Frequent Urination)",
+          "description": "Excess glucose in blood causes kidneys to work harder, pulling more water and resulting in frequent urination.",
+          "severity": "Mild to Moderate",
+          "type_association": "All types"
+        },
+        {
+          "id": "SYM-002",
+          "name": "Polydipsia (Excessive Thirst)",
+          "description": "Increased urination causes dehydration, leading to intense thirst.",
+          "severity": "Mild to Moderate",
+          "type_association": "All types"
+        },
+        {
+          "id": "SYM-003",
+          "name": "Polyphagia (Excessive Hunger)",
+          "description": "Cells cannot use glucose for energy properly, causing constant hunger despite eating.",
+          "severity": "Mild to Moderate",
+          "type_association": "Type 1, Type 2"
+        },
+        {
+          "id": "SYM-004",
+          "name": "Unexplained Weight Loss",
+          "description": "Body breaks down fat and muscle for energy when glucose cannot enter cells.",
+          "severity": "Moderate",
+          "type_association": "Type 1 (more prominent), some Type 2"
+        },
+        {
+          "id": "SYM-005",
+          "name": "Fatigue and Weakness",
+          "description": "Cells starved of glucose energy leads to persistent tiredness.",
+          "severity": "Mild to Moderate",
+          "type_association": "All types"
+        },
+        {
+          "id": "SYM-006",
+          "name": "Blurred Vision",
+          "description": "High blood sugar causes fluid to be pulled from the eye lens, affecting ability to focus.",
+          "severity": "Mild",
+          "type_association": "All types"
+        },
+        {
+          "id": "SYM-007",
+          "name": "Slow Healing Wounds",
+          "description": "High glucose impairs blood flow and immune function, delaying wound healing.",
+          "severity": "Moderate",
+          "type_association": "Type 2 (more prominent)"
+        },
+        {
+          "id": "SYM-008",
+          "name": "Frequent Infections",
+          "description": "High glucose weakens immune system; common infections include UTIs, skin, and yeast infections.",
+          "severity": "Moderate",
+          "type_association": "Type 2"
+        }
+      ],
+      "secondary_symptoms": [
+        "Tingling, numbness, or burning sensation in hands and feet (neuropathy)",
+        "Darkening of skin in body creases (Acanthosis Nigricans — insulin resistance sign)",
+        "Recurrent gum disease or dental infections",
+        "Itchy skin, especially in groin area",
+        "Headaches",
+        "Irritability and mood swings",
+        "Erectile dysfunction in men",
+        "Irregular menstrual periods in women",
+        "Fruity-smelling breath (sign of DKA in Type 1)"
+      ],
+      "type1_specific_symptoms": [
+        "Rapid onset over days to weeks",
+        "Significant unintentional weight loss",
+        "Diabetic Ketoacidosis (DKA) — nausea, vomiting, abdominal pain, fruity breath",
+        "Bedwetting in previously toilet-trained children"
+      ],
+      "type2_specific_symptoms": [
+        "Often asymptomatic for years (silent disease)",
+        "Gradual onset",
+        "Discovered incidentally on routine blood tests",
+        "Acanthosis Nigricans (dark patches on neck, armpits, groin)"
+      ],
+      "emergency_symptoms": [
+        {
+          "condition": "Hypoglycemia (Low Blood Sugar < 70 mg/dL)",
+          "symptoms": ["Sweating", "Trembling", "Palpitations", "Confusion", "Dizziness", "Loss of consciousness"],
+          "action": "Consume 15g fast-acting carbs (glucose tablets, juice, sugar). Recheck after 15 minutes. Seek help if no improvement."
+        },
+        {
+          "condition": "Diabetic Ketoacidosis (DKA) — Type 1 Emergency",
+          "symptoms": ["Fruity breath", "Rapid breathing (Kussmaul breathing)", "Nausea and vomiting", "Abdominal pain", "Confusion", "Loss of consciousness"],
+          "action": "MEDICAL EMERGENCY. Call emergency services immediately. Requires IV fluids, insulin, and electrolyte replacement."
+        },
+        {
+          "condition": "Hyperosmolar Hyperglycemic State (HHS) — Type 2 Emergency",
+          "symptoms": ["Extreme thirst", "Confusion", "Weakness", "Blood sugar > 600 mg/dL", "No ketones"],
+          "action": "MEDICAL EMERGENCY. Requires hospital admission and IV fluid resuscitation."
+        }
+      ]
+    },
+
+    "diagnosis": {
+      "diagnostic_criteria": "Diagnosis requires ONE of the following confirmed on 2 separate days (except if symptomatic with random glucose ≥ 200 mg/dL):",
+      "tests": [
+        {
+          "test_name": "Fasting Plasma Glucose (FPG)",
+          "description": "Blood glucose measured after at least 8 hours of fasting.",
+          "normal": "< 100 mg/dL",
+          "prediabetes": "100-125 mg/dL",
+          "diabetes": "≥ 126 mg/dL",
+          "preparation": "No food or drink (except water) for 8+ hours"
+        },
+        {
+          "test_name": "HbA1c (Glycated Hemoglobin)",
+          "description": "Reflects average blood glucose over the past 2-3 months.",
+          "normal": "< 5.7%",
+          "prediabetes": "5.7-6.4%",
+          "diabetes": "≥ 6.5%",
+          "preparation": "No fasting required",
+          "advantage": "Convenient; no fasting needed; shows long-term glucose control"
+        },
+        {
+          "test_name": "Oral Glucose Tolerance Test (OGTT)",
+          "description": "Blood glucose measured 2 hours after drinking 75g glucose solution.",
+          "normal": "< 140 mg/dL",
+          "prediabetes": "140-199 mg/dL",
+          "diabetes": "≥ 200 mg/dL",
+          "preparation": "Fasting for 8 hours; 75g glucose drink"
+        },
+        {
+          "test_name": "Random Plasma Glucose",
+          "description": "Blood glucose tested at any time regardless of last meal.",
+          "diabetes": "≥ 200 mg/dL with classic symptoms",
+          "preparation": "None"
+        },
+        {
+          "test_name": "Fructosamine Test",
+          "description": "Reflects average glucose over past 2-3 weeks. Alternative to HbA1c.",
+          "use_case": "Useful in hemolytic anemia or when HbA1c is unreliable",
+          "normal_range": "200-285 µmol/L"
+        },
+        {
+          "test_name": "C-Peptide Test",
+          "description": "Measures insulin production capacity.",
+          "use_case": "Differentiates Type 1 from Type 2 diabetes",
+          "result": "Low in Type 1; normal/high in Type 2"
+        },
+        {
+          "test_name": "Autoantibody Tests (GAD, IA-2, ZnT8)",
+          "description": "Detects antibodies that attack beta cells.",
+          "use_case": "Confirms Type 1 / LADA diagnosis"
+        },
+        {
+          "test_name": "Urine Glucose and Ketones",
+          "description": "Glucose in urine (glycosuria) and ketones detected by dipstick.",
+          "use_case": "Screening and monitoring; ketones indicate DKA risk"
+        },
+        {
+          "test_name": "Lipid Profile",
+          "description": "Total cholesterol, LDL, HDL, and triglycerides.",
+          "use_case": "Assess cardiovascular risk alongside diabetes"
+        },
+        {
+          "test_name": "Urine Microalbuminuria",
+          "description": "Detects small amounts of albumin in urine — early sign of kidney damage.",
+          "normal": "< 30 mg/day",
+          "microalbuminuria": "30-300 mg/day",
+          "macroalbuminuria": "> 300 mg/day"
+        },
+        {
+          "test_name": "Continuous Glucose Monitor (CGM)",
+          "description": "Device worn on skin that measures glucose levels every few minutes.",
+          "use_case": "Ongoing real-time monitoring for Type 1 and intensive Type 2"
+        },
+        {
+          "test_name": "Insulin Level (Fasting)",
+          "description": "Measures insulin in blood.",
+          "use_case": "Assess insulin resistance; elevated in early Type 2"
+        }
+      ],
+      "monitoring_schedule": {
+        "hba1c": "Every 3 months if not at goal; every 6 months if stable",
+        "fasting_glucose": "Daily to weekly depending on treatment",
+        "lipid_profile": "Annually",
+        "kidney_function": "Annually (urine microalbumin, serum creatinine)",
+        "eye_exam": "Annually (dilated fundus exam)",
+        "foot_exam": "Every visit and comprehensive annually",
+        "blood_pressure": "Every visit"
+      }
+    },
+
+    "medicines": {
+      "note": "All medications should be taken only under the supervision of a licensed physician. Self-medication is dangerous. Dosages are general references only.",
+      "categories": [
+        {
+          "category_id": "MED-CAT-01",
+          "category_name": "Insulin Therapy",
+          "purpose": "Replaces or supplements the body's insulin; essential for Type 1 and used in advanced Type 2",
+          "types_of_insulin": [
+            {
+              "type": "Rapid-Acting Insulin",
+              "onset": "10-30 minutes",
+              "peak": "30 min - 3 hours",
+              "duration": "3-5 hours",
+              "use": "Given at mealtime to control post-meal glucose spikes",
+              "medicines": [
+                {
+                  "name": "Insulin Lispro",
+                  "brand_examples": ["Humalog", "Admelog"],
+                  "form": "Injection (subcutaneous)"
+                },
+                {
+                  "name": "Insulin Aspart",
+                  "brand_examples": ["NovoLog", "NovoRapid"],
+                  "form": "Injection, Insulin pump"
+                },
+                {
+                  "name": "Insulin Glulisine",
+                  "brand_examples": ["Apidra"],
+                  "form": "Injection"
+                }
+              ]
+            },
+            {
+              "type": "Short-Acting (Regular) Insulin",
+              "onset": "30-60 minutes",
+              "peak": "2-4 hours",
+              "duration": "5-8 hours",
+              "use": "Given 30 minutes before meals",
+              "medicines": [
+                {
+                  "name": "Regular Human Insulin",
+                  "brand_examples": ["Humulin R", "Actrapid", "Insuman"],
+                  "form": "Injection, IV (hospital use)"
+                }
+              ]
+            },
+            {
+              "type": "Intermediate-Acting Insulin",
+              "onset": "1-2 hours",
+              "peak": "4-12 hours",
+              "duration": "12-18 hours",
+              "use": "Twice-daily basal coverage",
+              "medicines": [
+                {
+                  "name": "NPH Insulin (Isophane)",
+                  "brand_examples": ["Humulin N", "Insulatard"],
+                  "form": "Injection"
+                }
+              ]
+            },
+            {
+              "type": "Long-Acting (Basal) Insulin",
+              "onset": "1-2 hours",
+              "peak": "Relatively flat (no pronounced peak)",
+              "duration": "20-24 hours",
+              "use": "Once-daily basal insulin to maintain steady background glucose",
+              "medicines": [
+                {
+                  "name": "Insulin Glargine",
+                  "brand_examples": ["Lantus", "Basaglar", "Toujeo"],
+                  "form": "Injection"
+                },
+                {
+                  "name": "Insulin Detemir",
+                  "brand_examples": ["Levemir"],
+                  "form": "Injection"
+                },
+                {
+                  "name": "Insulin Degludec",
+                  "brand_examples": ["Tresiba"],
+                  "form": "Injection",
+                  "duration": "42+ hours; ultra-long-acting"
+                }
+              ]
+            },
+            {
+              "type": "Premixed Insulin",
+              "description": "Combination of rapid/short-acting and intermediate-acting insulin",
+              "use": "Simplifies regimen; 2 injections per day",
+              "medicines": [
+                {
+                  "name": "Biphasic Insulin Aspart 30/70",
+                  "brand_examples": ["NovoMix 30"]
+                },
+                {
+                  "name": "Biphasic Human Insulin 30/70",
+                  "brand_examples": ["Humulin 30/70", "Mixtard 30"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-02",
+          "category_name": "Biguanides",
+          "purpose": "Reduce glucose production by the liver; improve insulin sensitivity. First-line drug for Type 2.",
+          "medicines": [
+            {
+              "name": "Metformin",
+              "brand_examples": ["Glucophage", "Glycomet", "Gluconorm"],
+              "form": "Tablet (immediate and extended release)",
+              "dosage": "500-2000 mg/day in divided doses with meals",
+              "use_case": "First-line treatment for Type 2 diabetes",
+              "benefits": ["Weight neutral or causes mild weight loss", "Cardioprotective", "Low hypoglycemia risk", "Inexpensive"],
+              "side_effects": ["Nausea", "Diarrhea", "Abdominal discomfort (usually transient)", "Vitamin B12 deficiency (long-term)"],
+              "contraindications": ["eGFR < 30 mL/min/1.73m²", "Severe liver disease", "Iodinated contrast dye procedures"],
+              "monitoring": "Kidney function (eGFR) annually"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-03",
+          "category_name": "Sulfonylureas",
+          "purpose": "Stimulate pancreatic beta cells to release more insulin",
+          "onset": "1-2 hours",
+          "note": "Risk of hypoglycemia and weight gain",
+          "medicines": [
+            {
+              "name": "Glibenclamide (Glyburide)",
+              "brand_examples": ["Daonil", "Euglucon"],
+              "form": "Tablet",
+              "dosage": "2.5-20 mg/day",
+              "side_effects": ["Hypoglycemia", "Weight gain", "Rash"]
+            },
+            {
+              "name": "Glipizide",
+              "brand_examples": ["Glucotrol", "Glynase"],
+              "form": "Tablet",
+              "dosage": "5-40 mg/day",
+              "side_effects": ["Hypoglycemia", "Nausea"]
+            },
+            {
+              "name": "Glimepiride",
+              "brand_examples": ["Amaryl", "Glimer"],
+              "form": "Tablet",
+              "dosage": "1-8 mg/day (once daily)",
+              "side_effects": ["Hypoglycemia (less than older agents)", "Weight gain"],
+              "note": "Lower hypoglycemia risk than older sulfonylureas"
+            },
+            {
+              "name": "Gliclazide",
+              "brand_examples": ["Diamicron MR", "Reclide"],
+              "form": "Tablet (MR formulation once daily)",
+              "dosage": "30-120 mg/day (MR)",
+              "side_effects": ["Mild hypoglycemia", "GI upset"],
+              "note": "Preferred in elderly for lower hypoglycemia risk"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-04",
+          "category_name": "DPP-4 Inhibitors (Gliptins)",
+          "purpose": "Increase incretin hormones (GLP-1, GIP) to stimulate insulin release and suppress glucagon in a glucose-dependent manner",
+          "note": "Low hypoglycemia risk; weight neutral",
+          "medicines": [
+            {
+              "name": "Sitagliptin",
+              "brand_examples": ["Januvia", "Istavel"],
+              "form": "Tablet",
+              "dosage": "100 mg once daily",
+              "side_effects": ["Nasopharyngitis", "Headache", "Rare pancreatitis"]
+            },
+            {
+              "name": "Vildagliptin",
+              "brand_examples": ["Galvus"],
+              "form": "Tablet",
+              "dosage": "50 mg twice daily",
+              "side_effects": ["Dizziness", "Headache", "Peripheral edema"]
+            },
+            {
+              "name": "Saxagliptin",
+              "brand_examples": ["Onglyza"],
+              "form": "Tablet",
+              "dosage": "2.5-5 mg once daily",
+              "side_effects": ["Nasopharyngitis", "UTI", "Possible heart failure risk"]
+            },
+            {
+              "name": "Alogliptin",
+              "brand_examples": ["Nesina", "Vipidia"],
+              "form": "Tablet",
+              "dosage": "25 mg once daily",
+              "side_effects": ["Headache", "Nasopharyngitis"]
+            },
+            {
+              "name": "Teneligliptin",
+              "brand_examples": ["Tenelia", "Ziten"],
+              "form": "Tablet",
+              "dosage": "20-40 mg once daily",
+              "side_effects": ["Hypoglycemia (when combined with insulin)", "GI upset"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-05",
+          "category_name": "GLP-1 Receptor Agonists",
+          "purpose": "Mimic GLP-1 hormone; stimulate insulin release, suppress glucagon, slow gastric emptying, reduce appetite",
+          "benefits": ["Significant weight loss", "Cardiovascular benefit", "Low hypoglycemia risk"],
+          "medicines": [
+            {
+              "name": "Semaglutide",
+              "brand_examples": ["Ozempic (injection)", "Rybelsus (oral)", "Wegovy (weight loss dose)"],
+              "form": "Subcutaneous injection (weekly), Oral tablet",
+              "dosage": "0.25-1 mg/week SC; 3-14 mg oral",
+              "use_case": "Type 2 diabetes with cardiovascular risk; obesity with diabetes",
+              "side_effects": ["Nausea", "Vomiting", "Diarrhea", "Rare pancreatitis", "Rare thyroid C-cell tumor (animal data)"]
+            },
+            {
+              "name": "Liraglutide",
+              "brand_examples": ["Victoza", "Saxenda (obesity dose)"],
+              "form": "Subcutaneous injection (daily)",
+              "dosage": "0.6-1.8 mg/day",
+              "use_case": "Type 2 with cardiovascular disease; also approved for obesity",
+              "side_effects": ["Nausea", "Vomiting", "Injection site reaction", "Pancreatitis (rare)"]
+            },
+            {
+              "name": "Dulaglutide",
+              "brand_examples": ["Trulicity"],
+              "form": "Subcutaneous injection (weekly)",
+              "dosage": "0.75-4.5 mg/week",
+              "side_effects": ["Nausea", "Abdominal pain", "Decreased appetite"]
+            },
+            {
+              "name": "Exenatide",
+              "brand_examples": ["Byetta (twice daily)", "Bydureon (weekly)"],
+              "form": "Subcutaneous injection",
+              "dosage": "5-10 mcg twice daily or 2 mg weekly",
+              "side_effects": ["Nausea", "Vomiting", "Injection site reactions"]
+            },
+            {
+              "name": "Tirzepatide",
+              "brand_examples": ["Mounjaro", "Zepbound"],
+              "form": "Subcutaneous injection (weekly)",
+              "dosage": "2.5-15 mg/week",
+              "mechanism": "Dual GIP + GLP-1 receptor agonist",
+              "note": "Newest and most effective for glucose lowering and weight loss",
+              "side_effects": ["Nausea", "Diarrhea", "Vomiting", "Constipation"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-06",
+          "category_name": "SGLT-2 Inhibitors (Gliflozins)",
+          "purpose": "Block glucose reabsorption in kidneys; cause glucose excretion in urine",
+          "benefits": ["Weight loss", "Blood pressure reduction", "Cardiovascular and kidney protection", "Heart failure benefit"],
+          "medicines": [
+            {
+              "name": "Empagliflozin",
+              "brand_examples": ["Jardiance", "Empa"],
+              "form": "Tablet",
+              "dosage": "10-25 mg once daily",
+              "use_case": "Type 2 with cardiovascular disease; heart failure; CKD",
+              "side_effects": ["Genital yeast infections", "UTI", "Polyuria", "DKA (rare)", "Fournier's gangrene (very rare)"]
+            },
+            {
+              "name": "Dapagliflozin",
+              "brand_examples": ["Farxiga", "Forxiga"],
+              "form": "Tablet",
+              "dosage": "5-10 mg once daily",
+              "use_case": "Type 2, heart failure, CKD",
+              "side_effects": ["Genital infections", "UTI", "Volume depletion"]
+            },
+            {
+              "name": "Canagliflozin",
+              "brand_examples": ["Invokana"],
+              "form": "Tablet",
+              "dosage": "100-300 mg once daily",
+              "side_effects": ["UTI", "Yeast infections", "Bone fracture risk", "Amputation risk (higher than others)"]
+            },
+            {
+              "name": "Ertugliflozin",
+              "brand_examples": ["Steglatro"],
+              "form": "Tablet",
+              "dosage": "5-15 mg once daily",
+              "side_effects": ["Genital infections", "UTI", "Polyuria"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-07",
+          "category_name": "Alpha-Glucosidase Inhibitors",
+          "purpose": "Slow carbohydrate absorption in the intestine; reduce post-meal glucose spikes",
+          "note": "Must be taken with first bite of each meal",
+          "medicines": [
+            {
+              "name": "Acarbose",
+              "brand_examples": ["Glucobay", "Precose"],
+              "form": "Tablet",
+              "dosage": "25-100 mg three times daily with meals",
+              "use_case": "Controlling post-prandial hyperglycemia",
+              "side_effects": ["Flatulence", "Bloating", "Diarrhea", "Abdominal cramps"]
+            },
+            {
+              "name": "Voglibose",
+              "brand_examples": ["Volix", "Vobose"],
+              "form": "Tablet",
+              "dosage": "0.2-0.3 mg three times daily with meals",
+              "side_effects": ["Flatulence", "Bloating", "Less GI side effects than acarbose"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-08",
+          "category_name": "Thiazolidinediones (TZDs / Glitazones)",
+          "purpose": "Improve insulin sensitivity in muscle, fat, and liver (PPAR-gamma agonists)",
+          "medicines": [
+            {
+              "name": "Pioglitazone",
+              "brand_examples": ["Actos", "Pioz"],
+              "form": "Tablet",
+              "dosage": "15-45 mg once daily",
+              "use_case": "Insulin-resistant Type 2 diabetes; NAFLD",
+              "benefits": ["Improves lipid profile", "Liver benefit in NASH"],
+              "side_effects": ["Weight gain", "Fluid retention/edema", "Heart failure risk", "Bladder cancer risk (long-term use)", "Bone fractures"],
+              "contraindications": ["Heart failure", "Bladder cancer history", "Liver disease"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-09",
+          "category_name": "Meglitinides (Glinides)",
+          "purpose": "Short-acting insulin secretagogues; taken with meals to reduce post-meal glucose",
+          "medicines": [
+            {
+              "name": "Repaglinide",
+              "brand_examples": ["Prandin", "Novonorm"],
+              "form": "Tablet",
+              "dosage": "0.5-4 mg before each meal (up to 3 meals/day)",
+              "use_case": "Post-prandial control; flexible meal schedules",
+              "side_effects": ["Hypoglycemia", "Weight gain", "Upper respiratory infections"]
+            },
+            {
+              "name": "Nateglinide",
+              "brand_examples": ["Starlix"],
+              "form": "Tablet",
+              "dosage": "60-120 mg before meals",
+              "side_effects": ["Hypoglycemia (mild)", "Dizziness"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-10",
+          "category_name": "Combination Oral Medications",
+          "purpose": "Combining two drugs in one tablet for improved adherence",
+          "examples": [
+            {
+              "name": "Metformin + Sitagliptin",
+              "brand_examples": ["Janumet"]
+            },
+            {
+              "name": "Metformin + Vildagliptin",
+              "brand_examples": ["Galvumet"]
+            },
+            {
+              "name": "Metformin + Empagliflozin",
+              "brand_examples": ["Synjardy"]
+            },
+            {
+              "name": "Metformin + Glipizide",
+              "brand_examples": ["Glucovance-like"]
+            },
+            {
+              "name": "Metformin + Pioglitazone",
+              "brand_examples": ["Competact", "Piomet"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-11",
+          "category_name": "Medications for Diabetes Complications",
+          "sub_categories": [
+            {
+              "condition": "Hypertension in Diabetes",
+              "first_choice": "ACE inhibitors (Ramipril, Enalapril) or ARBs (Losartan, Telmisartan)",
+              "benefit": "Kidney-protective in addition to BP control"
+            },
+            {
+              "condition": "Diabetic Neuropathy (Nerve Pain)",
+              "medicines": ["Pregabalin (Lyrica)", "Gabapentin", "Duloxetine (Cymbalta)", "Amitriptyline", "Capsaicin cream (topical)"]
+            },
+            {
+              "condition": "Dyslipidemia (High Cholesterol in Diabetes)",
+              "medicines": ["Statins: Atorvastatin 10-80 mg/day", "Rosuvastatin 5-40 mg/day"],
+              "target": "LDL < 70 mg/dL in high cardiovascular risk diabetics"
+            },
+            {
+              "condition": "Diabetic Kidney Disease",
+              "medicines": ["Finerenone (Kerendia)", "SGLT-2 inhibitors (Dapagliflozin, Empagliflozin)", "ACE inhibitors / ARBs"]
+            },
+            {
+              "condition": "Diabetic Retinopathy",
+              "treatment": "Anti-VEGF injections (Ranibizumab, Bevacizumab), Laser photocoagulation — managed by ophthalmologist"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-12",
+          "category_name": "Hypoglycemia Treatment",
+          "purpose": "Raise blood sugar quickly when it drops below 70 mg/dL",
+          "medicines_and_options": [
+            {
+              "name": "Glucose Tablets",
+              "dosage": "15-20g (3-4 glucose tablets)",
+              "use": "First-line; take and recheck in 15 minutes (15-15 rule)"
+            },
+            {
+              "name": "Glucagon Emergency Kit",
+              "brand_examples": ["GlucaGen", "Gvoke", "Baqsimi (nasal)"],
+              "use": "Severe hypoglycemia with loss of consciousness; given by caregiver"
+            },
+            {
+              "name": "Dextrose (IV)",
+              "form": "IV Injection (D50W or D25W)",
+              "use": "Hospital/emergency management of severe hypoglycemia"
+            }
+          ],
+          "food_options_for_mild_hypo": ["4 oz (120ml) fruit juice", "Regular soda (not diet)", "1 tablespoon honey", "Hard candy (4-5 pieces)"]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet is one of the most powerful tools in diabetes management. The right diet helps control blood sugar, body weight, blood pressure, and cholesterol — all critical in diabetes.",
+      "key_dietary_principles": [
+        "Choose low Glycemic Index (GI) foods that release glucose slowly",
+        "Control portion sizes to avoid blood sugar spikes",
+        "Eat at regular intervals — do not skip meals",
+        "Limit refined carbohydrates, sugar, and processed foods",
+        "Increase dietary fiber intake",
+        "Choose healthy fats over saturated and trans fats",
+        "Limit sodium (salt) intake for blood pressure control",
+        "Stay well hydrated with water and unsweetened beverages",
+        "Alcohol should be consumed only with caution and doctor approval"
+      ],
+      "recommended_foods": [
+        {
+          "category": "Low Glycemic Index Carbohydrates",
+          "items": [
+            {
+              "food": "Brown Rice",
+              "GI": 55,
+              "benefit": "Slower glucose release than white rice; more fibre and nutrients",
+              "frequency": "Can eat daily in controlled portions"
+            },
+            {
+              "food": "Whole Wheat Chapati / Roti",
+              "GI": 54,
+              "benefit": "Fiber-rich; better than white flour products",
+              "frequency": "2-3 rotis per meal"
+            },
+            {
+              "food": "Oats (rolled or steel-cut)",
+              "GI": 55,
+              "benefit": "Beta-glucan fiber reduces post-meal glucose and improves cholesterol",
+              "frequency": "Daily for breakfast"
+            },
+            {
+              "food": "Quinoa",
+              "GI": 53,
+              "benefit": "Complete protein + complex carbohydrate; excellent for diabetes",
+              "frequency": "3-4 times per week"
+            },
+            {
+              "food": "Barley (Jau)",
+              "GI": 28,
+              "benefit": "Extremely low GI; high beta-glucan; significant glucose-lowering effect",
+              "frequency": "Regular"
+            },
+            {
+              "food": "Sweet Potato",
+              "GI": 44,
+              "benefit": "Lower GI than regular potato; rich in Vitamin A and fiber",
+              "frequency": "2-3 times per week"
+            }
+          ]
+        },
+        {
+          "category": "Legumes and Pulses",
+          "items": [
+            {
+              "food": "Lentils (Masoor Dal, Moong Dal, Chana Dal)",
+              "GI": "21-30",
+              "benefit": "High protein and fiber; significantly blunts post-meal glucose rise",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Chickpeas (Chana)",
+              "GI": 28,
+              "benefit": "High protein and fiber; excellent blood sugar control",
+              "frequency": "4-5 times per week"
+            },
+            {
+              "food": "Kidney Beans (Rajma)",
+              "GI": 24,
+              "benefit": "Very low GI; rich in protein and resistant starch",
+              "frequency": "2-3 times per week"
+            },
+            {
+              "food": "Soybeans / Edamame",
+              "GI": 15,
+              "benefit": "Extremely low GI; complete plant protein; isoflavones improve insulin sensitivity",
+              "frequency": "Regular"
+            }
+          ]
+        },
+        {
+          "category": "Non-Starchy Vegetables",
+          "items": [
+            {
+              "food": "Bitter Gourd (Karela)",
+              "benefit": "Contains charantin and polypeptide-P which mimic insulin action",
+              "frequency": "3-4 times per week"
+            },
+            {
+              "food": "Fenugreek (Methi) leaves and seeds",
+              "benefit": "Galactomannan fiber and saponins reduce glucose absorption; seeds soak overnight for best effect",
+              "frequency": "Daily (leaves in cooking or seeds with water)"
+            },
+            {
+              "food": "Spinach, Kale, Amaranth (Chaulai)",
+              "benefit": "Magnesium improves insulin sensitivity; antioxidants reduce oxidative stress",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Broccoli",
+              "benefit": "Sulforaphane reduces hepatic glucose production; chromium improves insulin action",
+              "frequency": "3-4 times per week"
+            },
+            {
+              "food": "Cucumber, Ridge Gourd (Turai), Bottle Gourd (Lauki)",
+              "benefit": "Very low carbohydrate; hydrating; good for blood sugar control",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Drumstick (Moringa / Sahjan)",
+              "benefit": "Isothiocyanates reduce blood glucose; rich in Vitamin C and calcium",
+              "frequency": "3-4 times per week"
+            },
+            {
+              "food": "Tomatoes, Bell Peppers, Cauliflower, Cabbage",
+              "benefit": "Low carb; high in antioxidants; anti-inflammatory",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Fruits (Low to Moderate GI)",
+          "note": "Fruits contain natural sugar — eat in controlled portions. Avoid fruit juices.",
+          "items": [
+            {
+              "food": "Guava (Amrood)",
+              "GI": 12,
+              "benefit": "Very low GI; high Vitamin C; lycopene; excellent for diabetes",
+              "serving": "1 medium guava"
+            },
+            {
+              "food": "Jamun (Indian Blackberry)",
+              "benefit": "Jamboline reduces starch-to-sugar conversion; traditionally used in Ayurvedic diabetes treatment",
+              "serving": "1 small bowl"
+            },
+            {
+              "food": "Apple",
+              "GI": 36,
+              "benefit": "Quercetin and pectin improve insulin sensitivity; low GI",
+              "serving": "1 small apple"
+            },
+            {
+              "food": "Pear",
+              "GI": 38,
+              "benefit": "High fiber; slow glucose release",
+              "serving": "1 medium pear"
+            },
+            {
+              "food": "Berries (Strawberry, Blueberry, Raspberry)",
+              "GI": "25-40",
+              "benefit": "High antioxidants; low sugar; anti-inflammatory",
+              "serving": "1 small cup"
+            },
+            {
+              "food": "Avocado",
+              "GI": 15,
+              "benefit": "Healthy monounsaturated fats; very low carb; improves insulin sensitivity",
+              "serving": "Half an avocado"
+            },
+            {
+              "food": "Kiwi",
+              "GI": 50,
+              "benefit": "Low GI; Vitamin C and K; inositol improves glucose metabolism",
+              "serving": "1 medium kiwi"
+            }
+          ]
+        },
+        {
+          "category": "Protein Sources",
+          "items": [
+            {
+              "food": "Eggs",
+              "benefit": "High-quality protein; minimal carbohydrate; improves satiety; helps stabilize blood sugar",
+              "frequency": "1-2 eggs daily (consult doctor if cholesterol concern)"
+            },
+            {
+              "food": "Fatty Fish (Salmon, Mackerel, Rohu, Katla)",
+              "benefit": "Omega-3 fatty acids reduce inflammation; improve insulin sensitivity; cardioprotective",
+              "frequency": "2-3 times per week"
+            },
+            {
+              "food": "Chicken / Turkey (skinless)",
+              "benefit": "Lean protein; helps maintain muscle mass important for insulin sensitivity",
+              "frequency": "3-4 times per week"
+            },
+            {
+              "food": "Paneer (in moderation)",
+              "benefit": "Good protein and calcium source; low carbohydrate",
+              "frequency": "Regular; low-fat paneer preferred"
+            },
+            {
+              "food": "Tofu / Soy products",
+              "benefit": "Plant protein; isoflavones improve insulin sensitivity; very low GI",
+              "frequency": "Regular"
+            },
+            {
+              "food": "Greek Yogurt / Curd (plain, unsweetened)",
+              "benefit": "Probiotics; protein; calcium; low GI; improves gut microbiome",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Healthy Fats",
+          "items": [
+            {
+              "food": "Olive Oil",
+              "benefit": "Oleocanthal reduces insulin resistance; anti-inflammatory; cardioprotective",
+              "use": "For salads and low-heat cooking"
+            },
+            {
+              "food": "Nuts (Almonds, Walnuts, Pistachios)",
+              "benefit": "Magnesium; healthy fats; protein; fiber — all reduce blood sugar spikes",
+              "frequency": "1 small handful daily"
+            },
+            {
+              "food": "Seeds (Flaxseeds, Chia Seeds, Pumpkin Seeds)",
+              "benefit": "Omega-3 fatty acids; lignans; fiber — reduce glucose absorption",
+              "frequency": "1-2 tablespoons daily"
+            },
+            {
+              "food": "Coconut (in moderation)",
+              "benefit": "MCT (medium-chain triglycerides) may improve insulin sensitivity",
+              "frequency": "Small amounts"
+            }
+          ]
+        },
+        {
+          "category": "Herbs and Spices with Anti-Diabetic Properties",
+          "items": [
+            {
+              "food": "Cinnamon (Dalchini)",
+              "benefit": "Improves insulin sensitivity; mimics insulin action; reduces fasting glucose",
+              "use": "0.5-1 tsp in warm water, oatmeal, or tea daily"
+            },
+            {
+              "food": "Turmeric (Haldi)",
+              "benefit": "Curcumin reduces insulin resistance and pancreatic inflammation",
+              "use": "Add to cooking daily or in golden milk"
+            },
+            {
+              "food": "Fenugreek Seeds (Methi Dana)",
+              "benefit": "Galactomannan slows glucose absorption; improves insulin release",
+              "use": "1 tsp soaked in water overnight; drink water and eat seeds in morning"
+            },
+            {
+              "food": "Garlic",
+              "benefit": "Allicin improves insulin sensitivity and reduces HbA1c",
+              "use": "2-3 raw cloves daily or in cooking"
+            },
+            {
+              "food": "Ginger",
+              "benefit": "Gingerols improve insulin sensitivity; anti-inflammatory",
+              "use": "Fresh ginger in tea or meals daily"
+            },
+            {
+              "food": "Amla (Indian Gooseberry)",
+              "benefit": "Chromium improves insulin sensitivity; high Vitamin C; reduces post-meal glucose",
+              "use": "1 fresh amla or 1 tsp amla powder daily"
+            },
+            {
+              "food": "Curry Leaves (Kadi Patta)",
+              "benefit": "Mahanimbine alkaloid reduces glucose absorption and stimulates insulin secretion",
+              "use": "Fresh in cooking daily"
+            }
+          ]
+        },
+        {
+          "category": "Beverages",
+          "items": [
+            {
+              "food": "Water",
+              "benefit": "Essential for kidney function; dilutes blood glucose",
+              "frequency": "8-10 glasses per day"
+            },
+            {
+              "food": "Green Tea / Tulsi Tea",
+              "benefit": "EGCG and antioxidants improve insulin sensitivity; reduce fasting glucose",
+              "frequency": "2-3 cups daily (without sugar)"
+            },
+            {
+              "food": "Bitter Gourd Juice",
+              "benefit": "Traditional remedy; reduces blood glucose",
+              "frequency": "1 small glass in morning (consult doctor)"
+            },
+            {
+              "food": "Cinnamon Water / Cinnamon Tea",
+              "benefit": "Improves insulin action",
+              "frequency": "1 cup daily"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Sugar and Sweets",
+          "reason": "Direct glucose spike; worsens glycemic control",
+          "examples": ["White sugar", "Jaggery (in large amounts)", "Honey (in large amounts)", "Candy", "Mithai / Indian sweets", "Chocolate (milk/white)"]
+        },
+        {
+          "food": "Refined Carbohydrates (High GI)",
+          "reason": "Rapid glucose absorption causing sharp blood sugar spikes",
+          "examples": ["White rice (large portions)", "White bread / Maida bread", "Maida (all-purpose flour) products", "Pasta (refined)", "Noodles"]
+        },
+        {
+          "food": "Sugary Beverages",
+          "reason": "Liquid sugar bypasses satiety signals; immediate glucose spike",
+          "examples": ["Regular soft drinks (Coca-Cola, Pepsi)", "Packaged fruit juices", "Energy drinks", "Flavored milk (sweetened)", "Sugary tea/coffee"]
+        },
+        {
+          "food": "Fried and Fast Foods",
+          "reason": "High in saturated/trans fats; cause inflammation and worsen insulin resistance",
+          "examples": ["Samosa", "Pakoda", "French Fries", "Burgers", "Pizza", "Fried chicken"]
+        },
+        {
+          "food": "High Glycemic Fruits",
+          "reason": "Cause rapid blood sugar elevation",
+          "examples": ["Mango (large amounts)", "Banana (ripe)", "Grapes", "Watermelon", "Pineapple", "Chikoo (Sapodilla)", "Lychee"]
+        },
+        {
+          "food": "Processed and Packaged Foods",
+          "reason": "Hidden sugars, trans fats, sodium, and preservatives worsen blood sugar and cardiovascular risk",
+          "examples": ["Chips", "Biscuits (cookies)", "Instant noodles", "Packaged cereals with sugar", "Ready-to-eat meals"]
+        },
+        {
+          "food": "Full-Fat Dairy (in excess)",
+          "reason": "High saturated fat worsens insulin resistance",
+          "examples": ["Butter", "Cream", "Full-fat cheese", "Ghee (limit to 1 tsp/day)"]
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Unpredictable effect on blood glucose; causes hypoglycemia with certain diabetes medications; high calorie",
+          "guidance": "If consumed at all, only with food and in strict moderation; never on empty stomach"
+        },
+        {
+          "food": "High-Sodium Foods",
+          "reason": "Raises blood pressure which compounds cardiovascular risk in diabetes",
+          "examples": ["Pickle (Achar)", "Papad", "Salted snacks", "Canned soups", "Soy sauce", "Processed meats"]
+        },
+        {
+          "food": "Starchy Vegetables (in large portions)",
+          "reason": "High carbohydrate content raises blood sugar",
+          "examples": ["Potato (especially boiled/mashed)", "Yam (Suran)", "Tapioca (Sabudana)", "Corn (large amounts)"]
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This is a general guideline for a ~1600-1800 kcal diabetic diet. Individual needs vary. Consult a registered dietitian.",
+        "early_morning_pre_breakfast": "2 soaked almonds + 5 soaked fenugreek seeds swallowed with water OR 1 glass warm cinnamon water",
+        "breakfast": "1 cup steel-cut oats with chia seeds and berries OR 2 whole wheat rotis + 1 bowl moong dal + 1 glass buttermilk",
+        "mid_morning": "1 small apple or guava OR 1 cup green tea (no sugar)",
+        "lunch": "1-2 brown rice cups + 1 bowl sambar (with lots of vegetables) + cucumber and tomato salad + 1 bowl plain curd",
+        "afternoon_snack": "1 small handful of mixed nuts (almonds, walnuts) + 1 cup green tea OR 1 bowl sprouts salad",
+        "dinner": "2 multigrain rotis + 1 bowl rajma/chana OR grilled fish + stir-fried vegetables (spinach, broccoli, capsicum) + 1 bowl dal",
+        "post_dinner": "5-10 minute walk",
+        "if_hungry_before_bed": "1 glass warm low-fat milk with a pinch of turmeric (if blood sugar is stable)"
+      },
+      "carbohydrate_counting": {
+        "description": "A method to manage blood sugar by tracking grams of carbohydrates consumed per meal",
+        "general_targets": {
+          "meals": "45-60g carbs per meal (adjust per doctor advice)",
+          "snacks": "15-30g carbs per snack"
+        },
+        "note": "Exact targets must be personalized with a dietitian based on medications, activity level, and glucose patterns"
+      },
+      "plate_method": {
+        "description": "Simple visual tool for diabetes meal planning",
+        "instructions": [
+          "Fill HALF the plate with non-starchy vegetables (spinach, broccoli, cucumber, tomato)",
+          "Fill ONE QUARTER with lean protein (chicken, fish, eggs, legumes, paneer)",
+          "Fill ONE QUARTER with complex carbohydrates (brown rice, whole wheat roti, quinoa)",
+          "Add a small amount of healthy fat (handful of nuts or small drizzle of olive oil)",
+          "Include a low-GI fruit on the side",
+          "Drink water or unsweetened beverage"
+        ]
+      }
+    },
+
+    "lifestyle_management": {
+      "physical_activity": {
+        "benefits": [
+          "Lowers blood sugar by helping muscles use glucose without insulin",
+          "Improves insulin sensitivity for up to 24-48 hours",
+          "Aids weight loss and maintenance",
+          "Improves cardiovascular health",
+          "Reduces HbA1c by 0.5-1%"
+        ],
+        "recommended_exercises": [
+          {
+            "type": "Aerobic Exercise",
+            "examples": ["Brisk walking", "Cycling", "Swimming", "Dancing", "Jogging"],
+            "duration": "150 minutes per week (30 min/day, 5 days)",
+            "intensity": "Moderate intensity (can talk but slightly breathless)"
+          },
+          {
+            "type": "Resistance / Strength Training",
+            "examples": ["Weight lifting", "Bodyweight exercises", "Resistance bands", "Yoga with strength poses"],
+            "duration": "2-3 sessions per week",
+            "benefit": "Builds muscle mass; improves insulin sensitivity significantly"
+          },
+          {
+            "type": "Flexibility and Balance",
+            "examples": ["Yoga", "Stretching", "Tai Chi"],
+            "duration": "Daily or 3-4 times per week",
+            "benefit": "Reduces stress; improves balance (important to prevent falls in diabetic neuropathy)"
+          },
+          {
+            "type": "Post-Meal Walking",
+            "examples": ["10-15 minute walk after meals"],
+            "benefit": "Significantly reduces post-meal glucose spikes",
+            "duration": "10-15 minutes after each main meal"
+          }
+        ],
+        "precautions": [
+          "Check blood sugar before and after exercise",
+          "If blood sugar < 100 mg/dL before exercise, have a small snack first",
+          "If blood sugar > 250 mg/dL and ketones present, avoid vigorous exercise",
+          "Carry fast-acting glucose (tablets/juice) during exercise",
+          "Wear proper footwear — diabetic foot care is essential",
+          "Inspect feet before and after exercise",
+          "Stay hydrated during exercise"
+        ]
+      },
+      "weight_management": [
+        "Even 5-10% body weight loss significantly improves blood sugar control",
+        "Caloric deficit of 500-750 kcal/day for safe weight loss",
+        "Combine diet and exercise for best results",
+        "Avoid crash diets or extreme food restriction",
+        "Monitor weight weekly"
+      ],
+      "blood_sugar_monitoring": {
+        "devices": ["Glucometer (fingerprick)", "Continuous Glucose Monitor (CGM)", "Flash Glucose Monitor (FGM)"],
+        "frequency": {
+          "type1": "4-10 times per day or continuous CGM",
+          "type2_on_insulin": "Before meals and bedtime daily",
+          "type2_on_oral_only": "2-3 times per week (fasting + post-meal)",
+          "gestational": "4 times daily (fasting + 1 hour after each meal)"
+        },
+        "log_and_share": "Record readings in a diary or app; share with doctor at every visit"
+      },
+      "stress_management": [
+        "Stress hormones (cortisol, adrenaline) raise blood sugar",
+        "Practice mindfulness meditation, deep breathing, or progressive muscle relaxation daily",
+        "Yoga is particularly beneficial for both stress and blood sugar management",
+        "Maintain a regular sleep schedule (7-9 hours per night)",
+        "Seek counseling or therapy if anxiety or depression is present (common in diabetes)"
+      ],
+      "foot_care": {
+        "importance": "Diabetic neuropathy and poor circulation make feet vulnerable to ulcers, infections, and amputation",
+        "daily_care": [
+          "Inspect feet daily for cuts, blisters, redness, or swelling",
+          "Wash feet daily with mild soap and lukewarm water; dry thoroughly between toes",
+          "Moisturize feet (not between toes) to prevent dryness and cracking",
+          "Trim toenails straight across; do not cut too short",
+          "Wear well-fitting, comfortable shoes with socks at all times",
+          "Never walk barefoot — even indoors",
+          "Avoid heating pads or hot water bottles on feet",
+          "See a podiatrist if any wound, ulcer, or infection develops"
+        ]
+      },
+      "dental_care": [
+        "Diabetes increases risk of gum disease (periodontitis)",
+        "Brush teeth twice daily with fluoride toothpaste",
+        "Floss daily",
+        "Visit dentist every 6 months",
+        "Inform dentist about diabetes diagnosis"
+      ],
+      "smoking_cessation": "Smoking dramatically increases risk of heart attack, stroke, and kidney disease in diabetes. Quitting is the single most impactful lifestyle change alongside blood sugar control."
+    },
+
+    "complications": {
+      "overview": "Poorly managed diabetes causes damage to blood vessels and nerves throughout the body over time.",
+      "microvascular": [
+        {
+          "complication": "Diabetic Retinopathy",
+          "description": "Damage to blood vessels in the retina; leading cause of blindness in working-age adults",
+          "prevention": "Tight glucose and BP control; annual dilated eye exam",
+          "severity": "Moderate to Severe"
+        },
+        {
+          "complication": "Diabetic Nephropathy (Kidney Disease)",
+          "description": "Progressive kidney damage leading to chronic kidney disease and potentially end-stage renal failure",
+          "prevention": "Control glucose, BP (use ACE inhibitor/ARB), limit protein in diet",
+          "severity": "Severe"
+        },
+        {
+          "complication": "Diabetic Neuropathy",
+          "description": "Nerve damage causing numbness, tingling, pain (peripheral), or autonomic dysfunction (gastroparesis, erectile dysfunction, orthostatic hypotension)",
+          "prevention": "Strict glucose control; B12 supplementation if on metformin",
+          "severity": "Moderate to Severe"
+        }
+      ],
+      "macrovascular": [
+        {
+          "complication": "Coronary Artery Disease / Heart Attack",
+          "description": "2-4x higher risk; largest cause of death in Type 2 diabetes",
+          "prevention": "Glucose + BP + cholesterol control; statins; aspirin; smoking cessation",
+          "severity": "Critical"
+        },
+        {
+          "complication": "Stroke (Cerebrovascular Disease)",
+          "description": "2-3x higher risk due to damaged blood vessels in brain",
+          "prevention": "Blood pressure and glucose control",
+          "severity": "Critical"
+        },
+        {
+          "complication": "Peripheral Artery Disease (PAD)",
+          "description": "Narrowed blood vessels in legs causing pain, poor wound healing, and risk of amputation",
+          "prevention": "Exercise; glucose control; smoking cessation; statins",
+          "severity": "Severe"
+        }
+      ],
+      "other_complications": [
+        {
+          "complication": "Diabetic Foot Ulcer and Amputation",
+          "description": "Combination of neuropathy and PAD leads to non-healing ulcers and gangrene",
+          "severity": "Severe"
+        },
+        {
+          "complication": "Non-Alcoholic Fatty Liver Disease (NAFLD/NASH)",
+          "description": "Fat accumulation in liver; closely linked to insulin resistance",
+          "severity": "Moderate"
+        },
+        {
+          "complication": "Increased Infection Risk",
+          "description": "High glucose impairs immune function; higher risk of TB, UTI, skin, and fungal infections",
+          "severity": "Moderate"
+        },
+        {
+          "complication": "Cognitive Decline / Dementia",
+          "description": "Chronic hyperglycemia damages brain blood vessels; Type 2 linked to increased dementia risk",
+          "severity": "Long-term"
+        },
+        {
+          "complication": "Depression and Anxiety",
+          "description": "2x higher prevalence; reciprocal relationship where depression worsens glucose control",
+          "severity": "Moderate"
+        }
+      ]
+    },
+
+    "diabetes_in_special_populations": {
+      "diabetes_in_children": {
+        "type": "Predominantly Type 1",
+        "key_points": [
+          "Requires multiple daily insulin injections or insulin pump (CSII)",
+          "Parents and school staff must be educated on hypoglycemia management",
+          "CGM devices are recommended for children",
+          "Psychological support is essential for the child and family",
+          "Type 2 is rising in adolescents due to childhood obesity"
+        ]
+      },
+      "diabetes_in_pregnancy": {
+        "type": "Gestational Diabetes (GDM)",
+        "key_points": [
+          "Screened at 24-28 weeks with OGTT",
+          "Diet and exercise are first-line management",
+          "Insulin (not metformin as first choice) if diet fails",
+          "Risks: macrosomia (large baby), preeclampsia, C-section delivery, neonatal hypoglycemia",
+          "60% chance of developing Type 2 within 5-10 years — lifestyle intervention crucial postpartum"
+        ]
+      },
+      "diabetes_in_elderly": {
+        "key_points": [
+          "Atypical presentation — may present with confusion, falls, or incontinence rather than classic symptoms",
+          "Strict glucose targets (HbA1c < 7%) may be too aggressive; HbA1c < 8% may be safer",
+          "Higher risk of hypoglycemia — choose medications with low hypoglycemia risk (DPP-4 inhibitors, GLP-1 agonists)",
+          "Polypharmacy is common — check for drug interactions",
+          "Functional assessment and fall prevention are important",
+          "Simplified treatment regimens improve adherence"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza (Flu) Vaccine",
+        "frequency": "Annually",
+        "reason": "Infections raise blood sugar and increase complication risk"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV13 / PPSV23)",
+        "frequency": "Once; booster may be needed",
+        "reason": "Diabetes increases susceptibility to pneumococcal pneumonia"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "frequency": "3-dose series if not previously vaccinated",
+        "reason": "Shared glucose monitoring devices are a risk factor for HBV transmission"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "frequency": "As per national guidelines",
+        "reason": "Diabetes significantly increases risk of severe COVID-19 outcomes"
+      },
+      {
+        "vaccine": "Tetanus / Tdap",
+        "frequency": "Every 10 years",
+        "reason": "Wound infection prevention — critical given slow wound healing in diabetes"
+      }
+    ],
+
+    "diabetes_prevention": {
+      "prediabetes_reversal": [
+        "5-7% body weight loss reduces diabetes risk by 58% (DPP Trial)",
+        "150 minutes/week of moderate-intensity exercise",
+        "Low-calorie, low-fat, high-fiber diet",
+        "Regular blood sugar monitoring every 6-12 months",
+        "Metformin may be prescribed by doctor for high-risk prediabetes individuals"
+      ],
+      "type1_prevention": "Currently no proven prevention. Research into immune modulation is ongoing.",
+      "type2_prevention": [
+        "Maintain healthy BMI",
+        "Exercise regularly",
+        "Eat a balanced, whole-food diet",
+        "Limit refined sugar and processed food",
+        "Avoid smoking",
+        "Limit alcohol",
+        "Manage stress effectively",
+        "Regular health screenings after age 35 or if risk factors present"
+      ]
+    },
+
+    "diabetes_action_plan": {
+      "daily_routine": [
+        "Take prescribed medications on time",
+        "Monitor blood sugar as directed",
+        "Follow meal plan — do not skip meals",
+        "Physical activity for at least 30 minutes",
+        "Check feet for any cuts or wounds",
+        "Log blood sugar readings"
+      ],
+      "sick_day_rules": [
+        "NEVER stop insulin on sick days — even if not eating, you need some insulin",
+        "Monitor blood sugar more frequently (every 2-4 hours)",
+        "Stay hydrated with water and clear fluids",
+        "Check urine or blood for ketones if Type 1 or blood sugar > 240 mg/dL",
+        "Call doctor if vomiting prevents keeping fluids down",
+        "Call doctor if blood sugar > 300 mg/dL persists",
+        "Go to emergency if ketones are high, you cannot keep fluids down, or you feel very unwell"
+      ]
+    },
+
+    "frequently_asked_questions": [
+      {
+        "question": "Can Type 2 diabetes be reversed?",
+        "answer": "Type 2 diabetes can go into remission (HbA1c below 6.5% without medication) through significant weight loss (10-15% of body weight) and sustained lifestyle changes. This is most achievable in the early years after diagnosis. However, it requires permanent lifestyle maintenance to sustain."
+      },
+      {
+        "question": "Is diabetes hereditary?",
+        "answer": "Both Type 1 and Type 2 have genetic components. Type 2 has a stronger hereditary link — if both parents have Type 2, a child has a 50-70% lifetime risk. However, lifestyle choices play a major role and can prevent or delay onset even in high-risk individuals."
+      },
+      {
+        "question": "Can I eat rice and roti with diabetes?",
+        "answer": "Yes, but in controlled portions and preferably in the whole-grain form. Brown rice, millets, and whole wheat roti are better choices. Pair with high-fiber vegetables and protein to slow glucose absorption. Portion control is key."
+      },
+      {
+        "question": "What is HbA1c and how often should it be tested?",
+        "answer": "HbA1c (glycated hemoglobin) reflects your average blood sugar over the past 2-3 months. A result of 6.5% or above confirms diabetes. For managed diabetes, the goal is generally below 7%. Test every 3 months if not at target, or every 6 months when well-controlled."
+      },
+      {
+        "question": "Can diabetics eat fruits?",
+        "answer": "Yes, but choose low GI fruits like guava, jamun, apple, pear, and berries. Avoid high-sugar fruits like mango, banana, grapes, and litchi in large portions. Always eat whole fruit rather than juice, as the fiber slows glucose absorption."
+      },
+      {
+        "question": "Is insulin the last resort for Type 2 diabetes?",
+        "answer": "No — insulin is a very effective medication, not a sign of failure. Some patients with Type 2 may need insulin early, especially if blood sugar is very high at diagnosis. Starting insulin early can preserve pancreatic function and prevent complications."
+      },
+      {
+        "question": "What is the difference between Type 1 and Type 2 diabetes?",
+        "answer": "Type 1 is autoimmune — the body destroys insulin-producing cells and produces no insulin; it requires lifelong insulin. Type 2 is mainly lifestyle-related — the body produces insulin but doesn't use it effectively; it is managed with lifestyle, oral medications, and sometimes insulin."
+      },
+      {
+        "question": "Can I exercise safely with diabetes?",
+        "answer": "Yes, and it is strongly recommended. Exercise is one of the most powerful tools for blood sugar control. Always check blood sugar before and after exercise, carry a fast-acting glucose source, wear proper footwear, and consult your doctor before starting a new exercise program."
+      },
+      {
+        "question": "How do I treat hypoglycemia (low blood sugar)?",
+        "answer": "Follow the 15-15 rule: consume 15g of fast-acting carbohydrates (glucose tablets, 1/2 cup juice, or sugar in water), wait 15 minutes, and recheck blood sugar. Repeat if still below 70 mg/dL. If unconscious, give glucagon injection or call emergency services."
+      },
+      {
+        "question": "Does stress affect blood sugar?",
+        "answer": "Yes. Physical and emotional stress releases hormones like cortisol and adrenaline that raise blood sugar. Managing stress through yoga, meditation, sleep, and exercise is an important part of diabetes management."
+      }
+    ],
+
+    "references": [
+      "American Diabetes Association (ADA) Standards of Medical Care in Diabetes 2024",
+      "International Diabetes Federation (IDF) Diabetes Atlas 11th Edition 2023",
+      "World Health Organization (WHO) — Diabetes Fact Sheet 2023",
+      "RSSDI (Research Society for the Study of Diabetes in India) Clinical Practice Recommendations 2022",
+      "UK NICE Guidelines — Type 1 and Type 2 Diabetes in Adults",
+      "ENDOCRINE SOCIETY Clinical Practice Guidelines",
+      "UpToDate: Overview of the management of type 2 diabetes mellitus",
+      "Medscape: Diabetes Mellitus Clinical Overview",
+      "Diabetes Prevention Program (DPP) Research Group",
+      "UKPDS (UK Prospective Diabetes Study) — Long-term evidence for glycemic control"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-DIABETES-002",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-05-26",
+      "last_updated": "2026-05-26",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is intended for educational and informational purposes for the MedoAir chatbot. It does not replace professional medical advice, diagnosis, or treatment. Always consult a licensed physician for medical decisions.",
+      "tags": ["diabetes", "diabetes mellitus", "type 1", "type 2", "insulin", "blood sugar", "hyperglycemia", "HbA1c", "chronic disease", "metabolic", "medoair"]
+    }
+  }
+}

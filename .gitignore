@@ -1,0 +1,39 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment (contains secrets)
+.env
+.env.local
+.env.*.local
+
+# Vector DB (rebuild from datasets)
+vector_db/db/
+
+# Logs
+logs/*.log
+
+# Node
+node_modules/
+frontend/build/
+frontend/chatbot-ui/build/
+frontend/chatbot-ui/.env.local
+frontend/.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Package lock (optional - remove this line if you want to keep it)
+package-lock.json

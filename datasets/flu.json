@@ -1,0 +1,1548 @@
+[
+  {
+    "disease": "Influenza(flu)",
+    "aliases": [
+      "Flu",
+      "Seasonal Influenza",
+      "Influenza A",
+      "Influenza B",
+      "Influenza C",
+      "Influenza D",
+      "H1N1 (Swine Flu)",
+      "H3N2",
+      "H5N1 (Bird Flu / Avian Influenza)",
+      "Avian Influenza",
+      "Zoonotic Influenza",
+      "Pandemic Influenza",
+      "Grippe",
+      "Human Influenza"
+    ],
+
+    "audience": [
+      "general public",
+      "travellers",
+      "healthcare providers and clinicians",
+      "medical and nursing students",
+      "pregnant women",
+      "parents of young children",
+      "elderly individuals",
+      "immunocompromised patients",
+      "public health workers",
+      "pharmacists"
+    ],
+
+    "description": "Influenza (flu) is a highly contagious acute respiratory illness caused by influenza viruses (types A, B, C, and D) that primarily infect the nose, throat, and lungs, producing a sudden onset of fever, chills, headache, severe myalgia, and respiratory symptoms. The disease causes approximately 1 billion infections annually worldwide, including 3–5 million severe cases and 290,000–650,000 respiratory deaths, with epidemics occurring seasonally — primarily in winter months — driven by continuous antigenic drift and periodic antigenic shift of the virus. Influenza A viruses are the most clinically significant, responsible for all recorded influenza pandemics including the devastating 1918 Spanish flu, the 1957 and 1968 pandemics, and the 2009 H1N1 pandemic, with annual vaccination remaining the cornerstone of prevention.",
+
+    "overview": {
+      "definition": "Influenza is an acute febrile respiratory illness caused by influenza viruses, characterized by abrupt onset of fever, headache, myalgia, malaise, cough, sore throat, and rhinitis, with the potential to cause severe complications including pneumonia, ARDS, and death — especially in high-risk populations.",
+      "global_burden": {
+        "annual_infections": "Approximately 1 billion cases worldwide",
+        "severe_cases_per_year": "3–5 million severe cases annually",
+        "annual_deaths": "290,000–650,000 respiratory deaths per year (WHO)",
+        "us_annual_burden": "9–41 million illnesses, 140,000–710,000 hospitalizations, and 12,000–52,000 deaths per year (CDC)",
+        "high_risk_group": "Children under 5, adults over 65, pregnant women, immunocompromised individuals, and those with chronic medical conditions",
+        "economic_burden": "Significant loss of productivity; hundreds of millions in healthcare costs annually"
+      },
+      "seasonality": {
+        "northern_hemisphere": "October to March (peak December–February)",
+        "southern_hemisphere": "April to September",
+        "tropical_regions": "Year-round circulation with less distinct seasonality",
+        "cause_of_seasonality": "Cold dry air preserves viral particles longer; people spend more time indoors; vitamin D deficiency in winter may reduce immune responses"
+      },
+      "pandemic_history": [
+        {
+          "name": "1918 Spanish Flu",
+          "subtype": "H1N1",
+          "deaths": "Estimated 20–50 million deaths worldwide",
+          "note": "Deadliest pandemic in recorded history; unusually severe mortality in young adults (20–40 years)"
+        },
+        {
+          "name": "1957 Asian Flu",
+          "subtype": "H2N2",
+          "deaths": "Estimated 1–2 million deaths"
+        },
+        {
+          "name": "1968 Hong Kong Flu",
+          "subtype": "H3N2",
+          "deaths": "Estimated 1 million deaths"
+        },
+        {
+          "name": "2009 H1N1 Pandemic (Swine Flu)",
+          "subtype": "H1N1pdm09",
+          "deaths": "Estimated 151,700–575,400 deaths in first year",
+          "note": "Unusual severity in younger adults; elderly had partial immunity from 1918-related strains; now circulates as seasonal influenza"
+        }
+      ]
+    },
+
+    "causative_agent": {
+      "name": "Influenza virus",
+      "type": "RNA virus — enveloped, negative-sense, segmented, single-stranded RNA",
+      "family": "Orthomyxoviridae",
+      "genome": "8 gene segments encoding 10–14 proteins; segmented genome allows reassortment between two strains infecting the same cell",
+
+      "types": {
+        "influenza_A": {
+          "description": "Most clinically significant type; causes seasonal epidemics and all major pandemics; infects humans, birds, pigs, horses, seals, and other animals",
+          "classification": "Classified by hemagglutinin (H1–H18) and neuraminidase (N1–N11) subtypes",
+          "major_human_subtypes": ["H1N1 (seasonal and 2009 pandemic)", "H3N2 (seasonal)", "H5N1 (avian, zoonotic)", "H7N9 (avian, zoonotic)", "H5N2 (detected in US poultry/cattle 2024)"],
+          "reservoir": "Wild aquatic birds are the natural reservoir; pigs are important mixing vessels for reassortment"
+        },
+        "influenza_B": {
+          "description": "Causes seasonal epidemics; primarily infects humans; milder than Type A; does not cause pandemics",
+          "lineages": ["B/Victoria lineage", "B/Yamagata lineage (no longer detected as of 2020; removed from quadrivalent vaccines)"],
+          "note": "Children are more severely affected by Type B than adults"
+        },
+        "influenza_C": {
+          "description": "Causes mild respiratory illness; rarely causes epidemics; less clinical significance; infects humans and pigs",
+          "severity": "Usually mild; does not require specific antiviral treatment"
+        },
+        "influenza_D": {
+          "description": "Primarily infects cattle; no documented human infections; not a current human health concern",
+          "note": "Discovered 2011"
+        }
+      },
+
+      "key_surface_proteins": {
+        "hemagglutinin_HA": {
+          "function": "Binds to sialic acid receptors on host respiratory epithelial cells; initiates viral entry; primary target of neutralizing antibodies and vaccines",
+          "subtypes": "H1–H18 in influenza A",
+          "host_specificity": "Human strains bind alpha-2,6-linked sialic acid (upper respiratory tract); avian strains bind alpha-2,3-linked sialic acid (lower respiratory tract and GI tract in birds)",
+          "clinical_importance": "Changes in HA allow viruses to evade pre-existing immunity; basis of antigenic drift"
+        },
+        "neuraminidase_NA": {
+          "function": "Cleaves sialic acid to release newly formed virions from infected cells; facilitates virus spread through respiratory tract mucus; target of antiviral drugs (oseltamivir, zanamivir, peramivir, baloxavir indirectly)",
+          "subtypes": "N1–N11 in influenza A",
+          "clinical_importance": "Mutations in NA (e.g., H274Y/H275Y) confer resistance to neuraminidase inhibitors"
+        },
+        "matrix_protein_M2": {
+          "function": "Ion channel; involved in viral uncoating; target of adamantane antivirals (amantadine, rimantadine) — now largely resistant",
+          "resistance_note": "Widespread adamantane resistance in circulating H3N2 and H1N1pdm09; adamantanes no longer recommended"
+        },
+        "PB2_polymerase": {
+          "function": "Viral RNA-dependent RNA polymerase; target of baloxavir marboxil (cap-dependent endonuclease inhibitor)"
+        }
+      },
+
+      "antigenic_variation": {
+        "antigenic_drift": {
+          "definition": "Gradual accumulation of point mutations in HA and NA genes during viral replication; results in small but progressive changes in surface proteins",
+          "mechanism": "RNA polymerase lacks proofreading ability; introduces random mutations; those that evade immunity are selected",
+          "clinical_consequence": "Reduced effectiveness of existing immunity and vaccines; drives need for annual vaccine reformulation",
+          "rate": "Continuous; occurs every season"
+        },
+        "antigenic_shift": {
+          "definition": "Sudden, major change in influenza A surface proteins through genetic reassortment (mixing of gene segments between two different influenza strains co-infecting the same cell)",
+          "mechanism": "Segmented genome allows exchange of whole gene segments; can produce a novel HA or NA subtype",
+          "clinical_consequence": "Creates new pandemic strains with no or minimal existing human immunity; responsible for 1957, 1968, and 2009 pandemics",
+          "frequency": "Rare; unpredictable; pandemic potential"
+        }
+      },
+
+      "virus_replication_cycle": {
+        "step_1": "Hemagglutinin binds to sialic acid receptors on respiratory epithelial cells",
+        "step_2": "Virus is endocytosed into the cell",
+        "step_3": "M2 ion channels acidify the endosome, triggering viral uncoating and release of viral RNA segments into nucleus",
+        "step_4": "Viral RNA-dependent RNA polymerase (RdRp) replicates viral RNA and transcribes mRNA in the nucleus",
+        "step_5": "Viral proteins synthesized in cytoplasm; assembled at cell membrane",
+        "step_6": "Neuraminidase cleaves sialic acid to release new virions from cell surface",
+        "step_7": "New virions infect neighboring cells; spread throughout respiratory tract",
+        "key_target_cells": "Ciliated columnar epithelial cells of upper and lower respiratory tract; type I and II alveolar pneumocytes in severe disease"
+      }
+    },
+
+    "transmission": {
+      "primary_mode": "Respiratory droplets expelled during talking, coughing, or sneezing by infected individuals",
+      "routes": [
+        {
+          "route": "Respiratory droplets",
+          "description": "Large droplets (>5 µm) travel short distances (<1–2 meters); land on mucous membranes of eyes, nose, or mouth of susceptible persons; most common route"
+        },
+        {
+          "route": "Airborne / aerosol",
+          "description": "Fine droplet nuclei (<5 µm) can remain suspended in air in enclosed spaces; particularly relevant in crowded indoor settings; evidence for airborne transmission increasing"
+        },
+        {
+          "route": "Contact / fomite transmission",
+          "description": "Touching contaminated surfaces (doorknobs, phones, keyboards) then touching nose, mouth, or eyes; influenza virus survives on hard surfaces up to 24 hours"
+        }
+      ],
+      "contagious_period": "From 1 day before symptom onset to 5–7 days after becoming ill; children and immunocompromised individuals may shed virus for longer",
+      "incubation_details": "Influenza is most contagious in the first 2–3 days of illness when viral shedding is highest",
+      "reproduction_number": {
+        "seasonal_influenza": "R0 = 1.2–1.4",
+        "pandemic_influenza": "R0 = 2–3 (1918 Spanish flu up to 3–5)"
+      },
+      "high_risk_settings": [
+        "Schools and childcare facilities",
+        "Long-term care facilities and nursing homes",
+        "Healthcare settings without adequate PPE",
+        "Crowded indoor spaces with poor ventilation",
+        "Public transport",
+        "Households with an infected individual",
+        "Military barracks and institutions",
+        "Cruise ships and aircraft"
+      ],
+      "surface_survival": {
+        "hard_nonporous_surfaces": "Up to 24 hours",
+        "soft_porous_surfaces": "8–12 hours",
+        "on_hands": "Up to 30 minutes",
+        "aerosol_low_humidity_cold": "Up to several hours"
+      },
+      "zoonotic_transmission": {
+        "avian_influenza_H5N1": "Transmitted to humans through direct contact with infected poultry, surfaces contaminated with feces/secretions; extremely limited human-to-human transmission",
+        "swine_influenza": "Transmission from pigs to humans possible; 2009 H1N1 pandemic originated from swine-origin reassortant virus",
+        "risk_settings": "Poultry farms, live animal markets, slaughterhouses"
+      }
+    },
+
+    "incubation_period": {
+      "range": "1–4 days",
+      "median": "2 days",
+      "onset_character": "Abrupt; flu symptoms typically develop suddenly and can be severe within hours of onset",
+      "note": "Shorter incubation (1–2 days) is common; distinguishes flu from many other respiratory infections with longer incubation periods"
+    },
+
+    "clinical_severity_classification": {
+      "uncomplicated": {
+        "definition": "Influenza illness involving the upper respiratory tract and/or lower respiratory tract without evidence of complications",
+        "symptoms": "Fever, cough, sore throat, rhinitis, headache, myalgia, fatigue",
+        "management": "Outpatient supportive care; antiviral therapy for high-risk patients within 2 days of onset"
+      },
+      "complicated": {
+        "definition": "Influenza with evidence of lower respiratory tract disease, central nervous system involvement, significant dehydration, bacterial superinfection, or exacerbation of underlying chronic conditions",
+        "includes": ["Pneumonia", "ARDS", "Encephalitis", "Myocarditis", "Worsening of asthma/COPD/heart failure"],
+        "management": "Hospitalization; antiviral therapy (oseltamivir preferred); monitor for secondary bacterial infection"
+      },
+      "severe": {
+        "definition": "Requiring ICU admission; respiratory failure; hemodynamic instability; multi-organ involvement",
+        "spo2": "SpO2 < 92% on room air",
+        "management": "ICU care; invasive mechanical ventilation if needed; corticosteroids only for specific indications; broad-spectrum antibiotics if secondary bacterial pneumonia"
+      }
+    },
+
+    "pathophysiology": {
+      "overview": "Influenza virus infects ciliated respiratory epithelial cells via hemagglutinin binding to sialic acid receptors. Viral replication destroys the epithelial lining, triggering innate immune responses. Systemic symptoms (fever, myalgia, fatigue) are primarily immune-mediated via cytokines rather than direct viral invasion of systemic tissues.",
+
+      "phase_1_infection_and_replication": {
+        "description": "Virus infects upper respiratory tract epithelium; incubation phase; innate immune activation begins; type I interferon (IFN-α/β) production initiated",
+        "viral_tropism": "Ciliated columnar epithelium of nasal passages, trachea, bronchi; type I and II pneumocytes in severe disease",
+        "tissue_destruction": "Viral replication destroys cilia and epithelial cells; impairs mucociliary clearance; creates portal for secondary bacterial infections"
+      },
+
+      "phase_2_immune_response": {
+        "description": "Innate immune response: neutrophils and macrophages infiltrate respiratory mucosa; cytokine production causes systemic symptoms",
+        "key_cytokines": ["Interferon-alpha (IFN-α)", "Tumor necrosis factor (TNF-α)", "Interleukin-6 (IL-6)", "Interleukin-1 (IL-1)"],
+        "systemic_symptoms_mechanism": "Cytokines (especially TNF-α, IL-6, IFN-α) cause fever, myalgia, fatigue, and headache — not direct viral invasion of muscles or brain",
+        "lymphocyte_response": "T-cell and B-cell adaptive immunity develops within 5–10 days; antibodies to HA and NA key to clearance and protection"
+      },
+
+      "phase_3_complications": {
+        "primary_viral_pneumonia": "Direct viral pneumonia from influenza replication in alveolar epithelium; bilateral patchy infiltrates; high mortality; less common than secondary bacterial pneumonia",
+        "secondary_bacterial_pneumonia": "Most common severe complication; destruction of ciliated epithelium allows bacterial colonization; Streptococcus pneumoniae, Staphylococcus aureus (including MRSA), Streptococcus pyogenes most common organisms; may occur 3–7 days after initial improvement",
+        "cytokine_dysregulation": "Severe influenza can trigger dysregulated cytokine response; exaggerated inflammatory response contributes to ARDS and multi-organ dysfunction",
+        "cardiovascular": "Influenza infection triggers acute MI via plaque destabilization, hypercoagulable state, and direct myocardial inflammation; risk of MI increases 3–5x in week after flu diagnosis",
+        "neurological": "Rare but includes encephalitis, acute necrotizing encephalopathy, febrile seizures; especially in children"
+      }
+    },
+
+    "common_symptoms": [
+      "Sudden onset of fever or feeling feverish/chills (38–40°C / 100.4–104°F)",
+      "Dry, non-productive cough",
+      "Sore throat",
+      "Runny or stuffy nose (rhinorrhea/nasal congestion)",
+      "Severe muscle aches and body pains (myalgia)",
+      "Headache (often severe)",
+      "Profound fatigue and weakness",
+      "Loss of appetite",
+      "Sneezing",
+      "Watery or red eyes (conjunctivitis — less common)"
+    ],
+
+    "severe_symptoms": [
+      "Difficulty breathing or shortness of breath",
+      "Persistent chest pain or pressure",
+      "Oxygen saturation below 92% on room air",
+      "Confusion or altered mental status",
+      "Severe or persistent vomiting",
+      "Signs of dehydration (no urination for 8+ hours, dry mouth, dizziness)",
+      "Bluish discoloration of lips or fingernails (cyanosis)",
+      "Seizures",
+      "High fever above 40°C (104°F) unresponsive to antipyretics",
+      "Severe weakness or inability to stand",
+      "In children: fast breathing or labored breathing, ribs showing with each breath, grayish skin color, not drinking fluids",
+      "Symptoms that improve then return with fever and worsening cough (sign of secondary bacterial pneumonia)"
+    ],
+
+    "causes": [
+      "Infection with influenza type A viruses (H1N1, H3N2 — responsible for most seasonal epidemics)",
+      "Infection with influenza type B viruses (B/Victoria lineage — primarily affects children and young adults)",
+      "Infection with influenza type C virus (mild, rare)",
+      "Zoonotic infection with avian influenza (H5N1, H7N9) from direct animal contact",
+      "Hemagglutinin binding to sialic acid receptors on respiratory epithelial cells initiating viral entry",
+      "Viral replication within ciliated respiratory epithelium causing cell death and inflammation",
+      "Cytokine-mediated systemic inflammatory response producing fever, myalgia, and fatigue",
+      "Antigenic drift enabling seasonal strain to evade pre-existing immunity from prior infection or vaccination"
+    ],
+
+    "risk_factors": [
+      {
+        "factor": "Age < 2 years",
+        "details": "Highest hospitalization and death rates among infants <6 months; immature immune system; high-risk group for severe complications",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Age < 5 years",
+        "details": "All children under 5 considered at increased risk for serious flu complications; highest incidence of influenza illness",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Age ≥ 65 years",
+        "details": "Immunosenescence; highest hospitalization and mortality rates; responsible for >90% of influenza deaths in the US; attenuated vaccine response",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Pregnancy (all trimesters) and up to 2 weeks postpartum",
+        "details": "Physiological immunomodulation; reduced lung capacity; increased risk of hospitalization, ICU admission, preterm birth, and maternal death; influenza vaccination strongly recommended",
+        "category": "Physiological"
+      },
+      {
+        "factor": "Chronic pulmonary disease (asthma, COPD)",
+        "details": "Influenza triggers severe asthma and COPD exacerbations; impaired mucociliary clearance; high risk of pneumonia",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Chronic cardiovascular disease",
+        "details": "Heart disease (excluding hypertension alone); influenza increases MI risk 3–5x; heart failure worsened by fluid shifts and hypoxemia",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Diabetes mellitus",
+        "details": "Hyperglycemia impairs neutrophil and macrophage function; higher risk of secondary bacterial pneumonia and hospitalization",
+        "category": "Modifiable/Non-modifiable"
+      },
+      {
+        "factor": "Chronic kidney disease",
+        "details": "Uremia impairs immune function; higher complication and hospitalization rates",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Chronic liver disease",
+        "details": "Impaired immune function and coagulation; higher risk of severe influenza",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Neurological and neurodevelopmental conditions",
+        "details": "Includes cerebral palsy, epilepsy, stroke, intellectual disability, muscular dystrophy, spinal cord injury; impaired airway clearance; higher aspiration risk",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Hematological disorders (sickle cell disease)",
+        "details": "Vascular and pulmonary complications worsened by influenza infection; high-risk group per CDC/IDSA",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Metabolic disorders",
+        "details": "Obesity (BMI ≥ 40 — morbid obesity) significantly increases risk of severe influenza and hospitalization; impaired respiratory mechanics; pro-inflammatory state",
+        "category": "Modifiable"
+      },
+      {
+        "factor": "Immunosuppression",
+        "details": "HIV/AIDS, organ transplant recipients, cancer patients on chemotherapy, patients on high-dose corticosteroids or biological therapies; markedly impaired influenza-specific immunity; higher viral loads and prolonged shedding",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Unvaccinated status",
+        "details": "Strongest modifiable risk factor for influenza-related hospitalization and death; annual vaccination significantly reduces risk",
+        "category": "Modifiable"
+      },
+      {
+        "factor": "Residents of nursing homes and long-term care facilities",
+        "details": "High concentration of elderly and frail individuals; close quarters facilitate rapid spread; institutional outbreaks common",
+        "category": "Environmental"
+      },
+      {
+        "factor": "Children aged <19 years on long-term aspirin therapy",
+        "details": "Risk of Reye's syndrome if given aspirin during influenza infection; aspirin must be avoided; acetaminophen or ibuprofen preferred",
+        "category": "Medication-related"
+      },
+      {
+        "factor": "American Indians and Alaska Natives",
+        "details": "Higher hospitalization rates for influenza compared to white populations; CDC high-priority group for vaccination",
+        "category": "Non-modifiable"
+      },
+      {
+        "factor": "Smoking",
+        "details": "Damages respiratory epithelium and cilia; impairs mucociliary clearance; increases severity of influenza",
+        "category": "Modifiable"
+      }
+    ],
+
+    "diagnosis_methods": [
+      {
+        "method": "Rapid Influenza Diagnostic Tests (RIDTs)",
+        "type": "Rapid antigen immunoassay",
+        "description": "Detects influenza A and B viral nucleoprotein antigens in respiratory specimens; results in 10–15 minutes",
+        "specimen": "Nasopharyngeal swab, nasal swab, or nasal wash",
+        "sensitivity": "50–70% (variable; low sensitivity means negative results do not exclude flu)",
+        "specificity": "High (>90%); positive results are reliable",
+        "who_2024_recommendation": "Digital immunoassay (DIA) preferred over traditional RIDTs for non-severe cases; DIA has higher sensitivity (~80%) than traditional RIDTs",
+        "limitation": "Cannot distinguish influenza subtypes; negative result does not rule out flu — treat based on clinical judgment",
+        "authority": "CDC, WHO, IDSA"
+      },
+      {
+        "method": "RT-PCR (Reverse Transcription Polymerase Chain Reaction) / NAAT",
+        "type": "Molecular",
+        "description": "Detects influenza viral RNA; most sensitive and specific test; can identify and subtype influenza A and B; can distinguish seasonal from pandemic strains",
+        "specimen": "Nasopharyngeal swab (reference standard); nasal swab; bronchoalveolar lavage in severe disease",
+        "turnaround_time": "2–8 hours in laboratory; 30–60 minutes for point-of-care platforms",
+        "sensitivity": "Very high (>95%)",
+        "specificity": "Very high (>98%)",
+        "who_2024_recommendation": "NAAT recommended for diagnosing suspected SEVERE influenza and for all hospitalized patients with suspected influenza",
+        "authority": "WHO 2024, IDSA 2018 updated, CDC"
+      },
+      {
+        "method": "Multiplex PCR / Respiratory Panel",
+        "type": "Molecular — multiplex",
+        "description": "Simultaneously tests for influenza A, influenza B, and other respiratory pathogens (RSV, SARS-CoV-2, parainfluenza, adenovirus, etc.) in one assay",
+        "clinical_role": "Preferred for hospitalized patients; differentiates influenza from COVID-19 and other co-circulating respiratory viruses",
+        "turnaround_time": "1–4 hours",
+        "examples": ["FilmArray Respiratory Panel", "BioFire RP2.1"],
+        "authority": "CDC and IDSA recommend for hospitalized patients with severe respiratory illness"
+      },
+      {
+        "method": "Direct Fluorescent Antibody (DFA) Staining",
+        "type": "Immunofluorescence",
+        "description": "Detects influenza viral antigens in respiratory epithelial cells using fluorescently labelled antibodies; distinguishes influenza A and B",
+        "sensitivity": "60–80%; lower than PCR",
+        "turnaround_time": "2–4 hours; requires trained laboratory staff",
+        "clinical_role": "Useful when rapid PCR not available; less commonly used now"
+      },
+      {
+        "method": "Viral Culture",
+        "type": "Cell culture",
+        "description": "Gold standard for virus isolation and characterization; grows live virus in cell culture (MDCK cells) or embryonated eggs",
+        "turnaround_time": "3–10 days",
+        "clinical_role": "Not used for acute diagnosis; used for public health surveillance, antiviral resistance testing, vaccine strain selection",
+        "authority": "WHO GISRS (Global Influenza Surveillance and Response System) uses viral culture for global monitoring"
+      },
+      {
+        "method": "Serological Testing (Hemagglutination Inhibition — HI assay)",
+        "type": "Antibody detection",
+        "description": "Detects influenza-specific antibodies (paired acute and convalescent serum showing ≥4-fold rise in HI titer confirms infection)",
+        "timing": "Requires 2 serum samples taken 2–4 weeks apart; not useful for acute diagnosis",
+        "clinical_role": "Epidemiological surveillance; research; not for acute clinical diagnosis"
+      },
+      {
+        "method": "Chest X-ray (CXR)",
+        "type": "Imaging",
+        "description": "Reveals bilateral patchy infiltrates or consolidation in influenza pneumonia; may be normal in uncomplicated influenza",
+        "clinical_role": "Indicated for patients with dyspnea, hypoxemia, or suspected pneumonia; not needed for uncomplicated flu",
+        "finding": "Bilateral interstitial or patchy alveolar infiltrates; lobar consolidation if secondary bacterial pneumonia"
+      },
+      {
+        "method": "Complete Blood Count (CBC)",
+        "type": "Laboratory",
+        "description": "Reveals leukopenia (low white cell count) and lymphopenia in uncomplicated influenza; leukocytosis with neutrophilia suggests secondary bacterial infection",
+        "typical_findings": {
+          "WBC": "Normal or low (leukopenia in early viral phase)",
+          "lymphocytes": "Lymphopenia common",
+          "platelets": "Normal or low",
+          "note": "High WBC/neutrophilia should raise suspicion of bacterial superinfection"
+        }
+      },
+      {
+        "method": "Inflammatory Markers",
+        "type": "Laboratory",
+        "description": "Used to assess severity in hospitalized patients",
+        "key_markers": {
+          "CRP": "Elevated in influenza pneumonia; very high CRP suggests secondary bacterial infection",
+          "procalcitonin": "Low/normal in pure viral influenza; elevated if bacterial superinfection; helps guide antibiotic decisions",
+          "LDH": "Elevated in severe influenza with extensive tissue destruction",
+          "ferritin": "Elevated in severe disease"
+        }
+      },
+      {
+        "method": "Pulse Oximetry",
+        "type": "Clinical monitoring",
+        "description": "Monitors peripheral oxygen saturation; SpO2 < 92% indicates significant hypoxemia; home monitoring recommended in high-risk patients",
+        "clinical_importance": "Identify early respiratory decompensation; guide oxygen supplementation"
+      }
+    ],
+
+    "treatment_options": [
+      {
+        "setting": "Uncomplicated — Low-Risk Outpatient",
+        "description": "Most healthy adults and children recover from uncomplicated influenza with supportive care only",
+        "interventions": [
+          "Rest and avoid strenuous activity during febrile illness",
+          "Stay home to prevent spread to others",
+          "Adequate hydration — water, broths, herbal teas, oral rehydration solutions (2–3 liters daily)",
+          "Paracetamol (acetaminophen) or ibuprofen for fever, headache, and myalgia — NOT aspirin (except adults; never in children due to Reye's syndrome risk)",
+          "Warm saline gargles for sore throat",
+          "Nasal decongestants or saline nasal rinse for congestion",
+          "Honey and warm fluids for cough (adults and children over 1 year)",
+          "Monitor for worsening; seek care if symptoms do not improve after 5 days or worsen"
+        ]
+      },
+      {
+        "setting": "Uncomplicated — High-Risk Outpatient (antiviral recommended)",
+        "description": "Patients with risk factors for severe disease should receive antiviral therapy as early as possible — within 2 days of symptom onset for best effect",
+        "interventions": [
+          "Oral oseltamivir (Tamiflu) — preferred for high-risk outpatients with suspected/confirmed influenza",
+          "Oral baloxavir marboxil (Xofluza) — conditionally recommended within 2 days for high-risk patients (WHO 2024)",
+          "Inhaled zanamivir or IV peramivir as alternatives based on age and contraindications (CDC 2025)",
+          "Supportive care as above",
+          "Close monitoring for complications",
+          "Antiviral treatment recommended even if >48 hours since symptom onset in high-risk patients with progressive disease (CDC)"
+        ]
+      },
+      {
+        "setting": "Complicated — Hospitalized with Pneumonia or Lower Respiratory Involvement",
+        "description": "Patients with complications require hospital admission and aggressive treatment",
+        "interventions": [
+          "IV oseltamivir or oral oseltamivir (preferred antiviral; start regardless of time since symptom onset)",
+          "Supplemental oxygen to maintain SpO2 ≥ 94%",
+          "IV fluids if dehydrated or unable to take orally",
+          "Antibiotics if secondary bacterial pneumonia suspected (based on WBC, procalcitonin, CXR consolidation) — amoxicillin-clavulanate, ceftriaxone, or based on local antibiogram",
+          "Blood cultures and sputum cultures before antibiotics",
+          "Monitor inflammatory markers (CRP, procalcitonin, CBC) daily",
+          "Deep vein thrombosis prophylaxis (LMWH)"
+        ]
+      },
+      {
+        "setting": "Severe — ICU",
+        "description": "Patients with respiratory failure, ARDS, or hemodynamic instability require intensive care",
+        "interventions": [
+          "IV oseltamivir 75–150 mg twice daily (higher dose considered in severe disease)",
+          "Invasive mechanical ventilation for ARDS (lung-protective: low tidal volume 6 mL/kg IBW)",
+          "High-flow nasal oxygen (HFNO) or NIV as bridge before intubation",
+          "Prone positioning for severe ARDS",
+          "Vasopressors for septic shock",
+          "Corticosteroids only for ARDS per WHO 2024 recommendations (NOT recommended routinely; may worsen outcomes)",
+          "Broad-spectrum antibiotics for secondary bacterial pneumonia (Staphylococcal MRSA coverage if needed)",
+          "ECMO for refractory ARDS in specialized centers",
+          "Renal replacement therapy for AKI"
+        ]
+      },
+      {
+        "setting": "Post-Exposure Antiviral Chemoprophylaxis",
+        "description": "Antivirals can prevent influenza after exposure — recommended for high-risk individuals exposed within 48 hours",
+        "interventions": [
+          "Oseltamivir 75 mg once daily for 10 days post-exposure (WHO 2024 conditional recommendation for high-risk individuals)",
+          "Baloxavir, zanamivir, or laninamivir as alternatives (WHO 2024)",
+          "Not recommended for routine use or as a substitute for vaccination",
+          "Consider for unvaccinated high-risk individuals exposed to confirmed influenza within 48 hours",
+          "Institutional outbreak management: treat all residents/staff with antivirals (CDC/IDSA)"
+        ]
+      }
+    ],
+
+    "medications": [
+      {
+        "name": "Oseltamivir",
+        "brand_name": "Tamiflu",
+        "class": "Neuraminidase inhibitor (NAI)",
+        "mechanism": "Inhibits influenza A and B neuraminidase, preventing release of newly formed virions from infected cells and reducing viral spread through the respiratory tract",
+        "route": "Oral (capsules or liquid suspension)",
+        "indication": "Treatment of acute uncomplicated influenza in patients ≥2 weeks of age; high-risk outpatients; hospitalized patients; post-exposure prophylaxis",
+        "dosing": {
+          "adult_treatment": "75 mg twice daily for 5 days",
+          "adult_severe": "75–150 mg twice daily for 5–10 days (extended course for hospitalized/ICU)",
+          "pediatric": "Weight-based dosing from 2 weeks to <1 year; age/weight-based for older children",
+          "prophylaxis": "75 mg once daily for 10 days (post-exposure) or up to 6 weeks (seasonal)"
+        },
+        "treatment_window": "Most effective when started within 48 hours of symptom onset; still recommended after 48 hours in high-risk or hospitalized patients",
+        "authority": "WHO preferred for severe influenza; CDC preferred; IDSA recommended; WHO 2024 — conditionally recommended for severe influenza",
+        "pregnancy": "Preferred antiviral for pregnant and breastfeeding women; oseltamivir safety data robust",
+        "resistance": "H275Y mutation in neuraminidase confers high-level oseltamivir resistance; limited but monitor via surveillance"
+      },
+      {
+        "name": "Baloxavir Marboxil",
+        "brand_name": "Xofluza",
+        "manufacturer": "Shionogi / Roche",
+        "class": "Cap-dependent endonuclease inhibitor",
+        "mechanism": "Inhibits the PB2 cap-binding subunit of viral RNA polymerase; blocks viral mRNA synthesis at a different step than neuraminidase inhibitors; single-dose regimen",
+        "route": "Oral",
+        "indication": "Treatment of uncomplicated influenza A and B in patients ≥5 years; post-exposure prophylaxis",
+        "dosing": {
+          "adult_treatment": "40 mg single dose (for patients <80 kg); 80 mg single dose (≥80 kg)",
+          "pediatric": "Weight-based single dose for ≥5 years"
+        },
+        "treatment_window": "Within 48 hours of symptom onset",
+        "authority": "WHO 2024 conditionally recommends for high-risk non-severe cases; CDC includes as option; approved by FDA for treatment and prophylaxis",
+        "advantage": "Single oral dose improves adherence; novel mechanism — effective against oseltamivir-resistant strains",
+        "concern": "Post-treatment resistance mutations reported (I38T); not recommended in pregnancy (insufficient safety data)"
+      },
+      {
+        "name": "Zanamivir",
+        "brand_name": "Relenza",
+        "class": "Neuraminidase inhibitor (NAI)",
+        "mechanism": "Inhibits influenza A and B neuraminidase; structurally similar to sialic acid",
+        "route": "Inhaled (dry powder inhaler); IV formulation available for compassionate use in severe cases",
+        "indication": "Treatment of uncomplicated influenza A and B in patients ≥7 years; prophylaxis in patients ≥5 years",
+        "dosing": {
+          "treatment": "10 mg (two 5 mg inhalations) twice daily for 5 days",
+          "prophylaxis": "10 mg once daily for 10 days (post-exposure) or 28 days (seasonal)"
+        },
+        "contraindications": "Inhaled form contraindicated in patients with asthma or COPD (may cause bronchospasm); not recommended in pregnancy unless benefits outweigh risks",
+        "authority": "CDC: option for outpatient treatment; WHO 2024: alternative for prophylaxis"
+      },
+      {
+        "name": "Peramivir",
+        "brand_name": "Rapivab",
+        "class": "Neuraminidase inhibitor (NAI)",
+        "mechanism": "IV neuraminidase inhibitor; same class as oseltamivir and zanamivir",
+        "route": "Intravenous",
+        "indication": "Treatment of acute uncomplicated influenza in adults and children ≥2 years; useful when oral route not available",
+        "dosing": {
+          "adult": "600 mg single IV dose over 15–30 minutes",
+          "pediatric": "12 mg/kg single IV dose"
+        },
+        "advantage": "Single IV dose; useful for hospitalized patients who cannot take oral medications",
+        "authority": "CDC includes as treatment option; FDA approved"
+      },
+      {
+        "name": "Amantadine / Rimantadine",
+        "class": "Adamantanes (M2 ion channel inhibitors)",
+        "mechanism": "Blocks M2 ion channel of influenza A, preventing viral uncoating",
+        "route": "Oral",
+        "current_status": "NOT recommended for treatment or prophylaxis of influenza A due to widespread resistance (>99% of circulating H3N2 and H1N1pdm09 strains resistant)",
+        "historical_use": "Previously used for influenza A; resistance emerged rapidly in 2000s",
+        "note": "No activity against influenza B; not useful for current circulating strains"
+      },
+      {
+        "name": "Paracetamol / Acetaminophen",
+        "brand_examples": ["Tylenol", "Calpol", "Panadol", "Crocin"],
+        "class": "Antipyretic and analgesic",
+        "mechanism": "Inhibits prostaglandin synthesis in CNS; reduces fever and pain",
+        "route": "Oral or IV",
+        "indication": "First-line symptomatic treatment of fever, headache, and myalgia in influenza",
+        "dosing_adult": "500–1000 mg every 4–6 hours; maximum 4000 mg/day (3000 mg/day with liver disease)",
+        "notes": "PREFERRED over aspirin in all patients under 18 years (Reye's syndrome risk); preferred in pregnancy; safe OTC option"
+      },
+      {
+        "name": "Ibuprofen",
+        "class": "NSAID — Non-steroidal anti-inflammatory drug",
+        "mechanism": "Inhibits COX-1 and COX-2; reduces prostaglandin synthesis; antipyretic, analgesic, and anti-inflammatory",
+        "route": "Oral",
+        "indication": "Alternative to paracetamol for fever, myalgia, and headache in influenza",
+        "dosing_adult": "400–600 mg every 6–8 hours with food; max 2400 mg/day",
+        "notes": "Avoid in children <6 months; avoid in pregnancy (3rd trimester); avoid in renal impairment; good option for adults"
+      },
+      {
+        "name": "Aspirin (Acetylsalicylic acid)",
+        "class": "NSAID / Salicylate",
+        "indication": "Symptomatic treatment — ADULTS ONLY",
+        "warning": "NEVER use aspirin or aspirin-containing products in children or adolescents with influenza — causes Reye's syndrome (rare but life-threatening hepatic encephalopathy). Paracetamol or ibuprofen must be used instead.",
+        "note": "Children aged <19 years on long-term aspirin therapy are a high-risk group; requires antiviral therapy if they develop influenza"
+      },
+      {
+        "name": "Broad-spectrum antibiotics (for secondary bacterial pneumonia)",
+        "examples": ["Amoxicillin-clavulanate", "Ceftriaxone", "Azithromycin", "Vancomycin or linezolid (for MRSA)"],
+        "indication": "Secondary bacterial pneumonia after influenza; NOT for uncomplicated influenza (viral infection; antibiotics ineffective)",
+        "authority": "CDC, IDSA: antibiotics only for confirmed or highly suspected bacterial superinfection"
+      }
+    ],
+
+    "common_symptoms_detailed": {
+      "fever": {
+        "description": "Rapid onset high fever 38–40°C (100.4–104°F); may be accompanied by rigors (shaking chills); highly characteristic of flu vs cold",
+        "prevalence": "70–90% of symptomatic cases",
+        "onset": "Abrupt; often can pinpoint exact hour symptoms began — hallmark of influenza",
+        "management": "Paracetamol or ibuprofen; never aspirin in children; cool compresses; adequate hydration"
+      },
+      "myalgia": {
+        "description": "Severe muscle aches, particularly in legs, back, and upper arms; often the most debilitating symptom; makes movement painful",
+        "prevalence": "80–90% of symptomatic cases",
+        "mechanism": "Cytokine-mediated (TNF-α, IL-6, IFN-α) — not direct viral invasion of muscles",
+        "management": "Paracetamol or ibuprofen; rest; warm bath may provide temporary relief"
+      },
+      "cough": {
+        "description": "Initially dry, non-productive; may progress to productive cough if secondary bacterial infection develops",
+        "prevalence": "70–80%",
+        "duration": "May persist 2–3 weeks after recovery",
+        "management": "Honey and warm liquids; humidifier; cough suppressants (dextromethorphan) for adults with severe dry cough"
+      },
+      "headache": {
+        "description": "Often severe frontal headache; typically bilateral; may be accompanied by photophobia; cytokine-mediated",
+        "prevalence": "70–80%",
+        "management": "Paracetamol or ibuprofen; dark room rest; adequate hydration"
+      },
+      "fatigue": {
+        "description": "Profound weakness and tiredness often disproportionate to other symptoms; can persist weeks after acute illness (post-influenza fatigue syndrome)",
+        "prevalence": "90–95%",
+        "recovery": "Most resolve within 2 weeks; some experience post-viral fatigue for 4–6 weeks, especially elderly"
+      },
+      "loss_of_appetite": {
+        "description": "Reduced appetite common during acute febrile illness; contributes to dehydration risk",
+        "management": "Small, frequent light meals; nutrient-dense foods even with low appetite; focus on hydration above solid food intake"
+      },
+      "gastrointestinal_symptoms": {
+        "description": "Nausea, vomiting, and diarrhea less common in seasonal influenza but more prominent in children and with influenza B; stomach flu is NOT influenza",
+        "clarification": "'Stomach flu' is a misnomer — true influenza is a respiratory disease; GI illnesses are caused by other pathogens (norovirus, rotavirus)"
+      }
+    },
+
+    "lifestyle_home_remedies": [
+      {
+        "remedy": "Complete bed rest during acute febrile phase",
+        "evidence": "Strong",
+        "details": "Reduce physical activity until fever-free without antipyretics for at least 24 hours; rest conserves immune energy; avoid return to work, school, or public places while symptomatic to prevent spread"
+      },
+      {
+        "remedy": "Optimal hydration",
+        "evidence": "Strong",
+        "details": "2–3 liters of fluid daily; fever and sweating cause significant fluid loss; monitor for dehydration signs (dark urine, no urination for 8+ hours, dry mouth, dizziness); oral rehydration solutions if vomiting"
+      },
+      {
+        "remedy": "Warm chicken or vegetable soup",
+        "evidence": "Moderate — traditional and some clinical evidence",
+        "details": "Provides hydration, electrolytes (sodium, potassium), protein (antibody production), and zinc; steam helps clear nasal congestion; anti-inflammatory compounds in chicken broth; classic evidence-based flu remedy",
+        "authority": "Supported by observational research; endorsed by most clinical guides"
+      },
+      {
+        "remedy": "Warm saline gargle",
+        "evidence": "Moderate",
+        "details": "1/4–1/2 teaspoon salt in 8 oz warm water; gargle 30 seconds 3–4x daily; soothes sore throat; reduces pharyngeal inflammation; does not have antiviral properties but improves comfort"
+      },
+      {
+        "remedy": "Steam inhalation and humidifier",
+        "evidence": "Moderate for symptom relief",
+        "details": "Inhaling steam or using a cool-mist humidifier loosens nasal and chest congestion; adds moisture to irritated airways; no antiviral benefit but significant symptom relief; caution with young children (burn risk from steam)"
+      },
+      {
+        "remedy": "Honey for cough relief",
+        "evidence": "Moderate — WHO and NICE endorsed",
+        "details": "1–2 teaspoons honey in warm water or herbal tea; reduces cough frequency and severity; safe for adults and children over 1 year; never for infants <1 year (botulism risk)",
+        "authority": "WHO and NICE recommend honey as first-line treatment for cough in adults and children"
+      },
+      {
+        "remedy": "Nasal saline rinse",
+        "evidence": "Moderate",
+        "details": "Commercial saline nasal spray or neti pot with distilled/boiled water; flushes viral particles and mucus from nasal passages; reduces congestion; recommended 2–3 times daily"
+      },
+      {
+        "remedy": "Menthol rubs (vapor rubs)",
+        "evidence": "Moderate for subjective relief",
+        "details": "Topical menthol/eucalyptus preparations on chest and throat create cooling sensation that reduces subjective nasal congestion; not recommended for children under 2 years on face or near nostrils; adult formula only"
+      },
+      {
+        "remedy": "Room ventilation",
+        "evidence": "Strong for reducing viral load in room",
+        "details": "Open windows for fresh air circulation; avoid recirculating air in sick room; use HEPA air purifiers if available; reduces viral particle concentration for household members"
+      },
+      {
+        "remedy": "Isolation and infection control",
+        "evidence": "Strong",
+        "details": "Stay home for at least 24 hours after fever has resolved without fever-reducing medications; wear a surgical mask in shared spaces; designate separate bathroom if possible; disinfect high-touch surfaces daily"
+      },
+      {
+        "remedy": "Warm ginger and honey tea",
+        "evidence": "Traditional/emerging — anti-inflammatory, antiemetic properties",
+        "details": "Fresh ginger (1 inch), honey (1 tsp), lemon juice in hot water; ginger reduces nausea, has anti-inflammatory properties (6-gingerol, 6-shogaol); honey soothes throat; lemon provides vitamin C"
+      },
+      {
+        "remedy": "Adequate sleep",
+        "evidence": "Strong for immune function",
+        "details": "7–9 hours per night; cytokine production and T-cell activity peak during deep sleep; sleep deprivation during illness prolongs recovery and increases complication risk"
+      },
+      {
+        "remedy": "Avoid smoking and secondhand smoke",
+        "evidence": "Strong",
+        "details": "Smoking worsens respiratory tract inflammation; impairs mucociliary clearance; significantly increases risk of influenza pneumonia and complications; complete smoking cessation recommended"
+      },
+      {
+        "remedy": "Warm compresses for headache and myalgia",
+        "evidence": "Moderate",
+        "details": "Warm compress on forehead or neck for headache; warm towel or heating pad on aching muscles for myalgia relief; combine with paracetamol or ibuprofen for best effect"
+      }
+    ],
+
+    "diet_recommended": [
+      {
+        "food_or_pattern": "Warm soups and broths",
+        "evidence": "Strong — multiple mechanisms",
+        "examples": ["Chicken soup (classic; zinc, protein, N-acetylcysteine-like compounds)", "Vegetable broth", "Bone broth", "Lentil soup (dal)", "Miso soup"],
+        "mechanism": "Hydration; electrolyte replacement; steam clears nasal passages; anti-inflammatory compounds; easy to digest with low appetite; warmth soothes sore throat"
+      },
+      {
+        "food_or_pattern": "Vitamin C-rich fruits and vegetables",
+        "evidence": "Strong for immune support",
+        "examples": ["Citrus fruits (oranges, grapefruit, lemons)", "Kiwi (highest per serving)", "Bell peppers (red > green)", "Broccoli", "Strawberries", "Guava", "Papaya"],
+        "mechanism": "Vitamin C supports neutrophil function, lymphocyte production, and antibody synthesis; antioxidant effect reduces oxidative stress from infection; may reduce duration of symptoms"
+      },
+      {
+        "food_or_pattern": "Vitamin D-rich foods",
+        "evidence": "Moderate — meta-analysis shows vitamin D reduces flu infection risk",
+        "examples": ["Fatty fish (salmon, trout, mackerel, sardines)", "Cod liver oil", "Fortified dairy or plant milk", "Egg yolks", "UV-exposed mushrooms"],
+        "mechanism": "Vitamin D activates innate immune response; promotes production of antimicrobial peptides (cathelicidins); deficiency strongly associated with increased flu susceptibility"
+      },
+      {
+        "food_or_pattern": "Zinc-rich foods",
+        "evidence": "Moderate",
+        "examples": ["Pumpkin seeds", "Legumes (lentils, chickpeas)", "Nuts (cashews)", "Lean beef and poultry", "Shellfish (oysters — highest zinc content)", "Tofu"],
+        "mechanism": "Zinc inhibits viral replication; essential for T-cell and NK cell function; zinc deficiency impairs antiviral immunity"
+      },
+      {
+        "food_or_pattern": "Ginger tea and fresh ginger",
+        "evidence": "Moderate — anti-inflammatory and antiemetic properties",
+        "examples": ["Fresh ginger tea", "Ginger with honey and lemon", "Ginger in soups"],
+        "mechanism": "6-gingerol and 6-shogaol have anti-inflammatory, antiviral, and antiemetic properties; reduces nausea and vomiting; soothes sore throat and cough"
+      },
+      {
+        "food_or_pattern": "Honey",
+        "evidence": "Strong for cough and sore throat",
+        "examples": ["Raw honey in warm water", "Honey in herbal tea", "Honey with lemon"],
+        "mechanism": "Antiviral and antimicrobial properties (hydrogen peroxide, methylglyoxal); demulcent effect coats throat; anti-inflammatory; WHO-endorsed for cough relief"
+      },
+      {
+        "food_or_pattern": "Garlic",
+        "evidence": "Moderate — traditional and some clinical evidence",
+        "examples": ["Fresh garlic in soups", "Garlic tea", "Roasted garlic"],
+        "mechanism": "Allicin (active compound) has antiviral and immunomodulatory properties; may reduce severity and duration of flu; anti-inflammatory"
+      },
+      {
+        "food_or_pattern": "Probiotic-rich foods",
+        "evidence": "Emerging — gut microbiome linked to immune response",
+        "examples": ["Yogurt with live cultures (lactobacillus, bifidobacterium)", "Kefir", "Kimchi", "Sauerkraut", "Miso"],
+        "mechanism": "Maintains gut microbiome diversity; gut-immune axis supports respiratory immunity; some studies show probiotics reduce flu severity"
+      },
+      {
+        "food_or_pattern": "Lean protein for recovery",
+        "evidence": "Strong",
+        "examples": ["Boiled or grilled chicken", "Eggs (easily digestible)", "Fish (soft, easy to eat)", "Lentils and soft legumes", "Tofu"],
+        "mechanism": "Protein required for antibody production, immune cell synthesis, and tissue repair; fever increases protein catabolism; maintain 0.8–1.2g/kg daily"
+      },
+      {
+        "food_or_pattern": "Electrolyte-rich fluids",
+        "evidence": "Strong",
+        "examples": ["Oral rehydration solutions (ORS)", "Coconut water", "Diluted fruit juices", "Sports drinks (low sugar)", "Herbal teas with honey"],
+        "mechanism": "Replaces electrolytes (sodium, potassium, magnesium) lost through fever, sweating; prevents and treats dehydration; critical for recovery"
+      },
+      {
+        "food_or_pattern": "Turmeric (curcumin)",
+        "evidence": "Emerging/traditional",
+        "examples": ["Golden milk (turmeric latte)", "Turmeric in soups", "Turmeric with black pepper (increases absorption)"],
+        "mechanism": "Curcumin inhibits NF-κB inflammatory pathway; anti-inflammatory and antioxidant; may reduce cytokine-driven symptoms"
+      }
+    ],
+
+    "diet_to_avoid": [
+      {
+        "food_or_habit": "Alcohol",
+        "evidence": "Very strong; significantly suppresses immunity and worsens outcomes",
+        "details": "Heavy alcohol use is a risk factor for severe influenza and complications; suppresses innate and adaptive immunity; impairs mucociliary clearance; causes dehydration; increases pneumonia risk; complete abstinence recommended during illness",
+        "authority": "CDC cites heavy alcohol use as a risk factor for severe influenza outcomes"
+      },
+      {
+        "food_or_habit": "Refined sugars and sugary beverages",
+        "evidence": "Strong",
+        "examples": ["Sodas and fizzy drinks", "Candy, sweets, pastries", "Sugary fruit juices", "Energy drinks"],
+        "mechanism": "Hyperglycemia impairs neutrophil phagocytic activity; high sugar intake promotes inflammation; little nutritional value; worsens dehydration (osmotic effect)"
+      },
+      {
+        "food_or_habit": "Ultra-processed and fried foods",
+        "evidence": "Strong — pro-inflammatory and hard to digest",
+        "examples": ["Fast food", "Chips and crisps", "Fried chicken", "Pizza", "Processed ready meals"],
+        "mechanism": "High in trans fats and refined carbohydrates; pro-inflammatory; hard to digest when appetite is reduced; displace nutrient-dense foods"
+      },
+      {
+        "food_or_habit": "Processed meats",
+        "evidence": "Moderate",
+        "examples": ["Sausages", "Bacon", "Deli meats", "Hot dogs"],
+        "mechanism": "Pro-inflammatory; high sodium; nitrates and nitrites; minimal nutritional benefit during illness"
+      },
+      {
+        "food_or_habit": "Cold dairy (mucus concern)",
+        "evidence": "Low scientific evidence; anecdotal",
+        "details": "Some people find cold dairy (cold milk, ice cream) increases mucus thickness or worsens congestion. If this is your personal experience, temporarily reduce; no strong clinical evidence to universally avoid dairy — yogurt with probiotics is recommended",
+        "nuance": "Warm dairy (warm milk) is fine; avoid ice cream and cold milk if mucus worsens"
+      },
+      {
+        "food_or_habit": "Excessive caffeine",
+        "evidence": "Moderate",
+        "details": "Coffee and strong tea cause mild diuresis; can worsen dehydration during flu; also disrupts sleep which is critical for immune recovery; limit to 1 cup of tea or coffee per day during illness",
+        "exception": "Herbal teas (ginger, chamomile, peppermint) without caffeine are strongly recommended"
+      },
+      {
+        "food_or_habit": "Tobacco and smoking",
+        "evidence": "Very strong risk factor",
+        "details": "Smoking impairs mucociliary clearance; destroys respiratory epithelium; dramatically increases risk of influenza pneumonia and complications; strongly increases secondary bacterial infection risk; complete cessation recommended"
+      },
+      {
+        "food_or_habit": "Aspirin in children",
+        "evidence": "Critical safety — well established",
+        "details": "Aspirin or aspirin-containing products (including some cold/flu medications) MUST NEVER be given to children or adolescents with influenza — causes Reye's syndrome (life-threatening liver failure and brain swelling). Always use paracetamol (acetaminophen) or ibuprofen instead. Check all OTC flu medication labels for salicylate content."
+      },
+      {
+        "food_or_habit": "Heavy, greasy, and hard-to-digest meals",
+        "evidence": "Moderate — practical advice",
+        "details": "Nausea is common with flu; heavy meals cause digestive discomfort; stick to small, light, easily digestible meals; avoid fried foods, rich sauces, red meat in large portions; soups, broths, and soft foods preferred"
+      }
+    ],
+
+    "complications": [
+      {
+        "system": "Respiratory",
+        "complications": [
+          {
+            "name": "Primary Viral Pneumonia",
+            "description": "Direct extension of influenza virus into lower respiratory tract (alveoli); bilateral patchy infiltrates; high mortality; more common with pandemic strains; less common than secondary bacterial pneumonia",
+            "severity": "Severe"
+          },
+          {
+            "name": "Secondary Bacterial Pneumonia",
+            "description": "Most common severe complication; influenza destroys ciliated epithelium creating portal for bacterial infection 3–7 days after initial viral illness; classic pattern: initial improvement then relapse with worsening fever and productive cough; Streptococcus pneumoniae, Staphylococcus aureus (including MRSA), Streptococcus pyogenes most common organisms",
+            "severity": "Severe to life-threatening",
+            "note": "MRSA co-infection particularly dangerous; high mortality"
+          },
+          {
+            "name": "Mixed Viral-Bacterial Pneumonia",
+            "description": "Simultaneous viral and bacterial pneumonia; combination of both patterns; significant mortality",
+            "severity": "Severe"
+          },
+          {
+            "name": "Acute Respiratory Distress Syndrome (ARDS)",
+            "description": "Bilateral lung injury with refractory hypoxemia; complication of severe viral or secondary bacterial pneumonia; requires ICU and mechanical ventilation",
+            "severity": "Critical"
+          },
+          {
+            "name": "Exacerbation of Asthma",
+            "description": "Influenza is the most common trigger of severe asthma exacerbations; can require emergency hospitalization",
+            "severity": "Moderate to severe"
+          },
+          {
+            "name": "Exacerbation of COPD",
+            "description": "Influenza triggers acute COPD exacerbations with increased mucus, bronchospasm, and hypoxemia",
+            "severity": "Moderate to severe"
+          },
+          {
+            "name": "Croup (in children)",
+            "description": "Influenza A and B are common causes of viral croup in children; laryngotracheobronchitis with characteristic barking cough and stridor",
+            "severity": "Mild to moderate"
+          }
+        ]
+      },
+      {
+        "system": "Cardiovascular",
+        "complications": [
+          {
+            "name": "Acute Myocardial Infarction (MI)",
+            "description": "Influenza infection increases MI risk 3–5x in the week following diagnosis; mechanisms include plaque destabilization, hypercoagulable state, direct cardiac inflammation, and hypoxemia-induced demand ischemia",
+            "severity": "Life-threatening",
+            "prevention": "Influenza vaccination significantly reduces risk of MI in high-risk cardiac patients"
+          },
+          {
+            "name": "Myocarditis and Pericarditis",
+            "description": "Rare; direct viral inflammation of heart muscle; presents with chest pain, elevated troponin, ECG changes",
+            "severity": "Moderate to severe"
+          },
+          {
+            "name": "Worsening of Congestive Heart Failure",
+            "description": "Influenza triggers acute decompensated heart failure in patients with pre-existing cardiac disease",
+            "severity": "Moderate to severe"
+          }
+        ]
+      },
+      {
+        "system": "Neurological",
+        "complications": [
+          {
+            "name": "Febrile Seizures",
+            "description": "Most common neurological complication in children aged 6 months to 5 years; high fever triggers seizure; usually benign and self-limiting",
+            "severity": "Mild to moderate"
+          },
+          {
+            "name": "Influenza-Associated Encephalitis / Encephalopathy",
+            "description": "Rare but serious; altered consciousness, seizures, behavioral changes; can occur without direct viral brain invasion; cytokine-mediated; acute necrotizing encephalopathy (ANE) in children",
+            "severity": "Severe; can be fatal"
+          },
+          {
+            "name": "Reye's Syndrome",
+            "description": "Rare but life-threatening hepatic encephalopathy in children given aspirin during viral illness (especially influenza or varicella); presents with vomiting, confusion, liver failure; prevented by avoiding aspirin in children",
+            "severity": "Life-threatening",
+            "prevention": "Complete avoidance of aspirin in patients under 18 years with suspected viral illness"
+          },
+          {
+            "name": "Guillain-Barré Syndrome (GBS)",
+            "description": "Rare post-infectious autoimmune peripheral neuropathy; ascending muscle weakness; can follow influenza infection",
+            "severity": "Severe"
+          }
+        ]
+      },
+      {
+        "system": "Ear, Nose, and Throat",
+        "complications": [
+          {
+            "name": "Otitis Media (Ear Infection)",
+            "description": "Very common in children with influenza; bacteria colonize Eustachian tube after viral damage; ear pain, hearing loss; treated with antibiotics if bacterial",
+            "severity": "Mild to moderate"
+          },
+          {
+            "name": "Sinusitis",
+            "description": "Secondary bacterial sinusitis following influenza; nasal congestion → sinus obstruction → bacterial overgrowth; facial pain, purulent discharge",
+            "severity": "Mild to moderate"
+          }
+        ]
+      },
+      {
+        "system": "Pregnancy-Specific",
+        "complications": [
+          "Maternal pneumonia requiring hospitalization",
+          "Maternal ICU admission",
+          "Maternal death",
+          "Preterm labor and delivery",
+          "Fetal distress",
+          "Low birth weight",
+          "Congenital abnormalities (associated with high fever in first trimester)"
+        ]
+      },
+      {
+        "system": "Post-Influenza Sequelae",
+        "complications": [
+          {
+            "name": "Post-Influenza Fatigue Syndrome",
+            "description": "Persistent fatigue, weakness, and malaise lasting weeks to months after acute influenza; more common in elderly; impairs return to normal activity",
+            "severity": "Mild to moderate; self-limiting in most cases"
+          }
+        ]
+      }
+    ],
+
+    "when_to_see_doctor": "Seek medical evaluation promptly if you are in a high-risk group (age ≥65, child <5 years, pregnant, immunocompromised, or have chronic heart, lung, kidney, liver, metabolic, or neurological conditions) and develop flu symptoms — early antiviral treatment within 48 hours significantly reduces severity. You should also see a doctor if symptoms are unusually severe from onset, if you are not improving after 5 days, if fever returns after initial improvement (possible secondary bacterial pneumonia), if you develop difficulty breathing, or if you are unsure whether you need antiviral treatment. Patients with asthma or COPD should contact their doctor immediately as influenza triggers severe exacerbations requiring urgent medication adjustment.",
+
+    "emergency_signs": [
+      "Difficulty breathing, shortness of breath, or rapid breathing at rest",
+      "Persistent chest pain or pressure",
+      "Oxygen saturation below 92% on pulse oximeter",
+      "Confusion, disorientation, or altered mental status",
+      "Severe or persistent vomiting — unable to keep fluids down",
+      "Signs of dehydration: no urination for 8+ hours, dry lips, sunken eyes, extreme dizziness",
+      "Pale, gray, or bluish skin, lips, or fingernails (cyanosis)",
+      "Seizures",
+      "Extreme weakness — unable to walk or stand",
+      "High fever above 40°C (104°F) unresponsive to paracetamol or ibuprofen",
+      "Symptoms appear to improve then return with fever and worsening cough (secondary bacterial pneumonia)",
+      "In children: breathing so fast ribs are visible with each breath; grunting sounds with breathing; child cannot be woken or is unusually limp; severe irritability"
+    ],
+
+    "special_populations": {
+      "pregnancy": {
+        "risk_level": "High; CDC high-priority group for vaccination and antiviral treatment",
+        "risks": [
+          "Increased risk of severe influenza and hospitalization",
+          "Increased risk of pneumonia and ICU admission",
+          "Increased risk of preterm labor and delivery",
+          "Maternal death (rare but preventable with vaccination and antivirals)",
+          "High fever in first trimester associated with congenital abnormalities and neural tube defects"
+        ],
+        "physiological_reasons": "Physiological immunomodulation of pregnancy; reduced lung capacity; increased oxygen demand; heart rate and blood volume changes reduce respiratory reserve",
+        "treatment": {
+          "preferred_antiviral": "Oseltamivir (Tamiflu) — extensive safety data in pregnancy; preferred first-line",
+          "window": "Start immediately — within 48 hours of symptom onset; do not wait for lab confirmation",
+          "fever_management": "Treat fever aggressively with paracetamol (acetaminophen); high fever dangerous to fetus",
+          "avoid": "Aspirin (risk of fetal complications and Reye's in newborn); baloxavir (insufficient pregnancy data); ibuprofen in 3rd trimester"
+        },
+        "vaccination": {
+          "recommendation": "Inactivated influenza vaccine (IIV or RIV4) strongly recommended in all trimesters; do NOT give LAIV (live attenuated) in pregnancy",
+          "benefit": "Protects mother AND infant — maternal vaccination reduces influenza hospitalization in infants <6 months by 72% (via placental antibody transfer and breast milk)"
+        }
+      },
+      "children": {
+        "risk_level": "Children <5 years high-risk; children <2 years highest risk; infants <6 months highest hospitalization and death rates",
+        "typical_presentation": "Fever often higher than adults; febrile seizures common in <5 years; vomiting and abdominal pain more prominent; otitis media very common",
+        "specific_risk": "Influenza B disproportionately affects children; severe complications in children with neurological conditions",
+        "treatment": {
+          "antivirals": "Oseltamivir recommended for all hospitalized children, children <2 years, and children of any age with high-risk conditions; weight-based dosing; FDA approved from 2 weeks of age",
+          "analgesics": "Paracetamol or ibuprofen (≥6 months) for fever and pain; NEVER aspirin (Reye's syndrome)",
+          "febrile_seizure": "Usually benign; ensure airway safety; seek evaluation; not an emergency in most cases but warrants medical assessment"
+        },
+        "vaccination": {
+          "recommendation": "Annual influenza vaccination recommended for all children ≥6 months",
+          "laiv": "LAIV (live attenuated nasal spray vaccine) can be given to healthy children ≥2 years without contraindications",
+          "infants_under_6_months": "Cannot be vaccinated — protect via maternal vaccination and household vaccination (cocoon strategy)"
+        }
+      },
+      "elderly": {
+        "risk_level": "Very high; >90% of influenza deaths in US occur in adults ≥65 years",
+        "reasons": "Immunosenescence; multiple comorbidities; reduced pulmonary reserve; impaired thermogenesis (may not mount fever)",
+        "atypical_presentations": "May present without classic fever; confusion and falls can be presenting symptoms; functional decline without typical respiratory symptoms",
+        "treatment": "Oseltamivir recommended early; check renal function for dose adjustment; beware polypharmacy drug interactions; aggressive hydration",
+        "vaccination": "High-dose inactivated vaccine (Fluzone High-Dose) or adjuvanted vaccine (Fluad) preferred for adults ≥65 years — superior immunogenicity vs standard dose"
+      },
+      "immunocompromised": {
+        "includes": ["HIV/AIDS", "Solid organ or stem cell transplant recipients", "Patients on chemotherapy", "Patients on biologic agents (anti-TNF, rituximab)", "Primary immunodeficiency disorders", "High-dose corticosteroid therapy"],
+        "risks": "Higher viral loads; prolonged viral shedding (weeks); reduced vaccine immunogenicity; higher complication and mortality rates",
+        "treatment": "Oseltamivir; consider extended treatment course (10 days) for prolonged shedding; antiviral resistance monitoring; avoid LAIV (live vaccine contraindicated)",
+        "vaccination": "Inactivated influenza vaccine (IIV or RIV4) recommended; LAIV contraindicated; repeat vaccination if immunosuppression started after vaccination"
+      },
+      "healthcare_workers": {
+        "risk": "Occupational exposure risk; can transmit to vulnerable patients",
+        "prevention": "Annual vaccination strongly recommended (and mandatory in many institutions); N95 for aerosol-generating procedures; standard PPE for all patient contact",
+        "return_to_work": "Stay home until fever-free for 24 hours without antipyretics"
+      }
+    },
+
+    "prevention": {
+      "vaccination": {
+        "overview": "Annual influenza vaccination is the single most effective strategy to prevent influenza illness, hospitalization, and death. Vaccines are reformulated each year to match predicted circulating strains.",
+        "who_should_get_vaccinated": "Everyone aged ≥6 months (CDC 2025); priority groups include elderly (≥65), children (6 months–5 years), pregnant women, healthcare workers, immunocompromised individuals, and people with chronic medical conditions",
+        "timing": "Ideally before the start of flu season (by end of October in northern hemisphere); vaccination at any time during flu season still beneficial",
+        "vaccine_types": [
+          {
+            "type": "Inactivated Influenza Vaccine (IIV4 — Quadrivalent)",
+            "mechanism": "Contains killed influenza virus antigens; stimulates antibody response without causing infection",
+            "route": "Intramuscular injection",
+            "approved_ages": "≥6 months",
+            "examples": ["Fluzone Quadrivalent", "Fluarix Quadrivalent", "Flucelvax"],
+            "notes": "Standard recommendation for most people including pregnant women and immunocompromised"
+          },
+          {
+            "type": "High-Dose Inactivated Vaccine (IIV-HD)",
+            "mechanism": "Contains 4x the antigen dose of standard IIV; generates stronger immune response in elderly with reduced immunogenicity",
+            "route": "Intramuscular injection",
+            "approved_ages": "≥65 years",
+            "examples": ["Fluzone High-Dose Quadrivalent"],
+            "notes": "Preferred for adults ≥65 years; superior protection vs standard dose"
+          },
+          {
+            "type": "Adjuvanted Inactivated Vaccine",
+            "mechanism": "Contains MF59 adjuvant (oil-in-water emulsion) to enhance immune response; particularly useful in elderly",
+            "route": "Intramuscular injection",
+            "approved_ages": "≥65 years",
+            "examples": ["Fluad Quadrivalent"],
+            "notes": "Alternative to high-dose for adults ≥65 years"
+          },
+          {
+            "type": "Recombinant Influenza Vaccine (RIV4)",
+            "mechanism": "Produced using recombinant DNA technology; does not use eggs; higher HA content",
+            "route": "Intramuscular injection",
+            "approved_ages": "≥18 years",
+            "examples": ["Flublok Quadrivalent"],
+            "notes": "Safe for egg-allergic individuals; preferred by some clinicians for immunocompromised"
+          },
+          {
+            "type": "Live Attenuated Influenza Vaccine (LAIV4)",
+            "mechanism": "Contains weakened live virus; administered intranasally; stimulates both mucosal and systemic immunity; may provide broader immune response",
+            "route": "Intranasal spray",
+            "approved_ages": "2–49 years (healthy, non-pregnant)",
+            "examples": ["FluMist Quadrivalent"],
+            "contraindications": ["Pregnancy", "Immunocompromised", "Severe egg allergy", "Children 2–4 with wheezing or asthma history", "Aspirin therapy in children"]
+          }
+        ],
+        "vaccine_composition": "Quadrivalent vaccines contain two influenza A strains (H1N1 and H3N2) and one or two influenza B strains; selected by WHO GISRS twice yearly (February for northern hemisphere; September for southern hemisphere) based on circulating strains",
+        "vaccine_effectiveness": {
+          "typical_range": "40–60% against influenza A; higher against influenza B",
+          "variability": "Depends on match between vaccine strains and circulating strains; higher in well-matched seasons",
+          "severe_disease": "More effective at preventing hospitalization and death (70–85%) than preventing all symptomatic illness",
+          "cardiovascular_benefit": "Vaccination reduces risk of MI by 15–30% in high-risk cardiac patients (multiple studies)"
+        }
+      },
+      "chemoprophylaxis": {
+        "antivirals_for_prophylaxis": [
+          "Oseltamivir 75 mg once daily (post-exposure: 10 days; seasonal: up to 6 weeks)",
+          "Baloxavir (single dose or repeated dosing — under study)",
+          "Zanamivir (inhaled, post-exposure: 10 days)"
+        ],
+        "indications": [
+          "High-risk individuals exposed to confirmed influenza within 48 hours who are unvaccinated or received vaccine <2 weeks ago",
+          "Institutional outbreaks in nursing homes — treat all residents and staff",
+          "Immunocompromised individuals who may not respond to vaccination",
+          "Pregnant women in high-transmission settings when vaccination contraindicated"
+        ],
+        "authority": "WHO 2024 conditionally recommends post-exposure prophylaxis for high-risk individuals; IDSA 2018 guidelines"
+      },
+      "non_pharmaceutical_interventions": [
+        {
+          "measure": "Annual influenza vaccination",
+          "evidence": "Very strong — single most effective preventive measure",
+          "details": "All persons ≥6 months annually; priority for high-risk groups"
+        },
+        {
+          "measure": "Hand hygiene",
+          "evidence": "Strong",
+          "details": "Wash hands with soap and water for ≥20 seconds especially after coughing/sneezing, before eating, after touching surfaces in public; use alcohol-based sanitizer (≥60% ethanol) when soap unavailable"
+        },
+        {
+          "measure": "Respiratory etiquette (cough hygiene)",
+          "evidence": "Strong",
+          "details": "Cover mouth and nose with tissue or inner elbow when coughing or sneezing; discard tissue immediately; wash hands; reduces droplet spread"
+        },
+        {
+          "measure": "Stay home when sick",
+          "evidence": "Very strong",
+          "details": "Stay home for at least 24 hours after fever has resolved without fever-reducing medications; reduces community transmission; critical for preventing spread in workplaces and schools"
+        },
+        {
+          "measure": "Avoid touching eyes, nose, and mouth",
+          "evidence": "Moderate",
+          "details": "Reduces fomite transmission; influenza virus survives on surfaces up to 24 hours"
+        },
+        {
+          "measure": "Masking in high-risk settings",
+          "evidence": "Moderate",
+          "details": "Surgical mask or N95 respirator reduces influenza transmission; especially recommended for healthcare workers, high-risk patients in crowded settings during peak flu season"
+        },
+        {
+          "measure": "Disinfection of surfaces",
+          "evidence": "Moderate",
+          "details": "Disinfect high-touch surfaces (doorknobs, phones, keyboards) with household disinfectants; influenza virus inactivated by 70% ethanol, 1% hydrogen peroxide, common household bleach solutions"
+        },
+        {
+          "measure": "Ventilation improvement",
+          "evidence": "Moderate for airborne/aerosol transmission reduction",
+          "details": "Increase outdoor air ventilation in schools, workplaces, and healthcare settings; HEPA air purifiers; CO2 monitoring"
+        },
+        {
+          "measure": "Avoid close contact with sick people",
+          "evidence": "Strong",
+          "details": "Maintain distance from people with flu symptoms; especially important for high-risk individuals"
+        }
+      ]
+    },
+
+    "epidemiology": {
+      "global_surveillance": {
+        "who_gisrs": "WHO Global Influenza Surveillance and Response System (GISRS) — network of 149 institutions in 127 countries; monitors circulating strains year-round; informs annual vaccine composition",
+        "who_flunet": "FluNet — WHO online tool for monitoring influenza activity globally",
+        "cdc_flu_view": "CDC FluView — weekly US influenza surveillance reports",
+        "who_recommendation_cycle": "WHO issues vaccine composition recommendations twice per year: February for northern hemisphere (Oct–March season); September for southern hemisphere (April–September season)"
+      },
+      "current_season_2024_2025": {
+        "dominant_strains_northern_hemisphere": "H1N1pdm09 and H3N2 co-circulating; Influenza B/Victoria lineage contributing",
+        "vaccine_match": "Updated for 2024–2025 season; B/Yamagata lineage removed from quadrivalent vaccines as no longer detected globally since 2020",
+        "avian_influenza_2024": "H5N1 highly pathogenic avian influenza outbreak in US dairy cattle detected 2024; limited human infections; WHO monitoring closely; no evidence of sustained human-to-human transmission"
+      },
+      "pandemic_preparedness": {
+        "threat": "Novel influenza A viruses with pandemic potential — H5N1, H7N9, H5N2, H9N2; WHO conducts pandemic risk assessment for each zoonotic strain",
+        "key_risk_factors": ["Ability to bind human-type sialic acid receptors", "Person-to-person transmission capability", "Immune-naïve human population (no pre-existing immunity)", "Global travel for rapid spread"],
+        "who_pandemic_phases": "WHO uses pandemic alert phases (1–6) to coordinate global response; triggered when novel animal influenza virus causes human infections with pandemic potential"
+      }
+    },
+
+    "public_health_measures": {
+      "who_policy": "WHO Global Influenza Programme monitors influenza worldwide; coordinates vaccine strain selection; develops pandemic preparedness plans; provides Member States with guidance on surveillance, vaccination, and outbreak response",
+      "institutional_outbreaks": {
+        "settings": "Nursing homes, hospitals, schools, military barracks",
+        "response": [
+          "Antiviral treatment for all confirmed and suspected cases",
+          "Post-exposure antiviral prophylaxis for all exposed residents and staff (regardless of vaccination status during active outbreak)",
+          "Cohorting of cases",
+          "Enhanced infection control measures (hand hygiene, PPE, visitor restrictions)",
+          "Urgent vaccination of unvaccinated residents and staff if outbreak not yet in full swing",
+          "Report to public health authorities"
+        ],
+        "authority": "CDC and IDSA institutional outbreak management guidelines"
+      },
+      "infection_control_healthcare": {
+        "standard_precautions": "For all patients",
+        "droplet_precautions": "Surgical mask, eye protection, gown for patient contacts within 1–2 meters",
+        "airborne_precautions": "N95 respirator for aerosol-generating procedures (intubation, bronchoscopy, nebulizer treatments)",
+        "isolation": "Single-room isolation for confirmed influenza inpatients; cohorting if single rooms unavailable"
+      },
+      "india_specific": {
+        "authority": "Ministry of Health and Family Welfare (MoHFW), India; National Centre for Disease Control (NCDC)",
+        "seasonal_pattern": "Influenza activity peaks October–February and June–August (post-monsoon) in India; year-round transmission in tropical states",
+        "surveillance": "ICMR Influenza Sentinel Surveillance Network; WHO Country Office India coordinates with GISRS",
+        "vaccination": "Influenza vaccination recommended for high-risk groups under National Immunization Schedule; not yet universal in India"
+      }
+    },
+
+    "nursing_care": {
+      "home_care_mild": [
+        "Educate patient and family on symptom monitoring and warning signs requiring emergency care",
+        "Teach proper isolation technique to prevent household transmission",
+        "Ensure patient understands medication schedule (antivirals, antipyretics)",
+        "Assess hydration status at each contact; reinforce fluid intake targets",
+        "Remind about Reye's syndrome risk — confirm NO aspirin for children",
+        "Telehealth or phone follow-up for high-risk patients within 24–48 hours",
+        "Mental health and social support — isolation is distressing; especially for elderly living alone"
+      ],
+      "hospitalized_moderate": [
+        "Vital signs monitoring every 4–8 hours (temperature, HR, RR, BP, SpO2)",
+        "Fluid balance monitoring — input/output charting",
+        "Administer antiviral medications on schedule (oseltamivir — with food to reduce nausea)",
+        "Administer antipyretics as prescribed; tepid sponging for high fever",
+        "Monitor blood glucose in diabetic patients (fever and illness cause hyperglycemia)",
+        "Respiratory assessment — listen for new crackles or decreased breath sounds (bacterial pneumonia)",
+        "Obtain blood cultures and sputum cultures before antibiotics if bacterial superinfection suspected",
+        "Infection control: droplet precautions, hand hygiene, patient education on cough hygiene",
+        "Nutritional support — small, frequent meals; enteral nutrition if oral intake insufficient",
+        "DVT prophylaxis (LMWH) for hospitalized patients with immobility"
+      ],
+      "icu_severe": [
+        "Continuous cardiac monitoring, pulse oximetry, and respiratory rate monitoring",
+        "Arterial line for continuous blood pressure monitoring and ABG sampling",
+        "Invasive mechanical ventilation management — low tidal volume (6 mL/kg IBW), PEEP titration",
+        "Prone positioning protocols for severe ARDS (team of ≥4 staff; 12–16 hours/day)",
+        "Sedation and analgesia management (RASS scale)",
+        "Prevention of ventilator-associated pneumonia (VAP bundle)",
+        "Strict infection control — N95 for AGPs; droplet precautions standard",
+        "Pressure ulcer prevention — repositioning every 2 hours",
+        "Family communication — ICU visiting restrictions; provide regular updates"
+      ]
+    },
+
+    "infection_control": {
+      "transmission_precautions": {
+        "droplet": "Surgical mask + eye protection + gown for all patient contacts within 1–2 meters of symptomatic patient",
+        "airborne": "N95 or FFP2 respirator + eye protection + gown for aerosol-generating procedures",
+        "contact": "Gloves + gown; hand hygiene before and after all patient contacts"
+      },
+      "aerosol_generating_procedures": [
+        "Endotracheal intubation and extubation",
+        "Bronchoscopy",
+        "Open airway suctioning",
+        "Nebulizer administration",
+        "High-flow nasal oxygen",
+        "Non-invasive positive pressure ventilation",
+        "CPR",
+        "Manual ventilation"
+      ],
+      "environmental": [
+        "Single-room isolation if available; otherwise cohort influenza patients",
+        "Negative pressure room for high-risk aerosol-generating procedures if available",
+        "Daily disinfection of high-touch surfaces with hospital-grade disinfectant",
+        "Adequate ventilation (≥6 air changes per hour for influenza isolation rooms)"
+      ]
+    },
+
+    "prognostic_indicators": {
+      "poor_outcome_markers": [
+        "Bilateral chest infiltrates on CXR (viral pneumonia)",
+        "SpO2 < 90% on room air",
+        "Respiratory rate > 30 breaths/minute",
+        "PaO2/FiO2 < 200 mmHg",
+        "Leukopenia (very low WBC) OR leukocytosis (suggesting bacterial superinfection)",
+        "Elevated CRP > 100 mg/L",
+        "Elevated procalcitonin (bacterial superinfection)",
+        "Elevated LDH (extensive tissue destruction)",
+        "Age > 65 or < 2 years",
+        "Multiple comorbidities (especially immunosuppression, heart failure, COPD)",
+        "Pregnancy",
+        "Morbid obesity (BMI ≥ 40)",
+        "Delayed antiviral treatment (>48 hours after onset)",
+        "H5N1 or H7N9 infection (high case fatality rates)"
+      ],
+      "good_outcome_predictors": [
+        "Annual vaccination (current season)",
+        "Early antiviral treatment within 48 hours",
+        "Age 5–50 years without comorbidities",
+        "Mild severity at presentation",
+        "Normal SpO2",
+        "No bilateral infiltrates on CXR",
+        "Absence of immunosuppression"
+      ],
+      "scoring_tools": {
+        "PSI_PORT_score": "Pneumonia Severity Index — validated for community-acquired pneumonia including post-influenza pneumonia",
+        "CURB65": "Simple severity score for pneumonia (Confusion, Urea, Respiratory rate, Blood pressure, Age ≥65)",
+        "NEWS2": "National Early Warning Score 2 — used in UK for hospital deterioration detection"
+      }
+    },
+
+    "common_errors_to_avoid": {
+      "diagnosis": [
+        "Relying on negative rapid antigen test to exclude influenza — treat clinically if presentation is typical",
+        "Not testing for influenza in hospitalized patients with respiratory illness — delays appropriate antivirals",
+        "Diagnosing 'stomach flu' as influenza — influenza is a respiratory disease; GI illness is different",
+        "Waiting for lab confirmation before starting antivirals in high-risk or critically ill patients — start empirically",
+        "Not testing for co-infection with SARS-CoV-2 during co-circulation season — use multiplex PCR"
+      ],
+      "management": [
+        "Prescribing antibiotics for uncomplicated influenza (viral illness; antibiotics ineffective and cause resistance)",
+        "Giving aspirin to children or adolescents with influenza (Reye's syndrome risk)",
+        "Delaying antivirals beyond 48 hours in high-risk patients — still beneficial even later in high-risk/severe cases",
+        "Using corticosteroids routinely in influenza (not recommended; may worsen outcomes)",
+        "Not providing antiviral prophylaxis during nursing home/institutional outbreaks",
+        "Neglecting annual vaccination recommendation — most preventable severe cases are in unvaccinated individuals",
+        "Using zanamivir (inhaled) in patients with asthma or COPD — can trigger severe bronchospasm"
+      ]
+    },
+
+    "diagnosis_summary": {
+      "gold_standard": "RT-PCR / NAAT (nasopharyngeal swab); recommended for all hospitalized patients and suspected severe influenza",
+      "rapid_testing": "Digital immunoassay (DIA) preferred over traditional RIDT for non-severe cases (WHO 2024); higher sensitivity than traditional RIDTs; negative result does not exclude influenza",
+      "clinical_diagnosis": "Clinical diagnosis acceptable in low-risk patients during peak flu season when typical presentation (abrupt onset, fever, cough, myalgia); treat empirically if high-risk",
+      "imaging": "Chest X-ray for patients with dyspnea, hypoxemia, or suspected pneumonia; bilateral infiltrates suggest viral pneumonia; lobar consolidation suggests bacterial superinfection",
+      "lab_markers": [
+        "Leukopenia — viral phase",
+        "Leukocytosis with neutrophilia — bacterial superinfection",
+        "Elevated CRP",
+        "Low/normal procalcitonin — viral; elevated — bacterial",
+        "Elevated LDH — severe disease"
+      ]
+    },
+
+    "treatment_summary": {
+      "mild_outpatient_low_risk": {
+        "principle": "Supportive care only; rest, hydration, antipyretics",
+        "antipyretics": ["Paracetamol/acetaminophen (all ages)", "Ibuprofen (adults and children ≥6 months)", "NEVER aspirin in children"],
+        "cough_sore_throat": "Honey and warm fluids; saline gargle; steam inhalation"
+      },
+      "high_risk_outpatient": {
+        "antivirals_preferred": ["Oseltamivir (oral, 75 mg twice daily × 5 days)", "Baloxavir (single dose) — conditionally for high-risk per WHO 2024"],
+        "alternatives": ["Zanamivir (inhaled; avoid in asthma/COPD)", "Peramivir (IV, single dose)"],
+        "window": "Within 48 hours for best effect; still beneficial after 48 hours in high-risk or severe"
+      },
+      "hospitalized": {
+        "antiviral": "Oseltamivir (oral or IV) — extended course if severe; start regardless of time since onset",
+        "oxygen": "Supplemental O2 to maintain SpO2 ≥ 94%",
+        "antibiotics": "Only if secondary bacterial pneumonia (not routine)",
+        "corticosteroids": "NOT recommended routinely; consider only in ARDS under specialist guidance (WHO 2024)",
+        "anticoagulation": "Prophylactic LMWH for immobile hospitalized patients"
+      },
+      "critical_icu": {
+        "respiratory_support": "Invasive mechanical ventilation (lung-protective); HFNO or NIV as bridge; prone positioning for ARDS",
+        "antivirals": "Oseltamivir IV; extended course",
+        "secondary_infection": "Broad-spectrum antibiotics covering MRSA if severe pneumonia"
+      }
+    },
+
+    "faq": [
+      {
+        "question": "What is influenza (flu)?",
+        "answer": "Influenza (flu) is a highly contagious acute respiratory illness caused by influenza viruses (A, B, C, D). It primarily affects the nose, throat, and lungs, causing sudden onset of fever, severe muscle aches, headache, cough, and fatigue. It is not the same as the common cold — flu is generally more severe and has an abrupt onset."
+      },
+      {
+        "question": "How does flu spread?",
+        "answer": "Flu spreads mainly through respiratory droplets expelled when an infected person coughs, sneezes, or talks. It can also spread through aerosols in enclosed poorly ventilated spaces, and by touching contaminated surfaces then touching the nose, mouth, or eyes."
+      },
+      {
+        "question": "What are the symptoms of flu?",
+        "answer": "Flu symptoms appear suddenly and include high fever or chills, severe muscle aches, severe headache, dry cough, sore throat, fatigue, and nasal congestion or runny nose. Loss of appetite and watery eyes are also common. Flu is distinguished from a cold by its abrupt onset and severity of systemic symptoms."
+      },
+      {
+        "question": "What is the incubation period of flu?",
+        "answer": "The incubation period is 1–4 days, most commonly about 2 days. Flu has an abrupt onset — most people can identify the exact time symptoms began, unlike the gradual onset of a cold."
+      },
+      {
+        "question": "How is flu diagnosed?",
+        "answer": "Flu can be diagnosed clinically based on typical symptoms during flu season. Rapid antigen tests give results in 15 minutes but have limited sensitivity. Digital immunoassay (DIA) is preferred for non-severe cases. RT-PCR/NAAT is recommended for hospitalized patients and severe illness — it is the most accurate test."
+      },
+      {
+        "question": "What is the treatment for flu?",
+        "answer": "Uncomplicated flu in healthy individuals is managed with rest, hydration, and antipyretics (paracetamol or ibuprofen — never aspirin in children). High-risk patients and those with severe disease should receive antiviral medications (oseltamivir, baloxavir, zanamivir, or peramivir) within 48 hours of symptom onset for best effect."
+      },
+      {
+        "question": "What is oseltamivir (Tamiflu) and who should take it?",
+        "answer": "Oseltamivir (Tamiflu) is an oral neuraminidase inhibitor antiviral medication that reduces flu severity and duration when started within 48 hours of symptom onset. It is recommended for all hospitalized flu patients, high-risk patients (elderly, pregnant, immunocompromised, chronic disease), and children under 2 years. It is also used for post-exposure prophylaxis."
+      },
+      {
+        "question": "Can antibiotics treat flu?",
+        "answer": "No. Flu is caused by a virus, and antibiotics only treat bacterial infections. Antibiotics should NOT be given for uncomplicated influenza. However, if flu is complicated by secondary bacterial pneumonia (most common severe complication), antibiotics are then appropriate and urgent."
+      },
+      {
+        "question": "What is the difference between flu and a cold?",
+        "answer": "Flu has an abrupt onset and causes severe systemic symptoms — high fever, severe muscle aches, extreme fatigue, and headache. Cold symptoms develop gradually and are milder — runny nose, sore throat, sneezing, with little or no fever. Flu can cause life-threatening complications; colds rarely do."
+      },
+      {
+        "question": "Who is at highest risk for severe flu?",
+        "answer": "Highest risk groups: adults ≥65 years, children <2 years (especially infants <6 months), pregnant women, immunocompromised individuals, people with chronic heart, lung, kidney, liver, or metabolic diseases, morbidly obese individuals (BMI ≥40), residents of nursing homes, and American Indians/Alaska Natives."
+      },
+      {
+        "question": "What are the emergency signs of flu?",
+        "answer": "Emergency signs requiring immediate medical attention: difficulty breathing, chest pain, confusion or altered mental status, severe vomiting preventing any fluid intake, cyanosis (blue lips or nails), seizures, extreme weakness, high fever above 40°C not responding to medication, and in children: ribs showing with each breath, grunting, inability to be wakened."
+      },
+      {
+        "question": "How can I prevent flu?",
+        "answer": "Annual influenza vaccination is the most effective prevention strategy — recommended for everyone ≥6 months. Additional measures: frequent handwashing, covering coughs and sneezes, staying home when sick, avoiding close contact with sick people, and improving indoor ventilation. Post-exposure antivirals (oseltamivir) can be given to high-risk individuals exposed within 48 hours."
+      },
+      {
+        "question": "Why do I need a flu vaccine every year?",
+        "answer": "Influenza viruses constantly mutate (antigenic drift), changing their surface proteins enough to partially evade the immunity built by prior infection or vaccination. The WHO reformulates the vaccine twice annually to match the predicted circulating strains. Additionally, vaccine-induced immunity wanes over time, making annual revaccination essential."
+      },
+      {
+        "question": "What types of flu vaccine are available?",
+        "answer": "The main types: standard inactivated (injected; all ages ≥6 months), high-dose inactivated (recommended for ≥65 years), adjuvanted inactivated (for ≥65 years), recombinant (egg-free; for ≥18 years), and live attenuated nasal spray (FluMist; for healthy non-pregnant individuals aged 2–49 years). Quadrivalent vaccines cover two A and two B strains."
+      },
+      {
+        "question": "Can pregnant women take antiviral medication for flu?",
+        "answer": "Yes — oseltamivir (Tamiflu) is the preferred antiviral for pregnant women with influenza, with extensive safety and efficacy data. Treatment should be started immediately, within 48 hours of symptom onset, without waiting for test confirmation. Aspirin must be avoided; paracetamol is used for fever. Influenza vaccination is also strongly recommended in all trimesters."
+      },
+      {
+        "question": "Is flu dangerous for children?",
+        "answer": "Yes. All children under 5 are at increased risk for serious flu complications, with infants under 6 months at highest risk. Complications include pneumonia, otitis media, febrile seizures, and rarely encephalopathy. Children should be vaccinated annually from 6 months of age. Antivirals are recommended for hospitalized children, those under 2, and children with high-risk conditions. NEVER give aspirin to children with flu."
+      },
+      {
+        "question": "What is the difference between influenza A and influenza B?",
+        "answer": "Influenza A is more clinically significant, infects humans and animals, causes more severe disease, and is responsible for all influenza pandemics. It is classified by HA and NA subtypes (H1N1, H3N2, etc.). Influenza B primarily infects humans, causes milder but still clinically significant disease, affects children more than adults, and does not cause pandemics. Both are covered by seasonal flu vaccines."
+      },
+      {
+        "question": "What is antigenic drift and why does it matter?",
+        "answer": "Antigenic drift is the gradual accumulation of random mutations in the hemagglutinin (HA) and neuraminidase (NA) genes of influenza viruses during replication. These changes allow the virus to partially evade antibodies from prior infection or vaccination. This is why flu vaccines must be updated every year and why you can get the flu multiple times throughout life."
+      },
+      {
+        "question": "What foods should I eat when I have the flu?",
+        "answer": "Focus on warm soups and broths (hydration and nutrients), vitamin C-rich fruits (oranges, kiwi, bell peppers), vitamin D foods (fatty fish, fortified milk), zinc-rich foods (legumes, pumpkin seeds), ginger and honey tea (anti-inflammatory and cough relief), and adequate fluids (2–3 liters daily). Small, frequent, easily digestible meals are preferred."
+      },
+      {
+        "question": "What foods should I avoid during flu?",
+        "answer": "Avoid alcohol (suppresses immunity and causes dehydration), refined sugars (impair neutrophil function), ultra-processed and fried foods (pro-inflammatory, hard to digest), and excessive caffeine (worsens dehydration and disrupts sleep). Never give aspirin to children with flu — Reye's syndrome risk."
+      }
+    ],
+
+    "chatbot_intents": [
+      "What is influenza?",
+      "What is the flu?",
+      "What causes flu?",
+      "How does flu spread?",
+      "What are the symptoms of flu?",
+      "How is flu different from a cold?",
+      "What is the incubation period of flu?",
+      "How long is flu contagious?",
+      "Who is at high risk for severe flu?",
+      "How is flu diagnosed?",
+      "What is the gold standard test for influenza?",
+      "What is the difference between RT-PCR and rapid antigen test for flu?",
+      "What is the treatment for flu?",
+      "What is oseltamivir (Tamiflu)?",
+      "What is baloxavir (Xofluza)?",
+      "What is zanamivir (Relenza)?",
+      "Can antibiotics treat flu?",
+      "What medications are used for influenza?",
+      "How do antiviral drugs work for flu?",
+      "What is the difference between influenza A and influenza B?",
+      "What are the flu vaccine types?",
+      "Why do I need a flu vaccine every year?",
+      "Who should get the flu vaccine?",
+      "What is antigenic drift?",
+      "What is antigenic shift?",
+      "What is hemagglutinin and neuraminidase?",
+      "What are the complications of flu?",
+      "What is secondary bacterial pneumonia in flu?",
+      "What is Reye's syndrome?",
+      "What is MIS-C vs flu in children?",
+      "Can flu cause heart attack?",
+      "What are the emergency signs of flu?",
+      "When should I go to hospital for flu?",
+      "How do I care for flu at home?",
+      "What are flu home remedies?",
+      "What foods help flu recovery?",
+      "What foods should I avoid with flu?",
+      "Can pregnant women take Tamiflu?",
+      "How is flu treated in children?",
+      "Is flu dangerous for children?",
+      "How is flu treated in elderly?",
+      "Is flu dangerous for elderly?",
+      "How is flu different from COVID-19?",
+      "What is flu season?",
+      "What is H1N1 swine flu?",
+      "What is H5N1 bird flu?",
+      "What is avian influenza?",
+      "What was the 1918 Spanish flu?",
+      "What is pandemic influenza?",
+      "How is a flu pandemic different from seasonal flu?",
+      "What is the WHO Global Influenza Programme?",
+      "How is the annual flu vaccine selected?",
+      "What is the LAIV nasal spray vaccine?",
+      "What is the high-dose flu vaccine for elderly?",
+      "Is the flu vaccine safe in pregnancy?",
+      "What is post-exposure prophylaxis for flu?",
+      "How do I prevent flu?",
+      "What nursing care is required for severe flu?",
+      "What are prognostic markers for severe flu?",
+      "What is influenza drug resistance?"
+    ]
+  }
+]
