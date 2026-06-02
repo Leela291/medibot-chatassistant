@@ -1,5 +1,7 @@
 # backend/chatbot_api.py
 import os, sys
+from services.symptom_detector import should_start_triage
+from services.triage_questions import get_questions
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import json
@@ -50,6 +52,10 @@ def chat():
     session_id = body.get("session_id")
     use_rag    = body.get("use_rag", True)
     stream     = body.get("stream", False)
+    skip_symptom_detection = body.get(
+    "skip_symptom_detection",
+    False
+)
     
     if not message:
         return jsonify({"error": "message is required"}), 400
@@ -87,30 +93,117 @@ def chat():
             print(f"[openFDA Error] Failed to generate drug summary: {e}")
 
     history = session.memory.get_history()
+    # ------------------------------------------
+# Symptom triage follow-up questions
+# ------------------------------------------
+
+follow_up_questions = []
+
+try:
+    needs_triage, triage_key = should_start_triage(
+        message,
+        skip_detection=skip_symptom_detection
+    )
+
+except Exception as e:
+    print(f"[Symptom Detector Error] {e}")
+
+    needs_triage = False
+    triage_key = None
+
+
+if needs_triage and triage_key:
+
+    questions = get_questions(triage_key)
+
+    if triage_key == "general":
+
+        intro = (
+            "I'd like to understand your symptoms better "
+            "before giving medical advice. "
+            "Please answer these questions."
+        )
+
+    else:
+
+        intro = (
+            f"I noticed symptoms related to "
+            f"{triage_key}. "
+            f"Please answer a few follow-up questions."
+        )
+
+    answer = intro
+
+    sources = []
+
+    follow_up_questions = questions
+
+    session.memory.start_triage(
+        triage_key,
+        questions
+    )
+
+    session.memory.add_user(message)
+    session.memory.add_assistant(answer)
+
+    session_manager.save_session(session)
+
+    return jsonify({
+        "answer": answer,
+        "session_id": session.session_id,
+        "sources": [],
+        "is_emergency": False,
+        "follow_up_questions": follow_up_questions
+    })
     
     # 2. Optimized Generation Routing
+    rag_message = message
+
+if skip_symptom_detection:
+
+    session.memory.reset_triage()
+
+    rag_message = (
+        "The patient completed a symptom "
+        "questionnaire. Analyze the answers "
+        "and provide likely causes, urgency "
+        "level and next steps.\n\n"
+        f"{message}"
+    )
     if use_rag:
         if fda_context:
             # Manually retrieve to avoid calling the LLM twice!
             from vector_db.retriever import retrieve
             from rag.context_builder import build_context
             
-            chunks = retrieve(message)
+            chunks = retrieve(rag_message)
             db_context = build_context(chunks)
-            augmented_query = f"Incorporating official drug information:\n{fda_context}\n\nUser Question: {message}"
+            augmented_query = (
+    f"Incorporating official drug information:\n"
+    f"{fda_context}\n\n"
+    f"User Question: {rag_message}"
+)
             
             answer = generate_with_rag(augmented_query, db_context, history, stream=stream)
             sources = list({c["disease"]["name"] if isinstance(c["disease"], dict) else c.get("disease", "Local Docs") for c in chunks})
             sources.append("openFDA Database")
         else:
             # Standard RAG handles the generation automatically
-            result = run_rag(message, history, stream=stream)
+            result = run_rag(
+    rag_message,
+    history,
+    stream=stream
+)
             answer = result["answer"]
             sources = result["sources"]
     else:
         if fda_context:
             augmented_query = f"Incorporating official drug information:\n{fda_context}\n\nUser Question: {message}"
-            answer = generate_response(augmented_query, history, stream=stream)
+            answer = generate_response(
+    rag_message,
+    history,
+    stream=stream
+)
             sources = ["openFDA Database"]
         else:
             answer  = generate_response(message, history, stream=stream)
@@ -137,7 +230,13 @@ def chat():
     session.memory.add_assistant(answer)
     session_manager.save_session(session) 
     
-    return jsonify({"answer": answer, "session_id": session.session_id, "sources": sources, "is_emergency": False})
+    return jsonify({
+    "answer": answer,
+    "session_id": session.session_id,
+    "sources": sources,
+    "is_emergency": False,
+    "follow_up_questions": []
+})
 
 @chatbot_bp.post("/chat/new")
 def new_session():
