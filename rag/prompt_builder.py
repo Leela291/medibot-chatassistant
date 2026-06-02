@@ -1,5 +1,6 @@
-# rag/prompt_builder.py
-"""Builds the final augmented prompt for RAG inference."""
+"""
+Builds the final augmented prompt for RAG inference.
+"""
 
 from llm.prompts import RAG_PROMPT_TEMPLATE
 
@@ -9,53 +10,48 @@ def build_rag_prompt(
     context: str,
     history: list[dict],
 ) -> str:
-    
-    # =========================================
+
+    # ─────────────────────────────────────────────
     # Format recent conversation history
-    # =========================================
+    # ─────────────────────────────────────────────
     history_text = "\n".join(
         f"{m['role'].capitalize()}: {m['content']}"
         for m in history[-2:]
     )
 
-    # =========================================
-    # Empty context fallback
-    # =========================================
+    # ─────────────────────────────────────────────
+    # Fallback for empty context
+    # ─────────────────────────────────────────────
     if not context.strip():
-        context = (
-            "No reliable medical context found."
-        )
+        context = "No reliable medical context found."
 
-    # =========================================
-    # Safety instructions
-    # =========================================
+    # ─────────────────────────────────────────────
+    # Extra safety rules (post-RAG guardrails)
+    # ─────────────────────────────────────────────
     extra_rules = """
-    IMPORTANT RULES:
+IMPORTANT RULES:
 
-    - Only use medical context relevant to the user's question
-    - Ignore unrelated diseases or symptoms
-    - Never combine unrelated diseases
-    - Do not invent medical facts
-    - If context is weak or unrelated, rely on general medical knowledge
-    - Keep answers concise and medically accurate
-    - Avoid repeating unnecessary warnings
-    """
+- Only use medical context relevant to the user's question
+- Ignore unrelated diseases or symptoms
+- Never combine unrelated diseases
+- Do not invent medical facts
+- If context is weak or unrelated, rely on general medical knowledge
+- Keep answers concise and medically accurate
+- Avoid repeating unnecessary warnings
+"""
 
-    # =========================================
-    # Final prompt assembly
-    # =========================================
+    # ─────────────────────────────────────────────
+    # Build final RAG prompt
+    # ─────────────────────────────────────────────
     final_prompt = RAG_PROMPT_TEMPLATE.format(
         context=context,
-        history=(
-            history_text
-            or
-            "No previous conversation."
-        ),
+        history=history_text or "No previous conversation.",
         question=question,
     )
 
-    # =========================================
-    # Add extra safety rules
-    # =========================================
+    # ─────────────────────────────────────────────
+    # Attach safety rules
+    # ─────────────────────────────────────────────
     final_prompt += f"\n\n{extra_rules}"
+
     return final_prompt
