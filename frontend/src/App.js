@@ -360,14 +360,18 @@ function App() {
           New Conversation
         </button>
 
-        <div className="sidebar-section">
+        
+          <div className="sidebar-section">
           <h3 className="section-title">Quick Topics</h3>
           <div className="topics-slider">
           {topics.map((t) => (
             <div
               key={t.label}
               className="topic-btn"
-              onClick={() => sendMessage(`Tell me about ${t.label}`)}
+              onClick={() => {
+                setInput(`Tell me about ${t.label}`);
+                inputRef.current?.focus();
+              }}
             >
               <span className="topic-icon" style={{ background: t.color }}>
                 {t.icon}
@@ -381,7 +385,8 @@ function App() {
                     className="quick-action-btn"
                     onClick={(e) => {
                       e.stopPropagation();
-                      sendMessage(a.query(t.label));
+                      setInput(a.query(t.label));
+                      inputRef.current?.focus();
                     }}
                     title={`${a.label} about ${t.label}`}
                   >
@@ -393,7 +398,6 @@ function App() {
           ))}
           </div>
         </div>
-
         <div className="sidebar-section">
           <h3 className="section-title">Upload Records</h3>
           <div
