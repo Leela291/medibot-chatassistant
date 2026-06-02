@@ -22,10 +22,7 @@ OLLAMA_EMBED_MODEL = os.getenv(
 )
 
 # ── API settings ────────────────────────────────────────────────────────────
-OPENFDA_API_KEY = os.getenv(
-    "OPENFDA_API_KEY",
-    "TcUuE16FSG3oEohZWkekpFpibcGSnI7mfoNccJYJ"
-)
+OPENFDA_API_KEY = os.getenv("OPENFDA_API_KEY", "")
 
 # ── RAG settings ────────────────────────────────────────────────────────────
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 256))

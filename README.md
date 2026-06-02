@@ -1,6 +1,6 @@
 # 🏥 MediBot — AI Medical Chatbot
 
-An AI-powered medical chatbot that provides health information about **Asthma**, **Dengue**, **Diabetes**, and **Hyperthyroidism**. Built with **Flask + React + Ollama (LLaMA 3.2)** using RAG (Retrieval Augmented Generation).
+An AI-powered medical chatbot that provides health information about common diseases (asthma, dengue, diabetes, flu, COVID-19, and more). Built with **Flask + React + Ollama (LLaMA 3.2)** using RAG (Retrieval Augmented Generation).
 
 ![MediBot](https://img.shields.io/badge/MediBot-AI%20Medical%20Assistant-00d2ff?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -130,7 +130,9 @@ chatbot/
 │   ├── asthma.json
 │   ├── dengue.json
 │   ├── diabetes.json
-│   └── hyperthyroidism.json
+│   ├── flu.json
+│   ├── covid19.json
+│   └── … (other disease JSON files)
 ├── frontend/
 │   └── src/
 │       ├── App.js           # React chat UI

@@ -17,20 +17,23 @@ def build_context(chunks: list[dict], max_chars: int = 1200) -> str:
         return "No specific medical knowledge retrieved for this query."
 
     sections = []
-    total = 0
+    separator = "\n\n"
 
-    for i, chunk in enumerate(chunks, start=1):
+    for chunk in chunks:
         disease = chunk.get("disease", "Unknown")
-        text    = chunk.get("text", "").strip()
-        score   = chunk.get("score", 0.0)
-
-        # entry = f"[{i}] Disease: {disease} (relevance: {score:.2f})\n{text}"
+        text = chunk.get("text", "").strip()
         entry = f"{disease}\n{text}"
-        total += len(entry)
 
-        if total > max_chars and sections:
-            break   # stop adding if we've exceeded the soft limit
+        projected = separator.join(sections + [entry]) if sections else entry
+        if len(projected) <= max_chars:
+            sections.append(entry)
+            continue
 
-        sections.append(entry)
+        if not sections:
+            prefix = f"{disease}\n"
+            budget = max_chars - len(prefix)
+            if budget > 0:
+                sections.append(prefix + text[:budget].rstrip())
+        break
 
-    return "\n\n".join(sections)
+    return separator.join(sections)

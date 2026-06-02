@@ -25,8 +25,8 @@ from llm.response_generator import generate_response
 from backend.file_parser import parse_uploaded_file
 
 # NEW
-from services.symptom_detector import detect_symptom
-from services.triage_questions import TRIAGE_QUESTIONS
+from services.symptom_detector import should_start_triage
+from services.triage_questions import get_questions
 
 
 health_bp = Blueprint("health", __name__)
@@ -53,6 +53,7 @@ def chat():
     message = (body.get("message") or "").strip()
     session_id = body.get("session_id")
     use_rag = body.get("use_rag", True)
+    skip_symptom_detection = body.get("skip_symptom_detection", False)
 
     if not message:
         return jsonify({"error": "message is required"}), 400
@@ -79,34 +80,57 @@ def chat():
     history = session.memory.get_history()
 
     # --------------------------------------------------
-    # Symptom-first flow
+    # Symptom triage (Claude-style follow-ups before RAG)
     # --------------------------------------------------
-    symptom = None
+    follow_up_questions = []
 
     try:
-        symptom = detect_symptom(message)
+        needs_triage, triage_key = should_start_triage(
+            message,
+            skip_detection=skip_symptom_detection,
+        )
     except Exception as e:
         print(f"[Symptom Detector Error] {e}")
+        needs_triage, triage_key = False, None
 
-    if symptom:
+    if needs_triage and triage_key:
 
-        questions = TRIAGE_QUESTIONS.get(symptom, [])
+        questions = get_questions(triage_key)
 
-        answer = "I'd like to understand your symptoms better. Please answer the following questions:"
+        if triage_key == "general":
+            intro = (
+                "I'd like to understand your situation better before giving advice. "
+                "Please answer these quick questions about your symptoms:"
+            )
+        else:
+            intro = (
+                f"I see you mentioned **{triage_key}**. "
+                "To give you safer, more relevant guidance, please answer a few follow-up questions:"
+            )
 
+        answer = intro
         sources = []
-        
         follow_up_questions = questions
+        session.memory.start_triage(triage_key, questions)
 
     else:
 
         # --------------------------------------------------
-        # Existing RAG flow
+        # RAG flow (after triage answers or direct medical Q&A)
         # --------------------------------------------------
+        rag_message = message
+        if skip_symptom_detection:
+            session.memory.reset_triage()
+            rag_message = (
+                "The patient completed a symptom questionnaire. Use their answers below "
+                "to assess possible causes, urgency, and next steps.\n\n"
+                f"{message}"
+            )
+
         if use_rag:
 
             result = run_rag(
-                message,
+                rag_message,
                 history
             )
 
@@ -116,13 +140,11 @@ def chat():
         else:
 
             answer = generate_response(
-                message,
+                rag_message,
                 history
             )
 
             sources = []
-        
-        follow_up_questions = []
 
     session.memory.add_user(message)
     session.memory.add_assistant(answer)

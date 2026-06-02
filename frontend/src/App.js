@@ -33,7 +33,7 @@ function App() {
   const abortControllerRef = useRef(null);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    bottomRef.current?.scrollIntoView?.({ behavior: "smooth" });
   }, [messages, loading]);
 
   const toggleSpeak = (text, msgIndex) => {
@@ -67,7 +67,7 @@ function App() {
   };
 
   /* ── Send message ── */
-  const sendMessage = useCallback(async (overrideText) => {
+  const sendMessage = useCallback(async (overrideText, skipSymptomDetection = false) => {
     const text = (overrideText || input).trim();
     if (!text && !uploadedFile) return;
 
@@ -120,6 +120,7 @@ function App() {
           body: JSON.stringify({
             message: text,
             session_id: sessionId,
+            skip_symptom_detection: skipSymptomDetection,
           }),
           signal: abortControllerRef.current.signal,   // ← Important
         });
@@ -238,8 +239,8 @@ function App() {
       return;
     }
 
-    // Send the answers as a message
-    await sendMessage(answersText);
+    // Send the answers as a message with skip_symptom_detection flag
+    await sendMessage(answersText, true);
     setFollowUpQuestions(null);
     setQuestionAnswers({});
   };

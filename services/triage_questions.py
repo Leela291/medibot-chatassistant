@@ -1,6 +1,63 @@
-# memory/services/triage_questions.py
+# services/triage_questions.py
+
+# Shown when the user message is too vague (Claude-style clarification)
+GENERAL_TRIAGE = [
+    {
+        "id": "main_symptom",
+        "question": "What is your main symptom right now?",
+        "type": "radio",
+        "options": [
+            "Fever",
+            "Cough",
+            "Headache",
+            "Body pain",
+            "Stomach pain",
+            "Sore throat",
+            "Shortness of breath",
+            "Other",
+        ],
+    },
+    {
+        "id": "duration",
+        "question": "How long have you had these symptoms?",
+        "type": "radio",
+        "options": ["Less than 24 hours", "1-3 days", "4-7 days", "More than a week"],
+    },
+    {
+        "id": "severity",
+        "question": "How severe are your symptoms?",
+        "type": "radio",
+        "options": ["Mild", "Moderate", "Severe"],
+    },
+    {
+        "id": "fever",
+        "question": "Do you have fever?",
+        "type": "radio",
+        "options": ["Yes", "No", "Not sure"],
+    },
+    {
+        "id": "other_symptoms",
+        "question": "Do you have any of these as well?",
+        "type": "checkbox",
+        "options": [
+            "Cough",
+            "Headache",
+            "Nausea or vomiting",
+            "Body aches",
+            "Fatigue",
+            "None of these",
+        ],
+    },
+    {
+        "id": "medications",
+        "question": "Are you taking any medications currently?",
+        "type": "radio",
+        "options": ["Yes", "No"],
+    },
+]
 
 TRIAGE_QUESTIONS = {
+    "general": GENERAL_TRIAGE,
     "body pain": [
         {
             "id": "duration",
@@ -315,9 +372,7 @@ TRIAGE_QUESTIONS = {
 }
 
 
-def get_questions(symptom):
-    """
-    Return follow-up questions for a symptom.
-    """
+def get_questions(symptom: str) -> list:
+    """Return follow-up questions for a symptom or general vague reports."""
     symptom = symptom.lower().strip()
-    return TRIAGE_QUESTIONS.get(symptom, [])
+    return TRIAGE_QUESTIONS.get(symptom, GENERAL_TRIAGE)
