@@ -1,36 +1,54 @@
-# rag/context_builder.py
-"""Formats retrieved chunks into a clean context string for the LLM."""
+"""
+Formats retrieved chunks into a clean context string for the LLM.
+"""
+
+from typing import List, Dict
 
 
-def build_context(chunks: list[dict], max_chars: int = 1200) -> str:
+# ─────────────────────────────────────────────
+# CONTEXT BUILDER
+# ─────────────────────────────────────────────
+def build_context(chunks: List[Dict], max_chars: int = 1200) -> str:
     """
     Build a formatted context block from retrieved chunks.
 
     Args:
-        chunks:    List of chunk dicts with 'text', 'disease', 'score'.
-        max_chars: Soft limit on total context characters.
+        chunks: List of chunk dicts with 'text', 'disease', 'score'
+        max_chars: Soft character limit for LLM context
 
     Returns:
-        A single formatted string to inject into the prompt.
+        Formatted context string
     """
+
     if not chunks:
         return "No specific medical knowledge retrieved for this query."
 
     sections = []
-    total = 0
+    separator = "\n\n"
+    total_chars = 0
 
-    for i, chunk in enumerate(chunks, start=1):
+    for chunk in chunks:
         disease = chunk.get("disease", "Unknown")
-        text    = chunk.get("text", "").strip()
-        score   = chunk.get("score", 0.0)
+        text = chunk.get("text", "").strip()
 
-        # entry = f"[{i}] Disease: {disease} (relevance: {score:.2f})\n{text}"
+        if not text:
+            continue
+
         entry = f"{disease}\n{text}"
-        total += len(entry)
 
-        if total > max_chars and sections:
-            break   # stop adding if we've exceeded the soft limit
+        # ── Case 1: fits fully ──
+        if total_chars + len(entry) <= max_chars:
+            sections.append(entry)
+            total_chars += len(entry)
 
-        sections.append(entry)
+        # ── Case 2: partial fit ──
+        else:
+            remaining = max_chars - total_chars
 
-    return "\n\n".join(sections)
+            if remaining > 50:  # only include if meaningful space left
+                truncated_text = text[:remaining - len(disease) - 1].rstrip()
+                sections.append(f"{disease}\n{truncated_text}")
+
+            break  # stop once limit is reached
+
+    return separator.join(sections)
