@@ -360,8 +360,7 @@ function App() {
           New Conversation
         </button>
 
-        
-          <div className="sidebar-section">
+        <div className="sidebar-section">
           <h3 className="section-title">Quick Topics</h3>
           <div className="topics-slider">
           {topics.map((t) => (
@@ -560,62 +559,77 @@ function App() {
             </div>
           )}
 
-          {/* Follow-up Questions UI */}
+       {/* Follow-up Questions UI with inputs */}
           {followUpQuestions && followUpQuestions.length > 0 && (
             <div className="message-row bot">
               <div className="avatar bot-avatar">
                 <span className="bot-emoji">🤖</span>
               </div>
               <div className="message-content">
-                <div className="message-bubble bot follow-up-questions">
-                  <div className="follow-up-header">
-                    <h4>Please answer the following questions:</h4>
-                  </div>
+                <div className="message-bubble bot">
+                  <p>I'd like to understand your symptoms better. Please answer the following questions:</p>
                   {followUpQuestions.map((q, index) => (
-                    <div key={q.id} className="question-item">
-                      <p className="question-text">
+                    <div key={q.id} style={{ marginTop: '12px' }}>
+                      <div style={{ marginBottom: 6 }}>
                         <strong>{index + 1}. {q.question}</strong>
-                      </p>
-                      <div className="question-options">
-                        {q.type === "radio" ? (
-                          q.options.map((option) => (
-                            <label key={option} className="option-label">
+                      </div>
+
+                      {q.type === 'radio' && q.options && (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                          {q.options.map((opt) => (
+                            <label key={opt} style={{ fontSize: 13, color: '#dfeaf8', cursor: 'pointer' }}>
                               <input
                                 type="radio"
                                 name={q.id}
-                                value={option}
-                                checked={questionAnswers[q.id] === option}
-                                onChange={() => handleQuestionAnswer(q.id, option, false)}
+                                value={opt}
+                                checked={questionAnswers[q.id] === opt}
+                                onChange={() => handleQuestionAnswer(q.id, opt)}
+                                style={{ marginRight: 8 }}
                               />
-                              <span>{option}</span>
+                              {opt}
                             </label>
-                          ))
-                        ) : (
-                          q.options.map((option) => (
-                            <label key={option} className="option-label">
+                          ))}
+                        </div>
+                      )}
+
+                      {q.type === 'checkbox' && q.options && (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                          {q.options.map((opt) => (
+                            <label key={opt} style={{ fontSize: 13, color: '#dfeaf8', cursor: 'pointer' }}>
                               <input
                                 type="checkbox"
-                                value={option}
-                                checked={
-                                  questionAnswers[q.id] &&
-                                  questionAnswers[q.id].includes(option)
-                                }
-                                onChange={() => handleQuestionAnswer(q.id, option, true)}
+                                name={`${q.id}[]`}
+                                value={opt}
+                                checked={(questionAnswers[q.id] || []).includes(opt)}
+                                onChange={() => handleQuestionAnswer(q.id, opt, true)}
+                                style={{ marginRight: 8 }}
                               />
-                              <span>{option}</span>
+                              {opt}
                             </label>
-                          ))
-                        )}
-                      </div>
+                          ))}
+                        </div>
+                      )}
+
+                      {!q.type && (
+                        <input
+                          type="text"
+                          placeholder="Your answer"
+                          value={questionAnswers[q.id] || ''}
+                          onChange={(e) => handleQuestionAnswer(q.id, e.target.value)}
+                          style={{ marginTop: 6, width: '100%', padding: '8px', borderRadius: 6, border: '1px solid rgba(255,255,255,0.06)', background: 'transparent', color: 'inherit' }}
+                        />
+                      )}
                     </div>
                   ))}
-                  <button
-                    className="submit-answers-btn"
-                    onClick={submitFollowUpAnswers}
-                    disabled={loading}
-                  >
-                    Submit Answers
-                  </button>
+
+                  <div style={{ marginTop: 12, display: 'flex', gap: 8 }}>
+                    <button className="send-btn" onClick={submitFollowUpAnswers} disabled={loading || Object.keys(questionAnswers).length === 0}>
+                      Submit Answers
+                    </button>
+                    <button className="cancel-btn" onClick={() => { setFollowUpQuestions(null); setQuestionAnswers({}); }}>
+                      Cancel
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
