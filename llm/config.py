@@ -12,7 +12,7 @@ OLLAMA_BASE_URL = os.getenv(
 # Better model for medical reasoning
 OLLAMA_LLM_MODEL = os.getenv(
     "OLLAMA_LLM_MODEL",
-    "llama3:latest"
+    "llama3.2:1b"
 )
 
 # Embedding model
