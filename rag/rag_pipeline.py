@@ -40,7 +40,7 @@ def run_rag(
         query_clean = user_query.lower()
 
         # Reject Reason A: The math score is weak (distance > 0.85)
-        if best_score > 0.85:
+        if best_score > 0.50:
             needs_wikipedia = True
             retrieved_chunks = []
             

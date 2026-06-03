@@ -1,0 +1,518 @@
+{
+  "disease": {
+    "id": "DIS-013",
+    "name": "Coronary Artery Disease",
+    "scientific_name": "Coronary Heart Disease / Ischemic Heart Disease",
+    "icd_10_code": "I25",
+    "category": "Cardiovascular Disease",
+    "overview": {
+      "description": "Coronary Artery Disease (CAD) is a condition where the major blood vessels supplying the heart (coronary arteries) become narrowed or blocked by plaque buildup (atherosclerosis). This reduces blood flow to the heart muscle, leading to chest pain (angina), shortness of breath, or heart attack (myocardial infarction). It is the most common form of heart disease.",
+      "affected_organ": "Heart (Coronary Arteries)",
+      "prevalence": "Affects over 244 million people worldwide; leading cause of death globally.",
+      "age_group": "Primarily middle-aged and older adults (risk increases significantly after age 45 in men and 55 in women)",
+      "is_contagious": false,
+      "is_curable": false,
+      "is_manageable": true,
+      "chronic": true
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Stable Angina",
+        "description": "Predictable chest pain triggered by exertion or stress, relieved by rest or nitroglycerin.",
+        "common_in": "Patients with moderate coronary artery narrowing"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Unstable Angina",
+        "description": "Unpredictable chest pain occurring at rest or with minimal exertion; precursor to heart attack.",
+        "common_in": "Patients at high risk of acute coronary syndrome"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Microvascular Coronary Disease (INOCA)",
+        "description": "Angina due to dysfunction in small heart vessels without major artery blockages.",
+        "common_in": "Women and patients without classic obstructive CAD"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Silent Ischemia",
+        "description": "Reduced blood flow to heart without noticeable symptoms.",
+        "common_in": "Diabetic patients and elderly"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Acute Coronary Syndrome (ACS)",
+        "description": "Includes unstable angina, NSTEMI, and STEMI heart attacks.",
+        "common_in": "Patients with plaque rupture"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Asymptomatic / Mild",
+        "frequency": "Minimal or no symptoms; early plaque buildup",
+        "impact": "Managed primarily with lifestyle changes and risk factor control"
+      },
+      {
+        "level": 2,
+        "name": "Moderate (Stable Angina)",
+        "frequency": "Symptoms with moderate activity",
+        "impact": "Requires medications; some limitation in physical activity"
+      },
+      {
+        "level": 3,
+        "name": "Severe / Unstable",
+        "frequency": "Symptoms at rest or minimal activity",
+        "impact": "High risk of heart attack; may require procedures like stenting or bypass"
+      }
+    ],
+
+    "causes": {
+      "genetic_factors": [
+        "Family history of early heart disease (before age 55 in men, 65 in women)",
+        "Genetic conditions like familial hypercholesterolemia",
+        "Polygenic risk scores for atherosclerosis"
+      ],
+      "environmental_triggers": [
+        "Smoking and tobacco use",
+        "Sedentary lifestyle",
+        "Unhealthy diet high in saturated fats, trans fats, and sodium",
+        "Chronic stress",
+        "Air pollution exposure"
+      ],
+      "other_causes": [
+        "Hypertension",
+        "Diabetes mellitus",
+        "Dyslipidemia (high LDL, low HDL, high triglycerides)",
+        "Obesity (especially abdominal)",
+        "Chronic kidney disease",
+        "Inflammation and autoimmune conditions"
+      ]
+    },
+
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-301",
+          "name": "Chest Pain / Angina",
+          "description": "Pressure, tightness, squeezing, or burning sensation in the chest.",
+          "severity": "Mild to Severe",
+          "onset": "During exertion, stress, cold weather, or heavy meals"
+        },
+        {
+          "id": "SYM-302",
+          "name": "Shortness of Breath",
+          "description": "Dyspnea, especially on exertion or lying flat.",
+          "severity": "Moderate to Severe",
+          "onset": "With activity or at rest in advanced cases"
+        },
+        {
+          "id": "SYM-303",
+          "name": "Radiating Pain",
+          "description": "Discomfort spreading to arms (especially left), neck, jaw, shoulders, or back.",
+          "severity": "Moderate to Severe",
+          "onset": "Often accompanies chest pain"
+        }
+      ],
+      "secondary_symptoms": [
+        "Fatigue and weakness",
+        "Dizziness or lightheadedness",
+        "Cold sweats",
+        "Nausea or vomiting",
+        "Palpitations or irregular heartbeat",
+        "Indigestion or heartburn-like symptoms (especially in women)"
+      ],
+      "warning_signs_of_attack": [
+        "Sudden, severe chest pain not relieved by rest or nitroglycerin",
+        "Pain lasting more than 5-10 minutes",
+        "Shortness of breath with sweating or nausea",
+        "Sudden fatigue or fainting",
+        "Irregular heartbeat with chest discomfort"
+      ],
+      "symptoms_in_children": [
+        "Extremely rare; usually due to congenital anomalies. May present as chest pain during activity or unexplained fatigue."
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Family history of heart disease",
+        "Personal history of risk factors (smoking, diabetes, hypertension)",
+        "Detailed symptom description (onset, triggers, relief)"
+      ],
+      "physical_examination": [
+        "Blood pressure measurement",
+        "Heart and lung auscultation",
+        "Assessment of peripheral pulses and edema"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Electrocardiogram (ECG/EKG)",
+          "description": "Records heart's electrical activity.",
+          "purpose": "Detects ischemia, arrhythmias, or prior heart damage",
+          "key_metric": "ST-segment changes"
+        },
+        {
+          "test_name": "Echocardiogram",
+          "description": "Ultrasound imaging of the heart.",
+          "purpose": "Assesses heart function and wall motion",
+          "key_metric": "Ejection Fraction (normal >55%)"
+        },
+        {
+          "test_name": "Stress Test (Exercise or Pharmacologic)",
+          "description": "Monitors heart during physical or chemical stress.",
+          "purpose": "Identifies ischemia under load"
+        },
+        {
+          "test_name": "Coronary Angiography / CT Angiography",
+          "description": "Visualizes coronary arteries with contrast.",
+          "purpose": "Gold standard for detecting blockages",
+          "key_metric": "Percentage stenosis"
+        },
+        {
+          "test_name": "Blood Tests (Lipid Profile, Troponin, HbA1c)",
+          "description": "Measures cholesterol, cardiac enzymes, and blood sugar.",
+          "purpose": "Assesses risk factors and acute damage"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "All medications should be taken only under the supervision of a licensed physician. Self-medication can be dangerous.",
+      "categories": [
+        {
+          "category_id": "MED-CAT-41",
+          "category_name": "Antiplatelets",
+          "purpose": "Prevent blood clot formation in arteries",
+          "medicines": [
+            {
+              "name": "Aspirin (Low Dose)",
+              "brand_examples": ["Ecosprin", "Disprin"],
+              "form": "Tablet",
+              "dosage": "75-150 mg once daily",
+              "use_case": "Primary/secondary prevention",
+              "side_effects": ["Gastrointestinal bleeding", "Bruising"]
+            },
+            {
+              "name": "Clopidogrel",
+              "brand_examples": ["Plavix", "Clopilet"],
+              "form": "Tablet",
+              "dosage": "75 mg once daily",
+              "use_case": "Post-stent or aspirin intolerance",
+              "side_effects": ["Bleeding risk"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-42",
+          "category_name": "Statins (Lipid-Lowering)",
+          "purpose": "Lower LDL cholesterol and stabilize plaques",
+          "medicines": [
+            {
+              "name": "Atorvastatin",
+              "brand_examples": ["Atorva", "Lipitor"],
+              "form": "Tablet",
+              "dosage": "10-80 mg once daily",
+              "use_case": "High cholesterol and CAD prevention",
+              "side_effects": ["Muscle pain", "Liver enzyme elevation"]
+            },
+            {
+              "name": "Rosuvastatin",
+              "brand_examples": ["Crestor", "Rosuvas"],
+              "form": "Tablet",
+              "dosage": "5-40 mg once daily",
+              "use_case": "Aggressive lipid lowering",
+              "side_effects": ["Myalgia"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-43",
+          "category_name": "Beta-Blockers",
+          "purpose": "Reduce heart rate and blood pressure, decreasing oxygen demand",
+          "medicines": [
+            {
+              "name": "Metoprolol",
+              "brand_examples": ["Metolar", "Lopressor"],
+              "form": "Tablet/ER",
+              "dosage": "25-200 mg daily",
+              "use_case": "Angina and post-MI",
+              "side_effects": ["Fatigue", "Bradycardia"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-44",
+          "category_name": "ACE Inhibitors / ARBs",
+          "purpose": "Lower blood pressure and protect heart muscle",
+          "medicines": [
+            {
+              "name": "Ramipril / Enalapril",
+              "brand_examples": ["Cardace", "Enace"],
+              "form": "Tablet",
+              "dosage": "2.5-10 mg daily",
+              "use_case": "Hypertension and heart protection",
+              "side_effects": ["Dry cough (ACEi), hyperkalemia"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-45",
+          "category_name": "Nitrates",
+          "purpose": "Vasodilation to relieve angina",
+          "medicines": [
+            {
+              "name": "Nitroglycerin",
+              "brand_examples": ["Nitrostat", "Angised"],
+              "form": "Sublingual / Spray",
+              "dosage": "0.3-0.6 mg as needed",
+              "use_case": "Acute angina relief",
+              "side_effects": ["Headache", "Hypotension"]
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "A heart-healthy Mediterranean-style diet significantly reduces progression of CAD by lowering cholesterol, inflammation, and blood pressure.",
+      "recommended_foods": [
+        {
+          "category": "Anti-Inflammatory & Heart-Protective",
+          "items": [
+            {
+              "food": "Fatty Fish (Salmon, Mackerel, Sardines)",
+              "benefit": "Omega-3 fatty acids reduce triglycerides and inflammation",
+              "frequency": "2-3 times per week"
+            },
+            {
+              "food": "Extra Virgin Olive Oil",
+              "benefit": "Monounsaturated fats improve cholesterol profile",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Nuts (Walnuts, Almonds)",
+              "benefit": "Healthy fats, fiber, and antioxidants",
+              "frequency": "Daily handful"
+            },
+            {
+              "food": "Fruits & Vegetables (Berries, Leafy Greens, Tomatoes)",
+              "benefit": "Antioxidants and fiber lower blood pressure",
+              "frequency": "Daily (half plate vegetables)"
+            }
+          ]
+        },
+        {
+          "category": "Whole Grains & Fiber",
+          "items": [
+            {
+              "food": "Oats, Barley, Brown Rice",
+              "benefit": "Soluble fiber lowers LDL cholesterol",
+              "frequency": "Daily"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Trans Fats & Processed Foods",
+          "reason": "Promote plaque buildup",
+          "examples": ["Fried foods, baked goods, margarine"]
+        },
+        {
+          "food": "High Sodium Foods",
+          "reason": "Increases blood pressure",
+          "examples": ["Processed meats, canned soups, pickles"]
+        },
+        {
+          "food": "Red & Processed Meats",
+          "reason": "High saturated fat and preservatives",
+          "examples": ["Beef, bacon, sausages"]
+        },
+        {
+          "food": "Sugary Foods & Beverages",
+          "reason": "Promote obesity and diabetes",
+          "examples": ["Sodas, sweets, refined carbs"]
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This is a general guideline. Individual needs vary; consult a dietitian.",
+        "early_morning": "Warm water + handful of soaked almonds",
+        "breakfast": "Oatmeal with berries, walnuts, and flaxseeds OR Greek yogurt with fruits",
+        "mid_morning": "Apple or orange + green tea",
+        "lunch": "Grilled fish or lentils + brown rice + large vegetable salad with olive oil",
+        "evening_snack": "Handful of mixed nuts or carrot sticks with hummus",
+        "dinner": "Vegetable stir-fry with olive oil + whole grain chapati + grilled chicken or paneer",
+        "before_bed": "Warm herbal tea"
+      },
+      "special_dietary_notes": [
+        "Aim for Mediterranean diet pattern",
+        "Maintain healthy weight (BMI 18.5-24.9)",
+        "Limit alcohol to moderate levels if any",
+        "Control portion sizes",
+        "Monitor sodium intake (<1500-2300 mg/day)"
+      ]
+    },
+
+    "lifestyle_management": {
+      "trigger_avoidance": [
+        "Quit smoking completely",
+        "Manage stress through meditation or yoga",
+        "Avoid extreme cold or heavy physical strain without preparation",
+        "Control blood pressure, cholesterol, and diabetes",
+        "Limit alcohol consumption"
+      ],
+      "physical_activity": {
+        "recommended": [
+          "Brisk walking (30-45 minutes daily)",
+          "Swimming or cycling",
+          "Cardiac rehabilitation programs",
+          "Light resistance training"
+        ],
+        "precautions": [
+          "Consult doctor before starting exercise",
+          "Start slowly and warm up",
+          "Stop if chest pain occurs",
+          "Carry nitroglycerin if prescribed"
+        ]
+      },
+      "mental_health": [
+        "Stress management techniques",
+        "Support groups for heart patients",
+        "Adequate sleep (7-9 hours)",
+        "Address anxiety or depression which can worsen outcomes"
+      ]
+    },
+
+    "heart_action_plan": {
+      "green_zone": {
+        "symptoms": "No chest pain; normal activity tolerance",
+        "action": "Continue medications and lifestyle measures"
+      },
+      "yellow_zone": {
+        "symptoms": "Mild chest discomfort with activity",
+        "action": "Rest, take nitroglycerin if prescribed, contact doctor"
+      },
+      "red_zone": {
+        "symptoms": "Severe chest pain, shortness of breath, sweating",
+        "action": "MEDICAL EMERGENCY. Take aspirin if advised, call emergency services immediately."
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Myocardial Infarction (Heart Attack)",
+        "description": "Complete blockage leading to heart muscle damage.",
+        "severity": "Critical"
+      },
+      {
+        "complication": "Heart Failure",
+        "description": "Weakened heart muscle unable to pump effectively.",
+        "severity": "Chronic/Severe"
+      },
+      {
+        "complication": "Arrhythmias",
+        "description": "Irregular heartbeats, including ventricular fibrillation.",
+        "severity": "Moderate to Critical"
+      },
+      {
+        "complication": "Sudden Cardiac Death",
+        "description": "Due to fatal arrhythmias.",
+        "severity": "Critical"
+      }
+    ],
+
+    "special_populations": {
+      "cad_in_women": {
+        "key_points": [
+          "Symptoms may be atypical (fatigue, nausea)",
+          "Higher prevalence of microvascular disease",
+          "Pregnancy complications (preeclampsia, gestational diabetes) increase future risk"
+        ]
+      },
+      "cad_in_elderly": {
+        "key_points": [
+          "Often presents with atypical symptoms",
+          "Higher comorbidity burden",
+          "Careful medication dosing due to kidney function"
+        ]
+      },
+      "cad_in_pregnancy": {
+        "key_points": [
+          "Rare but serious; requires multidisciplinary care",
+          "SCAD (spontaneous coronary artery dissection) more common"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza (Flu) Vaccine",
+        "frequency": "Annually",
+        "reason": "Prevents respiratory infections that strain the heart"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine",
+        "frequency": "As per guidelines",
+        "reason": "Reduces risk of pneumonia complications"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "frequency": "As per national guidelines",
+        "reason": "Reduces severe illness risk"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "New or worsening chest pain",
+      "Shortness of breath with minimal activity",
+      "Uncontrolled risk factors (BP, sugar, lipids)",
+      "For regular follow-up after diagnosis"
+    ],
+
+    "emergency_signs": [
+      "Crushing chest pain lasting >5 minutes",
+      "Pain radiating to jaw/arm with sweating/nausea",
+      "Sudden severe shortness of breath",
+      "Loss of consciousness"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "Is CAD reversible?",
+        "answer": "Plaque buildup is generally not fully reversible, but progression can be halted or slowed significantly with lifestyle changes and medications."
+      },
+      {
+        "question": "Can I live a normal life with CAD?",
+        "answer": "Yes. With proper management, most people with stable CAD lead active, fulfilling lives."
+      },
+      {
+        "question": "How important is diet in CAD?",
+        "answer": "Extremely important. A Mediterranean diet combined with exercise is one of the most effective ways to manage the disease."
+      }
+    ],
+
+    "references": [
+      "AHA/ACC Guidelines for Chronic Coronary Disease",
+      "ESC Guidelines on Chronic Coronary Syndromes",
+      "WHO Cardiovascular Disease Facts",
+      "Mayo Clinic Coronary Artery Disease Overview",
+      "Cleveland Clinic Heart & Vascular Resources"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOCARD-DIS-CAD-001",
+      "chatbot_name": "MedoCard",
+      "version": "1.0.0",
+      "created_date": "2026-06-02",
+      "last_updated": "2026-06-02",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is for educational purposes. Always consult a licensed physician for medical advice.",
+      "tags": ["cad", "heart disease", "angina", "atherosclerosis", "cardiovascular"]
+    }
+  }
+}

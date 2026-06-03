@@ -1,0 +1,422 @@
+{
+  "disease": {
+    "id": "DIS-014",
+    "name": "Gastroenteritis",
+    "scientific_name": "Gastroenteritis infectiosa / Stomach Flu",
+    "icd_10_code": "A09",
+    "category": "Gastrointestinal Disease",
+    "overview": {
+      "description": "Gastroenteritis is an inflammation of the mucous membrane lining the stomach and small intestine, commonly known as 'stomach flu' (though unrelated to influenza). It leads to diarrhea, vomiting, abdominal pain, and dehydration. Most cases are viral and self-limiting, but bacterial and parasitic forms can be more severe.",
+      "affected_organ": "Stomach and Intestines (Gastrointestinal Tract)",
+      "prevalence": "Extremely common; estimated 1.5–2 billion cases worldwide annually, major cause of childhood mortality in developing countries.",
+      "age_group": "All ages; highest severity in infants, young children, elderly, and immunocompromised individuals",
+      "is_contagious": true,
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": false
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Viral Gastroenteritis",
+        "description": "Most common type caused by norovirus, rotavirus, adenovirus, or astrovirus. Highly contagious and usually self-resolving.",
+        "common_in": "Children, schools, cruise ships, and households"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Bacterial Gastroenteritis",
+        "description": "Caused by bacteria such as Salmonella, Campylobacter, Shigella, E. coli (ETEC, EHEC), or Vibrio. Often linked to food poisoning.",
+        "common_in": "Travelers, areas with poor hygiene, undercooked meat/eggs"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Parasitic Gastroenteritis",
+        "description": "Caused by parasites like Giardia lamblia, Cryptosporidium, or Entamoeba histolytica.",
+        "common_in": "Contaminated water sources, travelers to endemic areas"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Traveler's Diarrhea",
+        "description": "Acute gastroenteritis occurring during or shortly after travel, often bacterial.",
+        "common_in": "International travelers to developing regions"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild",
+        "frequency": "Few loose stools, mild nausea, no significant dehydration",
+        "impact": "Managed at home with oral rehydration and rest"
+      },
+      {
+        "level": 2,
+        "name": "Moderate",
+        "frequency": "Frequent diarrhea/vomiting, low-grade fever, mild dehydration",
+        "impact": "Requires close monitoring and ORS; medical consultation advised"
+      },
+      {
+        "level": 3,
+        "name": "Severe",
+        "frequency": "Profuse diarrhea/vomiting, high fever, moderate to severe dehydration",
+        "impact": "Requires medical intervention, possible hospitalization and IV fluids"
+      }
+    ],
+
+    "causes": {
+      "genetic_factors": [
+        "Lack of FUT2 gene (natural resistance to norovirus in some individuals)",
+        "Certain immune deficiencies increasing susceptibility"
+      ],
+      "environmental_triggers": [
+        "Fecal-oral transmission via contaminated hands",
+        "Consumption of contaminated food or water",
+        "Close contact with infected persons",
+        "Poor sanitation and hygiene",
+        "Travel to high-risk areas"
+      ],
+      "other_causes": [
+        "Food intolerances (lactose intolerance post-infection)",
+        "Medication side effects (antibiotics causing C. difficile)",
+        "Toxins from certain bacteria (Staphylococcus aureus, Bacillus cereus)"
+      ]
+    },
+
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-401",
+          "name": "Watery Diarrhea",
+          "description": "Frequent loose or watery stools, sometimes explosive.",
+          "severity": "Mild to Severe",
+          "onset": "Within 12-48 hours of exposure"
+        },
+        {
+          "id": "SYM-402",
+          "name": "Nausea and Vomiting",
+          "description": "Feeling of sickness with repeated vomiting.",
+          "severity": "Mild to Severe",
+          "onset": "Early in the illness"
+        },
+        {
+          "id": "SYM-403",
+          "name": "Abdominal Cramps",
+          "description": "Painful cramping or bloating in the stomach and intestines.",
+          "severity": "Mild to Severe",
+          "onset": "Concurrent with diarrhea"
+        }
+      ],
+      "secondary_symptoms": [
+        "Low-grade fever and chills",
+        "Headache and muscle aches",
+        "Loss of appetite",
+        "Fatigue and general weakness",
+        "Bloating and flatulence"
+      ],
+      "warning_signs_of_attack": [
+        "Signs of severe dehydration (sunken eyes, dry mouth, reduced urine output)",
+        "Bloody or black stools",
+        "High fever (>102°F / 38.9°C)",
+        "Severe abdominal pain (possible appendicitis or other complications)",
+        "Persistent vomiting preventing any fluid intake"
+      ],
+      "symptoms_in_children": [
+        "Sunken soft spot (fontanelle) in infants",
+        "No tears when crying",
+        "Irritability or unusual sleepiness",
+        "No wet diaper for 6+ hours"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Recent travel, food consumption history, contact with sick individuals",
+        "Duration and frequency of symptoms",
+        "Assessment of fluid intake and urine output"
+      ],
+      "physical_examination": [
+        "Vital signs (heart rate, blood pressure, temperature)",
+        "Skin turgor and mucous membrane moisture",
+        "Abdominal palpation for tenderness"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Stool Analysis (Culture, PCR, Antigen Test)",
+          "description": "Laboratory testing of stool sample.",
+          "purpose": "Identify causative virus, bacteria, or parasite",
+          "key_metric": "Positive for specific pathogen"
+        },
+        {
+          "test_name": "Blood Tests (Electrolytes, CBC)",
+          "description": "Measures sodium, potassium, and signs of infection.",
+          "purpose": "Assess dehydration and electrolyte imbalance"
+        },
+        {
+          "test_name": "Rapid Rotavirus / Norovirus Antigen Test",
+          "description": "Quick stool test for common viruses.",
+          "purpose": "Common in pediatric settings"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "All medications should be taken only under the supervision of a licensed physician. Self-medication can be dangerous.",
+      "categories": [
+        {
+          "category_id": "MED-CAT-51",
+          "category_name": "Rehydration Therapy",
+          "purpose": "Replace fluids and electrolytes lost due to diarrhea and vomiting",
+          "medicines": [
+            {
+              "name": "Oral Rehydration Salts (ORS)",
+              "brand_examples": ["Electral", "ORS Powder", "Pedialyte"],
+              "form": "Powder sachet / Ready-to-drink",
+              "dosage": "After every loose stool as per WHO guidelines",
+              "use_case": "First-line treatment for all cases",
+              "side_effects": ["Minimal if properly prepared"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-52",
+          "category_name": "Antiemetics",
+          "purpose": "Control nausea and vomiting",
+          "medicines": [
+            {
+              "name": "Ondansetron",
+              "brand_examples": ["Zofran", "Ondem"],
+              "form": "Tablet, Syrup, Injection",
+              "dosage": "4-8 mg every 8-12 hours",
+              "use_case": "Severe vomiting preventing oral intake",
+              "side_effects": ["Headache", "Constipation"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-53",
+          "category_name": "Antibiotics (Selective Use)",
+          "purpose": "Treat confirmed bacterial infections",
+          "note": "Not recommended for viral cases",
+          "medicines": [
+            {
+              "name": "Azithromycin",
+              "brand_examples": ["Azithral", "Zithromax"],
+              "form": "Tablet / Suspension",
+              "dosage": "500 mg once daily for 3 days (adults)",
+              "use_case": "Severe bacterial traveler's diarrhea",
+              "side_effects": ["Diarrhea, nausea"]
+            },
+            {
+              "name": "Ciprofloxacin",
+              "brand_examples": ["Ciplox"],
+              "form": "Tablet",
+              "dosage": "500 mg twice daily for 3-5 days",
+              "use_case": "Certain bacterial cases (not E. coli O157)",
+              "side_effects": ["Tendonitis risk, GI upset"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-54",
+          "category_name": "Antidiarrheals (Limited Use)",
+          "purpose": "Slow intestinal motility (use with caution)",
+          "medicines": [
+            {
+              "name": "Loperamide",
+              "brand_examples": ["Imodium"],
+              "form": "Tablet / Capsule",
+              "dosage": "4 mg initially, then 2 mg after each loose stool",
+              "use_case": "Non-bloody, non-feverish diarrhea in adults",
+              "side_effects": ["Constipation (if overused)"]
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet focuses on gentle, easily digestible foods while prioritizing hydration to support gut recovery.",
+      "recommended_foods": [
+        {
+          "category": "BRAT Diet & Gentle Foods",
+          "items": [
+            {
+              "food": "Bananas, Rice, Applesauce, Toast (BRAT)",
+              "benefit": "Binding effect reduces diarrhea; potassium restoration",
+              "frequency": "Small frequent meals"
+            },
+            {
+              "food": "Clear Broths & Soups",
+              "benefit": "Hydration and sodium replacement",
+              "frequency": "Throughout recovery"
+            },
+            {
+              "food": "Boiled Potatoes, Plain Yogurt (probiotic)",
+              "benefit": "Easy to digest and restores gut flora",
+              "frequency": "As tolerated"
+            }
+          ]
+        },
+        {
+          "category": "Probiotic-Rich Foods",
+          "items": [
+            {
+              "food": "Plain Yogurt, Buttermilk, Kefir",
+              "benefit": "Helps restore healthy gut bacteria",
+              "frequency": "Once symptoms improve"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Dairy Products (except yogurt)",
+          "reason": "Temporary lactose intolerance common after gastroenteritis",
+          "examples": ["Milk, cheese, ice cream"]
+        },
+        {
+          "food": "Fatty, Fried & Spicy Foods",
+          "reason": "Irritate inflamed intestines",
+          "examples": ["Fast food, oily curries"]
+        },
+        {
+          "food": "Caffeine, Alcohol & Sugary Drinks",
+          "reason": "Worsen dehydration and diarrhea",
+          "examples": ["Coffee, soda, fruit juices"]
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "Start with clear liquids, progress slowly. Consult doctor if severe.",
+        "early_morning": "ORS solution",
+        "breakfast": "Banana + plain rice porridge",
+        "mid_morning": "Clear vegetable broth",
+        "lunch": "Boiled rice + mashed potato + yogurt (if tolerated)",
+        "evening_snack": "Applesauce or ripe banana",
+        "dinner": "Toast with clear soup",
+        "before_bed": "ORS if needed"
+      },
+      "special_dietary_notes": [
+        "Gradually reintroduce normal diet after 24-48 hours of improvement",
+        "Continue breastfeeding in infants",
+        "Avoid high-fiber foods initially"
+      ]
+    },
+
+    "lifestyle_management": {
+      "trigger_avoidance": [
+        "Frequent handwashing with soap",
+        "Safe drinking water (boiled or treated)",
+        "Proper food hygiene and cooking",
+        "Avoid close contact with infected individuals",
+        "Disinfect surfaces"
+      ],
+      "hydration": [
+        "Sip ORS or homemade sugar-salt solution frequently",
+        "Monitor urine output (should be pale yellow)"
+      ]
+    },
+
+    "complications": [
+      {
+        "complication": "Severe Dehydration",
+        "description": "Life-threatening fluid and electrolyte loss.",
+        "severity": "Critical"
+      },
+      {
+        "complication": "Hemolytic Uremic Syndrome (HUS)",
+        "description": "Rare complication of E. coli infection leading to kidney failure.",
+        "severity": "Critical"
+      },
+      {
+        "complication": "Post-Infectious Irritable Bowel Syndrome",
+        "description": "Persistent digestive issues after recovery.",
+        "severity": "Moderate"
+      },
+      {
+        "complication": "Malnutrition (in children)",
+        "description": "Especially in prolonged or recurrent cases.",
+        "severity": "Moderate to Severe"
+      }
+    ],
+
+    "special_populations": {
+      "gastroenteritis_in_children": {
+        "key_points": [
+          "Leading cause of childhood hospitalization in developing countries",
+          "Rotavirus vaccine highly effective for prevention",
+          "Use pediatric ORS formulations"
+        ]
+      },
+      "gastroenteritis_in_elderly": {
+        "key_points": [
+          "Higher risk of severe dehydration and complications",
+          "Often requires hospitalization"
+        ]
+      },
+      "gastroenteritis_in_pregnancy": {
+        "key_points": [
+          "Dehydration can affect fetal health",
+          "Careful medication selection required"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Rotavirus Vaccine",
+        "frequency": "Routine childhood immunization (2-3 doses)",
+        "reason": "Prevents severe viral gastroenteritis in infants"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Symptoms lasting more than 48 hours",
+      "Blood in stool or black stools",
+      "High fever or severe abdominal pain",
+      "Signs of dehydration",
+      "Inability to keep fluids down"
+    ],
+
+    "emergency_signs": [
+      "Severe dehydration (no urine for 8+ hours, sunken eyes)",
+      "Confusion or extreme lethargy",
+      "Bloody diarrhea with high fever",
+      "Shock (cold clammy skin, rapid weak pulse)"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "How long does gastroenteritis last?",
+        "answer": "Viral cases usually resolve in 1-3 days for adults and 3-7 days for children. Bacterial cases may last longer."
+      },
+      {
+        "question": "When should antibiotics be used?",
+        "answer": "Only for confirmed bacterial infections. Most cases are viral and do not require antibiotics."
+      },
+      {
+        "question": "Can I take anti-diarrheal medicine?",
+        "answer": "Generally avoided in children and in cases with fever or bloody diarrhea as it can prolong infection."
+      }
+    ],
+
+    "references": [
+      "WHO Guidelines on Acute Diarrhea Management",
+      "CDC Guidelines for Gastroenteritis",
+      "Indian Academy of Pediatrics (IAP) Guidelines",
+      "UpToDate: Acute Viral Gastroenteritis in Adults and Children"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOGI-DIS-GASTRO-001",
+      "chatbot_name": "MedoGI",
+      "version": "1.0.0",
+      "created_date": "2026-06-02",
+      "last_updated": "2026-06-02",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is for educational purposes only. Always consult a licensed physician for medical advice.",
+      "tags": ["gastroenteritis", "diarrhea", "stomach flu", "dehydration", "food poisoning"]
+    }
+  }
+}
