@@ -1,0 +1,422 @@
+{
+  "disease": {
+    "id": "DIS-012",
+    "name": "Peptic Ulcer Disease",
+    "scientific_name": "Peptic Ulcer Disease (PUD)",
+    "icd_10_code": "K27",
+    "category": "Gastrointestinal Disease",
+    "overview": {
+      "description": "Peptic Ulcer Disease involves open sores (ulcers) that develop on the inner lining of the stomach (gastric ulcers) or the upper part of the small intestine (duodenal ulcers). It results from an imbalance between aggressive factors (acid, pepsin) and protective mucosal defenses. Most cases are caused by Helicobacter pylori infection or long-term NSAID use.",
+      "affected_organ": "Stomach and Duodenum",
+      "prevalence": "Affects millions worldwide; approximately 4-5 million new cases annually.",
+      "age_group": "Adults; duodenal ulcers peak in 30-50 years, gastric ulcers more common after 60 years",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": false
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Gastric Ulcer",
+        "description": "Ulcers located in the stomach lining. Pain often worsens with food intake.",
+        "common_in": "Older adults, NSAID users, H. pylori infection"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Duodenal Ulcer",
+        "description": "Ulcers in the first part of the small intestine (duodenum). Pain often improves with food or antacids.",
+        "common_in": "Younger to middle-aged adults, H. pylori positive cases"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Marginal / Stomal Ulcer",
+        "description": "Ulcers occurring at the site of surgical anastomosis (after stomach surgery).",
+        "common_in": "Post-gastric surgery patients"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild / Uncomplicated",
+        "frequency": "Intermittent epigastric pain, responsive to treatment",
+        "impact": "Managed outpatient with medications and lifestyle changes"
+      },
+      {
+        "level": 2,
+        "name": "Moderate with Bleeding",
+        "frequency": "Visible bleeding (melena or hematemesis)",
+        "impact": "Requires hospitalization, endoscopy, and acid suppression"
+      },
+      {
+        "level": 3,
+        "name": "Severe / Complicated",
+        "frequency": "Perforation, obstruction, or massive bleeding",
+        "impact": "Surgical emergency with high risk of complications"
+      }
+    ],
+
+    "causes": {
+      "genetic_factors": [
+        "Family history of peptic ulcers",
+        "Blood group O (increased risk for duodenal ulcers)",
+        "Genetic predisposition to higher acid secretion"
+      ],
+      "environmental_triggers": [
+        "Helicobacter pylori (H. pylori) infection",
+        "Long-term NSAID use (aspirin, ibuprofen, etc.)",
+        "Smoking",
+        "Excessive alcohol consumption",
+        "High psychological stress (in critically ill patients)"
+      ],
+      "other_causes": [
+        "Zollinger-Ellison syndrome (gastrinoma)",
+        "Corticosteroid use",
+        "Hypersecretory states"
+      ]
+    },
+
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-201",
+          "name": "Burning Epigastric Pain",
+          "description": "Gnawing or burning pain in the upper abdomen, often between meals or at night.",
+          "severity": "Mild to Severe",
+          "onset": "Intermittent"
+        },
+        {
+          "id": "SYM-202",
+          "name": "Bloating and Belching",
+          "description": "Feeling of fullness, frequent burping.",
+          "severity": "Mild to Moderate",
+          "onset": "After meals"
+        },
+        {
+          "id": "SYM-203",
+          "name": "Nausea or Vomiting",
+          "description": "Nausea, sometimes with vomiting.",
+          "severity": "Mild to Moderate",
+          "onset": "Variable"
+        }
+      ],
+      "secondary_symptoms": [
+        "Heartburn and acid regurgitation",
+        "Loss of appetite and weight loss (especially gastric ulcers)",
+        "Intolerance to fatty or spicy foods",
+        "Fatigue (if chronic bleeding)"
+      ],
+      "warning_signs_of_attack": [
+        "Vomiting blood (bright red or coffee-ground)",
+        "Black, tarry stools (melena)",
+        "Sudden severe abdominal pain (perforation)",
+        "Dizziness, fainting, or rapid heartbeat due to blood loss"
+      ],
+      "symptoms_in_children": [
+        "Vague abdominal pain, irritability",
+        "Poor weight gain or growth failure",
+        "Recurrent vomiting"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Symptom pattern and relation to meals",
+        "Medication history (especially NSAIDs)",
+        "Smoking, alcohol, and family history"
+      ],
+      "physical_examination": [
+        "Abdominal palpation for epigastric tenderness",
+        "Signs of anemia or peritonitis (in complications)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "H. pylori Testing",
+          "description": "Urea breath test, stool antigen, or rapid urease test during endoscopy.",
+          "purpose": "Detect active H. pylori infection",
+          "key_metric": "Positive test confirms infection"
+        },
+        {
+          "test_name": "Upper GI Endoscopy (EGD)",
+          "description": "Direct visualization and biopsy of ulcers.",
+          "purpose": "Gold standard for diagnosis and ruling out cancer",
+          "key_metric": "Visualization of ulcer crater"
+        },
+        {
+          "test_name": "Upper GI Barium Series",
+          "description": "X-ray with barium contrast.",
+          "purpose": "Alternative when endoscopy not possible"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "All medications should be taken only under the supervision of a licensed physician. Self-medication can be dangerous.",
+      "categories": [
+        {
+          "category_id": "MED-CAT-31",
+          "category_name": "Proton Pump Inhibitors (PPIs)",
+          "purpose": "Strongly suppress stomach acid production to promote ulcer healing",
+          "medicines": [
+            {
+              "name": "Omeprazole",
+              "brand_examples": ["Omez", "Prilosec"],
+              "form": "Capsule, Tablet",
+              "dosage": "20-40 mg once daily",
+              "use_case": "First-line acid suppression for ulcer healing",
+              "side_effects": ["Headache, diarrhea, abdominal pain"]
+            },
+            {
+              "name": "Pantoprazole",
+              "brand_examples": ["Pan", "Protonix"],
+              "form": "Tablet, Injection",
+              "dosage": "40 mg once daily",
+              "use_case": "Gastric and duodenal ulcers",
+              "side_effects": ["Dizziness, joint pain"]
+            },
+            {
+              "name": "Esomeprazole",
+              "brand_examples": ["Nexium"],
+              "form": "Capsule",
+              "dosage": "20-40 mg daily",
+              "use_case": "Refractory ulcers"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-32",
+          "category_name": "H2-Receptor Blockers",
+          "purpose": "Reduce acid secretion (less potent than PPIs)",
+          "medicines": [
+            {
+              "name": "Famotidine",
+              "brand_examples": ["Pepcid"],
+              "form": "Tablet",
+              "dosage": "20-40 mg twice daily",
+              "use_case": "Mild cases or maintenance",
+              "side_effects": ["Constipation, dizziness"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-33",
+          "category_name": "H. pylori Eradication Therapy",
+          "purpose": "Combination antibiotics + PPI to eliminate H. pylori",
+          "note": "Typically 10-14 days course; bismuth quadruple therapy preferred in many regions",
+          "medicines": [
+            {
+              "name": "Clarithromycin + Amoxicillin + PPI",
+              "brand_examples": ["Triple therapy packs"],
+              "form": "Tablets/Capsules",
+              "dosage": "Standard doses twice daily for 14 days",
+              "use_case": "First-line in low resistance areas"
+            },
+            {
+              "name": "Bismuth + Metronidazole + Tetracycline + PPI",
+              "brand_examples": ["Bismuth Quadruple Therapy"],
+              "form": "Combination",
+              "dosage": "As per regimen (usually 10-14 days)",
+              "use_case": "Preferred in high clarithromycin resistance areas"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-34",
+          "category_name": "Antacids & Protectants",
+          "purpose": "Neutralize acid or coat the ulcer",
+          "medicines": [
+            {
+              "name": "Sucralfate",
+              "brand_examples": ["Sucrafil"],
+              "form": "Tablet/Suspension",
+              "dosage": "1g four times daily",
+              "use_case": "Mucosal protection"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "While no specific diet cures ulcers, avoiding irritants and eating balanced meals supports healing and symptom relief.",
+      "recommended_foods": [
+        {
+          "category": "Soothing & Healing Foods",
+          "items": [
+            {
+              "food": "Oatmeal, Bananas, Applesauce",
+              "benefit": "Gentle on stomach, helps absorb acid",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Probiotic Yogurt (plain)",
+              "benefit": "Supports gut health, may help fight H. pylori",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Lean proteins (chicken, fish), Whole grains",
+              "benefit": "Provides nutrition without irritation",
+              "frequency": "Regular"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Spicy foods, Chili, Pepper",
+          "reason": "Irritates the ulcer lining"
+        },
+        {
+          "food": "Acidic foods (citrus, tomatoes)",
+          "reason": "Increases stomach acidity"
+        },
+        {
+          "food": "Caffeine, Alcohol, Carbonated drinks",
+          "reason": "Stimulate acid production and damage mucosa"
+        },
+        {
+          "food": "Fried/fatty foods, Chocolate",
+          "reason": "Slow digestion and increase discomfort"
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "Eat small, frequent meals. Avoid eating close to bedtime.",
+        "early_morning": "Warm water or herbal tea",
+        "breakfast": "Oatmeal with banana and a little honey",
+        "mid_morning": "Plain yogurt or applesauce",
+        "lunch": "Grilled chicken, steamed rice, cooked vegetables",
+        "evening_snack": "Banana or pear",
+        "dinner": "Baked fish, mashed potatoes, boiled spinach",
+        "before_bed": "Warm milk (if tolerated) or chamomile tea"
+      },
+      "special_dietary_notes": [
+        "Eat smaller meals more frequently",
+        "Avoid lying down immediately after meals",
+        "Maintain a healthy weight"
+      ]
+    },
+
+    "lifestyle_management": {
+      "trigger_avoidance": [
+        "Stop smoking completely",
+        "Limit or avoid alcohol",
+        "Avoid NSAIDs; use alternatives if needed",
+        "Manage stress through relaxation techniques",
+        "Practice good hygiene to prevent H. pylori spread"
+      ],
+      "physical_activity": {
+        "recommended": [
+          "Light to moderate exercise like walking",
+          "Yoga for stress reduction"
+        ],
+        "precautions": [
+          "Avoid strenuous activity during acute pain"
+        ]
+      }
+    },
+
+    "ulcer_action_plan": {
+      "green_zone": {
+        "symptoms": "Minimal or no pain; following treatment",
+        "action": "Continue medications and lifestyle measures"
+      },
+      "yellow_zone": {
+        "symptoms": "Increasing pain or discomfort",
+        "action": "Take antacids/PPI as prescribed; consult doctor"
+      },
+      "red_zone": {
+        "symptoms": "Vomiting blood, black stools, severe pain",
+        "action": "Seek immediate emergency care"
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Gastrointestinal Bleeding",
+        "description": "Ulcer erodes a blood vessel causing hemorrhage.",
+        "severity": "Severe"
+      },
+      {
+        "complication": "Perforation",
+        "description": "Ulcer breaks through the stomach/duodenal wall.",
+        "severity": "Critical (surgical emergency)"
+      },
+      {
+        "complication": "Gastric Outlet Obstruction",
+        "description": "Scarring blocks food passage.",
+        "severity": "Severe"
+      },
+      {
+        "complication": "Increased risk of Gastric Cancer",
+        "description": "Especially with chronic H. pylori infection.",
+        "severity": "Long-term"
+      }
+    ],
+
+    "special_populations": {
+      "pud_in_elderly": {
+        "key_points": [
+          "Higher risk due to NSAID use and comorbidities",
+          "Atypical or silent symptoms common"
+        ]
+      },
+      "pud_in_pregnancy": {
+        "key_points": [
+          "PPIs generally safe; H. pylori testing if needed",
+          "Avoid certain antibiotics"
+        ]
+      }
+    },
+
+    "when_to_see_doctor": [
+      "Persistent abdominal pain despite treatment",
+      "Unexplained weight loss",
+      "Difficulty swallowing",
+      "Vomiting or black stools"
+    ],
+
+    "emergency_signs": [
+      "Vomiting large amounts of blood",
+      "Black, tarry stools",
+      "Sudden, severe abdominal pain",
+      "Signs of shock (rapid pulse, cold clammy skin)"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "Can peptic ulcers be cured?",
+        "answer": "Yes. Most ulcers heal completely with proper treatment, especially after H. pylori eradication."
+      },
+      {
+        "question": "Do spicy foods cause ulcers?",
+        "answer": "No. They do not cause ulcers but can worsen symptoms in some people."
+      },
+      {
+        "question": "How long does it take for an ulcer to heal?",
+        "answer": "With treatment, most ulcers heal in 4-8 weeks."
+      }
+    ],
+
+    "references": [
+      "American College of Gastroenterology (ACG) Guidelines",
+      "World Gastroenterology Organisation Global Guidelines",
+      "Mayo Clinic Peptic Ulcer Overview",
+      "Cleveland Clinic Peptic Ulcer Disease",
+      "UpToDate: Peptic Ulcer Disease"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOGI-DIS-PUD-001",
+      "chatbot_name": "MedoGI",
+      "version": "1.0.0",
+      "created_date": "2026-06-02",
+      "last_updated": "2026-06-02",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is for educational purposes only. Always consult a licensed physician for medical advice.",
+      "tags": ["peptic ulcer", "stomach ulcer", "duodenal ulcer", "h pylori", "gastric ulcer"]
+    }
+  }
+}

@@ -1,0 +1,1271 @@
+{
+  "disease": {
+    "id": "DIS-013",
+    "name": "Appendicitis",
+    "scientific_name": "Acute Appendicitis / Inflammation of the Vermiform Appendix",
+    "icd_10_code": "K35-K37 (K35.2: Acute appendicitis with generalized peritonitis; K35.3: with localized peritonitis; K36: Other appendicitis; K37: Unspecified appendicitis)",
+    "category": "Acute Abdominal / Gastrointestinal Surgical Emergency",
+    "overview": {
+      "description": "Appendicitis is the acute inflammation of the vermiform appendix — a small, finger-shaped pouch attached to the cecum at the junction of the small and large intestine in the right lower quadrant (RLQ) of the abdomen. It is the most common surgical emergency worldwide, affecting approximately 7-8% of the population over a lifetime. Obstruction of the appendix lumen — most commonly by a fecalith (hardened stool), lymphoid hyperplasia, or foreign body — leads to bacterial overgrowth, increased intraluminal pressure, vascular compromise, and ultimately inflammation, gangrene, and perforation if untreated. Prompt diagnosis and surgical management (appendectomy) is lifesaving.",
+      "affected_organ": "Vermiform Appendix (cecal appendix) — located in the right iliac fossa (RIF) / right lower quadrant (RLQ) of the abdomen",
+      "prevalence": "Lifetime risk: 7-8% in Western populations; approximately 300,000 appendectomies performed annually in the USA; most common abdominal surgical emergency globally.",
+      "age_group": "Predominantly affects individuals aged 10-30 years (peak 15-25 years); can occur at any age; less common in infants and elderly (but more dangerous when it does).",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": false,
+      "is_surgical_emergency": true
+    },
+ 
+    "anatomy_and_physiology": {
+      "appendix_location": "Vermiform appendix arises from the posteromedial aspect of the cecum, approximately 2-3 cm below the ileocecal valve. Most commonly positioned retrocecal (65-70%), pelvic (25-30%), subcecal, preileal, or paracolic. Position variation explains varied pain presentation.",
+      "normal_length": "2-20 cm (average 9 cm)",
+      "blood_supply": "Appendicular artery — branch of the ileocolic artery (from superior mesenteric artery). Terminal blood supply — obstruction leads rapidly to ischemia.",
+      "function": "The appendix contains lymphoid tissue (part of GALT — gut-associated lymphoid tissue). Previously considered vestigial; now thought to act as a 'safe house' for gut bacteria, involved in immune function in early life.",
+      "mcburneys_point": "McBurney's point is the classic location of maximal tenderness in appendicitis — located 1/3 of the way from the anterior superior iliac spine (ASIS) to the umbilicus. The surface marking of the base of the appendix."
+    },
+ 
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Acute Simple (Uncomplicated) Appendicitis",
+        "description": "Early stage inflammation of the appendix mucosa and wall without perforation, gangrene, or abscess. The appendix is edematous, hyperemic, and may have a fibrinous exudate on the serosa. This is the ideal stage for surgical intervention — lowest complication rate.",
+        "pathology": "Mucosal ulceration, transmural neutrophilic infiltration, vascular congestion",
+        "management": "Urgent laparoscopic or open appendectomy; OR non-operative management (antibiotics alone) in selected cases per newer evidence",
+        "prognosis": "Excellent with prompt treatment; complications rare"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Suppurative (Phlegmonous) Appendicitis",
+        "description": "Progressive stage where the entire appendix wall is infiltrated with pus-forming bacteria. The appendix becomes distended with mucopurulent contents. Pus may be visible on the serosal surface. Increased risk of complications.",
+        "pathology": "Full-thickness suppurative inflammation; fibrinopurulent periappendiceal exudate",
+        "management": "Emergency appendectomy; IV antibiotics perioperatively",
+        "prognosis": "Good with timely surgery"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Gangrenous Appendicitis",
+        "description": "Advanced stage where blood supply to the appendix is compromised due to thrombosis of appendicular vessels, leading to ischemia and tissue necrosis (gangrene). The appendix wall becomes black/green, friable, and may have focal full-thickness necrosis. Perforation is imminent.",
+        "pathology": "Vascular thrombosis, coagulative necrosis, transmural gangrene, patchy full-thickness necrosis",
+        "management": "Emergency appendectomy; broad-spectrum IV antibiotics; higher risk of post-operative complications",
+        "prognosis": "Guarded without treatment; good with prompt surgery though higher morbidity than simple appendicitis"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Perforated Appendicitis",
+        "description": "The gangrenous appendix ruptures, releasing fecal contents and bacteria into the peritoneal cavity. Can cause localized peritonitis (contained by omentum and bowel) or diffuse generalized peritonitis (surgical emergency with high mortality risk). Perforation occurs in 20-30% of all appendicitis cases overall; 40-70% in children under 5 and elderly over 65.",
+        "pathology": "Full-thickness perforation; peritoneal contamination with enteric organisms",
+        "risk_factors_for_perforation": "Delay in presentation (>24-48 hours), extremes of age (infants, elderly), immunocompromised, atypical presentation delaying diagnosis",
+        "management": "Emergency surgery; aggressive IV broad-spectrum antibiotics; fluid resuscitation; drainage of abscess if present",
+        "prognosis": "Significantly worse than uncomplicated; mortality 0.5-5% in adults; higher in elderly"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Appendiceal Abscess (Periappendiceal Abscess)",
+        "description": "A localized collection of pus around a perforated appendix, walled off by the omentum, peritoneum, and adjacent bowel loops forming a phlegmon or abscess. The body's attempt to contain peritoneal contamination. Presents as a palpable RLQ mass with prolonged symptoms.",
+        "pathology": "Localized periappendiceal suppuration; fibrous walling by omentum and mesentery",
+        "management": "Image-guided percutaneous drainage + IV antibiotics; interval appendectomy at 6-8 weeks (optional and controversial); OR immediate appendectomy in experienced centers",
+        "prognosis": "Good with appropriate management; recurrence risk 5-10% without interval appendectomy"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Chronic / Recurrent Appendicitis",
+        "description": "A controversial entity characterized by recurrent mild episodes of RLQ pain lasting weeks to months, with spontaneous resolution. Believed to result from partial luminal obstruction, low-grade inflammation, or fibrosis of the appendiceal wall. Each episode may be self-limiting but risk of acute progression remains.",
+        "pathology": "Chronic fibrosis of appendiceal wall; partial luminal obstruction; intermittent low-grade inflammation",
+        "management": "Elective appendectomy after thorough investigation to exclude other causes of recurrent RLQ pain (ovarian cyst, IBS, Crohn's disease)",
+        "prognosis": "Excellent with elective appendectomy; risk of acute flare until appendix removed"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Stump Appendicitis",
+        "description": "Rare but dangerous — appendicitis occurring in a residual appendiceal stump left behind after a previous appendectomy. Often misdiagnosed because clinicians do not consider appendicitis in a patient who has had their appendix removed. Delayed diagnosis leads to perforation.",
+        "management": "Re-operation; excision of residual stump",
+        "note": "Prevented by ensuring complete appendiceal removal at time of appendectomy"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Appendicitis Secondary to Neoplasm",
+        "description": "Appendiceal tumors — most commonly carcinoid tumors (neuroendocrine tumors — most common appendix neoplasm, usually <2cm at tip), mucinous neoplasms (LAMN, HAMN), and adenocarcinoma — can obstruct the appendiceal lumen causing secondary appendicitis. Discovered incidentally at histopathology after appendectomy.",
+        "incidence": "Appendiceal tumors found in ~1% of appendectomy specimens; carcinoid (NET) most common",
+        "management": "Simple appendectomy usually curative for carcinoid <2cm; right hemicolectomy for larger tumors or adenocarcinoma; oncology referral"
+      }
+    ],
+ 
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Uncomplicated Appendicitis (Simple / Early)",
+        "description": "Appendiceal inflammation without perforation, gangrene, abscess, or peritonitis",
+        "alvarado_score": "7-10 (high probability of appendicitis)",
+        "clinical_features": "Classic migratory RLQ pain; localized McBurney's point tenderness; low-grade fever (37.5-38.5°C); mild leukocytosis (10,000-18,000/µL)",
+        "imaging": "Non-perforated appendix on CT/ultrasound; appendiceal diameter 6-12 mm; periappendiceal fat stranding",
+        "management": "Urgent appendectomy (laparoscopic preferred) within 6-12 hours of diagnosis; single-dose prophylactic IV antibiotics (cefazolin + metronidazole); OR non-operative management (antibiotics only) in carefully selected adults",
+        "prognosis": "Excellent; <1% mortality; minimal complications"
+      },
+      {
+        "level": 2,
+        "name": "Complicated Appendicitis — Gangrenous",
+        "description": "Appendiceal wall ischemia and necrosis without complete perforation",
+        "clinical_features": "More severe pain; higher fever (38-39°C); higher leukocytosis (15,000-25,000/µL); guarding; peritonism",
+        "imaging": "Appendiceal wall enhancement defect on CT; periappendiceal fluid; appendiceal diameter typically >12mm",
+        "management": "Emergency appendectomy; perioperative broad-spectrum IV antibiotics (piperacillin-tazobactam or ceftriaxone + metronidazole); extended antibiotic course post-op",
+        "prognosis": "Good with timely surgery; higher complication rate than simple appendicitis"
+      },
+      {
+        "level": 3,
+        "name": "Complicated Appendicitis — Perforated with Localized Peritonitis",
+        "description": "Appendiceal perforation with localized peritoneal contamination; walled off by omentum and bowel; abscess may be present",
+        "clinical_features": "Prolonged symptoms >24-48 hours; moderate to high fever (38.5-39.5°C); localized RLQ tenderness with guarding; possible palpable mass; WBC 18,000-25,000/µL",
+        "imaging": "Perforation visible on CT; localized free air; periappendiceal abscess or phlegmon; thickened cecal wall",
+        "management": "Emergency appendectomy + drainage; OR IR-guided percutaneous drainage + IV antibiotics + interval appendectomy; fluid resuscitation; prolonged IV antibiotics (5-7 days)",
+        "prognosis": "Good with appropriate management; longer hospital stay; higher post-operative complication rate"
+      },
+      {
+        "level": 4,
+        "name": "Complicated Appendicitis — Perforated with Generalized Peritonitis (CRITICAL EMERGENCY)",
+        "description": "Rupture with free diffuse spread of fecal contents throughout the peritoneal cavity; diffuse peritonitis; sepsis; life-threatening",
+        "clinical_features": "Board-like rigid abdomen; diffuse severe abdominal pain and tenderness; high fever (>39°C) or hypothermia in septic shock; tachycardia; hypotension; septic shock; WBC >25,000/µL or paradoxically low in overwhelming sepsis",
+        "imaging": "Free air under diaphragm (pneumoperitoneum) on erect CXR; diffuse peritoneal fluid on CT; severe fat stranding throughout abdomen",
+        "management": "ICU-level resuscitation; emergency exploratory laparotomy; peritoneal washout; IV broad-spectrum antibiotics (piperacillin-tazobactam + methotrexate or imipenem-cilastatin); vasopressors if septic shock; prolonged ICU care",
+        "prognosis": "Guarded; mortality 0.5-2% in adults; up to 20% in elderly with delayed presentation; septic shock increases mortality significantly"
+      }
+    ],
+ 
+    "causes": {
+      "primary_cause": "Obstruction of the appendiceal lumen leading to bacterial overgrowth, increased intraluminal pressure, vascular compromise, and progressive inflammation.",
+      "luminal_obstruction_causes": [
+        {
+          "cause": "Fecalith (Appendicolith / Coprolith)",
+          "description": "Hardened fecal matter calcified around a nidus (undigested vegetable matter, hair, seeds). Most common cause in adults. Visible on CT as a calcified opacity in the appendix or RLQ.",
+          "prevalence": "Most common identifiable cause (~40% of cases)"
+        },
+        {
+          "cause": "Lymphoid Hyperplasia",
+          "description": "Reactive enlargement of lymphoid follicles in the appendiceal submucosa in response to viral or bacterial infection (viral gastroenteritis, Yersinia, Campylobacter, measles, adenovirus, Epstein-Barr virus). Compresses the appendiceal lumen from within.",
+          "prevalence": "Most common cause in children and adolescents (~60% of pediatric cases)"
+        },
+        {
+          "cause": "Intestinal Parasites",
+          "description": "Enterobius vermicularis (pinworm/threadworm) — most common parasite causing appendiceal obstruction; worms migrate into appendix. Also Ascaris lumbricoides (roundworm). More common in developing countries.",
+          "prevalence": "Common in endemic areas; found in 1-3% of appendectomy specimens"
+        },
+        {
+          "cause": "Foreign Bodies",
+          "description": "Accidentally swallowed objects (seeds — grape seeds, cherry seeds; fish bones; toothpicks; pins; vegetable matter) that migrate into the appendix and obstruct the lumen.",
+          "prevalence": "Rare (<1% of cases)"
+        },
+        {
+          "cause": "Appendiceal Tumors",
+          "description": "Carcinoid tumors (neuroendocrine tumors — most at appendiceal tip), mucinous neoplasms (LAMN), or adenocarcinoma obstructing the appendiceal lumen from within or compressing from outside.",
+          "prevalence": "Found in ~1% of appendectomy specimens; more common in elderly appendicitis"
+        },
+        {
+          "cause": "Cecal Tumors or External Compression",
+          "description": "External compression of appendiceal lumen by cecal carcinoma, enlarged lymph nodes, Crohn's disease strictures, or adhesions.",
+          "prevalence": "Rare; important to consider in elderly patients"
+        }
+      ],
+      "pathophysiological_sequence": [
+        "Step 1: Luminal obstruction → bacterial overgrowth of normal gut flora (E. coli, Bacteroides, Enterococcus, anaerobes)",
+        "Step 2: Continued mucus secretion against obstruction → rising intraluminal pressure",
+        "Step 3: Intraluminal pressure exceeds venous and lymphatic drainage pressure → mucosal ischemia and edema",
+        "Step 4: Bacterial invasion of appendiceal wall → acute transmural inflammation (hours 12-24)",
+        "Step 5: Arterial thrombosis → gangrene and full-thickness necrosis (hours 24-48)",
+        "Step 6: Perforation through necrotic wall → localized or generalized peritonitis (hours 48-72, varies widely)"
+      ],
+      "risk_factors": [
+        "Male sex — 1.4x higher lifetime risk than females; male-to-female ratio 1.4:1",
+        "Age 10-30 years — peak incidence; higher lymphoid tissue content in adolescence",
+        "Low-fibre, high-refined-carbohydrate diet — increases fecalith formation; epidemiological evidence",
+        "Family history — possible genetic predisposition; studies suggest 3x higher risk with first-degree relative history",
+        "Inflammatory bowel disease (Crohn's disease) — may cause appendiceal involvement or mimic appendicitis",
+        "Previous gastrointestinal infections — lymphoid hyperplasia trigger",
+        "Intestinal parasitic infections (endemic areas) — Enterobius vermicularis",
+        "Constipation — promotes fecalith formation",
+        "Sedentary lifestyle — reduced gut motility"
+      ],
+      "genetic_factors": [
+        "Family history increases risk 3-fold; possible hereditary predisposition to fecalith formation or immune response",
+        "Studies show higher concordance in monozygotic vs dizygotic twins",
+        "No single gene identified; likely polygenic"
+      ]
+    },
+ 
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-301",
+          "name": "Migratory Abdominal Pain (Periumbilical to RLQ)",
+          "description": "The hallmark symptom of appendicitis. Pain begins as a dull, poorly localized, periumbilical (around the navel) or central abdominal ache — visceral pain from appendiceal distension stimulating T10 afferents. Over 6-24 hours, pain migrates to the right lower quadrant (RLQ) / McBurney's point as the inflamed appendix irritates the parietal peritoneum — somatic pain, well-localized and sharp. This classic migration occurs in ~50-60% of cases.",
+          "severity": "Mild initially → Severe (7-10/10) as peritonitis develops",
+          "onset": "Gradual; typically progresses over 4-24 hours"
+        },
+        {
+          "id": "SYM-302",
+          "name": "Anorexia (Loss of Appetite)",
+          "description": "Loss of appetite is one of the earliest and most consistent symptoms of appendicitis — present in >90% of cases. Characteristically precedes or accompanies the abdominal pain. A patient with acute abdominal pain who is hungry is less likely to have appendicitis.",
+          "severity": "Mild",
+          "onset": "Early — often before or with onset of pain; highly specific when present with RLQ pain"
+        },
+        {
+          "id": "SYM-303",
+          "name": "Nausea and Vomiting",
+          "description": "Nausea follows the onset of pain in appendicitis (pain first, then nausea — opposite pattern to gastroenteritis where vomiting typically precedes or occurs with abdominal pain). Vomiting occurs in 50-80% of cases; usually 1-3 episodes, not profuse. Persistent vomiting suggests perforation or alternative diagnosis.",
+          "severity": "Mild to Moderate",
+          "onset": "Follows pain onset (pain precedes vomiting — important diagnostic clue)"
+        },
+        {
+          "id": "SYM-304",
+          "name": "Low-Grade Fever",
+          "description": "Temperature typically 37.5-38.5°C (99.5-101.3°F) in uncomplicated appendicitis. Higher fever (>38.5°C) suggests gangrenous or perforated appendicitis, or secondary bacterial peritonitis. Absence of fever does not exclude appendicitis.",
+          "severity": "Mild (uncomplicated) → High (perforation/peritonitis)",
+          "onset": "Several hours after onset of pain"
+        },
+        {
+          "id": "SYM-305",
+          "name": "Right Lower Quadrant (RLQ) Tenderness at McBurney's Point",
+          "description": "Maximal tenderness at McBurney's point (1/3 of the way from the right ASIS to the umbilicus) on palpation is the most important physical examination finding. Rebound tenderness (Blumberg's sign) — pain on rapid release of pressure — indicates peritoneal irritation. Guarding (voluntary or involuntary muscle rigidity) worsens as inflammation progresses.",
+          "severity": "Moderate to Severe",
+          "onset": "Develops as visceral pain localizes to somatic parietal peritoneum"
+        },
+        {
+          "id": "SYM-306",
+          "name": "Constipation or Diarrhea",
+          "description": "Altered bowel habits are common. Constipation is more frequent. Some patients — especially children and those with pelvic appendix — develop diarrhea from rectal irritation by the inflamed appendix. Significant diarrhea may suggest gastroenteritis but does not exclude appendicitis.",
+          "severity": "Mild",
+          "onset": "Variable; concurrent with or after pain onset"
+        }
+      ],
+      "secondary_symptoms": [
+        "Malaise and general feeling of being unwell",
+        "Flushed appearance and dry tongue/mucous membranes (dehydration from reduced intake and fever)",
+        "Right-sided groin or testicular pain (if appendix tip in pelvic position irritating right genitofemoral nerve)",
+        "Dysuria and urinary frequency (if retrocecal or pelvic appendix lies adjacent to right ureter or bladder)",
+        "Diarrhea with tenesmus (if pelvic appendix — may mimic pelvic inflammatory disease in women)",
+        "Abdominal bloating and gas",
+        "Raised respiratory rate (from abdominal pain splinting diaphragm or sepsis)",
+        "Tachycardia (from pain, fever, dehydration, or sepsis)",
+        "Peritonism (involuntary muscle guarding, board-like rigidity in perforation)"
+      ],
+      "warning_signs_of_perforation": [
+        "Sudden brief relief of severe pain followed by rapid worsening and spread of pain throughout the abdomen — classic sign of perforation and peritoneal spill",
+        "Rapid rise in temperature to >39°C (>102.2°F) — suggests perforation and bacterial peritonitis",
+        "Board-like rigid abdomen with generalized tenderness and guarding — diffuse peritonitis",
+        "Signs of septic shock: falling blood pressure, rising heart rate (>120 bpm), cold sweaty extremities, altered consciousness",
+        "Abdominal distension and inability to pass flatus — intestinal ileus from peritonitis",
+        "Looking severely ill — peritonitis has a toxic appearance: pale, diaphoretic, unable to move without severe pain"
+      ],
+      "symptoms_in_children": [
+        "Classic migratory pain and anorexia may be poorly communicated by young children — they may point to the whole abdomen",
+        "Diarrhea more common in children than adults with appendicitis",
+        "Higher fever (38.5-40°C) more common in pediatric appendicitis",
+        "Perforation rate very high in young children (40-70% in under-5s) — inability to describe symptoms causes delay",
+        "Child may walk bent forward or to the right (antalgic posture), refuse to jump, or be unwilling to stand straight",
+        "Crying, irritability, or inconsolable behaviour in infants without clear cause — consider appendicitis",
+        "Vomiting may precede pain in children (unlike adults) making diagnosis harder",
+        "Palpation of abdomen is difficult — child tenses with crying; examine gently; knee-chest position may relax abdomen"
+      ],
+      "symptoms_in_elderly": [
+        "Atypical presentation very common in elderly — classic pain migration present in only 20-30%",
+        "Pain may be mild, vague, or entirely absent despite advanced appendicitis",
+        "Fever may be absent or very low even in perforation (blunted immune response)",
+        "WBC may be normal or minimally elevated despite perforation",
+        "First presentation may be generalized peritonitis, septic shock, or right iliac fossa mass",
+        "High perforation rate (50-70%) due to delayed diagnosis and atypical presentation",
+        "Differential diagnosis broader (cecal cancer, diverticulitis, mesenteric ischemia) — CT essential"
+      ],
+      "symptoms_in_pregnancy": [
+        "Appendix displaced upward and laterally as uterus enlarges — pain may be in right upper quadrant (RUQ) or right flank rather than classic RLQ in second and third trimester",
+        "Nausea and vomiting may be attributed to pregnancy (morning sickness) causing diagnostic delay",
+        "Abdominal tenderness may be less pronounced as the gravid uterus separates the parietal peritoneum from the appendix",
+        "WBC is normally elevated in pregnancy (12,000-14,000/µL) — may mask leukocytosis of appendicitis",
+        "Perforation rate higher (43%) due to diagnostic delay",
+        "Fetal and maternal mortality significantly increased with perforation"
+      ],
+      "physical_examination_signs": {
+        "mcburneys_sign": "Point tenderness at McBurney's point (1/3 distance from ASIS to umbilicus) — most reliable sign",
+        "rovings_sign": "Pressure on left lower quadrant causes pain in right lower quadrant — indicates peritoneal irritation; positive in appendicitis",
+        "psoas_sign": "Pain on extension of right hip (stretching iliopsoas muscle) — positive when retrocecal appendix lies against psoas muscle",
+        "obturator_sign": "Pain on internal rotation of the flexed right hip — positive when pelvic appendix lies adjacent to obturator internus muscle",
+        "blumbergs_sign_rebound": "Pain on sudden release of deep palpation pressure — indicates peritoneal irritation",
+        "dunphys_sign": "Increased RLQ pain on coughing — peritoneal irritation sign",
+        "ten_horn_sign": "Pain on gentle traction of right testis — suggests appendiceal involvement near right spermatic cord"
+      }
+    },
+ 
+    "diagnosis": {
+      "medical_history": [
+        "Detailed pain history: onset, location, character, radiation, timing of migration from periumbilical to RLQ",
+        "Gastrointestinal symptoms: anorexia (very important), nausea, vomiting, bowel changes, last bowel movement",
+        "Urinary symptoms: dysuria, frequency (rule out UTI; pelvic appendix can cause urinary symptoms)",
+        "Fever — time of onset relative to pain",
+        "Menstrual history in women — LMP (last menstrual period); risk of ectopic pregnancy, ovarian pathology",
+        "Previous abdominal surgeries — adhesions, prior appendectomy (raises possibility of stump appendicitis)",
+        "Dietary history and recent travel (parasites in endemic areas)",
+        "Family history of appendicitis, IBD, or colorectal cancer",
+        "Medication history — immunosuppressants may mask presentation; NSAIDs may partially treat pain masking severity"
+      ],
+      "physical_examination": [
+        "General appearance: degree of illness, posture (antalgia — bent to right), ability to walk (limp or reluctance to move)",
+        "Vital signs: temperature, heart rate, blood pressure, respiratory rate, oxygen saturation",
+        "Abdominal inspection: distension, visible peristalsis, abdominal wall movement with respiration (peritonitis reduces movement)",
+        "Auscultation: bowel sounds (reduced or absent in peritonitis; may be increased in early obstruction)",
+        "Percussion: tenderness on percussion at RLQ (McBurney's point); shifting dullness if peritoneal fluid",
+        "Palpation: starting away from RLQ; McBurney's point tenderness; guarding (voluntary vs involuntary); rigidity (board-like in peritonitis); Rovsing's sign; rebound tenderness",
+        "Special signs: Psoas sign (right hip extension); Obturator sign (hip internal rotation); Dunphy's sign (cough)",
+        "Rectal examination: right-sided tenderness on digital rectal exam (pelvic appendix)",
+        "Pelvic examination in women: cervical motion tenderness, adnexal tenderness (PID vs appendicitis)"
+      ],
+      "clinical_scoring_systems": [
+        {
+          "score_name": "Alvarado Score (MANTRELS Score)",
+          "components": "M-Migration of pain to RLQ (1), A-Anorexia (1), N-Nausea/vomiting (1), T-Tenderness RLQ (2), R-Rebound tenderness (1), E-Elevated temperature >37.3°C (1), L-Leukocytosis >10,000/µL (2), S-Shift to left/neutrophilia (1) — Maximum 10 points",
+          "interpretation": "Score 1-4: Appendicitis unlikely (observe); Score 5-6: Equivocal (CT scan); Score 7-10: High probability (surgery or CT confirmation)",
+          "authority": "Widely used validated score; sensitivity ~96%, specificity ~75% for score ≥7"
+        },
+        {
+          "score_name": "Appendicitis Inflammatory Response (AIR) Score",
+          "components": "Vomiting (1), RLQ tenderness (1-2), rebound tenderness (1-3), WBC count (1-2), proportion neutrophils (1-2), CRP (1-2) — Maximum 12 points",
+          "interpretation": "Score ≤4: Low probability; 5-8: Indeterminate (imaging); ≥9: High probability (surgery)"
+        },
+        {
+          "score_name": "AAAS (Adult Appendicitis Score)",
+          "components": "CRP, WBC, neutrophilia, pain migration, rebound/guarding, gender",
+          "authority": "Validated in Finnish population; designed for adults"
+        }
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Complete Blood Count (CBC) with Differential",
+          "type": "Blood — Haematological",
+          "description": "Leukocytosis (elevated WBC) with neutrophilia (left shift) is the most common and important laboratory finding in appendicitis. WBC 10,000-18,000/µL typical in uncomplicated; >18,000/µL suggests gangrenous or perforated appendicitis.",
+          "purpose": "Confirms systemic inflammatory response; helps assess severity and probability of appendicitis",
+          "key_metric": "WBC: Normal 4,500-11,000/µL; Appendicitis: 10,000-20,000/µL; Perforation: >18,000/µL; Neutrophil percentage >75% (neutrophilia) — 'left shift'"
+        },
+        {
+          "test_name": "C-Reactive Protein (CRP)",
+          "type": "Blood — Inflammatory marker",
+          "description": "Acute phase protein rising within 6-12 hours of inflammation onset. Highly elevated CRP combined with high WBC strongly suggests appendicitis or complicated/perforated appendicitis. CRP may be normal in very early appendicitis (<6 hours).",
+          "purpose": "Assess severity of inflammation; combined with WBC increases diagnostic accuracy; component of AIR score",
+          "key_metric": "Normal: <5 mg/L; Appendicitis: typically >10 mg/L; Perforation: often >50-100 mg/L"
+        },
+        {
+          "test_name": "Serum Bilirubin",
+          "type": "Blood — Biochemical",
+          "description": "Hyperbilirubinemia (elevated bilirubin) has been identified as a marker of appendiceal perforation or gangrene. Bilirubin >1.0 mg/dL combined with WBC and CRP improves diagnostic accuracy for complicated appendicitis.",
+          "purpose": "Adjunct marker for complicated (gangrenous/perforated) appendicitis",
+          "key_metric": "Bilirubin >1.0 mg/dL in context of acute appendicitis symptoms may suggest perforation or gangrene"
+        },
+        {
+          "test_name": "Serum Lactate",
+          "type": "Blood — Metabolic",
+          "description": "Elevated serum lactate (>2 mmol/L) indicates tissue hypoperfusion or sepsis. Essential in patients with suspected perforated appendicitis and septic shock.",
+          "purpose": "Assess for sepsis and tissue hypoperfusion in complicated appendicitis; guides resuscitation",
+          "key_metric": "Normal: <2 mmol/L; Lactate >2 mmol/L: sepsis; >4 mmol/L: septic shock"
+        },
+        {
+          "test_name": "Urinalysis (Urine Dipstick and Microscopy)",
+          "type": "Urine",
+          "description": "Essential test in all patients with acute abdominal pain. Used to exclude urinary tract infection (UTI), kidney stones (hematuria), and ureteric colic (which can mimic appendicitis). Note: mild pyuria or hematuria (5-10 WBCs/hpf) can occur with appendicitis from ureteral proximity — does NOT exclude appendicitis.",
+          "purpose": "Exclude UTI, renal colic, and other urinary causes of RLQ pain",
+          "key_metric": "Significant pyuria (>20 WBCs/hpf) or positive nitrites suggests UTI; microscopic hematuria alone does not exclude appendicitis"
+        },
+        {
+          "test_name": "Urine or Serum Beta-hCG (Pregnancy Test)",
+          "type": "Urine / Blood",
+          "description": "MANDATORY in all women of childbearing age (12-50 years) presenting with acute abdominal pain. Ectopic pregnancy (ruptured or unruptured) is a life-threatening emergency that can exactly mimic appendicitis. Serum beta-hCG is more sensitive than urine hCG for early pregnancy.",
+          "purpose": "Exclude ectopic pregnancy — surgical emergency; changes management completely",
+          "key_metric": "Any positive beta-hCG in a woman with acute abdominal pain requires urgent gynecological assessment and pelvic ultrasound to exclude ectopic pregnancy"
+        },
+        {
+          "test_name": "Abdominal Ultrasound (US)",
+          "type": "Imaging",
+          "description": "First-line imaging for suspected appendicitis, especially in children, pregnant women, and young women (to assess ovaries). A non-compressible appendix >6mm in diameter with periappendiceal free fluid confirms appendicitis. Sensitivity limited by bowel gas, obesity, and operator experience.",
+          "purpose": "First-line imaging; avoids radiation; assess ovaries in women; confirm diagnosis in straightforward cases",
+          "key_metric": "Appendiceal diameter >6mm (non-compressible) = appendicitis; target sign (concentric rings) on cross-section; free fluid in RLQ",
+          "limitations": "Sensitivity 75-90% (operator-dependent); cannot visualize appendix in 20-30% of adults; reduced by obesity and bowel gas"
+        },
+        {
+          "test_name": "CT Scan Abdomen and Pelvis with IV Contrast",
+          "type": "Imaging",
+          "description": "Gold standard imaging for appendicitis in adults. Highest sensitivity and specificity. Clearly shows appendiceal inflammation, diameter, fecaliths, perforation, abscess, free air, and alternative diagnoses. Identifies complications (peritonitis extent) and guides surgical planning.",
+          "purpose": "Gold standard diagnosis; identifies complications; guides management; reveals alternative diagnoses",
+          "key_metric": "Appendiceal diameter >7mm; periappendiceal fat stranding; appendicolith; free air = perforation; periappendiceal fluid/abscess",
+          "sensitivity": ">95% sensitivity and specificity",
+          "radiation": "Uses ionising radiation — consider alternatives in young women and children; CT graded low risk"
+        },
+        {
+          "test_name": "MRI Abdomen and Pelvis",
+          "type": "Imaging",
+          "description": "Preferred imaging in pregnant women (avoids fetal radiation), children, and young women when ultrasound is inconclusive. Excellent soft tissue contrast. No ionising radiation. Shows appendiceal inflammation and surrounding structures.",
+          "purpose": "Preferred in pregnancy (no radiation); children; young women; when CT inconclusive or contraindicated",
+          "key_metric": "T2-bright appendix >7mm; periappendiceal edema and fluid; MRI sensitivity ~95% for appendicitis",
+          "limitation": "Less available than CT; longer scan time; difficult in agitated or uncooperative patients"
+        },
+        {
+          "test_name": "Plain Abdominal X-Ray (Erect and Supine AXR)",
+          "type": "Imaging",
+          "description": "Limited diagnostic value for appendicitis alone. Used to exclude bowel obstruction (dilated loops, air-fluid levels), perforation (free gas under diaphragm on erect CXR/AXR), and foreign bodies. A calcified fecalith in the RLQ (5-15% of cases) is suggestive of appendicitis.",
+          "purpose": "Exclude free air (perforation), bowel obstruction; detect calcified appendicolith (minority of cases)",
+          "key_metric": "Free air under diaphragm on erect CXR = perforation (surgical emergency); calcified RLQ shadow = possible appendicolith",
+          "note": "Normal AXR does NOT exclude appendicitis; CT or US required for confirmation"
+        },
+        {
+          "test_name": "Diagnostic Laparoscopy",
+          "type": "Surgical — Diagnostic and Therapeutic",
+          "description": "When clinical diagnosis remains uncertain after imaging, diagnostic laparoscopy allows direct visualization of the appendix and pelvic organs. In women of childbearing age, laparoscopy is particularly valuable to assess for ovarian pathology, PID, and ectopic pregnancy simultaneously. Can proceed to therapeutic appendectomy immediately.",
+          "purpose": "Definitive diagnosis when clinical and imaging evaluation inconclusive; particularly in women; simultaneous diagnosis and treatment",
+          "advantage": "Converts to therapeutic appendectomy immediately; assesses pelvic organs; negative exploration rate reduced to <5%"
+        },
+        {
+          "test_name": "Electrolytes, Renal Function, LFTs, and Clotting Studies",
+          "type": "Blood — Biochemical",
+          "description": "Pre-operative workup for all patients undergoing appendectomy. Electrolytes assess dehydration (hyponatremia, hypokalemia) and guide IV fluid management. Renal function for dose adjustment. LFTs detect liver pathology (biliary causes). Clotting for surgical risk assessment.",
+          "purpose": "Pre-operative assessment; guide fluid resuscitation; exclude alternative diagnoses (biliary colic, pancreatitis)",
+          "key_metric": "Amylase/lipase elevation excludes pancreatitis; LFT elevation suggests biliary pathology"
+        }
+      ]
+    },
+ 
+    "medicines": {
+      "note": "Appendicitis is primarily a surgical condition — appendectomy is the definitive treatment. Medications are used for pain control, antibiotic prophylaxis/treatment, symptom management, and non-operative management in selected cases. All medications must be prescribed by a licensed physician or surgeon. Self-medication of abdominal pain is dangerous — it may mask symptoms and delay diagnosis.",
+      "categories": [
+        {
+          "category_id": "MED-CAT-41",
+          "category_name": "Pre-operative and Perioperative IV Antibiotics",
+          "purpose": "Single prophylactic dose given 30-60 minutes before appendectomy incision for uncomplicated appendicitis. Therapeutic (multi-dose) course for complicated (gangrenous/perforated) appendicitis continuing post-operatively.",
+          "note": "Choice of antibiotics covers gram-negative enteric organisms (E. coli, Klebsiella) and anaerobes (Bacteroides fragilis) — the predominant organisms in appendicitis.",
+          "medicines": [
+            {
+              "name": "Cefazolin + Metronidazole",
+              "brand_examples": ["Ancef (cefazolin)", "Flagyl / Metrogyl (metronidazole)"],
+              "form": "IV Injection",
+              "dosage": "Cefazolin: 1-2g IV single prophylactic dose (30-60 min pre-op); Metronidazole: 500mg IV (or 1g suppository pre-op); For complicated: continue every 8 hours for 3-5 days",
+              "use_case": "Standard prophylactic combination for uncomplicated appendicitis; post-op coverage for uncomplicated",
+              "mechanism": "Cefazolin: 1st generation cephalosporin — covers gram-positive and gram-negative aerobes; Metronidazole: nitroimidazole — covers anaerobes (Bacteroides fragilis)",
+              "side_effects": ["Cefazolin: hypersensitivity (if penicillin allergy — use gentamicin instead)", "Metronidazole: metallic taste, nausea, headache, peripheral neuropathy (prolonged use)", "Disulfiram-like reaction with alcohol (metronidazole)"]
+            },
+            {
+              "name": "Ceftriaxone + Metronidazole",
+              "brand_examples": ["Rocephin (ceftriaxone)", "Flagyl (metronidazole)"],
+              "form": "IV Injection",
+              "dosage": "Ceftriaxone: 1-2g IV once daily; Metronidazole: 500mg IV every 8 hours or 1g every 12 hours",
+              "use_case": "Prophylaxis and treatment for complicated appendicitis; once-daily ceftriaxone simplifies dosing; widely used regimen globally",
+              "mechanism": "Ceftriaxone: 3rd generation cephalosporin — excellent gram-negative coverage",
+              "side_effects": ["Hypersensitivity", "Biliary sludge with prolonged use (ceftriaxone)", "C. difficile colitis (any antibiotic)"]
+            },
+            {
+              "name": "Piperacillin-Tazobactam (Pip-Tazo)",
+              "brand_examples": ["Tazobactam", "Zosyn", "Tazocin", "Piptaz"],
+              "form": "IV Infusion",
+              "dosage": "4.5g (4g piperacillin + 0.5g tazobactam) IV every 8 hours (extended infusion over 4 hours preferred for serious infections)",
+              "use_case": "First-line for perforated appendicitis with generalized peritonitis; covers gram-positive, gram-negative (including Pseudomonas), and anaerobes; broad spectrum",
+              "mechanism": "Ureidopenicillin + beta-lactamase inhibitor — broadest beta-lactam coverage; Pseudomonas active",
+              "side_effects": ["Hypersensitivity (penicillin class)", "Hypokalemia", "C. difficile colitis", "Elevated liver enzymes"]
+            },
+            {
+              "name": "Imipenem-Cilastatin (Imipenem)",
+              "brand_examples": ["Tienam", "Primaxin"],
+              "form": "IV Infusion",
+              "dosage": "500mg IV every 6 hours or 1g every 8 hours",
+              "use_case": "Severe perforated appendicitis with generalized sepsis/peritonitis; resistant organisms; hospital-acquired infections; second-line carbapenem",
+              "mechanism": "Carbapenem — ultra-broad spectrum including resistant gram-negatives and anaerobes",
+              "side_effects": ["Nausea", "Seizures (at high doses or renal impairment)", "Hypersensitivity"]
+            },
+            {
+              "name": "Gentamicin + Metronidazole + Amoxicillin",
+              "brand_examples": ["Garamycin (gentamicin)"],
+              "form": "IV Injection",
+              "dosage": "Gentamicin: 5-7 mg/kg IV once daily (weight-based); Metronidazole: 500 mg every 8h; Amoxicillin: 500mg-1g every 8h",
+              "use_case": "Alternative for penicillin-allergic patients; triple antibiotic therapy providing full peritoneal coverage",
+              "side_effects": ["Nephrotoxicity (gentamicin — monitor renal function, avoid in renal impairment)", "Ototoxicity (hearing loss with prolonged gentamicin)", "Serum gentamicin levels monitoring required"],
+              "monitoring": "Serum gentamicin trough levels; daily renal function; avoid with other nephrotoxins"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-42",
+          "category_name": "Oral Antibiotics for Non-Operative Management and Step-Down Therapy",
+          "purpose": "Non-operative (antibiotic-only) management of uncomplicated appendicitis has emerged as a safe option for carefully selected patients. Also used as oral step-down after IV antibiotics for complicated appendicitis hospital discharge.",
+          "note": "Non-operative management is an option for uncomplicated appendicitis (no fecalith, no perforation, no gangrene on CT) in adults. Success rate ~70-80% at 1 year; 20-30% require appendectomy within 1 year. Requires informed patient consent.",
+          "medicines": [
+            {
+              "name": "Amoxicillin-Clavulanate (Co-Amoxiclav)",
+              "brand_examples": ["Augmentin", "Amoxyclav", "Clavam"],
+              "form": "Tablet, IV Injection",
+              "dosage": "875mg/125mg twice daily orally for 7-10 days (non-operative management step-down); 1.2g IV every 8 hours (hospitalized)",
+              "use_case": "Oral non-operative management of uncomplicated appendicitis; step-down from IV antibiotics after complicated appendicitis",
+              "mechanism": "Aminopenicillin + beta-lactamase inhibitor — covers gram-positives, gram-negatives, and anaerobes",
+              "side_effects": ["GI upset and diarrhea (most common — take with food)", "Liver dysfunction (cholestatic jaundice — more with co-amoxiclav than amoxicillin alone)", "Skin rash", "C. difficile colitis"]
+            },
+            {
+              "name": "Ciprofloxacin + Metronidazole",
+              "brand_examples": ["Ciprobay / Ciplox (ciprofloxacin)", "Flagyl (metronidazole)"],
+              "form": "Tablet",
+              "dosage": "Ciprofloxacin: 500mg twice daily; Metronidazole: 400-500mg three times daily; for 7-10 days",
+              "use_case": "Non-operative management of uncomplicated appendicitis; penicillin allergy; oral step-down after IV therapy",
+              "side_effects": ["Ciprofloxacin: tendinopathy/tendon rupture (avoid in elderly, on steroids)", "Photosensitivity", "QT prolongation", "Metronidazole: metallic taste, nausea"],
+              "warning": "Ciprofloxacin — avoid in children and adolescents under 18 (cartilage effects); avoid in pregnant women; FDA black box warning for serious musculoskeletal and CNS adverse effects"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-43",
+          "category_name": "Analgesics — Pain Management",
+          "purpose": "Adequate pain relief is ESSENTIAL and does NOT mask the diagnosis — evidence-based studies confirm that opioid analgesia in suspected appendicitis does not impair diagnostic accuracy and significantly improves patient comfort. Withholding analgesics is unnecessary and cruel.",
+          "note": "American College of Emergency Physicians (ACEP) and ACEP guidelines recommend early analgesia in acute abdominal pain.",
+          "medicines": [
+            {
+              "name": "Morphine Sulfate",
+              "brand_examples": ["Morphine Sulfate", "Oramorph"],
+              "form": "IV Injection, Oral",
+              "dosage": "0.05-0.1 mg/kg IV every 4-6 hours titrated to pain; typical adult: 2-5 mg IV every 4-6 hours; PCA (patient-controlled analgesia) post-op",
+              "use_case": "Gold standard opioid analgesic for acute severe abdominal pain in suspected/confirmed appendicitis; post-operative pain management",
+              "side_effects": ["Nausea and vomiting (give antiemetic)", "Respiratory depression (oversedation monitoring essential)", "Constipation", "Pruritus", "Urinary retention", "Hypotension"],
+              "monitoring": "Respiratory rate, oxygen saturation, sedation score; naloxone available as reversal agent"
+            },
+            {
+              "name": "Paracetamol / Acetaminophen (IV)",
+              "brand_examples": ["Perfalgan (IV)", "Paracetamol IV"],
+              "form": "IV Infusion, Oral",
+              "dosage": "1000mg IV every 6 hours (adults ≥50kg); 15 mg/kg IV every 6 hours (children); oral 1g every 6h if tolerated",
+              "use_case": "First-line non-opioid analgesic; multimodal analgesia; reduces opioid requirements post-operatively; safe in all ages",
+              "side_effects": ["Minimal at therapeutic doses; hepatotoxicity with overdose"],
+              "note": "Part of multimodal analgesia protocol — scheduled paracetamol reduces opioid requirements by 20-30%"
+            },
+            {
+              "name": "Ketorolac (IV NSAID)",
+              "brand_examples": ["Toradol", "Ketorol"],
+              "form": "IV / IM Injection",
+              "dosage": "15-30 mg IV/IM every 6 hours; maximum 120 mg/day; limit to 5 days",
+              "use_case": "Potent IV NSAID for acute surgical pain; reduces post-operative opioid requirement; anti-inflammatory",
+              "side_effects": ["GI bleeding risk (short-term use)", "Renal impairment", "Platelet inhibition (avoid >5 days; avoid peri-operatively if bleeding risk)"],
+              "contraindications": ["Renal impairment", "Active peptic ulcer", "Coagulopathy", "Pre-operatively (bleeding risk)"]
+            },
+            {
+              "name": "Fentanyl",
+              "brand_examples": ["Sublimaze", "Fentanyl"],
+              "form": "IV Injection",
+              "dosage": "0.5-1 mcg/kg IV slow push (titrate); typical adult: 25-100 mcg IV",
+              "use_case": "Short-acting opioid for acute pain in ED; useful in hemodynamically unstable patients; rapid onset",
+              "side_effects": ["Respiratory depression", "Chest wall rigidity (high doses)", "Nausea"],
+              "note": "Preferred over morphine in hemodynamic instability (less hypotensive effect)"
+            },
+            {
+              "name": "Tramadol",
+              "brand_examples": ["Tramasure", "Ultram"],
+              "form": "IV Injection, Tablet",
+              "dosage": "50-100 mg slow IV or IM every 6-8 hours; max 400 mg/day",
+              "use_case": "Moderate post-operative pain; step-down from IV morphine; useful when opioid side effects problematic",
+              "side_effects": ["Nausea and vomiting (common)", "Dizziness", "Seizures (risk in epilepsy)", "Serotonin syndrome (with other serotonergic drugs)"]
+            },
+            {
+              "name": "Diclofenac Suppository / Tablet",
+              "brand_examples": ["Voveran SR", "Voltaren"],
+              "form": "Rectal suppository, Tablet",
+              "dosage": "50-100mg rectal suppository every 12-18 hours (post-operative); 50mg oral three times daily",
+              "use_case": "Post-operative analgesia when oral route established; anti-inflammatory reducing post-surgical swelling",
+              "side_effects": ["GI irritation (oral)", "Renal impairment", "Rectal irritation (suppository)"],
+              "note": "Suppository useful when patient is nauseated and cannot tolerate oral medications"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-44",
+          "category_name": "Antiemetics",
+          "purpose": "Control nausea and vomiting — common in appendicitis and post-operatively from general anaesthesia.",
+          "medicines": [
+            {
+              "name": "Ondansetron",
+              "brand_examples": ["Zofran", "Emeset", "Ondanset"],
+              "form": "IV Injection, Oral tablet, Oral dissolving tablet",
+              "dosage": "4-8mg IV/orally every 8-12 hours; single 8mg IV dose for PONV (post-op nausea and vomiting)",
+              "use_case": "First-line antiemetic for acute appendicitis nausea; post-operative nausea and vomiting (PONV) prevention and treatment",
+              "mechanism": "Selective 5-HT3 (serotonin) receptor antagonist; blocks nausea signals in CTZ and peripherally",
+              "side_effects": ["Headache", "Constipation", "QT prolongation (high doses)", "Serotonin syndrome (rare)"]
+            },
+            {
+              "name": "Metoclopramide",
+              "brand_examples": ["Maxolon", "Reglan", "Perinorm"],
+              "form": "IV Injection, Tablet, Syrup",
+              "dosage": "10mg IV/IM/orally every 8 hours",
+              "use_case": "Antiemetic and prokinetic; enhances gastric emptying; useful pre-operatively and post-operatively",
+              "side_effects": ["Extrapyramidal effects (acute dystonia — especially in young patients; treat with procyclidine)", "Tardive dyskinesia (prolonged use)", "Drowsiness"]
+            },
+            {
+              "name": "Promethazine",
+              "brand_examples": ["Phenergan"],
+              "form": "IV Injection, Tablet, Syrup",
+              "dosage": "25mg IM/IV slowly every 6-8 hours; 10-25mg orally",
+              "use_case": "Antiemetic and antihistamine; useful when ondansetron unavailable",
+              "side_effects": ["Sedation", "Extrapyramidal reactions", "Anticholinergic effects (dry mouth, urinary retention)", "Avoid IV bolus — tissue necrosis risk if extravasated"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-45",
+          "category_name": "IV Fluid Resuscitation",
+          "purpose": "Patients with appendicitis — especially perforated — are dehydrated from reduced oral intake, vomiting, fever, and peritoneal fluid losses. IV fluid resuscitation is essential pre-operatively and peri-operatively.",
+          "medicines": [
+            {
+              "name": "Normal Saline (0.9% NaCl) / Hartmann's Solution (Lactated Ringer's)",
+              "brand_examples": ["Normal Saline", "Hartmann's", "Ringer's Lactate"],
+              "form": "IV Infusion",
+              "dosage": "1-2L IV bolus over 30-60 minutes for initial resuscitation of dehydrated/septic patient; then maintenance 1-2 mL/kg/hour; goal-directed: target MAP >65 mmHg, urine output >0.5 mL/kg/hour",
+              "use_case": "IV fluid resuscitation for dehydration, pre-operative preparation, and sepsis management in perforated appendicitis",
+              "side_effects": ["Fluid overload (hypervolemia) with excessive administration", "Hyperchloremic acidosis (large volume normal saline — Hartmann's preferred to avoid this)"],
+              "note": "Hartmann's (lactated Ringer's) is the preferred balanced crystalloid for surgical patients — less acidosis than normal saline"
+            },
+            {
+              "name": "5% Dextrose (D5W) / Dextrose-Saline",
+              "brand_examples": ["Dextrose 5%", "DNS — Dextrose Normal Saline"],
+              "form": "IV Infusion",
+              "dosage": "Post-operatively when oral intake restricted; maintenance 1.5-2 mL/kg/hour; add potassium if ileus",
+              "use_case": "Post-operative maintenance fluid when patient NPO (nil per oral); provides calories and hydration",
+              "side_effects": ["Hyponatremia (with 5% dextrose — avoid as resuscitation fluid)", "Hyperglycemia in diabetic patients"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-46",
+          "category_name": "Surgical Treatment — Appendectomy",
+          "purpose": "Appendectomy (surgical removal of the appendix) is the definitive and standard treatment for acute appendicitis. Available as laparoscopic (minimally invasive, preferred) or open technique.",
+          "note": "Appendectomy is the most commonly performed emergency abdominal surgery worldwide. All surgeries require general anaesthesia.",
+          "medicines": [
+            {
+              "name": "Laparoscopic Appendectomy",
+              "form": "Minimally invasive surgical procedure",
+              "description": "Three small incisions (5-12mm ports) allow camera and instruments entry. Appendix visualized, mesoappendix ligated, appendix stapled/ligated and removed. Benefits: less pain, faster recovery, shorter hospital stay, better cosmesis, lower wound infection rate, ability to inspect entire abdomen.",
+              "technique": "3 ports: umbilical (camera, 10-12mm), suprapubic (5mm), RLQ or LLQ (5mm); appendix stapled with endostapler and retrieved via umbilical port",
+              "advantages": ["Preferred over open for all patient types", "Hospital stay 1-2 days", "Return to work 1-2 weeks", "Lower wound infection rate", "Better cosmetic outcome"],
+              "contraindications_relative": ["Extensive adhesions from previous surgery", "Severe peritonitis where laparotomy gives better access", "Hemodynamic instability"]
+            },
+            {
+              "name": "Open Appendectomy",
+              "form": "Open surgical procedure",
+              "description": "Gridiron (McBurney's) or Lanz incision in RLQ over McBurney's point. Appendix identified, mesoappendix ligated, appendix removed, stump ligated or buried. Used when laparoscopy not available or when conversion from laparoscopy necessary.",
+              "technique": "RLQ incision (Gridiron incision — muscle-splitting through McBurney's point, or Lanz — transverse skin crease incision); identifies cecum → follows to appendix; appendix removed; peritoneal washout for perforation",
+              "use_case": "When laparoscopic equipment unavailable; conversion from failed laparoscopic; perforation with extensive soiling; pregnancy (some surgeons prefer open); hemodynamic instability",
+              "advantages": ["No special equipment needed", "Familiar technique for all surgeons", "Allows thorough peritoneal washout in generalized peritonitis"]
+            },
+            {
+              "name": "Image-Guided Percutaneous Drainage",
+              "form": "Interventional radiology procedure",
+              "description": "Ultrasound or CT-guided insertion of a drainage catheter into a periappendiceal abscess. Evacuates pus, allows IV antibiotics to work, avoids emergency surgery in a sick patient. Followed by interval appendectomy 6-8 weeks later.",
+              "use_case": "Appendiceal abscess or phlegmon with well-defined collection; patient too unwell for emergency surgery; bridge to interval appendectomy",
+              "advantages": ["Avoids emergency surgery in complicated cases", "Allows patient optimization before interval operation"],
+              "note": "Requires experienced interventional radiology team; may not be available at all centers"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-47",
+          "category_name": "Post-operative Medications and Wound Care",
+          "purpose": "Medications and care protocols to optimize post-operative recovery, prevent complications, and promote wound healing.",
+          "medicines": [
+            {
+              "name": "Prophylactic Low-Molecular-Weight Heparin (LMWH)",
+              "brand_examples": ["Enoxaparin (Clexane)", "Dalteparin (Fragmin)"],
+              "form": "Subcutaneous Injection",
+              "dosage": "Enoxaparin: 40mg SC once daily (prophylaxis); start 6-12 hours post-operatively; continue until mobile",
+              "use_case": "Post-operative DVT and pulmonary embolism prophylaxis; abdominal surgery increases VTE risk significantly",
+              "side_effects": ["Bleeding", "Injection site bruising", "Heparin-induced thrombocytopenia (rare)"]
+            },
+            {
+              "name": "Proton Pump Inhibitor (Omeprazole / Pantoprazole)",
+              "brand_examples": ["Omez", "Pantop", "Prevacid"],
+              "form": "IV / Oral",
+              "dosage": "40mg IV/orally once or twice daily",
+              "use_case": "Stress ulcer prophylaxis in critically ill perforated appendicitis patients; gastric protection during NSAID use",
+              "side_effects": ["Headache", "Diarrhea", "Hypomagnesemia (prolonged use)", "C. difficile risk (prolonged PPI)"]
+            },
+            {
+              "name": "Stool Softeners / Laxatives",
+              "brand_examples": ["Lactulose", "Bisacodyl", "Ispaghula husk (Isabgol)", "Sodium docusate"],
+              "form": "Oral Syrup, Tablet",
+              "dosage": "Lactulose: 15-30mL twice daily; Bisacodyl: 5-10mg orally at night",
+              "use_case": "Post-operative constipation — common from opioids, reduced mobility, dietary changes; prevent straining at stool (reduces wound dehiscence risk)",
+              "side_effects": ["Lactulose: bloating, flatulence (common)", "Bisacodyl: abdominal cramps"]
+            }
+          ]
+        }
+      ]
+    },
+ 
+    "diet_and_nutrition": {
+      "overview": "Dietary management in appendicitis follows three distinct phases: (1) Pre-operative phase — NPO (nothing by mouth) until surgery; (2) Immediate post-operative phase (24-72 hours) — graduated return to oral intake; (3) Long-term recovery phase — nutritious, high-fibre diet to support healing and promote bowel health. There is no specific diet that prevents appendicitis, but a high-fibre diet is associated with lower risk of fecalith formation and appendicitis.",
+      "phase_1_pre_operative": {
+        "instruction": "NPO (Nil Per Os — Nothing By Mouth)",
+        "details": "Once appendicitis is suspected or confirmed, patient must not eat or drink anything orally until after surgery. IV fluids are administered to maintain hydration. Even water by mouth is withheld to ensure empty stomach for safe general anaesthesia (aspiration prevention — Mendelson's syndrome).",
+        "duration": "From time of diagnosis until at least 2-4 hours post-operatively or until bowel sounds return"
+      },
+      "phase_2_immediate_post_operative": {
+        "step_1": {
+          "timing": "Hours 4-12 post-surgery (uncomplicated)",
+          "foods": ["Sips of water when fully awake and gag reflex returned", "Small amounts of cold water", "Ice chips if nauseated"],
+          "instructions": "Start with 30-60 mL water every 30 minutes; advance if no vomiting; listen for returning bowel sounds"
+        },
+        "step_2": {
+          "timing": "Day 1 post-surgery",
+          "foods": ["Clear liquids: water, weak tea, clear broth, apple juice (no pulp)", "Jello / gelatin desserts", "Oral rehydration solutions if dehydrated"],
+          "instructions": "Take small sips; stop and rest if nausea occurs; avoid carbonated drinks (gas causes discomfort in laparoscopic patients from CO2 insufflation)"
+        },
+        "step_3": {
+          "timing": "Day 2 post-surgery",
+          "foods": ["Full liquid diet: soups (strained), yogurt, ice cream (limited), smoothies", "Milk, milkshakes, fruit juices (diluted)"],
+          "instructions": "Advance if tolerating clear liquids; continue only if no nausea, vomiting, or abdominal distension"
+        },
+        "step_4": {
+          "timing": "Day 3-5 post-surgery",
+          "foods": ["Soft diet: boiled rice, khichdi (rice and lentil porridge), oatmeal, scrambled eggs, mashed potatoes, steamed fish", "Toast or plain crackers", "Soft cooked vegetables (without skin)", "Banana, apple puree"],
+          "instructions": "Avoid fibrous, raw, spicy, or fried foods until surgical site is healed; small frequent meals"
+        }
+      },
+      "recommended_foods": [
+        {
+          "category": "High-Fibre Foods (Long-term recovery and prevention of future GI issues)",
+          "items": [
+            {
+              "food": "Whole grains: Brown rice, Oats, Whole wheat bread, Quinoa, Barley",
+              "benefit": "Dietary fibre reduces fecalith formation and constipation — primary cause of appendiceal obstruction. High-fibre diet associated with lower appendicitis incidence in epidemiological studies. Supports healthy bowel flora and gut motility.",
+              "frequency": "Daily once recovery complete (week 3 onwards)"
+            },
+            {
+              "food": "Fruits with skin: Apples, Pears, Berries, Guava, Papaya",
+              "benefit": "Soluble and insoluble fibre; antioxidants support wound healing; Vitamin C promotes collagen synthesis for scar formation; natural anti-inflammatory",
+              "frequency": "2-3 servings daily from week 2 onwards"
+            },
+            {
+              "food": "Vegetables: Broccoli, Carrots, Spinach, Sweet potatoes, Beetroot",
+              "benefit": "Fibre, vitamins, antioxidants; support gut microbiome recovery after antibiotics; Vitamin A and C for wound healing",
+              "frequency": "Daily; well-cooked initially (week 1-2); raw from week 3+"
+            },
+            {
+              "food": "Legumes: Lentils, Chickpeas, Dal, Kidney beans",
+              "benefit": "High fibre (5-8g per serving); plant protein for tissue repair; prebiotic effect supports gut bacteria recovery after perioperative antibiotics",
+              "frequency": "3-4 times per week from week 2"
+            }
+          ]
+        },
+        {
+          "category": "Protein-Rich Foods (Wound Healing and Recovery)",
+          "items": [
+            {
+              "food": "Eggs (boiled or scrambled)",
+              "benefit": "Complete protein — all essential amino acids for tissue repair and immune recovery; easily digestible; Vitamin D, B12, and zinc support wound healing",
+              "frequency": "Daily — 1-2 eggs; from day 3 post-surgery"
+            },
+            {
+              "food": "Chicken broth and lean boiled chicken",
+              "benefit": "Easily digestible protein; collagen from bone broth supports gut mucosal healing; electrolytes from broth replace losses from fever and vomiting; glycine supports liver detoxification post-anaesthesia",
+              "frequency": "Daily in recovery phase"
+            },
+            {
+              "food": "Fish (steamed or boiled): Salmon, Tuna, Pomfret, Rohu",
+              "benefit": "Lean high-quality protein; omega-3 anti-inflammatory fatty acids promote wound healing and reduce surgical inflammation; Vitamin D",
+              "frequency": "3-4 times per week from week 2"
+            },
+            {
+              "food": "Low-fat dairy: Yogurt, Curd, Paneer, Skimmed milk",
+              "benefit": "Protein for tissue repair; calcium for bone health; yogurt — probiotics essential to restore gut microbiome after broad-spectrum antibiotic therapy (reduces antibiotic-associated diarrhea, C. difficile risk)",
+              "frequency": "Daily; yogurt especially important during and after antibiotic course"
+            },
+            {
+              "food": "Lentil soup (Dal), Moong dal khichdi",
+              "benefit": "Excellent post-surgical recovery food in Indian context: easy to digest, protein-rich, warm, hydrating, gut-soothing, anti-inflammatory spices (turmeric, cumin)",
+              "frequency": "Daily in first 2 weeks of recovery"
+            }
+          ]
+        },
+        {
+          "category": "Probiotics and Gut Recovery Foods",
+          "items": [
+            {
+              "food": "Plain yogurt / Curd with live cultures",
+              "benefit": "CRITICAL after antibiotic therapy: restores Lactobacillus and Bifidobacterium gut flora disrupted by perioperative broad-spectrum antibiotics; prevents antibiotic-associated diarrhea and Clostridioides difficile colitis; improves gut barrier function",
+              "frequency": "Daily during antibiotic course and 2-4 weeks after completion"
+            },
+            {
+              "food": "Kefir",
+              "benefit": "Multiple Lactobacillus and Bifidobacterium strains; supports gut mucosal healing post-surgery; anti-inflammatory",
+              "frequency": "Daily if available"
+            },
+            {
+              "food": "Fermented foods: Idli, Dosa (fermented rice/dal), Kanji (rice water)",
+              "benefit": "Natural probiotics from fermentation; easily digestible; traditional Indian foods with gut-healing properties; light on surgical digestive system",
+              "frequency": "Regular from week 2 onwards"
+            }
+          ]
+        },
+        {
+          "category": "Hydration (Critical for Recovery)",
+          "items": [
+            {
+              "food": "Water",
+              "benefit": "Adequate hydration prevents constipation (reduces fecalith formation); supports kidney function (especially important while on antibiotics); prevents dehydration from fever-related losses; promotes wound healing",
+              "frequency": "8-10 glasses (2-2.5 liters) daily from day 1 post-surgery"
+            },
+            {
+              "food": "Oral Rehydration Solution (ORS), Coconut water",
+              "benefit": "Electrolyte replacement (sodium, potassium, glucose) for patients dehydrated from vomiting and reduced intake pre-surgery",
+              "frequency": "As needed in first 48-72 hours"
+            },
+            {
+              "food": "Warm herbal teas: Ginger tea, Chamomile, Peppermint",
+              "benefit": "Ginger: anti-nausea, anti-inflammatory; Chamomile: calms gut spasms; Peppermint: relieves abdominal gas and bloating (common post-laparoscopy from CO2 gas)",
+              "frequency": "1-3 cups daily post-surgery for nausea and gas relief"
+            },
+            {
+              "food": "Clear vegetable or chicken broth",
+              "benefit": "Hydration, electrolytes, trace minerals; easily absorbed; provides warmth and comfort; traditional recovery food",
+              "frequency": "Multiple times daily in first 3-5 days post-surgery"
+            }
+          ]
+        },
+        {
+          "category": "Vitamins and Minerals for Wound Healing",
+          "items": [
+            {
+              "food": "Vitamin C-rich foods: Amla, Oranges, Guava, Lemon, Bell peppers",
+              "benefit": "Essential for collagen synthesis — the primary protein of wound healing and scar formation; antioxidant reduces surgical oxidative stress; supports immune function post-surgery",
+              "frequency": "Daily — 2-3 servings from week 1"
+            },
+            {
+              "food": "Zinc-rich foods: Pumpkin seeds, Chickpeas, Lentils, Lean meat",
+              "benefit": "Zinc is essential for wound healing (cell proliferation, protein synthesis, immune function); deficiency impairs healing and increases infection risk",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Vitamin A-rich foods: Sweet potato, Carrots, Spinach, Pumpkin",
+              "benefit": "Vitamin A supports epithelial cell regeneration and mucosal healing; important for gut mucosal recovery after peritonitis",
+              "frequency": "Daily"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Spicy foods",
+          "reason": "Irritate healing GI tract; increase gut motility causing discomfort at surgical site; may trigger nausea post-operatively; avoid for at least 2-4 weeks post-surgery",
+          "examples": ["Chili peppers", "Hot sauces", "Spicy curries", "Pickles", "Chilli-based condiments"],
+          "duration": "Avoid for 2-4 weeks post-operatively; reintroduce gradually"
+        },
+        {
+          "food": "Fried and fatty foods",
+          "reason": "High-fat foods are difficult to digest post-surgery as bile secretion and gut motility are temporarily impaired; delay GI recovery; cause nausea, bloating, and diarrhea",
+          "examples": ["Fried chicken", "Samosas, pakoras, bhajias", "Chips and crisps", "Full-fat cheese", "Butter and ghee in excess"],
+          "duration": "Avoid first 2-4 weeks; reintroduce gradually"
+        },
+        {
+          "food": "Carbonated beverages",
+          "reason": "After laparoscopic appendectomy, residual CO2 gas from pneumoperitoneum causes shoulder tip pain and abdominal distension. Carbonated drinks add to this gas discomfort significantly. Bloating and distension worsen post-operative discomfort.",
+          "examples": ["Sodas and fizzy drinks", "Sparkling water", "Beer", "Fizzy fruit drinks"],
+          "duration": "Avoid for at least 1-2 weeks post-laparoscopy"
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Alcohol delays wound healing (impairs collagen synthesis), suppresses immune function (increases infection risk), interacts with post-operative analgesics and antibiotics (severe reaction with metronidazole — causes flushing, vomiting, hypotension), and stresses the liver recovering from anaesthesia",
+          "examples": ["Beer", "Wine", "Spirits", "Any alcoholic beverage"],
+          "duration": "Avoid completely for at least 4-6 weeks post-surgery; completely contraindicated with metronidazole"
+        },
+        {
+          "food": "Raw vegetables and high-fibre foods (in the first 2 weeks)",
+          "reason": "In the immediate post-operative period, the gut needs time to recover normal motility. High-fibre raw vegetables and whole grains can be difficult to digest and may cause excessive gas, bloating, and diarrhea before bowel function normalizes.",
+          "examples": ["Raw salads", "Whole bran cereals", "Legumes in first week", "Cruciferous vegetables (cabbage, broccoli, cauliflower — gas-forming) in first week"],
+          "duration": "Avoid in first 7-10 days; reintroduce gradually from week 2"
+        },
+        {
+          "food": "Processed and junk food",
+          "reason": "Low nutritional value; contain preservatives and additives that may irritate healing gut; lack protein and micronutrients needed for wound healing; promote constipation; contraindicated in the recovery period",
+          "examples": ["Fast food", "Instant noodles", "Packaged snacks", "Processed meats", "Ready meals"]
+        },
+        {
+          "food": "Dairy in large amounts (if antibiotic-associated diarrhea develops)",
+          "reason": "Broad-spectrum antibiotics reduce lactase-producing gut bacteria; temporary lactose intolerance may develop during and after antibiotic course. Switch to yogurt (lactase-producing bacteria) or lactose-free dairy temporarily.",
+          "examples": ["Large volumes of milk", "Full-fat cheese", "Milkshakes"],
+          "nuance": "Plain yogurt is recommended (probiotics); small amounts of lactose-free dairy acceptable; avoid if diarrhea develops"
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This post-appendectomy recovery meal plan guides gradual dietary advancement. Progress depends on individual recovery — follow your surgeon's specific instructions. This plan assumes uncomplicated laparoscopic appendectomy.",
+        "day_0_to_1_post_op": "NPO (pre-op) → ice chips → sips of water → clear liquids (water, weak tea, clear broth) as tolerated",
+        "day_2_post_op": "Clear liquids: water, clear vegetable broth, strained apple juice, weak tea with honey + oral rehydration solution if dehydrated",
+        "day_3_post_op": "Full liquids: strained dal soup, rice water (kanji), yogurt, banana smoothie (diluted), warm ginger tea",
+        "day_4_to_5_post_op": "Soft diet: Moong dal khichdi (soft rice and lentil porridge) + steamed carrot + 1 boiled egg + 1 cup plain curd",
+        "week_2": "Light diet: Soft boiled rice with dal + steamed fish or boiled chicken + steamed vegetables + curd + fresh fruits (peeled) + 8 glasses water",
+        "week_3_to_4": "Normal diet gradually resumed: Whole grains (roti, brown rice) + cooked vegetables + protein (eggs, fish, chicken, legumes) + fresh fruits + probiotic yogurt + ensure adequate fibre (25-30g daily) to prevent constipation",
+        "long_term": "High-fibre Mediterranean-style diet: variety of fruits and vegetables, whole grains, legumes, lean proteins, olive oil, adequate hydration"
+      },
+      "special_dietary_notes": [
+        "Constipation is the most common post-operative dietary complication — adequate fibre (25-30g/day when fully recovered) and hydration (2-2.5L/day) are essential to prevent straining at stool (risks wound dehiscence)",
+        "Probiotics (yogurt, kefir) during and 4 weeks after antibiotic course significantly reduce risk of Clostridioides difficile colitis (antibiotic-associated diarrhea) — provide daily",
+        "Protein intake targets: 1.2-1.5 g/kg body weight daily for optimal wound healing; nutritional support important in malnourished patients",
+        "Vitamin C supplementation (500mg daily for 4-6 weeks) may support wound collagen synthesis, especially in patients with poor nutritional status pre-operatively",
+        "Zinc supplementation (15-25mg daily for 4-6 weeks) supports wound healing if dietary intake inadequate",
+        "Patients who underwent perforated appendicitis with prolonged ileus may require nasogastric tube feeding or parenteral nutrition (TPN) if unable to eat for >5-7 days — nutritional support specialist input essential",
+        "Resume normal diet gradually — every patient's recovery is different; pain, nausea, and bowel function guide dietary progression"
+      ]
+    },
+ 
+    "lifestyle_management": {
+      "post_operative_activity_guidelines": {
+        "laparoscopic_appendectomy": {
+          "hospital_stay": "1-2 days for uncomplicated; 3-7 days for complicated/perforated",
+          "day_1_to_3": "Rest; short walks around the ward/home every 1-2 hours to prevent DVT; no heavy lifting; avoid driving",
+          "week_1_to_2": "Light activities (walking, gentle household tasks); no lifting >5kg; no driving while on opioids; wound care (keep incisions dry for 48 hours, then gentle cleaning)",
+          "week_2_to_4": "Gradually increase activity; can return to desk/office work at 1-2 weeks if pain controlled; no strenuous activity or gym",
+          "week_4_to_6": "Resume most normal activities; gym and sports at 4-6 weeks with clearance from surgeon",
+          "return_to_work": "Sedentary jobs: 1-2 weeks; manual/physical jobs: 3-6 weeks"
+        },
+        "open_appendectomy": {
+          "hospital_stay": "2-4 days uncomplicated; 5-10 days for perforated with peritonitis",
+          "week_1_to_2": "Rest; short indoor walks; no lifting >2kg; wound care essential (larger wound)",
+          "week_2_to_4": "Gentle walking; gradual increase; avoid anything that strains abdominal muscles",
+          "week_4_to_8": "Progressive return to normal; gym and manual work at 6-8 weeks",
+          "return_to_work": "Sedentary: 2-4 weeks; manual: 6-8 weeks"
+        },
+        "perforated_appendicitis_with_peritonitis": {
+          "hospital_stay": "5-14 days; ICU if septic shock",
+          "recovery_timeline": "Full recovery 4-8 weeks; extended convalescence; physiotherapy may be required for deconditioning from prolonged illness"
+        }
+      },
+      "wound_care": [
+        "Keep surgical wounds clean and dry for 48 hours post-operation",
+        "After 48 hours: gently clean wounds with clean water and mild soap; pat dry gently",
+        "Check wounds daily for signs of infection: increasing redness, warmth, swelling, purulent discharge, or opening of wound edges",
+        "Keep wounds covered with sterile dressings until advised by surgeon to leave open to air",
+        "Avoid submerging wounds in baths, swimming pools, or sea water until fully healed (usually 2-3 weeks for laparoscopic; 3-4 weeks for open)",
+        "Showers acceptable from 48-72 hours if wound covered with waterproof dressing",
+        "Dissolvable sutures (absorbable) dissolve on their own (2-4 weeks); non-dissolvable clips or sutures removed at 7-10 days",
+        "Laparoscopic port site wounds heal faster; open wound (McBurney's) takes 3-6 weeks for full skin healing",
+        "Contact surgeon immediately if wound opens (dehiscence), significant bleeding, or increasing pain at wound site"
+      ],
+      "breathing_exercises": [
+        "Deep breathing exercises from day 1 post-operation — prevents post-operative atelectasis (lung collapse) and pneumonia",
+        "Incentive spirometry: breathe deeply and hold for 3-5 seconds; 10 repetitions every hour while awake in hospital",
+        "Supported coughing: hold pillow firmly against abdomen during coughing to reduce wound pain and support suture line",
+        "Early mobilization (walking) is the best respiratory prevention — promotes lung expansion"
+      ],
+      "dvt_prevention": [
+        "Wear graduated compression stockings (TED stockings) from surgery until fully mobile",
+        "Ankle pumping exercises in bed (dorsiflexion-plantarflexion) every 30 minutes when lying down",
+        "Get out of bed and walk as soon as pain allows — usually day 1 post-operation",
+        "IV heparin (LMWH) prophylaxis subcutaneously as prescribed",
+        "Report immediately: calf pain and swelling (DVT); sudden breathlessness and chest pain (pulmonary embolism)"
+      ],
+      "pain_management_at_home": [
+        "Take prescribed analgesics regularly for the first 48-72 hours — do not wait for pain to become severe",
+        "Multimodal analgesia: regular paracetamol (1g every 6 hours) + ibuprofen (400mg every 8 hours with food) usually adequate for laparoscopic appendectomy",
+        "Shoulder tip pain after laparoscopic surgery is normal — from residual CO2 gas irritating the diaphragm; resolves in 24-48 hours; peppermint tea and gentle walking help",
+        "Abdominal pain at wound sites normal for 1-2 weeks; severe worsening pain not controlled by analgesics — contact surgeon",
+        "Avoid lying flat for prolonged periods — semi-recumbent position (30-45 degrees) reduces abdominal muscle tension"
+      ],
+      "mental_health_and_recovery": [
+        "Anxiety about recovery and complications is common — discuss concerns with surgeon at follow-up",
+        "Most patients feel significantly better within 1-2 weeks of laparoscopic appendectomy",
+        "Post-operative fatigue is normal and expected — allow adequate rest and do not rush return to work or activities",
+        "Children may have school anxiety after hospitalization — gradual return with school support; explain need for wound protection in sports/PE",
+        "Psychological impact of emergency surgery should not be underestimated — some patients experience anxiety, nightmares, or PTSD after severe perforated appendicitis; psychological support available",
+        "Support from family and friends during recovery is important — accept help with household tasks during first 2 weeks"
+      ]
+    },
+ 
+    "appendicitis_monitoring_plan": {
+      "note": "Appendicitis monitoring has two phases: (1) Emergency monitoring — assessment in the ED/ward while awaiting surgery; (2) Post-operative monitoring — recovery tracking at home. If symptoms of appendicitis are suspected, immediate medical evaluation is mandatory.",
+      "green_zone": {
+        "status": "Post-operative Recovery — Progressing Well",
+        "criteria": "Pain reducing daily (2-3/10 at rest, controlled with oral analgesics); bowel sounds present; passing flatus; tolerating oral liquids/soft diet; afebrile or low-grade fever only in first 24-48 hours post-op; wound healing with no signs of infection; normal activity gradually increasing",
+        "action": "Continue recovery plan; oral analgesics as needed; progressive diet advancement; wound care; follow-up appointment at 1-2 weeks post-discharge"
+      },
+      "yellow_zone": {
+        "status": "Concerning Post-operative Features",
+        "criteria": "Fever >38°C beyond 48 hours post-operation; increasing rather than decreasing abdominal pain; wound increasingly red, warm, swollen or discharging pus; unable to keep fluids down due to nausea/vomiting at home; not passing flatus or opening bowels by day 3-4 (possible ileus or obstruction); persistent diarrhea after antibiotics",
+        "action": "Contact surgeon or GP within 24 hours. If fever and wound redness, attend wound clinic. Blood tests (CBC, CRP) and wound swab may be required. Consider IV antibiotics for wound infection. Most post-operative complications are treatable if identified early."
+      },
+      "red_zone": {
+        "status": "MEDICAL EMERGENCY — Immediate Hospital Attention Required",
+        "criteria": "Any of: high fever >39°C with abdominal pain and rigidity (peritonitis); acute severe abdominal pain worse than post-operative baseline (possible internal bleeding, anastomotic leak, or bowel obstruction); signs of sepsis (tachycardia, hypotension, confusion, cold extremities); abdominal distension and inability to pass flatus (bowel obstruction from adhesions); wound completely opening (dehiscence); unexplained initial severe RLQ pain with no appendectomy yet performed — possible appendicitis",
+        "action": "CALL EMERGENCY SERVICES (102/112 India; 999 UK; 911 USA) or go to nearest emergency department immediately. Do not wait. If pre-diagnosis: do NOT eat or drink anything while waiting — surgery may be needed urgently (NPO essential for anaesthesia)."
+      }
+    },
+ 
+    "complications": [
+      {
+        "complication": "Perforation and Peritonitis",
+        "description": "Most feared complication of untreated appendicitis. Perforation occurs in 20-30% of all cases; up to 70% in children under 5 and elderly over 70 (due to delayed diagnosis and atypical presentation). Free perforation causes generalized bacterial peritonitis with life-threatening sepsis. Even with surgery, mortality increases significantly.",
+        "timing": "Usually 24-72 hours from symptom onset; but highly variable",
+        "severity": "Life-threatening",
+        "prevention": "Prompt diagnosis and appendectomy within 24 hours of presentation"
+      },
+      {
+        "complication": "Periappendiceal (Appendiceal) Abscess",
+        "description": "Localized collection of pus walled off by omentum and bowel, forming a phlegmon or frank abscess around the perforated appendix. Presents as prolonged symptoms (>5-7 days), RLQ mass, persistent fever, and high CRP/WBC. Managed with drainage and antibiotics ± interval appendectomy.",
+        "severity": "Moderate to Severe",
+        "management": "IR-guided drainage + IV antibiotics; interval appendectomy 6-8 weeks later"
+      },
+      {
+        "complication": "Wound Infection (Surgical Site Infection — SSI)",
+        "description": "Most common post-operative complication. Open appendectomy wound infection rate 5-10%; laparoscopic <3%. Presents with redness, warmth, swelling, purulent discharge from wound, fever, and rising WBC at 5-7 days post-op. Caused by contamination during surgery (especially in perforated cases).",
+        "severity": "Mild to Moderate",
+        "management": "Wound opening and drainage; wound swab and antibiotics; regular wound dressing changes"
+      },
+      {
+        "complication": "Intra-Abdominal Abscess",
+        "description": "Deep pelvic or abdominal abscess forming after perforated appendicitis or complicated surgery. Presents as persistent fever (>38.5°C), abdominal pain, and high CRP/WBC 5-7 days post-operation. CT-guided drainage required.",
+        "severity": "Moderate to Severe",
+        "management": "CT scan confirmation; IR-guided percutaneous drainage; prolonged IV antibiotics"
+      },
+      {
+        "complication": "Post-operative Ileus",
+        "description": "Temporary cessation of normal peristaltic bowel activity after abdominal surgery or from peritoneal irritation. Presents as abdominal distension, no passage of flatus, inability to tolerate oral intake, and vomiting. Usually resolves within 3-5 days with conservative management.",
+        "severity": "Mild to Moderate",
+        "management": "IV fluids; nasogastric tube if vomiting; chewing gum surprisingly evidence-based for ileus; early mobilization; prokinetics (metoclopramide); most resolves spontaneously"
+      },
+      {
+        "complication": "Small Bowel Obstruction from Adhesions",
+        "description": "Post-operative adhesions (fibrous scar bands) between bowel loops, omentum, and peritoneum can cause bowel kinking or constriction, leading to small bowel obstruction (SBO). This can occur weeks, months, or years after appendectomy — especially after perforated appendicitis. Presents with colicky abdominal pain, vomiting, distension, and absolute constipation.",
+        "severity": "Moderate to Severe",
+        "management": "Initial conservative management (IV fluids, NGT decompression); surgical division of adhesions if not resolving or strangulation suspected"
+      },
+      {
+        "complication": "Sepsis and Septic Shock",
+        "description": "Life-threatening organ dysfunction caused by dysregulated host response to infection — in this case from perforated appendicitis with bacterial peritonitis. Presents with fever or hypothermia, tachycardia, hypotension, altered mental status, high lactate, and multi-organ failure.",
+        "severity": "Life-threatening",
+        "management": "ICU admission; Surviving Sepsis Campaign bundle: blood cultures THEN IV antibiotics within 1 hour; IV fluid resuscitation 30 mL/kg; vasopressors if hypotension persists; emergency surgery for source control"
+      },
+      {
+        "complication": "Stump Appendicitis",
+        "description": "Rare but dangerous — inflammation of an incompletely removed appendiceal remnant (stump >5mm left behind at appendectomy). Presents exactly like acute appendicitis but patients and clinicians may not consider appendicitis as the diagnosis (patient believes they have had their appendix removed).",
+        "severity": "Moderate to Severe (risks perforation as in original appendicitis)",
+        "management": "Laparoscopic or open re-exploration and complete stump excision"
+      },
+      {
+        "complication": "Fertility Issues in Women",
+        "description": "Perforated appendicitis with pelvic peritonitis can cause adhesion formation around the fallopian tubes and ovaries, potentially impairing tubal patency and ovarian function. Associated with increased risk of ectopic pregnancy and infertility — particularly in women with right-sided tubal involvement from perforated appendicitis.",
+        "severity": "Moderate — long-term reproductive implication",
+        "management": "Pelvic physiotherapy; fertility specialist assessment if difficulties conceiving; hysterosalpingography (HSG) to assess tubal patency"
+      },
+      {
+        "complication": "Incisional Hernia",
+        "description": "Weakness at the abdominal wall incision site allowing bowel or omentum to protrude. More common after open appendectomy (especially with wound infection or dehiscence) than laparoscopic. Presents as a lump at the incision site, worsening on coughing or straining.",
+        "severity": "Mild to Moderate",
+        "management": "Surgical hernia repair (hernioplasty with mesh); avoid heavy lifting and straining until wound fully healed to prevent"
+      },
+      {
+        "complication": "Right Iliac Fossa Pain Syndrome (Post-Appendectomy Syndrome)",
+        "description": "Persistent or recurrent RLQ pain after appendectomy (occurring in up to 10% of patients). Causes include: appendix not truly inflamed (negative appendectomy), overlooked co-existing pathology (Meckel's diverticulum, Crohn's, mesenteric adenitis, ovarian cyst), adhesional pain, or chronic pelvic pain. Requires systematic investigation.",
+        "severity": "Mild to Moderate",
+        "management": "Further investigation (CT, colonoscopy, gynaecological evaluation); multidisciplinary team approach"
+      }
+    ],
+ 
+    "special_populations": {
+      "appendicitis_in_children": {
+        "key_points": [
+          "Peak incidence in school-age children (10-14 years); all ages can be affected including infants",
+          "Perforation rate very high — 40-70% in children under 5; up to 100% in infants — primarily because young children cannot localize and communicate pain; atypical presentation; delay in seeking medical attention",
+          "Lymphoid hyperplasia most common cause in children (vs fecalith in adults); often triggered by viral illness",
+          "Symptoms may be non-specific in young children: poor feeding, irritability, excessive crying, vomiting, fever, refusal to walk",
+          "Rovsing's sign and Psoas sign may be difficult to elicit in crying, uncooperative children — examine gently in parent's lap",
+          "Ultrasound preferred over CT for initial imaging in children (no radiation) — though sensitivity lower; MRI second choice if ultrasound inconclusive",
+          "Use of CT in children must be judicious — radiation concern; use only when necessary and US/MRI inconclusive",
+          "Alvarado score validated in children; Paediatric Appendicitis Score (PAS) also commonly used in pediatric populations",
+          "Post-operative recovery faster in children; oral feeding can often start same day as surgery",
+          "Laparoscopic appendectomy standard in children at experienced pediatric surgery centers",
+          "Children with suspected appendicitis must be seen by paediatric surgeon urgently — do NOT observe at home if suspicion raised"
+        ]
+      },
+      "appendicitis_in_pregnancy": {
+        "key_points": [
+          "Most common non-obstetric surgical emergency in pregnancy — occurs 1:1000 pregnancies",
+          "Perforation rate in pregnancy is 43% vs 20% in non-pregnant women — due to diagnostic delay from atypical presentation and attribution of symptoms to pregnancy",
+          "Appendix displacement: by 2nd trimester the appendix migrates to RUQ (right upper quadrant) and right flank as uterus grows — pain is NOT in classic RLQ in later pregnancy",
+          "WBC normally elevated in pregnancy (up to 14,000/µL) reducing utility of leukocytosis as a diagnostic sign",
+          "Nausea and vomiting of pregnancy (morning sickness) can mask appendicitis symptoms",
+          "MRI is the preferred imaging modality in pregnancy — no fetal radiation risk; high sensitivity for appendicitis",
+          "Ultrasound first but often limited by gravid uterus in later trimesters",
+          "CT scan acceptable if MRI unavailable and high clinical suspicion — benefit of diagnosis outweighs radiation risk to fetus",
+          "Laparoscopic appendectomy is safe in all trimesters with experienced surgeon and anaesthetist — fetal outcomes similar to open in 2nd trimester",
+          "Beta-hCG MANDATORY in all women of childbearing age with RLQ pain — ectopic pregnancy must be excluded",
+          "Maternal and fetal mortality significantly higher with perforated appendicitis — perforation causes premature labour, fetal distress, and pregnancy loss",
+          "Post-operative tocolysis may be required to prevent premature labour after surgery in 2nd trimester",
+          "Antibiotics: avoid fluoroquinolones and tetracyclines in pregnancy; cefazolin + metronidazole acceptable"
+        ]
+      },
+      "appendicitis_in_elderly": {
+        "key_points": [
+          "Less common but significantly more dangerous — mortality 4-10x higher than young adults",
+          "Perforation rate 40-70% in elderly — due to atypical presentation and delayed diagnosis",
+          "Classic features absent in 30-40% of elderly: pain migration may not occur; fever may be absent (blunted immune response); WBC may be normal despite perforation",
+          "First presentation often with localized RLQ mass (abscess), diffuse peritonitis, or unexplained sepsis",
+          "CT scan ESSENTIAL in elderly with any RLQ pain or unexplained fever and abdominal symptoms — clinical diagnosis unreliable",
+          "Must consider alternative diagnoses: cecal carcinoma obstructing appendix, sigmoid diverticulitis, mesenteric ischemia — all more common in elderly",
+          "Pre-existing comorbidities (cardiovascular disease, diabetes, CKD, anticoagulants) significantly increase surgical and anaesthetic risk",
+          "Laparoscopic appendectomy preferred in elderly when possible — reduced complication rate; faster recovery",
+          "Adequate resuscitation essential before surgery — elderly poorly tolerate hypovolemia",
+          "Post-operative recovery is slower; DVT risk higher; delirium common post-anaesthesia in elderly (POCD — post-operative cognitive dysfunction)",
+          "Close monitoring for surgical complications is essential; early re-imaging if clinical deterioration"
+        ]
+      },
+      "appendicitis_in_immunocompromised": {
+        "key_points": [
+          "Patients on corticosteroids, chemotherapy, TNF inhibitors, or HIV/AIDS may have masked symptoms — steroids blunt pain and fever; immunosuppression blunts leukocytosis",
+          "Atypical organisms may cause appendicitis in immunocompromised: CMV, Mycobacteria, Candida",
+          "Low threshold for CT scan in immunocompromised patients with any abdominal symptoms",
+          "Broader antibiotic coverage required peri-operatively",
+          "Withhold immunosuppressive medications peri-operatively as clinically feasible",
+          "Higher post-operative complication rate — wound healing impaired by immunosuppression and steroids"
+        ]
+      }
+    },
+ 
+    "vaccinations_recommended": [
+      {
+        "vaccine": "No specific vaccines prevent appendicitis",
+        "reason": "Appendicitis is primarily caused by luminal obstruction (fecalith, lymphoid hyperplasia, foreign bodies) rather than a specific preventable pathogen. No vaccine exists for appendicitis prevention.",
+        "note": "Some viral infections (adenovirus, measles, EBV) trigger lymphoid hyperplasia that can cause appendicitis. Standard childhood immunization schedule (MMR, adenovirus vaccine in military personnel) indirectly reduces this risk."
+      },
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Annually",
+        "reason": "Viral respiratory infections (influenza) can trigger lymphoid hyperplasia throughout the gut including the appendix. General health maintenance and infection prevention reduces one predisposing factor for appendiceal lymphoid hyperplasia."
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV20 / PPSV23)",
+        "frequency": "Per national schedule",
+        "reason": "Post-operative pneumonia is a significant complication after abdominal surgery under general anaesthesia. Pneumococcal vaccination provides protection against one of the most common causes of post-operative pneumonia."
+      },
+      {
+        "vaccine": "Tetanus-Diphtheria-Pertussis (Tdap/Td)",
+        "frequency": "Booster every 10 years; ensure up to date before elective surgery",
+        "reason": "Standard adult immunization; important for wound infection prophylaxis given tetanus risk from any surgical wound"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine (Annual Updated Booster)",
+        "frequency": "As per national guidelines",
+        "reason": "COVID-19 infection increases surgical risk significantly (higher post-operative pulmonary complications). Vaccination reduces severity of COVID-19 and its complications in the peri-operative setting."
+      }
+    ],
+ 
+    "when_to_see_doctor": [
+      "Abdominal pain starting around the navel and gradually moving to the right lower abdomen — even mild or moderate — warrants medical evaluation within hours",
+      "Pain in the right lower abdomen lasting more than 4-6 hours, particularly with fever and nausea",
+      "Any abdominal pain with fever (>37.5°C / 99.5°F) in a previously healthy person — especially children",
+      "Loss of appetite combined with abdominal pain — anorexia is a classic early warning sign of appendicitis",
+      "Abdominal pain worse with movement, walking, or coughing — suggests peritoneal irritation",
+      "Worsening abdominal pain in a pregnant woman at any stage of pregnancy — appendicitis in pregnancy is a surgical emergency",
+      "Child with abdominal pain limping, walking bent over, or refusing to walk — possible appendicitis",
+      "Persistent nausea and vomiting with abdominal pain for more than 12-24 hours",
+      "Any right iliac fossa pain in an elderly patient — even if mild and without fever; atypical presentations common",
+      "Post-appendectomy: fever >38°C beyond 48 hours, increasing wound pain, wound discharge, or worsening abdominal pain — possible post-operative complication",
+      "Recurrent episodes of mild right lower quadrant pain — possible chronic/recurrent appendicitis requiring investigation"
+    ],
+ 
+    "emergency_signs": [
+      "Sudden severe abdominal pain that rapidly spreads throughout the entire abdomen — possible appendiceal perforation and generalized peritonitis",
+      "Board-like rigid abdomen with extreme tenderness on the lightest touch — signs of generalized peritonitis",
+      "High fever above 39°C (102.2°F) with abdominal pain and deteriorating general condition",
+      "Signs of septic shock: very rapid heart rate (>120 bpm), falling blood pressure, cold and clammy sweaty skin, extreme weakness or confusion",
+      "Child or infant who is inconsolable, extremely pale, floppy, or unresponsive — possible perforated appendicitis with septic shock",
+      "Severe abdominal pain in a pregnant woman at any gestation — especially with fever and shoulder tip pain (phrenic nerve irritation from peritonitis)",
+      "Sudden brief relief of severe pain followed immediately by worsening and spreading abdominal pain — classic perforation pattern",
+      "Elderly patient with unexplained severe general deterioration, confusion, low blood pressure, and abdominal discomfort — possible perforated appendicitis presenting atypically",
+      "Abdominal distension that is rapidly worsening with inability to pass gas or stool and vomiting — intestinal obstruction or severe ileus from peritonitis",
+      "Post-appendectomy: severe worsening abdominal pain, high fever, and shock — intra-abdominal abscess, anastomotic leak, or sepsis"
+    ],
+ 
+    "frequently_asked_questions": [
+      {
+        "question": "What is appendicitis and where is the appendix?",
+        "answer": "Appendicitis is inflammation of the vermiform appendix — a small, finger-shaped pouch (typically 9cm long) attached to the cecum (start of the large intestine) in the right lower abdomen. The appendix lies in the right iliac fossa (RIF) — the lower right quadrant of the abdomen. When it becomes obstructed and inflamed, bacteria multiply causing pain, fever, and the risk of rupture."
+      },
+      {
+        "question": "What does appendicitis pain feel like and where is it?",
+        "answer": "Appendicitis typically begins as a dull, crampy ache around the navel (belly button) — this is visceral pain from the distended appendix. Over the next 4-24 hours, the pain moves to the right lower abdomen at McBurney's point (about 1/3 of the way from the right hip bone to the navel) — this is somatic pain as inflammation reaches the peritoneum. The pain becomes sharper and constant, worsens with movement, and is 6-9/10 in severity."
+      },
+      {
+        "question": "Can appendicitis get better on its own?",
+        "answer": "Occasionally, very mild appendicitis may resolve spontaneously, but this is the exception rather than the rule and is unpredictable. Without treatment, appendicitis typically progresses to gangrene and perforation within 24-72 hours. Non-operative (antibiotic-only) management is now an evidence-based option for carefully selected uncomplicated appendicitis — with a 70-80% success rate at 1 year. However, 20-30% of patients treated with antibiotics alone eventually require surgery. Medical assessment is always mandatory — never attempt to manage suspected appendicitis at home."
+      },
+      {
+        "question": "Is surgery always necessary for appendicitis?",
+        "answer": "Traditionally yes — appendectomy has been the standard treatment for 130 years. However, evidence now supports non-operative management (antibiotics only) as a safe initial treatment for uncomplicated appendicitis (no perforation, no fecalith) in adults. Multiple large trials (APPAC, CODA) show 70-80% success at 1 year. For complicated appendicitis (gangrenous, perforated), surgery is always required. The choice between antibiotics-only and surgery should be made together by the patient and surgeon after discussing risks and benefits."
+      },
+      {
+        "question": "What happens if appendicitis is not treated?",
+        "answer": "Untreated appendicitis is life-threatening. The sequence without treatment: obstruction → bacterial overgrowth → gangrene (ischemic necrosis of appendix wall) → perforation → bacterial peritonitis → septic shock → multi-organ failure → death. Perforation occurs in 20-30% overall; 40-70% in children under 5 and elderly. Even treated perforated appendicitis carries significant morbidity. Any suspicion of appendicitis requires same-day medical evaluation — delay is dangerous."
+      },
+      {
+        "question": "What is the difference between laparoscopic and open appendectomy?",
+        "answer": "Laparoscopic (keyhole) appendectomy uses 3 small incisions (5-12mm each) with a camera and instruments — the appendix is removed through a small port. Benefits: less pain, smaller scars, 1-2 day hospital stay, return to work in 1-2 weeks, lower wound infection rate. Open appendectomy uses a single larger incision (5-7cm) in the right lower abdomen (McBurney's incision). Required when laparoscopy is not feasible (extensive adhesions, severe peritonitis), or when conversion is needed from failed laparoscopic approach. Hospital stay 2-4 days; return to work 2-4 weeks. Laparoscopic is preferred for most patients."
+      },
+      {
+        "question": "What should I not eat or do when appendicitis is suspected?",
+        "answer": "If appendicitis is suspected: DO NOT eat, drink anything (including water), or take any oral medications. You must be nil by mouth (NPO) in case emergency surgery is needed — eating or drinking increases the risk of dangerous aspiration of stomach contents during general anaesthesia. Do NOT apply a heat pad to the abdomen — can accelerate rupture. Do NOT take laxatives or enemas. Seek emergency medical care immediately and inform medical staff of the exact time of your last food and drink."
+      },
+      {
+        "question": "How long does recovery take after appendectomy?",
+        "answer": "Laparoscopic (uncomplicated): hospital discharge in 1-2 days; return to light activities in 1-2 weeks; full recovery and return to manual work at 4-6 weeks. Open appendectomy (uncomplicated): hospital 2-4 days; light activities at 2-3 weeks; full recovery 6-8 weeks. Perforated appendicitis with peritonitis: hospital stay 5-14 days or more; full recovery 4-8 weeks depending on complications. Post-operative fatigue is normal — allow adequate rest and do not rush recovery."
+      },
+      {
+        "question": "Can appendicitis come back after surgery?",
+        "answer": "After complete appendectomy (total removal), appendicitis cannot recur — the appendix is gone. However, stump appendicitis can occur if a segment of appendix longer than 5mm is inadvertently left behind (rare). Additionally, 5-10% of patients have persistent or recurrent right lower quadrant pain after appendectomy (post-appendectomy syndrome) from adhesions, missed diagnosis, or co-existing conditions (Crohn's disease, IBS, ovarian cysts) — these require further investigation."
+      },
+      {
+        "question": "How is appendicitis different in children compared to adults?",
+        "answer": "Appendicitis in children — especially under 5 years — is more dangerous than in adults. Young children cannot localize and communicate their pain clearly; symptoms are vague; fever is often higher; diarrhea is more common. Crucially, the perforation rate in children under 5 is 40-70% (vs 20-30% in adults) because diagnosis is delayed. Lymphoid hyperplasia triggered by viral infection is the most common cause in children. Any child with persistent abdominal pain, fever, and anorexia should be evaluated urgently by a paediatric surgeon."
+      },
+      {
+        "question": "What is the Alvarado score for appendicitis?",
+        "answer": "The Alvarado score (also called MANTRELS) is a clinical scoring system to assess the probability of appendicitis. It scores: migration of pain to RLQ (1 point), anorexia (1), nausea/vomiting (1), RLQ tenderness (2), rebound tenderness (1), elevated temperature (1), leukocytosis >10,000/µL (2), and shift to left/neutrophilia (1) — total 10 points. Score 1-4: appendicitis unlikely; 5-6: equivocal (CT required); 7-10: high probability (prepare for surgery). It is a useful bedside tool but CT imaging provides definitive diagnosis."
+      },
+      {
+        "question": "What are the signs of appendiceal perforation?",
+        "answer": "Classic perforation signs: sudden brief dramatic relief of severe pain (pressure released as appendix ruptures) immediately followed by rapidly worsening and spreading abdominal pain across the entire abdomen. High fever (>39°C), board-like rigid abdomen with extreme tenderness, inability to move without severe pain, and signs of sepsis (rapid heart rate, falling blood pressure, pallor). This is a life-threatening emergency — call emergency services (999/112/911) immediately."
+      },
+      {
+        "question": "What tests are done to diagnose appendicitis?",
+        "answer": "Diagnosis combines clinical assessment + blood tests + imaging. Blood tests: CBC (leukocytosis, neutrophilia), CRP (elevated), bilirubin (suggests perforation), pregnancy test (mandatory in women of childbearing age). Imaging: Ultrasound (first-line — especially in children and pregnant women); CT abdomen/pelvis (gold standard in adults — >95% sensitivity); MRI (preferred in pregnancy if US inconclusive). Clinical scoring tools (Alvarado score) are also used. Diagnosis should not be delayed awaiting a single test — clinical judgment is paramount."
+      },
+      {
+        "question": "Can I eat before going to hospital if I think I have appendicitis?",
+        "answer": "NO — absolutely do not eat or drink anything if appendicitis is suspected. You must remain nil by mouth (NPO — nothing per oral) because surgery requiring general anaesthesia may be needed urgently. Eating or drinking with a full stomach significantly increases the risk of aspiration (inhalation of stomach contents into the lungs) during anaesthesia — a life-threatening complication called Mendelson's syndrome. Go to the emergency department immediately and tell staff the exact time you last ate or drank."
+      },
+      {
+        "question": "Does a high-fibre diet help prevent appendicitis?",
+        "answer": "Epidemiological evidence suggests that populations consuming high-fibre diets have lower rates of appendicitis. Dietary fibre reduces constipation and fecalith (hardened stool) formation — the primary identifiable cause of appendiceal obstruction in adults. However, no clinical trial has confirmed that dietary changes directly prevent appendicitis. A high-fibre diet (fruits, vegetables, whole grains, legumes — 25-30g/day) promotes overall gut health and reduces constipation, which is the best dietary preventive measure available."
+      }
+    ],
+ 
+    "references": [
+      "American College of Surgeons (ACS) — Clinical Practice Guidelines for Appendicitis 2023",
+      "World Society of Emergency Surgery (WSES) — Jerusalem Guidelines for the Diagnosis and Treatment of Acute Appendicitis 2020",
+      "NICE Clinical Guideline (NG61): Appendicitis — UK National Institute for Health and Care Excellence",
+      "ACEP (American College of Emergency Physicians) — Clinical Policy on Suspected Appendicitis",
+      "CODA Collaborative — A Randomized Trial Comparing Antibiotics with Appendectomy for Appendicitis (NEJM, 2020)",
+      "APPAC Trial — Antibiotic Therapy vs. Appendectomy for Treatment of Uncomplicated Acute Appendicitis (JAMA, 2015; 5-year follow-up 2018)",
+      "Alvarado A — A practical score for the early diagnosis of acute appendicitis (Annals of Emergency Medicine, 1986)",
+      "WSES Sepsis Initiative — Management of Intra-Abdominal Infections 2020",
+      "UpToDate: Acute appendicitis in adults — Clinical manifestations and differential diagnosis",
+      "UpToDate: Management of acute appendicitis in adults",
+      "UpToDate: Acute appendicitis in children — Clinical manifestations and diagnosis",
+      "Lancet: Appendicitis — Ferris M et al., Lancet 2017",
+      "British Journal of Surgery: Laparoscopic versus open appendectomy: a meta-analysis",
+      "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021",
+      "ICAR (Indian Council of Medical Research) — Evidence-based guidelines for acute abdominal surgical emergencies",
+      "Medscape: Appendicitis Clinical Overview and Guidelines Summary"
+    ],
+ 
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-APPENDICITIS-013",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-03",
+      "last_updated": "2026-06-03",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is intended for educational and informational purposes for the MedoAir chatbot. It does not replace professional medical advice, diagnosis, or treatment. Appendicitis is a medical and surgical emergency — any suspicion of appendicitis requires IMMEDIATE emergency medical evaluation. Always seek emergency care without delay. Never attempt to self-diagnose or self-treat suspected appendicitis.",
+      "tags": ["appendicitis", "appendix", "acute abdomen", "surgical emergency", "peritonitis", "appendectomy", "RLQ pain", "laparoscopic surgery", "Alvarado score", "McBurney's point", "medoair"]
+    }
+  }
+}

@@ -1,0 +1,1691 @@
+{
+  "disease": {
+    "id": "DIS-014",
+    "name": "Hypertension",
+    "scientific_name": "Arterial Hypertension / High Blood Pressure",
+    "icd_10_code": "I10 (Essential Hypertension); I11 (Hypertensive Heart Disease); I12 (Hypertensive Chronic Kidney Disease); I13 (Hypertensive Heart and Chronic Kidney Disease); I15 (Secondary Hypertension); O10-O16 (Hypertension in Pregnancy)",
+    "category": "Cardiovascular Disease / Endocrine and Metabolic Disease",
+    "overview": {
+      "description": "Hypertension (high blood pressure) is a chronic medical condition in which the force of blood against artery walls is persistently elevated — defined as systolic blood pressure (SBP) ≥140 mmHg and/or diastolic blood pressure (DBP) ≥90 mmHg on repeated measurements (WHO/ESH/ESC definition), or ≥130/80 mmHg by ACC/AHA 2017 guidelines. Often called the 'silent killer', hypertension causes no symptoms in the majority of patients until severe or life-threatening complications — such as heart attack, stroke, heart failure, or kidney failure — develop. It is the single most important modifiable risk factor for global cardiovascular mortality.",
+      "affected_organ": "Arteries and blood vessels throughout the body; primary target organs: Heart, Brain, Kidneys, Eyes, and Peripheral blood vessels",
+      "prevalence": "Approximately 1.28 billion adults aged 30-79 worldwide have hypertension (WHO 2023); only 42% are diagnosed and treated; affects 1 in 3 adults globally. Responsible for 10.8 million deaths annually.",
+      "age_group": "Prevalence increases with age; affects all age groups including children and adolescents; >70% of adults over 70 years are hypertensive.",
+      "is_contagious": false,
+      "is_curable": false,
+      "is_manageable": true,
+      "chronic": true,
+      "silent_killer": true
+    },
+
+    "blood_pressure_classification": {
+      "measurement_method": "Average of ≥2 readings on ≥2 separate occasions; patient seated, quiet for 5 minutes; correct cuff size; no caffeine/exercise/smoking 30 min before",
+      "esh_esc_2018_who_classification": [
+        {"category": "Optimal", "SBP_mmHg": "<120", "DBP_mmHg": "<80", "action": "Lifestyle maintenance"},
+        {"category": "Normal", "SBP_mmHg": "120-129", "DBP_mmHg": "80-84", "action": "Annual monitoring; lifestyle advice"},
+        {"category": "High Normal", "SBP_mmHg": "130-139", "DBP_mmHg": "85-89", "action": "Lifestyle modification; monitor every 6 months"},
+        {"category": "Grade 1 Hypertension (Mild)", "SBP_mmHg": "140-159", "DBP_mmHg": "90-99", "action": "Lifestyle modification; antihypertensive drug therapy"},
+        {"category": "Grade 2 Hypertension (Moderate)", "SBP_mmHg": "160-179", "DBP_mmHg": "100-109", "action": "Drug therapy + lifestyle modification"},
+        {"category": "Grade 3 Hypertension (Severe)", "SBP_mmHg": "≥180", "DBP_mmHg": "≥110", "action": "Immediate drug therapy + lifestyle modification"},
+        {"category": "Isolated Systolic Hypertension", "SBP_mmHg": "≥140", "DBP_mmHg": "<90", "action": "Drug therapy; common in elderly"}
+      ],
+      "acc_aha_2017_us_classification": [
+        {"category": "Normal", "SBP_mmHg": "<120", "DBP_mmHg": "<80"},
+        {"category": "Elevated", "SBP_mmHg": "120-129", "DBP_mmHg": "<80"},
+        {"category": "Stage 1 Hypertension", "SBP_mmHg": "130-139", "DBP_mmHg": "80-89"},
+        {"category": "Stage 2 Hypertension", "SBP_mmHg": "≥140", "DBP_mmHg": "≥90"},
+        {"category": "Hypertensive Crisis", "SBP_mmHg": ">180", "DBP_mmHg": ">120"}
+      ],
+      "note": "ACC/AHA 2017 guidelines define hypertension at ≥130/80 mmHg; ESH/ESC 2018 and WHO define it at ≥140/90 mmHg. Indian guidelines (API/CSI) align with ESH/ESC (≥140/90 mmHg). Clinician should follow national guidelines."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Primary (Essential) Hypertension",
+        "description": "The most common form — accounting for 90-95% of all hypertension. No single identifiable cause. Results from complex interplay of genetic predisposition, age-related vascular stiffening, lifestyle factors (high sodium intake, obesity, physical inactivity, excess alcohol), and neurohormonal dysregulation (overactive renin-angiotensin-aldosterone system, sympathetic nervous system overactivity).",
+        "common_in": "Adults over 40; family history; overweight individuals; high sodium diet populations",
+        "note": "Cannot be cured but effectively managed with lifestyle changes and medication"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Secondary Hypertension",
+        "description": "Hypertension caused by an identifiable, potentially treatable underlying condition. Accounts for 5-10% of all hypertension cases. Should be actively screened for in: young patients (<30 years) with hypertension, resistant hypertension (BP uncontrolled on ≥3 drugs), sudden onset or worsening hypertension, and hypertension with associated clinical clues.",
+        "common_causes": [
+          "Chronic Kidney Disease (most common secondary cause — 3-4%)",
+          "Renovascular Hypertension — renal artery stenosis (atherosclerotic or fibromuscular dysplasia)",
+          "Primary Hyperaldosteronism (Conn's Syndrome) — most common endocrine cause; hypokalemia is a clue",
+          "Pheochromocytoma — paroxysmal hypertension with headache, sweating, palpitations triad",
+          "Cushing's Syndrome — cortisol excess; central obesity, purple striae, buffalo hump",
+          "Obstructive Sleep Apnoea — very common; unrefreshing sleep, snoring, daytime somnolence",
+          "Hyperthyroidism — high output state; wide pulse pressure",
+          "Hypothyroidism — diastolic hypertension; raised TSH",
+          "Coarctation of the Aorta — elevated BP in arms, low BP in legs; radio-femoral delay",
+          "Drug-induced — NSAIDs, oral contraceptive pills, decongestants, steroids, calcineurin inhibitors (ciclosporin), cocaine, amphetamines"
+        ],
+        "common_in": "Young adults with uncontrolled BP; patients with resistant hypertension"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "White Coat Hypertension",
+        "description": "Blood pressure elevated in a clinical setting (doctor's office) but normal on ambulatory blood pressure monitoring (ABPM) or home BP monitoring. Due to anxiety response to medical environment. May have lower cardiovascular risk than sustained hypertension but higher risk than true normotension — monitoring warranted.",
+        "diagnosis": "Office BP ≥140/90 + ABPM daytime average <135/85 mmHg",
+        "prevalence": "~20-30% of patients with office hypertension",
+        "management": "Lifestyle modification; regular follow-up; ABPM every 1-2 years; antihypertensives generally not required unless high cardiovascular risk"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Masked Hypertension",
+        "description": "Normal blood pressure in clinic but elevated on ambulatory or home monitoring. Particularly dangerous — often missed; carries cardiovascular risk similar to sustained hypertension. More common in smokers, physically active individuals measured at rest, and those with stress-related BP elevation during daily activities.",
+        "diagnosis": "Office BP <140/90 + ABPM daytime average ≥135/85 mmHg",
+        "management": "Antihypertensive therapy as for sustained hypertension; ABPM essential for diagnosis"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Isolated Systolic Hypertension (ISH)",
+        "description": "Systolic BP ≥140 mmHg with normal diastolic BP (<90 mmHg). Most common form of hypertension in elderly (>65 years). Caused by age-related loss of arterial elasticity (arteriosclerosis), resulting in a wide pulse pressure. Increased pulse pressure increases risk of stroke, MI, and heart failure even more than both systolic and diastolic elevation.",
+        "common_in": "Adults over 60-65 years",
+        "management": "Antihypertensive therapy; calcium channel blockers and thiazide diuretics preferred; caution with lowering BP too aggressively in very elderly (J-curve phenomenon)"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Isolated Diastolic Hypertension",
+        "description": "Diastolic BP ≥90 mmHg with normal systolic BP (<140 mmHg). More common in younger adults. Results from increased peripheral vascular resistance with maintained aortic compliance. Associated with increased cardiovascular risk.",
+        "common_in": "Adults under 50 years",
+        "management": "Lifestyle modification first; antihypertensives if persistent or high overall cardiovascular risk"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Resistant Hypertension",
+        "description": "BP remaining above target (≥140/90 mmHg) despite adherence to a full-dose, optimally tolerated three-drug regimen including a diuretic, or BP controlled on four or more drugs. True resistant hypertension (after excluding pseudo-resistance from white coat effect, poor adherence, and suboptimal therapy) affects ~10-15% of treated hypertensives. Mandatory secondary cause screen.",
+        "management": "Screen for secondary causes; optimize existing drugs; add spironolactone (4th drug) — most effective; renal denervation (investigational)"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Hypertensive Crisis",
+        "description": "Severe elevation of BP (usually >180/120 mmHg) requiring immediate assessment. Divided into: (a) Hypertensive Urgency — severe BP without acute target organ damage; oral medications and gradual BP reduction over 24-48 hours; and (b) Hypertensive Emergency — severe BP WITH acute target organ damage (aortic dissection, pulmonary oedema, hypertensive encephalopathy, acute MI, acute stroke, eclampsia, acute renal failure, MAHA). Emergency requires immediate IV therapy in ICU.",
+        "urgency_management": "Oral antihypertensives; BP reduced gradually over 24-48 hours; no rapid reduction",
+        "emergency_management": "ICU admission; IV antihypertensives; organ-specific treatment; controlled BP reduction (10-20% in first hour; 25% within 24 hours for most; specific protocols for aortic dissection and stroke)"
+      },
+      {
+        "id": "TYPE-09",
+        "name": "Hypertension in Pregnancy",
+        "description": "Includes: Chronic Hypertension (pre-existing before 20 weeks), Gestational Hypertension (new onset after 20 weeks without proteinuria), Preeclampsia (HTN ≥140/90 after 20 weeks WITH proteinuria ≥300mg/24h or other end-organ involvement), Eclampsia (preeclampsia with seizures), and HELLP Syndrome (Haemolysis, Elevated Liver enzymes, Low Platelets). Hypertensive disorders of pregnancy affect 10% of pregnancies and are a leading cause of maternal and perinatal mortality worldwide.",
+        "management": "Methyldopa, Labetalol, Nifedipine (sustained release) are safe in pregnancy; ACE inhibitors and ARBs are ABSOLUTELY CONTRAINDICATED; IV Magnesium Sulfate for eclampsia seizure prevention"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "High Normal Blood Pressure",
+        "BP_range": "SBP 130-139 mmHg and/or DBP 85-89 mmHg",
+        "risk": "Increased cardiovascular risk; not treated with drugs unless high overall CV risk; lifestyle modification essential",
+        "symptoms": "Usually none",
+        "target_organ_damage": "None or minimal",
+        "management": "Lifestyle modification; repeat measurement in 6 months; treat hypertension risk factors (obesity, dyslipidemia, diabetes)"
+      },
+      {
+        "level": 2,
+        "name": "Grade 1 (Mild) Hypertension",
+        "BP_range": "SBP 140-159 mmHg and/or DBP 90-99 mmHg",
+        "risk": "Moderate cardiovascular risk; risk significantly elevated if combined with other CV risk factors",
+        "symptoms": "Usually asymptomatic; occasionally headache, fatigue",
+        "target_organ_damage": "Possible early changes — mild LVH, microalbuminuria",
+        "management": "Lifestyle modification + single antihypertensive drug (ACEi OR ARB OR CCB OR thiazide diuretic); reassess in 1-3 months"
+      },
+      {
+        "level": 3,
+        "name": "Grade 2 (Moderate) Hypertension",
+        "BP_range": "SBP 160-179 mmHg and/or DBP 100-109 mmHg",
+        "risk": "Moderate to high cardiovascular risk",
+        "symptoms": "Headache more common; dizziness; visual blurring possible",
+        "target_organ_damage": "LVH, microalbuminuria, early retinopathy possible",
+        "management": "Combination antihypertensive therapy (2 drugs) from outset; lifestyle modification; reassess in 1 month; screen for end-organ damage"
+      },
+      {
+        "level": 4,
+        "name": "Grade 3 (Severe) Hypertension",
+        "BP_range": "SBP ≥180 mmHg and/or DBP ≥110 mmHg",
+        "risk": "Very high cardiovascular risk",
+        "symptoms": "Headache, visual disturbance, palpitations more likely; nausea",
+        "target_organ_damage": "LVH, proteinuria, elevated creatinine, retinopathy; established CV disease common",
+        "management": "Combination antihypertensive therapy (2-3 drugs); urgent assessment for end-organ damage; consider same-day initiation; screen for secondary causes"
+      },
+      {
+        "level": 5,
+        "name": "Hypertensive Crisis (Urgency and Emergency)",
+        "BP_range": "SBP >180 mmHg and/or DBP >120 mmHg",
+        "hypertensive_urgency": {
+          "definition": "Severe BP elevation WITHOUT acute target organ damage",
+          "management": "Oral antihypertensives; reduce BP gradually over 24-48 hours; can manage as outpatient with close follow-up"
+        },
+        "hypertensive_emergency": {
+          "definition": "Severe BP elevation WITH acute target organ damage: hypertensive encephalopathy, acute MI, acute LVF/pulmonary oedema, aortic dissection, eclampsia, acute renal failure, intracranial haemorrhage, MAHA",
+          "symptoms": "Severe headache, visual loss, confusion, chest pain, dyspnoea, focal neurology, nausea/vomiting",
+          "management": "IMMEDIATE ICU admission; IV antihypertensives; organ-specific protocols; reduce BP by maximum 10-20% in first hour; 25% reduction over 24 hours (EXCEPT aortic dissection — target <120/80 within 20 min; ischaemic stroke — permissive hypertension protocol)"
+        }
+      }
+    ],
+
+    "causes": {
+      "primary_hypertension_causes": {
+        "genetic_factors": [
+          "Polygenic inheritance — family history is a strong independent risk factor; BP heritability estimated 30-60%",
+          "Multiple gene variants affecting renin-angiotensin-aldosterone system (RAAS), sodium channel transport, sympathetic nervous system activity",
+          "Specific monogenic forms (rare): Liddle's syndrome (constitutively active ENaC sodium channel), Gordon's syndrome, glucocorticoid-remediable aldosteronism (GRA)",
+          "Gene variants affecting sodium reabsorption in kidney tubules (primary defect in renal sodium handling — Guyton's hypothesis)"
+        ],
+        "modifiable_risk_factors": [
+          "High dietary sodium intake — direct stimulation of RAAS; volume expansion; vascular stiffness; target <2.3g/day (WHO <2g/day)",
+          "Obesity and overweight — adipose tissue activates RAAS and sympathetic nervous system; increases cardiac output; adipokine-mediated inflammation",
+          "Physical inactivity — reduces vascular endothelial function; increases peripheral vascular resistance",
+          "Excessive alcohol consumption (>14 units/week men; >7 units/week women) — raises BP acutely and chronically via sympathetic activation",
+          "Smoking — acute vasopressor effect of nicotine; damages vascular endothelium; accelerates atherosclerosis",
+          "Chronic psychosocial stress — sustained sympathetic activation; cortisol excess; poor lifestyle behaviours",
+          "Unhealthy diet — high saturated fat, low potassium, low calcium, low magnesium intake",
+          "Excessive caffeine intake — acute and mild pressor effect; habitual use less significant"
+        ],
+        "non_modifiable_risk_factors": [
+          "Age — arterial stiffening (arteriosclerosis) with aging; SBP rises with age; DBP peaks at 50-60 then falls",
+          "Male sex — higher prevalence of hypertension in men until women enter menopause",
+          "Postmenopausal women — loss of oestrogen's vasodilatory and cardioprotective effects",
+          "South Asian (Indian, Pakistani, Bangladeshi) and African/African-American ethnicity — higher salt sensitivity; higher RAAS activity; lower renin hypertension in African populations"
+        ],
+        "pathophysiological_mechanisms": [
+          "Renal sodium retention — kidney retains excess sodium and water → expanded blood volume → elevated cardiac output → sustained hypertension",
+          "RAAS overactivation — excess angiotensin II causes vasoconstriction, sodium retention, and aldosterone release",
+          "Sympathetic nervous system overactivity — increased heart rate, cardiac output, and peripheral vascular resistance",
+          "Endothelial dysfunction — reduced nitric oxide (NO) production → impaired vasodilation → increased vascular resistance",
+          "Arterial stiffness — age-related loss of aortic elasticity → increased pulse wave velocity → isolated systolic hypertension",
+          "Chronic low-grade inflammation — inflammatory cytokines damage vessel walls"
+        ]
+      },
+      "secondary_hypertension_causes": [
+        {
+          "cause": "Chronic Kidney Disease (CKD)",
+          "mechanism": "Sodium and water retention; RAAS activation; reduced GFR; proteinuria",
+          "clues": "Elevated creatinine, eGFR <60, proteinuria, anaemia",
+          "prevalence": "3-4% of hypertension"
+        },
+        {
+          "cause": "Renovascular Hypertension (Renal Artery Stenosis)",
+          "mechanism": "Reduced renal blood flow → massive RAAS activation → hypertension resistant to most drugs except ACEi/ARBs (with caution)",
+          "clues": "Flash pulmonary oedema, renal bruit, worsening renal function on ACEi/ARB, young woman (fibromuscular dysplasia) or elderly atherosclerosis",
+          "diagnosis": "Renal Doppler ultrasound, CT angiography, MR angiography",
+          "prevalence": "1-2%"
+        },
+        {
+          "cause": "Primary Hyperaldosteronism (Conn's Syndrome)",
+          "mechanism": "Autonomous aldosterone secretion causes sodium retention, potassium wasting, and volume-dependent hypertension",
+          "clues": "Hypokalemia (spontaneous or with diuretics), resistant hypertension, adrenal adenoma or bilateral adrenal hyperplasia on imaging",
+          "diagnosis": "Aldosterone-to-Renin Ratio (ARR) >30 (screening); adrenal CT; adrenal vein sampling",
+          "prevalence": "5-10% of hypertension (most common secondary endocrine cause)"
+        },
+        {
+          "cause": "Pheochromocytoma / Paraganglioma",
+          "mechanism": "Paroxysmal catecholamine (adrenaline/noradrenaline) release from adrenal medulla tumour → severe episodic hypertension",
+          "clues": "Paroxysmal headache-palpitations-sweating triad, pallor, hypertensive crises, weight loss",
+          "diagnosis": "24-hour urinary fractionated metanephrines and catecholamines; plasma metanephrines; adrenal CT/MRI",
+          "prevalence": "<1%; the '5% tumour' — 5% malignant, 5% bilateral, 5% extra-adrenal, 5% hereditary, 5% in children"
+        },
+        {
+          "cause": "Obstructive Sleep Apnoea (OSA)",
+          "mechanism": "Repeated hypoxia during sleep → sympathetic activation → nocturnal and sustained daytime hypertension; non-dipping nocturnal BP pattern",
+          "clues": "Obesity (BMI>30), loud snoring, witnessed apnoeas, daytime somnolence (Epworth Score >10), collar size >17 inches men, morning headaches",
+          "diagnosis": "Overnight polysomnography (sleep study); ApneaLink home oximetry screening",
+          "prevalence": "Very common; present in >30% of hypertension; up to 85% of resistant hypertension"
+        },
+        {
+          "cause": "Cushing's Syndrome",
+          "mechanism": "Cortisol excess → glucocorticoid-mediated sodium retention, increased angiotensinogen, weight gain",
+          "clues": "Central obesity (moon face, buffalo hump), purple/red striae, proximal myopathy, easy bruising, hyperglycemia, osteoporosis",
+          "diagnosis": "24-hour urine free cortisol, overnight 1mg dexamethasone suppression test, late-night salivary cortisol"
+        },
+        {
+          "cause": "Drug-Induced Hypertension",
+          "mechanism": "Various mechanisms including sodium retention, sympathomimetic effects, RAAS stimulation",
+          "drugs": ["NSAIDs and COX-2 inhibitors — sodium retention; blunt antihypertensive efficacy", "Oral Contraceptive Pills (OCP) — oestrogen-mediated RAAS activation (dose-dependent)", "Corticosteroids — sodium retention, weight gain", "Calcineurin inhibitors (ciclosporin, tacrolimus) — vasoconstriction, sodium retention", "Sympathomimetics — decongestants (pseudoephedrine), amphetamines, cocaine", "VEGF inhibitors (bevacizumab, sunitinib) — anti-cancer drugs", "Erythropoietin — increased red cell mass and vasoconstriction", "Licorice — glycyrrhizic acid mimics aldosterone"]
+        },
+        {
+          "cause": "Thyroid Disorders",
+          "mechanism": "Hyperthyroidism: increased cardiac output, tachycardia, wide pulse pressure, systolic HTN. Hypothyroidism: increased peripheral resistance, diastolic HTN",
+          "diagnosis": "TSH blood test"
+        },
+        {
+          "cause": "Coarctation of the Aorta",
+          "mechanism": "Congenital narrowing of the aorta causing hypertension proximal to the narrowing (arms) and hypotension distal (legs)",
+          "clues": "Young patient; arm BP much higher than leg BP; radio-femoral pulse delay; rib notching on CXR; ejection systolic murmur",
+          "diagnosis": "Echocardiography; CT aorta; MR angiography"
+        }
+      ]
+    },
+
+    "symptoms": {
+      "important_note": "Hypertension is known as the 'SILENT KILLER' — the vast majority of patients (over 80%) have NO symptoms, even with significantly elevated blood pressure. This is precisely why hypertension is so dangerous — it causes progressive target organ damage without warning. Regular blood pressure screening is the only way to detect it.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-401",
+          "name": "Headache — Occipital, Early Morning",
+          "description": "Hypertensive headache classically occurs in the occipital (back of head) region, typically on waking in the morning, and may improve as the day progresses. More common with severe or poorly controlled hypertension. However, headache is NOT a reliable symptom of routine hypertension — many patients with very high BP have no headache, and most headaches are NOT caused by hypertension.",
+          "severity": "Mild to Moderate",
+          "onset": "Typically on waking in morning; occipital and throbbing",
+          "note": "Severe sudden 'thunderclap' headache (worst headache of life) requires IMMEDIATE emergency evaluation — possible subarachnoid haemorrhage or hypertensive encephalopathy"
+        },
+        {
+          "id": "SYM-402",
+          "name": "Dizziness and Lightheadedness",
+          "description": "Intermittent dizziness may occur, particularly with severe hypertension or when BP fluctuates. Can also result from over-treatment causing hypotension, especially in elderly. Dizziness alone is a poor predictor of hypertension.",
+          "severity": "Mild to Moderate",
+          "onset": "Episodic; may worsen on standing (if orthostatic hypotension from medication)"
+        },
+        {
+          "id": "SYM-403",
+          "name": "Epistaxis (Nosebleeds)",
+          "description": "Recurrent or severe nosebleeds are associated with hypertension, particularly when BP is very high. Hypertension does not directly cause epistaxis but elevated BP can worsen bleeding from minor mucosal trauma. Severe spontaneous epistaxis with very high BP warrants BP measurement.",
+          "severity": "Mild to Moderate",
+          "onset": "Spontaneous; often recurrent"
+        },
+        {
+          "id": "SYM-404",
+          "name": "Visual Disturbances",
+          "description": "Blurred vision, double vision, or sudden visual loss can result from hypertensive retinopathy (damage to retinal blood vessels from chronic high BP) or from acute hypertensive emergencies causing papilloedema, retinal haemorrhage, or central retinal artery/vein occlusion. Sudden vision loss in a hypertensive patient is an emergency.",
+          "severity": "Mild (chronic retinopathy) to Severe (acute hypertensive emergency with vision loss)",
+          "onset": "Gradual (chronic retinopathy) or sudden (emergency)"
+        },
+        {
+          "id": "SYM-405",
+          "name": "Palpitations and Tachycardia",
+          "description": "Awareness of heartbeat, racing heart, or irregular heart rhythm. Hypertension promotes left ventricular hypertrophy (LVH), atrial enlargement, and atrial fibrillation. Palpitations in a hypertensive patient warrant ECG and Holter monitoring.",
+          "severity": "Mild to Moderate",
+          "onset": "Episodic or persistent"
+        },
+        {
+          "id": "SYM-406",
+          "name": "Fatigue and Reduced Exercise Tolerance",
+          "description": "Non-specific but common in hypertension. Results from cardiac remodelling (LVH, diastolic dysfunction), anaemia of renal disease in hypertensive nephropathy, or medication side effects. Fatigue combined with breathlessness on exertion suggests possible hypertensive heart disease.",
+          "severity": "Mild to Moderate",
+          "onset": "Gradual"
+        }
+      ],
+      "secondary_symptoms": [
+        "Chest pain or pressure (angina) — hypertension accelerates coronary atherosclerosis and increases myocardial oxygen demand",
+        "Shortness of breath — hypertensive heart failure (diastolic dysfunction), pulmonary oedema in hypertensive emergency",
+        "Facial flushing — episodic; from sympathetic activation or pheochromocytoma",
+        "Sweating (diaphoresis) — profuse sweating with severe hypertension or pheochromocytoma",
+        "Tinnitus (ringing in ears) — associated with high BP but not specific",
+        "Neck pain and stiffness — associated with very high BP; meningism in subarachnoid haemorrhage",
+        "Confusion or cognitive difficulty — chronic hypertension damages cerebral small vessels causing white matter lesions and vascular dementia",
+        "Haematuria (blood in urine) — hypertensive nephropathy; glomerulosclerosis",
+        "Nocturia (frequent urination at night) — common in hypertensive kidney disease from impaired urinary concentration",
+        "Cold extremities — peripheral artery disease from atherosclerosis accelerated by hypertension",
+        "Erectile dysfunction and reduced libido — vascular insufficiency from hypertension and atherosclerosis; also common antihypertensive drug side effect"
+      ],
+      "warning_signs_of_attack": [
+        "Sudden severe 'thunderclap' headache — worst headache of life — possible subarachnoid haemorrhage or hypertensive emergency",
+        "Sudden weakness or paralysis of face, arm, or leg (especially one-sided) — possible stroke from hypertension",
+        "Sudden slurred speech, aphasia, or facial drooping — stroke (FAST mnemonic: Face drooping, Arm weakness, Speech difficulty, Time to call emergency services)",
+        "Sudden loss of vision in one or both eyes — hypertensive emergency, retinal artery occlusion, or stroke",
+        "Severe chest pain radiating to back — possible aortic dissection (surgical emergency); characteristic tearing pain; BP differential between arms",
+        "Acute breathlessness at rest — possible hypertensive pulmonary oedema; acute heart failure",
+        "Confusion, altered consciousness, agitation — hypertensive encephalopathy; intracranial haemorrhage",
+        "Seizures — eclampsia (pregnancy); hypertensive encephalopathy"
+      ],
+      "symptoms_in_children": [
+        "Often completely asymptomatic — detected incidentally during school health screening",
+        "Headache — particularly occipital or frontal; often dismissed as tension headache",
+        "Blurred vision or visual changes — hypertensive retinopathy",
+        "Epistaxis (nosebleeds) — recurrent",
+        "Bell's palsy (facial nerve palsy) — associated with severe hypertension in children",
+        "Failure to thrive in infants with severe secondary hypertension",
+        "Secondary cause far more common in children than adults — renal disease (most common), coarctation of aorta, endocrine causes must be investigated"
+      ],
+      "symptoms_by_target_organ_damage": {
+        "heart": ["Angina", "Dyspnoea on exertion", "Palpitations", "Ankle oedema (heart failure)"],
+        "brain": ["Headache", "Visual disturbance", "Weakness/paralysis (TIA/stroke)", "Confusion (encephalopathy)", "Cognitive decline (vascular dementia)"],
+        "kidneys": ["Haematuria", "Nocturia", "Frothy urine (proteinuria)", "Peripheral oedema"],
+        "eyes": ["Blurred vision", "Visual field defects", "Sudden visual loss"],
+        "peripheral_vessels": ["Leg pain on walking (claudication)", "Cold extremities", "Foot ulcers"]
+      }
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Duration and severity of hypertension; previous BP readings and treatment history",
+        "Cardiovascular risk factors: smoking status, diabetes mellitus, dyslipidaemia, family history of premature CVD",
+        "Symptoms of target organ damage: chest pain, dyspnoea, palpitations, headache, visual changes, focal neurological symptoms, haematuria, oedema",
+        "Symptoms suggesting secondary hypertension: sweating/palpitation episodes (phaeochromocytoma); muscle weakness/cramps with diuretics (primary aldosteronism); symptoms of sleep apnoea; symptoms of thyroid disease; symptoms of Cushing's",
+        "Current and past medications — including OCP, NSAIDs, steroids, decongestants, herbal remedies",
+        "Dietary history: sodium intake (processed foods, added salt), alcohol consumption, caffeine intake",
+        "Physical activity level",
+        "Stress and psychosocial factors",
+        "Previous cardiovascular events: MI, stroke, TIA, heart failure, peripheral artery disease, renal disease",
+        "Family history: hypertension, premature cardiovascular disease, stroke, kidney disease, diabetes"
+      ],
+      "physical_examination": [
+        "BP measurement: properly seated patient, after 5 minutes rest; correct cuff size (bladder 80% of arm circumference); average of ≥2 readings; both arms on first visit (higher reading is the reference arm)",
+        "Standing BP measurement: to detect orthostatic hypotension (fall >20 mmHg SBP or >10 mmHg DBP on standing) — especially important in elderly and those on antihypertensives",
+        "Heart rate measurement — bradycardia (beta-blockers), tachycardia (anxiety, phaeochromocytoma, anaemia)",
+        "Weight and height — BMI calculation (obesity is a major modifiable risk factor)",
+        "Waist circumference — abdominal obesity (>102cm men; >88cm women) increases metabolic and cardiovascular risk",
+        "Cardiovascular examination: apex beat (displaced in LVH or cardiomegaly); S4 heart sound (LVH/non-compliant ventricle); murmurs; peripheral pulses; bilateral ankle oedema",
+        "Peripheral pulses and BP in both legs (compare with arms for coarctation)",
+        "Auscultation for bruits: carotid bruit (cerebrovascular disease); renal artery bruit at epigastrium/flanks (renovascular hypertension)",
+        "Fundoscopy: hypertensive retinopathy classification (Keith-Wagener-Barker grades I-IV); papilloedema (grade IV = hypertensive emergency)",
+        "Neurological examination: for focal deficits indicating previous or current stroke/TIA",
+        "Abdominal examination: enlarged kidneys (polycystic kidneys); renal bruit; adrenal mass",
+        "Signs of secondary causes: moon face, buffalo hump, striae (Cushing's); goitre (thyroid); cushingoid features"
+      ],
+      "blood_pressure_measurement_methods": {
+        "office_measurement": "Standard clinical measurement; at least 2 readings 1-2 minutes apart on 2 separate visits; average used; reference standard for diagnosis",
+        "abpm_ambulatory": {
+          "description": "Gold standard — 24-hour ambulatory BP monitoring; automatic cuff measures BP every 15-30 minutes over 24 hours during normal activities and sleep",
+          "advantages": "Detects white coat HTN, masked HTN, nocturnal dipping pattern, morning surge; best predictor of cardiovascular outcomes",
+          "thresholds": "ABPM: Daytime average ≥135/85 = hypertension; 24h average ≥130/80 = hypertension; Nighttime average ≥120/70 = hypertension",
+          "dipping": "Normal: >10% fall in nocturnal BP (dipper); Non-dipper or reverse dipper patterns associated with worse cardiovascular outcomes"
+        },
+        "home_bp_monitoring": {
+          "description": "Self-measurement at home with validated device; 2 readings morning and evening for 7 days; discard day 1 readings",
+          "threshold": "Home BP ≥135/85 mmHg = hypertension",
+          "advantages": "Identifies white coat and masked HTN; improves adherence; inexpensive"
+        }
+      },
+      "diagnostic_tests": [
+        {
+          "test_name": "Full Blood Count (FBC) / Complete Blood Count (CBC)",
+          "type": "Blood — Haematological",
+          "description": "Screens for anaemia (can cause secondary hypertension or exacerbate cardiac workload); polycythaemia (increases blood viscosity and BP); thrombocytopenia in pre-eclampsia (HELLP syndrome).",
+          "purpose": "Baseline assessment; detect anaemia, polycythaemia; screen for HELLP in pregnancy",
+          "key_metric": "Hb <120 g/L (women) or <130 g/L (men) = anaemia; Hb >185 (men) or >165 (women) = polycythaemia"
+        },
+        {
+          "test_name": "Renal Function Tests (Serum Creatinine, eGFR, Urea)",
+          "type": "Blood — Biochemical",
+          "description": "Essential baseline test — both to detect pre-existing CKD causing hypertension AND to assess kidney function before prescribing RAAS-blocking antihypertensives (ACEi/ARBs). Creatinine rise >20% after starting ACEi/ARB suggests renovascular disease.",
+          "purpose": "Detect CKD; baseline before antihypertensive therapy; dose adjustment of medications; detect hypertensive nephropathy progression",
+          "key_metric": "eGFR <60 mL/min/1.73m² = CKD; Creatinine >120 µmol/L (men) or >110 µmol/L (women) = impaired renal function"
+        },
+        {
+          "test_name": "Serum Electrolytes (Sodium, Potassium, Bicarbonate)",
+          "type": "Blood — Biochemical",
+          "description": "Hypokalaemia (low potassium) is a key clue for primary hyperaldosteronism (Conn's syndrome) and Cushing's syndrome. Hypernatraemia with hypertension suggests excess mineralocorticoid activity. Bicarbonate elevated in metabolic alkalosis (hyperaldosteronism).",
+          "purpose": "Screen for secondary hypertension; baseline before diuretic therapy; monitor during treatment",
+          "key_metric": "Hypokalaemia (<3.5 mmol/L spontaneously or with standard diuretic doses) — screen for primary aldosteronism; hypernatraemia + hypertension → secondary cause"
+        },
+        {
+          "test_name": "Fasting Blood Glucose and HbA1c",
+          "type": "Blood — Metabolic",
+          "description": "Diabetes and hypertension frequently coexist (~50% of type 2 diabetics are hypertensive) and synergistically increase cardiovascular risk. HbA1c provides 3-month average glucose control. Essential for overall cardiovascular risk stratification.",
+          "purpose": "Diagnose diabetes/pre-diabetes; cardiovascular risk assessment; guides BP target (stricter <130/80 in diabetes)",
+          "key_metric": "Fasting glucose ≥7.0 mmol/L (126 mg/dL) = diabetes; 6.1-6.9 mmol/L (110-125 mg/dL) = impaired fasting glucose; HbA1c ≥48 mmol/mol (6.5%) = diabetes"
+        },
+        {
+          "test_name": "Fasting Lipid Profile (Total Cholesterol, LDL, HDL, Triglycerides)",
+          "type": "Blood — Metabolic",
+          "description": "Dyslipidaemia is a major cardiovascular risk factor that coexists with hypertension in 30-40% of patients. Total cardiovascular risk assessment requires lipid profile. Most hypertensive patients with additional risk factors require statin therapy regardless of cholesterol level.",
+          "purpose": "Cardiovascular risk stratification (SCORE2 / Framingham risk score / QRisk3); guide statin therapy decision",
+          "key_metric": "LDL >4.9 mmol/L (190 mg/dL): very high CV risk; LDL target varies by overall CV risk category"
+        },
+        {
+          "test_name": "Urinalysis and Urine Albumin-to-Creatinine Ratio (ACR)",
+          "type": "Urine",
+          "description": "Urine dipstick screens for proteinuria, haematuria, and glucose. Urine ACR (or PCR) detects microalbuminuria — the earliest marker of hypertensive nephropathy. Microalbuminuria is an independent cardiovascular risk marker. Mandatory in all hypertensive patients at diagnosis and annually.",
+          "purpose": "Detect hypertensive nephropathy (microalbuminuria); screen for diabetic nephropathy; detect haematuria (renal disease); diagnose proteinuria (pre-eclampsia in pregnancy)",
+          "key_metric": "Microalbuminuria: ACR 3-30 mg/mmol (30-300 mg/g); Macroalbuminuria (proteinuria): ACR >30 mg/mmol; Haematuria: ≥3 RBCs/hpf"
+        },
+        {
+          "test_name": "12-Lead Electrocardiogram (ECG)",
+          "type": "Cardiac — Electrical",
+          "description": "Detects Left Ventricular Hypertrophy (LVH) — the most important cardiac consequence of hypertension. LVH on ECG (Sokolow-Lyon index: SV1+RV5 >35mm; Cornell product; Romhild index) is associated with 3-fold increased risk of cardiac events. Also detects arrhythmias (AF — major hypertension complication), ST/T changes (ischaemia), and left bundle branch block.",
+          "purpose": "Detect LVH (most important target organ damage marker); atrial fibrillation; ischaemic changes; arrhythmias",
+          "key_metric": "Sokolow-Lyon: SV1+RV5 ≥35mm = LVH; PR interval prolongation; P-wave changes (LAH); AF on rhythm strip"
+        },
+        {
+          "test_name": "Echocardiography (Transthoracic Echo — TTE)",
+          "type": "Cardiac — Imaging",
+          "description": "Most sensitive and specific test for LVH (more sensitive than ECG). Also assesses left ventricular function (systolic and diastolic), aortic root size, valvular disease, and pericardium. Diastolic dysfunction (impaired LV relaxation) is an early hypertensive cardiac consequence.",
+          "purpose": "Detect LVH (gold standard), diastolic dysfunction, systolic function assessment, aortic root assessment, valvular disease",
+          "key_metric": "LV mass index >115 g/m² (men) or >95 g/m² (women) = LVH; LAVI >34 mL/m² = LA enlargement; E/e' ratio >14 = diastolic dysfunction"
+        },
+        {
+          "test_name": "Thyroid Function Tests (TSH, Free T4)",
+          "type": "Blood — Endocrine",
+          "description": "Both hyperthyroidism (systolic hypertension, wide pulse pressure) and hypothyroidism (diastolic hypertension) can cause or worsen hypertension. TSH is the best single screening test.",
+          "purpose": "Screen for thyroid disease as a secondary cause of hypertension; routine in all newly diagnosed patients",
+          "key_metric": "TSH <0.4 mIU/L (hyperthyroidism); TSH >4.0 mIU/L (hypothyroidism); Free T4 for confirmation"
+        },
+        {
+          "test_name": "Aldosterone-to-Renin Ratio (ARR)",
+          "type": "Blood — Endocrine",
+          "description": "First-line screening test for primary hyperaldosteronism (Conn's syndrome) — the most common secondary endocrine cause of hypertension. Elevated aldosterone with suppressed renin (high ARR) is characteristic. Must stop spironolactone, eplerenone, and ARBs before testing.",
+          "purpose": "Screen for primary hyperaldosteronism in resistant hypertension, hypokalaemic hypertension, and patients <40 with Grade 2+ hypertension",
+          "key_metric": "ARR >30 (ng/dL)/(ng/mL/hr) with aldosterone >15 ng/dL is a positive screening result; confirm with salt loading test or fludrocortisone suppression test"
+        },
+        {
+          "test_name": "Urine Catecholamines / Plasma Metanephrines (Pheochromocytoma Screen)",
+          "type": "Urine / Blood — Endocrine",
+          "description": "24-hour urine fractionated metanephrines and catecholamines (or plasma free metanephrines) are the best tests for pheochromocytoma. Plasma free metanephrines have highest sensitivity (~99%).",
+          "purpose": "Screen for pheochromocytoma in: paroxysmal hypertension, hypertensive crises, incidentally discovered adrenal mass, family history of phaeochromocytoma/MEN2",
+          "key_metric": "Plasma metanephrines >3x upper limit of normal is highly specific for phaeochromocytoma; mildly elevated values common with anxiety, medications — confirmatory testing required"
+        },
+        {
+          "test_name": "Renal Ultrasound with Doppler",
+          "type": "Imaging",
+          "description": "First-line imaging for renal parenchymal disease (polycystic kidneys, asymmetric kidneys), renovascular disease (renal artery Doppler), and adrenal masses. Renal Doppler assesses renal artery stenosis (peak systolic velocity >200 cm/s, resistive index).",
+          "purpose": "Detect renal parenchymal disease, renal artery stenosis (renovascular HTN), adrenal masses",
+          "key_metric": "Asymmetry in kidney size >1.5 cm suggests renovascular disease; renal artery PSV >200 cm/s suggests stenosis"
+        },
+        {
+          "test_name": "Fundoscopy (Direct Ophthalmoscopy)",
+          "type": "Ophthalmic",
+          "description": "Examination of retinal blood vessels directly mirrors the state of small vessels throughout the body. Keith-Wagener-Barker (KWB) grading system: Grade I (arterial narrowing, copper wiring); Grade II (AV nipping); Grade III (flame haemorrhages, cotton wool spots — hypertensive urgency/emergency); Grade IV (papilloedema — hypertensive emergency). Grade III-IV = hypertensive emergency.",
+          "purpose": "Assess target organ damage in retinal vessels; detect hypertensive emergency (papilloedema); grade severity of hypertensive retinopathy",
+          "key_metric": "KWB Grade III-IV (haemorrhages, exudates, papilloedema) = hypertensive emergency requiring immediate treatment"
+        },
+        {
+          "test_name": "Carotid Intima-Media Thickness (CIMT) and Carotid Ultrasound",
+          "type": "Imaging — Vascular",
+          "description": "Measures the thickness of the inner two layers of the carotid artery wall — a surrogate marker of subclinical atherosclerosis. Elevated CIMT is an independent cardiovascular risk marker. Also detects carotid plaques.",
+          "purpose": "Assess subclinical atherosclerosis; risk stratification; detect carotid plaques",
+          "key_metric": "CIMT >0.9mm = increased subclinical atherosclerosis; plaques = established atherosclerosis (high CV risk)"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "All antihypertensive medications must be prescribed, initiated, and monitored by a licensed physician or cardiologist. Self-adjustment or discontinuation of antihypertensive therapy is dangerous and can precipitate hypertensive crisis. Treatment should be individualized based on age, ethnicity, comorbidities, BP level, and side effect profile.",
+      "treatment_principles": [
+        "BP target: <140/90 mmHg for most adults; <130/80 mmHg for high-risk patients (diabetes, CKD, established CVD, prior stroke — per ACC/AHA)",
+        "Single drug therapy (monotherapy) for Grade 1 hypertension in low-moderate CV risk",
+        "Combination therapy from outset for Grade 2-3 hypertension, or Grade 1 with high CV risk",
+        "Preferred combinations: ACEi or ARB + CCB; ACEi or ARB + thiazide diuretic; CCB + thiazide diuretic",
+        "ACEi and ARBs must NEVER be combined (increased risk of hyperkalaemia, AKI, hypotension — ALTITUDE and ONTARGET trials)",
+        "Renin system blockade (ACEi or ARB) preferred in: diabetes, CKD, proteinuria, post-MI, systolic heart failure",
+        "CCBs and thiazide diuretics preferred first-line in: Black/African American patients, elderly isolated systolic HTN",
+        "Treat-to-target approach: reassess BP response every 4-8 weeks; step up therapy if target not achieved"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-51",
+          "category_name": "ACE Inhibitors (ACEi) — First-Line",
+          "purpose": "Block conversion of angiotensin I to angiotensin II (the RAAS), reducing vasoconstriction, aldosterone secretion, sodium retention, and cardiac and renal fibrosis. First-line for hypertension, especially with diabetes, CKD, proteinuria, heart failure, or post-MI.",
+          "onset": "BP reduction within hours; full effect in 4-6 weeks",
+          "medicines": [
+            {
+              "name": "Ramipril",
+              "brand_examples": ["Cardace", "Altace", "Hopace", "Ramace"],
+              "form": "Capsule, Tablet",
+              "dosage": "Starting: 2.5 mg once daily; maintenance: 5-10 mg once daily; heart failure: titrate to 10 mg/day",
+              "use_case": "Hypertension; heart failure with reduced EF (HFrEF); post-MI with LV dysfunction; diabetic nephropathy; stroke prevention (HOPE trial benefit)",
+              "mechanism": "Inhibits ACE; reduces angiotensin II and aldosterone; reduces afterload, preload, and cardiac remodelling",
+              "side_effects": ["Dry, persistent cough (10-20% — class effect; most common reason for switching to ARB)", "First-dose hypotension (especially if volume depleted)", "Hyperkalaemia (monitor potassium and renal function)", "Acute Kidney Injury — renal function worsens by >20%: stop drug (bilateral renal artery stenosis contraindication)", "Angioedema (rare but life-threatening — swelling of face, lips, tongue, throat — STOP immediately; class contraindication to future ACEi use)"],
+              "contraindications": ["Pregnancy (ABSOLUTE — teratogenic; fetal renal agenesis)", "Bilateral renal artery stenosis", "Hyperkalaemia (K+ >5.5 mmol/L)", "Previous angioedema to ACEi", "Combination with aliskiren in diabetes or CKD"],
+              "monitoring": "Serum creatinine, eGFR, and potassium at 1-4 weeks after starting and after each dose increase; annually thereafter"
+            },
+            {
+              "name": "Lisinopril",
+              "brand_examples": ["Lisoril", "Prinivil", "Zestril", "Hipril"],
+              "form": "Tablet",
+              "dosage": "Starting: 2.5-5 mg once daily; maintenance: 10-40 mg once daily",
+              "use_case": "Hypertension; heart failure; post-MI; diabetic nephropathy",
+              "side_effects": ["Dry cough", "Hyperkalaemia", "Renal impairment", "Angioedema", "Dizziness"]
+            },
+            {
+              "name": "Enalapril",
+              "brand_examples": ["Envas", "Vasotec", "Enapril"],
+              "form": "Tablet",
+              "dosage": "Starting: 2.5-5 mg twice daily; maintenance: 10-20 mg twice daily",
+              "use_case": "Hypertension; heart failure (CONSENSUS and SOLVD landmark trials established ACEi in heart failure)",
+              "side_effects": ["Dry cough", "Hyperkalaemia", "Renal impairment", "Fatigue"]
+            },
+            {
+              "name": "Perindopril",
+              "brand_examples": ["Coversyl", "Acertil", "Perinorm"],
+              "form": "Tablet",
+              "dosage": "4-8 mg once daily (arginine salt: 5-10 mg); starting 2-4 mg",
+              "use_case": "Hypertension; stable coronary artery disease (EUROPA trial benefit); stroke prevention (combined with indapamide in PROGRESS trial)",
+              "side_effects": ["Cough", "Dizziness", "Hyperkalaemia"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-52",
+          "category_name": "Angiotensin Receptor Blockers (ARBs) — First-Line",
+          "purpose": "Block angiotensin II type 1 (AT1) receptor — the effector receptor for vasoconstriction and aldosterone release. Equally effective as ACEi but WITHOUT the dry cough (key advantage). Preferred in patients who develop ACEi cough. First-line for hypertension, CKD, diabetes, heart failure (ACEi-intolerant).",
+          "medicines": [
+            {
+              "name": "Losartan",
+              "brand_examples": ["Losar", "Cozaar", "Repace", "Losakind"],
+              "form": "Tablet",
+              "dosage": "Starting: 25-50 mg once daily; maintenance: 50-100 mg once daily",
+              "use_case": "Hypertension; diabetic nephropathy in type 2 DM (RENAAL trial); LVH reduction (LIFE trial — superior to atenolol for stroke prevention); gout (mild uricosuric effect — useful if gout comorbidity)",
+              "mechanism": "Selective AT1 receptor antagonist; blocks angiotensin II effects; no effect on bradykinin (no cough)",
+              "side_effects": ["Hyperkalaemia", "Dizziness", "First-dose hypotension", "AKI", "Angioedema (significantly rarer than ACEi but possible)"],
+              "unique_benefit": "Mild uricosuric effect reduces uric acid levels — useful in hypertensive patients with gout or hyperuricemia"
+            },
+            {
+              "name": "Telmisartan",
+              "brand_examples": ["Telma", "Micardis", "Telsar", "Telmikind"],
+              "form": "Tablet",
+              "dosage": "Starting: 20-40 mg once daily; maintenance: 40-80 mg once daily",
+              "use_case": "Hypertension; cardiovascular protection in high-risk patients (ONTARGET — non-inferior to ramipril); longest half-life of all ARBs (24h) — ideal once-daily drug for adherence",
+              "unique_benefit": "Longest half-life (24 hours) → best 24-hour BP coverage; mild PPAR-gamma agonism may improve insulin sensitivity"
+            },
+            {
+              "name": "Valsartan",
+              "brand_examples": ["Valtan", "Diovan", "Valsart", "Valsartan"],
+              "form": "Tablet",
+              "dosage": "80-160 mg once daily; maximum 320 mg/day",
+              "use_case": "Hypertension; heart failure (Val-HeFT); post-MI LV dysfunction (VALIANT — equivalent to captopril)"
+            },
+            {
+              "name": "Olmesartan",
+              "brand_examples": ["Olmesar", "Benicar", "Olmat"],
+              "form": "Tablet",
+              "dosage": "10-20 mg once daily; maximum 40 mg/day",
+              "use_case": "Hypertension; one of the most potent ARBs in BP-lowering; atherosclerosis prevention (OLIVUS trial)",
+              "note": "Associated with sprue-like enteropathy (severe diarrhoea, weight loss) with prolonged use — rare but important to recognize"
+            },
+            {
+              "name": "Candesartan",
+              "brand_examples": ["Candesar", "Atacand", "Cansartan"],
+              "form": "Tablet",
+              "dosage": "4-8 mg once daily; maximum 32 mg/day",
+              "use_case": "Hypertension; heart failure (CHARM trials — reduced mortality); migraine prevention (off-label)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-53",
+          "category_name": "Calcium Channel Blockers (CCBs) — First-Line",
+          "purpose": "Block voltage-gated L-type calcium channels in vascular smooth muscle and cardiac cells, causing vasodilation and reduced vascular resistance. Dihydropyridines act predominantly on peripheral vasculature; non-dihydropyridines also slow heart rate and AV conduction.",
+          "medicines": [
+            {
+              "name": "Amlodipine",
+              "brand_examples": ["Amlovas", "Norvasc", "Stamlo", "Amlong", "Amlodac"],
+              "form": "Tablet",
+              "dosage": "Starting: 2.5-5 mg once daily; maintenance: 5-10 mg once daily",
+              "use_case": "MOST WIDELY USED antihypertensive globally; hypertension (first-line); stable and vasospastic angina; isolated systolic hypertension in elderly; Black/African American patients; ALLHAT trial — superior CV outcomes vs ACEi in some groups",
+              "mechanism": "Dihydropyridine CCB; predominantly peripheral vasodilation; long half-life (35-50 hours) → smooth 24-hour BP control; minimal heart rate effect",
+              "side_effects": ["Peripheral oedema — ankle swelling (most common; dose-dependent; from arteriolar vasodilation with preserved venous tone; not fluid retention)", "Flushing and headache (especially first week)", "Palpitations and reflex tachycardia (minimal with amlodipine vs shorter-acting CCBs)", "Gingival hyperplasia (overgrowth of gum tissue — with prolonged use)"],
+              "note": "Ankle oedema can be reduced by: adding ACEi/ARB (co-prescription reduces oedema by ~50%); combining with diuretic; raising legs; switching to different CCB"
+            },
+            {
+              "name": "Nifedipine (Modified Release / Extended Release)",
+              "brand_examples": ["Adalat LA", "Nicardia Retard", "Procardia XL"],
+              "form": "Modified release tablet (SR/LA/GITS)",
+              "dosage": "30-60 mg once daily (SR/LA/GITS formulation); 20-40 mg twice daily (retard)",
+              "use_case": "Hypertension; Raynaud's phenomenon; angina; preterm labour (tocolysis off-label); ONLY use modified-release formulations for hypertension",
+              "side_effects": ["Flushing and facial reddening", "Headache", "Peripheral oedema", "Reflex tachycardia (more than amlodipine)"],
+              "warning": "SHORT-ACTING sublingual nifedipine (immediate-release capsule) is ABSOLUTELY CONTRAINDICATED for hypertensive emergencies — causes unpredictable, rapid BP drops, reflex tachycardia, and has caused fatal MI and stroke"
+            },
+            {
+              "name": "Felodipine",
+              "brand_examples": ["Felodip", "Plendil", "Renedil"],
+              "form": "Extended-release tablet",
+              "dosage": "2.5-10 mg once daily",
+              "use_case": "Hypertension; heart failure (unlike most CCBs, felodipine and amlodipine are safe in heart failure — Vdal-HeFT)",
+              "note": "Grapefruit juice significantly increases felodipine plasma levels (CYP3A4 inhibition) — counsel patients to avoid grapefruit"
+            },
+            {
+              "name": "Diltiazem (Non-Dihydropyridine CCB)",
+              "brand_examples": ["Dilzem", "Cardizem", "Tiazac"],
+              "form": "Extended-release tablet, Capsule, IV",
+              "dosage": "Hypertension: 120-240 mg SR once or twice daily; Angina: 60-120 mg three times daily standard-release",
+              "use_case": "Hypertension with tachyarrhythmia or supraventricular tachycardia; angina; rate control in atrial flutter/fibrillation; NOT suitable with heart failure with reduced EF (negative inotropic effect)",
+              "mechanism": "Non-dihydropyridine CCB; acts on both peripheral vessels AND cardiac cells (negative chronotropy, negative dromotropy); reduces heart rate and AV conduction",
+              "side_effects": ["Bradycardia", "Heart block (AV block)", "Constipation", "Pedal oedema", "Dizziness"],
+              "contraindications": ["HFrEF (reduced ejection fraction)", "Sick sinus syndrome", "2nd/3rd degree AV block without pacemaker", "Combination with verapamil or beta-blockers (additive heart block risk)"]
+            },
+            {
+              "name": "Verapamil (Non-Dihydropyridine CCB)",
+              "brand_examples": ["Calaptin", "Isoptin", "Verelan"],
+              "form": "Tablet, SR tablet, IV",
+              "dosage": "Hypertension: 240-360 mg SR once daily",
+              "use_case": "Hypertension; SVT; rate control AF; hypertrophic cardiomyopathy; migraine prevention",
+              "side_effects": ["Constipation (most common)", "Bradycardia", "AV block", "HF worsening", "Peripheral oedema"],
+              "contraindications": ["HFrEF", "Combination with beta-blockers (serious AV block risk)", "Wolff-Parkinson-White syndrome with AF"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-54",
+          "category_name": "Thiazide and Thiazide-Like Diuretics — First-Line",
+          "purpose": "Initially reduce blood pressure by promoting sodium and water excretion (volume depletion). Long-term BP reduction from direct arterial vasodilation through reduced vascular reactivity. Particularly effective in elderly, isolated systolic hypertension, and Black/African American patients.",
+          "medicines": [
+            {
+              "name": "Indapamide",
+              "brand_examples": ["Lozol SR", "Natrilix SR", "Indicontin"],
+              "form": "Modified release tablet",
+              "dosage": "1.5 mg SR once daily (preferred); 2.5 mg standard",
+              "use_case": "PREFERRED thiazide-like diuretic — lower metabolic side effects than hydrochlorothiazide; reduces LVH; reduces stroke (PROGRESS trial with perindopril); CKD preferred over HCTZ (remains effective at lower GFR)",
+              "side_effects": ["Hyponatraemia (low sodium — especially in elderly women)", "Hypokalemia (potassium loss — consider K-sparing agent or monitor)", "Hyperuricemia (may precipitate gout)", "Hyperglycaemia (mild)", "Photosensitivity rash"],
+              "monitoring": "Electrolytes (Na+, K+), renal function, uric acid at 4-8 weeks; annually thereafter"
+            },
+            {
+              "name": "Chlorthalidone",
+              "brand_examples": ["Hygroton", "Thalitone"],
+              "form": "Tablet",
+              "dosage": "12.5-25 mg once daily",
+              "use_case": "Preferred thiazide-like in USA (ALLHAT used chlorthalidone); longer duration of action than HCTZ; better 24-hour BP coverage; more effective in reducing cardiovascular events",
+              "side_effects": ["Hypokalaemia", "Hyponatraemia", "Hyperglycaemia", "Hyperuricaemia", "Hypomagnesaemia"]
+            },
+            {
+              "name": "Hydrochlorothiazide (HCTZ)",
+              "brand_examples": ["HCT", "Esidrex", "HydroSaluric"],
+              "form": "Tablet",
+              "dosage": "12.5-25 mg once daily; maximum 50 mg/day",
+              "use_case": "Hypertension; oedema; combination formulations with ACEi or ARB (e.g., perindopril/indapamide, losartan/HCTZ); frequently used as part of fixed-dose combinations",
+              "side_effects": ["Hypokalaemia", "Hyponatraemia", "Glucose intolerance", "Dyslipidaemia (mild)", "Hyperuricaemia"],
+              "note": "Less effective at lower eGFR (<30); chlorthalidone or indapamide preferred over HCTZ in most situations when specifically choosing a thiazide-like diuretic"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-55",
+          "category_name": "Beta-Adrenergic Blockers (Beta-Blockers) — Second-Line (Specific Indications)",
+          "purpose": "Reduce heart rate and cardiac output; block sympathetic stimulation of the heart; reduce renin release. Not recommended as first-line for uncomplicated hypertension (less effective than other first-line agents for stroke prevention) but essential first-line in specific situations.",
+          "specific_indications": "Post-MI, stable angina, heart failure with reduced EF (HFrEF), atrial fibrillation (rate control), hypertension in pregnancy (labetalol), phaeochromocytoma (after alpha-blocker), young patients with sympathetic hyperactivity",
+          "medicines": [
+            {
+              "name": "Bisoprolol",
+              "brand_examples": ["Corbis", "Zebeta", "Concor", "Bystolic (nebivolol)"],
+              "form": "Tablet",
+              "dosage": "Starting 2.5-5 mg once daily; maximum 10-20 mg/day",
+              "use_case": "Hypertension (2nd-line); FIRST-LINE in: HFrEF (CIBIS-II trial); stable angina; post-MI; atrial fibrillation rate control",
+              "mechanism": "Highly cardioselective beta-1 blocker; minimal beta-2 blockade — safer in mild asthma/COPD than non-selective",
+              "side_effects": ["Fatigue and lethargy", "Bradycardia", "Cold extremities", "Bronchoconstriction (avoid in severe asthma/COPD)", "Erectile dysfunction", "Masking hypoglycaemia symptoms (in diabetes — blunts tachycardia; sweating preserved)"],
+              "contraindications": ["Cardiogenic shock", "Severe decompensated heart failure", "Sick sinus syndrome or 2nd/3rd degree AV block without pacemaker", "Severe asthma (relative)"]
+            },
+            {
+              "name": "Atenolol",
+              "brand_examples": ["Tenormin", "Aten", "Betacard"],
+              "form": "Tablet",
+              "dosage": "25-50 mg once daily; maximum 100 mg/day",
+              "use_case": "Hypertension; angina; post-MI; commonly used but LIFE trial showed losartan superior for stroke prevention",
+              "side_effects": ["Fatigue", "Bradycardia", "Cold hands", "Bronchoconstriction", "Erectile dysfunction"],
+              "note": "Renal excretion — dose reduce in CKD"
+            },
+            {
+              "name": "Metoprolol Succinate (Extended Release)",
+              "brand_examples": ["Betaloc ZOK", "Toprol XL", "Metolar XR"],
+              "form": "Extended-release tablet",
+              "dosage": "Starting 25-50 mg once daily; maximum 200 mg/day",
+              "use_case": "HFrEF (MERIT-HF trial — reduced mortality); hypertension; post-MI; angina; AF rate control",
+              "side_effects": ["Fatigue", "Dizziness", "Bradycardia", "Worsening heart failure if titrated too fast"]
+            },
+            {
+              "name": "Carvedilol",
+              "brand_examples": ["Cardivas", "Coreg", "Carvistar"],
+              "form": "Tablet",
+              "dosage": "Starting: 3.125-6.25 mg twice daily; target: 25 mg twice daily (titrate over weeks)",
+              "use_case": "HFrEF (COPERNICUS, CAPRICORN trials); hypertension; vasodilatory properties from alpha-1 blockade in addition to non-selective beta blockade",
+              "mechanism": "Non-selective beta-blocker + alpha-1 blocker; vasodilatory; anti-oxidant properties",
+              "side_effects": ["Dizziness (from alpha blockade causing orthostatic hypotension)", "Bradycardia", "Fatigue", "Weight gain", "Worsening heart failure if started at high dose"]
+            },
+            {
+              "name": "Labetalol",
+              "brand_examples": ["Normodyne", "Trandate", "Labtalol"],
+              "form": "Tablet, IV Injection",
+              "dosage": "Oral: 100-400 mg twice daily; IV: 20-80 mg boluses or 2 mg/min infusion",
+              "use_case": "PREFERRED in pregnancy hypertension (safe in all trimesters); hypertensive emergencies (IV); phaeochromocytoma (after alpha-blockers established)",
+              "mechanism": "Non-selective beta-blocker + alpha-1 blocker; combined mechanisms lower both cardiac output and peripheral resistance",
+              "side_effects": ["Postural hypotension", "Fatigue", "Scalp tingling", "Nasal congestion", "Neonatal bradycardia (if used near delivery)"]
+            },
+            {
+              "name": "Nebivolol",
+              "brand_examples": ["Nebicard", "Bystolic", "Nebilet"],
+              "form": "Tablet",
+              "dosage": "2.5-5 mg once daily; maximum 10 mg/day",
+              "use_case": "Hypertension; HFrEF; unique advantage: releases nitric oxide causing vasodilation — significantly less erectile dysfunction than other beta-blockers",
+              "mechanism": "Highly selective beta-1 blocker + endothelium-dependent vasodilation via nitric oxide release",
+              "side_effects": ["Bradycardia", "Fatigue", "Headache (less than other beta-blockers)", "Lowest rate of erectile dysfunction among beta-blockers"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-56",
+          "category_name": "Mineralocorticoid Receptor Antagonists (MRAs) / Potassium-Sparing Diuretics",
+          "purpose": "Block aldosterone receptors preventing sodium retention and potassium loss. Most effective 4th-line drug for resistant hypertension. Essential in heart failure with reduced EF.",
+          "medicines": [
+            {
+              "name": "Spironolactone",
+              "brand_examples": ["Aldactone", "Spirolang", "Lasilactone (with furosemide)"],
+              "form": "Tablet",
+              "dosage": "Resistant HTN: 25-50 mg once daily; HF: start 12.5-25 mg; maximum 50-100 mg/day",
+              "use_case": "MOST EFFECTIVE 4th-line drug for resistant hypertension (PATHWAY-2 trial — superior to bisoprolol and doxazosin); primary hyperaldosteronism; HFrEF (RALES trial); ascites in cirrhosis",
+              "side_effects": ["Hyperkalaemia (monitor closely — DANGEROUS if added to ACEi/ARB; avoid if K+ >5.0 mmol/L)", "Gynaecomastia and breast tenderness in men (common, dose-dependent)", "Menstrual irregularities in women", "Renal impairment"],
+              "monitoring": "Renal function and potassium at 1 week and 4 weeks after starting; monthly for first 3 months; contraindicated with eGFR <30 or K+ >5.0",
+              "note": "Gynaecomastia can be switched to eplerenone (more selective, less antiandrogenic)"
+            },
+            {
+              "name": "Eplerenone",
+              "brand_examples": ["Inspra", "Eplenone"],
+              "form": "Tablet",
+              "dosage": "25-50 mg once daily",
+              "use_case": "Resistant hypertension; post-MI HFrEF (EPHESUS trial); alternative to spironolactone without gynaecomastia",
+              "side_effects": ["Hyperkalaemia", "Dizziness", "No gynaecomastia (selective MRA — less antiandrogenic effects)"],
+              "monitoring": "Renal function and potassium; more expensive than spironolactone"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-57",
+          "category_name": "Loop Diuretics",
+          "purpose": "Most potent diuretics — block Na-K-2Cl transporter in thick ascending limb of loop of Henle. Not first-line for hypertension in normal renal function but essential when hypertension is complicated by CKD (where thiazides lose efficacy at eGFR <30), heart failure, or volume overload states.",
+          "medicines": [
+            {
+              "name": "Furosemide (Frusemide)",
+              "brand_examples": ["Lasix", "Frusenex", "Fursemide"],
+              "form": "Tablet, IV Injection, Oral solution",
+              "dosage": "Hypertension + CKD: 40-80 mg once or twice daily; Heart failure oedema: 20-240 mg/day titrated; IV for acute pulmonary oedema: 40-80 mg IV",
+              "use_case": "Hypertension + CKD (eGFR <30); hypertensive emergency with pulmonary oedema; heart failure; nephrotic syndrome; resistant HTN with volume overload",
+              "side_effects": ["Hypokalaemia (supplement potassium or add K-sparing agent)", "Hyponatraemia", "Hypomagnesaemia", "Hyperuricaemia and gout", "Ototoxicity (rapid high-dose IV)", "Dehydration and acute kidney injury"],
+              "monitoring": "Electrolytes (Na+, K+, Mg2+) and renal function regularly"
+            },
+            {
+              "name": "Torasemide (Torsemide)",
+              "brand_examples": ["Dytor", "Demadex"],
+              "form": "Tablet",
+              "dosage": "5-20 mg once daily",
+              "use_case": "Hypertension + CKD; heart failure (better bioavailability than furosemide; no post-diuretic sodium retention; may have anti-fibrotic effects)",
+              "side_effects": ["Hypokalaemia", "Dizziness", "Headache"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-58",
+          "category_name": "Alpha-1 Adrenergic Blockers",
+          "purpose": "Block alpha-1 receptors in peripheral arterioles, causing vasodilation and BP reduction. Not recommended as first-line antihypertensives (ALLHAT showed higher heart failure risk than thiazides) but useful as add-on therapy in resistant hypertension and specifically for hypertension with benign prostatic hyperplasia (BPH).",
+          "medicines": [
+            {
+              "name": "Doxazosin",
+              "brand_examples": ["Doxacard", "Cardura", "Doxylab"],
+              "form": "Tablet, Modified Release tablet",
+              "dosage": "Starting: 1 mg once daily at bedtime (first dose effect); maintenance: 2-8 mg once daily (MR); maximum 16 mg/day",
+              "use_case": "Resistant hypertension (3rd or 4th agent); hypertension + BPH (dual indication — relaxes prostate smooth muscle and reduces BP); pheochromocytoma (pre-operative alpha blockade)",
+              "mechanism": "Selective alpha-1 blocker; peripheral vasodilation; also relaxes bladder neck and prostate smooth muscle",
+              "side_effects": ["First-dose postural hypotension (start at night — take at bedtime)", "Dizziness and falls (especially elderly)", "Palpitations", "Oedema", "Retrograde ejaculation"],
+              "note": "Always start at lowest dose at bedtime to prevent first-dose syncope"
+            },
+            {
+              "name": "Prazosin",
+              "brand_examples": ["Minipress", "Minipres"],
+              "form": "Tablet",
+              "dosage": "0.5-1 mg twice or three times daily; maximum 20 mg/day",
+              "use_case": "Resistant hypertension; BPH; Raynaud's phenomenon; PTSD (off-label: reduces nightmares)",
+              "side_effects": ["First-dose syncope (more pronounced than doxazosin)", "Postural hypotension", "Dizziness", "Oedema"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-59",
+          "category_name": "Centrally Acting Antihypertensives",
+          "purpose": "Act on alpha-2 receptors in the brainstem, reducing sympathetic outflow to heart and blood vessels. Methyldopa is the drug of choice in pregnancy.",
+          "medicines": [
+            {
+              "name": "Methyldopa",
+              "brand_examples": ["Aldomet", "Methyldopate", "Dopamet"],
+              "form": "Tablet",
+              "dosage": "250 mg two to three times daily; maximum 3 g/day (pregnancy: 250 mg three times daily, maximum 3g/day)",
+              "use_case": "DRUG OF CHOICE for hypertension in pregnancy (all trimesters; extensive safety data; used for >50 years in pregnancy); refractory hypertension add-on",
+              "mechanism": "Centrally-acting alpha-2 agonist; reduces sympathetic outflow from CNS; decreases heart rate, cardiac output, and peripheral resistance",
+              "side_effects": ["Sedation and drowsiness (most common)", "Dry mouth", "Depression and mood changes", "Positive Coombs test (haemolytic anaemia — rare)", "Hepatotoxicity (rare but important — monitor LFTs)", "Rebound hypertension if abruptly stopped"],
+              "contraindications": ["Liver disease", "Phaeochromocytoma", "Depression"]
+            },
+            {
+              "name": "Clonidine",
+              "brand_examples": ["Catapres", "Catapresan"],
+              "form": "Tablet, Transdermal patch, IV",
+              "dosage": "0.1-0.3 mg twice or three times daily; transdermal patch weekly",
+              "use_case": "Resistant or refractory hypertension add-on; opiate withdrawal; ADHD (off-label); menopausal flushing",
+              "side_effects": ["Sedation", "Dry mouth", "Constipation", "Rebound hypertension on abrupt withdrawal (potentially dangerous — do not stop abruptly)"],
+              "warning": "Rebound hypertensive crisis with abrupt discontinuation — always taper gradually"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-60",
+          "category_name": "Direct Vasodilators",
+          "purpose": "Directly relax arteriolar smooth muscle causing vasodilation and BP reduction. Limited first-line use due to reflex tachycardia, sodium retention, and fluid retention side effects — typically used as add-on in resistant or refractory hypertension.",
+          "medicines": [
+            {
+              "name": "Hydralazine",
+              "brand_examples": ["Apresoline", "Hydralazine"],
+              "form": "Tablet, IV Injection",
+              "dosage": "Oral: 25-50 mg two to four times daily; IV for hypertensive emergency in pregnancy: 5-10 mg IV bolus every 20-30 minutes",
+              "use_case": "Hypertensive emergencies in pregnancy (IV); severe heart failure as add-on (BiDil — combined with nitrate in self-identified African Americans); chronic refractory hypertension",
+              "side_effects": ["Reflex tachycardia (combine with beta-blocker)", "Fluid retention (combine with diuretic)", "Headache and flushing", "Drug-induced lupus (slow acetylators at high doses — ANA positive; reversible on stopping)", "Peripheral neuropathy (pyridoxine deficiency)"]
+            },
+            {
+              "name": "Minoxidil",
+              "brand_examples": ["Loniten (oral)", "Rogaine (topical — for hair loss only)"],
+              "form": "Tablet (oral)",
+              "dosage": "Starting: 2.5-5 mg once or twice daily; maximum 100 mg/day",
+              "use_case": "Severe refractory hypertension (typically 5th or 6th line); most potent oral vasodilator available",
+              "side_effects": ["Severe fluid retention (requires combination with high-dose loop diuretic)", "Reflex tachycardia (requires beta-blocker)", "Hirsutism (excessive hair growth — hair growth basis of topical minoxidil)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-61",
+          "category_name": "Angiotensin Receptor-Neprilysin Inhibitor (ARNI)",
+          "purpose": "Dual-acting: blocks AT1 angiotensin receptor (like ARB) AND inhibits neprilysin (increases natriuretic peptides — causing vasodilation and natriuresis). Primarily for heart failure with reduced EF; growing evidence for hypertension management in HF patients.",
+          "medicines": [
+            {
+              "name": "Sacubitril-Valsartan (Entresto)",
+              "brand_examples": ["Vymada", "Entresto", "Sacuval"],
+              "form": "Tablet",
+              "dosage": "Starting: 24/26 mg (sacubitril/valsartan) twice daily; target: 97/103 mg twice daily",
+              "use_case": "HFrEF (PARADIGM-HF — superior to enalapril in reducing mortality); may control BP in hypertensive HF patients",
+              "mechanism": "Sacubitril inhibits neprilysin (prevents breakdown of ANP, BNP, bradykinin) + valsartan blocks AT1 receptor",
+              "side_effects": ["Hypotension (most common)", "Hyperkalaemia", "Angioedema (do NOT use within 36 hours of ACEi — washout required)", "Renal impairment"],
+              "note": "Must stop ACEi for 36-hour washout period before starting to prevent angioedema risk (bradykinin potentiation)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-62",
+          "category_name": "IV Medications for Hypertensive Emergencies (ICU/Hospital Only)",
+          "purpose": "Intravenous agents for immediate controlled blood pressure reduction in hypertensive emergencies. Always in ICU/monitored setting with arterial line monitoring. Rate of BP reduction must be controlled — too rapid reduction causes ischaemia.",
+          "note": "Target: reduce BP by 10-20% in first hour; 25% maximum over first 24 hours (EXCEPT: aortic dissection — target SBP <120 within 20 min; ischaemic stroke — reduce only if >220/120 or if thrombolysis planned, do not reduce below 185/110)",
+          "medicines": [
+            {
+              "name": "Labetalol IV",
+              "brand_examples": ["Trandate IV", "Normodyne IV"],
+              "form": "IV Injection / Infusion",
+              "dosage": "20-80 mg IV bolus every 10 minutes (max 300 mg); or 0.5-2 mg/min infusion",
+              "use_case": "Most common first-line IV agent for hypertensive emergency; aortic dissection (as adjunct); hypertension in pregnancy/eclampsia; post-operative hypertension",
+              "side_effects": ["Bradycardia", "Bronchospasm (avoid in asthma)", "Postural hypotension", "Nausea"]
+            },
+            {
+              "name": "Nicardipine IV",
+              "brand_examples": ["Cardene IV"],
+              "form": "IV Infusion",
+              "dosage": "5 mg/hour IV; titrate by 2.5 mg/hour every 5 minutes; maximum 15 mg/hour",
+              "use_case": "Hypertensive emergencies; perioperative hypertension; ischaemic stroke; pre-eclampsia; preferred in neurological emergencies",
+              "side_effects": ["Reflex tachycardia", "Headache", "Flushing"]
+            },
+            {
+              "name": "Sodium Nitroprusside IV",
+              "brand_examples": ["Nipride", "Nitropress"],
+              "form": "IV Infusion",
+              "dosage": "0.25-10 mcg/kg/min IV infusion; start at lowest dose",
+              "use_case": "Hypertensive emergencies requiring precise, immediate BP control; aortic dissection; severe pulmonary oedema; most potent and titratable IV agent",
+              "mechanism": "Releases nitric oxide causing direct balanced arterial and venous vasodilation",
+              "side_effects": ["Cyanide and thiocyanate toxicity (prolonged use or renal failure)", "Precipitous hypotension", "Reflex tachycardia", "Intracranial pressure rise (caution in intracerebral haemorrhage)"],
+              "monitoring": "Requires intra-arterial BP monitoring; ICU only; limit to 24-48 hours; check thiocyanate levels"
+            },
+            {
+              "name": "Hydralazine IV",
+              "brand_examples": ["Apresoline IV"],
+              "form": "IV Injection",
+              "dosage": "5-10 mg IV bolus every 20-30 minutes; maximum 20 mg",
+              "use_case": "Hypertensive emergency in pregnancy and eclampsia (widely available globally); pre-eclampsia",
+              "side_effects": ["Unpredictable BP response", "Reflex tachycardia", "Headache", "Flushing"],
+              "note": "Less titratable than labetalol or nicardipine; use when those are unavailable"
+            },
+            {
+              "name": "IV Magnesium Sulfate",
+              "brand_examples": ["MgSO4 injection"],
+              "form": "IV Infusion",
+              "dosage": "Loading: 4-6g IV over 15-20 minutes; maintenance: 1-2g/hour infusion",
+              "use_case": "ECLAMPSIA — seizure prevention and treatment in pre-eclampsia/eclampsia. Primary indication is anticonvulsant (not antihypertensive per se but reduces cerebrovascular complications). WHO essential medicine for eclampsia.",
+              "monitoring": "Respiratory rate (must be ≥12/min); deep tendon reflexes (loss precedes respiratory depression); urine output (>25mL/hr); Mg2+ levels; calcium gluconate antidote must be at bedside"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet is the cornerstone of hypertension prevention and management. The DASH diet (Dietary Approaches to Stop Hypertension) — the most evidence-based dietary intervention for hypertension — reduces SBP by 8-14 mmHg, comparable to one antihypertensive drug. Combined with sodium restriction, weight loss, exercise, and alcohol reduction, lifestyle changes can reduce BP by 20-30 mmHg — equivalent to combination antihypertensive therapy.",
+      "dash_diet_principles": {
+        "description": "DASH diet was developed specifically for hypertension. Rich in fruits, vegetables, whole grains, low-fat dairy, and limited in saturated fat, red meat, and sweets. High in potassium, calcium, magnesium, and fibre — all nutrients that lower BP.",
+        "bp_reduction": "DASH diet alone reduces SBP by 8-14 mmHg; combined with sodium restriction reduces SBP by 11-20 mmHg",
+        "daily_servings": {
+          "vegetables": "4-5 servings/day",
+          "fruits": "4-5 servings/day",
+          "grains_whole": "6-8 servings/day",
+          "low_fat_dairy": "2-3 servings/day",
+          "lean_meat_poultry_fish": "≤6 oz/day",
+          "nuts_seeds_legumes": "4-5 servings/week",
+          "fats_oils": "2-3 servings/day",
+          "sweets": "≤5 servings/week"
+        }
+      },
+      "recommended_foods": [
+        {
+          "category": "Potassium-Rich Foods (Blood Pressure Lowering)",
+          "evidence": "Strong — potassium blunts the pressor effect of sodium; promotes renal sodium excretion; relaxes arterial walls. Adequate potassium intake (3,500-4,700 mg/day) reduces SBP by 3-8 mmHg.",
+          "items": [
+            {
+              "food": "Bananas",
+              "benefit": "Excellent potassium source (422 mg per banana); easily available; reduces BP and protects against stroke",
+              "frequency": "1 banana daily"
+            },
+            {
+              "food": "Sweet potato, Potato (with skin)",
+              "benefit": "Very high potassium (941 mg per medium sweet potato); fibre; beta-carotene (antioxidant)",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Avocado",
+              "benefit": "Extremely potassium-dense (708 mg per medium avocado); monounsaturated fats reduce BP; magnesium; fibre",
+              "frequency": "Half avocado daily or several times per week"
+            },
+            {
+              "food": "Spinach, Kale, Beet greens",
+              "benefit": "High potassium (839 mg per cup cooked spinach); dietary nitrates in leafy greens convert to nitric oxide (vasodilatory); magnesium; folate",
+              "frequency": "Daily — cooked or raw"
+            },
+            {
+              "food": "Tomatoes and tomato products (low-sodium)",
+              "benefit": "Potassium (292 mg per cup); lycopene — antioxidant reducing vascular oxidative stress; vitamin C; dietary nitrates",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Coconut water (unsweetened)",
+              "benefit": "Rich in potassium (600mg per cup); natural electrolyte balance; good for BP management in India",
+              "frequency": "1 cup daily"
+            },
+            {
+              "food": "Legumes: Lentils, Kidney beans, Chickpeas, Dal",
+              "benefit": "Potassium (730mg per cup lentils); plant protein; fibre reduces BP and cholesterol; magnesium; low sodium",
+              "frequency": "Daily — excellent Indian food base"
+            }
+          ]
+        },
+        {
+          "category": "Magnesium-Rich Foods",
+          "evidence": "Strong — magnesium relaxes vascular smooth muscle; magnesium deficiency increases BP; supplementation lowers SBP by 3-4 mmHg",
+          "items": [
+            {
+              "food": "Dark leafy greens (Spinach, Methi, Amaranth/Rajgira)",
+              "benefit": "High magnesium; potassium; dietary nitrates for NO production; multiple BP-lowering mechanisms",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Nuts and seeds: Almonds, Pumpkin seeds (unsalted), Flaxseeds, Sesame (til)",
+              "benefit": "Magnesium, potassium, and healthy fats; pumpkin seeds — highest magnesium per serving; flaxseeds — lignans and omega-3 reduce BP",
+              "frequency": "Daily — 1 small handful unsalted nuts"
+            },
+            {
+              "food": "Whole grains: Oats, Brown rice, Quinoa, Whole wheat",
+              "benefit": "Magnesium; fibre (beta-glucan in oats reduces BP and cholesterol); B vitamins; low glycaemic index",
+              "frequency": "Daily — 2-3 servings"
+            },
+            {
+              "food": "Dark chocolate (≥70% cocoa, unsweetened)",
+              "benefit": "Cocoa flavanols increase nitric oxide bioavailability → vasodilation → BP reduction. Meta-analyses show flavanol-rich cocoa reduces SBP by 2-3 mmHg. High magnesium.",
+              "frequency": "1-2 small squares (10-20g) daily of ≥70% dark chocolate"
+            }
+          ]
+        },
+        {
+          "category": "Calcium-Rich Foods",
+          "evidence": "Moderate — calcium involved in vascular smooth muscle contraction regulation; adequate dietary calcium (1000-1200 mg/day) associated with lower BP",
+          "items": [
+            {
+              "food": "Low-fat dairy: Skimmed milk, Low-fat curd/yogurt, Buttermilk (chaach)",
+              "benefit": "Calcium; potassium; vitamin D (in fortified milk); protein; DASH diet cornerstone. Buttermilk — low fat, cooling, traditional Indian BP-friendly beverage",
+              "frequency": "2-3 servings daily"
+            },
+            {
+              "food": "Calcium-fortified plant milks (soy, almond, oat milk)",
+              "benefit": "Dairy alternative; calcium; lower saturated fat than full-fat dairy",
+              "frequency": "Daily if dairy-free"
+            },
+            {
+              "food": "Tofu (firm, calcium-set)",
+              "benefit": "High calcium; isoflavones may lower BP; plant protein; magnesium",
+              "frequency": "3-4 times per week"
+            }
+          ]
+        },
+        {
+          "category": "Dietary Nitrate-Rich Foods (Vasodilatory)",
+          "evidence": "Strong — dietary nitrates converted to nitric oxide (NO) by oral bacteria and intestinal bacteria. NO is the most potent endogenous vasodilator. Beetroot juice trials show SBP reduction of 4-8 mmHg.",
+          "items": [
+            {
+              "food": "Beetroot (Beets) and Beetroot juice",
+              "benefit": "Highest dietary nitrate content of any food. Clinical trials: 250mL beetroot juice daily reduces SBP by 4-10 mmHg. Also improves exercise tolerance.",
+              "frequency": "250-500mL beetroot juice daily; or 1-2 cooked beets daily"
+            },
+            {
+              "food": "Dark leafy greens: Spinach, Rocket (arugula), Swiss chard, Watercress, Methi",
+              "benefit": "Very high dietary nitrates → NO → vasodilation; potassium; magnesium; multiple synergistic BP-lowering mechanisms",
+              "frequency": "Daily — 2 cups raw or 1 cup cooked"
+            },
+            {
+              "food": "Pomegranate juice (unsweetened)",
+              "benefit": "Clinical trials show 5-8 mmHg SBP reduction with 150mL daily for 2 weeks; punicalagins and anthocyanins reduce oxidative stress; ACE-inhibitory activity",
+              "frequency": "150mL (small glass) unsweetened pomegranate juice daily"
+            }
+          ]
+        },
+        {
+          "category": "Omega-3 Fatty Acid Rich Foods",
+          "evidence": "Strong — EPA and DHA omega-3s reduce SBP by 2-4 mmHg; anti-inflammatory; reduce triglycerides; improve endothelial function",
+          "items": [
+            {
+              "food": "Fatty fish: Salmon, Mackerel, Sardines, Herring, Indian Rohu, Catla",
+              "benefit": "High EPA and DHA omega-3; direct BP lowering; reduces CV events in hypertensive patients; reduces triglycerides",
+              "frequency": "2-3 servings per week"
+            },
+            {
+              "food": "Flaxseeds (ground/alsi), Chia seeds",
+              "benefit": "ALA omega-3; lignans reduce BP; fibre; omega-3:omega-6 balance improves vascular function",
+              "frequency": "1 tablespoon ground flaxseed daily in yogurt, smoothie, or roti"
+            },
+            {
+              "food": "Walnuts (unsalted)",
+              "benefit": "ALA omega-3; arginine (precursor to nitric oxide — vasodilatory); polyphenols; reduces BP and LDL cholesterol",
+              "frequency": "7 walnut halves (1 small handful) daily"
+            }
+          ]
+        },
+        {
+          "category": "Specific BP-Lowering Foods with Clinical Evidence",
+          "items": [
+            {
+              "food": "Garlic (Allium sativum) — 1-2 fresh cloves or garlic extract",
+              "benefit": "Allicin inhibits ACE and calcium channels; meta-analyses show garlic supplementation reduces SBP by 5-9 mmHg and DBP by 4-6 mmHg in hypertensive patients; anti-atherosclerotic; reduces platelet aggregation",
+              "evidence": "Strong — multiple meta-analyses and RCTs",
+              "frequency": "1-2 raw cloves daily (crush and rest 10 min before eating); or 600-900 mg aged garlic extract supplement"
+            },
+            {
+              "food": "Hibiscus tea (Roselle/Karkade)",
+              "benefit": "Anthocyanins in hibiscus act as ACE inhibitors and calcium channel blockers; RCTs show 5-10 mmHg SBP reduction with 2-3 cups daily in pre-hypertension and Stage 1 HTN",
+              "evidence": "Moderate-strong",
+              "frequency": "2-3 cups hibiscus/roselle tea daily (unsweetened)"
+            },
+            {
+              "food": "Berries: Blueberries, Strawberries, Cherries (flavonoid-rich)",
+              "benefit": "Flavonoids (anthocyanins) improve endothelial function; increase NO bioavailability; reduce arterial stiffness; NHANES data links higher anthocyanin intake with lower BP; blueberry study: 40g/day reduced SBP by 5 mmHg in 8 weeks",
+              "frequency": "Daily — 1 cup berries"
+            },
+            {
+              "food": "Turmeric (curcumin)",
+              "benefit": "Curcumin reduces vascular inflammation and oxidative stress; improves endothelial function; reduces arterial stiffness; meta-analysis shows reduction in SBP with curcumin supplementation",
+              "frequency": "1/2 tsp daily in cooking, warm milk, or supplement (500-1000 mg twice daily with piperine)"
+            },
+            {
+              "food": "Green tea (2-3 cups/day)",
+              "benefit": "EGCG catechins improve NO availability; reduce vascular oxidative stress; meta-analysis shows 2-3 mmHg SBP reduction with regular green tea; also reduces LDL cholesterol",
+              "frequency": "2-3 cups daily (not black tea which has higher caffeine)"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "High-Sodium Foods — THE MOST IMPORTANT DIETARY CHANGE",
+          "reason": "Dietary sodium directly causes volume expansion and vascular stiffness. Every 100 mmol/day reduction in sodium reduces SBP by 5-7 mmHg. WHO recommends <2g sodium per day (5g salt). Most people consume 3.5-5g sodium (8-12g salt).",
+          "target": "Sodium <2.3g/day (5.75g salt); optimal <1.5g/day (3.75g salt) in hypertension",
+          "examples": [
+            "Table salt (added to food at table) — 1 teaspoon = 2.3g sodium (full daily limit)",
+            "Processed meats — sausages, salami, bacon, ham, canned meat — extremely high sodium",
+            "Pickles (achaar), papad, chutney powders, salty snacks — very high sodium in Indian diet",
+            "Canned and packaged foods — canned soups, ready meals, sauces — hidden sodium",
+            "Soy sauce, fish sauce, oyster sauce — 1 tablespoon may contain 900-1,000 mg sodium",
+            "Fast food and restaurant meals — single meal may contain full daily sodium allowance",
+            "Instant noodles, packaged ramen, instant soups",
+            "Salted butter and salted cheese",
+            "Bread and baked products — often a surprising hidden sodium source",
+            "Sports drinks and electrolyte drinks (sodium-containing)"
+          ],
+          "practical_tips": [
+            "Cook without adding salt; use herbs, spices (cumin, coriander, turmeric, pepper) and lemon juice for flavor",
+            "Read food labels — choose products with <120 mg sodium per 100g",
+            "Rinse canned vegetables and legumes to reduce sodium by 40%",
+            "Replace salt with potassium chloride salt substitutes (LoSalt) — reduces BP while maintaining flavor",
+            "Avoid adding salt at the table"
+          ]
+        },
+        {
+          "food": "Alcohol — Major BP-Raising Substance",
+          "reason": "Alcohol raises BP through sympathetic nervous system activation, cortisol release, increased aldosterone, and endothelial dysfunction. Consumption of >3 drinks per day raises SBP by 3-5 mmHg. Heavy drinking is a significant secondary cause of hypertension. Reducing alcohol from heavy to moderate levels reduces SBP by 5-10 mmHg.",
+          "recommendation": "Ideally avoid; if consumed: maximum 2 standard drinks/day men (14 units/week); 1 drink/day women (7 units/week). Complete abstinence recommended if hypertension is difficult to control.",
+          "examples": ["Beer", "Wine", "Spirits", "Country liquor", "All alcoholic beverages"]
+        },
+        {
+          "food": "Saturated and Trans Fats",
+          "reason": "Promote endothelial dysfunction and atherosclerosis; increase LDL cholesterol; reduce HDL; combined cardiovascular risk with hypertension is multiplicative.",
+          "examples": ["Butter and ghee in excess", "Full-fat cheese", "Coconut oil (high in saturated fat despite popular claims)", "Palm oil", "Fried foods", "Bakery products with trans fats", "Red meat (especially processed)", "Cream and full-fat dairy"]
+        },
+        {
+          "food": "Refined Sugars and Sugary Beverages",
+          "reason": "Fructose (in HFCS and sucrose) directly raises BP by increasing uric acid and activating RAAS; promotes obesity (hypertension risk factor); insulin resistance; dyslipidaemia. NHANES data links sugar-sweetened beverages with higher BP independently of weight.",
+          "examples": ["Soft drinks (cola, lemon sodas, fruit drinks)", "Fruit juices with added sugar", "Candy and confectionery", "Pastries and desserts", "Ice cream and sweetened yoghurt", "Energy drinks"]
+        },
+        {
+          "food": "Excess Caffeine (especially in sensitive individuals)",
+          "reason": "Caffeine acutely raises BP by 3-4 mmHg within 30-60 minutes through sympathomimetic effects. Regular drinkers develop partial tolerance but still show acute pressor responses. People who are non-habitual drinkers or genetically slow caffeine metabolisers show larger BP rises.",
+          "recommendation": "Limit to 1-2 cups of coffee or tea daily; measure BP 1-2 hours after caffeine intake to assess personal response; reduce if BP rises significantly",
+          "examples": ["Strong coffee (especially espresso)", "Energy drinks (very high caffeine)", "Pre-workout supplements (often contain high caffeine)", "Strong black tea in large volumes"]
+        },
+        {
+          "food": "Licorice (Liquorice)",
+          "reason": "Glycyrrhizic acid in licorice inhibits the enzyme that inactivates cortisol in the kidney — causes pseudo-hyperaldosteronism: sodium retention, potassium loss, and high BP. Even moderate consumption (50-100g daily for 2 weeks) raises BP significantly.",
+          "examples": ["Licorice candy and sweets", "Herbal teas containing licorice root (mulethi)", "Liquorice extract supplements", "Some herbal medicines and Ayurvedic preparations"]
+        },
+        {
+          "food": "High-Sodium Condiments and Sauces",
+          "reason": "Hidden sources of salt that are often overlooked but can substantially increase daily sodium intake.",
+          "examples": ["Soy sauce — 1 tbsp: 900-1000 mg sodium", "Worcestershire sauce", "Commercial tomato ketchup", "Processed chutneys and pickles", "Namkeen and salty snack mixes", "Instant spice mixes and stock cubes"]
+        },
+        {
+          "food": "Excess Red and Processed Meats",
+          "reason": "Processed meats contain high sodium (preservation) and nitrate preservatives; red meat high in saturated fat and arachidonic acid; promotes hypertension, atherosclerosis, and kidney damage",
+          "examples": ["Processed meats: sausages, bacon, salami, deli meats", "Organ meats (liver, kidney — also high in cholesterol)", "Excessive red meat portions (>100g/day)"]
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This DASH-inspired low-sodium, high-potassium anti-hypertensive meal plan is a general guideline. Individual needs vary based on comorbidities (diabetes, CKD, heart failure). Consult a registered dietitian for personalized guidance. All cooking should use minimal added salt — use herbs and spices for flavoring.",
+        "early_morning": "Warm water with lemon (alkalizing; Vitamin C) + 7-8 soaked almonds and 4-5 walnuts (unsalted) + 250mL fresh beetroot juice or pomegranate juice",
+        "breakfast": "Oatmeal with banana, flaxseeds, and fresh berries (no added sugar or salt) + 1 cup low-fat yogurt OR Whole wheat vegetable upma (no salt — use lemon and herbs) + 1 glass skimmed buttermilk + 2 cups green tea",
+        "mid_morning": "Fresh fruit (1 orange and 5-6 strawberries) OR hibiscus/roselle herbal tea + 1 banana",
+        "lunch": "Brown rice or 2 whole wheat chapati (no salt in dough) + 1 bowl dal (lentil soup — minimal salt) + spinach sabzi or methi sabzi with garlic + 1 medium baked sweet potato + 1 cup low-fat curd + cucumber and tomato salad with lemon dressing (no salt)",
+        "evening_snack": "Unsalted roasted pumpkin seeds or mixed nuts (almonds, walnuts) + 1 cup hibiscus or green tea OR fresh coconut water",
+        "dinner": "Grilled fish (salmon/mackerel) OR paneer with vegetables + 2 whole wheat chapati + stir-fried kale/spinach with garlic and olive oil + 1 cup dal + tomato and avocado salad",
+        "before_bed": "Warm skimmed milk with 1/2 tsp turmeric and a pinch of black pepper (golden milk) OR chamomile tea"
+      },
+      "special_dietary_notes": [
+        "SODIUM RESTRICTION is the single most important dietary intervention — target <2g sodium per day; start by eliminating added salt at the table and cooking with herbs instead",
+        "Weight loss is second most powerful lifestyle intervention — each kg lost reduces SBP by 1-2 mmHg; 10% body weight loss can reduce SBP by 10 mmHg",
+        "DASH diet reduces SBP by 8-14 mmHg and DBP by 4-6 mmHg — comparable to starting one antihypertensive drug",
+        "Dietary potassium (3,500-4,700 mg/day from food) reduces SBP by 3-8 mmHg — especially important when taking non-potassium-sparing diuretics",
+        "Patients on ACEi/ARBs and spironolactone should AVOID potassium supplements and excessive potassium foods — risk of dangerous hyperkalaemia",
+        "Patients on warfarin: sudden large increases in vitamin K-rich green vegetables (spinach, kale) can alter INR — maintain consistent intake rather than eliminate",
+        "Alcohol — even modest reductions (e.g., from 3-4 drinks to 1-2/day) produce meaningful BP reductions",
+        "Caffeine — assess personal BP response; some patients show marked caffeine sensitivity",
+        "Consider Mediterranean diet as a practical, culturally adaptable framework that incorporates most DASH principles while also reducing overall cardiovascular risk"
+      ]
+    },
+
+    "lifestyle_management": {
+      "physical_activity": {
+        "overview": "Regular aerobic exercise is the most powerful single lifestyle intervention for hypertension — reduces SBP by 5-8 mmHg and DBP by 3-5 mmHg in hypertensive patients. Equivalent to the effect of one antihypertensive drug.",
+        "recommended_exercises": [
+          {
+            "type": "Aerobic Exercise (Most Important)",
+            "examples": ["Brisk walking (30-45 min most days — most accessible; ideal for all ages)", "Cycling (stationary or outdoor)", "Swimming", "Jogging (when well controlled)", "Dancing", "Yoga combined with aerobics"],
+            "frequency": "At least 150 minutes of moderate-intensity per week (30 min × 5 days minimum) or 75 minutes vigorous-intensity",
+            "intensity": "Moderate: talking is possible but slightly breathless; aim for 50-70% of maximum heart rate (220 minus age)",
+            "bp_reduction": "SBP reduction: 5-8 mmHg"
+          },
+          {
+            "type": "Dynamic Resistance/Strength Training",
+            "examples": ["Light to moderate weight training", "Resistance bands", "Body weight exercises (squats, lunges, press-ups)"],
+            "frequency": "2-3 days per week; 8-10 exercises; 8-12 repetitions each",
+            "bp_reduction": "SBP reduction: 2-4 mmHg",
+            "note": "Avoid Valsalva manoeuvre (breath-holding and straining) — causes acute spike in BP; always breathe out during exertion"
+          },
+          {
+            "type": "Isometric Resistance Exercise (Emerging Evidence)",
+            "examples": ["Isometric handgrip exercises", "Wall squat (isometric wall sit)", "Plank"],
+            "frequency": "3 sessions per week; 4 × 2-min contractions at 30-50% MVC with 3 min rest",
+            "bp_reduction": "Most recently published meta-analysis shows isometric resistance training reduces SBP by 8-10 mmHg — greater than aerobic exercise",
+            "note": "2023 British Journal of Sports Medicine meta-analysis showing isometric exercises most effective for BP reduction"
+          },
+          {
+            "type": "Yoga and Mind-Body Exercise",
+            "examples": ["Hatha yoga", "Pranayama (breathing exercises)", "Tai Chi"],
+            "frequency": "Daily if possible; at least 3 times per week",
+            "bp_reduction": "SBP reduction: 3-5 mmHg; additional stress reduction benefit",
+            "specific_pranayama": "Anulom Vilom (alternate nostril breathing); Bhramari; slow deep breathing (6 breaths/min for 15 min); slow breathing reduces SBP by 3-4 mmHg"
+          }
+        ],
+        "precautions": [
+          "Always warm up 5-10 minutes before exercise; cool down 5-10 minutes after",
+          "Check BP before exercise — if SBP >180 or DBP >110 mmHg, do NOT exercise; treat BP first",
+          "Avoid very heavy weight lifting and Valsalva manoeuvre (extreme breath-holding and straining)",
+          "Exercise in cool environment — avoid extreme heat (worsens hypotension risk)",
+          "Stay well hydrated before and during exercise",
+          "Report chest pain, palpitations, dizziness, or unusual breathlessness during exercise immediately — stop and seek medical attention",
+          "Exercise-induced hypotension is possible after antihypertensives — rise slowly after exercise, especially with beta-blockers, alpha-blockers, or vasodilators"
+        ]
+      },
+      "weight_management": {
+        "evidence": "Every kg of weight lost reduces SBP by 1-2 mmHg and DBP by 0.5-1 mmHg. 10% body weight reduction can reduce SBP by 10 mmHg. Abdominal obesity (>102cm waist in men; >88cm in women) is particularly harmful.",
+        "target_bmi": "18.5-24.9 kg/m² for most adults; waist circumference <102cm men, <88cm women",
+        "strategies": [
+          "Calorie-controlled diet with 500-750 calorie daily deficit for 0.5-1 kg/week weight loss",
+          "Regular physical activity as above",
+          "DASH diet — naturally promotes weight loss through high fibre and low calorie density",
+          "Reduce ultra-processed foods, sugary beverages, refined carbohydrates",
+          "Mindful eating — eat slowly, avoid distracted eating, smaller portions on smaller plates",
+          "Professional dietitian/nutritionist support for structured weight loss programme"
+        ]
+      },
+      "smoking_cessation": {
+        "importance": "Smoking causes acute sharp BP elevation (3-5 mmHg per cigarette); accelerates atherosclerosis exponentially when combined with hypertension; is the most important preventable cause of cardiovascular mortality; dramatically reduces antihypertensive medication efficacy",
+        "bp_effect": "Though smoking acutely raises BP, the chronic BP-lowering effect of quitting is modest — the primary benefit is dramatic reduction in overall cardiovascular risk (MI, stroke, peripheral artery disease, aortic aneurysm)",
+        "strategies": [
+          "Brief physician advice to quit at every consultation increases quit rates",
+          "Nicotine Replacement Therapy (NRT): patches, gum, lozenges, inhaler",
+          "Varenicline (Champix/Chantix) — most effective pharmacotherapy; doubles quit rates",
+          "Bupropion (Zyban) — effective; monitor BP (slight pressor effect)",
+          "Behavioural support: individual or group counselling",
+          "Quitline telephone support"
+        ]
+      },
+      "stress_management": {
+        "evidence": "Chronic psychological stress elevates BP through sustained sympathetic activation and cortisol release. Stress management interventions reduce SBP by 3-4 mmHg. Job strain and social isolation are independent hypertension risk factors.",
+        "techniques": [
+          "Mindfulness-Based Stress Reduction (MBSR) — 8-week structured programme; reduces SBP by 4-7 mmHg; reduces anxiety and cortisol",
+          "Slow, deep breathing exercises — 6 breaths per minute for 15 minutes daily; activates parasympathetic nervous system; reduces SBP 3-4 mmHg",
+          "Transcendental Meditation (TM) and other forms of meditation — AHA scientific statement acknowledges TM as having reasonable evidence for BP reduction",
+          "Progressive Muscle Relaxation (PMR) — systematic tension-release of muscle groups; reduces sympathetic tone",
+          "Cognitive Behavioural Therapy (CBT) — for anxiety and stress-related hypertension",
+          "Yoga and pranayama — dual benefit of physical activity and stress reduction",
+          "Regular leisure activities and hobbies",
+          "Social connection and support — isolation is a cardiovascular risk factor",
+          "Adequate sleep — address sleep disorders; sleep restriction elevates BP"
+        ]
+      },
+      "sleep_hygiene": {
+        "importance": "Insufficient sleep (<6 hours/night) and poor sleep quality raise BP; increase risk of hypertension by 20-32%. Obstructive sleep apnoea (OSA) is both caused by and causes hypertension — bidirectional relationship. Non-dipping nocturnal BP pattern (BP does not fall 10-20% during sleep) is associated with worse cardiovascular outcomes.",
+        "recommendations": [
+          "Target 7-8 hours of good quality sleep per night",
+          "Consistent sleep-wake schedule — same bedtime and wake time daily",
+          "Cool, dark, quiet bedroom environment",
+          "No screens (phones, tablets, TV) for 1 hour before bed (blue light disrupts melatonin)",
+          "Avoid caffeine after 2 pm",
+          "Avoid large meals and alcohol close to bedtime",
+          "Screen for OSA in: obese patients, non-dippers on ABPM, those with witnessed snoring and excessive daytime sleepiness — CPAP therapy for OSA reduces SBP by 3-10 mmHg"
+        ]
+      },
+      "home_bp_monitoring": {
+        "importance": "Home blood pressure monitoring (HBPM) improves BP control, identifies white coat hypertension, detects masked hypertension, and improves medication adherence.",
+        "technique": [
+          "Use a validated upper arm automated oscillometric device (wrist devices less accurate)",
+          "Sit quietly for 5 minutes before measuring",
+          "Support arm at heart level on table",
+          "Take 2 readings morning (before medication and breakfast) and 2 readings evening, for 7 consecutive days",
+          "Discard day 1 readings; average the rest",
+          "Home BP threshold: ≥135/85 mmHg = hypertension (lower than office threshold of 140/90)",
+          "Share readings diary with healthcare provider at each consultation"
+        ]
+      }
+    },
+
+    "hypertension_monitoring_plan": {
+      "note": "Blood pressure is best monitored with a validated home BP monitor. Consistent monitoring allows early detection of uncontrolled BP before complications occur. The following zones guide when to take action.",
+      "green_zone": {
+        "status": "Well Controlled / Target Achieved",
+        "bp_criteria": "SBP 110-139 mmHg AND DBP 70-89 mmHg (home readings); target <130/80 in high-risk patients",
+        "symptoms": "No symptoms; feeling well; medication tolerated",
+        "action": "Continue current medications and lifestyle changes. Home monitoring twice daily, 3 days per week. GP or cardiologist review every 3-6 months. Annual blood tests (renal function, electrolytes, lipids, glucose). Annual urine ACR. Annual ECG."
+      },
+      "yellow_zone": {
+        "status": "Suboptimal Control / Borderline Elevation",
+        "bp_criteria": "SBP 140-179 mmHg OR DBP 90-109 mmHg (average of multiple home readings)",
+        "symptoms": "Possible headache, dizziness; otherwise may be asymptomatic",
+        "action": "Contact GP or cardiologist within 1-2 weeks. Review medication adherence and lifestyle factors. Medication dose adjustment or additional drug may be required. Recheck home BP readings twice daily. Reduce salt and alcohol. Increase physical activity. Repeat blood tests if not done recently."
+      },
+      "red_zone": {
+        "status": "DANGEROUSLY HIGH — Hypertensive Crisis",
+        "bp_criteria": "SBP ≥180 mmHg OR DBP ≥120 mmHg",
+        "urgency_no_symptoms": {
+          "definition": "BP ≥180/120 WITHOUT any symptoms of target organ damage",
+          "symptoms": "No headache, no chest pain, no visual change, no neurological symptoms",
+          "action": "Contact GP or cardiologist SAME DAY or go to urgent care. Additional oral antihypertensive may be prescribed. Rest; reduce salt; avoid strenuous exercise. Recheck BP in 1-2 hours. Do NOT reduce BP too rapidly with self-medication."
+        },
+        "emergency_with_symptoms": {
+          "definition": "BP ≥180/120 WITH any symptoms of target organ damage",
+          "symptoms": "Any of: severe headache, visual disturbance or vision loss, chest pain, shortness of breath, confusion, focal weakness or speech difficulty, severe nausea/vomiting, back or chest tearing pain",
+          "action": "CALL EMERGENCY SERVICES (102/112 India; 999 UK; 911 USA) IMMEDIATELY. This is a hypertensive emergency. Do NOT drive yourself. Lie down, rest, loosen clothing. Do NOT take extra doses of antihypertensive without medical guidance — uncontrolled BP reduction is dangerous."
+        }
+      }
+    },
+
+    "complications": [
+      {
+        "system": "Cerebrovascular",
+        "complications": [
+          {
+            "name": "Ischaemic Stroke",
+            "description": "Hypertension is the leading modifiable risk factor for stroke — accounts for 50-60% of all strokes. Elevated BP causes atherosclerosis of large cerebral arteries and lipohyalinosis of small penetrating arteries (lacunar infarcts). Every 10 mmHg increase in SBP raises stroke risk by 30-40%.",
+            "severity": "Potentially life-threatening; major cause of long-term disability",
+            "prevention": "Each 5 mmHg SBP reduction reduces stroke risk by 34%"
+          },
+          {
+            "name": "Haemorrhagic Stroke (Intracerebral Haemorrhage)",
+            "description": "High BP causes rupture of cerebral microaneurysms (Charcot-Bouchard aneurysms) and hypertensive arteriopathy. ICH carries much higher acute mortality than ischaemic stroke (up to 40%). Hypertension accounts for >60% of ICH cases.",
+            "severity": "Life-threatening; high mortality"
+          },
+          {
+            "name": "Transient Ischaemic Attack (TIA)",
+            "description": "Brief episode of focal neurological deficit (lasting <24 hours, typically <1 hour) without infarction. Important warning sign — 10-15% risk of stroke within 90 days, highest in first 48 hours. Urgently investigate and treat. Hypertension is the most common cause.",
+            "severity": "Medical emergency requiring urgent evaluation"
+          },
+          {
+            "name": "Hypertensive Encephalopathy",
+            "description": "Severe acute BP elevation causing cerebral oedema, dysfunction of cerebral autoregulation, and posterior reversible encephalopathy syndrome (PRES). Presents with severe headache, nausea, visual disturbance, confusion, and seizures. Rare but requires immediate treatment.",
+            "severity": "Medical emergency"
+          },
+          {
+            "name": "Vascular Dementia and Cognitive Decline",
+            "description": "Chronic hypertension damages cerebral small vessels (cerebral small vessel disease — SVD), causing white matter lesions (leukoaraiosis), lacunar infarcts, and progressive cognitive decline. Hypertension is the leading modifiable cause of vascular dementia. Even midlife hypertension increases late-life dementia risk by 50-100%.",
+            "severity": "Moderate — chronic; progressive"
+          }
+        ]
+      },
+      {
+        "system": "Cardiovascular",
+        "complications": [
+          {
+            "name": "Left Ventricular Hypertrophy (LVH)",
+            "description": "Hypertrophic remodelling of the left ventricle in response to chronically elevated afterload. LVH is a precursor to heart failure, arrhythmias, sudden death, and MI. LVH on ECG triples cardiovascular event risk. Regression of LVH is achievable with effective antihypertensive treatment.",
+            "severity": "Moderate; marker of advanced target organ damage"
+          },
+          {
+            "name": "Myocardial Infarction (Heart Attack)",
+            "description": "Hypertension accelerates coronary atherosclerosis and increases myocardial oxygen demand. Major independent risk factor for MI — doubles MI risk. Combined with smoking or diabetes, risk is multiplicative.",
+            "severity": "Life-threatening"
+          },
+          {
+            "name": "Heart Failure — Both HFrEF and HFpEF",
+            "description": "Hypertension is the leading cause of heart failure with preserved ejection fraction (HFpEF) — predominantly diastolic dysfunction from LVH and myocardial fibrosis. Also contributes to HFrEF when combined with ischaemic disease. Estimated 68% of heart failure cases are attributable to hypertension.",
+            "severity": "Severe; progressive; 5-year mortality ~50%"
+          },
+          {
+            "name": "Atrial Fibrillation (AF)",
+            "description": "Hypertension-induced LVH and left atrial enlargement — the most common cause of AF. AF independently increases stroke risk 5-fold. Hypertension management is the cornerstone of AF prevention.",
+            "severity": "Moderate to Severe"
+          },
+          {
+            "name": "Aortic Aneurysm and Dissection",
+            "description": "Chronic high BP causes aortic wall stress and medial degeneration — promoting aortic aneurysm formation and dissection. Aortic dissection (type A or B) is a catastrophic complication — requires emergency surgery (type A) or IV antihypertensives (type B). Most abdominal aortic aneurysms are complicated by hypertension.",
+            "severity": "Life-threatening emergency"
+          }
+        ]
+      },
+      {
+        "system": "Renal",
+        "complications": [
+          {
+            "name": "Hypertensive Nephrosclerosis and Chronic Kidney Disease",
+            "description": "Elevated glomerular capillary pressure and ischaemia from afferent arteriolar constriction cause progressive nephrosclerosis (glomerulosclerosis, tubular atrophy, interstitial fibrosis). Hypertension is the second leading cause of end-stage renal disease (ESRD) requiring dialysis after diabetes. Hypertension and CKD mutually worsen each other — vicious cycle.",
+            "severity": "Moderate to Severe; progressive"
+          },
+          {
+            "name": "Microalbuminuria and Proteinuria",
+            "description": "Earliest marker of hypertensive renal damage. Microalbuminuria (ACR 3-30 mg/mmol) independently predicts cardiovascular and renal events. Progression from microalbuminuria to macroalbuminuria to declining GFR occurs over years if untreated.",
+            "severity": "Mild initially; marker of significant systemic vascular damage"
+          }
+        ]
+      },
+      {
+        "system": "Ophthalmic",
+        "complications": [
+          {
+            "name": "Hypertensive Retinopathy",
+            "description": "Fundoscopic changes in retinal arteries reflecting systemic vascular damage: Keith-Wagener-Barker Grade I (arterial narrowing, silver/copper wire appearance) → Grade II (AV nipping — artery compresses vein at crossing) → Grade III (flame haemorrhages, cotton wool spots) → Grade IV (papilloedema = hypertensive emergency). Grades III-IV represent hypertensive emergencies.",
+            "severity": "Grade I-II: mild; Grade III: emergency; Grade IV: emergency with vision threat"
+          },
+          {
+            "name": "Retinal Artery and Vein Occlusion",
+            "description": "Hypertension is the leading risk factor for central and branch retinal artery and vein occlusions — causing sudden visual loss in the affected eye. Central retinal artery occlusion is effectively a 'stroke of the eye' — requires immediate treatment within hours.",
+            "severity": "Severe — can cause permanent visual loss"
+          }
+        ]
+      },
+      {
+        "system": "Peripheral Vascular",
+        "complications": [
+          {
+            "name": "Peripheral Artery Disease (PAD)",
+            "description": "Hypertension accelerates atherosclerosis in peripheral arteries — causing intermittent claudication (calf pain on walking), rest pain, and critical limb ischaemia. Combined with smoking, PAD risk is dramatically increased.",
+            "severity": "Moderate to Severe"
+          },
+          {
+            "name": "Erectile Dysfunction",
+            "description": "Penile vasculature highly sensitive to hypertensive vascular damage and endothelial dysfunction. Affects 40-50% of hypertensive men. Also worsened by antihypertensive medications (thiazides, beta-blockers). ACEi/ARBs and CCBs are preferred in hypertensive patients with ED.",
+            "severity": "Moderate — affects quality of life"
+          }
+        ]
+      },
+      {
+        "system": "Pregnancy",
+        "complications": [
+          {
+            "name": "Pre-eclampsia and Eclampsia",
+            "description": "Severe hypertension in pregnancy with multi-organ involvement (proteinuria, hepatic, neurological, haematological). Eclampsia = pre-eclampsia + seizures. Leading cause of maternal mortality globally. Pre-eclampsia affects 2-8% of pregnancies. Requires immediate delivery if severe or at term.",
+            "severity": "Life-threatening — maternal and fetal"
+          },
+          {
+            "name": "HELLP Syndrome",
+            "description": "Haemolysis, Elevated Liver enzymes, Low Platelets — severe variant of pre-eclampsia. Medical emergency requiring immediate delivery.",
+            "severity": "Life-threatening"
+          }
+        ]
+      }
+    ],
+
+    "special_populations": {
+      "hypertension_in_pregnancy": {
+        "key_points": [
+          "Hypertensive disorders of pregnancy affect 10% of pregnancies and are a leading cause of maternal and perinatal mortality worldwide",
+          "ACE inhibitors and ARBs are ABSOLUTELY CONTRAINDICATED in pregnancy — cause fetal renal agenesis, oligohydramnios, IUGR, and neonatal death. Stop immediately if pregnancy detected or planned.",
+          "Safe antihypertensives in pregnancy: Methyldopa (first-line; 50+ year safety record), Labetalol (oral and IV), Nifedipine SR/LA (oral), Hydralazine (IV for emergencies)",
+          "Treatment threshold in pregnancy: SBP ≥150 mmHg or DBP ≥100 mmHg (to prevent maternal stroke); avoid lowering BP too aggressively (<130/80) — fetal growth impairment",
+          "Gestational hypertension (after 20 weeks without proteinuria): monitor closely; 25% develop pre-eclampsia",
+          "Pre-eclampsia: new onset hypertension + proteinuria after 20 weeks; screen with uterine artery Doppler, PIGF, sFlt-1 from 11-14 weeks; low-dose aspirin 150 mg at night from 12-36 weeks reduces pre-eclampsia risk by 62% in high-risk women",
+          "IV Magnesium Sulfate: essential for seizure prevention and treatment in pre-eclampsia/eclampsia; reduces maternal morbidity and mortality",
+          "Eclampsia: tonic-clonic seizures in a pregnant/postpartum woman — IV MgSO4 + antihypertensives + emergency delivery",
+          "Postpartum: hypertension may persist or worsen in first 5 days after delivery; monitor closely; continue antihypertensives; NSAIDs may worsen BP post-partum — avoid",
+          "Women with pre-eclampsia are at 3-4x increased lifetime cardiovascular risk — long-term cardiovascular follow-up essential after pregnancy"
+        ]
+      },
+      "hypertension_in_elderly": {
+        "key_points": [
+          "Most common chronic condition in elderly — affects >70% of adults over 70 years",
+          "Isolated systolic hypertension (ISH) predominates — from aortic stiffening; wide pulse pressure (>60 mmHg) is an independent cardiovascular risk marker",
+          "Treatment benefit is GREATER in elderly than young — absolute risk reduction is higher despite same relative risk reduction",
+          "SPRINT trial showed intensive BP target (<120 mmHg systolic) beneficial even in adults >75 years; but must balance against adverse effects",
+          "Orthostatic hypotension is a major concern — fall-related fractures are a leading cause of morbidity and mortality in elderly hypertensives. Measure standing BP; start medications at lowest doses; avoid polypharmacy",
+          "Dementia prevention: reducing BP in midlife (40-65 years) significantly reduces dementia risk; SPRINT MIND trial showed intensive BP control reduces mild cognitive impairment",
+          "Preferred drugs in elderly: dihydropyridine CCBs (amlodipine) and thiazide-like diuretics (chlorthalidone, indapamide); avoid high-dose diuretics and beta-blockers as first-line",
+          "Multiple comorbidities and polypharmacy: review medications regularly; drug interactions common; simplify regimen where possible; fixed-dose combinations improve adherence",
+          "Frail elderly: BP targets may be less aggressive; individualise — balance benefits vs risk of falls and adverse effects"
+        ]
+      },
+      "hypertension_in_children_and_adolescents": {
+        "key_points": [
+          "Secondary hypertension much more common in children than adults — investigate all hypertensive children for renal, endocrine, and vascular causes",
+          "Most common secondary causes in children: renal parenchymal disease (most common), coarctation of aorta, renal artery stenosis",
+          "Diagnosis requires age-, sex-, and height-specific BP percentile tables (for children <13 years); adult thresholds used for adolescents ≥13 years",
+          "Paediatric hypertension definition: average SBP or DBP ≥95th percentile for age, sex, height on 3 separate occasions",
+          "Adolescent hypertension is increasingly linked to obesity — weight loss is primary treatment; ACE inhibitors or ARBs are preferred pharmacological options in children",
+          "Lifestyle modification — weight loss, salt restriction, physical activity — is first-line for mild hypertension in children and adolescents",
+          "Cardiac, renal, and retinal assessment for end-organ damage in paediatric hypertension"
+        ]
+      },
+      "hypertension_with_diabetes": {
+        "key_points": [
+          "50% of people with type 2 diabetes have hypertension; coexistence dramatically increases cardiovascular and renal risk",
+          "BP target in diabetes: <130/80 mmHg (ACC/AHA, NICE) — stricter than in non-diabetic hypertension",
+          "ACE inhibitors or ARBs are FIRST-LINE in diabetic hypertension — specifically reduce diabetic nephropathy progression (independent of BP lowering); required if any proteinuria present",
+          "SGLT2 inhibitors (empagliflozin, dapagliflozin) have dual benefit — glucose lowering AND modest BP lowering AND proven cardiovascular and renal protection in diabetic hypertensives",
+          "Monitor for hypoglycaemia — beta-blockers blunt tachycardia (warning sign of hypoglycaemia); sweating preserved; use selective beta-blockers only if indicated"
+        ]
+      },
+      "hypertension_with_ckd": {
+        "key_points": [
+          "ACE inhibitors or ARBs are mandatory first-line treatment in hypertensive CKD — reduce proteinuria and slow progression of renal disease beyond their BP-lowering effect (renoprotective)",
+          "BP target in CKD with proteinuria: <130/80 mmHg",
+          "Monitor renal function and potassium 1-2 weeks after starting ACEi/ARB — acceptable creatinine rise up to 30%; stop if rise >50%",
+          "Thiazides lose effectiveness when eGFR <30 — switch to loop diuretics (furosemide, torasemide)",
+          "Avoid NSAIDs — nephrotoxic and raise BP",
+          "Anaemia of CKD worsens cardiac workload — treat with erythropoiesis-stimulating agents and iron"
+        ]
+      },
+      "hypertension_in_black_african_patients": {
+        "key_points": [
+          "Higher prevalence of hypertension and more severe forms; lower renin levels mean RAAS blockers (ACEi, ARBs) are LESS effective as monotherapy",
+          "CCBs (amlodipine) and thiazide diuretics preferred first-line as monotherapy",
+          "ACEi and ARBs effective when combined with CCB or thiazide — add as second drug",
+          "Higher risk of ACEi-induced angioedema in Black patients",
+          "Genetic salt sensitivity higher — sodium restriction particularly important",
+          "Higher risk of end-organ damage at any given BP level"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza (Flu) Vaccine — Annual",
+        "frequency": "Every year before flu season",
+        "reason": "Flu infection significantly increases cardiovascular events — multiple studies show flu vaccination reduces MI risk by 15-45% in hypertensive patients. Acute infection raises BP and triggers cardiovascular complications. Priority vaccination for all patients with hypertension."
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV20 / PCV15 + PPSV23)",
+        "frequency": "PCV20 or PCV15 single dose then PPSV23 1 year later; booster at 65 if given earlier",
+        "reason": "Pneumococcal pneumonia is a significant cardiovascular trigger; patients with hypertension and target organ damage (especially heart failure, CKD) at high risk for severe pneumococcal disease and complications"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine (Annual Updated Booster)",
+        "frequency": "As per national guidelines",
+        "reason": "COVID-19 infection substantially raises BP and dramatically increases risk of myocarditis, stroke, and heart failure in hypertensive patients. Hypertension is a major risk factor for severe COVID-19 outcomes. Vaccination strongly recommended."
+      },
+      {
+        "vaccine": "Herpes Zoster Vaccine (Shingrix — Non-Live RZV)",
+        "frequency": "2 doses, 2-6 months apart; for adults ≥50 years",
+        "reason": "Shingles (herpes zoster) acutely raises BP and dramatically increases short-term risk of MI and stroke in the weeks after infection. Shingrix vaccination reduces shingles risk by 97% in adults 50-69 and 91% in adults ≥70."
+      },
+      {
+        "vaccine": "Tetanus-Diphtheria-Pertussis (Tdap/Td)",
+        "frequency": "Booster every 10 years",
+        "reason": "Routine adult immunisation; bacterial infections including whooping cough can trigger acute cardiovascular events in patients with underlying hypertension and heart disease"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "frequency": "3-dose series if non-immune",
+        "reason": "Hypertensive patients with CKD are at increased risk of hepatitis B — CKD impairs immune response. Important if hypertension has led to significant renal impairment or pre-dialysis stage."
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Newly measured BP ≥140/90 mmHg on two or more separate occasions — arrange formal hypertension assessment",
+      "Home BP readings consistently ≥135/85 mmHg — warrants medical evaluation",
+      "Persistent headache — especially occipital (back of head) on waking — combined with high BP",
+      "Dizziness, visual disturbances, or palpitations with high blood pressure readings",
+      "Starting a new medication that may raise BP — NSAIDs, oral contraceptive pill, decongestants, steroids",
+      "BP uncontrolled on current antihypertensive medications — medication adjustment needed",
+      "Side effects from antihypertensive drugs — ACEi cough, ankle swelling, dizziness, fatigue",
+      "Planning a pregnancy or discovered pregnant while on antihypertensives — ACEi and ARBs MUST be stopped",
+      "New symptoms of target organ damage: chest pain, breathlessness, palpitations, visual changes, swollen ankles, reduced urine output",
+      "Annual review — even if BP is well controlled: blood tests, urine ACR, ECG, cardiovascular risk assessment",
+      "Blood pressure falling too low (symptomatic hypotension — dizziness on standing, fainting) on medication",
+      "Blood pressure that was well controlled becoming difficult to control — possible secondary cause or medication interaction",
+      "Discovery of a new health condition that may affect blood pressure management (CKD, diabetes, heart failure)"
+    ],
+
+    "emergency_signs": [
+      "Sudden severe 'thunderclap' headache — worst headache ever experienced — CALL EMERGENCY SERVICES: possible subarachnoid haemorrhage or hypertensive emergency",
+      "Sudden weakness, numbness, or paralysis of face, arm, or leg (especially one-sided) combined with high BP — STROKE — FAST: Face drooping, Arm weakness, Speech difficulty, Time to call emergency services",
+      "Sudden slurred speech, aphasia (word-finding difficulty), or facial drooping — STROKE",
+      "Sudden loss of vision in one or both eyes with high BP — hypertensive emergency or retinal artery occlusion",
+      "Severe tearing or ripping chest pain spreading to the back — possible aortic dissection — IMMEDIATE EMERGENCY",
+      "Sudden severe chest pain, pressure, or tightness with shortness of breath — possible heart attack (MI)",
+      "Acute breathlessness at rest, pink frothy sputum, coughing while lying flat — acute pulmonary oedema from hypertensive heart failure",
+      "Confusion, altered consciousness, agitation, or seizures with very high BP — hypertensive encephalopathy or intracerebral haemorrhage",
+      "Seizures in a pregnant woman — ECLAMPSIA — life-threatening obstetric emergency",
+      "BP ≥180/120 mmHg WITH any of: severe headache, vision changes, chest pain, breathlessness, or neurological symptoms — HYPERTENSIVE EMERGENCY — call ambulance"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is hypertension and why is it called the 'silent killer'?",
+        "answer": "Hypertension (high blood pressure) means the force of blood pressing against artery walls is consistently too high — ≥140/90 mmHg. It's called the silent killer because most people (over 80%) have no symptoms, even with significantly high readings. Without regular BP checks, many only discover they have hypertension after it causes a serious complication — heart attack, stroke, kidney failure, or heart failure. This is why regular BP screening is so important."
+      },
+      {
+        "question": "What causes high blood pressure?",
+        "answer": "In 90-95% of cases, hypertension is 'primary' (essential) — no single cause but results from complex interactions of genetics, age, lifestyle (high salt diet, obesity, inactivity, excess alcohol), and neurohormonal factors. In 5-10% of cases, a specific cause exists (secondary hypertension) — including kidney disease, primary aldosteronism (Conn's syndrome), pheochromocytoma, sleep apnoea, thyroid disorders, medications (NSAIDs, contraceptive pills, steroids), and rarely coarctation of the aorta."
+      },
+      {
+        "question": "What are the symptoms of high blood pressure?",
+        "answer": "Hypertension is usually completely asymptomatic — this is what makes it so dangerous. Some people experience occipital headache (back of head, typically in the morning), dizziness, nosebleeds, or visual blurring, but these are unreliable and non-specific. Symptoms only appear with very high BP or with complications. Regular blood pressure measurement is the only way to detect it. Everyone over 18 should have their BP checked at least every 2 years."
+      },
+      {
+        "question": "What is the normal blood pressure range?",
+        "answer": "Normal (optimal): below 120/80 mmHg. High normal: 130-139/85-89 mmHg (lifestyle changes needed). Grade 1 Hypertension: 140-159/90-99 mmHg. Grade 2: 160-179/100-109 mmHg. Grade 3 (severe): ≥180/≥110 mmHg. Hypertensive crisis: >180/>120 mmHg. The first number (systolic) is pressure when heart contracts; the second (diastolic) is pressure when heart relaxes. Both are equally important, but systolic BP is a better predictor of cardiovascular risk in people over 50."
+      },
+      {
+        "question": "How is hypertension treated?",
+        "answer": "Treatment combines lifestyle changes and medication. Lifestyle: DASH diet (high in fruits, vegetables, low-fat dairy, low in sodium), sodium restriction (<5g salt/day), weight loss, regular exercise (150+ min/week), alcohol reduction, smoking cessation, and stress management. These alone can reduce BP by 20-30 mmHg. Medications: 4 main first-line drug classes — ACE inhibitors (ramipril, lisinopril), ARBs (losartan, telmisartan), calcium channel blockers (amlodipine), and thiazide diuretics (indapamide, chlorthalidone). Most patients need 2-3 drugs for optimal control."
+      },
+      {
+        "question": "Do I need to take blood pressure medications for life?",
+        "answer": "For primary hypertension, medication is usually lifelong — stopping treatment allows BP to rise again. However, if lifestyle changes result in significant weight loss, sodium restriction, and BP normalization, some patients can reduce or stop medications under medical supervision. Never stop antihypertensive medication without medical guidance — sudden discontinuation can cause rebound hypertensive crisis (especially with clonidine or beta-blockers)."
+      },
+      {
+        "question": "What is the DASH diet and does it really lower blood pressure?",
+        "answer": "DASH (Dietary Approaches to Stop Hypertension) is the most evidence-based dietary strategy for hypertension. It emphasizes: 8-10 servings of fruits and vegetables daily (potassium, magnesium, antioxidants), whole grains, low-fat dairy (calcium), lean proteins, limiting sodium (<5g salt/day), and avoiding saturated fat, red meat, sweets, and sugary beverages. Multiple large clinical trials show DASH diet alone reduces SBP by 8-14 mmHg — equivalent to starting one antihypertensive drug. Combined with sodium restriction, it reduces SBP by up to 20 mmHg."
+      },
+      {
+        "question": "Can reducing salt intake really make a difference?",
+        "answer": "Yes — dramatically. Sodium restriction is the single most effective dietary change for hypertension. Every 1g/day reduction in sodium reduces SBP by 2-5 mmHg. Reducing from average consumption (4-5g sodium/day = 10-12g salt/day) to the recommended limit (2g sodium = 5g salt/day) can reduce SBP by 5-10 mmHg. The biggest sources of hidden sodium are processed foods, restaurant meals, canned foods, bread, sauces, and pickles — not just table salt. Reading food labels and cooking fresh food with herbs instead of salt is the most effective approach."
+      },
+      {
+        "question": "Are ACE inhibitors and ARBs the same thing?",
+        "answer": "Both block the renin-angiotensin-aldosterone system (RAAS) and have similar BP-lowering and organ-protective effects. ACE inhibitors (ramipril, lisinopril, perindopril) block the enzyme that produces angiotensin II. ARBs (losartan, telmisartan, candesartan) block the angiotensin receptor directly. Key difference: ACE inhibitors cause dry cough in 10-20% of patients (from bradykinin accumulation) — ARBs do not cause cough and are used as replacement. They must NEVER be combined — doubles AKI and hyperkalaemia risk. Both are absolutely contraindicated in pregnancy."
+      },
+      {
+        "question": "What is a hypertensive emergency and how is it different from hypertensive urgency?",
+        "answer": "Both involve very high BP (usually >180/120 mmHg). Hypertensive URGENCY: severely elevated BP WITHOUT acute target organ damage — treated with oral medications and gradual BP reduction over 24-48 hours; usually outpatient. Hypertensive EMERGENCY: severely elevated BP WITH acute target organ damage — brain (encephalopathy, stroke), heart (MI, pulmonary oedema), aorta (dissection), kidneys (AKI), eyes (papilloedema), or eclampsia. Requires IMMEDIATE emergency services call, ICU admission, and IV antihypertensive medications. Do NOT lower BP too rapidly — brain and heart ischaemia can worsen."
+      },
+      {
+        "question": "Is hypertension in pregnancy dangerous?",
+        "answer": "Yes — hypertensive disorders of pregnancy affect 10% of pregnancies and are a leading cause of maternal and fetal death worldwide. Severe forms — pre-eclampsia (high BP + proteinuria after 20 weeks) and eclampsia (with seizures) — require urgent delivery and IV magnesium sulfate. ACE inhibitors and ARBs are absolutely contraindicated in pregnancy — they cause fatal fetal abnormalities. Safe medications include methyldopa, labetalol, and nifedipine SR. Women with a history of pre-eclampsia have 3-4x higher lifetime cardiovascular risk."
+      },
+      {
+        "question": "Why do I need regular blood tests on antihypertensive medication?",
+        "answer": "Different antihypertensives require different monitoring: ACEi and ARBs can raise potassium (hyperkalaemia — heart rhythm problems) and impair kidney function — renal function and potassium checked 1-4 weeks after starting and annually. Diuretics (thiazides and loop diuretics) can lower potassium and sodium — electrolytes monitored. Aldosterone antagonists (spironolactone) can cause dangerous potassium elevation — especially with ACEi/ARBs. All patients benefit from annual blood tests: renal function, electrolytes, lipids, glucose, and urine ACR (for kidney damage detection)."
+      },
+      {
+        "question": "Can stress cause high blood pressure?",
+        "answer": "Stress causes acute BP elevation through adrenaline and cortisol release — this is the 'flight or fight' response. Chronic psychosocial stress (job strain, financial pressure, relationship problems, bereavement) sustains sympathetic nervous system overactivation, contributing to persistent hypertension. Regular stress causes approximately 3-5 mmHg chronic BP elevation. Stress management through mindfulness meditation, yoga, slow deep breathing (6 breaths/min), and CBT can reduce SBP by 3-7 mmHg and should be a component of hypertension management."
+      },
+      {
+        "question": "What foods should I eat to lower my blood pressure?",
+        "answer": "Focus on: (1) Potassium-rich foods — bananas, sweet potato, spinach, avocado, coconut water, dal; (2) Nitrate-rich vegetables — beetroot juice, spinach, kale, rocket; (3) Low-fat dairy — skimmed milk, yogurt, buttermilk; (4) Fatty fish — salmon, mackerel, sardines; (5) Dark berries — blueberries, pomegranate; (6) Garlic (raw or extract); (7) Unsalted nuts — walnuts, almonds; (8) Dark chocolate (≥70% cocoa); (9) Green tea; (10) Hibiscus tea. Combine these in a DASH-pattern diet and restrict sodium to <5g salt/day."
+      }
+    ],
+
+    "references": [
+      "ESH/ESC Guidelines for the Management of Arterial Hypertension: 2018 (Williams B et al., J Hypertension 2018)",
+      "2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults",
+      "WHO Global Brief on Hypertension: Silent Killer, Global Public Health Crisis (2013) and 2023 Update",
+      "NICE Clinical Guideline (NG136): Hypertension in Adults: Diagnosis and Management (2019, updated 2022)",
+      "JNC 8 Guidelines — Evidence-Based Guideline for the Management of High Blood Pressure in Adults (JAMA 2014)",
+      "Indian Hypertension Guidelines III (2013) — Indian Society of Hypertension / Association of Physicians of India",
+      "SPRINT Research Group — A Randomized Trial of Intensive versus Standard Blood-Pressure Control (NEJM, 2015)",
+      "ALLHAT Officers and Coordinators — Major Outcomes in Hypertension (JAMA, 2002)",
+      "DASH Dietary Pattern — Effects on Blood Pressure: Original DASH Trial (NEJM, Appel et al., 1997)",
+      "Sacks FM et al. — Effects on Blood Pressure of Reduced Dietary Sodium (DASH-Sodium Trial, NEJM 2001)",
+      "HOPE Trial — Effects of an ACE Inhibitor, Ramipril, on Cardiovascular Events (NEJM, 2000)",
+      "LIFE Trial — Losartan vs Atenolol in LVH Hypertension (Lancet, 2002)",
+      "ONTARGET Trial — Telmisartan, Ramipril, or Both in High-Risk Patients (NEJM, 2008)",
+      "Fuchs FD, Whelton PK — High Blood Pressure and Cardiovascular Disease (Hypertension, 2020)",
+      "Ong KL et al. — Global, regional, and national prevalence of hypertension and blood pressure trends (Lancet, 2021)",
+      "Edwards JJ et al. — Exercise training and resting blood pressure: a meta-analysis (BJSM, 2023 — isometric exercise study)",
+      "UpToDate: Overview of hypertension in adults; Antihypertensive therapy; Secondary hypertension evaluation",
+      "Medscape: Hypertension Clinical Overview and Treatment Guidelines"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-HYPERTENSION-014",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-03",
+      "last_updated": "2026-06-03",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is intended for educational and informational purposes for the MedoAir chatbot. It does not replace professional medical advice, diagnosis, or treatment. Hypertension is a serious chronic medical condition — always consult a licensed physician or cardiologist for diagnosis, monitoring, and treatment decisions. Never stop or adjust antihypertensive medication without medical guidance.",
+      "tags": ["hypertension", "high blood pressure", "silent killer", "cardiovascular disease", "stroke", "heart failure", "DASH diet", "antihypertensive", "systolic", "diastolic", "ACE inhibitor", "ARB", "amlodipine", "ramipril", "medoair"]
+    }
+  }
+}

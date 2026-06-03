@@ -1,0 +1,1491 @@
+{
+  "disease": {
+    "id": "DIS-012",
+    "name": "Arthritis",
+    "scientific_name": "Arthritis / Articular Disease",
+    "icd_10_code": "M00-M25 (varies by type: OA M15-M19; RA M05-M06; Gout M10; PsA M07)",
+    "category": "Musculoskeletal and Connective Tissue Disease",
+    "overview": {
+      "description": "Arthritis is not a single disease but an umbrella term for more than 100 different conditions that cause pain, swelling, stiffness, and decreased range of motion in one or more joints. The two most common forms are Osteoarthritis (OA) — a degenerative 'wear and tear' disease caused by cartilage breakdown — and Rheumatoid Arthritis (RA) — a chronic autoimmune disease where the immune system attacks the joint lining (synovium). Arthritis is the leading cause of disability in adults worldwide, significantly impacting daily activities, quality of life, and work productivity.",
+      "affected_organ": "Joints (synovium, cartilage, bone, tendons, ligaments); also systemic organs in inflammatory arthritis (heart, lungs, eyes, kidneys in RA)",
+      "prevalence": "Over 530 million people affected worldwide (WHO 2023); approximately 54 million adults in the USA (CDC); leading cause of disability globally.",
+      "age_group": "All age groups; OA predominantly affects adults over 50; RA most commonly onset 30-60 years; juvenile arthritis in children under 16.",
+      "is_contagious": false,
+      "is_curable": false,
+      "is_manageable": true,
+      "chronic": true
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Osteoarthritis (OA)",
+        "scientific_name": "Degenerative Joint Disease (DJD)",
+        "description": "Most common form of arthritis (~80% of cases). Caused by progressive breakdown and eventual loss of articular cartilage in joints, resulting in bone-on-bone friction, osteophyte (bone spur) formation, joint space narrowing, and subchondral bone changes. Primarily a mechanical and metabolic disease, though inflammation is also present.",
+        "most_affected_joints": ["Knees", "Hips", "Spine (cervical and lumbar)", "Hands (DIP and PIP joints)", "First carpometacarpal joint (thumb base)"],
+        "common_in": "Adults over 50; women more than men after menopause; obese individuals; athletes with prior joint injuries"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Rheumatoid Arthritis (RA)",
+        "scientific_name": "Rheumatoid Arthritis",
+        "description": "Chronic systemic autoimmune disease where the immune system attacks the synovial membrane lining the joints, causing persistent synovitis, pannus formation, progressive joint destruction, deformity, and disability. Characterized by symmetrical small joint involvement, morning stiffness lasting >1 hour, and elevated inflammatory markers. Can affect multiple organ systems beyond joints.",
+        "most_affected_joints": ["Wrists", "Metacarpophalangeal (MCP) joints", "Proximal interphalangeal (PIP) joints", "Metatarsophalangeal (MTP) joints", "Ankles", "Knees — symmetrical"],
+        "common_in": "Women 3x more than men; age 30-60 (can occur at any age); strong genetic association (HLA-DR4, DR1)"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Psoriatic Arthritis (PsA)",
+        "scientific_name": "Psoriatic Arthritis",
+        "description": "Inflammatory arthritis associated with psoriasis (chronic skin condition causing red, scaly patches). Affects approximately 30% of people with psoriasis. Can affect any joint; distinguished by dactylitis (sausage digit — swelling of entire finger or toe), nail pitting, and enthesitis (inflammation at tendon/ligament insertion points). Seronegative (RF negative).",
+        "most_affected_joints": ["Any joint — asymmetric pattern; DIP joints characteristically; sacroiliac joints; spine"],
+        "common_in": "Adults with psoriasis; age 30-55; equal male-female ratio"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Gout",
+        "scientific_name": "Gouty Arthritis / Monosodium Urate Crystal Arthropathy",
+        "description": "Caused by deposition of monosodium urate (MSU) crystals in joints and soft tissues due to hyperuricemia (elevated serum uric acid). Presents as sudden, excruciatingly painful, hot, swollen, red joints (flares) — classically the first metatarsophalangeal joint (big toe = podagra). Crystals form tophi (hard deposits) over time. Triggered by high-purine foods, alcohol, dehydration, medications, and medical illness.",
+        "most_affected_joints": ["First MTP joint (big toe — podagra, most classic)", "Ankle", "Knee", "Wrist", "Elbow (olecranon bursa)"],
+        "common_in": "Men >40 years (women after menopause); individuals with hyperuricemia; those on diuretics or low-dose aspirin"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Juvenile Idiopathic Arthritis (JIA)",
+        "scientific_name": "Juvenile Idiopathic Arthritis",
+        "description": "The most common chronic arthritis in children under 16 years. Umbrella term for several subtypes of chronic childhood arthritis persisting for more than 6 weeks with no identifiable cause. Can cause joint damage, growth abnormalities, uveitis (eye inflammation), and disability if not treated promptly.",
+        "subtypes": ["Oligoarticular JIA (most common)", "Polyarticular JIA (RF positive and negative)", "Systemic JIA (Still's disease)", "Enthesitis-related arthritis", "Psoriatic JIA"],
+        "common_in": "Children under 16 years; girls more common for most subtypes"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Ankylosing Spondylitis (AS) / Axial Spondyloarthritis (axSpA)",
+        "scientific_name": "Ankylosing Spondylitis",
+        "description": "Chronic inflammatory arthritis primarily affecting the spine and sacroiliac joints, causing progressive spinal fusion (ankylosis), back pain, and postural changes (stooped posture — question mark spine). Associated with HLA-B27 gene marker. Also causes uveitis (eye), cardiac, and pulmonary complications. Part of the spondyloarthropathy family.",
+        "most_affected_joints": ["Sacroiliac joints (early, characteristic)", "Lumbar spine", "Cervical spine", "Large peripheral joints (hips, shoulders, knees)", "Entheses (heel, plantar fascia)"],
+        "common_in": "Young men aged 15-35; HLA-B27 positive individuals; male-to-female ratio 3:1"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Reactive Arthritis (Reiter's Syndrome)",
+        "scientific_name": "Reactive Arthritis",
+        "description": "Sterile joint inflammation triggered by a preceding infection (usually genitourinary — Chlamydia, or gastrointestinal — Salmonella, Shigella, Yersinia, Campylobacter). Classic triad: arthritis + urethritis/cervicitis + conjunctivitis ('can't see, can't pee, can't climb a tree'). Seronegative; HLA-B27 positive in 60-80%.",
+        "most_affected_joints": ["Knees", "Ankles", "Feet (asymmetric oligoarthritis)", "Sacroiliac joints"],
+        "common_in": "Young adults aged 20-40; more common in men after genitourinary infection; both sexes after GI infection"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Septic Arthritis (Infectious Arthritis)",
+        "scientific_name": "Septic/Infectious Arthritis",
+        "description": "Medical emergency. Bacterial infection of a joint causing rapid, destructive inflammation. Can destroy the joint within days if untreated. Most commonly caused by Staphylococcus aureus (including MRSA). Hematogenous spread most common. Requires urgent joint aspiration, culture, and IV antibiotics.",
+        "most_affected_joints": ["Knee (most common)", "Hip", "Shoulder", "Wrist", "Any single joint (monoarthritis)"],
+        "common_in": "Elderly, immunocompromised, IV drug users, patients with prosthetic joints, patients with pre-existing joint disease (RA, OA)"
+      },
+      {
+        "id": "TYPE-09",
+        "name": "Systemic Lupus Erythematosus Arthritis (Lupus Arthritis)",
+        "scientific_name": "SLE-associated Arthritis / Jaccoud's Arthropathy",
+        "description": "Joint involvement occurs in >90% of lupus patients. Arthritis is typically non-erosive and symmetrical (unlike RA). Jaccoud's arthropathy refers to reducible deformities from ligamentous laxity in SLE. Lupus is a systemic autoimmune disease also affecting kidneys, skin, heart, brain, and blood.",
+        "common_in": "Women of childbearing age (15-45 years); 9:1 female-to-male ratio; African American, Hispanic, and Asian women disproportionately affected"
+      },
+      {
+        "id": "TYPE-10",
+        "name": "Pseudogout (CPPD Disease)",
+        "scientific_name": "Calcium Pyrophosphate Deposition Disease (CPPD)",
+        "description": "Crystal-induced arthritis caused by deposition of calcium pyrophosphate dihydrate (CPPD) crystals in joint cartilage and synovial fluid. Clinically similar to gout but often involves knees, wrists, and ankles rather than the big toe. Rhombus-shaped crystals (positively birefringent) on microscopy — distinguishes from gout (needle-shaped, negatively birefringent).",
+        "most_affected_joints": ["Knee (most common)", "Wrist", "Ankle", "Hip"],
+        "common_in": "Elderly adults over 60; associated with hyperparathyroidism, hemochromatosis, hypomagnesemia"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Arthritis",
+        "description": "Occasional joint pain and stiffness with minimal functional limitation",
+        "pain_scale": "1-3 / 10 on Visual Analogue Scale (VAS)",
+        "functional_impact": "Can perform all daily activities independently; some discomfort with prolonged activity",
+        "structural_changes": "OA: Early joint space narrowing (Grade I Kellgren-Lawrence); RA: No erosions on X-ray (ACR/EULAR remission possible with early treatment)",
+        "management": "NSAIDs or paracetamol as needed; physical therapy; lifestyle modifications; topical treatments; patient education"
+      },
+      {
+        "level": 2,
+        "name": "Moderate Arthritis",
+        "description": "Regular pain and stiffness limiting some activities; swelling may be present",
+        "pain_scale": "4-6 / 10 VAS",
+        "functional_impact": "Difficulty with stairs, prolonged walking, lifting, and fine hand tasks; affects work and social activities",
+        "structural_changes": "OA: Moderate joint space narrowing, early osteophytes (Grade II-III K-L); RA: Early erosions on X-ray; DAS28 score >3.2",
+        "management": "Oral NSAIDs; intra-articular corticosteroid injections; DMARDs for RA/PsA; combination therapy; occupational therapy"
+      },
+      {
+        "level": 3,
+        "name": "Severe Arthritis",
+        "description": "Constant or near-constant pain; significant deformity or joint destruction; major functional limitation",
+        "pain_scale": "7-9 / 10 VAS",
+        "functional_impact": "Unable to perform basic daily tasks independently; difficulty with personal care, walking, and employment",
+        "structural_changes": "OA: Severe joint space loss, large osteophytes, subchondral sclerosis (Grade III-IV K-L); RA: Multiple erosions, joint deformities (swan neck, boutonniere, ulnar deviation)",
+        "management": "Combination DMARDs or biologic agents (RA/PsA); strong analgesics; joint replacement surgery (OA); multidisciplinary team care; assistive devices"
+      },
+      {
+        "level": 4,
+        "name": "End-Stage / Refractory Arthritis",
+        "description": "Complete joint destruction, severe deformity, or refractory disease not responding to standard treatment",
+        "pain_scale": "9-10 / 10 VAS; constant pain significantly impacting quality of life",
+        "functional_impact": "Dependent on others for daily care; severe disability; unable to work or maintain independence",
+        "structural_changes": "OA: Bone-on-bone articulation, joint collapse, severe malalignment; RA: Mutilans deformity; ankylosis in AS",
+        "management": "Total joint replacement (arthroplasty) — knee, hip, shoulder; arthrodesis (joint fusion) for small joints; biologic/targeted synthetic DMARDs for inflammatory; palliative pain management; comprehensive rehabilitation"
+      }
+    ],
+
+    "causes": {
+      "genetic_factors": [
+        "HLA-DR4 and HLA-DR1 gene variants — strongly associated with seropositive Rheumatoid Arthritis",
+        "HLA-B27 — associated with Ankylosing Spondylitis, Reactive Arthritis, and Psoriatic Arthritis (axial)",
+        "Family history of arthritis — first-degree relatives have 3-5x increased risk of RA",
+        "PTPN22, PADI4, STAT4, CTLA4 gene variants — implicated in autoimmune arthritis risk",
+        "COL2A1 (collagen type II) gene mutations — predispose to early-onset osteoarthritis",
+        "Family history of gout or hyperuricemia — SLC2A9, ABCG2 gene variants affecting uric acid transport",
+        "Genetic predisposition to cartilage degradation and impaired repair mechanisms (OA)"
+      ],
+      "environmental_and_mechanical_triggers": [
+        "Joint overuse and repetitive stress (occupational or sporting activities) — accelerates cartilage wear (OA)",
+        "Previous joint injury or trauma — intra-articular fractures, ligament tears, meniscal damage increase OA risk 3-5x",
+        "Obesity — increases mechanical load on weight-bearing joints; also promotes systemic inflammation worsening both OA and RA",
+        "Sedentary lifestyle — muscle weakness, reduced joint stability",
+        "Smoking — strongest environmental risk factor for RA; increases anti-CCP antibody production via PADI4 activation in lungs",
+        "Infections — trigger Reactive Arthritis (Chlamydia, Salmonella, Shigella, Yersinia, Campylobacter); postulated role in RA via molecular mimicry (Epstein-Barr virus, Porphyromonas gingivalis in periodontitis)",
+        "High dietary purine intake (red meat, organ meats, shellfish, beer) — elevates uric acid levels causing gout",
+        "Alcohol — increases uric acid production and reduces renal excretion (gout trigger)",
+        "Dehydration — reduces uric acid excretion, precipitating gout attacks",
+        "Occupational hazards: heavy lifting, kneeling, squatting (miners, farmers, construction workers) — OA risk",
+        "Hormonal changes — estrogen decline after menopause dramatically increases OA and RA risk",
+        "Periodontitis (gum disease) — associated with increased RA susceptibility via citrullination by P. gingivalis bacteria"
+      ],
+      "other_causes": [
+        "Autoimmune dysregulation — immune system attacks self-antigens in synovial joint (RA, PsA, AS, SLE arthritis)",
+        "Crystal deposition — monosodium urate (gout), calcium pyrophosphate (pseudogout), basic calcium phosphate",
+        "Bacterial joint infection — Staphylococcus aureus, Streptococcus, Gram-negative organisms (septic arthritis)",
+        "Viral joint infection — Parvovirus B19, hepatitis B, hepatitis C, chikungunya, rubella, HIV",
+        "Metabolic disorders — hyperuricemia (gout), hemochromatosis (iron overload), hyperparathyroidism, Wilson's disease",
+        "Medications — diuretics (thiazide, loop) and low-dose aspirin increase urate levels (gout); some medications trigger drug-induced lupus arthritis",
+        "Blood disorders — hemophilia (hemarthrosis), sickle cell disease",
+        "Neurological conditions — Charcot joint (neuropathic arthropathy) from diabetic neuropathy, syphilis",
+        "Previous joint surgery complications",
+        "Prosthetic joint failure or infection (periprosthetic joint infection)"
+      ]
+    },
+
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-201",
+          "name": "Joint Pain (Arthralgia)",
+          "description": "Pain in one or more joints — may be aching, sharp, burning, or throbbing. In OA, pain worsens with activity and improves with rest. In RA, pain is present at rest and worse in the morning. In gout, pain is sudden and excruciating. Pain can be constant or episodic (flares).",
+          "severity": "Mild to Severe",
+          "onset": "Gradual (OA, RA) or sudden (gout, septic arthritis, reactive arthritis)"
+        },
+        {
+          "id": "SYM-202",
+          "name": "Joint Stiffness",
+          "description": "Reduced ability to move a joint through its full range of motion. Morning stiffness lasting >1 hour is a hallmark of inflammatory arthritis (RA, PsA, AS). In OA, stiffness is typically brief (<30 minutes, 'gelling effect') after rest, improving with movement.",
+          "severity": "Mild to Severe",
+          "onset": "Worst in the morning or after periods of inactivity"
+        },
+        {
+          "id": "SYM-203",
+          "name": "Joint Swelling and Effusion",
+          "description": "Visible or palpable swelling of the joint due to synovial thickening (inflammatory arthritis), joint effusion (fluid accumulation), or both. In RA — boggy, soft, warm swelling (synovitis). In OA — bony, hard enlargement (osteophytes). In gout — extremely swollen, hot, red, tender joint.",
+          "severity": "Mild to Severe",
+          "onset": "Episodic in gout (acute flares); persistent in RA; gradual in OA"
+        },
+        {
+          "id": "SYM-204",
+          "name": "Warmth and Redness (Erythema) over Joint",
+          "description": "Increased skin temperature and redness over the affected joint indicating active inflammation. Most prominent in gout (bright red), septic arthritis, and acute inflammatory RA flares. Less common in OA.",
+          "severity": "Mild to Severe",
+          "onset": "With inflammatory flares"
+        },
+        {
+          "id": "SYM-205",
+          "name": "Reduced Range of Motion",
+          "description": "Decreased ability to move the joint through its normal arc of movement due to pain, swelling, mechanical damage, or contracture. Measurable with goniometer. A key determinant of disability.",
+          "severity": "Mild to Severe",
+          "onset": "Progressive in OA; variable in RA; may be abrupt in septic arthritis"
+        },
+        {
+          "id": "SYM-206",
+          "name": "Fatigue and Malaise",
+          "description": "Profound tiredness and general feeling of being unwell — especially prominent in systemic inflammatory arthritis (RA, SLE arthritis, PsA). Driven by chronic inflammation (cytokines — TNF-α, IL-6), anemia of chronic disease, pain-disrupted sleep, and depression. Can be as debilitating as joint pain.",
+          "severity": "Mild to Severe",
+          "onset": "Persistent; worse during disease flares"
+        },
+        {
+          "id": "SYM-207",
+          "name": "Joint Deformity",
+          "description": "Visible structural changes to joint shape from cartilage/bone loss or soft tissue damage. In OA: Heberden's nodes (DIP joints), Bouchard's nodes (PIP joints), valgus/varus knee deformity. In RA: ulnar deviation of fingers, swan-neck deformity, boutonniere deformity, Z-thumb, subluxation.",
+          "severity": "Moderate to Severe (irreversible in advanced disease)",
+          "onset": "Late manifestation; months to years of progressive disease"
+        }
+      ],
+      "secondary_symptoms": [
+        "Crepitus — grating, clicking, or crackling sound/sensation in the joint during movement (OA hallmark)",
+        "Muscle weakness and wasting around affected joints from disuse",
+        "Difficulty sleeping due to joint pain and stiffness (nocturnal pain — especially hip OA, RA)",
+        "Depression and anxiety — common in chronic pain conditions; affects 20-30% of arthritis patients",
+        "Loss of appetite and unintentional weight loss in systemic inflammatory arthritis (RA)",
+        "Fever — low-grade in RA flares; high fever in septic arthritis, systemic JIA, reactive arthritis",
+        "Nodules — rheumatoid nodules (firm subcutaneous lumps over pressure points — elbows, fingers; RA); tophi (gout)",
+        "Dry eyes and dry mouth (Sjögren's syndrome overlap with RA)",
+        "Skin rashes — butterfly facial rash (lupus arthritis); psoriatic plaques (PsA); keratoderma (reactive arthritis)",
+        "Nail changes — pitting, onycholysis, subungual hyperkeratosis (PsA)",
+        "Anaemia of chronic disease — fatigue, pallor, reduced exercise capacity (common in RA)",
+        "Carpal tunnel syndrome — entrapment of median nerve from wrist joint swelling (RA)",
+        "Tendon rupture — especially extensor tendons of fingers in advanced RA"
+      ],
+      "warning_signs_of_attack": [
+        "Sudden onset extremely severe joint pain — especially if new, single joint (rule out septic arthritis / gout)",
+        "Red, hot, swollen joint with fever — septic arthritis until proven otherwise (joint destruction within 24-48h)",
+        "Loss of ability to bear weight on leg or use affected limb",
+        "New joint swelling with skin warmth after a recent infection (throat, genitourinary, gastrointestinal)",
+        "Severe spine pain with neurological symptoms (numbness, weakness, bladder/bowel changes) — AS with cord compression",
+        "Sudden loss of range of motion in a previously functioning joint"
+      ],
+      "symptoms_in_children": [
+        "Persistent joint swelling for more than 6 weeks without clear injury (JIA hallmark)",
+        "Joint stiffness and limping in the morning; improving throughout the day with activity",
+        "Reluctance to walk, use affected limb, or engage in physical activities",
+        "Unexplained fevers — especially spiking fever with salmon-colored rash (systemic JIA/Still's disease)",
+        "Eye redness, pain, or vision changes — anterior uveitis (30% of oligoarticular JIA); may be asymptomatic",
+        "Unequal limb lengths or joint enlargement due to altered growth patterns near inflamed growth plates",
+        "Fatigue, irritability, and poor school performance from chronic pain and disrupted sleep"
+      ],
+      "disease_specific_features": {
+        "osteoarthritis": [
+          "Pain worse with weight-bearing activity, climbing stairs, and prolonged standing; relieved by rest",
+          "Heberden's nodes (bony swelling at DIP joints) and Bouchard's nodes (PIP joints) in hand OA",
+          "Crepitus on knee examination — palpable grinding during flexion-extension",
+          "No or minimal systemic symptoms (no significant fever, no elevated inflammatory markers usually)",
+          "Bilateral knee pain with varus (bow-legged) deformity in medial compartment knee OA"
+        ],
+        "rheumatoid_arthritis": [
+          "Symmetrical joint involvement — both wrists, both MCP joints, both knees",
+          "Morning stiffness lasting >1 hour — characteristic and essential diagnostic feature",
+          "Extra-articular features: rheumatoid nodules, Sjögren's overlap, interstitial lung disease, pericarditis, vasculitis, episcleritis",
+          "Elevated CRP, ESR, positive RF (rheumatoid factor), and anti-CCP antibodies",
+          "Anemia of chronic disease; thrombocytosis during active disease",
+          "Atlanto-axial subluxation (C1-C2 instability) — rare but dangerous RA complication"
+        ],
+        "gout_specific": [
+          "Classic podagra — sudden, exquisite pain in first metatarsophalangeal joint (big toe) at night",
+          "Tophi — hard chalky deposits under skin at ear helix, olecranon bursa, Achilles tendon, finger joints",
+          "Hyperuricemia (serum uric acid >6.8 mg/dL) — prerequisite for urate crystal formation",
+          "Attacks often triggered by specific events: alcohol binge, high-purine meal, dehydration, acute illness, diuretic use"
+        ],
+        "ankylosing_spondylitis_specific": [
+          "Inflammatory back pain — insidious onset in young adults, improves with exercise (unlike mechanical back pain which worsens)",
+          "Bilateral sacroiliac joint tenderness on examination",
+          "Chest wall pain and restricted chest expansion (costovertebral joint involvement)",
+          "Iritis/uveitis — sudden painful red eye; occurs in 25-40% of AS patients",
+          "Progressive spinal fusion causing reduced spinal mobility and 'question mark' posture in late disease"
+        ]
+      }
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Detailed joint symptom history — onset, duration, pattern (symmetrical/asymmetrical, migratory/additive), morning stiffness duration",
+        "Family history of arthritis, autoimmune diseases, psoriasis, or gout",
+        "Prior joint injuries, surgeries, or infections",
+        "Occupation and physical activity history (joint overuse, repetitive strain)",
+        "Current medications — especially diuretics, low-dose aspirin, ciclosporin, ethambutol (uric acid raising)",
+        "Dietary history — purine-rich food and alcohol intake (gout assessment)",
+        "Sexual and gastrointestinal infection history (reactive arthritis)",
+        "Skin disease (psoriasis), eye disease (uveitis), gut disease (IBD) — spondyloarthropathy screen",
+        "Smoking history",
+        "Comorbidities: cardiovascular disease, diabetes, hypertension, renal disease"
+      ],
+      "physical_examination": [
+        "Joint inspection — swelling, deformity, skin changes, muscle wasting, nodules, tophi, rashes",
+        "Joint palpation — warmth, tenderness, synovial thickening (boggy vs bony), effusion detection",
+        "Range of motion assessment — active and passive, with goniometer measurement",
+        "Special joint tests: McMurray's test (knee meniscus), Lachman's test (ACL), Finkelstein's test (De Quervain's), FABER test (hip/SI joint), Schober's test (lumbar spine mobility — AS screening)",
+        "Gait assessment — antalgic gait (pain avoidance), Trendelenburg gait (hip abductor weakness)",
+        "Grip strength assessment — dynamometer or functional test (jar opening, handshake)",
+        "Neurological examination — for neuropathic pain, carpal tunnel signs (Tinel's, Phalen's), radiculopathy",
+        "Skin examination — psoriatic plaques, rheumatoid nodules, rashes, tophi",
+        "Eye examination — conjunctivitis (reactive arthritis), uveitis (AS, JIA), episcleritis (RA)",
+        "Chest examination — reduced chest expansion (AS); pleural effusion, pericardial rub (RA)",
+        "Cardiovascular assessment — aortic regurgitation murmur (AS); pericarditis (RA, SLE)",
+        "Functional assessment — HAQ (Health Assessment Questionnaire) for daily living activities"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Rheumatoid Factor (RF)",
+          "type": "Blood — Serological",
+          "description": "Autoantibody (usually IgM) directed against the Fc portion of IgG. Positive in 70-80% of RA patients (seropositive RA). Also positive in other autoimmune conditions, infections, and 5% of healthy population.",
+          "purpose": "Supports diagnosis of Rheumatoid Arthritis; prognostic marker (high titer RF — worse prognosis)",
+          "key_metric": "Positive: >14 IU/mL (lab-dependent); high titer >100 IU/mL associated with aggressive erosive disease"
+        },
+        {
+          "test_name": "Anti-Cyclic Citrullinated Peptide (Anti-CCP) Antibodies",
+          "type": "Blood — Serological",
+          "description": "Highly specific autoantibody for Rheumatoid Arthritis. More specific than RF (~95% specificity). Can be positive years before clinical RA onset. Predicts severe erosive disease and poor prognosis.",
+          "purpose": "Most specific serological marker for RA; confirms RA diagnosis; predicts erosive disease",
+          "key_metric": "Positive: >17 U/mL (varies by lab); sensitivity 67-70%, specificity ~95% for RA"
+        },
+        {
+          "test_name": "Erythrocyte Sedimentation Rate (ESR)",
+          "type": "Blood — Inflammatory marker",
+          "description": "Non-specific marker of systemic inflammation. Elevated in inflammatory arthritis (RA, PsA, AS), infection, and malignancy. Normal in OA (distinguishes inflammatory from non-inflammatory arthritis).",
+          "purpose": "Assess inflammatory activity; monitor treatment response; distinguish inflammatory from non-inflammatory arthritis",
+          "key_metric": "Normal: <15 mm/hr (men), <20 mm/hr (women); elevated in inflammatory arthritis (often >40-100 mm/hr in active RA)"
+        },
+        {
+          "test_name": "C-Reactive Protein (CRP)",
+          "type": "Blood — Inflammatory marker",
+          "description": "Acute phase protein produced by liver in response to inflammation. More sensitive and faster-responding than ESR. Rises within hours of inflammation onset. Used in DAS28 disease activity score calculation for RA.",
+          "purpose": "Assess disease activity; monitor treatment response; detect flares and infections",
+          "key_metric": "Normal: <5 mg/L (high-sensitivity CRP <1 mg/L); active RA: typically >10-50 mg/L"
+        },
+        {
+          "test_name": "Serum Uric Acid Level",
+          "type": "Blood — Metabolic",
+          "description": "Measures blood uric acid concentration. Hyperuricemia (elevated uric acid) is a prerequisite for gout, but not all hyperuricemic patients develop gout. May be normal during acute gout attack (urate shifts into crystals).",
+          "purpose": "Screens for and monitors hyperuricemia in gout; guides urate-lowering therapy",
+          "key_metric": "Normal: <6.8 mg/dL in women, <7.0 mg/dL in men; hyperuricemia: >6.8 mg/dL; treatment target: <5-6 mg/dL"
+        },
+        {
+          "test_name": "HLA-B27 Genetic Test",
+          "type": "Blood — Genetic",
+          "description": "Detects presence of HLA-B27 histocompatibility antigen. Present in 90-95% of Ankylosing Spondylitis patients, 60-80% of Reactive Arthritis, and some PsA with axial involvement. Present in 8% of general population.",
+          "purpose": "Supports diagnosis of spondyloarthropathies (AS, ReA); not diagnostic alone",
+          "key_metric": "Positive or Negative. Positive strongly supports AS diagnosis in context of clinical features and MRI changes"
+        },
+        {
+          "test_name": "Antinuclear Antibodies (ANA)",
+          "type": "Blood — Serological",
+          "description": "Screens for autoimmune conditions, especially systemic lupus erythematosus (SLE). Positive in SLE, RA, Sjögren's, scleroderma, and other connective tissue diseases. Also positive in ~10% healthy population.",
+          "purpose": "Screen for systemic autoimmune disease; positive ANA triggers further specific antibody testing",
+          "key_metric": "Titer ≥1:80 considered positive; high titer (1:320 or greater) more clinically significant"
+        },
+        {
+          "test_name": "Complete Blood Count (CBC)",
+          "type": "Blood — Haematological",
+          "description": "Provides comprehensive blood cell analysis. In inflammatory arthritis: normocytic normochromic anemia (anemia of chronic disease); thrombocytosis during active inflammation; leukopenia in SLE (Felty's syndrome in RA).",
+          "purpose": "Assess for anemia, infection, baseline before DMARD therapy; monitor side effects of DMARDs",
+          "key_metric": "Anemia (Hb <12 g/dL women, <13 g/dL men); thrombocytosis (platelets >400×10⁹/L in active RA)"
+        },
+        {
+          "test_name": "Joint X-Ray (Radiography)",
+          "type": "Imaging",
+          "description": "Standard first-line imaging for arthritis. Shows joint space narrowing, osteophytes, subchondral sclerosis, and cysts (OA). Shows periarticular osteopenia and marginal erosions in RA. Calcification in CPPD. Radiographic changes lag behind clinical disease by months-years.",
+          "purpose": "Confirm diagnosis, assess disease severity and progression, plan surgical intervention",
+          "key_metric": "Kellgren-Lawrence Grading (OA, 0-4): Grade 0 (normal) to Grade 4 (severe — bone-on-bone, large osteophytes); Larsen Score (RA erosions)"
+        },
+        {
+          "test_name": "MRI (Magnetic Resonance Imaging) of Joints",
+          "type": "Imaging",
+          "description": "Gold standard for early detection of inflammatory arthritis and sacroiliitis. Detects synovitis, bone marrow edema (earliest sign of sacroiliitis in AS), cartilage damage, tendon pathology, and erosions before X-ray changes appear. Essential for early RA and AS diagnosis.",
+          "purpose": "Detect early disease (before X-ray changes); assess soft tissue structures; guide treatment decisions",
+          "key_metric": "Bone marrow edema on STIR sequences: early sacroiliitis sign in AS; gadolinium-enhanced: active synovitis in RA"
+        },
+        {
+          "test_name": "Musculoskeletal Ultrasound (MSUS)",
+          "type": "Imaging",
+          "description": "Real-time imaging of joint synovitis, effusions, tendons, bursae, and entheses. Power Doppler detects active synovial vascularity (active inflammation). Guides joint aspiration and injection procedures.",
+          "purpose": "Detect synovitis, effusions, and enthesitis; assess disease activity; guide injections",
+          "key_metric": "Synovial thickness >2mm with power Doppler signal = active synovitis; useful for monitoring treatment response"
+        },
+        {
+          "test_name": "Synovial Fluid Analysis (Arthrocentesis / Joint Aspiration)",
+          "type": "Joint fluid",
+          "description": "Aspiration of synovial fluid from the joint for cell count, differential, culture, and crystal analysis. Essential for excluding septic arthritis (emergency) and confirming crystal arthritis (gout, CPPD).",
+          "purpose": "ESSENTIAL for excluding septic arthritis; confirms crystal arthritis; differentiates inflammatory from non-inflammatory",
+          "key_metric": "Normal: WBC <200/µL; Non-inflammatory (OA): 200-2000/µL; Inflammatory (RA): 2000-50,000/µL; Septic: >50,000/µL with predominantly neutrophils; Gout: needle-shaped negatively birefringent MSU crystals; CPPD: rhomboid positively birefringent CPP crystals"
+        },
+        {
+          "test_name": "Liver Function Tests (LFTs) and Renal Function",
+          "type": "Blood — Biochemical",
+          "description": "Baseline and monitoring tests required before and during DMARD therapy. Methotrexate can cause hepatotoxicity; NSAIDs cause renal impairment and GI toxicity; leflunomide can cause liver damage.",
+          "purpose": "Baseline assessment; monitor for DMARD hepatotoxicity and renal toxicity; eGFR for dose adjustment",
+          "key_metric": "ALT/AST >3x upper limit normal: halt methotrexate; eGFR <30 mL/min: avoid NSAIDs, adjust DMARD dosing"
+        },
+        {
+          "test_name": "DEXA Bone Density Scan",
+          "type": "Imaging",
+          "description": "Measures bone mineral density at lumbar spine and hip. Patients with inflammatory arthritis on corticosteroids have significantly increased osteoporosis risk.",
+          "purpose": "Detect and monitor corticosteroid-induced osteoporosis; fracture risk assessment",
+          "key_metric": "T-score: Normal (>-1.0); Osteopenia (-1.0 to -2.5); Osteoporosis (<-2.5)"
+        },
+        {
+          "test_name": "TB Screening (Mantoux / IGRA) and Hepatitis B/C Serology",
+          "type": "Blood / Skin test",
+          "description": "Mandatory screening before starting biologic DMARD therapy (TNF inhibitors). TNF blockers reactivate latent TB. Hepatitis B reactivation is a serious risk with rituximab and other biologics.",
+          "purpose": "Mandatory pre-biologic screening; prevents life-threatening TB reactivation",
+          "key_metric": "Positive IGRA (QuantiFERON-TB Gold) or Mantoux >5mm: latent TB prophylaxis required before biologics"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "All medications must be prescribed and supervised by a licensed rheumatologist or physician. Arthritis medications carry significant risks and require regular monitoring. Self-medication is dangerous. Treatment must be individualized based on arthritis type, severity, comorbidities, and patient preference.",
+      "categories": [
+        {
+          "category_id": "MED-CAT-31",
+          "category_name": "Analgesics — Pain Relief (First-Line Symptomatic)",
+          "purpose": "Relieve joint pain and reduce fever. First-line for mild to moderate osteoarthritis.",
+          "medicines": [
+            {
+              "name": "Paracetamol / Acetaminophen",
+              "brand_examples": ["Calpol", "Crocin", "Tylenol", "Panadol"],
+              "form": "Tablet, Syrup, IV",
+              "dosage": "500-1000 mg every 4-6 hours; maximum 4000 mg/day (3000 mg/day in liver disease or elderly)",
+              "use_case": "First-line pain relief for mild OA; preferred in elderly and patients with cardiovascular disease or peptic ulcers who cannot tolerate NSAIDs",
+              "side_effects": ["Hepatotoxicity with overdose", "Minimal side effects at recommended doses"],
+              "note": "Less effective for inflammatory arthritis than NSAIDs; does not reduce joint swelling or stiffness"
+            },
+            {
+              "name": "Tramadol",
+              "brand_examples": ["Tramasure", "Ultram", "Tramal"],
+              "form": "Tablet (IR and SR), Capsule, Injection",
+              "dosage": "50-100 mg every 4-6 hours (IR); 100-200 mg twice daily (SR); max 400 mg/day",
+              "use_case": "Moderate to severe OA pain when NSAIDs contraindicated; short-term use; adjunct therapy",
+              "side_effects": ["Nausea and vomiting", "Dizziness and drowsiness", "Constipation", "Seizures (risk in epilepsy)", "Dependence potential"],
+              "note": "Opioid analgesic — use with caution; avoid in elderly (fall risk); not for long-term first-line use"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-32",
+          "category_name": "NSAIDs — Non-Steroidal Anti-Inflammatory Drugs",
+          "purpose": "Reduce joint pain, swelling, and stiffness by inhibiting COX-1 and/or COX-2 enzymes, blocking prostaglandin synthesis. First-line for inflammatory arthritis symptom control.",
+          "medicines": [
+            {
+              "name": "Ibuprofen",
+              "brand_examples": ["Brufen", "Advil", "Nurofen", "Combiflam (with paracetamol)"],
+              "form": "Tablet, Suspension, Topical gel",
+              "dosage": "400-800 mg three times daily with food; max 2400-3200 mg/day; topical: apply 3-4x daily",
+              "use_case": "Mild to moderate arthritis pain and inflammation; widely used first-line NSAID",
+              "side_effects": ["GI upset, ulcers, and bleeding (most common)", "Renal impairment", "Hypertension and cardiovascular risk", "Fluid retention", "Liver toxicity (rare)"],
+              "monitoring": "Renal function, blood pressure; use lowest effective dose for shortest duration"
+            },
+            {
+              "name": "Naproxen",
+              "brand_examples": ["Naprosyn", "Aleve", "Naproz"],
+              "form": "Tablet",
+              "dosage": "250-500 mg twice daily with food; max 1000 mg/day",
+              "use_case": "Arthritis pain and inflammation; relatively lower cardiovascular risk compared to other NSAIDs",
+              "side_effects": ["GI upset and ulcers", "Renal impairment", "Headache", "Edema"]
+            },
+            {
+              "name": "Diclofenac",
+              "brand_examples": ["Voltaren", "Voveran", "Cataflam"],
+              "form": "Tablet, SR Tablet, Injection, Topical gel/patch",
+              "dosage": "50 mg three times daily or 75 mg SR twice daily; topical gel: apply 2-4x daily to affected joint",
+              "use_case": "OA (especially topical for knee and hand OA), RA, gout acute flares",
+              "side_effects": ["GI toxicity", "Cardiovascular risk", "Hepatotoxicity (relatively higher than other NSAIDs — monitor LFTs)"],
+              "note": "Topical diclofenac gel preferred for knee/hand OA — reduced systemic side effects while maintaining local efficacy"
+            },
+            {
+              "name": "Celecoxib",
+              "brand_examples": ["Celebrex", "Celact"],
+              "form": "Capsule",
+              "dosage": "100-200 mg once or twice daily",
+              "use_case": "OA and RA; preferred in patients at high GI risk (ulcer history); COX-2 selective — reduced GI ulceration risk",
+              "side_effects": ["Cardiovascular risk (COX-2 selective)", "Renal impairment", "Edema", "Reduced GI ulceration vs non-selective NSAIDs"],
+              "contraindications": ["Sulfonamide allergy", "Post-CABG surgery", "Severe cardiovascular disease"]
+            },
+            {
+              "name": "Etoricoxib",
+              "brand_examples": ["Arcoxia", "Nucoxia"],
+              "form": "Tablet",
+              "dosage": "30-60 mg once daily (OA); 90 mg once daily (RA, acute gout flare)",
+              "use_case": "OA, RA, acute gout attacks; COX-2 selective — lower GI risk",
+              "side_effects": ["Cardiovascular risk", "Hypertension", "Renal impairment", "Edema"]
+            },
+            {
+              "name": "Indomethacin",
+              "brand_examples": ["Indocin", "Indocap"],
+              "form": "Capsule, SR Capsule, Suppository",
+              "dosage": "25-50 mg three times daily; max 200 mg/day",
+              "use_case": "Particularly effective for acute gout attacks and AS (spondyloarthropathy); one of the most potent NSAIDs",
+              "side_effects": ["High GI toxicity", "CNS side effects (headache, dizziness)", "Renal impairment", "Bone marrow suppression (rare)"],
+              "note": "Avoid in elderly; use short-term for gout flares"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-33",
+          "category_name": "Corticosteroids",
+          "purpose": "Potent anti-inflammatory agents used to rapidly suppress inflammation in acute flares, bridge therapy until DMARDs take effect, and intra-articular local treatment.",
+          "note": "Long-term systemic corticosteroids should be avoided or minimized due to serious side effects.",
+          "medicines": [
+            {
+              "name": "Prednisolone",
+              "brand_examples": ["Omnacortil", "Wysolone", "Deltacortril"],
+              "form": "Tablet, Syrup",
+              "dosage": "Low dose: 5-10 mg/day (RA bridge therapy); Moderate: 20-40 mg/day (acute flare); High: 0.5-1 mg/kg/day (severe vasculitis); taper gradually",
+              "use_case": "RA — bridge therapy until DMARDs take effect; acute inflammatory flares; PsA; vasculitis; JIA",
+              "side_effects": ["Weight gain and Cushingoid features", "Hyperglycemia and diabetes", "Hypertension", "Osteoporosis (long-term — use calcium/Vit D prophylactically)", "Adrenal suppression", "Increased infection risk", "Cataracts and glaucoma", "Avascular necrosis (hip, knee)", "Skin thinning and bruising", "Mood changes"],
+              "monitoring": "Blood glucose, blood pressure, weight, bone density (DEXA), eye pressure with prolonged use"
+            },
+            {
+              "name": "Methylprednisolone (IV Pulse)",
+              "brand_examples": ["Solu-Medrol", "Depo-Medrol"],
+              "form": "IV Injection, IM Injection (Depo-Medrol for intra-articular)",
+              "dosage": "IV pulse: 500-1000 mg IV over 30 minutes for 3 days (severe RA flare, vasculitis); IM: 80-120 mg (depot injection for acute flare); intra-articular: 10-40 mg per joint",
+              "use_case": "Severe acute RA flare; intra-articular injection for single inflamed joint; before DMARD treatment takes effect",
+              "side_effects": ["Transient hyperglycemia", "Hypertension", "Sleep disturbance", "All systemic steroid effects with long-term use"]
+            },
+            {
+              "name": "Triamcinolone Acetonide",
+              "brand_examples": ["Kenacort", "Kenalog"],
+              "form": "Intra-articular injection",
+              "dosage": "Large joint (knee, hip, shoulder): 20-40 mg per injection; Small joint (wrist, finger): 10 mg",
+              "use_case": "Intra-articular injection for single or oligoarticular OA flares, RA, gout — powerful local anti-inflammatory effect",
+              "side_effects": ["Post-injection flare (crystal reaction in first 24-48h)", "Skin depigmentation and fat atrophy at injection site", "Cartilage damage with repeated frequent injections (limit to 3-4 per joint per year)"],
+              "note": "Joint aspiration followed by injection provides immediate relief and diagnostic information"
+            },
+            {
+              "name": "Betamethasone",
+              "brand_examples": ["Celestone Soluspan", "Betnesol"],
+              "form": "Intra-articular injection",
+              "dosage": "3-12 mg per joint depending on size",
+              "use_case": "Alternative intra-articular steroid; long-acting; effective for OA and inflammatory arthritis joints",
+              "side_effects": ["Post-injection flare", "Skin changes at injection site"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-34",
+          "category_name": "Conventional Synthetic DMARDs (csDMARDs) — Disease-Modifying Antirheumatic Drugs",
+          "purpose": "Modify the underlying disease process, reduce inflammation, prevent joint damage, and achieve sustained remission in inflammatory arthritis (RA, PsA, JIA). Slow-acting — weeks to months for full effect.",
+          "note": "First-line disease-modifying therapy for RA and PsA. Early initiation (treat-to-target) within 3 months of diagnosis significantly improves long-term outcomes.",
+          "medicines": [
+            {
+              "name": "Methotrexate (MTX)",
+              "brand_examples": ["Folitrax", "Methofar", "Methotrex", "Rheumatrex"],
+              "form": "Tablet, Subcutaneous Injection",
+              "dosage": "Start: 7.5-10 mg once weekly; increase by 2.5-5 mg every 4-8 weeks; usual maintenance: 15-25 mg once weekly; always with folic acid 5 mg once weekly (not on MTX day)",
+              "use_case": "FIRST-LINE csDMARD for RA, PsA, JIA; anchor drug for combination csDMARD therapy; also used in AS as adjunct",
+              "mechanism": "Inhibits dihydrofolate reductase (DHFR) and thymidylate synthase; blocks folate-dependent cellular proliferation and purine synthesis; anti-inflammatory via adenosine pathway",
+              "side_effects": ["Nausea and GI upset (most common; folic acid reduces this)", "Mouth ulcers (stomatitis)", "Alopecia (hair thinning)", "Liver fibrosis and cirrhosis (monitor with LFTs; rare with low-dose weekly regimen)", "Interstitial lung disease (methotrexate pneumonitis — rare; 1-3%)", "Bone marrow suppression (rare)", "Teratogenicity — CONTRAINDICATED in pregnancy; must stop 3-6 months before conception"],
+              "monitoring": "LFTs and CBC every 4-8 weeks initially; every 3 months when stable; chest X-ray baseline; renal function",
+              "contraindications": ["Pregnancy and breastfeeding (absolute)", "Severe renal impairment (eGFR <30)", "Significant liver disease", "Active infection", "Alcohol excess (increases hepatotoxicity risk)"]
+            },
+            {
+              "name": "Hydroxychloroquine (HCQ)",
+              "brand_examples": ["Plaquenil", "Hcqs", "Plaquenil"],
+              "form": "Tablet",
+              "dosage": "200-400 mg daily (≤5 mg/kg/day — weight-based dosing to reduce retinal toxicity risk)",
+              "use_case": "Mild RA (often combined with MTX and sulfasalazine in triple therapy); SLE arthritis; reduces cardiovascular risk in RA; anti-malarial with anti-inflammatory properties",
+              "mechanism": "Inhibits toll-like receptor signaling; reduces antigen presentation; alkalinizes lysosomes; inhibits cytokine production",
+              "side_effects": ["Retinal toxicity (maculopathy — rare but irreversible; annual eye examination after 5 years)", "GI upset (take with food)", "Skin rash", "Cardiac conduction abnormalities (rare; baseline ECG in patients with cardiac disease)"],
+              "monitoring": "Annual ophthalmology review (fundus, visual fields, OCT) from year 5 onwards"
+            },
+            {
+              "name": "Sulfasalazine (SSZ)",
+              "brand_examples": ["Salazopyrin EN", "Sulfazine", "Azulfidine"],
+              "form": "Enteric-coated tablet",
+              "dosage": "Start 500 mg daily; increase by 500 mg/week to maintenance 1000-1500 mg twice daily (2-3 g/day total)",
+              "use_case": "RA (combined with MTX and HCQ as triple therapy); PsA peripheral joint disease; early RA as monotherapy; AS peripheral arthritis",
+              "mechanism": "Cleaved in colon to sulfapyridine and 5-aminosalicylic acid; reduces inflammatory mediators",
+              "side_effects": ["GI intolerance (nausea, abdominal pain) — enteric coating reduces this", "Skin rash and photosensitivity", "Bone marrow suppression (monitor CBC)", "Hepatotoxicity (monitor LFTs)", "Oligospermia (reversible on stopping)", "Orange discoloration of urine and tears (harmless)"],
+              "monitoring": "CBC and LFTs every 4 weeks for first 3 months; then every 3 months"
+            },
+            {
+              "name": "Leflunomide",
+              "brand_examples": ["Arava", "Lefno", "Lefumide"],
+              "form": "Tablet",
+              "dosage": "Loading dose: 100 mg/day for 3 days (optional); maintenance: 10-20 mg once daily",
+              "use_case": "RA and PsA; alternative to MTX when MTX is contraindicated or not tolerated; can be combined with MTX for inadequate responders",
+              "mechanism": "Prodrug; active metabolite (teriflunomide) inhibits pyrimidine synthesis, blocking T-lymphocyte proliferation",
+              "side_effects": ["Diarrhea and GI upset", "Nausea", "Alopecia", "Liver toxicity (monitor LFTs)", "Hypertension", "Peripheral neuropathy (rare)", "Teratogenic — long half-life; washout procedure required before conception"],
+              "monitoring": "LFTs, CBC, blood pressure every 4-8 weeks initially; drug washout with cholestyramine if switching",
+              "contraindications": ["Pregnancy (absolutely — teratogenic, long half-life)", "Severe liver disease", "Severe immunodeficiency", "Bone marrow disease"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-35",
+          "category_name": "Biologic DMARDs (bDMARDs) — Targeted Biologic Therapy",
+          "purpose": "Precisely targeted monoclonal antibodies or fusion proteins that block specific cytokines or immune pathways driving joint inflammation and destruction. Used for moderate-severe RA, PsA, AS not responding to csDMARDs.",
+          "note": "Require mandatory pre-treatment screening (TB, hepatitis B, hepatitis C). Increase risk of serious infections. Annual flu vaccine and pneumococcal vaccine required. Avoid live vaccines.",
+          "medicines": [
+            {
+              "name": "Adalimumab",
+              "brand_examples": ["Humira", "Amgevita (biosimilar)", "Hadlima", "Cyltezo"],
+              "form": "Subcutaneous injection (prefilled syringe or autoinjector)",
+              "dosage": "40 mg every 2 weeks (RA, PsA, AS); 80 mg loading then 40 mg every 2 weeks",
+              "use_case": "RA, PsA, AS, JIA — most widely used anti-TNF biologic; effective for all phenotypes of spondyloarthropathy",
+              "mechanism": "Anti-TNF-α monoclonal antibody; binds and neutralizes soluble and membrane-bound TNF-alpha",
+              "side_effects": ["Injection site reactions (pain, redness)", "Increased infection risk (TB reactivation, bacterial, fungal)", "Demyelinating disease (rare)", "Heart failure worsening", "Malignancy (lymphoma — small absolute risk)", "Hepatotoxicity (rare)"],
+              "monitoring": "TB and hepatitis screening before starting; CBC, LFTs every 3-6 months; no live vaccines during treatment",
+              "contraindications": ["Active tuberculosis or untreated latent TB", "Serious infections", "Moderate-severe heart failure (NYHA III-IV)", "Prior malignancy (relative)"]
+            },
+            {
+              "name": "Etanercept",
+              "brand_examples": ["Enbrel", "Erelzi (biosimilar)", "Eticovo"],
+              "form": "Subcutaneous injection",
+              "dosage": "50 mg once weekly or 25 mg twice weekly (RA, PsA, AS)",
+              "use_case": "RA, PsA, AS, JIA (age ≥2 years); fusion protein — different mechanism from monoclonal antibodies",
+              "mechanism": "TNF receptor fusion protein (TNFR2-Fc); decoys TNF molecules preventing receptor binding",
+              "side_effects": ["Injection site reactions", "Increased infection risk", "Rare demyelinating disease", "Heart failure"],
+              "note": "Lower hepatitis B reactivation risk than other TNF inhibitors"
+            },
+            {
+              "name": "Infliximab",
+              "brand_examples": ["Remicade", "Inflectra (biosimilar)", "Remsima"],
+              "form": "Intravenous infusion",
+              "dosage": "3-5 mg/kg IV at weeks 0, 2, 6 then every 8 weeks (RA — usually combined with MTX; AS; PsA)",
+              "use_case": "RA, AS, PsA — IV administration suitable for patients unable to self-inject; used with MTX in RA to prevent immunogenicity",
+              "mechanism": "Chimeric anti-TNF-α monoclonal antibody (75% human, 25% murine)",
+              "side_effects": ["Infusion reactions (fever, chills, rash — 5-15%)", "Increased serious infection risk", "Hepatitis B reactivation", "TB reactivation", "Drug-induced lupus (anti-dsDNA antibodies)"],
+              "monitoring": "Pre-infusion vital signs; TB and hepatitis screening pre-treatment"
+            },
+            {
+              "name": "Tocilizumab",
+              "brand_examples": ["Actemra", "RoActemra"],
+              "form": "IV infusion or subcutaneous injection",
+              "dosage": "IV: 4-8 mg/kg every 4 weeks; SC: 162 mg every 1-2 weeks",
+              "use_case": "Moderate-severe RA — effective as monotherapy (anti-IL-6 mechanism is highly effective without MTX); systemic JIA; GCA (giant cell arteritis)",
+              "mechanism": "Anti-IL-6 receptor (anti-IL-6R) monoclonal antibody; blocks IL-6 signaling — key pro-inflammatory cytokine in RA",
+              "side_effects": ["Increased serious infection risk", "Elevated lipids (dyslipidaemia)", "Intestinal perforation (history of diverticulitis caution)", "Elevated liver enzymes", "Neutropenia", "Thrombocytopenia", "Masks fever (reduces CRP — careful in infection monitoring)"],
+              "monitoring": "CBC, LFTs, lipids, CRP every 4-8 weeks initially"
+            },
+            {
+              "name": "Abatacept",
+              "brand_examples": ["Orencia"],
+              "form": "IV infusion or subcutaneous injection",
+              "dosage": "IV: weight-based (~10 mg/kg) monthly; SC: 125 mg weekly",
+              "use_case": "Moderate-severe RA not responding to or intolerant of TNF inhibitors; PsA; JIA",
+              "mechanism": "T-cell costimulation inhibitor; CTLA4-Ig fusion protein blocks CD80/CD86 — CD28 interaction on T cells, preventing T-cell activation",
+              "side_effects": ["Infection risk (lower than TNF inhibitors)", "Nausea", "Headache", "Infusion reactions"],
+              "note": "Particularly suitable for anti-CCP positive RA and patients with prior serious infections or recurrent infections on TNF inhibitors"
+            },
+            {
+              "name": "Rituximab",
+              "brand_examples": ["MabThera", "Rituxan", "Ristova"],
+              "form": "IV infusion",
+              "dosage": "1000 mg IV on day 1 and day 15 (one course); repeat every 6-12 months as needed",
+              "use_case": "Moderate-severe RA after failure of one or more TNF inhibitors; RA with lymphoma; RA with prior severe infection limiting TNF use",
+              "mechanism": "Anti-CD20 monoclonal antibody; depletes CD20+ B-lymphocytes, reducing autoantibody (RF, anti-CCP) production and B-cell mediated inflammation",
+              "side_effects": ["Infusion reactions (give IV methylprednisolone and antihistamine premedication)", "Infection risk — hepatitis B reactivation (screen essential)", "Progressive multifocal leukoencephalopathy (PML — rare)", "Late-onset neutropenia", "Immunoglobulin depletion with repeated courses"],
+              "monitoring": "Hepatitis B serology MANDATORY before starting; immunoglobulin levels with repeated courses; no live vaccines"
+            },
+            {
+              "name": "Secukinumab",
+              "brand_examples": ["Cosentyx"],
+              "form": "Subcutaneous injection",
+              "dosage": "150-300 mg SC at weeks 0, 1, 2, 3, 4 (loading), then every 4 weeks (maintenance)",
+              "use_case": "Ankylosing Spondylitis and PsA — highly effective; also RA; anti-IL-17A mechanism",
+              "mechanism": "Anti-IL-17A monoclonal antibody; blocks IL-17A, a key cytokine in spondyloarthropathies",
+              "side_effects": ["Increased Candida infections (mucocutaneous)", "Inflammatory bowel disease worsening (avoid in IBD-associated PsA/AS)", "Neutropenia (mild)", "Infection risk"],
+              "note": "Do not use in patients with active Crohn's disease or ulcerative colitis"
+            },
+            {
+              "name": "Ixekizumab",
+              "brand_examples": ["Taltz"],
+              "form": "Subcutaneous injection",
+              "dosage": "160 mg SC loading, then 80 mg every 4 weeks (PsA, AS)",
+              "use_case": "PsA and AS; particularly effective for skin and joint disease in PsA",
+              "mechanism": "Anti-IL-17A monoclonal antibody (same class as secukinumab; different binding epitope)",
+              "side_effects": ["Candida infections", "IBD worsening", "Injection site reactions", "Neutropenia"]
+            },
+            {
+              "name": "Guselkumab",
+              "brand_examples": ["Tremfya"],
+              "form": "Subcutaneous injection",
+              "dosage": "100 mg SC at weeks 0 and 4, then every 8 weeks",
+              "use_case": "PsA — joint and skin manifestations; anti-IL-23 mechanism provides durable response",
+              "mechanism": "Anti-IL-23 (p19 subunit) monoclonal antibody; blocks IL-23 signaling, key driver of Th17 pathway in PsA",
+              "side_effects": ["Upper respiratory infections", "Injection site reactions", "Headache"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-36",
+          "category_name": "Targeted Synthetic DMARDs (tsDMARDs) — JAK Inhibitors",
+          "purpose": "Orally administered small molecule drugs that inhibit Janus kinase (JAK) enzymes inside cells, blocking multiple cytokine signaling pathways simultaneously. Rapid onset of action (1-2 weeks). Alternative to biologics.",
+          "note": "FDA/EMA have issued warnings about cardiovascular risk, malignancy risk, thromboembolism, and opportunistic infections with JAK inhibitors. Careful patient selection required.",
+          "medicines": [
+            {
+              "name": "Tofacitinib",
+              "brand_examples": ["Xeljanz", "Xeljanz XR"],
+              "form": "Tablet (IR and XR)",
+              "dosage": "5 mg twice daily (IR) or 11 mg once daily (XR) for RA and PsA",
+              "use_case": "Moderate-severe RA after inadequate response to MTX; PsA; UC (different indication/dose)",
+              "mechanism": "JAK1/JAK3 inhibitor; blocks signaling of IL-2, IL-4, IL-7, IL-9, IL-15, IL-21 — reduces T-cell and B-cell activation",
+              "side_effects": ["Serious infections (TB, herpes zoster — varicella zoster reactivation)", "Thromboembolism (DVT, PE)", "Cardiovascular events (increased MI risk vs TNF inhibitors in high-risk patients — ORAL Surveillance study)", "Malignancy (higher lymphoma and lung cancer risk)", "Lipid elevation", "Anemia"],
+              "monitoring": "Pre-treatment TB, hepatitis B/C screening; CBC, LFTs, lipids at baseline and regularly; avoid in patients with active infection, malignancy, cardiovascular risk",
+              "black_box_warning": "FDA black box warning: serious infections, malignancy, thrombosis, cardiovascular events, mortality"
+            },
+            {
+              "name": "Baricitinib",
+              "brand_examples": ["Olumiant"],
+              "form": "Tablet",
+              "dosage": "2 mg or 4 mg once daily (RA); 2 mg for moderate RA; 4 mg for severe active RA",
+              "use_case": "Moderate-severe RA after inadequate response to MTX; can be used as monotherapy or with MTX",
+              "mechanism": "JAK1/JAK2 inhibitor; blocks IL-6, IL-12, IL-23, type I IFN signaling",
+              "side_effects": ["Infections (herpes zoster, UTI, upper respiratory)", "Thromboembolism", "Cardiovascular events", "Lipid elevation", "Malignancy risk"],
+              "monitoring": "Same as tofacitinib; renal dose adjustment required (eGFR <60)"
+            },
+            {
+              "name": "Upadacitinib",
+              "brand_examples": ["Rinvoq"],
+              "form": "Extended-release tablet",
+              "dosage": "15 mg once daily (RA, PsA, AS); 30 mg once daily for severe active RA or AS/PsA unresponsive to TNF inhibitors",
+              "use_case": "RA, PsA, AS — highly selective JAK1 inhibitor; also approved for Crohn's disease and ulcerative colitis",
+              "mechanism": "Selective JAK1 inhibitor; blocks signaling of IL-6, IL-17, IFN-γ — strong anti-inflammatory effect",
+              "side_effects": ["Herpes zoster (shingles) reactivation (higher rate than other JAK inhibitors)", "Serious infections", "Cardiovascular events", "Thromboembolism", "Acne-like skin rash"],
+              "monitoring": "Pre-treatment TB screening; CBC, LFTs, lipids; varicella zoster vaccination before starting (live vaccine — must be administered before biologic/JAK inhibitor)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-37",
+          "category_name": "Urate-Lowering Therapy (ULT) — Gout Management",
+          "purpose": "Lower serum uric acid levels to below the saturation threshold, preventing urate crystal formation and depositing. Essential for chronic gout management and tophus reduction.",
+          "note": "Start ULT 2-4 weeks AFTER acute gout attack resolves. Cover initiation with prophylactic colchicine or NSAID for 3-6 months to prevent initiation flares.",
+          "medicines": [
+            {
+              "name": "Allopurinol",
+              "brand_examples": ["Zyloric", "Lopurin", "Aloric"],
+              "form": "Tablet",
+              "dosage": "Start: 100 mg daily; increase by 100 mg every 2-4 weeks to achieve target uric acid <6 mg/dL; usual maintenance: 300-600 mg/day (max 900 mg/day in renal impairment — dose per eGFR)",
+              "use_case": "FIRST-LINE urate-lowering therapy for gout; recurrent gout attacks (≥2/year); tophi; uric acid kidney stones; gout with renal impairment",
+              "mechanism": "Xanthine oxidase inhibitor; blocks conversion of hypoxanthine and xanthine to uric acid",
+              "side_effects": ["Skin rash (2-3%; rarely severe — Stevens-Johnson Syndrome/DRESS)", "GI upset", "Liver toxicity (rare)", "Bone marrow suppression (rare — especially with azathioprine co-prescription)"],
+              "monitoring": "Uric acid level every 4-6 weeks until target; renal function; HLA-B*58:01 genetic testing recommended in Asian patients (Han Chinese, Korean, Thai) before starting — high risk of severe cutaneous reactions (SJS/DRESS)",
+              "important": "Allopurinol hypersensitivity syndrome (AHS): rare but potentially fatal — stop immediately if severe skin reaction develops; HLA-B*58:01 screening reduces this risk in high-risk populations"
+            },
+            {
+              "name": "Febuxostat",
+              "brand_examples": ["Adenuric", "Febuget", "Uloric"],
+              "form": "Tablet",
+              "dosage": "40-80 mg once daily (start 40 mg; increase to 80 mg if target uric acid not achieved after 4 weeks)",
+              "use_case": "Alternative to allopurinol; preferred when allopurinol not tolerated or contraindicated; can be used in mild-moderate renal impairment without dose adjustment",
+              "mechanism": "Non-purine selective xanthine oxidase inhibitor",
+              "side_effects": ["Liver function elevation", "GI upset", "Arthralgia and gout flares during initiation", "Cardiovascular events — FDA warning: higher rate of cardiovascular death vs allopurinol in high-risk cardiac patients (CARES trial); avoid in established cardiovascular disease when alternative available"],
+              "monitoring": "Uric acid, LFTs, cardiovascular risk assessment"
+            },
+            {
+              "name": "Colchicine",
+              "brand_examples": ["Colchicine", "Colegout", "Mitigare"],
+              "form": "Tablet",
+              "dosage": "Acute gout: 1 mg immediately, then 0.5 mg 1 hour later (low-dose regimen — as effective as high-dose, fewer GI side effects); Prophylaxis: 0.5-1 mg daily for 3-6 months after initiating ULT",
+              "use_case": "FIRST-LINE for acute gout attacks; prophylaxis during ULT initiation to prevent mobilization flares; Familial Mediterranean Fever; pericarditis",
+              "mechanism": "Inhibits microtubule polymerization; blocks neutrophil migration into joints; prevents NLRP3 inflammasome activation — blocks MSU crystal-induced inflammation",
+              "side_effects": ["Diarrhea and GI upset (most common, especially at higher doses)", "Nausea and vomiting", "Muscle toxicity (myopathy) — especially with statin or ciclosporin co-prescription; use low dose", "Bone marrow suppression (rare; overdose)"],
+              "monitoring": "Renal and hepatic function (dose reduction in renal impairment); avoid with strong CYP3A4 inhibitors (clarithromycin, etc.)"
+            },
+            {
+              "name": "Pegloticase",
+              "brand_examples": ["Krystexxa"],
+              "form": "IV infusion",
+              "dosage": "8 mg IV every 2 weeks (given in healthcare facility with monitoring)",
+              "use_case": "Severe refractory gout with tophi not responding to allopurinol or febuxostat; rapidly dissolves large tophi",
+              "mechanism": "Pegylated recombinant uricase enzyme that converts uric acid to allantoin (more soluble, easily excreted)",
+              "side_effects": ["Gout flares (cover with colchicine)", "Infusion reactions (anaphylaxis in 6%; pre-treat with antihistamine and steroid)", "Immunogenicity (anti-drug antibodies reduce efficacy over time)"],
+              "monitoring": "Uric acid before each infusion (stop if rises >6 mg/dL — antibody formation); infusion reaction monitoring"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-38",
+          "category_name": "Viscosupplementation (Hyaluronic Acid Injections)",
+          "purpose": "Restore joint lubrication in osteoarthritis by injecting hyaluronic acid (hyaluronan) into the knee joint to supplement depleted synovial fluid.",
+          "medicines": [
+            {
+              "name": "Hyaluronic Acid (Sodium Hyaluronate)",
+              "brand_examples": ["Synvisc", "Durolane", "Ostenil", "Hyalgan", "Hyalogic"],
+              "form": "Intra-articular injection",
+              "dosage": "Single large-molecule injection (Durolane) OR 3-5 weekly injections (Synvisc, Hyalgan) into knee joint; repeat every 6 months to 1 year",
+              "use_case": "Mild to moderate knee OA when NSAIDs are contraindicated or inadequate; bridges to joint replacement surgery",
+              "mechanism": "Supplements depleted hyaluronic acid in synovial fluid; improves lubrication and shock absorption; may have mild anti-inflammatory effect",
+              "side_effects": ["Post-injection pain and swelling (pseudo-septic reaction — rare)", "Local bruising at injection site", "Transient stiffness"],
+              "note": "Evidence for efficacy is moderate and inconsistent; NICE (UK) does not routinely recommend; still widely used in clinical practice"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-39",
+          "category_name": "Topical Treatments",
+          "purpose": "Localized pain relief applied directly to the skin over affected joint — reduced systemic side effects compared to oral medications.",
+          "medicines": [
+            {
+              "name": "Topical Diclofenac Gel / Solution",
+              "brand_examples": ["Voltaren Gel", "Voveran Emulgel", "Pennsaid"],
+              "form": "Topical gel, topical solution",
+              "dosage": "Apply 2-4 grams (2-4 cm strip) to affected joint 3-4 times daily",
+              "use_case": "First-line for knee and hand OA in elderly and those with GI or cardiovascular risk",
+              "side_effects": ["Local skin irritation", "Minimal systemic absorption (1-7% vs oral)"]
+            },
+            {
+              "name": "Topical Capsaicin",
+              "brand_examples": ["Zostrix", "Capsagel", "Qutenza (high-dose patch)"],
+              "form": "Cream, Gel",
+              "dosage": "Apply thin layer to affected joint 3-4 times daily; initial burning sensation reduces with continued use (depletion of substance P)",
+              "use_case": "OA of knee and hand; particularly useful for patients who cannot take oral medications; neuropathic pain component",
+              "side_effects": ["Initial burning and stinging (decreases with regular use)", "Avoid contact with eyes and mucous membranes"]
+            },
+            {
+              "name": "Topical NSAIDs (Ketoprofen, Piroxicam, Indomethacin gels)",
+              "brand_examples": ["Ketoprofen gel", "Pirox gel", "Flexinol"],
+              "form": "Topical gel",
+              "dosage": "Apply to affected joint 2-3 times daily",
+              "use_case": "OA pain; adjunct to oral treatment; reduces need for systemic NSAIDs",
+              "side_effects": ["Skin irritation", "Photosensitivity (ketoprofen — avoid sun exposure to application site)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-40",
+          "category_name": "Surgical Interventions",
+          "purpose": "When conservative and medical management fails, surgical options restore function, relieve pain, and improve quality of life.",
+          "note": "Surgical referral should be made when conservative treatment has failed for 3-6 months, when pain is severe and constant, and when quality of life is significantly impaired.",
+          "medicines": [
+            {
+              "name": "Total Knee Arthroplasty (TKA — Knee Replacement)",
+              "form": "Surgical procedure",
+              "use_case": "End-stage knee OA (Kellgren-Lawrence Grade IV); severe pain, failed conservative therapy, significant functional limitation",
+              "outcome": "90%+ significant pain relief and function improvement; implant survival 15-20+ years",
+              "post_op": "Physical therapy essential; deep vein thrombosis prophylaxis (LMWH); early mobilization; return to daily activities at 4-6 weeks"
+            },
+            {
+              "name": "Total Hip Arthroplasty (THA — Hip Replacement)",
+              "form": "Surgical procedure",
+              "use_case": "End-stage hip OA or RA; avascular necrosis; severe pain unresponsive to medical management",
+              "outcome": "Highly effective — pain relief >95%; improved walking, ADLs; implant survival 15-25+ years"
+            },
+            {
+              "name": "Arthroscopy",
+              "form": "Minimally invasive surgical procedure",
+              "use_case": "Knee meniscal tears, loose bodies, synovial biopsy; limited role in pure OA (no longer routinely recommended for OA alone per NICE guidelines)",
+              "note": "Diagnostic arthroscopy for synovial biopsy in inflammatory arthritis; therapeutic for mechanical problems"
+            },
+            {
+              "name": "Arthrodesis (Joint Fusion)",
+              "form": "Surgical procedure",
+              "use_case": "End-stage small joint arthritis (wrist, ankle, subtalar) where arthroplasty not feasible; severe finger/wrist RA deformity; relieves pain by eliminating joint movement",
+              "note": "Eliminates movement at fused joint but relieves pain permanently"
+            },
+            {
+              "name": "Synovectomy",
+              "form": "Surgical procedure (open or arthroscopic)",
+              "use_case": "Persistent inflammatory synovitis in RA or PsA not responding to DMARDs in a single joint; particularly knee and wrist; delays joint destruction",
+              "note": "Increasingly replaced by intra-articular biologics and improved DMARD therapies"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet plays a significant role in managing arthritis by reducing systemic inflammation (key in RA, PsA, AS, gout), supporting joint health (OA), controlling weight (reduces mechanical joint load), and minimizing medication side effects. The Mediterranean diet is the most evidence-based dietary pattern for arthritis management. For gout, strict dietary purine control is essential.",
+      "recommended_foods": [
+        {
+          "category": "Omega-3 Fatty Acids — Anti-inflammatory",
+          "items": [
+            {
+              "food": "Fatty fish: Salmon, Mackerel, Sardines, Herring, Trout",
+              "benefit": "Richest source of EPA and DHA omega-3s. Multiple RCTs show omega-3 supplementation reduces RA disease activity, decreases NSAID requirements, and lowers morning stiffness. Anti-inflammatory by reducing prostaglandins and leukotrienes.",
+              "frequency": "2-3 servings per week"
+            },
+            {
+              "food": "Flaxseeds, Chia seeds, Hemp seeds (ground)",
+              "benefit": "Plant sources of ALA omega-3; converted to EPA/DHA (less efficient); anti-inflammatory; fibre for gut health",
+              "frequency": "Daily — 1-2 tablespoons in smoothies, yogurt, oatmeal"
+            },
+            {
+              "food": "Walnuts",
+              "benefit": "Highest nut content of ALA omega-3; plus polyphenols (ellagic acid) with anti-inflammatory properties; reduces CRP in RA",
+              "frequency": "Daily — 1 small handful (about 7 walnuts)"
+            }
+          ]
+        },
+        {
+          "category": "Mediterranean Diet Pattern — Anti-inflammatory Foundation",
+          "items": [
+            {
+              "food": "Extra virgin olive oil",
+              "benefit": "Oleocanthal — inhibits COX enzymes (similar mechanism to ibuprofen); oleic acid reduces pro-inflammatory cytokines; monounsaturated fat reduces cardiovascular risk (important in RA and gout)",
+              "frequency": "Daily — use as primary cooking fat and dressing; 2-4 tablespoons/day"
+            },
+            {
+              "food": "Colourful vegetables: Spinach, Kale, Broccoli, Bell peppers, Tomatoes, Carrots, Sweet potato",
+              "benefit": "Rich in antioxidants (Vitamin C, E, beta-carotene), polyphenols, and Vitamin K; reduce oxidative stress in joints; tomatoes and peppers contain lycopene and vitamin C which support collagen synthesis",
+              "frequency": "7-9 servings daily; aim for variety of colours"
+            },
+            {
+              "food": "Berries: Blueberries, Strawberries, Cherries, Blackberries, Raspberries",
+              "benefit": "Tart cherries and cherry juice: strong clinical evidence for reducing gout flares — anthocyanins block uric acid production and reduce inflammation. All berries: anthocyanins and quercetin reduce inflammatory cytokines in RA",
+              "frequency": "Daily — especially tart cherry juice 8 oz/day for gout"
+            },
+            {
+              "food": "Legumes: Lentils, Chickpeas, Black beans, Kidney beans",
+              "benefit": "Low-fat protein source; high fibre reduces CRP and inflammatory markers; plant-based protein avoids uric acid elevation (unlike animal purines in gout); magnesium and folate",
+              "frequency": "3-5 times per week"
+            },
+            {
+              "food": "Whole grains: Oats, Brown rice, Quinoa, Whole wheat, Barley",
+              "benefit": "Fibre reduces inflammatory cytokines and improves gut microbiome health; B vitamins; magnesium; low glycaemic index reduces obesity risk",
+              "frequency": "Daily with each main meal"
+            }
+          ]
+        },
+        {
+          "category": "Anti-inflammatory Spices and Herbs",
+          "items": [
+            {
+              "food": "Turmeric (curcumin)",
+              "benefit": "Curcumin inhibits NF-κB, COX-2, and TNF-α — key inflammatory pathways in RA and OA. Multiple clinical trials show curcumin supplementation reduces RA disease activity and OA pain. Bioavailability enhanced with black pepper (piperine).",
+              "frequency": "Daily in cooking, warm milk (golden milk), or supplement (500-1000 mg curcumin twice daily with food)"
+            },
+            {
+              "food": "Ginger",
+              "benefit": "6-gingerol and 6-shogaol inhibit COX-1, COX-2, and 5-lipoxygenase; reduces joint pain and swelling in OA and RA; anti-nausea (useful for MTX-induced nausea)",
+              "frequency": "Daily in cooking, tea, or supplement (1-2g dried ginger daily)"
+            },
+            {
+              "food": "Garlic (Allicin)",
+              "benefit": "Anti-inflammatory and immunomodulatory; sulfur compounds reduce oxidative stress in joints; inhibits pro-inflammatory cytokine production",
+              "frequency": "Daily — 1-2 cloves in cooking (crush and rest 10 minutes before cooking to activate allicin)"
+            },
+            {
+              "food": "Cinnamon",
+              "benefit": "Cinnamaldehyde inhibits arachidonic acid release and prostaglandin synthesis; reduces inflammatory biomarkers; improves insulin sensitivity (benefits comorbid diabetes in arthritis)",
+              "frequency": "1/2-1 tsp daily in oatmeal, warm drinks, smoothies"
+            }
+          ]
+        },
+        {
+          "category": "Vitamin D and Calcium Rich Foods (Bone Protection — essential on steroids)",
+          "items": [
+            {
+              "food": "Fatty fish, fortified dairy or plant milk, egg yolks, UV-exposed mushrooms",
+              "benefit": "Vitamin D deficiency common in RA and AS; Vit D modulates autoimmune response; essential for calcium absorption; steroid-induced osteoporosis prevention",
+              "frequency": "Daily; supplement 1000-2000 IU Vitamin D3 if levels below 30 ng/mL"
+            },
+            {
+              "food": "Calcium: dairy products, fortified plant milk, green leafy vegetables, almonds, sesame seeds (tahini)",
+              "benefit": "Bone density maintenance — critically important in patients on long-term corticosteroids and in postmenopausal women with RA or AS",
+              "frequency": "Target 1000-1200 mg calcium daily from diet and supplements combined"
+            }
+          ]
+        },
+        {
+          "category": "Low-Purine Protein Foods (Gout-Specific)",
+          "items": [
+            {
+              "food": "Eggs (whole), Low-fat dairy: yogurt, skimmed milk, cottage cheese",
+              "benefit": "Low-purine high-quality protein sources. Dairy consumption is associated with LOWER gout risk — dairy proteins promote renal uric acid excretion. Yogurt probiotics reduce systemic inflammation.",
+              "frequency": "Daily — especially low-fat dairy as primary protein source in gout"
+            },
+            {
+              "food": "Chicken and turkey (moderate portions), tofu",
+              "benefit": "Lower purine content than red meat and organ meats; tofu and plant proteins do not raise uric acid despite moderate purine content",
+              "frequency": "Moderate — 1-2 servings daily; keep portions controlled (100-150g)"
+            },
+            {
+              "food": "Tart cherry juice or fresh tart cherries",
+              "benefit": "Strongest dietary evidence for gout: reduces serum uric acid, reduces gout flare frequency by 35% in RCTs; anthocyanins inhibit xanthine oxidase and reduce inflammation",
+              "frequency": "240 mL (8 oz) tart cherry juice daily; or 10-12 tart cherries daily during active gout"
+            }
+          ]
+        },
+        {
+          "category": "Collagen-Supporting Foods (Joint Cartilage Health — OA)",
+          "items": [
+            {
+              "food": "Vitamin C-rich foods: Citrus fruits, bell peppers, kiwi, guava, strawberries, broccoli",
+              "benefit": "Vitamin C is essential for collagen synthesis (hydroxylation of proline and lysine); reduces oxidative stress in joint cartilage; associated with slower OA progression",
+              "frequency": "Daily — 2-3 servings; target 75-90 mg Vitamin C/day minimum"
+            },
+            {
+              "food": "Bone broth (collagen-rich)",
+              "benefit": "Contains type II collagen, glycine, proline, hydroxyproline; may support cartilage health in OA; emerging evidence for joint pain reduction",
+              "frequency": "1-2 cups daily as dietary supplement; especially for OA"
+            },
+            {
+              "food": "Pomegranate juice",
+              "benefit": "Ellagic acid blocks enzymes that cause cartilage degradation in OA; reduces IL-1β and TNF-α production; high antioxidant content",
+              "frequency": "Small glass (100-150 mL) daily or alternate days"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "High-purine foods — CRITICAL for Gout",
+          "reason": "Purines are metabolized to uric acid. High purine intake raises serum uric acid levels, directly triggering gout attacks and worsening hyperuricemia.",
+          "examples": ["Organ meats (liver, kidney, sweetbreads, brain) — highest purine content", "Game meats (venison, goose)", "Red meat in large quantities (beef, lamb, pork)", "Shellfish (prawns, shrimp, scallops, crab, lobster)", "Anchovies, herring, mackerel, sardines, sprats (purine-rich oily fish)", "Yeast extracts (Marmite, Vegemite, brewer's yeast)", "Beer and ale (yeast and alcohol combined — most potent gout trigger)"]
+        },
+        {
+          "food": "Alcohol — especially beer and spirits",
+          "reason": "Alcohol raises uric acid by increasing purine breakdown and reducing renal uric acid excretion. Beer contains guanosine (purine) as well as alcohol. Spirits raise uric acid more than wine. All alcohol worsens gout and increases inflammation in RA and OA.",
+          "examples": ["Beer (strongest gout trigger)", "Spirits / hard liquor", "Excessive wine (moderate wine consumption less harmful for gout)", "All types of alcohol worsen inflammatory arthritis"]
+        },
+        {
+          "food": "Fructose and high-fructose corn syrup (HFCS)",
+          "reason": "Fructose metabolism generates purines (AMP) and elevates uric acid. High fructose intake is strongly associated with hyperuricemia and gout — independent of overall calorie intake. Major hidden gout trigger.",
+          "examples": ["Sugary beverages (sodas, fizzy drinks — largest source of HFCS)", "Fruit juices with added sugar", "Packaged sweets, candy, high-fructose corn syrup in processed foods", "Energy drinks", "Some sports drinks — check labels"]
+        },
+        {
+          "food": "Ultra-processed and fried foods",
+          "reason": "High in trans fats, omega-6 fatty acids, refined carbohydrates, and additives that promote systemic inflammation. Directly worsen inflammatory arthritis (RA, PsA, AS) and contribute to obesity (worsens OA).",
+          "examples": ["Fast food (burgers, fried chicken)", "Chips and crisps", "Packaged snacks and crackers", "Margarine and partially hydrogenated oils", "Commercial baked goods (trans fats)"]
+        },
+        {
+          "food": "Red and processed meats",
+          "reason": "High in saturated fats (pro-inflammatory; elevate IL-6, TNF-α); high purine content worsens gout; processed meats (nitrates, nitrites, sodium) increase systemic inflammation and cardiovascular risk.",
+          "examples": ["Processed meats: sausages, bacon, salami, hot dogs, deli meats", "Red meat in large portions: beef, lamb, pork", "Organ meats: liver, kidney (highest purines)"]
+        },
+        {
+          "food": "Refined carbohydrates and added sugars",
+          "reason": "Spike blood glucose and insulin; promote AGE (advanced glycation end-product) formation damaging cartilage; increase NF-κB inflammatory pathway; contribute to obesity — major arthritis risk factor.",
+          "examples": ["White bread, white rice, pasta (refined)", "Sugary cereals", "Pastries, cakes, cookies", "Sugary beverages", "Candy and confectionery"]
+        },
+        {
+          "food": "Omega-6 fatty acids (excessive)",
+          "reason": "The Western diet has an imbalanced omega-6 to omega-3 ratio (~15:1; ideal <4:1). Excess omega-6 (arachidonic acid pathway) promotes prostaglandin and leukotriene production, driving joint inflammation in RA and OA.",
+          "examples": ["Corn oil", "Sunflower oil (high omega-6)", "Safflower oil", "Soybean oil (in processed foods)", "Excessive peanut oil"]
+        },
+        {
+          "food": "Excessive salt (sodium)",
+          "reason": "High sodium promotes hypertension and cardiovascular risk (already elevated in RA); may enhance inflammatory response; worsens fluid retention and edema around inflamed joints; high sodium intake linked to autoimmune activation.",
+          "examples": ["Table salt added to food", "Processed and canned foods", "Pickles and papadums", "Soy sauce and other salty condiments", "Salted snacks"]
+        },
+        {
+          "food": "Dairy — only in those with sensitivity (not universal avoidance)",
+          "reason": "Some people with inflammatory arthritis report symptom worsening with full-fat dairy. However, low-fat dairy is beneficial in gout. The concern is more about full-fat, high-saturated-fat dairy products.",
+          "examples": ["Full-fat cheese in excess", "Full-fat milk and cream (in large quantities)", "Note: low-fat dairy (yogurt, skimmed milk) is actually beneficial for gout — do not restrict"],
+          "nuance": "Low-fat dairy reduces uric acid and gout risk; do not universally avoid dairy; consider full-fat dairy restriction only if personally symptomatic"
+        },
+        {
+          "food": "Nightshade vegetables (controversial — only for some patients)",
+          "reason": "Some arthritis patients (OA, RA) anecdotally report worsening with nightshade vegetables. Scientific evidence is limited and inconclusive. Not universally recommended for avoidance.",
+          "examples": ["Tomatoes (controversial)", "Eggplant/brinjal", "Bell peppers and chili peppers", "White potatoes"],
+          "nuance": "These vegetables have strong anti-inflammatory properties for most people. Only avoid if personally identified as a trigger through food diary. Bell peppers and tomatoes have high Vitamin C (beneficial for arthritis generally)."
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This general anti-inflammatory, joint-supportive meal plan is based on Mediterranean dietary principles. Gout patients must follow additional low-purine modifications. Individual needs vary — consult a registered dietitian and rheumatologist.",
+        "early_morning": "Warm water with lemon (Vitamin C, alkalizing) + 2-3 soaked walnuts + 1 Brazil nut (selenium) + 1 tsp ground turmeric with black pepper in warm water",
+        "breakfast": "Oatmeal with blueberries, ground flaxseed, and cinnamon OR whole grain toast with avocado and 2 boiled eggs + 1 cup green tea (light brew)",
+        "mid_morning": "1 orange or kiwi + small handful mixed nuts (walnuts, almonds) OR 120 mL tart cherry juice (for gout patients)",
+        "lunch": "Grilled salmon (or tuna) with quinoa and steamed broccoli with olive oil and garlic + large colourful salad (spinach, bell pepper, tomatoes, cucumber) with extra virgin olive oil and lemon dressing + 1 cup low-fat yogurt",
+        "evening_snack": "Apple with 1 tbsp almond butter OR vegetable sticks (carrot, celery, cucumber) with hummus + 1 cup ginger tea with honey",
+        "dinner": "Grilled chicken or paneer (or lentil curry for plant-based) + brown rice or whole wheat chapati + stir-fried kale/spinach with garlic and olive oil + turmeric golden milk before bed",
+        "before_bed": "Golden milk (warm milk / plant milk + 1/2 tsp turmeric + pinch black pepper + honey)"
+      },
+      "special_dietary_notes": [
+        "Weight management is critical — every kg lost reduces knee joint load by 4 kg. Even 5-10% body weight reduction significantly reduces OA pain and NSAIDs requirement.",
+        "Mediterranean diet is the most evidence-based pattern for arthritis: abundant vegetables, fruits, whole grains, legumes, olive oil, fish; moderate poultry and dairy; limited red meat and processed foods.",
+        "Gout patients: maintain uric acid target <6 mg/dL through diet + urate-lowering medication. Diet alone reduces uric acid by 1-2 mg/dL — medication usually required for sustained control.",
+        "Maintain adequate hydration (8-10 glasses water daily) — dehydration triggers gout attacks by concentrating uric acid; promotes joint lubrication; dilutes inflammatory mediators.",
+        "Omega-3 supplementation (fish oil): 2-4g EPA+DHA daily — meta-analyses support reduction in RA disease activity scores and NSAID requirements. Use enteric-coated fish oil capsules to reduce GI side effects.",
+        "Patients on methotrexate: ensure adequate folate intake (folate-rich foods: leafy greens, legumes, fortified cereals) and folic acid supplement as prescribed; limit alcohol completely (increases hepatotoxicity).",
+        "Patients on corticosteroids: increase calcium and Vitamin D intake; restrict sodium and refined sugars (reduce steroid-related weight gain and edema); increase potassium-rich foods (bananas, sweet potato, leafy greens).",
+        "Vitamin D supplementation: ensure serum 25(OH)D >30 ng/mL; supplement 1000-2000 IU Vitamin D3 daily if deficient; Vitamin D deficiency worsens autoimmune arthritis and increases fracture risk."
+      ]
+    },
+
+    "lifestyle_management": {
+      "exercise_and_physical_therapy": {
+        "overview": "Exercise is the single most evidence-based non-pharmacological treatment for all forms of arthritis. Regular appropriate exercise reduces pain, improves joint function, strengthens muscles that protect joints, reduces fatigue, and improves mental health. 'Motion is lotion for joints.'",
+        "recommended_exercises": [
+          {
+            "type": "Aerobic / Cardiovascular Exercise",
+            "examples": ["Swimming and aquatic exercise (best for OA — water buoyancy offloads joints; warm water reduces stiffness)", "Cycling (stationary or outdoor — low impact; excellent for knee OA)", "Walking (moderate pace; most accessible)", "Elliptical machine", "Water aerobics"],
+            "frequency": "150 minutes of moderate-intensity aerobic exercise per week (30 minutes x 5 days)",
+            "benefit": "Reduces joint pain and stiffness; improves cardiovascular health (critical in RA with higher CV risk); promotes weight management; releases endorphins"
+          },
+          {
+            "type": "Strength / Resistance Training",
+            "examples": ["Light resistance bands", "Bodyweight exercises (chair squats, wall push-ups)", "Machine-based resistance training under supervision", "Pilates"],
+            "frequency": "2-3 times per week; rest days between sessions",
+            "benefit": "Strengthens muscles around joints reducing load on articular cartilage; improves joint stability; prevents falls and fractures; reduces disability in RA and OA"
+          },
+          {
+            "type": "Range of Motion / Flexibility Exercises",
+            "examples": ["Gentle joint range of motion exercises (daily — especially hands, wrists, knees)", "Yoga — modified for arthritis; evidence for pain reduction in OA and RA", "Stretching routines"],
+            "frequency": "Daily — 5-10 minutes morning (especially important to reduce morning stiffness in RA)",
+            "benefit": "Maintains and improves joint mobility; reduces morning stiffness duration; prevents contractures"
+          },
+          {
+            "type": "Balance and Proprioception Training",
+            "examples": ["Tai Chi — very strong evidence for OA, RA, and AS; reduces pain, fall risk, and improves balance", "Single-leg standing exercises", "Heel-to-toe walking"],
+            "frequency": "2-3 times per week",
+            "benefit": "Reduces fall risk (critical in elderly with arthritis on multiple medications); improves proprioception; reduces fear of movement"
+          }
+        ],
+        "precautions": [
+          "Exercise through MILD discomfort (2/10 pain) is acceptable — stop if pain is severe (>5/10) or worsening after 24 hours",
+          "Exercise in warm water or heated pools during flares — reduces pain while maintaining movement",
+          "During acute inflammatory flares (RA, gout): rest acutely inflamed joints; range-of-motion exercises for other joints only",
+          "Apply heat to joints before exercise to reduce stiffness; apply ice after exercise to reduce inflammation",
+          "Always warm up 5-10 minutes before exercise; cool down gradually",
+          "Work with physiotherapist for individualized exercise prescription",
+          "Monitor for worsening fatigue in RA — pacing strategies essential"
+        ]
+      },
+      "joint_protection_strategies": [
+        "Use ergonomic assistive devices — jar openers, key turners, long-handled reachers, electric can openers (reduce hand joint strain in RA/OA hand)",
+        "Wear prescribed orthotic insoles in shoes — redistributes weight bearing on knee joints; reduces OA knee pain by 25-50%",
+        "Use knee bracing or knee sleeve — provides warmth, stability, and proprioceptive feedback in knee OA",
+        "Thumb splints for first CMC joint OA — reduces base of thumb pain during pinch activities",
+        "Wrist splints (especially night-use) for wrist RA — reduce pain and maintain functional wrist position",
+        "Walking aids (cane in contralateral hand, walking frame) — significantly reduces knee and hip joint load",
+        "Use larger, stronger joints for heavier tasks — carry bags on forearm not fingers; push doors with shoulder not fingers",
+        "Avoid staying in same position for prolonged periods — micro-breaks every 30-45 minutes; change positions",
+        "Ergonomic workplace assessment — raised chair, keyboard positioning, anti-fatigue matting",
+        "Adequate footwear — cushioned, wide-fitting shoes with good arch support; avoid high heels (increases knee load by 23%)"
+      ],
+      "heat_and_cold_therapy": {
+        "heat_therapy": {
+          "benefits": "Reduces morning stiffness and chronic pain; relaxes muscles; improves flexibility; increases local circulation",
+          "methods": ["Warm shower or bath — especially effective for morning stiffness; 15-20 minutes", "Electric heating pad or heat wrap", "Warm wax bath (paraffin bath) for hand OA — deeply penetrating warmth for small joints", "Warm compress or hot water bottle"],
+          "when_to_use": "Chronic stiffness, before exercise, muscle spasm, OA pain — NOT during active hot inflammatory flare"
+        },
+        "cold_therapy": {
+          "benefits": "Reduces acute inflammation, swelling, and pain; numbs acute pain; reduces post-exercise soreness",
+          "methods": ["Ice pack wrapped in cloth (never apply ice directly to skin)", "Frozen peas or corn bag — conforms to joint", "Cold water immersion", "Commercial gel cold packs"],
+          "when_to_use": "During acute inflammatory flares (gout, RA flare); immediately after injury; post-exercise swelling",
+          "duration": "15-20 minutes; at least 45 minutes between applications; protect skin from frostbite"
+        }
+      },
+      "trigger_avoidance": [
+        "For gout: avoid beer, spirits, organ meats, shellfish, high-fructose beverages; maintain hydration (3L fluid daily); avoid fasting or crash dieting (raises uric acid); monitor and manage medications that raise uric acid (thiazide diuretics, low-dose aspirin)",
+        "For RA and autoimmune arthritis: avoid smoking (strongest environmental risk factor for RA onset and severity; reduces drug efficacy); manage psychological stress; avoid infections by vaccination and good hygiene",
+        "For OA: avoid high-impact activities (jumping, running on hard surfaces) in advanced joint disease; manage body weight",
+        "For AS: avoid prolonged immobility and bed rest (paradoxically worsens AS); sleep on firm mattress without pillow under knees",
+        "General: protect joints from repeated trauma and overuse; proper technique for lifting and physical tasks"
+      ],
+      "mental_health_and_wellbeing": [
+        "Chronic pain counselling or CBT (Cognitive Behavioral Therapy) — most effective psychological intervention for chronic arthritis pain management; addresses pain catastrophizing and fear-avoidance behavior",
+        "Acceptance and Commitment Therapy (ACT) — evidence-based for chronic pain; improves function and quality of life",
+        "Mindfulness-Based Stress Reduction (MBSR) — reduces pain, improves sleep, reduces anxiety and depression in arthritis",
+        "Join arthritis patient support groups (Arthritis Foundation, Versus Arthritis UK, NRAS — National Rheumatoid Arthritis Society) for peer support, education, and wellbeing programs",
+        "Pain management programs — multidisciplinary inpatient or outpatient programs combining physiotherapy, occupational therapy, psychology, and pain medicine",
+        "Adequate sleep — chronic pain severely disrupts sleep; sleep disorders worsen pain perception; address sleep hygiene, consider sleep study if sleep apnoea suspected (OA patients with obesity at high risk)",
+        "Maintain social connections and employment where possible — social isolation and unemployment worsen chronic pain and depression",
+        "Set realistic functional goals with healthcare team — 'treat-to-target' approach in RA; functional independence goals in OA"
+      ]
+    },
+
+    "arthritis_monitoring_plan": {
+      "note": "Arthritis monitoring is based on disease activity scores, symptom assessment, functional status, and laboratory markers. Below is a practical guide to when action is needed.",
+      "green_zone": {
+        "status": "Controlled / Low Disease Activity / Remission",
+        "oa_criteria": "Pain ≤2/10; performing most activities; NSAIDs or paracetamol needed occasionally or not at all",
+        "ra_criteria": "DAS28 <2.6 (remission) or <3.2 (low disease activity); no swollen joints; CRP and ESR normal or near normal; HAQ improving; no active synovitis on ultrasound",
+        "gout_criteria": "No flares in past 6-12 months; serum uric acid <6 mg/dL; no growing tophi",
+        "action": "Continue current treatment regimen. Regular follow-up every 3-6 months. Maintain healthy lifestyle, exercise program, and dietary recommendations."
+      },
+      "yellow_zone": {
+        "status": "Increasing Disease Activity / Inadequate Control",
+        "oa_criteria": "Pain 3-6/10; daily NSAIDs required; difficulty with stairs, walking, or ADLs; considering joint injection",
+        "ra_criteria": "DAS28 3.2-5.1 (moderate disease activity); new or increasing joint swelling; rising CRP/ESR; morning stiffness >30-60 minutes",
+        "gout_criteria": "1-2 flares in past 6 months; serum uric acid 6-8 mg/dL; stable tophi",
+        "action": "Contact rheumatologist or physician within 2-4 weeks. Medication adjustment likely needed — increase DMARD dose, add combination therapy, or consider biologic. Review lifestyle factors, diet, and adherence. X-ray or ultrasound may be required."
+      },
+      "red_zone": {
+        "status": "Severe Flare / Medical Emergency / Rapid Deterioration",
+        "oa_criteria": "Pain 7-10/10; unable to walk or perform self-care; suspect mechanical joint failure or fracture",
+        "ra_criteria": "DAS28 >5.1 (high disease activity); multiple swollen/tender joints; elevated CRP >50 mg/L; new rheumatoid nodules; new systemic features (fever, pleurisy, vasculitis); suspected DMARD side effect (agranulocytosis, hepatitis)",
+        "gout_criteria": "Severe acute gout attack with fever; multiple joint involvement; suspected joint infection (septic arthritis) — EMERGENCY",
+        "septic_arthritis_emergency": "Single hot, red, swollen joint with fever — IMMEDIATE hospital assessment. Joint aspiration and IV antibiotics must not be delayed — joint destruction within 24-48 hours.",
+        "action": "URGENT medical attention required. Contact rheumatologist immediately for RA flares. For single hot joint with fever — go to emergency department immediately (possible septic arthritis — medical emergency). For AS with neurological symptoms — emergency spinal imaging required."
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Joint Destruction and Permanent Deformity",
+        "description": "Progressive cartilage loss (OA) or immune-mediated joint erosion (RA, PsA) leads to irreversible structural damage, malalignment, and deformity. In RA: ulnar deviation, swan neck, boutonniere, Z-thumb, hammer toe deformities. In OA: valgus/varus knee deformity, osteophytes.",
+        "severity": "Moderate to Severe — permanent without surgical correction",
+        "prevention": "Early treatment in inflammatory arthritis; treat-to-target strategy; weight management in OA"
+      },
+      {
+        "complication": "Septic Arthritis (Infected Joint)",
+        "description": "Life-threatening emergency. Bacterial infection of a joint — most commonly Staphylococcus aureus. Destroys articular cartilage within 24-72 hours if untreated. Presents as single very hot, swollen, painful joint with fever. Requires emergency joint aspiration, culture, and IV antibiotics.",
+        "severity": "Medical emergency — life- and limb-threatening",
+        "risk_factors": "RA patients, prosthetic joints, immunosuppressed (on biologics/DMARDs), IV drug users, elderly, diabetics"
+      },
+      {
+        "complication": "Cardiovascular Disease",
+        "description": "RA is an independent cardiovascular risk factor — equivalent to Type 2 diabetes. Systemic inflammation accelerates atherosclerosis; incidence of MI and stroke 1.5-2x higher in RA vs general population. Gout is associated with hypertension, metabolic syndrome, and cardiovascular events.",
+        "severity": "Severe — major cause of mortality in RA",
+        "management": "Aggressive CV risk factor modification; statins; blood pressure management; smoking cessation; aspirin where appropriate; effective RA treatment reduces CV risk"
+      },
+      {
+        "complication": "Osteoporosis and Fragility Fractures",
+        "description": "Systemic inflammation, immobility, and long-term corticosteroid use cause severe bone density loss. RA patients have 2x higher hip fracture risk. AS causes vertebral fractures. Gout patients have higher osteoporosis prevalence.",
+        "severity": "Moderate to Severe",
+        "management": "Calcium 1000-1200 mg/day + Vitamin D 800-2000 IU/day; weight-bearing exercise; bisphosphonates if T-score <-2.5 or on long-term steroids; DEXA monitoring"
+      },
+      {
+        "complication": "Interstitial Lung Disease (ILD)",
+        "description": "Occurs in 10-40% of RA patients; can precede joint disease. Immune-mediated inflammation in lung interstitium causes progressive fibrosis, cough, and breathlessness. Also associated with some DMARDs (methotrexate pneumonitis — rare).",
+        "severity": "Moderate to Severe",
+        "management": "Pulmonary function tests and HRCT at diagnosis; pulmonology referral; mycophenolate or azathioprine for RA-ILD; stop causative DMARD if suspected drug-induced"
+      },
+      {
+        "complication": "Uveitis (Eye Inflammation)",
+        "description": "Anterior uveitis (iritis) is a common extra-articular feature of AS (25-40%), JIA (30%), and reactive arthritis. Presents as sudden painful red eye with photophobia and blurred vision. Can cause glaucoma, cataracts, and vision loss if untreated.",
+        "severity": "Moderate to sight-threatening",
+        "management": "Urgent ophthalmology assessment; topical steroid eye drops; mydriatic drops; systemic TNF inhibitors dramatically reduce uveitis frequency in AS"
+      },
+      {
+        "complication": "Peripheral Neuropathy and Nerve Compression",
+        "description": "Carpal tunnel syndrome (median nerve compression from wrist synovitis in RA); cervical myelopathy from atlanto-axial subluxation in severe RA; peripheral vasculitis-related neuropathy in severe RA.",
+        "severity": "Moderate to Severe",
+        "management": "Wrist splints for CTS; nerve conduction studies; surgical decompression if severe; cervical spine MRI and stabilization surgery for atlanto-axial subluxation"
+      },
+      {
+        "complication": "Renal Complications",
+        "description": "Gout causes uric acid kidney stones and gouty nephropathy (urate deposits in renal parenchyma) with chronic kidney disease. NSAIDs and cyclosporine (used in PsA) are nephrotoxic. Some biologics require dose adjustment in renal impairment.",
+        "severity": "Moderate to Severe",
+        "management": "Monitor renal function regularly; adequate hydration for gout; avoid prolonged NSAIDs; allopurinol dose adjustment by eGFR"
+      },
+      {
+        "complication": "Chronic Pain Syndrome and Central Sensitization",
+        "description": "Chronic joint pain leads to central sensitization — amplified pain perception from neuroplastic changes in pain-processing pathways. Results in widespread pain beyond joint involvement, allodynia, and hyperalgesia. Often mistaken for inadequate disease control in RA.",
+        "severity": "Moderate — significantly impacts quality of life",
+        "management": "Pain psychology (CBT, ACT); duloxetine or low-dose amitriptyline for central sensitization; pain management programs; mindfulness"
+      },
+      {
+        "complication": "Depression and Anxiety",
+        "description": "Affects 30-40% of people with chronic arthritis. Bidirectional relationship — pain and disability cause depression; depression amplifies pain perception and reduces treatment adherence. Associated with worse arthritis outcomes.",
+        "severity": "Moderate",
+        "management": "Screen with PHQ-9 and GAD-7; CBT most effective treatment; antidepressants (SNRIs have dual benefit for pain); treat underlying arthritis effectively; social support; exercise"
+      }
+    ],
+
+    "special_populations": {
+      "arthritis_in_children": {
+        "key_points": [
+          "Juvenile Idiopathic Arthritis (JIA) is the most common chronic arthritis in children — affects 1 in 1000 children under 16",
+          "Early diagnosis and treatment critical — prevents joint destruction, maintains normal growth and development, prevents visual loss from silent uveitis",
+          "Biannual slit-lamp eye examination essential in oligoarticular JIA (uveitis is often asymptomatic but vision-threatening)",
+          "NSAIDs (naproxen or ibuprofen) are first-line for symptom control; methotrexate SC for polyarticular disease",
+          "Biologic therapy (etanercept, adalimumab, tocilizumab, abatacept) available for refractory JIA — significantly improved long-term outcomes",
+          "School accommodation letter essential — explain stiffness, fatigue, inability to write long periods, need for mobility breaks",
+          "Physical therapy, occupational therapy, and psychology support integral to JIA management",
+          "Systemic JIA (Still's disease) with rash, high spiking fever, lymphadenopathy — anakinra or canakinumab (IL-1 inhibitors) first-line",
+          "Splints and orthoses to maintain joint alignment and prevent contractures",
+          "Transitional care planning essential at age 16-18 — transition to adult rheumatology services should be carefully managed"
+        ]
+      },
+      "arthritis_in_pregnancy": {
+        "key_points": [
+          "RA commonly improves during pregnancy (70% — immune tolerance of pregnancy) but frequently flares severely 3-6 months postpartum",
+          "PsA behavior in pregnancy is variable; AS may improve or worsen",
+          "NSAIDs: use lowest effective dose; avoid in third trimester (premature ductus arteriosus closure, delayed labour); single doses acceptable second trimester",
+          "Hydroxychloroquine: safe in pregnancy — continue (prevents postpartum flares); also reduces risk of neonatal lupus",
+          "Methotrexate: ABSOLUTELY CONTRAINDICATED — stop 3-6 months before conception; men should also stop 3 months before fathering children",
+          "Leflunomide: CONTRAINDICATED — very long half-life; cholestyramine washout procedure required",
+          "Sulfasalazine: generally safe in pregnancy; ensure folic acid 5mg daily; men — may cause reversible oligospermia",
+          "Prednisolone (low dose): relatively safe; use lowest effective dose; slight risk of cleft palate in 1st trimester with high doses",
+          "TNF inhibitors: generally compatible with first and second trimesters; stop adalimumab/infliximab/etanercept at 28-32 weeks to reduce fetal drug exposure and vaccine timing issues for infant (live vaccines delayed)",
+          "Certolizumab pegol: unique biologic with minimal placental transfer — considered throughout pregnancy if needed",
+          "Collaborate with obstetrics, rheumatology, and pharmacy for individualized medication management throughout pregnancy"
+        ]
+      },
+      "arthritis_in_elderly": {
+        "key_points": [
+          "OA is the dominant arthritis type in elderly — affects 80% of adults over 75 on X-ray",
+          "Polypharmacy risk — NSAIDs particularly dangerous in elderly (GI bleeding, renal impairment, hypertension, heart failure)",
+          "Prefer topical NSAIDs, paracetamol, intra-articular corticosteroid injections, or hyaluronic acid over oral NSAIDs in elderly",
+          "Increased infection risk on DMARDs and biologics — pneumococcal and influenza vaccination essential",
+          "RA in elderly may present as 'elderly-onset RA' (EORA) — often RF-negative, involves large joints, marked constitutional symptoms",
+          "PMR (Polymyalgia Rheumatica) frequently presents as RA mimic in elderly — bilateral shoulder and hip girdle pain with high ESR; responds dramatically to prednisolone 15-20 mg",
+          "Fall risk assessment essential — joint pain, muscle weakness, and medications (opioids, sedatives) increase fall and fracture risk",
+          "Renal dose adjustment required for many medications (NSAIDs, colchicine, allopurinol, methotrexate, biologics)",
+          "Geriatric assessment for frailty, cognitive function, and social support — impacts treatment decisions and adherence",
+          "Physiotherapy crucial for muscle strengthening and fall prevention"
+        ]
+      },
+      "arthritis_in_immunocompromised_patients": {
+        "key_points": [
+          "Patients on biologic DMARDs (TNF inhibitors, JAK inhibitors, rituximab) are significantly immunocompromised — high infection risk",
+          "Mandatory pre-biologic screening: TB (Mantoux or IGRA), hepatitis B, hepatitis C, HIV, VZV immunity",
+          "Annual flu vaccination and pneumococcal vaccination required — use inactivated vaccines only",
+          "No live vaccines while on immunosuppressive therapy (LAIV flu spray, yellow fever, MMR, varicella, shingles — AVOID)",
+          "Shingles vaccine (Shingrix — inactivated, 2 doses): recommended BEFORE starting JAK inhibitors; high herpes zoster risk on tofacitinib and upadacitinib",
+          "Suspend biologic/DMARD therapy for significant infections and surgery",
+          "Latent TB: full course of isoniazid or rifampicin prophylaxis before starting biologic therapy",
+          "Septic arthritis risk higher — any hot, swollen single joint must be aspirated urgently regardless of DMARD history"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza (Flu) Vaccine — Inactivated",
+        "frequency": "Annually before flu season (October/November in northern hemisphere)",
+        "reason": "Influenza infections can trigger RA and PsA flares; patients on DMARDs/biologics have impaired immunity; flu worsens reactive arthritis; annual vaccination strongly recommended for all arthritis patients on immunosuppressive therapy",
+        "note": "Use inactivated vaccine only — LAIV (live attenuated nasal spray) contraindicated in immunosuppressed patients"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV20 or PCV15 + PPSV23)",
+        "frequency": "PCV20 or PCV15 single dose; followed by PPSV23 at least 1 year later; booster at 65 if given before 65",
+        "reason": "Patients on immunosuppressive therapy have increased risk of invasive pneumococcal disease (pneumonia, meningitis, septicaemia); DMARDs and biologics impair B-cell response to pneumococcal antigens"
+      },
+      {
+        "vaccine": "Herpes Zoster Vaccine (Shingrix — Recombinant Zoster Vaccine, RZV)",
+        "frequency": "2 doses, 2-6 months apart",
+        "reason": "JAK inhibitors (tofacitinib, upadacitinib) and some biologics significantly increase herpes zoster (shingles) risk. Shingrix is a recombinant (non-live) vaccine safe for immunosuppressed patients. Administer BEFORE starting JAK inhibitors if possible.",
+        "note": "Old live Zostavax vaccine is contraindicated in immunosuppressed patients — use Shingrix only"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine (Annual Updated Booster)",
+        "frequency": "As per current national guidelines — annual booster for immunosuppressed",
+        "reason": "Arthritis patients on biologics and DMARDs at higher risk of severe COVID-19; COVID-19 infection can trigger arthritis flares; vaccine-induced immunity may be suboptimal in heavily immunosuppressed patients (additional doses may be recommended)"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "frequency": "3-dose series (0, 1, 6 months) for non-immune patients; check serology post-vaccination",
+        "reason": "Rituximab and some other biologics can reactivate hepatitis B causing fulminant hepatitis; hepatitis B vaccination before starting biologic therapy is essential if seronegative"
+      },
+      {
+        "vaccine": "Human Papillomavirus (HPV) Vaccine",
+        "frequency": "Per national schedule (ideally before 26 years; consider up to 45 years in immunosuppressed)",
+        "reason": "Patients on immunosuppressive therapy have impaired immune control of HPV, increasing cervical cancer risk (in women) and other HPV-related cancers; regular cervical cancer screening (Pap smear/HPV test) is essential in RA women"
+      },
+      {
+        "vaccine": "Tetanus-Diphtheria-Pertussis (Tdap/Td)",
+        "frequency": "Booster every 10 years",
+        "reason": "Routine adult immunisation; pertussis (whooping cough) can complicate respiratory function; surgical procedures common in arthritis management — ensure tetanus protection"
+      },
+      {
+        "vaccine": "Varicella (Chickenpox) Vaccine — only if non-immune and NOT yet on immunosuppression",
+        "frequency": "2 doses, 4-8 weeks apart",
+        "reason": "Non-immune arthritis patients should receive varicella vaccine BEFORE starting biologics or DMARDs. Live vaccine — CONTRAINDICATED once on immunosuppressive therapy.",
+        "note": "Check VZV IgG serology; vaccinate seronegative patients before starting immunosuppressive therapy"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Joint pain lasting more than 6 weeks without clear injury cause — persistent arthralgia warrants rheumatological assessment",
+      "Morning stiffness lasting more than 30-60 minutes — hallmark of inflammatory arthritis requiring urgent rheumatology referral",
+      "Symmetrical joint swelling — especially small joints of hands (MCP, PIP joints) and wrists — possible early RA",
+      "Single hot, red, swollen joint with fever — URGENT: same-day assessment to exclude septic arthritis (joint destruction within 24-48h)",
+      "Sudden severe big toe or ankle pain at night in men with or without prior gout diagnosis — possible gout attack",
+      "New back pain in young adult (under 40) that improves with exercise but worsens with rest — possible ankylosing spondylitis",
+      "Joint symptoms with skin rash — butterfly rash (lupus), psoriatic plaques (PsA), or salmon-colored rash with fever in a child (systemic JIA)",
+      "Eye redness, pain, or blurred vision in a patient with arthritis — uveitis or episcleritis (same-day ophthalmology referral)",
+      "New or worsening breathlessness or cough in RA patient — possible interstitial lung disease or pleural effusion",
+      "Worsening disease activity despite current medications — DMARD dose adjustment or add-on therapy needed",
+      "Side effects from arthritis medications — skin rash or sore throat on antithyroid drugs (agranulocytosis); jaundice on MTX or leflunomide; chest pain on NSAIDs; signs of serious infection on biologics",
+      "Planning pregnancy while on DMARDs — medication review ESSENTIAL before conception (MTX, leflunomide are teratogenic)",
+      "Significant functional decline — difficulty with self-care, work, or daily activities despite treatment",
+      "Annual review even if well-controlled: monitor for disease progression, medication side effects, cardiovascular risk, bone density, and vaccination status"
+    ],
+
+    "emergency_signs": [
+      "Single hot, red, extremely swollen, painful joint with fever — septic arthritis until proven otherwise — EMERGENCY (go to ER immediately; hours matter for joint survival)",
+      "Sudden severe unilateral hip or groin pain with inability to weight bear — avascular necrosis, hip fracture, or septic hip joint — EMERGENCY",
+      "New onset neurological symptoms in RA patient — neck pain with hand/arm tingling, weakness, or difficulty walking — atlanto-axial subluxation (C1-C2 cord compression) — EMERGENCY spinal imaging",
+      "New onset severe back pain with leg weakness, numbness, or bladder/bowel dysfunction in AS patient — cord compression — EMERGENCY",
+      "Fever and severe illness while on biologic therapy (TNF inhibitor, JAK inhibitor, rituximab) — serious opportunistic infection (TB, fungal, bacterial sepsis) — EMERGENCY",
+      "Sudden severe eye pain, photophobia, and vision change in AS or JIA patient — acute uveitis — same-day ophthalmology EMERGENCY",
+      "Rapidly spreading skin rash with fever on allopurinol — possible severe cutaneous reaction (Stevens-Johnson Syndrome/DRESS) — STOP drug immediately, go to ER",
+      "Chest pain, breathlessness, leg swelling, and calf pain while on JAK inhibitor — possible pulmonary embolism or DVT (thromboembolism) — EMERGENCY",
+      "Severe acute abdominal pain while on NSAIDs — possible GI perforation or major upper GI bleed — EMERGENCY",
+      "Severe weakness, jaundice, or confusion in patient on methotrexate — possible hepatotoxicity or bone marrow suppression — EMERGENCY blood tests and stop medication"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "Is arthritis curable?",
+        "answer": "Most forms of arthritis cannot be cured but can be very effectively managed. Osteoarthritis (OA) — the wear-and-tear type — cannot be reversed, but symptoms can be greatly reduced and progression slowed. Inflammatory arthritis (RA, PsA, AS) can achieve clinical remission with modern treatment — meaning no active inflammation, though the autoimmune tendency remains. Septic arthritis can be cured with appropriate antibiotics. Gout can be effectively prevented with urate-lowering therapy."
+      },
+      {
+        "question": "What is the difference between osteoarthritis and rheumatoid arthritis?",
+        "answer": "Osteoarthritis (OA) is a degenerative 'wear and tear' disease of cartilage — not primarily autoimmune. Pain worsens with activity and is usually asymmetric. It affects older adults. Rheumatoid Arthritis (RA) is a systemic autoimmune disease where the immune system attacks the joint lining — causing symmetrical small joint involvement, morning stiffness >1 hour, and elevated inflammation markers. RA can affect any age and involves systemic complications. RA requires disease-modifying treatment (DMARDs/biologics) while OA is managed with symptom relief, exercise, and joint replacement."
+      },
+      {
+        "question": "Does diet affect arthritis?",
+        "answer": "Yes, significantly. A Mediterranean-style diet rich in omega-3 fatty acids (fish, walnuts, flaxseed), anti-inflammatory spices (turmeric, ginger), colourful vegetables, and olive oil reduces inflammation in RA and OA. For gout, reducing purine-rich foods (organ meats, shellfish, beer) and fructose is essential for controlling uric acid. Weight loss through diet reduces knee OA pain by significantly reducing joint load. Fish oil supplements (2-4g EPA+DHA daily) have demonstrated clinical benefit in RA."
+      },
+      {
+        "question": "Is exercise safe for arthritis?",
+        "answer": "Exercise is not only safe — it is one of the most effective treatments for arthritis. Regular physical activity reduces joint pain, improves function, strengthens protective muscles, reduces fatigue, and benefits mental health. Swimming, cycling, walking, yoga, and Tai Chi are particularly beneficial. The key is choosing appropriate exercise (low-impact aerobic for OA; range of motion + strengthening for RA) and working with a physiotherapist for personalized guidance. Rest during acute flares, but keep moving otherwise — 'motion is lotion for joints.'"
+      },
+      {
+        "question": "What is gout and how is it different from other arthritis?",
+        "answer": "Gout is a crystal-induced arthritis caused by monosodium urate crystal deposition in joints from high uric acid levels (hyperuricemia). It presents as sudden, exquisitely painful flares — typically in the big toe — with redness, swelling, and heat. Between flares, patients are completely symptom-free (unlike OA/RA). Diagnosis is confirmed by needle-shaped crystals in joint fluid. Gout is managed with NSAIDs or colchicine for attacks, and allopurinol long-term to reduce uric acid. Diet (avoiding purines and alcohol) is a critical management component."
+      },
+      {
+        "question": "What is methotrexate and why is it used for arthritis?",
+        "answer": "Methotrexate (MTX) is the cornerstone 'anchor' treatment for rheumatoid arthritis and psoriatic arthritis. It is a disease-modifying antirheumatic drug (DMARD) that reduces joint inflammation, prevents cartilage and bone erosion, and slows disease progression. Taken once weekly (with folic acid to reduce side effects), it typically takes 6-12 weeks to show benefit. It requires regular blood test monitoring. It is absolutely contraindicated in pregnancy."
+      },
+      {
+        "question": "What are biologic drugs for arthritis?",
+        "answer": "Biologics are advanced targeted medicines (monoclonal antibodies or fusion proteins) that block specific inflammatory molecules driving joint destruction. The most commonly used class is anti-TNF agents (adalimumab, etanercept, infliximab) which block tumor necrosis factor-alpha. Other targets include IL-6 (tocilizumab), IL-17 (secukinumab), IL-23 (guselkumab), T-cells (abatacept), and B-cells (rituximab). Biologics are used for moderate-severe RA, PsA, and AS not responding to conventional DMARDs. They require infection screening (TB, hepatitis B) before starting and increase infection risk."
+      },
+      {
+        "question": "How is gout treated during an acute attack?",
+        "answer": "During an acute gout attack: (1) Rest the affected joint; apply ice; elevate the limb. (2) Take colchicine 1mg then 0.5mg 1 hour later (low-dose regimen) as early as possible — most effective when started within 12-24 hours. Or take an NSAID (indomethacin 50mg three times daily, naproxen 500mg twice daily) — equally effective. Or oral prednisolone 30-40mg/day for 5 days if NSAIDs and colchicine are contraindicated. Do NOT start allopurinol during an attack — it can prolong the flare. Start allopurinol 2-4 weeks after the attack has resolved."
+      },
+      {
+        "question": "Can arthritis affect organs other than joints?",
+        "answer": "Yes — especially inflammatory arthritis. RA can cause interstitial lung disease, pleuritis and pericarditis, eye inflammation (episcleritis, keratokeratitis sicca from Sjögren's overlap), anaemia, vasculitis, and cervical spine instability. Ankylosing Spondylitis causes uveitis (25-40%), aortitis, and restrictive lung disease. Psoriatic arthritis is associated with cardiovascular disease, inflammatory bowel disease, and metabolic syndrome. Gout damages kidneys (uric acid nephropathy, kidney stones). This is why inflammatory arthritis requires specialist care beyond just the joints."
+      },
+      {
+        "question": "What is the 'treat-to-target' strategy in rheumatoid arthritis?",
+        "answer": "Treat-to-target (T2T) is a strategy where treatment is adjusted every 1-3 months until a pre-defined target is achieved — usually DAS28 remission (<2.6) or at minimum low disease activity (<3.2). Regular disease activity measurement (DAS28, CDAI, SDAI) guides step-up of treatment when target is not met. This proactive approach dramatically reduces joint erosions, disability, and improves long-term outcomes. Early, intensive treatment in the 'window of opportunity' (first 3-6 months) has the greatest impact on preventing permanent joint damage."
+      },
+      {
+        "question": "What is ankylosing spondylitis and why does the back pain improve with exercise?",
+        "answer": "Ankylosing spondylitis (AS) is a chronic autoimmune inflammatory arthritis of the spine and sacroiliac joints. The key distinguishing feature is that unlike mechanical back pain (which worsens with activity), AS back pain IMPROVES with movement and WORSENS with rest and prolonged immobility. This is because movement disperses inflammatory fluid and maintains spinal flexibility. Prolonged bed rest is harmful in AS and accelerates spinal fusion. Daily exercise (swimming, hydrotherapy, specific AS physio exercises) is as important as medication and is essential to maintain spinal posture and mobility."
+      },
+      {
+        "question": "Is it safe to have surgery while on arthritis medications?",
+        "answer": "Surgery planning in arthritis patients requires careful medication management. Biologic drugs (anti-TNF, tocilizumab, etc.) should be withheld for 1-4 weeks before elective surgery (depending on the specific drug half-life) due to increased infection and wound healing risk. Methotrexate can usually be continued through minor surgery but should be discussed with the surgeon. Low-dose prednisolone should be continued and stress-dose steroids given if on long-term steroids. NSAIDs should be stopped 5-7 days pre-operatively (bleeding and cardiovascular risk). Always inform all surgeons and anaesthetists about all arthritis medications."
+      },
+      {
+        "question": "Why do some arthritis medications require regular blood tests?",
+        "answer": "Several arthritis medications carry risks of serious organ toxicity that must be monitored: Methotrexate can cause liver fibrosis and bone marrow suppression — requiring LFTs and CBC every 4-8 weeks initially. Leflunomide is hepatotoxic — requires LFTs. Sulfasalazine can cause bone marrow suppression — requires CBC. NSAIDs reduce kidney blood flow — requires renal function tests. Biologics and JAK inhibitors increase infection risk — require CBC and inflammatory markers. Allopurinol requires renal function tests for dosing. These blood tests allow early detection of side effects before they become serious, ensuring safe treatment."
+      },
+      {
+        "question": "Can I become pregnant while on arthritis medications?",
+        "answer": "Pregnancy planning in arthritis requires specialist review months in advance. Methotrexate and leflunomide are absolutely contraindicated — stop methotrexate 3-6 months and leflunomide (with washout) months before trying to conceive. Safe medications in pregnancy include hydroxychloroquine (continue — protective), sulfasalazine (with folic acid), low-dose prednisolone, certolizumab pegol (minimal placental transfer), and remdesivir. Most TNF inhibitors should be stopped at 28-32 weeks. NSAIDs should be avoided in the third trimester. Male patients on MTX should also stop 3 months before fathering children."
+      }
+    ],
+
+    "references": [
+      "EULAR Recommendations for the Management of Rheumatoid Arthritis with Synthetic and Biological DMARDs: 2022 Update",
+      "American College of Rheumatology (ACR) Guidelines for the Treatment of Rheumatoid Arthritis 2021",
+      "ACR Guideline for the Management of Gout 2020",
+      "EULAR Recommendations for the Management of Psoriatic Arthritis with Pharmacological Therapies 2023",
+      "ASAS-EULAR Recommendations for the Management of Axial Spondyloarthritis 2022",
+      "OARSI Guidelines for the Non-Surgical Management of Knee, Hip and Polyarticular Osteoarthritis 2019",
+      "NICE Clinical Guideline (CG177): Osteoarthritis — care and management",
+      "NICE Clinical Guideline (NG100): Rheumatoid Arthritis in Adults: Management",
+      "American College of Rheumatology (ACR) Guideline for Juvenile Idiopathic Arthritis 2022",
+      "EULAR Recommendations for Cardiovascular Risk Management in Rheumatic and Musculoskeletal Diseases 2021",
+      "WHO Global Report on Arthritis 2023",
+      "British Society for Rheumatology (BSR) Biologic and Targeted Synthetic DMARD Safety Guidelines",
+      "Lancet: Rheumatoid Arthritis — Smolen JS et al., Lancet 2018;391:659",
+      "New England Journal of Medicine: Osteoarthritis — Loeser RF et al., NEJM 2012;367:2520",
+      "Arthritis and Rheumatology Journal: Treat-to-Target Guidelines for RA and PsA",
+      "Indian Rheumatology Association (IRA) Guidelines for Management of Rheumatoid Arthritis in India",
+      "Medscape: Rheumatoid Arthritis, Gout, Osteoarthritis Clinical Overviews"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-ARTHRITIS-012",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-02",
+      "last_updated": "2026-06-02",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is intended for educational and informational purposes for the MedoAir chatbot. It does not replace professional medical advice, diagnosis, or treatment. Always consult a licensed rheumatologist or physician for medical decisions regarding arthritis conditions.",
+      "tags": ["arthritis", "osteoarthritis", "rheumatoid arthritis", "gout", "psoriatic arthritis", "ankylosing spondylitis", "JIA", "musculoskeletal", "joints", "DMARDs", "biologics", "medoair"]
+    }
+  }
+}

@@ -6,302 +6,1363 @@
     "icd_10_code": "E05",
     "category": "Endocrine Disease",
     "overview": {
-      "description": "Hyperthyroidism is a condition in which the thyroid gland is overactive and produces excessive amounts of thyroid hormones (thyroxine/T4 and triiodothyronine/T3). This accelerates the body's metabolism, causing rapid heartbeat, weight loss, increased appetite, and anxiety.",
-      "affected_organ": "Thyroid Gland",
-      "prevalence": "Affects approximately 1.2% of the population in the United States; more common in women.",
-      "age_group": "Mainly adults aged 20-50, but can affect any age.",
+      "description": "Hyperthyroidism is a condition in which the thyroid gland is overactive and produces excessive amounts of thyroid hormones (thyroxine/T4 and triiodothyronine/T3). This accelerates the body's metabolism, causing rapid heartbeat, unintended weight loss, increased appetite, heat intolerance, anxiety, and tremors. It is the most common thyroid disorder after hypothyroidism and requires timely diagnosis and management to prevent life-threatening complications.",
+      "affected_organ": "Thyroid Gland (and secondarily: Heart, Bones, Eyes, Nervous System)",
+      "prevalence": "Affects approximately 1.2% of the US population; 0.5-1% globally; Graves' disease accounts for 70-80% of all cases.",
+      "age_group": "Mainly adults aged 20-50; women are 5-10 times more likely to develop hyperthyroidism than men.",
       "is_contagious": false,
       "is_curable": true,
       "is_manageable": true,
       "chronic": true
     },
-
     "types": [
       {
         "id": "TYPE-01",
         "name": "Graves' Disease",
-        "description": "An autoimmune disorder where the immune system attacks the thyroid, causing it to produce too much hormone. It is the most common cause of hyperthyroidism.",
-        "common_in": "Women under 40"
+        "description": "The most common cause of hyperthyroidism (~70-80%). An autoimmune disorder where the immune system produces TSH-receptor antibodies (TRAb/TSI) that continuously stimulate the thyroid gland to produce excess hormones. It is the only form of hyperthyroidism associated with eye disease (Graves' ophthalmopathy) and pretibial myxedema.",
+        "common_in": "Women aged 20-40; strong genetic and autoimmune component"
       },
       {
         "id": "TYPE-02",
-        "name": "Toxic Nodular Goiter (Plummer's Disease)",
-        "description": "One or more adenomas (nodules) in the thyroid gland start producing thyroid hormones independently, escaping regulation.",
-        "common_in": "Older adults, particularly in iodine-deficient areas"
+        "name": "Toxic Multinodular Goiter (Plummer's Disease)",
+        "description": "Multiple thyroid nodules develop over years and become autonomous — producing thyroid hormones independently of TSH regulation. Second most common cause of hyperthyroidism.",
+        "common_in": "Older adults (>50 years), particularly in iodine-deficient areas"
       },
       {
         "id": "TYPE-03",
-        "name": "Thyroiditis",
-        "description": "Inflammation of the thyroid gland that causes stored thyroid hormones to leak out into the blood.",
-        "common_in": "Postpartum women, post-viral infections"
+        "name": "Toxic Adenoma (Single Hot Nodule)",
+        "description": "A single benign thyroid nodule (adenoma) that autonomously secretes excessive thyroid hormone, suppressing TSH and suppressing the rest of the thyroid gland.",
+        "common_in": "Adults; palpable solitary thyroid nodule on examination"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Subacute (De Quervain's) Thyroiditis",
+        "description": "Inflammation of the thyroid gland, often following a viral upper respiratory tract infection. Stored thyroid hormones leak into the blood causing a transient hyperthyroid phase (2-6 weeks), followed by hypothyroidism, then recovery.",
+        "common_in": "Women aged 20-50; often following viral illness (mumps, influenza, COVID-19)"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Postpartum Thyroiditis",
+        "description": "Transient autoimmune thyroid inflammation occurring within 1 year of childbirth. Follows a classic pattern: hyperthyroid phase (1-4 months postpartum), hypothyroid phase, then recovery. Recurs in subsequent pregnancies.",
+        "common_in": "Women within 12 months of delivery; affects 5-9% of postpartum women"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Iodine-Induced Hyperthyroidism (Jod-Basedow Effect)",
+        "description": "Excessive iodine exposure (from amiodarone, contrast dye, kelp/seaweed supplements, or iodine-rich diets) triggers overproduction of thyroid hormones in individuals with pre-existing nodular goiter or latent Graves' disease.",
+        "common_in": "Patients receiving amiodarone, contrast dye, or high iodine supplements"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Factitious (Exogenous) Thyrotoxicosis",
+        "description": "Hyperthyroidism caused by intentional or accidental intake of excessive exogenous thyroid hormone (levothyroxine). Thyroglobulin levels are low; no goiter present.",
+        "common_in": "Patients on thyroid medication who take excessive doses; healthcare workers"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "TSH-Secreting Pituitary Adenoma",
+        "description": "A rare benign tumor of the pituitary gland that produces excess TSH, which continuously stimulates the thyroid gland. TSH is inappropriately normal or elevated despite high T3/T4.",
+        "common_in": "Rare; any adult; usually presents with visual symptoms from pituitary mass"
+      },
+      {
+        "id": "TYPE-09",
+        "name": "Gestational Transient Thyrotoxicosis",
+        "description": "Mild, transient hyperthyroidism occurring in the first trimester of pregnancy due to the thyroid-stimulating effect of high hCG (human chorionic gonadotropin) levels. Associated with hyperemesis gravidarum.",
+        "common_in": "First trimester of pregnancy; women with severe morning sickness"
       }
     ],
-
     "severity_levels": [
       {
         "level": 1,
-        "name": "Subclinical",
-        "frequency": "Asymptomatic or very mild symptoms",
-        "nighttime_symptoms": "None",
-        "lung_function": "N/A",
-        "impact": "Low TSH, normal free T3/T4"
+        "name": "Subclinical Hyperthyroidism",
+        "description": "Mildest form; no or very mild symptoms",
+        "lab_values": "TSH < 0.4 mIU/L; Free T3 and Free T4 within normal range",
+        "impact": "Increased risk of atrial fibrillation and bone density loss over time; clinical monitoring required",
+        "management": "Watchful waiting or low-dose antithyroid therapy depending on age and cardiovascular risk"
       },
       {
         "level": 2,
-        "name": "Overt Hyperthyroidism",
-        "frequency": "Noticeable symptoms (weight loss, tremors, heat intolerance)",
-        "lung_function": "N/A",
-        "impact": "Low TSH, high free T3/T4; requires medical treatment"
+        "name": "Overt (Mild to Moderate) Hyperthyroidism",
+        "description": "Noticeable symptoms affecting quality of life",
+        "lab_values": "TSH < 0.1 mIU/L; Free T4 and/or Free T3 elevated above normal range",
+        "impact": "Palpitations, weight loss, heat intolerance, tremors, anxiety, sweating; requires active treatment",
+        "management": "Antithyroid drugs (methimazole or PTU) as first-line; beta-blockers for symptom relief; definitive treatment considered"
       },
       {
         "level": 3,
+        "name": "Severe Hyperthyroidism",
+        "description": "Significant thyroid hormone excess with multi-system involvement",
+        "lab_values": "TSH undetectable; markedly elevated Free T4 and Free T3",
+        "impact": "Atrial fibrillation, heart failure, severe osteoporosis, psychiatric disturbances; high urgency",
+        "management": "Aggressive antithyroid therapy; beta-blockers; definitive treatment (RAI or surgery) urgently planned"
+      },
+      {
+        "level": 4,
         "name": "Thyroid Storm (Thyrotoxic Crisis)",
-        "frequency": "Severe life-threatening exacerbation (high fever, tachycardia, agitation, delirium)",
-        "lung_function": "N/A",
-        "impact": "Critical medical emergency; high mortality rate if untreated"
+        "description": "Life-threatening exacerbation of hyperthyroidism; medical emergency with multi-organ failure",
+        "lab_values": "Markedly elevated Free T3 and Free T4; Burch-Wartofsky Point Scale score ≥45 is diagnostic",
+        "impact": "High fever (>38.5°C), extreme tachycardia (>140 bpm), agitation, delirium, heart failure, coma; mortality 10-30% even with treatment",
+        "management": "ICU admission; IV propylthiouracil or methimazole; Lugol's iodine; beta-blockers IV; steroids; active cooling; treat precipitant"
       }
     ],
-
     "causes": {
       "genetic_factors": [
-        "Family history of thyroid disorders or autoimmune conditions",
-        "Associated genes (HLA-DR3, CTLA4, PTPN22)"
+        "Family history of thyroid disorders or autoimmune diseases (Graves', Hashimoto's)",
+        "Associated HLA genes: HLA-DR3 and HLA-B8 in Caucasians; CTLA4, PTPN22, CD25 gene variants",
+        "Personal history of other autoimmune conditions (Type 1 diabetes, rheumatoid arthritis, Addison's disease)",
+        "Female sex — strong genetic predisposition; 5-10x more common in women"
       ],
       "environmental_triggers": [
-        "Excessive iodine intake (diet or supplements)",
-        "Stressful life events",
-        "Pregnancy (triggering postpartum thyroiditis)",
-        "Smoking (increases risk of Graves' ophthalmopathy)",
-        "Viral or bacterial infections"
+        "Excessive iodine intake through diet (seaweed, kelp), supplements, or medications (amiodarone, iodine contrast dye)",
+        "Stressful major life events (bereavement, surgery, severe illness) — may trigger Graves' disease onset",
+        "Pregnancy and postpartum period — hormonal and immune changes",
+        "Viral or bacterial infections (may trigger thyroiditis: influenza, mumps, COVID-19, Epstein-Barr virus)",
+        "Smoking — significantly increases risk of Graves' ophthalmopathy; independently increases Graves' disease risk",
+        "High-dose interferon-alpha or interleukin-2 therapy (immunotherapy-induced thyroiditis)",
+        "Checkpoint inhibitor immunotherapy (e.g., pembrolizumab, nivolumab) — causes immune thyroiditis"
       ],
       "other_causes": [
-        "Amiodarone medication (contains high levels of iodine)",
-        "Thyroid hormone over-medication",
-        "Pituitary adenoma (rare TSH-secreting tumor)"
+        "Amiodarone medication (contains 37% iodine by weight; causes both hypo- and hyperthyroidism)",
+        "Excessive exogenous thyroid hormone intake (levothyroxine over-medication or factitious use)",
+        "TSH-secreting pituitary adenoma (rare — TSH inappropriately elevated despite high T4/T3)",
+        "Struma ovarii (rare ovarian teratoma containing functional thyroid tissue)",
+        "Hydatidiform mole or choriocarcinoma (hCG-mediated stimulation — very high hCG mimics TSH)",
+        "Metastatic follicular thyroid cancer producing thyroid hormones (rare)"
       ]
     },
-
     "symptoms": {
       "primary_symptoms": [
         {
           "id": "SYM-101",
           "name": "Unexplained Weight Loss",
-          "description": "Losing weight despite having an increased appetite and eating more food.",
+          "description": "Significant and unintentional weight loss despite increased appetite and food intake. Caused by hypermetabolism — accelerated basal metabolic rate from excess thyroid hormones.",
           "severity": "Moderate to Severe",
-          "onset": "Gradual over weeks or months"
+          "onset": "Gradual over weeks to months"
         },
         {
           "id": "SYM-102",
-          "name": "Rapid Heart Rate (Tachycardia)",
-          "description": "Heart rate exceeding 100 beats per minute, or palpitations (pounding heart).",
+          "name": "Rapid Heart Rate (Tachycardia) and Palpitations",
+          "description": "Resting heart rate consistently >100 bpm; sensation of pounding, racing, or irregular heartbeat. Thyroid hormones directly increase cardiac output and heart rate. Atrial fibrillation can develop.",
           "severity": "Moderate to Severe",
-          "onset": "Constant or episodic"
+          "onset": "Constant or episodic; often noticed at rest"
         },
         {
           "id": "SYM-103",
-          "name": "Heat Intolerance & Sweating",
-          "description": "Feeling excessively warm when others are comfortable, and sweating abnormally.",
+          "name": "Heat Intolerance and Excessive Sweating",
+          "description": "Feeling excessively warm even in cool environments; sweating more than normal (hyperhidrosis). Caused by increased metabolic rate producing excess body heat.",
           "severity": "Mild to Moderate",
-          "onset": "Gradual"
+          "onset": "Gradual; consistent"
         },
         {
           "id": "SYM-104",
-          "name": "Tremors",
-          "description": "Fine trembling or shaking in the hands and fingers.",
+          "name": "Fine Tremor of Hands and Fingers",
+          "description": "Fine, rapid trembling of the outstretched hands and fingers. Caused by increased adrenergic stimulation of neuromuscular function.",
           "severity": "Mild to Moderate",
-          "onset": "Noticeable when holding hands out"
+          "onset": "Visible when hands held outstretched"
+        },
+        {
+          "id": "SYM-105",
+          "name": "Anxiety, Irritability, and Nervousness",
+          "description": "Persistent anxiety, emotional lability, restlessness, irritability, and difficulty concentrating. Thyroid hormones amplify sympathetic nervous system activity.",
+          "severity": "Mild to Moderate",
+          "onset": "Gradual; may be mistaken for a psychiatric disorder"
+        },
+        {
+          "id": "SYM-106",
+          "name": "Goiter (Enlarged Thyroid Gland)",
+          "description": "Visible or palpable swelling at the base of the neck. In Graves' disease, the goiter is diffuse and may have a bruit on auscultation. In toxic nodular goiter, the swelling is irregular and nodular.",
+          "severity": "Mild to Moderate",
+          "onset": "Gradual enlargement over months to years"
+        },
+        {
+          "id": "SYM-107",
+          "name": "Graves' Ophthalmopathy (Thyroid Eye Disease)",
+          "description": "Specific to Graves' disease. Immune-mediated inflammation and swelling of orbital tissues causing proptosis (bulging eyes/exophthalmos), lid retraction, double vision, eye pain, light sensitivity, and potentially vision loss. Occurs in ~25-50% of Graves' disease patients.",
+          "severity": "Mild to Severe (can threaten vision)",
+          "onset": "May precede, accompany, or follow hyperthyroidism diagnosis"
         }
       ],
       "secondary_symptoms": [
-        "Anxiety, irritability, and mood swings",
-        "Difficulty sleeping (insomnia)",
-        "Muscle weakness, particularly in thighs and upper arms",
+        "Fatigue and muscle weakness — especially proximal muscles (thighs, upper arms); difficulty climbing stairs",
         "More frequent bowel movements or diarrhea",
-        "Goiter (an enlarged thyroid gland, visible swelling at the base of neck)",
-        "Fatigue and tiredness despite restless energy",
-        "Fine, brittle hair and thin skin"
+        "Increased appetite (polyphagia) — eating more yet losing weight",
+        "Difficulty sleeping (insomnia) — despite feeling exhausted",
+        "Decreased menstrual flow (oligomenorrhea) or absent periods (amenorrhea) in women",
+        "Reduced libido and erectile dysfunction in men",
+        "Fine, thin, or brittle hair; hair loss (telogen effluvium)",
+        "Thin, warm, and moist skin; onycholysis (nail separation from nail bed)",
+        "Pretibial myxedema (waxy, thickened skin on shins — specific to Graves' disease, rare)",
+        "Gynecomastia (breast enlargement in men — rare)",
+        "Hypokalemic periodic paralysis (sudden muscle weakness — especially in Asian men with Graves' disease)",
+        "Shortened attention span and poor concentration",
+        "Osteopenia or osteoporosis (accelerated bone resorption)"
       ],
       "warning_signs_of_attack": [
-        "High fever (above 103 F / 39.4 C)",
-        "Extreme rapid heartbeat (tachycardia > 140 bpm)",
-        "Agitation, confusion, delirium, or hallucinations",
-        "Shortness of breath or chest pain",
-        "Nausea, vomiting, or yellowing of the skin (jaundice)"
+        "High fever above 38.5°C (101.3°F) — especially with dehydration",
+        "Extreme rapid heartbeat >140 bpm or new onset atrial fibrillation",
+        "Agitation, confusion, delirium, psychosis, or hallucinations",
+        "Severe nausea, vomiting, abdominal pain, or diarrhea",
+        "Shortness of breath, chest pain, or signs of heart failure",
+        "Jaundice (yellowing of skin/eyes — rare; indicates liver involvement)",
+        "Sudden extreme weakness or collapse",
+        "Profuse sweating with inability to tolerate heat"
       ],
       "symptoms_in_children": [
-        "Rapid growth and bone maturation",
-        "Behavioral problems and declining school performance",
-        "Hyperactivity and short attention span",
-        "Increased appetite with failure to gain weight"
+        "Rapid linear growth and accelerated bone maturation (advanced bone age)",
+        "Behavioral problems — hyperactivity, short attention span, declining school performance",
+        "Increased appetite with failure to gain weight or weight loss",
+        "Emotional instability, anxiety, and sleep disturbances",
+        "Increased frequency of bowel movements",
+        "Tremors and heat intolerance",
+        "Diffuse goiter — smooth, soft, symmetrical neck swelling",
+        "Tachycardia at rest and during sleep — characteristic finding"
+      ],
+      "graves_specific_features": [
+        "Graves' Ophthalmopathy (Thyroid Eye Disease / TED): proptosis, lid retraction, chemosis, diplopia",
+        "Pretibial Myxedema: waxy, non-pitting thickening of skin on shins and dorsum of feet",
+        "Thyroid Acropachy: rare triad of clubbing of fingers, periosteal new bone formation, and pretibial myxedema",
+        "Thyroid bruit: audible sound over the thyroid due to increased vascularity"
       ]
     },
-
     "diagnosis": {
       "medical_history": [
-        "Family history of thyroid or autoimmune diseases",
-        "Current medication list, including iodine-containing drugs",
-        "Evaluation of symptom onset and history of pregnancy"
+        "Family history of thyroid disorders, autoimmune diseases, or thyroid cancer",
+        "Current medications — especially amiodarone, lithium, interferon, checkpoint inhibitors, thyroid supplements",
+        "Recent iodine exposure — contrast dye, kelp supplements, iodine-containing antiseptics",
+        "History of pregnancy, postpartum period, or recent viral illness",
+        "Onset, duration, and progression of symptoms",
+        "Prior thyroid conditions, surgery, or radioactive iodine treatment"
       ],
       "physical_examination": [
-        "Palpation of the thyroid gland to check size and consistency",
-        "Checking heart rate and blood pressure",
-        "Assessing hand tremors and muscle reflexes",
-        "Checking eyes for redness, swelling, or bulging (exophthalmos)"
+        "Palpation of the thyroid gland — size, texture, consistency, presence of nodules, and tenderness",
+        "Auscultation of the thyroid — bruit (vascular hum) present in Graves' disease due to high vascularity",
+        "Heart rate and rhythm assessment — resting tachycardia, irregular pulse (atrial fibrillation)",
+        "Blood pressure measurement — wide pulse pressure (high systolic, low diastolic) typical",
+        "Assessment of hand tremors — fine rapid tremor on outstretched hands",
+        "Eye examination — proptosis, lid lag, lid retraction, exophthalmos (Graves' ophthalmopathy)",
+        "Skin examination — warm, moist skin; pretibial myxedema; onycholysis",
+        "Proximal muscle strength testing — difficulty rising from squatting position",
+        "Reflexes — brisk (hyperreflexia) in hyperthyroidism"
       ],
       "diagnostic_tests": [
         {
-          "test_name": "TSH Blood Test",
-          "description": "Measures Thyroid Stimulating Hormone levels.",
-          "purpose": "First-line screening test for thyroid function",
-          "key_metric": "TSH level < 0.4 mIU/L indicates overactive thyroid"
+          "test_name": "TSH Blood Test (Thyroid Stimulating Hormone)",
+          "description": "Measures pituitary TSH levels. TSH is the most sensitive first-line screening test for thyroid dysfunction. In hyperthyroidism, excess thyroid hormones suppress TSH production via negative feedback.",
+          "purpose": "First-line screening test for hyperthyroidism",
+          "key_metric": "TSH < 0.4 mIU/L: subclinical; TSH < 0.1 mIU/L: overt hyperthyroidism; TSH undetectable (<0.01): severe"
         },
         {
-          "test_name": "Free T4 and T3 Blood Tests",
-          "description": "Measures unbound thyroxine (T4) and triiodothyronine (T3) levels.",
-          "purpose": "Confirms hyperthyroidism and assesses severity",
-          "key_metric": "Elevated Free T4 (> 1.8 ng/dL) or Free T3 (> 4.4 pg/mL)"
+          "test_name": "Free T4 (Free Thyroxine) Blood Test",
+          "description": "Measures unbound (biologically active) thyroxine. Elevated in overt hyperthyroidism. Normal in subclinical hyperthyroidism.",
+          "purpose": "Confirms overt hyperthyroidism and assesses severity",
+          "key_metric": "Normal range: 0.8-1.8 ng/dL; Elevated (>1.8 ng/dL) in overt hyperthyroidism"
+        },
+        {
+          "test_name": "Free T3 (Free Triiodothyronine) Blood Test",
+          "description": "Measures unbound T3, the most biologically active thyroid hormone. In T3 thyrotoxicosis, T3 is elevated while T4 may be normal.",
+          "purpose": "Confirms T3-predominant hyperthyroidism; assesses severity",
+          "key_metric": "Normal range: 2.3-4.1 pg/mL; Elevated (>4.4 pg/mL) in overt hyperthyroidism"
+        },
+        {
+          "test_name": "TSHR Antibody Test (TRAb / TSI — Thyroid Stimulating Immunoglobulin)",
+          "description": "Measures autoantibodies against the TSH receptor. Positive in Graves' disease. Used to confirm autoimmune hyperthyroidism and predict relapse after antithyroid drug treatment.",
+          "purpose": "Confirms Graves' disease; monitors treatment response; assesses risk of fetal/neonatal Graves'",
+          "key_metric": "TRAb > 1.75 IU/L (positive); TSI > 140% stimulation (positive) — confirms Graves' disease"
+        },
+        {
+          "test_name": "Thyroid Peroxidase Antibodies (TPO-Ab)",
+          "description": "Elevated in Hashimoto's thyroiditis and Graves' disease. Indicates autoimmune thyroid disease.",
+          "purpose": "Supports diagnosis of autoimmune thyroid disease",
+          "key_metric": "Positive (>35 IU/mL) in most Graves' disease and Hashimoto's patients"
         },
         {
           "test_name": "Radioactive Iodine Uptake (RAIU) Test",
-          "description": "Patient swallows a small dose of radioactive iodine, and thyroid uptake is measured.",
-          "purpose": "Differentiates causes of hyperthyroidism",
-          "key_metric": "High uptake indicates Graves' disease; low uptake indicates thyroiditis"
+          "description": "Patient swallows a small dose of radioactive iodine (I-123 or I-131). Thyroid uptake measured at 4 and 24 hours using gamma camera. Iodine is selectively taken up by the thyroid gland.",
+          "purpose": "Differentiates cause of hyperthyroidism — essential when etiology is unclear",
+          "key_metric": "High uptake (>35% at 24h): Graves' disease or toxic nodular goiter; Low/absent uptake (<5%): thyroiditis, factitious, or iodine excess"
         },
         {
-          "test_name": "Thyroid Ultrasound",
-          "description": "Imaging of the thyroid gland using sound waves.",
-          "purpose": "Detects thyroid nodules and enlargement",
-          "key_metric": "Increased vascularity ('thyroid inferno' in Graves')"
+          "test_name": "Thyroid Scintigraphy (Radionuclide Scan)",
+          "description": "Nuclear imaging using I-123 or technetium-99m pertechnetate. Shows distribution of thyroid activity — diffuse uptake in Graves'; focal hot spots in toxic nodular goiter or toxic adenoma.",
+          "purpose": "Identifies pattern and distribution of thyroid overactivity; guides RAI therapy dosing",
+          "key_metric": "Diffuse uptake = Graves'; Single hot nodule = toxic adenoma; Multiple hot nodules = toxic multinodular goiter"
         },
         {
-          "test_name": "TSHR Antibody (TRAb / TSI) Test",
-          "description": "Measures thyroid-stimulating immunoglobulin antibodies.",
-          "purpose": "Confirms Graves' disease diagnosis",
-          "key_metric": "Positive result indicates autoimmune Graves' disease"
+          "test_name": "Thyroid Ultrasound with Doppler",
+          "description": "High-resolution ultrasound imaging of the thyroid gland. Doppler mode assesses vascularity. Detects nodules, goiter size, and calcifications.",
+          "purpose": "Detects thyroid nodules and goiter; assesses vascularity; guides fine-needle aspiration",
+          "key_metric": "Increased diffuse vascularity ('thyroid inferno') in Graves'; discrete nodules in toxic nodular goiter; normal or absent vascularity in thyroiditis"
+        },
+        {
+          "test_name": "Fine-Needle Aspiration Biopsy (FNAB)",
+          "description": "Ultrasound-guided needle aspiration of suspicious thyroid nodules. Cytological analysis of aspirated cells.",
+          "purpose": "Excludes thyroid cancer in suspicious cold or solitary nodules",
+          "key_metric": "Bethesda system cytological classification (I-VI); not routinely done for hot nodules (low cancer risk)"
+        },
+        {
+          "test_name": "ECG (Electrocardiogram)",
+          "description": "Records electrical activity of the heart. Detects arrhythmias associated with hyperthyroidism.",
+          "purpose": "Detects sinus tachycardia, atrial fibrillation, or other arrhythmias",
+          "key_metric": "Sinus tachycardia most common; atrial fibrillation in 10-15% of overt hyperthyroid patients"
+        },
+        {
+          "test_name": "Bone Density Scan (DEXA Scan)",
+          "description": "Measures bone mineral density at lumbar spine and hip.",
+          "purpose": "Detects osteopenia or osteoporosis caused by chronic hyperthyroidism",
+          "key_metric": "T-score: Normal (>-1.0); Osteopenia (-1.0 to -2.5); Osteoporosis (<-2.5)"
+        },
+        {
+          "test_name": "Complete Blood Count (CBC) and Liver Function Tests",
+          "description": "Baseline blood tests before starting antithyroid drugs. Agranulocytosis (rare but serious) and liver toxicity are potential side effects of methimazole and PTU.",
+          "purpose": "Establishes baseline before antithyroid therapy; detects pre-existing abnormalities",
+          "key_metric": "Monitor WBC and neutrophils; liver enzymes (ALT, AST, ALP, bilirubin)"
         }
       ]
     },
-
     "medicines": {
-      "note": "All medications should be taken only under the supervision of a licensed physician. Self-medication can be dangerous.",
+      "note": "All medications must be taken only under the supervision of a licensed physician or endocrinologist. Self-medication with thyroid medications is dangerous. Regular follow-up and blood tests are essential.",
       "categories": [
         {
           "category_id": "MED-CAT-21",
-          "category_name": "Antithyroid Drugs (Thionamides)",
-          "purpose": "Inhibit the thyroid gland from producing new thyroid hormones",
-          "onset": "Within 2-6 weeks for clinical improvement",
-          "duration": "Typically 12-18 months of maintenance therapy",
+          "category_name": "Antithyroid Drugs (Thionamides) — First-Line Treatment",
+          "purpose": "Block thyroid peroxidase enzyme, inhibiting synthesis of new thyroid hormones (T3 and T4)",
+          "onset": "Clinical improvement within 2-6 weeks; TSH normalizes within 4-8 weeks",
+          "duration": "Typically 12-18 months for Graves' disease; 40-50% achieve long-term remission after course",
           "medicines": [
             {
-              "name": "Methimazole",
-              "brand_examples": ["Tapazole"],
+              "name": "Methimazole (MMI)",
+              "brand_examples": [
+                "Tapazole",
+                "Thyrozol"
+              ],
               "form": "Tablet",
-              "dosage": "5-30 mg daily depending on severity",
-              "use_case": "First-line treatment for Graves' disease",
-              "side_effects": ["Skin rash", "Joint pain", "Nausea", "Agranulocytosis (rare/severe: low white blood cells)"]
+              "dosage": "Mild: 5-10 mg/day; Moderate: 10-30 mg/day; Severe: 40-60 mg/day (in divided doses); maintenance 5-10 mg/day",
+              "use_case": "First-line treatment for Graves' disease (except first trimester of pregnancy); toxic nodular goiter; toxic adenoma; pre-operative preparation",
+              "mechanism": "Inhibits thyroid peroxidase (TPO), blocking organification of iodine and coupling of thyroglobulin",
+              "side_effects": [
+                "Skin rash or urticaria (5%)",
+                "Arthralgias and joint pain",
+                "Nausea and GI upset",
+                "Agranulocytosis (0.1-0.5% — rare but life-threatening; neutrophil count <500/µL)",
+                "Hepatotoxicity (rare; cholestatic pattern)",
+                "Vasculitis (ANCA-associated)"
+              ],
+              "monitoring": "CBC before starting; recheck if fever or sore throat develops (agranulocytosis warning); LFTs periodically; TSH/Free T4 every 4-8 weeks",
+              "warnings": "Stop immediately and seek care if fever, sore throat, or mouth ulcers develop (possible agranulocytosis); avoid in first trimester pregnancy"
             },
             {
               "name": "Propylthiouracil (PTU)",
-              "brand_examples": ["PTU"],
+              "brand_examples": [
+                "PTU",
+                "Propycil"
+              ],
               "form": "Tablet",
-              "dosage": "100-300 mg daily in divided doses",
-              "use_case": "Preferred in first trimester of pregnancy and thyroid storm",
-              "side_effects": ["Liver damage warning", "Agranulocytosis", "Skin rash"]
+              "dosage": "100-200 mg every 8 hours (total 300-600 mg/day) for severe disease; reduce to 50-100 mg two-three times daily for maintenance",
+              "use_case": "Preferred in first trimester of pregnancy (safer for fetus than methimazole); thyroid storm (blocks peripheral T4-to-T3 conversion); when methimazole not tolerated",
+              "mechanism": "Inhibits TPO AND blocks peripheral conversion of T4 to more active T3 (additional advantage in thyroid storm)",
+              "side_effects": [
+                "Skin rash",
+                "Agranulocytosis (similar to methimazole)",
+                "Fulminant hepatic necrosis — serious black box warning (0.1-0.2%)",
+                "Vasculitis",
+                "Hypothrombinemia"
+              ],
+              "monitoring": "LFTs baseline and periodically — stop immediately if symptoms of liver damage (jaundice, dark urine, abdominal pain); CBC monitoring",
+              "warnings": "Black box warning for severe liver failure; use only when methimazole cannot be used; do NOT use in second/third trimester due to teratogenicity risk"
             }
           ]
         },
         {
           "category_id": "MED-CAT-22",
-          "category_name": "Beta-Blockers",
-          "purpose": "Relieve symptoms such as rapid heart rate, tremors, and anxiety without affecting thyroid hormone levels",
-          "onset": "Within hours",
-          "duration": "Temporary use until antithyroid treatments take effect",
+          "category_name": "Beta-Adrenergic Blockers — Symptomatic Relief",
+          "purpose": "Block adrenergic (sympathetic) effects of excess thyroid hormones. Relieve palpitations, tachycardia, tremors, anxiety, and heat intolerance WITHOUT affecting thyroid hormone levels.",
+          "onset": "Within hours of first dose",
+          "duration": "Used temporarily alongside antithyroid drugs until thyroid function normalizes; may be discontinued in 2-6 weeks",
           "medicines": [
             {
               "name": "Propranolol",
-              "brand_examples": ["Inderal"],
-              "form": "Tablet, Injection",
-              "dosage": "10-40 mg three to four times daily",
-              "use_case": "Symptom control for tachycardia and tremors",
-              "side_effects": ["Fatigue", "Cold hands", "Shortness of breath in asthma patients"]
+              "brand_examples": [
+                "Inderal",
+                "Ciplar"
+              ],
+              "form": "Tablet, Injection (IV in thyroid storm)",
+              "dosage": "10-40 mg three to four times daily (oral); 0.5-1 mg IV slowly (thyroid storm ICU setting)",
+              "use_case": "Preferred beta-blocker for hyperthyroidism — also blocks peripheral T4-to-T3 conversion at high doses; used in thyroid storm",
+              "side_effects": [
+                "Fatigue",
+                "Cold extremities",
+                "Bradycardia",
+                "Bronchospasm (contraindicated in asthma/COPD)",
+                "Depression",
+                "Worsens heart failure in some patients"
+              ],
+              "contraindications": [
+                "Asthma or COPD (use selective beta-blockers instead)",
+                "Decompensated heart failure",
+                "AV block",
+                "Severe peripheral arterial disease"
+              ]
             },
             {
               "name": "Atenolol",
-              "brand_examples": ["Tenormin"],
+              "brand_examples": [
+                "Tenormin",
+                "Aten"
+              ],
               "form": "Tablet",
               "dosage": "25-100 mg once daily",
-              "use_case": "Once-daily symptom control",
-              "side_effects": ["Dizziness", "Bradycardia"]
+              "use_case": "Cardioselective (beta-1 selective); once-daily dosing improves adherence; preferred if mild respiratory concerns",
+              "side_effects": [
+                "Dizziness",
+                "Bradycardia",
+                "Cold hands and feet"
+              ]
+            },
+            {
+              "name": "Metoprolol Succinate",
+              "brand_examples": [
+                "Betaloc ZOK",
+                "Toprol XL"
+              ],
+              "form": "Tablet (extended release)",
+              "dosage": "25-100 mg once daily",
+              "use_case": "Cardioselective; extended release for once-daily dosing; good option for patients with borderline respiratory disease",
+              "side_effects": [
+                "Fatigue",
+                "Bradycardia",
+                "Dizziness"
+              ]
+            },
+            {
+              "name": "Nadolol",
+              "brand_examples": [
+                "Corgard"
+              ],
+              "form": "Tablet",
+              "dosage": "40-160 mg once daily",
+              "use_case": "Non-selective beta-blocker; long duration of action; used in hyperthyroidism management",
+              "side_effects": [
+                "Bradycardia",
+                "Fatigue",
+                "Bronchospasm (avoid in asthma)"
+              ]
             }
           ]
         },
         {
           "category_id": "MED-CAT-23",
-          "category_name": "Radioactive Iodine Therapy (RAI)",
-          "purpose": "Destroys thyroid cells, shrinking the thyroid gland and stopping overproduction",
-          "note": "Causes permanent hypothyroidism in most patients, requiring lifelong thyroid hormone replacement",
+          "category_name": "Radioactive Iodine Therapy (RAI) — Definitive Treatment",
+          "purpose": "Selectively destroys thyroid cells by emitting beta radiation, permanently reducing thyroid size and hormone production. First-line definitive treatment in USA; used after antithyroid drug stabilization.",
+          "note": "Causes permanent hypothyroidism in 80-90% of patients within 6-12 months, requiring lifelong levothyroxine replacement. Contraindicated in pregnancy, breastfeeding, and moderate-severe Graves' ophthalmopathy.",
           "medicines": [
             {
-              "name": "Sodium Iodide I-131",
-              "brand_examples": ["Hicon"],
-              "form": "Oral Capsule or Liquid",
-              "dosage": "Single dose calculated based on thyroid size",
-              "use_case": "Definitive treatment for Graves' disease and toxic nodules",
-              "side_effects": ["Neck soreness", "Temporary worsening of hyperthyroid symptoms", "Hypothyroidism"]
+              "name": "Sodium Iodide I-131 (Radioiodine)",
+              "brand_examples": [
+                "Hicon",
+                "Iodotope"
+              ],
+              "form": "Oral capsule or liquid solution",
+              "dosage": "Single calculated dose based on thyroid size and RAIU: typically 10-15 mCi for Graves'; 20-30 mCi for toxic multinodular goiter",
+              "use_case": "Definitive treatment for Graves' disease, toxic multinodular goiter, and toxic adenoma; adults who relapse after antithyroid drugs; patients not suitable for surgery",
+              "side_effects": [
+                "Neck soreness or pain (radiation thyroiditis)",
+                "Temporary worsening of hyperthyroid symptoms in first 2 weeks",
+                "Permanent hypothyroidism (expected and managed with levothyroxine)",
+                "Worsening of Graves' ophthalmopathy (pretreat with steroids if eye disease present)"
+              ],
+              "post_treatment": "TSH should be checked at 4-6 weeks, then monthly until stable; start levothyroxine when hypothyroid; lifelong thyroid function monitoring",
+              "contraindications": [
+                "Pregnancy (absolute contraindication)",
+                "Breastfeeding",
+                "Planning pregnancy within 6 months",
+                "Moderate-severe active Graves' ophthalmopathy (relative)",
+                "Suspected thyroid cancer"
+              ]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-24",
+          "category_name": "Iodine Solutions — Acute Pre-Surgical and Thyroid Storm Management",
+          "purpose": "High-dose iodine paradoxically blocks thyroid hormone release (Wolff-Chaikoff effect) and reduces thyroid vascularity. Used to prepare for surgery or in thyroid storm — always given AFTER antithyroid drugs.",
+          "note": "Must be given 1 hour AFTER antithyroid drugs to prevent organification of iodine into new thyroid hormone",
+          "medicines": [
+            {
+              "name": "Lugol's Iodine Solution",
+              "brand_examples": [
+                "Lugol's Solution"
+              ],
+              "form": "Oral solution",
+              "dosage": "3-5 drops (0.1-0.3 mL) three times daily for 10 days pre-operatively; in thyroid storm: 5-10 drops every 8 hours",
+              "use_case": "Pre-operative preparation for thyroidectomy (reduces vascularity and bleeding); thyroid storm treatment (second agent, given 1 hour after PTU/methimazole)",
+              "side_effects": [
+                "Metallic taste",
+                "Burning mouth and throat",
+                "Skin rash",
+                "Iodism (headache, runny nose, salivary gland swelling with prolonged use)"
+              ]
+            },
+            {
+              "name": "Potassium Iodide (SSKI)",
+              "brand_examples": [
+                "Thyrosafe",
+                "ThyroShield"
+              ],
+              "form": "Oral solution",
+              "dosage": "250 mg (5 drops of SSKI) every 6 hours in thyroid storm",
+              "use_case": "Thyroid storm management; pre-operative preparation; radiation emergencies to protect thyroid",
+              "side_effects": [
+                "GI upset",
+                "Metallic taste",
+                "Rash",
+                "Parotid gland swelling"
+              ]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-25",
+          "category_name": "Corticosteroids — Thyroid Storm and Graves' Ophthalmopathy",
+          "purpose": "Reduce inflammation; block peripheral T4-to-T3 conversion (dexamethasone); treat Graves' ophthalmopathy; adjunct in thyroid storm",
+          "medicines": [
+            {
+              "name": "Dexamethasone",
+              "brand_examples": [
+                "Decadron",
+                "Dexona"
+              ],
+              "form": "Tablet, IV Injection",
+              "dosage": "2 mg every 6 hours IV (thyroid storm); 0.5-2 mg daily (Graves' ophthalmopathy adjunct)",
+              "use_case": "Thyroid storm — blocks T4-to-T3 conversion, reduces inflammation, treats possible adrenal insufficiency; Graves' ophthalmopathy",
+              "side_effects": [
+                "Hyperglycemia",
+                "Immunosuppression",
+                "Hypertension",
+                "Fluid retention"
+              ]
+            },
+            {
+              "name": "Methylprednisolone (IV Pulse)",
+              "brand_examples": [
+                "Solu-Medrol"
+              ],
+              "form": "IV Injection",
+              "dosage": "500 mg IV once weekly for 6 weeks, then 250 mg IV once weekly for 6 weeks (European EUGOGO protocol for Graves' ophthalmopathy)",
+              "use_case": "Moderate-severe active Graves' ophthalmopathy (thyroid eye disease/TED)",
+              "side_effects": [
+                "Hyperglycemia",
+                "Hepatotoxicity (rare with IV pulse)",
+                "Fluid retention",
+                "Psychiatric effects"
+              ]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-26",
+          "category_name": "Thyroid Surgery — Thyroidectomy",
+          "purpose": "Definitive surgical treatment. Removes part or all of the thyroid gland. Preferred when RAI is contraindicated, when very large goiter causes compression, or when thyroid cancer coexists.",
+          "note": "Requires pre-operative preparation with antithyroid drugs and beta-blockers to achieve euthyroid state to reduce surgical risk",
+          "medicines": [
+            {
+              "name": "Total Thyroidectomy",
+              "form": "Surgical procedure",
+              "use_case": "Severe Graves' disease; large compressive goiter; coexisting thyroid nodule suspicious for cancer; patient preference; pregnancy when drugs not tolerated in second trimester",
+              "side_effects_risks": [
+                "Hypoparathyroidism (low calcium) — most common complication",
+                "Recurrent laryngeal nerve injury (voice hoarseness/paralysis)",
+                "Post-operative hemorrhage",
+                "Permanent hypothyroidism (requires lifelong levothyroxine)",
+                "Wound infection"
+              ],
+              "pre_op_preparation": "Methimazole or PTU for 6-8 weeks to achieve euthyroid state; beta-blockers; Lugol's iodine 10 days pre-op to reduce vascularity"
+            },
+            {
+              "name": "Subtotal Thyroidectomy",
+              "form": "Surgical procedure",
+              "use_case": "Toxic multinodular goiter; toxic adenoma; preserves small remnant of thyroid tissue",
+              "note": "Higher relapse rate of hyperthyroidism compared to total thyroidectomy; rarely performed now"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-27",
+          "category_name": "Thyroid Hormone Replacement — Post-Treatment Hypothyroidism",
+          "purpose": "After RAI or thyroidectomy, patients typically develop permanent hypothyroidism requiring lifelong thyroid hormone replacement to maintain normal metabolism.",
+          "medicines": [
+            {
+              "name": "Levothyroxine Sodium (L-T4)",
+              "brand_examples": [
+                "Eltroxin",
+                "Thyrox",
+                "Synthroid",
+                "Euthyrox"
+              ],
+              "form": "Tablet",
+              "dosage": "1.6 mcg/kg/day as starting dose; titrate to maintain TSH in normal range (0.5-4.0 mIU/L); dose range typically 50-200 mcg/day",
+              "use_case": "Lifelong thyroid hormone replacement after RAI or thyroidectomy; post-ablative hypothyroidism; treatment of hypothyroidism developing spontaneously",
+              "side_effects": [
+                "None at correct dose; overdose causes iatrogenic hyperthyroidism",
+                "Bone density loss if TSH suppressed long-term",
+                "Cardiac arrhythmias with over-replacement"
+              ],
+              "administration": "Take on empty stomach 30-60 minutes before breakfast; avoid calcium, iron supplements, antacids within 4 hours; consistent timing essential",
+              "monitoring": "TSH every 6-8 weeks after dose change; annually once stable; symptoms of both hypo- and hyperthyroidism"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-28",
+          "category_name": "Bone-Protective Medications",
+          "purpose": "Hyperthyroidism accelerates bone resorption causing osteopenia and osteoporosis. Calcium and Vitamin D supplementation is essential in all hyperthyroid patients.",
+          "medicines": [
+            {
+              "name": "Calcium Carbonate / Calcium Citrate",
+              "brand_examples": [
+                "Calcirol",
+                "Shelcal",
+                "Citracal"
+              ],
+              "form": "Tablet",
+              "dosage": "500-1000 mg daily (calcium carbonate with food; calcium citrate fasting)",
+              "use_case": "Prevent and treat hyperthyroidism-related bone loss; post-thyroidectomy hypoparathyroidism",
+              "side_effects": [
+                "Constipation (carbonate > citrate)",
+                "Kidney stones with excessive use"
+              ]
+            },
+            {
+              "name": "Cholecalciferol (Vitamin D3)",
+              "brand_examples": [
+                "D-Rise",
+                "Calcirol",
+                "Uprise D3"
+              ],
+              "form": "Tablet, Capsule, Sachet, Injection",
+              "dosage": "1000-2000 IU daily (maintenance); 60,000 IU weekly for 8 weeks if deficient (as per Indian guidelines)",
+              "use_case": "Vitamin D supplementation in all hyperthyroid patients with bone density concern; post-hypoparathyroidism",
+              "side_effects": [
+                "Hypercalcemia with excessive doses (rare at recommended doses)"
+              ]
+            },
+            {
+              "name": "Bisphosphonates (e.g., Alendronate)",
+              "brand_examples": [
+                "Fosamax",
+                "Osteofos"
+              ],
+              "form": "Tablet",
+              "dosage": "70 mg once weekly (alendronate)",
+              "use_case": "Established osteoporosis due to chronic hyperthyroidism; T-score < -2.5 on DEXA scan",
+              "side_effects": [
+                "Esophageal irritation",
+                "Osteonecrosis of jaw (rare)",
+                "Atypical femoral fracture (rare with long-term use)"
+              ]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-29",
+          "category_name": "Graves' Ophthalmopathy (TED) — Specific Treatments",
+          "purpose": "Treat autoimmune inflammatory eye disease in Graves' disease. Severity-based treatment from supportive to immunosuppressive to surgical.",
+          "medicines": [
+            {
+              "name": "Teprotumumab",
+              "brand_examples": [
+                "Tepezza"
+              ],
+              "form": "IV Infusion",
+              "dosage": "10 mg/kg IV (first infusion); 20 mg/kg IV (subsequent infusions) every 3 weeks for 8 doses",
+              "use_case": "FDA-approved (2020) for active, moderate-severe Graves' ophthalmopathy. Targets IGF-1R pathway. Reduces proptosis and diplopia.",
+              "mechanism": "Monoclonal antibody inhibiting insulin-like growth factor 1 receptor (IGF-1R) — key driver of orbital inflammation in TED",
+              "side_effects": [
+                "Muscle cramps and spasms",
+                "Nausea",
+                "Hyperglycemia (especially in diabetic patients)",
+                "Hearing loss (rare)",
+                "Inflammatory bowel disease worsening"
+              ]
+            },
+            {
+              "name": "Selenium Supplementation",
+              "brand_examples": [
+                "Selenase",
+                "Selenium ACE"
+              ],
+              "form": "Tablet",
+              "dosage": "200 mcg daily for 6 months",
+              "use_case": "Mild active Graves' ophthalmopathy (EUGOGO European Group recommendation); reduces oxidative stress in orbital tissues",
+              "side_effects": [
+                "Nausea (at high doses)",
+                "Selenosis (garlic breath, hair loss — with chronic excessive intake)"
+              ]
+            },
+            {
+              "name": "Artificial Tears and Lubricating Eye Drops",
+              "brand_examples": [
+                "Refresh Tears",
+                "Systane",
+                "Lacrilube (ointment for nighttime)"
+              ],
+              "form": "Eye drops, Eye ointment",
+              "dosage": "As frequently as needed",
+              "use_case": "Corneal protection in all stages of Graves' eye disease; prevents dryness and corneal damage",
+              "side_effects": [
+                "Minimal; blurred vision temporarily with ointments"
+              ]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-30",
+          "category_name": "Thyroid Storm Emergency Protocol",
+          "purpose": "Combination therapy to rapidly lower thyroid hormone levels and block its effects in life-threatening thyrotoxic crisis. Always managed in ICU.",
+          "note": "Thyroid storm requires simultaneous multi-drug approach: Step 1 - block synthesis (PTU/MMI); Step 2 - block release (Lugol's, 1 hour AFTER step 1); Step 3 - block effects (beta-blocker, steroid); Step 4 - supportive care",
+          "medicines": [
+            {
+              "name": "Full Thyroid Storm Protocol (Summary)",
+              "form": "ICU multi-drug protocol",
+              "dosage": "PTU 200-250 mg every 4h OR methimazole 20-25 mg every 4h → Lugol's iodine 5 drops every 6h (1h after PTU/MMI) → Propranolol 60-80 mg every 4-6h oral or 1-2 mg IV → Dexamethasone 2 mg every 6h → Treat precipitant (infection, surgery) → Supportive ICU care",
+              "use_case": "Life-threatening thyroid storm (Burch-Wartofsky score ≥45)",
+              "monitoring": "Continuous cardiac monitoring; ICU level care; aim to reduce temperature, heart rate, and agitation; reassess every 4-6 hours"
             }
           ]
         }
       ]
     },
-
     "diet_and_nutrition": {
-      "overview": "Diet supports thyroid recovery by managing metabolic demands and reducing hyperthyroid symptoms. Nutritional adjustments help maintain healthy weight and bone density.",
+      "overview": "Diet plays a vital supportive role in managing hyperthyroidism. The primary dietary goal is to limit iodine intake (iodine is raw material for thyroid hormone synthesis), support bone health (threatened by accelerated resorption), manage accelerated metabolism with adequate calories and protein, and reduce cardiovascular stress with anti-inflammatory eating patterns.",
       "recommended_foods": [
         {
           "category": "Low-Iodine Foods",
           "items": [
             {
-              "food": "Non-iodized Salt",
-              "benefit": "Avoids feeding the thyroid with excess iodine which stimulates hormone production",
-              "frequency": "Daily use in cooking"
+              "food": "Non-iodized salt",
+              "benefit": "Avoids dietary iodine that fuels thyroid hormone overproduction; use only non-iodized salt in cooking",
+              "frequency": "Daily — replace all iodized salt"
             },
             {
-              "food": "Fresh Fruits and Vegetables",
-              "benefit": "Naturally low in iodine, high in essential vitamins",
+              "food": "Fresh fruits (non-iodized): Apples, Bananas, Mangoes, Papaya, Pears, Grapes",
+              "benefit": "Naturally low in iodine; high in vitamins, antioxidants, and fibre; support immune function",
+              "frequency": "Daily — 3-4 servings"
+            },
+            {
+              "food": "Fresh vegetables: Broccoli, Cabbage, Cauliflower, Brussels sprouts, Kale, Turnips",
+              "benefit": "Goitrogenic vegetables naturally reduce thyroid hormone synthesis (by inhibiting TPO); low-iodine; high in antioxidants",
+              "frequency": "Several servings per week; cooked reduces goitrogenic effect"
+            },
+            {
+              "food": "Unsalted rice, pasta, oats, and cereals (without iodized salt)",
+              "benefit": "Energy source with low iodine; provides B vitamins for nervous system (stressed by hyperthyroidism)",
               "frequency": "Daily"
             },
             {
-              "food": "Egg Whites",
-              "benefit": "Provides protein without the iodine found in egg yolks",
+              "food": "Egg whites (avoid yolks on strict low-iodine diet)",
+              "benefit": "High-quality protein without iodine from egg yolk; supports muscle preservation",
               "frequency": "Regular"
             }
           ]
         },
         {
-          "category": "Cruciferous Vegetables (Goitrogenic Foods)",
+          "category": "Calcium and Vitamin D Rich Foods (Bone Protection)",
           "items": [
             {
-              "food": "Broccoli, Cabbage, Brussels Sprouts, Cauliflower",
-              "benefit": "Contain goitrogens which naturally reduce thyroid hormone production",
-              "frequency": "Several servings per week"
+              "food": "Fortified plant-based milk (soy, almond, oat) without iodine",
+              "benefit": "Calcium and Vitamin D for bone protection; hyperthyroidism depletes bone calcium via accelerated resorption",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Green leafy vegetables: Spinach, Kale, Bok choy, Collard greens, Methi (fenugreek)",
+              "benefit": "Calcium source (non-dairy); magnesium for muscle function; Vitamin K for bone matrix",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Tofu and edamame (calcium-set tofu)",
+              "benefit": "Calcium-rich plant protein; bone-protective; isoflavones in soy may have mild goitrogenic effect (beneficial in hyperthyroidism)",
+              "frequency": "Regular"
+            },
+            {
+              "food": "Almonds (unsalted)",
+              "benefit": "Calcium, magnesium, and healthy fats; bone and cardiovascular support",
+              "frequency": "Daily — 1 small handful"
+            },
+            {
+              "food": "Sunlight exposure (15-20 minutes daily)",
+              "benefit": "Primary source of Vitamin D; essential for calcium absorption and bone health",
+              "frequency": "Daily if possible"
             }
           ]
         },
         {
-          "category": "Calcium and Vitamin D (Bone Support)",
+          "category": "High-Calorie Nutrient-Dense Foods (Metabolic Support)",
           "items": [
             {
-              "food": "Spinach, Collard Greens, Okra",
-              "benefit": "Hyperthyroidism depletes calcium from bones; green leafy vegetables support bone health",
+              "food": "Whole grains: Brown rice, Quinoa, Oats, Whole wheat bread",
+              "benefit": "Complex carbohydrates provide sustained energy for hypermetabolic state; B vitamins; magnesium",
               "frequency": "Daily"
             },
             {
-              "food": "Fortified Low-Iodine Foods (or supplements)",
-              "benefit": "Aids in calcium absorption to prevent osteoporosis",
+              "food": "Lean proteins: Chicken breast, Turkey, Lentils, Chickpeas, Beans",
+              "benefit": "Muscle catabolism increased in hyperthyroidism; adequate protein intake (1.2-1.5 g/kg/day) prevents muscle loss and supports weight maintenance",
+              "frequency": "Every meal"
+            },
+            {
+              "food": "Healthy fats: Avocado, Olive oil, Nuts, Flaxseeds, Chia seeds",
+              "benefit": "Calorie-dense; anti-inflammatory omega-3 fatty acids; support hormone regulation and cardiovascular health",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Starchy vegetables: Sweet potato, Potatoes, Corn, Peas",
+              "benefit": "Additional complex carbohydrate calories; potassium (important for heart rhythm in tachycardia); Vitamin A",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Antioxidant and Anti-inflammatory Foods",
+          "items": [
+            {
+              "food": "Berries: Blueberries, Strawberries, Raspberries, Blackberries",
+              "benefit": "High antioxidant content (flavonoids, polyphenols); reduce oxidative stress generated by hypermetabolism; anti-inflammatory",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Turmeric with black pepper",
+              "benefit": "Curcumin reduces inflammatory cytokines (IL-6, TNF-α); may modulate autoimmune response in Graves' disease",
+              "frequency": "Daily in cooking or golden milk"
+            },
+            {
+              "food": "Ginger",
+              "benefit": "Anti-inflammatory, antioxidant; reduces nausea (common GI symptom); may help with anxiety",
+              "frequency": "Daily in tea or cooking"
+            },
+            {
+              "food": "Green tea (lightly brewed)",
+              "benefit": "EGCG catechins — antioxidant and anti-inflammatory; low caffeine when brewed lightly; contains fluoride which may mildly inhibit thyroid",
+              "frequency": "1 cup daily (avoid high intake — caffeine worsens palpitations)"
+            }
+          ]
+        },
+        {
+          "category": "Selenium-Rich Foods (Thyroid and Eye Disease Support)",
+          "items": [
+            {
+              "food": "Brazil nuts (1-2 per day only)",
+              "benefit": "Richest dietary source of selenium; selenium is essential for thyroid hormone metabolism and antioxidant defense (selenoproteins); clinical evidence supports 200 mcg selenium daily reduces mild Graves' ophthalmopathy",
+              "frequency": "1-2 Brazil nuts daily (1 nut ≈ 70-90 mcg selenium; do not exceed 400 mcg/day)"
+            },
+            {
+              "food": "Sunflower seeds, Mushrooms",
+              "benefit": "Selenium and antioxidants; support thyroid antioxidant enzymes (glutathione peroxidase, thioredoxin reductase)",
+              "frequency": "Regular"
+            }
+          ]
+        },
+        {
+          "category": "Magnesium-Rich Foods (Cardiovascular and Muscle Support)",
+          "items": [
+            {
+              "food": "Dark leafy greens, Pumpkin seeds, Flaxseeds, Lentils",
+              "benefit": "Magnesium helps regulate heart rhythm (reduces palpitations and tachycardia risk); important in hypermetabolic state; magnesium depleted rapidly in hyperthyroidism",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Oats, quinoa, brown rice",
+              "benefit": "Magnesium and potassium; cardiovascular support; nerve and muscle function",
               "frequency": "Daily"
             }
           ]
         }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Iodine-rich foods",
+          "reason": "Iodine is the primary raw material for thyroid hormone synthesis. Excess iodine directly worsens hyperthyroidism and can trigger thyroid storm (Jod-Basedow effect in some patients).",
+          "examples": [
+            "Seaweed and kelp (exceptionally high iodine)",
+            "Seafood: shrimp, crab, lobster, oysters, saltwater fish",
+            "Iodized table salt",
+            "Sea salt",
+            "Cod liver oil",
+            "Dairy products (contain iodine from feed and udder wash)",
+            "Egg yolks",
+            "Iodine-containing supplements and multivitamins"
+          ]
+        },
+        {
+          "food": "Caffeine",
+          "reason": "Caffeine stimulates the sympathetic nervous system, directly worsening the already-elevated heart rate, palpitations, tremors, anxiety, and insomnia caused by hyperthyroidism. Completely avoid during active hyperthyroidism.",
+          "examples": [
+            "Coffee (all types)",
+            "Strong black tea",
+            "Energy drinks",
+            "Cola beverages",
+            "Dark chocolate (limit)",
+            "Caffeine-containing supplements"
+          ]
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Alcohol exacerbates tachycardia, liver stress (especially important as antithyroid drugs can affect liver), dehydration, and cardiovascular complications of hyperthyroidism. Avoid completely during active disease.",
+          "examples": [
+            "Beer",
+            "Wine",
+            "Spirits",
+            "Mixed drinks",
+            "Fermented beverages"
+          ]
+        },
+        {
+          "food": "Gluten (in Graves' disease patients)",
+          "reason": "Growing evidence links gluten sensitivity/celiac disease with Graves' disease due to shared autoimmune pathways. A gluten-free diet may reduce autoimmune activation in TRAb-positive patients. Discuss with endocrinologist.",
+          "examples": [
+            "Wheat bread and pasta",
+            "Rye and barley products",
+            "Standard breakfast cereals",
+            "Most packaged baked goods"
+          ]
+        },
+        {
+          "food": "Soy products (in patients on levothyroxine post-treatment)",
+          "reason": "Soy isoflavones may interfere with thyroid hormone absorption from levothyroxine. Avoid soy 4 hours before or after taking levothyroxine. Also has mild goitrogenic effect (this may be beneficial during active hyperthyroidism).",
+          "examples": [
+            "Soy milk",
+            "Tofu (in patients on levothyroxine)",
+            "Edamame",
+            "Soy sauce",
+            "Soy-based protein powders"
+          ]
+        },
+        {
+          "food": "Spicy and very hot foods",
+          "reason": "Spicy foods increase body heat and sweating, worsening the heat intolerance and hyperhidrosis characteristic of hyperthyroidism. Contribute to discomfort during active disease.",
+          "examples": [
+            "Red chili peppers",
+            "Very spicy curries",
+            "Hot sauces"
+          ]
+        },
+        {
+          "food": "Refined sugars and ultra-processed foods",
+          "reason": "Promote systemic inflammation; displace nutrient-dense food needed to support the hypermetabolic state; can worsen anxiety and mood instability.",
+          "examples": [
+            "Soft drinks and sodas",
+            "Candy and sweets",
+            "Packaged cookies and cakes",
+            "Instant noodles",
+            "Fast food",
+            "Chips and crisps"
+          ]
+        },
+        {
+          "food": "Excess high-iodine dairy",
+          "reason": "Conventional dairy products (milk, cheese, butter) contain significant iodine due to use of iodine-based teat disinfectants and iodine-supplemented animal feed. Limit on low-iodine diet.",
+          "examples": [
+            "Full-fat milk",
+            "Cheese (especially processed cheese)",
+            "Butter",
+            "Ice cream",
+            "Yogurt (on strict low-iodine protocol only)"
+          ]
+        },
+        {
+          "food": "Iodine-containing supplements and medications",
+          "reason": "Many multivitamins, cough syrups, antiseptics, and amiodarone contain high iodine that worsens hyperthyroidism.",
+          "examples": [
+            "Iodine-containing multivitamins",
+            "Kelp or seaweed supplements",
+            "Amiodarone (consult cardiologist)",
+            "Betadine (povidone-iodine) topical — avoid systemic absorption",
+            "Radiocontrast dyes (inform radiologist)"
+          ]
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This low-iodine, high-calorie, bone-protective meal plan is a general guideline. Individual nutritional needs may vary based on severity of hyperthyroidism, weight, and treatment phase. Consult a registered dietitian and endocrinologist.",
+        "early_morning": "Warm water with lemon and 1/4 tsp turmeric + 4-5 soaked almonds (unsalted) + 1-2 Brazil nuts (selenium)",
+        "breakfast": "Oatmeal with blueberries, chia seeds, and almond milk (fortified, non-iodized) OR Vegetable upma with non-iodized salt + 1 cup lightly brewed green tea",
+        "mid_morning": "1 banana or papaya OR smoothie with spinach, banana, and almond milk",
+        "lunch": "Brown rice or quinoa + lentil dal (non-iodized salt) + stir-fried broccoli with garlic and olive oil + tofu cubes OR grilled chicken breast",
+        "evening_snack": "Unsalted pumpkin seeds + fresh fruit (apple, pear, grapes) OR handful of walnuts with fresh cucumber",
+        "dinner": "Grilled or baked salmon (small portion — controlled iodine) OR paneer with vegetables + whole wheat chapati (non-iodized salt) + mixed vegetable curry with cauliflower/cabbage",
+        "before_bed": "Warm calcium-fortified plant milk OR chamomile herbal tea"
+      },
+      "special_dietary_notes": [
+        "Follow a low-iodine diet, particularly when preparing for radioactive iodine (RAI) therapy — strict low-iodine diet (LID) required for 1-2 weeks before RAI to enhance radioiodine uptake",
+        "Increase caloric intake by 10-15% above normal requirements to compensate for hypermetabolic state and prevent weight loss",
+        "Eat small, frequent meals (5-6 per day) to maintain blood sugar, manage GI symptoms, and prevent nausea",
+        "Ensure calcium intake of 1000-1200 mg/day and Vitamin D 1500-2000 IU/day throughout treatment to protect bone density",
+        "Keep a food diary to identify personal dietary triggers (especially if histamine or food sensitivities suspected)",
+        "Adequate protein intake (1.2-1.5 g/kg body weight daily) to prevent hyperthyroid-related muscle wasting",
+        "On levothyroxine replacement post-treatment: take medication 30-60 minutes before breakfast; avoid calcium, iron, soy within 4 hours of dose",
+        "Once euthyroid (thyroid function normal after treatment): gradually transition to a balanced healthy diet; iodine restriction less critical"
+      ]
+    },
+    "lifestyle_management": {
+      "trigger_avoidance": [
+        "Avoid iodine-containing supplements, kelp tablets, and iodine-rich foods (seaweed, iodized salt) throughout treatment",
+        "Stop smoking — smoking significantly worsens Graves' ophthalmopathy and increases the risk of Graves' disease relapse",
+        "Avoid stress wherever possible — psychological stress can trigger Graves' disease onset and relapse; stress directly activates the hypothalamic-pituitary-thyroid axis",
+        "Inform all physicians about hyperthyroidism before any imaging with contrast dye (iodinated contrast can trigger thyroid storm)",
+        "Avoid amiodarone if alternative cardiac drugs exist — amiodarone contains 37% iodine and can precipitate or worsen hyperthyroidism",
+        "Avoid high-dose vitamin supplements containing iodine during treatment",
+        "Protect eyes if Graves' ophthalmopathy is present — wear UV-protective sunglasses outdoors; use lubricating eye drops regularly; avoid dry environments",
+        "Avoid extreme heat exposure (saunas, hot baths, very hot weather) — worsens heat intolerance, tachycardia, and dehydration",
+        "Monitor caffeine and stimulant intake — caffeine worsens palpitations and anxiety",
+        "Maintain good sleep hygiene — hyperthyroidism causes insomnia; prioritize 7-9 hours of sleep per night"
+      ],
+      "physical_activity": {
+        "recommended": [
+          "Light walking (30 minutes daily at comfortable pace once heart rate is controlled with beta-blockers)",
+          "Gentle yoga and stretching — low impact; supports stress management and flexibility",
+          "Tai chi and qigong — slow, controlled movements; excellent for stress reduction and balance",
+          "Swimming (moderate pace) — once thyroid function is improving with treatment",
+          "Light cycling on stationary bicycle",
+          "Gentle resistance/strength training with light weights — helps preserve muscle mass lost from hyperthyroid catabolism"
+        ],
+        "avoid_during_active_untreated_hyperthyroidism": [
+          "High-intensity interval training (HIIT)",
+          "Heavy weight lifting or competitive sports",
+          "Marathon running or long-distance endurance events",
+          "Contact sports or physically demanding exercise",
+          "Exercise in hot or humid environments"
+        ],
+        "precautions": [
+          "Always check heart rate before exercising — avoid exercise if resting heart rate >100 bpm until controlled",
+          "Monitor for palpitations, chest pain, or severe breathlessness during activity — stop and rest immediately",
+          "Carry water and rehydrate frequently — sweating and heat intolerance increase dehydration risk",
+          "Wear heart rate monitor to avoid overexertion",
+          "Resume normal activity only after TSH and heart rate are within normal range under treatment",
+          "Consult endocrinologist and cardiologist before starting exercise program if atrial fibrillation diagnosed"
+        ],
+        "note": "Exercise is beneficial for bone density, cardiovascular health, and mood — but must be appropriately modified based on disease severity and cardiac status. Resume normal exercise gradually as hyperthyroidism comes under control."
+      },
+      "eye_care": {
+        "description": "Graves' ophthalmopathy (Thyroid Eye Disease/TED) requires specific lifestyle adaptations to protect the eyes and prevent vision loss.",
+        "measures": [
+          "Wear high-quality UV-protective sunglasses outdoors — especially important with proptosis",
+          "Use preservative-free lubricating eye drops frequently (every 2-4 hours) to prevent corneal drying",
+          "Use lubricating eye ointment at night; tape eyelids closed gently if incomplete closure (lagophthalmos)",
+          "Elevate head of bed 15-30 degrees at night to reduce periorbital edema",
+          "Apply cool compresses to eyes for swelling and discomfort",
+          "Avoid smoke and dusty environments — eye irritation worsened in TED",
+          "STOP smoking immediately — smoking is the single most important modifiable risk factor for TED severity and progression",
+          "Attend regular ophthalmology follow-up — visual acuity, corneal health, and eye pressure monitoring",
+          "Avoid RAI therapy if moderate-severe active Graves' ophthalmopathy present (can worsen TED); discuss with doctor"
+        ]
+      },
+      "bone_health": {
+        "description": "Chronic hyperthyroidism causes accelerated bone resorption leading to osteopenia and osteoporosis — especially in postmenopausal women and elderly.",
+        "measures": [
+          "Ensure calcium intake 1000-1200 mg/day through diet and supplements",
+          "Ensure Vitamin D levels >30 ng/mL (supplement 1000-2000 IU/day)",
+          "Weight-bearing exercise (walking, gentle resistance training) stimulates bone formation",
+          "DEXA bone density scan at diagnosis, then annually if abnormal",
+          "Avoid smoking and alcohol — both independently reduce bone density",
+          "Bisphosphonates if DEXA confirms osteoporosis (T-score < -2.5) — under physician supervision",
+          "Maintain adequate protein and magnesium intake"
+        ]
+      },
+      "mental_health": [
+        "Seek professional mental health support — anxiety and depression are common in hyperthyroidism and worsen symptoms",
+        "Practice mindfulness meditation — reduces stress-induced symptom flares; 10-20 minutes daily",
+        "Progressive muscle relaxation — helps counter the muscle tension and tremors from hyperthyroidism",
+        "Cognitive Behavioral Therapy (CBT) — effective for anxiety associated with palpitations and breathlessness",
+        "Join thyroid patient support groups (e.g., Thyroid UK, American Thyroid Association patient resources) for emotional support",
+        "Communicate with family and employers about condition — explain fatigue, mood changes, and need for schedule adjustments",
+        "Limit screen time before bed — exacerbates insomnia already worsened by hyperthyroidism",
+        "Practice sleep hygiene — consistent bedtime, cool dark room, avoid caffeine after noon"
+      ]
+    },
+    "thyroid_monitoring_plan": {
+      "note": "Unlike asthma which has peak flow zones, hyperthyroidism is monitored through laboratory values (TSH, Free T4, Free T3), symptom assessment, and heart rate. This plan helps patients and caregivers understand when to take action.",
+      "green_zone": {
+        "status": "Well Controlled / Euthyroid",
+        "lab_values": "TSH: 0.4-4.0 mIU/L; Free T4: 0.8-1.8 ng/dL; Free T3: 2.3-4.1 pg/mL",
+        "heart_rate": "Resting heart rate 60-100 bpm",
+        "symptoms": "No or minimal symptoms; sleeping well; maintaining weight; no palpitations at rest",
+        "action": "Continue prescribed medications at current dose. Regular follow-up every 3-6 months. Maintain healthy lifestyle and low-iodine diet."
+      },
+      "yellow_zone": {
+        "status": "Borderline / Worsening",
+        "lab_values": "TSH < 0.4 mIU/L or >4.0 mIU/L; Free T4 elevated or suppressed",
+        "heart_rate": "Resting heart rate consistently 100-120 bpm",
+        "symptoms": "Returning palpitations, increased tremors, new weight changes, worsening anxiety, heat intolerance, or insomnia",
+        "action": "Contact endocrinologist within 1-2 days. Do not self-adjust medications. Review for possible iodine exposure. Blood tests (TSH, Free T4) required urgently. Dose adjustment may be needed."
+      },
+      "red_zone": {
+        "status": "MEDICAL EMERGENCY — Thyroid Storm Suspected",
+        "lab_values": "Markedly elevated Free T3/T4; Burch-Wartofsky score ≥45",
+        "heart_rate": "Heart rate >140 bpm or new irregular heartbeat (atrial fibrillation)",
+        "symptoms": "High fever >38.5°C, extreme tachycardia, agitation, confusion, delirium, vomiting, jaundice, or collapse",
+        "action": "CALL EMERGENCY SERVICES IMMEDIATELY (102 / 112 in India; 911 in USA). Go to nearest hospital emergency room. DO NOT drive yourself. This is a life-threatening medical emergency requiring ICU admission."
+      }
+    },
+    "complications": [
+      {
+        "complication": "Thyroid Storm (Thyrotoxic Crisis)",
+        "description": "Life-threatening exacerbation of hyperthyroidism characterized by high fever (>38.5°C), extreme tachycardia (>140 bpm), agitation, delirium, heart failure, and coma. Often precipitated by surgery, infection, trauma, or contrast dye exposure in uncontrolled hyperthyroidism. Mortality 10-30% even with treatment.",
+        "severity": "Critical — life-threatening",
+        "prevention": "Achieve euthyroid state before surgery; avoid iodinated contrast in uncontrolled hyperthyroidism; prompt treatment of infections"
+      },
+      {
+        "complication": "Atrial Fibrillation",
+        "description": "Irregular rapid heartbeat affecting 10-15% of hyperthyroid patients (up to 25-40% in elderly). Thyroid hormones directly sensitize the heart to catecholamines. Associated with high risk of stroke (thromboembolism) — anticoagulation required.",
+        "severity": "Severe",
+        "note": "Cardioversion or rate control with beta-blockers; anticoagulation to prevent stroke"
+      },
+      {
+        "complication": "Heart Failure (High-Output Cardiac Failure)",
+        "description": "Hyperthyroidism causes high-output heart failure by increasing cardiac output beyond the heart's capacity. Presents with breathlessness, peripheral edema, and reduced exercise tolerance.",
+        "severity": "Severe",
+        "note": "Resolves with treatment of hyperthyroidism; may require temporary heart failure management"
+      },
+      {
+        "complication": "Osteoporosis and Fractures",
+        "description": "Chronic hyperthyroidism increases bone resorption via direct effects of thyroid hormones on osteoclasts. Bone mineral density decreases, particularly at the hip and spine, increasing fracture risk in postmenopausal women and elderly.",
+        "severity": "Moderate to severe — long-term",
+        "note": "Calcium, Vitamin D, bisphosphonates; DEXA monitoring; exercise"
+      },
+      {
+        "complication": "Graves' Ophthalmopathy (Thyroid Eye Disease)",
+        "description": "Autoimmune inflammatory disease of the orbit occurring in ~25-50% of Graves' disease patients. Ranges from mild lid retraction and dry eyes to severe proptosis, corneal ulceration, compressive optic neuropathy, and permanent vision loss.",
+        "severity": "Mild to sight-threatening",
+        "note": "Stop smoking; selenium supplementation for mild disease; IV methylprednisolone for moderate-severe; teprotumumab (Tepezza) for active disease; orbital decompression surgery if vision threatened"
+      },
+      {
+        "complication": "Hyperthyroid Periodic Paralysis",
+        "description": "Sudden attacks of profound muscle weakness or paralysis, usually in lower limbs. Caused by hyperthyroid-induced hypokalemia (potassium shifts into cells). Predominantly in Asian men with Graves' disease.",
+        "severity": "Moderate to severe (life-threatening if affects respiratory muscles)",
+        "note": "IV potassium replacement; beta-blockers; treat hyperthyroidism urgently"
+      },
+      {
+        "complication": "Infertility and Reproductive Complications",
+        "description": "Hyperthyroidism causes menstrual irregularities (oligomenorrhea, amenorrhea), anovulation, and reduced fertility. In pregnancy, untreated hyperthyroidism causes miscarriage, preeclampsia, preterm birth, fetal growth restriction, and neonatal thyrotoxicosis.",
+        "severity": "Moderate to severe"
+      },
+      {
+        "complication": "Hypothyroidism (Post-Treatment)",
+        "description": "Iatrogenic hypothyroidism is the most common outcome after radioactive iodine therapy (~80-90%) or total thyroidectomy. Also occurs with overly aggressive antithyroid drug therapy. Requires lifelong levothyroxine replacement.",
+        "severity": "Manageable — expected and treated with levothyroxine",
+        "note": "Annual TSH monitoring; dose adjustment as needed"
+      },
+      {
+        "complication": "Psychiatric and Cognitive Complications",
+        "description": "Chronic hyperthyroidism causes anxiety disorders, panic attacks, mood instability, emotional lability, cognitive difficulties, and in severe cases psychosis (thyroid madness). Usually resolves with treatment of hyperthyroidism.",
+        "severity": "Moderate",
+        "note": "Temporary anti-anxiety medications may help; psychiatric referral if severe"
+      },
+      {
+        "complication": "Muscle Wasting (Thyrotoxic Myopathy)",
+        "description": "Progressive weakness of proximal muscles (thighs, shoulders, upper arms) from hypermetabolism-induced protein catabolism. Difficulty climbing stairs, rising from a chair, lifting arms above head.",
+        "severity": "Mild to moderate",
+        "note": "Resolves with thyroid function control; physical therapy for rehabilitation"
+      }
+    ],
+    "special_populations": {
+      "hyperthyroidism_in_pregnancy": {
+        "key_points": [
+          "Overt hyperthyroidism in pregnancy requires treatment — untreated disease causes more harm than medications",
+          "Propylthiouracil (PTU) is preferred in the first trimester (methimazole associated with rare aplasia cutis and choanal atresia in fetus)",
+          "Methimazole is preferred from second trimester onwards (PTU carries liver toxicity risk)",
+          "Use lowest effective dose of antithyroid drugs — aim to keep Free T4 at upper limit of normal (to avoid fetal hypothyroidism)",
+          "Radioactive iodine is ABSOLUTELY CONTRAINDICATED in pregnancy (damages fetal thyroid)",
+          "TRAb (TSH receptor antibodies) cross the placenta — monitor fetus for tachycardia and neonatal Graves' disease",
+          "Gestational transient thyrotoxicosis (hCG-mediated, first trimester) usually self-limiting — supportive care only",
+          "Beta-blockers (propranolol) used cautiously in pregnancy for symptom control — associated with fetal growth restriction with prolonged use",
+          "Monitor fetal heart rate and growth at each antenatal visit",
+          "All postpartum women with prior thyroid disease should be screened for postpartum thyroiditis at 6-12 weeks postpartum"
+        ]
+      },
+      "hyperthyroidism_in_children": {
+        "key_points": [
+          "Graves' disease accounts for >95% of childhood hyperthyroidism",
+          "Antithyroid drugs (methimazole) are first-line for children — used for 2-4 years before considering definitive therapy",
+          "Radioactive iodine use in children is controversial — may be used in adolescents after careful consideration",
+          "Surgical thyroidectomy performed in specialized centers with pediatric surgeons for children not responding to drugs",
+          "Growth monitoring essential — hyperthyroidism causes advanced bone age and early growth plate closure",
+          "School performance must be monitored — hyperthyroidism causes significant behavioral and cognitive disruption",
+          "Psychological support for child and family — chronic disease management is stressful",
+          "Neonatal Graves' disease: infants born to mothers with high TRAb may develop transient neonatal hyperthyroidism — requires neonatal endocrinology follow-up"
+        ]
+      },
+      "hyperthyroidism_in_elderly": {
+        "key_points": [
+          "Presents atypically as 'apathetic hyperthyroidism' — absent or blunted classic symptoms (no heat intolerance, no anxiety, no hyperactivity); instead presents with lethargy, depression, cognitive decline, weight loss, and new atrial fibrillation",
+          "Cardiac complications more prominent — atrial fibrillation (25-40% of elderly hyperthyroid patients), heart failure, angina",
+          "Higher stroke risk from atrial fibrillation — anticoagulation (warfarin or NOAC) required",
+          "Radioactive iodine preferred definitive treatment in elderly — surgery higher risk; antithyroid drugs used as bridge",
+          "Lower doses of antithyroid drugs due to reduced renal clearance",
+          "Bone loss is more severe and fracture risk higher in elderly — DEXA scan mandatory",
+          "Drug interactions more common — polypharmacy; beta-blockers carefully titrated to avoid bradycardia and falls",
+          "Annual TSH monitoring essential — subclinical hyperthyroidism in elderly still increases AF and bone fracture risk"
+        ]
+      },
+      "hyperthyroidism_in_men": {
+        "key_points": [
+          "Less common in men (1:5-10 female-to-male ratio) but often more severe when it occurs",
+          "Hypokalemic periodic paralysis more common in Asian men with Graves' disease",
+          "Erectile dysfunction and reduced libido common — usually resolves with treatment",
+          "Gynecomastia (breast enlargement) may occur due to hormonal imbalance",
+          "Men often diagnosed later due to atypical or attributed-to-anxiety presentations",
+          "Muscle wasting and exercise intolerance common complaints"
+        ]
+      }
+    },
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza (Flu) Vaccine",
+        "frequency": "Annually (every year before flu season)",
+        "reason": "Viral infections can precipitate thyroid storm or worsen hyperthyroidism; patients on immunosuppressive antithyroid drugs may have reduced immunity; annual flu vaccine strongly recommended"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV13 / PCV20 / PPSV23)",
+        "frequency": "Single dose; booster at age 65 if given earlier",
+        "reason": "Pneumococcal infections are a major precipitant of thyroid storm; bacterial pneumonia can trigger severe thyroid crisis in hyperthyroid patients"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "frequency": "As per current national guidelines (annual updated booster)",
+        "reason": "COVID-19 and its treatments (checkpoint inhibitors) can trigger or worsen thyroiditis; severe COVID-19 illness can precipitate thyroid storm"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "frequency": "3-dose series if not previously vaccinated",
+        "reason": "Graves' disease is associated with increased susceptibility to certain infections; hepatitis B vaccination recommended for all adults per general immunization guidelines"
+      },
+      {
+        "vaccine": "Varicella (Chickenpox) Vaccine",
+        "frequency": "2-dose series if not immune",
+        "reason": "Viral illnesses including chickenpox can trigger thyroid storm; important if patient is on immunosuppressive antithyroid drugs"
+      },
+      {
+        "vaccine": "Tetanus-Diphtheria-Pertussis (Tdap/Td)",
+        "frequency": "Booster every 10 years",
+        "reason": "General adult immunization; pertussis (whooping cough) can complicate respiratory status and trigger thyroid events"
+      }
+    ],
+    "when_to_see_doctor": [
+      "Any new or worsening palpitations, irregular heartbeat, or resting heart rate consistently above 100 bpm",
+      "Unexplained weight loss of more than 2-3 kg over 1-2 months despite normal or increased appetite",
+      "Noticeable neck swelling (goiter) or any new lump in the neck",
+      "Eye changes: bulging, redness, double vision, pain, or any vision changes (possible Graves' ophthalmopathy)",
+      "Persistent tremors, anxiety, or insomnia that is worsening despite treatment",
+      "Symptoms worsening despite taking antithyroid medications as prescribed",
+      "Any fever with sore throat or mouth ulcers while on antithyroid drugs (possible agranulocytosis — medical emergency)",
+      "Nausea, jaundice, dark urine, or right upper abdominal pain while on PTU (liver toxicity warning)",
+      "Planning pregnancy or if pregnant and on antithyroid medications",
+      "Annual follow-up after completing antithyroid drug course to check for relapse",
+      "Any time TSH result is outside normal range on home monitoring",
+      "If on levothyroxine post-treatment: symptoms of under-replacement (fatigue, cold intolerance) or over-replacement (palpitations, weight loss)"
+    ],
+    "emergency_signs": [
+      "Extremely rapid or irregular heartbeat (>140 bpm or new onset atrial fibrillation)",
+      "High fever above 38.5°C (101.3°F) — especially in a hyperthyroid patient not actively infected",
+      "Severe agitation, confusion, delirium, or hallucinations",
+      "Sudden severe shortness of breath or chest pain",
+      "Sudden extreme weakness or collapse",
+      "Profuse sweating with inability to regulate body temperature",
+      "Nausea, vomiting, diarrhea, and abdominal pain in a hyperthyroid patient (thyroid storm trigger)",
+      "Jaundice (yellow skin or eyes) while on antithyroid medication — liver toxicity emergency",
+      "Loss of vision or sudden eye pain (optic nerve compression in Graves' eye disease)",
+      "Fever and sore throat on antithyroid drugs — possible agranulocytosis (life-threatening low white cells)"
+    ],
+    "frequently_asked_questions": [
+      {
+        "question": "What is hyperthyroidism and how is it different from hypothyroidism?",
+        "answer": "Hyperthyroidism (overactive thyroid) means the thyroid gland produces too much thyroid hormone, speeding up body functions — causing weight loss, rapid heart rate, heat intolerance, and anxiety. Hypothyroidism (underactive thyroid) is the opposite — too little hormone, causing weight gain, fatigue, cold intolerance, and depression. Both require different treatments."
+      },
+      {
+        "question": "Is hyperthyroidism curable?",
+        "answer": "Yes. Hyperthyroidism can be permanently cured with radioactive iodine therapy or thyroidectomy (surgery). These treatments eliminate the overactive thyroid tissue. However, they typically cause permanent hypothyroidism, requiring lifelong levothyroxine replacement. Antithyroid drugs achieve remission in approximately 40-50% of Graves' disease patients after 12-18 months."
+      },
+      {
+        "question": "What is Graves' disease and why does it cause eye problems?",
+        "answer": "Graves' disease is an autoimmune condition where the immune system produces antibodies (TRAb/TSI) that stimulate the thyroid and orbital tissues. The same autoimmune process attacks the tissues behind the eyes, causing inflammation, swelling, and pushing the eyeballs forward (proptosis). About 25-50% of Graves' patients develop thyroid eye disease. Smoking significantly worsens eye disease."
+      },
+      {
+        "question": "What is a thyroid storm and how dangerous is it?",
+        "answer": "Thyroid storm (thyrotoxic crisis) is a life-threatening medical emergency where thyroid hormone levels become dangerously high, causing extreme tachycardia (>140 bpm), high fever, confusion, delirium, and multi-organ failure. Even with ICU treatment, mortality is 10-30%. It is usually triggered by surgery, serious infection, iodine exposure, or contrast dye in an uncontrolled hyperthyroid patient."
+      },
+      {
+        "question": "How is hyperthyroidism treated?",
+        "answer": "Three main treatment options: (1) Antithyroid drugs (methimazole, PTU) — taken daily to block thyroid hormone production; safest for short-term and pregnancy; (2) Radioactive iodine (I-131) — a single oral dose that permanently destroys overactive thyroid tissue; standard definitive treatment in the USA; causes hypothyroidism requiring levothyroxine; (3) Thyroidectomy (surgery) — removes the thyroid gland; preferred when drugs fail, goiter is large, or cancer suspected."
+      },
+      {
+        "question": "Are antithyroid drugs safe?",
+        "answer": "Yes, antithyroid drugs (methimazole and PTU) are safe when used as prescribed under medical supervision. The rare but serious risk is agranulocytosis (dangerous drop in white blood cells, <0.5% risk). Patients must stop medication immediately and seek emergency care if they develop fever or sore throat. PTU carries a small risk of severe liver damage — report any jaundice or abdominal pain immediately."
+      },
+      {
+        "question": "Can hyperthyroidism affect my heart?",
+        "answer": "Yes. Thyroid hormones directly increase heart rate and sensitize the heart to adrenaline. This causes persistent resting tachycardia, palpitations, and in 10-15% of cases (higher in elderly), atrial fibrillation — an irregular heart rhythm that significantly increases stroke risk. Severe or prolonged hyperthyroidism can cause high-output heart failure. These cardiovascular complications are reversible with treatment of hyperthyroidism."
+      },
+      {
+        "question": "Is radioactive iodine safe?",
+        "answer": "Yes. Radioactive iodine (I-131) has been safely used for over 75 years. The radiation targets only thyroid tissue and does not meaningfully affect other organs. It does not increase cancer risk in adults. Patients need to observe some radiation safety precautions for a few days after treatment. It is absolutely contraindicated in pregnancy and breastfeeding."
+      },
+      {
+        "question": "Can hyperthyroidism affect my bones?",
+        "answer": "Yes. Excess thyroid hormones accelerate bone resorption, causing decreased bone density (osteopenia/osteoporosis) over time, especially in postmenopausal women and elderly. Regular DEXA scans, adequate calcium (1000-1200 mg/day) and Vitamin D intake, weight-bearing exercise, and avoiding smoking are essential bone-protective strategies."
+      },
+      {
+        "question": "Can I get pregnant with hyperthyroidism?",
+        "answer": "Yes, but hyperthyroidism requires careful management during pregnancy. Untreated hyperthyroidism causes miscarriage, preterm birth, preeclampsia, and fetal thyroid problems. PTU is the preferred antithyroid drug in the first trimester. Radioactive iodine is completely contraindicated. Work closely with your endocrinologist and obstetrician from preconception onwards."
+      },
+      {
+        "question": "What foods should I avoid with hyperthyroidism?",
+        "answer": "Avoid: (1) Iodine-rich foods — seaweed, kelp, seafood, iodized salt (iodine fuels hormone overproduction); (2) Caffeine — worsens palpitations, anxiety, and insomnia; (3) Alcohol — worsens cardiovascular symptoms and liver stress from medications; (4) Spicy foods — worsens heat intolerance; (5) Soy in patients on levothyroxine — interferes with absorption."
+      },
+      {
+        "question": "What lifestyle changes help manage hyperthyroidism?",
+        "answer": "Key lifestyle measures: (1) Stop smoking — most critical for Graves' ophthalmopathy; (2) Avoid iodine-rich foods; (3) Reduce caffeine; (4) Manage stress (yoga, meditation, CBT); (5) Follow a bone-protective diet (calcium, Vitamin D); (6) Avoid intense exercise during active disease; (7) Wear UV sunglasses for eye protection; (8) Get regular thyroid blood tests; (9) Inform all doctors about your condition and medications."
+      },
+      {
+        "question": "Does hyperthyroidism cause weight loss even with eating more?",
+        "answer": "Yes. This is one of the hallmark signs of hyperthyroidism. Excess thyroid hormones dramatically accelerate the basal metabolic rate (the body's engine), burning far more calories than normal. Despite increased appetite and eating more, the body loses weight — fat stores and eventually muscle tissue are used for fuel. Weight typically normalizes once thyroid function is controlled with treatment."
+      },
+      {
+        "question": "Can hyperthyroidism cause anxiety and mood problems?",
+        "answer": "Yes. Excess thyroid hormones amplify the sympathetic (fight-or-flight) nervous system, causing anxiety, nervousness, irritability, emotional lability, racing thoughts, panic attacks, and difficulty concentrating. These are direct biochemical effects of thyroid hormone on the brain. These psychiatric symptoms typically resolve once thyroid function is normalized. If severe, temporary anti-anxiety medication and CBT can help."
+      }
+    ],
+    "references": [
+      "American Thyroid Association (ATA) Guidelines for Diagnosis and Management of Hyperthyroidism 2016 (Ross et al., Thyroid, 2016)",
+      "European Thyroid Association (ETA) Guidelines for Hyperthyroidism 2022",
+      "European Group on Graves' Orbitopathy (EUGOGO) Guidelines 2021",
+      "World Health Organization (WHO) — Thyroid Disease Fact Sheet",
+      "British Thyroid Association (BTA) Guidelines for Hyperthyroidism",
+      "American Association of Clinical Endocrinology (AACE) Thyroid Guidelines",
+      "UpToDate: Overview of the clinical manifestations of hyperthyroidism in adults",
+      "UpToDate: Treatment of Graves' hyperthyroidism in nonpregnant adults",
+      "Medscape: Hyperthyroidism Clinical Overview",
+      "New England Journal of Medicine — Graves' Disease: Cooper DS, NEJM 2003; 349:1</p>236-44",
+      "New England Journal of Medicine — Thyrotoxicosis: Bahn RS et al., NEJM 2011",
+      "The Lancet: Hyperthyroidism — Kahaly GJ et al., Lancet 2020",
+      "FDA: Methimazole and Propylthiouracil Safety Communications",
+      "FDA: Tepezza (teprotumumab) approval for Thyroid Eye Disease, 2020",
+      "Indian Thyroid Society (ITS) Guidelines for Management of Thyroid Disorders in India"
+    ],
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-HYPERTHYROIDISM-011",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-02",
+      "last_updated": "2026-06-02",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is intended for educational and informational purposes for the MedoAir chatbot. It does not replace professional medical advice, diagnosis, or treatment. Always consult a licensed endocrinologist or physician for medical decisions regarding thyroid conditions.",
+      "tags": [
+        "hyperthyroidism",
+        "thyrotoxicosis",
+        "Graves disease",
+        "thyroid",
+        "endocrine",
+        "overactive thyroid",
+        "thyroid storm",
+        "thyroid eye disease",
+        "antithyroid drugs",
+        "medoair"
       ]
     }
   }

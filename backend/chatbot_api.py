@@ -13,6 +13,9 @@ from llm.model_loader import get_model_info
 from llm.response_generator import generate_response, generate_with_rag
 from backend.file_parser import parse_uploaded_file
 from tools.fda_tool import get_fda_drug_summary
+from tools.location_tool import search_nearby_hospitals
+from services.symptom_detector import detect_symptom
+from services.triage_questions import TRIAGE_QUESTIONS
 
 health_bp  = Blueprint("health",  __name__)
 chatbot_bp = Blueprint("chatbot", __name__)
@@ -88,6 +91,56 @@ def chat():
 
     history = session.memory.get_history()
     
+    # =========================
+    # Symptom Triage
+    # =========================
+
+    # --------------------------------------------------
+    # Symptom-first flow
+    # --------------------------------------------------
+    symptom = None
+
+    try:
+        symptom = detect_symptom(message)
+    except Exception as e:
+        print(f"[Symptom Detector Error] {e}")
+
+    if symptom:
+
+        questions = TRIAGE_QUESTIONS.get(symptom, [])
+
+        answer = "I'd like to understand your symptoms better. Please answer the following questions:"
+
+        sources = []
+        
+        follow_up_questions = questions
+
+    # =========================
+    # Location Tool
+    # =========================
+
+    try:
+        location_keywords = [
+            "hospital near me",
+            "nearby hospital",
+            "find hospital",
+            "nearest hospital"
+        ]
+
+        if any(k in message.lower() for k in location_keywords):
+
+            hospitals = search_nearby_hospitals()
+
+            return jsonify({
+                "answer": str(hospitals),
+                "session_id": session.session_id,
+                "sources": ["Location Tool"],
+                "is_emergency": False
+            })
+
+    except Exception as e:
+        print(f"[Location Tool Error] {e}")
+
     # 2. Optimized Generation Routing
     if use_rag:
         if fda_context:
@@ -115,6 +168,8 @@ def chat():
         else:
             answer  = generate_response(message, history, stream=stream)
             sources = []
+        
+        follow_up_questions = []
             
     # 3. Stream or Return JSON
     if stream:
@@ -137,7 +192,7 @@ def chat():
     session.memory.add_assistant(answer)
     session_manager.save_session(session) 
     
-    return jsonify({"answer": answer, "session_id": session.session_id, "sources": sources, "is_emergency": False})
+    return jsonify({"answer": answer, "session_id": session.session_id, "sources": sources, "is_emergency": False, "follow_up_questions": follow_up_questions})
 
 @chatbot_bp.post("/chat/new")
 def new_session():
