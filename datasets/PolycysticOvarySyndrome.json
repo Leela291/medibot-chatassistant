@@ -1,0 +1,1571 @@
+{
+  "metadata": {
+    "title": "Polycystic Ovary Syndrome (PCOS) — Comprehensive Chatbot-Ready Dataset",
+    "subtitle": "Synthesised from multiple peer-reviewed sources for clinical chatbot deployment",
+    "version": "1.0",
+    "dataset_id": "PCOS-CHATBOT-2024-V1",
+    "sources": [
+      {
+        "source_id": "SRC-01",
+        "title": "Polycystic Ovary Syndrome: Common Questions and Answers",
+        "authors": ["Tracy Williams MD", "Justin B. Moore MD", "Jared Regehr MD"],
+        "journal": "American Family Physician",
+        "volume": "107",
+        "number": "3",
+        "year": "2023",
+        "pages": "264-272",
+        "publisher": "American Academy of Family Physicians (AAFP)"
+      },
+      {
+        "source_id": "SRC-02",
+        "title": "The Role of Polycystic Ovary Syndrome in Reproductive and Metabolic Health: Overview and Approaches for Treatment",
+        "authors": ["Carrie C. Dennett", "Judy Simon"],
+        "journal": "Diabetes Spectrum",
+        "volume": "28",
+        "number": "2",
+        "year": "2015",
+        "pages": "116-120",
+        "publisher": "American Diabetes Association",
+        "doi": "10.2337/diaspect.28.2.116"
+      },
+      {
+        "source_id": "SRC-03",
+        "title": "Polycystic Ovary Syndrome (PCOS) and Fertility",
+        "authors": ["Guilherme Barbosa", "Larissa Bianca Paiva Cunha de Sá", "Denise Rosso Tenório Wanderley Rocha", "Alberto Krayyem Arbex"],
+        "journal": "Open Journal of Endocrine and Metabolic Diseases",
+        "volume": "6",
+        "year": "2016",
+        "pages": "58-65",
+        "doi": "10.4236/ojemd.2016.61008",
+        "publisher": "Scientific Research Publishing"
+      },
+      {
+        "source_id": "SRC-04",
+        "title": "Polycystic Ovary Syndrome: State of the Art",
+        "type": "Supplementary clinical reference"
+      }
+    ],
+    "key_guidelines_referenced": [
+      "2003 Rotterdam Criteria (ESHRE/ASRM) — endorsed by International PCOS Network 2018",
+      "Endocrine Society Clinical Practice Guideline 2013 (Legro et al.)",
+      "ACOG Practice Bulletin No. 194 (2018)",
+      "International PCOS Network Evidence-Based Guideline 2018 (Teede et al.)",
+      "AE-PCOS Society Diagnostic Criteria 2006",
+      "NIH Diagnostic Criteria 1990",
+      "Amsterdam ESHRE/ASRM 3rd PCOS Consensus 2012",
+      "CDC Medical Eligibility Criteria for Contraceptive Use 2016"
+    ],
+    "chatbot_use_cases": [
+      "Patient education chatbot",
+      "Clinical decision support assistant",
+      "Women's health FAQ bot",
+      "Fertility clinic information assistant",
+      "Endocrinology triage tool"
+    ],
+    "last_updated": "2024",
+    "disclaimer": "This dataset is for educational and informational purposes. Clinical decisions must be made by qualified healthcare professionals based on individual patient circumstances."
+  },
+
+  "condition_overview": {
+    "full_name": "Polycystic Ovary Syndrome",
+    "abbreviation": "PCOS",
+    "classification": "Endocrinopathy / Reproductive and Metabolic Disorder",
+    "definition": "PCOS is the most common endocrinopathy affecting women of childbearing age. It is characterised by a combination of hyperandrogenism, ovulatory dysfunction, and polycystic ovarian morphology, with complex downstream effects on reproductive, metabolic, dermatologic, and psychological health.",
+    "prevalence": {
+      "general": "8% to 13% of women of childbearing age (American Family Physician 2023)",
+      "range_by_criteria": "4% to 18% depending on diagnostic criteria used",
+      "global_estimate": "Approximately 105 million women aged 15–49 worldwide",
+      "anovulatory_infertility": "90–95% of anovulatory women seeking infertility treatment have PCOS",
+      "proportion_of_hyperandrogenism": "72% to 82% of causes of hyperandrogenism in women"
+    },
+    "pathophysiology": {
+      "summary": "PCOS pathophysiology is complex and multifactorial, involving genetic and environmental factors that contribute to deficient signalling in the hypothalamic-pituitary-ovarian (HPO) axis and to ovarian and adrenal hyperandrogenism. Metabolic, dermatologic, and gynecologic features are thought to be subsequent manifestations of insulin resistance.",
+      "key_mechanisms": [
+        {
+          "mechanism": "Hypothalamic-Pituitary-Ovarian Axis Dysregulation",
+          "detail": "Elevated LH (luteinising hormone) secretion relative to FSH (follicle-stimulating hormone), resulting in increased androgen production by theca cells and anovulatory cycles. LH/FSH ratio is altered in almost all patients with PCOS."
+        },
+        {
+          "mechanism": "Hyperandrogenism",
+          "detail": "Ovarian and/or adrenal overproduction of androgens (testosterone, dehydroepiandrosterone/DHEA, androstenedione). High circulating testosterone and DHEA occur in 60–80% and 20–25% of women with PCOS respectively. Excess androgen changes female hormone regulation, causing menstrual irregularity and infertility."
+        },
+        {
+          "mechanism": "Insulin Resistance and Hyperinsulinemia",
+          "detail": "Affects approximately 65–70% of women with PCOS, occurring independently of obesity. Hyperinsulinemia increases androgen production, reduces sex hormone-binding globulin (SHBG), raises free testosterone, and interferes with ovulation and fertility. May also promote endometrial cell proliferation."
+        },
+        {
+          "mechanism": "Reduced Sex Hormone-Binding Globulin (SHBG)",
+          "detail": "Insulin resistance reduces hepatic production of SHBG, leading to increased free testosterone levels and amplified androgenic effects."
+        },
+        {
+          "mechanism": "Abnormal Steroidogenesis",
+          "detail": "Most authors consider abnormal steroidogenesis of ovarian or adrenal origin to be the primary disorder in PCOS."
+        },
+        {
+          "mechanism": "Genetic Predisposition",
+          "detail": "Polygenic inheritance. Approximately 20–40% of first-degree female relatives of women with PCOS develop PCOS themselves. Genes involved include those related to androgen biosynthesis (CYP17, CP21, CP11α, 17β-HSD5, SHBG), insulin action and secretion (INSR, IRS-1, IRS-2, CAPN10, PPARγ), gonadotropin secretion (follistatin), and pro-inflammatory genotypes (TNF-α, IL-6 variants)."
+        },
+        {
+          "mechanism": "Environmental Factors",
+          "detail": "Epigenetic and environmental factors such as unhealthy diet, physical inactivity, and obesity can compound underlying genetic predisposition."
+        }
+      ]
+    },
+    "age_of_onset": "Reproductive age; can manifest from adolescence",
+    "prognosis": "PCOS is a lifelong condition but symptoms often improve with age. Androgen production tends to decrease near menopause, and menstrual cycles often become more regular. Long-term metabolic and cardiovascular risks persist beyond reproductive years.",
+    "importance_of_early_diagnosis": "PCOS should be diagnosed and treated early in adolescence due to reproductive, metabolic, and oncological complications that may be associated with it."
+  },
+
+  "diagnostic_criteria": {
+    "overview": "There is no single diagnostic test for PCOS. Clinical criteria are used. Three major diagnostic systems exist, with the Rotterdam Criteria (2003) being the most widely used.",
+    "gold_standard": "None — PCOS is a clinical diagnosis based on exclusion of other conditions and meeting diagnostic criteria",
+    "criteria_systems": [
+      {
+        "system_id": "CRIT-01",
+        "name": "NIH Criteria",
+        "year": "1990",
+        "organisation": "National Institutes of Health (NIH)",
+        "requirements": "Both criteria must be present",
+        "criteria": [
+          "Chronic anovulation",
+          "Clinical and/or biochemical signs of hyperandrogenism (with exclusion of other aetiologies)"
+        ],
+        "notes": "Most restrictive criteria; requires both oligoanovulation AND hyperandrogenism. Does not include polycystic ovaries as a criterion."
+      },
+      {
+        "system_id": "CRIT-02",
+        "name": "Rotterdam Criteria",
+        "year": "2003",
+        "organisation": "European Society for Human Reproduction and Embryology (ESHRE) / American Society for Reproductive Medicine (ASRM)",
+        "requirements": "At least 2 of 3 criteria must be present (after exclusion of other conditions)",
+        "criteria": [
+          "Oligoovulation and/or anovulation",
+          "Clinical and/or biochemical signs of hyperandrogenism",
+          "Polycystic ovaries on ultrasound"
+        ],
+        "polycystic_ovary_definition": "At least one ovary with 12 or more follicles with diameters of 2–9 mm and/or increased ovarian volume >10 ml",
+        "notes": "Most widely used. Considered a compromise between NIH and AE-PCOS criteria. Upheld unanimously by the International PCOS Network in 2018. Prevalence estimated to be up to five times higher than when defined by NIH criteria.",
+        "current_status": "Current gold standard; endorsed by International PCOS Network 2018"
+      },
+      {
+        "system_id": "CRIT-03",
+        "name": "AE-PCOS Society Criteria",
+        "year": "2006",
+        "organisation": "Androgen Excess and PCOS Society (AE-PCOS)",
+        "requirements": "Both criteria must be present",
+        "criteria": [
+          "Clinical and/or biochemical signs of hyperandrogenism",
+          "Ovarian dysfunction (oligo-anovulation and/or polycystic ovaries)"
+        ],
+        "notes": "Considers PCOS as fundamentally an androgen excess disorder. Hyperandrogenism is mandatory."
+      },
+      {
+        "system_id": "CRIT-04",
+        "name": "Amsterdam ESHRE/ASRM 3rd PCOS Consensus",
+        "year": "2012",
+        "requirements": "2 of 3 criteria",
+        "criteria": [
+          "Menstrual dysfunction and/or polycystic ovary",
+          "Hyperandrogenaemia and/or hyperandrogenism",
+          "Polycystic ovary on ultrasound"
+        ]
+      }
+    ],
+    "rotterdam_criteria_detailed": {
+      "oligoanovulation_definition": {
+        "primary_amenorrhoea": "By 15 years of age or more than 3 years after thelarche (breast development)",
+        "1_to_3_years_postmenarche": "Menses less often than every 21 days or more often than every 45 days",
+        "3_years_postmenarche_to_menopause": "Menses less often than every 21 days or more often than every 35 days, or fewer than 8 cycles per year",
+        "1_year_postmenarche": "A menstrual cycle lasting longer than 90 days",
+        "note": "If menses are regular but oligoanovulation is suspected, a serum progesterone level can be obtained about one week before anticipated menses"
+      },
+      "hyperandrogenism_definition": {
+        "biochemical": [
+          "Elevated calculated free testosterone level",
+          "Elevated free androgen index",
+          "Elevated calculated bioavailable testosterone level",
+          "Note: Measured at least 3 months after stopping hormonal contraception. Direct free testosterone assays should NOT be used."
+        ],
+        "clinical": [
+          "Hirsutism — defined as modified Ferriman-Gallwey score ≥4 to 6 (depending on ethnicity); count only terminal hairs ≥5 mm in length and hyperpigmented",
+          "Androgenic alopecia (as defined by Ludwig visual scale)",
+          "Acne vulgaris (or severe acne vulgaris in adolescents)",
+          "Seborrhoea"
+        ],
+        "conditions_to_exclude": [
+          "Androgen-secreting tumours",
+          "Exogenous androgen exposure",
+          "Cushing syndrome",
+          "Nonclassic congenital adrenal hyperplasia",
+          "Acromegaly",
+          "Primary hypothalamic amenorrhoea",
+          "Primary ovarian insufficiency",
+          "Thyroid disease",
+          "Prolactin disorders",
+          "Genetic deficiencies of insulin action"
+        ]
+      },
+      "polycystic_ovaries_on_ultrasound": {
+        "preferred_modality": "Transvaginal ultrasonography",
+        "definition": "At least one ovary with ≥12 follicles with diameters 2–9 mm and/or increased ovarian volume >10 ml",
+        "caution": "Ultrasound findings should NOT be used as a criterion within 8 years of menarche because of high incidence of multifollicular ovaries in this life stage",
+        "prevalence_in_normal_women": "Found in as many as 62% of patients with normal ovulation; percentage declines with age"
+      }
+    },
+    "adolescent_diagnosis": {
+      "special_criteria": "Because Rotterdam criteria for adults overlap with normal pubertal physiologic changes, diagnosis in adolescents requires the presence of BOTH oligoanovulation AND hyperandrogenism for at least 2 years postmenarche.",
+      "ultrasound_in_adolescents": "NOT recommended as a diagnostic criterion because polycystic ovaries can be part of normal ovarian morphology in this age group. The International PCOS Network recommends waiting until at least 8 years after menarche to consider ultrasound findings.",
+      "prevalence_of_polycystic_morphology_in_adolescents": "30–40% of healthy adolescents have polycystic ovary morphology",
+      "why_diagnosis_is_delayed": "Oligoanovulation is common in the 2 years following menarche because of immaturity of the HPO axis. By the third year postmenarche, regular cycles (every 21–45 days) are established in 95% of adolescents.",
+      "most_reliable_marker_in_teens": "Progressive hirsutism is the most consistent marker for PCOS in the teenage years, as acne is common in adolescence and menstrual cycles often irregular for the first few years.",
+      "recommended_deferral": "A definitive diagnosis should be deferred until at least 2 years after onset of menstruation to assess whether other diagnostic criteria are met.",
+      "treatment_before_diagnosis": "Obesity-related hyperandrogenism and hyperinsulinemia can be treated before a PCOS diagnosis is confirmed."
+    },
+    "exclusion_workup": {
+      "minimum_evaluation": "All nonpregnant patients with suspected PCOS should be evaluated to exclude thyroid dysfunction, hyperprolactinemia, and nonclassic congenital adrenal hyperplasia.",
+      "tests": [
+        { "test": "Pregnancy test (urine or serum hCG)", "purpose": "Exclude pregnancy" },
+        { "test": "Serum TSH (thyroid-stimulating hormone)", "purpose": "Exclude thyroid dysfunction" },
+        { "test": "Serum prolactin", "purpose": "Exclude hyperprolactinemia" },
+        { "test": "17-hydroxyprogesterone (morning, preferably follicular phase)", "purpose": "Exclude nonclassic congenital adrenal hyperplasia" }
+      ]
+    },
+    "differential_diagnosis_with_testing": [
+      {
+        "diagnosis": "Acromegaly",
+        "testing": "Insulin-like growth factor 1 (IGF-1) level",
+        "clinical_clues": "Change in hat/glove size, protruding jaw, impaired vision"
+      },
+      {
+        "diagnosis": "Androgen-secreting tumour",
+        "testing": "Calculated free testosterone level, free androgen index, or calculated bioavailable testosterone level (using high-quality measurement: liquid chromatography–mass spectrometry or extraction chromatography immunoassays); DHEA-S; ovarian ultrasound; adrenal CT or MRI",
+        "clinical_clues": "Severe virilisation — change in voice, clitoromegaly, rapid onset"
+      },
+      {
+        "diagnosis": "Cushing Syndrome",
+        "testing": "Cortisol level (saliva or urine) or dexamethasone suppression test",
+        "clinical_clues": "Dorsocervical fat pad, purple striae, hypertension"
+      },
+      {
+        "diagnosis": "Exogenous androgens",
+        "testing": "Inhibin B level"
+      },
+      {
+        "diagnosis": "Genetic defects in insulin action",
+        "testing": "HbA1c level, oral glucose tolerance test (OGTT)"
+      },
+      {
+        "diagnosis": "Hyperprolactinemia",
+        "testing": "Prolactin level"
+      },
+      {
+        "diagnosis": "Nonclassic congenital adrenal hyperplasia",
+        "testing": "17-hydroxyprogesterone level (morning, preferably follicular phase)"
+      },
+      {
+        "diagnosis": "Primary hypothalamic amenorrhoea",
+        "testing": "FSH, LH, and oestradiol levels (ideally on day 3)",
+        "clinical_clues": "Low body weight, eating disorder, or excessive exercise"
+      },
+      {
+        "diagnosis": "Primary ovarian insufficiency",
+        "testing": "FSH and oestradiol levels",
+        "clinical_clues": "Hot flushes, urogenital symptoms"
+      },
+      {
+        "diagnosis": "Thyroid disease",
+        "testing": "TSH level using third-generation test"
+      }
+    ]
+  },
+
+  "clinical_features": {
+    "overview": "Patients with PCOS may be asymptomatic or may have multiple metabolic, dermatologic, or gynecologic manifestations. Presentation is highly variable — PCOS may manifest as a mild menstrual disorder or a severe disturbance of reproductive and metabolic functions.",
+    "symptom_categories": ["Gynecologic / Reproductive", "Dermatologic", "Metabolic", "Psychological"],
+    "gynecologic_features": [
+      {
+        "feature": "Irregular or absent menses (oligomenorrhoea / amenorrhoea)",
+        "prevalence": "Nearly two-thirds of people with PCOS do not ovulate regularly",
+        "mechanism": "Anovulation due to LH/FSH imbalance and hyperandrogenism"
+      },
+      {
+        "feature": "Infertility",
+        "prevalence": "PCOS is the most common cause of anovulatory infertility; 90–95% of anovulatory women seeking infertility treatment have PCOS",
+        "mechanism": "Anovulation and follicular developmental arrest beyond 10 mm"
+      },
+      {
+        "feature": "Polycystic ovaries on ultrasound",
+        "prevalence_in_pcos": "Approximately 75% of women with PCOS have polycysts on ovaries",
+        "note": "Not necessary or sufficient for diagnosis alone"
+      },
+      {
+        "feature": "Dysfunctional uterine bleeding",
+        "detail": "Prolonged anovulation may lead to dysfunctional uterine bleeding that mimics menstrual bleeding. Women with oligo-ovulation may experience heavy bleeding when they do menstruate."
+      },
+      {
+        "feature": "Gestational complications",
+        "detail": "Women with PCOS who become pregnant are at higher risk of gestational diabetes mellitus and first-trimester spontaneous abortion"
+      }
+    ],
+    "dermatologic_features": [
+      {
+        "feature": "Hirsutism",
+        "definition": "Excessive growth of terminal hair in androgen-dependent areas of women (face, chest, abdomen, back, thighs)",
+        "prevalence_in_pcos": "Approximately 70% of women with PCOS; present in 50–80% of patients with hyperandrogenism",
+        "prevalence_in_general_population": "10% of women of childbearing age without PCOS",
+        "assessment": "Modified Ferriman-Gallwey scale; score >8 indicates hirsutism (or ≥4–6 depending on ethnicity in Rotterdam criteria)",
+        "mechanism": "Increased 5α-reductase enzyme activity in hair follicles converts testosterone to DHT (dihydrotestosterone). Activity stimulated by hyperandrogenism, IGF-1, and insulin.",
+        "clinical_note": "Self-treatment (waxing, shaving) is common and may limit clinical assessment. Count only terminal hairs ≥5 mm in length and hyperpigmented."
+      },
+      {
+        "feature": "Acne",
+        "definition": "Disorder of the pilosebaceous unit with lesions on face, neck, back, and chest",
+        "prevalence": "Less common than hirsutism; may be present as a hirsutism equivalent for hyperandrogenism diagnosis",
+        "mechanism": "Increased androgen sensitivity of sebaceous glands; local conversion of androgens. Association with DHEA-S, DHT, androstenedione, testosterone, and IGF-1.",
+        "note": "Common in adolescence even without PCOS; acne alone is not a good marker for PCOS in teenagers"
+      },
+      {
+        "feature": "Androgenic alopecia",
+        "definition": "Hair loss in the central region of the scalp (crown/part-line pattern in women)",
+        "assessment": "Ludwig visual scale",
+        "mechanism": "In presence of elevated androgens and higher 5α-reductase activity: shortened anagen phase, follicle miniaturisation, terminal hairs become vellus hairs",
+        "psychosocial_impact": "Significant psychological repercussions",
+        "note": "Most patients with androgenic alopecia have normal endocrine function; examine for other signs of hyperandrogenism"
+      },
+      {
+        "feature": "Seborrhoea",
+        "definition": "Excess sebum production leading to oily skin",
+        "note": "Less common than hirsutism and acne; may qualify as hirsutism equivalent"
+      },
+      {
+        "feature": "Acanthosis nigricans",
+        "definition": "Brown, velvety, raised skin patches in body folds — neck, armpits, groin, inframammary region, elbows",
+        "prevalence_in_pcos": "Reported in approximately 5% of PCOS patients",
+        "mechanism": "Insulin resistance causing acanthosis",
+        "clinical_significance": "Indicates presence of significant insulin resistance; warrants glucose tolerance testing. When severe, extensive, and progressive — especially with mucosal involvement — may be associated with malignancy.",
+        "additional_signs": ["Skin tags", "Rough elbows", "Rough, reddened hair follicles on upper arms"]
+      },
+      {
+        "feature": "Signs of virilisation (severe cases)",
+        "features": ["Change in voice (deepening)", "Clitoromegaly", "Rapid onset of severe symptoms"],
+        "action": "Must exclude androgen-secreting tumour urgently"
+      }
+    ],
+    "metabolic_features": [
+      {
+        "feature": "Insulin resistance",
+        "prevalence": "Affects approximately 65–70% of women with PCOS; occurs independently of obesity",
+        "consequences": "Compensatory hyperinsulinemia, increased androgen production, reduced SHBG, elevated free testosterone, impaired ovulation"
+      },
+      {
+        "feature": "Dysglycemia (impaired glucose tolerance / type 2 diabetes)",
+        "prevalence_igt": "30–40% of PCOS patients have impaired glucose tolerance (IGT)",
+        "prevalence_t2dm": "7.5–10% have type 2 diabetes",
+        "increased_risk": "2.5-fold increased prevalence of IGT; 4-fold increased prevalence of type 2 diabetes compared to women without PCOS",
+        "annual_progression": "Annual progression rate from normal glucose tolerance to IGT, and from IGT to type 2 diabetes, is substantially enhanced in women with PCOS, especially if obese with family history of T2DM"
+      },
+      {
+        "feature": "Dyslipidemia",
+        "detail": "Patients with PCOS often have abnormal lipid levels",
+        "lipid_pattern": "Low HDL, elevated triglycerides, elevated LDL are common"
+      },
+      {
+        "feature": "Hypertension",
+        "detail": "PCOS is independently associated with a 37% greater risk of hypertension, even after adjusting for other comorbidities"
+      },
+      {
+        "feature": "Obesity",
+        "prevalence": "35–60% of women with PCOS are obese",
+        "effect": "Obesity worsens both metabolic and reproductive features of PCOS, particularly visceral adiposity",
+        "note": "Insulin resistance occurs independently of obesity in PCOS; women with PCOS may have metabolic abnormalities even at normal weight"
+      },
+      {
+        "feature": "Metabolic syndrome",
+        "prevalence_us": "33–47% of women with PCOS in the United States have metabolic syndrome",
+        "comparison": "Two to three times higher rate than age-matched healthy women without PCOS",
+        "link": "Hyperinsulinemia may be a crucial link between PCOS and metabolic syndrome"
+      },
+      {
+        "feature": "Cardiovascular disease (CVD) risk",
+        "detail": "Women with PCOS and metabolic syndrome or type 2 diabetes are at the highest risk of CVD. Women with PCOS have a 4- to 7-fold higher risk of heart attack than women of the same age without PCOS.",
+        "cvd_risk_factors": ["Hypertension", "Hyperlipidaemia", "Impaired blood vessel function", "Insulin resistance", "Obesity"]
+      }
+    ],
+    "psychological_features": [
+      {
+        "feature": "Depression",
+        "prevalence": "More than twofold increased prevalence compared to women without PCOS",
+        "screening": "Recommended for all patients with PCOS"
+      },
+      {
+        "feature": "Anxiety",
+        "prevalence": "More than twofold increased prevalence compared to women without PCOS",
+        "screening": "Recommended for all patients with PCOS"
+      },
+      {
+        "feature": "Body dissatisfaction and disordered eating",
+        "detail": "Women with PCOS suffer from greater body dissatisfaction and are at increased risk of mood, generalised anxiety, and eating disorders",
+        "note": "Physicians should minimise stigma and negative self-thoughts when discussing weight management"
+      },
+      {
+        "feature": "Reduced quality of life",
+        "detail": "PCOS affects quality of life across the lifespan through reproductive, metabolic, and psychological impacts"
+      }
+    ],
+    "other_features": [
+      {
+        "feature": "Obstructive sleep apnoea (OSA)",
+        "prevalence": "Nearly fourfold increased prevalence compared to women without PCOS",
+        "screening": "Recommended for all patients with PCOS"
+      },
+      {
+        "feature": "Endometrial cancer risk",
+        "risk_increase": "At least twofold increased risk compared to general population",
+        "mechanism": "Chronic anovulation → prolonged oestrogen exposure without progesterone opposition → endometrial hyperplasia → cancer risk. Hyperinsulinemia promotes endometrial cell proliferation.",
+        "absolute_risk": "Relatively low in absolute terms",
+        "screening_recommendation": "Routine endometrial cancer screening NOT recommended. Maintain low threshold for evaluation — transvaginal ultrasonography, endometrial biopsy, or both — for patients with prolonged amenorrhoea or abnormal uterine bleeding, especially if overweight.",
+        "prevention": "Induce menses at least every 3–4 months to reduce risk of endometrial cancer"
+      },
+      {
+        "feature": "Intense carbohydrate cravings",
+        "detail": "Women with PCOS who have insulin resistance may experience hyperglycaemia and hypoglycaemia and report intense cravings for carbohydrates"
+      }
+    ]
+  },
+
+  "diagnostic_workup": {
+    "approach": "A clinical diagnosis of PCOS can generally be made with a history, physical examination, and basic laboratory testing. No single diagnostic test exists.",
+    "history_points": [
+      "Menstrual history — cycle length, regularity, duration",
+      "Weight history and recent changes",
+      "Symptoms of hyperandrogenism (hair growth, acne, scalp hair loss)",
+      "Fertility history and plans",
+      "Family history — PCOS in first-degree female relatives, irregular periods, infertility in female relatives",
+      "Medications — especially hormonal contraception",
+      "Symptoms of insulin resistance — skin tags, acanthosis nigricans, carbohydrate cravings"
+    ],
+    "physical_examination": [
+      "Blood pressure measurement",
+      "BMI and waist circumference",
+      "Assessment for hirsutism using modified Ferriman-Gallwey scale",
+      "Skin examination — acne, seborrhoea, acanthosis nigricans, skin tags",
+      "Scalp hair assessment for androgenic alopecia",
+      "Signs of virilisation",
+      "Signs of Cushing syndrome (dorsocervical fat pad, purple striae)",
+      "Signs of acromegaly (jaw/hand/foot changes)"
+    ],
+    "laboratory_tests": {
+      "minimum_required": [
+        {
+          "test": "Pregnancy test (urine or serum hCG)",
+          "purpose": "Mandatory to exclude pregnancy before any evaluation"
+        },
+        {
+          "test": "Serum TSH (third-generation assay)",
+          "purpose": "Exclude thyroid disease"
+        },
+        {
+          "test": "Serum prolactin",
+          "purpose": "Exclude hyperprolactinaemia"
+        },
+        {
+          "test": "17-hydroxyprogesterone (morning, preferably follicular phase)",
+          "purpose": "Exclude nonclassic congenital adrenal hyperplasia"
+        }
+      ],
+      "androgen_testing": {
+        "recommended_tests": [
+          "Calculated free testosterone level",
+          "Free androgen index",
+          "Calculated bioavailable testosterone level"
+        ],
+        "preferred_measurement_methods": [
+          "Liquid chromatography–mass spectrometry",
+          "Extraction chromatography immunoassays"
+        ],
+        "timing": "At least 3 months after stopping hormonal contraception",
+        "avoid": "Direct free testosterone assays — not standardised",
+        "limitation": "Evaluation of androgen levels is complicated by lack of standardised testosterone assays in the United States"
+      },
+      "metabolic_testing": [
+        {
+          "test": "Glycaemic status assessment",
+          "options": ["OGTT (oral glucose tolerance test)", "Fasting plasma glucose", "HbA1c"],
+          "preferred": "OGTT preferred in high-risk patients (BMI >25 kg/m² in non-Asian, >23 in Asian; history of impaired fasting glucose or gestational diabetes; family history of T2DM; hypertension; high-risk ethnicity)",
+          "frequency": "Baseline; repeat every 1–3 years",
+          "pregnancy": "All patients with PCOS should have a 75-g OGTT during preconception counselling. If not done preconception, offer OGTT at <20 weeks' gestation; if normal, repeat at 24–28 weeks."
+        },
+        {
+          "test": "Fasting lipid profile",
+          "timing": "All patients with PCOS at baseline; repeat based on hyperlipidaemia and global CVD risk"
+        },
+        {
+          "test": "Blood pressure",
+          "frequency": "Annually (or more often based on global CVD risk)"
+        }
+      ],
+      "imaging": {
+        "pelvic_ultrasound": {
+          "preferred_modality": "Transvaginal ultrasonography",
+          "diagnostic_criteria": "≥12 follicles 2–9 mm in diameter and/or ovarian volume >10 ml in at least one ovary",
+          "limitation_in_adolescents": "Not recommended as diagnostic criterion within 8 years of menarche due to high prevalence of multifollicular ovaries in adolescence",
+          "clinical_use": "Can diagnose polycystic ovary morphology. Also useful for monitoring response to ovulation induction treatment."
+        }
+      },
+      "additional_screening": [
+        { "screening": "Depression screening", "tool": "PHQ-9 or equivalent" },
+        { "screening": "Obstructive sleep apnoea screening" },
+        { "screening": "Smoking status — counsel cessation if applicable" },
+        { "screening": "Cancer screening — follow universal recommendations; no additional PCOS-specific cancer screening recommended beyond endometrial evaluation when clinically indicated" }
+      ]
+    }
+  },
+
+  "pcos_phenotypes": {
+    "overview": "PCOS is a heterogeneous syndrome. The Rotterdam Criteria generate four possible phenotypes based on the combination of the three diagnostic features. Only a third of patients have the 'classic' form.",
+    "phenotypes": [
+      {
+        "phenotype": "A — Classic Full",
+        "features": ["Oligoanovulation", "Hyperandrogenism", "Polycystic ovaries"],
+        "notes": "Highest metabolic risk; classic presentation described by Stein and Leventhal in 1935"
+      },
+      {
+        "phenotype": "B — Classic without polycystic ovaries",
+        "features": ["Oligoanovulation", "Hyperandrogenism"],
+        "notes": "No polycystic ovary morphology on ultrasound"
+      },
+      {
+        "phenotype": "C — Ovulatory PCOS",
+        "features": ["Hyperandrogenism", "Polycystic ovaries"],
+        "notes": "Regular ovulation present; women with chronic anovulation but normal androgen levels tend to not be insulin resistant"
+      },
+      {
+        "phenotype": "D — Non-hyperandrogenic PCOS",
+        "features": ["Oligoanovulation", "Polycystic ovaries"],
+        "notes": "No clinical or biochemical hyperandrogenism; lowest metabolic risk; only recognised by Rotterdam criteria, not NIH or AE-PCOS"
+      }
+    ]
+  },
+
+  "management": {
+    "overarching_principles": [
+      "Treatment plans typically focus on specific symptoms as no single cure exists for the underlying pathophysiology.",
+      "Lifestyle modification is the foundation of therapy and a central component for all manifestations.",
+      "Subsequent management decisions depend on the patient's desire for pregnancy.",
+      "Physicians should explain the purpose of attempted weight loss with attention to minimising stigma and negative self-thoughts.",
+      "Smoking cessation is recommended for all patients with PCOS who smoke."
+    ],
+    "lifestyle_modification": {
+      "recommendation": "Multicomponent lifestyle intervention, including nutritional counselling, calorie-restricted diet, exercise, and behavioural strategies, is recommended for all patients with PCOS who are overweight.",
+      "evidence": "A 2019 Cochrane review concluded that lifestyle interventions may reduce free androgen index, body weight, and BMI, and increase SHBG levels. A 2018 systematic review found no significant differences among various diets for most outcomes but overall calorie-restricted diets benefited PCOS independently of weight loss.",
+      "weight_loss_target": "Weight loss exceeding 5% (some sources say 5–10%) of initial body weight has been linked to clinical improvement in fertility and metabolic parameters.",
+      "even_without_weight_loss": "Dietary intervention improves health and quality of life even in the absence of weight loss.",
+      "no_superior_diet": "No specific energy-equivalent diet appears to be superior; dietary changes should be tailored to food preferences. No specific dietary composition has been demonstrated to be most beneficial.",
+      "low_glycaemic_diet": "Subtle but inconclusive improvements were observed with a low-glycaemic diet; a nutritionally adequate weight loss diet based on healthy food choices is of clinical benefit regardless of composition.",
+      "physical_activity": {
+        "benefits": [
+          "Increases SHBG",
+          "Decreases androgen levels",
+          "Improves insulin sensitivity",
+          "Assists with weight management",
+          "Improves lipid levels",
+          "Lowers blood pressure",
+          "Improves mood and body image",
+          "Helps reduce chronic stress and stress-related eating"
+        ],
+        "exercise_recommendations": {
+          "adolescents": {
+            "aerobic": "60 minutes per day of moderate- to vigorous-intensity activity in bouts of ≥10 minutes",
+            "strength": "At least 3 times per week"
+          },
+          "adults_18_to_64": {
+            "moderate_intensity": "150 minutes per week of moderate-intensity activity",
+            "vigorous_intensity": "75 minutes per week of vigorous-intensity activity",
+            "strength": "At least 2 times per week on non-consecutive days"
+          }
+        }
+      },
+      "behaviour_strategies": [
+        "Behavioural weight loss interventions",
+        "Stress reduction techniques",
+        "Screening and treatment of mood and anxiety disorders"
+      ],
+      "vitamin_d": {
+        "detail": "Vitamin D deficiency is common in women with PCOS. There is limited evidence that vitamin D supplementation may improve reproductive function and insulin sensitivity.",
+        "recommendation": "Vitamin D levels should be tested; supplementation may be warranted to increase low levels, especially in women undergoing IVF.",
+        "note": "More randomised controlled trials are needed"
+      },
+      "delay_pharmacotherapy_for_weight_loss": "A secondary analysis of two RCTs found that delaying ovulation-inducing pharmacotherapy until after achieving approximately 6% weight loss in a 16-week intervention resulted in a statistically significant increase in ovulation and live birth rates. ESHRE/ASRM recommend counselling on lifestyle modification before interventions for ovulation induction are considered."
+    },
+    "medical_nutrition_therapy": {
+      "framework": "Academy of Nutrition and Dietetics evidence-based nutrition practice guidelines",
+      "components": [
+        "Thorough nutrition assessment to help prioritise MNT",
+        "Nutrition diagnosis (presence of, risk of, or potential for developing a nutritional deficit addressable by nutrition therapy)",
+        "Nutrition interventions (specific actions to remedy the nutrition diagnosis; clinical and behavioural goals agreed upon collaboratively; meal-planning strategy; education on portion sizes and healthy dining choices)",
+        "Nutrition monitoring and evaluation with ongoing follow-up to support long-term lifestyle changes, evaluate outcomes, and modify interventions as needed"
+      ]
+    }
+  },
+
+  "pharmacological_management": {
+    "overview": "When lifestyle treatment does not result in desired outcomes, pharmacotherapy may be added. Treatment choice is guided by the patient's desire for pregnancy.",
+    "not_seeking_pregnancy": {
+      "menstrual_irregularities": {
+        "goal": "Induce menses at least every 3–4 months to decrease the risk of endometrial cancer",
+        "first_line": {
+          "agent": "Hormonal contraception (oral contraceptives)",
+          "evidence": "Consistent evidence from RCTs showing improved outcomes (SORT Grade A)",
+          "detail": "Lowest effective oestrogen dose such as 20–30 mcg ethinyl estradiol or its equivalent is preferred. Attention to contraindications and PCOS-specific risk factors (elevated BMI, hyperlipidaemia, hypertension).",
+          "avoid": "Higher-dose (35 mcg) ethinyl estradiol preparations should NOT be first-line therapy due to increased risk of venous thromboembolism",
+          "preferred_progestins": "Levonorgestrel, norethindrone, or norgestimate associated with lowest risk of thromboembolism",
+          "adolescents": "30 mcg ethinyl estradiol preparations may preserve peak bone mineral density. Preparations <30 mcg associated with lower bone mineral density in adolescents (fracture risk increase not observed).",
+          "long_acting_options": "Levonorgestrel-releasing IUD or implant ideal for patients with difficulty adhering to oral contraceptives or contraindications to oestrogen. A 2020 Cochrane review found levonorgestrel-releasing IUD more effective than oral progesterone for reducing risk of endometrial hyperplasia progressing to endometrial cancer.",
+          "superior_to": "Oral contraceptives are superior to metformin for menstrual regulation in adolescents and adults"
+        },
+        "alternative_no_contraception_desired": {
+          "agent": "Periodic cyclic progesterone withdrawal",
+          "options": [
+            "Micronised progesterone 200 mg orally per day for 10–14 days",
+            "Medroxyprogesterone 5–10 mg orally per day for 5–10 days"
+          ]
+        },
+        "second_line": {
+          "agent": "Metformin",
+          "dose": "Daily dosage of 1,500 mg or higher",
+          "evidence": "SORT Grade B — consistent evidence from RCTs showing improved outcomes, although likely inferior to lifestyle modification for diabetes prevention",
+          "benefits": "Superior to placebo for management of weight, LDL cholesterol (BMI >25 kg/m²), and fasting glucose, cholesterol, and triglyceride levels regardless of BMI",
+          "dose_ceiling": "An 8-month RCT showed 2,500 mg daily has minimal additional benefit over 1,500 mg"
+        }
+      },
+      "hirsutism": {
+        "first_line": "Hormonal contraception",
+        "second_line": {
+          "agents": ["Spironolactone (antiandrogen)", "Eflornithine"],
+          "caution": "MUST be prescribed with effective contraception — antiandrogens can cause undervirilisation in a male fetus",
+          "timing": "Consider adding antiandrogens only if at least 6 months of oral contraceptive use AND cosmetic therapies alone do not sufficiently improve symptoms",
+          "when_oc_contraindicated": "When oral contraceptives are contraindicated or poorly tolerated, use another form of effective contraception with antiandrogens",
+          "other_options": ["Electrolysis", "Light-based therapies (laser, IPL)"]
+        },
+        "third_line": "Metformin (may be less effective than oral contraceptives, particularly in those with BMI 25–30 kg/m²)"
+      },
+      "acne": {
+        "first_line": "Hormonal contraception with or without standard topical acne therapy",
+        "topical_acne_therapy_components": ["Retinoids", "Antibiotics", "Benzoyl peroxide"],
+        "second_line": "Antiandrogen medications (e.g., spironolactone) — must be used with contraception"
+      },
+      "androgenic_alopecia": {
+        "first_line": "Hormonal contraception",
+        "second_line": "Antiandrogen medications — must be used with contraception"
+      },
+      "overweight_obesity": {
+        "first_line": "Lifestyle modification",
+        "second_line": "Anti-obesity medications (when lifestyle modification is insufficient)"
+      },
+      "insulin_resistance_metabolic": {
+        "first_line": "Lifestyle modification",
+        "second_line": {
+          "agent": "Metformin",
+          "dose": "1,500 mg/day or higher",
+          "indication_adults": "For adult PCOS patients with IGT or T2DM when lifestyle interventions alone are not sufficient",
+          "indication_adolescents": "For adolescent patients with IGT or metabolic syndrome",
+          "mechanism": "Improves insulin sensitivity, decreases circulating androgen levels, normalises menstrual cycle and ovulation"
+        }
+      }
+    },
+    "seeking_pregnancy": {
+      "overview": "Management for women seeking pregnancy focuses on ovulation induction, insulin sensitisation, and addressing infertility.",
+      "preconception_counselling": "ESHRE/ASRM recommend lifestyle modification including modest weight loss and physical activity before interventions for ovulation induction are considered. Smoking cessation and reducing alcohol consumption should be emphasised.",
+      "anovulation_infertility": {
+        "first_line": {
+          "agent": "Letrozole",
+          "class": "Aromatase inhibitor",
+          "dose": "2.5 mg orally per day for 5 days; typically start on day 3 of menstrual cycle (day 2–5 acceptable)",
+          "titration": "If pregnancy not achieved, repeat same dose; if still unsuccessful, increase to 5 mg daily",
+          "maximum_dose": "7.5 mg daily",
+          "cost": "Approximately $2 (generic) for five 2.5-mg tablets",
+          "regulatory_status": "Used off-label for PCOS (clomiphene is FDA-approved; letrozole is not for this indication)",
+          "evidence": "SORT Grade A — consistent evidence from RCTs showing improved outcomes for ovulation rate, pregnancy rate, and live birth rate. A 2018 systematic review concluded letrozole is superior to clomiphene for ovulation rate per patient, pregnancy rate, and live birth rate per patient.",
+          "live_birth_advantage": "Meta-analysis showed letrozole has higher live birth rate vs clomiphene; number needed to treat = 10 for one additional live birth",
+          "multiple_pregnancy_rate": "3.4% with letrozole vs 7.4% with clomiphene (difference not statistically significant)"
+        },
+        "second_line": {
+          "agent": "Clomiphene",
+          "class": "Selective oestrogen receptor modulator",
+          "dose": "50 mg orally per day for 5 days; typically start on day 3 of menstrual cycle",
+          "titration": "May repeat up to 6 cycles",
+          "maximum_dose": "100 mg daily",
+          "cost": "Approximately $6 (generic) for five 50-mg tablets",
+          "regulatory_status": "FDA-approved for treatment of ovulatory dysfunction",
+          "note": "Preferred over metformin alone; however, combining clomiphene and metformin has shown higher pregnancy and live birth rates in patients with BMI >30 kg/m²",
+          "induction_of_menses": "Progesterone induction required if no spontaneous menses: micronised progesterone 200 mg/day for 10–14 days OR medroxyprogesterone 5–10 mg/day for 5–10 days"
+        },
+        "third_line": {
+          "agent": "Metformin",
+          "role": "Adjunctive therapy; third-line for ovulation induction alone",
+          "combination_advantage": "Combining with clomiphene shows higher pregnancy and live birth rates when BMI >30 kg/m²"
+        },
+        "counselling": "Patients should be counselled about the elevated risk of multiple pregnancy with ovulation induction drugs"
+      },
+      "insulin_resistance_when_pregnant": {
+        "first_line": "Lifestyle modification",
+        "second_line": "Metformin"
+      },
+      "hirsutism_when_seeking_pregnancy": {
+        "first_line": "Electrolysis",
+        "note": "Hormonal treatments and antiandrogens are not safe in pregnancy"
+      },
+      "acne_when_seeking_pregnancy": {
+        "first_line": "Standard topical acne therapy (retinoids, antibiotics, benzoyl peroxide)"
+      }
+    },
+    "drug_comparison_table": {
+      "letrozole_vs_clomiphene": {
+        "drug_class": { "letrozole": "Aromatase inhibitor", "clomiphene": "Selective oestrogen receptor modulator" },
+        "line_of_therapy": { "letrozole": "First line", "clomiphene": "Second line" },
+        "typical_dose": {
+          "letrozole": "2.5 mg/day for 5 days (start day 2–5 of cycle); max 7.5 mg/day",
+          "clomiphene": "50 mg/day for 5 days (start day 2–5 of cycle); max 100 mg/day, up to 6 cycles"
+        },
+        "approximate_monthly_cost": {
+          "letrozole": "$2 (generic) or $125 (brand) for five 2.5-mg tablets",
+          "clomiphene": "$6 (generic; brand no longer available) for five 50-mg tablets"
+        },
+        "live_birth_rate": "Higher with letrozole",
+        "multiple_pregnancy_risk": "No statistical difference between letrozole and clomiphene",
+        "miscarriage_risk": "No statistical difference between letrozole and clomiphene",
+        "regulatory_note": "Clomiphene is FDA-approved; letrozole is used off-label for PCOS"
+      }
+    }
+  },
+
+  "comorbidity_management": {
+    "title": "Management of Comorbidities in PCOS",
+    "summary": "Patients with PCOS should be evaluated for and managed for dyslipidaemia, hypertension, dysglycaemia, smoking, obstructive sleep apnoea, and depression. Additional cancer screening beyond standard recommendations is NOT required.",
+    "comorbidities": [
+      {
+        "comorbidity": "Dysglycemia / Type 2 Diabetes",
+        "screening": "Assess glycaemic status at baseline using OGTT, fasting plasma glucose, or HbA1c; repeat every 1–3 years",
+        "high_risk_criteria": ["BMI >25 kg/m² in non-Asian; >23 kg/m² in Asian patients", "History of impaired fasting glucose or gestational diabetes", "Family history of T2DM", "Hypertension", "High-risk ethnicity"],
+        "preferred_test_in_high_risk": "75-g OGTT",
+        "pregnancy": "All PCOS patients should have a 75-g OGTT during preconception counselling"
+      },
+      {
+        "comorbidity": "Dyslipidemia",
+        "screening": "Obtain fasting lipid profile in all patients with PCOS; repeat based on hyperlipidaemia and global CVD risk"
+      },
+      {
+        "comorbidity": "Hypertension",
+        "screening": "Blood pressure measurement annually (or more often based on global CVD risk)"
+      },
+      {
+        "comorbidity": "Smoking",
+        "intervention": "Counsel patient about smoking cessation if applicable"
+      },
+      {
+        "comorbidity": "Depression and Anxiety",
+        "screening": "Screen for depression in all PCOS patients",
+        "treatment": "Treat using established evidence-based therapies"
+      },
+      {
+        "comorbidity": "Obstructive Sleep Apnoea (OSA)",
+        "screening": "Screen for sleep apnoea in all PCOS patients",
+        "prevalence": "Nearly fourfold increased prevalence vs women without PCOS"
+      },
+      {
+        "comorbidity": "Endometrial Cancer",
+        "risk": "At least twofold increased risk; absolute risk is relatively low",
+        "screening": "No routine endometrial cancer screening recommended. Maintain low threshold for evaluation in patients with prolonged amenorrhoea or abnormal uterine bleeding (especially overweight): use transvaginal ultrasonography, endometrial biopsy, or both.",
+        "prevention": "Induce menses at least every 3–4 months in patients with oligomenorrhoea"
+      }
+    ]
+  },
+
+  "pcos_and_fertility": {
+    "overview": "PCOS is the most common cause of anovulatory infertility and the main source of female infertility in many countries. Infertility is related to hypersecretion of LH (70% of anovulatory women with PCOS), elevated LH/FSH ratio, and increased ovarian androgen production resulting in anovulatory cycles.",
+    "mechanism_of_infertility": "PCOS is characterised by anovulation due to a developmental defect of follicles beyond 10 mm in size. Most cycles are anovulatory, making ovulation induction essential.",
+    "fertility_statistics": {
+      "pcos_in_anovulatory_infertility": "90–95% of anovulatory women seeking infertility treatment have PCOS",
+      "pcos_in_amenorrhea_patients": "30–40% of patients with primary or secondary amenorrhoea have PCOS",
+      "pcos_in_oligomenorrhea_patients": "80% of patients with oligomenorrhoea have PCOS"
+    },
+    "obesity_and_fertility": {
+      "detail": "Approximately 50% of infertile women also have obesity. There is a clear association between obesity and menstrual irregularities — adipose tissue is the largest peripheral site for aromatisation of androgens to oestrogens, contributing to oestrogen production. Obesity is associated with reduced ovulatory rates, increased miscarriage, and late pregnancy complications.",
+      "treatment_priority": "In infertile overweight or obese patients with PCOS, evidence does not support treatment with pharmacotherapy ahead of either lifestyle intervention alone or in combination with pharmacotherapy."
+    },
+    "progesterone_testing": "Progesterone dosage may be useful as an additional screening test for anovulation. A serum progesterone level can be obtained approximately one week before anticipated menses if cycles appear regular but anovulation is suspected.",
+    "additional_evaluation": "It is recommended to exclude other infertility causes besides anovulation in couples in which the woman has PCOS (e.g., male factor infertility, tubal factors).",
+    "iui_and_art": "When oral ovulation induction fails, assisted reproductive technologies (ART) including IUI (intrauterine insemination) and IVF (in vitro fertilisation) may be considered.",
+    "multiple_pregnancy_risk": "All ovulation induction drugs (letrozole, clomiphene) are associated with increased risk of multiple pregnancies, as well as obstetric and neonatal risks. Patients must be counselled appropriately.",
+    "who_definition_infertility": "The World Health Organization (WHO) defines infertility as the absence of pregnancy after 2 years of regular intercourse without contraception. However, there is consensus that after 1 year, an assessment of possible factors involved should begin."
+  },
+
+  "pcos_across_lifespan": {
+    "adolescence": {
+      "diagnostic_challenges": "Menstrual irregularity and acne are normal in adolescence; progressive hirsutism is the most consistent early marker",
+      "treatment_before_diagnosis": "Obesity-related issues can be treated before PCOS diagnosis is confirmed",
+      "oral_contraceptive_note": "OCs with 30 mcg ethinyl estradiol may preserve peak bone mineral density; <30 mcg preparations associated with lower bone mineral density",
+      "early_treatment_importance": "PCOS should be diagnosed and treated early in adolescence due to reproductive, metabolic and oncological complications"
+    },
+    "reproductive_years": {
+      "main_concerns": ["Infertility", "Menstrual irregularity", "Hirsutism and acne", "Metabolic syndrome", "CVD risk", "Mental health"],
+      "pregnancy_risks": "Women with PCOS who become pregnant have higher risks of gestational diabetes and first-trimester miscarriage"
+    },
+    "perimenopause_and_postmenopause": {
+      "hormonal_changes": "Androgen production tends to decrease in the years leading to menopause; menstrual cycles often become more regular with corresponding improvement in reproductive functioning",
+      "cvd_risk": "Research on impact of PCOS on cardiovascular risk in postmenopausal years is inconclusive and lacking",
+      "phenotype_amelioration": "PCOS phenotype tends to ameliorate with ageing"
+    }
+  },
+
+  "case_study": {
+    "title": "Case Study: Medical Nutrition Therapy (MNT) in PCOS",
+    "source": "Dennett and Simon, Diabetes Spectrum 2015",
+    "patient": {
+      "name": "Gita (anonymised)",
+      "age": 27,
+      "ethnicity": "South Asian female",
+      "diagnoses": ["PCOS", "Infertility"],
+      "dietary_background": "Lacto-vegetarian (no eggs due to religious beliefs)"
+    },
+    "initial_dietary_pattern": {
+      "breakfast": "Typically skipped",
+      "lunch": "Granola bar or orange juice",
+      "snacks": "Chocolate candy bars, juice, or fruit smoothies",
+      "dinner": "Vegetarian curry, basmati rice, vegetables, lentils"
+    },
+    "initial_assessment": {
+      "nutrient_pattern": ["Most calories consumed at night", "Diet high in carbohydrates"],
+      "activity": "Very minimal physical activity",
+      "anthropometrics": {
+        "height": "5 feet 3 inches",
+        "weight": "162 lb",
+        "bmi": "28.7 kg/m²",
+        "waist_circumference": "38.4 inches"
+      },
+      "biochemical_data": {
+        "hba1c": "5.5% (normal 4.5–6%)",
+        "fasting_blood_glucose": "90 mg/dL (normal 70–100 mg/dL)",
+        "vitamin_d": "6 ng/mL (normal 30.0–74.0 ng/mL — severely deficient)",
+        "cholesterol": "188 mg/dL (normal <200 mg/dL)",
+        "hdl": "34 mg/dL (normal ≥60 mg/dL — low)"
+      }
+    },
+    "nutrition_diagnoses": [
+      "Excessive carbohydrate intake related to knowledge deficit as evidenced by diet history and BMI",
+      "Physical inactivity related to knowledge deficit as evidenced by current physical activity level"
+    ],
+    "intervention": {
+      "meal_plan": "Three meals and two snacks daily, distributing carbohydrates with fat and protein throughout the day",
+      "carbohydrate_education": "Identified carbohydrate content of Indian dishes; learned to balance portions",
+      "protein_sources_added": ["Soy milk", "Yogurt", "Lentils", "Beans", "Edamame", "Quinoa"],
+      "fats": "Increased omega-3 intake via nuts, flaxseeds, chia seeds",
+      "supplements": [
+        "Vitamin D 50,000 IU weekly for 8 weeks",
+        "Ground flaxseed",
+        "Prenatal multivitamin and mineral"
+      ],
+      "activity": "Started with 15 minutes of walking daily, gradually increasing to 45 minutes daily"
+    },
+    "monitoring": [
+      "Record dietary intake including carbohydrate servings, emailed to registered dietitian weekly",
+      "In-person MNT sessions every 3–4 weeks"
+    ],
+    "outcomes": {
+      "weight_loss": "12 lb (8% of baseline body weight) over 6 months",
+      "reproductive_outcome": "Successfully conceived a healthy son through timed intercourse",
+      "gestational_outcome": "Glucose tolerance test normal during pregnancy",
+      "key_lesson": "Even modest weight loss (8%) combined with dietary restructuring and physical activity can restore fertility in PCOS without pharmacological ovulation induction"
+    }
+  },
+
+  "evidence_grades": {
+    "system": "SORT (Strength of Recommendation Taxonomy) — used by American Family Physician",
+    "grades": [
+      {
+        "grade": "A",
+        "meaning": "Consistent, good-quality patient-oriented evidence",
+        "examples_in_pcos": [
+          "Hormonal contraception as initial treatment for menstrual irregularity, hirsutism, and acne in non-pregnant PCOS patients",
+          "Letrozole as first-line drug therapy for ovulation induction"
+        ]
+      },
+      {
+        "grade": "B",
+        "meaning": "Inconsistent or limited-quality patient-oriented evidence",
+        "examples_in_pcos": [
+          "Metformin ≥1,500 mg/day for PCOS patients with metabolic abnormalities"
+        ]
+      },
+      {
+        "grade": "C",
+        "meaning": "Consensus, disease-oriented evidence, usual practice, expert opinion, or case series",
+        "examples_in_pcos": [
+          "Evaluating for thyroid dysfunction, hyperprolactinaemia, and congenital adrenal hyperplasia in suspected PCOS",
+          "Biochemical hyperandrogenism testing at least 3 months after stopping hormonal contraception",
+          "Evaluating all PCOS patients for metabolic abnormalities",
+          "Calorie-restricted diet for overweight PCOS patients"
+        ]
+      }
+    ]
+  },
+
+  "key_clinical_recommendations": [
+    {
+      "recommendation": "All nonpregnant patients with suspected PCOS should be evaluated for thyroid dysfunction, hyperprolactinaemia, and nonclassic congenital adrenal hyperplasia.",
+      "evidence_grade": "C",
+      "source": "Expert opinion and consensus guideline"
+    },
+    {
+      "recommendation": "Patients can be evaluated biochemically for hyperandrogenism at least 3 months after stopping hormonal contraception.",
+      "evidence_grade": "C",
+      "source": "Expert opinion and consensus guideline"
+    },
+    {
+      "recommendation": "All patients with PCOS should be evaluated for metabolic abnormalities (dyslipidaemia, hypertension, dysglycaemia).",
+      "evidence_grade": "C",
+      "source": "Expert opinion and consensus guideline"
+    },
+    {
+      "recommendation": "A calorie-restricted diet is recommended for all patients with PCOS who are overweight.",
+      "evidence_grade": "C",
+      "source": "Expert opinion and inconsistent RCT results"
+    },
+    {
+      "recommendation": "Metformin ≥1,500 mg/day should be offered to patients with PCOS and metabolic abnormalities (dysglycaemia, dyslipidaemia).",
+      "evidence_grade": "B",
+      "source": "Consistent RCT evidence; likely inferior to lifestyle modification for diabetes prevention"
+    },
+    {
+      "recommendation": "Hormonal contraception should be used as initial treatment for menstrual cycle irregularity, hirsutism, and acne in PCOS patients not wanting pregnancy.",
+      "evidence_grade": "A",
+      "source": "Consistent RCT evidence"
+    },
+    {
+      "recommendation": "Letrozole is the first-line drug therapy for PCOS patients seeking ovulation induction.",
+      "evidence_grade": "A",
+      "source": "Consistent RCT evidence showing improved ovulation rate, pregnancy rate, and live birth rate"
+    },
+    {
+      "recommendation": "Screen all PCOS patients for depression and obstructive sleep apnoea.",
+      "evidence_grade": "C",
+      "source": "Expert opinion based on significantly elevated prevalence data"
+    }
+  ],
+
+  "chatbot_faq": [
+    {
+      "faq_id": "PCOS-FAQ-001",
+      "category": "General",
+      "question": "What is PCOS?",
+      "answer": "Polycystic Ovary Syndrome (PCOS) is the most common hormonal disorder affecting women of childbearing age, estimated to affect 8–13% of women globally. It involves a combination of problems including irregular or absent periods, signs of excess male hormones (androgens) such as excess hair growth and acne, and sometimes small cysts on the ovaries. It also has important metabolic effects including insulin resistance, increased risk of type 2 diabetes, and cardiovascular disease. The exact cause is not fully understood but involves a mix of genetic and environmental factors.",
+      "keywords": ["what is PCOS", "define PCOS", "polycystic ovary syndrome", "overview", "definition"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-002",
+      "category": "General",
+      "question": "How common is PCOS?",
+      "answer": "PCOS affects 8–13% of women of childbearing age (some sources report 4–18% depending on diagnostic criteria used). Approximately 105 million women aged 15–49 worldwide are estimated to have PCOS. It is the most common cause of anovulatory infertility, accounting for 90–95% of anovulatory women seeking infertility treatment.",
+      "keywords": ["prevalence", "how common", "statistics", "how many women", "worldwide"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-003",
+      "category": "Symptoms",
+      "question": "What are the symptoms of PCOS?",
+      "answer": "PCOS symptoms vary widely and can include: (1) Reproductive/gynecological: irregular or absent periods, difficulty getting pregnant, heavy bleeding when periods do occur; (2) Dermatological: excess hair growth (hirsutism) on face, chest, abdomen or back, acne, oily skin, scalp hair thinning or loss (androgenic alopecia), dark velvety skin patches (acanthosis nigricans); (3) Metabolic: weight gain, difficulty losing weight, intense carbohydrate cravings, signs of insulin resistance; (4) Psychological: depression, anxiety, body dissatisfaction. Some women with PCOS have no symptoms at all.",
+      "keywords": ["symptoms", "signs", "what does PCOS feel like", "hair", "acne", "periods", "weight"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-004",
+      "category": "Symptoms",
+      "question": "Can PCOS cause weight gain?",
+      "answer": "Yes. Between 35–60% of women with PCOS are overweight or obese. Insulin resistance — which affects 65–70% of women with PCOS — contributes to weight gain and makes it harder to lose weight. However, PCOS can also occur in women of normal weight. Even without obesity, insulin resistance in PCOS can cause metabolic problems.",
+      "keywords": ["weight gain", "obesity", "overweight", "BMI", "insulin resistance and weight"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-005",
+      "category": "Symptoms",
+      "question": "What is hirsutism and how does it relate to PCOS?",
+      "answer": "Hirsutism is the excessive growth of terminal (coarse, dark) hair in androgen-dependent areas of women's bodies — such as the face (upper lip, chin), chest, abdomen, and back. It occurs in approximately 70% of women with PCOS and is considered one of the best clinical markers of excess androgen (hyperandrogenism). It is assessed using the modified Ferriman-Gallwey scale; a score greater than 8 indicates significant hirsutism (some criteria use ≥4–6 depending on ethnicity). Self-treatment such as waxing or shaving is common and may reduce the apparent severity on assessment.",
+      "keywords": ["hirsutism", "excess hair", "facial hair", "body hair", "Ferriman-Gallwey", "androgen hair"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-006",
+      "category": "Symptoms",
+      "question": "Can PCOS cause hair loss on the scalp?",
+      "answer": "Yes. Androgenic alopecia (pattern hair loss) can occur in women with PCOS due to excess androgens. It typically presents as diffuse thinning over the crown of the scalp (central part-line widening) rather than the hairline recession seen in men. It is assessed using the Ludwig visual scale. This can have significant psychosocial impact. Most patients with androgenic alopecia actually have normal endocrine function, so other signs of hyperandrogenism should be assessed alongside.",
+      "keywords": ["hair loss", "scalp hair", "alopecia", "thinning hair", "androgenic alopecia"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-007",
+      "category": "Symptoms",
+      "question": "What is acanthosis nigricans and is it related to PCOS?",
+      "answer": "Acanthosis nigricans is a skin condition characterised by brown, velvety, raised patches in skin folds — most commonly on the neck, armpits, groin, and under the breasts. It occurs in approximately 5% of women with PCOS and is a sign of significant insulin resistance. Skin tags and rough patches on the elbows may also appear. When severe and extensive, especially with mucosal involvement, it may indicate an underlying malignancy, though this is uncommon.",
+      "keywords": ["acanthosis nigricans", "dark skin patches", "velvety skin", "neck", "armpits", "insulin resistance skin"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-008",
+      "category": "Diagnosis",
+      "question": "How is PCOS diagnosed?",
+      "answer": "PCOS is diagnosed clinically using the Rotterdam Criteria (2003), the most widely accepted diagnostic system. After excluding other conditions, a diagnosis requires at least 2 of 3 features: (1) Oligoanovulation (irregular or absent ovulation/periods), (2) Hyperandrogenism (clinical or biochemical signs of excess androgens), (3) Polycystic ovaries on ultrasound. There is no single blood test for PCOS. A pregnancy test, TSH, prolactin, and 17-hydroxyprogesterone are checked first to exclude other conditions.",
+      "keywords": ["how diagnosed", "diagnosis", "Rotterdam criteria", "diagnostic criteria", "PCOS test"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-009",
+      "category": "Diagnosis",
+      "question": "Is a blood test enough to diagnose PCOS?",
+      "answer": "No single blood test can diagnose PCOS. Blood tests are used to support the diagnosis and exclude other conditions. Hormonal tests (free testosterone, free androgen index) help confirm hyperandrogenism. Blood tests for TSH, prolactin, and 17-hydroxyprogesterone are done to rule out thyroid disease, hyperprolactinaemia, and congenital adrenal hyperplasia. Metabolic tests (glucose, lipids) assess comorbidities. The diagnosis ultimately requires clinical assessment using the Rotterdam Criteria.",
+      "keywords": ["blood test", "hormonal test", "testosterone", "diagnosis", "lab tests"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-010",
+      "category": "Diagnosis",
+      "question": "Do I need an ultrasound to be diagnosed with PCOS?",
+      "answer": "Not necessarily. An ultrasound showing polycystic ovaries is just one of three Rotterdam criteria. If you already meet 2 of the 3 criteria (e.g., irregular periods AND clinical signs of hyperandrogenism), an ultrasound is not required to make the diagnosis. If you only have one of the other two criteria, an ultrasound finding of polycystic ovaries could complete the diagnosis. Importantly, polycystic ovaries are found on ultrasound in up to 62% of women with normal ovulation — so the ultrasound alone is not diagnostic.",
+      "keywords": ["ultrasound", "ovarian cysts", "scan", "needed for diagnosis", "transvaginal ultrasound"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-011",
+      "category": "Diagnosis",
+      "question": "Can teenagers be diagnosed with PCOS?",
+      "answer": "Yes, but diagnosis in adolescents is more challenging because irregular periods and polycystic ovaries can be a normal part of puberty. In adolescents, both oligoanovulation AND hyperandrogenism must be present for at least 2 years after the first period (menarche) to diagnose PCOS. Ultrasound findings are NOT used as a diagnostic criterion in this age group because polycystic ovary morphology is present in 30–40% of healthy adolescents. Progressive hirsutism is the most reliable early marker in teenagers.",
+      "keywords": ["teenager", "adolescent", "young woman", "teenage PCOS", "diagnosis in teens", "puberty"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-012",
+      "category": "Diagnosis",
+      "question": "Can PCOS be diagnosed if I have regular periods?",
+      "answer": "Yes, potentially. The Rotterdam Criteria only require 2 of 3 features. If you have regular periods (ruling out oligoanovulation as a criterion), you could still be diagnosed with PCOS if you have BOTH hyperandrogenism AND polycystic ovaries on ultrasound. This is sometimes called 'ovulatory PCOS' or PCOS phenotype C.",
+      "keywords": ["regular periods", "ovulatory PCOS", "phenotype C", "normal periods", "still have PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-013",
+      "category": "Diagnosis",
+      "question": "Does having cysts on my ovaries mean I have PCOS?",
+      "answer": "Not necessarily. Polycystic ovaries — follicles of 2–9 mm in diameter on ultrasound — are found in up to 62% of women with completely normal ovulation. These are normal follicles at various stages of development, not the large fluid-filled cysts associated with conditions like ovarian cyst disease. Polycystic ovary morphology alone does not confirm PCOS; you need to meet at least 2 of the 3 Rotterdam Criteria.",
+      "keywords": ["ovarian cysts", "cysts on ovaries", "polycystic ovaries", "normal cysts", "ultrasound cysts"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-014",
+      "category": "Treatment General",
+      "question": "Is PCOS curable?",
+      "answer": "PCOS is a chronic condition — there is no cure. However, it is very manageable. Symptoms can be significantly reduced with lifestyle changes and medications. The underlying hormonal imbalance persists but may improve over time, particularly as women approach menopause when androgen production naturally decreases. Many women with PCOS go on to have regular periods, successful pregnancies, and a good quality of life with appropriate management.",
+      "keywords": ["cure", "curable", "permanent", "lifelong", "can it be cured", "chronic"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-015",
+      "category": "Treatment General",
+      "question": "What is the first step in treating PCOS?",
+      "answer": "The first-line treatment for all women with PCOS (especially those who are overweight) is lifestyle modification — this includes a calorie-restricted diet, regular physical activity, and behavioural strategies. Even a modest weight loss of 5–10% of body weight can significantly improve periods, fertility, hormonal levels, and metabolic health. Dietary changes improve health even without weight loss. After lifestyle interventions, the choice of further treatment depends on what symptoms are most troublesome and whether you want to become pregnant.",
+      "keywords": ["first step", "first-line treatment", "lifestyle", "diet", "exercise", "where to start"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-016",
+      "category": "Treatment General",
+      "question": "What diet should I follow if I have PCOS?",
+      "answer": "No single diet has been proven superior for PCOS. The key principles are: (1) Reduce total calories if overweight; (2) Eat regular balanced meals with carbohydrates, protein, and healthy fats at each meal to stabilise blood sugar; (3) A low-glycaemic diet (focusing on whole grains, legumes, vegetables, lean protein) shows some benefits; (4) Increase omega-3 fatty acids (nuts, flaxseeds, chia seeds, oily fish); (5) Avoid skipping meals, especially breakfast; (6) Distribute carbohydrates throughout the day rather than consuming mostly at night. Tailor dietary changes to your food preferences and cultural background for long-term sustainability.",
+      "keywords": ["diet", "what to eat", "PCOS diet", "food", "nutrition", "low glycaemic", "carbs"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-017",
+      "category": "Treatment General",
+      "question": "How much exercise should I do with PCOS?",
+      "answer": "For adults aged 18–64: aim for at least 150 minutes per week of moderate-intensity activity (such as brisk walking) OR 75 minutes per week of vigorous-intensity activity (such as running), plus strength training at least 2 times per week on non-consecutive days. For adolescents: 60 minutes per day of moderate- to vigorous-intensity activity, plus strength training at least 3 times per week. Exercise improves insulin sensitivity, reduces androgens, helps with weight management, improves lipid levels, lowers blood pressure, and boosts mood.",
+      "keywords": ["exercise", "physical activity", "workout", "how much exercise", "gym", "walking"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-018",
+      "category": "Treatment — Not Seeking Pregnancy",
+      "question": "What medications are used to treat PCOS if I don't want to get pregnant?",
+      "answer": "If you do not want to become pregnant, the main treatments are: (1) Hormonal contraception (oral contraceptive pills) — first-line for irregular periods, hirsutism, and acne; (2) Antiandrogen medications such as spironolactone — second-line for hirsutism and acne (must always be used with contraception as they can harm a male fetus); (3) Metformin — used for insulin resistance, metabolic abnormalities, and as second-line for irregular periods; (4) Anti-obesity medications — if overweight and lifestyle changes insufficient. Lifestyle modification remains the foundation alongside all these treatments.",
+      "keywords": ["medication", "not pregnant", "no pregnancy desired", "pill", "contraceptive", "treatment options"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-019",
+      "category": "Treatment — Not Seeking Pregnancy",
+      "question": "Do I need to take the contraceptive pill for PCOS even if I don't need contraception?",
+      "answer": "If you have PCOS and irregular or absent periods but don't need contraception, the pill is still often recommended because it protects the lining of the womb (endometrium) from the effects of unopposed oestrogen, which can lead to endometrial hyperplasia and increase the risk of endometrial cancer. You must have a period (or a withdrawal bleed) at least every 3–4 months. If you don't want the pill, an alternative is periodic progesterone withdrawal — taking progesterone tablets for 10–14 days every few months to trigger a withdrawal bleed.",
+      "keywords": ["need the pill", "contraceptive pill without contraception", "endometrium", "why take pill", "progesterone"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-020",
+      "category": "Treatment — Not Seeking Pregnancy",
+      "question": "What is spironolactone and how does it help PCOS?",
+      "answer": "Spironolactone is an antiandrogen medication that blocks the effects of male hormones (androgens) in the body. In PCOS, it is used as a second-line treatment for hirsutism (excess hair growth) and acne when hormonal contraception alone has not been effective after at least 6 months of use. It is highly effective at reducing facial and body hair and improving acne. IMPORTANT: Spironolactone MUST always be used with effective contraception because it can cause undervirilisation (abnormal development) in a male fetus.",
+      "keywords": ["spironolactone", "antiandrogen", "hirsutism treatment", "acne treatment", "hair removal medication"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-021",
+      "category": "Treatment — Not Seeking Pregnancy",
+      "question": "Can metformin help PCOS?",
+      "answer": "Yes. Metformin (typically at a daily dose of 1,500 mg or higher) helps treat PCOS by improving insulin sensitivity. This reduces circulating androgen levels, can help normalise menstrual cycles and ovulation, and helps manage blood sugar, cholesterol, and triglyceride levels. It is the first-line drug treatment for metabolic manifestations of PCOS (insulin resistance, dysglycaemia, dyslipidaemia), and a second-line option for menstrual irregularities. However, it is likely inferior to lifestyle modification — particularly for preventing diabetes.",
+      "keywords": ["metformin", "glucophage", "insulin sensitiser", "diabetes prevention", "metformin for PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-022",
+      "category": "Fertility",
+      "question": "Does PCOS cause infertility?",
+      "answer": "PCOS is the most common cause of anovulatory infertility — infertility caused by not releasing eggs (anovulation). However, having PCOS does not mean you cannot get pregnant. Most women with PCOS can conceive, often with treatment. With lifestyle changes, ovulation induction medications (like letrozole or clomiphene), or assisted reproductive technologies (IVF), the majority of women with PCOS who want to conceive are able to do so.",
+      "keywords": ["infertility", "can I get pregnant", "fertility", "anovulation", "conceive with PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-023",
+      "category": "Fertility",
+      "question": "What is the best treatment if I have PCOS and want to get pregnant?",
+      "answer": "The first step is lifestyle modification — even a 5–10% weight loss can restore spontaneous ovulation in some women. If that is not enough, the first-line medical treatment for ovulation induction is letrozole (2.5 mg/day for 5 days per cycle). Letrozole is superior to the older drug clomiphene for live birth rates. Clomiphene is the second-line option. Metformin may be added (especially if BMI >30 kg/m²). If oral treatments fail, assisted reproductive technologies (ART) including IVF may be offered.",
+      "keywords": ["want to get pregnant", "fertility treatment", "ovulation induction", "letrozole", "clomiphene", "IVF PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-024",
+      "category": "Fertility",
+      "question": "What is letrozole and how does it help with PCOS fertility?",
+      "answer": "Letrozole is an aromatase inhibitor — a medication that temporarily lowers oestrogen levels, which stimulates the brain to release more FSH (follicle-stimulating hormone), triggering the ovaries to develop and release an egg. It is taken as a 2.5 mg tablet once daily for 5 days per cycle, starting on day 2–5 of the menstrual cycle. If no pregnancy after one cycle, the dose can be increased up to 7.5 mg. It is now the first-line fertility treatment for PCOS, and studies show it produces higher live birth rates than clomiphene. It is used off-label (not FDA-approved for PCOS, but this is well-supported by evidence).",
+      "keywords": ["letrozole", "Femara", "aromatase inhibitor", "how letrozole works", "fertility pill PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-025",
+      "category": "Fertility",
+      "question": "What is clomiphene and how is it different from letrozole?",
+      "answer": "Clomiphene (also called clomid) is a selective oestrogen receptor modulator. It blocks oestrogen receptors in the brain, tricking the body into producing more FSH to stimulate egg development. It has been used for decades and is FDA-approved for ovulatory dysfunction. However, research now shows letrozole has higher live birth rates and fewer multiple pregnancies. Clomiphene is therefore second-line after letrozole. Both drugs carry a small increased risk of twins or multiple pregnancies.",
+      "keywords": ["clomiphene", "clomid", "how clomid works", "clomid vs letrozole", "clomid PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-026",
+      "category": "Fertility",
+      "question": "Should I lose weight before trying to get pregnant with PCOS?",
+      "answer": "Yes, weight loss before fertility treatment is generally recommended. A secondary analysis of two RCTs found that delaying ovulation-inducing pharmacotherapy until after achieving approximately 6% weight loss in a 16-week programme resulted in significantly higher rates of ovulation and live birth. Both ESHRE and ASRM (the major reproductive medicine societies) recommend lifestyle modification including modest weight loss before interventions for ovulation induction are considered. Even a 5–10% reduction in body weight can significantly improve fertility in overweight women with PCOS.",
+      "keywords": ["weight loss before pregnancy", "lose weight fertility", "obesity and PCOS fertility", "preconception weight loss"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-027",
+      "category": "Metabolic Health",
+      "question": "Does PCOS increase my risk of diabetes?",
+      "answer": "Yes, significantly. Women with PCOS have a 2.5-fold increased prevalence of impaired glucose tolerance (pre-diabetes) and a 4-fold increased prevalence of type 2 diabetes compared to women without PCOS. Approximately 30–40% of PCOS patients have impaired glucose tolerance and 7.5–10% have type 2 diabetes. The annual progression from normal glucose to impaired glucose, and from impaired glucose to type 2 diabetes, is substantially faster in women with PCOS — especially if obese with a family history of diabetes.",
+      "keywords": ["diabetes risk", "type 2 diabetes", "insulin resistance", "pre-diabetes", "blood sugar PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-028",
+      "category": "Metabolic Health",
+      "question": "How should I be screened for diabetes if I have PCOS?",
+      "answer": "Your doctor should assess your blood sugar levels at baseline using an oral glucose tolerance test (OGTT), fasting plasma glucose, or HbA1c. The OGTT (75g glucose drink, measured at 2 hours) is preferred for high-risk patients (BMI >25 kg/m² in non-Asian women, >23 kg/m² in Asian women; history of impaired fasting glucose or gestational diabetes; family history of T2DM; hypertension; or high-risk ethnicity). This should be repeated every 1–3 years. If you are planning a pregnancy, an OGTT should be done during preconception counselling.",
+      "keywords": ["diabetes screening", "OGTT", "blood sugar test", "HbA1c", "glucose test PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-029",
+      "category": "Metabolic Health",
+      "question": "Does PCOS increase my risk of heart disease?",
+      "answer": "Yes. PCOS is associated with a 4- to 7-fold higher risk of heart attack compared to women of the same age without PCOS. CVD risk factors — hypertension, abnormal lipids, impaired blood vessel function, insulin resistance, and obesity — frequently accompany PCOS. In the US, 33–47% of women with PCOS have metabolic syndrome, 2–3 times the rate of age-matched healthy women. Women with PCOS who also have metabolic syndrome or type 2 diabetes are at the highest CVD risk. Regular monitoring of blood pressure and lipids is essential.",
+      "keywords": ["heart disease", "cardiovascular risk", "heart attack", "CVD", "metabolic syndrome PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-030",
+      "category": "Metabolic Health",
+      "question": "Does PCOS increase the risk of cancer?",
+      "answer": "Women with PCOS have at least a twofold increased risk of endometrial (womb lining) cancer compared to the general population. This is because chronic anovulation leads to prolonged oestrogen exposure without progesterone, which can cause endometrial hyperplasia (thickening) that may progress to cancer. Obesity also contributes. However, the absolute risk remains relatively low. Routine endometrial cancer screening is not recommended, but a low threshold for evaluation should be maintained — particularly if you have prolonged absent periods or abnormal bleeding.",
+      "keywords": ["cancer risk", "endometrial cancer", "womb cancer", "uterine cancer", "cancer screening PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-031",
+      "category": "Mental Health",
+      "question": "Can PCOS affect my mental health?",
+      "answer": "Yes. Women with PCOS have more than twice the prevalence of depression and anxiety compared to women without PCOS. They also suffer from greater body dissatisfaction and are at increased risk of eating disorders. The physical symptoms of PCOS (hirsutism, acne, weight gain, hair loss) can significantly affect self-image and psychological wellbeing. All women with PCOS should be screened for depression and anxiety and offered evidence-based treatment when needed. Regular physical activity can also help improve mood and body image.",
+      "keywords": ["depression", "anxiety", "mental health", "body image", "PCOS emotional effects", "mood"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-032",
+      "category": "Mental Health",
+      "question": "Does PCOS cause sleep problems?",
+      "answer": "Yes. Women with PCOS have a nearly fourfold increased prevalence of obstructive sleep apnoea (OSA) compared to women without PCOS. OSA causes breathing interruptions during sleep, leading to poor sleep quality, daytime fatigue, and increased cardiovascular risk. All women with PCOS should be screened for sleep apnoea. If you experience loud snoring, waking up gasping, or excessive daytime sleepiness, discuss this with your doctor.",
+      "keywords": ["sleep apnoea", "sleep", "OSA", "snoring", "tired", "sleep problems PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-033",
+      "category": "Genetics",
+      "question": "Is PCOS genetic — will I pass it on?",
+      "answer": "PCOS has a significant genetic component. Approximately 20–40% of first-degree female relatives of women with PCOS will develop PCOS themselves (compared to 4–6% prevalence in the general population). Many women with PCOS have female relatives with the condition, even if it was never formally diagnosed (e.g., mothers or sisters with irregular periods or infertility). The genetic inheritance is polygenic — many genes each make a small contribution — compounded by environmental and lifestyle factors.",
+      "keywords": ["genetics", "hereditary", "family history", "pass on", "daughters PCOS", "genetic risk"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-034",
+      "category": "Genetics",
+      "question": "What causes PCOS?",
+      "answer": "The exact cause of PCOS is not fully known. It is understood to be a complex multifactorial condition with both genetic and environmental contributions. Key factors include: (1) Genetic predisposition (polygenic — many genes involved in androgen synthesis, insulin signalling, and inflammation); (2) Insulin resistance — possibly from genetic variants in insulin receptors and related enzymes; (3) Dysregulation of the hypothalamic-pituitary-ovarian axis — leading to elevated LH and abnormal androgen production; (4) Abnormal steroidogenesis — excessive androgen production by the ovaries and/or adrenal glands; (5) Environmental triggers — unhealthy diet, physical inactivity, and obesity can amplify underlying genetic predisposition.",
+      "keywords": ["what causes PCOS", "cause", "why do I have PCOS", "aetiology", "pathophysiology", "etiology"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-035",
+      "category": "Adolescence",
+      "question": "My teenage daughter has irregular periods. Could she have PCOS?",
+      "answer": "Irregular periods are common in the first 2–3 years after a girl's first period (menarche) because the hormonal axis is still maturing. By the third year after menarche, 95% of adolescents have established regular cycles (every 21–45 days). If irregular periods persist beyond 2 years after menarche and your daughter also has clinical signs of excess androgens (progressive hirsutism — not just common adolescent acne), PCOS should be considered. An ultrasound is NOT used to diagnose PCOS in adolescents. A formal PCOS evaluation including blood tests for hormones (testosterone, TSH, prolactin, 17-OHP) is recommended.",
+      "keywords": ["teenage daughter", "irregular periods teenager", "adolescent PCOS", "young girl PCOS", "puberty periods"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-036",
+      "category": "Pregnancy",
+      "question": "Can I have a healthy pregnancy if I have PCOS?",
+      "answer": "Yes — most women with PCOS can have healthy pregnancies, though they face higher risks than women without PCOS. Women with PCOS who become pregnant have an increased risk of gestational diabetes mellitus and first-trimester miscarriage. They should be monitored closely during pregnancy. A 75-g OGTT should be offered at <20 weeks' gestation (if not done preconception), and repeated at 24–28 weeks if normal. Good glycaemic control, weight management, and regular antenatal care are important.",
+      "keywords": ["pregnancy", "pregnant with PCOS", "healthy pregnancy", "gestational diabetes", "miscarriage risk"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-037",
+      "category": "Pregnancy",
+      "question": "What screening should I have before trying to conceive if I have PCOS?",
+      "answer": "Before trying to conceive with PCOS, you should have: (1) A 75-g oral glucose tolerance test (OGTT) to check for diabetes or pre-diabetes; (2) A fasting lipid profile; (3) Blood pressure check; (4) Screening for depression and obstructive sleep apnoea; (5) Discussion about lifestyle changes (weight loss, diet, exercise) before starting fertility treatments — this significantly improves outcomes. Your doctor may also check for other infertility causes (partner's sperm, tubal patency) before starting ovulation induction.",
+      "keywords": ["preconception", "before trying to conceive", "fertility screening", "pregnancy planning PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-038",
+      "category": "Diagnosis",
+      "question": "Could my PCOS be missed or misdiagnosed?",
+      "answer": "Yes — PCOS is frequently underdiagnosed. This happens because: (1) PCOS has many different presentations (phenotypes), so one woman's experience can be very different from another's; (2) Symptoms like irregular periods and acne are common and often dismissed; (3) Oral contraceptive use can 'hide' PCOS by regulating periods and lowering androgen levels; (4) Androgen testing can be unreliable if done while on hormonal contraception; (5) Not all clinicians are familiar with the full diversity of PCOS presentations. If you suspect you have PCOS, ask your GP or gynaecologist for a full PCOS evaluation.",
+      "keywords": ["missed diagnosis", "misdiagnosed", "underdiagnosed", "not diagnosed", "PCOS missed"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-039",
+      "category": "Diagnosis",
+      "question": "Can the contraceptive pill hide PCOS?",
+      "answer": "Yes. Oral contraceptives can temporarily mask PCOS by lowering androgen levels, preventing visible signs of hyperandrogenism (hirsutism, acne), and regulating the menstrual cycle. Women may only discover they have PCOS when they stop the pill (e.g., when trying to conceive) and symptoms reappear. For accurate androgen testing, blood tests should be done at least 3 months after stopping hormonal contraception.",
+      "keywords": ["pill hiding PCOS", "contraceptive pill masking", "stopping pill PCOS", "androgen test after pill"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-040",
+      "category": "Vitamin D",
+      "question": "Should I take vitamin D for PCOS?",
+      "answer": "Vitamin D deficiency is common in women with PCOS. There is some evidence that vitamin D supplementation may improve reproductive function and insulin sensitivity. Testing vitamin D levels is recommended, and supplementation may be warranted if levels are low — particularly in women undergoing IVF. However, more randomised controlled trials are needed before a strong recommendation can be made. Discuss with your doctor or dietitian whether supplementation is appropriate for you.",
+      "keywords": ["vitamin D", "supplements", "vitamin D PCOS", "deficiency", "supplementation"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-041",
+      "category": "Treatment — Not Seeking Pregnancy",
+      "question": "How is PCOS-related acne treated?",
+      "answer": "Acne in PCOS is best treated by addressing the underlying hormonal imbalance: (1) Hormonal contraception (oral contraceptive pill) is first-line — it reduces androgen levels that drive acne; (2) Standard topical acne therapy (retinoids, antibiotics, benzoyl peroxide) can be combined with the pill or used alongside; (3) If acne persists after at least 6 months of oral contraceptive use, antiandrogen medications such as spironolactone can be added (second-line) — must always be used with contraception; (4) Metformin is third-line for acne in PCOS.",
+      "keywords": ["acne treatment", "PCOS acne", "pimples", "spots", "hormonal acne", "skin"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-042",
+      "category": "Lifestyle",
+      "question": "Does stress make PCOS worse?",
+      "answer": "Chronic stress can worsen PCOS indirectly. Stress triggers the release of cortisol and other hormones that can increase insulin resistance, promote weight gain (particularly abdominal fat), and worsen inflammation — all of which aggravate PCOS symptoms. Stress can also trigger stress-related eating and poor dietary choices. Women with PCOS should be screened for mood and anxiety disorders, and stress-management strategies (regular exercise, mindfulness, adequate sleep) should be part of comprehensive PCOS management.",
+      "keywords": ["stress", "cortisol", "mental health", "anxiety PCOS", "stress makes PCOS worse"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-043",
+      "category": "Lifestyle",
+      "question": "Can I reverse PCOS with diet and exercise alone?",
+      "answer": "While PCOS cannot be 'reversed' (it is a lifelong condition), diet and exercise can dramatically improve or even resolve many symptoms. For overweight women with PCOS, losing even 5–10% of body weight through diet and exercise has been shown to restore menstrual regularity, improve or restore ovulation, reduce androgen levels, improve insulin sensitivity, and enhance quality of life — sometimes without any medication. For some women, lifestyle changes alone are sufficient. Dietary changes improve health even without significant weight loss.",
+      "keywords": ["reverse PCOS", "cure with diet", "lifestyle cure", "no medication", "diet only", "natural treatment"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-044",
+      "category": "Diagnosis",
+      "question": "What is the difference between the NIH, Rotterdam, and AE-PCOS diagnostic criteria?",
+      "answer": "The three main diagnostic systems for PCOS differ in how strict they are: (1) NIH Criteria (1990) — the most restrictive; requires BOTH chronic anovulation AND clinical/biochemical hyperandrogenism. Does not include polycystic ovaries. (2) Rotterdam Criteria (2003) — the most widely used; requires any 2 of 3 features (anovulation, hyperandrogenism, polycystic ovaries). This is the current recommended standard. (3) AE-PCOS Society Criteria (2006) — requires hyperandrogenism as mandatory plus ovarian dysfunction (anovulation and/or polycystic ovaries). The Rotterdam criteria identify the broadest group of patients.",
+      "keywords": ["NIH criteria", "Rotterdam criteria", "AE-PCOS criteria", "different criteria", "diagnostic systems", "comparison"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-045",
+      "category": "General",
+      "question": "Does PCOS get better with age?",
+      "answer": "For many women, PCOS symptoms tend to improve over time. As women approach menopause, androgen production naturally decreases, menstrual cycles often become more regular, and reproductive symptoms improve. However, the underlying metabolic risks (insulin resistance, cardiovascular disease risk) may persist or even worsen if not actively managed throughout life. Research on the impact of PCOS on cardiovascular risk in postmenopausal years is still inconclusive. Lifelong monitoring of blood pressure, lipids, and blood sugar remains important.",
+      "keywords": ["does PCOS get better", "age", "menopause", "improve over time", "PCOS and aging", "lifetime"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-046",
+      "category": "Treatment — Not Seeking Pregnancy",
+      "question": "What are anti-obesity medications and when are they used in PCOS?",
+      "answer": "Anti-obesity medications are used as second-line treatment for overweight or obese women with PCOS when lifestyle modification alone has not been sufficient. They are not a replacement for diet and exercise but can support greater weight loss and metabolic improvement. Examples include GLP-1 receptor agonists (such as semaglutide or liraglutide), which also have evidence for improving insulin resistance — particularly relevant in PCOS. Your doctor will discuss the most appropriate option based on your health profile.",
+      "keywords": ["anti-obesity medication", "weight loss medication", "semaglutide", "GLP-1", "obesity drugs PCOS"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-047",
+      "category": "General",
+      "question": "Is PCOS related to polycystic kidney disease?",
+      "answer": "No. PCOS (Polycystic Ovary Syndrome) and polycystic kidney disease (PKD) are completely different and unrelated conditions. PCOS involves small follicular cysts on the ovaries as part of a hormonal syndrome, whereas PKD involves large fluid-filled cysts in the kidneys caused by a genetic mutation. Having PCOS does not increase your risk of PKD.",
+      "keywords": ["polycystic kidney disease", "PKD", "different conditions", "cysts in kidney", "PCOS vs PKD"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-048",
+      "category": "General",
+      "question": "Can men be affected by PCOS?",
+      "answer": "PCOS is a condition that specifically affects people with ovaries. However, male relatives of women with PCOS may carry related genetic variants that manifest differently — for example, insulin resistance, early-onset baldness, or metabolic syndrome. First-degree male relatives (brothers, sons) of women with PCOS may have higher rates of metabolic and hormonal abnormalities, though they do not develop PCOS itself.",
+      "keywords": ["men PCOS", "male relatives", "can men have PCOS", "brothers PCOS", "genetic transmission"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-049",
+      "category": "Treatment General",
+      "question": "When should I see a specialist for PCOS?",
+      "answer": "Most PCOS can be managed by a GP (general practitioner) or family physician. You should consider a specialist referral (gynaecologist, endocrinologist, reproductive endocrinologist, or fertility specialist) if: (1) You are having difficulty conceiving and need ovulation induction; (2) Your symptoms are severe or not responding to standard treatment; (3) You have significant metabolic complications (uncontrolled diabetes, severe metabolic syndrome); (4) The diagnosis is uncertain; (5) You need advanced fertility treatments such as IVF; (6) You have significant psychological complications needing specialist support.",
+      "keywords": ["specialist", "referral", "gynaecologist", "endocrinologist", "fertility specialist", "when to see specialist"]
+    },
+    {
+      "faq_id": "PCOS-FAQ-050",
+      "category": "Metabolic Health",
+      "question": "What is the connection between PCOS and insulin resistance?",
+      "answer": "Insulin resistance is central to PCOS pathophysiology and is present in approximately 65–70% of women with PCOS — even those of normal weight. When cells don't respond properly to insulin, the pancreas compensates by producing more insulin (hyperinsulinemia). This excess insulin then: (1) Stimulates the ovaries and adrenal glands to produce more androgens; (2) Reduces the liver's production of SHBG, raising free testosterone levels; (3) Interferes with follicle development and ovulation; (4) Promotes endometrial cell proliferation. This is why treating insulin resistance (through lifestyle modification, metformin, or newer agents) is fundamental to managing PCOS.",
+      "keywords": ["insulin resistance", "hyperinsulinemia", "insulin and PCOS", "connection insulin", "blood sugar and PCOS"]
+    }
+  ],
+
+  "chatbot_intent_mapping": {
+    "title": "Intent-to-FAQ Routing Table for PCOS Chatbot",
+    "intents": [
+      { "intent": "define_pcos", "trigger_phrases": ["what is PCOS", "what does PCOS mean", "explain PCOS", "polycystic ovary"], "faq_ids": ["PCOS-FAQ-001"] },
+      { "intent": "pcos_prevalence", "trigger_phrases": ["how common", "how many women", "statistics", "prevalence"], "faq_ids": ["PCOS-FAQ-002"] },
+      { "intent": "pcos_symptoms", "trigger_phrases": ["symptoms", "signs", "what does PCOS cause", "features"], "faq_ids": ["PCOS-FAQ-003"] },
+      { "intent": "pcos_weight", "trigger_phrases": ["weight gain", "obesity", "overweight", "fat", "BMI"], "faq_ids": ["PCOS-FAQ-004"] },
+      { "intent": "hirsutism", "trigger_phrases": ["excess hair", "facial hair", "hirsutism", "body hair"], "faq_ids": ["PCOS-FAQ-005"] },
+      { "intent": "hair_loss", "trigger_phrases": ["hair loss", "scalp hair", "thinning hair", "alopecia"], "faq_ids": ["PCOS-FAQ-006"] },
+      { "intent": "acanthosis_nigricans", "trigger_phrases": ["dark patches", "skin patches", "acanthosis"], "faq_ids": ["PCOS-FAQ-007"] },
+      { "intent": "pcos_diagnosis", "trigger_phrases": ["how diagnosed", "diagnosis", "how do I know I have PCOS"], "faq_ids": ["PCOS-FAQ-008", "PCOS-FAQ-009", "PCOS-FAQ-010"] },
+      { "intent": "pcos_blood_test", "trigger_phrases": ["blood test", "lab test", "hormones", "testosterone test"], "faq_ids": ["PCOS-FAQ-009"] },
+      { "intent": "pcos_ultrasound", "trigger_phrases": ["ultrasound", "scan", "cysts on ovaries", "ovarian cysts"], "faq_ids": ["PCOS-FAQ-010", "PCOS-FAQ-013"] },
+      { "intent": "pcos_teens", "trigger_phrases": ["teenager", "adolescent", "my daughter", "teenage PCOS", "puberty"], "faq_ids": ["PCOS-FAQ-011", "PCOS-FAQ-035"] },
+      { "intent": "pcos_regular_periods", "trigger_phrases": ["regular periods PCOS", "still get period", "normal cycle PCOS"], "faq_ids": ["PCOS-FAQ-012"] },
+      { "intent": "ovarian_cysts", "trigger_phrases": ["ovarian cysts", "cysts", "polycystic ovaries"], "faq_ids": ["PCOS-FAQ-013"] },
+      { "intent": "pcos_curable", "trigger_phrases": ["can PCOS be cured", "is PCOS permanent", "cure for PCOS", "go away"], "faq_ids": ["PCOS-FAQ-014"] },
+      { "intent": "pcos_first_treatment", "trigger_phrases": ["first step treatment", "where to start", "first-line", "how to start treating"], "faq_ids": ["PCOS-FAQ-015"] },
+      { "intent": "pcos_diet", "trigger_phrases": ["diet", "what to eat", "food", "nutrition", "eating plan", "meal plan"], "faq_ids": ["PCOS-FAQ-016"] },
+      { "intent": "pcos_exercise", "trigger_phrases": ["exercise", "workout", "physical activity", "gym", "how much exercise"], "faq_ids": ["PCOS-FAQ-017"] },
+      { "intent": "pcos_medications_no_pregnancy", "trigger_phrases": ["medication", "not pregnant", "treatment no pregnancy", "drugs for PCOS"], "faq_ids": ["PCOS-FAQ-018"] },
+      { "intent": "pcos_pill", "trigger_phrases": ["contraceptive pill", "oral contraceptive", "birth control pill", "OCP"], "faq_ids": ["PCOS-FAQ-019"] },
+      { "intent": "spironolactone", "trigger_phrases": ["spironolactone", "antiandrogen", "hair medication", "aldactone"], "faq_ids": ["PCOS-FAQ-020"] },
+      { "intent": "metformin", "trigger_phrases": ["metformin", "glucophage", "insulin sensitiser", "diabetes medication PCOS"], "faq_ids": ["PCOS-FAQ-021"] },
+      { "intent": "pcos_infertility", "trigger_phrases": ["infertility", "can I get pregnant", "fertility", "anovulation"], "faq_ids": ["PCOS-FAQ-022"] },
+      { "intent": "pcos_fertility_treatment", "trigger_phrases": ["fertility treatment", "want to get pregnant", "ovulation induction", "IVF"], "faq_ids": ["PCOS-FAQ-023"] },
+      { "intent": "letrozole", "trigger_phrases": ["letrozole", "Femara", "aromatase inhibitor", "fertility pill"], "faq_ids": ["PCOS-FAQ-024"] },
+      { "intent": "clomiphene", "trigger_phrases": ["clomiphene", "clomid", "clomifene", "fertility drug"], "faq_ids": ["PCOS-FAQ-025"] },
+      { "intent": "weight_loss_before_pregnancy", "trigger_phrases": ["lose weight before pregnant", "weight loss fertility", "preconception weight"], "faq_ids": ["PCOS-FAQ-026"] },
+      { "intent": "diabetes_risk", "trigger_phrases": ["diabetes", "blood sugar", "insulin resistance", "type 2 diabetes risk"], "faq_ids": ["PCOS-FAQ-027", "PCOS-FAQ-028"] },
+      { "intent": "heart_disease_risk", "trigger_phrases": ["heart disease", "cardiovascular", "heart attack", "CVD risk"], "faq_ids": ["PCOS-FAQ-029"] },
+      { "intent": "cancer_risk", "trigger_phrases": ["cancer", "endometrial cancer", "womb cancer", "uterine cancer"], "faq_ids": ["PCOS-FAQ-030"] },
+      { "intent": "mental_health", "trigger_phrases": ["depression", "anxiety", "mental health", "mood", "body image"], "faq_ids": ["PCOS-FAQ-031"] },
+      { "intent": "sleep_apnoea", "trigger_phrases": ["sleep apnoea", "OSA", "snoring", "sleep problems", "tired"], "faq_ids": ["PCOS-FAQ-032"] },
+      { "intent": "genetics", "trigger_phrases": ["genetics", "hereditary", "family history", "will I pass it on", "daughters"], "faq_ids": ["PCOS-FAQ-033", "PCOS-FAQ-034"] },
+      { "intent": "pcos_cause", "trigger_phrases": ["what causes PCOS", "why do I have PCOS", "cause", "aetiology"], "faq_ids": ["PCOS-FAQ-034"] },
+      { "intent": "pregnancy_risks", "trigger_phrases": ["healthy pregnancy", "pregnancy complications", "gestational diabetes", "miscarriage"], "faq_ids": ["PCOS-FAQ-036"] },
+      { "intent": "preconception", "trigger_phrases": ["before pregnancy", "trying to conceive", "preconception screening", "fertility planning"], "faq_ids": ["PCOS-FAQ-037"] },
+      { "intent": "underdiagnosis", "trigger_phrases": ["missed PCOS", "misdiagnosed", "underdiagnosed", "could I have PCOS"], "faq_ids": ["PCOS-FAQ-038"] },
+      { "intent": "pill_masking", "trigger_phrases": ["pill hiding", "contraceptive masking", "pill hiding PCOS", "stopping pill symptoms"], "faq_ids": ["PCOS-FAQ-039"] },
+      { "intent": "vitamin_d", "trigger_phrases": ["vitamin D", "supplement", "vitamins PCOS"], "faq_ids": ["PCOS-FAQ-040"] },
+      { "intent": "acne_treatment", "trigger_phrases": ["acne", "spots", "pimples", "skin treatment PCOS"], "faq_ids": ["PCOS-FAQ-041"] },
+      { "intent": "stress_pcos", "trigger_phrases": ["stress", "cortisol", "anxiety worsens PCOS", "stress and PCOS"], "faq_ids": ["PCOS-FAQ-042"] },
+      { "intent": "lifestyle_reversal", "trigger_phrases": ["reverse PCOS", "cure naturally", "no medication", "diet only treatment"], "faq_ids": ["PCOS-FAQ-043"] },
+      { "intent": "criteria_comparison", "trigger_phrases": ["NIH criteria", "Rotterdam criteria", "AE-PCOS", "different diagnostic systems"], "faq_ids": ["PCOS-FAQ-044"] },
+      { "intent": "pcos_aging", "trigger_phrases": ["does PCOS get better", "age", "menopause", "improve over time"], "faq_ids": ["PCOS-FAQ-045"] },
+      { "intent": "anti_obesity_meds", "trigger_phrases": ["anti-obesity", "weight loss medication", "semaglutide", "GLP-1"], "faq_ids": ["PCOS-FAQ-046"] },
+      { "intent": "pcos_vs_pkd", "trigger_phrases": ["polycystic kidney", "PKD", "kidney cysts", "difference conditions"], "faq_ids": ["PCOS-FAQ-047"] },
+      { "intent": "pcos_men", "trigger_phrases": ["can men have PCOS", "male PCOS", "brothers", "genetic males"], "faq_ids": ["PCOS-FAQ-048"] },
+      { "intent": "specialist_referral", "trigger_phrases": ["see specialist", "referral", "gynaecologist", "endocrinologist", "fertility clinic"], "faq_ids": ["PCOS-FAQ-049"] },
+      { "intent": "insulin_resistance_connection", "trigger_phrases": ["insulin resistance", "insulin and PCOS", "how insulin affects", "hyperinsulinemia"], "faq_ids": ["PCOS-FAQ-050"] }
+    ]
+  },
+
+  "glossary": [
+    { "term": "PCOS", "definition": "Polycystic Ovary Syndrome — the most common hormonal disorder in women of reproductive age, characterised by hyperandrogenism, ovulatory dysfunction, and often polycystic ovaries" },
+    { "term": "Oligoanovulation", "definition": "Infrequent or absent ovulation, resulting in irregular or absent periods. A key feature of PCOS." },
+    { "term": "Oligomenorrhoea", "definition": "Infrequent periods (fewer than 8 cycles per year, or cycles longer than 35 days)" },
+    { "term": "Amenorrhoea", "definition": "Absence of periods — primary (never started) or secondary (previously regular then stopped)" },
+    { "term": "Hyperandrogenism", "definition": "Excess androgens (male-type hormones such as testosterone) — either clinically evident (hirsutism, acne, alopecia) or biochemically measurable" },
+    { "term": "Androgens", "definition": "Male sex hormones including testosterone, DHEA (dehydroepiandrosterone), DHEA-S, and androstenedione — present in both sexes but elevated in PCOS" },
+    { "term": "Insulin resistance", "definition": "A condition where cells don't respond normally to insulin, requiring the pancreas to produce more insulin (hyperinsulinemia) to maintain blood glucose control" },
+    { "term": "Hyperinsulinemia", "definition": "Elevated insulin levels in the blood, resulting from the pancreas overcompensating for insulin resistance" },
+    { "term": "SHBG", "definition": "Sex Hormone-Binding Globulin — a protein that binds to sex hormones, making them inactive. Low SHBG means more free (active) testosterone." },
+    { "term": "Free testosterone", "definition": "The unbound, biologically active fraction of testosterone. Elevated in PCOS due to reduced SHBG." },
+    { "term": "Hirsutism", "definition": "Excessive growth of terminal (coarse, dark) hair in a male pattern distribution (face, chest, abdomen, back) in women. Present in ~70% of women with PCOS." },
+    { "term": "Ferriman-Gallwey Score", "definition": "A standardised scoring system (modified version) used to quantify the degree of hirsutism. Score ≥8 (or ≥4–6 depending on ethnicity) indicates significant hirsutism in Rotterdam criteria." },
+    { "term": "Acanthosis nigricans", "definition": "Brown, velvety skin patches in body folds (neck, armpits, groin) — a sign of insulin resistance" },
+    { "term": "Rotterdam Criteria", "definition": "The 2003 ESHRE/ASRM diagnostic criteria for PCOS, requiring at least 2 of 3 features: oligoanovulation, hyperandrogenism, polycystic ovaries on ultrasound. The current internationally endorsed standard." },
+    { "term": "Letrozole", "definition": "An aromatase inhibitor used as first-line treatment for ovulation induction in PCOS. Superior to clomiphene for live birth rates. Used off-label." },
+    { "term": "Clomiphene (Clomifene)", "definition": "A selective oestrogen receptor modulator (SERM) used as second-line treatment for ovulation induction. FDA-approved for ovulatory dysfunction." },
+    { "term": "Metformin", "definition": "A biguanide insulin sensitiser used to treat insulin resistance and metabolic complications of PCOS. First-line drug for metabolic manifestations; second-line for menstrual irregularities." },
+    { "term": "Spironolactone", "definition": "An antiandrogen medication used as second-line treatment for hirsutism and acne in PCOS. Must be used with effective contraception (teratogenic to male fetus)." },
+    { "term": "Anovulation", "definition": "Failure to release an egg (ovulate) — the primary mechanism of infertility in PCOS" },
+    { "term": "LH", "definition": "Luteinising hormone — elevated relative to FSH in PCOS, driving excess androgen production by theca cells" },
+    { "term": "FSH", "definition": "Follicle-stimulating hormone — relatively reduced in PCOS, contributing to abnormal follicle development" },
+    { "term": "LH/FSH ratio", "definition": "The ratio of luteinising hormone to follicle-stimulating hormone — elevated in most women with PCOS, reflecting abnormal gonadotropin secretion" },
+    { "term": "Polycystic ovaries", "definition": "Ovaries containing multiple small follicles (2–9 mm diameter) on ultrasound — present in ~75% of PCOS, but also found in ~62% of normal ovulating women" },
+    { "term": "Endometrial hyperplasia", "definition": "Thickening of the womb lining, caused by prolonged oestrogen exposure without progesterone. Can progress to endometrial cancer if untreated." },
+    { "term": "Eflornithine", "definition": "A topical cream that slows facial hair growth — can be used as second-line therapy for hirsutism in women not seeking pregnancy" },
+    { "term": "IGT", "definition": "Impaired Glucose Tolerance (pre-diabetes) — a state between normal glucose metabolism and type 2 diabetes. Affects 30–40% of PCOS patients." },
+    { "term": "Metabolic syndrome", "definition": "A cluster of conditions (abdominal obesity, hypertension, elevated triglycerides, low HDL, impaired fasting glucose) that together markedly increase cardiovascular disease risk" },
+    { "term": "OSA", "definition": "Obstructive Sleep Apnoea — a sleep disorder where breathing repeatedly stops during sleep. Fourfold more common in women with PCOS." },
+    { "term": "MNT", "definition": "Medical Nutrition Therapy — structured dietary counselling and intervention by a registered dietitian, based on individual assessment and evidence-based guidelines" },
+    { "term": "Aromatase inhibitor", "definition": "A drug class that blocks the aromatase enzyme, reducing oestrogen production. Letrozole is an aromatase inhibitor used for ovulation induction in PCOS." },
+    { "term": "SERM", "definition": "Selective Oestrogen Receptor Modulator — a drug class that blocks oestrogen receptors in some tissues. Clomiphene is a SERM used for ovulation induction." },
+    { "term": "OGTT", "definition": "Oral Glucose Tolerance Test — a diagnostic test for diabetes or pre-diabetes where blood glucose is measured before and 2 hours after drinking a 75g glucose solution" },
+    { "term": "DHEA / DHEA-S", "definition": "Dehydroepiandrosterone / Dehydroepiandrosterone sulphate — androgens produced by the adrenal glands; elevated in 20–25% of women with PCOS" },
+    { "term": "5α-reductase", "definition": "An enzyme that converts testosterone to dihydrotestosterone (DHT), the most potent androgen. Increased activity in hair follicles in PCOS drives hirsutism." },
+    { "term": "DHT", "definition": "Dihydrotestosterone — the most potent androgen; produced from testosterone by 5α-reductase. Key driver of hirsutism and androgenic alopecia." },
+    { "term": "Androgenic alopecia", "definition": "Pattern hair loss in women — diffuse thinning over the crown/central scalp — driven by elevated androgens in PCOS" },
+    { "term": "Seborrhoea", "definition": "Excessive oily skin caused by overactive sebaceous glands — can be a manifestation of hyperandrogenism in PCOS" },
+    { "term": "Acne vulgaris", "definition": "Common acne — can be a sign of hyperandrogenism in PCOS, particularly severe acne in adolescents" },
+    { "term": "Ovulation induction", "definition": "The use of medications (letrozole, clomiphene, metformin) to stimulate the ovaries to release an egg in women with anovulation" },
+    { "term": "Gestational diabetes", "definition": "Diabetes developing during pregnancy — more common in women with PCOS" },
+    { "term": "Virilisation", "definition": "Development of male physical characteristics in women (voice deepening, clitoromegaly) — indicates severe hyperandrogenism and must prompt evaluation for androgen-secreting tumour" },
+    { "term": "Endometritis", "definition": "Note: in PCOS context, the concern is endometrial hyperplasia/cancer risk due to anovulation (not infection-related endometritis)" },
+    { "term": "Menarche", "definition": "The first menstrual period — an important reference point for adolescent PCOS diagnosis criteria" },
+    { "term": "Thelarche", "definition": "The onset of breast development — used as a reference for defining primary amenorrhoea in the Rotterdam Criteria for adolescents" }
+  ],
+
+  "quick_reference_cards": {
+    "diagnostic_quick_ref": {
+      "title": "PCOS Diagnosis Quick Reference",
+      "rotterdam_summary": "Diagnose PCOS if ≥2 of 3 criteria met after excluding other causes",
+      "criteria": ["Oligoanovulation (irregular/absent periods)", "Hyperandrogenism (clinical or biochemical)", "Polycystic ovaries on ultrasound (≥12 follicles 2–9mm or ovarian volume >10ml)"],
+      "minimum_workup": ["Pregnancy test", "TSH", "Prolactin", "17-hydroxyprogesterone (morning, follicular phase)"],
+      "androgen_testing": "Calculated free testosterone / free androgen index — minimum 3 months after stopping hormonal contraceptives",
+      "adolescents": "Require BOTH oligoanovulation AND hyperandrogenism for ≥2 years postmenarche; ultrasound NOT used"
+    },
+    "treatment_quick_ref": {
+      "title": "PCOS Treatment Quick Reference",
+      "all_patients": "Lifestyle modification — diet, exercise, behavioural change (Weight loss >5% body weight if overweight)",
+      "not_seeking_pregnancy": {
+        "irregular_periods": "1st: Hormonal contraception | 2nd: Metformin",
+        "hirsutism_acne": "1st: Hormonal OCP | 2nd: Spironolactone (+contraception) | 3rd: Metformin",
+        "insulin_resistance": "1st: Lifestyle | 2nd: Metformin ≥1,500 mg/day",
+        "obesity": "1st: Lifestyle | 2nd: Anti-obesity medications"
+      },
+      "seeking_pregnancy": {
+        "ovulation_induction": "1st: Letrozole 2.5 mg/day x5 days | 2nd: Clomiphene 50 mg/day x5 days | 3rd: Metformin",
+        "insulin_resistance": "1st: Lifestyle | 2nd: Metformin",
+        "hirsutism": "1st: Electrolysis (NO hormonal antiandrogens in pregnancy)"
+      },
+      "metformin_note": "Dose: ≥1,500 mg/day; 2,500 mg has minimal additional benefit over 1,500 mg"
+    },
+    "comorbidity_screening_quick_ref": {
+      "title": "PCOS Comorbidity Screening Summary",
+      "screens": [
+        { "what": "Blood glucose (OGTT/FBG/HbA1c)", "when": "Baseline; repeat every 1–3 years" },
+        { "what": "Fasting lipid profile", "when": "Baseline; repeat per CVD risk" },
+        { "what": "Blood pressure", "when": "Annually" },
+        { "what": "Depression screening", "when": "At diagnosis and periodically" },
+        { "what": "Sleep apnoea screening", "when": "At diagnosis" },
+        { "what": "Smoking status", "when": "At diagnosis; counsel cessation" },
+        { "what": "Vitamin D level", "when": "Consider checking; supplement if low" }
+      ],
+      "not_recommended": "No additional cancer screening beyond standard universal recommendations"
+    }
+  },
+
+  "patient_education_leaflet": {
+    "title": "Understanding PCOS — A Guide for Patients",
+    "sections": [
+      {
+        "heading": "What is PCOS?",
+        "content": "PCOS (Polycystic Ovary Syndrome) is a hormonal condition affecting 1 in 10 women of reproductive age. It can cause irregular or absent periods, signs of too much male hormone (like excess hair growth, acne, or scalp hair loss), and sometimes small cysts on the ovaries. It can also make it harder to get pregnant and increases the risk of conditions like diabetes and heart disease. Every woman with PCOS is different — some have just one or two symptoms, others have many."
+      },
+      {
+        "heading": "What causes it?",
+        "content": "The exact cause is not fully understood. PCOS involves a combination of genetic predisposition, insulin resistance (when the body doesn't use insulin efficiently), and hormonal imbalances. Environmental factors like diet and exercise levels also play a role. It tends to run in families — if your mother or sister has PCOS, you are more likely to have it too."
+      },
+      {
+        "heading": "How is it diagnosed?",
+        "content": "There is no single test for PCOS. Your doctor will assess your symptoms, examine you, and carry out blood tests and possibly a pelvic ultrasound. The diagnosis is made using the Rotterdam Criteria — you need at least 2 of 3 features: irregular periods, signs of excess male hormones, or polycystic-looking ovaries on ultrasound. Other conditions causing similar symptoms must first be excluded with blood tests (thyroid, prolactin, certain adrenal hormones)."
+      },
+      {
+        "heading": "How is it treated?",
+        "content": "The foundation of PCOS treatment is lifestyle change — eating a healthy calorie-aware diet and exercising regularly. Even losing 5–10% of your body weight (if overweight) can significantly improve your symptoms and make it easier to conceive. If you don't want to become pregnant, the contraceptive pill is often recommended to regulate your periods and improve acne and excess hair. If you want to become pregnant, medications to stimulate ovulation (like letrozole) are very effective. Metformin (a diabetes medication) is often used to improve insulin resistance."
+      },
+      {
+        "heading": "What about fertility?",
+        "content": "PCOS is the most common cause of irregular ovulation-related infertility, but most women with PCOS can have children. Treatments to trigger ovulation are very effective. Losing weight (if overweight) before starting fertility medications significantly improves the chances of success."
+      },
+      {
+        "heading": "What are the long-term health risks?",
+        "content": "Women with PCOS have higher risks of: type 2 diabetes, high blood pressure, high cholesterol, heart disease, depression and anxiety, sleep apnoea (breathing problems during sleep), and endometrial (womb) cancer due to irregular periods. Regular health checks (blood pressure, blood sugar, cholesterol) are important. Your doctor will help you manage these risks."
+      },
+      {
+        "heading": "Lifestyle tips",
+        "content": "Choose a balanced diet you can sustain — no single 'PCOS diet' works for everyone. Spread carbohydrates evenly across meals. Be physically active for at least 150 minutes per week. Avoid smoking. Manage stress, and seek help for low mood or anxiety. Remember — you don't need to lose a lot of weight to feel better; even a small amount of weight loss makes a real difference."
+      },
+      {
+        "heading": "Where to get help",
+        "content": "Speak to your GP, gynaecologist, or endocrinologist. A registered dietitian can help with medical nutrition therapy. Mental health support is important if you are struggling with anxiety, depression, or body image. Patient support groups and reputable organisations (like Verity in the UK or PCOS Awareness Association) can also provide valuable support and information."
+      }
+    ]
+  }
+}
+{
+  "knowledge_base": {
+    "topic": "Polycystic Ovary Syndrome (PCOS)",
+    "faq": [
+      {
+        "question": "What is polycystic ovary syndrome (PCOS)?",
+        "answer": "Polycystic ovary syndrome (PCOS) is a common hormonal disorder affecting women of reproductive age, characterized by a combination of hyperandrogenism (excess male hormones), ovulatory dysfunction, and polycystic ovarian morphology on ultrasound. It is the most common endocrine disorder in women of reproductive age, affecting 8-13% of women worldwide. PCOS is a leading cause of anovulatory infertility and is associated with long-term metabolic complications including type 2 diabetes, cardiovascular disease, and endometrial cancer."
+      },
+      {
+        "question": "What causes PCOS?",
+        "answer": "The exact cause of PCOS is not fully understood, but it is multifactorial. Key contributing factors include: insulin resistance (present in 65-80% of women with PCOS), which drives excess androgen production from the ovaries; elevated luteinizing hormone (LH) levels stimulating androgen secretion; genetic predisposition (first-degree relatives have a 20-40% risk); low-grade chronic inflammation; and dysregulation of the hypothalamic-pituitary-ovarian axis. Environmental factors such as obesity, sedentary lifestyle, and fetal programming (exposure to excess androgens in utero) also contribute."
+      },
+      {
+        "question": "What are the symptoms of PCOS?",
+        "answer": "PCOS presents with a wide spectrum of symptoms, not all of which are present in every woman. Common symptoms include: irregular, infrequent, or absent menstrual periods (oligomenorrhea or amenorrhea); excessive hair growth on the face, chest, back, or abdomen (hirsutism); acne and oily skin; scalp hair thinning or male-pattern hair loss (androgenic alopecia); weight gain or difficulty losing weight, particularly around the abdomen; darkening of skin in body creases (acanthosis nigricans); skin tags; and difficulty getting pregnant due to irregular ovulation. Many women with PCOS also experience mood disorders including depression and anxiety."
+      },
+      {
+        "question": "How is PCOS diagnosed?",
+        "answer": "PCOS is diagnosed using the Rotterdam Criteria (2003), which requires at least 2 of the following 3 features: (1) Oligo-ovulation or anovulation (irregular or absent periods); (2) Clinical or biochemical signs of hyperandrogenism (hirsutism, acne, elevated serum androgens); (3) Polycystic ovarian morphology on ultrasound (≥ 12 follicles measuring 2-9mm per ovary, or ovarian volume > 10 mL). Other conditions that mimic PCOS must be excluded, including thyroid disorders, hyperprolactinemia, congenital adrenal hyperplasia, and androgen-secreting tumors."
+      },
+      {
+        "question": "What tests are done to diagnose PCOS?",
+        "answer": "Recommended investigations include: serum androgens (total and free testosterone, DHEAS, androstenedione); LH and FSH ratio (LH:FSH > 2:1 is supportive but not diagnostic); pelvic ultrasound (transvaginal preferred) to assess ovarian morphology; fasting glucose and insulin levels or oral glucose tolerance test (to assess insulin resistance); HbA1c; lipid profile; thyroid function tests (TSH, free T4); serum prolactin; and 17-hydroxyprogesterone (to exclude congenital adrenal hyperplasia). Pregnancy test should be done to rule out pregnancy as a cause of amenorrhea."
+      },
+      {
+        "question": "Who is most at risk for PCOS?",
+        "answer": "PCOS affects women of all ethnicities, but risk is higher in: women with a family history of PCOS (first-degree relatives have 20-40% lifetime risk); women with obesity or overweight (obesity worsens insulin resistance and androgen excess); daughters of mothers with PCOS or type 2 diabetes; women with early puberty or premature adrenarche; and women exposed to excess androgens in utero (e.g., daughters of women with PCOS). South Asian and Indigenous women may have higher prevalence and more severe metabolic manifestations."
+      },
+      {
+        "question": "Does PCOS cause infertility?",
+        "answer": "PCOS is the most common cause of anovulatory infertility, accounting for approximately 80% of anovulatory infertility cases. Irregular or absent ovulation means eggs are not consistently released, making conception difficult. However, PCOS does not mean permanent infertility — most women with PCOS can conceive with treatment. Options include lifestyle modification (weight loss of 5-10% can restore ovulation in overweight women), ovulation induction with letrozole (first-line) or clomiphene citrate, metformin, gonadotropin injections, and assisted reproductive technologies (IVF) if other methods fail."
+      },
+      {
+        "question": "What is the treatment for PCOS?",
+        "answer": "PCOS has no cure, but symptoms and risks can be effectively managed. Treatment is tailored to the individual's primary concerns: (1) Lifestyle modification — weight loss, regular exercise, and a balanced diet are first-line for all overweight women with PCOS, improving hormonal profiles, menstrual regularity, and fertility; (2) Menstrual regulation — combined oral contraceptive pills (COCPs) are first-line for women not seeking pregnancy; (3) Hyperandrogenism — COCPs, spironolactone, or flutamide for hirsutism and acne; (4) Insulin resistance — metformin improves insulin sensitivity and menstrual regularity; (5) Fertility — letrozole (first-line ovulation inducer), clomiphene, gonadotropins, or IVF."
+      },
+      {
+        "question": "What is the role of the combined oral contraceptive pill (COCP) in PCOS?",
+        "answer": "The combined oral contraceptive pill (COCP) is the first-line pharmacological treatment for managing menstrual irregularity and hyperandrogenism in women with PCOS who do not want to conceive. COCPs suppress LH secretion (reducing ovarian androgen production), increase sex hormone-binding globulin (SHBG, which binds free testosterone), and regulate menstrual cycles. They also reduce the risk of endometrial hyperplasia and cancer from chronic anovulation. Pills containing anti-androgenic progestogens (e.g., cyproterone acetate, drospirenone, desogestrel) are preferred for managing hirsutism and acne."
+      },
+      {
+        "question": "What is the role of metformin in PCOS?",
+        "answer": "Metformin is an insulin-sensitizing agent used in PCOS to address the underlying insulin resistance. It reduces hepatic glucose production, improves peripheral insulin sensitivity, and lowers circulating insulin levels, which in turn reduces ovarian androgen production. Benefits include: improved menstrual regularity, modest reduction in androgen levels, weight stabilization, reduced risk of progression to type 2 diabetes, and improved ovulation rates (particularly when combined with letrozole for fertility). Metformin is recommended in women with PCOS who have impaired glucose tolerance, type 2 diabetes, or are at high metabolic risk."
+      },
+      {
+        "question": "How does weight affect PCOS?",
+        "answer": "Obesity significantly worsens PCOS through amplified insulin resistance, which drives further androgen excess and anovulation. Even modest weight loss of 5-10% of body weight in overweight women with PCOS can significantly improve menstrual regularity, restore spontaneous ovulation, reduce androgen levels, improve acne and hirsutism, lower insulin and glucose levels, and improve fertility and response to ovulation induction. Weight loss is therefore the most effective intervention for overweight women with PCOS and is recommended before pharmacological treatment. However, PCOS itself makes weight loss more difficult due to insulin resistance and hormonal imbalances."
+      },
+      {
+        "question": "What are the long-term health risks of PCOS?",
+        "answer": "PCOS is associated with significant long-term metabolic and reproductive health risks: type 2 diabetes (risk is 3-7 times higher than the general population; up to 40% of women with PCOS develop impaired glucose tolerance or type 2 diabetes by age 40); cardiovascular disease (dyslipidemia, hypertension, increased cardiovascular risk); endometrial cancer (2-6 times higher risk due to chronic unopposed estrogen from anovulation); obstructive sleep apnea (up to 30 times more common in PCOS); non-alcoholic fatty liver disease; and mental health disorders including depression, anxiety, and eating disorders. Regular screening for these conditions is recommended."
+      },
+      {
+        "question": "What is the risk of endometrial cancer in PCOS?",
+        "answer": "Women with PCOS have a 2-6 times higher risk of endometrial cancer compared to the general population. This is caused by chronic anovulation, which results in prolonged exposure of the endometrium to estrogen without the opposing effect of progesterone (produced after ovulation). This leads to endometrial hyperplasia, which can progress to endometrial cancer if untreated. To reduce this risk, women with PCOS who are not ovulating regularly should have withdrawal bleeds induced at least every 3-4 months using progestogens or COCPs, and should be monitored with pelvic ultrasound if they have prolonged amenorrhea."
+      },
+      {
+        "question": "Can PCOS be cured?",
+        "answer": "There is currently no cure for PCOS. It is a lifelong condition that persists beyond the reproductive years, though some symptoms (particularly menstrual irregularity) may improve with age or after menopause. However, the metabolic risks (type 2 diabetes, cardiovascular disease) persist after menopause. PCOS can be effectively managed with lifestyle changes and medications to control symptoms and reduce long-term health risks. Early diagnosis and proactive management are key to preventing complications."
+      },
+      {
+        "question": "Does PCOS go away after menopause?",
+        "answer": "Some reproductive symptoms of PCOS, such as irregular periods, naturally resolve after menopause when the ovaries stop producing eggs. Androgen levels also decline after menopause. However, the underlying metabolic abnormalities — particularly insulin resistance, dyslipidemia, and cardiovascular risk — persist and may worsen after menopause. Women with a history of PCOS remain at elevated risk for type 2 diabetes, cardiovascular disease, and metabolic syndrome throughout their lives and should continue regular metabolic screening after menopause."
+      },
+      {
+        "question": "What dietary and lifestyle changes help with PCOS?",
+        "answer": "Lifestyle modification is the cornerstone of PCOS management. Evidence-based recommendations include: a balanced, low-glycaemic index (low-GI) diet to reduce insulin spikes and improve insulin sensitivity; regular physical activity (at least 150 minutes of moderate-intensity exercise per week); weight loss of 5-10% in overweight women to restore hormonal balance and ovulation; reduced intake of refined carbohydrates, sugary foods, and processed foods; adequate sleep and stress management (chronic stress raises cortisol and worsens insulin resistance); and avoidance of smoking (which worsens hyperandrogenism and cardiovascular risk). Inositol supplements (myo-inositol and D-chiro-inositol) show promising evidence for improving insulin sensitivity and ovarian function."
+      },
+      {
+        "question": "What is the best contraceptive for women with PCOS?",
+        "answer": "The combined oral contraceptive pill (COCP) is the preferred contraceptive for most women with PCOS as it simultaneously provides contraception, regulates menstrual cycles, reduces androgen levels, and protects the endometrium. Pills containing anti-androgenic progestogens (drospirenone, cyproterone acetate) are especially beneficial for women with hirsutism or acne. Progestogen-only pills or the hormonal IUD (levonorgestrel IUS) can be used to protect the endometrium in women who cannot take estrogen. The copper IUD is an effective non-hormonal option but does not address hormonal symptoms."
+      },
+      {
+        "question": "Can PCOS affect mental health?",
+        "answer": "Yes. Women with PCOS have significantly higher rates of depression, anxiety, and reduced quality of life compared to the general population. Contributing factors include the psychological impact of symptoms such as hirsutism, acne, weight gain, hair loss, and infertility; hormonal imbalances (elevated androgens and insulin resistance affect brain neurotransmitter function); and the chronic nature of the condition. Screening for depression and anxiety is recommended as part of routine PCOS care. Treatment options include psychological support, cognitive behavioral therapy (CBT), and medication where appropriate. Addressing the physical symptoms of PCOS also often improves mental wellbeing."
+      },
+      {
+        "question": "Is PCOS hereditary?",
+        "answer": "Yes, PCOS has a strong genetic component. First-degree female relatives (mothers, sisters, daughters) of women with PCOS have a 20-40% lifetime risk of developing PCOS. Twin studies show concordance rates of up to 70% in identical twins. Several genes involved in insulin signaling, androgen biosynthesis, and gonadotropin regulation have been implicated. However, PCOS does not follow a simple inheritance pattern — it is polygenic and influenced by environmental factors including diet, weight, and physical activity. Sons of women with PCOS may carry related metabolic traits such as insulin resistance and elevated androgens."
+      }
+    ]
+  }
+}
+

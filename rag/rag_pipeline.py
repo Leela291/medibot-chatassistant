@@ -105,7 +105,7 @@ def run_rag(
         query_clean = user_query.lower()
 
         # Reject A: Weak similarity score
-        if best_score > 0.50:
+        if best_score < 0.50:
             needs_wikipedia = True
             retrieved_chunks = []
 
