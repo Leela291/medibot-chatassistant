@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import "./App.css";
+import logo from '../src/logo192.png';
 
 /* ───────── Helpers ───────── */
 const API = "http://localhost:5000/api";
@@ -27,7 +28,12 @@ function App() {
   const [dragOver, setDragOver] = useState(false);
   const [speakingMessageId, setSpeakingMessageId] = useState(null);
   const [sessionsList, setSessionsList] = useState([]);
+  const [sessionToDelete, setSessionToDelete] = useState(null);
   const [isListening, setIsListening] = useState(false);
+  const [isSessionsOpen, setIsSessionsOpen] = useState(true);
+  const [isToolsOpen, setIsToolsOpen] = useState(true);
+  const [isTopicsOpen, setIsTopicsOpen] = useState(true);
+  const [isUploadOpen, setIsUploadOpen] = useState(true);
 
   const bottomRef = useRef(null);
   const fileInputRef = useRef(null);
@@ -63,7 +69,6 @@ function App() {
       console.debug("Web Audio blocked or not supported:", e);
     }
   };
-
 
   // Speech Recognition Speech-to-Text
   useEffect(() => {
@@ -157,18 +162,18 @@ function App() {
   };
 
   // Delete a specific session
-  const deleteSession = async (e, id) => {
-    e.stopPropagation();
-    if (!window.confirm("Are you sure you want to delete this consultation history?")) return;
+  const confirmDeleteSession = async () => {
+    if (!sessionToDelete) return;
     try {
-      await fetch(`${API}/chat/session/${id}`, { method: "DELETE" });
+      await fetch(`${API}/chat/session/${sessionToDelete}`, { method: "DELETE" });
       fetchSessions();
-      if (sessionId === id) {
+      if (sessionId === sessionToDelete) {
         newSession();
       }
     } catch (err) {
       console.error("Failed to delete session:", err);
     }
+    setSessionToDelete(null); // Close the modal after deleting
   };
 
   const toggleSpeak = (text, msgIndex) => {
@@ -269,7 +274,7 @@ function App() {
           signal: abortControllerRef.current.signal,
         });
 
-        setLoading(false); // Hide spinner as soon as stream connection begins
+        setLoading(false);
 
         const botMsgId = Date.now();
         const initialBotMsg = {
@@ -333,7 +338,6 @@ function App() {
         }
       }
       
-      // Update session sidebar list
       fetchSessions();
       
     } catch (err) {
@@ -417,7 +421,6 @@ function App() {
       "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     ];
 
-    // Check if the file matches our valid types or extensions
     if (validTypes.includes(file.type) || file.name.match(/\.(csv|xls|xlsx)$/i)) {
       setUploadedFile(file);
     } else {
@@ -474,15 +477,23 @@ function App() {
         <div className="sidebar-header">
           <div className="logo-section">
             <div className="logo-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 2L12 22M2 12L22 12M7 7L17 17M17 7L7 17" strokeLinecap="round" />
-              </svg>
+                <img src={logo} alt="MedoAir Logo" className="logo-image" />
             </div>
             <div>
               <h1 className="logo-text">MedoAir</h1>
               <span className="logo-sub">AI Medical Assistant</span>
             </div>
           </div>
+          <button 
+            className="sidebar-close-btn" 
+            onClick={() => { 
+              playClickSound(); 
+              setSidebarOpen(false); 
+            }}
+            title="Close Sidebar"
+          >
+            ᯓ➤
+          </button>
         </div>
 
         <button className="new-chat-btn" onClick={() => { playClickSound(); newSession(); }}>
@@ -494,92 +505,173 @@ function App() {
 
         {/* ── Consultation History list ── */}
         <div className="sidebar-section history-section">
-          <h3 className="section-title">Consultation Sessions</h3>
-          <div className="session-history-list">
-            {sessionsList.length === 0 ? (
-              <div className="empty-history">No conversations yet</div>
-            ) : (
-              sessionsList.map((s) => (
-                <div
-                  key={s.session_id}
-                  className={`history-card ${sessionId === s.session_id ? "active" : ""}`}
-                  onClick={() => { playClickSound(); loadSessionHistory(s.session_id); }}
-                >
-                  <div className="history-card-body">
-                    {/* 👇 Shows ONLY the session title or ID now, keeping it clean */}
-                    <span className="history-card-title">
-                      {s.title || `Session ${s.session_id.slice(0, 6)}`}
-                    </span>
-                  </div>
-                  {/* 👇 The delete button remains perfectly functional */}
-                  <button
-                    className="delete-session-btn"
-                    onClick={(e) => { playClickSound(); deleteSession(e, s.session_id); }}
-                    title="Delete conversation"
-                  >
-                    ❌
-                  </button>
-                </div>
-              ))
-            )}
+          <div className="section-header-clickable" onClick={() => setIsSessionsOpen(!isSessionsOpen)}>
+            <h3 className="section-title">Consultation Sessions</h3>
+            <svg 
+              className={`chevron-icon ${isSessionsOpen ? 'open' : ''}`} 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2"
+            >
+              <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          
+          <div className={`collapsible-content ${isSessionsOpen ? 'expanded' : 'collapsed'}`}>
+            <div className="collapsible-inner">
+              <div className="session-history-list">
+                {sessionsList.length === 0 ? (
+                  <div className="empty-history">No conversations yet</div>
+                ) : (
+                  sessionsList.map((s) => (
+                    <div
+                      key={s.session_id}
+                      className={`history-card ${sessionId === s.session_id ? "active" : ""}`}
+                      onClick={() => { playClickSound(); loadSessionHistory(s.session_id); }}
+                    >
+                      <div className="history-card-body">
+                        <span className="history-card-title">
+                          {s.title || `Session ${s.session_id.slice(0, 6)}`}
+                        </span>
+                      </div>
+                      <button
+                        className="delete-session-btn"
+                        onClick={(e) => { 
+                          e.stopPropagation(); 
+                          playClickSound(); 
+                          setSessionToDelete(s.session_id); // This triggers the modal
+                        }}
+                        title="Delete conversation"
+                      >
+                        ❌
+                      </button>
+                    </div>
+                  ))
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Tools (Sidebar) ── */}
+        <div className="sidebar-section">
+          <div className="section-header-clickable" onClick={() => setIsToolsOpen(!isToolsOpen)}>
+            <h3 className="section-title">Tools</h3>
+            <svg 
+              className={`chevron-icon ${isToolsOpen ? 'open' : ''}`} 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2"
+            >
+              <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+
+          <div className={`collapsible-content ${isToolsOpen ? 'expanded' : 'collapsed'}`}>
+            <div className="collapsible-inner">
+              <div style={{ display: 'flex', gap: '8px', paddingBottom: '8px' }}>
+                <button className="new-chat-btn" style={{ margin: 0, flex: 1, padding: '8px', fontSize: '12px' }} onClick={() => setInput("Calculate BMI")}>
+                  BMI Calc
+                </button>
+                <button className="new-chat-btn" style={{ margin: 0, flex: 1, padding: '8px', fontSize: '12px' }} onClick={() => setInput("Check Drug Interactions")}>
+                  Drugs
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* ── Quick Topics (Sidebar) ── */}
         <div className="sidebar-section">
-          <h3 className="section-title">Quick Topics</h3>
-          <div className="topics-slider">
-            {topics.map((t) => (
-              <div key={t.label} className="topic-btn" style={{ border: `1px solid ${t.color}` }}>
-                <div className="topic-icon" style={{ background: `${t.color}20`, color: t.color }}>
-                  {t.icon}
-                </div>
-                <span className="topic-label">{t.label}</span>
-                <div className="topic-actions">
-                  {quickActions.map((act) => (
-                    <button
-                      key={act.label}
-                      className="quick-action-btn"
-                      onClick={(e) => {
-                        e.stopPropagation(); // Prevents clicking the card background
-                        playClickSound();
-                        setInput(act.query(t.label));
-                        inputRef.current?.focus();
-                      }}
-                    >
-                      {act.label}
-                    </button>
-                  ))}
-                </div>
+          <div className="section-header-clickable" onClick={() => setIsTopicsOpen(!isTopicsOpen)}>
+            <h3 className="section-title">Quick Topics</h3>
+            <svg 
+              className={`chevron-icon ${isTopicsOpen ? 'open' : ''}`} 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2"
+            >
+              <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+
+          <div className={`collapsible-content ${isTopicsOpen ? 'expanded' : 'collapsed'}`}>
+            <div className="collapsible-inner">
+              <div className="topics-slider">
+                {topics.map((t) => (
+                  <div key={t.label} className="topic-btn" style={{ border: `1px solid ${t.color}` }}>
+                    <div className="topic-icon" style={{ background: `${t.color}20`, color: t.color }}>
+                      {t.icon}
+                    </div>
+                    <span className="topic-label">{t.label}</span>
+                    <div className="topic-actions">
+                      {quickActions.map((act) => (
+                        <button
+                          key={act.label}
+                          className="quick-action-btn"
+                          onClick={(e) => {
+                            e.stopPropagation(); 
+                            playClickSound();
+                            setInput(act.query(t.label));
+                            inputRef.current?.focus();
+                          }}
+                        >
+                          {act.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
 
+        {/* ── Upload Records (Sidebar) ── */}
         <div className="sidebar-section">
-          <h3 className="section-title">Upload Records</h3>
-          <div
-            className={`upload-zone ${dragOver ? "drag-over" : ""}`}
-            onDragOver={(e) => {
-              e.preventDefault();
-              setDragOver(true);
-            }}
-            onDragLeave={() => setDragOver(false)}
-            onDrop={handleDrop}
-            onClick={() => { playClickSound(); fileInputRef.current?.click(); }}
-          >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="32" height="32">
-              <path d="M12 16V4m0 0L8 8m4-4l4 4M4 14v4a2 2 0 002 2h12a2 2 0 002-2v-4" strokeLinecap="round" strokeLinejoin="round" />
+          <div className="section-header-clickable" onClick={() => setIsUploadOpen(!isUploadOpen)}>
+            <h3 className="section-title">Upload Records</h3>
+            <svg 
+              className={`chevron-icon ${isUploadOpen ? 'open' : ''}`} 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2"
+            >
+              <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <span>Drop files/pics or click</span>
-            <span className="upload-hint">PDF, Images, CSV, Excel</span>
-            <input
-              ref={fileInputRef}
-              type="file"
-              accept=".pdf,.png,.jpg,.jpeg,.csv,.xls,.xlsx"
-              onChange={handleFileSelect}
-              hidden
-            />
+          </div>
+
+          <div className={`collapsible-content ${isUploadOpen ? 'expanded' : 'collapsed'}`}>
+            <div className="collapsible-inner">
+              <div
+                className={`upload-zone ${dragOver ? "drag-over" : ""}`}
+                style={{ marginBottom: '8px' }}
+                onDragOver={(e) => {
+                  e.preventDefault();
+                  setDragOver(true);
+                }}
+                onDragLeave={() => setDragOver(false)}
+                onDrop={handleDrop}
+                onClick={() => { playClickSound(); fileInputRef.current?.click(); }}
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="32" height="32">
+                  <path d="M12 16V4m0 0L8 8m4-4l4 4M4 14v4a2 2 0 002 2h12a2 2 0 002-2v-4" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <span>Drop files/pics or click</span>
+                <span className="upload-hint">PDF, Images, CSV, Excel</span>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept=".pdf,.png,.jpg,.jpeg,.csv,.xls,.xlsx"
+                  onChange={handleFileSelect}
+                  hidden
+                />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -869,6 +961,30 @@ function App() {
           </div>
         </div>
       </main>
+      
+      {/* ── Custom Delete Confirmation Modal ── */}
+      {sessionToDelete && (
+        <div className="custom-modal-overlay">
+          <div className="custom-modal">
+            <h3>Delete Consultation?</h3>
+            <p>Are you sure you want to permanently delete this history? This action cannot be undone.</p>
+            <div className="modal-actions">
+              <button 
+                className="modal-btn cancel" 
+                onClick={() => { playClickSound(); setSessionToDelete(null); }}
+              >
+                Cancel
+              </button>
+              <button 
+                className="modal-btn delete" 
+                onClick={() => { playClickSound(); confirmDeleteSession(); }}
+              >
+                Yes, Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
