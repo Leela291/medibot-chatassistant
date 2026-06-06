@@ -1,0 +1,1432 @@
+{
+  "disease": {
+    "id": "DIS-015",
+    "name": "Muscle Strain and Back Pain",
+    "scientific_name": "Musculoskeletal Strain / Lumbar Sprain / Non-Specific Low Back Pain / Mechanical Back Pain / Myofascial Pain Syndrome",
+    "icd_10_code": "M54.5 (Low back pain); M54.4 (Lumbago with sciatica); M54.3 (Sciatica); M51.1 (Lumbar and other intervertebral disc derangements with radiculopathy); M54.9 (Dorsalgia, unspecified); M62.6 (Muscle strain); S39.012 (Strain of muscle and tendon of lower back); M54.2 (Cervicalgia — neck pain); M47.816 (Spondylosis, lumbar region); M43.1 (Spondylolisthesis); M48.0 (Spinal stenosis); S13.4 (Sprain of ligaments of cervical spine — whiplash)",
+    "category": "Musculoskeletal Disease / Orthopaedic / Neurology / Occupational Health / Sports Medicine",
+    "overview": {
+      "description": "Muscle strain and back pain together represent the single most common cause of disability and work absence globally. A muscle strain (commonly called a 'pulled muscle') is an injury to a muscle or its associated tendon — ranging from microscopic overstretching of muscle fibres (Grade I) to a complete muscular rupture (Grade III) — caused by sudden excessive force, awkward movement, or chronic overuse. Back pain encompasses any pain arising from the spine, muscles, nerves, or other structures of the back. Low back pain (LBP) — pain in the lumbar region between the costal margin and gluteal folds — affects approximately 80% of people at some point in their lifetime and is the leading cause of years lived with disability worldwide. The vast majority (90-95%) of back pain is 'non-specific' — meaning no serious underlying structural or pathological cause is identified — and resolves with appropriate management within weeks. However, a critical clinical skill is identifying the small but important minority of patients with 'red flag' symptoms indicating serious underlying pathology (cauda equina syndrome, spinal malignancy, vertebral fracture, or spinal infection) requiring urgent investigation and specialist referral. Back pain is best understood through the biopsychosocial model — biological factors (disc disease, muscle injury, degeneration), psychological factors (depression, anxiety, fear-avoidance beliefs, catastrophising), and social factors (work stress, poor ergonomics, compensation claims) all contribute to pain experience and chronicity.",
+      "affected_organ": "Primarily the musculoskeletal system — lumbar, thoracic, and cervical spine muscles, ligaments, intervertebral discs, facet joints, vertebral bodies; neurological structures — spinal nerve roots (radiculopathy), spinal cord (myelopathy), cauda equina; systematically in chronic pain — psychological and social wellbeing, cardiovascular fitness, immune function",
+      "prevalence": "Back pain affects 619 million people worldwide (GBD 2019 — the most prevalent musculoskeletal condition); 80% of adults experience significant back pain at least once in their lifetime; 10-15% develop chronic back pain lasting more than 12 weeks; leading cause of disability globally across all age groups; costs the global economy over $100 billion annually in lost productivity and healthcare",
+      "age_group": "All ages; peak incidence in adults aged 35-55 years; new onset in elderly >65 years warrants investigation for serious causes; adolescents — spondylolysis from sport; children — rare but schoolbag-related strain increasingly recognised",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_curable_note": "Acute non-specific muscle strain and back pain resolves completely in the majority (90%) of cases within 6-12 weeks with appropriate management. However, 5-10% of patients develop persistent chronic back pain which may be managed but not always fully cured.",
+      "is_manageable": true,
+      "chronic": false,
+      "is_chronic_note": "Acute back pain (<4 weeks) and subacute back pain (4-12 weeks) are generally not chronic; back pain persisting beyond 12 weeks is classified as chronic and requires a different management approach emphasising rehabilitation over passive treatment",
+      "is_preventable": true,
+      "key_fact": "The most important advance in back pain management in 30 years is the shift AWAY from bed rest and passive treatments TOWARD early active movement and exercise — staying active is the single most important message for acute back pain recovery"
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Acute Muscle Strain (Pulled Muscle)",
+        "description": "A sudden injury to a muscle or tendon from excessive mechanical force — overstretching, a sharp twist, heavy lifting, or direct trauma — that overloads the muscle beyond its capacity. Micro-tears or macroscopic rupture of muscle fibres produces immediate pain, swelling, and restricted movement. The most commonly strained muscles in the back are the paraspinal muscles (erector spinae, multifidus), quadratus lumborum, and gluteal muscles.",
+        "grades": [
+          {
+            "grade": "Grade I — Mild Strain",
+            "description": "Microscopic overstretching of muscle fibres with no significant structural disruption. Fewer than 10% of fibres affected. Minimal swelling. Pain is mild — felt as a dull ache or tightness, worse with specific movements. Normal or near-normal range of motion. Muscle strength maintained.",
+            "recovery": "3-10 days with appropriate management"
+          },
+          {
+            "grade": "Grade II — Moderate Strain",
+            "description": "Partial tear of muscle fibres — up to 90% of the muscle cross-section may be involved but continuity is preserved. Moderate swelling, tenderness, and bruising (ecchymosis appearing 24-48 hours after injury). Significant pain with movement and weakness. Palpable defect may be felt in the muscle. Restricted range of motion.",
+            "recovery": "2-6 weeks with appropriate management; physiotherapy essential"
+          },
+          {
+            "grade": "Grade III — Severe Strain / Complete Rupture",
+            "description": "Complete tear of the muscle or musculotendinous junction — complete loss of structural continuity. Immediate severe pain at time of injury, often described as a 'pop' or 'snap'. Significant swelling and extensive bruising. Visible or palpable gap in the muscle belly. Complete loss of function in the affected muscle. Requires specialist assessment and possibly surgical repair.",
+            "recovery": "6-12+ weeks; surgical consultation required for some complete ruptures"
+          }
+        ],
+        "commonly_strained_back_muscles": [
+          "Erector spinae (iliocostalis, longissimus, spinalis) — bilateral paraspinal muscles running length of spine; strained with lifting and twisting",
+          "Multifidus — deep stabiliser muscle of the lumbar spine; atrophies rapidly with back pain (first to lose function, last to recover)",
+          "Quadratus lumborum (QL) — lateral back muscle connecting 12th rib to iliac crest; strained with lateral bending, heavy lifting, or sudden twisting; a very common cause of acute low back pain",
+          "Gluteus medius and maximus — hip and pelvic muscles contributing to lumbopelvic stability; strain from sport or sudden movement",
+          "Piriformis — deep buttock muscle in proximity to sciatic nerve; can mimic sciatica (piriformis syndrome)",
+          "Thoracic paraspinal muscles — upper and mid-back strain from prolonged desk posture, carrying heavy bags, or sudden movement"
+        ]
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Non-Specific Mechanical Low Back Pain",
+        "description": "The most common type of back pain — accounting for 90-95% of all presentations. 'Non-specific' means no identifiable specific structural cause (disc herniation, fracture, tumour, infection) is found despite investigation. The pain is mechanical in nature — worsened by certain movements, postures, or loading, and improved by others. It arises from a complex interaction of muscle strain, ligamentous injury, facet joint irritation, disc disruption, and psychosocial factors. Prognosis is generally very good — 90% recover within 6 weeks.",
+        "characteristics": "Onset often after a specific triggering movement (lifting, twisting) or insidious; predominantly lumbar location (between costal margin and gluteal folds); variable radiation to buttocks and upper thighs (referred pain — not true sciatica); pain worsened by movement, prolonged sitting or standing, forward flexion; often accompanied by muscle spasm; neurological examination normal; no specific diagnostic findings on imaging (or age-appropriate degenerative changes unrelated to symptoms)",
+        "natural_history": "70% improve within 2 weeks; 90% within 6 weeks; however, recurrence rate is high (50-80% have at least one further episode within 12 months); 5-10% develop persistent chronic back pain lasting more than 12 weeks",
+        "yellow_flags": "Psychosocial risk factors predicting chronicity — fear-avoidance beliefs (fear that activity will worsen pain); catastrophising (magnifying the threat of pain); passive coping strategies (relying on rest and passive treatment); depression and anxiety; job dissatisfaction; poor social support; compensation claims or litigation; lack of control over working conditions; early identification and addressing yellow flags reduces chronicity"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Lumbar Disc Herniation and Radiculopathy (Sciatica)",
+        "description": "The nucleus pulposus — the soft jelly-like core of the intervertebral disc — herniates (protrudes, extrudes, or sequesters) through a tear in the outer fibrous ring (annulus fibrosus), compressing an adjacent spinal nerve root. In the lumbar spine, this most commonly affects the L4/5 or L5/S1 disc levels, compressing the L5 or S1 nerve roots and producing the clinical syndrome of sciatica — unilateral leg pain radiating below the knee in a dermatomal distribution, often accompanied by neurological deficit.",
+        "anatomy": "L3/4 disc herniation: affects L4 nerve root — pain radiating to anterior thigh and medial leg; weak knee extension (quadriceps); reduced knee jerk reflex. L4/5 disc herniation: affects L5 nerve root — pain radiating down posterior thigh, lateral leg, and dorsum of foot; weak foot dorsiflexion and big toe extension (foot drop risk); no reflex change (L5 has no reliable reflex). L5/S1 disc herniation: affects S1 nerve root — pain radiating down posterior thigh, calf, and lateral foot; weak plantar flexion (tiptoeing); reduced or absent ankle jerk reflex.",
+        "sciatica_characteristics": "Typically unilateral; radiates below the knee into the leg and foot in a dermatomal pattern; severe burning, shooting, or electric-shock type pain; worse with sitting, bending forward, coughing, and Valsalva manoeuvre (increases intradiscal pressure); positive straight leg raise (SLR) test (Lasègue's sign) — pain reproduced by raising the straight leg to 30-60 degrees; may have associated paraesthesia (pins and needles), numbness, and weakness in myotomal distribution",
+        "natural_history": "Most (80-90%) improve significantly within 3-6 months with conservative management; only 10-20% ultimately require surgery (microdiscectomy); prolonged sciatica with neurological deficit has worse prognosis",
+        "red_flag_within_type": "CAUDA EQUINA SYNDROME — central massive disc herniation compressing the cauda equina nerve roots bilaterally; presents with saddle anaesthesia (numbness of perineum, inner thighs, genitalia), bilateral leg weakness, and loss of bladder/bowel control (retention or incontinence) — SURGICAL EMERGENCY requiring MRI and emergency neurosurgical decompression within hours; incomplete recovery if delayed"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Lumbar Spondylosis and Facet Joint Pain",
+        "description": "Age-related degenerative changes of the lumbar spine — disc desiccation and height reduction (degenerative disc disease), osteophyte formation (bone spurs), thickening of ligamentum flavum, and osteoarthritic changes in the facet (zygapophyseal) joints. These changes are essentially normal ageing processes — present on MRI in 90% of adults by age 50 — and are NOT synonymous with pain; many people have severe MRI changes with no pain and vice versa. Facet joint pain is characteristically worse with extension and rotation, improved with flexion; aggravated by prolonged standing.",
+        "note": "Over-reliance on MRI findings (labelling patients based on imaging rather than clinical picture) is a major driver of unnecessary fear, disability, and inappropriate treatment in back pain; the dictum 'treat the patient, not the scan' is fundamental"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Lumbar Spinal Stenosis",
+        "description": "Narrowing of the lumbar spinal canal (central stenosis) or the lateral foraminae (foraminal stenosis) from a combination of disc bulging, osteophytes, facet joint hypertrophy, and ligamentum flavum thickening — compressing the cauda equina nerve roots. Predominantly a condition of the elderly (peak onset >60 years). Presents with neurogenic claudication — leg pain, weakness, and 'heaviness' brought on by walking or standing (spinal extension narrows the canal further) and relieved by sitting or leaning forward (spinal flexion opens the canal). Often confused with vascular claudication (peripheral arterial disease).",
+        "distinguishing_from_vascular_claudication": "Neurogenic (spinal): onset with walking AND standing; relieved by sitting or forward flexion; often resolves within minutes; may have neurological signs; peripheral pulses normal; ankle-brachial index normal. Vascular (PAD): onset only with walking; relieved by standing still; leg pain improves in <5 minutes standing; no neurological signs; reduced peripheral pulses; reduced ankle-brachial index (<0.9)",
+        "management": "Conservative — physiotherapy (flexion-based exercises), NSAIDs, epidural steroid injections; surgical decompression (laminectomy/laminotomy) for severe or refractory cases with significant functional limitation"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Cervical Strain and Neck Pain (Including Whiplash)",
+        "description": "Strain of the cervical spine muscles, ligaments, and soft tissues — producing neck pain, stiffness, and restricted range of motion. Cervical strain may be acute (whiplash injury from road traffic accident — sudden acceleration-deceleration force; workplace injury; sport) or chronic (postural — prolonged screen use, poor desk setup, text neck). Cervical disc herniation (most commonly C5/6 or C6/7) produces cervical radiculopathy — arm pain, numbness, and weakness in the corresponding dermatomal/myotomal distribution (brachialgia).",
+        "whiplash_characteristics": "Mechanism: sudden forced flexion-extension of the cervical spine (typically rear-end vehicle collision); symptoms may be delayed 12-48 hours; neck pain and stiffness, headache (occipital — cervicogenic), shoulder pain, dizziness, visual disturbance, difficulty concentrating (postconcussive features); Quebec Task Force Classification I-IV guides management; most (80%) resolve within 12 weeks; significant psychosocial overlay and litigation association",
+        "cervical_radiculopathy": "C5/6 disc herniation affects C6 root — pain/numbness in lateral forearm, thumb, and index finger; weak biceps and wrist extension; reduced biceps reflex. C6/7 disc herniation affects C7 root — pain/numbness in middle finger; weak triceps and wrist flexion; reduced triceps reflex.",
+        "cervical_myelopathy": "Compression of the cervical spinal cord itself (not just nerve roots) — a serious condition; presents with gait disturbance, hand clumsiness, upper and lower limb weakness, hyperreflexia, and positive Babinski sign; requires urgent MRI and neurosurgical consultation; may progress to permanent cord damage without treatment"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Thoracic (Mid-Back) Strain and Pain",
+        "description": "Strain or pain arising from the thoracic spine (T1-T12) and mid-back muscles. Less common than lumbar or cervical pain due to the rigid support of the ribcage. Common causes include: postural thoracic strain (prolonged desk work causing thoracic kyphosis and upper back muscle fatigue), costovertebral joint dysfunction (rib-vertebra joint pain — sharp unilateral pain worsening with breathing and specific movements), Scheuermann's disease (adolescent thoracic kyphosis from vertebral endplate changes), osteoporotic vertebral compression fractures in elderly, and thoracic disc herniation (rare). Thoracic pain should always prompt consideration of non-musculoskeletal causes — cardiac (aortic dissection — tearing chest-to-back pain), pleuritic (pneumonia, pneumothorax, pulmonary embolism), and renal (pyelonephritis) disease.",
+        "important_differentials": "Acute onset severe mid-back pain: exclude aortic dissection (tearing quality, hypertension, pulse differential, D-dimer/CT aorta). Mid-back pain with fever: exclude vertebral discitis/osteomyelitis or pyelonephritis. Thoracic pain worse at night unrelated to movement: consider malignancy"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Sacroiliac Joint (SIJ) Dysfunction and Pelvic Girdle Pain",
+        "description": "Pain arising from the sacroiliac joints — the large weight-bearing joints connecting the sacrum to the ilium of the pelvis. SIJ dysfunction produces low back, buttock, and posterior thigh pain. Particularly common in: pregnancy (pelvic girdle pain — PGP — affecting up to 20% of pregnant women from progesterone-mediated ligament laxity); post-partum; after falls directly onto the buttock; asymmetric leg loading sports. Often misdiagnosed as lumbar disc pathology or sciatica. Characteristic feature: pain provoked by specific SIJ tests (FABER, THIGH THRUST, posterior pelvic pain provocation test — PPPP).",
+        "note": "Pelvic girdle pain in pregnancy is distinct from lumbar back pain — requires different management including pelvic physiotherapy, SI belt, and modified activity"
+      },
+      {
+        "id": "TYPE-09",
+        "name": "Chronic Non-Specific Back Pain and Chronic Primary Back Pain",
+        "description": "Back pain persisting beyond 12 weeks without a specific identifiable pathological cause — the most challenging and disabling form. The biopsychosocial model best explains chronic back pain: biological sensitisation (central and peripheral nervous system sensitisation — the pain system itself becomes dysregulated, amplifying pain signals beyond what tissue damage would justify), psychological factors (depression, anxiety, catastrophising, fear-avoidance behaviour, pain kinesiophobia), and social factors (poor work conditions, relationship stress, financial insecurity, social isolation). Structural findings on imaging in chronic back pain frequently do NOT correlate with symptom severity — chronic pain is a disease of the nervous system, not necessarily of the back structures.",
+        "management_philosophy": "The modern evidence-based approach to chronic back pain centres on: active rehabilitation (exercise as medicine), psychological intervention (CBT, ACT — Acceptance and Commitment Therapy), pain education (explaining the neuroscience of pain — that pain is not always a marker of tissue damage), multidisciplinary pain management programmes, return to work support, and minimising passive and interventional treatments which reinforce disability and dependence"
+      },
+      {
+        "id": "TYPE-10",
+        "name": "Serious Spinal Pathology — Red Flag Conditions",
+        "description": "A critical minority of patients with back pain have serious underlying pathology requiring urgent investigation and specific treatment — not routine back pain management. These 'red flag' presentations must be identified at first assessment. Failure to recognise them can result in permanent disability or death.",
+        "red_flag_conditions": [
+          {
+            "condition": "Cauda Equina Syndrome (CES)",
+            "description": "Compression of the cauda equina nerve roots (below L2) — typically from a large central disc herniation; also spinal epidural abscess, haematoma, or tumour",
+            "red_flags": "Saddle anaesthesia (numbness of perineum, inner thighs, genitalia); urinary retention or incontinence; faecal incontinence or constipation; bilateral leg weakness; sexual dysfunction",
+            "urgency": "SURGICAL EMERGENCY — MRI urgently within hours; emergency neurosurgical decompression; delay beyond 24-48 hours risks permanent bladder, bowel, and sexual dysfunction"
+          },
+          {
+            "condition": "Spinal Malignancy (Primary or Metastatic)",
+            "description": "Most commonly metastatic cancer (breast, prostate, lung, kidney, thyroid, colorectal) seeding to the vertebral bodies; also primary spinal tumours (multiple myeloma, lymphoma, chordoma); vertebral body destruction can cause pathological fracture and spinal cord compression",
+            "red_flags": "Age >50 with new back pain; known history of any cancer; unexplained weight loss >10% in 6 months; pain worse at night (unrelated to posture — awakens from sleep); thoracic back pain; failure to improve with 4-6 weeks conservative treatment; multiple spinal levels",
+            "investigation": "MRI whole spine; plain X-ray (lytic/sclerotic lesions); FBC, ESR, CRP, PSA, serum protein electrophoresis (SPEP for myeloma), LDH, alkaline phosphatase, urine Bence Jones protein; CT-guided biopsy if lesion found"
+          },
+          {
+            "condition": "Vertebral Osteomyelitis and Spinal Discitis",
+            "description": "Bacterial infection of the vertebral body and/or intervertebral disc — haematogenous spread from skin, IV lines, urinary tract, dental, or gut source; IV drug users at high risk; Staphylococcus aureus most common; Mycobacterium tuberculosis (Pott's disease — spinal TB) is important in India and endemic areas",
+            "red_flags": "Fever with back pain; IV drug use; recent invasive procedure; immunocompromised; recent bacterial infection elsewhere; ESR and CRP markedly elevated; point tenderness over affected vertebra",
+            "investigation": "MRI spine (gold standard — shows disc and vertebral body signal changes); blood cultures (positive in 50-70%); ESR, CRP, WBC; CT-guided biopsy for culture and sensitivity; anti-TB work-up if Pott's suspected"
+          },
+          {
+            "condition": "Vertebral Fracture",
+            "description": "Fracture of one or more vertebral bodies — traumatic (road traffic accident, fall from height), insufficiency/stress fracture from osteoporosis (vertebral compression fracture — VCF — the most common osteoporotic fracture), or pathological fracture in malignancy",
+            "red_flags": "History of significant trauma; age >70 with acute back pain after minor trauma; known osteoporosis; long-term corticosteroid use; height loss and progressive kyphosis; acute onset severe mid-thoracic pain in elderly woman",
+            "investigation": "X-ray spine (loss of vertebral height, wedge deformity); MRI (detects acute vs chronic fracture, cord/nerve involvement, malignancy); DEXA scan (bone density); calcium, Vitamin D, PTH, bone markers"
+          },
+          {
+            "condition": "Epidural Abscess and Haematoma",
+            "description": "Collection of pus or blood in the epidural space — compressing the spinal cord or cauda equina; rapidly progressive neurological deficit",
+            "red_flags": "Back pain with fever and rapidly progressive leg weakness or numbness; recent spinal procedure (epidural, discectomy); IV drug use; anticoagulation with back pain; septicaemia with back pain",
+            "urgency": "EMERGENCY MRI and neurosurgical consultation; evacuation within hours prevents permanent paralysis"
+          },
+          {
+            "condition": "Aortic Aneurysm and Dissection",
+            "description": "Abdominal aortic aneurysm (AAA) can cause severe back/abdominal pain from expansion or rupture — frequently misdiagnosed as musculoskeletal back pain. Aortic dissection causes severe tearing chest-to-back pain.",
+            "red_flags": "Severe sudden-onset back or abdominal pain in a patient over 50 (especially male smoker); pulsatile abdominal mass; hypotension; tearing quality of pain radiating to back"
+          }
+        ]
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild — Grade I Strain / Minor Back Pain",
+        "description": "Mild muscle overstretching or minor back pain with minimal functional limitation. No neurological signs. No red flags.",
+        "criteria": "Localised back or muscle pain rated 1-4 on visual analogue scale (VAS 0-10); pain with specific movements but not at rest; able to perform most daily activities with mild modification; no radiation below the knee; no neurological symptoms; no red flags; normal gait",
+        "functional_impact": "Mild limitation of bending, lifting, or sitting tolerance; able to work (may need minor adjustments); can self-care",
+        "management": "Self-management at home: remain active (avoid bed rest); short course of NSAIDs or paracetamol; heat or cold application; gentle stretching; reassurance; advice to stay active; no imaging needed; review if not improved in 2 weeks",
+        "criteria_for_upgrade": "Pain worsening after 48-72 hours; radiation below the knee; neurological symptoms appearing; inability to perform self-care"
+      },
+      {
+        "level": 2,
+        "name": "Moderate — Significant Back Pain or Grade II Strain",
+        "description": "Moderate pain significantly impacting daily activities, work, and sleep. Possible referred pain to buttock or posterior thigh (not below knee). No or very mild neurological signs.",
+        "criteria": "Pain rated 5-7 on VAS; difficulty with activities of daily living (dressing, sitting, walking >15 minutes); unable to work or significant work restriction; referred pain to buttock or posterior thigh; muscle spasm on examination; possibly mildly reduced lumbar range of motion; no definite neurological deficit; no red flags",
+        "functional_impact": "Unable to work in physically demanding roles; significant impact on recreational activities and social life; disrupted sleep",
+        "management": "GP assessment; regular NSAIDs and/or paracetamol (scheduled, not PRN); short course of muscle relaxant if significant spasm; physiotherapy referral; reassurance and education; activity modification (not avoidance); review at 2-4 weeks; imaging NOT routinely required at this stage unless red flags develop",
+        "criteria_for_upgrade": "Not improving after 4-6 weeks; neurological deficit emerging; pain radiating below knee; severe impact on all activities"
+      },
+      {
+        "level": 3,
+        "name": "Severe — Radiculopathy / Severe Functional Limitation / Grade III Strain",
+        "description": "Severe back pain with sciatica (radiation below the knee in dermatomal distribution), neurological signs, or complete muscle rupture significantly disabling the patient. Requires specialist input.",
+        "criteria": "Pain rated 7-10 on VAS; sciatica with leg pain radiating below knee; positive straight leg raise; neurological signs (reduced reflexes, myotomal weakness, dermatomal sensory loss); complete functional incapacitation; unable to stand or walk; Grade III muscle rupture with palpable defect; uncontrolled pain despite analgesics",
+        "functional_impact": "Unable to work; requires assistance with personal care; unable to drive; major impact on all aspects of life",
+        "management": "Urgent GP or specialist review; MRI lumbar spine (confirm disc herniation and nerve compression level); neuropathic analgesics (gabapentin or pregabalin) for radicular pain; consider epidural steroid injection for severe radiculopathy; physiotherapy with specific nerve mobilisation techniques; consider surgical referral if no improvement after 6-12 weeks or worsening neurological deficit; Grade III strain — orthopaedic or sports medicine referral",
+        "criteria_for_upgrade": "Cauda equina symptoms (bladder/bowel dysfunction, saddle anaesthesia) — IMMEDIATE EMERGENCY"
+      },
+      {
+        "level": 4,
+        "name": "Critical — Red Flag / Cauda Equina Syndrome / Spinal Emergency",
+        "description": "Life-threatening or spinal cord/cauda equina threatening condition presenting with back pain. Requires IMMEDIATE emergency investigation and treatment. Any delay risks permanent neurological deficit, paralysis, or death.",
+        "examples": "Cauda equina syndrome (new urinary retention or incontinence + saddle anaesthesia + bilateral leg weakness); rapidly progressive motor deficit (acute cord compression); suspected spinal metastasis with impending cord compression; vertebral osteomyelitis with systemic sepsis; epidural abscess with neurological deterioration; aortic dissection presenting with back pain",
+        "management": "Emergency department immediately; MRI spine within hours (not days); neurosurgical or spinal surgery consultation within hours; emergency decompression surgery for cauda equina or cord compression; IV antibiotics for epidural abscess or vertebral osteomyelitis; appropriate specialist management per causative pathology",
+        "outcome": "Permanent neurological disability (bladder, bowel, and sexual dysfunction; paralysis) if delayed; excellent recovery if decompressed within hours of cauda equina onset"
+      }
+    ],
+
+    "causes": {
+      "causative_mechanisms_overview": {
+        "mechanical": "The most common cause — biomechanical stress on spinal structures from poor posture, improper lifting, sudden awkward movement, sedentary lifestyle, and occupational overuse causing microtrauma to muscles, ligaments, and discs",
+        "degenerative": "Age-related changes in intervertebral discs (desiccation, disc height loss, annular tears, herniation) and facet joints (osteoarthritis, osteophytosis) — the normal ageing process, but producing pain in susceptible individuals",
+        "inflammatory": "Inflammatory arthritis (ankylosing spondylitis — HLA-B27-related; psoriatic arthritis; reactive arthritis) — presents with morning stiffness >45 minutes, improvement with activity, worse with rest, onset in young adults; treat entirely differently from mechanical back pain",
+        "neurological": "Compression of nerve roots (radiculopathy from disc herniation, foraminal stenosis) or spinal cord (myelopathy from central stenosis, tumour, or acute disc herniation)",
+        "traumatic": "Sudden acute injury — fall, road traffic accident, direct impact causing muscle tears, ligament sprains, fractures, or disc injuries",
+        "psychosocial": "Psychological and social factors profoundly influence back pain — depression, anxiety, fear-avoidance behaviour, catastrophising, work dissatisfaction, poor coping strategies, and sleep deprivation all lower pain threshold and impair recovery; recognised in the biopsychosocial model"
+      },
+      "specific_causes_by_tissue": {
+        "muscle_and_ligament": ["Muscle overuse and fatigue — repetitive tasks, sustained static postures", "Sudden eccentric overload — lifting with back rather than legs", "Poor neuromuscular control of trunk stabilisers (multifidus, transversus abdominis atrophy)", "Direct trauma — blow to the back, fall", "Poor flexibility — tight hip flexors (psoas), hamstrings, and thoracolumbar fascia increasing lumbar strain"],
+        "intervertebral_disc": ["Repetitive compressive and shear loading — disc is avascular and heals poorly", "Prolonged sitting (increased intradiscal pressure) — disc pressure is 40% higher sitting than standing", "Heavy lifting with poor technique — especially combining lifting with twisting", "Vibration exposure — lorry/tractor driving; jack hammers", "Disc desiccation from ageing — reduced proteoglycan content reduces shock absorption", "Smoking — impairs vascular supply to disc nutrition via endplate diffusion"],
+        "facet_joints": ["Extension and rotation loading of spine — sport, gymnastics, overhead work", "Age-related osteoarthritis", "Spondylolisthesis — anterior slippage of one vertebra on the next causes facet stress"],
+        "sacroiliac_joint": ["Pregnancy hormones (relaxin, progesterone) causing ligamentous laxity", "Leg length discrepancy", "Asymmetric loading sports (golfers, tennis players, throwers)", "Falls directly onto the buttock"],
+        "bone": ["Osteoporosis — post-menopausal women, prolonged steroid use, low calcium/Vitamin D", "Malignancy — primary or metastatic", "Paget's disease", "Stress fractures — spondylolysis (pars interarticularis fracture in young athletes)"]
+      },
+      "risk_factors": [
+        "Sedentary lifestyle and physical inactivity — weak core stabiliser muscles (multifidus, transversus abdominis) cannot adequately protect the spine under load",
+        "Prolonged desk work and sitting — sustained lumbar flexion for hours increases intradiscal pressure and fatigues paraspinal muscles; the most common occupational risk factor in modern economies",
+        "Poor ergonomics — poorly adjusted workstations, unsupportive seating, monitor position; prolonged driving (vibration + flexion)",
+        "Heavy manual labour — particularly with repetitive lifting, bending, and twisting; construction, nursing, farming",
+        "Obesity and excess body weight — increases compressive load on lumbar spine; BMI >30 doubles the risk of chronic low back pain; alters lumbopelvic alignment",
+        "Smoking — impairs blood supply to intervertebral discs (discs rely on diffusion through cartilaginous endplates); toxic effects on connective tissue; smokers have significantly higher rates of disc degeneration and chronic back pain",
+        "Age over 40 years — cumulative degenerative changes in discs and facet joints; age-related muscle mass reduction (sarcopenia)",
+        "Prior back pain episode — the strongest single risk factor for future episodes; recurrence rate is 50-80%",
+        "Psychosocial factors — depression and anxiety (3-fold increased risk of chronic back pain); high work stress and dissatisfaction; catastrophising (believing pain equals damage); fear-avoidance behaviour (avoiding activity for fear of worsening pain); poor social support",
+        "Poor posture and postural habits — thoracic kyphosis, lumbar hyperlordosis, forward head posture ('tech neck'), scoliosis",
+        "Improper lifting technique — bending from the back rather than squatting with the legs; twisting while lifting; sudden unexpected load",
+        "Poor physical fitness and core muscle weakness — inadequate trunk stability",
+        "Sleep deprivation — disrupts central pain processing, lowers pain threshold, delays tissue repair",
+        "Female sex — higher incidence of vertebral osteoporosis, pelvic girdle pain in pregnancy, and greater pain sensitivity",
+        "Tall stature — tall individuals with long lever arms have greater lumbar loading",
+        "Genetics — disc degeneration, spondylosis, and susceptibility to chronic pain have significant genetic components (twin studies show 30-60% heritability)",
+        "Inflammatory arthritis — ankylosing spondylitis (HLA-B27 positive), psoriatic arthritis, reactive arthritis",
+        "Previous spinal surgery — increased risk of adjacent level disease and failed back surgery syndrome"
+      ]
+    },
+
+    "symptoms": {
+      "overview": "The clinical presentation of muscle strain and back pain varies enormously depending on the type, severity, and duration of the condition. The most important clinical task is identifying the pattern of symptoms that suggests serious pathology (red flags) versus benign mechanical back pain. Key questions: Is there radiation below the knee (radiculopathy)? Are there neurological symptoms (weakness, numbness, bladder/bowel changes)? Are there constitutional symptoms (fever, weight loss, night pain)? Was there significant trauma?",
+      "primary_symptoms": [
+        {
+          "id": "SYM-901",
+          "name": "Localised Back Pain",
+          "description": "Aching, dull, stabbing, or burning pain localised to the lumbar (lower), thoracic (middle), or cervical (neck) region — the cardinal symptom. Mechanical back pain characteristically varies with posture and movement: certain positions or movements provoke the pain, others relieve it. Pain worsened by: forward bending (disc), extension and rotation (facet joints, spondylolysis), sitting (disc, sacroiliac), standing (spinal stenosis, spondylolisthesis). Pain relieved by: lying flat (most mechanical), sitting (spinal stenosis). Pain UNAFFECTED by position and worse at night: concern for serious pathology (malignancy, infection).",
+          "severity": "Mild to Severe",
+          "onset": "Acute (sudden — after movement, lifting, or twisting); Insidious (gradual — chronic overuse, postural, degenerative)"
+        },
+        {
+          "id": "SYM-902",
+          "name": "Muscle Stiffness and Spasm",
+          "description": "Involuntary sustained contraction of paraspinal muscles — a protective splinting response to pain and injury. Muscle spasm causes visible and palpable tightening of the paraspinal muscles, restricted range of motion (especially lumbar flexion and rotation), and often a characteristic antalgic posture (list away from the painful side as the spine shifts to decompress the affected structure). Morning stiffness lasting <30 minutes is typical of mechanical back pain; morning stiffness lasting >45-60 minutes is a red flag for inflammatory arthritis (ankylosing spondylitis).",
+          "severity": "Mild to Severe",
+          "clinical_importance": "Prolonged muscle spasm itself perpetuates pain — a pain-spasm-pain cycle that can maintain symptoms beyond the original injury; muscle relaxants and gentle early movement break this cycle"
+        },
+        {
+          "id": "SYM-903",
+          "name": "Radiation of Pain (Referred vs Radicular)",
+          "description": "Two distinct patterns of pain radiation must be distinguished: (1) Referred pain — dull, aching, poorly localised pain spreading from the lumbar spine to the buttock, posterior thigh, and sometimes to the knee. This is somatic referred pain from local spinal structures (disc, facet, SIJ) — not nerve root compression; does NOT radiate below the knee; no neurological deficit. (2) Radicular pain (sciatica) — sharp, burning, shooting, or electric-shock pain radiating below the knee into the leg and foot in a specific dermatomal pattern; caused by nerve root compression or irritation from disc herniation; may be accompanied by paraesthesia, numbness, and muscle weakness. The distinction matters — radicular pain with neurological deficit requires specific investigation (MRI) and management.",
+          "severity": "Mild to Severe",
+          "clinical_importance": "Radiation below the knee with neurological signs = radiculopathy — requires MRI; radiation only to buttock and thigh = referred pain — does not require imaging"
+        },
+        {
+          "id": "SYM-904",
+          "name": "Restricted Range of Motion (ROM)",
+          "description": "Reduced movement in one or more planes of spinal motion — forward flexion (touching toes), extension (arching back), lateral flexion (side bending), and rotation — from pain inhibition, muscle guarding, joint stiffness, or pain-avoidance. The pattern of ROM restriction can suggest the involved structure: forward flexion limited and painful = disc or anterior ligament; extension limited and painful = facet joint, spondylolysis, or spinal stenosis; lateral flexion and rotation limited = muscle or facet. Schober's test formally measures lumbar flexion range; modified Schober's >5 cm increase in distance between two skin marks from rest to full flexion suggests adequate lumbar mobility.",
+          "severity": "Mild to Severe"
+        },
+        {
+          "id": "SYM-905",
+          "name": "Neurological Symptoms — Paraesthesia, Weakness, Numbness",
+          "description": "Compression or irritation of spinal nerve roots or the spinal cord produces neurological symptoms in the distribution of the affected nerve. Paraesthesia (pins and needles, tingling) and numbness in a dermatomal distribution (L4: medial leg; L5: lateral leg and dorsum of foot; S1: lateral foot and little toe); Muscle weakness in a myotomal distribution (L4: tibialis anterior — foot dorsiflexion; L5: extensor hallucis longus — big toe extension; S1: gastrocnemius — plantarflexion). Footdrop (inability to dorsiflex foot — L4/L5 root or common peroneal nerve) requires urgent MRI and early management. Bilateral leg symptoms + bladder/bowel involvement = CAUDA EQUINA EMERGENCY.",
+          "severity": "Moderate to Severe — any neurological deficit requires urgent assessment",
+          "clinical_importance": "Progressive worsening neurological deficit is a relative emergency; static or slowly improving neurological deficit can be managed conservatively with close monitoring"
+        },
+        {
+          "id": "SYM-906",
+          "name": "Sleep Disturbance and Night Pain",
+          "description": "Pain disrupting sleep — either difficulty falling asleep due to pain finding a comfortable position, or awakening during the night from pain. Night pain that is mechanical (worsened by turning in bed, relieved by getting up and moving about) is typical of muscle strain and inflammatory arthritis. Night pain that is CONSTANT, unrelated to posture, and not relieved by any position — particularly if waking from sleep — is a red flag for malignancy or infection and must be investigated urgently.",
+          "severity": "Mild to Severe",
+          "clinical_importance": "Persistent severe night pain unrelated to position = red flag; investigate for cancer or infection"
+        }
+      ],
+      "secondary_symptoms": [
+        "Generalised fatigue and malaise — from disrupted sleep, chronic pain, reduced physical activity, and depression",
+        "Depression and anxiety — extremely common in chronic back pain; lower mood increases pain sensitivity and impairs recovery; bidirectional relationship",
+        "Headache — cervicogenic headache (from upper cervical spine, trapezius, or suboccipital muscle strain); tension-type headache from neck pain",
+        "Swelling and bruising over injured muscle — particularly with Grade II-III strains; appears 12-48 hours after acute injury",
+        "Abdominal muscle weakness (impaired lumbopelvic stability) — following prolonged back pain; multifidus and transversus abdominis atrophy occurs within days of back pain onset",
+        "Antalgic posture — lateral trunk list (away from painful side), loss of lumbar lordosis (flat back — protective muscle splinting), or exaggerated lordosis",
+        "Difficulty with specific activities — prolonged sitting, standing, bending, carrying shopping, getting up from a chair, putting on shoes, sexual intercourse",
+        "Reduced exercise tolerance and aerobic deconditioning — from activity avoidance; a major contributor to chronic back pain disability",
+        "Joint stiffness in hips, knees, and ankles — from compensatory movement patterns and reduced activity",
+        "Bladder urgency or frequency — can be referred symptom from L1/L2 disc pathology; differentiate from cauda equina (which causes retention/incontinence)"
+      ],
+      "red_flag_symptoms_requiring_immediate_action": [
+        "New bladder or bowel dysfunction — urinary retention (inability to urinate), urinary or faecal incontinence, or difficulty initiating urination — CAUDA EQUINA SYNDROME until proven otherwise — GO TO EMERGENCY DEPARTMENT IMMEDIATELY",
+        "Saddle anaesthesia — numbness or tingling of the perineum, genitalia, anus, or inner thighs (the 'saddle area') — CAUDA EQUINA EMERGENCY",
+        "Bilateral leg weakness or numbness — both legs simultaneously affected — CAUDA EQUINA OR CORD COMPRESSION EMERGENCY",
+        "Back pain with high fever (>38.5°C) and systemically unwell — possible vertebral osteomyelitis or epidural abscess — URGENT ASSESSMENT",
+        "Sudden severe back pain in a patient over 50 with collapse or hypotension — possible ruptured aortic aneurysm — CALL EMERGENCY SERVICES IMMEDIATELY",
+        "Severe back pain after significant trauma (fall, RTA) in elderly or osteoporotic patient — possible vertebral fracture — EMERGENCY DEPARTMENT",
+        "Pain waking from sleep that is constant, position-independent, progressively worsening with associated unexplained weight loss — possible malignancy — URGENT GP SAME DAY",
+        "Progressive neurological deterioration — increasing leg weakness, spreading numbness — URGENT SPECIALIST ASSESSMENT within 24 hours",
+        "Back pain in a known cancer patient — possible metastatic spinal disease — URGENT SAME-DAY ONCOLOGY OR EMERGENCY ASSESSMENT",
+        "Back pain with fever in an IV drug user or immunocompromised patient — possible epidural abscess or discitis — EMERGENCY DEPARTMENT"
+      ],
+      "yellow_flag_symptoms_predicting_chronic_disability": [
+        "Belief that all back pain is harmful and that activity will cause further damage",
+        "Catastrophising language — 'my back is broken', 'I'll never get better', 'this is the worst thing that could happen'",
+        "Fear of movement (kinesiophobia) — avoiding all activity or movement because of pain",
+        "Passive coping — waiting for treatment to 'fix' the pain rather than active self-management",
+        "Social withdrawal and isolation from pain",
+        "Expectation that a scan or treatment will reveal and fix an exact structural cause",
+        "Work-related stress, job dissatisfaction, or fear of returning to work",
+        "Concurrent significant depression or anxiety",
+        "Sleep disturbance predominantly from anxiety about pain rather than pain itself"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Location of pain — lumbar, thoracic, cervical; precise localisation including any radiation; unilateral vs bilateral",
+        "Onset — sudden (acute trauma/strain) vs insidious (chronic/degenerative); specific triggering event (lifting, twisting, bending, sitting for hours, RTA, fall)",
+        "Character of pain — dull/aching (muscle, facet), sharp/burning/shooting (radicular), constant (serious pathology), colicky (visceral referred)",
+        "Radiation — below the knee with neurological symptoms = radiculopathy; buttock and thigh only = referred; bilateral radiation with bladder/bowel changes = CAUDA EQUINA",
+        "Neurological symptoms — paraesthesia, numbness, weakness in legs or arms; bladder and bowel function (CRITICAL — any change requires urgent assessment)",
+        "Aggravating and relieving factors — forward flexion (disc), extension (facet/stenosis), sitting (disc), lying flat (most mechanical); POSITIONAL RELIEF excludes serious pathology",
+        "Night pain — does position change relieve it? (mechanical) or is it constant and position-independent? (red flag for cancer/infection)",
+        "Red flag screening — constitutional symptoms (fever, weight loss, night sweats), history of cancer, age >50 with new back pain, trauma, immunosuppression, IV drug use, prolonged steroid use (osteoporosis)",
+        "Yellow flag screening — beliefs about pain (is it harmful?), fear of movement, work situation, mood (PHQ-2 depression screen), sleep quality, previous episodes and how they resolved",
+        "Duration — acute (<4 weeks), subacute (4-12 weeks), chronic (>12 weeks); chronicity changes management approach",
+        "Previous episodes — frequency, duration, what helped, what did not help; prior investigations and their results",
+        "Previous treatments — physiotherapy (what type, how many sessions, compliance, outcome); medications tried (which ones, response); injections; surgery",
+        "Occupational history — type of work (manual, desk, driving); hours of sitting; heavy lifting; work absence; compensation claim",
+        "Social history — impact on daily life, exercise, hobbies, relationships, sleep; social support",
+        "Medical history — osteoporosis, cancer, inflammatory arthritis, diabetes, cardiovascular disease, depression, anxiety; steroid use",
+        "Family history — inflammatory arthritis (ankylosing spondylitis — HLA-B27-related); osteoporosis",
+        "Review of systems — inflammatory back pain features: morning stiffness >45 minutes, improvement with activity, worse with rest, associated uveitis, heel pain (enthesitis), skin rash (psoriasis), diarrhoea (IBD-related arthropathy)"
+      ],
+      "physical_examination": [
+        "Inspection — gait (antalgic, foot drop); posture (lumbar lordosis — increased/reduced/absent, thoracic kyphosis, lateral list, scoliosis); muscle wasting; swelling or bruising over injury site",
+        "Range of motion — assess lumbar flexion (modified Schober's test: marks at S2 and 10 cm above; <5 cm increase = reduced; inability to touch toes); extension; lateral flexion; rotation; note pain provocation with each movement",
+        "Palpation — midline spinous process tenderness (fracture, discitis — point tenderness); paraspinal muscle tenderness and spasm (bilateral = muscle, unilateral = facet/disc); SIJ tenderness; sciatic notch tenderness (piriformis syndrome); coccygeal tenderness",
+        "Neurological examination — ESSENTIAL in all back pain; lower limb: tone, power (hip flexors L1/2; knee extension L3/4; foot dorsiflexion L4/5; big toe extension L5; plantarflexion S1/2); sensation (dermatomes L1-S3 mapped); reflexes (knee jerk L3/4; ankle jerk S1/2 — reduced or absent = nerve root compression); Babinski sign (extensor plantar response = upper motor neuron/cord involvement)",
+        "Straight Leg Raise (SLR) / Lasègue's Test — with patient supine, raise the straight leg passively; positive if pain radiates below the knee (NOT just back pain) at 30-60 degrees; highly sensitive (90%) for L4/5 or L5/S1 disc herniation; must be distinguished from hamstring tightness",
+        "Crossed SLR (contralateral SLR) — pain in symptomatic leg when CONTRALATERAL leg is raised; highly specific (88%) for disc herniation",
+        "Femoral Nerve Stretch Test — patient prone, flex knee; positive if pain radiates down front of thigh = L3/4 nerve root involvement; tests upper lumbar disc herniation",
+        "FABER / Patrick Test (Flexion ABduction External Rotation) — hip flexed, abducted, and externally rotated (figure-of-4 position); pain in groin = hip pathology; pain in sacroiliac region = SIJ dysfunction",
+        "SIJ Provocation Tests — THIGH THRUST, Posterior Pelvic Pain Provocation (PPPP), Gaenslen's test; positive = SIJ as pain source",
+        "Waddell's Non-Organic Signs — 5 clinical signs (tenderness to light touch, simulation tests — axial loading on head, rotation of pelvis en bloc; distraction test — SLR performed distracted vs formally; regional sensory/motor non-anatomical changes; overreaction); 3 or more positive = significant non-organic/psychological component to pain (neither faking nor malingering — indicates significant distress and need for psychological evaluation)",
+        "Slump Test — sitting, slump forward, extend knee, dorsiflex foot; positive if sciatic pain reproduced and relieved by cervical extension (confirms neural tension component); sensitive for disc herniation with radiculopathy",
+        "Abdominal examination — pulsatile abdominal mass (aortic aneurysm in over-50s with sudden back pain); renal angle tenderness (pyelonephritis mimicking back pain)",
+        "Rectal tone assessment — in suspected cauda equina syndrome (reduced anal tone = sacral nerve root dysfunction); perianal sensation assessment"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Plain X-Ray of the Spine (Lumbar, Thoracic, or Cervical)",
+          "type": "Imaging — Radiograph",
+          "description": "First-line imaging for back pain when investigation is indicated — primarily for detecting bony pathology. Shows vertebral body alignment, fractures, disc space height (indirect indication of disc disease), osteophytes, vertebral endplate changes, spondylolisthesis (forward slippage assessed on lateral view), sacroiliac joint erosions (ankylosing spondylitis — 'bamboo spine'), and gross destructive lesions from malignancy. However, X-rays do NOT show the intervertebral discs, spinal cord, nerve roots, or soft tissues — MRI is required for these.",
+          "purpose": "Detect vertebral fracture (acute trauma, osteoporosis, pathological); spondylolisthesis; spondylolysis (pars defect — best seen on oblique views); gross malignancy; spondylitis/osteomyelitis (late changes); assess alignment and vertebral height",
+          "key_metric": "Loss of vertebral body height >20% = vertebral compression fracture; intervertebral disc space narrowing + endplate erosion + adjacent vertebrae = discitis; 'Scottie dog' sign on oblique view — pars defect ('broken collar') = spondylolysis",
+          "indication": "Significant trauma (possible fracture); suspected malignancy or infection; spondylolysis in young athlete; spondylolisthesis assessment; ankylosing spondylitis workup (sacroiliac joints on AP pelvis view)",
+          "limitation": "Does NOT show disc herniation, nerve root compression, spinal cord, soft tissue inflammation, or early malignancy — MRI needed for these; most MRI-confirmed disc herniations cause normal X-rays; age-related degeneration changes on X-ray are extremely prevalent and often clinically insignificant",
+          "note": "Routine X-ray is NOT recommended for uncomplicated acute back pain without red flags — does not change management, irradiates the patient, and may generate unhelpful anxiety from incidental age-related findings"
+        },
+        {
+          "test_name": "MRI of the Spine (Lumbar, Thoracic, or Cervical)",
+          "type": "Imaging — Magnetic Resonance Imaging",
+          "description": "The gold standard investigation for structural causes of back pain — provides unrivalled soft tissue detail: disc morphology (herniation type and degree — bulge, protrusion, extrusion, sequestration), nerve root compression (direct visualisation of nerve root contact and displacement), spinal cord signal changes (myelopathy), spinal canal diameter (stenosis), vertebral body signal (bone marrow oedema from fracture — bright on STIR or T2; malignant infiltration; discitis/osteomyelitis — T2 signal change and enhancement), epidural collections (abscess, haematoma), and soft tissue masses. Does NOT use ionising radiation.",
+          "purpose": "Confirm disc herniation and nerve root level affected (guiding injection or surgery); diagnose cauda equina syndrome urgently; detect malignant spinal disease; diagnose vertebral osteomyelitis or epidural abscess; pre-surgical planning; persistent neurological deficit after conservative management",
+          "key_metric": "Disc herniation grading: bulge (disc extends beyond endplates symmetrically); protrusion (focal herniation with base wider than apex); extrusion (base narrower than neck — fragment prolapsed into canal); sequestration (free disc fragment detached from parent disc). T2 hypointense disc = desiccated degenerate disc; T2 hyperintense disc or adjacent bone marrow = acute injury, infection, or tumour",
+          "indication": "Any red flag symptoms (immediate emergency); cauda equina symptoms (within hours); significant neurological deficit; sciatica not improving after 6-8 weeks; prior to epidural steroid injection or surgery; suspected malignancy, infection, or fracture",
+          "critical_caveat": "MRI FINDINGS COMMONLY FOUND IN ASYMPTOMATIC PEOPLE and do NOT imply clinically significant pathology: disc bulges (present in 64% of asymptomatic 40-year-olds), disc herniations (present in 32% of asymptomatic adults), disc degeneration (present in 91% of asymptomatic 60-year-olds). TREAT THE PATIENT, NOT THE SCAN. An abnormal MRI does NOT confirm that the finding causes the patient's pain. Over-investigation with MRI in uncomplicated back pain without red flags is associated with worse outcomes (increased fear, more surgery, more disability) — this is a well-documented harmful practice."
+        },
+        {
+          "test_name": "CT Scan of the Spine",
+          "type": "Imaging — Computed Tomography",
+          "description": "Provides superior bony detail compared to MRI — ideal for complex fracture characterisation, surgical planning, and assessment of bony canal dimensions in spinal stenosis. CT myelogram (CT with intrathecal contrast) is used when MRI is contraindicated (pacemaker, metal implants).",
+          "purpose": "Vertebral fracture characterisation (type, displacement, stability); bony detail in spinal stenosis; surgical planning for complex deformity; spondylolysis (pars defect — CT is more sensitive than plain X-ray); pedicle screw trajectory planning",
+          "key_metric": "TLICS (Thoracolumbar Injury Classification System) guides fracture management; spondylolysis — 'bone defect' in the pars interarticularis on axial CT",
+          "note": "CT has significant radiation dose — consider MRI preferentially in younger patients and when soft tissue detail is required"
+        },
+        {
+          "test_name": "Electromyography (EMG) and Nerve Conduction Studies (NCS)",
+          "type": "Neurophysiological",
+          "description": "EMG measures the electrical activity of muscles at rest and during contraction — denervation changes (fibrillations, positive sharp waves) indicate nerve root or peripheral nerve injury. NCS measures the speed and amplitude of conduction along peripheral nerves — reduces in neuropathy. Together they localise and characterise nerve root pathology, help distinguish radiculopathy from peripheral neuropathy, and provide prognostic information for recovery.",
+          "purpose": "Confirm and localise radiculopathy; distinguish disc herniation radiculopathy from peripheral neuropathy or plexopathy; assess severity and prognosis of nerve root injury; assist pre-surgical planning; determine if neurological deficit is acute (new denervation) or chronic (reinnervation)",
+          "indication": "Neurological deficit of uncertain cause; atypical radiculopathy pattern; differentiating lumbar radiculopathy from peripheral neuropathy (diabetic neuropathy, peroneal nerve palsy — all causing foot drop)",
+          "key_metric": "Fibrillation potentials and positive sharp waves: acute denervation (2-3 weeks after nerve injury); polyphasic motor unit potentials with reduced recruitment: chronic radiculopathy; reduced SNAP (sensory nerve action potential): peripheral nerve or dorsal root ganglion pathology"
+        },
+        {
+          "test_name": "Blood Tests — FBC, ESR, CRP, Biochemistry",
+          "type": "Blood — Haematological and Biochemical",
+          "description": "Routine blood tests are NOT required for non-specific mechanical back pain without red flags. They are essential when red flag pathology is suspected.",
+          "tests_and_indications": [
+            {
+              "test": "FBC (Full Blood Count)",
+              "purpose": "Anaemia (malignancy, blood loss from fracture); leucocytosis (infection — vertebral osteomyelitis, epidural abscess); thrombocytopenia (bone marrow involvement from malignancy)"
+            },
+            {
+              "test": "ESR (Erythrocyte Sedimentation Rate) and CRP",
+              "purpose": "Very elevated ESR and CRP (>50-100 mm/hr) = infection (vertebral osteomyelitis, discitis) or malignancy; normal ESR effectively excludes infection and most malignancy; also elevated in inflammatory arthritis (ankylosing spondylitis)"
+            },
+            {
+              "test": "PSA (Prostate-Specific Antigen)",
+              "purpose": "Prostate cancer is the most common cancer to metastasise to the lumbar spine in men; check in all men >50 with new-onset back pain without a clear mechanical cause"
+            },
+            {
+              "test": "Serum Protein Electrophoresis (SPEP) and Urine Bence Jones Protein",
+              "purpose": "Multiple myeloma — the most common primary malignant bone tumour; typically affects vertebral bodies; presents with back pain and may show paraprotein band on SPEP; Bence Jones protein in urine; elevated serum calcium and immunoglobulin"
+            },
+            {
+              "test": "Alkaline Phosphatase (ALP) and LDH",
+              "purpose": "Elevated in bone metastases (ALP); lymphoma and widespread malignancy (LDH)"
+            },
+            {
+              "test": "Serum Calcium",
+              "purpose": "Hypercalcaemia — malignancy (bone metastases releasing calcium), primary hyperparathyroidism, multiple myeloma; bone pain and systemic symptoms"
+            },
+            {
+              "test": "HLA-B27",
+              "purpose": "Inflammatory spondyloarthropathy — ankylosing spondylitis, psoriatic arthritis, reactive arthritis; positive in 90-95% of ankylosing spondylitis but also in 8-10% of general population; interpret with clinical context"
+            },
+            {
+              "test": "Blood Cultures",
+              "purpose": "Vertebral osteomyelitis or epidural abscess with systemic sepsis — take before antibiotics"
+            },
+            {
+              "test": "Serum Vitamin D and PTH",
+              "purpose": "Vitamin D deficiency (common in India) causes musculoskeletal pain that mimics mechanical back pain; osteomalacia (adult Vitamin D deficiency) presents with diffuse bone and muscle pain and proximal weakness; check in all patients with persistent back pain and fatigue"
+            },
+            {
+              "test": "Thyroid Function Tests (TSH, Free T4)",
+              "purpose": "Hypothyroidism causes generalised musculoskeletal pain, myopathy, and fatigue mimicking back pain — check TSH if fatigue and diffuse muscle pain are prominent"
+            }
+          ]
+        },
+        {
+          "test_name": "DEXA Scan (Dual-Energy X-Ray Absorptiometry)",
+          "type": "Imaging — Bone Densitometry",
+          "description": "Measures bone mineral density (BMD) at the lumbar spine (L1-L4), femoral neck, and total hip. T-score compares to peak bone mass in young adults: T-score above -1.0 = normal; T-score -1.0 to -2.5 = osteopenia; T-score below -2.5 = osteoporosis. FRAX score uses DEXA + clinical risk factors to calculate 10-year absolute risk of major osteoporotic fracture — guides treatment decisions.",
+          "purpose": "Diagnose osteoporosis in patients with vertebral fracture or high risk; guide bisphosphonate/anti-osteoporotic therapy; assess Vitamin D and calcium therapy response; monitor treatment",
+          "indication": "Vertebral compression fracture on X-ray; women over 65 years; men over 70 years; postmenopausal women with additional risk factors; long-term corticosteroid use (>3 months); low trauma fracture at any age; malabsorption syndromes; hypogonadism"
+        },
+        {
+          "test_name": "Bone Scintigraphy (Technetium-99m Bone Scan)",
+          "type": "Imaging — Nuclear Medicine",
+          "description": "Whole-body scan detecting areas of increased bone metabolic activity (hot spots) from fracture, malignancy, infection, or Paget's disease. Highly sensitive but low specificity — identifies any area of increased bone turnover. Useful for screening for occult fracture (spondylolysis, stress fracture), multifocal bone metastases, and vertebral osteomyelitis.",
+          "purpose": "Screen for bone metastases (multiple hot spots); detect acute fracture when X-ray normal; identify spondylolysis; evaluate Paget's disease; vertebral osteomyelitis (early — before X-ray changes); distinguish benign from malignant compression fractures",
+          "note": "SPECT (Single Photon Emission CT) bone scan gives more anatomical localisation than planar scan; SPECT/CT combines functional and anatomical information"
+        },
+        {
+          "test_name": "Diagnostic Nerve Root Block and Medial Branch Block",
+          "type": "Interventional — Diagnostic Injection",
+          "description": "Image-guided (fluoroscopy or CT) injection of local anaesthetic around a specific nerve root or facet joint medial branch nerve. Used to confirm the clinical level of pain — if injection at a specific level provides significant pain relief (>50-70% reduction), that level is confirmed as the pain generator. Guides treatment decisions — particularly for surgical planning and targeted therapeutic injections.",
+          "purpose": "Confirm pain generator level before surgery or radiofrequency ablation; distinguish L4, L5, or S1 radiculopathy when MRI shows multi-level changes; facet joint medial branch block to confirm facet pain before radiofrequency denervation",
+          "note": "Purely diagnostic — local anaesthetic effect temporary (hours); provides no long-term treatment benefit; must be combined with therapeutic plan"
+        },
+        {
+          "test_name": "Ultrasound of Paraspinal Muscles and Tendons",
+          "type": "Imaging — Ultrasound",
+          "description": "Real-time imaging of superficial muscles and tendons — useful for detecting muscle tears (Grade II-III strains), haematoma formation, tendon pathology, and guiding therapeutic injections (trigger point, SIJ) in musculoskeletal back pain. Real-time visualisation of muscle contraction provides biofeedback during rehabilitation.",
+          "purpose": "Confirm muscle tear or haematoma in acute strain; guide injection therapy (trigger point, piriformis, SIJ); assess multifidus muscle cross-sectional area (reduced multifidus = prognostic marker for recurrent LBP); guide nerve blocks",
+          "note": "Cannot image deep spinal structures (disc, cord) — limited to superficial soft tissue assessment"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "The most important principle in back pain management is that analgesics provide temporary pain relief to FACILITATE rehabilitation — they are not the primary treatment. The best evidence supports early return to normal activities and structured exercise. Medications should be used at the lowest effective dose for the shortest necessary period. Paracetamol alone has limited evidence for acute LBP — NSAIDs are more effective. Opioids have significant risks and modest benefits and should be avoided for routine back pain. Never use opioids as first-line therapy for non-specific mechanical back pain.",
+      "treatment_principles": [
+        "1. STAY ACTIVE — the most important instruction for acute back pain; avoiding activity delays recovery and predicts chronicity; gentle walking and normal activities as tolerated should begin immediately",
+        "2. NSAIDs are the most effective first-line analgesics for back pain — more effective than paracetamol alone; use at full therapeutic doses for short courses; always prescribe with gastroprotection (PPI) if using for more than 5 days",
+        "3. Muscle relaxants are useful short-term (maximum 5-7 days) for painful muscle spasm — they are sedating and carry dependency risk; diazepam specifically should be used with caution and for maximum 5 days",
+        "4. Topical NSAIDs (diclofenac gel, ibuprofen gel) are effective for localised back pain with fewer systemic side effects than oral NSAIDs — first-line for mild-moderate localised pain",
+        "5. Neuropathic agents (gabapentin, pregabalin) are indicated ONLY for radicular pain (sciatica) — they are NOT effective for non-specific mechanical back pain and should not be prescribed for it",
+        "6. Opioids should be AVOIDED for routine non-specific back pain — evidence for benefit beyond 4-8 weeks is very poor; risks of addiction, dependence, opioid-induced hyperalgesia, and long-term disability are significant",
+        "7. Antidepressants (amitriptyline, duloxetine) have evidence for chronic back pain — both for pain relief and for treating the commonly co-existing depression and sleep disturbance",
+        "8. Vitamin D deficiency should be corrected in all patients with musculoskeletal back pain — Vitamin D deficiency (extremely common in India and South Asia) causes diffuse musculoskeletal pain, proximal muscle weakness, and fatigue",
+        "9. Medications should be reviewed at every appointment — dose reduction and discontinuation plan should be discussed from the start"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-121",
+          "category_name": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs) — First-Line Analgesics",
+          "purpose": "The most effective first-line pharmacological treatment for acute and subacute non-specific back pain and muscle strain — providing both analgesia and anti-inflammatory action. More effective than paracetamol for acute LBP.",
+          "medicines": [
+            {
+              "name": "Ibuprofen",
+              "brand_examples": ["Brufen", "Nurofen", "Advil", "Combiflam (ibuprofen + paracetamol)"],
+              "form": "Tablet, Capsule, Syrup",
+              "dosage": "400-600 mg three times daily with food; maximum 2400 mg/day; standard course 5-10 days for acute back pain",
+              "use_case": "First-line NSAID for acute and subacute back pain; also excellent for inflammatory arthritis flares; widely available and well-tolerated at standard doses in young healthy adults",
+              "mechanism": "Non-selective COX-1 and COX-2 inhibitor — reduces prostaglandin synthesis (anti-inflammatory, analgesic, antipyretic); reduces oedema and pain sensitisation around injured tissue",
+              "gastroprotection": "Prescribe omeprazole or lansoprazole 20 mg once daily when ibuprofen used for >5 days, in elderly, or in those with prior GI history",
+              "contraindications": ["Peptic ulcer disease or GI bleeding", "Renal impairment (eGFR <30)", "Heart failure", "Last trimester pregnancy", "Known NSAID hypersensitivity / aspirin-exacerbated asthma", "Dehydration"],
+              "side_effects": ["GI irritation, dyspepsia, nausea", "Peptic ulcer and GI bleeding (especially in elderly, concurrent steroid use)", "Renal impairment (rare with short courses)", "Fluid retention", "Elevated blood pressure", "Cardiovascular risk with prolonged high-dose use"]
+            },
+            {
+              "name": "Diclofenac",
+              "brand_examples": ["Voveran", "Volini tablets", "Diclofenac SR", "Dynapar"],
+              "form": "Tablet, SR capsule, Injection",
+              "dosage": "50 mg three times daily with food; or 75 mg slow-release twice daily; maximum 150 mg/day",
+              "use_case": "Highly effective for acute musculoskeletal pain and back pain; more potent analgesic than ibuprofen at therapeutic doses; diclofenac injection 75 mg IM for acute severe back pain when oral route not possible",
+              "mechanism": "Preferential COX-2 inhibitor (some COX-1 activity); particularly effective for musculoskeletal and soft tissue pain",
+              "side_effects": "Similar to ibuprofen; slightly higher cardiovascular risk than ibuprofen or naproxen at high doses",
+              "note": "Diclofenac SR 75 mg twice daily is a commonly prescribed and effective formulation for subacute and chronic back pain"
+            },
+            {
+              "name": "Naproxen",
+              "brand_examples": ["Naprosyn", "Aleve", "Proxen"],
+              "form": "Tablet",
+              "dosage": "250-500 mg twice daily with food; maximum 1000 mg/day",
+              "use_case": "Effective NSAID for back pain with the advantage of twice-daily dosing (better adherence); lower cardiovascular risk profile than diclofenac or COX-2 inhibitors; useful in patients with mild cardiovascular risk",
+              "mechanism": "Non-selective COX inhibitor with slightly longer half-life than ibuprofen",
+              "side_effects": "Similar to ibuprofen; long half-life means GI effects may persist if discontinued"
+            },
+            {
+              "name": "Etoricoxib (COX-2 Selective Inhibitor)",
+              "brand_examples": ["Arcoxia", "Etova", "Torocoxib"],
+              "form": "Tablet",
+              "dosage": "60-90 mg once daily (60 mg for chronic LBP; 90 mg for acute)",
+              "use_case": "First-line NSAID for patients with GI risk (prior peptic ulcer, GI bleed, elderly) — selective COX-2 inhibition spares gastric mucosa; once-daily dosing; highly effective for acute and chronic back pain, disc pain, and spondylosis; widely used in India",
+              "mechanism": "Highly selective COX-2 inhibitor — preferentially inhibits inflammatory prostaglandins; minimal gastric mucosal effect (spares COX-1 protective prostaglandins)",
+              "contraindications": ["Cardiovascular disease (ischaemic heart disease, stroke, peripheral arterial disease) — increased MI and stroke risk with COX-2 inhibitors", "Uncontrolled hypertension", "Renal impairment"],
+              "side_effects": ["GI side effects significantly less than non-selective NSAIDs", "Cardiovascular events (MI, stroke) with long-term use in high-risk patients", "Fluid retention, hypertension"]
+            },
+            {
+              "name": "Celecoxib",
+              "brand_examples": ["Celebrex", "Celact"],
+              "form": "Capsule",
+              "dosage": "100-200 mg twice daily",
+              "use_case": "GI-sparing NSAID for patients at GI risk; effective for chronic spondylosis, ankylosing spondylitis, and inflammatory back pain; slightly lower cardiovascular risk than etoricoxib among COX-2 inhibitors",
+              "note": "Cross-reactivity with sulphonamide allergy — check allergy history"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-122",
+          "category_name": "Topical Analgesics — Local Treatment for Localised Back Pain",
+          "purpose": "Topical preparations deliver analgesic and anti-inflammatory agents directly to the affected site, providing effective pain relief with minimal systemic absorption and fewer side effects than oral medications. Particularly useful for mild-moderate localised back pain.",
+          "medicines": [
+            {
+              "name": "Topical Diclofenac (Gel, Spray, or Patch)",
+              "brand_examples": ["Voltaren Gel", "Volini Gel", "Voveran Emulgel", "Diclac Gel"],
+              "form": "Gel, Spray, Transdermal patch",
+              "dosage": "Apply 2-4 g (cherry-sized amount) to the painful area 3-4 times daily; rub in gently; avoid broken skin; wash hands after application",
+              "use_case": "First-line for localised back pain (strain, muscle spasm, facet joint pain) — excellent evidence for efficacy; comparable to oral NSAIDs for localised pain with significantly fewer GI side effects; particularly suitable for elderly patients, those with renal disease, and those who cannot tolerate oral NSAIDs",
+              "evidence": "Multiple RCTs and systematic reviews confirm topical diclofenac is effective for acute and chronic musculoskeletal pain (Cochrane 2012); systemic absorption approximately 6% of equivalent oral dose"
+            },
+            {
+              "name": "Topical Ibuprofen Gel",
+              "brand_examples": ["Nurofen Gel", "Ibuprofen gel 5%", "Ibugel"],
+              "form": "Gel",
+              "dosage": "Apply 4-10 cm ribbon to affected area up to 4 times daily",
+              "use_case": "Localised muscle strain and back pain; OTC availability; good evidence for efficacy in acute soft tissue injuries"
+            },
+            {
+              "name": "Capsaicin Cream / Patch (0.025% - 8%)",
+              "brand_examples": ["Zostrix", "Capsagel", "Qutenza patch (8% — specialist use)"],
+              "form": "Cream (0.025-0.075%), High-concentration patch (8% — specialist use)",
+              "dosage": "Low-concentration cream: apply thin layer 3-4 times daily to painful area; burning sensation initially (substance P depletion — expected and diminishes with continued use); apply for minimum 4 weeks before assessing benefit",
+              "use_case": "Chronic back pain and chronic musculoskeletal pain — depletes substance P from peripheral nociceptors; particularly useful for chronic myofascial pain and neuropathic components; evidence for both low-concentration cream (mild) and high-concentration patch (8% — specialist-applied for refractory chronic pain; effects last 3-6 months)",
+              "mechanism": "Capsaicin activates and then desensitises TRPV1 receptors on peripheral nociceptors — initial burning followed by prolonged analgesic desensitisation; depletes substance P (pain neurotransmitter) from C-fibres",
+              "side_effects": ["Intense burning sensation at application site (expected — warn patient)", "Redness and skin irritation", "Avoid contact with eyes and mucous membranes", "Wear gloves during application"]
+            },
+            {
+              "name": "Lidocaine Patches (5% Topical)",
+              "brand_examples": ["Versatis", "Lidoderm"],
+              "form": "Adhesive transdermal patch",
+              "dosage": "Apply 1-3 patches to the most painful area for 12 hours on / 12 hours off daily",
+              "use_case": "Localised chronic back pain and myofascial pain; particularly useful for allodynia (pain from non-painful touch) over a specific area; neuropathic back pain; chronic paraspinal muscle tenderness",
+              "mechanism": "Topical local anaesthetic — stabilises peripheral nociceptor membranes; reduces ectopic discharge from sensitised nociceptors; minimal systemic absorption"
+            },
+            {
+              "name": "Methyl Salicylate (Wintergreen) + Menthol Topical Preparations",
+              "brand_examples": ["Tiger Balm", "Iodex (with methyl salicylate)", "Moov", "Relaxyl", "Zandu Balm"],
+              "form": "Cream, ointment, gel, patch",
+              "dosage": "Apply generously to affected area and massage gently 2-3 times daily; avoid broken skin",
+              "use_case": "Widely used traditional topical analgesics for acute and subacute muscle strain and back pain; methyl salicylate provides mild anti-inflammatory and rubefacient (warming) effect; menthol provides cooling counter-irritant sensation (activates cold receptors — competing with pain signals — gate control theory); limited scientific evidence for clinical superiority over placebo but widely used and generally safe",
+              "note": "Despite limited RCT evidence, these preparations are widely used across India and many patients find them helpful; safe for short-term use; avoid excessive application (methyl salicylate is absorbed transdermally — toxicity possible with large amounts on broken skin or in children)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-123",
+          "category_name": "Paracetamol (Acetaminophen) — Analgesic",
+          "purpose": "Simple analgesic for back pain — safer than NSAIDs for patients with GI, renal, or cardiovascular risk. Evidence for acute LBP is weaker than NSAIDs but it provides useful background analgesia when combined with NSAIDs or physical measures.",
+          "medicines": [
+            {
+              "name": "Paracetamol",
+              "brand_examples": ["Crocin", "Dolo", "Calpol", "Panadol", "Tylenol"],
+              "form": "Tablet, Syrup, IV (hospital use)",
+              "dosage": "Adults: 500-1000 mg every 4-6 hours; maximum 4000 mg (4g) per day; 3000 mg/day maximum in liver disease, frailty, or low body weight",
+              "use_case": "Back pain where NSAIDs are contraindicated (peptic ulcer, renal disease, cardiovascular disease, pregnancy); useful as add-on to NSAID for moderate-severe pain (multimodal analgesia); elderly patients as first-line preference",
+              "mechanism": "Central analgesic (inhibits prostaglandin synthesis centrally; possible serotonergic and endocannabinoid mechanisms); NOT anti-inflammatory at standard doses — no significant peripheral anti-inflammatory effect",
+              "side_effects": ["Hepatotoxicity with overdose — most common cause of acute liver failure in the UK; ALWAYS stay within 4g/day maximum", "Rare skin reactions"],
+              "evidence_note": "A 2014 Lancet study (PACE trial) found paracetamol no more effective than placebo for acute low back pain — however it remains widely recommended as an adjunct and for patients where NSAIDs are contraindicated"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-124",
+          "category_name": "Muscle Relaxants — Short-Term Symptomatic Treatment of Spasm",
+          "purpose": "Reduce painful muscle spasm in acute back pain — breaking the pain-spasm-pain cycle that perpetuates acute strain. Should be prescribed for SHORT COURSES ONLY (maximum 5-7 days). Not indicated for chronic back pain.",
+          "warning": "All muscle relaxants cause sedation — do NOT drive or operate machinery; alcohol significantly potentiates sedative effects; dependency and misuse risk with benzodiazepines (diazepam); do NOT prescribe routinely or for more than 7 days",
+          "medicines": [
+            {
+              "name": "Diazepam (Benzodiazepine Muscle Relaxant)",
+              "brand_examples": ["Calmpose", "Valium", "Anzium"],
+              "form": "Tablet",
+              "dosage": "2-5 mg at night (or 2 mg twice daily in severe spasm); MAXIMUM 5 days — strict limit",
+              "use_case": "Severe acute muscle spasm with significant pain — most effective for short-term muscle relaxation; also anxiolytic (helpful when anxiety component worsening spasm); combined with physiotherapy for acute spasm",
+              "mechanism": "Enhances GABA-A receptor activity — central nervous system depressant; reduces muscle stretch reflex sensitivity through spinal interneuron inhibition",
+              "side_effects": ["Significant sedation", "Memory impairment", "Physical dependence and withdrawal (even after short courses)", "Falls risk in elderly", "Respiratory depression at high doses"],
+              "contraindications": ["COPD and respiratory failure", "Sleep apnoea", "Pregnancy and breastfeeding", "Myasthenia gravis", "Substance use disorders"],
+              "critical_note": "Maximum 5-day course ONLY — benzodiazepine dependence can begin within 2-4 weeks of regular use; never prescribe for chronic back pain; will not solve pain — only temporary spasm relief to allow early movement"
+            },
+            {
+              "name": "Methocarbamol",
+              "brand_examples": ["Robaxin", "Carbaflex"],
+              "form": "Tablet",
+              "dosage": "1500 mg four times daily for first 2-3 days; then 750 mg four times daily; maximum 5-7 day course",
+              "use_case": "Acute muscle spasm and back pain; centrally acting muscle relaxant without the dependency risk of benzodiazepines; preferred over diazepam for muscle spasm in patients with substance use history",
+              "mechanism": "Central nervous system depressant — mechanism not fully established; reduces polysynaptic reflexes in spinal cord",
+              "side_effects": ["Drowsiness, dizziness", "Headache", "Nausea", "Urine discolouration (harmless — brown or green)"]
+            },
+            {
+              "name": "Tizanidine (Centrally Acting Alpha-2 Agonist)",
+              "brand_examples": ["Sirdalud", "Tizan", "Tzanidine"],
+              "form": "Tablet",
+              "dosage": "2-4 mg at night initially; titrate up to 8-16 mg per day in 2-4 divided doses; maximum 36 mg/day",
+              "use_case": "Muscle spasm in both acute back pain and spastic conditions (multiple sclerosis, spinal cord injury, cerebral palsy); particularly useful for patients where benzodiazepines are contraindicated; also mildly analgesic",
+              "mechanism": "Alpha-2 adrenergic agonist at spinal level — inhibits release of excitatory amino acids from spinal interneurons; reduces muscle tone centrally",
+              "side_effects": ["Sedation", "Dry mouth", "Hypotension (especially first dose — advise sitting to standing slowly)", "Liver enzyme elevation (monitor LFTs in prolonged use)", "Hallucinations (rare)"]
+            },
+            {
+              "name": "Baclofen (GABA-B Agonist)",
+              "brand_examples": ["Lioresal", "Liofen", "Baclofen"],
+              "form": "Tablet",
+              "dosage": "5 mg three times daily initially; increase gradually to 10-20 mg three times daily; maximum 80 mg/day",
+              "use_case": "Muscle spasm particularly from neurological causes (spinal cord injury, MS, cerebral palsy); also used for musculoskeletal back pain spasm; generally requires titration over weeks",
+              "mechanism": "GABA-B receptor agonist at presynaptic level — inhibits motor neuron firing in spinal cord; reduces muscle stretch reflexes",
+              "side_effects": ["Sedation", "Muscle weakness (can unmask weakness if over-prescribed)", "Nausea", "ABRUPT WITHDRAWAL RISK: never stop suddenly — seizures, hallucinations; always taper slowly"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-125",
+          "category_name": "Neuropathic Analgesics — For Radicular Pain (Sciatica) Specifically",
+          "purpose": "Evidence-based treatment for nerve root pain (sciatica, radiculopathy) — reduce the burning, shooting, electric-shock type pain of nerve root irritation and compression. NOT effective for non-specific mechanical back pain.",
+          "medicines": [
+            {
+              "name": "Gabapentin",
+              "brand_examples": ["Neurontin", "Gabapin", "Gabatop"],
+              "form": "Capsule",
+              "dosage": "Start 300 mg at night (night 1); 300 mg twice daily (day 2); 300 mg three times daily (day 3); titrate slowly over 2-4 weeks to effective dose (usually 900-3600 mg/day in 3 divided doses); reduce dose in renal impairment",
+              "use_case": "Radicular pain (sciatica) from lumbar disc herniation or spinal stenosis; cervical radiculopathy; post-herpetic neuralgia; diabetic neuropathic pain; central sensitisation in chronic back pain",
+              "mechanism": "Binds to alpha-2-delta subunit of voltage-gated calcium channels in central and peripheral nervous system — reduces neuronal excitability and ectopic firing of sensitised or compressed nerve roots; reduces central sensitisation",
+              "side_effects": ["Sedation and dizziness (most common — dose-related; take at night initially)", "Cognitive impairment (difficulty concentrating)", "Weight gain", "Ataxia", "Peripheral oedema", "Abuse potential (monitor — risk of misuse for sedation/euphoria at high doses)"],
+              "note": "Start LOW — go SLOW titration essential to minimise side effects; effect on radicular pain takes 2-4 weeks to assess; if no benefit at 1800-2400 mg/day, unlikely to benefit"
+            },
+            {
+              "name": "Pregabalin",
+              "brand_examples": ["Lyrica", "Pregalin", "Pregabid"],
+              "form": "Capsule",
+              "dosage": "75 mg twice daily initially; increase to 150 mg twice daily after 3-7 days; maximum 300 mg twice daily (600 mg/day); reduce dose in renal impairment",
+              "use_case": "Radicular pain (sciatica, cervical radiculopathy); fibromyalgia; generalised anxiety disorder (co-prescribed for anxiety component of chronic pain); neuropathic pain; similar to gabapentin but more predictable absorption",
+              "mechanism": "Same mechanism as gabapentin (alpha-2-delta calcium channel subunit binding) but better oral bioavailability and more predictable pharmacokinetics",
+              "side_effects": ["Sedation and dizziness", "Weight gain", "Peripheral oedema", "Cognitive impairment", "Higher abuse and dependence potential than gabapentin — controlled substance in UK; monitor prescribing"],
+              "note": "NHS England has flagged pregabalin misuse — caution in patients with substance use history; regularly review ongoing need"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-126",
+          "category_name": "Antidepressants for Chronic Back Pain",
+          "purpose": "Tricyclic antidepressants (amitriptyline) and SNRIs (duloxetine) have evidence for reducing chronic back pain independently of their antidepressant effect — through descending pain pathway modulation. Also treat the commonly co-existing depression, anxiety, and sleep disturbance in chronic back pain.",
+          "medicines": [
+            {
+              "name": "Amitriptyline (Tricyclic Antidepressant at Low Dose)",
+              "brand_examples": ["Elavil", "Tryptomer", "Saroten"],
+              "form": "Tablet",
+              "dosage": "10-25 mg at night (analgesic dose — much lower than antidepressant dose of 75-150 mg); may increase to 75 mg at night if tolerated and needed; take 1-2 hours before bedtime",
+              "use_case": "Chronic non-specific back pain; chronic radicular pain; fibromyalgia; concurrent insomnia and depression with chronic back pain; central sensitisation; neuropathic components of chronic pain",
+              "mechanism": "Noradrenaline and serotonin reuptake inhibition — strengthens descending pain inhibitory pathways from periaqueductal grey matter to spinal dorsal horn; at low analgesic doses: sedation (antihistamine H1 effect) improves sleep; also anticholinergic",
+              "side_effects": ["Sedation — beneficial for sleep (take at night)", "Dry mouth", "Constipation", "Blurred vision", "Urinary retention (avoid in BPH)", "Weight gain", "Cardiac conduction effects (QTc prolongation — ECG if cardiac history)", "Risk of overdose in depression"],
+              "note": "Analgesic effect begins within 1-2 weeks (faster than antidepressant effect which takes 4-6 weeks); inform patients the dose prescribed is much lower than doses used for depression — prevents stigma concern"
+            },
+            {
+              "name": "Duloxetine (SNRI — Serotonin-Noradrenaline Reuptake Inhibitor)",
+              "brand_examples": ["Cymbalta", "Duvanta", "Duzela"],
+              "form": "Capsule",
+              "dosage": "30 mg once daily for 1 week; increase to 60 mg once daily (standard dose); maximum 120 mg/day (divided doses)",
+              "use_case": "Chronic low back pain (one of few medications with consistent RCT evidence specifically for chronic LBP — NICE 2016 recommends duloxetine); co-existing depression and anxiety with chronic back pain; fibromyalgia; diabetic peripheral neuropathy (common comorbidity); radicular pain",
+              "mechanism": "Equal inhibition of serotonin and noradrenaline reuptake — enhances descending pain inhibitory pathways; noradrenergic component particularly important for musculoskeletal pain modulation",
+              "side_effects": ["Nausea (most common — take with food; usually settles within 2 weeks)", "Sweating", "Insomnia or somnolence", "Dry mouth", "Sexual dysfunction", "Hypertension (monitor blood pressure)", "Discontinuation syndrome if stopped abruptly — always taper"],
+              "evidence": "NICE (2016) and ACP (American College of Physicians 2017) guidelines both recommend duloxetine for chronic LBP as one of the few medications with consistent evidence"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-127",
+          "category_name": "Opioid Analgesics — Last Resort Only",
+          "purpose": "Provide analgesia for severe acute back pain uncontrolled by NSAIDs and paracetamol. Opioids have a very limited and controversial role in chronic back pain — risks of dependence, tolerance, opioid-induced hyperalgesia, and disability outweigh modest long-term benefits.",
+          "warning": "OPIOIDS SHOULD BE AVOIDED AS ROUTINE TREATMENT FOR BACK PAIN. They are not first-line, second-line, or long-term treatment for non-specific back pain. They cause addiction, tolerance, constipation, sedation, falls, and over time worsen pain sensitivity (opioid-induced hyperalgesia). They should be reserved for: short-term use (maximum 3-7 days) in severe acute pain unresponsive to NSAIDs; palliative cancer pain; and acute pre-surgical management. NEVER prescribe strong opioids for chronic non-specific back pain without specialist pain management review.",
+          "medicines": [
+            {
+              "name": "Tramadol (Weak Opioid + SNRI)",
+              "brand_examples": ["Tramazac", "Ultram", "Dolcet", "Tramol"],
+              "form": "Tablet (IR and SR), Capsule, Injection",
+              "dosage": "50-100 mg every 4-6 hours orally (max 400 mg/day); SR formulation: 100-200 mg twice daily; maximum course 5-7 days for acute severe pain",
+              "use_case": "Severe acute back pain (radiculopathy or Grade III strain) unresponsive to NSAIDs and paracetamol; short-term use only; also has SNRI properties providing some neuropathic pain benefit; suitable when strong opioids are not warranted",
+              "mechanism": "Weak mu-opioid receptor agonist + inhibits serotonin and noradrenaline reuptake; dual action provides both opioid analgesia and central pain modulation",
+              "side_effects": ["Nausea and vomiting (common — especially on starting)", "Dizziness", "Constipation", "Sedation", "Dependence and withdrawal", "Seizure risk (lowers seizure threshold — caution in epilepsy)", "Serotonin syndrome if combined with SSRIs, SNRIs, or MAOIs"],
+              "contraindications": ["Concurrent SSRI or SNRI use (serotonin syndrome risk)", "Epilepsy", "Severe hepatic impairment"]
+            },
+            {
+              "name": "Codeine (Weak Opioid)",
+              "brand_examples": ["Codeine phosphate", "Co-codamol (codeine + paracetamol)"],
+              "form": "Tablet",
+              "dosage": "30-60 mg every 4-6 hours (max 240 mg/day codeine); or co-codamol 30/500 (30 mg codeine + 500 mg paracetamol) 1-2 tablets every 4-6 hours",
+              "use_case": "Short-term severe acute back pain not controlled by NSAIDs and paracetamol alone; co-codamol combines two analgesic mechanisms; maximum 3-5 days for acute back pain",
+              "mechanism": "Prodrug metabolised by CYP2D6 to morphine; poor metabolisers (10-15% population) may get little analgesia; ultra-rapid metabolisers may get dangerously high morphine levels",
+              "side_effects": ["Constipation (very common — must prescribe laxative if more than 2 days use)", "Nausea", "Sedation", "Dependence risk"],
+              "note": "Do NOT co-prescribe with paracetamol separately if already using co-codamol — risk of paracetamol overdose"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-128",
+          "category_name": "Injections and Interventional Pain Procedures",
+          "purpose": "Targeted delivery of corticosteroid (anti-inflammatory) or local anaesthetic to specific pain generators — providing medium-term pain relief to facilitate rehabilitation. Not curative — must be combined with physiotherapy and active rehabilitation for lasting benefit.",
+          "medicines_and_procedures": [
+            {
+              "name": "Epidural Steroid Injection (ESI)",
+              "brand_examples": ["Methylprednisolone acetate (Depo-Medrone) + bupivacaine", "Triamcinolone acetonide + bupivacaine"],
+              "form": "Image-guided injection (fluoroscopy or CT) — administered by pain physician or radiologist",
+              "dosage": "40-80 mg methylprednisolone acetate in 5-10 mL local anaesthetic; transforaminal (nerve root specific) or interlaminar approach; maximum 3 injections in 12 months; minimum 6 weeks between injections",
+              "use_case": "Severe radicular pain (sciatica) from lumbar disc herniation NOT responding to 6 weeks of oral analgesics and physiotherapy; spinal stenosis with neurogenic claudication; facilitates physiotherapy participation by temporary pain reduction",
+              "mechanism": "Corticosteroid reduces inflammatory cytokines (PLA2, prostaglandins, TNF-alpha) around the compressed nerve root — reduces nerve root oedema and inflammatory sensitisation; local anaesthetic provides immediate temporary relief",
+              "evidence": "Cochrane reviews: transforaminal ESI provides short-term (2-6 weeks) reduction in radicular pain; does NOT change long-term outcomes; may reduce need for surgery in some patients",
+              "contraindications": ["Active systemic infection", "Anticoagulation", "Allergy to contrast or steroids", "Diabetes (transient glucose elevation for 1-2 weeks after injection — warn diabetic patients to monitor glucose carefully)", "Bleeding disorder"],
+              "side_effects": ["Temporary glucose elevation in diabetics", "Insomnia (from steroid effect)", "Hot flushes", "Rare: dural puncture headache; bleeding; infection; nerve injury (rare with image guidance)"]
+            },
+            {
+              "name": "Facet Joint Injection and Medial Branch Block",
+              "form": "Image-guided injection (fluoroscopy)",
+              "dosage": "Corticosteroid + local anaesthetic injected into facet joint or onto medial branch nerve innervating the joint",
+              "use_case": "Back pain from facet joint arthritis or spondylosis — axial back pain worse with extension and rotation; failed conservative management; diagnostic (medial branch block) to confirm facet pain before radiofrequency ablation",
+              "mechanism": "Steroid reduces facet joint capsule inflammation; local anaesthetic confirms diagnosis"
+            },
+            {
+              "name": "Radiofrequency Ablation (RFA) / Denervation",
+              "form": "Interventional procedure — fluoroscopy guided",
+              "dosage": "Image-guided placement of radiofrequency needle on medial branch nerves innervating the painful facet joints; heat generated (80°C) denervates the nerve; performed after positive medial branch block",
+              "use_case": "Confirmed facet joint pain with >50% response to medial branch block; chronic axial back pain from facet arthritis; evidence: 6-18 months pain relief in confirmed facet pain (NICE 2016)",
+              "evidence": "NICE IPG185 (2003) and updated guidance: RFA appropriate for carefully selected patients with confirmed facet pain; duration of benefit 6-18 months; can be repeated"
+            },
+            {
+              "name": "Trigger Point Injection",
+              "form": "Direct injection into palpable myofascial trigger point",
+              "dosage": "Dry needling (acupuncture needle) or injection of 0.5-1 mL local anaesthetic (lignocaine 1-2%) ± low-dose steroid into trigger point (palpable taut muscle band); immediate 'twitch response' expected",
+              "use_case": "Myofascial pain syndrome — discrete palpable trigger points in paraspinal muscles, quadratus lumborum, gluteal muscles, piriformis causing local and referred pain; part of multidisciplinary management plan",
+              "evidence": "Multiple RCTs show benefit over sham; dry needling and wet needling comparably effective; effect duration typically 4-8 weeks; repeat injections may be required"
+            },
+            {
+              "name": "Sacroiliac Joint Injection",
+              "form": "Image-guided injection",
+              "dosage": "Corticosteroid + local anaesthetic injected into SIJ under fluoroscopy or ultrasound guidance",
+              "use_case": "Confirmed SIJ dysfunction with diagnostic injection relief; postpartum SIJ pain not responding to physiotherapy and analgesia; inflammatory sacroiliitis (ankylosing spondylitis flare)"
+            },
+            {
+              "name": "Vertebroplasty and Kyphoplasty",
+              "form": "Percutaneous interventional procedure",
+              "dosage": "Percutaneous injection of bone cement (polymethylmethacrylate) into collapsed vertebral body under fluoroscopic guidance; kyphoplasty first inflates a balloon to restore vertebral body height before cement injection",
+              "use_case": "Acute painful vertebral compression fracture from osteoporosis not responding to analgesia after 3-6 weeks; pathological fracture from malignancy (palliation); reduces pain and improves mobility in selected patients",
+              "evidence": "Cochrane and NICE guidance: benefit for appropriately selected patients; most effective within 6-12 weeks of fracture; not routinely recommended after 12 months from fracture"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-129",
+          "category_name": "Vitamins and Supplements for Musculoskeletal Health",
+          "purpose": "Address nutrient deficiencies that commonly contribute to musculoskeletal pain, muscle weakness, bone fragility, and impaired recovery in patients with back pain.",
+          "medicines": [
+            {
+              "name": "Vitamin D3 (Cholecalciferol)",
+              "brand_examples": ["Calcirol", "D-Rise", "Uprise D3", "Cholecalciferol sachets"],
+              "form": "Oral sachets, capsules, tablets, drops",
+              "dosage": "Deficiency treatment: 60,000 IU weekly for 8-12 weeks (loading), then 1500-2000 IU daily (maintenance); check 25-OH Vitamin D level before and after treatment; target >75 nmol/L (30 ng/mL)",
+              "use_case": "Vitamin D deficiency is extremely prevalent in India (40-80% of the population — due to indoor work, clothing, and melanin-rich skin reducing cutaneous synthesis despite abundant sunlight); deficiency causes: diffuse musculoskeletal pain (proximal myalgia), back pain, fatigue, proximal muscle weakness, and osteomalacia (bone pain); correcting Vitamin D deficiency significantly reduces musculoskeletal pain in many patients; essential for bone mineralisation (preventing osteoporosis and fracture)",
+              "mechanism": "Vitamin D receptors present in muscle cells and bone; promotes calcium absorption from gut; essential for osteoblast activity and bone mineralisation; maintains parathyroid hormone balance; directly influences muscle function and pain processing",
+              "monitoring": "Check baseline 25-OH Vitamin D (serum); recheck at 3 months; adjust dose to achieve target; check calcium (hypercalcaemia with excessive supplementation)"
+            },
+            {
+              "name": "Calcium Supplementation",
+              "brand_examples": ["Calcium carbonate (Calnate, Shelcal)", "Calcium citrate (CitraLyf)", "Calcium + Vitamin D3 combinations"],
+              "form": "Tablet, chewable",
+              "dosage": "500-1000 mg elemental calcium daily in divided doses (calcium carbonate: 1250 mg = 500 mg elemental; calcium citrate preferred with low gastric acid — elderly, PPIs); take with food (calcium carbonate); dietary calcium sources preferable to supplemental",
+              "use_case": "Osteoporosis prevention and treatment; vertebral fracture prevention and management; post-menopausal women and elderly with back pain at osteoporotic fracture risk; chronic corticosteroid use",
+              "note": "Evidence suggests calcium supplements alone (without Vitamin D) may increase cardiovascular risk — prefer dietary calcium supplemented with Vitamin D; use supplements only when dietary intake genuinely insufficient"
+            },
+            {
+              "name": "Bisphosphonates (for Osteoporotic Vertebral Fracture)",
+              "brand_examples": ["Alendronate (Fosamax, Alendronic acid)", "Risedronate (Actonel, Risofos)", "Zoledronic acid IV (Aclasta, Zometa)"],
+              "form": "Weekly tablet (alendronate 70 mg once weekly); Monthly tablet (risedronate 150 mg once monthly); Annual IV infusion (zoledronic acid 5 mg once yearly)",
+              "dosage": "Alendronate: 70 mg once weekly on empty stomach with full glass of water; remain upright for 30 minutes; Zoledronic acid: 5 mg IV once yearly (preferred if oral not tolerated)",
+              "use_case": "Osteoporosis with vertebral fracture (T-score <-2.5 on DEXA or fragility fracture); reduces further vertebral fracture risk by 40-70%; all patients with vertebral compression fracture from osteoporosis should receive bisphosphonate plus Vitamin D + calcium",
+              "mechanism": "Inhibits osteoclast-mediated bone resorption; maintains and increases bone mineral density",
+              "side_effects": ["Oesophageal irritation (oral formulations — must remain upright after taking)", "GI irritation", "Flu-like symptoms (IV formulation — first infusion)", "Atypical femoral fracture (rare — long-term use >5 years)", "Osteonecrosis of jaw (rare — risk with dental procedures; dentist consultation before starting)"]
+            },
+            {
+              "name": "Magnesium Supplementation",
+              "brand_examples": ["Magnesium glycinate", "Magnex", "Magneon", "Epsom salt (magnesium sulphate — topical)"],
+              "form": "Tablet, Capsule, Powder (oral); Bath salts (topical)",
+              "dosage": "200-400 mg elemental magnesium daily (take at night — may cause loose stools at high doses)",
+              "use_case": "Muscle cramps and spasm commonly associated with back pain (low serum magnesium promotes muscle hyperexcitability); chronic muscle tension and tightness; sleep disturbance from pain (magnesium promotes GABA activity and supports sleep); migraine and tension headache (comorbid with neck pain); many patients with chronic back pain have low dietary magnesium",
+              "mechanism": "Magnesium is an essential cofactor for >300 enzymatic reactions; acts as natural calcium antagonist in muscles — regulates muscle contraction; involved in NMDA receptor regulation (central sensitisation modulation)",
+              "food_sources": "Dark green vegetables (spinach, methi), nuts (almonds, cashews, pumpkin seeds), whole grains, legumes (dal), dark chocolate, banana",
+              "note": "Epsom salt (magnesium sulphate) warm baths provide topical magnesium absorption with muscle-relaxing effects — widely used home remedy with modest evidence and excellent safety"
+            },
+            {
+              "name": "Omega-3 Fatty Acids (Fish Oil)",
+              "brand_examples": ["Maxepa", "Salmon fish oil capsules", "Seven Seas"],
+              "form": "Capsule",
+              "dosage": "2-3 g combined EPA + DHA daily (analgesic/anti-inflammatory dose); 500 mg-1 g daily for general health",
+              "use_case": "Anti-inflammatory supplementation for chronic back pain — reduces inflammatory prostaglandins and cytokines; multiple studies show analgesic benefit for non-specific chronic back pain with fewer NSAID requirements; disc health (disc is high in polyunsaturated fatty acids)",
+              "evidence": "Goldberg and Katz meta-analysis (Pain 2007): omega-3 supplementation for joint pain and back pain reduces both pain intensity and NSAID use; Maroon and Bost (Surg Neurol 2006): fish oil comparable to ibuprofen for non-specific back pain in RCT"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Nutrition plays a meaningful supporting role in back pain management — not through direct pain relief but through four important mechanisms: (1) Anti-inflammatory diet reduces systemic and spinal tissue inflammation perpetuating chronic pain; (2) Adequate protein and micronutrients support muscle repair and regeneration after strain; (3) Key micronutrients (Vitamin D, calcium, magnesium, collagen precursors) directly support bone and disc health; (4) Healthy body weight reduces mechanical spinal loading — each kilogram of excess body weight exerts 4-5 kg of additional compressive force on the lumbar spine. The Mediterranean diet and anti-inflammatory dietary patterns have the strongest evidence for musculoskeletal pain reduction.",
+      "anti_inflammatory_dietary_principles": {
+        "overview": "Chronic low-grade systemic inflammation contributes to persistent musculoskeletal pain and disc degeneration. Pro-inflammatory diets (high refined carbohydrates, trans fats, red and processed meat, sugar) worsen central sensitisation and pain. Anti-inflammatory diets reduce inflammatory cytokines (IL-6, TNF-alpha, CRP) and support tissue healing.",
+        "mediterranean_diet_connection": "The Mediterranean diet has the strongest evidence for reducing chronic musculoskeletal pain — characterised by high consumption of vegetables, fruits, legumes, whole grains, fish, olive oil, and low consumption of red meat, processed foods, and refined sugar; associated with lower CRP, lower disc degeneration rates, and better back pain outcomes"
+      },
+      "recommended_foods": [
+        {
+          "category": "Anti-Inflammatory Foods — Reducing Spinal Inflammation",
+          "items": [
+            {
+              "food": "Turmeric (Haldi) with Black Pepper",
+              "benefit": "Curcumin — the most extensively studied natural anti-inflammatory compound; inhibits NF-κB and COX-2 inflammatory pathways (same pathway as NSAIDs but without GI side effects); reduces inflammatory cytokines relevant to disc degeneration and muscle inflammation; BIOPERINE (piperine in black pepper) increases curcumin bioavailability by 2000%. Multiple RCTs show curcumin reduces chronic musculoskeletal pain scores.",
+              "frequency": "Daily in cooking; golden milk (haldi doodh) at bedtime; curcumin supplement 500-1000 mg with piperine twice daily if not adequately getting dietary turmeric",
+              "evidence": "Daily Life with Pain RCT: curcumin 1000mg/day vs ibuprofen for knee osteoarthritis — comparable analgesic effect; multiple musculoskeletal pain trials positive"
+            },
+            {
+              "food": "Ginger (Adrak)",
+              "benefit": "6-gingerol, 8-gingerol, 6-shogaol — inhibit COX and LOX inflammatory enzymes; reduce muscle soreness and delayed onset muscle soreness (DOMS) after exercise; anti-oxidant; anti-nausea (helpful when back pain causes nausea or when opioids prescribed)",
+              "frequency": "Fresh ginger daily — in cooking, tea, warm water with lemon; ginger root 1-2 cm simmered in water"
+            },
+            {
+              "food": "Oily Fish (Salmon, Mackerel, Sardines, Hilsa, Rohu)",
+              "benefit": "Omega-3 fatty acids (EPA and DHA) — most potent natural anti-inflammatory; inhibit leukotriene and prostaglandin production; reduce inflammatory cytokines relevant to disc degeneration; support nerve repair (DHA is essential for myelin sheath integrity — important in radiculopathy recovery); protein for muscle repair",
+              "frequency": "2-3 times per week; if vegetarian — use algae-derived omega-3 supplements (the original source of EPA/DHA — what fish eat)"
+            },
+            {
+              "food": "Extra Virgin Olive Oil",
+              "benefit": "Oleocanthal — potent natural COX inhibitor (ibuprofen-like anti-inflammatory effect); polyphenols (hydroxytyrosol, oleuropein) reduce disc degeneration-related inflammation; monounsaturated fats (oleic acid) have neutral or anti-inflammatory effects",
+              "frequency": "Use as primary cooking and dressing oil; 2-4 tablespoons daily"
+            },
+            {
+              "food": "Berries and Dark-Coloured Fruits (Blueberries, Cherries, Pomegranate, Amla)",
+              "benefit": "Anthocyanins and polyphenols — potent antioxidants reducing oxidative stress in degenerating discs; tart cherry (Morello cherry) juice: proven to reduce muscle soreness after exercise (reduces CRP and uric acid); amla: highest Vitamin C food (antioxidant, collagen precursor — for disc, cartilage and ligament health)",
+              "frequency": "Daily as snack; amla juice or murabba daily"
+            }
+          ]
+        },
+        {
+          "category": "Protein and Collagen Precursors — Muscle and Connective Tissue Repair",
+          "items": [
+            {
+              "food": "High-Quality Protein (Eggs, Lean Meat, Fish, Lentils, Legumes, Paneer)",
+              "benefit": "Protein is the primary building block for muscle repair after strain — adequate protein intake is essential for healing Grade I and II muscle strains; essential amino acids leucine, isoleucine, and valine (BCAAs) directly stimulate muscle protein synthesis; eggs are the most bioavailable protein source (biological value 100)",
+              "frequency": "0.8-1.2 g protein per kg body weight daily for general health; 1.2-1.6 g/kg/day during active muscle repair after strain; spread across 3-4 meals"
+            },
+            {
+              "food": "Vitamin C-Rich Foods (Amla, Bell Peppers, Citrus, Guava)",
+              "benefit": "Vitamin C is essential for collagen synthesis — the structural protein of intervertebral disc annulus fibrosus, tendons, ligaments, and connective tissue; without adequate Vitamin C, damaged disc and tendon collagen cannot be repaired; also powerful antioxidant protecting disc cells from oxidative stress during degeneration",
+              "frequency": "Daily — amla is the richest source (600-900 mg/100g); bell peppers, guava, citrus"
+            },
+            {
+              "food": "Bone Broth (Collagen-Rich Broth)",
+              "benefit": "Hydrolysed collagen peptides and glycine from long-cooked bone broth — provide precursors for disc annulus, cartilage, and ligament repair; reduce joint pain in multiple studies; chicken bone broth also provides glucosamine and chondroitin (joint-protective compounds); warm, soothing, nourishing during acute pain episode",
+              "frequency": "1-2 cups daily during acute injury recovery; regular intake for joint/disc maintenance"
+            }
+          ]
+        },
+        {
+          "category": "Bone Health — Preventing Vertebral Fracture and Osteoporosis",
+          "items": [
+            {
+              "food": "Dairy Products (Milk, Dahi, Paneer, Chhena)",
+              "benefit": "Calcium — essential for bone mineralisation and prevention of osteoporotic vertebral fractures; one of the most common causes of severe thoracic and lumbar back pain in elderly women; Vitamin D (in fortified products) enhances calcium absorption; protein supports bone matrix",
+              "frequency": "2-3 portions daily; 1 glass milk + 1 small portion paneer + 1 bowl dahi approximately provides 1000-1200 mg calcium",
+              "note": "Lactose-intolerant individuals: dahi (yogurt) and paneer are better tolerated (lower lactose); calcium-fortified plant milks as alternatives"
+            },
+            {
+              "food": "Sesame Seeds (Til) and Sesame Products (Tahini, Til Laddoo)",
+              "benefit": "Exceptionally high calcium content (975 mg calcium per 100g — higher than milk per weight); also provides magnesium, zinc, and healthy fats; widely consumed in Indian diet; sesame also has lignans with anti-inflammatory properties",
+              "frequency": "Daily as til laddoo, til chikki, sprinkled on food, or tahini"
+            },
+            {
+              "food": "Leafy Green Vegetables (Palak/Spinach, Methi, Kale, Moringa/Drumstick Leaves)",
+              "benefit": "Calcium (moringa leaves have exceptionally high calcium — 400 mg/100g); magnesium; Vitamin K2 (directs calcium into bones rather than arteries — bone mineralisation); folate; anti-inflammatory compounds",
+              "frequency": "Daily as part of main meals; moringa (drumstick) leaves particularly valuable in Indian context"
+            }
+          ]
+        },
+        {
+          "category": "Intervertebral Disc Hydration — Water is Essential for Disc Health",
+          "rationale": "The intervertebral disc is approximately 70-80% water. The nucleus pulposus has an extraordinarily high water content that provides its shock-absorbing properties — hydrostatic pressure distributing compressive load. Disc cells (chondrocyte-like cells) require adequate hydration and nutrition (via endplate diffusion) for survival. Chronic dehydration accelerates disc desiccation and degeneration. The disc loses water progressively through the day and rehydrates at night (you are approximately 1-2 cm taller in the morning than evening).",
+          "items": [
+            {
+              "food": "Water — Plain Still Water",
+              "benefit": "The single most important disc health measure; aim for 2-2.5 L daily; well-hydrated discs are more resilient to compressive loading and resist herniation; adequate hydration supports all biochemical healing processes; also reduces muscle cramp and spasm",
+              "frequency": "8-10 glasses (200 mL) daily minimum"
+            },
+            {
+              "food": "Coconut Water (Tender Coconut — Nariyal Pani)",
+              "benefit": "Electrolyte-rich hydration (potassium, sodium, magnesium); natural isotonic fluid; magnesium and potassium support muscle relaxation and reduce cramp; cooling and well-tolerated",
+              "frequency": "1-2 glasses daily"
+            }
+          ]
+        },
+        {
+          "category": "Weight Management — Reducing Mechanical Spinal Loading",
+          "importance": "Critical component of back pain prevention and management — each 1 kg of excess body weight increases compressive force on the lumbar spine by approximately 4-5 kg (lever arm mechanics); central (abdominal) obesity shifts the centre of gravity forward, increasing lumbar lordosis and facet joint loading; weight loss of 5-10% bodyweight significantly reduces back pain burden in overweight and obese patients",
+          "dietary_approach": [
+            "Mediterranean dietary pattern — most evidence for sustainable weight loss and anti-inflammatory benefit simultaneously",
+            "Reduce refined carbohydrates (white rice, maida, sugary beverages) — pro-inflammatory and promote weight gain",
+            "Increase fibre (vegetables, legumes, whole grains) — satiety, gut health, anti-inflammatory",
+            "Regular small meals (5-6 per day) — prevents blood sugar spikes that promote fat storage and inflammation",
+            "Reduce ultra-processed food — high in trans fats, sugar, and artificial additives that promote systemic inflammation"
+          ]
+        }
+      ],
+      "foods_to_limit_or_avoid": [
+        {
+          "food": "Refined Sugar and Highly Processed Foods (Maida products, Packaged Snacks, Sugary Drinks)",
+          "reason": "Promote systemic inflammation through advanced glycation end-products (AGEs), NF-κB activation, and pro-inflammatory cytokine release; contribute to weight gain increasing spinal loading; high sugar diet associated with worse disc degeneration",
+          "recommendation": "Limit to occasional treats; replace with whole foods"
+        },
+        {
+          "food": "Trans Fats and Partially Hydrogenated Oils (Vanaspati, Some Packaged Foods, Margarine)",
+          "reason": "Most potent dietary driver of systemic inflammation — significantly raise CRP and inflammatory cytokines; promote disc degeneration; should be completely eliminated from the diet",
+          "recommendation": "Read labels carefully; avoid vanaspati ghee and any product listing 'hydrogenated' or 'partially hydrogenated' vegetable oil"
+        },
+        {
+          "food": "Excess Alcohol",
+          "reason": "Promotes systemic inflammation; impairs liver function reducing protein synthesis and tissue repair; interferes with muscle relaxant and analgesic medications (particularly dangerous with diazepam, opioids, and gabapentin — respiratory depression and sedation); disturbs sleep (worsens back pain from sleep deprivation); contributes to osteoporosis; causes peripheral neuropathy (worsens neuropathic pain in radiculopathy)",
+          "recommendation": "Avoid alcohol entirely during acute injury; limit to moderate levels (maximum 14 units/week with at least 2 alcohol-free days) in chronic back pain management"
+        },
+        {
+          "food": "Excessive Omega-6 Vegetable Oils (Sunflower, Soybean, Corn Oil in Large Quantities)",
+          "reason": "Omega-6 fatty acids are precursors to pro-inflammatory arachidonic acid when consumed in excess relative to omega-3; modern diets have omega-6:omega-3 ratio of 15:1 to 20:1 (ideal is 4:1); excessive omega-6 promotes systemic inflammation and worse pain",
+          "recommendation": "Use mustard oil, groundnut oil, coconut oil, or olive oil as primary cooking oils; reduce sunflower, soybean, and corn oil"
+        },
+        {
+          "food": "Excessive Caffeine",
+          "reason": "High caffeine intake disturbs sleep (worsens pain through sleep deprivation); increases muscle tension and anxiety (worsening spasm); mild diuretic effect reduces disc hydration",
+          "recommendation": "Maximum 3 cups of moderate-strength tea or coffee daily; avoid after 2 pm (sleep quality); switch to herbal teas (ginger, chamomile, ashwagandha)"
+        }
+      ],
+      "sample_meal_plan": {
+        "principles": "Anti-inflammatory, high-protein, calcium and Vitamin D-rich, adequately hydrated diet for optimal back and muscle health",
+        "early_morning": "Warm water with fresh lemon juice (Vitamin C, alkalinising); 1-2 raw or soaked almonds; take Vitamin D3 supplement with breakfast",
+        "breakfast": "Vegetable omelette (2 eggs — protein, Vitamin D) with whole wheat roti OR oats with milk, banana, and flaxseeds (anti-inflammatory omega-3) OR idli/dosa with sambar and chutney",
+        "mid_morning": "Amla (Indian gooseberry — Vitamin C for collagen) or mixed nuts (almonds, walnuts — omega-3, magnesium); green tea with ginger; 2 glasses water",
+        "lunch": "Dal (protein, iron) + brown rice or 2-3 chapati + palak paneer (calcium, magnesium, Vitamin K) or fish curry (omega-3) + raita (dahi — calcium, probiotics); salad (cucumber, tomato)",
+        "afternoon": "Til laddoo or sesame and jaggery chikki (calcium, magnesium, iron); buttermilk/chaach (calcium, probiotics, hydration); 2 glasses water",
+        "pre_workout_evening": "Banana (potassium — prevents muscle cramp); dates (energy, magnesium)",
+        "dinner": "Grilled chicken or fish (protein, omega-3) + sabzi (cooked anti-inflammatory vegetables — broccoli, carrots, pumpkin) + roti; OR rajma or chickpea curry (plant protein, magnesium) + brown rice; haldi doodh (turmeric golden milk) at bedtime",
+        "bedtime": "Warm turmeric golden milk (anti-inflammatory curcumin + calcium + Vitamin D from milk + black pepper for absorption); magnesium supplement (200-400 mg — promotes sleep and muscle relaxation)"
+      }
+    },
+
+    "lifestyle_management": {
+      "most_important_message": "STAY ACTIVE — the evidence is clear and consistent: bed rest makes back pain WORSE; early return to normal activities (with appropriate pacing) is the single most important factor in recovery from acute and subacute back pain. The brain learns that movement is dangerous if activity is consistently avoided — this creates a vicious cycle of fear, avoidance, deconditioning, and chronic pain. Movement is medicine.",
+      "exercise_therapy": {
+        "overview": "Exercise is the most evidence-based non-pharmacological treatment for both acute and chronic back pain — and the most effective single intervention for preventing recurrence. The best exercise is the one the patient will do consistently. Multiple systematic reviews confirm that general exercise, core strengthening, yoga, Pilates, and swimming all reduce back pain and improve function. The historical advice to rest until pain resolves has been thoroughly discredited.",
+        "exercise_types": [
+          {
+            "type": "Core Stabilisation and Strengthening",
+            "description": "Targeted strengthening of the deep lumbar stabiliser muscles — multifidus (the most important segmental stabiliser of the lumbar spine — atrophies within days of back pain onset and fails to spontaneously recover without specific exercises) and transversus abdominis. Studies show multifidus atrophy on MRI is one of the strongest predictors of recurrent LBP.",
+            "key_exercises": [
+              "Dead Bug exercise — lying on back, opposing arm-leg movements while maintaining lumbar neutral; progressively trains multifidus and transversus abdominis without compressive loading",
+              "Bird Dog — on hands and knees, extend opposite arm and leg while maintaining neutral spine; activates multifidus and gluteus maximus",
+              "Bridge / Glute Bridge — lying on back, lift hips to form a straight line; activates gluteal muscles, multifidus, and hip extensors; reduce lumbar loading when hip extensors are strong",
+              "Side Plank — builds lateral core (quadratus lumborum, obliques); reduces lateral spinal loading",
+              "Plank — maintain neutral spine while supported on forearms and toes; activates transversus abdominis and multifidus in an endurance capacity",
+              "McGill Big Three — scientifically validated by Stuart McGill: modified curl-up (not sit-up), side plank, and bird dog; these three exercises provide maximum core stability with minimum spinal compression"
+            ],
+            "frequency": "Daily; even 10 minutes of targeted core work is highly beneficial; progress gradually; physiotherapy supervision to ensure correct technique",
+            "evidence": "Meta-analyses confirm core stabilisation exercises reduce LBP recurrence by up to 50% over 12 months"
+          },
+          {
+            "type": "General Aerobic Exercise — Walking, Swimming, Cycling",
+            "description": "Gentle aerobic exercise is the most accessible and universally recommended initial exercise for back pain — improves blood flow to healing tissue, reduces pain sensitisation through endorphin release, reduces anxiety and depression, and prevents deconditioning.",
+            "recommendations": [
+              "Walking: Start with 10-15 minutes twice daily; progress to 30 minutes continuously as tolerated; brisk walking pace; flat surface; good footwear; the most universally prescribed back pain exercise",
+              "Swimming and Hydrotherapy: Excellent for back pain — water supports body weight (reduces compressive spinal loading to near-zero), allows free movement; warm water pools additionally relax muscle spasm; backstroke and front crawl preferred over breaststroke (avoids lumbar hyperextension)",
+              "Cycling (stationary or outdoor): Good aerobic exercise with low spinal compressive load; adjust saddle height carefully (knee flexion 15 degrees at bottom of pedal stroke); avoid hunched posture — sit upright; stationary bike provides better control"
+            ],
+            "frequency": "150 minutes moderate aerobic exercise per week (30 minutes, 5 days); start at comfortable pace and build gradually over 4-6 weeks"
+          },
+          {
+            "type": "Yoga — Evidence-Based for Both Acute and Chronic Back Pain",
+            "description": "Yoga combines spinal mobility, core strength, flexibility, breathing, and mindfulness — addressing both physical and psychological components of back pain. Multiple high-quality RCTs confirm yoga is effective for chronic LBP.",
+            "specific_beneficial_asanas": [
+              "Balasana (Child's Pose) — spinal decompression; hip flexor stretch; forward flexion; excellent for disc-related pain and spasm",
+              "Marjaryasana-Bitilasana (Cat-Cow) — gentle rhythmic lumbar flexion-extension; mobilises lumbar segments; relieves stiffness and spasm; safe even in acute pain",
+              "Setu Bandhasana (Bridge Pose) — gluteal strengthening; spinal extension; SIJ stabilisation",
+              "Supta Padangusthasana (Supine Hamstring Stretch) — stretches hamstrings (tight hamstrings are a major cause of posterior pelvic tilt and LBP); safely done lying down",
+              "Bhujangasana (Cobra) — gentle lumbar extension; McKenzie extension exercise equivalent; beneficial for posterior disc bulge where flexion hurts",
+              "Viparita Karani (Legs Up the Wall) — relieves venous congestion; spinal decompression; deeply relaxing; accessible even in acute pain",
+              "Savasana with focused relaxation and diaphragmatic breathing — reduces sympathetic activation and muscle tension"
+            ],
+            "frequency": "30-60 minutes yoga 3-5 days per week; classes (with back pain-experienced instructor) or guided videos",
+            "evidence": "Cochrane review (Wieland 2017): yoga provides moderate-certainty evidence of benefit for chronic LBP; comparable to other exercise types; unique advantage of psychological and mindfulness component"
+          },
+          {
+            "type": "Pilates — Core and Spinal Stability",
+            "description": "Pilates emphasises controlled movement, core engagement, and spinal alignment — specifically addresses multifidus and transversus abdominis (the 'Powerhouse'). Clinical Pilates (individualised, supervised by trained physiotherapist) is more effective than generalised classes for back pain.",
+            "evidence": "Multiple RCTs: Pilates significantly reduces LBP intensity and functional disability; particularly effective for core weakness-related back pain; NICE (2016) endorses exercise including Pilates for chronic LBP",
+            "key_exercises": "Imprinting, leg slides, double leg stretch, hundred, roll-up, spine stretch forward — all performed with neutral spine and deliberate core engagement"
+          },
+          {
+            "type": "McKenzie Method (Mechanical Diagnosis and Therapy)",
+            "description": "A specific exercise and assessment system based on identifying directional preference — movements that centralise (reduce and abolish radiation) back pain. Most patients with disc-related pain have an extension directional preference (cobra pose, press-ups in prone). The McKenzie method has strong evidence for acute and subacute disc-related LBP and sciatica.",
+            "principle": "Perform movements repeatedly in the direction of centralisation (usually extension for disc herniation) to reduce referred and radicular pain; avoid direction of peripheralisation (increases radiation)",
+            "evidence": "Cochrane: McKenzie method is effective for acute and subacute LBP; evidence for superiority over passive treatment is strong"
+          }
+        ],
+        "exercises_to_avoid_in_acute_pain": [
+          "Sit-ups and crunches — generate very high intradiscal pressure in lumbar spine; contraindicated in disc herniation; replace with dead bug and McGill curl-up",
+          "Straight-leg deadlifts with heavy weight — high lumbar loading with inadequate core activation",
+          "High-impact exercises (running, jumping, plyometrics) in acute strain phase — wait until pain subsides to <3/10 before resuming",
+          "Extreme spinal flexion with rotation (e.g., full-range golf swing or racquet sport twisting) in acute phase",
+          "Exercise that consistently worsens pain or increases radiation of symptoms — stop and reassess with physiotherapist"
+        ]
+      },
+      "physiotherapy_and_manual_therapy": {
+        "overview": "Physiotherapy is the cornerstone of back pain rehabilitation — providing exercise prescription, manual therapy, education, and self-management training. Evidence strongly supports physiotherapy-directed exercise over passive treatment. First physiotherapy appointment should ideally occur within 2-4 weeks of onset.",
+        "techniques": [
+          {
+            "technique": "Spinal Manipulation (High-Velocity Low-Amplitude Thrust) — Chiropractic or Osteopathic",
+            "evidence": "Multiple systematic reviews: spinal manipulation provides short-term (4-6 weeks) pain reduction for acute and subacute non-specific LBP; comparable to other active treatments; NOT superior to exercise therapy in the long term",
+            "indication": "Acute and subacute non-specific LBP; facet joint dysfunction; neck pain",
+            "contraindications": "ABSOLUTE: osteoporosis with vertebral fracture (risk of further fracture); malignancy or infection; cauda equina syndrome or severe myelopathy; cord compression; cervical artery disease; recent spinal surgery"
+          },
+          {
+            "technique": "Mobilisation (Low-Velocity Graded Oscillations)",
+            "evidence": "Effective for reducing pain and improving mobility in both acute and chronic back pain; safer than manipulation (lower-velocity); Maitland grade I-IV oscillatory movements",
+            "types": "Postero-anterior central vertebral pressure (PACVP); unilateral vertebral pressure (UVP); lumbar rotation; cervical traction"
+          },
+          {
+            "technique": "Soft Tissue Techniques (Massage, Myofascial Release, Trigger Point Therapy)",
+            "evidence": "Cochrane review: massage provides short-term relief from acute and subacute LBP; combination with exercise more effective than either alone",
+            "types": "Swedish massage, deep tissue massage, myofascial release, trigger point pressure release, instrument-assisted soft tissue mobilisation (IASTM — Graston technique)"
+          },
+          {
+            "technique": "Neural Mobilisation (Nerve Flossing/Gliding)",
+            "evidence": "Effective for reducing sciatica and radicular symptoms; gentle oscillatory movements of the neural structures reduce adherences around compressed nerve roots",
+            "exercises": "Sciatic nerve flossing (supine, alternate hip-knee extension and cervical flexion-extension); median nerve mobilisation for cervical radiculopathy"
+          },
+          {
+            "technique": "TENS (Transcutaneous Electrical Nerve Stimulation)",
+            "evidence": "Cochrane: TENS provides short-term analgesic benefit for chronic LBP; gate control theory — stimulation of large myelinated A-beta fibres 'closes the gate' to small C-fibre pain signals in spinal dorsal horn",
+            "practical": "Portable TENS units (available OTC in India); apply electrodes to paravertebral muscles around pain site; use for 20-30 min sessions; patient-controlled — excellent for home use"
+          },
+          {
+            "technique": "Heat Therapy",
+            "evidence": "Cochrane: heat wraps provide short-term relief from acute and subacute LBP — specifically heat reduces muscle spasm more effectively than cold for muscle-origin back pain",
+            "practical": "Hot water bottle, microwavable heat pack, or electric heat pad applied to painful area for 15-20 minutes 3-4 times daily; moist heat (wet towel warmed) penetrates deeper than dry heat; warm bath or shower; NOT for acute injury within first 48-72 hours (increases swelling) — use ice first"
+          },
+          {
+            "technique": "Cold Therapy (Cryotherapy)",
+            "evidence": "Effective for acute muscle strain within first 24-72 hours — reduces swelling, haematoma formation, and pain in acute Grade II-III strain",
+            "practical": "Ice pack (wrapped in thin towel to protect skin) applied for 10-15 minutes every 2 hours for first 24-72 hours; gel cold packs; ice massage; NOT for longer than 20 minutes (risk of ice burn and tissue damage)"
+          }
+        ]
+      },
+      "ergonomics_and_posture": {
+        "overview": "Ergonomics — the science of fitting the work environment to the person — is critically important for both preventing back pain and facilitating recovery. Most back pain is significantly worsened by poor ergonomics. Small adjustments produce large benefits.",
+        "desk_and_workstation_ergonomics": [
+          "Chair height: thighs parallel to floor; feet flat on floor (or footrest); knees at 90-100 degrees; avoid dangling feet",
+          "Lumbar support: chair backrest should support lumbar curve; use a lumbar roll or rolled towel at the base of the back if chair is inadequate; preserve natural lumbar lordosis while seated",
+          "Monitor height: top of screen at eye level; monitor arm's length away; avoid neck flexion (head tilting down to screen causes 'tech neck' — every 15 degrees of forward head posture doubles the effective weight of the head on the cervical spine: at 60 degrees forward — equivalent to 27 kg!)",
+          "Keyboard and mouse: elbows at 90 degrees; keyboard at elbow height; mouse close to keyboard avoiding shoulder abduction; wrists neutral (not flexed or extended)",
+          "Micro-breaks: stand and move every 30-45 minutes; brief 1-2 minute movement break every hour; set reminders on phone or computer; even brief movement prevents cumulative disc pressure build-up",
+          "Standing desk option: alternate sitting and standing (2-3 hour cycles); standing all day is NOT better than sitting all day — both in excess cause back pain; alternation is optimal; anti-fatigue mat if standing on hard floors",
+          "Head positioning: phone — use handsfree or headset; avoid holding phone between ear and shoulder (cervical strain); reduce phone scrolling with head bowed"
+        ],
+        "lifting_technique": [
+          "Plan the lift before beginning — clear the path; ensure good grip; position body close to the load",
+          "Position feet shoulder-width apart, one foot slightly ahead of the other for stability",
+          "SQUAT to lift — bend knees and hips, NOT the back; maintain lumbar lordosis (neutral spine) throughout",
+          "Engage core — tighten abdominal muscles before and during lifting (activates transversus abdominis — the body's natural lifting belt)",
+          "Lift with legs — push through the heels to rise; the powerful leg muscles should do the work",
+          "Keep load close to the body — the further from the body, the greater the lever arm and lumbar compressive force",
+          "NEVER twist while lifting — complete the lift first, then turn by moving the feet; twisting while loaded is the most common cause of acute disc herniation",
+          "For heavy loads — get help, use a trolley or mechanical aid, or divide the load into multiple smaller lifts",
+          "Lowering is as important as lifting — maintain neutral spine and squat to lower"
+        ],
+        "sleep_ergonomics": [
+          "Mattress: medium-firm mattress has the best evidence for back pain reduction (neither very soft nor very hard); a mattress that keeps the spine in neutral alignment is ideal; replace mattress every 7-10 years",
+          "Sleeping position: side-lying with a pillow between the knees (keeps hips, spine, and knees aligned) is optimal for most back pain; second choice: back-lying with a pillow under the knees (takes pressure off lower back); AVOID front-lying (prone) — forces neck rotation and places lumbar spine in excessive extension",
+          "Pillow height for neck pain: should keep ear, shoulder, and hip in alignment when side-lying; neither too high nor too low",
+          "Getting out of bed: roll to side first; push up with arms; swing legs to floor (log-rolling technique) — avoids trunk flexion from supine position (highest disc pressure in the morning when disc is fully hydrated)"
+        ],
+        "driving_ergonomics": [
+          "Seat position: seat close enough to pedals that knee is slightly bent at full pedal extension (avoids reaching forward with back)",
+          "Seat back angle: 100-110 degrees recline (slight recline reduces lumbar disc pressure compared to 90 degrees upright)",
+          "Lumbar support: activate built-in lumbar support; or use lumbar roll",
+          "Head restraint: adjust to prevent whiplash in rear impact",
+          "Take breaks every 1-2 hours on long journeys — get out, walk, and stretch for 5-10 minutes",
+          "Avoid heavy lifting from boot immediately after long driving (disc is compressed and vulnerable)"
+        ]
+      },
+      "psychological_management_of_chronic_pain": {
+        "overview": "For chronic back pain (>12 weeks), psychological factors are often MORE important than structural factors in determining pain severity and disability. The biopsychosocial model is essential — addressing psychological and social factors alongside physical ones produces the best outcomes. Pain does not equal damage — the nervous system can be sensitised and produce pain long after tissue healing. Pain education is a powerful tool.",
+        "interventions": [
+          {
+            "intervention": "Cognitive Behavioural Therapy (CBT) for Chronic Pain",
+            "description": "Evidence-based psychological therapy specifically adapted for chronic pain; identifies and challenges unhelpful thoughts and beliefs about pain (catastrophising, fear-avoidance); develops coping skills; reduces disability and depression; improves function",
+            "evidence": "Cochrane: CBT produces significant short and long-term improvements in pain, disability, mood, and return to work for chronic LBP; NICE guidelines recommend CBT for chronic LBP that does not respond to other treatments",
+            "delivery": "Individual therapist; group pain management programmes (multidisciplinary — physiotherapist, psychologist, occupational therapist); online CBT programmes (accessible, effective)"
+          },
+          {
+            "intervention": "Acceptance and Commitment Therapy (ACT)",
+            "description": "Third-wave CBT — focuses on accepting pain as a sensory experience rather than fighting it, clarifying personal values, and committing to action aligned with those values; shifts focus from pain elimination to living a valued life despite pain; particularly useful when pain cannot be fully eliminated",
+            "evidence": "Growing evidence for chronic musculoskeletal pain; reduces psychological inflexibility and avoidance behaviour; improves quality of life"
+          },
+          {
+            "intervention": "Pain Neuroscience Education (PNE)",
+            "description": "Structured education explaining the biology of pain — how central sensitisation works, why pain can persist after tissue healing, how emotions and thoughts amplify pain signals. Reduces fear-avoidance, catastrophising, and unhelpful health beliefs; improves exercise participation and reduces disability",
+            "evidence": "Lorimer Moseley's work: pain neuroscience education significantly reduces LBP disability and pain catastrophising when combined with physiotherapy; changes from 'pain = damage' model to 'pain = alarm system that can be recalibrated'"
+          },
+          {
+            "intervention": "Mindfulness-Based Stress Reduction (MBSR)",
+            "description": "8-week standardised programme of mindfulness meditation, body scan, and gentle movement; reduces pain by changing the attentional and emotional response to pain rather than the pain itself; reduces rumination about pain; improves sleep",
+            "evidence": "JAMA Internal Medicine 2016 (MIND trial): MBSR superior to usual care for chronic LBP; comparable to CBT; endorsed by ACP 2017 guidelines"
+          },
+          {
+            "intervention": "Multidisciplinary Pain Management Programmes (MPMP)",
+            "description": "Intensive structured programme combining physiotherapy (active exercise), psychology (CBT/ACT), occupational therapy (return to work), pharmacy review, and medical management for severely disabled chronic pain patients; most comprehensive evidence-based intervention for chronic disabling back pain",
+            "evidence": "Cochrane: multidisciplinary programmes superior to single-modality treatment for improving function and return to work in chronic LBP with significant disability"
+          }
+        ]
+      },
+      "return_to_work_and_activity": {
+        "philosophy": "Return to work (even light duties) as soon as possible is better for back pain recovery than prolonged absence — work provides structure, social interaction, purpose, and physical activity. Long-term work absence is one of the strongest predictors of chronic pain disability. Periods of sick leave from back pain should be minimised by early active management and workplace accommodation where needed.",
+        "guidance": [
+          "Acute uncomplicated back pain: aim to remain in work with modifications where possible; if temporarily unable to work, review at 1 week (not 4-6 weeks)",
+          "Communicate with employer about temporary adjustments — lighter duties, reduced lifting, ability to alternate sitting and standing, flexible hours",
+          "Physiotherapy-directed graduated return to activity: start with 30% of normal activity; increase by 10-20% per week if tolerated",
+          "Occupational health referral for complex cases — particularly in manual workers; workplace ergonomic assessment",
+          "Fear of reinjury at work is a major barrier to return — address with CBT and reassurance that appropriate movement does not damage the back"
+        ]
+      }
+    },
+
+    "back_pain_monitoring_plan": {
+      "note": "Most back pain improves with active management within 4-8 weeks. The key monitoring task is identifying the minority of patients whose pain worsens, who develop neurological signs, or who display red flag features requiring urgent investigation. DO NOT re-investigate routinely improving back pain — MRI results in asymptomatic people are frequently 'abnormal' and generating investigation based on incidental findings causes harm.",
+      "green_zone": {
+        "status": "Improving — Continue Self-Management",
+        "criteria": "Pain improving or stable at mild-moderate level; able to gradually increase activity; no radiation below knee; no neurological symptoms; no red flags; able to perform self-care and basic activities; improving with NSAIDs and exercise",
+        "action": "Continue active management — daily exercise (walking, core work, yoga); NSAIDs for 5-10 days; topical diclofenac; heat; gentle mobilisation; maintain activity; no imaging needed; physiotherapy if available; review at 2-4 weeks"
+      },
+      "yellow_zone": {
+        "status": "Not Improving as Expected — GP Review Required",
+        "criteria": "No significant improvement after 4-6 weeks of appropriate conservative management; pain significantly limiting all daily activities; sciatica with moderate neurological symptoms (numbness, reduced reflex) but stable; significant impact on sleep, work, and quality of life; yellow flag features (catastrophising, fear-avoidance, significant psychological distress); subacute pain transitioning toward chronic",
+        "action": "GP assessment; consider MRI if radiculopathy not improving; physiotherapy referral; consider neuropathic agent if radicular pain; address psychosocial factors; rule out red flags; medication review; consider referral to spinal clinic or pain clinic if no improvement after 12 weeks"
+      },
+      "red_zone": {
+        "status": "RED FLAG — EMERGENCY OR URGENT SAME-DAY ASSESSMENT",
+        "criteria_emergency_999_102": [
+          "New or worsening bladder or bowel dysfunction — inability to urinate (retention), urinary or faecal incontinence — CAUDA EQUINA SYNDROME — CALL EMERGENCY SERVICES and go to A&E IMMEDIATELY for emergency MRI",
+          "Saddle anaesthesia — new numbness of genitalia, perineum, anus, or inner thighs — CAUDA EQUINA EMERGENCY",
+          "Bilateral leg weakness or numbness — both legs affected simultaneously with back pain",
+          "Sudden severe back or abdominal pain with collapse or hypotension — possible ruptured aortic aneurysm — LIFE-THREATENING EMERGENCY",
+          "Rapidly progressive neurological deficit — worsening weakness in leg(s) over hours — possible cord compression"
+        ],
+        "criteria_urgent_same_day_gp_or_emergency": [
+          "Back pain with high fever (>38.5°C) and systemic illness — possible vertebral osteomyelitis or spinal epidural abscess",
+          "Known cancer patient with new or worsening back pain — possible spinal metastases with impending cord compression",
+          "Acute severe mid-back pain in an elderly woman after minimal trauma — possible vertebral compression fracture (osteoporosis)",
+          "Progressive neurological deficit over days to weeks — referral same week to spinal specialist",
+          "Foot drop (inability to lift foot) developing — urgent MRI within 24-48 hours",
+          "Significant unexplained weight loss with back pain — possible malignancy",
+          "Night pain that is constant and position-independent, awakening from sleep — red flag for malignancy or infection"
+        ]
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Chronic Low Back Pain (cLBP) and Central Sensitisation",
+        "description": "Transition from acute to chronic back pain (>12 weeks) occurs in 5-10% of patients and represents a fundamental change in the pain condition — from peripheral tissue damage to central nervous system sensitisation. The pain system itself becomes dysregulated: spinal dorsal horn neurons become hyperexcitable; descending inhibitory pathways weaken; the brain develops persistent pain 'memory circuits'. Chronic LBP is associated with grey matter changes in pain-processing brain regions. Structural findings on imaging often do NOT explain chronic pain — it is a disease of the nervous system, not always of the back structures.",
+        "severity": "Significant — major cause of disability, work loss, depression, and reduced quality of life",
+        "management": "Multidisciplinary pain management; exercise therapy; CBT and pain neuroscience education; duloxetine; low-dose amitriptyline; pain clinic referral; minimise opioids (worsen central sensitisation); social support and return to work"
+      },
+      {
+        "complication": "Cauda Equina Syndrome (CES)",
+        "description": "The most feared complication of lumbar disc herniation — central disc extrusion compresses the sacral nerve roots of the cauda equina, producing bladder and bowel dysfunction, saddle anaesthesia, and bilateral leg weakness. Permanent neurological sequelae (bladder and bowel incontinence, sexual dysfunction, bilateral lower limb weakness) occur in up to 50-70% of patients with delayed decompression (>24 hours).",
+        "severity": "Life-altering — permanent neurological disability if not decompressed urgently",
+        "management": "EMERGENCY MRI within hours of symptom onset; emergency surgical decompression (lumbar discectomy/laminectomy) as soon as possible (ideally within 24-48 hours of onset); outcomes best with decompression within 24 hours"
+      },
+      {
+        "complication": "Radiculopathy with Neurological Deficit",
+        "description": "Persistent nerve root compression from disc herniation or spinal stenosis causing motor weakness (foot drop from L4/5 compression), sensory loss, and reflex loss. Most (70-90%) improve with conservative management over 3-6 months. Foot drop (inability to dorsiflexion foot — L4/5 radiculopathy) is the most clinically significant deficit and requires urgent MRI.",
+        "severity": "Moderate to Severe — significant functional disability; risk of permanent weakness if untreated",
+        "management": "Urgent MRI; gabapentin or pregabalin for nerve pain; physiotherapy (neural mobilisation); epidural steroid injection; surgical microdiscectomy if no improvement after 6-12 weeks or worsening neurological deficit"
+      },
+      {
+        "complication": "Depression, Anxiety, and Psychological Comorbidity",
+        "description": "Chronic pain and depression are profoundly bidirectionally linked — shared neurotransmitter pathways (serotonin, noradrenaline), overlapping brain circuits, and shared risk factors. Depression is present in 30-50% of patients with chronic back pain; anxiety in 30-40%. Depression significantly amplifies pain intensity, reduces pain tolerance, impairs recovery, increases medication use, and predicts chronicity. Early identification and treatment of psychological comorbidity is a cornerstone of chronic back pain management.",
+        "severity": "Significant — impairs treatment response and quality of life; increases suicide risk in severe cases",
+        "management": "PHQ-9 depression screening; CBT; duloxetine (dual benefit for pain and depression); physiotherapy (exercise is an antidepressant); social support; psychology referral; sleep hygiene"
+      },
+      {
+        "complication": "Opioid Dependence from Chronic Pain Treatment",
+        "description": "Overprescription of opioids for chronic back pain — a major global health crisis. Evidence shows opioids provide minimal long-term benefit for chronic non-specific LBP while causing significant harm: physical dependence, tolerance (escalating doses needed), opioid-induced hyperalgesia (opioids actually increase pain sensitivity with prolonged use), sedation, constipation, hormonal disruption, falls, and addiction. India faces a growing opioid problem with codeine and tramadol misuse.",
+        "severity": "Severe — life-altering addiction and iatrogenic harm",
+        "management": "Avoid initiating opioids for chronic non-specific back pain; if already prescribed, gradual dose reduction (10% per week with support); buprenorphine substitution therapy for opioid dependence; addiction medicine referral; CBT; switch to non-opioid analgesics and active rehabilitation"
+      },
+      {
+        "complication": "Disc Herniation Complications — Spinal Instability and Failed Back Surgery Syndrome",
+        "description": "Failed back surgery syndrome (FBSS) — persistent or recurrent back and leg pain after spinal surgery — affects 10-40% of patients post-discectomy. Causes include: wrong surgical level, inadequate decompression, epidural fibrosis (scar tissue), adjacent segment degeneration (above and below fused level), post-surgical instability, or persistence of non-structural (central sensitisation) pain. Prevention: careful patient selection for surgery (only for refractory structural pathology with clear correlation between imaging and clinical signs).",
+        "severity": "Significant — often worse than pre-surgical state; difficult to treat",
+        "management": "Spinal cord stimulation (neuromodulation); pain clinic; revision surgery in selected cases; multidisciplinary rehabilitation"
+      },
+      {
+        "complication": "Vertebral Compression Fracture and Progressive Kyphosis",
+        "description": "Acute osteoporotic vertebral compression fractures cause severe acute back pain and progressive thoracic kyphosis ('Dowager's hump'). Multiple vertebral fractures cause height loss (2-5 cm per fracture), progressive kyphosis, restrictive lung disease, chronic pain, functional decline, and impaired quality of life. Associated with 15-20% increased mortality (pneumonia from restrictive chest wall deformity, falls from balance impairment).",
+        "severity": "Moderate to Severe — progressive disability in elderly",
+        "management": "Analgesia; vertebroplasty/kyphoplasty for acute fracture; osteoporosis treatment (bisphosphonate, denosumab, or teriparatide) to prevent further fractures; Vitamin D + calcium; fall prevention; back extensor strengthening exercise; physiotherapy"
+      }
+    ],
+
+    "special_populations": {
+      "back_pain_in_pregnancy": {
+        "key_points": [
+          "Low back pain and pelvic girdle pain (PGP) affect 50-70% of pregnant women at some point during pregnancy — one of the most common complaints in obstetric practice",
+          "Two distinct conditions must be distinguished: (1) Lumbar back pain — posterior central pain worsened by flexion, lifting, and prolonged standing; (2) Pelvic girdle pain (PGP) — pain in the SIJ, symphysis pubis, and posterior pelvic region; provoked by weight-bearing, turning in bed, walking, and stairs; particularly severe when standing on one leg; related to progesterone-induced pelvic ligament laxity",
+          "PGP diagnostic tests: ASLR (Active Straight Leg Raise) test and PPPP (Posterior Pelvic Pain Provocation test) are the most sensitive; Trendelenburg test",
+          "Management: pelvic physiotherapy (most effective — specific exercises to stabilise the pelvis rather than stretch it); pelvic girdle support belt (SI belt) worn around the greater trochanters; activity modification (avoid asymmetric loading, single-leg weight-bearing); aquatic physiotherapy (pool exercise — water supports body weight); manual therapy; avoid SI joint stretches (worsening instability)",
+          "Safe analgesics in pregnancy: paracetamol (first-line); avoid NSAIDs after 20 weeks (reduce amniotic fluid and premature ductus closure); avoid opioids; topical preparations (check safety); short-term gentle heat",
+          "Sleep posture: left lateral lying with pillow between knees; SRC (pregnancy support pillow) for lumbar support; avoid supine lying after 28 weeks (compresses IVC)",
+          "AVOID: corticosteroid injections (non-urgent) in pregnancy; MRI only if red flag — discuss risk/benefit with obstetrician",
+          "Postnatal: PGP usually resolves within 3 months postpartum; post-natal core and pelvic floor rehabilitation essential; pelvic floor physiotherapist referral; 20-30% have ongoing pain at 6 months — continue management; back pain is a significant contributor to postnatal depression"
+        ]
+      },
+      "back_pain_in_elderly": {
+        "key_points": [
+          "Back pain in the elderly (>65 years) has a much higher proportion of serious underlying pathology than in working-age adults — lower threshold for investigation required",
+          "Always consider: vertebral compression fracture from osteoporosis (most common); spinal metastases from breast, prostate, lung, kidney cancer; vertebral osteomyelitis; spinal stenosis; abdominal aortic aneurysm",
+          "New back pain in an elderly patient: always examine for weight loss, constitutional symptoms, fever, palpable abdominal mass; check FBC, ESR, CRP, PSA, SPEP; X-ray spine",
+          "Spinal stenosis is predominantly a condition of elderly patients — neurogenic claudication limiting walking distance (relieved by sitting and forward flexion); physiotherapy (flexion exercises); epidural steroids; surgical decompression for severe functional limitation",
+          "Vertebral compression fracture (VCF): acute severe mid-back pain in elderly after minimal or no trauma; X-ray spine; DEXA scan; analgesia; vertebroplasty/kyphoplasty; bisphosphonate therapy; Vitamin D and calcium",
+          "Analgesic caution in elderly: NSAIDs have significantly higher risk of GI bleeding, AKI, and cardiovascular events; prefer paracetamol and topical NSAIDs first-line; avoid opioids where possible (falls, confusion, constipation, respiratory depression); gabapentin caution (falls, sedation)",
+          "Exercise: highly beneficial even in frail elderly — Tai Chi, swimming, walking (with appropriate supervision); improves balance, reducing fall risk; reduces osteoporosis; reduces depression; resistance exercise reduces sarcopenia"
+        ]
+      },
+      "back_pain_in_athletes_and_sports_injuries": {
+        "key_points": [
+          "Spondylolysis (pars interarticularis stress fracture) — the most common cause of back pain in young athletes (gymnasts, fast bowlers in cricket, weightlifters, rugby players); repetitive spinal extension loading causes stress fracture through the 'neck of the Scottie dog' on oblique X-ray; diagnosis by X-ray + CT or MRI (bone marrow oedema on STIR sequence); management: rest from provocative activity; back brace (TLSO); gradual return to sport over 3-6 months; physiotherapy",
+          "Muscle strain classification (Grade I-III) — manage according to grade: Grade I: PEACE&LOVE (Protection, Elevation, Avoid Anti-inflammatories early, Compression, Education; Load, Optimism, Vascularisation, Exercise); Grades II-III: progressive rehabilitation; Grade III: orthopaedic assessment for possible surgical repair",
+          "Modern injury management replaces RICE (Rest, Ice, Compression, Elevation) for muscle injuries — now PEACE&LOVE protocol: early movement (not rest), relative protection not immobilisation; avoid ice in first 48h (may actually impair natural inflammatory healing process); early loading as tolerated",
+          "Return to sport (RTS) criteria — not time-based alone: sport-specific functional testing; strength symmetry >90% vs uninjured side; psychological readiness; pain-free sport-specific movement; physiotherapist and sports physician clearance",
+          "Fast bowlers (cricket — very high prevalence of spondylolysis and disc injury): bowl count limitations; screening programmes; pre-season spinal assessment; adequate recovery time between bowling spells"
+        ]
+      },
+      "back_pain_in_children_and_adolescents": {
+        "key_points": [
+          "Back pain in children <10 years is uncommon and should prompt investigation — has a higher rate of serious pathology than adult back pain (infection, tumour, inflammatory disease); always investigate with imaging and blood tests",
+          "Adolescent back pain (10-18 years) is common and usually benign (postural, overuse, schoolbag-related) but spondylolysis must be excluded in sporty adolescents",
+          "Scheuermann's disease — adolescent thoracic kyphosis from irregular vertebral endplate ossification; presents with progressive thoracic kyphosis and thoracic back pain; often cosmetically concerning to teenager; management: physiotherapy (posture exercises), Milwaukee brace for severe progressive kyphosis; surgery for extreme deformity",
+          "Schoolbag weight: carrying schoolbags weighing >10-15% body weight increases back pain risk; recommend maximum 10% of body weight; use backpacks with two shoulder straps (not one-sided bags); wear both straps; pack heaviest items closest to the back",
+          "Scoliosis (lateral spinal curvature): school screening by forward bend test (Adam's forward bending test); referral to orthopaedics if >10 degree Cobb angle; brace treatment for 20-40 degree curves during growth; surgery for >40-45 degrees or rapidly progressing curves",
+          "Heavy device use ('text neck'): epidemic of cervical spine issues in adolescents from prolonged smartphone and tablet use in neck-flexed position; education programme; device use breaks; neck strengthening exercises"
+        ]
+      },
+      "back_pain_in_office_workers": {
+        "key_points": [
+          "Occupational back pain from desk work is the fastest growing category of back pain — affecting an estimated 40% of office workers",
+          "Key risk factors: prolonged static sitting posture; forward head posture at screen; mouse-heavy work causing one-sided shoulder loading; lack of movement breaks; poor ergonomic awareness",
+          "'Movement snacks': 1-2 minute walking/stretching breaks every 30-45 minutes are more effective than one long break; set computer reminder or use a smart watch movement prompt",
+          "Standing desks: effective for reducing lumbar disc pressure vs sustained sitting; must alternate sitting and standing (not stand all day — causes its own back and leg problems); anti-fatigue mat; appropriate screen height when standing",
+          "Shoulder and neck-specific exercises: chin tucks (cervical retraction — corrects forward head posture); doorframe chest stretches; shoulder blade squeezes; upper trapezius and levator scapulae stretch",
+          "Work from home specific: kitchen table working often worse ergonomically than office setting; brief walking to work removed; isolation increases anxiety and catastrophising; dedicated workspace with proper ergonomics is essential"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Annual Influenza Vaccine",
+        "frequency": "Annually",
+        "reason": "Influenza infection causes severe generalised myalgia (muscle aches) including significant back pain that can unmask or severely worsen pre-existing back conditions. Influenza with back pain may lead to unnecessary imaging and intervention. Elderly patients (highest osteoporosis risk) with influenza and reduced mobility are at increased risk of falls and vertebral fractures. Annual influenza vaccination recommended for all adults with chronic back pain, elderly patients, and those on immunosuppressants or analgesics affecting immune function.",
+        "note": "Influenza vaccination reduces total days of musculoskeletal pain and back pain flares associated with viral illness"
+      },
+      {
+        "vaccine": "Herpes Zoster (Shingles) Vaccine — Shingrix",
+        "frequency": "2 doses, 2-6 months apart; adults >50 years (or >18 if immunocompromised)",
+        "reason": "Herpes zoster (shingles) frequently presents as severe unilateral back, chest, or thoracic pain that can be mistaken for musculoskeletal back pain or acute cardiac/pleuritic pain for several days BEFORE the characteristic rash appears. Post-herpetic neuralgia (PHN) — severe burning neuropathic pain persisting months after the rash — is one of the most debilitating pain conditions and frequently involves thoracic or lumbar dermatomes. Shingrix vaccine (recombinant zoster vaccine) is highly effective (97% efficacy in adults >50) at preventing shingles and PHN.",
+        "effectiveness": "Shingrix: 97% efficacy against shingles; 91% against PHN in adults >50"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine",
+        "frequency": "PCV20 once; booster per guidelines",
+        "reason": "Pneumonia causes significant pleuritic back and thoracic pain — frequently confused with musculoskeletal thoracic back pain. Elderly patients with chronic back pain and reduced mobility are at higher risk of pneumonia. Patients on immunosuppressants for inflammatory arthritis (associated with back pain) require pneumococcal vaccination.",
+        "indication": "All adults >65 years; immunocompromised patients on steroids, DMARDs, or biologics for inflammatory arthritis"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "frequency": "Primary series and boosters per national schedule",
+        "reason": "Post-COVID syndrome (Long COVID) includes significant musculoskeletal pain, profound fatigue, and back pain as frequent symptoms — affecting a substantial proportion of unvaccinated infected individuals. COVID-19 vaccination reduces the severity and duration of infection and the risk of Long COVID musculoskeletal complications. Patients with chronic back pain, particularly those on immunosuppressants for inflammatory spondyloarthropathy, benefit from COVID-19 vaccination.",
+        "note": "Post-COVID musculoskeletal pain may be related to ACE2 receptor expression in musculoskeletal tissues, persistent inflammation, and deconditioning"
+      },
+      {
+        "vaccine": "Typhoid Vaccine",
+        "frequency": "Every 2-3 years for Vi polysaccharide",
+        "reason": "Typhoid fever (Salmonella Typhi) causes severe myalgia and back pain as a prominent systemic symptom — the 'typhoid state'. In India and endemic areas, typhoid back pain is frequently misdiagnosed as musculoskeletal. Typhoid-associated vertebral involvement (Pott's typhoid) is a rare but severe complication. Vaccination recommended in India for all age groups given high endemicity.",
+        "note": "Any Indian patient with fever, back pain, and systemic illness should have typhoid fever on the differential diagnosis"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Back pain that does NOT improve with simple self-management (rest, NSAIDs, gentle exercise) within 2-4 weeks — GP appointment to assess, rule out serious cause, and discuss physiotherapy",
+      "Back pain with radiation below the knee (possible sciatica/radiculopathy) — GP within 1 week; if worsening neurological symptoms, sooner",
+      "Any new neurological symptom — foot drop (difficulty lifting foot), leg weakness, numbness or tingling radiating down leg — GP within 48-72 hours; urgent MRI if significant deficit",
+      "Back pain with fever above 38°C — same-day GP assessment; possible vertebral infection",
+      "Severe acute back or neck pain after a fall, road traffic accident, or direct trauma — emergency department assessment for possible fracture",
+      "Elderly patient (>65 years) with new-onset back pain without clear mechanical cause — same-day GP; needs blood tests and imaging to exclude malignancy, fracture, or infection",
+      "Known cancer patient with new or significantly worsening back pain — same-day oncology or GP assessment; possible spinal metastases",
+      "Back pain with significant unexplained weight loss — GP within a week; exclude malignancy",
+      "Pain consistently worse at night and position-independent (not relieved by any posture change) — GP within a week; red flag for malignancy or infection",
+      "Morning stiffness lasting more than 45 minutes, improving through the day, onset under age 40 — possible ankylosing spondylitis; rheumatology referral; HLA-B27 and MRI sacroiliac joints",
+      "Persistent back pain (>12 weeks) significantly affecting quality of life, work, and mood — chronic pain management pathway; physiotherapy and psychology referral",
+      "Recurrent back pain episodes (more than 2-3 per year) — discuss prevention strategies, long-term exercise programme, and physiotherapy",
+      "Pregnant woman with severe back pain or pelvic girdle pain limiting mobility — obstetric physiotherapy referral; obstetric assessment if red flags"
+    ],
+
+    "emergency_signs": [
+      "New or worsening BLADDER or BOWEL DYSFUNCTION — inability to urinate (retention), uncontrollable urinary or faecal leakage (incontinence), reduced sensation when urinating — CAUDA EQUINA SYNDROME — CALL EMERGENCY SERVICES (102/112/999/911) IMMEDIATELY and go to A&E; this is a neurosurgical emergency requiring MRI and decompression surgery within hours to prevent permanent incontinence and paralysis",
+      "SADDLE ANAESTHESIA — sudden new numbness or tingling of the perineum, genitalia, anus, inner thighs, or buttocks — CAUDA EQUINA EMERGENCY — CALL EMERGENCY SERVICES",
+      "BILATERAL LEG WEAKNESS or numbness developing acutely — both legs simultaneously affected with back pain — SPINAL CORD OR CAUDA EQUINA COMPRESSION — EMERGENCY",
+      "FOOT DROP — sudden inability to lift the foot when walking (foot slapping the floor) — L4/L5 nerve root or cord injury — URGENT MRI within 24 hours; if rapidly progressive, attend emergency department",
+      "SEVERE SUDDEN BACK OR ABDOMINAL PAIN with collapse or very low blood pressure in a patient over 50 (especially male smoker) — possible ruptured aortic aneurysm — LIFE-THREATENING VASCULAR EMERGENCY — CALL EMERGENCY SERVICES IMMEDIATELY",
+      "RAPIDLY PROGRESSIVE NEUROLOGICAL DEFICIT — worsening weakness in both legs over hours or days — possible spinal cord compression from malignancy, abscess, or epidural haematoma — URGENT EMERGENCY MRI within 4-24 hours",
+      "SEVERE BACK PAIN WITH HIGH FEVER AND CONFUSION — possible spinal epidural abscess — EMERGENCY; can progress to complete paralysis within hours without surgical drainage",
+      "ACUTE BACK PAIN WITH SIGNS OF SEPSIS (fever >39°C or <36°C, HR >120, confusion, hypotension) in IV drug user or immunocompromised patient — possible vertebral osteomyelitis with bacteraemia — EMERGENCY",
+      "PATIENT WITH KNOWN CANCER developing acute worsening back pain with leg weakness — possible metastatic cord compression — URGENT ONCOLOGICAL EMERGENCY; dexamethasone 8 mg IV immediately while awaiting MRI to protect cord from oedema",
+      "SEVERE CHEST-BACK PAIN WITH UNEQUAL BLOOD PRESSURES IN BOTH ARMS or PULSE DEFICIT — possible aortic dissection — LIFE-THREATENING EMERGENCY — CALL EMERGENCY SERVICES"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "Should I rest in bed or stay active when I have back pain?",
+        "answer": "Stay as active as you can — this is the single most important advice for back pain recovery, backed by strong evidence. Bed rest beyond 24-48 hours actually makes back pain worse: it leads to muscle weakness, joint stiffness, increased pain sensitisation, and poor mood. The old advice to 'rest until it passes' is completely outdated. In the first 24-48 hours of severe acute pain you may need to reduce activity slightly, but you should still try to get up, walk around the house, perform gentle stretching, and avoid staying in any one position for more than 30-45 minutes. Early gentle movement — walking, swimming, yoga — is the best treatment for most back pain. Your back is not made of glass; it is designed to move."
+      },
+      {
+        "question": "Do I need an X-ray or MRI for my back pain?",
+        "answer": "Almost certainly not for routine back pain without red flags. This is one of the most important and counterintuitive messages in back pain management. Studies consistently show that getting an MRI or X-ray for ordinary back pain (without red flag symptoms) produces worse outcomes — it leads to more treatment, more surgery, more anxiety, higher costs, and no better recovery. The reason is that MRI findings in the back are extremely common in people with NO pain: 64% of 40-year-olds without any back pain have disc bulges on MRI, and 91% of symptom-free 60-year-olds have disc degeneration. These findings are like wrinkles — normal ageing that does not cause pain in most people. If the scan labels them as 'severe' or 'degenerated', patients often become fearful and limit their movement, which actually causes more chronic pain. Imaging IS indicated for: red flag symptoms (see above), neurological deficit (foot drop, leg weakness, bladder changes), no improvement after 6-8 weeks of conservative treatment, and pre-surgical assessment."
+      },
+      {
+        "question": "What is sciatica and how is it different from ordinary back pain?",
+        "answer": "Sciatica is a specific clinical syndrome caused by irritation or compression of the sciatic nerve — the large nerve formed from lumbar and sacral nerve roots (L4, L5, S1) running from the spine, through the buttock, and down the back of the leg to the foot. True sciatica produces: sharp, burning, shooting, or electric-shock pain radiating from the low back, through the buttock, and DOWN THE LEG BELOW THE KNEE — often to the calf, ankle, or foot; pins and needles or numbness in the leg; and sometimes weakness (difficulty lifting the foot or rising on tiptoe). It is caused by a herniated intervertebral disc pressing on the nerve root. Ordinary back pain (even with referred pain to the buttock and thigh) stays ABOVE the knee and has no neurological features. Treatment differs — sciatica may require nerve pain medications (gabapentin, pregabalin), epidural steroid injection, and occasionally surgery (microdiscectomy), while simple back pain is managed with NSAIDs, exercise, and physiotherapy."
+      },
+      {
+        "question": "What exercises are best for back pain?",
+        "answer": "The most evidence-based exercises for back pain recovery and prevention are: (1) Core stabilisation — dead bug, bird dog, plank, bridge: these specifically rebuild the deep multifidus muscle (the most important spinal stabiliser) which atrophies rapidly with any back pain episode; (2) Walking — the simplest, safest, and most universally effective exercise for back pain; start with 15-20 minutes and gradually increase; (3) Yoga — cat-cow mobilisation, child's pose, bridge, and supine hamstring stretch specifically benefit the lumbar spine; multiple RCTs confirm yoga is effective for chronic LBP; (4) Swimming — low-impact aerobic exercise that supports the entire spine in water; (5) Pilates — emphasises core engagement and neutral spine position. The WORST thing for chronic back pain is continued avoidance of movement. The best exercise is whichever one you will actually do consistently. Even a 10-minute daily walk is enormously better than nothing."
+      },
+      {
+        "question": "When should I consider surgery for back pain?",
+        "answer": "Surgery for back pain is appropriate only in a minority of carefully selected patients — and it should almost always be preceded by at least 6-12 weeks of high-quality conservative management (physiotherapy, appropriate analgesics, and activity). The clearest surgical indication is cauda equina syndrome (bladder/bowel dysfunction + saddle anaesthesia) — this requires emergency surgery within hours regardless of how long conservative treatment has been tried. Other surgical indications include: sciatica from a disc herniation that has NOT improved after 6-12 weeks of non-surgical treatment with ongoing severe neurological deficit or progressive weakness; severe functionally disabling spinal stenosis not responding to conservative measures. Surgery is NOT indicated for non-specific mechanical back pain without neurological findings — multiple large RCTs show spinal fusion for chronic LBP without specific structural pathology is no better than intensive physiotherapy and rehabilitation, and carries all the risks of surgery. The decision should be made jointly with a spinal surgeon after exhausting conservative options, and always with realistic expectations — 10-40% of back surgeries lead to 'failed back surgery syndrome'."
+      },
+      {
+        "question": "Why does my back pain keep coming back?",
+        "answer": "Recurrent back pain (50-80% of people have at least one recurrence within 12 months of their first episode) is extremely common for predictable reasons: (1) The underlying risk factors — weak core muscles, poor ergonomics, sedentary lifestyle, obesity, stress — were never fully addressed after the first episode; (2) The multifidus muscle (the deep stabiliser) atrophied during the painful episode and was never specifically rehabilitated — the brain 'forgets' to activate it even after pain resolves; (3) Fear of movement leads to protective patterns that ultimately weaken the back further; (4) Psychosocial factors (work stress, poor sleep, anxiety) lower pain threshold making recurrence more likely. The most effective prevention is: specific core stabilisation exercises (bird dog, dead bug) continued permanently, not just during pain episodes; regular general exercise; attention to ergonomics; healthy weight; stress management; and developing confidence that controlled movement does not harm your back."
+      },
+      {
+        "question": "What is ankylosing spondylitis and how is it different from ordinary back pain?",
+        "answer": "Ankylosing spondylitis (AS) — now grouped under the term 'axial spondyloarthropathy' (axSpA) — is a chronic inflammatory autoimmune disease of the spine and sacroiliac joints. It is fundamentally different from mechanical back pain in several key ways: AS predominantly affects young men aged 18-40 (vs mechanical LBP which peaks 35-55); the pain is inflammatory in nature — WORSE at rest and in the early morning (morning stiffness >45 minutes), and IMPROVES with activity and exercise (the OPPOSITE of mechanical LBP); there is often associated sacroiliac joint pain, anterior uveitis (red painful eye), heel pain (enthesitis), psoriasis, and inflammatory bowel disease; HLA-B27 gene is positive in 90-95% of patients; MRI shows sacroiliac joint inflammation and vertebral corner 'Romanus' lesions. Management of AS is entirely different — treated with NSAIDs, physiotherapy, and biologic therapies (anti-TNF agents: adalimumab, infliximab; or IL-17 inhibitors: secukinumab) rather than the same approach used for mechanical LBP. Early diagnosis matters — AS is often misdiagnosed as mechanical LBP for years."
+      },
+      {
+        "question": "Can Vitamin D deficiency cause back pain?",
+        "answer": "Yes — Vitamin D deficiency is an extremely common and treatable cause of musculoskeletal pain including back pain, and is severely underdiagnosed in India. Studies estimate 40-80% of the Indian population is Vitamin D deficient despite abundant sunlight — because modern lifestyle involves limited outdoor time and most clothing covers the skin. Vitamin D deficiency causes: diffuse musculoskeletal pain and aching (which exactly mimics fibromyalgia or non-specific back pain); proximal muscle weakness (difficulty rising from a chair, climbing stairs); generalised fatigue; and bone pain (from osteomalacia — softening of bones from inadequate mineralisation). Multiple studies show that correcting Vitamin D deficiency significantly reduces musculoskeletal pain in deficient individuals. A simple blood test (serum 25-OH Vitamin D) diagnoses deficiency; standard treatment is 60,000 IU weekly for 8-12 weeks followed by 1500-2000 IU daily maintenance. Any patient with unexplained back pain, fatigue, and muscle weakness should have Vitamin D checked."
+      },
+      {
+        "question": "Is heat or cold better for back pain?",
+        "answer": "It depends on timing and type of pain: Cold (ice pack) for the first 24-72 hours of ACUTE muscle strain with swelling and bruising — ice reduces oedema, limits haematoma formation, and numbs the area; apply for 10-15 minutes every 2 hours (never directly on skin — wrap in towel). Heat for subacute and chronic back pain from muscle spasm and stiffness — heat increases blood flow, relaxes muscle spasm, and is deeply soothing; hot water bottle, heat pack, warm shower, or warm bath; apply for 15-20 minutes 3-4 times daily. Cochrane review (2006) concluded heat wraps provide short-term relief for acute and subacute LBP. For most people with muscle spasm and tension-type back pain (not fresh acute injury), heat is more effective than cold. Many people find alternating hot and cold (contrast therapy) very effective for chronic stiffness. Warm baths with Epsom salts (magnesium sulphate) provide both thermal and transdermal magnesium benefit for muscle relaxation."
+      },
+      {
+        "question": "My MRI shows a 'bulging disc' — does this mean I need surgery?",
+        "answer": "Almost certainly not. 'Bulging disc' is a very common MRI finding — present in approximately 64% of entirely asymptomatic 40-year-olds. It is essentially a normal ageing finding, like having grey hair. The vast majority of bulging discs cause no symptoms and require no treatment. What matters clinically is whether your bulging disc correlates with your actual symptoms — is it at the right level, on the right side, and producing the specific neurological signs expected from that level? An MRI finding of a disc bulge without matching clinical features does NOT justify surgery. Even a disc herniation (protrusion or extrusion) — which is a step beyond a simple bulge — does NOT automatically require surgery: 80-90% of disc herniations causing sciatica improve significantly without surgery over 3-6 months. The indication for surgery is disc herniation that has NOT improved after 6-12 weeks of appropriate conservative treatment AND produces a specific neurological deficit (foot drop, reflexloss, progressive weakness) that correlates with the MRI finding. Treat the patient, not the scan."
+      }
+    ],
+
+    "references": [
+      "National Institute for Health and Care Excellence (NICE) — Low Back Pain and Sciatica in Over 16s: Assessment and Management (NG59, 2016)",
+      "American College of Physicians (ACP) — Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: A Clinical Practice Guideline (Annals of Internal Medicine, 2017)",
+      "Global Burden of Disease (GBD) 2019 — Low Back Pain Collaborators — Global, Regional, and National Burden of Low Back Pain (Lancet Rheumatology, 2020)",
+      "Hayden JA et al. — Exercise Therapy for Chronic Low Back Pain (Cochrane Review, 2021)",
+      "Wieland LS et al. — Yoga Treatment for Chronic Non-Specific Low Back Pain (Cochrane Review, 2017)",
+      "Foster NE et al. — Prevention and Treatment of Low Back Pain: Evidence, Challenges, and Promising Directions (Lancet, 2018)",
+      "Maher C, Underwood M, Buchbinder R — Non-Specific Low Back Pain (Lancet, 2017)",
+      "Jensen MC et al. — Magnetic Resonance Imaging of the Lumbar Spine in People Without Back Pain (NEJM, 1994 — Landmark paper on incidental MRI findings)",
+      "Stuart McGill — Low Back Disorders: Evidence-Based Prevention and Rehabilitation (3rd Edition)",
+      "Waddell G — The Back Pain Revolution (2nd Edition, 2004)",
+      "Moseley GL, Butler DS — Explain Pain Supercharged (Noigroup Publications, 2017)",
+      "Koes BW, van Tulder M, Lin CWC — An Updated Overview of Clinical Guidelines for the Management of Non-Specific Low Back Pain in Primary Care (European Spine Journal, 2010)",
+      "Bigos S et al. — US Department of Health: Acute Low Back Problems in Adults (AHCPR Clinical Practice Guidelines, updated 2023)",
+      "Manchikanti L et al. — Epidemiology of Low Back Pain and Occupational Factors (Pain Physician, 2014)",
+      "Maroon JC, Bost JW — Omega-3 Fatty Acids (Fish Oil) as an Anti-Inflammatory: An Alternative to NSAIDs for Back Pain (Surgical Neurology, 2006)",
+      "MIND Study — Mindfulness Stress Reduction vs Cognitive Behavioural Therapy vs Usual Care for Chronic Low Back Pain (JAMA Internal Medicine, 2016)",
+      "Chou R et al. — Diagnosis and Treatment of Low Back Pain: A Joint Clinical Practice Guideline from the American College of Physicians and American Pain Society (Annals of Internal Medicine, 2007)",
+      "UpToDate — Evaluation of low back pain in adults; Treatment of acute low back pain; Evaluation and treatment of sciatica; Lumbar spinal stenosis"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-BACKPAIN-019",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-04",
+      "last_updated": "2026-06-04",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is for educational and informational purposes for the MedoAir chatbot only. It does not replace professional medical advice, diagnosis, or treatment. Back pain with neurological symptoms — particularly new bladder or bowel dysfunction, saddle anaesthesia, or bilateral leg weakness — represents a neurosurgical emergency (cauda equina syndrome) requiring immediate emergency department attendance. Do not delay medical assessment for red flag back pain symptoms. Exercise and lifestyle recommendations should be tailored to individual patients with guidance from physiotherapists and physicians.",
+      "tags": ["back pain", "low back pain", "muscle strain", "pulled muscle", "sciatica", "lumbar", "disc herniation", "cauda equina", "radiculopathy", "spinal stenosis", "physiotherapy", "core exercises", "yoga", "NSAIDs", "diclofenac", "gabapentin", "epidural", "ergonomics", "ankylosing spondylitis", "Vitamin D", "osteoporosis", "vertebral fracture", "multifidus", "McKenzie", "Pilates", "CBT", "chronic pain", "medoair"]
+    }
+  }
+}

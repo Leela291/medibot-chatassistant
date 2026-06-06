@@ -1,0 +1,1370 @@
+{
+  "disease": {
+    "id": "DIS-013",
+    "name": "Pyelonephritis (Kidney Infection)",
+    "scientific_name": "Pyelonephritis / Upper Urinary Tract Infection / Renal Parenchymal Infection",
+    "icd_10_code": "N10 (Acute pyelonephritis); N11.0 (Nonobstructive reflux-associated chronic pyelonephritis); N11.1 (Chronic obstructive pyelonephritis); N11.8 (Other chronic tubulo-interstitial nephritis); N13.6 (Pyonephrosis); O23.0 (Infections of kidney in pregnancy); N39.0 (Urinary tract infection, site not specified); N30.0 (Acute cystitis); A41.51 (Sepsis due to Escherichia coli — urosepsis); N15.1 (Renal and perinephric abscess)",
+    "category": "Infectious Disease / Urological / Nephrology / Public Health",
+    "overview": {
+      "description": "Pyelonephritis is a bacterial infection of the upper urinary tract — specifically involving the kidney parenchyma (renal tissue), collecting system (calyces), and renal pelvis. It most commonly arises from ascending spread of bacteria from the lower urinary tract (bladder — cystitis → ureter → kidney), though haematogenous spread (seeding of the kidney from bloodstream bacteraemia) also occurs. Pyelonephritis produces a systemic febrile illness with loin/flank pain, rigors, nausea and vomiting, and characteristic urinary symptoms, distinguishing it from uncomplicated lower UTI (cystitis) which causes only bladder irritation without systemic features. While most cases in otherwise healthy young women are uncomplicated and respond rapidly to oral antibiotics, pyelonephritis carries significant risk of life-threatening complications — including urosepsis, septic shock, renal abscess, and acute kidney injury — particularly in pregnant women, elderly patients, men, diabetics, and immunocompromised individuals. It accounts for over 100,000 hospital admissions annually in the USA alone and is the most common serious bacterial infection in women of reproductive age.",
+      "affected_organ": "Primarily the kidneys (renal parenchyma, calyces, and renal pelvis); involvement may extend to the ureter, perinephric space (perinephric abscess), and systemically via bloodstream (bacteraemia and urosepsis)",
+      "prevalence": "Pyelonephritis affects approximately 1-2% of all UTI cases and accounts for up to 200,000 emergency department visits and 100,000 hospitalisations per year in the USA; global incidence estimated at 15-17 cases per 10,000 women per year; affects all age groups but peak incidence in women aged 15-35 years",
+      "age_group": "All ages; highest incidence in sexually active women aged 15-35 years; second peak in elderly over 65 years of both sexes; in children — important cause of febrile illness and a significant cause of renal scarring and chronic kidney disease",
+      "is_contagious": false,
+      "is_contagious_note": "Pyelonephritis itself is not contagious person-to-person; however, the causative bacteria (e.g., ESBL-producing E. coli) can be transmitted in healthcare settings through contaminated hands and equipment",
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": false,
+      "is_chronic_note": "Acute pyelonephritis is not chronic; however, recurrent episodes cause renal scarring leading to chronic pyelonephritis and chronic kidney disease",
+      "is_preventable": true,
+      "key_fact": "Pyelonephritis is a medical emergency requiring same-day medical assessment — high fever with loin pain is never 'wait and see'; ESBL-producing E. coli is an emerging major problem in India making first-line oral antibiotic treatment increasingly unreliable"
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Uncomplicated Acute Pyelonephritis",
+        "description": "Acute bacterial kidney infection occurring in an otherwise healthy, non-pregnant adult woman with a structurally and functionally normal urinary tract and no significant comorbidities. Uncomplicated pyelonephritis responds well to oral antibiotic therapy and is managed in the outpatient setting in the majority of cases. This is the most common clinical scenario — accounting for approximately 70-80% of all pyelonephritis cases.",
+        "typical_patient": "Healthy, non-pregnant woman aged 18-50 years with no urological abnormalities, no recent hospitalisation, no catheter, no diabetes, and no immunosuppression",
+        "causative_organisms": "E. coli (85-90% of cases in community setting)",
+        "management_setting": "Outpatient oral antibiotics in most cases; hospital admission if vomiting prevents oral medication or features of systemic sepsis",
+        "prognosis": "Excellent — fever resolves within 48-72 hours of appropriate antibiotics; full recovery expected within 10-14 days",
+        "recurrence_risk": "20-30% recurrence within 6 months in women with predisposing factors (sexual activity, prior UTI history)"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Complicated Acute Pyelonephritis",
+        "description": "Pyelonephritis occurring in the presence of structural, functional, or metabolic factors that increase the risk of a more severe course, treatment failure, antibiotic resistance, and complications. ANY of the following factors make pyelonephritis 'complicated' and necessitates a more aggressive management approach, including consideration of IV antibiotics and hospitalisation.",
+        "complicating_factors": [
+          "Male sex — any UTI in men is considered complicated by definition (men should not normally develop UTIs without a predisposing cause)",
+          "Pregnancy — requires urgent treatment due to high risk of preterm labour, maternal sepsis, and foetal compromise",
+          "Urinary tract obstruction — urinary stone (calculus), stricture, or tumour obstructing urine flow; obstruction with infection creates pyonephrosis (pus in the collecting system) — SURGICAL EMERGENCY",
+          "Vesicoureteric reflux (VUR) — abnormal retrograde flow of urine from bladder to ureter/kidney; particularly important in children",
+          "Diabetes mellitus — impaired neutrophil function; higher risk of emphysematous pyelonephritis and fungal infection",
+          "Immunosuppression — HIV/AIDS, transplant recipients, chemotherapy, high-dose corticosteroids",
+          "Urinary catheter (indwelling or intermittent) — catheter-associated UTI (CAUTI)",
+          "Recent urological instrumentation or surgery — increased risk of resistant organisms",
+          "Neurogenic bladder — incomplete bladder emptying promotes bacterial colonisation",
+          "Structural renal anomalies — horseshoe kidney, polycystic kidney disease, renal transplant",
+          "Renal impairment — reduced antibiotic clearance alters dosing; impaired immune defence",
+          "Recent hospitalisation or healthcare exposure — risk of ESBL-producing or multidrug-resistant organisms",
+          "Known MDR organism — ESBL-producing Enterobacteriaceae, carbapenem-resistant organisms",
+          "Failure of initial outpatient antibiotic therapy within 48-72 hours"
+        ],
+        "management_setting": "Hospital admission strongly recommended; IV antibiotics; imaging (renal ultrasound minimum, CT if complications suspected); urology referral if obstruction identified",
+        "prognosis": "Variable — depends on underlying complicating factor and rapidity of treatment; mortality risk exists with urosepsis"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Emphysematous Pyelonephritis (EPN)",
+        "description": "A rare, life-threatening necrotising bacterial infection of the kidney parenchyma characterised by accumulation of gas within and around the kidney, produced by gas-forming bacteria (E. coli, Klebsiella pneumoniae, Proteus mirabilis) fermenting glucose under anaerobic conditions. Emphysematous pyelonephritis is a urological and infectious disease emergency with mortality rates of 21-43% without aggressive surgical intervention.",
+        "epidemiology": "Affects predominantly diabetics (90% of cases — poorly controlled blood glucose provides substrate for bacterial gas production); rare in non-diabetics (obstruction, immunosuppression); female:male ratio 3:1",
+        "organisms": "E. coli (most common — 70%), Klebsiella pneumoniae, Proteus, Pseudomonas, occasionally mixed organisms; fungal (Candida) EPN in severely immunocompromised",
+        "clinical_features": "Similar to severe pyelonephritis but typically more fulminant; may present in diabetic ketoacidosis; crepitus over kidney (rare but pathognomonic); gas on plain X-ray or CT scan",
+        "classification": "Class I (gas in collecting system only — lower mortality); Class II (gas in renal parenchyma); Class IIIA (gas in perinephric space); Class IIIB (gas in pararenal space); Class IV (bilateral EPN or solitary kidney — highest mortality)",
+        "diagnosis": "CT scan of abdomen (gold standard) — shows gas within kidney; X-ray may show renal gas (mottled appearance); avoid delay in diagnosis",
+        "management": "ICU admission; urgent percutaneous drainage (preferred over open surgery for classes I-II); nephrectomy for extensive disease or failure to respond; IV antibiotics covering anaerobes (piperacillin-tazobactam or imipenem); intensive diabetes management; ICU haemodynamic support",
+        "mortality": "21-43% overall; highest in bilateral disease, thrombocytopenia, acute renal failure, and septic shock at presentation"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Perinephric and Renal Abscess",
+        "description": "A collection of pus within the renal parenchyma (intrarenal abscess) or in the perinephric space between the renal capsule and Gerota's fascia (perinephric abscess). Abscesses develop when pyelonephritis fails to resolve and bacteria localise and wall off, or when haematogenous seeding from distant infection (skin, teeth, endocarditis) reaches the kidney. Perinephric abscess is a serious complication requiring percutaneous or surgical drainage in addition to antibiotics.",
+        "causes": "Ascending pyelonephritis failing to respond to antibiotics (most common); haematogenous spread from Staphylococcus aureus (skin, dental abscess, endocarditis); obstruction causing pus accumulation",
+        "organisms": "E. coli, Klebsiella, Proteus (ascending); Staphylococcus aureus (haematogenous — suggests distant focus of infection)",
+        "clinical_features": "Fever persisting despite 5-7 days of appropriate antibiotics; palpable flank mass (large abscess); CVA tenderness; systemically unwell despite treatment; characteristic 'spiking' fever pattern (temperature swinging from normal to high)",
+        "diagnosis": "Ultrasound (initial screen — may miss small abscesses); CT scan with contrast (gold standard — reveals collection, gas, and extent); guided drainage for culture and source control",
+        "management": "IV antibiotics (prolonged — 4-6 weeks total); percutaneous CT-guided or ultrasound-guided drainage (primary treatment for abscesses >3-4 cm); surgical drainage or partial nephrectomy if percutaneous drainage fails; correct underlying cause (relieve obstruction, treat distant foci)"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Chronic Pyelonephritis",
+        "description": "A chronic tubulointerstitial nephropathy resulting from repeated episodes of bacterial kidney infection causing progressive renal cortical scarring, parenchymal atrophy, and calyceal distortion. Unlike acute pyelonephritis, chronic pyelonephritis is not an active bacterial infection but rather the structural consequence of repeated or inadequately treated infections. It is a significant cause of chronic kidney disease and end-stage renal disease in both children and adults.",
+        "pathogenesis": "Repeated acute pyelonephritis → neutrophil-mediated inflammation → fibrosis and scarring of renal papillae and cortex → calyceal clubbing and cortical thinning → progressive loss of nephrons → CKD",
+        "common_associations": "Vesicoureteric reflux (VUR) — particularly in children (reflux nephropathy is the childhood equivalent); recurrent UTIs with obstruction; infected renal stones (struvite calculi); inadequately treated acute pyelonephritis",
+        "clinical_features": "Often asymptomatic until significant renal impairment occurs; may have recurrent UTIs; hypertension (very common — from renal scarring and renin-angiotensin system activation); proteinuria; elevated creatinine; anaemia of CKD; small shrunken kidneys with irregular cortical scarring on imaging",
+        "diagnosis": "Renal ultrasound (small scarred kidneys with irregular outline); DMSA scintigraphy (gold standard for renal scar detection — shows photon-deficient areas); MCUG (micturating cystourethrogram — detects VUR in children); renal biopsy rarely needed",
+        "management": "Treat and prevent recurrent UTIs; control hypertension (ACE inhibitors/ARBs — both antihypertensive and renoprotective); screen for and treat VUR (surgical or endoscopic ureteric reimplantation); monitor eGFR; nephrology referral for CKD management; renal replacement therapy (dialysis/transplant) if ESRD develops"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Pyonephrosis",
+        "description": "Infected hydronephrosis — a urological emergency in which the dilated obstructed renal collecting system is filled with purulent infected urine (pus). The combination of infection and obstruction prevents antibiotic penetration into the collecting system and promotes rapid renal destruction; bacteria and toxins enter the bloodstream causing rapidly progressive urosepsis that does not respond to antibiotics alone until the obstruction is relieved.",
+        "causes": "Obstructing ureteric stone (most common); ureteric stricture; tumour compressing ureter; PUJ (pelviureteric junction) obstruction with superimposed infection",
+        "clinical_features": "High fever, rigors, severe flank pain; systemically very unwell; signs of sepsis/shock; may have renal colic history; urine culture positive; kidney not decompressing with antibiotics alone",
+        "diagnosis": "Renal ultrasound (dilated collecting system with echogenic contents — pus); CT IVU (confirms obstruction and identifies cause); urine culture and blood cultures positive",
+        "management": "SURGICAL EMERGENCY — urgent ureteric drainage by retrograde ureteric stent (JJ stent insertion by urologist) or percutaneous nephrostomy (PCN) under ultrasound guidance; IV antibiotics are adjunctive — drainage is the definitive treatment; ICU support for septic shock; definitive management of obstruction cause after acute phase (ureteroscopy for stone, ureteric surgery for stricture)",
+        "critical_note": "Pyonephrosis is a SURGICAL EMERGENCY — antibiotics without drainage will fail; rapid progressive septic shock and death can occur without urological drainage intervention within hours"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Xanthogranulomatous Pyelonephritis (XGP)",
+        "description": "A rare and unusual form of chronic granulomatous renal infection in which normal renal parenchyma is replaced by lipid-laden macrophages (xanthoma cells) and suppurative necrosis. XGP mimics renal carcinoma on imaging and is often discovered incidentally or at surgery. Associated with chronic obstruction (usually by a large staghorn calculus), recurrent infections, and impaired immune response.",
+        "epidemiology": "Rare — fewer than 1 in 100,000; predominantly middle-aged women; strongly associated with Proteus mirabilis and E. coli infection with staghorn calculi; rare in children",
+        "clinical_features": "Chronic ill health; recurrent UTIs; flank mass; weight loss; low-grade fever; renal function often preserved in the contralateral kidney; characteristic CT appearance — enlarged kidney with multiple hypodense masses replacing parenchyma with calculi",
+        "management": "Almost always requires nephrectomy (simple or radical depending on extent); antibiotic preparation pre-operatively; laparoscopic or open surgical approach"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Acute Pyelonephritis",
+        "description": "Uncomplicated pyelonephritis in a healthy non-pregnant adult woman with classical symptoms but without features of systemic sepsis, severe vomiting, or complications. Manageable in the outpatient setting.",
+        "criteria": "Temperature <38.5°C or mild fever; mild to moderate loin pain; able to tolerate oral fluids and medications; no vomiting; haemodynamically stable (HR <100 bpm, BP normal); no complicating features (see TYPE-02); urine dipstick positive for infection",
+        "functional_impact": "Unwell but able to manage oral medication at home with close telephone follow-up",
+        "management": "Oral antibiotic therapy (ciprofloxacin or co-amoxiclav depending on local resistance patterns); adequate oral hydration (minimum 2-3L daily); paracetamol/ibuprofen for pain and fever; urine culture sent before antibiotics; GP review or urgent care clinic; telephone review at 24-48 hours; return to ED if not improving or worsening",
+        "criteria_for_upgrade": "Not improving within 48-72 hours of antibiotics; temperature rising above 39°C; vomiting preventing oral medication; new or worsening systemic symptoms; pregnancy identified; urine culture showing resistant organism"
+      },
+      {
+        "level": 2,
+        "name": "Moderate Acute Pyelonephritis",
+        "description": "Uncomplicated or early complicated pyelonephritis with significant systemic illness but without frank sepsis or shock. Requires hospital assessment, though may be managed with a short admission and step-down to oral antibiotics.",
+        "criteria": "Temperature 38.5-39.5°C; significant loin pain; nausea with or without vomiting; heart rate 100-110 bpm; blood pressure maintained; no confusion; no hypotension; mildly elevated inflammatory markers (CRP 50-100 mg/L, WBC 12,000-18,000); complicating features present (pregnancy, diabetes, male, elderly) but haemodynamically stable",
+        "functional_impact": "Unable to manage at home due to vomiting, high fever, or pain; requires IV fluids and parenteral antibiotics",
+        "management": "Hospital admission for IV fluids (to correct dehydration and maintain urine output); IV antibiotics (ceftriaxone or gentamicin) until afebrile for 24 hours, then step-down to oral; antiemetics (ondansetron); blood cultures (x2 sets) before antibiotics; urine MC&S before antibiotics; monitoring of temperature, urine output, and renal function; renal ultrasound to exclude obstruction; step-down to oral antibiotics when tolerating; discharge with oral antibiotics to complete course",
+        "criteria_for_upgrade": "HR >110 bpm; BP falling; confusion; worsening renal function; rising CRP/WBC despite 48h antibiotics; imaging showing abscess, obstruction, or gas"
+      },
+      {
+        "level": 3,
+        "name": "Severe Pyelonephritis / Urosepsis",
+        "description": "Pyelonephritis complicated by systemic inflammatory response syndrome (SIRS) meeting criteria for sepsis — a life-threatening organ dysfunction caused by a dysregulated host response to the kidney infection. The urinary tract is the most common source of Gram-negative bacteraemia. Urosepsis requires emergency assessment, aggressive IV antibiotics, IV fluid resuscitation, and ICU-level monitoring.",
+        "sepsis_criteria": "Temperature >39.5°C or <36°C (hypothermia is an ominous sign); Heart rate >110-120 bpm; Respiratory rate >20 breaths/min; WBC >18,000/mcL or <4,000/mcL (leucopenia — very serious); Altered mental status (new confusion); Raised serum lactate >2 mmol/L (tissue hypoperfusion); Organ dysfunction — rising creatinine (AKI), falling urine output, deranged LFTs; Positive blood cultures (20-30% of hospitalised pyelonephritis)",
+        "functional_impact": "Seriously unwell; emergency department or hospitalisation mandatory; high-dependency monitoring",
+        "management": "Emergency department assessment; 'Sepsis Six' — give high-flow oxygen; take blood cultures; give IV antibiotics within 1 hour of presentation; give IV fluid bolus (500mL crystalloid); measure serum lactate; monitor urine output (catheterise if needed); urgent renal ultrasound to exclude obstruction; broad-spectrum IV antibiotics (piperacillin-tazobactam or meropenem in high-resistance settings); haematology and microbiology input; ICU or HDU if haemodynamically unstable; source control (relieve obstruction — urology referral)",
+        "criteria_for_upgrade": "Systolic BP <90 mmHg despite IV fluids; lactate >4 mmol/L; multi-organ failure — SEPTIC SHOCK"
+      },
+      {
+        "level": 4,
+        "name": "Septic Shock / Critical — Life-Threatening",
+        "description": "The most severe manifestation of urosepsis — septic shock is defined as sepsis with haemodynamic failure: persistent hypotension (systolic BP <90 mmHg or MAP <65 mmHg) despite adequate IV fluid resuscitation, requiring vasopressor therapy to maintain adequate tissue perfusion. Urinary source septic shock carries 15-30% mortality. Multi-organ failure may include acute kidney injury, respiratory failure (ARDS), hepatic dysfunction, disseminated intravascular coagulation (DIC), and cardiac dysfunction.",
+        "examples": "Emphysematous pyelonephritis in diabetic with septic shock; pyonephrosis with obstructed infected kidney in elderly patient; perinephric abscess with bacteraemia and haemodynamic collapse; multidrug-resistant E. coli urosepsis in catheterised immunocompromised patient",
+        "management": "ICU admission; vasopressors (noradrenaline first-line) to maintain MAP >65 mmHg; IV broad-spectrum antibiotics covering MDR organisms (meropenem ± vancomycin); urgent source control — urology consultation for emergency drainage of obstruction or abscess; mechanical ventilation for respiratory failure; renal replacement therapy (CRRT) for severe AKI; haematology for DIC (FFP, platelets); continuous monitoring — arterial line, central venous line, urinary catheter; serial lactate measurements; strict fluid balance",
+        "mortality": "15-30% in septic shock from urinary source; higher with delayed antibiotics, obstruction not relieved, ESBL/MDR organisms, and elderly with multiple comorbidities"
+      }
+    ],
+
+    "causes": {
+      "causative_organisms_overview": {
+        "bacteria_ascending": "Responsible for the vast majority of pyelonephritis cases (>95%); bacteria colonise the periurethral area and ascend via the urethra to bladder, then to kidney; E. coli is predominant in 80-85% of community-acquired cases",
+        "bacteria_haematogenous": "Seeding of kidney from bacteraemia — particularly Staphylococcus aureus from skin infection, dental abscess, or endocarditis; accounts for 5-10% of cases",
+        "mdr_and_esbl": "Extended-spectrum beta-lactamase (ESBL) producing Enterobacteriaceae increasingly prevalent — particularly in India, Southeast Asia, and hospital-acquired infections; resistant to most oral antibiotics including cephalosporins and fluoroquinolones; requires carbapenem treatment (ertapenem, meropenem)",
+        "fungi": "Candida species — increasingly important in diabetics, immunocompromised, catheterised patients, and those on prolonged antibiotics; diagnosed by positive urine fungal culture"
+      },
+      "major_causative_organisms": [
+        {
+          "organism": "Escherichia coli (E. coli)",
+          "proportion": "80-85% of community-acquired pyelonephritis",
+          "virulence_factors": "P-fimbriae (type 1 and P pili) — allows adhesion to uroepithelial cells; haemolysin (damages renal tubular cells); aerobactin (iron acquisition in kidney); capsular K antigen (resists phagocytosis); type 1 fimbriae bind to bladder urothelium. Uropathogenic E. coli (UPEC) strains are distinct from bowel E. coli.",
+          "resistance_concern": "ESBL-producing E. coli (CTX-M type) is a major and rapidly growing problem — resistant to cephalosporins, co-amoxiclav, and often fluoroquinolones; sensitive only to carbapenems and nitrofurantoin/fosfomycin (only for cystitis — NOT pyelonephritis); increasingly prevalent in India (30-50% of UTI isolates in some centres)",
+          "treatment": "Susceptible strains: ciprofloxacin or co-trimoxazole; ESBL: ertapenem IV or meropenem IV"
+        },
+        {
+          "organism": "Klebsiella pneumoniae",
+          "proportion": "5-10% of pyelonephritis",
+          "features": "Produces urease; associated with gas-forming infections (emphysematous pyelonephritis); can produce struvite/staghorn calculi; hypervirulent Klebsiella (hvKP) — liver abscess plus septic emboli to kidney (Klebsiella liver abscess syndrome — Asian populations)",
+          "resistance_concern": "Carbapenem-resistant Klebsiella pneumoniae (CRKP) producing KPC, NDM, or OXA-48 — pan-drug resistant strains are emerging; major hospital-acquired pathogen",
+          "treatment": "Susceptible: ceftriaxone; ESBL: carbapenems; CRKP: colistin, fosfomycin combinations (limited options)"
+        },
+        {
+          "organism": "Proteus mirabilis",
+          "proportion": "5% of community-acquired; higher in catheterised patients and urinary stones",
+          "features": "Produces urease — splits urea to ammonia and CO2 — alkalinises urine (pH >7) → precipitates magnesium ammonium phosphate (struvite stones / staghorn calculi); associated with recurrent UTIs and chronic obstructive pyelonephritis; produces NH3 that is directly nephrotoxic; flagella and swarming motility facilitate ascending infection",
+          "treatment": "Co-amoxiclav; cephalosporins; resistance to nitrofurantoin; treat associated stones (urease-splitting stone removal essential to eradicate infection)"
+        },
+        {
+          "organism": "Enterococcus faecalis / faecium",
+          "proportion": "5-10%; common in nosocomial (hospital-acquired) UTI and in urological patients",
+          "features": "NOT covered by cephalosporins — important gap; amoxicillin-susceptible in most community strains; VRE (vancomycin-resistant enterococcus) is emerging nosocomial concern",
+          "treatment": "Amoxicillin/ampicillin for susceptible strains; vancomycin for penicillin-allergic; linezolid for VRE"
+        },
+        {
+          "organism": "Staphylococcus saprophyticus",
+          "proportion": "5-15% of UTI in sexually active young women specifically; less common than in cystitis",
+          "features": "Urease-producing; naturally resistant to nalidixic acid; found predominantly in young sexually active women (associated with sexual activity)",
+          "treatment": "Trimethoprim; co-amoxiclav; cefalexin; fluoroquinolones"
+        },
+        {
+          "organism": "Pseudomonas aeruginosa",
+          "proportion": "Uncommon in community; common in hospital-acquired, catheter-associated, and recurrent UTI in structural abnormalities",
+          "features": "Intrinsically resistant to most first-line antibiotics; requires anti-pseudomonal cover (piperacillin-tazobactam, ceftazidime, ciprofloxacin — if susceptible, meropenem)",
+          "treatment": "Piperacillin-tazobactam; ceftazidime; ciprofloxacin (if susceptible); meropenem for MDR strains; combination therapy for severe infection"
+        },
+        {
+          "organism": "Group B Streptococcus (Streptococcus agalactiae)",
+          "proportion": "Important specifically in pregnancy and elderly diabetics",
+          "features": "Normal lower GI and vaginal flora — becomes pathogenic in pregnancy; can cause maternal pyelonephritis and neonatal sepsis/meningitis if untreated in pregnancy",
+          "treatment": "Amoxicillin/penicillin; cephalosporins"
+        },
+        {
+          "organism": "Candida species (fungal pyelonephritis)",
+          "proportion": "Uncommon; seen in diabetics, immunocompromised, catheterised, post-antibiotics, ICU patients",
+          "features": "Yeast forms in urine; can form fungal balls obstructing collecting system; diagnose by urine microscopy (budding yeast, pseudohyphae) and fungal culture",
+          "treatment": "Fluconazole (most Candida albicans); voriconazole; amphotericin B for fluconazole-resistant species"
+        }
+      ],
+      "routes_of_infection": [
+        {
+          "route": "Ascending Infection (Most Common — >95% of Cases)",
+          "description": "Bacteria from the periurethral area (normal bowel flora contaminating the perineum) colonise the urethra → ascend to the bladder (cystitis) → ascend via the ureter → reach the renal pelvis and parenchyma (pyelonephritis). The relatively short female urethra (3-4 cm vs male 20 cm) explains the dramatically higher incidence of UTI in women. Uropathogenic E. coli have specific virulence factors (pili) enabling them to adhere to urothelium and resist washout by urinary flow.",
+          "facilitating_factors": ["Sexual intercourse — 'milks' bacteria into the urethra (honeymoon cystitis)", "Use of spermicides and diaphragm — alters vaginal flora (kills Lactobacillus — the protective flora — and favours E. coli colonisation)", "Urinary catheterisation — direct pathway for bacteria to enter bladder", "Constipation — increases periurethral bacterial load", "Incomplete bladder emptying — stasis allows bacterial multiplication", "Urinary tract obstruction — impairs clearance of bacteria by urine flow"]
+        },
+        {
+          "route": "Haematogenous Spread (Bloodborne — 5%)",
+          "description": "Bacteria from a distant primary focus of infection seed the kidney via the bloodstream. Less common than ascending route. The kidney's rich blood supply makes it vulnerable to haematogenous seeding during bacteraemia.",
+          "sources": ["Staphylococcus aureus bacteraemia from skin infection, wound infection, or endocarditis", "Mycobacterium tuberculosis (renal TB — haematogenous spread from primary pulmonary TB)", "Salmonella typhi bacteraemia seeding to kidney", "Fungaemia — Candida in immunocompromised or IV drug users"]
+        },
+        {
+          "route": "Lymphatic and Direct Extension (Rare)",
+          "description": "Direct spread from adjacent infected structures — e.g., ascending cholangitis or appendiceal abscess tracking to perinephric space; extremely uncommon."
+        }
+      ],
+      "risk_factors": [
+        "Female sex — short urethra (3-4 cm vs 20 cm in males); proximity of urethra to anus and vagina; post-menopausal oestrogen deficiency reduces uroepithelial Lactobacillus protection",
+        "Sexual activity — especially new or frequent partner; intercourse 'milks' bacteria into urethra; diaphragm and spermicide use significantly increase risk",
+        "Prior UTI history — strongest single risk factor for recurrent UTIs; previous pyelonephritis significantly increases risk of further episodes",
+        "Pregnancy — ureteral dilation from progesterone and mechanical compression reduce urine flow; immunological changes; asymptomatic bacteriuria in pregnancy has 30% progression to pyelonephritis if untreated",
+        "Diabetes mellitus — impaired neutrophil chemotaxis, adherence, and killing; glucosuria provides bacterial nutrient; autonomic neuropathy impairs bladder emptying; high risk of emphysematous pyelonephritis",
+        "Urinary tract obstruction — kidney or ureteric stones (nephrolithiasis), strictures, BPH, pelvic masses, retroperitoneal fibrosis; obstruction impairs urine clearance of bacteria",
+        "Vesicoureteric reflux (VUR) — particularly in children and young women; allows infected bladder urine to reach kidney",
+        "Urinary catheterisation — indwelling catheters cause CAUTI within 24-72 hours; risk increases 5-10% per day of catheter in situ",
+        "Urological instrumentation — cystoscopy, ureteroscopy, nephrostomy, lithotripsy; disrupts protective barriers",
+        "Renal and urinary tract structural abnormalities — horseshoe kidney, duplex collecting system, polycystic kidneys, ureterocele",
+        "Immunosuppression — HIV/AIDS (CD4 <200), post-transplant immunosuppressants, chemotherapy, high-dose corticosteroids, biologic therapies",
+        "Neurogenic bladder — spinal cord injury, MS, diabetic cystopathy, post-pelvic surgery; incomplete emptying and catheter use",
+        "Recent antibiotic use — disrupts vaginal and periurethral Lactobacillus flora; selects resistant organisms",
+        "Male with any UTI — must investigate underlying cause (BPH, prostatitis, structural abnormality); UTI is not 'normal' in men",
+        "Constipation — increases periurethral faecal colonisation; particularly in children",
+        "Post-menopausal status — oestrogen deficiency causes atrophy of vaginal and periurethral mucosa; loss of protective Lactobacillus flora",
+        "Blood group P1 — P-fimbriated E. coli bind P blood group antigen on uroepithelium; genetic susceptibility to recurrent UTI"
+      ]
+    },
+
+    "symptoms": {
+      "overview": "Pyelonephritis presents as a systemic febrile illness with upper urinary tract involvement — distinguishing it from uncomplicated lower UTI (cystitis) which causes only bladder irritation without systemic features. The classic triad is fever/rigors + loin pain + lower urinary symptoms (dysuria, frequency). However, not all three components are always present, and elderly patients may present atypically with confusion, vague malaise, or falls without localising urinary symptoms. Rapid clinical deterioration to sepsis can occur within hours in complicated cases.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-801",
+          "name": "Fever and Rigors",
+          "description": "High fever (typically 38.5-40°C) is the hallmark of pyelonephritis and distinguishes it from cystitis (which does not cause significant fever). Onset is often abrupt — patients may describe being well and then feeling suddenly unwell within hours. Rigors (uncontrollable shivering episodes with extreme chills, lasting 15-30 minutes, followed by drenching sweats) indicate bacteraemia — bacteria have entered the bloodstream from the infected kidney. Rigors are an important warning sign of serious systemic infection and mandate blood cultures and IV antibiotics.",
+          "severity": "Moderate to Severe",
+          "onset": "Acute — often within hours; high fever and rigors may precede urinary symptoms",
+          "clinical_importance": "Fever persisting beyond 72 hours of appropriate antibiotics suggests: wrong antibiotic, resistant organism, abscess formation, obstruction, or alternative diagnosis — MUST investigate with imaging"
+        },
+        {
+          "id": "SYM-802",
+          "name": "Loin Pain / Flank Pain (Costovertebral Angle Tenderness — CVA Tenderness)",
+          "description": "Pain and tenderness in the loin (flank region — between the 12th rib and the iliac crest, lateral to the paraspinal muscles). Characteristically unilateral, though bilateral infection occurs. The pain may radiate anteriorly to the ipsilateral iliac fossa or groin. On physical examination, CVA tenderness (costovertebral angle tenderness) — elicited by gentle percussion of the costovertebral angle — is the most important clinical sign of pyelonephritis; a patient who recoils from this sign almost certainly has upper tract involvement. Deep palpation may reveal a tender, enlarged kidney.",
+          "severity": "Mild to Severe — can be debilitating",
+          "onset": "Often comes on over hours to a day; can be sudden in pyonephrosis or renal abscess",
+          "note": "Distinguish from musculoskeletal back pain (no fever, no urinary symptoms, related to movement/position) and renal colic (colicky pain radiating to groin with haematuria, no high fever unless infected stone)"
+        },
+        {
+          "id": "SYM-803",
+          "name": "Lower Urinary Tract Symptoms (LUTS) — Dysuria, Frequency, Urgency",
+          "description": "Symptoms of bladder irritation — burning pain on passing urine (dysuria), needing to urinate more frequently than normal (frequency), and urgent inability to defer voiding (urgency) — are present in approximately 60-70% of pyelonephritis cases. These reflect coexisting or antecedent cystitis (lower UTI that has ascended to involve the kidney). Their presence in combination with fever and loin pain strongly supports the diagnosis. However, LUTS may be absent in 30-40% of patients with pyelonephritis — particularly in those with haematogenous infection, the elderly, and catheterised patients.",
+          "severity": "Mild to Moderate",
+          "onset": "LUTS often precede the onset of fever and loin pain by 24-48 hours — this timeline suggests ascending spread"
+        },
+        {
+          "id": "SYM-804",
+          "name": "Nausea, Vomiting, and Anorexia",
+          "description": "Nausea and vomiting occur in approximately 50-70% of patients with pyelonephritis — caused by both the systemic inflammatory response (cytokine-mediated) and sympathetic nervous system activation from renal capsule stretching. Vomiting preventing adequate oral fluid intake and medication administration is a key indication for hospital admission and IV therapy. Anorexia (loss of appetite) is universal in moderate-to-severe disease.",
+          "severity": "Mild to Severe",
+          "clinical_importance": "Persistent vomiting preventing oral antibiotics and fluids = mandatory hospital admission for IV therapy"
+        },
+        {
+          "id": "SYM-805",
+          "name": "Systemic Sepsis Features",
+          "description": "In severe pyelonephritis progressing to urosepsis, systemic features of sepsis develop: tachycardia (heart rate >100 bpm), tachypnoea (respiratory rate >20/min), hypotension (systolic BP <90 mmHg in septic shock), confusion or altered consciousness (reduced cerebral perfusion and cytokine-mediated encephalopathy), cold clammy peripheries (peripheral vasoconstriction), and in extreme cases mottled skin and central cyanosis (cardiovascular collapse).",
+          "severity": "Severe to Life-threatening",
+          "onset": "Can develop rapidly — within hours of initial presentation; particularly in elderly and diabetic patients who may decompensate quickly",
+          "clinical_importance": "ANY of: confusion, heart rate >120, SBP <90, RR >25, or temperature >40°C or <36°C = SEPSIS — immediate IV antibiotics and resuscitation required"
+        },
+        {
+          "id": "SYM-806",
+          "name": "Cloudy/Offensive Urine and Haematuria",
+          "description": "Cloudy urine (pyuria — white blood cells in urine making it turbid) and offensive/foul-smelling urine from bacterial metabolism are very common presenting features. Haematuria (blood in urine) occurs in approximately 40% of cases — typically microscopic (detected on dipstick) though gross haematuria (visibly red or pink urine) is also seen. Haematuria with flank pain and fever distinguishes infected stones (calculi) from simple pyelonephritis — must be differentiated by imaging.",
+          "severity": "Mild",
+          "onset": "Often the first symptom noticed by patients"
+        }
+      ],
+      "secondary_symptoms": [
+        "Headache — from fever and systemic inflammatory response; dehydration-related",
+        "Generalised myalgia (muscle aches) — from systemic cytokine release (IL-6, TNF-alpha, IL-1)",
+        "Malaise and fatigue — universal with pyelonephritis; can persist for 2-4 weeks after infection resolves",
+        "Abdominal pain — anterior radiation of loin pain; may mimic appendicitis (right-sided) or ovarian pathology in women; ileus in severe sepsis",
+        "Urinary frequency at night (nocturia) — bladder irritation from ongoing infection",
+        "Lower abdominal discomfort — suprapubic pain from coexisting cystitis",
+        "Dark concentrated urine — from reduced fluid intake and high insensible losses from fever",
+        "Joint pains and arthralgia — systemic inflammatory response",
+        "Low back pain — from renal involvement and referred pain from kidney capsule distension",
+        "Hypotension (postural dizziness) — from dehydration; sinister if at rest (sepsis)"
+      ],
+      "atypical_presentations": [
+        {
+          "population": "Elderly patients (over 65 years)",
+          "features": "Frequently atypical — may have NO fever (immunosenescence impairs fever response), NO loin pain, and NO dysuria; presents instead as: confusion and acute delirium, falls, reduced mobility, anorexia and general malaise, urinary incontinence (new or worsening), hypothermia (very serious), or vague deterioration in function. Pyelonephritis is one of the most common causes of acute confusion (delirium) in the elderly — always check urinalysis and MSU in any acutely confused elderly patient",
+          "warning": "Elderly patients with pyelonephritis may appear deceptively well despite severe systemic infection — do not be falsely reassured by absence of fever"
+        },
+        {
+          "population": "Neonates and young infants (under 2 years)",
+          "features": "Non-specific — fever (often the only sign), poor feeding, irritability, weight loss, vomiting, jaundice (neonates), failure to thrive; UTI and pyelonephritis should be suspected in any febrile infant without obvious source — urine culture essential in all febrile infants"
+        },
+        {
+          "population": "Children (2-12 years)",
+          "features": "Abdominal pain (often periumbilical — not always flank pain), fever, vomiting, dysuria/frequency may be absent in younger children; bed-wetting (secondary enuresis) may be presenting symptom; rule out vesicoureteric reflux with MCUG imaging after first UTI in boys or second UTI in girls"
+        },
+        {
+          "population": "Pregnant women",
+          "features": "Typically symptomatic — flank pain and fever; however, may have asymptomatic bacteriuria which has a 30% risk of progressing to pyelonephritis if untreated; any UTI symptoms in pregnancy must be assessed urgently; right-sided pain predominates (uterus displaces right ureter); Group B Streptococcus is a particularly important pathogen"
+        },
+        {
+          "population": "Immunocompromised patients",
+          "features": "Attenuated fever response; lack of classical symptoms; rapid progression to sepsis; unusual organisms (fungal, Mycobacterium, CMV); may be afebrile despite bacteraemia"
+        },
+        {
+          "population": "Catheterised patients",
+          "features": "Urine always cloudy and bacteriuric with catheter — bacteriuria alone does NOT mean infection; only treat CAUTI if symptomatic (fever, new confusion, loin pain, haemodynamic instability) or pre-operatively; asymptomatic bacteriuria in catheterised patients should NOT be treated with antibiotics (promotes resistance)"
+        }
+      ],
+      "warning_signs_of_serious_disease": [
+        "Rigors (uncontrollable violent shivering) — bacteraemia; must have blood cultures and IV antibiotics immediately",
+        "Confusion or altered mental status — urosepsis with cerebral involvement; EMERGENCY",
+        "Heart rate above 110-120 bpm with hypotension or near-fainting — sepsis/septic shock",
+        "Temperature above 40°C or below 36°C (hypothermia — very ominous sign) — severe sepsis",
+        "No urine output or less than 0.5 mL/kg/hour despite adequate fluids — AKI or obstruction",
+        "Fever not improving or worsening after 48-72 hours of appropriate antibiotics — consider abscess, obstruction, resistant organism — URGENT IMAGING",
+        "Flank pain radiating to groin with haematuria — may indicate obstructing stone with infection; pyonephrosis risk — URGENT UROLOGY REFERRAL",
+        "Palpable tender flank mass — possible renal or perinephric abscess",
+        "Diabetic patient presenting with severe pyelonephritis features — high risk emphysematous pyelonephritis; CT scan urgently",
+        "Pregnant woman with any UTI symptoms — urgent assessment; high risk of preterm labour and maternal sepsis"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Duration of symptoms — fever onset, loin pain onset, urinary symptoms; rate of progression",
+        "Urinary symptoms — dysuria (burning on urination), urinary frequency, urgency, nocturia, haematuria, cloudy or offensive urine",
+        "Systemic symptoms — fever severity, rigors, nausea/vomiting, anorexia, confusion, back pain",
+        "Previous UTI history — frequency, which organisms, which antibiotics used, response to treatment; prior pyelonephritis episodes",
+        "Renal stone history — previous nephrolithiasis, stone passage, lithotripsy; colicky flank pain radiating to groin",
+        "Urological history — previous urological surgery, catheterisation, cystoscopy, ureteroscopy, nephrostomy; structural abnormalities known",
+        "Pregnancy status — last menstrual period; urine pregnancy test in all women of reproductive age; specific risk in all trimesters",
+        "Sexual history — recent sexual activity; new partner; contraceptive method (diaphragm and spermicides increase risk; oral contraceptive pill does not increase risk); risk of sexually transmitted infection (co-infection with Chlamydia, Gonorrhoea)",
+        "Diabetes — known diabetes, blood glucose control, HbA1c; high risk of emphysematous pyelonephritis",
+        "Immunosuppression — HIV status, organ transplant, chemotherapy, high-dose steroids, biologic therapies",
+        "Recent hospitalisation or healthcare exposure — risk of MDR/ESBL organism",
+        "Recent antibiotic use — which antibiotics, duration, for what indication; prior ESBL isolate",
+        "Fluid intake — adequate hydration; history of dehydration",
+        "Catheter in situ — type, duration, last change",
+        "Family history — polycystic kidney disease; VUR; recurrent UTIs",
+        "Current medications — immunosuppressants, steroids, chemotherapy, diuretics; anticoagulants (relevant for procedural risk)"
+      ],
+      "physical_examination": [
+        "Vital signs — temperature (fever >38°C significant; hypothermia <36°C is very serious — sepsis); heart rate (tachycardia >100 bpm); blood pressure (hypotension <90/60 = shock); respiratory rate (tachypnoea >20/min = sepsis); oxygen saturation; urine output assessment",
+        "General appearance — does the patient look unwell? (toxic vs comfortable); pallor; diaphoresis (sweating); jaundice (rare — sepsis-related liver dysfunction)",
+        "Hydration status — skin turgor, mucous membranes, capillary refill time, blood pressure lying and standing (postural hypotension indicates dehydration)",
+        "Abdominal examination — inspection for distension; auscultation (bowel sounds); palpation for anterior renal tenderness, suprapubic tenderness (cystitis), flank mass (abscess); guarding or rigidity (rare — suggests peritoneal involvement from rupture)",
+        "Costovertebral angle (CVA) tenderness — the key physical sign of pyelonephritis; performed by placing one hand flat over the costovertebral angle (junction of 12th rib and paraspinal muscles) and striking it with a closed fist (kidney punch test); sharp tender recoil = CVA tenderness positive — highly suggestive of pyelonephritis; must be bilateral to compare sides",
+        "Palpation of kidneys — bimanual ballottement of each kidney; enlarged or tender kidney; palpable perinephric mass",
+        "External genitalia examination where appropriate — discharge suggesting STI; vulvovaginitis in women; prostate tenderness on rectal examination in men (prostatitis — bimanual rectal examination; if prostatitis suspected do NOT vigourously massage prostate — risks bacteraemia)",
+        "Neurological assessment — confusion, altered consciousness, signs of meningism (rare — haematogenous meningitis with E. coli in neonates)",
+        "Skin — peripheral cyanosis, mottling (signs of poor perfusion in septic shock); no specific rash in pyelonephritis",
+        "Lower limb oedema — relevant to overall fluid status and CKD assessment"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Urine Dipstick (Urinalysis)",
+          "type": "Point-of-Care / Biochemical",
+          "description": "The immediate, rapid, and most important initial investigation. Detects chemical markers of urinary infection within 60-90 seconds. Leucocyte esterase (released by white blood cells in urine) and nitrites (produced by Gram-negative bacteria reducing dietary nitrates to nitrites via nitrate reductase) are the key markers. Combined positive leucocyte esterase AND nitrites has approximately 90% sensitivity for significant bacteriuria. A negative dipstick (both nitrites and leucocyte esterase negative) makes significant UTI unlikely in uncomplicated cases.",
+          "purpose": "Rapid bedside detection of pyuria and bacteriuria; guide need for urine culture; triage severity",
+          "key_metric": "Leucocyte esterase ++ or +++ = significant pyuria; Nitrites positive = Gram-negative bacteriuria (E. coli, Klebsiella, Proteus); Blood: haematuria (common); Protein: from inflammation and renal involvement",
+          "limitations": "False negatives with: Gram-positive organisms (Enterococcus, Staph saprophyticus — do not reduce nitrates to nitrites — negative nitrites despite infection); very dilute urine (<first morning void); very recent UTI onset (bacteria not enough time to reduce nitrates); false positives: contaminated samples; vaginal leucocytes; dipstick deterioration; NEVER treat solely on a positive dipstick without culture if symptoms are atypical"
+        },
+        {
+          "test_name": "Midstream Urine (MSU) Culture and Sensitivity — Urine MC&S",
+          "type": "Microbiological — Culture",
+          "description": "The gold standard investigation for urinary tract infection. A midstream clean-catch urine sample is sent for microscopy, culture, and sensitivity testing. Microscopy: WBCs (>5-10/HPF = pyuria); red blood cells; bacteria; WBC CASTS (clumps of WBCs shaped by the renal tubule — PATHOGNOMONIC of pyelonephritis vs simple cystitis — indicates kidney involvement). Culture: identifies causative organism after incubation for 24-48 hours. Sensitivity: determines antibiotic susceptibilities to guide targeted treatment.",
+          "purpose": "Confirm infection; identify specific causative organism; determine antibiotic susceptibility; guide antibiotic choice (targeted vs empirical); detect resistant organisms (ESBL, CRKP)",
+          "key_metric": "Significant bacteriuria: >10^5 colony-forming units (CFU) per mL in a clean-catch midstream specimen; >10^3 CFU/mL in catheter samples; WBC casts on microscopy = pyelonephritis; Sensitivity results guide antibiotic choice (susceptible S, intermediate I, resistant R)",
+          "collection_technique": "MSU — midstream clean-catch technique: women: clean labia with antiseptic wipe, pass initial urine stream, collect mid-portion into sterile container; men: retract foreskin if uncircumcised, clean glans, collect midstream portion. Catheter specimen: aspirate from sampling port using sterile needle and syringe (NOT from drainage bag). Process within 2 hours of collection or refrigerate at 4°C.",
+          "timing": "MUST BE SENT BEFORE ANTIBIOTICS — culture yields drop significantly after even one dose of antibiotics; if antibiotics must start immediately (severe sepsis), draw blood cultures and catheter sample simultaneously, then start antibiotics within 1 hour",
+          "note": "Results take 24-72 hours — empirical antibiotic therapy is started immediately based on clinical presentation and local resistance patterns, then adjusted (de-escalated or escalated) when sensitivity results available"
+        },
+        {
+          "test_name": "Urine Microscopy — WBC Casts",
+          "type": "Microbiological — Microscopy",
+          "description": "Phase-contrast or standard light microscopy of freshly centrifuged urine. WBC casts (cylindrical structures formed when WBCs are trapped in protein matrix within the renal tubular lumen) are PATHOGNOMONIC of renal parenchymal inflammation — distinguishing pyelonephritis from cystitis. Their presence in a febrile patient with loin pain confirms upper urinary tract involvement.",
+          "purpose": "Confirm pyelonephritis vs cystitis; detect RBC casts (renal glomerular bleeding vs lower tract); identify bacteria and yeast",
+          "key_metric": "WBC casts = pyelonephritis (pathognomonic); RBC casts = glomerulonephritis; granular/waxy casts = chronic kidney disease; >10 WBC/hpf = significant pyuria"
+        },
+        {
+          "test_name": "Blood Cultures (x2 Sets)",
+          "type": "Microbiological — Blood Culture",
+          "description": "Two sets of blood cultures (aerobic and anaerobic) taken from different venepuncture sites before initiating antibiotics. Approximately 20-30% of hospitalised pyelonephritis patients are bacteraemic. Blood cultures are essential for: confirming the causative organism (may not grow in urine if patient already on antibiotics); detecting bacteraemia that changes management; establishing antibiotic sensitivities; public health surveillance of resistant organisms.",
+          "purpose": "Detect bacteraemia; guide targeted antibiotic therapy; detect MDR/ESBL organisms; public health surveillance",
+          "key_metric": "Positive in 20-30% of hospitalised pyelonephritis; Gram-negative bacteraemia (E. coli, Klebsiella) most common; result in 24-72 hours",
+          "indication": "ALL hospitalised pyelonephritis; rigors; fever >39°C; signs of sepsis; immunocompromised patients; diabetics; elderly with suspected pyelonephritis",
+          "note": "Take blood cultures BEFORE antibiotics — cultures are often negative if even one dose of antibiotics given first; in septic shock, blood cultures should be drawn within minutes of presentation before antibiotic administration"
+        },
+        {
+          "test_name": "Full Blood Count (FBC) / Complete Blood Count",
+          "type": "Blood — Haematological",
+          "description": "Elevated white blood cell count (leucocytosis) with neutrophilia confirms significant systemic bacterial infection. The WBC count in pyelonephritis typically ranges from 12,000-25,000/mcL with neutrophil predominance. Severe leucopenia (WBC <4,000/mcL) in pyelonephritis is an ominous sign suggesting severe sepsis with bone marrow suppression or very high bacterial load. Anaemia (normochromic normocytic — of chronic disease) may be present in recurrent or chronic disease.",
+          "purpose": "Confirm bacterial infection severity; guide antibiotic and admission decisions; detect leucopenia (sepsis severity marker); baseline for monitoring",
+          "key_metric": "WBC >12,000 with neutrophilia (>75% neutrophils, band forms) = significant bacterial infection; WBC >20,000 = severe infection; WBC <4,000 = leucopenia — serious sign of severe sepsis; platelets falling = DIC in septic shock"
+        },
+        {
+          "test_name": "C-Reactive Protein (CRP) and Procalcitonin",
+          "type": "Blood — Inflammatory Markers",
+          "description": "CRP is a hepatic acute phase reactant — rises within 6-12 hours of infection onset, peaks at 24-48 hours. In pyelonephritis, CRP is typically markedly elevated (>100 mg/L) and distinguishes upper UTI from cystitis (CRP usually <10-20 mg/L in cystitis). Serial CRP measurements monitor treatment response — falling CRP at 48-72 hours confirms clinical improvement. Procalcitonin (PCT) is more specific for bacterial sepsis — rises rapidly in bacteraemia and urosepsis; PCT >2 ng/mL indicates systemic bacterial infection; PCT-guided antibiotic stewardship reduces unnecessary antibiotic courses.",
+          "purpose": "Confirm significant upper tract infection (vs cystitis); monitor treatment response; guide antibiotic stewardship; predict bacteraemia risk",
+          "key_metric": "CRP <20: likely cystitis; CRP 50-100: significant upper UTI; CRP >100: severe infection likely; PCT >0.5 ng/mL: suggests bacteraemia; PCT >2 ng/mL: bacterial sepsis very likely"
+        },
+        {
+          "test_name": "Serum Electrolytes, Renal Function, Creatinine (U&E)",
+          "type": "Blood — Biochemical",
+          "description": "Essential in all hospitalised patients with pyelonephritis. Acute kidney injury (AKI) occurs in 10-20% of hospitalised pyelonephritis — from a combination of cytokine-mediated renal vasoconstriction, direct bacterial nephrotoxicity, and sepsis-related hypoperfusion. Rising serum creatinine and falling eGFR indicate AKI. Electrolyte disturbances (hypokalaemia, hyponatraemia) occur from vomiting, reduced intake, and sepsis-mediated fluid shifts. Hyperkalaemia indicates severe AKI — risk of fatal arrhythmia.",
+          "purpose": "Detect AKI (rising creatinine); assess severity of renal impairment; guide antibiotic dosing (renally excreted antibiotics require dose adjustment in AKI); detect electrolyte imbalances; guide IV fluid composition and volume",
+          "key_metric": "Creatinine rising above baseline = AKI; creatinine >200 mcmol/L = significant AKI requiring renal monitoring; hyperkalaemia >6.5 mmol/L = emergency"
+        },
+        {
+          "test_name": "Blood Glucose and HbA1c",
+          "type": "Blood — Biochemical",
+          "description": "Blood glucose must be measured in all patients with pyelonephritis — undiagnosed diabetes is common in patients presenting with pyelonephritis (UTI may be the presentation of new diabetes). Hyperglycaemia impairs neutrophil function and promotes bacterial growth. Diabetic ketoacidosis (DKA) can be precipitated by pyelonephritis in diabetics — glucose and ketone measurement is essential in sick diabetics. HbA1c provides medium-term glucose control assessment and predicts risk of recurrent infections.",
+          "purpose": "Screen for new diabetes; assess glycaemic control (risk factor for recurrence and severe disease); detect DKA; guide management of diabetic pyelonephritis",
+          "key_metric": "Blood glucose >11.1 mmol/L (random) or >7.0 mmol/L (fasting) = diabetes; HbA1c >48 mmol/mol (6.5%) = diabetes diagnosis; ketones positive = DKA risk"
+        },
+        {
+          "test_name": "Serum Lactate",
+          "type": "Blood — Biochemical",
+          "description": "Serum lactate is a key biomarker of tissue hypoperfusion in sepsis — elevated when oxygen delivery to tissues is insufficient (anaerobic metabolism produces lactic acid). Serum lactate is used in the Sepsis-3 definition and in the 'Sepsis Six' resuscitation bundle. In pyelonephritis, elevated lactate indicates significant tissue hypoperfusion even when blood pressure appears relatively normal (cryptic shock). Serial lactate measurements guide fluid resuscitation response.",
+          "purpose": "Screen for occult sepsis and tissue hypoperfusion; guide resuscitation in sepsis; predict mortality risk",
+          "key_metric": "Lactate <2 mmol/L: normal; Lactate 2-4 mmol/L: elevated — significant hypoperfusion; Lactate >4 mmol/L: severe tissue hypoperfusion / septic shock — high mortality risk"
+        },
+        {
+          "test_name": "Urine Pregnancy Test (Urine hCG)",
+          "type": "Biochemical — Immunoassay",
+          "description": "A urine or blood pregnancy test must be performed in ALL women of reproductive age presenting with pyelonephritis — pregnancy changes management significantly (antibiotic choice, admission thresholds, imaging approach, dose modifications). Pyelonephritis in pregnancy is a medical emergency requiring hospitalisation in most cases.",
+          "purpose": "Detect pregnancy before antibiotic prescribing (antibiotic safety differs in pregnancy); alter management threshold; guide imaging decisions",
+          "key_metric": "Positive hCG = pregnancy; ensure pregnancy-safe antibiotic (amoxicillin-clavulanate, cefalexin, ceftriaxone — safe; avoid fluoroquinolones, aminoglycosides in first/second trimester; avoid trimethoprim in first trimester, nitrofurantoin at term)"
+        },
+        {
+          "test_name": "Renal Ultrasound",
+          "type": "Imaging",
+          "description": "The first-line imaging investigation in pyelonephritis — safe (no radiation), widely available, rapid, and relatively inexpensive. Ultrasound can identify: hydronephrosis/hydroureter (obstruction — dilated collecting system), renal calculi (echogenic foci with posterior acoustic shadowing), renal or perinephric abscess (hypoechoic collection), enlarged kidney (acute inflammation), impaired corticomedullary differentiation, and complications such as pyonephrosis. Ultrasound should be performed urgently in all hospitalised patients with pyelonephritis and in any patient not responding to 48-72 hours of appropriate antibiotics.",
+          "purpose": "Exclude obstruction (urgent — obstruction with infection = emergency); detect abscess; identify calculi; assess renal size and parenchyma; guide percutaneous drainage",
+          "key_metric": "Dilated collecting system (pelviectasis, hydroureter) = obstruction — URGENT UROLOGY REFERRAL; focal hypoechoic area = abscess; echogenic foci with shadowing = calculus; enlarged oedematous kidney = acute pyelonephritis",
+          "indication": "All hospitalised patients; failure to improve within 48-72 hours; male patients (all); suspected obstruction; diabetes; immunocompromised; pregnancy",
+          "limitation": "Limited by bowel gas and patient body habitus; CT is more sensitive for small stones, gas, and early abscess"
+        },
+        {
+          "test_name": "CT Scan of Abdomen and Pelvis (with and without contrast — CT IVU/CT KUB)",
+          "type": "Imaging — Computed Tomography",
+          "description": "The gold standard imaging investigation for complicated pyelonephritis. CT provides detailed anatomical information unachievable with ultrasound: identifies obstruction and its cause (stone, mass, stricture); detects early parenchymal changes of pyelonephritis (striated nephrogram, focal oedema, abscesses); diagnoses emphysematous pyelonephritis (gas within or around kidney — visible on CT before X-ray); detects small perinephric collections; images ureteral course in full; provides roadmap for drainage or surgery.",
+          "purpose": "Diagnose complications of pyelonephritis (abscess, EPN, obstruction); evaluate for urological cause; investigate failure to respond to antibiotics; pre-procedure planning",
+          "key_metric": "Striated or focal nephrogram = acute pyelonephritis; gas within kidney = emphysematous pyelonephritis; focal hypodense area with rim enhancement = abscess; dilated collecting system with delayed excretion = obstruction; calculus = stone",
+          "indication": "Failure to improve after 48-72 hours of antibiotics; suspected abscess; diabetic with severe pyelonephritis (EPN); suspected obstruction not fully evaluated by ultrasound; planned drainage procedure",
+          "radiation": "Significant radiation dose (especially in young women) — prefer ultrasound when sufficient; avoid unnecessary repeat CT; use CT judiciously"
+        },
+        {
+          "test_name": "Renal Dimercaptosuccinic Acid (DMSA) Scintigraphy",
+          "type": "Imaging — Nuclear Medicine",
+          "description": "A nuclear medicine scan using 99mTc-DMSA which is taken up by functioning renal tubular cells. Acute pyelonephritis shows photon-deficient 'cold' areas (areas of tubular dysfunction from inflammation). Performed 4-6 months after acute infection to detect permanent renal cortical scarring — the most sensitive available method for detecting cortical scars from pyelonephritis. Particularly important in children after febrile UTI to assess for scarring and need for long-term management.",
+          "purpose": "Detect acute pyelonephritis (early DMSA); detect chronic renal scarring (late DMSA — 4-6 months post-infection); assess renal function distribution (split function)",
+          "key_metric": "Cold area on DMSA at 4-6 months post-infection = permanent cortical scar; split function asymmetry >10% = significant relative renal impairment; used to guide investigation and treatment of recurrent childhood UTI (VUR workup)",
+          "indication": "Children with febrile UTI — particularly first episode in boys and recurrent in girls; assess for scarring and VUR; rarely used in adults"
+        },
+        {
+          "test_name": "Micturating Cystourethrogram (MCUG / VCUG)",
+          "type": "Imaging — Fluoroscopy",
+          "description": "A fluoroscopic contrast study of the bladder and urethra during voiding that detects vesicoureteric reflux (VUR) — the retrograde flow of urine from bladder to ureter and kidney. VUR predisposes to ascending pyelonephritis and renal scarring in children. MCUG is the gold standard for VUR detection and grading (I-V).",
+          "purpose": "Detect vesicoureteric reflux in children after febrile UTI; grade severity of VUR (guides surgical vs conservative management); detect posterior urethral valves (boys)",
+          "indication": "All male children after first UTI; female children after recurrent febrile UTI or abnormal ultrasound; children with known renal scarring on DMSA",
+          "key_metric": "VUR Grade I-II: low grade (reflux into ureter only — conservative management); Grade III-IV: moderate (reflux to kidney — may require antibiotic prophylaxis or surgery); Grade V: massive reflux with gross ureteral dilatation — surgical correction"
+        },
+        {
+          "test_name": "STI Screen (NAAT for Chlamydia and Gonorrhoea)",
+          "type": "Microbiological — Molecular",
+          "description": "Chlamydia trachomatis and Neisseria gonorrhoeae can cause urethritis and pelvic inflammatory disease (PID) that mimics cystitis and lower UTI in sexually active women. A first-void urine or genital swab NAAT (nucleic acid amplification test) for Chlamydia and Gonorrhoea should be considered in sexually active young women presenting with LUTS and pelvic discomfort, particularly if standard urine culture is negative.",
+          "purpose": "Diagnose STI mimicking or coexisting with UTI in sexually active young women and men",
+          "indication": "Sexually active young women with LUTS and negative standard urine culture; urethral discharge; cervicitis; partner with STI"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Antibiotic selection for pyelonephritis must be guided by local resistance data and individual patient factors. In India and many parts of South Asia, ESBL-producing E. coli accounts for 30-50% of community UTI isolates — this DRAMATICALLY limits the usefulness of standard oral antibiotics (cephalosporins, fluoroquinolones) for empirical treatment. ALWAYS send urine culture before antibiotics. Start empirical antibiotics based on clinical severity and local resistance patterns, then de-escalate to a targeted narrower-spectrum antibiotic when sensitivity results are available. Adequate oral hydration is a key adjunct to all antibiotic therapy.",
+      "treatment_principles": [
+        "1. Send MSU for culture and sensitivity BEFORE starting antibiotics — if initiation of antibiotics cannot wait (severe sepsis), send cultures simultaneously within minutes then start antibiotics",
+        "2. Choice of antibiotic must be guided by local resistance data — ESBL prevalence is very high in India and community E. coli resistance to fluoroquinolones exceeds 40-60% in many Indian centres; do NOT empirically use fluoroquinolones in areas with high resistance",
+        "3. Uncomplicated pyelonephritis in healthy non-pregnant women: oral antibiotics if tolerating fluids; 7-10 days for fluoroquinolones; 14 days for beta-lactams",
+        "4. Complicated pyelonephritis, pregnancy, sepsis, vomiting, failure of oral therapy: IV antibiotics in hospital; step-down to oral when afebrile for 24-48 hours and tolerating orally",
+        "5. Pyonephrosis or obstruction with infection: DRAINAGE is the primary treatment — antibiotics alone will fail; urgent urology referral for ureteric stenting or nephrostomy",
+        "6. NEVER use nitrofurantoin for pyelonephritis — achieves inadequate tissue concentrations in kidney; only effective for lower UTI (cystitis)",
+        "7. NEVER use nitrofurantoin in pregnancy at term or in renal impairment",
+        "8. Adjust antibiotic dose for renal impairment — especially aminoglycosides (nephrotoxic) and renally-cleared antibiotics",
+        "9. Aminoglycosides (gentamicin): highly effective but requires therapeutic drug monitoring (TDM) for levels and nephrotoxicity",
+        "10. De-escalate to narrowest effective antibiotic based on culture results — antibiotic stewardship to reduce resistance"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-111",
+          "category_name": "Oral Antibiotics — Uncomplicated Pyelonephritis (Outpatient Treatment)",
+          "purpose": "First-line outpatient management of uncomplicated acute pyelonephritis in non-pregnant adults able to tolerate oral medication.",
+          "notes_on_resistance": "CRITICAL: Local resistance patterns must guide empirical choice. In India, community E. coli resistance to ciprofloxacin is 40-60% in many regions; co-trimoxazole resistance is 50-70%. This makes many standard first-line regimens unreliable without culture guidance. Urine culture result is essential to guide targeted treatment.",
+          "medicines": [
+            {
+              "name": "Ciprofloxacin",
+              "brand_examples": ["Ciprobay", "Ciplox", "Cifran", "Cipro"],
+              "form": "Tablet",
+              "dosage": "500 mg twice daily for 7 days (uncomplicated pyelonephritis); 500 mg twice daily for 10-14 days (complicated)",
+              "use_case": "First-line oral treatment for uncomplicated pyelonephritis WHERE susceptibility is confirmed on culture or local resistance rates are low (<20%); also covers Staphylococcus saprophyticus; good tissue penetration into renal parenchyma and urine",
+              "mechanism": "Fluoroquinolone — inhibits DNA gyrase (topoisomerase II) and topoisomerase IV; bactericidal; excellent bioavailability (oral absorption ~80% — nearly equivalent to IV)",
+              "resistance_warning": "E. coli resistance to ciprofloxacin has increased dramatically in India (40-70% of community isolates in many centres); do NOT use empirically without culture sensitivity confirmation in high-resistance settings; ESBL-producing organisms are inherently resistant",
+              "contraindications": ["Children under 18 years (cartilage effects)", "Pregnancy — avoid (animal teratogenicity studies; safer alternatives available)", "Myasthenia gravis", "QT prolongation or use with QT-prolonging drugs"],
+              "side_effects": ["Nausea and GI intolerance", "Tendinopathy and tendon rupture (Achilles — risk in elderly, steroid users)", "Photosensitivity", "QT prolongation", "Peripheral neuropathy (prolonged use)", "CNS effects (dizziness, rarely seizures)"],
+              "interactions": "Avoid with antacids (reduced absorption — separate by 2 hours); dairy products reduce absorption; avoid with warfarin (increases INR)"
+            },
+            {
+              "name": "Levofloxacin",
+              "brand_examples": ["Levaquin", "Levoflox", "Tavanic"],
+              "form": "Tablet",
+              "dosage": "750 mg once daily for 5 days (pyelonephritis); alternatively 500 mg once daily for 7-10 days",
+              "use_case": "Alternative fluoroquinolone for uncomplicated pyelonephritis; once-daily dosing improves adherence; slightly broader spectrum than ciprofloxacin (better Gram-positive coverage including Enterococcus); used when culture sensitivity confirmed",
+              "mechanism": "Fluoroquinolone — inhibits DNA gyrase and topoisomerase IV; bactericidal; excellent oral bioavailability",
+              "resistance_warning": "Cross-resistance with ciprofloxacin — E. coli resistant to ciprofloxacin is almost always resistant to levofloxacin",
+              "contraindications": "Same as ciprofloxacin; pregnancy; children under 18"
+            },
+            {
+              "name": "Co-Amoxiclav (Amoxicillin-Clavulanate)",
+              "brand_examples": ["Augmentin", "Clavamox", "Clavam", "Amoxyclav"],
+              "form": "Tablet (375 mg / 625 mg / 1000 mg)",
+              "dosage": "625 mg (500 mg amoxicillin + 125 mg clavulanate) three times daily for 14 days",
+              "use_case": "Oral treatment of pyelonephritis caused by susceptible organisms; particularly useful when fluoroquinolone resistance is suspected; active against E. coli, Klebsiella, Proteus; safe in pregnancy (most appropriate oral option for uncomplicated pyelonephritis in pregnancy); active against Staph saprophyticus",
+              "mechanism": "Beta-lactam/beta-lactamase inhibitor combination; clavulanate inhibits beta-lactamase enzymes produced by resistant organisms, restoring amoxicillin activity; bactericidal",
+              "resistance_note": "ESBL-producing organisms (which produce extended-spectrum beta-lactamases) are resistant to co-amoxiclav — this is increasingly common in India",
+              "side_effects": ["GI intolerance, nausea, diarrhoea (very common)", "Antibiotic-associated diarrhoea", "Cholestatic jaundice (rare)", "Rash (especially mononucleosis — avoid if glandular fever suspected)"]
+            },
+            {
+              "name": "Co-Trimoxazole (Trimethoprim-Sulfamethoxazole / TMP-SMX)",
+              "brand_examples": ["Bactrim", "Septran", "Cotrim"],
+              "form": "Tablet (480 mg = 400 mg sulphamethoxazole + 80 mg trimethoprim; 960 mg double-strength)",
+              "dosage": "960 mg (double-strength) twice daily for 14 days",
+              "use_case": "Oral treatment of pyelonephritis if organism confirmed susceptible on culture; inexpensive; effective; but high resistance rates limit empirical use in India",
+              "mechanism": "Synergistic dual blockade of folate synthesis — trimethoprim inhibits dihydrofolate reductase; sulphamethoxazole inhibits dihydropteroate synthase; bactericidal",
+              "resistance_warning": "E. coli resistance to co-trimoxazole is 50-70% in India and many developing countries — NOT suitable for empirical treatment; use only when susceptibility confirmed",
+              "contraindications": ["Pregnancy — first trimester (trimethoprim is folate antagonist — risk of neural tube defects); third trimester (risk of neonatal kernicterus)", "Severe renal or hepatic impairment", "Sulphonamide allergy", "G6PD deficiency (haemolysis risk)"],
+              "side_effects": ["Nausea, vomiting", "Stevens-Johnson syndrome / TEN (rare but severe)", "Blood dyscrasias (bone marrow suppression — rare)", "Hyperkalaemia (trimethoprim blocks potassium excretion)"]
+            },
+            {
+              "name": "Cefalexin (Cephalexin)",
+              "brand_examples": ["Keflex", "Ceporex", "Sporidex"],
+              "form": "Capsule / Tablet",
+              "dosage": "500 mg four times daily for 14 days",
+              "use_case": "Oral first-generation cephalosporin; useful for uncomplicated pyelonephritis with susceptible organisms; safe in pregnancy (preferred oral option in pregnancy when IV ceftriaxone step-down is appropriate); limited spectrum — predominantly Gram-positive and some Gram-negatives",
+              "mechanism": "First-generation cephalosporin — beta-lactam; inhibits cell wall synthesis; bactericidal",
+              "limitation": "Inferior coverage compared to ciprofloxacin for uncomplicated pyelonephritis; limited Gram-negative spectrum; ESBL-resistant organisms are resistant; requires four times daily dosing (adherence challenge)"
+            },
+            {
+              "name": "Fosfomycin Trometamol",
+              "brand_examples": ["Monurol", "Fosfocin"],
+              "form": "Oral granules for solution",
+              "dosage": "3g single dose dissolved in water (for cystitis); NOT recommended as single dose for pyelonephritis — longer courses needed if used (3g every 48-72 hours for 3-7 days, unlicensed for pyelonephritis)",
+              "use_case": "Excellent for uncomplicated cystitis including ESBL-producing E. coli; role in pyelonephritis is EMERGING — some guidelines suggest extended courses for ESBL pyelonephritis in non-severe cases when IV not possible; achieves very high urine concentrations but variable kidney tissue concentrations",
+              "note": "NOT first-line for pyelonephritis — standard use is for cystitis; being investigated as oral ESBL alternative; excellent safety profile in pregnancy"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-112",
+          "category_name": "IV Antibiotics — Hospitalised and Complicated Pyelonephritis",
+          "purpose": "Treatment of complicated, severe, or septic pyelonephritis requiring hospitalisation; initial therapy when oral route is unavailable (vomiting); empirical broad-spectrum cover; targeted treatment of resistant organisms including ESBL.",
+          "medicines": [
+            {
+              "name": "Ceftriaxone (IV/IM)",
+              "brand_examples": ["Rocephin", "Monocef", "Biotax", "Oframax"],
+              "form": "IV infusion or IM injection",
+              "dosage": "1-2 g IV/IM once daily; 2 g IV once daily for severe sepsis",
+              "use_case": "First-line IV treatment for moderate to severe community-acquired pyelonephritis with susceptible organisms; third-generation cephalosporin with excellent Gram-negative coverage; step-down to oral when afebrile and tolerating; safe in pregnancy (preferred IV option in pregnancy); also used empirically while awaiting culture results in hospitalised patients",
+              "mechanism": "Third-generation cephalosporin — inhibits cell wall synthesis by binding penicillin-binding proteins; bactericidal; long half-life (8 hours) allows once-daily dosing; excellent tissue penetration",
+              "limitation": "Does NOT cover ESBL-producing organisms — the beta-lactamase produced by ESBL strains hydrolyses cephalosporins including ceftriaxone; does NOT cover Pseudomonas aeruginosa; Enterococcus is intrinsically resistant to cephalosporins",
+              "resistance_note": "ESBL prevalence is very high in India (30-50%) — where ESBL suspected (prior hospitalisation, prior antibiotics, healthcare exposure, community prevalence), use carbapenem empirically rather than ceftriaxone",
+              "side_effects": ["Diarrhoea", "Injection site reactions", "Biliary sludge (especially with high doses)", "Rare — haemolytic anaemia", "Pseudo-cholelithiasis in prolonged use"]
+            },
+            {
+              "name": "Gentamicin (IV/IM) — Aminoglycoside",
+              "brand_examples": ["Garamycin", "Genticin"],
+              "form": "IV infusion or IM injection",
+              "dosage": "Extended interval dosing: 5 mg/kg IV once daily (in normal renal function); adjust dose and interval in renal impairment based on drug levels; ALWAYS check renal function before prescribing; TDM (therapeutic drug monitoring) required",
+              "use_case": "Highly effective for severe pyelonephritis and urosepsis; excellent Gram-negative cover including most ESBL strains; synergistic with beta-lactams; used in combination (gentamicin + amoxicillin or gentamicin + ceftriaxone) for sepsis; BNF/NICE recommended first-line for uncomplicated pyelonephritis in hospital (UK guidance); used in pregnancy for pyelonephritis (risk-benefit favouring treatment); particularly useful when ESBL suspected (retained activity against most ESBL E. coli when given at correct doses)",
+              "mechanism": "Aminoglycoside — binds 30S ribosomal subunit; induces misreading of mRNA; bactericidal; concentration-dependent killing (higher peak concentration = better kill)",
+              "monitoring": "MANDATORY: pre-dose (trough) level before second dose for extended interval dosing; serum creatinine daily; document baseline renal function; stop if creatinine rising; hearing assessment for prolonged courses (>5 days)",
+              "side_effects": ["NEPHROTOXICITY — dose-dependent; risk increases with dehydration, concurrent NSAIDs, pre-existing renal impairment", "OTOTOXICITY — cochlear (high-frequency hearing loss) and vestibular (balance disturbance) — irreversible; risk with prolonged courses", "Neuromuscular blockade (rare)"],
+              "contraindications": ["Myasthenia gravis", "Avoid in severe pre-existing renal failure without dose adjustment", "Caution in pregnancy — risk of ototoxicity to fetus (8th nerve damage); use when benefit clearly outweighs risk"]
+            },
+            {
+              "name": "Piperacillin-Tazobactam (Pip-Tazo / Tazocin)",
+              "brand_examples": ["Tazocin", "Pipzo", "Piptaz", "Zosyn"],
+              "form": "IV infusion",
+              "dosage": "4.5 g (4 g piperacillin + 0.5 g tazobactam) IV every 6-8 hours; 4.5 g every 6 hours for severe sepsis or Pseudomonas risk",
+              "use_case": "Broad-spectrum empirical treatment of complicated pyelonephritis and urosepsis when Pseudomonas aeruginosa is a risk (hospital-acquired, catheter-associated, structural urological disease, prior Pseudomonas infection); also covers Enterococcus faecalis; extended spectrum vs piperacillin alone due to tazobactam beta-lactamase inhibitor; NOT reliable for ESBL-producing organisms (tazobactam does not reliably inhibit ESBL enzymes — use carbapenems for ESBL)",
+              "mechanism": "Broad-spectrum penicillin/beta-lactamase inhibitor combination; piperacillin has antipseudomonal activity; tazobactam inhibits many beta-lactamases",
+              "resistance_note": "NOT reliable for ESBL — despite containing a beta-lactamase inhibitor, piperacillin-tazobactam is not recommended for definitive treatment of ESBL pyelonephritis in current guidelines (MERINO trial showed inferior outcomes vs meropenem for ESBL bacteraemia)",
+              "side_effects": ["Hypokalaemia (prolonged use)", "Elevated LFTs", "Thrombocytopaenia (rare)", "Neurotoxicity at high doses in renal impairment (encephalopathy, myoclonus)"]
+            },
+            {
+              "name": "Ertapenem (IV/IM)",
+              "brand_examples": ["Invanz", "Erotapen"],
+              "form": "IV infusion or IM injection",
+              "dosage": "1 g IV/IM once daily",
+              "use_case": "FIRST-LINE IV TREATMENT FOR ESBL-PRODUCING PYELONEPHRITIS — ertapenem is the preferred carbapenem for community and hospital ESBL pyelonephritis; once-daily dosing; does NOT cover Pseudomonas aeruginosa (advantage — spares broader carbapenems for resistant Pseudomonas); excellent for step-down following initial meropenem in stable ESBL pyelonephritis patients",
+              "mechanism": "Group 1 carbapenem — ultra-broad spectrum beta-lactam; resistant to ESBL and most carbapenemases except metallo-beta-lactamases (NDM); inhibits cell wall synthesis",
+              "note": "Preferred carbapenem for ESBL pyelonephritis — preserves meropenem/imipenem for carbapenem-resistant organisms (antimicrobial stewardship)"
+            },
+            {
+              "name": "Meropenem (IV)",
+              "brand_examples": ["Meronem", "Merotax", "Meropen"],
+              "form": "IV infusion",
+              "dosage": "0.5-1 g IV every 8 hours; 1-2 g every 8 hours for severe sepsis, Pseudomonas, or carbapenem-resistant organisms",
+              "use_case": "Treatment of severe urosepsis; ESBL-producing pyelonephritis; hospital-acquired MDR Gram-negative pyelonephritis with Pseudomonas; carbapenem-resistant organisms (combined with other agents); empirical treatment in ICU patients with severe sepsis from urinary source in high-resistance settings",
+              "mechanism": "Group 2 carbapenem — broadest spectrum commercially available antibiotic; covers ESBL, Pseudomonas, Acinetobacter (variable), Enterococcus faecalis",
+              "stewardship_note": "Reserve for confirmed ESBL or Pseudomonas; do not use routinely for uncomplicated community pyelonephritis — inappropriate use drives carbapenem resistance; use ertapenem preferentially for ESBL where Pseudomonas not a concern",
+              "side_effects": ["Diarrhoea, nausea", "Elevated LFTs", "Seizures at high doses in renal impairment", "Broad-spectrum disruption of gut microbiome — C. difficile risk"]
+            },
+            {
+              "name": "Amoxicillin IV (or Ampicillin IV) — for Enterococcus",
+              "brand_examples": ["Amoxil IV", "Ampicyn IV"],
+              "form": "IV injection",
+              "dosage": "Amoxicillin 1 g IV every 8 hours; Ampicillin 1-2 g IV every 6 hours",
+              "use_case": "Treatment of Enterococcus faecalis pyelonephritis (confirmed on culture); often combined with gentamicin (synergistic for enterococcal endocarditis and bacteraemia); important gap — cephalosporins do NOT cover Enterococcus; also used for Group B Streptococcus pyelonephritis in pregnancy",
+              "note": "Not used empirically for pyelonephritis (inadequate Gram-negative coverage alone) — add gentamicin or ceftriaxone for empirical cover in sepsis until culture confirms Enterococcus"
+            },
+            {
+              "name": "Vancomycin (IV) — for Resistant Gram-Positive Organisms",
+              "brand_examples": ["Vancocin IV", "Vancomycin IV"],
+              "form": "IV infusion (slow — over 60 minutes minimum)",
+              "dosage": "15-20 mg/kg IV every 8-12 hours (weight-based); AUC-guided dosing preferred; TDM essential",
+              "use_case": "Methicillin-resistant Staphylococcus aureus (MRSA) renal abscess or pyelonephritis; Enterococcus resistant to amoxicillin (non-VRE); penicillin-allergic patients with Gram-positive pyelonephritis; catheter-related Staphylococcal infection",
+              "mechanism": "Glycopeptide — inhibits late-stage cell wall synthesis by binding D-Ala-D-Ala peptidoglycan precursors; bactericidal for Staph; bacteriostatic for Enterococcus",
+              "monitoring": "AUC/MIC ratio monitoring for efficacy and toxicity; renal function daily — nephrotoxic; audiology if prolonged",
+              "side_effects": ["Red man syndrome (histamine-mediated — from rapid infusion; prevent by slow infusion)", "Nephrotoxicity", "Ototoxicity (rare at appropriate doses)", "Thrombocytopenia"]
+            },
+            {
+              "name": "Fluconazole (IV and Oral) — Fungal Pyelonephritis",
+              "brand_examples": ["Diflucan", "Forcan", "Zocon"],
+              "form": "IV infusion; Capsule",
+              "dosage": "200-400 mg IV or oral once daily for 14 days (Candida pyelonephritis); 200 mg once daily for Candida cystitis (7-14 days)",
+              "use_case": "Candida urinary tract infection including ascending pyelonephritis in diabetics, catheterised patients, immunocompromised, and post-antibiotics; check Candida species before fluconazole — C. glabrata and C. krusei inherently resistant",
+              "mechanism": "Azole antifungal — inhibits ergosterol synthesis by inhibiting lanosterol 14-alpha-demethylase; fungistatic against most Candida",
+              "note": "Remove urinary catheter if possible (reduces fungal load); correct predisposing factors (hyperglycaemia, discontinue unnecessary antibiotics); urological drainage if fungal ball obstructing collecting system"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-113",
+          "category_name": "Analgesia, Antipyretics, and Antiemetics — Symptomatic Treatment",
+          "purpose": "Manage pain, fever, nausea, and vomiting while antibiotic therapy addresses the underlying infection.",
+          "medicines": [
+            {
+              "name": "Paracetamol (Acetaminophen)",
+              "brand_examples": ["Crocin", "Calpol", "Panadol", "Dolo"],
+              "form": "Tablet, IV, Syrup",
+              "dosage": "Adults: 500-1000 mg every 4-6 hours (max 4g/day); Children: 10-15 mg/kg every 4-6 hours",
+              "use_case": "First-line antipyretic (fever reduction) and analgesic for loin pain and headache in pyelonephritis; safe in pregnancy (first-line analgesic and antipyretic); safe in mild-moderate renal impairment (preferred over NSAIDs)",
+              "note": "IV paracetamol (1g every 6 hours) for hospital use when oral route not available"
+            },
+            {
+              "name": "Ibuprofen / NSAIDs",
+              "brand_examples": ["Brufen", "Nurofen", "Advil"],
+              "form": "Tablet",
+              "dosage": "400-600 mg every 6-8 hours with food and adequate hydration",
+              "use_case": "Pain and fever in pyelonephritis when adequately hydrated and no renal impairment; particularly useful for renal colic-type pain from ureteric stone with associated pyelonephritis",
+              "contraindications_in_pyelonephritis": [
+                "Dehydration — NSAIDs reduce renal perfusion via prostaglandin inhibition; precipitates AKI",
+                "Known or suspected AKI (rising creatinine) — ABSOLUTELY contraindicated",
+                "Pregnancy (all trimesters — fetal renal toxicity; premature ductus arteriosus closure in third trimester)",
+                "Urosepsis — avoid (impairs renal autoregulation in sepsis-induced vasodilatation)",
+                "Use with aminoglycosides — additive nephrotoxicity"
+              ]
+            },
+            {
+              "name": "Ondansetron",
+              "brand_examples": ["Zofran", "Emeset", "Ondem"],
+              "form": "Tablet, ODT wafer, IV/IM",
+              "dosage": "4-8 mg orally, IV, or IM every 8 hours",
+              "use_case": "First-line antiemetic for nausea and vomiting in pyelonephritis — allows oral hydration and oral antibiotic administration; IV ondansetron in hospital when vomiting prevents oral route; ODT (oral dissolving tablet) can be placed under the tongue in vomiting patients",
+              "note": "Single dose of IV ondansetron in emergency department may allow discharge with oral antibiotics (avoiding admission) if vomiting resolves and patient able to hydrate orally"
+            },
+            {
+              "name": "Metoclopramide",
+              "brand_examples": ["Maxolon", "Perinorm"],
+              "form": "Tablet, IV/IM",
+              "dosage": "10 mg oral or IV every 8 hours (max 5 days)",
+              "use_case": "Antiemetic and prokinetic for nausea and vomiting; alternative to ondansetron; useful when IV route required; also facilitates gastric emptying",
+              "side_effects": "Extrapyramidal reactions (especially young women and children); avoid in children under 18 — use ondansetron instead"
+            },
+            {
+              "name": "Tramadol / Morphine (Opioids for Severe Pain)",
+              "brand_examples": ["Tramadol (Tramazac, Ultram)", "Morphine (Morphgesic)"],
+              "form": "Tablet (Tramadol); IM/IV/oral (Morphine)",
+              "dosage": "Tramadol: 50-100 mg oral every 4-6 hours; Morphine: 2.5-10 mg IV/IM every 4 hours (dose titrated to pain)",
+              "use_case": "Severe loin pain not adequately controlled by paracetamol/NSAIDs; obstructing ureteric stone with severe renal colic; post-nephrostomy/procedure pain",
+              "note": "Use at lowest effective dose; opioid sedation may mask clinical deterioration — reassess frequently; avoid in patients with haemodynamic instability (vasodilatory effect); consider opioid prescription guidance for discharge"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-114",
+          "category_name": "IV Fluid Resuscitation and Oral Rehydration",
+          "purpose": "Correct dehydration from fever, vomiting, and reduced oral intake; maintain adequate urine output (essential for antibiotic excretion and renal perfusion); restore haemodynamic stability in sepsis.",
+          "medicines": [
+            {
+              "name": "Oral Rehydration and Adequate Fluid Intake",
+              "form": "Oral fluids",
+              "dosage": "Minimum 2-3 litres of fluids daily during treatment and recovery; more if fever and sweating",
+              "use_case": "All pyelonephritis patients — even those on IV antibiotics should be encouraged to take oral fluids as soon as vomiting resolves; adequate urinary flow helps flush bacteria from urinary tract",
+              "recommended_fluids": "Water (primary); ORS sachets if significantly dehydrated from vomiting; coconut water (natural electrolytes); dilute squash or juice; avoid caffeinated beverages (bladder irritant)"
+            },
+            {
+              "name": "Ringer's Lactate (Hartmann's Solution) / Normal Saline (0.9% NaCl)",
+              "brand_examples": ["Ringer's Lactate", "Hartmann's", "Normal Saline"],
+              "form": "IV infusion",
+              "dosage": "Mild-moderate dehydration: 500 mL-1L IV over 1-2 hours, then reassess; Sepsis resuscitation: 500 mL crystalloid IV bolus over 15-30 minutes, repeat if haemodynamically unstable (total 30 mL/kg); Maintenance: 1-2 mL/kg/hour after resuscitation; monitor urine output (target >0.5 mL/kg/hour)",
+              "use_case": "All hospitalised pyelonephritis patients with dehydration, vomiting, or haemodynamic compromise; sepsis resuscitation",
+              "note": "Ringer's Lactate (Hartmann's) preferred over large volumes of 0.9% normal saline (normal saline causes hyperchloraemic metabolic acidosis in large volumes); reassess frequently — avoid fluid overload in AKI or elderly patients (risk of pulmonary oedema)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-115",
+          "category_name": "Long-Term Prophylactic Antibiotics (for Recurrent UTI/Pyelonephritis Prevention)",
+          "purpose": "Reduce frequency of recurrent UTI and pyelonephritis in women with >2 documented UTIs in 6 months or >3 in 12 months, or recurrence causing significant morbidity.",
+          "medicines": [
+            {
+              "name": "Trimethoprim (Low-Dose Prophylaxis)",
+              "brand_examples": ["Monotrim", "Trimopan"],
+              "form": "Tablet",
+              "dosage": "100 mg at night (before bed) for 3-6 months; OR post-coital single dose 100-200 mg for sexual intercourse-triggered UTI",
+              "use_case": "Recurrent UTI prophylaxis in women (>2 UTIs in 6 months); post-coital prophylaxis; reduces UTI frequency by 95% while on prophylaxis; monitor for resistance on breakthrough infections",
+              "mechanism": "Inhibits dihydrofolate reductase — static suppression of bacterial growth in urinary tract at night when urinary stasis is greatest",
+              "contraindications": ["Pregnancy (first trimester — folate antagonist)", "Significant renal impairment", "Patients on methotrexate (folate antagonism)"]
+            },
+            {
+              "name": "Nitrofurantoin (Low-Dose Prophylaxis)",
+              "brand_examples": ["Macrobid", "Furadantin", "Nitrofur"],
+              "form": "Capsule / Tablet (modified-release)",
+              "dosage": "50-100 mg at night for prophylaxis (3-6 months); OR post-coital single dose 50-100 mg",
+              "use_case": "Recurrent UTI prophylaxis in women; post-coital prophylaxis; good resistance profile for E. coli UTI prophylaxis; safe during second trimester of pregnancy for prophylaxis",
+              "CRITICAL_note": "NEVER USE FOR PYELONEPHRITIS TREATMENT — nitrofurantoin achieves high urine concentrations but inadequate renal tissue and blood concentrations; effective ONLY for lower UTI (cystitis); use for prophylaxis only, not acute treatment",
+              "contraindications": ["eGFR <30 mL/min (ineffective and toxic)", "Pregnancy at term (neonatal haemolysis risk)", "Glucose-6-phosphate dehydrogenase (G6PD) deficiency"],
+              "side_effects": ["Pulmonary toxicity (pneumonitis — rare; associated with prolonged use)", "Hepatotoxicity (rare; prolonged use)", "Peripheral neuropathy (rare; prolonged use)", "GI intolerance"]
+            },
+            {
+              "name": "Cefalexin (Low-Dose Prophylaxis)",
+              "brand_examples": ["Keflex", "Sporidex"],
+              "form": "Capsule",
+              "dosage": "125-250 mg at night for prophylaxis",
+              "use_case": "Recurrent UTI prophylaxis in pregnancy; post-coital prophylaxis; safe in all trimesters of pregnancy; alternative when trimethoprim or nitrofurantoin contraindicated"
+            },
+            {
+              "name": "Vaginal Oestrogen Cream/Pessary (Post-Menopausal Women)",
+              "brand_examples": ["Vagifem (estradiol pessary)", "Ovestin (estriol cream)", "Premarin cream"],
+              "form": "Intravaginal cream, pessary, or tablet",
+              "dosage": "Apply intravaginally 2-3 times per week (after initial daily loading for 2 weeks)",
+              "use_case": "Post-menopausal women with recurrent UTI from oestrogen-deficiency-related atrophy of vaginal and periurethral mucosa; oestrogen restores Lactobacillus flora and normalises periurethral flora reducing E. coli colonisation; highly effective and safer than prolonged antibiotics in this group",
+              "mechanism": "Local oestrogen restores glycogen-rich vaginal epithelium; supports Lactobacillus growth which produces lactic acid (low pH inhibits E. coli periurethral colonisation); restores protective mucous layer of urethra",
+              "note": "Minimal systemic absorption with local application; safe in most women; discuss individual suitability with GP or gynaecologist; NOT recommended if history of oestrogen-receptor-positive breast cancer without specialist advice"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-116",
+          "category_name": "Adjunct and Alternative Preventive Strategies",
+          "purpose": "Non-antibiotic approaches to reducing UTI recurrence and supporting urinary health.",
+          "medicines": [
+            {
+              "name": "D-Mannose",
+              "brand_examples": ["D-Mannose powder/capsules — various brands"],
+              "form": "Powder or capsule",
+              "dosage": "2 g daily in water (prevention); 2 g every 2-3 hours for 3 days (acute episode — adjunct only)",
+              "use_case": "Prevention of recurrent UTI from E. coli — D-mannose competitively binds type 1 fimbriae (P-pili) of E. coli preventing adhesion to uroepithelium; excreted in urine after oral ingestion. RCT evidence: D-mannose 2g daily significantly reduces UTI recurrence (comparable to nitrofurantoin prophylaxis in some studies). Safe, non-antibiotic approach; minimal side effects",
+              "mechanism": "Competitive inhibition of E. coli uroepithelial adhesion — D-mannose saturates E. coli type 1 fimbriae receptors, preventing bacterial attachment to bladder urothelium; bacteria are washed out with urination",
+              "side_effects": ["Mild GI upset (loose stools at high doses)", "Safe in pregnancy — no evidence of harm"],
+              "evidence": "Kranjcec et al. RCT (World J Urol 2014): D-mannose 2g daily significantly reduced recurrence in women with recurrent UTI (recurrence rate 14.6% vs 60.8% placebo and comparable to nitrofurantoin 50mg nightly)"
+            },
+            {
+              "name": "Cranberry Preparations (Cranberry Extract / Juice)",
+              "brand_examples": ["Cranberry capsules/tablets", "Cranberry juice (unsweetened)"],
+              "form": "Capsule, tablet, juice",
+              "dosage": "Cranberry extract: 200-400 mg twice daily; or 300-400 mL unsweetened cranberry juice daily",
+              "use_case": "Prevention of recurrent UTI in women — proanthocyanidins (PACs) in cranberries inhibit type P fimbriae of E. coli preventing adhesion to urothelium. 2023 Cochrane review: cranberry products reduce UTI recurrence in women, children, and people susceptible to UTI; modest but meaningful benefit. Not treatment for acute pyelonephritis — adjunct prevention only",
+              "mechanism": "Proanthocyanidins (PAC type A) specifically inhibit P-fimbriated E. coli adhesion to mannose-resistant receptors on uroepithelium; reduces uroepithelial colonisation",
+              "evidence": "Cochrane review 2023 (Jepson et al.): cranberry products reduce risk of symptomatic UTI by approximately 26% vs placebo in women with recurrent UTI",
+              "note": "Must be unsweetened to avoid excessive sugar (which promotes E. coli growth); not proven to treat established pyelonephritis — prevention only; limited absorption of PACs from juice compared to concentrated extract"
+            },
+            {
+              "name": "Probiotics (Lactobacillus rhamnosus GR-1 and Lactobacillus reuteri RC-14 — Vaginal Probiotics)",
+              "brand_examples": ["Fem-Dophilus", "Rephresh Pro-B", "RepHresh Pro-B"],
+              "form": "Oral capsule",
+              "dosage": "1-2 capsules daily containing minimum 1 billion CFU of L. rhamnosus GR-1 + L. reuteri RC-14",
+              "use_case": "Prevention of recurrent UTI in pre- and post-menopausal women; restoring vaginal Lactobacillus flora reduces periurethral E. coli colonisation and ascending UTI risk. Evidence supports use for both vaginal health and reduction of UTI recurrence. Must be specific strains (GR-1/RC-14 shown to colonise vagina after oral ingestion)",
+              "mechanism": "Specific Lactobacillus strains colonise vaginal and periurethral mucosa after oral ingestion; produce H2O2, lactic acid, and bacteriocins that inhibit E. coli, Klebsiella, and other pathogens from colonising periurethral area"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet in pyelonephritis has two distinct phases: (1) Acute treatment phase — focusing on optimal hydration to support antibiotic efficacy, flush bacteria from the urinary tract, and maintain renal perfusion; and (2) Recovery and prevention phase — dietary strategies to reduce UTI recurrence, support bladder and kidney health, and restore gut microbiome after antibiotic treatment. No specific 'pyelonephritis diet' exists, but evidence-based dietary principles significantly influence outcomes and recurrence risk.",
+      "phase_1_acute_treatment": {
+        "priority": "HYDRATION IS THE SINGLE MOST IMPORTANT DIETARY INTERVENTION IN ACUTE PYELONEPHRITIS",
+        "fluid_target": "2.5-3 litres of fluids per day minimum during antibiotic treatment; increase to 3-3.5L during high fever (additional 500mL per degree of temperature above 37°C)",
+        "rationale": "Adequate hydration: dilutes bacterial concentration in urine; promotes high urine flow rate — mechanical flushing of bacteria from the urinary tract; maintains renal perfusion during sepsis and NSAID use; promotes antibiotic excretion in urine at adequate bactericidal concentrations; prevents stone formation (particularly important in patients with nephrolithiasis)",
+        "recommended_acute_phase": [
+          {
+            "food_or_drink": "Water (plain still water — primary source)",
+            "benefit": "Most important fluid; dilutes urine reducing bacterial and crystal concentration; take 1-2 glasses with each antibiotic dose to ensure adequate urine concentration",
+            "frequency": "8-10 glasses (200 mL each) daily minimum; more with fever"
+          },
+          {
+            "food_or_drink": "Oral Rehydration Solution (ORS sachets)",
+            "benefit": "Replaces electrolytes lost from fever, sweating, and vomiting; glucose-sodium co-transport maintains hydration better than plain water; essential if significant vomiting has occurred",
+            "frequency": "1-2 sachets in 1L water per day during acute illness, especially if vomiting has occurred"
+          },
+          {
+            "food_or_drink": "Coconut water (tender coconut — nariyal pani)",
+            "benefit": "Natural electrolyte balance (potassium, sodium, magnesium); near-isotonic; well-tolerated when nauseous; gentle on stomach; provides natural sugars for energy; excellent hydration fluid during acute illness",
+            "frequency": "1-2 glasses daily during acute phase"
+          },
+          {
+            "food_or_drink": "Clear soups and broths (chicken or vegetable)",
+            "benefit": "Hydration plus electrolytes and amino acids; sodium encourages water retention; easily digested when nauseous and anorexic; warm soothing effect; protein for immune function",
+            "frequency": "2-3 times daily during acute phase"
+          },
+          {
+            "food_or_drink": "Ginger tea",
+            "benefit": "Anti-nausea properties (blocks 5-HT3 vomiting reflex — same mechanism as ondansetron); anti-inflammatory gingerols; warm fluid contributing to hydration; gentle on inflamed mucosa",
+            "frequency": "2-3 cups daily when nauseous"
+          },
+          {
+            "food_or_drink": "Plain white rice, khichdi, toast, banana — BRAT-like diet",
+            "benefit": "Easily digestible during acute febrile illness; low fibre — gentle on gut with reduced motility from illness; provides carbohydrate energy; banana provides potassium (lost in vomiting)",
+            "frequency": "Small portions every 3-4 hours; advance as appetite improves"
+          }
+        ]
+      },
+      "recommended_foods_for_urinary_health": [
+        {
+          "category": "High-Water-Content Foods (Supplemental Hydration)",
+          "items": [
+            {
+              "food": "Cucumber (kakdi)",
+              "benefit": "96% water content — excellent supplemental hydration; contains cucurbitacins with mild diuretic effect; potassium; Vitamin C; gentle alkalinising effect on urine; cooling in summer",
+              "frequency": "Daily as snack or in salad"
+            },
+            {
+              "food": "Watermelon (tarbooz)",
+              "benefit": "92% water; lycopene (antioxidant — anti-inflammatory); citrulline (vasodilatory — improves renal blood flow); potassium and Vitamin C; natural diuretic; excellent summer fruit for urinary health",
+              "frequency": "Daily during acute phase and recovery"
+            },
+            {
+              "food": "Lettuce, celery, spinach",
+              "benefit": "High water content; alkalinising minerals (potassium, magnesium); celery contains apigenin (mild diuretic compound); spinach provides iron (anaemia from CKD or recurrent infection)",
+              "frequency": "Daily in meals"
+            }
+          ]
+        },
+        {
+          "category": "Anti-Inflammatory and Immune-Supporting Foods",
+          "rationale": "Pyelonephritis involves significant kidney inflammation from both direct bacterial toxicity and immune-mediated damage; anti-inflammatory diet supports faster resolution and protects kidney tissue",
+          "items": [
+            {
+              "food": "Turmeric (Haldi) and Black Pepper",
+              "benefit": "Curcumin — the most extensively studied natural anti-inflammatory compound; inhibits NF-κB inflammatory pathway; reduces renal inflammatory cytokines (IL-6, TNF-alpha, IL-1β); nephroprotective in experimental models; anti-bacterial synergistic properties; essential Indian spice with high safety profile. Black pepper (piperine) increases curcumin bioavailability by 2000%.",
+              "frequency": "Daily in cooking; turmeric golden milk (haldi doodh) at bedtime; use with black pepper for maximum benefit"
+            },
+            {
+              "food": "Garlic (Lehsun)",
+              "benefit": "Allicin — potent broad-spectrum antimicrobial including activity against E. coli; inhibits E. coli adhesion to uroepithelium; anti-biofilm properties (reduces catheter-associated infection); immunostimulatory (enhances natural killer cell activity); anti-inflammatory; traditional Indian remedy with strong mechanistic rationale",
+              "frequency": "2-3 raw or lightly cooked cloves daily; crush and allow to rest 10 minutes before cooking (activates alliinase enzyme to form allicin)"
+            },
+            {
+              "food": "Cranberry products (unsweetened cranberry juice or extract)",
+              "benefit": "Proanthocyanidins (PAC) — inhibit E. coli fimbriae adhesion to uroepithelium; evidence-based prevention of recurrent UTI (Cochrane 2023 review); antioxidant; acidifies urine (modest effect); concentrate preferable to juice (higher PAC content, less sugar)",
+              "frequency": "200-400 mL unsweetened cranberry juice daily OR extract capsules for prevention; not for treatment of acute pyelonephritis",
+              "note": "Avoid full-strength sweetened cranberry juice (high sugar promotes bacteria); avoid if on warfarin (may increase INR)"
+            },
+            {
+              "food": "Blueberries, strawberries, amla (Indian gooseberry)",
+              "benefit": "Rich in polyphenols, flavonoids, and Vitamin C; amla is the richest plant source of Vitamin C (powerful antioxidant, immune stimulant); reduces urinary inflammation; supports renal tubular antioxidant defences; antibacterial flavonoids",
+              "frequency": "Daily — amla particularly valuable in Indian context; amla juice, murabba, or raw"
+            },
+            {
+              "food": "Fatty fish (salmon, mackerel, sardines, rohu, hilsa)",
+              "benefit": "Omega-3 fatty acids (EPA and DHA) — potently anti-inflammatory; reduce renal cytokine production; protect kidney cells during infection-induced oxidative stress; high-quality protein for immune function and renal repair",
+              "frequency": "2-3 times per week during recovery"
+            }
+          ]
+        },
+        {
+          "category": "Probiotics (Gut Microbiome Restoration After Antibiotics)",
+          "rationale": "Antibiotic treatment for pyelonephritis causes significant disruption of gut and vaginal microbiomes — which then allows E. coli and resistant organisms to colonise; restoring Lactobacillus flora reduces recolonisation risk and recurrent UTI",
+          "items": [
+            {
+              "food": "Plain yogurt / Dahi with live cultures",
+              "benefit": "Lactobacillus acidophilus, L. bulgaricus — restore gut and vaginal flora after antibiotic disruption; competitive exclusion of E. coli from gut (reduces source of ascending pathogens); general immune support; evidence for reducing UTI recurrence in women",
+              "frequency": "Daily — start during antibiotic course (take 2 hours away from antibiotic dose) and continue for 4-6 weeks after completing antibiotics",
+              "note": "Choose plain, unsweetened yogurt with 'live active cultures' stated on label; avoid flavoured yogurts (added sugar)"
+            },
+            {
+              "food": "Idli, dosa, dhokla (fermented Indian foods)",
+              "benefit": "Natural probiotics from fermentation; Lactobacillus and Leuconostoc species; improve gut barrier function; reduce endotoxin translocation from gut (a source of gram-negative bacteraemia); support immune function",
+              "frequency": "Regular part of diet during and after antibiotic course"
+            },
+            {
+              "food": "Kefir",
+              "benefit": "Diverse probiotic content (multiple Lactobacillus and Bifidobacterium strains plus yeasts); more potent probiotic effect than yogurt; emerging evidence for reducing UTI recurrence",
+              "frequency": "Daily during and after antibiotic treatment"
+            }
+          ]
+        },
+        {
+          "category": "Vitamin C (Urinary Acidification and Immune Function)",
+          "explanation": "Vitamin C (ascorbic acid) has been proposed to acidify urine (inhibiting bacterial growth which prefers alkaline pH) and enhance neutrophil function. Evidence for clinical UTI prevention is modest but mechanistically plausible.",
+          "items": [
+            {
+              "food": "Amla (Indian gooseberry) — highest Vitamin C food",
+              "content": "600-900 mg Vitamin C per 100g (10-20 times that of oranges)",
+              "frequency": "1-2 amla daily; amla juice, murabba, or raw"
+            },
+            {
+              "food": "Citrus fruits (oranges, lemon, lime), guava, papaya, kiwi",
+              "content": "Guava: 228 mg/100g; Orange: 53 mg/100g; Papaya: 62 mg/100g",
+              "note": "Consume moderate amounts — excessive citrus can irritate bladder in some people"
+            }
+          ]
+        }
+      ],
+      "foods_to_limit_or_avoid": [
+        {
+          "food": "Bladder Irritants — Caffeine (Coffee, Strong Tea, Energy Drinks)",
+          "reason": "Caffeine increases bladder detrusor muscle contractility — increases urgency, frequency, and dysuria, worsening lower urinary symptoms; diuretic effect causes concentrated urine (higher bacterial concentration); acidifies urine (irritant to inflamed urothelium)",
+          "recommendation": "Reduce or avoid during acute pyelonephritis and while symptomatic; switch to water, herbal tea, or coconut water; resume moderate consumption (1 cup/day) when fully recovered",
+          "note": "Decaffeinated coffee is NOT irritant-free — other acids in coffee are also bladder irritants"
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Alcohol is a potent diuretic (inhibits ADH) — worsening dehydration during illness; bladder irritant increasing urgency and frequency; impairs neutrophil and lymphocyte function (impairs ability to fight infection); ABSOLUTE CONTRAINDICATION with metronidazole (disulfiram-like severe reaction) and with nitrofurantoin (enhanced side effects); reduces medication compliance and recovery",
+          "recommendation": "Complete abstinence during antibiotic course; minimum 48 hours after completing most antibiotics; 72 hours after completing metronidazole or tinidazole"
+        },
+        {
+          "food": "Spicy Foods (Excessive Chilli, Hot Sauce)",
+          "reason": "Capsaicin activates TRPV1 receptors in the bladder urothelium — increases urgency, frequency, and dysuria; worsens inflamed urothelial symptoms; may delay recovery from cystitis component",
+          "recommendation": "Avoid heavily spiced food during acute illness and while LUTS symptomatic; resume normal spice levels when symptoms fully resolve"
+        },
+        {
+          "food": "Carbonated Beverages and Sodas",
+          "reason": "Carbonic acid irritates the bladder; high sugar content in sodas promotes bacterial growth; the acidity worsens inflamed urothelial symptoms",
+          "recommendation": "Avoid during acute illness; replace with water and non-carbonated drinks"
+        },
+        {
+          "food": "High-Oxalate Foods (for Calcium Oxalate Stone Formers — Relevant if Pyelonephritis Triggered by Stone)",
+          "reason": "Patients with pyelonephritis from an obstructing calcium oxalate stone should moderately limit high-oxalate foods to reduce stone recurrence",
+          "high_oxalate_foods": ["Spinach (very high oxalate — avoid excessive amounts)", "Rhubarb", "Beet/Beetroot", "Nuts (especially peanuts, almonds)", "Chocolate"],
+          "note": "Normal portions of these foods are fine for patients without stones; restriction only applies to confirmed calcium oxalate stone formers; increase calcium intake (absorbs dietary oxalate in gut) and ensure high fluid intake (>2.5L daily)"
+        },
+        {
+          "food": "Low-Fluid Intake and Concentrated Urine",
+          "reason": "Perhaps the single most important dietary risk factor for UTI and pyelonephritis — low fluid intake results in concentrated urine with high bacterial density; reduced urine flow decreases mechanical flushing of bacteria; concentrated urine is more cytotoxic to uroepithelium",
+          "recommendation": "Target pale yellow urine at all times; dark yellow or amber urine indicates dehydration — drink immediately; aim for 2.5-3L fluids daily as a permanent lifestyle change for UTI prevention"
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "Acute phase meal plan (days 1-3 of antibiotic treatment); advance to normal diet as tolerated from day 3-4",
+        "on_waking": "Large glass of water (300-400 mL) with antibiotic dose; fresh lemon squeezed in warm water (Vitamin C, gentle diuretic)",
+        "breakfast": "Plain yogurt with banana and a teaspoon of honey; OR plain daliya (broken wheat porridge with minimal sugar); glass of water or coconut water; avoid strong coffee — switch to weak ginger tea",
+        "mid_morning": "1-2 glasses water or ORS; 1-2 raw amla or amla juice; cucumber slices (hydrating snack)",
+        "lunch": "Plain khichdi (moong dal and rice — gentle on digestion) with a little ghee; boiled or steamed vegetables (no heavy spice); glass of buttermilk (chaach) — probiotic; 2 glasses of water",
+        "afternoon": "Coconut water; watermelon or cucumber; plain crackers if appetite poor",
+        "dinner": "Clear chicken broth or vegetable soup (hydration, sodium, protein); plain boiled rice or roti with dal (minimal spice); steamed fish if tolerated (omega-3, protein); glass of water",
+        "bedtime": "Warm turmeric milk (haldi doodh) — anti-inflammatory; 1-2 glasses water (adequate overnight hydration — important for night-time urinary flushing)",
+        "general_targets": ["Minimum 2.5-3L total fluid intake daily", "Urine should be pale yellow at all times", "Small frequent meals if appetite poor — do not force large meals during acute illness", "Start probiotic yogurt from day 1 of antibiotics — take 2 hours apart from antibiotic dose"]
+      }
+    },
+
+    "lifestyle_management": {
+      "hydration_and_voiding_habits": {
+        "overview": "Behavioural and voiding habit modifications are among the most evidence-based non-antibiotic strategies for preventing recurrent UTI and pyelonephritis.",
+        "measures": [
+          "Drink minimum 2.5 litres of fluid daily — the single most important behavioural prevention strategy; targets pale yellow urine; high urine flow mechanically flushes bacteria before they can ascend or adhere",
+          "Urinate regularly — do not defer voiding when the urge occurs; target voiding every 3-4 hours; prolonged bladder distension increases uroepithelial vulnerability to bacterial invasion",
+          "Post-coital voiding (urination within 15-30 minutes of sexual intercourse) — mechanical flushing removes bacteria milked into the urethra during intercourse; highly effective; reduces post-coital UTI risk by ~50%; drink a glass of water before intercourse to facilitate post-coital urination",
+          "Complete bladder emptying — ensure full bladder emptying; lean forward on toilet (women) or double void (urinate, wait 30 seconds, urinate again); residual urine is a bacterial growth medium",
+          "Bowel regularity — constipation increases periurethral E. coli load; high-fibre diet, adequate hydration, and bowel habits all influence UTI risk",
+          "Wipe front-to-back after defaecation — particularly important in women and girls; prevents faecal E. coli contaminating periurethral area",
+          "Avoid prolonged use of indwelling urinary catheters — remove as soon as clinically appropriate; each day of catheterisation increases CAUTI risk by 5-10%",
+          "Empty bladder before sleep — reduces overnight urinary stasis when urine flow is lowest"
+        ]
+      },
+      "personal_hygiene_and_sexual_health": {
+        "measures": [
+          "Use unperfumed soap for external genital washing — perfumed soaps and feminine hygiene products disrupt normal vaginal Lactobacillus flora which protects against E. coli colonisation",
+          "Avoid vaginal douching — disrupts protective vaginal flora; strongly associated with increased UTI and pelvic inflammatory disease risk",
+          "Review contraception method if experiencing recurrent UTI — spermicides kill Lactobacillus flora and significantly increase E. coli periurethral colonisation; change to non-spermicidal condoms, oral contraceptive pill (which does not increase UTI risk), or long-acting reversible contraception (coil, implant)",
+          "Shower preference over bath — bath water contains bacteria that can ascend the urethra; showers reduce exposure",
+          "Wear breathable cotton underwear — synthetic materials retain moisture, creating warm humid environment favouring bacterial growth in periurethral area",
+          "Avoid tight-fitting trousers and underwear — reduce genital area ventilation",
+          "Shower and urinate after swimming — pool water, particularly heavily used, can contain bacteria"
+        ]
+      },
+      "management_of_underlying_risk_factors": {
+        "diabetes": [
+          "Optimal glycaemic control is the single most important intervention in diabetics with pyelonephritis — hyperglycaemia directly impairs neutrophil function (killing, chemotaxis, adherence), promotes bacterial growth (glucose-rich urine), and autonomic neuropathy impairs bladder emptying",
+          "Target HbA1c <53 mmol/mol (7%) — tight glycaemic control significantly reduces UTI risk and severity",
+          "Check post-void residual urine volume in diabetics with neuropathy — neurogenic bladder is a major predisposing factor for recurrent UTI; intermittent self-catheterisation if significant residual",
+          "Annual urine dipstick and culture for asymptomatic bacteriuria — debate exists whether to treat in diabetics but screen and manage as indicated",
+          "Avoid SGLT2 inhibitors (gliflozins — empagliflozin, dapagliflozin) during active UTI — glycosuria from SGLT2 inhibition promotes urinary bacterial growth; hold during acute infection"
+        ],
+        "urinary_stones": [
+          "Adequate hydration (>2.5-3L daily) is the most important measure to prevent stone recurrence",
+          "Metabolic stone evaluation after first stone in patients <60 years or recurrent stones: 24-hour urine for calcium, oxalate, urate, citrate, creatinine, pH, volume",
+          "Dietary modification based on stone type: calcium oxalate — moderate dietary oxalate restriction, adequate (not excessive) calcium intake, reduce animal protein; uric acid — reduce dietary purines (red meat, shellfish), alkalinise urine (potassium citrate)",
+          "Struvite (infection stones) — require complete surgical stone removal (bacteria embedded in stone cannot be eradicated by antibiotics without stone removal) plus prolonged antibiotics; acetohydroxamic acid (AHA) — urease inhibitor (adjunct for residual struvite)"
+        ],
+        "vesicoureteric_reflux_management_children": [
+          "All children after febrile UTI should be evaluated for VUR (MCUG + DMSA scan) per NICE guidelines",
+          "Low-grade VUR (grades I-III): conservative management — antibiotic prophylaxis (trimethoprim or cefalexin nightly) until spontaneous resolution (usually by age 5-6 years); annual MCUG to assess resolution; DMSA scan 6 months after each febrile UTI to monitor for new scarring",
+          "High-grade VUR (grades IV-V): surgical correction — laparoscopic or open ureteric reimplantation or endoscopic submucosal injection (Deflux) — reduces reflux and prevents further renal scarring",
+          "Long-term monitoring: annual blood pressure (hypertension from renal scarring), annual urine for proteinuria; eGFR monitoring"
+        ]
+      },
+      "lifestyle_during_acute_illness": [
+        "Rest — adequate bed rest during febrile phase; avoid work and strenuous activity until afebrile for at least 24-48 hours",
+        "Complete the full antibiotic course — symptoms typically improve within 48-72 hours but bacteria may persist; stopping antibiotics early risks relapse, treatment failure, and antibiotic resistance",
+        "Temperature monitoring — check temperature twice daily; fever should resolve within 48-72 hours; persistent fever indicates treatment failure requiring reassessment",
+        "Monitor urine output — aim for regular pale-yellow urination; no urination for >8 hours is concerning for AKI",
+        "Avoid NSAIDs if dehydrated or renal function impaired",
+        "Take antibiotic with a full glass of water and remain upright for 30 minutes (oesophageal irritation prevention with some antibiotics); take oral fluoroquinolones separately from dairy products, antacids, and iron",
+        "Return to school/work: not before afebrile for 48 hours; food handlers and healthcare workers may require urine culture clearance"
+      ],
+      "post_treatment_follow_up": {
+        "test_of_cure": "Urine culture 5-7 days after completing antibiotics is recommended in: all pregnant women (mandatory); children; men; recurrent UTI; complicated pyelonephritis; resistant organism identified; immunocompromised patients. Not required routinely in uncomplicated pyelonephritis in otherwise healthy women if symptoms fully resolved.",
+        "long_term_follow_up": [
+          "Blood pressure monitoring — pyelonephritis causing renal scarring can lead to renovascular hypertension; check annually if recurrent pyelonephritis or known scarring",
+          "Renal function monitoring — annual U&E and eGFR in patients with: recurrent pyelonephritis, single kidney, known renal scarring, diabetes, hypertension, or age >65 years",
+          "Referral to urology if: recurrent pyelonephritis despite appropriate management, structural abnormality identified, stone disease, VUR in children, male with pyelonephritis (all men need urological investigation)",
+          "Referral to nephrology if: falling eGFR, proteinuria >300 mg/day, eGFR <60 with rising trend, hypertension difficult to control, suspected interstitial nephritis"
+        ]
+      }
+    },
+
+    "pyelonephritis_monitoring_plan": {
+      "note": "This monitoring guide helps determine when home management is safe and when urgent or emergency care is required. Anyone with suspected pyelonephritis (fever + loin pain + urinary symptoms) should be assessed by a doctor on the SAME DAY — this is not a 'wait and see' condition.",
+      "green_zone": {
+        "status": "Mild — Outpatient Management (with daily telephone review)",
+        "criteria": "Confirmed or strongly suspected uncomplicated pyelonephritis in a healthy, non-pregnant woman; temperature below 38.5°C; able to drink fluids and take oral medications; no vomiting preventing oral intake; no confusion; heart rate below 100; blood pressure normal; no signs of dehydration; no complicating factors; urine dipstick positive; GP or urgent care assessment completed same day",
+        "action": "Oral antibiotics (ciprofloxacin or co-amoxiclav — guided by local resistance); paracetamol for fever; minimum 2.5-3L oral fluids daily; urine culture sent; telephone review at 24-48 hours; return immediately if worsening; GP review at 7 days and on receipt of culture results to confirm correct antibiotic"
+      },
+      "yellow_zone": {
+        "status": "Moderate — Hospital Attendance Required (Same Day)",
+        "criteria": "Any of: persistent vomiting preventing oral medication or hydration; temperature above 39°C; heart rate above 100 bpm; signs of dehydration (dry mouth, dizziness, dark urine, reduced urine output); pregnancy; male sex; diabetes; elderly (>65 years); immunocompromised; known renal disease; no improvement after 24-48 hours of oral antibiotics; recurrent pyelonephritis; first episode in a child",
+        "action": "Emergency department or hospital admission assessment; blood cultures before antibiotics; urine culture; IV antibiotics (ceftriaxone or gentamicin); IV fluids for dehydration; antiemetics; renal ultrasound; FBC, CRP, U&E, blood glucose; step-down to oral when tolerating and afebrile; discharge planning with oral antibiotics and follow-up"
+      },
+      "red_zone": {
+        "status": "EMERGENCY — Call Emergency Services (102/112) or Go to Emergency Department IMMEDIATELY",
+        "criteria_immediate": [
+          "Rigors (uncontrollable violent shivering) — bacteraemia; IV antibiotics needed immediately; blood cultures before antibiotics",
+          "Confusion, altered consciousness, or difficulty rousing — urosepsis with organ dysfunction — SEPTIC EMERGENCY",
+          "Heart rate above 120 bpm with hypotension (systolic BP <90 mmHg), cold and clammy skin, mottling — SEPTIC SHOCK",
+          "Temperature above 40°C or below 36°C (hypothermia — very serious sign of sepsis in the elderly)",
+          "Severe loin pain in a known kidney stone patient with fever and rigors — possible pyonephrosis (obstructed infected kidney) — SURGICAL EMERGENCY; requires emergency urological drainage",
+          "No urine output for 8+ hours despite drinking fluids — possible AKI with ureteric obstruction",
+          "Diabetic patient with severe pyelonephritis who is worsening despite antibiotics — possible emphysematous pyelonephritis (CT scan urgently)",
+          "Fever failing to resolve after 72 hours of appropriate IV antibiotics — possible renal abscess or pyonephrosis requiring imaging and drainage",
+          "Pregnant woman with pyelonephritis symptoms — any pregnant woman with fever and loin pain must go to hospital immediately (maternal and foetal emergency risk)",
+          "Immunocompromised patient (HIV, transplant, chemotherapy) with pyelonephritis — high risk of rapid deterioration; always requires hospitalisation"
+        ]
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Urosepsis and Septic Shock",
+        "description": "Bacteraemia from the infected kidney, with progressive sepsis — systemic inflammatory response → organ dysfunction → haemodynamic failure. The urinary tract is the most common source of Gram-negative bacteraemia (E. coli, Klebsiella) in adults. Urosepsis is a medical emergency — mortality increases by 7% for every hour of delay in antibiotic administration beyond the first hour.",
+        "severity": "Life-threatening — mortality 15-30% in septic shock from urinary source",
+        "management": "Immediate IV antibiotics (within 1 hour of presentation); IV fluid resuscitation (30 mL/kg crystalloid if hypotensive); vasopressors (noradrenaline) for persistent hypotension; ICU admission; blood cultures before antibiotics; source control (emergency drainage of obstruction or abscess); serial lactate monitoring; multidisciplinary team — intensive care, urology, microbiology",
+        "prevention": "Early diagnosis and treatment of pyelonephritis before sepsis develops; prompt relief of urinary obstruction"
+      },
+      {
+        "complication": "Acute Kidney Injury (AKI)",
+        "description": "Acute deterioration of renal function — rising serum creatinine and falling eGFR — occurring in 10-20% of hospitalised pyelonephritis patients. Mechanisms: cytokine-mediated intrarenal vasoconstriction reducing glomerular filtration; direct bacterial endotoxin nephrotoxicity; obstruction (post-renal AKI from stone or pus); haemodynamic compromise in sepsis (pre-renal); nephrotoxic antibiotic effects (aminoglycosides, NSAIDs).",
+        "severity": "Moderate to Severe — may require renal replacement therapy (dialysis) if severe; most cases fully reversible with appropriate management",
+        "management": "IV fluid resuscitation to restore renal perfusion; relieve obstruction urgently; avoid nephrotoxic medications (NSAIDs, nephrotoxic antibiotics if not essential; dose-adjust renally cleared antibiotics); monitor creatinine and urine output daily; nephrology consultation if creatinine rising rapidly or not improving; renal replacement therapy (CRRT) if oliguria persists despite volume replacement"
+      },
+      {
+        "complication": "Renal or Perinephric Abscess",
+        "description": "Localised collection of pus within (intrarenal) or around (perinephric) the kidney — developing when pyelonephritis fails to respond to antibiotics and bacteria are contained by the host immune response. Presents as persistent fever and loin pain despite 5-7 days of appropriate antibiotics. Perinephric abscess can track into adjacent spaces (psoas muscle — psoas abscess; paraspinal; retroperitoneum).",
+        "severity": "Moderate to Severe",
+        "management": "CT-guided percutaneous drainage for abscesses >3-4 cm; prolonged IV then oral antibiotics (total 4-6 weeks); surgical drainage if percutaneous fails; correct underlying cause (relieve obstruction, address stone); repeat imaging to confirm resolution"
+      },
+      {
+        "complication": "Emphysematous Pyelonephritis (EPN)",
+        "description": "Gas-forming necrotising renal infection in diabetics — see TYPE-03 above. Mortality 21-43%. Requires ICU, IV antibiotics, and urgent percutaneous drainage or nephrectomy. CT scan essential for diagnosis.",
+        "severity": "Life-threatening",
+        "management": "See TYPE-03; ICU; emergency drainage; aggressive diabetes management; broad-spectrum antibiotics"
+      },
+      {
+        "complication": "Chronic Kidney Disease (CKD) from Renal Scarring",
+        "description": "Recurrent episodes of pyelonephritis cause progressive renal cortical scarring — loss of functional renal tissue and nephrons over years. Particularly important in children with unrecognised vesicoureteric reflux — 10-15% of childhood end-stage renal disease is attributed to reflux nephropathy from recurrent pyelonephritis. In adults, recurrent complicated pyelonephritis gradually reduces renal reserve.",
+        "severity": "Moderate to Severe (long-term) — progressive but preventable",
+        "management": "Prevent recurrent infection (antibiotics, correct VUR, remove infected stones); control hypertension with ACE inhibitors/ARBs (renoprotective and antihypertensive); monitor eGFR annually; nephrology referral for CKD stage 3B+ (eGFR <45); renal replacement planning for end-stage disease"
+      },
+      {
+        "complication": "Pregnancy Complications (Preterm Labour, IUGR, Maternal Sepsis)",
+        "description": "Pyelonephritis in pregnancy carries significantly higher risks than in non-pregnant women. The dilated ureters (progesterone-mediated) and compressed ureters (uterine pressure) predispose to ascending infection and urosepsis. Maternal pyelonephritis causes: preterm labour (10-20% of untreated or delayed-treatment cases — bacterial endotoxins stimulate prostaglandin synthesis triggering uterine contractions); intrauterine growth restriction (IUGR) from febrile illness and placental blood flow reduction; maternal septicaemia and septic shock; fetal compromise from maternal hypoxia and hypotension.",
+        "severity": "Severe — obstetric emergency; all pregnant women with pyelonephritis must be admitted to hospital",
+        "management": "Hospitalisation mandatory in most cases; IV ceftriaxone (safe in pregnancy) or amoxicillin-clavulanate; IV fluids; antipyretics (paracetamol only — NSAIDs contraindicated); fetal monitoring (CTG); obstetric review; urine culture-guided treatment; test of cure culture after completing antibiotics; low-dose antibiotic prophylaxis (cefalexin) for remainder of pregnancy if recurrent infection; screen for and treat asymptomatic bacteriuria at every antenatal visit"
+      },
+      {
+        "complication": "Renal Papillary Necrosis",
+        "description": "Ischaemic necrosis of renal papillae (the tips of renal pyramids) — caused by combination of vascular compromise and bacterial toxicity in diabetics, sickle cell disease, or analgesic nephropathy. Sloughed papillary tissue can obstruct the ureter causing acute loin pain, haematuria (often gross), and worsening renal function. The sloughed papilla may be passed in urine.",
+        "risk_groups": "Diabetic pyelonephritis; sickle cell disease; chronic NSAID use; obstructive uropathy",
+        "severity": "Moderate to Severe",
+        "management": "Aggressive pyelonephritis treatment (IV antibiotics, hydration); relieve ureteric obstruction if sloughed papilla causing blockage (ureteric stent); manage underlying diabetes; avoid NSAIDs"
+      },
+      {
+        "complication": "Antibiotic Resistance and Treatment Failure",
+        "description": "Failure of empirical antibiotic treatment from resistant organisms — particularly ESBL-producing E. coli, which is extremely prevalent in India. Treatment failure (persistence of fever and symptoms beyond 72 hours of antibiotics) must trigger: urine culture and sensitivity review (if not yet done); change to appropriately sensitive antibiotic; imaging to exclude abscess or obstruction. Repeated courses of antibiotics select for MDR organisms — each course reduces future antibiotic options.",
+        "severity": "Moderate to Severe",
+        "management": "Culture-guided antibiotic de-escalation; switch to carbapenem (ertapenem) for ESBL; antibiotic stewardship — use narrowest appropriate spectrum; prevent recurrence to reduce antibiotic burden; report MDR organisms to infection control and public health"
+      },
+      {
+        "complication": "Pyonephrosis (Infected Hydronephrosis)",
+        "description": "See TYPE-06 — infected obstructed kidney with pus in the collecting system. Rapidly fatal without emergency drainage. Antibiotics cannot penetrate the obstructed collecting system effectively.",
+        "severity": "Life-threatening — mortality without drainage >50%",
+        "management": "Emergency ureteric stent or nephrostomy; IV antibiotics (adjunctive); ICU; identify and treat cause of obstruction"
+      }
+    ],
+
+    "special_populations": {
+      "pyelonephritis_in_pregnancy": {
+        "key_points": [
+          "Pyelonephritis is the most common serious medical complication of pregnancy — affecting 1-2% of pregnant women; all cases require hospitalisation",
+          "Physiological changes of pregnancy directly predispose to ascending UTI: progesterone-mediated smooth muscle relaxation causes ureteral dilation and reduced peristalsis; the growing uterus mechanically compresses the right ureter (right-sided pyelonephritis is more common); reduced bladder capacity increases urinary stasis",
+          "Asymptomatic bacteriuria (ASB) in pregnancy — 2-7% of pregnant women; if untreated, 30-40% will progress to symptomatic UTI or pyelonephritis; SCREEN ALL PREGNANT WOMEN at booking (first antenatal visit) with urine culture and TREAT positive ASB",
+          "Group B Streptococcus (GBS) detected in urine in pregnancy — even if asymptomatic — must be treated (penicillin/amoxicillin); indicates GBS colonisation and requires IV penicillin prophylaxis in labour to prevent neonatal GBS sepsis",
+          "Treatment — pregnancy-safe antibiotics ONLY: ceftriaxone IV (first-line for admitted patients), cefalexin oral (step-down), amoxicillin-clavulanate (step-down); AVOID: fluoroquinolones (arthropathy and cartilage effects in animal studies), aminoglycosides (fetal 8th nerve ototoxicity — use only when life-threatening if no alternative), trimethoprim in first trimester (folate antagonism — neural tube defect risk), nitrofurantoin at term (neonatal haemolysis), tetracyclines",
+          "Duration: IV antibiotics until afebrile for 24-48 hours, then oral antibiotics to complete 10-14 day course",
+          "Test of cure: mandatory urine culture 7-10 days after completing antibiotics, and at each subsequent antenatal visit",
+          "Prophylaxis: if two or more UTIs in pregnancy — antibiotic prophylaxis for remainder of pregnancy (cefalexin 125-250 mg nightly) with monthly urine cultures",
+          "Fetal monitoring: continuous fetal heart rate monitoring (CTG) during acute pyelonephritis if >24 weeks gestation; watch for uterine contractions",
+          "Recurrence in pregnancy: 30-40% recurrence risk — vigilant antenatal monitoring essential"
+        ]
+      },
+      "pyelonephritis_in_children": {
+        "key_points": [
+          "UTI is the most common serious bacterial infection in infants and the second most common cause of fever without source in children under 5 years; suspicion must be high in febrile children without obvious source",
+          "All febrile children under 2 years without obvious focus: urine culture is mandatory — pyelonephritis may present with fever alone (no localising urinary symptoms)",
+          "Clean-catch midstream urine is ideal — avoid bag specimens in nappies (very high contamination rate of 90% false positives); catheter or suprapubic aspirate for infants unable to produce clean catch",
+          "Treatment: cefalexin oral (mild); IV ceftriaxone (moderate-severe); IV gentamicin + amoxicillin (sepsis); step-down to oral after 48-72 hours IV",
+          "Duration: 7-14 days total (10 days recommended for febrile UTI in children)",
+          "Vesicoureteric reflux investigation: all males after first UTI; females after second UTI or with abnormal ultrasound — renal ultrasound, DMSA scintigraphy 4-6 months post-infection, MCUG for VUR detection",
+          "Antibiotic prophylaxis: all children with VUR grades III-V; children with recurrent UTI or single kidney; cefalexin or trimethoprim nightly until VUR resolves",
+          "Renal scarring: DMSA scan at 4-6 months after febrile UTI — permanent scars visible; 30-60% of children with VUR develop some scarring after pyelonephritis",
+          "Constipation in children dramatically increases UTI risk — always assess and treat constipation in a child with recurrent UTIs",
+          "Paediatric urology and paediatric nephrology referral for VUR, renal scarring, or recurrent pyelonephritis"
+        ]
+      },
+      "pyelonephritis_in_elderly": {
+        "key_points": [
+          "Pyelonephritis in the elderly is frequently atypical — new or worsening confusion (delirium) is the most common presenting feature; fever is often absent or blunted (immunosenescence); falls, reduced mobility, anorexia, and urinary incontinence may be the sole presentation",
+          "UTI is the most common cause of acute confusion (delirium) in elderly women — ALWAYS check urinalysis and culture in any acutely confused elderly patient",
+          "However, CAUTION: bacteriuria is extremely common in elderly (30-50% of women over 80 have asymptomatic bacteriuria) — a positive urine dipstick in a confused elderly person does NOT automatically mean UTI is the CAUSE of confusion; other causes of delirium (medication, cardiac, respiratory, neurological) must be excluded",
+          "Hydration assessment is more challenging in the elderly — reduced thirst sensation; look for postural hypotension, dry mucous membranes, and urine output",
+          "Multiple comorbidities in elderly patients (diabetes, CKD, heart failure, BPH) all increase pyelonephritis severity and complications",
+          "BPH (benign prostatic hypertrophy) in elderly men causes incomplete bladder emptying — a key risk factor for recurrent UTI and pyelonephritis; urological evaluation for post-void residual urine and BPH treatment essential",
+          "Antibiotic selection: check renal function before prescribing (renally excreted antibiotics); reduce gentamicin doses and monitor carefully for nephrotoxicity; avoid nitrofurantoin if eGFR <30; fluoroquinolone tendon rupture risk is higher in elderly — use with caution",
+          "Lower threshold for hospital admission; faster decompensation to sepsis; post-discharge functional recovery may take weeks"
+        ]
+      },
+      "pyelonephritis_in_men": {
+        "key_points": [
+          "UTI in men is by definition a 'complicated UTI' — the longer male urethra and prostate secretions make ascending UTI unusual without a predisposing cause",
+          "All men with pyelonephritis must be investigated for underlying urological abnormality: BPH, urethral stricture, prostate cancer, urinary stone, structural renal abnormality, recent instrumentation",
+          "Prostatitis must be excluded — bacterial prostatitis can cause fever, loin pain, and UTI symptoms; distinguish by: prostate tenderness on rectal examination (gentle examination — vigorous massage risks bacteraemia); PSA elevation (prostatitis significantly raises PSA — do NOT check PSA during active infection); requires 4-6 weeks of antibiotics (fluoroquinolone or trimethoprim — achieves adequate prostatic tissue penetration)",
+          "Treatment duration for male pyelonephritis: 10-14 days minimum (vs 7 days uncomplicated female); if prostatitis coexists: 4-6 weeks",
+          "Antibiotic choice for male UTI: fluoroquinolones (ciprofloxacin) have excellent prostatic tissue penetration — preferred for male UTI if susceptible organism; trimethoprim also achieves good prostatic penetration",
+          "Urology referral: all men after first episode of pyelonephritis or unexplained UTI — renal and bladder ultrasound, post-void residual, urine flow rate; cystoscopy if structural abnormality suspected"
+        ]
+      },
+      "pyelonephritis_in_immunocompromised": {
+        "key_points": [
+          "HIV/AIDS (CD4 <200), transplant recipients, chemotherapy patients, high-dose steroid users, and biologic therapy patients have dramatically higher risk of severe, unusual, and recurrent pyelonephritis",
+          "Fungal pyelonephritis (Candida) is an important diagnosis in immunocompromised, catheterised, and post-antibiotic patients — screen for Candida in urine culture when clinical picture does not respond to antibacterial antibiotics",
+          "Consider atypical organisms: Cryptococcus neoformans, Mycobacterium tuberculosis (renal TB), CMV, BK virus (transplant patients)",
+          "Transplant recipients: BK virus nephropathy causes nephritis mimicking pyelonephritis; check BK virus PCR in blood and urine in transplant patients with renal dysfunction",
+          "Renal TB: haematuria, sterile pyuria (WBCs in urine with negative standard bacterial culture), upper tract scarring — 'morning urine' Mycobacterial culture essential; 6-12 month anti-TB therapy",
+          "Lower threshold for IV antibiotics, imaging, and longer antibiotic courses; culture-guided therapy essential",
+          "Antibiotic prophylaxis (co-trimoxazole) in HIV/AIDS and transplant recipients also reduces UTI risk but TMP-SMX resistance limits its efficacy for treatment"
+        ]
+      },
+      "pyelonephritis_in_catheterised_patients": {
+        "key_points": [
+          "Catheter-associated UTI (CAUTI) is the most common healthcare-associated infection; every day of urinary catheterisation increases bacteriuria by 5-10%",
+          "CRITICAL PRINCIPLE: Do NOT treat asymptomatic bacteriuria in catheterised patients — a positive urine culture in a catheterised patient without symptoms (fever, new confusion, loin pain, haemodynamic instability) is colonisation, not infection; treating asymptomatic bacteriuria drives resistance and C. difficile",
+          "Treat CAUTI only if: fever >38°C without other source, new confusion, loin pain, haemodynamic instability, or pre-operatively",
+          "Catheter should be changed if in situ more than 48-72 hours before sending urine culture for CAUTI investigation — existing catheter is colonised with biofilm bacteria that do not represent true infection; new catheter sample is more representative",
+          "Antibiotic choice: guided by culture — Pseudomonas and ESBL are more common in catheter-related infection than community UTI",
+          "Prevention: remove urinary catheters as early as clinically possible; strict catheter care (closed drainage system, secure catheter to prevent trauma, regular drainage bag emptying with sterile technique, meatal hygiene); use smallest effective catheter gauge; consider intermittent catheterisation over indwelling where possible (lower infection risk)"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Annual Influenza Vaccine",
+        "frequency": "Annually before flu season (October-November in India)",
+        "reason": "Influenza causes significant immunosuppression, increasing susceptibility to secondary bacterial infections including pyelonephritis. Elderly patients and diabetics with influenza are at particular risk of secondary bacteraemia from urinary sources. All patients with recurrent pyelonephritis — particularly elderly, diabetics, and immunocompromised — should receive annual influenza vaccination.",
+        "effectiveness": "40-60% efficacy (varies with strain match); significantly reduces secondary bacterial infections"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine",
+        "frequency": "PCV15 or PCV20 once; PPSV23 booster in high-risk groups",
+        "reason": "Patients hospitalised with urosepsis are at risk of secondary pneumococcal pneumonia and bacteraemia in the post-sepsis immunosuppressed state. Elderly (>65 years) with pyelonephritis and those with renal impairment should be up to date with pneumococcal vaccination.",
+        "indication": "All adults >65 years; all patients with CKD from recurrent pyelonephritis"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "frequency": "Primary series and boosters per national schedule",
+        "reason": "COVID-19 infection is associated with exacerbation of pre-existing UTI and increased risk of secondary bacterial infections. Diabetics and immunocompromised patients (high-risk groups for pyelonephritis) are at higher risk of severe COVID-19 and secondary bacterial infections. Ensure all vulnerable patients with recurrent pyelonephritis are fully vaccinated against COVID-19.",
+        "recommendation": "Follow national vaccination schedule; particularly important in diabetics and immunocompromised"
+      },
+      {
+        "vaccine": "Typhoid Vaccine",
+        "frequency": "Injectable Vi polysaccharide single dose (booster every 3 years); or oral Ty21a 4 capsules (booster every 5 years)",
+        "reason": "Salmonella Typhi bacteraemia during typhoid fever can seed to the kidneys causing nephritis and pyelonephritis (salmonella pyelonephritis). In India and endemic areas, typhoid fever can be complicated by urinary tract involvement. Typhoid vaccination protects against the primary infection and reduces complication risk.",
+        "note": "Particularly relevant for travel to endemic areas and for residents of areas with poor sanitation"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "frequency": "3-dose series if not immune",
+        "reason": "Hepatitis B can cause membranous nephropathy and glomerulonephritis which increases susceptibility to urinary tract infections. Patients with chronic kidney disease from recurrent pyelonephritis should be vaccinated against hepatitis B (reduced immune response requires higher dose or additional booster doses in CKD).",
+        "note": "Patients with eGFR <30 may require double-dose hepatitis B vaccine (40 mcg instead of 20 mcg) due to impaired immune response"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "ANY suspected pyelonephritis — fever with loin/flank pain with or without urinary symptoms — requires SAME DAY medical assessment; do not wait for symptoms to progress",
+      "Fever above 38°C with any of the following: loin or back pain, burning on urination, frequent urination, nausea and vomiting, or general severe illness",
+      "Burning on urination (dysuria) and urinary frequency without fever (cystitis) — same-day GP appointment; urine culture required; do not treat with over-the-counter remedies without medical evaluation",
+      "Symptoms not improving within 24-48 hours of starting antibiotics for UTI — possible resistant organism, pyelonephritis not cystitis, or complication developing",
+      "Haematuria (blood in urine) — all cases require urine culture and appropriate investigation to exclude bladder cancer (in over 50s), kidney stones, and glomerulonephritis in addition to UTI",
+      "Male patient with any UTI symptoms — see doctor same day; all male UTI requires urological investigation",
+      "Pregnant woman with any urinary symptoms — urgent same-day assessment; pyelonephritis in pregnancy is a medical emergency",
+      "Child under 2 years with fever and no obvious source — urine culture mandatory; do not assume viral illness without testing",
+      "Recurrent UTIs (2+ in 6 months or 3+ in 12 months) — GP review to investigate underlying cause, consider prophylaxis, urological referral, and lifestyle interventions",
+      "Diabetic with UTI symptoms — same-day medical review; higher risk of severe disease and emphysematous pyelonephritis",
+      "Elderly person with new confusion or fall with or without urinary symptoms — always send urine culture as part of delirium workup",
+      "History of renal stones with new fever and loin pain — urgent assessment for obstructing infected stone (pyonephrosis risk)",
+      "Immunocompromised patient with urinary symptoms or fever — same-day assessment; higher risk of severe disease and unusual organisms",
+      "Post-treatment: fever or symptoms returning within 2 weeks of completing antibiotic course — possible relapse or recurrence; send urine culture before restarting antibiotics"
+    ],
+
+    "emergency_signs": [
+      "Rigors (uncontrollable violent shivering with extreme chills lasting 15-30 minutes) followed by high fever and sweating — BACTERAEMIA — CALL EMERGENCY SERVICES (102/112/999/911) and go to emergency department; blood cultures and IV antibiotics needed immediately",
+      "Confusion, altered consciousness, or inability to rouse — UROSEPSIS with organ dysfunction — EMERGENCY; call emergency services",
+      "Heart rate above 120 bpm with hypotension (systolic BP below 90 mmHg), cold clammy skin, mottling — SEPTIC SHOCK — life-threatening emergency; call emergency services immediately",
+      "Temperature above 40°C or below 36°C (hypothermia — particularly ominous in elderly) — SEVERE SEPSIS — EMERGENCY",
+      "No urine output for 8+ hours despite adequate fluid intake with high fever and loin pain — possible obstructing infected stone with AKI — EMERGENCY; urology and nephrology needed urgently",
+      "Severe loin pain radiating to groin with high fever and vomiting — possible pyonephrosis (obstructed infected kidney) — SURGICAL EMERGENCY; requires emergency ureteric drainage; antibiotics alone will fail",
+      "Pregnant woman with fever above 38°C and loin pain — obstetric emergency; risk of preterm labour and maternal sepsis — go to hospital maternity unit immediately",
+      "Diabetic patient with worsening fever despite 48-72 hours of antibiotics — possible emphysematous pyelonephritis (gas in kidney); CT scan urgently needed; emergency surgical or drainage intervention may be required",
+      "Palpable tender flank mass in febrile patient — possible large renal or perinephric abscess requiring emergency drainage",
+      "Fever persisting beyond 72 hours of appropriate IV antibiotics — failure to respond; urgent CT scan for abscess or obstruction; change antibiotics pending culture results",
+      "Child with high fever, loin tenderness, and very reduced urine output — possible AKI from pyelonephritis; paediatric emergency"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is the difference between a kidney infection (pyelonephritis) and a bladder infection (cystitis)?",
+        "answer": "Both are urinary tract infections (UTIs) but they affect different parts of the urinary tract and have different severity. Cystitis (lower UTI) affects only the bladder — causing burning on urination, urinary frequency, urgency, and sometimes blood in the urine, but NOT fever or loin pain. It is uncomfortable but not dangerous for most people. Pyelonephritis (upper UTI / kidney infection) occurs when bacteria ascend from the bladder to infect the kidney itself — causing high fever (often with rigors/shivering), flank/loin pain, and systemic illness (nausea, vomiting, weakness) in addition to urinary symptoms. Pyelonephritis is significantly more serious — it can cause bacteraemia (bacteria in the blood), septic shock, and permanent kidney damage if untreated. Fever with loin pain = pyelonephritis until proven otherwise — requires same-day medical assessment."
+      },
+      {
+        "question": "What causes pyelonephritis and why do women get it more than men?",
+        "answer": "Pyelonephritis is almost always caused by bacteria (most commonly Escherichia coli — the bacterium normally found in the bowel) ascending from the lower urinary tract to the kidneys. Women get pyelonephritis far more commonly (7-10 times) than men for anatomical reasons: the female urethra is only 3-4 cm long compared to 20 cm in men, making it much easier for bacteria from the periurethral area (near the vagina and anus) to travel to the bladder and then up to the kidneys. Sexual activity, pregnancy, and menopause (oestrogen deficiency reducing protective vaginal flora) are major additional risk factors. In men, the longer urethra and prostate secretions with antibacterial properties protect against ascending infection — any UTI in a man is considered unusual and should prompt investigation for an underlying cause."
+      },
+      {
+        "question": "How is pyelonephritis treated and do I need to be admitted to hospital?",
+        "answer": "Most uncomplicated cases in healthy young women can be treated with oral antibiotics at home — provided nausea and vomiting are not preventing fluid and medication intake and fever is not extremely high. However, hospital admission is needed for: pregnant women (all cases), men (always investigated as complicated), elderly patients (faster dehydration and delirium risk), diabetics (risk of severe emphysematous pyelonephritis), anyone with significant vomiting, signs of sepsis, or no improvement within 24-48 hours of oral antibiotics. In hospital, IV antibiotics are given until fever resolves (usually 24-48 hours), then switched to oral to complete the course. CRITICAL in India and high-ESBL-prevalence areas: always send urine culture before antibiotics — E. coli resistant to standard oral antibiotics (ESBL-producing strains) is extremely common, and blind empirical treatment may fail without culture guidance."
+      },
+      {
+        "question": "Why is there so much antibiotic resistance in UTI and pyelonephritis now?",
+        "answer": "Antibiotic resistance in urinary tract infections — particularly from ESBL-producing E. coli — has become a critical problem globally, and especially in India. ESBL (extended-spectrum beta-lactamase) is an enzyme that many E. coli strains now carry that destroys most common antibiotics (cephalosporins, co-amoxiclav, and often fluoroquinolones like ciprofloxacin). In some Indian cities, 40-60% of community E. coli UTI isolates now produce ESBL — meaning standard oral antibiotics do not work for nearly half of patients. Causes include: overuse and misuse of antibiotics (self-medication without prescription, not completing courses), use of antibiotics in animal farming (shared resistance genes), spread through contaminated water and food, and international travel. This is why urine culture before antibiotics is so important — without knowing the organism's sensitivity profile, choosing the right antibiotic is very difficult. Carbapenems (IV antibiotics like ertapenem or meropenem) are the only reliable treatment for ESBL infections — this is a serious public health crisis requiring urgent action on antimicrobial stewardship."
+      },
+      {
+        "question": "What is the most important thing to do for pyelonephritis at home?",
+        "answer": "Three essential things: (1) Complete the full antibiotic course exactly as prescribed — even when you feel better within 48-72 hours, bacteria may persist in the kidney and stopping early risks relapse and resistance; (2) Drink plenty of fluids — minimum 2.5-3 litres of water and fluids daily; high urine flow physically flushes bacteria from the urinary tract and maintains kidney perfusion; (3) Monitor temperature twice daily and watch for warning signs — if fever does not improve within 48-72 hours of antibiotics, or if you develop confusion, severe worsening of symptoms, or inability to pass urine — go to emergency department immediately. Paracetamol is safe for fever; avoid NSAIDs (ibuprofen) if you are dehydrated or your kidney function may be affected."
+      },
+      {
+        "question": "I keep getting kidney infections — is there anything I can do to prevent them?",
+        "answer": "Yes — recurrent UTI and pyelonephritis are largely preventable. The most evidence-based measures are: (1) Drink 2.5-3 litres of water daily — high urine flow is the single most important prevention strategy; (2) Urinate after sexual intercourse (within 15-30 minutes) — flushes bacteria from the urethra; (3) Change contraception method if using spermicides or a diaphragm — these disrupt the protective vaginal Lactobacillus flora significantly; (4) Take D-mannose supplement (2g daily) — competes with E. coli for uroepithelial binding receptors; RCT evidence comparable to antibiotic prophylaxis; (5) Eat daily plain yogurt (dahi) or take Lactobacillus probiotics — restore protective vaginal and gut flora; (6) For post-menopausal women — vaginal oestrogen cream prescribed by GP; (7) Ask GP about low-dose preventive antibiotics (trimethoprim 100mg nightly) if all the above fail. Also investigate for: diabetes, VUR, incomplete bladder emptying, and urological abnormalities."
+      },
+      {
+        "question": "Is nitrofurantoin (Macrobid/Furadantin) safe to take for a kidney infection?",
+        "answer": "NO — nitrofurantoin should NEVER be used for pyelonephritis (kidney infection). This is a critically important distinction. Nitrofurantoin achieves very high concentrations in the urine but does NOT achieve adequate concentrations in the kidney tissue or bloodstream — it is effective only for lower urinary tract infections (cystitis — bladder infection). Using nitrofurantoin for pyelonephritis will appear to improve urinary symptoms temporarily but will fail to eradicate bacteria from the kidney, risking relapse, complications, and antibiotic resistance. Nitrofurantoin is appropriate ONLY for uncomplicated cystitis (lower UTI) and as prophylaxis for recurrent UTI — not for treatment of kidney infection."
+      },
+      {
+        "question": "How long will it take to recover from pyelonephritis?",
+        "answer": "For uncomplicated pyelonephritis in a healthy young woman: fever typically resolves within 48-72 hours of starting appropriate antibiotics; urinary symptoms (burning, frequency) improve within 24-48 hours; loin pain typically resolves within 3-5 days; general fatigue and malaise can persist for 2-4 weeks even after all other symptoms resolve — this is normal. Antibiotic course is typically 7 days (for fluoroquinolones) or 10-14 days (for beta-lactams). You should feel progressively better from day 2-3 of antibiotics — if not improving, contact your doctor. Complete the full course even if feeling well earlier. Return to normal activities when fever-free for 48 hours. More complex cases (abscess, sepsis, ESBL organisms) may require 4-6 weeks of antibiotics and much longer clinical recovery."
+      },
+      {
+        "question": "My child had a kidney infection — what tests should be done to check for underlying problems?",
+        "answer": "After a febrile UTI in a child, investigations for underlying structural abnormalities are important — particularly vesicoureteric reflux (VUR) which causes recurrent pyelonephritis and permanent renal scarring. Current NICE UK guidance recommends: (1) Renal ultrasound in all children after febrile UTI — checks kidney size, scarring, and collecting system; (2) DMSA scintigraphy scan at 4-6 months after acute infection — the most sensitive test to detect renal cortical scarring; (3) Micturating cystourethrogram (MCUG) — detects vesicoureteric reflux; recommended for all boys after first UTI and girls after a second UTI or with ultrasound abnormality. Antibiotic prophylaxis (low-dose cefalexin or trimethoprim nightly) is prescribed for children with significant VUR or recurrent pyelonephritis while awaiting possible surgical correction. Long-term blood pressure monitoring and kidney function checks are needed for children with renal scarring."
+      },
+      {
+        "question": "I'm pregnant and have been told I have bacteria in my urine but no symptoms. Do I need treatment?",
+        "answer": "YES — absolutely. Asymptomatic bacteriuria (bacteria in urine without symptoms) in pregnancy is a medical condition requiring antibiotic treatment, unlike in non-pregnant adults where it usually requires no treatment. In pregnancy, asymptomatic bacteriuria progresses to symptomatic UTI or pyelonephritis in 30-40% of untreated cases — putting both mother and baby at risk. This is why all pregnant women are screened with a urine culture at their booking (first) antenatal visit and often at subsequent visits. Treatment: pregnancy-safe antibiotics (amoxicillin-clavulanate, cefalexin, or nitrofurantoin — but NOT in the last month of pregnancy) for 3-7 days, followed by a test-of-cure urine culture 7 days after completing treatment, and repeat urine cultures at subsequent antenatal visits."
+      },
+      {
+        "question": "What does a 'kidney infection test' (urine test) actually show, and how accurate is it?",
+        "answer": "There are two levels of urine testing for pyelonephritis: (1) Urine dipstick (urinalysis) — a rapid 60-second test measuring leucocyte esterase (marker of white blood cells from infection — 75% sensitive) and nitrites (marker of Gram-negative bacteria reducing nitrates — 50% sensitive but very specific); combined positive result has ~90% sensitivity. A positive dipstick strongly supports UTI but does NOT identify the specific organism or antibiotic sensitivities — this is the limitation. (2) Urine culture and sensitivity (MSU) — the gold standard test; takes 24-72 hours to grow the bacteria in the laboratory and test antibiotic susceptibilities. This test tells you exactly what organism is causing the infection and which antibiotics will work. Urine culture should be sent before starting antibiotics for ALL cases of pyelonephritis — in India especially, where ESBL resistance rates are very high, knowing the organism's sensitivity is essential to choosing the correct antibiotic. White blood cell casts in urine microscopy are pathognomonic (highly specific) for pyelonephritis, confirming kidney rather than bladder involvement."
+      }
+    ],
+
+    "references": [
+      "National Institute for Health and Care Excellence (NICE) — Urinary Tract Infection (Lower) — Women (NG112, 2018, updated 2022)",
+      "NICE Clinical Guideline (CG54) — Urinary Tract Infection in Under 16s: Diagnosis and Management (2007, updated 2022)",
+      "NICE Guidance — Pyelonephritis (Acute): Antimicrobial Prescribing (NG111, 2018)",
+      "European Association of Urology (EAU) — Guidelines on Urological Infections (2023 Edition)",
+      "Infectious Diseases Society of America (IDSA) / European Society for Microbiology and Infectious Diseases (ESCMID) — International Clinical Practice Guidelines for the Treatment of Acute Uncomplicated Cystitis and Pyelonephritis in Women (Gupta K et al., CID 2011)",
+      "British Infection Association (BIA) — UK Standards for Microbiology Investigations: UTI Investigation (2020)",
+      "Indian Council of Medical Research (ICMR) — Treatment Guidelines for Antimicrobial Use in Common Syndromes: Urinary Tract Infections (2019)",
+      "ICMR-AMR Surveillance Network — Annual Report on Antimicrobial Resistance in India (2022)",
+      "Singer M et al. — The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3) — JAMA 2016",
+      "MERINO Trial — Piperacillin-Tazobactam vs Meropenem for ESBL Bacteraemia (Harris PNA et al., JAMA 2018)",
+      "Kranjcec B et al. — D-Mannose Powder for Prophylaxis of Recurrent Urinary Tract Infections in Women (World J Urol 2014)",
+      "Jepson RG et al. — Cranberries for Preventing Urinary Tract Infections (Cochrane Review, 2023)",
+      "Foxman B — Urinary Tract Infection Syndromes: Occurrence, Recurrence, Bacteriology, Risk Factors, and Disease Burden (Infect Dis Clin N Am 2014)",
+      "Hooton TM — Uncomplicated Urinary Tract Infection (NEJM, 2012)",
+      "Sobel JD — Urinary Tract Infections in Diabetic Women (Infect Dis Clin N Am)",
+      "RCOG Green-Top Guideline No. 64b — Bacterial Sepsis Following Pregnancy (2012)",
+      "WHO — Global Antimicrobial Resistance and Use Surveillance System (GLASS) Report 2022",
+      "UpToDate — Acute simple cystitis in women; Acute uncomplicated cystitis and pyelonephritis in women; Urinary tract infections in pregnant and postpartum women; Renal and perinephric abscess"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-PYELONEPHRITIS-018",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-04",
+      "last_updated": "2026-06-04",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is for educational and informational purposes for the MedoAir chatbot only. It does not replace professional medical advice, diagnosis, or treatment. Pyelonephritis can be life-threatening — any suspected kidney infection with fever and loin pain requires same-day medical evaluation. Urosepsis and septic shock are medical emergencies requiring immediate emergency services. ESBL-producing organisms require specialist microbiological guidance for antibiotic selection. Never self-treat suspected pyelonephritis without medical assessment and urine culture.",
+      "tags": ["pyelonephritis", "kidney infection", "upper UTI", "urinary tract infection", "urosepsis", "E. coli", "ESBL", "renal abscess", "emphysematous pyelonephritis", "pyonephrosis", "recurrent UTI", "cystitis", "antibiotic", "ciprofloxacin", "ceftriaxone", "gentamicin", "meropenem", "ertapenem", "D-mannose", "cranberry", "urine culture", "MSU", "vesicoureteric reflux", "VUR", "pregnancy UTI", "medoair"]
+    }
+  }
+}

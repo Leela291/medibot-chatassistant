@@ -92,30 +92,6 @@ def chat():
     history = session.memory.get_history()
     
     # =========================
-    # Symptom Triage
-    # =========================
-
-    # --------------------------------------------------
-    # Symptom-first flow
-    # --------------------------------------------------
-    symptom = None
-
-    try:
-        symptom = detect_symptom(message)
-    except Exception as e:
-        print(f"[Symptom Detector Error] {e}")
-
-    if symptom:
-
-        questions = TRIAGE_QUESTIONS.get(symptom, [])
-
-        answer = "I'd like to understand your symptoms better. Please answer the following questions:"
-
-        sources = []
-        
-        follow_up_questions = questions
-
-    # =========================
     # Location Tool
     # =========================
 
@@ -168,8 +144,6 @@ def chat():
         else:
             answer  = generate_response(message, history, stream=stream)
             sources = []
-        
-        follow_up_questions = []
             
     # 3. Stream or Return JSON
     if stream:
@@ -192,7 +166,7 @@ def chat():
     session.memory.add_assistant(answer)
     session_manager.save_session(session) 
     
-    return jsonify({"answer": answer, "session_id": session.session_id, "sources": sources, "is_emergency": False, "follow_up_questions": follow_up_questions})
+    return jsonify({"answer": answer, "session_id": session.session_id, "sources": sources, "is_emergency": False})
 
 @chatbot_bp.post("/chat/new")
 def new_session():

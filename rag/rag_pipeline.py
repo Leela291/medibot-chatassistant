@@ -10,6 +10,69 @@ from rag.response_parser import parse_response
 from llm.response_generator import generate_with_rag
 from llm.config import TOP_K_RESULTS
 
+# ─────────────────────────────────────────────────────────────
+# Words to strip when building a Wikipedia search query.
+# Keep medical/symptom words — only remove grammatical filler.
+# ─────────────────────────────────────────────────────────────
+QUERY_FILLER_WORDS = [
+    "what", "is", "a", "an", "the", "define", "explain",
+    "about", "how", "to", "for", "tell", "me", "please",
+    "why", "am", "i", "are", "do", "does", "did", "was",
+    "experiencing", "getting", "having", "feeling", "since",
+    "yesterday", "today", "suddenly", "lately", "recently",
+    "can", "could", "would", "should", "my", "your",
+    "we", "they", "it", "this", "that", "these", "those",
+]
+
+
+def build_wikipedia_query(user_query: str) -> str:
+    """
+    Extract the core medical topic from a user query.
+    
+    Examples:
+      "why am i experiencing throat pain since yesterday"
+        → "throat pain causes"
+      "what are the symptoms of food poisoning"
+        → "food poisoning symptoms"
+      "symptoms of constipation"
+        → "constipation symptoms"
+    """
+    query = user_query.lower().strip("? .!")
+    words = query.split()
+
+    # Remove filler words
+    keywords = [w for w in words if w not in QUERY_FILLER_WORDS and len(w) > 2]
+
+    # Limit to 4 keywords max for clean Wikipedia search
+    clean_query = " ".join(keywords[:4])
+
+    return clean_query if clean_query else user_query
+
+
+def validate_wikipedia_result(wiki_result: str, user_query: str) -> bool:
+    """
+    Check that the Wikipedia result actually matches the user's topic.
+    Prevents using a 'food poisoning' article when user asked about 'throat pain'.
+    """
+    if not wiki_result:
+        return False
+
+    # Extract key topic words from query (ignore filler)
+    query_words = [
+        w for w in user_query.lower().split()
+        if w not in QUERY_FILLER_WORDS and len(w) > 3
+    ]
+
+    # At least one key topic word must appear in the Wikipedia result
+    result_lower = wiki_result.lower()
+    matches = [w for w in query_words if w in result_lower]
+
+    if not matches:
+        print(f"[RAG Wikipedia] ❌ Discarded: result didn't match query keywords {query_words}")
+        return False
+
+    print(f"[RAG Wikipedia] ✅ Validated: matched keywords {matches}")
+    return True
 
 # ─────────────────────────────────────────────────────────────
 # Words to strip when building a Wikipedia search query.
@@ -104,7 +167,11 @@ def run_rag(
         chunk_disease_clean = chunk_disease.lower().strip()
         query_clean = user_query.lower()
 
+
+        # Reject Reason A: The math score is weak (distance > 0.85)
+
         # Reject A: Weak similarity score
+ 
         if best_score < 0.50:
             needs_wikipedia = True
             retrieved_chunks = []

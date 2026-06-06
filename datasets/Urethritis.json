@@ -1,0 +1,1329 @@
+{
+  "disease": {
+    "id": "DIS-017",
+    "name": "Urethritis",
+    "scientific_name": "Urethritis / Inflammation of the Urethra",
+    "icd_10_code": "N34 (Urethritis and urethral syndrome); N34.1 (Non-specific urethritis); N34.2 (Other urethritis); A54.0 (Gonococcal urethritis); A56.0 (Chlamydial urethritis); A59.0 (Trichomonas vulvovaginitis/urethritis)",
+    "category": "Urological / Sexually Transmitted Infection (STI) / Genitourinary Disease",
+    "overview": {
+      "description": "Urethritis is inflammation of the urethra — the tube that carries urine from the bladder to the outside of the body. It is one of the most common genitourinary conditions worldwide, predominantly caused by sexually transmitted pathogens (gonococcal urethritis and non-gonococcal urethritis) but also by non-infectious causes (chemical irritants, trauma, reactive arthritis). Urethritis manifests characteristically as dysuria (painful urination), urethral discharge, and urethral discomfort, though it is often asymptomatic — particularly in women and in chlamydial infection — leading to unrecognised transmission and complications including pelvic inflammatory disease, epididymo-orchitis, reactive arthritis, infertility, and increased HIV transmission risk.",
+      "affected_organ": "Urethra (and adjacent genitourinary structures — prostate, epididymis, cervix, fallopian tubes, Bartholin's glands)",
+      "prevalence": "One of the most common STIs globally — Chlamydia: 128 million new cases/year (WHO 2020); Gonorrhoea: 82 million new cases/year (WHO 2020). Non-gonococcal urethritis (NGU) is the most common STI syndrome in men attending sexual health clinics in high-income countries.",
+      "age_group": "Predominantly sexually active adults aged 15-49 years; peak incidence in 15-25 year age group",
+      "sex_differences": "Men typically more symptomatic (urethral discharge and dysuria easier to detect). Women often asymptomatic or present with vaginal discharge, dysuria or intermenstrual bleeding — symptoms overlapping with other genitourinary conditions (UTI, vaginitis, cervicitis). Urethritis is a clinical syndrome diagnosis in men; in women, cervicitis and urethritis frequently coexist.",
+      "is_contagious": true,
+      "is_contagious_note": "Sexually transmitted urethritis is transmitted through vaginal, anal, and oral sexual contact; some causes also transmitted vertically (mother to neonate)",
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": false,
+      "partner_treatment_essential": true
+    },
+
+    "anatomy_note": {
+      "male_urethra": "~20 cm long; divided into: prostatic urethra (through prostate gland), membranous urethra, and penile (spongy) urethra. Infection can ascend to cause prostatitis, epididymitis, and orchitis.",
+      "female_urethra": "~4 cm long; more susceptible to ascending infection because of its proximity to vagina and anus and shorter length. In women, urethritis and cervicitis almost always coexist with STIs.",
+      "clinical_relevance": "Understanding anatomy explains complication patterns: men develop epididymo-orchitis from ascending infection; women develop PID (pelvic inflammatory disease) from ascending cervical infection"
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Gonococcal Urethritis (GU)",
+        "causative_agent": "Neisseria gonorrhoeae (Gram-negative diplococcus)",
+        "description": "Urethritis caused by Neisseria gonorrhoeae — a sexually transmitted Gram-negative diplococcus. Characteristically causes profuse, purulent (thick yellow-green) urethral discharge and dysuria with a shorter incubation period (1-5 days). Gonococcal urethritis has serious complications (DGI, epididymo-orchitis, PID) and is a public health priority due to rapidly emerging antibiotic resistance.",
+        "transmission": "Unprotected vaginal, anal, or oral sexual contact; vertical transmission during childbirth (neonatal conjunctivitis — ophthalmia neonatorum)",
+        "incubation": "1-5 days",
+        "discharge_character": "Profuse, purulent (thick), yellow or yellow-green",
+        "asymptomatic_prevalence": "~10% of men; up to 80% of women may be asymptomatic",
+        "resistance_concern": "Extensively drug-resistant (XDR) gonorrhoea is an emerging global threat — resistance to penicillin, tetracycline, fluoroquinolones, and increasingly azithromycin; last line treatments being challenged",
+        "common_in": "Sexually active adults; MSM (higher rates); adolescents; sex workers"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Non-Gonococcal Urethritis (NGU)",
+        "description": "Urethritis where Neisseria gonorrhoeae has been excluded. The most common type of urethritis in men presenting to sexual health clinics in high-income countries. Multiple causative agents — Chlamydia trachomatis accounts for 30-40%; the remainder are caused by Mycoplasma genitalium, Ureaplasma urealyticum/parvum, Trichomonas vaginalis, HSV, and other organisms. Often milder presentation than gonococcal urethritis.",
+        "causative_agents_ranked": [
+          "Chlamydia trachomatis (30-40% of NGU)",
+          "Mycoplasma genitalium (15-20% of NGU)",
+          "Ureaplasma urealyticum / Ureaplasma parvum (7-30% of NGU)",
+          "Trichomonas vaginalis (5% of NGU, higher in some populations)",
+          "Herpes Simplex Virus type 1 and 2 (2-3%)",
+          "Adenovirus (2-3% — usually with pharyngeal exposure)",
+          "Haemophilus influenzae (rare)",
+          "Enteric organisms (E. coli — after anal intercourse)",
+          "Unknown/Idiopathic (30-40% of NGU cases — no pathogen identified)"
+        ],
+        "discharge_character": "Scanty to moderate, clear to mucoid (less purulent than GU)",
+        "incubation": "1-5 weeks (Chlamydia typically 7-21 days)",
+        "common_in": "Sexually active young adults; highest rates in 15-25 year olds"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Chlamydial Urethritis",
+        "causative_agent": "Chlamydia trachomatis (serovars D-K)",
+        "description": "The most common specific cause of non-gonococcal urethritis globally. An obligate intracellular bacterium causing urethritis in men and cervicitis/urethritis in women. The 'silent STI' — approximately 50% of men and 70-80% of women are ASYMPTOMATIC. Without treatment, ascending infection causes epididymo-orchitis in men and PID (tubo-ovarian abscess, tubal infertility, ectopic pregnancy) in women. Also causes reactive arthritis.",
+        "special_features": ["Obligate intracellular organism — not culturable on routine bacteriological media; requires special laboratory methods", "Long-term sequelae from asymptomatic untreated infection", "Does NOT cause profuse purulent discharge (unlike gonorrhoea)"],
+        "transmission": "Unprotected sexual contact; vertical from mother to neonate during delivery (neonatal conjunctivitis, neonatal pneumonia)",
+        "asymptomatic_prevalence": "50% of infected men; 70-80% of infected women"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Mycoplasma genitalium Urethritis",
+        "causative_agent": "Mycoplasma genitalium",
+        "description": "An increasingly recognised and important cause of NGU (15-20%) and cervicitis. Mycoplasma genitalium is associated with persistent/recurrent urethritis and treatment failure, largely because it has developed high rates of macrolide (azithromycin) resistance. It has a long doubling time and is difficult to treat. Causes similar complications to Chlamydia.",
+        "resistance_concern": "High and increasing rates of azithromycin resistance (macrolide resistance); moxifloxacin (fluoroquinolone) is second-line treatment; resistance testing (for macrolide resistance) now recommended before treatment in many guidelines",
+        "clinical_significance": "Major cause of treatment-resistant and persistent NGU; complications include prostatitis, epididymo-orchitis (men) and PID, tubal factor infertility (women)"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Trichomonal Urethritis",
+        "causative_agent": "Trichomonas vaginalis (protozoan parasite)",
+        "description": "Caused by the sexually transmitted protozoan Trichomonas vaginalis. In women: causes vaginitis (frothy, yellow-green discharge, vulval irritation). In men: usually asymptomatic (prostatitis/urethritis possible) — men are primarily asymptomatic carriers. A significant but often overlooked cause of NGU — accounts for up to 5% of NGU in men in some populations.",
+        "epidemiology": "Most common non-viral STI in the world; WHO estimates 156 million new infections per year; higher prevalence in sub-Saharan Africa and parts of Asia",
+        "asymptomatic_in_men": "70-80% of infected men are asymptomatic but remain infectious"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Herpetic Urethritis",
+        "causative_agent": "Herpes Simplex Virus type 1 (HSV-1) and type 2 (HSV-2)",
+        "description": "Urethritis caused by herpes simplex virus. Accounts for 2-3% of NGU cases. Characterised by very severe dysuria (often described as the worst dysuria the patient has experienced), urethral discharge, associated genital ulcers or vesicles, and systemic symptoms (fever, malaise, inguinal lymphadenopathy) during primary infection. Recurrent episodes are common (especially HSV-2).",
+        "clinical_features": "Severe dysuria; genital ulcers/blisters; systemic features (primary infection); inguinal lymphadenopathy"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Non-Infectious / Irritant Urethritis",
+        "description": "Urethritis from non-infectious causes. Important to distinguish from STI-related urethritis as it does not require antibiotics or partner notification. Often overlooked cause of dysuria and urethral discomfort.",
+        "causes": [
+          "Chemical irritants: soaps, shower gels, bubble bath, perfumed products applied to genitals",
+          "Spermicidal agents (nonoxynol-9) — chemical urethral irritation",
+          "Latex condom allergy or lubricant sensitivity",
+          "Urethral trauma — vigorous sexual activity, masturbation, catheterisation, cystoscopy",
+          "Physical manipulation of urethra (fingering, sexual devices)",
+          "Urethral foreign body",
+          "Detergents or fabric softeners in underwear",
+          "Excessive handwashing with antiseptics"
+        ],
+        "diagnosis": "Urethritis symptoms with negative STI screen; history of chemical or physical exposure"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Reactive Urethritis (Urethritis in Reactive Arthritis / Reiter's Syndrome)",
+        "description": "Urethritis as part of reactive arthritis — an immune-mediated systemic condition triggered by infection (urogenital Chlamydia most commonly; also GI pathogens — Salmonella, Campylobacter, Shigella, Yersinia). The classic 'Reiter's triad': urethritis + arthritis + conjunctivitis. Also includes circinate balanitis (painless penile skin lesions) and keratoderma blenorrhagica (skin lesions resembling psoriasis).",
+        "associated_infection": "Chlamydia trachomatis most common urogenital trigger; HLA-B27 gene increases susceptibility",
+        "treatment": "Treat the causative organism; NSAIDs and DMARDs for arthritis; systemic management"
+      },
+      {
+        "id": "TYPE-09",
+        "name": "Persistent/Recurrent Non-Gonococcal Urethritis (PNGU / RNGU)",
+        "description": "Urethritis that persists or recurs after standard treatment. A significant clinical challenge. Causes include: antibiotic resistance (especially Mycoplasma genitalium macrolide resistance), re-infection from untreated partner, inadequate treatment adherence, Ureaplasma infection, Trichomonas vaginalis (often missed), undiagnosed chemical/traumatic cause, or true idiopathic urethritis.",
+        "management": "Extended or alternative antibiotic courses; partner re-treatment; Mycoplasma resistance testing; Trichomonas testing; exclude chemical causes"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Asymptomatic Urethritis",
+        "description": "Laboratory evidence of urethral infection (positive NAAT, positive swab culture) without symptoms. Most common presentation of chlamydial urethritis in women and trichomoniasis in men.",
+        "symptoms": "None — detected only through screening or contact tracing",
+        "significance": "Despite absence of symptoms, organism is present and transmissible; complications (PID, epididymitis) can still develop; treatment mandatory",
+        "management": "Full STI treatment; partner notification; same as symptomatic; testing for co-infections"
+      },
+      {
+        "level": 2,
+        "name": "Mild Symptomatic Urethritis",
+        "description": "Mild dysuria and minimal or intermittent urethral discharge; minimal impact on daily activities",
+        "symptoms": "Mild burning on urination; scant clear or mucoid discharge (especially morning); mild urethral discomfort; no systemic features",
+        "functional_impact": "Mild discomfort; daily activities mostly unaffected",
+        "management": "Appropriate STI testing and antibiotic treatment; partner notification; sexual abstinence during treatment"
+      },
+      {
+        "level": 3,
+        "name": "Moderate Symptomatic Urethritis",
+        "description": "Significant dysuria and urethral discharge causing meaningful distress",
+        "symptoms": "Moderate to severe dysuria; noticeable urethral discharge (may be purulent); urethral itch; frequent urination; urethral discomfort at rest",
+        "functional_impact": "Significant discomfort affecting daily activities and sexual function",
+        "management": "STI full evaluation; dual antibiotic therapy (cover both GU and NGU); partner notification; refrain from sexual activity"
+      },
+      {
+        "level": 4,
+        "name": "Severe / Complicated Urethritis",
+        "description": "Urethritis with complications: systemic spread, ascending infection, or associated systemic illness",
+        "symptoms": "Severe systemic symptoms (fever, rigors, widespread joint pain); ascending complications (epididymo-orchitis — unilateral testicular pain and swelling; pelvic inflammatory disease — lower abdominal pain, abnormal vaginal discharge, fever); disseminated gonococcal infection (skin rash, migratory polyarthritis)",
+        "functional_impact": "Significant disability; hospitalisation may be required",
+        "management": "Hospitalisation for complicated cases; IV antibiotics; gynaecology/urology specialist referral; partner management; STI contact tracing"
+      }
+    ],
+
+    "causes": {
+      "infectious_causes": {
+        "sexually_transmitted_organisms": [
+          {
+            "organism": "Neisseria gonorrhoeae",
+            "type": "Gram-negative diplococcus (bacterium)",
+            "prevalence_in_urethritis": "~20-30% of urethritis in STI clinic attendees (varies by population)",
+            "mechanism": "Adheres to urethral epithelium via pili and outer membrane proteins; invades and replicates within urethral mucosal cells; causes intense purulent inflammation; can ascend to cause epididymo-orchitis, PID, and systemic dissemination",
+            "antibiotic_resistance": "Multi-drug resistant (MDR) and extensively drug-resistant (XDR) gonorrhoea is a major global health emergency — WHO priority pathogen; resistant to penicillins (plasmid and chromosomal), tetracyclines, fluoroquinolones (>50% resistance in many countries), and macrolides; ceftriaxone remains primary treatment but decreasing susceptibility reported"
+          },
+          {
+            "organism": "Chlamydia trachomatis",
+            "type": "Obligate intracellular bacterium",
+            "prevalence_in_urethritis": "30-40% of NGU; most common identifiable cause of NGU",
+            "mechanism": "Elementary bodies (infective form) attach to columnar epithelial cells; enter cells and multiply as reticulate bodies; large chlamydial inclusions visible on special staining; exits by cell lysis (destructive) or exocytosis",
+            "serovars": "Serovars D-K cause urogenital infection; serovars L1-L3 cause Lymphogranuloma Venereum (LGV) — more invasive"
+          },
+          {
+            "organism": "Mycoplasma genitalium",
+            "type": "Atypical bacterium (smallest self-replicating bacterium)",
+            "prevalence_in_urethritis": "15-20% of NGU; 30-40% of persistent/recurrent NGU",
+            "mechanism": "Attaches to urethral epithelium via specialized tip structure; lacks cell wall (intrinsically resistant to beta-lactam antibiotics and glycopeptides); slowly replicating (doubling time ~12 hours)",
+            "resistance": "Macrolide resistance (mutations in 23S rRNA gene) in 30-60% in many countries; growing fluoroquinolone resistance"
+          },
+          {
+            "organism": "Ureaplasma urealyticum / Ureaplasma parvum",
+            "type": "Atypical bacterium (Mollicute)",
+            "prevalence_in_urethritis": "7-30% of NGU (causative role debated — high asymptomatic carriage)",
+            "mechanism": "May cause urethritis through urease production and ammonia generation; lacks cell wall"
+          },
+          {
+            "organism": "Trichomonas vaginalis",
+            "type": "Flagellated protozoan parasite",
+            "prevalence_in_urethritis": "5% of NGU in men (higher in some populations and settings)",
+            "mechanism": "Attaches to urethral epithelium; causes direct cytopathic effect and inflammatory response; primarily causes vaginitis in women"
+          },
+          {
+            "organism": "Herpes Simplex Virus (HSV-1 and HSV-2)",
+            "type": "DNA virus",
+            "prevalence_in_urethritis": "2-3% of NGU",
+            "mechanism": "Infects urethral squamous and transitional epithelium; primary infection causes severe inflammation; establishes latency in sacral dorsal root ganglia with recurrent episodes"
+          },
+          {
+            "organism": "Adenovirus",
+            "type": "DNA virus",
+            "prevalence_in_urethritis": "2-3% of NGU (mainly after orogenital exposure)",
+            "mechanism": "Respiratory virus that can infect urogenital epithelium; may cause urethritis with associated pharyngitis"
+          }
+        ],
+        "non_sexually_transmitted_infections": [
+          "Uropathogens from UTI reaching urethra: E. coli, Klebsiella, Proteus (especially in women; anal intercourse)",
+          "Bacterial urethritis from urinary tract infection in children and elderly",
+          "Haemophilus influenzae (rare; usually in children)",
+          "Staphylococcus saprophyticus (young women — also causes UTI)"
+        ]
+      },
+      "non_infectious_causes": [
+        "Chemical irritants: soaps, shower gels, bubble bath, antiseptics, spermicides (nonoxynol-9)",
+        "Latex allergy or condom lubricant sensitivity",
+        "Mechanical trauma: vigorous sexual activity, masturbation, catheterisation, cystoscopy, urethral dilation",
+        "Foreign body in urethra",
+        "Urethral stricture (obstructs urinary flow — secondary inflammation)",
+        "Radiation urethritis (after radiotherapy for prostate/bladder/cervical cancer)",
+        "Reactive arthritis / Reiter's syndrome (immune-mediated post-infectious)",
+        "Autoimmune conditions (rare)",
+        "Behçet's disease (may involve urethra)",
+        "Fabric softeners and detergents on underwear"
+      ],
+      "risk_factors": [
+        "Unprotected sexual intercourse (vaginal, anal, oral) with new or multiple partners",
+        "Multiple sexual partners",
+        "Young age — highest rates of gonorrhoea and chlamydia in 15-25 year olds",
+        "Men who have sex with men (MSM) — higher rates of gonorrhoea and higher risk of multi-site infection (urethral + pharyngeal + rectal)",
+        "History of previous STIs — marker of risk behaviour",
+        "Inconsistent condom use",
+        "Commercial sex work",
+        "Partner with known STI",
+        "Sexual contact tracing — exposure to confirmed STI case",
+        "Use of spermicidal contraceptives (irritant; disrupt mucosal barrier)",
+        "Immunosuppression (HIV, steroids, chemotherapy) — altered mucosal immunity",
+        "Drug and alcohol use — impairs sexual decision-making",
+        "Low socioeconomic status and limited access to sexual health services",
+        "Lack of circumcision (some evidence for slightly higher STI rates)"
+      ]
+    },
+
+    "symptoms": {
+      "important_note": "Urethritis is frequently ASYMPTOMATIC — especially chlamydial infection (50-70% asymptomatic) and Mycoplasma genitalium. In women, urethritis and cervicitis typically coexist, and symptoms may be absent or attributed to UTI or vaginal infection. Asymptomatic individuals are still infectious and still at risk of complications. Screening is essential in at-risk populations.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-701",
+          "name": "Dysuria (Painful Urination)",
+          "description": "Burning, stinging, or painful sensation during or immediately after urination — felt along the urethra. Classically described as a 'burning pipe' sensation. In men, dysuria is often the most prominent symptom. In women, dysuria from urethritis may be difficult to distinguish from UTI (cystitis) — external dysuria (burning at the vaginal opening) suggests urethritis or vulvovaginitis more than internal dysuria (suprapubic pain on bladder filling) which suggests UTI.",
+          "severity": "Mild to Severe (most severe with herpetic urethritis)",
+          "onset": "1-5 days after exposure (gonorrhoea); 7-21 days (chlamydia); minutes to hours (chemical/traumatic)",
+          "note": "Herpetic urethritis causes the most severe dysuria of any urethritis type — sometimes so severe it causes urinary retention"
+        },
+        {
+          "id": "SYM-702",
+          "name": "Urethral Discharge",
+          "description": "Abnormal fluid discharge from the urethral meatus (urethral opening). Character helps distinguish gonococcal from non-gonococcal urethritis: PURULENT (thick, yellow or yellow-green, profuse) = strongly suggests gonococcal urethritis; MUCOID or MUCOPURULENT (clear to white-grey, scant to moderate) = more typical of NGU (Chlamydia, Mycoplasma). 'Morning drop' — small amount of discharge noticed when first waking and underwear staining — is a subtle early sign of NGU.",
+          "severity": "Varies — minimal in NGU; profuse in GU",
+          "onset": "With other symptoms",
+          "assessment": "Always examine the urethra by asking patient to 'milk' urethra if no spontaneous discharge visible; morning examination before first urination of day gives highest yield"
+        },
+        {
+          "id": "SYM-703",
+          "name": "Urethral Itch, Irritation, and Tingling",
+          "description": "Uncomfortable itching, tingling, or irritation at the urethral meatus or along the urethra, without voiding. Often an early or subtle symptom of urethritis — present even when discharge is minimal. May be the only symptom in mild NGU. Patients often describe it as 'something in the urethra' or 'uncomfortable feeling at the tip of the penis'.",
+          "severity": "Mild to Moderate",
+          "onset": "Often the earliest symptom — may precede discharge"
+        },
+        {
+          "id": "SYM-704",
+          "name": "Urinary Frequency and Urgency",
+          "description": "Increased need to urinate (frequency) or sudden compelling urge to urinate (urgency). Urethral inflammation causes irritation of bladder trigone (through shared innervation) — mimicking cystitis (UTI). Helps explain why women with urethritis often believe they have a urinary tract infection.",
+          "severity": "Mild to Moderate",
+          "note": "If urinary frequency/urgency is the predominant symptom without dysuria or discharge, consider UTI rather than STI — send MSU for culture"
+        },
+        {
+          "id": "SYM-705",
+          "name": "Urethral Redness and Swelling",
+          "description": "Erythema (redness) and oedema (swelling) at or around the urethral meatus — visible on examination. More prominent in gonococcal urethritis. May be associated with preputial (foreskin) inflammation (balanitis or balanoposthitis).",
+          "severity": "Mild to Moderate",
+          "onset": "With acute inflammation"
+        },
+        {
+          "id": "SYM-706",
+          "name": "Haematuria (Blood in Urine)",
+          "description": "Blood in the urine — may be visible (macroscopic haematuria — pink/red urine) or microscopic (detected on urine dipstick). Uncommon in urethritis but can occur with herpetic urethritis, very severe gonococcal urethritis, or urethral trauma. Haematuria with urethritis should also prompt consideration of UTI, urinary stones, or bladder pathology (especially in older patients).",
+          "severity": "Mild (microscopic) to Moderate (macroscopic)",
+          "note": "Haematuria in urethritis warrants urine dipstick and MSU culture"
+        }
+      ],
+      "secondary_symptoms": [
+        "Penile tip soreness and tenderness — especially on physical examination",
+        "Underwear or clothing staining from urethral discharge",
+        "Dyspareunia (painful intercourse) — especially in women with concurrent cervicitis",
+        "Intermenstrual or post-coital bleeding in women — sign of concomitant cervicitis (Chlamydia, gonorrhoea)",
+        "Altered vaginal discharge in women — increased volume, abnormal colour, or odour (cervicitis co-existing with urethritis)",
+        "Lower abdominal or pelvic pain in women — early sign of ascending PID",
+        "Scrotal/testicular pain or swelling in men — epididymo-orchitis (complication of ascending infection)",
+        "Perianal or rectal symptoms if rectal infection co-exists (especially MSM) — rectal discharge, rectal pain (proctitis)",
+        "Pharyngeal discomfort or sore throat — if concomitant pharyngeal gonorrhoea/chlamydia from oral sex",
+        "Fever and systemic illness — ascending complicated infection or disseminated gonococcal infection",
+        "Skin rash and joint pain — disseminated gonococcal infection (DGI) or reactive arthritis"
+      ],
+      "symptoms_in_women": {
+        "overview": "Urethritis in women most commonly coexists with cervicitis (infection of the cervix). Women are often asymptomatic or have non-specific symptoms easily attributed to UTI or vaginitis — leading to delayed diagnosis and complications.",
+        "key_symptoms": [
+          "Dysuria — may be external (burning at vaginal entrance — suggests urethritis/vaginitis) rather than internal (suprapubic — more typical of cystitis)",
+          "Urinary frequency and urgency mimicking UTI",
+          "Increased or abnormal vaginal discharge — change in colour (yellow/green), consistency, or odour",
+          "Intermenstrual bleeding or post-coital bleeding — highly specific for cervicitis",
+          "Lower abdominal pain — early sign of PID",
+          "Deep dyspareunia (pain deep during intercourse) — PID",
+          "Often COMPLETELY ASYMPTOMATIC — detected only through partner notification or routine STI screening"
+        ],
+        "clinical_tip": "Any woman with recurrent 'UTIs' that do not respond to standard antibiotics, or UTI without dipstick evidence of infection, should be tested for STIs (Chlamydia, gonorrhoea)"
+      },
+      "symptoms_in_men_who_have_sex_with_men_msm": {
+        "extra_genital_sites": "STIs in MSM commonly affect multiple sites simultaneously — urethra, pharynx, and rectum. Pharyngeal gonorrhoea (usually asymptomatic sore throat) and rectal chlamydia/gonorrhoea (proctitis) frequently coexist with urethral infection and require testing at all sites.",
+        "rectal_symptoms": "Rectal discharge, anal pain, tenesmus, constipation (rectal gonorrhoea or LGV proctitis)",
+        "pharyngeal_symptoms": "Usually asymptomatic; occasionally sore throat"
+      },
+      "warning_signs_of_complications": [
+        "Scrotal pain, swelling, and tenderness in men — EPIDIDYMO-ORCHITIS (requires urgent urology/GUM referral; IV antibiotics if severe)",
+        "Unilateral testicular pain that began during upper respiratory infection — possible torsion (surgical emergency — distinguish from epididymo-orchitis urgently)",
+        "Lower abdominal pain with fever and abnormal vaginal discharge in women — PELVIC INFLAMMATORY DISEASE (ascending infection; risk of infertility)",
+        "Migratory joint pain, skin rash (pustular or haemorrhagic), fever — DISSEMINATED GONOCOCCAL INFECTION (DGI)",
+        "Unilateral eye redness and discharge — possible concurrent gonococcal conjunctivitis; do NOT touch eyes after genitals",
+        "Asymmetrical swollen lymph nodes in groin (inguinal lymphadenopathy) — possible LGV (Lymphogranuloma Venereum — Chlamydia serovars L1-L3); rare; primarily MSM",
+        "Inability to pass urine despite urge — urinary retention; possible severe urethral inflammation or urethral stricture",
+        "Symptoms in a partner — possible STI transmission requiring simultaneous treatment of both partners"
+      ]
+    },
+
+    "diagnosis": {
+      "important_principles": [
+        "Urethritis is a SYNDROMIC DIAGNOSIS — initial treatment often starts based on clinical assessment while awaiting laboratory confirmation",
+        "Always test for BOTH gonorrhoea AND chlamydia simultaneously (co-infection common in 15-30%)",
+        "Always offer testing for co-existing STIs: HIV, syphilis, hepatitis B, and hepatitis C (in MSM and PWID)",
+        "First-catch urine (FCU) NAAT is the preferred diagnostic sample in men for gonorrhoea and chlamydia",
+        "In women: self-taken vulvovaginal swab or cervical swab — FCU has lower sensitivity in women",
+        "Microscopy of urethral smear (Gram stain) allows immediate diagnosis/exclusion of gonorrhoea at point-of-care",
+        "Culture for Neisseria gonorrhoeae is ESSENTIAL alongside NAAT to enable antibiotic sensitivity testing",
+        "Partner notification (contact tracing) is a legal and ethical obligation — essential to prevent re-infection and community spread"
+      ],
+      "medical_history": [
+        "Sexual history: last sexual contact (date and type — vaginal, anal, oral), number of recent partners, gender of partners, condom use, new or casual partner",
+        "Site of exposure: vaginal, anal, oral (indicates which sites to test — urethra, pharynx, rectum)",
+        "Symptom history: onset, duration, character of dysuria and discharge (purulent vs mucoid), associated symptoms (testicular pain, lower abdominal pain, skin rash, joint pain)",
+        "Previous STI history: past gonorrhoea, chlamydia, or other STIs; treatment history",
+        "Partner symptoms or known STI diagnosis in partner(s)",
+        "Contraception and condom use",
+        "Current medications: antibiotics (may mask infection or affect culture results), immunosuppressants",
+        "Allergy history: penicillin, cephalosporins, macrolides (essential for antibiotic choice)",
+        "Last menstrual period (women): to assess PID risk; differentiate urethritis from vaginitis",
+        "Pregnancy status (women): affects antibiotic choices (doxycycline contraindicated in pregnancy)",
+        "Recreational drug and alcohol use",
+        "HIV status: affects treatment decisions and susceptibility to atypical pathogens",
+        "Travel history: travel to areas with high antibiotic-resistant gonorrhoea"
+      ],
+      "physical_examination": [
+        "Inspect external genitalia: urethral meatus for discharge, erythema, or ulceration; foreskin (retractable? balanitis?); ulcers, warts, or lesions",
+        "Urethral milking: gently compress the glans penis from base to tip to express discharge if not spontaneously visible; perform before asking patient to urinate",
+        "Character of discharge: purulent (thick, yellow-green) vs mucoid (clear, mucoid) — guides empirical treatment; take swab",
+        "Testicular and epididymal examination in men: tenderness, swelling, induration of epididymis (epididymo-orchitis); testicular torsion differential (emergency)",
+        "Inguinal lymph node assessment: lymphadenopathy suggests STI, LGV, or early syphilis",
+        "Skin examination: maculopapular, pustular, or haemorrhagic skin lesions (disseminated gonococcal infection — DGI)",
+        "Joint examination: swollen, hot, tender joints (reactive arthritis; DGI-associated arthritis)",
+        "In women — pelvic examination: cervical discharge and ectopy (cervicitis); cervical motion tenderness (chandelier sign — PID); adnexal tenderness; uterine tenderness (PID)",
+        "Abdominal examination: lower abdominal tenderness (PID in women; prostatitis in men)",
+        "Prostate examination in men (digital rectal examination): tender, boggy prostate (prostatitis)",
+        "Throat examination if pharyngeal symptoms or pharyngeal exposure to STI"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Nucleic Acid Amplification Test (NAAT) for Gonorrhoea and Chlamydia",
+          "type": "Molecular — Gold Standard",
+          "description": "The most sensitive test for both Neisseria gonorrhoeae and Chlamydia trachomatis. A single sample simultaneously detects both organisms. Preferred test for all patients with suspected urethritis. Can be performed on first-catch urine (FCU) in men and self-taken vulvovaginal swab in women.",
+          "samples": {
+            "men": "First-catch urine (FCU) — first 20-30mL of urine passed (concentrated urethral washings); urethal swab also acceptable",
+            "women": "Self-taken vulvovaginal swab (sensitivity comparable to cervical swab; preferred for convenience); cervical swab; FCU (lower sensitivity in women)",
+            "extra_genital": "Pharyngeal and rectal swabs for MSM and symptomatic sites"
+          },
+          "purpose": "Definitive diagnosis of gonorrhoea and chlamydia; confirm clinical diagnosis; guide treatment",
+          "key_metric": "Sensitivity >97% for both organisms; Specificity >99%",
+          "turnaround": "Same day to 48 hours depending on laboratory",
+          "note": "NAAT does not detect antimicrobial resistance — culture required alongside NAAT for gonorrhoea"
+        },
+        {
+          "test_name": "Urethral Smear Microscopy (Gram Stain)",
+          "type": "Microbiological — Point of Care",
+          "description": "Urethral swab Gram stain examined under microscope. Diagnoses gonorrhoea at point of care: the finding of Gram-negative intracellular diplococci (GNID) within polymorphonuclear leucocytes is pathognomonic for gonococcal urethritis in symptomatic men. Assesses urethral inflammation by counting polymorphonuclear leucocytes (PMNLs/WBCs) per high-power field. Criterion for urethritis: ≥5 PMNLs/hpf in urethral smear or ≥10 PMNLs/hpf in FCU.",
+          "purpose": "Immediate point-of-care diagnosis of gonococcal urethritis; confirm urethral inflammation (polymorphonuclear leucocytes)",
+          "key_metric": "GNID within PMNLs: sensitivity ~95% specificity ~99% for gonorrhoea in symptomatic men; ≥5 PMNLs/hpf on urethral smear = urethritis confirmed; NEGATIVE smear does NOT exclude gonorrhoea or NGU",
+          "sensitivity_by_context": "High sensitivity in symptomatic men with discharge; lower sensitivity in women and asymptomatic individuals — NAAT always required"
+        },
+        {
+          "test_name": "Culture for Neisseria gonorrhoeae",
+          "type": "Microbiological",
+          "description": "Growing N. gonorrhoeae on selective Thayer-Martin or similar chocolate agar from a urethral or cervical swab. Essential to perform ALONGSIDE NAAT because culture is necessary for antibiotic susceptibility testing (AST) — critical information for managing drug-resistant gonorrhoea. Culture requires rapid transport to laboratory at correct temperature.",
+          "purpose": "ESSENTIAL for antibiotic susceptibility testing of N. gonorrhoeae; monitoring for antimicrobial resistance; mandatory in treatment failure cases",
+          "key_metric": "Sensitivity ~85-95% in symptomatic disease; less sensitive than NAAT; turnaround 48-72 hours",
+          "instruction": "Culture swab must be transported in transport medium (Stuart's or Amies with charcoal) and processed within 24 hours; do NOT refrigerate gonorrhoea culture swabs"
+        },
+        {
+          "test_name": "NAAT for Mycoplasma genitalium",
+          "type": "Molecular",
+          "description": "Specific NAAT (PCR) for Mycoplasma genitalium — increasingly recommended for all NGU cases, especially persistent/recurrent NGU. Many tests now also detect macrolide resistance mutations (23S rRNA gene mutations) — crucial for treatment selection because macrolide-resistant Mycoplasma requires moxifloxacin rather than azithromycin.",
+          "purpose": "Diagnose Mycoplasma genitalium; detect macrolide resistance mutations to guide treatment (azithromycin vs moxifloxacin)",
+          "key_metric": "PCR sensitivity >95%; macrolide resistance mutation testing guides choice between azithromycin and moxifloxacin",
+          "when_to_test": "All NGU cases per current BASHH/IUSTI guidelines 2022; mandatory in persistent/recurrent NGU"
+        },
+        {
+          "test_name": "NAAT/Wet Prep for Trichomonas vaginalis",
+          "type": "Molecular / Microscopy",
+          "description": "NAAT (PCR) is the most sensitive test for Trichomonas vaginalis and preferred where available. Wet preparation microscopy (motile flagellated protozoa on fresh sample) is rapid but low sensitivity (~50-70%). Point-of-care antigen tests available. In men: first-catch urine; in women: vaginal swab.",
+          "purpose": "Detect Trichomonas vaginalis — frequently missed cause of urethritis and vaginitis; treat with metronidazole",
+          "key_metric": "NAAT sensitivity ~95-99%; wet prep sensitivity ~50-70%; both should be considered if clinical suspicion"
+        },
+        {
+          "test_name": "HIV Test (4th Generation Antigen/Antibody Combination Test)",
+          "type": "Blood — Serology",
+          "description": "HIV testing is integral to all sexual health consultations. 4th generation tests detect p24 antigen AND antibodies from 4 weeks after exposure. Detectable within 4 weeks of acute HIV infection. Reactive result requires confirmatory testing. Patients with urethritis from STIs have significantly increased HIV risk (disrupted mucosal barrier; inflammatory cells expressing CCR5 HIV co-receptor at infection site).",
+          "purpose": "Routine HIV screening with all STI testing; detect HIV co-infection; assess HIV risk",
+          "key_metric": "4th generation test: sensitivity >99.9%; window period: positive from 4 weeks post-exposure (virtually 100% by 6 weeks)"
+        },
+        {
+          "test_name": "Syphilis Serology (TPPA / CLIA / RPR)",
+          "type": "Blood — Serology",
+          "description": "Syphilis serological testing is part of routine STI screening for all patients with urethritis. Treponemal tests (TPPA, CLIA) detect antibodies to Treponema pallidum — remain positive for life after treatment. Non-treponemal tests (RPR, VDRL) reflect disease activity — declining title after treatment.",
+          "purpose": "Routine syphilis screening; syphilis and urethritis frequently co-occur",
+          "key_metric": "CLIA or TPPA: positive = syphilis exposure (requires confirmatory testing and staging); RPR titer guides treatment response monitoring"
+        },
+        {
+          "test_name": "First-Catch Urine (FCU) Dipstick and Microscopy",
+          "type": "Urine",
+          "description": "Urine dipstick for leucocytes and nitrites to screen for co-existing UTI. Urine microscopy for pus cells (pyuria >10 WBCs/hpf in FCU spun sediment). Pyuria without bacteriuria (sterile pyuria) on culture suggests STI (gonococcal, chlamydial, or herpetic urethritis) rather than standard UTI.",
+          "purpose": "Screen for co-existing UTI; sterile pyuria supports urethritis diagnosis; guides differential diagnosis of dysuria",
+          "key_metric": "Positive leucocyte esterase on dipstick in FCU supports urethritis; nitrites positive suggests bacterial UTI; sterile pyuria = STI or non-bacterial urethritis"
+        },
+        {
+          "test_name": "Mid-Stream Urine (MSU) Culture",
+          "type": "Microbiological",
+          "description": "Standard urine culture to exclude bacterial urinary tract infection (UTI) — particularly important in women where UTI and urethritis have overlapping symptoms. A negative MSU culture in a woman with dysuria supports a diagnosis of STI-related urethritis.",
+          "purpose": "Exclude urinary tract infection in all patients with dysuria; particularly important in women with suspected urethritis vs UTI",
+          "key_metric": "Bacterial growth >10⁵ CFU/mL = UTI; no significant growth in urethritis (sterile pyuria)"
+        },
+        {
+          "test_name": "Hepatitis B Surface Antigen (HBsAg) and Antibodies (Anti-HBc, Anti-HBs)",
+          "type": "Blood — Serology",
+          "description": "Hepatitis B is sexually transmitted. Baseline hepatitis B serology identifies: unimmunised patients (offer vaccination); chronic carriers (HBsAg positive — refer hepatology); immune patients (anti-HBs >10 IU/L).",
+          "purpose": "Routine hepatitis B screening in STI clinic; identify vaccination needs"
+        },
+        {
+          "test_name": "Hepatitis C Antibody Test",
+          "type": "Blood — Serology",
+          "description": "Hepatitis C is increasingly transmitted sexually — especially among HIV-positive MSM and those who have sex involving rectal trauma, fisting, or group sex. Recommended screening at all STI clinics for MSM and people with HIV.",
+          "purpose": "Detect hepatitis C co-infection in high-risk populations"
+        },
+        {
+          "test_name": "Herpes PCR (Swab of Lesion)",
+          "type": "Molecular",
+          "description": "If genital ulcers, vesicles, or herpetic lesions visible — swab for HSV PCR (much more sensitive than viral culture). First-catch urine PCR can detect herpetic urethritis even without external lesions. Essential for diagnosis of severe urethritis with external lesions.",
+          "purpose": "Confirm herpetic urethritis in the presence of ulcers/vesicles or severe dysuria",
+          "key_metric": "HSV PCR swab: sensitivity >95%; culture: ~80%; do not rely on clinical appearance alone"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Antibiotic treatment for urethritis must be guided by the identified or suspected pathogen. Treatment should be initiated EMPIRICALLY based on clinical assessment and epidemiological risk while awaiting results. BOTH gonorrhoea AND chlamydia are treated simultaneously in most settings ('dual therapy') because co-infection is common. All prescribed medications must be taken under the supervision of a licensed sexual health physician or doctor. BOTH partners must be treated SIMULTANEOUSLY to prevent ping-pong re-infection.",
+      "treatment_principles": [
+        "Treat syndromically based on clinical features while awaiting results — do not delay treatment",
+        "Dual therapy: cover both gonorrhoea AND chlamydia/NGU empirically unless confirmed NGU-only",
+        "Partner treatment is MANDATORY — treat all partners concurrently; re-infection is the most common cause of treatment failure",
+        "Test of cure (TOC) is required after gonorrhoea treatment (NAAT at 2-3 weeks; culture if possible)",
+        "Sexual abstinence: advise all patients and partners to abstain from sexual activity until BOTH have completed treatment and are symptom-free (minimum 1 week after single-dose treatments; 7 days after doxycycline course)",
+        "Antibiotic resistance: always send gonococcal culture for susceptibility testing; macrolide resistance testing for Mycoplasma genitalium",
+        "Manage co-infections: test for and treat other STIs as identified (syphilis, HIV, hepatitis B, herpes)"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-101",
+          "category_name": "Treatment for Gonococcal Urethritis (GU) — Gonorrhoea",
+          "purpose": "Eradicate Neisseria gonorrhoeae and prevent complications and transmission. Choice critically determined by local resistance patterns.",
+          "note": "Resistance to multiple antibiotic classes is a major and growing global threat for gonorrhoea. Ceftriaxone is currently the last reliable first-line treatment in most countries. Monitor resistance data and follow national/international guidelines.",
+          "medicines": [
+            {
+              "name": "Ceftriaxone",
+              "brand_examples": ["Monocef", "Rocephin", "Biotax", "Oframax"],
+              "form": "IM Injection (deep intramuscular — gluteal or deltoid)",
+              "dosage": "500mg IM single dose (UK BASHH 2019 and WHO 2016 guidelines; increased to 500mg from 250mg due to resistance concerns); USA CDC 2021: 500mg IM single dose (or 1g if weight >150 kg)",
+              "use_case": "FIRST-LINE treatment for all gonorrhoea including urethral, pharyngeal, and rectal infection; safe in pregnancy (with monitoring)",
+              "mechanism": "3rd generation cephalosporin — bactericidal; inhibits bacterial cell wall synthesis (transpeptidase inhibition); highly active against N. gonorrhoeae",
+              "side_effects": ["Injection site pain", "Hypersensitivity reaction (rare)", "GI upset if oral bioequivalent used"],
+              "contraindications": "Significant cephalosporin hypersensitivity; caution with penicillin allergy (5-10% cross-reactivity)",
+              "penicillin_allergy_alternative": "Gentamicin 240mg IM single dose + azithromycin 2g oral single dose (UK BASHH); specialist input recommended",
+              "test_of_cure": "Mandatory: NAAT at 2-3 weeks post-treatment; culture if possible for antibiotic susceptibility",
+              "note": "Always combine with chlamydia treatment (doxycycline) as dual therapy"
+            },
+            {
+              "name": "Cefixime (Oral)",
+              "brand_examples": ["Suprax", "Mahacef", "Taxim-O"],
+              "form": "Tablet",
+              "dosage": "400mg oral single dose",
+              "use_case": "Alternative oral treatment for uncomplicated gonorrhoea when IM injection not available; significantly inferior to ceftriaxone IM for pharyngeal gonorrhoea",
+              "mechanism": "Oral 3rd generation cephalosporin",
+              "limitation": "Reduced efficacy for pharyngeal gonorrhoea; NOT preferred when IM ceftriaxone available due to emerging resistance",
+              "note": "No longer recommended as first-line in UK, WHO, or USA guidelines; use only when ceftriaxone IM is not feasible"
+            },
+            {
+              "name": "Azithromycin (for Gonorrhoea — With Ceftriaxone)",
+              "brand_examples": ["Azee", "Zithromax", "Azithral"],
+              "form": "Tablet",
+              "dosage": "1g oral single dose (with ceftriaxone 500mg IM for dual therapy in some historical protocols); 2g oral as alternative in penicillin allergy (with gentamicin)",
+              "use_case": "Previously used routinely WITH ceftriaxone as dual therapy; NOW ONLY used in penicillin/cephalosporin-allergic patients (2g + gentamicin); single-agent azithromycin NO LONGER recommended due to widespread resistance",
+              "resistance_note": "High levels of azithromycin resistance now prevalent globally; azithromycin monotherapy for gonorrhoea is CONTRAINDICATED",
+              "current_role": "Retained only in penicillin/cephalosporin-allergic patients as part of gentamicin+azithromycin combination"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-102",
+          "category_name": "Treatment for Chlamydial Urethritis / Non-Gonococcal Urethritis (NGU)",
+          "purpose": "Eradicate Chlamydia trachomatis and other NGU pathogens (Mycoplasma genitalium, Ureaplasma) from the urethra and prevent complications and transmission.",
+          "note": "Doxycycline is now the preferred first-line treatment for NGU and chlamydial urethritis — superior to azithromycin for Mycoplasma genitalium co-infection. Azithromycin 1g single dose was previously first-line but has been replaced due to concerns about Mycoplasma genitalium macrolide resistance.",
+          "medicines": [
+            {
+              "name": "Doxycycline",
+              "brand_examples": ["Doxrid", "Doxt-SL", "Vibramycin", "Oracea"],
+              "form": "Tablet, Capsule",
+              "dosage": "100mg twice daily for 7 days",
+              "use_case": "FIRST-LINE treatment for NGU and chlamydial urethritis (BASHH 2020; ECDC 2019; CDC 2021 guidelines); also added to ceftriaxone as dual therapy for gonorrhoea to cover concurrent Chlamydia",
+              "mechanism": "Tetracycline antibiotic — inhibits bacterial protein synthesis by binding 30S ribosomal subunit; bacteriostatic; active against intracellular organisms including Chlamydia",
+              "side_effects": ["Nausea and GI upset (take with food; avoid lying down after dose)", "Oesophageal ulceration (ensure adequate fluid intake with each dose)", "Photosensitivity — increased sensitivity to sunlight (use sunscreen; avoid prolonged sun exposure)", "Tooth discolouration and bone growth inhibition (children under 8 years — CONTRAINDICATED)", "Reduces efficacy of combined oral contraceptive pill (advise additional contraception for duration of treatment + 7 days)"],
+              "contraindications": ["Pregnancy (all trimesters — teratogenic; affects foetal bone/tooth development)", "Children under 8 years", "Severe hepatic impairment"],
+              "administration": "Take with full glass of water; avoid lying down for 30 minutes after dose; avoid dairy products, antacids, and iron supplements within 2 hours of dose (reduce absorption)",
+              "efficacy": "Cure rate ~97% for chlamydia; superior to azithromycin for Mycoplasma genitalium if macrolide-susceptible"
+            },
+            {
+              "name": "Azithromycin",
+              "brand_examples": ["Azee", "Azithral", "Zithromax", "Azicip"],
+              "form": "Tablet, Powder for oral suspension",
+              "dosage": "1g oral single dose (for chlamydial urethritis where doxycycline is contraindicated or not tolerated); 500mg day 1 then 250mg daily for 4 days (5-day course — more effective for Mycoplasma genitalium if macrolide-susceptible)",
+              "use_case": "Alternative to doxycycline when doxycycline contraindicated (pregnancy — 2nd trimester onward for chlamydia) or not tolerated; also used for Mycoplasma genitalium if macrolide-susceptible (5-day extended regimen preferred over 1g single dose for Mycoplasma)",
+              "mechanism": "Macrolide antibiotic — inhibits bacterial protein synthesis by binding 50S ribosomal subunit; long tissue half-life",
+              "side_effects": ["Nausea and GI upset (most common)", "Diarrhoea", "QT prolongation (rare; monitor in patients with cardiac risk factors)", "Elevated liver enzymes", "Metallic taste"],
+              "resistance_concern": "Growing macrolide resistance in Mycoplasma genitalium (30-60% in many countries) — resistance testing recommended before use; 1g single dose associated with macrolide resistance selection in Mycoplasma",
+              "pregnancy_use": "Amoxicillin 500mg TDS × 7 days is preferred for chlamydia in pregnancy (particularly 1st trimester); azithromycin 1g single dose is an alternative in 2nd/3rd trimester if other options unavailable"
+            },
+            {
+              "name": "Amoxicillin",
+              "brand_examples": ["Mox", "Novamox", "Amoxil"],
+              "form": "Tablet, Capsule",
+              "dosage": "500mg three times daily for 7 days",
+              "use_case": "CHLAMYDIA IN PREGNANCY (1st trimester — preferred over azithromycin and doxycycline in first trimester); acceptable alternative for chlamydial urethritis in pregnancy when other agents contraindicated",
+              "efficacy": "~95% efficacy for chlamydia; inferior to doxycycline for non-pregnant individuals",
+              "side_effects": ["GI upset", "Diarrhoea", "Allergic reactions (penicillin allergy)"]
+            },
+            {
+              "name": "Erythromycin",
+              "brand_examples": ["Erythrocin", "E-Mycin"],
+              "form": "Tablet",
+              "dosage": "500mg four times daily for 7 days or 250mg four times daily for 14 days",
+              "use_case": "Alternative for chlamydia in pregnancy when amoxicillin and azithromycin contraindicated or not tolerated; lower cure rate and more GI side effects limit use",
+              "side_effects": ["Significant GI upset (nausea, vomiting, abdominal cramps) — most common side effect class"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-103",
+          "category_name": "Treatment for Mycoplasma genitalium",
+          "purpose": "Eradicate Mycoplasma genitalium — an important but frequently missed cause of persistent/recurrent NGU. Treatment choice critically depends on macrolide resistance testing.",
+          "note": "Mycoplasma genitalium resistance testing is now recommended before treatment in most guidelines. Empirical treatment without resistance testing may fail in 30-60% of cases in high-resistance populations.",
+          "medicines": [
+            {
+              "name": "Azithromycin Extended Regimen (Macrolide-Susceptible Mycoplasma genitalium)",
+              "brand_examples": ["Azee", "Azithral"],
+              "form": "Tablet",
+              "dosage": "500mg on day 1, then 250mg once daily on days 2-5 (5-day extended regimen)",
+              "use_case": "Mycoplasma genitalium confirmed macrolide-SUSCEPTIBLE (no 23S rRNA resistance mutations detected); superior to 1g single dose for Mycoplasma",
+              "efficacy": "Cure rate ~85-90% in macrolide-susceptible Mycoplasma",
+              "note": "The 5-day regimen is preferred over 1g single dose for Mycoplasma as it reduces resistance selection pressure"
+            },
+            {
+              "name": "Moxifloxacin",
+              "brand_examples": ["Avelox", "Vigamox"],
+              "form": "Tablet",
+              "dosage": "400mg once daily for 7-10 days (for NGU); 14 days for PID associated with Mycoplasma",
+              "use_case": "Mycoplasma genitalium confirmed or suspected MACROLIDE-RESISTANT; failure of first-line azithromycin or doxycycline for NGU; macrolide-resistant Mycoplasma genitalium (23S rRNA mutation positive)",
+              "mechanism": "4th generation fluoroquinolone — inhibits both DNA gyrase (GyrA) and topoisomerase IV (ParC); excellent intracellular penetration; active against Mycoplasma",
+              "side_effects": ["Nausea", "Dizziness", "QT prolongation (avoid with other QT-prolonging drugs; check ECG if cardiac risk)", "Tendinopathy (rare; increased risk with steroids)", "Photosensitivity", "Hepatotoxicity (rare)"],
+              "contraindications": ["Pregnancy", "Children", "Significant QT prolongation on ECG", "Myasthenia gravis", "Fluoroquinolone hypersensitivity"],
+              "fluoroquinolone_resistance": "Fluoroquinolone resistance in Mycoplasma is emerging; moxifloxacin failure rate increasing in some regions"
+            },
+            {
+              "name": "Pristinamycin",
+              "brand_examples": ["Pyostacine (France and some European countries)"],
+              "form": "Tablet",
+              "dosage": "1g four times daily for 10 days",
+              "use_case": "Macrolide AND fluoroquinolone-resistant Mycoplasma genitalium — third-line treatment; limited availability outside France and selected European countries",
+              "note": "Not widely available globally; specialist STI physician guidance required"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-104",
+          "category_name": "Treatment for Trichomonal Urethritis",
+          "purpose": "Eradicate Trichomonas vaginalis from the urogenital tract. Both sexual partners must be treated simultaneously.",
+          "medicines": [
+            {
+              "name": "Metronidazole",
+              "brand_examples": ["Metrogyl", "Flagyl", "Metronidazole"],
+              "form": "Tablet, IV Infusion",
+              "dosage": "2g oral single dose (preferred — improves adherence) OR 400-500mg twice daily for 5-7 days (equally effective, fewer GI side effects)",
+              "use_case": "FIRST-LINE treatment for Trichomonas vaginalis urethritis and vaginitis; safe in pregnancy (preferred treatment)",
+              "mechanism": "Nitroimidazole — enters cells and forms reactive intermediates that damage protozoal DNA; active against anaerobes and protozoa",
+              "side_effects": ["Metallic taste (common — warn patient)", "Nausea and GI upset", "Disulfiram-like reaction with alcohol — severe flushing, nausea, tachycardia; AVOID ALL ALCOHOL during treatment and for 48 hours after"],
+              "contraindications": ["1st trimester pregnancy (theoretical teratogenicity — use after 14 weeks; benefit vs risk discussion)", "Alcohol consumption during/after treatment"],
+              "note": "Tinidazole 2g single dose is an alternative with similar efficacy and potentially fewer GI side effects"
+            },
+            {
+              "name": "Tinidazole",
+              "brand_examples": ["Fasigyn", "Tini"],
+              "form": "Tablet",
+              "dosage": "2g oral single dose",
+              "use_case": "Alternative to metronidazole for Trichomonas vaginalis; similar efficacy; potentially better tolerated",
+              "side_effects": ["Metallic taste", "Nausea (less than metronidazole)", "Avoid alcohol — disulfiram-like reaction (avoid alcohol for 72 hours after tinidazole)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-105",
+          "category_name": "Treatment for Herpetic Urethritis",
+          "purpose": "Antiviral therapy reduces severity and duration of herpetic urethritis episodes. Does not eradicate HSV — which establishes latency in sacral ganglia. Suppressive therapy reduces recurrence frequency.",
+          "medicines": [
+            {
+              "name": "Aciclovir (Acyclovir)",
+              "brand_examples": ["Zovirax", "Acivir", "Herpex"],
+              "form": "Tablet",
+              "dosage": "Primary episode: 400mg three times daily for 5-10 days; Recurrent episode: 400mg three times daily for 5 days or 800mg twice daily for 5 days; Suppressive therapy: 400mg twice daily (long-term for frequent recurrences)",
+              "use_case": "Primary and recurrent herpetic urethritis; reduces severity, duration, and viral shedding; suppressive therapy reduces recurrence frequency by 70-80%",
+              "mechanism": "Nucleoside analogue — selectively phosphorylated by HSV thymidine kinase; inhibits HSV DNA polymerase; prevents viral replication",
+              "side_effects": ["Nausea", "Headache", "Renal impairment (rare — ensure adequate hydration)", "Neurotoxicity at very high doses (IV)"],
+              "suppressive_therapy_indication": "≥6 recurrences per year; severe/prolonged recurrences; psychological impact of recurrences; partner with negative HSV serology"
+            },
+            {
+              "name": "Valaciclovir (Valacyclovir)",
+              "brand_examples": ["Valcivir", "Valtrex"],
+              "form": "Tablet",
+              "dosage": "Primary: 500mg twice daily for 5-10 days; Recurrent: 500mg twice daily for 3-5 days; Suppressive: 500mg once daily",
+              "use_case": "Preferred over aciclovir for convenience — prodrug; converted to aciclovir after absorption; higher bioavailability allows less frequent dosing",
+              "side_effects": ["Headache", "Nausea", "Abdominal pain"]
+            },
+            {
+              "name": "Famciclovir",
+              "brand_examples": ["Famvir"],
+              "form": "Tablet",
+              "dosage": "Primary: 250mg three times daily for 5-10 days; Recurrent: 1g twice daily for 1 day; Suppressive: 250mg twice daily",
+              "use_case": "Alternative to aciclovir/valaciclovir for herpetic urethritis; same mechanism; good tolerability"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-106",
+          "category_name": "Dual Therapy — Combined Gonorrhoea and Chlamydia Treatment",
+          "purpose": "Because gonorrhoea and chlamydia co-infection is common (15-30%), most sexual health guidelines recommend treating for BOTH simultaneously when gonorrhoea is confirmed or strongly suspected, until chlamydia results are available.",
+          "standard_dual_therapy": {
+            "regimen": "Ceftriaxone 500mg IM single dose + Doxycycline 100mg twice daily for 7 days",
+            "indication": "Confirmed or suspected gonococcal urethritis; dual therapy covers gonorrhoea AND chlamydia simultaneously",
+            "authority": "BASHH (UK) 2019; CDC (USA) 2021; WHO 2016; IUSTI 2022",
+            "note": "When gonorrhoea EXCLUDED (NAAT negative) but NGU confirmed: treat with doxycycline 100mg BD × 7 days alone (or azithromycin 1g single dose as second choice)"
+          },
+          "medicines": [
+            {
+              "name": "Ceftriaxone 500mg IM + Doxycycline 100mg BD × 7 days",
+              "form": "IM Injection + Oral Tablets",
+              "use_case": "Standard dual therapy for confirmed or suspected gonorrhoea — covers both gonorrhoea (ceftriaxone) and chlamydia/NGU (doxycycline); first-line WHO/BASHH/CDC regimen",
+              "note": "Doxycycline ALSO provides partial activity against Mycoplasma genitalium, making this combination superior to single-agent treatment"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-107",
+          "category_name": "Treatments for Persistent / Recurrent NGU",
+          "purpose": "When NGU persists or recurs after initial treatment (defined as persisting or recurring ≥5 weeks after completing first treatment), further investigation and alternative treatment are required.",
+          "approach": [
+            "Confirm treatment was completed correctly by patient AND partner",
+            "Test for re-infection (repeat NAAT for gonorrhoea and chlamydia)",
+            "Test specifically for Mycoplasma genitalium with resistance testing",
+            "Test for Trichomonas vaginalis",
+            "Consider herpetic urethritis",
+            "Exclude chemical or mechanical urethritis",
+            "Repeat urethral smear microscopy"
+          ],
+          "medicines": [
+            {
+              "name": "Azithromycin 500mg Day 1, 250mg Days 2-5 + Moxifloxacin 400mg OD × 7 days (if Mycoplasma macrolide-resistant)",
+              "form": "Oral Tablets",
+              "use_case": "Persistent NGU with macrolide-resistant Mycoplasma genitalium; moxifloxacin as second-line",
+              "note": "Specialist sexual health physician involvement essential for persistent/recurrent NGU"
+            },
+            {
+              "name": "Doxycycline 100mg BD × 14-21 days",
+              "form": "Oral Tablet",
+              "dosage": "100mg twice daily for 14-21 days (extended course)",
+              "use_case": "Some cases of persistent NGU after standard 7-day course — extended doxycycline used in some guidelines",
+              "note": "Evidence for extended doxycycline in persistent NGU is limited; Mycoplasma resistance testing preferred before this approach"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-108",
+          "category_name": "HIV Pre-Exposure Prophylaxis (PrEP) — Prevention",
+          "purpose": "HIV prevention medication for individuals at high risk of HIV through sexual contact — particularly relevant for STI clinic patients with urethritis from unprotected sex.",
+          "medicines": [
+            {
+              "name": "Tenofovir disoproxil fumarate + Emtricitabine (TDF/FTC)",
+              "brand_examples": ["Truvada", "Tenvir-EM", "Emtriva+TDF"],
+              "form": "Tablet",
+              "dosage": "Daily PrEP: one tablet once daily (continuous daily dosing — >99% efficacy if taken correctly); Event-driven PrEP (2-1-1 regimen): 2 tablets 2-24 hours before sex + 1 tablet 24h after + 1 tablet 48h after (for MSM; not recommended for heterosexual or PWID)",
+              "use_case": "HIV prevention in high-risk individuals: MSM, serodiscordant couples, sex workers, individuals with multiple sexual partners and inconsistent condom use; discuss at STI clinic appointments",
+              "mechanism": "Nucleoside/nucleotide reverse transcriptase inhibitors (NRTIs) — block HIV reverse transcriptase preventing viral replication",
+              "side_effects": ["Nausea (usually resolves after first month)", "Renal impairment (monitor eGFR)", "Decreased bone density (monitor in long-term users)"],
+              "monitoring": "3-monthly HIV test; STI screening every 3 months; renal function (eGFR) every 3-6 months",
+              "efficacy": ">99% reduction in HIV acquisition with daily adherence; ~85% with event-driven in MSM"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-109",
+          "category_name": "Pain Relief and Symptomatic Management",
+          "purpose": "Symptomatic treatment for dysuria, urethral discomfort, and associated pain during urethritis treatment.",
+          "medicines": [
+            {
+              "name": "Paracetamol / Acetaminophen",
+              "brand_examples": ["Crocin", "Tylenol", "Panadol"],
+              "form": "Tablet",
+              "dosage": "500-1000mg every 4-6 hours; max 4000mg/day",
+              "use_case": "Dysuria, urethral pain, and fever associated with urethritis; safest first-line analgesic"
+            },
+            {
+              "name": "Ibuprofen",
+              "brand_examples": ["Brufen", "Nurofen", "Advil"],
+              "form": "Tablet",
+              "dosage": "400-600mg three times daily with food",
+              "use_case": "Dysuria, urethral inflammation, and associated pain; anti-inflammatory benefit; avoid in renal impairment or significant dehydration"
+            },
+            {
+              "name": "Potassium Citrate Mixture / Sodium Citrate",
+              "brand_examples": ["Ural", "Cymalon", "Uricalm"],
+              "form": "Oral granules / Oral solution",
+              "dosage": "As directed — typically 2 sachets in water three times daily for 2-3 days",
+              "use_case": "Dysuria — alkalinises urine which reduces burning sensation on urination; provides symptomatic relief while awaiting antibiotic action",
+              "note": "No antibiotic effect — purely symptomatic; effective for reducing dysuria burning; safe; use as adjunct to antibiotic treatment"
+            },
+            {
+              "name": "Lidocaine 2% Gel (Topical)",
+              "brand_examples": ["Xylocaine gel", "Lignocaine gel"],
+              "form": "Topical gel",
+              "dosage": "Apply small amount to urethral meatus 5-10 minutes before urination as needed; also used before urethral swab procedure to reduce discomfort",
+              "use_case": "Severe urethral discomfort and dysuria (especially herpetic urethritis); urethral swab pain reduction",
+              "note": "Urologists may use this routinely before urethral procedures; can be offered to patients with very severe urethral pain"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "While there is no specific 'diet for urethritis' that replaces antibiotic treatment, dietary and nutritional choices significantly impact urogenital and immune health. The primary goals during urethritis treatment are: adequate hydration (dilutes urine, reduces mucosal irritation, prevents UTI), anti-inflammatory nutrition (supports healing), probiotic foods (restore microbiome disrupted by antibiotics), and avoidance of substances that irritate the urethra or impair healing. Urethritis is primarily treated with antibiotics — dietary measures are adjunctive.",
+      "recommended_foods": [
+        {
+          "category": "Hydration — Most Important Dietary Intervention",
+          "evidence": "Strong — adequate hydration reduces urethral mucosal irritation by diluting urine, flushes bacteria from the urethra, and prevents co-existing UTI",
+          "items": [
+            {
+              "food": "Water",
+              "benefit": "Adequate hydration dilutes urine concentration, reducing burning (dysuria) by lowering urinary acidity and bacterial concentration; promotes frequent urination which flushes organisms; prevents urinary tract infection (common concurrent condition); 2-3 litres/day target",
+              "frequency": "8-10 glasses (2-2.5 litres) daily minimum; more in hot weather"
+            },
+            {
+              "food": "Coconut water (unsweetened)",
+              "benefit": "Natural electrolyte hydration; mild alkalinising effect on urine; reduces dysuria; anti-inflammatory; good potassium content",
+              "frequency": "1-2 glasses daily during treatment"
+            },
+            {
+              "food": "Herbal teas: Chamomile, Ginger, Green tea",
+              "benefit": "Chamomile: anti-inflammatory and antispasmodic effects; may soothe urethral irritation. Ginger: potent anti-inflammatory. Green tea (EGCG catechins): antibacterial and anti-inflammatory properties",
+              "frequency": "2-3 cups daily; decaffeinated green tea preferred to reduce caffeine irritation"
+            }
+          ]
+        },
+        {
+          "category": "Cranberry and Urinary Tract Protective Foods",
+          "evidence": "Moderate — cranberry products reduce bacterial adhesion to urethral and bladder epithelium (proanthocyanidins block fimbrial adhesion of E. coli); more relevant for UTI prevention but beneficial in urethritis context",
+          "items": [
+            {
+              "food": "Cranberry juice (unsweetened) or cranberry supplements",
+              "benefit": "Proanthocyanidins (PACs) in cranberry prevent bacterial (particularly E. coli) adhesion to urothelium via anti-adhesion mechanism; may reduce co-existing UTI risk; anti-inflammatory urinary tract benefits",
+              "frequency": "200-400mL unsweetened cranberry juice or 1 cranberry supplement (500mg extract) daily",
+              "note": "Cannot treat STI-related urethritis alone; adjunctive anti-adhesion benefit only; avoid sugary cranberry juice (worsens inflammation)"
+            },
+            {
+              "food": "Blueberries, Pomegranate juice",
+              "benefit": "Similar anthocyanin and polyphenol anti-adhesion effects to cranberry; powerful antioxidants; anti-inflammatory",
+              "frequency": "Daily serving"
+            }
+          ]
+        },
+        {
+          "category": "Anti-Inflammatory Foods",
+          "evidence": "Strong for systemic anti-inflammatory benefits; supports urethral mucosal healing",
+          "items": [
+            {
+              "food": "Turmeric (curcumin)",
+              "benefit": "Curcumin inhibits NF-κB and reduces pro-inflammatory cytokines (IL-6, TNF-α) — reduces urethral mucosal inflammation; anti-bacterial properties (antibiofilm activity); anti-oxidant",
+              "frequency": "Daily in cooking or supplement (500-1000mg curcumin with piperine twice daily)"
+            },
+            {
+              "food": "Ginger",
+              "benefit": "Potent anti-inflammatory (6-gingerol, 6-shogaol); may help reduce urethral inflammation; anti-nausea (helpful with antibiotic-induced nausea)",
+              "frequency": "Daily in cooking, tea, or supplement"
+            },
+            {
+              "food": "Fatty fish: Salmon, Mackerel, Sardines",
+              "benefit": "Omega-3 fatty acids (EPA/DHA) reduce inflammatory cytokines; support immune function; reduce systemic inflammation; anti-inflammatory prostaglandin production",
+              "frequency": "2-3 times per week"
+            },
+            {
+              "food": "Colourful fruits and vegetables: Berries, Bell peppers, Tomatoes, Spinach, Kale",
+              "benefit": "Vitamin C (supports immune function, collagen synthesis for urethral mucosal repair); antioxidants reduce oxidative stress; flavonoids anti-inflammatory; Vitamin A supports epithelial integrity",
+              "frequency": "5-7 servings daily"
+            },
+            {
+              "food": "Garlic",
+              "benefit": "Allicin has significant antibacterial properties (including some activity against N. gonorrhoeae); anti-inflammatory; immunomodulatory; may reduce severity of genitourinary infections",
+              "frequency": "1-2 raw cloves daily or in cooking"
+            }
+          ]
+        },
+        {
+          "category": "Probiotic Foods (Gut and Genital Microbiome Restoration)",
+          "evidence": "Strong for antibiotic-associated microbiome disruption; emerging evidence for urogenital microbiome",
+          "items": [
+            {
+              "food": "Plain yogurt with live cultures (Lactobacillus acidophilus, L. rhamnosus, Bifidobacterium)",
+              "benefit": "Restores gut microbiome disrupted by antibiotics (doxycycline, azithromycin, metronidazole); reduces antibiotic-associated diarrhoea; emerging evidence that oral Lactobacillus supplementation supports vaginal Lactobacillus-dominant microbiome (protective against STIs in women); reduces vaginal yeast overgrowth (common after antibiotics)",
+              "frequency": "Daily throughout antibiotic course and 4-6 weeks after"
+            },
+            {
+              "food": "Kefir",
+              "benefit": "Multi-strain probiotic drink; more diverse Lactobacillus strains than yogurt; excellent for restoring microbiome after antibiotics",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Kimchi, Sauerkraut, Miso (small amounts)",
+              "benefit": "Fermented probiotic foods; gut microbiome restoration; immune modulation",
+              "frequency": "Regular during and after antibiotic treatment"
+            }
+          ]
+        },
+        {
+          "category": "Zinc and Immune-Supporting Foods",
+          "evidence": "Moderate — zinc is essential for immune function and wound healing; deficiency increases STI susceptibility",
+          "items": [
+            {
+              "food": "Pumpkin seeds, Lentils, Chickpeas, Lean meat",
+              "benefit": "Zinc supports immune function; essential for T-cell and neutrophil activity against pathogens; wound healing; urethral mucosal repair",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Eggs, Dairy (calcium and Vitamin D)",
+              "benefit": "Vitamin D supports innate immunity including urogenital mucosal immunity; calcium; complete protein for tissue repair",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Foods that Alkalinise Urine (Reduce Dysuria)",
+          "evidence": "Moderate — alkalinising urine reduces burning sensation from dysuria",
+          "items": [
+            {
+              "food": "Bananas, Avocados",
+              "benefit": "Potassium-rich foods help alkalinise urine; reduce acidity causing dysuria burning sensation; easy to digest if antibiotic-related nausea",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Root vegetables: Potato, Beetroot, Carrot",
+              "benefit": "Alkalinising effect on urine; reduces dysuria burning; easy to digest; anti-inflammatory",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Watermelon, Cucumber",
+              "benefit": "High water content — natural hydration and urine dilution; mild anti-inflammatory; supports urinary flushing",
+              "frequency": "Daily during treatment"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Alcohol — ABSOLUTELY avoid with metronidazole",
+          "reason": "Critical warning with metronidazole: Alcohol causes a severe disulfiram-like reaction (tachycardia, severe flushing, nausea, hypotension, headache) — can be dangerous. Beyond the drug interaction: alcohol generally irritates the urethral mucosa, impairs immune function, causes dehydration (worsens dysuria), and has been associated with increased STI transmission risk.",
+          "duration": "NO alcohol during metronidazole treatment AND 48 hours after completion (72 hours for tinidazole); avoid alcohol throughout treatment course for all urethritis antibiotics to support recovery",
+          "examples": ["Beer", "Wine", "Spirits", "All alcoholic beverages"]
+        },
+        {
+          "food": "Caffeine",
+          "reason": "Caffeine is a bladder and urethral irritant — directly stimulates detrusor muscle contractions and increases urinary urgency and frequency, worsening symptoms. Caffeine is also mildly acidic — increases urine acidity, worsening dysuria burning sensation.",
+          "examples": ["Coffee (especially strong)", "Strong black tea", "Energy drinks", "Cola beverages"],
+          "recommendation": "Reduce significantly or eliminate during treatment; herbal teas preferred"
+        },
+        {
+          "food": "Spicy and acidic foods",
+          "reason": "Acidic and spicy foods increase urine acidity — worsening burning dysuria during urination. Spices can also cause mild urethral irritation as they are partially excreted in urine.",
+          "examples": ["Hot chilli sauces and peppers", "Vinegar and pickled foods", "Citrus juice (lemon, orange — paradoxically despite anti-inflammatory properties, increases urine acidity)", "Tomato-based products in excess"],
+          "recommendation": "Reduce during symptomatic period; reintroduce gradually as symptoms improve"
+        },
+        {
+          "food": "Refined sugars and ultra-processed foods",
+          "reason": "Promote systemic inflammation and impair immune function; high sugar intake disrupts gut microbiome (Candida overgrowth risk during antibiotic treatment); impair white cell function",
+          "examples": ["Sugary beverages and sodas", "Candy and sweets", "Packaged snacks and biscuits", "Pastries and cakes", "Fast food"]
+        },
+        {
+          "food": "Artificial sweeteners",
+          "reason": "Some artificial sweeteners (saccharin, aspartame) can act as bladder and urethral irritants in sensitive individuals — worsening dysuria and frequency",
+          "examples": ["Diet sodas", "Sugar-free products with saccharin or aspartame"]
+        },
+        {
+          "food": "Dairy in large amounts (if causing vaginal Candida symptoms)",
+          "reason": "Doxycycline and other antibiotics disrupt gut and vaginal microbiome — allowing Candida overgrowth. Women experiencing vaginal thrush after antibiotics may benefit from reducing dairy temporarily while increasing probiotic yogurt",
+          "note": "Plain live-culture yogurt is BENEFICIAL (probiotics); high-fat dairy in excess may promote Candida — individualised approach"
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This anti-inflammatory, microbiome-supportive, hydration-focused meal plan supports recovery from urethritis while on antibiotic treatment. It minimises urethral irritants and maximises immune and mucosal healing. Continue antibiotics exactly as prescribed.",
+        "early_morning": "Warm water with lemon (small amount — do not overdo citric acid; mostly for alkaline minerals) + 1 tsp turmeric in warm water or golden milk",
+        "breakfast": "Oatmeal with blueberries, pumpkin seeds, and banana (alkalinising, anti-inflammatory, probiotic-friendly) + 1 cup plain yogurt with live cultures (probiotic) + Green herbal tea (chamomile or ginger — avoid strong black tea)",
+        "mid_morning": "Watermelon or cucumber slices (hydration) + handful of almonds or walnuts (zinc, anti-inflammatory)",
+        "lunch": "Grilled salmon or mackerel (omega-3) + brown rice + cooked spinach and bell peppers (Vitamin C, anti-inflammatory) + large glass of water OR plain dal with rice + yogurt raita + beet and carrot salad",
+        "evening_snack": "Fresh pomegranate juice or unsweetened cranberry juice + plain crackers with hummus (zinc, protein)",
+        "dinner": "Grilled chicken or lentil curry (lean protein for mucosal repair) + steamed vegetables (broccoli, carrots, sweet potato) + whole grain chapati or brown rice + plain curd / kefir",
+        "before_bed": "Warm milk or plant milk with turmeric (golden milk) OR chamomile herbal tea; ensure 2-3L water consumed throughout the day"
+      },
+      "special_dietary_notes": [
+        "Take doxycycline WITH food and a FULL glass of water — take in upright position; do NOT lie down for 30 minutes after (prevents oesophageal irritation); avoid dairy, antacids, iron tablets within 2 hours of dose",
+        "Take metronidazole WITH food — reduces nausea; NEVER with alcohol (severe reaction); take at consistent times daily",
+        "Azithromycin: may be taken with or without food; nausea is the most common side effect — taking with light food reduces this",
+        "Probiotics (yogurt, kefir, or capsules): take 2 hours AFTER each antibiotic dose — taking simultaneously may reduce antibiotic absorption",
+        "Women on doxycycline should use additional contraception (barrier methods) for the duration of treatment and 7 days after — doxycycline may reduce combined oral contraceptive pill efficacy",
+        "Zinc supplementation (25mg daily) may support immune function and urethral mucosal healing — take 2 hours apart from doxycycline (zinc chelates tetracyclines reducing their absorption)",
+        "Vitamin C supplements (500mg daily): support immune function and collagen synthesis; do NOT take within 2 hours of doxycycline (acidic environment may affect absorption)",
+        "Cranberry supplements or juice provide anti-adhesion benefits for urinary tract but do NOT replace antibiotic treatment for STI-related urethritis — use as adjunct"
+      ]
+    },
+
+    "lifestyle_management": {
+      "sexual_health_and_prevention": {
+        "abstinence_during_treatment": {
+          "requirement": "ABSTAIN from all sexual activity (vaginal, anal, and oral sex) until BOTH you AND your partner(s) have COMPLETED the FULL course of treatment AND are symptom-free",
+          "duration": "Single-dose treatments (ceftriaxone, metronidazole 2g, azithromycin 1g): abstain for 7 days after BOTH partners are treated. Multiple-dose treatments (doxycycline 7 days): abstain until completion of full course by BOTH partners",
+          "rationale": "Having sex before both partners complete treatment guarantees re-infection ('ping-pong' re-infection)"
+        },
+        "partner_notification": {
+          "legal_and_ethical_obligation": "Partner notification is a moral, ethical, and in some countries legal obligation when diagnosed with an STI. All partners from the relevant look-back period must be informed and offered testing and treatment.",
+          "look_back_periods": {
+            "gonorrhoea": "All sexual partners in past 3 months (or back to last negative test)",
+            "chlamydia": "All sexual partners in past 6 months (or since last negative test)",
+            "trichomoniasis": "All current sexual partners",
+            "herpes": "All recent sexual partners; ongoing discussion with regular partner(s)"
+          },
+          "methods": [
+            "Direct contact (in person, by phone) by the index patient — most common",
+            "Provider-assisted notification: sexual health clinic contact tracers contact partners on your behalf confidentially",
+            "Anonymous digital notification: services like SH:24 (UK), Tell Your Partner (USA) allow anonymous STI notification by text or email"
+          ],
+          "confidentiality": "Partner notification is done confidentially — your name is not automatically disclosed; discuss with sexual health advisor"
+        },
+        "consistent_condom_use": {
+          "protection": "Male latex condoms correctly and consistently used reduce transmission of gonorrhoea, chlamydia, and Trichomonas by 70-85%; reduce HSV transmission by ~50%; reduce HIV transmission by >85%",
+          "correct_use": [
+            "Use from start to finish of every sexual encounter",
+            "Use a new condom for each act of sexual intercourse",
+            "Check expiry date; store away from heat and sunlight",
+            "Use with compatible lubricant (water or silicone-based — not oil-based which damages latex)",
+            "Leave space at tip; squeeze out air before putting on",
+            "Female condoms (femidoms) also effective and female-controlled"
+          ],
+          "limitations": "Condoms do not protect sites not covered: pubic area, scrotum, base of penis — herpes and syphilis can be transmitted from these areas"
+        },
+        "regular_sti_screening": {
+          "recommendation": "Annual STI screening for all sexually active individuals; every 3 months for high-risk individuals (MSM, multiple partners, new partners)",
+          "what_to_screen": "HIV, gonorrhoea, chlamydia, syphilis; hepatitis B; hepatitis C (MSM and PWID); herpes serology if symptoms",
+          "where": "Sexual health (GUM) clinic, GP surgery, online self-test kits (NHS, Bupa, SH:24, Fettle), community sexual health services"
+        },
+        "pre_exposure_prophylaxis_prep": {
+          "recommendation": "Discuss HIV PrEP (tenofovir/emtricitabine) with any patient at high HIV risk — particularly MSM and individuals with multiple partners or prior STIs",
+          "note": "PrEP does NOT protect against gonorrhoea, chlamydia, or other STIs — condoms still essential"
+        }
+      },
+      "personal_hygiene_and_urethral_care": [
+        "Avoid using soap, shower gels, perfumed products, or antiseptics directly on or around the urethral meatus — water is sufficient for external genital washing",
+        "Choose unscented, hypoallergenic soaps if needed for general hygiene around genitals",
+        "Avoid bubble baths, bath salts, and bath oils — soak in plain warm water only",
+        "Wear loose-fitting, breathable cotton underwear — reduces friction, moisture, and heat that can worsen urethral irritation",
+        "Avoid tight synthetic underwear (nylon, polyester) during treatment — traps moisture and heat",
+        "Urinate after sexual activity — flushes potential pathogenic organisms from the urethra",
+        "Wipe from front to back (women) — prevents faecal contamination of urethra and vagina",
+        "Clean sex toys thoroughly with soap and water or dedicated toy cleaner before and after use; use condoms on penetrative sex toys",
+        "Avoid urethral irrigation or douching — disrupts natural microbial flora and mucosal defence"
+      ],
+      "mental_health_and_stigma": [
+        "STI diagnosis can cause significant psychological distress — shame, guilt, anger, anxiety about partner reactions, and fear about future relationships are all normal responses",
+        "STIs are common, treatable, and affect people of all backgrounds — they are not a reflection of character or worth",
+        "Seek counselling or psychosexual therapy if STI diagnosis significantly affects relationships, sexual function, or mental health",
+        "Sexual health clinics provide confidential, non-judgemental care — attend without hesitation",
+        "For herpes specifically: recurrent herpes can cause ongoing psychological distress; herpes support organisations (ASHA in USA, Herpes Viruses Association in UK) provide peer support",
+        "Partner disclosure discussions can be very difficult — sexual health advisors can provide scripted guidance for partner disclosure conversations",
+        "Remember: most partners will respond better than feared; early disclosure allows partner protection and treatment"
+      ],
+      "post_treatment_follow_up": [
+        "Test of cure (TOC) is MANDATORY after gonorrhoea treatment — NAAT at 2-3 weeks post-treatment at all affected sites",
+        "Return for review if symptoms persist or recur after completing treatment — do NOT re-take antibiotics without medical assessment",
+        "Re-test for chlamydia 3 months after initial diagnosis and treatment (high re-infection rate from new or untreated partners)",
+        "Annual HIV and STI retesting for all sexually active individuals regardless of symptoms",
+        "Discuss immunisation for vaccine-preventable STIs: HPV vaccine, Hepatitis B vaccine, Mpox vaccine (for MSM)",
+        "Ensure partner(s) have been tested and treated before resuming sexual activity",
+        "Test for other STIs as appropriate: HIV, syphilis, hepatitis B and C — offered at all STI consultations"
+      ]
+    },
+
+    "urethritis_monitoring_plan": {
+      "note": "Urethritis monitoring tracks symptom resolution, treatment adherence, and complication detection. Test of cure is mandatory for gonorrhoea. Re-testing for chlamydia is recommended at 3 months due to high reinfection rates.",
+      "green_zone": {
+        "status": "Responding Well to Treatment",
+        "criteria": "Symptoms significantly improving within 48-72 hours of starting antibiotics; discharge reducing and clearing by day 3-5; dysuria improving substantially; partner(s) notified and receiving treatment; completing full antibiotic course as directed",
+        "action": "Continue full antibiotic course exactly as prescribed without interruption. Maintain abstinence from sexual activity until 7 days after BOTH partners complete treatment. Stay hydrated. Return test of cure for gonorrhoea at 2-3 weeks. Re-test for chlamydia at 3 months. Annual STI screening ongoing."
+      },
+      "yellow_zone": {
+        "status": "Incomplete Response — Review Needed",
+        "criteria": "Symptoms improving slowly or minimally after 3-5 days of antibiotics; discharge persisting beyond 7 days; partner(s) unable to be tested or treated; concern about treatment adherence; possible re-exposure to untreated partner",
+        "action": "Contact sexual health clinic or GP within 3-5 days. Assess adherence to treatment. Repeat STI testing (NAAT for gonorrhoea, chlamydia, Mycoplasma genitalium). Test partner(s). Consider alternative antibiotic if resistance suspected. Check for Mycoplasma genitalium and Trichomonas."
+      },
+      "red_zone": {
+        "status": "URGENT — Complication or Treatment Failure",
+        "criteria": "Any of: Testicular or epididymal pain and swelling (epididymo-orchitis); lower abdominal pain with fever in women (PID); joint pain with skin rash and fever (disseminated gonococcal infection); inability to urinate (urinary retention); severe worsening pain despite antibiotics; symptoms 2+ weeks after completing treatment; fever >38.5°C",
+        "action": "SEEK URGENT MEDICAL CARE SAME DAY. Epididymo-orchitis and PID require urgent sexual health or hospital review — IV antibiotics may be necessary. DGI requires hospitalisation. Urinary retention requires emergency assessment. Do not wait for improvement with any of these features."
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Epididymo-Orchitis",
+        "description": "Ascending infection from the urethra to the epididymis (and sometimes testis) — most common male complication of STI-related urethritis. Chlamydia trachomatis is the most common cause in sexually active men under 35; E. coli and other uropathogens in older men. Presents with unilateral scrotal/testicular pain, swelling, tenderness, and fever. Must be distinguished from testicular torsion (surgical emergency).",
+        "severity": "Moderate to Severe",
+        "management": "Doxycycline 100mg twice daily for 14-21 days (for Chlamydia/NGU); scrotal support; NSAIDs for pain; hospitalisation if severe; urology and GUM co-management",
+        "long_term_risk": "Testicular atrophy; oligospermia/azoospermia; infertility in severe or recurrent cases"
+      },
+      {
+        "complication": "Pelvic Inflammatory Disease (PID)",
+        "description": "Ascending infection from the uterine cervix and urethra to the endometrium, fallopian tubes, and ovaries — the most serious female complication of chlamydia and gonorrhoea. Presents with lower abdominal pain, abnormal vaginal discharge, dyspareunia, intermenstrual bleeding, fever, and cervical motion tenderness. Can be mild and subclinical ('silent PID') in chlamydial cases.",
+        "severity": "Moderate to Severe — major cause of preventable female infertility",
+        "management": "Outpatient: ceftriaxone IM single dose + doxycycline 100mg BD × 14 days + metronidazole 400mg BD × 14 days. Inpatient (severe): IV ceftriaxone/cefoxitin + doxycycline IV then oral. TOC at 2-3 weeks.",
+        "long_term_consequences": "Ectopic pregnancy (6-10x increased risk); tubal factor infertility (~15% after 1 episode, 30% after 2, 60%+ after 3); chronic pelvic pain; hydrosalpinx; tubo-ovarian abscess"
+      },
+      {
+        "complication": "Disseminated Gonococcal Infection (DGI)",
+        "description": "Bacteraemic spread of Neisseria gonorrhoeae beyond the urogenital tract. Occurs in 0.5-3% of untreated gonorrhoea cases. Two presentations: (1) Arthritis-Dermatitis Syndrome: migratory polyarthralgia, tenosynovitis, characteristic scattered pustular or haemorrhagic skin lesions; (2) Septic Arthritis: purulent joint infection (usually knee, hip, wrist). More common in women (especially during menstruation/pregnancy) and in complement deficiency.",
+        "severity": "Severe — requires hospitalisation",
+        "management": "IV ceftriaxone 1g daily until improvement, then oral cefixime 400mg twice daily to complete 7-day course; joint washout if septic arthritis; test of cure"
+      },
+      {
+        "complication": "Reactive Arthritis (formerly Reiter's Syndrome)",
+        "description": "Immune-mediated sterile inflammatory arthritis triggered by urogenital infection (primarily Chlamydia trachomatis) — typically 2-4 weeks after urethritis. Classic triad: urethritis + arthritis + conjunctivitis. Additional features: circinate balanitis (painless penile lesions), keratoderma blenorrhagica (skin lesions resembling pustular psoriasis). Occurs predominantly in HLA-B27 positive individuals. Can become chronic in ~20-25% of cases.",
+        "severity": "Moderate to Severe",
+        "management": "Treat causative organism (chlamydia with doxycycline); NSAIDs for arthritis; physiotherapy; DMARDs (sulfasalazine) for chronic reactive arthritis; ophthalmology review for uveitis"
+      },
+      {
+        "complication": "Urethral Stricture",
+        "description": "Fibrous scarring and narrowing of the urethral lumen from chronic or recurrent gonococcal urethritis (gonorrhoea is the classic cause of post-urethritis urethral stricture). Presents with reduced urinary stream, straining to urinate, incomplete bladder emptying, recurrent UTIs, and post-void dribbling.",
+        "severity": "Moderate to Severe — chronic",
+        "management": "Urological referral; urethral dilation; internal urethrotomy; urethroplasty (reconstructive surgery); urinary catheterisation in acute retention"
+      },
+      {
+        "complication": "Neonatal Conjunctivitis (Ophthalmia Neonatorum) and Neonatal Pneumonia",
+        "description": "Vertical transmission from mother to neonate during passage through infected birth canal. Neisseria gonorrhoeae causes acute purulent conjunctivitis (ophthalmia neonatorum) within 2-5 days — can rapidly progress to corneal perforation and blindness. Chlamydia trachomatis causes neonatal conjunctivitis (5-14 days after birth) and neonatal pneumonia (3-12 weeks) — less severe than gonococcal but important and common.",
+        "severity": "Severe — blindness possible with untreated neonatal gonococcal conjunctivitis",
+        "prevention": "Routine STI screening in pregnancy; treatment of maternal infection before delivery; prophylactic neonatal eye ointment (erythromycin or tetracycline) at birth in some guidelines"
+      },
+      {
+        "complication": "Infertility (Male and Female)",
+        "description": "Repeated or inadequately treated urethritis from gonorrhoea and chlamydia causes scarring of reproductive tract structures — epididymis (male) and fallopian tubes (female). Tubal factor infertility is one of the most common preventable causes of infertility globally. An estimated 10-15% of untreated Chlamydia infections cause tubal occlusion.",
+        "severity": "Moderate to Severe — irreversible in some cases",
+        "prevention": "Early diagnosis and treatment; partner notification; re-testing for reinfection; routine STI screening"
+      },
+      {
+        "complication": "Increased HIV Transmission Risk",
+        "description": "Urethritis dramatically increases risk of both HIV acquisition and HIV transmission. STIs that cause genital ulcers (herpes, syphilis) increase HIV susceptibility 5-10x. Non-ulcerative STIs (gonorrhoea, chlamydia) increase HIV susceptibility 2-5x through: (1) Recruitment of HIV-susceptible CD4+ T cells and macrophages expressing CCR5 to urethral/genital mucosal surfaces; (2) Disruption of mucosal barrier integrity; (3) Increased HIV viral shedding from genital secretions in HIV-positive individuals with concurrent STI.",
+        "severity": "Major public health concern",
+        "management": "Prompt STI treatment reduces HIV transmission risk; discuss HIV PrEP for high-risk individuals; condom promotion"
+      },
+      {
+        "complication": "Prostatitis",
+        "description": "Ascending infection from the urethra to the prostate gland. Chlamydia trachomatis and Mycoplasma genitalium are underrecognised causes of chronic prostatitis/chronic pelvic pain syndrome in men. Presents with perineal, pelvic, or penile pain; dysuria; frequency; sexual dysfunction; ejaculatory pain.",
+        "severity": "Moderate — chronic; significantly affects quality of life",
+        "management": "Long course of doxycycline or fluoroquinolone (4-6 weeks for chronic chlamydial prostatitis); prostate massage; alpha-blockers for urinary symptoms"
+      },
+      {
+        "complication": "Psychological Impact and Relationship Difficulties",
+        "description": "STI diagnosis causes significant psychological sequelae: anxiety, depression, reduced self-esteem, stigma, relationship difficulties, and sexual dysfunction. Fear of recurrence, partner disclosure challenges, and impact on future sexual relationships are common concerns — particularly for herpes diagnosis (recurrent lifelong condition).",
+        "severity": "Moderate — significantly impacts quality of life",
+        "management": "Psychological support; sexual health counselling; peer support groups; psychosexual therapy if sexual dysfunction develops"
+      }
+    ],
+
+    "special_populations": {
+      "urethritis_in_pregnancy": {
+        "key_points": [
+          "STI screening (gonorrhoea and chlamydia) is recommended for all pregnant women at first antenatal booking and again in 3rd trimester for high-risk individuals",
+          "Untreated chlamydia and gonorrhoea in pregnancy risks: preterm birth, low birth weight, premature rupture of membranes, neonatal conjunctivitis, and neonatal pneumonia",
+          "SAFE antibiotics in pregnancy: Amoxicillin 500mg TDS × 7 days (chlamydia — first-line in 1st trimester); Azithromycin 1g single dose (chlamydia — from 2nd trimester); Erythromycin 500mg QDS × 7 days (chlamydia — alternative); Ceftriaxone 500mg IM (gonorrhoea — all trimesters — safe); Metronidazole 400mg BD × 7 days (Trichomonas — 2nd and 3rd trimester — avoid single 2g dose in pregnancy)",
+          "AVOID in pregnancy: Doxycycline (ALL trimesters — teratogenic to fetal bone and tooth development; affects fetal growth); Quinolones/Fluoroquinolones including ciprofloxacin and moxifloxacin (cartilage effects in developing fetus)",
+          "Neonatal prophylaxis: erythromycin 0.5% ophthalmic ointment applied to both eyes at birth (prevents neonatal gonococcal conjunctivitis); some guidelines recommend universal; mandatory if maternal GC untreated",
+          "Test of cure after treatment in pregnancy is MANDATORY — repeat NAAT at 3-4 weeks to confirm eradication"
+        ]
+      },
+      "urethritis_in_children": {
+        "key_points": [
+          "STI-related urethritis in pre-pubertal children (under 13 years) is a SAFEGUARDING CONCERN — always consider sexual abuse; mandatory reporting requirements apply in most jurisdictions",
+          "Gonorrhoea, chlamydia, syphilis, and trichomonas in a pre-pubertal child are presumptively sexually transmitted — full safeguarding assessment and police notification required",
+          "However: some exceptions exist — neonatal transmission from infected mother (chlamydial conjunctivitis); rarely non-sexual transmission of some organisms in specific circumstances",
+          "Conduct examination sensitively; forensic swabs may be required; involve paediatric safeguarding team, paediatric GUM specialist, and social services",
+          "Treatment: ceftriaxone (gonorrhoea), azithromycin (chlamydia — doxycycline CONTRAINDICATED in children <8 years), metronidazole (Trichomonas) — weight-based paediatric dosing",
+          "In adolescents over 13 — STI urethritis is managed as in adults; assess consent, Fraser competence, and safeguarding concerns individually"
+        ]
+      },
+      "urethritis_in_men_who_have_sex_with_men_msm": {
+        "key_points": [
+          "MSM have higher rates of gonorrhoea, chlamydia, and syphilis than other populations — driven by higher partner numbers and condomless sex",
+          "Multi-site infection is common — always test urethra, pharynx AND rectum in MSM regardless of symptoms (extra-genital sites are frequently asymptomatic)",
+          "LGV (Lymphogranuloma Venereum — Chlamydia serovars L1-L3) occurs almost exclusively in MSM — presents as severe proctitis, not simple urethritis; treat with doxycycline 100mg BD × 21 days (NOT 7 days)",
+          "HIV PrEP (tenofovir/emtricitabine) uptake — all eligible MSM should be offered; 3-monthly STI screening recommended for MSM on PrEP",
+          "Mpox (monkeypox) vaccine recommended for eligible MSM in many countries — associated with genitourinary transmission",
+          "Hepatitis C sexual transmission occurs predominantly in HIV+ MSM and MSM who engage in high-risk sexual practices — screen annually",
+          "Syphilis rates are very high in MSM — screen with syphilis serology at every STI attendance; early syphilis (primary — chancre, secondary — rash) requires urgent treatment (benzylpenicillin) to prevent neurological tertiary syphilis"
+        ]
+      },
+      "urethritis_in_elderly": {
+        "key_points": [
+          "STIs in older adults are increasingly common and frequently unrecognised — healthcare providers have historically under-screened elderly for STIs",
+          "Physiological changes: urethral mucosal atrophy (postmenopausal atrophic urethritis) makes STI acquisition easier; reduced immune response; concurrent multiple medications",
+          "Many elderly present atypically — confusion, falls, general decline rather than classic STI symptoms",
+          "Atrophic urethritis (non-infective) is very common in postmenopausal women — caused by oestrogen deficiency causing urethral mucosal thinning and dryness; treated with topical vaginal oestrogen",
+          "Antibiotic interactions more common in elderly polypharmacy — check carefully",
+          "Lower threshold for hospitalisation in complicated urethritis in elderly"
+        ]
+      },
+      "urethritis_in_immunocompromised": {
+        "key_points": [
+          "HIV-positive individuals: higher rates of STI acquisition; altered STI presentations; more severe and recurrent herpes; may have atypical or more severe presentations of NGU",
+          "Immune reconstitution inflammatory syndrome (IRIS) can cause paradoxical worsening of STI symptoms after starting antiretroviral therapy",
+          "Prolonged antibiotic courses may be required for intracellular organisms (Chlamydia, Mycoplasma) in HIV-positive individuals",
+          "Doxycycline drug interactions with antiretroviral therapy — check specific ARV regimen",
+          "Organ transplant recipients on immunosuppressants: careful antibiotic selection; fluoroquinolone interactions with calcineurin inhibitors (ciclosporin, tacrolimus); monitor for QT prolongation"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "HPV Vaccine (Human Papillomavirus)",
+        "types": ["Cervarix (bivalent — HPV 16, 18)", "Gardasil 9 (nonavalent — HPV 6, 11, 16, 18, 31, 33, 45, 52, 58)"],
+        "frequency": "2-dose schedule (6-12 months apart) if started before 15 years; 3-dose schedule if started at 15+ years or immunocompromised",
+        "reason": "HPV infection is sexually transmitted and causes: genital warts (HPV 6, 11 — most common STI-associated skin condition in genitourinary medicine), cervical cancer (HPV 16, 18), penile cancer, anal cancer, vulval cancer, and oropharyngeal cancer. HPV can infect the urethra causing urethral warts. Vaccination is highly effective at preventing these outcomes.",
+        "target": "All adolescents ideally before sexual debut (girls and boys); catch-up up to 26 years; MSM up to 45 years (UK) per specialist advice",
+        "efficacy": "Gardasil 9: >97% efficacy against cervical precancers from included HPV types; near-complete elimination of new genital warts from HPV 6/11"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "types": ["Engerix-B", "HBvaxPRO", "Twinrix (Hep A + Hep B combination)"],
+        "frequency": "3-dose primary course (0, 1, 6 months) for standard adult vaccination; accelerated schedule (0, 1, 2, 12 months) for rapid protection before travel or exposure; check immunity (anti-HBs level) 4-8 weeks after completion",
+        "reason": "Hepatitis B is sexually transmitted (4-fold higher risk than HIV per exposure through unprotected sex). Essential vaccination for all sexually active individuals who are not immune. Recommended for all patients attending sexual health clinics, all healthcare workers, MSM, sex workers, close contacts of HBV carriers, and those with multiple sexual partners.",
+        "efficacy": ">95% protection after 3-dose course"
+      },
+      {
+        "vaccine": "Mpox (Monkeypox) Vaccine — JYNNEOS / Imvanex",
+        "frequency": "2 doses, 28 days apart (JYNNEOS/Imvanex subcutaneous or intradermal); targeted vaccination programme in eligible individuals",
+        "reason": "Mpox is predominantly sexually transmitted in current epidemics — primarily among MSM and their networks. Mpox causes genital, perianal, and urethral lesions that may be misdiagnosed as urethritis. Vaccination recommended for eligible MSM and others at high risk of mpox exposure.",
+        "eligibility": "MSM with multiple or new sexual partners; sex workers; sexual health clinic attendees meeting criteria (varies by country and current epidemiology)",
+        "efficacy": "~85% efficacy against mpox; reduces severity of breakthrough cases"
+      },
+      {
+        "vaccine": "Hepatitis A Vaccine",
+        "types": ["Havrix", "Vaqta", "Twinrix (Hep A + B combination)"],
+        "frequency": "2 doses (0 and 6-12 months)",
+        "reason": "Hepatitis A can be sexually transmitted — particularly through oral-anal contact (rimming) in MSM and partners. Outbreaks among MSM are well-documented. Recommended for MSM, travellers to endemic areas, and people at risk of faecal-oral sexual transmission.",
+        "efficacy": ">95% protective after 2-dose course; lifelong protection"
+      },
+      {
+        "vaccine": "Meningococcal ACWY Vaccine",
+        "frequency": "Single dose; booster every 5 years for ongoing risk",
+        "reason": "Neisseria meningitidis (meningococcal bacteria) can cause urogenital infections in MSM — including urethritis. Outbreaks of invasive meningococcal disease in MSM (particularly serogroup C, W, and Y) have been documented. Vaccination recommended for MSM as per national guidance.",
+        "note": "Particularly relevant as gonorrhoea (Neisseria gonorrhoeae) and meningococcus (Neisseria meningitidis) are closely related organisms with some cross-reactive immunity from MenB vaccines"
+      },
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Annually",
+        "reason": "General health maintenance; immunocompromised STI patients (HIV-positive, on immunosuppressants) particularly benefit from annual flu vaccination to prevent flu-related complications that could impair immune function and worsen STI outcomes"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Any urethral discharge (unusual, abnormal, or purulent) — see a sexual health clinic or doctor as soon as possible",
+      "Dysuria (painful, burning urination) persisting for more than 24-48 hours without improvement, or any recurrence",
+      "Your sexual partner has been diagnosed with an STI — you need testing and possible treatment even if you have no symptoms",
+      "You have had unprotected sex (without a condom) with a new or casual partner — STI screening recommended within 2 weeks",
+      "Urethral symptoms that do not resolve within 7 days of starting antibiotics prescribed by a doctor",
+      "Recurrence of symptoms after completing a course of antibiotics",
+      "Symptoms that partially improve but do not completely resolve on treatment",
+      "Scrotal or testicular pain and swelling — possible epididymo-orchitis requiring urgent assessment",
+      "Lower abdominal pain, fever, and abnormal vaginal discharge in women — possible pelvic inflammatory disease",
+      "Pain and swelling in joints combined with skin rash and fever after genital discharge — possible disseminated gonococcal infection",
+      "Genital ulcers, blisters, or sores — possible herpes or syphilis — requires testing",
+      "You are pregnant with symptoms of urethritis or have been exposed to an STI",
+      "Annual STI screening — even without symptoms — for all sexually active individuals, especially those with multiple partners"
+    ],
+
+    "emergency_signs": [
+      "Testicular pain and swelling developing in a man with urethritis — possible EPIDIDYMO-ORCHITIS (attend emergency or urgent sexual health clinic same day; requires urgent urological assessment to exclude testicular torsion — which is a surgical emergency within 6 hours)",
+      "Sudden onset of SEVERE one-sided testicular pain without preceding urethritis — possible TESTICULAR TORSION — CALL EMERGENCY SERVICES — surgical emergency within 6 hours",
+      "Lower abdominal pain with fever in a woman with STI — possible PID with tubo-ovarian abscess — URGENT hospital assessment",
+      "Unable to urinate (urinary retention) — seek emergency care immediately",
+      "High fever >39°C with joint pain and skin rash (pustular or haemorrhagic) and urethritis — possible DISSEMINATED GONOCOCCAL INFECTION — hospital admission required",
+      "Sudden worsening of eye symptoms with red eye and discharge — possible gonococcal conjunctivitis — same-day ophthalmology emergency (risk of corneal perforation within hours)",
+      "Confusion, neck stiffness, severe headache with any STI — possible meningococcal meningitis (Neisseria meningitidis — relative of gonorrhoea) — CALL EMERGENCY SERVICES",
+      "Signs of anaphylaxis after antibiotic injection (rash, facial swelling, breathing difficulty, collapse) — CALL EMERGENCY SERVICES",
+      "Pregnant woman with urethritis symptoms and fever — possible ascending infection — URGENT obstetric and infectious disease assessment"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is urethritis and what causes it?",
+        "answer": "Urethritis is inflammation of the urethra — the tube that carries urine from the bladder to outside the body. It is most commonly caused by sexually transmitted infections (STIs), particularly: Neisseria gonorrhoeae (gonococcal urethritis) causing profuse purulent discharge; Chlamydia trachomatis (most common cause of non-gonococcal urethritis/NGU); Mycoplasma genitalium; Trichomonas vaginalis; and Herpes simplex virus. Non-STI causes include chemical irritants, trauma, and reactive arthritis. Symptoms include dysuria (burning urination), urethral discharge, and urethral itching."
+      },
+      {
+        "question": "How does urethritis differ from a urinary tract infection (UTI)?",
+        "answer": "Urethritis and UTI (cystitis) both cause dysuria (burning urination) and urinary frequency, making them easy to confuse. Key differences: UTI is caused by uropathogenic bacteria (E. coli in 80%) spreading up into the bladder, causes suprapubic pain and cloudy/foul-smelling urine, is detected by urine dipstick (positive nitrites and leucocytes) and MSU culture. Urethritis is usually an STI affecting only the urethra, causes urethral discharge (absent in UTI), has a normal MSU culture ('sterile pyuria'), and requires STI-specific testing (NAAT for gonorrhoea and chlamydia). Women with dysuria and 'negative UTI results' should be tested for STIs."
+      },
+      {
+        "question": "Can urethritis be present without any symptoms?",
+        "answer": "Yes — asymptomatic urethritis is extremely common, especially with Chlamydia trachomatis. Approximately 50% of infected men and 70-80% of infected women with chlamydia have no symptoms whatsoever. Trichomonas vaginalis is asymptomatic in 70-80% of infected men. This is why STI screening is so important — you can have urethritis, be infectious, and be at risk of complications (PID, epididymitis, infertility) without any symptoms. Regular testing is essential for all sexually active people."
+      },
+      {
+        "question": "Do I need to tell my sexual partners about my STI diagnosis?",
+        "answer": "Yes — partner notification is both ethically and in some places legally required. All sexual partners from the relevant look-back period need to be informed so they can be tested and treated. This prevents: them developing complications from untreated infection, continued transmission in the community, and most importantly, re-infecting you after your treatment (the main cause of treatment failure — ping-pong re-infection). You can notify partners yourself, have the clinic's contact tracing team do it confidentially, or use anonymous digital notification services. Your name does not need to be disclosed without your consent."
+      },
+      {
+        "question": "How long should I avoid sex after treatment for urethritis?",
+        "answer": "You must abstain from ALL sexual activity (vaginal, anal, and oral sex) until BOTH you AND your partner(s) have completed the FULL treatment course AND are symptom-free. For single-dose treatments (ceftriaxone, metronidazole 2g, azithromycin 1g): 7 days after BOTH partners are treated. For multi-day courses (doxycycline 7 days): until the complete course is finished by both partners. Having sex before treatment is complete — even once — virtually guarantees re-infection. The most common cause of 'treatment failure' is re-infection from an incompletely treated partner."
+      },
+      {
+        "question": "What is the difference between gonococcal and non-gonococcal urethritis?",
+        "answer": "Gonococcal urethritis (GU) is caused specifically by Neisseria gonorrhoeae — typically causing profuse, purulent (thick, yellow-green), abundant discharge with more severe dysuria, and a shorter incubation (1-5 days). Non-gonococcal urethritis (NGU) refers to all urethritis where gonorrhoea has been excluded — most commonly caused by Chlamydia trachomatis, Mycoplasma genitalium, Ureaplasma, or Trichomonas. NGU typically causes scanty, mucoid, or clear discharge with milder or absent symptoms. Both require treatment but different antibiotics — this is why the distinction matters clinically."
+      },
+      {
+        "question": "Why has my urethritis come back after treatment?",
+        "answer": "Persistent or recurrent urethritis after treatment has several common causes: (1) Re-infection from an untreated or inadequately treated partner — the most common cause; (2) Antibiotic resistance — particularly Mycoplasma genitalium macrolide resistance (30-60% of strains in many countries); (3) Incomplete treatment adherence — missing doses; (4) Missed co-infection — Trichomonas vaginalis or Mycoplasma genitalium not initially tested for; (5) New sexual exposure during or after treatment; (6) Antibiotic-resistant gonorrhoea. Return to your sexual health clinic — repeat testing including Mycoplasma genitalium with resistance testing, and partner re-evaluation are essential."
+      },
+      {
+        "question": "Is gonorrhoea becoming untreatable due to antibiotic resistance?",
+        "answer": "Gonorrhoea resistance is a serious and growing global health emergency — WHO classifies N. gonorrhoeae as a 'Priority 2: High' drug-resistant pathogen. Gonorrhoea has developed resistance to penicillins, tetracyclines, fluoroquinolones (>50% resistance in many countries), and increasingly azithromycin. Ceftriaxone injection is currently the last reliable first-line treatment in most countries — but strains with reduced ceftriaxone susceptibility and a small number of ceftriaxone-resistant strains have been reported globally. This is why: culture for antibiotic sensitivity testing is now mandatory alongside NAAT; higher doses of ceftriaxone are now recommended; test of cure is required after every treatment; and dual therapy with azithromycin was used (though now largely discontinued due to resistance). Urethritis and gonorrhoea must be treated promptly by a specialist."
+      },
+      {
+        "question": "What is Mycoplasma genitalium and why does it matter?",
+        "answer": "Mycoplasma genitalium is a tiny bacterium (the smallest self-replicating organism known) that causes 15-20% of non-gonococcal urethritis (NGU) and is associated with persistent/recurrent urethritis, epididymitis, PID, and possibly infertility. It is critically important because it has developed very high rates of resistance to macrolide antibiotics (azithromycin) — 30-60% of strains in many countries are macrolide-resistant. This means the previous standard treatment (azithromycin 1g single dose) often fails for Mycoplasma urethritis. Current guidelines recommend: testing for Mycoplasma genitalium with resistance testing before choosing treatment; doxycycline for initial NGU; and moxifloxacin for macrolide-resistant strains. It is a major driver of antibiotic resistance in sexual health."
+      },
+      {
+        "question": "Can urethritis cause infertility?",
+        "answer": "Yes — untreated or inadequately treated urethritis from gonorrhoea and chlamydia can cause infertility in both men and women. In women: ascending infection causes pelvic inflammatory disease (PID) — scarring of the fallopian tubes. Each episode of PID carries a 15% chance of tubal factor infertility; 3 episodes give ~60%+ risk. Chlamydia is a leading cause of preventable infertility globally. In men: ascending infection causes epididymo-orchitis — recurrent episodes can cause epididymal obstruction, azoospermia, and male infertility. Silent (asymptomatic) chlamydial infection can cause this damage without any warning symptoms — reinforcing the importance of regular STI screening."
+      },
+      {
+        "question": "What is the role of probiotics during antibiotic treatment for urethritis?",
+        "answer": "Probiotics are beneficial during antibiotic treatment for urethritis. Antibiotics (especially doxycycline, azithromycin, metronidazole) disrupt the gut microbiome, causing antibiotic-associated diarrhoea and, in women, vaginal microbiome disruption (increasing risk of yeast infection/thrush and bacterial vaginosis). Lactobacillus rhamnosus GG and Saccharomyces boulardii supplementation reduce antibiotic-associated diarrhoea. For women, maintaining a Lactobacillus-dominant vaginal microbiome through oral probiotics and probiotic yogurt is beneficial during and after antibiotic treatment. Take probiotics 2 hours apart from antibiotic doses."
+      },
+      {
+        "question": "Are condoms effective against urethritis and STIs?",
+        "answer": "Yes — male latex condoms correctly and consistently used provide substantial protection: 70-85% reduction in gonorrhoea and chlamydia transmission; >85% reduction in HIV transmission; ~50% reduction in herpes transmission; near-complete protection against syphilis when lesion is covered. However, condoms are not 100% effective because they can slip or break, do not cover all exposed skin (herpes and syphilis can transmit from uncovered skin at the base of the penis or scrotum), and the protection level depends entirely on consistent correct use from start to finish of every sexual encounter. Condoms remain the single most effective STI prevention measure available."
+      },
+      {
+        "question": "What should I do if I was exposed to an STI recently?",
+        "answer": "If you have had unprotected sex with a new or casual partner: (1) Get tested — attend a sexual health clinic as soon as possible; testing is best 2 weeks after potential exposure (allows incubation of most STIs); (2) HIV PEP: if you are HIV-negative and may have been exposed to HIV, see a doctor within 72 hours (ideally within 24 hours) — post-exposure prophylaxis (PEP) is >80% effective if started within 72 hours of HIV exposure; (3) Emergency contraception: if unintended pregnancy is a concern — up to 72-120 hours after unprotected sex; (4) Hepatitis B prophylaxis: post-exposure hepatitis B vaccine within 48 hours if non-immune; (5) Abstain from sex until testing is complete and results are clear."
+      }
+    ],
+
+    "references": [
+      "British Association for Sexual Health and HIV (BASHH) — UK Guideline on the Management of Urethritis 2020",
+      "BASHH — UK National Guideline on Gonorrhoea 2019",
+      "BASHH — UK National Guideline on the Management of Non-Gonococcal Urethritis 2020",
+      "BASHH — UK National Guideline on the Management of Mycoplasma genitalium 2022",
+      "IUSTI/WHO European Guideline on the Management of Urethritis 2022 (Jensen JS et al.)",
+      "Centers for Disease Control and Prevention (CDC) — Sexually Transmitted Infections Treatment Guidelines 2021",
+      "World Health Organization (WHO) — Global Health Sector Strategy on Sexually Transmitted Infections 2016-2021",
+      "WHO — Global Prevalence and Incidence of Selected STIs 2020 (Rowley J et al.)",
+      "WHO — Guidelines for the Treatment of Neisseria gonorrhoeae 2016",
+      "European Centre for Disease Prevention and Control (ECDC) — Chlamydia Control in Europe 2019",
+      "Jensen JS, Cusini M et al. — IUSTI/WHO European Guideline on Urethritis 2021 (Journal of the European Academy of Dermatology and Venereology)",
+      "Taylor-Robinson D, Jensen JS — Mycoplasma genitalium: from Chrysalis to Multicolored Butterfly (Clinical Microbiology Reviews, 2011)",
+      "Ness RB et al. — Effectiveness of Inpatient and Outpatient Treatment Strategies for Women with Pelvic Inflammatory Disease (PEACH Trial, American Journal of Obstetrics and Gynecology, 2002)",
+      "Sexually Transmitted Infections: Summary of Evidence-Based Recommendations (JAMA, Workowski & Bachmann, 2021)",
+      "NICE Clinical Guideline (NG183): Sexually Transmitted Infections: Gonorrhoea; Chlamydia; PID (2021)",
+      "Sexual Health India — National AIDS Control Organisation (NACO) STI/RTI Treatment Guidelines (2019)",
+      "Medscape: Urethritis Clinical Overview — Gonococcal and Non-Gonococcal Urethritis Diagnosis and Management 2024",
+      "UpToDate: Approach to males with urethritis; Chlamydial infections in adults; Non-gonococcal urethritis"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-URETHRITIS-017",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-04",
+      "last_updated": "2026-06-04",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is for educational and informational purposes for the MedoAir chatbot only. It does not replace professional medical advice, diagnosis, or treatment. All STI diagnoses require evaluation by a licensed sexual health physician or clinic. This dataset contains information about sexually transmitted infections — all clinical decisions should follow current national guidelines and local antibiotic resistance data. Partner notification is an essential component of STI management.",
+      "tags": ["urethritis", "STI", "gonorrhoea", "chlamydia", "NGU", "Mycoplasma genitalium", "sexual health", "dysuria", "discharge", "PID", "epididymitis", "ceftriaxone", "doxycycline", "sexual health", "medoair"]
+    }
+  }
+}

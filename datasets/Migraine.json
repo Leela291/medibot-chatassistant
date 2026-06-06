@@ -1,0 +1,1787 @@
+{
+  "disease": {
+    "id": "DIS-011",
+    "name": "Migraine",
+    "scientific_name": "Migraine Disorder / Hemicrania",
+    "icd_10_code": "G43 (Migraine); G43.0 (Migraine without aura); G43.1 (Migraine with aura); G43.3 (Complicated migraine); G43.7 (Chronic migraine); G43.8 (Other migraine); G43.9 (Migraine unspecified)",
+    "category": "Neurological Disorder / Primary Headache Disorder",
+    "overview": {
+      "description": "Migraine is a complex, chronic, disabling neurological disorder characterised by recurrent attacks of moderate to severe, typically unilateral, throbbing or pulsating headache lasting 4 to 72 hours, frequently accompanied by nausea, vomiting, and extreme sensitivity to light (photophobia) and sound (phonophobia). Approximately 25-30% of migraineurs experience an aura — transient, reversible neurological symptoms (most commonly visual zigzag lines, scotomas, or sensory disturbances) preceding or accompanying the headache. Migraine is the third most prevalent disease globally and the second leading cause of disability worldwide, being the leading cause of disability in people under 50 years of age.",
+      "affected_organ": "Brain and central nervous system (trigeminovascular system); also affects cranial blood vessels, meninges, and the brainstem",
+      "prevalence": "Affects approximately 1 billion people worldwide; prevalence ~14-15% globally; ~12% of the US population; ~15% in Europe; ~8-9% in India (Hingee et al. estimate 150-200 million in India).",
+      "age_group": "Can begin at any age; peak onset 15-55 years; most common in adults 25-55 years; affects all ages including children. Childhood migraine prevalence 7-10%.",
+      "sex_ratio": "Women are 2-3 times more likely to have migraine than men after puberty (hormonal influence of oestrogen). Before puberty, equal in boys and girls.",
+      "is_contagious": false,
+      "is_curable": false,
+      "is_manageable": true,
+      "chronic": true,
+      "disability_burden": "Leading cause of years lived with disability (YLD) in under-50s globally. WHO ranks migraine among the top 10 most disabling conditions worldwide."
+    },
+
+    "migraine_phases": {
+      "description": "A complete migraine attack can progress through up to 4 distinct phases — though not all patients experience all phases in every attack.",
+      "phases": [
+        {
+          "phase": "1. Prodrome (Premonitory Phase)",
+          "timing": "Hours to 2 days BEFORE headache onset",
+          "prevalence": "Occurs in 30-40% of migraineurs",
+          "symptoms": [
+            "Excessive yawning (most specific prodrome symptom)",
+            "Mood changes — depression, euphoria, irritability",
+            "Food cravings — particularly for sweet or salty foods; chocolate",
+            "Neck stiffness and discomfort",
+            "Fatigue and excessive sleepiness",
+            "Cognitive difficulty — trouble concentrating, memory problems",
+            "Fluid retention and increased urination",
+            "Increased sensitivity to light and sound before headache begins",
+            "Constipation or diarrhea"
+          ],
+          "clinical_importance": "Recognizing prodrome allows early treatment and trigger avoidance; yawning is highly predictive"
+        },
+        {
+          "phase": "2. Aura",
+          "timing": "5-60 minutes, immediately before or during the early headache phase",
+          "prevalence": "~25-30% of migraineurs; not present in migraine without aura",
+          "aura_types": [
+            {
+              "type": "Visual Aura (most common — 90% of all auras)",
+              "features": "Positive phenomena: scintillating scotoma (bright zigzag arc of light — 'fortification spectra'); flashing lights (photopsia). Negative phenomena: scotoma (area of vision loss/dimming). Usually starts small, slowly expands over 20-30 minutes, moves across visual field. Binocular (both eyes affected — from occipital cortex)."
+            },
+            {
+              "type": "Sensory Aura",
+              "features": "Pins and needles or numbness that slowly spreads ('marching' paresthesia) from hand to face or face to hand — 'cheiro-oral march'. Unilateral. Slow spread over 20-30 minutes distinguishes from TIA."
+            },
+            {
+              "type": "Speech / Language Aura (Dysphasic Aura)",
+              "features": "Difficulty finding words (dysphasia), slurred speech, or confusion. Must distinguish from TIA/stroke — aura develops gradually over >5 minutes; TIA typically abrupt."
+            },
+            {
+              "type": "Motor Aura (Hemiplegic Migraine)",
+              "features": "Weakness or hemiplegia — requires specific diagnosis of Hemiplegic Migraine. Can be severely disabling; triptans and ergots CONTRAINDICATED."
+            },
+            {
+              "type": "Brainstem Aura (Basilar-Type)",
+              "features": "Dysarthria, vertigo, tinnitus, diplopia, bilateral sensory symptoms, ataxia, or decreased consciousness. Triptans relatively contraindicated."
+            }
+          ],
+          "cortical_spreading_depression": "Aura is caused by cortical spreading depression (CSD) — a slow wave of neuronal and glial depolarisation followed by sustained inhibition, spreading across the cortex at 2-5 mm/min. This generates the expanding/moving quality of aura symptoms."
+        },
+        {
+          "phase": "3. Headache Phase",
+          "timing": "4-72 hours (untreated); median 18 hours",
+          "features": [
+            "Unilateral in 60-70% (may be bilateral in 30-40%, especially children)",
+            "Pulsating or throbbing quality — often described as 'heartbeat in the head'",
+            "Moderate to severe intensity (prevents normal activity)",
+            "Worsened by routine physical activity (walking, climbing stairs)",
+            "Nausea in 80%; vomiting in 50%",
+            "Photophobia (light sensitivity) in 80%",
+            "Phonophobia (sound sensitivity) in 80%",
+            "Osmophobia (smell sensitivity) in 40%",
+            "Cutaneous allodynia — light touch feels painful (skin hypersensitivity from central sensitization — develops 60-90 minutes into attack, signals established central sensitization; triptans less effective after this point)"
+          ]
+        },
+        {
+          "phase": "4. Postdrome (Recovery Phase)",
+          "timing": "Up to 48 hours AFTER headache resolves",
+          "prevalence": "Occurs in ~80% of migraineurs",
+          "symptoms": [
+            "Profound fatigue and exhaustion ('migraine hangover')",
+            "Cognitive fog and difficulty concentrating",
+            "Neck stiffness",
+            "Light and sound sensitivity persisting mildly",
+            "Mood changes — relief, elation, depression",
+            "Scalp tenderness"
+          ],
+          "clinical_importance": "Postdrome significantly extends migraine-related disability beyond headache resolution"
+        }
+      ]
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Migraine Without Aura (Common Migraine)",
+        "ichd3_code": "G43.0",
+        "description": "The most common form — accounting for ~75% of migraine cases. Attacks fulfil the core ICHD-3 diagnostic criteria (unilateral, pulsating, moderate-severe, worsened by activity, with nausea/vomiting or photophobia+phonophobia) WITHOUT preceding or accompanying neurological aura symptoms.",
+        "common_in": "Adults 25-55 years; women 3x more than men",
+        "diagnostic_criteria": "≥5 attacks; 4-72 hours; ≥2 of: unilateral, pulsating, moderate-severe, worsened by activity; ≥1 of: nausea/vomiting, photophobia AND phonophobia"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Migraine With Aura (Classic Migraine)",
+        "ichd3_code": "G43.1",
+        "description": "Migraine preceded or accompanied by transient, reversible focal neurological aura symptoms — most commonly visual (zigzag scintillating scotoma, fortification spectra). Aura typically lasts 5-60 minutes; each symptom gradually develops over ≥5 minutes; no single symptom lasts >60 minutes. Headache follows within 60 minutes of aura (or occurs simultaneously in some cases).",
+        "common_in": "25-30% of migraineurs; associated with slightly increased stroke risk in women who smoke or use oestrogen-containing OCP",
+        "types_of_aura": ["Visual (most common — 90%)", "Sensory", "Speech/language", "Motor (hemiplegic)", "Brainstem (basilar-type)"]
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Chronic Migraine",
+        "ichd3_code": "G43.7",
+        "description": "Headache occurring on ≥15 days per month for >3 months, with ≥8 days/month meeting migraine criteria (or responding to triptan/ergot). A major disabling condition — affects ~2% of the population. Often develops from episodic migraine through progression (transformation), frequently driven by medication overuse (MOH).",
+        "common_in": "Adults; women more than men; patients with frequent episodic migraine on analgesics",
+        "risk_factors_for_progression": ["High attack frequency (≥5/month)", "Medication overuse (analgesics ≥10-15 days/month)", "Obesity", "Anxiety and depression", "Sleep disorders", "Stressful life events"],
+        "management": "Preventive medication essential; withdrawal from overused medications; CGRP mAbs highly effective"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Hemiplegic Migraine",
+        "ichd3_code": "G43.1",
+        "description": "Rare, severe form of migraine with aura that includes fully reversible motor weakness (hemiplegia or hemiparesis). Can be familial (FHM — autosomal dominant mutations in CACNA1A, ATP1A2, SCN1A genes) or sporadic. Motor weakness can last from hours to days and can be severely disabling. Must differentiate from stroke.",
+        "common_in": "Rare — affects <0.01% of population; can occur in children",
+        "contraindications": "Triptans, ergotamines, and beta-blockers are CONTRAINDICATED",
+        "management": "Preventive therapy (flunarizine, verapamil, acetazolamide, lamotrigine); naproxen or IV ketorolac for acute attacks; specialist management"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Vestibular Migraine",
+        "ichd3_code": "G43.A0",
+        "description": "Migraine variant characterized by recurrent vestibular episodes (vertigo, dizziness, imbalance) lasting 5 minutes to 72 hours, occurring in patients with current or history of migraine, with migraine features during ≥50% of vestibular episodes. Second most common cause of recurrent vertigo. Often misdiagnosed as Ménière's disease or BPPV.",
+        "common_in": "Adults; women more than men; 1-3% of population; 10% of migraine patients",
+        "management": "Migraine preventives (propranolol, topiramate, amitriptyline, venlafaxine); vestibular rehabilitation; avoid triggers"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Retinal Migraine",
+        "ichd3_code": "G43.81",
+        "description": "Repeated attacks of monocular visual disturbance (visual loss, scintillations, or scotoma) affecting ONE EYE ONLY (monocular — from retinal ischaemia) associated with migraine headache. Unlike typical aura (binocular from occipital cortex), retinal migraine is monocular and potentially vision-threatening.",
+        "common_in": "Rare; mostly adults under 40",
+        "warning": "Retinal migraine is a DIAGNOSIS OF EXCLUSION — other causes of monocular visual loss (retinal artery occlusion, carotid embolism, optic neuritis) must be urgently excluded"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Menstrual Migraine",
+        "ichd3_code": "G43.82",
+        "description": "Migraine attacks occurring exclusively or predominantly around menstruation. Pure menstrual migraine (PMM): attacks ONLY on days -2 to +3 of menstruation. Menstrually-related migraine (MRM): majority of attacks around menstruation but also at other times. Triggered by oestrogen withdrawal preceding menstruation. Typically more severe, longer, and more resistant to treatment.",
+        "common_in": "50-70% of female migraineurs have menstruation as a trigger; PMM in ~10%",
+        "management": "Hormonal management (oestrogen patches/gel in oestrogen-withdrawal phase); frovatriptan or naratriptan mini-prophylaxis; triptans for acute attacks"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Brainstem Aura Migraine (Basilar-Type Migraine)",
+        "ichd3_code": "G43.1",
+        "description": "Migraine with aura symptoms clearly originating from the brainstem (dysarthria, vertigo, tinnitus, hypacusis, diplopia, bilateral sensory symptoms, decreased consciousness) WITHOUT motor weakness. Previously called 'basilar artery migraine' — this term is now discouraged as basilar artery involvement not always demonstrated.",
+        "common_in": "More common in adolescents and young women",
+        "contraindications": "Triptans relatively contraindicated (caution — risk of basilar artery vasoconstriction); ergots contraindicated"
+      },
+      {
+        "id": "TYPE-09",
+        "name": "Status Migrainosus",
+        "ichd3_code": "G43.3",
+        "description": "A debilitating migraine attack lasting >72 hours (beyond the typical 4-72 hour window) despite treatment. Severe disability; may lead to dehydration, medication overuse, and emergency department presentation. Requires parenteral treatment.",
+        "management": "IV antiemetics (prochlorperazine, metoclopramide), IV DHE, IV ketorolac, IV dexamethasone, IV fluids; hospital admission may be needed"
+      },
+      {
+        "id": "TYPE-10",
+        "name": "Migraine with Brainstem Aura in Children (Periodic Syndromes)",
+        "description": "Childhood migraine equivalents — paroxysmal conditions that evolve into migraine or are strongly associated with migraine: Cyclical vomiting syndrome (recurrent episodes of intense vomiting), Abdominal migraine (recurrent midline abdominal pain with nausea), Benign paroxysmal vertigo of childhood, Benign paroxysmal torticollis.",
+        "common_in": "Children and adolescents",
+        "management": "Cyproheptadine, pizotifen, or propranolol for prevention; supportive care for acute episodes"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Migraine",
+        "description": "Mild to moderate headache that does not significantly prevent daily activities",
+        "headache_intensity": "VAS 1-4 / 10",
+        "frequency": "Episodic — < 4 headache days per month",
+        "functional_impact": "Able to function; reduced efficiency; may complete tasks with effort",
+        "midas_grade": "Grade I — little or no disability (MIDAS score 0-5)",
+        "management": "Simple analgesics as first-line (paracetamol, ibuprofen, aspirin); anti-emetics; trigger avoidance; keep migraine diary"
+      },
+      {
+        "level": 2,
+        "name": "Moderate Migraine",
+        "description": "Moderate headache with significant impact on daily function",
+        "headache_intensity": "VAS 5-6 / 10",
+        "frequency": "Episodic — 4-8 headache days per month",
+        "functional_impact": "Normal activity partially restricted; productivity significantly reduced",
+        "midas_grade": "Grade II — mild disability (MIDAS score 6-10)",
+        "management": "Triptans as first-line acute treatment; consider preventive therapy if ≥4 attacks/month; combine triptan + NSAID if needed"
+      },
+      {
+        "level": 3,
+        "name": "Severe Episodic Migraine",
+        "description": "Severe headache with complete or near-complete functional incapacitation during attacks",
+        "headache_intensity": "VAS 7-9 / 10",
+        "frequency": "Episodic — 8-14 headache days per month",
+        "functional_impact": "Unable to perform normal activities; bed rest required",
+        "midas_grade": "Grade III — moderate disability (MIDAS 11-20) or Grade IV — severe (MIDAS >21)",
+        "management": "Triptans first-line; preventive therapy strongly indicated; consider CGRP mAbs if standard preventives fail; acute parenteral treatment (IM sumatriptan, rectal diclofenac)"
+      },
+      {
+        "level": 4,
+        "name": "Chronic Migraine",
+        "description": "≥15 headache days per month (≥8 meeting migraine criteria) for >3 months — often with medication overuse headache",
+        "headache_intensity": "VAS 4-10 / 10 (variable)",
+        "frequency": "≥15 headache days per month",
+        "functional_impact": "Severe disability; profound impact on employment, relationships, social life, and mental health",
+        "midas_grade": "Grade IV — severe disability (MIDAS >21)",
+        "management": "Mandatory preventive therapy; withdrawal from overused medications under medical supervision; botulinum toxin type A; anti-CGRP monoclonal antibodies; multidisciplinary pain management; psychological support"
+      }
+    ],
+
+    "causes": {
+      "pathophysiology": {
+        "overview": "Migraine is a complex neurovascular disorder with a strong genetic basis. The fundamental mechanism involves abnormal activation of the trigeminovascular system — pain-sensing neurons innervating the meninges and cerebral blood vessels — leading to neurogenic inflammation, vasodilation, and sensitization of both peripheral and central pain pathways.",
+        "key_mechanisms": [
+          {
+            "mechanism": "Cortical Spreading Depression (CSD)",
+            "description": "A slow (2-5 mm/min) wave of sustained neuronal and glial depolarisation followed by prolonged inhibition, spreading across the cortex. Responsible for migraine aura. CSD activates meningeal nociceptors and triggers the trigeminovascular cascade."
+          },
+          {
+            "mechanism": "Trigeminovascular Activation",
+            "description": "The trigeminal nerve (CN V) innervates the pain-sensitive meninges and large cerebral vessels. When activated, its terminals release CGRP (calcitonin gene-related peptide), substance P, and neurokinin A — causing neurogenic inflammation (mast cell degranulation, plasma protein extravasation) and vasodilation. CGRP is the central mediator of migraine pain and the target of the newest migraine-specific treatments (gepants, CGRP mAbs, lasmiditan)."
+          },
+          {
+            "mechanism": "Central Sensitization",
+            "description": "After 1-2 hours into a migraine attack, central sensitization develops — second-order trigeminal neurons in the trigeminal nucleus caudalis (TNC) and third-order thalamic neurons become sensitized. This explains cutaneous allodynia (light touch feels painful — a diagnostic marker of established central sensitization) and why triptans lose effectiveness once allodynia develops."
+          },
+          {
+            "mechanism": "CGRP (Calcitonin Gene-Related Peptide) Elevation",
+            "description": "CGRP is markedly elevated during migraine attacks and returns to baseline after successful triptan treatment. CGRP causes: marked vasodilation, neurogenic inflammation, activation of pain receptors, and mast cell degranulation. Blocking CGRP or its receptor (gepants, CGRP mAbs) effectively treats and prevents migraine."
+          },
+          {
+            "mechanism": "Hypothalamic Involvement",
+            "description": "The hypothalamus — the 'migraine generator' — activates early in the prodrome phase (before headache or aura). Explains prodrome symptoms (yawning, fatigue, food cravings, photophobia before headache), circadian patterns of migraine attacks, and why CGRP mAbs targeting the pituitary gland area are effective."
+          },
+          {
+            "mechanism": "Serotonin (5-HT) Dysregulation",
+            "description": "Serotonin levels fall during migraine attacks. Triptans (selective 5-HT1B/1D agonists) mimic serotonin action on the trigeminovascular system — causing vasoconstriction of meningeal vessels, inhibiting CGRP release, and blocking pain signal transmission at the TNC."
+          }
+        ]
+      },
+      "genetic_factors": [
+        "Migraine has one of the highest heritabilities among common complex diseases — 40-65%",
+        "First-degree relatives of migraineurs have 4-fold higher risk of migraine with aura; 2-fold higher risk of migraine without aura",
+        ">100 single nucleotide polymorphisms (SNPs) associated with migraine risk identified through GWAS",
+        "Key genetic pathways: glutamatergic neurotransmission, pain signalling, ion channel regulation, vascular function",
+        "Rare monogenic migraine forms: Familial Hemiplegic Migraine types 1-3 (CACNA1A, ATP1A2, SCN1A mutations — ion channel genes); CADASIL (NOTCH3 mutation — cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy — associated with migraine with aura)",
+        "MTHFR C677T polymorphism — associated with migraine with aura and mildly increased stroke risk"
+      ],
+      "trigger_factors": [
+        {
+          "category": "Hormonal Triggers",
+          "triggers": [
+            "Menstruation — oestrogen withdrawal before menstruation triggers 50-70% of female migraineurs",
+            "Ovulation — mid-cycle oestrogen surge can trigger attacks in some women",
+            "Oral contraceptive pill — oestrogen-containing pills; pill-free week particularly problematic",
+            "Pregnancy — first trimester may worsen; 2nd and 3rd trimester often improve",
+            "Menopause — transitional phase worsens; postmenopause often improves",
+            "Hormone replacement therapy (HRT) — can worsen migraine with aura"
+          ]
+        },
+        {
+          "category": "Dietary Triggers",
+          "triggers": [
+            "Alcohol — particularly red wine (histamine, tyramine, sulfites) and beer; most potent dietary trigger",
+            "Caffeine — both excess and caffeine withdrawal (missing morning coffee) trigger attacks",
+            "Aged and fermented cheeses — tyramine content (cheddar, blue cheese, camembert, stilton)",
+            "Processed and cured meats — nitrates and nitrites (salami, bacon, hot dogs, ham)",
+            "Monosodium glutamate (MSG) — Chinese restaurant syndrome; also hidden in many packaged foods",
+            "Artificial sweeteners — aspartame (NutraSweet) particularly implicated",
+            "Chocolate — phenylethylamine (PEA) and caffeine content",
+            "Citrus fruits — biogenic amines in some individuals",
+            "Skipping meals — hypoglycaemia triggers attacks in many migraineurs",
+            "Dehydration — one of the most consistent and avoidable triggers"
+          ]
+        },
+        {
+          "category": "Sleep-Related Triggers",
+          "triggers": [
+            "Too much sleep (weekend migraine — oversleeping at weekends)",
+            "Too little sleep or sleep deprivation",
+            "Disrupted sleep schedule — jet lag, shift work",
+            "Sleep apnoea — morning headaches and migraine worsening",
+            "Insomnia — both a trigger and consequence of migraine"
+          ]
+        },
+        {
+          "category": "Sensory Triggers",
+          "triggers": [
+            "Bright or flickering lights — sunlight, fluorescent lights, computer screens, strobe lights",
+            "Strong odors — perfumes, cigarette smoke, paint fumes, chemicals",
+            "Loud noises — concerts, machinery, traffic",
+            "Weather changes — barometric pressure changes (falling pressure most common)",
+            "Strong winds — Foehn wind, Chinook wind, khamsin"
+          ]
+        },
+        {
+          "category": "Psychological and Behavioural Triggers",
+          "triggers": [
+            "Psychological stress — both during stress and 'let-down' after stress ('weekend migraine')",
+            "Anxiety — independent comorbidity and trigger",
+            "Emotional upset or excitement",
+            "Relaxation after stress — the post-stress drop is a classic migraine trigger"
+          ]
+        },
+        {
+          "category": "Physical Triggers",
+          "triggers": [
+            "Intense physical exertion — heavy lifting, strenuous exercise",
+            "Neck and shoulder muscle tension — cervicogenic component",
+            "Poor posture — prolonged desk work, forward head posture",
+            "Sexual activity (in rare cases — can trigger exertional migraine)",
+            "Head injury or concussion — post-traumatic migraine",
+            "Extended screen time — digital eye strain"
+          ]
+        },
+        {
+          "category": "Medication-Related",
+          "triggers": [
+            "Medication overuse headache (MOH) — paradoxical worsening from using acute analgesics, triptans, or opioids on ≥10-15 days per month",
+            "Nitrates (nitroglycerin, isosorbide) — trigger migraine within hours through NO pathway",
+            "Oral contraceptive pills — oestrogen fluctuation",
+            "Vasodilators",
+            "Histamine H2 blockers (cimetidine)"
+          ]
+        }
+      ]
+    },
+
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-501",
+          "name": "Severe Unilateral Headache (Hemicrania)",
+          "description": "The defining symptom — moderate to severe throbbing or pulsating headache, typically affecting one side of the head (though may be bilateral in 30-40%, especially in children and postdrome). Classically involves the frontotemporal or periorbital region. Described as 'heartbeat in the head' or 'pounding'. Distinguishes from tension headache by its unilateral nature, pulsating quality, and incapacitating severity.",
+          "severity": "Moderate to Severe (VAS 5-10/10)",
+          "onset": "Gradual build over 30 minutes to several hours; peak intensity within 1-2 hours of onset",
+          "duration": "4-72 hours untreated; median 18 hours"
+        },
+        {
+          "id": "SYM-502",
+          "name": "Nausea and Vomiting",
+          "description": "Nausea occurs in approximately 80% and vomiting in 50% of migraine patients. Gastric stasis occurs during migraine attacks (gastroparesis), delaying absorption of oral medications — explains why oral analgesics often work poorly once nausea is established. Vomiting may provide temporary relief of headache in some patients.",
+          "severity": "Mild to Severe",
+          "onset": "Concurrent with or following headache onset",
+          "clinical_importance": "Gastric stasis impairs oral drug absorption — consider faster routes (IM, nasal spray, dissolving tablet, rectal suppository)"
+        },
+        {
+          "id": "SYM-503",
+          "name": "Photophobia (Light Sensitivity)",
+          "description": "Extreme sensitivity to light — even normal indoor lighting causes severe pain, eye discomfort, and worsening of headache. Patients retreat to dark rooms. Present in >80% of migraine attacks. Even after headache resolves, mild photophobia often persists into the postdrome. Driven by thalamic activation during migraine.",
+          "severity": "Moderate to Severe",
+          "onset": "During headache phase; sometimes begins in prodrome"
+        },
+        {
+          "id": "SYM-504",
+          "name": "Phonophobia (Sound Sensitivity)",
+          "description": "Extreme sensitivity to sounds — even normal ambient noise causes severe pain and distress. Patients require silence. Present in >80% of migraine attacks. Patients often describe sounds as 'too loud' and 'piercing'. Contributes significantly to the social and occupational disability of migraine.",
+          "severity": "Moderate to Severe",
+          "onset": "During headache phase"
+        },
+        {
+          "id": "SYM-505",
+          "name": "Aura Symptoms (in Migraine with Aura)",
+          "description": "Transient, fully reversible focal neurological symptoms developing gradually over ≥5 minutes and lasting 5-60 minutes, preceding or accompanying headache. Visual aura (most common): scintillating scotoma — a bright, crescent-shaped arc of zigzag, flickering light that slowly expands across the visual field over 20-30 minutes, leaving a blank area in its wake. Sensory aura: tingling/numbness spreading from fingers to face. Speech aura: word-finding difficulty or slurred speech.",
+          "severity": "Mild to Moderate (aura itself); reassuring when patient recognizes them as migraine",
+          "onset": "5-60 minutes before or with headache; each symptom develops over ≥5 minutes"
+        },
+        {
+          "id": "SYM-506",
+          "name": "Osmophobia and Sensory Hypersensitivity",
+          "description": "Smell sensitivity (osmophobia) — strong odors such as perfumes, food smells, cigarette smoke, cleaning products, or flowers trigger or worsen headache. Present in ~40% of attacks. Osmophobia is actually more specific to migraine than to tension headache. Allodynia — normally painless stimuli (brushing hair, wearing glasses, wearing tight clothing) feel painful due to central sensitization.",
+          "severity": "Mild to Severe",
+          "onset": "During headache phase; osmophobia may precede headache"
+        }
+      ],
+      "secondary_symptoms": [
+        "Neck pain and stiffness — present in up to 75% of migraineurs; sometimes misattributed to meningitis",
+        "Cognitive impairment — 'brain fog': difficulty thinking, concentrating, memory lapses",
+        "Dizziness and vertigo — especially in vestibular migraine",
+        "Facial pain and pressure — pain spreading to jaw, eye, or cheek",
+        "Nasal congestion and rhinorrhoea — autonomic changes mimic sinusitis (often misdiagnosed as 'sinus headache')",
+        "Scalp tenderness and allodynia — painful to touch or comb hair",
+        "Visual disturbances (even without formal aura) — blurry vision, difficulty focusing",
+        "Fatigue during and after attacks",
+        "Mood changes — depression, anxiety, irritability",
+        "Pallor or facial flushing",
+        "Yawning (prodrome — also during attack)",
+        "Tearing (lacrimation) and red eye — autonomic features",
+        "Abdominal pain (especially in children — abdominal migraine)"
+      ],
+      "warning_signs_of_attack": [
+        "Excessive yawning — highly specific prodrome symptom; start medication early",
+        "Sudden intense 'thunderclap' headache — worst headache of life — NOT migraine until subarachnoid haemorrhage excluded (EMERGENCY)",
+        "Visual aura symptoms gradually spreading (normal) versus sudden complete vision loss in one eye (retinal emergency)",
+        "Aura lasting >60 minutes or headache not following aura — possible TIA or stroke",
+        "New neurological symptoms with headache: weakness, speech difficulty, confusion (may indicate stroke)",
+        "Fever with severe headache and neck stiffness — possible meningitis (EMERGENCY)",
+        "Headache worsening over days/weeks progressively — not typical migraine pattern — brain tumour, subdural haematoma must be excluded"
+      ],
+      "symptoms_in_children": [
+        "Headache is often bilateral (frontal) in children — unlike adult unilateral pattern",
+        "Attacks are shorter — 1-72 hours (diagnostic minimum reduced to 1 hour in children)",
+        "GI symptoms often prominent — nausea, vomiting, abdominal pain (abdominal migraine equivalent)",
+        "Cyclical vomiting syndrome — recurrent episodes of intense vomiting without headache; migraine equivalent",
+        "Abdominal migraine — recurrent midline abdominal pain without headache; later evolves into typical migraine",
+        "Children may be pale, listless, and prefer lying in dark quiet room",
+        "Motion sickness very common in children who later develop migraine",
+        "School performance affected during prodrome, attack, and postdrome"
+      ],
+      "red_flag_headache_features": {
+        "mnemonic": "SNNOOP10 — characteristics requiring urgent investigation",
+        "flags": [
+          "Systemic symptoms (fever, weight loss, night sweats)",
+          "Neurological symptoms or signs (weakness, sensory loss, altered consciousness)",
+          "New onset headache or different from usual headache pattern",
+          "Onset sudden (thunderclap — worst headache of life — SAH until proven otherwise)",
+          "Onset after 50 years of age (new headache)",
+          "Progressive headache worsening over weeks to months",
+          "Positional headache (worse lying down or standing — raised/low ICP)",
+          "Precipitated by Valsalva, cough, exertion, or sexual activity",
+          "Pregnancy or postpartum period",
+          "Painful eye with autonomic features (periorbital) — cluster headache or glaucoma",
+          "Post-traumatic headache",
+          "Papilloedema or pulsatile tinnitus (raised intracranial pressure)",
+          "Immunosuppressed state or HIV"
+        ]
+      }
+    },
+
+    "diagnosis": {
+      "important_note": "Migraine is a clinical diagnosis based on history and examination — there is NO specific diagnostic test or biomarker. Investigations are ordered only to EXCLUDE secondary causes (red flags). Normal investigations do not diagnose migraine — the diagnosis rests on fulfilling ICHD-3 criteria.",
+      "ichd3_criteria_without_aura": {
+        "A": "At least 5 attacks fulfilling criteria B-D",
+        "B": "Headache attacks lasting 4-72 hours (untreated or unsuccessfully treated); in children 1-72 hours",
+        "C": "Headache has at least 2 of: (1) Unilateral location; (2) Pulsating quality; (3) Moderate or severe pain intensity; (4) Aggravation by or causing avoidance of routine physical activity",
+        "D": "During headache, at least 1 of: (1) Nausea and/or vomiting; (2) Photophobia AND phonophobia",
+        "E": "Not better accounted for by another ICHD-3 diagnosis"
+      },
+      "ichd3_criteria_with_aura": {
+        "A": "At least 2 attacks fulfilling B and C",
+        "B": "One or more of: (1) Visual aura; (2) Sensory aura; (3) Speech and/or language aura; (4) Motor aura; (5) Brainstem aura; (6) Retinal aura",
+        "C": "At least 3 of: (1) At least one aura symptom spreads gradually over ≥5 min; (2) Two or more aura symptoms occur in succession; (3) Each aura symptom lasts 5-60 min; (4) At least one aura symptom is unilateral; (5) At least one aura symptom is positive; (6) Aura accompanied or followed by headache within 60 min",
+        "D": "Not better accounted for by another ICHD-3 diagnosis, and TIA excluded"
+      },
+      "medical_history": [
+        "Headache onset, frequency, duration, and progression over time",
+        "Headache characteristics: location (unilateral vs bilateral), quality (pulsating, pressure, stabbing), severity (VAS 1-10)",
+        "Associated symptoms: aura (describe in detail — visual, sensory, speech), nausea, vomiting, photophobia, phonophobia, osmophobia",
+        "Aggravating factors: physical activity, movement, light, sound",
+        "Relieving factors: dark room, sleep, cold/hot compress, vomiting",
+        "Trigger factors: menstrual cycle, foods, alcohol, sleep, stress, weather",
+        "Family history of migraine (strong genetic component)",
+        "Medication history: current acute and preventive treatments; medication frequency (screen for MOH)",
+        "Headache diary review: days per month, pattern, medication use days",
+        "Previous investigations and neuroimaging",
+        "Impact on daily life: MIDAS questionnaire (Migraine Disability Assessment Score); HIT-6 (Headache Impact Test)",
+        "Psychiatric comorbidities: depression and anxiety (bidirectional relationship with migraine)",
+        "Hormonal history in women: menstrual relationship, OCP use, pregnancy plans, menopause status"
+      ],
+      "physical_examination": [
+        "Blood pressure measurement — hypertension can cause headaches; baseline for antihypertensive preventive use",
+        "General appearance: pain behaviour, pallor, photophobia posturing (eyes covered)",
+        "Neurological examination: mental status, cranial nerves (II-XII), motor (power, reflexes), sensory, cerebellar (coordination), gait — should be NORMAL in primary migraine",
+        "Fundoscopy: papilloedema (raised ICP) — mandatory if atypical features",
+        "Neck examination: meningism (neck stiffness, Kernig's and Brudzinski's signs) — exclude meningitis",
+        "Temporal artery palpation: tenderness, reduced pulse, nodularity (giant cell arteritis in >50 years)",
+        "Head and face examination: sinuses (tenderness), temporomandibular joint (TMJ), teeth, scalp",
+        "Cardiovascular examination: aortic stenosis murmur, cardiac arrhythmias (relevant if considering triptans)",
+        "Pericranial muscle tenderness: suboccipital, trapezius, temporalis muscles (cervicogenic contribution)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Migraine Disability Assessment (MIDAS) Questionnaire",
+          "type": "Clinical questionnaire",
+          "description": "5-question validated questionnaire measuring migraine-related disability over 3 months. Scores days lost or significantly impaired at work, household tasks, and leisure activities. Essential for treatment decisions.",
+          "purpose": "Quantify migraine-related disability; guide treatment escalation; monitor response to preventive therapy",
+          "key_metric": "Grade I: 0-5 (little/no disability); Grade II: 6-10 (mild); Grade III: 11-20 (moderate); Grade IV: ≥21 (severe disability)"
+        },
+        {
+          "test_name": "HIT-6 (Headache Impact Test)",
+          "type": "Clinical questionnaire",
+          "description": "6-question validated questionnaire assessing the impact of headaches on normal daily activities, social activities, work/school, and psychological wellbeing.",
+          "purpose": "Assess headache impact; screen for migraine; monitor preventive treatment response",
+          "key_metric": "Score <49: no/little impact; 50-55: some; 56-59: substantial; ≥60: severe impact"
+        },
+        {
+          "test_name": "Headache Diary / Migraine Diary",
+          "type": "Clinical monitoring tool",
+          "description": "Daily record of headache days, intensity, duration, associated symptoms, triggers, medications used, and their effectiveness. Essential for establishing diagnosis, identifying patterns, monitoring frequency, screening for MOH, and evaluating treatment response.",
+          "purpose": "Establish diagnosis; identify triggers and patterns; screen for medication overuse (MOH); guide and monitor treatment",
+          "key_metric": "≥8 migraine days/month with ≥15 headache days/month = chronic migraine; analgesic use ≥10-15 days/month = medication overuse"
+        },
+        {
+          "test_name": "MRI Brain (with and without gadolinium contrast)",
+          "type": "Neuroimaging",
+          "description": "Gold standard for brain imaging. NOT routinely required for typical migraine fulfilling diagnostic criteria. Indicated for: atypical or changing headache pattern, first or worst headache, neurological signs or symptoms between attacks, red flag features, or failed response to multiple treatments.",
+          "purpose": "Exclude secondary causes: brain tumour, vascular malformations (AVM, dural AVF), Chiari malformation, cerebral venous thrombosis (CVT), subdural haematoma, encephalitis, demyelinating disease",
+          "key_metric": "Normal MRI does NOT diagnose migraine — it excludes other causes. Migraine-specific MRI changes: white matter hyperintensities (non-specific; more common in migraine with aura)"
+        },
+        {
+          "test_name": "CT Brain (with contrast)",
+          "type": "Neuroimaging",
+          "description": "Faster than MRI but less sensitive for most pathologies. First-line in acute thunderclap headache emergency (better for acute subarachnoid haemorrhage in first 12 hours) or when MRI is unavailable.",
+          "purpose": "Acute headache emergencies: subarachnoid haemorrhage, intracranial haemorrhage, acute hydrocephalus. CT angiography for vascular causes.",
+          "key_metric": "Normal CT in first 6 hours after thunderclap headache: sensitivity ~98% for SAH. If CT negative and clinical suspicion high — proceed to LP."
+        },
+        {
+          "test_name": "MR Angiography (MRA) or CT Angiography (CTA)",
+          "type": "Vascular imaging",
+          "description": "Imaging of cerebral and cervical blood vessels without invasive catheter angiography. Indicated when vascular pathology suspected: cerebral artery dissection (neck trauma, young stroke), arteriovenous malformation, giant cell arteritis (MR temporal artery), basilar artery abnormality.",
+          "purpose": "Detect cerebral artery dissection, AVM, intracranial aneurysm, GCA (temporal artery); exclude CADASIL",
+          "key_metric": "In hemiplegic or basilar migraine: CTA/MRA to exclude vascular cause"
+        },
+        {
+          "test_name": "Lumbar Puncture (LP) / Cerebrospinal Fluid (CSF) Analysis",
+          "type": "CSF analysis",
+          "description": "Essential when subarachnoid haemorrhage suspected but CT is negative (CT negative in 2% of SAH cases at 6 hours). CSF shows xanthochromia (yellow discoloration from bilirubin) 2-4 hours after SAH, persisting for 2 weeks. Also indicated for suspected meningitis or raised ICP.",
+          "purpose": "Exclude subarachnoid haemorrhage (when CT negative); exclude meningitis (bacterial, viral, fungal); diagnose raised ICP (pseudotumour cerebri); diagnose low CSF pressure headache",
+          "key_metric": "Xanthochromia on spectrophotometry is the gold standard for SAH detection when CT is negative"
+        },
+        {
+          "test_name": "Blood Tests — ESR, CRP, Full Blood Count",
+          "type": "Blood — Inflammatory and haematological",
+          "description": "Not diagnostic for migraine. ESR and CRP are essential to screen for giant cell arteritis (GCA) in any new headache in patients over 50 — a headache emergency (risk of blindness). FBC to detect anaemia (exacerbates headache), thrombocytosis, or infection.",
+          "purpose": "Screen for GCA (new headache >50 years); screen for anaemia, infection, and systemic causes of headache",
+          "key_metric": "ESR >50 mm/hr with new unilateral temporal headache in >50 years: strongly consider GCA — urgent temporal artery biopsy and high-dose steroids"
+        },
+        {
+          "test_name": "Blood Tests — Metabolic Panel (Glucose, Electrolytes, Renal Function, LFTs, TFTs)",
+          "type": "Blood — Biochemical",
+          "description": "Baseline workup for newly diagnosed migraine and before starting preventive medications. Thyroid dysfunction (both hypo- and hyperthyroidism) can cause headaches. Required before prescribing topiramate (renal stones risk), valproate (LFTs), or amitriptyline (cardiac).",
+          "purpose": "Baseline before preventive medication; screen for metabolic causes of headache (hypoglycaemia, electrolyte disturbances, thyroid disease)",
+          "key_metric": "TSH: thyroid dysfunction can cause headaches; glucose: hypoglycaemia is a trigger; LFTs and renal function: baseline for valproate and topiramate"
+        },
+        {
+          "test_name": "ECG (12-Lead Electrocardiogram)",
+          "type": "Cardiac",
+          "description": "Recommended before prescribing tricyclic antidepressants (amitriptyline, nortriptyline) for migraine prevention — to exclude baseline prolonged QTc, AV block, or bundle branch block. Also relevant before triptans in patients with cardiovascular risk.",
+          "purpose": "Baseline cardiac assessment before amitriptyline; screen for arrhythmias and conduction defects; screen for contraindications to triptans in high-risk patients",
+          "key_metric": "QTc >450ms (men) or >470ms (women): caution with amitriptyline and triptans"
+        },
+        {
+          "test_name": "Ophthalmological Assessment",
+          "type": "Ophthalmic",
+          "description": "In patients with visual aura: to distinguish migraine aura from: ophthalmic migraine (retinal migraine — monocular), visual hallucinations from other causes, and genuine retinal pathology. Fundoscopy and visual field testing may be needed. Intraocular pressure for glaucoma (acute angle-closure glaucoma causes severe headache with painful red eye).",
+          "purpose": "Distinguish retinal migraine from retinal pathology; exclude glaucoma (acute angle-closure); assess papilloedema",
+          "key_metric": "Normal fundoscopy does NOT exclude migraine; papilloedema requires urgent investigation for raised ICP"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Migraine medications are divided into ACUTE (abortive — taken during an attack to stop it) and PREVENTIVE (prophylactic — taken daily to reduce attack frequency). All medications should be prescribed by a licensed physician or neurologist. Self-medication can lead to medication overuse headache (MOH) — a paradoxical worsening from overuse of acute medications.",
+      "medication_overuse_headache_warning": {
+        "definition": "Headache occurring on ≥15 days/month in a patient using analgesics/triptans on ≥10-15 days/month for >3 months",
+        "medications_causing_MOH": "Opioids and combination analgesics (>10 days/month); triptans, ergots, NSAIDs (>10-15 days/month)",
+        "management": "Withdrawal of overused medication (under medical supervision); preventive therapy; often headache worsens transiently during withdrawal before improving",
+        "prevention_rule": "Use acute migraine medications on NO MORE than 10-15 days per month"
+      },
+      "categories": [
+        {
+          "category_id": "MED-CAT-71",
+          "category_name": "Simple Analgesics and NSAIDs — Acute Treatment (First-Line for Mild-Moderate)",
+          "purpose": "First-line acute treatment for mild to moderate migraine attacks. Must be taken early in the attack before nausea onset for best absorption. Anti-emetics should be combined.",
+          "note": "Take as soon as attack begins — do not wait for headache to intensify. Avoid on >10-15 days/month to prevent MOH.",
+          "medicines": [
+            {
+              "name": "Ibuprofen",
+              "brand_examples": ["Brufen", "Advil", "Nurofen"],
+              "form": "Tablet, Soluble tablet, Oral suspension",
+              "dosage": "400-800 mg at onset; may repeat 400 mg after 4-6 hours; max 2400 mg/day",
+              "use_case": "First-line NSAID for mild-moderate migraine; most evidence from RCTs; highly effective when taken early",
+              "side_effects": ["GI upset (take with food)", "GI bleeding (long-term/high dose)", "Renal impairment", "Cardiovascular risk (long-term)"],
+              "tip": "Soluble/liquid ibuprofen absorbs faster than standard tablets — better during migraine gastric stasis"
+            },
+            {
+              "name": "Aspirin (Acetylsalicylic Acid)",
+              "brand_examples": ["Disprin", "Ecosprin", "Aspro", "Bayer Aspirin"],
+              "form": "Effervescent/soluble tablet, Standard tablet",
+              "dosage": "900-1000 mg at attack onset; effervescent form absorbs faster",
+              "use_case": "Effective for mild-moderate migraine; effervescent formulation particularly useful due to faster absorption despite gastric stasis; aspirin 900mg + metoclopramide 10mg = highly effective combination",
+              "side_effects": ["GI irritation and bleeding", "Tinnitus (high dose)", "Avoid in children under 16 (Reye's syndrome risk)", "Avoid in pregnancy (especially 3rd trimester)"]
+            },
+            {
+              "name": "Naproxen Sodium",
+              "brand_examples": ["Naprosyn", "Aleve", "Naproz"],
+              "form": "Tablet",
+              "dosage": "500-1000 mg at onset; may repeat 500 mg after 6-8 hours; max 1250 mg/day",
+              "use_case": "Longer-acting NSAID; effective for migraine; useful for attacks that tend to last longer; also used for menstrual migraine prevention (NSAID mini-prophylaxis)",
+              "side_effects": ["GI upset", "Dizziness", "Edema"]
+            },
+            {
+              "name": "Diclofenac Potassium",
+              "brand_examples": ["Cataflam", "Voltfast", "Diclofenac-K sachets"],
+              "form": "Soluble powder sachets, Fast-dispersible tablet",
+              "dosage": "50-100 mg at onset; diclofenac potassium sachet dissolves in water — fastest oral NSAID absorption",
+              "use_case": "Rapid-onset NSAID for migraine; sachets give fastest GI absorption even during gastric stasis; approved for migraine specifically in some markets",
+              "side_effects": ["GI upset", "Liver enzyme elevation"],
+              "note": "Diclofenac potassium sachet formulation has fastest absorption among oral NSAIDs"
+            },
+            {
+              "name": "Paracetamol / Acetaminophen",
+              "brand_examples": ["Crocin", "Tylenol", "Panadol", "Calpol"],
+              "form": "Tablet, Effervescent tablet, Oral solution",
+              "dosage": "1000 mg (2 × 500mg tablets) at onset; may repeat every 4-6 hours; max 4000 mg/day",
+              "use_case": "Mild migraine; pregnancy (safest analgesic); patients with NSAID contraindications; children",
+              "side_effects": ["Hepatotoxicity with overdose", "Minimal side effects at therapeutic dose"],
+              "note": "Evidence for paracetamol alone in migraine is modest; more effective combined with caffeine or aspirin"
+            },
+            {
+              "name": "Aspirin + Paracetamol + Caffeine (Combination)",
+              "brand_examples": ["Excedrin Migraine", "Anadin Extra", "Saridon"],
+              "form": "Tablet",
+              "dosage": "2 tablets (each: aspirin 250mg + paracetamol 250mg + caffeine 65mg) at onset; max 2 doses per day",
+              "use_case": "First-line OTC combination for mild-moderate migraine; caffeine enhances analgesic absorption and potentiates pain relief; NNT=5 for being pain-free at 2 hours",
+              "side_effects": ["GI upset", "Caffeine dependency with frequent use — can cause caffeine withdrawal headache", "Not for children", "Max 2 days per week to avoid MOH"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-72",
+          "category_name": "Triptans (5-HT1B/1D Agonists) — Acute First-Line (Moderate-Severe Migraine)",
+          "purpose": "Gold standard acute treatment for moderate-severe migraine. Triptans are selective serotonin (5-HT1B/1D) agonists causing: (1) Vasoconstriction of dilated meningeal blood vessels; (2) Inhibition of CGRP and other neuropeptide release from trigeminal terminals; (3) Inhibition of pain signal transmission in the trigeminal nucleus caudalis. Most effective when taken EARLY in the attack before central sensitization/allodynia is established.",
+          "key_principle": "Take at headache onset — do not wait for headache to reach full intensity. Less effective if taken during aura. Best absorbed as wafer, nasal spray, or injection if nausea/vomiting present.",
+          "contraindications": ["Ischaemic heart disease / coronary artery disease", "History of MI or angina", "Prinzmetal angina", "Uncontrolled hypertension (BP >180/110)", "History of TIA or stroke", "Hemiplegic migraine (relative contraindication)", "Basilar migraine (relative contraindication)", "Peripheral vascular disease", "Pregnancy (insufficient safety data — avoid)", "MAOi use within 14 days (sumatriptan)", "Strong CYP3A4 inhibitors (certain triptans)"],
+          "medicines": [
+            {
+              "name": "Sumatriptan",
+              "brand_examples": ["Imigran", "Suminat", "Sumanrix", "Imitrex"],
+              "form": "Tablet (50mg, 100mg), Nasal spray (10mg, 20mg), Subcutaneous autoinjector (6mg), Rectal suppository (25mg)",
+              "dosage": "Oral: 50-100mg at onset; nasal spray: 10-20mg; SC injection: 6mg SC; repeat after 2 hours if partial or no response; max 2 doses per attack; max 200mg/day oral",
+              "use_case": "MOST WIDELY USED triptan worldwide; gold standard comparator in triptan trials; SC injection most effective (90-minute pain relief in 70%); nasal spray useful with nausea; injection fastest onset (10-15 min)",
+              "side_effects": ["Triptan sensations — chest tightness, pressure, throat/jaw heaviness (common, non-cardiac, benign)", "Tingling and flushing", "Dizziness", "Fatigue and somnolence", "Rebound headache with frequent use"],
+              "evidence": "NNT for pain freedom at 2h: SC injection ~2.5; 100mg oral ~5.0; nasal spray ~5.5"
+            },
+            {
+              "name": "Zolmitriptan",
+              "brand_examples": ["Zomig", "Zomigoro (ODT)", "Zolmist (nasal)"],
+              "form": "Tablet (2.5mg, 5mg), Oral dissolving tablet (ODT), Nasal spray (2.5mg, 5mg)",
+              "dosage": "2.5-5mg at onset; may repeat after 2 hours; max 10mg/day",
+              "use_case": "Very well-tolerated triptan; ODT useful with nausea (dissolves on tongue without water); nasal spray fast-acting; also active against photophobia and phonophobia",
+              "side_effects": ["Paraesthesia", "Dizziness", "Asthenia", "Nausea"]
+            },
+            {
+              "name": "Rizatriptan",
+              "brand_examples": ["Maxalt", "Maxalt-MLT (ODT)"],
+              "form": "Tablet (5mg, 10mg), Oral dissolving wafer (5mg, 10mg)",
+              "dosage": "5-10mg at onset; may repeat after 2 hours; max 20mg/day; use 5mg with propranolol (increases rizatriptan levels)",
+              "use_case": "Fast-acting triptan; ODT wafer dissolves without water; 2h pain relief in 67-77%; good for rapid-onset attacks",
+              "side_effects": ["Somnolence (more than other triptans)", "Dizziness", "Asthenia"],
+              "note": "Dose reduce to 5mg if taking propranolol (propranolol is a CYP inhibitor that doubles rizatriptan levels)"
+            },
+            {
+              "name": "Eletriptan",
+              "brand_examples": ["Relpax"],
+              "form": "Tablet (20mg, 40mg)",
+              "dosage": "20-40mg at onset; may repeat after 2 hours; max 80mg/day",
+              "use_case": "One of most effective triptans in NNT analyses; 2h pain freedom in 40-65%; good for attacks that do not respond to sumatriptan; lipophilic — penetrates CNS well",
+              "side_effects": ["Chest tightness", "Somnolence", "Nausea"]
+            },
+            {
+              "name": "Almotriptan",
+              "brand_examples": ["Axert", "Almogran"],
+              "form": "Tablet (6.25mg, 12.5mg)",
+              "dosage": "6.25-12.5mg at onset; may repeat after 2 hours; max 25mg/day",
+              "use_case": "Favorable tolerability profile; low recurrence rate; approved for adolescents 12-17 years",
+              "side_effects": ["One of lowest side effect profiles among triptans", "Mild chest discomfort", "Somnolence"]
+            },
+            {
+              "name": "Naratriptan",
+              "brand_examples": ["Amerge", "Naramig"],
+              "form": "Tablet (1mg, 2.5mg)",
+              "dosage": "1-2.5mg at onset; may repeat after 4 hours; max 5mg/day",
+              "use_case": "Slow onset but longer duration — lowest recurrence rate among triptans; used for mini-prophylaxis of menstrual migraine (1mg twice daily for 5 days from day -2 to +3 of menstruation); good for migraines that often recur",
+              "side_effects": ["Fewest side effects of all triptans", "Mild fatigue"],
+              "unique_use": "Perimenstrual mini-prophylaxis to prevent menstrual migraine attacks"
+            },
+            {
+              "name": "Frovatriptan",
+              "brand_examples": ["Frova", "Migard"],
+              "form": "Tablet (2.5mg)",
+              "dosage": "2.5mg at onset; may repeat after 2 hours; max 7.5mg/day",
+              "use_case": "Longest half-life of all triptans (~26 hours) — lowest recurrence rate; MINI-PROPHYLAXIS for menstrual migraine (2.5mg twice daily for 6 days perimenstrually — 2 days before expected menstruation); not fastest-acting",
+              "side_effects": ["Generally well tolerated", "Fatigue", "Dizziness"],
+              "unique_use": "Perimenstrual mini-prophylaxis — gold standard short-term hormonal migraine prevention"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-73",
+          "category_name": "CGRP Receptor Antagonists (Gepants) — Acute and Preventive Treatment",
+          "purpose": "The newest class of small-molecule migraine-specific drugs. Block the CGRP receptor (or CGRP ligand) without causing vasoconstriction — no cardiovascular contraindications (key advantage over triptans). Some gepants (rimegepant, atogepant) also approved for migraine PREVENTION.",
+          "advantage_over_triptans": "No vasoconstriction → safe in cardiovascular disease, stroke history, hemiplegic migraine; fewer 'triptan sensation' side effects",
+          "medicines": [
+            {
+              "name": "Ubrogepant",
+              "brand_examples": ["Ubrelvy"],
+              "form": "Tablet (50mg, 100mg)",
+              "dosage": "50-100mg at onset; may repeat after 2 hours; max 200mg/day",
+              "use_case": "Acute treatment of moderate-severe migraine with or without aura; FDA approved 2019; use in patients with cardiovascular contraindications to triptans",
+              "mechanism": "CGRP receptor antagonist; blocks CGRP-mediated vasodilation and neurogenic inflammation",
+              "side_effects": ["Nausea", "Somnolence", "Dry mouth"],
+              "note": "CYP3A4 interactions — avoid with strong CYP3A4 inhibitors; reduce dose with moderate inhibitors"
+            },
+            {
+              "name": "Rimegepant",
+              "brand_examples": ["Nurtec ODT", "Vydura"],
+              "form": "Oral dissolving tablet (75mg)",
+              "dosage": "Acute: 75mg ODT at onset (one dose per day); Preventive: 75mg every other day",
+              "use_case": "DUAL indication — FDA approved for BOTH acute treatment AND prevention of migraine; first drug approved for both uses; dissolving tablet useful with nausea; no liver toxicity concern",
+              "side_effects": ["Nausea", "Generally well tolerated"],
+              "unique_advantage": "Only medication approved for both acute treatment AND prevention of migraine in same formulation"
+            },
+            {
+              "name": "Atogepant",
+              "brand_examples": ["Qulipta"],
+              "form": "Tablet (10mg, 30mg, 60mg)",
+              "dosage": "10-60mg once daily (prevention); 30mg or 60mg for chronic migraine",
+              "use_case": "Prevention of episodic and chronic migraine; oral daily preventive gepant; effective even in patients who have failed 2-4 prior preventive medications",
+              "side_effects": ["Nausea", "Constipation", "Fatigue"],
+              "note": "Available in India and US; growing global availability"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-74",
+          "category_name": "Ditans (5-HT1F Agonists) — Acute Treatment",
+          "purpose": "Novel class that activates 5-HT1F receptors in the trigeminal system (blocking pain transmission) without activating 5-HT1B receptors on blood vessels — NO VASOCONSTRICTION. Safe in cardiovascular disease. CNS-penetrant.",
+          "medicines": [
+            {
+              "name": "Lasmiditan",
+              "brand_examples": ["Reyvow"],
+              "form": "Tablet (50mg, 100mg, 200mg)",
+              "dosage": "50-200mg at onset; max 200mg/day",
+              "use_case": "Moderate-severe migraine; cardiovascular disease patients where triptans are contraindicated; FDA approved 2019",
+              "mechanism": "Selective 5-HT1F agonist; binds trigeminovascular 5-HT1F receptors without vasoconstriction",
+              "side_effects": ["Significant CNS side effects: dizziness (most common), somnolence, fatigue, paraesthesia", "Cognitive impairment", "DRIVING WARNING: Do not drive/operate machinery for 8 hours after dose (CNS depression)"],
+              "warning": "Do not drive or operate heavy machinery for 8 hours after taking — significant dizziness risk; DEA Schedule V in USA"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-75",
+          "category_name": "Antiemetics — Acute Treatment (Adjunctive)",
+          "purpose": "Treat nausea and vomiting during migraine attacks. Some antiemetics have independent analgesic effects for migraine (particularly dopamine antagonists). Also improve gastric motility (prokinetic effect) to enhance absorption of oral analgesics and triptans.",
+          "note": "Antiemetics should be taken 15-20 minutes BEFORE oral analgesics to improve gut absorption during migraine-related gastric stasis.",
+          "medicines": [
+            {
+              "name": "Metoclopramide",
+              "brand_examples": ["Maxolon", "Reglan", "Perinorm", "Metomide"],
+              "form": "Tablet, IV/IM Injection",
+              "dosage": "10mg orally, 15-20 min before analgesic; 10mg IV/IM (ED setting)",
+              "use_case": "First-line antiemetic for migraine; prokinetic — accelerates gastric emptying enhancing oral analgesic absorption; IV metoclopramide 10-20mg is an effective acute migraine treatment in ED setting independently",
+              "mechanism": "Dopamine antagonist (D2 receptor); antiemetic + prokinetic",
+              "side_effects": ["Extrapyramidal reactions — acute dystonia (especially in young people; treat with benztropine or diphenhydramine)", "Tardive dyskinesia (long-term use)", "Drowsiness"],
+              "note": "Avoid prolonged use; maximum treatment duration 5 days"
+            },
+            {
+              "name": "Domperidone",
+              "brand_examples": ["Motilium", "Domstal", "Domper"],
+              "form": "Tablet, Oral suspension",
+              "dosage": "10-20mg up to 3 times daily with meals; give before analgesics",
+              "use_case": "Preferred antiemetic in children and during pregnancy (compared to metoclopramide); prokinetic; does not cross blood-brain barrier (fewer CNS extrapyramidal side effects than metoclopramide)",
+              "side_effects": ["QT prolongation (cardiac — use with caution in cardiac patients; avoid high doses)", "Galactorrhoea", "Less extrapyramidal effects than metoclopramide"]
+            },
+            {
+              "name": "Prochlorperazine",
+              "brand_examples": ["Stemetil", "Compazine"],
+              "form": "Tablet, Buccal tablet (Buccastem), IV/IM, Suppository",
+              "dosage": "5-10mg orally 3-4 times daily; 3-6mg buccal (Buccastem); 12.5mg IM; 25mg rectal",
+              "use_case": "Moderate-severe migraine nausea; IV prochlorperazine is highly effective in ED for acute migraine — more effective than many analgesics; buccal tablet (Buccastem) ideal for severe vomiting when oral route unavailable",
+              "mechanism": "Dopamine antagonist (phenothiazine); antiemetic and mild analgesic effect",
+              "side_effects": ["Acute dystonia (treat with procyclidine 5mg IM)", "Sedation", "Hypotension", "Tardive dyskinesia (prolonged)"],
+              "clinical_tip": "IV prochlorperazine 12.5-25mg is one of the most effective ED treatments for acute migraine with vomiting"
+            },
+            {
+              "name": "Ondansetron",
+              "brand_examples": ["Zofran", "Emeset", "Ondanset"],
+              "form": "Tablet, ODT wafer, IV/IM",
+              "dosage": "4-8mg orally or IV",
+              "use_case": "Migraine-associated nausea/vomiting; useful when prochlorperazine contraindicated or not available; ODT wafer useful with vomiting",
+              "side_effects": ["Headache (paradoxically)", "Constipation", "QT prolongation (IV high dose)"],
+              "note": "5-HT3 antagonist — less effective as primary migraine treatment than dopamine antagonists (metoclopramide, prochlorperazine)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-76",
+          "category_name": "Ergot Derivatives — Acute Treatment (Second-Line)",
+          "purpose": "Non-selective serotonin, dopamine, and alpha-adrenergic agonists causing vasoconstriction. Older drug class; less well-tolerated than triptans; significant contraindications. Ergotamine and DHE are still useful for certain refractory or status migrainosus cases.",
+          "note": "Ergots have high potential for causing medication overuse headache (ergotamine-induced headache); limit to maximum 2 days per week",
+          "medicines": [
+            {
+              "name": "Ergotamine Tartrate + Caffeine",
+              "brand_examples": ["Cafergot", "Migril", "Ergodryl"],
+              "form": "Tablet, Suppository",
+              "dosage": "1-2 tablets (ergotamine 1mg + caffeine 100mg) at onset; max 4 tablets per attack; max 6 tablets per week; suppository 1-2 at onset",
+              "use_case": "Moderate-severe migraine not responding to triptans or when triptans are too expensive; long attacks with risk of recurrence; NOT for hemiplegic or basilar migraine",
+              "side_effects": ["Nausea and vomiting (common)", "Ergotism (vasoconstriction of limbs — severe with overdose; gangrenous ergotism historically)", "Rebound headache (very high MOH potential)", "Peripheral vasoconstriction"],
+              "contraindications": ["Pregnancy (uterotonic — causes miscarriage)", "Peripheral vascular disease", "Coronary artery disease", "Hypertension (severe)", "Hemiplegic or basilar migraine", "Combination with triptans or within 24 hours of each other", "Combination with CYP3A4 inhibitors (macrolides, azoles, protease inhibitors)"]
+            },
+            {
+              "name": "Dihydroergotamine (DHE)",
+              "brand_examples": ["Migranal (nasal spray)", "DHE-45 (IV/IM/SC)"],
+              "form": "Nasal spray (2mg/mL), IV/IM/SC injection",
+              "dosage": "IV: 0.5-1mg IV slowly; IM/SC: 1mg; Nasal: one spray (0.5mg) in each nostril, repeat after 15 min (max 3mg/24h); IV protocol: 0.5mg IV + antiemetic every 8h for 3 doses (repetitive DHE protocol for status migrainosus)",
+              "use_case": "Status migrainosus (prolonged refractory migraine attack >72h); intractable migraine not responding to triptans; Raskin protocol (repetitive IV DHE); advantages: less nausea than ergotamine, less vasoconstriction, lower MOH potential than ergotamine",
+              "side_effects": ["Nausea (pre-treat with antiemetic)", "Injection site pain", "Rhinitis with nasal spray", "Paresthesia", "Vasoconstriction (less than ergotamine)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-77",
+          "category_name": "Steroids — Acute Treatment (Adjunctive for Status Migrainosus)",
+          "purpose": "Adjunctive treatment for refractory migraine and status migrainosus. Dexamethasone reduces 72-hour recurrence rate; does not abort the acute attack but prevents relapse.",
+          "medicines": [
+            {
+              "name": "Dexamethasone",
+              "brand_examples": ["Decadron", "Dexona"],
+              "form": "IV/IM Injection, Oral tablet",
+              "dosage": "8-16mg single IV or IM dose (or oral 6-8mg) at end of ED treatment; or single oral dose 12mg at start of severe attack",
+              "use_case": "Reduces 24-72 hour headache recurrence after ED treatment; status migrainosus (>72 hours); menstrual migraine; severe acute attack",
+              "mechanism": "Reduces prostaglandin synthesis; anti-inflammatory; reduces meningeal inflammation",
+              "side_effects": ["Insomnia (single dose)", "Hyperglycaemia", "Facial flushing"],
+              "evidence": "Cochrane review: dexamethasone reduces 72-hour recurrence rate by 26% (NNT=9)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-78",
+          "category_name": "Beta-Blockers — Preventive Treatment (First-Line)",
+          "purpose": "Reduce migraine frequency and severity by mechanisms including: reduced adrenergic activity on trigeminal nociceptors, inhibition of cortical spreading depression, serotonergic modulation, and reduced anxiety (a migraine trigger). Most evidence-based of all preventives.",
+          "indication": "Preventive therapy indicated when: ≥4 migraine days/month, or ≥2 significantly disabling attacks/month, or quality of life severely impacted, or acute treatments frequently ineffective or overused",
+          "medicines": [
+            {
+              "name": "Propranolol",
+              "brand_examples": ["Inderal", "Ciplar", "Indoblok"],
+              "form": "Tablet, LA (long-acting) tablet",
+              "dosage": "Starting: 10-20mg twice daily; usual therapeutic: 40-120mg twice daily (or 80-160mg LA once daily); titrate up over weeks",
+              "use_case": "FIRST-LINE preventive for migraine; also treats hypertension, angina, anxiety, essential tremor — useful with these comorbidities; reduces migraine frequency by 40-50%",
+              "mechanism": "Non-selective beta-1/beta-2 blocker; also inhibits 5-HT2A and 5-HT2B receptors; reduces CSD susceptibility",
+              "side_effects": ["Fatigue and lethargy (most common)", "Cold extremities", "Bradycardia", "Sleep disturbances (nightmares, insomnia)", "Depression (monitor)", "Erectile dysfunction", "Exercise intolerance"],
+              "contraindications": ["Asthma or COPD", "Raynaud's phenomenon (worsens)", "Bradycardia", "Heart block", "Decompensated heart failure", "Diabetes (masks hypoglycaemia symptoms)", "Depression (relative — monitor closely)"]
+            },
+            {
+              "name": "Metoprolol",
+              "brand_examples": ["Betaloc", "Lopressor", "Toprol XL"],
+              "form": "Tablet, SR tablet",
+              "dosage": "50-200mg daily",
+              "use_case": "First-line preventive; cardioselective — preferred over propranolol in patients with mild asthma or COPD; also for hypertension or heart disease comorbidity",
+              "side_effects": ["Fatigue", "Bradycardia", "Less bronchospasm than propranolol (cardioselective)"]
+            },
+            {
+              "name": "Atenolol",
+              "brand_examples": ["Tenormin", "Aten"],
+              "form": "Tablet (25mg, 50mg)",
+              "dosage": "25-100mg once daily",
+              "use_case": "Once-daily dosing improves adherence for migraine prevention; cardioselective",
+              "side_effects": ["Fatigue", "Bradycardia", "Cold extremities"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-79",
+          "category_name": "Tricyclic Antidepressants (TCAs) — Preventive Treatment (First-Line)",
+          "purpose": "First-line preventive agents for migraine — particularly when comorbid depression, anxiety, insomnia, or chronic pain is present. Effective independent of antidepressant effects. Mechanism includes serotonin/noradrenaline reuptake inhibition, sodium channel blockade, NMDA receptor modulation.",
+          "medicines": [
+            {
+              "name": "Amitriptyline",
+              "brand_examples": ["Elavil", "Tryptizol", "Sarotex", "Amitone"],
+              "form": "Tablet (10mg, 25mg, 75mg)",
+              "dosage": "Start: 10mg at night; titrate up by 10-25mg every 2-4 weeks; usual therapeutic: 25-75mg at night; max 150mg/day",
+              "use_case": "FIRST-LINE preventive especially with: insomnia (sedating — take at night), comorbid depression, chronic daily headache, tension-type headache overlap, fibromyalgia. Reduces migraine frequency by 40-50%. Also first-line for chronic migraine.",
+              "mechanism": "TCA; inhibits reuptake of serotonin and noradrenaline; NMDA receptor antagonism; sodium channel blockade; 5-HT2A receptor blockade",
+              "side_effects": ["Sedation and morning drowsiness (take at night; start low)", "Dry mouth (anticholinergic)", "Constipation", "Urinary retention", "Blurred vision", "Weight gain", "QTc prolongation (check ECG baseline)", "Orthostatic hypotension"],
+              "contraindications": ["Recent MI", "Heart block or significant arrhythmia", "Glaucoma (narrow-angle)", "Urinary retention/BPH", "MAOi use within 14 days", "Pregnancy (category C — use with caution; not for 1st trimester ideally)"],
+              "monitoring": "Baseline ECG (especially in elderly and cardiac patients); monitor BP; weight"
+            },
+            {
+              "name": "Nortriptyline",
+              "brand_examples": ["Pamelor", "Allegron"],
+              "form": "Tablet (10mg, 25mg)",
+              "dosage": "10-75mg at night",
+              "use_case": "Alternative to amitriptyline; better tolerated (fewer anticholinergic side effects, less sedation); good option for elderly; also for neuropathic pain comorbidity",
+              "side_effects": ["Less sedation and anticholinergic effects than amitriptyline", "Dry mouth (mild)", "Constipation (mild)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-80",
+          "category_name": "Antiepileptic Drugs (AEDs) — Preventive Treatment (First-Line)",
+          "purpose": "Reduce neuronal hyperexcitability and susceptibility to cortical spreading depression. Topiramate and valproate have the strongest evidence base for migraine prevention among AEDs.",
+          "medicines": [
+            {
+              "name": "Topiramate",
+              "brand_examples": ["Topamax", "Topamac", "Epitomax", "Topirol"],
+              "form": "Tablet, Sprinkle capsule",
+              "dosage": "Start: 25mg at night for 2 weeks; increase by 25mg every 2 weeks; usual therapeutic: 50-100mg/day (divided doses); max 200mg/day",
+              "use_case": "FIRST-LINE preventive for migraine and chronic migraine; also approved for episodic migraine and chronic migraine; reduces migraine by 50% in 50% of patients; bonus: causes weight loss (advantageous in obese migraineurs)",
+              "mechanism": "Multiple mechanisms: AMPA/kainate glutamate receptor antagonism; voltage-gated Na+ channel blockade; GABA receptor potentiation; carbonic anhydrase inhibition",
+              "side_effects": ["Cognitive side effects — word-finding difficulty ('tipsy-topsy'), slowed thinking (most complained of side effect)", "Paresthesias — tingling fingers and toes (common, usually benign)", "Weight loss (beneficial in overweight patients)", "Kidney stones (carbonic anhydrase inhibition — drink 2-2.5L water daily)", "Metabolic acidosis", "Glaucoma (acute narrow-angle — rare but stop immediately if eye pain/vision change)", "Teratogenicity — reduces efficacy of oral contraceptives; cleft lip/palate risk — AVOID in pregnancy; use contraception"],
+              "contraindications": ["Pregnancy (teratogenic — oral clefts, IUGR)", "Metabolic acidosis", "Kidney stones (relative)"],
+              "monitoring": "Weight, cognition, bicarbonate (metabolic acidosis), eye exam if visual symptoms"
+            },
+            {
+              "name": "Sodium Valproate / Valproic Acid",
+              "brand_examples": ["Epilim", "Depakote", "Valparin", "Encorate"],
+              "form": "Tablet, EC tablet, Prolonged-release tablet, Syrup",
+              "dosage": "400-1000mg daily (modified release or divided doses); start 200-400mg/day, titrate",
+              "use_case": "First-line preventive; particularly useful with comorbid bipolar disorder, epilepsy, or anxiety; effective 40-50% frequency reduction",
+              "mechanism": "Increases GABA neurotransmission; sodium channel blockade; reduces glutamate release; inhibits histone deacetylase",
+              "side_effects": ["Teratogenicity — HIGHLY TERATOGENIC (neural tube defects, cognitive impairment, autism) — ABSOLUTELY CONTRAINDICATED in women of childbearing potential without highly effective contraception", "Weight gain", "Nausea and GI upset", "Tremor", "Hair thinning/loss (alopecia)", "Polycystic ovary syndrome (in women)", "Liver toxicity", "Pancreatitis (rare)", "Thrombocytopenia"],
+              "contraindications": ["Pregnancy (ABSOLUTE — Valproate Pregnancy Prevention Programme mandatory in UK)", "Liver disease", "Women of childbearing age without highly effective contraception and signed informed consent"],
+              "warning": "EMA/MHRA: Valproate must NOT be prescribed to women of childbearing potential without signed informed consent to a pregnancy prevention programme. Fatal teratogenicity."
+            },
+            {
+              "name": "Gabapentin",
+              "brand_examples": ["Neurontin", "Gabapin", "Gabacap"],
+              "form": "Capsule, Tablet",
+              "dosage": "300-900mg three times daily; start 300mg at night; increase gradually",
+              "use_case": "Second-line preventive; particularly useful with comorbid neuropathic pain, anxiety, or restless legs syndrome; weaker evidence than topiramate/valproate",
+              "side_effects": ["Sedation", "Dizziness", "Weight gain", "Peripheral oedema"],
+              "note": "Lower evidence level than topiramate or valproate; useful as add-on or when first-line agents not tolerated"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-81",
+          "category_name": "Anti-CGRP Monoclonal Antibodies (mAbs) — Preventive Treatment (Second-Line/Specialist)",
+          "purpose": "The most targeted preventive treatment for migraine — monoclonal antibodies specifically blocking either CGRP itself or the CGRP receptor. Designed specifically for migraine prevention. Highly effective, well-tolerated, subcutaneous monthly injection. Approved for chronic and episodic migraine refractory to previous preventives.",
+          "mechanism": "Block the CGRP pathway — the central mechanism of migraine. First treatments designed specifically for migraine prevention.",
+          "advantage": "Disease-specific; no CNS side effects; well tolerated; rapid onset (1-3 months); once-monthly SC injection; effective even after failure of multiple preventives",
+          "medicines": [
+            {
+              "name": "Erenumab",
+              "brand_examples": ["Aimovig"],
+              "form": "Subcutaneous autoinjector (70mg, 140mg)",
+              "dosage": "70mg SC once monthly; can increase to 140mg SC once monthly if inadequate response",
+              "use_case": "Prevention of episodic and chronic migraine in adults who have had inadequate response to at least 2-3 conventional preventives; FIRST anti-CGRP mAb approved (FDA 2018)",
+              "mechanism": "Monoclonal antibody against CGRP RECEPTOR (anti-CGRP-R); different target from other CGRP mAbs",
+              "side_effects": ["Injection site reactions (pain, redness)", "Constipation (most notable class effect)", "Hypertension (rare)"],
+              "response_rate": "50% of patients achieve ≥50% reduction in migraine days"
+            },
+            {
+              "name": "Fremanezumab",
+              "brand_examples": ["Ajovy"],
+              "form": "Subcutaneous autoinjector (225mg)",
+              "dosage": "225mg SC once monthly OR 675mg SC once every 3 months (quarterly dosing — improves adherence)",
+              "use_case": "Prevention of episodic and chronic migraine; quarterly dosing option is a significant adherence advantage",
+              "mechanism": "Monoclonal antibody against CGRP ligand (anti-CGRP)",
+              "side_effects": ["Injection site reactions", "Constipation (mild)"],
+              "unique_advantage": "Quarterly (3-monthly) dosing option — 3 injections given together every 3 months"
+            },
+            {
+              "name": "Galcanezumab",
+              "brand_examples": ["Emgality"],
+              "form": "Subcutaneous autoinjector (120mg)",
+              "dosage": "Loading dose 240mg SC once; then 120mg SC once monthly",
+              "use_case": "Prevention of episodic and chronic migraine; cluster headache prevention (also approved); loading dose gives faster onset",
+              "mechanism": "Monoclonal antibody against CGRP ligand (anti-CGRP)",
+              "side_effects": ["Injection site reactions", "Constipation"],
+              "unique_use": "Also approved for episodic cluster headache prevention (first biologic approved for cluster headache)"
+            },
+            {
+              "name": "Eptinezumab",
+              "brand_examples": ["Vyepti"],
+              "form": "IV infusion (100mg, 300mg)",
+              "dosage": "100mg IV infusion over 30 minutes every 3 months; some patients benefit from 300mg dose",
+              "use_case": "Prevention of episodic and chronic migraine; IV delivery allows immediate onset from day of infusion; useful for very frequent/severe migraine requiring rapid effect",
+              "mechanism": "IV anti-CGRP monoclonal antibody",
+              "side_effects": ["Nasopharyngitis", "Infusion reactions (rare)", "Fatigue"],
+              "unique_advantage": "IV administration gives immediate effect from day 1 of infusion"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-82",
+          "category_name": "Calcium Channel Blockers — Preventive Treatment",
+          "purpose": "Prevent migraine through calcium channel blockade affecting serotonin release, cortical spreading depression threshold, and vascular reactivity.",
+          "medicines": [
+            {
+              "name": "Flunarizine",
+              "brand_examples": ["Sibelium", "Flunarizine", "Stugeron (cinnarizine — related)"],
+              "form": "Capsule (5mg, 10mg)",
+              "dosage": "5-10mg at bedtime",
+              "use_case": "Well-evidenced preventive; first-line in many countries (Europe, India); particularly useful with comorbid vestibular migraine; also effective for hemiplegic migraine",
+              "mechanism": "Calcium channel blocker; also inhibits calmodulin and dopamine receptors",
+              "side_effects": ["Weight gain and increased appetite (most common — problematic)", "Sedation", "Depression", "Extrapyramidal features with prolonged use (Parkinson-like) — limit to 6-month courses"],
+              "note": "Very popular preventive in India and Europe; not FDA approved in USA but widely used globally"
+            },
+            {
+              "name": "Verapamil",
+              "brand_examples": ["Calaptin", "Isoptin", "Verelan"],
+              "form": "SR tablet",
+              "dosage": "240-480mg/day (SR formulation)",
+              "use_case": "Second-line preventive for migraine; preferred for hemiplegic migraine and basilar-type migraine (beta-blockers and triptans avoided); also used in cluster headache prevention",
+              "side_effects": ["Constipation", "Bradycardia", "AV block (check ECG)", "Peripheral oedema"],
+              "note": "Preferred preventive option for hemiplegic migraine where triptans and beta-blockers are contraindicated"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-83",
+          "category_name": "SNRIs and Other Antidepressants — Preventive Treatment",
+          "purpose": "Second-line preventive options targeting serotonin and noradrenaline pathways; particularly useful with comorbid depression, anxiety, or pain conditions.",
+          "medicines": [
+            {
+              "name": "Venlafaxine",
+              "brand_examples": ["Effexor XR", "Veniz XR", "Venlor XR"],
+              "form": "Extended-release capsule",
+              "dosage": "37.5-150mg once daily (XR formulation)",
+              "use_case": "Second-line migraine preventive; particularly useful with comorbid depression, anxiety, or fibromyalgia; SNRI; good tolerability",
+              "mechanism": "Serotonin-noradrenaline reuptake inhibitor (SNRI)",
+              "side_effects": ["Nausea (especially at start)", "Sweating", "Blood pressure elevation (monitor BP)", "Sexual dysfunction", "Discontinuation syndrome if stopped abruptly"]
+            },
+            {
+              "name": "Duloxetine",
+              "brand_examples": ["Cymbalta", "Duzela", "Dulane"],
+              "form": "Delayed-release capsule",
+              "dosage": "30-60mg once daily",
+              "use_case": "Second-line preventive with comorbid depression, anxiety, or fibromyalgia/chronic pain conditions",
+              "side_effects": ["Nausea", "Somnolence", "Dizziness", "Constipation", "Hypertension (monitor)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-84",
+          "category_name": "Botulinum Toxin Type A (OnabotulinumtoxinA) — Preventive for Chronic Migraine",
+          "purpose": "The only FDA and MHRA-approved preventive treatment specifically for CHRONIC MIGRAINE. Given as 31 injections across 7 head and neck muscle areas every 12 weeks. Mechanism in migraine likely involves blocking CGRP and glutamate release from peripheral trigeminovascular afferents.",
+          "medicines": [
+            {
+              "name": "OnabotulinumtoxinA (Botulinum Toxin Type A)",
+              "brand_examples": ["Botox", "Vistabel"],
+              "form": "IM injection (specialist-administered)",
+              "dosage": "155-195 units divided across 31-39 injection sites in 7 head/neck muscle groups (PREEMPT protocol) every 12 weeks; administered by trained neurologist or pain specialist",
+              "use_case": "APPROVED SPECIFICALLY for chronic migraine (≥15 headache days/month, ≥8 migraine days/month); reduces headache days by ~8-9 per month vs ~6 with placebo; NICE approved in UK for adults with chronic migraine who have failed ≥3 preventives",
+              "mechanism": "Blocks acetylcholine release at neuromuscular junction; in migraine: blocks CGRP, glutamate, and substance P release from peripheral trigeminovascular terminals; reduces peripheral sensitization",
+              "side_effects": ["Neck weakness and pain (most common)", "Eyelid drooping (ptosis — from frontalis injections)", "Brow heaviness", "Injection site pain and bruising"],
+              "note": "Effect takes 6-8 weeks to develop; full assessment after 2 treatment cycles (24 weeks); many patients continue for years"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-85",
+          "category_name": "ACE Inhibitors and ARBs — Preventive Treatment (Specific Indications)",
+          "purpose": "Second-line preventive options with additional cardiovascular benefit; useful when beta-blockers contraindicated.",
+          "medicines": [
+            {
+              "name": "Candesartan",
+              "brand_examples": ["Atacand", "Candesar"],
+              "form": "Tablet",
+              "dosage": "8-16mg once daily",
+              "use_case": "Second-line preventive particularly useful when beta-blockers contraindicated (asthma, diabetes, Raynaud's); also treats hypertension; RCT evidence for 40% frequency reduction",
+              "side_effects": ["Dizziness", "Fatigue", "Hyperkalaemia", "Renal impairment (monitor)"],
+              "note": "CANPAIN trial showed candesartan as effective as propranolol for migraine prevention"
+            },
+            {
+              "name": "Lisinopril",
+              "brand_examples": ["Lisoril", "Zestril"],
+              "form": "Tablet",
+              "dosage": "10-20mg once daily",
+              "use_case": "Second-line preventive; ACE inhibitor with migraine prevention evidence; also treats hypertension",
+              "side_effects": ["ACEi cough (class effect — switch to candesartan if cough develops)", "Dizziness", "Hyperkalaemia"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-86",
+          "category_name": "Supplement-Based Preventives (Evidence-Based Nutraceuticals)",
+          "purpose": "Several nutritional supplements have Grade A or B evidence for migraine prevention in clinical guidelines. Safer profile than pharmacological preventives — important for patients who prefer non-pharmacological approaches, cannot tolerate drugs, or are pregnant.",
+          "medicines": [
+            {
+              "name": "Magnesium Oxide / Magnesium Citrate",
+              "brand_examples": ["Magnesium supplements — various brands"],
+              "form": "Tablet, Capsule",
+              "dosage": "400-600mg elemental magnesium daily (magnesium citrate or glycinate preferred for absorption and tolerability); American Headache Society: Grade A evidence",
+              "use_case": "Preventive for episodic migraine; PARTICULARLY EFFECTIVE for menstrual migraine (magnesium deficiency common pre-menstrually); safe in pregnancy; important adjunct for all migraineurs",
+              "mechanism": "Magnesium stabilises NMDA receptors; reduces cortical spreading depression susceptibility; reduces platelet aggregation; opposes calcium-induced vasoconstriction; deficiency demonstrated in migraineurs (low ionised Mg2+ in serum and CSF)",
+              "side_effects": ["Diarrhoea (most common — loose stools; magnesium citrate gentler than oxide)", "Nausea at high doses"],
+              "evidence": "Multiple RCTs show magnesium supplementation reduces migraine frequency by 40-50%; AHS Grade A; first-line in pregnancy"
+            },
+            {
+              "name": "Riboflavin (Vitamin B2)",
+              "brand_examples": ["Various B-complex vitamins; standalone riboflavin 400mg capsules"],
+              "form": "Tablet, Capsule",
+              "dosage": "400mg once daily (high dose required — far above dietary RDA of 1.3mg)",
+              "use_case": "Preventive for episodic migraine; safe in pregnancy; European guidelines Grade A recommendation; takes 3 months for full effect",
+              "mechanism": "Riboflavin is a precursor of FAD and FMN — essential cofactors for mitochondrial oxidative phosphorylation. Migraine may involve mitochondrial energy deficit in neurons — riboflavin improves mitochondrial energy production and reduces neuronal hyperexcitability",
+              "side_effects": ["Bright yellow/orange urine (harmless riboflavinuria — reassure patient)", "Mild GI upset at very high doses"],
+              "evidence": "Schoenen et al. RCT: 400mg/day reduced migraine frequency by 50% in 59% of patients"
+            },
+            {
+              "name": "Coenzyme Q10 (CoQ10 / Ubiquinone)",
+              "brand_examples": ["Various CoQ10 supplements"],
+              "form": "Soft gel capsule",
+              "dosage": "300-400mg daily (3 × 100mg doses preferred for absorption; or 300mg once daily with food)",
+              "use_case": "Preventive for migraine; AHS Grade B evidence; particularly with riboflavin and magnesium (triple supplementation); safe in pregnancy",
+              "mechanism": "Mitochondrial electron transport chain component; improves mitochondrial energy production; antioxidant; anti-inflammatory",
+              "side_effects": ["Generally very well tolerated", "Mild GI upset (take with food)", "Insomnia if taken late evening"],
+              "evidence": "Sandor et al. RCT: 300mg/day CoQ10 reduced migraine frequency by 48%; AHS Grade B"
+            },
+            {
+              "name": "Melatonin",
+              "brand_examples": ["Various melatonin supplements"],
+              "form": "Tablet",
+              "dosage": "3mg at bedtime",
+              "use_case": "Preventive for migraine, particularly in patients with sleep disorders (sleep disturbance is a major trigger); free radical scavenger; anti-inflammatory; comparable to amitriptyline in some studies with better tolerability",
+              "side_effects": ["Somnolence (next morning)", "Vivid dreams"],
+              "evidence": "Gonçalves et al. RCT: melatonin 3mg comparable to amitriptyline 25mg for migraine prevention with better tolerability"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet plays a crucial dual role in migraine management: (1) identifying and avoiding individual dietary triggers and (2) consuming nutrients that reduce neuronal excitability and migraine susceptibility. Magnesium deficiency is the single most important nutritional factor in migraine — low intracellular and CSF magnesium has been demonstrated in migraineurs. A ketogenic or low-glycaemic diet may reduce migraine frequency. Keeping a food diary to identify personal triggers is essential.",
+      "recommended_foods": [
+        {
+          "category": "Magnesium-Rich Foods (Most Important for Migraine)",
+          "evidence": "Strong — Grade A clinical guideline recommendation for magnesium supplementation in migraine prevention. Migraineurs demonstrate lower intracellular magnesium levels. Magnesium stabilises NMDA receptors, reduces cortical spreading depression susceptibility, and inhibits platelet aggregation.",
+          "items": [
+            {
+              "food": "Dark leafy greens: Spinach, Kale, Swiss chard, Methi (fenugreek), Beet greens",
+              "benefit": "Highest food magnesium content; 1 cup cooked spinach provides ~157mg magnesium; potassium; anti-inflammatory",
+              "frequency": "Daily — 2 cups cooked"
+            },
+            {
+              "food": "Pumpkin seeds (kaddu ke beej) — raw or roasted, unsalted",
+              "benefit": "Richest food source of magnesium per serving — 156mg per ounce; also zinc and potassium",
+              "frequency": "Daily — 1 small handful (28g)"
+            },
+            {
+              "food": "Almonds, cashews (unsalted)",
+              "benefit": "High magnesium (almonds 76mg/oz; cashews 74mg/oz); healthy fats; anti-inflammatory",
+              "frequency": "Daily — 1 small handful"
+            },
+            {
+              "food": "Dark chocolate (≥70% cocoa, minimum cocoa content)",
+              "benefit": "High magnesium (64mg per 28g); cocoa flavanols improve cerebral blood flow; BUT chocolate is a trigger for some — introduce carefully and monitor",
+              "frequency": "1-2 small squares daily if not a personal trigger; trial cautiously",
+              "caution": "Chocolate contains phenylethylamine (PEA) and caffeine — can trigger attacks in some individuals. Observe in headache diary."
+            },
+            {
+              "food": "Legumes: Chickpeas, Black beans, Lentils, Kidney beans",
+              "benefit": "Excellent magnesium (86mg per cup cooked black beans); stable blood sugar (low GI); plant protein; anti-inflammatory",
+              "frequency": "Daily — Indian dal meals are ideal"
+            },
+            {
+              "food": "Whole grains: Oats, Brown rice, Quinoa, Whole wheat",
+              "benefit": "Magnesium and B vitamins; complex carbohydrates maintain stable blood glucose (low blood sugar triggers migraine); fibre",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Avocado",
+              "benefit": "Magnesium (58mg per avocado); riboflavin; potassium; magnesium + riboflavin combination synergistic for migraine prevention",
+              "frequency": "Half an avocado 4-5 times per week"
+            },
+            {
+              "food": "Bananas (if not a personal trigger)",
+              "benefit": "Magnesium (32mg per banana); potassium; energy — prevents hypoglycaemia; melatonin",
+              "frequency": "1 daily if not triggering",
+              "caution": "Bananas contain tyramine — monitor as potential trigger in some patients"
+            }
+          ]
+        },
+        {
+          "category": "Riboflavin (Vitamin B2)-Rich Foods",
+          "evidence": "Grade A evidence for riboflavin 400mg/day supplementation; dietary sources provide lower amounts but contribute to status",
+          "items": [
+            {
+              "food": "Fortified cereals and whole grain breads",
+              "benefit": "Riboflavin B2; regular consumption; also magnesium and B vitamins for mitochondrial function",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Dairy: Skimmed milk, Low-fat yogurt",
+              "benefit": "Good riboflavin source (0.45mg per cup skimmed milk); calcium; anti-inflammatory; dairy proteins stabilise blood sugar",
+              "frequency": "2-3 servings daily if dairy is not a trigger"
+            },
+            {
+              "food": "Eggs",
+              "benefit": "Riboflavin in egg white (0.25mg per egg); protein; low-GI; easy to digest during recovery",
+              "frequency": "1-2 daily"
+            },
+            {
+              "food": "Lean meat: Chicken, Turkey (for non-vegetarians)",
+              "benefit": "Riboflavin; B12; tryptophan (serotonin precursor — important for migraine); lean protein stabilises blood sugar",
+              "frequency": "Moderate portions; choose fresh unprocessed over cured"
+            }
+          ]
+        },
+        {
+          "category": "Omega-3 Fatty Acids (Anti-inflammatory, Anti-migraine)",
+          "evidence": "Moderate-strong — omega-3 supplementation reduces migraine frequency in RCTs; anti-CGRP and anti-inflammatory effects",
+          "items": [
+            {
+              "food": "Fatty fish: Salmon, Mackerel, Sardines, Herring (fresh, not smoked/pickled)",
+              "benefit": "High EPA and DHA omega-3; reduce CGRP levels; anti-inflammatory; reduce platelet aggregation; reduce triglycerides (elevated in migraineurs)",
+              "frequency": "2-3 times per week",
+              "caution": "Avoid smoked, pickled, or canned fish — high in tyramine and histamine (triggers)"
+            },
+            {
+              "food": "Flaxseeds (ground)/Chia seeds",
+              "benefit": "ALA omega-3; also fibre and magnesium; anti-inflammatory; reduce brain inflammation underlying migraine",
+              "frequency": "1 tablespoon ground flaxseed daily in smoothies, yogurt, or chapati dough"
+            },
+            {
+              "food": "Walnuts (unsalted, fresh)",
+              "benefit": "ALA omega-3; magnesium; anti-inflammatory; but note: some patients report walnuts as a trigger — monitor",
+              "frequency": "7 walnut halves daily if not triggering",
+              "caution": "Some patients report walnuts as a migraine trigger (tyramine content) — introduce carefully and monitor in diary"
+            }
+          ]
+        },
+        {
+          "category": "Anti-inflammatory Foods",
+          "items": [
+            {
+              "food": "Ginger (adrak)",
+              "benefit": "Acute migraine treatment: ginger has evidence comparable to sumatriptan for nausea reduction; 6-gingerol inhibits prostaglandin synthesis, 5-HT3 receptors, and inflammatory pathways; also anti-nausea. Study: ginger powder 250mg as effective as sumatriptan 50mg for acute migraine (Maghbooli et al. 2014)",
+              "evidence": "Grade B for acute treatment; traditional and emerging evidence",
+              "frequency": "Fresh ginger tea (1 inch fresh ginger in hot water) at attack onset; daily 1-2 cups preventively",
+              "use": "First treatment to try at onset of migraine — anti-nausea and analgesic properties"
+            },
+            {
+              "food": "Turmeric (curcumin)",
+              "benefit": "Curcumin inhibits NF-κB inflammatory pathway; reduces CGRP production; anti-inflammatory effects on trigeminal nerve activation; emerging evidence for migraine prevention",
+              "frequency": "Daily in cooking, golden milk, or supplement (500-1000mg curcumin with piperine twice daily)"
+            },
+            {
+              "food": "Berries: Cherries, Blueberries, Strawberries",
+              "benefit": "Anthocyanins reduce neurogenic inflammation; reduce oxidative stress in brain; antioxidant protection against trigeminovascular inflammatory cascade; melatonin in tart cherries supports sleep",
+              "frequency": "Daily — 1 cup; tart cherry juice beneficial"
+            }
+          ]
+        },
+        {
+          "category": "Hydration — Critical Migraine Prevention",
+          "items": [
+            {
+              "food": "Water",
+              "benefit": "Dehydration is one of the most consistent and avoidable migraine triggers. Even mild dehydration (1-2% body weight loss) triggers attacks in susceptible individuals. Adequate hydration may abort attacks early. Electrolyte-containing water during attacks with vomiting.",
+              "target": "Adults: 2-2.5 litres daily (8-10 glasses); more in hot weather, with exercise, or with caffeine use",
+              "frequency": "Consistently throughout the day — do not wait to feel thirsty",
+              "tip": "Keep a water bottle visible as a constant reminder; dehydration headache often mistaken for migraine"
+            },
+            {
+              "food": "Herbal teas: Ginger tea, Chamomile, Lavender, Peppermint",
+              "benefit": "Hydration + specific therapeutic benefits: ginger (anti-nausea), chamomile (anti-inflammatory, relaxing), lavender (analgesic, anxiolytic), peppermint (analgesic — topical menthol on temples also shown to reduce migraine pain)",
+              "frequency": "2-3 cups daily; ginger tea at migraine onset"
+            }
+          ]
+        },
+        {
+          "category": "Blood Sugar Stabilizing Foods (Prevent Hypoglycaemia Trigger)",
+          "evidence": "Strong — hypoglycaemia is a significant migraine trigger; low-glycaemic diet reduces migraine frequency",
+          "items": [
+            {
+              "food": "Protein with each meal: Legumes, Eggs, Low-fat dairy, Fish, Tofu, Lentils",
+              "benefit": "Protein slows glucose absorption; maintains stable blood sugar; prevents hypoglycaemia (a major trigger); amino acids (tryptophan) for serotonin synthesis",
+              "frequency": "Include protein source with every meal and snack"
+            },
+            {
+              "food": "Complex carbohydrates: Oats, Brown rice, Whole wheat, Sweet potato, Quinoa",
+              "benefit": "Low glycaemic index — slow, sustained glucose release; prevents the blood sugar peaks and crashes that trigger migraine",
+              "frequency": "Prefer over refined white carbohydrates at all meals"
+            },
+            {
+              "food": "Regular snacks to prevent skipping meals",
+              "benefit": "Skipping meals is a top migraine trigger — even a 4-5 hour gap without food can trigger an attack in susceptible individuals. Regular small meals and healthy snacks maintain stable blood glucose.",
+              "examples": ["Banana with almond butter", "Hummus with vegetable sticks", "Mixed nuts (unsalted)", "Hard-boiled egg", "Plain yogurt"],
+              "frequency": "3 main meals + 2 snacks daily; never skip breakfast"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Alcohol — Especially Red Wine and Beer",
+          "reason": "Most potent dietary migraine trigger. Red wine: contains histamine, tyramine, flavonoids, and sulfites. Beer: contains histamine and yeast (tyramine source). Even small amounts (1-2 drinks) trigger attacks within 3 hours in most migraineurs. White wine and vodka are less triggering but still problematic for many.",
+          "recommendation": "Complete avoidance strongly recommended for migraineurs, especially during preventive treatment.",
+          "examples": ["Red wine (strongest trigger)", "Beer", "Champagne and sparkling wines (high histamine)", "All spirits to varying degrees"]
+        },
+        {
+          "food": "Aged and Fermented Cheeses (Tyramine)",
+          "reason": "Tyramine — a biogenic amine formed during cheese ageing — releases catecholamines and serotonin. Blocks monoamine oxidase (MAO). Strong, aged cheeses have the highest tyramine content.",
+          "high_tyramine_cheeses": ["Cheddar (especially mature)", "Blue cheese (stilton, gorgonzola, roquefort)", "Camembert", "Brie", "Parmesan", "Emmental", "Gruyère"],
+          "lower_tyramine_options": ["Fresh mozzarella", "Cottage cheese", "Cream cheese", "Ricotta", "Paneer (fresh)"]
+        },
+        {
+          "food": "Processed and Cured Meats (Nitrates and Tyramine)",
+          "reason": "Nitrates and nitrites (preservatives) are directly vasodilatory — they trigger nitric oxide release causing meningeal vasodilation. Also high in tyramine.",
+          "examples": ["Salami and pepperoni", "Bacon", "Ham (smoked/cured)", "Hot dogs / frankfurters", "Sausages", "Corned beef", "Any cured, smoked, or pickled meat"],
+          "safe_alternatives": "Fresh, unprocessed lean meats; grilled chicken; fresh fish"
+        },
+        {
+          "food": "Monosodium Glutamate (MSG) and Glutamate-Rich Additives",
+          "reason": "MSG is an excitatory amino acid (glutamate) that may over-activate trigeminovascular neurons. Classic 'Chinese restaurant headache' — headache 20-30 minutes after MSG-containing meal. Also hidden in many processed foods under different names.",
+          "hidden_sources": ["Chinese restaurant food", "Packaged soups, noodles, and ramen", "Crisps and snack foods", "Salad dressings", "Frozen meals", "Soy sauce", "Listed as: 'natural flavors', 'hydrolyzed vegetable protein', 'autolyzed yeast', 'glutamate'"]
+        },
+        {
+          "food": "Artificial Sweeteners (Especially Aspartame)",
+          "reason": "Aspartame is metabolised to phenylalanine, aspartic acid (excitatory), and methanol. Multiple patient reports and some case-control studies link aspartame to migraine triggering. Many migraineurs report marked improvement after eliminating diet sodas.",
+          "examples": ["Diet sodas and 'zero' beverages", "Sugar-free gum", "Artificial sweeteners: aspartame (Equal, NutraSweet), sucralose (Splenda) — less evidence but some reports"]
+        },
+        {
+          "food": "Caffeine — The Double-Edged Trigger",
+          "reason": "Complex role in migraine: (1) In small amounts, caffeine potentiates analgesics and can HELP an acute attack (component of Excedrin Migraine). (2) Regular caffeine use creates dependence — caffeine withdrawal is one of the most consistent migraine triggers (missing morning coffee). (3) Excessive caffeine causes rebound headaches. Recommendation: maintain stable daily intake OR gradually reduce to zero.",
+          "recommendation": "If reducing caffeine: decrease by no more than 25mg (1/4 cup coffee) per week to prevent withdrawal headaches; do not stop abruptly",
+          "sources": ["Coffee (especially strong/espresso)", "Black tea", "Energy drinks (very high)", "Cola beverages", "Pre-workout supplements"]
+        },
+        {
+          "food": "Histamine-Rich Foods",
+          "reason": "Some migraineurs have reduced diamine oxidase (DAO) enzyme activity — unable to break down dietary histamine efficiently. Histamine causes vasodilation and activates pain receptors. A low-histamine diet helps a subset of migraineurs.",
+          "high_histamine_foods": ["Fermented foods: kimchi, sauerkraut, kefir, vinegar", "Canned and smoked fish (sardines, tuna, mackerel — canned)", "Fermented cheeses (see above)", "Pickled vegetables", "Leftovers (histamine accumulates as food ages — eat fresh)"]
+        },
+        {
+          "food": "Skipping Meals and Fasting",
+          "reason": "Hypoglycaemia (low blood sugar) from meal skipping is one of the most consistent and avoidable migraine triggers. Even a 4-5 hour gap without food during waking hours triggers attacks. Intermittent fasting and very-low-calorie diets commonly worsen migraine frequency.",
+          "recommendation": "Never skip meals; breakfast is critical; eat every 3-4 hours; always carry a healthy snack",
+          "examples": ["Skipping breakfast (very common trigger)", "Late lunches without snacks", "Fasting without proper electrolyte management"]
+        },
+        {
+          "food": "Dehydration-Causing Beverages",
+          "reason": "Alcohol and excess caffeine cause diuresis and dehydration — both direct migraine triggers.",
+          "examples": ["Alcohol (all types)", "Energy drinks", "Excess coffee (>3 cups daily)", "Sugary sodas"]
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This low-tyramine, magnesium-rich, anti-inflammatory migraine-prevention meal plan avoids common triggers. Individual triggers vary greatly — use a headache diary to identify your specific triggers. Maintain regular meal timing and NEVER skip meals.",
+        "early_morning": "Upon waking: 2 large glasses of water (prevent dehydration) + fresh ginger slice in warm water + 10-12 soaked almonds (magnesium) or pumpkin seeds",
+        "breakfast": "Oatmeal with fresh banana slices, ground flaxseed, and blueberries (no dried/preserved fruit — high tyramine) + 1-2 boiled or scrambled eggs + glass of skimmed milk or fortified almond milk + 1 cup ginger or chamomile herbal tea",
+        "mid_morning": "1 apple or pear (fresh — no dried) + 1 tbsp almond butter OR a small pot of plain yogurt with honey",
+        "lunch": "Brown rice or whole wheat chapati (2) + moong dal or chana dal (magnesium + low-GI) + fresh spinach sabzi with garlic and olive oil + fresh tomato and cucumber raita (avoid vinegar-based dressings) + plain fresh curd",
+        "evening_snack": "A small handful of unsalted mixed nuts (almonds, walnuts — if not triggering) + 1 cup warm ginger or peppermint tea OR fresh fruit (apple, pear, mango in season — avoid citrus if triggering)",
+        "dinner": "Grilled fresh fish (salmon or mackerel) or paneer with vegetables + quinoa or brown rice + steamed broccoli with olive oil + fresh green salad (no balsamic vinegar — use lemon dressing) + glass of water",
+        "before_bed": "Warm low-fat milk (calcium + tryptophan for serotonin synthesis and sleep) with 1/2 tsp turmeric OR chamomile tea; ensure 7-8 hours of sleep at consistent time"
+      },
+      "special_dietary_notes": [
+        "MAGNESIUM is the single most important dietary intervention — ensure 400-600mg supplemental magnesium daily (magnesium citrate or glycinate for best absorption and tolerability); even with a good diet, supplements are usually needed to reach therapeutic levels",
+        "Keep a MIGRAINE DIARY recording all foods eaten in 24-48 hours before each attack — builds a personalised trigger list; what triggers one person may not trigger another",
+        "Regular meal timing is as important as what you eat — hypoglycaemia from delayed meals is one of the most avoidable triggers; eat every 3-4 hours",
+        "Low-glycaemic diet: multiple RCTs show ketogenic and low-GI diets reduce migraine frequency by 50-70% — likely through reduced neuronal excitability and improved mitochondrial function",
+        "CAFFEINE MANAGEMENT: If you drink coffee, maintain a consistent daily amount at a consistent time. Do not vary intake — both excess caffeine and caffeine withdrawal trigger migraine.",
+        "Riboflavin 400mg/day supplement: difficult to achieve therapeutically from diet alone — take as supplement. Safe in pregnancy. Note bright yellow urine — harmless.",
+        "Omega-3 fish oil supplement: if fish consumption inadequate, take 2-4g EPA+DHA fish oil daily with food; reduces migraine frequency in RCTs.",
+        "Tryptophan-rich foods (turkey, eggs, dairy, bananas, oats) support serotonin synthesis — important for migraine pathophysiology.",
+        "Anti-histamine diet trial: If conventional trigger avoidance does not reduce migraines, trial a low-histamine diet for 4 weeks — helps in DAO-deficient migraineurs.",
+        "Hydration: 2-2.5 litres water daily; increase with hot weather, exercise, or caffeine consumption; electrolyte drink if vomiting during attacks"
+      ]
+    },
+
+    "lifestyle_management": {
+      "sleep_hygiene": {
+        "importance": "Sleep is one of the most powerful triggers AND treatments for migraine. Both too little sleep (sleep deprivation) and too much sleep (oversleeping at weekends) trigger attacks. The hypothalamus — the 'migraine generator' — governs sleep-wake cycles, explaining the strong link.",
+        "sleep_targets": "7-8 hours per night; consistent wake and sleep time every day (even weekends — 'social jet lag' from weekend oversleeping is a major trigger)",
+        "recommendations": [
+          "Maintain exactly the same sleep and wake time every day — including weekends (most important measure)",
+          "Avoid napping during the day (disrupts night-time sleep quality and circadian rhythm)",
+          "Create a dark, cool, quiet sleep environment (22-24°C); blackout curtains",
+          "No screens (phone, tablet, TV) for 60-90 minutes before bedtime — blue light suppresses melatonin",
+          "Avoid caffeine after 2pm",
+          "Avoid alcohol — disrupts deep sleep quality despite seeming to cause drowsiness",
+          "If migraine wakes you at night, take your acute medication immediately rather than waiting until morning",
+          "Sleep restriction therapy (CBT-I) for insomnia — improving sleep quality significantly reduces migraine frequency"
+        ]
+      },
+      "stress_management": {
+        "importance": "Stress is the most commonly reported migraine trigger (50-70%). Two distinct mechanisms: (1) Stress itself activates the HPA axis, releases cortisol and adrenaline triggering attacks; (2) 'Let-down' headache — migraine occurs on relaxation after stress (Friday evening migraine, holiday migraine).",
+        "techniques": [
+          "Cognitive Behavioural Therapy (CBT) for headache — strong evidence; reduces migraine frequency by 35-50%; address catastrophising and pain anxiety",
+          "Biofeedback — thermal biofeedback or EMG biofeedback; Grade A evidence for migraine prevention; teaches autonomic self-regulation",
+          "Mindfulness-Based Cognitive Therapy (MBCT) — mindfulness specifically adapted for chronic pain; reduces migraine frequency and improves disability",
+          "Progressive Muscle Relaxation (PMR) — systematic relaxation of muscle groups; reduces pericranial muscle tension (significant in tension-type headache overlap with migraine)",
+          "Diaphragmatic deep breathing — slow breathing (6 breaths/min); activates parasympathetic nervous system; can be used during prodrome to potentially abort attack",
+          "Regular yoga — reduces stress, improves cervical flexibility, reduces sympathetic tone; evidence shows yoga reduces migraine frequency",
+          "Establish 'stress buffer' activities: hobbies, social connection, time in nature, music — preventing complete stress buildup"
+        ]
+      },
+      "exercise": {
+        "importance": "Regular aerobic exercise is Grade B preventive treatment for migraine. Exercise releases endorphins (natural pain modulators), reduces CGRP, improves sleep, reduces anxiety/depression (major comorbidities), and reduces body weight (obesity = migraine risk factor). Paradox: intense exercise can TRIGGER attacks while regular moderate exercise PREVENTS them.",
+        "recommended": [
+          "Brisk walking — 30-45 min, 3-5 days per week; most accessible; low trigger risk",
+          "Cycling (steady pace) — low impact; effective aerobic exercise; good in climate-controlled environment",
+          "Swimming — water provides head support; minimal head movement; cooling effect; excellent for migraine",
+          "Yoga — dual benefits of aerobic and stress reduction; evidence specifically for migraine",
+          "Jogging or running at moderate, consistent pace (not sprint intervals)"
+        ],
+        "precautions": [
+          "Avoid vigorous exercise during prodrome or early attack — exercise at that phase triggers full attacks",
+          "Warm up gradually (10 min) — abrupt onset of intense exercise triggers exertional migraine",
+          "Stay well-hydrated before, during, and after exercise — dehydration during exercise is a strong trigger",
+          "Exercise in cool, well-ventilated environments — heat worsens headache",
+          "Avoid exercising when sleep-deprived",
+          "If exercise regularly triggers migraine: take NSAID or triptan 30-60 min before exercise (discuss with neurologist)"
+        ]
+      },
+      "migraine_diary": {
+        "importance": "A migraine diary is the single most important self-management tool — it tracks headache days, severity, triggers, symptoms, medications used, and their effectiveness. Essential for establishing correct diagnosis, identifying personal triggers, monitoring treatment response, and screening for medication overuse headache (MOH).",
+        "what_to_record": [
+          "Date and time of headache onset and resolution",
+          "Pain intensity (1-10 VAS)",
+          "Location (unilateral/bilateral, temporal/frontal/occipital)",
+          "Pain quality (throbbing, pressing, stabbing)",
+          "Associated symptoms: aura (describe), nausea, vomiting, photophobia, phonophobia",
+          "Medications taken: name, dose, time taken, effectiveness (0-10)",
+          "Possible triggers: foods eaten in previous 24-48h, sleep hours, stress level, menstrual phase (women), weather, physical activity",
+          "Disability: missed work, limited activity (calculate MIDAS monthly)"
+        ],
+        "apps": "Digital diary apps: Migraine Buddy (most popular), N1-Headache, Healow, MyMigraine (AHS/AAN approved apps improve diary accuracy vs paper)"
+      },
+      "trigger_avoidance_strategies": [
+        "Maintain stable sleep-wake schedule (most important single lifestyle measure)",
+        "Eat regularly — never skip meals; carry emergency snacks; eat within 30-60 min of waking",
+        "Maintain consistent caffeine intake or gradually reduce to zero",
+        "Wear sunglasses outdoors (UV and glare filter); use blue-light filter apps on screens (f.lux, Night Shift)",
+        "Use polarised lenses if driving is triggering",
+        "Tinted glasses with FL-41 lens tint specifically for photophobia and fluorescent light sensitivity",
+        "Avoid strong perfumes and fragrances; use fragrance-free products; inform workplace colleagues",
+        "HEPA air purifier at home and work to reduce chemical vapours and allergens",
+        "Monitor barometric pressure via weather app — prepare rescue medication when pressure drops forecast",
+        "Identify and manage hormonal triggers (menstrual diary in women; discuss hormonal management with gynaecologist)"
+      ],
+      "non_pharmacological_treatments": [
+        {
+          "treatment": "Neuromodulation Devices (Non-Invasive)",
+          "devices": [
+            {
+              "name": "Cefaly",
+              "type": "External trigeminal nerve stimulation (eTNS)",
+              "use": "Both acute (20 min at attack onset) and preventive (20 min daily) treatment; FDA cleared; stimulates supraorbital branch of trigeminal nerve",
+              "evidence": "ACME trial: acute mode reduced pain at 2 hours; preventive mode reduced frequency by 30%"
+            },
+            {
+              "name": "gammaCore (Nuvana)",
+              "type": "Non-invasive vagus nerve stimulator (nVNS)",
+              "use": "Acute treatment (applied to neck over vagus nerve for 2 min); preventive treatment (3 daily stimulations); FDA cleared for migraine and cluster headache",
+              "evidence": "Reduces acute attack pain; reduces frequency in episodic migraine"
+            },
+            {
+              "name": "sTMS mini (Spring TMS / eNeura)",
+              "type": "Single-pulse transcranial magnetic stimulation (sTMS)",
+              "use": "Acute treatment: apply to back of head at aura onset; preventive: 4 pulses twice daily; FDA cleared",
+              "evidence": "ESPOUSE study: 44% had pain-free 2h response"
+            }
+          ]
+        },
+        {
+          "treatment": "Acupuncture",
+          "evidence": "Cochrane review: acupuncture reduces migraine frequency at least as effectively as prophylactic drug treatment; Grade A NICE recommendation for migraine prevention",
+          "protocol": "10-16 sessions over 5-8 weeks; traditional acupuncture or dry needling of trigger points",
+          "note": "Considered as preventive treatment when pharmacological options are contraindicated or not tolerated (pregnancy, elderly, patient preference)"
+        },
+        {
+          "treatment": "Physiotherapy / Manual Therapy",
+          "evidence": "Moderate — cervical spine manual therapy, massage, and physiotherapy significantly reduce migraine frequency when cervicogenic component present",
+          "technique": "Suboccipital muscle release; cervical mobilisation; posture correction; trigger point therapy for pericranial muscles; therapeutic taping"
+        },
+        {
+          "treatment": "Peppermint Oil (Topical Menthol)",
+          "evidence": "Moderate — RCT evidence: 10% peppermint oil applied topically to forehead and temples at attack onset comparably effective to paracetamol 1g for acute pain relief",
+          "use": "Apply diluted peppermint oil to forehead, temples, and neck at headache onset; cooling sensation activates TRPM8 receptors providing analgesia"
+        }
+      ],
+      "acute_self_management_at_attack_onset": [
+        "Take acute medication IMMEDIATELY — do not wait for headache to peak (earlier = more effective); first sign of pain or recognising prodrome warning signs",
+        "Drink 2-3 glasses of water immediately — dehydration worsening is preventable",
+        "Take prescribed antiemetic 15-20 min before oral analgesic (improves absorption)",
+        "Move to dark, quiet, cool room — reduce sensory stimulation",
+        "Apply cold compress or ice pack to forehead or back of neck",
+        "Apply topical peppermint oil to temples and forehead",
+        "Lie down with eyes closed — movement worsens pain",
+        "Sleep if possible — sleep often resolves migraine attack",
+        "Avoid strong odours — remove air fresheners, leave rooms with cooking smells",
+        "If vomiting occurs: use non-oral medication routes (nasal spray triptan, IM antiemetic, rectal suppository, dissolving tablet)"
+      ]
+    },
+
+    "migraine_monitoring_plan": {
+      "note": "Migraine monitoring combines headache diary tracking with validated questionnaires. The goal of preventive treatment is ≥50% reduction in migraine days per month. Monthly review of diary data guides treatment decisions.",
+      "green_zone": {
+        "status": "Well Controlled / Preventive Treatment Working",
+        "criteria": "≤4 migraine days per month; MIDAS Grade I or II; HIT-6 score <56; acute medications required on ≤10 days per month; no disability; good quality of life",
+        "action": "Continue current preventive and acute medication regimens. Maintain headache diary. Review with neurologist/GP every 3-6 months. Continue lifestyle measures. If stable ≥12 months, consider trial reduction of preventive therapy."
+      },
+      "yellow_zone": {
+        "status": "Suboptimal Control / Needs Reassessment",
+        "criteria": "5-14 migraine days per month; MIDAS Grade III (moderate disability); acute medication use approaching 10 days/month; preventive medicine inadequate response after 3 months; missing work or social events regularly",
+        "action": "Contact neurologist or GP within 2-4 weeks. Review headache diary: Is there medication overuse? Are triggers identified and avoided? Dose increase or change of preventive medication likely needed. Consider CGRP mAb referral if 2+ preventives have failed."
+      },
+      "red_zone": {
+        "status": "Crisis / Emergency / Serious Concern",
+        "criteria_for_urgent_care": "Any of: headache lasting >72 hours without relief (status migrainosus) — go to emergency department; headache described as worst ever/thunderclap — rule out SAH; neurological symptoms (facial weakness, one-sided limb weakness, speech difficulty, vision loss) — possible stroke; fever + headache + neck stiffness — possible meningitis; headache in pregnancy — possible eclampsia",
+        "criteria_for_early_review": "≥15 headache days per month (chronic migraine); analgesic use >10-15 days/month (possible MOH); complete failure of 2+ preventive therapies; significant disability (MIDAS Grade IV); new or worsening aura symptoms",
+        "action": "For neurological emergency signs — CALL EMERGENCY SERVICES IMMEDIATELY (stroke protocol). For status migrainosus >72h — go to emergency department. For chronic migraine assessment — urgent neurology referral. For MOH — supervised medication withdrawal under neurologist guidance."
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Chronic Migraine",
+        "description": "Transformation from episodic migraine (≤14 days/month) to chronic migraine (≥15 headache days/month) through gradual progression. Affects ~3% of population; 1.5 million in UK alone. Major driver is medication overuse headache. Severely disabling — loss of employment, social isolation, psychiatric comorbidities.",
+        "risk_factors": "Frequent episodic migraine, medication overuse, obesity, anxiety/depression, sleep disorders, stressful life events",
+        "severity": "Severe — major disability",
+        "management": "Preventive therapy (CGRP mAbs, botulinum toxin); medication withdrawal for MOH; multidisciplinary pain management; psychological support"
+      },
+      {
+        "complication": "Medication Overuse Headache (MOH)",
+        "description": "A paradoxical complication of frequent use of acute headache medications — taking triptans, NSAIDs, or combination analgesics on ≥10 days/month causes central sensitization and neuroplastic changes that produce an almost-daily headache. The headache becomes dependent on the medication. Affects 1-2% of the general population and up to 30% of headache clinic patients.",
+        "causative_medications": "Opioids and combination analgesics (>10 days/month); triptans (>10 days/month); NSAIDs (>15 days/month)",
+        "severity": "Moderate-severe; very refractory to standard treatment",
+        "management": "Withdrawal of overused medication (supervised; headache typically worsens for 7-14 days then dramatically improves); bridge therapy during withdrawal (prednisolone, IV dihydroergotamine, naproxen); preventive medication; psychological support for the withdrawal process"
+      },
+      {
+        "complication": "Migrainous Infarction (Ischaemic Stroke with Migraine)",
+        "description": "Rare (< 0.5% of migraineurs) — ischaemic stroke that occurs during a migraine with aura attack, with neurological deficits persisting beyond 60 minutes and confirmed infarct on neuroimaging in the migraine-relevant territory.",
+        "risk_factors": "Migraine with aura + oral contraceptive pill + smoking — powerful triple risk combination; hypertension; hypercoagulable states; PFO (patent foramen ovale)",
+        "severity": "Severe — can cause permanent neurological disability",
+        "prevention": "Stop smoking; avoid OCP (especially with aura); control hypertension; screen for PFO; aspirin; preventive migraine treatment"
+      },
+      {
+        "complication": "Persistent Aura Without Infarction",
+        "description": "Aura symptoms (most commonly visual) persisting for more than 1 week without neuroimaging evidence of infarction. Can persist for months or years. Not fully understood — possibly related to sustained CSD or cortical dysfunction.",
+        "severity": "Moderate — disability from persistent visual symptoms",
+        "management": "Specialist referral; exclude other causes; SSRI, valproate, or lamotrigine may help"
+      },
+      {
+        "complication": "Psychiatric Comorbidities — Depression and Anxiety",
+        "description": "Migraine, depression, and anxiety are bidirectionally linked — migraineurs have 2-5x higher lifetime prevalence of depression and anxiety vs general population. This bidirectionality is mediated by shared serotonin, noradrenaline, and glutamate pathways. Psychiatric comorbidity worsens migraine outcomes and disability.",
+        "severity": "Moderate — significantly worsens migraine prognosis and quality of life",
+        "management": "Screen every migraineur for depression (PHQ-9) and anxiety (GAD-7); amitriptyline or venlafaxine are preferred preventives in this setting (dual benefit); CBT; SSRI/SNRI for severe psychiatric comorbidity; suicide risk assessment"
+      },
+      {
+        "complication": "Aura-Triggered Seizures (Migralesthesia)",
+        "description": "Extremely rare — seizure occurring during or within 1 hour of migraine aura. Migraine aura may lower the seizure threshold in susceptible individuals. Also known as 'migralepsy'. Requires EEG evaluation and anticonvulsant therapy.",
+        "severity": "Severe — rare"
+      },
+      {
+        "complication": "Status Migrainosus",
+        "description": "A single migraine attack lasting more than 72 hours despite standard treatment. Severely debilitating; causes significant dehydration; often requires emergency department visit and parenteral treatment. May be precipitated by analgesic rebound or intercurrent illness.",
+        "severity": "Severe — emergency",
+        "management": "Emergency department: IV antiemetics (prochlorperazine, metoclopramide), IV dihydroergotamine, IV ketorolac, IV dexamethasone, IV fluids; hospital admission if refractory"
+      },
+      {
+        "complication": "Vestibular Dysfunction",
+        "description": "Vestibular migraine is the most common cause of recurrent spontaneous vertigo. Chronic vestibular dysfunction can develop — persistent dizziness, imbalance, and spatial disorientation. Significantly impairs driving, employment, and quality of life.",
+        "severity": "Moderate",
+        "management": "Migraine-specific preventives; vestibular rehabilitation physiotherapy; betahistine for symptom management"
+      },
+      {
+        "complication": "Cutaneous Allodynia and Central Sensitization Syndrome",
+        "description": "Repeated migraine attacks progressively increase central sensitization — lowering pain thresholds throughout the body. Allodynia (normally painless stimuli are painful — wearing glasses, combing hair, lying on a pillow) affects up to 70% of chronic migraineurs. Predicts poor acute treatment response (triptans less effective once allodynia present) and progression to chronic migraine.",
+        "severity": "Moderate — chronic; bidirectional relationship with migraine frequency"
+      }
+    ],
+
+    "special_populations": {
+      "migraine_in_children_and_adolescents": {
+        "key_points": [
+          "Migraine affects 7-10% of school-age children; up to 28% of adolescents",
+          "Headache in children is often bilateral (frontal or temporal) — unlike adult unilateral pattern; duration 1-72 hours (minimum 1 hour)",
+          "GI symptoms are particularly prominent in children — significant nausea, vomiting, and abdominal pain",
+          "Childhood migraine equivalents: cyclical vomiting syndrome, abdominal migraine, benign paroxysmal vertigo of childhood — these may precede typical migraine by years",
+          "Acute treatment: ibuprofen 10mg/kg (first-line); paracetamol 15mg/kg; sumatriptan nasal spray licensed from age 12 in many countries; almotriptan approved from 12 years",
+          "Preventive treatment: propranolol (first-line); topiramate (licensed 12+ years); amitriptyline (low dose); cyproheptadine (antihistamine — useful especially in younger children for prevention)",
+          "Screen for anxiety and depression — very common comorbidities in paediatric migraine; anxiety often the primary driver",
+          "School management: medication plan; permission to rest in dark room; regular attendance monitoring",
+          "Lifestyle interventions first: sleep schedule, hydration, meal timing, screen time reduction — more powerful in children than adults",
+          "Valproate is AVOIDED in girls and women of childbearing age due to teratogenicity risk"
+        ]
+      },
+      "migraine_in_pregnancy": {
+        "key_points": [
+          "Migraine typically IMPROVES in 2nd and 3rd trimester (due to rising stable oestrogen) — 50-70% of migraineurs improve in pregnancy",
+          "First trimester may worsen or be unchanged",
+          "Postpartum period: migraine frequently relapses severely within days of delivery (oestrogen drop)",
+          "SAFE acute treatments in pregnancy: Paracetamol (first-line, all trimesters); Metoclopramide (antiemetic — first-line); Ibuprofen (2nd trimester only — avoid 1st and 3rd trimester)",
+          "AVOID in pregnancy: Triptans (limited safety data; not recommended by most guidelines though sumatriptan pregnancy registry shows no increased risk); Ergotamine (uterotonic — CONTRAINDICATED); NSAIDs in 1st trimester and after 20 weeks; codeine (risk of neonatal withdrawal)",
+          "SAFE preventive options in pregnancy: Magnesium oxide/citrate (strong evidence; safe all trimesters); Riboflavin 400mg (safe); CoQ10 (generally considered safe); Melatonin 3mg (limited but reassuring data)",
+          "AVOID preventive medications in pregnancy: Topiramate (teratogenic — oral clefts); Valproate (highly teratogenic — ABSOLUTELY CONTRAINDICATED); Amitriptyline (used with caution 2nd trimester only); Beta-blockers (fetal growth restriction with prolonged use; labetalol specifically the safest beta-blocker in pregnancy)",
+          "Acupuncture: safe and effective non-pharmacological preventive option in pregnancy",
+          "Postpartum: restart preventive therapy immediately; many triptans are compatible with breastfeeding (check individual drug; sumatriptan generally considered safe while breastfeeding — WHO compatible)",
+          "If migraine is severe and disabling despite safe options: specialist referral; risk-benefit discussion with obstetrician and neurologist"
+        ]
+      },
+      "migraine_in_women": {
+        "key_points": [
+          "Women experience migraine 3x more than men due to oestrogen fluctuations (oestrogen is a migraine modulator)",
+          "Menarche: migraine often begins at puberty when hormonal cycles begin",
+          "Menstrual migraine: attacks around menstruation are most severe, longest, most treatment-resistant; managed with frovatriptan/naratriptan mini-prophylaxis or oestrogen supplementation perimenstrually",
+          "Oral contraceptives: combined OCP (oestrogen + progestogen) can worsen migraine with aura; progestogen-only pill (POP/mini-pill) is safer; AVOID combined OCP in migraine with aura (increased stroke risk — WHO category 3-4)",
+          "Pregnancy: see separate section",
+          "Perimenopause: migraine often worsens significantly as oestrogen levels fluctuate widely during perimenopause; particularly challenging to manage",
+          "Menopause: surgical menopause (bilateral oophorectomy) causes abrupt oestrogen drop — often worsens migraine; natural menopause → most migraineurs improve after menopause",
+          "HRT in menopause: oestrogen patches or gels (transdermal — avoids peaks and troughs of oral) with continuous progestogen preferred if HRT needed; avoid oral oestrogen in migraine with aura (stroke risk)"
+        ]
+      },
+      "migraine_in_elderly": {
+        "key_points": [
+          "Migraine prevalence decreases with age — only 5-10% of people over 70 years have active migraine",
+          "Presentation may become atypical: aura without headache ('acephalalgic migraine') becomes more common with advancing age",
+          "New headache in elderly MUST exclude serious secondary causes: giant cell arteritis, subdural haematoma, brain tumour, stroke",
+          "Triptans in elderly: use with caution; screen for cardiovascular contraindications carefully",
+          "Medication interactions more common — polypharmacy common; check for drug interactions with amitriptyline (anticholinergic burden), propranolol, and topiramate",
+          "Cognitive impairment (topiramate side effect) may be more pronounced in elderly",
+          "Amitriptyline side effects (sedation, orthostatic hypotension, urinary retention) more significant in elderly — use minimum effective dose",
+          "Renal and hepatic function affect drug metabolism and dosing",
+          "Melatonin 3mg may be particularly beneficial in elderly migraine with sleep disorder"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza (Flu) Vaccine — Annual",
+        "frequency": "Annually before flu season",
+        "reason": "Viral infections including influenza are significant migraine triggers (immune activation, fever, and systemic inflammation trigger attacks). Annual flu vaccination reduces both flu illness and the migraine attacks it would trigger. Particularly important for frequent migraineurs."
+      },
+      {
+        "vaccine": "COVID-19 Vaccine (Annual Updated Booster)",
+        "frequency": "As per national guidelines",
+        "reason": "COVID-19 infection causes severe headache (new daily persistent headache and worsened migraine in Long COVID); vaccination reduces severity and duration of COVID-19 illness. Note: some migraineurs report a migraine attack as a transient post-vaccination reaction — manageable with standard acute treatment."
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV20 / PPSV23)",
+        "frequency": "Per national schedule; priority for adults ≥50 or with chronic conditions",
+        "reason": "Bacterial meningitis causes severe headache that must be differentiated from migraine; pneumococcal vaccination reduces risk of bacterial meningitis. Migraineurs with structural or neurological comorbidities (immunosuppressed on preventive biologics) are at higher risk."
+      },
+      {
+        "vaccine": "Meningococcal Vaccine (MenACWY / MenB)",
+        "frequency": "Per national schedule (typically adolescents)",
+        "reason": "Meningococcal meningitis presents with severe headache, fever, and neck stiffness — can mimic or complicate migraine assessment. Vaccination recommended per national schedule particularly in adolescents (school/college entry)."
+      },
+      {
+        "vaccine": "Tetanus-Diphtheria-Pertussis (Tdap/Td)",
+        "frequency": "Booster every 10 years",
+        "reason": "Routine adult immunisation; pertussis illness and high fever can trigger severe migraine attacks in susceptible individuals."
+      },
+      {
+        "vaccine": "Human Papillomavirus (HPV)",
+        "frequency": "Per national schedule",
+        "reason": "Standard adult immunization; women on topiramate or valproate for migraine prevention require careful contraception planning — both reduce OCP efficacy. Women should be offered HPV vaccination regardless of migraine treatment."
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "First-ever severe headache — especially if sudden in onset, 'thunderclap', or worst headache of life — requires IMMEDIATE evaluation (rule out subarachnoid haemorrhage)",
+      "Headaches that are progressively increasing in frequency or severity over weeks to months",
+      "Migraine frequency reaching ≥4 days per month — preventive therapy should be assessed",
+      "Using acute headache medications (analgesics, triptans) on more than 10 days per month — possible medication overuse headache (MOH) developing",
+      "Aura symptoms lasting more than 60 minutes or headache not following aura — possible TIA",
+      "New neurological symptoms with headache: arm or leg weakness, facial drooping, speech difficulty, sudden vision loss — possible stroke",
+      "Headache associated with fever, neck stiffness, and photophobia — possible meningitis",
+      "Headache waking you from sleep regularly (not standard migraine pattern — requires investigation)",
+      "Significant change in headache character — new location, different quality, more severe",
+      "Headache with new or worsening visual changes",
+      "Headache in pregnancy or within 6 weeks of childbirth — possible pre-eclampsia or cerebral venous thrombosis",
+      "Two or more preventive medications have failed — specialist neurology referral for CGRP mAbs or botulinum toxin",
+      "Significant impact on work, relationships, or daily functioning (MIDAS Grade III or IV) — warrants specialist input",
+      "Concerns about medications: pregnancy, medication interactions, side effects of current preventives"
+    ],
+
+    "emergency_signs": [
+      "Thunderclap headache — sudden onset severe headache reaching maximum intensity within 1 minute (worst headache ever experienced) — CALL EMERGENCY SERVICES: subarachnoid haemorrhage until proven otherwise",
+      "Headache with fever (>38°C), neck stiffness, sensitivity to light — possible bacterial meningitis or encephalitis — EMERGENCY",
+      "Headache with new focal neurological symptoms: face, arm, or leg weakness; slurred speech; aphasia — possible stroke (FAST: Face, Arms, Speech, Time) — EMERGENCY",
+      "Sudden severe vision loss in one eye — retinal artery occlusion or acute stroke — EMERGENCY",
+      "Headache with confusion, decreased consciousness, or seizures — hypertensive encephalopathy, intracranial haemorrhage, or encephalitis — EMERGENCY",
+      "New severe headache in elderly patient over 50 with scalp tenderness and jaw pain — giant cell arteritis — urgent same-day assessment to prevent blindness",
+      "Severe headache in pregnant women (especially after 20 weeks) or postpartum with visual changes or oedema — possible eclampsia — OBSTETRIC EMERGENCY",
+      "Status migrainosus — migraine lasting more than 72 hours without relief — attend emergency department for parenteral treatment",
+      "Aura symptoms lasting more than 60 minutes without resolving — possible TIA or stroke — EMERGENCY",
+      "Post-traumatic headache following head injury worsening rather than improving — possible intracranial haemorrhage or CSF leak — EMERGENCY"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What exactly is a migraine and how is it different from a regular headache?",
+        "answer": "Migraine is a complex neurological disorder — not simply a bad headache. It involves a cascade of brain events including cortical spreading depression (a wave of neural activity), activation of the trigeminal pain system, neurogenic inflammation, and release of CGRP (calcitonin gene-related peptide). A migraine attack lasts 4-72 hours, causes moderate-severe throbbing pain (usually one-sided), and is accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Regular tension headaches are bilateral, pressing/squeezing, mild-moderate, and without these associated features."
+      },
+      {
+        "question": "What is a migraine aura?",
+        "answer": "Migraine aura is a transient neurological symptom lasting 5-60 minutes that precedes or accompanies the headache in about 25-30% of migraineurs. The most common aura is visual — typically a 'scintillating scotoma': a bright crescent of zigzag flickering lights ('fortification spectra') that slowly expands across the visual field over 20-30 minutes, leaving a blank area. Sensory aura causes tingling/numbness spreading from fingers to face. Speech aura causes word-finding difficulty. Aura is caused by cortical spreading depression — a slow wave of neuronal depolarisation across the brain."
+      },
+      {
+        "question": "What causes migraine attacks?",
+        "answer": "Migraines are triggered by specific factors ('triggers') activating the trigeminovascular pain system in a brain that is predisposed through genetics. Common triggers include: menstruation (oestrogen drop), stress and relaxation after stress (weekend migraine), disrupted sleep (too much or too little), skipping meals or dehydration, alcohol (especially red wine), strong smells, bright or flickering lights, and barometric pressure changes. Identifying your personal triggers through a migraine diary is one of the most effective management strategies."
+      },
+      {
+        "question": "When should I take my migraine medication?",
+        "answer": "Take your acute medication as EARLY as possible — at the first sign of a headache or when you recognise prodrome symptoms (yawning, mood changes, neck stiffness before headache). Waiting for the headache to peak significantly reduces drug effectiveness because gastric stasis impairs absorption and central sensitization develops (allodynia). For triptans especially — take at headache onset, not during aura. Take an antiemetic 15-20 minutes before oral analgesics to improve gut absorption."
+      },
+      {
+        "question": "What is medication overuse headache (MOH) and am I at risk?",
+        "answer": "MOH (also called rebound headache) is a paradoxical worsening of headache caused by using acute headache medications too frequently — more than 10 days per month for triptans and opioids, or 15+ days for NSAIDs. The brain becomes dependent and headache occurs almost daily. It affects 1-2% of the general population and 30% of headache clinic patients. Warning signs: using medication more than 10-15 days/month, headache on waking, need for increasing medication doses. Treatment requires medically supervised withdrawal of the overused medication."
+      },
+      {
+        "question": "What preventive treatments are available for migraine?",
+        "answer": "Preventive (prophylactic) treatment is indicated when you have ≥4 migraine days per month or significant disability. Options include: Beta-blockers (propranolol, metoprolol) — first-line; Tricyclic antidepressants (amitriptyline) — first-line especially with insomnia or depression; Antiepileptics (topiramate, valproate) — first-line; CGRP monoclonal antibodies (erenumab, fremanezumab, galcanezumab) — newest and most targeted; Botulinum toxin (Botox) — approved for chronic migraine; Evidence-based supplements (magnesium, riboflavin, CoQ10). Most preventives take 2-3 months for full effect."
+      },
+      {
+        "question": "Are triptans safe to take?",
+        "answer": "Triptans (sumatriptan, zolmitriptan, rizatriptan, eletriptan, etc.) are the gold standard acute treatment for moderate-severe migraine. They are safe for most people. However, they should NOT be used in people with: ischaemic heart disease, prior MI or stroke, uncontrolled hypertension, Prinzmetal angina, hemiplegic migraine, or during pregnancy. Triptan sensations (chest tightness, throat pressure — felt in ~15% of users) are mostly benign vasospasm effects, not cardiac events, but any chest pain should be assessed. Do not take more than 10 days per month to avoid MOH."
+      },
+      {
+        "question": "What are CGRP monoclonal antibodies for migraine?",
+        "answer": "CGRP mAbs (erenumab/Aimovig, fremanezumab/Ajovy, galcanezumab/Emgality, eptinezumab/Vyepti) are the newest and most specific preventive treatments for migraine. They block CGRP (calcitonin gene-related peptide) — the central molecule driving migraine pain. Unlike older preventives, they were designed specifically for migraine. Given as monthly subcutaneous injections (or quarterly), they reduce migraine days by 50% in approximately 50% of patients, including those who have failed multiple other preventives. They are safe, well-tolerated, and have no CNS side effects."
+      },
+      {
+        "question": "Can I use migraine medications in pregnancy?",
+        "answer": "Migraine usually improves during the 2nd and 3rd trimesters. Safe acute treatments include: paracetamol (first-line, all trimesters) and metoclopramide for nausea. Ibuprofen is limited to 2nd trimester only. Triptans are generally avoided (limited safety data). Safe preventives include: magnesium supplements (strongly recommended), riboflavin 400mg, and CoQ10. Strictly AVOID: topiramate (teratogenic — cleft palate) and valproate (highly teratogenic — neural tube defects and cognitive impairment). Discuss all medications with your obstetrician and neurologist."
+      },
+      {
+        "question": "What is the 'FAST' mnemonic and why is it relevant to migraine?",
+        "answer": "FAST stands for: Face drooping, Arm weakness, Speech difficulty, Time to call emergency services — and is the stroke recognition tool. It is relevant to migraine because severe migraine headache can occasionally be confused with stroke. The critical distinction: migraine aura symptoms develop GRADUALLY over ≥5 minutes; stroke symptoms begin SUDDENLY and are maximal from onset. Any sudden ('thunderclap') onset of severe headache, sudden focal weakness, speech difficulty, or vision loss requires IMMEDIATE emergency services — do not assume it is migraine."
+      },
+      {
+        "question": "What dietary changes help with migraine?",
+        "answer": "Most important dietary measures: (1) Never skip meals — hypoglycaemia is a major trigger; (2) Stay well hydrated — 2-2.5 litres water daily; dehydration triggers attacks; (3) Limit or avoid alcohol, especially red wine; (4) Avoid tyramine-rich aged cheeses, processed meats, and MSG; (5) Reduce/eliminate caffeine or maintain a strictly consistent daily intake; (6) Eat plenty of magnesium-rich foods (spinach, pumpkin seeds, almonds, dark chocolate, legumes); (7) Consider magnesium 400-600mg daily supplement — Grade A clinical evidence. Keep a food diary for 4-6 weeks to identify your personal dietary triggers."
+      },
+      {
+        "question": "Can stress cause migraines?",
+        "answer": "Yes — stress is the most commonly reported migraine trigger (50-70% of migraineurs). Psychological stress activates the hypothalamic-pituitary-adrenal (HPA) axis, releasing cortisol and adrenaline that trigger the trigeminovascular cascade. The 'let-down' phenomenon is also very common: migraine attacks occurring on weekends or during holidays — when stress finally releases. Evidence-based stress management for migraine: CBT for headache (reduces frequency by 35-50%); biofeedback; mindfulness; regular yoga. These are Grade A recommendations in multiple migraine guidelines."
+      },
+      {
+        "question": "Is migraine related to stroke?",
+        "answer": "Migraine with aura carries a small but real increased risk of ischaemic stroke — about 2-fold higher than the general population. The absolute risk is small but increases significantly with: being female, smoking, and using oestrogen-containing oral contraceptives (triple risk factor). Women with migraine with aura should ideally avoid combined oestrogen-containing contraceptives (progestogen-only pill is safer), not smoke, and control cardiovascular risk factors. Migrainous infarction (stroke during a migraine attack) is rare but possible."
+      },
+      {
+        "question": "What is vestibular migraine?",
+        "answer": "Vestibular migraine is a migraine variant causing recurrent vertigo (spinning sensation or severe dizziness) lasting 5 minutes to 72 hours, combined with migraine symptoms (headache, photophobia, phonophobia, nausea). It is the second most common cause of recurrent spontaneous vertigo (after BPPV) affecting 1-3% of the population. It is frequently misdiagnosed as Ménière's disease. Treatment: migraine preventives (propranolol, amitriptyline, topiramate, venlafaxine) + vestibular rehabilitation physiotherapy."
+      }
+    ],
+
+    "references": [
+      "International Headache Society (IHS) — ICHD-3: International Classification of Headache Disorders, 3rd Edition (2018)",
+      "European Headache Federation (EHF) — EFNS/EHF Guideline on the Treatment of Migraine 2022",
+      "American Headache Society (AHS) — Evidence-Based Guideline Update: NSAIDs and Other Complementary Treatments for Episodic Migraine Prevention in Adults 2012 (Updated Recommendations 2021)",
+      "NICE Clinical Guideline (CG150): Headaches in Over 12s: Diagnosis and Management (2012, updated 2021)",
+      "World Health Organization (WHO) — Headache Disorders Fact Sheet 2023",
+      "Goadsby PJ et al. — Migraine — Current Understanding and Treatment (NEJM, 2002)",
+      "Tepper SJ — Anti-CGRP Therapy in Migraine — NEJM, 2019",
+      "Ailani J et al. — The American Headache Society Consensus Statement: Update on Integrating New Migraine Treatments Into Clinical Practice (Headache Journal 2021)",
+      "Schoenen J et al. — Effectiveness of High-Dose Riboflavin in Migraine Prevention (Neurology, 1998)",
+      "Peikert A et al. — Prophylaxis of Migraine with Oral Magnesium (Cephalalgia, 1996)",
+      "Sun-Edelstein C, Mauskop A — Role of Magnesium in the Pathogenesis and Treatment of Migraine (Expert Rev Neurother, 2009)",
+      "Diener HC et al. — OnabotulinumtoxinA for Treatment of Chronic Migraine: PREEMPT 2 Study (Cephalalgia, 2010)",
+      "Reuter U et al. — Erenumab for the Prevention of Migraine (NEJM, 2017)",
+      "Bigal ME, Lipton RB — Modifiable Risk Factors for Migraine Progression (Headache, 2006)",
+      "Harriott AM, Schwedt TJ — Migraine Is Associated with Altered Processing of Sensory Stimuli (Curr Pain Headache Rep, 2014)",
+      "Loder E et al. — Position Statement on Preventive Treatment of Migraine: AHS/AAN Guidelines (Headache, 2012)",
+      "Maghbooli M et al. — Comparison Between the Efficacy of Ginger and Sumatriptan in Acute Migraine Treatment (Phytother Res, 2014)",
+      "Burch R — Epidemiology and Treatment of Migraine (CONTINUUM: Lifelong Learning in Neurology, AAN 2019)",
+      "Medscape: Migraine Clinical Overview — Diagnosis and Treatment Guidelines 2024",
+      "UpToDate: Preventive treatment of episodic migraine in adults; Acute treatment of migraine in adults"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-MIGRAINE-015",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-03",
+      "last_updated": "2026-06-03",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is intended for educational and informational purposes for the MedoAir chatbot. It does not replace professional medical advice, diagnosis, or treatment. Migraine management requires individualized care — always consult a licensed neurologist or physician for diagnosis and treatment planning. Sudden severe headache ('worst headache of life') requires IMMEDIATE emergency evaluation.",
+      "tags": ["migraine", "headache", "neurological disorder", "aura", "CGRP", "triptans", "sumatriptan", "chronic migraine", "medication overuse headache", "photophobia", "phonophobia", "migraine prevention", "medoair"]
+    }
+  }
+}

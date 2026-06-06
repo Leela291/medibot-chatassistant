@@ -1,0 +1,1527 @@
+{
+  "disease": {
+    "id": "DIS-010",
+    "name": "Hypothyroidism",
+    "scientific_name": "Hypothyroidism / Thyroid Hormone Deficiency / Underactive Thyroid",
+    "icd_10_code": "E03.9 (Hypothyroidism, unspecified); E03.0 (Congenital hypothyroidism with diffuse goitre); E03.1 (Congenital hypothyroidism without goitre); E02 (Subclinical iodine-deficiency hypothyroidism); E00 (Congenital iodine-deficiency syndrome / Cretinism); E06.3 (Autoimmune thyroiditis — Hashimoto's disease); E89.0 (Post-procedural hypothyroidism); E23.0 (Secondary hypothyroidism — pituitary); P72.2 (Transitory neonatal hypothyroidism)",
+    "category": "Endocrine Disease / Metabolic Disorder / Autoimmune Disease",
+    "overview": {
+      "description": "Hypothyroidism is a common endocrine disorder in which the thyroid gland — a butterfly-shaped gland at the base of the neck — fails to produce sufficient thyroid hormones (primarily thyroxine / T4 and triiodothyronine / T3) to meet the body's metabolic requirements. Thyroid hormones are essential regulators of virtually every organ system: they control basal metabolic rate, energy production, body temperature, heart rate, growth, neurological development, reproductive function, and the metabolism of carbohydrates, proteins, and lipids. A deficiency produces a progressive slowing of all body functions — manifesting as fatigue, weight gain, cold intolerance, constipation, dry skin, depression, bradycardia, and cognitive impairment — and can progress to life-threatening complications including myxoedema coma if untreated. Hypothyroidism is highly treatable with once-daily oral thyroid hormone replacement therapy and most patients achieve complete symptom resolution with correct management.",
+      "affected_organ": "Primarily the thyroid gland; systemically affects virtually all organ systems — cardiovascular, neurological, musculoskeletal, reproductive, gastrointestinal, dermatological, and metabolic",
+      "prevalence": "Overt hypothyroidism affects 1-2% of the general population globally; subclinical hypothyroidism (elevated TSH, normal Free T4) affects 4-10% of adults; approximately 200 million people worldwide have some form of thyroid disease; iodine deficiency affects 1.9 billion people and is the most common preventable cause of thyroid dysfunction globally",
+      "age_group": "All ages; most common in women over 40 years; prevalence increases progressively with age; peak incidence in women aged 40-60 years; congenital form present from birth",
+      "is_contagious": false,
+      "is_contagious_note": "Hypothyroidism is not infectious or contagious; the autoimmune form (Hashimoto's) has genetic predisposition and may cluster in families",
+      "is_curable": false,
+      "is_curable_note": "Most forms are lifelong conditions requiring ongoing treatment; however, some transient causes (postpartum thyroiditis, drug-induced, subacute thyroiditis) can resolve completely. Congenital hypothyroidism and post-surgical/radioiodine forms are permanent.",
+      "is_manageable": true,
+      "chronic": true,
+      "is_preventable": true,
+      "is_preventable_note": "Iodine-deficiency hypothyroidism is entirely preventable through universal salt iodisation; neonatal screening prevents intellectual disability from congenital hypothyroidism; drug-induced forms preventable through monitoring",
+      "key_fact": "Hypothyroidism is one of the most commonly missed diagnoses — symptoms are non-specific, gradual, and often attributed to normal ageing or other conditions; a simple TSH blood test can diagnose or exclude it"
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Primary Hypothyroidism",
+        "description": "The most common form — accounting for over 95% of all hypothyroidism. The thyroid gland itself is dysfunctional, failing to produce adequate T4 and T3. As serum T4 falls, the pituitary responds by increasing TSH secretion (negative feedback); therefore TSH is ELEVATED and Free T4 is LOW in primary hypothyroidism. It includes multiple aetiologies, all converging on the same thyroid gland failure.",
+        "subtypes": [
+          {
+            "subtype": "Autoimmune Thyroiditis — Hashimoto's Thyroiditis (Chronic Lymphocytic Thyroiditis)",
+            "description": "The most common cause of hypothyroidism in iodine-sufficient countries (Europe, North America, urban India). An autoimmune process in which autoreactive T-lymphocytes infiltrate the thyroid gland and autoantibodies (anti-TPO, anti-thyroglobulin) progressively destroy thyroid follicular cells, leading to glandular atrophy and failure of hormone production over years to decades.",
+            "epidemiology": "Affects 2% of women and 0.2% of men; female-to-male ratio 7-10:1; peak onset 40-60 years but can occur at any age including children",
+            "markers": "Elevated anti-thyroid peroxidase antibodies (anti-TPO Ab) — present in >90% of cases; elevated anti-thyroglobulin antibodies (anti-Tg Ab) — present in ~60%; thyroid ultrasound: heterogeneous, hypoechoic parenchyma with reduced vascularity",
+            "natural_history": "May pass through an initial transient hyperthyroid phase (Hashitoxicosis) due to follicle destruction releasing stored hormone, then becomes euthyroid, then progresses to hypothyroidism over years; 2-5% annual conversion rate from subclinical to overt hypothyroidism when anti-TPO positive",
+            "associations": "Associated with other autoimmune conditions: Type 1 diabetes, Addison's disease, vitiligo, pernicious anaemia, coeliac disease, rheumatoid arthritis, Sjögren's syndrome (autoimmune polyglandular syndrome)"
+          },
+          {
+            "subtype": "Iodine-Deficiency Hypothyroidism",
+            "description": "The most common cause of hypothyroidism and goitre GLOBALLY — particularly in low-income countries in Africa, Southeast Asia, South America, and Central Asia. Iodine is an essential raw material for thyroid hormone synthesis; without it, the thyroid cannot produce T3 or T4. Chronic iodine deficiency leads to goitre (thyroid gland enlargement as it attempts to compensate) and eventually frank hypothyroidism.",
+            "epidemiology": "Affects approximately 740 million people globally; 50 million have overt thyroid disease from iodine deficiency; a public health priority in landlocked countries and mountainous regions where soil and water have low iodine content",
+            "markers": "Low urinary iodine concentration (<100 mcg/L indicates deficiency); elevated TSH; enlarged thyroid (goitre); normal or low anti-TPO antibodies (not autoimmune)",
+            "prevention": "Universal salt iodisation (USI) — adding 20-40 parts per million iodine to table salt — the single most cost-effective public health nutrition intervention; mandatory in India under FSSAI regulations",
+            "note": "Paradoxically, excessive iodine intake (e.g., from amiodarone, contrast dyes, kelp supplements) can also cause hypothyroidism (Wolff-Chaikoff effect)"
+          },
+          {
+            "subtype": "Post-Surgical Hypothyroidism (Post-Thyroidectomy)",
+            "description": "Permanent hypothyroidism following total thyroidectomy (complete removal of thyroid gland) or subtotal thyroidectomy. Expected and inevitable after total thyroidectomy — all patients require lifelong levothyroxine replacement. After subtotal/partial thyroidectomy — risk depends on remnant tissue left.",
+            "indications_for_thyroidectomy": "Thyroid cancer, large goitre causing compressive symptoms, Grave's disease (hyperthyroidism), toxic nodules",
+            "onset": "Hypothyroidism typically develops within 4-6 weeks of total thyroidectomy",
+            "management": "Levothyroxine started immediately postoperatively after total thyroidectomy — dose 1.6 mcg/kg/day; for cancer patients suppressive therapy (TSH <0.1) may be targeted initially"
+          },
+          {
+            "subtype": "Post-Radioiodine (RAI) Therapy Hypothyroidism",
+            "description": "Hypothyroidism is a predictable and often intended consequence of radioactive iodine-131 (I-131) therapy for hyperthyroidism (Grave's disease, toxic multinodular goitre, toxic adenoma) or thyroid cancer ablation. The radioiodine selectively destroys thyroid follicular cells.",
+            "onset": "Hypothyroidism usually develops 2-6 months after RAI therapy; risk increases progressively over years",
+            "management": "TSH monitoring at 4-6 weeks, 3 months, 6 months, then annually; lifelong levothyroxine once hypothyroidism confirmed"
+          },
+          {
+            "subtype": "Drug-Induced Hypothyroidism",
+            "description": "Several commonly prescribed medications interfere with thyroid hormone synthesis, secretion, or peripheral metabolism, causing hypothyroidism. Drug-induced hypothyroidism is often overlooked as a medication side effect.",
+            "causative_drugs": [
+              {
+                "drug": "Amiodarone",
+                "mechanism": "High iodine content (37% iodine by weight) — inhibits T4-to-T3 conversion; Wolff-Chaikoff effect; direct thyroid cytotoxicity. Also can cause hyperthyroidism.",
+                "risk": "Hypothyroidism in 15-22% of patients on amiodarone; higher risk in iodine-sufficient areas; MONITOR TSH every 6 months in all patients on amiodarone"
+              },
+              {
+                "drug": "Lithium",
+                "mechanism": "Blocks thyroid hormone synthesis and secretion; inhibits proteolysis of thyroglobulin; enhances autoimmune thyroid destruction",
+                "risk": "Goitre in 40-50% of long-term lithium users; hypothyroidism in 20-40%; MONITOR TSH every 6-12 months"
+              },
+              {
+                "drug": "Anti-thyroid drugs (Propylthiouracil/PTU, Carbimazole, Methimazole)",
+                "mechanism": "Intended inhibition of thyroid peroxidase for hyperthyroidism treatment — dose-dependent hypothyroidism if overtreated",
+                "note": "Reversible on dose reduction; requires careful TSH monitoring"
+              },
+              {
+                "drug": "Interferon-alpha (for hepatitis C, melanoma)",
+                "mechanism": "Triggers autoimmune thyroiditis by activating autoreactive lymphocytes",
+                "risk": "Hypothyroidism in 5-10% of patients; typically reversible after stopping treatment"
+              },
+              {
+                "drug": "Immune Checkpoint Inhibitors (Pembrolizumab, Nivolumab, Ipilimumab)",
+                "mechanism": "Immune system activation causes autoimmune thyroiditis (immune-related adverse event — irAE)",
+                "risk": "Hypothyroidism in 5-20% of cancer patients on checkpoint inhibitors; often permanent; screen TSH before each cycle"
+              },
+              {
+                "drug": "Tyrosine kinase inhibitors (Sunitinib, Sorafenib, Imatinib)",
+                "mechanism": "Direct thyroid cell destruction; reduced T4 absorption; impaired TSH-stimulated thyroid growth",
+                "risk": "Hypothyroidism in 36-85% of patients on sunitinib"
+              },
+              {
+                "drug": "Thalidomide and Lenalidomide",
+                "mechanism": "Autoimmune thyroid disruption",
+                "risk": "Monitor TSH in patients on these agents"
+              }
+            ]
+          },
+          {
+            "subtype": "Postpartum Thyroiditis",
+            "description": "Autoimmune thyroid inflammation occurring within 12 months of delivery, miscarriage, or termination of pregnancy. The rebound of immune function after the immunosuppressive state of pregnancy triggers autoimmune thyroid inflammation.",
+            "phases": "Classic triphasic: (1) Hyperthyroid phase (1-4 months postpartum) — painless, brief; (2) Hypothyroid phase (4-8 months) — fatigue, depression, cold intolerance — often mistaken for postnatal depression; (3) Recovery phase (most return to euthyroid by 12 months, but 30-50% develop permanent hypothyroidism within 5-10 years)",
+            "epidemiology": "Affects 5-10% of women after delivery; 50% have positive anti-TPO antibodies",
+            "diagnosis": "TSH, Free T4, anti-TPO antibodies; thyroid scan shows decreased uptake (distinguishes from Grave's hyperthyroid phase)",
+            "management": "Hypothyroid phase: levothyroxine if symptomatic or TSH >10; wean off at 12 months to assess permanent status; long-term annual TSH monitoring"
+          },
+          {
+            "subtype": "Infiltrative and Rare Causes",
+            "description": "Uncommon causes in which infiltration of the thyroid gland by abnormal cells or substances destroys functional thyroid tissue.",
+            "examples": [
+              "Riedel's thyroiditis — fibrous replacement of thyroid tissue; presents as hard 'woody' goitre; associated with other fibrosclerotic diseases",
+              "Sarcoidosis — non-caseating granulomas infiltrating thyroid",
+              "Amyloidosis — amyloid deposits in thyroid",
+              "Haemochromatosis — iron deposition in thyroid gland",
+              "Thyroid lymphoma — usually on background of Hashimoto's; rapidly enlarging goitre",
+              "Metastatic malignancy to thyroid (rare)"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Central Hypothyroidism (Secondary and Tertiary)",
+        "description": "Rare form (less than 1% of hypothyroidism) in which the defect lies not in the thyroid gland itself but in the hypothalamus or pituitary gland — resulting in inadequate TSH stimulation of an otherwise normal thyroid. TSH is LOW or inappropriately normal (pituitary fails to raise TSH despite low T4). Distinguishing feature: TSH is not elevated, unlike primary hypothyroidism.",
+        "subtypes": [
+          {
+            "subtype": "Secondary Hypothyroidism (Pituitary / Hypopituitarism)",
+            "description": "Deficiency of TSH from pituitary gland damage — part of hypopituitarism. Causes include: pituitary adenoma and its treatment (surgery/radiotherapy), Sheehan's syndrome (postpartum pituitary necrosis from haemorrhage), traumatic brain injury, pituitary apoplexy, infiltration (sarcoidosis, haemochromatosis, lymphoma), empty sella syndrome.",
+            "diagnosis": "Low or normal TSH with low Free T4; MRI pituitary (sellar lesion); assessment of other pituitary hormones (growth hormone, cortisol, FSH/LH, prolactin); dynamic pituitary testing if needed",
+            "management": "Treat underlying pituitary disease; levothyroxine replacement; CRITICAL: ALWAYS replace cortisol (hydrocortisone) BEFORE starting levothyroxine in hypopituitarism to prevent precipitating adrenal crisis"
+          },
+          {
+            "subtype": "Tertiary Hypothyroidism (Hypothalamic)",
+            "description": "Deficiency of thyrotropin-releasing hormone (TRH) from hypothalamic damage — TRH normally stimulates pituitary TSH secretion. Causes: craniopharyngioma, hypothalamic tumours, infiltration, head trauma, cranial irradiation.",
+            "diagnosis": "Low TSH, low Free T4; TRH stimulation test; MRI hypothalamus/pituitary",
+            "note": "Central hypothyroidism from hypothalamic or pituitary disease often co-exists with deficiencies of other pituitary hormones (growth hormone, ACTH, FSH/LH, ADH) requiring complete pituitary hormone assessment"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Subclinical Hypothyroidism",
+        "description": "A biochemical diagnosis — elevated serum TSH (typically 4.5-10 mIU/L) with a normal Free T4 level. Patients may be entirely asymptomatic or have very mild, non-specific symptoms. Subclinical hypothyroidism is not a minor condition — it carries significant long-term implications for cardiovascular health, lipid metabolism, cognition, and fertility. Management is individualised based on TSH level, symptoms, anti-TPO status, cardiovascular risk, and patient age.",
+        "epidemiology": "Affects 4-10% of adults; prevalence increases to 20% in women over 60 years; the most common thyroid abnormality found on routine health screening",
+        "natural_history": "Without treatment: 2-5% per year progress to overt hypothyroidism; higher progression rate if anti-TPO antibodies positive (7-10% per year) or TSH >10 mIU/L",
+        "treatment_indications": [
+          "TSH >10 mIU/L — most guidelines recommend treatment regardless of symptoms",
+          "TSH 4.5-10 mIU/L with positive anti-TPO antibodies — consider treatment",
+          "TSH 4.5-10 mIU/L with symptoms of hypothyroidism — consider treatment",
+          "Pregnancy or planning pregnancy — treat if TSH >2.5 mIU/L",
+          "Infertility or recurrent miscarriage — treat if TSH >2.5 mIU/L",
+          "Dyslipidaemia or cardiovascular risk — treat if TSH >7-10 mIU/L",
+          "Age >70 years with TSH mildly elevated — evidence for treatment benefit is less clear; avoid over-treatment"
+        ]
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Congenital Hypothyroidism",
+        "description": "Hypothyroidism present from birth due to absence, underdevelopment, or malfunction of the thyroid gland. The most common preventable cause of intellectual disability worldwide. Neonatal screening (Guthrie/heel-prick test) has transformed outcomes — early treatment prevents irreversible brain damage. Without screening and treatment within the first 2 weeks of life, congenital hypothyroidism causes cretinism — severe intellectual disability, short stature, and developmental delay.",
+        "incidence": "1 in 2,000-4,000 live births; more common in Down syndrome (1 in 100)",
+        "causes": [
+          "Thyroid dysgenesis (75-80%): agenesis (no thyroid), hypoplasia (small thyroid), ectopic thyroid (lingual thyroid most common — at base of tongue)",
+          "Dyshormonogenesis (10-15%): normal thyroid location but defective enzyme pathways for hormone synthesis — autosomal recessive; associated with goitre",
+          "Transient congenital hypothyroidism: maternal anti-thyroid antibodies crossing placenta (passive transfer); maternal anti-thyroid drug use; neonatal iodine exposure/deficiency",
+          "Central congenital hypothyroidism: TSH deficiency from pituitary (rare)"
+        ],
+        "signs_in_neonate": [
+          "Prolonged neonatal jaundice (beyond 2 weeks) — most common presenting sign",
+          "Poor feeding and weak suck",
+          "Constipation",
+          "Lethargy and hypotonia ('floppy baby')",
+          "Hypothermia (persistently low body temperature)",
+          "Large anterior fontanelle (delayed closure) with wide sutures",
+          "Macroglossia (enlarged tongue)",
+          "Hoarse cry",
+          "Facial puffiness, periorbital oedema",
+          "Bradycardia",
+          "Umbilical hernia",
+          "Dry skin",
+          "Goitre (in dyshormonogenesis)"
+        ],
+        "screening": "Heel-prick blood test (Guthrie test) at 5-7 days of life measuring TSH (and T4 in some programmes); TSH >40 mIU/L on screening is diagnostic; universal neonatal thyroid screening now standard in 57+ countries including India (increasingly implemented)",
+        "treatment": "IV or oral levothyroxine started within first 2 weeks of life — initial dose 10-15 mcg/kg/day; TSH target <5 mIU/L in first year; Free T4 maintained in upper half of normal range; lifelong treatment in permanent forms",
+        "prognosis": "Excellent neurodevelopmental outcome with early (within 2 weeks) and adequate treatment; delayed treatment results in irreversible intellectual impairment proportional to duration of untreated hypothyroidism"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Transient Hypothyroidism",
+        "description": "Hypothyroidism that is temporary and expected to resolve spontaneously or after removal of the cause. Important to recognise to avoid committing patients to unnecessary lifelong treatment.",
+        "causes": [
+          "Subacute (De Quervain's) thyroiditis: post-viral painful thyroid inflammation — initial hyperthyroid phase from follicle rupture, then hypothyroid phase as stores depleted, then recovery; 90% return to euthyroid",
+          "Silent thyroiditis (painless sporadic thyroiditis): similar triphasic pattern to postpartum thyroiditis but not pregnancy-related",
+          "Postpartum thyroiditis hypothyroid phase: often transient; reassess at 12 months",
+          "Drug-induced hypothyroidism: from interferon-alpha, checkpoint inhibitors — may resolve after drug cessation",
+          "Neonatal hypothyroidism from maternal anti-thyroid drugs or antibodies",
+          "Excessive iodine load (contrast media, amiodarone in iodine-deficient patients) — Wolff-Chaikoff effect: usually transient as thyroid escapes from iodine excess"
+        ],
+        "management": "Treat if symptomatic with levothyroxine; attempt withdrawal at 6-12 months (reduce dose by 50%, recheck TSH in 4-6 weeks); label as transient to ensure periodic reassessment rather than automatic lifelong prescription"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Subclinical Hypothyroidism",
+        "description": "Biochemical elevation of TSH with normal Free T4 and absent or very mild symptoms. Thyroid hormone deficiency is compensated by the elevated TSH drive.",
+        "tsh_range": "TSH 4.5-10 mIU/L (mild subclinical); TSH >10 mIU/L (moderate subclinical)",
+        "free_t4": "Normal (within laboratory reference range)",
+        "symptoms": "Often asymptomatic; vague non-specific fatigue or mild weight gain may be present; difficult to attribute symptoms to thyroid specifically",
+        "functional_impact": "Minimal; most activities unaffected; quality of life impact variable",
+        "management": "Individualised — see treatment indications. Annual TSH monitoring. Levothyroxine for TSH >10, pregnancy, anti-TPO positive, or symptomatic. Lifestyle optimisation (iodine, selenium, stress).",
+        "criteria_for_upgrade": "Rise in TSH to >10 mIU/L; development of overt symptoms; positive anti-TPO antibodies; planning pregnancy"
+      },
+      {
+        "level": 2,
+        "name": "Mild Overt Hypothyroidism",
+        "description": "Low Free T4 with elevated TSH and a constellation of mild symptoms that noticeably affect quality of life. Diagnosis is biochemically confirmed.",
+        "tsh_range": "TSH 10-50 mIU/L",
+        "free_t4": "Low (below lower limit of reference range)",
+        "symptoms": "Fatigue and low energy; mild weight gain; cold intolerance; constipation; dry skin; mild depression or low mood; slight bradycardia; mild dyslipidaemia on blood tests",
+        "functional_impact": "Reduced energy and concentration affecting work performance; exercise tolerance reduced; social withdrawal from fatigue",
+        "management": "Levothyroxine oral replacement; starting dose 50-75 mcg/day in otherwise healthy adults under 60 (lower if elderly or cardiac history); TSH recheck at 4-8 weeks; titrate to TSH target 0.5-2.5 mIU/L",
+        "criteria_for_upgrade": "Worsening symptoms; TSH >50 mIU/L; cardiovascular or neurological involvement"
+      },
+      {
+        "level": 3,
+        "name": "Moderate to Severe Overt Hypothyroidism",
+        "description": "Markedly elevated TSH with significantly low Free T4 and prominent multi-system symptoms substantially impairing daily function. Requires prompt treatment.",
+        "tsh_range": "TSH >50 mIU/L",
+        "free_t4": "Significantly low",
+        "symptoms": "Profound fatigue; significant unexplained weight gain; severe cold intolerance; constipation; periorbital and peripheral non-pitting oedema (myxoedema); coarsened skin; hair thinning/loss; hoarse voice; bradycardia; hypertension (diastolic); hyperlipidaemia; depression; cognitive slowing; menstrual disturbances; impotence; carpal tunnel syndrome; muscle aches and weakness; delayed deep tendon reflexes (hung-up reflexes); pericardial or pleural effusion; macroglossia",
+        "functional_impact": "Significantly impairs work, exercise, relationships, and daily activities; high risk of cardiovascular complications and reproductive failure",
+        "management": "Levothyroxine — start at appropriate dose; elderly/cardiac patients start at 12.5-25 mcg; refer to endocrinology; monitor for improvement; check for precipitants or complications; add T3 if refractory. Evaluate for associated autoimmune conditions.",
+        "criteria_for_upgrade": "Altered consciousness; hypothermia; cardiovascular instability — MYXOEDEMA COMA"
+      },
+      {
+        "level": 4,
+        "name": "Myxoedema Coma — Critical / Life-Threatening",
+        "description": "The most severe and life-threatening manifestation of untreated or undertreated hypothyroidism. Myxoedema coma is a medical emergency with a mortality rate of 20-60% even with optimal treatment. It represents the extreme end of hypothyroid decompensation — precipitated by a stressor in a patient with longstanding severe hypothyroidism.",
+        "precipitating_factors": "Cold exposure (most common precipitant in elderly); infection (pneumonia, sepsis, UTI); myocardial infarction; stroke; trauma; major surgery; sedatives, opioids, or anaesthetic agents; hypoglycaemia; hypoxia; medication non-compliance; GI bleeding",
+        "clinical_features": [
+          "Altered consciousness — stupor, obtundation, or frank coma",
+          "Hypothermia — core body temperature <35°C (often <32°C) — cardinal feature",
+          "Bradycardia (heart rate <50 bpm)",
+          "Hypotension",
+          "Hypoventilation — CO2 retention; hypoxia; risk of respiratory arrest",
+          "Generalised non-pitting oedema (myxoedema)",
+          "Hyponatraemia (dilutional — syndrome of inappropriate ADH)",
+          "Hypoglycaemia (especially in concurrent adrenal insufficiency)",
+          "Ileus and abdominal distension",
+          "Urinary retention",
+          "Bradyreflexia",
+          "Serum CPK markedly elevated; anaemia"
+        ],
+        "management": "ICU admission; IV levothyroxine 200-400 mcg IV bolus then 50-100 mcg IV daily; IV T3 (liothyronine) 5-20 mcg initially if T4-to-T3 conversion impaired; IV hydrocortisone 100 mg every 8 hours (adrenal insufficiency must always be presumed); passive rewarming; IV fluids cautiously (hyponatraemia risk); mechanical ventilation if hypoventilating; treat precipitating cause; continuous cardiac monitoring",
+        "mortality": "20-60% even with aggressive treatment; mortality increases with severity of hypothermia, coma depth, and delayed presentation; best outcomes with early diagnosis and aggressive ICU management"
+      }
+    ],
+
+    "causes": {
+      "causative_mechanisms_overview": {
+        "autoimmune": "Most common cause in iodine-sufficient countries — Hashimoto's thyroiditis accounts for 70-80% of primary hypothyroidism in developed nations; anti-TPO antibodies mark autoimmune thyroid destruction",
+        "iodine_deficiency": "Most common cause globally — responsible for the majority of hypothyroidism and goitre in low-income countries; preventable with universal salt iodisation",
+        "iatrogenic": "Post-thyroidectomy and post-radioiodine therapy are predictable and common causes in clinical practice",
+        "drug_induced": "Amiodarone, lithium, and immune checkpoint inhibitors are the most clinically important drug causes; increasingly common with expanding cancer immunotherapy use",
+        "central": "Pituitary or hypothalamic disease — rare but important as TSH is not elevated; requires different diagnostic and therapeutic approach",
+        "congenital": "Thyroid agenesis or dyshormonogenesis — screened at birth in most countries"
+      },
+      "pathophysiology": {
+        "normal_thyroid_axis": "Hypothalamus secretes thyrotropin-releasing hormone (TRH) → stimulates pituitary to release TSH (thyroid-stimulating hormone) → TSH binds to receptors on thyroid follicular cells → thyroid synthesises T4 (thyroxine — major product) and T3 (triiodothyronine — active form) → T4 released into blood, converted peripherally to active T3 by deiodinase enzymes in liver, kidney, and other tissues → T3 enters cells, binds nuclear thyroid hormone receptors, regulates gene transcription → negative feedback: T3/T4 suppress TRH and TSH",
+        "thyroid_hormone_synthesis": "Iodine (from diet) is actively transported into thyroid follicular cells → organified (bound to thyroglobulin) by thyroid peroxidase (TPO) → MIT (monoiodotyrosine) and DIT (diiodotyrosine) are coupled to form T3 (MIT+DIT) and T4 (DIT+DIT) → stored as thyroglobulin colloid in follicles → released on TSH stimulation",
+        "peripheral_conversion": "Approximately 80% of circulating T3 is derived from peripheral deiodination of T4 by selenoenzyme deiodinases (selenium-dependent); only 20% directly secreted by thyroid. This is why selenium deficiency can impair thyroid function even with adequate iodine.",
+        "deficiency_consequences": "Without adequate T3: nuclear receptors are unoccupied → reduced gene transcription → slowed protein synthesis → reduced Na+/K+ ATPase activity (lower heat production) → slowed carbohydrate and lipid metabolism → reduced cardiac contractility and heart rate → impaired neuronal function and myelination → reduced gut motility → impaired growth hormone signalling"
+      },
+      "risk_factors": [
+        "Female sex — 7-10 times higher risk than men",
+        "Age over 40 years — prevalence increases steadily with age",
+        "Personal or family history of autoimmune thyroid disease or other autoimmune conditions (Type 1 diabetes, rheumatoid arthritis, Addison's disease, vitiligo, coeliac disease, pernicious anaemia)",
+        "Positive anti-TPO antibody titres — 7-10% annual progression to overt hypothyroidism",
+        "Down syndrome (Trisomy 21) — 15-20% lifetime risk of hypothyroidism",
+        "Turner syndrome — 10-30% prevalence of autoimmune thyroiditis",
+        "Previous thyroid surgery or radioiodine therapy",
+        "Current or previous treatment with amiodarone, lithium, interferon-alpha, or checkpoint inhibitors",
+        "Residing in iodine-deficient area (landlocked regions, mountainous areas, areas without salt iodisation)",
+        "Excessive iodine consumption — high seaweed/kelp intake, iodine supplements, iodinated contrast media",
+        "Previous head and neck irradiation (for lymphoma, nasopharyngeal cancer)",
+        "Pregnancy and postpartum period — risk of autoimmune thyroiditis increased",
+        "Previous postpartum thyroiditis — 50% risk of permanent hypothyroidism within 5-10 years",
+        "Obesity — associated with higher TSH levels (cause vs effect unclear)",
+        "Smoking — paradoxically appears to reduce risk of hypothyroidism (thiocyanates may have mild stimulatory effect) but increases risk of Grave's ophthalmopathy",
+        "Chronic stress — HPA axis activation suppresses thyroid function",
+        "Selenium deficiency — impairs T4-to-T3 conversion and reduces antioxidant protection of thyroid",
+        "Gut microbiome dysbiosis — emerging evidence of gut-thyroid axis; impaired iodine and selenium absorption"
+      ]
+    },
+
+    "symptoms": {
+      "overview": "Symptoms of hypothyroidism are notoriously non-specific, insidious in onset, and often overlap with depression, anaemia, chronic fatigue syndrome, and normal ageing. Many patients are diagnosed on routine blood testing rather than from specific complaints. The severity of symptoms correlates imperfectly with biochemical severity — some patients have TSH >100 mIU/L with minimal symptoms; others with TSH 10 mIU/L are significantly debilitated. Symptom onset is gradual (months to years) and patients often adapt unknowingly.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-701",
+          "name": "Fatigue and Low Energy",
+          "description": "The most common and prominent symptom — present in over 90% of patients with overt hypothyroidism. Characterised by profound, persistent tiredness not relieved by sleep; lack of energy for daily activities; reduced motivation and drive. Thyroid hormone is essential for mitochondrial energy production — deficiency reduces ATP generation in all cells. The fatigue of hypothyroidism is typically worse in the morning (unlike fibromyalgia) and improves through the day.",
+          "severity": "Mild to Severe",
+          "onset": "Insidious — develops over months to years"
+        },
+        {
+          "id": "SYM-702",
+          "name": "Weight Gain",
+          "description": "Unexplained weight gain despite no change in diet or activity — typically 3-10 kg; rarely more than 10-15 kg from hypothyroidism alone. Caused by: reduced basal metabolic rate (BMR), fluid retention (myxoedema), reduced physical activity from fatigue, and lipid accumulation. Patients with hypothyroidism rarely gain very large amounts of weight from thyroid deficiency alone — significant obesity should prompt evaluation for other causes.",
+          "severity": "Mild to Moderate",
+          "onset": "Gradual over months",
+          "note": "Weight gain is NOT the most reliable or specific symptom — most overweight individuals do NOT have hypothyroidism. However, unexplained weight gain with other features warrants TSH testing."
+        },
+        {
+          "id": "SYM-703",
+          "name": "Cold Intolerance",
+          "description": "Feeling excessively cold compared to others in the same environment — peripheral vasoconstriction and reduced thermogenesis from low thyroid hormone. Patients often need extra clothing, blankets, or heating when others are comfortable. Hypothermia (low core body temperature) is the extreme form seen in myxoedema coma.",
+          "severity": "Mild to Severe",
+          "onset": "Gradual — often noticed in comparison with others"
+        },
+        {
+          "id": "SYM-704",
+          "name": "Constipation",
+          "description": "Slowing of gastrointestinal motility from reduced thyroid-mediated stimulation of gut smooth muscle and reduced prostaglandin synthesis. Reduced transit time leads to hard, infrequent stools. Severe constipation can cause faecal impaction and rarely ileus (paralytic ileus in myxoedema coma).",
+          "severity": "Mild to Severe",
+          "onset": "Gradual — often not attributed to thyroid disease"
+        },
+        {
+          "id": "SYM-705",
+          "name": "Dry Skin and Hair Changes",
+          "description": "Reduced sebaceous and sweat gland secretion causing dry, rough, scaly skin (xerosis); skin may appear sallow or yellow-tinged (carotenaemia — impaired conversion of beta-carotene to Vitamin A). Hair becomes dry, brittle, coarse, and may fall out diffusely (telogen effluvium); outer third of eyebrows may be lost (Queen Anne's sign — lateral eyebrow loss, a classical clinical sign). Nails become brittle and grow slowly.",
+          "severity": "Mild to Moderate",
+          "onset": "Gradual over months"
+        },
+        {
+          "id": "SYM-706",
+          "name": "Bradycardia and Cardiovascular Changes",
+          "description": "Reduced heart rate (bradycardia — often <60 bpm) from reduced sympathetic sensitivity and reduced cardiac myosin ATPase activity. Reduced cardiac output and stroke volume. Diastolic hypertension is common (peripheral vasoconstriction despite low cardiac output). Pericardial effusion occurs in 25-35% of patients with overt hypothyroidism (usually small and haemodynamically insignificant). ECG changes: low voltage, prolonged QT interval, flattened/inverted T waves.",
+          "severity": "Mild to Moderate (rarely severe unless in myxoedema coma)",
+          "clinical_importance": "Dyslipidaemia is a major consequence — elevated total cholesterol, LDL-cholesterol, and triglycerides, increasing long-term cardiovascular risk"
+        },
+        {
+          "id": "SYM-707",
+          "name": "Oedema (Non-pitting / Myxoedema)",
+          "description": "Accumulation of glycosaminoglycans (hyaluronic acid and chondroitin sulphate) in skin and subcutaneous tissues — this creates a characteristic non-pitting (does not pit on sustained finger pressure, unlike cardiac or renal oedema) puffy appearance. Typically affects: face (periorbital puffiness — classic), hands, feet, and tongue (macroglossia). The term 'myxoedema' refers to this mucous (myx-) oedema — it is pathognomonic of severe untreated hypothyroidism.",
+          "severity": "Mild to Severe",
+          "onset": "Gradual — correlates with duration and severity of hypothyroidism"
+        },
+        {
+          "id": "SYM-708",
+          "name": "Neurological and Cognitive Symptoms",
+          "description": "Thyroid hormone is essential for neuronal myelination, synaptic transmission, and cerebral glucose metabolism. Deficiency causes: cognitive slowing ('brain fog'), impaired concentration and memory, psychomotor slowing, depression (hypothyroidism is a reversible cause of depression — all new depression should have TSH checked), and occasionally frank dementia (reversible with treatment). Cerebellar ataxia, peripheral neuropathy (with numbness and tingling — carpal tunnel syndrome very common), and in severe cases psychosis (myxoedema madness).",
+          "severity": "Mild to Severe"
+        },
+        {
+          "id": "SYM-709",
+          "name": "Menstrual Irregularities and Reproductive Effects",
+          "description": "Hypothyroidism disrupts the hypothalamic-pituitary-gonadal axis. In women: menorrhagia (heavy periods) is classic; anovulation and oligomenorrhoea; infertility; recurrent miscarriage; hyperprolactinaemia (elevated prolactin from elevated TRH stimulating prolactin as well as TSH) causing galactorrhoea and further menstrual disruption. In men: reduced libido, erectile dysfunction, reduced sperm count and motility. Both sexes: impaired gonadotropin release.",
+          "severity": "Mild to Severe — major cause of treatable infertility",
+          "clinical_importance": "All women with unexplained menorrhagia, infertility, or recurrent miscarriage should have TSH measured"
+        },
+        {
+          "id": "SYM-710",
+          "name": "Hoarse Voice",
+          "description": "Myxoedematous infiltration of the laryngeal mucosa and vocal cords causes characteristic low-pitched, husky, hoarse voice quality. Combined with macroglossia and pharyngeal oedema, this can also cause obstructive sleep apnoea (OSA), snoring, and nocturnal breathing problems — an underrecognised cause of OSA.",
+          "severity": "Mild to Moderate",
+          "onset": "Gradual — patients often do not notice the change themselves"
+        }
+      ],
+      "secondary_symptoms": [
+        "Muscle weakness and aches (myopathy) — proximal muscle weakness; elevated serum creatine kinase (CK); can mimic polymyositis",
+        "Delayed deep tendon reflexes ('hung-up' reflexes) — the classic neurological sign of hypothyroidism; particularly evident at the ankle jerk reflex",
+        "Carpal tunnel syndrome — bilateral numbness, tingling, and pain in hands from myxoedematous compression of median nerve in carpal tunnel; often bilateral",
+        "Goitre (thyroid gland enlargement) — present in Hashimoto's (firm, rubbery, lobulated) and iodine-deficiency hypothyroidism; not present in atrophic thyroiditis or post-surgical/radioiodine",
+        "Depression and anxiety — hypothyroidism is a highly treatable reversible cause; screen TSH in all new cases of depression",
+        "Decreased sweating (anhidrosis) — reduced sweat gland activity",
+        "Slow speech and movement — psychomotor retardation in severe cases",
+        "Hearing loss — myxoedematous infiltration of the middle ear and cochlea",
+        "Hyperprolactinaemia — from elevated TRH stimulating prolactin; causes galactorrhoea (milk production outside pregnancy) and worsens menstrual disruption",
+        "Elevated creatine kinase (CK) — from myopathy; can be markedly elevated (>1000 U/L) — may raise concern for rhabdomyolysis",
+        "Normochromic normocytic anaemia — from reduced erythropoietin stimulation; also B12/folate deficiency (associated autoimmune gastritis); iron-deficiency anaemia from menorrhagia",
+        "Sleep disturbances — hypersomnia (excessive sleeping), sleep apnoea, altered sleep architecture",
+        "Low libido in both men and women",
+        "Yellow/sallow skin tinge (carotenaemia) — impaired hepatic conversion of carotene",
+        "Disproportionate elevation of serum LDL-cholesterol and triglycerides — from reduced hepatic LDL receptor expression",
+        "Hyponatraemia (low blood sodium) — from inappropriate ADH secretion; can cause confusion",
+        "Delayed wound healing"
+      ],
+      "warning_signs_of_severe_disease": [
+        "Altered level of consciousness — confusion, stupor, or unresponsive — possible myxoedema coma — CALL EMERGENCY SERVICES",
+        "Core body temperature <35°C (hypothermia) with altered consciousness — myxoedema coma trigger — EMERGENCY",
+        "Heart rate consistently below 40-45 bpm with fatigue and swelling — severe bradycardia",
+        "Inability to breathe properly, hypoventilation, or CO2 retention — respiratory failure in myxoedema coma",
+        "Severe hyponatraemia — sodium <125 mmol/L — seizures, confusion, cerebral oedema risk",
+        "New-onset psychosis, severe depression with suicidal ideation, or dementia symptoms — possible severe neuropsychiatric hypothyroidism",
+        "Rapidly enlarging goitre with choking, stridor, or dysphagia — possible malignancy or Riedel's thyroiditis — urgent referral",
+        "Chest pain, dyspnoea, or very large pericardial effusion — haemodynamic compromise",
+        "Paralytic ileus or severe constipation with abdominal distension — possible myxoedema ileus",
+        "Myxoedema coma is most commonly precipitated by: infection (especially pneumonia), cold exposure, and sedative/opiate medications in elderly patients with undiagnosed severe hypothyroidism"
+      ],
+      "symptoms_by_system": {
+        "cardiovascular": ["Bradycardia", "Diastolic hypertension", "Pericardial effusion", "Elevated cholesterol and triglycerides", "Reduced cardiac output", "Heart failure (rare — severe cases)", "ECG: prolonged QTc, low voltage, T-wave changes"],
+        "neurological": ["Cognitive impairment and brain fog", "Depression", "Peripheral neuropathy", "Cerebellar ataxia (severe/longstanding)", "Carpal tunnel syndrome (bilateral)", "Delayed tendon reflexes", "Myxoedema madness (psychosis — rare)", "Seizures (in severe hyponatraemia or myxoedema coma)"],
+        "musculoskeletal": ["Proximal muscle weakness", "Myalgia (muscle aches)", "Elevated CK", "Arthralgia (joint pains)", "Carpal tunnel syndrome", "Calf hypertrophy (pseudohypertrophy in children — Kocher-Debre-Semelaigne syndrome)"],
+        "reproductive": ["Menorrhagia and irregular periods", "Anovulation and infertility", "Recurrent miscarriage", "Galactorrhoea (hyperprolactinaemia)", "Reduced libido", "Erectile dysfunction"],
+        "metabolic": ["Dyslipidaemia (elevated LDL, cholesterol, triglycerides)", "Weight gain", "Hyponatraemia", "Hypoglycaemia tendency", "Elevated CK and LDH"],
+        "gastrointestinal": ["Constipation", "Reduced gut motility", "Macroglossia", "Ascites (rare — severe)"],
+        "respiratory": ["Obstructive sleep apnoea", "Hoarse voice", "Pleural effusion (rare)", "Hypoventilation (myxoedema coma)"],
+        "dermatological": ["Dry, coarse skin", "Non-pitting oedema", "Hair thinning and loss", "Lateral eyebrow thinning/loss", "Brittle nails", "Carotenaemia (yellowish tinge)", "Decreased sweating"]
+      },
+      "incubation_onset_guide": {
+        "description": "Unlike infectious diseases, hypothyroidism has a very gradual onset. The rate of symptom development depends on speed of thyroid failure — acute loss (post-surgery) is faster than autoimmune progression.",
+        "guide": [
+          {"timing": "Within 4-6 weeks", "context": "Post-total thyroidectomy — hypothyroidism is expected and develops quickly"},
+          {"timing": "2-6 months post-RAI", "context": "Post-radioiodine therapy for hyperthyroidism"},
+          {"timing": "4-8 months postpartum", "context": "Postpartum thyroiditis hypothyroid phase"},
+          {"timing": "Months to years", "context": "Autoimmune Hashimoto's thyroiditis — gradual insidious progression"},
+          {"timing": "Years to decades", "context": "Iodine deficiency — slow progressive decline with goitre enlargement"},
+          {"timing": "Present from birth", "context": "Congenital hypothyroidism — signs apparent within days to weeks if not screened"}
+        ]
+      }
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Onset, duration, and progression of symptoms — fatigue, weight gain, cold intolerance, constipation, cognitive changes, menstrual irregularities, hair and skin changes",
+        "Previous thyroid disease or surgery — thyroidectomy, radioiodine therapy, previous thyroid function tests and results",
+        "Neck symptoms — goitre (swelling), pain or tenderness (subacute thyroiditis), rapid enlargement (red flag for malignancy)",
+        "Medication history — amiodarone, lithium, immunotherapy agents, anti-thyroid drugs, interferon, tyrosine kinase inhibitors, iodinated contrast, excess iodine supplements",
+        "Family history — autoimmune thyroid disease, autoimmune conditions (Type 1 diabetes, pernicious anaemia, Addison's, rheumatoid arthritis, vitiligo, coeliac disease)",
+        "Personal autoimmune history — Type 1 diabetes, coeliac disease, Addison's disease, pernicious anaemia, rheumatoid arthritis",
+        "Reproductive history — recurrent miscarriage, infertility, menorrhagia, postpartum illness",
+        "Geographic history — residence in iodine-deficient region; recent iodine contrast exposure",
+        "Dietary history — iodine intake (dairy, seafood, iodised salt); selenium intake; excessive goitrogen consumption; vegan diet (lower iodine)",
+        "Pregnancy status or plans — critical for TSH target and levothyroxine dosing decisions",
+        "Sleep quality and snoring — sleep apnoea assessment",
+        "Mental health history — depression, anxiety (hypothyroidism as reversible cause)",
+        "Down syndrome or Turner syndrome — higher risk of autoimmune thyroiditis",
+        "Recent viral illness (subacute/De Quervain's thyroiditis), neck pain and tenderness",
+        "Symptoms of other pituitary hormone deficiencies (secondary hypothyroidism): galactorrhoea, amenorrhoea, short stature, headache, visual field changes"
+      ],
+      "physical_examination": [
+        "Vital signs: heart rate (bradycardia <60 bpm), blood pressure (diastolic hypertension), temperature (hypothermia in severe disease), weight and BMI (compare with previous if available)",
+        "Thyroid examination: INSPECT neck for goitre (observe while swallowing — thyroid moves with swallowing); PALPATE gland — size (enlarged vs atrophic vs normal), consistency (firm/rubbery = Hashimoto's; hard = malignancy/Riedel's; tender = subacute thyroiditis), nodularity (smooth vs multinodular); AUSCULTATE for bruit (Grave's hyperthyroidism — not hypothyroidism)",
+        "Skin: dryness, coarse texture, sallow/yellowish tinge (carotenaemia), loss of outer eyebrow (Queen Anne's sign), non-pitting periorbital and peripheral oedema",
+        "Hair: dry, brittle quality; diffuse hair thinning on scalp; lateral eyebrow thinning or loss",
+        "Nails: brittle, slow-growing nails",
+        "Neurological examination: deep tendon reflexes — DELAYED RELAXATION PHASE of ankle jerk (pathognomonic hung-up reflex); cognitive testing (MMSE or MoCA for cognitive impairment); gait and coordination for cerebellar signs; assessment of carpal tunnel — Tinel's and Phalen's signs",
+        "Cardiovascular examination: bradycardia; heart sounds (muffled = pericardial effusion); elevated diastolic blood pressure",
+        "Respiratory examination: reduced breath sounds at bases (pleural effusion in severe cases)",
+        "Eyes: periorbital puffiness; proptosis is NOT present (unlike Grave's ophthalmopathy in hyperthyroidism)",
+        "Tongue: macroglossia (enlarged tongue — may indent on teeth)",
+        "Voice quality: hoarseness, low pitch, husky quality",
+        "Weight and height: calculate BMI; compare with previous measurements if available"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Serum TSH (Thyroid-Stimulating Hormone)",
+          "type": "Blood — Biochemical / Hormonal",
+          "description": "The single most important and sensitive test for thyroid dysfunction. TSH is produced by the pituitary gland — it reflects the pituitary's assessment of circulating T4/T3 levels over the preceding weeks. In primary hypothyroidism, low T4 triggers a compensatory increase in TSH — a small fall in Free T4 causes a disproportionately large rise in TSH (logarithmic inverse relationship). TSH is the first-line screening test for all forms of suspected thyroid disease except suspected pituitary/hypothalamic disease.",
+          "purpose": "Screen for and confirm hypothyroidism; monitor adequacy of levothyroxine therapy",
+          "key_metric": "Normal range: 0.4-4.5 mIU/L (varies slightly by laboratory and trimester in pregnancy); Subclinical hypothyroidism: TSH 4.5-10 mIU/L with normal Free T4; Overt hypothyroidism: TSH >10 mIU/L with low Free T4; In pregnancy: TSH target <2.5 mIU/L (first trimester); Monitoring on levothyroxine: target TSH 0.5-2.5 mIU/L",
+          "limitations": "TSH is NOT elevated in central (pituitary or hypothalamic) hypothyroidism — if suspected, check Free T4 directly; TSH fluctuates slightly with time of day, illness, and recent iodine exposure — retest if borderline; biotin supplements falsely lower TSH (stop biotin 48h before testing)",
+          "monitoring_frequency": "4-8 weeks after starting or changing levothyroxine dose; annually once stable on correct dose; every 4-6 weeks during pregnancy"
+        },
+        {
+          "test_name": "Free T4 (Free Thyroxine)",
+          "type": "Blood — Biochemical / Hormonal",
+          "description": "Measures the unbound (biologically active) fraction of T4 in serum. Free T4 is the direct measure of thyroid hormone output and reflects actual hormone availability to tissues. In overt primary hypothyroidism, Free T4 is below the reference range. Essential for: confirming overt hypothyroidism (low Free T4 + elevated TSH), diagnosing central hypothyroidism (low Free T4 + low/normal TSH), and monitoring patients with central hypothyroidism (where TSH is unreliable).",
+          "purpose": "Confirm overt hypothyroidism; diagnose central hypothyroidism; guide dosing in pregnancy and central hypothyroidism",
+          "key_metric": "Normal Free T4: typically 10-25 pmol/L (laboratory specific); Low Free T4 with elevated TSH = primary hypothyroidism; Low Free T4 with low/normal TSH = central hypothyroidism"
+        },
+        {
+          "test_name": "Free T3 (Free Triiodothyronine)",
+          "type": "Blood — Biochemical / Hormonal",
+          "description": "Measures the active form of thyroid hormone. T3 is 3-4 times more potent than T4 and is the form that actually binds to nuclear thyroid receptors. Most T3 is derived from peripheral conversion of T4. Free T3 is not routinely measured in primary hypothyroidism diagnosis (TSH and Free T4 sufficient) but is useful in: detecting T3 thyrotoxicosis (hyperthyroidism), monitoring combination T4+T3 therapy, assessing adequacy of T4-to-T3 conversion in patients with residual symptoms on levothyroxine.",
+          "purpose": "Suspected combination T3/T4 therapy monitoring; suspected T3-predominant hyperthyroidism; evaluating persistent symptoms despite normal TSH/Free T4",
+          "key_metric": "Normal Free T3: typically 3.5-7.8 pmol/L"
+        },
+        {
+          "test_name": "Anti-Thyroid Peroxidase Antibodies (Anti-TPO Ab / Anti-Microsomal Ab)",
+          "type": "Blood — Immunological",
+          "description": "Autoantibodies directed against thyroid peroxidase — the enzyme responsible for iodine organification and thyroid hormone synthesis. Anti-TPO antibodies are present in over 90% of patients with Hashimoto's thyroiditis and in 70-80% of patients with Grave's disease. They are the single best test for confirming autoimmune thyroid aetiology and predicting future thyroid failure in subclinical hypothyroidism.",
+          "purpose": "Confirm autoimmune aetiology (Hashimoto's); identify subclinical hypothyroidism patients at highest risk of progression; assess risk in pregnancy (anti-TPO positive in pregnancy increases risk of postpartum thyroiditis and miscarriage)",
+          "key_metric": "Positive: >34 IU/mL (laboratory specific); Strongly positive: >600 IU/mL — high risk of progression; Anti-TPO positive + TSH 4.5-10 = 7-10% annual risk of overt hypothyroidism",
+          "note": "Anti-TPO does not need routine rechecking once confirmed positive — titre does not guide management changes"
+        },
+        {
+          "test_name": "Anti-Thyroglobulin Antibodies (Anti-Tg Ab)",
+          "type": "Blood — Immunological",
+          "description": "Autoantibodies directed against thyroglobulin — the protein matrix in which thyroid hormones are stored. Present in 60-80% of Hashimoto's thyroiditis and up to 20-30% of normal population at low titres. Less specific than anti-TPO for Hashimoto's diagnosis. Primarily used in thyroid cancer follow-up — anti-Tg antibodies can interfere with thyroglobulin assay (used to detect cancer recurrence) and must be checked simultaneously.",
+          "purpose": "Support Hashimoto's diagnosis when anti-TPO negative; thyroid cancer follow-up (interference assessment)",
+          "key_metric": "Positive: >115 IU/mL (laboratory specific)"
+        },
+        {
+          "test_name": "Thyroid Ultrasound",
+          "type": "Imaging",
+          "description": "The first-line imaging modality for the thyroid gland. Provides detailed information on gland size, echogenicity, vascularity, and presence of nodules. In Hashimoto's thyroiditis: heterogeneous, hypoechoic (dark) parenchyma with irregular echotexture and reduced/normal vascularity — these appearances are highly characteristic. Also assesses for nodules (which may need fine-needle aspiration cytology — FNAC), goitre size, and vascular pattern.",
+          "purpose": "Confirm Hashimoto's appearance; characterise goitre; evaluate thyroid nodules; guide FNAC if nodule present; assess gland for Riedel's thyroiditis or infiltrative disease",
+          "key_metric": "Heterogeneous hypoechoic parenchyma + reduced vascularity = highly characteristic of Hashimoto's; Nodule features requiring FNAC: >1 cm solid hypoechoic with microcalcifications, irregular margins, taller-than-wide shape (TI-RADS 4-5)"
+        },
+        {
+          "test_name": "Lipid Profile (Fasting Cholesterol, LDL, HDL, Triglycerides)",
+          "type": "Blood — Biochemical",
+          "description": "Hypothyroidism causes secondary dyslipidaemia — reduced expression of hepatic LDL receptors decreases LDL clearance; impaired lipoprotein lipase activity elevates triglycerides. The lipid profile improves significantly (LDL can fall 15-25%) with levothyroxine replacement — often obviating the need for statin therapy. All patients newly diagnosed with dyslipidaemia should have TSH checked to exclude hypothyroidism as a secondary cause before initiating statin therapy.",
+          "purpose": "Baseline cardiovascular risk assessment; assess secondary dyslipidaemia from hypothyroidism; monitor improvement with treatment",
+          "key_metric": "LDL elevation and elevated total cholesterol are most characteristic; triglycerides moderately elevated; HDL often low"
+        },
+        {
+          "test_name": "Full Blood Count (FBC) / Complete Blood Count",
+          "type": "Blood — Haematological",
+          "description": "Hypothyroidism commonly causes anaemia — usually normochromic normocytic (from reduced erythropoietin and slowed erythropoiesis), but also macrocytic if associated B12 deficiency/pernicious anaemia, or microcytic if iron-deficiency anaemia from menorrhagia. Anaemia may contribute significantly to fatigue.",
+          "purpose": "Detect hypothyroidism-related anaemia; identify macrocytic anaemia (B12 deficiency — associated autoimmune gastritis); identify iron-deficiency anaemia from menorrhagia",
+          "key_metric": "Hb <120 g/L in women, <130 g/L in men is significant; MCV elevated (macrocytic) = suspect B12/folate deficiency; MCV low (microcytic) = iron deficiency"
+        },
+        {
+          "test_name": "Serum Electrolytes, Renal Function, Glucose (U&E, Creatinine, Glucose)",
+          "type": "Blood — Biochemical",
+          "description": "Hypothyroidism can cause hyponatraemia (low sodium — from SIADH or decreased renal free water excretion); mild elevation of creatinine (reduced GFR — reversible with treatment); hypoglycaemia tendency (reduced hepatic gluconeogenesis — particularly relevant with concurrent adrenal insufficiency).",
+          "purpose": "Detect hyponatraemia (which can cause confusion in severe disease); assess renal function; exclude concurrent adrenal insufficiency in secondary hypothyroidism",
+          "key_metric": "Sodium <135 mmol/L = hyponatraemia; may be symptomatic below 128 mmol/L; Creatinine elevation reverses with levothyroxine treatment"
+        },
+        {
+          "test_name": "Serum Creatine Kinase (CK)",
+          "type": "Blood — Biochemical",
+          "description": "Significantly elevated CK (creatine kinase) is a characteristic finding in severe hypothyroidism, reflecting myopathic muscle damage. Can be markedly elevated (5-100 times normal). Important to recognise as a hypothyroid sign — CK elevation with myalgia in the absence of statin use or exercise should prompt TSH testing.",
+          "purpose": "Detect hypothyroid myopathy; identify pseudomyopathy (hypothyroidism mimicking myositis or statin myopathy)",
+          "key_metric": "CK >200 U/L with myalgia and no other cause — screen for hypothyroidism; in severe hypothyroidism CK can exceed 10,000 U/L"
+        },
+        {
+          "test_name": "Liver Function Tests (LFTs)",
+          "type": "Blood — Biochemical",
+          "description": "Mild transaminase elevation (AST, ALT) and elevated LDH may occur in hypothyroidism from hepatic metabolic slowing and muscle CK elevation cross-reacting with LDH. LFTs improve with levothyroxine treatment.",
+          "purpose": "Baseline assessment; monitor liver enzymes (relevant if adding T3 therapy); elevated transaminases from hypothyroid hepatopathy"
+        },
+        {
+          "test_name": "Serum Prolactin",
+          "type": "Blood — Hormonal",
+          "description": "Elevated TRH (from hypothyroidism) stimulates pituitary prolactin secretion in addition to TSH — causing hyperprolactinaemia. This is a secondary (not primary) cause of hyperprolactinaemia that resolves with levothyroxine treatment. Important: before investigating for pituitary prolactinoma, always check and treat hypothyroidism first — TSH normalisation resolves the elevated prolactin and may avoid unnecessary pituitary MRI.",
+          "purpose": "Assess cause of galactorrhoea, menstrual disturbance, and hyperprolactinaemia; distinguish secondary (hypothyroid-driven) from pituitary prolactinoma",
+          "key_metric": "Prolactin >25 mcg/L (women), >20 mcg/L (men) = elevated; Prolactin >100 mcg/L = investigate for pituitary cause even if hypothyroidism present"
+        },
+        {
+          "test_name": "Morning Cortisol / Short Synacthen Test (Adrenal Function)",
+          "type": "Blood — Endocrine",
+          "description": "CRITICAL when central (secondary/tertiary) hypothyroidism is suspected, or in patients with severe hypothyroidism treated with levothyroxine who remain unwell. Adrenal insufficiency (ACTH deficiency) must be excluded or treated BEFORE starting levothyroxine — initiating thyroid hormone without adequate cortisol replacement can precipitate acute adrenal crisis (Addisonian crisis) by increasing cortisol clearance.",
+          "purpose": "Exclude adrenal insufficiency before levothyroxine initiation in suspected central hypothyroidism; assess in myxoedema coma management",
+          "key_metric": "Morning cortisol <100 nmol/L strongly suggests adrenal insufficiency; cortisol >500 nmol/L makes adrenal insufficiency unlikely; Short Synacthen Test (250 mcg IV ACTH) — cortisol peak <500 nmol/L = adrenal insufficiency",
+          "note": "In myxoedema coma: ALWAYS give IV hydrocortisone empirically before or with levothyroxine to cover potential adrenal insufficiency"
+        },
+        {
+          "test_name": "Thyroid Scan (Radionuclide Scintigraphy — Tc-99m or I-123)",
+          "type": "Imaging / Nuclear Medicine",
+          "description": "A nuclear medicine scan that images the thyroid gland's uptake and distribution of radioactive tracer, reflecting functional thyroid tissue. Less commonly used in hypothyroidism diagnosis (ultrasound is preferred) but useful in: (1) identifying ectopic thyroid tissue (lingual thyroid in congenital hypothyroidism); (2) distinguishing Hashimoto's thyroiditis from Grave's disease in the initial hyperthyroid phase; (3) assessing residual thyroid tissue after thyroidectomy or RAI; (4) evaluating 'cold' nodules (low uptake) at higher risk of malignancy.",
+          "purpose": "Congenital hypothyroidism — locate thyroid tissue; postpartum thyroiditis vs Grave's distinction; nodule evaluation",
+          "key_metric": "Hashimoto's/subacute thyroiditis: LOW/patchy uptake; Grave's disease: HIGH diffuse uptake"
+        },
+        {
+          "test_name": "MRI Pituitary / Sella (Brain MRI)",
+          "type": "Imaging",
+          "description": "Indicated when central hypothyroidism (pituitary or hypothalamic cause) is suspected — low or inappropriately normal TSH with low Free T4. Pituitary MRI identifies: pituitary adenoma, empty sella syndrome, pituitary apoplexy (haemorrhage), craniopharyngioma, hypothalamic lesions, and signs of Sheehan's syndrome.",
+          "purpose": "Diagnose pituitary or hypothalamic pathology causing central hypothyroidism; visual field assessment for suprasellar lesions pressing on optic chiasm",
+          "indication": "Any patient with low TSH and low Free T4 (central hypothyroidism); deficiency of multiple pituitary hormones; history of pituitary surgery/radiotherapy"
+        },
+        {
+          "test_name": "Coeliac Disease Serology (Anti-tTG IgA and Total IgA)",
+          "type": "Blood — Immunological",
+          "description": "Coeliac disease is strongly associated with Hashimoto's autoimmune thyroiditis (shared HLA haplotypes and autoimmune mechanisms). Untreated coeliac disease causes malabsorption of levothyroxine (and selenium and iodine) — making thyroid control more difficult. All patients with Hashimoto's should be screened for coeliac disease, especially if TSH is difficult to control.",
+          "purpose": "Screen for coeliac disease in Hashimoto's patients — associated autoimmune condition; impaired levothyroxine absorption if untreated coeliac",
+          "key_metric": "Anti-tTG IgA >10 times upper limit = strongly positive; confirm with duodenal biopsy (Marsh grade)"
+        },
+        {
+          "test_name": "Fine Needle Aspiration Cytology (FNAC) of Thyroid Nodule",
+          "type": "Cytology",
+          "description": "Ultrasound-guided fine needle aspiration of a thyroid nodule for cytological analysis. NOT routinely performed for hypothyroidism diagnosis — specifically for evaluation of thyroid nodules identified on ultrasound or palpation to determine if malignant. Thyroid cancer can coexist with Hashimoto's thyroiditis.",
+          "purpose": "Assess malignancy in thyroid nodule >1 cm with high-risk ultrasound features; distinguish benign from malignant nodule",
+          "key_metric": "Bethesda classification: Category I (non-diagnostic) to Category VI (malignant); Category V-VI requires surgical referral",
+          "indication": "Nodule >1 cm with high-risk ultrasound features (hypoechoic, microcalcifications, irregular margins, lymphadenopathy)"
+        },
+        {
+          "test_name": "Neonatal Thyroid Screening (Heel-Prick / Guthrie Test)",
+          "type": "Blood — Neonatal Screening",
+          "description": "Universal newborn screening performed at 5-7 days of life using a small drop of blood from the baby's heel, dried on filter paper. Measures TSH (and Free T4 in some programmes). TSH >40 mIU/L triggers urgent recall, confirmatory blood test, and emergency levothyroxine initiation — before symptoms appear.",
+          "purpose": "Universal screening for congenital hypothyroidism in neonates — to prevent irreversible intellectual disability",
+          "key_metric": "Screening TSH >20 mIU/L requires urgent follow-up; serum TSH >10 mIU/L on confirmation with low T4 = congenital hypothyroidism; treatment must start within first 2 weeks of life for optimal neurodevelopmental outcome"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "The cornerstone of hypothyroidism treatment is thyroid hormone replacement therapy — most commonly synthetic levothyroxine (T4). Treatment is lifelong in most cases (unless transient cause). The goal is to restore TSH to the normal reference range (0.5-2.5 mIU/L for most patients) and resolve all symptoms. Dose titration requires patience — TSH takes 4-8 weeks to reflect a dose change. All thyroid medications must be managed under physician supervision with regular monitoring. Never adjust dose without blood test guidance.",
+      "treatment_principles": [
+        "1. Levothyroxine (synthetic T4) is the first-line and standard treatment for all forms of hypothyroidism — endorsed by all major endocrine societies",
+        "2. Take levothyroxine on an empty stomach — 30-60 minutes before food (or alternatively at bedtime, at least 3-4 hours after last meal) — food reduces absorption by up to 40%",
+        "3. TSH should be checked 4-8 weeks after any dose change — not before, as TSH takes this long to reach a new steady state",
+        "4. Treatment targets: TSH 0.5-2.5 mIU/L for most patients; TSH <2.5 mIU/L in pregnancy; TSH 0.1-1.0 mIU/L for thyroid cancer patients on suppressive therapy; TSH 1-4 mIU/L for elderly over 70 (avoid over-treatment)",
+        "5. Dose requirements increase in pregnancy — many women need 25-30% dose increase from the very first day of confirmed pregnancy",
+        "6. ALWAYS treat adrenal insufficiency BEFORE starting levothyroxine in central hypothyroidism — to prevent precipitating adrenal crisis",
+        "7. Never stop levothyroxine abruptly — hypothyroidism will return; if a dose is missed, take it as soon as remembered",
+        "8. Consistent brand/formulation of levothyroxine is important — switching brands can cause TSH fluctuation due to bioavailability differences; stick to one brand"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-101",
+          "category_name": "Thyroid Hormone Replacement — First-Line Treatment",
+          "purpose": "Replace the deficient thyroid hormones to restore normal metabolic function, resolve symptoms, and normalise TSH. Levothyroxine (T4) is the standard of care and first-line treatment globally.",
+          "medicines": [
+            {
+              "name": "Levothyroxine Sodium (Synthetic T4 — L-Thyroxine)",
+              "brand_examples": ["Thyronorm", "Eltroxin", "Synthroid", "Euthyrox", "Oroxine", "Levoxyl", "Tirosint (liquid gel capsule — better absorption)"],
+              "form": "Tablet (12.5 mcg, 25 mcg, 50 mcg, 75 mcg, 88 mcg, 100 mcg, 112 mcg, 125 mcg, 150 mcg, 175 mcg, 200 mcg); IV injection; Oral solution",
+              "dosage": {
+                "standard_starting_dose": "Full replacement dose: 1.6 mcg/kg/day (e.g., 70 kg adult = ~112 mcg/day); start at full dose in young, healthy patients with no cardiac risk",
+                "elderly_over_60_or_cardiac_history": "Start at 12.5-25 mcg/day; increase by 12.5-25 mcg every 4-6 weeks; slow titration avoids precipitating angina or arrhythmia",
+                "subclinical_hypothyroidism": "Start at 25-50 mcg/day and titrate",
+                "post_total_thyroidectomy": "1.6-2.2 mcg/kg/day (higher in younger patients and cancer patients requiring TSH suppression)",
+                "pregnancy": "Increase current dose by 25-30% immediately on confirmed pregnancy; many women need 2 extra doses per week",
+                "children_congenital_hypothyroidism": "Neonate: 10-15 mcg/kg/day; 3-12 months: 8-10 mcg/kg/day; 1-5 years: 5-6 mcg/kg/day; 6-12 years: 4-5 mcg/kg/day; reduce toward adult dose during adolescence",
+                "dose_adjustment": "Adjust by 12.5-25 mcg increments based on TSH level; recheck TSH 4-8 weeks after every change"
+              },
+              "administration": "Take on completely empty stomach — 30-60 minutes before breakfast; or at bedtime at least 4 hours after last meal; take with water only (not milk, coffee, or juice); coffee and espresso significantly reduce absorption — take dose first, wait 60 min, then have coffee",
+              "mechanism": "Synthetic identical to endogenous T4; converted peripherally to active T3 by selenodeiodinase enzymes in liver, kidney, and other tissues; T3 binds nuclear thyroid hormone receptors regulating gene transcription and metabolic rate",
+              "monitoring": "TSH at 4-8 weeks after dose change; annually when stable; every 4-6 weeks throughout pregnancy; Free T4 if central hypothyroidism or ambiguous TSH",
+              "drug_interactions": [
+                {
+                  "drug": "Calcium carbonate, calcium-fortified foods",
+                  "effect": "Binds levothyroxine in gut — reduces absorption by 20-40%",
+                  "management": "Separate by at least 4 hours"
+                },
+                {
+                  "drug": "Ferrous sulphate (iron supplements)",
+                  "effect": "Chelates levothyroxine — significantly reduces absorption",
+                  "management": "Separate by at least 4 hours; critical in pregnancy where both iron and levothyroxine are commonly prescribed"
+                },
+                {
+                  "drug": "Proton pump inhibitors (omeprazole, lansoprazole, pantoprazole)",
+                  "effect": "Reduced gastric acid impairs levothyroxine dissolution and absorption",
+                  "management": "Take levothyroxine 30-60 min before PPI; consider dose increase if TSH rises after PPI initiation"
+                },
+                {
+                  "drug": "Cholestyramine, colestipol (bile acid resins)",
+                  "effect": "Binds levothyroxine in gut — severely reduces absorption",
+                  "management": "Separate by minimum 4-6 hours"
+                },
+                {
+                  "drug": "Antacids (aluminium/magnesium hydroxide)",
+                  "effect": "Reduce levothyroxine absorption",
+                  "management": "Separate by 4 hours"
+                },
+                {
+                  "drug": "Soy products (soy milk, tofu, soy protein)",
+                  "effect": "Soy isoflavones inhibit absorption — particularly relevant in infants on soy formula",
+                  "management": "Separate by 4 hours; note in infants on soy formula — may need higher levothyroxine dose"
+                },
+                {
+                  "drug": "Sucralfate, raloxifene, orlistat",
+                  "effect": "Reduce levothyroxine absorption",
+                  "management": "Separate by 4 hours; monitor TSH"
+                },
+                {
+                  "drug": "Rifampicin, phenytoin, carbamazepine, barbiturates",
+                  "effect": "Hepatic enzyme inducers — increase T4 and T3 clearance; may significantly increase levothyroxine requirement",
+                  "management": "Monitor TSH closely if starting, stopping, or changing doses of these enzyme inducers; may need dose increase of up to 25-50%"
+                },
+                {
+                  "drug": "Warfarin",
+                  "effect": "Levothyroxine increases warfarin effect (catabolism of clotting factors) — dose of warfarin may need reduction",
+                  "management": "Monitor INR closely when initiating levothyroxine or changing doses"
+                },
+                {
+                  "drug": "Amiodarone",
+                  "effect": "Blocks T4-to-T3 conversion; inhibits thyroid hormone entry into cells; TSH may rise even on correct levothyroxine dose",
+                  "management": "TSH monitoring every 6 months on amiodarone; dose of levothyroxine may need increase"
+                },
+                {
+                  "drug": "Biotin (Vitamin B7) supplements",
+                  "effect": "High-dose biotin (used for hair/nail growth) interferes with immunoassays — causes FALSELY LOW TSH and FALSELY HIGH T4/T3 on standard laboratory tests",
+                  "management": "Stop biotin for at least 48-72 hours before any thyroid function blood tests — this is an important and commonly missed source of spurious results"
+                }
+              ],
+              "side_effects": [
+                "Side effects are rare at correct therapeutic doses — symptoms are signs of OVER-TREATMENT (iatrogenic thyrotoxicosis)",
+                "Over-treatment signs: palpitations, tremor, anxiety, sweating, diarrhoea, insomnia, weight loss, heat intolerance, tachycardia, atrial fibrillation (particularly dangerous in elderly), osteoporosis (long-term subclinical hyperthyroidism from suppressive doses)",
+                "Under-treatment signs: persistence or return of hypothyroid symptoms",
+                "Rare true allergic reactions to fillers/dye in specific tablet formulations — switch to different brand or formulation"
+              ],
+              "special_groups": {
+                "pregnancy": "Most critical period — maternal T4 is the only source of fetal thyroid hormone in first trimester (fetal thyroid not functional until weeks 10-12); inadequate replacement risks miscarriage, preeclampsia, preterm birth, and irreversible fetal neurodevelopmental impairment; TSH target <2.5 mIU/L first trimester, <3.0 mIU/L second/third trimester; increase dose by 25-30% immediately on confirmed pregnancy",
+                "elderly": "Start at 12.5-25 mcg; titrate slowly to avoid angina and AF; acceptable TSH target in >75 years may be 1-7 mIU/L (looser target to avoid over-treatment); TSH over 6-7 mIU/L in >80 years: benefit of treatment is less certain",
+                "cardiac_patients": "Start at 12.5 mcg/day; increase by 12.5 mcg every 4-8 weeks; hypothyroidism treatment may unmask angina as cardiac demand increases with metabolic rate; monitor cardiac symptoms closely",
+                "thyroid_cancer": "Suppressive therapy: TSH target 0.1-0.5 mIU/L (low-intermediate risk) or <0.1 mIU/L (high risk disease) to suppress TSH-driven cancer growth; balance against osteoporosis and AF risks of over-treatment"
+              }
+            },
+            {
+              "name": "Liothyronine Sodium (Synthetic T3 — L-Triiodothyronine)",
+              "brand_examples": ["Cytomel", "Tertroxin", "Liothyronine"],
+              "form": "Tablet (5 mcg, 25 mcg, 50 mcg); IV injection (for myxoedema coma)",
+              "dosage": "Oral (as adjunct): 5-25 mcg/day in divided doses (2-3 times daily due to short half-life); IV myxoedema coma: 5-20 mcg bolus IV, then 2.5-10 mcg every 8 hours",
+              "use_case": "1. IV treatment of myxoedema coma (where T4-to-T3 conversion may be severely impaired); 2. Add-on therapy in patients with persistent symptoms despite optimal TSH on levothyroxine alone — combination T4+T3 therapy; 3. Short-term use before thyroid cancer radioiodine scanning (avoids prolonged levothyroxine withdrawal hypothyroidism)",
+              "mechanism": "Directly provides active T3 — does not require conversion from T4; binds nuclear thyroid hormone receptors directly; rapid onset (hours) and short duration of action (half-life ~8 hours vs ~7 days for T4)",
+              "side_effects": ["Palpitations and tachycardia — more pronounced than with levothyroxine due to direct rapid action", "Anxiety, tremor, sweating if overdosed", "Risk of cardiac arrhythmia — use very cautiously in elderly and cardiac patients", "Short half-life requires multiple daily dosing — less convenient than once-daily levothyroxine"],
+              "note": "T3 is NOT recommended as monotherapy for routine hypothyroidism by major endocrine guidelines (BTA, ATA, ETA) — levothyroxine is standard; however, combination T3+T4 therapy may benefit a subset of patients with persistent symptoms on levothyroxine alone; must be supervised by endocrinologist"
+            },
+            {
+              "name": "Desiccated Thyroid Extract (DTE — Natural Thyroid Hormones)",
+              "brand_examples": ["Armour Thyroid", "Nature-Throid", "NP Thyroid", "WP Thyroid"],
+              "form": "Tablet — standardised extract of porcine (pig) thyroid gland",
+              "composition": "Contains both T4 and T3 in fixed 4:1 ratio (by weight); also contains T2, T1, calcitonin, and thyroglobulin",
+              "dosage": "Starting dose: 30 mg (equivalent to ~50 mcg levothyroxine); titrate based on clinical response and TSH",
+              "use_case": "Some patients with residual symptoms on levothyroxine monotherapy who prefer combined T3+T4; historically first thyroid treatment (1890s) before synthetic hormones developed",
+              "mechanism": "Provides both T4 and T3 simultaneously; the fixed T4:T3 ratio (4:1 by weight) provides relatively MORE T3 than human thyroid secretion (actual human ratio ~14:1 T4:T3)",
+              "controversy": "Not recommended as first-line by most endocrine guidelines (inconsistent batch-to-batch potency, porcine source, religious concerns, higher T3 content risks cardiac side effects); some patients report subjective preference; evidence for superiority over levothyroxine in RCTs is limited",
+              "side_effects": ["Higher T3 content increases risk of T3-mediated cardiac effects", "Batch variability may cause inconsistent TSH control"],
+              "note": "Discuss with endocrinologist; not routinely recommended but may be considered in select patients with persistent symptoms on optimised levothyroxine after excluding other causes"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-102",
+          "category_name": "Myxoedema Coma — Emergency Treatment",
+          "purpose": "Intensive life-saving treatment for myxoedema coma — the most severe presentation of hypothyroidism with mortality up to 60%. Must be managed in ICU.",
+          "medicines": [
+            {
+              "name": "Intravenous Levothyroxine (IV T4)",
+              "brand_examples": ["Synthroid IV", "Levothyroxine sodium for injection"],
+              "form": "IV injection",
+              "dosage": "Loading dose: 200-400 mcg IV bolus (higher dose for younger patients and more severe coma); maintenance: 50-100 mcg IV daily until oral route feasible; transition to oral when patient is conscious and tolerating oral medications",
+              "mechanism": "IV route bypasses gut absorption impairment; restores circulating T4 levels; provides substrate for T3 conversion",
+              "note": "Always give IV hydrocortisone concurrently or before T4 to prevent adrenal crisis"
+            },
+            {
+              "name": "Intravenous Liothyronine (IV T3) — Alternative or Addition",
+              "brand_examples": ["Liothyronine sodium IV"],
+              "form": "IV injection",
+              "dosage": "5-20 mcg IV initial dose; 2.5-10 mcg IV every 8 hours; reduce dose in elderly and patients with ischaemic heart disease (risk of angina and arrhythmia)",
+              "mechanism": "Directly provides active T3 without requiring T4-to-T3 conversion — beneficial as deiodinase activity may be severely impaired in critical illness",
+              "note": "Some protocols use T4 alone, others T3 alone, and others a combination; T3 has faster onset but higher cardiac risk; consult endocrinology"
+            },
+            {
+              "name": "Intravenous Hydrocortisone",
+              "brand_examples": ["Solu-Cortef", "Hydrocortisone sodium succinate"],
+              "form": "IV injection",
+              "dosage": "100 mg IV every 8 hours (stress dosing) until adrenal function confirmed adequate; taper and stop when adrenal insufficiency excluded by cortisol testing",
+              "use_case": "MANDATORY in myxoedema coma — adrenal insufficiency frequently co-exists (especially if central hypothyroidism or hypopituitarism); levothyroxine increases cortisol clearance — can precipitate life-threatening adrenal crisis if cortisol not supplemented",
+              "mechanism": "Replaces cortisol during critical illness; prevents adrenal crisis on initiation of thyroid hormone replacement"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-103",
+          "category_name": "Symptomatic and Supportive Treatments",
+          "purpose": "Manage specific symptoms and complications of hypothyroidism while awaiting thyroid hormone replacement to take full effect (typically 6-12 weeks for full symptom resolution).",
+          "medicines": [
+            {
+              "name": "Statins (for secondary dyslipidaemia)",
+              "brand_examples": ["Atorvastatin (Lipitor, Storvas)", "Rosuvastatin (Crestor)"],
+              "dosage": "Atorvastatin 10-40 mg once daily; Rosuvastatin 5-20 mg once daily",
+              "use_case": "Hypothyroid-related dyslipidaemia — if dyslipidaemia persists after 3-6 months of optimal levothyroxine replacement (TSH normalised) and lipids remain elevated; IMPORTANT: always recheck lipids after 3-6 months of thyroid treatment before prescribing statin — levothyroxine alone reduces LDL by 10-25% in hypothyroid patients",
+              "note": "Statins cause myopathy — particularly problematic in hypothyroidism which already causes myopathy and elevated CK; ensure thyroid is optimally treated before attributing myalgia to statin; elevated CK in untreated hypothyroid patient on statin does NOT necessarily indicate statin myopathy"
+            },
+            {
+              "name": "Laxatives (for constipation)",
+              "brand_examples": ["Macrogol/PEG (Movicol, Laxido)", "Lactulose", "Bisacodyl", "Ispaghula (Fybogel)"],
+              "dosage": "Macrogol: 1-2 sachets daily in water",
+              "use_case": "Symptomatic constipation while awaiting thyroid hormone effect; typically resolves completely with adequate levothyroxine replacement within weeks",
+              "note": "Bulk-forming laxatives (ispaghula) can REDUCE levothyroxine absorption if taken concurrently — separate by at least 4 hours"
+            },
+            {
+              "name": "Antidepressants (for depression — short-term while awaiting thyroid treatment effect)",
+              "note": "Hypothyroidism is a reversible cause of depression — all new depression must have TSH measured. Antidepressants should be used cautiously in hypothyroidism until TSH normalised on levothyroxine, as depression may resolve completely with thyroid treatment alone. If antidepressants are prescribed, SSRIs are safest. Do not start antidepressants without confirming thyroid function is normal or optimally treated."
+            },
+            {
+              "name": "Vitamin D and Calcium Supplementation",
+              "brand_examples": ["Cholecalciferol (Vitamin D3) + Calcium carbonate"],
+              "dosage": "Vitamin D3: 1000-2000 IU daily (or 60,000 IU weekly for deficiency); Calcium: 500-1000 mg daily",
+              "use_case": "Vitamin D deficiency is very common in Hashimoto's autoimmune thyroiditis and may be an associated feature; calcium supplementation if dietary intake is low (but SEPARATE from levothyroxine by minimum 4 hours)",
+              "note": "NEVER take calcium supplement within 4 hours of levothyroxine — calcium chelates levothyroxine reducing absorption"
+            },
+            {
+              "name": "Iron Supplementation (for iron-deficiency anaemia from menorrhagia)",
+              "brand_examples": ["Ferrous sulphate (Fersolate, Ironorm)", "Ferrous fumarate"],
+              "dosage": "Ferrous sulphate 200 mg (65 mg elemental iron) twice to three times daily",
+              "use_case": "Iron-deficiency anaemia from menorrhagia in premenopausal hypothyroid women; iron deficiency also impairs thyroid hormone synthesis (iron-dependent enzyme thyroperoxidase)",
+              "note": "CRITICAL: Separate iron from levothyroxine by at least 4 hours — iron forms insoluble chelate with levothyroxine reducing absorption by up to 50%"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-104",
+          "category_name": "Selenium Supplementation",
+          "purpose": "Selenium is an essential micronutrient for thyroid hormone metabolism. Selenoenzyme deiodinases (type 1, 2, 3) catalyse conversion of T4 to active T3 and to inactive reverse T3. Selenium-dependent glutathione peroxidase and thioredoxin reductase protect thyroid cells from oxidative damage during hormone synthesis.",
+          "medicines": [
+            {
+              "name": "Selenium (as Selenomethionine or Sodium Selenite)",
+              "brand_examples": ["Selenium 200 mcg", "Selenoprecise", "Brazil Nut (natural source — 1 nut contains ~70-90 mcg selenium)"],
+              "form": "Tablet, capsule",
+              "dosage": "100-200 mcg per day (do not exceed 400 mcg/day — risk of selenosis at high doses); treatment duration: 3-12 months; reassess benefit",
+              "use_case": "1. Hashimoto's thyroiditis — multiple RCTs (CATALYST trial, YEARS study) show selenium 200 mcg/day reduces anti-TPO antibody titres and may slow progression; some studies show improvement in quality of life and thyroid echogenicity on ultrasound. 2. Selenium-deficient patients with hypothyroidism — impaired T4-to-T3 conversion. 3. Autoimmune thyroid disease in pregnancy — reduces postpartum thyroiditis risk in anti-TPO positive women.",
+              "evidence": "Meta-analyses: selenium supplementation reduces anti-TPO antibody titres by 30-40% in Hashimoto's; however benefit in terms of preventing progression to overt hypothyroidism or reducing levothyroxine requirement is less established; current NICE and ETA guidelines: can be considered in Hashimoto's but not routinely recommended pending further evidence",
+              "side_effects": ["Nausea, garlic breath, diarrhoea (high doses)", "Selenosis at doses >400 mcg/day: hair loss, nail brittleness, peripheral neuropathy, garlic odour"],
+              "food_sources": "Brazil nuts (highest food source — 1-3 nuts/day provides adequate selenium); seafood, organ meats, eggs, dairy products"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-105",
+          "category_name": "Iodine Supplementation (for Iodine-Deficiency Hypothyroidism Only)",
+          "purpose": "Correct iodine deficiency in patients with goitre and hypothyroidism from documented iodine deficiency. NOT indicated in autoimmune (Hashimoto's) hypothyroidism — excess iodine can trigger or worsen autoimmune thyroiditis.",
+          "medicines": [
+            {
+              "name": "Potassium Iodide / Iodised Salt",
+              "form": "Iodised salt (20-40 ppm); potassium iodide tablets; iodine-containing multivitamins",
+              "dosage": "Adequate iodine intake: 150 mcg/day for adults; 220 mcg/day in pregnancy; 290 mcg/day in lactation; iodised salt provides ~75 mcg iodine per 5g salt (a typical daily salt intake)",
+              "use_case": "Prevention and treatment of iodine-deficiency hypothyroidism and goitre in endemic areas; mandatory prenatal vitamin iodine supplementation (150 mcg iodine/day) in women of childbearing age in iodine-deficient regions",
+              "warning": "Do NOT give high-dose iodine supplements to patients with Hashimoto's autoimmune thyroiditis — excess iodine triggers increased autoimmune activity, elevates anti-TPO antibodies, and worsens thyroid function. The Wolff-Chaikoff effect: sudden iodine excess transiently blocks thyroid hormone synthesis.",
+              "note": "The best population-level prevention is through universal salt iodisation (USI) — WHO and UNICEF global mandate"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet plays an important supporting role in thyroid health but should not be considered a replacement for prescribed levothyroxine. Key nutritional principles for hypothyroidism: (1) Ensure adequate iodine and selenium for thyroid hormone synthesis and conversion; (2) Time meals around levothyroxine to optimise absorption; (3) Moderate goitrogen intake sensibly (most healthy people on adequate levothyroxine and iodine do not need to severely restrict goitrogens); (4) Maintain healthy weight through balanced nutrition; (5) Correct associated deficiencies (iron, Vitamin B12, Vitamin D). Do not rely on specific 'thyroid diets' — no specific diet cures hypothyroidism but a balanced, nutrient-sufficient diet supports optimal thyroid function and treatment effectiveness.",
+      "essential_nutrients_for_thyroid_function": [
+        {
+          "nutrient": "Iodine",
+          "role": "Primary raw material for thyroid hormone synthesis — T3 contains 3 iodine atoms, T4 contains 4. Without adequate iodine, the thyroid cannot produce T3 or T4.",
+          "recommended_intake": "150 mcg/day adults; 220 mcg/day pregnancy; 290 mcg/day lactation",
+          "best_food_sources": [
+            {
+              "food": "Iodised table salt",
+              "content": "20-40 mcg iodine per gram; ~75-150 mcg per 5g (one teaspoon)",
+              "note": "The most reliable daily iodine source globally; use iodised salt in cooking (not rock salt, sea salt, or pink Himalayan salt which are not iodised)"
+            },
+            {
+              "food": "Dairy products (milk, curd, paneer, yogurt)",
+              "content": "Cow's milk: 50-150 mcg iodine per cup; major iodine source in vegetarian Indian diet",
+              "note": "Iodine content varies with feed iodine supplementation"
+            },
+            {
+              "food": "Marine fish and seafood (tuna, cod, shrimp, prawns)",
+              "content": "Tuna (canned): 17-34 mcg per 85g; cod: 99 mcg per 85g",
+              "note": "Excellent iodine source; coastal populations rarely develop iodine deficiency"
+            },
+            {
+              "food": "Eggs",
+              "content": "1 large egg: ~24 mcg iodine",
+              "note": "Consistent, readily available source"
+            },
+            {
+              "food": "Seaweed and kelp",
+              "content": "Highly variable — can contain 11-3,000 mcg per serving",
+              "warning": "CAUTION — excessive seaweed/kelp consumption can cause iodine-induced hypothyroidism or hyperthyroidism due to extreme iodine variability; kelp supplements are NOT recommended"
+            }
+          ]
+        },
+        {
+          "nutrient": "Selenium",
+          "role": "Essential cofactor for deiodinase enzymes (converts T4 to active T3) and for glutathione peroxidase (protects thyroid cells from oxidative damage during hormone synthesis). Selenium deficiency impairs T4-to-T3 conversion and worsens autoimmune thyroid inflammation.",
+          "recommended_intake": "55 mcg/day adults; 60 mcg/day in pregnancy; 70 mcg/day lactation",
+          "best_food_sources": [
+            {
+              "food": "Brazil nuts",
+              "content": "1-3 Brazil nuts = 70-270 mcg selenium — the richest single food source",
+              "note": "1-3 nuts per day provides adequate selenium; do not eat large quantities daily (selenosis risk at very high intake)"
+            },
+            {
+              "food": "Fish and seafood (tuna, sardines, shrimp, salmon)",
+              "content": "Tuna: 92 mcg per 85g serving — excellent source"
+            },
+            {
+              "food": "Eggs",
+              "content": "1 large egg: ~15-20 mcg selenium; accessible daily source"
+            },
+            {
+              "food": "Lean meat (chicken, turkey, beef)",
+              "content": "Chicken: 22-27 mcg per 85g serving"
+            },
+            {
+              "food": "Whole grains (wheat bread, oats)",
+              "content": "Selenium content varies with soil selenium content of growing region"
+            },
+            {
+              "food": "Sunflower seeds",
+              "content": "~19 mcg per 28g serving; good plant source"
+            }
+          ]
+        },
+        {
+          "nutrient": "Zinc",
+          "role": "Required for pituitary TSH synthesis and for T3 receptor binding in target cells. Zinc deficiency reduces TSH production and peripheral thyroid hormone action.",
+          "recommended_intake": "8-11 mg/day adults",
+          "best_food_sources": ["Red meat, especially beef and lamb", "Shellfish — oysters (very high zinc)", "Legumes (chickpeas, lentils, kidney beans)", "Nuts and seeds (pumpkin seeds — highest plant source)", "Dairy products", "Whole grains (though phytates reduce absorption from plant sources)"]
+        },
+        {
+          "nutrient": "Iron",
+          "role": "Thyroid peroxidase (TPO) is an iron-dependent enzyme — iron deficiency impairs thyroid hormone synthesis; iron deficiency anaemia is very common in women with hypothyroidism (from menorrhagia and shared autoimmune pathology with pernicious anaemia). Correcting iron deficiency can improve thyroid function.",
+          "best_food_sources": ["Lean red meat (highest bioavailable haem iron)", "Dark leafy greens (spinach, methi/fenugreek leaves — non-haem iron; enhance with Vitamin C)", "Legumes (dal, lentils, kidney beans)", "Jaggery (good Indian source of iron)", "Fortified cereals"],
+          "note": "Avoid taking iron supplements with levothyroxine — separate by minimum 4 hours"
+        },
+        {
+          "nutrient": "Tyrosine",
+          "role": "Amino acid precursor to thyroid hormones — iodine is attached to tyrosine residues on thyroglobulin to form T3 and T4. Adequate protein intake ensures sufficient tyrosine.",
+          "sources": ["Protein-rich foods: meat, poultry, fish, dairy, eggs, soy, legumes", "Dietary deficiency of tyrosine is very rare with adequate protein intake"]
+        },
+        {
+          "nutrient": "Vitamin D",
+          "role": "Vitamin D receptors are present on thyroid cells; Vitamin D deficiency is associated with increased autoimmunity and higher anti-TPO antibody titres in Hashimoto's thyroiditis; may contribute to thyroid inflammation.",
+          "recommended_intake": "600-2000 IU/day (or 1500-2000 IU if deficient); target serum 25-OH Vitamin D >75 nmol/L",
+          "best_food_sources": ["Sunlight exposure (main source — 15-30 min daily)", "Fatty fish (salmon, mackerel, sardines)", "Egg yolk", "Fortified dairy products and cereals", "Mushrooms exposed to UV light"],
+          "note": "Very common deficiency in India (due to indoor lifestyle despite high sunlight) — supplementation often required"
+        }
+      ],
+      "recommended_foods": [
+        {
+          "category": "Anti-Inflammatory and Antioxidant Foods (Benefit Hashimoto's)",
+          "rationale": "Hashimoto's thyroiditis involves chronic thyroid inflammation — anti-inflammatory dietary patterns may reduce autoimmune activity",
+          "items": [
+            {
+              "food": "Turmeric (Haldi)",
+              "benefit": "Curcumin — potent anti-inflammatory; inhibits NF-κB inflammatory pathway; reduces inflammatory cytokines (IL-6, TNF-alpha); emerging evidence in autoimmune thyroid disease; widely available in Indian diet",
+              "frequency": "Daily in cooking or turmeric golden milk (with black pepper to enhance curcumin absorption)"
+            },
+            {
+              "food": "Ginger",
+              "benefit": "Anti-inflammatory gingerols and shogaols; reduces thyroid antibody-associated inflammation; immune modulation",
+              "frequency": "Daily — fresh ginger in cooking, tea, or warm water"
+            },
+            {
+              "food": "Berries (blueberries, strawberries, amla/Indian gooseberry)",
+              "benefit": "Rich in polyphenols and antioxidants; reduce thyroid oxidative stress; amla (Indian gooseberry) is an exceptionally rich source of Vitamin C — supporting iron absorption and thyroid antioxidant defence",
+              "frequency": "Daily as snack or with breakfast"
+            },
+            {
+              "food": "Fatty fish (salmon, mackerel, sardines, hilsa/rohu)",
+              "benefit": "Omega-3 fatty acids (EPA and DHA) — anti-inflammatory; reduce thyroid autoimmune activity; selenium (T4-to-T3 conversion); iodine; high-quality protein",
+              "frequency": "2-3 times per week"
+            },
+            {
+              "food": "Extra virgin olive oil / Mustard oil (cold-pressed)",
+              "benefit": "Oleocanthal in olive oil has ibuprofen-like anti-inflammatory action; monounsaturated fats support hormonal balance; mustard oil contains omega-3 alpha-linolenic acid",
+              "frequency": "Daily as cooking oil (not for high-heat frying)"
+            }
+          ]
+        },
+        {
+          "category": "Probiotic Foods (Gut-Thyroid Axis)",
+          "rationale": "Emerging evidence supports a gut-thyroid axis — gut microbiome dysbiosis is associated with autoimmune thyroid disease; probiotics may reduce thyroid autoimmunity and improve iodine and selenium absorption; leaky gut may allow thyroid antigen translocation triggering autoimmune response",
+          "items": [
+            {
+              "food": "Plain yogurt / Dahi (with live cultures)",
+              "benefit": "Probiotics restore gut microbiome; provides iodine (cow's milk); calcium (take 4 hours from levothyroxine); Lactobacillus and Bifidobacterium species may reduce gut permeability and autoimmune activity",
+              "frequency": "Daily — plain unsweetened yogurt; best taken at a different time from levothyroxine"
+            },
+            {
+              "food": "Kefir",
+              "benefit": "Fermented milk with diverse probiotic strains; higher probiotic count than regular yogurt; anti-inflammatory; emerging evidence in autoimmune conditions",
+              "frequency": "Daily if available and tolerated"
+            },
+            {
+              "food": "Idli and dosa (fermented rice-lentil)",
+              "benefit": "Fermented foods with natural probiotics; easily digestible; balanced carbohydrate and protein; staple South Indian food with beneficial fermentation",
+              "frequency": "Regular part of diet"
+            },
+            {
+              "food": "Kanji (fermented rice water — North Indian/Rajasthani)",
+              "benefit": "Traditional fermented probiotic drink; promotes gut health; may support gut-thyroid axis",
+              "frequency": "As part of traditional diet"
+            }
+          ]
+        },
+        {
+          "category": "High-Quality Protein Foods",
+          "rationale": "Thyroid hormone is synthesised from tyrosine (amino acid) + iodine; adequate dietary protein ensures sufficient tyrosine substrate; protein also supports muscle mass (reduced by hypothyroid myopathy) and immune function",
+          "items": [
+            {
+              "food": "Eggs (whole eggs)",
+              "benefit": "Complete protein (contains all essential amino acids including tyrosine); selenium (T4-T3 conversion); iodine; Vitamin D; zinc; affordable and versatile",
+              "frequency": "1-2 eggs daily"
+            },
+            {
+              "food": "Lean poultry (chicken, turkey)",
+              "benefit": "Complete protein; selenium; zinc; low saturated fat; tyrosine-rich",
+              "frequency": "3-4 times per week"
+            },
+            {
+              "food": "Legumes (dal, moong, masoor, rajma, chana)",
+              "benefit": "Plant protein; zinc; iron (non-haem — enhance absorption with Vitamin C); fibre (improves constipation); inexpensive and widely available in India",
+              "frequency": "Daily as dal in Indian diet",
+              "note": "Some legumes contain goitrogens — see goitrogen section; cooking greatly reduces goitrogenic activity"
+            }
+          ]
+        },
+        {
+          "category": "Fibre-Rich Foods (for Constipation)",
+          "rationale": "Constipation is a common hypothyroid symptom — resolves with levothyroxine treatment but dietary fibre supports bowel regularity during transition; however high-fibre diet can slightly reduce levothyroxine absorption if taken concurrently",
+          "items": [
+            {
+              "food": "Psyllium husk (Isabgol)",
+              "benefit": "Soluble fibre — absorbs water, bulks and softens stool; one of the most effective dietary interventions for constipation; widely available in India",
+              "frequency": "1-2 teaspoons in warm water morning or evening (NOT with levothyroxine — separate by 4 hours)",
+              "note": "Separate isabgol from levothyroxine by at least 4 hours — reduces absorption"
+            },
+            {
+              "food": "Flaxseeds (Alsi)",
+              "benefit": "Soluble fibre improving constipation; omega-3 fatty acids (anti-inflammatory benefit for Hashimoto's); lignans (phytoestrogens — modest thyroid-supporting effect at normal food doses)",
+              "frequency": "1-2 tablespoons ground daily in food, yogurt, or water",
+              "note": "Some evidence for anti-thyroid effect at very high supplemental doses in animal studies — normal dietary amounts are safe and beneficial"
+            },
+            {
+              "food": "Oats (porridge / daliya)",
+              "benefit": "Soluble fibre (beta-glucan); improves constipation and cholesterol (which is commonly elevated in hypothyroidism); low GI; iron",
+              "frequency": "Daily as breakfast"
+            }
+          ]
+        }
+      ],
+      "foods_and_substances_to_manage": [
+        {
+          "category": "Goitrogens — Foods That Interfere with Thyroid Hormone Synthesis",
+          "explanation": "Goitrogens are substances that impair thyroid hormone synthesis by: (1) inhibiting thyroid peroxidase (TPO) enzyme — reducing iodine organification; (2) blocking iodine uptake into the thyroid. Goitrogens are most relevant in iodine-deficient individuals and in uncooked form. In patients on adequate levothyroxine replacement with sufficient iodine intake, moderate consumption of these foods is SAFE and nutritious. COOKING substantially reduces goitrogenic activity (heat breaks down goitrogenic glucosinolates).",
+          "goitrogenic_foods": [
+            {
+              "food": "Cruciferous vegetables (broccoli, cabbage, kale, cauliflower, Brussels sprouts, radish, kohlrabi, pak choi)",
+              "goitrogen": "Glucosinolates (broken down to goitrin and thiocyanates by intestinal bacteria and plant myrosinase enzyme)",
+              "risk": "Clinically significant only in raw large quantities in iodine-deficient individuals NOT on levothyroxine; cooking greatly reduces goitrogenic activity",
+              "recommendation": "EAT FREELY — these are highly nutritious anti-cancer vegetables; cook them (steam, boil, stir-fry) before eating; moderate raw consumption (a serving of raw coleslaw or salad) is fine for patients on levothyroxine",
+              "myth_busting": "The internet-driven extreme avoidance of all cruciferous vegetables in hypothyroidism is NOT supported by evidence for patients on adequate levothyroxine — these vegetables provide vital nutrition including Vitamin C, folate, calcium, and anti-cancer compounds"
+            },
+            {
+              "food": "Soy products (tofu, soy milk, edamame, soy protein isolate)",
+              "goitrogen": "Isoflavones (genistein, daidzein) — inhibit TPO enzyme",
+              "risk": "More clinically relevant than cruciferous vegetables — soy isoflavones significantly inhibit levothyroxine absorption when taken concurrently; in borderline hypothyroidism, high soy intake may worsen thyroid function",
+              "recommendation": "For patients on levothyroxine: consume moderate amounts of soy foods at meal times (not with medication); SEPARATE levothyroxine from soy by minimum 4 hours; infants on soy formula need careful dose adjustment of levothyroxine as soy markedly reduces absorption",
+              "note": "Fermented soy (miso, tempeh, natto) may have lower goitrogenic activity due to fermentation breaking down isoflavones"
+            },
+            {
+              "food": "Millet (bajra, jowar, ragi — finger millet)",
+              "goitrogen": "Contains C-glycosyl flavones and other antithyroid compounds",
+              "risk": "Relevant primarily in populations consuming millet as staple grain in iodine-deficient areas (e.g., sub-Saharan Africa, South Asia); cooking reduces but does not eliminate",
+              "recommendation": "Regular moderate consumption as part of varied diet is fine for patients on levothyroxine in iodine-sufficient settings; do not make millet the exclusive grain if borderline thyroid function"
+            },
+            {
+              "food": "Cassava (tapioca — kappa in Kerala)",
+              "goitrogen": "Contains cyanogenic glucosides (linamarin) — broken down to thiocyanate which blocks iodine uptake",
+              "risk": "Significant in populations relying on poorly-processed cassava as staple food — contributes to endemic goitre and cretinism in iodine-deficient areas",
+              "recommendation": "Not a concern for most urban patients consuming occasional cassava as part of varied diet on adequate levothyroxine; important public health consideration in endemic regions"
+            },
+            {
+              "food": "Peanuts (Moongphali)",
+              "goitrogen": "Peanuts contain some goitrogenic compounds",
+              "risk": "Very low — moderate consumption is safe for hypothyroid patients on levothyroxine",
+              "recommendation": "Peanuts are nutritious (selenium, protein, zinc, monounsaturated fats) — no need to avoid"
+            }
+          ]
+        },
+        {
+          "category": "Levothyroxine Absorption — Food and Drink Timing Rules",
+          "critical_importance": "Correct timing of levothyroxine is one of the most important factors in achieving stable TSH control — many cases of 'difficult to control' hypothyroidism resolve with proper medication timing",
+          "rules": [
+            {
+              "substance": "Coffee / Espresso (especially strong coffee)",
+              "effect": "Reduces levothyroxine absorption by 25-36%; one of the most common causes of elevated TSH in compliant patients",
+              "recommendation": "Take levothyroxine FIRST on empty stomach with water ONLY; wait minimum 30-60 minutes before having coffee or espresso; caffè latte is worse than black coffee (milk also chelates)"
+            },
+            {
+              "substance": "Food in general",
+              "effect": "Reduces levothyroxine absorption by 20-40% depending on food composition",
+              "recommendation": "Take levothyroxine 30-60 minutes before eating, OR at bedtime (≥3-4 hours after last meal); consistent timing is most important — choose one regimen and stick to it"
+            },
+            {
+              "substance": "High-fibre meals, bran cereals",
+              "effect": "High insoluble fibre can bind levothyroxine — reduces absorption",
+              "recommendation": "Take levothyroxine well before high-fibre breakfast cereals; separate by at least 1 hour"
+            },
+            {
+              "substance": "Calcium-rich foods (milk, yogurt, cheese, calcium-fortified juice)",
+              "effect": "Calcium chelates levothyroxine — reduces absorption",
+              "recommendation": "Separate levothyroxine from dairy and calcium-rich foods by minimum 4 hours if possible; for convenience — evening or bedtime dosing avoids morning dairy conflicts"
+            }
+          ]
+        },
+        {
+          "category": "Gluten and Coeliac Disease (Important in Hashimoto's)",
+          "explanation": "Coeliac disease (gluten sensitivity causing intestinal damage) is 5-7 times more prevalent in Hashimoto's thyroiditis patients than the general population — shared HLA haplotypes (HLA-DR3, HLA-DQ2/DQ8) and autoimmune mechanisms. Untreated coeliac disease causes: malabsorption of levothyroxine (erratic TSH control), malabsorption of selenium and iodine (worsening thyroid function), and potentiates autoimmune thyroid damage.",
+          "recommendation": [
+            "Screen all Hashimoto's patients for coeliac disease with anti-tTG IgA antibodies and total IgA (to exclude IgA deficiency)",
+            "If coeliac disease confirmed: strict gluten-free diet dramatically improves levothyroxine absorption and TSH control; may reduce anti-TPO antibody titres",
+            "Non-coeliac gluten sensitivity may also affect some Hashimoto's patients — a 3-month trial of gluten-free diet can be considered if symptoms persist despite optimal TSH",
+            "Note: a gluten-free diet is NOT necessary or beneficial for Hashimoto's patients who test negative for coeliac disease; it is unnecessarily restrictive, expensive, and may impair fibre and B-vitamin intake"
+          ]
+        },
+        {
+          "category": "Alcohol",
+          "effect": "Alcohol has a directly toxic effect on thyroid follicular cells; heavy chronic alcohol use suppresses TSH and impairs thyroid function; alcohol disrupts levothyroxine absorption and metabolic consistency; associated with poor medication adherence",
+          "recommendation": "Moderate alcohol consumption (within recommended guidelines: <14 units/week UK; avoid in pregnancy) is unlikely to significantly affect thyroid control in patients on stable levothyroxine; heavy drinking worsens thyroid function and medication adherence"
+        }
+      ],
+      "sample_meal_plan_for_hypothyroidism": {
+        "principles": "Nutrient-dense, anti-inflammatory, gut-friendly diet; adequate iodine, selenium, and zinc; levothyroxine taken 30-60 minutes before breakfast on empty stomach; consistent daily routine",
+        "early_morning_on_waking": "Levothyroxine tablet with a glass of plain water (30-60 minutes before breakfast); do NOT take with milk, coffee, tea, or juice",
+        "breakfast_after_30_to_60_min_wait": "Oats porridge with banana, flaxseeds, and a drizzle of honey OR eggs (scrambled/boiled) with whole wheat toast OR idli/dosa with sambar (moderate chutney); cup of chai or coffee AFTER at least 30-60 minutes post-levothyroxine",
+        "mid_morning": "Brazil nuts (1-2 nuts — selenium); amla (Indian gooseberry — Vitamin C, antioxidant); or a handful of sunflower seeds",
+        "lunch": "Dal (moong or masoor — iron, zinc, protein) + brown rice or roti + cooked vegetables (broccoli, cauliflower, or pumpkin — COOKED to reduce goitrogens) + curd (probiotic, iodine — calcium far away from morning levothyroxine)",
+        "mid_afternoon": "Coconut water or herbal tea (green tea in moderation — antioxidants); fruit (banana, papaya, or guava)",
+        "dinner": "Fish (salmon, mackerel, rohu — selenium, iodine, omega-3) or chicken curry with minimal heavy spice + mixed cooked vegetables + chapati or light rice; or palak dal (spinach — iron, folate)",
+        "bedtime_optional_alternative_levothyroxine_time": "If taking levothyroxine at bedtime instead — take at least 3-4 hours after dinner; warm turmeric milk (haldi doodh — anti-inflammatory) at least 30 min before bedtime levothyroxine if desired",
+        "notes": [
+          "Always take levothyroxine at a consistent time — same routine every day regardless of breakfast timing",
+          "Include iodised salt in cooking (not rock salt or sea salt — not iodised)",
+          "Use mustard oil or olive oil for cooking (anti-inflammatory; omega-3 content)",
+          "Drink 8-10 glasses of water daily — helps constipation and hydration",
+          "Avoid large amounts of raw cruciferous vegetables — prefer cooked; moderate raw consumption is fine",
+          "Probiotic foods (curd, buttermilk) support gut-thyroid axis — consume daily"
+        ]
+      }
+    },
+
+    "lifestyle_management": {
+      "medication_adherence": {
+        "overview": "Consistent, daily levothyroxine use is the single most important lifestyle factor in hypothyroidism management. Poor adherence is the most common cause of elevated TSH and persistent symptoms in compliant-appearing patients.",
+        "strategies": [
+          "Take levothyroxine at the SAME TIME every day — morning on empty stomach, OR consistently at bedtime; choose a time that fits your routine and maintain it",
+          "Use pill reminders, phone alarms, or pill dispenser boxes to prevent missed doses",
+          "If a dose is missed and remembered the same day — take it; if the next day, skip the missed dose and continue normal schedule (never double dose)",
+          "Store levothyroxine at room temperature away from moisture and heat — not in the bathroom (humidity degrades tablets)",
+          "Do not run out of medication — maintain a 1-month supply; prescriptions should be renewed before last week of tablets",
+          "Stick to the same brand of levothyroxine if possible — switching brands can alter absorption and cause TSH fluctuation; if brand change is necessary, recheck TSH in 4-8 weeks",
+          "Never stop levothyroxine without doctor's advice — hypothyroidism will return within weeks"
+        ]
+      },
+      "exercise_and_physical_activity": {
+        "overview": "Regular exercise has multiple evidence-based benefits in hypothyroidism: reduces hypothyroid fatigue, supports weight management, improves cardiovascular risk (elevated in hypothyroidism from dyslipidaemia), reduces depression, and may have modest TSH-lowering effects.",
+        "recommendations": [
+          {
+            "type": "Aerobic Exercise",
+            "frequency": "150 minutes moderate intensity per week (30 min, 5 days) or 75 minutes vigorous per week",
+            "examples": "Walking (especially brisk walking — most accessible), cycling, swimming, yoga, Zumba, light jogging",
+            "benefit": "Improves metabolic rate, weight control, cardiovascular health, and mood; reduces fatigue and depression of hypothyroidism"
+          },
+          {
+            "type": "Strength Training / Resistance Exercise",
+            "frequency": "2-3 times per week",
+            "examples": "Bodyweight exercises (squats, lunges, push-ups), resistance bands, light weights, functional fitness classes",
+            "benefit": "Counteracts hypothyroid myopathy (muscle weakness); increases lean muscle mass and basal metabolic rate; reduces insulin resistance; improves bone density (counteracts over-treatment osteoporosis risk)"
+          },
+          {
+            "type": "Yoga and Pranayama",
+            "frequency": "Daily if possible",
+            "specific_poses": "Sarvangasana (Shoulder Stand) — stimulates thyroid gland; Halasana (Plough) — stimulates thyroid; Matsyasana (Fish Pose) — opens throat, stimulates thyroid; Setubandhasana (Bridge Pose); Ustrasana (Camel Pose); Ujjayi Pranayama — regulates thyroid function; Nadi Shodhana (Alternate Nostril Breathing) — balances autonomic nervous system",
+            "benefit": "Inverted and neck-stretching poses increase blood flow to thyroid gland; pranayama reduces stress and cortisol (cortisol impairs T4-to-T3 conversion); improves flexibility, mood, and energy in hypothyroidism; growing evidence for yoga's benefit in autoimmune conditions"
+          }
+        ],
+        "exercise_cautions": [
+          "Start SLOWLY if newly starting exercise — hypothyroidism causes fatigue and myopathy; excessive exercise before TSH normalises may worsen muscle damage",
+          "Monitor heart rate — bradycardia from hypothyroidism may mean maximum heart rate is lower than expected; monitor perceived exertion rather than target heart rate alone",
+          "Monitor muscle aching — elevated CK is common in hypothyroidism; strenuous exercise worsens myopathy; defer high-intensity exercise until TSH normalised",
+          "Cardiac patients on starting levothyroxine — light walking only until cardiologist clears higher intensity activity",
+          "Morning exercise after levothyroxine: wait 30-60 min post-levothyroxine before exercising to avoid absorption impairment from increased gut transit"
+        ]
+      },
+      "stress_management": {
+        "overview": "Chronic psychological and physiological stress significantly impairs thyroid function through multiple mechanisms: cortisol from HPA axis activation inhibits T4-to-T3 peripheral conversion; stress promotes autoimmune flares in Hashimoto's; stress affects iodine uptake and thyroid hormone synthesis; psychological stress is a known trigger for autoimmune thyroid disease onset.",
+        "strategies": [
+          "Regular meditation — 10-20 minutes daily; reduces cortisol, supports T4-to-T3 conversion, reduces autoimmune activity",
+          "Deep breathing exercises — Pranayama (Ujjayi, Nadi Shodhana); activates parasympathetic nervous system",
+          "Adequate sleep — 7-9 hours per night; sleep deprivation suppresses thyroid function and worsens autoimmunity; hypothyroidism itself causes hypersomnia and poor sleep quality — treat both",
+          "Cognitive Behavioural Therapy (CBT) or counselling — particularly for depression and anxiety associated with hypothyroidism",
+          "Regular time in nature, hobbies, social connection — protective against chronic stress",
+          "Mindfulness-Based Stress Reduction (MBSR) — evidence-based programme; reduces inflammatory cytokines relevant to autoimmune thyroiditis"
+        ]
+      },
+      "sleep_hygiene": {
+        "overview": "Sleep disturbances are common in hypothyroidism — both hypersomnia (excessive sleeping) and poor-quality sleep occur. Obstructive sleep apnoea (OSA) is significantly more prevalent due to macroglossia, pharyngeal oedema, and obesity. Treating hypothyroidism usually improves sleep, but OSA may persist and require separate management.",
+        "recommendations": [
+          "Maintain consistent sleep and wake times (circadian rhythm stability supports thyroid axis regulation)",
+          "7-9 hours sleep nightly in adults; do not nap excessively during day (interferes with overnight sleep)",
+          "Screen for obstructive sleep apnoea — if snoring, witnessed apnoeas, or non-refreshing sleep persist after TSH normalised: polysomnography (sleep study) and consider CPAP therapy",
+          "Evening levothyroxine option: some patients achieve better absorption and TSH control with bedtime levothyroxine (taken on empty stomach at least 3-4 hours after dinner) — equivalent or better efficacy than morning dosing and avoids morning absorption issues"
+        ]
+      },
+      "smoking_cessation": {
+        "recommendation": "Smoking has complex effects on thyroid: paradoxically may reduce hypothyroid risk but significantly worsens Grave's ophthalmopathy (a thyroid-eye complication) and thyroid cancer outcomes. Smoking cessation recommended universally for overall health benefits. Nicotine replacement therapy does not significantly affect thyroid function."
+      },
+      "monitoring_and_follow_up": {
+        "overview": "Hypothyroidism is a lifelong condition requiring regular monitoring. Once stable on correct levothyroxine dose, monitoring requirements are straightforward.",
+        "monitoring_schedule": [
+          "New diagnosis or dose change: TSH at 4-8 weeks (TSH takes this long to stabilise after dose change — testing earlier gives misleading results)",
+          "Once TSH stabilised in target range: TSH annually",
+          "Pregnancy: TSH every 4-6 weeks throughout pregnancy; immediately increase dose on confirmed pregnancy",
+          "After radioiodine therapy or thyroid surgery: TSH at 4-6 weeks, 3 months, 6 months, then annually",
+          "After starting medications affecting thyroid (amiodarone, lithium, checkpoint inhibitors): TSH at 3 months then every 6 months",
+          "After major dose change: TSH at 4-8 weeks; do not retest earlier",
+          "In patients >60 years: annual TSH; be alert for signs of over-treatment (palpitations, weight loss, tremor)",
+          "Annual lipid profile: dyslipidaemia in hypothyroidism; assess cardiovascular risk",
+          "If persistent symptoms despite normal TSH: Free T4 and Free T3; check vitamin B12, D, iron, coeliac serology; consider comorbid depression, sleep apnoea, or fibromyalgia"
+        ],
+        "signs_of_over_treatment_to_monitor": [
+          "Palpitations, fast heart rate, awareness of heartbeat",
+          "New or worsening anxiety, restlessness, or irritability",
+          "Insomnia or difficulty sleeping",
+          "Tremor of hands",
+          "Weight loss despite good appetite",
+          "Increased sweating and heat intolerance (opposite of hypothyroid symptoms)",
+          "Diarrhoea",
+          "Atrial fibrillation (especially in elderly) — over-treatment is a major modifiable risk factor for AF",
+          "Wrist fracture or spinal fracture — osteoporosis from prolonged over-treatment"
+        ]
+      }
+    },
+
+    "hypothyroidism_monitoring_plan": {
+      "note": "Most hypothyroid patients on correct levothyroxine dose are entirely well and require only annual monitoring. This guide helps identify when symptoms indicate dose adjustment or medical attention.",
+      "green_zone": {
+        "status": "Well-Controlled — Routine Annual Review",
+        "criteria": "TSH within target range (0.5-2.5 mIU/L for most patients) at last test; no hypothyroid symptoms; no symptoms of over-treatment; taking levothyroxine consistently at same time daily; no new medications that affect absorption; stable weight; good energy",
+        "action": "Continue current levothyroxine dose; annual TSH blood test; annual lipid profile; maintain medication adherence; follow up with GP annually or endocrinologist every 1-2 years"
+      },
+      "yellow_zone": {
+        "status": "Suboptimal Control — GP Review Within Weeks",
+        "criteria": "Return of hypothyroid symptoms (increased fatigue, weight gain, cold intolerance, constipation, low mood, dry skin) despite being on treatment; OR symptoms of over-treatment (palpitations, tremor, anxiety, insomnia, heat intolerance) suggesting TSH too low; TSH out of target range at last test; new medication started that may affect absorption; pregnancy confirmed or planned; dose missed frequently; changed brand of levothyroxine recently",
+        "action": "GP review and TSH blood test; review medication timing and absorption factors; dose adjustment as guided by TSH; endocrinology referral if persistent symptoms or difficult TSH control"
+      },
+      "red_zone": {
+        "status": "URGENT — Seek Medical Attention Same Day or Emergency Department",
+        "criteria_immediate": [
+          "Confusion, disorientation, stupor, or loss of consciousness in a patient with known hypothyroidism — possible myxoedema coma — CALL EMERGENCY SERVICES (102/112)",
+          "Very low body temperature (feeling extremely cold to touch, shivering uncontrollably, or unable to feel cold) with confusion — hypothermia myxoedema coma",
+          "Very slow heart rate (<40 bpm) with dizziness, near-fainting, or chest pain",
+          "Rapidly enlarging neck swelling with difficulty breathing or swallowing — possible thyroid malignancy or Riedel's thyroiditis — URGENT REFERRAL",
+          "New-onset psychosis or severe acute psychiatric breakdown in a known hypothyroid patient — possible myxoedema madness",
+          "Severe hyponatraemia symptoms: seizures, severe confusion, nausea from very low sodium",
+          "Myxoedema coma precipitant in severely hypothyroid patient: chest infection, stroke, MI, major surgery, opiate prescription",
+          "Severe chest pain in hypothyroid patient starting levothyroxine — may unmask angina — STOP LEVOTHYROXINE and seek emergency care",
+          "Sudden severe dyspnoea — possible large pericardial effusion with tamponade",
+          "Pregnant woman on levothyroxine with any concerns — contact obstetric team immediately for urgent TSH"
+        ]
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Myxoedema Coma",
+        "description": "The most life-threatening complication of untreated or severely undertreated hypothyroidism. Represents extreme hypothyroid decompensation — characterised by hypothermia (<35°C), altered consciousness (stupor to coma), bradycardia, hypoventilation, and hyponatraemia. Most commonly occurs in elderly women with longstanding undiagnosed hypothyroidism after a precipitating event (infection, cold exposure, surgery, or sedative medication). Extremely rare in the era of thyroid function screening but still encountered.",
+        "severity": "Life-threatening — mortality 20-60% even with optimal ICU treatment",
+        "management": "ICU admission; IV levothyroxine 200-400 mcg loading dose; IV hydrocortisone 100 mg every 8 hours (must be given before or concurrently with T4); passive rewarming; mechanical ventilation if respiratory failure; IV fluids cautiously (hyponatraemia); treat precipitating cause; continuous cardiac monitoring; expected ICU stay weeks to months"
+      },
+      {
+        "complication": "Cardiovascular Disease and Dyslipidaemia",
+        "description": "Even subclinical hypothyroidism significantly elevates cardiovascular risk through secondary dyslipidaemia — reduced hepatic LDL receptor expression causes elevated total cholesterol, LDL-cholesterol, and triglycerides. Overt hypothyroidism additionally causes diastolic hypertension (peripheral vasoconstriction), bradycardia, reduced cardiac contractility, pericardial effusion, and endothelial dysfunction. Long-term untreated or poorly controlled hypothyroidism accelerates atherosclerosis and increases coronary artery disease, heart failure, and stroke risk.",
+        "severity": "Moderate to Severe — major cause of excess mortality",
+        "management": "Optimise levothyroxine (TSH normalisation reduces LDL by 10-25%); recheck lipids after 3-6 months of treatment; statin therapy only if dyslipidaemia persists after optimal thyroid treatment; antihypertensive therapy for persistent diastolic hypertension post-treatment; annual lipid profile and blood pressure monitoring"
+      },
+      {
+        "complication": "Infertility and Pregnancy Complications",
+        "description": "Hypothyroidism disrupts the hypothalamic-pituitary-ovarian axis — causing anovulation, oligomenorrhoea, and elevated prolactin (from elevated TRH). Results in treatable infertility and recurrent miscarriage. In pregnancy, maternal hypothyroidism deprives the fetus of essential thyroid hormone in the first trimester (before fetal thyroid is functional) — causing irreversible fetal neurodevelopmental impairment, reduced IQ in offspring, miscarriage, preeclampsia, preterm birth, and placental abruption.",
+        "severity": "Significant — major treatable cause of infertility and pregnancy loss",
+        "management": "TSH normalisation (<2.5 mIU/L) before conception; immediate dose increase of 25-30% on confirmed pregnancy; TSH monitoring every 4-6 weeks throughout pregnancy; postpartum dose reassessment"
+      },
+      {
+        "complication": "Neuropsychiatric Complications — Depression, Cognitive Impairment, Dementia",
+        "description": "Thyroid hormone is essential for CNS function — deficiency causes a spectrum of neuropsychiatric manifestations: depression (hypothyroidism is the most important reversible medical cause of depression — all new depression cases must have TSH measured), cognitive impairment and memory loss, psychomotor slowing ('brain fog'), cerebellar ataxia, and in rare severe cases dementia or psychosis ('myxoedema madness'). Prolonged severe hypothyroidism may cause structural brain changes.",
+        "severity": "Moderate to Severe — significantly affects quality of life and is entirely reversible with thyroid treatment",
+        "management": "TSH normalisation (most neuropsychiatric symptoms resolve completely with levothyroxine); avoid premature psychiatric labelling without thyroid function testing; antidepressants rarely needed if hypothyroidism adequately treated; allow 3-6 months for full neurological recovery"
+      },
+      {
+        "complication": "Peripheral Neuropathy and Carpal Tunnel Syndrome",
+        "description": "Myxoedematous glycosaminoglycan infiltration compresses peripheral nerves — most commonly the median nerve in the carpal tunnel (carpal tunnel syndrome — bilateral numbness, tingling, and pain in the hands, waking patients at night). Also causes generalised peripheral neuropathy with sensory loss, 'glove and stocking' numbness, and burning dysaesthesias.",
+        "severity": "Moderate — resolves with levothyroxine treatment",
+        "management": "Levothyroxine treatment typically resolves bilateral carpal tunnel syndrome without surgical intervention over months; nerve conduction studies to confirm diagnosis; wrist splints for symptomatic relief while awaiting treatment effect; surgical carpal tunnel decompression only if no response to 6 months of optimal thyroid treatment"
+      },
+      {
+        "complication": "Osteoporosis (from Over-Treatment)",
+        "description": "An important iatrogenic complication — over-treatment with levothyroxine (suppressed TSH <0.1 mIU/L) causes subclinical thyrotoxicosis which activates osteoclasts, increases bone resorption, and over years significantly reduces bone mineral density (particularly trabecular bone in spine and hip), leading to increased fracture risk. Most relevant in post-menopausal women on suppressive thyroid cancer therapy.",
+        "severity": "Moderate — preventable with correct dosing and monitoring",
+        "management": "Avoid unnecessary TSH suppression in benign hypothyroidism — target TSH 0.5-2.5 mIU/L; use lowest TSH-suppressive dose in thyroid cancer patients consistent with recurrence risk; annual DEXA bone density scan in post-menopausal women on suppressive therapy; calcium and Vitamin D supplementation; bisphosphonate therapy if T-score <-2.5"
+      },
+      {
+        "complication": "Atrial Fibrillation (from Over-Treatment)",
+        "description": "Iatrogenic thyrotoxicosis from levothyroxine over-treatment is a significant cause of new-onset atrial fibrillation — particularly in elderly patients. Even subclinical hyperthyroidism (suppressed TSH) triples the risk of AF. AF from thyrotoxicosis increases stroke risk by 3-5 times.",
+        "severity": "Severe — significant cardiac risk in elderly",
+        "management": "Careful dose titration in elderly — avoid TSH suppression below 0.5 mIU/L unless cancer indication; annual ECG in elderly on levothyroxine; if AF develops — rate control, anticoagulation assessment (CHA2DS2-VASc score), and levothyroxine dose reduction; AF from thyrotoxicosis may revert to sinus rhythm when TSH normalises"
+      },
+      {
+        "complication": "Anaemia",
+        "description": "Multiple mechanisms cause anaemia in hypothyroidism: (1) Normochromic normocytic anaemia — from reduced erythropoietin and slowed erythropoiesis in bone marrow; (2) Macrocytic anaemia — from associated autoimmune gastritis and pernicious anaemia (B12 deficiency); (3) Iron-deficiency anaemia — from menorrhagia; (4) Mixed anaemia pattern combining all three. Anaemia worsens hypothyroid fatigue significantly.",
+        "severity": "Mild to Moderate",
+        "management": "Check FBC, B12, folate, ferritin, and transferrin saturation; correct specific deficiencies (B12 IM injections for pernicious anaemia; oral iron for iron deficiency); levothyroxine treatment reverses the normochromic normocytic component"
+      },
+      {
+        "complication": "Congenital Hypothyroidism and Cretinism",
+        "description": "Untreated congenital hypothyroidism causes the most severe complications — irreversible intellectual disability (cretinism), short stature, deafness, and developmental delay. Congenital hypothyroidism is the most common preventable cause of intellectual disability worldwide. With neonatal screening and early treatment, affected children achieve normal neurodevelopment.",
+        "severity": "Catastrophic if untreated — causes irreversible mental and physical developmental impairment",
+        "management": "Universal neonatal screening (heel-prick test); levothyroxine started within first 2 weeks of life; lifelong treatment and careful monitoring to maintain Free T4 in upper normal range throughout childhood for optimal neurodevelopment; regular developmental assessment"
+      },
+      {
+        "complication": "Sleep Apnoea",
+        "description": "Obstructive sleep apnoea (OSA) is significantly more prevalent in hypothyroidism due to myxoedematous infiltration causing macroglossia (enlarged tongue), pharyngeal oedema, obesity, and reduced respiratory muscle tone. OSA worsens hypothyroid fatigue and cognitive impairment and increases cardiovascular risk.",
+        "severity": "Moderate — resolves partially with thyroid treatment but often requires independent management",
+        "management": "Screen for OSA with polysomnography (sleep study) if snoring, witnessed apnoeas, or non-refreshing sleep persist after TSH normalisation; CPAP therapy for moderate-severe OSA; weight loss if obese"
+      },
+      {
+        "complication": "Secondary Dyslipidaemia and Non-Alcoholic Fatty Liver Disease (NAFLD)",
+        "description": "Hypothyroidism-driven dyslipidaemia (elevated LDL, cholesterol, triglycerides) accelerates hepatic lipid accumulation, contributing to non-alcoholic fatty liver disease (NAFLD) — an increasingly recognised hepatic complication. Thyroid hormone receptors in liver regulate lipid metabolism; their absence in hypothyroidism promotes hepatic steatosis.",
+        "severity": "Moderate",
+        "management": "Levothyroxine treatment improves hepatic lipid metabolism; recheck LFTs and lipid profile after 3-6 months of treatment; lifestyle measures (exercise, weight loss) and statin if persistent dyslipidaemia"
+      }
+    ],
+
+    "special_populations": {
+      "hypothyroidism_in_pregnancy": {
+        "key_points": [
+          "Hypothyroidism in pregnancy is critically important — maternal thyroid hormone is the ONLY source of T4 for the fetus during the first trimester (weeks 1-12) before the fetal thyroid becomes functional; inadequate maternal T4 directly impairs fetal brain development",
+          "Maternal hypothyroidism (TSH >2.5 mIU/L in first trimester) increases risk of: miscarriage (2-3 fold increased risk), preterm birth, preeclampsia, gestational hypertension, impaired fetal neurodevelopmental outcomes, and reduced child IQ",
+          "TSH targets in pregnancy: First trimester: TSH <2.5 mIU/L; Second and Third trimester: TSH <3.0 mIU/L — stricter than non-pregnant targets",
+          "Levothyroxine dose requirement increases by 25-50% during pregnancy — physiological demand for thyroid hormone increases due to: increased TBG (thyroid binding globulin) from oestrogen; direct hCG stimulation of TSH receptors (first trimester); increased T4 metabolism; transplacental passage of T4 to fetus",
+          "Action when pregnancy is confirmed: IMMEDIATELY increase levothyroxine dose by 25-30% (add 2 extra doses per week is a practical approach); recheck TSH within 4 weeks",
+          "TSH monitoring in pregnancy: every 4-6 weeks throughout pregnancy; more frequently if dose changed or TSH abnormal",
+          "Postpartum: return to pre-pregnancy dose immediately after delivery; TSH at 6 weeks postpartum; monitor for postpartum thyroiditis in anti-TPO positive women",
+          "All pregnant women should take iodine-containing prenatal vitamins — 150-220 mcg iodine/day (NOT kelp or seaweed-derived iodine — variable and unsafe); iodine deficiency even in mildly hypothyroid pregnant women impairs fetal neurological development",
+          "Screening: UK NICE guidelines recommend routine TSH screening at booking appointment for women at risk; ATA recommends TSH testing in pregnant women with risk factors; some countries practice universal screening",
+          "Anti-TPO positive women in pregnancy: higher risk of hypothyroidism developing during pregnancy and postpartum thyroiditis; more frequent TSH monitoring required",
+          "Hashimoto's with current euthyroid state (normal TSH) before pregnancy: TSH monitoring every trimester; start levothyroxine if TSH rises above trimester-specific upper limit"
+        ]
+      },
+      "hypothyroidism_in_neonates_and_children": {
+        "key_points": [
+          "Congenital hypothyroidism: 1 in 2,000-4,000 births; TSH-based neonatal screening has transformed outcomes — treatment within first 2 weeks of life prevents intellectual disability",
+          "Neonatal signs (may not be obvious initially): prolonged neonatal jaundice (most common), large fontanelle, macroglossia, hoarse cry, constipation, poor feeding, hypotonia, hypothermia, umbilical hernia",
+          "Levothyroxine initiation within 2 weeks of birth is critical — each week of delay results in irreversible intellectual impairment proportional to duration",
+          "Starting dose neonates: 10-15 mcg/kg/day; maintain Free T4 in upper half of normal range for age; TSH monitoring every 1-3 months in first year of life",
+          "Tablets may be crushed and dissolved in small amount of breast milk or water for feeding to neonates — do NOT dissolve in infant formula or soy formula as absorption impaired",
+          "Soy formula significantly reduces levothyroxine absorption — infants on soy formula need higher levothyroxine doses and more frequent monitoring",
+          "Children with Down syndrome, Turner syndrome, Type 1 diabetes: annual TSH screening from birth or diagnosis",
+          "Acquired hypothyroidism in children (usually Hashimoto's): may present as growth failure, delayed puberty, weight gain, decline in school performance; check TSH in any child with unexplained growth deceleration",
+          "Hashimoto's thyroiditis in adolescent girls: increasingly prevalent (1-2%); may fluctuate and initially present as hyperthyroid phase (Hashitoxicosis) before becoming hypothyroid",
+          "Puberty effects: hypothyroidism delays puberty; over-treatment can accelerate puberty and advance bone age — TSH monitoring is critical during adolescent growth spurts",
+          "Paediatric TSH targets differ from adults — consult age-specific reference ranges; newborn TSH reference range is much higher than adult (normal neonatal TSH may be 10-30 mIU/L in first few days of life before falling)"
+        ]
+      },
+      "hypothyroidism_in_elderly": {
+        "key_points": [
+          "Prevalence of hypothyroidism increases with age — up to 20% of women over 60 years have elevated TSH; most common endocrine disorder in the elderly",
+          "TSH reference range is higher in the elderly — TSH up to 7 mIU/L may be acceptable in patients over 80 years; age-specific reference ranges prevent over-diagnosis and over-treatment",
+          "Symptoms of hypothyroidism are easily confused with normal ageing or other conditions in the elderly — fatigue, constipation, cognitive decline, weight gain, bradycardia, and depression all overlap with common geriatric syndromes",
+          "Subclinical hypothyroidism in elderly >80 years: treating mild TSH elevation (5-10 mIU/L) in the very elderly is controversial — several studies show no benefit and possible harm (increased AF and fractures); individualised decision based on symptoms and co-morbidities",
+          "Overt hypothyroidism in elderly (TSH >10 mIU/L): treat with levothyroxine but START LOW — 12.5-25 mcg/day; increase very slowly every 4-6 weeks by 12.5-25 mcg increments; rapid correction risks precipitating angina, myocardial infarction, or atrial fibrillation",
+          "Levothyroxine unmasks angina in elderly — the thyroid's modest lowering of myocardial demand has been 'protecting' undiagnosed coronary artery disease; as metabolic rate normalises, cardiac demand increases and angina may appear; always ask about chest symptoms during dose titration",
+          "Myxoedema coma: most commonly occurs in elderly women with undiagnosed hypothyroidism precipitated by infection or cold exposure; highest mortality (>50%); maintain high clinical suspicion in elderly with unexplained hypothermia, bradycardia, and confusion",
+          "Polypharmacy in elderly: multiple drug interactions with levothyroxine absorption (calcium, iron, PPIs very common) — careful medication review essential",
+          "Cognitive impairment: always check TSH in elderly with new cognitive decline — hypothyroidism is a reversible cause of dementia-like symptoms; TSH testing should be part of routine dementia workup"
+        ]
+      },
+      "hypothyroidism_in_cardiac_patients": {
+        "key_points": [
+          "Hypothyroidism worsens dyslipidaemia and cardiovascular risk — all patients with ischaemic heart disease should have TSH checked",
+          "Starting levothyroxine in cardiac patients — begin at 12.5-25 mcg/day; increase by 12.5 mcg every 4-6 weeks; monitor for angina and arrhythmia with each dose increase",
+          "Levothyroxine treatment may precipitate or worsen angina — the hypothyroid state has been reducing myocardial oxygen demand; cardiac evaluation before increasing dose in known IHD",
+          "Myxoedema coma in cardiac patients — use smaller IV T4 doses to avoid precipitating myocardial ischaemia; T3 is higher risk; close cardiac monitoring",
+          "Atrial fibrillation: over-treatment with levothyroxine (TSH suppression) is a major modifiable risk factor for AF in elderly cardiac patients — maintain TSH in 0.5-2.5 mIU/L range; never suppress below 0.5 unless thyroid cancer indication",
+          "Heart failure: hypothyroidism reduces cardiac contractility and worsens heart failure; levothyroxine treatment improves cardiac output but dose must be titrated very carefully"
+        ]
+      },
+      "hypothyroidism_in_immunocompromised": {
+        "key_points": [
+          "Immune checkpoint inhibitors (pembrolizumab, nivolumab, atezolizumab, ipilimumab) used in cancer immunotherapy cause immune-related adverse events (irAEs) — thyroid dysfunction in 20-40% of patients",
+          "Most commonly causes destructive thyroiditis with initial hyperthyroid phase followed by hypothyroidism — may be permanent",
+          "Thyroid function (TSH and Free T4) should be checked before starting checkpoint inhibitor therapy and before every treatment cycle",
+          "Levothyroxine replacement for checkpoint inhibitor-induced hypothyroidism is standard; immunotherapy is usually continued unless severe toxicity",
+          "HIV/AIDS patients: hypothyroidism can occur from HIV itself (infiltrative disease, opportunistic infection of thyroid — Pneumocystis, CMV), medications (stavudine, didanosine may affect thyroid), or concomitant autoimmune conditions",
+          "Organ transplant recipients on immunosuppressants may have altered levothyroxine requirements — drug interactions with tacrolimus, ciclosporin; check TSH annually"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Annual Influenza Vaccine",
+        "frequency": "Annually before flu season",
+        "reason": "Influenza can trigger exacerbation of autoimmune thyroiditis (Hashimoto's) through molecular mimicry and immune system activation. Respiratory infections are among the most common precipitants of myxoedema coma in patients with severe uncontrolled hypothyroidism. All patients with autoimmune thyroid disease should receive annual influenza vaccination.",
+        "effectiveness": "40-60% effective annually (varies with strain match)"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV13 and PPSV23)",
+        "frequency": "PCV15 or PCV20 once; PPSV23 booster after 5 years for high-risk groups",
+        "reason": "Pneumonia is the most common precipitant of myxoedema coma in patients with severe hypothyroidism — pneumococcal pneumonia is a major cause. Patients with hypothyroidism on long-term levothyroxine who are over 65 years, immunocompromised (from associated autoimmune conditions or cancer treatment), or have chronic respiratory disease should receive pneumococcal vaccination.",
+        "indication": "All adults ≥65 years; younger patients with immunocompromising conditions associated with Hashimoto's (e.g., concurrent Addison's disease, Type 1 diabetes)"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "frequency": "Primary series plus boosters per national schedule",
+        "reason": "COVID-19 has been associated with triggering thyroiditis and exacerbating autoimmune thyroid disease including Hashimoto's. SARS-CoV-2 infection can cause transient hyperthyroidism from subacute thyroiditis, followed by hypothyroidism. Patients with hypothyroidism are not at substantially higher risk from COVID-19 itself if well-controlled, but vaccination is recommended universally. Note: COVID-19 vaccines have occasionally triggered thyroiditis post-vaccination (very rare) — monitor TSH in symptomatic patients after vaccination.",
+        "recommendation": "Follow national vaccination schedule; ensure up-to-date vaccinations"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "frequency": "3-dose series (0, 1, 6 months)",
+        "reason": "Hepatitis B is associated with triggering autoimmune thyroid conditions and thyroiditis. Patients with autoimmune thyroid disease (Hashimoto's, Grave's disease) are at increased risk of other autoimmune conditions. Hepatitis B vaccination is recommended for all adults under 60 who are not immune.",
+        "note": "Not specific to thyroid disease — part of universal adult vaccination recommendation"
+      },
+      {
+        "vaccine": "Varicella and MMR (if not immune)",
+        "frequency": "2 doses if no prior vaccination or documented immunity",
+        "reason": "Viral infections (particularly chickenpox/varicella and rubella) can trigger autoimmune thyroiditis flares. Patients with Hashimoto's who are non-immune should ensure they are vaccinated — particularly important before pregnancy (rubella in pregnancy causes congenital rubella syndrome). Note: live vaccines contraindicated in severely immunocompromised patients.",
+        "note": "MMR vaccine should be given before pregnancy; check immunity status as part of pre-conception planning"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Symptoms suggestive of hypothyroidism: persistent unexplained fatigue, weight gain, cold intolerance, constipation, dry skin and hair, hair loss, depression, cognitive slowing, palpitations, or menstrual irregularities — request TSH blood test",
+      "Newly diagnosed hypothyroidism — to discuss starting levothyroxine, appropriate dose, monitoring plan, and what to expect",
+      "TSH outside target range on routine blood test — dose adjustment consultation",
+      "Pregnancy confirmed or planned — URGENT: immediate TSH check and likely dose increase; do not wait for routine appointment",
+      "Recurrent miscarriage or fertility problems — TSH should be measured and optimised",
+      "New symptoms on established levothyroxine: possible dose change needed (TSH check) or new comorbidity",
+      "Newly prescribed medication known to interact with levothyroxine (calcium, iron, cholestyramine, PPIs, amiodarone, lithium, rifampicin, phenytoin, checkpoint inhibitors) — discuss absorption management and TSH monitoring",
+      "Neck lump or goitre changes — new or enlarging goitre, hard nodule, or rapid enlargement requires urgent thyroid evaluation",
+      "Persistent symptoms despite normal TSH on levothyroxine — evaluation for combination therapy, selenium, coeliac disease, other contributing causes",
+      "Symptoms of over-treatment: palpitations, anxiety, insomnia, weight loss, tremor, heat intolerance — possible TSH too low — check and reduce dose",
+      "Postpartum period — TSH at 6 weeks postpartum, especially if anti-TPO positive or had previous postpartum thyroiditis",
+      "New diagnosis of autoimmune condition (Type 1 diabetes, coeliac disease, pernicious anaemia, Addison's disease, vitiligo) — request TSH check given high association with Hashimoto's",
+      "Family history revealed of thyroid disease — request baseline TSH screening",
+      "Annual review if on stable levothyroxine — routine TSH and lipid profile monitoring"
+    ],
+
+    "emergency_signs": [
+      "Altered consciousness, stupor, confusion, or coma in a patient with known hypothyroidism — POSSIBLE MYXOEDEMA COMA — CALL EMERGENCY SERVICES (102/112/999/911) IMMEDIATELY",
+      "Very low body temperature with confusion in an elderly patient — hypothermic myxoedema coma — EMERGENCY; cover patient with blankets (passive warming) while awaiting ambulance — do NOT actively rewarm (can cause vasodilation and cardiovascular collapse)",
+      "Heart rate below 40 bpm with syncope, near-fainting, or severe chest pain — severe bradycardia requiring emergency cardiac management",
+      "Rapidly worsening dyspnoea in a hypothyroid patient — possible large pericardial effusion causing tamponade, or respiratory failure in myxoedema coma",
+      "New acute psychosis or complete psychiatric breakdown in a known hypothyroid patient — possible myxoedema madness — require urgent psychiatric and endocrine evaluation",
+      "Sudden severe choking, stridor, or dysphagia with rapidly enlarging neck swelling — possible tracheal or oesophageal compression from thyroid mass or haematoma — EMERGENCY AIRWAY",
+      "Pregnant woman with symptoms of severe hypothyroidism (extreme fatigue, confusion, cold) — fetal risk from maternal hypothyroidism is an obstetric emergency",
+      "Seizures in a patient with hypothyroidism — possible severe hyponatraemia from SIADH — EMERGENCY SODIUM MANAGEMENT",
+      "Severe chest pain on starting or increasing levothyroxine in elderly patient with cardiac history — possible precipitated myocardial ischaemia — STOP LEVOTHYROXINE and seek emergency care immediately"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is hypothyroidism and what does the thyroid gland actually do?",
+        "answer": "The thyroid gland is a butterfly-shaped gland in the lower front of the neck that produces two hormones — T4 (thyroxine) and T3 (triiodothyronine) — that regulate the speed of virtually all body processes: metabolism, energy production, body temperature, heart rate, digestion, brain function, muscle strength, skin, hair, and reproductive function. Hypothyroidism means the thyroid gland is producing insufficient amounts of these hormones — like having your body's engine running too slowly. Every organ system gradually slows down, resulting in fatigue, weight gain, feeling cold, constipation, dry skin, depression, and brain fog. The vast majority of cases are caused by autoimmune destruction of the thyroid gland (Hashimoto's thyroiditis) or by iodine deficiency globally."
+      },
+      {
+        "question": "What is the single best test for hypothyroidism?",
+        "answer": "The TSH (thyroid-stimulating hormone) blood test is the single most sensitive, specific, and cost-effective test for diagnosing hypothyroidism. TSH is the pituitary gland's signal to the thyroid — when thyroid hormone falls, the pituitary raises TSH to try to stimulate more production. A small fall in thyroid hormone causes a disproportionately large rise in TSH. TSH is the first-line test for all suspected thyroid disease. A normal TSH (0.4-4.5 mIU/L) essentially rules out significant primary hypothyroidism. If TSH is elevated, a Free T4 test is then added to determine severity and guide treatment."
+      },
+      {
+        "question": "Is hypothyroidism curable, and will I need medication forever?",
+        "answer": "For most people, hypothyroidism is a lifelong condition requiring ongoing once-daily levothyroxine (thyroid hormone replacement). However, this is not the same as being 'ill' — on the correct levothyroxine dose, almost all symptoms resolve completely and patients live entirely normal, healthy lives with the same life expectancy as the general population. Certain causes are transient and may resolve: postpartum thyroiditis (returns to normal in 70% of cases within 12 months), drug-induced hypothyroidism (may reverse if causative medication stopped), and subacute thyroiditis. If you are on levothyroxine and feel completely well — that means the treatment is working, not that you no longer need it. Stopping levothyroxine abruptly without medical guidance will cause hypothyroidism to return."
+      },
+      {
+        "question": "Why does levothyroxine need to be taken on an empty stomach, and what else should I avoid?",
+        "answer": "Levothyroxine absorption from the gut is affected by many things. Taking it on an empty stomach (30-60 minutes before breakfast) ensures maximum consistent absorption. Key things that reduce absorption and must be separated by at least 4 hours: calcium supplements, iron tablets, antacids containing calcium or magnesium, cholesterol-lowering resins, and soy products. Taking levothyroxine WITH coffee or espresso is one of the most common causes of poor TSH control — coffee significantly reduces absorption. Proton pump inhibitors (PPIs like omeprazole) also reduce absorption and may require a dose increase. The most important principle is consistency — take levothyroxine at the same time every day in the same way."
+      },
+      {
+        "question": "Are cruciferous vegetables (broccoli, cabbage, kale) and soy really dangerous for hypothyroidism?",
+        "answer": "This is one of the most common misconceptions about hypothyroid diet. Cruciferous vegetables contain goitrogens — substances that can impair thyroid hormone synthesis — but only when eaten in very large quantities and in raw form, and primarily in people with iodine deficiency NOT on levothyroxine. For people on levothyroxine with adequate iodine intake, moderate consumption of cooked cruciferous vegetables is entirely safe and nutritionally beneficial (they are rich in anti-cancer compounds, fibre, and vitamins). Cooking substantially destroys goitrogenic compounds. Soy is more relevant — soy foods significantly reduce levothyroxine absorption if taken concurrently; separate levothyroxine from soy by 4 hours. Moderate soy consumption at mealtimes (not with medication) is acceptable."
+      },
+      {
+        "question": "I'm taking levothyroxine and my TSH is normal, but I still feel tired and unwell. Why?",
+        "answer": "Persistent symptoms despite a normal TSH on levothyroxine is a real and common concern, and should not be dismissed. Possible reasons include: (1) TSH is 'normal' but not optimal for YOU — some patients feel better with TSH in the lower half of normal (0.5-1.5 mIU/L); (2) Poor levothyroxine absorption — coffee, calcium, iron, PPIs, or inconsistent timing; (3) Coeliac disease reducing absorption — needs testing if Hashimoto's; (4) Associated nutrient deficiencies — iron, Vitamin B12, Vitamin D, selenium deficiency are all very common in Hashimoto's and cause identical fatigue symptoms; (5) Associated conditions — depression, sleep apnoea, fibromyalgia, or anaemia; (6) Suboptimal T4-to-T3 conversion in some patients — discussion with endocrinologist about trial of combination T3+T4 therapy. Never assume 'normal TSH = no problem' — investigate the cause of persistent symptoms."
+      },
+      {
+        "question": "What is the difference between Hashimoto's thyroiditis and hypothyroidism?",
+        "answer": "Hashimoto's thyroiditis is the CAUSE — an autoimmune disease in which the immune system attacks and gradually destroys the thyroid gland. Hypothyroidism is the CONSEQUENCE — the state of insufficient thyroid hormone production that results from this destruction. Most people with Hashimoto's will eventually develop hypothyroidism, but Hashimoto's can exist for years or decades before the thyroid fails sufficiently to cause overt hypothyroidism (this stage is called subclinical hypothyroidism). Hashimoto's is confirmed by positive anti-TPO antibodies and characteristic ultrasound appearance. Hypothyroidism is confirmed by elevated TSH and low Free T4. Having Hashimoto's without overt hypothyroidism still matters — it indicates a higher risk of future hypothyroidism and is associated with other autoimmune conditions."
+      },
+      {
+        "question": "Can hypothyroidism cause depression? Will treating the thyroid cure the depression?",
+        "answer": "Yes — hypothyroidism is one of the most important reversible medical causes of depression. Thyroid hormones are essential for serotonin synthesis, brain neurotransmitter function, and cerebral glucose metabolism. Deficiency causes a spectrum from low mood and 'brain fog' to frank depressive illness. All patients presenting with new depression should have TSH measured before antidepressants are started. In patients whose depression is caused by hypothyroidism, levothyroxine treatment alone frequently resolves the depression completely within 3-6 months — without antidepressants. However, depression may have multiple causes and co-existing primary depression may coexist with hypothyroidism; in such cases, both should be treated. Never attribute all psychiatric symptoms to hypothyroidism without also assessing for primary mental health conditions."
+      },
+      {
+        "question": "Is it safe to take levothyroxine during pregnancy? Will my baby be normal?",
+        "answer": "Not only is levothyroxine safe in pregnancy — it is essential. Inadequate maternal thyroid hormone during pregnancy, especially in the critical first trimester, directly impairs fetal brain development. The fetal thyroid does not become functional until weeks 10-12 of pregnancy — before that, the baby is entirely dependent on the mother's T4. Levothyroxine is the same molecule as the thyroid hormone the mother's thyroid would produce normally — it crosses the placenta in appropriate physiological amounts and is safe for the baby. The dose almost always needs to be increased by 25-50% during pregnancy because the demand for thyroid hormone increases. With proper management — optimised levothyroxine dose and regular TSH monitoring every 4-6 weeks throughout pregnancy — outcomes for both mother and baby are completely normal."
+      },
+      {
+        "question": "What is subclinical hypothyroidism and does it need to be treated?",
+        "answer": "Subclinical hypothyroidism is defined as a TSH elevated above the upper limit of normal (typically >4.5 mIU/L) with a normal Free T4 — the pituitary is working harder than usual to maintain a normal thyroid hormone output. It is very common (4-10% of adults) and often discovered on routine blood testing. Whether it needs treatment depends on: (1) TSH level — above 10 mIU/L most guidelines recommend treatment regardless of symptoms; (2) Symptoms — if fatigue, weight gain, or other hypothyroid symptoms are present, treatment may help; (3) Anti-TPO antibodies — if positive, higher risk of progression and treatment more likely beneficial; (4) Pregnancy or planning pregnancy — treat if TSH >2.5 mIU/L; (5) Age — in elderly (>75), TSH up to 7 mIU/L may be acceptable without treatment given the risk of over-treatment. Discuss with your doctor — treatment decisions in subclinical hypothyroidism are individualised."
+      },
+      {
+        "question": "What foods should I definitely eat to support my thyroid?",
+        "answer": "The most important dietary priorities for thyroid health are: (1) Iodine — use iodised table salt in cooking (not rock salt, sea salt, or Himalayan pink salt which are not iodised); eat dairy products, eggs, and fish regularly; these contain adequate iodine for most people. (2) Selenium — 1-3 Brazil nuts per day provides excellent selenium; seafood, eggs, and chicken are good sources; selenium is essential for converting T4 to active T3. (3) Zinc — lean meat, shellfish, legumes (dal, chana), and pumpkin seeds. (4) Anti-inflammatory foods — turmeric (haldi), ginger, fatty fish, berries, and olive oil may help reduce Hashimoto's autoimmune activity. (5) Probiotics — daily plain yogurt (dahi) and fermented foods support the gut-thyroid axis. (6) Consistent levothyroxine timing is more important than any specific 'thyroid food' — the best dietary advice is a balanced, varied, nutrient-sufficient diet with correct medication timing."
+      },
+      {
+        "question": "My levothyroxine dose is not working properly — my TSH keeps being abnormal. Why?",
+        "answer": "The most common reasons for difficulty controlling TSH on levothyroxine are: (1) Absorption issues — taking medication with coffee, food, calcium, iron, or antacids; the most commonly overlooked cause; (2) Inconsistent timing — varying when the dose is taken causes fluctuating absorption; (3) Medication interactions — PPIs, rifampicin, phenytoin, cholestyramine; (4) Coeliac disease — causes malabsorption in the gut; screen with anti-tTG antibody test in Hashimoto's patients; (5) Biotin supplements — high-dose biotin falsely alters TSH results (stop biotin 48-72 hours before blood test); (6) Brand switching — changing between different brands of levothyroxine changes bioavailability; (7) Newly started medications — amiodarone, lithium, checkpoint inhibitors worsening thyroid function; (8) Pregnancy — dose requirements increase by 25-50%; (9) Non-adherence to medication; (10) Liquid levothyroxine formulation may have better absorption than standard tablets in some patients — discuss with doctor."
+      }
+    ],
+
+    "references": [
+      "American Thyroid Association (ATA) — 2014 Guidelines for the Management of Hypothyroidism in Adults (Jonklaas J et al., Thyroid 2014)",
+      "British Thyroid Association (BTA) and British Thyroid Foundation (BTF) — UK Guidelines for the Use of Thyroid Function Tests (2006, updated 2019)",
+      "European Thyroid Association (ETA) — Guidelines for the Management of Subclinical Hypothyroidism (Pearce SH et al., Eur Thyroid J 2013)",
+      "European Thyroid Association (ETA) — 2018 European Thyroid Association Guideline for the Management of Graves' Hyperthyroidism (Kahaly GJ et al.)",
+      "Royal College of Physicians (RCP) — The Diagnosis and Management of Primary Hypothyroidism (Clinical Guidelines 2011)",
+      "WHO, UNICEF, ICCIDD — Assessment of Iodine Deficiency Disorders and Monitoring their Elimination: A Guide for Programme Managers (3rd Edition, 2007)",
+      "Indian Thyroid Society (ITS) — Guidelines for Management of Hypothyroidism in Adults and Special Situations (2018)",
+      "Lazarus JH et al. — Antenatal Thyroid Screening and Childhood Cognitive Function (NEJM, 2012)",
+      "Negro R, Stagnaro-Green A — Diagnosis and Management of Subclinical Hypothyroidism in Pregnancy (BMJ, 2014)",
+      "ACOG Committee Opinion No. 381 — Subclinical Hypothyroidism in Pregnancy (Obstetrics and Gynecology, 2018)",
+      "Duntas LH, Benvenga S — Selenium: An Element for Life — Essential Roles and Relationship to Thyroid Disease (Endocrine, 2015)",
+      "Wiersinga WM et al. — ETA Guidelines on the Diagnosis and Treatment of Hypothyroidism after Treatment for Differentiated Thyroid Carcinoma",
+      "Stagnaro-Green A — Thyroid Antibodies and Miscarriage — Where Are We at a Generation Later? (J Thyroid Res, 2011)",
+      "CATALYST Trial — Selenium Supplementation in Autoimmune Thyroiditis (Winther KH et al., Lancet Diabetes Endocrinol, 2019)",
+      "Vanderpump MP — The Epidemiology of Thyroid Disease (Br Med Bull, 2011)",
+      "Cooper DS, Biondi B — Subclinical Thyroid Disease (Lancet, 2012)",
+      "Hennessey JV, Espaillat R — Diagnosis and Management of Subclinical Hypothyroidism in Elderly Adults — A Review of the Literature (JAMA Internal Medicine, 2015)",
+      "FSSAI (Food Safety and Standards Authority of India) — Food Fortification Resource Centre: Salt Iodisation Programme",
+      "National Institute for Health and Care Excellence (NICE) — Thyroid Disease: Assessment and Management (NG145, 2019, updated 2023)",
+      "UpToDate: Hypothyroidism in adults — Treatment with Thyroid Hormone; Hypothyroidism during Pregnancy; Congenital Hypothyroidism"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-HYPOTHYROIDISM-017",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-04",
+      "last_updated": "2026-06-04",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is for educational and informational purposes for the MedoAir chatbot only. It does not replace professional medical advice, diagnosis, or treatment. Hypothyroidism management — particularly in pregnancy, the elderly, and cardiac patients — requires individual physician guidance. Myxoedema coma is a medical emergency requiring immediate intensive care. Never adjust levothyroxine doses without blood test guidance from a qualified healthcare professional.",
+      "tags": ["hypothyroidism", "underactive thyroid", "Hashimoto's thyroiditis", "levothyroxine", "thyroid hormone", "TSH", "thyroid stimulating hormone", "myxoedema", "congenital hypothyroidism", "subclinical hypothyroidism", "iodine deficiency", "goitre", "thyroid antibodies", "anti-TPO", "selenium", "thyroid diet", "medoair", "endocrinology", "autoimmune thyroid"]
+    }
+  }
+}

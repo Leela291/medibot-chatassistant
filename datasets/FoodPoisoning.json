@@ -1,4 +1,1693 @@
 {
+
+  "disease": {
+    "id": "DIS-006",
+    "name": "Food Poisoning",
+    "scientific_name": "Foodborne Illness / Foodborne Disease / Foodborne Intoxication",
+    "icd_10_code": "A00-A09 (Intestinal Infectious Diseases); A02 (Salmonella); A04 (Other bacterial intestinal infections); A05 (Other bacterial foodborne intoxications); T61-T65 (Toxic effects of substances — chemical/toxin food poisoning); K52.9 (Non-infective gastroenteritis)",
+    "category": "Infectious Disease / Gastrointestinal Disease / Public Health Emergency",
+    "overview": {
+      "description": "Food poisoning (foodborne illness) is a broad term encompassing illness caused by consuming food or beverages contaminated with pathogenic bacteria, viruses, parasites, or their toxins, as well as chemical contaminants or natural toxins. It is one of the most common and preventable public health problems globally, manifesting predominantly as gastrointestinal illness — nausea, vomiting, diarrhea, and abdominal cramps — but potentially progressing to life-threatening complications including severe dehydration, septicaemia, haemolytic uraemic syndrome, neurological damage, and multi-organ failure. Symptoms typically begin within hours to days of consuming contaminated food and range from mild, self-limiting gastroenteritis to medical emergencies requiring intensive care.",
+      "affected_organ": "Primarily the gastrointestinal tract (stomach, small intestine, large intestine); systemically in severe cases: kidneys, liver, brain, blood, and nervous system",
+      "prevalence": "WHO estimates 600 million illnesses and 420,000 deaths globally per year; 1 in 10 people worldwide are affected annually; 125,000 deaths annually in children under 5 years.",
+      "age_group": "All ages; children under 5, elderly over 65, pregnant women, and immunocompromised individuals at highest risk for severe disease.",
+      "is_contagious": true,
+      "is_contagious_note": "Many foodborne illnesses are person-to-person transmissible (norovirus, hepatitis A, typhoid) in addition to food-borne transmission",
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": false,
+      "is_preventable": true,
+      "key_fact": "Approximately 90% of foodborne illnesses could be prevented with proper food safety practices"
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Bacterial Food Poisoning",
+        "description": "The most common cause of foodborne illness — accounting for the majority of food poisoning outbreaks worldwide. Bacteria contaminate food either before consumption (and multiply if food is improperly stored) or produce heat-stable toxins in food before it is eaten. Divided into: infective (bacteria invade intestinal mucosa — e.g., Salmonella, Campylobacter) and toxin-mediated (pre-formed toxin in food — e.g., Staphylococcus aureus, Bacillus cereus).",
+        "major_organisms": [
+          {
+            "organism": "Salmonella spp. (non-typhoidal)",
+            "foods": ["Raw/undercooked poultry and eggs", "Raw meat", "Unpasteurised dairy", "Contaminated fruits and vegetables"],
+            "incubation": "6-72 hours (usually 12-36 hours)",
+            "symptoms": "Diarrhoea (watery to mucoid), fever, abdominal cramps, nausea, vomiting",
+            "duration": "4-7 days",
+            "severity": "Mild to moderate; can be severe/fatal in infants, elderly, immunocompromised",
+            "treatment": "Oral rehydration; antibiotics (ciprofloxacin, azithromycin) only for severe/systemic disease",
+            "complications": "Bacteraemia, reactive arthritis, typhoid fever (Salmonella Typhi)"
+          },
+          {
+            "organism": "Campylobacter jejuni / coli",
+            "foods": ["Undercooked poultry (most common source)", "Raw milk", "Contaminated water", "Undercooked meat"],
+            "incubation": "1-10 days (usually 2-5 days)",
+            "symptoms": "Profuse watery or bloody diarrhoea, severe abdominal cramps, fever, nausea, vomiting",
+            "duration": "2-10 days",
+            "severity": "Usually self-limiting; severe in elderly and immunocompromised",
+            "treatment": "Oral rehydration; azithromycin or ciprofloxacin for severe cases",
+            "complications": "MOST COMMON trigger of Guillain-Barré Syndrome (GBS); reactive arthritis; post-infectious IBS",
+            "note": "Most common bacterial cause of gastroenteritis in high-income countries"
+          },
+          {
+            "organism": "Escherichia coli (E. coli) — particularly STEC O157:H7",
+            "foods": ["Undercooked ground beef (burgers)", "Raw leafy vegetables (spinach, lettuce)", "Raw milk", "Contaminated water", "Person-to-person (faecal-oral)"],
+            "incubation": "3-4 days (range 1-10 days)",
+            "symptoms": "Severe bloody diarrhoea, severe abdominal cramps, low-grade fever or no fever",
+            "duration": "5-10 days",
+            "severity": "Can be life-threatening — Haemolytic Uraemic Syndrome (HUS) develops in 5-10% of children",
+            "treatment": "Oral rehydration; antibiotics CONTRAINDICATED in STEC O157:H7 (increases HUS risk)",
+            "complications": "Haemolytic Uraemic Syndrome (HUS) — life-threatening triad of haemolytic anaemia, thrombocytopenia, and acute kidney failure; especially in children",
+            "warning": "Do NOT give antibiotics or antidiarrheals (loperamide) for E. coli O157:H7"
+          },
+          {
+            "organism": "Staphylococcus aureus",
+            "foods": ["Potato salad", "Egg salad", "Cream pastries", "Sandwiches", "Deli meats — food left at room temperature"],
+            "incubation": "1-6 hours (very short — toxin pre-formed in food)",
+            "symptoms": "Explosive vomiting (dominant), nausea, abdominal cramps, diarrhoea; RARELY fever",
+            "duration": "6-24 hours (usually brief)",
+            "severity": "Usually mild and self-limiting",
+            "treatment": "Oral rehydration; antiemetics; antibiotics NOT required (toxin-mediated)",
+            "note": "Toxin is heat-stable — cooking food after contamination does not destroy the toxin"
+          },
+          {
+            "organism": "Bacillus cereus",
+            "foods_emetic": "Reheated fried rice, pasta, cooked cereals left at room temperature (Emetic syndrome — rice dish left out after cooking)",
+            "foods_diarrhoeal": "Meat products, vegetable dishes, sauces (Diarrhoeal syndrome)",
+            "incubation_emetic": "0.5-6 hours (short — emetic toxin pre-formed)",
+            "incubation_diarrhoeal": "6-24 hours (longer — toxin produced in gut)",
+            "symptoms_emetic": "Explosive vomiting, nausea — minimal diarrhoea",
+            "symptoms_diarrhoeal": "Watery diarrhoea, abdominal cramps — mild or no vomiting",
+            "duration": "6-24 hours",
+            "treatment": "Supportive care only; oral rehydration",
+            "note": "Classic cause of 'Chinese takeaway food poisoning' — reheated rice syndrome; emetic toxin cereulide is heat-stable"
+          },
+          {
+            "organism": "Clostridium perfringens",
+            "foods": ["Cooked meat dishes (especially beef, poultry, gravy)", "Stews — prepared in bulk and cooled slowly", "Cafeteria and institutional food"],
+            "incubation": "8-16 hours",
+            "symptoms": "Sudden watery diarrhoea and abdominal cramping; vomiting uncommon; no fever",
+            "duration": "12-24 hours (usually brief, self-limiting)",
+            "treatment": "Oral rehydration",
+            "note": "Spores survive cooking and germinate as food cools slowly — kept warm between 20-50°C"
+          },
+          {
+            "organism": "Clostridium botulinum (Botulism)",
+            "foods": ["Home-preserved/canned foods (low-acid vegetables, meat)", "Fermented foods", "Honey (infant botulism)", "Commercial canned goods (rare)"],
+            "incubation": "12-72 hours (up to 10 days for food-borne)",
+            "symptoms": "Descending FLACCID paralysis — ptosis, diplopia, dysarthria, dysphagia, respiratory failure; NO diarrhoea typically; minimal fever; toxin already in food",
+            "duration": "Weeks to months (requires ventilatory support in severe cases)",
+            "severity": "POTENTIALLY FATAL — respiratory paralysis; 5-10% case fatality rate",
+            "treatment": "IV/IM heptavalent botulinum antitoxin (HBAT); ICU respiratory support; mechanical ventilation if needed",
+            "note": "MEDICAL EMERGENCY — descending paralysis is characteristic; do NOT give antidiarrheals; report immediately to public health"
+          },
+          {
+            "organism": "Listeria monocytogenes",
+            "foods": ["Ready-to-eat chilled foods", "Soft cheeses (brie, camembert, blue cheese)", "Smoked fish and deli meats", "Raw milk", "Pre-packaged salads"],
+            "incubation": "3-70 days (median ~21 days — very long; called 'the great mimic')",
+            "symptoms": "Mild: flu-like illness; fever, muscle aches. Severe (invasive): meningitis, septicaemia, encephalitis; in pregnancy: foetal loss, premature birth, neonatal meningitis",
+            "severity": "High mortality (20-30%) in at-risk groups; ESPECIALLY DANGEROUS in pregnancy, elderly, immunocompromised",
+            "treatment": "IV ampicillin + gentamicin (combination therapy for severe/invasive listeriosis)",
+            "note": "Grows at refrigerator temperatures (4°C) — unlike most bacteria; this makes it particularly dangerous in chilled foods"
+          },
+          {
+            "organism": "Vibrio parahaemolyticus / Vibrio cholerae",
+            "foods": ["Raw or undercooked seafood — oysters, clams, shrimp, crabs", "Contaminated water (cholera)"],
+            "incubation": "4-96 hours (Vibrio para); 2-3 days (cholera)",
+            "symptoms": "Vibrio para: watery/bloody diarrhoea, abdominal cramps, fever, nausea, vomiting. Cholera: profuse watery diarrhoea ('rice water stools'), vomiting, rapid dehydration — NO fever",
+            "severity": "Cholera: life-threatening dehydration (can lose 10-20L fluid/day); case fatality >50% without treatment; <1% with early ORT",
+            "treatment": "Oral rehydration (IV for severe cholera); tetracycline, azithromycin, or ciprofloxacin for cholera"
+          },
+          {
+            "organism": "Shigella spp. (Shigellosis / Bacillary Dysentery)",
+            "foods": ["Contaminated water", "Raw vegetables", "Person-to-person faecal-oral", "Minimal infective dose — 10-100 organisms"],
+            "incubation": "1-4 days",
+            "symptoms": "Watery diarrhoea → bloody mucoid diarrhoea (dysentery), tenesmus, fever, abdominal cramping",
+            "treatment": "Ciprofloxacin or azithromycin; ORS",
+            "complications": "Haemolytic Uraemic Syndrome (rare — Shigella dysenteriae type 1); toxic megacolon; reactive arthritis"
+          },
+          {
+            "organism": "Typhoid fever (Salmonella Typhi / Paratyphi)",
+            "foods": ["Contaminated water", "Food handled by carriers", "Raw vegetables washed in contaminated water"],
+            "incubation": "7-21 days",
+            "symptoms": "Stepwise rising fever, relative bradycardia, headache, malaise, abdominal pain, rose spots (skin rash), hepatosplenomegaly, constipation or diarrhoea",
+            "duration": "Weeks if untreated",
+            "severity": "Can be fatal without treatment; 1-4% case fatality rate untreated",
+            "treatment": "Azithromycin, ceftriaxone, or ciprofloxacin (check local resistance patterns)"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Viral Food Poisoning",
+        "description": "Viruses are responsible for a majority of all foodborne illnesses in high-income countries. Person-to-person transmission is also common (faecal-oral route). Viral food poisoning typically causes shorter illness duration than bacterial but can be very disabling.",
+        "major_organisms": [
+          {
+            "organism": "Norovirus (Norwalk virus family)",
+            "foods": ["Contaminated shellfish (especially oysters)", "Ready-to-eat foods handled by infected food workers", "Contaminated water", "Fresh produce"],
+            "incubation": "12-48 hours",
+            "symptoms": "Explosive vomiting (projectile), watery diarrhoea, nausea, abdominal cramps, low-grade fever, headache, myalgia",
+            "duration": "1-3 days (typically 24-48 hours)",
+            "severity": "Usually self-limiting; can be severe in elderly and immunocompromised; dehydration risk especially in very young children",
+            "treatment": "Oral rehydration only; no antiviral treatment; antibiotics NOT useful",
+            "note": "MOST COMMON cause of acute viral gastroenteritis worldwide — responsible for 50% of all food-borne outbreaks globally; very contagious (18 viral particles sufficient for infection); survives up to 2 weeks on surfaces; chlorine-resistant; highly transmissible person-to-person"
+          },
+          {
+            "organism": "Rotavirus",
+            "foods": ["Contaminated water", "Person-to-person (mainly)", "Contaminated surfaces"],
+            "incubation": "1-3 days",
+            "symptoms": "Profuse watery diarrhoea (yellow-green colour), vomiting, fever, dehydration",
+            "duration": "3-8 days",
+            "severity": "Most severe in children under 5 — leading viral cause of severe childhood diarrhoea and dehydration globally before widespread vaccination",
+            "treatment": "Oral rehydration; hospitalisation if severe dehydration",
+            "prevention": "Rotavirus vaccine highly effective (Rotarix, RotaTeq) — dramatically reduced rotavirus hospitalisation in vaccinated countries"
+          },
+          {
+            "organism": "Hepatitis A Virus (HAV)",
+            "foods": ["Contaminated shellfish (especially clams, oysters)", "Raw produce (strawberries, raspberries, green onions)", "Food handled by infected food workers"],
+            "incubation": "15-50 days (average 28 days)",
+            "symptoms": "Prodrome: fever, nausea, anorexia, malaise. Then: jaundice (yellowing), dark urine, pale stools, right upper quadrant pain, hepatomegaly",
+            "duration": "2-6 weeks (usually self-limiting)",
+            "severity": "Usually self-limiting; case fatality rate <0.1% in young adults; 1.8% over age 50; fulminant hepatic failure rare",
+            "treatment": "Supportive care; no antiviral treatment; rest, hydration, avoid alcohol",
+            "prevention": "Hepatitis A vaccine (2 doses); highly effective"
+          },
+          {
+            "organism": "Hepatitis E Virus (HEV)",
+            "foods": ["Contaminated water (most common route)", "Undercooked pork, wild boar meat (zoonotic HEV genotype 3)", "Raw shellfish"],
+            "incubation": "15-64 days (average 40 days)",
+            "symptoms": "Fever, malaise, anorexia, nausea, vomiting, abdominal pain, jaundice",
+            "severity": "ESPECIALLY DANGEROUS in pregnancy — case fatality rate 20-25% in pregnant women (3rd trimester); can cause fulminant hepatic failure and foetal loss",
+            "treatment": "Supportive care; ribavirin for severe/chronic cases in immunocompromised",
+            "note": "Leading cause of acute hepatitis in developing countries including India; waterborne outbreaks common"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Parasitic Food and Waterborne Illness",
+        "description": "Parasites causing food and waterborne illness range from single-celled protozoa to multi-cellular helminths (worms). Parasitic infections are particularly common in areas with poor sanitation and contaminated water supplies. Onset is typically delayed compared to bacterial and viral food poisoning.",
+        "major_organisms": [
+          {
+            "organism": "Entamoeba histolytica (Amoebic Dysentery)",
+            "route": "Contaminated water and food; faecal-oral",
+            "incubation": "2-4 weeks (can be months)",
+            "symptoms": "Bloody mucoid diarrhoea (dysentery), tenesmus, abdominal cramps; invasive: amoebic liver abscess (right upper quadrant pain, fever, tender hepatomegaly)",
+            "treatment": "Metronidazole 500-750mg three times daily for 5-10 days; followed by luminal agent (diloxanide furoate or paromomycin)",
+            "complications": "Amoebic liver abscess — most common extraintestinal complication; amoebic colitis; perforation; toxic megacolon"
+          },
+          {
+            "organism": "Giardia lamblia (Giardiasis)",
+            "route": "Contaminated water (most common — cysts highly chlorine-resistant); food; person-to-person",
+            "incubation": "1-3 weeks",
+            "symptoms": "Chronic watery or greasy diarrhoea, bloating, flatulence, abdominal cramps, sulphur burps, weight loss; NO blood in stool",
+            "duration": "Weeks to months if untreated",
+            "treatment": "Metronidazole 400mg three times daily for 5-7 days; tinidazole 2g single dose; nitazoxanide",
+            "note": "Most common intestinal protozoal infection globally; traveller's diarrhoea cause"
+          },
+          {
+            "organism": "Cryptosporidium parvum / hominis",
+            "route": "Contaminated water (chlorine-resistant oocysts); person-to-person; contact with animals",
+            "incubation": "2-10 days",
+            "symptoms": "Watery diarrhoea, abdominal cramps, nausea, vomiting, low-grade fever; immunocompromised: severe chronic diarrhoea",
+            "treatment": "Nitazoxanide (immunocompetent); no reliable treatment in severe immunosuppression; ORS",
+            "note": "Chlorine-resistant in swimming pools and water supplies; major cause of waterborne outbreaks"
+          },
+          {
+            "organism": "Trichinella spiralis (Trichinellosis)",
+            "route": "Undercooked pork, wild boar, bear meat",
+            "incubation": "1-2 days GI phase; 2-8 weeks systemic phase",
+            "symptoms": "GI phase: diarrhoea, vomiting. Systemic phase: periorbital oedema, myalgia, fever, headache, splinter haemorrhages",
+            "treatment": "Albendazole or mebendazole; corticosteroids for severe myositis"
+          },
+          {
+            "organism": "Taenia spp. (Tapeworms)",
+            "route": "T. solium from undercooked pork; T. saginata from undercooked beef",
+            "symptoms": "Usually asymptomatic; abdominal discomfort, weight loss, proglottids in stool; neurocysticercosis (T. solium larvae in brain — seizures, headache)",
+            "treatment": "Praziquantel; niclosamide"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Toxin-Mediated Food Poisoning (Preformed Toxins)",
+        "description": "Caused by consuming food already containing preformed toxins produced by bacteria, fungi, algae, or fish. Toxins are often heat-stable and are NOT destroyed by cooking food after contamination. Characteristically has very short incubation period (minutes to hours). No viable bacteria need to be present — the toxin alone causes illness.",
+        "major_toxins": [
+          {
+            "toxin": "Staphylococcal Enterotoxins (A-E)",
+            "source": "Staphylococcus aureus pre-formed in warm food",
+            "incubation": "1-6 hours",
+            "features": "Explosive vomiting, nausea; toxin heat-stable at 100°C for 30 min — cooking AFTER contamination does NOT help"
+          },
+          {
+            "toxin": "Botulinum Toxin (Types A, B, E, F)",
+            "source": "Clostridium botulinum in anaerobic conditions (canned/preserved foods)",
+            "incubation": "12-72 hours (food-borne)",
+            "features": "Descending flaccid paralysis; ptosis, diplopia, dysphagia, respiratory failure; MEDICAL EMERGENCY"
+          },
+          {
+            "toxin": "Cereulide (Bacillus cereus emetic toxin)",
+            "source": "Reheated rice and pasta",
+            "incubation": "0.5-6 hours",
+            "features": "Explosive vomiting; heat-stable toxin"
+          },
+          {
+            "toxin": "Ciguatera Toxin (Ciguatoxin)",
+            "source": "Large reef fish (barracuda, grouper, snapper, tuna) from tropical/subtropical waters",
+            "incubation": "1-6 hours",
+            "features": "GI symptoms PLUS neurological: peripheral paresthesias (burning/numbness), TEMPERATURE REVERSAL (cold feels hot — pathognomonic), reversal of sensory perceptions, bradycardia, hypotension; toxin heat-stable — not destroyed by cooking",
+            "treatment": "Supportive; IV mannitol may help neurological symptoms; avoid alcohol and nut consumption (worsens symptoms for months)"
+          },
+          {
+            "toxin": "Scombroid (Histamine) Fish Poisoning",
+            "source": "Improperly refrigerated scombroid fish (tuna, mackerel, mahi-mahi, swordfish) — bacteria convert histidine to histamine",
+            "incubation": "Minutes to 2 hours",
+            "features": "Flushing, urticaria (hives), burning/metallic taste in mouth, GI symptoms, headache, palpitations — MIMICS ALLERGIC REACTION; fever may be present; normal IgE (not true allergy)",
+            "treatment": "Antihistamines (diphenhydramine, cetirizine); epinephrine if severe; resolves in 24 hours"
+          },
+          {
+            "toxin": "Paralytic Shellfish Poisoning (PSP) — Saxitoxin",
+            "source": "Shellfish (mussels, clams, oysters, scallops) from harmful algal bloom areas",
+            "incubation": "Minutes to hours",
+            "features": "Oral and perioral paresthesias (tingling), numbness, ataxia, muscle weakness, respiratory paralysis",
+            "treatment": "Supportive; ICU respiratory support; no specific antidote"
+          },
+          {
+            "toxin": "Aflatoxin (Aspergillus flavus / parasiticus)",
+            "source": "Mouldy maize, groundnuts (peanuts), tree nuts, dried spices",
+            "features": "Acute: hepatotoxicity, jaundice; Chronic: most potent natural carcinogen — hepatocellular carcinoma (liver cancer)"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Chemical Food Poisoning",
+        "description": "Caused by chemical contaminants in food — including pesticide residues, heavy metals, industrial chemicals, and food additive reactions. Often presents with rapid onset and may involve neurological or systemic symptoms beyond the GI tract.",
+        "examples": [
+          {
+            "chemical": "Organophosphate and Carbamate Pesticides",
+            "source": "Pesticide residues on unwashed fruits and vegetables",
+            "symptoms": "DUMBELS: Diarrhoea, Urination, Miosis (small pupils), Bradycardia/Bronchospasm, Emesis, Lacrimation, Salivation; muscle fasciculations, seizures",
+            "treatment": "Atropine (antidote for muscarinic effects); pralidoxime (2-PAM) for organophosphates; decontamination"
+          },
+          {
+            "chemical": "Heavy Metal Poisoning (Lead, Mercury, Cadmium, Arsenic)",
+            "source": "Contaminated water, acidic foods in old tin cans, fish (mercury), contaminated soil",
+            "symptoms": "Nausea, vomiting, abdominal pain, metallic taste; chronic: neurological damage, kidney disease",
+            "treatment": "Chelation therapy (DMSA, BAL, EDTA) for acute poisoning"
+          },
+          {
+            "chemical": "Nitrite Poisoning (Cured Meats — Methaemoglobinaemia)",
+            "source": "Excessive nitrite-cured meats; contaminated well water",
+            "symptoms": "Cyanosis (blue skin), headache, dizziness, dyspnoea; blood becomes chocolate brown",
+            "treatment": "Methylene blue IV"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Mushroom Poisoning (Mycetism)",
+        "description": "Caused by ingestion of toxic mushrooms. Ranges from mild GI symptoms to life-threatening liver failure. The most dangerous mushroom toxin globally is Amatoxin (from Amanita phalloides — Death Cap mushroom).",
+        "types": [
+          {
+            "toxin": "Amatoxins (Amanita phalloides — Death Cap, Amanita ocreata, Galerina marginata)",
+            "incubation": "6-24 hours GI phase; liver failure 3-5 days",
+            "features": "Phase 1 (6-24h): Choleriform — profuse vomiting, watery diarrhoea, severe abdominal cramps; Phase 2 (24-72h): Apparent recovery (false improvement); Phase 3 (3-7 days): Fulminant hepatic and renal failure; HIGHLY FATAL",
+            "treatment": "Activated charcoal early; IV silibinin (milk thistle extract); N-acetylcysteine; liver transplant in severe cases"
+          },
+          {
+            "toxin": "Muscarine / Muscarinic toxins (Inocybe, Clitocybe species)",
+            "incubation": "0.5-2 hours",
+            "features": "DUMBELS syndrome: salivation, lacrimation, sweating, miosis, bradycardia, bronchospasm",
+            "treatment": "Atropine"
+          },
+          {
+            "toxin": "Ibotenic acid / Muscimol (Amanita muscaria — Fly Agaric)",
+            "incubation": "0.5-2 hours",
+            "features": "Hallucinations, confusion, euphoria, seizures",
+            "treatment": "Supportive; benzodiazepines for agitation/seizures"
+          }
+        ]
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Food Poisoning",
+        "description": "Self-limiting illness with minimal dehydration and no systemic involvement",
+        "symptoms": "Nausea, mild vomiting (1-3 episodes), mild watery diarrhoea (3-5 loose stools/day), mild abdominal cramps; no blood in stool; no fever or low-grade fever (<38°C)",
+        "dehydration": "None or minimal — urine still normal colour and frequency",
+        "functional_impact": "Some discomfort; most daily activities still possible",
+        "management": "Home management with oral rehydration; BRAT diet; rest; no antibiotics needed; resolves within 24-48 hours",
+        "criteria_for_upgrade": "If symptoms persist beyond 48-72 hours, fever rises, blood appears in stool, or dehydration develops"
+      },
+      {
+        "level": 2,
+        "name": "Moderate Food Poisoning",
+        "description": "Significant GI illness with moderate dehydration requiring medical evaluation",
+        "symptoms": "Persistent vomiting (>3-5 episodes) preventing adequate fluid intake; diarrhoea >5-10 loose stools/day; abdominal cramps; fever 38-39°C; possible mucus in stool",
+        "dehydration": "Moderate — decreased urine output, dry mouth, moderate thirst, mild dizziness on standing",
+        "functional_impact": "Unable to work or carry out normal activities; bed rest required",
+        "management": "GP or urgent care review; oral rehydration with ORS; possible antiemetics; blood tests if indicated; consider antibiotic if specific bacteria suspected; monitor for worsening",
+        "who_needs_medical_attention": "High-risk groups: children <2 years, elderly >65, pregnant women, immunocompromised, chronic illness"
+      },
+      {
+        "level": 3,
+        "name": "Severe Food Poisoning",
+        "description": "Severe GI illness with significant dehydration, systemic illness, or bloody diarrhoea requiring hospitalisation",
+        "symptoms": "Persistent bloody or mucoid diarrhoea; high fever >39°C; severe vomiting; signs of dehydration; inability to tolerate any fluids; confusion or altered consciousness",
+        "dehydration": "Severe — significantly reduced urine output (<0.5 mL/kg/hour), sunken eyes, dry mucous membranes, tachycardia, hypotension, skin tenting",
+        "functional_impact": "Complete incapacitation; requires hospitalisation",
+        "management": "Emergency department attendance; IV fluid resuscitation; blood cultures; stool cultures; IV antibiotics as guided by microbiology; monitoring for complications (HUS, bacteraemia, organ failure)",
+        "emergency_criteria": "Signs of sepsis, signs of peritonitis, neurological symptoms (botulism), pregnancy complications, age extremes"
+      },
+      {
+        "level": 4,
+        "name": "Critical / Life-Threatening Food Poisoning",
+        "description": "Life-threatening complications including septicaemia, multi-organ failure, neurological involvement (botulism), HUS, or toxic megacolon",
+        "examples": "Botulism with respiratory paralysis; STEC O157:H7 with HUS; Listeria meningitis; Amanita mushroom poisoning with liver failure; Cholera with extreme dehydration; Typhoid perforation",
+        "management": "ICU admission; intensive monitoring; organ-specific treatment; specialist input (nephrology, hepatology, neurology as needed); antitoxin for botulism; liver transplant for fulminant hepatic failure",
+        "mortality": "Varies by pathogen — Botulism: 5-10%; Listeria: 20-30%; Amanita poisoning: up to 30% without liver transplant"
+      }
+    ],
+
+    "causes": {
+      "causative_agents_overview": {
+        "bacteria": "50-70% of identifiable foodborne illness in high-income countries; Campylobacter, Salmonella, Staphylococcus aureus, E. coli, Listeria, Clostridium most important",
+        "viruses": "Responsible for majority of food poisoning outbreaks by number; Norovirus most common cause globally",
+        "parasites": "Major cause in low-to-middle income countries; Entamoeba, Giardia, Cryptosporidium, Taenia",
+        "toxins": "Pre-formed toxins in food (Staph, B. cereus, Botulinum, fish toxins)",
+        "chemicals": "Pesticides, heavy metals, industrial contamination"
+      },
+      "routes_of_contamination": [
+        {
+          "route": "Improper Temperature Control",
+          "description": "The MOST COMMON cause of food poisoning. Bacterial multiplication occurs most rapidly between 5°C and 63°C (the 'Danger Zone'). Food left in this temperature range for more than 2 hours allows dangerous levels of bacterial growth.",
+          "examples": ["Cooked food left at room temperature >2 hours before serving", "Slow cooling of large batches of food", "Inadequate refrigeration", "Hot food not maintained above 63°C during service"]
+        },
+        {
+          "route": "Cross-Contamination",
+          "description": "Transfer of pathogens from one food (usually raw) to another (usually cooked/ready-to-eat) through direct contact, contaminated equipment, or food handlers' hands.",
+          "examples": ["Raw meat juices contaminating ready-to-eat foods", "Using same chopping board for raw chicken and salad vegetables", "Hands contaminated with raw meat touching cooked food", "Raw and cooked foods stored together in refrigerator"]
+        },
+        {
+          "route": "Undercooking / Inadequate Heat Treatment",
+          "description": "Insufficient cooking temperatures fail to kill pathogens in food. Different foods require specific internal temperature targets.",
+          "safe_internal_temperatures": {
+            "poultry": "≥75°C (165°F) throughout",
+            "ground_meat_burgers": "≥71°C (160°F) throughout",
+            "whole_cuts_beef_lamb": "≥63°C (145°F) with 3-min rest",
+            "pork": "≥63°C (145°F)",
+            "fish": "≥63°C (145°F)",
+            "eggs_dishes": "Yolk and white firm; ≥71°C egg dishes",
+            "reheated_food": "≥75°C throughout (never reheat more than once)"
+          }
+        },
+        {
+          "route": "Contaminated Water Supply",
+          "description": "Untreated or contaminated water used for drinking, cooking, or irrigation of crops. Major cause in developing countries. Cryptosporidium and Giardia resistant to standard chlorination.",
+          "examples": ["Drinking untreated well, river, or stream water", "Ice made from contaminated water", "Raw vegetables irrigated with contaminated water or sewage effluent", "Swimming in contaminated water (Cryptosporidium)"]
+        },
+        {
+          "route": "Poor Food Handler Hygiene",
+          "description": "Infected food handlers are a major source of foodborne outbreaks — particularly for norovirus, hepatitis A, typhoid, and Shigella. Inadequate handwashing is the primary pathway.",
+          "examples": ["Not washing hands after using toilet", "Handling food while ill with gastroenteritis", "Not washing hands after handling raw meat before touching other foods", "Working while symptomatic with norovirus or diarrhoea"]
+        },
+        {
+          "route": "Inadequate Storage",
+          "description": "Improper storage conditions promote bacterial growth and toxin formation.",
+          "examples": ["Leaving cooked food uncovered at room temperature", "Storing raw meat above cooked food in refrigerator", "Thawing frozen food at room temperature", "Storing dry goods in damp conditions (aflatoxin production in mould)"]
+        },
+        {
+          "route": "Contamination at Source (Primary Production)",
+          "description": "Pathogens present in animals before slaughter (Salmonella, Campylobacter in poultry), in farm environment, or in water used for irrigation.",
+          "examples": ["Salmonella/Campylobacter naturally present in chicken gut", "E. coli O157:H7 in cattle gut", "Norovirus in shellfish filtering contaminated sewage", "HAV in shellfish from polluted waters"]
+        }
+      ],
+      "risk_factors": [
+        "Consuming raw or undercooked meat, poultry, seafood, or eggs",
+        "Eating at street food stalls or establishments with poor hygiene practices",
+        "Consuming raw shellfish (oysters, clams, mussels — concentrate viral and bacterial pathogens from water)",
+        "Drinking untreated or unboiled water in areas with poor sanitation",
+        "International travel to areas with different food safety standards (traveller's diarrhoea)",
+        "Eating food prepared in bulk (institutional catering, weddings, parties) with slow cooling",
+        "Consuming unpasteurised dairy products (raw milk, soft fresh cheese)",
+        "Age <5 years or >65 years — higher susceptibility and risk of severe disease",
+        "Pregnancy — altered immunity, Listeria risk specifically",
+        "Immunosuppression — HIV, chemotherapy, organ transplants, high-dose corticosteroids",
+        "Chronic conditions — liver disease, diabetes, gastrointestinal disease",
+        "Eating during the summer (warmer temperatures accelerate bacterial growth — food poisoning peaks June-September in northern hemisphere)",
+        "Not washing hands before eating or after using the bathroom",
+        "Home food preservation (canning, fermenting) without proper technique (Botulism risk)"
+      ]
+    },
+
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-601",
+          "name": "Nausea",
+          "description": "Sensation of stomach upset and urge to vomit — typically one of the earliest symptoms of food poisoning. Onset time after eating contaminated food is an important diagnostic clue: nausea within 1-6 hours suggests Staphylococcus aureus or Bacillus cereus (toxin pre-formed in food); nausea after 6-24 hours suggests bacterial infection; nausea after 1-5 days suggests viral illness or bacterial invasion.",
+          "severity": "Mild to Severe",
+          "onset": "Minutes to hours to days after consuming contaminated food depending on causative agent"
+        },
+        {
+          "id": "SYM-602",
+          "name": "Vomiting",
+          "description": "Forceful expulsion of stomach contents — a protective mechanism to eliminate toxins. Can be explosive and projectile (characteristic of norovirus and Staphylococcus toxin). Repeated vomiting leads to dehydration, electrolyte loss, and inability to retain oral fluids or medications.",
+          "severity": "Mild to Severe",
+          "onset": "Hours after ingestion",
+          "clinical_importance": "Profuse vomiting is the hallmark of norovirus and staph food poisoning; repeated vomiting requiring IV fluids is an emergency sign in at-risk populations"
+        },
+        {
+          "id": "SYM-603",
+          "name": "Diarrhoea",
+          "description": "Loose or liquid stools, often frequent (>3 times in 24 hours meeting definition). Character varies by pathogen: Watery diarrhoea = non-invasive bacteria (toxin-mediated: Staph, B. cereus, Vibrio cholerae), viruses. Bloody diarrhoea (dysentery) = invasive bacteria: Shigella, Campylobacter, STEC E. coli, Entamoeba. Rice water stools = Vibrio cholerae. Greasy floating stools = Giardia.",
+          "severity": "Mild to Severe — major cause of dangerous fluid/electrolyte loss",
+          "onset": "Hours to days after ingestion",
+          "note": "Presence of blood in diarrhoea is an important warning sign — requires prompt medical evaluation; loperamide CONTRAINDICATED with bloody diarrhoea"
+        },
+        {
+          "id": "SYM-604",
+          "name": "Abdominal Cramps and Pain",
+          "description": "Crampy, colicky abdominal pain — typically periumbilical or diffuse. Caused by intestinal hyperperistalsis as the gut attempts to expel contaminated contents. Severe constant abdominal pain (not colicky) with guarding or rigidity suggests complications (peritonitis, ileus, toxic megacolon) — emergency sign.",
+          "severity": "Mild to Severe",
+          "onset": "Concurrent with nausea and vomiting or diarrhoea"
+        },
+        {
+          "id": "SYM-605",
+          "name": "Fever",
+          "description": "Elevated body temperature indicates systemic inflammatory response to infection — distinguishes INFECTIVE food poisoning (bacteria invading intestinal wall, entering bloodstream) from TOXIN-MEDIATED (Staph, B. cereus) where fever is minimal or absent. High fever (>39°C) in food poisoning suggests invasive bacterial disease and possible bacteraemia/septicaemia.",
+          "severity": "Low-grade (<38.5°C) in most to High (>39°C) in invasive bacterial infection",
+          "onset": "Hours after illness onset",
+          "note": "ABSENCE of fever with vomiting suggests toxin-mediated (Staph, B. cereus); PRESENCE of high fever with bloody diarrhoea suggests Shigella, Campylobacter, or invasive Salmonella"
+        },
+        {
+          "id": "SYM-606",
+          "name": "Dehydration Signs",
+          "description": "Progressive loss of body fluids and electrolytes from vomiting and diarrhoea leads to dehydration — the major cause of food poisoning deaths worldwide (especially in children). Signs of dehydration: mild (increased thirst, darker urine); moderate (dry mouth, sunken eyes, reduced skin turgor, decreased urine); severe (very sunken eyes, no urination, cold/clammy extremities, rapid weak pulse, confusion/altered consciousness).",
+          "severity": "Mild to Life-threatening",
+          "onset": "Develops over hours with repeated vomiting/diarrhoea",
+          "clinical_importance": "Dehydration assessment guides management — mild: oral rehydration; severe: IV fluids"
+        }
+      ],
+      "secondary_symptoms": [
+        "Headache — common with systemic illness and dehydration; very prominent in typhoid fever (frontal headache)",
+        "Fatigue and malaise — general weakness from infection, dehydration, and electrolyte imbalance",
+        "Muscle aches (myalgia) — systemic cytokine response",
+        "Loss of appetite (anorexia) — very common; early symptom in hepatitis A",
+        "Bloating and excessive flatulence — particularly in Giardia infection",
+        "Foul-smelling, greasy, or floating stools (steatorrhoea) — fat malabsorption in Giardia",
+        "Mucus in stool — invasive colitis (Shigella, Campylobacter, Entamoeba)",
+        "Jaundice (yellowing of skin/eyes) — hepatitis A or E; Amanita mushroom poisoning",
+        "Dark urine (bilirubinuria) — hepatitis; haemolysis in HUS",
+        "Pale/clay-coloured stools — biliary obstruction from hepatitis",
+        "Skin flushing, urticaria (hives) — scombroid (histamine) poisoning or allergic-type food reactions",
+        "Temperature reversal (cold feels hot, hot feels cold) — pathognomonic for ciguatera toxin poisoning",
+        "Neurological symptoms (ptosis, diplopia, dysarthria, weakness) — BOTULISM WARNING SIGNS",
+        "Rose spots (faint salmon-pink flat spots on trunk) — typhoid fever"
+      ],
+      "warning_signs_of_attack": [
+        "Blood in stool (red or dark tarry) — possible invasive bacterial infection, HUS, or bowel ischaemia; REQUIRES MEDICAL ATTENTION",
+        "Signs of severe dehydration: no urination for 8+ hours, confusion, rapid weak pulse, cold extremities — MEDICAL EMERGENCY",
+        "Neurological symptoms: double vision (diplopia), ptosis (drooping eyelid), difficulty swallowing, slurred speech, progressive weakness — possible BOTULISM — CALL EMERGENCY SERVICES",
+        "High fever >39°C with abdominal pain — possible bacteraemia or septicaemia",
+        "No improvement after 3-4 days — possible typhoid, parasitic infection, or serious complication",
+        "Sudden sharp generalised abdominal pain with guarding or rigidity — possible bowel perforation",
+        "Jaundice (yellow skin/eyes) appearing — hepatitis A/E, liver failure (Amanita poisoning)",
+        "Decreased or no urine output after 12-24 hours — possible acute kidney injury (HUS, severe dehydration)"
+      ],
+      "symptoms_in_children": [
+        "Signs of dehydration develop much faster in children than adults — sunken fontanelle (infants), sunken eyes, no tears when crying, very dry mouth, no wet nappies for 6+ hours",
+        "Children often cannot describe symptoms specifically — watch for: irritability, listlessness, not passing urine, refusing to drink, pale or mottled skin",
+        "Fever tends to be higher in children (can reach 40°C) — febrile seizures are a risk",
+        "Diarrhoea frequency normal for infants is up to 8 times daily — compare with child's usual pattern",
+        "Projectile vomiting in infants — may indicate pyloric stenosis (not food poisoning) — if no diarrhoea and only vomiting in first 8 weeks of life, see doctor urgently",
+        "Weight loss is an important indicator — weigh before and after illness if possible",
+        "Return to school: child should remain at home for 48 hours after last episode of diarrhoea or vomiting"
+      ],
+      "incubation_period_guide": {
+        "description": "The time between eating contaminated food and symptom onset is a key diagnostic clue for identifying the likely pathogen.",
+        "guide": [
+          {"timing": "< 1 hour", "likely_cause": "Chemical poisoning; heavy metals; seafood toxins (scombroid)"},
+          {"timing": "1-6 hours", "likely_cause": "Staphylococcus aureus enterotoxin; Bacillus cereus emetic toxin; chemical poisoning"},
+          {"timing": "6-24 hours", "likely_cause": "Bacillus cereus diarrhoeal toxin; Clostridium perfringens; Vibrio parahaemolyticus"},
+          {"timing": "12-72 hours", "likely_cause": "Salmonella; Campylobacter; E. coli; Listeria (early GI phase); Vibrio cholerae; Norovirus"},
+          {"timing": "1-5 days", "likely_cause": "Campylobacter; Salmonella; Shigella; Yersinia; STEC E. coli O157:H7; Giardia (early)"},
+          {"timing": "1-3 weeks", "likely_cause": "Giardia; Hepatitis A; Listeria invasive; Typhoid fever"},
+          {"timing": ">3 weeks", "likely_cause": "Hepatitis A; Hepatitis E; Entamoeba histolytica; Parasitic infections"}
+        ]
+      }
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Detailed food history: all foods and drinks consumed in the preceding 24-72 hours (up to 7 days for longer incubation pathogens); list every item including condiments, sauces, and water source",
+        "Timing of food consumption and symptom onset — calculate incubation period (key diagnostic clue)",
+        "Others affected: family members, friends, or coworkers who ate the same food and are ill (outbreak investigation)",
+        "Source of food: restaurant, home-cooked, street food, takeaway, buffet, picnic, institutional food",
+        "Recent travel history: abroad or to a different region (traveller's diarrhoea; enteric fever; hepatitis A/E; Giardia; Entamoeba)",
+        "Water source: tap (treated), bottled, well, river, swimming pool",
+        "Occupational history: healthcare worker, food handler, childcare (Shigella, Cryptosporidium, Norovirus)",
+        "Contact with farm animals or pets (Salmonella, Campylobacter, Cryptosporidium, Yersinia)",
+        "Specific food risk: raw shellfish (norovirus, HAV, Vibrio), raw milk (Listeria, Campylobacter, Salmonella), undercooked poultry (Campylobacter, Salmonella), home-preserved foods (Botulism), mushrooms",
+        "Current medications: immunosuppressants, antibiotics (C. difficile risk), proton pump inhibitors (reduce gastric acid barrier — increases infection risk)",
+        "Medical history: inflammatory bowel disease, HIV, recent antibiotic course, prior GI surgery, immunosuppression"
+      ],
+      "physical_examination": [
+        "Vital signs: temperature, heart rate, blood pressure (supine and standing — orthostatic changes indicate dehydration), respiratory rate, oxygen saturation",
+        "Hydration assessment: mucous membrane moisture, skin turgor (pinch skin over clavicle or dorsum of hand), sunken eyes, capillary refill time",
+        "Abdominal examination: inspection (distension), auscultation (hyperactive vs absent bowel sounds), percussion (tympany), palpation (tenderness location, guarding, rigidity, peritonism — signs of perforation or peritonitis)",
+        "Rectal examination if appropriate: blood on glove; mass or tenderness",
+        "Neurological assessment (if botulism or organophosphate poisoning suspected): cranial nerve examination (pupil size and reactivity, ptosis, diplopia, bulbar function), limb tone, reflexes, respiratory rate and effort",
+        "Eye examination: jaundice (scleral icterus — hepatitis); pupil size (miosis in organophosphate/Muscarine poisoning; mydriasis in Atropine overdose)",
+        "Skin examination: jaundice, rashes (rose spots — typhoid; urticaria — scombroid; petechiae/purpura — HUS/septicaemia), flushing (scombroid)",
+        "In children: fontanelle assessment (sunken — dehydration), crying with or without tears, responsiveness"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Stool Culture",
+          "type": "Microbiological",
+          "description": "Standard test for bacterial food poisoning — stool sent to laboratory for culture on selective media to grow and identify specific bacteria. Sensitivity varies by organism and time of collection — best yield in first 48-72 hours of illness.",
+          "purpose": "Identify specific bacterial pathogen (Salmonella, Campylobacter, Shigella, E. coli, Vibrio); guide antibiotic choice",
+          "key_metric": "Positive culture confirms bacterial aetiology; sensitivity ~50-70% depending on pathogen and timing; report time 48-72 hours"
+        },
+        {
+          "test_name": "Stool PCR / Multiplex Gastrointestinal Panel",
+          "type": "Molecular — PCR",
+          "description": "Simultaneous PCR testing for multiple bacterial, viral, and parasitic pathogens from a single stool sample. Much faster (hours vs days) and more sensitive than culture. Tests for 20+ pathogens including bacteria, viruses, and parasites simultaneously.",
+          "purpose": "Rapid and comprehensive aetiological diagnosis; particularly useful for outbreak investigation, immunocompromised patients, and severe illness",
+          "key_metric": "Results in 2-6 hours; sensitivity >90% for most pathogens; includes norovirus, rotavirus, bacteria, and parasites in one panel",
+          "examples": ["BioFire FilmArray GI Panel", "Luminex xTAG GI Pathogen Panel"]
+        },
+        {
+          "test_name": "Stool for Ova, Cysts and Parasites (OCP)",
+          "type": "Microbiological — Microscopy",
+          "description": "Microscopic examination of stool for parasites, protozoan cysts, and helminth ova/eggs. Requires three separate stool samples collected on different days (parasites shed intermittently) for optimal sensitivity.",
+          "purpose": "Detect Giardia, Entamoeba histolytica, Cryptosporidium, Cyclospora, helminths (roundworms, tapeworms)",
+          "key_metric": "Sensitivity for Giardia improved by 3-sample approach (69% → 97%); Cryptosporidium requires special modified acid-fast staining"
+        },
+        {
+          "test_name": "Rapid Antigen Tests (Stool)",
+          "type": "Immunoassay",
+          "description": "Point-of-care rapid tests for specific pathogens. Results in 15-30 minutes.",
+          "examples": [
+            "Giardia antigen test (ELISA or rapid immunochromatographic) — sensitivity >90%",
+            "Cryptosporidium antigen test",
+            "Norovirus rapid antigen test",
+            "Rotavirus rapid antigen test",
+            "H. pylori stool antigen test",
+            "Clostridium difficile toxin and GDH antigen"
+          ],
+          "purpose": "Rapid diagnosis at point-of-care; especially useful for Giardia, Cryptosporidium, C. difficile"
+        },
+        {
+          "test_name": "Full Blood Count (FBC) / Complete Blood Count",
+          "type": "Blood — Haematological",
+          "description": "Essential in moderate-severe food poisoning. Leukocytosis with neutrophilia suggests bacterial infection. Leukopenia may occur in typhoid (relative bradycardia + leucopenia is characteristic). Anaemia and thrombocytopenia suggest HUS (haemolytic anaemia + low platelets + elevated creatinine = HUS triad). Eosinophilia may indicate parasitic infection.",
+          "purpose": "Assess severity of infection; detect HUS; detect typhoid; guide antibiotic decisions",
+          "key_metric": "WBC >12,000/µL with neutrophilia: bacterial infection; Hb falling + platelets falling + rising creatinine: screen for HUS in STEC illness"
+        },
+        {
+          "test_name": "C-Reactive Protein (CRP) and Procalcitonin",
+          "type": "Blood — Inflammatory markers",
+          "description": "CRP elevated in bacterial more than viral gastroenteritis. Procalcitonin is more specific for bacterial sepsis — helps distinguish bacterial from viral aetiology and guides antibiotic decisions.",
+          "purpose": "Assess severity; distinguish bacterial from viral; guide antibiotic use",
+          "key_metric": "CRP >50-100 mg/L: serious bacterial infection; Procalcitonin >0.5 ng/mL suggests bacterial bacteraemia"
+        },
+        {
+          "test_name": "Electrolytes, Renal Function and Blood Glucose",
+          "type": "Blood — Biochemical",
+          "description": "Essential for assessing and managing dehydration and complications. Hyponatraemia and hypokalaemia are common in severe diarrhoea. Elevated creatinine and urea indicate dehydration or HUS. Blood glucose: hypoglycaemia in children with poor intake.",
+          "purpose": "Assess dehydration severity; detect HUS (raised creatinine); detect hyponatraemia/hypokalaemia; guide IV fluid composition",
+          "key_metric": "Creatinine rising + falling platelets + Hb falling = STEC HUS — nephrology urgently; K+ <3.5 mmol/L needs potassium replacement"
+        },
+        {
+          "test_name": "Liver Function Tests (LFTs)",
+          "type": "Blood — Biochemical",
+          "description": "Elevated transaminases (ALT, AST) indicate hepatitis (hepatitis A, E, or CMV) or liver damage (Amanita mushroom poisoning). Markedly elevated bilirubin with raised ALT and dark urine suggests hepatitis.",
+          "purpose": "Detect hepatitis A and E; screen for Amanita mushroom liver failure; assess typhoid hepatitis",
+          "key_metric": "ALT >200 U/L with jaundice suggests hepatitis; ALT/AST >1000 U/L in Amanita poisoning indicates fulminant failure — urgently refer for liver transplant assessment"
+        },
+        {
+          "test_name": "Blood Culture",
+          "type": "Microbiological",
+          "description": "Essential when systemic infection (bacteraemia/septicaemia) is suspected. Always take 2-3 sets before starting antibiotics. Takes 48-72 hours for results.",
+          "purpose": "Detect bacteraemia in: typhoid, invasive Salmonella, Listeria, Campylobacter bacteraemia, septicaemia from bowel infection",
+          "indication": "High fever (>39°C) with systemic illness; immunocompromised patient with food poisoning; suspected typhoid; Listeria exposure"
+        },
+        {
+          "test_name": "Stool Toxin Testing",
+          "type": "Microbiological / Immunoassay",
+          "description": "Specific toxin detection in stool or serum.",
+          "examples": [
+            "Clostridium difficile toxin A and B + GDH antigen (in antibiotic-associated diarrhoea)",
+            "Shiga toxin (Stx1 and Stx2) for STEC E. coli O157:H7",
+            "Botulinum toxin in serum, stool, or food samples (CDC/reference laboratory)"
+          ],
+          "key_metric": "Positive Shiga toxin: STEC confirmed — DO NOT give antibiotics or loperamide"
+        },
+        {
+          "test_name": "Hepatitis A IgM and Hepatitis E IgM Serology",
+          "type": "Blood — Serology",
+          "description": "IgM antibodies appear early in acute hepatitis A and E infection and confirm recent infection. IgG antibodies indicate past infection or vaccination.",
+          "purpose": "Diagnose acute hepatitis A or E foodborne/waterborne hepatitis",
+          "key_metric": "Positive anti-HAV IgM = acute hepatitis A; Positive anti-HEV IgM = acute hepatitis E"
+        },
+        {
+          "test_name": "Widal Test / Typhidot / Typhoid Rapid Test",
+          "type": "Blood — Serology",
+          "description": "Serological tests for typhoid fever. Widal test measures antibodies to Salmonella Typhi O and H antigens. High background seropositivity in endemic areas reduces specificity. Typhidot IgM (anti-OMP IgM) has better performance.",
+          "purpose": "Support diagnosis of typhoid fever in endemic areas when blood culture is not available or negative",
+          "key_metric": "Widal: O titer ≥1:160 and H titer ≥1:160 suggestive; blood culture remains gold standard for typhoid diagnosis"
+        },
+        {
+          "test_name": "Abdominal X-Ray / Ultrasound / CT Scan",
+          "type": "Imaging",
+          "description": "Not routinely required for uncomplicated food poisoning. Indicated for: suspected bowel perforation (free air under diaphragm on erect CXR/AXR), amoebic liver abscess (right upper quadrant ultrasound), toxic megacolon (dilated colon >6cm on AXR), intestinal obstruction.",
+          "purpose": "Detect complications: perforation (free air), amoebic abscess (liver), toxic megacolon, bowel obstruction",
+          "key_metric": "Free air under right hemidiaphragm on erect CXR = bowel perforation (surgical emergency)"
+        },
+        {
+          "test_name": "Urinalysis and Urine Microscopy",
+          "type": "Urine",
+          "description": "Detects haematuria and proteinuria — important markers of HUS in STEC infection. Haematuria + proteinuria in a child with bloody diarrhoea = screen urgently for HUS. Also detects urinary tract infection mimicking food poisoning.",
+          "purpose": "Detect HUS (haematuria, proteinuria, red cell casts in urine); urinary tract infection differential; assess renal involvement"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "The cornerstone of food poisoning treatment is ORAL REHYDRATION THERAPY — replacing fluids and electrolytes lost through vomiting and diarrhoea. Most uncomplicated food poisoning does not require antibiotics. All medications must be used under medical supervision when indicated. Do NOT take antidiarrhoeal medications with bloody diarrhoea or suspected STEC E. coli infection.",
+      "treatment_principles": [
+        "1. Oral rehydration is the MOST IMPORTANT treatment for all food poisoning",
+        "2. Antibiotics are NOT required for most food poisoning — viruses (no antibiotics), mild bacterial (self-limiting), toxin-mediated (antibiotics not needed). Reserve for severe/systemic bacterial disease.",
+        "3. NEVER use antidiarrhoeals (loperamide) for bloody diarrhoea, suspected E. coli O157:H7, or invasive bacterial colitis — increases risk of HUS and toxic megacolon",
+        "4. Rest the gut — NPO initially if vomiting; reintroduce clear fluids then soft diet",
+        "5. Symptomatic treatment: antiemetics for vomiting, antipyretics for fever",
+        "6. Report suspected outbreaks to public health authorities"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-91",
+          "category_name": "Oral Rehydration Therapy (ORT) — MOST IMPORTANT Treatment",
+          "purpose": "Replace fluids and electrolytes lost through vomiting and diarrhoea. WHO ORS is the single most life-saving intervention for diarrhoeal disease — has saved tens of millions of lives globally since 1970s. Prevents severe dehydration and need for IV fluids in most cases.",
+          "who_ors_composition": "Sodium 75 mmol/L, Chloride 65 mmol/L, Glucose 75 mmol/L, Potassium 20 mmol/L, Citrate 10 mmol/L; Osmolarity 245 mOsm/L",
+          "medicines": [
+            {
+              "name": "WHO Oral Rehydration Salts (ORS)",
+              "brand_examples": ["Electral", "Nimwali", "Pedialyte", "Dioralyte", "ORS sachets — various brands"],
+              "form": "Powder sachet dissolved in 1L of clean water; ready-to-drink solution",
+              "dosage": "Adults: 200-400mL after each loose stool; 50-200mL/kg over 4-6 hours for moderate dehydration (assess weight if possible). Children: 5-10mL/kg (small child) after each loose stool; 50-100mL/kg over 4 hours for moderate dehydration; give with a spoon or syringe if vomiting — small amounts every 2-5 minutes",
+              "use_case": "ALL food poisoning cases — mild, moderate, and as bridge to IV in severe; the single most important treatment; prevents hospitalisation and death",
+              "mechanism": "Glucose co-transport of sodium across intestinal epithelium — sodium-glucose cotransporter (SGLT1) remains functional even in diarrhoea, unlike passive sodium absorption",
+              "side_effects": ["Vomiting on first administration (continue — small sips); hypernatraemia if not made up correctly (follow instructions exactly)", "Never give to infants without medical guidance if severe vomiting"],
+              "who_recommendation": "WHO Essential Medicine; first-line treatment for diarrhoeal disease globally; use reduced osmolarity ORS (245 mOsm/L)"
+            },
+            {
+              "name": "Home ORS (Sugar-Salt Solution)",
+              "form": "Home preparation",
+              "dosage": "1 level teaspoon of salt + 8 level teaspoons of sugar in 1 litre of clean water; OR add salt to rice water, dal water, or yogurt water",
+              "use_case": "When commercial ORS sachets are not immediately available; emergency home rehydration",
+              "note": "Less precise than WHO ORS but life-saving when commercial ORS unavailable; safe alternative"
+            },
+            {
+              "name": "Intravenous Fluid Resuscitation (IV Fluids)",
+              "brand_examples": ["Normal Saline (0.9% NaCl)", "Ringer's Lactate (Hartmann's Solution)", "5% Dextrose + 0.45% NaCl"],
+              "form": "IV Infusion",
+              "dosage": "Moderate dehydration: 20-30 mL/kg Ringer's Lactate IV over 30-60 minutes, then reassess. Severe dehydration/shock: 20 mL/kg IV bolus, repeat if needed. Maintenance: 1.5x normal (150 mL/kg/day children; 2.5-3L/day adults) + ongoing losses replaced",
+              "use_case": "Severe dehydration; unable to tolerate oral fluids (persistent vomiting); shock; severe cholera; infants and children with >10% dehydration",
+              "choice": "Ringer's Lactate / Hartmann's preferred over plain saline for large volume resuscitation (less hyperchloraemic acidosis); add KCl to fluids once urine output established"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-92",
+          "category_name": "Antiemetics — Anti-Vomiting Medications",
+          "purpose": "Reduce nausea and vomiting to allow oral rehydration therapy and prevent dehydration. Most important as adjuncts to ORT.",
+          "medicines": [
+            {
+              "name": "Ondansetron",
+              "brand_examples": ["Zofran", "Emeset", "Ondanset", "Ondem"],
+              "form": "Tablet, Oral dissolving wafer (ODT), IV/IM Injection",
+              "dosage": "Adults: 4-8mg orally or IV 3-4 times daily; Children: 0.15mg/kg per dose (max 8mg) every 8 hours",
+              "use_case": "First-line antiemetic for food poisoning-associated vomiting; ODT wafer ideal when patient is vomiting; proven to significantly reduce IV fluid requirements in children with gastroenteritis and vomiting",
+              "mechanism": "5-HT3 receptor antagonist — blocks serotonin-mediated vomiting reflex at CTZ and gut",
+              "side_effects": ["Headache", "Constipation", "QT prolongation (IV high dose)", "Dizziness"],
+              "evidence": "Multiple RCTs in paediatric gastroenteritis: single dose ondansetron reduces vomiting, facilitates ORS intake, and reduces hospitalisation rate by 50%"
+            },
+            {
+              "name": "Metoclopramide",
+              "brand_examples": ["Maxolon", "Reglan", "Perinorm", "Emequell"],
+              "form": "Tablet, IV/IM Injection, Syrup",
+              "dosage": "10mg oral or IV/IM every 8 hours; maximum 5 days",
+              "use_case": "Nausea and vomiting in food poisoning; also prokinetic — improves gastric emptying; widely available",
+              "side_effects": ["Acute dystonia and extrapyramidal reactions (especially young women and children) — treat with benztropine or procyclidine", "Tardive dyskinesia (prolonged use)", "Restlessness"],
+              "note": "Avoid prolonged use; not recommended in children under 18 years by some guidelines due to dystonia risk; ondansetron preferred in children"
+            },
+            {
+              "name": "Domperidone",
+              "brand_examples": ["Motilium", "Domstal", "Domper"],
+              "form": "Tablet, Oral suspension",
+              "dosage": "10-20mg oral 3 times daily before meals",
+              "use_case": "Nausea and vomiting; prokinetic; preferred in children under 18 over metoclopramide (fewer CNS effects as does not cross blood-brain barrier)",
+              "side_effects": ["QT prolongation with high doses (cardiac caution)", "Galactorrhoea with prolonged use", "Headache"]
+            },
+            {
+              "name": "Promethazine",
+              "brand_examples": ["Phenergan", "Avomine"],
+              "form": "Tablet, IM Injection, Suppository",
+              "dosage": "25-50mg oral or IM every 6-8 hours",
+              "use_case": "Nausea and vomiting in adults; also antihistamine; useful when oral route unavailable",
+              "side_effects": ["Significant sedation", "Anticholinergic effects", "Avoid in children <2 years (respiratory depression risk)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-93",
+          "category_name": "Antidiarrhoeal Agents",
+          "purpose": "Reduce stool frequency and volume to improve comfort and reduce fluid losses. IMPORTANT CAUTION: Antidiarrhoeals are CONTRAINDICATED in bloody diarrhoea (dysentery), suspected STEC E. coli O157:H7, invasive bacterial colitis, high fever with diarrhoea, and infants under 2 years.",
+          "warning": "NEVER use loperamide for: bloody diarrhoea, E. coli O157:H7 (increases HUS risk), Shigella, Salmonella with systemic illness, fever >38.5°C — can cause toxic megacolon and delay clearance of pathogens",
+          "medicines": [
+            {
+              "name": "Loperamide",
+              "brand_examples": ["Imodium", "Lopamide", "Eldoper", "Pepto Diarrhea"],
+              "form": "Tablet, Capsule, Oral solution",
+              "dosage": "Adults: 4mg initial dose, then 2mg after each loose stool; maximum 16mg/day",
+              "use_case": "ONLY for uncomplicated, non-bloody traveller's diarrhoea and watery food poisoning without fever; short-term use only; NOT for dysentery or if STEC suspected",
+              "mechanism": "Mu-opioid receptor agonist in gut; reduces gut motility and secretions; does not cross blood-brain barrier at therapeutic doses",
+              "contraindications": ["Bloody diarrhoea (dysentery) — ABSOLUTE contraindication", "Suspected STEC E. coli O157:H7 — ABSOLUTE contraindication (increases HUS risk)", "Fever >38.5°C", "Children under 2 years", "Pseudomembranous colitis (C. difficile)", "Abdominal distension (toxic megacolon risk)"],
+              "side_effects": ["Constipation", "Nausea", "Abdominal distension", "CNS effects at very high doses"]
+            },
+            {
+              "name": "Bismuth Subsalicylate",
+              "brand_examples": ["Pepto-Bismol", "Bismuth"],
+              "form": "Liquid, Chewable tablet",
+              "dosage": "Adults: 30mL or 2 tablets every 30-60 minutes; max 8 doses per day",
+              "use_case": "Mild to moderate acute diarrhoea and nausea; mild antimicrobial effect; reduces stool frequency; can be used for traveller's diarrhoea",
+              "side_effects": ["Black stools and black tongue (harmless — bismuth salts)", "Ringing in ears (tinnitus) — salicylate toxicity with excessive use"],
+              "contraindications": ["Children under 12 years (Reye's syndrome risk from salicylate)", "Aspirin allergy", "Pregnancy"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-94",
+          "category_name": "Antipyretics and Analgesics",
+          "purpose": "Reduce fever and alleviate abdominal cramps and body aches associated with food poisoning.",
+          "medicines": [
+            {
+              "name": "Paracetamol / Acetaminophen",
+              "brand_examples": ["Crocin", "Tylenol", "Calpol", "Panadol"],
+              "form": "Tablet, Syrup, IV",
+              "dosage": "Adults: 500-1000mg every 4-6 hours (max 4000mg/day; 3000mg if liver disease); Children: 10-15mg/kg every 4-6 hours",
+              "use_case": "First-line antipyretic and analgesic for fever and abdominal cramps in food poisoning; safest option",
+              "side_effects": ["Hepatotoxicity with overdose", "Minimal at therapeutic doses"],
+              "note": "Preferred over NSAIDs when dehydrated — NSAIDs reduce renal blood flow (risk of AKI in dehydration)"
+            },
+            {
+              "name": "Ibuprofen",
+              "brand_examples": ["Brufen", "Nurofen", "Advil"],
+              "form": "Tablet",
+              "dosage": "400-600mg every 6-8 hours with food",
+              "use_case": "Fever and pain in food poisoning — use only when adequately rehydrated; take with food",
+              "contraindications_in_food_poisoning": "Avoid in: severe dehydration (renal impairment risk), suspected HUS (NSAID nephrotoxicity), GI bleeding, elderly (higher renal AKI risk)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-95",
+          "category_name": "Antibiotics — Targeted Therapy for Specific Bacterial Food Poisoning",
+          "purpose": "Antibiotics are NOT required for most food poisoning (viral, toxin-mediated, or mild self-limiting bacterial). Specific antibiotic indications: invasive bacterial disease, systemic illness, immunocompromised patients, at-risk populations, and specific organisms requiring treatment.",
+          "note": "Antibiotic resistance is a major and growing concern for enteric pathogens — always send stool cultures before antibiotics; follow local resistance data.",
+          "medicines": [
+            {
+              "name": "Ciprofloxacin",
+              "brand_examples": ["Ciprobay", "Ciplox", "Cifran", "Cipro"],
+              "form": "Tablet, IV Injection",
+              "dosage": "500mg twice daily orally for 3-7 days (Salmonella, Shigella); 500mg twice daily for 3-5 days (Campylobacter — if susceptible); IV: 400mg every 8-12 hours for systemic infection",
+              "use_case": "Salmonella (non-typhoidal) in high-risk patients; Shigella dysentery; Campylobacter (increasing resistance — check susceptibility); traveller's diarrhoea; Vibrio cholera; Typhoid (where susceptible)",
+              "mechanism": "Fluoroquinolone — inhibits DNA gyrase and topoisomerase IV; bactericidal; broad gram-negative spectrum",
+              "resistance_warning": "Ciprofloxacin resistance increasing globally in Campylobacter (>50% in some countries including India) and some Salmonella serotypes — always check local resistance patterns; azithromycin often preferred for Campylobacter",
+              "contraindications": ["Children under 18 years (cartilage effects — use azithromycin instead)", "Pregnancy", "Do NOT use for STEC E. coli O157:H7 (increases HUS risk)"]
+            },
+            {
+              "name": "Azithromycin",
+              "brand_examples": ["Azee", "Zithromax", "Azithrocin", "Azithral"],
+              "form": "Tablet, IV Injection",
+              "dosage": "Adults: 500mg once daily for 3-5 days; Children: 10mg/kg once daily for 3-5 days (Campylobacter or Shigella); 500mg once daily for 3 days (traveller's diarrhoea)",
+              "use_case": "PREFERRED for Campylobacter (better resistance profile than ciprofloxacin); Shigella; Salmonella in children; traveller's diarrhoea; safe in pregnancy and children",
+              "mechanism": "Macrolide antibiotic — inhibits 50S ribosomal subunit; bacteriostatic (bactericidal at high concentrations)",
+              "side_effects": ["Nausea and GI upset", "QT prolongation", "Liver enzyme elevation (rare)"]
+            },
+            {
+              "name": "Metronidazole",
+              "brand_examples": ["Metrogyl", "Flagyl", "Metrogyl", "Fasigyn (tinidazole — related)"],
+              "form": "Tablet, IV Infusion, Oral suspension",
+              "dosage": "Adults: 400-500mg 3 times daily for 7-10 days (amoebic dysentery, Giardia); 500mg 3 times daily IV (severe amoebic colitis, C. difficile); Children: 35-50mg/kg/day in 3 divided doses",
+              "use_case": "FIRST-LINE for Giardia (400mg TDS × 5-7 days); Entamoeba histolytica amoebic dysentery and liver abscess; Clostridium difficile (mild-moderate CDI); anaerobic bacterial infections; Trichomoniasis",
+              "mechanism": "Nitroimidazole — enters cells and creates reactive intermediates that damage DNA of anaerobic and protozoan organisms",
+              "side_effects": ["Metallic taste (very common)", "Nausea and GI upset", "Peripheral neuropathy (prolonged use)", "Disulfiram-like reaction with alcohol (severe flushing, vomiting — avoid ALL alcohol during treatment and for 48h after)"],
+              "note": "Tinidazole 2g single oral dose is as effective as metronidazole course for Giardia and may be better tolerated"
+            },
+            {
+              "name": "Ceftriaxone (IV)",
+              "brand_examples": ["Rocephin", "Monocef", "Biotax"],
+              "form": "IV/IM Injection",
+              "dosage": "Adults: 1-2g IV/IM once daily; Children: 50-100mg/kg/day IV once daily",
+              "use_case": "Severe invasive Salmonella (including typhoid and non-typhoidal bacteraemia); Listeria meningitis (with ampicillin); MDRSA (multi-drug resistant Salmonella); Shigella bacteraemia; severe food poisoning requiring parenteral treatment",
+              "note": "Preferred IV antibiotic for typhoid fever, severe Salmonella bacteraemia, and when oral route unavailable"
+            },
+            {
+              "name": "Ampicillin + Gentamicin (Combination)",
+              "brand_examples": ["Ampicillin: Ampicyn; Gentamicin: Garamycin"],
+              "form": "IV Injection",
+              "dosage": "Ampicillin 2g IV every 4-6 hours + Gentamicin 5mg/kg IV once daily",
+              "use_case": "DRUG OF CHOICE for invasive Listeriosis (bacteraemia, meningitis, pregnancy-associated) — synergistic combination; only treatment with proven efficacy for listeria endocarditis",
+              "monitoring": "Gentamicin serum levels and renal function (nephrotoxicity risk)"
+            },
+            {
+              "name": "Vancomycin (Oral)",
+              "brand_examples": ["Vancocin", "Vancomycin"],
+              "form": "Oral capsule / oral solution (compounded)",
+              "dosage": "125mg orally 4 times daily for 10-14 days (CDI)",
+              "use_case": "First-line treatment for Clostridioides difficile infection (CDI) — antibiotic-associated diarrhoea; oral vancomycin not absorbed systemically — acts locally in colon",
+              "note": "NOT used for other food poisoning; IV vancomycin ineffective for CDI (does not reach colon)"
+            },
+            {
+              "name": "Fidaxomicin (Oral)",
+              "brand_examples": ["Dificlir"],
+              "form": "Tablet",
+              "dosage": "200mg twice daily for 10 days",
+              "use_case": "First-line or preferred treatment for C. difficile — lower recurrence rate than vancomycin; particularly valuable for recurrent CDI",
+              "note": "More expensive than vancomycin; preferred by IDSA/SHEA guidelines for first recurrence CDI"
+            },
+            {
+              "name": "Nitazoxanide",
+              "brand_examples": ["Alinia", "Nizonide"],
+              "form": "Tablet, Oral suspension",
+              "dosage": "Adults: 500mg twice daily for 3 days; Children: 7.5-15mg/kg twice daily for 3 days (weight-based)",
+              "use_case": "Cryptosporidium parvum (first-line in immunocompetent patients); Giardia lamblia (alternative to metronidazole); broad antiprotozoal and antiviral spectrum; useful in enteric infections where pathogen uncertain",
+              "side_effects": ["Nausea", "Abdominal pain", "Urine and stools may have yellow/green tint (harmless)"]
+            },
+            {
+              "name": "Tinidazole",
+              "brand_examples": ["Fasigyn", "Tini"],
+              "form": "Tablet",
+              "dosage": "Giardia: 2g single dose; Amoebiasis: 2g once daily for 2-3 days",
+              "use_case": "Giardia (single-dose — superior adherence vs metronidazole course); Entamoeba histolytica; better tolerated than metronidazole",
+              "side_effects": ["Metallic taste", "Nausea", "Dizziness", "Avoid alcohol during and 72h after use"]
+            },
+            {
+              "name": "Heptavalent Botulinum Antitoxin (HBAT)",
+              "brand_examples": ["BAT (Botulism Antitoxin Heptavalent)", "CDC Strategic National Stockpile"],
+              "form": "IV Infusion",
+              "dosage": "Single IV dose as early as possible (delays in administration reduce efficacy); available through CDC/national public health emergency stockpiles",
+              "use_case": "FOODBORNE BOTULISM — MEDICAL EMERGENCY. Must be given as soon as clinical diagnosis suspected — does not reverse existing paralysis but prevents progression. Contact CDC Emergency Operations (USA: 770-488-7100) or national emergency public health authority immediately.",
+              "mechanism": "Antibody-based antitoxin neutralises circulating botulinum toxin before it binds to nerve terminals",
+              "note": "Report all suspected botulism cases immediately to local/national public health authorities — notifiable disease"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-96",
+          "category_name": "Antiparasitic Medications",
+          "purpose": "Treat parasitic food and waterborne infections — protozoal and helminthic.",
+          "medicines": [
+            {
+              "name": "Albendazole",
+              "brand_examples": ["Zentel", "Bandy", "Albenza"],
+              "form": "Tablet, Oral suspension",
+              "dosage": "Adults: 400mg once daily for 5-7 days (intestinal nematodes); 400mg twice daily for 8-30 days (Trichinella, Toxocara); 400mg twice daily for 3 days (Giardia — alternative)",
+              "use_case": "Intestinal roundworms (Ascaris, hookworm, Trichuris); Trichinella spiralis; Taenia species; alternative for Giardia; treatment of intestinal helminths",
+              "mechanism": "Inhibits tubulin polymerisation in parasitic cells — disrupts glucose uptake and causes death of parasites",
+              "side_effects": ["Nausea", "Abdominal pain", "Elevated liver enzymes (monitor LFTs)", "Teratogenic — avoid in pregnancy; contraceptive advice needed"],
+              "note": "Take with fatty food (increases absorption)"
+            },
+            {
+              "name": "Mebendazole",
+              "brand_examples": ["Vermox", "Mebex"],
+              "form": "Tablet, Oral suspension",
+              "dosage": "Pinworms: 100mg single dose (repeat after 2 weeks); Roundworms/hookworm/Trichuris: 100mg twice daily for 3 days or 500mg single dose",
+              "use_case": "Intestinal nematodes (roundworms, hookworms, pinworms, whipworm); NOT well absorbed — acts locally in gut",
+              "side_effects": ["Minimal (poor systemic absorption)", "Abdominal discomfort"]
+            },
+            {
+              "name": "Praziquantel",
+              "brand_examples": ["Biltricide", "Cisticid"],
+              "form": "Tablet",
+              "dosage": "Tapeworm (Taenia): 5-10mg/kg single dose; Schistosomiasis: 20mg/kg 2-3 times in one day",
+              "use_case": "Tapeworms (Taenia solium, T. saginata); Schistosomiasis; Cysticercosis (with steroid cover)",
+              "side_effects": ["Dizziness", "Abdominal pain", "Drowsiness", "Transient worsening of neurological symptoms in neurocysticercosis (use corticosteroids)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-97",
+          "category_name": "Probiotics — Gut Recovery",
+          "purpose": "Restore disrupted gut microbiome after food poisoning and antibiotic use. Reduce duration of antibiotic-associated diarrhoea. Multiple RCTs support use in acute infectious diarrhoea.",
+          "medicines": [
+            {
+              "name": "Saccharomyces boulardii",
+              "brand_examples": ["Florastor", "Saccharomyces boulardii", "BIOF"],
+              "form": "Capsule, Sachet",
+              "dosage": "250-500mg twice daily for 7-14 days",
+              "use_case": "Prevention of antibiotic-associated diarrhoea; treatment of acute infectious diarrhoea (reduces duration by ~1 day); particularly effective against C. difficile infection (reduces recurrence)",
+              "mechanism": "Non-pathogenic yeast; secretes protease that degrades C. difficile toxin B receptor; immune modulation; restoration of brush border enzymes",
+              "evidence": "Cochrane review: reduces duration of acute diarrhoea by 31 hours in children; reduces C. difficile recurrence by 50%"
+            },
+            {
+              "name": "Lactobacillus rhamnosus GG (LGG)",
+              "brand_examples": ["Culturelle", "Rhamno", "LGG"],
+              "form": "Capsule, Powder",
+              "dosage": "1 capsule (10 billion CFU) twice daily",
+              "use_case": "Acute rotavirus diarrhoea in children (reduces duration); antibiotic-associated diarrhoea; traveller's diarrhoea; restores gut microbiome",
+              "evidence": "Cochrane review: LGG reduces duration of infectious diarrhoea by average 24 hours"
+            },
+            {
+              "name": "Multi-Strain Probiotics (Lactobacillus + Bifidobacterium combinations)",
+              "brand_examples": ["Vizylac", "Darolac", "Lacidofil", "VSL#3"],
+              "form": "Capsule, Sachet",
+              "dosage": "1-2 capsules/sachets twice daily during and 2 weeks after antibiotic course",
+              "use_case": "Prevention of antibiotic-associated diarrhoea; gut microbiome restoration after food poisoning and antibiotics; C. difficile prevention"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-98",
+          "category_name": "Zinc Supplementation",
+          "purpose": "WHO recommends zinc supplementation for children with acute diarrhoea in low-to-middle income countries — reduces severity and duration of diarrhoea and prevents recurrence for 2-3 months.",
+          "medicines": [
+            {
+              "name": "Zinc Sulfate / Zinc Acetate",
+              "brand_examples": ["Zinconia", "Zinctot", "Zincovit", "Zinconia"],
+              "form": "Tablet, Syrup, Dispersible tablet",
+              "dosage": "Children <6 months: 10mg once daily for 10-14 days; Children ≥6 months: 20mg once daily for 10-14 days",
+              "use_case": "WHO recommends zinc supplementation for ALL children with acute diarrhoea in low-middle income countries; reduces duration by ~25%, reduces volume of diarrhoea by ~30%, and reduces risk of recurrent diarrhoea in following 2-3 months",
+              "mechanism": "Zinc is essential for intestinal mucosal healing, immune function, and epithelial barrier integrity; diarrhoea causes significant zinc losses",
+              "side_effects": ["Nausea and vomiting (give with food or ORS)", "Metallic taste"],
+              "authority": "WHO and UNICEF recommend zinc + ORS as standard treatment for childhood diarrhoea"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-99",
+          "category_name": "Activated Charcoal — Toxin Adsorption",
+          "purpose": "Binds to many toxins and chemicals in the GI tract, preventing absorption. Most effective when given within 1-2 hours of toxic ingestion. Used primarily for chemical poisoning, mushroom poisoning, and some drug overdoses.",
+          "medicines": [
+            {
+              "name": "Activated Charcoal",
+              "brand_examples": ["Carbomix", "Actidose-Aqua"],
+              "form": "Oral suspension, Powder for suspension",
+              "dosage": "Adults: 50g as single dose; Children: 1g/kg (max 50g); give as soon as possible within 1-2 hours of ingestion",
+              "use_case": "Chemical food poisoning (pesticides, heavy metals); mushroom poisoning (Amanita phalloides — early after ingestion); drug/toxin ingestion",
+              "mechanism": "Large surface area adsorbs many toxins and chemicals — binds them in GI tract preventing systemic absorption",
+              "contraindications": ["Intestinal perforation", "Absent bowel sounds", "Unprotected airway (risk of aspiration)", "Caustic substance ingestion"],
+              "note": "NOT effective for: alcohols, iron, lithium, electrolytes, cyanide. Ineffective for bacterial food poisoning (toxin already absorbed)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-100",
+          "category_name": "Antihistamines — Scombroid and Histamine Poisoning",
+          "purpose": "Block histamine receptors to treat histamine-mediated symptoms of scombroid (histamine) fish poisoning — urticaria, flushing, GI symptoms. The primary treatment for scombroid poisoning.",
+          "medicines": [
+            {
+              "name": "Diphenhydramine / Chlorpheniramine (H1 antagonists)",
+              "brand_examples": ["Benadryl", "Piriton", "Chlorphen"],
+              "form": "Tablet, IV/IM Injection",
+              "dosage": "Diphenhydramine: 25-50mg orally or IV every 6 hours; Chlorpheniramine: 4mg every 6 hours orally",
+              "use_case": "Scombroid fish poisoning (histamine poisoning) — first-line treatment; also urticaria from food allergic reactions",
+              "side_effects": ["Sedation (significant with diphenhydramine)", "Dry mouth", "Urinary retention"]
+            },
+            {
+              "name": "Cetirizine / Loratadine (Non-sedating H1 antagonists)",
+              "brand_examples": ["Zyrtec (cetirizine)", "Clarityn (loratadine)"],
+              "form": "Tablet",
+              "dosage": "Cetirizine 10mg once daily; Loratadine 10mg once daily",
+              "use_case": "Milder scombroid/histamine reactions; less sedation than first-generation antihistamines"
+            },
+            {
+              "name": "Ranitidine / Famotidine (H2 antagonists)",
+              "brand_examples": ["Famotidine: Famocid, Pepcid"],
+              "form": "Tablet, IV",
+              "dosage": "Famotidine 20-40mg twice daily",
+              "use_case": "Used alongside H1 antihistamine for scombroid — H2 blockade addresses additional histamine receptors in GI tract and cardiovascular system",
+              "note": "Combination H1+H2 blockade more effective than H1 alone for scombroid poisoning"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Dietary management in food poisoning has three phases: (1) Acute phase — gut rest and oral rehydration; (2) Recovery phase — gradual reintroduction of easily digestible foods; (3) Long-term — gut microbiome restoration with probiotic foods. The traditional BRAT diet (Bananas, Rice, Applesauce, Toast) is a helpful but simplified guide — the goal is foods that are easy to digest, low in fibre and fat, and non-irritating to an inflamed gut. Full dietary recovery typically takes 5-7 days after symptoms resolve.",
+      "phase_1_acute": {
+        "timing": "First 4-12 hours — while vomiting and nausea dominate",
+        "principle": "NPO (nil per oral) initially if unable to keep anything down; then small sips",
+        "recommended": [
+          "Start with sips of ORS (5-10mL every 5 minutes if vomiting — gradually increase)",
+          "Ice chips to suck if vomiting prevents drinking",
+          "Small sips of clear water",
+          "Weak herbal teas (ginger tea — anti-nausea; chamomile)",
+          "Advance to 30-60mL every 15 minutes when vomiting reduces"
+        ]
+      },
+      "phase_2_reintroduction": {
+        "timing": "After 4-12 hours when nausea improves and tolerating fluids",
+        "principle": "BRAT diet or equivalent — bland, easily digestible, low-fat, low-fibre foods that do not stimulate intestinal motility further"
+      },
+      "recommended_foods": [
+        {
+          "category": "BRAT Diet and Equivalent — Core Recovery Foods",
+          "evidence": "Traditional and clinically accepted; though evidence for strict BRAT is limited, bland low-fat diet is universally recommended",
+          "items": [
+            {
+              "food": "Bananas",
+              "benefit": "The 'B' in BRAT. Easily digestible; rich in potassium (replaces electrolytes lost in diarrhoea); pectin (soluble fibre that helps firm stools and slow diarrhoea); natural antacid properties; provides energy when appetite is poor",
+              "frequency": "1-2 ripe bananas as tolerated"
+            },
+            {
+              "food": "Plain boiled white rice (or rice congee/kanji/khichdi)",
+              "benefit": "The 'R' in BRAT. Easily digestible starch; low fibre (does not accelerate transit); rice water (kanji) provides carbohydrates and electrolytes; white rice preferred over brown rice (lower fibre — gentler on inflamed gut); rice congee (watery rice) is ideal initially",
+              "frequency": "Small portions every 2-3 hours as tolerated",
+              "tip": "Cook rice in more water to make congee/kanji/porridge — more digestible and provides hydration"
+            },
+            {
+              "food": "Applesauce / Stewed apple (cooked)",
+              "benefit": "The 'A' in BRAT. Pectin from cooked apples helps firm stools (unlike raw apple); glucose for energy; gentle on gut; easily digestible",
+              "frequency": "As tolerated",
+              "note": "COOKED apple or applesauce — not raw apple (higher fibre in raw form)"
+            },
+            {
+              "food": "Plain white toast (no butter)",
+              "benefit": "The 'T' in BRAT. Simple carbohydrate; easy to digest; helpful for nausea; dry toast absorbs excess gastric acid",
+              "frequency": "1-2 slices as tolerated"
+            },
+            {
+              "food": "Moong dal khichdi (overcooked rice and lentils)",
+              "benefit": "Indian equivalent of BRAT — excellent post-food poisoning food: easily digestible protein and carbohydrate; soft texture; anti-inflammatory; ghee has antibacterial properties (small amount); warm and comforting; provides energy without overloading gut",
+              "frequency": "Small portions every 3-4 hours from day 2 of illness"
+            },
+            {
+              "food": "Plain boiled potatoes (no skin, no butter or spices)",
+              "benefit": "Starchy, binding effect; potassium (electrolyte replacement); easily digestible; gentle on GI tract",
+              "frequency": "From day 2-3 as tolerated"
+            },
+            {
+              "food": "Plain boiled pasta or noodles (no sauce)",
+              "benefit": "Simple digestible carbohydrate; low fat and fibre; provides calories during recovery",
+              "frequency": "Day 2-3 as tolerated"
+            }
+          ]
+        },
+        {
+          "category": "Soups and Broths (Hydration + Nutrition)",
+          "items": [
+            {
+              "food": "Clear chicken or vegetable broth",
+              "benefit": "Hydration; electrolytes (sodium, potassium); easily absorbed; amino acids for gut mucosal healing; warm broth is soothing to inflamed gut; bone broth provides collagen (gut repair)",
+              "frequency": "Multiple times daily during acute and recovery phases",
+              "tip": "Low-sodium homemade broth preferred over commercial (high sodium worsens dehydration)"
+            },
+            {
+              "food": "Rice water / Kanji (water from boiling rice)",
+              "benefit": "Traditional Indian remedy — very effective: provides glucose, sodium, and starches; helps firm stools; WHO used rice-based ORS in cholera trials (comparable to glucose-based ORS); soothing and easily digested",
+              "frequency": "As much as desired — continuously for hydration"
+            },
+            {
+              "food": "Ginger soup / Ginger tea",
+              "benefit": "Ginger is the single most evidence-based natural antiemetic — 6-gingerol blocks 5-HT3 receptors (same as ondansetron mechanism); anti-inflammatory; anti-nausea; can abort vomiting when taken at onset",
+              "frequency": "1-2 cups hourly during nausea; continuing daily throughout recovery",
+              "preparation": "Fresh ginger (1-2 cm piece) in 2 cups boiling water for 5-10 minutes; strain; sip slowly"
+            }
+          ]
+        },
+        {
+          "category": "Probiotics for Gut Microbiome Recovery",
+          "evidence": "Strong — gut microbiome disrupted by food poisoning pathogens and antibiotics. Probiotic foods restore Lactobacillus and Bifidobacterium populations.",
+          "items": [
+            {
+              "food": "Plain yogurt / Curd (with live active cultures)",
+              "benefit": "Probiotics (Lactobacillus acidophilus, L. bulgaricus, Streptococcus thermophilus) — restore gut flora after food poisoning; reduce duration of diarrhoea; lactase from yogurt bacteria makes it tolerable even in lactose-sensitive patients; protein for recovery",
+              "frequency": "Daily from day 3 of illness (when gut is recovering); continue 4-6 weeks after antibiotic completion",
+              "note": "Choose plain, unsweetened yogurt with 'live cultures' on label; avoid flavoured yogurt (added sugar feeds pathogens)"
+            },
+            {
+              "food": "Buttermilk / Chaach (diluted yogurt with water and minimal salt)",
+              "benefit": "Excellent Indian probiotic; well-tolerated during recovery; electrolytes; cooling; probiotics; easier to digest than solid yogurt; traditional post-diarrhoea remedy with strong logic",
+              "frequency": "1-2 glasses daily during recovery"
+            },
+            {
+              "food": "Idli and dosa (fermented rice and lentil dishes — without sambar initially)",
+              "benefit": "Fermented foods with natural probiotics; easily digestible soft texture (especially idli); provide carbohydrate and protein without heavy fat; ideal recovery foods in South Indian diet",
+              "frequency": "From day 3-4 of recovery"
+            }
+          ]
+        },
+        {
+          "category": "Electrolyte-Rich Foods and Drinks",
+          "items": [
+            {
+              "food": "Coconut water (tender coconut — nariyal pani)",
+              "benefit": "Natural electrolyte drink — potassium (600mg/cup), sodium, magnesium, glucose; near-isotonic; excellent natural ORS-like fluid; soothing; well-tolerated during nausea; superior to plain water for rehydration",
+              "frequency": "1-2 cups daily during and after illness"
+            },
+            {
+              "food": "ORS sachets dissolved in water",
+              "benefit": "WHO-formulated electrolyte replacement — precisely calibrated sodium-glucose-potassium mixture; more effective than plain water for rehydration (glucose co-transport of sodium)",
+              "frequency": "After every loose stool"
+            },
+            {
+              "food": "Diluted apple juice or orange juice (very diluted — 1:1 with water)",
+              "benefit": "Potassium; glucose; gentle flavour encourages fluid intake in children who refuse plain water; avoid full-strength juice (high sugar — can worsen osmotic diarrhoea)",
+              "frequency": "In small amounts alongside ORS"
+            }
+          ]
+        },
+        {
+          "category": "Foods to Gradually Reintroduce (Day 3-5)",
+          "items": [
+            {
+              "food": "Boiled eggs (scrambled or hard-boiled)",
+              "benefit": "Complete protein; easily digestible; zinc (gut healing); Vitamin B12; soft texture; can reintroduce from day 3 of recovery",
+              "frequency": "1-2 eggs from day 3"
+            },
+            {
+              "food": "Steamed or boiled fish (lean white fish)",
+              "benefit": "High-quality lean protein; easily digestible; omega-3 anti-inflammatory; minimal fat; gentle on recovering gut",
+              "frequency": "From day 4-5 of recovery"
+            },
+            {
+              "food": "Biscuits and crackers (plain — cream crackers, water biscuits)",
+              "benefit": "Simple digestible carbohydrate; low fat; help with nausea; provide energy when appetite is poor",
+              "frequency": "As needed for appetite improvement"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Dairy products (initially — first 3-5 days)",
+          "reason": "Food poisoning pathogens (particularly Rotavirus, Giardia, Cryptosporidium) temporarily reduce lactase enzyme in small intestinal brush border — causing secondary lactose intolerance. Drinking milk in the acute phase causes osmotic diarrhoea (bloating, cramping, more diarrhoea).",
+          "duration": "Avoid for 3-7 days; reintroduce plain yogurt first (lactase-producing bacteria make it tolerable); then milk gradually",
+          "exception": "Plain yogurt with live cultures is an EXCEPTION — tolerated even with lactose intolerance because the bacteria produce lactase; beneficial probiotic effect",
+          "examples": ["Full-fat milk", "Cheese", "Cream", "Ice cream", "Butter"]
+        },
+        {
+          "food": "Fatty and fried foods",
+          "reason": "High fat content delays gastric emptying and stimulates intestinal motility — worsening diarrhoea; difficult to digest with inflamed intestinal mucosa; increases nausea",
+          "examples": ["Fried chicken, fish, or vegetables", "Chips and crisps", "Fast food burgers", "Ghee and butter in large quantities", "Full-fat dairy", "Oily curries"],
+          "duration": "Avoid for 5-7 days; reintroduce very gradually"
+        },
+        {
+          "food": "Spicy foods",
+          "reason": "Capsaicin irritates already-inflamed intestinal mucosa; activates TRPV1 receptors in gut increasing motility and secretion — worsening diarrhoea and abdominal cramps; prolongs gut inflammation",
+          "examples": ["Hot chilli peppers and sauces", "Heavily spiced curries", "Peri-peri sauce", "Black pepper in large amounts"],
+          "duration": "Avoid for 7-10 days; reintroduce gently"
+        },
+        {
+          "food": "High-fibre foods (initially — first 3-5 days)",
+          "reason": "Insoluble fibre accelerates intestinal transit — worsening diarrhoea in acute phase; difficult to digest with inflamed gut. Soluble fibre (pectin from bananas and cooked apples) actually helps firm stools.",
+          "examples": ["Raw vegetables", "Whole grain bread and cereals", "Brown rice and whole wheat pasta", "Legumes in large quantities", "Raw salads"],
+          "note": "Gradually reintroduce cooked vegetables from day 4-5; full fibre diet from week 2",
+          "exception": "Soluble fibre in bananas and cooked apples is beneficial — it firms stools"
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Severely irritates already-inflamed intestinal mucosa; causes vasodilation worsening diarrhoea; dehydrating (diuretic effect worsens fluid losses); ABSOLUTE CONTRAINDICATION with metronidazole (disulfiram-like reaction); impairs immune function slowing recovery; toxic to inflamed liver (especially hepatitis A/E)",
+          "duration": "Complete abstinence during illness and treatment; minimum 48 hours after completing metronidazole; 4 weeks with hepatitis A/E",
+          "examples": ["Beer", "Wine", "Spirits", "All alcoholic beverages"]
+        },
+        {
+          "food": "Sugary beverages and high-sugar foods",
+          "reason": "High osmolarity of sugary drinks causes osmotic diarrhoea (the concentrated sugar draws water into the gut — worsening fluid losses); glucose feeds pathogenic bacteria; spikes then crashes blood sugar",
+          "examples": ["Full-strength fruit juices", "Soft drinks and sodas", "Sports drinks (high concentration)", "Energy drinks", "Sugary sweets and confectionery"],
+          "note": "ORS sachets contain a precise amount of glucose that is beneficial for sodium co-transport — do NOT add extra sugar to ORS"
+        },
+        {
+          "food": "Caffeine",
+          "reason": "Caffeine is a GI stimulant — increases intestinal motility and secretion, worsening diarrhoea; diuretic effect worsens dehydration; can worsen nausea; disrupts sleep needed for recovery",
+          "examples": ["Coffee (especially strong/espresso)", "Strong black tea", "Energy drinks", "Cola beverages"],
+          "duration": "Avoid during acute illness; reintroduce weak tea cautiously after 3-4 days"
+        },
+        {
+          "food": "Raw foods and uncooked proteins",
+          "reason": "During recovery the gut is vulnerable to additional pathogens; raw foods during recovery can introduce new foodborne pathogens; immune system temporarily impaired",
+          "examples": ["Raw salads and vegetables", "Raw meat or fish", "Raw eggs", "Sushi or sashimi", "Raw oysters"],
+          "duration": "Avoid completely until full recovery (7-10 days)"
+        },
+        {
+          "food": "Large meals",
+          "reason": "Large portions overload a compromised digestive system — overwhelm reduced gastric acid production, impaired intestinal enzyme function, and damaged mucosal absorptive capacity",
+          "recommendation": "Small, frequent meals (5-6 small portions per day) preferred over 3 large meals for 7-10 days during recovery"
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This graduated recovery plan assumes mild-moderate food poisoning improving after first 12-24 hours. Adjust based on individual symptoms and recovery speed. Advance only if previous step tolerated. Every patient is different.",
+        "day_0_acute_phase": "NPO (nothing by mouth) while actively vomiting → sips of ORS or ice chips → small sips cold water (30-60mL every 5-15 minutes) → ginger tea sips → advance to step 2 when nausea reduces",
+        "day_1": "ORS sachets (main fluid); Rice water / kanji; Plain white rice congee (watery, no spice, no salt); Weak ginger tea; Banana (half, if tolerated); Clear chicken broth; Coconut water",
+        "day_2": "ORS; Plain boiled rice (slightly thicker congee); Half banana; Plain toast; Boiled potato (no skin, no butter); Stewed apple; Moong dal soup; Chamomile/ginger herbal tea; Plain water",
+        "day_3_to_4": "Plain boiled rice with moong dal khichdi; 1 boiled egg (scrambled); Plain yogurt/curd (probiotic); Ripe banana; Cream crackers; Diluted apple juice; Boiled carrot (well cooked); Plain broth",
+        "day_5_to_7": "Normal soft foods gradually reintroduced: boiled rice or plain chapati + dal; Steamed or boiled fish; Yogurt; Soft cooked vegetables (without strong spices); Oatmeal porridge; Avoid raw vegetables, fried foods, spicy dishes, and dairy (except yogurt)",
+        "week_2_onwards": "Normal balanced diet gradually resumed; reintroduce fibre, cooked then raw vegetables; probiotics daily (yogurt/kefir); maintain good hydration; avoid alcohol for 2-4 weeks"
+      },
+      "special_dietary_notes": [
+        "ORS sachets are far superior to plain water or sports drinks for rehydration — they use glucose-sodium co-transport to actively replace electrolytes; make up exactly as directed on packet (do not add extra sugar or dilute)",
+        "Rice water (kanji) and coconut water are excellent traditional Indian rehydration fluids with clinical evidence — use freely",
+        "NEVER force eat if nauseated — fluid replacement is priority over food for first 24 hours; the body tolerates days without food much better than hours without fluids",
+        "Probiotics (yogurt with live cultures, Saccharomyces boulardii supplements) from day 3 of illness and throughout antibiotic course significantly reduce recovery time and prevent antibiotic-associated diarrhoea",
+        "Children with food poisoning: give ORS in small amounts CONTINUOUSLY (5-10mL every 2-5 min); never restrict fluids; offer favourite clear fluids (diluted juice, coconut water) to encourage intake",
+        "Return to normal diet as quickly as tolerated — prolonged restrictive diets are not recommended; gradual return to normal eating is better than prolonged BRAT diet restriction",
+        "Zinc 20mg daily for 10-14 days in children under 5 years — WHO recommendation; reduces duration and prevents recurrence"
+      ]
+    },
+
+    "lifestyle_management": {
+      "food_safety_and_prevention": {
+        "overview": "The vast majority of food poisoning cases are preventable through proper food safety practices. The WHO Five Keys to Safer Food provide a practical framework for food safety in homes and food service settings.",
+        "who_five_keys": [
+          {
+            "key": "1. KEEP CLEAN",
+            "measures": [
+              "Wash hands thoroughly with soap and water for ≥20 seconds: before handling food, after handling raw meat/poultry/seafood, after toilet use, after changing nappies, after touching animals or pets, after touching rubbish/waste",
+              "Wash and sanitise all food preparation surfaces and equipment before and after use",
+              "Wash utensils, chopping boards, and kitchen equipment with hot soapy water after contact with raw meat",
+              "Protect food preparation areas from insects, pets, and other animals",
+              "Ensure kitchen cloths and sponges are replaced frequently — they harbour bacteria"
+            ]
+          },
+          {
+            "key": "2. SEPARATE RAW AND COOKED FOODS",
+            "measures": [
+              "Keep raw meat, poultry, and seafood separate from ready-to-eat foods — in shopping bag, during refrigeration, and during preparation",
+              "Use separate chopping boards and utensils for raw meat and for vegetables/cooked foods",
+              "Store raw meat/poultry on the bottom shelf of refrigerator to prevent drip contamination onto foods below",
+              "Do not wash raw chicken — this spreads Campylobacter around the sink and surfaces; cooking to correct temperature kills it more effectively",
+              "Never place cooked food on plates or surfaces that had raw meat on them"
+            ]
+          },
+          {
+            "key": "3. COOK THOROUGHLY",
+            "measures": [
+              "Cook poultry to internal temperature ≥75°C throughout (no pink flesh; juices run clear)",
+              "Cook ground/minced meat (burgers, meatballs) to ≥71°C throughout — cannot rely on colour (no pink)",
+              "Cook eggs until yolk and white are firm (or to at least 71°C)",
+              "Bring soups and stews to boil (≥100°C) during reheating",
+              "Use a food thermometer for precise temperature checking",
+              "Defrost frozen food in refrigerator or under cold running water — never at room temperature",
+              "Reheat leftovers only ONCE to ≥75°C throughout; never reheat multiple times"
+            ]
+          },
+          {
+            "key": "4. KEEP FOOD AT SAFE TEMPERATURES",
+            "measures": [
+              "Refrigerate cooked food within 1 hour (2 hours maximum) of cooking — do not leave at room temperature",
+              "Set refrigerator to ≤4°C (40°F) and freezer to ≤-18°C (0°F)",
+              "Do not overload refrigerator — air must circulate to maintain temperature",
+              "Thaw frozen foods only in refrigerator, in microwave (use immediately), or under cold running water",
+              "Keep hot food hot (≥63°C) and cold food cold (≤4°C) during service",
+              "Never leave buffet food at room temperature for more than 2 hours (1 hour if ambient temperature >30°C)",
+              "Cool large batches of hot food rapidly using ice baths before refrigerating — do not place steaming hot food in refrigerator (raises internal temperature)"
+            ]
+          },
+          {
+            "key": "5. USE SAFE WATER AND RAW MATERIALS",
+            "measures": [
+              "Use safe water (boiled, filtered, or bottled) — especially for drinking and washing salads when water quality uncertain",
+              "Wash all fresh fruits and vegetables thoroughly under running clean water before consumption",
+              "Choose pasteurised milk, dairy products, and juices over unpasteurised",
+              "Check expiry dates and discard out-of-date food",
+              "Do not use damaged, dented, bulging, or corroded cans (possible Botulinum contamination)",
+              "Check for signs of spoilage: unusual odour, colour, mould — if in doubt, throw it out",
+              "When travelling, follow 'boil it, cook it, peel it, or forget it' principle for food and water safety"
+            ]
+          }
+        ]
+      },
+      "home_hygiene_measures": [
+        "Wash hands with soap for ≥20 seconds at key times — before eating, after toilet use, after handling raw food, after contact with sick people",
+        "Use alcohol-based hand sanitizer (≥60% alcohol) when soap unavailable",
+        "Disinfect kitchen surfaces with dilute bleach solution (1 tablespoon bleach per gallon of water) or commercial disinfectant after food preparation",
+        "Wash dishcloths and tea towels frequently at 60°C — they are major reservoirs of bacteria and norovirus",
+        "Replace kitchen sponges regularly — clean in dishwasher at high temperature; microwaving damp sponge for 2 minutes kills most bacteria",
+        "Childproof measures: store cleaning chemicals away from food preparation areas",
+        "Sick household members: use separate bathroom if possible; exclude from food preparation",
+        "Wash hands after contact with any sick person — norovirus is extremely contagious"
+      ],
+      "isolation_and_infection_control": {
+        "return_to_work_school": "Stay home for 48 hours after the LAST episode of diarrhoea or vomiting",
+        "food_handlers": "Food handlers and healthcare workers: 48 hours symptom-free before returning to work; some pathogens (Typhoid, Salmonella) require negative stool cultures before returning",
+        "exclusion_periods": {
+          "norovirus": "48 hours after last symptoms (highly contagious)",
+          "salmonella_non_typhoidal": "48 hours after last symptoms (longer exclusion for food handlers)",
+          "typhoid": "Until negative stool cultures confirmed (can be months-long carrier)",
+          "hepatitis_A": "1 week after onset of jaundice or dark urine",
+          "shigella": "48 hours after last symptoms; negative stool culture for food handlers"
+        },
+        "contact_tracing": "If outbreak suspected (multiple people affected after same food/event) — contact local/district public health or Environmental Health Office for outbreak investigation and food safety enforcement"
+      },
+      "travel_food_safety": {
+        "principle": "Boil it, cook it, peel it, or forget it",
+        "measures": [
+          "Drink only bottled, boiled, or purified water — avoid tap water, ice, and drinks with ice in high-risk destinations",
+          "Eat only hot freshly cooked food — avoid food that has been sitting at room temperature",
+          "Eat fruit you can peel yourself — avoid pre-peeled or pre-cut fruit",
+          "Avoid raw shellfish, raw vegetables, and salads in high-risk areas",
+          "Be cautious with street food — choose busy stalls with high turnover where food is cooked fresh",
+          "Carry oral rehydration sachets, probiotics, and bismuth subsalicylate for traveller's diarrhoea prevention",
+          "Consider typhoid vaccine and hepatitis A vaccine before travel to endemic areas",
+          "Travellers' diarrhoea prophylaxis: bismuth subsalicylate reduces risk by 65%; antibiotics (rifaximin, ciprofloxacin) for high-risk travellers under medical advice"
+        ]
+      },
+      "post_illness_recovery_lifestyle": [
+        "Rest adequately — the immune system requires energy; avoid strenuous activity for 48-72 hours after symptoms resolve",
+        "Maintain good hydration — drink at least 2-2.5 litres daily for 1-2 weeks after illness",
+        "Continue probiotics (yogurt, kefir, or supplements) for 4-6 weeks after illness and throughout antibiotic course",
+        "Gradually reintroduce normal diet over 7-10 days — do not rush",
+        "Avoid alcohol for 2-4 weeks post-illness (liver recovery time, especially hepatitis A/E)",
+        "Return to exercise cautiously — start with walking; avoid intense exercise until energy levels normalised",
+        "Monitor for post-infectious complications: persistent loose stools >4 weeks (post-infectious IBS), joint pain (reactive arthritis), fatigue (hepatitis recovery)",
+        "Seek GP review if not fully recovered at 2-4 weeks — exclude parasitic infection or post-infectious IBS"
+      ]
+    },
+
+    "food_poisoning_monitoring_plan": {
+      "note": "Most food poisoning is self-limiting and resolves with home management. This monitoring guide helps determine when home care is sufficient and when medical attention is urgently needed.",
+      "green_zone": {
+        "status": "Mild — Safe to Manage at Home",
+        "criteria": "Vomiting fewer than 5 times in 24 hours; diarrhoea fewer than 8 times in 24 hours; NO blood in stool; able to keep down small sips of ORS; temperature <38.5°C; alert and oriented; adequate urine output (pale yellow urine); not in at-risk group (young infant, elderly, pregnant, immunocompromised)",
+        "action": "Home management with ORS sachets, rest, and BRAT diet. Monitor symptoms every 2-4 hours. Advance oral fluids as tolerated. Antiemetics if vomiting prevents ORS intake. Should show improvement within 24-48 hours. If not improving or worsening — move to yellow zone."
+      },
+      "yellow_zone": {
+        "status": "Moderate — Seek Medical Attention Within Hours",
+        "criteria": "Vomiting preventing ORS intake; diarrhoea >8-10 times per day; signs of moderate dehydration (very dry mouth, decreased urine output, dizziness on standing); fever 38.5-39°C; illness in high-risk person (child <2 years, elderly >65, pregnancy, immunocompromised, diabetes); no improvement after 24-48 hours of home management; mucus in stool; blood-tinged stool",
+        "action": "Contact GP or attend urgent care/walk-in clinic within hours. Blood tests and stool samples likely required. IV fluids may be needed. Antiemetics prescribed. Consider antibiotic based on clinical assessment. Closely monitor for worsening — admission may be required."
+      },
+      "red_zone": {
+        "status": "MEDICAL EMERGENCY — Go to Emergency Department Immediately",
+        "criteria_immediate": [
+          "Frank blood in stool (bright red or dark/tarry) — possible dysentery, HUS, or invasive infection",
+          "Signs of severe dehydration: no urination >8-12 hours, confusion or altered consciousness, rapid weak pulse, cold clammy hands, sunken eyes, skin not returning after gentle pinch",
+          "High fever >39.5°C with abdominal rigidity or guarding",
+          "Neurological symptoms: double vision, drooping eyelid (ptosis), difficulty swallowing, slurred speech, progressive muscle weakness — POSSIBLE BOTULISM — CALL EMERGENCY SERVICES",
+          "Signs of septic shock: low blood pressure, rapid weak pulse, confusion, cold pale extremities",
+          "In a child: no wet nappy for 8+ hours, no tears when crying, unable to wake or very lethargic, purple or mottled skin",
+          "Jaundice (yellow eyes or skin) — possible hepatitis or Amanita mushroom liver failure",
+          "Inability to swallow fluids or saliva — possible peritonitis or serious systemic illness",
+          "Severe constant abdominal pain with board-like rigidity — possible bowel perforation",
+          "Pregnant woman with food poisoning symptoms after eating at-risk foods (soft cheese, deli meat, smoked fish) — possible Listeria"
+        ],
+        "action": "CALL EMERGENCY SERVICES (102/112/999/911) or get to emergency department immediately. Do NOT attempt home management for these features. If botulism suspected — call emergency services AND national public health emergency line immediately."
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Severe Dehydration and Electrolyte Imbalances",
+        "description": "The most common and immediately dangerous complication of food poisoning — especially in infants, young children, elderly, and those with severe vomiting and diarrhoea. Leads to hypovolaemia, acute kidney injury, and cardiovascular collapse. Hypokalaemia from diarrhoea can cause cardiac arrhythmias. Hyponatraemia (from giving plain water without electrolytes) causes cerebral oedema — paradoxically dangerous in children.",
+        "severity": "Moderate to Life-threatening",
+        "management": "ORS (oral rehydration); IV Ringer's Lactate for severe dehydration/shock; electrolyte replacement (especially potassium); monitoring of urine output and electrolytes"
+      },
+      {
+        "complication": "Haemolytic Uraemic Syndrome (HUS)",
+        "description": "Life-threatening triad: (1) Microangiopathic haemolytic anaemia (red blood cell destruction), (2) Thrombocytopenia (low platelets), and (3) Acute renal failure (oliguria, rising creatinine). Occurs in 5-10% of children infected with STEC (Shiga toxin-producing E. coli O157:H7). Shiga toxin damages endothelial cells in kidney glomeruli and other organs.",
+        "warning_signs": "Decreased urine output 3-5 days into E. coli illness; pallor, unusual fatigue, bruising or petechiae after diarrhoea resolves",
+        "severity": "Life-threatening — 3-5% mortality; 25-30% develop long-term renal impairment",
+        "management": "Supportive — IV fluids and monitoring; dialysis if severe AKI; red blood cell transfusion for severe anaemia; platelet transfusion generally avoided (worsens thrombosis); NO antibiotics; NO loperamide; eculizumab (complement inhibitor) in severe cases",
+        "critical_note": "DO NOT GIVE ANTIBIOTICS or LOPERAMIDE for STEC O157:H7 — both increase HUS risk by increasing Shiga toxin release"
+      },
+      {
+        "complication": "Septicaemia (Bacteraemia / Blood Poisoning)",
+        "description": "Bacterial invasion of the bloodstream from the GI tract — particularly Salmonella, Listeria, Campylobacter, Shigella, and Yersinia. Presents as high fever, rigors, severe illness beyond the GI tract, and systemic inflammatory response. Can lead to septic shock, multi-organ failure, and death.",
+        "risk_groups": "Immunocompromised patients, elderly, infants, patients with underlying chronic disease",
+        "severity": "Life-threatening",
+        "management": "IV antibiotics (after blood cultures); ICU support if septic shock; vasopressors if hypotensive"
+      },
+      {
+        "complication": "Reactive Arthritis (Post-Infectious Arthropathy)",
+        "description": "Sterile inflammatory arthritis developing 1-4 weeks after gastrointestinal or genitourinary infection. Predominantly affects large joints of lower limbs (knees, ankles). Classic Reiter's syndrome triad: arthritis + urethritis + conjunctivitis ('can't see, can't pee, can't climb a tree'). Triggered by: Salmonella, Campylobacter, Shigella, Yersinia, Cryptosporidium, Giardia.",
+        "severity": "Moderate; usually self-limiting (weeks to months) but can become chronic",
+        "management": "NSAIDs for pain; physiotherapy; DMARDs (sulfasalazine) for chronic reactive arthritis"
+      },
+      {
+        "complication": "Guillain-Barré Syndrome (GBS)",
+        "description": "Acute post-infectious autoimmune demyelinating polyneuropathy causing ascending flaccid paralysis. Campylobacter jejuni is the MOST COMMON identified antecedent infection (20-40% of GBS cases follow Campylobacter gastroenteritis). Molecular mimicry — antibodies against Campylobacter lipo-oligosaccharides cross-react with gangliosides in peripheral nerves.",
+        "severity": "Severe — can cause respiratory failure requiring ventilatory support; 5% mortality; 20% residual weakness",
+        "timing": "Neurological symptoms 2-6 weeks after diarrhoea episode",
+        "warning_signs": "Progressive ascending weakness starting in legs, sensory disturbances, facial weakness, difficulty breathing",
+        "management": "IV immunoglobulin or plasmapheresis; ICU respiratory monitoring; rehabilitation"
+      },
+      {
+        "complication": "Post-Infectious Irritable Bowel Syndrome (PI-IBS)",
+        "description": "Persistent alteration in bowel habit and abdominal discomfort lasting more than 3 months after an episode of acute infectious gastroenteritis. Affects 5-10% of patients after food poisoning. Mechanisms include persistent low-grade mucosal inflammation, altered gut microbiome, and changed gut motility and sensory function.",
+        "risk_factors": "Prolonged/severe initial illness, female sex, stress during illness, treatment with antibiotics",
+        "severity": "Moderate; chronic; significantly affects quality of life",
+        "management": "Dietary modification; probiotics; antispasmodics; FODMAP diet; psychological support (CBT for IBS)"
+      },
+      {
+        "complication": "Listeria Meningitis and Encephalitis",
+        "description": "Listeria monocytogenes has a predilection for the central nervous system — can cause meningitis (neck stiffness, photophobia, fever, headache), rhombencephalitis (brainstem inflammation), and brain abscess. Occurs in elderly, immunocompromised, and neonates. High mortality (20-30%).",
+        "severity": "Life-threatening",
+        "management": "IV ampicillin + gentamicin; add trimethoprim-sulfamethoxazole if penicillin allergy; prolonged IV therapy (3-6 weeks for CNS infection)"
+      },
+      {
+        "complication": "Fulminant Hepatic Failure (Mushroom Poisoning / Hepatitis A/E)",
+        "description": "Life-threatening acute liver failure from: Amanita phalloides mushroom poisoning (amatoxins cause direct hepatocellular necrosis); or severe acute hepatitis A/E (rare in young adults; case fatality 1.8% in >50 year olds with HAV; 20-25% in pregnant women with HEV).",
+        "severity": "Life-threatening",
+        "management": "Liver transplant assessment; N-acetylcysteine; IV silibinin (for Amanita); supportive ICU care"
+      },
+      {
+        "complication": "Amoebic Liver Abscess",
+        "description": "Extraintestinal complication of Entamoeba histolytica — amoebae invade through intestinal wall into portal circulation and form abscess in liver (usually right lobe). Presents weeks to months after GI infection with fever, right upper quadrant pain, tender hepatomegaly. May be present without prior diarrhoea.",
+        "severity": "Moderate to Severe",
+        "management": "Metronidazole 750mg TDS for 10-14 days; followed by luminal agent; image-guided aspiration if large abscess or no response to medication"
+      },
+      {
+        "complication": "Botulism Paralysis and Respiratory Failure",
+        "description": "Botulinum toxin causes progressive descending flaccid paralysis — starting from cranial nerves (ptosis, diplopia, dysarthria, dysphagia) then descending to respiratory muscles. Without respiratory support, botulism causes death from respiratory failure.",
+        "severity": "Life-threatening; 5-10% case fatality",
+        "management": "Heptavalent botulinum antitoxin (HBAT) as early as possible; ICU respiratory monitoring; mechanical ventilation if respiratory failure; prolonged ICU stay (weeks to months); physical rehabilitation"
+      }
+    ],
+
+    "special_populations": {
+      "food_poisoning_in_children": {
+        "key_points": [
+          "Children under 5 years are at highest risk for severe food poisoning and death from dehydration",
+          "Signs of dehydration in children are different from adults — assess: sunken fontanelle (infants), sunken eyes, no tears when crying, dry mouth, no wet nappy in 6+ hours, very lethargic or abnormally irritable",
+          "Dehydration develops much faster in children (hours) than adults — immediate ORS is critical",
+          "Rotavirus is the leading cause of severe diarrhoea in unvaccinated children — rotavirus vaccine has dramatically reduced childhood hospitalisation for gastroenteritis",
+          "NEVER withhold ORS in vomiting children — give 5-10mL every 2-5 minutes by spoon or syringe; even if vomiting, small frequent sips are absorbed",
+          "Ondansetron single dose in children with vomiting is evidence-based and safe — reduces hospitalisation significantly",
+          "Zinc supplementation (10-20mg/day for 10-14 days) — WHO recommendation for children <5 with acute diarrhoea",
+          "Do NOT give antidiarrhoeal medications (loperamide) to children under 2 years",
+          "Do NOT give plain water alone to dehydrated children — use ORS (plain water dilutes electrolytes dangerously in infants)",
+          "Return to school: 48 hours after last episode of diarrhoea or vomiting",
+          "Children in daycare/nursery settings are high-risk — notify staff of illness for outbreak control",
+          "Breastfeeding should CONTINUE during food poisoning — breastmilk provides antibodies, hydration, and immune support; do not stop breastfeeding"
+        ]
+      },
+      "food_poisoning_in_pregnancy": {
+        "key_points": [
+          "Listeria monocytogenes causes particularly severe illness in pregnancy — even mild flu-like symptoms in pregnancy after eating high-risk foods (soft cheese, deli meats, smoked fish, pre-packaged salads, pâté) warrant URGENT medical assessment and empirical IV ampicillin",
+          "Listeria: low incidence but 13x higher risk in pregnancy; causes miscarriage, preterm birth, stillbirth, and neonatal meningitis; 20% case fatality in pregnancy",
+          "Hepatitis E: 20-25% case fatality in 3rd trimester; WASH hands after contact with animals; avoid undercooked pork and wild game",
+          "Toxoplasma: from raw/undercooked meat, unwashed vegetables, cat faeces; causes foetal abnormalities, chorioretinitis, and miscarriage — avoid raw meat and change cat litter with gloves",
+          "Salmonella and Campylobacter: may cause bacteraemia in pregnancy; treat with azithromycin (ciprofloxacin safe in 2nd and 3rd trimester for severe disease)",
+          "Dehydration in pregnancy: severe dehydration triggers preterm contractions — ensure adequate IV fluid replacement early",
+          "Safe antibiotics in pregnancy: Amoxicillin, Azithromycin, Cephalosporins, Ampicillin (for Listeria); AVOID: Ciprofloxacin (1st trimester), Metronidazole (1st trimester), Tetracyclines",
+          "Hepatitis A and typhoid vaccination recommended BEFORE travel to endemic areas if planning pregnancy",
+          "Report any suspected Listeria exposure or illness in pregnancy IMMEDIATELY to obstetrician and infectious disease team"
+        ],
+        "listeria_high_risk_foods_avoid": ["Soft and semi-soft cheeses (brie, camembert, blue cheese, feta, ricotta)", "Ready-to-eat deli meats, hot dogs, pâté (unless reheated until steaming)", "Smoked or cured fish", "Pre-packaged salads and coleslaw", "Unpasteurised milk and dairy", "Raw sprouts"]
+      },
+      "food_poisoning_in_elderly": {
+        "key_points": [
+          "Adults over 65 are at high risk for severe food poisoning complications due to: reduced gastric acid (less protective barrier), impaired immune response, multiple comorbidities, polypharmacy, reduced thirst sensation leading to underhydration",
+          "Dehydration signs may be less obvious in elderly — check urine output, mental status changes, and blood pressure",
+          "Salmonella and Listeria more likely to cause bacteraemia in elderly — lower threshold for blood cultures and antibiotics",
+          "Medications: PPIs reduce gastric acid barrier (increase susceptibility); immunosuppressants reduce ability to fight infection; anticoagulants increase bleeding risk with dysentery",
+          "Hospitalisation threshold should be lower for elderly food poisoning — even moderate dehydration is harder to manage at home",
+          "Post-infectious IBS and reactive arthritis are more debilitating in elderly",
+          "Influenza and pneumococcal vaccination does not protect against food poisoning; typhoid and Hep A vaccines recommended before travel"
+        ]
+      },
+      "food_poisoning_in_immunocompromised": {
+        "key_points": [
+          "HIV/AIDS (CD4 <200), organ transplant recipients, chemotherapy patients, patients on high-dose steroids or biologics are at dramatically higher risk for severe, invasive, and prolonged food poisoning",
+          "Cryptosporidium: causes chronic, severe, potentially life-threatening watery diarrhoea in AIDS patients (CD4 <50) — no reliable antibiotic treatment; nitazoxanide has limited benefit; only effective treatment is immune reconstitution with antiretroviral therapy",
+          "Salmonella and Campylobacter: much higher rates of bacteraemia; consider empirical antibiotics for all immunocompromised patients with bacterial food poisoning",
+          "Listeria: 300x higher risk in immunocompromised vs healthy adults; empirical IV ampicillin for any febrile illness after eating high-risk foods in immunocompromised patients",
+          "CMV gastritis and enteritis: consider in severe immunosuppressed patients with unexplained GI symptoms",
+          "Food safety counselling is CRITICAL for immunocompromised patients — strict avoidance of all raw/undercooked foods, raw shellfish, soft cheeses, deli meats, raw sprouts",
+          "Report all significant food poisoning in immunocompromised patients to infectious disease team"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Typhoid Vaccine (Typhoid Vi Polysaccharide or Ty21a Oral)",
+        "frequency": "Vi polysaccharide injectable: single dose; booster every 2-3 years. Ty21a oral: 4 capsules over 8 days; booster every 5 years (not for immunocompromised)",
+        "reason": "Salmonella Typhi (typhoid fever) is a major foodborne and waterborne disease globally — especially in South Asia (India, Pakistan, Bangladesh), Southeast Asia, and Sub-Saharan Africa. Vaccination recommended before travel to endemic areas and for food handlers in endemic regions.",
+        "effectiveness": "50-80% protective efficacy; reduces severity even if infection occurs",
+        "note": "Typhoid conjugate vaccine (TCV) increasingly available — single dose; higher efficacy; use in children ≥6 months and adults"
+      },
+      {
+        "vaccine": "Hepatitis A Vaccine",
+        "frequency": "2 doses: first dose, booster at 6-18 months; lifelong protection after 2 doses",
+        "reason": "Hepatitis A virus (HAV) is transmitted through contaminated food and water — a major foodborne pathogen especially in areas with poor sanitation. Shellfish, salads, and raw produce contaminated by infected food handlers are primary vehicles. Vaccination recommended for: travellers to endemic areas, food handlers, healthcare workers, HIV-positive individuals, and people with chronic liver disease",
+        "effectiveness": ">95% protective efficacy after 2 doses; lifelong protection"
+      },
+      {
+        "vaccine": "Rotavirus Vaccine",
+        "frequency": "Oral vaccine — 2 (Rotarix) or 3 doses (RotaTeq) given from 6 weeks of age per national childhood immunisation schedule; must complete before 8 months of age",
+        "reason": "Rotavirus is the leading cause of severe diarrhoea and dehydration in children under 5 worldwide — responsible for over 200,000 deaths annually. Rotavirus vaccine has dramatically reduced rotavirus-related hospitalisations by 85-90% in countries with universal vaccination (e.g., USA, UK, India — NTAGI recommended).",
+        "target": "All infants from 6 weeks of age; recommended in India under Universal Immunisation Programme"
+      },
+      {
+        "vaccine": "Cholera Vaccine (Oral — Dukoral or Shanchol)",
+        "frequency": "2 doses given 1-6 weeks apart; booster every 2 years; recommended 1 week before travel",
+        "reason": "Vibrio cholerae causes potentially fatal profuse watery diarrhoea. Oral cholera vaccine recommended for: travellers to cholera-endemic areas (Bangladesh, India, Africa, Southeast Asia), humanitarian workers, and as part of outbreak response.",
+        "effectiveness": "65-85% protective efficacy against cholera for 2 years"
+      },
+      {
+        "vaccine": "Typhoid-Hepatitis A Combined Vaccine",
+        "frequency": "Single injection; provides protection against both typhoid and hepatitis A simultaneously",
+        "brand_examples": ["Vivaxim", "Hepatyrix"],
+        "reason": "Practical combined travel vaccine; both diseases transmitted through contaminated food and water in developing countries; single injection improves compliance for travellers",
+        "note": "Requires hepatitis A booster at 6-18 months for lifelong protection"
+      },
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Annually",
+        "reason": "Not directly protective against food poisoning bacteria. However, influenza illness can severely immunocompromise patients making them more susceptible to bacterial food poisoning complications. Food handlers should be vaccinated to prevent workplace spread of respiratory and potentially foodborne illness."
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Symptoms not improving after 24-48 hours of home management with ORS",
+      "Any blood in stool — bright red, dark, or tarry — regardless of other symptoms",
+      "High fever above 38.5°C with food poisoning symptoms",
+      "Signs of moderate dehydration: significantly reduced urination, very dry mouth, dizziness on standing",
+      "Unable to keep down any fluids for more than 4-6 hours — vomiting everything",
+      "Infant or child under 2 years with food poisoning — see doctor on same day if unable to keep ORS down",
+      "Elderly person (over 65) with food poisoning — lower threshold for seeking care due to faster dehydration and higher complication risk",
+      "Pregnant woman with any food poisoning symptoms, especially if she recently consumed high-risk foods (soft cheese, deli meats, smoked fish) — possible Listeria",
+      "Immunocompromised patient with food poisoning (chemotherapy, steroids, HIV, organ transplant) — seek care on same day",
+      "Neurological symptoms: double vision, drooping eyelid, difficulty swallowing, weakness — possible botulism — CALL EMERGENCY SERVICES",
+      "Jaundice (yellow eyes or skin) developing — possible hepatitis A/E",
+      "Diarrhoea lasting more than 14 days — possibly Giardia, Entamoeba, or another cause requiring investigation",
+      "Symptoms in a returned traveller from a tropical country — typhoid, Hepatitis A/E, Giardia, amoeba, or other tropical enteric infection",
+      "Several people who ate the same food are all ill — suspected food poisoning outbreak — contact public health authority"
+    ],
+
+    "emergency_signs": [
+      "Severe dehydration: no urine output for 8-12+ hours, confusion or altered consciousness, very rapid weak pulse, cold and mottled skin, deeply sunken eyes, inability to stay awake — CALL EMERGENCY SERVICES IMMEDIATELY",
+      "Neurological symptoms developing: double vision, drooping eyelid (ptosis), difficulty swallowing or speaking, slurred speech, progressive muscle weakness, breathing difficulty — POSSIBLE BOTULISM — CALL EMERGENCY SERVICES",
+      "Copious bloody diarrhoea (red blood) with fever and deteriorating condition — possible severe dysentery, invasive bacterial colitis, or HUS",
+      "Signs of septic shock: rapid weak pulse (>120 bpm), falling blood pressure, cold clammy pale skin, extreme weakness, confusion — possible bacteraemia from food poisoning",
+      "Severe constant abdominal pain with board-like rigid abdomen and guarding — possible bowel perforation or peritonitis",
+      "Jaundice (yellow skin and eyes) with severe vomiting and rapid deterioration — possible fulminant hepatic failure (Amanita mushroom poisoning or hepatitis)",
+      "In a child: no wet nappy for 8+ hours, no tears when crying, floppy and unable to wake, purple or blotchy skin — severe paediatric dehydration or sepsis",
+      "Pregnant woman with high fever, headache, neck stiffness, and food poisoning symptoms — possible Listeria meningitis",
+      "Decreased urine output with pallor and bruising in a child 3-5 days after bloody diarrhoea — possible Haemolytic Uraemic Syndrome (HUS) — EMERGENCY",
+      "Severe mushroom poisoning — any suspected Amanita ingestion (Death Cap) — even if symptom-free initially — EMERGENCY DEPARTMENT IMMEDIATELY (delayed liver failure is fatal without early treatment)"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is food poisoning and how is it different from a stomach bug?",
+        "answer": "Food poisoning is illness caused specifically by consuming contaminated food or drink — whether contaminated with bacteria (Salmonella, Campylobacter), viruses (norovirus, rotavirus), parasites (Giardia, Entamoeba), or toxins (Staph enterotoxin, Botulinum toxin). A 'stomach bug' (gastroenteritis) is a broader term — it includes food poisoning but also includes illnesses spread person-to-person (such as norovirus spread from touching infected surfaces). In practice there is significant overlap — norovirus is the most common cause of both food poisoning outbreaks and 'stomach bugs'. The key feature of food poisoning is a clear link to a specific food or meal."
+      },
+      {
+        "question": "How quickly does food poisoning start after eating contaminated food?",
+        "answer": "Timing depends entirely on the causative agent: (1) Very fast (1-6 hours): Staphylococcus aureus enterotoxin or Bacillus cereus emetic toxin — pre-formed toxin in food; (2) 6-24 hours: Clostridium perfringens, Bacillus cereus diarrhoeal toxin, Vibrio; (3) 12-72 hours: Salmonella, Campylobacter, E. coli, Norovirus; (4) 1-3 weeks: Giardia, Hepatitis A, Typhoid; (5) Weeks to months: Entamoeba. Very short onset (under 6 hours) strongly suggests toxin already in food rather than bacterial infection."
+      },
+      {
+        "question": "What is the most important treatment for food poisoning?",
+        "answer": "Oral rehydration therapy (ORT) with WHO-formulated ORS sachets is the single most important and life-saving treatment for food poisoning. ORS replaces fluids and electrolytes lost through vomiting and diarrhoea and has saved tens of millions of lives globally. It is far more effective than plain water alone because it uses the sodium-glucose co-transport mechanism that remains functional even in severe diarrhoea. Most mild to moderate food poisoning resolves with rest, ORS, and bland diet — without antibiotics."
+      },
+      {
+        "question": "When should I take antibiotics for food poisoning?",
+        "answer": "Most food poisoning does NOT require antibiotics. Antibiotics are NOT helpful for: viral food poisoning (norovirus, rotavirus, hepatitis A), toxin-mediated food poisoning (Staph, B. cereus, Botulinum), mild self-limiting bacterial gastroenteritis, or suspected STEC E. coli O157:H7 (antibiotics actually INCREASE risk of HUS). Antibiotics ARE indicated for: typhoid fever, invasive Salmonella bacteraemia, severe Campylobacter or Shigella, Giardia and Entamoeba (metronidazole), Listeria (IV ampicillin), severe or immunocompromised patients, and Cholera. Always based on clinical assessment by a doctor."
+      },
+      {
+        "question": "Should I use loperamide (Imodium) to stop diarrhoea?",
+        "answer": "Loperamide (Imodium) CAN be used for mild, uncomplicated watery diarrhoea in adults (e.g., traveller's diarrhoea). However, it is ABSOLUTELY CONTRAINDICATED in: bloody diarrhoea, suspected E. coli O157:H7 (massively increases HUS risk), high fever with diarrhoea, Shigella or invasive bacterial diarrhoea, and children under 2 years. Diarrhoea is the body's way of expelling pathogens and toxins — stopping it prematurely can cause dangerous bacterial retention, toxic megacolon, or HUS. When in doubt, do not use loperamide — see a doctor."
+      },
+      {
+        "question": "What is Haemolytic Uraemic Syndrome (HUS) and how does it happen?",
+        "answer": "HUS is a life-threatening complication that occurs in 5-10% of children infected with Shiga toxin-producing E. coli O157:H7 (STEC). It presents 5-10 days after bloody diarrhoea with: anaemia (pale, tired), low platelets (bruising), and acute kidney failure (reduced urine output). Shiga toxin damages small blood vessels in the kidneys and other organs. Treatment is entirely supportive — no antibiotics (increase HUS risk), no loperamide. Early recognition is crucial: any child with bloody diarrhoea who develops pallor, reduced urine output, or bruising needs emergency evaluation. HUS kills 3-5% and causes long-term kidney disease in 25-30%."
+      },
+      {
+        "question": "What foods should I avoid after food poisoning?",
+        "answer": "Avoid for the first 3-7 days: dairy products (except plain yogurt), fatty and fried foods, spicy foods, raw vegetables and salads, high-fibre foods, alcohol (especially with metronidazole), caffeine, full-strength fruit juices, and sugary beverages. Gradually reintroduce these over 7-10 days as the gut recovers. Focus on: ORS, BRAT diet (bananas, rice, applesauce, toast), clear broths, rice water (kanji), coconut water, plain yogurt (probiotic), and plain boiled easy-to-digest foods."
+      },
+      {
+        "question": "What is botulism and why is it so dangerous?",
+        "answer": "Botulism is a life-threatening illness caused by botulinum toxin produced by Clostridium botulinum in improperly preserved/canned foods, especially home-preserved low-acid vegetables, fermented products, and honey (infant botulism). The toxin causes progressive descending paralysis — starting with ptosis (drooping eyelid), double vision, difficulty swallowing and speaking, then progressing to arm weakness, leg weakness, and finally respiratory muscle paralysis causing death from asphyxiation. It is treated with heptavalent botulinum antitoxin (HBAT) and ICU respiratory support. Warning signs: double vision or drooping eyelid 12-72 hours after eating — CALL EMERGENCY SERVICES IMMEDIATELY."
+      },
+      {
+        "question": "How do I know if I have Giardia rather than a regular stomach bug?",
+        "answer": "Giardia infection has characteristic features distinguishing it from typical food poisoning: (1) Duration — persists for weeks to months without treatment (not the usual 24-48 hours); (2) Greasy, foul-smelling, floating stools (steatorrhoea) from fat malabsorption; (3) Excessive flatulence and sulphur/egg burps; (4) Bloating and abdominal distension; (5) NO blood in stool; (6) Weight loss over weeks; (7) History of travel or drinking untreated water. Diagnosis requires stool antigen test or stool microscopy (3 separate samples). Treatment: metronidazole 400mg TDS for 7 days or tinidazole 2g single dose."
+      },
+      {
+        "question": "Can food poisoning be prevented?",
+        "answer": "Yes — approximately 90% of food poisoning cases are preventable with proper food safety. The WHO Five Keys to Safer Food are: (1) Keep clean — wash hands thoroughly before cooking and after toilet; (2) Separate raw and cooked foods — different chopping boards, separate storage; (3) Cook thoroughly — use a food thermometer; poultry to 75°C; (4) Keep at safe temperatures — refrigerate within 1-2 hours of cooking; (5) Use safe water and raw materials — wash produce, use pasteurised dairy, drink treated water. Vaccinate children against rotavirus. Typhoid and hepatitis A vaccines before travel to endemic areas."
+      },
+      {
+        "question": "How long should I stay off work after food poisoning?",
+        "answer": "Most people can return to work 24-48 hours after symptoms resolve. However, if you work as a food handler, healthcare worker, or in a childcare setting, you should remain off for 48 hours AFTER the LAST episode of diarrhoea or vomiting. For specific pathogens: typhoid and Salmonella typhi (food handlers need negative stool cultures), hepatitis A (1 week after jaundice onset), and norovirus (48 hours after last symptoms — highly contagious). Always follow occupational health guidance for your workplace."
+      },
+      {
+        "question": "What is the BRAT diet and is it still recommended?",
+        "answer": "BRAT stands for Bananas, Rice, Applesauce (stewed), and Toast — a traditional bland, low-fibre, easy-to-digest diet for gastroenteritis recovery. It remains a reasonable starting point but is considered overly restrictive on its own. Current guidelines recommend a broader bland diet: clear fluids and ORS first, then plain rice, khichdi, boiled potato, plain toast, banana, chicken broth, and plain yogurt (probiotic). The key principles are: easily digestible, low fat and fibre initially, regular small meals, and advancing to normal diet as quickly as tolerated. Prolonged strict BRAT diet is not recommended as it lacks protein and nutrients needed for gut mucosal healing."
+      },
+      {
+        "question": "What foods cause food poisoning most often?",
+        "answer": "The highest-risk foods are: (1) Poultry (especially chicken) — Campylobacter and Salmonella; (2) Raw shellfish (oysters, clams) — Norovirus, HAV, Vibrio; (3) Raw or undercooked eggs — Salmonella; (4) Ground beef burgers — STEC E. coli O157:H7; (5) Ready-to-eat deli meats and soft cheeses — Listeria; (6) Reheated rice — Bacillus cereus; (7) Home-preserved/canned foods — Botulism; (8) Raw milk and unpasteurised dairy — Campylobacter, Salmonella, Listeria; (9) Raw sprouts — Salmonella, E. coli; (10) Pre-packaged salads — Norovirus, E. coli, Listeria."
+      },
+      {
+        "question": "Is there a specific test to tell exactly what caused my food poisoning?",
+        "answer": "Yes, though testing is not required for mild self-limiting illness. Stool culture identifies specific bacteria (Salmonella, Campylobacter, Shigella) but takes 48-72 hours and has ~50-70% sensitivity. Stool multiplex PCR panel tests for 20+ pathogens simultaneously in 2-6 hours with >90% sensitivity (BioFire FilmArray is the most comprehensive). Stool antigen tests rapidly detect Giardia, Cryptosporidium, norovirus, and rotavirus. Blood cultures for bacteraemia (typhoid, Listeria). Widal test for typhoid. Stool for ova and parasites (3 samples) for Giardia, Entamoeba. The incubation period and food history together often predict the likely organism even before testing."
+      }
+    ],
+
+    "references": [
+      "World Health Organization (WHO) — Food Safety Fact Sheet 2023; Estimates of the Global Burden of Foodborne Diseases 2015 (Havelaar et al.)",
+      "WHO Five Keys to Safer Food Programme (2006)",
+      "WHO Oral Rehydration Therapy Guidelines — Revised ORS Formula 2002",
+      "Centers for Disease Control and Prevention (CDC) — Foodborne Illness and Germs; FoodNet Surveillance 2023",
+      "European Food Safety Authority (EFSA) and ECDC — The European Union One Health 2022 Zoonoses Report",
+      "UK Food Standards Agency (FSA) — Safe Food, Better Business 2023",
+      "Kotloff KL et al. — Burden and Aetiology of Diarrhoeal Disease in Infants and Young Children in Developing Countries (Lancet, 2013 — GEMS Study)",
+      "GBD 2016 Diarrhoeal Disease Collaborators — Estimates of Global, Regional, and National Morbidity, Mortality, and Aetiologies of Diarrhoeal Diseases (Lancet Infectious Diseases, 2018)",
+      "American Academy of Pediatrics (AAP) — Clinical Report: Managing Acute Gastroenteritis Among Children (Pediatrics, 2016)",
+      "Bhattacharya SK — Oral Rehydration Therapy: Role in Development of Improved ORS Solutions (Indian Journal of Gastroenterology, 2009)",
+      "NICE Clinical Guideline (CG84): Diarrhoea and Vomiting Caused by Gastroenteritis in Under 5s: Diagnosis and Management (2009, updated 2023)",
+      "Vandenplas Y et al. — Probiotics in Infectious Diarrhoea in Children: Are They Indicated? (European Journal of Pediatrics, 2016)",
+      "Riddle MS et al. — Clinical Practice Guidelines for the Prevention and Treatment of Travellers' Diarrhoea (Journal of Travel Medicine, 2017)",
+      "Mody RK et al. — Foodborne Illness — Guidelines for Physicians and Public Health Departments (MMWR, CDC 2021)",
+      "FSSAI (Food Safety and Standards Authority of India) — Food Safety Guidelines for Consumers and Food Businesses 2022",
+      "National Vector Borne Disease Control Programme (India) — Cholera and Typhoid Prevention and Control Guidelines",
+      "Murray PR et al. — Medical Microbiology, 9th Edition — Chapters on Enteric Pathogens",
+      "UpToDate: Approach to the adult with acute diarrhoea in resource-rich settings; Treatment and prevention of foodborne illness"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-FOODPOISONING-016",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-04",
+      "last_updated": "2026-06-04",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is for educational and informational purposes for the MedoAir chatbot only. It does not replace professional medical advice, diagnosis, or treatment. Food poisoning can be life-threatening — symptoms of severe dehydration, neurological symptoms (possible botulism), or bloody diarrhoea require IMMEDIATE emergency medical evaluation. Always consult a licensed physician for medical decisions.",
+      "tags": ["food poisoning", "foodborne illness", "gastroenteritis", "diarrhoea", "vomiting", "salmonella", "norovirus", "campylobacter", "botulism", "HUS", "ORS", "rehydration", "food safety", "travellers diarrhoea", "medoair"]
+    }
+  }
+}
+=======
   "meta": {
     "title": "Food Poisoning Chatbot Dataset",
     "description": "Comprehensive dataset on food poisoning with proper intent detection. Emergency responses are triggered ONLY when the user explicitly states a personal crisis — not for general informational queries.",
@@ -573,3 +2262,4 @@
     ]
   }
 }
+

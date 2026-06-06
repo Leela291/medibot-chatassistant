@@ -1,0 +1,1475 @@
+{
+  "disease": {
+    "id": "DIS-016",
+    "name": "Bronchitis",
+    "scientific_name": "Bronchitis — Acute Tracheobronchitis / Chronic Bronchitis / Acute Exacerbation of Chronic Bronchitis (AECB)",
+    "icd_10_code": "J20 (Acute bronchitis); J20.0 (Acute bronchitis due to Mycoplasma pneumoniae); J20.7 (Acute bronchitis due to Echovirus); J20.9 (Acute bronchitis, unspecified); J41.0 (Simple chronic bronchitis); J41.1 (Mucopurulent chronic bronchitis); J42 (Unspecified chronic bronchitis); J44.1 (COPD with acute exacerbation); J44.0 (COPD with acute lower respiratory infection); A37 (Whooping cough — Bordetella pertussis); J21 (Acute bronchiolitis — children)",
+    "category": "Respiratory Disease / Infectious Disease / Chronic Obstructive Pulmonary Disease",
+    "overview": {
+      "description": "Bronchitis is inflammation of the bronchial tubes — the large and medium-calibre airways (bronchi and bronchioles) that conduct air from the trachea into the lung parenchyma. Inflammation causes swelling of the bronchial mucosa, increased mucus secretion, and narrowing of the airway lumen, resulting in the hallmark symptom of a productive (mucus-producing) cough. Bronchitis exists in two clinically and aetiologically distinct forms: (1) Acute bronchitis — a self-limiting, almost always viral respiratory infection causing cough lasting 1-3 weeks; accounting for approximately 5-10% of all primary care consultations and one of the most common reasons for antibiotic prescribing (despite the majority of cases not requiring antibiotics — one of the greatest drivers of global antibiotic resistance); and (2) Chronic bronchitis — a component of Chronic Obstructive Pulmonary Disease (COPD), defined clinically as a productive cough persisting for at least 3 months in each of two consecutive years, caused by progressive irreversible airway inflammation from tobacco smoke, indoor air pollution (biomass fuel combustion — a massive cause in India), and occupational exposures. A third important clinical scenario is acute exacerbation of chronic bronchitis (AECB) — a sudden worsening of cough, sputum, and breathlessness in a patient with established chronic bronchitis or COPD, which can be life-threatening in advanced disease.",
+      "affected_organ": "Primarily the bronchial tubes (bronchi and bronchioles — the conducting airways); in chronic and severe acute disease: lung parenchyma, pulmonary vasculature, and right ventricle (cor pulmonale in advanced COPD)",
+      "prevalence": "Acute bronchitis: one of the most common illnesses globally — approximately 44 million cases per year in the USA alone; accounts for 2.5-5% of all primary care consultations; most common reason for inappropriate antibiotic prescribing. Chronic bronchitis: affects approximately 9% of adults globally; component of COPD which affects 251 million people worldwide and is the third leading cause of death globally. In India: COPD affects an estimated 55 million people; biomass fuel combustion (chulha cooking — open wood, dung, crop fires) is the leading cause in non-smokers, particularly rural women.",
+      "age_group": "Acute bronchitis: all ages, peak in children and young adults; Chronic bronchitis: predominantly adults over 40 years with smoking or pollution exposure; AECB: adults with established COPD",
+      "is_contagious": true,
+      "is_contagious_note": "Acute viral bronchitis is contagious — the causative viruses (influenza, rhinovirus, RSV, etc.) spread by respiratory droplets, aerosols, and contact with contaminated surfaces. Chronic bronchitis itself is not infectious but exacerbations triggered by respiratory infections can be contagious.",
+      "is_curable": true,
+      "is_curable_note": "Acute bronchitis is self-limiting and resolves completely. Chronic bronchitis (COPD) is not curable but progression can be dramatically slowed or halted with smoking cessation and other interventions; lung function lost to COPD is not fully recoverable.",
+      "is_manageable": true,
+      "chronic": false,
+      "is_chronic_note": "Acute bronchitis is not chronic (resolves in 1-3 weeks). Chronic bronchitis is by definition chronic — a lifelong condition requiring ongoing management.",
+      "is_preventable": true,
+      "key_fact": "Over 90% of acute bronchitis cases are caused by viruses and do NOT require antibiotics — inappropriate antibiotic prescribing for bronchitis is one of the largest drivers of antibiotic resistance globally. For chronic bronchitis: stopping smoking at any age is the single most effective intervention — no medication comes close to the benefit of smoking cessation in preserving lung function."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Acute Viral Bronchitis",
+        "description": "The most common form — responsible for approximately 90-95% of all acute bronchitis cases. Caused by respiratory viruses infecting the bronchial mucosa, causing inflammatory oedema, mucus hypersecretion, and temporary impairment of mucociliary clearance. Acute viral bronchitis is a self-limiting illness — the immune system clears the infection without antibiotics in the vast majority of healthy individuals within 1-3 weeks. The key public health challenge is that patients and clinicians often equate purulent (yellow-green) sputum with bacterial infection requiring antibiotics — this is incorrect; purulent sputum in acute viral bronchitis reflects the normal inflammatory response (neutrophil-derived peroxidases colouring the mucus), NOT bacterial infection.",
+        "major_causative_viruses": [
+          {
+            "virus": "Rhinovirus",
+            "proportion": "30-40% — most common cause of acute viral bronchitis",
+            "features": "Causes the common cold as primary syndrome; can descend to lower respiratory tract causing bronchitis; peaks September-October and April-May; over 100 serotypes — no vaccine possible",
+            "severity": "Usually mild and self-limiting"
+          },
+          {
+            "virus": "Influenza A and B",
+            "proportion": "20-30% — particularly November to March (temperate climates); all year round in India",
+            "features": "More severe systemic illness than rhinovirus (higher fever, myalgia, malaise — distinguishes influenza from common cold); bronchitis is a common lower respiratory component of influenza; can progress to influenza pneumonia; antiviral treatment (oseltamivir) beneficial within 48 hours",
+            "severity": "Moderate to Severe — higher risk of complications (pneumonia, respiratory failure) in elderly, COPD, pregnancy, immunocompromised"
+          },
+          {
+            "virus": "Respiratory Syncytial Virus (RSV)",
+            "proportion": "10-20% in adults; dominant cause of bronchiolitis in infants",
+            "features": "Major cause of hospitalisation in infants under 2 years (bronchiolitis — distinct from adult bronchitis); in adults causes bronchitis indistinguishable from other viral bronchitis; RSV vaccines and monoclonal antibodies (nirsevimab) now available for high-risk infants and elderly",
+            "severity": "Mild in healthy adults; severe in infants, elderly, COPD, immunocompromised"
+          },
+          {
+            "virus": "Parainfluenza virus (types 1-4)",
+            "proportion": "5-10%",
+            "features": "Causes croup (laryngotracheobronchitis) in children — barking cough, stridor; acute bronchitis in adults; seasonal peaks",
+            "severity": "Usually mild in adults; croup can be severe in young children"
+          },
+          {
+            "virus": "Coronavirus (including SARS-CoV-2 / COVID-19)",
+            "proportion": "Common coronaviruses 229E, OC43, HKU1, NL63 cause ~15% of common colds and bronchitis; SARS-CoV-2 important since 2020",
+            "features": "Common coronaviruses: mild bronchitis syndrome; SARS-CoV-2: acute bronchitis may be the presenting syndrome; persistent cough can last weeks post-COVID",
+            "severity": "Common coronaviruses: mild; SARS-CoV-2: highly variable from mild bronchitis to critical pneumonia"
+          },
+          {
+            "virus": "Human Metapneumovirus (hMPV)",
+            "proportion": "5-10%",
+            "features": "Closely related to RSV; peaks in late winter/early spring; causes bronchitis, bronchiolitis (infants), and pneumonia; important but underrecognised pathogen"
+          },
+          {
+            "virus": "Adenovirus",
+            "proportion": "5%",
+            "features": "Can cause prolonged and more severe bronchitis; associated with outbreaks in military recruits; conjunctivitis may coexist (pharyngoconjunctival fever)"
+          }
+        ],
+        "prognosis": "Excellent — spontaneous resolution in 1-3 weeks in otherwise healthy individuals; 50% of patients still have a cough at 3 weeks (normal); 25% at 4 weeks (normal variant); antibiotics shorten duration by only 6-12 hours but cause significant side effects and resistance"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Acute Bacterial Bronchitis",
+        "description": "A minority (5-10%) of acute bronchitis cases are caused by bacteria. Importantly, the bacteria causing acute bronchitis are primarily 'atypical' bacteria (Mycoplasma, Chlamydophila, Bordetella) rather than the classical pyogenic bacteria causing pneumonia. These atypical organisms are intracellular or have thin cell walls — they are intrinsically resistant to penicillin and amoxicillin but respond to macrolides and tetracyclines. Bordetella pertussis (whooping cough) is a particularly important bacterial cause that is frequently missed and requires specific antibiotic treatment and public health notification.",
+        "major_causative_bacteria": [
+          {
+            "organism": "Bordetella pertussis (Whooping Cough / Pertussis)",
+            "proportion": "Important cause of prolonged cough (>2-3 weeks) — often missed in adults; responsible for 1-6% of adult cough lasting >2 weeks",
+            "features": "Classic whooping cough (paroxysmal cough followed by characteristic 'whoop' inspiratory sound) is most obvious in children; adults often present with just persistent cough without the classic whoop; post-tussive vomiting (vomiting after coughing fits) is characteristic; cough can last 6-10 weeks ('100-day cough'); lymphocytosis on FBC; apnoea in infants (can be fatal)",
+            "diagnosis": "Nasopharyngeal PCR swab (most sensitive); Bordetella serology (IgG) for cases presenting >3 weeks; FBC showing lymphocytosis",
+            "treatment": "Azithromycin 500mg daily for 5 days (first-line); erythromycin 500mg four times daily for 14 days (alternative); clarithromycin; antibiotics reduce transmission but may not shorten duration if started >3 weeks after onset",
+            "public_health": "NOTIFIABLE DISEASE in most countries including India — must be reported to public health authority; contact tracing and prophylaxis for household contacts; exclude from nursery/school until 5 days of antibiotics completed"
+          },
+          {
+            "organism": "Mycoplasma pneumoniae",
+            "proportion": "5-15% of acute bronchitis; epidemic cycles every 3-5 years; more common in school-age children and young adults",
+            "features": "Gradual onset (unlike viral bronchitis); persistent dry then productive cough; low-grade fever; headache; sore throat preceding cough; bullous myringitis (fluid-filled blisters on eardrum — pathognomonic); extrapulmonary manifestations: haemolytic anaemia (cold agglutinins), skin rash (erythema multiforme), neurological complications; may progress to atypical pneumonia",
+            "diagnosis": "Mycoplasma IgM serology; PCR (nasopharyngeal swab or sputum); cold agglutinins (non-specific)",
+            "treatment": "Azithromycin 500mg daily for 5 days (first-line); doxycycline 100mg twice daily for 7-14 days; clarithromycin; NOT amoxicillin or cephalosporins (no cell wall — intrinsic resistance)"
+          },
+          {
+            "organism": "Chlamydophila pneumoniae (Chlamydia pneumoniae)",
+            "proportion": "5-10% of acute bronchitis and community-acquired pneumonia",
+            "features": "Gradual onset; persistent dry cough; pharyngitis; often slow progression; can progress to pneumonia; difficult to distinguish clinically from Mycoplasma",
+            "diagnosis": "Serology (IgM, IgG); PCR; difficult to culture",
+            "treatment": "Doxycycline 100mg twice daily for 10-14 days; azithromycin; fluoroquinolones"
+          },
+          {
+            "organism": "Bordetella parapertussis",
+            "proportion": "Less common than B. pertussis; similar clinical picture but milder",
+            "features": "Similar cough syndrome to whooping cough; not prevented by pertussis vaccine; treat same as pertussis",
+            "note": "Not covered by standard whooping cough vaccine"
+          }
+        ],
+        "important_note": "Secondary bacterial bronchitis can follow viral upper respiratory tract infection — 'superinfection'; the virus damages bronchial epithelium and mucociliary defences, allowing bacteria (Streptococcus pneumoniae, Haemophilus influenzae) to colonise. However, this is less common than previously believed — purulent sputum alone is NOT sufficient to diagnose bacterial superinfection."
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Chronic Bronchitis",
+        "description": "Chronic bronchitis is defined clinically as a productive cough persisting for at least 3 months per year in each of two consecutive years, not explained by another cause. It is the major component of Chronic Obstructive Pulmonary Disease (COPD) along with emphysema (destruction of alveolar walls). Chronic bronchitis results from years of bronchial mucosal irritation from cigarette smoke, indoor air pollution (biomass fuel smoke from wood-burning chulhas — an enormous problem in India), outdoor air pollution, occupational dusts and fumes, and recurrent respiratory infections. The pathological hallmarks are: mucous gland hypertrophy and hyperplasia (Reid index >0.4 — ratio of mucous gland thickness to bronchial wall thickness); goblet cell hyperplasia; chronic inflammatory infiltrate; airway wall thickening; and progressive, largely irreversible airflow obstruction.",
+        "epidemiology": "Affects approximately 9% of adults globally; 55 million people in India; more common in men (historically due to higher smoking rates) but increasing in Indian women from biomass fuel exposure; predominantly in adults over 40 years with cumulative smoke exposure; 90% of COPD cases attributable to tobacco in high-income countries but 50% in India from biomass fuel",
+        "definition": "Productive cough ≥3 months per year for ≥2 consecutive years; confirmed airflow obstruction on spirometry (FEV1/FVC ratio post-bronchodilator <0.7 = COPD); FEV1% predicted determines GOLD severity (I-IV)",
+        "gold_classification": [
+          {"stage": "GOLD I (Mild)", "FEV1_predicted": "≥80%", "symptoms": "Mild symptoms; chronic cough with sputum"},
+          {"stage": "GOLD II (Moderate)", "FEV1_predicted": "50-79%", "symptoms": "Breathlessness on exertion; chronic symptoms"},
+          {"stage": "GOLD III (Severe)", "FEV1_predicted": "30-49%", "symptoms": "Worsening dyspnoea; reduced exercise tolerance; exacerbations"},
+          {"stage": "GOLD IV (Very Severe)", "FEV1_predicted": "<30%", "symptoms": "Severe dyspnoea; significantly impaired quality of life; life-threatening exacerbations; possible respiratory failure"}
+        ],
+        "causes_and_risk_factors": "Cigarette smoking (most common globally — dose-dependent; 15-20 pack-years typically needed); bidis (Indian hand-rolled cigarettes — contain unfiltered tobacco — higher carcinogen concentration; more harmful per cigarette than manufactured cigarettes; major COPD driver in India); hookah/shisha pipe smoking; biomass fuel combustion (wood, dung, crop residue — 3 billion people globally cook on open fires; smoke equivalent to smoking several cigarettes per day; leading cause of COPD in non-smoking Indian rural women); occupational exposure (coal dust — miners; silica — quarry workers; cadmium; grain dust; isocyanates); outdoor air pollution (high PM2.5 — major Indian cities have among the world's worst air quality); childhood respiratory infections (permanent airway remodelling); alpha-1 antitrypsin deficiency (genetic cause of early-onset COPD)",
+        "prognosis": "Progressive and irreversible unless cause removed; 10-15-year reduction in life expectancy with severe COPD; smoking cessation at any stage significantly slows progression; pulmonary rehabilitation improves quality of life and reduces hospitalisations"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Acute Exacerbation of Chronic Bronchitis (AECB) / COPD Exacerbation (AECOPD)",
+        "description": "An acute worsening of respiratory symptoms in a patient with established chronic bronchitis or COPD — beyond normal day-to-day variation — requiring a change in regular medication. AECB is the most common cause of emergency hospitalisation in patients with COPD and a major cause of COPD-related mortality. Exacerbations accelerate the progressive decline in lung function and quality of life in COPD patients. Approximately 50-70% of AECB episodes are triggered by respiratory infections (viral in 50%, bacterial in 25-30%, mixed in 20-25%); remaining exacerbations are triggered by air pollution, cardiac events, or have no identifiable cause.",
+        "triggers": [
+          "Respiratory viral infections — rhinovirus (most common), influenza, RSV, coronavirus",
+          "Bacterial infections — Haemophilus influenzae (most common), Streptococcus pneumoniae, Moraxella catarrhalis, Pseudomonas aeruginosa (in severe COPD/FEV1 <30%)",
+          "Air pollution events — high PM2.5, ozone, nitrogen dioxide",
+          "Non-compliance with regular inhaler therapy",
+          "Cardiac decompensation (heart failure exacerbating respiratory symptoms)",
+          "Pulmonary embolism — must be excluded in AECB not responding to standard treatment",
+          "Pneumothorax — spontaneous or related to bullous emphysema"
+        ],
+        "classification": {
+          "anthonisen_criteria": {
+            "description": "Cardinal symptoms of AECB (Anthonisen 1987 criteria):",
+            "criteria": ["Increased dyspnoea (breathlessness worsening beyond usual)", "Increased sputum volume", "Increased sputum purulence (change to yellow-green colour)"],
+            "type_I": "All 3 criteria present — high likelihood of bacterial trigger — most likely to benefit from antibiotics",
+            "type_II": "2 of 3 criteria present — moderate likelihood of bacterial trigger",
+            "type_III": "1 criterion plus at least 1 of: URTI symptoms within 5 days; fever without other cause; increased wheeze; increased cough — possible bacterial trigger"
+          }
+        },
+        "severity_assessment": "CURB-65-like scoring not validated for AECB; hospitalisation decision based on: oxygen saturation <92%, arterial blood gas (hypoxia, hypercapnia — type 2 respiratory failure), respiratory rate >25, use of accessory muscles, altered consciousness, inability to manage at home, inadequate social support"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Allergic and Eosinophilic Bronchitis",
+        "description": "Bronchial inflammation driven by allergic (IgE-mediated) or eosinophilic mechanisms rather than infection or smoking. Includes: (1) Asthmatic bronchitis — overlapping features of asthma and bronchitis; bronchial hyperresponsiveness with episodic wheeze, cough, and inflammation; (2) Non-asthmatic eosinophilic bronchitis (NAEB) — chronic cough with sputum eosinophilia (>3% eosinophils on induced sputum), no bronchial hyperresponsiveness (unlike asthma), no variable airflow obstruction; responds dramatically to inhaled corticosteroids; important cause of unexplained chronic cough; (3) Allergic bronchopulmonary aspergillosis (ABPA) — hypersensitivity reaction to Aspergillus fumigatus in asthmatic and cystic fibrosis patients.",
+        "features": "NAEB: chronic dry cough often the only symptom; induced sputum eosinophilia; responds to ICS; important differential for chronic cough. Asthmatic bronchitis: reversible bronchospasm on spirometry; responds to bronchodilators and ICS.",
+        "management": "Inhaled corticosteroids (budesonide, beclomethasone); identify and remove allergen; oral prednisolone for severe episodes"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Occupational and Chemical Bronchitis",
+        "description": "Bronchial inflammation caused by chronic inhalation of occupational dusts, chemical fumes, gases, and vapours. Distinct from smoking-related chronic bronchitis by occupational history and temporal relationship to workplace exposure. Key occupational causes: coal dust (coal workers' pneumoconiosis + bronchitis); silica dust (quarry, mine, construction workers); cadmium fumes (battery manufacture); isocyanates (spray painting, foam manufacture — also causes asthma); grain dust and mould (farmers' lung — hypersensitivity pneumonitis); welding fumes; nitrogen oxides; chlorine and ammonia gas. In India: coal mines in Jharkhand and Odisha; cotton textile (byssinosis — Monday fever pattern, cough worse at start of work week); brick kilns.",
+        "diagnosis": "Occupational history is paramount; lung function testing (spirometry, diffusion capacity); high-resolution CT; bronchoalveolar lavage; specific inhalation challenge testing",
+        "management": "Remove from exposure (most important — like smoking cessation); respiratory protective equipment; legal obligations under occupational health law; inhaled bronchodilators and corticosteroids for symptom management; workers' compensation assessment"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Acute Bronchitis",
+        "description": "Self-limiting viral bronchitis in an otherwise healthy adult with no underlying respiratory disease. The vast majority of community acute bronchitis cases.",
+        "criteria": "Productive or non-productive cough; low-grade fever (<38.5°C) or no fever; mild fatigue; no significant breathlessness at rest; no oxygen impairment; oxygen saturation >96%; no signs of pneumonia; no underlying COPD or asthma; able to manage at home",
+        "functional_impact": "Uncomfortable; cough may disturb sleep; able to continue most activities; sick leave 3-7 days",
+        "management": "Self-care at home; adequate fluid intake (minimum 2L/day); honey and ginger for cough; steam inhalation; paracetamol for fever and discomfort; no antibiotics required in healthy adults; reassure regarding expected duration (cough up to 3 weeks is normal in viral bronchitis); return to work when fever-free and feeling able",
+        "criteria_for_upgrade": "Fever >38.5°C; increased breathlessness; oxygen saturation falling; not improving after 10-14 days; cough becoming significantly worse; known COPD or asthma"
+      },
+      {
+        "level": 2,
+        "name": "Moderate Acute Bronchitis or Mild AECB",
+        "description": "Acute bronchitis with significant systemic illness or breathlessness, or mild-moderate exacerbation of chronic bronchitis/COPD with manageable symptoms at home or in primary care.",
+        "criteria": "Fever 38.5-39.5°C; significant productive cough with purulent sputum; moderate breathlessness (dyspnoea on exertion or walking); wheeze; heart rate 100-110 bpm; oxygen saturation 92-96%; known COPD with worsening symptoms (GOLD II-III, Anthonisen Type I or II); increased use of rescue bronchodilator",
+        "functional_impact": "Significantly impairs daily function; reduced exercise tolerance; unable to work; disrupted sleep from cough",
+        "management": "GP or urgent care assessment; spirometry if COPD suspected; chest X-ray to exclude pneumonia; sputum culture if purulent; bronchodilator (salbutamol inhaler or nebuliser); prednisolone oral 30-40 mg for 5 days (AECB); antibiotics if Anthonisen Type I or II criteria met, or bacterial cause suspected (atypical organisms); adequate hydration; mucolytics; review in 48-72 hours",
+        "criteria_for_upgrade": "Oxygen saturation falling <92%; inability to manage at home; respiratory rate >25; altered consciousness; severe underlying COPD (GOLD IV)"
+      },
+      {
+        "level": 3,
+        "name": "Severe AECB / Acute-on-Chronic Respiratory Failure",
+        "description": "Severe exacerbation of COPD/chronic bronchitis with significant hypoxia or hypercapnia requiring hospitalisation and advanced respiratory support.",
+        "criteria": "Oxygen saturation <92% on air; respiratory rate >25 breaths/min; PaO2 <8 kPa (60 mmHg) on arterial blood gas; PaCO2 >6 kPa (45 mmHg — type 2 respiratory failure / hypercapnic failure); use of accessory muscles of respiration (sternocleidomastoid, intercostal recession); paradoxical breathing; confusion or drowsiness (CO2 narcosis); tachycardia >110 bpm; cyanosis (peripheral or central); pH <7.35 on ABG (respiratory acidosis)",
+        "functional_impact": "Unable to complete sentences; unable to stand or walk; complete incapacitation; requires hospital level care",
+        "management": "Hospital admission; controlled oxygen therapy (target SpO2 88-92% in COPD — avoid hyperoxia causing CO2 retention); nebulised bronchodilators (salbutamol + ipratropium); systemic corticosteroids (prednisolone 30-40 mg oral or hydrocortisone IV); IV antibiotics; arterial blood gas monitoring; ECG; non-invasive ventilation (NIV — BiPAP) for pH <7.35 with hypercapnia; physiotherapy for secretion clearance; VTE prophylaxis; close observation for deterioration",
+        "criteria_for_upgrade": "NIV failure; pH <7.25; respiratory arrest or imminent arrest; haemodynamic collapse"
+      },
+      {
+        "level": 4,
+        "name": "Critical / Respiratory Failure Requiring Mechanical Ventilation",
+        "description": "Life-threatening respiratory failure from severe AECB requiring invasive mechanical ventilation in ICU, or acute bronchitis causing respiratory failure in immunocompromised or severely unwell patients.",
+        "criteria": "Respiratory arrest or near-arrest; failure of NIV (unable to maintain pH >7.25, oxygen or consciousness deteriorating); pH <7.25 on NIV; haemodynamic collapse; Glasgow Coma Score <8; inability to protect airway",
+        "management": "ICU admission; endotracheal intubation and invasive mechanical ventilation; lung-protective ventilation strategy; deep sedation and paralysis if required; broad-spectrum IV antibiotics; maximal bronchodilator therapy; haemodynamic monitoring (arterial line, CVC); daily sedation holds; spontaneous breathing trials when improving; early tracheostomy considered for prolonged ventilation; multidisciplinary input — respiratory, ICU, physiotherapy, nutrition team",
+        "mortality": "30-day mortality 20-30% for COPD requiring invasive ventilation; poor prognosis markers: pH <7.20, FEV1 <30% pre-morbid, multiple comorbidities, poor nutritional status"
+      }
+    ],
+
+    "causes": {
+      "causative_agents_overview": {
+        "viruses": "90-95% of acute bronchitis — rhinovirus, influenza, RSV, parainfluenza, coronavirus, metapneumovirus, adenovirus",
+        "atypical_bacteria": "5-10% of acute bronchitis — Mycoplasma pneumoniae, Chlamydophila pneumoniae, Bordetella pertussis (important not to miss)",
+        "typical_bacteria": "Haemophilus influenzae, Streptococcus pneumoniae, Moraxella catarrhalis — important in AECB but rarely cause acute bronchitis in healthy people",
+        "tobacco_smoke": "Single most important cause of chronic bronchitis globally; causes cumulative irreversible airway injury",
+        "indoor_air_pollution": "Biomass fuel combustion (wood, dung, crop residue) — major cause of chronic bronchitis and COPD in India and developing countries; affects 3 billion people globally",
+        "outdoor_air_pollution": "PM2.5, ozone, nitrogen dioxide; significant contributor in Indian cities with extremely high pollution levels"
+      },
+      "pathophysiology": {
+        "acute": "Viral or bacterial infection of bronchial epithelium → inflammatory response (neutrophil and lymphocyte infiltration) → mucosal oedema → goblet cell hypersecretion of mucus → impaired mucociliary clearance → bronchial luminal narrowing and increased airway resistance → cough reflex activation (bronchial irritant receptors — C-fibres and A-delta fibres) → productive cough → recovery as immune response clears infection and epithelium regenerates (2-4 weeks)",
+        "chronic": "Repeated or chronic bronchial irritation (smoke, pollution) → sustained neutrophil and macrophage inflammation → protease/antiprotease imbalance → mucous gland hypertrophy and goblet cell hyperplasia (increased Reid index) → chronic mucus hypersecretion → ciliary dysfunction → repeated infections colonising abnormal airways → progressive airway wall remodelling (fibrosis, smooth muscle hypertrophy) → irreversible airflow obstruction → air trapping → hyperinflation → increased work of breathing → impaired gas exchange → hypoxia → hypercapnia (advanced) → pulmonary hypertension → cor pulmonale (right heart failure)",
+        "airway_remodelling": "Chronic bronchitis is characterised by structural changes that are largely irreversible: subepithelial fibrosis (thickened basement membrane), smooth muscle hypertrophy, mucous gland enlargement, cartilage loss, and loss of alveolar wall attachments (emphysema component) that normally tether airways open during expiration"
+      },
+      "risk_factors": [
+        "Cigarette smoking — single most important preventable risk factor for chronic bronchitis; 15-20 pack-years (1 pack per day × 20 years) typically needed for COPD development; risk proportional to total smoke exposure",
+        "Bidi smoking — Indian hand-rolled cigarettes; unfiltered and higher tobacco concentration per cigarette; extremely common in India; produces more tar and CO per cigarette than manufactured cigarettes",
+        "Biomass fuel indoor cooking (chulha) — wood, cow dung, coal, crop residue burning in poorly ventilated kitchens; affects millions of Indian rural women; equivalent smoke exposure to smoking >40 cigarettes per day; leading cause of COPD in non-smoking Indian women",
+        "Outdoor air pollution — PM2.5 levels in Delhi, Mumbai, Kolkata, Lucknow, Kanpur frequently exceed WHO guidelines by 10-20 times; chronic PM2.5 exposure causes bronchitis and accelerates COPD progression",
+        "Occupational exposures — coal miners, quarry workers, construction workers (silica), cotton textile workers (byssinosis), farmers, welders, chemical workers, wood workers",
+        "Viral respiratory infections — rhinovirus, influenza in winter; RSV in children; recurrent infections in childhood permanently impair lung development",
+        "Cold and damp environments — increases viral respiratory infection incidence; cold air is a direct airway irritant causing bronchospasm",
+        "Immunosuppression — HIV/AIDS, post-transplant, chemotherapy, high-dose corticosteroids — increased risk of severe and recurrent bronchitis",
+        "Pre-existing asthma — airway hyperresponsiveness increases susceptibility to viral bronchitis and risk of progression to COPD",
+        "Alpha-1 antitrypsin (AAT) deficiency — genetic predisposition to early-onset emphysema and COPD; affects 1 in 2,000-5,000 Caucasians; screen in COPD presenting before age 45 or non-smokers",
+        "Poverty and low socioeconomic status — overcrowded housing (viral transmission), indoor cooking smoke, inability to afford clean fuels, access to healthcare",
+        "Low birth weight and preterm birth — impaired lung development in utero; reduced peak lung function; higher lifetime risk of COPD",
+        "Recurrent childhood respiratory infections — measles, RSV bronchiolitis, pertussis — can cause permanent airway remodelling and increased adult COPD risk",
+        "Passive smoking — involuntary inhalation of second-hand smoke; significantly increases bronchitis risk in children and non-smoking adults",
+        "Acid reflux (GORD/GERD) — gastro-oesophageal reflux causes aspiration of acid into airways (microaspiration) contributing to chronic cough and bronchitis"
+      ]
+    },
+
+    "symptoms": {
+      "overview": "The cardinal symptom of bronchitis in all its forms is COUGH — the body's reflex to clear the inflamed, mucus-filled bronchial tubes. The character, duration, productivity, and associated features of the cough are the most important diagnostic clues. Acute bronchitis begins with an upper respiratory tract infection (runny nose, sore throat) followed by onset of cough in the first few days. Chronic bronchitis produces a 'morning cough' — the classical 'smoker's cough' — with gradual worsening dyspnoea over years. Understanding that cough in acute viral bronchitis normally lasts 2-3 weeks (and can persist to 4 weeks) prevents unnecessary anxiety, re-consultation, and antibiotic prescribing.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-901",
+          "name": "Cough — Productive (Wet) or Non-Productive (Dry)",
+          "description": "The defining symptom of bronchitis. In acute bronchitis: begins as a dry, non-productive cough (first 2-3 days) then typically becomes productive with mucoid (white/clear) or mucopurulent (yellow-green) sputum. The shift to purulent sputum does NOT indicate bacterial infection requiring antibiotics — it reflects normal inflammatory response (neutrophil peroxidases). In chronic bronchitis: productive cough present most days (classically worst in the morning — pooled overnight secretions); characterised by large volumes of mucus coughed up on waking ('morning cough' — 'my engine needs clearing in the morning'). Cough reflex hypersensitivity (lowered cough threshold) persists for weeks post-infection explaining protracted cough.",
+          "severity": "Mild to Severe",
+          "onset": "Acute: days 3-5 of URTI; Chronic: insidious over years",
+          "clinical_importance": "Cough lasting >3 weeks in a non-smoker must be investigated to exclude: pertussis, atypical bacterial infection, post-nasal drip, GORD, eosinophilic bronchitis, asthma, lung cancer. Cough with haemoptysis (blood) ALWAYS requires investigation regardless of duration."
+        },
+        {
+          "id": "SYM-902",
+          "name": "Sputum Production (Expectoration)",
+          "description": "Mucus expelled from the lower respiratory tract by coughing. Character provides diagnostic clues: Clear/white mucoid sputum: viral bronchitis; early chronic bronchitis; asthma. Yellow/green mucopurulent sputum: increased neutrophil content from inflammation — common in both viral and bacterial bronchitis; does NOT automatically indicate bacterial infection requiring antibiotics. Rust-coloured (bloody) sputum: pneumococcal pneumonia; pulmonary embolism; requires chest X-ray urgently. Frank haematoptysis (blood): bronchiectasis; lung cancer; TB; pulmonary embolism — always requires investigation. Profuse clear watery sputum (bronchorrhoea): bronchoalveolar carcinoma (rare). Thick tenacious plugs: Allergic Bronchopulmonary Aspergillosis (ABPA). Foul-smelling sputum: lung abscess; bronchiectasis with infected sputum.",
+          "severity": "Mild to Moderate",
+          "onset": "Develops as cough becomes productive",
+          "note": "Sputum colour alone should NOT determine antibiotic prescribing; clinical context, duration, severity, and patient factors are all essential"
+        },
+        {
+          "id": "SYM-903",
+          "name": "Wheeze (Bronchospasm)",
+          "description": "A high-pitched musical expiratory sound produced by airflow through narrowed bronchi — caused by bronchial mucosal oedema, mucus plugging, and smooth muscle spasm in bronchitis. Wheeze is present in up to 40% of patients with acute bronchitis (often without underlying asthma). In acute viral bronchitis, temporary airway hyperresponsiveness and bronchospasm cause wheeze that resolves completely as the infection clears. In chronic bronchitis and COPD: wheeze reflects fixed and reversible airway obstruction. Important distinction: wheeze that does NOT resolve after an acute infection should prompt spirometry to investigate for asthma or COPD.",
+          "severity": "Mild to Severe",
+          "note": "Unilateral wheeze (one-sided) suggests foreign body, tumour, or lymph node compression — always investigate"
+        },
+        {
+          "id": "SYM-904",
+          "name": "Dyspnoea (Breathlessness)",
+          "description": "Breathlessness varies dramatically by bronchitis type and severity. In acute viral bronchitis: breathlessness on exertion is common; breathlessness at rest is unusual and requires investigation to exclude pneumonia. In chronic bronchitis: breathlessness is typically absent until GOLD II-III stage — patients subconsciously reduce activity to avoid breathlessness (the 'inactivity trap'); when present, the MRC dyspnoea scale (1-5) and mMRC scale quantify severity. GOLD IV chronic bronchitis: breathlessness at minimal exertion or rest; patient may be oxygen-dependent. In AECB: acute worsening of baseline dyspnoea is one of the three Anthonisen cardinal criteria.",
+          "mrc_dyspnoea_scale": [
+            "Grade 1: Breathless with strenuous exercise only",
+            "Grade 2: Short of breath when hurrying on level ground or walking up a slight hill",
+            "Grade 3: Walks slower than contemporaries on level ground due to breathlessness; has to stop to breathe when walking at own pace on level",
+            "Grade 4: Stops for breath after walking 100 metres or after a few minutes on level ground",
+            "Grade 5: Too breathless to leave the house; breathless when dressing and undressing"
+          ],
+          "severity": "Mild to Life-threatening",
+          "onset": "Acute: gradual over days; Chronic: insidious over years"
+        },
+        {
+          "id": "SYM-905",
+          "name": "Fever and Systemic Symptoms",
+          "description": "In acute bronchitis: LOW-GRADE fever (37.5-38.5°C) is common with viral infection; high fever (>39°C) is unusual and should prompt consideration of pneumonia or influenza. Accompanying URTI symptoms (runny nose, sore throat, sneezing) in the first 1-2 days distinguish viral bronchitis from atypical bacterial infection (Mycoplasma — more gradual onset, headache, and persistent dry cough). Myalgia (muscle aches), headache, and fatigue are systemic viral response symptoms. In chronic bronchitis: afebrile between exacerbations; fever with increased cough and sputum = AECB.",
+          "severity": "Mild to Moderate (acute); absent or mild (chronic)",
+          "note": "High fever >39°C with cough and breathlessness — chest X-ray to exclude pneumonia is mandatory"
+        },
+        {
+          "id": "SYM-906",
+          "name": "Chest Tightness and Discomfort",
+          "description": "Substernal or diffuse chest tightness from bronchial muscle spasm and inflammation — very common in acute bronchitis. Pleuritic chest pain (sharp, worse with breathing and coughing) is more typical of pneumonia or pleuritis than uncomplicated bronchitis. Severe chest pain radiating to the arm or jaw = cardiac origin — must always be excluded. Muscular intercostal pain from violent coughing bouts is a very common and benign cause of chest discomfort in bronchitis patients.",
+          "severity": "Mild to Moderate",
+          "note": "Central chest tightness with bronchospasm is a hallmark of viral bronchitis; pleuritic pain requires chest X-ray"
+        }
+      ],
+      "secondary_symptoms": [
+        "Runny nose and nasal congestion (rhinorrhoea) — preceding URTI phase; post-nasal drip can perpetuate cough",
+        "Sore throat (pharyngitis) — common in first 2-3 days of viral URTI preceding bronchitis",
+        "Headache — systemic viral response; CO2 retention headache (early morning, worse on waking) in advanced COPD with hypercapnia",
+        "Fatigue and malaise — universal in acute viral bronchitis; persistent in chronic bronchitis from hypoxia and systemic inflammation",
+        "Loss of appetite (anorexia) — systemic illness response; nutritional depletion is a major issue in advanced COPD (cachexia)",
+        "Ankle oedema — bilateral pitting oedema from cor pulmonale (right heart failure from pulmonary hypertension) in advanced chronic bronchitis/COPD",
+        "Cyanosis — blue discolouration of lips and fingernails from hypoxia; central cyanosis (lips, tongue) = serious hypoxaemia requiring oxygen",
+        "Barrel chest — increased AP diameter from lung hyperinflation in chronic emphysema; poor respiratory excursion",
+        "Pursed-lip breathing — spontaneous technique to generate intrinsic PEEP, preventing dynamic airway collapse during expiration in COPD",
+        "Use of accessory muscles of respiration — sternocleidomastoid, scalene, intercostal muscles visible during inspiration in moderate-severe AECB",
+        "Morning hoarseness — from overnight laryngeal oedema and mucus; common in post-nasal drip and GORD-related bronchitis",
+        "Night sweats and cough — consider tuberculosis (TB) in India — fever, night sweats, weight loss, haemoptysis, prolonged cough >2 weeks is TB until proven otherwise",
+        "Haemoptysis (coughing blood) — always requires investigation: bronchitis causes can include irritation from severe coughing bouts but lung cancer, TB, and pulmonary embolism must be excluded"
+      ],
+      "warning_signs": [
+        "Cough producing blood (haemoptysis) — regardless of quantity — must be investigated urgently with chest X-ray and possible bronchoscopy; exclude lung cancer, TB, pulmonary embolism",
+        "Dyspnoea at rest or in COPD patient worsening beyond usual baseline — possible AECB or pneumonia — same-day medical review",
+        "Oxygen saturation <92% on pulse oximeter — emergency oxygen and hospital review",
+        "Respiratory rate >25 breaths per minute — sign of significant respiratory distress",
+        "Confusion or altered consciousness in a COPD patient — possible CO2 retention (type 2 respiratory failure, CO2 narcosis) — EMERGENCY",
+        "Cough lasting more than 3-4 weeks — investigate: pertussis, TB (India), atypical bacteria, lung cancer, COPD, asthma, GORD, post-nasal drip",
+        "High fever >39°C with cough and breathlessness — possible pneumonia — chest X-ray required",
+        "New wheeze in a non-asthmatic over 40 years with smoking history — possible COPD — spirometry required",
+        "Ankle swelling with breathlessness in COPD patient — possible cor pulmonale or heart failure exacerbation",
+        "Unexplained weight loss with cough — possible lung cancer or TB — urgent investigation"
+      ],
+      "whooping_cough_warning_signs": [
+        "Paroxysmal coughing bouts (sudden uncontrollable severe coughing spells) — particularly diagnostic of pertussis",
+        "Post-tussive vomiting — vomiting after coughing fits (occurs in 50% of pertussis cases)",
+        "Inspiratory 'whoop' sound — classic whooping sound at end of cough paroxysm (more obvious in children than adults)",
+        "Cough persisting >2-3 weeks without improvement despite standard treatment",
+        "Known contact with pertussis case",
+        "Unvaccinated or vaccination status unknown",
+        "Apnoea (breathing pauses) in infants — EMERGENCY"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Duration and onset of cough — days (acute viral); weeks (pertussis, atypical bacteria); months-years (chronic bronchitis); sudden worsening of pre-existing cough (AECB)",
+        "Character of cough — productive or dry; cough paroxysms (pertussis); nocturnal cough (asthma, GORD, post-nasal drip); morning cough on waking (chronic bronchitis)",
+        "Sputum character — colour (clear, white, yellow, green, blood-tinged); consistency; volume; change from baseline (AECB)",
+        "Haemoptysis — any blood in sputum, however small; red flag requiring urgent investigation (cancer, TB, PE)",
+        "Associated symptoms — fever, rhinorrhoea, sore throat (URTI preceding), wheeze, dyspnoea, chest tightness, hoarseness",
+        "Pertussis features — post-tussive vomiting, inspiratory whoop, coughing bouts, contact with whooping cough, vaccination history",
+        "Smoking history — current smoker? How many cigarettes/bidis per day? Total pack-year history (packs per day × years; one pack = 20 cigarettes). Previous quit attempts and methods.",
+        "Biomass fuel exposure — type of cooking fuel (wood, dung, LPG, electric); kitchen ventilation; hours per day cooking; how many years; relevant in Indian rural women especially",
+        "Occupational history — current and past occupations involving dust, chemical or fume exposure; pattern of symptoms relative to work (better on weekends/holidays = occupational)",
+        "Indoor air quality — gas cooking without extraction; damp housing; mould; pets",
+        "Previous bronchitis, pneumonia, or hospitalisation for respiratory illness — frequency and pattern; hospitalisations for respiratory illness in past 12 months (AECB frequency predicts future risk)",
+        "Known COPD or asthma — current medications; inhaler technique; compliance; peak flow; recent spirometry",
+        "Allergen history — seasonal variation (worsening in pollen season = allergic component); known allergens",
+        "Gastro-oesophageal reflux symptoms — heartburn, acid regurgitation; nocturnal cough after eating (GORD-related cough)",
+        "Tuberculosis risk factors — close contact with TB; previous TB; HIV positive; recent travel to high-prevalence country; unexplained weight loss, night sweats, haemoptysis (TB must be excluded in India — world's highest TB burden)",
+        "Medication history — ACE inhibitors (captopril, enalapril, ramipril) cause a persistent dry cough in up to 10-15% of patients — common cause of misdiagnosed 'bronchitis'; beta-blockers worsen bronchospasm in COPD/asthma",
+        "Travel history — TB exposure, fungal respiratory infections in endemic areas",
+        "Immunosuppression — HIV, transplant, chemotherapy, biologics; increases risk of severe opportunistic respiratory infections",
+        "Vaccination history — influenza (annual); pneumococcal (PPSV23 or PCV); pertussis (Tdap — have adult boosters been given?)"
+      ],
+      "physical_examination": [
+        "Vital signs — temperature (fever = AECB, pneumonia); respiratory rate (normal <20; tachypnoea >25 = significant distress); heart rate (tachycardia); blood pressure; oxygen saturation (SpO2 — must be measured with pulse oximeter in all respiratory assessments)",
+        "General appearance — distress level; use of accessory muscles of respiration (sternocleidomastoid, scalene visible during quiet breathing = severe); pursed-lip breathing (COPD); barrel chest (hyperinflation); cachexia (advanced COPD); cyanosis (peripheral at fingertips, central at lips and tongue — severe hypoxia)",
+        "Respiratory examination:",
+        "INSPECTION: chest shape (barrel chest = hyperinflation); chest wall movement symmetry; intercostal indrawing (recession) during inspiration; paradoxical breathing (abdomen moves in during inspiration = severe diaphragmatic fatigue); respiratory rate and pattern",
+        "PALPATION: tracheal position (midline or deviated — pneumothorax, effusion); vocal fremitus (increased = consolidation/pneumonia; decreased = effusion, pleural thickening); chest expansion (reduced bilaterally in COPD)",
+        "PERCUSSION: hyperresonance (lung hyperinflation in COPD/emphysema — 'empty box' sound); dullness (consolidation or pleural effusion — suggests pneumonia complicating bronchitis)",
+        "AUSCULTATION (lung sounds): Wheeze (rhonchi) — high-pitched expiratory musical sounds from bronchospasm and narrowed airways (heard in bronchitis, COPD, asthma); Coarse crackles (crepitations) — early-to-mid inspiratory crackles from secretions and opening of small airways (bronchitis, bronchiectasis); Fine late inspiratory crackles — suggest pneumonia or fibrosis; Reduced or absent breath sounds — hyperinflated COPD or pleural effusion; Bronchial breathing — consolidation (pneumonia); Normal breath sounds — mild viral bronchitis may have entirely normal chest exam",
+        "Cardiovascular examination — elevated JVP (cor pulmonale); loud P2 (pulmonary hypertension); right ventricular heave; peripheral oedema (bilateral = cor pulmonale or CCF); hepatomegaly (right heart failure)",
+        "Clubbing of fingers — NOT a feature of simple bronchitis; its presence with cough suggests lung cancer, bronchiectasis, fibrosing alveolitis, or cyanotic congenital heart disease — always investigate",
+        "Upper respiratory tract — inspect oropharynx (erythema, exudate); nasal mucosa (congestion, polyps); postnasal drip (mucus on posterior pharyngeal wall); ears (bullous myringitis = Mycoplasma)",
+        "Lymph nodes — cervical lymphadenopathy (viral URTI, TB, lymphoma)",
+        "Body weight and BMI — weight loss in advanced COPD (cachexia worsens prognosis); BMI <20 in COPD = worse prognosis"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Pulse Oximetry (SpO2)",
+          "type": "Point-of-Care",
+          "description": "Non-invasive, immediate measurement of peripheral oxygen saturation — the percentage of haemoglobin that is oxygenated. Should be performed in ALL patients presenting with respiratory symptoms. A single most important triage tool for respiratory illness — identifies patients requiring oxygen therapy, hospital admission, or emergency intervention.",
+          "purpose": "Immediate triage of hypoxia; guide oxygen therapy (target SpO2 94-98% in most; 88-92% in chronic hypercapnic COPD); identify need for hospital referral",
+          "key_metric": "SpO2 ≥96%: normal; SpO2 92-95%: mild hypoxia — monitor; SpO2 <92%: significant hypoxia — hospital review and supplemental oxygen; SpO2 <88%: severe hypoxia — emergency; TARGET in COPD on oxygen: 88-92% (avoid hyperoxia causing CO2 retention and Haldane effect)",
+          "limitations": "Unreliable in: poor peripheral perfusion (cold hands, shock); nail polish; dark skin (potential overestimation); carbon monoxide poisoning (CO-oxyhaemoglobin reads as oxyhaemoglobin — SpO2 falsely normal)"
+        },
+        {
+          "test_name": "Spirometry (Lung Function Testing)",
+          "type": "Physiological",
+          "description": "The definitive investigation for confirming and quantifying chronic obstructive airway disease (chronic bronchitis/COPD). Patient takes maximum breath in and blows as hard and fast as possible into a spirometer measuring: FEV1 (Forced Expiratory Volume in 1 second — airflow in first second); FVC (Forced Vital Capacity — total air expelled from full to empty lungs); FEV1/FVC ratio (Tiffeneau index — <0.70 post-bronchodilator confirms obstructive pattern = COPD); FEV1% predicted (determines COPD severity — GOLD I-IV). Spirometry is NOT required in uncomplicated acute bronchitis but IS the mandatory investigation for any suspected COPD or unexplained chronic cough.",
+          "purpose": "Diagnose and stage COPD (chronic bronchitis); distinguish obstructive (COPD, asthma) from restrictive (fibrosis) lung disease; monitor progression; assess reversibility (bronchodilator response — significant if FEV1 improves >12% and >200mL post-bronchodilator suggesting asthma component)",
+          "key_metric": "FEV1/FVC <0.70 post-bronchodilator = obstructive defect (COPD); FEV1 ≥80% predicted = GOLD I; 50-79% = GOLD II; 30-49% = GOLD III; <30% = GOLD IV; FEV1/FVC <0.70 with significant reversibility (>12% and 200mL improvement) = asthma more likely",
+          "when_to_perform": "Any adult with chronic cough (>8 weeks) and/or breathlessness; smoker over 40 with any respiratory symptoms; occupational exposure history; suspected COPD — spirometry is mandatory for COPD diagnosis (clinical diagnosis alone is insufficient)"
+        },
+        {
+          "test_name": "Chest X-Ray (CXR)",
+          "type": "Imaging",
+          "description": "Chest X-ray is NOT required for diagnosis of straightforward acute bronchitis in otherwise healthy young adults. However, it is the most important investigation to EXCLUDE PNEUMONIA — which is clinically often indistinguishable from acute bronchitis and requires antibiotic treatment. Pneumonia presents with consolidation (opacity/shadowing) on CXR; bronchitis produces no specific abnormality on CXR (may show mildly increased bronchial markings or be entirely normal). CXR in chronic bronchitis/COPD shows: hyperinflation (flat diaphragm, increased AP diameter, widened rib spaces, reduced peripheral vascular markings); bullae (thin-walled emphysematous spaces); enlarged pulmonary arteries (pulmonary hypertension — cor pulmonale).",
+          "purpose": "Exclude pneumonia in patients with high fever, focal chest signs, or failure to improve; diagnose complications (pneumothorax, pleural effusion); baseline in chronic bronchitis; detect lung cancer (important differential for chronic cough in smokers)",
+          "key_metric": "Normal CXR: supports bronchitis diagnosis; Consolidation (lobar opacity/air bronchogram): pneumonia — requires antibiotics; Hyperinflation (flat diaphragm, increased intercostal spaces): COPD/emphysema; Hilar or lung mass: investigate for cancer; Cavity: TB, lung abscess",
+          "indications_in_acute_bronchitis": [
+            "Fever >39°C",
+            "Respiratory rate >25/min",
+            "Focal chest signs (dullness to percussion, bronchial breathing)",
+            "Oxygen saturation <94%",
+            "Failure to improve with standard management after 7-10 days",
+            "Haemoptysis (blood in sputum)",
+            "Age >65 years with bronchitis (higher pneumonia risk)",
+            "Immunocompromised patient",
+            "Smoker >40 years (exclude lung cancer as cause of chronic cough)"
+          ]
+        },
+        {
+          "test_name": "High-Resolution CT Thorax (HRCT)",
+          "type": "Imaging",
+          "description": "High-resolution CT of the chest provides detailed parenchymal and airway imaging beyond what chest X-ray can detect. In chronic bronchitis and COPD: HRCT shows: central and peripheral airway wall thickening; mucus plugging; emphysema (low-attenuation areas without visible walls); bronchiectasis (bronchial wall thickening and dilation). Used for complicated investigations — not routine in uncomplicated bronchitis.",
+          "purpose": "Characterise COPD pattern (emphysema-predominant vs airway-predominant); detect bronchiectasis; assess for lung cancer (low-dose CT screening for smokers in selected risk groups); detect ABPA; investigate recurrent haemoptysis",
+          "indication": "Recurrent bronchitis or suspected bronchiectasis; atypical COPD; haemoptysis with normal CXR; occupational lung disease assessment; pre-surgical COPD assessment"
+        },
+        {
+          "test_name": "Sputum Microscopy, Culture, and Sensitivity (MC&S)",
+          "type": "Microbiological",
+          "description": "Microbiological examination of expectorated sputum. In acute bronchitis: routine sputum culture is NOT recommended as it rarely changes management (viral aetiology undetectable; commensal bacteria confound interpretation). In AECB: sputum culture is valuable when: purulent sputum with no improvement after first-line antibiotics; GOLD III-IV severe COPD; recent hospitalisation (risk of MDR organisms); suspected Pseudomonas aeruginosa (very low FEV1, recent hospitalisation, structural lung disease); immunocompromised patients.",
+          "purpose": "Guide antibiotic choice in AECB when first-line antibiotics fail; detect Pseudomonas and resistant organisms; TB detection (sputum AFB smear and culture — 3 early morning samples — for suspected pulmonary TB)",
+          "key_metric": "Significant: pure or predominant growth of a respiratory pathogen; Haemophilus influenzae (most common AECB pathogen); Streptococcus pneumoniae; Moraxella catarrhalis; Pseudomonas aeruginosa (severe COPD — requires anti-pseudomonal antibiotic); TB: acid-fast bacilli (AFB) on Ziehl-Neelsen stain and Mycobacterial culture",
+          "tb_note": "In India — ALWAYS consider TB in any cough lasting >2 weeks with fever, night sweats, or weight loss; 3 early morning sputum samples for AFB smear and Mycobacterial culture; GeneXpert (CBNAAT) available in India for rapid TB diagnosis and rifampicin resistance detection"
+        },
+        {
+          "test_name": "Nasopharyngeal Swab / Throat Swab — Viral and Pertussis PCR",
+          "type": "Microbiological — Molecular",
+          "description": "Nasopharyngeal or throat swab for PCR (polymerase chain reaction) testing. Multiplex respiratory virus PCR panels can simultaneously detect and identify: influenza A and B, RSV, rhinovirus, coronavirus (including SARS-CoV-2), parainfluenza, metapneumovirus, adenovirus within 2-4 hours. Bordetella pertussis PCR (nasopharyngeal swab) is the most sensitive test for whooping cough — best performed in the first 2-3 weeks of illness.",
+          "purpose": "Identify specific virus in hospitalised patients (influenza — consider oseltamivir; RSV — consider palivizumab in high-risk infants); diagnose Bordetella pertussis; COVID-19 testing; infection control decisions",
+          "key_metric": "Positive influenza PCR: consider oseltamivir within 48 hours; Positive pertussis PCR: start azithromycin and notify public health",
+          "indication": "Hospitalised patients with bronchitis/lower respiratory infection; suspected pertussis (prolonged cough with paroxysms); COVID-19 testing; immunocompromised patients; COPD patients hospitalised with AECB (guides infection control and antiviral therapy)"
+        },
+        {
+          "test_name": "Mycoplasma and Atypical Organism Serology",
+          "type": "Blood — Serology / Immunological",
+          "description": "Serological testing for atypical respiratory bacteria — important when acute bronchitis is prolonged, severe, or unusual. IgM antibodies (acute infection) and IgG (past infection or rising titre in convalescent sample) measured for Mycoplasma pneumoniae, Chlamydophila pneumoniae, and Legionella pneumophila.",
+          "purpose": "Diagnose atypical bacterial bronchitis/pneumonia when standard investigations negative; guide macrolide or tetracycline antibiotic therapy",
+          "key_metric": "Mycoplasma IgM positive: acute Mycoplasma infection — treat with azithromycin; 4-fold rise in IgG titre between acute and convalescent samples (2-3 weeks apart) confirms recent infection",
+          "note": "Mycoplasma urine antigen test also available for Legionella (urinary Legionella antigen — serogroup 1 only)"
+        },
+        {
+          "test_name": "Full Blood Count (FBC) and CRP",
+          "type": "Blood — Haematological and Inflammatory Markers",
+          "description": "Blood count and inflammatory markers are useful primarily to distinguish bacterial from viral aetiology and to guide antibiotic prescribing decisions — particularly in AECB. Leucocytosis with neutrophilia suggests bacterial infection; normal WBC more consistent with viral. Lymphocytosis is characteristic of pertussis (peripheral lymphocytosis >10,000/mcL with characteristic lymphocyte morphology — 'lymphocytosis + prolonged cough = think pertussis'). CRP: low (<20 mg/L) suggests viral; elevated (>50 mg/L) suggests bacterial or significant inflammatory process.",
+          "purpose": "Distinguish viral from bacterial aetiology; detect pertussis lymphocytosis; assess severity of infection; guide antibiotic decisions in AECB; eosinophilia (allergic/eosinophilic bronchitis)",
+          "key_metric": "WBC >12,000/mcL with neutrophilia: bacterial infection more likely; Lymphocytes >10,000/mcL: consider pertussis; Eosinophils >500/mcL: allergic component or eosinophilic bronchitis; CRP >50-100 mg/L: significant infection; CRP <20: likely viral — avoid antibiotics; Procalcitonin <0.1 ng/mL: viral — antibiotics unlikely beneficial"
+        },
+        {
+          "test_name": "Arterial Blood Gas (ABG)",
+          "type": "Blood — Arterial",
+          "description": "Arterial blood sampling from the radial artery measuring: PaO2 (partial pressure of oxygen), PaCO2 (partial pressure of CO2), pH, HCO3- (bicarbonate), and oxygen saturation. Essential in moderate-severe AECB — identifies type of respiratory failure and guides oxygen therapy and NIV decisions.",
+          "purpose": "Identify type 1 (hypoxic — PaO2 <8 kPa, normal/low PaCO2) vs type 2 (hypercapnic — PaO2 <8 kPa + PaCO2 >6 kPa) respiratory failure; guide oxygen therapy target (SpO2 88-92% in known CO2 retainers); guide NIV initiation (pH <7.35 with hypercapnia); monitor response to treatment",
+          "key_metric": "Type 1 respiratory failure: PaO2 <8 kPa, normal or low PaCO2 — give oxygen to correct hypoxia; Type 2 respiratory failure: PaO2 <8 kPa + PaCO2 >6 kPa (hypercapnia) — controlled oxygen; NIV if pH <7.35; pH <7.25 on NIV = escalate to ICU/intubation",
+          "indication": "All hospitalised AECB; SpO2 <92%; confusion or drowsiness in COPD; any severe respiratory distress"
+        },
+        {
+          "test_name": "Procalcitonin (PCT)",
+          "type": "Blood — Inflammatory Biomarker",
+          "description": "Procalcitonin is a peptide produced by bacterial infection (but not viral) — highly specific for bacterial infection. PCT-guided antibiotic therapy for ACUTE BRONCHITIS has been shown in multiple RCTs to safely reduce antibiotic use by 30-50% without worsening outcomes: PCT <0.1 ng/mL = viral — antibiotics strongly discouraged; PCT 0.1-0.25 = viral likely — antibiotics not recommended; PCT 0.25-0.5 = possible bacterial — consider antibiotics; PCT >0.5 = bacterial infection — antibiotics recommended.",
+          "purpose": "Reduce inappropriate antibiotic use in acute bronchitis; distinguish viral from bacterial infection; guide antibiotic de-escalation in AECB; monitor treatment response",
+          "key_metric": "PCT <0.25 ng/mL: viral origin — antibiotics not indicated (acute bronchitis); PCT >0.5 ng/mL: bacterial infection likely — antibiotics indicated",
+          "evidence": "Cochrane review: PCT-guided therapy reduces antibiotic use in acute respiratory infections without increasing adverse outcomes; endorsed by WHO antibiotic stewardship programmes"
+        },
+        {
+          "test_name": "Peak Expiratory Flow Rate (PEFR)",
+          "type": "Physiological — Point-of-Care",
+          "description": "Simple portable device measuring the maximum speed of airflow during forced expiration. Primarily used in asthma to monitor airway obstruction and treatment response. In acute bronchitis with wheeze: PEFR may be reduced during the acute infection and should return to normal after recovery (persistent reduction after 4-6 weeks suggests underlying asthma or COPD — requires spirometry). PEFR compared to the patient's personal best determines severity of acute asthma.",
+          "purpose": "Screen for significant airflow obstruction; monitor acute bronchospasm; follow-up after acute bronchitis to identify underlying asthma or COPD",
+          "key_metric": "PEFR <80% predicted in acute bronchitis with wheeze: significant bronchospasm — consider bronchodilator; PEFR not recovering to predicted normal after 6 weeks: investigate with spirometry for COPD or asthma"
+        },
+        {
+          "test_name": "Mantoux Test / IGRA (Interferon-Gamma Release Assay) for Tuberculosis",
+          "type": "Immunological / Microbiological",
+          "description": "Tests for latent or active Mycobacterium tuberculosis infection. Critically important in India — which has the world's highest TB burden. Any cough lasting more than 2 weeks with fever, night sweats, weight loss, or haemoptysis must be investigated for pulmonary TB before labelling as 'recurrent bronchitis'. Sputum AFB smear (×3 early morning specimens) and GeneXpert CBNAAT (combined TB diagnosis and rifampicin resistance detection) are now standard in India's Nikshay programme.",
+          "purpose": "Exclude pulmonary tuberculosis in prolonged cough; detect TB in high-risk contacts; GeneXpert provides rapid TB diagnosis and simultaneous rifampicin resistance testing",
+          "key_metric": "AFB smear positive: likely TB — treat; GeneXpert Xpert MTB/RIF positive: confirms TB and tests rifampicin resistance simultaneously; Negative AFB but clinical suspicion: TB culture (weeks), CT chest, bronchoscopy with BAL",
+          "india_specific": "TB remains endemic in India (2.5 million new cases per year); every case of prolonged cough (>2 weeks) in an Indian patient must be evaluated for TB before concluding bronchitis diagnosis; free TB diagnosis and treatment available under DOTS programme (Directly Observed Treatment Short-course) at all government health centres"
+        },
+        {
+          "test_name": "Electrocardiogram (ECG)",
+          "type": "Cardiac",
+          "description": "ECG is indicated in moderate-severe AECB to detect: cor pulmonale (right ventricular strain — right axis deviation, right bundle branch block, P pulmonale — tall peaked P waves in lead II, S1Q3T3 pattern); acute myocardial infarction (a precipitant of AECB or a COPD complication); atrial fibrillation (common in COPD exacerbation); and pulmonary embolism (tachycardia, right heart strain).",
+          "purpose": "Detect cardiac complications of AECB; identify cor pulmonale; exclude cardiac cause of dyspnoea",
+          "key_metric": "P pulmonale (peaked P >2.5 mm in lead II) = right atrial enlargement in cor pulmonale; Right axis deviation + RBBB = right ventricular strain; S1Q3T3 pattern = pulmonary embolism"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "The most important principle in acute bronchitis management is antibiotic stewardship — over 90% of acute bronchitis is viral and does NOT benefit from antibiotics. Antibiotics cause side effects (GI upset, C. difficile colitis, allergic reactions), select resistant bacteria, and cost significant healthcare resources — all without shortening viral illness duration meaningfully. Treatment of acute bronchitis focuses on symptomatic relief: hydration, cough suppressants or expectorants, bronchodilators for wheeze, and antipyretics. For chronic bronchitis (COPD): regular inhaled bronchodilator therapy, smoking cessation, and pulmonary rehabilitation form the core. AECB: antibiotics + oral corticosteroids + bronchodilators for appropriate cases.",
+      "treatment_principles": [
+        "1. Acute bronchitis: DO NOT prescribe antibiotics in otherwise healthy adults — 90%+ is viral; antibiotics shorten cough by only 6-12 hours at the cost of significant side effects and resistance",
+        "2. EXCEPTIONS requiring antibiotics in acute bronchitis: confirmed pertussis (Bordetella pertussis) — azithromycin; confirmed Mycoplasma or Chlamydophila — macrolide or tetracycline; patient is immunocompromised, elderly, or has severe underlying lung disease with high fever and purulent sputum — consider antibiotics",
+        "3. AECB antibiotic indications: Anthonisen Type I (all 3 criteria: increased dyspnoea, sputum volume, purulence); Anthonisen Type II (2 of 3 criteria); any AECB requiring hospitalisation; severe COPD (GOLD III-IV) with any exacerbation",
+        "4. Oral corticosteroids in AECB: prednisolone 30-40mg daily for 5 days — shorten recovery time and reduce risk of treatment failure; use in all hospitalised AECB; consider in severe outpatient AECB",
+        "5. Bronchodilators: short-acting beta-2 agonists (salbutamol) are key rescue medication in all acute bronchitis with wheeze and in AECB; regular long-acting bronchodilators are the cornerstone of COPD maintenance",
+        "6. Smoking cessation is the most important treatment for chronic bronchitis — no medication matches the benefit; every consultation is an opportunity for cessation advice",
+        "7. Inhaled corticosteroids (ICS): NOT indicated for acute bronchitis; indicated in COPD with frequent exacerbations (FEV1 <50% and >2 exacerbations per year); first-line in asthma",
+        "8. Controlled oxygen in COPD: target SpO2 88-92% (NOT 94-98%) in known COPD — hyperoxia causes CO2 retention (Haldane effect)"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-121",
+          "category_name": "Bronchodilators — Short-Acting (Rescue Therapy)",
+          "purpose": "Rapid relief of bronchospasm, wheeze, and dyspnoea in acute bronchitis with bronchoconstriction and in AECB.",
+          "medicines": [
+            {
+              "name": "Salbutamol (Albuterol) — Short-Acting Beta-2 Agonist (SABA)",
+              "brand_examples": ["Ventolin", "Asthalin", "Aerocort (combination)", "Salbetol", "Salamol"],
+              "form": "MDI inhaler (100 mcg/actuation); nebuliser solution (2.5 mg/2.5 mL); dry powder inhaler; IV (severe acute asthma only)",
+              "dosage": "MDI inhaler: 1-2 puffs (100-200 mcg) every 4-6 hours as needed; nebuliser: 2.5-5 mg in 2.5-5 mL normal saline every 4-6 hours (AECB/severe acute bronchospasm); maximum 4-6 hourly in stable disease; frequency can increase in acute exacerbation (continuous nebulisation in severe acute asthma)",
+              "use_case": "Bronchospasm and wheeze in acute bronchitis; rescue bronchodilator in COPD (use as needed, not regular scheduled doses at GOLD I); AECB — foundation of nebulised bronchodilator treatment; acute asthma",
+              "mechanism": "Beta-2 adrenoceptor agonist — selectively stimulates beta-2 receptors on bronchial smooth muscle causing relaxation and bronchodilation; onset 3-5 minutes; peak effect 30-60 minutes; duration 4-6 hours",
+              "inhaler_technique": "Shake inhaler; breathe out fully; place in mouth or use spacer device; press canister while taking a slow deep breath; hold breath for 10 seconds; wait 30-60 seconds between puffs. SPACER (Aerochamber) markedly improves drug delivery and reduces oropharyngeal deposition — essential for children, elderly, and any patient with poor technique",
+              "side_effects": ["Tremor (most common — dose-related)", "Tachycardia and palpitations", "Hypokalaemia (important — monitor K+ in high-dose nebulised salbutamol with AECB)", "Headache", "Agitation"],
+              "note": "High-dose salbutamol (>10 mg/hour via nebuliser) causes hypokalaemia — monitor electrolytes and replace potassium as needed"
+            },
+            {
+              "name": "Ipratropium Bromide — Short-Acting Muscarinic Antagonist (SAMA)",
+              "brand_examples": ["Atrovent", "Ipravent", "Duolin (combined with salbutamol)"],
+              "form": "MDI inhaler (20 mcg/actuation); nebuliser solution (0.5 mg/2 mL)",
+              "dosage": "MDI: 2-4 puffs (40-80 mcg) every 6-8 hours; Nebuliser: 0.5 mg every 4-6 hours; often combined with salbutamol in AECB",
+              "use_case": "AECB — synergistic bronchodilation when combined with salbutamol; COPD maintenance when LAMA not available; patients who cannot tolerate beta-2 agonists (severe cardiac disease); combined nebuliser (salbutamol + ipratropium) is standard AECB treatment in hospital",
+              "mechanism": "Muscarinic receptor antagonist — blocks M3 muscarinic receptors on airway smooth muscle and submucosal glands; reduces bronchoconstriction and mucus secretion; longer onset than salbutamol but complementary mechanism",
+              "side_effects": ["Dry mouth (most common)", "Urinary retention (elderly men with BPH)", "Blurred vision if sprayed in eyes (do not use nebuliser mask — use mouthpiece)", "Constipation", "Paradoxical bronchospasm (rare)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-122",
+          "category_name": "Bronchodilators — Long-Acting (Maintenance Therapy for COPD)",
+          "purpose": "Long-acting bronchodilators are the foundation of COPD maintenance treatment — reduce breathlessness, improve exercise tolerance, reduce exacerbation frequency, and improve quality of life.",
+          "medicines": [
+            {
+              "name": "Tiotropium — Long-Acting Muscarinic Antagonist (LAMA)",
+              "brand_examples": ["Spiriva", "Tiova", "Tiotropic"],
+              "form": "Dry powder inhaler (18 mcg/capsule — HandiHaler device); Respimat inhaler (2.5 mcg/actuation — 2 puffs daily)",
+              "dosage": "HandiHaler: one 18 mcg capsule inhaled once daily; Respimat: 2 × 2.5 mcg puffs once daily",
+              "use_case": "First-line maintenance bronchodilator for COPD (GOLD II-IV) — recommended by GOLD guidelines as first COPD medication after short-acting rescue; dramatically reduces COPD exacerbation frequency (UPLIFT trial — 14% reduction in exacerbations); improves FEV1, 6-minute walk test, St George's Respiratory Questionnaire score",
+              "mechanism": "Long-acting muscarinic receptor antagonist — blocks M3 receptors on bronchial smooth muscle with long duration (24 hours — once-daily dosing); dissociates slowly from M3 receptors",
+              "evidence": "UPLIFT trial (Tashkin et al., NEJM 2008): tiotropium significantly reduced exacerbations, improved quality of life, and reduced respiratory hospitalisations compared to placebo over 4 years",
+              "side_effects": ["Dry mouth (most common — 10-15%)", "Urinary retention (elderly men with BPH — caution)", "Constipation", "Blurred vision (if powder contacts eyes)", "Rarely: narrow angle glaucoma exacerbation"],
+              "note": "Do NOT swallow the capsule — pierce and inhale only; common error — always demonstrate inhaler technique; HandiHaler requires good manual dexterity — Respimat soft mist inhaler may be easier for elderly"
+            },
+            {
+              "name": "Salmeterol — Long-Acting Beta-2 Agonist (LABA)",
+              "brand_examples": ["Serevent (salmeterol alone)", "Seretide / Advair (salmeterol + fluticasone)", "Combivent"],
+              "form": "Accuhaler/Diskus (50 mcg/inhalation), MDI",
+              "dosage": "50 mcg twice daily (via Accuhaler)",
+              "use_case": "COPD maintenance — usually as LABA/ICS combination (salmeterol/fluticasone — Seretide) in GOLD III-IV with frequent exacerbations; LABA monotherapy increasingly replaced by LAMA in COPD; asthma maintenance (NEVER use as monotherapy without ICS in asthma — increased asthma death risk)",
+              "mechanism": "Long-acting selective beta-2 agonist; prolonged bronchial smooth muscle relaxation for 12 hours",
+              "note": "IMPORTANT: LABA should NOT be used as monotherapy in asthma — increased risk of asthma-related death (FDA black box warning); always combine with ICS in asthma; in COPD used as LABA alone or with ICS depending on eosinophil count"
+            },
+            {
+              "name": "Formoterol / Eformoterol — LABA (twice daily or once daily)",
+              "brand_examples": ["Foradil", "Oxis Turbuhaler", "Symbicort (formoterol + budesonide)"],
+              "form": "Turbuhaler, Aerolizer DPI",
+              "dosage": "12 mcg twice daily",
+              "use_case": "COPD and asthma maintenance; unique feature — faster onset than salmeterol (1-3 minutes vs 15-20 minutes) allowing use as rescue AND maintenance (MART — Maintenance And Reliever Therapy regimen in asthma using Symbicort)"
+            },
+            {
+              "name": "Indacaterol — LABA (once daily)",
+              "brand_examples": ["Onbrez Breezhaler", "Imalin"],
+              "form": "Breezhaler DPI (150 mcg, 300 mcg once daily)",
+              "dosage": "150-300 mcg once daily",
+              "use_case": "COPD maintenance — once-daily LABA; improves adherence; comparable to tiotropium and salmeterol for COPD; not used in asthma",
+              "side_effects": "Cough after inhalation of capsule powder (characteristic — not harmful; resolves quickly)"
+            },
+            {
+              "name": "Umeclidinium/Vilanterol (LAMA/LABA Combination — Anoro Ellipta)",
+              "brand_examples": ["Anoro Ellipta", "Laventair"],
+              "form": "Ellipta DPI (55 mcg umeclidinium + 22 mcg vilanterol once daily)",
+              "dosage": "One inhalation once daily",
+              "use_case": "GOLD C-D COPD — dual bronchodilation (LAMA + LABA) when single bronchodilator insufficient; evidence for LAMA + LABA combination superior to either agent alone for lung function and exacerbation reduction",
+              "note": "GOLD 2023 guidelines recommend dual LAMA + LABA as initial therapy for many symptomatic COPD patients"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-123",
+          "category_name": "Inhaled Corticosteroids (ICS) and ICS/LABA Combinations",
+          "purpose": "Reduce airway inflammation in COPD with frequent exacerbations (blood eosinophils ≥300/mcL) and in asthma (first-line); reduce exacerbation rate; NOT indicated for mild COPD or acute viral bronchitis.",
+          "medicines": [
+            {
+              "name": "Budesonide (ICS)",
+              "brand_examples": ["Pulmicort", "Budecort", "Budesal"],
+              "form": "Turbuhaler DPI (100, 200, 400 mcg/dose); MDI; nebuliser (1 mg/2 mL — for AECB as alternative to oral prednisolone)",
+              "dosage": "COPD: 200-400 mcg twice daily; Asthma (low dose): 200-400 mcg/day; moderate: 400-800 mcg/day; high: >800 mcg/day; Nebuliser (AECB): 1-2 mg twice daily as alternative to oral prednisolone",
+              "use_case": "ICS component in COPD with blood eosinophils ≥100/mcL + ≥2 exacerbations per year; first-line asthma treatment; available as nebuliser for AECB when oral route not preferred",
+              "side_effects": ["Oropharyngeal candidiasis (thrush) — rinse mouth with water after use; use spacer device", "Dysphonia (hoarse voice) — local deposition on vocal cords", "Increased pneumonia risk in COPD (significant and well-documented — particularly fluticasone; lower risk with budesonide)", "Systemic effects at very high doses: adrenal suppression, osteoporosis, skin thinning"]
+            },
+            {
+              "name": "Budesonide/Formoterol (ICS/LABA — Symbicort)",
+              "brand_examples": ["Symbicort Turbuhaler", "Fomtide", "Foracort"],
+              "form": "Turbuhaler DPI (100/6, 200/6, 400/12 mcg per dose)",
+              "dosage": "COPD: 400/12 mcg twice daily; Asthma maintenance: 200/6 mcg twice daily; SMART regimen (asthma only): 200/6 mcg as both maintenance and reliever (maximum 8 puffs per day)",
+              "use_case": "GOLD C-D COPD with eosinophilia; moderate-severe asthma maintenance; SMART regimen (Symbicort Maintenance And Reliever Therapy) in asthma — single inhaler replaces ICS + SABA",
+              "evidence": "SMART regimen reduces asthma exacerbations more effectively than fixed-dose ICS/LABA + separate rescue SABA"
+            },
+            {
+              "name": "Fluticasone/Salmeterol (ICS/LABA — Seretide/Advair)",
+              "brand_examples": ["Seretide", "Adoair", "Salmeflo"],
+              "form": "Accuhaler DPI (100/50, 250/50, 500/50 mcg per dose); MDI Evohaler",
+              "dosage": "COPD: Accuhaler 500/50 mcg twice daily; Asthma: dose of ICS component depends on severity",
+              "use_case": "COPD GOLD C-D; moderate-severe asthma; twice-daily dosing",
+              "note": "Fluticasone propionate has higher pneumonia risk in COPD compared to budesonide — monitor for respiratory infections; consider de-escalation if no eosinophilia"
+            },
+            {
+              "name": "Fluticasone Furoate/Vilanterol (ICS/LABA — once daily)",
+              "brand_examples": ["Relvar Ellipta"],
+              "form": "Ellipta DPI (92/22, 184/22 mcg once daily)",
+              "dosage": "One inhalation once daily",
+              "use_case": "Once-daily COPD and asthma management — improves adherence; Ellipta inhaler is simple to use"
+            },
+            {
+              "name": "Beclomethasone (ICS)",
+              "brand_examples": ["Beclazone", "Clenil Modulite", "Beclate"],
+              "form": "MDI (50, 100, 200, 250 mcg/actuation)",
+              "dosage": "Asthma: 200-400 mcg twice daily (low-medium dose); COPD: 200-400 mcg twice daily",
+              "use_case": "Widely available and lower cost ICS; first-line ICS in asthma in many developing countries including India",
+              "note": "CFC-free (HFA) formulations have smaller particle size — slightly different deposition from older CFC formulations — doses may not be directly interchangeable between brands; seek specialist advice when switching"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-124",
+          "category_name": "Antibiotics — For Acute Bacterial Bronchitis (Pertussis, Atypical Bacteria) and AECB",
+          "purpose": "Targeted antibiotic therapy for the minority of bronchitis cases requiring antibiotics: confirmed bacterial aetiology (pertussis, Mycoplasma, Chlamydophila); AECB meeting antibiotic criteria; severe COPD exacerbation.",
+          "notes": "Pertussis and atypical bacteria (Mycoplasma, Chlamydophila) require macrolides or tetracyclines — beta-lactams (amoxicillin, penicillin) are INEFFECTIVE. AECB antibiotics: cover H. influenzae (most common), S. pneumoniae, M. catarrhalis; amoxicillin or doxycycline are first-line.",
+          "medicines": [
+            {
+              "name": "Azithromycin",
+              "brand_examples": ["Azee", "Zithromax", "Azithral", "Azithrocin"],
+              "form": "Tablet",
+              "dosage": "Pertussis: 500 mg day 1, then 250 mg days 2-5 (5-day course); Atypical bacteria (Mycoplasma, Chlamydophila): 500 mg once daily for 5 days; AECB (mild-moderate): 500 mg once daily for 3-5 days; Prophylaxis in frequent AECB: 250 mg three times per week (long-term, with ECG monitoring — QT prolongation risk)",
+              "use_case": "FIRST-LINE for pertussis (whooping cough); first-line for Mycoplasma and Chlamydophila pneumoniae bronchitis; alternative antibiotic in AECB (particularly penicillin-allergic patients or when atypical organisms suspected); long-term prophylaxis to reduce AECB frequency in GOLD III-IV COPD (>2 exacerbations/year)",
+              "mechanism": "Macrolide antibiotic — inhibits 50S ribosomal subunit; bacteriostatic; tissue penetration into respiratory secretions is excellent (intracellular penetration important for atypical organisms); anti-inflammatory effects independent of antimicrobial activity",
+              "resistance_warning": "Macrolide resistance in Mycoplasma pneumoniae is increasing (20-80% in some Asian countries) — doxycycline is an important alternative",
+              "prophylaxis_evidence": "ALBERT trial (NEJM 2011): azithromycin 250mg daily for 1 year in COPD patients with frequent exacerbations reduced AECB rate by 27% and improved quality of life; ECG monitoring required (QTc interval — do not use if QTc >450 ms)",
+              "side_effects": ["Nausea, diarrhoea", "QT prolongation (screen ECG before long-term use)", "Hearing impairment (prolonged use)", "Liver enzyme elevation (rare)"]
+            },
+            {
+              "name": "Doxycycline",
+              "brand_examples": ["Doxin", "Vibramycin", "Doxt", "Biodoxi"],
+              "form": "Tablet, Capsule",
+              "dosage": "Atypical bacteria: 100 mg twice daily for 7-14 days; AECB (first or second-line): 200 mg on day 1, then 100 mg twice daily for 5-7 days",
+              "use_case": "Mycoplasma pneumoniae bronchitis (particularly where macrolide resistance suspected); Chlamydophila pneumoniae; first-line or alternative oral antibiotic in AECB (excellent activity against H. influenzae, S. pneumoniae, M. catarrhalis, and atypicals in one agent); preferred for prolonged-release formulation available",
+              "mechanism": "Tetracycline antibiotic — inhibits 30S ribosomal subunit; bacteriostatic; broad spectrum including atypical bacteria",
+              "contraindications": ["Pregnancy — affects fetal bone and tooth development (permanent tooth discolouration)", "Children under 8 years", "Significant hepatic impairment"],
+              "side_effects": ["Oesophageal ulceration — take with full glass of water and remain upright for 30 minutes", "Photosensitivity — use sun protection", "Nausea", "Candidal vaginitis (with prolonged use)"]
+            },
+            {
+              "name": "Amoxicillin",
+              "brand_examples": ["Amoxil", "Mox", "Novamox", "Trimox"],
+              "form": "Capsule, Tablet, Oral suspension",
+              "dosage": "AECB: 500 mg three times daily for 5 days",
+              "use_case": "First-line antibiotic for AECB with Anthonisen Type I-II criteria when atypical organisms NOT suspected and when penicillin-susceptible organisms expected; covers H. influenzae (most common AECB pathogen — 50-70% susceptible), S. pneumoniae, M. catarrhalis (30% produce beta-lactamase — resistant)",
+              "mechanism": "Aminopenicillin — broad-spectrum beta-lactam; inhibits cell wall synthesis; bactericidal",
+              "resistance_note": "H. influenzae beta-lactamase production is increasing; Moraxella catarrhalis is 90-95% beta-lactamase producing (resistant to amoxicillin alone); if treatment failure — switch to co-amoxiclav or doxycycline",
+              "note": "NOT effective for pertussis, Mycoplasma, or Chlamydophila — use macrolide or tetracycline for these organisms"
+            },
+            {
+              "name": "Co-Amoxiclav (Amoxicillin-Clavulanate)",
+              "brand_examples": ["Augmentin", "Clavam", "Amoxyclav", "Clavamox"],
+              "form": "Tablet (375 mg, 625 mg, 1000 mg)",
+              "dosage": "625 mg three times daily for 5-7 days (AECB)",
+              "use_case": "AECB when beta-lactamase-producing organisms suspected (H. influenzae, M. catarrhalis, Staph aureus); penicillin failure in AECB; more reliable activity than amoxicillin alone against common AECB pathogens; also covers anaerobes",
+              "side_effects": ["GI intolerance (very common — nausea, diarrhoea)", "Cholestatic jaundice (rare — caution if previous co-amoxiclav-related jaundice)", "Rash"]
+            },
+            {
+              "name": "Clarithromycin",
+              "brand_examples": ["Klaricid", "Claribid", "Claricin", "Klacid"],
+              "form": "Tablet, Oral suspension",
+              "dosage": "250-500 mg twice daily for 5-7 days; Modified release: 500 mg once daily for 7 days",
+              "use_case": "Atypical bacterial bronchitis (Mycoplasma, Chlamydophila); AECB with penicillin allergy; Legionella pneumophila (atypical pneumonia); covers H. influenzae better than erythromycin",
+              "mechanism": "Macrolide antibiotic; 50S ribosomal inhibition; long half-life; excellent intracellular penetration",
+              "side_effects": ["Nausea, metallic taste, GI upset (less than erythromycin)", "QT prolongation", "Drug interactions (CYP3A4 inhibitor — increases levels of warfarin, statins, digoxin, carbamazepine)"]
+            },
+            {
+              "name": "Levofloxacin / Moxifloxacin (Respiratory Fluoroquinolones)",
+              "brand_examples": ["Levoflox / Tavanic (levofloxacin); Avelox / Moxiflox (moxifloxacin)"],
+              "form": "Tablet",
+              "dosage": "Levofloxacin: 500-750 mg once daily for 5-7 days; Moxifloxacin: 400 mg once daily for 5-7 days",
+              "use_case": "AECB when: penicillin allergy; co-amoxiclav failure; more severe COPD exacerbation; Pseudomonas risk (levofloxacin preferred — better pseudomonal activity); 'respiratory quinolones' with excellent coverage of H. influenzae, S. pneumoniae, atypicals, and Legionella in one agent",
+              "mechanism": "Fluoroquinolone — inhibits DNA gyrase and topoisomerase IV; bactericidal; excellent respiratory tissue penetration",
+              "reserve_note": "Fluoroquinolones should be reserved for severe exacerbations — routine use for mild AECB increases resistance; Moxifloxacin has NO activity against Pseudomonas — use levofloxacin if Pseudomonas suspected (severe COPD, prior Pseudomonas isolation, hospitalisation)",
+              "side_effects": ["Tendinopathy and tendon rupture (Achilles)", "QT prolongation", "CNS effects (dizziness, rarely seizures)", "Peripheral neuropathy (prolonged use)", "Photosensitivity"]
+            },
+            {
+              "name": "Ciprofloxacin (for Pseudomonas-Risk AECB)",
+              "brand_examples": ["Ciprobay", "Ciplox", "Cifran"],
+              "form": "Tablet; IV",
+              "dosage": "500-750 mg twice daily for 7-10 days; IV 400 mg every 8-12 hours (hospitalised, severe)",
+              "use_case": "AECB in severe COPD (FEV1 <30%) where Pseudomonas aeruginosa is a concern: previous Pseudomonas isolation; recent hospitalisation; structural lung disease (bronchiectasis); recent broad-spectrum antibiotic course; FEV1 <30% predicted",
+              "note": "Ciprofloxacin covers Pseudomonas but has poor pneumococcal activity — only use when Pseudomonas is specifically a concern"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-125",
+          "category_name": "Systemic Corticosteroids — AECB Treatment",
+          "purpose": "Accelerate recovery and reduce treatment failure in AECB — shorten duration of hospitalisation and hasten improvement in lung function.",
+          "medicines": [
+            {
+              "name": "Prednisolone (Oral)",
+              "brand_examples": ["Prednisolone", "Wysolone", "Omnacortil"],
+              "form": "Tablet (5 mg, 10 mg, 20 mg, 30 mg)",
+              "dosage": "30-40 mg once daily for 5 days (AECB — GOLD and NICE recommended); NOT longer unless clinical necessity — no benefit of longer courses (REDUCE trial evidence); higher doses (60 mg) NOT shown superior to 30-40 mg; no tapering required for 5-day course",
+              "use_case": "All hospitalised AECB; outpatient AECB in GOLD III-IV COPD or not responding to bronchodilators alone; accelerates FEV1 improvement and reduces treatment failure risk by 30%",
+              "mechanism": "Glucocorticoid — inhibits NF-κB and AP-1 transcription factors; reduces cytokine production (IL-8, TNF-alpha, IL-1β) and neutrophil infiltration in airways; reduces mucosal oedema and airway hyperresponsiveness",
+              "evidence": "REDUCE trial (Leuppi et al., JAMA 2013): 5-day prednisolone course non-inferior to 14-day course for AECB — shorter course recommended",
+              "side_effects": ["Hyperglycaemia (significant in diabetics — monitor blood glucose closely and adjust insulin/hypoglycaemic agents)", "Insomnia (take in the morning)", "Mood changes (agitation, rarely psychosis)", "Fluid retention", "Short-term: minimal risk; prolonged courses: adrenal suppression, osteoporosis, weight gain, cataracts"],
+              "note": "In diabetics with AECB: prednisolone causes significant hyperglycaemia — monitor blood glucose four times daily; may need insulin sliding scale; do NOT withhold steroids if clinically indicated — manage glucose aggressively"
+            },
+            {
+              "name": "Hydrocortisone (IV) — For Hospitalised Unable to Take Oral",
+              "brand_examples": ["Solu-Cortef", "Hydrocortisone injection"],
+              "form": "IV injection",
+              "dosage": "200 mg IV every 6 hours OR 100 mg IV every 6-8 hours until oral route established; convert to oral prednisolone 40 mg as soon as tolerating",
+              "use_case": "Severe AECB requiring ICU; unable to take oral medication; NIV with altered consciousness",
+              "note": "Switch to oral prednisolone as soon as possible — IV hydrocortisone is equivalent but more inconvenient"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-126",
+          "category_name": "Cough Suppressants (Antitussives)",
+          "purpose": "Reduce distressing, non-productive cough in acute bronchitis when cough is causing significant sleep disturbance, chest wall pain, or social disruption. Use selectively — productive cough with sputum should generally NOT be suppressed as expectoration clears infection.",
+          "medicines": [
+            {
+              "name": "Dextromethorphan (DXM)",
+              "brand_examples": ["Benylin Dry Coughs", "Robitussin Dry Cough", "Kofarest", "Alex — DM"],
+              "form": "Syrup, Capsule",
+              "dosage": "Adults: 10-30 mg every 4-6 hours (max 120 mg/day); Children 6-12 years: 5-10 mg every 4-6 hours",
+              "use_case": "Non-productive dry cough in acute viral bronchitis causing sleep disturbance; temporary cough suppression when productive cough has cleared",
+              "mechanism": "NMDA receptor antagonist and sigma-1 receptor agonist in cough centre of brainstem; centrally-acting antitussive",
+              "side_effects": ["Drowsiness", "Dizziness", "Nausea", "Risk of misuse/abuse in higher doses (dissociative effects)", "Avoid with MAOIs (serotonin syndrome)"],
+              "note": "NOT recommended in children under 6 years; has weak evidence for efficacy but widely used; honey is as effective in studies and safer"
+            },
+            {
+              "name": "Pholcodine",
+              "brand_examples": ["Pavacol-D", "Galenphol", "Benylin with Codeine"],
+              "form": "Linctus (syrup)",
+              "dosage": "Adults: 5-10 mg three to four times daily",
+              "use_case": "Non-productive irritating dry cough; mild centrally-acting antitussive; less abuse potential than codeine",
+              "mechanism": "Opioid receptor agonist in brainstem cough centre; peripherally restricted — does not cause analgesia at standard doses",
+              "note": "Being progressively withdrawn from some markets due to potential IgE sensitisation and anaphylaxis risk with neuromuscular blocking agents; check current regulatory status in your region"
+            },
+            {
+              "name": "Honey (Natural Antitussive — First-Line in Children)",
+              "form": "Raw honey or mixed in warm water/tea",
+              "dosage": "Children 1-5 years: ½ teaspoon at bedtime; Children 6-12 years: 1 teaspoon at bedtime; Adults: 1-2 teaspoons as needed",
+              "use_case": "Acute cough in children and adults — evidence from multiple RCTs shows honey equals or exceeds dextromethorphan for reducing nocturnal cough severity and sleep disturbance; safe, natural, widely available, and inexpensive",
+              "mechanism": "Demulcent (soothes irritated mucosa); antimicrobial properties (hydrogen peroxide, low pH, osmotic effect); antioxidant polyphenols; antibacterial effect (Manuka honey — methylglyoxal)",
+              "evidence": "Paul et al. (Archives of Pediatrics 2007): buckwheat honey superior to dextromethorphan for nocturnal cough in children; Cochrane review: honey may be slightly more effective than no treatment, DXM, and placebo for acute cough",
+              "warning": "NEVER give honey to infants under 12 months — risk of infant botulism (Clostridium botulinum spores in honey can proliferate in immature gut)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-127",
+          "category_name": "Mucolytics and Expectorants",
+          "purpose": "Reduce sputum viscosity (mucolytics) or stimulate mucus production and expectoration (expectorants) to facilitate clearance of respiratory secretions.",
+          "medicines": [
+            {
+              "name": "Carbocisteine (Carbomethylcysteine)",
+              "brand_examples": ["Rhinathiol", "Mucodyne", "Pectomed"],
+              "form": "Capsule, Syrup",
+              "dosage": "Adults: 750 mg three times daily initially; reduce to 375 mg three times daily for maintenance; Children: 62.5-250 mg three to four times daily (weight-based)",
+              "use_case": "Reducing sputum viscosity in chronic bronchitis and COPD — long-term use reduces AECB frequency; symptomatic relief in acute bronchitis with tenacious sputum; chronic bronchiectasis",
+              "mechanism": "Mucolytic — reduces disulphide bonds in mucus glycoproteins; reduces sputum viscosity and elasticity; improves mucociliary transport; stimulates serous gland secretion to liquefy secretions",
+              "evidence": "PEACE trial (Zheng JP et al., Lancet 2008): carbocisteine significantly reduced AECB frequency in Chinese COPD patients; anti-inflammatory effects may also contribute"
+            },
+            {
+              "name": "N-Acetylcysteine (NAC) — Oral",
+              "brand_examples": ["Fluimucil", "Mucinac", "ACC Long", "Mucoease"],
+              "form": "Effervescent tablet, sachet, capsule",
+              "dosage": "COPD mucolytic: 600 mg once daily; Acute bronchitis: 200 mg three times daily or 600 mg once daily; High-dose NAC: 600 mg twice daily (some evidence for COPD exacerbation reduction)",
+              "use_case": "Mucolytic in acute and chronic bronchitis — reduces sputum viscosity; antioxidant (glutathione precursor) — reduces oxidative stress in COPD airways; long-term use may modestly reduce AECB frequency particularly in patients not using ICS (PANTHEON trial); IV high-dose NAC: antidote for paracetamol overdose",
+              "mechanism": "Mucolytic — reduces disulphide bonds in mucus glycoproteins; antioxidant — donates sulfhydryl group to replenish intracellular glutathione; anti-inflammatory",
+              "evidence": "Meta-analysis (Tse et al.): NAC reduces AECB frequency (RR 0.69); most benefit in patients with FEV1 >50% and those not on ICS",
+              "side_effects": ["Nausea (effervescent formulation dissolves unpleasant smell of sulphur — mix with juice)", "Bronchospasm (rare — from inhaled NAC; oral generally well-tolerated)"]
+            },
+            {
+              "name": "Bromhexine",
+              "brand_examples": ["Bisolvon", "Bromhexine", "Mucosol"],
+              "form": "Tablet, Syrup, Elixir",
+              "dosage": "Adults: 8-16 mg three times daily; Children: 4-8 mg three times daily",
+              "use_case": "Mucolytic for productive cough in acute bronchitis, chronic bronchitis, and COPD; metabolised to ambroxol (active metabolite) in the body; commonly used in India; safe and well-tolerated",
+              "mechanism": "Stimulates serous gland secretion to liquefy mucus; may stimulate surfactant production; ambroxol metabolite stimulates mucociliary clearance"
+            },
+            {
+              "name": "Ambroxol",
+              "brand_examples": ["Mucosolvan", "Ambrolite", "Amlosolvex", "Ambrodil"],
+              "form": "Tablet, Syrup",
+              "dosage": "Adults: 30 mg three times daily (first 3 days); then 30 mg twice daily for maintenance; Children: 7.5-15 mg three times daily",
+              "use_case": "Active metabolite of bromhexine; mucolytic and mucokinetic (stimulates mucociliary transport); stimulates surfactant synthesis in alveolar type II cells; widely prescribed in India for acute bronchitis — one of the most commonly used respiratory medications",
+              "mechanism": "Stimulates serous secretion; increases ciliary beat frequency; stimulates surfactant production; local anaesthetic effect (reduces cough trigger sensitivity)"
+            },
+            {
+              "name": "Guaifenesin (Glyceryl Guaiacolate) — Expectorant",
+              "brand_examples": ["Benylin Chesty Coughs", "Robitussin Chesty Cough", "Grilinctus"],
+              "form": "Syrup, Tablet",
+              "dosage": "Adults: 200-400 mg every 4 hours (max 2.4 g/day); Children: 100-200 mg every 4 hours",
+              "use_case": "Expectorant for productive cough in acute bronchitis — stimulates mucus secretion to make sputum less viscous; increases mucus transport up the airway (mucokinetic); most commonly used OTC respiratory ingredient in combination cough syrups",
+              "mechanism": "Stimulates gastric mucosal irritant receptors → vagal reflex increases respiratory tract secretions → dilutes and loosens sputum; mucokinetic effect",
+              "note": "Evidence for clinical efficacy is modest; ensure adequate hydration (additional 2L/day) to maximise expectorant effect"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-128",
+          "category_name": "Antiviral Therapy — Influenza",
+          "purpose": "Reduce severity and duration of influenza-induced bronchitis and lower respiratory illness when initiated within 48 hours of symptom onset.",
+          "medicines": [
+            {
+              "name": "Oseltamivir (Tamiflu)",
+              "brand_examples": ["Tamiflu", "Antiflu"],
+              "form": "Capsule, Oral suspension",
+              "dosage": "Adults: 75 mg twice daily for 5 days; Children (weight-based): <15 kg: 30 mg twice daily; 15-23 kg: 45 mg twice daily; 23-40 kg: 60 mg twice daily; >40 kg: 75 mg twice daily; Prophylaxis: 75 mg once daily for 10 days (post-exposure)",
+              "use_case": "Influenza A and B — recommended for: hospitalised patients with influenza; high-risk groups (elderly >65, pregnant women, COPD, immunocompromised, BMI >40, diabetes, chronic heart or renal disease); severe influenza regardless of timing; ideally initiated within 48 hours of symptom onset for maximum benefit",
+              "mechanism": "Neuraminidase inhibitor — blocks influenza neuraminidase enzyme preventing viral particle release from infected cells and spread to new cells; reduces viral shedding duration by ~50%",
+              "evidence": "Reduces hospitalisation risk by 50% and ICU admission by 30% when given within 48 hours in high-risk patients; NICE recommends in all hospitalised influenza patients regardless of time since onset",
+              "side_effects": ["Nausea and vomiting (take with food)", "Headache", "Rare: neuropsychiatric effects (delirium, self-harm impulses) — mostly children; monitor"]
+            },
+            {
+              "name": "Zanamivir (Relenza)",
+              "brand_examples": ["Relenza"],
+              "form": "Dry powder inhaler (5 mg/blister)",
+              "dosage": "Adults and children ≥5 years: 2 inhalations (10 mg) twice daily for 5 days; prophylaxis: 2 inhalations once daily for 10 days",
+              "use_case": "Influenza A and B treatment; alternative to oseltamivir when oral route not feasible; particularly useful in oseltamivir-resistant influenza (rare); NOT suitable for patients with reactive airways (bronchospasm risk)",
+              "contraindications": "COPD and asthma (risk of severe bronchospasm — use oseltamivir instead)",
+              "mechanism": "Inhaled neuraminidase inhibitor — delivers drug directly to respiratory tract"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-129",
+          "category_name": "Smoking Cessation Pharmacotherapy",
+          "purpose": "The most important pharmacological intervention in chronic bronchitis — smoking cessation at any stage of COPD significantly slows disease progression and is the only intervention proven to reduce long-term mortality in COPD.",
+          "evidence": "LUNG HEALTH STUDY (NEJM 1994): Smoking cessation reduced FEV1 decline from ~60 mL/year to ~30 mL/year — effectively halving the rate of COPD progression; no pharmacological agent comes close to matching this benefit.",
+          "medicines": [
+            {
+              "name": "Nicotine Replacement Therapy (NRT)",
+              "brand_examples": ["Nicotinell (patch, gum)", "Nicorette (patch, gum, inhaler, lozenge)", "Nicotex (gum — India)"],
+              "form": "Transdermal patch (7 mg, 14 mg, 21 mg/24 hours); chewing gum (2 mg, 4 mg); sublingual tablet; nasal spray; inhaler; lozenge",
+              "dosage": "Patch: 21 mg/24 hours for 6 weeks (>20 cigarettes/day), then step down to 14 mg, then 7 mg; or 14 mg if <20 cigarettes/day; Gum: 2-4 mg as needed (max 24 pieces/day); duration 8-12 weeks total",
+              "use_case": "Smoking cessation in all smokers with chronic bronchitis or COPD; combination NRT (patch + gum or lozenge) more effective than single form; available OTC; safe in most patients including most cardiac patients",
+              "mechanism": "Provides nicotine to reduce withdrawal symptoms (irritability, anxiety, craving, difficulty concentrating) without tobacco toxins; allows behavioural habit change while managing physical nicotine dependence",
+              "evidence": "NRT doubles quit rates compared to willpower alone; combination NRT (long-acting patch + short-acting gum) superior to single-form NRT",
+              "side_effects": ["Patch: skin irritation at application site; vivid dreams (remove patch at night if disturbed sleep)", "Gum: jaw ache; hiccups; nausea (use correct 'chew and park' technique)"]
+            },
+            {
+              "name": "Varenicline (Champix / Chantix)",
+              "brand_examples": ["Champix", "Chantix", "Veraclin"],
+              "form": "Tablet",
+              "dosage": "Week 1: 0.5 mg once daily (days 1-3), then 0.5 mg twice daily (days 4-7); Week 2 onwards: 1 mg twice daily; Total duration: 12 weeks (extend to 24 weeks for sustained abstinence); Set quit date for 1-2 weeks after starting",
+              "use_case": "Most effective pharmacotherapy for smoking cessation — quit rates approximately triple compared to placebo; recommended by NICE as first-line pharmacotherapy; also effective for tobacco use in smokeless tobacco/bidi users; can be used in COPD",
+              "mechanism": "Partial agonist at alpha-4-beta-2 nicotinic acetylcholine receptor — reduces craving and withdrawal symptoms (partial agonist effect) AND blocks pleasure from smoking (receptor occupancy blocks nicotine binding); dual mechanism makes it most effective cessation medication",
+              "evidence": "Meta-analyses: varenicline approximately doubles quit rates at 1 year compared to NRT; EAGLES trial (Cahill et al.): safe in psychiatric populations — no significant increase in serious neuropsychiatric events vs placebo",
+              "side_effects": ["Nausea (most common — take with food; usually improves after 1-2 weeks)", "Insomnia and abnormal dreams (take 1 mg at lunchtime rather than evening if severe)", "Headache", "Previously: concerns about suicidal ideation and cardiovascular events — subsequent large trials (EAGLES) showed no significant increase vs placebo; still requires counselling"],
+              "contraindications": "Caution in severe renal impairment (dose reduction); caution in history of seizures; discuss risks and benefits in psychiatric history"
+            },
+            {
+              "name": "Bupropion Sustained-Release (Zyban)",
+              "brand_examples": ["Zyban", "Wellbutrin SR"],
+              "form": "Sustained-release tablet",
+              "dosage": "150 mg once daily for 6 days, then 150 mg twice daily for 7-12 weeks; Set quit date 10-14 days after starting",
+              "use_case": "Second-line smoking cessation medication; effective in COPD smokers; also an antidepressant (NDRI) — may benefit smokers with comorbid depression",
+              "mechanism": "Noradrenaline-dopamine reuptake inhibitor (NDRI) and nicotinic receptor antagonist — reduces craving and withdrawal symptoms via dopaminergic reward pathway modulation; nicotinic antagonism reduces satisfaction from smoking",
+              "side_effects": ["Insomnia (avoid evening dose)", "Dry mouth", "Seizures — CONTRAINDICATED with seizure disorder, eating disorder, or MAOIs (seizure threshold lowered)", "Headache"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-130",
+          "category_name": "Other COPD-Specific Medications",
+          "medicines": [
+            {
+              "name": "Roflumilast (PDE4 Inhibitor)",
+              "brand_examples": ["Daliresp", "Daxas"],
+              "form": "Tablet",
+              "dosage": "500 mcg once daily",
+              "use_case": "Add-on therapy in GOLD III-IV COPD with chronic bronchitis phenotype (productive cough) and ≥2 exacerbations per year despite LAMA + LABA + ICS triple therapy; reduces exacerbation frequency by approximately 15-20%; particularly effective in patients with blood eosinophils >150/mcL or FEV1 <50%",
+              "mechanism": "Phosphodiesterase-4 (PDE4) inhibitor — increases intracellular cAMP in inflammatory cells (neutrophils, macrophages, T-lymphocytes) → reduces neutrophil migration and cytokine production → reduces airway inflammation; an anti-inflammatory drug, NOT a bronchodilator",
+              "evidence": "TRILOGY and REACT trials: roflumilast added to combination inhaler therapy further reduced severe exacerbations in high-risk COPD patients",
+              "side_effects": ["Diarrhoea and nausea (very common — first few weeks; usually resolves)", "Weight loss (average 2 kg — monitor in underweight COPD patients)", "Headache", "Insomnia", "Contraindicated in: moderate-severe hepatic impairment; depression with suicidal ideation"]
+            },
+            {
+              "name": "Alpha-1 Antitrypsin (AAT) Augmentation Therapy",
+              "brand_examples": ["Prolastin", "Zemaira", "Glassia", "Aralast NP"],
+              "form": "IV infusion",
+              "dosage": "60 mg/kg IV weekly",
+              "use_case": "COPD from alpha-1 antitrypsin deficiency (ZZ or SZ genotype) with FEV1 25-80% predicted — IV AAT augmentation therapy reduces emphysema progression (CT volumetric imaging); expensive and not widely available in India",
+              "note": "Must confirm AAT deficiency genotype before initiating; currently not available or reimbursed in India"
+            },
+            {
+              "name": "Theophylline (Methylxanthine)",
+              "brand_examples": ["Theo-Dur", "Phyllocontin", "Uniphyllin", "Deriphyllin (theophylline + etofylline — India)"],
+              "form": "Modified-release tablet, Injection",
+              "dosage": "Adults: theophylline 400 mg modified-release once at night (start low); titrate according to serum theophylline levels (target 10-20 mg/L); dose varies by smoking status, age, liver disease, and drug interactions",
+              "use_case": "Third-line bronchodilator in COPD when LAMA/LABA/ICS maximum therapy insufficient; acute severe asthma/AECB (IV aminophylline — hospital use); low-resource settings where modern inhalers unaffordable",
+              "mechanism": "Non-selective PDE inhibitor and adenosine receptor antagonist — bronchodilation; respiratory muscle stimulation (improves diaphragm contractility — useful in severe COPD); mild anti-inflammatory effects; increases mucociliary clearance",
+              "monitoring": "Serum theophylline levels — NARROW THERAPEUTIC WINDOW; toxic above 20 mg/L; many drug interactions (erythromycin, ciprofloxacin, cimetidine, allopurinol increase levels; rifampicin, carbamazepine, phenytoin, smoking decrease levels); check levels at 5-7 days and after any relevant drug change",
+              "side_effects": ["Nausea, vomiting, headache (common; early signs of toxicity)", "Palpitations, tachycardia", "Insomnia, agitation", "Toxic levels (>20 mg/L): seizures, ventricular arrhythmias — life-threatening; monitor carefully"],
+              "note": "Largely superseded by modern inhaled therapy in high-income settings; still widely used in India and low-resource settings"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-131",
+          "category_name": "Non-Invasive Ventilation (NIV — BiPAP) — Severe AECB",
+          "purpose": "Augments breathing in acute hypercapnic respiratory failure (type 2) complicating AECB — reduces work of breathing, improves gas exchange, and avoids invasive intubation with its complications.",
+          "medicines": [
+            {
+              "name": "BiPAP (Bilevel Positive Airway Pressure) — Non-Invasive Ventilation",
+              "brand_examples": ["Philips Respironics BiPAP", "ResMed BiPAP"],
+              "form": "Non-invasive ventilator via tight-fitting face mask",
+              "dosage": "Initial settings: IPAP (Inspiratory Positive Airway Pressure) 10-15 cmH2O; EPAP (Expiratory Positive Airway Pressure) 3-5 cmH2O; titrate to clinical response (target RR <25, pH >7.35, improved consciousness)",
+              "use_case": "First-line treatment for hypercapnic respiratory failure in AECB when pH <7.35 and pCO2 >6 kPa; reduces need for intubation by 50%; reduces ICU mortality; evidence-based and highly recommended by GOLD and BTS guidelines; most effective when started early (pH 7.25-7.35 — better outcomes than pH <7.25)",
+              "mechanism": "IPAP: provides pressure support during inspiration — reduces work of breathing and helps overcome auto-PEEP; EPAP: prevents alveolar collapse and improves FRC; overall reduces respiratory muscle fatigue and improves CO2 clearance",
+              "evidence": "Brochard et al. NEJM 1995: NIV reduced intubation rate from 74% to 26% in AECOPD with respiratory failure; reduces in-hospital mortality by 50%; reduces 2-month mortality",
+              "contraindications_for_NIV": ["Respiratory arrest or arrest imminent (needs intubation)", "GCS <8 / unable to maintain airway", "Uncooperative patient who cannot tolerate mask", "Vomiting with aspiration risk (use airway protection/intubation)", "Severe facial trauma or burns", "Massive haemoptysis"],
+              "note": "If NIV failing (pH <7.25 despite optimal NIV, worsening consciousness) — escalate to invasive mechanical ventilation or consider ceiling of treatment discussion"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Nutrition plays a critically important but often overlooked role in bronchitis management — particularly in chronic bronchitis and COPD. Acute viral bronchitis: nutritional support assists immune function and recovery. Chronic bronchitis/COPD: malnutrition (cachexia) is extremely common and independently predicts worse outcomes and higher mortality. Up to 40% of outpatients and 70% of hospitalised COPD patients have significant nutritional depletion. Additionally, dietary patterns influence airway inflammation, antioxidant defences, and respiratory muscle strength — key factors in both acute and chronic bronchitis.",
+      "nutritional_principles_by_form": {
+        "acute_bronchitis": "Focus on immune support, adequate hydration (thins mucus), and foods that soothe inflamed airways; avoid foods that thicken mucus or irritate airways",
+        "chronic_bronchitis_copd": "Maintain healthy body weight (both underweight AND obesity are harmful); adequate protein intake (preserves respiratory muscle mass); anti-inflammatory Mediterranean-style diet; adequate micronutrients (Vitamin D, Vitamin C, antioxidants); appropriate carbohydrate-fat ratio (lower carbohydrate reduces CO2 production from metabolism — important in CO2 retainers); small frequent meals (large meals cause diaphragmatic elevation worsening dyspnoea)"
+      },
+      "recommended_foods": [
+        {
+          "category": "Hydration — The Most Immediate Dietary Intervention in Acute Bronchitis",
+          "evidence": "Adequate hydration reduces sputum viscosity, improves mucociliary transport, and facilitates expectoration — critical for recovery from acute bronchitis",
+          "items": [
+            {
+              "food": "Warm water with honey and lemon",
+              "benefit": "Most evidence-based home remedy for bronchitis cough; honey: demulcent (soothes inflamed mucosa), antimicrobial (hydrogen peroxide, methylglyoxal), antioxidant; lemon: Vitamin C (immune support), acidifies sputum slightly improving expectoration; warmth: thins mucus, soothes bronchial irritation, induces mild bronchodilation",
+              "frequency": "3-5 times daily during acute illness; as needed for chronic cough"
+            },
+            {
+              "food": "Ginger tea (Adrak chai — Indian style or plain ginger tea)",
+              "benefit": "6-gingerol and 6-shogaol — anti-inflammatory (COX-2 inhibition); bronchodilatory effect (relaxes airway smooth muscle in vitro); antiemetic (useful when cough triggers vomiting); mucolytic effect (loosens mucus); antiviral properties (inhibits rhinovirus and RSV attachment in vitro); 'adrak-tulsi chai' (ginger-holy basil tea) — traditional Indian remedy with convergent scientific rationale",
+              "frequency": "3-5 cups daily during acute bronchitis; 1-2 cups daily for chronic cough"
+            },
+            {
+              "food": "Tulsi (Holy Basil — Ocimum sanctum) tea",
+              "benefit": "Eugenol and ursolic acid — anti-inflammatory and antimicrobial; expectorant properties; adaptogenic (reduces stress-related immune suppression); bronchodilatory effects (in animal studies); Tulsi tea is a culturally significant traditional remedy in India with growing scientific support; reduces cough frequency and severity in small clinical trials",
+              "frequency": "2-3 cups daily during acute and chronic bronchitis"
+            },
+            {
+              "food": "Warm soups — chicken or vegetable broth, rasam, kadhi",
+              "benefit": "Steam from warm soup directly inhales into airways (mini steam inhalation with each sip); hot liquid loosens mucus; chicken broth: cysteine (mucolytic amino acid); sodium; anti-inflammatory N-acetyl cysteine precursors; rasam (South Indian): black pepper, turmeric, tamarind — multiple anti-inflammatory and mucolytic compounds; decongestant effect from vapour; provides nutrition during illness when appetite poor",
+              "frequency": "2-4 times daily during acute illness"
+            }
+          ]
+        },
+        {
+          "category": "Anti-Inflammatory Foods (Benefit Chronic Bronchitis and Reduce AECB Frequency)",
+          "rationale": "Chronic bronchitis is characterised by persistent neutrophilic and oxidative airway inflammation — anti-inflammatory dietary patterns (Mediterranean diet, DASH diet) have been associated with slower FEV1 decline and reduced COPD exacerbations in large epidemiological studies",
+          "items": [
+            {
+              "food": "Turmeric (Haldi) with black pepper",
+              "benefit": "Curcumin — most potent natural NF-κB inhibitor (NF-κB drives airway inflammation in COPD); inhibits neutrophil chemotaxis; reduces IL-8, TNF-alpha, MMP-12 (elastase — causes emphysematous tissue destruction); antioxidant; reduces airway hyperresponsiveness; black pepper (piperine) enhances curcumin bioavailability by 20-fold (otherwise very poorly absorbed)",
+              "frequency": "Daily in food; turmeric golden milk (haldi doodh) at bedtime; use with black pepper — both essential"
+            },
+            {
+              "food": "Fatty fish (salmon, mackerel, sardines, hilsa — Ilish)",
+              "benefit": "Omega-3 fatty acids (EPA and DHA) — reduce leukotriene B4 (LTB4 — potent neutrophil chemoattractant in COPD airways); reduce IL-6 and TNF-alpha; improve alveolar macrophage function; epidemiological evidence: high fish consumption associated with slower FEV1 decline and reduced COPD risk; anti-inflammatory prostaglandin E3 production",
+              "frequency": "2-3 times per week"
+            },
+            {
+              "food": "Berries (blueberries, pomegranate, amla/Indian gooseberry)",
+              "benefit": "Polyphenols (quercetin, resveratrol, ellagic acid) — antioxidant, anti-inflammatory; quercetin inhibits histamine release (antihistaminic); resveratrol activates SIRT1 deacetylase (deacetylates and silences inflammatory gene expression — impaired in COPD); amla: richest food source of Vitamin C; reduces airway oxidative stress",
+              "frequency": "Daily as fruit or juice"
+            },
+            {
+              "food": "Dark leafy vegetables (palak/spinach, methi, sarson ka saag)",
+              "benefit": "Magnesium (bronchodilatory — IV magnesium sulphate used in acute severe asthma; dietary magnesium associated with better lung function in population studies); folate; Vitamin K; Vitamin C; antioxidants; carotenoids",
+              "frequency": "Daily — integral part of Indian diet already"
+            },
+            {
+              "food": "Garlic and onion",
+              "benefit": "Allicin, quercetin, thiosulfinates — anti-inflammatory, antiviral, antibacterial; garlic reduces susceptibility to common cold (Cochrane: garlic reduces cold incidence); quercetin in onion inhibits histamine release; flavonoids reduce airway hyperresponsiveness",
+              "frequency": "Daily in cooking"
+            }
+          ]
+        },
+        {
+          "category": "High-Antioxidant Foods (Protect Against Oxidative Damage in COPD)",
+          "rationale": "Cigarette smoke and chronic airway inflammation generate massive oxidative stress in COPD airways — the antioxidant defence system (glutathione, superoxide dismutase, catalase) is overwhelmed; dietary antioxidants supplement these defences",
+          "items": [
+            {
+              "food": "Amla (Indian Gooseberry) — the supreme Indian antioxidant food",
+              "benefit": "600-900 mg Vitamin C per 100g (the highest Vitamin C food); tannins, gallic acid, ellagic acid (powerful antioxidants); Emblicanin A and B (potent free radical scavengers); enhances natural killer cell activity; regenerates Vitamin E (synergistic antioxidant pair); clinical trials show amla reduces oxidative stress markers in respiratory disease",
+              "frequency": "1-2 amla daily; amla murabba, raw, or juice (diluted)"
+            },
+            {
+              "food": "Vitamin C-rich foods (guava, papaya, kiwi, citrus)",
+              "benefit": "Vitamin C is the primary aqueous antioxidant in respiratory tract lining fluid; deficiency associated with worse COPD outcomes; low Vitamin C intake associated with higher FEV1 decline in large cohort studies; 200 mg/day from food is achievable and associated with optimal lung function",
+              "frequency": "Daily — wide variety of sources"
+            },
+            {
+              "food": "Nuts and seeds (almonds, walnuts, sunflower seeds)",
+              "benefit": "Vitamin E (fat-soluble antioxidant — protects cell membranes from lipid peroxidation); selenium (deiodinase cofactor AND glutathione peroxidase cofactor — antioxidant); magnesium (bronchodilatory); healthy fats (anti-inflammatory); protein (supports respiratory muscle mass in COPD); high energy density for COPD cachexia",
+              "frequency": "Daily handful as snack — particularly important in COPD for energy density"
+            }
+          ]
+        },
+        {
+          "category": "High-Energy, High-Protein Foods — Critical in COPD Cachexia",
+          "rationale": "COPD cachexia (involuntary weight loss) affects up to 40% of COPD patients; low BMI (<18.5) is an independent predictor of mortality in COPD; increased respiratory work of breathing raises resting energy expenditure by 15-25%; dyspnoea reduces appetite and meal size (breathless while eating); malnutrition worsens respiratory muscle weakness — creating a vicious cycle",
+          "items": [
+            {
+              "food": "Paneer (Indian cottage cheese)",
+              "benefit": "High-quality complete protein; calcium; phosphorus; casein (slow-release protein — ideal for maintaining positive nitrogen balance overnight); high energy density; soft and easy to eat without excessive dyspnoea",
+              "frequency": "Daily in COPD patients with low BMI"
+            },
+            {
+              "food": "Eggs",
+              "benefit": "Complete protein (all essential amino acids); leucine (key trigger for muscle protein synthesis — prevents muscle wasting); Vitamin D; selenium; B12; easy to prepare and eat; versatile",
+              "frequency": "1-2 eggs daily in COPD"
+            },
+            {
+              "food": "Mung beans and lentils (moong dal, masoor)",
+              "benefit": "Plant protein; B vitamins; potassium; magnesium; antioxidants; low glycaemic index (avoids CO2 spike from rapid carbohydrate metabolism); soft and easy to eat; economical",
+              "frequency": "Daily as dal in Indian diet"
+            },
+            {
+              "food": "Avocado (Butter fruit)",
+              "benefit": "Monounsaturated fatty acids (anti-inflammatory); very high energy density (high fat — important for COPD energy needs); low carbohydrate (reduces CO2 production from metabolism); potassium; folate; Vitamin E",
+              "frequency": "3-4 times per week in COPD cachexia — excellent calorie-dense food"
+            }
+          ]
+        },
+        {
+          "category": "Low-Carbohydrate, Higher-Fat Dietary Approach (for CO2 Retainers)",
+          "rationale": "Carbon dioxide (CO2) is the metabolic byproduct of carbohydrate and fat oxidation. Carbohydrates generate MORE CO2 per oxygen consumed (respiratory quotient RQ = 1.0) compared to fats (RQ = 0.7). In patients with chronic CO2 retention (type 2 respiratory failure in severe COPD), a high-carbohydrate diet increases CO2 production, worsening hypercapnia. A lower-carbohydrate, higher-fat diet reduces CO2 load and may improve gas exchange.",
+          "practical_advice": [
+            "Replace large portions of rice, bread, and potatoes with higher-fat alternatives (olive oil, nuts, avocado, full-fat dairy) in severe hypercapnic COPD",
+            "Small frequent meals (5-6 per day instead of 3 large) — large meals elevate diaphragm, causing worsening breathlessness in COPD; small meals avoid post-meal dyspnoea",
+            "Main protein source: lean meat, fish, eggs, paneer — lower carbohydrate, adequate protein",
+            "Consult dietitian for severe malnutrition or severe COPD — individualised dietary plan"
+          ]
+        }
+      ],
+      "foods_to_limit_or_avoid": [
+        {
+          "food": "Excessive Dairy Products (Acute Bronchitis — Traditional Advice)",
+          "reason": "Traditional belief that dairy thickens mucus is partly supported: casomorphin (a peptide from casein in cow's milk) may increase mucus production in some individuals; milk may increase perceived mucus thickness; however, evidence is not universal — if dairy does not worsen symptoms for an individual, no need to restrict.",
+          "recommendation": "Reduce cold dairy (cold milk, ice cream) during acute bronchitis if it seems to worsen mucus or cough; warmed milk with turmeric (haldi doodh) is tolerable for most; yogurt (probiotic) is generally beneficial and does not worsen mucus"
+        },
+        {
+          "food": "Cold Beverages and Ice Cream",
+          "reason": "Cold air and cold beverages trigger airway hyperresponsiveness and bronchospasm in bronchitis — cold receptors in the larynx and trachea trigger cough reflex and bronchospasm; cold liquids also suppress mucociliary function temporarily",
+          "recommendation": "Prefer warm or room-temperature beverages during acute illness; avoid cold drinks from refrigerator; avoid ice cream during bronchitis"
+        },
+        {
+          "food": "Cigarettes, Bidis, and All Tobacco Products",
+          "reason": "The most important dietary and lifestyle avoidance in bronchitis — smoking is the primary cause of chronic bronchitis and the most important preventable factor worsening all forms of bronchitis. Even one cigarette acutely increases airway resistance, impairs mucociliary clearance, and triggers bronchospasm. Each cigarette smoked during acute bronchitis prolongs illness and recovery.",
+          "recommendation": "STOP SMOKING COMPLETELY — this is the single most important intervention; use combination NRT + behavioral support + varenicline if needed; every GP appointment for bronchitis is an opportunity for cessation counselling (ABC approach: Ask, Brief advice, Cessation support)"
+        },
+        {
+          "food": "Fried and Processed Foods",
+          "reason": "Trans fats and saturated fats promote systemic and airway inflammation (increase IL-6, CRP, and NF-κB activity); contribute to obesity which worsens breathlessness (abdominal fat restricts diaphragm descent); processed foods often high in sodium (water retention worsens airway oedema)",
+          "recommendation": "Replace with olive oil, mustard oil, or ghee in moderation; bake or steam rather than deep-fry"
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Alcohol impairs mucociliary function (reduces ciliary beat frequency — essential for clearing bronchial mucus); impairs alveolar macrophage function (reduces bacterial killing); dehydrating (worsens mucus viscosity); interacts with many bronchitis medications (theophylline clearance altered; respiratory depression with sedatives); worsens GORD (reflux-related cough)",
+          "recommendation": "Reduce or eliminate alcohol during acute illness; moderate consumption (within guidelines) in chronic stable COPD; avoid completely if on sedatives or theophylline"
+        },
+        {
+          "food": "Excessive Salt",
+          "reason": "High dietary sodium promotes airway hyperresponsiveness in susceptible individuals; contributes to systemic hypertension and fluid retention (worsens cor pulmonale oedema in COPD); high-sodium processed foods also contain preservatives that may trigger bronchospasm in sensitive patients (sulfites in wine and dried fruits)",
+          "recommendation": "Reduce processed food and added salt; use iodised salt in moderation in cooking"
+        }
+      ],
+      "steam_inhalation": {
+        "description": "A widely used traditional and medically-endorsed home treatment for bronchitis — inhaling steam from hot water directly into the airways",
+        "benefit": "Hydrates and warms dry inflamed airways; loosens thick tenacious mucus making it easier to cough up; temporary relief of nasal congestion; adding eucalyptus oil (nilgiri tel) or Vicks VapoRub provides additional menthol-mediated cooling sensation and mild decongestant effect; the sense of relief is significant for patient comfort",
+        "method": "Fill bowl with very hot (not boiling) water; optionally add 2-5 drops of eucalyptus essential oil or ½ teaspoon ajwain (carom seeds); drape towel over head and bowl creating a tent; breathe in steam slowly and deeply for 5-10 minutes; repeat 2-3 times daily",
+        "cautions": "Severe burn risk in children under 5 years — DO NOT USE steam inhalation in young children; use cool-mist humidifier instead; never use boiling water; never use in asthmatics (steam may trigger bronchospasm in some)"
+      },
+      "sample_meal_plan": {
+        "acute_bronchitis": {
+          "principle": "Easy to eat, immune-supporting, warm, hydrating foods; avoid cold, fried, and mucus-thickening foods",
+          "morning": "Warm water with honey and lemon (on waking); adrak-tulsi chai (ginger-holy basil tea); 1-2 amla (whole or juice)",
+          "breakfast": "Moong dal khichdi with minimal spice and a little ghee; OR plain daliya (broken wheat porridge); OR soft idli with thin sambar (no heavy chutney); avoid cold milk and cereal",
+          "mid_morning": "Warm turmeric milk (haldi doodh) with black pepper and ginger; ripe banana",
+          "lunch": "Chicken or vegetable rasam (South Indian — pepper, tamarind, tomato — excellent expectorant and bronchodilator); plain steamed rice; boiled egg; dal",
+          "afternoon": "Steam inhalation (5-10 minutes); ginger tea with honey",
+          "dinner": "Clear chicken broth; khichdi or soft rice with dal; steamed vegetables; NO cold drinks, ice cream, or fried food",
+          "bedtime": "Warm haldi doodh (turmeric milk); 1 teaspoon honey"
+        },
+        "chronic_bronchitis_copd": {
+          "principle": "High energy (for cachexia prevention), anti-inflammatory, small frequent meals, adequate protein",
+          "early_morning": "Warm water; 1-2 walnuts and almonds (Vitamin E, omega-3, energy)",
+          "breakfast": "Eggs (scrambled or boiled) with whole wheat toast and avocado/butter; or moong dal chilla (protein-rich pancake); small cup of tea (not too strong)",
+          "mid_morning": "Amla murabba (1-2); handful mixed seeds (pumpkin, sunflower); coconut water",
+          "lunch": "Fish curry (salmon or mackerel — omega-3) or chicken; dal; brown rice or 1-2 roti; cooked vegetables with haldi; curd (probiotic)",
+          "afternoon": "Paneer cubes or nuts; ginger tea",
+          "dinner": "Lighter meal — moong dal soup; vegetable khichdi; boiled vegetables; do NOT eat large heavy meal (worsens dyspnoea from stomach distension)",
+          "bedtime": "Warm haldi doodh; avoid heavy food within 2-3 hours of sleep (GORD worsens cough)"
+        }
+      }
+    },
+
+    "lifestyle_management": {
+      "smoking_cessation": {
+        "overview": "The single most important lifestyle intervention — in chronic bronchitis, smoking cessation at ANY stage of disease halves the annual rate of FEV1 decline. In acute bronchitis, continuing to smoke dramatically prolongs illness duration and increases the risk of developing COPD with repeated infections. Smoking cessation is the ONLY intervention proven to reduce long-term mortality in COPD.",
+        "brief_advice_abc": {
+          "A": "ASK — Ask about smoking at every clinical encounter ('Do you currently smoke?')",
+          "B": "BRIEF ADVICE — Give personalised, non-judgmental brief advice ('The most important thing for your breathing is to stop smoking — can we discuss how I can help?')",
+          "C": "CESSATION SUPPORT — Offer referral to stop smoking service; prescribe NRT, varenicline, or bupropion; arrange follow-up; celebrate successes"
+        },
+        "practical_strategies": [
+          "Set a definite quit date — within 2 weeks of making the decision; do NOT taper (cold turkey with medication support is more effective than gradual reduction without medication)",
+          "Combination approach most effective: medication (varenicline or combination NRT) + behavioural support (counselling, apps, support group) doubles quit rates over medication alone",
+          "Identify triggers and high-risk situations — develop specific plans for each trigger (tea break: replace cigarette with walk; alcohol: avoid for first month; stress: alternative coping strategy)",
+          "Remove all tobacco products and ashtrays from home, car, and workplace",
+          "Ask family members and housemates to support quit attempt — ideally quit together",
+          "iQuit (India): free government cessation helpline and app; NCDC quit tobacco programme",
+          "Avoid situations with heavy smokers (parties, certain social contexts) for first 2-3 months — strongest cravings in first weeks; 'delay-distract-deep-breathe' technique for urges",
+          "Physical activity reduces cravings (5-minute walk reduces cigarette craving intensity for 50 minutes — 'the 5-minute rule')"
+        ]
+      },
+      "air_quality_and_pollution": {
+        "overview": "Air quality profoundly affects both acute bronchitis frequency and chronic bronchitis progression — particularly in India with the world's highest levels of outdoor air pollution in many cities. Practical steps to reduce pollution exposure:",
+        "indoor_measures": [
+          "Replace biomass cooking fuels (wood, dung, coal, crop residue) with LPG, piped gas, or electric cooking — the Indian government Pradhan Mantri Ujjwala Yojana scheme provides subsidised LPG connections; this SINGLE change can halve COPD risk in rural women",
+          "Ensure adequate kitchen ventilation — extractor fan or cross-ventilation; cook with doors and windows open whenever possible",
+          "Install HEPA air purifier in bedroom (where most time is spent sleeping) — removes PM2.5, PM10, and allergens; HEPA-grade filters remove >99.97% of particles >0.3 microns; most important investment for COPD patients in polluted Indian cities",
+          "Avoid incense sticks (agarbatti), mosquito coils, and room freshener sprays indoors — these are significant sources of indoor PM2.5 and VOCs that worsen bronchitis",
+          "Ban smoking inside the home — second-hand smoke causes bronchitis in children and non-smoking family members; even one smoker indoors significantly worsens COPD in cohabitants",
+          "Regular damp dusting and vacuuming (HEPA vacuum) to reduce house dust mite allergen"
+        ],
+        "outdoor_measures": [
+          "Monitor local AQI (Air Quality Index) daily — use apps like Safar-Air, IQAir, or CPCB Sameer app (India); reduce outdoor activity on high-pollution days (AQI >150)",
+          "Schedule outdoor exercise and activities in early morning (before traffic peak — lower PM2.5) or in parks away from main roads",
+          "Use N95 respirator masks when outdoors in high-pollution conditions (Delhi winter smog, crop burning season October-November) — N95 filters 95% of PM2.5; surgical masks provide minimal PM2.5 protection",
+          "Keep car windows closed in heavy traffic; use car air recirculation setting (NOT fresh air intake) in traffic jams — this reduces interior PM2.5 by up to 75%",
+          "Ensure vaccinations are current — influenza and pneumococcal vaccinations reduce severity of pollution-triggered exacerbations"
+        ]
+      },
+      "pulmonary_rehabilitation": {
+        "overview": "Pulmonary rehabilitation (PR) is one of the most evidence-based and cost-effective interventions for COPD — a structured exercise training programme combined with education and psychosocial support. PR is not available in all centres in India but is expanding rapidly.",
+        "components": [
+          "Aerobic exercise training — walking, cycling, swimming, treadmill; intensity at 60-80% of maximum; typically 3-5 sessions per week for 6-8 weeks minimum",
+          "Resistance training — upper and lower limb exercises to reverse peripheral muscle deconditioning (skeletal muscle dysfunction is a major systemic manifestation of COPD)",
+          "Breathing retraining — pursed-lip breathing (slows expiration, prevents dynamic airway collapse); diaphragmatic breathing technique",
+          "Airway clearance techniques — Active Cycle of Breathing (ACBT): breathing control → thoracic expansion exercises → forced expiration technique (huff coughing); postural drainage (gravity-assisted drainage for productive bronchitis with large sputum volumes)",
+          "Education — disease understanding; inhaler technique assessment and correction (majority of COPD patients use inhalers incorrectly); smoking cessation reinforcement; exacerbation action plan; advance care planning for severe disease",
+          "Nutritional and psychological support"
+        ],
+        "evidence": "Multiple Cochrane reviews: PR reduces dyspnoea, increases exercise capacity (6-minute walk test +50-100 metres), improves quality of life (SGRQ score), reduces hospitalisation for AECB by 33%, and reduces post-exacerbation re-hospitalisation by 50%. Effects persist for 12-24 months post-programme. Early PR within 4 weeks post-AECB hospitalisation is now strongly recommended.",
+        "home_exercise_programme": [
+          "Brisk walking: start with 5-10 minutes twice daily; increase by 5 minutes per week; target 30 minutes most days",
+          "Cycling (static or outdoor): excellent aerobic exercise with less lower limb impact; suitable for moderate-severe COPD",
+          "Arm exercises (shoulder raises, arm circles) — strengthen accessory muscles of respiration",
+          "Sit-to-stand exercises — strengthens quadriceps (major muscle wasting in COPD)",
+          "Yoga: Pranayama (breathing exercises) — anulom vilom, bhramari, kapalbhati (modified gentle version for COPD); stretching improves thoracic mobility; evidence for yoga improving quality of life in COPD"
+        ]
+      },
+      "breathing_exercises": {
+        "pursed_lip_breathing": {
+          "description": "Breathe in slowly through nose for 2 counts; purse lips as if about to blow out a candle; breathe out slowly through pursed lips for 4 counts (twice as long as inhalation)",
+          "benefit": "Slows respiratory rate; increases expiratory time; creates back-pressure that splints small airways open preventing dynamic collapse during expiration; reduces air trapping and hyperinflation; reduces sense of breathlessness; can be done anywhere during dyspnoea episodes",
+          "evidence": "Reduces dyspnoea score significantly; improves oxygen saturation during exercise in COPD"
+        },
+        "diaphragmatic_breathing": {
+          "description": "Lying on back with knees bent; place one hand on chest and one on abdomen; breathe in through nose — abdomen should rise (not chest); breathe out through pursed lips — abdomen falls; practice 5-10 minutes twice daily",
+          "benefit": "Retrains respiratory pattern to use diaphragm (most efficient respiratory muscle) rather than accessory muscles; reduces oxygen cost of breathing; improves gas exchange"
+        },
+        "active_cycle_of_breathing": {
+          "description": "(1) Breathing control: gentle relaxed breathing for 1 minute; (2) Thoracic expansion: 3-4 deep slow breaths with 3-second pause at peak inspiration (helps gas distribution); (3) Forced expiration technique (FET / huffing): gentle medium-volume huff — keep mouth and glottis open, contract abdominal muscles to force air out (as if trying to steam up glasses); much more effective and less bronchospasm-inducing than hard coughing",
+          "benefit": "Clears mucus from airways without causing bronchospasm or exhaustion; superior to coughing for clearing lower respiratory secretions; particularly valuable in chronic bronchitis and bronchiectasis with large daily sputum volumes"
+        }
+      },
+      "infection_prevention_and_exacerbation_management": {
+        "AECB_action_plan": "All COPD patients should have a personalised written exacerbation action plan: recognise early symptoms of AECB (increased dyspnoea, cough, sputum colour change); keep rescue salbutamol inhaler at home; keep pre-prescribed 'rescue pack' of oral prednisolone 30 mg × 5 days + appropriate antibiotic (doxycycline or amoxicillin); know when to call doctor; know emergency signs requiring immediate hospital attendance",
+        "hand_hygiene": "Regular handwashing with soap for 20 seconds — respiratory viruses spread by hand-to-mucous membrane contact; hand sanitiser (>60% alcohol) when soap unavailable",
+        "respiratory_hygiene": "Cover mouth and nose when coughing or sneezing (elbow not hand); dispose of used tissues immediately; avoid close contact with people who have colds or respiratory infections",
+        "vaccination": "Annual influenza vaccine and pneumococcal vaccine are the most important preventive measures for AECB and bronchitis in at-risk patients",
+        "sleep_position": "Sleep with head elevated (2-3 pillows or head of bed raised) — reduces nocturnal GORD and post-nasal drip (both worsen cough); also reduces nocturnal bronchospasm from acid aspiration"
+      }
+    },
+
+    "bronchitis_monitoring_plan": {
+      "note": "Monitoring plan varies dramatically between acute bronchitis (short-term, self-limiting) and chronic bronchitis/COPD (lifelong monitoring). Most acute bronchitis resolves without medical intervention. Chronic bronchitis requires regular scheduled follow-up to monitor progression, optimise therapy, and prevent exacerbations.",
+      "acute_bronchitis": {
+        "green_zone": {
+          "status": "Expected Recovery — Home Management",
+          "criteria": "Cough improving (though may still be present); temperature returning to normal; no difficulty breathing; able to eat and drink normally; sputum volume reducing; general wellbeing improving",
+          "action": "Continue supportive home care (fluids, honey, steam, paracetamol for fever); no antibiotics needed; reassure that cough may persist up to 3 weeks — this is NORMAL; return to work when fever-free and feeling well enough"
+        },
+        "yellow_zone": {
+          "status": "GP or Urgent Care Review Required",
+          "criteria": "Cough not improving after 7-10 days; fever not resolving; new breathlessness; coughing producing blood; returning or worsening symptoms after initial improvement; known COPD or asthma with worsening symptoms; high-risk individual (elderly, immunocompromised, known lung disease)",
+          "action": "Same-day GP review; chest X-ray to exclude pneumonia; consider antibiotics if features of bacterial infection or high-risk patient; spirometry if underlying COPD or asthma suspected"
+        },
+        "red_zone": {
+          "status": "Emergency Department or Call Emergency Services",
+          "criteria": [
+            "Difficulty breathing at rest; respiratory rate >25/min",
+            "Oxygen saturation <92% on pulse oximeter",
+            "Coughing significant blood (haematoptysis)",
+            "Confusion or altered consciousness",
+            "High fever >39°C with chest signs not responding to home care",
+            "Known COPD patient with severe worsening dyspnoea, confusion, or cyanosis",
+            "Infant with bronchiolitis showing respiratory distress (intercostal recession, nasal flaring, grunting)"
+          ]
+        }
+      },
+      "chronic_bronchitis_copd": {
+        "routine_monitoring": [
+          "Spirometry: baseline at diagnosis; annually to monitor FEV1 decline; after smoking cessation to demonstrate benefit",
+          "Pulse oximetry: at every appointment; SpO2 <92% at rest = assess for long-term oxygen therapy",
+          "Exacerbation frequency: document number of AECB per year; >2 per year = step up therapy; consider prophylactic azithromycin or roflumilast",
+          "Inhaler technique assessment: at every appointment — majority of patients have sub-optimal technique; recorrect each visit",
+          "Smoking status: document and actively support cessation at every consultation",
+          "COPD Assessment Test (CAT score) or mMRC dyspnoea scale: quantify symptom burden at each visit",
+          "6-minute walk test: annually in moderate-severe COPD — declines in distance predict hospitalisation and mortality",
+          "Body weight and BMI: quarterly in moderate-severe COPD — weight loss is a poor prognostic sign",
+          "Annual chest X-ray: baseline and when significant change in condition; not routine annual unless indicated",
+          "Blood eosinophil count: guides ICS use in COPD (eosinophils ≥300/mcL benefit most from ICS addition)",
+          "ECG: annually in severe COPD (cor pulmonale, arrhythmia screening)"
+        ]
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Pneumonia",
+        "description": "The most feared and common serious complication of acute bronchitis — bacterial superinfection descends from the bronchi into the alveoli causing lobar or bronchopneumonia. The same viruses causing bronchitis (influenza, RSV, adenovirus) damage bronchial epithelium and impair mucociliary clearance, allowing bacteria (Streptococcus pneumoniae, Staphylococcus aureus, Haemophilus influenzae) to colonise and infect the alveoli. Pneumonia presents with higher fever, pleuritic chest pain, focal crackles, and CXR consolidation — distinguishing it from bronchitis.",
+        "severity": "Moderate to Severe — requires specific antibiotic treatment; can be life-threatening in elderly, COPD, and immunocompromised",
+        "risk_factors_for_progression": "Age >65, COPD, diabetes, immunosuppression, smoking, alcoholism, aspiration risk",
+        "management": "Antibiotics (amoxicillin, co-amoxiclav, or macrolide/tetracycline for atypicals); CURB-65 score for hospitalisation decision; oxygen if SpO2 <94%; IV antibiotics and hospital admission for severe cases"
+      },
+      {
+        "complication": "COPD Development from Recurrent Acute Bronchitis",
+        "description": "Repeated episodes of acute bronchitis — particularly in smokers — cause cumulative irreversible remodelling of the airways. Each episode accelerates the progression from normal lung function through subclinical small airway disease to measurable COPD. Viral bronchitis in childhood (particularly RSV bronchiolitis, adenovirus) permanently impairs airway development, lowering the peak FEV1 attained — such individuals reach the COPD threshold much earlier than those with normal airway development.",
+        "severity": "Long-term — preventable with smoking cessation",
+        "management": "Smoking cessation; pneumococcal and influenza vaccination to reduce AECB frequency; spirometry in all adults with recurrent bronchitis and smoking history to detect early COPD"
+      },
+      {
+        "complication": "Cor Pulmonale (Right Heart Failure)",
+        "description": "Chronic hypoxia from advanced COPD/chronic bronchitis causes pulmonary arterial vasoconstriction → elevated pulmonary arterial pressure (pulmonary hypertension) → progressive right ventricular hypertrophy and dilation → right heart failure (cor pulmonale). Presents with ankle oedema, raised JVP, hepatomegaly, and worsening dyspnoea. ECG: P pulmonale, right axis deviation, right bundle branch block. CXR: enlarged pulmonary arteries.",
+        "severity": "Severe — significantly worsens COPD prognosis; median survival after diagnosis of cor pulmonale is 2-3 years",
+        "management": "Long-term oxygen therapy (LTOT — >15 hours per day at home) is the only treatment proven to reduce pulmonary hypertension and improve survival in cor pulmonale; diuretics for oedema; optimise COPD management; smoking cessation"
+      },
+      {
+        "complication": "Acute Respiratory Failure",
+        "description": "Type 1 (hypoxic — low PaO2, normal/low PaCO2) or Type 2 (hypercapnic — low PaO2 + high PaCO2) respiratory failure from severe AECB. Occurs when the respiratory muscles can no longer sustain adequate gas exchange despite maximum effort. Type 2 respiratory failure with CO2 narcosis (rising PaCO2 causes progressive sedation, confusion, and eventually coma) is particularly dangerous.",
+        "severity": "Life-threatening",
+        "management": "Controlled oxygen (SpO2 88-92% in COPD); NIV (BiPAP) for pH <7.35; invasive mechanical ventilation if NIV fails; ICU"
+      },
+      {
+        "complication": "Post-Infectious Reactive Airway Disease",
+        "description": "Transient airway hyperresponsiveness (increased sensitivity to bronchospasm triggers) persisting for weeks to months after viral bronchitis — even in individuals with no prior history of asthma. Known as 'post-infectious bronchial hyperresponsiveness' or 'cough-variant asthma'. Manifests as: persistent wheeze; episodic dyspnoea from minor triggers; prolonged cough beyond expected resolution. A small proportion of these individuals develop permanent asthma.",
+        "severity": "Mild to Moderate",
+        "management": "Short-acting bronchodilator (salbutamol inhaler) for bronchospasm episodes; short course ICS if severe and prolonged; spirometry with bronchodilator test; reassurance that it usually resolves within 6-8 weeks; review if persisting >3 months"
+      },
+      {
+        "complication": "Bronchiectasis",
+        "description": "Permanent abnormal dilation of the bronchi (bronchiectasis) from recurrent severe respiratory infections that destroy bronchial wall integrity. Particularly associated with: untreated pertussis, severe measles-related pneumonia, recurrent aspiration, cystic fibrosis, primary ciliary dyskinesia, immune deficiency. Chronic productive cough with large volumes of purulent sputum (>30 mL/day), recurrent pneumonias, and haemoptysis are characteristic. HRCT shows characteristic 'signet ring sign' (bronchus wider than adjacent artery).",
+        "severity": "Moderate to Severe — progressive; reduces life expectancy if severe",
+        "management": "Airway clearance techniques (ACBT, Flutter device, Acapella); physiotherapy; antibiotics for exacerbations (guided by sputum culture — often Pseudomonas); long-term azithromycin prophylaxis; pulmonary rehabilitation; surgery (resection) for localised severe bronchiectasis"
+      },
+      {
+        "complication": "Pertussis Complications",
+        "description": "Untreated or severe Bordetella pertussis infection can cause: pneumonia (secondary bacterial, particularly fatal in infants); hypoxic seizures from coughing bouts causing transient hypoxia; apnoea (breathing pauses — leading cause of pertussis death in infants); subconjunctival haemorrhage (from raised intracranial pressure during coughing paroxysms); rib fractures (from severe coughing in adults); urinary incontinence (stress from coughing); syncope (post-tussive).",
+        "severity": "Mild (adults) to Life-threatening (infants <3 months)",
+        "management": "Azithromycin early; supportive care; hospital admission for infants, severely ill adults, or complications; isolate; notify public health"
+      },
+      {
+        "complication": "COPD Cachexia and Skeletal Muscle Dysfunction",
+        "description": "Progressive involuntary weight loss and muscle wasting (sarcopenia) affecting up to 40% of COPD patients — a systemic manifestation of chronic inflammation, physical inactivity, oxidative stress, and hypoxia. Skeletal muscle wasting is an independent predictor of mortality in COPD, exercise intolerance, and impaired quality of life. Low BMI (<21) is associated with a 2-3 fold increase in COPD mortality.",
+        "severity": "Moderate to Severe (long-term)",
+        "management": "Nutritional assessment and support (dietitian referral); high-protein, energy-dense diet; pulmonary rehabilitation (resistance training rebuilds muscle mass); anabolic hormones (testosterone supplementation in deficient males with COPD — under specialist supervision); nutritional supplementation"
+      }
+    ],
+
+    "special_populations": {
+      "bronchitis_in_children": {
+        "key_points": [
+          "Acute bronchitis is extremely common in children — average 6-8 respiratory infections per year in preschool children; most are viral and self-limiting",
+          "RSV bronchiolitis (inflammation of small bronchioles — bronchioles not bronchi) is distinct from adult bronchitis: affects infants under 2 years; clinical features: wheeze, tachypnoea, intercostal recession, hyperinflation; managed supportively (oxygen, NG feeds, hydration); no evidence for bronchodilators, steroids, or antibiotics in most cases",
+          "Pertussis (whooping cough) is particularly dangerous in infants — can cause fatal apnoea; treat ALL suspected pertussis with azithromycin; report to public health; ensure household contacts vaccinated",
+          "Croup (laryngotracheobronchitis — usually parainfluenza virus): barking 'seal-like' cough, inspiratory stridor, hoarse voice; treat with oral dexamethasone 0.15 mg/kg; nebulised adrenaline for severe stridor; steroids reduce severity significantly",
+          "Antibiotics for acute bronchitis in children: NOT indicated for viral bronchitis; DO NOT prescribe without a specific reason (pertussis, Mycoplasma, or bacterial pneumonia)",
+          "Honey for cough: highly effective and safe in children over 12 months (NOT under 12 months — infant botulism risk); 1 teaspoon honey at bedtime reduces nocturnal cough comparably to dextromethorphan (RCT evidence)",
+          "Recurrent bronchitis in children: always investigate for: asthma (most common cause of recurrent cough — reversible wheeze on spirometry), cystic fibrosis (sweat test), immune deficiency, VUR and recurrent aspiration, and pertussis",
+          "Passive smoking: children in smoking households have 2-3 times higher bronchitis and respiratory infection rates; 'smoke-free home' advice is mandatory when a child is repeatedly presenting with bronchitis"
+        ]
+      },
+      "bronchitis_in_elderly": {
+        "key_points": [
+          "Elderly patients are at significantly higher risk of acute bronchitis progressing to pneumonia — impaired mucociliary clearance, decreased cough strength, reduced immunological reserves, and multiple comorbidities",
+          "COPD prevalence dramatically increases with age — over 20% of adults over 75 have COPD; often undiagnosed until an exacerbation or pneumonia occurs",
+          "Influenza in the elderly causes disproportionate mortality — annual influenza vaccination is critical; antiviral therapy (oseltamivir) should be given promptly in high-risk elderly with influenza",
+          "ACE inhibitor-related cough is very common in elderly (up to 15% of users) — always check medications in any elderly patient presenting with 'bronchitis'; substitute ARB (valsartan, losartan) if cough is from ACE inhibitor",
+          "Multiple medications in the elderly may interfere with bronchitis management: beta-blockers worsen bronchospasm in COPD (avoid non-selective — use cardioselective beta-1 selective agents like bisoprolol if essential); NSAIDs exacerbate heart failure and renal impairment; sedatives must be used with extreme caution (CO2 retention risk)",
+          "Inhaler technique: poor manual dexterity, cognitive impairment, and reduced inspiratory flow in elderly impair MDI use — use spacer devices (Aerochamber) with MDI, or switch to breath-actuated inhalers (Autohaler, Easybreath) or DPI with lower resistance (Respimat, Genuair)",
+          "Pneumococcal and influenza vaccination: both are critically important in elderly COPD — reduce AECB frequency and pneumonia risk; influenza vaccine reduces hospitalisation for acute respiratory illness by 40-50% in this age group"
+        ]
+      },
+      "bronchitis_in_pregnancy": {
+        "key_points": [
+          "Acute viral bronchitis in pregnancy: most cases are uncomplicated viral illness; increased risk of influenza severity (higher ICU admission and mortality in pregnant women); oseltamivir should be given promptly to pregnant women with suspected influenza (safe in all trimesters, risk-benefit clearly favours treatment)",
+          "Pertussis in pregnancy: diagnose and treat with azithromycin (safe in pregnancy); critically important for Tdap vaccination in third trimester (27-36 weeks) to protect neonate via passive antibody transfer before infant can be vaccinated",
+          "Antibiotics in pregnancy for bronchitis: only if specific indication (pertussis, Mycoplasma, bacterial pneumonia); safe antibiotics: amoxicillin, amoxicillin-clavulanate, azithromycin, cefalexin; AVOID: fluoroquinolones (fetal cartilage effects — avoid especially first trimester), tetracyclines (fetal bone and tooth development), chloramphenicol (neonatal grey baby syndrome)",
+          "Asthma in pregnancy: well-controlled asthma is essential — poorly controlled asthma causes preterm birth, IUGR, and pre-eclampsia; all regular asthma medications (ICS, LABA, salbutamol, montelukast) are safe; do NOT stop ICS in pregnancy (risk of asthma attack > theoretical risk of medication)",
+          "Inhalers in pregnancy: all standard bronchodilators and ICS are safe and should be continued; inhaled route means minimal systemic drug delivery to fetus",
+          "Chest physiotherapy: safe and effective for mucus clearance in chronic productive cough in pregnancy; positioned appropriately to avoid aortocaval compression in supine position"
+        ]
+      },
+      "bronchitis_in_immunocompromised": {
+        "key_points": [
+          "Immunocompromised patients (HIV/AIDS, post-transplant, chemotherapy, biologics) have impaired ability to fight respiratory infections and are at risk of unusually severe or prolonged bronchitis, unusual organisms, and rapid progression to pneumonia",
+          "Pneumocystis jirovecii pneumonia (PCP) — common in HIV/AIDS (CD4 <200); presents with gradual-onset dyspnoea, dry cough, and minimal chest signs; HRCT shows bilateral ground-glass opacity; treat with high-dose co-trimoxazole; prevent with co-trimoxazole prophylaxis",
+          "Cytomegalovirus (CMV) pneumonitis — transplant recipients on immunosuppression; diagnose with CMV PCR and bronchoscopy BAL; treat with IV ganciclovir",
+          "Fungal infections — Aspergillus, Cryptococcus in severely immunocompromised; invasive aspergillosis — fever, haemoptysis, pleural rub in neutropenic patients; diagnose with serum galactomannan and HRCT; treat with voriconazole",
+          "Lower threshold for hospital admission, chest X-ray, blood cultures, and bronchoscopy (BAL); early empirical antibiotics (including PCP prophylaxis); involve infectious disease specialist early"
+        ]
+      },
+      "occupational_and_pollution_bronchitis_india": {
+        "key_points": [
+          "India has specific high-risk populations for occupational and pollution-related bronchitis: coal miners in Jharkhand and Odisha (pneumoconiosis + bronchitis); brick kiln workers (silica, PM2.5); cotton textile workers in Gujarat and Maharashtra (byssinosis); crop burning season in Punjab, Haryana (October-November — acute severe air quality episodes causing AQI >1000 — hospitalisation spike for respiratory illness)",
+          "Biomass fuel cooking — 3 billion people globally including hundreds of millions in India cook on open fires; equivalent exposure to 40+ cigarettes per day; leading cause of COPD in non-smoking Indian rural women (15-40% of COPD in India attributable to biomass fuel); change to LPG under PM Ujjwala Yojana scheme is a priority public health intervention",
+          "Pradhan Mantri Ujjwala Yojana: free LPG connections for BPL households — transition from biomass to LPG reduces indoor PM2.5 by >70% and is associated with significant reduction in respiratory illness",
+          "Occupational health regulations: Factories Act 1948; Mines Act 1952 — require respiratory protective equipment, dust suppression, health surveillance; implementation is variable; chest X-ray every 1-2 years mandatory in high-risk occupations",
+          "National Clean Air Programme (NCAP) India: target 20-30% reduction in PM2.5 and PM10 by 2024 in 102 non-attainment cities — public health impact on reducing bronchitis burden"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Once annually before flu season (October-November in India, August-September for maximum immunity; available year-round)",
+        "reason": "Influenza is the single most common cause of severe acute bronchitis and AECB in COPD patients. Annual vaccination reduces: influenza bronchitis incidence by 50-70%; AECB triggered by influenza by 50%; influenza-related hospitalisations in COPD by 40-50%; influenza-related mortality in elderly COPD patients by 50%. GOLD guidelines: influenza vaccination is the MOST IMPORTANT vaccination for COPD. All patients with chronic bronchitis/COPD, elderly (>65), pregnant women, healthcare workers, and those with asthma should receive annual influenza vaccination.",
+        "effectiveness": "40-70% protective efficacy (varies with vaccine-strain match); significantly reduces severity even when not fully preventive",
+        "recommended_for": "All COPD patients; all patients with asthma; all adults >65; pregnant women (all trimesters); immunocompromised patients; healthcare workers; patients with chronic heart, kidney, or liver disease"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV15/PCV20 and PPSV23)",
+        "frequency": "PCV15 or PCV20: one-time dose; PPSV23: booster 5 years after first pneumococcal vaccine in high-risk groups",
+        "reason": "Streptococcus pneumoniae (pneumococcus) is the most common cause of bacterial pneumonia complicating acute bronchitis and AECB. Pneumococcal vaccination reduces community-acquired pneumonia (CAP) incidence in COPD patients by 24-64% (UK vaccination programme data); significantly reduces severe hospitalisation for respiratory illness. GOLD guidelines: pneumococcal vaccination recommended for all COPD patients.",
+        "recommended_for": "All COPD patients; all adults >65; adults with chronic heart, lung, liver, or kidney disease; immunocompromised patients; smokers",
+        "india_note": "Pneumococcal vaccination is available privately in India (not routinely included in Universal Immunisation Programme for adults); strongly recommended for all COPD patients; cost approximately Rs 3,000-5,000 per dose"
+      },
+      {
+        "vaccine": "Pertussis Vaccine (Tdap — Tetanus, Diphtheria, Pertussis Booster)",
+        "frequency": "Single booster dose (adults); every 10 years with tetanus booster; single dose in each pregnancy (27-36 weeks)",
+        "reason": "Pertussis immunity from childhood DTP vaccination wanes significantly by adolescence and adulthood — leaving adults susceptible to whooping cough. Adults are an important reservoir for transmission to unvaccinated infants (most vulnerable to fatal pertussis). Pregnant women: Tdap in third trimester (27-36 weeks) provides passive antibody transfer to neonate before infant vaccination is possible — the most effective strategy to protect neonates. Adults with chronic bronchitis: pertussis in COPD can be particularly severe; vaccination reduces risk and population transmission.",
+        "recommended_for": "All adults who did not receive Tdap as adolescent; all pregnant women in third trimester; household contacts of newborns (cocooning strategy); healthcare workers; close contacts of COPD patients",
+        "india_note": "Tdap (Boostrix, Adacel) available in India; not in national adult immunisation programme but highly recommended"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "frequency": "Primary series and boosters per national schedule",
+        "reason": "SARS-CoV-2 causes acute bronchitis ranging from mild to critical; COPD patients have significantly higher risk of severe COVID-19, hospitalisation, mechanical ventilation, and death. COVID-19 is a major trigger for AECB in COPD. Vaccination reduces: COVID-19 severity by 80-90% in vaccinated vs unvaccinated; COVID-19-related AECB; post-COVID persistent respiratory symptoms (Long COVID) — which includes prolonged cough, bronchospasm, and dyspnoea.",
+        "recommended_for": "All adults, with priority for: COPD; elderly; immunocompromised; chronic heart, kidney, or liver disease",
+        "india_note": "CoWIN platform India; free vaccination available nationally; multiple vaccine options (Covishield, Covaxin, Corbevax)"
+      },
+      {
+        "vaccine": "RSV Vaccine / Monoclonal Antibody (emerging — for high-risk populations)",
+        "frequency": "RSV vaccines: Abrysvo (Pfizer) and Arexvy (GSK) — approved 2023 for adults >60 years; single dose; may be re-evaluated annually",
+        "reason": "Respiratory Syncytial Virus (RSV) is an increasingly recognised major cause of severe acute bronchitis and exacerbations in elderly COPD patients — previously believed to affect only infants. RSV vaccination of adults >60 years and high-risk COPD patients reduces RSV-related LRTI hospitalisation significantly.",
+        "availability": "Newly available (2023-2024); availability and regulatory approval in India pending; likely to be incorporated into COPD vaccination recommendations",
+        "nirsevimab": "Monoclonal antibody (Beyfortus) for infants — provides RSV passive immunity for one season; highly effective at preventing RSV bronchiolitis hospitalisation; being introduced in high-income countries"
+      },
+      {
+        "vaccine": "Measles, Mumps, Rubella (MMR) — Measles component",
+        "reason": "Measles pneumonia and post-measles bronchitis are significant causes of permanent airway damage and bronchiectasis, particularly in children. Measles vaccination is critically important for preventing long-term respiratory complications. India's measles vaccination coverage has improved but outbreaks still occur.",
+        "recommendation": "Ensure all children receive 2 doses of MMR vaccine per national schedule; catch-up vaccination for unvaccinated adolescents and adults without documented measles immunity"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Cough lasting more than 3 weeks without improvement — investigate for pertussis (whooping cough), TB (India — cough >2 weeks + fever/weight loss/night sweats), Mycoplasma, asthma, COPD, GORD, lung cancer",
+      "Any blood in sputum (haemoptysis) — however small; always requires chest X-ray minimum; exclude lung cancer, TB, pulmonary embolism, bronchiectasis",
+      "Fever above 39°C with cough and breathlessness — chest X-ray to exclude pneumonia",
+      "Significant breathlessness — dyspnoea on minimal exertion or at rest is NOT normal with simple bronchitis; investigate for pneumonia, AECB, or new COPD",
+      "Oxygen saturation below 94% on pulse oximeter — requires medical assessment same day",
+      "Wheeze not resolving after 6-8 weeks following acute bronchitis — spirometry and assessment for asthma or COPD",
+      "Recurrent bronchitis (3+ episodes per year) — investigate for underlying asthma, COPD, immunodeficiency, structural lung disease, or TB",
+      "New dry cough in a patient on ACE inhibitor (ramipril, enalapril, lisinopril, perindopril) — ACE-inhibitor cough is very common (10-15%); switch to ARB (losartan, valsartan) under GP supervision",
+      "Chronic productive cough ('morning cough') in a smoker or bidi smoker over 40 years — spirometry to screen for COPD; early detection allows meaningful intervention",
+      "Child with post-tussive vomiting, paroxysmal coughing fits, or suspected contact with whooping cough — urgent GP assessment for pertussis",
+      "COPD patient with any worsening of usual symptoms — increased dyspnoea, increased sputum, change in sputum colour — AECB assessment and treatment",
+      "Known COPD patient with SpO2 <92% at rest — assessment for long-term oxygen therapy (LTOT)",
+      "Any worsening of chronic respiratory symptoms despite compliance with prescribed inhalers — GP review, inhaler technique assessment, and treatment escalation"
+    ],
+
+    "emergency_signs": [
+      "Severe dyspnoea at rest — unable to complete sentences; breathing with visibly laboured effort using neck and shoulder muscles — call emergency services (102/112)",
+      "Oxygen saturation below 88% on pulse oximeter — severe hypoxia; emergency oxygen and hospital",
+      "Cyanosis — blue lips or blue fingernails — severe oxygen deprivation; EMERGENCY",
+      "Confusion, altered consciousness, extreme drowsiness in a COPD patient — possible CO2 retention (type 2 respiratory failure / hypercapnic encephalopathy) — EMERGENCY; call 102/112",
+      "Respiratory rate above 30 breaths per minute with obvious breathing effort — impending respiratory failure",
+      "COPD patient with known severe disease (GOLD III-IV) with acute worsening — higher threshold for emergency care; do NOT give high-flow oxygen (may worsen CO2 retention) — controlled 24-28% oxygen via Venturi mask; call ambulance",
+      "Infant with RSV bronchiolitis showing: respiratory rate >60, severe chest recession (sternum pulling in), grunting, apnoea episodes, poor feeding, cyanosis — PAEDIATRIC EMERGENCY",
+      "Large haemoptysis (coughing more than a tablespoon of blood) — emergency, may indicate major airway bleeding from cancer or pulmonary embolism",
+      "Sudden severe chest pain with breathlessness — possible pneumothorax (spontaneous or in emphysematous COPD), pulmonary embolism, or myocardial infarction — EMERGENCY",
+      "Whooping cough in an infant (<6 months): apnoea (stopping breathing), turning blue during coughing, extreme coughing fits in a very young baby — call emergency services immediately; pertussis in infants under 6 months is potentially fatal"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is bronchitis and is it the same as a chest infection?",
+        "answer": "Bronchitis literally means inflammation of the bronchial tubes — the airways that carry air to your lungs. The most common cause (90%+) is a viral infection — the same viruses responsible for the common cold and flu infect the lower airways, causing a productive cough, chest tightness, and sometimes wheeze. 'Chest infection' is a lay term that covers both bronchitis (airways infected) and pneumonia (lung tissue infected). The crucial difference: bronchitis does NOT usually require antibiotics (it's viral), while pneumonia almost always does. The key distinguishing feature is that pneumonia typically causes high fever (>39°C), significant breathlessness, focal chest signs (crackle sounds in one area), and shows consolidation on chest X-ray — none of which are features of simple acute bronchitis."
+      },
+      {
+        "question": "Why won't my doctor give me antibiotics for bronchitis?",
+        "answer": "Over 90% of acute bronchitis is caused by viruses — and antibiotics have absolutely no effect on viruses. Giving antibiotics for viral bronchitis would be equivalent to treating a bruise with vitamin C — no benefit, but real risks. Multiple large clinical trials have shown that antibiotics for acute bronchitis reduce cough duration by only 6-12 hours at best — while causing significant side effects (diarrhoea, allergic reactions, C. difficile colitis) and driving antibiotic resistance. The yellow or green colour of your sputum does NOT mean you have a bacterial infection — it simply reflects the normal immune response (white blood cells colouring the mucus). The most important treatments are: adequate fluids (minimum 2L daily to thin mucus), honey for the cough, paracetamol for fever, and rest. Antibiotics ARE needed for: whooping cough, Mycoplasma pneumoniae, Chlamydophila pneumoniae, COPD exacerbations meeting criteria, and immunocompromised patients."
+      },
+      {
+        "question": "I've had a cough for 4 weeks — is this normal after bronchitis?",
+        "answer": "Yes, a cough lasting 3-4 weeks after viral bronchitis is common and does not necessarily mean you need antibiotics or have a serious illness. Viruses cause a state of airway hyperresponsiveness (temporary increased sensitivity of the airway cough receptors) that can persist for 4-8 weeks after the infection has cleared — every minor irritant triggers the cough reflex. Up to 50% of patients still have a cough 3 weeks after acute viral bronchitis. However, a cough lasting more than 4 weeks should be assessed by a doctor to rule out: pertussis (whooping cough — especially if coughing fits with post-tussive vomiting), Mycoplasma, new asthma or COPD, GORD (acid reflux), post-nasal drip, ACE-inhibitor side effect, and in India — ALWAYS tuberculosis (TB) if cough >2 weeks with fever, weight loss, or night sweats."
+      },
+      {
+        "question": "What is the difference between acute bronchitis and COPD/chronic bronchitis?",
+        "answer": "Acute bronchitis is a short-term (1-3 weeks) infection of the airways, most often viral, affecting otherwise healthy people of all ages. It resolves completely. Chronic bronchitis is an entirely different long-term disease — it is part of COPD (Chronic Obstructive Pulmonary Disease) and is defined as a productive cough persisting for at least 3 months per year for 2 consecutive years. It is caused by years of breathing tobacco smoke, bidi smoke, biomass cooking fuel (wood/dung chulha), or polluted air. Unlike acute bronchitis, chronic bronchitis causes permanent, irreversible damage to the airways and progressively worsening breathlessness. The most important treatment is stopping smoking or removing the cause — nothing else comes close to this in benefit. Inhalers (bronchodilators) and vaccinations are also essential."
+      },
+      {
+        "question": "Can I use steam inhalation at home for bronchitis?",
+        "answer": "Yes — steam inhalation is a safe and effective home remedy for adults with acute bronchitis. Fill a bowl with very hot (not boiling) water; optionally add 2-5 drops of eucalyptus (nilgiri) oil or a pinch of ajwain (carom seeds); drape a towel over your head creating a tent over the bowl; breathe in the steam slowly for 5-10 minutes. The warm moist air directly hydrates inflamed airways, loosens thick mucus, and provides immediate relief of congestion and chest tightness. It can be done 2-3 times daily. IMPORTANT SAFETY WARNING: Never use steam inhalation for children under 5 years old — the hot water and steam can cause serious burns. Use a cool-mist humidifier (which is completely safe) instead for young children. Also avoid steam in patients with severe asthma as steam can occasionally trigger bronchospasm."
+      },
+      {
+        "question": "How do I use an inhaler correctly? I never seem to get the right technique.",
+        "answer": "Poor inhaler technique is extremely common — studies show over 70% of patients use their inhalers incorrectly, significantly reducing effectiveness. For a standard pressurised MDI (pump inhaler) with a spacer device (Aerochamber/Volumatic): shake the inhaler; remove caps; attach to spacer; breathe out fully; place spacer mouthpiece in mouth; press the canister once; breathe in SLOWLY and DEEPLY (over 3-5 seconds); hold breath for 10 seconds; breathe out normally; wait 30-60 seconds before second puff. The spacer device is essential — it holds the medication cloud while you breathe in, allowing much better drug delivery than coordinating pressing and breathing simultaneously. Without a spacer, only 10-20% of the dose reaches your lungs; with a spacer, up to 50% does. Ask your doctor or pharmacist to demonstrate proper technique at each visit — it is one of the most impactful interventions in COPD and asthma management."
+      },
+      {
+        "question": "Is biomass cooking (chulha) really as harmful as smoking for lung health?",
+        "answer": "Yes — exposure to biomass cooking smoke (from burning wood, cow dung, crop residue, or coal on an open chulha) is one of the most serious and underrecognised respiratory health threats in India. The World Health Organization estimates that indoor air pollution from solid fuel cooking kills more than 4 million people annually worldwide — more than TB and malaria combined. Studies from India consistently show that women cooking on biomass chulhas for several hours daily have lung function equivalent to someone who has smoked a pack of cigarettes per day for 20 years. The particulate matter, carbon monoxide, nitrogen oxides, and polycyclic aromatic hydrocarbons in biomass smoke cause: chronic bronchitis, COPD, lung cancer, cardiovascular disease, and stunted lung development in children. Switching to clean cooking fuel (LPG, electric, biogas) can reverse or halt further lung damage. The Indian Government's Pradhan Mantri Ujjwala Yojana provides subsidised LPG connections to below-poverty-line households — transitioning families away from biomass cooking is a critical public health priority."
+      },
+      {
+        "question": "My child has been coughing non-stop in violent fits for 3 weeks and sometimes vomits after coughing. What could this be?",
+        "answer": "This description is HIGHLY SUSPICIOUS for whooping cough (pertussis — Bordetella pertussis infection). The paroxysmal coughing fits (sudden, uncontrollable, violent bouts of coughing), particularly with post-tussive vomiting (vomiting at the end of a coughing bout) and possibly a characteristic 'whoop' sound (high-pitched inspiratory sound after the coughing fit), are the classic features of pertussis. Take your child to a doctor immediately. Pertussis requires: specific antibiotic treatment (azithromycin — reduces spread to others); throat/nasopharyngeal swab PCR test for confirmation; notification to public health; all household contacts treated prophylactically; the child must be kept away from infants (who are most at risk of fatal pertussis) until completing 5 days of antibiotics. Check vaccination status — children may need a DTaP booster if due."
+      }
+    ],
+
+    "references": [
+      "National Institute for Health and Care Excellence (NICE) — Acute Cough (Bronchitis): Antimicrobial Prescribing (NG120, 2019)",
+      "NICE Clinical Guideline (NG115) — Chronic Obstructive Pulmonary Disease in Over 16s: Diagnosis and Management (2019, updated 2023)",
+      "Global Initiative for Chronic Obstructive Lung Disease (GOLD) — 2024 GOLD Report: Global Strategy for Prevention, Diagnosis and Management of COPD",
+      "British Thoracic Society (BTS) / SIGN — Management of Acute Exacerbations of COPD (2017)",
+      "British Thoracic Society — Guideline for Emergency Oxygen Use in Adult Patients (2017)",
+      "Brochard L et al. — Noninvasive Ventilation for Acute Exacerbations of COPD (NEJM 1995)",
+      "REDUCE Trial — Short-Term vs Long-Term Corticosteroids in AECOPD (Leuppi JD et al., JAMA 2013)",
+      "ALBERT Trial — Azithromycin for Prevention of Exacerbations of COPD (Albert RK et al., NEJM 2011)",
+      "UPLIFT Trial — Tiotropium in COPD (Tashkin DP et al., NEJM 2008)",
+      "EAGLES Trial — Neuropsychiatric Safety of Varenicline and Bupropion vs Nicotine Patch (Anthenelli RM et al., Lancet 2016)",
+      "Lung Health Study — Effect of Smoking Intervention and Use of Inhaled Anticholinergic Bronchodilator on Rates of Decline of FEV1 (Anthonisen NR et al., JAMA 1994)",
+      "PANTHEON Trial — NAC in Chinese COPD (Zheng JP et al., Lancet Respiratory Medicine 2014)",
+      "PEACE Trial — Carbocisteine in Chinese COPD (Zheng JP et al., Lancet 2008)",
+      "Paul IM et al. — Effect of Honey, Dextromethorphan, and No Treatment on Nocturnal Cough and Sleep Quality for Coughing Children (Archives of Pediatrics 2007)",
+      "Jepson RG et al. — Cranberries for Preventing UTI (Cochrane 2023) — cited for probiotic/immune analogy; relevant bronchitis reference: Cochrane Systematic Review on Honey for Acute Cough in Children and Adults (2018)",
+      "Indian Chest Society / National College of Chest Physicians India — COPD Management Guidelines for India (2013)",
+      "Ministry of Health and Family Welfare India — National Programme for Prevention and Control of Non-Communicable Diseases",
+      "WHO — Household Air Pollution and Health Fact Sheet (2023)",
+      "Pradhan Mantri Ujjwala Yojana — Clean Fuel for Better Life: Impact on Respiratory Health",
+      "UpToDate — Acute bronchitis in adults; Management of COPD; COPD exacerbations: management; Smoking cessation treatment"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-BRONCHITIS-019",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-05",
+      "last_updated": "2026-06-05",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is for educational and informational purposes for the MedoAir chatbot only. It does not replace professional medical advice, diagnosis, or treatment. Severe AECB with respiratory failure, haemoptysis, or oxygen saturation below 90% are medical emergencies requiring immediate hospital care. Never administer oxygen to known COPD patients without medical guidance (risk of worsening CO2 retention). Antibiotics should only be taken for bronchitis under medical supervision — inappropriate antibiotic use drives antimicrobial resistance.",
+      "tags": ["bronchitis", "acute bronchitis", "chronic bronchitis", "COPD", "AECB", "cough", "whooping cough", "pertussis", "Mycoplasma", "respiratory", "inhaler", "salbutamol", "tiotropium", "smoking cessation", "biomass fuel", "indoor air pollution", "mucolytic", "bronchodilator", "pulmonary rehabilitation", "spirometry", "medoair", "India", "GOLD", "COPD exacerbation"]
+    }
+  }
+}
