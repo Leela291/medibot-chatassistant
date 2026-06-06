@@ -1,4 +1,5 @@
 {
+
   "disease": {
     "id": "DIS-006",
     "name": "Food Poisoning",
@@ -1686,3 +1687,579 @@
     }
   }
 }
+=======
+  "meta": {
+    "title": "Food Poisoning Chatbot Dataset",
+    "description": "Comprehensive dataset on food poisoning with proper intent detection. Emergency responses are triggered ONLY when the user explicitly states a personal crisis — not for general informational queries.",
+    "version": "2.0-intent-aware",
+    "last_compiled": "2026",
+    "intent_detection_note": "The chatbot must classify user intent BEFORE responding. General symptom/cause/treatment questions always get informational answers. Emergency escalation is reserved for explicit crisis statements only."
+  },
+
+  "intent_classification": {
+    "description": "Classify every incoming message into one of these intents before generating a response.",
+    "intents": {
+      "INFORMATIONAL": {
+        "description": "User is asking a general knowledge question about food poisoning.",
+        "triggers": [
+          "What are the symptoms of food poisoning?",
+          "How does food poisoning spread?",
+          "What causes food poisoning?",
+          "How long does food poisoning last?",
+          "What is food poisoning?",
+          "How to prevent food poisoning?",
+          "What are the treatments for food poisoning?",
+          "Tell me about Salmonella",
+          "Explain food poisoning",
+          "symptoms of constipation",
+          "symptoms of typhoid"
+        ],
+        "response_type": "Factual, educational, friendly answer using dataset knowledge.",
+        "do_NOT_trigger_emergency": true
+      },
+      "PERSONAL_CONCERN": {
+        "description": "User suspects they personally have food poisoning but is not in immediate danger.",
+        "triggers": [
+          "I think I have food poisoning",
+          "I ate something bad",
+          "I've been vomiting since morning",
+          "I have diarrhea after eating out",
+          "Could this be food poisoning?",
+          "I feel nauseous after eating"
+        ],
+        "response_type": "Empathetic, practical advice. Suggest home care. Recommend seeing a doctor if symptoms are severe or prolonged.",
+        "do_NOT_trigger_emergency": true
+      },
+      "MEDICAL_EMERGENCY": {
+        "description": "User explicitly states a life-threatening situation requiring immediate help.",
+        "triggers": [
+          "I can't breathe",
+          "I'm collapsing",
+          "Someone is unconscious",
+          "I'm having a seizure",
+          "I think I'm dying",
+          "I swallowed poison",
+          "My child is not responding",
+          "I can't move my body",
+          "I need an ambulance"
+        ],
+        "response_type": "Emergency escalation with crisis resources.",
+        "trigger_emergency": true
+      }
+    },
+    "critical_rule": "NEVER trigger an emergency response for informational or educational questions. The words 'food poisoning', 'symptoms', 'vomiting', 'diarrhea' alone do NOT constitute an emergency."
+  },
+
+  "system_prompt_template": {
+    "description": "Use this as the base system prompt for your chatbot.",
+    "prompt": "You are a helpful food safety and health information assistant. Your role is to provide clear, accurate, and educational information about food poisoning, foodborne illnesses, symptoms, causes, prevention, and treatment.\n\nIMPORTANT RULES:\n1. For general questions about symptoms, causes, treatment, or prevention — always answer informatively and helpfully.\n2. Only trigger emergency guidance if the user EXPLICITLY states they or someone nearby is currently in a life-threatening situation (e.g., unconscious, unable to breathe, collapsing).\n3. Never escalate to emergency mode for educational or general health questions.\n4. If a user seems personally unwell but not in crisis, give practical advice and suggest consulting a doctor if symptoms are severe or persistent.\n5. Always be friendly, calm, and factual."
+  },
+
+  "response_templates": {
+    "informational_response": {
+      "format": "Answer directly and factually. Use clear sections if needed. End with a helpful follow-up offer.",
+      "example_trigger": "What are the symptoms of food poisoning?",
+      "example_response": "Food poisoning commonly causes: nausea and vomiting, diarrhea (sometimes bloody), abdominal pain and cramps, fever, headache, and fatigue. Symptoms usually start within a few hours to a few days after eating contaminated food and typically resolve within 1–3 days. Would you like to know about causes, treatment, or when to see a doctor?"
+    },
+    "personal_concern_response": {
+      "format": "Acknowledge concern, give practical home care advice, mention when to see a doctor.",
+      "example_trigger": "I think I have food poisoning",
+      "example_response": "I'm sorry you're feeling unwell. If you suspect food poisoning, the most important thing is to stay hydrated — sip water or an oral rehydration solution frequently. Rest and avoid solid food until vomiting settles, then try bland foods like toast or rice. See a doctor if you have a high fever, blood in your stool, diarrhea lasting more than 3 days, or signs of severe dehydration."
+    },
+    "emergency_response": {
+      "format": "Only shown when user explicitly describes a life-threatening situation.",
+      "example_trigger": "I can't breathe and I think I swallowed something poisonous",
+      "example_response": "This sounds like a medical emergency. Please call emergency services immediately:\n🇮🇳 India: Ambulance → 108 | General Emergency → 112\n🌍 International: Your local emergency number\n\nWhile waiting for help: keep the person calm, do not give food or water, and stay on the line with emergency services."
+    }
+  },
+
+  "knowledge_base": {
+
+    "overview": {
+      "definition": "Food poisoning (also called foodborne illness) is an infection or irritation of the digestive tract caused by consuming food or drinks contaminated with harmful bacteria, viruses, parasites, or toxins.",
+      "typical_course": "Most cases are acute (sudden onset, short duration), lasting less than a week and resolving without treatment.",
+      "global_burden": "The WHO estimates 600 million people fall ill from contaminated food each year, resulting in approximately 420,000 deaths annually.",
+      "us_burden": "About 48 million cases and 3,000 deaths annually in the United States."
+    },
+
+    "symptoms": {
+      "common": [
+        "Nausea",
+        "Vomiting",
+        "Diarrhea (watery or bloody)",
+        "Abdominal pain and cramps",
+        "Fever and chills",
+        "Headache",
+        "Fatigue and weakness"
+      ],
+      "onset": "Symptoms can begin 30 minutes to several weeks after eating contaminated food, depending on the pathogen.",
+      "duration": "Most mild cases resolve within 1–3 days. Severe infections may last a week or longer.",
+      "nervous_system_symptoms": {
+        "description": "Seen in serious cases such as botulism or shellfish poisoning.",
+        "symptoms": [
+          "Blurred vision",
+          "Muscle weakness or paralysis",
+          "Tingling or numbness of skin",
+          "Difficulty swallowing or breathing",
+          "Double vision"
+        ],
+        "action": "If nervous system symptoms occur, seek medical attention promptly."
+      },
+      "dehydration_symptoms": {
+        "adults": [
+          "Extreme thirst and dry mouth",
+          "Reduced urination or dark urine",
+          "Dizziness or lightheadedness",
+          "Fatigue",
+          "Sunken eyes or cheeks",
+          "Poor skin elasticity"
+        ],
+        "children": [
+          "No tears when crying",
+          "No wet diapers for 3+ hours",
+          "Lack of energy",
+          "Sunken eyes or cheeks",
+          "Dry mouth"
+        ]
+      }
+    },
+
+    "when_to_see_doctor": {
+      "adults": [
+        "High fever (above 38.5°C / 101.5°F)",
+        "Blood in vomit or stool",
+        "Diarrhea lasting more than 3 days",
+        "More than 6 loose stools in one day",
+        "Severe abdominal or rectal pain",
+        "Signs of dehydration",
+        "Nervous system symptoms",
+        "Mental confusion or unusual irritability",
+        "Unable to keep fluids down"
+      ],
+      "children": [
+        "Any fever in infants",
+        "Diarrhea lasting more than 1 day",
+        "Frequent vomiting",
+        "Signs of dehydration",
+        "Blood or pus in stool",
+        "Severe abdominal pain",
+        "Unusual drowsiness or unresponsiveness"
+      ],
+      "note": "Pregnant women, elderly adults, and immunocompromised individuals should consult a doctor earlier than otherwise healthy adults."
+    },
+
+    "causes": {
+      "main_categories": ["Bacteria", "Viruses", "Parasites", "Toxins/Chemicals"],
+      "bacteria": [
+        {
+          "name": "Salmonella",
+          "common_sources": ["Raw poultry", "Eggs", "Unpasteurized dairy", "Fresh produce"],
+          "symptoms": ["Diarrhea", "Fever", "Abdominal cramps"],
+          "onset": "6–48 hours",
+          "duration": "4–7 days"
+        },
+        {
+          "name": "Campylobacter",
+          "common_sources": ["Raw poultry", "Unpasteurized milk", "Contaminated water"],
+          "symptoms": ["Bloody diarrhea", "Fever", "Abdominal pain"],
+          "onset": "2–5 days",
+          "duration": "2–10 days"
+        },
+        {
+          "name": "E. coli (O157:H7)",
+          "common_sources": ["Undercooked ground beef", "Raw milk", "Fresh produce", "Contaminated water"],
+          "symptoms": ["Severe cramps", "Bloody diarrhea", "Vomiting"],
+          "onset": "3–4 days",
+          "serious_complication": "Hemolytic Uremic Syndrome (HUS) — kidney failure, especially in children"
+        },
+        {
+          "name": "Listeria monocytogenes",
+          "common_sources": ["Deli meats", "Soft cheeses", "Smoked seafood", "Raw sprouts"],
+          "high_risk_groups": ["Pregnant women", "Elderly", "Immunocompromised"],
+          "symptoms": ["Fever", "Muscle aches", "Meningitis in severe cases"],
+          "onset": "1–4 weeks",
+          "note": "Can grow in refrigerator. Can cause miscarriage or stillbirth in pregnant women."
+        },
+        {
+          "name": "Staphylococcus aureus",
+          "common_sources": ["Cream-filled pastries", "Salads", "Deli meats", "Dairy products"],
+          "symptoms": ["Sudden vomiting", "Nausea", "Abdominal cramps"],
+          "onset": "30 minutes – 6 hours",
+          "note": "Toxin is heat-stable — reheating does not make contaminated food safe."
+        },
+        {
+          "name": "Clostridium botulinum",
+          "common_sources": ["Improperly canned foods", "Honey (infant botulism)", "Vacuum-packed fish"],
+          "symptoms": ["Blurred vision", "Weakness", "Paralysis", "Difficulty breathing"],
+          "onset": "12–36 hours",
+          "severity": "Life-threatening. Medical emergency."
+        },
+        {
+          "name": "Clostridium perfringens",
+          "common_sources": ["Cooked meats", "Stews", "Gravies cooled too slowly"],
+          "symptoms": ["Diarrhea", "Abdominal cramps"],
+          "onset": "8–16 hours",
+          "duration": "Less than 24 hours"
+        },
+        {
+          "name": "Vibrio species",
+          "common_sources": ["Raw or undercooked shellfish", "Oysters"],
+          "symptoms": ["Diarrhea", "Vomiting", "Fever"],
+          "onset": "4 hours – 4 days"
+        },
+        {
+          "name": "Shigella",
+          "common_sources": ["Contaminated water", "Raw vegetables", "Infected food handlers"],
+          "symptoms": ["Bloody diarrhea", "Fever", "Abdominal cramps"],
+          "onset": "12–96 hours"
+        }
+      ],
+      "viruses": [
+        {
+          "name": "Norovirus",
+          "common_sources": ["Shellfish", "Salads", "Contaminated water", "Infected food handlers"],
+          "symptoms": ["Projectile vomiting", "Diarrhea", "Nausea", "Stomach cramps"],
+          "onset": "12–48 hours",
+          "duration": "1–3 days",
+          "note": "Most common cause of foodborne illness worldwide."
+        },
+        {
+          "name": "Hepatitis A",
+          "common_sources": ["Shellfish", "Contaminated water", "Raw produce"],
+          "symptoms": ["Fever", "Nausea", "Jaundice", "Fatigue", "Liver damage"],
+          "onset": "2–6 weeks",
+          "duration": "Weeks"
+        },
+        {
+          "name": "Rotavirus",
+          "common_sources": ["Contaminated food or water"],
+          "symptoms": ["Watery diarrhea", "Vomiting", "Fever"],
+          "high_risk_groups": ["Infants and young children"]
+        }
+      ],
+      "parasites": [
+        {
+          "name": "Giardia",
+          "common_sources": ["Contaminated water", "Raw produce"],
+          "symptoms": ["Watery diarrhea", "Bloating", "Nausea"],
+          "duration": "1–2 weeks"
+        },
+        {
+          "name": "Cryptosporidium",
+          "common_sources": ["Contaminated water", "Raw produce"],
+          "symptoms": ["Watery diarrhea"],
+          "duration": "2–4 days",
+          "note": "Resistant to chlorine. Dangerous in immunocompromised individuals."
+        },
+        {
+          "name": "Toxoplasma gondii",
+          "common_sources": ["Undercooked meat", "Cat feces", "Contaminated soil"],
+          "symptoms": ["Headache", "Blurred vision", "Eye pain"],
+          "note": "Dangerous during pregnancy — can cause congenital defects."
+        }
+      ],
+      "toxins_and_chemicals": [
+        {
+          "name": "Staphylococcal enterotoxin",
+          "note": "Heat-stable toxin. Reheating food does NOT destroy it."
+        },
+        {
+          "name": "Botulinum toxin",
+          "note": "Most potent natural toxin. Causes paralysis. Medical emergency."
+        },
+        {
+          "name": "Scombrotoxin (Histamine poisoning)",
+          "sources": ["Temperature-abused fish: tuna, mackerel, sardines"],
+          "symptoms": ["Flushing", "Rash", "Dizziness", "Diarrhea", "Vomiting"],
+          "note": "Cooking does not destroy histamine."
+        },
+        {
+          "name": "Ciguatoxin",
+          "sources": ["Large tropical reef fish"],
+          "symptoms": ["Numbness", "Muscle pain", "Temperature reversal sensation"]
+        },
+        {
+          "name": "Mycotoxins (Aflatoxins, Ochratoxin, Patulin)",
+          "sources": ["Mouldy grains", "Nuts", "Spices", "Apple juice"],
+          "effects": ["Liver damage", "Kidney damage", "Carcinogenic with long-term exposure"]
+        },
+        {
+          "name": "Pesticide residues",
+          "sources": ["Unwashed produce with excessive pesticide application"],
+          "symptoms": ["Weakness", "Blurred vision", "Diarrhea", "Muscle tremors"]
+        }
+      ]
+    },
+
+    "high_risk_foods": [
+      "Raw or undercooked poultry and meat",
+      "Raw or lightly cooked eggs",
+      "Raw or undercooked seafood and shellfish",
+      "Unpasteurized milk and dairy products",
+      "Soft cheeses (Brie, Camembert, feta)",
+      "Deli meats and hot dogs",
+      "Raw sprouts",
+      "Pre-packaged salads",
+      "Cooked rice left at room temperature",
+      "Improperly canned or preserved foods"
+    ],
+
+    "risk_groups": [
+      "Infants and young children",
+      "Pregnant women and their fetuses",
+      "Older adults (65+)",
+      "People with weakened immune systems",
+      "People with chronic illnesses (diabetes, kidney disease, liver disease)",
+      "Travelers to developing countries"
+    ],
+
+    "complications": {
+      "common": "Dehydration — the most frequent complication. Loss of fluids and electrolytes from vomiting and diarrhea.",
+      "serious": [
+        {
+          "name": "Hemolytic Uremic Syndrome (HUS)",
+          "cause": "E. coli O157:H7",
+          "description": "Destroys red blood cells and damages kidneys. Can cause acute kidney failure.",
+          "most_common_in": "Children under 5"
+        },
+        {
+          "name": "Guillain-Barré Syndrome",
+          "cause": "Often follows Campylobacter infection",
+          "description": "Immune system attacks nerves. Can cause paralysis."
+        },
+        {
+          "name": "Reactive Arthritis",
+          "cause": "Salmonella, Campylobacter, Shigella",
+          "description": "Joint pain and inflammation following infection."
+        },
+        {
+          "name": "Pregnancy complications",
+          "cause": "Listeria",
+          "description": "Miscarriage, stillbirth, preterm labour, or severe neonatal illness."
+        },
+        {
+          "name": "Irritable Bowel Syndrome (IBS)",
+          "description": "Can develop after severe foodborne infections."
+        }
+      ]
+    },
+
+    "treatment": {
+      "home_care": {
+        "most_important": "Rehydration — replace lost fluids and electrolytes.",
+        "fluids_for_adults": [
+          "Water",
+          "Oral rehydration solutions (ORS)",
+          "Diluted fruit juice",
+          "Clear broths",
+          "Sports drinks"
+        ],
+        "fluids_for_children": "Oral rehydration solution (Pedialyte or equivalent). Infants should continue breast milk or formula.",
+        "foods_to_eat": ["Toast", "Plain rice", "Bananas", "Boiled potatoes", "Plain crackers"],
+        "foods_to_avoid": [
+          "Dairy products (temporary lactose intolerance may occur)",
+          "Fatty or fried foods",
+          "Caffeinated drinks",
+          "Alcohol",
+          "Sugary drinks"
+        ]
+      },
+      "medications": {
+        "antidiarrheal": {
+          "examples": ["Loperamide (Imodium)", "Bismuth subsalicylate (Pepto-Bismol)"],
+          "caution": "Do NOT use if you have bloody diarrhea or high fever. Do NOT give to children without medical advice."
+        },
+        "antibiotics": {
+          "note": "Not required for most cases. Only prescribed by a doctor for specific severe bacterial infections.",
+          "examples": ["Azithromycin", "Ciprofloxacin", "Rifaximin (for traveler's diarrhea)"]
+        },
+        "probiotics": "May help shorten diarrhea duration. Consult a doctor before use."
+      },
+      "hospital_care": [
+        "Intravenous (IV) fluids for severe dehydration",
+        "Treatment for HUS or other serious complications",
+        "Antitoxin for botulism"
+      ]
+    },
+
+    "prevention": {
+      "the_4_core_principles": ["Clean", "Separate", "Cook", "Chill"],
+      "clean": [
+        "Wash hands with soap and water for at least 20 seconds before and after handling food",
+        "Wash all fruits and vegetables under running water",
+        "Sanitize cutting boards, utensils, and surfaces after each use"
+      ],
+      "separate": [
+        "Keep raw meat, poultry, seafood, and eggs away from ready-to-eat foods",
+        "Use separate cutting boards for raw meat and vegetables",
+        "Never reuse marinade from raw meat without boiling it first"
+      ],
+      "cook": [
+        "Cook poultry to internal temperature of 74°C (165°F)",
+        "Cook ground meat to 71°C (160°F)",
+        "Cook whole cuts of beef, pork, lamb to 63°C (145°F)",
+        "Cook fish and shellfish to 63°C (145°F)",
+        "Use a food thermometer — do not rely on colour alone"
+      ],
+      "chill": [
+        "Refrigerate perishable foods within 2 hours (1 hour if temperature is above 32°C)",
+        "Keep refrigerator at or below 5°C (41°F)",
+        "Thaw food safely: in refrigerator, cold water, or microwave — never at room temperature",
+        "Do not leave food in the temperature danger zone: 5°C–60°C (40°F–140°F)"
+      ],
+      "additional": [
+        "Avoid unpasteurized milk, cheese, and juices",
+        "Watch for food recalls and discard recalled items",
+        "Do not feed honey to infants under 12 months (risk of infant botulism)"
+      ],
+      "travelers_diarrhea_prevention": [
+        "Drink only bottled or treated water",
+        "Avoid ice made from tap water",
+        "Avoid street food and raw/undercooked meat or seafood",
+        "Peel fruits and vegetables yourself",
+        "Eat food that is served hot"
+      ]
+    },
+
+    "safe_cooking_temperatures": {
+      "poultry": "74°C (165°F)",
+      "ground_meat": "71°C (160°F)",
+      "whole_beef_pork_lamb": "63°C (145°F)",
+      "fish_and_seafood": "63°C (145°F)",
+      "eggs": "Cook until yolk and white are firm",
+      "leftovers_and_casseroles": "74°C (165°F)"
+    },
+
+    "food_storage_guidelines": {
+      "danger_zone": "5°C – 60°C (40°F – 140°F) — bacteria multiply rapidly in this range",
+      "max_time_at_room_temperature": "2 hours (1 hour if above 32°C)",
+      "refrigerator_temperature": "At or below 5°C (41°F)",
+      "freezer_temperature": "-18°C (0°F) or below",
+      "cooked_leftovers_safe_window": "3–4 days in refrigerator",
+      "note": "Freezing stops bacterial growth but does not kill bacteria. Always reheat leftovers to 74°C before eating."
+    },
+
+    "specific_diseases": {
+      "typhoid_fever": {
+        "causative_agent": "Salmonella enterica serovar Typhi",
+        "transmission": "Fecal-oral route via contaminated food or water",
+        "incubation": "7–14 days (range 3–60 days)",
+        "symptoms": [
+          "Prolonged fever",
+          "Headache",
+          "Malaise and fatigue",
+          "Anorexia",
+          "Constipation or diarrhea",
+          "Abdominal discomfort",
+          "Rose spots (maculopapular rash)"
+        ],
+        "complications": [
+          "Intestinal perforation",
+          "Intestinal hemorrhage",
+          "Sepsis",
+          "Encephalopathy"
+        ],
+        "treatment": ["Azithromycin", "Ceftriaxone", "Cefixime"],
+        "prevention": ["Safe drinking water", "Hand hygiene", "Typhoid conjugate vaccine (TCV)"],
+        "global_burden": "21–27 million cases annually, 129,000–600,000 deaths"
+      }
+    },
+
+    "diagnosis": {
+      "clinical": "Doctors often diagnose based on symptoms alone for mild, short-lasting cases.",
+      "medical_history_questions": [
+        "What symptoms do you have and how long?",
+        "What foods or drinks did you consume recently?",
+        "Has anyone else who ate the same food fallen ill?",
+        "Have you traveled recently?",
+        "Do you have underlying health conditions or take medications?"
+      ],
+      "tests": {
+        "stool_culture": "Identifies bacteria or parasites causing infection.",
+        "blood_tests": "Detects signs of infection or complications like dehydration.",
+        "PCR": "Molecular testing for rapid pathogen identification in advanced settings."
+      }
+    },
+
+    "myths_and_facts": [
+      {
+        "myth": "You can tell if food is contaminated by its smell or appearance.",
+        "fact": "Many dangerous bacteria (like Salmonella and E. coli) do not change the taste, smell, or look of food. When in doubt, throw it out."
+      },
+      {
+        "myth": "Reheating food always makes it safe.",
+        "fact": "Reheating kills bacteria but does NOT destroy heat-stable toxins from Staphylococcus aureus or Bacillus cereus. Improperly stored food can still cause illness after reheating."
+      },
+      {
+        "myth": "Alcohol kills bacteria in food.",
+        "fact": "Drinking alcohol does not kill foodborne bacteria. The concentration consumed is far too low to have any antibacterial effect in the digestive system."
+      },
+      {
+        "myth": "Lemon juice or vinegar makes raw food safe.",
+        "fact": "Acidic ingredients slow bacterial growth but do not reliably kill all pathogens. Raw fish marinated in citrus (ceviche) still carries risk."
+      },
+      {
+        "myth": "Freezing kills bacteria.",
+        "fact": "Freezing stops bacteria from multiplying but does not kill them. Bacteria become active again when food thaws."
+      },
+      {
+        "myth": "Food poisoning always comes from the last meal you ate.",
+        "fact": "Some pathogens like Listeria and Hepatitis A have incubation periods of weeks. The meal that caused illness may have been consumed days or weeks earlier."
+      }
+    ],
+
+    "faq": [
+      {
+        "id": 1,
+        "question": "What is food poisoning?",
+        "answer": "Food poisoning (also called foodborne illness) is a sickness caused by eating food or drinking water contaminated with harmful bacteria, viruses, parasites, or toxins. It typically causes stomach upset, vomiting, and diarrhea."
+      },
+      {
+        "id": 2,
+        "question": "What are the symptoms of food poisoning?",
+        "answer": "Common symptoms include nausea, vomiting, diarrhea (sometimes bloody), abdominal cramps, fever, headache, and fatigue. Symptoms range from mild to severe and may last from a few hours to several days."
+      },
+      {
+        "id": 3,
+        "question": "How soon do symptoms start after eating contaminated food?",
+        "answer": "Onset varies by pathogen: Staphylococcus toxins cause symptoms within 30 minutes to 6 hours; Salmonella takes 6–48 hours; E. coli 3–4 days; Listeria 1–4 weeks. Most common cases begin within 2–6 hours."
+      },
+      {
+        "id": 4,
+        "question": "How long does food poisoning last?",
+        "answer": "Most mild to moderate cases resolve within 1–3 days. Serious infections like Listeria or E. coli O157:H7 can last a week or longer and may require medical treatment."
+      },
+      {
+        "id": 5,
+        "question": "What causes food poisoning?",
+        "answer": "Food poisoning is most commonly caused by bacteria (Salmonella, E. coli, Listeria, Campylobacter), viruses (norovirus, hepatitis A), parasites (Giardia, Cryptosporidium), and toxins from bacteria or naturally occurring in certain foods."
+      },
+      {
+        "id": 6,
+        "question": "How is food poisoning treated at home?",
+        "answer": "The most important step is replacing lost fluids. Drink water, oral rehydration solutions, clear broths, or diluted juice. Rest and avoid solid food until vomiting settles, then try bland foods like toast, rice, and bananas. Avoid dairy, caffeine, and fatty foods during recovery."
+      },
+      {
+        "id": 7,
+        "question": "When should I see a doctor?",
+        "answer": "See a doctor if you have a high fever, bloody stools, diarrhea lasting more than 3 days, signs of severe dehydration, nervous system symptoms, or if the affected person is an infant, elderly, pregnant, or immunocompromised."
+      },
+      {
+        "id": 8,
+        "question": "How can I prevent food poisoning?",
+        "answer": "Follow the 4 core principles: Clean (wash hands and surfaces), Separate (keep raw and cooked foods apart), Cook (to safe internal temperatures), and Chill (refrigerate promptly). Avoid unpasteurized products and raw/undercooked meat, eggs, and seafood."
+      },
+      {
+        "id": 9,
+        "question": "Is food poisoning contagious?",
+        "answer": "Some viral causes like norovirus and hepatitis A can spread person-to-person through poor hand hygiene. Most bacterial causes are not directly contagious but can spread through contaminated surfaces or shared food."
+      },
+      {
+        "id": 10,
+        "question": "What are the most dangerous complications of food poisoning?",
+        "answer": "The most dangerous complications include severe dehydration, hemolytic uremic syndrome (HUS, which can cause kidney failure — especially in young children), botulism (paralysis), Guillain-Barré syndrome, and pregnancy complications such as miscarriage from Listeria."
+      }
+    ]
+  }
+}
+

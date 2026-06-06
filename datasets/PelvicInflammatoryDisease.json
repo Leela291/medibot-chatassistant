@@ -1,0 +1,3932 @@
+{
+  "topic": "Pelvic Inflammatory Disease (PID)",
+  "definition": {
+    "text": "PID is an acute infection of the upper female genital tract involving uterus, fallopian tubes, ovaries, and surrounding pelvic organs.",
+    "severity_classification": {
+      "mild_to_moderate": "No tubo-ovarian abscess",
+      "severe": "Presence of severe systemic symptoms or tubo-ovarian abscess"
+    }
+  },
+  "causes": {
+    "primary_pathogens": [
+      "Neisseria gonorrhoeae",
+      "Chlamydia trachomatis"
+    ],
+    "other_pathogens": [
+      "Mycoplasma genitalium",
+      "Gardnerella vaginalis",
+      "Anaerobes",
+      "Genital tuberculosis"
+    ],
+    "risk_related": [
+      "Recent IUD insertion (within 4–6 weeks)",
+      "Pre-existing STI"
+    ]
+  },
+  "risk_factors": [
+    "Age < 25 years",
+    "Multiple sexual partners",
+    "New sexual partner",
+    "History of STIs",
+    "Recent uterine instrumentation (IUD, IVF, hysteroscopy)",
+    "Poor menstrual hygiene",
+    "Bacterial vaginosis",
+    "No contraception use",
+    "Post-abortion or puerperal sepsis"
+  ],
+  "pathogenesis": {
+    "routes": [
+      "Ascending infection (most common)",
+      "Hematogenous spread",
+      "Local spread"
+    ],
+    "stages": [
+      "Initial vaginal/cervical infection",
+      "Ascending infection to upper genital tract"
+    ]
+  },
+  "symptoms": [
+    "Lower abdominal pain (bilateral common)",
+    "Abnormal vaginal discharge",
+    "Dyspareunia",
+    "Abnormal uterine bleeding",
+    "Dysmenorrhea",
+    "Fever (in moderate/severe cases)"
+  ],
+  "signs": [
+    "Lower abdominal tenderness",
+    "Adnexal tenderness",
+    "Cervical motion tenderness",
+    "Fever > 38°C"
+  ],
+  "diagnosis": {
+    "clinical_criteria": {
+      "minimum": [
+        "Cervical motion tenderness",
+        "Uterine tenderness",
+        "Adnexal tenderness"
+      ],
+      "additional": [
+        "Fever > 38.3°C",
+        "Mucopurulent discharge",
+        "Elevated ESR/CRP",
+        "WBC in vaginal fluid",
+        "Positive gonorrhea/chlamydia test"
+      ],
+      "specific": [
+        "Endometrial biopsy showing endometritis",
+        "Imaging showing fluid-filled tubes or abscess",
+        "Laparoscopy findings"
+      ]
+    },
+    "laboratory_tests": [
+      "Pregnancy test (rule out ectopic)",
+      "CBC (WBC > 10,000)",
+      "CRP, ESR",
+      "NAAT for gonorrhea/chlamydia",
+      "PCR",
+      "HIV, syphilis testing"
+    ],
+    "imaging": [
+      "Transvaginal ultrasound (fluid-filled tubes, cogwheel sign)",
+      "CT/MRI (if unclear diagnosis)"
+    ]
+  },
+  "differential_diagnosis": [
+    "Ectopic pregnancy",
+    "Appendicitis",
+    "Endometriosis",
+    "Ovarian cyst complications",
+    "Urinary tract infection",
+    "Irritable bowel syndrome"
+  ],
+  "complications": [
+    "Tubo-ovarian abscess",
+    "Pelvic peritonitis",
+    "Fitz-Hugh-Curtis syndrome",
+    "Infertility",
+    "Ectopic pregnancy",
+    "Chronic pelvic pain",
+    "Sepsis"
+  ],
+  "management": {
+    "goals": [
+      "Symptom relief",
+      "Treat infection",
+      "Prevent complications"
+    ],
+    "general_advice": [
+      "Avoid sexual intercourse until treatment complete",
+      "Provide analgesia",
+      "Rest in severe cases",
+      "Educate patient about recurrence and fertility risks"
+    ],
+    "outpatient_treatment": {
+      "first_line": [
+        "Ceftriaxone IM single dose",
+        "Doxycycline 100 mg twice daily for 14 days",
+        "Metronidazole 500 mg twice daily for 14 days"
+      ],
+      "alternatives": [
+        "Ofloxacin + Metronidazole",
+        "Moxifloxacin"
+      ]
+    },
+    "inpatient_treatment": [
+      "IV ceftriaxone + doxycycline",
+      "IV clindamycin + gentamicin"
+    ],
+    "admission_criteria": [
+      "Severe illness",
+      "Pregnancy",
+      "Tubo-ovarian abscess",
+      "Failure of oral therapy",
+      "Diagnostic uncertainty"
+    ]
+  },
+  "prevention": [
+    "Safe sexual practices",
+    "Screening and treatment of partners",
+    "Use of barrier contraception",
+    "Early treatment of STIs",
+    "Menstrual hygiene"
+  ],
+  "follow_up": {
+    "short_term": "Review within 72 hours if moderate/severe",
+    "long_term": "Follow-up in 2–4 weeks",
+    "partner_management": "Test and treat sexual partners"
+  },
+  "chatbot_intents": [
+    {
+      "intent": "symptom_check",
+      "user_input_examples": [
+        "I have lower abdominal pain and discharge",
+        "Could this be PID?"
+      ],
+      "response_action": "Evaluate symptoms and suggest medical consultation"
+    },
+    {
+      "intent": "treatment_info",
+      "user_input_examples": [
+        "How is PID treated?",
+        "What antibiotics are used?"
+      ],
+      "response_action": "Provide treatment regimens"
+    },
+    {
+      "intent": "risk_assessment",
+      "user_input_examples": [
+        "Am I at risk for PID?",
+        "What causes PID?"
+      ],
+      "response_action": "List risk factors and causes"
+    },
+    {
+      "intent": "prevention_advice",
+      "user_input_examples": [
+        "How can I prevent PID?"
+      ],
+      "response_action": "Provide prevention tips"
+    }
+  ],
+  "source": [
+    "FOGSI Infection Practice Points – PID (pages 3–13) :contentReference[oaicite:0]{index=0}",
+    "UK National PID Guideline 2019 :contentReference[oaicite:1]{index=1}"
+  ]
+}
+{
+  "chatbot_intents": [
+    {
+      "id": 1,
+      "intent": "ask_pid_definition",
+      "user_examples": ["What is PID?", "Define pelvic inflammatory disease"],
+      "response": "Pelvic Inflammatory Disease (PID) is a serious infection of the female reproductive organs, including the uterus, fallopian tubes, and ovaries. It usually occurs when bacteria travel upward from the vagina or cervix into the upper genital tract."
+    },
+    {
+      "id": 2,
+      "intent": "ask_pid_meaning_simple",
+      "user_examples": ["What does PID mean?", "Explain PID simply"],
+      "response": "PID refers to an infection that affects a woman’s reproductive organs. It typically develops when harmful bacteria spread from the lower genital tract into the uterus and fallopian tubes."
+    },
+    {
+      "id": 3,
+      "intent": "ask_pid_full_form",
+      "user_examples": ["What is the full form of PID?"],
+      "response": "PID stands for Pelvic Inflammatory Disease, which is an infection involving the upper female reproductive organs."
+    },
+    {
+      "id": 4,
+      "intent": "ask_pid_overview",
+      "user_examples": ["Give an overview of PID", "Explain PID briefly"],
+      "response": "Pelvic inflammatory disease is a condition caused by bacterial infection that spreads upward from the vagina. If untreated, it can lead to complications such as infertility, ectopic pregnancy, and chronic pelvic pain."
+    },
+    {
+      "id": 5,
+      "intent": "ask_pid_causes",
+      "user_examples": ["What causes PID?", "Why does PID occur?"],
+      "response": "PID is mainly caused by bacterial infections, most commonly sexually transmitted infections such as chlamydia and gonorrhea, although other bacteria can also be involved."
+    },
+    {
+      "id": 6,
+      "intent": "ask_pid_common_causes",
+      "user_examples": ["What are the common causes of PID?"],
+      "response": "The most common causes of PID are sexually transmitted bacteria like Chlamydia trachomatis and Neisseria gonorrhoeae, along with other vaginal organisms."
+    },
+    {
+      "id": 7,
+      "intent": "ask_pid_bacterial_origin",
+      "user_examples": ["How does bacteria cause PID?"],
+      "response": "PID develops when bacteria enter the reproductive tract and spread upward, causing inflammation and infection in the uterus, fallopian tubes, and surrounding tissues."
+    },
+    {
+      "id": 8,
+      "intent": "ask_pid_std_link",
+      "user_examples": ["Is PID related to STDs?", "Does STI cause PID?"],
+      "response": "Yes, many cases of PID are linked to sexually transmitted infections. Untreated STIs can allow bacteria to spread upward and infect the reproductive organs."
+    },
+    {
+      "id": 9,
+      "intent": "ask_pid_chlamydia_role",
+      "user_examples": ["Can chlamydia cause PID?"],
+      "response": "Yes, chlamydia is one of the leading causes of PID. It may initially show mild or no symptoms, allowing infection to spread unnoticed."
+    },
+    {
+      "id": 10,
+      "intent": "ask_pid_gonorrhea_role",
+      "user_examples": ["Can gonorrhea lead to PID?"],
+      "response": "Yes, gonorrhea can cause PID if left untreated, leading to inflammation and potential damage to reproductive organs."
+    },
+
+    {
+      "id": 11,
+      "intent": "ask_pid_risk_factors",
+      "user_examples": ["What are risk factors for PID?"],
+      "response": "Risk factors include multiple sexual partners, young age, previous STIs, recent gynecological procedures, and not using barrier contraception."
+    },
+    {
+      "id": 12,
+      "intent": "ask_pid_young_age_risk",
+      "user_examples": ["Does age affect PID risk?"],
+      "response": "Yes, women under 25 years of age are at higher risk due to increased susceptibility to infections and higher exposure to STIs."
+    },
+    {
+      "id": 13,
+      "intent": "ask_pid_multiple_partners",
+      "user_examples": ["Do multiple partners increase PID risk?"],
+      "response": "Yes, having multiple sexual partners increases the likelihood of exposure to infections that can lead to PID."
+    },
+    {
+      "id": 14,
+      "intent": "ask_pid_new_partner_risk",
+      "user_examples": ["Is PID risk higher with a new partner?"],
+      "response": "Yes, a new sexual partner increases the risk of exposure to new infections, which may lead to PID."
+    },
+    {
+      "id": 15,
+      "intent": "ask_pid_iud_risk",
+      "user_examples": ["Can IUD cause PID?"],
+      "response": "There is a slight increase in PID risk shortly after IUD insertion, especially if an infection is already present at the time."
+    },
+    {
+      "id": 16,
+      "intent": "ask_pid_post_procedure_risk",
+      "user_examples": ["Can PID occur after medical procedures?"],
+      "response": "Yes, procedures like abortion, childbirth, or uterine instrumentation can introduce bacteria and increase PID risk."
+    },
+    {
+      "id": 17,
+      "intent": "ask_pid_hygiene_factor",
+      "user_examples": ["Does hygiene affect PID risk?"],
+      "response": "Poor genital or menstrual hygiene may contribute to bacterial imbalance, increasing the risk of infection and PID."
+    },
+    {
+      "id": 18,
+      "intent": "ask_pid_no_contraception",
+      "user_examples": ["Does not using condoms increase PID risk?"],
+      "response": "Yes, not using condoms increases the risk of STIs, which are a major cause of PID."
+    },
+    {
+      "id": 19,
+      "intent": "ask_pid_previous_sti",
+      "user_examples": ["Does past STI increase PID risk?"],
+      "response": "Yes, a history of STIs significantly increases the likelihood of developing PID."
+    },
+    {
+      "id": 20,
+      "intent": "ask_pid_geographic_risk",
+      "user_examples": ["Does location affect PID risk?"],
+      "response": "Yes, living in areas with high rates of STIs can increase exposure and risk of PID."
+    },
+
+    {
+      "id": 21,
+      "intent": "ask_pid_symptoms",
+      "user_examples": ["What are PID symptoms?"],
+      "response": "Symptoms include lower abdominal pain, abnormal discharge, fever, painful intercourse, and irregular bleeding."
+    },
+    {
+      "id": 22,
+      "intent": "ask_pid_early_symptoms",
+      "user_examples": ["What are early signs of PID?"],
+      "response": "Early signs may include mild pelvic pain, unusual vaginal discharge, and discomfort during sex."
+    },
+    {
+      "id": 23,
+      "intent": "ask_pid_severe_symptoms",
+      "user_examples": ["What are severe PID symptoms?"],
+      "response": "Severe PID may cause high fever, severe abdominal pain, nausea, vomiting, and complications like abscess."
+    },
+    {
+      "id": 24,
+      "intent": "ask_pid_abdominal_pain",
+      "user_examples": ["Is abdominal pain a symptom of PID?"],
+      "response": "Yes, lower abdominal pain is one of the most common and important symptoms of PID."
+    },
+    {
+      "id": 25,
+      "intent": "ask_pid_discharge",
+      "user_examples": ["Does PID cause discharge?"],
+      "response": "Yes, PID often causes abnormal vaginal discharge that may be thick, discolored, or foul-smelling."
+    },
+    {
+      "id": 26,
+      "intent": "ask_pid_fever",
+      "user_examples": ["Do you get fever in PID?"],
+      "response": "Fever may occur in moderate to severe cases, indicating infection has spread."
+    },
+    {
+      "id": 27,
+      "intent": "ask_pid_dyspareunia",
+      "user_examples": ["Is sex painful in PID?"],
+      "response": "Yes, PID can cause deep pain during sexual intercourse due to pelvic inflammation."
+    },
+    {
+      "id": 28,
+      "intent": "ask_pid_bleeding",
+      "user_examples": ["Does PID cause bleeding?"],
+      "response": "Yes, irregular bleeding such as spotting or heavy periods may occur."
+    },
+    {
+      "id": 29,
+      "intent": "ask_pid_back_pain",
+      "user_examples": ["Does PID cause back pain?"],
+      "response": "Some patients experience lower back pain along with pelvic discomfort."
+    },
+    {
+      "id": 30,
+      "intent": "ask_pid_malaise",
+      "user_examples": ["Does PID cause weakness?"],
+      "response": "Yes, general fatigue and a feeling of illness can occur, especially in advanced cases."
+    },
+
+    {
+      "id": 31,
+      "intent": "ask_pid_asymptomatic",
+      "user_examples": ["Can PID have no symptoms?"],
+      "response": "Yes, PID can sometimes be asymptomatic, meaning it causes no noticeable symptoms but still damages reproductive organs."
+    },
+    {
+      "id": 32,
+      "intent": "ask_pid_silent_cases",
+      "user_examples": ["What is silent PID?"],
+      "response": "Silent PID refers to cases where infection occurs without symptoms but may still lead to infertility or complications."
+    },
+    {
+      "id": 33,
+      "intent": "ask_pid_when_to_suspect",
+      "user_examples": ["When should I suspect PID?"],
+      "response": "PID should be suspected in sexually active women with pelvic pain, discharge, or fever."
+    },
+    {
+      "id": 34,
+      "intent": "ask_pid_warning_signs",
+      "user_examples": ["What are warning signs of PID?"],
+      "response": "Warning signs include severe pain, high fever, foul discharge, and worsening symptoms."
+    },
+    {
+      "id": 35,
+      "intent": "ask_pid_diagnosis",
+      "user_examples": ["How is PID diagnosed?"],
+      "response": "Diagnosis is based on symptoms, physical examination, lab tests, and sometimes imaging studies."
+    },
+    {
+      "id": 36,
+      "intent": "ask_pid_lab_tests",
+      "user_examples": ["What tests are done for PID?"],
+      "response": "Tests include blood tests, vaginal swabs, STI screening, and inflammatory markers like CRP."
+    },
+    {
+      "id": 37,
+      "intent": "ask_pid_ultrasound",
+      "user_examples": ["Can ultrasound detect PID?"],
+      "response": "Ultrasound can help identify complications such as fluid-filled tubes or abscesses."
+    },
+    {
+      "id": 38,
+      "intent": "ask_pid_ct_scan",
+      "user_examples": ["Is CT scan used in PID?"],
+      "response": "CT scans are used when diagnosis is unclear or complications are suspected."
+    },
+    {
+      "id": 39,
+      "intent": "ask_pid_laparoscopy",
+      "user_examples": ["What is laparoscopy in PID?"],
+      "response": "Laparoscopy is a surgical procedure used to directly visualize pelvic organs and confirm PID."
+    },
+    {
+      "id": 40,
+      "intent": "ask_pid_differential",
+      "user_examples": ["What conditions are similar to PID?"],
+      "response": "Conditions like appendicitis, ectopic pregnancy, and endometriosis can mimic PID symptoms."
+    },
+
+    {
+      "id": 41,
+      "intent": "ask_pid_complications",
+      "user_examples": ["What are complications of PID?"],
+      "response": "Complications include infertility, chronic pelvic pain, ectopic pregnancy, and abscess formation."
+    },
+    {
+      "id": 42,
+      "intent": "ask_pid_infertility",
+      "user_examples": ["Can PID cause infertility?"],
+      "response": "Yes, PID can damage the fallopian tubes, preventing normal fertilization and leading to infertility."
+    },
+    {
+      "id": 43,
+      "intent": "ask_pid_ectopic",
+      "user_examples": ["Does PID cause ectopic pregnancy?"],
+      "response": "Yes, damage to the fallopian tubes increases the risk of ectopic pregnancy."
+    },
+    {
+      "id": 44,
+      "intent": "ask_pid_chronic_pain",
+      "user_examples": ["Can PID cause long-term pain?"],
+      "response": "Yes, chronic pelvic pain is a common long-term complication of PID."
+    },
+    {
+      "id": 45,
+      "intent": "ask_pid_abscess",
+      "user_examples": ["What is abscess in PID?"],
+      "response": "A tubo-ovarian abscess is a collection of pus that forms due to severe infection."
+    },
+    {
+      "id": 46,
+      "intent": "ask_pid_peritonitis",
+      "user_examples": ["Can PID spread in abdomen?"],
+      "response": "Yes, severe PID can spread and cause peritonitis, a serious abdominal infection."
+    },
+    {
+      "id": 47,
+      "intent": "ask_pid_sepsis",
+      "user_examples": ["Can PID cause sepsis?"],
+      "response": "In rare cases, untreated PID can lead to sepsis, a life-threatening condition."
+    },
+    {
+      "id": 48,
+      "intent": "ask_pid_fitz_hugh",
+      "user_examples": ["What is Fitz-Hugh-Curtis syndrome?"],
+      "response": "It is a complication of PID where inflammation affects the liver capsule, causing upper abdominal pain."
+    },
+    {
+      "id": 49,
+      "intent": "ask_pid_recurrence",
+      "user_examples": ["Can PID come back?"],
+      "response": "Yes, PID can recur, especially if risk factors like untreated STIs persist."
+    },
+    {
+      "id": 50,
+      "intent": "ask_pid_long_term",
+      "user_examples": ["What are long-term effects of PID?"],
+      "response": "Long-term effects include infertility, chronic pain, and increased risk of ectopic pregnancy."
+    },
+    {
+      "id": 51,
+      "intent": "ask_pid_treatment",
+      "user_examples": ["How is PID treated?", "What is the treatment for PID?"],
+      "response": "PID is treated primarily with broad-spectrum antibiotics that target the most likely bacteria, including those causing sexually transmitted infections and anaerobic organisms."
+    },
+    {
+      "id": 52,
+      "intent": "ask_pid_antibiotics",
+      "user_examples": ["Which antibiotics are used for PID?"],
+      "response": "Common antibiotics include ceftriaxone, doxycycline, and metronidazole, which together provide coverage against a wide range of bacteria."
+    },
+    {
+      "id": 53,
+      "intent": "ask_pid_oral_treatment",
+      "user_examples": ["Can PID be treated with oral medicines?"],
+      "response": "Yes, mild to moderate PID is often treated with oral antibiotics, usually taken for about 14 days."
+    },
+    {
+      "id": 54,
+      "intent": "ask_pid_iv_treatment",
+      "user_examples": ["When is IV treatment needed for PID?"],
+      "response": "Intravenous antibiotics are used in severe cases, during pregnancy, or when oral treatment is not effective."
+    },
+    {
+      "id": 55,
+      "intent": "ask_pid_treatment_duration",
+      "user_examples": ["How long does PID treatment last?"],
+      "response": "Treatment typically lasts 10 to 14 days, but the exact duration may vary depending on the severity of the infection."
+    },
+    {
+      "id": 56,
+      "intent": "ask_pid_first_line_drugs",
+      "user_examples": ["What is first-line treatment for PID?"],
+      "response": "First-line treatment usually includes a combination of ceftriaxone, doxycycline, and metronidazole to cover common pathogens."
+    },
+    {
+      "id": 57,
+      "intent": "ask_pid_second_line_drugs",
+      "user_examples": ["What are alternative treatments for PID?"],
+      "response": "Alternative regimens may include fluoroquinolones or other antibiotics when first-line drugs cannot be used."
+    },
+    {
+      "id": 58,
+      "intent": "ask_pid_hospitalization",
+      "user_examples": ["Do I need hospitalization for PID?"],
+      "response": "Hospitalization may be required for severe cases, pregnancy, presence of abscess, or if the patient does not respond to oral therapy."
+    },
+    {
+      "id": 59,
+      "intent": "ask_when_to_admit_pid",
+      "user_examples": ["When should PID patients be admitted?"],
+      "response": "Admission is advised when diagnosis is uncertain, symptoms are severe, or complications like abscess are suspected."
+    },
+    {
+      "id": 60,
+      "intent": "ask_pid_severe_case_management",
+      "user_examples": ["How are severe PID cases managed?"],
+      "response": "Severe cases are managed with IV antibiotics, close monitoring, and sometimes surgical intervention if complications develop."
+    },
+
+    {
+      "id": 61,
+      "intent": "ask_pid_mild_case_management",
+      "user_examples": ["How are mild PID cases treated?"],
+      "response": "Mild cases are usually treated on an outpatient basis with oral antibiotics and follow-up to ensure recovery."
+    },
+    {
+      "id": 62,
+      "intent": "ask_pid_rest_and_care",
+      "user_examples": ["Should I rest during PID?"],
+      "response": "Yes, rest is recommended, especially in moderate to severe cases, to support recovery and reduce complications."
+    },
+    {
+      "id": 63,
+      "intent": "ask_pid_pain_relief",
+      "user_examples": ["How is pain managed in PID?"],
+      "response": "Pain can be managed using appropriate analgesics along with antibiotic therapy."
+    },
+    {
+      "id": 64,
+      "intent": "ask_pid_sexual_activity_restriction",
+      "user_examples": ["Can I have sex during PID treatment?"],
+      "response": "It is advised to avoid sexual activity until treatment is complete and symptoms have resolved to prevent reinfection."
+    },
+    {
+      "id": 65,
+      "intent": "ask_pid_partner_treatment",
+      "user_examples": ["Should my partner be treated for PID?"],
+      "response": "Yes, sexual partners should be evaluated and treated to prevent reinfection and further spread of infection."
+    },
+    {
+      "id": 66,
+      "intent": "ask_pid_partner_testing",
+      "user_examples": ["Should partners be tested for STIs?"],
+      "response": "Yes, partners should be tested and treated for STIs such as chlamydia and gonorrhea."
+    },
+    {
+      "id": 67,
+      "intent": "ask_pid_prevention",
+      "user_examples": ["How can PID be prevented?"],
+      "response": "PID can be prevented by practicing safe sex, regular STI screening, and maintaining good hygiene."
+    },
+    {
+      "id": 68,
+      "intent": "ask_safe_sex_pid_prevention",
+      "user_examples": ["Does safe sex prevent PID?"],
+      "response": "Yes, using condoms and limiting sexual partners significantly reduces the risk of PID."
+    },
+    {
+      "id": 69,
+      "intent": "ask_condoms_pid_prevention",
+      "user_examples": ["Do condoms protect against PID?"],
+      "response": "Yes, condoms help prevent STIs, which are a major cause of PID."
+    },
+    {
+      "id": 70,
+      "intent": "ask_sti_screening_pid",
+      "user_examples": ["Is STI screening important for PID prevention?"],
+      "response": "Yes, regular STI screening helps detect infections early and prevent progression to PID."
+    },
+
+    {
+      "id": 71,
+      "intent": "ask_pid_hygiene_prevention",
+      "user_examples": ["Does hygiene help prevent PID?"],
+      "response": "Maintaining good menstrual and genital hygiene reduces infection risk and helps prevent PID."
+    },
+    {
+      "id": 72,
+      "intent": "ask_pid_reinfection",
+      "user_examples": ["Can PID happen again after treatment?"],
+      "response": "Yes, reinfection can occur if risk factors persist or partners are not treated."
+    },
+    {
+      "id": 73,
+      "intent": "ask_pid_follow_up",
+      "user_examples": ["Do I need follow-up after PID?"],
+      "response": "Yes, follow-up is important to ensure that the infection has resolved and to prevent complications."
+    },
+    {
+      "id": 74,
+      "intent": "ask_pid_review_timeline",
+      "user_examples": ["When should I follow up after PID treatment?"],
+      "response": "Follow-up is usually recommended within 72 hours for severe cases and again after 2–4 weeks."
+    },
+    {
+      "id": 75,
+      "intent": "ask_pid_recovery_time",
+      "user_examples": ["How long does it take to recover from PID?"],
+      "response": "Recovery depends on severity, but symptoms often improve within a few days of starting antibiotics."
+    },
+    {
+      "id": 76,
+      "intent": "ask_pid_pregnancy",
+      "user_examples": ["Can PID affect pregnancy?"],
+      "response": "Yes, PID can increase the risk of infertility and ectopic pregnancy if not treated properly."
+    },
+    {
+      "id": 77,
+      "intent": "ask_pid_in_pregnant_women",
+      "user_examples": ["Is PID dangerous during pregnancy?"],
+      "response": "PID in pregnancy is rare but can lead to serious complications, so immediate medical treatment is required."
+    },
+    {
+      "id": 78,
+      "intent": "ask_pid_adolescents",
+      "user_examples": ["Is PID common in teenagers?"],
+      "response": "Yes, adolescents have a higher risk due to higher STI rates and biological susceptibility."
+    },
+    {
+      "id": 79,
+      "intent": "ask_pid_high_risk_groups",
+      "user_examples": ["Who is at highest risk for PID?"],
+      "response": "Young sexually active women, especially those with multiple partners or prior STIs, are at highest risk."
+    },
+    {
+      "id": 80,
+      "intent": "ask_pid_transmission",
+      "user_examples": ["How does PID spread?"],
+      "response": "PID spreads when bacteria ascend from the vagina or cervix into the upper reproductive tract."
+    },
+
+    {
+      "id": 81,
+      "intent": "ask_pid_contagious",
+      "user_examples": ["Is PID contagious?"],
+      "response": "PID itself is not contagious, but the infections causing it, like STIs, can be transmitted between partners."
+    },
+    {
+      "id": 82,
+      "intent": "ask_pid_pathogenesis",
+      "user_examples": ["What is the mechanism of PID?"],
+      "response": "PID occurs in two stages: initial infection of the lower genital tract followed by upward spread to the upper reproductive organs."
+    },
+    {
+      "id": 83,
+      "intent": "ask_pid_ascending_infection",
+      "user_examples": ["What is ascending infection in PID?"],
+      "response": "Ascending infection refers to bacteria moving upward from the vagina to the uterus and fallopian tubes."
+    },
+    {
+      "id": 84,
+      "intent": "ask_pid_hematogenous_spread",
+      "user_examples": ["Can PID spread through blood?"],
+      "response": "Yes, although rare, infections can spread through the bloodstream to pelvic organs."
+    },
+    {
+      "id": 85,
+      "intent": "ask_pid_staging",
+      "user_examples": ["What are stages of PID?"],
+      "response": "PID can be classified into stages ranging from mild infection to severe disease with abscess or rupture."
+    },
+    {
+      "id": 86,
+      "intent": "ask_pid_stage_1",
+      "user_examples": ["What is stage 1 PID?"],
+      "response": "Stage 1 involves mild infection without significant complications."
+    },
+    {
+      "id": 87,
+      "intent": "ask_pid_stage_2",
+      "user_examples": ["What is stage 2 PID?"],
+      "response": "Stage 2 includes infection with signs of peritonitis or more severe inflammation."
+    },
+    {
+      "id": 88,
+      "intent": "ask_pid_stage_3",
+      "user_examples": ["What is stage 3 PID?"],
+      "response": "Stage 3 involves the formation of tubo-ovarian abscess."
+    },
+    {
+      "id": 89,
+      "intent": "ask_pid_stage_4",
+      "user_examples": ["What is stage 4 PID?"],
+      "response": "Stage 4 is the most severe form, involving rupture of abscess and serious complications."
+    },
+    {
+      "id": 90,
+      "intent": "ask_pid_iud_management",
+      "user_examples": ["Should I remove IUD if I have PID?"],
+      "response": "IUD removal may be considered if symptoms do not improve, but the decision depends on clinical evaluation."
+    },
+
+    {
+      "id": 91,
+      "intent": "ask_pid_hiv_testing",
+      "user_examples": ["Should I test for HIV if I have PID?"],
+      "response": "Yes, testing for HIV and other STIs is recommended because they may coexist."
+    },
+    {
+      "id": 92,
+      "intent": "ask_pid_syphilis_testing",
+      "user_examples": ["Should I test for syphilis in PID?"],
+      "response": "Yes, screening for syphilis is often recommended along with other STI tests."
+    },
+    {
+      "id": 93,
+      "intent": "ask_pid_naat",
+      "user_examples": ["What is NAAT test in PID?"],
+      "response": "NAAT is a highly sensitive test used to detect infections like chlamydia and gonorrhea."
+    },
+    {
+      "id": 94,
+      "intent": "ask_pid_pcr",
+      "user_examples": ["What is PCR test in PID?"],
+      "response": "PCR is a molecular test used to detect bacterial DNA and confirm infections."
+    },
+    {
+      "id": 95,
+      "intent": "ask_pid_esr_crp",
+      "user_examples": ["Are ESR and CRP important in PID?"],
+      "response": "Yes, elevated ESR and CRP indicate inflammation and support the diagnosis of PID."
+    },
+    {
+      "id": 96,
+      "intent": "ask_pid_wbc",
+      "user_examples": ["Does WBC increase in PID?"],
+      "response": "Yes, white blood cell count may increase as a response to infection."
+    },
+    {
+      "id": 97,
+      "intent": "ask_pid_vaginal_ph",
+      "user_examples": ["Does vaginal pH change in PID?"],
+      "response": "Yes, an increased vaginal pH may indicate infection and altered vaginal flora."
+    },
+    {
+      "id": 98,
+      "intent": "ask_pid_discharge_types",
+      "user_examples": ["What type of discharge occurs in PID?"],
+      "response": "Discharge may be thick, yellow, green, or foul-smelling depending on the infection."
+    },
+    {
+      "id": 99,
+      "intent": "ask_pid_vs_normal_discharge",
+      "user_examples": ["How is PID discharge different from normal?"],
+      "response": "PID discharge is usually abnormal in color, consistency, and smell compared to normal discharge."
+    },
+    {
+      "id": 100,
+      "intent": "ask_pid_summary",
+      "user_examples": ["Summarize PID", "Give a quick summary of PID"],
+      "response": "PID is an infection of the female reproductive organs caused mainly by bacteria, often from STIs, and requires prompt treatment to prevent complications."
+    },
+    {
+      "id": 101,
+      "intent": "ask_pid_cure",
+      "user_examples": ["Can PID be cured?", "Is PID completely treatable?"],
+      "response": "Yes, PID can be cured with appropriate antibiotic treatment, especially when diagnosed early. However, damage already caused to reproductive organs may not be reversible."
+    },
+    {
+      "id": 102,
+      "intent": "ask_pid_treatment_delay",
+      "user_examples": ["What happens if PID treatment is delayed?"],
+      "response": "Delaying treatment increases the risk of complications such as infertility, chronic pelvic pain, and ectopic pregnancy."
+    },
+    {
+      "id": 103,
+      "intent": "ask_pid_self_treatment",
+      "user_examples": ["Can I treat PID at home?", "Can PID go away on its own?"],
+      "response": "PID should not be self-treated or ignored. Medical treatment with antibiotics is necessary to prevent serious complications."
+    },
+    {
+      "id": 104,
+      "intent": "ask_pid_antibiotic_compliance",
+      "user_examples": ["Do I need to complete antibiotics for PID?"],
+      "response": "Yes, completing the full course of antibiotics is essential even if symptoms improve early, to ensure complete eradication of infection."
+    },
+    {
+      "id": 105,
+      "intent": "ask_pid_drug_side_effects",
+      "user_examples": ["Do PID antibiotics have side effects?"],
+      "response": "Yes, antibiotics may cause side effects such as nausea, diarrhea, or allergic reactions, but they are generally manageable and necessary for treatment."
+    },
+    {
+      "id": 106,
+      "intent": "ask_pid_metronidazole_role",
+      "user_examples": ["Why is metronidazole used in PID?"],
+      "response": "Metronidazole is used to cover anaerobic bacteria, which are commonly involved in PID infections."
+    },
+    {
+      "id": 107,
+      "intent": "ask_pid_doxycycline_role",
+      "user_examples": ["Why is doxycycline used in PID?"],
+      "response": "Doxycycline is effective against chlamydia and other bacteria, making it an important component of PID treatment."
+    },
+    {
+      "id": 108,
+      "intent": "ask_pid_ceftriaxone_role",
+      "user_examples": ["Why is ceftriaxone used in PID?"],
+      "response": "Ceftriaxone is used to treat gonorrhea and other bacteria, providing broad-spectrum coverage in PID therapy."
+    },
+    {
+      "id": 109,
+      "intent": "ask_pid_drug_allergy",
+      "user_examples": ["What if I am allergic to PID antibiotics?"],
+      "response": "Alternative antibiotics can be prescribed if there is an allergy. It is important to inform your doctor about any known drug allergies."
+    },
+    {
+      "id": 110,
+      "intent": "ask_pid_non_response",
+      "user_examples": ["What if PID does not improve with treatment?"],
+      "response": "If symptoms do not improve within 72 hours, further evaluation, hospitalization, or change in antibiotics may be required."
+    },
+
+    {
+      "id": 111,
+      "intent": "ask_pid_complication_abscess_management",
+      "user_examples": ["How is PID abscess treated?"],
+      "response": "A tubo-ovarian abscess may require hospitalization, intravenous antibiotics, and sometimes drainage or surgery."
+    },
+    {
+      "id": 112,
+      "intent": "ask_pid_surgery_need",
+      "user_examples": ["Is surgery needed in PID?"],
+      "response": "Surgery is rarely needed but may be required in severe cases, especially if there is an abscess or rupture."
+    },
+    {
+      "id": 113,
+      "intent": "ask_pid_laparoscopy_role",
+      "user_examples": ["What is the role of laparoscopy in PID treatment?"],
+      "response": "Laparoscopy can help diagnose PID and treat complications such as adhesions or abscess drainage."
+    },
+    {
+      "id": 114,
+      "intent": "ask_pid_adhesions",
+      "user_examples": ["What are adhesions in PID?"],
+      "response": "Adhesions are scar tissues that form due to inflammation and can cause chronic pain and infertility."
+    },
+    {
+      "id": 115,
+      "intent": "ask_pid_tubal_damage",
+      "user_examples": ["How does PID damage fallopian tubes?"],
+      "response": "Inflammation from infection can scar and block fallopian tubes, affecting fertility."
+    },
+    {
+      "id": 116,
+      "intent": "ask_pid_fertility_outcome",
+      "user_examples": ["Can I get pregnant after PID?"],
+      "response": "Many women can conceive after PID, but the risk of infertility increases with repeated or severe infections."
+    },
+    {
+      "id": 117,
+      "intent": "ask_pid_repeat_episodes",
+      "user_examples": ["Does repeated PID worsen outcomes?"],
+      "response": "Yes, each episode of PID increases the risk of long-term complications, especially infertility."
+    },
+    {
+      "id": 118,
+      "intent": "ask_pid_chronic_inflammation",
+      "user_examples": ["Can PID cause long-term inflammation?"],
+      "response": "Yes, persistent inflammation can lead to chronic pelvic pain and structural damage."
+    },
+    {
+      "id": 119,
+      "intent": "ask_pid_pelvic_pain_mechanism",
+      "user_examples": ["Why does PID cause pain?"],
+      "response": "Pain occurs due to inflammation and irritation of pelvic organs and surrounding tissues."
+    },
+    {
+      "id": 120,
+      "intent": "ask_pid_inflammation_extent",
+      "user_examples": ["How far can PID spread?"],
+      "response": "PID can spread beyond reproductive organs and affect surrounding pelvic structures and even the abdomen."
+    },
+
+    {
+      "id": 121,
+      "intent": "ask_pid_perihepatitis",
+      "user_examples": ["What is perihepatitis in PID?"],
+      "response": "Perihepatitis, also called Fitz-Hugh-Curtis syndrome, is inflammation around the liver associated with PID."
+    },
+    {
+      "id": 122,
+      "intent": "ask_pid_ruq_pain",
+      "user_examples": ["Does PID cause upper abdominal pain?"],
+      "response": "Yes, in some cases PID can cause right upper abdominal pain due to liver involvement."
+    },
+    {
+      "id": 123,
+      "intent": "ask_pid_spread_to_bowel",
+      "user_examples": ["Can PID affect intestines?"],
+      "response": "Severe PID can spread inflammation to nearby structures, including the bowel."
+    },
+    {
+      "id": 124,
+      "intent": "ask_pid_lymphatic_spread",
+      "user_examples": ["Can PID spread through lymphatics?"],
+      "response": "Yes, infection can spread through lymphatic pathways in some cases."
+    },
+    {
+      "id": 125,
+      "intent": "ask_pid_menstruation_effect",
+      "user_examples": ["Does menstruation affect PID?"],
+      "response": "Yes, hormonal changes and cervical opening during menstruation may facilitate infection spread."
+    },
+    {
+      "id": 126,
+      "intent": "ask_pid_ovulation_effect",
+      "user_examples": ["Does ovulation affect PID risk?"],
+      "response": "Ovulation-related hormonal changes may reduce cervical barrier protection, increasing infection risk."
+    },
+    {
+      "id": 127,
+      "intent": "ask_pid_intercourse_effect",
+      "user_examples": ["Does sex worsen PID?"],
+      "response": "Sexual activity can worsen symptoms and promote spread of infection, so it should be avoided during treatment."
+    },
+    {
+      "id": 128,
+      "intent": "ask_pid_sperm_role",
+      "user_examples": ["Can sperm carry infection in PID?"],
+      "response": "Yes, bacteria can travel with sperm into the uterus and fallopian tubes."
+    },
+    {
+      "id": 129,
+      "intent": "ask_pid_cervical_barrier",
+      "user_examples": ["What is cervical barrier in PID?"],
+      "response": "The cervix normally prevents infection from spreading upward, but this barrier can be weakened in certain conditions."
+    },
+    {
+      "id": 130,
+      "intent": "ask_pid_mucus_role",
+      "user_examples": ["Does cervical mucus protect against PID?"],
+      "response": "Yes, cervical mucus acts as a protective barrier against infection, but its effectiveness can vary."
+    },
+
+    {
+      "id": 131,
+      "intent": "ask_pid_bacterial_vaginosis",
+      "user_examples": ["Is bacterial vaginosis linked to PID?"],
+      "response": "Yes, bacterial vaginosis can disrupt normal vaginal flora and increase PID risk."
+    },
+    {
+      "id": 132,
+      "intent": "ask_pid_anaerobes_role",
+      "user_examples": ["Do anaerobic bacteria cause PID?"],
+      "response": "Yes, anaerobic bacteria are commonly involved in PID infections and require specific antibiotic coverage."
+    },
+    {
+      "id": 133,
+      "intent": "ask_pid_mycoplasma",
+      "user_examples": ["Does Mycoplasma cause PID?"],
+      "response": "Yes, Mycoplasma genitalium is increasingly recognized as a cause of PID."
+    },
+    {
+      "id": 134,
+      "intent": "ask_pid_tuberculosis",
+      "user_examples": ["Can tuberculosis cause PID?"],
+      "response": "Yes, genital tuberculosis is a cause of PID, especially in certain regions."
+    },
+    {
+      "id": 135,
+      "intent": "ask_pid_culture_tests",
+      "user_examples": ["Are cultures used in PID diagnosis?"],
+      "response": "Yes, cultures can help identify bacteria, though they are not always required."
+    },
+    {
+      "id": 136,
+      "intent": "ask_pid_dna_tests",
+      "user_examples": ["What DNA tests are used in PID?"],
+      "response": "DNA-based tests like NAAT are used to detect infections such as chlamydia and gonorrhea."
+    },
+    {
+      "id": 137,
+      "intent": "ask_pid_microscopy",
+      "user_examples": ["Is microscopy useful in PID?"],
+      "response": "Microscopy can detect white blood cells in vaginal fluid, suggesting infection."
+    },
+    {
+      "id": 138,
+      "intent": "ask_pid_wbc_significance",
+      "user_examples": ["What does high WBC mean in PID?"],
+      "response": "High white blood cell count indicates infection and inflammation in the body."
+    },
+    {
+      "id": 139,
+      "intent": "ask_pid_crp_significance",
+      "user_examples": ["What does CRP indicate in PID?"],
+      "response": "CRP is a marker of inflammation and is often elevated in PID."
+    },
+    {
+      "id": 140,
+      "intent": "ask_pid_esr_significance",
+      "user_examples": ["What does ESR show in PID?"],
+      "response": "An elevated ESR indicates ongoing inflammation and supports PID diagnosis."
+    },
+
+    {
+      "id": 141,
+      "intent": "ask_pid_ultrasound_findings",
+      "user_examples": ["What does ultrasound show in PID?"],
+      "response": "Ultrasound may show fluid-filled tubes, thickened walls, or abscess formation."
+    },
+    {
+      "id": 142,
+      "intent": "ask_pid_cogwheel_sign",
+      "user_examples": ["What is cogwheel sign in PID?"],
+      "response": "The cogwheel appearance on ultrasound indicates inflamed fallopian tubes."
+    },
+    {
+      "id": 143,
+      "intent": "ask_pid_free_fluid",
+      "user_examples": ["Is free fluid seen in PID?"],
+      "response": "Yes, fluid may accumulate in the pelvis due to inflammation."
+    },
+    {
+      "id": 144,
+      "intent": "ask_pid_mri_role",
+      "user_examples": ["Is MRI used in PID?"],
+      "response": "MRI may be used when diagnosis is uncertain or complications are suspected."
+    },
+    {
+      "id": 145,
+      "intent": "ask_pid_ct_role",
+      "user_examples": ["When is CT used in PID?"],
+      "response": "CT is used in complicated cases to evaluate spread and complications."
+    },
+    {
+      "id": 146,
+      "intent": "ask_pid_endoscopy_role",
+      "user_examples": ["Is endoscopy used in PID?"],
+      "response": "Endoscopic procedures like laparoscopy are used when diagnosis is unclear."
+    },
+    {
+      "id": 147,
+      "intent": "ask_pid_clinical_diagnosis",
+      "user_examples": ["Is PID diagnosed clinically?"],
+      "response": "Yes, PID is often diagnosed based on symptoms and clinical findings."
+    },
+    {
+      "id": 148,
+      "intent": "ask_pid_minimal_criteria",
+      "user_examples": ["What are minimal criteria for PID diagnosis?"],
+      "response": "Minimal criteria include cervical motion tenderness, uterine tenderness, or adnexal tenderness."
+    },
+    {
+      "id": 149,
+      "intent": "ask_pid_additional_criteria",
+      "user_examples": ["What are additional criteria for PID?"],
+      "response": "Additional criteria include fever, abnormal discharge, elevated inflammatory markers, and positive STI tests."
+    },
+    {
+      "id": 150,
+      "intent": "ask_pid_specific_criteria",
+      "user_examples": ["What confirms PID diagnosis?"],
+      "response": "Specific criteria include imaging findings, biopsy results, or laparoscopic confirmation."
+    },
+    {
+      "id": 151,
+      "intent": "ask_pid_outpatient_management",
+      "user_examples": ["Can PID be treated as outpatient?", "Do I need hospital for mild PID?"],
+      "response": "Yes, mild to moderate PID is usually treated on an outpatient basis with oral antibiotics, provided the patient can tolerate medication and follow-up is ensured."
+    },
+    {
+      "id": 152,
+      "intent": "ask_pid_inpatient_management",
+      "user_examples": ["When is inpatient care needed for PID?"],
+      "response": "Inpatient care is required in severe cases, pregnancy, presence of abscess, inability to tolerate oral therapy, or diagnostic uncertainty."
+    },
+    {
+      "id": 153,
+      "intent": "ask_pid_antibiotic_coverage",
+      "user_examples": ["Why broad-spectrum antibiotics in PID?"],
+      "response": "Broad-spectrum antibiotics are used to cover multiple bacteria, including gonorrhea, chlamydia, anaerobes, and other organisms commonly involved in PID."
+    },
+    {
+      "id": 154,
+      "intent": "ask_pid_anaerobic_coverage",
+      "user_examples": ["Why cover anaerobes in PID?"],
+      "response": "Anaerobic bacteria are frequently present in PID infections, and covering them helps prevent complications and improves treatment outcomes."
+    },
+    {
+      "id": 155,
+      "intent": "ask_pid_switch_iv_to_oral",
+      "user_examples": ["When to switch IV to oral antibiotics in PID?"],
+      "response": "Patients receiving IV antibiotics can be switched to oral therapy after clinical improvement, usually within 24–48 hours."
+    },
+    {
+      "id": 156,
+      "intent": "ask_pid_treatment_response",
+      "user_examples": ["How quickly should PID improve with treatment?"],
+      "response": "Clinical improvement is usually expected within 48–72 hours after starting appropriate antibiotics."
+    },
+    {
+      "id": 157,
+      "intent": "ask_pid_followup_importance",
+      "user_examples": ["Why is follow-up important in PID?"],
+      "response": "Follow-up ensures that the infection has resolved, symptoms are improving, and complications or reinfection are prevented."
+    },
+    {
+      "id": 158,
+      "intent": "ask_pid_partner_notification",
+      "user_examples": ["Should partners be notified in PID?"],
+      "response": "Yes, sexual partners should be informed, tested, and treated to prevent reinfection and further spread of infection."
+    },
+    {
+      "id": 159,
+      "intent": "ask_pid_contact_tracing",
+      "user_examples": ["Is contact tracing needed in PID?"],
+      "response": "Yes, identifying and treating recent sexual partners is important to control infection spread."
+    },
+    {
+      "id": 160,
+      "intent": "ask_pid_barrier_contraception",
+      "user_examples": ["Does using condoms reduce PID risk?"],
+      "response": "Yes, barrier contraception significantly reduces the risk of STIs and thereby lowers the risk of PID."
+    },
+
+    {
+      "id": 161,
+      "intent": "ask_pid_reproductive_health_impact",
+      "user_examples": ["How does PID affect reproductive health?"],
+      "response": "PID can affect fertility, increase risk of ectopic pregnancy, and cause chronic pelvic pain if not treated promptly."
+    },
+    {
+      "id": 162,
+      "intent": "ask_pid_first_episode_outcome",
+      "user_examples": ["Is first episode of PID serious?"],
+      "response": "A first episode can be treated effectively, but prompt treatment is crucial to prevent long-term complications."
+    },
+    {
+      "id": 163,
+      "intent": "ask_pid_repeated_damage",
+      "user_examples": ["Does repeated PID cause more damage?"],
+      "response": "Yes, repeated infections cause cumulative damage to reproductive organs, significantly increasing infertility risk."
+    },
+    {
+      "id": 164,
+      "intent": "ask_pid_chronic_sequelae",
+      "user_examples": ["What are chronic complications of PID?"],
+      "response": "Chronic complications include pelvic pain, infertility, and increased risk of ectopic pregnancy."
+    },
+    {
+      "id": 165,
+      "intent": "ask_pid_fertility_preservation",
+      "user_examples": ["Can fertility be preserved in PID?"],
+      "response": "Fertility can often be preserved with early diagnosis and proper treatment, especially in first episodes."
+    },
+    {
+      "id": 166,
+      "intent": "ask_pid_ectopic_risk_explanation",
+      "user_examples": ["Why does PID cause ectopic pregnancy?"],
+      "response": "PID damages fallopian tubes, making it difficult for the fertilized egg to travel to the uterus, leading to ectopic implantation."
+    },
+    {
+      "id": 167,
+      "intent": "ask_pid_pain_persistence",
+      "user_examples": ["Why does pain persist after PID?"],
+      "response": "Pain may persist due to scarring, adhesions, or chronic inflammation in pelvic structures."
+    },
+    {
+      "id": 168,
+      "intent": "ask_pid_abscess_risk",
+      "user_examples": ["Why does abscess form in PID?"],
+      "response": "Severe infection can lead to pus collection in the pelvis, forming a tubo-ovarian abscess."
+    },
+    {
+      "id": 169,
+      "intent": "ask_pid_severity_classification",
+      "user_examples": ["How is PID severity classified?"],
+      "response": "PID is classified as mild, moderate, or severe based on symptoms, systemic signs, and presence of complications like abscess."
+    },
+    {
+      "id": 170,
+      "intent": "ask_pid_mild_definition",
+      "user_examples": ["What is mild PID?"],
+      "response": "Mild PID involves infection without systemic symptoms or abscess formation."
+    },
+
+    {
+      "id": 171,
+      "intent": "ask_pid_moderate_definition",
+      "user_examples": ["What is moderate PID?"],
+      "response": "Moderate PID includes more pronounced symptoms such as fever, pain, and inflammatory markers."
+    },
+    {
+      "id": 172,
+      "intent": "ask_pid_severe_definition",
+      "user_examples": ["What is severe PID?"],
+      "response": "Severe PID includes systemic illness, high fever, severe pain, or complications like abscess."
+    },
+    {
+      "id": 173,
+      "intent": "ask_pid_clinical_examination",
+      "user_examples": ["What is examined in PID?"],
+      "response": "Clinical examination includes checking for abdominal tenderness, cervical motion tenderness, and adnexal tenderness."
+    },
+    {
+      "id": 174,
+      "intent": "ask_pid_cervical_motion_tenderness",
+      "user_examples": ["What is cervical motion tenderness?"],
+      "response": "It is pain elicited when the cervix is moved during examination, indicating pelvic inflammation."
+    },
+    {
+      "id": 175,
+      "intent": "ask_pid_adnexal_tenderness",
+      "user_examples": ["What is adnexal tenderness?"],
+      "response": "Adnexal tenderness refers to pain in the area of ovaries and fallopian tubes during examination."
+    },
+    {
+      "id": 176,
+      "intent": "ask_pid_uterine_tenderness",
+      "user_examples": ["What is uterine tenderness?"],
+      "response": "Uterine tenderness is pain felt when the uterus is palpated, indicating inflammation."
+    },
+    {
+      "id": 177,
+      "intent": "ask_pid_fever_threshold",
+      "user_examples": ["What fever indicates PID severity?"],
+      "response": "A temperature above 38°C often indicates moderate to severe PID."
+    },
+    {
+      "id": 178,
+      "intent": "ask_pid_discharge_character",
+      "user_examples": ["What does PID discharge look like?"],
+      "response": "Discharge may be purulent, foul-smelling, and abnormal in color."
+    },
+    {
+      "id": 179,
+      "intent": "ask_pid_menstrual_changes",
+      "user_examples": ["Does PID affect periods?"],
+      "response": "Yes, PID can cause irregular bleeding, heavy periods, or spotting."
+    },
+    {
+      "id": 180,
+      "intent": "ask_pid_dysmenorrhea",
+      "user_examples": ["Does PID cause painful periods?"],
+      "response": "Yes, PID can lead to secondary dysmenorrhea due to inflammation."
+    },
+
+    {
+      "id": 181,
+      "intent": "ask_pid_dyspareunia_recent",
+      "user_examples": ["Is recent pain during sex a PID sign?"],
+      "response": "Yes, recent onset of deep dyspareunia can be a sign of PID."
+    },
+    {
+      "id": 182,
+      "intent": "ask_pid_bleeding_post_coital",
+      "user_examples": ["Does PID cause bleeding after sex?"],
+      "response": "Yes, post-coital bleeding can occur due to cervical inflammation."
+    },
+    {
+      "id": 183,
+      "intent": "ask_pid_intermenstrual_bleeding",
+      "user_examples": ["Does PID cause bleeding between periods?"],
+      "response": "Yes, intermenstrual bleeding is a possible symptom of PID."
+    },
+    {
+      "id": 184,
+      "intent": "ask_pid_menorrhagia",
+      "user_examples": ["Can PID cause heavy periods?"],
+      "response": "Yes, heavy menstrual bleeding may occur due to uterine involvement."
+    },
+    {
+      "id": 185,
+      "intent": "ask_pid_fatigue",
+      "user_examples": ["Does PID cause tiredness?"],
+      "response": "Yes, fatigue and malaise are common due to systemic infection."
+    },
+    {
+      "id": 186,
+      "intent": "ask_pid_nausea",
+      "user_examples": ["Does PID cause nausea?"],
+      "response": "Yes, nausea may occur, especially in severe infections."
+    },
+    {
+      "id": 187,
+      "intent": "ask_pid_vomiting",
+      "user_examples": ["Does PID cause vomiting?"],
+      "response": "Vomiting can occur in severe PID cases, often indicating systemic involvement."
+    },
+    {
+      "id": 188,
+      "intent": "ask_pid_infertility_mechanism",
+      "user_examples": ["How exactly does PID cause infertility?"],
+      "response": "PID causes inflammation and scarring in fallopian tubes, blocking egg transport."
+    },
+    {
+      "id": 189,
+      "intent": "ask_pid_tubal_block",
+      "user_examples": ["Does PID block fallopian tubes?"],
+      "response": "Yes, scarring from PID can block fallopian tubes and prevent fertilization."
+    },
+    {
+      "id": 190,
+      "intent": "ask_pid_ovarian_effect",
+      "user_examples": ["Does PID affect ovaries?"],
+      "response": "Yes, PID can affect ovaries and lead to abscess formation."
+    },
+
+    {
+      "id": 191,
+      "intent": "ask_pid_parametritis",
+      "user_examples": ["What is parametritis in PID?"],
+      "response": "Parametritis is inflammation of tissues surrounding the uterus due to infection."
+    },
+    {
+      "id": 192,
+      "intent": "ask_pid_oophoritis",
+      "user_examples": ["What is oophoritis in PID?"],
+      "response": "Oophoritis is inflammation of the ovaries caused by infection."
+    },
+    {
+      "id": 193,
+      "intent": "ask_pid_salpingitis",
+      "user_examples": ["What is salpingitis?"],
+      "response": "Salpingitis is inflammation of the fallopian tubes, a key feature of PID."
+    },
+    {
+      "id": 194,
+      "intent": "ask_pid_endometritis",
+      "user_examples": ["What is endometritis?"],
+      "response": "Endometritis is inflammation of the uterine lining caused by infection."
+    },
+    {
+      "id": 195,
+      "intent": "ask_pid_peritonitis_definition",
+      "user_examples": ["What is peritonitis in PID?"],
+      "response": "Peritonitis is inflammation of the abdominal lining due to spread of infection."
+    },
+    {
+      "id": 196,
+      "intent": "ask_pid_pelvic_peritonitis",
+      "user_examples": ["What is pelvic peritonitis?"],
+      "response": "Pelvic peritonitis is localized inflammation of the pelvic lining due to infection."
+    },
+    {
+      "id": 197,
+      "intent": "ask_pid_septicemia",
+      "user_examples": ["Can PID cause septicemia?"],
+      "response": "Yes, severe untreated PID can lead to septicemia, a life-threatening infection in the blood."
+    },
+    {
+      "id": 198,
+      "intent": "ask_pid_diagnostic_flow",
+      "user_examples": ["What is diagnostic flow for PID?"],
+      "response": "Diagnosis involves clinical evaluation, lab tests, imaging, and sometimes laparoscopy."
+    },
+    {
+      "id": 199,
+      "intent": "ask_pid_clinical_flowchart",
+      "user_examples": ["Is there a clinical flowchart for PID?"],
+      "response": "Yes, clinical flowcharts help guide diagnosis and management based on symptoms and findings."
+    },
+    {
+      "id": 200,
+      "intent": "ask_pid_complete_overview",
+      "user_examples": ["Give full overview of PID"],
+      "response": "PID is a serious infection of the female reproductive organs caused mainly by bacteria, requiring early diagnosis and treatment to prevent complications like infertility."
+    },
+    {
+      "id": 201,
+      "intent": "ask_pid_screening_need",
+      "user_examples": ["Should I get screened for PID?", "Is screening needed for PID?"],
+      "response": "Routine screening is not done for PID itself, but screening for sexually transmitted infections like chlamydia and gonorrhea helps prevent PID."
+    },
+    {
+      "id": 202,
+      "intent": "ask_pid_asymptomatic_screening",
+      "user_examples": ["Can PID be detected without symptoms?"],
+      "response": "Yes, although PID itself may be silent, screening for STIs can help detect infections before they progress to PID."
+    },
+    {
+      "id": 203,
+      "intent": "ask_pid_routine_checkup",
+      "user_examples": ["Should I check for PID regularly?"],
+      "response": "Regular gynecological checkups and STI testing are recommended for sexually active women to reduce PID risk."
+    },
+    {
+      "id": 204,
+      "intent": "ask_pid_preventive_antibiotics",
+      "user_examples": ["Can antibiotics prevent PID?"],
+      "response": "Preventive antibiotics are not routinely used, but early treatment of STIs can prevent the development of PID."
+    },
+    {
+      "id": 205,
+      "intent": "ask_pid_partner_prevention",
+      "user_examples": ["How to prevent PID from partner?"],
+      "response": "Ensuring both partners are tested and treated for STIs and practicing safe sex can significantly reduce PID risk."
+    },
+    {
+      "id": 206,
+      "intent": "ask_pid_condom_effectiveness",
+      "user_examples": ["How effective are condoms in preventing PID?"],
+      "response": "Condoms are highly effective in reducing the risk of STIs, which are the main cause of PID."
+    },
+    {
+      "id": 207,
+      "intent": "ask_pid_monogamy_effect",
+      "user_examples": ["Does having one partner reduce PID risk?"],
+      "response": "Yes, being in a mutually monogamous relationship reduces exposure to STIs and lowers PID risk."
+    },
+    {
+      "id": 208,
+      "intent": "ask_pid_education_role",
+      "user_examples": ["Does education help prevent PID?"],
+      "response": "Yes, awareness about safe sex, hygiene, and early symptoms helps in preventing PID."
+    },
+    {
+      "id": 209,
+      "intent": "ask_pid_adolescent_education",
+      "user_examples": ["Why is education important for teenagers in PID?"],
+      "response": "Adolescents are at higher risk, so education about safe practices and early treatment is essential."
+    },
+    {
+      "id": 210,
+      "intent": "ask_pid_healthcare_access",
+      "user_examples": ["Does access to healthcare affect PID?"],
+      "response": "Yes, timely access to healthcare helps in early diagnosis and treatment, reducing complications."
+    },
+
+    {
+      "id": 211,
+      "intent": "ask_pid_symptom_duration",
+      "user_examples": ["How long do PID symptoms last?"],
+      "response": "Symptoms may last days to weeks, but they usually improve within a few days after starting treatment."
+    },
+    {
+      "id": 212,
+      "intent": "ask_pid_symptom_worsening",
+      "user_examples": ["Can PID symptoms get worse?"],
+      "response": "Yes, without treatment, symptoms can worsen and lead to serious complications."
+    },
+    {
+      "id": 213,
+      "intent": "ask_pid_symptom_variability",
+      "user_examples": ["Do PID symptoms vary between people?"],
+      "response": "Yes, symptoms can range from mild to severe and may even be absent in some cases."
+    },
+    {
+      "id": 214,
+      "intent": "ask_pid_unilateral_pain",
+      "user_examples": ["Can PID cause pain on one side?"],
+      "response": "Yes, although pain is often bilateral, it can sometimes be felt on one side."
+    },
+    {
+      "id": 215,
+      "intent": "ask_pid_bilateral_pain",
+      "user_examples": ["Is PID pain usually on both sides?"],
+      "response": "Yes, PID commonly causes bilateral lower abdominal pain."
+    },
+    {
+      "id": 216,
+      "intent": "ask_pid_discharge_smell",
+      "user_examples": ["Does PID discharge smell bad?"],
+      "response": "Yes, discharge may have a foul odor due to infection."
+    },
+    {
+      "id": 217,
+      "intent": "ask_pid_discharge_color",
+      "user_examples": ["What color is PID discharge?"],
+      "response": "Discharge may be yellow, green, or gray depending on the infection."
+    },
+    {
+      "id": 218,
+      "intent": "ask_pid_fever_pattern",
+      "user_examples": ["Is fever constant in PID?"],
+      "response": "Fever may be intermittent or persistent depending on the severity of infection."
+    },
+    {
+      "id": 219,
+      "intent": "ask_pid_pain_intensity",
+      "user_examples": ["How severe is PID pain?"],
+      "response": "Pain can range from mild discomfort to severe, debilitating pain."
+    },
+    {
+      "id": 220,
+      "intent": "ask_pid_pain_location",
+      "user_examples": ["Where is PID pain located?"],
+      "response": "Pain is usually located in the lower abdomen or pelvic region."
+    },
+
+    {
+      "id": 221,
+      "intent": "ask_pid_diagnosis_accuracy",
+      "user_examples": ["Is PID diagnosis accurate?"],
+      "response": "Diagnosis is based on clinical findings and may not always be definitive, so doctors often treat based on suspicion."
+    },
+    {
+      "id": 222,
+      "intent": "ask_pid_false_negative_tests",
+      "user_examples": ["Can PID tests be negative?"],
+      "response": "Yes, tests for specific infections may be negative even when PID is present."
+    },
+    {
+      "id": 223,
+      "intent": "ask_pid_gold_standard",
+      "user_examples": ["What is the gold standard for PID diagnosis?"],
+      "response": "Laparoscopy is considered the most accurate method but is not routinely used."
+    },
+    {
+      "id": 224,
+      "intent": "ask_pid_clinical_judgment",
+      "user_examples": ["Is PID diagnosed based on symptoms?"],
+      "response": "Yes, clinical judgment plays a key role in diagnosing PID."
+    },
+    {
+      "id": 225,
+      "intent": "ask_pid_test_limitations",
+      "user_examples": ["What are limitations of PID tests?"],
+      "response": "Tests may lack sensitivity and specificity, so diagnosis often relies on a combination of findings."
+    },
+    {
+      "id": 226,
+      "intent": "ask_pid_ultrasound_limitations",
+      "user_examples": ["Is ultrasound always useful in PID?"],
+      "response": "Ultrasound is useful for complications but may not detect mild PID."
+    },
+    {
+      "id": 227,
+      "intent": "ask_pid_ct_limitations",
+      "user_examples": ["Is CT scan necessary for PID?"],
+      "response": "CT scan is not routinely required but may help in complicated cases."
+    },
+    {
+      "id": 228,
+      "intent": "ask_pid_mri_advantage",
+      "user_examples": ["Why use MRI in PID?"],
+      "response": "MRI provides detailed imaging without radiation and helps differentiate other conditions."
+    },
+    {
+      "id": 229,
+      "intent": "ask_pid_lab_marker_specificity",
+      "user_examples": ["Are lab markers specific for PID?"],
+      "response": "Markers like CRP and ESR indicate inflammation but are not specific to PID."
+    },
+    {
+      "id": 230,
+      "intent": "ask_pid_wbc_specificity",
+      "user_examples": ["Is WBC count specific for PID?"],
+      "response": "Elevated WBC suggests infection but is not specific for PID alone."
+    },
+
+    {
+      "id": 231,
+      "intent": "ask_pid_reinfection_prevention",
+      "user_examples": ["How to avoid PID again?"],
+      "response": "Prevent reinfection by treating partners, practicing safe sex, and regular STI screening."
+    },
+    {
+      "id": 232,
+      "intent": "ask_pid_partner_compliance",
+      "user_examples": ["Why should partner complete treatment?"],
+      "response": "Incomplete partner treatment can lead to reinfection and persistent disease."
+    },
+    {
+      "id": 233,
+      "intent": "ask_pid_behavior_change",
+      "user_examples": ["What lifestyle changes prevent PID?"],
+      "response": "Limiting sexual partners, using protection, and seeking early treatment are key preventive measures."
+    },
+    {
+      "id": 234,
+      "intent": "ask_pid_sexual_health_awareness",
+      "user_examples": ["Why is sexual health awareness important?"],
+      "response": "Awareness helps in early detection and prevention of infections leading to PID."
+    },
+    {
+      "id": 235,
+      "intent": "ask_pid_health_education_programs",
+      "user_examples": ["Do health programs help prevent PID?"],
+      "response": "Yes, educational programs improve awareness and reduce risk behaviors."
+    },
+    {
+      "id": 236,
+      "intent": "ask_pid_clinic_visits",
+      "user_examples": ["Should I visit clinic regularly?"],
+      "response": "Regular visits help detect infections early and prevent complications."
+    },
+    {
+      "id": 237,
+      "intent": "ask_pid_self_monitoring",
+      "user_examples": ["How to monitor PID symptoms at home?"],
+      "response": "Track symptoms like pain, discharge, and fever, and seek medical help if they worsen."
+    },
+    {
+      "id": 238,
+      "intent": "ask_pid_medication_adherence",
+      "user_examples": ["Why is adherence important in PID?"],
+      "response": "Proper adherence ensures complete infection clearance and reduces recurrence risk."
+    },
+    {
+      "id": 239,
+      "intent": "ask_pid_drug_interactions",
+      "user_examples": ["Do PID drugs interact with other medicines?"],
+      "response": "Yes, some antibiotics may interact with other medications, so always inform your doctor."
+    },
+    {
+      "id": 240,
+      "intent": "ask_pid_alcohol_interaction",
+      "user_examples": ["Can I drink alcohol during PID treatment?"],
+      "response": "Alcohol should be avoided, especially with metronidazole, as it can cause adverse reactions."
+    },
+
+    {
+      "id": 241,
+      "intent": "ask_pid_nutritional_support",
+      "user_examples": ["Does diet help in PID recovery?"],
+      "response": "A balanced diet supports immunity and helps recovery, although antibiotics are the main treatment."
+    },
+    {
+      "id": 242,
+      "intent": "ask_pid_immunity_role",
+      "user_examples": ["Does immunity affect PID?"],
+      "response": "A strong immune system helps fight infection, but medical treatment is still essential."
+    },
+    {
+      "id": 243,
+      "intent": "ask_pid_hiv_relation",
+      "user_examples": ["Does HIV affect PID severity?"],
+      "response": "Yes, women with HIV may have more severe symptoms but generally respond well to treatment."
+    },
+    {
+      "id": 244,
+      "intent": "ask_pid_antibiotic_resistance",
+      "user_examples": ["Is antibiotic resistance a problem in PID?"],
+      "response": "Yes, resistance can affect treatment choice, so guidelines are updated regularly."
+    },
+    {
+      "id": 245,
+      "intent": "ask_pid_global_prevalence",
+      "user_examples": ["How common is PID worldwide?"],
+      "response": "PID affects millions of women globally, particularly those of reproductive age."
+    },
+    {
+      "id": 246,
+      "intent": "ask_pid_india_prevalence",
+      "user_examples": ["How common is PID in India?"],
+      "response": "PID is relatively common in India due to factors like infections, poor hygiene, and limited access to care."
+    },
+    {
+      "id": 247,
+      "intent": "ask_pid_age_group",
+      "user_examples": ["Which age group is most affected by PID?"],
+      "response": "Women aged 15–25 years are most commonly affected."
+    },
+    {
+      "id": 248,
+      "intent": "ask_pid_gender_specific",
+      "user_examples": ["Does PID affect men?"],
+      "response": "No, PID specifically affects female reproductive organs."
+    },
+    {
+      "id": 249,
+      "intent": "ask_pid_public_health_importance",
+      "user_examples": ["Why is PID a public health issue?"],
+      "response": "PID is important due to its impact on fertility, healthcare costs, and quality of life."
+    },
+    {
+      "id": 250,
+      "intent": "ask_pid_final_summary",
+      "user_examples": ["Give final summary of PID"],
+      "response": "PID is a preventable and treatable infection of female reproductive organs, but early diagnosis and proper management are essential to avoid serious complications."
+    },
+     
+    {
+      "id": 251,
+      "intent": "ask_pid_subclinical",
+      "user_examples": ["What is subclinical PID?", "Can PID exist without clear symptoms?"],
+      "response": "Subclinical PID refers to infection of the reproductive organs without obvious symptoms. Despite mild or absent signs, it can still cause long-term complications like infertility."
+    },
+    {
+      "id": 252,
+      "intent": "ask_pid_missed_diagnosis",
+      "user_examples": ["Can PID be missed during diagnosis?"],
+      "response": "Yes, PID can be missed because symptoms are often mild or non-specific, making clinical suspicion very important."
+    },
+    {
+      "id": 253,
+      "intent": "ask_pid_symptom_overlap",
+      "user_examples": ["Do PID symptoms overlap with other diseases?"],
+      "response": "Yes, PID symptoms can overlap with conditions like appendicitis, ectopic pregnancy, urinary infections, and gastrointestinal disorders."
+    },
+    {
+      "id": 254,
+      "intent": "ask_pid_appendicitis_difference",
+      "user_examples": ["How is PID different from appendicitis?"],
+      "response": "Appendicitis usually presents with right-sided abdominal pain and nausea, while PID is associated with pelvic pain, discharge, and gynecological symptoms."
+    },
+    {
+      "id": 255,
+      "intent": "ask_pid_ectopic_difference",
+      "user_examples": ["How to differentiate PID from ectopic pregnancy?"],
+      "response": "Ectopic pregnancy must be ruled out using a pregnancy test, as both conditions can cause abdominal pain but require very different treatments."
+    },
+    {
+      "id": 256,
+      "intent": "ask_pid_uti_difference",
+      "user_examples": ["How is PID different from UTI?"],
+      "response": "UTI usually causes urinary symptoms like burning and frequency, while PID causes pelvic pain and vaginal discharge."
+    },
+    {
+      "id": 257,
+      "intent": "ask_pid_endometriosis_difference",
+      "user_examples": ["How is PID different from endometriosis?"],
+      "response": "Endometriosis is a chronic condition related to menstrual cycles, while PID is an acute infection caused by bacteria."
+    },
+    {
+      "id": 258,
+      "intent": "ask_pid_ovarian_cyst_difference",
+      "user_examples": ["How is PID different from ovarian cyst problems?"],
+      "response": "Ovarian cyst issues often present suddenly, while PID develops with infection-related symptoms like discharge and fever."
+    },
+    {
+      "id": 259,
+      "intent": "ask_pid_bowel_conditions",
+      "user_examples": ["Can bowel diseases mimic PID?"],
+      "response": "Yes, conditions like irritable bowel syndrome or diverticulitis can mimic PID symptoms."
+    },
+    {
+      "id": 260,
+      "intent": "ask_pid_functional_pain",
+      "user_examples": ["Can PID be confused with functional pain?"],
+      "response": "Yes, functional pelvic pain may resemble PID but lacks infection-related findings."
+    },
+
+    {
+      "id": 261,
+      "intent": "ask_pid_testing_frequency",
+      "user_examples": ["How often should I test for STIs to prevent PID?"],
+      "response": "Sexually active individuals, especially under 25, should consider annual STI screening or more frequent testing if at higher risk."
+    },
+    {
+      "id": 262,
+      "intent": "ask_pid_partner_history",
+      "user_examples": ["Does partner history matter in PID?"],
+      "response": "Yes, a partner’s STI history significantly affects the risk of developing PID."
+    },
+    {
+      "id": 263,
+      "intent": "ask_pid_recent_infection",
+      "user_examples": ["Does recent STI increase PID risk?"],
+      "response": "Yes, recent untreated or partially treated infections increase the likelihood of PID."
+    },
+    {
+      "id": 264,
+      "intent": "ask_pid_protection_methods",
+      "user_examples": ["What protection methods prevent PID?"],
+      "response": "Barrier methods like condoms are most effective in preventing infections that lead to PID."
+    },
+    {
+      "id": 265,
+      "intent": "ask_pid_screening_after_pid",
+      "user_examples": ["Should I get tested again after PID?"],
+      "response": "Yes, repeat testing may be required to ensure infection clearance and prevent recurrence."
+    },
+    {
+      "id": 266,
+      "intent": "ask_pid_partner_followup",
+      "user_examples": ["Do partners need follow-up after treatment?"],
+      "response": "Yes, follow-up ensures that partners are treated effectively and do not cause reinfection."
+    },
+    {
+      "id": 267,
+      "intent": "ask_pid_reinfection_risk_factors",
+      "user_examples": ["What causes reinfection in PID?"],
+      "response": "Reinfection may occur due to untreated partners, poor compliance, or continued exposure to risk factors."
+    },
+    {
+      "id": 268,
+      "intent": "ask_pid_safe_practices",
+      "user_examples": ["What safe practices reduce PID risk?"],
+      "response": "Safe sexual practices, hygiene, and regular health checkups help reduce PID risk."
+    },
+    {
+      "id": 269,
+      "intent": "ask_pid_health_seeking_behavior",
+      "user_examples": ["Does early doctor visit help in PID?"],
+      "response": "Yes, early medical consultation leads to timely treatment and prevents complications."
+    },
+    {
+      "id": 270,
+      "intent": "ask_pid_awareness_importance",
+      "user_examples": ["Why is awareness about PID important?"],
+      "response": "Awareness helps recognize early symptoms and encourages prompt treatment."
+    },
+
+    {
+      "id": 271,
+      "intent": "ask_pid_social_factors",
+      "user_examples": ["Do social factors affect PID risk?"],
+      "response": "Yes, factors like education, access to care, and cultural practices influence PID risk."
+    },
+    {
+      "id": 272,
+      "intent": "ask_pid_economic_factors",
+      "user_examples": ["Does economic status affect PID?"],
+      "response": "Limited access to healthcare and hygiene resources may increase PID risk."
+    },
+    {
+      "id": 273,
+      "intent": "ask_pid_rural_vs_urban",
+      "user_examples": ["Is PID more common in rural areas?"],
+      "response": "PID may be more prevalent in areas with limited healthcare access and awareness."
+    },
+    {
+      "id": 274,
+      "intent": "ask_pid_healthcare_delay",
+      "user_examples": ["Does delay in healthcare worsen PID?"],
+      "response": "Yes, delays in seeking treatment increase the risk of complications."
+    },
+    {
+      "id": 275,
+      "intent": "ask_pid_clinic_availability",
+      "user_examples": ["Do clinics help reduce PID cases?"],
+      "response": "Accessible clinics enable early diagnosis and treatment, reducing PID burden."
+    },
+    {
+      "id": 276,
+      "intent": "ask_pid_community_programs",
+      "user_examples": ["Do community programs help prevent PID?"],
+      "response": "Yes, community programs promote awareness, screening, and early treatment."
+    },
+    {
+      "id": 277,
+      "intent": "ask_pid_school_programs",
+      "user_examples": ["Do school programs help prevent PID?"],
+      "response": "Sex education programs help adolescents understand risks and prevention strategies."
+    },
+    {
+      "id": 278,
+      "intent": "ask_pid_confidential_care",
+      "user_examples": ["Is confidential care important in PID?"],
+      "response": "Yes, confidentiality encourages individuals to seek care without fear or stigma."
+    },
+    {
+      "id": 279,
+      "intent": "ask_pid_partner_communication",
+      "user_examples": ["Should I talk to my partner about PID?"],
+      "response": "Yes, open communication helps ensure both partners get tested and treated."
+    },
+    {
+      "id": 280,
+      "intent": "ask_pid_stigma",
+      "user_examples": ["Is there stigma around PID?"],
+      "response": "Yes, stigma may prevent individuals from seeking care, which can worsen outcomes."
+    },
+
+    {
+      "id": 281,
+      "intent": "ask_pid_psychological_effect",
+      "user_examples": ["Does PID affect mental health?"],
+      "response": "Yes, chronic pain, infertility concerns, and stigma can impact mental health."
+    },
+    {
+      "id": 282,
+      "intent": "ask_pid_anxiety",
+      "user_examples": ["Can PID cause anxiety?"],
+      "response": "Yes, concerns about fertility and health can lead to anxiety."
+    },
+    {
+      "id": 283,
+      "intent": "ask_pid_relationship_impact",
+      "user_examples": ["Does PID affect relationships?"],
+      "response": "Yes, sexual health issues and partner treatment can impact relationships."
+    },
+    {
+      "id": 284,
+      "intent": "ask_pid_quality_of_life",
+      "user_examples": ["Does PID affect quality of life?"],
+      "response": "Yes, chronic pain and complications can reduce quality of life."
+    },
+    {
+      "id": 285,
+      "intent": "ask_pid_work_impact",
+      "user_examples": ["Does PID affect work life?"],
+      "response": "Severe symptoms may interfere with daily activities and work productivity."
+    },
+    {
+      "id": 286,
+      "intent": "ask_pid_physical_activity",
+      "user_examples": ["Can I exercise with PID?"],
+      "response": "Light activity may be possible, but rest is recommended during acute infection."
+    },
+    {
+      "id": 287,
+      "intent": "ask_pid_travel",
+      "user_examples": ["Can I travel during PID treatment?"],
+      "response": "Travel may be possible if symptoms are mild, but medical advice should be followed."
+    },
+    {
+      "id": 288,
+      "intent": "ask_pid_lifestyle_adjustments",
+      "user_examples": ["What lifestyle changes help PID recovery?"],
+      "response": "Rest, hydration, medication adherence, and avoiding sexual activity support recovery."
+    },
+    {
+      "id": 289,
+      "intent": "ask_pid_sleep",
+      "user_examples": ["Does sleep affect PID recovery?"],
+      "response": "Adequate sleep supports immune function and recovery."
+    },
+    {
+      "id": 290,
+      "intent": "ask_pid_stress",
+      "user_examples": ["Does stress affect PID?"],
+      "response": "Stress can weaken immunity and may affect recovery, but treatment remains essential."
+    },
+
+    {
+      "id": 291,
+      "intent": "ask_pid_future_pregnancy_planning",
+      "user_examples": ["Can I plan pregnancy after PID?"],
+      "response": "Yes, but medical evaluation is advised to assess fertility and reduce risks."
+    },
+    {
+      "id": 292,
+      "intent": "ask_pid_fertility_testing",
+      "user_examples": ["Should I test fertility after PID?"],
+      "response": "Fertility testing may be recommended if there are concerns after PID."
+    },
+    {
+      "id": 293,
+      "intent": "ask_pid_ovulation_after_pid",
+      "user_examples": ["Does PID affect ovulation?"],
+      "response": "PID mainly affects fallopian tubes, but severe cases may impact ovarian function."
+    },
+    {
+      "id": 294,
+      "intent": "ask_pid_family_planning",
+      "user_examples": ["Can PID affect family planning?"],
+      "response": "Yes, PID can influence fertility decisions and may require medical consultation."
+    },
+    {
+      "id": 295,
+      "intent": "ask_pid_reproductive_counseling",
+      "user_examples": ["Do I need counseling after PID?"],
+      "response": "Counseling helps understand fertility risks and future reproductive options."
+    },
+    {
+      "id": 296,
+      "intent": "ask_pid_long_term_monitoring",
+      "user_examples": ["Do I need long-term monitoring after PID?"],
+      "response": "Yes, monitoring helps detect complications and ensure reproductive health."
+    },
+    {
+      "id": 297,
+      "intent": "ask_pid_health_records",
+      "user_examples": ["Should I keep records of PID treatment?"],
+      "response": "Yes, maintaining records helps in future medical care and decision-making."
+    },
+    {
+      "id": 298,
+      "intent": "ask_pid_medical_history_importance",
+      "user_examples": ["Is PID history important for doctors?"],
+      "response": "Yes, past PID episodes influence diagnosis and management decisions."
+    },
+    {
+      "id": 299,
+      "intent": "ask_pid_clinical_guidelines",
+      "user_examples": ["Are there guidelines for PID treatment?"],
+      "response": "Yes, organizations like CDC and national bodies provide evidence-based treatment guidelines."
+    },
+    {
+      "id": 300,
+      "intent": "ask_pid_complete_knowledge",
+      "user_examples": ["What should I know about PID overall?"],
+      "response": "PID is a preventable and treatable infection, but early diagnosis, proper treatment, and preventive measures are essential to avoid serious complications."
+    },
+    {
+      "id": 301,
+      "intent": "ask_pid_recurrence_prevention",
+      "user_examples": ["How to prevent PID recurrence?", "How do I stop PID from coming back?"],
+      "response": "Preventing recurrence involves completing treatment, ensuring partner treatment, practicing safe sex, and regular STI screening."
+    },
+    {
+      "id": 302,
+      "intent": "ask_pid_long_term_followup",
+      "user_examples": ["Do I need long-term follow-up after PID?"],
+      "response": "Yes, long-term follow-up helps detect complications like infertility or chronic pain early."
+    },
+    {
+      "id": 303,
+      "intent": "ask_pid_clinical_reassessment",
+      "user_examples": ["When should PID be reassessed?"],
+      "response": "Patients should be reassessed within 72 hours if symptoms persist or worsen after treatment."
+    },
+    {
+      "id": 304,
+      "intent": "ask_pid_failure_of_treatment",
+      "user_examples": ["What indicates PID treatment failure?"],
+      "response": "Persistent symptoms, worsening pain, or fever after 72 hours may indicate treatment failure."
+    },
+    {
+      "id": 305,
+      "intent": "ask_pid_escalation_of_care",
+      "user_examples": ["When should treatment be escalated in PID?"],
+      "response": "Care should be escalated if symptoms worsen, complications develop, or there is no improvement with initial therapy."
+    },
+    {
+      "id": 306,
+      "intent": "ask_pid_antibiotic_switch",
+      "user_examples": ["When should antibiotics be changed in PID?"],
+      "response": "Antibiotics may be changed if there is no clinical improvement or if resistance is suspected."
+    },
+    {
+      "id": 307,
+      "intent": "ask_pid_combination_therapy",
+      "user_examples": ["Why use multiple antibiotics in PID?"],
+      "response": "Combination therapy ensures coverage of different types of bacteria involved in PID."
+    },
+    {
+      "id": 308,
+      "intent": "ask_pid_drug_resistance_management",
+      "user_examples": ["How is antibiotic resistance handled in PID?"],
+      "response": "Treatment is adjusted based on guidelines and local resistance patterns."
+    },
+    {
+      "id": 309,
+      "intent": "ask_pid_allergy_management",
+      "user_examples": ["How is PID treated in allergic patients?"],
+      "response": "Alternative antibiotics are selected based on the type of allergy and infection."
+    },
+    {
+      "id": 310,
+      "intent": "ask_pid_drug_monitoring",
+      "user_examples": ["Do PID medications need monitoring?"],
+      "response": "Yes, monitoring is needed for side effects and response to therapy."
+    },
+
+    {
+      "id": 311,
+      "intent": "ask_pid_tubo_ovarian_abscess_signs",
+      "user_examples": ["What are signs of tubo-ovarian abscess?"],
+      "response": "Signs include severe pelvic pain, fever, and a palpable mass on examination."
+    },
+    {
+      "id": 312,
+      "intent": "ask_pid_abscess_diagnosis",
+      "user_examples": ["How is abscess diagnosed in PID?"],
+      "response": "Abscess is diagnosed using imaging techniques like ultrasound or CT scan."
+    },
+    {
+      "id": 313,
+      "intent": "ask_pid_abscess_treatment",
+      "user_examples": ["How is abscess treated in PID?"],
+      "response": "Treatment includes IV antibiotics and sometimes drainage or surgery."
+    },
+    {
+      "id": 314,
+      "intent": "ask_pid_abscess_complications",
+      "user_examples": ["What happens if abscess ruptures?"],
+      "response": "Rupture can lead to life-threatening infection and requires emergency treatment."
+    },
+    {
+      "id": 315,
+      "intent": "ask_pid_peritonitis_management",
+      "user_examples": ["How is peritonitis managed in PID?"],
+      "response": "Peritonitis requires hospitalization, IV antibiotics, and close monitoring."
+    },
+    {
+      "id": 316,
+      "intent": "ask_pid_sepsis_management",
+      "user_examples": ["How is sepsis treated in PID?"],
+      "response": "Sepsis requires urgent hospitalization, IV antibiotics, and supportive care."
+    },
+    {
+      "id": 317,
+      "intent": "ask_pid_emergency_signs",
+      "user_examples": ["When is PID an emergency?"],
+      "response": "Severe pain, high fever, vomiting, or fainting indicate emergency and need immediate care."
+    },
+    {
+      "id": 318,
+      "intent": "ask_pid_hospital_stay_duration",
+      "user_examples": ["How long is hospital stay for PID?"],
+      "response": "Hospital stay depends on severity but typically lasts a few days until improvement."
+    },
+    {
+      "id": 319,
+      "intent": "ask_pid_iv_duration",
+      "user_examples": ["How long are IV antibiotics given in PID?"],
+      "response": "IV antibiotics are usually given until clinical improvement, then switched to oral therapy."
+    },
+    {
+      "id": 320,
+      "intent": "ask_pid_discharge_after_hospital",
+      "user_examples": ["When can I go home after PID hospitalization?"],
+      "response": "Patients are discharged once symptoms improve and oral treatment can continue."
+    },
+
+    {
+      "id": 321,
+      "intent": "ask_pid_infertility_risk_percentage",
+      "user_examples": ["What is the infertility risk after PID?"],
+      "response": "The risk increases with each episode, especially if treatment is delayed or infection is severe."
+    },
+    {
+      "id": 322,
+      "intent": "ask_pid_chronic_pain_percentage",
+      "user_examples": ["How common is chronic pain after PID?"],
+      "response": "Chronic pelvic pain occurs in a significant number of women after PID."
+    },
+    {
+      "id": 323,
+      "intent": "ask_pid_ectopic_probability",
+      "user_examples": ["What is risk of ectopic pregnancy after PID?"],
+      "response": "PID increases ectopic pregnancy risk due to tubal damage."
+    },
+    {
+      "id": 324,
+      "intent": "ask_pid_multiple_episode_risk",
+      "user_examples": ["How does multiple PID episodes affect health?"],
+      "response": "Multiple episodes greatly increase complications like infertility."
+    },
+    {
+      "id": 325,
+      "intent": "ask_pid_reproductive_damage_reversibility",
+      "user_examples": ["Is PID damage reversible?"],
+      "response": "Some damage may be permanent, especially if scarring occurs."
+    },
+    {
+      "id": 326,
+      "intent": "ask_pid_tubal_scarring",
+      "user_examples": ["What is tubal scarring in PID?"],
+      "response": "Scarring occurs due to inflammation and can block fallopian tubes."
+    },
+    {
+      "id": 327,
+      "intent": "ask_pid_adhesion_formation",
+      "user_examples": ["How do adhesions form in PID?"],
+      "response": "Adhesions form when inflamed tissues heal and stick together."
+    },
+    {
+      "id": 328,
+      "intent": "ask_pid_adhesion_effects",
+      "user_examples": ["What problems do adhesions cause?"],
+      "response": "Adhesions can cause pain and infertility by altering normal anatomy."
+    },
+    {
+      "id": 329,
+      "intent": "ask_pid_chronic_infection",
+      "user_examples": ["Can PID become chronic?"],
+      "response": "Yes, untreated or recurrent PID can lead to chronic infection."
+    },
+    {
+      "id": 330,
+      "intent": "ask_pid_long_term_health",
+      "user_examples": ["Does PID affect long-term health?"],
+      "response": "Yes, it can affect reproductive health and overall quality of life."
+    },
+
+    {
+      "id": 331,
+      "intent": "ask_pid_public_awareness",
+      "user_examples": ["Is PID awareness important?"],
+      "response": "Yes, awareness helps reduce risk and promotes early treatment."
+    },
+    {
+      "id": 332,
+      "intent": "ask_pid_screening_programs",
+      "user_examples": ["Are there screening programs for PID prevention?"],
+      "response": "Programs focus on STI screening to prevent PID."
+    },
+    {
+      "id": 333,
+      "intent": "ask_pid_health_policy",
+      "user_examples": ["Is PID included in health policies?"],
+      "response": "Yes, PID prevention is part of reproductive health programs."
+    },
+    {
+      "id": 334,
+      "intent": "ask_pid_global_guidelines",
+      "user_examples": ["Are there global PID guidelines?"],
+      "response": "Yes, organizations like WHO and CDC provide management guidelines."
+    },
+    {
+      "id": 335,
+      "intent": "ask_pid_national_guidelines",
+      "user_examples": ["Are there national PID guidelines?"],
+      "response": "Yes, many countries have specific guidelines for diagnosis and treatment."
+    },
+    {
+      "id": 336,
+      "intent": "ask_pid_clinical_training",
+      "user_examples": ["Do doctors get trained for PID management?"],
+      "response": "Yes, healthcare professionals are trained to diagnose and manage PID effectively."
+    },
+    {
+      "id": 337,
+      "intent": "ask_pid_research",
+      "user_examples": ["Is research ongoing in PID?"],
+      "response": "Yes, research focuses on better diagnosis, treatment, and prevention."
+    },
+    {
+      "id": 338,
+      "intent": "ask_pid_future_treatments",
+      "user_examples": ["Will PID treatment improve in future?"],
+      "response": "Advances in diagnostics and antibiotics are expected to improve outcomes."
+    },
+    {
+      "id": 339,
+      "intent": "ask_pid_vaccine",
+      "user_examples": ["Is there a vaccine for PID?"],
+      "response": "There is no vaccine for PID, but preventing STIs helps reduce risk."
+    },
+    {
+      "id": 340,
+      "intent": "ask_pid_prevention_future",
+      "user_examples": ["How can PID prevention improve?"],
+      "response": "Better education, screening, and access to care will improve prevention."
+    },
+
+    {
+      "id": 341,
+      "intent": "ask_pid_patient_education",
+      "user_examples": ["Why is patient education important in PID?"],
+      "response": "Educated patients are more likely to seek early treatment and prevent complications."
+    },
+    {
+      "id": 342,
+      "intent": "ask_pid_compliance_importance",
+      "user_examples": ["Why follow treatment strictly in PID?"],
+      "response": "Strict compliance ensures full recovery and prevents recurrence."
+    },
+    {
+      "id": 343,
+      "intent": "ask_pid_partner_education",
+      "user_examples": ["Should partners be educated about PID?"],
+      "response": "Yes, partner awareness prevents reinfection and spread."
+    },
+    {
+      "id": 344,
+      "intent": "ask_pid_community_awareness",
+      "user_examples": ["Does community awareness help?"],
+      "response": "Yes, it reduces stigma and promotes early healthcare seeking."
+    },
+    {
+      "id": 345,
+      "intent": "ask_pid_stigma_reduction",
+      "user_examples": ["How to reduce PID stigma?"],
+      "response": "Education and open discussions help reduce stigma."
+    },
+    {
+      "id": 346,
+      "intent": "ask_pid_healthcare_barriers",
+      "user_examples": ["What are barriers in PID care?"],
+      "response": "Barriers include lack of awareness, stigma, and limited access to care."
+    },
+    {
+      "id": 347,
+      "intent": "ask_pid_access_improvement",
+      "user_examples": ["How to improve PID care access?"],
+      "response": "Improving healthcare infrastructure and awareness helps access."
+    },
+    {
+      "id": 348,
+      "intent": "ask_pid_patient_support",
+      "user_examples": ["Is support needed for PID patients?"],
+      "response": "Yes, emotional and medical support improves outcomes."
+    },
+    {
+      "id": 349,
+      "intent": "ask_pid_health_system_role",
+      "user_examples": ["What is the role of healthcare system in PID?"],
+      "response": "Healthcare systems play a key role in prevention, diagnosis, and treatment."
+    },
+    {
+      "id": 350,
+      "intent": "ask_pid_final_clinical_summary",
+      "user_examples": ["Give clinical summary of PID"],
+      "response": "PID is a common reproductive tract infection requiring early diagnosis, proper antibiotic treatment, and preventive strategies to avoid serious complications."
+    },
+    {
+      "id": 351,
+      "intent": "ask_pid_case_definition",
+      "user_examples": ["What is a PID case definition?", "How is PID defined clinically?"],
+      "response": "A PID case is defined based on clinical findings such as pelvic pain with cervical motion, uterine, or adnexal tenderness, often supported by lab or imaging evidence."
+    },
+    {
+      "id": 352,
+      "intent": "ask_pid_suspected_case",
+      "user_examples": ["What is suspected PID?"],
+      "response": "Suspected PID refers to cases where symptoms suggest infection but confirmation is not yet established."
+    },
+    {
+      "id": 353,
+      "intent": "ask_pid_confirmed_case",
+      "user_examples": ["What confirms PID diagnosis?"],
+      "response": "PID is confirmed through imaging, laboratory tests, or direct visualization via laparoscopy."
+    },
+    {
+      "id": 354,
+      "intent": "ask_pid_clinical_threshold",
+      "user_examples": ["When should doctors start PID treatment?"],
+      "response": "Treatment should begin when clinical suspicion is high, even before confirmation, to prevent complications."
+    },
+    {
+      "id": 355,
+      "intent": "ask_pid_empirical_treatment",
+      "user_examples": ["What is empirical treatment in PID?"],
+      "response": "Empirical treatment means starting antibiotics based on likely infection before lab confirmation."
+    },
+    {
+      "id": 356,
+      "intent": "ask_pid_overdiagnosis",
+      "user_examples": ["Can PID be overdiagnosed?"],
+      "response": "Yes, because symptoms overlap with other conditions, some cases may be treated as PID without confirmation."
+    },
+    {
+      "id": 357,
+      "intent": "ask_pid_underdiagnosis",
+      "user_examples": ["Can PID be underdiagnosed?"],
+      "response": "Yes, mild or asymptomatic cases may go undetected, leading to complications."
+    },
+    {
+      "id": 358,
+      "intent": "ask_pid_clinical_uncertainty",
+      "user_examples": ["Is PID diagnosis always certain?"],
+      "response": "No, diagnosis often involves uncertainty and relies on clinical judgment."
+    },
+    {
+      "id": 359,
+      "intent": "ask_pid_diagnostic_sensitivity",
+      "user_examples": ["How sensitive is PID diagnosis?"],
+      "response": "Clinical diagnosis is sensitive but may lack specificity, leading to cautious treatment."
+    },
+    {
+      "id": 360,
+      "intent": "ask_pid_diagnostic_specificity",
+      "user_examples": ["Is PID diagnosis specific?"],
+      "response": "PID diagnosis is not highly specific because many conditions share similar symptoms."
+    },
+
+    {
+      "id": 361,
+      "intent": "ask_pid_inflammation_pathway",
+      "user_examples": ["How does inflammation occur in PID?"],
+      "response": "Inflammation occurs when bacteria trigger immune responses, leading to tissue damage and swelling."
+    },
+    {
+      "id": 362,
+      "intent": "ask_pid_cytokine_role",
+      "user_examples": ["Do cytokines play a role in PID?"],
+      "response": "Yes, cytokines mediate inflammation and contribute to tissue damage in PID."
+    },
+    {
+      "id": 363,
+      "intent": "ask_pid_immune_response",
+      "user_examples": ["How does the immune system respond to PID?"],
+      "response": "The immune system activates white blood cells and inflammatory mediators to fight infection."
+    },
+    {
+      "id": 364,
+      "intent": "ask_pid_tissue_damage",
+      "user_examples": ["Why does PID damage tissues?"],
+      "response": "Inflammation and infection damage tissues, leading to scarring and adhesions."
+    },
+    {
+      "id": 365,
+      "intent": "ask_pid_healing_process",
+      "user_examples": ["How does healing occur after PID?"],
+      "response": "Healing involves tissue repair, but scarring may occur if inflammation is severe."
+    },
+    {
+      "id": 366,
+      "intent": "ask_pid_fibrosis",
+      "user_examples": ["What is fibrosis in PID?"],
+      "response": "Fibrosis is the formation of scar tissue following inflammation."
+    },
+    {
+      "id": 367,
+      "intent": "ask_pid_tubal_blockage_mechanism",
+      "user_examples": ["How does PID block tubes?"],
+      "response": "Inflammation leads to scarring and narrowing, blocking the fallopian tubes."
+    },
+    {
+      "id": 368,
+      "intent": "ask_pid_adhesion_mechanism",
+      "user_examples": ["How do adhesions form in PID?"],
+      "response": "Adhesions form when inflamed tissues stick together during healing."
+    },
+    {
+      "id": 369,
+      "intent": "ask_pid_chronic_inflammation_cycle",
+      "user_examples": ["What is chronic inflammation in PID?"],
+      "response": "Persistent inflammation leads to ongoing tissue damage and symptoms."
+    },
+    {
+      "id": 370,
+      "intent": "ask_pid_inflammatory_markers",
+      "user_examples": ["Which markers indicate inflammation in PID?"],
+      "response": "Markers like CRP, ESR, and WBC count indicate inflammation."
+    },
+
+    {
+      "id": 371,
+      "intent": "ask_pid_microbial_flora",
+      "user_examples": ["What microbes are involved in PID?"],
+      "response": "PID involves mixed flora including aerobic and anaerobic bacteria."
+    },
+    {
+      "id": 372,
+      "intent": "ask_pid_polymicrobial_nature",
+      "user_examples": ["Is PID polymicrobial?"],
+      "response": "Yes, PID is often caused by multiple types of bacteria."
+    },
+    {
+      "id": 373,
+      "intent": "ask_pid_aerobic_bacteria",
+      "user_examples": ["Do aerobic bacteria cause PID?"],
+      "response": "Yes, aerobic bacteria like gonorrhea contribute to PID."
+    },
+    {
+      "id": 374,
+      "intent": "ask_pid_anaerobic_bacteria",
+      "user_examples": ["Do anaerobic bacteria cause PID?"],
+      "response": "Yes, anaerobes are commonly involved in PID infections."
+    },
+    {
+      "id": 375,
+      "intent": "ask_pid_opportunistic_pathogens",
+      "user_examples": ["What are opportunistic pathogens in PID?"],
+      "response": "These are bacteria normally present but become harmful under certain conditions."
+    },
+    {
+      "id": 376,
+      "intent": "ask_pid_vaginal_microbiome",
+      "user_examples": ["Does vaginal microbiome affect PID?"],
+      "response": "Yes, imbalance in microbiome increases infection risk."
+    },
+    {
+      "id": 377,
+      "intent": "ask_pid_bacterial_balance",
+      "user_examples": ["Why is bacterial balance important?"],
+      "response": "Healthy balance prevents overgrowth of harmful bacteria."
+    },
+    {
+      "id": 378,
+      "intent": "ask_pid_probiotics_role",
+      "user_examples": ["Do probiotics help in PID?"],
+      "response": "Probiotics may support vaginal health but are not a treatment for PID."
+    },
+    {
+      "id": 379,
+      "intent": "ask_pid_antibiotic_effect_on_flora",
+      "user_examples": ["Do antibiotics affect normal flora?"],
+      "response": "Yes, antibiotics may disrupt normal flora while treating infection."
+    },
+    {
+      "id": 380,
+      "intent": "ask_pid_resistance_development",
+      "user_examples": ["How does resistance develop in PID bacteria?"],
+      "response": "Improper antibiotic use can lead to resistant bacterial strains."
+    },
+
+    {
+      "id": 381,
+      "intent": "ask_pid_symptom_progression",
+      "user_examples": ["How do PID symptoms progress?"],
+      "response": "Symptoms may start mild and worsen if untreated."
+    },
+    {
+      "id": 382,
+      "intent": "ask_pid_acuteness",
+      "user_examples": ["Is PID acute or chronic?"],
+      "response": "PID is usually acute but can become chronic if untreated."
+    },
+    {
+      "id": 383,
+      "intent": "ask_pid_subacute_form",
+      "user_examples": ["What is subacute PID?"],
+      "response": "Subacute PID has moderate symptoms and slower progression."
+    },
+    {
+      "id": 384,
+      "intent": "ask_pid_symptom_fluctuation",
+      "user_examples": ["Do PID symptoms come and go?"],
+      "response": "Yes, symptoms may fluctuate, especially in chronic cases."
+    },
+    {
+      "id": 385,
+      "intent": "ask_pid_symptom_trigger",
+      "user_examples": ["What triggers PID symptoms?"],
+      "response": "Triggers include infection spread, menstruation, or sexual activity."
+    },
+    {
+      "id": 386,
+      "intent": "ask_pid_worsening_factors",
+      "user_examples": ["What worsens PID symptoms?"],
+      "response": "Delayed treatment and ongoing infection worsen symptoms."
+    },
+    {
+      "id": 387,
+      "intent": "ask_pid_relief_factors",
+      "user_examples": ["What relieves PID symptoms?"],
+      "response": "Antibiotics and rest help relieve symptoms."
+    },
+    {
+      "id": 388,
+      "intent": "ask_pid_symptom_resolution",
+      "user_examples": ["When do PID symptoms resolve?"],
+      "response": "Symptoms improve within days of treatment but full recovery takes longer."
+    },
+    {
+      "id": 389,
+      "intent": "ask_pid_persistent_symptoms",
+      "user_examples": ["Why do symptoms persist after treatment?"],
+      "response": "Persistent symptoms may indicate complications or incomplete treatment."
+    },
+    {
+      "id": 390,
+      "intent": "ask_pid_recovery_variation",
+      "user_examples": ["Does recovery vary in PID?"],
+      "response": "Yes, recovery depends on severity, treatment timing, and individual factors."
+    },
+
+    {
+      "id": 391,
+      "intent": "ask_pid_medication_timing",
+      "user_examples": ["When should I take PID medicines?"],
+      "response": "Medications should be taken exactly as prescribed to ensure effectiveness."
+    },
+    {
+      "id": 392,
+      "intent": "ask_pid_dose_importance",
+      "user_examples": ["Why is correct dosage important?"],
+      "response": "Correct dosage ensures proper bacterial elimination and prevents resistance."
+    },
+    {
+      "id": 393,
+      "intent": "ask_pid_missed_dose",
+      "user_examples": ["What if I miss a dose?"],
+      "response": "Take it as soon as remembered unless it's close to the next dose."
+    },
+    {
+      "id": 394,
+      "intent": "ask_pid_overdose",
+      "user_examples": ["What happens if I take extra dose?"],
+      "response": "Overdose may cause side effects and requires medical advice."
+    },
+    {
+      "id": 395,
+      "intent": "ask_pid_drug_storage",
+      "user_examples": ["How should PID medicines be stored?"],
+      "response": "Store medicines in a cool, dry place away from sunlight."
+    },
+    {
+      "id": 396,
+      "intent": "ask_pid_expired_drugs",
+      "user_examples": ["Can I use expired antibiotics?"],
+      "response": "No, expired medications may be ineffective or unsafe."
+    },
+    {
+      "id": 397,
+      "intent": "ask_pid_prescription_need",
+      "user_examples": ["Do I need prescription for PID treatment?"],
+      "response": "Yes, antibiotics should always be prescribed by a doctor."
+    },
+    {
+      "id": 398,
+      "intent": "ask_pid_self_medication_risk",
+      "user_examples": ["Is self-medication safe in PID?"],
+      "response": "No, self-medication can lead to improper treatment and complications."
+    },
+    {
+      "id": 399,
+      "intent": "ask_pid_medical_consultation",
+      "user_examples": ["When should I consult a doctor for PID?"],
+      "response": "Consult a doctor if you experience pelvic pain, discharge, or fever."
+    },
+    {
+      "id": 400,
+      "intent": "ask_pid_extended_summary",
+      "user_examples": ["Give extended summary of PID"],
+      "response": "PID is a complex infection requiring early diagnosis, proper antibiotics, follow-up, and preventive care to avoid long-term complications."
+    },
+    {
+      "id": 401,
+      "intent": "ask_pid_subtypes",
+      "user_examples": ["Are there different types of PID?", "Does PID have subtypes?"],
+      "response": "PID can present in different forms such as acute, subacute, and chronic, depending on severity and duration of infection."
+    },
+    {
+      "id": 402,
+      "intent": "ask_pid_acute_form",
+      "user_examples": ["What is acute PID?"],
+      "response": "Acute PID is a sudden onset infection with prominent symptoms like pain, fever, and discharge requiring immediate treatment."
+    },
+    {
+      "id": 403,
+      "intent": "ask_pid_chronic_form",
+      "user_examples": ["What is chronic PID?"],
+      "response": "Chronic PID refers to long-standing infection or inflammation leading to persistent symptoms like pelvic pain."
+    },
+    {
+      "id": 404,
+      "intent": "ask_pid_subacute_form_details",
+      "user_examples": ["What is subacute PID?"],
+      "response": "Subacute PID presents with moderate symptoms and slower progression compared to acute infection."
+    },
+    {
+      "id": 405,
+      "intent": "ask_pid_symptom_onset",
+      "user_examples": ["How quickly do PID symptoms start?"],
+      "response": "Symptoms can develop gradually or suddenly depending on the infection source and severity."
+    },
+    {
+      "id": 406,
+      "intent": "ask_pid_latent_period",
+      "user_examples": ["Is there a delay before PID symptoms appear?"],
+      "response": "Yes, symptoms may appear days to weeks after the initial infection."
+    },
+    {
+      "id": 407,
+      "intent": "ask_pid_incubation",
+      "user_examples": ["What is the incubation period for PID?"],
+      "response": "PID does not have a fixed incubation period, but it often follows untreated STIs within weeks."
+    },
+    {
+      "id": 408,
+      "intent": "ask_pid_triggering_events",
+      "user_examples": ["What events trigger PID onset?"],
+      "response": "Events like unprotected sex, menstruation, or procedures may trigger infection spread."
+    },
+    {
+      "id": 409,
+      "intent": "ask_pid_postpartum",
+      "user_examples": ["Can PID occur after childbirth?"],
+      "response": "Yes, postpartum infections can lead to PID if bacteria enter the reproductive tract."
+    },
+    {
+      "id": 410,
+      "intent": "ask_pid_post_abortion",
+      "user_examples": ["Can PID occur after abortion?"],
+      "response": "Yes, infection following abortion procedures may lead to PID if not managed properly."
+    },
+
+    {
+      "id": 411,
+      "intent": "ask_pid_post_iud_insertion",
+      "user_examples": ["Can PID occur after IUD insertion?"],
+      "response": "Yes, there is a small risk of infection shortly after IUD insertion, especially if pre-existing infection is present."
+    },
+    {
+      "id": 412,
+      "intent": "ask_pid_post_surgery",
+      "user_examples": ["Can PID occur after gynecological surgery?"],
+      "response": "Yes, surgical procedures can introduce bacteria and increase PID risk."
+    },
+    {
+      "id": 413,
+      "intent": "ask_pid_after_miscarriage",
+      "user_examples": ["Can miscarriage lead to PID?"],
+      "response": "Yes, infection after miscarriage can progress to PID if untreated."
+    },
+    {
+      "id": 414,
+      "intent": "ask_pid_after_delivery",
+      "user_examples": ["Can PID happen after delivery?"],
+      "response": "Yes, postpartum infections can lead to PID if bacteria ascend into the reproductive tract."
+    },
+    {
+      "id": 415,
+      "intent": "ask_pid_post_procedure_precautions",
+      "user_examples": ["How to prevent PID after procedures?"],
+      "response": "Maintaining hygiene, following medical advice, and early treatment of infections help prevent PID after procedures."
+    },
+    {
+      "id": 416,
+      "intent": "ask_pid_cervical_infection_role",
+      "user_examples": ["How does cervical infection lead to PID?"],
+      "response": "Infections in the cervix can ascend into the uterus and fallopian tubes, causing PID."
+    },
+    {
+      "id": 417,
+      "intent": "ask_pid_endometrial_spread",
+      "user_examples": ["How does infection spread to uterus in PID?"],
+      "response": "Bacteria spread upward into the uterine lining, causing endometritis."
+    },
+    {
+      "id": 418,
+      "intent": "ask_pid_tubal_spread",
+      "user_examples": ["How does infection reach fallopian tubes?"],
+      "response": "Infection ascends from the uterus to the fallopian tubes, causing salpingitis."
+    },
+    {
+      "id": 419,
+      "intent": "ask_pid_ovarian_involvement",
+      "user_examples": ["How are ovaries affected in PID?"],
+      "response": "Ovaries may become inflamed or form abscesses due to infection spread."
+    },
+    {
+      "id": 420,
+      "intent": "ask_pid_pelvic_spread",
+      "user_examples": ["How does PID spread in pelvis?"],
+      "response": "Infection spreads through pelvic tissues causing widespread inflammation."
+    },
+
+    {
+      "id": 421,
+      "intent": "ask_pid_systemic_effects",
+      "user_examples": ["Does PID affect whole body?"],
+      "response": "Yes, severe PID can cause systemic symptoms like fever and fatigue."
+    },
+    {
+      "id": 422,
+      "intent": "ask_pid_bloodstream_involvement",
+      "user_examples": ["Can PID enter bloodstream?"],
+      "response": "Yes, in severe cases bacteria may enter bloodstream causing sepsis."
+    },
+    {
+      "id": 423,
+      "intent": "ask_pid_liver_involvement",
+      "user_examples": ["Can PID affect liver?"],
+      "response": "Yes, it can cause Fitz-Hugh-Curtis syndrome involving liver capsule inflammation."
+    },
+    {
+      "id": 424,
+      "intent": "ask_pid_upper_abdomen_pain",
+      "user_examples": ["Why does PID cause upper abdominal pain?"],
+      "response": "Upper abdominal pain may occur due to inflammation around the liver."
+    },
+    {
+      "id": 425,
+      "intent": "ask_pid_general_weakness",
+      "user_examples": ["Does PID cause weakness?"],
+      "response": "Yes, infection can cause fatigue and general weakness."
+    },
+    {
+      "id": 426,
+      "intent": "ask_pid_appetite_loss",
+      "user_examples": ["Does PID affect appetite?"],
+      "response": "Yes, infection may reduce appetite, especially in severe cases."
+    },
+    {
+      "id": 427,
+      "intent": "ask_pid_weight_changes",
+      "user_examples": ["Does PID cause weight loss?"],
+      "response": "Significant weight loss is uncommon but may occur with severe illness."
+    },
+    {
+      "id": 428,
+      "intent": "ask_pid_fever_severity",
+      "user_examples": ["How high can fever go in PID?"],
+      "response": "Fever may exceed 38°C in moderate to severe cases."
+    },
+    {
+      "id": 429,
+      "intent": "ask_pid_chills",
+      "user_examples": ["Does PID cause chills?"],
+      "response": "Yes, chills may occur as part of systemic infection."
+    },
+    {
+      "id": 430,
+      "intent": "ask_pid_sweating",
+      "user_examples": ["Does PID cause sweating?"],
+      "response": "Yes, sweating may accompany fever in PID."
+    },
+
+    {
+      "id": 431,
+      "intent": "ask_pid_reproductive_planning",
+      "user_examples": ["How does PID affect future planning?"],
+      "response": "PID may impact fertility, so planning should include medical consultation."
+    },
+    {
+      "id": 432,
+      "intent": "ask_pid_preconception_advice",
+      "user_examples": ["What to do before pregnancy after PID?"],
+      "response": "Consult a doctor to assess reproductive health and reduce risks."
+    },
+    {
+      "id": 433,
+      "intent": "ask_pid_fertility_consult",
+      "user_examples": ["Should I see fertility specialist after PID?"],
+      "response": "Yes, if there are concerns about fertility after PID."
+    },
+    {
+      "id": 434,
+      "intent": "ask_pid_ivf_need",
+      "user_examples": ["Will I need IVF after PID?"],
+      "response": "Some women with severe tubal damage may require assisted reproductive techniques."
+    },
+    {
+      "id": 435,
+      "intent": "ask_pid_tubal_testing",
+      "user_examples": ["How to check tubes after PID?"],
+      "response": "Tests like hysterosalpingography assess tubal patency."
+    },
+    {
+      "id": 436,
+      "intent": "ask_pid_ultrasound_followup",
+      "user_examples": ["Is ultrasound needed after PID?"],
+      "response": "Yes, it may be used to monitor recovery or complications."
+    },
+    {
+      "id": 437,
+      "intent": "ask_pid_long_term_checkups",
+      "user_examples": ["Do I need regular checkups after PID?"],
+      "response": "Yes, periodic checkups help monitor reproductive health."
+    },
+    {
+      "id": 438,
+      "intent": "ask_pid_medical_records",
+      "user_examples": ["Should I keep PID medical records?"],
+      "response": "Yes, keeping records helps in future healthcare decisions."
+    },
+    {
+      "id": 439,
+      "intent": "ask_pid_history_importance",
+      "user_examples": ["Why is PID history important?"],
+      "response": "Past PID influences future diagnosis and treatment decisions."
+    },
+    {
+      "id": 440,
+      "intent": "ask_pid_future_risk_assessment",
+      "user_examples": ["How to assess future PID risk?"],
+      "response": "Risk depends on lifestyle, partner status, and previous infections."
+    },
+
+    {
+      "id": 441,
+      "intent": "ask_pid_patient_guidance",
+      "user_examples": ["What advice should PID patients follow?"],
+      "response": "Follow medication, avoid intercourse, and attend follow-ups."
+    },
+    {
+      "id": 442,
+      "intent": "ask_pid_doctor_consultation_frequency",
+      "user_examples": ["How often should I see doctor for PID?"],
+      "response": "Initial follow-up within days, then as advised based on recovery."
+    },
+    {
+      "id": 443,
+      "intent": "ask_pid_warning_after_treatment",
+      "user_examples": ["What warning signs after PID treatment?"],
+      "response": "Persistent pain, fever, or discharge require re-evaluation."
+    },
+    {
+      "id": 444,
+      "intent": "ask_pid_recovery_monitoring",
+      "user_examples": ["How to monitor recovery from PID?"],
+      "response": "Track symptoms and attend follow-ups to ensure recovery."
+    },
+    {
+      "id": 445,
+      "intent": "ask_pid_healthcare_support",
+      "user_examples": ["Is support needed during PID treatment?"],
+      "response": "Yes, medical and emotional support improves outcomes."
+    },
+    {
+      "id": 446,
+      "intent": "ask_pid_family_support",
+      "user_examples": ["Does family support help in PID?"],
+      "response": "Yes, family support can aid recovery and adherence to treatment."
+    },
+    {
+      "id": 447,
+      "intent": "ask_pid_partner_support",
+      "user_examples": ["Should partner support PID treatment?"],
+      "response": "Yes, partner support ensures proper treatment and prevents reinfection."
+    },
+    {
+      "id": 448,
+      "intent": "ask_pid_social_support",
+      "user_examples": ["Is social support important in PID?"],
+      "response": "Yes, support systems improve mental and physical recovery."
+    },
+    {
+      "id": 449,
+      "intent": "ask_pid_health_awareness_campaigns",
+      "user_examples": ["Do awareness campaigns help PID prevention?"],
+      "response": "Yes, they educate people and reduce infection rates."
+    },
+    {
+      "id": 450,
+      "intent": "ask_pid_extended_clinical_summary",
+      "user_examples": ["Give detailed clinical summary of PID"],
+      "response": "PID is a multifactorial infection requiring early recognition, appropriate antibiotics, partner management, and preventive strategies to avoid complications."
+    },
+    {
+      "id": 451,
+      "intent": "ask_pid_health_risk_awareness",
+      "user_examples": ["Why is PID considered a serious health risk?"],
+      "response": "PID is considered serious because it can silently damage reproductive organs, leading to infertility, ectopic pregnancy, and chronic pelvic pain if not treated early."
+    },
+    {
+      "id": 452,
+      "intent": "ask_pid_early_intervention",
+      "user_examples": ["Why is early treatment important in PID?"],
+      "response": "Early intervention prevents the spread of infection and reduces the risk of permanent reproductive damage."
+    },
+    {
+      "id": 453,
+      "intent": "ask_pid_symptom_reporting",
+      "user_examples": ["Should I report mild PID symptoms?"],
+      "response": "Yes, even mild symptoms should be reported because early PID can progress without obvious warning signs."
+    },
+    {
+      "id": 454,
+      "intent": "ask_pid_delay_consequences",
+      "user_examples": ["What happens if PID is ignored?"],
+      "response": "Ignoring PID can lead to severe complications including abscess formation, infertility, and life-threatening infections."
+    },
+    {
+      "id": 455,
+      "intent": "ask_pid_self_awareness",
+      "user_examples": ["How can I be aware of PID symptoms?"],
+      "response": "Being aware of signs like pelvic pain, abnormal discharge, and fever can help detect PID early."
+    },
+    {
+      "id": 456,
+      "intent": "ask_pid_body_signals",
+      "user_examples": ["What body signals indicate PID?"],
+      "response": "Signals include persistent pelvic discomfort, unusual discharge, pain during intercourse, and irregular bleeding."
+    },
+    {
+      "id": 457,
+      "intent": "ask_pid_health_tracking",
+      "user_examples": ["Should I track symptoms for PID?"],
+      "response": "Yes, tracking symptoms helps identify patterns and supports early medical consultation."
+    },
+    {
+      "id": 458,
+      "intent": "ask_pid_symptom_diary",
+      "user_examples": ["Is keeping a symptom diary helpful for PID?"],
+      "response": "Yes, a symptom diary can help doctors understand progression and response to treatment."
+    },
+    {
+      "id": 459,
+      "intent": "ask_pid_preventive_checkups",
+      "user_examples": ["Do regular checkups help prevent PID?"],
+      "response": "Yes, routine checkups and STI screening help detect infections early and prevent PID."
+    },
+    {
+      "id": 460,
+      "intent": "ask_pid_health_screening_importance",
+      "user_examples": ["Why is screening important in PID prevention?"],
+      "response": "Screening helps detect infections before they spread to upper reproductive organs."
+    },
+
+    {
+      "id": 461,
+      "intent": "ask_pid_safe_relationships",
+      "user_examples": ["Do safe relationships reduce PID risk?"],
+      "response": "Yes, stable and monogamous relationships reduce exposure to infections that cause PID."
+    },
+    {
+      "id": 462,
+      "intent": "ask_pid_partner_testing_importance",
+      "user_examples": ["Why should partners get tested?"],
+      "response": "Partner testing ensures infections are treated in both individuals, preventing reinfection."
+    },
+    {
+      "id": 463,
+      "intent": "ask_pid_mutual_treatment",
+      "user_examples": ["Why should both partners be treated?"],
+      "response": "Treating both partners prevents the cycle of reinfection and ensures complete recovery."
+    },
+    {
+      "id": 464,
+      "intent": "ask_pid_sexual_health_responsibility",
+      "user_examples": ["Is sexual health responsibility important in PID?"],
+      "response": "Yes, responsible sexual practices reduce infection risk and promote overall health."
+    },
+    {
+      "id": 465,
+      "intent": "ask_pid_communication_with_partner",
+      "user_examples": ["Should I discuss PID with my partner?"],
+      "response": "Yes, open communication helps ensure testing, treatment, and prevention of reinfection."
+    },
+    {
+      "id": 466,
+      "intent": "ask_pid_health_decision_making",
+      "user_examples": ["How to make decisions about PID treatment?"],
+      "response": "Decisions should be based on medical advice, symptoms, and adherence to treatment plans."
+    },
+    {
+      "id": 467,
+      "intent": "ask_pid_medical_guidance_importance",
+      "user_examples": ["Why follow doctor's advice in PID?"],
+      "response": "Following medical advice ensures effective treatment and reduces complications."
+    },
+    {
+      "id": 468,
+      "intent": "ask_pid_self_care",
+      "user_examples": ["What self-care is needed in PID?"],
+      "response": "Self-care includes rest, hydration, medication adherence, and avoiding sexual activity during treatment."
+    },
+    {
+      "id": 469,
+      "intent": "ask_pid_recovery_support",
+      "user_examples": ["How to support recovery from PID?"],
+      "response": "Support includes proper medication use, healthy lifestyle, and follow-up visits."
+    },
+    {
+      "id": 470,
+      "intent": "ask_pid_home_care_limits",
+      "user_examples": ["Can home care replace PID treatment?"],
+      "response": "No, home care supports recovery but cannot replace antibiotic treatment."
+    },
+
+    {
+      "id": 471,
+      "intent": "ask_pid_followup_tests",
+      "user_examples": ["Are follow-up tests needed after PID?"],
+      "response": "Yes, follow-up tests may be needed to confirm infection clearance and assess complications."
+    },
+    {
+      "id": 472,
+      "intent": "ask_pid_repeat_testing",
+      "user_examples": ["Should I repeat STI tests after PID?"],
+      "response": "Yes, repeat testing ensures infections are fully treated and not recurring."
+    },
+    {
+      "id": 473,
+      "intent": "ask_pid_long_term_health_monitoring",
+      "user_examples": ["Should I monitor health after PID?"],
+      "response": "Yes, long-term monitoring helps detect complications like infertility or chronic pain."
+    },
+    {
+      "id": 474,
+      "intent": "ask_pid_symptom_recurrence_signs",
+      "user_examples": ["How to know if PID is coming back?"],
+      "response": "Recurring pelvic pain, discharge, or fever may indicate recurrence."
+    },
+    {
+      "id": 475,
+      "intent": "ask_pid_secondary_prevention",
+      "user_examples": ["What is secondary prevention in PID?"],
+      "response": "Secondary prevention involves early detection and treatment to prevent recurrence."
+    },
+    {
+      "id": 476,
+      "intent": "ask_pid_primary_prevention",
+      "user_examples": ["What is primary prevention of PID?"],
+      "response": "Primary prevention includes safe sex practices and avoiding infections."
+    },
+    {
+      "id": 477,
+      "intent": "ask_pid_tertiary_prevention",
+      "user_examples": ["What is tertiary prevention in PID?"],
+      "response": "Tertiary prevention focuses on managing complications and improving quality of life."
+    },
+    {
+      "id": 478,
+      "intent": "ask_pid_health_outcomes",
+      "user_examples": ["What are outcomes of PID?"],
+      "response": "Outcomes depend on severity and treatment timing, ranging from full recovery to complications."
+    },
+    {
+      "id": 479,
+      "intent": "ask_pid_positive_outcome",
+      "user_examples": ["Can PID have good outcomes?"],
+      "response": "Yes, early and proper treatment leads to full recovery in many cases."
+    },
+    {
+      "id": 480,
+      "intent": "ask_pid_negative_outcome",
+      "user_examples": ["What are worst outcomes of PID?"],
+      "response": "Worst outcomes include infertility, ectopic pregnancy, and chronic pelvic pain."
+    },
+
+    {
+      "id": 481,
+      "intent": "ask_pid_public_health_burden",
+      "user_examples": ["What is the burden of PID globally?"],
+      "response": "PID places a significant burden due to its impact on fertility and healthcare systems."
+    },
+    {
+      "id": 482,
+      "intent": "ask_pid_healthcare_costs",
+      "user_examples": ["Does PID increase healthcare costs?"],
+      "response": "Yes, treatment and complications of PID contribute to healthcare expenses."
+    },
+    {
+      "id": 483,
+      "intent": "ask_pid_prevention_cost_effectiveness",
+      "user_examples": ["Is prevention of PID cost-effective?"],
+      "response": "Yes, prevention through screening and education reduces long-term costs."
+    },
+    {
+      "id": 484,
+      "intent": "ask_pid_population_health",
+      "user_examples": ["How does PID affect population health?"],
+      "response": "PID affects reproductive health outcomes and fertility rates in populations."
+    },
+    {
+      "id": 485,
+      "intent": "ask_pid_awareness_program_impact",
+      "user_examples": ["Do awareness programs reduce PID?"],
+      "response": "Yes, awareness programs reduce infections and promote early treatment."
+    },
+    {
+      "id": 486,
+      "intent": "ask_pid_screening_program_impact",
+      "user_examples": ["Do screening programs reduce PID cases?"],
+      "response": "Yes, screening programs help detect and treat infections early."
+    },
+    {
+      "id": 487,
+      "intent": "ask_pid_policy_interventions",
+      "user_examples": ["What policies help prevent PID?"],
+      "response": "Policies promoting sexual health education and access to care help prevent PID."
+    },
+    {
+      "id": 488,
+      "intent": "ask_pid_global_health_strategy",
+      "user_examples": ["What is global strategy for PID prevention?"],
+      "response": "Strategies include STI control, education, and improved healthcare access."
+    },
+    {
+      "id": 489,
+      "intent": "ask_pid_future_research_needs",
+      "user_examples": ["What research is needed in PID?"],
+      "response": "Research is needed in better diagnostics, vaccines, and treatment strategies."
+    },
+    {
+      "id": 490,
+      "intent": "ask_pid_healthcare_improvements",
+      "user_examples": ["How can PID care be improved?"],
+      "response": "Improving awareness, access to care, and adherence to guidelines enhances outcomes."
+    },
+
+    {
+      "id": 491,
+      "intent": "ask_pid_patient_empowerment",
+      "user_examples": ["How can patients take control of PID health?"],
+      "response": "Patients can empower themselves through education, early care, and adherence to treatment."
+    },
+    {
+      "id": 492,
+      "intent": "ask_pid_self_advocacy",
+      "user_examples": ["How to advocate for my health in PID?"],
+      "response": "Ask questions, seek timely care, and follow medical advice."
+    },
+    {
+      "id": 493,
+      "intent": "ask_pid_health_literacy",
+      "user_examples": ["Does health literacy affect PID outcomes?"],
+      "response": "Yes, better understanding of health improves prevention and treatment adherence."
+    },
+    {
+      "id": 494,
+      "intent": "ask_pid_shared_decision",
+      "user_examples": ["Should I be involved in treatment decisions?"],
+      "response": "Yes, shared decision-making improves treatment success and satisfaction."
+    },
+    {
+      "id": 495,
+      "intent": "ask_pid_patient_doctor_relationship",
+      "user_examples": ["Does doctor relationship matter in PID?"],
+      "response": "Yes, good communication improves care and outcomes."
+    },
+    {
+      "id": 496,
+      "intent": "ask_pid_confidence_in_treatment",
+      "user_examples": ["How to trust PID treatment plan?"],
+      "response": "Trust is built through clear communication and understanding treatment goals."
+    },
+    {
+      "id": 497,
+      "intent": "ask_pid_education_materials",
+      "user_examples": ["Are educational materials useful in PID?"],
+      "response": "Yes, they help patients understand and manage their condition."
+    },
+    {
+      "id": 498,
+      "intent": "ask_pid_digital_health_tools",
+      "user_examples": ["Can apps help manage PID?"],
+      "response": "Yes, digital tools can help track symptoms and reminders for medication."
+    },
+    {
+      "id": 499,
+      "intent": "ask_pid_future_health_planning",
+      "user_examples": ["How to plan health after PID?"],
+      "response": "Plan with regular checkups, healthy practices, and awareness of symptoms."
+    },
+    {
+      "id": 500,
+      "intent": "ask_pid_master_summary",
+      "user_examples": ["Give complete summary of PID"],
+      "response": "PID is a preventable and treatable infection of female reproductive organs. Early diagnosis, proper antibiotic treatment, partner management, and preventive strategies are essential to avoid serious complications like infertility and chronic pain."
+    },
+    {
+      "id": 501,
+      "intent": "ask_pid_digital_followup",
+      "user_examples": ["Can I follow up PID treatment online?", "Is telemedicine useful for PID?"],
+      "response": "Telemedicine can be useful for follow-up consultations, symptom monitoring, and medication guidance, but in-person visits may be required for examination or complications."
+    },
+    {
+      "id": 502,
+      "intent": "ask_pid_remote_monitoring",
+      "user_examples": ["Can PID symptoms be monitored remotely?"],
+      "response": "Yes, patients can monitor symptoms like pain, fever, and discharge remotely, but should seek in-person care if symptoms worsen."
+    },
+    {
+      "id": 503,
+      "intent": "ask_pid_symptom_tracking_apps",
+      "user_examples": ["Are apps helpful for tracking PID symptoms?"],
+      "response": "Yes, health apps can help track symptoms, medication schedules, and recovery progress."
+    },
+    {
+      "id": 504,
+      "intent": "ask_pid_medication_reminders",
+      "user_examples": ["How to remember PID medicines?"],
+      "response": "Setting reminders using apps or alarms helps ensure timely medication adherence."
+    },
+    {
+      "id": 505,
+      "intent": "ask_pid_virtual_consultation_limits",
+      "user_examples": ["Are online consultations enough for PID?"],
+      "response": "Online consultations are helpful for guidance, but physical examination may be necessary for diagnosis and complications."
+    },
+    {
+      "id": 506,
+      "intent": "ask_pid_self_reporting_tools",
+      "user_examples": ["Can I report PID symptoms digitally?"],
+      "response": "Yes, many platforms allow symptom reporting, which helps healthcare providers monitor progress."
+    },
+    {
+      "id": 507,
+      "intent": "ask_pid_ehealth_benefits",
+      "user_examples": ["Does digital health help in PID management?"],
+      "response": "Yes, digital health tools improve access, tracking, and adherence to treatment."
+    },
+    {
+      "id": 508,
+      "intent": "ask_pid_ehealth_limitations",
+      "user_examples": ["What are limitations of digital health in PID?"],
+      "response": "Limitations include lack of physical examination and reliance on patient-reported symptoms."
+    },
+    {
+      "id": 509,
+      "intent": "ask_pid_health_data_privacy",
+      "user_examples": ["Is my PID data safe in apps?"],
+      "response": "Most apps follow privacy standards, but users should choose trusted platforms."
+    },
+    {
+      "id": 510,
+      "intent": "ask_pid_digital_records",
+      "user_examples": ["Should I keep digital records of PID?"],
+      "response": "Yes, digital records help track history and assist future medical care."
+    },
+
+    {
+      "id": 511,
+      "intent": "ask_pid_awareness_campaign_methods",
+      "user_examples": ["How are PID awareness campaigns conducted?"],
+      "response": "Campaigns use media, community outreach, and education programs to spread awareness."
+    },
+    {
+      "id": 512,
+      "intent": "ask_pid_media_role",
+      "user_examples": ["Does media help in PID awareness?"],
+      "response": "Yes, media plays a key role in educating the public about symptoms and prevention."
+    },
+    {
+      "id": 513,
+      "intent": "ask_pid_social_media_impact",
+      "user_examples": ["Can social media help prevent PID?"],
+      "response": "Yes, social media spreads awareness and encourages early healthcare seeking."
+    },
+    {
+      "id": 514,
+      "intent": "ask_pid_public_education",
+      "user_examples": ["Why is public education important in PID?"],
+      "response": "Education helps individuals recognize symptoms early and seek timely treatment."
+    },
+    {
+      "id": 515,
+      "intent": "ask_pid_health_workers_role",
+      "user_examples": ["What is the role of health workers in PID?"],
+      "response": "Health workers provide education, screening, and early treatment services."
+    },
+    {
+      "id": 516,
+      "intent": "ask_pid_community_health_programs",
+      "user_examples": ["Do community programs reduce PID?"],
+      "response": "Yes, they improve awareness, access to care, and early detection."
+    },
+    {
+      "id": 517,
+      "intent": "ask_pid_school_health_education",
+      "user_examples": ["Does school education help prevent PID?"],
+      "response": "Yes, educating adolescents about sexual health reduces PID risk."
+    },
+    {
+      "id": 518,
+      "intent": "ask_pid_youth_programs",
+      "user_examples": ["Are youth programs important for PID prevention?"],
+      "response": "Yes, they target high-risk groups and promote safe practices."
+    },
+    {
+      "id": 519,
+      "intent": "ask_pid_health_campaign_effectiveness",
+      "user_examples": ["Are awareness campaigns effective?"],
+      "response": "Yes, they significantly reduce infection rates when widely implemented."
+    },
+    {
+      "id": 520,
+      "intent": "ask_pid_outreach_programs",
+      "user_examples": ["What are outreach programs for PID?"],
+      "response": "Outreach programs provide screening, education, and treatment in communities."
+    },
+
+    {
+      "id": 521,
+      "intent": "ask_pid_global_health_priority",
+      "user_examples": ["Is PID a global health priority?"],
+      "response": "Yes, due to its impact on reproductive health, PID is an important global health concern."
+    },
+    {
+      "id": 522,
+      "intent": "ask_pid_reproductive_health_programs",
+      "user_examples": ["Is PID included in reproductive health programs?"],
+      "response": "Yes, PID prevention and treatment are part of reproductive health initiatives."
+    },
+    {
+      "id": 523,
+      "intent": "ask_pid_women_health_focus",
+      "user_examples": ["Is PID a women's health issue?"],
+      "response": "Yes, PID specifically affects female reproductive organs and is a major women's health concern."
+    },
+    {
+      "id": 524,
+      "intent": "ask_pid_healthcare_equity",
+      "user_examples": ["Does healthcare access affect PID outcomes?"],
+      "response": "Yes, equitable access to healthcare improves early diagnosis and treatment."
+    },
+    {
+      "id": 525,
+      "intent": "ask_pid_low_resource_settings",
+      "user_examples": ["Is PID more common in low-resource areas?"],
+      "response": "Yes, limited healthcare access and awareness increase PID prevalence."
+    },
+    {
+      "id": 526,
+      "intent": "ask_pid_high_risk_populations",
+      "user_examples": ["Who are high-risk populations for PID?"],
+      "response": "Young sexually active women and those with limited access to care are at higher risk."
+    },
+    {
+      "id": 527,
+      "intent": "ask_pid_gender_health_gap",
+      "user_examples": ["Does gender inequality affect PID?"],
+      "response": "Yes, lack of access to care and education increases risk in vulnerable groups."
+    },
+    {
+      "id": 528,
+      "intent": "ask_pid_healthcare_infrastructure",
+      "user_examples": ["Does infrastructure affect PID management?"],
+      "response": "Yes, strong healthcare systems improve diagnosis and treatment outcomes."
+    },
+    {
+      "id": 529,
+      "intent": "ask_pid_policy_support",
+      "user_examples": ["Do policies support PID prevention?"],
+      "response": "Yes, public health policies promote screening, education, and treatment."
+    },
+    {
+      "id": 530,
+      "intent": "ask_pid_international_guidelines",
+      "user_examples": ["Are there international PID guidelines?"],
+      "response": "Yes, organizations like WHO provide global recommendations for management."
+    },
+
+    {
+      "id": 531,
+      "intent": "ask_pid_research_trends",
+      "user_examples": ["What are current research trends in PID?"],
+      "response": "Research focuses on better diagnostics, antibiotic resistance, and prevention strategies."
+    },
+    {
+      "id": 532,
+      "intent": "ask_pid_diagnostic_advancements",
+      "user_examples": ["Are there new diagnostic methods for PID?"],
+      "response": "Advances include molecular testing and improved imaging techniques."
+    },
+    {
+      "id": 533,
+      "intent": "ask_pid_treatment_advancements",
+      "user_examples": ["Are new treatments being developed for PID?"],
+      "response": "Research aims to improve antibiotic regimens and reduce resistance."
+    },
+    {
+      "id": 534,
+      "intent": "ask_pid_vaccine_research",
+      "user_examples": ["Is vaccine research ongoing for PID?"],
+      "response": "Research focuses on vaccines against STIs that cause PID."
+    },
+    {
+      "id": 535,
+      "intent": "ask_pid_prevention_research",
+      "user_examples": ["What research is done on PID prevention?"],
+      "response": "Studies focus on screening programs and behavioral interventions."
+    },
+    {
+      "id": 536,
+      "intent": "ask_pid_clinical_trials",
+      "user_examples": ["Are there clinical trials for PID?"],
+      "response": "Yes, trials evaluate new treatments and diagnostic methods."
+    },
+    {
+      "id": 537,
+      "intent": "ask_pid_innovation",
+      "user_examples": ["Is innovation improving PID care?"],
+      "response": "Yes, innovations in diagnostics and digital health improve outcomes."
+    },
+    {
+      "id": 538,
+      "intent": "ask_pid_future_outlook",
+      "user_examples": ["What is future outlook for PID management?"],
+      "response": "Improved awareness, diagnostics, and treatments are expected to reduce complications."
+    },
+    {
+      "id": 539,
+      "intent": "ask_pid_global_collaboration",
+      "user_examples": ["Is there global collaboration for PID control?"],
+      "response": "Yes, international organizations collaborate to reduce PID burden."
+    },
+    {
+      "id": 540,
+      "intent": "ask_pid_health_innovation_tools",
+      "user_examples": ["Do new tools help manage PID?"],
+      "response": "Yes, tools like AI diagnostics and telemedicine enhance care delivery."
+    },
+
+    {
+      "id": 541,
+      "intent": "ask_pid_patient_engagement",
+      "user_examples": ["How can patients stay engaged in PID care?"],
+      "response": "Active participation in treatment, follow-ups, and education improves outcomes."
+    },
+    {
+      "id": 542,
+      "intent": "ask_pid_self_management",
+      "user_examples": ["Can PID be self-managed?"],
+      "response": "Patients can support recovery, but medical treatment is essential."
+    },
+    {
+      "id": 543,
+      "intent": "ask_pid_behavioral_changes",
+      "user_examples": ["What behavior changes reduce PID risk?"],
+      "response": "Safe sex practices, hygiene, and regular checkups reduce risk."
+    },
+    {
+      "id": 544,
+      "intent": "ask_pid_health_responsibility",
+      "user_examples": ["Who is responsible for PID prevention?"],
+      "response": "Both individuals and healthcare systems share responsibility."
+    },
+    {
+      "id": 545,
+      "intent": "ask_pid_lifelong_health",
+      "user_examples": ["Does PID affect lifelong health?"],
+      "response": "Yes, untreated PID can have long-term reproductive consequences."
+    },
+    {
+      "id": 546,
+      "intent": "ask_pid_patient_role",
+      "user_examples": ["What is patient role in PID treatment?"],
+      "response": "Patients must adhere to treatment, attend follow-ups, and practice prevention."
+    },
+    {
+      "id": 547,
+      "intent": "ask_pid_prevention_commitment",
+      "user_examples": ["Why is commitment important in PID prevention?"],
+      "response": "Consistent preventive practices reduce risk of infection and recurrence."
+    },
+    {
+      "id": 548,
+      "intent": "ask_pid_health_awareness_growth",
+      "user_examples": ["Is awareness about PID increasing?"],
+      "response": "Yes, awareness is improving through education and campaigns."
+    },
+    {
+      "id": 549,
+      "intent": "ask_pid_community_involvement",
+      "user_examples": ["How can community help in PID prevention?"],
+      "response": "Community efforts promote awareness, reduce stigma, and encourage early care."
+    },
+    {
+      "id": 550,
+      "intent": "ask_pid_comprehensive_summary",
+      "user_examples": ["Give comprehensive summary of PID"],
+      "response": "PID is a preventable and treatable infection of female reproductive organs. Early detection, proper antibiotic treatment, partner management, and preventive strategies are essential to avoid serious complications."
+    },
+    {
+      "id": 551,
+      "intent": "ask_pid_completion_of_treatment",
+      "user_examples": ["Why must I finish PID treatment?", "Can I stop antibiotics early?"],
+      "response": "Completing the full course of antibiotics ensures that all bacteria are eliminated and reduces the risk of recurrence or resistance."
+    },
+    {
+      "id": 552,
+      "intent": "ask_pid_symptom_vs_cure",
+      "user_examples": ["If symptoms go away, is PID cured?"],
+      "response": "No, symptoms may improve before the infection is fully cleared, so completing treatment is essential."
+    },
+    {
+      "id": 553,
+      "intent": "ask_pid_hidden_damage",
+      "user_examples": ["Can PID cause damage without symptoms?"],
+      "response": "Yes, PID can silently damage reproductive organs even without noticeable symptoms."
+    },
+    {
+      "id": 554,
+      "intent": "ask_pid_recovery_expectations",
+      "user_examples": ["What should I expect during PID recovery?"],
+      "response": "Symptoms usually improve within a few days, but full recovery may take weeks, and follow-up is important."
+    },
+    {
+      "id": 555,
+      "intent": "ask_pid_followup_importance_extended",
+      "user_examples": ["Why is follow-up critical after PID?"],
+      "response": "Follow-up ensures the infection is resolved, detects complications early, and prevents recurrence."
+    },
+    {
+      "id": 556,
+      "intent": "ask_pid_partner_prevention_role",
+      "user_examples": ["How do partners help prevent PID?"],
+      "response": "Partners help by getting tested, treated, and practicing safe sex to prevent reinfection."
+    },
+    {
+      "id": 557,
+      "intent": "ask_pid_behavior_modification",
+      "user_examples": ["What behavior changes reduce PID risk long-term?"],
+      "response": "Consistent use of protection, limiting partners, and regular health checkups reduce long-term risk."
+    },
+    {
+      "id": 558,
+      "intent": "ask_pid_long_term_prevention",
+      "user_examples": ["How to prevent PID in the long run?"],
+      "response": "Long-term prevention involves safe sexual practices, hygiene, and regular STI screening."
+    },
+    {
+      "id": 559,
+      "intent": "ask_pid_self_awareness_importance",
+      "user_examples": ["Why is self-awareness important in PID?"],
+      "response": "Self-awareness helps recognize early symptoms and seek timely medical care."
+    },
+    {
+      "id": 560,
+      "intent": "ask_pid_health_prioritization",
+      "user_examples": ["Why should I prioritize PID treatment?"],
+      "response": "Early and proper treatment prevents serious complications and protects reproductive health."
+    },
+
+    {
+      "id": 561,
+      "intent": "ask_pid_symptom_alertness",
+      "user_examples": ["How to stay alert for PID symptoms?"],
+      "response": "Pay attention to pelvic pain, discharge, and fever, and seek care if they appear."
+    },
+    {
+      "id": 562,
+      "intent": "ask_pid_regular_screening_benefits",
+      "user_examples": ["What are benefits of regular STI screening?"],
+      "response": "Regular screening detects infections early and prevents progression to PID."
+    },
+    {
+      "id": 563,
+      "intent": "ask_pid_health_check_routine",
+      "user_examples": ["How often should I do health checkups for PID prevention?"],
+      "response": "Annual checkups or more frequent visits if at high risk are recommended."
+    },
+    {
+      "id": 564,
+      "intent": "ask_pid_education_importance_extended",
+      "user_examples": ["Why is education crucial for PID prevention?"],
+      "response": "Education helps individuals understand risks, symptoms, and preventive measures."
+    },
+    {
+      "id": 565,
+      "intent": "ask_pid_partner_responsibility",
+      "user_examples": ["What is partner responsibility in PID prevention?"],
+      "response": "Partners must participate in testing, treatment, and safe practices to prevent infection."
+    },
+    {
+      "id": 566,
+      "intent": "ask_pid_shared_health_responsibility",
+      "user_examples": ["Who is responsible for preventing PID?"],
+      "response": "Both individuals and healthcare systems share responsibility in prevention."
+    },
+    {
+      "id": 567,
+      "intent": "ask_pid_community_role_extended",
+      "user_examples": ["How does community help in PID control?"],
+      "response": "Communities promote awareness, reduce stigma, and encourage early treatment."
+    },
+    {
+      "id": 568,
+      "intent": "ask_pid_health_system_strength",
+      "user_examples": ["Why is a strong health system important for PID?"],
+      "response": "Strong systems improve access to screening, treatment, and follow-up care."
+    },
+    {
+      "id": 569,
+      "intent": "ask_pid_policy_impact",
+      "user_examples": ["How do policies impact PID prevention?"],
+      "response": "Policies ensure access to care, education, and prevention programs."
+    },
+    {
+      "id": 570,
+      "intent": "ask_pid_global_awareness",
+      "user_examples": ["Is global awareness important for PID?"],
+      "response": "Yes, global awareness reduces infection rates and improves reproductive health outcomes."
+    },
+
+    {
+      "id": 571,
+      "intent": "ask_pid_research_future",
+      "user_examples": ["What is the future of PID research?"],
+      "response": "Future research aims to improve diagnostics, treatments, and preventive strategies."
+    },
+    {
+      "id": 572,
+      "intent": "ask_pid_vaccine_future",
+      "user_examples": ["Will there be a PID vaccine in future?"],
+      "response": "Research on vaccines targeting STIs may indirectly reduce PID cases."
+    },
+    {
+      "id": 573,
+      "intent": "ask_pid_technology_role",
+      "user_examples": ["How does technology help in PID management?"],
+      "response": "Technology improves diagnosis, monitoring, and access to care."
+    },
+    {
+      "id": 574,
+      "intent": "ask_pid_ai_role",
+      "user_examples": ["Can AI help detect PID?"],
+      "response": "AI tools may assist in early detection and decision support in the future."
+    },
+    {
+      "id": 575,
+      "intent": "ask_pid_telemedicine_future",
+      "user_examples": ["Will telemedicine improve PID care?"],
+      "response": "Yes, telemedicine enhances access to consultations and follow-up care."
+    },
+    {
+      "id": 576,
+      "intent": "ask_pid_innovation_future",
+      "user_examples": ["What innovations will improve PID outcomes?"],
+      "response": "Innovations in diagnostics, treatment, and awareness will improve outcomes."
+    },
+    {
+      "id": 577,
+      "intent": "ask_pid_patient_empowerment_extended",
+      "user_examples": ["How can patients take control of PID prevention?"],
+      "response": "Patients can adopt safe practices, stay informed, and seek timely care."
+    },
+    {
+      "id": 578,
+      "intent": "ask_pid_self_care_importance",
+      "user_examples": ["Why is self-care important in PID?"],
+      "response": "Self-care supports recovery and prevents complications when combined with medical treatment."
+    },
+    {
+      "id": 579,
+      "intent": "ask_pid_health_lifestyle",
+      "user_examples": ["Does healthy lifestyle affect PID recovery?"],
+      "response": "Yes, a healthy lifestyle supports immunity and recovery."
+    },
+    {
+      "id": 580,
+      "intent": "ask_pid_prevention_commitment_extended",
+      "user_examples": ["Why is commitment needed for PID prevention?"],
+      "response": "Consistent preventive actions reduce infection risk and recurrence."
+    },
+
+    {
+      "id": 581,
+      "intent": "ask_pid_lifelong_awareness",
+      "user_examples": ["Should I stay aware of PID lifelong?"],
+      "response": "Yes, ongoing awareness helps prevent recurrence and maintain reproductive health."
+    },
+    {
+      "id": 582,
+      "intent": "ask_pid_health_habits",
+      "user_examples": ["What habits help prevent PID?"],
+      "response": "Safe sex, hygiene, and regular checkups are key preventive habits."
+    },
+    {
+      "id": 583,
+      "intent": "ask_pid_symptom_education",
+      "user_examples": ["Why learn PID symptoms?"],
+      "response": "Knowing symptoms helps in early detection and treatment."
+    },
+    {
+      "id": 584,
+      "intent": "ask_pid_early_action",
+      "user_examples": ["Why act early in PID symptoms?"],
+      "response": "Early action prevents complications and ensures better recovery."
+    },
+    {
+      "id": 585,
+      "intent": "ask_pid_health_seeking_behavior_extended",
+      "user_examples": ["Why seek care early in PID?"],
+      "response": "Early care improves treatment success and reduces risks."
+    },
+    {
+      "id": 586,
+      "intent": "ask_pid_preventive_behavior_reinforcement",
+      "user_examples": ["How to reinforce PID prevention habits?"],
+      "response": "Regular education and consistent practices reinforce prevention."
+    },
+    {
+      "id": 587,
+      "intent": "ask_pid_partner_awareness_extended",
+      "user_examples": ["Why should partners stay aware of PID?"],
+      "response": "Partner awareness prevents infection spread and recurrence."
+    },
+    {
+      "id": 588,
+      "intent": "ask_pid_health_responsibility_extended",
+      "user_examples": ["What is my role in PID prevention?"],
+      "response": "Your role includes safe practices, awareness, and seeking timely care."
+    },
+    {
+      "id": 589,
+      "intent": "ask_pid_population_prevention",
+      "user_examples": ["How can PID be prevented at population level?"],
+      "response": "Population prevention includes education, screening, and access to care."
+    },
+    {
+      "id": 590,
+      "intent": "ask_pid_health_system_support_extended",
+      "user_examples": ["How does healthcare system support PID prevention?"],
+      "response": "Healthcare systems provide screening, treatment, and awareness programs."
+    },
+
+    {
+      "id": 591,
+      "intent": "ask_pid_final_prevention_summary",
+      "user_examples": ["Summarize PID prevention"],
+      "response": "PID prevention includes safe sex, regular screening, partner treatment, and early medical care."
+    },
+    {
+      "id": 592,
+      "intent": "ask_pid_final_treatment_summary",
+      "user_examples": ["Summarize PID treatment"],
+      "response": "Treatment involves antibiotics, follow-up, partner management, and adherence to medical advice."
+    },
+    {
+      "id": 593,
+      "intent": "ask_pid_final_complication_summary",
+      "user_examples": ["Summarize PID complications"],
+      "response": "Complications include infertility, chronic pain, ectopic pregnancy, and abscess formation."
+    },
+    {
+      "id": 594,
+      "intent": "ask_pid_final_symptom_summary",
+      "user_examples": ["Summarize PID symptoms"],
+      "response": "Symptoms include pelvic pain, discharge, fever, and irregular bleeding."
+    },
+    {
+      "id": 595,
+      "intent": "ask_pid_final_risk_summary",
+      "user_examples": ["Summarize PID risk factors"],
+      "response": "Risk factors include STIs, multiple partners, young age, and lack of protection."
+    },
+    {
+      "id": 596,
+      "intent": "ask_pid_final_diagnosis_summary",
+      "user_examples": ["Summarize PID diagnosis"],
+      "response": "Diagnosis is based on symptoms, examination, tests, and sometimes imaging."
+    },
+    {
+      "id": 597,
+      "intent": "ask_pid_final_management_summary",
+      "user_examples": ["Summarize PID management"],
+      "response": "Management includes antibiotics, monitoring, partner treatment, and prevention strategies."
+    },
+    {
+      "id": 598,
+      "intent": "ask_pid_final_patient_advice",
+      "user_examples": ["What is final advice for PID patients?"],
+      "response": "Seek early care, complete treatment, follow preventive measures, and attend follow-ups."
+    },
+    {
+      "id": 599,
+      "intent": "ask_pid_final_health_message",
+      "user_examples": ["What is the key message about PID?"],
+      "response": "PID is preventable and treatable, but early action is essential to avoid serious complications."
+    },
+    {
+      "id": 600,
+      "intent": "ask_pid_ultimate_summary",
+      "user_examples": ["Give ultimate summary of PID"],
+      "response": "Pelvic Inflammatory Disease is a serious but preventable infection of female reproductive organs. Early diagnosis, proper treatment, partner involvement, and preventive practices are essential for maintaining reproductive health and avoiding complications."
+    }
+  ]
+}
+{
+  "knowledge_base": {
+    "topic": "Pelvic Inflammatory Disease (PID)",
+    "faq": [
+      {
+        "question": "What is pelvic inflammatory disease (PID)?",
+        "answer": "Pelvic inflammatory disease (PID) is an infection and inflammation of the upper female reproductive tract, including the uterus (endometritis), fallopian tubes (salpingitis), ovaries (oophoritis), and surrounding pelvic structures. It is most commonly caused by sexually transmitted bacteria ascending from the cervix and vagina. PID is a major cause of infertility, ectopic pregnancy, and chronic pelvic pain in women."
+      },
+      {
+        "question": "What causes PID?",
+        "answer": "PID is most commonly caused by sexually transmitted organisms: Neisseria gonorrhoeae and Chlamydia trachomatis are the primary pathogens. However, PID is often polymicrobial, involving vaginal flora such as anaerobes (Bacteroides, Peptostreptococcus), Gardnerella vaginalis, Haemophilus influenzae, Streptococcus agalactiae, and enteric Gram-negative rods. Mycoplasma genitalium is an emerging pathogen increasingly associated with PID and treatment failure."
+      },
+      {
+        "question": "Who is most at risk for PID?",
+        "answer": "The highest risk group is sexually active women under 25 years of age. Key risk factors include: multiple or new sexual partners, previous history of PID or STIs, lack of barrier contraception (condoms), intrauterine device (IUD) insertion (highest risk in first 3 weeks), recent uterine instrumentation (D&C, hysteroscopy), bacterial vaginosis, and douching. Women with a single long-term partner and those using condoms consistently have significantly lower risk."
+      },
+      {
+        "question": "What are the symptoms of PID?",
+        "answer": "Classic symptoms include: lower abdominal or pelvic pain (most common), abnormal vaginal discharge (often purulent), abnormal uterine bleeding (intermenstrual or post-coital), dyspareunia (pain during intercourse), fever (> 38°C in severe cases), nausea and vomiting, and urinary symptoms. Importantly, PID can be subclinical or mild — up to 35% of cases have minimal or no symptoms, yet still cause tubal damage and complications."
+      },
+      {
+        "question": "How is PID diagnosed?",
+        "answer": "PID is a clinical diagnosis. The CDC recommends empiric treatment in sexually active young women with unexplained pelvic or lower abdominal pain if one or more of the following minimum criteria are present on examination: uterine tenderness, adnexal tenderness, or cervical motion tenderness. Additional supportive criteria include: fever > 38.3°C, mucopurulent cervical or vaginal discharge, elevated ESR or CRP, and laboratory evidence of gonorrhea or chlamydia. Due to the risk of serious complications, a low threshold for diagnosis and treatment is recommended."
+      },
+      {
+        "question": "What tests are done for PID?",
+        "answer": "Recommended investigations include: endocervical or vaginal swabs for Neisseria gonorrhoeae and Chlamydia trachomatis (NAAT preferred), pregnancy test (to rule out ectopic pregnancy — mandatory), full blood count (leukocytosis supports infection), CRP or ESR (elevated in most cases), urinalysis (to exclude UTI), and pelvic ultrasound (to identify tubo-ovarian abscess or alternative diagnosis). Endometrial biopsy showing endometritis provides histological confirmation but is not routinely required."
+      },
+      {
+        "question": "What is the treatment for PID?",
+        "answer": "PID requires broad-spectrum antibiotic treatment to cover gonorrhea, chlamydia, and anaerobes. Recommended outpatient regimens include: (1) Ceftriaxone 500mg IM single dose + Doxycycline 100mg twice daily for 14 days + Metronidazole 400-500mg twice daily for 14 days; (2) Ofloxacin 400mg twice daily + Metronidazole 400mg twice daily for 14 days (only if gonorrhea prevalence is low). Inpatient IV therapy is used for severe cases: Cefoxitin 2g IV q6h or Cefotetan 2g IV q12h + Doxycycline 100mg q12h, transitioning to oral once clinically improved."
+      },
+      {
+        "question": "When does PID require hospitalization?",
+        "answer": "Indications for inpatient treatment include: surgical emergencies cannot be excluded (e.g., appendicitis, ectopic pregnancy), tubo-ovarian abscess, pregnancy, severe illness (high fever, nausea, vomiting, unable to tolerate oral medications), failure to respond to oral antibiotics within 72 hours, and immunocompromised patients. Adolescents may also be considered for hospitalization to ensure adherence."
+      },
+      {
+        "question": "What happens if PID is left untreated?",
+        "answer": "Untreated or inadequately treated PID can lead to serious long-term complications: tubo-ovarian abscess (TOA) in 15-35% of hospitalized cases, chronic pelvic pain (in up to 18% after a single episode), infertility due to tubal scarring (risk doubles with each recurrence: 8% after 1 episode, 20% after 2, 40% after 3 or more), ectopic pregnancy (6-10-fold increased risk), and Fitz-Hugh-Curtis syndrome (perihepatitis with right upper quadrant pain from perihepatic adhesions)."
+      },
+      {
+        "question": "What is a tubo-ovarian abscess (TOA)?",
+        "answer": "A tubo-ovarian abscess is a collection of pus involving the fallopian tube and ovary, representing the most severe complication of acute PID. It occurs in approximately 15-35% of women hospitalized for PID. Symptoms include severe pelvic pain, high fever, and a palpable adnexal mass on examination or ultrasound. Management requires IV antibiotics (typically piperacillin/tazobactam or clindamycin + gentamicin). Surgical drainage (laparoscopic or CT-guided) is required if no improvement occurs within 72 hours or abscess ruptures."
+      },
+      {
+        "question": "How long does PID treatment last?",
+        "answer": "Outpatient antibiotic courses last 14 days for all regimens. Inpatient IV therapy is continued until clinical improvement (typically 24-48 hours afebrile with resolving symptoms), then transitioned to oral doxycycline 100mg twice daily to complete a total 14-day course. Patients should be reviewed 72 hours after initiating treatment to confirm clinical response; lack of improvement warrants reassessment and possible hospitalization or surgical evaluation."
+      },
+      {
+        "question": "Should sexual partners be treated?",
+        "answer": "Yes. All sexual partners within the preceding 60 days (or the most recent partner if last contact was more than 60 days ago) should be notified, tested, and treated empirically for gonorrhea and chlamydia, regardless of whether they have symptoms. Partner treatment is essential to prevent reinfection. The patient should abstain from sexual intercourse until they and their partner(s) have completed treatment and symptoms have resolved."
+      },
+      {
+        "question": "Can I get PID with an IUD?",
+        "answer": "The risk of PID with an IUD is highest in the first 21 days after insertion, attributed to procedure-related contamination rather than the device itself. After this initial period, the long-term risk is not significantly higher than in non-IUD users. If PID is diagnosed in an IUD user, current guidelines suggest the IUD does not need to be removed routinely if the patient improves on antibiotics. Removal should be considered if no clinical improvement occurs within 72 hours of starting treatment."
+      },
+      {
+        "question": "Can PID occur during pregnancy?",
+        "answer": "PID is rare after the first trimester as the decidua forms a barrier preventing ascending infection. However, in early pregnancy, PID can occur and is associated with serious risks including miscarriage, preterm labor, and maternal sepsis. Ectopic pregnancy must always be excluded before diagnosing PID in a woman of reproductive age, as the presentations overlap and an ectopic pregnancy can be life-threatening."
+      },
+      {
+        "question": "How can PID be prevented?",
+        "answer": "Prevention strategies include: consistent condom use (most effective barrier method), regular STI screening for sexually active women under 25 or those with new/multiple partners, prompt treatment of gonorrhea and chlamydia before they ascend, avoiding douching (disrupts vaginal flora), pre-procedure STI screening before IUD insertion or uterine instrumentation, and partner notification and treatment after any STI diagnosis. Vaccination against certain STIs (e.g., HPV) reduces associated risks but does not directly prevent bacterial PID."
+      },
+      {
+        "question": "What is Fitz-Hugh-Curtis syndrome?",
+        "answer": "Fitz-Hugh-Curtis syndrome is a rare complication of PID characterized by inflammation of the liver capsule and perihepatic adhesions, resulting from direct spread of infection from the pelvis to the upper abdomen via the peritoneal cavity. It presents as acute right upper quadrant pain that may mimic cholecystitis, pleuritis, or pulmonary embolism. It occurs in approximately 10-20% of PID cases. Diagnosis is clinical or laparoscopic (showing violin-string adhesions). Treatment is the same as for PID — broad-spectrum antibiotics."
+      },
+      {
+        "question": "Does PID always cause infertility?",
+        "answer": "Not always, but the risk increases significantly with recurrent episodes and delayed treatment. After a single episode of PID, the infertility risk is approximately 8%. This rises to about 20% after two episodes and 40% or more after three or more episodes. Subclinical PID (without obvious symptoms) also contributes to tubal factor infertility. Early diagnosis, prompt treatment, and partner management are the most important factors in preserving fertility."
+      },
+      {
+        "question": "Can PID recur?",
+        "answer": "Yes. Recurrent PID is common, occurring in approximately 20-25% of women after the first episode. Risk factors for recurrence include reinfection from untreated partners, failure to complete the antibiotic course, ongoing high-risk sexual behavior, and bacterial vaginosis. Each recurrence increases the risk of long-term complications including infertility and chronic pelvic pain. Women with recurrent PID should be counseled about risk reduction and considered for more thorough STI screening and partner management."
+      }
+    ]
+  }
+}
+      
+    
+
+
