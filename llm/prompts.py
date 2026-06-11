@@ -4,9 +4,6 @@
 System prompts for MediBot.
 Fixed: Removed over-cautious refusal language for general health questions.
 """
-System prompts for MediBot.
-Fixed: Removed over-cautious refusal language for general health questions.
-"""
 
 SYSTEM_PROMPT = """You are MediBot, a friendly and knowledgeable medical information assistant.
 Your role is to provide clear, accurate, and helpful health information.
