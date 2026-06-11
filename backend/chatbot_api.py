@@ -13,7 +13,12 @@ from llm.model_loader import get_model_info
 from llm.response_generator import generate_response, generate_with_rag
 from backend.file_parser import parse_uploaded_file
 from tools.fda_tool import get_fda_drug_summary
-from tools.location_tool import search_nearby_hospitals
+from tools.location_tool import (
+    get_nearby_medical_facilities,
+    format_nearby_facilities,
+    parse_location_request,
+    search_nominatim_medical_places,
+)
 from services.symptom_detector import detect_symptom
 from services.triage_questions import TRIAGE_QUESTIONS
 
@@ -91,32 +96,6 @@ def chat():
 
     history = session.memory.get_history()
     
-    # =========================
-    # Location Tool
-    # =========================
-
-    try:
-        location_keywords = [
-            "hospital near me",
-            "nearby hospital",
-            "find hospital",
-            "nearest hospital"
-        ]
-
-        if any(k in message.lower() for k in location_keywords):
-
-            hospitals = search_nearby_hospitals()
-
-            return jsonify({
-                "answer": str(hospitals),
-                "session_id": session.session_id,
-                "sources": ["Location Tool"],
-                "is_emergency": False
-            })
-
-    except Exception as e:
-        print(f"[Location Tool Error] {e}")
-
     # 2. Optimized Generation Routing
     if use_rag:
         if fda_context:
@@ -172,6 +151,74 @@ def chat():
 def new_session():
     session = session_manager.get_or_create()
     return jsonify({"session_id": session.session_id})
+
+@chatbot_bp.post("/location/nearby")
+def nearby_medical_facilities():
+    body = request.get_json(force=True)
+    lat = body.get("lat")
+    lon = body.get("lon")
+    radius = int(body.get("radius", 5000))
+    session_id = body.get("session_id")
+    user_query = (body.get("query") or "").strip()
+
+    if lat is None or lon is None:
+        return jsonify({"error": "lat and lon are required"}), 400
+
+    try:
+        lat = float(lat)
+        lon = float(lon)
+        radius = max(1000, min(radius, 15000))
+    except (TypeError, ValueError):
+        return jsonify({"error": "Invalid location coordinates"}), 400
+
+    request_info = parse_location_request(user_query)
+    facilities = get_nearby_medical_facilities(
+        lat,
+        lon,
+        radius,
+        facility_types=request_info["facility_types"],
+        specialty=request_info["specialty"],
+    )
+    if sum(len(items) for items in facilities.values()) == 0 and radius < 15000:
+        radius = 15000
+        facilities = get_nearby_medical_facilities(
+            lat,
+            lon,
+            radius,
+            facility_types=request_info["facility_types"],
+            specialty=request_info["specialty"],
+        )
+
+    if not request_info["specialty"]:
+        empty_types = [
+            facility_type
+            for facility_type in request_info["facility_types"]
+            if len(facilities.get(facility_type, [])) == 0
+        ]
+        if empty_types:
+            fallback_request = {
+                **request_info,
+                "facility_types": empty_types,
+            }
+            fallback_facilities = search_nominatim_medical_places(lat, lon, radius, fallback_request)
+            for facility_type, items in fallback_facilities.items():
+                if items:
+                    facilities[facility_type] = items
+
+    answer = format_nearby_facilities(facilities, lat=lat, lon=lon, radius=radius, request_info=request_info)
+
+    session = session_manager.get_or_create(session_id)
+    session.memory.add_user(request_info["display_query"])
+    session.memory.add_assistant(answer)
+    session_manager.save_session(session)
+
+    return jsonify({
+        "answer": answer,
+        "facilities": facilities,
+        "session_id": session.session_id,
+        "sources": ["OpenStreetMap Overpass", "OpenStreetMap Nominatim"],
+        "is_emergency": False,
+    })
 
 @chatbot_bp.get("/chat/sessions")
 def get_sessions():
