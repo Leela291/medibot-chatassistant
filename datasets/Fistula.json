@@ -1,0 +1,950 @@
+{
+  "disease": {
+    "id": "DIS-035",
+    "name": "Fistula",
+    "scientific_name": "Fistula-in-Ano / Anal Fistula / Perianal Fistula / Anorectal Fistula",
+    "icd_10_code": "K60.3 (Anal fistula); K60.4 (Rectal fistula); K60.5 (Anorectal fistula); K57.2 (Diverticular disease with fistula); K50.8 (Crohn's disease with fistula); K63.2 (Fistula of intestine); N82 (Fistulae involving female genital tract); K63.3 (Ulcer of intestine); N32.1 (Vesicointestinal fistula)",
+    "category": "Colorectal / Proctological / Anorectal Disease / Surgical Condition",
+    "overview": {
+      "description": "A fistula is an abnormal, epithelium-lined tract or tunnel forming an unnatural connection between two body surfaces — either between two hollow organs, or between an organ and the skin. In clinical practice, the most common and surgically significant fistula is the anal fistula (fistula-in-ano) — an abnormal tract connecting the anal canal (typically at the level of the dentate line, where anal glands open) to the perianal skin surface, with a characteristically intermittently or persistently discharging external opening. The vast majority (90%) of anal fistulae arise from infected anal glands — the cryptoglandular origin — which cause an anorectal abscess that either spontaneously drains through the perianal skin or is surgically drained, leaving behind a persistently infected epithelialised tract. Fistulae represent one of the most technically challenging conditions in colorectal surgery — because the tract often passes through or around the anal sphincter muscles, and treatment must eliminate the fistula without causing faecal incontinence, which would be as disabling as the fistula itself.",
+      "affected_organ": "Anal canal and perianal tissues; internal and external anal sphincters; ischiorectal/ischioanal fossae; intersphincteric space; levator ani musculature (in high fistulae)",
+      "prevalence": "Anal fistula affects approximately 1-2 per 10,000 adults per year. Male to female ratio approximately 2:1 for simple cryptoglandular fistulae. In patients with Crohn's disease: cumulative incidence of perianal fistula is 20-40% over 20 years. In India: anal fistula is among the most common anorectal conditions presenting to surgical outpatient departments.",
+      "age_group": "Peak in adults aged 30-50 years (cryptoglandular); Crohn's fistulae can present at any age from young adulthood",
+      "sex_ratio": "Men 2:1 over women for simple cryptoglandular fistulae (possibly related to more deeply located male anal glands); women more often affected by rectovaginal fistulae and obstetric anorectal injury",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": true,
+      "chronic_note": "Fistulae rarely heal spontaneously and almost invariably require surgical or interventional treatment; Crohn's fistulae require long-term medical and surgical management",
+      "key_fact": "The cardinal surgical principle of anal fistula treatment: 'Cut through as little sphincter as possible while achieving lasting fistula closure.' Every millimetre of additional sphincter division increases incontinence risk — making sphincter-sparing procedures the priority for complex and high fistulae."
+    },
+
+    "fistula_anatomy_and_classification": {
+      "cryptoglandular_theory": "The most widely accepted aetiology of anal fistula — proposed by Parks, Gordon, and Hardcastle in 1976. The anal canal contains 6-8 anal glands (crypts of Morgagni) at the level of the dentate line in the intersphincteric space. These glands normally secrete mucus. When an anal gland becomes obstructed and infected, an intersphincteric abscess forms. This abscess may track in various directions: downward to the anal verge (perianal abscess); through the external sphincter to the ischiorectal fossa (ischiorectal/ischioanal abscess); upward above the levator ani (supralevator abscess). When the abscess spontaneously drains or is surgically incised, the infected track may remain patent as a fistula tract — because the internal opening (at the anal gland in the dentate line) continues to act as a source of infection.",
+      "parks_classification": {
+        "intersphincteric": "Most common (45-70%); tract passes through the intersphincteric plane to the perianal skin; LOW risk to sphincter; LOW incontinence risk after treatment",
+        "transsphincteric": "30-40% of cases; tract passes through both the internal and external anal sphincters to the ischiorectal fossa and perianal skin; MODERATE sphincter involvement; treatment requires careful sphincter management",
+        "suprasphincteric": "5% of cases; tract goes upward from intersphincteric plane over the puborectalis muscle and down through levator ani to ischiorectal fossa; HIGH sphincter involvement; complex management",
+        "extrasphincteric": "1-2%; tract passes from perineal skin through the levator ani directly into the rectum, bypassing both sphincters; usually secondary to Crohn's disease, pelvic sepsis, trauma, or iatrogenic injury; VERY complex management"
+      },
+      "simple_vs_complex": {
+        "simple": "Low intersphincteric or low transsphincteric fistula; single tract; no active anorectal disease; not associated with Crohn's; not in field of previous radiation; not associated with local malignancy; no incontinence pre-operatively; no circumferential component",
+        "complex": "High transsphincteric, suprasphincteric, or extrasphincteric; multiple tracts or horseshoe extension; previous sphincter injury; associated Crohn's disease; rectovaginal fistula; recurrent after previous repair; active proctitis or mucosal disease; high incontinence risk"
+      },
+      "goodsalls_rule": {
+        "description": "A useful clinical guide predicting the course of the fistula internal opening based on the location of the external opening",
+        "posterior_external_opening": "External openings POSTERIOR to a transverse line through the anus (behind the anal opening): the internal opening is at the POSTERIOR MIDLINE (6 o'clock); the fistula tract runs in a curved path to the posterior midline",
+        "anterior_external_opening": "External openings ANTERIOR to the transverse line: the internal opening is at the nearest anal crypt (directly radial); the tract runs in a straight line",
+        "exception": "If the external opening is more than 3cm from the anal verge, regardless of position, the internal opening is likely to be at the posterior midline",
+        "limitation": "Goodsall's rule is a rough guide with significant exceptions, particularly in Crohn's fistulae and horseshoe fistulae; MRI has superseded Goodsall's rule for surgical planning"
+      }
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Simple Intersphincteric Anal Fistula",
+        "description": "The most common type — the fistula tract passes entirely through the intersphincteric plane (between the internal and external anal sphincters) from the internal opening at the dentate line to an external opening on the perianal skin. The external sphincter is NOT crossed — making this a 'low' fistula with minimal incontinence risk after treatment.",
+        "prevalence": "45-70% of anal fistulae",
+        "sphincter_involvement": "Internal sphincter only — external sphincter is preserved",
+        "treatment": "Fistulotomy (laying open) — safe; excellent cure rates; very low incontinence risk",
+        "prognosis": "Excellent — >95% healing with fistulotomy"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Transsphincteric Anal Fistula",
+        "description": "The fistula tract passes through both the internal AND external anal sphincters before reaching the ischiorectal fossa and external skin. The amount of external sphincter involved determines treatment approach: low transsphincteric (crossing the lower portion of the EAS — can often be laid open safely); high transsphincteric (crossing a significant proportion of the EAS — laying open risks incontinence — requires sphincter-sparing approach).",
+        "prevalence": "30-40% of anal fistulae",
+        "sphincter_involvement": "Both IAS and EAS — portion of EAS crossed determines risk",
+        "treatment_low": "Low (involves <30% EAS): fistulotomy may be considered; seton may be used",
+        "treatment_high": "High (involves >30% EAS): seton, LIFT procedure, advancement flap, VAAFT, fibrin glue — sphincter-sparing approaches"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Suprasphincteric Anal Fistula",
+        "description": "A high and complex fistula — the tract passes upward from the intersphincteric plane over (above) the puborectalis muscle, then curves downward through the levator ani muscle into the ischiorectal fossa and out to the perianal skin. The entire external sphincter and levator ani are crossed — making fistulotomy impossible without complete incontinence. Sphincter-preserving surgery is mandatory.",
+        "prevalence": "5% of anal fistulae",
+        "sphincter_involvement": "Complete external sphincter + levator ani",
+        "treatment": "Staged seton; advancement flap; LIFT; VAAFT; multiple procedures often required",
+        "prognosis": "Challenging — recurrence rates higher than lower fistulae"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Extrasphincteric Anal Fistula",
+        "description": "The rarest and most complex type — the fistula passes from the perianal skin directly through the levator ani muscle into the rectum, entirely bypassing the sphincter complex. Usually NOT of cryptoglandular origin — typically secondary to Crohn's disease, pelvic sepsis from appendicitis or diverticular disease, penetrating pelvic trauma, or iatrogenic injury from instrumentation or surgery.",
+        "prevalence": "1-2% of anal fistulae",
+        "causes": "Crohn's disease; pelvic sepsis (diverticular, appendix); trauma; post-radiation; iatrogenic",
+        "treatment": "Usually requires staged approaches; treat underlying cause (Crohn's — biological therapy); defunctioning stoma (temporary colostomy) to allow healing; complex reconstructive procedures; rarely permanent stoma"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Horseshoe Fistula",
+        "description": "A bilateral fistula with a deep postanal space component — the tract passes from the internal opening in the posterior midline around both sides of the anal canal (like a horseshoe) to bilateral external openings on both sides of the anus. The deep postanal space (between the anococcygeal ligament and the external sphincter) is the primary abscess cavity. Complex to treat — requires unroofing of the deep postanal space (Hanley procedure) and staged seton to the two lateral limbs.",
+        "anatomy": "Deep postanal space is the origin; bilateral extensions to ischiorectal fossae via the transsphincteric route",
+        "treatment": "Modified Hanley procedure; staged approaches; technically demanding"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Crohn's Perianal Fistula",
+        "description": "Perianal fistulae associated with Crohn's disease are a distinct and particularly challenging entity — more complex, more likely to be multiple, more likely to be associated with proctitis, skin tags, and abscesses, more likely to recur after treatment, and requiring combined medical and surgical management. Perianal disease (fistulae, skin tags, abscesses, fissures) affects 20-40% of Crohn's patients over 20 years. Crohn's fistulae may be low or complex, and crucially, may be associated with active rectal inflammation (proctitis) that impairs healing and contraindicates sphincterotomy.",
+        "prevalence": "20-40% of Crohn's patients develop perianal fistulae",
+        "characteristics": "May be multiple; large; deep; associated perianal skin disease; often minimally symptomatic despite complexity; recurrent; associated active proctitis",
+        "treatment": "Biological therapy (infliximab, adalimumab) is the cornerstone; seton drainage; LIFT; stem cell therapy (Alofisel); defunctioning stoma for severe cases; avoiding fistulotomy in active proctitis",
+        "van_assche_score": "MRI-based scoring system for Crohn's fistula complexity and treatment response: assesses number of tracts, extensions, hyperintensity (inflammation), rectal wall involvement"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Rectovaginal Fistula",
+        "description": "An abnormal communication between the rectum (or anal canal) and the vagina — allowing passage of faeces or gas into the vagina. Causes: obstetric injury (most common — 3rd/4th degree perineal tears); Crohn's disease; radiation (post-pelvic radiotherapy for cervical, rectal, or prostate cancer); surgical trauma; carcinoma; diverticular disease. Classified by level: low (below dentate line — anovaginal); mid (between dentate line and cervix); high (at or above cervix).",
+        "prevalence": "Most common in post-partum women and Crohn's disease",
+        "symptoms": "Passage of faeces or gas per vagina; vaginitis; malodorous vaginal discharge; recurrent urinary tract infections",
+        "diagnosis": "Clinical inspection; methylene blue test (dye instilled per rectum — if detected in vagina confirms connection); MRI pelvis; EUA",
+        "treatment": "Low anovaginal fistula: perineal repair; advancement flap. Mid fistula (obstetric): muscle interposition (Martius flap); transabdominal repair. Crohn's fistula: medical (biologic) + seton + eventual definitive repair after quiescence"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Enterocutaneous Fistula",
+        "description": "An abnormal communication between the intestine (small or large bowel) and the skin. Most commonly occur post-surgically (anastomotic leak after bowel surgery — 75-80% of cases) or from Crohn's disease, diverticular disease, radiation injury, trauma, or malignancy. High-output fistulae (>500mL/day — small bowel origin) have significant metabolic consequences: dehydration, electrolyte disturbances, malnutrition, and skin excoriation. Low-output fistulae (<200mL/day — colonic origin) are less metabolically challenging but prone to infection.",
+        "output_classification": "High-output: >500mL/day; Low-output: <200mL/day; Moderate: 200-500mL/day",
+        "spontaneous_closure_factors": "FRIENDS mnemonic (factors preventing spontaneous closure): Foreign body; Radiation; Inflammation/Infection; Epithelialisation; Neoplasia; Distal obstruction; Short tract (<2cm)",
+        "management": "SNAP principles: Sepsis control; Nutrition (TPN or enteral); Anatomy (fistulogram/CT); Protection of skin (stoma bags); Definitive procedure when patient optimised"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Simple / Low Fistula",
+        "description": "Low intersphincteric or low transsphincteric fistula; single tract; minimal sphincter involvement",
+        "parks_type": "Intersphincteric or low transsphincteric",
+        "sphincter_risk": "Minimal (<20-30% sphincter involvement)",
+        "symptoms": "Persistent perianal discharge (intermittent); mild perianal discomfort; palpable external opening on perianal skin",
+        "associated_disease": "None (cryptoglandular origin)",
+        "mri_finding": "Single simple tract; no extensions; no horseshoe component; no collections",
+        "management": "Fistulotomy (laying open) — day case surgery; >95% cure; minimal incontinence risk",
+        "continence_risk": "Very low (<5% minor incontinence)"
+      },
+      {
+        "level": 2,
+        "name": "Moderate / Complex Fistula",
+        "description": "High transsphincteric fistula or multiple tracts; significant sphincter involvement; or simple fistula with specific complexity factors",
+        "parks_type": "High transsphincteric; suprasphincteric",
+        "sphincter_risk": "Moderate-significant (30-70% sphincter involvement)",
+        "symptoms": "Persistent discharge; perianal pain; possible acute episodes of perianal abscess; pruritis; faecal soiling around external opening",
+        "associated_disease": "May be Crohn's-associated; may have failed previous treatment",
+        "mri_finding": "High transsphincteric tract; secondary extensions; T2 hyperintensity (inflammation); possible horseshoe component",
+        "management": "Staged approach: draining seton first; then LIFT/advancement flap/VAAFT; multiple procedures may be required",
+        "continence_risk": "Moderate (10-20% incontinence without careful sphincter-sparing approach)"
+      },
+      {
+        "level": 3,
+        "name": "Severe / Highly Complex Fistula",
+        "description": "Suprasphincteric or extrasphincteric fistula; Crohn's fistula with proctitis; multiple complex tracts; horseshoe with both limbs; rectovaginal fistula; recurrent after multiple failed repairs",
+        "parks_type": "Suprasphincteric; extrasphincteric; Crohn's complex",
+        "sphincter_risk": "High (>70% sphincter involvement) or involvement of levator ani/supralevator structures",
+        "symptoms": "Significant discharge; pain; incontinence (gas, occasionally liquid); failed previous surgeries; quality of life severely impaired",
+        "associated_disease": "Crohn's disease (often); active proctitis; radiation history; pelvic malignancy",
+        "mri_finding": "Complex multi-branching tracts; supralevator extensions; horseshoe; active inflammation; possible associated cavity/collections",
+        "management": "Long-term draining seton; biologic therapy (if Crohn's); stem cell therapy; defunctioning stoma; multidisciplinary team (MDT); liver/colorectal surgeon + gastroenterologist + IBD nurse + stoma therapist",
+        "continence_risk": "High; permanent defunctioning stoma may ultimately be the best quality-of-life option in some patients"
+      }
+    ],
+
+    "causes": {
+      "primary_cause_cryptoglandular": {
+        "mechanism": "The cryptoglandular theory (Parks 1961): Anal glands in the intersphincteric space become occluded → infection → intersphincteric abscess → spreads to adjacent spaces → drains spontaneously or surgically through skin → epithelialised track persists as fistula tract between the infected anal gland (internal opening) and external drainage point (external opening)",
+        "incidence": "~90% of anal fistulae arise from this mechanism",
+        "progression": "Perianal abscess → fistula develops in approximately 30-50% of adequately drained anorectal abscesses"
+      },
+      "specific_causes": [
+        {
+          "cause": "Perianal Abscess (Most Common Precipitant)",
+          "detail": "Approximately 30-50% of drained perianal abscesses result in a subsequent anal fistula. Fistula formation is more likely when: the abscess is recurrent; primary drainage is incomplete; the internal opening (anal gland source) was not identified and addressed at drainage. Incision and drainage alone treats the acute abscess but does NOT eliminate the fistula tract.",
+          "prevention": "Identification of the internal opening at time of abscess drainage (where possible) and primary fistulotomy (in low intersphincteric fistula at drainage EUA) may reduce fistula formation rate"
+        },
+        {
+          "cause": "Crohn's Disease",
+          "detail": "The most important secondary cause — Crohn's-associated perianal fistulae affect 20-40% of patients over the disease course. Crohn's fistulae arise from transmural intestinal inflammation extending into perianal tissues, from deep anorectal ulcers, or from fistulising disease specifically. Crohn's perianal fistulae are often complex, multiple, and refractory to standard surgical treatment — requiring biological therapy (anti-TNF) as the cornerstone of management."
+        },
+        {
+          "cause": "Tuberculosis (TB)",
+          "detail": "An important cause in India and other high-TB burden countries. Intestinal TB can cause bowel fistulae (enterocutaneous, enterovaginal). Perianal TB causes: multiple chronic perianal fistulae that are indolent, pale, and less painful than cryptoglandular fistulae; biopsy shows caseating granulomas and AFB on ZN stain. Must be considered in all patients with multiple or unusual perianal fistulae in India. Treatment: standard anti-TB therapy (DOTS regime) + surgery after culture-confirmed TB is controlled.",
+          "india_significance": "TB fistulae are significantly more common in India than in high-income countries; maintain a high index of suspicion in all complex perianal fistulae; send biopsies routinely"
+        },
+        {
+          "cause": "Radiation Injury (Post-Radiation Fistula)",
+          "detail": "Pelvic radiotherapy for rectal cancer, cervical cancer, prostate cancer, or uterine cancer causes radiation-induced endarteritis → tissue ischaemia → chronic non-healing ulcers → fistula formation. Radiation fistulae are characterised by: poor healing capacity (ischaemic irradiated tissue); risk of enterovaginal, rectovaginal, colovaginal, or enterocutaneous fistula; very difficult to treat surgically due to poor blood supply. Hyperbaric oxygen therapy is an adjunctive treatment for radiation tissue injury."
+        },
+        {
+          "cause": "Post-Surgical Anastomotic Leak",
+          "detail": "The most common cause of enterocutaneous fistula — anastomotic leak following bowel resection and anastomosis (colorectal cancer surgery, diverticular disease surgery, IBD surgery) can lead to enteric contents leaking into the peritoneum or through a drain site, establishing a fistula tract. Risk factors for anastomotic leak: left-sided colonic anastomosis; lack of defunctioning stoma; bowel preparation problems; malnutrition; immunosuppression; corticosteroids.",
+          "management": "SNAP protocol: control sepsis; optimise nutrition (TPN/enteral); define anatomy (CT fistulogram); protect skin (ostomy appliance); plan definitive repair"
+        },
+        {
+          "cause": "Diverticular Disease",
+          "detail": "Complicated diverticular disease can cause colovesical fistula (most common diverticular fistula — between sigmoid colon and bladder; causes pneumaturia — air bubbles in urine, and fecaluria — faeces in urine; predominantly men — women's uterus protects the bladder); colovaginal fistula (after hysterectomy — when uterus no longer separates colon from vagina); colocutaneous fistula; ileosigmoid fistula.",
+          "most_common_diverticular_fistula": "Colovesical (colovaginal in women with prior hysterectomy) — treated surgically with one-stage resection and anastomosis"
+        },
+        {
+          "cause": "Malignancy",
+          "detail": "Advanced colorectal cancer, anal cancer, cervical cancer, or bladder cancer can invade adjacent structures creating fistulae (rectovaginal, colovesical, enterovesical). Any 'fistula' in a patient with known or suspected malignancy must have the tract biopsied to exclude cancer-related fistula. Non-healing fistulae in patients >50 years should prompt cancer workup.",
+          "note": "Long-standing chronic Crohn's perianal fistulae carry a small but real risk of squamous cell carcinoma development — any change in a chronic fistula character (increased bleeding, ulceration, pain change) should prompt biopsy"
+        },
+        {
+          "cause": "Obstetric Trauma",
+          "detail": "The most common cause of rectovaginal fistula in the world — unrepaired or inadequately repaired 4th degree perineal tears (involving rectum) during vaginal delivery. Also: episiotomy extensions involving rectum; difficult instrumental deliveries. Post-partum rectovaginal fistulae typically present 1-3 months after delivery with passage of flatus or stool vaginally.",
+          "grading": "4th degree perineal tear = external sphincter + internal sphincter + rectal mucosa involvement; immediate repair required; fistula complication if repair breaks down"
+        },
+        {
+          "cause": "HIV/AIDS and Immunosuppression",
+          "detail": "HIV-positive patients, particularly those with low CD4 counts, are at higher risk of complex perianal fistulae — from: opportunistic infections (CMV, Cryptosporidium causing proctitis); higher prevalence of anal HPV infection and condylomata; secondary infections with unusual organisms; impaired healing. ART (antiretroviral therapy) optimisation is the primary adjunct to surgical treatment in HIV-positive patients with fistulae."
+        }
+      ],
+      "risk_factors": [
+        "Prior anorectal abscess (most important risk factor for fistula development)",
+        "Crohn's disease",
+        "Tuberculosis (particularly India)",
+        "Diabetes mellitus (impaired wound healing; higher abscess risk)",
+        "Immunosuppression (HIV, chemotherapy, corticosteroids, transplant)",
+        "Prior anorectal surgery",
+        "Pelvic radiotherapy",
+        "Obstetric trauma (rectovaginal fistula risk)",
+        "Anal intercourse (trauma and STI risk)",
+        "Obesity (higher perianal sepsis risk)",
+        "Smoking (impaired wound healing; associated with Crohn's activity)"
+      ]
+    },
+
+    "symptoms": {
+      "cardinal_symptom": "The hallmark of anal fistula is PERSISTENT OR RECURRENT PERIANAL DISCHARGE from an external opening on the perianal skin. Unlike abscess (which discharges once then the pain resolves), a fistula continues to discharge intermittently or continuously — because the internal opening from the anal gland source continues to supply infected material to the tract.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-1501",
+          "name": "Persistent Perianal Discharge",
+          "description": "The MOST COMMON presenting symptom — the external opening of the fistula chronically discharges serous, seropurulent, or purulent fluid onto the perianal skin. Patients notice: staining of underwear with brown or yellow-green fluid; need to wear a pad at all times; perianal moisture and irritation; sometimes small pieces of faecal material in the discharge. The discharge may be intermittent — particularly when the external opening partially closes, causing accumulation and then re-rupture — with cycling of apparent resolution and re-drainage associated with acute abscess formation.",
+          "character": "Serous (clear); seropurulent (cloudy); purulent (pus); occasionally faecal-stained (in complex fistulae communicating with rectum)",
+          "severity": "Mild to Moderate — chronic; impairs quality of life"
+        },
+        {
+          "id": "SYM-1502",
+          "name": "Perianal Pain and Discomfort",
+          "description": "A constant dull perianal ache or discomfort — distinct from the severe episodic pain of anal fissure. Pain in fistula is from: active inflammatory activity in the tract; partial blockage of the external opening causing accumulation and tension (mini-abscess); associated sphincter spasm. Pain dramatically WORSENS when the external opening blocks (acute abscess-on-fistula) and IMPROVES when the opening drains freely. Severe, throbbing pain in a patient with a known fistula suggests a recurrent abscess requiring urgent drainage.",
+          "severity": "Mild (patent draining fistula) to Severe (blocked — acute abscess)",
+          "pattern": "Worsens with blockage; improves with drainage"
+        },
+        {
+          "id": "SYM-1503",
+          "name": "Palpable External Opening",
+          "description": "The external opening (also called the secondary opening or skin opening) is usually visible and palpable as a small elevated dimple, nodule, or pore on the perianal skin — often within 2-5 cm of the anal verge, surrounding by indurated, reddened or pigmented perianal skin from chronic discharge. May be single or multiple (complex or Crohn's fistulae). Discharge may be expressible from the opening on gentle digital pressure. Hair follicles and granulation tissue may be visible around the external opening.",
+          "location": "Commonly within 2-5cm of the anal verge; position relative to the anal verge guides Goodsall's rule prediction",
+          "examination": "Visible pore or nodule with surrounding fibrosis; gentle palpation expresses discharge"
+        },
+        {
+          "id": "SYM-1504",
+          "name": "Recurrent Perianal Abscesses",
+          "description": "Many patients present with a history of RECURRENT PERIANAL ABSCESSES — each time experiencing: sudden onset severe perianal pain; swelling; fever; eventual spontaneous discharge or surgical drainage. This pattern of recurring abscesses from the same region strongly suggests an underlying persistent fistula tract that was not addressed when the initial abscess was drained. Between abscess episodes, patients may have an apparently 'normal' perianal region, or a small persistently discharging sinus.",
+          "significance": "A second anorectal abscess from the same location strongly suggests an underlying fistula — examination for fistula is mandatory",
+          "pattern": "Cyclic: abscess builds (pain, swelling, fever) → drains → temporary relief → recurrence weeks to months later"
+        },
+        {
+          "id": "SYM-1505",
+          "name": "Pruritus Ani (Perianal Itching)",
+          "description": "Persistent or intermittent perianal itching from: chronic moisture and discharge maceration of the perianal skin; faecal contamination of the perianal skin from discharge; secondary dermatitis; fungal colonisation of the moist perianal area; skin irritation from continuous discharge.",
+          "severity": "Mild to Moderate",
+          "management": "Keep the perianal area clean and dry; moisture-wicking pads; barrier creams (zinc oxide); topical antifungal if Candida present"
+        },
+        {
+          "id": "SYM-1506",
+          "name": "Passage of Gas or Faeces from External Opening (Complex Fistulae)",
+          "description": "In highly complex fistulae with a direct communication to the anal canal or rectum, patients may occasionally notice: flatus (gas) passing from the external opening on the perianal skin; faecal-stained discharge; or even passage of formed stool from the fistula. This indicates a low-resistance large-calibre fistula tract directly communicating with the anal lumen. Similarly, in rectovaginal fistulae, patients notice passage of gas or faeces per vagina.",
+          "significance": "This symptom indicates complex high-volume fistula — urgent colorectal surgery review required",
+          "significance_rectovaginal": "In women: passage of gas or faeces per vagina = rectovaginal fistula until proved otherwise"
+        }
+      ],
+      "secondary_symptoms": [
+        "Fever and systemic features — in acute abscess-on-fistula phase; temperature >38°C; malaise; rigors if bacteraemia from perianal sepsis",
+        "Perianal skin excoriation — chemical dermatitis from chronic discharge; skin breaks down and becomes raw; secondary bacterial or fungal infection; significant discomfort",
+        "Blood in discharge — granulation tissue at internal or external opening bleeds on contact; small amounts of blood mixed with discharge are common; heavier bleeding requires assessment",
+        "Faecal urgency and soiling — from inflammation close to the sphincter; in complex fistulae, the inflammatory process may reduce functional sphincter capacity",
+        "Palpable induration — hardened, fibrous, rope-like cord under the perianal skin connecting external opening to the anal canal — palpable in superficial fistulae on gentle bidigital examination",
+        "Multiple external openings — in Crohn's fistulae, horseshoe fistulae, or recurrent complex fistulae — multiple dimples or pores visible on the perianal skin",
+        "Depression and psychological burden — chronic discharge, social embarrassment, odour, need to wear pads, recurrent painful abscesses, and repeated surgeries cause significant psychological morbidity — anxiety, depression, sexual dysfunction, social isolation"
+      ]
+    },
+
+    "diagnosis": {
+      "diagnostic_approach": {
+        "overview": "Anal fistula diagnosis begins with careful clinical history and examination, progresses to imaging (MRI pelvis — gold standard for complex fistulae), and ultimately to definitive anatomical assessment under anaesthesia (EUA — Examination Under Anaesthesia) where the full extent of the fistula can be determined and treatment initiated simultaneously. The key diagnostic objectives are: (1) Confirm fistula diagnosis; (2) Identify the internal opening; (3) Determine Parks' classification (relationship to sphincters); (4) Identify any secondary tracts, extensions, or collections; (5) Exclude secondary causes (Crohn's, TB, malignancy).",
+        "three_step_rule": "The three anatomical questions before fistula surgery: (1) Where is the primary internal opening? (2) What is the course of the primary tract? (3) Are there secondary tracts or extensions?"
+      },
+      "medical_history": [
+        "Duration of discharge and pain; character and volume of discharge",
+        "History of prior anorectal abscesses — number, locations, treatment",
+        "Previous fistula surgery and procedures — what was done; pathology report",
+        "IBD history: Crohn's disease or ulcerative colitis; GI symptoms (diarrhoea, abdominal pain, blood PR, weight loss)",
+        "TB history: prior TB; TB contact; residence in endemic area; BCG vaccination status; TB treatment history",
+        "HIV status and risk factors; CD4 count if HIV-positive",
+        "Obstetric history: vaginal deliveries; perineal tears; forceps delivery",
+        "Pelvic radiotherapy history (prostate, cervical, rectal cancer treatment)",
+        "Medications: immunosuppressants, corticosteroids, biologics (important for wound healing assessment)",
+        "Continence history: current bowel control (any gas/stool incontinence — critical baseline for consent and surgical planning)",
+        "STI history if relevant"
+      ],
+      "physical_examination": [
+        "External perianal inspection: number and location of external openings; character of discharge; perianal skin condition (excoriation, maceration, skin tags, condylomata); measure external opening distance from anal verge",
+        "Goodsall's rule application: predict likely internal opening location from external opening position",
+        "Palpation: palpate for subcutaneous cord (fistula tract) connecting external opening to anal canal; assess induration; multiple tracts possible",
+        "Bimanual palpation: using one finger in the anal canal and thumb externally to palpate the fistula tract between the two",
+        "Digital rectal examination (DRE): assess internal opening (tender induration at dentate line); sphincter tone; rectal mucosal assessment (exclude proctitis, rectal mass); assess rectal vault for supralevator extension",
+        "Proctoscopy: visualise the anal canal; identify internal opening at dentate level (often hyperaemic or granulating); injection of hydrogen peroxide or methylene blue via external opening may identify the internal opening by bubbles or dye appearing at the dentate line",
+        "Assessment of continence: ask specifically about pre-existing incontinence to gas, liquid, or solid stool — critical for surgical consent and planning (pre-existing incontinence is a major risk factor for worsened continence after sphincterotomy)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "MRI Pelvis (Magnetic Resonance Imaging) — Gold Standard for Complex Fistulae",
+          "type": "Imaging — Gold Standard",
+          "description": "MRI pelvis is the GOLD STANDARD for mapping complex anal fistulae — providing unparalleled soft tissue resolution of the sphincter complex, fistula tract relationships, extensions, collections, and internal opening. T2-weighted sequences show the fistula tract as a bright (hyperintense) signal within the darker sphincter muscle. Fat-suppressed sequences (STIR or T2 FS) enhance identification of active inflammation and fluid collections. The Van Assche MRI score provides a validated quantitative assessment of Crohn's perianal fistula complexity and treatment response.",
+          "purpose": "Classify fistula type (Parks' classification); identify internal opening; map primary tract and secondary extensions; detect collections (abscess cavities); assess sphincter integrity; monitor treatment response (particularly Crohn's fistulae after biologic therapy); guide surgical planning",
+          "key_findings": "T2 hyperintense (bright) tract through sphincter complex; location of internal opening at dentate line level; secondary tracts; supralevator extension; horseshoe configuration; associated collections (T2 bright with rim enhancement on Gd)",
+          "indication": "ALL complex fistulae before surgery; Crohn's perianal fistulae; recurrent fistulae after failed previous treatment; any fistula where the anatomy is unclear; when anorectal examination is insufficient to determine sphincter involvement",
+          "limitation": "Does not provide real-time dynamic information; MRI may not replace EUA — they are complementary (MRI for anatomy; EUA for treatment)"
+        },
+        {
+          "test_name": "Examination Under Anaesthesia (EUA) — Essential for Treatment",
+          "type": "Surgical / Diagnostic — Definitive",
+          "description": "The definitive investigation AND treatment modality for anal fistula — the gold standard for identifying the internal opening, probing the tract, assessing sphincter involvement, and performing definitive or staged treatment in the same sitting. Performed under general or spinal anaesthesia. Instruments: fistula probe (malleable silver probe); proctoscope; hydrogen peroxide or methylene blue injection (to trace the tract); Parks' retractors.",
+          "purpose": "Identify internal opening definitively; probe the tract (determine course and sphincter relationship); place seton; perform fistulotomy (simple low fistulae); take biopsies; drain any associated abscess; combined diagnostic + therapeutic",
+          "internal_opening_identification": "Hydrogen peroxide (3mL) injected via external opening: bubbles appear at the internal opening through the proctoscope. Methylene blue (1mL): blue dye traced to internal opening. Digital palpation for induration at the dentate line. Fistula probe passed from external opening.",
+          "probe_caution": "NEVER force a fistula probe — forced probing creates FALSE TRACTS, worsens the fistula, and provides wrong information. The probe follows the path of least resistance."
+        },
+        {
+          "test_name": "Anorectal / Endoanal Ultrasound (EAUS)",
+          "type": "Imaging",
+          "description": "High-frequency rotating endoanal ultrasound probe provides real-time circumferential imaging of the sphincter complex and perisphincterc tissues. 3D endoanal ultrasound with hydrogen peroxide injection (H2O2-enhanced EAUS) is highly accurate for identifying the internal opening and fistula tract course. Particularly useful for: assessment of sphincter integrity before surgery (identifying pre-existing sphincter defects that would increase incontinence risk); and in centres without readily available MRI.",
+          "purpose": "Map fistula tract; identify internal opening; assess sphincter integrity; identify horseshoe extensions",
+          "comparison_with_mri": "EAUS accuracy comparable to MRI for intersphincteric and low transsphincteric fistulae; MRI superior for suprasphincteric and extrasphincteric fistulae and for supralevator extensions; EAUS is faster and less expensive; MRI provides better soft tissue context",
+          "h2o2_enhancement": "Injection of hydrogen peroxide (1-2mL) into the external opening produces echogenic bubbles that trace the fistula tract in real-time on ultrasound — significantly increases sensitivity for identifying internal opening and tract course"
+        },
+        {
+          "test_name": "Fistulography (Fistulogram)",
+          "type": "Imaging — Historical",
+          "description": "Water-soluble contrast injection into the external opening, followed by plain X-ray or fluoroscopy to trace the fistula tract. Largely SUPERSEDED by MRI and EAUS in modern practice — poor accuracy (<40% for accurately identifying the internal opening and sphincter involvement). Occasionally used for: enterocutaneous fistulae (to confirm connection to bowel and assess tract length, which guides spontaneous closure potential); when MRI is contraindicated; some complex post-surgical fistulae.",
+          "current_use": "Mainly for enterocutaneous fistulae (not anal fistulae); largely replaced by MRI for perianal fistulae",
+          "limitation": "Low accuracy for internal opening identification; does not show sphincter relationship well; contrast may not fill complete tract"
+        },
+        {
+          "test_name": "Colonoscopy and Ileocolonoscopy",
+          "type": "Endoscopic",
+          "description": "Mandatory in all patients with suspected or known Crohn's disease presenting with perianal fistula. Also indicated in: patients with perianal fistula and concurrent diarrhoea, rectal bleeding, weight loss, or abdominal symptoms; patients with multiple or recurrent perianal fistulae without clear cryptoglandular cause; when rectal mucosal assessment is needed before fistula surgery (proctitis on colonoscopy contraindicates fistulotomy).",
+          "purpose": "Diagnose or assess Crohn's disease activity (guide biologic treatment); assess rectal mucosa (proctitis — contraindicates fistulotomy); exclude colorectal malignancy; assess disease extent in IBD",
+          "key_finding": "Crohn's proctitis on colonoscopy: contraindicates any form of sphincter division — seton drainage only until proctitis controlled; biologic therapy required"
+        },
+        {
+          "test_name": "Biopsy of Fistula Tract / External Opening",
+          "type": "Histological",
+          "description": "Tissue biopsy from the fistula tract or granulation tissue at the external or internal opening. Indicated when: atypical appearance; multiple fistulae; long-standing non-healing despite treatment; suspicion of Crohn's (granulomas); suspicion of TB (caseating granulomas, AFB); patient from TB-endemic area (India); elderly patient with risk of anal SCC; change in character of chronic fistula (suggests malignant transformation).",
+          "purpose": "Exclude malignancy (anal SCC); confirm Crohn's (non-caseating granulomas); diagnose TB (caseating granulomas, AFB ZN stain, TB culture); identify unusual organisms",
+          "india_note": "TB culture and AFB smear should be sent routinely in India for all biopsies from complex perianal fistulae without clear cryptoglandular cause"
+        },
+        {
+          "test_name": "Stool Culture, Fistula Swab Culture, and Pus Culture",
+          "type": "Microbiological",
+          "description": "Microbiological culture of discharge from the fistula or pus from associated abscess identifies causative organisms and guides antibiotic therapy — particularly important for: TB fistulae (Mycobacterium tuberculosis culture — takes 6-8 weeks; send to specialist TB laboratory); Crohn's fistulae with superinfection; HIV-positive patients (unusual organisms including CMV, Cryptosporidium); patients not responding to standard treatment.",
+          "purpose": "Identify causative organisms; detect TB; guide antibiotic therapy; identify resistant organisms (MRSA)"
+        },
+        {
+          "test_name": "CT Scan Pelvis and Abdomen (CT Fistulogram)",
+          "type": "Imaging",
+          "description": "CT with oral, IV, and rectal contrast provides overview of pelvic anatomy and can demonstrate supralevator collections, pelvic extensions, fistula connection to hollow organs (bladder, vagina), and associated intra-abdominal pathology. CT fistulogram (contrast injected into external fistula opening with CT imaging) is useful for enterocutaneous fistulae — demonstrates the intestinal connection.",
+          "purpose": "Assess complex supralevator collections; demonstrate fistula connection to bladder or vagina (colovesical, rectovaginal); assess intestinal disease in Crohn's; CT fistulogram for enterocutaneous fistulae",
+          "limitation": "Inferior to MRI for sphincter anatomy and local fistula tract details"
+        },
+        {
+          "test_name": "Anorectal Manometry",
+          "type": "Physiological",
+          "description": "Measurement of anal resting and squeeze pressures. Important pre-operatively to establish a baseline continence profile — particularly in: women with prior obstetric injury (may have subclinical sphincter damage); elderly patients; patients with previous anorectal surgery; any patient with pre-existing bowel control difficulties. Low pre-operative resting or squeeze pressure significantly increases incontinence risk after any form of sphincter division.",
+          "purpose": "Pre-operative continence baseline; risk assessment for sphincter-dividing procedures; guide treatment choice"
+        },
+        {
+          "test_name": "Inflammatory Markers (CRP, ESR, FBC) and Crohn's Assessment (Faecal Calprotectin)",
+          "type": "Blood / Stool",
+          "description": "Elevated CRP and ESR in a patient with complex perianal fistula suggests active IBD or systemic sepsis. Faecal calprotectin >200 µg/g suggests active intestinal inflammation (Crohn's or UC). Full blood count: anaemia (Crohn's, sepsis); eosinophilia (parasitic infection); thrombocytosis (chronic inflammation).",
+          "purpose": "Assess systemic inflammation; screen for Crohn's disease activity; guide biologic treatment initiation"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Anal fistula treatment is primarily SURGICAL — most fistulae cannot be resolved with medications alone. However, medications play critical roles in: managing infection and inflammation; treating associated Crohn's disease with biologics; preparing for surgery; maintaining remission after Crohn's fistula treatment; and managing symptoms while awaiting or between procedures. All medications and surgical treatments require specialist colorectal surgery and/or gastroenterology involvement.",
+      "treatment_philosophy": {
+        "simple_low": "Simple low intersphincteric or low transsphincteric fistula: PRIMARY FISTULOTOMY (laying open) — single-stage surgery; excellent cure rate (>90%); day case; minimal morbidity",
+        "complex_high": "Complex or high fistulae: STAGED APPROACHES — start with draining seton to control sepsis; plan definitive sphincter-sparing surgery; biologics for Crohn's; multidisciplinary team management",
+        "crohns": "Crohn's fistulae: COMBINED medical + surgical — biologic therapy (anti-TNF) + seton drainage; treat active luminal disease; avoid fistulotomy in active proctitis"
+      },
+      "categories": [
+        {
+          "category_id": "MED-CAT-191",
+          "category_name": "Antibiotics — For Perianal Sepsis and Crohn's Fistula",
+          "purpose": "Control acute sepsis associated with fistula; reduce inflammation to facilitate healing; used as adjuncts in Crohn's perianal fistula (not curative but reduce sepsis and inflammation, allowing biologic treatment to work).",
+          "medicines": [
+            {
+              "name": "Metronidazole",
+              "brand_examples": ["Metrogyl", "Flagyl", "Metronidazole"],
+              "form": "Tablet (400mg), IV Infusion",
+              "dosage": "400mg three times daily orally; 500mg IV TDS (hospitalised sepsis); 400mg TDS for Crohn's perianal fistula — courses of 4-12 weeks",
+              "use_case": "FIRST-LINE antibiotic for perianal sepsis (anaerobic cover — perianal organisms are predominantly anaerobes); Crohn's perianal fistula (reduces perianal inflammation and improves fistula drainage — used ALONGSIDE biologic therapy, not as sole treatment); maintenance therapy in Crohn's awaiting biologic response",
+              "mechanism": "Nitroimidazole — enters anaerobic bacteria and is reduced to a reactive form that damages bacterial DNA; active against Bacteroides, Clostridium, Fusobacterium (dominant perianal flora)",
+              "side_effects": ["Metallic taste (very common)", "Nausea and GI upset", "Peripheral neuropathy (prolonged courses >3-4 weeks — monitor; reduce dose if symptoms develop)", "Disulfiram-like reaction with alcohol — STRICT ALCOHOL AVOIDANCE"],
+              "note": "Metronidazole alone DOES NOT cure fistulae — it reduces sepsis and inflammation; fistulae recur on stopping unless the underlying tract has been surgically or biologically addressed"
+            },
+            {
+              "name": "Ciprofloxacin",
+              "brand_examples": ["Ciplox", "Ciprofloxacin", "Zoxan"],
+              "form": "Tablet (500mg), IV Infusion",
+              "dosage": "500mg twice daily orally; 400mg IV BD (severe sepsis); typically combined with metronidazole for perianal fistula — 4-12 week courses",
+              "use_case": "Combined with metronidazole for perianal sepsis (gram-negative aerobic cover — E. coli, Klebsiella); Crohn's perianal fistula (the metronidazole + ciprofloxacin combination is the standard antibiotic regimen — used for 12-16 weeks in Crohn's fistula as a bridge to biologic therapy)",
+              "mechanism": "Fluoroquinolone — inhibits DNA gyrase and topoisomerase IV; bactericidal against gram-negative enteric bacteria",
+              "side_effects": ["Tendinopathy (QT prolongation risk — ECG if prolonged)", "Photosensitivity", "CNS effects (headache, dizziness)", "GI upset"],
+              "crohns_fistula_evidence": "ACCENT-II substudy and multiple RCTs: metronidazole + ciprofloxacin for 12 weeks reduces perianal drainage in Crohn's fistulae by 40-50%; used as bridge to infliximab; combining antibiotics with infliximab achieves better early response than infliximab alone"
+            },
+            {
+              "name": "Amoxicillin-Clavulanate (Co-amoxiclav)",
+              "brand_examples": ["Augmentin", "Amoxyclav"],
+              "form": "Tablet (625mg)",
+              "dosage": "625mg three times daily",
+              "use_case": "Acute perianal abscess with cellulitis; post-operative wound infection; where metronidazole + ciprofloxacin cannot be used; broad-spectrum cover for mixed perianal flora",
+              "side_effects": ["GI upset", "Cholestatic jaundice (rare)", "Penicillin allergy reactions"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-192",
+          "category_name": "Biological Therapy for Crohn's Perianal Fistula",
+          "purpose": "Anti-TNF biologics are the CORNERSTONE of treatment for Crohn's perianal fistulae — the most evidence-based pharmacological treatment available. They reduce fistula output, induce complete fistula closure, maintain remission, and prevent recurrence when combined with surgical seton drainage. Used in combination with antibiotics and surgical seton.",
+          "note": "ALL Crohn's perianal fistulae with complexity should be discussed in a multidisciplinary team (MDT) including a gastroenterologist and colorectal surgeon before initiating biologic therapy. TB screening (TB IGRA/Mantoux) and hepatitis B screen are MANDATORY before starting any biologic.",
+          "medicines": [
+            {
+              "name": "Infliximab (Anti-TNF-alpha Monoclonal Antibody)",
+              "brand_examples": ["Remicade", "Remsima", "Infimab", "Inflectra", "biosimilars widely available in India"],
+              "form": "IV Infusion",
+              "dosage": "Induction: 5mg/kg IV at weeks 0, 2, and 6; Maintenance: 5mg/kg IV every 8 weeks; dose may be escalated to 10mg/kg or interval shortened (every 4-6 weeks) for loss of response",
+              "use_case": "FIRST-LINE biologic for Crohn's perianal fistulae; complex perianal Crohn's fistulae not responding to antibiotics and surgical seton drainage; active luminal Crohn's with perianal fistula; fistula maintenance therapy",
+              "mechanism": "Chimeric (mouse-human) IgG1 monoclonal antibody against TNF-alpha — neutralises both soluble and membrane-bound TNF-alpha; reduces T-cell and macrophage-driven transmural Crohn's inflammation; promotes fistula tract fibrosis and closure",
+              "pivotal_evidence": "ACCENT-II trial (Sands BE et al., NEJM 2004): infliximab maintenance (every 8 weeks) achieved complete fistula closure in 36% vs 19% placebo at 54 weeks; reduced number of draining fistulae; reduced perianal disease activity",
+              "side_effects": ["Infusion reactions (acute: fever, chills, hypotension during infusion; delayed: serum sickness-like reaction 1-14 days post-infusion)", "Serious infections — increased risk of bacterial, viral (reactivation of TB, HBV, Herpes Zoster), and fungal infections; screen for latent TB before starting (IGRA test)", "Lymphoma (small increased risk with long-term anti-TNF + thiopurine combination — TNF-alpha inhibition alone carries very low cancer risk)", "Demyelinating disease (rare — avoid in multiple sclerosis)", "Cardiac failure worsening (avoid in NYHA III-IV heart failure)", "Psoriasis (paradoxical)", "Injection/infusion site reactions"],
+              "screening_before_starting": "TB IGRA (Quantiferon Gold) — treat latent TB if positive BEFORE starting; HBV serology (HBsAg, anti-HBc) — prophylactic antiviral if HBV exposure; CXR; blood counts; LFTs; pregnancy test",
+              "monitoring": "CRP (treatment response); faecal calprotectin; drug level monitoring (infliximab trough levels); anti-infliximab antibody levels (to detect immunogenicity/loss of response)"
+            },
+            {
+              "name": "Adalimumab (Anti-TNF-alpha — Subcutaneous)",
+              "brand_examples": ["Humira", "Amgevita", "Hyrimoz", "Zymfentra (biosimilar)"],
+              "form": "Subcutaneous injection (pre-filled pen or syringe)",
+              "dosage": "Induction: 160mg at week 0, then 80mg at week 2; Maintenance: 40mg every 2 weeks (can increase to 40mg weekly for loss of response)",
+              "use_case": "Crohn's perianal fistulae — FIRST-LINE biologic alternative to infliximab (subcutaneous — patient self-administered at home; no IV infusion centre required); patients who lose response to or are intolerant of infliximab",
+              "mechanism": "Fully human IgG1 monoclonal anti-TNF antibody — same mechanism as infliximab; fully human = lower immunogenicity; subcutaneous administration",
+              "pivotal_evidence": "CHARM trial: adalimumab maintenance therapy significantly reduced fistula output and improved complete fistula closure vs placebo in Crohn's patients with perianal fistulae",
+              "advantage": "Subcutaneous self-injection at home; no infusion centre; lower immunogenicity than infliximab (fully human); may be effective after infliximab failure (second anti-TNF)",
+              "side_effects": "Similar to infliximab; injection site reactions (more common with subcutaneous); same infection and lymphoma considerations"
+            },
+            {
+              "name": "Vedolizumab (Anti-Integrin — Gut-Selective)",
+              "brand_examples": ["Entyvio"],
+              "form": "IV Infusion",
+              "dosage": "300mg IV at weeks 0, 2, 6; then every 8 weeks",
+              "use_case": "Crohn's perianal fistulae in patients who have failed anti-TNF therapy; patients with contraindications to anti-TNF (TB, malignancy history, demyelinating disease, heart failure); GEMINI long-term data shows modest but significant benefit for perianal fistulae",
+              "mechanism": "Humanised monoclonal antibody against α4β7 integrin — blocks gut-specific lymphocyte homing to intestinal mucosa; gut-selective (does NOT affect systemic immunity as broadly as anti-TNF → lower infection risk)",
+              "advantage": "Gut-selective → lower systemic infection risk; better for patients who have serious infections on anti-TNF; do not need TB screening (gut-selective)",
+              "note": "Slower onset of action than infliximab — may take 6-12 months for full perianal fistula response"
+            },
+            {
+              "name": "Ustekinumab (Anti-IL-12/23)",
+              "brand_examples": ["Stelara"],
+              "form": "IV infusion (induction); SC injection (maintenance)",
+              "dosage": "Induction: weight-based single IV dose (260mg for <55kg; 390mg for 55-85kg; 520mg for >85kg); Maintenance: 90mg SC every 8 weeks or 12 weeks",
+              "use_case": "Crohn's perianal fistulae — third-line after anti-TNF failure; UNIFI extension data shows perianal fistula healing benefit; increasingly used as second-line before vedolizumab due to faster onset",
+              "mechanism": "Fully human antibody against IL-12 and IL-23 (p40 subunit) — inhibits Th1 and Th17 inflammatory pathways central to Crohn's transmural inflammation and fistula formation",
+              "advantage": "Good safety profile; no TB screening required (different mechanism); effective across many Crohn's manifestations"
+            },
+            {
+              "name": "Darvadstrocel (Alofisel) — Allogeneic Adipose-Derived Stem Cells",
+              "brand_examples": ["Alofisel", "Cx601"],
+              "form": "Local injection into fistula tract (suspension for injection)",
+              "dosage": "120 million cells injected directly into the fistula tract (internal and external openings) in a single session after surgical preparation of the tract (debridement + curettage + closure of internal opening)",
+              "use_case": "BREAKTHROUGH TREATMENT: Complex perianal Crohn's fistulae refractory to conventional therapy AND at least one anti-TNF agent; EMA-approved (2018) specifically for this indication; provides a non-surgical, sphincter-preserving option for very complex refractory Crohn's fistulae",
+              "mechanism": "Adipose-derived mesenchymal stem cells injected directly into the fistula tract; exert local immunomodulatory and anti-inflammatory effects; promote healing through growth factor secretion (HGF, TGF-beta, VEGF); promote tissue regeneration and fistula closure",
+              "pivotal_evidence": "ADMIRE-CD trial (Panés J et al., Lancet 2016): combined remission (fistula closure + no abscess) achieved in 50% Alofisel vs 34% placebo at 24 weeks; durable response at 52 weeks",
+              "side_effects": ["Perianal pain post-procedure (common; transient)", "Anal abscess at injection site (5-10%)", "Perianal infection (requires antibiotic treatment)", "No systemic immunosuppression effects"],
+              "availability": "EMA-approved in Europe; limited availability in India and many countries; expensive; specialist centres only"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-193",
+          "category_name": "Surgical Treatments — Core Interventions for Anal Fistula",
+          "purpose": "Surgery is the definitive treatment for anal fistula in the majority of cases. The choice of surgical procedure is the most critical decision in fistula management — determined by fistula complexity, sphincter involvement, pre-existing continence, and associated conditions.",
+          "medicines": [
+            {
+              "name": "Fistulotomy (Laying Open)",
+              "form": "Surgical procedure — Day case",
+              "description": "The GOLD STANDARD treatment for simple low anal fistulae. The entire fistula tract is laid open — a probe is passed from the external to the internal opening, and all tissue overlying the probe is divided. The resulting wound heals by secondary intention (granulation) over 4-8 weeks. ONLY SAFE for: intersphincteric fistulae (no sphincter at risk); low transsphincteric fistulae where the amount of external sphincter involved is acceptable (<30% of total EAS length in most patients).",
+              "dosage": "N/A — surgical",
+              "use_case": "Simple intersphincteric fistula; low transsphincteric fistula with minimal sphincter involvement; superficial subcutaneous fistula",
+              "healing_rate": ">90-95% long-term cure; very low recurrence",
+              "continence_risk": "Very low for intersphincteric fistulae (<5% minor incontinence); moderate for low transsphincteric (5-15% risk of gas/minor soiling depending on extent of sphincter divided)",
+              "side_effects": ["Incontinence (primary risk — related to amount of sphincter divided)", "Delayed wound healing (4-8 weeks — wound heals by secondary intention)", "Bleeding", "Infection"]
+            },
+            {
+              "name": "Seton Placement (Cutting Seton or Draining/Loose Seton)",
+              "form": "Surgical procedure",
+              "description": "A seton is a thread, suture, or silastic loop passed through the fistula tract. TWO TYPES: (1) DRAINING (LOOSE) SETON: a non-cutting loop loosely placed to allow drainage of the tract, prevent abscess formation, and stimulate fibrous reaction — used as a LONG-TERM DRAINAGE device in complex fistulae while awaiting definitive treatment or as palliation; (2) CUTTING (STAGED) SETON: a tight thread progressively tightened (at monthly intervals) causing slow gradual division of the sphincter with concurrent fibrous reaction — the sphincter heals as it is divided, theoretically preserving continence. CUTTING SETON has higher incontinence risk than previously thought — largely replaced by sphincter-preserving procedures (LIFT, flap) for most complex fistulae.",
+              "draining_seton_uses": "Complex fistulae awaiting biologic treatment response (Crohn's); control of acute sepsis; horseshoe fistulae (limb drainage); long-term palliation if definitive surgery declined or too risky; pre-biologic drainage (seton drainage improves biologic response in Crohn's perianal fistula)",
+              "cutting_seton_uses": "Occasionally used for transsphincteric fistulae when other sphincter-sparing options unavailable; fallen out of favour due to significant incontinence risk",
+              "side_effects": ["Discomfort from the foreign body", "Persistent discharge from the seton", "Incontinence (cutting seton — 15-50% rates of some incontinence)", "Allergic reaction to seton material (silastic/nylon)"]
+            },
+            {
+              "name": "LIFT Procedure (Ligation of Intersphincteric Fistula Tract)",
+              "form": "Surgical procedure",
+              "description": "A sphincter-preserving procedure — access is gained through the intersphincteric plane; the fistula tract is identified, ligated, and divided in the intersphincteric space (between the IAS and EAS); the wound is then closed. The sphincter is NOT divided. Initially described by Rojanasakul in 2007; excellent results in many centres for transsphincteric fistulae. Variation: BioLIFT (LIFT with bioprosthetic plug reinforcement of the intersphincteric space).",
+              "use_case": "Transsphincteric anal fistulae (low to moderate complexity) as a sphincter-preserving alternative to fistulotomy; particularly in patients at higher incontinence risk (women, prior obstetric injury, elderly)",
+              "healing_rate": "57-80% healing in various series; higher in experienced hands; recurrence rate 14-30%",
+              "continence_risk": "Very low — no sphincter division; minimal incontinence risk",
+              "advantage": "Sphincter-preserved; repeatable if recurs; good option between seton and advancement flap"
+            },
+            {
+              "name": "Mucosal Advancement Flap (Rectal Advancement Flap)",
+              "form": "Surgical procedure",
+              "description": "A sphincter-preserving technique — after curettage of the fistula tract, a flap of mucosa, submucosa, and internal sphincter is raised from the rectum and advanced to cover the internal opening (the source of fistula contamination). By closing the internal opening with healthy tissue (without sphincter division), the fistula tract can heal. The external opening is left open to drain.",
+              "use_case": "Complex transsphincteric fistulae where fistulotomy would risk incontinence; high fistulae; anterior fistulae in women; recurrent fistulae after LIFT failure; Crohn's fistulae (in remission, no active proctitis)",
+              "healing_rate": "60-75% in acute cases; lower in Crohn's (40-55%); success depends on no active proctitis",
+              "continence_risk": "5-15% minor incontinence (from manipulation of internal sphincter in flap elevation)",
+              "contraindication": "Active Crohn's proctitis (impaired healing); active abscess at the time of repair"
+            },
+            {
+              "name": "VAAFT (Video-Assisted Anal Fistula Treatment)",
+              "form": "Surgical procedure — Minimally invasive",
+              "description": "A minimally invasive sphincter-preserving technique using a specially designed fistuloscope (rigid 8Fr endoscope) passed through the external opening to visualise the fistula tract, identify the internal opening from within, and ablate the tract from the inside using electrocautery. The internal opening is then closed with a stapler, sutures, or flap. Allows direct visualisation of the entire tract including secondary extensions.",
+              "use_case": "Complex and recurrent anal fistulae; horseshoe fistulae; any fistula where complete tract visualisation is desired before treatment; minimally invasive option",
+              "healing_rate": "60-75% in published series",
+              "advantage": "Minimally invasive; sphincter-sparing; direct tract visualisation; secondary extensions identified and ablated; suitable for complex tracts",
+              "side_effects": ["Equipment cost; specialist training required"]
+            },
+            {
+              "name": "Fibrin Glue Injection",
+              "form": "Surgical procedure / Injectable",
+              "description": "Biological fibrin sealant (prepared from pooled donor plasma — containing fibrinogen, thrombin, calcium chloride) injected into the fistula tract (from external opening with simultaneous closure of internal opening) creates a fibrin plug that fills and seals the tract while stimulating fibroblast ingrowth and healing.",
+              "use_case": "Low-complexity fistulae; adjunct to other procedures; patients unfit for surgery; bridge treatment; historically popular — declining in use due to modest long-term results",
+              "healing_rate": "14-63% (highly variable); better results in shorter (<2cm) simple tracts; worse in complex and Crohn's fistulae",
+              "advantage": "Non-surgical; safe; no sphincter risk; can be repeated",
+              "limitation": "Lower long-term healing rates than other techniques; expensive; requires preparation"
+            },
+            {
+              "name": "Anal Fistula Plug (AFP) — Bioprosthetic Plug",
+              "form": "Surgical implant",
+              "description": "A cone-shaped bioprosthetic plug (typically made from lyophilised porcine small intestinal submucosa — SIS) inserted into the fistula tract from the internal opening outward. The plug acts as a scaffold for tissue ingrowth and the internal opening is secured with sutures. Provides a biologic matrix for healing without sphincter division.",
+              "use_case": "Transsphincteric and high complex fistulae as a sphincter-preserving option; patients preferring a single-stage procedure; moderate evidence base",
+              "healing_rate": "14-80% (very variable); higher early series not replicated in larger trials; average ~50% long-term",
+              "advantage": "Simple insertion; no sphincter risk; can be performed under local anaesthesia in some settings",
+              "limitation": "Plug extrusion is the primary failure mode (plug falls out before incorporation); expensive; variable results"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-194",
+          "category_name": "Wound Care and Supportive Medications",
+          "purpose": "Supporting healing, managing discharge, and preventing secondary infection.",
+          "medicines": [
+            {
+              "name": "Wound Packing and Irrigation — Warm Saline",
+              "form": "Non-pharmacological wound care",
+              "dosage": "Wash the external opening with warm saline or plain warm water twice daily; gentle irrigation with a syringe if accessible; dry with soft gauze pat; apply a small gauze pad to absorb discharge",
+              "use_case": "ALL anal fistula patients — maintaining cleanliness of the external opening reduces secondary bacterial contamination, reduces pruritus, and reduces perianal skin excoriation"
+            },
+            {
+              "name": "Barrier Cream — Zinc Oxide Paste",
+              "brand_examples": ["Zinc oxide paste", "Sudocrem", "Drapolene"],
+              "form": "Cream / Paste",
+              "dosage": "Apply a thin layer to the perianal skin around (not into) the fistula external opening after cleaning; acts as moisture barrier",
+              "use_case": "Protect perianal skin from chronic discharge-related excoriation and chemical dermatitis; reduce pruritus ani",
+              "mechanism": "Physical barrier preventing faecal and discharge contact with perianal skin; mild antibacterial; zinc promotes wound healing"
+            },
+            {
+              "name": "Stool Softeners (Lactulose, Macrogol, Isabgol)",
+              "form": "Oral",
+              "dosage": "As per individual product instructions; target Bristol Type 4 soft stools",
+              "use_case": "Essential for ALL fistula patients — soft stools reduce intraluminal pressure in the anal canal; reduce straining (which increases risk of spreading infection); facilitate postoperative healing; prevent post-operative constipation-related wound dehiscence",
+              "note": "Particularly important post-operatively — hard stools can disrupt fistulotomy wounds and prevent healing"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "While diet does not directly cause or cure anal fistula (unlike anal fissure where constipation is a direct cause), dietary optimisation plays a critical supporting role in: facilitating healing of fistula wounds post-surgery; reducing constipation and straining (which increase intraluminal anal pressure and may worsen fistula drainage or post-operative wound problems); supporting immune function (particularly important for Crohn's and TB fistulae); and maintaining nutritional status in complex fistulae with significant output.",
+      "recommended_foods": [
+        {
+          "category": "High-Fibre Diet for Stool Consistency Optimisation",
+          "evidence": "Strong — soft stools reduce straining and intraluminal anal pressure; prevent post-operative wound complications; maintain overall anorectal health",
+          "items": [
+            {
+              "food": "Whole grains (ragi, jowar, bajra, whole wheat atta, brown rice), Legumes (dal, chana, rajma), Vegetables, Fruits",
+              "benefit": "Maintains soft, well-formed stools (Bristol Type 4); reduces straining during defecation; prevents constipation that would stress fistula wound sites post-operatively; general anorectal health",
+              "frequency": "Daily — maintain the same high-fibre diet as for anal fissure; target 25-35g fibre/day"
+            },
+            {
+              "food": "Isabgol (Psyllium Husk)",
+              "benefit": "Stool softening and bulking; reduces straining; most practical and affordable fibre supplement; particularly important post-operatively",
+              "frequency": "1-2 teaspoons in 300mL water once or twice daily; continue long-term"
+            }
+          ]
+        },
+        {
+          "category": "Protein-Rich Foods for Wound Healing",
+          "evidence": "Strong — protein is essential for: surgical wound healing; immune function (particularly against perianal infection); muscle maintenance (prevents cachexia in complex fistulae); collagen synthesis for fistula tract fibrosis",
+          "items": [
+            {
+              "food": "Eggs, Chicken, Fish, Mutton (lean), Dal and legumes (combined plant protein), Paneer, Curd",
+              "benefit": "Adequate protein (1.2-1.5g/kg/day for post-surgical healing) accelerates wound healing; supports immune function; essential amino acids for collagen and tissue synthesis",
+              "frequency": "Every meal — ensure protein source at breakfast, lunch, and dinner"
+            }
+          ]
+        },
+        {
+          "category": "Anti-Inflammatory Foods (Particularly for Crohn's Fistula)",
+          "evidence": "Moderate — anti-inflammatory dietary patterns (Mediterranean diet) reduce systemic and local gut inflammation; may improve Crohn's disease activity (adjunctive to biologic therapy)",
+          "items": [
+            {
+              "food": "Oily fish (omega-3), Turmeric (curcumin), Ginger, Olive oil, Berries, Green tea, Leafy vegetables",
+              "benefit": "Anti-inflammatory (reduces TNF-alpha, IL-6, IL-1β); complementary to biologic therapy in Crohn's fistula; supports mucosal healing; antioxidant protection",
+              "frequency": "Daily incorporation"
+            },
+            {
+              "food": "Exclusive Enteral Nutrition (EEN) — Crohn's specific",
+              "benefit": "In Crohn's disease, EEN (consuming a complete liquid nutritional formula as the sole diet for 6-8 weeks) induces remission in 50-80% of active Crohn's disease — comparable to corticosteroids but without steroid side effects; reduces gut inflammation; allows perianal fistula improvement; widely recommended in paediatric Crohn's and increasingly used in adult Crohn's flares",
+              "frequency": "Under dietitian supervision — 6-8 week course in active Crohn's flare",
+              "india_note": "Commercial elemental and polymeric formulas: Ensure, Fortisip, Nutrison, Ensure Plus; enteral feeding via NG tube if oral tolerance inadequate"
+            }
+          ]
+        },
+        {
+          "category": "Zinc, Vitamin C, and Vitamin D — Wound Healing Micronutrients",
+          "items": [
+            {
+              "food": "Zinc sources: Pumpkin seeds, Sesame (til), Legumes, Meat, Eggs, Dairy; Vitamin C: Amla, Guava, Lime; Vitamin D: Oily fish, Eggs, Sunlight",
+              "benefit": "Zinc: essential for wound healing, immune function (neutrophil and lymphocyte activity), and collagen synthesis; deficiency common in IBD and malnutrition. Vitamin C: cofactor for collagen synthesis (required for hydroxylation of proline and lysine in collagen); antioxidant; immune support. Vitamin D: immune modulation; Vitamin D deficiency common in Crohn's disease",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Nutritional Support for Enterocutaneous Fistula",
+          "evidence": "Critical — high-output enterocutaneous fistulae cause massive fluid, electrolyte, protein, and micronutrient losses; malnutrition is the single most important reversible factor preventing spontaneous fistula closure",
+          "items": [
+            {
+              "food": "Total Parenteral Nutrition (TPN) or Total Enteral Nutrition (TEN) — Medical",
+              "benefit": "In high-output enterocutaneous fistulae: bowel rest (TPN) or post-fistula enteral feeding (TEN) may allow spontaneous fistula closure; maintains nutritional status; allows surgical correction when the patient is optimised; TPN gives bowel rest reducing fistula output; TEN (distal to the fistula) provides nutrition with reduced fistula output",
+              "protocol": "SNAP protocol for enterocutaneous fistulae: Sepsis control; Nutrition (TPN or EN); Anatomy delineation (CT fistulogram); Protect skin; Definitive surgical plan",
+              "note": "TPN/TEN in enterocutaneous fistula is a medical inpatient management — requires specialist nutritional support team"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Highly spicy foods during active infection and post-operatively",
+          "reason": "Capsaicin passed in stool irritates inflamed perianal wound and fistula opening; worsens post-defecation burning at the wound site; avoid during active fistula treatment and post-operative period"
+        },
+        {
+          "food": "Alcohol (during antibiotic treatment and biologic therapy)",
+          "reason": "ABSOLUTE during metronidazole (disulfiram-like reaction); alcohol reduces immune function and impairs wound healing; avoid during biologic therapy (reduces resistance to infections); avoid during post-operative recovery"
+        },
+        {
+          "food": "Constipating foods (refined grains, excess dairy, insufficient fibre) — particularly post-operatively",
+          "reason": "Constipation and hard stools post-operatively can disrupt healing wounds; increase straining-related wound stress; avoid refined white rice, white bread, maida, and insufficient fluid intake"
+        },
+        {
+          "food": "High-residue foods (particularly after fistulotomy wound healing phase)",
+          "reason": "Very high-residue foods (corn husks, raw vegetables with intact fibres) may physically irritate fresh fistulotomy wounds; generally soft cooked fibres are better tolerated in the first 2-4 weeks post-operatively"
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "Post-fistula surgery (fistulotomy or seton) meal plan supporting wound healing, soft stools, and immune nutrition.",
+        "early_morning": "Warm water (2 glasses) + 1 teaspoon Isabgol in water",
+        "breakfast": "Soft ragi or whole wheat porridge (dalia) with milk + 1-2 eggs (scrambled or boiled) + 1 glass warm water or coconut water",
+        "mid_morning": "1 bowl papaya (gut motility) + 1 small cup curd (probiotics, protein)",
+        "lunch": "Soft dal (moong or masoor — well cooked) + brown rice or 2 soft chapati + 1 cooked vegetable sabzi (not highly spiced — lauki or tori preferred) + 1 cup curd",
+        "afternoon": "Guava or pear + warm ginger tea + turmeric milk (for anti-inflammatory support)",
+        "dinner": "Khichdi (dal + rice — soft, easily digestible) + steamed chicken or fish (protein for healing) + 1 cooked green vegetable",
+        "before_bed": "Warm milk with turmeric + 1 teaspoon Isabgol in water if needed for stool softening"
+      },
+      "special_dietary_notes": [
+        "POST-OPERATIVE NUTRITION is especially important — ensure 1.2-1.5g protein/kg/day; adequate zinc and Vitamin C; maintain soft stools with fibre and Isabgol; avoid constipation",
+        "CROHN'S FISTULA diet: Mediterranean-type anti-inflammatory diet; Exclusive Enteral Nutrition (EEN) during Crohn's flares; daily Vitamin D supplementation (deficiency common in Crohn's); avoid trigger foods specific to individual patient",
+        "TB FISTULA diet: TB is catabolic (causes weight loss and muscle wasting); high-protein, high-calorie diet is essential alongside TB medications; DOTS regime: rifampicin causes orange-red discolouration of urine and tears — reassure patients"
+      ]
+    },
+
+    "lifestyle_management": {
+      "wound_care_post_operatively": {
+        "fistulotomy_wound_care": [
+          "Warm sitz baths 2-3 times daily and after every bowel movement — the most important wound care measure; promotes healing, cleans wound, reduces bacterial colonisation",
+          "Gentle cleaning of the open wound with warm saline or plain warm water; dry with soft gauze; apply dry non-adherent gauze dressing lightly",
+          "Wound packing: in the early post-operative period, the wound may need light gauze packing to prevent premature skin bridge formation — district nursing or daily wound dressing in hospital follow-up",
+          "Do NOT use antiseptics (Dettol, Savlon, hydrogen peroxide) directly on the healing wound — cytotoxic to healing tissue; plain warm saline or water is best",
+          "Avoid tight underwear or clothing that presses on the wound — loose cotton underwear; avoid synthetic fabrics",
+          "Return to work: most patients can return to a desk job in 1-2 weeks post-fistulotomy; physically demanding work 4-6 weeks"
+        ],
+        "seton_care": [
+          "Clean the seton thread and perianal area daily with warm water; gentle traction on the seton knot to free it from perianal skin",
+          "The seton should be non-cutting (loose) and move freely through the fistula — if it feels too tight, contact the surgeon",
+          "The seton is a temporary or long-term device — attend all follow-up appointments; the seton will be removed or exchanged at the surgeon's instruction",
+          "Light discharge from the seton tract is expected and normal — wear a small gauze pad to protect clothing"
+        ]
+      },
+      "hygiene_and_perianal_care": [
+        "Use a health faucet (lota), bidet, or damp cotton wool for perianal cleansing after defecation — far superior to dry toilet paper for a patient with active fistula discharge",
+        "Apply zinc oxide barrier cream (or Sudocrem) to the perianal skin around the external opening to protect it from maceration and chemical dermatitis from chronic discharge",
+        "Change pads/gauze frequently — wet pads promote skin breakdown and bacterial colonisation",
+        "Loose, breathable cotton underwear — avoids moisture trapping and irritation"
+      ],
+      "smoking_cessation": {
+        "importance": "Smoking is one of the strongest risk factors for Crohn's disease activity — smokers have significantly more active Crohn's disease, more perianal fistulae, and worse outcomes from biologic therapy. Smoking DOUBLES the risk of Crohn's disease and worsens perianal fistula outcomes dramatically. Smoking cessation is among the most important advice for any Crohn's fistula patient.",
+        "recommendation": "Complete cessation; NRT; varenicline; motivational support"
+      },
+      "managing_crohns_disease": [
+        "Medication adherence: maintaining biologic therapy (infliximab/adalimumab) adherence is essential — the single most important predictor of fistula closure in Crohn's; missed doses increase antibody formation and loss of response",
+        "Stress management: psychological stress is a major trigger for Crohn's flares which worsen perianal fistula; CBT, mindfulness, adequate sleep",
+        "Regular colonoscopy surveillance: in long-standing Crohn's fistulae, perianal Crohn's increases colorectal cancer risk — maintain surveillance programme",
+        "Multidisciplinary team (MDT): Crohn's perianal fistula is best managed by an IBD MDT including gastroenterologist, colorectal surgeon, IBD nurse, stoma therapist, and (if needed) psychologist and dietitian"
+      ],
+      "psychological_support": [
+        "Anal fistula causes significant psychological morbidity — chronic discharge, odour, need to wear pads, sexual embarrassment, recurrent surgeries, and fear of incontinence cause: depression, anxiety, sexual dysfunction, social isolation, reduced quality of life",
+        "Normalise the psychological burden: acknowledge that this is a difficult, chronic condition; validate the patient's experience",
+        "Crohn's-specific support: IBD charities (Crohn's and Colitis UK; The Gut Trust) provide peer support, information, and advice",
+        "Sex and relationship counselling: perianal fistula and surgery significantly affect sexual activity; referral for psychosexual counselling if needed",
+        "Support for incontinence after surgery: pelvic floor physiotherapy; continence nurse specialist; biofeedback if post-operative sphincter dysfunction"
+      ]
+    },
+
+    "fistula_monitoring_plan": {
+      "note": "Fistula monitoring tracks healing progress, treatment response, and complication detection. Monitoring intervals and investigations depend on the treatment modality and associated conditions.",
+      "green_zone": {
+        "status": "Responding Well — Fistula Healing or Controlled",
+        "criteria_post_surgery": "Post-fistulotomy: wound contracting and granulating well; discharge decreasing; pain reducing; no signs of wound infection; stools soft; patient tolerating warm sitz baths and wound care. Post-seton: discharge controlled; no acute abscess formation; awaiting definitive treatment planning. Crohn's fistula on biologic: fistula output decreasing; patient reporting improvement; CRP trending down; MRI (at 6 months) showing reduced T2 signal hyperintensity",
+        "action": "Continue wound care and warm sitz baths post-fistulotomy; continue dietary fibre; attend all follow-up appointments; post-fistulotomy wound check at 2-4 weeks and 6-8 weeks. Crohn's fistula: continue biologic therapy at maintenance dosing; 6-monthly clinical review; annual MRI to assess response; drug level monitoring; colonoscopy as per IBD schedule."
+      },
+      "yellow_zone": {
+        "status": "Suboptimal Response — Review Required",
+        "criteria": "Fistulotomy wound not healing at expected rate (>8-10 weeks for simple fistulotomy without significant improvement); persistent high-volume discharge; pain not improving after seton; Crohn's fistula not reducing output after 6 months of biologic therapy; loss of biologic response (increasing fistula output after initial improvement); new secondary tract developing; drug level monitoring shows subtherapeutic infliximab/adalimumab levels",
+        "action": "Surgical review: assess wound for bridging or premature skin closure (requires breakdown to allow healing from base); EUA if anatomy unclear; MRI pelvis to reassess tract extent and secondary tracts. Crohn's: check biologic drug levels and anti-drug antibodies; dose escalate or switch biologic if loss of response; rule out superimposed infection (abscess); ensure antibiotic treatment ongoing; consider adding azathioprine to reduce immunogenicity"
+      },
+      "red_zone": {
+        "status": "URGENT — Acute Complication or Non-Response",
+        "criteria": "Fever and systemic sepsis — acute abscess developing in a fistula patient (particularly post-seton); wound breakdown with spreading cellulitis; new severe pain not explained by expected post-operative course; change in nature of chronic fistula discharge (bloody, purulent, faecal-stained in previously minimal discharge) — possible malignant transformation in chronic fistula; unexpected incontinence after surgery; massive increase in discharge suggesting new tract formation",
+        "action": "URGENT surgical review (same day if fever and acute pain — possible acute abscess requiring emergency drainage). If new incontinence post-sphincterotomy: urgent anorectal manometry and endoanal ultrasound (assess sphincter integrity); continence nurse specialist. If chronic fistula character change: urgent EUA + biopsy to exclude anal SCC. SEPSIS with perianal fistula: IV antibiotics + urgent EUA and drainage"
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Faecal Incontinence (Post-Surgical)",
+        "description": "The most feared and most important complication of anal fistula surgery — affecting quality of life as severely as the fistula itself if significant. Results from inadvertent division of too much sphincter muscle. Minor incontinence (flatus/mucus soiling): occurs in 10-20% after fistulotomy for transsphincteric fistulae. Major incontinence (liquid or solid stool): 2-5%. Risk factors: female sex (less sphincter reserve); anterior location; prior obstetric sphincter injury; previous anorectal surgery; suprasphincteric or extrasphincteric fistula.",
+        "severity": "Mild to Severe",
+        "prevention": "Pre-operative anorectal manometry and endoanal ultrasound to assess sphincter reserve; use sphincter-preserving procedures (LIFT, advancement flap, VAAFT) for complex high fistulae; never perform fistulotomy for high transsphincteric or suprasphincteric fistulae",
+        "management": "Pelvic floor physiotherapy; biofeedback; PTNS (posterior tibial nerve stimulation); injectable sphincter bulking agents (NASHA Dx gel); sacral nerve stimulation; sphincteroplasty (sphincter repair); stoma if catastrophic incontinence"
+      },
+      {
+        "complication": "Recurrence of Fistula",
+        "description": "Recurrence after apparently successful treatment is one of the most frustrating outcomes of anal fistula management. Recurrence rates: fistulotomy (simple fistula): 2-8%; LIFT procedure: 15-30%; advancement flap: 20-30%; fibrin glue: 30-60%; botulinum toxin (Crohn's): 40-50%. Causes of recurrence: failure to identify or close the internal opening (the primary source of ongoing infection); missed secondary tracts at surgery; inadequate healing from comorbid conditions (Crohn's, diabetes, immunosuppression); re-infection from the same anal gland.",
+        "management": "Repeat MRI and EUA; identify missed internal opening or secondary tract; reassess for underlying Crohn's or TB; repeat surgery with attention to cause of failure"
+      },
+      {
+        "complication": "Perianal Abscess on Fistula (Recurrent Sepsis)",
+        "description": "Blockage of the external opening (from granulation tissue or fibrosis) leads to accumulation of discharge in the fistula tract → acute abscess formation. Patients experience: sudden increase in perianal pain; local swelling; fever; systemic sepsis features. This cycling of discharge-and-blockage is a characteristic pattern of untreated or inadequately treated anal fistula.",
+        "management": "Urgent drainage (examination under local or general anaesthesia); IV antibiotics; ensure adequate drainage of the external opening; fistula tract re-assessment after acute episode resolves"
+      },
+      {
+        "complication": "Malignant Transformation in Chronic Fistula",
+        "description": "A rare but potentially fatal long-term complication — squamous cell carcinoma (SCC) can develop in a long-standing chronic anal fistula tract, particularly in: Crohn's disease (chronic inflammation + fistula for >10-20 years); patients with chronic anal fistula associated with HPV; chronic radiation fistulae. The cancer is often missed because it may not change the external appearance dramatically — the key alert is a CHANGE IN THE CHARACTER of the fistula (more pain, bleeding, friable tissue, purulent discharge changing to bloody).",
+        "alarm_features": "Change in pain character; new bleeding from fistula; hard or friable tissue at fistula opening; systemic symptoms (weight loss, constitutional); fistula not responding to previously effective treatment",
+        "management": "BIOPSY any chronic non-healing fistula, particularly with changed character; if SCC confirmed — MDT management (oncology, colorectal surgery, radiation oncology); chemoradiotherapy (Nigro/James protocol) is standard first-line for anal SCC; surgery if residual disease"
+      },
+      {
+        "complication": "Perianal Skin Excoriation and Chronic Dermatitis",
+        "description": "Chronic perianal discharge causes chemical dermatitis and skin breakdown — the skin becomes raw, erythematous, macerated, and intensely pruritic. Secondary fungal infection (Candida) is common in the chronically moist perianal area. This is a significant quality-of-life complication even for patients with otherwise controlled fistula.",
+        "management": "Meticulous perianal skin care; barrier creams (zinc oxide); moisture-wicking pads; topical antifungal (clotrimazole 1% cream) if fungal infection; low-potency topical corticosteroid (short courses only) for acute dermatitis flare"
+      },
+      {
+        "complication": "Sepsis and Life-Threatening Perianal Necrotising Fasciitis (Fournier's Gangrene)",
+        "description": "A rare but life-threatening complication — inadequately treated perianal abscess-fistula complex in immunocompromised patients (poorly controlled diabetes, HIV, haematological malignancy, chemotherapy) can progress to necrotising fasciitis (Fournier's Gangrene) — a rapidly spreading synergistic bacterial infection of the perineal fascial planes causing tissue necrosis. Characterised by: rapidly spreading perianal swelling and necrosis; crepitus (gas-forming organisms); systemic sepsis; shock.",
+        "severity": "LIFE-THREATENING — mortality 20-40%",
+        "management": "EMERGENCY: immediate broad-spectrum IV antibiotics (piperacillin-tazobactam + vancomycin + fluconazole); emergency surgical debridement — wide excision of all necrotic tissue; ICU care; hyperbaric oxygen therapy adjunctively; multiple re-debridements until clean; reconstructive surgery after recovery"
+      },
+      {
+        "complication": "Psychological and Sexual Dysfunction",
+        "description": "The chronic nature of anal fistula — persistent discharge, odour, embarrassment, recurrent surgeries, fear of incontinence, and pain — causes significant psychological morbidity comparable to other chronic conditions: depression (40%), anxiety (35%), sexual dysfunction (20-40%), relationship difficulties, social isolation, inability to work, reduced quality of life. These consequences are significantly underrecognised and undertreated.",
+        "management": "Acknowledge and validate psychological burden; refer to clinical psychologist or psychiatrist if depression/anxiety significant; psychosexual counselling for sexual dysfunction; social work support; IBD charities and support groups; occupational therapy for work rehabilitation"
+      }
+    ],
+
+    "special_populations": {
+      "crohns_disease_fistula": {
+        "key_points": [
+          "Crohn's perianal fistulae are the most complex and challenging anal fistulae to treat — requiring lifelong combined medical + surgical management",
+          "Active RECTAL PROCTITIS on colonoscopy is an absolute contraindication to fistulotomy — the inflamed rectum cannot support a healing wound; any sphincter division will heal poorly; always control rectal disease with biologic therapy before considering surgery",
+          "Seton drainage as a BRIDGE to biologic therapy: place a draining seton (non-cutting) first to control sepsis and allow biologic therapy to induce fistula remission; only consider definitive repair once biologic therapy has achieved significant improvement",
+          "COMBINATION TREATMENT is superior: infliximab + seton drainage → significantly higher fistula closure rates than either alone; ACCENT-II trial: 46% complete fistula closure with infliximab + seton vs 23% infliximab alone",
+          "Defunctioning stoma: a loop ileostomy or colostomy may be required in severe refractory perianal Crohn's to allow healing; faecal diversion reduces fistula output dramatically; gives perianal tissues time to heal; some patients with quality-of-life-impairing perianal Crohn's prefer a permanent stoma over continued perianal disease",
+          "Van Assche MRI score: used to assess treatment response in Crohn's perianal fistulae — reassess MRI at 6-12 months of biologic therapy to document objective improvement"
+        ]
+      },
+      "rectovaginal_fistula": {
+        "key_points": [
+          "Most commonly caused by obstetric trauma (3rd/4th degree perineal tear) — present 1-3 months post-delivery",
+          "Clinical diagnosis: passage of flatus or faeces per vagina; vaginitis; recurrent UTIs; malodorous vaginal discharge",
+          "Methylene blue test confirms diagnosis: tampon inserted vaginally, methylene blue instilled per rectum — blue staining confirms rectovaginal communication",
+          "Timing of surgical repair: repair EARLY obstetric fistulae immediately (within first 24-48 hours) if possible; if missed, wait at least 3-6 months for inflammation to resolve before repair",
+          "Crohn's rectovaginal fistula: ALWAYS exclude Crohn's before surgical repair (Crohn's fistulae do not heal with standard surgical repair alone); biologic therapy first",
+          "Surgical options: low anovaginal fistula — perineal repair (Parks' repair, with or without graciloplasty); Martius flap (labial fat pad interposition — excellent for obstetric fistulae); mid-vaginal fistula — transabdominal repair; high fistula — combined abdominal-perineal repair"
+        ]
+      },
+      "fistula_in_hiv_aids": {
+        "key_points": [
+          "HIV-positive patients with anal fistula require full STI screen (syphilis, HSV, gonorrhoea, Chlamydia/LGV) — opportunistic perianal infections mimic fistula",
+          "Biopsy all perianal ulcers in HIV-positive patients — CMV, Kaposi's sarcoma, lymphoma, and SCC must be excluded",
+          "Surgical outcomes are generally acceptable with CD4 >200 cells/µL; CD4 <100: healing impaired; favour non-surgical drainage approaches and optimise ART first",
+          "ART optimisation is the single most important adjunct to fistula management in HIV — improving CD4 count dramatically improves wound healing and infection control",
+          "Anal SCC has a 40-fold higher incidence in HIV-positive MSM than the general population — any non-healing perianal ulcer or fistula must be biopsied; HPV vaccination recommended for all HIV-positive MSM up to age 45"
+        ]
+      },
+      "fistula_in_pregnancy": {
+        "key_points": [
+          "Symptomatic anal fistula in pregnancy: manage conservatively (sitz baths, antibiotics if abscess component, stool softeners); definitive surgery should be deferred until post-partum where possible",
+          "If acute abscess requires drainage during pregnancy: simple drainage under local anaesthesia acceptable; avoid extensive dissection",
+          "Post-partum: reassess the fistula after delivery; many Crohn's fistulae worsen post-delivery; definitive fistula assessment and treatment typically recommended from 3-6 months post-delivery",
+          "Rectovaginal fistula: if identified during delivery — attempt primary repair immediately; if identified post-partum — wait 3-6 months for tissue recovery before repair",
+          "Safe antibiotics in pregnancy: amoxicillin-clavulanate (from 2nd trimester); metronidazole (avoid 1st trimester large doses — theoretical concern); safe from 2nd trimester at standard doses; avoid ciprofloxacin (all trimesters)"
+        ]
+      },
+      "tb_associated_fistula_india": {
+        "key_points": [
+          "India has the world's highest TB burden — TB fistulae are significantly more common in India than in high-income countries; maintain a high clinical index of suspicion",
+          "Features suggesting TB fistula: multiple fistulae; pale, indurated, undermined edges; relatively painless; associated perianal skin disease; failure to respond to standard treatment; concurrent pulmonary TB; contact with TB patient; X-ray shows pulmonary disease",
+          "Diagnosis: biopsy showing caseating granulomas; ZN stain for AFB; TB culture (Lowenstein-Jensen medium — 6-8 weeks); TB IGRA blood test; GeneXpert PCR on tissue (rapid — results in hours)",
+          "Treatment: DOTS regime (4-drug initial phase: isoniazid + rifampicin + pyrazinamide + ethambutol × 2 months; continuation phase: isoniazid + rifampicin × 4 months — total 6 months) ALONGSIDE surgical fistula management",
+          "Surgery for TB fistula: DELAY until TB medications have been given for at least 4-6 weeks and active infection is controlled; standard surgical fistula treatment (fistulotomy for simple; staged approach for complex) following medical TB control; healing much better once TB infection treated",
+          "Drug side effects of TB therapy relevant to fistula patients: rifampicin causes drug interactions (reduces biologic drug levels — important if concurrent Crohn's); isoniazid + rifampicin hepatotoxicity (check LFTs monthly); pyrazinamide causes hyperuricaemia and arthralgia"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "HPV Vaccine (Human Papillomavirus) — Anal Cancer Prevention",
+        "types": ["Gardasil 9 (nonavalent)"],
+        "frequency": "2-dose schedule (<15 years); 3-dose schedule (≥15 years or immunocompromised); catch-up to age 45 for MSM and HIV-positive",
+        "reason": "HPV (types 16, 18) is the primary aetiological agent for anal squamous cell carcinoma — the malignancy that can develop in chronic anal fistulae. HPV also causes anal condylomata (warts) that can obstruct fistula openings and complicate treatment. In MSM (men who have sex with men) — who have a 40-fold increased anal SCC risk and are a significant population with anal fistulae — HPV vaccination is strongly recommended up to age 45. Chronic Crohn's perianal fistulae carry small but real SCC risk; HPV vaccination provides additional protection.",
+        "priority_populations": "MSM; HIV-positive; Crohn's disease patients with perianal fistulae; all adolescents before sexual debut"
+      },
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Annually",
+        "reason": "Patients with Crohn's disease on immunosuppressive therapy (biologics, thiopurines, corticosteroids) are at significantly higher risk of severe influenza — anti-TNF biologics specifically increase influenza severity risk. LIVE attenuated influenza vaccine (FluMist) is contraindicated in immunocompromised patients — use INACTIVATED influenza vaccine only. Influenza vaccination is strongly recommended annually for all IBD patients on biologic therapy."
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV20 / PPSV23)",
+        "frequency": "PCV20 or PCV15 + PPSV23 for all immunocompromised patients",
+        "reason": "Patients on anti-TNF biologic therapy have significantly increased risk of serious bacterial infections including pneumococcal disease. The risk is highest in patients on combination immunosuppression (anti-TNF + thiopurine + corticosteroid). Pneumococcal vaccination is MANDATORY before starting biologic therapy for Crohn's fistulae. ACPGBI, ECCO, and BSG guidelines all recommend pneumococcal vaccination for IBD patients on immunosuppression."
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "frequency": "3-dose series; check response (anti-HBs titre) after completion",
+        "reason": "Hepatitis B reactivation is a rare but potentially fatal complication of anti-TNF and other immunosuppressive biologic therapy — HBV reactivation mortality can reach 30%. MANDATORY: screen all patients for HBV (HBsAg, anti-HBc, anti-HBs) before starting biologics. If HBV-naive (anti-HBs negative, anti-HBc negative): vaccinate. If prior HBV exposure (anti-HBc positive, HBsAg negative): prophylactic antiviral (tenofovir or entecavir) during biologic therapy. If active HBV (HBsAg positive): treat HBV with antiviral before initiating biologic.",
+        "urgency": "Must complete vaccination (or at least 1-2 doses) before starting anti-TNF therapy in non-immune patients"
+      },
+      {
+        "vaccine": "Varicella (Chickenpox) Vaccine",
+        "frequency": "2 doses for VZV-seronegative patients BEFORE starting immunosuppressive therapy (live vaccine — must complete vaccination at least 3-4 weeks before biologic initiation)",
+        "reason": "Varicella zoster reactivation (shingles/chicken pox) can be severe or disseminated in patients on anti-TNF biologic therapy. Assess VZV immune status before starting biologics: if VZV IgG negative (never had chickenpox or vaccine) — vaccinate BEFORE starting biologics (live vaccine contraindicated once on immunosuppression). If VZV IgG positive: immune — no action required.",
+        "note": "LIVE VACCINE — contraindicated once immunosuppressive therapy has started; vaccination must precede biologic initiation by 3-4 weeks"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine (Annual Updated Booster)",
+        "frequency": "Annual updated booster",
+        "reason": "Crohn's disease patients on biologics (anti-TNF, vedolizumab, ustekinumab) have impaired immune response to COVID-19 infection and to COVID-19 vaccines (lower antibody titres). Annual updated mRNA booster vaccination is strongly recommended — with an additional dose strategy for those on highest immunosuppression. COVID-19 vaccination in IBD does NOT appear to trigger Crohn's flares. mRNA vaccines are SAFE on all current IBD biologic therapies."
+      },
+      {
+        "vaccine": "BCG Vaccine (TB Prevention — India Context)",
+        "frequency": "Single dose at birth (India Universal Immunisation Programme); international travellers from low-TB countries",
+        "reason": "TB is both a cause of anal fistulae in India AND a critical safety screening issue before starting biologic therapy (anti-TNF biologics reactivate latent TB with potentially fatal consequences). BCG vaccination at birth provides 70-80% protection against severe TB (meningitis, miliary TB) but does not fully prevent all TB infection. For Crohn's patients on anti-TNF therapy: TB IGRA or Mantoux test is MANDATORY before starting; if positive, treat latent TB for 3 months before beginning anti-TNF. BCG vaccination does not affect IGRA testing (unlike Mantoux — IGRA is BCG-vaccination-independent).",
+        "critical_note": "In India, virtually all patients have received BCG at birth — but latent TB remains possible despite BCG; ALWAYS perform IGRA (not Mantoux) screening before anti-TNF biologic therapy in India"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Persistent or recurrent perianal discharge from any opening on the perianal skin — even if intermittent or minimal; all perianal sinuses and fistulae require surgical assessment",
+      "Recurrent perianal abscesses — two or more abscesses in the same perianal region strongly suggest an underlying fistula requiring definitive treatment",
+      "Perianal pain with swelling and fever — possible acute abscess-on-fistula requiring urgent drainage",
+      "Passage of flatus or stool from the vagina — possible rectovaginal fistula; requires urgent gynaecological and colorectal assessment",
+      "Change in the character of a known chronic fistula — increased pain, bleeding, new swelling, hard tissue, or loss of previous effective drainage; possible malignant transformation; biopsy required",
+      "Post-partum perianal symptoms — any anal pain, discharge, or incontinence in the weeks to months after vaginal delivery; obstetric fistula assessment",
+      "Patients with Crohn's disease developing new perianal symptoms — early specialist (gastroenterology + colorectal surgery) review before sepsis develops; combined medical + surgical management",
+      "Patients from TB-endemic areas (India) with multiple or unusual perianal fistulae — TB fistula must be excluded; biopsy and culture required",
+      "Any fistula in an HIV-positive patient or patient on immunosuppression — secondary causes must be excluded; biopsies required",
+      "Prior to starting immunosuppressive biologic therapy (infliximab, adalimumab, etc.) for Crohn's: colorectal surgeon assessment of perianal fistulae is mandatory — active perianal sepsis must be controlled (seton placed) before starting biologics",
+      "Any rectal bleeding associated with perianal fistula in a patient >45 years — anal SCC must be excluded by biopsy and colonoscopy"
+    ],
+
+    "emergency_signs": [
+      "Rapidly spreading perianal and perineal swelling with fever, severe pain, and necrotic skin discolouration — possible FOURNIER'S GANGRENE (necrotising fasciitis) — CALL EMERGENCY SERVICES IMMEDIATELY — life-threatening; mortality 20-40%; requires emergency surgical debridement",
+      "Severe fever (>39°C) with rigors, hypotension, and perianal pain — possible septicaemia from perianal fistula/abscess — CALL EMERGENCY SERVICES — IV antibiotics and surgical drainage urgently needed",
+      "Inability to pass urine combined with severe perianal swelling and pain — perianal abscess compressing the urethra or acute urinary retention from perineal infection — URGENT emergency assessment",
+      "Severe acute perianal pain, swelling, and fever developing in a known Crohn's fistula patient on biologic therapy — possible biologic-immunosuppression-related deep perianal infection — URGENT assessment (immunosuppression may mask systemic signs of serious infection)",
+      "Sudden passage of large amounts of faeces or blood from a perianal fistula external opening — possible bowel rupture or fistulae to major bowel; or malignancy with fistulation — URGENT assessment",
+      "Perianal swelling with crepitus (crackling sensation on palpation — like bubble wrap under the skin) — gas-producing organisms suggesting necrotising infection — CALL EMERGENCY SERVICES"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is an anal fistula and how is it different from an anal abscess?",
+        "answer": "An anal abscess is an acute collection of pus around the anus — causing sudden severe throbbing pain, swelling, redness, and fever. An anal fistula is a chronic abnormal tunnel (tract) that forms between the inside of the anal canal and the skin of the perianal area — causing persistent or intermittent discharge from a small opening on the perianal skin. The relationship: a perianal abscess is often the CAUSE of a fistula. When an abscess forms and either drains spontaneously or is surgically drained, the infected track that caused it may persist as a chronic fistula — the source of ongoing infection from an infected anal gland inside the anal canal. Approximately 30-50% of adequately drained anal abscesses develop a fistula. In summary: abscess = acute, painful, no permanent track. Fistula = chronic, persistent discharge, permanent abnormal track."
+      },
+      {
+        "question": "Why is anal fistula so difficult to treat?",
+        "answer": "Anal fistula is complex for one central reason: the fistula tract passes through or around the anal sphincter muscles — the muscles that control bowel continence (faecal control). Treatment requires eliminating the fistula completely, but doing so without damaging these sphincter muscles is technically challenging. The dilemma: simply 'laying open' (fistulotomy) works very well for simple low fistulae — but for complex fistulae where a significant portion of sphincter is involved, division of the sphincter causes faecal incontinence, which is as debilitating as the fistula itself. Therefore, for complex fistulae, sphincter-preserving techniques must be used (LIFT procedure, advancement flap, VAAFT, seton) — but these carry higher recurrence rates than simple fistulotomy. For Crohn's fistulae, the underlying inflammatory disease must also be controlled, making it a combined medical + surgical problem. This balance between cure and continence preservation is what makes fistula one of the most surgically complex anorectal conditions."
+      },
+      {
+        "question": "Can an anal fistula heal on its own without surgery?",
+        "answer": "Almost never — this is a crucial distinction from anal fissures (which often heal spontaneously). An anal fistula has a persistent INTERNAL OPENING at an infected anal gland in the anal canal — as long as this source of infection is present, the fistula will continue to discharge. Without surgical or interventional closure of this internal opening, the fistula will not heal. The external drainage tract is lined by the body's own tissue (epithelialised) which actively maintains the tract open. Very occasionally, a superficial sinus (not a true full-thickness fistula) may heal with prolonged antibiotic treatment and wound care — but a confirmed true anal fistula with an identifiable internal opening at the dentate line requires surgical treatment for durable closure."
+      },
+      {
+        "question": "What is a seton and why has my surgeon placed one?",
+        "answer": "A seton is a thread, suture, or silastic rubber loop passed through the fistula tract from the external opening to the internal opening. Your surgeon has placed a seton for one of several reasons: (1) TEMPORARY DRAINAGE — the seton acts as a wick, keeping the fistula tract open and allowing continuous controlled drainage, preventing a painful abscess from building up while you await your definitive treatment; (2) STAGING — in complex fistulae, placing a seton first controls the sepsis and inflammation; then, after 6-12 weeks, the definitive repair (LIFT, flap, Botox for Crohn's) is performed with a better chance of success in clean, non-infected tissue; (3) CROHN'S FISTULA — the seton drains the fistula while biologic therapy (infliximab/adalimumab) works to close it from the inside. You will need to care for the seton daily (clean, prevent it getting tangled), attend follow-up appointments, and expect to keep it for weeks to months until the definitive plan is executed."
+      },
+      {
+        "question": "I have Crohn's disease and a perianal fistula. What is the best treatment?",
+        "answer": "Crohn's perianal fistulae require a COMBINED medical and surgical approach — neither alone is fully effective. The current best practice: (1) FIRST — ensure no active rectal proctitis (colonoscopy needed); if proctitis present, treat with biologic therapy first before any surgery; (2) SURGICAL SETON DRAINAGE — a loose seton placed to control sepsis and allow safe biologic therapy; (3) ANTI-TNF BIOLOGIC THERAPY — infliximab (IV infusion every 8 weeks) or adalimumab (SC injection fortnightly) is the most evidence-based treatment for Crohn's perianal fistulae; combination with seton drainage gives best results; (4) ANTIBIOTICS — metronidazole + ciprofloxacin for 12-16 weeks as a bridge to biologic response; (5) Once the fistula output has reduced significantly on biologic therapy, the seton can be removed and the fistula may heal completely. If the fistula fails to close after biologic therapy — LIFT procedure, flap repair, or stem cell therapy (Alofisel) are options. Smoking cessation dramatically improves Crohn's outcomes."
+      },
+      {
+        "question": "I was diagnosed with a fistula in India — could it be tuberculosis?",
+        "answer": "This is a very important question in India. Yes — TB fistulae are significantly more common in India than in Western countries. You should suspect TB as the underlying cause if: you have multiple fistulae; the fistulae are relatively painless (unlike typical cryptoglandular fistulae which are painful); the fistulae have pale, undermined, chronic-looking edges; you have (or have had) pulmonary TB or been in contact with someone with TB; standard fistula surgery has failed to heal the wound; you have constitutional symptoms (fever, night sweats, weight loss). Your surgeon will send tissue biopsies during surgery for: TB culture (6-8 weeks but gold standard); ZN stain for AFB; GeneXpert PCR (rapid — 2 hours); histopathology (caseating granulomas). If TB is confirmed, you will receive DOTS (directly observed treatment short course) anti-TB drugs for 6 months AND appropriate fistula surgery once the infection is adequately controlled."
+      },
+      {
+        "question": "Will I have incontinence after fistula surgery?",
+        "answer": "The risk of incontinence depends entirely on the TYPE of fistula and the SURGERY performed. Simple low intersphincteric fistula treated with fistulotomy: very low risk — less than 5% minor gas incontinence; solid stool incontinence is extremely rare. Complex high transsphincteric fistula treated with sphincter-preserving LIFT or flap: very low incontinence risk (these procedures are specifically designed to avoid sphincter damage). Staged cutting seton for high fistula: higher risk — 15-30% some incontinence; reason why cutting setons are increasingly avoided in favour of LIFT/flap. The risk is highest in: women (especially with prior obstetric sphincter injury — sometimes the sphincter was already damaged at childbirth and re-examination under anaesthesia shows a pre-existing defect); patients with prior anorectal surgery; elderly. Your surgeon should discuss the specific incontinence risk based on YOUR individual anatomy before any operation — ask specifically, 'What are your estimated rates of incontinence for my type of fistula with the operation you are planning?'"
+      },
+      {
+        "question": "Can anal fistula cause cancer?",
+        "answer": "Anal fistula itself does not directly cause cancer. HOWEVER, two important connections exist: (1) Long-standing chronic anal fistulae — particularly in Crohn's disease, where the fistula has been present for 10-20+ years — carry a small risk of squamous cell carcinoma (SCC) developing WITHIN the chronic fistula tract. The warning signs are: a CHANGE in the character of the fistula — new bleeding, increased pain, hard or irregular tissue at the fistula opening. Any change in a previously stable chronic fistula warrants a BIOPSY. (2) HPV (Human Papillomavirus) infection — a sexually transmitted virus — causes both anal fistula-related perianal disease and anal SCC. HPV vaccination (Gardasil) reduces anal SCC risk. The absolute risk of cancer developing in a typical cryptoglandular fistula without Crohn's is very small — this should not cause excessive anxiety, but explains why we biopsy all chronic or atypical fistulae."
+      },
+      {
+        "question": "What is the difference between a fistulotomy and a seton? When is each used?",
+        "answer": "Fistulotomy (laying open): the entire fistula tract is divided open at once in a single operation. The wound heals from the base over 4-8 weeks (secondary intention). BEST FOR: simple, low fistulae (intersphincteric, or low transsphincteric with minimal sphincter involvement). Cure rate >90%. Cannot be used for complex high fistulae because dividing the sphincter causes incontinence. Seton: a thread or rubber loop passed through the fistula tract. TWO TYPES — (1) Draining (loose) seton: a NON-CUTTING loop left in place to allow drainage and control sepsis; used as a temporary bridge while waiting for definitive treatment (especially in Crohn's fistulae awaiting biologic therapy); (2) Cutting (tight) seton: progressively tightened over weeks to slowly divide the sphincter — now largely abandoned because it causes significant incontinence. In practice: most colorectal surgeons will place a draining seton first for complex fistulae to control sepsis, then plan definitive sphincter-preserving surgery (LIFT, flap) once the acute inflammation settles."
+      },
+      {
+        "question": "What is the LIFT procedure and when is it recommended?",
+        "answer": "LIFT (Ligation of Intersphincteric Fistula Tract) is a sphincter-preserving surgical technique for transsphincteric anal fistulae. The surgeon accesses the intersphincteric plane (the space between the two sphincter muscles) through a small radial incision. The fistula tract is identified within this space, tied off (ligated) with sutures, and divided. This eliminates the internal opening WITHOUT dividing any external sphincter muscle — making the risk of incontinence very low. LIFT is recommended for: transsphincteric fistulae where fistulotomy would risk too much sphincter; patients with reduced sphincter reserve (women with prior obstetric injury; elderly); as a primary sphincter-preserving option in low-moderate complexity fistulae. Healing rate: 57-80%. Advantages: simple procedure; repeatable if unsuccessful; very low incontinence risk; good option between a draining seton and a mucosal advancement flap."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1040 @@
+{
+  "disease": {
+    "id": "DIS-024",
+    "name": "Gastritis",
+    "scientific_name": "Gastritis / Gastric Mucosal Inflammation / Gastropathy",
+    "icd_10_code": "K29.0 (Acute haemorrhagic gastritis); K29.1 (Other acute gastritis); K29.2 (Alcoholic gastritis); K29.3 (Chronic superficial gastritis); K29.4 (Chronic atrophic gastritis); K29.5 (Unspecified chronic gastritis); K29.6 (Other gastritis — including granulomatous, eosinophilic); K29.7 (Gastritis, unspecified); K29.8 (Duodenitis); B96.81 (H. pylori as cause of disease classified elsewhere — used with K29); K31.9 (Disease of stomach and duodenum, unspecified)",
+    "category": "Gastroenterology / Upper Gastrointestinal Disease / Mucosal Disease",
+    "overview": {
+      "description": "Gastritis is a broad clinical and pathological term denoting inflammatory change in the gastric mucosa — the specialised inner lining of the stomach responsible for producing hydrochloric acid, pepsinogen, intrinsic factor, and mucus. Inflammation can range from a transient superficial mucosal redness (acute gastritis) to progressive destruction of gastric glands with permanent loss of acid-secreting parietal cells and pepsin-secreting chief cells (chronic atrophic gastritis). An important and frequently misunderstood distinction: GASTRITIS is a histopathological and endoscopic diagnosis — it refers to actual mucosal inflammation confirmed by biopsy or endoscopy; whereas DYSPEPSIA is a symptom complex (epigastric pain, nausea, bloating) that often does not correlate with underlying mucosal inflammation. Many patients with histologically confirmed gastritis have NO symptoms, while many patients with severe dyspeptic symptoms have a normal gastric mucosa. This dissociation between pathology and symptoms is one of the defining challenges of gastritis management. Helicobacter pylori infection is the single most important cause of gastritis globally — responsible for approximately 90% of chronic gastritis and the primary driver of the Correa cascade (the stepwise progression from H. pylori gastritis → chronic atrophic gastritis → intestinal metaplasia → dysplasia → gastric adenocarcinoma), the most significant carcinogenic pathway in the stomach. In India, with an H. pylori prevalence of 70-80%, gastritis is extraordinarily common — though the vast majority of cases remain asymptomatic and undiagnosed. The treatment paradigm has shifted from symptom management to disease modification: H. pylori eradication halts progression along the cancer cascade, reduces peptic ulcer disease, and may allow partial mucosal regeneration even in atrophic gastritis.",
+      "affected_organ": "Gastric mucosa (antrum, corpus/body, fundus, cardia) — affecting gastric parietal cells (acid secretion), chief cells (pepsinogen), mucous neck cells (mucus), and enteroendocrine cells (gastrin — G cells; somatostatin — D cells; histamine — ECL cells)",
+      "prevalence": "Gastritis is one of the most prevalent conditions globally; H. pylori gastritis (the dominant form) affects approximately 50% of the world population; in India: 70-80% of adults are infected with H. pylori making gastritis virtually ubiquitous; atrophic gastritis affects approximately 5-10% of the adult Indian population; autoimmune gastritis affects 2-5% of elderly individuals (more common in women and in populations of Northern European descent)",
+      "age_group": "Acute gastritis: all ages; Chronic H. pylori gastritis: acquired in childhood (most Indian adults infected by age 10); progressive throughout adult life; Autoimmune gastritis: predominantly women over 40 years; Stress gastritis: critically ill patients in ICU; NSAID-induced gastritis: increasing with age (higher NSAID use in elderly)",
+      "is_contagious": false,
+      "is_contagious_note": "Gastritis itself is not contagious; H. pylori — the causative agent of most gastritis — is transmissible via fecal-oral and oral-oral routes and may spread within households",
+      "is_curable": true,
+      "is_curable_note": "H. pylori gastritis is CURABLE with successful H. pylori eradication — inflammation resolves completely in most cases after eradication; atrophic gastritis may partially reverse after H. pylori eradication in early stages but advanced atrophy with intestinal metaplasia is largely irreversible. Autoimmune gastritis is not curable — treatment addresses consequences (B12 replacement) and monitors for cancer. NSAID/alcohol-induced gastritis is fully reversible with cessation of causative agent.",
+      "is_manageable": true,
+      "chronic": true,
+      "is_chronic_note": "Acute gastritis resolves within days to weeks; chronic gastritis (H. pylori, autoimmune, chemical) persists indefinitely without treatment intervention",
+      "is_preventable": true,
+      "key_fact": "Gastritis from H. pylori is the single most important preventable and treatable cause of stomach cancer globally — responsible for 89% of non-cardia gastric cancers. A simple urea breath test and a 10-14 day antibiotic course can eradicate H. pylori, halt gastric carcinogenesis, and potentially prevent stomach cancer. Every Indian adult with dyspepsia, gastric ulcer, or unexplained iron deficiency should be tested and treated for H. pylori."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Acute Gastritis",
+        "description": "Acute onset gastric mucosal inflammation characterised by neutrophilic infiltration (polymorphonuclear leucocytes in the mucosal epithelium and lamina propria). Unlike chronic gastritis, acute gastritis is typically symptomatic, often self-limiting, and resolves completely when the causative agent is removed. Endoscopically characterised by mucosal oedema, erythema, erosions, or haemorrhage depending on aetiology and severity.",
+        "subtypes": [
+          {
+            "subtype": "Acute H. pylori Gastritis",
+            "description": "The initial gastric mucosal response to primary H. pylori infection — a self-limiting acute gastritis that occurs at the time of first H. pylori acquisition (typically childhood in India). Characterised by: transient symptomatic illness (nausea, vomiting, epigastric pain, halitosis); hypochlorhydria (temporary acid reduction from mucosal inflammation); neutrophilic infiltration of the antrum and sometimes corpus. After this acute phase, approximately 80% of infected individuals develop chronic active gastritis that persists lifelong without treatment. Most initial H. pylori acquisition is completely asymptomatic.",
+            "resolution": "The acute symptomatic phase lasts 1-2 weeks and resolves spontaneously; however, H. pylori colonisation persists indefinitely without eradication therapy, converting to chronic gastritis"
+          },
+          {
+            "subtype": "Acute Erosive and Haemorrhagic Gastritis",
+            "description": "Mucosal damage characterised by multiple superficial erosions (epithelial defects not extending through the muscularis mucosae — distinguishing them from ulcers) with or without haemorrhage. Common causes include alcohol, NSAIDs, and severe physiological stress (see stress gastritis). May present with haematemesis (vomiting blood) or melaena (black stools) from superficial mucosal bleeding.",
+            "causes": "Alcohol (direct mucosal cytotoxicity; increases mucosal permeability); NSAIDs (prostaglandin synthesis inhibition depleting mucosal defence); aspirin; concentrated chemical ingestion; bile reflux; cocaine use",
+            "management": "Remove causative agent; PPIs (IV pantoprazole for haemorrhage); antacids; sucralfate; generally heals rapidly (days to weeks) once cause removed"
+          },
+          {
+            "subtype": "Acute Stress Gastritis (Stress Ulcers / Stress-Related Mucosal Disease — SRMD)",
+            "description": "Acute mucosal injury developing in critically ill patients admitted to the intensive care unit — characterised by multiple superficial erosions throughout the gastric fundus and body, sometimes extending to the duodenum. SRMD affects up to 75-100% of ICU patients histologically, though clinically significant bleeding occurs in 2-6% (without prophylaxis). Life-threatening bleeding from stress ulcers occurs in 0.5-1.5% of ICU patients.",
+            "pathogenesis": "Critical illness (sepsis, major trauma, mechanical ventilation, burns, head injury, hepatic or renal failure, major surgery) causes: mucosal ischaemia from reduced splanchnic blood flow; impaired mucosal regeneration; increased acid back-diffusion; reduced prostaglandin synthesis — all breaching the normally protective gastric mucosal barrier",
+            "risk_factors": "Mechanical ventilation >48 hours (most important); coagulopathy (platelet <50,000 or INR >1.5); severe sepsis and septic shock; head injury with GCS <10 or intracranial hypertension; major burns (>35% BSA — Curling's ulcer); hepatic failure; renal failure; high-dose corticosteroids",
+            "diagnosis": "Endoscopy — multiple shallow erosions predominantly in fundus and body (proximal stomach); differs from H. pylori gastritis (predominantly antral)",
+            "prevention": "STRESS ULCER PROPHYLAXIS — IV pantoprazole 40 mg once or twice daily or oral PPI when GI tract accessible; IV H2 blockers (famotidine) as alternative; ONLY in high-risk ICU patients (mechanical ventilation >48h; coagulopathy); do NOT give prophylaxis to all hospitalised patients (increases C. difficile and pneumonia risk); ENTERAL NUTRITION started early is as effective as PPI prophylaxis for low-risk ICU patients"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Chronic H. pylori Gastritis (Type B Gastritis — Antral Gastritis)",
+        "description": "The most common form of chronic gastritis worldwide — affecting approximately 50% of the world's population and 70-80% of India. Caused by persistent H. pylori colonisation of the gastric mucosa establishing a chronic active gastritis characterised by: a mixed inflammatory infiltrate (lymphocytes, plasma cells, macrophages — chronic component; neutrophils — active component); lymphoid follicle formation (creating 'lymphoid follicular gastritis' — the precursor lesion for gastric MALT lymphoma); progressive progression from antral-predominant inflammation toward body involvement over decades. H. pylori gastritis is the essential starting point of the Correa carcinogenesis cascade — the stepwise progression from normal mucosa to gastric cancer.",
+        "topographic_distribution": "Initially antrum-predominant (most H. pylori strains colonise preferentially in the antrum where pH is higher); progresses proximally to involve the corpus/body over years to decades; some CagA-positive strains cause pangastritis (both antrum and body) — associated with higher atrophy and cancer risk; corpus-predominant H. pylori gastritis leads to more profound acid suppression (atrophy of acid-secreting parietal cells in the body)",
+        "the_correa_cascade": {
+          "description": "The stepwise pathological progression from H. pylori infection to invasive gastric adenocarcinoma — the most important paradigm in gastric oncology.",
+          "steps": [
+            "Step 1: Normal gastric mucosa",
+            "Step 2: H. pylori chronic active gastritis (H. pylori colonisation triggers chronic neutrophilic and mononuclear inflammation)",
+            "Step 3: Chronic atrophic gastritis (progressive loss of normal gastric glands — parietal cells and chief cells — replaced by fibrous tissue)",
+            "Step 4: Intestinal metaplasia (replacement of gastric epithelium with intestinal-type epithelium — goblet cells appear; complete [Type I] and incomplete [Type II/III] subtypes; incomplete intestinal metaplasia carries higher cancer risk)",
+            "Step 5: Dysplasia (low-grade then high-grade — nuclear atypia, gland abnormalities; precancerous lesion)",
+            "Step 6: Invasive gastric adenocarcinoma (intestinal type — the most common H. pylori-associated gastric cancer)"
+          ],
+          "risk_factors_for_progression": "CagA-positive H. pylori strains; VacA s1m1 genotype; high salt diet; smoking; alcohol; low fruit and vegetable intake; family history of gastric cancer; blood group A (higher cancer risk); genetic polymorphisms (IL-1B, TNF-alpha, IL-10); chronic NSAID use may paradoxically be mildly protective against cancer progression (anti-inflammatory effect)",
+          "reversibility": "Steps 1-3 are largely reversible with H. pylori eradication; Step 4 (intestinal metaplasia) is partially reversible in early stages; Steps 5-6 are not reversed by eradication — require endoscopic or surgical management; H. pylori eradication at any stage reduces the risk of progression and reduces gastric cancer incidence by approximately 50%"
+        },
+        "sydney_classification": {
+          "description": "The Updated Sydney Classification System (1996) provides a standardised histological framework for grading gastritis. Based on endoscopic mapping with systematic biopsies from five sites (antrum greater curvature, antrum lesser curvature, incisura angularis, corpus greater curvature, corpus lesser curvature) and assessment of five variables on a four-point scale (0=none, 1=mild, 2=moderate, 3=severe):",
+          "graded_variables": [
+            "H. pylori density (0-3)",
+            "Neutrophil activity / polymorphonuclear cell infiltration (0-3)",
+            "Chronic inflammation — mononuclear cell infiltration (0-3)",
+            "Gastric atrophy — gland loss (0-3)",
+            "Intestinal metaplasia (0-3)"
+          ]
+        },
+        "olga_staging": {
+          "description": "OLGA (Operative Link for Gastritis Assessment) and OLGIM (for Intestinal Metaplasia) are histopathological staging systems combining the extent (antrum vs corpus) and severity of atrophy or intestinal metaplasia to stratify cancer risk and guide surveillance intervals.",
+          "stages": [
+            "OLGA Stage 0: No atrophy in antrum or corpus — LOW RISK; surveillance optional/low priority",
+            "OLGA Stage I: Mild atrophy in antrum, none in corpus — LOW RISK",
+            "OLGA Stage II: Moderate/severe atrophy in antrum or mild in corpus — INTERMEDIATE RISK",
+            "OLGA Stage III: Severe antral atrophy OR moderate corpus atrophy — HIGH RISK — endoscopic surveillance every 3 years",
+            "OLGA Stage IV: Severe atrophy in both antrum and corpus — HIGHEST RISK — endoscopic surveillance every 3 years"
+          ],
+          "surveillance_recommendation": "OLGA/OLGIM Stage III-IV: endoscopic surveillance every 3 years (BSG 2019, ESGE 2019 guidelines); H. pylori eradication at all stages reduces progression risk; Vitamin C and antioxidant supplementation may slow progression (limited evidence)"
+        }
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Autoimmune Gastritis (Type A Gastritis — Corporal Atrophic Gastritis / Pernicious Anaemia Gastritis)",
+        "description": "A progressive autoimmune destruction of the gastric body and fundus mucosa — specifically targeting the acid-secreting parietal cells and their product intrinsic factor. Autoimmune gastritis accounts for approximately 5-10% of all chronic gastritis and is the primary cause of pernicious anaemia. It is characterised by: CORPUS-PREDOMINANT atrophy (unlike H. pylori gastritis which begins in the antrum); virtually NO antral involvement (the antrum is spared — opposite pattern to H. pylori); detectable circulating autoantibodies; profound hypochlorhydria to achlorhydria (no acid production); extreme hypergastrinaemia (gastrin levels may be 10-100× normal — loss of acid removes the negative feedback loop on G cells in the preserved antrum); and ECL-cell hyperplasia progressing to type 1 gastric neuroendocrine tumours (carcinoids).",
+        "pathogenesis": "CD4+ T-lymphocyte-mediated autoimmune attack on gastric parietal cells; anti-parietal cell antibodies (APCA) — directed against H+/K+-ATPase (the proton pump); anti-intrinsic factor antibodies (anti-IF) — type 1 (blocking antibody — prevents B12 binding to IF); type 2 (binding antibody — prevents IF-B12 complex from binding to ileal receptor); LOSS OF PARIETAL CELLS → achlorhydria → loss of negative acid feedback → G-cell hyperplasia → hypergastrinaemia → prolonged gastrin stimulation of ECL cells → ECL hyperplasia → dysplasia → type 1 gastric neuroendocrine tumours",
+        "key_features": [
+          "CORPUS-PREDOMINANT (body and fundus) atrophic gastritis — ANTRUM SPARED",
+          "Achlorhydria (no gastric acid — gastric pH permanently >4-5)",
+          "Markedly elevated serum gastrin (compensatory — from G cells in antrum not inhibited by acid)",
+          "Positive anti-parietal cell antibodies (APCA) in 90%",
+          "Positive anti-intrinsic factor antibodies (Type 1 or 2) in 50-70%",
+          "Pernicious anaemia — B12 deficiency from absent intrinsic factor (IF is exclusively from parietal cells)",
+          "Iron deficiency anaemia — achlorhydria impairs iron absorption (requires acid for ferric to ferrous conversion)",
+          "Calcium, zinc, magnesium malabsorption (pH-dependent absorption)",
+          "Risk of GASTRIC CANCER (1% per year) and TYPE 1 GASTRIC NEUROENDOCRINE TUMOURS (multiple small carcinoids in ECL hyperplasia)"
+        ],
+        "associated_conditions": [
+          "Type 1 Diabetes Mellitus — autoimmune polyglandular syndrome type III",
+          "Autoimmune thyroid disease (Hashimoto's thyroiditis, Graves' disease)",
+          "Addison's disease (autoimmune adrenal insufficiency)",
+          "Vitiligo",
+          "Coeliac disease",
+          "Premature ovarian failure",
+          "Myasthenia gravis"
+        ],
+        "diagnosis_specific": "Anti-parietal cell antibodies (APCA): 90% sensitivity but low specificity (present in 10% of healthy adults); Anti-intrinsic factor antibodies (type 1 blocking Ab): 50-70% sensitivity but HIGH SPECIFICITY (>95%) for autoimmune gastritis — highly specific when positive; Serum gastrin: markedly elevated (>200 pg/mL — often >500-1000); Serum pepsinogen I: very low (parietal cells and chief cells both lost); Pepsinogen I/II ratio: <3 (suggests severe corpus atrophy); Vitamin B12: low; Methylmalonic acid (MMA) and homocysteine: elevated (sensitive markers of functional B12 deficiency even before overt anaemia)",
+        "type_1_gastric_neuroendocrine_tumours": "ECL-cell neuroendocrine tumours (carcinoids) arising in the setting of autoimmune gastritis and hypergastrinaemia; typically small (<1 cm), multiple, and in the gastric body/fundus; low-grade malignancy; indolent behaviour; most do not metastasise; treat by endoscopic resection if >1 cm; antrectomy reduces gastrin drive and may cause regression of small carcinoids"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Chemical / Reactive Gastritis (Type C Gastritis)",
+        "description": "Gastric mucosal injury from CHEMICAL IRRITANTS — primarily bile reflux from the duodenum into the stomach (most common after partial gastrectomy or pyloroplasty), or NSAIDs/aspirin-induced direct mucosal injury. Unlike H. pylori gastritis, chemical gastropathy is characterised histologically by: foveolar hyperplasia (elongated, tortuous gastric pits); oedema and smooth muscle proliferation in the lamina propria; minimal or absent inflammatory infiltrate (it is a REACTIVE change, not a true inflammatory infiltrate — hence 'gastropathy' rather than 'gastritis' in strict terminology); and vascular congestion.",
+        "causes": [
+          "Bile reflux gastropathy: most common after Billroth II gastrectomy, pyloroplasty, or gastrojejunostomy; also in intact stomach (bile reflux without surgery — duodenogastric reflux); bile acids are directly cytotoxic to gastric epithelium",
+          "NSAID gastropathy: direct topical irritation; inhibition of prostaglandin synthesis (depletes mucosal defence); typically involves antrum and prepyloric region; may cause erosions and ulcers",
+          "Aspirin: same mechanism as NSAIDs; even low-dose aspirin (75-100 mg/day) causes gastric mucosal injury",
+          "Alcohol: direct mucosal cytotoxicity; increases mucosal permeability; causes acute erosive gastritis acutely; chronic alcohol use → chronic reactive changes"
+        ],
+        "diagnosis": "Endoscopy with biopsy: foveolar hyperplasia + minimal inflammation + smooth muscle fibres in lamina propria = reactive gastropathy (characteristic Sydney system pattern); bile in stomach on endoscopy; bile pool visible at gastroscopy",
+        "management": "Remove causative agent; bile reflux: sucralfate (coats mucosa); cholestyramine (binds bile); ursodeoxycholic acid; prokinetics to improve gastric emptying; surgical revision if severe; NSAID-induced: PPI co-prescription; switch to COX-2 inhibitor; replace NSAIDs with paracetamol where possible"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Eosinophilic Gastritis",
+        "description": "A rare inflammatory condition characterised by dense eosinophilic infiltration of the gastric wall (>30 eosinophils per high-power field in multiple biopsies) in the absence of secondary causes of gastric eosinophilia (parasitic infection, H. pylori, IBD, drug reactions, systemic hypereosinophilic syndrome). Part of the spectrum of eosinophilic gastrointestinal disorders (EGIDs) which also includes eosinophilic oesophagitis (EoE) and eosinophilic enteritis. Often associated with atopy (food allergy, asthma, eczema, allergic rhinitis).",
+        "clinical_features": "Epigastric pain; nausea and vomiting; early satiety; weight loss; peripheral blood eosinophilia (in 70-80%); elevated serum IgE; protein-losing enteropathy (hypoalbuminaemia from mucosal loss of protein); ascites; oedema",
+        "diagnosis": "Endoscopy: may appear normal or show nodularity, oedema, ulceration; biopsy (multiple biopsies from all stomach regions — eosinophilic infiltration is patchy); serum IgE; food allergy testing; peripheral blood count (eosinophilia); exclude parasites (stool OCP); allergy evaluation",
+        "management": "Food elimination diet (remove common allergens: milk, wheat, soy, egg, nuts, seafood — 6-food elimination diet); oral corticosteroids (first-line when dietary restriction fails — prednisolone 20-40 mg/day); budesonide (targeted steroid); proton pump inhibitor (adjunct — some improvement); montelukast; mepolizumab (anti-IL-5 monoclonal antibody — for refractory eosinophilic GI disorders; evidence emerging)"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Granulomatous Gastritis",
+        "description": "Gastritis characterised by granuloma formation (aggregates of epithelioid histiocytes, often with Langhans giant cells) in the gastric wall. Rare — constitutes <1% of gastritis. Requires exclusion of specific infectious causes particularly important in India.",
+        "causes": [
+          "Crohn's disease — most common cause of granulomatous gastritis in Western countries; gastric involvement occurs in 10-20% of Crohn's patients (upper GI Crohn's)",
+          "Sarcoidosis — systemic granulomatous disease; gastric sarcoid involvement is rare (0.5%) but well-documented",
+          "Mycobacterium tuberculosis — IMPORTANT IN INDIA — gastric TB is rare but can cause granulomatous gastritis; usually haematogenous spread; must rule out TB in India whenever gastric granulomas found",
+          "Histoplasma capsulatum — fungal; in immunocompromised",
+          "Idiopathic (isolated granulomatous gastritis) — diagnosis of exclusion"
+        ],
+        "diagnosis": "Endoscopy with biopsy; Ziehl-Neelsen stain for AFB; culture for Mycobacterium; special stains for fungi; GeneXpert CBNAAT for TB; CT chest (sarcoidosis, TB); serum ACE (sarcoidosis); systemic Crohn's evaluation",
+        "india_importance": "Gastric TB must be excluded in any Indian patient with granulomatous gastritis — perform ZN stain, Mycobacterial culture, and GeneXpert before diagnosing Crohn's or sarcoid; anti-TB treatment if TB confirmed"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Ménétrier's Disease (Hypertrophic Gastropathy)",
+        "description": "A rare premalignant condition characterised by massive enlargement of gastric folds (giant rugae), foveolar hyperplasia, gland atrophy, and protein-losing gastropathy. Associated with excessive TGF-alpha (transforming growth factor alpha) signalling. Presents with: epigastric pain; severe hypoproteinaemia (protein-losing gastropathy — albumin levels very low); peripheral oedema (hypoalbuminaemia); weight loss; sometimes gastrointestinal bleeding. Increased risk of gastric cancer. In children: often caused by cytomegalovirus (CMV) infection — self-limiting and resolves spontaneously. In adults: H. pylori may be associated; CMV in immunocompromised. Rare.",
+        "management": "Cetuximab (anti-EGFR monoclonal antibody) — the most effective specific treatment targeting TGF-alpha/EGFR pathway; high-protein diet; albumin infusions for severe hypoalbuminaemia; H. pylori eradication; PPI; gastrectomy in refractory cases or cancer prevention"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Portal Hypertensive Gastropathy (PHG)",
+        "description": "Gastric mucosal changes caused by portal hypertension in cirrhosis — characterised by a specific endoscopic appearance (snake-skin or mosaic pattern, cherry red spots, or diffuse haemorrhagic changes) resulting from mucosal congestion, dilation of gastroduodenal mucosal capillaries, and impaired mucosal defence from portal hypertensive haemodynamic changes. PHG is not an inflammatory gastritis in the traditional sense — it is a vascular gastropathy. It is classified as mild (snake-skin/mosaic pattern alone) or severe (red marks, black-brown spots, or diffuse haemorrhagic gastric mucosa).",
+        "prevalence": "Present in 50-80% of cirrhotic patients; more common with severe portal hypertension; increases with worsening Child-Pugh score",
+        "clinical_significance": "Mild PHG: usually asymptomatic or causes iron-deficiency anaemia from chronic occult blood loss; Severe PHG: can cause acute or chronic GI haemorrhage (though less severe than variceal bleeding); contributes significantly to anaemia in cirrhosis",
+        "management": "Treat underlying portal hypertension; non-selective beta-blockers (propranolol, carvedilol) — reduce portal pressure; the cornerstone of PHG management; iron supplementation for iron deficiency; transjugular intrahepatic portosystemic shunt (TIPSS) for severe refractory PHG bleeding; liver transplantation for end-stage liver disease"
+      },
+      {
+        "id": "TYPE-09",
+        "name": "Radiation Gastritis",
+        "description": "Gastric mucosal injury from external beam radiation therapy to the upper abdomen (for gastric cancer, pancreatic cancer, or hepatocellular carcinoma). Radiation doses >45-50 Gy cause progressive mucosal ischaemia and fibrosis. Acute radiation gastritis (during radiation course): nausea, vomiting, epigastric pain, acute mucosal erythema and erosions. Chronic radiation gastropathy (months to years later): gastric atrophy, telangiectasias (GAVE-like — dilated vessels), fibrosis, strictures, and mucosal ischaemia leading to persistent haemorrhage.",
+        "management": "Acute: PPIs, antiemetics, dose adjustment; Chronic haemorrhage: endoscopic argon plasma coagulation (APC) for telangiectasias; sucralfate enemas; hyperbaric oxygen therapy (promotes tissue healing)"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Non-Atrophic Chronic Gastritis (OLGA Stage 0-I)",
+        "description": "Chronic active gastritis without gland loss — the most common histological finding in H. pylori-infected individuals. May be asymptomatic or cause dyspeptic symptoms.",
+        "criteria": "Chronic active gastritis on histology; no gland atrophy; no intestinal metaplasia; H. pylori typically present; OLGA Stage 0-I",
+        "functional_impact": "Often asymptomatic; may cause dyspepsia; no malabsorption",
+        "management": "H. pylori eradication (curative — resolves inflammation); PPI for symptom relief if dyspeptic; lifestyle modification; no endoscopic surveillance needed after H. pylori eradication in Stage 0-I",
+        "prognosis": "Excellent — no significant cancer risk at this stage; resolves with H. pylori eradication"
+      },
+      {
+        "level": 2,
+        "name": "Chronic Atrophic Gastritis (OLGA Stage II-III)",
+        "description": "Chronic gastritis with loss of gastric glands in antrum or corpus — represents intermediate risk in the Correa cascade.",
+        "criteria": "Moderate to severe gland atrophy in antrum (Stage II) or beginning in corpus (Stage III); intestinal metaplasia may be present (early); OLGA Stage II-III",
+        "functional_impact": "Often asymptomatic; possible reduced acid secretion; possible early malabsorption of B12, iron, calcium; dyspepsia",
+        "management": "H. pylori eradication (may partially reverse early atrophy); annual or 3-yearly endoscopic surveillance (OLGA Stage III) after H. pylori eradication; Vitamin B12 monitoring annually; iron and calcium supplementation if deficient; dietary advice (adequate antioxidants)",
+        "prognosis": "Intermediate cancer risk — 5-8× relative risk of gastric cancer vs normal mucosa at OLGA Stage III"
+      },
+      {
+        "level": 3,
+        "name": "Advanced Atrophic Gastritis with Intestinal Metaplasia (OLGA/OLGIM Stage III-IV)",
+        "description": "Extensive gland atrophy affecting both antrum and corpus, with intestinal metaplasia — particularly incomplete type (Type II/III intestinal metaplasia, highest cancer risk). Represents the highest premalignant risk category.",
+        "criteria": "Severe atrophy in antrum and/or corpus; intestinal metaplasia (particularly incomplete Type II/III); OLGA/OLGIM Stage III-IV",
+        "functional_impact": "Achlorhydria or hypochlorhydria; significant B12, iron, calcium malabsorption; multiple nutritional deficiencies; anaemia; possible early satiety",
+        "management": "H. pylori eradication (reduces progression risk even at this stage); endoscopic surveillance every 3 years; regular B12, iron, calcium supplementation; high-dose antioxidants (Vitamin C, beta-carotene — limited evidence); proton pump inhibitor usually not needed (achlorhydric); close follow-up for dysplasia",
+        "prognosis": "High cancer risk (OLGIM Stage III-IV: 50-60× relative risk of gastric cancer); 5-year cancer incidence approximately 5-10%"
+      },
+      {
+        "level": 4,
+        "name": "Gastric Dysplasia (Low-Grade and High-Grade)",
+        "description": "Precancerous lesion characterised by histological atypia — nuclear enlargement, hyperchromatism, increased mitoses, architectural gland abnormalities — without invasion through the basement membrane. The immediate precursor to invasive gastric adenocarcinoma.",
+        "criteria": "LOW-GRADE DYSPLASIA (LGD): mild architectural and cytological atypia; HIGH-GRADE DYSPLASIA (HGD): severe atypia approaching carcinoma; confirmed by histopathology (at least two pathologists should assess HGD)",
+        "cancer_risk": "LGD: 0-23% progress to HGD or cancer within 5 years; HGD: 60-90% progress to invasive cancer if not treated",
+        "management": "LOW-GRADE DYSPLASIA: endoscopic resection if visible lesion (endoscopic mucosal resection — EMR or endoscopic submucosal dissection — ESD); endoscopic surveillance every 12 months; H. pylori eradication; HIGH-GRADE DYSPLASIA: MANDATORY endoscopic or surgical resection (EMR/ESD if limited; gastrectomy for extensive); HGD is treated as early cancer in many guidelines"
+      }
+    ],
+
+    "causes": {
+      "causative_agents_overview": {
+        "h_pylori": "Most important and prevalent — responsible for ~90% of all chronic gastritis; 70-80% prevalence in India; initiates the Correa cascade to gastric cancer",
+        "nsaids_aspirin": "Second most important; chemical/reactive gastropathy; direct mucosal toxicity; impair prostaglandin-mediated mucosal defence",
+        "autoimmune": "T-cell and antibody-mediated destruction of parietal cells; causes corpus atrophy; pernicious anaemia",
+        "alcohol": "Direct cytotoxicity; increases mucosal permeability; causes acute erosive and chronic reactive gastritis",
+        "stress": "Mucosal ischaemia in critically ill patients; acutely dangerous in ICU",
+        "bile_reflux": "Bile acids directly cytotoxic; chemical gastropathy; after gastric surgery or with poor pyloric function",
+        "other": "Radiation; eosinophilic (allergic); granulomatous (Crohn's, TB, sarcoid); CMV (immunocompromised)"
+      },
+      "risk_factors": [
+        "H. pylori infection — the dominant and most important risk factor for all chronic gastritis in India; acquired in childhood through contaminated water, food, and person-to-person contact",
+        "Age — risk of atrophic gastritis and intestinal metaplasia increases progressively with age; autoimmune gastritis peaks after age 50",
+        "Female sex — autoimmune gastritis 3× more common in women",
+        "Family history of gastric cancer or atrophic gastritis — genetic predisposition to H. pylori virulence response; autoimmune gastritis familial clustering",
+        "CagA-positive H. pylori strain — strongly associated with more aggressive gastritis, higher atrophy risk, higher gastric cancer risk; CagA-positive strains predominate in India",
+        "High dietary salt intake — high salt damages gastric mucosa and promotes H. pylori virulence (upregulates CagA expression); strongly associated with gastric cancer risk",
+        "Smoking — worsens H. pylori gastritis; impairs mucosal healing; increases gastric cancer risk; reduces eradication success rates",
+        "Alcohol — direct mucosal irritant; inhibits prostaglandin synthesis; worsens NSAIDs gastropathy synergistically",
+        "NSAID and aspirin use — direct and indirect mucosal injury; increases gastritis severity in H. pylori-infected individuals",
+        "Stress — acute physiological stress (ICU admission, major surgery, severe burns) triggers stress gastritis; psychological stress exacerbates functional gastric symptoms",
+        "Genetic polymorphisms — IL-1B (-511) and IL-1RA VNTR gene polymorphisms increase hypochlorhydria and gastric cancer risk in H. pylori-infected individuals",
+        "Bile reflux — post-gastrectomy; post-pyloroplasty; occasionally without prior surgery",
+        "Autoimmune diseases — patients with type 1 diabetes, autoimmune thyroid disease, Addison's disease, or Sjögren's syndrome have significantly higher risk of autoimmune gastritis (autoimmune polyglandular syndrome)",
+        "Low socioeconomic status — correlates with H. pylori acquisition risk in India through poor WASH access",
+        "Low dietary antioxidant intake — low Vitamin C, beta-carotene, selenium intake increases progression risk from gastritis to cancer",
+        "Blood group A — 20-25% higher gastric cancer risk (associated with specific mucosal carbohydrate expression favouring cancer progression)"
+      ]
+    },
+
+    "symptoms": {
+      "overview": "One of the most clinically important concepts in gastritis is the profound DISSOCIATION between histological disease severity and symptoms. The majority of patients with histologically confirmed chronic gastritis — even severe atrophic gastritis — are COMPLETELY ASYMPTOMATIC. Conversely, many patients with severe dyspeptic symptoms have an entirely normal gastric mucosa (functional dyspepsia). This means gastritis is usually a histopathological and endoscopic diagnosis, not a clinical diagnosis based on symptoms alone. The symptoms listed below are those that MAY occur in gastritis but are non-specific and overlap extensively with peptic ulcer disease, GERD, functional dyspepsia, and biliary disease.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-1401",
+          "name": "Epigastric Pain and Discomfort",
+          "description": "Dull, burning, aching, or pressure-like pain or discomfort in the upper middle abdomen (epigastrium) — the most common symptom when present. In H. pylori gastritis: pain may be worsened or relieved by eating (variable — no consistent pattern distinguishing it from peptic ulcer); worse on lying flat; may radiate to the back. In autoimmune gastritis: epigastric pain is often mild or absent despite severe mucosal atrophy. In acute erosive gastritis (NSAIDs, alcohol): pain onset is more acute, sometimes severe. Character: burning, gnawing, or 'empty stomach' sensation.",
+          "severity": "Mild to Moderate",
+          "onset": "Acute gastritis: sudden; Chronic gastritis: gradual, waxing and waning over months to years",
+          "note": "The location (epigastric), character (burning), and temporal patterns of gastritis pain are indistinguishable from peptic ulcer disease, GERD, and functional dyspepsia — endoscopy with biopsy is required for definitive diagnosis"
+        },
+        {
+          "id": "SYM-1402",
+          "name": "Nausea and Vomiting",
+          "description": "Nausea — often the dominant symptom in acute gastritis; may be persistent or intermittent; worse in the morning or after eating. Vomiting occurs in more severe acute gastritis (alcohol, NSAIDs) and in acute H. pylori gastritis at onset of infection. In chronic gastritis: vomiting is less common — significant vomiting with chronic gastritis should raise concern for gastroparesis, pyloric stenosis, or gastric cancer. In autoimmune gastritis with severe achlorhydria: early satiety and nausea may result from impaired gastric emptying (achlorhydria reduces the acid stimulus for gastric motility).",
+          "severity": "Mild to Moderate in chronic; Moderate to Severe in acute"
+        },
+        {
+          "id": "SYM-1403",
+          "name": "Anorexia and Early Satiety",
+          "description": "Loss of appetite (anorexia) is common in acute gastritis (cytokinemia, nausea). In chronic atrophic gastritis: reduced acid production → impaired gastric emptying → early satiety; protein malabsorption and zinc deficiency (both occur in achlorhydria) further impair appetite. Early satiety or marked and persistent anorexia with weight loss in a patient with chronic gastritis is an ALARM FEATURE — must rule out gastric cancer.",
+          "severity": "Mild in most; Severe early satiety with weight loss = alarm feature",
+          "clinical_importance": "Weight loss + early satiety + epigastric pain + gastritis in a patient over 50 = urgent endoscopy to exclude gastric cancer"
+        },
+        {
+          "id": "SYM-1404",
+          "name": "Haematemesis and Melaena (Acute Erosive Gastritis)",
+          "description": "Vomiting of blood (haematemesis — fresh red or coffee-ground appearance) or passing black tarry stools (melaena — digested blood) indicates upper GI bleeding from acute erosive gastritis. Most commonly from: NSAID or aspirin use; alcohol; stress gastritis in ICU. Erosive gastritis bleeding is usually low-volume and self-limiting but can occasionally be life-threatening, particularly in critically ill patients or those on anticoagulants. Any haematemesis or melaena requires urgent endoscopy.",
+          "severity": "Moderate to Life-threatening",
+          "clinical_importance": "HAEMATEMESIS IS AN EMERGENCY — urgent endoscopy within 24 hours (emergency endoscopy if haemodynamically compromised)"
+        },
+        {
+          "id": "SYM-1405",
+          "name": "Symptoms of B12 and Iron Deficiency (Autoimmune Gastritis)",
+          "description": "Autoimmune gastritis is OFTEN SILENT for decades — presenting only through the complications of nutrient malabsorption: VITAMIN B12 DEFICIENCY: megaloblastic anaemia (fatigue, pallor, macrocytic anaemia); neurological manifestations — subacute combined degeneration of spinal cord (symmetrical limb weakness, spasticity, ataxia, loss of proprioception — progressive and irreversible if untreated); peripheral neuropathy (tingling, numbness in hands and feet); psychiatric symptoms (depression, cognitive impairment, dementia); glossitis (sore, smooth red tongue — loss of papillae). IRON DEFICIENCY: microcytic hypochromic anaemia; fatigue; brittle nails; hair loss; spoon-shaped nails (koilonychia); pica (unusual food cravings). CALCIUM DEFICIENCY: osteoporosis; tetany.",
+          "severity": "Mild (early — anaemia) to Severe (neurological — irreversible if untreated)",
+          "clinical_importance": "Any patient with UNEXPLAINED B12 DEFICIENCY, PERNICIOUS ANAEMIA, or UNEXPLAINED IRON DEFICIENCY ANAEMIA should be investigated for autoimmune gastritis (anti-parietal cell antibodies, serum gastrin, gastroscopy with biopsy)"
+        }
+      ],
+      "secondary_symptoms": [
+        "Bloating and fullness after eating — impaired gastric emptying from achlorhydria; gas accumulation",
+        "Belching (eructation) — aerophagia from nausea; impaired gastric motility; gas production",
+        "Heartburn and acid regurgitation — may coexist with gastritis from GERD overlap",
+        "Halitosis (bad breath) — H. pylori produces volatile sulphur compounds; also from undigested food in achlorhydric stomach",
+        "Weight loss — reduced food intake from nausea and anorexia; malabsorption in severe atrophic gastritis; ALARM FEATURE if significant",
+        "Fatigue and pallor — from anaemia (B12, iron, or blood loss in erosive gastritis)",
+        "Tingling or numbness in hands and feet — early B12 deficiency peripheral neuropathy in autoimmune gastritis",
+        "Glossitis — smooth, red, 'beefy' tongue from B12 deficiency",
+        "Jaundice (mild) — haemolytic component of pernicious anaemia (RBC destruction from ineffective erythropoiesis)"
+      ],
+      "alarm_features_requiring_urgent_endoscopy": [
+        "Haematemesis or melaena (vomiting blood or black tarry stools) — urgent endoscopy within 24 hours",
+        "Unexplained significant weight loss (>3 kg or >5% body weight) with gastric symptoms",
+        "Progressive dysphagia (worsening difficulty swallowing)",
+        "Persistent vomiting (possible gastric outlet obstruction from ulcer or cancer)",
+        "Iron deficiency anaemia without other explanation in patients over 50 years",
+        "Palpable epigastric mass on examination",
+        "Age ≥55 years with new onset or recent change in gastric symptoms",
+        "Family history of gastric cancer in first-degree relative with gastric symptoms",
+        "Symptoms not responding to 8 weeks of appropriate treatment",
+        "Any combination of alarm features: weight loss + anaemia + epigastric pain = gastric cancer until proven otherwise"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Symptom characterisation — epigastric pain or discomfort; burning vs cramping vs pressure-like; relationship to meals (before, during, or after eating); relieving and aggravating factors; duration and frequency; nocturnal symptoms (peptic ulcer typically wakes patient at night)",
+        "Duration of symptoms — acute (days: alcohol, NSAID) vs chronic (months-years: H. pylori, autoimmune)",
+        "NSAID and aspirin use — current and past; type and dose; frequency; OTC analgesic use (ibuprofen, diclofenac, aspirin — very commonly underreported in India); duration of use; any PPI gastroprotection co-prescribed",
+        "Alcohol consumption — amount, frequency, duration; recent heavy binge drinking (acute haemorrhagic gastritis)",
+        "Smoking — active or past; pack-years",
+        "H. pylori testing and treatment history — ever tested? By what method? If positive, was treatment given? What regimen? Was test-of-cure performed?",
+        "Family history — first-degree relatives with gastric cancer; peptic ulcer disease; pernicious anaemia; autoimmune diseases",
+        "Personal autoimmune history — Type 1 diabetes; autoimmune thyroid disease (Hashimoto's thyroiditis, Graves'); Addison's disease; vitiligo; Sjögren's syndrome (triggers autoimmune gastritis investigation)",
+        "Neurological symptoms — tingling, numbness, weakness in limbs; balance difficulties; memory changes (B12 deficiency from autoimmune gastritis)",
+        "Anaemia symptoms — breathlessness, palpitations, fatigue; pallor; recent haematological workup",
+        "Weight loss — amount and duration; intentional or unintentional",
+        "Prior gastric surgery — partial gastrectomy (Billroth I or II) predisposes to bile reflux gastropathy; pyloroplasty; vagotomy",
+        "Previous endoscopy — when; what was found; biopsies taken; H. pylori status",
+        "Medication history — full medication list including herbal preparations; iron supplements (can cause chemical gastropathy); potassium chloride; metformin; immunosuppressants (CMV gastritis risk); chemotherapy/radiation history",
+        "TB history or contact — granulomatous gastritis in India; Mycobacterium TB must be excluded",
+        "ICU admission — critically ill patients → stress gastritis; recent major surgery, severe burns, or trauma",
+        "Geographic and dietary history — high-salt diet (increases gastric cancer risk); low fruit and vegetable intake; Gangetic belt residence (very high gastric cancer + gallbladder cancer region)"
+      ],
+      "physical_examination": [
+        "Vital signs — heart rate (tachycardia in bleeding or severe illness); blood pressure (hypotension = significant haemorrhage); temperature (fever in acute gastritis or complicated infection)",
+        "General appearance — pallor (anaemia — B12 deficiency in autoimmune; iron deficiency from erosive gastritis or H. pylori-related malabsorption); jaundice (pernicious anaemia — mild haemolysis); nutritional status; body weight",
+        "Tongue examination — GLOSSITIS (smooth, beefy, red tongue — loss of papillae from B12 deficiency; very specific for megaloblastic anaemia from pernicious anaemia or nutritional B12 deficiency); geographic tongue (non-specific); angular cheilitis (B12 or iron deficiency)",
+        "Nail changes — koilonychia (spoon-shaped nails — iron deficiency); pallor of nail bed (anaemia)",
+        "Neurological examination — particularly important in suspected autoimmune gastritis: proprioception (Romberg's test — loss of joint position sense = subacute combined degeneration of spinal cord); vibration sense (tuning fork at ankles); coordination; deep tendon reflexes (brisk in early SCD; may be decreased in peripheral neuropathy); cognitive assessment",
+        "Abdominal examination:",
+        "INSPECTION: epigastric fullness or distension; visible peristalsis (gastric outlet obstruction)",
+        "PALPATION: epigastric tenderness (mild to moderate in gastritis); epigastric mass (ALARM SIGN — gastric cancer; pancreatic mass); hepatomegaly; splenomegaly (portal hypertension in PHG; lymphoma in MALT lymphoma)",
+        "PERCUSSION: gastric tympany; hepatosplenomegaly assessment",
+        "AUSCULTATION: succussion splash (gastric outlet obstruction — delayed gastric emptying; patient is rocked side to side while clinician auscultates over epigastrium — splashing sound indicates retained gastric contents hours after last meal)",
+        "Lymphadenopathy — supraclavicular (Virchow's/Troisier's node = gastric cancer or lymphoma metastasis); axillary (Sister Mary Joseph's nodule is umbilical metastatic deposit — late gastric cancer sign)",
+        "Skin — vitiligo (associated with autoimmune gastritis); features of Addison's disease (hyperpigmentation); thyroid enlargement (autoimmune thyroid disease associated with autoimmune gastritis)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Upper GI Endoscopy (OGD/EGD) with Biopsy — Gold Standard",
+          "type": "Endoscopy / Histopathology",
+          "description": "The definitive investigation for diagnosing gastritis — providing both macroscopic (endoscopic) and microscopic (histopathological) assessment. Macroscopic endoscopic findings in gastritis include: erythema (redness); mucosal oedema; erosions (small mucosal breaks <5 mm without depth — distinguishing from ulcers); haemorrhagic spots or stigmata; nodularity (cobblestone appearance in H. pylori gastritis); flat or raised mucosal lesions; visible blood vessels (atrophy); intestinal metaplasia (pale, irregular, flat mucosa with grey-white patches or irregular geography); Endoscopic view of gastric folds: enlarged giant rugal folds (Ménétrier's); flattened thin folds (atrophy). BIOPSY IS MANDATORY — endoscopic appearance correlates poorly with histological severity; systematic biopsy from 5 sites using the Sydney protocol (antrum greater curvature, antrum lesser curvature, incisura angularis, corpus greater curvature, corpus lesser curvature — minimum 5 biopsies) allows accurate histological grading by the Sydney and OLGA systems.",
+          "purpose": "Diagnose gastritis type (H. pylori, autoimmune, chemical, eosinophilic); stage atrophy and intestinal metaplasia (OLGA/OLGIM); detect dysplasia and cancer; CLO test for H. pylori; assess complications",
+          "what_biopsies_show": "H. pylori gastritis: H. pylori organisms visible on H&E or Giemsa stain; neutrophilic and mononuclear infiltrate; Autoimmune gastritis: corpus-predominant gland atrophy; mononuclear infiltrate; ECL hyperplasia; intestinal metaplasia; Chemical gastropathy: foveolar hyperplasia; minimal inflammation; smooth muscle fibres in lamina propria; Eosinophilic gastritis: ≥30 eosinophils/HPF; Granulomatous: epithelioid granulomas with or without caseation (TB vs non-TB)",
+          "key_metric": "OLGA/OLGIM staging from histology guides cancer surveillance intervals; H. pylori status (CLO test + histology); presence and grade of intestinal metaplasia (complete vs incomplete)",
+          "preparation": "Stop PPIs for 2 weeks before endoscopy if H. pylori CLO test is planned; stop bismuth and antibiotics for 4 weeks; endoscopy under conscious sedation; fasting from midnight",
+          "india_note": "OGD with biopsy available at all urban hospitals in India; cost Rs 2,000-8,000 at government vs private hospitals; essential investigation for any alarm feature gastric symptom; OLGA staging increasingly performed at tertiary centres"
+        },
+        {
+          "test_name": "H. pylori Urea Breath Test (UBT) — Gold Standard Non-Invasive",
+          "type": "Biochemical / Isotopic",
+          "description": "The most accurate non-invasive test for active H. pylori infection — 13C-labelled urea is ingested; H. pylori urease cleaves it to 13CO2 detectable in breath. Sensitivity and specificity >95%. Most appropriate for diagnosing H. pylori in the community setting before endoscopy, and for confirming eradication after treatment (test of cure — minimum 4 weeks after completing antibiotics, 2 weeks off PPIs).",
+          "purpose": "Diagnose active H. pylori infection; confirm eradication (test of cure) — most important post-treatment test",
+          "key_metric": "Positive = active H. pylori infection; sensitivity >95%; specificity >95%",
+          "preparation_critical": "Stop PPIs for minimum 2 weeks before test; stop H2 blockers for 48 hours; stop antibiotics and bismuth for 4 weeks; take test fasting or after light non-dairy breakfast"
+        },
+        {
+          "test_name": "H. pylori Stool Antigen Test (SAT)",
+          "type": "Immunoassay",
+          "description": "Monoclonal antibody-based test detecting H. pylori antigens in stool. Accuracy comparable to UBT (sensitivity ~94%, specificity ~97%). Useful when UBT equipment unavailable; very useful for children; equally valid for test of cure.",
+          "purpose": "Diagnose active H. pylori; test of cure post-treatment; suitable for children and elderly; less equipment-dependent than UBT"
+        },
+        {
+          "test_name": "CLO Test (Campylobacter-Like Organism / Rapid Urease Test) at Endoscopy",
+          "type": "Biochemical — Endoscopic Biopsy",
+          "description": "Rapid urease test on gastric antral biopsy taken at endoscopy — H. pylori urease converts urea to ammonia raising pH and changing colour indicator. Results in 1-3 hours. Sensitivity 85-98%, specificity 95-100%.",
+          "purpose": "Rapid diagnosis of H. pylori at time of endoscopy; complemented by histological staining of same biopsy material",
+          "note": "False negative if: on PPIs (H. pylori suppressed); on recent antibiotics; heavy bleeding in stomach (haematocrit lowers sensitivity); always send biopsies for histology as well"
+        },
+        {
+          "test_name": "Anti-Parietal Cell Antibodies (APCA) and Anti-Intrinsic Factor Antibodies (AIFA)",
+          "type": "Blood — Immunological / Serology",
+          "description": "Serological markers for autoimmune gastritis. Anti-parietal cell antibodies (APCA): directed against the H+/K+-ATPase proton pump; sensitivity 90% for autoimmune gastritis; specificity LOW (present in 10-15% of healthy adults — particularly elderly women; also in Hashimoto's thyroiditis, Graves' disease without gastric disease); positive APCA alone is not diagnostic. Anti-intrinsic factor antibodies (AIFA): Type 1 blocking antibody (prevents B12 binding to IF) and Type 2 binding antibody (prevents IF-B12 complex ileal absorption); sensitivity only 50-70% but SPECIFICITY >95% — highly specific when positive; detecting AIFA in a patient with B12 deficiency is virtually diagnostic of autoimmune gastritis/pernicious anaemia.",
+          "purpose": "Screen for and diagnose autoimmune gastritis; investigate unexplained B12 deficiency, pernicious anaemia, or unexplained iron deficiency anaemia",
+          "key_metric": "APCA positive + AIFA positive (either type) = DIAGNOSTIC of autoimmune gastritis/pernicious anaemia with >95% certainty; APCA positive + AIFA negative = possible autoimmune gastritis — confirm with endoscopy and gastrin; AIFA positive = highly specific for pernicious anaemia regardless of APCA"
+        },
+        {
+          "test_name": "Serum Gastrin and Pepsinogen I / Pepsinogen I:II Ratio",
+          "type": "Blood — Hormonal / Biochemical",
+          "description": "Non-invasive serology markers for gastric mucosal atrophy: SERUM GASTRIN: produced by G cells in the antrum; released in response to alkaline stomach pH (loss of acid negative feedback); MARKEDLY ELEVATED (>200 pg/mL; often >500-2000 pg/mL) in autoimmune gastritis (achlorhydria removes acid-mediated feedback inhibition of G cells; the antrum is spared in autoimmune gastritis so G cells are preserved and hyperactive); moderately elevated in H. pylori corpus gastritis (with concurrent hypochlorhydria). PEPSINOGEN I (PGI): produced exclusively by chief cells in the gastric body/corpus; falls with corpus atrophy — very low PGI (<70 mcg/L) suggests corpus atrophy; PEPSINOGEN I/II RATIO: PGI/PGII ratio <3 (particularly <2) strongly suggests advanced corpus atrophy (sensitivity 70-80%; specificity 90% for detecting OLGIM Stage III-IV). Marketed as the 'serological biopsy' for gastric cancer screening in Japan and parts of Asia.",
+          "purpose": "Diagnose autoimmune gastritis (elevated gastrin); screen for corpus atrophy (low PGI, low PGI/PGII ratio); non-invasive triage before endoscopy; serial monitoring of atrophy progression",
+          "key_metric": "Serum gastrin >200 pg/mL: possible autoimmune gastritis or ZES (Zollinger-Ellison); >500 pg/mL: highly suggestive of autoimmune gastritis or ZES; PGI <70 mcg/L + PGI/PGII ratio <3 = significant corpus atrophy present",
+          "india_note": "Serum gastrin and pepsinogen testing increasingly available at major Indian diagnostic centres; important for non-invasive initial assessment of gastric atrophy risk"
+        },
+        {
+          "test_name": "Serum Vitamin B12 and Methylmalonic Acid (MMA)",
+          "type": "Blood — Biochemical / Metabolic",
+          "description": "Assessment of B12 status — critical in autoimmune gastritis screening and monitoring. Serum B12: <200 pg/mL = deficient; 200-300 pg/mL = borderline (check functional markers). Methylmalonic acid (MMA): elevated in B12 deficiency even before serum B12 falls below normal range — a more sensitive marker of FUNCTIONAL B12 deficiency; MMA accumulates when B12 is inadequate for the methylmalonyl-CoA mutase enzyme. Homocysteine: also elevated in B12 deficiency (and folate deficiency) — less specific. In autoimmune gastritis: B12 falls very slowly over years (large hepatic stores); MMA elevation may precede overt anaemia by years.",
+          "purpose": "Screen for B12 deficiency in autoimmune gastritis; monitor B12 replacement therapy; detect early functional deficiency before overt pernicious anaemia develops",
+          "key_metric": "B12 <200 pg/mL = deficient; MMA >0.4 mcmol/L = functional B12 deficiency (most sensitive marker); Homocysteine >15 mcmol/L = B12 or folate deficiency"
+        },
+        {
+          "test_name": "Full Blood Count (FBC) and Blood Film",
+          "type": "Blood — Haematological",
+          "description": "Essential for detecting anaemia in gastritis: MACROCYTIC ANAEMIA (high MCV >100 fL): B12 or folate deficiency (autoimmune gastritis — pernicious anaemia); hypersegmented neutrophils on blood film (CHARACTERISTIC of megaloblastic anaemia — neutrophils have ≥5 lobes); oval macrocytes; MICROCYTIC ANAEMIA (low MCV, low ferritin): iron deficiency from H. pylori-related iron malabsorption, chronic mucosal blood loss (erosive gastritis), or achlorhydria (acid required for iron absorption); MIXED DEFICIENCY ANAEMIA: combined B12 + iron deficiency → can result in 'normal' MCV masking megaloblastic anaemia — blood film showing dimorphic population (mixed macrocytes and microcytes) is the clue.",
+          "purpose": "Detect and characterise anaemia type; screen for pernicious anaemia; detect iron deficiency; identify mixed deficiency (B12 + iron)",
+          "key_metric": "MCV >100 + hypersegmented neutrophils = megaloblastic anaemia → investigate B12/folate; MCV <80 + low ferritin = iron deficiency → investigate cause"
+        },
+        {
+          "test_name": "Iron Studies (Serum Ferritin, Transferrin, Serum Iron, TIBC)",
+          "type": "Blood — Biochemical",
+          "description": "H. pylori gastritis is an important and underrecognised cause of iron deficiency anaemia — even without visible GI blood loss. Mechanisms: H. pylori competes with the host for iron (H. pylori has iron-acquisition virulence factors — lactoferrin binding protein); H. pylori gastritis reduces ascorbic acid levels in gastric juice (Vitamin C normally converts ferric to ferrous iron for absorption); H. pylori-induced achlorhydria (particularly corpus atrophy) impairs acid-dependent ferric-to-ferrous conversion required for iron absorption. H. pylori eradication may resolve iron deficiency anaemia without iron supplementation in some patients.",
+          "purpose": "Confirm iron deficiency; assess severity and response to supplementation; monitor after H. pylori eradication (may improve without iron supplementation if H. pylori eradication restores normal iron absorption)",
+          "key_metric": "Ferritin <15 mcg/L = iron deficient; ferritin 15-30 = functional iron deficiency; TIBC elevated; transferrin saturation <20%"
+        },
+        {
+          "test_name": "Chromogranin A and Gastric Neuroendocrine Tumour Screening",
+          "type": "Blood — Tumour Marker",
+          "description": "Chromogranin A (CgA) is a secretory protein produced by neuroendocrine cells — elevated in neuroendocrine tumours (NETs). Relevant in autoimmune gastritis (Type 1 gastric NETs from ECL cell hyperplasia) and in Ménétrier's disease surveillance. In autoimmune gastritis: serum CgA elevated (reflecting ECL cell hyperplasia and carcinoid tumour activity). NOTE: PPIs are a major confounding cause of CgA elevation (PPIs cause hypergastrinaemia → ECL stimulation → CgA elevation — always stop PPIs for 2 weeks before CgA testing).",
+          "purpose": "Screen for gastric neuroendocrine tumours in autoimmune gastritis; monitoring after resection of Type 1 gastric NETs",
+          "key_metric": "CgA >upper limit of normal (lab-specific) after PPI washout = possible NET activity"
+        },
+        {
+          "test_name": "Abdominal Ultrasound and CT Scan",
+          "type": "Imaging",
+          "description": "Imaging is NOT routinely required for uncomplicated gastritis — this is a mucosal disease diagnosed by endoscopy and histology. However, imaging is indicated for: suspected gastric cancer (CT staging — tumour extent, lymph nodes, distant metastases, liver); granulomatous gastritis (CT chest for sarcoidosis, pulmonary TB); suspected pancreatitis or biliary disease as a differential diagnosis; MALT lymphoma staging (CT abdomen with contrast); severe Ménétrier's disease with suspected malignancy; portal hypertensive gastropathy (hepatic and portal venous assessment).",
+          "purpose": "Cancer staging (gastric cancer); differential diagnosis; lymphoma staging",
+          "key_metric": "CT: gastric wall thickening >1 cm; regional lymphadenopathy; hepatic metastases — all suggest gastric cancer; linitis plastica (diffuse infiltrative gastric cancer — 'leather bottle' stomach)"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Treatment of gastritis is fundamentally aetiological — the most effective management targets the underlying cause rather than providing only symptomatic acid suppression. H. pylori eradication is the most important pharmacological intervention for H. pylori gastritis — it resolves mucosal inflammation, heals peptic ulcers, reduces gastric cancer risk, and may reverse early atrophy. Vitamin B12 replacement is the specific treatment for autoimmune gastritis. Acid suppression (PPIs) is appropriate for symptomatic relief, NSAID gastroprotection, peptic ulcer healing, and as a component of H. pylori eradication — but long-term empirical PPI use without a defined indication should be avoided.",
+      "treatment_principles": [
+        "1. TREAT THE CAUSE: H. pylori → ERADICATE; NSAID-induced → STOP or CO-PRESCRIBE PPI; autoimmune → B12 replacement + surveillance; alcohol → CESSATION; stress → PROPHYLAXIS in ICU high-risk patients",
+        "2. H. PYLORI ERADICATION is the cornerstone of H. pylori gastritis management — not symptom suppression with PPIs alone; confirm eradication with UBT or stool antigen at 4+ weeks post-treatment",
+        "3. ACID SUPPRESSION (PPIs) is appropriate for: NSAID gastroprotection; acute symptomatic relief; peptic ulcer healing; H. pylori eradication (as part of the regimen); stress ulcer prophylaxis in high-risk ICU; NOT for long-term indefinite use in asymptomatic gastritis",
+        "4. MUCOSAL PROTECTIVE AGENTS (sucralfate, bismuth, rebamipide) address the defensive side of the acid-mucosal barrier equation — valuable adjuncts particularly in chemical gastropathy and as H. pylori eradication components",
+        "5. REGULAR REVIEW AND DEPRESCRIBING of PPIs — reassess at every consultation; the majority of patients on long-term PPIs in India have no documented indication; step down or stop when appropriate",
+        "6. AUTOIMMUNE GASTRITIS: B12 replacement via IM injection is mandatory; monitor annually for gastric cancer and type 1 NETs; do not use PPIs (achlorhydric — no acid to suppress)"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-181",
+          "category_name": "H. pylori Eradication Therapy — See also DIS-021 Dyspepsia",
+          "purpose": "Eradicate H. pylori infection — resolves chronic gastritis, reduces peptic ulcer risk, reduces gastric cancer risk, and may improve dyspeptic symptoms in H. pylori-positive patients.",
+          "treatment_duration": "14 days preferred (10 days minimum); 7-day regimens are no longer recommended due to inadequate eradication rates",
+          "test_of_cure": "MANDATORY — UBT or stool antigen minimum 4 weeks after completing antibiotics (2 weeks off PPIs) to confirm eradication",
+          "india_resistance_context": "Clarithromycin resistance in India rising (15-30% in many centres); metronidazole resistance very high (50-80%); fluoroquinolone resistance rising; bismuth quadruple therapy increasingly preferred in India as first-line given high clarithromycin and metronidazole resistance rates",
+          "regimens": [
+            {
+              "name": "Bismuth-Based Quadruple Therapy (BQT) — PREFERRED FIRST-LINE IN INDIA",
+              "components": "PPI (standard dose twice daily) + Bismuth subcitrate 120-240 mg four times daily + Metronidazole 400 mg three to four times daily + Tetracycline 500 mg four times daily × 14 days",
+              "eradication_rate": "85-95%; remains high even in areas of metronidazole resistance (bismuth has direct bactericidal activity independent of antibiotic mechanisms)",
+              "india_rationale": "Preferred in India due to: high clarithromycin resistance rendering standard triple therapy less effective; bismuth direct anti-H. pylori activity overcoming metronidazole resistance to some extent; widely available at low cost; recommended by Indian Society of Gastroenterology",
+              "note": "Bismuth salts cause black stools and black tongue — harmless bismuth sulphide; warn patients; tetracycline avoid in pregnancy and children <12 years"
+            },
+            {
+              "name": "Standard Triple Therapy (PPI + Clarithromycin + Amoxicillin)",
+              "components": "PPI (standard dose twice daily) + Clarithromycin 500 mg twice daily + Amoxicillin 1g twice daily × 14 days",
+              "eradication_rate": "70-85% in low-clarithromycin-resistance areas; significantly lower in India where clarithromycin resistance is 15-30%",
+              "note": "If penicillin allergy: replace amoxicillin with metronidazole 400 mg twice daily; increasingly less reliable in India"
+            },
+            {
+              "name": "Second-Line (Salvage) After Failed First-Line",
+              "options": [
+                "Levofloxacin-based triple: PPI + Levofloxacin 500 mg once daily + Amoxicillin 1g twice daily × 10-14 days",
+                "Bismuth quadruple therapy (if not used as first-line)",
+                "After two failures: culture and sensitivity testing of H. pylori strongly recommended; rifabutin-based therapy for multiply-treated patients (avoid in TB-endemic settings without ruling out TB)"
+              ]
+            }
+          ],
+          "medicines_in_eradication_regimens": [
+            {
+              "name": "Omeprazole / Pantoprazole / Esomeprazole / Rabeprazole",
+              "dosage": "Standard dose twice daily during H. pylori eradication (omeprazole 20 mg twice daily; pantoprazole 40 mg twice daily; esomeprazole 40 mg twice daily; rabeprazole 20 mg twice daily)",
+              "note": "Rabeprazole may be slightly superior for H. pylori eradication due to less CYP2C19-dependent metabolism — more consistent acid suppression across genetic metaboliser types"
+            },
+            {
+              "name": "Bismuth Subcitrate (De-Nol)",
+              "brand_examples": ["De-Nol", "Bismuth subcitrate — generic India"],
+              "dosage": "120 mg four times daily (half-hour before meals and at bedtime) OR 240 mg twice daily",
+              "mechanism": "Direct bactericidal activity against H. pylori (disrupts bacterial cell wall and metabolism independent of urease inhibition); forms a protective coating over inflamed gastric mucosa (cytoprotective); anti-adhesive (prevents H. pylori from binding to gastric epithelium); synergistic with antibiotics — overcomes antibiotic resistance to some degree",
+              "additional_benefits": "Mucosal protective (coating effect); anti-pepsin activity; stimulates prostaglandin and mucus synthesis; used as monotherapy for mild dyspepsia in some guidelines"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-182",
+          "category_name": "Proton Pump Inhibitors (PPIs) — Acid Suppression",
+          "purpose": "Suppress gastric acid secretion to: (1) relieve dyspeptic symptoms from gastritis; (2) heal peptic ulcers; (3) provide gastroprotection during NSAID therapy; (4) as part of H. pylori eradication regimens; (5) stress ulcer prophylaxis in high-risk ICU patients.",
+          "medicines": [
+            {
+              "name": "Omeprazole",
+              "brand_examples": ["Omez", "Ocid", "Omecip", "Prilosec"],
+              "form": "Capsule (10 mg, 20 mg, 40 mg); IV injection",
+              "dosage": "Gastritis symptom relief: 20 mg once daily before breakfast × 4-8 weeks; Peptic ulcer: 20-40 mg once daily × 4-8 weeks; NSAID gastroprotection: 20 mg once daily; H. pylori eradication component: 20 mg twice daily × 14 days; ICU stress ulcer prophylaxis: 40 mg IV once or twice daily",
+              "mechanism": "Irreversible inhibition of H+/K+-ATPase (proton pump) after acid activation in gastric parietal cell canaliculi; inhibits acid secretion by 90-98%; take 30-60 minutes before first meal for maximum efficacy",
+              "long_term_risks": "B12 deficiency (impairs food-protein-bound B12 absorption — crystalline cyanocobalamin supplements still absorbed); magnesium deficiency (hypomagnesaemia — risk of arrhythmia); C. difficile infection (increased 2×); community-acquired pneumonia; fracture risk (reduced calcium absorption); renal disease (interstitial nephritis); rebound acid hypersecretion on discontinuation",
+              "deprescribing": "Taper when stopping long-term PPIs: reduce to 20 mg on alternate days for 2-4 weeks → stop; this prevents rebound acid hypersecretion (which can cause transient dyspepsia and heartburn — paradoxically making patients think they still need the PPI)"
+            },
+            {
+              "name": "Pantoprazole",
+              "brand_examples": ["Pantocid", "Pantop", "Pan-40"],
+              "form": "Tablet (20 mg, 40 mg); IV injection",
+              "dosage": "Gastritis: 40 mg once daily; IV for acute bleeding: 80 mg bolus + 8 mg/hour infusion × 72 hours post-endoscopic haemostasis",
+              "note": "Fewer drug interactions than omeprazole (less CYP2C19 inhibition); preferred when patient is on clopidogrel (reduced CYP2C19 interaction)"
+            },
+            {
+              "name": "Rabeprazole",
+              "brand_examples": ["Razo", "Pariet", "Rabec", "Veloz"],
+              "form": "Tablet (10 mg, 20 mg)",
+              "dosage": "20 mg once or twice daily",
+              "advantage": "Less affected by CYP2C19 genetic polymorphism — most consistent acid suppression regardless of metaboliser status; may be superior for H. pylori eradication"
+            },
+            {
+              "name": "Esomeprazole",
+              "brand_examples": ["Nexium", "Nexpro", "Sompraz"],
+              "form": "Tablet (20 mg, 40 mg)",
+              "dosage": "20-40 mg once daily",
+              "note": "S-isomer of omeprazole; marginally superior for erosive oesophagitis healing; higher cost than generic omeprazole"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-183",
+          "category_name": "H2-Receptor Antagonists",
+          "purpose": "Moderate acid suppression — less potent than PPIs; used for mild gastritis, break-through symptoms, or as alternative to PPIs when PPIs are not tolerated or are being deprescribed.",
+          "medicines": [
+            {
+              "name": "Famotidine",
+              "brand_examples": ["Famocid", "Topcid", "Pepcid"],
+              "form": "Tablet (20 mg, 40 mg)",
+              "dosage": "20 mg twice daily or 40 mg once daily at night; PRN: 10-20 mg as needed for breakthrough symptoms",
+              "use_case": "Mild gastritis symptoms; PRN use for breakthrough heartburn; alternative to PPI in mild GERD; H2 blocker prophylaxis in lower-risk ICU patients; useful during PPI deprescription process as a step-down",
+              "advantages_over_ppi": "Faster onset of action (30-60 minutes vs 1-2 hours for PPI); no significant drug interactions; no rebound acid hypersecretion on discontinuation; OTC availability; appropriate for PRN use",
+              "limitation": "Tachyphylaxis (tolerance) develops within 2-3 weeks of continuous use — efficacy diminishes with regular around-the-clock use"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-184",
+          "category_name": "Mucosal Protective Agents (Cytoprotectives)",
+          "purpose": "Enhance gastric mucosal defence mechanisms rather than reducing acid output — complementary to or alternative to acid suppression in gastritis management.",
+          "medicines": [
+            {
+              "name": "Sucralfate",
+              "brand_examples": ["Sucral", "Ulsanic", "Carafate"],
+              "form": "Tablet (1 g); Suspension (1 g/5 mL)",
+              "dosage": "1 g four times daily on an empty stomach (1 hour before meals and at bedtime) OR 2 g twice daily; take with water; separate from other medications by 2 hours",
+              "use_case": "Gastritis and peptic ulcer healing; NSAID-induced gastropathy; stress ulcer prophylaxis in ICU (alternative to PPI — particularly appropriate when C. difficile or pneumonia risk from PPI is a concern); oesophagitis; bile reflux gastropathy; safe in pregnancy",
+              "mechanism": "Polyanionic aluminium sucrose sulphate — in acidic environment forms a viscous adhesive paste that binds to positively charged proteins in ulcer/erosion base; forms a physical barrier protecting eroded mucosa from acid, pepsin, and bile; stimulates prostaglandin E2 synthesis (cytoprotective); promotes bicarbonate and mucus secretion; binds epidermal growth factor (EGF) concentrating it at mucosal injury site",
+              "note": "Requires acid for activation — less effective with concurrent PPI use (PPI raises pH, impairing sucralfate activation); must be taken on empty stomach; can reduce absorption of fluoroquinolones, tetracyclines, digoxin, warfarin, phenytoin, and thyroid hormones — separate by 2 hours"
+            },
+            {
+              "name": "Rebamipide",
+              "brand_examples": ["Mucosta", "Rebagen", "Aptyrol"],
+              "form": "Tablet (100 mg)",
+              "dosage": "100 mg three times daily (or twice daily)",
+              "use_case": "Widely used in Japan, South Korea, and increasingly India for gastric mucosal protection in gastritis; H. pylori gastritis (augments mucosal defence while awaiting eradication); NSAID-induced gastropathy (enhances mucosal prostaglandin synthesis and mucus production); improves gastric mucosal healing post-H. pylori eradication",
+              "mechanism": "Increases gastric mucosal prostaglandin E2 and I2 synthesis (cytoprotective prostaglandins); stimulates mucous secretion; scavenges reactive oxygen species (ROS — protective against oxidative stress-mediated mucosal injury); enhances tight junction protein expression; anti-inflammatory (reduces IL-8 and TNF-alpha in gastric mucosa)",
+              "evidence": "Multiple Japanese RCTs show rebamipide accelerates gastric mucosal healing post-H. pylori eradication; reduces NSAID-induced small bowel injury; reduces upper GI adverse events from NSAIDs",
+              "india_availability": "Increasingly available at urban pharmacies in India; generic versions from Indian manufacturers"
+            },
+            {
+              "name": "Misoprostol (Prostaglandin E1 Analogue) — NSAID Gastroprotection",
+              "brand_examples": ["Cytotec", "Misoprost"],
+              "form": "Tablet (200 mcg)",
+              "dosage": "200 mcg four times daily with food",
+              "use_case": "Prevention of NSAID-induced gastric and duodenal ulcers and erosions; replaces prostaglandins depleted by COX-1 inhibition from NSAIDs; evidence-based NSAID gastroprotection; reduces NSAID-related GI complications by 40-50%",
+              "mechanism": "Exogenous PGE1 replaces depleted mucosal prostaglandins; stimulates mucus and bicarbonate secretion; enhances mucosal blood flow; reduces acid secretion (partial H+/K+-ATPase inhibition)",
+              "side_effects": "Diarrhoea and abdominal cramps (most common — 20-30%; dose-related); nausea; UTEROTONIC: ABSOLUTE CONTRAINDICATION in pregnancy (causes miscarriage and premature labour)",
+              "note": "Poor tolerability limits use — PPIs are better tolerated for NSAID gastroprotection"
+            },
+            {
+              "name": "Bismuth Subcitrate (as Mucosal Protectant)",
+              "brand_examples": ["De-Nol", "Bismuth subcitrate"],
+              "dosage": "120 mg four times daily or 240 mg twice daily × 4-8 weeks",
+              "use_case": "As standalone mucosal protectant in gastritis and peptic ulcer disease (in addition to H. pylori eradication use); black stools — reassure patients"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-185",
+          "category_name": "Vitamin B12 Replacement — Autoimmune Gastritis / Pernicious Anaemia",
+          "purpose": "Replacement of Vitamin B12 in autoimmune gastritis where intrinsic factor deficiency prevents oral B12 absorption from food. Critical for preventing and treating megaloblastic anaemia and subacute combined degeneration of the spinal cord.",
+          "medicines": [
+            {
+              "name": "Cyanocobalamin IM / Hydroxocobalamin IM",
+              "brand_examples": ["Cyanocobalamin injection", "Neurobion (B1+B6+B12 combination)", "Cobadex"],
+              "form": "IM injection",
+              "dosage": "INITIAL (LOADING) DOSES for deficiency: Hydroxocobalamin 1000 mcg IM daily for 7 days (UK protocol); or 1000 mcg IM every other day for 2 weeks; then 1000 mcg IM every 3 months LIFELONG (autoimmune gastritis — intrinsic factor permanently absent); CYANOCOBALAMIN: 1000 mcg IM daily for 7 days loading; then 1000 mcg IM monthly (shorter tissue retention than hydroxocobalamin — requires more frequent injections)",
+              "use_case": "PERNICIOUS ANAEMIA / AUTOIMMUNE GASTRITIS — MANDATORY LIFELONG REPLACEMENT: intrinsic factor permanently absent so oral food-B12 absorption is essentially zero; IM injection bypasses the need for intrinsic factor (absorbed passively in ileum at very high parenteral doses); hydroxocobalamin preferred over cyanocobalamin (longer tissue retention — 3 months vs monthly injections)",
+              "monitoring": "Serum B12 at 3-6 months after starting; FBC improvement (reticulocytosis within 1 week; Hb normalisation within 6-8 weeks); neurological improvement (slower — may take months; some permanent neurological damage if treatment delayed beyond 6-12 months of symptoms)",
+              "neurological_urgency": "NEUROLOGICAL SYMPTOMS (numbness, weakness, balance difficulty) from B12 deficiency require IMMEDIATE daily IM injections for at least 2 weeks — neurological damage is rapidly reversible early but becomes permanent if treatment is delayed; do NOT wait for laboratory confirmation if clinical suspicion is high",
+              "india_note": "IM B12 injection widely available and inexpensive in India; administered by any nurse or doctor; patients on lifelong autoimmune gastritis B12 replacement require quarterly GP visits for injections"
+            },
+            {
+              "name": "High-Dose Oral Cyanocobalamin (Alternative for Non-Neurological Deficiency)",
+              "brand_examples": ["Cyanocobalamin tablets 500 mcg, 1000 mcg"],
+              "dosage": "1000-2000 mcg orally DAILY",
+              "use_case": "Alternative to IM injection in patients without neurological symptoms and who prefer oral route; HIGH-DOSE oral B12 bypasses intrinsic factor (approximately 1% of orally administered cyanocobalamin is absorbed passively without intrinsic factor — at high doses like 1000-2000 mcg, enough is absorbed to maintain normal B12 levels); evidence shows equivalent efficacy to IM for non-neurological deficiency in some trials",
+              "note": "NOT appropriate for patients with active neurological symptoms — IM injection gives faster and more reliable correction; adequate adherence essential (daily tablet vs quarterly injection)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-186",
+          "category_name": "Iron and Nutritional Supplementation",
+          "purpose": "Correct nutritional deficiencies caused by gastritis — iron deficiency from H. pylori-related malabsorption, chronic mucosal blood loss, or achlorhydria; other nutritional deficiencies in atrophic gastritis.",
+          "medicines": [
+            {
+              "name": "Ferrous Sulphate (Oral Iron)",
+              "brand_examples": ["Fersolate", "Ironorm", "Orofer-S", "Ferrous sulphate generic"],
+              "form": "Tablet (200 mg — 65 mg elemental iron)",
+              "dosage": "200 mg (65 mg elemental iron) two to three times daily; take on empty stomach for maximum absorption; or with Vitamin C (ascorbic acid 250-500 mg) to enhance absorption",
+              "use_case": "Iron deficiency anaemia from: H. pylori-related iron malabsorption (H. pylori competes for iron; reduces ascorbic acid in gastric juice; promotes hypochlorhydria impairing iron absorption); chronic mucosal blood loss from erosive gastritis; achlorhydria in autoimmune gastritis (acid required for ferric → ferrous conversion, the absorbable form)",
+              "note": "Separate by minimum 4 hours from PPIs (PPIs raise pH reducing ferric to ferrous conversion — reduces iron absorption significantly); H. pylori eradication may normalise iron absorption and allow iron deficiency to resolve without long-term supplementation"
+            },
+            {
+              "name": "Calcium and Vitamin D Supplementation",
+              "brand_examples": ["Cal-C-Vita", "Shelcal", "Carbocal"],
+              "dosage": "Calcium 1000-1500 mg/day (as calcium carbonate — require gastric acid for absorption; use calcium citrate in achlorhydric patients — absorbed pH-independently); Vitamin D3 1000-2000 IU daily",
+              "use_case": "Atrophic gastritis with achlorhydria (autoimmune gastritis) — calcium carbonate requires acid for solubilisation and absorption; switch to CALCIUM CITRATE which is absorbed independently of gastric acid; osteoporosis prevention in autoimmune atrophic gastritis; long-term PPI users (PPIs reduce calcium absorption)"
+            },
+            {
+              "name": "Folic Acid",
+              "brand_examples": ["Folvite", "Folicap"],
+              "dosage": "5 mg once daily orally × 4 months (for treatment); 400-800 mcg daily (maintenance)",
+              "use_case": "Folate deficiency in atrophic gastritis (especially with B12 deficiency — always test and treat both; isolated folate replacement without B12 in pernicious anaemia can worsen neurological damage by allowing haematological improvement while neurological damage progresses — the 'masking' phenomenon); dietary folate supplementation"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-187",
+          "category_name": "Antacids — Symptomatic Relief",
+          "purpose": "Rapid short-term symptomatic relief of gastritis-related epigastric discomfort, heartburn, and nausea — not therapeutic for the underlying gastritis.",
+          "medicines": [
+            {
+              "name": "Aluminium Hydroxide + Magnesium Hydroxide",
+              "brand_examples": ["Gelusil", "Digene", "Rantac (combination)", "Mucaine"],
+              "form": "Chewable tablet; Suspension",
+              "dosage": "10-20 mL or 2-4 tablets after meals and at bedtime as needed",
+              "use_case": "Immediate symptomatic relief of epigastric burning in gastritis; acid neutralisation; useful while awaiting PPI effect or as rescue medication; Mucaine (with oxethazaine — local anaesthetic) particularly useful for oesophageal and gastric burning",
+              "note": "Separate from other medications (including PPIs, fluoroquinolones, tetracyclines, iron, thyroid hormone) by minimum 2 hours — chelation reduces absorption of many drugs"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-188",
+          "category_name": "Immunosuppression — Autoimmune and Eosinophilic Gastritis",
+          "medicines": [
+            {
+              "name": "Prednisolone (Oral Corticosteroids)",
+              "brand_examples": ["Wysolone", "Omnacortil", "Prednisolone generic"],
+              "form": "Tablet (5 mg, 10 mg, 20 mg)",
+              "dosage": "Eosinophilic gastritis: 20-40 mg/day × 4-8 weeks; taper by 5 mg every 2 weeks once in clinical remission; Autoimmune gastritis: corticosteroids are NOT indicated (atrophy is irreversible; immunosuppression does not reverse parietal cell loss); Granulomatous gastritis (sarcoidosis): 20-40 mg/day",
+              "use_case": "Eosinophilic gastritis failing dietary elimination; granulomatous gastritis from sarcoidosis (after TB excluded); not appropriate for H. pylori, autoimmune, or chemical gastritis"
+            },
+            {
+              "name": "Proton Pump Inhibitors (High-Dose) — Eosinophilic Gastritis",
+              "dosage": "Omeprazole 40 mg or esomeprazole 40 mg twice daily",
+              "use_case": "Eosinophilic gastritis with predominant acid-related symptoms; PPI-responsive eosinophilic oesophagitis often extends to gastritis; some patients with eosinophilic GI disorders respond to high-dose PPI therapy alone"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet does not cause gastritis in the pathological sense — H. pylori, NSAIDs, and autoimmune mechanisms are the true causes. However, specific dietary patterns significantly influence symptom severity, mucosal healing, gastric cancer risk, and the progression of atrophic gastritis along the Correa cascade. The goals of dietary management in gastritis are: (1) reduce symptoms by avoiding mucosal irritants; (2) support mucosal healing through anti-inflammatory and antioxidant-rich foods; (3) reduce gastric cancer risk through dietary cancer-protective strategies; (4) correct nutritional deficiencies from gastritis complications (B12, iron, calcium); (5) facilitate H. pylori eradication by optimising the gastric environment.",
+      "dietary_principles": {
+        "small_frequent_meals": "5-6 small meals per day instead of 3 large meals — reduces gastric distension, minimises acid secretion spikes, and reduces post-meal discomfort; particularly important in atrophic gastritis with impaired gastric motility",
+        "anti_inflammatory_diet": "Mediterranean-style diet — high in fruits, vegetables, whole grains, olive oil, and fish; low in red and processed meat; associated with 30-40% lower gastric cancer risk in multiple large epidemiological studies",
+        "salt_restriction": "HIGH SALT INTAKE is one of the strongest dietary risk factors for gastric cancer progression from gastritis; salt directly damages gastric mucosa (hypertonic saline is directly cytotoxic to gastric epithelium), increases H. pylori density, and upregulates CagA virulence factor expression; target <5g salt per day (WHO recommendation); avoid preserved, pickled, and salted foods — particularly important in North Indian cooking where salt and pickles are heavily used"
+      },
+      "recommended_foods": [
+        {
+          "category": "Anti-Inflammatory and Gastric Cancer Protective Foods",
+          "evidence": "Strong epidemiological evidence: high fruit and vegetable consumption associated with 30-50% lower gastric cancer risk",
+          "items": [
+            {
+              "food": "Cruciferous vegetables — broccoli, cauliflower, cabbage, kale, Brussels sprouts",
+              "benefit": "Sulforaphane (from glucosinolates in broccoli sprouts) is the most-studied dietary anti-H. pylori compound — inhibits H. pylori growth; reduces urease activity; suppresses H. pylori-induced NF-κB inflammatory signalling; reduces gastric mucosal oxidative stress; broccoli sprout extracts shown to reduce H. pylori colonisation density in clinical trials (Yanaka et al.); anti-cancer isothiocyanates inhibit gastric carcinogenesis",
+              "frequency": "3-5 servings per week; lightly steamed for maximum sulforaphane preservation",
+              "india_note": "Phool gobhi (cauliflower), patta gobhi (cabbage), broccoli, sarson (mustard greens) — all members of this family; widely available and affordable in Indian markets"
+            },
+            {
+              "food": "Garlic (Lehsun)",
+              "benefit": "Allicin and organosulphur compounds — direct anti-H. pylori bactericidal activity (allicin inhibits H. pylori urease and disrupts bacterial cell membranes); anti-carcinogenic (inhibits nitrosamine formation — nitrosamines are gastric carcinogens); epidemiological studies: high garlic consumption areas in China and Korea have lower gastric cancer rates; also reduces NF-κB-mediated inflammation; protective against NSAID-induced gastric damage",
+              "frequency": "2-3 raw or lightly cooked cloves daily; crush and allow 10 minutes rest before heating (activates alliinase enzyme)",
+              "note": "Raw garlic is more potent than cooked — cooking reduces allicin content; however, even cooked garlic retains other beneficial organosulphur compounds"
+            },
+            {
+              "food": "Turmeric (Haldi) with black pepper",
+              "benefit": "Curcumin — inhibits H. pylori CagA-mediated oncogenic signalling (c-Met/AKT/MAPK pathway); inhibits NF-κB activation in H. pylori-infected gastric mucosa; reduces gastric mucosal IL-8 and MCP-1 (chemokines that drive neutrophilic gastritis); anti-proliferative in gastric cancer cell lines; anti-angiogenic; Phase II trials suggest curcumin may reduce H. pylori density (adjunct, not monotherapy); black pepper piperine increases curcumin bioavailability 20-fold",
+              "frequency": "Daily in cooking; haldi doodh (turmeric golden milk) at bedtime"
+            },
+            {
+              "food": "Berries — amla (Indian gooseberry), blueberries, strawberries, pomegranate",
+              "benefit": "Amla: richest Vitamin C source (600-900 mg/100g); Vitamin C is a key anti-H. pylori dietary factor — reduces gastric mucosal oxidative stress from H. pylori-induced free radical generation; Vitamin C in gastric juice converts potentially carcinogenic nitrite to harmless nitric oxide; Vitamin C supplementation in H. pylori-infected patients reduces mucosal oxidative stress and may modestly slow progression; Polyphenols (ellagic acid, quercetin, anthocyanins) in berries: anti-H. pylori adhesion; anti-inflammatory; antioxidant",
+              "frequency": "1-3 amla daily; other berries 2-3 times weekly"
+            },
+            {
+              "food": "Green tea",
+              "benefit": "Epigallocatechin gallate (EGCG): inhibits H. pylori growth (bacteriostatic MIC concentration achievable in gastric juice with regular tea consumption); inhibits H. pylori adhesion to gastric epithelium; reduces H. pylori-induced NF-κB; anti-inflammatory; anti-proliferative against gastric cancer cells; epidemiological data: regular green tea consumption associated with lower gastric cancer risk in Japanese population studies",
+              "frequency": "2-3 cups of unsweetened green tea daily; avoid green tea EXTRACT supplements (paradoxically hepatotoxic)",
+              "caution": "Avoid very hot green tea — hot beverages (>65°C) classified as Group 2A carcinogen (probable carcinogen) by IARC — let tea cool slightly before drinking"
+            },
+            {
+              "food": "Cold-pressed olive oil and mustard oil",
+              "benefit": "Oleocanthal in extra-virgin olive oil: ibuprofen-like COX inhibition (anti-inflammatory) and H. pylori inhibition in vitro; omega-3 fatty acids in mustard oil (alpha-linolenic acid): reduce gastric mucosal inflammation; epidemiological: Mediterranean diet (high olive oil) associated with lower gastric cancer and gastritis progression risk",
+              "frequency": "Replace refined oils with cold-pressed mustard oil, olive oil, or rice bran oil for cooking"
+            },
+            {
+              "food": "Probiotics (curd, kefir, fermented foods)",
+              "benefit": "Post-H. pylori eradication: probiotics restore gut microbiota disrupted by antibiotics; reduce antibiotic-associated side effects; Lactobacillus (particularly L. reuteri, L. rhamnosus, L. casei) — reduce H. pylori colonisation density (weak competitive exclusion); reduce H. pylori-associated gastric inflammation; improve H. pylori eradication rates when co-administered with antibiotic triple therapy (meta-analyses show +10-15% eradication improvement); reduce eradication regimen side effects (particularly diarrhoea and nausea) by 50%",
+              "frequency": "Daily during and after H. pylori eradication therapy; continue 4-6 weeks post-antibiotic completion"
+            }
+          ]
+        },
+        {
+          "category": "Ginger (Adrak) — Gastritis-Specific Benefits",
+          "items": [
+            {
+              "food": "Ginger (fresh or dried)",
+              "benefit": "6-Gingerol and shogaols: (1) Inhibit H. pylori urease (H. pylori's key virulence enzyme); (2) Anti-H. pylori adhesion — prevent H. pylori binding to gastric epithelial cell Lewis b antigen (BabA-Lewis b interaction is the primary adhesion mechanism); (3) Anti-inflammatory — COX-2 inhibition, NF-κB suppression; (4) Gastric motility stimulant (prokinetic — improves delayed gastric emptying from achlorhydric gastritis); (5) Antiemetic; some in vitro studies show 8-gingerol more potent anti-H. pylori than clarithromycin at achievable concentrations",
+              "preparation": "Fresh ginger tea 2-3 times daily; add to cooking",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Foods Supporting Gastric Mucosal Healing",
+          "items": [
+            {
+              "food": "Banana (particularly unripe green bananas and banana powder)",
+              "benefit": "Stimulates mucus secretion in gastric mucosa (protective mucous layer thickening); anti-H. pylori flavonoids (leucocyanidin in unripe banana); pectin (soluble fibre); Vitamin C; 'banana factor' increases gastric mucosal thickness in experimental models; traditional remedy for gastritis with genuine mechanism",
+              "frequency": "1-2 ripe bananas daily; banana powder (100g/day unripe banana in traditional management of gastric ulcer)"
+            },
+            {
+              "food": "Licorice root — DGL (Deglycyrrhizinated Licorice)",
+              "benefit": "Stimulates gastric mucus secretion; promotes gastric prostaglandin E2 synthesis (mucosal protective); anti-H. pylori urease inhibition; anti-ulcer activity (comparable to antacids in some small trials); DGL form removes glycyrrhizin (which causes hypertension — use ONLY deglycyrrhizinated form)",
+              "preparation": "DGL chewable tablets (available as Caved-S or DGL supplements); chew before meals",
+              "caution": "ALWAYS use DGL form; never use whole licorice root regularly (glycyrrhizin causes hypokalaemia and hypertension)"
+            },
+            {
+              "food": "Aloe vera gel (inner leaf — not the outer latex)",
+              "benefit": "Acemannan and aloe polysaccharides: anti-inflammatory; promotes gastric mucosal healing; anti-H. pylori activity in vitro (reduces H. pylori adhesion and urease); reduces gastric acid secretion mildly; an RCT by Yusuf et al. showed aloe vera syrup equivalent to omeprazole for symptom relief in GERD",
+              "preparation": "30 mL fresh inner gel juice diluted in water, twice daily before meals",
+              "caution": "Only inner gel — outer layer contains aloin (harsh laxative); not in pregnancy"
+            }
+          ]
+        }
+      ],
+      "foods_to_limit_or_avoid": [
+        {
+          "food": "High-Salt and Salty Preserved Foods — MOST IMPORTANT CANCER RISK REDUCTION",
+          "reason": "Salt is the strongest dietary risk factor for gastric cancer progression from atrophic gastritis; hypertonic saline directly damages gastric mucosal cells; increases H. pylori density; upregulates H. pylori CagA oncogene expression; promotes N-nitrosamine formation; in Japan and Korea — dramatic reduction in gastric cancer mortality followed drastic nationwide salt reduction policies",
+          "specific_foods": "Pickles (achar) — especially commercial high-salt varieties; papads; salt-preserved fish; salted snacks; excessive soya sauce; monosodium glutamate (MSG) in restaurant food; processed and packaged foods with high salt content",
+          "recommendation": "Target <5g salt per day (WHO recommendation); reduce achar and pickled food consumption; limit papads; use salt alternatives (lemon juice, herbs, spices for flavouring)"
+        },
+        {
+          "food": "Smoked, Cured, and Processed Meats",
+          "reason": "Nitrates and nitrites in cured/processed meats are converted to carcinogenic N-nitrosamines in the stomach by bacterial nitrate reductases; N-nitrosamines are among the most potent gastric carcinogens; smoked meats contain polycyclic aromatic hydrocarbons (PAHs); regular consumption associated with 15-25% higher gastric cancer risk in large cohort studies",
+          "examples": "Sausages, ham, salami, bacon; smoked fish; commercially pickled meats",
+          "recommendation": "Avoid processed meats; limit red meat generally to 1-2 times per week"
+        },
+        {
+          "food": "NSAIDs and Aspirin — Drug-Dietary Interaction",
+          "reason": "NSAIDs are the most important pharmacological cause of gastric mucosal injury; never take on an empty stomach; always take with food; add PPI if gastritis is pre-existing or if NSAID use is prolonged",
+          "recommendation": "Take all NSAIDs and aspirin WITH FOOD and a large glass of water; switch to paracetamol for mild-moderate pain; if NSAIDs essential — add PPI co-prescription"
+        },
+        {
+          "food": "Alcohol — Particularly Concentrated Spirits",
+          "reason": "Ethanol at concentrations >20% directly disrupts the gastric mucosal barrier; inhibits prostaglandin synthesis; causes acute mucosal congestion and haemorrhage; chronic use promotes achlorhydria and gastric atrophy; synergistically worsens H. pylori gastritis severity and impairs H. pylori eradication",
+          "recommendation": "Avoid all alcohol during active gastritis symptoms and H. pylori eradication treatment; moderate intake (≤1-2 units/day) may be acceptable in stable chronic gastritis"
+        },
+        {
+          "food": "Strong Tea and Coffee on an Empty Stomach",
+          "reason": "Caffeine stimulates gastric acid secretion (parietal cell activation); strong tea on empty stomach causes direct gastric mucosal irritation; tannins in strong tea reduce iron absorption (relevant in anaemia from gastritis); coffee is paradoxically gastroprotective for liver disease but direct gastric irritant for individuals with gastritis",
+          "recommendation": "Never drink strong black tea or coffee on an empty stomach; always have with food or after meals; switch to weak chai with ginger; limit to 2-3 cups per day"
+        },
+        {
+          "food": "Very Spicy Foods During Active Gastritis",
+          "reason": "Capsaicin activates TRPV1 receptors in gastric mucosa causing pain, increased acid secretion, and worsening visceral hypersensitivity in symptomatic gastritis patients; with acclimatisation (regular consumption), TRPV1 tachyphylaxis develops; sudden removal of spices in accustomed patients paradoxically sensitises TRPV1",
+          "recommendation": "Gradually reduce spice levels during symptomatic flares rather than sudden elimination; replace chilli heat with non-capsaicin flavouring (black pepper — piperine, which modestly inhibits H. pylori; ginger; cumin)"
+        },
+        {
+          "food": "Hot Foods and Beverages — Cancer Risk",
+          "reason": "IARC classifies beverages consumed very hot (>65°C) as a Group 2A (probable) carcinogen for oesophageal and gastric cancer; thermal damage to gastric mucosa; particularly relevant in chai (Indian tea) drunk very hot; traditional boiling hot rasam",
+          "recommendation": "Allow hot beverages and food to cool to <65°C before consuming (wait 3-5 minutes); blow on soup and tea before eating"
+        },
+        {
+          "food": "Milk (Large Quantities) — The Milk-Alkalosis Risk",
+          "reason": "The traditional recommendation of 'drink milk for gastritis/ulcers' is OUTDATED and COUNTERPRODUCTIVE — milk buffers acid momentarily but the calcium and protein in milk subsequently STIMULATE gastric acid secretion (protein is a major acid secretagogue) causing a REBOUND ACID INCREASE worse than the initial level; the Milk-Alkali syndrome (hypercalcaemia, alkalosis, renal failure) from excessive milk and antacid use is a recognised complication",
+          "recommendation": "Moderate milk consumption is fine; PLAIN YOGURT is safe and beneficial (probiotic); do NOT use large amounts of milk as primary antacid strategy"
+        }
+      ],
+      "sample_meal_plan_gastritis": {
+        "principle": "Anti-inflammatory; low salt; high Vitamin C; probiotics; moderate fat; small frequent meals; avoid triggers",
+        "early_morning": "Warm water with 1-2 fresh amla (Vitamin C) or amla juice; ginger tea (anti-H. pylori, anti-nausea)",
+        "breakfast": "Plain moong dal chilla (mung bean pancake — low fat, easily digestible); OR oats with banana and a few walnuts; OR idli with thin sambar (light, fermented — probiotic); weak ginger-cardamom chai (not on empty stomach — wait 15-20 min after water)",
+        "mid_morning": "Fresh papaya or guava (Vitamin C); 5-6 almonds; plain curd (probiotic)",
+        "lunch": "Brown rice or 1-2 whole wheat rotis (low salt) + moong dal or masoor dal + sabzi (steamed broccoli, cauliflower, or lauki in minimal oil with turmeric and black pepper) + small fresh curd",
+        "afternoon": "Green tea with a few biscuits; banana; 1-2 walnut halves",
+        "dinner": "Moong khichdi (ginger added during cooking) with a teaspoon of ghee + steamed vegetable; or dal-roti; light, low-salt, low-fat; early dinner — by 7-8 PM",
+        "bedtime": "Haldi doodh (warm turmeric milk with black pepper and a pinch of cinnamon); DGL licorice chewable if symptomatic",
+        "avoid_today": "Commercial achar, papads, fried snacks, red meat, very hot beverages, NSAIDs without food"
+      }
+    },
+
+    "lifestyle_management": {
+      "nsaid_and_medication_review": {
+        "overview": "NSAID and aspirin use is the second most important preventable cause of gastric mucosal injury after H. pylori. Every patient with gastritis must have a thorough medication review — NSAID use is frequently undisclosed because patients do not consider OTC pain relievers as 'medications'.",
+        "strategies": [
+          "Ask specifically about OTC ibuprofen, diclofenac, and aspirin use — 'Do you take any pain tablets? Combiflam? Brufen? Any tablets for fever or pain?' (brand-specific questioning in India improves disclosure)",
+          "Switch to PARACETAMOL (acetaminophen) for pain management when possible — no direct gastric mucosal toxicity at standard doses",
+          "If NSAIDs are essential (rheumatoid arthritis, ankylosing spondylitis) — co-prescribe a PPI (omeprazole 20 mg) and take NSAID with food always",
+          "Consider COX-2 selective NSAID (celecoxib) for patients at high gastric risk",
+          "Test and treat H. pylori before starting long-term NSAIDs — the combination of H. pylori + NSAID has multiplicative (not merely additive) ulcer risk"
+        ]
+      },
+      "smoking_cessation": {
+        "reason": "Smoking significantly worsens H. pylori gastritis through multiple mechanisms: increases H. pylori density in the stomach; suppresses mucosal prostaglandin synthesis; reduces antral bicarbonate secretion; increases parietal cell mass and acid secretion; significantly reduces H. pylori eradication success rates (smokers require longer antibiotic courses and have higher eradication failure rates); increases gastric cancer risk by 1.5-2× independently; delays gastric mucosal healing",
+        "advice": "Smoking cessation at any stage of gastritis significantly improves outcomes and reduces cancer risk; use combination NRT + behavioural support + varenicline"
+      },
+      "alcohol_reduction": {
+        "reason": "Alcohol directly damages gastric mucosa, worsens H. pylori gastritis severity, impairs mucosal healing, and reduces H. pylori eradication success; disulfiram-like reaction with metronidazole (H. pylori eradication component) — must maintain complete abstinence during H. pylori eradication treatment",
+        "advice": "Complete abstinence during H. pylori eradication treatment (metronidazole component); reduce or eliminate alcohol in active gastritis; maintain within recommended guidelines once mucosal healing confirmed"
+      },
+      "stress_management": {
+        "reason": "Psychological stress worsens gastritis symptoms through the gut-brain axis — activates the hypothalamic-pituitary-adrenal (HPA) axis; increases gastric acid secretion via CRF; impairs mucosal blood flow; worsens visceral hypersensitivity; stress-induced sympathetic activation reduces mucosal prostaglandin synthesis; stress events are strongly associated with dyspepsia flares and H. pylori virulence upregulation",
+        "strategies": ["Cognitive Behavioural Therapy (CBT) for functional gastric symptoms with stress component", "Mindfulness meditation (10-20 minutes daily — reduces cortisol and CRF); yoga and pranayama (improves vagal tone — parasympathetic activation improves gastric mucosal blood flow); regular aerobic exercise"]
+      },
+      "cancer_surveillance_monitoring_for_atrophic_gastritis": {
+        "overview": "Endoscopic surveillance is the cornerstone of gastric cancer prevention in patients with established atrophic gastritis and intestinal metaplasia.",
+        "surveillance_schedule": [
+          "After H. pylori eradication: endoscopy and Sydney protocol biopsies — baseline; then OLGA/OLGIM staging determines surveillance intervals",
+          "OLGA/OLGIM Stage 0-I: endoscopy not required at 3 years; reassure; lifestyle advice; optional endoscopy at 5 years or if symptoms change",
+          "OLGA/OLGIM Stage II: consider endoscopy every 5 years",
+          "OLGA/OLGIM Stage III-IV: MANDATORY endoscopy every 3 years — HIGH RISK; high-definition white light endoscopy with virtual chromoendoscopy (NBI — narrow band imaging; FICE; BLI) for enhanced mucosal detail; systematic 5-site Sydney biopsies",
+          "Gastric dysplasia: surveillance every 12 months (low-grade); immediate endoscopic resection (high-grade)",
+          "Autoimmune gastritis: gastroscopy with biopsies every 3-5 years (gastric cancer risk 1% per year; Type 1 NET surveillance)"
+        ],
+        "india_specific": "ESGE/BSG surveillance guidelines apply; Indian gastroenterology centres increasingly adopting OLGA staging; given very high H. pylori prevalence in India, population-based H. pylori screen-and-treat programmes are being discussed as gastric cancer prevention strategy"
+      }
+    },
+
+    "gastritis_monitoring_plan": {
+      "acute_gastritis": {
+        "green_zone": {
+          "status": "Mild Acute Gastritis — Home Management",
+          "criteria": "No haematemesis or melaena; mild epigastric discomfort; identified causative agent (alcohol, NSAIDs); able to eat and drink; improving symptoms",
+          "action": "Remove causative agent immediately; OTC antacids (Gelusil, Digene) for symptom relief; PPI (omeprazole 20 mg OD) for 4-6 weeks if NSAID-induced; GP review if not improved in 2 weeks; H. pylori testing if not previously tested"
+        },
+        "red_zone": {
+          "status": "EMERGENCY — Upper GI Haemorrhage from Erosive Gastritis",
+          "criteria": "Haematemesis (vomiting blood); melaena (black tarry stools); haemodynamic instability (tachycardia, hypotension); syncope",
+          "action": "CALL EMERGENCY SERVICES (102/112); IV access ×2; IV fluid resuscitation; IV PPI (pantoprazole 80 mg bolus); urgent endoscopy within 24 hours; blood transfusion if Hb <80 g/L"
+        }
+      },
+      "chronic_gastritis_h_pylori": {
+        "after_eradication": "H. pylori test of cure (UBT or stool antigen) at 4+ weeks post-treatment; LFTs, FBC, B12, ferritin if nutritional deficiency suspected; endoscopy if alarm features or no symptom improvement; OLGA staging if atrophy/metaplasia found",
+        "surveillance_ongoing": "Per OLGA staging intervals as above; annual B12, iron studies in atrophic gastritis"
+      },
+      "autoimmune_gastritis": {
+        "monitoring": "Annual: B12 levels, FBC, serum ferritin, calcium, thyroid function (associated autoimmune disease); annual serum gastrin (rising dramatically suggests ECL hyperplasia); CgA (off PPIs); endoscopy + biopsies every 3-5 years; dietitian referral for calcium and B12 management"
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Peptic Ulcer Disease (Gastric or Duodenal Ulcer)",
+        "description": "The most direct complication of H. pylori chronic gastritis — H. pylori disrupts the acid-mucus barrier allowing acid to penetrate and create mucosal defects. H. pylori is responsible for 90% of duodenal ulcers and 75% of gastric ulcers. NSAIDs cause peptic ulcers through prostaglandin depletion.",
+        "severity": "Moderate to Severe",
+        "management": "H. pylori eradication (heals 95% of DU without recurrence); PPI; stop NSAIDs; endoscopy to confirm healing of gastric ulcers"
+      },
+      {
+        "complication": "Upper Gastrointestinal Haemorrhage",
+        "description": "Bleeding from gastric erosions, ulcers, or portal hypertensive gastropathy. Erosive gastritis bleeding is usually low-volume and self-limiting; peptic ulcer haemorrhage can be life-threatening.",
+        "severity": "Life-threatening (major haemorrhage)",
+        "management": "IV PPI; endoscopy with haemostasis; IV fluids; blood transfusion; surgery rarely needed"
+      },
+      {
+        "complication": "Chronic Atrophic Gastritis and Intestinal Metaplasia",
+        "description": "Progressive loss of gastric glands with replacement by intestinal-type epithelium — the preinvasive phase of the Correa cascade. Largely silent but associated with progressive malabsorption and significantly elevated gastric cancer risk (OLGA Stage III-IV: 50-60× relative risk).",
+        "severity": "Moderate (functional) to Severe (cancer risk)",
+        "management": "H. pylori eradication; OLGA staging; endoscopic surveillance; dietary cancer prevention; nutritional supplementation"
+      },
+      {
+        "complication": "Gastric Cancer (Adenocarcinoma)",
+        "description": "The most feared complication of chronic H. pylori gastritis — gastric adenocarcinoma (intestinal type) arising from the Correa cascade. The third most common cause of cancer death globally. H. pylori is classified as a Group 1 carcinogen. In India: gastric cancer is the 5th most common cancer; particularly high in Gangetic belt and northeastern states.",
+        "severity": "Life-threatening",
+        "management": "H. pylori eradication at any stage reduces cancer risk by ~50%; endoscopic resection (EMR/ESD) for early gastric cancer (T1a, T1b); surgical gastrectomy for advanced; chemotherapy (FLOT/FOLFOX regimens); targeted therapy (trastuzumab for HER2-positive)"
+      },
+      {
+        "complication": "Gastric MALT Lymphoma",
+        "description": "B-cell lymphoma of mucosa-associated lymphoid tissue arising in the setting of H. pylori gastritis. H. pylori antigenic stimulation drives chronic B-cell clonal proliferation; in early localised Stage I-II disease: H. pylori eradication alone achieves complete histological remission in 70-80% of cases without chemotherapy. One of the very few cancers treatable with antibiotics alone.",
+        "severity": "Moderate to Severe (malignancy)",
+        "management": "H. pylori eradication is first-line treatment for Stage I-II MALT lymphoma — 70-80% achieve complete remission; regular endoscopic and biopsy surveillance post-eradication; radiation therapy or rituximab for cases not responding to H. pylori eradication"
+      },
+      {
+        "complication": "Pernicious Anaemia and B12 Deficiency Neurological Complications",
+        "description": "Autoimmune gastritis → loss of parietal cells → absence of intrinsic factor → B12 malabsorption → megaloblastic anaemia AND subacute combined degeneration of the spinal cord (SACD — demyelination of dorsal and lateral columns). SACD causes: progressive ascending weakness; loss of vibration sense and proprioception; ataxia; spastic paraparesis; cognitive decline. SACD is irreversible if B12 replacement is delayed beyond 6-12 months of neurological symptoms.",
+        "severity": "Severe (neurological — potentially irreversible)",
+        "management": "Immediate IM B12 (hydroxocobalamin) 1000 mcg daily for 7 days if neurological symptoms; then 1000 mcg every 3 months lifelong; monitor neurological recovery"
+      },
+      {
+        "complication": "Iron Deficiency Anaemia",
+        "description": "Multiple mechanisms in gastritis: H. pylori reduces iron absorption (competes for iron, depletes ascorbic acid); achlorhydria in atrophic gastritis impairs ferric-to-ferrous conversion; chronic mucosal blood loss from erosive gastritis; post-H. pylori eradication iron absorption normalises significantly.",
+        "severity": "Mild to Moderate",
+        "management": "Iron supplementation; H. pylori eradication (may resolve iron deficiency without ongoing supplementation); investigate for other sources of GI blood loss if deficiency is severe"
+      },
+      {
+        "complication": "Type 1 Gastric Neuroendocrine Tumours (Carcinoids)",
+        "description": "Multiple small (usually <1 cm) ECL-cell neuroendocrine tumours in the gastric body/fundus of patients with autoimmune gastritis — driven by chronic hypergastrinaemia stimulating ECL cell proliferation. Type 1 NETs are indolent and rarely metastasise.",
+        "severity": "Mild to Moderate — generally indolent",
+        "management": "Endoscopic resection of tumours >1 cm; endoscopic surveillance every 1-2 years in autoimmune gastritis; antrectomy (removing gastrin-producing antrum) can reduce hypergastrinaemia and cause carcinoid regression; somatostatin analogues for unresectable cases"
+      }
+    ],
+
+    "special_populations": {
+      "gastritis_in_elderly": {
+        "key_points": [
+          "H. pylori gastritis has been present for longer in elderly — higher prevalence of atrophic gastritis, intestinal metaplasia, and gastric cancer; OLGA staging critical",
+          "Autoimmune gastritis more prevalent in elderly — screen with anti-parietal cell antibodies and annual B12/FBC",
+          "NSAID use most common in elderly — highest risk of NSAID gastropathy and peptic ulcer; NSAID use for osteoarthritis often unacknowledged; always add PPI",
+          "Polypharmacy — multiple drug-drug interactions with PPIs; excessive PPI use contributes to falls risk (hypomagnesaemia causes tetany; bone fracture risk)",
+          "Cognitive symptoms from B12 deficiency in elderly may be misattributed to dementia — always check B12 in any elderly patient with cognitive decline",
+          "Lower threshold for endoscopy — any new or changed symptoms in patient over 55 years = endoscopy"
+        ]
+      },
+      "gastritis_in_pregnancy": {
+        "key_points": [
+          "H. pylori eradication should be DEFERRED until after delivery — most antibiotics in H. pylori regimens (clarithromycin, tetracycline, metronidazole in first trimester) have pregnancy concerns",
+          "Gastritis symptoms (nausea, vomiting, epigastric discomfort) are extremely common in pregnancy from hormonal changes (progesterone, oestrogen) independent of true gastritis",
+          "PPIs are generally considered safe in pregnancy (Category B) — omeprazole and esomeprazole preferred based on largest dataset; use when benefits outweigh risk",
+          "Sucralfate is the safest mucosal protective agent in pregnancy",
+          "Antacids: calcium carbonate (Tums) — also provides calcium supplementation; magnesium hydroxide — safe; aluminium hydroxide — short-term OK; sodium bicarbonate (Eno) — high sodium, avoid in hypertensive pregnancies",
+          "Iron deficiency from H. pylori gastritis may worsen in pregnancy — oral iron + Vitamin C for absorption enhancement"
+        ]
+      },
+      "h_pylori_gastritis_in_india": {
+        "key_points": [
+          "India has 70-80% H. pylori seroprevalence — effectively a universal infection in adults acquired in childhood; most have had asymptomatic chronic gastritis for decades",
+          "Test-and-treat strategy: in Indian primary care, any patient with dyspepsia, gastric/duodenal ulcer, unexplained iron deficiency, or ITP should be tested for H. pylori using UBT or stool antigen test",
+          "ANTIBIOTIC RESISTANCE in Indian H. pylori: clarithromycin resistance 15-30%; metronidazole resistance 50-80%; fluoroquinolone resistance rising; bismuth quadruple therapy (BQT) is increasingly the preferred first-line in India given these resistance rates",
+          "COST: H. pylori eradication in India is highly affordable — generic PPI (Rs 3-5/tablet) + generic antibiotics total regimen costs Rs 500-1,500 for a 14-day course; accessible at all hospital pharmacies",
+          "Gangetic belt gastric cancer: UP, Bihar, West Bengal — test and treat H. pylori at any age; even asymptomatic H. pylori-infected individuals in high-risk areas should be offered eradication (cancer prevention rationale)"
+        ]
+      },
+      "gastritis_in_immunocompromised": {
+        "key_points": [
+          "CMV (cytomegalovirus) gastritis: occurs in severely immunosuppressed patients (HIV with CD4 <50, post-transplant on heavy immunosuppression); presents with bleeding gastric ulcers; diagnosis by gastric biopsy (viral inclusions, CMV immunohistochemistry); treatment: IV ganciclovir 5 mg/kg twice daily × 21 days; maintenance with valganciclovir",
+          "Cryptosporidiosis, microsporidiosis — can cause gastritis in AIDS; treat underlying HIV with ART",
+          "H. pylori gastritis in HIV: eradication with standard regimens is appropriate but eradication rates are lower; CagA-positive strains cause more severe atrophy in HIV-infected individuals despite low CD4 counts (paradoxically less H. pylori gastric inflammation with very low CD4 — immune system needed for the inflammatory response)",
+          "Post-transplant immunosuppression: H. pylori must be eradicated before transplantation (reduces post-transplant gastric complications and CMV risk)"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "H. pylori Vaccine — Under Development",
+        "status": "Phase 3 clinical trials completed in China (Bhm-H. pylori vaccine — oral recombinant); some protective efficacy demonstrated; not yet commercially available; potential transformational public health impact if licensed",
+        "reason": "A prophylactic H. pylori vaccine would prevent acquisition of H. pylori, preventing the entire Correa cascade (chronic gastritis → cancer) from initiating; WHO has identified H. pylori vaccination as a priority for gastric cancer prevention globally",
+        "india_relevance": "Given 70-80% seroprevalence in India, an H. pylori vaccine could prevent a substantial proportion of India's gastric cancer burden; research ongoing"
+      },
+      {
+        "vaccine": "Hepatitis A Vaccine",
+        "frequency": "2-dose series (0 and 6-18 months)",
+        "reason": "HAV causes acute hepatitis with significant gastric symptoms (nausea, vomiting, anorexia) in the pre-icteric phase, exacerbating underlying gastritis; patients with chronic atrophic gastritis (who have increased gastric cancer risk and associated immunological vulnerability) benefit from HAV protection. HAV + pre-existing chronic liver disease is particularly dangerous.",
+        "recommendation": "All patients with chronic gastritis; travellers to endemic areas; food handlers"
+      },
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "reason": "Influenza causes significant upper GI symptoms exacerbating underlying gastritis; influenza illness triggers NSAID and aspirin use for myalgia — worsening NSAID gastropathy in patients with pre-existing gastritis; annual vaccination reduces influenza-triggered NSAID use",
+        "recommendation": "Annual vaccination for all patients with chronic gastritis or atrophic gastritis"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "reason": "COVID-19 infection causes significant GI inflammation including gastritis; post-COVID GI symptoms including nausea and epigastric discomfort can persist and exacerbate underlying gastritis; vaccination reduces COVID-19 severity and post-COVID GI sequelae",
+        "recommendation": "Follow national vaccination schedule"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine",
+        "reason": "Long-term PPI use (common in chronic gastritis management) increases community-acquired pneumonia risk by reducing the gastric acid barrier — allowing colonisation of the oropharynx and aspiration; pneumococcal vaccination reduces this PPI-associated pneumonia risk; important in elderly gastritis patients on PPIs",
+        "recommendation": "All adults >65 years on long-term PPI therapy; immunocompromised gastritis patients"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Persistent epigastric pain or discomfort lasting more than 2-3 weeks — even if mild; requires H. pylori testing and clinical assessment",
+      "Any haematemesis (vomiting blood) or melaena (black tarry stools) — URGENT SAME DAY hospital assessment",
+      "Alarm features — unintentional weight loss (>3 kg), progressive dysphagia, iron deficiency anaemia, persistent vomiting — URGENT ENDOSCOPY within 2 weeks",
+      "Any new or changed gastric symptoms in a patient over 55 years — mandates endoscopy",
+      "Symptoms persisting despite 4-8 weeks of PPI therapy — possible H. pylori, atrophic gastritis, or other cause; further investigation needed",
+      "Known H. pylori positive but never treated — test and treat is recommended; seek gastroenterology or GP review",
+      "Tingling or numbness in hands and feet with fatigue and pale appearance — possible B12 deficiency from autoimmune gastritis; blood tests urgently needed",
+      "Family history of gastric cancer or pernicious anaemia with any gastric symptoms — should have H. pylori testing and consideration of earlier endoscopy",
+      "Patient with autoimmune thyroid disease, Type 1 diabetes, Addison's disease, or vitiligo with any gastric symptoms — screen for autoimmune gastritis (anti-parietal cell antibodies, serum gastrin, B12)",
+      "Long-term NSAID or aspirin user with new epigastric symptoms — NSAID gastropathy; may need endoscopy; definitely needs PPI co-prescription and consideration of switching to paracetamol",
+      "Patient on long-term PPIs — annual review of indication; B12 and magnesium monitoring; stepdown or discontinuation attempt if appropriate",
+      "ATROPHIC GASTRITIS known from previous endoscopy — follow surveillance schedule (OLGA Stage III-IV: every 3 years)"
+    ],
+
+    "emergency_signs": [
+      "Haematemesis — vomiting fresh red blood or coffee-ground material — UPPER GI HAEMORRHAGE FROM GASTRIC EROSION OR ULCER — CALL EMERGENCY SERVICES (102/112); IV access, IV PPI, urgent endoscopy within 24 hours",
+      "Melaena — black, tarry, foul-smelling stools — upper GI bleeding — EMERGENCY; even without haematemesis",
+      "Haemodynamic instability with gastric symptoms — tachycardia >120 bpm, hypotension (systolic BP <90), dizziness, feeling faint — HAEMORRHAGIC SHOCK from bleeding gastritis — CALL 102/112",
+      "Sudden severe 'worst ever' epigastric pain with board-like rigid abdomen — PEPTIC ULCER PERFORATION — SURGICAL EMERGENCY; call 102/112",
+      "Progressive ascending weakness, balance problems, tingling, and cognitive changes in a patient with known pernicious anaemia or autoimmune gastritis — SUBACUTE COMBINED DEGENERATION OF SPINAL CORD from B12 deficiency — URGENT NEUROLOGICAL ASSESSMENT; start IM B12 immediately",
+      "Profound pallor, shortness of breath at rest, palpitations in a patient with atrophic gastritis — SEVERE MEGALOBLASTIC ANAEMIA from pernicious anaemia — urgent haematology/medical review; IM B12 urgently",
+      "Patient on long-term PPI with muscle cramps, cardiac arrhythmia, and numbness — SEVERE HYPOMAGNESAEMIA from PPI use — EMERGENCY cardiac monitoring; IV/oral magnesium replacement; stop PPI"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is the difference between gastritis and an ulcer? Are they the same thing?",
+        "answer": "Gastritis and peptic ulcer are related but distinct conditions. Gastritis refers to inflammation of the stomach lining (mucosa) — the innermost layer of the stomach. The inflammation may be superficial and the mucosa remains largely intact. A peptic ulcer (gastric or duodenal ulcer) is a deeper wound — a break in the lining that penetrates through the mucosa into the muscle layers below. Think of gastritis as diffuse redness and irritation of the stomach wallpaper, while a peptic ulcer is a specific hole or crater in that same wallpaper. Both are very commonly caused by H. pylori and NSAIDs. The symptoms overlap — epigastric pain, nausea, and dyspepsia — but ulcer pain tends to be more severe, more specifically localised, often wakes patients at night, and may be relieved by eating (duodenal ulcer) or worsened by eating (gastric ulcer). Gastritis is diagnosed by endoscopy and biopsy; ulcers are diagnosed by endoscopy with visible mucosal defect. Both require treatment — H. pylori eradication is the key for both in the majority of cases."
+      },
+      {
+        "question": "My endoscopy showed 'chronic gastritis with H. pylori' — what does this mean and what should I do?",
+        "answer": "This is one of the most common endoscopy findings in India — because approximately 70-80% of Indians are infected with H. pylori, a bacterium that colonises the stomach and causes chronic inflammation. 'Chronic gastritis with H. pylori' means the stomach lining shows persistent inflammation driven by H. pylori infection. The most important thing to do is ERADICATE H. PYLORI with a 10-14 day course of antibiotics plus a stomach acid tablet (PPI). The standard treatment in India is the bismuth quadruple therapy: PPI (omeprazole or pantoprazole) twice daily + bismuth subcitrate 4 times daily + metronidazole 3-4 times daily + tetracycline 4 times daily for 14 days. After completing treatment — CONFIRM ERADICATION with a urea breath test (UBT) at least 4 weeks after finishing the antibiotics (and 2 weeks after stopping the PPI). Do NOT assume treatment worked without this test. Successful H. pylori eradication resolves the gastric inflammation, heals ulcers, and reduces gastric cancer risk by approximately 50%."
+      },
+      {
+        "question": "I have been taking an omeprazole (stomach acid tablet) every day for years. Do I need it? Can I stop?",
+        "answer": "This is one of the most important medication questions in gastroenterology — because PPIs (proton pump inhibitors like omeprazole, pantoprazole, rabeprazole) are massively overprescribed in India. Many patients are on lifelong PPIs prescribed years ago without a clear documented reason. Long-term PPI use is not harmless — it can cause Vitamin B12 deficiency (leading to anaemia and nerve damage), magnesium deficiency, increased risk of C. difficile diarrhoea, reduced calcium absorption, and possibly renal problems with very long use. You should ask your doctor why you are on a PPI and whether there is still a reason. Common valid reasons: active peptic ulcer disease; GERD with confirmed oesophagitis; long-term NSAID use; H. pylori eradication treatment (short course). If there is no clear ongoing indication, a PPI 'holiday' or step-down can be tried. When stopping long-term PPIs — DO NOT STOP ABRUPTLY — taper over 2-4 weeks (reduce to every other day, then stop) to avoid rebound acid hypersecretion which can cause temporary worsening of heartburn and trick you into thinking you still need the PPI."
+      },
+      {
+        "question": "What is autoimmune gastritis and pernicious anaemia? How is it treated?",
+        "answer": "Autoimmune gastritis is a condition where the immune system mistakenly attacks the stomach's acid-producing parietal cells — the same cells that produce intrinsic factor (a protein essential for absorbing Vitamin B12 from food). When parietal cells are destroyed: (1) The stomach can no longer produce acid (achlorhydria); (2) Intrinsic factor is absent, so Vitamin B12 from food cannot be absorbed — resulting in pernicious anaemia (a specific type of B12 deficiency anaemia). Autoimmune gastritis is more common in women, typically diagnosed after age 40, and is associated with other autoimmune conditions (hypothyroidism, type 1 diabetes, vitiligo). Treatment: Vitamin B12 injections (hydroxocobalamin — 1000 mcg into a muscle) must be given LIFELONG — every 3 months — because oral B12 cannot be absorbed without intrinsic factor. Without treatment, pernicious anaemia causes: severe fatigue, breathlessness, and eventually irreversible neurological damage (numbness, weakness, balance problems from spinal cord damage). Regular endoscopic surveillance every 3-5 years is needed because autoimmune gastritis carries a small risk of stomach cancer and a type of benign stomach tumour called a carcinoid. Anti-parietal cell antibodies and anti-intrinsic factor antibodies in blood tests confirm the diagnosis."
+      },
+      {
+        "question": "Can food cure gastritis? Are there any home remedies that actually work?",
+        "answer": "No food or home remedy can cure gastritis caused by H. pylori (the most common cause) or autoimmune gastritis — these require specific medical treatment (antibiotics or B12 injections respectively). However, several dietary choices have genuine scientific support for reducing gastritis symptoms, slowing disease progression, and potentially reducing cancer risk: SULFORAPHANE in broccoli and broccoli sprouts — laboratory and some clinical evidence of anti-H. pylori activity; GARLIC — allicin inhibits H. pylori urease and adhesion; GINGER — blocks H. pylori's binding to gastric epithelial cells; TURMERIC (with black pepper) — curcumin inhibits H. pylori inflammatory signalling; AMLA (Indian gooseberry) — very high Vitamin C which reduces gastric oxidative stress; PLAIN YOGURT — probiotics reduce H. pylori density and improve antibiotic side effects during eradication. The most evidence-based dietary change for REDUCING GASTRIC CANCER RISK (the most dangerous complication of chronic gastritis) is reducing salt intake — high salt significantly accelerates progression from gastritis to cancer. These dietary strategies are complementary to medical treatment, not replacements."
+      },
+      {
+        "question": "My biopsy report mentions 'intestinal metaplasia' — is this cancer? Should I be worried?",
+        "answer": "Intestinal metaplasia is NOT cancer — it is a precancerous change (a premalignant condition) meaning the normal stomach lining cells have been replaced by intestinal-type cells. This is like an early warning that the stomach has been under stress (from H. pylori infection, dietary factors, or inflammation) for a long time. Whether intestinal metaplasia is concerning depends on its EXTENT and TYPE: if it is limited to the antrum (lower part of the stomach) and is the 'complete' (Type I) variety — the risk is relatively low; if it involves both the antrum and body of the stomach (extensive) and is the 'incomplete' (Type II/III) variety — the risk of eventual cancer is higher and regular endoscopic surveillance is needed. The most important step is H. pylori eradication if H. pylori is still present — this reduces further progression. Most gastroenterologists recommend endoscopic surveillance every 3 years for patients with extensive intestinal metaplasia (OLGA Stage III-IV). Do not panic — the progression from intestinal metaplasia to cancer is very slow (10-20+ years) and regular surveillance catches any progression at an early, treatable stage."
+      }
+    ]
+  }
+}

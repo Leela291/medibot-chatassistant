@@ -1,28 +1,20 @@
-[
-  {
-    "disease_identity": {
-      "name": "Common Cold",
-      "also_known_as": [
-        "upper respiratory infection (URI)",
-        "upper respiratory tract infection (URTI)",
-        "acute nasopharyngitis",
-        "coryza",
-        "viral rhinitis",
-        "head cold",
-        "acute nasal catarrh",
-        "acute rhinitis",
-        "Cold"
-      ],
-      "definition": "The common cold is a mild, self-limiting viral infection of the upper respiratory tract — including the nose, nasal passages, sinuses, throat (pharynx), larynx (voice box), and windpipe (trachea). It is caused by more than 200 different respiratory viruses and is the most frequent acute illness in humans worldwide.",
-      "nice_definition": "A mild, self-limiting, upper respiratory tract infection characterized by nasal stuffiness and discharge, sneezing, sore throat, and cough.",
-      "disease_type": "viral upper respiratory tract infection",
-      "self_limiting": true,
-      "curable": false,
-      "vaccine_available": false,
-      "antibiotic_effective": false,
-      "etymology": "The term 'common cold' has been in use for centuries. It was historically associated with the belief that exposure to cold temperatures caused the illness — a misconception that persisted until respiratory viruses such as rhinoviruses were identified in the 1950s as the true causative agents.",
-      "historical_note": "The infectious cause of the common cold was formally recognised only after the 1950s discovery of rhinoviruses, providing the first scientific explanation for a disease that had been treated with theories of humoral imbalance, chilling, and miasma since ancient Greek times."
-    },
+{
+  "disease": {
+    "id": "DIS-CC-001",
+    "name": "Common Cold",
+    "scientific_name": "Acute Viral Upper Respiratory Tract Infection",
+    "aliases": [
+      "upper respiratory infection (URI)",
+      "upper respiratory tract infection (URTI)",
+      "acute nasopharyngitis",
+      "coryza",
+      "viral rhinitis",
+      "head cold",
+      "acute nasal catarrh",
+      "acute rhinitis",
+      "Cold"
+    ],
+    "category": "viral upper respiratory tract infection",
     "overview": {
       "summary": "The common cold is a syndrome of familiar upper respiratory symptoms caused by any one of more than 200 respiratory viruses. It is the most common human disease and, because of the large number of causative viruses, one of the most complex. It is self-diagnosing, self-treating, and self-limiting — most episodes resolve within 7–10 days. Despite its mildness, it carries enormous economic and social burden through missed work, school absences, and over-the-counter medicine expenditure.",
       "global_burden": {
@@ -54,7 +46,227 @@
         "study_evidence": "A study of 214 healthy individuals aged 3–63 years collected nasopharyngeal swabs twice weekly for two years. Of 4,215 samples, 737 tested positive for one or multiple respiratory viruses. Among positive results, 69–74% were classified as asymptomatic."
       }
     },
-    "causative_agents": {
+    "anatomy_and_physiology": {
+      "overview": "The common cold is a syndrome of symptoms caused by the innate immune response to viral infection of the upper respiratory tract epithelium, not by direct tissue damage from the virus itself. Symptoms vary from person to person and depend on the infecting virus and the host's immune response.",
+      "viral_entry": {
+        "rhinovirus_entry": "Epithelial cells of the nasopharynx carry intercellular adhesion molecule-1 (ICAM-1) receptors. Rhinovirus binds these receptors to enter cells. Nasal epithelial cells do NOT have these receptors — explaining why rhinovirus causes minimal nasal mucosa destruction but consistent nasopharyngeal damage.",
+        "other_viruses": "Different viruses use different entry mechanisms and receptors"
+      },
+      "inflammatory_cascade": {
+        "step_1": "Virus infects respiratory epithelium and replicates",
+        "step_2": "Pattern Recognition Receptors (PRRs) detect viral RNA or DNA",
+        "step_3": "Activation of NF-κB signalling pathway",
+        "step_4": "Release of cytokines: interferons, IL-6, IL-8, TNF-alpha",
+        "step_5": "Recruitment of immune cells (neutrophils, macrophages, lymphocytes)",
+        "step_6": "Local inflammatory mediators generated: bradykinin, prostaglandins",
+        "step_7": "Nasal blood vessel dilation, mucosal oedema, increased secretion",
+        "step_8": "Systemic cytokine circulation producing fever, headache, myalgia, fatigue"
+      },
+      "nasal_mucosa_changes": {
+        "rhinovirus_infection": "Characterised by oedema and hyperaemia with transudative rhinorrhoea, WITHOUT direct damage to the columnar epithelium",
+        "influenza_contrast": "Influenza, adenoviruses, and parainfluenza viruses cause more severe cytopathic effects on respiratory epithelium",
+        "sequence": [
+          "Oedema of submucosal layers",
+          "Separation of epithelial cells by oedema fluid",
+          "Surface cells loosen and slough off",
+          "Necrotic zone develops below surface",
+          "Entire epithelium may disintegrate in severe cases",
+          "Cell regeneration begins from basement membrane"
+        ]
+      },
+      "mucopurulent_discharge": {
+        "appearance": "Yellow or green nasal discharge is NORMAL as the cold progresses",
+        "cause": "Influx of neutrophils and macrophages; does NOT indicate bacterial infection requiring antibiotics",
+        "clinical_implication": "Presence of coloured mucus is not a reason to prescribe antibiotics"
+      },
+      "eustachian_tube_effects": {
+        "findings": "2 days after rhinoviral infection, eustachian tube function was reduced to 50% of usual potency in studies",
+        "middle_ear_effect": "20% of infected persons had significant pressure changes in the middle ear",
+        "implication": "Creates conditions for secondary bacterial otitis media"
+      }
+    },
+    "types": [
+      {
+        "name": "Rhinovirus (HRV)",
+        "abbreviation": "HRV",
+        "nucleic_acid": "RNA",
+        "structure": "non-enveloped icosahedral capsid",
+        "classification": "Species A, B, C with more than 100 serotypes",
+        "frequency_of_colds": "more than 50% of all adult colds",
+        "seasonal_peak": "early autumn and late spring",
+        "severity": "usually mild, rarely causes lower respiratory disease in healthy adults",
+        "notes": [
+          "Most common cause of common cold worldwide",
+          "More than 100 serotypes identified",
+          "Can be considered the most common infection of humans globally",
+          "Enters cells via ICAM-1 receptor on nasopharyngeal epithelium",
+          "Causes minimal nasal mucosa disruption but consistent nasopharyngeal damage",
+          "In children, a significant trigger for asthma exacerbations"
+        ]
+      },
+      {
+        "name": "Seasonal Coronavirus",
+        "abbreviation": "HCoV",
+        "nucleic_acid": "RNA",
+        "structure": "enveloped",
+        "types": [
+          "OC43",
+          "229E",
+          "NL63",
+          "HKU1"
+        ],
+        "frequency_of_colds": "15–21% of colds",
+        "seasonal_peak": "winter and spring",
+        "notes": [
+          "Produces clinical picture similar to rhinovirus",
+          "More likely to produce myalgias, headaches, and malaise than rhinoviruses",
+          "More commonly produces fever than rhinovirus",
+          "With increasing immunity to SARS-CoV-2 worldwide, COVID-19 may eventually evolve to cause a common cold-like illness"
+        ]
+      },
+      {
+        "name": "Respiratory Syncytial Virus",
+        "abbreviation": "RSV",
+        "nucleic_acid": "RNA",
+        "structure": "enveloped",
+        "groups": [
+          "A",
+          "B"
+        ],
+        "frequency_of_colds": "8–10%",
+        "seasonal_peak": "winter with peak in January",
+        "notes": [
+          "Causes mild cold-like symptoms in older children and adults",
+          "A major cause of bronchiolitis and lower respiratory tract infections in infants under 2 years",
+          "RSV type A associated with more severe infections",
+          "In 2015, estimated 33.1 million episodes globally in children under 5, causing 3.2 million hospital admissions and over 11,800 deaths",
+          "Significant cause of morbidity and mortality in the elderly (estimated 1.2 million deaths in elderly from RSV and other respiratory viruses in 2015)",
+          "Immunity to RSV is short-lived, explaining repeated infections throughout life",
+          "RSV vaccine (Abrysvo) was approved by FDA in May 2023 for individuals 60 years and older"
+        ]
+      },
+      {
+        "name": "Parainfluenza Virus",
+        "abbreviation": "HPIV",
+        "nucleic_acid": "RNA",
+        "structure": "enveloped",
+        "types": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "frequency_of_colds": "10%",
+        "seasonal_peaks": {
+          "types_1_2": "autumn",
+          "type_3": "late spring"
+        },
+        "notes": [
+          "Causes croup and bronchiolitis pattern in young children",
+          "Milder cold symptoms in older individuals and adults",
+          "Produces more fever than rhinovirus or RSV",
+          "12% of isolates in younger population, 2–7.5% in older population in studies"
+        ]
+      },
+      {
+        "name": "Influenza Virus",
+        "abbreviation": "Flu",
+        "nucleic_acid": "RNA",
+        "structure": "enveloped",
+        "types": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "notes": [
+          "Usually produces a pattern of respiratory illness distinctly different from the common cold",
+          "Flu causes high fever, headache, body aches — unlike the milder nasal-centred cold",
+          "Third most common cause in some community studies",
+          "Key clinical distinction: influenza has high fever and myalgia; cold does not"
+        ]
+      },
+      {
+        "name": "Adenovirus",
+        "abbreviation": "ADV",
+        "nucleic_acid": "DNA",
+        "structure": "non-enveloped icosahedral capsid",
+        "serotypes": "41 recognized serotypes with more than 100 subtypes",
+        "frequency_of_colds": "5%",
+        "seasonal_peak": "winter and spring",
+        "notes": [
+          "Well known for producing conjunctivitis and laryngitis alongside cold symptoms",
+          "Types 3 and 7 cause pharyngoconjunctival fever — severe conjunctivitis and pharyngitis with minor cold symptoms",
+          "Pharyngoconjunctival fever most often found in summer when swimming in non-chlorinated pools",
+          "Genetic heterogeneity of adenoviruses makes population studies difficult"
+        ]
+      },
+      {
+        "name": "Human Metapneumovirus",
+        "abbreviation": "HMPV",
+        "nucleic_acid": "RNA",
+        "structure": "enveloped",
+        "groups": [
+          "A",
+          "B"
+        ],
+        "discovery_year": 2001,
+        "notes": [
+          "Discovered in 2001 by researchers in the Netherlands in stored nasopharyngeal samples from children",
+          "Had been in circulation for approximately 65 years before discovery",
+          "Nearly every child is infected by age 5",
+          "Can cause severe lower respiratory illness in infants and immunocompromised individuals"
+        ]
+      },
+      {
+        "name": "Human Bocavirus",
+        "abbreviation": "HBoV",
+        "nucleic_acid": "DNA",
+        "structure": "non-enveloped icosahedral capsid",
+        "lineages": 2,
+        "discovery_year": 2005,
+        "notes": [
+          "Discovered in 2005 from nasopharyngeal samples in children",
+          "Shown to cause common cold in children"
+        ]
+      },
+      {
+        "name": "Echovirus",
+        "classification": "Enterovirus",
+        "frequency_of_colds": "classic summer disease",
+        "notes": [
+          "Causes coryza — acute rhinitis with minimal other symptoms",
+          "Associated with summer cold-like episodes"
+        ]
+      },
+      {
+        "name": "Coxsackievirus",
+        "classification": "Enterovirus",
+        "notes": [
+          "Well known for causing epidemic cervical myalgia, pleurisy, hand-foot-mouth disease, and herpangina alongside respiratory infections",
+          "Coxsackievirus type A21 can be transmitted via airborne droplets across a room",
+          "Associated with summer cold outbreaks"
+        ]
+      },
+      {
+        "name": "SARS-CoV-2 (Pandemic Coronavirus)",
+        "abbreviation": "SARS-CoV-2",
+        "notes": [
+          "Can cause cold-like symptoms especially with high population immunity",
+          "Pandemic caused by SARS-CoV-2 led to a revolution in respiratory virus research",
+          "With increased global immunity, COVID-19 may evolve toward a common cold pattern"
+        ]
+      },
+      {
+        "name": "Enterovirus D68",
+        "abbreviation": "EV-D68",
+        "notes": [
+          "Associated with respiratory illness and potential severe neurological complications",
+          "Listed by CDC as a cause of cold-like symptoms in the United States"
+        ]
+      }
+    ],
+    "causes": {
       "total_viruses_capable": "more than 200",
       "primary_family": "Rhinoviridae",
       "note": "All known respiratory viruses are able to produce the illness complex recognised as the common cold.",
@@ -240,79 +452,39 @@
         }
       ]
     },
-    "epidemiology": {
-      "global_frequency": "The most frequent acute illness in the United States and throughout the industrialized world",
-      "incidence_by_age": {
-        "infants_and_young_children": "6–10 colds per year",
-        "school_age_children": "6–8 per year",
-        "adults": "2–4 per year",
-        "elderly": "fewer but more severe",
-        "note": "Incidence inversely related to age due to accumulating immunity from repeated exposures"
-      },
-      "seasonality": {
-        "year_round": true,
-        "peak_seasons": "autumn and winter in temperate climates",
-        "tropical_regions": "during rainy season",
-        "reason_for_winter_peak": [
-          "people spend more time indoors in close contact with others",
-          "cold air may impair local nasal defences by slowing mucociliary clearance",
-          "reduced vitamin D levels in winter may affect immune function",
-          "lower humidity may favour virus survival"
+    "transmission": {
+      "primary": "direct hand-to-hand contact — transfer of virus from infected person's hands to mucous membranes of susceptible person",
+      "secondary": "indirect contact via contaminated surfaces (fomites)",
+      "tertiary": "inhalation of respiratory aerosol droplets from coughing or sneezing within close range",
+      "most_likely_route": "direct hand contact",
+      "fomite_survival": {
+        "on_hands": "at least 2 hours",
+        "on_surfaces": "several hours",
+        "examples_of_contaminated_objects": [
+          "door handles",
+          "phones",
+          "pens",
+          "coffee cups",
+          "playing cards",
+          "countertops"
         ],
-        "virus_specific_peaks": {
-          "rhinovirus": "early autumn and late spring",
-          "RSV": "winter, peak January",
-          "parainfluenza_types_1_2": "autumn",
-          "parainfluenza_type_3": "late spring",
-          "adenovirus_coronavirus": "winter and spring",
-          "echovirus_coxsackievirus": "summer"
-        }
+        "rhinovirus_recovery_from_hands": "40–90% of hands of infected persons",
+        "rhinovirus_recovery_from_objects": "6–15% of doorknobs and coffee cups"
       },
-      "transmission_routes": {
-        "primary": "direct hand-to-hand contact — transfer of virus from infected person's hands to mucous membranes of susceptible person",
-        "secondary": "indirect contact via contaminated surfaces (fomites)",
-        "tertiary": "inhalation of respiratory aerosol droplets from coughing or sneezing within close range",
-        "most_likely_route": "direct hand contact",
-        "fomite_survival": {
-          "on_hands": "at least 2 hours",
-          "on_surfaces": "several hours",
-          "examples_of_contaminated_objects": [
-            "door handles",
-            "phones",
-            "pens",
-            "coffee cups",
-            "playing cards",
-            "countertops"
-          ],
-          "rhinovirus_recovery_from_hands": "40–90% of hands of infected persons",
-          "rhinovirus_recovery_from_objects": "6–15% of doorknobs and coffee cups"
-        },
-        "droplet_route": "possible when infected person coughs or sneezes and recipient is within a few feet",
-        "kissing": "low risk — only 1 of 16 susceptible recipients infected in a study of 1.5-minute kisses; saliva has little detectable virus 90% of the time",
-        "recirculated_air": "studies of commercial airliners show no difference in cold incidence with recirculated vs fresh air ventilation",
-        "contagiousness_period": {
-          "peak": "second day of illness when viral shedding is highest",
-          "duration": "low level viral shedding may persist for up to 2 weeks",
-          "incubation_note": "virus present in nasal washings during incubation period before symptoms begin"
-        }
-      },
-      "special_transmission_note": "The family is the major site for spread of rhinoviruses. The pool of infected donors is often the school population. Virus is then brought home and spread through the family."
+      "droplet_route": "possible when infected person coughs or sneezes and recipient is within a few feet",
+      "kissing": "low risk — only 1 of 16 susceptible recipients infected in a study of 1.5-minute kisses; saliva has little detectable virus 90% of the time",
+      "recirculated_air": "studies of commercial airliners show no difference in cold incidence with recirculated vs fresh air ventilation",
+      "contagiousness_period": {
+        "peak": "second day of illness when viral shedding is highest",
+        "duration": "low level viral shedding may persist for up to 2 weeks",
+        "incubation_note": "virus present in nasal washings during incubation period before symptoms begin"
+      }
     },
     "incubation_period": {
       "range": "10 hours to 3 days",
       "typical": "24–72 hours",
       "earliest_possible": "10–12 hours after exposure",
       "note": "Symptoms usually show up approximately 2 days after a person becomes infected"
-    },
-    "symptom_duration": {
-      "typical": "3–10 days",
-      "usual_range": "less than 1 week",
-      "extended_cases": "up to 2–3 weeks in some people",
-      "rapid_resolution_possible": "the cold may abort after only 1 day",
-      "specific_symptom_timeline": {
-        "sore_throat_sneezing_drowsiness": "decrease significantly by day 2–3",
-        "cough_nasal_discharge_postnasal_drip_throat_clearing": "may still be present on day 14 after onset"
-      }
     },
     "symptoms": {
       "common_symptoms": [
@@ -560,45 +732,6 @@
         "caution": "This does not constitute a recommendation to consume alcohol as prevention"
       }
     },
-    "pathophysiology": {
-      "overview": "The common cold is a syndrome of symptoms caused by the innate immune response to viral infection of the upper respiratory tract epithelium, not by direct tissue damage from the virus itself. Symptoms vary from person to person and depend on the infecting virus and the host's immune response.",
-      "viral_entry": {
-        "rhinovirus_entry": "Epithelial cells of the nasopharynx carry intercellular adhesion molecule-1 (ICAM-1) receptors. Rhinovirus binds these receptors to enter cells. Nasal epithelial cells do NOT have these receptors — explaining why rhinovirus causes minimal nasal mucosa destruction but consistent nasopharyngeal damage.",
-        "other_viruses": "Different viruses use different entry mechanisms and receptors"
-      },
-      "inflammatory_cascade": {
-        "step_1": "Virus infects respiratory epithelium and replicates",
-        "step_2": "Pattern Recognition Receptors (PRRs) detect viral RNA or DNA",
-        "step_3": "Activation of NF-κB signalling pathway",
-        "step_4": "Release of cytokines: interferons, IL-6, IL-8, TNF-alpha",
-        "step_5": "Recruitment of immune cells (neutrophils, macrophages, lymphocytes)",
-        "step_6": "Local inflammatory mediators generated: bradykinin, prostaglandins",
-        "step_7": "Nasal blood vessel dilation, mucosal oedema, increased secretion",
-        "step_8": "Systemic cytokine circulation producing fever, headache, myalgia, fatigue"
-      },
-      "nasal_mucosa_changes": {
-        "rhinovirus_infection": "Characterised by oedema and hyperaemia with transudative rhinorrhoea, WITHOUT direct damage to the columnar epithelium",
-        "influenza_contrast": "Influenza, adenoviruses, and parainfluenza viruses cause more severe cytopathic effects on respiratory epithelium",
-        "sequence": [
-          "Oedema of submucosal layers",
-          "Separation of epithelial cells by oedema fluid",
-          "Surface cells loosen and slough off",
-          "Necrotic zone develops below surface",
-          "Entire epithelium may disintegrate in severe cases",
-          "Cell regeneration begins from basement membrane"
-        ]
-      },
-      "mucopurulent_discharge": {
-        "appearance": "Yellow or green nasal discharge is NORMAL as the cold progresses",
-        "cause": "Influx of neutrophils and macrophages; does NOT indicate bacterial infection requiring antibiotics",
-        "clinical_implication": "Presence of coloured mucus is not a reason to prescribe antibiotics"
-      },
-      "eustachian_tube_effects": {
-        "findings": "2 days after rhinoviral infection, eustachian tube function was reduced to 50% of usual potency in studies",
-        "middle_ear_effect": "20% of infected persons had significant pressure changes in the middle ear",
-        "implication": "Creates conditions for secondary bacterial otitis media"
-      }
-    },
     "diagnosis": {
       "clinical_diagnosis": {
         "basis": "Symptoms and observed signs — no laboratory tests required for typical uncomplicated cases",
@@ -714,101 +847,6 @@
           "gold_standard_role": "viral culture remains important gold standard despite advances in antigen detection"
         }
       }
-    },
-    "complications": {
-      "overview": "The common cold itself is of itself harmless in most cases, but bacterial invasion may follow the initial viral infection. These secondary invaders may produce disorders of serious consequence. All respiratory viruses are associated with causing common cold syndrome, but mild illness can develop into more serious lower respiratory tract infections.",
-      "complications_list": [
-        {
-          "complication": "Acute otitis media (middle ear infection)",
-          "frequency": "most common complication of the common cold",
-          "mechanism": "Cold causes problems with drainage and pressure regulation of the middle ear through eustachian tube dysfunction; allows secondary bacterial infection",
-          "evidence": "In one study, more than 90% of patients with otitis media had cold symptoms that were suspected to be virally induced; middle ear fluid contained culturable bacteria in 50–70% of cases",
-          "risk_group": "young children"
-        },
-        {
-          "complication": "Acute bacterial sinusitis",
-          "frequency": "rare complication in adults",
-          "mechanism": "Viral sinusitis may be followed by secondary bacterial infection if mucociliary clearance is impaired",
-          "note": "Viral sinusitis (more common) will resolve within 3 weeks without antibiotics; bacterial sinusitis presents with worsening facial pain after initial improvement"
-        },
-        {
-          "complication": "Viral sinusitis",
-          "frequency": "more common than bacterial sinusitis",
-          "resolution": "within 3 weeks without antibiotics"
-        },
-        {
-          "complication": "Laryngitis",
-          "mechanism": "Inflammation of the larynx (voice box) causing hoarseness or voice loss"
-        },
-        {
-          "complication": "Tracheitis",
-          "mechanism": "Inflammation of the membrane lining the trachea (windpipe)"
-        },
-        {
-          "complication": "Bronchitis",
-          "mechanism": "Inflammation of the bronchial membranes; may develop if virus spreads to lower airways"
-        },
-        {
-          "complication": "Bronchiolitis",
-          "frequency": "mainly in infants under 2 years from RSV or parainfluenza",
-          "notes": [
-            "RSV can infect lungs especially in children, older adults, and immunocompromised",
-            "In 2015: 33.1 million RSV-related episodes globally in children under 5, with 3.2 million hospital admissions and over 11,800 deaths"
-          ]
-        },
-        {
-          "complication": "Croup (laryngotracheobronchitis)",
-          "mechanism": "Barking cough and stridor from subglottic swelling",
-          "cause": "Primarily parainfluenza virus in young children"
-        },
-        {
-          "complication": "Pneumonia",
-          "risk_groups": [
-            "infants",
-            "elderly",
-            "immunocompromised"
-          ],
-          "note": "Respiratory viruses previously believed restricted to upper airways are a common cause of lower respiratory infections"
-        },
-        {
-          "complication": "Asthma exacerbation",
-          "frequency": "rhinoviruses are a leading trigger for acute asthma attacks in children",
-          "evidence": "Rhinoviruses are responsible for considerable morbidity related to asthma exacerbation; airway hyperresponsiveness may persist up to 4 weeks post-infection",
-          "studies": [
-            "Johnston SL et al (1995): community study in 9–11 year old children linking viral infections to asthma exacerbations",
-            "Tovey ER et al (2015): rhinoviruses significantly affect day-to-day respiratory symptoms in children with asthma"
-          ]
-        },
-        {
-          "complication": "COPD exacerbation",
-          "mechanism": "Respiratory viruses are major triggers for acute exacerbations of chronic obstructive pulmonary disease and chronic bronchitis"
-        },
-        {
-          "complication": "Worsening of chronic conditions",
-          "examples": [
-            "asthma",
-            "COPD",
-            "heart failure",
-            "chronic bronchitis"
-          ]
-        }
-      ],
-      "serious_complication_warning_signs_requiring_emergency_care": [
-        "chest pain",
-        "persistent high fever not responsive to paracetamol or ibuprofen",
-        "persistent or increasing shortness of breath",
-        "severe headache combined with neck pain or stiffness",
-        "dizziness, weakness, confusion, or constant lack of energy"
-      ],
-      "signs_requiring_healthcare_provider_visit": [
-        "coughing up thick grey or bloody sputum",
-        "pain in sinuses or earache",
-        "development of even mild shortness of breath",
-        "fever lasting over 5 days",
-        "worsening symptoms after a few days of getting better",
-        "no improvement after 2 weeks",
-        "worsening asthma with cold symptoms"
-      ]
     },
     "treatment": {
       "principle": "No cure exists for the common cold. No vaccines are currently available for the common cold. Treatments aim to relieve symptoms while the immune system clears the infection. The illness is self-limiting and will resolve on its own.",
@@ -1046,6 +1084,191 @@
         "during_cold_symptom_relief": "Main category of treatment; see symptomatic treatments above"
       }
     },
+    "medications": {
+      "analgesics_antipyretics": {
+        "drugs": [
+          "paracetamol (acetaminophen)",
+          "ibuprofen",
+          "aspirin"
+        ],
+        "indications": [
+          "fever",
+          "headache",
+          "muscle aches",
+          "sore throat pain",
+          "sinus pain"
+        ],
+        "paracetamol_dose": "500–1000 mg every 4–6 hours as needed while awake, with water (max 4000 mg/day)",
+        "paracetamol_liver_disease_dose": "maximum 3000 mg/day",
+        "ibuprofen_dose": "200–400 mg every 6–8 hours as needed with small snack (max 1200 mg/day)",
+        "ibuprofen_avoid_in": "persons over 65, pregnant women, severe liver or kidney disease, peptic ulcer disease, heart failure, history of stroke, GERD, IBD, liver cirrhosis",
+        "aspirin_note": "Aspirin reduces some cold symptoms but increases viral shedding duration; not recommended in children due to Reye's syndrome risk"
+      },
+      "nasal_decongestants_topical": {
+        "drugs": [
+          "oxymetazoline",
+          "xylometazoline",
+          "phenylephrine (nasal spray)"
+        ],
+        "mechanism": "Constrict nasal blood vessels, reducing mucosal swelling",
+        "dosing": "Use for 2–3 days maximum",
+        "critical_warning": "Limit use to 2–3 days — rebound congestion (rhinitis medicamentosa) occurs after 72 hours of use; the congestion may worsen. Can also cause nosebleeds, agitation, insomnia, and worsened hypertension.",
+        "contraindicated_in_infants": true,
+        "reasons_for_infant_contraindication": "Risk of serious CNS effects ranging from sedation to convulsive attacks resembling seizures in infants and young children"
+      },
+      "nasal_decongestants_oral": {
+        "drugs": [
+          "pseudoephedrine",
+          "phenylephrine"
+        ],
+        "efficacy": "Pseudoephedrine effective; phenylephrine (common OTC ingredient) is NOT very effective",
+        "side_effects": [
+          "rebound congestion",
+          "hypertension",
+          "insomnia",
+          "agitation"
+        ],
+        "pseudoephedrine_note": "Purchase limited due to use in manufacture of amphetamine drugs",
+        "not_recommended_in_young_children": true
+      },
+      "antihistamines": {
+        "first_generation": {
+          "drugs": [
+            "diphenhydramine (Benadryl)",
+            "chlorpheniramine",
+            "doxylamine",
+            "triprolidine"
+          ],
+          "benefit": "Modest benefit for sneezing and runny nose in adults",
+          "mechanism_of_limited_benefit": "Rhinorrhoea in colds is mediated by kinins, not histamine — antihistamines are not targeting the primary mediator",
+          "side_effects": [
+            "sedation/drowsiness",
+            "dry eyes, nose, mouth",
+            "urinary retention",
+            "paradoxical CNS excitation in children"
+          ],
+          "antihistamine_for_cough": "Thought to act indirectly by reducing postnasal drip",
+          "note": "Antihistamines may be helpful in adolescents and adults; NOT recommended in young children"
+        },
+        "second_generation": {
+          "drugs": [
+            "cetirizine (Reactine)",
+            "loratadine (Claritin)",
+            "fexofenadine"
+          ],
+          "efficacy_for_cold": "NOT effective for common cold symptoms",
+          "reason": "Second-generation antihistamines do not have the same anticholinergic properties; histamine is not the main mediator of cold symptoms"
+        }
+      },
+      "cromolyn_sodium": {
+        "brand": "NasalCrom",
+        "benefit": "May relieve runny nose, cough, and sneezing"
+      },
+      "antitussives_cough_suppressants": {
+        "dextromethorphan": {
+          "evidence": "Conflicting results; more effective than codeine in studies",
+          "indication": "May provide relief when persistent cough disrupts sleep or feeding",
+          "not_needed": "Cough suppression is usually not needed; cough reflex is a protective mechanism"
+        },
+        "codeine": {
+          "recommendation_in_children": "NOT recommended",
+          "risks_in_children": [
+            "respiratory depression",
+            "narcotic dependency",
+            "potential death"
+          ]
+        },
+        "antihistamines_for_cough": "May reduce cough through drying effect on mucosa and reduction of postnasal drip"
+      },
+      "expectorants": {
+        "guaifenesin": {
+          "brand": "Mucinex",
+          "claimed_benefit": "Thins secretions to ease cough",
+          "evidence": "One RCT in 65 young adults showed no change in cough or sputum thickness",
+          "note": "Despite popularity, evidence of benefit is limited"
+        }
+      },
+      "ipratropium_bromide_nasal_spray": {
+        "evidence": "5 RCTs in adults showed significant symptom relief, especially for excessive nasal discharge and sneezing",
+        "effect_duration": "3–4 hours per administration",
+        "not_recommended_in_children": true,
+        "side_effects": [
+          "blood-tinged secretions in 10–15%",
+          "nasal dryness"
+        ]
+      },
+      "zinc": {
+        "lozenges": {
+          "evidence": "Some studies show reduction in duration and severity of cold symptoms when taken within 24 hours of symptom onset",
+          "critical_warning": "Intranasal zinc products have been associated with PERMANENT loss of smell — CONTRAINDICATED as nasal products",
+          "child_evidence": "Studies in children taking zinc sulfate decreased cold rate, but adult studies are inconsistent"
+        }
+      },
+      "vitamin_c": {
+        "prevention": "Does NOT reduce cold incidence in the general population — routine supplementation NOT justified",
+        "treatment": "If started after onset of cold symptoms, does NOT reduce symptom severity or duration",
+        "regular_supplementation": "May slightly reduce duration of colds if taken regularly before illness onset",
+        "background": "Claims that vitamin C prevents and cures colds were popularised by Nobel laureate Linus Pauling in 1970; later large meta-analyses found no benefit for prevention"
+      },
+      "vitamin_d": {
+        "evidence": "Controversial. Some reports show no benefit; others report benefit especially in vitamin D deficient individuals"
+      },
+      "echinacea": {
+        "evidence": "Two of the most popular herbal treatments with some support from clinical trials. Clinical relevance of efficacy has been questioned by Cochrane reviews. Some support from RCTs."
+      },
+      "pelargonium": {
+        "evidence": "Some support from clinical trials for acute cough due to lower respiratory tract infection"
+      },
+      "iota_carrageenan": {
+        "claimed_benefit": "Antiviral medicine for common cold; studied in several clinical trials"
+      },
+      "intranasal_glucocorticoids": {
+        "examples": [
+          "Flonase",
+          "Nasonex",
+          "Nasacort"
+        ],
+        "evidence": "NOT effective for common cold symptoms; ARE effective for allergic rhinitis"
+      }
+    },
+    "diet_and_nutrition": {
+      "rest": {
+        "recommendation": "Get plenty of sleep. Adjust sleeping position to prop head up with pillows to help mucus drainage.",
+        "rationale": "Sleep is critical for immune function; adults with less than 7 hours sleep are nearly 3 times more likely to develop a cold"
+      },
+      "fluids": {
+        "recommendation": "Drink plenty of fluids — 8 glasses per day. Water and fruit juice are ideal. Warm fluids such as tea and soups are especially soothing.",
+        "benefits": [
+          "help with hydration",
+          "soothe symptoms",
+          "loosen secretions"
+        ],
+        "honey_addition": "Adding honey can relieve sore throats and coughs in adults and children over 1 year"
+      },
+      "humidifier": {
+        "recommendation": "Use a cool-mist humidifier or vaporizer to increase air moisture and ease breathing",
+        "warning": "Breathe some steamy air but NOT hot steam directly — hot steam can damage nasal passages and cause burns"
+      },
+      "saline_nasal": {
+        "drops_and_sprays": "Saline nose drops or sprays are safe and effective for clearing congestion, especially in infants and young children",
+        "gargling": "Gargling with salt water can help clear mucus and soothe sore throats — mix half teaspoon of salt in 8 ounces of warm water",
+        "suction_bulb": "For young children, use a rubber suction bulb to clear mucus from nasal passages"
+      },
+      "throat_lozenges": {
+        "recommendation": "Use throat lozenges or cough drops for sore throat relief",
+        "age_restriction": "Do not give lozenges to children younger than 4 years old — aspiration risk"
+      },
+      "diet": "Eat a healthy diet high in fresh fruits (berries, citrus) and vegetables (leafy greens, peppers, carrots) to support immune function",
+      "smoking": "Limit smoking or vaping — these worsen symptoms and delay recovery",
+      "steam_inhalation": {
+        "sitting_in_steam_shower": "Sitting in a bathroom with steam from a running shower may relieve congestion",
+        "hot_steam_inhalation": "NOT recommended — hot steam can damage nasal mucosa; double-blind RCT showed breathing steam demonstrated increased airway resistance and fourfold increase in side effects"
+      },
+      "chicken_soup": {
+        "tradition": "Reported positive effects attributed to mucolytic effects of vapours from hot soup; may also stimulate nasal mucus production and loosen respiratory secretions",
+        "evidence": "Traditional use and soothing effect support recommending warm teas or soups"
+      }
+    },
     "prevention": {
       "overview": "No vaccine is currently available for the common cold. Prevention relies on hygiene measures to interrupt transmission, general immune health practices, and reducing exposure to infectious contacts.",
       "handwashing": {
@@ -1097,6 +1320,101 @@
         "airline_travel": "Studies show no difference in cold incidence with recirculated vs fresh air in commercial airliners — air conditioning is NOT a cause of colds"
       }
     },
+    "complications": {
+      "overview": "The common cold itself is of itself harmless in most cases, but bacterial invasion may follow the initial viral infection. These secondary invaders may produce disorders of serious consequence. All respiratory viruses are associated with causing common cold syndrome, but mild illness can develop into more serious lower respiratory tract infections.",
+      "complications_list": [
+        {
+          "complication": "Acute otitis media (middle ear infection)",
+          "frequency": "most common complication of the common cold",
+          "mechanism": "Cold causes problems with drainage and pressure regulation of the middle ear through eustachian tube dysfunction; allows secondary bacterial infection",
+          "evidence": "In one study, more than 90% of patients with otitis media had cold symptoms that were suspected to be virally induced; middle ear fluid contained culturable bacteria in 50–70% of cases",
+          "risk_group": "young children"
+        },
+        {
+          "complication": "Acute bacterial sinusitis",
+          "frequency": "rare complication in adults",
+          "mechanism": "Viral sinusitis may be followed by secondary bacterial infection if mucociliary clearance is impaired",
+          "note": "Viral sinusitis (more common) will resolve within 3 weeks without antibiotics; bacterial sinusitis presents with worsening facial pain after initial improvement"
+        },
+        {
+          "complication": "Viral sinusitis",
+          "frequency": "more common than bacterial sinusitis",
+          "resolution": "within 3 weeks without antibiotics"
+        },
+        {
+          "complication": "Laryngitis",
+          "mechanism": "Inflammation of the larynx (voice box) causing hoarseness or voice loss"
+        },
+        {
+          "complication": "Tracheitis",
+          "mechanism": "Inflammation of the membrane lining the trachea (windpipe)"
+        },
+        {
+          "complication": "Bronchitis",
+          "mechanism": "Inflammation of the bronchial membranes; may develop if virus spreads to lower airways"
+        },
+        {
+          "complication": "Bronchiolitis",
+          "frequency": "mainly in infants under 2 years from RSV or parainfluenza",
+          "notes": [
+            "RSV can infect lungs especially in children, older adults, and immunocompromised",
+            "In 2015: 33.1 million RSV-related episodes globally in children under 5, with 3.2 million hospital admissions and over 11,800 deaths"
+          ]
+        },
+        {
+          "complication": "Croup (laryngotracheobronchitis)",
+          "mechanism": "Barking cough and stridor from subglottic swelling",
+          "cause": "Primarily parainfluenza virus in young children"
+        },
+        {
+          "complication": "Pneumonia",
+          "risk_groups": [
+            "infants",
+            "elderly",
+            "immunocompromised"
+          ],
+          "note": "Respiratory viruses previously believed restricted to upper airways are a common cause of lower respiratory infections"
+        },
+        {
+          "complication": "Asthma exacerbation",
+          "frequency": "rhinoviruses are a leading trigger for acute asthma attacks in children",
+          "evidence": "Rhinoviruses are responsible for considerable morbidity related to asthma exacerbation; airway hyperresponsiveness may persist up to 4 weeks post-infection",
+          "studies": [
+            "Johnston SL et al (1995): community study in 9–11 year old children linking viral infections to asthma exacerbations",
+            "Tovey ER et al (2015): rhinoviruses significantly affect day-to-day respiratory symptoms in children with asthma"
+          ]
+        },
+        {
+          "complication": "COPD exacerbation",
+          "mechanism": "Respiratory viruses are major triggers for acute exacerbations of chronic obstructive pulmonary disease and chronic bronchitis"
+        },
+        {
+          "complication": "Worsening of chronic conditions",
+          "examples": [
+            "asthma",
+            "COPD",
+            "heart failure",
+            "chronic bronchitis"
+          ]
+        }
+      ],
+      "serious_complication_warning_signs_requiring_emergency_care": [
+        "chest pain",
+        "persistent high fever not responsive to paracetamol or ibuprofen",
+        "persistent or increasing shortness of breath",
+        "severe headache combined with neck pain or stiffness",
+        "dizziness, weakness, confusion, or constant lack of energy"
+      ],
+      "signs_requiring_healthcare_provider_visit": [
+        "coughing up thick grey or bloody sputum",
+        "pain in sinuses or earache",
+        "development of even mild shortness of breath",
+        "fever lasting over 5 days",
+        "worsening symptoms after a few days of getting better",
+        "no improvement after 2 weeks",
+        "worsening asthma with cold symptoms"
+      ]
+    },
     "special_populations": {
       "infants_and_young_children": {
         "vulnerability": "Infants start life with little immunity and high incidence of colds (6–10/year); maternal immunity from breast milk declines in first year",
@@ -1139,526 +1457,1491 @@
         "mechanism": "Unknown — the resistance was independent of pre-challenge viral-specific immunity, suggesting a non-antibody-mediated protective mechanism"
       }
     },
-    "frequently_asked_questions": [
-      {
-        "question": "What is the common cold?",
-        "answer": "The common cold is a mild, self-limiting viral infection of the upper respiratory tract — including the nose, sinuses, throat, and windpipe. It is caused by over 200 different viruses, most commonly rhinoviruses. It is the most frequent acute illness in humans, with adults averaging 2–4 colds per year and young children having 6–10 colds per year. Symptoms typically last less than a week and include runny nose, congestion, sore throat, sneezing, and cough."
-      },
-      {
-        "question": "Is there a cure or vaccine for the common cold?",
-        "answer": "No. There is currently no cure and no vaccine for the common cold. Because colds are caused by over 200 different viruses — including more than 100 rhinovirus serotypes — developing a single vaccine is not practical. Treatment focuses entirely on relieving symptoms while the immune system clears the infection, usually within 7–10 days. Rest, fluids, and over-the-counter symptom relief medicines are the main approaches."
-      },
-      {
-        "question": "Do antibiotics help treat the common cold?",
-        "answer": "No. Antibiotics only kill bacteria and have absolutely no effect on viruses. Using antibiotics for a cold provides no benefit and causes harmful side effects including diarrhoea, allergic reactions, and the development of antibiotic-resistant bacteria. Antibiotics should only be used if a secondary bacterial infection develops — such as bacterial sinusitis, ear infection, or pneumonia — which a doctor must confirm."
-      },
-      {
-        "question": "How does the common cold spread?",
-        "answer": "The cold spreads primarily through hand-to-hand contact. When an infected person touches their own nose, they contaminate their hands, and when a susceptible person shakes that hand and then touches their own eyes or nose, the virus enters their respiratory tract. Viruses can also survive on surfaces for several hours. Breathing in aerosol droplets from an infected person's cough or sneeze is also a route of spread, though this requires close proximity. Kissing poses very low risk."
-      },
-      {
-        "question": "How is the common cold different from influenza (flu)?",
-        "answer": "Both are viral respiratory infections, but flu is generally much more severe. The common cold comes on gradually and mainly causes nasal symptoms. Flu comes on suddenly and is characterised by high fever (38–40°C), severe muscle aches, headache, and significant fatigue. Fever and myalgia are NOT typical of a common cold in adults. Flu is more likely to cause serious complications such as pneumonia. If you have severe systemic symptoms during flu season, see a doctor and ask about rapid influenza testing."
-      },
-      {
-        "question": "Can the same person get more than one cold a year?",
-        "answer": "Yes. Adults typically get 2–4 colds per year and children get 6–10. This is because there are over 200 cold viruses with more than 100 rhinovirus serotypes, and immunity to one strain does not protect against others. Also, immunity wanes after each infection. The same virus can cause another cold after re-exposure, though the second illness is usually milder."
-      },
-      {
-        "question": "Should I see a doctor for a cold?",
-        "answer": "Most colds do not require a doctor visit. However, seek emergency care if you have chest pain, severe shortness of breath, or confusion. See a healthcare provider if you have a fever lasting more than 5 days, symptoms worsening after initially improving, symptoms persisting more than 10 days without improvement, thick grey or bloody sputum, ear pain, or if you are at high risk from COVID-19 or flu — where antiviral treatment may be available and beneficial."
-      },
-      {
-        "question": "Are OTC cold medicines safe for children?",
-        "answer": "Over-the-counter cough and cold medicines are NOT recommended for children younger than 6 years old and can cause serious, sometimes life-threatening side effects. For fever, children can take paracetamol or ibuprofen. Honey (in children over 1 year), saline nasal drops, fluids, and rest are recommended safe options. Never give lozenges to children under 4 years old. Always consult a healthcare provider about the correct dose for children."
-      },
-      {
-        "question": "Does cold weather cause colds?",
-        "answer": "No. Colds are caused by viruses, not cold temperatures. However, people tend to catch colds more often in cold weather because they spend more time indoors in closer contact with others, facilitating virus transmission. There is also some evidence that cold air may impair local nasal defences. But without exposure to a cold virus, cold weather alone cannot cause a cold."
-      },
-      {
-        "question": "How can I prevent getting a cold?",
-        "answer": "The most effective prevention is frequent handwashing with soap and water for at least 20 seconds. Avoid touching your eyes, nose, and mouth with unwashed hands. Cough and sneeze into your elbow or a tissue. Avoid close, prolonged contact with sick people. Disinfect commonly touched surfaces. Do not share food or utensils. Get adequate sleep (7–8 hours) and manage stress. No vaccine or supplement has been proven to reliably prevent colds."
-      },
-      {
-        "question": "How long am I contagious when I have a cold?",
-        "answer": "You are most contagious during the first 2–3 days of illness, when viral shedding is highest. However, low levels of virus can be shed for up to 2 weeks. You can also spread the virus in the incubation period (24–72 hours before symptoms begin). Good hand hygiene and covering coughs remain important throughout the illness and even before symptoms appear."
-      },
-      {
-        "question": "Can I go to work or school with a cold?",
-        "answer": "If you feel well enough to carry out normal activities, it may be acceptable to go in, but take precautions to avoid spreading the virus. Practice meticulous hand hygiene, cover coughs and sneezes, and avoid touching your face. Consider staying home if symptoms are severe or if your workplace involves contact with vulnerable individuals (the elderly, immunocompromised patients, or infants)."
-      },
-      {
-        "question": "Why do some people get more colds than others?",
-        "answer": "Several factors affect cold susceptibility: chronic psychological stress (triples risk), poor sleep (less than 7 hours nearly triples risk), smoking, crowded living or working conditions, young age, weakened immune system, and nutritional deficiency. Paradoxically, very sociable people who have many social contacts tend to have GREATER resistance to infection, possibly because frequent low-level exposures build broader immunity."
-      }
-    ],
-    "emergency_signs": {
-      "seek_emergency_care_immediately": [
-        "Trouble breathing or fast breathing",
-        "Chest pain",
-        "Severe shortness of breath or persistent increasing shortness of breath",
-        "Severe headache combined with neck pain or stiffness (may indicate meningitis)",
-        "Confusion, altered consciousness, or dizziness",
-        "Severe weakness or inability to carry out normal activities",
-        "Signs of dehydration (no urination, sunken eyes, dry mouth)",
-        "Infants with fast breathing, chest indrawing, poor feeding, or bluish lips",
-        "Persistent high fever not responsive to paracetamol or ibuprofen"
-      ],
-      "see_healthcare_provider_soon": [
-        "Fever lasting more than 4–5 days",
-        "Symptoms lasting more than 10 days without getting better",
-        "Symptoms improving then returning or worsening",
-        "Coughing up thick grey, yellow-green, or bloody phlegm",
-        "Earache or pain in sinuses",
-        "Mild shortness of breath",
-        "Worsening asthma symptoms with cold",
-        "Chronic medical conditions that are getting worse"
-      ],
-      "high_risk_groups_contact_provider_immediately": [
-        "Older adults and pregnant women with any respiratory symptoms if COVID-19 or influenza suspected",
-        "Immunocompromised individuals with any respiratory symptoms",
-        "Infants under 3 months with any fever",
-        "Individuals eligible for antiviral treatment for COVID-19 or flu within first 5–7 days of symptoms"
+    "when_to_see_doctor": {
+      "medical_attention_signs": [
+        "coughing up thick grey or bloody sputum",
+        "pain in sinuses or earache",
+        "development of even mild shortness of breath",
+        "fever lasting over 5 days",
+        "worsening symptoms after a few days of getting better",
+        "no improvement after 2 weeks",
+        "worsening asthma with cold symptoms"
       ]
     },
-    "history_and_science": {
-      "historical_overview": {
-        "ancient_understanding": "For centuries, the common cold was believed to be caused by chilling of the body. Greek and Roman physicians explained it through humoral pathology — chilling disturbing the humors and causing mucus to flow from the nose.",
-        "17th_century": "Richard Lower, an eminent physician in London, published a treatise concluding that protection from external cold and proper perspiration prevented the disease.",
-        "1904": "Bishop described the early manifestation of cold — dryness and irritation in the nose, leading to sneezing, copious mucus, lacrimation, and headache.",
-        "1930": "Hilding identified two groups of colds: those due to exposure and those due to infection.",
-        "1944": "Scientific consensus that the cause was a filterable virus, as determined by Krause in 1914 and later corroborated by Foster, Dochez and group.",
-        "1950s": "Discovery of rhinoviruses by researchers provided the first scientific explanation for the common cold as an infectious viral disease.",
-        "1930s_1960s": "Introduction of sulfa drugs in the late 1930s led some clinicians to claim antibiotics could treat colds — claims that were later disproven.",
-        "1970": "Nobel laureate Linus Pauling published a book claiming vitamin C prevents and treats colds — a claim widely criticised as opinion-based but adopted by the general public.",
-        "2001_2005": "Discovery of human metapneumovirus (2001) and human bocavirus (2005) as additional common cold pathogens.",
-        "2013": "Cochrane meta-analysis of 29 trials on vitamin C concluded that routine supplementation is not justified for prevention in the general population.",
-        "2023": "FDA approved first RSV vaccine for adults 60 and older."
-      },
-      "common_cold_research_centre": "The author of the Eccles 2023 review spent 30 years as Director of the Common Cold Centre at Cardiff University, UK, specialising in symptom mechanisms and treatments."
-    },
-    "virus_biology_notes": {
-      "rhinovirus_biology": {
-        "size": "smallest single-stranded RNA picornaviruses",
-        "serotypes": "more than 100",
-        "fastidious_subgroup": "a subpopulation can only be cultured in living organisms, not reliably in tissue culture",
-        "animal_susceptibility": "the only animal other than humans reliably infectable with rhinoviruses is the chimpanzee — a trivial human infection can be lethal to chimpanzees",
-        "receptor": "ICAM-1 on nasopharyngeal epithelium",
-        "temperature_sensitivity": "rhinoviruses replicate at lower temperatures (33–35°C) which occur in the nasal passages, explaining their predilection for the upper airway"
-      },
-      "historical_transmission_study": {
-        "location": "Spitsbergen, a remote arctic archipelago, mid-point between Norway and North Pole",
-        "year": 1933,
-        "researchers": "Paul and Freese",
-        "findings": "The isolated community had one attack of common cold per person per year. Epidemics of common cold never broke out before ships arrived each summer. In 1931, 48 hours after arrival of the first boat (which had one sailor with an incubating cold), three cases developed in the town — proving direct person-to-person transmission as essential.",
-        "peak_cases": "26 cases peaked on day 10 after arrival, then tapered off over 3 weeks"
-      }
-    },
-    "economic_and_social_impact": {
-      "united_states_specific": {
-        "annual_physician_office_cost_usd": "1.5 billion",
-        "missed_work_days_per_year": "23 million",
-        "missed_school_days_per_year": "26 million",
-        "missed_work_share_of_total_absenteeism": "40%",
-        "missed_school_share": "30%"
-      },
-      "global_otc_market": {
-        "2023_value_usd": "over 70 billion",
-        "1985_global_otc_medicines_usd": "3 billion (excluding Eastern European markets)",
-        "immunity_supplement_market_2021": "over 20 billion USD",
-        "projected_immunity_supplement_market_2028": "over 31 billion USD"
-      },
-      "antibiotic_misuse_consequence": "Treating colds with antibiotics causes more harm than benefit and contributes to the growing global crisis of antibiotic resistance."
-    },
-    "chatbot_intents": [
-      "What is a common cold?",
-      "What causes the common cold?",
-      "How do you get a cold?",
-      "What are the symptoms of a cold?",
-      "How long does a cold last?",
-      "How is a cold different from the flu?",
-      "Can I prevent catching a cold?",
-      "Should I take antibiotics for a cold?",
-      "Why won't antibiotics cure my cold?",
-      "What is the best treatment for a cold?",
-      "What OTC medicines help with cold symptoms?",
-      "What can I do at home to feel better with a cold?",
-      "Is the common cold contagious?",
-      "How long am I contagious when I have a cold?",
-      "Can yellow mucus mean I need antibiotics?",
-      "How do I know if my cold has turned into something serious?",
-      "When should I see a doctor for a cold?",
-      "What are warning signs that my cold is getting worse?",
-      "Can children take cold medicines?",
-      "What cold medicines are safe for babies?",
-      "What cold medicines are safe for toddlers?",
-      "Why can't children under 6 take cold medicines?",
-      "Is honey safe for colds in children?",
-      "What is the difference between a cold and COVID-19?",
-      "How do I know if I have COVID-19 or a cold?",
-      "Does vitamin C prevent colds?",
-      "Does zinc help with colds?",
-      "Does chicken soup help with a cold?",
-      "Does cold weather cause colds?",
-      "Why do I get more colds in winter?",
-      "What viruses cause the common cold?",
-      "What is rhinovirus?",
-      "What is RSV?",
-      "What respiratory viruses cause colds?",
-      "Why are there so many different cold viruses?",
-      "Can you get the same cold twice?",
-      "Why do I keep getting colds?",
-      "How does a cold spread?",
-      "Can I catch a cold from a door handle?",
-      "Can I catch a cold from kissing?",
-      "Can I catch a cold from breathing the same air?",
-      "How long does the cold virus live on surfaces?",
-      "What is the incubation period for a cold?",
-      "How quickly do cold symptoms develop after exposure?",
-      "What complications can a cold cause?",
-      "Can a cold cause an ear infection?",
-      "Can a cold cause a sinus infection?",
-      "Can a cold trigger asthma?",
-      "Can a cold lead to pneumonia?",
-      "What is the difference between a cold and sinusitis?",
-      "Is the common cold dangerous?",
-      "Who is most at risk from a cold?",
-      "Are elderly people at higher risk from colds?",
-      "Are children at higher risk from cold complications?",
-      "Is RSV dangerous for babies?",
-      "What is RSV and when should I worry?",
-      "Is RSV the same as a cold?",
-      "What is the mechanism of cold symptoms?",
-      "Why does my nose run when I have a cold?",
-      "Why do I get a headache with a cold?",
-      "Why does cold cause fever?",
-      "Why does my throat hurt at the start of a cold?",
-      "Why is my mucus green or yellow?",
-      "How does handwashing prevent colds?",
-      "What is the best way to avoid catching a cold?",
-      "Should I stay home when I have a cold?",
-      "Can stress cause a cold?",
-      "Does poor sleep make me more likely to get a cold?",
-      "Does exercise prevent colds?",
-      "Can a positive attitude prevent colds?",
-      "How do I treat a child's cold safely?",
-      "What is the correct paracetamol dose for a child's cold?",
-      "What is the correct ibuprofen dose for a child's cold?",
-      "Can I give my baby a decongestant?",
-      "What nasal drops are safe for babies?",
-      "Why should I not give lozenges to young children?",
-      "What is postnasal drip and how do I treat it?",
-      "How do I relieve a blocked nose?",
-      "How do I treat a sore throat from a cold?",
-      "How do I stop a cough from a cold?",
-      "How do I reduce a fever from a cold?",
-      "Are decongestants safe for cold symptoms?",
-      "How long should I use a nasal spray?",
-      "What happens if I use nasal spray too long?",
-      "Why are antihistamines not effective for colds?",
-      "Can echinacea treat colds?",
-      "What herbal remedies help with colds?",
-      "Does vitamin D help prevent colds?",
-      "Is there a vaccine for the common cold?",
-      "Why is there no vaccine for the common cold?",
-      "Is there an RSV vaccine?",
-      "What does the flu vaccine cover?",
-      "Explain how cold viruses spread from person to person",
-      "Describe the mechanism of symptoms in the common cold",
-      "What is the iceberg concept of cold disease?",
-      "Explain rhinovirus biology",
-      "What is the history of the common cold?",
-      "Who discovered the cause of the common cold?",
-      "What did Linus Pauling say about vitamin C and colds?",
-      "What is the Cardiff Common Cold Centre?",
-      "What is the difference between a cold and bronchitis?",
-      "Can a cold cause wheezing?",
-      "What is viral rhinitis?",
-      "What is rhinorrhoea?",
-      "What is nasal catarrh?",
-      "What does the term common cold mean?",
-      "Is the common cold serious?",
-      "What is the global burden of the common cold?",
-      "How much does the common cold cost society?",
-      "Should I go to the emergency room for a cold?",
-      "What are the signs that a cold requires urgent care?",
-      "Can I swim when I have a cold?",
-      "Can I exercise when I have a cold?",
-      "How do I know if I need to go to the emergency room for my cold?",
-      "Why do I feel worse on day 2 or 3 of my cold?",
-      "What is a man cold?",
-      "Do men really suffer more from colds than women?",
-      "What is the difference between a cold and an upper respiratory infection?",
-      "Is a cold an upper respiratory infection?",
-      "How does the common cold affect the elderly differently?",
-      "What is the role of prostaglandins in cold symptoms?",
-      "What is bradykinin and how does it cause cold symptoms?",
-      "Why is histamine not the main mediator of cold symptoms?",
-      "Why do non-sedating antihistamines not work for colds?",
-      "What is dextromethorphan and does it help colds?",
-      "What is guaifenesin and does it help colds?",
-      "What is the difference between expectorants and antitussives?",
-      "Is cromolyn sodium effective for colds?",
-      "What is iota-carrageenan and does it treat colds?",
-      "What is the difference between cold and allergic rhinitis?",
-      "How is allergic rhinitis different from a cold?",
-      "What does NICE say about the common cold?",
-      "What does the CDC say about treating colds?",
-      "What does the WHO say about cough medicines in children?",
-      "How does RSV immunity wane?",
-      "What caused the RSV surge after COVID-19 lockdowns?",
-      "Can COVID-19 become a common cold?",
-      "What is the Spitsbergen cold study?",
-      "Explain the natural history of the common cold",
-      "What are prodromal symptoms of a cold?",
-      "Why do cold symptoms peak on day 2 or 3?",
-      "What is subclinical infection in the context of colds?",
-      "What is the difference between reinfection and relapse in colds?",
-      "Are there any antiviral drugs that treat colds?",
-      "Why is there no antiviral for rhinovirus colds?",
-      "Can the common cold be fatal?",
-      "Is the common cold ever life threatening?",
-      "What is the ICAM-1 receptor and its role in rhinovirus infection?",
-      "How does rhinovirus enter cells?",
-      "What is pattern recognition receptor activation in colds?",
-      "How does the innate immune system respond to a cold?",
-      "Explain the cytokine response to a cold virus",
-      "What is the relationship between cold viruses and asthma exacerbations?",
-      "What percentage of children in households develop colds from a sick sibling?",
-      "Does sociability increase or decrease cold susceptibility?",
-      "What is the relationship between parenthood and cold immunity?",
-      "Why do adults get fewer colds than children?",
-      "What is the role of secretory IgA in cold prevention?",
-      "What happens to immunity during COVID-19 lockdowns and how did this affect cold viruses?",
-      "What is the normal duration of a common cold?",
-      "What is the longest a cold can last?",
-      "What does 'self-limiting' mean in the context of the common cold?",
-      "How do I manage a cold during pregnancy?",
-      "What medications are safe during pregnancy for cold symptoms?",
-      "Can a cold harm my baby during pregnancy?",
-      "What is human bocavirus and does it cause colds?",
-      "What is human metapneumovirus?",
-      "When was hMPV discovered?",
-      "What were the main findings of the Cardiff rhinovirus challenge studies?",
-      "What is Pelargonium and does it treat colds?",
-      "What is echinacea purpurea and its evidence for colds?",
-      "What is a Cochrane review on vitamin C and colds?",
-      "What did the 2013 Cochrane meta-analysis on vitamin C conclude?",
-      "What is intranasal interferon and can it prevent colds?",
-      "What is the WIN51711 antiviral compound?",
-      "Why do people associate air conditioning with getting colds?",
-      "What is the role of coughing in spreading colds?",
-      "What is the role of sneezing in spreading cold viruses?",
-      "Can you catch a cold from sharing towels?",
-      "Should I use alcohol gel or soap to prevent colds?",
-      "What is a rhinovirus serotype?",
-      "How many rhinovirus serotypes are there?",
-      "What is the role of tearducts in spreading cold viruses?",
-      "Can cold viruses enter through the eyes?",
-      "What is the viral shedding period for common cold viruses?",
-      "What happens during the incubation period of a cold?",
-      "What is the Blantyre or Glasgow scale relevance to colds?",
-      "What is viral tracheitis?",
-      "What is viral laryngitis and how is it related to colds?",
-      "What is the connection between colds and chronic obstructive pulmonary disease?",
-      "How does RSV cause death in elderly people?",
-      "What is nirsevimab (Beyfortus) and who should receive it?"
+    "emergency_signs": [
+      "chest pain",
+      "persistent high fever not responsive to paracetamol or ibuprofen",
+      "persistent or increasing shortness of breath",
+      "severe headache combined with neck pain or stiffness",
+      "dizziness, weakness, confusion, or constant lack of energy"
     ],
-    "summary_profile": {
-      "disease": "Common Cold",
-      "aliases": [
-        "Upper Respiratory Infection (URI)",
-        "Upper Respiratory Tract Infection (URTI)",
-        "Viral Rhinitis",
-        "Acute Nasopharyngitis",
-        "Coryza",
-        "Head Cold",
-        "Rhinovirus Infection",
-        "Acute Nasal Catarrh",
-        "Acute Rhinitis"
+    "raw_source_backup": {
+      "disease_identity": {
+        "name": "Common Cold",
+        "also_known_as": [
+          "upper respiratory infection (URI)",
+          "upper respiratory tract infection (URTI)",
+          "acute nasopharyngitis",
+          "coryza",
+          "viral rhinitis",
+          "head cold",
+          "acute nasal catarrh",
+          "acute rhinitis",
+          "Cold"
+        ],
+        "definition": "The common cold is a mild, self-limiting viral infection of the upper respiratory tract — including the nose, nasal passages, sinuses, throat (pharynx), larynx (voice box), and windpipe (trachea). It is caused by more than 200 different respiratory viruses and is the most frequent acute illness in humans worldwide.",
+        "nice_definition": "A mild, self-limiting, upper respiratory tract infection characterized by nasal stuffiness and discharge, sneezing, sore throat, and cough.",
+        "disease_type": "viral upper respiratory tract infection",
+        "self_limiting": true,
+        "curable": false,
+        "vaccine_available": false,
+        "antibiotic_effective": false,
+        "etymology": "The term 'common cold' has been in use for centuries. It was historically associated with the belief that exposure to cold temperatures caused the illness — a misconception that persisted until respiratory viruses such as rhinoviruses were identified in the 1950s as the true causative agents.",
+        "historical_note": "The infectious cause of the common cold was formally recognised only after the 1950s discovery of rhinoviruses, providing the first scientific explanation for a disease that had been treated with theories of humoral imbalance, chilling, and miasma since ancient Greek times."
+      },
+      "overview": {
+        "summary": "The common cold is a syndrome of familiar upper respiratory symptoms caused by any one of more than 200 respiratory viruses. It is the most common human disease and, because of the large number of causative viruses, one of the most complex. It is self-diagnosing, self-treating, and self-limiting — most episodes resolve within 7–10 days. Despite its mildness, it carries enormous economic and social burden through missed work, school absences, and over-the-counter medicine expenditure.",
+        "global_burden": {
+          "adults_colds_per_year": "2–5",
+          "children_colds_per_year_preschool": "4–10",
+          "children_colds_per_year_school_age": "6–8",
+          "us_adults_annual": "125 million cases estimated",
+          "missed_work_days_us_per_year": "23 million",
+          "missed_school_days_us_per_year": "26 million",
+          "us_physician_office_cost_annually_usd": "1.5 billion",
+          "otc_market_value_us_per_year_usd": "over 1 billion",
+          "global_otc_cold_market_2023_usd": "over 70 billion",
+          "immunity_supplement_market_2021_usd": "over 20 billion",
+          "reason_for_missed_work": "one of the leading causes of work absenteeism",
+          "half_population_gets_at_least_one_cold_per_year": true
+        },
+        "iceberg_concept": {
+          "description": "The common cold sits in the middle of the viral infection spectrum — above asymptomatic infection but below severe respiratory illness such as pneumonia or flu-like illness. Most respiratory virus infections result in sub-clinical or asymptomatic infection not noticed by the host. The cold represents the visible tip of a large iceberg of respiratory virus infection.",
+          "spectrum_ascending_severity": [
+            "asymptomatic infection (most common — 69–74% of positive samples in studies)",
+            "subclinical infection",
+            "common cold (acute self-limiting URI)",
+            "flu-like illness (systemic features)",
+            "bronchiolitis",
+            "pneumonia",
+            "respiratory failure",
+            "death (least common)"
+          ],
+          "study_evidence": "A study of 214 healthy individuals aged 3–63 years collected nasopharyngeal swabs twice weekly for two years. Of 4,215 samples, 737 tested positive for one or multiple respiratory viruses. Among positive results, 69–74% were classified as asymptomatic."
+        }
+      },
+      "causative_agents": {
+        "total_viruses_capable": "more than 200",
+        "primary_family": "Rhinoviridae",
+        "note": "All known respiratory viruses are able to produce the illness complex recognised as the common cold.",
+        "virus_list": [
+          {
+            "name": "Rhinovirus (HRV)",
+            "abbreviation": "HRV",
+            "nucleic_acid": "RNA",
+            "structure": "non-enveloped icosahedral capsid",
+            "classification": "Species A, B, C with more than 100 serotypes",
+            "frequency_of_colds": "more than 50% of all adult colds",
+            "seasonal_peak": "early autumn and late spring",
+            "severity": "usually mild, rarely causes lower respiratory disease in healthy adults",
+            "notes": [
+              "Most common cause of common cold worldwide",
+              "More than 100 serotypes identified",
+              "Can be considered the most common infection of humans globally",
+              "Enters cells via ICAM-1 receptor on nasopharyngeal epithelium",
+              "Causes minimal nasal mucosa disruption but consistent nasopharyngeal damage",
+              "In children, a significant trigger for asthma exacerbations"
+            ]
+          },
+          {
+            "name": "Seasonal Coronavirus",
+            "abbreviation": "HCoV",
+            "nucleic_acid": "RNA",
+            "structure": "enveloped",
+            "types": [
+              "OC43",
+              "229E",
+              "NL63",
+              "HKU1"
+            ],
+            "frequency_of_colds": "15–21% of colds",
+            "seasonal_peak": "winter and spring",
+            "notes": [
+              "Produces clinical picture similar to rhinovirus",
+              "More likely to produce myalgias, headaches, and malaise than rhinoviruses",
+              "More commonly produces fever than rhinovirus",
+              "With increasing immunity to SARS-CoV-2 worldwide, COVID-19 may eventually evolve to cause a common cold-like illness"
+            ]
+          },
+          {
+            "name": "Respiratory Syncytial Virus",
+            "abbreviation": "RSV",
+            "nucleic_acid": "RNA",
+            "structure": "enveloped",
+            "groups": [
+              "A",
+              "B"
+            ],
+            "frequency_of_colds": "8–10%",
+            "seasonal_peak": "winter with peak in January",
+            "notes": [
+              "Causes mild cold-like symptoms in older children and adults",
+              "A major cause of bronchiolitis and lower respiratory tract infections in infants under 2 years",
+              "RSV type A associated with more severe infections",
+              "In 2015, estimated 33.1 million episodes globally in children under 5, causing 3.2 million hospital admissions and over 11,800 deaths",
+              "Significant cause of morbidity and mortality in the elderly (estimated 1.2 million deaths in elderly from RSV and other respiratory viruses in 2015)",
+              "Immunity to RSV is short-lived, explaining repeated infections throughout life",
+              "RSV vaccine (Abrysvo) was approved by FDA in May 2023 for individuals 60 years and older"
+            ]
+          },
+          {
+            "name": "Parainfluenza Virus",
+            "abbreviation": "HPIV",
+            "nucleic_acid": "RNA",
+            "structure": "enveloped",
+            "types": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "frequency_of_colds": "10%",
+            "seasonal_peaks": {
+              "types_1_2": "autumn",
+              "type_3": "late spring"
+            },
+            "notes": [
+              "Causes croup and bronchiolitis pattern in young children",
+              "Milder cold symptoms in older individuals and adults",
+              "Produces more fever than rhinovirus or RSV",
+              "12% of isolates in younger population, 2–7.5% in older population in studies"
+            ]
+          },
+          {
+            "name": "Influenza Virus",
+            "abbreviation": "Flu",
+            "nucleic_acid": "RNA",
+            "structure": "enveloped",
+            "types": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "notes": [
+              "Usually produces a pattern of respiratory illness distinctly different from the common cold",
+              "Flu causes high fever, headache, body aches — unlike the milder nasal-centred cold",
+              "Third most common cause in some community studies",
+              "Key clinical distinction: influenza has high fever and myalgia; cold does not"
+            ]
+          },
+          {
+            "name": "Adenovirus",
+            "abbreviation": "ADV",
+            "nucleic_acid": "DNA",
+            "structure": "non-enveloped icosahedral capsid",
+            "serotypes": "41 recognized serotypes with more than 100 subtypes",
+            "frequency_of_colds": "5%",
+            "seasonal_peak": "winter and spring",
+            "notes": [
+              "Well known for producing conjunctivitis and laryngitis alongside cold symptoms",
+              "Types 3 and 7 cause pharyngoconjunctival fever — severe conjunctivitis and pharyngitis with minor cold symptoms",
+              "Pharyngoconjunctival fever most often found in summer when swimming in non-chlorinated pools",
+              "Genetic heterogeneity of adenoviruses makes population studies difficult"
+            ]
+          },
+          {
+            "name": "Human Metapneumovirus",
+            "abbreviation": "HMPV",
+            "nucleic_acid": "RNA",
+            "structure": "enveloped",
+            "groups": [
+              "A",
+              "B"
+            ],
+            "discovery_year": 2001,
+            "notes": [
+              "Discovered in 2001 by researchers in the Netherlands in stored nasopharyngeal samples from children",
+              "Had been in circulation for approximately 65 years before discovery",
+              "Nearly every child is infected by age 5",
+              "Can cause severe lower respiratory illness in infants and immunocompromised individuals"
+            ]
+          },
+          {
+            "name": "Human Bocavirus",
+            "abbreviation": "HBoV",
+            "nucleic_acid": "DNA",
+            "structure": "non-enveloped icosahedral capsid",
+            "lineages": 2,
+            "discovery_year": 2005,
+            "notes": [
+              "Discovered in 2005 from nasopharyngeal samples in children",
+              "Shown to cause common cold in children"
+            ]
+          },
+          {
+            "name": "Echovirus",
+            "classification": "Enterovirus",
+            "frequency_of_colds": "classic summer disease",
+            "notes": [
+              "Causes coryza — acute rhinitis with minimal other symptoms",
+              "Associated with summer cold-like episodes"
+            ]
+          },
+          {
+            "name": "Coxsackievirus",
+            "classification": "Enterovirus",
+            "notes": [
+              "Well known for causing epidemic cervical myalgia, pleurisy, hand-foot-mouth disease, and herpangina alongside respiratory infections",
+              "Coxsackievirus type A21 can be transmitted via airborne droplets across a room",
+              "Associated with summer cold outbreaks"
+            ]
+          },
+          {
+            "name": "SARS-CoV-2 (Pandemic Coronavirus)",
+            "abbreviation": "SARS-CoV-2",
+            "notes": [
+              "Can cause cold-like symptoms especially with high population immunity",
+              "Pandemic caused by SARS-CoV-2 led to a revolution in respiratory virus research",
+              "With increased global immunity, COVID-19 may evolve toward a common cold pattern"
+            ]
+          },
+          {
+            "name": "Enterovirus D68",
+            "abbreviation": "EV-D68",
+            "notes": [
+              "Associated with respiratory illness and potential severe neurological complications",
+              "Listed by CDC as a cause of cold-like symptoms in the United States"
+            ]
+          }
+        ]
+      },
+      "epidemiology": {
+        "global_frequency": "The most frequent acute illness in the United States and throughout the industrialized world",
+        "incidence_by_age": {
+          "infants_and_young_children": "6–10 colds per year",
+          "school_age_children": "6–8 per year",
+          "adults": "2–4 per year",
+          "elderly": "fewer but more severe",
+          "note": "Incidence inversely related to age due to accumulating immunity from repeated exposures"
+        },
+        "seasonality": {
+          "year_round": true,
+          "peak_seasons": "autumn and winter in temperate climates",
+          "tropical_regions": "during rainy season",
+          "reason_for_winter_peak": [
+            "people spend more time indoors in close contact with others",
+            "cold air may impair local nasal defences by slowing mucociliary clearance",
+            "reduced vitamin D levels in winter may affect immune function",
+            "lower humidity may favour virus survival"
+          ],
+          "virus_specific_peaks": {
+            "rhinovirus": "early autumn and late spring",
+            "RSV": "winter, peak January",
+            "parainfluenza_types_1_2": "autumn",
+            "parainfluenza_type_3": "late spring",
+            "adenovirus_coronavirus": "winter and spring",
+            "echovirus_coxsackievirus": "summer"
+          }
+        },
+        "transmission_routes": {
+          "primary": "direct hand-to-hand contact — transfer of virus from infected person's hands to mucous membranes of susceptible person",
+          "secondary": "indirect contact via contaminated surfaces (fomites)",
+          "tertiary": "inhalation of respiratory aerosol droplets from coughing or sneezing within close range",
+          "most_likely_route": "direct hand contact",
+          "fomite_survival": {
+            "on_hands": "at least 2 hours",
+            "on_surfaces": "several hours",
+            "examples_of_contaminated_objects": [
+              "door handles",
+              "phones",
+              "pens",
+              "coffee cups",
+              "playing cards",
+              "countertops"
+            ],
+            "rhinovirus_recovery_from_hands": "40–90% of hands of infected persons",
+            "rhinovirus_recovery_from_objects": "6–15% of doorknobs and coffee cups"
+          },
+          "droplet_route": "possible when infected person coughs or sneezes and recipient is within a few feet",
+          "kissing": "low risk — only 1 of 16 susceptible recipients infected in a study of 1.5-minute kisses; saliva has little detectable virus 90% of the time",
+          "recirculated_air": "studies of commercial airliners show no difference in cold incidence with recirculated vs fresh air ventilation",
+          "contagiousness_period": {
+            "peak": "second day of illness when viral shedding is highest",
+            "duration": "low level viral shedding may persist for up to 2 weeks",
+            "incubation_note": "virus present in nasal washings during incubation period before symptoms begin"
+          }
+        },
+        "special_transmission_note": "The family is the major site for spread of rhinoviruses. The pool of infected donors is often the school population. Virus is then brought home and spread through the family."
+      },
+      "incubation_period": {
+        "range": "10 hours to 3 days",
+        "typical": "24–72 hours",
+        "earliest_possible": "10–12 hours after exposure",
+        "note": "Symptoms usually show up approximately 2 days after a person becomes infected"
+      },
+      "symptom_duration": {
+        "typical": "3–10 days",
+        "usual_range": "less than 1 week",
+        "extended_cases": "up to 2–3 weeks in some people",
+        "rapid_resolution_possible": "the cold may abort after only 1 day",
+        "specific_symptom_timeline": {
+          "sore_throat_sneezing_drowsiness": "decrease significantly by day 2–3",
+          "cough_nasal_discharge_postnasal_drip_throat_clearing": "may still be present on day 14 after onset"
+        }
+      },
+      "symptoms": {
+        "common_symptoms": [
+          {
+            "symptom": "Runny nose (rhinorrhoea)",
+            "details": "Initially clear and watery during first 2 days, then becomes more viscous and mucopurulent. The most common symptom of the common cold.",
+            "mechanism": "Bradykinin-induced nasal blood vessel dilation and increased glandular secretion"
+          },
+          {
+            "symptom": "Nasal congestion",
+            "details": "Stuffiness due to swelling and oedema of the nasal mucosa. Second most common symptom.",
+            "mechanism": "Inflammatory mediators causing vasodilatation and mucosal swelling"
+          },
+          {
+            "symptom": "Sneezing",
+            "details": "Often one of the earliest symptoms, frequently occurring in the first 1–2 days",
+            "mechanism": "Bradykinin and prostaglandin stimulation of nasal nerve endings"
+          },
+          {
+            "symptom": "Sore throat",
+            "details": "Common early symptom, typically mild. Often the very first sign of a developing cold. Decreases after day 2–3.",
+            "mechanism": "Bradykinin activating pain nerve endings in the throat"
+          },
+          {
+            "symptom": "Cough",
+            "details": "Usually mild; caused mainly by nasal obstruction and postnasal drip stimulating upper airway cough receptors. In young children RSV and parainfluenza can cause cough by direct lower respiratory tract invasion.",
+            "mechanism": "Postnasal drip stimulation of pharyngeal cough receptors; prostaglandins increase cough reflex sensitivity"
+          },
+          {
+            "symptom": "Headache",
+            "details": "Common, especially in early cold. More severe headache may suggest influenza.",
+            "mechanism": "Prostaglandin E2 mediates headache; cytokine-induced systemic inflammation"
+          },
+          {
+            "symptom": "Low-grade fever",
+            "details": "Temperature below 38°C (100.4°F). Uncommon in adults but may be present in children. High fever is NOT typical of the common cold — it suggests influenza or another diagnosis.",
+            "mechanism": "Cytokine IL-6, IL-8, TNF-alpha stimulate prostaglandin-mediated fever"
+          },
+          {
+            "symptom": "Mild body aches and muscle pain (myalgia)",
+            "details": "Mild muscle and joint aches. Severe myalgia is more characteristic of influenza.",
+            "mechanism": "Cytokine-induced systemic inflammation; prostaglandin E2 mediates muscle pain"
+          },
+          {
+            "symptom": "Fatigue and general malaise",
+            "details": "Feeling of illness and lethargy",
+            "mechanism": "Systemic cytokine effects including IL-6 and TNF-alpha"
+          },
+          {
+            "symptom": "Watering or red eyes (lacrimation)",
+            "details": "May appear early in the illness; virus can travel via tear ducts from eyes into nasal cavity",
+            "mechanism": "Inflammatory response in conjunctiva"
+          },
+          {
+            "symptom": "Loss of appetite",
+            "details": "Reduced desire to eat during active illness",
+            "mechanism": "Cytokine-mediated appetite suppression"
+          },
+          {
+            "symptom": "Postnasal drip",
+            "details": "Mucus dripping down the back of the throat; often contributes to persistent cough and throat clearing",
+            "mechanism": "Excess mucus production combined with impaired mucociliary clearance"
+          }
+        ],
+        "less_common_symptoms": [
+          "throat clearing",
+          "dry mouth",
+          "drowsiness",
+          "dizziness",
+          "weakness",
+          "abdominal discomfort (especially in children)",
+          "earache (secondary to eustachian tube dysfunction)"
+        ],
+        "symptom_prevalence_by_virus": {
+          "rhinovirus": {
+            "sore_throat_percent": 55,
+            "cough_percent": 45,
+            "rhinitis_percent": 90,
+            "nasal_congestion_percent": 90,
+            "fever_percent": 10,
+            "malaise_percent": 40
+          },
+          "RSV": {
+            "sore_throat_percent": 90,
+            "cough_percent": 65,
+            "rhinitis_percent": 80,
+            "nasal_congestion_percent": 95,
+            "fever_percent": 15,
+            "malaise_percent": 65
+          },
+          "coronavirus": {
+            "sore_throat_percent": 55,
+            "cough_percent": 50,
+            "rhinitis_percent": 90,
+            "nasal_congestion_percent": 90,
+            "fever_percent": 30,
+            "malaise_percent": 70
+          },
+          "adenovirus": {
+            "sore_throat_percent": 95,
+            "cough_percent": 80,
+            "rhinitis_percent": 70,
+            "conjunctivitis_percent": 15,
+            "fever_percent": 70,
+            "malaise_percent": 60
+          },
+          "parainfluenza": {
+            "sore_throat_percent": 75,
+            "cough_percent": 50,
+            "rhinitis_percent": 65,
+            "fever_percent": 20,
+            "malaise_percent": 45
+          }
+        },
+        "mechanism_of_symptoms": {
+          "overview": "Viral infection of the upper respiratory tract triggers a local innate immune response in the infected epithelium. This response generates all the symptoms of the common cold through two pathways: systemic cytokine-mediated symptoms and local inflammatory mediator-driven symptoms.",
+          "systemic_pathway": {
+            "trigger": "Pattern Recognition Receptors (PRRs) on epithelial cells and immune cells detect viral DNA and RNA",
+            "mediators": [
+              "interferons",
+              "interleukins (IL-6, IL-8)",
+              "tumour necrosis factor alpha (TNF-α)"
+            ],
+            "symptoms_produced": [
+              "fever",
+              "headache",
+              "muscle aches and pains",
+              "tiredness",
+              "mood changes"
+            ]
+          },
+          "local_pathway": {
+            "mediators": [
+              "bradykinin",
+              "lysyl bradykinin",
+              "prostaglandins (especially prostaglandin E2)"
+            ],
+            "bradykinin_mechanism": "Generated by release of kallikrein enzyme from epithelial cells converting kininogen to bradykinin. Acts on blood vessels and nerves.",
+            "bradykinin_symptoms": [
+              "sore throat pain",
+              "sneezing",
+              "runny nose",
+              "nasal blood vessel dilation",
+              "nasal congestion"
+            ],
+            "prostaglandin_mechanism": "Arachidonic acid released from membrane phospholipids by viral infection is converted to prostaglandins by cyclooxygenase enzymes. Prostaglandin E2 is most common.",
+            "prostaglandin_symptoms": [
+              "sore throat pain",
+              "nasal congestion",
+              "cough",
+              "runny nose",
+              "muscle aches",
+              "headache"
+            ],
+            "important_note": "Histamine is NOT a major mediator of common cold symptoms — unlike in allergic rhinitis. Kinins are more closely associated with cold symptoms than histamine. This explains why non-sedating antihistamines are ineffective for colds."
+          },
+          "prodromal_symptoms": "The first signs of a cold include throat irritation, sneezing, chilliness, mild fever, and tiredness — symptoms that may become more severe as infection progresses."
+        },
+        "symptom_most_prevalent_in_order": [
+          "throat clearing",
+          "nasal obstruction",
+          "nasal discharge",
+          "cough",
+          "postnasal drip",
+          "sneezing",
+          "sore throat",
+          "drowsiness",
+          "weakness",
+          "dry mouth",
+          "dizziness"
+        ],
+        "asymptomatic_infection": {
+          "possible": true,
+          "definition": "Subclinical infection — person is infected with virus but shows no symptoms",
+          "also_possible": "Exposure to cold viruses without becoming infected at all",
+          "study_data": "In a 2-year study, 69–74% of positive respiratory virus samples from healthy individuals were classified as asymptomatic"
+        }
+      },
+      "risk_factors": {
+        "overview": "The common cold is influenced by many biological, behavioural, environmental, and social factors. Risk factors affect both the incidence (how often you get colds) and the severity (how bad they are).",
+        "factors_increasing_incidence": [
+          {
+            "factor": "Young age",
+            "details": "Infants and children have undeveloped immune systems and have not yet acquired immunity through previous exposures. School-age children have 6–8 colds per year versus 2–4 for adults. Children in daycare or school settings have markedly increased exposure.",
+            "mechanism": "Immature immune system; no prior exposure to the many rhinovirus serotypes"
+          },
+          {
+            "factor": "Psychological stress",
+            "details": "Long-term psychological stress negatively impacts the immune system and mucosal immunity. Studies show a moderate correlation between stressful life events and incidence of common cold. A 1-year study of 1,149 subjects aged 23–68 found psychological stress was a risk factor.",
+            "mechanism": "Stress suppresses secretory immunoglobulin A (sIgA); cortisol release may compromise immune response"
+          },
+          {
+            "factor": "Insufficient sleep",
+            "details": "Poor sleep quality is an important predictor of cold susceptibility. Subjects with less than 7 hours of sleep were almost three times more likely to develop a cold than those with 8 or more hours, confirmed in multiple studies.",
+            "mechanism": "Sleep deprivation decreases mitogen proliferation of lymphocytes and affects multiple immune markers"
+          },
+          {
+            "factor": "Crowding and sociability",
+            "details": "Spending time in crowds — underground trains, supermarkets, theatres, cinemas, restaurants, parties — increases risk of circulating respiratory infections. Paradoxically, very sociable persons may have greater resistance than introverted persons despite more exposures, though the mechanism is unknown.",
+            "mechanism": "Direct contact and close proximity facilitates viral transmission"
+          },
+          {
+            "factor": "Smoking",
+            "details": "Smokers are more likely to develop infections after virus exposure and also more likely to develop illness compared to non-smokers. Smoking increases risk of respiratory infection.",
+            "mechanism": "Damages respiratory epithelium; alters structural, functional, and immunological host defences"
+          },
+          {
+            "factor": "Children in household or daycare settings",
+            "details": "Exposure to young children in daycare settings significantly increases cold risk. Women are almost twice as likely to develop a cold as men when children in the family are sick, because women have more contact with children.",
+            "mechanism": "Children are major virus shedders; close household contact increases transmission"
+          },
+          {
+            "factor": "No prior immunity to specific serotype",
+            "details": "Adults have fewer colds than children because they have accumulated partial immunity through exposure to many rhinovirus serotypes. However, with over 100 rhinovirus serotypes, complete immunity is never achieved.",
+            "mechanism": "Antibody-mediated protection against specific serotypes; each infection induces short-lived serotype-specific immunity"
+          },
+          {
+            "factor": "Season and weather",
+            "details": "More symptomatic infections in winter and during rainy season in tropics. People spend more time indoors in closer contact; cold inspired air may also slow mucociliary clearance and leukocyte activity.",
+            "mechanism": "Indoor crowding; cold air impairs local nasal defences; lower vitamin D in winter"
+          },
+          {
+            "factor": "Malnutrition",
+            "details": "Deficiency of calories, protein, vitamins C and D, and minerals impairs general health and immune function. Malnourished children in developing countries are particularly susceptible to respiratory infection morbidity and mortality.",
+            "mechanism": "Nutrients support epithelial integrity and immune cell function"
+          }
+        ],
+        "factors_increasing_severity": [
+          "underlying chronic diseases",
+          "immunodeficiency disorders",
+          "malnutrition",
+          "cigarette smoking",
+          "very young age (infants)",
+          "old age",
+          "asthma or chronic obstructive pulmonary disease (COPD)"
+        ],
+        "controversial_factor_cold_exposure": {
+          "folk_belief": "Getting chilled, going outside with wet hair, or getting caught in the rain causes colds",
+          "scientific_evidence": "Laboratory experiments involving challenge with cold viruses and chilling have failed to demonstrate any effect of cold exposure on susceptibility to infection. Cold temperatures do NOT directly cause colds.",
+          "nuanced_explanation": "There is a proposed mechanism: chilling of the body surface causes intense ischaemia and cooling of the pharynx and tonsils. This reflex vasoconstriction may reduce resistance to infection, potentially converting a subclinical infection into a symptomatic one. More people catch colds in cold weather because they spend more time indoors in prolonged contact with infected people — not because of the cold itself.",
+          "conclusion": "Cold temperatures do not directly cause the common cold. The virus must be present."
+        },
+        "alcohol_note": {
+          "evidence": "Moderate alcohol consumption (up to 3–4 drinks/day) was associated with decreased risk of developing a cold in non-smokers in one study. Moderate alcohol may have a beneficial effect on the immune system.",
+          "caution": "This does not constitute a recommendation to consume alcohol as prevention"
+        }
+      },
+      "pathophysiology": {
+        "overview": "The common cold is a syndrome of symptoms caused by the innate immune response to viral infection of the upper respiratory tract epithelium, not by direct tissue damage from the virus itself. Symptoms vary from person to person and depend on the infecting virus and the host's immune response.",
+        "viral_entry": {
+          "rhinovirus_entry": "Epithelial cells of the nasopharynx carry intercellular adhesion molecule-1 (ICAM-1) receptors. Rhinovirus binds these receptors to enter cells. Nasal epithelial cells do NOT have these receptors — explaining why rhinovirus causes minimal nasal mucosa destruction but consistent nasopharyngeal damage.",
+          "other_viruses": "Different viruses use different entry mechanisms and receptors"
+        },
+        "inflammatory_cascade": {
+          "step_1": "Virus infects respiratory epithelium and replicates",
+          "step_2": "Pattern Recognition Receptors (PRRs) detect viral RNA or DNA",
+          "step_3": "Activation of NF-κB signalling pathway",
+          "step_4": "Release of cytokines: interferons, IL-6, IL-8, TNF-alpha",
+          "step_5": "Recruitment of immune cells (neutrophils, macrophages, lymphocytes)",
+          "step_6": "Local inflammatory mediators generated: bradykinin, prostaglandins",
+          "step_7": "Nasal blood vessel dilation, mucosal oedema, increased secretion",
+          "step_8": "Systemic cytokine circulation producing fever, headache, myalgia, fatigue"
+        },
+        "nasal_mucosa_changes": {
+          "rhinovirus_infection": "Characterised by oedema and hyperaemia with transudative rhinorrhoea, WITHOUT direct damage to the columnar epithelium",
+          "influenza_contrast": "Influenza, adenoviruses, and parainfluenza viruses cause more severe cytopathic effects on respiratory epithelium",
+          "sequence": [
+            "Oedema of submucosal layers",
+            "Separation of epithelial cells by oedema fluid",
+            "Surface cells loosen and slough off",
+            "Necrotic zone develops below surface",
+            "Entire epithelium may disintegrate in severe cases",
+            "Cell regeneration begins from basement membrane"
+          ]
+        },
+        "mucopurulent_discharge": {
+          "appearance": "Yellow or green nasal discharge is NORMAL as the cold progresses",
+          "cause": "Influx of neutrophils and macrophages; does NOT indicate bacterial infection requiring antibiotics",
+          "clinical_implication": "Presence of coloured mucus is not a reason to prescribe antibiotics"
+        },
+        "eustachian_tube_effects": {
+          "findings": "2 days after rhinoviral infection, eustachian tube function was reduced to 50% of usual potency in studies",
+          "middle_ear_effect": "20% of infected persons had significant pressure changes in the middle ear",
+          "implication": "Creates conditions for secondary bacterial otitis media"
+        }
+      },
+      "diagnosis": {
+        "clinical_diagnosis": {
+          "basis": "Symptoms and observed signs — no laboratory tests required for typical uncomplicated cases",
+          "physical_examination_findings": [
+            "Swelling and congestion of nasal passages",
+            "Redness of the throat (mild, without exudate)",
+            "Possible enlarged lymph nodes in the neck",
+            "Normal lung examination",
+            "Clear to mucopurulent nasal discharge"
+          ],
+          "chest_xray": "NOT needed unless chest exam is abnormal or pneumonia is suspected"
+        },
+        "differential_diagnosis": {
+          "conditions_that_mimic_cold": [
+            {
+              "condition": "Allergic or seasonal rhinitis",
+              "differentiator": "Cough or sore throat usually NOT seen with allergies; itching is more prominent; symptoms are recurrent and triggered by allergens"
+            },
+            {
+              "condition": "Bacterial throat infection (streptococcal pharyngitis, tonsillitis)",
+              "differentiator": "Nasal congestion and drainage NOT generally seen; high fever; exudate on tonsils"
+            },
+            {
+              "condition": "Bacterial sinusitis",
+              "differentiator": "Usually associated with significant facial pain and purulent nasal discharge lasting beyond 10 days without improvement"
+            },
+            {
+              "condition": "Influenza (flu)",
+              "differentiator": "High fever (38–40°C), severe myalgia, headache, and rapid onset distinguish flu from cold. Rapid influenza test during flu season can confirm.",
+              "rule": "During flu season, obtain nasal swabs for rapid flu testing"
+            },
+            {
+              "condition": "Pertussis (whooping cough)",
+              "differentiator": "Associated with prolonged coughing, sometimes with vomiting; characteristic whoop sound"
+            },
+            {
+              "condition": "COVID-19",
+              "differentiator": "May be indistinguishable from common cold especially with high immunity; testing required if antiviral treatment eligibility is relevant"
+            },
+            {
+              "condition": "Vasomotor rhinitis",
+              "differentiator": "Non-infectious, triggered by environmental factors; no fever, no infectious prodrome"
+            }
+          ],
+          "five_differential_factors": [
+            "age",
+            "epidemiology (time of year, community patterns)",
+            "physical findings",
+            "progression of symptoms",
+            "laboratory tests"
+          ]
+        },
+        "laboratory_testing": {
+          "when_indicated": "Routine laboratory testing is NOT recommended for uncomplicated common cold",
+          "special_circumstances": [
+            "Rapid influenza antigen test when influenza is suspected during flu season",
+            "Rapid RSV test for high-risk infants under 2 years with compatible symptoms",
+            "COVID-19 testing when antiviral treatment may be indicated",
+            "C-reactive protein (CRP) can help distinguish viral (CRP <20 mg/L) from bacterial infection (CRP >40 mg/L)"
+          ],
+          "laboratory_tests_available": {
+            "rapid_EIA": {
+              "sensitivity": "adequate",
+              "time": "1 hour",
+              "detects": [
+                "influenza A",
+                "RSV"
+              ]
+            },
+            "TR_FIA": {
+              "sensitivity": "moderately sensitive",
+              "specificity": "very specific",
+              "time": "1 hour",
+              "detects": [
+                "RSV",
+                "influenza A/B",
+                "parainfluenza 1/2/3/4A/4B",
+                "some adenoviruses",
+                "echovirus 70",
+                "coxsackievirus A24 variant",
+                "coronaviruses 229E and OC43"
+              ]
+            },
+            "shell_vial_culture": {
+              "specificity": "97%",
+              "sensitivity": "95%",
+              "time": "24–48 hours",
+              "detects": [
+                "RSV A/B",
+                "parainfluenza 1/2/3",
+                "influenza",
+                "adenovirus"
+              ]
+            },
+            "nucleic_acid_PCR": {
+              "sensitivity": "highest",
+              "use": "reference labs, research, returned travellers, low parasitaemia",
+              "detection_limit": "as few as 10 molecules",
+              "detects": [
+                "rhinovirus",
+                "enterovirus",
+                "picornavirus",
+                "all respiratory viruses"
+              ]
+            },
+            "serology": {
+              "use": "IgG antibody testing — can be done any time, not just during acute illness",
+              "limitation": "not useful for acute diagnosis"
+            }
+          },
+          "tissue_culture": {
+            "time": "3–14 days for cytopathic effect",
+            "gold_standard_role": "viral culture remains important gold standard despite advances in antigen detection"
+          }
+        }
+      },
+      "complications": {
+        "overview": "The common cold itself is of itself harmless in most cases, but bacterial invasion may follow the initial viral infection. These secondary invaders may produce disorders of serious consequence. All respiratory viruses are associated with causing common cold syndrome, but mild illness can develop into more serious lower respiratory tract infections.",
+        "complications_list": [
+          {
+            "complication": "Acute otitis media (middle ear infection)",
+            "frequency": "most common complication of the common cold",
+            "mechanism": "Cold causes problems with drainage and pressure regulation of the middle ear through eustachian tube dysfunction; allows secondary bacterial infection",
+            "evidence": "In one study, more than 90% of patients with otitis media had cold symptoms that were suspected to be virally induced; middle ear fluid contained culturable bacteria in 50–70% of cases",
+            "risk_group": "young children"
+          },
+          {
+            "complication": "Acute bacterial sinusitis",
+            "frequency": "rare complication in adults",
+            "mechanism": "Viral sinusitis may be followed by secondary bacterial infection if mucociliary clearance is impaired",
+            "note": "Viral sinusitis (more common) will resolve within 3 weeks without antibiotics; bacterial sinusitis presents with worsening facial pain after initial improvement"
+          },
+          {
+            "complication": "Viral sinusitis",
+            "frequency": "more common than bacterial sinusitis",
+            "resolution": "within 3 weeks without antibiotics"
+          },
+          {
+            "complication": "Laryngitis",
+            "mechanism": "Inflammation of the larynx (voice box) causing hoarseness or voice loss"
+          },
+          {
+            "complication": "Tracheitis",
+            "mechanism": "Inflammation of the membrane lining the trachea (windpipe)"
+          },
+          {
+            "complication": "Bronchitis",
+            "mechanism": "Inflammation of the bronchial membranes; may develop if virus spreads to lower airways"
+          },
+          {
+            "complication": "Bronchiolitis",
+            "frequency": "mainly in infants under 2 years from RSV or parainfluenza",
+            "notes": [
+              "RSV can infect lungs especially in children, older adults, and immunocompromised",
+              "In 2015: 33.1 million RSV-related episodes globally in children under 5, with 3.2 million hospital admissions and over 11,800 deaths"
+            ]
+          },
+          {
+            "complication": "Croup (laryngotracheobronchitis)",
+            "mechanism": "Barking cough and stridor from subglottic swelling",
+            "cause": "Primarily parainfluenza virus in young children"
+          },
+          {
+            "complication": "Pneumonia",
+            "risk_groups": [
+              "infants",
+              "elderly",
+              "immunocompromised"
+            ],
+            "note": "Respiratory viruses previously believed restricted to upper airways are a common cause of lower respiratory infections"
+          },
+          {
+            "complication": "Asthma exacerbation",
+            "frequency": "rhinoviruses are a leading trigger for acute asthma attacks in children",
+            "evidence": "Rhinoviruses are responsible for considerable morbidity related to asthma exacerbation; airway hyperresponsiveness may persist up to 4 weeks post-infection",
+            "studies": [
+              "Johnston SL et al (1995): community study in 9–11 year old children linking viral infections to asthma exacerbations",
+              "Tovey ER et al (2015): rhinoviruses significantly affect day-to-day respiratory symptoms in children with asthma"
+            ]
+          },
+          {
+            "complication": "COPD exacerbation",
+            "mechanism": "Respiratory viruses are major triggers for acute exacerbations of chronic obstructive pulmonary disease and chronic bronchitis"
+          },
+          {
+            "complication": "Worsening of chronic conditions",
+            "examples": [
+              "asthma",
+              "COPD",
+              "heart failure",
+              "chronic bronchitis"
+            ]
+          }
+        ],
+        "serious_complication_warning_signs_requiring_emergency_care": [
+          "chest pain",
+          "persistent high fever not responsive to paracetamol or ibuprofen",
+          "persistent or increasing shortness of breath",
+          "severe headache combined with neck pain or stiffness",
+          "dizziness, weakness, confusion, or constant lack of energy"
+        ],
+        "signs_requiring_healthcare_provider_visit": [
+          "coughing up thick grey or bloody sputum",
+          "pain in sinuses or earache",
+          "development of even mild shortness of breath",
+          "fever lasting over 5 days",
+          "worsening symptoms after a few days of getting better",
+          "no improvement after 2 weeks",
+          "worsening asthma with cold symptoms"
+        ]
+      },
+      "treatment": {
+        "principle": "No cure exists for the common cold. No vaccines are currently available for the common cold. Treatments aim to relieve symptoms while the immune system clears the infection. The illness is self-limiting and will resolve on its own.",
+        "antibiotics": {
+          "effective": false,
+          "reason": "Antibiotics work against bacteria, NOT viruses. They do not kill viruses and provide no benefit for uncomplicated colds.",
+          "risks_of_unnecessary_antibiotics": [
+            "allergic reactions ranging from mild rash to severe anaphylaxis",
+            "antimicrobial-resistant infections",
+            "Clostridioides difficile (C. diff) infection causing serious diarrhoea",
+            "GI symptoms including nausea, vomiting, diarrhoea",
+            "swelling of the face",
+            "seizures",
+            "dizziness",
+            "contribution to antibiotic resistance in community"
+          ],
+          "exception": "Antibiotics are appropriate only if a secondary bacterial infection develops (e.g., bacterial sinusitis, pneumonia, bacterial otitis media)"
+        },
+        "antiviral_therapy": {
+          "common_cold_viruses": "There are currently no antivirals that work against rhinoviruses or other common respiratory viruses causing cold symptoms",
+          "covid_19": "If COVID-19 is diagnosed, antiviral treatment (e.g., nirmatrelvir/ritonavir) may be available and should be started within 5–7 days of symptom onset",
+          "influenza": "Antivirals for flu work best when started within 2 days of symptom onset",
+          "note": "Contact healthcare provider promptly if symptoms could be COVID-19 or flu in high-risk patients"
+        },
+        "symptomatic_treatments_adults": {
+          "analgesics_antipyretics": {
+            "drugs": [
+              "paracetamol (acetaminophen)",
+              "ibuprofen",
+              "aspirin"
+            ],
+            "indications": [
+              "fever",
+              "headache",
+              "muscle aches",
+              "sore throat pain",
+              "sinus pain"
+            ],
+            "paracetamol_dose": "500–1000 mg every 4–6 hours as needed while awake, with water (max 4000 mg/day)",
+            "paracetamol_liver_disease_dose": "maximum 3000 mg/day",
+            "ibuprofen_dose": "200–400 mg every 6–8 hours as needed with small snack (max 1200 mg/day)",
+            "ibuprofen_avoid_in": "persons over 65, pregnant women, severe liver or kidney disease, peptic ulcer disease, heart failure, history of stroke, GERD, IBD, liver cirrhosis",
+            "aspirin_note": "Aspirin reduces some cold symptoms but increases viral shedding duration; not recommended in children due to Reye's syndrome risk"
+          },
+          "nasal_decongestants_topical": {
+            "drugs": [
+              "oxymetazoline",
+              "xylometazoline",
+              "phenylephrine (nasal spray)"
+            ],
+            "mechanism": "Constrict nasal blood vessels, reducing mucosal swelling",
+            "dosing": "Use for 2–3 days maximum",
+            "critical_warning": "Limit use to 2–3 days — rebound congestion (rhinitis medicamentosa) occurs after 72 hours of use; the congestion may worsen. Can also cause nosebleeds, agitation, insomnia, and worsened hypertension.",
+            "contraindicated_in_infants": true,
+            "reasons_for_infant_contraindication": "Risk of serious CNS effects ranging from sedation to convulsive attacks resembling seizures in infants and young children"
+          },
+          "nasal_decongestants_oral": {
+            "drugs": [
+              "pseudoephedrine",
+              "phenylephrine"
+            ],
+            "efficacy": "Pseudoephedrine effective; phenylephrine (common OTC ingredient) is NOT very effective",
+            "side_effects": [
+              "rebound congestion",
+              "hypertension",
+              "insomnia",
+              "agitation"
+            ],
+            "pseudoephedrine_note": "Purchase limited due to use in manufacture of amphetamine drugs",
+            "not_recommended_in_young_children": true
+          },
+          "antihistamines": {
+            "first_generation": {
+              "drugs": [
+                "diphenhydramine (Benadryl)",
+                "chlorpheniramine",
+                "doxylamine",
+                "triprolidine"
+              ],
+              "benefit": "Modest benefit for sneezing and runny nose in adults",
+              "mechanism_of_limited_benefit": "Rhinorrhoea in colds is mediated by kinins, not histamine — antihistamines are not targeting the primary mediator",
+              "side_effects": [
+                "sedation/drowsiness",
+                "dry eyes, nose, mouth",
+                "urinary retention",
+                "paradoxical CNS excitation in children"
+              ],
+              "antihistamine_for_cough": "Thought to act indirectly by reducing postnasal drip",
+              "note": "Antihistamines may be helpful in adolescents and adults; NOT recommended in young children"
+            },
+            "second_generation": {
+              "drugs": [
+                "cetirizine (Reactine)",
+                "loratadine (Claritin)",
+                "fexofenadine"
+              ],
+              "efficacy_for_cold": "NOT effective for common cold symptoms",
+              "reason": "Second-generation antihistamines do not have the same anticholinergic properties; histamine is not the main mediator of cold symptoms"
+            }
+          },
+          "cromolyn_sodium": {
+            "brand": "NasalCrom",
+            "benefit": "May relieve runny nose, cough, and sneezing"
+          },
+          "antitussives_cough_suppressants": {
+            "dextromethorphan": {
+              "evidence": "Conflicting results; more effective than codeine in studies",
+              "indication": "May provide relief when persistent cough disrupts sleep or feeding",
+              "not_needed": "Cough suppression is usually not needed; cough reflex is a protective mechanism"
+            },
+            "codeine": {
+              "recommendation_in_children": "NOT recommended",
+              "risks_in_children": [
+                "respiratory depression",
+                "narcotic dependency",
+                "potential death"
+              ]
+            },
+            "antihistamines_for_cough": "May reduce cough through drying effect on mucosa and reduction of postnasal drip"
+          },
+          "expectorants": {
+            "guaifenesin": {
+              "brand": "Mucinex",
+              "claimed_benefit": "Thins secretions to ease cough",
+              "evidence": "One RCT in 65 young adults showed no change in cough or sputum thickness",
+              "note": "Despite popularity, evidence of benefit is limited"
+            }
+          },
+          "ipratropium_bromide_nasal_spray": {
+            "evidence": "5 RCTs in adults showed significant symptom relief, especially for excessive nasal discharge and sneezing",
+            "effect_duration": "3–4 hours per administration",
+            "not_recommended_in_children": true,
+            "side_effects": [
+              "blood-tinged secretions in 10–15%",
+              "nasal dryness"
+            ]
+          },
+          "zinc": {
+            "lozenges": {
+              "evidence": "Some studies show reduction in duration and severity of cold symptoms when taken within 24 hours of symptom onset",
+              "critical_warning": "Intranasal zinc products have been associated with PERMANENT loss of smell — CONTRAINDICATED as nasal products",
+              "child_evidence": "Studies in children taking zinc sulfate decreased cold rate, but adult studies are inconsistent"
+            }
+          },
+          "vitamin_c": {
+            "prevention": "Does NOT reduce cold incidence in the general population — routine supplementation NOT justified",
+            "treatment": "If started after onset of cold symptoms, does NOT reduce symptom severity or duration",
+            "regular_supplementation": "May slightly reduce duration of colds if taken regularly before illness onset",
+            "background": "Claims that vitamin C prevents and cures colds were popularised by Nobel laureate Linus Pauling in 1970; later large meta-analyses found no benefit for prevention"
+          },
+          "vitamin_d": {
+            "evidence": "Controversial. Some reports show no benefit; others report benefit especially in vitamin D deficient individuals"
+          },
+          "echinacea": {
+            "evidence": "Two of the most popular herbal treatments with some support from clinical trials. Clinical relevance of efficacy has been questioned by Cochrane reviews. Some support from RCTs."
+          },
+          "pelargonium": {
+            "evidence": "Some support from clinical trials for acute cough due to lower respiratory tract infection"
+          },
+          "iota_carrageenan": {
+            "claimed_benefit": "Antiviral medicine for common cold; studied in several clinical trials"
+          },
+          "intranasal_glucocorticoids": {
+            "examples": [
+              "Flonase",
+              "Nasonex",
+              "Nasacort"
+            ],
+            "evidence": "NOT effective for common cold symptoms; ARE effective for allergic rhinitis"
+          }
+        },
+        "symptomatic_treatments_children": {
+          "age_restriction_otc": {
+            "rule": "Over-the-counter cough and cold medicines are NOT recommended for children younger than 6 years old",
+            "reason": "Can result in serious and sometimes life-threatening side effects",
+            "US_FDA_position": "OTC cough/cold medicines not recommended for children under 6"
+          },
+          "fever_treatment_children": {
+            "drugs": [
+              "paracetamol (acetaminophen)",
+              "ibuprofen"
+            ],
+            "instruction": "Contact healthcare provider about correct dose; read and follow all directions",
+            "age_restriction_ibuprofen": "Avoid in infants under 6 months without medical guidance"
+          },
+          "codeine_in_children": "NOT recommended — risk of respiratory depression and narcotic dependency",
+          "topical_decongestants_infants": "CONTRAINDICATED — risk of serious CNS effects including convulsions",
+          "honey_for_cough": {
+            "efficacy": "Safe and effective for cough relief in children 1 year and older",
+            "contraindication": "Babies under 1 year should NOT be given honey — risk of infant botulism"
+          },
+          "combination_products": "Combination products containing topical anaesthetic agents, mucolytics, antihistamines, oral decongestants, antitussives, and anticholinergics should be avoided in young children. The American Academy of Pediatrics advises against use of combination cough and cold remedies."
+        },
+        "supportive_home_care": {
+          "rest": {
+            "recommendation": "Get plenty of sleep. Adjust sleeping position to prop head up with pillows to help mucus drainage.",
+            "rationale": "Sleep is critical for immune function; adults with less than 7 hours sleep are nearly 3 times more likely to develop a cold"
+          },
+          "fluids": {
+            "recommendation": "Drink plenty of fluids — 8 glasses per day. Water and fruit juice are ideal. Warm fluids such as tea and soups are especially soothing.",
+            "benefits": [
+              "help with hydration",
+              "soothe symptoms",
+              "loosen secretions"
+            ],
+            "honey_addition": "Adding honey can relieve sore throats and coughs in adults and children over 1 year"
+          },
+          "humidifier": {
+            "recommendation": "Use a cool-mist humidifier or vaporizer to increase air moisture and ease breathing",
+            "warning": "Breathe some steamy air but NOT hot steam directly — hot steam can damage nasal passages and cause burns"
+          },
+          "saline_nasal": {
+            "drops_and_sprays": "Saline nose drops or sprays are safe and effective for clearing congestion, especially in infants and young children",
+            "gargling": "Gargling with salt water can help clear mucus and soothe sore throats — mix half teaspoon of salt in 8 ounces of warm water",
+            "suction_bulb": "For young children, use a rubber suction bulb to clear mucus from nasal passages"
+          },
+          "throat_lozenges": {
+            "recommendation": "Use throat lozenges or cough drops for sore throat relief",
+            "age_restriction": "Do not give lozenges to children younger than 4 years old — aspiration risk"
+          },
+          "diet": "Eat a healthy diet high in fresh fruits (berries, citrus) and vegetables (leafy greens, peppers, carrots) to support immune function",
+          "smoking": "Limit smoking or vaping — these worsen symptoms and delay recovery",
+          "steam_inhalation": {
+            "sitting_in_steam_shower": "Sitting in a bathroom with steam from a running shower may relieve congestion",
+            "hot_steam_inhalation": "NOT recommended — hot steam can damage nasal mucosa; double-blind RCT showed breathing steam demonstrated increased airway resistance and fourfold increase in side effects"
+          },
+          "chicken_soup": {
+            "tradition": "Reported positive effects attributed to mucolytic effects of vapours from hot soup; may also stimulate nasal mucus production and loosen respiratory secretions",
+            "evidence": "Traditional use and soothing effect support recommending warm teas or soups"
+          }
+        },
+        "treatment_categories": {
+          "before_cold_immune_support": "Vitamins, minerals, probiotics, herbal medicines — evidence for most is limited; market valued over $20 billion USD in 2021",
+          "at_first_signs_antiviral": "No proven over-the-counter antiviral for common cold viruses available",
+          "during_cold_symptom_relief": "Main category of treatment; see symptomatic treatments above"
+        }
+      },
+      "prevention": {
+        "overview": "No vaccine is currently available for the common cold. Prevention relies on hygiene measures to interrupt transmission, general immune health practices, and reducing exposure to infectious contacts.",
+        "handwashing": {
+          "recommendation": "Frequent handwashing with soap and water — the single most effective preventive measure",
+          "duration": "at least 20 seconds",
+          "when": [
+            "after blowing nose",
+            "after coughing or sneezing",
+            "before touching face",
+            "after contact with sick persons"
+          ],
+          "rationale": "Rhinovirus recovered from 40–90% of hands of persons with colds; virus can survive on hands for at least 2 hours",
+          "alternative": "Alcohol-based hand sanitiser when soap and water unavailable (though studies show alcohol gels may be less effective when virus spreads by aerosol route)"
+        },
+        "avoiding_face_touching": {
+          "recommendation": "Avoid touching eyes, nose, and mouth with unwashed hands",
+          "reason": "These are the entry routes for cold viruses into the body; virus can reach the nose when eyes are rubbed because tear ducts connect eyes to nasal cavity"
+        },
+        "respiratory_etiquette": {
+          "recommendation": "Cough and sneeze into your elbow or a tissue; dispose of tissues immediately",
+          "face_masks": "Use face masks when sick or around sick contacts"
+        },
+        "avoiding_close_contact": {
+          "recommendation": "Avoid close contact with people who have a cold",
+          "crowded_places": "Reduce time in crowded indoor spaces during cold season"
+        },
+        "surface_disinfection": {
+          "recommendation": "Disinfect commonly touched surfaces (phones, doorknobs, desks) with approved disinfectants",
+          "evidence": "Iodine or phenol/alcohol disinfectants can interrupt transmission of rhinoviral infections in studies"
+        },
+        "not_sharing": "Do NOT share food, drinks, utensils, or personal items with sick individuals",
+        "sleep": {
+          "recommendation": "Get 7–8 hours of sleep per night",
+          "evidence": "Poor sleep quality is an important predictor of cold susceptibility; less than 7 hours of sleep nearly triples cold risk"
+        },
+        "stress_management": "Manage chronic stress — prolonged psychological stress impairs mucosal and cellular immunity",
+        "diet_and_exercise": {
+          "diet": "Maintain a healthy diet rich in fruits and vegetables to support immune function",
+          "exercise": "Moderate exercise claimed to have beneficial effects on immune system and association with fewer sick days. However, a meta-analysis of 11 trials could not confirm this, and more research is needed. Severe exercise can INCREASE cold incidence in athletes."
+        },
+        "vaccines": {
+          "common_cold": "No vaccine available for common cold — the large number of rhinovirus serotypes makes a universal vaccine impractical",
+          "influenza": "Annual influenza vaccination reduces flu-related respiratory illness; does NOT protect against rhinovirus or other cold viruses",
+          "RSV_elderly": "RSV vaccine (Abrysvo, mRESVIA) approved by FDA in May 2023 for adults 60 years and older",
+          "RSV_infants": "Nirsevimab (Beyfortus) monoclonal antibody recommended for infants and young children to prevent severe RSV infection",
+          "vitamin_supplements": "Regular supplementation with vitamins C, D, and E have NOT been shown to decrease incidence of colds in general population"
+        },
+        "travel_precautions": {
+          "airline_travel": "Studies show no difference in cold incidence with recirculated vs fresh air in commercial airliners — air conditioning is NOT a cause of colds"
+        }
+      },
+      "special_populations": {
+        "infants_and_young_children": {
+          "vulnerability": "Infants start life with little immunity and high incidence of colds (6–10/year); maternal immunity from breast milk declines in first year",
+          "maternal_immunity": {
+            "transfer": "Immunoglobulins transferred via placenta and breast milk",
+            "duration": "Declines in first year as infant ceases breastfeeding; immunoglobulins have relatively short half-life",
+            "covid_pandemic_effect": "During COVID-19 pandemic, reduced circulation of common respiratory viruses led to lower antibody levels in maternal milk, contributing to RSV resurgence when restrictions were lifted"
+          },
+          "otc_restrictions": "OTC cough and cold medicines NOT recommended under 6 years due to serious side effect risk",
+          "treatment_options": [
+            "paracetamol or ibuprofen for fever",
+            "saline nasal drops",
+            "honey for cough (over 1 year only)",
+            "fluids and rest"
+          ],
+          "complications_risk": "Higher risk of otitis media, bronchiolitis, and croup"
+        },
+        "elderly": {
+          "vulnerability": "Waning immunity associated with old age leads to more severe outcomes from respiratory viruses",
+          "rsv_risk": "RSV is a significant cause of morbidity and mortality in elderly, causing exacerbation of chronic respiratory and cardiac disease",
+          "mortality_risk": "Elderly patients may die if cold-like symptoms are not distinguished from influenza"
+        },
+        "pregnant_women": {
+          "treatment": "Paracetamol is safe in all trimesters for symptom relief",
+          "ibuprofen": "Avoid in third trimester of pregnancy",
+          "aspirin": "Avoid",
+          "covid_flu_antivirals": "Contact healthcare provider promptly if COVID-19 or flu is suspected — antiviral treatment may be available and is especially important in pregnancy"
+        },
+        "immunocompromised_patients": {
+          "risk": "Higher severity and risk of complications",
+          "common_cold_to_serious_illness": "What is a mild cold in healthy individuals can progress to pneumonia or severe lower respiratory disease in immunocompromised patients"
+        },
+        "asthma_patients": {
+          "rhinovirus_risk": "Rhinovirus infection is a major trigger for acute asthma attacks in children",
+          "airway_hyperresponsiveness": "May persist up to 4 weeks after a cold",
+          "management": "Worsening asthma with colds requires healthcare provider visit"
+        },
+        "parenthood_effect": {
+          "finding": "Parenthood has been reported to DECREASE the chance of developing cold symptoms when challenged with a common cold virus. There was a clear increase in protection with having more children in the family.",
+          "mechanism": "Unknown — the resistance was independent of pre-challenge viral-specific immunity, suggesting a non-antibody-mediated protective mechanism"
+        }
+      },
+      "frequently_asked_questions": [
+        {
+          "question": "What is the common cold?",
+          "answer": "The common cold is a mild, self-limiting viral infection of the upper respiratory tract — including the nose, sinuses, throat, and windpipe. It is caused by over 200 different viruses, most commonly rhinoviruses. It is the most frequent acute illness in humans, with adults averaging 2–4 colds per year and young children having 6–10 colds per year. Symptoms typically last less than a week and include runny nose, congestion, sore throat, sneezing, and cough."
+        },
+        {
+          "question": "Is there a cure or vaccine for the common cold?",
+          "answer": "No. There is currently no cure and no vaccine for the common cold. Because colds are caused by over 200 different viruses — including more than 100 rhinovirus serotypes — developing a single vaccine is not practical. Treatment focuses entirely on relieving symptoms while the immune system clears the infection, usually within 7–10 days. Rest, fluids, and over-the-counter symptom relief medicines are the main approaches."
+        },
+        {
+          "question": "Do antibiotics help treat the common cold?",
+          "answer": "No. Antibiotics only kill bacteria and have absolutely no effect on viruses. Using antibiotics for a cold provides no benefit and causes harmful side effects including diarrhoea, allergic reactions, and the development of antibiotic-resistant bacteria. Antibiotics should only be used if a secondary bacterial infection develops — such as bacterial sinusitis, ear infection, or pneumonia — which a doctor must confirm."
+        },
+        {
+          "question": "How does the common cold spread?",
+          "answer": "The cold spreads primarily through hand-to-hand contact. When an infected person touches their own nose, they contaminate their hands, and when a susceptible person shakes that hand and then touches their own eyes or nose, the virus enters their respiratory tract. Viruses can also survive on surfaces for several hours. Breathing in aerosol droplets from an infected person's cough or sneeze is also a route of spread, though this requires close proximity. Kissing poses very low risk."
+        },
+        {
+          "question": "How is the common cold different from influenza (flu)?",
+          "answer": "Both are viral respiratory infections, but flu is generally much more severe. The common cold comes on gradually and mainly causes nasal symptoms. Flu comes on suddenly and is characterised by high fever (38–40°C), severe muscle aches, headache, and significant fatigue. Fever and myalgia are NOT typical of a common cold in adults. Flu is more likely to cause serious complications such as pneumonia. If you have severe systemic symptoms during flu season, see a doctor and ask about rapid influenza testing."
+        },
+        {
+          "question": "Can the same person get more than one cold a year?",
+          "answer": "Yes. Adults typically get 2–4 colds per year and children get 6–10. This is because there are over 200 cold viruses with more than 100 rhinovirus serotypes, and immunity to one strain does not protect against others. Also, immunity wanes after each infection. The same virus can cause another cold after re-exposure, though the second illness is usually milder."
+        },
+        {
+          "question": "Should I see a doctor for a cold?",
+          "answer": "Most colds do not require a doctor visit. However, seek emergency care if you have chest pain, severe shortness of breath, or confusion. See a healthcare provider if you have a fever lasting more than 5 days, symptoms worsening after initially improving, symptoms persisting more than 10 days without improvement, thick grey or bloody sputum, ear pain, or if you are at high risk from COVID-19 or flu — where antiviral treatment may be available and beneficial."
+        },
+        {
+          "question": "Are OTC cold medicines safe for children?",
+          "answer": "Over-the-counter cough and cold medicines are NOT recommended for children younger than 6 years old and can cause serious, sometimes life-threatening side effects. For fever, children can take paracetamol or ibuprofen. Honey (in children over 1 year), saline nasal drops, fluids, and rest are recommended safe options. Never give lozenges to children under 4 years old. Always consult a healthcare provider about the correct dose for children."
+        },
+        {
+          "question": "Does cold weather cause colds?",
+          "answer": "No. Colds are caused by viruses, not cold temperatures. However, people tend to catch colds more often in cold weather because they spend more time indoors in closer contact with others, facilitating virus transmission. There is also some evidence that cold air may impair local nasal defences. But without exposure to a cold virus, cold weather alone cannot cause a cold."
+        },
+        {
+          "question": "How can I prevent getting a cold?",
+          "answer": "The most effective prevention is frequent handwashing with soap and water for at least 20 seconds. Avoid touching your eyes, nose, and mouth with unwashed hands. Cough and sneeze into your elbow or a tissue. Avoid close, prolonged contact with sick people. Disinfect commonly touched surfaces. Do not share food or utensils. Get adequate sleep (7–8 hours) and manage stress. No vaccine or supplement has been proven to reliably prevent colds."
+        },
+        {
+          "question": "How long am I contagious when I have a cold?",
+          "answer": "You are most contagious during the first 2–3 days of illness, when viral shedding is highest. However, low levels of virus can be shed for up to 2 weeks. You can also spread the virus in the incubation period (24–72 hours before symptoms begin). Good hand hygiene and covering coughs remain important throughout the illness and even before symptoms appear."
+        },
+        {
+          "question": "Can I go to work or school with a cold?",
+          "answer": "If you feel well enough to carry out normal activities, it may be acceptable to go in, but take precautions to avoid spreading the virus. Practice meticulous hand hygiene, cover coughs and sneezes, and avoid touching your face. Consider staying home if symptoms are severe or if your workplace involves contact with vulnerable individuals (the elderly, immunocompromised patients, or infants)."
+        },
+        {
+          "question": "Why do some people get more colds than others?",
+          "answer": "Several factors affect cold susceptibility: chronic psychological stress (triples risk), poor sleep (less than 7 hours nearly triples risk), smoking, crowded living or working conditions, young age, weakened immune system, and nutritional deficiency. Paradoxically, very sociable people who have many social contacts tend to have GREATER resistance to infection, possibly because frequent low-level exposures build broader immunity."
+        }
       ],
-      "description": "The common cold is a contagious viral infection of the upper respiratory tract — including the nose, sinuses, throat, and windpipe — caused by more than 200 different respiratory viruses, most commonly rhinoviruses. It is the most frequent acute illness in humans, with adults averaging 2–3 colds per year and young children experiencing 4 or more. There is no cure; the illness is self-limiting and typically resolves within 7–10 days, but it can cause serious complications such as pneumonia or bronchiolitis in vulnerable populations including infants, the elderly, and the immunocompromised.",
-      "common_symptoms": [
-        "Runny nose (rhinorrhoea) — initially watery, later thick and discoloured",
-        "Nasal congestion (stuffy nose)",
-        "Sneezing",
-        "Sore or scratchy throat (often the first symptom, days 1–3)",
-        "Cough (usually mild; caused by postnasal drip)",
-        "Headache",
-        "Mild body aches and muscle pain",
-        "Low-grade fever (more common in children than adults)",
-        "Fatigue and general malaise",
-        "Watery or red eyes (lacrimation)",
-        "Hoarseness (days 1–3)",
-        "Loss of appetite",
-        "Postnasal drip",
-        "Tickle or irritation in the throat (early sign, days 1–3)"
-      ],
-      "severe_symptoms": [
-        "High fever above 39°C (102°F) — suggests influenza or another serious infection, not typical cold",
-        "Severe or worsening shortness of breath or fast breathing",
-        "Wheezing or laboured breathing",
-        "Chest pain or tightness",
-        "Persistent vomiting",
-        "Extreme fatigue or inability to stay awake",
-        "Confusion or altered mental status",
-        "Severe headache with neck stiffness (may indicate meningitis)",
-        "Blue or grey lips or fingernails (cyanosis) — emergency sign in children",
-        "Dehydration (no urination, dry mouth, sunken eyes)",
-        "Ribs showing with each breath in children",
-        "Fever in an infant younger than 2 months old (any temperature)",
-        "Ear pain or new hearing difficulty (possible otitis media)",
-        "Symptoms improving then returning or worsening (suggests secondary bacterial infection)",
-        "Cough persisting more than 3 weeks in children or more than 8 weeks in adults"
-      ],
-      "causes": [
-        "Rhinoviruses — most common cause; responsible for up to 50% of colds; over 100 serotypes",
-        "Common human coronaviruses (OC43, 229E, NL63, HKU1) — 15–21% of colds",
-        "Parainfluenza viruses (types 1–4)",
-        "Adenoviruses — over 50 serotypes",
-        "Enteroviruses including Enterovirus D68 (EV-D68)",
-        "Human metapneumovirus (hMPV)",
-        "Human bocavirus (HBoV)",
-        "Respiratory syncytial virus (RSV) — also causes cold-like symptoms but is more likely to cause severe illness",
-        "Respiratory droplets released when an infected person coughs or sneezes — inhaled or deposited on mucous membranes of eyes, nose, or mouth",
-        "Direct contact with contaminated surfaces (fomites) — viruses survive on surfaces for several hours — followed by touching eyes, nose, or mouth",
-        "Close personal contact with an infected person (e.g., shaking hands)"
-      ],
-      "risk_factors": [
-        "Young age — children under 6 years get 4–10 colds per year due to immature immune systems and daycare/school exposure",
-        "Old age — waning immunity in elderly increases risk of severe outcomes",
-        "Weakened or compromised immune system (HIV/AIDS, chemotherapy, organ transplant)",
-        "Chronic conditions such as asthma, COPD, heart failure — increases risk of complications",
-        "Exposure to crowded settings — schools, daycares, offices, public transport, theatres",
-        "Smoking or vaping — damages respiratory epithelium and impairs local defences",
-        "Psychological stress — suppresses mucosal immunity (secretory IgA)",
-        "Insufficient sleep — less than 7 hours nearly triples cold susceptibility",
-        "Poor nutrition — deficiency of vitamins C and D and protein impairs immune function",
-        "Autumn and winter season — indoor crowding increases transmission; cold air may slow nasal defences",
-        "Lack of prior immunity to a specific virus serotype",
-        "Living with or caring for young children who attend school or daycare"
-      ],
-      "diagnosis_methods": [
-        "Clinical diagnosis — based on symptoms and physical examination alone in typical cases; no laboratory tests required",
-        "Physical examination: nasal swelling and congestion, mild throat redness without exudate, normal lung auscultation",
-        "Nasal or throat swab — to rule out influenza, COVID-19, streptococcal pharyngitis, or RSV when suspected",
-        "Rapid influenza antigen test (EIA/rapid flu test) — during flu season when influenza is suspected",
-        "Rapid RSV antigen test — for high-risk infants under 2 years with compatible symptoms",
-        "COVID-19 rapid antigen test or PCR — if COVID-19 is clinically possible, especially in high-risk individuals",
-        "Nasopharyngeal swab with PCR — for comprehensive respiratory virus panel; used in severe cases, immunocompromised patients, or hospitalised patients",
-        "Throat culture for Group A Streptococcus — to rule out bacterial strep throat when exudate or high fever is present",
-        "Chest X-ray — only indicated if pneumonia is clinically suspected (abnormal lung examination)"
-      ],
-      "treatment_options": [
-        "No cure exists for the common cold — treatment is entirely symptomatic and supportive",
-        "Rest — adequate sleep supports immune function and recovery",
-        "Hydration — 8 or more glasses of water, fruit juice, or warm fluids daily",
-        "Over-the-counter (OTC) pain relievers and fever reducers — paracetamol (acetaminophen) or ibuprofen for fever, headache, sore throat, and body aches",
-        "Saline nasal spray or drops — for nasal congestion relief; safe for all ages including infants",
-        "Nasal suction bulb — for clearing mucus in young infants and toddlers",
-        "Cool-mist humidifier or vaporizer — adds moisture to the air to ease breathing",
-        "Steam inhalation — sitting in a bathroom with steam from a running shower (do not use hot steam directly on face)",
-        "Throat lozenges or cough drops — for sore throat relief in adults and children 4 years and older",
-        "Honey — for cough relief in adults and children 1 year and older (do not give to infants under 1 year)",
-        "OTC decongestants (pseudoephedrine, oxymetazoline nasal spray) — short-term use for adults; NOT recommended for children under 6",
-        "OTC first-generation antihistamines (chlorpheniramine, diphenhydramine) — modest benefit for runny nose and sneezing in adults",
-        "OTC cough suppressants (dextromethorphan) — for troublesome cough in adults; NOT recommended for children under 6",
-        "Antiviral treatment for COVID-19 or flu — if COVID-19 or flu is diagnosed, antivirals (e.g., nirmatrelvir/ritonavir for COVID-19; oseltamivir for flu) must be started within 5–7 days for COVID-19 or 2 days for flu",
-        "Antibiotics — ONLY if a secondary bacterial infection is confirmed (pneumonia, bacterial sinusitis, bacterial otitis media); antibiotics have NO role in treating viral colds"
-      ],
-      "medications": [
-        "Paracetamol (acetaminophen) — 500–1000 mg every 4–6 hours as needed (max 4000 mg/day); for fever, headache, body aches, sore throat",
-        "Ibuprofen (NSAID) — 200–400 mg every 6–8 hours with food (max 1200 mg/day OTC); avoid in elderly, pregnant women, kidney or GI disease",
-        "Oxymetazoline nasal spray (Otrivin, Dristan) — topical decongestant; maximum 2–3 days use to avoid rebound congestion",
-        "Xylometazoline nasal spray — topical decongestant; maximum 2–3 days",
-        "Pseudoephedrine (Sudafed) — oral decongestant; use with caution in hypertensive patients",
-        "Phenylephrine — oral decongestant; commonly found in OTC products; limited clinical efficacy",
-        "Chlorpheniramine (Chlor-Trimeton) — first-generation antihistamine; modest benefit for sneezing and runny nose; causes drowsiness",
-        "Diphenhydramine (Benadryl) — first-generation antihistamine and antitussive; causes significant sedation",
-        "Doxylamine — sedating antihistamine; available in some combination cold products",
-        "Dextromethorphan (DM) — antitussive cough suppressant; for adults and children 12+ years",
-        "Guaifenesin (Mucinex) — expectorant; thins secretions to facilitate cough; limited evidence for benefit",
-        "Saline nasal spray or drops — safe, non-medicated; suitable for all ages including infants",
-        "Ipratropium bromide nasal spray — anticholinergic; reduces nasal discharge and sneezing in adults; evidence from 5 RCTs",
-        "Zinc gluconate lozenges — some evidence for reduction of cold duration if taken within 24 hours of symptom onset; do NOT use intranasal zinc (risk of permanent anosmia)",
-        "Cromolyn sodium nasal spray (NasalCrom) — may relieve runny nose and sneezing",
-        "Honey — for cough; effective and safe in children 1 year and older and adults",
-        "Nirmatrelvir/ritonavir (Paxlovid) — antiviral for COVID-19 if applicable; start within 5 days of symptom onset",
-        "Oseltamivir (Tamiflu) — antiviral for influenza if applicable; start within 48 hours of symptom onset"
-      ],
-      "lifestyle_home_remedies": [
-        "Get plenty of rest — allow the immune system to fight the infection effectively",
-        "Elevate head with extra pillows during sleep to ease nasal congestion and improve breathing",
-        "Drink 8 or more glasses of fluids daily — water, herbal tea, warm broths, or fruit juice",
-        "Drink warm fluids such as chicken soup, herbal tea with honey and lemon — soothes throat and loosens secretions",
-        "Use a clean cool-mist humidifier or vaporizer in your bedroom",
-        "Breathe steam from a bowl of hot water or a hot shower to ease congestion",
-        "Gargle with warm salt water — half teaspoon of salt in 8 ounces of warm water — for sore throat relief",
-        "Rinse nasal passages with saline drops or spray to clear congestion",
-        "Apply menthol vapour rub to chest and throat for temporary congestion relief in adults",
-        "Limit or avoid smoking and vaping — prolongs symptoms and impairs recovery",
-        "Wash hands frequently with soap and water for at least 20 seconds",
-        "Avoid touching eyes, nose, and mouth with unwashed hands",
-        "Cough and sneeze into a tissue or elbow and dispose of tissues immediately",
-        "Disinfect frequently touched surfaces (doorknobs, phones, keyboards)",
-        "Stay home and avoid close contact with others, especially vulnerable individuals"
-      ],
-      "diet_recommended": [
-        "Warm fluids — chicken soup, herbal teas, broths — help soothe symptoms and loosen secretions",
-        "Honey in warm tea or water — natural cough suppressant and throat soother (not for infants under 1 year)",
-        "Citrus fruits (oranges, lemons, grapefruits) — rich in vitamin C; supportive of immune function",
-        "Berries (blueberries, strawberries) — high in antioxidants",
-        "Leafy green vegetables (spinach, kale) — rich in vitamins and minerals supporting immunity",
-        "Garlic — contains allicin; traditionally used for antimicrobial properties",
-        "Ginger — anti-inflammatory properties; soothes sore throat and nausea in warm tea",
-        "Yoghurt with live cultures — probiotics may support gut-immune axis",
-        "Water and clear fluids — maintain hydration; prevent dehydration especially with fever",
-        "Warm porridge or oatmeal — easy to swallow when throat is sore; provides energy",
-        "Bananas and soft fruits — easy to eat when appetite is reduced and throat is sore"
-      ],
-      "diet_to_avoid": [
-        "Alcohol — dehydrates the body and may impair immune function; avoid especially during active illness",
-        "Caffeinated beverages in excess — coffee, energy drinks, caffeinated sodas — can worsen dehydration",
-        "Dairy products (in some individuals) — may increase mucus thickness in certain people; consider reducing if mucus seems worse",
-        "Very spicy foods — may irritate an already inflamed sore throat",
-        "Cold, icy drinks — can worsen sore throat and throat irritation",
-        "Fried and heavily processed foods — high in saturated fat; may promote inflammation",
-        "Sugary foods and drinks — excess sugar may temporarily impair white blood cell immune function",
-        "Smoking and tobacco products — significantly worsen respiratory symptoms and impair recovery"
-      ],
-      "complications": [
-        "Acute otitis media (middle ear infection) — most common complication; especially in young children; caused by eustachian tube dysfunction allowing secondary bacterial infection",
-        "Acute bacterial sinusitis — rare; presents with worsening facial pain and purulent discharge persisting beyond 10 days without improvement",
-        "Viral sinusitis — more common than bacterial; typically resolves within 3 weeks without antibiotics",
-        "Bronchiolitis — infection of the small airways; mainly affects infants under 2 years from RSV; can require hospitalisation",
-        "Bronchitis — infection of the large airways; inflammation of bronchial membranes",
-        "Pneumonia — serious lower respiratory tract infection; more common in infants, elderly, or immunocompromised individuals",
-        "Croup (laryngotracheobronchitis) — barking cough and stridor in young children; mainly caused by parainfluenza virus",
-        "Asthma exacerbation — rhinovirus infections are a leading trigger for acute asthma attacks in children; airway hyperresponsiveness may persist 4 weeks post-infection",
-        "Exacerbation of COPD or chronic bronchitis — respiratory viruses trigger acute exacerbations of chronic lung disease",
-        "Laryngitis — inflammation of the voice box causing hoarseness or voice loss",
-        "Worsening of other chronic medical conditions — including heart failure, COPD, and other chronic illnesses",
-        "Secondary bacterial infections — in rare cases viral infection precedes serious bacterial illness such as bacterial meningitis or sepsis"
-      ],
-      "when_to_see_doctor": "See a healthcare provider if you or your child has symptoms of a respiratory virus and is at higher risk of severe illness from COVID-19 or flu. Also see a provider if symptoms do not begin to improve within 10 days, if fever lasts longer than 4–5 days, if symptoms initially improve and then return or worsen (suggesting a secondary infection), if thick grey or bloody sputum is produced, if earache or sinus pain develops, or if you have chronic medical conditions such as asthma, COPD, diabetes, or heart disease that are getting worse. Infants under 3 months with any fever should be seen by a provider promptly.",
-      "emergency_signs": [
-        "Trouble breathing or fast breathing in any age group",
-        "Severe shortness of breath or laboured breathing",
-        "Wheezing or noisy breathing (stridor)",
-        "Chest pain",
-        "Persistent high fever that does not respond to paracetamol or ibuprofen",
-        "Blue, grey, or pale lips or fingernails (cyanosis) — especially in infants and children",
-        "Ribs showing with each breath in a baby or child",
-        "Dehydration — no urination for 8 or more hours, dry mouth, sunken eyes, no tears when crying",
-        "Fever in an infant younger than 2 months old (any temperature requires emergency evaluation)",
-        "Confusion, unresponsiveness, or inability to be roused normally",
-        "Severe headache combined with neck stiffness and sensitivity to light (may indicate meningitis)",
-        "Baby or child appears to be getting noticeably sicker",
-        "Severe weakness or inability to stand or walk",
-        "Persistent vomiting preventing oral fluid intake",
-        "Symptoms suggestive of COVID-19 or influenza in a high-risk individual — contact provider immediately even with mild symptoms"
-      ]
+      "emergency_signs": {
+        "seek_emergency_care_immediately": [
+          "Trouble breathing or fast breathing",
+          "Chest pain",
+          "Severe shortness of breath or persistent increasing shortness of breath",
+          "Severe headache combined with neck pain or stiffness (may indicate meningitis)",
+          "Confusion, altered consciousness, or dizziness",
+          "Severe weakness or inability to carry out normal activities",
+          "Signs of dehydration (no urination, sunken eyes, dry mouth)",
+          "Infants with fast breathing, chest indrawing, poor feeding, or bluish lips",
+          "Persistent high fever not responsive to paracetamol or ibuprofen"
+        ],
+        "see_healthcare_provider_soon": [
+          "Fever lasting more than 4–5 days",
+          "Symptoms lasting more than 10 days without getting better",
+          "Symptoms improving then returning or worsening",
+          "Coughing up thick grey, yellow-green, or bloody phlegm",
+          "Earache or pain in sinuses",
+          "Mild shortness of breath",
+          "Worsening asthma symptoms with cold",
+          "Chronic medical conditions that are getting worse"
+        ],
+        "high_risk_groups_contact_provider_immediately": [
+          "Older adults and pregnant women with any respiratory symptoms if COVID-19 or influenza suspected",
+          "Immunocompromised individuals with any respiratory symptoms",
+          "Infants under 3 months with any fever",
+          "Individuals eligible for antiviral treatment for COVID-19 or flu within first 5–7 days of symptoms"
+        ]
+      },
+      "history_and_science": {
+        "historical_overview": {
+          "ancient_understanding": "For centuries, the common cold was believed to be caused by chilling of the body. Greek and Roman physicians explained it through humoral pathology — chilling disturbing the humors and causing mucus to flow from the nose.",
+          "17th_century": "Richard Lower, an eminent physician in London, published a treatise concluding that protection from external cold and proper perspiration prevented the disease.",
+          "1904": "Bishop described the early manifestation of cold — dryness and irritation in the nose, leading to sneezing, copious mucus, lacrimation, and headache.",
+          "1930": "Hilding identified two groups of colds: those due to exposure and those due to infection.",
+          "1944": "Scientific consensus that the cause was a filterable virus, as determined by Krause in 1914 and later corroborated by Foster, Dochez and group.",
+          "1950s": "Discovery of rhinoviruses by researchers provided the first scientific explanation for the common cold as an infectious viral disease.",
+          "1930s_1960s": "Introduction of sulfa drugs in the late 1930s led some clinicians to claim antibiotics could treat colds — claims that were later disproven.",
+          "1970": "Nobel laureate Linus Pauling published a book claiming vitamin C prevents and treats colds — a claim widely criticised as opinion-based but adopted by the general public.",
+          "2001_2005": "Discovery of human metapneumovirus (2001) and human bocavirus (2005) as additional common cold pathogens.",
+          "2013": "Cochrane meta-analysis of 29 trials on vitamin C concluded that routine supplementation is not justified for prevention in the general population.",
+          "2023": "FDA approved first RSV vaccine for adults 60 and older."
+        },
+        "common_cold_research_centre": "The author of the Eccles 2023 review spent 30 years as Director of the Common Cold Centre at Cardiff University, UK, specialising in symptom mechanisms and treatments."
+      },
+      "virus_biology_notes": {
+        "rhinovirus_biology": {
+          "size": "smallest single-stranded RNA picornaviruses",
+          "serotypes": "more than 100",
+          "fastidious_subgroup": "a subpopulation can only be cultured in living organisms, not reliably in tissue culture",
+          "animal_susceptibility": "the only animal other than humans reliably infectable with rhinoviruses is the chimpanzee — a trivial human infection can be lethal to chimpanzees",
+          "receptor": "ICAM-1 on nasopharyngeal epithelium",
+          "temperature_sensitivity": "rhinoviruses replicate at lower temperatures (33–35°C) which occur in the nasal passages, explaining their predilection for the upper airway"
+        },
+        "historical_transmission_study": {
+          "location": "Spitsbergen, a remote arctic archipelago, mid-point between Norway and North Pole",
+          "year": 1933,
+          "researchers": "Paul and Freese",
+          "findings": "The isolated community had one attack of common cold per person per year. Epidemics of common cold never broke out before ships arrived each summer. In 1931, 48 hours after arrival of the first boat (which had one sailor with an incubating cold), three cases developed in the town — proving direct person-to-person transmission as essential.",
+          "peak_cases": "26 cases peaked on day 10 after arrival, then tapered off over 3 weeks"
+        }
+      },
+      "economic_and_social_impact": {
+        "united_states_specific": {
+          "annual_physician_office_cost_usd": "1.5 billion",
+          "missed_work_days_per_year": "23 million",
+          "missed_school_days_per_year": "26 million",
+          "missed_work_share_of_total_absenteeism": "40%",
+          "missed_school_share": "30%"
+        },
+        "global_otc_market": {
+          "2023_value_usd": "over 70 billion",
+          "1985_global_otc_medicines_usd": "3 billion (excluding Eastern European markets)",
+          "immunity_supplement_market_2021": "over 20 billion USD",
+          "projected_immunity_supplement_market_2028": "over 31 billion USD"
+        },
+        "antibiotic_misuse_consequence": "Treating colds with antibiotics causes more harm than benefit and contributes to the growing global crisis of antibiotic resistance."
+      },
+      "summary_profile": {
+        "disease": "Common Cold",
+        "aliases": [
+          "Upper Respiratory Infection (URI)",
+          "Upper Respiratory Tract Infection (URTI)",
+          "Viral Rhinitis",
+          "Acute Nasopharyngitis",
+          "Coryza",
+          "Head Cold",
+          "Rhinovirus Infection",
+          "Acute Nasal Catarrh",
+          "Acute Rhinitis"
+        ],
+        "description": "The common cold is a contagious viral infection of the upper respiratory tract — including the nose, sinuses, throat, and windpipe — caused by more than 200 different respiratory viruses, most commonly rhinoviruses. It is the most frequent acute illness in humans, with adults averaging 2–3 colds per year and young children experiencing 4 or more. There is no cure; the illness is self-limiting and typically resolves within 7–10 days, but it can cause serious complications such as pneumonia or bronchiolitis in vulnerable populations including infants, the elderly, and the immunocompromised.",
+        "common_symptoms": [
+          "Runny nose (rhinorrhoea) — initially watery, later thick and discoloured",
+          "Nasal congestion (stuffy nose)",
+          "Sneezing",
+          "Sore or scratchy throat (often the first symptom, days 1–3)",
+          "Cough (usually mild; caused by postnasal drip)",
+          "Headache",
+          "Mild body aches and muscle pain",
+          "Low-grade fever (more common in children than adults)",
+          "Fatigue and general malaise",
+          "Watery or red eyes (lacrimation)",
+          "Hoarseness (days 1–3)",
+          "Loss of appetite",
+          "Postnasal drip",
+          "Tickle or irritation in the throat (early sign, days 1–3)"
+        ],
+        "severe_symptoms": [
+          "High fever above 39°C (102°F) — suggests influenza or another serious infection, not typical cold",
+          "Severe or worsening shortness of breath or fast breathing",
+          "Wheezing or laboured breathing",
+          "Chest pain or tightness",
+          "Persistent vomiting",
+          "Extreme fatigue or inability to stay awake",
+          "Confusion or altered mental status",
+          "Severe headache with neck stiffness (may indicate meningitis)",
+          "Blue or grey lips or fingernails (cyanosis) — emergency sign in children",
+          "Dehydration (no urination, dry mouth, sunken eyes)",
+          "Ribs showing with each breath in children",
+          "Fever in an infant younger than 2 months old (any temperature)",
+          "Ear pain or new hearing difficulty (possible otitis media)",
+          "Symptoms improving then returning or worsening (suggests secondary bacterial infection)",
+          "Cough persisting more than 3 weeks in children or more than 8 weeks in adults"
+        ],
+        "causes": [
+          "Rhinoviruses — most common cause; responsible for up to 50% of colds; over 100 serotypes",
+          "Common human coronaviruses (OC43, 229E, NL63, HKU1) — 15–21% of colds",
+          "Parainfluenza viruses (types 1–4)",
+          "Adenoviruses — over 50 serotypes",
+          "Enteroviruses including Enterovirus D68 (EV-D68)",
+          "Human metapneumovirus (hMPV)",
+          "Human bocavirus (HBoV)",
+          "Respiratory syncytial virus (RSV) — also causes cold-like symptoms but is more likely to cause severe illness",
+          "Respiratory droplets released when an infected person coughs or sneezes — inhaled or deposited on mucous membranes of eyes, nose, or mouth",
+          "Direct contact with contaminated surfaces (fomites) — viruses survive on surfaces for several hours — followed by touching eyes, nose, or mouth",
+          "Close personal contact with an infected person (e.g., shaking hands)"
+        ],
+        "risk_factors": [
+          "Young age — children under 6 years get 4–10 colds per year due to immature immune systems and daycare/school exposure",
+          "Old age — waning immunity in elderly increases risk of severe outcomes",
+          "Weakened or compromised immune system (HIV/AIDS, chemotherapy, organ transplant)",
+          "Chronic conditions such as asthma, COPD, heart failure — increases risk of complications",
+          "Exposure to crowded settings — schools, daycares, offices, public transport, theatres",
+          "Smoking or vaping — damages respiratory epithelium and impairs local defences",
+          "Psychological stress — suppresses mucosal immunity (secretory IgA)",
+          "Insufficient sleep — less than 7 hours nearly triples cold susceptibility",
+          "Poor nutrition — deficiency of vitamins C and D and protein impairs immune function",
+          "Autumn and winter season — indoor crowding increases transmission; cold air may slow nasal defences",
+          "Lack of prior immunity to a specific virus serotype",
+          "Living with or caring for young children who attend school or daycare"
+        ],
+        "diagnosis_methods": [
+          "Clinical diagnosis — based on symptoms and physical examination alone in typical cases; no laboratory tests required",
+          "Physical examination: nasal swelling and congestion, mild throat redness without exudate, normal lung auscultation",
+          "Nasal or throat swab — to rule out influenza, COVID-19, streptococcal pharyngitis, or RSV when suspected",
+          "Rapid influenza antigen test (EIA/rapid flu test) — during flu season when influenza is suspected",
+          "Rapid RSV antigen test — for high-risk infants under 2 years with compatible symptoms",
+          "COVID-19 rapid antigen test or PCR — if COVID-19 is clinically possible, especially in high-risk individuals",
+          "Nasopharyngeal swab with PCR — for comprehensive respiratory virus panel; used in severe cases, immunocompromised patients, or hospitalised patients",
+          "Throat culture for Group A Streptococcus — to rule out bacterial strep throat when exudate or high fever is present",
+          "Chest X-ray — only indicated if pneumonia is clinically suspected (abnormal lung examination)"
+        ],
+        "treatment_options": [
+          "No cure exists for the common cold — treatment is entirely symptomatic and supportive",
+          "Rest — adequate sleep supports immune function and recovery",
+          "Hydration — 8 or more glasses of water, fruit juice, or warm fluids daily",
+          "Over-the-counter (OTC) pain relievers and fever reducers — paracetamol (acetaminophen) or ibuprofen for fever, headache, sore throat, and body aches",
+          "Saline nasal spray or drops — for nasal congestion relief; safe for all ages including infants",
+          "Nasal suction bulb — for clearing mucus in young infants and toddlers",
+          "Cool-mist humidifier or vaporizer — adds moisture to the air to ease breathing",
+          "Steam inhalation — sitting in a bathroom with steam from a running shower (do not use hot steam directly on face)",
+          "Throat lozenges or cough drops — for sore throat relief in adults and children 4 years and older",
+          "Honey — for cough relief in adults and children 1 year and older (do not give to infants under 1 year)",
+          "OTC decongestants (pseudoephedrine, oxymetazoline nasal spray) — short-term use for adults; NOT recommended for children under 6",
+          "OTC first-generation antihistamines (chlorpheniramine, diphenhydramine) — modest benefit for runny nose and sneezing in adults",
+          "OTC cough suppressants (dextromethorphan) — for troublesome cough in adults; NOT recommended for children under 6",
+          "Antiviral treatment for COVID-19 or flu — if COVID-19 or flu is diagnosed, antivirals (e.g., nirmatrelvir/ritonavir for COVID-19; oseltamivir for flu) must be started within 5–7 days for COVID-19 or 2 days for flu",
+          "Antibiotics — ONLY if a secondary bacterial infection is confirmed (pneumonia, bacterial sinusitis, bacterial otitis media); antibiotics have NO role in treating viral colds"
+        ],
+        "medications": [
+          "Paracetamol (acetaminophen) — 500–1000 mg every 4–6 hours as needed (max 4000 mg/day); for fever, headache, body aches, sore throat",
+          "Ibuprofen (NSAID) — 200–400 mg every 6–8 hours with food (max 1200 mg/day OTC); avoid in elderly, pregnant women, kidney or GI disease",
+          "Oxymetazoline nasal spray (Otrivin, Dristan) — topical decongestant; maximum 2–3 days use to avoid rebound congestion",
+          "Xylometazoline nasal spray — topical decongestant; maximum 2–3 days",
+          "Pseudoephedrine (Sudafed) — oral decongestant; use with caution in hypertensive patients",
+          "Phenylephrine — oral decongestant; commonly found in OTC products; limited clinical efficacy",
+          "Chlorpheniramine (Chlor-Trimeton) — first-generation antihistamine; modest benefit for sneezing and runny nose; causes drowsiness",
+          "Diphenhydramine (Benadryl) — first-generation antihistamine and antitussive; causes significant sedation",
+          "Doxylamine — sedating antihistamine; available in some combination cold products",
+          "Dextromethorphan (DM) — antitussive cough suppressant; for adults and children 12+ years",
+          "Guaifenesin (Mucinex) — expectorant; thins secretions to facilitate cough; limited evidence for benefit",
+          "Saline nasal spray or drops — safe, non-medicated; suitable for all ages including infants",
+          "Ipratropium bromide nasal spray — anticholinergic; reduces nasal discharge and sneezing in adults; evidence from 5 RCTs",
+          "Zinc gluconate lozenges — some evidence for reduction of cold duration if taken within 24 hours of symptom onset; do NOT use intranasal zinc (risk of permanent anosmia)",
+          "Cromolyn sodium nasal spray (NasalCrom) — may relieve runny nose and sneezing",
+          "Honey — for cough; effective and safe in children 1 year and older and adults",
+          "Nirmatrelvir/ritonavir (Paxlovid) — antiviral for COVID-19 if applicable; start within 5 days of symptom onset",
+          "Oseltamivir (Tamiflu) — antiviral for influenza if applicable; start within 48 hours of symptom onset"
+        ],
+        "lifestyle_home_remedies": [
+          "Get plenty of rest — allow the immune system to fight the infection effectively",
+          "Elevate head with extra pillows during sleep to ease nasal congestion and improve breathing",
+          "Drink 8 or more glasses of fluids daily — water, herbal tea, warm broths, or fruit juice",
+          "Drink warm fluids such as chicken soup, herbal tea with honey and lemon — soothes throat and loosens secretions",
+          "Use a clean cool-mist humidifier or vaporizer in your bedroom",
+          "Breathe steam from a bowl of hot water or a hot shower to ease congestion",
+          "Gargle with warm salt water — half teaspoon of salt in 8 ounces of warm water — for sore throat relief",
+          "Rinse nasal passages with saline drops or spray to clear congestion",
+          "Apply menthol vapour rub to chest and throat for temporary congestion relief in adults",
+          "Limit or avoid smoking and vaping — prolongs symptoms and impairs recovery",
+          "Wash hands frequently with soap and water for at least 20 seconds",
+          "Avoid touching eyes, nose, and mouth with unwashed hands",
+          "Cough and sneeze into a tissue or elbow and dispose of tissues immediately",
+          "Disinfect frequently touched surfaces (doorknobs, phones, keyboards)",
+          "Stay home and avoid close contact with others, especially vulnerable individuals"
+        ],
+        "diet_recommended": [
+          "Warm fluids — chicken soup, herbal teas, broths — help soothe symptoms and loosen secretions",
+          "Honey in warm tea or water — natural cough suppressant and throat soother (not for infants under 1 year)",
+          "Citrus fruits (oranges, lemons, grapefruits) — rich in vitamin C; supportive of immune function",
+          "Berries (blueberries, strawberries) — high in antioxidants",
+          "Leafy green vegetables (spinach, kale) — rich in vitamins and minerals supporting immunity",
+          "Garlic — contains allicin; traditionally used for antimicrobial properties",
+          "Ginger — anti-inflammatory properties; soothes sore throat and nausea in warm tea",
+          "Yoghurt with live cultures — probiotics may support gut-immune axis",
+          "Water and clear fluids — maintain hydration; prevent dehydration especially with fever",
+          "Warm porridge or oatmeal — easy to swallow when throat is sore; provides energy",
+          "Bananas and soft fruits — easy to eat when appetite is reduced and throat is sore"
+        ],
+        "diet_to_avoid": [
+          "Alcohol — dehydrates the body and may impair immune function; avoid especially during active illness",
+          "Caffeinated beverages in excess — coffee, energy drinks, caffeinated sodas — can worsen dehydration",
+          "Dairy products (in some individuals) — may increase mucus thickness in certain people; consider reducing if mucus seems worse",
+          "Very spicy foods — may irritate an already inflamed sore throat",
+          "Cold, icy drinks — can worsen sore throat and throat irritation",
+          "Fried and heavily processed foods — high in saturated fat; may promote inflammation",
+          "Sugary foods and drinks — excess sugar may temporarily impair white blood cell immune function",
+          "Smoking and tobacco products — significantly worsen respiratory symptoms and impair recovery"
+        ],
+        "complications": [
+          "Acute otitis media (middle ear infection) — most common complication; especially in young children; caused by eustachian tube dysfunction allowing secondary bacterial infection",
+          "Acute bacterial sinusitis — rare; presents with worsening facial pain and purulent discharge persisting beyond 10 days without improvement",
+          "Viral sinusitis — more common than bacterial; typically resolves within 3 weeks without antibiotics",
+          "Bronchiolitis — infection of the small airways; mainly affects infants under 2 years from RSV; can require hospitalisation",
+          "Bronchitis — infection of the large airways; inflammation of bronchial membranes",
+          "Pneumonia — serious lower respiratory tract infection; more common in infants, elderly, or immunocompromised individuals",
+          "Croup (laryngotracheobronchitis) — barking cough and stridor in young children; mainly caused by parainfluenza virus",
+          "Asthma exacerbation — rhinovirus infections are a leading trigger for acute asthma attacks in children; airway hyperresponsiveness may persist 4 weeks post-infection",
+          "Exacerbation of COPD or chronic bronchitis — respiratory viruses trigger acute exacerbations of chronic lung disease",
+          "Laryngitis — inflammation of the voice box causing hoarseness or voice loss",
+          "Worsening of other chronic medical conditions — including heart failure, COPD, and other chronic illnesses",
+          "Secondary bacterial infections — in rare cases viral infection precedes serious bacterial illness such as bacterial meningitis or sepsis"
+        ],
+        "when_to_see_doctor": "See a healthcare provider if you or your child has symptoms of a respiratory virus and is at higher risk of severe illness from COVID-19 or flu. Also see a provider if symptoms do not begin to improve within 10 days, if fever lasts longer than 4–5 days, if symptoms initially improve and then return or worsen (suggesting a secondary infection), if thick grey or bloody sputum is produced, if earache or sinus pain develops, or if you have chronic medical conditions such as asthma, COPD, diabetes, or heart disease that are getting worse. Infants under 3 months with any fever should be seen by a provider promptly.",
+        "emergency_signs": [
+          "Trouble breathing or fast breathing in any age group",
+          "Severe shortness of breath or laboured breathing",
+          "Wheezing or noisy breathing (stridor)",
+          "Chest pain",
+          "Persistent high fever that does not respond to paracetamol or ibuprofen",
+          "Blue, grey, or pale lips or fingernails (cyanosis) — especially in infants and children",
+          "Ribs showing with each breath in a baby or child",
+          "Dehydration — no urination for 8 or more hours, dry mouth, sunken eyes, no tears when crying",
+          "Fever in an infant younger than 2 months old (any temperature requires emergency evaluation)",
+          "Confusion, unresponsiveness, or inability to be roused normally",
+          "Severe headache combined with neck stiffness and sensitivity to light (may indicate meningitis)",
+          "Baby or child appears to be getting noticeably sicker",
+          "Severe weakness or inability to stand or walk",
+          "Persistent vomiting preventing oral fluid intake",
+          "Symptoms suggestive of COVID-19 or influenza in a high-risk individual — contact provider immediately even with mild symptoms"
+        ]
+      }
     }
   }
-]
+}

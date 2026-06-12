@@ -1,0 +1,981 @@
+{
+  "disease": {
+    "id": "DIS-034",
+    "name": "Anal Fissure",
+    "scientific_name": "Anal Fissure / Fissure-in-Ano / Anal Ulcer",
+    "icd_10_code": "K60.0 (Acute anal fissure); K60.1 (Chronic anal fissure); K60.2 (Anal fissure, unspecified)",
+    "category": "Colorectal / Proctological / Anorectal Disease",
+    "overview": {
+      "description": "An anal fissure is a small but exquisitely painful tear, crack, or ulceration in the lining of the anal canal — specifically in the anoderm (specialised squamous epithelium below the dentate line). Despite its small size, an anal fissure causes disproportionately severe, sharp pain during and after defecation — described by patients as passing broken glass or razor blades — due to the dense somatic innervation of the anoderm (pudendal nerve branches) and sustained spasm of the internal anal sphincter (IAS). The hallmark physiological mechanism is a vicious cycle: mucosal tear → pain → IAS spasm → raised anal resting pressure → impaired blood flow to the posterior midline (the most poorly vascularised region of the anal canal due to its terminal blood supply) → ischaemia → failure to heal → chronic fissure. Anal fissures are one of the most common anorectal conditions encountered in primary care, colorectal surgery, and gastroenterology, affecting people of all ages including infants and children.",
+      "affected_organ": "Anal canal (anoderm — below the dentate line); Internal Anal Sphincter (IAS — spasm is central to pathophysiology)",
+      "prevalence": "One of the most common anorectal conditions globally — estimated lifetime prevalence 10-15%; 1 in 350 GP consultations in the UK relates to anal fissure. Peak incidence: young and middle-aged adults (20-50 years); second peak in infants. Equal sex distribution, though anterior fissures are more common in women (particularly post-partum).",
+      "age_group": "All ages; peak in adults 20-40 years; infants and toddlers (second peak — from constipation); post-partum women",
+      "sex_ratio": "Equal overall; anterior fissures significantly more common in women (particularly after vaginal delivery); posterior fissures equally distributed",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": false,
+      "chronic_note": "Acute fissures are self-limiting in 50% within 6-8 weeks; chronic fissures require active treatment",
+      "key_fact": "Over 90% of anal fissures occur at the posterior midline (6 o'clock position in lithotomy) — due to the relatively poor blood supply and anisotropic stress distribution at this anatomical location. A fissure at any other site ('lateral fissure') is an alarm finding suggesting secondary causes: Crohn's disease, tuberculosis, HIV/AIDS, sexually transmitted infections, or malignancy."
+    },
+
+    "anatomy_and_pathophysiology": {
+      "anal_canal_anatomy": {
+        "length": "3-4 cm in adults",
+        "dentate_line": "The mucocutaneous junction — divides the anal canal. ABOVE the dentate line: columnar epithelium; autonomic innervation (pain not well localised); venous and lymphatic drainage to portal and inferior mesenteric systems. BELOW the dentate line: squamous/transitional anoderm; somatic innervation (pudendal nerve — very sensitive; pain sharply localised); venous drainage to systemic circulation",
+        "anal_sphincters": {
+          "internal_anal_sphincter_IAS": "Smooth muscle; involuntary; circular; continuation of rectal circular smooth muscle; maintains resting anal tone (70-85% of resting anal pressure — 50-80 mmHg normal resting pressure); supplied by enteric and autonomic nervous system; relaxes with rectal distension (recto-anal inhibitory reflex — RAIR)",
+          "external_anal_sphincter_EAS": "Striated muscle; voluntary; encircles the IAS; maintains squeeze pressure; puborectalis component (part of levator ani) maintains anorectal angle"
+        },
+        "blood_supply": "Superior rectal artery (from IMA) — anterior and posterior. Inferior rectal arteries (from internal pudendal). The POSTERIOR MIDLINE has the LEAST dense blood supply (terminal end-arterial supply) — explaining why >90% of fissures form posteriorly",
+        "anoderm_innervation": "Among the MOST densely innervated skin in the body — pudendal nerve (inferior rectal branches) provides exquisitely sensitive somatic innervation; explains the disproportionate severity of pain from a small tear"
+      },
+      "pathophysiology_vicious_cycle": {
+        "initiation": "Hard stool passage (or prolonged diarrhoea) causes a tear in the anoderm at the posterior midline — where the elastic modulus is lowest (least extensible) and blood supply is poorest",
+        "spasm": "Torn anoderm exposes the underlying IAS (internal anal sphincter) → stimulates IAS contraction (hypertonia) → raised resting anal pressure (typically >90 mmHg in fissure vs 50-80 mmHg normal)",
+        "ischaemia": "IAS hypertonia compresses the already poor posterior midline blood supply → relative ischaemia → impaired tissue healing",
+        "chronicity": "Ischaemic tissue cannot heal → ulceration deepens → chronic fissure develops (with characteristic features: rolled white indurated edges, visible IAS fibres at ulcer base, sentinel skin tag distally, hypertrophied anal papilla proximally)",
+        "pain_perpetuation": "Pain → avoidance of defecation → harder larger stools → further trauma → perpetuation of cycle"
+      }
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Acute Anal Fissure",
+        "description": "A fresh, superficial tear in the anoderm — present for less than 6 weeks. Appears as a longitudinal split with clean, bright red edges, visible from the anal verge on gentle traction of the perianal skin. No fibrosis, no indurated edges, and no secondary features (no sentinel tag, no hypertrophied papilla). Acute fissures heal spontaneously in approximately 50% of cases within 6-8 weeks with conservative management (dietary fibre, hydration, sitz baths, stool softeners). Most superficial acute fissures do NOT require medical intervention beyond simple measures.",
+        "duration": "< 6 weeks",
+        "appearance": "Fresh tear; red edges; superficial; no fibrosis; no sentinel tag",
+        "healing_rate": "50% heal spontaneously with conservative measures",
+        "management": "Dietary fibre; hydration; warm sitz baths; stool softeners; topical anaesthetic"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Chronic Anal Fissure",
+        "description": "An anal fissure persisting for more than 6-8 weeks despite conservative management. Develops pathognomonic secondary features from chronic ischaemia and inflammation. The hallmark triad of chronic anal fissure: (1) Indurated, white, fibrotic fissure edges with exposed IAS fibres at the ulcer base; (2) Sentinel skin tag (external tag — hypertrophied perianal skin distal to the fissure — the 'guardian' of the fissure'); (3) Hypertrophied anal papilla (fibrous polyp — proximally at the dentate line at the upper end of the fissure). Associated with significantly elevated IAS resting pressure. Requires active medical or surgical treatment to break the vicious ischaemia-spasm cycle.",
+        "duration": "> 6-8 weeks",
+        "appearance": "White indurated edges; visible IAS fibres at base; sentinel skin tag (external); hypertrophied anal papilla (internal); rolled pale edges",
+        "secondary_features_triad": {
+          "sentinel_tag": "External hypertrophied skin tag at lower end of fissure — sometimes called 'skin tag' or 'external haemorrhoid' by patients (it is NOT a haemorrhoid; it is fibrotic scar tissue)",
+          "exposed_IAS": "White fibres of internal anal sphincter visible at the base of the chronic ulcer — confirms chronicity",
+          "hypertrophied_papilla": "Fibrous polyp at the dentate line at the upper limit of the fissure; may cause sensation of incomplete evacuation"
+        },
+        "treatment": "Topical GTN or diltiazem; botulinum toxin injection; lateral internal sphincterotomy (gold standard surgical treatment)"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Posterior Anal Fissure",
+        "description": "The MOST COMMON location — approximately 90-93% of primary anal fissures occur at the posterior midline (6 o'clock position in lithotomy). This anatomical predominance is explained by: (1) Poor terminal blood supply at the posterior commissure; (2) Anisotropic stress — the posteriorly located internal sphincter fibres create greater tension at this point during defecation; (3) Narrow triangular apex of the anal canal posteriorly. Posterior location indicates primary (idiopathic) fissure in the vast majority — conservative management appropriate.",
+        "position": "6 o'clock in lithotomy; 12 o'clock in prone/jack-knife position",
+        "implication": "Posterior location = almost always primary fissure (constipation, trauma) = respond to conservative/medical treatment"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Anterior Anal Fissure",
+        "description": "Approximately 10% of primary fissures occur at the anterior midline (12 o'clock in lithotomy). SIGNIFICANTLY MORE COMMON IN WOMEN — particularly post-partum women (obstetric perineal injury, reduced anterior blood supply after delivery). In men, an anterior fissure may be primary but is less common and warrants consideration of secondary causes. Anterior fissures are generally more difficult to heal than posterior fissures — thought to be related to anterior sphincter anatomy and post-partum changes.",
+        "more_common_in": "Women; particularly post-partum; anterior perineal injury",
+        "note": "Anterior location in a man warrants exclusion of secondary causes"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Secondary Anal Fissure",
+        "description": "An anal fissure occurring at an atypical location (LATERAL — 3 or 9 o'clock; multiple fissures; or recurrent fissures that fail to respond to treatment) always warrants investigation for an underlying secondary cause. These secondary fissures are characteristically: (1) Located laterally or at atypical positions; (2) Multiple; (3) Painless or minimally painful (unlike typical primary fissures — the characteristic severe pain may be absent in Crohn's-related fissures); (4) With unusual features (undermined edges, extensive perianal skin disease, deep ulceration).",
+        "secondary_causes": [
+          "Crohn's disease — most important secondary cause; anal fissures are a common anorectal manifestation of Crohn's (along with fistulae, skin tags, and abscesses); typically large, multiple, pale, and often surprisingly painless",
+          "Tuberculosis (TB) — important in India and high-prevalence countries; anal TB causes indolent ulceration; biopsy shows caseating granulomas",
+          "HIV/AIDS — impaired immunity allows atypical organisms; may have multiple fissures; painful; association with CMV, herpes, and syphilis",
+          "Sexually Transmitted Infections: primary syphilis (indurated painless chancre — may mimic anal fissure), gonorrhoea (anal proctitis), Chlamydia/LGV (proctocolitis), herpes simplex (multiple vesicular ulcerations — VERY PAINFUL; recurrent)",
+          "Anal cancer (squamous cell carcinoma, adenocarcinoma) — any non-healing 'fissure' in a patient >45 years must be biopsied to exclude malignancy",
+          "Leukaemia/Lymphoma — anorectal involvement; unusual ulceration",
+          "Radiation proctitis — post-pelvic radiotherapy (prostate, cervical, rectal cancer treatment) causes radiation-induced anorectal mucosal atrophy and ulceration"
+        ],
+        "investigation": "Biopsy of atypical fissures; EUA (examination under anaesthesia) for full assessment; TB culture, AFB smear; STI screen; HIV test; colonoscopy (Crohn's); sigmoidoscopy"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Post-Partum Anal Fissure",
+        "description": "A significant subset of anal fissures occurring in the immediate post-partum period (first 3 months after vaginal delivery). The vaginal delivery process causes perineal trauma, sphincter stress, and compression of the anterior blood supply — creating ideal conditions for both anterior and posterior fissure formation. Post-partum fissures may be anterior OR posterior. Management requires safe medications for breastfeeding — topical diltiazem is preferred over GTN (headache is poorly tolerated in the post-partum period); oral stool softeners are safe during breastfeeding.",
+        "prevalence": "Approximately 1 in 3 women report significant anal pain post-partum; not all from fissures; 4th degree perineal tears at delivery include sphincter injury",
+        "management": "Diltiazem 2% cream (safer in breastfeeding than GTN); stool softeners; sitz baths; botulinum toxin for refractory cases"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Anal Fissure",
+        "description": "Acute superficial tear; mild pain; brief duration; minimal bleeding",
+        "duration": "< 2 weeks",
+        "pain": "Mild to moderate pain during defecation; resolves within 30-60 min of defecation; not disrupting daily activities significantly",
+        "bleeding": "Small amount of bright red blood on toilet paper after wiping",
+        "examination": "Superficial tear visible on gentle perianal skin traction; no sentinel tag; no secondary features",
+        "management": "Conservative: high-fibre diet; adequate hydration; warm sitz baths 2-3 times daily; topical anaesthetic (lidocaine 5% gel) before defecation; stool softener (lactulose or macrogol) if constipated"
+      },
+      {
+        "level": 2,
+        "name": "Moderate Anal Fissure",
+        "description": "Acute or early sub-acute fissure with significant pain impacting quality of life",
+        "duration": "2-6 weeks",
+        "pain": "Moderate to severe pain during and after defecation; persists 1-3 hours post-defecation; causing defecation avoidance (fear of pain); impacting work and daily activities",
+        "bleeding": "Moderate bright red bleeding on paper or dripping into pan",
+        "examination": "Clearly visible fissure; early fibrosis may begin; possible early sentinel tag formation",
+        "management": "First-line medical therapy: topical GTN 0.2-0.4% ointment (applied 2-3 times daily) OR topical diltiazem 2% cream; stool softeners + bulking agents (psyllium husk); warm sitz baths; topical anaesthetic (lidocaine); dietary modification; 6-8 week trial of medical therapy"
+      },
+      {
+        "level": 3,
+        "name": "Severe / Chronic Anal Fissure",
+        "description": "Chronic fissure (>6-8 weeks) with secondary features, severely impacting quality of life, and unresponsive to conservative measures",
+        "duration": "> 6-8 weeks",
+        "pain": "Severe pain during defecation often described as 'razor blades' or 'broken glass'; persistent burning and throbbing for 1-4 hours post-defecation; significant defecation avoidance; sleep disruption from nocturnal anal pain; anxiety about defecation",
+        "examination": "Classic chronic fissure triad: indurated white fibrotic edges + visible IAS fibres at ulcer base + sentinel skin tag (external) ± hypertrophied anal papilla (internal); elevated anal resting pressure on manometry (>90 mmHg)",
+        "management": "Second-line medical: botulinum toxin (Botox) injection into IAS (if medical therapy failed); OR surgical: lateral internal sphincterotomy (LIS — gold standard surgery); 90-95% cure rate; refer to colorectal surgeon"
+      }
+    ],
+
+    "causes": {
+      "pathophysiological_mechanism": "The initiating event is a tear in the anoderm — followed by internal anal sphincter hypertonia that impairs healing through ischaemia. The primary trigger is passage of a large, hard stool that forces the anal canal beyond its elastic limit, particularly at the posterior midline where blood supply is most tenuous.",
+      "primary_causes": [
+        {
+          "cause": "Constipation and Hard Stools",
+          "detail": "The MOST COMMON precipitating cause — passage of a large, hard stool tears the anoderm. Chronic constipation with straining at stool is the primary risk factor for both initiating and perpetuating anal fissure. Hard stools cause direct mechanical tearing; straining increases intra-abdominal pressure and anal canal distension beyond elastic limits.",
+          "contributing_factors": "Low fibre diet; inadequate fluid intake; sedentary lifestyle; irritable bowel syndrome (IBS-C); medications causing constipation (opioids, antidepressants, iron supplements, calcium channel blockers)"
+        },
+        {
+          "cause": "Diarrhoea",
+          "detail": "Paradoxically, chronic diarrhoea can also cause anal fissures — from frequent passage of loose stools causing repeated mucosal irritation and maceration; high-frequency defecation causes cumulative mechanical trauma; loose stools have higher bacterial load and irritant bile acid content. IBD (Crohn's disease, UC) causing chronic diarrhoea is an important secondary cause.",
+          "note": "The association of anal fissure with diarrhoea is particularly common in infants and in Crohn's disease"
+        },
+        {
+          "cause": "Childbirth / Vaginal Delivery",
+          "detail": "Obstetric trauma — vaginal delivery, particularly with large babies, prolonged second stage, episiotomy, or perineal tearing — causes direct anorectal injury; stretching and compression of anterior blood supply; sphincter stress. Post-partum anal fissures (both anterior and posterior) are common, typically presenting within the first 1-3 months of delivery.",
+          "risk_factors_obstetric": "Macrosomia (large baby); prolonged second stage; forceps or ventouse delivery; 3rd/4th degree perineal tears; episiotomy (ironically, may increase risk by diverting stress to contralateral side)"
+        },
+        {
+          "cause": "Straining and Prolonged Sitting on Toilet",
+          "detail": "Prolonged straining at defecation (particularly reading on toilet — sitting time exceeds 3-5 minutes increases anal vascular congestion); repeated straining increases intra-abdominal pressure; habitual straining causes progressive anal mucosal prolapse and mechanical stress.",
+          "lifestyle_note": "The 'squatting position' for defecation (traditional Indian practice) aligns the anorectal angle more favourably and reduces required straining — protective against anal fissure and haemorrhoids"
+        },
+        {
+          "cause": "Anal Intercourse",
+          "detail": "A recognised but often undisclosed cause — particularly relevant in the MSM (men who have sex with men) population. Fissures from anal intercourse may be multiple, atypical in location, or complicated by concurrent STIs. Fissures in MSM patients should prompt STI screening (syphilis, gonorrhoea, herpes, LGV Chlamydia, HIV).",
+          "note": "Secondary STI screening is important in MSM with anal fissures; herpes simplex causes exquisitely painful multiple anal ulcers that may be confused with fissures"
+        },
+        {
+          "cause": "Low Dietary Fibre Intake",
+          "detail": "Dietary fibre deficiency is the single most important modifiable dietary risk factor for anal fissure — both through constipation and through reduced stool bulk/softness. The dramatic rise in anal fissure prevalence in modern urban populations correlates with the dramatic decline in dietary fibre intake (typical Western/urban Indian diet: 8-12g/day vs recommended 25-35g/day).",
+          "india_context": "Urban dietary transition from traditional high-fibre foods (millet, dal, whole vegetables) to refined white rice, white flour, and processed foods has significantly increased constipation-related anorectal disease including anal fissure"
+        }
+      ],
+      "predisposing_factors": [
+        "Low dietary fibre intake (<20g/day)",
+        "Inadequate fluid intake (<1.5 litres/day)",
+        "Sedentary lifestyle",
+        "Chronic constipation or IBS-C",
+        "Opioid analgesic use (highly constipating)",
+        "Iron supplement use (constipating)",
+        "Calcium channel blocker use (constipating)",
+        "Antidepressant use (particularly TCAs — anticholinergic)",
+        "Pregnancy (progesterone slows gut motility; iron supplements cause constipation)",
+        "Inflammatory bowel disease (Crohn's most important)",
+        "Previous anal surgery (distorted anatomy)",
+        "Immunosuppression (HIV/AIDS, transplant, chemotherapy)",
+        "Prolonged use of over-the-counter stimulant laxatives (causes laxative dependency and bowel dysmotility)"
+      ]
+    },
+
+    "symptoms": {
+      "cardinal_symptoms": "Anal fissure produces one of the most recognisable symptom complexes in proctology. The combination of: (1) Severe, sharp pain DURING and AFTER defecation; (2) Bright red blood on toilet paper; (3) Anal spasm — is highly characteristic and often enables diagnosis without examination.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-1401",
+          "name": "Severe Anal Pain During and After Defecation",
+          "description": "The defining and most distressing symptom of anal fissure. The pain has a characteristic biphasic nature: (1) DURING defecation: acute, sharp, tearing pain — described as passing 'broken glass', 'razor blades', 'a knife', or 'shards' — as the stool passes over the fissure and stretches the anoderm; (2) AFTER defecation: a prolonged, severe burning, throbbing, or aching pain lasting 1-4 hours (sometimes longer in chronic fissures) from sustained internal anal sphincter spasm. The post-defecation pain is caused by IAS spasm, not continued tissue tearing — this is why chemical sphincterotomy (GTN, diltiazem) is so effective.",
+          "severity": "Severe — one of the most severe acute pains in anorectal disease",
+          "pain_description": "Sharp, cutting pain during defecation; burning or throbbing for 1-4 hours post-defecation",
+          "functional_impact": "Causes defecation avoidance (fear of pain → voluntary stool retention → harder stools → more trauma — vicious cycle); disrupts work and social activities; sleep disturbance from nocturnal anal pain"
+        },
+        {
+          "id": "SYM-1402",
+          "name": "Bright Red Rectal Bleeding",
+          "description": "Bright red (fresh) blood — typically seen as: smears or streaks on toilet paper after wiping; bright red blood dripping into the toilet bowl at the end of defecation (distinct from blood mixed in stool); or staining the surface of the stool. The bleeding is BRIGHT RED (arterial/capillary — from the anoderm, which has systemic venous drainage below the dentate line) and SMALL IN VOLUME — distinguishing it from haemorrhoids (which may also cause bright red dripping) and from colorectal malignancy (dark red or mixed in stool). NEVER assume all rectal bleeding is from a fissure without examination — haemorrhoids, polyps, and cancer must be excluded.",
+          "severity": "Mild (small volume)",
+          "onset": "With defecation",
+          "alarm": "Large volume rectal bleeding; blood mixed in stool; melaena (tarry dark blood); change in bowel habit; weight loss — these features prompt urgent colonoscopy to exclude malignancy"
+        },
+        {
+          "id": "SYM-1403",
+          "name": "Internal Anal Sphincter Spasm",
+          "description": "Involuntary, sustained contraction of the internal anal sphincter triggered by the anal fissure tear. Patients describe: inability to relax the anus; feeling of 'tightness' or 'clenching' deep in the anal canal; difficulty initiating defecation (due to sphincter spasm and fear of pain). The spasm is mediated by a local reflex and is predominantly IAS (smooth muscle) — not under voluntary control. IAS spasm is both a consequence and a cause of fissure chronicity (raised resting pressure → ischaemia → impaired healing).",
+          "severity": "Moderate to Severe",
+          "measurability": "Anal manometry: resting pressure >90 mmHg in chronic anal fissure (normal 50-80 mmHg)"
+        },
+        {
+          "id": "SYM-1404",
+          "name": "Sentinel Skin Tag (Chronic Fissure)",
+          "description": "A hypertrophied, fibrotic skin tag located at the lower (distal) end of the fissure at the anal verge. It forms from chronic oedema and fibrosis of the perianal skin adjacent to the fissure. Commonly misidentified by patients as 'haemorrhoids' or 'piles'. The sentinel tag is a SPECIFIC INDICATOR OF CHRONICITY — its presence confirms the fissure has been present for at least 6 weeks. It is visible and palpable at the anal verge without any instrumentation.",
+          "severity": "Clinical sign of chronic fissure; not painful itself",
+          "significance": "Presence of sentinel tag confirms chronicity → warrants medical or surgical treatment"
+        },
+        {
+          "id": "SYM-1405",
+          "name": "Perianal Burning and Pruritus Ani (Anal Itching)",
+          "description": "Perianal burning (constant or intermittent) between bowel movements — from anal mucus secretion, perianal moisture from discharge, local inflammation, and the sentinel tag. Pruritus ani (anal itching) is also common — from mucous discharge, moisture, irritation from faecal soiling around the fissure, and (in some patients) from topical medications themselves (particularly GTN — causes local skin reaction in some patients). Pruritus is worsened by excessive wiping, moisture, synthetic underwear, and heat.",
+          "severity": "Mild to Moderate"
+        }
+      ],
+      "secondary_symptoms": [
+        "Mucous discharge — thin white or clear mucus around the anus; from inflammation of the fissure; may cause perianal moisture and skin irritation",
+        "Difficulty initiating defecation — from voluntary anal retention and sphincter spasm; patients delay going to the toilet fearing the pain",
+        "Feeling of incomplete evacuation — from hypertrophied anal papilla (proximally in chronic fissure) causing sensation of a rectal mass",
+        "Anxiety and anticipatory pain — significant psychological burden; patients develop anticipatory anxiety before each bowel movement; the fear of pain can become disabling; affects eating patterns (patients may reduce food intake to decrease stool frequency)",
+        "Sleep disturbance — nocturnal anal pain from ongoing IAS spasm can wake patients; worsened in chronic fissures",
+        "Hard stools and progressive constipation — from defecation avoidance → stool retention → increased water reabsorption → harder stools → worsening cycle",
+        "Perianal excoriation — from mucous discharge, excessive wiping, and moist perianal skin; secondary perianal dermatitis"
+      ],
+      "symptoms_in_infants_and_children": {
+        "key_points": [
+          "Infants and toddlers: most common cause of rectal bleeding in infants; visible blood on nappy/diaper or on wipes; crying during bowel movement; straining; constipation; refusal to feed (pain reduces feeding → harder stools)",
+          "The fissure is usually visible on gentle separation of buttocks — no instrumentation required or appropriate in infants",
+          "Constipation is the primary cause in infants — dietary fibre (age-appropriate) + adequate fluids + dietary modification; topical anaesthetic for pain relief",
+          "Most paediatric fissures heal with conservative treatment; surgical intervention very rarely needed in children",
+          "Recurrent anal fissures in children: consider Hirschsprung's disease (absent rectal ganglia causing constipation), sexual abuse (lateral fissures — mandatory reporting concerns), inflammatory bowel disease"
+        ]
+      }
+    },
+
+    "diagnosis": {
+      "diagnostic_approach": {
+        "overview": "Anal fissure is primarily a CLINICAL DIAGNOSIS — made on history and careful perianal inspection. Most fissures are visible with GENTLE traction of the perianal skin WITHOUT the need for digital rectal examination, proctoscopy, or any instrumentation in the acute setting. Digital rectal examination (DRE) and proctoscopy are typically DEFERRED in the acute painful phase — performed either after anaesthetic cream has been applied, or under general anaesthesia if full anorectal examination is required.",
+        "visual_inspection": "90% of fissures are visible on gentle bilateral traction of the perianal skin in the lateral decubitus (left lateral / Sims') or prone knee-chest position. Look for: posterior midline tear at 6 o'clock; bright red (acute) or pale fibrous (chronic) edges; sentinel skin tag at lower end; secondary features of chronicity."
+      },
+      "medical_history": [
+        "Pain characteristics: CARDINAL — onset with defecation; sharp tearing quality; burning/throbbing persisting 1-4 hours post-defecation; fear of defecation; quantify pain severity (NRS 1-10)",
+        "Bleeding: bright red; on paper/dripping; volume (small amounts); duration",
+        "Bowel habit: constipation (hard stools, straining, infrequent); diarrhoea (frequent loose stools); Bristol Stool Form Scale — type 1-2 (hard) most common fissure-associated",
+        "Duration of symptoms: acute (<6 weeks) vs chronic (>6 weeks)",
+        "Previous anal fissure episodes and treatments tried; response to treatments",
+        "Obstetric history in women: recent vaginal delivery; perineal trauma; epidural; oxytocin augmentation",
+        "Sexual history: anal intercourse; STI risk factors (MSM — men who have sex with men)",
+        "Medications: opioids (codeine, tramadol, morphine — constipating); iron supplements; calcium channel blockers; antidepressants (TCAs — anticholinergic constipating); any laxative use",
+        "Diet and fibre intake: estimated daily fibre and fluid intake",
+        "IBD history: Crohn's disease or UC (secondary fissure risk)",
+        "Immunosuppression: HIV status; transplant; chemotherapy",
+        "Previous anorectal surgery"
+      ],
+      "physical_examination": [
+        "Patient positioning: left lateral (Sims') position or prone/knee-chest position for perianal inspection",
+        "Perianal inspection: gentle bilateral traction of perianal skin to open the anal verge; look for fissure at posterior midline (6 o'clock lithotomy) primarily; assess: acuity (bright red — acute; pale fibrous — chronic); secondary features (sentinel tag, chronic appearance); anal hygiene; other perianal disease (haemorrhoids, skin tags, condylomata, fistula external openings, abscess)",
+        "Sentinel tag identification: a fleshy skin tag at the lower end of the fissure — pathognomonic of chronic fissure when present",
+        "Digital rectal examination (DRE): defer if patient has severe acute pain (inadequate examination causes severe pain and anxiety); if possible after topical anaesthetic application; assesses: resting sphincter tone (high in fissure — hypertonia); tenderness on examination; exclude anorectal mass; assess prostate in men",
+        "Proctoscopy / rigid sigmoidoscopy: deferred in acute painful fissure; performed when pain is managed or under anaesthesia; assesses: hypertrophied anal papilla at proximal end of fissure; internal haemorrhoids; rectal mucosa (proctitis — exclude IBD); takes biopsies of suspicious or atypical ulcers",
+        "General examination: nutritional status; abdominal examination (Crohn's disease — abdominal mass, tenderness); perianal skin disease (psoriasis, lichen sclerosus, dermatitis)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Clinical Perianal Inspection (Primary Diagnostic Method)",
+          "type": "Clinical — Visual",
+          "description": "The PRIMARY and DEFINITIVE diagnostic test for anal fissure in the acute presentation. Requires no instruments. Patient is positioned in left lateral decubitus; buttocks are gently separated using both thumbs; the anal verge is examined for a longitudinal tear, particularly at the posterior midline (6 o'clock). Acute fissures: bright red fresh edges. Chronic fissures: pale, indurated edges with visible white IAS fibres, sentinel skin tag, possible hypertrophied anal papilla.",
+          "purpose": "Confirm anal fissure diagnosis; assess acuity (acute vs chronic); identify secondary features; plan treatment approach",
+          "what_to_look_for": "Posterior midline tear (90%); sentinel skin tag (chronic — at lower end); atypical location or appearance (raises secondary cause concern)"
+        },
+        {
+          "test_name": "Anal Manometry",
+          "type": "Physiological",
+          "description": "Measurement of anal canal pressures using a pressure-sensitive probe. In anal fissure: characteristically elevated resting pressure (>90 mmHg vs normal 50-80 mmHg) from IAS hypertonia. Useful for: confirming IAS hypertonia (guides treatment choice — chemical or surgical sphincterotomy); pre-operative assessment; research; documenting pressure after sphincterotomy. NOT routine in all fissure patients — reserved for atypical presentations, surgical planning, or research.",
+          "purpose": "Confirm IAS hypertonia; pre-surgical assessment; guide treatment; monitor treatment response",
+          "key_metric": "Resting pressure >90 mmHg in chronic fissure (normal 50-80 mmHg); Maximum squeeze pressure also measured (external sphincter); post-sphincterotomy: pressure should normalise to 50-70 mmHg"
+        },
+        {
+          "test_name": "Examination Under Anaesthesia (EUA)",
+          "type": "Surgical / Diagnostic",
+          "description": "Full anorectal examination performed under general or spinal anaesthesia — when perianal examination in clinic is impossible due to pain; when atypical fissure features require thorough inspection and biopsy; or when combined diagnostic + therapeutic procedure is planned (botulinum toxin injection or LIS). EUA allows: full proctoscopy and sigmoidoscopy; biopsy of suspicious ulcer edges; drainage of associated abscess; assessment of fistula.",
+          "purpose": "Complete anorectal examination when clinic examination not possible; biopsy of atypical fissure; combined diagnostic-therapeutic procedure",
+          "indications": "Severe pain preventing clinic examination; suspicion of secondary cause requiring biopsy; planned botulinum toxin injection or LIS"
+        },
+        {
+          "test_name": "Biopsy of Fissure Edges",
+          "type": "Histological",
+          "description": "Biopsy of atypical or suspicious fissure margins is MANDATORY when: lateral location (not posterior midline); multiple fissures; fissure in patient >45 years not responding to treatment; painless or minimally painful fissure (unlike typical primary fissures which are exquisitely painful); irregular, undermined, or fungating edges; failure to heal despite appropriate treatment. Histology differentiates: squamous cell carcinoma; Crohn's (granulomas); tuberculosis (caseating granulomas, AFB); lymphoma; Paget's disease of the anus.",
+          "purpose": "Exclude malignancy; confirm Crohn's or TB; identify specific secondary cause",
+          "alarm": "ANY non-healing anal ulcer in a patient >45 years must be biopsied to exclude squamous cell carcinoma of the anus"
+        },
+        {
+          "test_name": "Colonoscopy / Flexible Sigmoidoscopy",
+          "type": "Endoscopic",
+          "description": "Not routinely required for primary anal fissure. INDICATED when: suspicion of Crohn's disease or UC (secondary fissure with associated bowel symptoms — diarrhoea, rectal bleeding, abdominal pain, weight loss); rectal bleeding not fully explained by fissure; age >45-50 with change in bowel habit or iron deficiency anaemia; failed treatment of atypical fissure; family history of colorectal cancer.",
+          "purpose": "Exclude Crohn's disease and IBD; exclude colorectal polyps and cancer in age-appropriate patients; assess rectal mucosa (proctitis)",
+          "indications": "Atypical or secondary fissure; IBD symptoms; rectal bleeding with change in bowel habit; age >45 with inadequate explanation of symptoms"
+        },
+        {
+          "test_name": "Anorectal Ultrasound (Endoanal Ultrasound)",
+          "type": "Imaging",
+          "description": "High-resolution ultrasound of the sphincter complex using a rotating endoanal probe. Used for: assessment of internal and external sphincter integrity before sphincterotomy (to ensure sufficient sphincter muscle remains — reduces incontinence risk); evaluation of fistula tracts in complex anorectal disease; assessment of post-sphincterotomy sphincter.",
+          "purpose": "Pre-operative sphincter assessment; assess for coexisting sphincter injury (obstetric); evaluate fistula tract in complex cases",
+          "not_routine": "Not required for typical primary anal fissure; reserved for: pre-surgical planning; suspected sphincter defect; obstetric injury assessment; complex anorectal disease"
+        },
+        {
+          "test_name": "STI Screening (HIV, Syphilis, HSV, Gonorrhoea, Chlamydia)",
+          "type": "Blood and Swab — Microbiological/Serology",
+          "description": "In patients with: multiple anal fissures; atypical fissure appearance; MSM patients; known STI history; or HIV-positive patients — full STI screen is indicated. Herpes simplex virus (HSV) causes multiple exquisitely painful perianal/anal vesicular ulcers that mimic severe anal fissures; primary HSV proctitis is extremely painful. Syphilis primary chancre can appear at the anus — painless indurated ulcer (may be mistaken for fissure). LGV Chlamydia causes proctocolitis.",
+          "purpose": "Diagnose STI-related secondary anal ulcers; guide specific antiviral/antibiotic treatment",
+          "tests": "HIV 4th generation Ag/Ab test; RPR/TPPA (syphilis); HSV PCR swab of ulcer; rectal gonorrhoea and chlamydia NAAT; LGV serology (Chlamydia trachomatis serovars L1-L3)"
+        },
+        {
+          "test_name": "Full Blood Count (FBC), CRP, and Coeliac Serology",
+          "type": "Blood",
+          "description": "In atypical fissures or when secondary cause is suspected: FBC (anaemia — Crohn's, malignancy; eosinophilia — inflammatory); CRP (elevated in Crohn's, infection, malignancy); coeliac serology (coeliac causes malabsorption-related constipation and occasionally anorectal symptoms).",
+          "purpose": "Screen for systemic disease underlying secondary fissure; exclude Crohn's activity; anaemia assessment"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Treatment of anal fissure follows a step-up approach from conservative measures to medical therapy to surgical intervention. The cornerstone of treatment at ALL stages is stool softening — without normalising stool consistency, no medical or surgical treatment achieves lasting success. All topical medications should be prescribed by a licensed physician or colorectal surgeon.",
+      "treatment_ladder": {
+        "step_1": "Conservative: high-fibre diet + adequate hydration + warm sitz baths + stool softeners + topical anaesthetic",
+        "step_2": "Medical (pharmacological): topical GTN (0.2-0.4%) OR topical diltiazem (2%) for 6-8 weeks — chemical sphincterotomy",
+        "step_3": "Minimally invasive: botulinum toxin injection into IAS (if medical therapy failed or not tolerated)",
+        "step_4": "Surgical: lateral internal sphincterotomy (LIS) — gold standard; highest cure rate; small incontinence risk"
+      },
+      "categories": [
+        {
+          "category_id": "MED-CAT-181",
+          "category_name": "Topical Anaesthetics — Symptomatic Pain Relief",
+          "purpose": "Provide local anaesthesia to the anal canal and perianal region, reducing pain during and after defecation. Allow patients to defecate without severe pain-avoidance behaviour, breaking the defecation-retention cycle. Always apply before defecation.",
+          "medicines": [
+            {
+              "name": "Lidocaine (Lignocaine) 5% Ointment / 2% Gel",
+              "brand_examples": ["Xylocaine 5% Ointment", "EMLA (topical)", "Lignocaine gel 2%", "Rectigesic (combined)"],
+              "form": "Topical ointment, Gel",
+              "dosage": "Apply a small amount (pea-sized — 2-3cm) directly to the anal opening and the fissure 15-30 minutes before defecation; may also apply after defecation for pain relief; up to 3-4 times daily",
+              "use_case": "Acute anal fissure pain relief; pre-defecation pain reduction; all stages of fissure management for symptomatic relief; also used before digital rectal examination or proctoscopy to reduce procedural pain",
+              "mechanism": "Na⁺ channel blockade in sensory nerve fibres of the anoderm (pudendal nerve branches) — blocks pain signal transmission locally; reduces pain during stool passage over the fissure",
+              "side_effects": ["Local skin sensitisation and contact dermatitis (rare)", "Mild burning on application (transient)", "Systemic toxicity (theoretical — negligible at topical anal doses)", "Do not apply to broken or infected skin in large amounts"],
+              "note": "Lidocaine ointment is the most widely used and available first-line symptom management for anal fissure in India and globally; inexpensive; effective for pain reduction"
+            },
+            {
+              "name": "Pramoxine (Pramocaine) Cream",
+              "brand_examples": ["Prax", "Analpram"],
+              "form": "Cream",
+              "dosage": "Apply to affected area up to 4 times daily",
+              "use_case": "Topical anaesthesia; particularly useful in patients with lignocaine allergy or sensitivity"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-182",
+          "category_name": "Stool Softeners and Laxatives — Essential Foundation of Treatment",
+          "purpose": "Normalise stool consistency — the MOST IMPORTANT component of anal fissure treatment. Soft, well-formed stools (Bristol Stool Scale type 4) are the foundation that makes all other treatments effective. Without soft stools, recurrence is virtually certain regardless of medical or surgical treatment used.",
+          "medicines": [
+            {
+              "name": "Ispaghula Husk (Psyllium Husk)",
+              "brand_examples": ["Isabgol", "Metamucil", "Fybogel", "Sat Isabgol", "Psyllium"],
+              "form": "Powder/granules for oral suspension",
+              "dosage": "1-2 teaspoons (5-10g) dissolved in a large glass of water (250-300mL) once or twice daily; ALWAYS with large volume of water; may take 48-72 hours for full effect; ideally continued long-term (fibre supplementation)",
+              "use_case": "FIRST-LINE and MOST IMPORTANT treatment for anal fissure — increases stool bulk and softness; reduces constipation; reduces straining; safe for pregnancy and breastfeeding; most cost-effective fibre supplement in India",
+              "mechanism": "Soluble fibre — absorbs water forming a gel (mucilage) that increases stool volume and water content → softer, easier-to-pass stools; reduces colonic transit time",
+              "side_effects": ["Bloating and flatulence (first 1-2 weeks — usually resolves)", "OESOPHAGEAL OBSTRUCTION if taken without adequate water — must be dissolved in full glass of water", "Allergic reactions (rare — psyllium allergy)"],
+              "india_context": "Isabgol is widely available across India in pharmacies and grocery stores; inexpensive; one of the most useful dietary supplements for anal fissure management"
+            },
+            {
+              "name": "Polyethylene Glycol (Macrogol / PEG)",
+              "brand_examples": ["Movicol", "Laxido", "Forlax", "Pegafreedom"],
+              "form": "Oral powder sachet",
+              "dosage": "1-3 sachets daily in water; adjust dose to achieve type 4 Bristol Stool; maintain long-term",
+              "use_case": "Constipation-associated anal fissure; acute and chronic fissure; safe in pregnancy; preferred over stimulant laxatives (no dependency); safe long-term",
+              "mechanism": "Osmotic laxative — PEG is non-absorbed; retains water in intestinal lumen by osmosis → softer, larger stools",
+              "side_effects": ["Mild bloating and flatulence", "Nausea (rare)", "Diarrhoea (excessive dose)"],
+              "advantage": "No dependency; safe long-term; no electrolyte disturbance at standard doses; safe in pregnancy"
+            },
+            {
+              "name": "Lactulose",
+              "brand_examples": ["Duphalac", "Lactulose syrup"],
+              "form": "Oral syrup",
+              "dosage": "15-30mL once or twice daily; adjust to Bristol type 4",
+              "use_case": "Constipation in anal fissure; particularly useful in children (sweet taste improves acceptance); safe in pregnancy",
+              "side_effects": ["Bloating, flatulence (from fermentation — common and troublesome)", "Sweet taste may cause dental concerns in children — rinse mouth after"],
+              "note": "More bloating than macrogol; macrogol preferred if available; lactulose widely used in India"
+            },
+            {
+              "name": "Docusate Sodium (Stool Softener)",
+              "brand_examples": ["Dulcoease", "Colace"],
+              "form": "Capsule",
+              "dosage": "100-200mg twice daily",
+              "use_case": "Stool softening when hard stools are the predominant problem; not a laxative per se — acts as a surfactant to soften stool",
+              "mechanism": "Anionic surfactant — reduces surface tension of stool allowing water and fat penetration → softer stools",
+              "side_effects": ["Mild GI cramping", "Diarrhoea (excessive dose)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-183",
+          "category_name": "Topical Nitrates — Chemical Sphincterotomy (First-Line Medical Therapy)",
+          "purpose": "Glyceryl trinitrate (GTN) ointment is the most widely studied and commonly prescribed chemical sphincterotomy agent for anal fissure. By releasing nitric oxide (NO) — a smooth muscle relaxant — it reduces IAS hypertonia, improving blood flow to the ischaemic posterior midline and breaking the spasm-ischaemia-non-healing cycle.",
+          "note": "GTN is the most commonly recommended first-line medical treatment for chronic anal fissure globally. Response rate approximately 45-65% for chronic fissures. The major limitation is headache (from systemic nitrate absorption) — affects 20-40% of patients and is the primary reason for discontinuation.",
+          "medicines": [
+            {
+              "name": "Glyceryl Trinitrate (GTN) 0.2% Ointment",
+              "brand_examples": ["Rectogesic 0.4% (UK)", "GTN ointment 0.2% (compounded)", "Anoheal (0.4%)", "Nifedipt ointment (different drug)"],
+              "form": "Topical ointment (compounded by pharmacy in India — 0.2% or 0.4%)",
+              "dosage": "Apply a small amount (2.5cm strip — approximately 500mcg GTN for 0.2% formulation) to the anal canal and perianal skin twice daily (morning + before bedtime); wear gloves or use finger cot for application; maximum 6-8 weeks continuous use",
+              "use_case": "FIRST-LINE pharmacological treatment for chronic anal fissure; acute fissure not responding to conservative measures after 4-6 weeks; breaks IAS spasm-ischaemia cycle",
+              "mechanism": "NO (nitric oxide) donor — penetrates anoderm → enzymatically released NO → activates guanylate cyclase → cGMP → smooth muscle relaxation of IAS → reduces resting anal pressure by 25-35% → improves posterior midline blood flow → allows tissue healing",
+              "side_effects": ["Headache (most common and dose-limiting) — 20-40% of patients; from systemic vasodilation (nitrate headache); usually mild to moderate; take oral paracetamol 30 min before application; use the MINIMUM EFFECTIVE DOSE (0.2% not 0.4% first-line); apply to ANUS ONLY (not wider area) to reduce systemic absorption", "Perianal skin irritation", "Flushing", "Dizziness (postural hypotension)", "Tachycardia (reflex)", "HYPOTENSION — serious interaction with PDE5 inhibitors (sildenafil/Viagra, tadalafil/Cialis, vardenafil) — ABSOLUTE CONTRAINDICATION — concurrent use causes life-threatening hypotension"],
+              "contraindications": ["PDE5 inhibitor use (sildenafil, tadalafil, vardenafil, avanafil) — life-threatening hypotension — strict contraindication", "Severe hypotension", "Hypertrophic obstructive cardiomyopathy"],
+              "efficacy": "Fissure healing: 45-65% (6-8 week course); superior to placebo; inferior to surgery; comparable to botulinum toxin; high recurrence rate after stopping (33-50%)",
+              "instructions_for_patient": "Apply ONLY to the anal opening; use a gloved finger, gauze, or cotton tip; wash hands before and after; do NOT apply to the surrounding skin beyond 2cm; take paracetamol for headache"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-184",
+          "category_name": "Topical Calcium Channel Blockers — Better Tolerated Alternative to GTN",
+          "purpose": "Calcium channel blockers (CCBs) relax IAS smooth muscle by blocking L-type calcium channels. Topical application provides local sphincter relaxation with minimal systemic effects. BETTER TOLERATED than GTN (significantly lower headache rate) with comparable efficacy — making them the preferred first-line option in many guidelines and particularly useful in: patients who cannot tolerate GTN headaches; post-partum women (breastfeeding); patients on PDE5 inhibitors (where GTN is contraindicated).",
+          "medicines": [
+            {
+              "name": "Diltiazem 2% Cream",
+              "brand_examples": ["Anoheal (2% diltiazem)", "Diltiazem 2% cream (compounded)"],
+              "form": "Topical cream (compounded by pharmacy at 2% concentration)",
+              "dosage": "Apply approximately 2.5cm of cream to the anal canal and perianal region twice daily (morning + bedtime); continue for 6-8 weeks; use glove or finger cot",
+              "use_case": "FIRST-LINE OR ALTERNATIVE pharmacological treatment for chronic anal fissure; preferred over GTN when: headaches limit GTN use; post-partum women (breastfeeding safety); patients on PDE5 inhibitors (where GTN is contraindicated); patients who prefer fewer systemic side effects",
+              "mechanism": "Calcium channel blockade (L-type Ca²⁺ channels) in IAS smooth muscle → reduces calcium-dependent IAS contractions → decreases resting anal pressure by 20-25% → improves posterior midline blood flow → promotes healing",
+              "side_effects": ["Perianal irritation/burning (most common — 5-10%; less troublesome than GTN headache)", "Mild headache (much less common than GTN — <5%)", "Minimal systemic absorption with topical application"],
+              "efficacy": "Comparable to GTN for fissure healing (50-60% at 8 weeks); significantly better tolerated; preferred in many current guidelines for its improved adherence due to fewer side effects",
+              "advantage_over_gtn": "Substantially lower headache incidence; safe with PDE5 inhibitors; can be used in post-partum women and breastfeeding; better patient compliance"
+            },
+            {
+              "name": "Nifedipine 0.2% Cream",
+              "brand_examples": ["Nifedipine 0.2% cream (compounded)"],
+              "form": "Topical cream",
+              "dosage": "Apply twice daily to anal canal",
+              "use_case": "Alternative CCB for anal fissure; similar efficacy to diltiazem; slightly more systemic absorption than diltiazem (mild hypotension possible)",
+              "side_effects": ["Headache (more than diltiazem but less than GTN)", "Flushing", "Perianal burning"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-185",
+          "category_name": "Botulinum Toxin Injection — Second-Line Non-Surgical Treatment",
+          "purpose": "Botulinum toxin Type A injected into the IAS provides prolonged sphincter muscle relaxation (3-4 months) — allowing the fissure to heal without the need for surgical sphincterotomy. Considered second-line after failure of topical GTN or diltiazem, or as an alternative to surgery in patients who wish to avoid operation.",
+          "medicines": [
+            {
+              "name": "Botulinum Toxin Type A (Onabotulinum Toxin A)",
+              "brand_examples": ["Botox (Allergan)", "Dysport", "Xeomin"],
+              "form": "Powder for reconstitution → Injection",
+              "dosage": "20-40 units injected into the IAS (internal anal sphincter) at one or two sites; typically performed as an outpatient procedure without general anaesthesia (or with brief local anaesthesia); some centres use 50-100 units for refractory cases",
+              "use_case": "Chronic anal fissure that has FAILED 6-8 weeks of topical GTN or diltiazem; patients wishing to avoid surgery; high surgical risk patients; patients with Crohn's-associated fissure; post-partum fissure resistant to conservative treatment",
+              "mechanism": "Botulinum toxin cleaves SNAP-25 (synaptosomal-associated protein) → inhibits acetylcholine vesicle fusion at neuromuscular junction → prevents ACh release → chemical denervation of IAS → reversible muscle paralysis → reduced resting anal pressure for 3-4 months → allows fissure to heal in an ischaemia-free environment",
+              "healing_rate": "50-70% fissure healing with one injection; 75-80% with two injections if first fails",
+              "side_effects": ["Temporary faecal incontinence — most common concern; minor incontinence (soiling) in 10-20%; passive incontinence (gas/mucus) in 5%; generally TRANSIENT resolving within 3-4 months as toxin effect wears off", "Bleeding at injection site", "Local infection (rare)", "Injection site pain (brief, minimal)"],
+              "advantage": "Reversible (temporary — 3-4 months); avoids surgical risk; outpatient procedure; minimal recovery time; can be repeated if first injection inadequate",
+              "comparison_with_surgery": "Healing rate slightly lower than LIS surgery (50-70% vs 90-95%); higher recurrence rate; but NO permanent incontinence risk (unlike LIS); first-choice where surgery to be avoided"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-186",
+          "category_name": "Topical Corticosteroids — Anti-Inflammatory Adjunct",
+          "purpose": "Reduce perianal inflammation, pruritus, and mucosal irritation. Used as adjuncts in anal fissure management, not as primary treatments (do not address IAS spasm). Also useful for associated perianal dermatitis and pruritus ani.",
+          "medicines": [
+            {
+              "name": "Hydrocortisone 1% Cream / Ointment",
+              "brand_examples": ["Anusol HC", "Rectal ointment with HC", "Scheriproct (with cinchocaine)", "Proctosedyl"],
+              "form": "Cream, Ointment, Suppository",
+              "dosage": "Apply to perianal area twice daily; short courses only (1-2 weeks) to avoid skin atrophy from prolonged use",
+              "use_case": "Adjunct in anal fissure for perianal inflammation, pruritus ani, and associated dermatitis; combined preparations (HC + local anaesthetic) provide both anti-inflammatory and anaesthetic benefit; also for haemorrhoidal inflammation co-existing with fissure",
+              "mechanism": "Glucocorticoid receptor activation → reduces prostaglandin and cytokine production → reduces perianal inflammation and itch",
+              "side_effects": ["Perianal skin atrophy (with prolonged use >2-3 weeks — avoid long-term)", "Local skin irritation", "Theoretically impairs healing if used excessively on ulcerated tissue"],
+              "note": "Hydrocortisone reduces inflammation and pruritus but has NO effect on IAS spasm (the primary pathological mechanism) — always combine with stool softeners and GTN/diltiazem for fissure treatment proper"
+            },
+            {
+              "name": "Betamethasone + Lidocaine Combined Cream",
+              "brand_examples": ["Betnovate-C", "Anovate"],
+              "form": "Cream",
+              "dosage": "Small amount to anal area twice daily for 1-2 weeks",
+              "use_case": "Combined anti-inflammatory + anaesthetic for perianal inflammation and acute fissure pain; short-term use only"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-187",
+          "category_name": "Surgical Treatment — Lateral Internal Sphincterotomy (LIS)",
+          "purpose": "The GOLD STANDARD surgical treatment for chronic anal fissure — provides the highest cure rates (90-95%) with acceptable risk. LIS involves cutting the lower portion of the IAS (typically 1/3 of the IAS length distally) to permanently reduce resting anal pressure, eliminate IAS hypertonia, restore blood flow to the posterior midline, and allow healing.",
+          "note": "LIS is indicated when: chronic fissure has failed 2 courses of topical therapy (GTN and/or diltiazem) AND botulinum toxin; or when the patient prefers definitive treatment; or in select cases of very symptomatic acute fissure.",
+          "medicines": [
+            {
+              "name": "Lateral Internal Sphincterotomy (LIS) — Surgical Procedure",
+              "form": "Surgical procedure (day case)",
+              "description": "A day-case surgical procedure performed under general or spinal anaesthesia. A small incision is made at the lateral position (3 or 9 o'clock) — NOT at the fissure site (posterior midline). The lower third of the IAS is divided under direct vision (open technique) or by inserting a scalpel via the intersphincteric groove (closed technique). The fissure itself is typically NOT excised (unless chronic fibrosis requires excision for healing).",
+              "dosage": "N/A — surgical procedure",
+              "use_case": "Chronic anal fissure resistant to medical treatment; chronic fissure with significant sentinel tag and secondary features; second-line after failed topical and botulinum toxin treatment; patient preference for definitive treatment",
+              "healing_rate": "90-95% fissure healing; most effective single treatment available",
+              "side_effects": ["Incontinence (the primary and most feared risk) — minor incontinence (gas flatus): 5-10%; liquid stool soiling: 1-5%; solid stool incontinence: <1%; incontinence more common in: women (especially with prior obstetric sphincter injury); anterior sphincterotomy; excessive length of sphincterotomy; pre-existing sphincter damage", "Haemorrhage from sphincterotomy wound (rare)", "Infection", "Fissure recurrence (5-10%)", "Delayed healing"],
+              "alternatives_to_reduce_incontinence_risk": "Botulinum toxin (preferred first in women, elderly with suspected sphincter weakness, and all patients with pre-existing incontinence); anal advancement flap (preserves sphincter)",
+              "technique_note": "Open LIS (Eisenhammer) vs Closed LIS (Parks) — comparable outcomes; open allows direct visual control of sphincter division extent"
+            },
+            {
+              "name": "Anal Advancement Flap",
+              "form": "Surgical procedure",
+              "description": "A mucocutaneous flap from perianal skin is advanced to cover the fissure wound after partial sphincterotomy. Used for: fissures where sphincterotomy alone is deemed too risky (anterior fissure in women; previous obstetric injury; elderly); large chronic fissures requiring mucosal coverage; when LIS has failed.",
+              "use_case": "Anterior fissure in women; patients with pre-existing incontinence; failed LIS; large chronic ulcer requiring flap coverage",
+              "healing_rate": "75-85% healing; better continence profile than LIS (less sphincter division)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-188",
+          "category_name": "Topical Minoxidil and L-Arginine — Investigational Agents",
+          "purpose": "Emerging and evidence-based second-line topical agents for anal fissure with different mechanisms.",
+          "medicines": [
+            {
+              "name": "Minoxidil 0.5-1% Cream (Topical)",
+              "brand_examples": ["Compounded topical minoxidil 0.5-1%"],
+              "form": "Compounded topical cream",
+              "dosage": "Apply twice daily for 4-8 weeks",
+              "use_case": "An increasingly used option for anal fissure — particularly in patients with PDE5 inhibitor contraindication (GTN cannot be used) and when diltiazem has failed; several trials show comparable efficacy to GTN and diltiazem",
+              "mechanism": "Potassium channel opener → membrane hyperpolarisation of IAS smooth muscle → muscle relaxation → reduced resting anal pressure",
+              "side_effects": ["Local burning and stinging", "Hypertrichosis (hair growth) at application site — from systemic absorption", "Fluid retention (rare at topical doses)"],
+              "evidence": "Multiple small RCTs show healing rates of 55-70% comparable to GTN; fewer systemic side effects than GTN"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-189",
+          "category_name": "Pain Management — Systemic Analgesia",
+          "purpose": "Systemic analgesics for severe anal fissure pain uncontrolled by topical lidocaine alone.",
+          "medicines": [
+            {
+              "name": "Paracetamol (Acetaminophen)",
+              "brand_examples": ["Crocin", "Panadol", "Calpol"],
+              "form": "Tablet",
+              "dosage": "500-1000mg every 4-6 hours; maximum 4g/day",
+              "use_case": "Mild to moderate anal pain from fissure; first-line systemic analgesic; safe in pregnancy and breastfeeding; also useful 30 min before GTN application to pre-empt GTN headache"
+            },
+            {
+              "name": "Ibuprofen (NSAID)",
+              "brand_examples": ["Brufen", "Nurofen"],
+              "form": "Tablet",
+              "dosage": "400mg three times daily with food",
+              "use_case": "Moderate anal fissure pain; anti-inflammatory benefit for perianal inflammation",
+              "caution": "Avoid in constipation-dominant IDA (worsens GI mucosa); avoid in renal impairment; avoid in pregnancy",
+              "note": "AVOID codeine-containing analgesics for anal fissure pain — codeine is highly constipating and will worsen the fissure by causing harder stools; this is a critical prescribing point"
+            },
+            {
+              "name": "Warm Sitz Baths",
+              "form": "Non-pharmacological hydrotherapy",
+              "dosage": "Sit in warm (not hot) shallow bath or basin of warm water for 10-20 minutes, 2-3 times daily, and after each bowel movement. Add 1-2 tablespoons of salt or bicarbonate to water (optional — soothing). Alternatively use a sitz bath device (plastic basin that fits over the toilet seat — widely available in India)",
+              "use_case": "ALL stages of anal fissure — the most evidence-based and universally recommended non-pharmacological treatment. Mechanism: (1) Warmth causes direct IAS smooth muscle relaxation → reduces resting pressure; (2) Improved local blood flow to the ischaemic posterior midline; (3) Cleanses the fissure wound of faecal bacteria; (4) Reduces pain; (5) Reduces muscle spasm post-defecation",
+              "mechanism": "Hydrotherapy → heat-induced local vasodilation and smooth muscle relaxation → reduced IAS spasm → pain relief + improved healing",
+              "evidence": "Multiple studies confirm warm sitz baths reduce anal resting pressure and improve healing; widely recommended by BSG, ACPGBI, ACG guidelines",
+              "side_effects": ["None; ensure water is warm (37-39°C) not hot (burns risk)"]
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet is the single most important and most modifiable factor in both the treatment and prevention of anal fissure. The primary dietary goal is to ensure soft, well-formed stools (Bristol Stool Scale Type 4 — 'like a smooth sausage') that pass without straining. This requires: adequate daily fibre intake (25-35g/day); adequate hydration (1.5-2.5 litres/day); avoidance of constipating foods; and active inclusion of fibre-rich, gut-motility-supporting foods. In India, the traditional high-fibre diet (millet, dal, vegetables) is highly protective — but urban dietary transition to refined grains and processed foods has dramatically increased constipation-related anorectal disease.",
+      "recommended_foods": [
+        {
+          "category": "High-Fibre Foods — The Most Important Dietary Category",
+          "evidence": "Very strong — dietary fibre is the cornerstone of both anal fissure treatment and prevention. Soluble fibre forms a gel that bulks and softens stools; insoluble fibre increases transit speed. Target: 25-35g total dietary fibre daily.",
+          "items": [
+            {
+              "food": "Whole grains: Brown rice, Whole wheat atta (chakki), Jowar (sorghum), Bajra (pearl millet), Ragi (finger millet)",
+              "benefit": "High insoluble fibre increases stool bulk and speeds colonic transit — primary protection against constipation and anal fissure. Jowar: 6g fibre/100g; Bajra: 5g/100g; Ragi: 11g/100g (exceptional); Whole wheat atta: 12-13g/100g vs white maida: 2g/100g. The switch from whole grain to refined grain is the single most impactful dietary change causing urban constipation and anal fissure.",
+              "frequency": "Daily — whole grain for all carbohydrate portions",
+              "india_specific": "Replace white rice with brown rice; white maida-based bread with whole wheat chapati; include millet rotis (jowar, bajra, ragi) at least 3-4 times per week"
+            },
+            {
+              "food": "Legumes and Dal: Masoor dal, Chana dal, Moong dal, Rajma, Chhole",
+              "benefit": "Excellent combined soluble + insoluble fibre; masoor dal: 15-18g/100g dry; rajma: 7g/100g cooked; chickpeas: 8g/100g cooked; both soften stools AND increase bulk; additionally provide protein, iron, zinc",
+              "frequency": "Daily — dal at every meal is an ideal approach"
+            },
+            {
+              "food": "Fruits: Papaya, Guava, Pear, Apple (with skin), Banana (ripe), Figs (anjeer), Prunes",
+              "benefit": "Papaya: contains papain enzyme with gut motility-stimulating properties + natural fibre + high water content — one of the most effective fruits for constipation; excellent for fissure management. Prunes/dried plums: sorbitol (natural osmotic laxative) + fibre — highly evidence-based for constipation. Guava: 5g fibre per medium fruit; pear: 5.5g; apple with skin: 4.4g. Figs (anjeer): 10g fibre/100g dried.",
+              "frequency": "2-3 servings daily",
+              "india_specific": "Papaya is widely available year-round across India — promote as daily breakfast fruit for fissure management; 1 bowl papaya daily can significantly improve stool consistency"
+            },
+            {
+              "food": "Vegetables: Pumpkin (kaddu), Bottle gourd (lauki), Ridge gourd (tori), Okra (bhindi), Spinach (palak — cooked), Sweet potato (shakarkand), Brinjal (baingan)",
+              "benefit": "High water and fibre content; pumpkin and bottle gourd (high water + fibre) are classically prescribed in Indian medicine for constipation and anal fissure; okra mucilage (natural lubricant) softens stools; sweet potato (4g fibre per medium piece); all provide gut-motility-supporting bulk",
+              "frequency": "Multiple servings daily — 5-7 servings of vegetables",
+              "india_specific": "Lauki (bottle gourd) juice is a traditional Indian remedy for constipation and anal fissure — mild, alkaline, high water content; kaddu (pumpkin) sabzi; bhindi (okra) are excellent daily inclusions"
+            },
+            {
+              "food": "Isabgol (Psyllium Husk) as dietary fibre supplement",
+              "benefit": "The most evidence-based fibre supplement for normalising stool consistency and reducing anal fissure symptoms. 1-2 teaspoons in a large glass of water daily increases stool softness and reduces straining — the single most useful dietary intervention beyond food modification",
+              "frequency": "Once or twice daily with at least 300mL water",
+              "note": "Isabgol is available at every Indian pharmacy for Rs. 100-200 per 100g pack — one of the most cost-effective medical treatments for anal fissure"
+            }
+          ]
+        },
+        {
+          "category": "Hydration — Equally Important as Fibre",
+          "evidence": "Strong — dietary fibre only works as a stool softener in the presence of adequate water; dehydration defeats the purpose of fibre supplementation",
+          "items": [
+            {
+              "food": "Water",
+              "benefit": "ESSENTIAL — fibre absorbs water to form the gel that softens stools; without adequate water, high fibre intake can paradoxically WORSEN constipation (dry fibre absorbs residual water from colon). Target: 2-2.5 litres/day (more in summer, with exercise, with fever)",
+              "frequency": "8-10 glasses daily; consistently throughout the day; especially ensure adequate water with each dose of Isabgol or other fibre supplements",
+              "note": "Warm water on waking (1-2 glasses) stimulates the gastrocolic reflex and promotes morning bowel movement — reducing the need for straining"
+            },
+            {
+              "food": "Coconut water, Buttermilk (chaach), Thin rice water (kanji), Vegetable soup",
+              "benefit": "Hydrating fluids with electrolyte balance; buttermilk (chaach) additionally provides probiotics and calcium; kanji (fermented rice water) has traditional Indian use for constipation and gut health; all contribute to fluid target without adding caffeine or alcohol",
+              "frequency": "1-2 glasses daily as hydration alternatives or additions"
+            },
+            {
+              "food": "Aloe vera juice (inner leaf — pharmaceutical grade)",
+              "benefit": "Anthraquinone glycosides in aloe vera have a mild laxative effect (stimulate rectal peristalsis); also has anti-inflammatory mucosal properties; use small amounts (30-60mL diluted) for gentle constipation relief; some topical application of aloe gel to the perianal area also soothes inflammation",
+              "frequency": "30-60mL diluted juice daily if constipation persists",
+              "caution": "Use only inner leaf (aloin-reduced) products; excessive or whole leaf aloe can cause severe diarrhoea and electrolyte disturbances"
+            }
+          ]
+        },
+        {
+          "category": "Probiotics — Gut Microbiome Support",
+          "evidence": "Moderate — gut microbiome influences bowel transit time and stool consistency; probiotic supplementation modestly improves constipation-related stool frequency and consistency",
+          "items": [
+            {
+              "food": "Curd (dahi), Buttermilk (chaach), Kefir, Yogurt with live cultures",
+              "benefit": "Lactobacillus and Bifidobacterium strains modestly reduce gut transit time; reduce bloating; improve stool frequency and consistency; reduce inflammation; rebuild gut microbiome particularly after antibiotic use (antibiotics commonly cause constipation or diarrhoea — both fissure risk factors)",
+              "frequency": "Daily — 1-2 cups curd with meals"
+            }
+          ]
+        },
+        {
+          "category": "Anti-Inflammatory and Healing Foods",
+          "items": [
+            {
+              "food": "Turmeric (haldi) — in warm milk or cooking",
+              "benefit": "Curcumin has potent anti-inflammatory and wound-healing properties; reduces mucosal inflammation; improves local tissue repair; traditional Indian use for anorectal conditions (turmeric sits in warm ghee used topically in traditional medicine); systemic anti-inflammatory benefit from daily dietary use",
+              "frequency": "Daily in cooking; 1/2 tsp in warm milk"
+            },
+            {
+              "food": "Ghee (clarified butter) — small amounts",
+              "benefit": "Traditional Indian (Ayurvedic) use: 1-2 teaspoons of pure cow ghee on an empty stomach in the morning has a mild lubricating effect on the intestinal lining; butyric acid in ghee nourishes colonocytes (gut lining cells); small amounts of dietary fat soften stools and reduce dryness; do not exceed 1-2 teaspoons",
+              "frequency": "1-2 teaspoons on empty stomach in morning; small amounts in cooking",
+              "evidence": "Traditional use; butyrate (from ghee fermentation) is the primary colonocyte fuel; mild evidence for laxative effect at small doses"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Refined grains and processed foods — PRIMARY AVOIDANCE",
+          "reason": "Refined grains (white rice, white maida, processed bread, pasta, instant noodles) have virtually all dietary fibre removed in milling — causing constipation, hard stools, and straining. These are the primary dietary cause of urban constipation and anal fissure. The dramatic rise in anal fissure in India correlates with dietary transition from whole grains and millets to refined grains.",
+          "examples": ["White rice (replace with brown rice or add dal to increase overall fibre)", "White maida-based bread, biscuits, puri", "Instant noodles and pasta", "Processed breakfast cereals (cornflakes — very low fibre)", "White bread and rolls"]
+        },
+        {
+          "food": "Constipating and binding foods",
+          "reason": "These foods directly reduce bowel movement frequency and produce harder stools",
+          "examples": ["Unripe bananas (ripe bananas are fine — actually helpful)", "White bread in excess", "Hard-boiled eggs in excess", "Red meat in large amounts (particularly without fibre balance)", "Cheese in excess (particularly processed cheese)", "Fried foods (delay gastric emptying)"]
+        },
+        {
+          "food": "Spicy, pungent, and acidic foods (during active fissure)",
+          "reason": "Highly spicy foods (capsaicin) pass through the GI tract and are excreted in stool — directly irritating the anal mucosa and fissure wound on defecation. Patients with active anal fissure often notice that very spicy food causes intensified burning during and after defecation.",
+          "recommendation": "Avoid very hot chilli sauces, raw chillies, extremely spicy preparations during active fissure; mild spices and cooking with moderate chilli is generally acceptable",
+          "examples": ["Very hot green or red chillies in large amounts", "Achari masalas in excess", "Very acidic foods in excess"]
+        },
+        {
+          "food": "Caffeine in excess (coffee, strong tea) without adequate water",
+          "reason": "Caffeine is a diuretic — increases urinary water loss; if not compensated by increased water intake, causes relative dehydration → harder stools. 1-2 cups of tea or coffee daily is acceptable with adequate hydration but excess caffeine without adequate water worsens constipation.",
+          "recommendation": "Limit to 2-3 cups tea/coffee daily; increase water intake proportionally"
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Dehydrating (diuretic effect); disrupts gut motility; excess alcohol causes gastritis and altered bowel habits; alcohol-induced dehydration worsens constipation. Even moderate alcohol consumption should be reduced during active fissure treatment.",
+          "recommendation": "Avoid during active fissure; minimise generally for anorectal health"
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This high-fibre, high-hydration meal plan targets soft, well-formed stools (Bristol Type 4) to facilitate anal fissure healing. Total fibre target: 30-35g/day. Total fluid target: 2-2.5 litres/day.",
+        "early_morning": "Wake up: 1-2 glasses warm water (stimulates gastrocolic reflex — promotes morning bowel movement) + 1 teaspoon Isabgol in water (if prescribed/used) — wait 30-40 minutes before eating breakfast",
+        "breakfast": "1 bowl papaya (fresh — excellent for gut motility) + 2 whole wheat or ragi roti with sabzi OR 1 bowl whole grain porridge (dalia/oats with vegetables) + 1 cup curd (probiotics) + warm water/herbal tea (not strong tea — mild hydration)",
+        "mid_morning": "1 glass coconut water OR chaach (buttermilk) + 1 fruit (pear, apple with skin, or guava — high fibre)",
+        "lunch": "Dal (masoor/chana/moong — high fibre) + 2-3 whole wheat or millet chapati + cooked vegetable sabzi (lauki, bhindi, pumpkin, or green leafy vegetables) + 1 cup curd raita + salad (cucumber, carrot, tomato) + 1 glass water WITH and after lunch",
+        "afternoon": "1 teaspoon Isabgol in large glass water (second dose if needed) + 1 bowl fresh fruit (papaya, pear, or figs/anjeer) + warm sitz bath after afternoon bowel movement if any",
+        "dinner": "Light and early meal (3 hours before sleep minimum): Khichdi (rice + dal — combined grain + legume fibre) OR millet roti + dal + cooked vegetable OR thin vegetable soup + whole wheat roti + dal",
+        "before_bed": "1-2 glasses warm water; 1 tsp ghee on empty stomach (optional — traditional Ayurvedic lubricant); ensure total fluid for the day is 2-2.5 litres",
+        "apply_topical_treatment": "Apply GTN/diltiazem cream BEFORE first morning defecation (30 min before) AND before bed; apply lidocaine gel 15 min before anticipated defecation; warm sitz bath after each bowel movement (10-15 min)"
+      },
+      "special_dietary_notes": [
+        "PAPAYA is the single most useful fruit for anal fissure in India — papain enzyme stimulates gut motility; high fibre and water content; soft texture; eat daily (1-2 bowls); most effective as morning breakfast fruit",
+        "ISABGOL (psyllium husk) with adequate water (300mL per dose) is the most evidence-based dietary supplement for stool softening — more reliable than dietary fibre alone for producing consistent Bristol Type 4 stools; must drink adequate water with each dose",
+        "LAUKI (bottle gourd) and KADDU (pumpkin) sabzi: high water content vegetables that are easily digestible and classically prescribed in Indian traditional medicine for constipation and anorectal conditions; include in regular diet",
+        "TIME YOUR SITZ BATH: 15-20 minutes of warm water immersion of the anal area AFTER each bowel movement relaxes the post-defecation IAS spasm and reduces the 1-4 hour post-defecation pain — the most effective non-pharmacological pain relief measure",
+        "TOILET POSITION: Use a small stool (approximately 20-25cm) under feet when using a Western-style toilet to elevate knees above hips — this mimics the squatting position, reduces puborectalis tension, straightens the anorectal angle, and allows complete evacuation without straining. This is a simple, evidence-based intervention.",
+        "TOILET HABITS: Respond immediately when you feel the urge to defecate — suppressing the urge causes stools to remain in the colon and harden further. AVOID reading, using phone, or staying >3-5 minutes on the toilet — prolonged sitting causes anal congestion and increases straining."
+      ]
+    },
+
+    "lifestyle_management": {
+      "sitz_baths": {
+        "description": "Warm sitz baths (hydrotherapy) are the most important and universally recommended non-pharmacological intervention for anal fissure. The term 'sitz bath' comes from German 'sitzen' (to sit) — sitting in a shallow warm bath covering only the buttocks and anal region.",
+        "technique": [
+          "Fill a bathtub, basin, or sitz bath device with warm water (37-39°C — comfortably warm, not hot)",
+          "Add 1-2 tablespoons of sea salt or sodium bicarbonate to the water (optional but soothing — reduces bacterial load and inflammation)",
+          "Sit in the bath with only the anal and perineal area submerged, knees out of the water",
+          "Remain for 10-20 minutes, 2-3 times daily — PARTICULARLY immediately after each bowel movement",
+          "Gently pat dry (do not rub) with a soft clean towel or cotton wool",
+          "Apply lidocaine cream and GTN/diltiazem immediately after drying while the sphincter is still relaxed"
+        ],
+        "mechanism": "Warm water causes: IAS smooth muscle relaxation (thermal relaxation of smooth muscle); local vasodilation improving blood flow to the ischaemic posterior midline; cleansing of the fissure wound; reduction in bacterial colonisation; reduction in post-defecation spasm pain",
+        "sitz_bath_devices": "Plastic sitz bath basin inserts that sit over a standard toilet seat are widely available online in India (Rs. 300-600) and at pharmacies — recommend to patients who cannot use a bath"
+      },
+      "bowel_habits_retraining": [
+        "Respond to the urge to defecate IMMEDIATELY — do not suppress or delay; every minute of delay causes further water reabsorption from stool, hardening it",
+        "Limit toilet sitting time to 3-5 minutes maximum — no reading, phone use, or 'passive waiting'; prolonged sitting causes anal vascular engorgement and increases straining tendency",
+        "Use a FOOTSTOOL under feet when on a Western toilet — raises knees above hips; straightens anorectal angle (reduces puborectalis tension); reduces required straining by 50% (Squatty Potty principle)",
+        "NEVER strain — if stool does not pass in 1-2 minutes of gentle effort, leave the toilet and try again later; straining is the primary mechanical cause of fissure initiation and worsening",
+        "Establish a regular bowel timing: use the natural post-breakfast gastrocolic reflex (strong colonic contractions 15-30 min after breakfast/morning caffeine) by making time for a toilet visit after breakfast daily — establishes a conditioned reflex"
+      ],
+      "perianal_hygiene": [
+        "Clean the anal area GENTLY after defecation — use soft moist wipes (unscented, alcohol-free), damp cotton wool, or a handheld bidet/health faucet (lota) — widely used in India and ideal for gentle anal cleansing",
+        "PAT DRY rather than RUBBING — rubbing irritates already fragile fissure-adjacent skin",
+        "AVOID harsh dry toilet paper — abrasive and dehydrating; moist cleansing (bidet, wet wipes, damp cloth) is far superior for fissure patients",
+        "Use plain warm water for cleaning — NO soap, perfumed products, antiseptic wipes, or alcohol-based wipes on the fissure area (these cause chemical irritation and delay healing)",
+        "Keep the perianal area DRY between bowel movements — moisture maceration worsens perianal skin and the fissure wound; use a thin pad of gauze or cotton to absorb moisture if needed"
+      ],
+      "physical_activity": [
+        "Regular moderate physical activity (30 min brisk walking daily) stimulates gut motility — reduces constipation and straining",
+        "AVOID prolonged sitting (office work, long car journeys) — increases anal vascular congestion and sphincter tension; take short walks every 1-2 hours during prolonged desk work",
+        "Avoid weightlifting and heavy straining exercises during active fissure treatment — significantly increases intra-abdominal pressure and anal stress",
+        "Swimming is an excellent activity — reduces anal pressure (buoyancy); promotes gut motility; warm water swimming provides mild sitz bath-like anal relaxation"
+      ],
+      "psychological_support": [
+        "Pain-related anxiety — the anticipatory fear of defecation pain is a significant psychological burden; CBT and mindfulness techniques reduce pain-catastrophising; pain amplification from anxiety worsens the perceived pain intensity",
+        "Explain the healing process — patients need to understand that pain will decrease as stool consistency improves and topical treatment works; realistic timelines (6-8 weeks for medical therapy; 1-2 weeks for surgical recovery) reduce anxiety",
+        "Reassure about the benign nature of anal fissure — many patients fear they have cancer; reassurance that this is a benign, treatable condition significantly reduces anxiety and improves treatment adherence",
+        "Support groups and online communities — patients may find it helpful to know that anal fissure is extremely common and well-treatable"
+      ]
+    },
+
+    "anal_fissure_monitoring_plan": {
+      "note": "Anal fissure monitoring tracks symptom improvement, treatment adherence, and healing progress. The primary endpoint is pain-free defecation with soft stools. Most acute fissures heal within 6-8 weeks; chronic fissures may require 8-12 weeks of medical treatment or surgical intervention.",
+      "green_zone": {
+        "status": "Responding Well — Improving",
+        "criteria": "Pain during defecation reducing progressively; post-defecation pain duration shortening (<30 min); stool consistency improved (Bristol Type 4); bleeding reducing or stopped; no new sentinel tag formation; patient compliant with dietary modification, sitz baths, and topical therapy",
+        "action": "Continue current treatment (GTN/diltiazem cream + stool softeners + sitz baths). Reassess at 4 weeks; if continuing to improve, complete full 6-8 week course. After healing confirmed (pain-free, bleeding stopped): maintain high-fibre diet and hydration permanently to prevent recurrence. Slowly taper topical GTN/diltiazem over 1-2 weeks after fissure healed (do not stop abruptly)."
+      },
+      "yellow_zone": {
+        "status": "Partial Response — Review Treatment",
+        "criteria": "Pain improved but not resolved after 4-6 weeks of topical therapy; bleeding persistent; stool still harder than Bristol Type 4 despite dietary measures; patient having difficulty tolerating GTN headaches; poor treatment adherence identified",
+        "action": "Review at 6-8 weeks. Consider: switching from GTN to diltiazem (or vice versa) if tolerability issue; optimise stool consistency (add macrogol if isabgol alone insufficient); reinforce dietary fibre counselling; ensure warm sitz bath technique is correct. If adequate trial of topical therapy completed: refer to colorectal surgeon for botulinum toxin injection or surgical assessment."
+      },
+      "red_zone": {
+        "status": "URGENT — Failure to Respond, Alarm Features, or Complication",
+        "criteria": "Any of: no improvement after 8-12 weeks of adequate medical therapy; atypical fissure location (lateral — not posterior or anterior midline); multiple fissures; painless or minimally painful fissure (suggests secondary cause); associated abscess or fistula; constitutional symptoms (fever, weight loss, diarrhoea, rectal mucus/blood mixed in stool — possible IBD or malignancy); fissure in patient >45 years with change in bowel habit; failure of two courses of medical therapy",
+        "action": "URGENT colorectal surgery or proctology referral. Examination under anaesthesia (EUA) for assessment and possible biopsy. Colonoscopy if Crohn's disease or malignancy suspected. HIV and STI screen if indicated. Botulinum toxin injection or lateral internal sphincterotomy discussion. Any suspicious or non-healing ulcer must be BIOPSIED to exclude squamous cell carcinoma of the anus."
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Chronicity — Treatment-Resistant Chronic Fissure",
+        "description": "The most common complication of anal fissure — failure to heal within 6-8 weeks, leading to established chronic fissure with secondary features (sentinel tag, indurated edges, visible IAS, hypertrophied papilla). Chronicity develops from the vicious cycle of IAS spasm → ischaemia → impaired healing. Once established, chronic fissures rarely heal without active medical or surgical intervention.",
+        "prevalence": "Approximately 30-50% of acute fissures fail to heal with conservative measures alone and become chronic",
+        "management": "Chemical sphincterotomy (GTN or diltiazem); botulinum toxin injection; lateral internal sphincterotomy"
+      },
+      {
+        "complication": "Faecal Incontinence (Post-Sphincterotomy)",
+        "description": "The most feared complication of surgical treatment (lateral internal sphincterotomy). Incontinence results from reduced IAS bulk and resting pressure after sphincterotomy — particularly affecting ability to control flatus and liquid stool. Minor incontinence (gas flatus soiling): 5-10%; liquid stool incontinence: 2-5%; solid stool incontinence: <1%. Incontinence risk is highest in: women with prior obstetric sphincter injury; patients with pre-existing incontinence; excessive sphincterotomy length. Modern LIS technique carefully limits the extent of sphincterotomy to reduce this risk.",
+        "severity": "Mild to Moderate (usually); rarely severe",
+        "management": "Careful pre-operative assessment including endoanal ultrasound (assess pre-existing sphincter defect); limit sphincterotomy to minimum necessary; consider botulinum toxin (reversible) in high-risk patients; sphincter repair for severe cases (overlap sphincteroplasty)"
+      },
+      {
+        "complication": "Anal Fistula",
+        "description": "A rare complication of anal fissure — particularly when an associated intersphincteric abscess forms. A fistula-in-ano (an abnormal tract from the anal canal to the perianal skin) may develop. More commonly, a pre-existing anal fistula may be misdiagnosed as a simple fissure. Fistula formation from a primary fissure is unusual — when fistula is present, secondary causes (Crohn's, TB, cryptoglandular abscess) should be excluded.",
+        "severity": "Moderate — requires separate surgical treatment (fistulotomy or seton placement)",
+        "management": "EUA for full assessment; fistula probe and laying open (fistulotomy) for simple low intersphincteric fistula; seton for complex high fistula; exclude Crohn's disease"
+      },
+      {
+        "complication": "Recurrence",
+        "description": "Anal fissure recurrence after successful treatment — particularly after medical therapy (GTN/diltiazem: 33-50% recurrence over 1-2 years; botulinum toxin: 30-40% recurrence; LIS surgery: 5-10% long-term recurrence). Recurrence is primarily driven by re-establishment of constipation and hard stools. Sustained dietary fibre intake and bowel habit optimisation are the most effective recurrence prevention strategies.",
+        "severity": "Moderate — treatable",
+        "prevention": "Maintain high-fibre diet permanently; maintain adequate hydration; regular Isabgol; treat constipation promptly; avoid NSAID overuse (reduces gut motility); continue warm sitz baths as lifestyle practice"
+      },
+      {
+        "complication": "Perianal Abscess from Secondary Infection",
+        "description": "Rare secondary infection of a chronic fissure — particularly in immunocompromised patients (HIV, diabetics, corticosteroid users, chemotherapy). The fissure wound may become contaminated with perianal bacteria → abscess formation. Features: increasing pain; induration; swelling; fever; systemic features of sepsis.",
+        "severity": "Moderate to Severe",
+        "management": "Urgent surgical drainage of perianal abscess; IV antibiotics (broad-spectrum including anaerobic cover); EUA for full assessment; exclude underlying fistula"
+      },
+      {
+        "complication": "Missed Anal Cancer Diagnosis",
+        "description": "A serious but preventable complication — squamous cell carcinoma (SCC) of the anus can present as a non-healing anal ulcer or 'fissure'. Any atypical, non-healing 'fissure' particularly in patients >45 years, in lateral position, or with unusual features MUST be biopsied. Anal SCC is associated with HPV infection (types 16 and 18) and is increasing in incidence. Delay in diagnosis worsens prognosis.",
+        "severity": "Life-threatening if missed",
+        "prevention": "Low threshold for biopsy of atypical or non-healing fissures; colonoscopy and EUA if any doubt; HPV vaccination to prevent HPV-associated anal cancer"
+      },
+      {
+        "complication": "Psychological Sequelae and Quality of Life Impairment",
+        "description": "Chronic anal fissure causes significant and underappreciated psychological morbidity: anticipatory anxiety before each bowel movement; defecation phobia; adjustment of eating habits to reduce stool frequency (leading to nutritional deficiencies); social isolation; work absence; sleep disturbance from nocturnal anal pain; sexual dysfunction (anal fissure causes dyspareunia in women). Quality of life scores in severe chronic anal fissure are comparably impaired to those in moderate IBD.",
+        "severity": "Significant — often underappreciated by clinicians",
+        "management": "Acknowledge the psychological impact; provide reassurance; cognitive behavioural techniques for pain anxiety; early effective treatment prevents chronicity"
+      }
+    ],
+
+    "special_populations": {
+      "anal_fissure_in_children_and_infants": {
+        "key_points": [
+          "The most common cause of rectal bleeding in infants and toddlers — visible bright red blood on nappies or wipes, or crying during bowel movements",
+          "Cause in infants: almost always constipation — diet change (introduction of solids at 6 months); insufficient fibre; cow's milk-based formula (more constipating than breast milk); iron supplements",
+          "Diagnosis: inspect anal region with gentle buttock separation under adequate light — most paediatric fissures are posterior midline and visible without instrumentation; do NOT perform DRE in an infant with suspected fissure",
+          "Treatment in children and infants: dietary modification (high-fibre — pureed fruits, vegetables; adequate water/fluids); gentle warm baths (not sitz baths per se — simply bathe the perianal area gently in warm water); stool softeners (lactulose syrup for infants; macrogol sachets for toddlers); topical lidocaine gel for pain; usually resolves within 2-4 weeks",
+          "Surgical intervention rarely needed in children; botulinum toxin has been used in resistant cases",
+          "IMPORTANT safeguarding consideration: lateral anal fissures in children, multiple fissures, or fissures with bruising or unusual features may indicate sexual abuse — mandatory report to child protection services; careful sensitive examination and history; forensic medical examination if indicated"
+        ]
+      },
+      "anal_fissure_in_pregnancy_and_post_partum": {
+        "key_points": [
+          "Common in both pregnancy (progesterone slows gut motility → constipation; iron supplements cause constipation) and post-partum (obstetric perineal trauma; post-delivery constipation from dehydration and reduced oral intake)",
+          "Diagnosis: clinical inspection as in non-pregnant women; avoid proctoscopy or DRE if possible due to discomfort",
+          "SAFE treatments in pregnancy: dietary fibre (Isabgol) — safe; warm sitz baths — safe; lactulose — safe; macrogol — safe; topical lidocaine — safe; topical diltiazem 2% cream (preferred over GTN for breastfeeding — less systemic absorption)",
+          "GTN: generally considered safe in pregnancy at topical doses but headache is poorly tolerated in post-partum women; systemic vasodilation theoretically reduces uterine blood flow in large doses — use with caution in pregnancy",
+          "AVOID: codeine-containing analgesics (constipating and cause neonatal respiratory depression); systemic NSAIDs in 3rd trimester; castor oil (stimulates uterine contractions)",
+          "Botulinum toxin: limited safety data in pregnancy — avoid; post-partum, Botox is acceptable; minimal to no excretion in breast milk",
+          "Surgical LIS: post-partum, if anal fissure persists beyond 3 months and is severe, LIS can be performed; take obstetric history carefully (sphincter integrity assessment before surgery — prior 3rd/4th degree tears increase incontinence risk from LIS)"
+        ]
+      },
+      "anal_fissure_in_elderly": {
+        "key_points": [
+          "Higher prevalence of secondary causes in elderly — biopsy any atypical fissure in patients >45-50 years to exclude anal SCC",
+          "Constipation is the predominant cause — polypharmacy (opioids, calcium channel blockers, diuretics — all constipating); reduced activity; reduced fluid intake; poor dietary diversity",
+          "Pre-existing sphincter weakness is common in elderly (reduced IAS and EAS tone with ageing — particularly after multiple childbirths in women) — increases incontinence risk from sphincterotomy",
+          "Conservative and medical therapy (topical diltiazem + stool softeners) strongly preferred in elderly over surgery",
+          "Botulinum toxin preferred over surgical LIS in elderly patients with any pre-existing incontinence risk",
+          "Medication review: identify and switch constipating medications where possible"
+        ]
+      },
+      "anal_fissure_in_hiv_aids": {
+        "key_points": [
+          "Higher prevalence of anal fissures in HIV-positive patients, particularly those with low CD4 counts",
+          "Secondary causes extremely important in HIV-positive patients with anal fissure: herpes simplex (very painful; multiple vesicular ulcers); CMV (deep ulcers; painless); syphilis; Kaposi's sarcoma; lymphoma; anal cancer (SCC — 40x higher incidence in HIV-positive MSM)",
+          "ALL HIV-positive patients with atypical anal fissures must have: biopsy; full STI screen; colonoscopy if systemic features",
+          "Standard fissure treatment principles apply but healing may be slower in immunocompromised",
+          "ART (antiretroviral therapy) optimisation to improve CD4 count is the most important intervention for healing",
+          "Aciclovir/valaciclovir if HSV proctitis is identified"
+        ]
+      },
+      "anal_fissure_in_crohns_disease": {
+        "key_points": [
+          "Crohn's disease causes complex anal fissures — typically: multiple; lateral location; large; undermined edges; painless or minimally painful (paradoxically less painful than primary fissures); associated with skin tags, fistulae, and abscesses",
+          "Crohn's anal fissures require colonoscopy for Crohn's assessment and disease staging before treatment",
+          "Medical treatment of Crohn's disease (biological therapies — anti-TNF: infliximab, adalimumab; anti-integrin: vedolizumab; Janus kinase inhibitors) often improves anorectal Crohn's fissures significantly — treat the underlying Crohn's before local fissure treatment",
+          "Surgical sphincterotomy (LIS) is CONTRAINDICATED in active Crohn's proctitis — very high risk of non-healing and fistula formation",
+          "Botulinum toxin may be used cautiously in Crohn's fissures",
+          "Metronidazole and ciprofloxacin are adjunct antibiotics for perianal Crohn's disease (reduce perianal sepsis)"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "HPV Vaccine (Human Papillomavirus) — Prevention of Anal Cancer",
+        "types": ["Gardasil 9 (nonavalent — HPV 6, 11, 16, 18, 31, 33, 45, 52, 58)", "Cervarix (bivalent — HPV 16, 18)"],
+        "frequency": "2-dose schedule (6-12 months apart) if started before 15 years; 3-dose schedule for 15+ years or immunocompromised",
+        "reason": "HPV (particularly types 16 and 18) is the primary cause of anal squamous cell carcinoma (SCC) — the most important differential diagnosis for a non-healing anal ulcer. Anal SCC incidence has increased dramatically in MSM and HIV-positive populations. HPV-related anal fissure-like ulcers and condylomata (anal warts — from HPV 6/11) are important secondary causes of anorectal symptoms. HPV vaccination prevents HPV-associated anal cancer and anal warts. Particularly recommended for: MSM; all adolescents; HIV-positive individuals (up to age 45 in MSM per guidelines); women up to age 26 (standard) or 45 (shared decision); individuals with prior HPV-related lesions.",
+        "who_should_prioritise": "MSM; HIV-positive; adolescents (before sexual debut); women with abnormal cervical smear history; any patient with HPV-related anal/perianal lesions"
+      },
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Annually before flu season",
+        "reason": "Influenza causes systemic illness with prolonged immobility and dehydration — both worsen constipation and can precipitate or worsen anal fissure in vulnerable patients. Patients with IBD (Crohn's — a secondary cause of anal fissure) are on immunosuppressive medications (biologicals, corticosteroids, azathioprine) and are at significantly higher risk of severe influenza — annual vaccination is strongly recommended in this group. In the general population with anal fissure, influenza vaccination reduces illness that causes constipation relapse."
+      },
+      {
+        "vaccine": "Hepatitis A Vaccine",
+        "frequency": "2-dose course for non-immune individuals",
+        "reason": "Hepatitis A causes GI inflammation with diarrhoea and abdominal cramps — prolonged or severe diarrhoea is a recognised cause of anal fissure (repeated frequent loose stools cause cumulative mucosal trauma). Hepatitis A vaccination is particularly relevant for travellers to endemic areas; patients with IBD (who are more susceptible to GI infections); and healthcare workers. Vaccination prevents hepatitis A-associated diarrhoeal illness that could trigger or worsen anal fissure."
+      },
+      {
+        "vaccine": "COVID-19 Vaccine (Annual Updated Booster)",
+        "frequency": "As per national guidelines",
+        "reason": "COVID-19 causes GI symptoms (diarrhoea, constipation, GI motility disruption) in 30-40% of cases. The post-COVID period is associated with significant bowel motility changes (constipation or diarrhoea) that can trigger or worsen anal fissure. Patients with IBD (secondary fissure cause) are at higher risk of severe COVID-19 on immunosuppressants. Vaccination protects against COVID-related GI complications and IBD flares triggered by COVID-19."
+      },
+      {
+        "vaccine": "Typhoid Vaccine (for travellers and endemic area residents)",
+        "frequency": "Every 3 years (oral) or single dose (Vi polysaccharide injection)",
+        "reason": "Typhoid fever causes severe constipation in the early stages (Peyer's patches involvement → ileal motility disruption) — 'pea-soup diarrhoea' in later stages can also cause anal fissure. In India (endemic country), typhoid is a relevant cause of GI disease; typhoid vaccination prevents typhoid-induced bowel disturbance that can trigger or worsen anal fissure. Particularly relevant for those in high-exposure environments."
+      },
+      {
+        "vaccine": "Herpes Zoster Vaccine (Shingrix) — Adults ≥50 Years",
+        "frequency": "2 doses for adults ≥50 years",
+        "reason": "Herpes zoster (shingles) can cause sacral nerve root involvement (S2-S4 dermatome — 'perineal shingles') with vesicular eruption in the anal and perineal area — closely mimicking or exacerbating anal fissure; severe sacral herpes zoster causes anal and urinary retention from autonomic involvement. In elderly patients with pre-existing anal fissure, shingles in the sacral dermatome dramatically worsens pain and may trigger severe anal sphincter spasm. Shingrix vaccination prevents shingles and its perianal complications."
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Severe anal pain during and after defecation (lasting more than 30-60 minutes after bowel movement) for more than 1-2 weeks — formal diagnosis and treatment planning needed",
+      "Bright red rectal bleeding on toilet paper or dripping into the pan — first presentation always requires clinical assessment to confirm fissure and exclude haemorrhoids or more serious causes",
+      "An anal fissure not improving after 4-6 weeks of self-managed conservative treatment (fibre, hydration, warm baths)",
+      "Inability to defecate normally due to fear of pain — defecation avoidance behaviour causing progressive constipation",
+      "Presence of a visible skin tag (sentinel pile) at the anal verge — suggests chronicity requiring active medical treatment",
+      "Visible non-healing ulcer or lump near the anus lasting more than 3-4 weeks — biopsy may be required to exclude anal cancer",
+      "Multiple anal fissures, or fissure at an unusual location (lateral — not at 6 or 12 o'clock) — secondary cause investigation required",
+      "Anal fissure associated with diarrhoea, weight loss, abdominal pain, or bloody diarrhoea — possible Crohn's disease or ulcerative colitis",
+      "Post-partum women with severe anal pain on defecation in the first 3 months after delivery — post-partum fissure assessment and safe treatment",
+      "Infants and toddlers with bright red blood on nappies or wipes, or who cry during bowel movements — paediatric anal fissure assessment",
+      "Patients with HIV, Crohn's disease, or immunosuppression developing anorectal pain or ulceration — secondary causes require prompt assessment",
+      "Anal fissure in patients aged >45-50 that fails to respond to standard treatment — mandatory biopsy to exclude anal carcinoma"
+    ],
+
+    "emergency_signs": [
+      "Inability to pass urine (urinary retention) combined with severe perianal pain — possible perianal abscess or sacral nerve root involvement — URGENT assessment",
+      "Perianal swelling with redness, heat, and throbbing pain (particularly between defecations — not just with defecation) with fever — PERIANAL ABSCESS — requires URGENT surgical drainage within 24-48 hours (may progress to necrotising fasciitis if untreated)",
+      "Fever, chills, and severe systemic illness combined with perianal pain — possible spreading perianal sepsis (Fournier's gangrene — rare, life-threatening necrotising fasciitis of the perineum) — CALL EMERGENCY SERVICES IMMEDIATELY",
+      "Fournier's Gangrene signs: rapidly spreading perianal swelling; necrotic skin; severe systemic sepsis; crepitus (crackling sensation from gas-producing organisms in tissue) — LIFE-THREATENING EMERGENCY — immediate surgical debridement required",
+      "Sudden onset of inability to defecate at all (complete constipation) with severe anal pain and abdominal distension — possible impacted faecal mass with anorectal obstruction — URGENT assessment",
+      "Massive rectal bleeding (more than a few drops) — while not typical of simple anal fissure, any significant rectal haemorrhage requires urgent colorectal assessment to exclude haemorrhoidal bleed, diverticular bleed, or colorectal cancer"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is an anal fissure and why is it so painful?",
+        "answer": "An anal fissure is a small tear in the lining of the anal canal — the last part of the intestine that opens at the anus. Despite its small size (often just a few millimetres), it causes disproportionately severe pain for two reasons: (1) The anal canal lining is among the most densely innervated tissue in the body — every tiny sensation is sharply felt; (2) The tear triggers a spasm of the internal anal sphincter (the circular muscle around the anal canal) — this spasm is sustained for 1-4 hours after defecation, causing the prolonged burning, throbbing pain. The spasm also reduces blood supply to the area, preventing healing and creating a vicious cycle. The good news: anal fissures are benign and very treatable."
+      },
+      {
+        "question": "Is the bright red blood from an anal fissure serious?",
+        "answer": "Bright red blood on toilet paper or dripping into the bowl after defecation from an anal fissure is NOT dangerous or life-threatening in itself. It comes from small blood vessels in the tear and is typically in small amounts. HOWEVER, rectal bleeding always requires a medical assessment — at least once — to confirm it is from a fissure and exclude other causes such as haemorrhoids, polyps, or colorectal cancer. Signs that rectal bleeding needs URGENT assessment: large volumes of blood; blood mixed in stool (not just on the surface); dark red or tarry black blood (melaena); blood with mucus; blood associated with weight loss or change in bowel habit; any rectal bleeding in a patient over 45 years without a clear prior diagnosis. For confirmed small-volume bright red blood in a young patient with the typical fissure pain pattern, conservative treatment is usually first."
+      },
+      {
+        "question": "Will my anal fissure heal on its own without treatment?",
+        "answer": "Acute anal fissures (less than 6 weeks old) heal spontaneously in approximately 50% of cases with conservative measures (dietary fibre, adequate water, warm sitz baths, stool softeners) within 6-8 weeks. The key is ensuring soft stools — without soft stools, even spontaneous healing is unlikely. Chronic fissures (present more than 6-8 weeks) have a much lower spontaneous healing rate (<10%) and almost always require active medical treatment (topical GTN or diltiazem cream) or surgical intervention. Starting dietary and conservative measures early dramatically improves the chance of spontaneous healing and preventing chronicity."
+      },
+      {
+        "question": "What is the GTN ointment and how do I use it correctly?",
+        "answer": "GTN (glyceryl trinitrate) ointment is a prescription cream that acts as a 'chemical sphincterotomy' — it releases nitric oxide gas that relaxes the internal anal sphincter muscle, reducing the spasm and improving blood flow to allow healing. For best results: (1) Apply a pea-sized amount (about 2-3cm from the tube) to the anal opening only — not to a wide area around it; (2) Use a disposable glove, finger cot, or gauze — NOT your bare finger; (3) Apply twice daily — once in the morning (30 minutes BEFORE your expected bowel movement if possible) and once before bed; (4) Take a paracetamol 30 minutes BEFORE applying to reduce headache; (5) NEVER use if you take Viagra, Cialis, Levitra, or similar medications — dangerous blood pressure drop can occur. Headache is common — reduce to once daily if severe; do not stop without completing 6-8 weeks."
+      },
+      {
+        "question": "Is topical diltiazem better than GTN for anal fissure?",
+        "answer": "Both topical diltiazem (2% cream) and GTN (0.2-0.4% ointment) have similar effectiveness for healing chronic anal fissures (approximately 50-65% healing rates). The key difference is tolerability: GTN causes headaches in 20-40% of patients (from nitrate vasodilation) — the most common reason people stop treatment. Diltiazem causes headache in only about 5% and causes only mild perianal irritation in some patients. In practice: try diltiazem first if you are concerned about headaches, if you take Viagra/Cialis (GTN is absolutely contraindicated with these), if you are breastfeeding, or if a previous GTN trial was stopped due to headache. GTN is slightly more widely studied and available. Both work — choose based on your circumstances."
+      },
+      {
+        "question": "What is botulinum toxin (Botox) injection for anal fissure and is it painful?",
+        "answer": "Botulinum toxin (Botox) injection into the internal anal sphincter is a minimally invasive treatment — usually performed as an outpatient procedure, often with topical or local anaesthetic. A small needle is used to inject 20-40 units of Botox directly into the sphincter muscle. The toxin temporarily paralyses the muscle for about 3-4 months, reducing spasm and allowing the fissure to heal. Healing rate: 50-70% with one injection; up to 80% with two injections. The procedure itself causes brief discomfort during injection — most patients find it much less painful than they expect. The main side effect is temporary minor incontinence (mainly gas/mucus) in 10-20% of patients, which resolves spontaneously as the Botox wears off. It is a good bridge between topical treatment and surgery."
+      },
+      {
+        "question": "What is lateral internal sphincterotomy (LIS) surgery and when is it needed?",
+        "answer": "Lateral internal sphincterotomy (LIS) is a brief day-case surgical procedure — the gold standard surgical treatment for chronic anal fissure. Under general or spinal anaesthesia, a small incision is made at the side (lateral position) of the anus, and the lower third of the internal sphincter muscle is cut. This permanently reduces the muscle tightness, allowing normal blood flow and healing. It is highly effective — 90-95% of chronic fissures heal after LIS. Surgery is considered when: the fissure is confirmed chronic (>8 weeks) and has failed two courses of topical medical treatment AND botulinum toxin; or when the patient specifically requests definitive treatment. The main risk is faecal incontinence — minor gas or moisture soiling affects about 5-10% of patients. In most, this is temporary and mild. Modern careful surgical technique minimises this risk."
+      },
+      {
+        "question": "How can I prevent my anal fissure from coming back after it heals?",
+        "answer": "Recurrence is common (30-50% with medical treatment; 5-10% with surgery) — almost always from return of constipation and hard stools. Prevention strategies: (1) Permanently maintain a high-fibre diet (25-35g/day) — daily dal, whole grains, sabzi, fruits; (2) Continue Isabgol or other fibre supplement indefinitely if needed; (3) Stay well hydrated (2 litres daily); (4) Respond promptly to any constipation — do not let hard stools return; (5) Use a footstool under feet when on the toilet — reduces straining; (6) Never suppress the urge to defecate — go when you feel the need; (7) Continue warm sitz baths periodically even after healing — good anal hygiene and circulation; (8) Avoid constipating medications (opioids, iron supplements) as much as possible — speak to your doctor about alternatives; (9) If constipation returns — restart stool softeners immediately and see your doctor if it persists >1 week."
+      },
+      {
+        "question": "What foods should I eat and avoid with anal fissure?",
+        "answer": "EAT MORE: High-fibre whole grains (bajra, jowar, ragi, whole wheat chapati, brown rice); daily dal and legumes (masoor dal, chana, rajma); plenty of vegetables especially pumpkin (kaddu), bottle gourd (lauki), okra (bhindi), spinach (cooked), and leafy greens; fruits especially papaya (daily — excellent for gut motility), guava, pear with skin, apple with skin, prunes and anjeer; 2-2.5 litres of water daily; buttermilk (chaach) and curd (probiotics); 1-2 teaspoons Isabgol in water if needed. AVOID OR REDUCE: White rice and white maida as main diet (replace with whole grains); spicy hot food (irritates fissure wound on passing); alcohol; excessive caffeine without water; constipating foods (unripe bananas, excess cheese, processed foods). The single most impactful change: eat papaya daily + drink 2 litres water + use Isabgol if needed = significantly softer stools."
+      },
+      {
+        "question": "Is it true that squatting on the toilet is better than sitting for anal fissure?",
+        "answer": "Yes — this is well-supported by physiology. The 'squatting position' (feet on the floor with knees raised above hip level) aligns the anorectal angle more favourably for defecation: the puborectalis muscle (which maintains the 90-degree anorectal angle when standing) relaxes in the squatting position, allowing the anal canal to straighten. This means stool passes with significantly less required straining effort. Most Indian and Asian traditional toilets (Indian squatting pans) provide this position naturally. On a Western-style toilet: placing a small stool (20-25cm height — the 'Squatty Potty' device or a plastic step stool) under your feet achieves the same effect. A study in Diseases of the Colon and Rectum showed squatting reduced defecation time by 50% and eliminated straining in most subjects. For anal fissure patients specifically: less straining = less mechanical stress on the fissure = faster healing."
+      },
+      {
+        "question": "My doctor said my anal fissure might be related to Crohn's disease. What does that mean?",
+        "answer": "Anal fissures usually occur at the posterior midline (6 o'clock position) and are exquisitely painful. When a fissure is: at an unusual position (the sides — lateral), multiple, large, relatively painless, or associated with anal skin tags, fistulae, or bowel symptoms (diarrhoea, weight loss, blood in stool, abdominal pain) — Crohn's disease must be excluded. Crohn's disease is a chronic inflammatory bowel disease that can affect the anus and perianal area, causing complex fissures, fistulae, and abscesses. If Crohn's is suspected, a colonoscopy will be arranged. Crohn's-related anal fissures are treated differently from primary fissures — treating the underlying Crohn's inflammation (with biological drugs like infliximab or adalimumab) often heals the perianal fissure; surgical sphincterotomy is generally avoided in active Crohn's proctitis as healing is impaired. The most important message: any atypical fissure needs proper evaluation before assuming it is a simple primary fissure."
+      }
+    ]
+  }
+}

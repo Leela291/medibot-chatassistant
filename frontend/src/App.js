@@ -34,6 +34,9 @@ function App() {
   const [isToolsOpen, setIsToolsOpen] = useState(true);
   const [isTopicsOpen, setIsTopicsOpen] = useState(true);
   const [isUploadOpen, setIsUploadOpen] = useState(true);
+  const [bmiWeight, setBmiWeight] = useState("");
+  const [bmiHeight, setBmiHeight] = useState("");
+  const [locating, setLocating] = useState(false);
 
   const bottomRef = useRef(null);
   const fileInputRef = useRef(null);
@@ -207,11 +210,41 @@ function App() {
     setSpeakingMessageId(msgIndex);
   };
 
+  const shouldUseLocationTool = (text) => {
+    const q = (text || "").toLowerCase();
+    const facilityWords = [
+      "hospital", "hospitals", "clinic", "clinics", "lab", "labs",
+      "laboratory", "pharmacy", "pharmacies", "chemist", "emergency",
+      "ambulance", "doctor", "doctors"
+    ];
+    const specialtyWords = [
+      "cardiologist", "cardiology", "heart", "dermatologist", "dermatology",
+      "orthopedic", "orthopedics", "gynecologist", "gynecology",
+      "pediatrician", "pediatrics", "neurologist", "neurology", "dentist",
+      "dental", "eye", "ent"
+    ];
+    const locationIntentWords = [
+      "near", "nearby", "nearest", "closest", "around", "location",
+      "find", "show", "only", "related"
+    ];
+
+    const hasFacility = facilityWords.some((word) => q.includes(word));
+    const hasSpecialty = specialtyWords.some((word) => q.includes(word));
+    const hasLocationIntent = locationIntentWords.some((word) => q.includes(word));
+
+    return hasFacility && (hasLocationIntent || hasSpecialty);
+  };
+
   /* ── Send message ── */
   const sendMessage = useCallback(async (overrideText) => {
     playClickSound();
     const text = (overrideText || input).trim();
     if (!text && !uploadedFile) return;
+
+    if (!uploadedFile && shouldUseLocationTool(text)) {
+      await findNearbyMedicalFacilities(text, true);
+      return;
+    }
 
     // Cancel any previous request
     if (abortControllerRef.current) {
@@ -223,6 +256,11 @@ function App() {
       text: text || `📎 Uploaded: ${uploadedFile?.name}`,
       time: formatTime(new Date()),
       file: uploadedFile ? uploadedFile.name : null,
+      image:
+        uploadedFile &&
+        uploadedFile.type.startsWith("image/")
+          ? URL.createObjectURL(uploadedFile)
+          : null,
     };
 
     setMessages((prev) => [...prev, userMsg]);
@@ -368,6 +406,107 @@ function App() {
 
     abortControllerRef.current = null;
   }, [input, uploadedFile, sessionId, fetchSessions]);
+
+  async function findNearbyMedicalFacilities(overrideQuery, skipClickSound = false) {
+    if (!skipClickSound) {
+      playClickSound();
+    }
+    const promptText = typeof overrideQuery === "string" ? overrideQuery : input;
+    const locationQuery = promptText.trim() || "Find nearby hospitals, clinics, labs, pharmacies, and emergency care.";
+
+    if (!navigator.geolocation) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "bot",
+          text: "Location access is not supported in this browser. Please type your city or area and I can still help guide your search.",
+          time: formatTime(new Date()),
+          isError: true,
+        },
+      ]);
+      return;
+    }
+
+    setLocating(true);
+    setMessages((prev) => [
+      ...prev,
+      {
+        role: "user",
+        text: locationQuery,
+        time: formatTime(new Date()),
+      },
+    ]);
+    setInput("");
+
+    navigator.geolocation.getCurrentPosition(
+      async (position) => {
+        try {
+          const res = await fetch(`${API}/location/nearby`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              lat: position.coords.latitude,
+              lon: position.coords.longitude,
+              radius: 5000,
+              session_id: sessionId,
+              query: locationQuery,
+            }),
+          });
+          const data = await res.json();
+
+          if (data.session_id) {
+            setSessionId(data.session_id);
+          }
+
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "bot",
+              text: data.answer || data.error || "No nearby facility results received.",
+              time: formatTime(new Date()),
+              sources: data.sources,
+              isEmergency: data.is_emergency,
+              isError: Boolean(data.error),
+              id: Date.now(),
+            },
+          ]);
+          fetchSessions();
+        } catch (err) {
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "bot",
+              text: "I could not load nearby medical facilities right now. Please try again in a moment.",
+              time: formatTime(new Date()),
+              isError: true,
+            },
+          ]);
+        } finally {
+          setLocating(false);
+        }
+      },
+      (error) => {
+        const denied = error.code === error.PERMISSION_DENIED;
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "bot",
+            text: denied
+              ? "Location permission was not enabled. Please allow location access in your browser, or type your city/area so I can help."
+              : "I could not detect your location. Please check location services and try again.",
+            time: formatTime(new Date()),
+            isError: true,
+          },
+        ]);
+        setLocating(false);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 12000,
+        maximumAge: 60000,
+      }
+    );
+  }
 
   /* ── New session ── */
   const newSession = async () => {
@@ -571,12 +710,43 @@ function App() {
 
           <div className={`collapsible-content ${isToolsOpen ? 'expanded' : 'collapsed'}`}>
             <div className="collapsible-inner">
-              <div style={{ display: 'flex', gap: '8px', paddingBottom: '8px' }}>
-                <button className="new-chat-btn" style={{ margin: 0, flex: 1, padding: '8px', fontSize: '12px' }} onClick={() => setInput("Calculate BMI")}>
-                  BMI Calc
-                </button>
-                <button className="new-chat-btn" style={{ margin: 0, flex: 1, padding: '8px', fontSize: '12px' }} onClick={() => setInput("Check Drug Interactions")}>
-                  Drugs
+              <div style={{ display: 'flex', gap: '8px', paddingBottom: '8px', flexDirection: 'column' }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
+                  <input
+                    type="number"
+                    placeholder="Weight (kg)"
+                    value={bmiWeight}
+                    onChange={(e) => setBmiWeight(e.target.value)}
+                    style={{ padding: "6px" }}
+                  />
+                  <input
+                    type="number"
+                    placeholder="Height (cm)"
+                    value={bmiHeight}
+                    onChange={(e) => setBmiHeight(e.target.value)}
+                    style={{ padding: "6px" }}
+                  />
+                  <button
+                    className="new-chat-btn"
+                    style={{ margin: 0, padding: "8px", fontSize: "12px" }}
+                    onClick={() => {
+                      if (!bmiWeight || !bmiHeight) {
+                        alert("Please enter weight and height");
+                        return;
+                      }
+                      sendMessage(`${bmiWeight} kg ${bmiHeight} cm Calculate BMI`);
+                    }}
+                  >
+                    Calculate BMI
+                  </button>
+                </div>
+                <button
+                  className="new-chat-btn location-tool-btn"
+                  onClick={findNearbyMedicalFacilities}
+                  disabled={locating}
+                  title="Allow location to find nearby medical facilities"
+                >
+                  {locating ? "Finding..." : "Nearby Care"}
                 </button>
               </div>
             </div>
@@ -732,6 +902,22 @@ function App() {
                 )}
                 <div className="message-content">
                   <div className={`message-bubble ${m.role}`}>
+                    {m.image && (
+                      <div className="uploaded-image-preview">
+                        <img
+                          src={m.image}
+                          alt="Uploaded"
+                          style={{
+                            maxWidth: "250px",
+                            maxHeight: "250px",
+                            borderRadius: "12px",
+                            marginBottom: "8px",
+                            display: "block"
+                          }}
+                        />
+                      </div>
+                    )}
+                    
                     {m.file && (
                       <div className="file-badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14">

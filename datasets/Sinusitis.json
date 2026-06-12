@@ -1,0 +1,1044 @@
+{
+  "disease": {
+    "id": "DIS-026",
+    "name": "Sinusitis",
+    "scientific_name": "Rhinosinusitis / Acute Bacterial Rhinosinusitis (ABRS) / Chronic Rhinosinusitis (CRS) / Viral Rhinosinusitis / Invasive Fungal Rhinosinusitis",
+    "icd_10_code": "J01.0 (Acute maxillary sinusitis); J01.1 (Acute frontal sinusitis); J01.2 (Acute ethmoidal sinusitis); J01.3 (Acute sphenoidal sinusitis); J01.4 (Acute pansinusitis); J01.8 (Other acute sinusitis); J01.9 (Acute sinusitis, unspecified); J32.0 (Chronic maxillary sinusitis); J32.1 (Chronic frontal sinusitis); J32.2 (Chronic ethmoidal sinusitis); J32.3 (Chronic sphenoidal sinusitis); J32.4 (Chronic pansinusitis); J33.0 (Nasal polyp); J33.8 (Other polyp of sinus); B44.1 (Invasive pulmonary aspergillosis / Allergic fungal sinusitis); B46 (Mucormycosis / Zygomycosis)",
+    "category": "Otorhinolaryngology (ENT) / Respiratory Medicine / Allergy / Infectious Disease",
+    "overview": {
+      "description": "Rhinosinusitis — commonly called sinusitis — is inflammation of the mucous membranes lining the paranasal sinuses (the air-filled cavities within the facial bones: maxillary, frontal, ethmoid, and sphenoid sinuses) and their continuity with the nasal mucosa. The term 'rhinosinusitis' is now preferred over 'sinusitis' because sinusitis almost never occurs without concurrent nasal mucosal inflammation (rhinitis) — the nasal cavity and sinuses share a continuous mucosal lining, and inflammation invariably affects both simultaneously. Sinusitis is one of the most prevalent conditions encountered in primary care globally — affecting 10-15% of the general population, accounting for approximately 40 million doctor consultations annually in the USA alone, and representing one of the most common conditions for which antibiotics are prescribed (though the vast majority of cases are viral and do not require antibiotics). The disease exists along a clinical spectrum: at one end, the common cold (acute viral rhinosinusitis) — an almost universal human experience, self-limiting within 7-10 days; in the middle, acute bacterial rhinosinusitis (ABRS) — affecting only 0.5-2% of viral rhinosinusitis episodes, requiring antibiotic therapy; and at the other extreme, invasive fungal rhinosinusitis — a rapidly progressive, potentially fatal condition in immunocompromised individuals (dramatically highlighted by the COVID-19-associated mucormycosis epidemic in India in 2021 — 'black fungus'). Chronic rhinosinusitis (CRS) — defined as inflammation persisting beyond 12 weeks — is a major cause of impaired quality of life, affecting productivity, sleep, and cognitive function. India faces unique sinusitis challenges: extremely high urban air pollution (Delhi AQI regularly exceeds 400-500 — 'hazardous' category, causing mucociliary dysfunction and mucosal inflammation); perennial allergic rhinitis from dust mite, cockroach, mould, and pollen allergens driving CRS; and the catastrophic mucormycosis outbreak during the COVID-19 second wave (2021) which caused over 45,000 cases and significant mortality.",
+      "affected_organ": "Paranasal sinuses (maxillary — most commonly affected; ethmoid; frontal; sphenoid), nasal cavity, nasal mucosa, osteomeatal complex (the key drainage pathway); potential spread to orbit, anterior skull base, intracranial cavity",
+      "sinus_anatomy": {
+        "maxillary_sinuses": "Largest sinuses; located in the cheekbones bilaterally; drain via ostia into the middle meatus; most commonly affected in sinusitis; symptoms: cheek pain and pressure; dental pain (upper molar roots in close proximity); purulent nasal discharge",
+        "ethmoid_sinuses": "Multiple small air cells between the eyes (medial orbital wall); divided into anterior (drain to middle meatus) and posterior (drain to superior meatus); pain between and behind the eyes; commonly affected in children (largest sinuses relatively in children); the key passage for spread of infection to orbit",
+        "frontal_sinuses": "Located in the forehead above the eyebrows; absent at birth, develop through childhood; drain via frontal recess into middle meatus; frontal sinusitis causes severe forehead pain, worse on leaning forward; most dangerous sinus for intracranial complications (proximity to anterior cranial fossa)",
+        "sphenoid_sinuses": "Deepest sinuses, located at the centre of the skull base; drain into sphenoethmoidal recess; sphenoid sinusitis causes poorly localised deep 'vertex' headache, retro-orbital pain; dangerous location — adjacent to optic nerve, cavernous sinus, pituitary gland, and internal carotid artery"
+      },
+      "prevalence": "Global: 10-15% of adults affected by acute sinusitis annually; 5-12% have chronic rhinosinusitis; India: estimated 30-40 million sinusitis cases annually; very high prevalence of allergic rhinitis (perennial — 20-30% of urban Indians) driving CRS; urban-rural divide — urban Indians at much higher risk from air pollution exposure; COVID-19-associated mucormycosis 2021 — India recorded 45,000+ cases (90% of world's total) making mucormycosis a major public health crisis",
+      "age_group": "All ages; acute viral rhinosinusitis most frequent in young children (6-8 upper respiratory infections per year); allergic rhinosinusitis peaks in teens and young adults; CRS with nasal polyps peaks in adults 30-60 years (predominantly male); invasive fungal sinusitis in immunocompromised adults",
+      "is_contagious": true,
+      "is_contagious_note": "Viral rhinosinusitis (the common cold) is highly contagious — spread by respiratory droplets and contact with contaminated surfaces; bacterial sinusitis itself is not directly contagious but the viral triggers are",
+      "is_curable": true,
+      "is_curable_note": "Acute viral sinusitis resolves spontaneously; acute bacterial sinusitis cured with antibiotics; chronic rhinosinusitis is managed rather than cured — symptoms controlled with INCS, saline irrigation, and/or surgery; nasal polyps recur in 40-60% after surgery",
+      "is_manageable": true,
+      "chronic": true,
+      "is_preventable": true,
+      "key_fact": "Antibiotics are overprescribed for sinusitis in India — approximately 85-90% of sinusitis cases are caused by viruses against which antibiotics have zero effect. The cardinal rule: GREEN or CLEAR nasal discharge does NOT mean bacterial infection — colour is determined by neutrophil breakdown, not bacteria. Antibiotics for sinusitis should be reserved for the 0.5-2% of cases with confirmed bacterial superinfection — characterised by worsening after initial improvement (double worsening), fever >38.5°C, severe unilateral facial pain, or symptoms persisting beyond 10 days without improvement."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Acute Viral Rhinosinusitis (AVRS) — The Common Cold",
+        "description": "By far the most common form — accounting for 98-99% of all acute rhinosinusitis presentations. Caused by respiratory viruses that infect the nasal and sinus mucosa, causing mucosal oedema, increased mucus secretion, and temporary obstruction of sinus ostia (the natural drainage openings). AVRS is self-limiting — the immune system clears the viral infection within 7-10 days without any specific treatment. The normal progression: watery clear discharge → thicker, cloudy, or yellow-green discharge over days 3-5 (this colour change is NORMAL viral evolution — does NOT indicate bacterial superinfection).",
+        "causative_viruses": "Rhinovirus (most common — 50% of adult colds; >100 serotypes); Coronavirus (including SARS-CoV-2); Adenovirus; Influenza A and B; Respiratory Syncytial Virus (RSV — particularly in children); Parainfluenza virus; Metapneumovirus",
+        "clinical_course": "Incubation 1-3 days; Peak symptoms days 2-4; Resolution within 7-10 days; Symptoms lasting >10 days without improvement raise suspicion of bacterial superinfection or allergic component",
+        "management": "SYMPTOMATIC ONLY — NO ANTIBIOTICS: adequate hydration; paracetamol for fever and headache; saline nasal irrigation (nasal douching — highly effective); short-term topical decongestant (oxymetazoline maximum 3-5 days — prevents rebound congestion); steam inhalation; honey (for cough in children over 1 year — has evidence of equivalent efficacy to dextromethorphan); rest",
+        "india_note": "The 'common cold' leads to vast inappropriate antibiotic prescribing in India — a major driver of antimicrobial resistance; patient and public education that colds are viral and antibiotics are useless is urgently needed"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Acute Bacterial Rhinosinusitis (ABRS)",
+        "description": "Bacterial superinfection complicating viral rhinosinusitis — occurring in only 0.5-2% of viral upper respiratory infections. ABRS results when viral mucosal oedema obstructs sinus ostia → impaired mucociliary clearance → retained secretions → bacterial proliferation in the warm, moist, anaerobic sinus environment. Distinguishing ABRS from prolonged viral rhinosinusitis is the most important clinical challenge — overprescription of antibiotics for viral sinusitis is rampant.",
+        "causative_bacteria": "Streptococcus pneumoniae (30-35% — most common; may cause severe complications); Haemophilus influenzae (25-30% — non-typeable; often beta-lactamase producing in India); Moraxella catarrhalis (10-15% — very high spontaneous resolution rate ~75%); Staphylococcus aureus (including MRSA); Mixed anaerobes (particularly in odontogenic sinusitis); Pseudomonas aeruginosa (in immunocompromised, CF, nosocomial)",
+        "diagnostic_criteria_AVRS_vs_ABRS": {
+          "three_clinical_criteria": "ABRS is clinically diagnosed when ONE of the following three criteria is met:",
+          "criteria_1": "PERSISTENT SYMPTOMS beyond 10 days without improvement (the most common presentation of ABRS) — a cold that simply hasn't got better at all by day 10 suggests bacterial superinfection",
+          "criteria_2": "SEVERE SYMPTOMS or SIGNS from the outset — fever ≥39°C AND purulent (thick yellow-green) nasal discharge AND facial pain/pressure — all three simultaneously — for at least 3-4 consecutive days",
+          "criteria_3": "'DOUBLE WORSENING' — symptoms initially improving (typical viral cold pattern) but then WORSENING again after initial improvement (worsening of fever, pain, discharge after day 5-7 of a cold) — the most specific clinical indicator of bacterial superinfection"
+        },
+        "management": "Amoxicillin-clavulanate (Augmentin) is first-line in India: 625 mg (500+125) three times daily × 5-7 days; or 1g (875+125) twice daily × 5-7 days; intranasal corticosteroid (INCS) adjunct; saline irrigation; decongestant for first 3-5 days only"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Chronic Rhinosinusitis Without Nasal Polyps (CRSsNP)",
+        "description": "Chronic rhinosinusitis is defined as inflammation of the sinonasal mucosa persisting for at least 12 weeks with objective evidence of disease (by endoscopy or CT scan) despite adequate medical treatment. CRS without nasal polyps (CRSsNP) involves diffuse mucosal thickening and fibrosis without the formation of polypoid (grape-like) tissue. The dominant feature is mucosal thickening, not polyps. CRSsNP is associated with neutrophilic (Th1-mediated) inflammation — distinct from the eosinophilic (Th2-mediated) inflammation of CRSwNP.",
+        "pathophysiology": "Recurrent acute infections; persistent bacterial biofilm formation (particularly Staphylococcus aureus, Pseudomonas); mucociliary dysfunction (impaired mucosal 'escalator' clearing bacteria and particles); anatomical factors (deviated nasal septum — DNS, concha bullosa, agger nasi cells obstructing ostiomeatal complex); environmental factors (pollution, allergens, cigarette smoke); immune dysfunction",
+        "clinical_features": "Two or more of: nasal congestion/blockage; mucopurulent nasal discharge (anterior or posterior drip); facial pain/pressure; reduction or loss of smell (hyposmia/anosmia); PLUS objective confirmation by nasal endoscopy (mucopus in middle meatus) or CT scan (mucosal thickening ≥3-4 mm)",
+        "india_specific": "CRSsNP is disproportionately common in Indian cities due to chronic air pollution exposure — particulate matter (PM2.5, PM10) directly damages mucosal cilia and triggers chronic mucosal inflammation; occupational exposures (chemical fumes, wood dust, grain dust); biomass fuel combustion (chulha — indoor pollution)",
+        "management": "Intranasal corticosteroids (INCS — mometasone, fluticasone, budesonide) are the cornerstone of treatment; nasal saline irrigation twice daily; treat underlying allergic rhinitis; short antibiotic courses for bacterial exacerbations; functional endoscopic sinus surgery (FESS) if medical treatment fails after 3-6 months"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Chronic Rhinosinusitis With Nasal Polyps (CRSwNP)",
+        "description": "The second major CRS phenotype — characterised by the presence of bilateral nasal polyps (grape-like, semi-transparent, non-tender, smooth mucosal overgrowths) arising primarily from the ethmoid sinuses and extending into the nasal cavity. CRSwNP involves eosinophilic (Th2-mediated, Type 2) inflammation with dramatically elevated IL-4, IL-5, and IL-13 cytokines and markedly raised local IgE. This Th2 endotype is important because it defines the target for biologic therapies (dupilumab — anti-IL-4Rα) and explains the association with asthma and aspirin sensitivity.",
+        "associated_conditions": [
+          "Asthma — present in 20-40% of CRSwNP patients; the 'united airway disease' concept: upper and lower airway inflammation are biologically linked via shared Th2/eosinophilic inflammation; sinusitis and asthma exacerbate each other",
+          "Aspirin-Exacerbated Respiratory Disease (AERD / Samter's Triad): nasal polyps + asthma + aspirin sensitivity; aspirin and NSAIDs trigger severe bronchoconstriction and nasal reaction; affects 10-15% of CRSwNP patients; aspirin desensitisation therapy may be beneficial",
+          "Allergic Rhinitis — common comorbidity; IgE-mediated mucosal inflammation promotes polyp formation",
+          "Atopic dermatitis (eczema) — Th2 triad",
+          "Cystic fibrosis — bilateral polyps in children (always test sweat chloride in young CRSwNP patients)",
+          "Primary ciliary dyskinesia (PCD) — mucociliary dysfunction; Kartagener syndrome (situs inversus + bronchiectasis + sinusitis)"
+        ],
+        "clinical_features": "Severe nasal obstruction (often bilateral and complete); profound loss of smell (anosmia — most distressing symptom; sometimes permanent); posterior nasal drip; snoring; mouth breathing; muffled voice; pale smooth bilateral nasal polyps visible on anterior rhinoscopy",
+        "management": "INCS (high-dose topical); systemic corticosteroids for acute exacerbations; dupilumab (anti-IL-4Rα biologic — dramatically effective for severe CRSwNP; reduces polyp size and exacerbations; currently very expensive in India); FESS with polypectomy; aspirin desensitisation for AERD; mepolizumab (anti-IL-5) for eosinophilic CRSwNP with asthma",
+        "recurrence": "Nasal polyp recurrence rate after FESS: 40-60% within 5 years; higher in AERD and severe eosinophilia; biologic therapy significantly reduces recurrence rates"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Invasive Fungal Rhinosinusitis (IFS) — Medical Emergency",
+        "description": "A rapidly progressive, life-threatening fungal infection of the sinonasal tissues with angio-invasion (blood vessel invasion by fungal hyphae) causing tissue ischaemia and necrosis — predominantly affecting immunocompromised individuals. Invasive fungal sinusitis has a mortality rate of 30-80% despite maximal treatment. The COVID-19 pandemic and its treatment (particularly high-dose corticosteroid use in diabetic or immune-compromised patients) triggered a catastrophic mucormycosis epidemic in India in 2021 — the country accounted for >90% of all global COVID-19-associated mucormycosis (CAM) cases.",
+        "subtypes": [
+          {
+            "name": "Acute Invasive Fungal Rhinosinusitis (AIFRS)",
+            "description": "Fulminant, rapidly progressive; mortality 50-80%; organisms: Mucorales (mucormycosis — predominantly Rhizopus, Mucor, Cunninghamella); Aspergillus fumigatus (less common but important); Fusarium; characteristic: black necrotic tissue (eschars — black because of angioinvasion causing ischaemic necrosis); spreads rapidly to orbit (orbital apex syndrome) and brain (cerebral involvement = 100% fatal without aggressive surgery)",
+            "risk_factors": "Uncontrolled diabetes mellitus (DKA — most important risk factor in India; iron released from low pH environment facilitates Mucorales growth); high-dose corticosteroid therapy; neutropenia (chemotherapy, haematological malignancy, aplastic anaemia); HIV/AIDS with CD4 <100; transplantation; deferoxamine therapy (iron chelator — paradoxically provides iron substrate for Mucorales); COVID-19 + diabetes + corticosteroids (the COVID-19-associated mucormycosis triad)"
+          },
+          {
+            "name": "Chronic Invasive Fungal Rhinosinusitis",
+            "description": "Slowly progressive over months (vs weeks for acute form); organisms: Aspergillus most common; affects immunocompetent but debilitated patients; less fulminant but destructive; better prognosis than acute form"
+          },
+          {
+            "name": "Granulomatous Invasive Fungal Rhinosinusitis",
+            "description": "Rare; predominantly in Sudan and India; Aspergillus flavus; immunocompetent patients; forms granulomata; presents with proptosis (orbital extension); treatment: surgery + itraconazole"
+          },
+          {
+            "name": "Non-Invasive Fungal Sinusitis",
+            "description": "Two forms: (1) Fungal Ball (Mycetoma): dense collection of fungal hyphae in a sinus (usually maxillary) without mucosal invasion; immunocompetent; no antifungal treatment needed — surgery alone curative; (2) Allergic Fungal Rhinosinusitis (AFRS): Th2 immune reaction to fungal allergens (predominantly dematiaceous/darkly pigmented fungi: Bipolaris, Curvularia, Alternaria) producing eosinophilic mucin and tissue eosinophilia without tissue invasion; associated with nasal polyps; management: FESS + INCS + anti-IgE therapy"
+          }
+        ],
+        "warning_signs_invasive": "BLACK ESCHAR (necrotic tissue) inside nose or on palate — EMERGENCY; unilateral proptosis (orbital extension); visual loss; facial numbness or palsy; new cranial nerve deficits in a diabetic or immunocompromised patient with sinus symptoms = EMERGENCY CT SCAN AND URGENT ENT REFERRAL",
+        "covid_mucormycosis_india_2021": {
+          "description": "India's COVID-19 second wave (April-June 2021) was complicated by a massive mucormycosis outbreak — 45,000+ cases vs 200-300 cases per year normally; case fatality rate 50-60% despite treatment; 'black fungus' became a notifiable disease in India (May 2021)",
+          "risk_triad": "COVID-19 infection (impairs innate immunity) + Corticosteroids (dexamethasone given to most hospitalised patients — further immunosuppression; hyperglycaemia) + Diabetes mellitus (present in 60-70% of CAM patients; DKA environment releases free iron; hyperglycaemia impairs neutrophil function)",
+          "treatment_cam": "IV amphotericin B (liposomal formulation preferred — less nephrotoxic); surgical debridement (aggressive — extensive resection of all necrotic tissue including orbital exenteration if needed); control diabetes (tight glycaemic control); reduce/stop corticosteroids; isavuconazole or posaconazole as step-down oral therapy"
+        }
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Odontogenic Sinusitis",
+        "description": "Sinusitis originating from dental pathology — specifically from the upper posterior teeth (upper premolars and molars) whose roots are in close proximity to or project into the floor of the maxillary sinus. A significantly underdiagnosed cause of chronic unilateral sinusitis (15-20% of chronic maxillary sinusitis). Important to distinguish from primary rhinosinusitis because: (1) treatment requires addressing the dental source; (2) microbiology is different (mixed anaerobes — foul smell distinctive); (3) unilateral maxillary sinusitis not responding to standard treatment should always raise suspicion.",
+        "dental_causes": "Periapical abscess from upper molar/premolar; failed root canal treatment; dental implants breaching sinus floor; tooth extraction creating oro-antral fistula; periodontal disease with periapical pathology",
+        "clinical_features": "Unilateral maxillary sinusitis (bilateral rare); foul-smelling (fetid) nasal discharge (anaerobic infection characteristic); dental pain or history of recent dental procedure; failure to respond to standard antibiotics; CT scan showing unilateral maxillary disease with dental pathology (periapical abscess, retained root fragment, implant breach)",
+        "management": "Treat dental source (tooth extraction, root canal revision, implant removal); FESS maxillary antrostomy for drainage; antibiotics targeting anaerobes (co-amoxiclav or metronidazole + amoxicillin)"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Allergic Rhinosinusitis",
+        "description": "Rhinosinusitis driven by IgE-mediated (Type I hypersensitivity) reaction to inhaled allergens — causing bilateral mucosal inflammation that predisposes to CRS by impairing mucociliary clearance, promoting mucosal oedema at ostia, and creating an eosinophilic inflammatory environment. Allergic rhinitis is the single most important predisposing condition for recurrent and chronic sinusitis. India has very high perennial allergic rhinitis prevalence (20-30% in urban adults) from: house dust mites (Dermatophagoides pteronyssinus, D. farinae — the dominant allergen in tropical climates); cockroach allergen (Blatella germanica — very common in Indian households); moulds (Aspergillus, Alternaria — related to monsoon humidity and biomass fuel exposure); pollen (seasonal — trees in spring, grasses in early summer); pet dander (less common).",
+        "management": "Allergen avoidance; antihistamines (cetirizine, loratadine, fexofenadine); INCS; allergen immunotherapy (subcutaneous SCIT or sublingual SLIT — disease-modifying treatment for allergic rhinitis; reduces nasal polyp risk; available at allergy centres in India — AIIMS, PGI, major private hospitals); anti-IgE (omalizumab — for severe allergic rhinosinusitis with asthma)"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild — Viral Rhinosinusitis or Mild ABRS",
+        "description": "Self-limiting viral sinusitis or mild bacterial sinusitis with minor impact on daily function.",
+        "criteria": "Symptoms <10 days (viral) or <7 days bacterial criteria; no fever or low-grade fever <38°C; mild-moderate nasal obstruction and discharge; facial discomfort rather than severe pain; able to work and perform daily activities; no alarm features",
+        "functional_impact": "Minor inconvenience; able to continue most daily activities; sleep mildly disturbed",
+        "management": "Home management; saline nasal irrigation (twice daily); paracetamol for discomfort; short-term oxymetazoline (maximum 3-5 days); steam inhalation; adequate hydration; review if not improving in 10 days (viral) or 48-72 hours without improvement on antibiotics (ABRS)",
+        "criteria_for_upgrade": "Symptoms worsening after initial improvement (double worsening); fever developing >38.5°C; severe facial pain; symptoms persisting >10 days"
+      },
+      {
+        "level": 2,
+        "name": "Moderate — Persistent ABRS or CRS Exacerbation",
+        "description": "Bacterial sinusitis meeting criteria for antibiotic therapy, or CRS with significant impact on quality of life.",
+        "criteria": "Symptoms >10 days without improvement; OR double worsening; OR severe symptoms with fever ≥38.5°C + facial pain + purulent discharge for ≥3 days; CRS with visual analogue scale (VAS) total symptom score ≥5/10; significant impairment of work/school performance; sleep disturbance",
+        "functional_impact": "Significantly reduces quality of life; missed work; moderate pain; impaired smell affecting food enjoyment",
+        "management": "GP assessment; antibiotic if ABRS criteria met (co-amoxiclav 625 mg TDS × 5-7 days); INCS adjunct; saline irrigation; consider CT if diagnosis uncertain; ENT referral if recurrent (≥3 episodes per year) or CRS not responding to 3 months INCS"
+      },
+      {
+        "level": 3,
+        "name": "Severe — Complicated Sinusitis or Refractory CRS",
+        "description": "Sinusitis causing significant morbidity from orbital involvement, severe intracranial symptoms, or refractory CRS significantly impairing quality of life.",
+        "criteria": "Periorbital oedema or erythema; any diplopia, visual change, or proptosis; severe unilateral facial pain; neurological symptoms (severe headache, altered consciousness, meningism); CRS VAS >7/10 with nasal polyps; bilateral complete nasal obstruction; severe anosmia affecting nutrition and quality of life",
+        "functional_impact": "Significantly impairs daily life; orbital symptoms require emergency ENT referral; refractory CRS may require surgery",
+        "management": "URGENT ENT assessment (same day for orbital symptoms); CT sinuses and orbits; IV antibiotics for orbital cellulitis; FESS planning for refractory CRS; biologic therapy assessment for severe CRSwNP"
+      },
+      {
+        "level": 4,
+        "name": "Critical — Intracranial Complications or Invasive Fungal Sinusitis",
+        "description": "Life-threatening complications from intracranial spread or rapidly progressive invasive fungal sinusitis requiring emergency intervention.",
+        "criteria": "Meningism (neck stiffness + photophobia + headache); altered consciousness or confusion; seizures; cavernous sinus thrombosis signs (bilateral proptosis, chemosis, cranial nerve III/IV/VI palsies); black necrotic tissue in nasal cavity or palate (invasive fungal sinusitis); complete visual loss; Pott's puffy tumour (forehead swelling + frontal sinusitis); septicaemia",
+        "management": "EMERGENCY: call 102/112; neurosurgery + ENT joint management; brain MRI/CT with contrast; IV antibiotics or antifungals; surgical drainage and debridement; ICU monitoring; liposomal amphotericin B for mucormycosis",
+        "mortality": "Cavernous sinus thrombosis: 20-30% even with treatment; Invasive mucormycosis with cerebral involvement: >80% mortality"
+      }
+    ],
+
+    "causes": {
+      "causative_agents_overview": {
+        "viral": "98% of acute rhinosinusitis — rhinovirus, coronavirus, adenovirus, influenza, RSV, parainfluenza",
+        "bacterial": "0.5-2% of acute rhinosinusitis — Streptococcus pneumoniae, H. influenzae, Moraxella catarrhalis",
+        "fungal": "Mucorales (mucormycosis), Aspergillus, Bipolaris, Curvularia — invasive in immunocompromised; non-invasive (fungal ball, AFRS) in immunocompetent",
+        "allergic": "IgE-mediated eosinophilic inflammation from allergens — dust mites, cockroach, moulds, pollen",
+        "anatomical": "Deviated nasal septum (DNS), nasal polyps, concha bullosa, hypertrophied turbinates — obstructing ostia"
+      },
+      "risk_factors": [
+        "Viral upper respiratory infection — by far the most important trigger for acute bacterial sinusitis (viral mucosal oedema obstructs ostia → bacterial superinfection)",
+        "Allergic rhinitis — chronic mucosal inflammation impairs mucociliary clearance; eosinophilic inflammation promotes polyp formation and ostial obstruction; the single most important comorbidity for recurrent and chronic sinusitis",
+        "Air pollution — India-specific: chronic exposure to PM2.5, PM10, nitrogen dioxide, ozone, and indoor smoke (biomass fuel — chulha burning wood, dung, and crop waste); directly damages sinonasal mucociliary apparatus; promotes chronic inflammation; major driver of CRS prevalence in Indian cities; Delhi, Mumbai, Kolkata regularly among world's most polluted cities",
+        "Cigarette smoking and passive smoke — impairs mucociliary function (cilia become immotile); increases mucus viscosity; damages respiratory epithelium; increases CRS risk 2-3×",
+        "Deviated Nasal Septum (DNS) — very prevalent in India (30-40% of adults); DNS narrows the middle meatus and impairs sinus drainage; contributes to recurrent sinusitis particularly maxillary and ethmoid",
+        "Swimming and diving — water forced into sinuses; chlorinated water irritates mucosa; swimmer's sinusitis (P. aeruginosa prominent)",
+        "Dental disease — particularly upper molar and premolar periapical abscesses (odontogenic sinusitis); very common in India where dental care access is limited",
+        "Immune deficiency — HIV/AIDS; primary immunodeficiencies (IgA deficiency, CVID, CGD); chemotherapy; organ transplantation; long-term corticosteroids; recurrent sinusitis is a cardinal feature of common variable immunodeficiency (CVID)",
+        "Diabetes mellitus — impairs neutrophil function; promotes fungal growth (Mucorales thrive in high-glucose, low-pH environments); particularly dangerous combination with DKA for mucormycosis risk",
+        "Nasal foreign bodies — especially in children (unilateral foul-smelling discharge in a child = nasal foreign body until proven otherwise)",
+        "Gastro-oesophageal reflux disease (GERD) — reflux of acid/pepsin into the nasopharynx (laryngopharyngeal reflux — LPR) causes posterior pharyngeal and sinonasal mucosal inflammation; important but controversial contributor to CRS",
+        "Cystic fibrosis and primary ciliary dyskinesia — structural mucociliary dysfunction causing universal CRS and nasal polyps from childhood",
+        "Anatomical variants — concha bullosa (pneumatised middle turbinate); Haller cells (infraorbital ethmoid cells narrowing sinus drainage); agger nasi cells; accessory maxillary ostia — all potentially impair normal sinus drainage",
+        "Workplace exposures — woodworking dust (maxillary adenocarcinoma and CRS); grain dust; chemical exposures; hairdresser chemicals",
+        "Psychological stress — impairs mucosal immune function; increases susceptibility to viral infections",
+        "Damp housing and mould exposure — particularly relevant in India during monsoon season; Aspergillus and other moulds trigger allergic fungal rhinosinusitis"
+      ]
+    },
+
+    "symptoms": {
+      "overview": "Rhinosinusitis symptoms arise from three mechanisms: mucosal inflammation causing local pain and swelling; impaired drainage causing pressure accumulation within air-filled sinuses; and systemic effects of infection causing fever and malaise. Symptom pattern is diagnostically important — location of facial pain correlates with the sinus affected; bilateral symmetric symptoms suggest allergic or viral aetiology; unilateral symptoms (particularly unilateral foul-smelling discharge) suggest bacterial or odontogenic cause. The four CARDINAL SYMPTOMS of rhinosinusitis are: (1) nasal obstruction/congestion; (2) nasal discharge (anterior rhinorrhoea or posterior nasal drip); (3) facial pain or pressure; (4) reduction/loss of smell (hyposmia/anosmia). Diagnosis of CRS requires ≥2 of these symptoms for ≥12 weeks.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-1601",
+          "name": "Nasal Congestion and Obstruction",
+          "description": "Blockage of nasal airflow from mucosal oedema, increased secretions, and in CRSwNP from physical obstruction by polypoid tissue. Ranges from partial blockage (congestion) to complete bilateral obstruction. In CRSwNP: complete bilateral nasal obstruction is typical — patients describe 'breathing through two blocked pipes'; mouth breathing; snoring; sleep disruption. In acute sinusitis: obstruction is from mucosal swelling — usually unilateral or bilateral but variable. Nasal obstruction causes: inability to breathe through nose; hyponasality (muffled 'nasal' voice — 'nasal voice' of a cold — actually hyponasal when nose is blocked); difficulty sleeping; mouth breathing leading to dry mouth and sore throat.",
+          "severity": "Mild to Complete (CRSwNP)"
+        },
+        {
+          "id": "SYM-1602",
+          "name": "Nasal Discharge (Rhinorrhoea)",
+          "description": "Excessive nasal secretions — characteristically ANTERIOR (dripping from the front of the nose — 'runny nose') in viral rhinitis; and POSTERIOR (post-nasal drip — mucus draining into the throat from the back of the nose) in sinusitis and CRS. CHARACTER OF DISCHARGE: CLEAR/WATERY = viral rhinitis, allergic rhinitis, vasomotor rhinitis; YELLOW-GREEN (purulent) = bacterial sinusitis OR (importantly) NORMAL viral evolution at days 3-5 of a cold; FOUL-SMELLING = odontogenic sinusitis (anaerobic) or invasive fungal sinusitis; BLOODY = tumour, nasal polyp bleeding, severe inflammation, foreign body, or angiofibroma (young males). POST-NASAL DRIP: mucus draining down the posterior pharynx causing: chronic throat clearing; cough (especially nocturnal); hoarseness; sensation of something stuck in the throat.",
+          "clinical_importance": "YELLOW-GREEN discharge alone does NOT indicate bacterial infection — this is the most common misconception leading to inappropriate antibiotic prescribing; colour is from myeloperoxidase in neutrophils, not bacteria"
+        },
+        {
+          "id": "SYM-1603",
+          "name": "Facial Pain, Pressure, and Headache",
+          "description": "The sinus-specific pattern of pain is diagnostically useful: MAXILLARY SINUSITIS: cheek pain and pressure; malar (cheekbone) tenderness to palpation; toothache or dental sensitivity in upper teeth; pain worsens on leaning forward (fluid shifts toward blocked ostium); FRONTAL SINUSITIS: severe forehead pain above the eyebrows; worse in the morning (drainage impaired when lying flat); may be very severe and throbbing; ETHMOID SINUSITIS: pain between the eyes (medial canthal region); retro-orbital pressure; may radiate to the temples; SPHENOID SINUSITIS: 'vertex' headache (top of head); retro-orbital pain; deep facial pain poorly localised; 'worst headache of my life' can indicate cavernous sinus extension — EMERGENCY. HEADACHE PATTERN: sinusitis headache is NOT throbbing (migraine is); NOT worsened by bright light or noise (migraine features); IS worsened by bending forward, nose-blowing, or Valsalva.",
+          "severity": "Mild to Severe",
+          "note": "Persistent very severe headache or headache with neurological features should raise concern for intracranial complications — urgent imaging"
+        },
+        {
+          "id": "SYM-1604",
+          "name": "Loss of Smell — Hyposmia and Anosmia",
+          "description": "Reduction (hyposmia) or complete loss (anosmia) of the sense of smell — one of the most distressing and quality-of-life-impairing symptoms of sinusitis, particularly CRS with nasal polyps. MECHANISMS: CONDUCTIVE anosmia — mucosal swelling or polyps physically blocking odorant molecules from reaching the olfactory epithelium in the roof of the nasal cavity (the most common mechanism in sinusitis — potentially reversible with treatment); SENSORINEURAL anosmia — damage to olfactory receptor neurons from chronic inflammation (partially reversible); Loss of smell causes: inability to appreciate food flavours (most flavour is smell-dependent — taste detects only sweet/salty/sour/bitter/umami; the rest is retronasal olfaction); loss of safety warning from gas leaks or fire; loss of social confidence (cannot detect own body odour); depression and anxiety. COVID-19 anosmia: distinct from sinusitis anosmia — caused by direct viral damage to olfactory sustentacular cells without nasal obstruction; rapid onset; often no nasal congestion.",
+          "severity": "Mild (hyposmia) to Complete (anosmia in severe CRSwNP)"
+        }
+      ],
+      "secondary_symptoms": [
+        "Fever — low-grade (37.5-38.5°C) in ABRS; high fever (>38.5°C) is uncommon and may indicate complications; fever with sinusitis in immunocompromised = consider invasive fungal sinusitis",
+        "Halitosis (bad breath) — from purulent nasal discharge draining into oropharynx; anaerobic bacteria in sinuses produce volatile sulphur compounds; distinctive in odontogenic sinusitis",
+        "Facial swelling — periorbital oedema (around the eyes) is the most common sign of orbital extension from ethmoid sinusitis; forehead swelling (Pott's puffy tumour) from frontal sinusitis with osteomyelitis",
+        "Cough — particularly nocturnal; from postnasal drip irritating the larynx and trachea; very common in children with sinusitis (may be the presenting symptom)",
+        "Ear pressure or fullness — from Eustachian tube dysfunction (the Eustachian tube drains into the nasopharynx; swollen adenoids and posterior nasal oedema impair its function); 'blocked ears'; reduced hearing; otitis media in children",
+        "Sleep disturbance — nasal obstruction forces mouth breathing; interrupted sleep from pain and snoring; sleep deprivation worsens immunity and prolongs illness",
+        "Fatigue and malaise — from systemic inflammation, sleep disruption, reduced oxygenation from nasal obstruction; particularly pronounced in CRS",
+        "Snoring and sleep-disordered breathing — severe CRS with nasal polyps causes obstructive breathing during sleep; may contribute to obstructive sleep apnoea (OSA)",
+        "Throat irritation and soreness — from postnasal drip and mouth breathing causing pharyngeal dryness",
+        "Photophobia (light sensitivity) — in frontal or sphenoid sinusitis; raises concern for meningeal irritation if severe"
+      ],
+      "sinus_specific_pain_locations": {
+        "maxillary": "Cheek, upper teeth, infraorbital region; worse on leaning forward",
+        "frontal": "Forehead; between and above the eyebrows; worse in morning",
+        "ethmoid": "Between and behind the eyes; medial canthal region; may cause orbital pain",
+        "sphenoid": "Vertex (top of head); retro-orbital; diffuse deep facial pain; may radiate to occiput (back of head)"
+      },
+      "alarm_signs_requiring_urgent_attention": [
+        "Periorbital swelling, erythema, or oedema — orbital cellulitis from ethmoid sinusitis; URGENT SAME-DAY ENT assessment",
+        "Proptosis (bulging eye) — orbital abscess or cavernous sinus thrombosis; EMERGENCY",
+        "Diplopia (double vision) — orbital apex involvement; cranial nerve palsy; EMERGENCY",
+        "Visual loss or change — orbital complications threatening optic nerve; TIME-CRITICAL emergency",
+        "Severe headache with neck stiffness and photophobia — meningitis from sinus extension; EMERGENCY",
+        "Altered consciousness, confusion, or seizures — intracranial complication; EMERGENCY",
+        "Forehead swelling with frontal sinusitis — Pott's puffy tumour (frontal bone osteomyelitis); URGENT",
+        "Black or dark discolouration inside nose, on palate, or periorbital skin — invasive fungal sinusitis (mucormycosis) — EMERGENCY; particularly in diabetic or immunocompromised patients"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Duration of symptoms — <10 days (viral); >10 days without improvement (ABRS criterion); >12 weeks (CRS)",
+        "Symptom pattern — which of the 4 cardinal symptoms are present; severity of each (VAS 0-10)",
+        "Double worsening pattern — initial improvement then worsening (most specific ABRS criterion)",
+        "Unilateral vs bilateral symptoms — unilateral suggests bacterial (ABRS or odontogenic); bilateral suggests viral or allergic",
+        "Smell disturbance — sudden onset vs gradual; absent in viral typically (congestion blocks smell transiently); profound chronic anosmia = CRSwNP",
+        "Previous episodes — how many; how often; response to antibiotics; any culture results; previous FESS",
+        "Allergy history — seasonal or perennial symptoms; hay fever; eczema; asthma; allergen testing previous results; family history of atopy",
+        "Asthma — concurrent asthma and sinusitis suggests CRSwNP or AERD; spirometry results",
+        "Aspirin sensitivity — does aspirin/ibuprofen trigger facial swelling, nasal polyp exacerbation, or bronchoconstriction? AERD/Samter's triad",
+        "Medication history — intranasal sprays already used; antibiotics (which ones; duration); beta-blockers (impair treatment response); ACE inhibitors (nasal congestion side effect); aspirin and NSAIDs",
+        "NSAID/aspirin sensitivity — Samter's triad assessment",
+        "Dental history — upper molar/premolar root canal; dental abscess; recent extraction; implants (odontogenic sinusitis suspicion for unilateral maxillary disease)",
+        "Diabetes — uncontrolled diabetes + sinusitis in a diabetic + black tissue = MUCORMYCOSIS until proven otherwise",
+        "Immunosuppression — HIV; chemotherapy; transplantation; steroids; haematological malignancy",
+        "Occupation — woodworking (adenocarcinoma risk from wood dust — investigate unilateral polyp); hairdressing; chemical exposure; farming",
+        "Air pollution exposure — city of residence; proximity to major roads; indoor cooking with biomass fuel",
+        "Swimming — competitive swimmer with recurrent sinusitis (P. aeruginosa; water-borne organisms)",
+        "COVID-19 history — COVID-19 + steroid treatment + diabetes = mucormycosis risk"
+      ],
+      "physical_examination": [
+        "General appearance — toxic appearance (high fever, extreme malaise) suggests bacterial or invasive fungal; pallor",
+        "Vital signs — temperature; heart rate (tachycardia in severe bacterial or fungal); blood pressure",
+        "Facial examination:",
+        "INSPECTION: facial asymmetry (unilateral swelling suggests dental or tumour); periorbital oedema or erythema; proptosis (bulging eye — orbital complication); frontal swelling (Pott's puffy tumour); black/dark tissue in nasal cavity or palate (invasive fungal — EMERGENCY)",
+        "PALPATION: tenderness over maxillary sinuses (below orbital rims — cheekbones); frontal sinus tenderness (above the eyebrows); ethmoid tenderness (medial canthal area — corner of eye); percussion of upper teeth (dental tenderness in odontogenic sinusitis)",
+        "TRANSILLUMINATION: shining bright torch against sinus wall in darkened room; opacification vs translucency — limited diagnostic value but simple",
+        "Anterior rhinoscopy (with nasal speculum and pen torch): nasal mucosa colour (pale and boggy = allergic; red and inflamed = infectious); nasal discharge character (clear, purulent, bloody); nasal polyps (pale, smooth, translucent, grape-like masses — typically arising from middle meatus); deviated nasal septum; nasal foreign body (especially in children with unilateral foul-smelling discharge); crusting or necrotic tissue",
+        "Nasal endoscopy (nasendoscopy — rigid or flexible): by ENT surgeon; gold standard for examining middle meatus, sinus drainage pathways, polyps, tumours; takes biopsies if needed; cultures from middle meatus",
+        "Oral examination: upper dental health; upper molar percussion (dental pathology); palate inspection (black necrosis in mucormycosis may appear on palate)",
+        "Eye examination: visual acuity; extra-ocular movements; pupillary reflexes; proptosis measurement; chemosis (conjunctival oedema)",
+        "Neurological examination: cranial nerve assessment (III, IV, V, VI affected in cavernous sinus thrombosis); neck stiffness (meningism); level of consciousness",
+        "Cervical lymphadenopathy — reactive to upper respiratory infection; suppuration from severe ABRS"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "CT Scan of Paranasal Sinuses (Coronal Views) — Gold Standard Imaging",
+          "type": "Imaging — Computed Tomography",
+          "description": "The definitive imaging modality for evaluating the paranasal sinuses — providing detailed anatomical assessment of all four sinus groups, the osteomeatal complex (the key drainage pathway), nasal anatomy, and orbital and intracranial boundaries. CORONAL VIEWS are most informative for the osteomeatal complex; axial and sagittal reconstructions provide additional information. CT findings in sinusitis: mucosal thickening (>3-4 mm — normal sinus has no visible mucosa on CT); air-fluid levels (indicates active infection with purulent secretion); sinus opacification (complete filling — severe sinusitis); ostial obstruction; bone erosion (concerning for tumour or invasive fungal sinusitis); orbital extension; intracranial extension.",
+          "purpose": "Evaluate extent of CRS and guide surgical planning (pre-FESS); detect complications (orbital, intracranial); diagnose odontogenic sinusitis (dental pathology visible); assess fungal sinusitis (hyperdense fungal ball or expansile soft tissue with bone erosion); staging for FESS; not routinely indicated for uncomplicated acute sinusitis",
+          "key_metric": "Lund-Mackay CT score (0-24): each sinus scored 0-2 (0=clear; 1=partial opacification; 2=complete opacification) for 10 sites bilaterally; total score ≥4 = clinical significance; used for CRS severity stratification; pre- and post-treatment comparison",
+          "when_not_to_scan": "Routine CT is NOT required for straightforward acute sinusitis (clinical diagnosis + appropriate treatment); CT for: suspected complications; pre-FESS planning; recurrent unexplained sinusitis; CRS not responding to treatment; unilateral disease (exclude tumour); suspected odontogenic cause; immunocompromised with sinusitis",
+          "india_note": "CT sinuses available at all urban radiology centres in India; cost approximately Rs 2,000-5,000; request specifically 'CT paranasal sinuses with coronal and axial views' — not just 'CT head'"
+        },
+        {
+          "test_name": "Nasal Endoscopy (Nasendoscopy) — Gold Standard ENT Examination",
+          "type": "Endoscopy — ENT",
+          "description": "Rigid or flexible endoscope (2.7 mm or 4 mm diameter) passed through the nasal cavity by an ENT surgeon — providing direct visualisation of the nasal cavity, middle meatus, sinus drainage pathways, posterior choana, and nasopharynx. Essential for CRS diagnosis (objective evidence of mucopus from middle meatus), nasal polyp assessment, tissue biopsy, middle meatal cultures, and post-FESS follow-up.",
+          "purpose": "Objective diagnosis of CRS (mucopus from middle meatus; mucosal inflammation; polyps); assess polyp size and grade; middle meatal culture for ABRS or CRS (targeted antibiotic therapy); biopsy suspicious lesions; post-operative evaluation",
+          "key_metric": "Lund-Kennedy endoscopy score (0-12): polyps (0-2 each side); oedema (0-2); discharge (0-2); scarring (0-2); crusting (0-2); total guides disease severity and treatment monitoring"
+        },
+        {
+          "test_name": "MRI of Brain and Paranasal Sinuses (With Contrast)",
+          "type": "Imaging — MRI",
+          "description": "MRI is superior to CT for soft tissue characterisation and evaluating intracranial complications of sinusitis — including meningitis, cerebral abscess, subdural empyema, and cavernous sinus thrombosis. Contrast-enhanced MRI shows: dural enhancement (meningeal irritation); brain abscess ring enhancement; cavernous sinus thrombosis (filling defect); orbital cellulitis vs abscess (subperiosteal abscess shows ring-enhancing collection). MRI also better characterises sinonasal tumours from inflammatory disease. MANDATORY for any suspected intracranial complication.",
+          "purpose": "Intracranial complication assessment (meningitis, abscess, empyema, cavernous sinus thrombosis); distinguish invasive fungal sinusitis from tumour; characterise sinonasal tumours; orbital complication evaluation (subperiosteal abscess)",
+          "note": "Request 'MRI brain and paranasal sinuses with gadolinium contrast' for suspected complications; faster and more available than MRI — CT used in emergency settings"
+        },
+        {
+          "test_name": "Nasal Swab / Middle Meatal Culture",
+          "type": "Microbiological",
+          "description": "Culture of nasal secretions to identify bacterial pathogens and guide antibiotic therapy. SITE MATTERS — anterior nasal swab (from the nostril) reflects nasal flora and is unreliable for sinus organisms; MIDDLE MEATAL SWAB (obtained under endoscopic guidance from the middle meatus — the sinus drainage pathway) is diagnostically reliable. Sensitivity of middle meatal culture correlates highly (87%) with maxillary sinus aspirate culture (the gold standard). Maxillary sinus puncture and aspiration is occasionally performed for refractory ABRS or suspected complications when culture-directed therapy is essential.",
+          "purpose": "Identify causative bacteria in ABRS failing first-line antibiotics; detect MRSA or resistant organisms; culture-directed therapy in refractory CRS; pre-operative microbiological assessment in severe CRS",
+          "when_to_culture": "ABRS not responding to first-line antibiotics; severe or complicated sinusitis; immunocompromised patients; hospital-acquired sinusitis (ventilator-associated); post-surgical sinusitis",
+          "india_resistance_note": "H. influenzae beta-lactamase production is common in India (40-60%) — justifying co-amoxiclav as first-line over plain amoxicillin; MRSA sinusitis increasing; Pseudomonas relevant in swimmers and immunocompromised"
+        },
+        {
+          "test_name": "Allergy Testing — Skin Prick Test (SPT) and Specific IgE (RAST)",
+          "type": "Immunological / Allergology",
+          "description": "Identifies specific IgE sensitisation to aeroallergens — essential for patients with allergic rhinosinusitis and CRS. SKIN PRICK TEST: small pricks on forearm with standardised allergen extracts; wheal and flare response at 15-20 minutes indicates IgE sensitisation; highly sensitive; requires stopping antihistamines 5-7 days before; SPECIFIC IgE (ImmunoCAP/RAST): blood test measuring IgE antibody levels to specific allergens; can be performed on antihistamines; useful when SPT not feasible (dermatographism, severe eczema). Key allergens to test in India: house dust mites (D. pteronyssinus, D. farinae — most important in tropical India); cockroach (Blatella germanica); Aspergillus fumigatus; Alternaria alternata (moulds); grass pollens; tree pollens; cat and dog dander.",
+          "purpose": "Confirm allergic rhinosinusitis aetiology; identify specific allergens for avoidance and immunotherapy; guide allergen immunotherapy selection; assess AFRS (elevated total IgE and specific mould IgE)",
+          "key_metric": "Wheal ≥3 mm larger than negative control = positive SPT; Specific IgE: Class 0 (<0.35 kU/L) = negative; Class 1+ (>0.35) = sensitised; Class 4+ (>17.5) = high sensitisation",
+          "india_note": "SPT widely available at allergy clinics in major Indian cities (AIIMS, PGI, Medanta, Apollo, Fortis); important for identifying dust mite sensitisation (very common in India) — enables targeted immunotherapy"
+        },
+        {
+          "test_name": "Full Blood Count (FBC) and Inflammatory Markers (CRP, ESR)",
+          "type": "Blood — Haematological / Inflammatory",
+          "description": "FBC assesses: EOSINOPHILIA (blood eosinophils >400/mcL — supports eosinophilic CRSwNP, AERD, or AFRS; guides steroid and biologic therapy); NEUTROPHILIA (bacterial infection or fungal in immunocompromised); NEUTROPENIA (increased risk of invasive fungal sinusitis). CRP and ESR: elevated in ABRS and complicated sinusitis; very elevated in orbital or intracranial complications.",
+          "purpose": "Assess inflammation severity; detect eosinophilia (CRSwNP endotyping for biologic therapy); evaluate immune status; orbital/intracranial complication monitoring",
+          "key_metric": "Eosinophils >400/mcL = eosinophilic phenotype (CRSwNP likely); CRP >100 mg/L in sinusitis = severe infection or complication"
+        },
+        {
+          "test_name": "Serum IgE (Total and Specific)",
+          "type": "Blood — Immunological",
+          "description": "Total serum IgE: markedly elevated in AFRS (Allergic Fungal Rhinosinusitis) — typically >1000 IU/mL; moderately elevated in allergic rhinitis and CRSwNP; specific IgE to moulds (Aspergillus, Bipolaris, Alternaria, Curvularia) confirms allergic sensitisation in AFRS.",
+          "purpose": "Diagnose AFRS; assess allergic status; guide omalizumab (anti-IgE) eligibility (requires total IgE within specific range for dosing)"
+        },
+        {
+          "test_name": "Microbiological Culture and KOH Preparation — Invasive Fungal Sinusitis",
+          "type": "Microbiological — Fungal",
+          "description": "When invasive fungal sinusitis is suspected: tissue biopsy and fluid from the sinus (obtained endoscopically or at surgery) must be sent for: KOH (potassium hydroxide) preparation — rapid examination under microscopy for fungal hyphae (Mucorales show broad, non-septate, ribbon-like hyphae; Aspergillus shows narrow, septate hyphae — morphological distinction has major therapeutic implications); Fungal culture (Sabouraud dextrose agar) — identifies species; speciation guides antifungal selection; Histopathology with PAS (Periodic Acid-Schiff) and Grocott methenamine silver (GMS) staining — gold standard for confirming tissue invasion.",
+          "purpose": "Confirm invasive fungal sinusitis; identify fungal species (Mucorales vs Aspergillus — critical, as they have different treatments); guide antifungal therapy",
+          "key_metric": "Broad non-septate hyphae with right-angle branching = Mucorales (mucormycosis — treat with amphotericin B); narrow septate hyphae with 45° branching = Aspergillus; angioinvasion on histology = invasive disease confirmed",
+          "urgency": "EMERGENCY processing required — invasive fungal sinusitis progresses in hours to days; call laboratory to expedite KOH results"
+        },
+        {
+          "test_name": "Blood Glucose and HbA1c",
+          "type": "Blood — Biochemical / Endocrinological",
+          "description": "MANDATORY in any patient with invasive fungal sinusitis or mucormycosis — uncontrolled diabetes (particularly DKA) is the dominant risk factor; acidosis promotes Mucorales growth; hyperglycaemia impairs neutrophil killing. Also important: identify undiagnosed diabetes in patients with recurrent or chronic sinusitis (immune dysfunction from diabetes worsens sinusitis outcomes).",
+          "purpose": "Identify DKA (life-threatening; treat concurrently with mucormycosis); screen for undiagnosed diabetes in any patient with invasive fungal sinusitis; optimise glycaemic control during treatment",
+          "key_metric": "Glucose >11 mmol/L + symptoms = diabetes; pH <7.3 + ketones = DKA; HbA1c reflects 3-month average glycaemia"
+        },
+        {
+          "test_name": "Cystic Fibrosis Sweat Test and CFTR Mutation Analysis",
+          "type": "Biochemical / Genetic",
+          "description": "Consider in young patients with bilateral nasal polyps, CRS, recurrent sinusitis, and bronchiectasis — particularly children. CF causes universal CRSwNP from dysfunctional chloride channels impairing mucociliary clearance. Sweat chloride >60 mmol/L = CF diagnosis. CFTR mutation analysis confirms diagnosis. A child presenting with nasal polyps should always have CF excluded.",
+          "purpose": "Exclude cystic fibrosis in young patients with CRSwNP and recurrent pulmonary infections"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Sinusitis treatment is fundamentally stratified by aetiology and chronicity. ACUTE VIRAL RHINOSINUSITIS: symptom-only management — no antibiotics; ACUTE BACTERIAL RHINOSINUSITIS: targeted antibiotics (co-amoxiclav) plus INCS; CHRONIC RHINOSINUSITIS: intranasal corticosteroids (INCS) are the cornerstone — the most evidence-based pharmacological treatment for CRS; saline irrigation; allergen management. The widespread inappropriate antibiotic prescribing for sinusitis in India is a major driver of antimicrobial resistance — education that most sinusitis is viral and self-limiting is essential. Nasal saline irrigation is one of the most evidence-based, safe, and inexpensive treatments available for all forms of rhinosinusitis — it should be the first treatment prescribed for every patient.",
+      "treatment_principles": [
+        "1. MOST SINUSITIS IS VIRAL AND SELF-LIMITING — resist the urge to prescribe antibiotics for every case of sinusitis; reserve antibiotics for documented ABRS (meeting strict clinical criteria)",
+        "2. INTRANASAL CORTICOSTEROIDS (INCS) are the backbone of CRS treatment — NOT systemic antibiotics; INCS reduce mucosal inflammation, improve drainage, and reduce polyp size; must be used consistently for ≥3 months to assess benefit",
+        "3. NASAL SALINE IRRIGATION is the most evidence-based, safe, and affordable adjunct treatment for all rhinosinusitis — it mechanically clears mucus and crusts, improves mucociliary function, and reduces mucosal oedema; prescribe this first for every rhinosinusitis patient",
+        "4. TOPICAL DECONGESTANTS (oxymetazoline, xylometazoline) maximum 3-5 days — rebound congestion (rhinitis medicamentosa) develops with prolonged use",
+        "5. ANTIBIOTICS FOR ABRS: co-amoxiclav (amoxicillin-clavulanate) is first-line in India; duration 5-7 days; NOT 14-21 days (no evidence supports longer duration and increases resistance/side effects)",
+        "6. INVASIVE FUNGAL SINUSITIS: EMERGENCY — IV liposomal amphotericin B + emergency surgical debridement; no delay"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-201",
+          "category_name": "Nasal Saline Irrigation — Most Evidence-Based Treatment for All Rhinosinusitis",
+          "purpose": "Mechanical lavage of the nasal cavity and sinuses to clear mucus, crust, allergens, pollutants, and inflammatory debris; improve mucociliary clearance; reduce mucosal oedema; wash out inflammatory mediators; support healthy nasal microbiome.",
+          "medicines": [
+            {
+              "name": "Isotonic Saline Nasal Irrigation (Jal Neti / Nasal Douche / Neti Pot)",
+              "brand_examples": ["Nasoclear", "SinoRinse", "Simply Saline", "Sterimar", "NeilMed Sinus Rinse — squeeze bottle"],
+              "form": "Nasal rinse sachets dissolved in distilled or boiled cooled water; neti pot; squeeze bottle; powered irrigator",
+              "preparation": "Mix 1 sachet (sodium chloride + sodium bicarbonate) in 240 mL of BOILED AND COOLED or DISTILLED WATER (NEVER tap water directly in India — risk of Naegleria fowleri and other waterborne pathogens in nasal cavity); tilt head laterally; pour into upper nostril; fluid exits lower nostril; sniff gently but do not force water into Eustachian tube",
+              "dosage": "Twice daily (morning and evening) for active sinusitis; once daily for maintenance prevention; use warm water (37°C) for comfort",
+              "evidence": "Cochrane systematic review: nasal saline irrigation reduces symptoms, reduces antibiotic use, and improves quality of life in both acute and chronic sinusitis; Grade A evidence; the WHO recommends saline irrigation for all rhinosinusitis",
+              "india_traditional_note": "Jal neti — nasal water cleansing with a neti pot — is a traditional yogic practice (Shatkarma) used in India for thousands of years; well-aligned with modern evidence; widely available neti pots at Rs 100-200; traditional practice validated by modern evidence",
+              "hypertonic_saline": "Hypertonic saline (2-3% NaCl) has slightly greater anti-oedema effect vs isotonic (0.9%) — greater osmotic gradient draws fluid from swollen mucosa; some patients find it more irritating; use isotonic for regular maintenance; hypertonic for acute flares"
+            },
+            {
+              "name": "Isotonic Saline Nasal Spray — Aqueous",
+              "brand_examples": ["Nasivion Saline", "Otrivin Saline", "Nasoclear", "Sterimar spray"],
+              "form": "Spray bottle",
+              "dosage": "2-4 sprays each nostril two to four times daily",
+              "use_case": "Maintenance moisture and mucociliary support; less washing effect than irrigation but more convenient; for mild symptoms or infants (gentle spray); use throughout the day between irrigations"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-202",
+          "category_name": "Intranasal Corticosteroids (INCS) — Cornerstone of CRS Treatment",
+          "purpose": "Reduce sinonasal mucosal inflammation; shrink nasal polyps; improve ostial patency allowing sinus drainage; improve olfaction; reduce symptom burden. First-line and most evidence-based pharmacological treatment for chronic rhinosinusitis (both with and without polyps). Minimal systemic absorption — safe for long-term use.",
+          "medicines": [
+            {
+              "name": "Mometasone Furoate Nasal Spray",
+              "brand_examples": ["Nasonex", "Momeflux", "Momecort", "Mometasone nasal spray — Indian generics"],
+              "form": "Aqueous nasal spray (50 mcg per actuation)",
+              "dosage": "CRS/CRSwNP: 2 sprays each nostril twice daily (200 mcg/day); Maintenance after FESS: 2 sprays each nostril once daily; Children ≥6 years: 1-2 sprays once daily",
+              "use_case": "The most widely prescribed INCS for CRS; approved for nasal polyps; very low systemic bioavailability (<1%) — safe for long-term use; reduces nasal polyp size (clinical trials show measurable reduction over 4-12 months); recommended first-line in EPOS 2020 and ISG guidelines",
+              "technique": "IMPORTANT: correct spray technique essential for efficacy: shake bottle; tilt head slightly forward (NOT back — this sends spray to throat); aim spray toward the outer corner of the eye (NOT toward the nasal septum — septum contact causes epistaxis); sniff GENTLY after spraying; blow nose before spraying to clear mucus; spray AFTER saline irrigation (clears secretions first, allowing INCS to contact mucosa)",
+              "side_effects": ["Mild: nasal dryness; crusting; epistaxis (1-3% — reduced by correct lateral spray angle technique)", "Rare: nasal septal perforation (with prolonged incorrect spraying directly onto septum)", "Systemic effects minimal (<1% bioavailability) — appropriate at therapeutic doses even in children; bone density effect not clinically significant at standard doses"],
+              "duration": "Minimum 3 months to assess efficacy for CRS; long-term maintenance (years) required for polyp control; do not stop abruptly in CRSwNP — polyps recur rapidly"
+            },
+            {
+              "name": "Fluticasone Propionate or Furoate Nasal Spray",
+              "brand_examples": ["Flonase", "Flomist", "Flutivate Nasal", "Nasoflo"],
+              "form": "Aqueous spray (50 mcg and 27.5 mcg per actuation for furoate)",
+              "dosage": "Fluticasone propionate: 2 sprays each nostril once daily; Fluticasone furoate: 2 sprays each nostril once daily",
+              "use_case": "Excellent INCS option; fluticasone furoate (Veramyst/Avamys) has lowest systemic bioavailability of any INCS (<0.5%) — preferred in children, adrenal-suppression-concerned patients; strong evidence for allergic rhinosinusitis"
+            },
+            {
+              "name": "Budesonide Nasal Spray / Nasal Drops",
+              "brand_examples": ["Rhinocort Aqua", "Budamate Nasal", "Budesonide nasal"],
+              "form": "Spray; drops",
+              "dosage": "Spray: 2 sprays each nostril once daily; High-volume drops for CRSwNP: 128 mcg (2 drops) each nostril twice daily in 'head down and forward' (HDF) position",
+              "use_case": "Particularly useful for CRSwNP — high-volume budesonide nasal drops in HDF position deliver medication into the ethmoid sinuses (where polyps arise); superior polyp penetration compared to sprays; commonly used post-FESS; also used for AFRS",
+              "hdf_technique": "Kneel on the floor; bend head forward and downward (head upside-down); instil drops; remain in this position for 5 minutes; the gravity-dependent position directs drops toward the ethmoid roof"
+            },
+            {
+              "name": "Beclomethasone Dipropionate Nasal Spray",
+              "brand_examples": ["Beconase", "Beclate Nasal", "Beconase"],
+              "form": "Spray (50 mcg per actuation)",
+              "dosage": "2 sprays each nostril twice daily",
+              "use_case": "Well-established, affordable INCS; widely available in India; good efficacy for allergic rhinosinusitis; slightly higher systemic bioavailability than mometasone or fluticasone — mometasone/fluticasone preferred for long-term use especially in children"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-203",
+          "category_name": "Antibiotics — ABRS Only (Not Routine for All Sinusitis)",
+          "purpose": "Targeted bacterial coverage for documented acute bacterial rhinosinusitis meeting clinical criteria — NOT empirical treatment for all sinusitis. First-line: amoxicillin-clavulanate (co-amoxiclav) in India to cover H. influenzae beta-lactamase producing strains.",
+          "medicines": [
+            {
+              "name": "Amoxicillin-Clavulanate (Co-Amoxiclav) — First-Line Antibiotic for ABRS in India",
+              "brand_examples": ["Augmentin", "Moxclav", "Clavam", "Augpen"],
+              "form": "Tablet (625 mg = 500 mg amoxicillin + 125 mg clavulanate; 1g = 875 mg + 125 mg)",
+              "dosage": "Adults: 625 mg (500/125) three times daily × 5-7 days; OR 1g (875/125) twice daily × 5-7 days (better compliance); Children: 45 mg/kg/day amoxicillin component in 2-3 divided doses × 5-7 days",
+              "use_case": "First-line antibiotic for ABRS in India: covers S. pneumoniae; H. influenzae including beta-lactamase producing strains (clavulanate inhibits beta-lactamase); Moraxella catarrhalis (both beta-lactamase producing and not); most appropriate antibiotic given India's resistance patterns",
+              "mechanism": "Amoxicillin: broad-spectrum aminopenicillin — inhibits bacterial cell wall synthesis; Clavulanate: beta-lactamase inhibitor — prevents amoxicillin inactivation by bacterial enzymes",
+              "side_effects": ["Diarrhoea (10-15% — GI intolerance from clavulanate; take WITH FOOD to reduce)", "Nausea", "Amoxicillin rash (5% of patients — more common if EBV mononucleosis — widespread rash is not true penicillin allergy)", "Antibiotic-associated diarrhoea and C. difficile (rare)"],
+              "duration": "5-7 days is sufficient for ABRS — studies show no benefit of 10-14 day courses; shorter courses reduce adverse effects and resistance selection",
+              "failure": "If no improvement after 72 hours on co-amoxiclav — reassess diagnosis; consider middle meatal culture; switch to respiratory fluoroquinolone or moxifloxacin",
+              "india_note": "Plain amoxicillin (without clavulanate) is INSUFFICIENT for ABRS in India — H. influenzae beta-lactamase production in India is ~40-60%; always use co-amoxiclav"
+            },
+            {
+              "name": "Levofloxacin or Moxifloxacin — Respiratory Fluoroquinolones (Second-Line ABRS)",
+              "brand_examples": ["Tavanic (levofloxacin)", "Avelox (moxifloxacin)"],
+              "dosage": "Levofloxacin 500 mg once daily × 5-7 days; Moxifloxacin 400 mg once daily × 5 days",
+              "use_case": "Second-line for ABRS failing co-amoxiclav; penicillin allergy (true allergy — anaphylaxis, not rash); MRSA risk (moxifloxacin has good MRSA coverage); very effective against S. pneumoniae, H. influenzae, atypicals",
+              "note": "Reserve fluoroquinolones as second-line — broad spectrum drives resistance to quinolones in India (already high rates); avoid as routine first-line therapy for sinusitis"
+            },
+            {
+              "name": "Azithromycin or Clarithromycin — Macrolides (Third-Line / Atypical Cover)",
+              "brand_examples": ["Azee", "Zithromax", "Azithral (azithromycin); Claribid, Clarimac (clarithromycin)"],
+              "dosage": "Azithromycin 500 mg once daily × 3-5 days; Clarithromycin 500 mg twice daily × 5-7 days",
+              "use_case": "Third-line ABRS — macrolide resistance among S. pneumoniae in India is very high (>30-40%); use only if co-amoxiclav and fluoroquinolones are contraindicated; azithromycin has additional anti-inflammatory properties (benefits chronic inflammation — used at low dose for CRSsNP in some protocols)",
+              "long_dose_azithromycin_crs": "Low-dose azithromycin 250 mg three times per week for 3 months — has anti-inflammatory and immunomodulatory effects on sinonasal mucosa (inhibits IL-8, reduces biofilm formation); used in some CRSsNP protocols as adjunct — not first-line; BEFORE using long-term azithromycin: check NTM status (non-tuberculous mycobacteria — azithromycin monotherapy promotes NTM resistance); baseline ECG (QT interval)"
+            },
+            {
+              "name": "Cefuroxime Axetil (Oral Cephalosporin) — Penicillin-Allergic Patients (Non-Anaphylaxis)",
+              "brand_examples": ["Zinnat", "Cefurox", "Supacef"],
+              "dosage": "500 mg twice daily × 5-7 days",
+              "use_case": "Alternative for mild penicillin allergy (rash — not anaphylaxis); covers S. pneumoniae and H. influenzae; ~10-15% cross-reactivity with penicillin — use with caution in true anaphylaxis history"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-204",
+          "category_name": "Topical Decongestants — Short-Term Symptom Relief Only",
+          "purpose": "Rapid reduction of nasal mucosal vasodilatation and oedema — providing almost immediate nasal decongestion; facilitates sinus ostial drainage; allows INCS to penetrate further into sinonasal cavity (use decongestant 15-20 minutes before INCS in acute phase); CRITICAL LIMITATION: maximum 3-5 days use — prolonged use causes RHINITIS MEDICAMENTOSA (rebound congestion — the nasal mucosa becomes progressively more congested requiring more decongestant, creating dependency).",
+          "medicines": [
+            {
+              "name": "Oxymetazoline Hydrochloride Nasal Spray — 0.05%",
+              "brand_examples": ["Nasivion (0.05%)", "Otrivin (0.1% — xylometazoline)", "Sinarest Nasal", "Nosin"],
+              "form": "Nasal spray",
+              "dosage": "2-3 sprays each nostril twice daily (morning and night); STRICTLY MAXIMUM 3-5 DAYS; Children 6-12 years: Nasivion 0.025% — 2 drops/sprays each nostril twice daily; Children 2-5 years: 0.01% formula; Infants under 2 years: paediatric formulation only under medical guidance",
+              "mechanism": "Alpha-2 adrenergic receptor agonist — causes vasoconstriction of nasal mucosal blood vessels; reduces mucosal oedema within 2-3 minutes; duration of action 10-12 hours (oxymetazoline); 8-10 hours (xylometazoline)",
+              "rhinitis_medicamentosa": "REBOUND CONGESTION — after more than 5 days of use, the nasal mucosa becomes hypersensitive and increasingly congested as each dose wears off, requiring more frequent use; leads to chronic nasal obstruction that is difficult to treat; managed by: gradual withdrawal; ipratropium nasal spray as bridge; INCS initiated concurrently; weaning over 4-6 weeks",
+              "contraindications": "Narrow-angle glaucoma; severe hypertension; thyrotoxicosis; concurrent MAOI use (hypertensive crisis); avoid in children <2 years without medical supervision"
+            },
+            {
+              "name": "Pseudoephedrine (Oral Decongestant)",
+              "brand_examples": ["Sudafed (not widely available India)", "Combination cold medicines containing pseudoephedrine: various brands"],
+              "form": "Tablet (30 mg, 60 mg)",
+              "dosage": "60 mg every 4-6 hours; maximum 240 mg/day",
+              "use_case": "Systemic decongestant; longer duration than topical; less risk of rebound congestion; useful when topical spray not appropriate; commonly combined with antihistamines in 'cold and sinusitis tablets'",
+              "side_effects": "Insomnia; palpitations; tachycardia; hypertension; urinary retention in BPH",
+              "india_note": "Schedule H drug in India — requires prescription; contained in many OTC combination cold preparations (check for pseudoephedrine content); misuse potential as methamphetamine precursor (regulatory restrictions)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-205",
+          "category_name": "Antihistamines — Allergic Rhinosinusitis Component",
+          "purpose": "Block H1 histamine receptors — reducing histamine-mediated allergic symptoms (sneezing, itching, watery discharge); second-generation (non-sedating) antihistamines preferred; most effective for the allergic rhinitis component of rhinosinusitis.",
+          "medicines": [
+            {
+              "name": "Cetirizine Hydrochloride — Second-Generation (Non-Sedating)",
+              "brand_examples": ["Zyrtec", "Alerid", "Cetcip", "Cetzine", "Okacet"],
+              "form": "Tablet (5 mg, 10 mg); Syrup",
+              "dosage": "Adults: 10 mg once daily at night (mild sedation possible — take at bedtime); Children 6-12 years: 5 mg twice daily or 10 mg once daily; 2-6 years: 2.5 mg twice daily",
+              "use_case": "Allergic rhinosinusitis (sneezing, itching, watery rhinorrhoea); adjunct to INCS for CRS with allergic component; widely affordable and available in India",
+              "mechanism": "Selective H1 receptor inverse agonist; minimal CNS penetration (minor sedation only); also has anti-inflammatory properties (reduces eosinophil migration)",
+              "note": "Most effective for sneezing and itching of allergic rhinitis; less effective for nasal congestion (INCS superior for congestion)"
+            },
+            {
+              "name": "Fexofenadine Hydrochloride — Truly Non-Sedating",
+              "brand_examples": ["Allegra", "Fexova", "Fexo-30", "Fastofen"],
+              "form": "Tablet (120 mg, 180 mg)",
+              "dosage": "180 mg once daily (adults); 120 mg twice daily for children",
+              "use_case": "Preferred when no sedation tolerated (drivers, pilots, operators of heavy machinery); allergic rhinosinusitis; excellent safety profile; does not cross blood-brain barrier"
+            },
+            {
+              "name": "Loratadine",
+              "brand_examples": ["Clarityn", "Lorfast", "Lorid"],
+              "form": "Tablet (10 mg)",
+              "dosage": "10 mg once daily",
+              "use_case": "Allergic rhinosinusitis; non-sedating; widely available; safe in pregnancy (Category B)"
+            },
+            {
+              "name": "Levocetirizine — More Potent Isomer",
+              "brand_examples": ["Xyzal", "Levocet", "Zentel-L"],
+              "form": "Tablet (5 mg)",
+              "dosage": "5 mg once daily at night",
+              "use_case": "Chronic allergic rhinosinusitis; slightly more potent than cetirizine; mild sedation; good for night-time dosing"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-206",
+          "category_name": "Systemic Corticosteroids — Short Course for CRSwNP and Severe Allergic Rhinosinusitis",
+          "purpose": "Rapidly reduce severe sinonasal eosinophilic inflammation and nasal polyp volume — used as short-course 'medical polypectomy' in severe CRSwNP before FESS or when surgery is contraindicated.",
+          "medicines": [
+            {
+              "name": "Prednisolone (Oral) — Short Course",
+              "brand_examples": ["Wysolone", "Omnacortil", "Prednisolone generic"],
+              "form": "Tablet (5 mg, 10 mg, 20 mg)",
+              "dosage": "CRSwNP 'medical polypectomy': 30-40 mg once daily × 5-7 days (fixed short course); OR tapering: 50 mg → 40 mg → 30 mg → 20 mg → 10 mg × 2 days each (10-day course); DO NOT use prolonged courses due to systemic side effects; Severe allergic rhinosinusitis exacerbation: 20-30 mg × 5 days",
+              "use_case": "Severe CRSwNP causing complete obstruction or severe anosmia; pre-FESS preparation; post-FESS eosinophilic exacerbation; acute exacerbation of AERD",
+              "mechanism": "Broad anti-inflammatory; suppresses eosinophilic Th2 inflammation; reduces polyp oedema and size; restores smell dramatically (often anosmia improves within 24-48 hours of steroid — the 'steroid sniff test' used diagnostically)",
+              "the_steroid_sniff_test": "If anosmia improves significantly with a 5-7 day prednisolone course, this confirms CRSwNP anosmia is conductive (mechanical obstruction) and potentially reversible — suggests surgery will restore smell",
+              "side_effects": "Short course (<10 days): fluid retention; mood changes; insomnia; blood glucose elevation (particularly important in diabetics); adrenal suppression minimal",
+              "contraindications": "Uncontrolled diabetes (relative — monitor glucose closely); active infection; glaucoma"
+            },
+            {
+              "name": "Dexamethasone (Oral or IV) — Severe Sinonasal Emergencies",
+              "dosage": "IV 4-8 mg every 6-8 hours (severe orbital cellulitis adjunct)",
+              "use_case": "Adjunct to antibiotics for severe orbital cellulitis; NOT for routine sinusitis"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-207",
+          "category_name": "Leukotriene Receptor Antagonists — CRS with Polyps and AERD",
+          "medicines": [
+            {
+              "name": "Montelukast",
+              "brand_examples": ["Singulair", "Montair", "Lukair", "Romilast"],
+              "form": "Tablet (10 mg adult; 5 mg chewable for children 6-14 years; 4 mg granules for 2-6 years)",
+              "dosage": "Adults: 10 mg once daily at night; Children 6-14 years: 5 mg once daily",
+              "use_case": "Adjunct treatment for CRSwNP (reduces polyp recurrence post-FESS); AERD (blocks cysteinyl leukotriene pathway — helps prevent NSAID-triggered exacerbations of nasal polyps and asthma); concurrent allergic rhinitis and mild asthma (both indications); useful when INCS alone insufficient",
+              "mechanism": "Selective CysLT1 receptor antagonist — blocks leukotriene-mediated eosinophilic inflammation; particularly relevant in AERD where aspirin shifts arachidonic acid metabolism toward leukotrienes",
+              "side_effects": "Generally well-tolerated; neuropsychiatric adverse effects (FDA black box warning 2020): depression, suicidal ideation, nightmares, agitation — particularly in children and adolescents; assess baseline mental health; discuss risks with patients/parents; discontinue if neuropsychiatric symptoms develop",
+              "india_note": "FDA neuropsychiatric warning (2020) has not been as widely communicated in India; important to counsel patients; particularly cautious use in adolescents with pre-existing depression"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-208",
+          "category_name": "Biologic Therapies — Severe Uncontrolled CRSwNP",
+          "purpose": "Targeted monoclonal antibodies blocking specific cytokines in the Th2 eosinophilic inflammatory cascade driving severe CRSwNP — revolutionising treatment of patients with uncontrolled disease despite INCS and repeated surgeries.",
+          "medicines": [
+            {
+              "name": "Dupilumab (Anti-IL-4Rα) — The Most Effective Biologic for CRSwNP",
+              "brand_examples": ["Dupixent"],
+              "form": "Subcutaneous injection (300 mg/2 mL pre-filled syringe)",
+              "dosage": "300 mg subcutaneously every 2 weeks (self-administered pre-filled syringe); Loading dose: 600 mg × 1 then 300 mg every 2 weeks",
+              "use_case": "Severe uncontrolled CRSwNP — indicated when: bilateral nasal polyps with significant symptoms (TPS ≥5) despite intranasal corticosteroids AND has had or is a candidate for FESS; concurrent asthma significantly benefits; dramatically reduces polyp size, improves smell, reduces nasal congestion, reduces need for oral steroids and repeat surgery",
+              "mechanism": "Fully human monoclonal antibody blocking IL-4Rα — the shared receptor subunit for IL-4 and IL-13 (the key Th2 cytokines driving eosinophilic inflammation); blocks both IL-4 and IL-13 signalling simultaneously — the most upstream and complete Th2 blockade available; reduces nasal polyp burden by ~40% reduction in nasal polyp score at 24 weeks",
+              "evidence": "SINUS-24 and SINUS-52 trials: dupilumab significantly reduced nasal polyp score, improved SNOT-22 quality of life, improved loss of smell, reduced nasal congestion, and dramatically reduced need for oral steroids and sinus surgery vs placebo; approved by FDA (2019) and EMA for severe CRSwNP",
+              "cost_india": "Currently very expensive in India — approximately Rs 50,000-70,000 per injection (bimonthly injections = approximately Rs 1,200,000-1,680,000 annually); not yet available on government insurance; Roche compassionate use programme for selected patients; biosimilar expected to reduce costs substantially",
+              "side_effects": "Generally well-tolerated; injection site reactions; conjunctivitis (occurs in 10-20% of CRSwNP patients — possibly from reduced IL-13 in goblet cells causing dry eye); arthralgia"
+            },
+            {
+              "name": "Mepolizumab (Anti-IL-5) — Severe CRSwNP with Eosinophilic Asthma",
+              "brand_examples": ["Nucala"],
+              "form": "Subcutaneous injection (100 mg)",
+              "dosage": "100 mg subcutaneously every 4 weeks (monthly)",
+              "use_case": "Severe eosinophilic CRSwNP with concurrent severe eosinophilic asthma; approved for both indications; reduces polyp size and asthma exacerbations",
+              "mechanism": "Anti-IL-5 monoclonal antibody — reduces eosinophil production, survival, and activation"
+            },
+            {
+              "name": "Omalizumab (Anti-IgE) — CRSwNP with Allergic Component and Asthma",
+              "brand_examples": ["Xolair"],
+              "form": "Subcutaneous injection",
+              "dosage": "150-600 mg subcutaneously every 2-4 weeks (dose based on baseline total IgE and body weight)",
+              "use_case": "CRSwNP with concurrent allergic rhinitis and asthma; also approved for AFRS; reduces total IgE and IgE-mediated inflammation; reduces polyp burden and improves asthma control"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-209",
+          "category_name": "Antifungal Agents — Invasive Fungal Rhinosinusitis",
+          "purpose": "Targeted antifungal therapy for invasive fungal sinusitis — a medical emergency; treatment delay significantly worsens outcome.",
+          "medicines": [
+            {
+              "name": "Liposomal Amphotericin B — First-Line for Mucormycosis (Invasive Fungal Sinusitis)",
+              "brand_examples": ["AmBisome (liposomal)", "Fungisome (liposomal India)", "Amphocil (amphotericin B colloidal dispersion)"],
+              "form": "IV infusion",
+              "dosage": "Mucormycosis: 5-10 mg/kg/day IV; duration: 4-6 weeks minimum (guided by clinical response and imaging); step down to isavuconazole or posaconazole when stable",
+              "use_case": "FIRST-LINE treatment for ALL invasive mucormycosis (rhinosinusitis, rhino-orbital, rhinocerebral); liposomal formulation preferred over conventional amphotericin B — significantly less nephrotoxic while maintaining equivalent antifungal efficacy; also effective against Aspergillus",
+              "mechanism": "Polyene antifungal — binds ergosterol in fungal cell membrane creating pores causing cell leakage and death; liposomal encapsulation preferentially accumulates in infected tissue reducing renal toxicity",
+              "monitoring": "Renal function (creatinine, electrolytes) daily — nephrotoxicity; magnesium and potassium replacement (renal wasting); infusion-related reactions (rigors, fever — premedicate with paracetamol and antihistamine); LFTs",
+              "india_covid_note": "Liposomal amphotericin B was in critical shortage during the COVID-19-associated mucormycosis epidemic in 2021 in India; government requisitioned global supplies; this shortage was a major contributor to treatment delays and mortality"
+            },
+            {
+              "name": "Isavuconazole — Step-Down Oral Therapy for Mucormycosis",
+              "brand_examples": ["Cresemba"],
+              "dosage": "Loading: isavuconazonium sulphate 372 mg every 8h × 48h (6 doses); Maintenance: 372 mg once daily",
+              "use_case": "Step-down oral therapy for mucormycosis when patient is stable on IV amphotericin B; also appropriate for Aspergillus; better tolerated and fewer drug interactions than voriconazole for mucormycosis"
+            },
+            {
+              "name": "Voriconazole — First-Line for Aspergillus Invasive Sinusitis",
+              "brand_examples": ["Vfend", "Voritek", "Voriconazole generic India"],
+              "form": "IV infusion; Oral tablet; Oral suspension",
+              "dosage": "IV: 6 mg/kg every 12h × 2 doses loading; then 4 mg/kg every 12h maintenance; Oral: 200 mg twice daily (adult >40 kg) — highly bioavailable orally; step down when clinically stable",
+              "use_case": "FIRST-LINE for invasive Aspergillus sinusitis; NOT for Mucorales (voriconazole does not cover Mucorales — this is a critical distinction; using voriconazole for mucormycosis is ineffective and delays correct treatment)",
+              "note": "Always determine fungal species before selecting antifungal: Mucorales (broad non-septate hyphae on KOH) → amphotericin B; Aspergillus (narrow septate hyphae) → voriconazole"
+            },
+            {
+              "name": "Itraconazole — Allergic Fungal Rhinosinusitis (AFRS) and Chronic Non-Invasive Fungal Sinusitis",
+              "brand_examples": ["Sporanox", "Itaspor", "Canditral"],
+              "dosage": "200 mg twice daily for 3-6 months",
+              "use_case": "Adjunct to FESS for AFRS (reduces recurrence); NOT appropriate for invasive fungal disease; chronic non-invasive fungal sinusitis"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-210",
+          "category_name": "Allergen Immunotherapy (AIT) — Disease-Modifying Treatment for Allergic Rhinosinusitis",
+          "purpose": "The only disease-modifying treatment for allergic rhinitis — can achieve long-term symptom reduction persisting after treatment completion; reduces the risk of CRS development and nasal polyp formation; reduces risk of allergic rhinitis progressing to asthma.",
+          "medicines": [
+            {
+              "name": "Subcutaneous Allergen Immunotherapy (SCIT)",
+              "description": "Gradually increasing doses of identified allergen extract injected subcutaneously weekly for 3-5 years; 'trains' the immune system to tolerate allergens by shifting Th2 response to Th1 and inducing regulatory T cells; requires allergy clinic with resuscitation facilities (anaphylaxis risk); highly effective particularly for house dust mite, grass pollen, and cat dander allergy",
+              "dosage": "Build-up phase: weekly injections for 4-6 months (increasing concentrations); maintenance phase: monthly injections for 3-5 years",
+              "india_availability": "Available at allergy clinics in major Indian cities (AIIMS Delhi, PGI Chandigarh, PGIMER, private allergy centres); relatively affordable (Rs 500-2,000/month); very effective for house dust mite allergy (most common allergen in India)"
+            },
+            {
+              "name": "Sublingual Immunotherapy (SLIT) — Drops or Tablets",
+              "description": "Allergen extracts administered under the tongue daily; administered at home (no clinic visits after first prescription); less anaphylaxis risk than SCIT; lower compliance due to daily self-administration; effective for house dust mite and grass pollen allergy; particularly useful for children; SLIT tablets approved for dust mite and grass: ACARIZAX (house dust mite tablet); GRAZAX (grass pollen tablet)",
+              "dosage": "Daily sublingual administration; build-up phase: 4-12 weeks; maintenance: 3-5 years",
+              "india_note": "SLIT drops widely available in India (multiple brands of polyvalent extracts); convenience of home administration improves compliance vs SCIT; increasingly preferred in Indian allergy practice"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-211",
+          "category_name": "Aspirin Desensitisation — AERD (Aspirin-Exacerbated Respiratory Disease)",
+          "medicines": [
+            {
+              "name": "Aspirin Desensitisation Protocol",
+              "description": "Gradual oral aspirin challenge under medical supervision — starting with very small doses (20.25 mg) and increasing every 3 hours to full therapeutic dose (325-650 mg); once tolerant, daily aspirin therapy maintained; after successful desensitisation, patients can take aspirin and other NSAIDs; reduces nasal polyp recurrence, improves olfaction, reduces asthma exacerbations",
+              "dosage": "Initial protocol: 20.25 mg → 40.5 mg → 81 mg → 162 mg → 325 mg over 1-2 days (inpatient protocol); maintenance: aspirin 325-650 mg twice daily indefinitely",
+              "use_case": "AERD patients (Samter's triad) with severe CRSwNP requiring frequent surgery; reduces post-surgical polyp recurrence significantly",
+              "setting": "MUST be performed in hospital with IV access and resuscitation equipment; reactions (nasal congestion, bronchospasm) treated with inhaled bronchodilators; NOT for outpatient initiation"
+            }
+          ]
+        }
+      ]
+    },
+
+    "surgical_treatment": {
+      "overview": "Functional Endoscopic Sinus Surgery (FESS) is the primary surgical intervention for CRS refractory to medical therapy — removing anatomical obstructions, widening sinus drainage pathways, and allowing topical medications to penetrate the sinuses. FESS is performed under general anaesthesia using endoscopes (rigid 4 mm Hopkins rod endoscopes); no external incisions are needed. Surgical navigation systems (image-guided surgery using pre-operative CT fused with intraoperative tracking) allow precise surgery adjacent to vital structures (orbit, skull base, optic nerve, carotid artery).",
+      "fess_indications": [
+        "CRS not responding to ≥3 months of maximum medical therapy (INCS + saline irrigation + appropriate antibiotics)",
+        "CRSwNP with severe symptoms despite INCS; or requiring repeated steroid courses",
+        "Recurrent acute sinusitis (≥4 episodes per year with symptom-free intervals)",
+        "Complicated sinusitis (orbital or intracranial complications requiring drainage)",
+        "Nasal polyposis causing complete obstruction",
+        "Invasive fungal sinusitis (surgical debridement is mandatory alongside antifungals)"
+      ],
+      "fess_procedures": [
+        "Maxillary antrostomy — widening of the maxillary sinus ostium (middle meatus antrostomy)",
+        "Anterior and posterior ethmoidectomy — removal of ethmoid air cells",
+        "Frontal sinusotomy (Draf type I/II/IIb/III) — widening frontal drainage pathway; Draf III (modified Lothrop) for severe frontal disease",
+        "Sphenoidotomy — widening sphenoid sinus opening",
+        "Septoplasty — surgical correction of deviated nasal septum (concurrent with FESS when DNS contributes to obstruction)",
+        "Inferior turbinate reduction — for hypertrophied inferior turbinates causing significant obstruction; submucous diathermy or microdebrider reduction"
+      ],
+      "post_fess_care": "The post-FESS period (first 3-6 months) is critical — regular endoscopic debridement in the outpatient clinic (removing crusts and synechia — adhesions); saline irrigation from day 1 post-op; INCS resumed as soon as bleeding settles (usually day 5-7); regular follow-up with nasal endoscopy at 2, 6, 12 weeks, then 3-6 monthly",
+      "fess_india": "FESS available at government medical colleges (AIIMS, PGI, JIPMER, medical college ENT departments) and private tertiary hospitals; cost approximately Rs 30,000-80,000 government vs Rs 1,00,000-3,00,000 private; PMJAY (Ayushman Bharat) covers FESS at empanelled hospitals for eligible patients"
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet does not directly cause or cure sinusitis — but specific dietary patterns significantly influence mucosal immunity, inflammatory responses, mucus viscosity, and overall susceptibility to sinonasal infections. The Indian diet offers many traditional foods with scientifically validated sinonasal benefits, making dietary advice both evidence-based and culturally relevant.",
+      "recommended_foods": [
+        {
+          "category": "Hydration — The Most Important Dietary Principle",
+          "items": [
+            {
+              "food": "Plain warm water — 8-10 glasses per day",
+              "benefit": "Adequate hydration is the single most important dietary factor in sinusitis management — water thins thick sinonasal mucus (reducing viscosity makes it easier for mucociliary clearance to function); prevents mucus impaction within sinus cavities; reduces the bacterial growth medium in thick secretions; most sinus patients are chronically dehydrated from mouth breathing and reluctance to drink when congested",
+              "frequency": "8-10 glasses daily; warm water is preferred (cold water increases mucus viscosity and may worsen congestion)"
+            },
+            {
+              "food": "Coconut water",
+              "benefit": "Excellent natural hydration; isotonic electrolyte composition; potassium and magnesium support mucosal immunity",
+              "frequency": "1-2 glasses daily"
+            }
+          ]
+        },
+        {
+          "category": "Indian Foods with Specific Anti-Sinusitis Properties",
+          "items": [
+            {
+              "food": "Turmeric (Haldi) with black pepper",
+              "benefit": "Curcumin: powerful anti-inflammatory inhibiting NF-κB (the master inflammatory switch — drives mucosal cytokine production); reduces eosinophilic inflammation relevant to CRSwNP; anti-bacterial and anti-fungal properties; inhibits biofilm formation (relevant to chronic bacterial sinusitis where biofilm is a major treatment resistance mechanism); anti-allergic (reduces histamine release from mast cells); piperine in black pepper increases curcumin bioavailability 20-fold",
+              "preparation": "Haldi doodh (golden milk — 1 tsp turmeric + pinch black pepper in warm milk); added to all cooking; turmeric steam inhalation (add 1 tsp turmeric to steam bowl) provides direct mucosal benefit",
+              "frequency": "Daily in cooking; golden milk at bedtime"
+            },
+            {
+              "food": "Ginger (Adrak) — fresh or dry",
+              "benefit": "Gingerols and shogaols: antihistamine (reduces histamine-induced nasal congestion); anti-inflammatory (COX-2 inhibition); mucolytic (thins mucus); antimicrobial; promotes sinonasal mucociliary clearance; fresh ginger tea provides steam benefit simultaneously",
+              "preparation": "Fresh ginger tea (1-inch ginger piece in boiling water; steep 10 minutes; add honey and lemon); add to cooking; ginger-turmeric kadha",
+              "frequency": "2-3 cups ginger tea daily during sinusitis; daily in maintenance"
+            },
+            {
+              "food": "Garlic (Lehsun) — raw crushed",
+              "benefit": "Allicin: potent antimicrobial against Streptococcus pneumoniae, H. influenzae, Staphylococcus (the primary sinusitis bacteria); anti-biofilm activity; direct antifungal activity (relevant for fungal sinusitis prevention); anti-inflammatory; immunostimulant; allicin is released by crushing or chopping garlic — cooking reduces allicin content significantly",
+              "preparation": "1-2 raw crushed garlic cloves daily (allow 10 minutes after crushing for allicin formation); add to kadha or eat with honey",
+              "frequency": "Daily; particularly during acute sinusitis"
+            },
+            {
+              "food": "Tulsi (Holy Basil) and Kadha",
+              "benefit": "Tulsi (Ocimum sanctum): eugenol and ursolic acid have anti-inflammatory, antimicrobial, and adaptogenic properties; reduces cortisol (stress worsens mucosal immunity); Kadha (Indian herbal decoction — tulsi + ginger + black pepper + clove + cinnamon + turmeric) widely used in India for colds and sinusitis; provides steam + anti-inflammatory + mucolytic benefits simultaneously; steam from the hot kadha provides direct sinonasal benefit",
+              "preparation": "Kadha: boil 10 tulsi leaves + 1-inch ginger + 5 black peppercorns + 2-3 cloves in 2 cups water for 10-15 minutes; strain; drink warm with honey",
+              "frequency": "2-3 times daily during acute sinusitis"
+            },
+            {
+              "food": "Honey — particularly raw Indian honey (Sidr honey, Manuka equivalent)",
+              "benefit": "Honey has demonstrated antimicrobial activity against multiple sinusitis pathogens including MRSA and Pseudomonas; inhibits bacterial biofilm formation (relevant in CRS — better than most antibiotics for biofilm disruption in lab studies); Manuka honey (New Zealand) and raw Indian honey have highest antibacterial activity; osmotic effect draws water from bacteria; anti-inflammatory; soothing for throat from post-nasal drip; Cochrane review: honey equivalent to dextromethorphan for cough from post-nasal drip in children over 1 year",
+              "preparation": "1-2 teaspoons raw honey in warm (not boiling) water with lemon; add to kadha; for nasal biofilm — honey nasal irrigation (specialised but used in some ENT protocols)",
+              "frequency": "Daily; particularly in acute sinusitis; do NOT give to children under 1 year (botulism risk)"
+            },
+            {
+              "food": "Amla (Indian Gooseberry) — Vitamin C",
+              "benefit": "Highest natural Vitamin C source; Vitamin C is essential for neutrophil function (the first-line defence against sinusitis bacteria); reduces severity and duration of viral rhinosinusitis (moderate evidence); antioxidant protecting sinonasal mucosal cells from oxidative damage by pollutants; immune-supportive; anti-allergic (reduces histamine levels)",
+              "preparation": "1-3 fresh amla daily; amla juice; amla powder in water; amla pickle (without too much salt)",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Mulethi (Licorice root) — DGL form",
+              "benefit": "Anti-inflammatory; antimicrobial against H. pylori and respiratory bacteria; mucolytic — reduces mucus viscosity (saponins thin respiratory secretions); antiviral (inhibits rhinovirus — the most common cold virus); immunostimulant; anti-allergic; demulcent (soothes irritated mucous membranes)",
+              "preparation": "Mulethi tea; add to kadha; DGL tablet (deglycyrrhizinated — removes glycyrrhizin which causes hypertension with prolonged use)",
+              "frequency": "During acute sinusitis; avoid prolonged high-dose whole licorice (hypertension risk)"
+            }
+          ]
+        },
+        {
+          "category": "Anti-Inflammatory Diet for CRS",
+          "rationale": "CRS is fundamentally an inflammatory disease — dietary patterns that reduce systemic and mucosal inflammation may reduce exacerbation frequency",
+          "items": [
+            {
+              "food": "Omega-3 rich foods (flaxseeds, walnuts, fatty fish)",
+              "benefit": "Omega-3 fatty acids (EPA, DHA) reduce pro-inflammatory cytokines (IL-4, IL-5, IL-13 — the Th2 drivers of CRSwNP); reduce eosinophil activation; compete with arachidonic acid reducing prostaglandin and leukotriene production; supplementation with fish oil (1-2 g EPA+DHA daily) may reduce CRS exacerbations",
+              "frequency": "2-3 servings oily fish per week; 1-2 tablespoons flaxseed daily; walnut handful daily"
+            },
+            {
+              "food": "Probiotics (dahi/curd, kefir)",
+              "benefit": "Gut-sinus microbiome axis — emerging research shows gut microbiome composition influences sinonasal immunity; Lactobacillus and Bifidobacterium supplementation may reduce the frequency of upper respiratory infections and allergic rhinosinusitis exacerbations; particularly important during and after antibiotic courses (which deplete protective gut microbiome)",
+              "frequency": "Daily probiotic food (1-2 bowls fresh curd); during and 4 weeks after antibiotic courses"
+            }
+          ]
+        }
+      ],
+      "foods_and_triggers_to_avoid": [
+        {
+          "food": "Dairy Products (Milk, Full-Fat Cheese) — Mucus-Thickening Belief vs Evidence",
+          "evidence": "The traditional belief that dairy thickens mucus is largely a MYTH — objective studies show dairy does not increase mucus production or viscosity; however, some individuals with dairy intolerance (casein sensitivity — not lactose intolerance) do experience increased mucus sensation with dairy; if a patient specifically notices worsening with dairy — advise avoidance trial (2-4 weeks dairy-free) to assess; do not universally restrict dairy without individual assessment",
+          "recommendation": "Individualised approach; low-fat dairy is generally fine; avoid full-fat dairy during acute infection"
+        },
+        {
+          "food": "Allergen Foods in Sensitised Individuals",
+          "reason": "Food allergies (particularly to nuts, shellfish, wheat, soy, milk) can trigger nasal symptoms through eosinophil activation in atopic individuals; while food allergy rarely causes isolated sinusitis, in allergic individuals with CRSwNP, food triggers can exacerbate symptoms",
+          "recommendation": "Identify and avoid specific food allergens through elimination diet and allergy testing in patients with CRS and atopy"
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Alcohol causes vasodilation of nasal mucosal blood vessels → nasal congestion (very common 'red wine headache' and nasal stuffiness from alcohol); dehydrates mucous membranes; impairs mucociliary clearance; alcohol contains histamine (particularly red wine) and sulphites (white wine, beer) — both can trigger allergic-type nasal reactions in sensitive individuals; alcohol significantly worsens AERD reactions",
+          "recommendation": "Avoid alcohol during acute sinusitis; ABSOLUTE avoidance in AERD (aspirin-exacerbated respiratory disease)"
+        },
+        {
+          "food": "Extremely Spicy and Irritating Foods During Acute Sinusitis",
+          "reason": "Very high amounts of capsaicin acutely stimulate nasal TRPV1 receptors causing sneezing, rhinorrhoea, and mucosal irritation — this can be beneficial (natural decongestant at low doses, acute mucus clearance) but may worsen symptoms acutely in inflamed mucosa",
+          "recommendation": "Moderate spice level is fine; very hot food may temporarily worsen acute pain; the 'spicy food clears sinuses' phenomenon is real (TRPV1 stimulation) but transient"
+        },
+        {
+          "food": "Ice Cold Beverages",
+          "reason": "Cold increases mucus viscosity; cold air (and cold food) causes mucosal vasoconstriction initially then reactive vasodilation (rebound congestion); impairs mucociliary function (cilia function best at body temperature); worsens nasal obstruction",
+          "recommendation": "Prefer warm or room temperature drinks; avoid ice water during acute sinusitis"
+        }
+      ],
+      "steam_inhalation": {
+        "description": "One of the most effective home interventions for acute rhinosinusitis — warm, moist air liquefies thick secretions, reduces mucosal oedema (vasodilation initially then decongestant effect from moist heat), improves mucociliary flow, and provides temporary relief of nasal congestion. The warm, humid environment is also weakly antimicrobial against some viruses (rhinovirus is unstable above 33°C).",
+        "technique": "Heat water to near-boiling; remove from heat; lean over bowl (maintaining safe 30 cm distance to prevent burn); drape towel over head and bowl; breathe slowly and deeply through nose; 10-15 minutes per session; 2-3 times daily",
+        "additions": "Add 1 tsp eucalyptus oil (1,8-cineole — proven mucolytic and anti-inflammatory; bronchodilator; used in sinus preparations globally); OR 1 tsp turmeric (anti-inflammatory); OR 1-2 drops peppermint oil (menthol — activates cold receptors giving sensation of clear nasal passage); OR crushed tulsi leaves",
+        "caution": "Burn risk — particularly in children; never use boiling water directly; supervise children carefully; do not add alcohol to steam",
+        "eucalyptus_evidence": "1,8-Cineole (eucalyptus) — multiple RCTs demonstrate efficacy for non-purulent rhinosinusitis; reduces nasal secretion production; improves mucociliary clearance; anti-inflammatory; available as Cineole capsules (Soledum) in some markets for internal use"
+      }
+    },
+
+    "lifestyle_management": {
+      "air_pollution_management": {
+        "overview": "Air pollution is the most important lifestyle and environmental factor for sinusitis in India — and one of the most difficult to mitigate given the extreme pollution levels in Indian cities. PM2.5 particles (the most damaging — <2.5 microns, penetrating deep into respiratory mucosa) directly damage nasal cilia, promote mucosal inflammation, and increase susceptibility to respiratory infections. The AQI (Air Quality Index) routinely exceeds 'very unhealthy' and 'hazardous' categories in Delhi NCR, Lucknow, Patna, and other North Indian cities during winter.",
+        "strategies": [
+          "INDOOR AIR QUALITY: HEPA air purifiers (High-Efficiency Particulate Air — captures ≥99.97% of PM2.5 particles); run continuously in bedroom and main living area; change filters per manufacturer schedule; seal windows and doors during high AQI days",
+          "OUTDOOR EXPOSURE: minimise outdoor activity on high AQI days (>150 AQI); check AQI before outdoor exercise using SAFAR-Air app (India-specific), AirVisual, or Delhi/state pollution board apps; time outdoor exercise in mornings when PM2.5 typically lower",
+          "N95 or KN95 MASK: certified respirators (not surgical masks — inadequate for PM2.5) for outdoor activity on high pollution days; fit testing important; replace as per manufacturer",
+          "INDOOR COOKING: STOP biomass fuel (wood, dung, crop waste) burning in chulha — PM2.5 from indoor combustion is 5-10× outdoor levels; transition to LPG or induction cooking (Ujjwala Yojana provides subsidised LPG connections); if transition not possible — improve ventilation and use chimney",
+          "VEHICLE EXHAUST: avoid exercising adjacent to major roads; petrol and diesel vehicles are major PM2.5 and nitrogen oxide sources; avoid main roads during high-traffic periods",
+          "NASAL PROTECTION: daily saline irrigation flushes inhaled particles and pollutants from nasal cavity before they trigger mucosal inflammation — 'nasal shower' after outdoor exposure on high-pollution days"
+        ]
+      },
+      "smoking_cessation": {
+        "reason": "Cigarette smoke causes: direct ciliotoxicity (paralysis and structural damage to nasal mucosal cilia — the 'nasal escalator' that clears bacteria and particles); increased mucus viscosity; epithelial damage promoting bacterial adhesion; immunosuppression; 2-3× higher risk of CRS; significantly impairs FESS outcomes (mucosal healing and recovery slower in smokers); passive smoke equally damaging to nasal mucosa",
+        "cessation_strategies": "Varenicline (most effective pharmacotherapy); NRT (patch + nicotine gum); cytisine (affordable effective alternative); behavioural support — iQUITnow app (India-specific smoking cessation support)"
+      },
+      "allergen_avoidance_for_allergic_rhinosinusitis": {
+        "house_dust_mite": "Encase mattresses, pillows, and duvets in dust-mite-proof covers (microfibre woven covers; zip-sealed); wash bedding weekly at ≥60°C; remove carpets (replace with hard floors — mites cannot survive without carpet fibres); reduce humidity below 50% (dehumidifier — mites die below 50% RH); acaricidal sprays (benzyl benzoate — limited evidence)",
+        "cockroach_allergen": "Very important in India; fix leaking pipes; seal food containers; boric acid powder in gaps (safe, effective); professional pest control; clean food spills immediately; remove cardboard (cockroach habitat)",
+        "mould_allergen": "Fix water leaks and damp areas immediately; bleach cleaning for visible mould; improve ventilation; dehumidifier in damp rooms; avoid houseplants (damp soil harbours moulds); check for mould behind walls and under carpets",
+        "pollen": "Monitor pollen counts (AirVisual, local meteorological data); keep windows closed during peak pollen season (spring, early summer); shower and change clothes after outdoor exposure; do not dry laundry outdoors on high-pollen days"
+      },
+      "sleep_positioning": {
+        "rationale": "Sinus drainage is gravity-dependent — sleeping flat or with low pillow allows mucus pooling in sinuses; elevating the head improves sinus drainage by gravity",
+        "recommendation": "Elevate head of bed or use a 30-45 degree wedge pillow; sleeping on the side with the MORE BLOCKED nostril UPPERMOST may relieve congestion on that side (gravity and vascular decongestion — the Proetz displacement effect); humidified air helps prevent drying of nasal mucosa during sleep"
+      },
+      "stress_management": {
+        "reason": "Psychological stress activates the HPA axis → cortisol → initially anti-inflammatory but then immune suppression with chronic stress → increased susceptibility to viral rhinosinusitis; stress increases mucosal vascular permeability (histamine-like effect); work-related stress is a common precipitant of sinusitis flares in urban India",
+        "strategies": "Pranayama (particularly Nadi Shodhana — alternate nostril breathing — has specific sinonasal airway benefits; improves nasal patency bilaterally; reduces mucosal congestion); yoga (Sarvangasana — inverted posture increases nasal drainage; Bhramari pranayama — humming vibrates sinus walls aiding drainage — 'buzzing bee' breath); meditation (reduces cortisol, improves NK cell activity)"
+      },
+      "exercise_and_physical_activity": {
+        "benefit": "Regular aerobic exercise temporarily decongest the nose (sympathetic activation causes nasal mucosal vasoconstriction during exercise — the 'exercise induced decongestion'); improves mucociliary clearance; reduces overall inflammatory cytokine levels; improves immune function",
+        "caution": "Exercise in high-pollution environments is counterproductive; choose indoor gyms on high AQI days; use filtered air during exercise; avoid outdoor exercise during acute sinusitis exacerbation (increases risk of spreading viral illness and temporarily worsens symptoms during activity)"
+      }
+    },
+
+    "sinusitis_monitoring_plan": {
+      "acute_viral": {
+        "green_zone": "Improving symptoms by day 5-7; no fever or resolving; nasal discharge becoming clearer; able to breathe easier; no alarm features → continue symptomatic treatment; expect full resolution by day 10-14",
+        "yellow_zone": "No improvement by day 10; or slight improvement then worsening (double worsening); low-grade fever persisting → GP assessment for ABRS; may need co-amoxiclav",
+        "red_zone": "Fever >38.5°C; severe facial pain; periorbital swelling; visual changes; altered consciousness → EMERGENCY hospital assessment"
+      },
+      "abrs_on_antibiotics": {
+        "expected_improvement": "Symptoms should improve within 48-72 hours of starting antibiotics; if no improvement — reassess diagnosis; consider middle meatal culture; switch antibiotic",
+        "red_flag_during_antibiotics": "Worsening despite 72 hours of antibiotics; periorbital symptoms developing; any neurological symptoms → CT scan immediately; ENT/neurosurgery review"
+      },
+      "crs_long_term": {
+        "routine_monitoring_every_3_to_6_months": "Symptom scores (SNOT-22 questionnaire); smell assessment (University of Pennsylvania Smell Identification Test — UPSIT, or simpler barrier odour identification); nasal endoscopy (Lund-Kennedy score); CT scan periodically (every 1-2 years if on active treatment); allergy testing update; asthma assessment (spirometry)",
+        "snot_22": "The Sino-Nasal Outcome Test-22 (SNOT-22) — a validated 22-item quality-of-life questionnaire for CRS; total score 0-110; >20 = significant quality of life impairment; used to assess treatment response and surgical outcomes",
+        "alarm_features_crs": "New unilateral symptoms or unilateral polyp (exclude tumour — request CT/MRI and ENT review); new proptosis; new neurological symptoms; raised CA 19-9 or unexplained weight loss (sinonasal tumours); any suspicion of malignancy → urgent ENT assessment and CT/MRI"
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Orbital Cellulitis and Subperiosteal Abscess",
+        "description": "The most common extrasinus complication — occurring from spread of ethmoid sinusitis through the thin lamina papyracea (paper-thin medial orbital wall) into the orbit. Chandler classification: Grade I (preseptal oedema — periorbital soft tissue swelling, no proptosis, no restricted eye movement — most benign); Grade II (orbital oedema — diffuse fat oedema within orbit); Grade III (subperiosteal abscess — pus collection between periorbita and orbital wall); Grade IV (orbital abscess — pus within orbital fat); Grade V (cavernous sinus thrombosis — bilateral disease, systemic sepsis). Grade I-II: IV antibiotics alone; Grade III+ typically requires surgical drainage.",
+        "severity": "Grade I-II: Moderate; Grade III-V: Severe to Life-threatening",
+        "management": "URGENT ENT and ophthalmology assessment (same day); CT sinuses and orbits with contrast (required for all suspected orbital complications); IV antibiotics (co-amoxiclav + metronidazole; or ceftriaxone + metronidazole for severe cases); Grade I-II: IV antibiotics alone with close monitoring; Grade III-V: FESS + orbital drainage; visual acuity monitoring every 4-6 hours"
+      },
+      {
+        "complication": "Cavernous Sinus Thrombosis (CST)",
+        "description": "Life-threatening septic thrombosis of the cavernous sinus — a venous sinus at the skull base receiving drainage from the face and orbit. Spread from sphenoid or ethmoid sinusitis via emissary veins. CLASSIC SIGNS: bilateral proptosis (cavernous sinus is crossed — bilateral orbital involvement is the hallmark); chemosis (conjunctival oedema); cranial nerve palsies (III — ptosis and ophthalmoplegia; IV — trochlear; VI — abducens; V1, V2 — facial numbness); headache; high fever with toxicity; altered consciousness. The only intracranial venous thrombosis with bilateral orbital signs — pathognomonic.",
+        "severity": "Life-threatening — mortality 20-30% even with treatment",
+        "management": "Emergency IV antibiotics (ceftriaxone 2g every 12h + metronidazole + nafcillin/vancomycin for S. aureus cover); anticoagulation (heparin) — controversial but generally recommended for septic CST; sphenoid/ethmoid sinus drainage (FESS or external sphenoidotomy); ICU; ophthalmology monitoring; MRI with gadolinium + MR venography for diagnosis"
+      },
+      {
+        "complication": "Meningitis from Sinusitis",
+        "description": "Bacterial meningitis arising from direct spread of sinusitis organisms through the skull base into the subarachnoid space — particularly from frontal (anterior fossa) or sphenoid sinusitis; also from ethmoid and maxillary via the cribriform plate (very thin bone). Presents with: severe headache; neck stiffness (Kernig's and Brudzinski's signs); photophobia; phonophobia; altered consciousness; high fever. Organisms: same as ABRS — S. pneumoniae most common; H. influenzae.",
+        "severity": "Life-threatening",
+        "management": "EMERGENCY IV ceftriaxone (or penicillin G) + dexamethasone (reduces cerebral oedema and improves meningitis outcomes — give BEFORE or with first antibiotic dose); LP (lumbar puncture) after CT scan; neurosurgery for sinus drainage; ICU"
+      },
+      {
+        "complication": "Frontal Bone Osteomyelitis — Pott's Puffy Tumour",
+        "description": "Osteomyelitis of the frontal bone from direct spread of frontal sinusitis — causing a characteristic doughy, non-tender, fluctuant swelling of the forehead overlying the frontal sinus. Named after Sir Percivall Pott (18th century). The swelling represents subperiosteal abscess anterior to the infected frontal bone. Often associated with intracranial extension (epidural or subdural empyema — the most common concurrent intracranial complication). Predominantly in adolescent males (the frontal sinuses complete development in adolescence).",
+        "severity": "Severe — high risk of intracranial extension",
+        "management": "URGENT MRI (excludes concurrent intracranial pathology); FESS + external frontal sinus drainage; neurosurgical drainage of any intracranial collection; IV antibiotics ×6 weeks (bone infection requires prolonged treatment)"
+      },
+      {
+        "complication": "Subdural Empyema and Brain Abscess",
+        "description": "Collection of pus in the subdural space (between dura and arachnoid) or within the brain parenchyma — from direct spread of frontal or ethmoid sinusitis through the anterior cranial fossa. Subdural empyema: extremely serious — rapidly progressive; altered consciousness; focal neurological deficits; seizures; mortality 10-20% even with treatment. Brain abscess: slower progression; presents as mass lesion with raised intracranial pressure, focal deficits, seizures.",
+        "severity": "Life-threatening",
+        "management": "NEUROSURGICAL EMERGENCY; CT/MRI with contrast; burr hole or craniotomy drainage of empyema/abscess; FESS for sinusitis source control; IV antibiotics ×4-6 weeks; anticonvulsants; ICU"
+      },
+      {
+        "complication": "Mucocele",
+        "description": "A slowly expanding mucus-filled cyst lined by respiratory epithelium — forming within a sinus when the ostium is completely obstructed (by polyps, scarring, or previous surgery); progressively enlarges over months to years; erodes adjacent bone through pressure; most commonly involves frontal sinus; may compress orbit causing proptosis and diplopia or intracranially. Presents as slowly progressive facial deformity, proptosis, or nasal obstruction.",
+        "severity": "Moderate — slowly progressive but can cause significant complications",
+        "management": "FESS marsupialisation (widely opening the mucocele into the nasal cavity to re-establish drainage) — curative without the need for complete excision; prevents recurrence in most cases"
+      },
+      {
+        "complication": "Rhinitis Medicamentosa — Rebound Congestion from Decongestants",
+        "description": "Paradoxical worsening of nasal congestion from prolonged use of topical alpha-adrenergic decongestants (oxymetazoline, xylometazoline, xylometazoline) beyond 5 days — developing chronic nasal congestion worse than the original sinusitis. The nasal mucosa becomes dependent on the vasoconstrictor to maintain any patency. One of the most common iatrogenic nasal conditions in India — many patients self-medicate with Nasivion or Otrivin for weeks to months.",
+        "severity": "Moderate — significantly reduces quality of life; difficult to treat",
+        "management": "Gradual withdrawal of the decongestant (abrupt cessation causes extreme congestion); INCS (mometasone/fluticasone) initiated concurrently to replace decongestant function; oral prednisolone short course for severe cases; saline irrigation; patience (mucosa recovers over 4-6 weeks)"
+      },
+      {
+        "complication": "Anosmia — Permanent Loss of Smell",
+        "description": "Olfactory nerve dysfunction from chronic sinonasal inflammation — the most quality-of-life-impairing long-term complication of CRSwNP. In early-moderate CRSwNP: anosmia is conductive (mechanical obstruction by polyps) — reversible with INCS, steroids, or FESS. In long-standing disease: sensorineural anosmia from irreversible olfactory receptor neuron damage — partially or fully permanent despite treatment. COVID-19 anosmia: distinct mechanism — direct sensorineural; may persist as 'long COVID' anosmia.",
+        "severity": "Moderate — significantly impairs quality of life and safety",
+        "management": "Early INCS and treat CRSwNP (prevents progression to sensorineural); FESS; oral prednisolone course (if conductive — will improve dramatically); OLFACTORY TRAINING: daily deliberate sniffing of strong familiar odours (rose, lemon, cloves, eucalyptus) for 20 seconds each, twice daily × 3-6 months — shown to improve olfaction in post-viral and post-FESS anosmia; parosmia management (distorted smell — common in recovery phase)"
+      }
+    ],
+
+    "special_populations": {
+      "sinusitis_in_children": {
+        "key_points": [
+          "Children have more upper respiratory infections than adults (6-8 per year under age 5) — more opportunities for bacterial superinfection; but ABRS in children is still uncommon (2-4% of colds become ABRS)",
+          "Symptoms in children may differ from adults: cough (particularly nocturnal) is often the dominant symptom; nasal discharge; decreased appetite; mouth breathing; snoring; school performance decline",
+          "Clinical diagnosis criteria for ABRS in children (AAP guidelines): persistent symptoms >10 days without improvement; OR severe onset (fever ≥39°C + purulent discharge for ≥3 consecutive days); OR double worsening pattern",
+          "Adenoid hypertrophy is very important in children — large adenoids obstruct the nasopharynx and Eustachian tubes; recurrent sinusitis in a child = always assess adenoid size (lateral neck X-ray or nasendoscopy); adenoidectomy significantly reduces recurrent sinusitis frequency in children with adenoid hypertrophy",
+          "First-line antibiotic for ABRS in children: amoxicillin-clavulanate 45 mg/kg/day amoxicillin component × 10 days; for children with severe allergy: levofloxacin",
+          "AVOID in children: aspirin (Reye's syndrome risk); first-generation antihistamines (sedation; worsen nasal secretion thickening); intranasal decongestants under 2 years (cardiovascular side effects); montelukast neuropsychiatric monitoring needed",
+          "NASAL SALINE IRRIGATION: safe and beneficial in children from infancy (use gentle spray or NeilMed paediatric kit); important for allergy-driven sinusitis in school-age children with house dust mite sensitisation"
+        ]
+      },
+      "sinusitis_in_pregnancy": {
+        "key_points": [
+          "Pregnancy rhinitis — nasal congestion from oestrogen and progesterone-induced mucosal engorgement — affects 20-30% of pregnant women; peaks in 2nd trimester; resolves within 2 weeks postpartum; treat with saline irrigation and AVOIDANCE of systemic decongestants",
+          "SAFE IN PREGNANCY: saline nasal irrigation (safest, most effective); steam inhalation; paracetamol for pain; budesonide nasal spray (Category B — most safety data); beclomethasone nasal spray; mometasone (limited data but widely used)",
+          "AVOID IN PREGNANCY: systemic decongestants (pseudoephedrine, phenylephrine) — first trimester vasoconstriction concerns; intranasal oxymetazoline/xylometazoline — use only sparingly and for maximum 3 days if essential; fluoroquinolone antibiotics; tetracyclines",
+          "ABRS in pregnancy: first-line antibiotic — amoxicillin (plain, not co-amoxiclav in first trimester if possible); co-amoxiclav acceptable in 2nd and 3rd trimesters; cephalosporins (cefalexin, cefuroxime) are safe alternative",
+          "Invasive fungal sinusitis in pregnancy: liposomal amphotericin B is the antifungal of choice (limited fetal toxicity data but used when life-threatening — benefit clearly outweighs risk); voriconazole is TERATOGENIC — avoid"
+        ]
+      },
+      "sinusitis_in_immunocompromised": {
+        "key_points": [
+          "ANY new or changing sinonasal symptom in an immunocompromised patient (HIV CD4 <200, neutropenia, transplant, chemotherapy) requires urgent assessment — invasive fungal sinusitis can progress in hours",
+          "Invasive fungal sinusitis is almost exclusively a disease of immunocompromised patients and uncontrolled diabetics; any black or dark tissue in the nose or palate + fever in such a patient = EMERGENCY CT + urgent antifungal and surgical management",
+          "Organisms in immunocompromised sinusitis: Mucorales; Aspergillus; Fusarium; Candida (rare for sinusitis); CMV; atypical mycobacteria; Pseudomonas",
+          "HIV and sinusitis: recurrent bacterial sinusitis (particularly H. influenzae) is a CDC-defined AIDS-related condition; CRS is very common at all CD4 levels; S. pneumoniae vaccination reduces sinopulmonary infections; INCS safe in HIV sinusitis",
+          "Post-COVID mucormycosis: all patients hospitalised for COVID-19 who received corticosteroids should have blood glucose monitored and controlled meticulously; any new facial pain, proptosis, black tissue, or vision change post-COVID → urgent mucormycosis workup"
+        ]
+      },
+      "sinusitis_in_india_air_pollution": {
+        "key_points": [
+          "Delhi NCR, Lucknow, Kanpur, Patna, Dhanbad regularly rank among the world's most polluted cities; winter AQI exceeding 500 ('hazardous') is common from October to February",
+          "Chronic pollution exposure increases CRS risk 2-3× in exposed populations; mucociliary transport time is significantly prolonged in residents of high-pollution cities; direct ciliotoxicity from PM2.5, ozone, and nitrogen dioxide",
+          "HEPA air purifiers in bedrooms are the single most important household intervention for sinusitis in polluted Indian cities — multiple studies show indoor PM2.5 reduced by 80-90% with HEPA purifiers",
+          "SAFAR-Air (System of Air Quality and Weather Forecasting and Research) app — India-specific; real-time AQI for Delhi, Mumbai, Pune, Ahmedabad; recommend patients check before outdoor exercise",
+          "Nasal saline irrigation after outdoor pollution exposure is increasingly recommended by Indian ENT specialists — mechanically removes particulate matter before mucosal inflammation is triggered"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Annually; ideally September-October in India (before winter respiratory season)",
+        "reason": "Influenza virus directly causes viral rhinosinusitis and is the most important precipitant of secondary bacterial sinusitis (ABRS) — viral-induced mucosal oedema obstructs ostia allowing bacterial superinfection. Annual influenza vaccination: reduces influenza-related acute sinusitis episodes; reduces ABRS incidence following influenza; particularly important in patients with CRS (already impaired mucociliary clearance — influenza is especially damaging); reduces sinusitis-related antibiotic use. The quadrivalent inactivated influenza vaccine (IIV4) covers the two most important influenza A subtypes (H1N1, H3N2) and two influenza B lineages.",
+        "recommendation": "All patients with CRS; patients with allergic rhinosinusitis; all patients with asthma; healthcare workers; elderly; children 6 months to 5 years; annual administration"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV13 and PPSV23)",
+        "frequency": "PCV13 (Prevenar 13): single dose for adults >50 or immunocompromised; PPSV23: single dose with booster at 5 years for high-risk",
+        "reason": "Streptococcus pneumoniae is the most common bacterial cause of ABRS and the organism most associated with serious sinus complications (meningitis, orbital abscess). Pneumococcal vaccination significantly reduces: pneumococcal ABRS incidence; pneumococcal meningitis from sinus extension; acute otitis media (shares aetiology with sinusitis in children). In children: PCV13 (Synflorix 10-valent or Prevenar 13) is part of India's Universal Immunisation Programme in several states — reduces childhood sinopulmonary bacterial infections significantly.",
+        "india_note": "PPSV23 and PCV13 available at government and private vaccination centres; cost approximately Rs 1,500-3,500; recommended by IAP for all children; NIS (National Immunisation Schedule) inclusion in some states",
+        "recommendation": "All children per immunisation schedule; all adults >65 years; immunocompromised patients; CRS patients with frequent bacterial exacerbations"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "reason": "COVID-19 directly causes acute viral rhinosinusitis (30-40% of COVID-19 patients have sinonasal symptoms including anosmia); COVID-19-associated mucormycosis (CAM) — the catastrophic Indian epidemic of 2021 — was driven by COVID-19 infection combined with corticosteroid treatment in diabetics and other immunocompromised patients; COVID-19 vaccination reduces disease severity, the need for corticosteroids, and the immunosuppressive state that predisposes to mucormycosis",
+        "recommendation": "Follow national COVID-19 vaccination schedule; complete primary series and booster doses; particularly important for diabetics (highest mucormycosis risk group)"
+      },
+      {
+        "vaccine": "Haemophilus influenzae type b (Hib) Vaccine",
+        "frequency": "3-dose series in infancy (at 6, 10, 14 weeks per India UIP schedule) + booster",
+        "reason": "H. influenzae type b causes invasive bacterial sinusitis and meningitis in children; while non-typeable H. influenzae (NTHi) is more common in adult ABRS, Hib vaccination significantly reduces Hib sinopulmonary disease in children; Hib vaccine included in India's Universal Immunisation Programme (Pentavalent vaccine containing Hib antigen at 6, 10, 14 weeks + booster at 16-24 months)",
+        "recommendation": "Universal childhood immunisation per UIP schedule"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Nasal symptoms NOT IMPROVING after 10 days — suggests possible bacterial sinusitis requiring assessment; do not 'wait out' a cold beyond 10 days without review",
+      "Symptoms initially improving then worsening again (double worsening pattern) — the most specific sign of bacterial superinfection requiring antibiotic assessment",
+      "Fever >38.5°C with facial pain and nasal discharge persisting >3 consecutive days — ABRS criteria; GP review same day or next day",
+      "Periorbital swelling, redness, or puffiness around the eyes — URGENT SAME-DAY assessment for orbital cellulitis; do not wait",
+      "Reduced vision or double vision — EMERGENCY assessment for orbital complications",
+      "Severe headache with neck stiffness or photophobia — EMERGENCY for meningitis",
+      "Any black, dark, or necrotic tissue inside the nose or on the palate — particularly in diabetic or immunocompromised patients — EMERGENCY for mucormycosis",
+      "Complete or severe loss of smell in both nostrils — confirm CRSwNP diagnosis; ENT referral for nasal endoscopy and CT scan",
+      "Recurrent sinusitis more than 4 times per year — needs further investigation for anatomical abnormalities, immune deficiency, allergy, or cystic fibrosis; ENT referral",
+      "Unilateral nasal symptoms only (one-sided nasal obstruction, discharge, or polyp) — exclude sinonasal tumour (maxillary sinus carcinoma, inverting papilloma, olfactory neuroblastoma); CT/MRI and ENT referral urgent",
+      "Child with unilateral foul-smelling nasal discharge — rule out nasal foreign body; same-day ENT assessment (foreign bodies can remain undetected for months)",
+      "No improvement after completing a full course of antibiotics for ABRS — requires middle meatal culture, CT scan, and ENT specialist review",
+      "Long-term nasal decongestant use (oxymetazoline/xylometazoline more than 5 days) — rhinitis medicamentosa; GP or ENT to guide safe withdrawal"
+    ],
+
+    "emergency_signs": [
+      "Periorbital swelling AND reduced or lost VISION — orbital abscess compressing optic nerve — SURGICAL EMERGENCY; call 102/112; time-critical (vision loss may be permanent within hours)",
+      "PROPTOSIS (bulging eye) WITH HIGH FEVER — orbital or cavernous sinus complication — CALL 102/112; emergency ENT and ophthalmology",
+      "BILATERAL PROPTOSIS with fever, chemosis, and eye movement limitation — CAVERNOUS SINUS THROMBOSIS — life-threatening; CALL 102/112 immediately; ICU and IV antibiotics + anticoagulation",
+      "SEVERE HEADACHE + NECK STIFFNESS + HIGH FEVER + PHOTOPHOBIA — BACTERIAL MENINGITIS from sinusitis — CALL 102/112; IV ceftriaxone + dexamethasone immediately",
+      "CONFUSION, ALTERED CONSCIOUSNESS, or SEIZURES in a patient with sinusitis — intracranial complication; CALL 102/112",
+      "BLACK, DARK, OR NECROTIC TISSUE inside the nasal cavity or on the palate in a diabetic or immunocompromised patient — INVASIVE MUCORMYCOSIS — CALL 102/112; emergency ENT + IV liposomal amphotericin B; surgical debridement planned within 24 hours",
+      "FOREHEAD SWELLING (doughy, non-tender) with frontal sinusitis — POTT'S PUFFY TUMOUR (frontal bone osteomyelitis) — urgent hospital admission; MRI; IV antibiotics; ENT + neurosurgery",
+      "Any acute facial or visual deterioration in a sinusitis patient within 24-48 hours of starting antibiotics — inadequate source control or unusual organism; EMERGENCY ENT review; CT scan",
+      "HIGH FEVER WITH TOXICITY in an immunocompromised patient with any nasal symptom — invasive fungal sinusitis until proven otherwise; EMERGENCY"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "My nasal discharge has turned yellow-green — does this mean I have a bacterial infection and need antibiotics?",
+        "answer": "No — this is one of the most common medical misconceptions leading to unnecessary antibiotic prescribing. Yellow or green nasal discharge is perfectly NORMAL during a viral cold — it occurs 3-5 days into the illness and does NOT indicate a bacterial infection. The colour comes from the breakdown of neutrophils (white blood cells fighting the virus) — the enzyme myeloperoxidase in these cells produces the yellow-green colour. This colour change is actually a sign that your immune system is working and fighting the virus. Bacterial sinusitis is diagnosed based on the DURATION and PATTERN of symptoms, NOT the colour: if symptoms simply don't improve at all after 10 days; OR if you had a typical cold improving and then suddenly got worse again (double worsening); OR if you have a high fever (>38.5°C) + severe one-sided facial pain + purulent discharge together for more than 3 days — then bacterial sinusitis may be present and antibiotics appropriate. For a typical cold with yellow-green discharge that started 3-5 days ago and is gradually improving — antibiotics are not needed and would not help."
+      },
+      {
+        "question": "What is Jal Neti (saline nasal irrigation) and does it actually help?",
+        "answer": "Jal Neti — nasal water cleansing using a neti pot — is a traditional yogic practice from India that has been used for centuries for nasal hygiene and respiratory health. It involves pouring warm saline water into one nostril so it flows out the other, washing out the nasal cavity. Modern scientific evidence strongly supports this practice: Cochrane systematic reviews show nasal saline irrigation significantly reduces sinusitis symptoms, reduces the duration of colds, reduces reliance on decongestants and antibiotics, and improves quality of life in CRS. The benefits: mechanically clears mucus, crusts, and bacterial biofilm; removes allergens and pollutants (particularly valuable in Indian cities with high air pollution); improves mucociliary clearance; reduces mucosal oedema; moisturises dry nasal mucosa. CRITICAL SAFETY RULE: ALWAYS use boiled and cooled water OR distilled water — NEVER use tap water directly in India for nasal irrigation; some waterborne amoebae (Naegleria fowleri) can be fatal if introduced into the nasal cavity via tap water. Dissolve a commercially available ORS or saline sachet in exactly 240 mL of safe water for correct concentration. Use twice daily for best results — morning and evening."
+      },
+      {
+        "question": "What is the difference between CRS with and without nasal polyps, and why does it matter?",
+        "answer": "Chronic rhinosinusitis (CRS) lasting more than 12 weeks comes in two biologically distinct forms. CRS WITHOUT nasal polyps (CRSsNP) involves diffuse mucosal thickening from a mixture of inflammatory cells — primarily neutrophils; often related to repeated infections, allergies, or anatomical obstruction; responds well to nasal saline irrigation, INCS (steroid nasal spray), and treatment of allergic rhinitis. CRS WITH nasal polyps (CRSwNP) involves grape-like tissue growths arising from the ethmoid sinuses — driven by eosinophilic (allergic-type) inflammation rich in IL-4, IL-5, and IL-13 cytokines. Why does the distinction matter? Treatment is different: CRSwNP requires higher doses of INCS; often needs short courses of oral prednisolone ('medical polypectomy'); surgery (FESS with polypectomy) is more frequently required; and when very severe, new biologic treatments (dupilumab injections) targeting the specific inflammation pathway can dramatically shrink polyps and restore smell. CRSwNP is associated with asthma in 20-40% of cases; and 10-15% have aspirin sensitivity (AERD). The most distinctive and distressing symptom of CRSwNP is profound loss of smell — often complete anosmia — because polyps physically block the olfactory cleft."
+      },
+      {
+        "question": "What is mucormycosis ('black fungus') and what caused its outbreak in India in 2021?",
+        "answer": "Mucormycosis (historically called 'black fungus' for the black necrotic tissue it causes) is a rare but extremely dangerous fungal infection caused by a group of moulds called Mucorales (primarily Rhizopus and Mucor species). These fungi are found everywhere in the environment — in soil, decaying organic matter, and compost. In healthy people with intact immunity, they cause no harm — our white blood cells easily destroy them. The problem arises in people with severely weakened immunity. In India's devastating COVID-19 second wave (April-June 2021), a perfect storm of risk factors created the world's largest mucormycosis epidemic: COVID-19 itself weakens immunity; millions of patients were given high-dose corticosteroids (dexamethasone) to treat COVID-19 lung inflammation — this further suppresses the immune system; India has one of the world's highest rates of uncontrolled diabetes — diabetics with DKA (diabetic ketoacidosis) are particularly vulnerable because the acidic, high-glucose environment is ideal for Mucorales growth; the fungi enters through the nose and sinuses, then invades blood vessels causing tissue death — the characteristic 'black' necrotic tissue. Early warning signs: facial pain, nasal blockage, blood-stained discharge, black tissue in nose or on palate, proptosis, vision change. Treatment requires emergency IV antifungal (liposomal amphotericin B) AND aggressive surgical removal of all infected tissue. India has now made mucormycosis a notifiable disease and hospitals have improved early detection protocols."
+      },
+      {
+        "question": "My nasal decongestant spray (Nasivion) has stopped working and now I need it just to breathe. How do I stop?",
+        "answer": "You have developed Rhinitis Medicamentosa — rebound congestion from using nasal decongestant sprays (containing oxymetazoline or xylometazoline) beyond the recommended 3-5 days. This is one of the most common problems in Indian ENT practice — many people use Nasivion, Otrivin, or similar sprays for weeks or months, becoming completely dependent on them to breathe. What happened: the decongestant works by constricting nasal blood vessels; when it wears off, the vessels dilate more than before (rebound) causing worse congestion; you use more spray to relieve this; the cycle worsens. How to stop: You cannot just abruptly stop (the congestion will be extreme for days). The recommended approach: Start a prescription nasal steroid spray (mometasone or fluticasone) now — this will gradually reduce the mucosal inflammation and allow the blood vessels to normalise; continue the steroid spray daily; reduce your decongestant spray use gradually — use it in only ONE nostril for 1 week, then try skipping one daily dose per week, then stop entirely; some doctors prescribe a short 5-day course of oral prednisolone to help. Full recovery takes 4-6 weeks. After recovery: nasal steroid sprays (INCS) are safe for long-term daily use — unlike decongestants. Never use oxymetazoline or xylometazoline for more than 3-5 consecutive days again."
+      },
+      {
+        "question": "I have lost my sense of smell with my sinus problems. Will it come back?",
+        "answer": "Loss of smell (anosmia) in sinusitis has two mechanisms — and the prognosis differs between them. CONDUCTIVE anosmia: polyps or severe mucosal swelling physically blocks the olfactory cleft — preventing smell molecules from reaching your smell nerve endings in the roof of the nasal cavity. This is reversible — treat the inflammation (INCS, oral prednisolone, or surgery for polyps) and smell dramatically improves. A quick test: if smell returns even temporarily when you use a decongestant spray or take prednisolone tablets, your anosmia is conductive and potentially reversible. SENSORINEURAL anosmia: long-standing inflammation has damaged the actual olfactory nerve fibres — this is partially or fully permanent. Even successful FESS may not fully restore smell in long-standing CRSwNP. OLFACTORY TRAINING: a evidence-based technique for recovering anosmia — twice daily, deliberately sniff each of 4 strong familiar odours (rose, lemon, cloves, eucalyptus) for 20 seconds each; do this for 3-6 months; brain neuroplasticity allows partial re-sensitisation of olfactory pathways. This has evidence for improving post-viral (COVID-19) and post-surgical anosmia. Start olfactory training as soon as possible after FESS or when anosmia is recognised — earlier is better. COVID-19 anosmia is different — it's a direct nerve injury, not conductive; most people recover within 3-6 months, but 10-15% have persistent parosmia (distorted smell) or anosmia for over a year."
+      }
+    ]
+  }
+}

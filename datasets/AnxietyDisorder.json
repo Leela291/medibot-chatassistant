@@ -1,0 +1,918 @@
+{
+  "disease": {
+    "id": "DIS-036",
+    "name": "Anxiety Disorders",
+    "scientific_name": "Anxiety Disorders / Generalised Anxiety Disorder (GAD) / Panic Disorder / Social Anxiety Disorder / Specific Phobia / Agoraphobia / Separation Anxiety Disorder",
+    "icd_10_code": "F41.1 (Generalised Anxiety Disorder — GAD); F41.0 (Panic Disorder without agoraphobia); F40.01 (Panic Disorder with agoraphobia); F40.10 (Social phobia, unspecified); F40.2 (Specific phobias); F40.00 (Agoraphobia without panic disorder); F40.01 (Agoraphobia with panic disorder); F93.0 (Separation anxiety disorder of childhood); F41.8 (Other specified anxiety disorders — mixed anxiety and depressive disorder); F41.9 (Anxiety disorder, unspecified); ICD-11: 6B00 Generalised Anxiety Disorder; 6B01 Panic Disorder; 6B02 Agoraphobia; 6B03 Specific Phobia; 6B04 Social Anxiety Disorder",
+    "category": "Psychiatry / Psychology / Mental Health / Neuroscience",
+    "overview": {
+      "description": "Anxiety disorders are a family of related but distinct mental health conditions characterised by excessive, persistent, and often disabling fear, worry, and apprehension — disproportionate to the actual threat presented — accompanied by physical symptoms (palpitations, trembling, sweating, breathlessness, nausea, dizziness) and behavioural changes (particularly AVOIDANCE of anxiety-provoking situations). Anxiety disorders are the most prevalent mental health conditions in the world, affecting an estimated 264 million people globally (WHO 2019) — and the most prevalent of all psychiatric diagnoses in India, where they affect an estimated 45-50 million people. A critical conceptual distinction: NORMAL ANXIETY is a universal and functional human emotion — an adaptive evolutionary response (the 'fight-or-flight' response) that prepares the body to face or flee threats, sharpens focus during examinations or important events, and motivates action; PATHOLOGICAL ANXIETY (anxiety disorder) occurs when this response becomes: disproportionate to the actual threat; persistent without resolution; uncontrollable despite recognising it is excessive; and impairing — significantly disrupting the person's ability to work, study, maintain relationships, or enjoy daily life. Anxiety disorders are distinguished from normal anxiety by DURATION (weeks to months not minutes), INTENSITY (severe, distressing, not proportionate to the situation), PERVASIVENESS (multiple life domains affected), and FUNCTIONAL IMPAIRMENT (work, relationships, physical health significantly disrupted). India faces a distinctive anxiety landscape shaped by factors unique to Indian society: extraordinary academic pressure from highly competitive examinations (JEE, NEET, UPSC, CA Foundation — where the gap between the number of aspirants and available seats creates near-universal examination anxiety among young people); a rapidly changing social fabric where traditional joint family structures are breaking down while new social stressors (social media comparison, urban migration, economic insecurity) are rising; massive cultural stigma against mental illness that drives somatisation (presenting physical symptoms to cardiologists and neurologists rather than seeking psychiatric help — 'my heart is beating fast' rather than 'I am having a panic attack'); a catastrophic shortage of mental health professionals (India has approximately 9,000 psychiatrists and 2,000 clinical psychologists for 1.4 billion people — less than 1 per 100,000 population vs the WHO recommendation of 3 per 100,000); and the widespread inappropriate prescription and self-medication with benzodiazepines (particularly alprazolam — one of the most prescribed drugs in India, often given by general physicians as a 'quick fix' without proper psychiatric evaluation or evidence-based psychotherapy, creating a silent epidemic of benzodiazepine dependence). Anxiety disorders are highly treatable — with first-line evidence-based treatments including specific psychotherapies (Cognitive Behavioural Therapy — CBT, the gold standard), pharmacotherapy (SSRIs/SNRIs as first-line), and lifestyle interventions (exercise, yoga, mindfulness) achieving 60-80% response rates. The tragedy in India is not the lack of effective treatments but the enormous treatment gap: only 10-12% of Indians with anxiety disorders ever receive any form of treatment.",
+      "affected_organ": "Brain (amygdala — fear centre; prefrontal cortex — executive control and threat appraisal; hippocampus — memory and contextualisation; hypothalamus — HPA axis activation; locus coeruleus — norepinephrine release); Autonomic nervous system (sympathetic activation — fight-or-flight); HPA axis (hypothalamus-pituitary-adrenal — chronic cortisol dysregulation); Cardiovascular system (tachycardia, palpitations); Respiratory system (hyperventilation); Gastrointestinal system (nausea, diarrhoea, IBS); Musculoskeletal system (tension, tremor); Sleep architecture (insomnia from hyperarousal)",
+      "neurobiology": {
+        "amygdala": "The fear-processing centre of the brain — detects threats and triggers the fear response; in anxiety disorders, the amygdala is hyperactive and hyperreactive — it generates an alarm response even to relatively non-threatening stimuli; the amygdala communicates with the hypothalamus (triggering physical symptoms) and the prefrontal cortex (which normally provides 'top-down' regulation of fear but is dysfunctional in anxiety disorders)",
+        "prefrontal_cortex": "The rational 'reasoning' part of the brain — normally regulates amygdala activity (telling it 'this is not actually dangerous'); in anxiety disorders, the prefrontal cortex underactivation means the amygdala is 'unregulated', generating persistent fear responses without the normal cognitive override; CBT works by training the prefrontal cortex to better regulate amygdala responses",
+        "hpa_axis": "Chronic anxiety activates the Hypothalamus-Pituitary-Adrenal axis → sustained cortisol release → impairs immune function; damages hippocampal neurons (memory and contextualisation); worsens cardiovascular risk; perpetuates the anxiety cycle (cortisol itself increases anxiety sensitivity)",
+        "neurotransmitters": {
+          "serotonin": "Reduced serotonergic tone in anxiety circuits; SSRIs (sertraline, escitalopram) work by increasing synaptic serotonin availability in amygdala and prefrontal circuits — the basis for their anxiolytic efficacy",
+          "gaba": "GABA (gamma-aminobutyric acid) is the primary inhibitory neurotransmitter in the brain — reduced GABAergic tone in anxiety; benzodiazepines work by potentiating GABA-A receptor activity, producing rapid anxiolysis; buspirone works on 5-HT1A receptors reducing amygdala activity",
+          "norepinephrine": "Locus coeruleus hyperactivity → norepinephrine surge → physical anxiety symptoms (tachycardia, sweating, tremor); SNRIs (venlafaxine, duloxetine) reduce both serotonergic and noradrenergic dysfunction in anxiety",
+          "glutamate": "Emerging role of glutamatergic hyperactivity in anxiety circuits; ketamine and mGluR modulators are experimental targets"
+        }
+      },
+      "prevalence": "Global: approximately 264 million people (WHO 2019); 12-month prevalence 4.0%; lifetime prevalence 7.3%; most common mental health condition worldwide; India: 4-6% lifetime prevalence; estimated 40-50 million affected; female to male ratio 2:1; NIMHANS National Mental Health Survey (2016): 3.4% of Indian adults have anxiety disorders requiring treatment; only 10-12% ever seek or receive treatment; COVID-19 dramatically increased anxiety prevalence — post-COVID surveys show 15-25% of Indians reporting anxiety symptoms",
+      "age_group": "All ages; most anxiety disorders begin in childhood or young adulthood (Social Anxiety Disorder median onset 13 years; Specific Phobias 7-11 years; GAD 30s; Panic Disorder late teens to 30s); often goes unrecognised and untreated for years to decades in India",
+      "gender": "Overall 2:1 female predominance; social anxiety disorder approximately equal; substance-related anxiety presentations more common in males",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_curable_note": "Anxiety disorders are highly treatable — 60-80% of patients achieve significant symptom reduction with appropriate treatment (CBT, SSRIs/SNRIs, or both); many achieve full remission; treatment is not about 'curing' anxiety entirely (some anxiety is normal and protective) but about restoring proportionate, controllable anxiety that does not significantly impair daily life; some patients require long-term management particularly for GAD and panic disorder",
+      "is_manageable": true,
+      "is_preventable": true,
+      "key_fact": "Anxiety disorders are the most common mental health conditions in India — yet fewer than 1 in 10 affected people receive any form of treatment. The combination of massive cultural stigma, acute shortage of mental health professionals, widespread benzodiazepine dependence (prescribed by non-specialist physicians as a quick fix), and somatisation (seeking cardiac and GI care for physical symptoms of anxiety) creates a perfect storm of undertreatment. Cognitive Behavioural Therapy (CBT) is the gold standard treatment — as effective as medication, with longer-lasting benefits — but is severely under-available in India. Regular aerobic exercise and yoga are scientifically proven to reduce anxiety and should be prescribed alongside other treatments."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Generalised Anxiety Disorder (GAD)",
+        "description": "The most common anxiety disorder — characterised by persistent, excessive, and uncontrollable worry about multiple everyday topics (work performance, health, family, finances, minor daily matters) for at least 6 months, accompanied by physical and psychological tension symptoms. The person recognises the worry is excessive and difficult to control but cannot stop it. GAD is sometimes called 'the worrying disease' — the hallmark is GENERALISED worry about multiple things simultaneously, unlike other anxiety disorders that have specific focus (panic attacks in Panic Disorder; social situations in Social Anxiety Disorder).",
+        "dsm5_criteria": "A: Excessive anxiety and worry about multiple events/activities, most days for ≥6 months; B: Difficulty controlling the worry; C: ≥3 of: restlessness/feeling on edge; easily fatigued; difficulty concentrating; irritability; muscle tension; sleep disturbance; D: Clinically significant distress or functional impairment; E: Not due to substances or medical conditions; F: Not better explained by another mental disorder",
+        "clinical_features": [
+          "EXCESSIVE UNCONTROLLABLE WORRY — worrying 'all the time' about multiple things; jumping from one worry to another; worst-case scenario thinking; difficulty tolerating uncertainty ('what if' thinking)",
+          "RESTLESSNESS AND FEELING KEYED UP — unable to relax; physical tension; cannot sit still; sense of inner trembling",
+          "EASY FATIGABILITY — chronic exhaustion from sustained anxiety; even without vigorous activity",
+          "CONCENTRATION DIFFICULTIES — mind 'goes blank'; difficulty making decisions; cannot complete tasks; intrusive worries interfere with concentration",
+          "IRRITABILITY — short temper; low frustration tolerance; snapping at family members; related to chronic tension",
+          "MUSCLE TENSION — tightness in neck, shoulders, and back; headaches (tension-type); jaw clenching (bruxism); generalised aches",
+          "SLEEP DISTURBANCE — difficulty falling asleep (hyperarousal); frequent waking (mind racing at night); unrefreshing sleep; morning fatigue"
+        ],
+        "india_presentations": "GAD is particularly common in India around: examination anxiety in students (perpetual worry about academic performance); financial anxiety (economic insecurity, job security); health anxiety (frequent health worries; consulting multiple doctors for physical symptoms of anxiety — 'somatisation'); family and marital anxiety (arranged marriage pressures, joint family conflicts, dowry concerns); workplace performance anxiety",
+        "screening_tool": "GAD-7 (Generalised Anxiety Disorder 7-item scale): scores 0-21; Mild 5-9; Moderate 10-14; Severe 15-21; validated in Indian populations",
+        "management": "CBT (evidence-based gold standard — particularly effective for GAD); SSRIs (sertraline, escitalopram — first-line pharmacotherapy); SNRIs (venlafaxine, duloxetine); buspirone (non-addictive anxiolytic — for GAD); exercise and yoga; relaxation techniques; mindfulness"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Panic Disorder",
+        "description": "Characterised by recurrent, unexpected PANIC ATTACKS followed by at least 1 month of: persistent concern about having future panic attacks; worry about the implications or consequences of attacks ('I am having a heart attack'; 'I am going mad'; 'I will lose control'); and/or significant maladaptive behavioural changes related to attacks (avoidance). The PANIC ATTACK itself is a discrete episode of intense fear or discomfort peaking within minutes — the most dramatic and terrifying manifestation of anxiety.",
+        "panic_attack_features": "A panic attack involves at least 4 of: palpitations, pounding heart, or accelerated heart rate; sweating; trembling or shaking; shortness of breath or smothering sensation; feelings of choking; chest pain or discomfort; nausea or abdominal distress; dizziness, unsteadiness, light-headedness, or faintness; chills or hot flushes; paraesthesias (numbness or tingling sensations); derealisation (feeling of unreality) or depersonalisation (feeling detached from oneself); fear of losing control or going crazy; fear of dying",
+        "clinical_pattern": "UNEXPECTED (uncued) panic attacks are diagnostic of Panic Disorder — occurring without an obvious trigger, even during sleep (nocturnal panic attacks); EXPECTED (cued) attacks occur reliably in specific situations (heights, social situations — more typical of specific phobia or social anxiety)",
+        "catastrophic_misinterpretation": "The psychological core of panic disorder is CATASTROPHIC MISINTERPRETATION of benign physical sensations — racing heart from walking upstairs is interpreted as 'heart attack'; slight breathlessness as 'suffocating'; dizziness as 'stroke'; this creates a feedback loop (misinterpretation → fear → more physical symptoms → more misinterpretation → full panic attack)",
+        "india_context": "In India, panic attacks are almost universally first misdiagnosed as CARDIAC CONDITIONS — patients present to emergency departments with 'chest pain', 'heart attack', 'palpitations'; undergo extensive cardiac investigations (ECG, echocardiogram, treadmill test, Holter monitor); all results are normal; the diagnosis of panic disorder is often delayed by months to years while patients receive unnecessary investigations and cardiac medications; this cardiac somatisation is very prevalent in India (cultural tendency to somatise distress as heart problems — 'mere dil ki dhadkan bahut badhti hai' — 'my heart beats very fast' rather than 'I am anxious')",
+        "management": "CBT with panic-focused modules (interoceptive exposure — deliberate induction of feared physical sensations in controlled settings to break catastrophic misinterpretation cycle); SSRIs (sertraline, paroxetine, escitalopram — first-line); SNRIs; breathing retraining; education about the physiology of panic attacks; controlled diaphragmatic breathing"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Social Anxiety Disorder (Social Phobia)",
+        "description": "Marked fear or anxiety about one or more social situations in which the person is exposed to possible scrutiny by others — fear of acting in a way or showing anxiety symptoms that will be humiliating, embarrassing, or lead to rejection. The feared situations are either avoided or endured with intense anxiety or distress. Duration: typically ≥6 months in adults. Social anxiety disorder is the third most common psychiatric disorder globally (after depression and alcohol use disorder) — and one of the most underdiagnosed in India due to cultural normalisation ('shy' or 'introverted' rather than 'unwell').",
+        "feared_situations": "Performance situations (public speaking — most common; eating in public; writing in front of others; using public toilets — shy bladder syndrome); INTERACTIONAL situations (meetings; parties; initiating conversations; asserting oneself; speaking to authority figures; speaking on phone; interviews; dating)",
+        "core_cognitions": "Excessive negative self-evaluation ('I will say something stupid'); hypervigilance to perceived signs of disapproval; intense focus on own performance rather than conversation; mind-reading ('they think I am boring/anxious/incompetent'); post-event processing ('that was so embarrassing') — replaying social interactions negatively for hours or days afterwards",
+        "safety_behaviours": "The paradoxically maintained anxiety through 'safety behaviours' — things done to prevent feared consequences: over-preparation for any social event; avoiding eye contact; speaking very quietly; standing on the periphery of groups; wearing extra deodorant; sitting near exits; carrying water; rehearsing conversations in advance; these behaviours maintain the anxiety because they prevent disconfirmation of catastrophic beliefs",
+        "india_relevance": "Social anxiety in India is amplified by: ACADEMIC PRESSURE (class presentations, seminars, viva voce examinations); ARRANGED MARRIAGE CONTEXT (meeting prospective partners and families — extremely anxiety-provoking); WORKPLACE HIERARCHY (speaking to seniors or bosses; giving presentations); GENDER ROLES (particularly for women in public speaking contexts where anxiety may be reinforced rather than challenged by societal expectations); CULTURAL COLLECTIVISM (shame and 'log kya kahenge' — 'what will people say' — as intensifying social fear)",
+        "management": "CBT (specifically social skills training, cognitive restructuring, and graduated exposure to feared social situations — the most effective treatment); SSRI (sertraline, escitalopram, paroxetine — FDA-approved); SNRI (venlafaxine); group CBT particularly effective (allows direct practice of social situations); beta-blockers (propranolol) for situational performance anxiety only"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Panic Attacks with Agoraphobia",
+        "description": "Agoraphobia is marked fear or anxiety about two or more of the following situations: using public transportation; being in open spaces (markets, parking lots, bridges); being in enclosed spaces (shops, theatres, cinemas, trains); being in a crowd or queue; being outside of the home alone. The person fears or avoids these situations because of thoughts that escape might be difficult or help unavailable in the event of developing panic-like or embarrassing symptoms. Agoraphobia frequently complicates panic disorder (when repeated panic attacks lead to progressive avoidance of situations where attacks have occurred) but can occur without panic disorder.",
+        "severity_spectrum": "Mild: avoids some specific situations but maintains most activities; Severe: housebound — completely unable to leave home alone; Severe agoraphobia is one of the most disabling anxiety conditions and can lead to complete social isolation",
+        "india_context": "Agoraphobia in India is particularly disabling in contexts of: crowded public transport (local trains, buses — if panic attacks occurred there, complete avoidance of public transport follows); crowded market places (bazaars); pilgrimage sites; weddings and large social gatherings; religious festivals",
+        "management": "Graduated in-vivo exposure (gold standard — systematically and progressively approaching avoided situations from least to most feared); CBT with interoceptive exposure; SSRI/SNRI pharmacotherapy; supported by case manager or family member during initial exposure exercises"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Specific Phobia",
+        "description": "Marked fear or anxiety about a specific object or situation (the phobic stimulus) that is actively avoided or endured with intense distress; the fear is disproportionate to the actual danger; causes significant distress or functional impairment. Specific phobias are the most common of all anxiety disorders (lifetime prevalence 7-10%).",
+        "subtypes": [
+          {
+            "type": "Animal Phobia",
+            "examples": "Spiders (arachnophobia); snakes (ophidiophobia); dogs (cynophobia); rats; cockroaches; India: snake phobia very common (relevant given India has high venomous snake population); dog phobia prominent given free-roaming dog population in Indian cities"
+          },
+          {
+            "type": "Natural Environment Phobia",
+            "examples": "Heights (acrophobia); thunderstorms (astraphobia); deep water; darkness (nyctophobia)"
+          },
+          {
+            "type": "Blood-Injection-Injury (BII) Phobia",
+            "examples": "Fear of blood, injections, needles, or medical procedures; unique vasovagal response (blood pressure DROPS rather than rises — fainting common); very prevalent in India — needle phobia affects compliance with vaccinations and blood tests"
+          },
+          {
+            "type": "Situational Phobia",
+            "examples": "Aeroplanes; enclosed spaces (claustrophobia — very common); elevators; tunnels; bridges; driving"
+          },
+          {
+            "type": "Other Phobias — India-Specific",
+            "examples": "Vomiting phobia (emetophobia — very common); choking phobia; fear of contamination (often OCD spectrum); fear of specific foods; cosmic/religious fears ('cursed', 'evil eye' — important cultural context in India where fear related to supernatural beliefs can cause significant anxiety)"
+          }
+        ],
+        "management": "Specific phobias respond very well to EXPOSURE THERAPY (graduated or flooding — systematic exposure to the feared stimulus); a single session of 3-hour intensive exposure therapy can achieve lasting remission in many specific phobias; no pharmacotherapy shown consistently effective for specific phobias (though propranolol pre-exposure, D-cycloserine augmentation, and virtual reality exposure are being studied)"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Separation Anxiety Disorder",
+        "description": "Excessive fear or anxiety about separation from attachment figures (parents, caregivers, partners) — beyond what is expected for the person's developmental level; persistent for ≥4 weeks in children and ≥6 months in adults. While most common in children, the DSM-5 now includes adult separation anxiety (previously not formally recognised), which manifests as excessive dependence in adult relationships and anxiety about partners or parents being harmed or absent.",
+        "childhood_presentation": "Recurrent excessive distress when separated or anticipating separation from home or attachment figures; persistent worry about losing or harm coming to attachment figures; refusal to go to school (school refusal); reluctance to be alone at home; recurrent nightmares involving separation themes; physical symptoms (nausea, headache, stomach ache) when separation anticipated",
+        "india_relevance": "School refusal anxiety is a significant problem in Indian schools — with competitive academic environments, fear of bullying, and high-pressure learning environments driving school avoidance; adult separation anxiety is seen in the context of arranged marriages and over-enmeshed family relationships; boarding school anxieties; children of working mothers (particularly in joint families disrupted by nuclear migration)",
+        "management": "Family-based CBT (child + family involved); gradual reintegration to school (school-based support); parent coaching (how to respond to child's separation anxiety without reinforcing it); SSRI if severe (sertraline in children — FDA-approved for OCD in children ≥6 years, used off-label for anxiety)"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Health Anxiety (Illness Anxiety Disorder / Hypochondriasis)",
+        "description": "Preoccupation with having or acquiring a serious illness — despite medical evaluation showing no or minimal medical pathology; excessive health-related behaviours (seeking repeated reassurance from doctors; checking body for signs of disease; excessive internet health searches) or maladaptive avoidance (avoiding medical care from fear of what might be found). Health anxiety exists on a spectrum from minimal concern to complete disability from fear of disease.",
+        "india_prevalence": "Extremely common in India — the largest cause of 'doctor shopping' (consulting multiple specialists for the same physical complaints); closely related to somatic symptom disorder (the physical expression of anxiety and depression); very prevalent in the context of widespread health misinformation on social media and WhatsApp (forwarded 'health alerts' causing mass anxiety about cancer, heart disease, liver disease); significant healthcare resource utilisation",
+        "cyber_hypochondria": "The internet and especially WhatsApp health forwards create an epidemic of health anxiety — 'cyberchondria' — in India; patients arrive with printed diagnoses from Google symptom searches; managing cyberchondria requires digital health literacy education as part of treatment",
+        "management": "CBT (health-specific modules — exposure to feared health situations; reducing reassurance-seeking; limiting health checking; challenging catastrophic interpretations of bodily sensations); SSRIs; psychoeducation about the mind-body connection; addressing underlying anxiety disorder"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Anxiety — Subclinical or Minimal Impairment",
+        "description": "Anxiety symptoms present but not significantly impairing daily functioning; manageable with self-help strategies and lifestyle modifications.",
+        "criteria": "GAD-7 score 5-9; anxiety present and distressing but daily activities maintained; work/study functioning adequate; relationships maintained; no panic attacks or avoidance behaviours; no suicidal ideation",
+        "functional_impact": "Mild difficulty relaxing; occasional worry; normal activities maintained; subclinical quality-of-life impairment",
+        "management": "Psychoeducation (understanding anxiety); self-help CBT workbooks; regular aerobic exercise (30 min 5×/week — proven anxiolytic); yoga and pranayama; sleep hygiene; caffeine reduction; mindfulness apps; brief counselling; reassessment at 4-6 weeks"
+      },
+      {
+        "level": 2,
+        "name": "Moderate Anxiety — Significant Impairment",
+        "description": "Anxiety substantially interfering with work, relationships, or daily activities; requires active treatment.",
+        "criteria": "GAD-7 score 10-14; significant distress; occupational or academic performance noticeably affected; social withdrawal; avoidance of some situations; possible panic attacks; sleep significantly disrupted; somatic symptoms causing GP visits",
+        "functional_impact": "Reduced work/academic performance; social withdrawal; avoidance of some previously enjoyed activities; sleep disrupted; physical health impacting",
+        "management": "CBT by trained therapist (6-12 sessions); SSRI (sertraline or escitalopram first-line — start low, titrate); or CBT + SSRI combined (superior to either alone for moderate severity); yoga; exercise; sleep hygiene; reassessment at 4-8 weeks; suicide risk screening at every visit"
+      },
+      {
+        "level": 3,
+        "name": "Severe Anxiety — Major Functional Impairment",
+        "description": "Anxiety causing major disruption across multiple life domains; significant distress; possible agoraphobia or significant avoidance.",
+        "criteria": "GAD-7 score 15-21; significant occupational/academic dysfunction (unable to work or study normally); significant social or agoraphobic avoidance; recurrent panic attacks; severe insomnia; significant relationship strain; possible comorbid depression",
+        "functional_impact": "Unable to perform normal duties; significant social isolation; constant distress; physical health significantly impacted; quality of life severely reduced",
+        "management": "Psychiatry referral; SSRI at therapeutic dose + CBT; consider augmentation (buspirone add-on; pregabalin for GAD); brief limited benzodiazepine only if extreme distress during initial SSRI titration period (maximum 2-4 weeks); occupational or academic adjustment; family psychoeducation; monthly review"
+      },
+      {
+        "level": 4,
+        "name": "Critical — Severe Anxiety with Suicidal Ideation or Complete Disability",
+        "description": "Anxiety disorder causing complete functional collapse, suicidal ideation, self-harm, or psychiatric emergency.",
+        "criteria": "Housebound agoraphobia; unable to work, maintain relationships, or perform self-care; suicidal ideation (passive 'I wish I were dead' or active 'I am thinking of harming myself'); anxiety with psychotic features (rare); severe depression with anxiety requiring urgent psychiatric assessment",
+        "management": "EMERGENCY: immediate psychiatric assessment; crisis helpline activation (iCall: 9152987821; Vandrevala: 1860-2662-345; NIMHANS helpline: 080-46110007; National Mental Health Helpline iMHAS: 14416); hospitalisation consideration; urgent SSRI initiation; structured safety planning; family involvement; NEVER leave the person alone if actively suicidal"
+      }
+    ],
+
+    "causes": {
+      "aetiology_overview": "Anxiety disorders arise from the complex interaction of biological (genetic, neurobiological), psychological (cognitive, behavioral), and social (environmental, cultural, life events) factors — the 'biopsychosocial model'. No single cause creates an anxiety disorder; rather, a vulnerability (biological predisposition + early experiences) interacts with precipitating events (stressors, traumas) and maintaining factors (avoidance, unhelpful thinking patterns) to create the disorder.",
+      "risk_factors": [
+        "GENETIC PREDISPOSITION: anxiety disorders have approximately 30-40% heritability; first-degree relatives of people with anxiety disorders have 2-6× higher risk; specific genetic variants in serotonin transporter gene (5-HTTLPR), COMT, BDNF are implicated; anxiety and depression share substantial genetic architecture",
+        "CHILDHOOD ADVERSITY: childhood abuse (physical, sexual, emotional); neglect; parental separation or loss; witnessing domestic violence; parental anxiety or mental illness (modelling anxious behaviour and threat appraisal); overly critical or controlling parenting (reducing child's sense of competence and safety); early bullying; all significantly increase adult anxiety disorder risk",
+        "TEMPERAMENT: behavioural inhibition (a tendency in infants and toddlers to withdraw from novel situations, be cautious with strangers, and be physiologically reactive) is the strongest temperamental predictor of childhood and adult anxiety disorders; neuroticism (personality trait of negative affect) confers elevated anxiety risk",
+        "TRAUMA AND LIFE EVENTS: recent trauma (road accident, assault, natural disaster, serious illness, bereavement); cumulative stressors; significant life transitions (migration, marriage, job loss, new responsibility); pandemic (COVID-19 dramatically increased anxiety across India)",
+        "CHRONIC STRESS: sustained occupational stress; caregiver burden (parents of children with serious illness; adult children of elderly dependent parents); chronic physical illness; financial stress; marital conflict",
+        "INDIA-SPECIFIC STRESSORS:",
+        "Academic pressure: JEE/NEET/UPSC/Board examination anxiety — affecting millions of Indian students; particularly severe in South India where competitive examination culture is extremely intense; suicide rates among Indian students from examination stress are among the world's highest",
+        "Competitive examination culture: the gap between aspirants (millions) and seats (thousands) creates a near-universal experience of high-stakes failure; multiple attempt cycles; family financial investment in coaching creating additional pressure",
+        "Social media and comparison: constant comparison with peers; FOMO (fear of missing out); cyberbullying; social media perfectionism culture; WhatsApp group pressure; particularly affecting Indian adolescents and young adults",
+        "Workplace anxiety: IT sector high-performance culture; target-driven corporate environments; job insecurity; long working hours; night shifts (call centre workers — circadian disruption worsening anxiety)",
+        "Economic anxiety: rapidly rising cost of living; housing costs; job market insecurity; agricultural distress (farmer anxiety — linked to farm loan burden, monsoon uncertainty, market price volatility)",
+        "Family and relationship pressures: arranged marriage process; in-law conflicts; dowry pressure; marital discord; pressure to have children; gender role expectations",
+        "MEDICAL CONDITIONS CAUSING OR WORSENING ANXIETY — must be excluded:",
+        "Hyperthyroidism — nearly identical to GAD; tremor, palpitations, anxiety, heat intolerance; TSH is the first test in any new anxiety disorder",
+        "Cardiac arrhythmia (especially SVT) — episodic palpitations; may mimic panic attacks",
+        "Phaeochromocytoma (rare) — paroxysmal hypertension, sweating, palpitations, anxiety",
+        "Cushing's syndrome — cortisol excess; anxiety and mood disturbance",
+        "Hypoglycaemia — episodic anxiety, sweating, trembling; diabetics on insulin particularly",
+        "Anaemia — fatigue, palpitations, breathlessness triggering health anxiety",
+        "Caffeine excess — very common; strong tea (chai — multiple cups daily in India), coffee, energy drinks; caffeine directly increases anxiety, palpitations, and tremor; a major modifiable factor in Indian patients",
+        "SUBSTANCE-RELATED: alcohol (initial relief but rebound anxiety worsening; withdrawal causes severe anxiety and panic); stimulants (cocaine, amphetamines, ecstasy); cannabis (paradoxically increases anxiety in some users — high-THC cannabis is a common precipitant of panic attacks and paranoid anxiety in young Indians); benzodiazepine withdrawal (common in India given widespread BZD use — withdrawal causes severe anxiety, panic, and seizures)",
+        "MEDICATIONS CAUSING ANXIETY: steroids (high-dose prednisolone causes anxiety, mania); bronchodilators (salbutamol — tremor and tachycardia mimicking anxiety); decongestants (pseudoephedrine); some thyroid supplements; methylphenidate; antihistamines (paradoxical reaction in some)"
+      ]
+    },
+
+    "symptoms": {
+      "overview": "Anxiety disorder symptoms span three interacting domains — COGNITIVE (thought patterns), PHYSICAL (body sensations), and BEHAVIOURAL (actions and avoidance). Understanding this three-domain model is central to CBT treatment: each domain reinforces the others in a vicious cycle (anxious thoughts → physical symptoms → avoidance → more anxiety → more thoughts). India-specific presentations frequently emphasise SOMATIC (physical) symptoms — chest tightness, palpitations, headaches, GI symptoms, fatigue — rather than the psychological experience of worry or fear, due to cultural patterns of expressing emotional distress through the body (somatisation). This means many Indian anxiety disorder patients first present to cardiologists, neurologists, gastroenterologists, and general physicians rather than psychiatrists.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-2101",
+          "name": "Excessive Worry and Apprehension — The Cognitive Core",
+          "description": "Persistent, intrusive, and uncontrollable worry about multiple everyday topics — the defining cognitive symptom of GAD; and in other anxiety disorders, the specific feared topic (social humiliation, health, contamination, separation). WORRY involves repeated mental rehearsal of potential future negative events; it is ego-dystonic (the person recognises it is excessive but cannot stop); it is exhausting, time-consuming (patients often report spending 3-5+ hours per day worrying), and impairs concentration on the present moment. COGNITIVE DISTORTIONS characterising anxiety include: CATASTROPHISING ('if I make a mistake in the presentation, my career is over'); PROBABILITY OVERESTIMATION ('I am probably seriously ill' despite no medical evidence); INTOLERANCE OF UNCERTAINTY ('I cannot stand not knowing what will happen'); MENTAL FILTERING (attending only to threat-relevant information and ignoring disconfirmatory evidence).",
+          "severity": "Mild to Severe",
+          "india_note": "In India, worry content frequently focuses on: children's academic performance; family members' health; financial security; social judgment ('log kya kahenge' — excessive worry about others' opinions); future of arranged marriage; job performance"
+        },
+        {
+          "id": "SYM-2102",
+          "name": "Physical (Somatic) Symptoms of Anxiety — The Body's Fear Response",
+          "description": "The autonomic nervous system's sympathetic activation during anxiety produces a comprehensive physical response affecting every organ system. These physical symptoms are REAL, distressing, and often severe — not 'imagined' or 'faked'. They are produced by the release of adrenaline (epinephrine) and noradrenaline from the adrenal glands and locus coeruleus, triggering the physiological 'fight-or-flight' response. CARDIOVASCULAR: palpitations (awareness of heartbeat); tachycardia (racing heart); chest tightness or discomfort; blood pressure elevation; RESPIRATORY: breathlessness; feeling of smothering; hyperventilation (rapid shallow breathing → CO2 drop → respiratory alkalosis → tingling in hands and face, dizziness, feeling of unreality — which worsens panic); NEUROLOGICAL: dizziness; light-headedness; headache (tension); tingling in extremities and face (from hyperventilation); GASTROINTESTINAL: nausea; 'butterflies in the stomach'; diarrhoea or loose stools; urgency; IBS symptoms; dry mouth; MUSCULOSKELETAL: muscle tension; shoulder and neck stiffness; trembling; jaw clenching; SKIN: sweating; flushing; pallor; GENITOURINARY: frequent urination; sexual dysfunction.",
+          "severity": "Mild to Severe",
+          "india_specific_presentations": "Physical symptoms drive most Indian anxiety patients to seek medical care — palpitations to cardiologist; breathlessness to pulmonologist; GI symptoms to gastroenterologist; headaches to neurologist; dizziness to ENT; fatigue and weakness to general physician; each specialist performs appropriate investigations (normal results); patient is frustrated and not improving; the anxiety disorder goes undiagnosed through these multiple specialist consultations; the average time to diagnosis of anxiety disorder in India is 5-10 years from symptom onset"
+        },
+        {
+          "id": "SYM-2103",
+          "name": "Avoidance Behaviour — The Behavioural Consequence",
+          "description": "AVOIDANCE is the central behavioural symptom of anxiety disorders — and the single most important MAINTAINING FACTOR that prevents natural recovery. Avoidance provides immediate relief (the anxiety temporarily decreases when the feared situation is avoided) which is powerfully reinforcing (negative reinforcement); but in the long-term, avoidance: prevents the person from learning that the feared situation is safe (no new learning occurs); sensitises the amygdala further (each avoidance strengthens the fear association); progressively restricts the person's life. The clinical definition of an anxiety DISORDER (vs normal anxiety) crucially involves avoidance that significantly impairs life. BEHAVIOURAL AVOIDANCE SPECTRUM: Overt avoidance — not going to a party (social anxiety); not boarding an airplane (specific phobia); not opening a doctor's letter (health anxiety); SUBTLE AVOIDANCE — distraction (using phone during a feared social interaction); escape behaviours (leaving a crowded shop quickly); safety objects (carrying medication 'just in case' that is never taken); COGNITIVE AVOIDANCE — thought suppression; reassurance-seeking; compulsive checking (OCD spectrum); excessive planning and preparation",
+          "severity": "Mild (avoiding a few situations) to Severe (complete housebound agoraphobia)",
+          "clinical_importance": "The goal of CBT for anxiety is NOT to reduce anxiety (which is often not possible or even desirable) but to reduce AVOIDANCE — allowing the person to engage with feared situations and discover they are safe or manageable"
+        },
+        {
+          "id": "SYM-2104",
+          "name": "Panic Attack — Acute Crescendo Episode",
+          "description": "A sudden surge of intense fear or intense discomfort that reaches a peak within minutes and includes ≥4 physical and cognitive symptoms (see Panic Disorder type for full list). Panic attacks are the most dramatic and medically alarming acute anxiety presentation — patients frequently call ambulances or present to emergency departments believing they are having a heart attack or stroke. Key distinguishing features from cardiac events: panic attacks peak within 10 minutes and typically fully resolve within 20-30 minutes (cardiac events are generally sustained); panic attacks leave no cardiac enzyme elevation, no ECG changes, no haemodynamic instability (though BP and HR transiently rise); panic attacks often occur in specific contexts or predictable patterns (though can be nocturnal); full recovery between attacks.",
+          "severity": "Severe (acutely — though not medically dangerous in healthy individuals)",
+          "india_emergency": "Panic attack patients in India frequently arrive by ambulance to cardiac emergency departments; cost of unnecessary investigations per undiagnosed panic disorder patient (average 5-10 years to correct diagnosis) estimated Rs 50,000-200,000 in unnecessary cardiac workup"
+        },
+        {
+          "id": "SYM-2105",
+          "name": "Sleep Disturbance from Anxiety",
+          "description": "Insomnia is near-universal in anxiety disorders — arising from HYPERAROUSAL (the anxious nervous system cannot downregulate sufficiently for sleep onset) and NOCTURNAL WORRY (mind racing at night without the distractions of daytime). SLEEP INITIATION INSOMNIA (difficulty falling asleep): lying awake with racing thoughts; typically takes 1-3 hours to fall asleep; SLEEP MAINTENANCE INSOMNIA (waking during the night): waking at 2-4 AM with flood of worries; unable to return to sleep; EARLY MORNING AWAKENING (less typical for anxiety, more typical for depression — though overlap is common). Sleep deprivation from anxiety worsens anxiety the following day (sleep-deprived amygdala is 60% more reactive to threat stimuli) — creating a vicious cycle. NOCTURNAL PANIC ATTACKS: waking suddenly from sleep in full panic (no precipitating nightmare) — characteristic of panic disorder.",
+          "severity": "Moderate to Severe"
+        }
+      ],
+      "secondary_symptoms": [
+        "Irritability and low frustration tolerance — from chronic tension and sleep deprivation; snapping at family; short fuse; interpersonal relationship strain",
+        "Fatigue and exhaustion — sustained anxiety is physiologically exhausting; chronic cortisol elevation depletes energy reserves; comorbid depression amplifies fatigue",
+        "Difficulty concentrating and brain fog — anxiety impairs working memory and executive function (prefrontal cortex hypoactivation); difficulty at work or school; mind going blank",
+        "Depersonalisation and derealisation — feeling detached from oneself (watching oneself from outside) or the environment feeling unreal ('dream-like'); particularly in panic disorder and severe anxiety; very frightening when first experienced; completely reversible with anxiety treatment",
+        "Trembling and shakiness — fine tremor from adrenaline release; hands shake when nervous; voice trembles in social anxiety; tremor worsened by caffeine",
+        "Excessive sweating (diaphoresis) — palmar sweating; hyperhidrosis from anxiety; particularly prominent in social anxiety (fear of visible sweating causing further social embarrassment — a particularly painful feedback loop)",
+        "Hair loss (alopecia) — chronic stress and anxiety-related cortisol elevation can cause telogen effluvium (diffuse hair shedding); extremely distressing for Indian women for whom hair health is culturally significant; addressing the underlying anxiety resolves the hair loss",
+        "Sexual dysfunction — reduced libido; erectile dysfunction in men; arousal difficulties in women; from chronic sympathetic dominance (sympathetic activation is antagonistic to sexual function, which requires parasympathetic dominance); a frequently unasked and undisclosed symptom requiring sensitive enquiry",
+        "Skin conditions worsened by anxiety — acne; eczema; psoriasis (anxiety triggers and maintains all three through cortisol and inflammatory pathways); common presenting complaint particularly in urban Indian young adults"
+      ],
+      "somatisation_in_india": {
+        "description": "Somatisation — the expression of psychological distress through physical symptoms — is the dominant presentation pattern for anxiety disorders in India. Multiple cultural, social, and linguistic factors drive somatisation: mental illness stigma (reporting a physical symptom is more socially acceptable than admitting to anxiety or stress); limited psychological vocabulary in many Indian languages to precisely describe internal emotional states; cultural idioms of distress (e.g., 'thinking too much' — sochta rehta hai — as a descriptor for anxiety; 'brain heating' — dimag garam hona — for tension; 'heart burning' — kalejey mein jalan — for grief/worry); the biomedical model reinforced by family ('go see a doctor and get some medicine' vs 'talk to someone about your feelings')",
+        "common_somatic_presentations": [
+          "CARDIAC: palpitations; chest pain; 'heart weakness' (dil ki kamzori) — very common Indian idiom for anxiety/depression; patients consult cardiologists for years before psychiatric diagnosis",
+          "NEUROLOGICAL: headaches (tension-type); dizziness; tingling; weakness; 'nerve weakness' (naso ki kamzori) — consult neurologists; MRI brain ordered unnecessarily",
+          "GASTROINTESTINAL: IBS symptoms; nausea; chronic abdominal pain; loss of appetite; acid reflux — consult gastroenterologists",
+          "MUSCULOSKELETAL: back pain; neck pain; joint pain; generalised aches; consult orthopaedics and rheumatology",
+          "FATIGUE AND WEAKNESS: general weakness (kamzori); fatigue attributed to 'low blood pressure', 'low Vitamin D', 'anaemia' before anxiety is considered",
+          "SEXUAL HEALTH: semen 'dhatu' loss anxiety (dhat syndrome — anxiety about seminal discharge causing weakness and illness — a culturally specific anxiety disorder particularly in young Indian men)"
+        ]
+      }
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "PRESENTING COMPLAINTS — in detail: what exactly is bothering the patient; duration; triggers (situational, spontaneous); course (constant, episodic, worsening); impact on daily life (work, study, relationships, sleep); previous similar episodes",
+        "COGNITIVE SYMPTOMS — do they worry excessively? About what topics? Is it controllable? How many hours per day? Catastrophic thinking? Difficulty concentrating?",
+        "PHYSICAL SYMPTOMS — palpitations; breathlessness; dizziness; trembling; sweating; chest tightness; GI symptoms; headaches; sleep disturbance — detailed characterisation",
+        "BEHAVIOURAL IMPACT — what do they avoid? What has changed in their activity level and social participation? Safety behaviours?",
+        "PANIC ATTACKS — if present: when did first panic attack occur? Frequency? Predictors or spontaneous? What happens during an attack? Duration? What do they do afterwards?",
+        "ANXIETY TRIGGERS — situational (specific places, social situations, health-related, separation-related) or generalised (all topics)",
+        "MOOD — concurrent depressive symptoms (low mood, anhedonia, hopelessness, guilt) — comorbid depression present in 50-60% of anxiety disorder patients",
+        "SUICIDAL IDEATION — ALWAYS ASK; anxiety disorders significantly increase suicide risk particularly when comorbid with depression; passive ideation ('I wish I could escape all this') vs active ideation ('I am thinking of harming myself'); plan; intent; access to means",
+        "PAST PSYCHIATRIC HISTORY — prior episodes of anxiety or depression; prior treatment (what, for how long, response); hospitalisations; self-harm history",
+        "FAMILY HISTORY — anxiety, depression, OCD, substance use in first-degree relatives",
+        "SUBSTANCE USE — alcohol (quantity, frequency, last drink — withdrawal worsens anxiety); caffeine (number of cups of chai/coffee per day — important modifiable factor); cannabis; tobacco (nicotine — paradoxically worsens anxiety despite perceived relief); other substances",
+        "MEDICATIONS — current prescriptions; OTC (including herbal medications — some have stimulant effects); over-the-counter cough syrups (codeine-containing — common in India for recreational use); steroid injections",
+        "MEDICAL HISTORY — thyroid disease (hyperthyroidism mimics anxiety); cardiac conditions; pheochromocytoma; previous ECG/thyroid test results; any physical illnesses that could be causing or worsening anxiety",
+        "SOCIAL HISTORY — occupation (IT sector? Student? Farmer?); relationship status; living situation (joint family?); financial situation; support system (who is supportive?); cultural and religious beliefs (particularly relevant in India — religious beliefs can be protective OR can be a source of anxiety — religious OCD is common); recent life events (marriage, divorce, bereavement, job loss, migration)",
+        "CHILDHOOD HISTORY — early experiences of anxiety; parental relationships; traumatic events; school difficulties; early signs of temperamental inhibition",
+        "EXAMINATION ANXIETY SPECIFICALLY — for students: which examination? How many attempts? Family pressure? Academic performance to date?"
+      ],
+      "physical_examination": [
+        "General appearance — anxious appearance; tremor visible at rest or with outstretched hands; sweating; pallor; tachycardia (pulse rate); blood pressure (may be elevated in acute anxiety; consistently elevated warrants investigation for hypertension or phaeochromocytoma)",
+        "Thyroid examination — thyroid gland size (goitre suggests thyroid disease); tremor; warm moist skin; exophthalmos (hyperthyroidism — very important to exclude)",
+        "Cardiovascular examination — heart rate; rhythm (arrhythmia?); heart sounds; any murmurs; blood pressure bilateral",
+        "Neurological examination — exclude primary neurological causes of anxiety-like symptoms (tremor, dizziness); note that most anxiety disorder patients have a completely normal neurological examination",
+        "Mental state examination — the psychiatric examination:",
+        "APPEARANCE AND BEHAVIOUR: eye contact; psychomotor agitation (restlessness, fidgeting) or retardation; tearfulness; tremor",
+        "SPEECH: rate (pressured or slowed); volume; coherence",
+        "MOOD: subjective (how patient describes their mood); objective (how the interviewer perceives it)",
+        "AFFECT: range (full/restricted); appropriateness to content; reactivity",
+        "THOUGHT FORM: logical and goal-directed vs tangential/circumstantial; thought blocking",
+        "THOUGHT CONTENT: worries (topics, intensity, controllability); phobias; obsessions; paranoid ideation; suicidal ideation or self-harm thoughts; homicidal ideation",
+        "PERCEPTIONS: auditory or visual hallucinations (absent in anxiety disorders — presence suggests psychosis)",
+        "COGNITION: orientation; concentration; memory — cognitive testing if cognitive complaints prominent",
+        "INSIGHT: does the patient understand they have a mental health condition requiring treatment? Insight is generally INTACT in anxiety disorders (contrasting with psychosis)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "GAD-7 (Generalised Anxiety Disorder 7-Item Scale) — Validated Screening Tool",
+          "type": "Psychometric — Self-Report",
+          "description": "The most widely used and validated brief screening and severity assessment tool for GAD — and also sensitive for other anxiety disorders. Seven items each scored 0 (not at all) to 3 (nearly every day) over the past 2 weeks; total 0-21. Developed by Spitzer et al. (2006); validated in Indian populations (Hindi, Tamil, Telugu, and other regional language translations available). Simple to administer; takes 2-3 minutes; can be completed in the waiting room.",
+          "purpose": "Screen for GAD; assess severity; monitor treatment response (repeat at each visit)",
+          "key_metric": "0-4: minimal anxiety; 5-9: mild anxiety; 10-14: moderate anxiety; 15-21: severe anxiety; score ≥10 = probably GAD; score ≥8 = probably any anxiety disorder; specific to GAD but sensitive for all anxiety disorders; widely used in Indian primary care and psychiatry settings"
+        },
+        {
+          "test_name": "PHQ-4 (Patient Health Questionnaire 4-Item) — Ultra-Brief Screening",
+          "type": "Psychometric — Self-Report",
+          "description": "Four items (2 anxiety + 2 depression) providing a rapid screen for both conditions — ideal for busy primary care settings in India where time is limited. The 2 anxiety items (derived from GAD-7) and 2 depression items (from PHQ-9) identify patients needing further evaluation.",
+          "purpose": "Ultra-brief screening for both anxiety and depression in primary care; not diagnostic — positive screen requires further clinical assessment",
+          "key_metric": "Each item 0-3; total 0-12; anxiety subscale (items 1-2) ≥3 = probable anxiety disorder; depression subscale (items 3-4) ≥3 = probable depression"
+        },
+        {
+          "test_name": "HADS (Hospital Anxiety and Depression Scale)",
+          "type": "Psychometric — Self-Report",
+          "description": "14-item questionnaire — 7 items each for anxiety and depression; designed to exclude somatic symptoms that might be confounded by physical illness; widely used in general hospital and primary care settings; validated in India.",
+          "purpose": "Screen for anxiety and depression in medically ill patients (where somatic items would be confounded by physical illness); anxiety subscale specifically targets cognitive worry rather than physical symptoms",
+          "key_metric": "Subscale scores 0-21; 0-7: normal; 8-10: borderline; 11-21: probable case"
+        },
+        {
+          "test_name": "Thyroid Function Tests — TSH, fT4, fT3",
+          "type": "Blood — Hormonal",
+          "description": "MANDATORY first-line investigation for ALL new anxiety presentations — hyperthyroidism (elevated fT4, suppressed TSH) causes tremor, palpitations, anxiety, irritability, weight loss, heat intolerance, and sleep disturbance — a near-perfect mimic of generalised anxiety disorder and panic disorder. India has high rates of thyroid disease (10% of women have subclinical thyroid abnormalities; overt hyperthyroidism 1.6% of women). Hypothyroidism can also cause anxiety through associated depression.",
+          "purpose": "Exclude hyperthyroidism as primary or contributing cause of anxiety; mandated before any psychiatric medication is started",
+          "key_metric": "TSH: normal 0.4-4.0 mIU/L; suppressed TSH + elevated fT4 = hyperthyroidism → refer endocrinology; elevated TSH + low fT4 = hypothyroidism → thyroid hormone replacement",
+          "india_note": "India has high iodine deficiency in some regions (despite iodised salt) and high Hashimoto's prevalence — thyroid diseases are extremely common and frequently present as anxiety or mood disorders before the metabolic diagnosis is made"
+        },
+        {
+          "test_name": "Complete Blood Count (FBC) and Haemoglobin",
+          "type": "Blood — Haematological",
+          "description": "Anaemia (common in Indian women from dietary iron deficiency and menorrhagia) causes: fatigue; palpitations; breathlessness; dizziness — all of which can be misinterpreted as anxiety symptoms or can worsen underlying anxiety. Correction of anaemia is essential before adequately treating anxiety.",
+          "purpose": "Exclude anaemia as cause of palpitations, breathlessness, and fatigue; screen for concurrent nutritional deficiency"
+        },
+        {
+          "test_name": "Fasting Blood Glucose and HbA1c",
+          "type": "Blood — Biochemical",
+          "description": "Hypoglycaemia in diabetics on insulin or sulfonylureas causes acute episodic anxiety, sweating, trembling, palpitations — mimicking panic attacks. Diabetes itself increases anxiety disorder risk 2-3× (bidirectional relationship). HbA1c screens for undiagnosed diabetes (which may be presenting with anxiety-like hypoglycaemic episodes).",
+          "purpose": "Exclude hypoglycaemia as a cause of episodic anxiety/panic-like symptoms; screen for undiagnosed diabetes"
+        },
+        {
+          "test_name": "ECG (12-Lead Electrocardiogram)",
+          "type": "Cardiac — Electrophysiology",
+          "description": "Indicated when: palpitations are the dominant presenting symptom; panic attacks are suspected but cardiac arrhythmia needs to be excluded; any cardiac symptoms in patients over 40 years. Important findings to exclude: SVT (supraventricular tachycardia — episodic palpitations, dizziness — can mimic or trigger panic attacks); WPW syndrome (short PR, delta wave — associated with SVT); QT prolongation (relevant before starting psychotropic medications).",
+          "purpose": "Exclude cardiac arrhythmia as cause of palpitations and episodic anxiety-like symptoms; baseline QT before starting psychotropic medications (particularly when tricyclics or antipsychotics are being considered)"
+        },
+        {
+          "test_name": "Urine Drug Screen",
+          "type": "Urine — Toxicology",
+          "description": "Consider when: substance use is suspected but denied; anxiety onset is unexplained; particularly relevant in young adults where cannabis, stimulant, or benzodiazepine withdrawal anxiety needs to be excluded. Cannabis is a particularly important anxiety-precipitant in young Indian adults — high-THC cannabis (increasingly available in India) causes acute anxiety and paranoia, and chronic use causes an anxiety disorder.",
+          "purpose": "Detect substance use as cause of anxiety; particularly cannabis (THC), cocaine, amphetamines, and benzodiazepine use"
+        },
+        {
+          "test_name": "Serum Cortisol and 24-hour Urine Cortisol (if Cushing's Suspected)",
+          "type": "Blood — Hormonal",
+          "description": "If features of Cushing's syndrome present (central obesity, stretch marks, facial rounding, diabetes, hypertension alongside anxiety) — serum cortisol and 24-hour urinary free cortisol. Cushing's is a rare but important medical cause of anxiety and mood disorders.",
+          "purpose": "Exclude Cushing's syndrome in appropriate clinical context"
+        },
+        {
+          "test_name": "Neurocognitive Assessment (if Cognitive Impairment Prominent)",
+          "type": "Neuropsychological",
+          "description": "If memory, concentration, or cognitive complaints are significant alongside anxiety — formal neuropsychological testing or brief cognitive screening (MMSE, MoCA) to quantify cognitive dysfunction and exclude primary cognitive disorder (early dementia, ADHD).",
+          "purpose": "Quantify anxiety-related cognitive impairment; distinguish from primary cognitive disorder; ADHD comorbidity assessment (ADHD and anxiety disorders frequently coexist)"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Pharmacotherapy for anxiety disorders should be viewed as ONE COMPONENT of a comprehensive treatment plan — not the sole intervention. Evidence consistently shows that COMBINED treatment (medication + CBT) is more effective than either alone, particularly for moderate-severe anxiety. The most critical prescribing principle for India: BENZODIAZEPINES (alprazolam, diazepam, clonazepam) should NOT be prescribed as first-line or long-term treatment for anxiety disorders — they create physical dependence within weeks, do not address the underlying disorder, and often worsen anxiety long-term through rebound effects. Yet they are dramatically overprescribed in India, including by primary care physicians and even psychiatrists. This is the single most important prescribing quality improvement issue in Indian mental health practice. SSRIs and SNRIs are the evidence-based first-line pharmacotherapy. Medications work by reducing the biological substrate of anxiety (normalising serotonergic, noradrenergic, and GABAergic function) — they do not teach coping skills or change thinking patterns, which is why psychotherapy remains essential.",
+      "treatment_principles": [
+        "1. SSRIs and SNRIs are FIRST-LINE pharmacotherapy for all anxiety disorders — start low (to minimise initial anxiety increase from serotonin activation), go slow (titrate over 2-4 weeks), and allow 6-12 weeks for full therapeutic effect",
+        "2. NEVER prescribe benzodiazepines as first-line or long-term treatment for anxiety disorders — physical dependence within 2-4 weeks; rebound anxiety on discontinuation worsens the disorder; tolerance develops rapidly; cognitive impairment; withdrawal seizures risk",
+        "3. INFORM PATIENTS that SSRIs may TEMPORARILY INCREASE anxiety in the first 1-2 weeks of treatment (serotonin syndrome side effects — nervousness, insomnia, GI symptoms) before the anxiolytic effect develops at 4-8 weeks; failure to warn leads to early discontinuation",
+        "4. MINIMUM TREATMENT DURATION: 12 months after achieving symptom remission before attempting discontinuation; premature discontinuation leads to very high relapse rates; GAD and panic disorder often require longer treatment",
+        "5. PSYCHOTHERAPY (CBT) should be offered to ALL anxiety disorder patients — as the primary treatment for mild-moderate anxiety; as combination treatment for severe anxiety; for relapse prevention after medication discontinuation",
+        "6. YOGA AND EXERCISE should be prescribed as adjunctive treatments — both have level 1 RCT evidence for anxiety reduction; 30 minutes of aerobic exercise 5 days per week is as effective as medication for mild anxiety"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-261",
+          "category_name": "Selective Serotonin Reuptake Inhibitors (SSRIs) — First-Line Pharmacotherapy",
+          "purpose": "First-line pharmacological treatment for all anxiety disorders; increase synaptic serotonin availability in anxiety circuits; require 4-12 weeks for full anxiolytic effect; non-addictive; safe for long-term use.",
+          "india_note": "SSRIs are dramatically underprescribed in India for anxiety (compared to benzodiazepines which are overprescribed); generic versions of all SSRIs are available at low cost in India (Rs 5-30 per tablet); prescribing inertia from GPs who reach for alprazolam as the 'easier' option must be overcome through education",
+          "medicines": [
+            {
+              "name": "Sertraline — Most Evidence for Broadest Range of Anxiety Disorders",
+              "brand_examples": ["Serlift", "Zosert", "Serenata", "Serlife", "Stimuloton"],
+              "form": "Tablet (25 mg, 50 mg, 100 mg)",
+              "dosage": {
+                "gad_and_panic": "Start 25-50 mg once daily in the morning (with food); increase to 50 mg after 1 week; therapeutic dose for anxiety: 50-100 mg/day; maximum 200 mg/day for OCD",
+                "social_anxiety": "50-100 mg/day; may require higher doses (150-200 mg) for full social anxiety disorder response",
+                "panic_disorder": "Start 25 mg (lower starting dose — panic patients particularly sensitive to initial activating effects); increase gradually to 50-150 mg/day",
+                "india_dosing_principle": "START LOWER THAN FOR DEPRESSION — anxiety patients are exquisitely sensitive to initial activating side effects; starting at 25 mg reduces early dropout"
+              },
+              "mechanism": "Blocks serotonin reuptake transporter (SERT) → increases synaptic serotonin in amygdala, prefrontal cortex, and limbic circuits → normalises fear circuit activity over weeks; also increases brain-derived neurotrophic factor (BDNF) promoting neuroplasticity in anxiety circuits",
+              "anxiolytic_timeline": "Initial effect: mild reduction in physical anxiety symptoms within 2-4 weeks; Full anxiolytic effect: 6-12 weeks; patients must be counselled to persist through the first 2 weeks (which may feel worse before better)",
+              "side_effects": ["Initial activation (first 1-2 weeks): increased anxiety, jitteriness, insomnia, GI upset — resolves spontaneously; WARN PATIENTS in advance", "GI disturbance (nausea, diarrhoea) — take with food; often resolves within 2 weeks", "Sexual dysfunction (delayed ejaculation in men; reduced libido) — most common reason for non-adherence in young Indian patients; important to ask about specifically; can switch to bupropion add-on or mirtazapine if problematic", "Weight changes (usually modest)", "Serotonin syndrome (rare — with concurrent triptans, MAOIs, tramadol)"],
+              "duration": "Minimum 12 months after achieving remission; many patients with recurrent anxiety disorders benefit from longer-term treatment; discuss maintenance vs discontinuation at 12-month review",
+              "approved_for": "GAD, Panic Disorder, Social Anxiety Disorder, OCD, PTSD, PMDD"
+            },
+            {
+              "name": "Escitalopram — Well-Tolerated, Highly Selective",
+              "brand_examples": ["Nexito", "S-Citadep", "Feliz-S", "Ectiban", "Esopram"],
+              "form": "Tablet (5 mg, 10 mg, 20 mg)",
+              "dosage": "Start 5-10 mg once daily (with food, in morning); therapeutic dose: 10-20 mg/day; lower starting dose than sertraline due to higher potency",
+              "use_case": "First-line for GAD and panic disorder; particularly well-tolerated (fewest drug interactions; good tolerability profile); highly selective SSRI with minimal off-target effects; preferred when tolerability is a priority",
+              "approved_for": "GAD, Major Depression (FDA); used widely for all anxiety disorders in clinical practice"
+            },
+            {
+              "name": "Fluoxetine (Prozac) — Longest Half-Life; Forgiving of Missed Doses",
+              "brand_examples": ["Fludac", "Flunil", "Norzac", "Prodep"],
+              "form": "Capsule/tablet (10 mg, 20 mg, 40 mg)",
+              "dosage": "10-20 mg once daily (morning — most activating SSRI; do not take at night); therapeutic dose 20-40 mg for anxiety; maximum 60-80 mg for OCD",
+              "use_case": "OCD (highest evidence); Panic Disorder; PMDD; Social Anxiety Disorder; the long half-life (7 days for active metabolite norfluoxetine) makes it forgiving of missed doses and reduces discontinuation syndrome",
+              "important_interactions": "Most drug interactions of all SSRIs (potent CYP2D6 inhibitor); check interactions with any polypharmacy",
+              "approved_for": "Major Depression, OCD, Panic Disorder, Bulimia Nervosa, PMDD"
+            },
+            {
+              "name": "Paroxetine — Most Potent for Panic and Social Anxiety",
+              "brand_examples": ["Paxidep", "Parimax", "Parox"],
+              "form": "Tablet (10 mg, 20 mg, 30 mg, 40 mg)",
+              "dosage": "10 mg once daily starting dose; therapeutic dose: 20-40 mg/day for panic and social anxiety; 40-60 mg for OCD",
+              "use_case": "Panic Disorder, Social Anxiety Disorder, GAD, PTSD, OCD — FDA-approved for all; most potent for panic reduction; most sedating SSRI (useful for insomnia component of anxiety — take at night); anticholinergic effects (dry mouth, constipation, urinary retention in elderly)",
+              "caution": "MOST SEVERE DISCONTINUATION SYNDROME of all SSRIs — very short half-life; NEVER stop abruptly; taper very slowly over months; patients must be warned strongly; the most common SSRI for discontinuation-related difficulties in India",
+              "approved_for": "MDD, OCD, Panic Disorder, Social Anxiety Disorder, GAD, PTSD, PMDD"
+            },
+            {
+              "name": "Fluvoxamine — Preferred for OCD; Unique Sigma Receptor Activity",
+              "brand_examples": ["Fluvoxin", "Faverin"],
+              "form": "Tablet (50 mg, 100 mg)",
+              "dosage": "Start 50 mg at bedtime (sedating); therapeutic dose for OCD: 150-300 mg/day in divided doses; anxiety: 100-150 mg/day",
+              "use_case": "OCD (first-line alongside fluoxetine); social anxiety disorder; unique sigma-1 receptor agonism may provide additional neuroplastic and anti-inflammatory benefits beyond serotonin reuptake blockade",
+              "approved_for": "OCD; used off-label for social anxiety, panic, GAD"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-262",
+          "category_name": "Serotonin-Norepinephrine Reuptake Inhibitors (SNRIs) — First-Line Alternative",
+          "purpose": "Dual mechanism (serotonin + norepinephrine reuptake inhibition) — comparable efficacy to SSRIs for anxiety disorders; may have superior efficacy for somatic and painful symptoms of anxiety (due to noradrenergic mechanism reducing musculoskeletal pain and tension); particularly useful when anxiety is accompanied by depression.",
+          "medicines": [
+            {
+              "name": "Venlafaxine Extended-Release (Effexor XR) — Most Evidence Among SNRIs for Anxiety",
+              "brand_examples": ["Venlor XR", "Effexor XR", "Veniz XR", "Venlamax XR"],
+              "form": "Extended-release capsule (37.5 mg, 75 mg, 150 mg)",
+              "dosage": "Start 37.5 mg once daily for 7 days; then 75 mg once daily; therapeutic dose for GAD: 75-150 mg/day; panic disorder: 75-225 mg/day; maximum 225 mg/day",
+              "use_case": "GAD (FDA-approved — extensive evidence); Panic Disorder (FDA-approved); Social Anxiety Disorder (FDA-approved); combined anxiety and depression; when SSRIs have failed or caused intolerable side effects",
+              "side_effects": ["Blood pressure elevation (dose-dependent — monitor BP, particularly at doses >150 mg)", "Discontinuation syndrome (severe if abruptly stopped — particularly vomiting, electric shock sensations — 'brain zaps'; taper over weeks to months)", "Nausea (most common initial side effect)", "Sexual dysfunction", "Cardiac monitoring recommended in higher doses"],
+              "approved_for": "GAD, Panic Disorder, Social Anxiety Disorder, MDD"
+            },
+            {
+              "name": "Duloxetine — For Anxiety with Somatic Symptoms and Pain",
+              "brand_examples": ["Dulane", "Duzela", "Cymbalta"],
+              "form": "Capsule (20 mg, 30 mg, 60 mg)",
+              "dosage": "Start 30 mg once daily for 2 weeks; then 60 mg/day; maximum 120 mg/day",
+              "use_case": "GAD (FDA-approved — particularly effective when somatic anxiety symptoms are prominent: muscle tension, headache, chronic pain); combined anxiety and depression; anxiety with fibromyalgia or chronic pain; anxiety with diabetic neuropathy (multiple uses in a single drug)",
+              "side_effects": "Nausea (most common); insomnia or fatigue; blood pressure elevation; discontinuation syndrome",
+              "approved_for": "GAD, MDD, Fibromyalgia, Diabetic Neuropathy, Chronic Musculoskeletal Pain"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-263",
+          "category_name": "Buspirone — Non-Habit-Forming Anxiolytic for GAD",
+          "purpose": "A unique non-benzodiazepine anxiolytic — specifically for GAD; works via 5-HT1A receptor partial agonism reducing amygdala reactivity; no abuse potential; no sedation; no dependence. Particularly valuable in India for primary care prescribing where benzodiazepine dependence is a major concern.",
+          "medicines": [
+            {
+              "name": "Buspirone",
+              "brand_examples": ["Buspar", "Buspin 5/10/15 mg"],
+              "form": "Tablet (5 mg, 10 mg, 15 mg)",
+              "dosage": "Start 5 mg three times daily; increase to 10-15 mg three times daily over 2-3 weeks; maximum 60 mg/day in divided doses; take consistently (not as needed)",
+              "mechanism": "Selective serotonin 5-HT1A receptor partial agonist; reduces amygdala reactivity; also weak dopamine D2 receptor effects; NO activity at GABA receptor (does not cause sedation or dependence)",
+              "advantages": "No abuse potential or dependence; no sedation; no cognitive impairment; no withdrawal syndrome; can be used long-term without dependence concerns; IDEAL for patients with history of benzodiazepine dependence",
+              "disadvantages": "Slow onset (2-4 weeks for anxiolytic effect — unlike benzodiazepines which work within 30 minutes); requires consistent dosing (not PRN); ineffective in patients previously using benzodiazepines (cross-tolerance reduces efficacy); less effective for panic disorder; less effective than SSRIs overall",
+              "india_significance": "Buspirone is significantly underused in India despite being an ideal non-addictive alternative to alprazolam for GAD; ideally suited for primary care use; generic formulations available at Rs 5-15 per tablet",
+              "approved_for": "GAD (FDA-approved)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-264",
+          "category_name": "Benzodiazepines — Short-Term Only; High Dependence Risk — Use with Extreme Caution",
+          "purpose": "GABA-A receptor positive allosteric modulators providing rapid anxiolysis and sedation; role in anxiety disorders is extremely limited; should be prescribed ONLY for specific short-term indications with clear plans for discontinuation.",
+          "critical_warning": "BENZODIAZEPINES ARE THE MOST OVERPRESCRIBED AND MOST HARMFUL CLASS OF DRUGS FOR ANXIETY IN INDIA: physical dependence develops within 2-4 weeks; cognitive impairment; fall risk in elderly; respiratory depression with alcohol; rebound anxiety on discontinuation (often more severe than original anxiety — perpetuating the cycle); withdrawal syndrome (anxiety, insomnia, seizures — potentially life-threatening) on abrupt discontinuation; tolerance develops — requiring increasing doses for the same effect; do NOT improve the underlying anxiety disorder and may worsen long-term outcomes; THE FIRST PRESCRIPTION OF A BENZODIAZEPINE SHOULD ALWAYS COME WITH A CLEAR PLAN FOR DISCONTINUATION. India is in the midst of a silent benzodiazepine crisis — alprazolam is one of the most prescribed drugs in the entire country.",
+          "legitimate_limited_indications": [
+            "Bridge treatment (maximum 2-4 weeks) while waiting for SSRI to take effect in severe acute anxiety or panic disorder",
+            "Acute agitation in emergency settings",
+            "Procedural anxiety (dental, medical procedures — single dose)",
+            "Alcohol withdrawal (diazepam chlordiazepoxide are treatment of choice)",
+            "Status epilepticus (diazepam, lorazepam)"
+          ],
+          "medicines": [
+            {
+              "name": "Alprazolam — Most Widely Misused BZD in India",
+              "brand_examples": ["Alprax", "Restyl", "Trika", "Xanax"],
+              "form": "Tablet (0.25 mg, 0.5 mg, 1 mg)",
+              "dosage": "0.25-0.5 mg twice-three times daily for SHORT-TERM ONLY (maximum 2-4 weeks); NEVER increase dose",
+              "critical_india_note": "Alprazolam is dramatically overprescribed in India for all forms of anxiety, insomnia, and distress — often by general physicians, cardiologists, and even traditional practitioners without psychiatric evaluation; many patients are maintained on alprazolam for years or decades; alprazolam has the shortest half-life of common BZDs — most severe discontinuation syndrome; creating widespread unrecognised BZD dependence across India; the situation is a major public health crisis that receives inadequate attention"
+            },
+            {
+              "name": "Clonazepam",
+              "brand_examples": ["Lonazep", "Rivotril"],
+              "form": "Tablet (0.25 mg, 0.5 mg, 1 mg, 2 mg)",
+              "dosage": "0.25-0.5 mg twice daily for short-term adjunct",
+              "use_case": "Longer half-life than alprazolam — smoother effect; preferred for benzodiazepine tapering/switching when discontinuing alprazolam (switching from short-acting to longer-acting BZD facilitates smoother taper)",
+              "note": "Also used as anticonvulsant (epilepsy — where long-term use is indicated)"
+            },
+            {
+              "name": "Diazepam",
+              "brand_examples": ["Calmpose", "Valium"],
+              "form": "Tablet (2 mg, 5 mg, 10 mg); IV solution",
+              "use_case": "Long half-life BZD — used for alcohol detoxification; acute agitation; status epilepticus; IV diazepam for acute seizure management; oral tapering protocol for BZD dependence discontinuation"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-265",
+          "category_name": "Pregabalin and Gabapentin — For Refractory GAD and Social Anxiety",
+          "medicines": [
+            {
+              "name": "Pregabalin (Lyrica)",
+              "brand_examples": ["Pregabalin: Pregabid", "Lyrica", "Pregeb"],
+              "form": "Capsule (25 mg, 50 mg, 75 mg, 150 mg)",
+              "dosage": "Start 25-50 mg twice daily; therapeutic dose for GAD: 150-300 mg/day in 2-3 divided doses; maximum 450-600 mg/day",
+              "use_case": "GAD (particularly when somatic symptoms are prominent: muscle tension, physical anxiety symptoms); Social Anxiety Disorder; refractory anxiety not responding to SSRIs/SNRIs; particularly useful for patients with concurrent neuropathic pain or fibromyalgia; faster onset than SSRIs (1-2 weeks vs 4-8 weeks)",
+              "mechanism": "Alpha-2-delta calcium channel subunit ligand — reduces excitatory neurotransmitter release from anxious neural circuits; reduces central sensitisation contributing to anxiety",
+              "abuse_potential": "Some abuse potential noted (recreational euphoria at high doses); classify use carefully; not a Schedule H1 drug in India currently but prescribe with care in patients with substance use history"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-266",
+          "category_name": "Beta-Blockers — Situational and Performance Anxiety",
+          "medicines": [
+            {
+              "name": "Propranolol",
+              "brand_examples": ["Inderal", "Ciplar"],
+              "form": "Tablet (10 mg, 20 mg, 40 mg)",
+              "dosage": "10-40 mg taken 30-60 minutes before the anxiety-provoking situation (PRN — as needed); NOT for continuous daily use for anxiety disorders",
+              "use_case": "SITUATIONAL / PERFORMANCE ANXIETY: examination anxiety (trembling, palpitations before JEE/NEET/interviews — propranolol reduces the peripheral physical symptoms; does not affect cognition; widely and legitimately used by medical students and professionals for pre-performance anxiety); stage fright; public speaking; driving test anxiety; NOT effective for generalised anxiety or panic disorder (does not cross blood-brain barrier sufficiently to address central anxiety mechanisms)",
+              "mechanism": "Non-selective beta-adrenergic blocker — reduces sympathetically-mediated physical symptoms of anxiety (tachycardia, tremor, palpitations, sweating) without significantly altering central anxiety experience",
+              "contraindications": "Asthma/COPD (bronchospasm risk); very important in India given high asthma prevalence; heart block; uncontrolled heart failure; diabetes (masks hypoglycaemia warning signs)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-267",
+          "category_name": "Augmentation Strategies — When First-Line Treatments Fail",
+          "medicines": [
+            {
+              "name": "Mirtazapine — Augmentation for Insomnia and Anxiety",
+              "brand_examples": ["Mirtaz", "Mirnite"],
+              "form": "Tablet (7.5 mg, 15 mg, 30 mg, 45 mg)",
+              "dosage": "7.5-15 mg at bedtime (sedating — uses low dose for insomnia); anxiety augmentation: 15-30 mg at night alongside SSRI/SNRI",
+              "use_case": "Augmentation of SSRI for anxiety with significant insomnia; reduces SSRI-induced insomnia and sexual dysfunction; for anxiety with concurrent significant weight loss or poor appetite (mirtazapine increases appetite); unique mechanism (alpha-2 antagonist + 5-HT2A/3 antagonist) complements SSRI"
+            },
+            {
+              "name": "Quetiapine (Low Dose) — Augmentation for Refractory GAD",
+              "brand_examples": ["Seroquel", "Qutipin"],
+              "form": "Tablet (25 mg, 50 mg, 100 mg, 150 mg extended-release)",
+              "dosage": "25-50 mg at bedtime for anxiety augmentation",
+              "use_case": "Refractory GAD not responding to SSRIs, SNRIs, and buspirone; significant insomnia complicating anxiety; off-label but evidence-based for GAD augmentation; monitor weight and metabolic effects",
+              "note": "Reserve for specialist use — low-dose quetiapine requires metabolic monitoring (glucose, lipids, weight)"
+            },
+            {
+              "name": "Hydroxyzine",
+              "brand_examples": ["Atarax", "Hydroxyzine"],
+              "form": "Tablet (10 mg, 25 mg)",
+              "dosage": "25-50 mg three to four times daily",
+              "use_case": "GAD; pruritus; relatively safe non-benzodiazepine anxiolytic with sedating properties; useful as short-term non-habit-forming anxiolytic; no abuse potential; available OTC in many Indian pharmacies"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-268",
+          "category_name": "Evidence-Based Herbal and Ayurvedic Preparations",
+          "purpose": "Adjunctive treatments with emerging scientific evidence; deeply accepted in Indian traditional medical culture; should be discussed openly with patients who are likely using them regardless. NOT replacements for evidence-based treatments but potentially useful adjuncts.",
+          "medicines": [
+            {
+              "name": "Ashwagandha (Withania somnifera) — Adaptogen",
+              "brand_examples": ["KSM-66 Ashwagandha", "Himalaya Ashvagandha", "Patanjali Ashwagandha", "various extracts"],
+              "form": "Capsule; powder (churna); tablet",
+              "dosage": "300-600 mg of standardised root extract (KSM-66 or Sensoril) once or twice daily",
+              "mechanism": "Withanolides in ashwagandha modulate cortisol levels (adaptogenic — reduces cortisol spikes in response to stress); GABA receptor modulation; anti-inflammatory; anxiolytic in preclinical models; reduces thyroid-stimulating hormone (monitor thyroid in hypothyroid patients — may increase T4)",
+              "evidence": "Multiple RCTs in India and globally: Chandrasekhar et al. (2012 — JACA, Indian trial): 300 mg KSM-66 twice daily significantly reduced anxiety (GAD-7), cortisol, and stress vs placebo over 60 days; Singh et al. (2015): 600 mg/day reduced anxiety and insomnia significantly; emerging evidence for chronic stress, GAD, and insomnia",
+              "safety": "Generally well-tolerated; GI disturbance; thyroid effects (monitor TSH); possible interaction with sedatives and thyroid medications; AVOID in pregnancy",
+              "india_note": "Ashwagandha is the most scientifically validated Ayurvedic anxiolytic; can be recommended as an evidence-based adjunct to CBT for mild-moderate anxiety in patients who prefer natural approaches or as culturally acceptable entry point into treatment"
+            },
+            {
+              "name": "Brahmi (Bacopa monnieri) — Cognitive and Anxiolytic",
+              "brand_examples": ["Bacopa extract", "Himalaya Bacopa", "Brahmi tablets"],
+              "form": "Capsule; powder",
+              "dosage": "300-450 mg standardised extract daily",
+              "evidence": "RCTs show cognitive enhancement (memory, processing speed); anxiety reduction in chronic stress; GABA modulation and serotonergic activity; used in Ayurveda for 'medhya' (brain health) and anxious minds",
+              "use_case": "Mild anxiety; cognitive complaints in anxiety; students with examination anxiety and memory concerns"
+            },
+            {
+              "name": "Jatamansi (Nardostachys jatamansi) — Sedative Anxiolytic",
+              "brand_examples": ["Jatamansi tablets (various Ayurvedic brands)", "Himalaya Tagara"],
+              "use_case": "Traditional Ayurvedic use for anxiety and insomnia; mild anxiolytic; available as herbal supplement; limited clinical trial evidence but long traditional use history in India"
+            }
+          ]
+        }
+      ]
+    },
+
+    "psychotherapy": {
+      "overview": "Psychotherapy — particularly Cognitive Behavioural Therapy (CBT) — is the most effective, evidence-based, and DURABLE treatment for anxiety disorders. Unlike medications (which reduce symptoms only while taken), psychotherapy teaches skills that persist after treatment ends, significantly reducing relapse rates. Every anxious patient deserves access to psychological treatment.",
+      "cbt_cognitive_behavioural_therapy": {
+        "description": "The gold standard psychological treatment for all anxiety disorders — with the largest and most robust evidence base of any psychological intervention for anxiety; more effective than medication alone in many studies; combination CBT + SSRI is most effective for moderate-severe anxiety",
+        "key_components": [
+          "PSYCHOEDUCATION: understanding the CBT model of anxiety (thoughts → feelings → behaviours → physical symptoms); normalising anxiety; explaining the vicious cycle of anxiety and avoidance; the neuroscience of anxiety (amygdala hyperactivation, fight-or-flight response) — patients are relieved to understand their symptoms have a biological basis",
+          "COGNITIVE RESTRUCTURING: identifying and challenging anxious automatic thoughts; thought records; recognising cognitive distortions (catastrophising, probability overestimation, mind-reading, all-or-nothing thinking); developing balanced realistic counter-thoughts; evidence testing ('what is the realistic probability that the worst will happen?')",
+          "BEHAVIOURAL EXPERIMENTS: testing anxious predictions in real life; 'what will actually happen if I do X?' — designing small experiments to test fear predictions; discovering that feared outcomes usually don't occur (or are manageable if they do)",
+          "EXPOSURE THERAPY: the most powerful component — systematic, graduated approach to feared situations (from least to most feared); the goal is HABITUATION and INHIBITORY LEARNING (new learning that the feared situation is safe, overwriting the old fear association); the evidence-based principle: anxiety naturally habituates when maintained long enough without escape; avoidance prevents this natural learning",
+          "RELAXATION AND AROUSAL MANAGEMENT: controlled diaphragmatic breathing (the most evidence-based acute anxiety management technique); progressive muscle relaxation (PMR — systematically tensing and releasing muscle groups); applied relaxation (using relaxation as a coping skill in vivo, not just in the clinic)",
+          "MINDFULNESS INTEGRATION: in Mindfulness-Based CBT — developing an observer relationship with anxious thoughts; noticing thoughts without identifying with them ('I am having the thought that something bad will happen' vs 'something bad will happen')"
+        ],
+        "number_of_sessions": "Typically 8-16 weekly sessions (50-60 minutes each) for most anxiety disorders; some specific phobias respond to single session (3-hour intensive); panic disorder: 8-12 sessions; GAD: 12-16 sessions; social anxiety: 12-20 sessions (particularly if long-standing)",
+        "india_challenges": "Severe shortage of trained CBT therapists in India (estimated 2,000 clinical psychologists for 1.4 billion people); concentrated in metro cities; cost (private CBT: Rs 1,500-5,000 per session — unaffordable for most); cultural factors (expressing feelings to a stranger is uncomfortable for many Indians; brief, solution-focused approaches may be culturally preferred over long-term therapy); SOLUTIONS: stepped care (low-intensity internet-delivered CBT first; face-to-face only for more severe); NIMHANS, TISS, and CMH institutions provide low-cost/free therapy; iCall (Tata Institute of Social Sciences) provides counselling; teletherapy/video CBT dramatically expanding access"
+      },
+      "other_evidence_based_therapies": [
+        {
+          "therapy": "Acceptance and Commitment Therapy (ACT)",
+          "description": "Third-wave CBT; instead of challenging anxious thoughts (as in classic CBT), ACT focuses on ACCEPTING anxiety as an inevitable part of life while COMMITTING to values-based action despite anxiety; 'anxiety is not the problem — living a smaller life to avoid anxiety is the problem'; particularly suited for chronic anxiety where thought challenging has been tried extensively"
+        },
+        {
+          "therapy": "Mindfulness-Based Stress Reduction (MBSR)",
+          "description": "8-week structured programme (Kabat-Zinn; Massachusetts General Hospital); formally teaches mindfulness meditation and yoga; RCTs show significant anxiety reduction; Cochrane review supports MBSR for anxiety and depression; widely practised and culturally resonant in India (rooted in Buddhist/Hindu meditative traditions)"
+        },
+        {
+          "therapy": "Exposure and Response Prevention (ERP) — Specific for OCD",
+          "description": "The gold standard treatment for OCD — deliberately exposing the person to obsessional triggers WHILE PREVENTING compulsive rituals (response prevention); the discomfort of not performing the ritual habituates over time; CBT therapist-guided; requires significant patient courage and motivation"
+        },
+        {
+          "therapy": "EMDR (Eye Movement Desensitisation and Reprocessing) — Specific for PTSD",
+          "description": "Evidence-based treatment for PTSD and trauma-related anxiety; bilateral stimulation (eye movements, tapping, or auditory tones) while processing traumatic memories; reduces the emotional intensity of traumatic memories; WHO-endorsed for PTSD"
+        },
+        {
+          "therapy": "Interpersonal Therapy (IPT)",
+          "description": "Focuses on interpersonal context of anxiety and depression; useful when anxiety is strongly linked to relationship conflicts, role transitions, or grief; relevant in Indian contexts of joint family conflicts, marital difficulties, and bereavement"
+        }
+      ],
+      "yoga_and_pranayama": {
+        "evidence": "Multiple systematic reviews and RCTs support yoga (particularly asana practice combined with pranayama and meditation) as a significant and clinically meaningful reduction of anxiety symptoms; effect sizes comparable to antidepressant medications for mild-moderate anxiety; yoga reduces cortisol, improves HRV (heart rate variability — a biomarker of ANS balance), increases GABA, and promotes parasympathetic tone; culturally acceptable and widely accessible in India",
+        "specific_practices_for_anxiety": [
+          "PRANAYAMA (breathing practices): Nadi Shodhana (alternate nostril breathing — reduces sympathetic activation, activates parasympathetic; evidence for reducing anxiety and cortisol); Bhramari (humming bee breath — vagus nerve stimulation; rapid calming effect); Anulom Vilom; 4-7-8 breathing; Deep diaphragmatic breathing",
+          "YOGA ASANAS: forward bends (activates parasympathetic — calming); gentle supported back bends; legs-up-the-wall (Viparita Karani); Child's pose; Shavasana (corpse pose — systematic relaxation); avoid highly stimulating inversions in severe anxiety",
+          "MEDITATION: mindfulness meditation (Vipassana — Buddhist tradition native to India; widely available); Yoga Nidra (sleep-based meditation); Transcendental Meditation (TM); all reduce anxiety",
+          "EVIDENCE: Cramer et al. (2018) meta-analysis: yoga significantly reduces anxiety vs control conditions; Streeter et al. (2010): yoga increases brain GABA levels (direct mechanism for anxiolytic effect); Indian studies (NIMHANS): yoga reduces cortisol and HAM-A anxiety scores comparably to lorazepam over 12 weeks"
+        ]
+      }
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet influences anxiety through multiple pathways: the gut-brain axis (gut microbiome communicates with the brain via the vagus nerve — gut dysbiosis from poor diet worsens anxiety); nutritional deficiencies (B vitamins, magnesium, omega-3, zinc — all affect neurotransmitter function); blood glucose regulation (hypoglycaemia triggers anxiety-like sympathetic activation); and specific dietary components (caffeine — direct anxiogenic; alcohol — rebound anxiety). The emerging 'nutritional psychiatry' field supports dietary modification as a complementary component of anxiety treatment.",
+      "gut_brain_axis": "The gut-brain axis is a bidirectional communication network between the gut microbiome and the brain; 90-95% of the body's serotonin is produced in the gut by enterochromaffin cells (influenced by gut bacteria); gut inflammation and dysbiosis → increased neuroinflammation → worsened anxiety and depression; prebiotics and probiotics reduce anxiety in clinical trials; the Indian diet with abundant fermented foods (curd/dahi, idli, dosa, kanji) naturally supports a healthy gut microbiome",
+      "recommended_foods": [
+        {
+          "category": "Anti-Anxiety Nutritional Components",
+          "items": [
+            {
+              "food": "Magnesium-Rich Foods — 'The Anti-Stress Mineral'",
+              "benefit": "Magnesium regulates NMDA glutamate receptors (reducing excitatory neurotransmission — anxiolytic); required for GABA function; involved in cortisol regulation; deficiency is very common in anxious individuals (stress depletes magnesium; magnesium deficiency worsens stress — a vicious cycle); Indian food sources: rajma (kidney beans); dark chocolate (70%+ cacao); pumpkin seeds (kaddu ke beej); almonds; cashews; banana; avocado; dark leafy greens (spinach); whole grains; RCT evidence: magnesium glycinate 300-400 mg/day reduces anxiety symptoms in deficient individuals",
+              "frequency": "Daily magnesium-rich foods; consider supplement (magnesium glycinate 200-400 mg at bedtime) if dietary intake inadequate; particularly helpful for insomnia component of anxiety"
+            },
+            {
+              "food": "Probiotic Foods — Gut-Brain Axis Support",
+              "benefit": "Live bacterial cultures in fermented foods improve gut microbiome diversity → improved gut serotonin production → better mood and anxiety regulation; clinical evidence for probiotics (Lactobacillus and Bifidobacterium strains) reducing anxiety symptoms in multiple RCTs; Indian traditional diet has excellent probiotic sources: Dahi/curd (especially fresh, non-pasteurised — 'home curd' vs commercial packaged); Idli/dosa (fermented rice-lentil batter); Dhokla (fermented chickpea); Kanji (fermented carrot drink, particularly North Indian); Lassi/chaas; Kimchi/miso (available in urban India)",
+              "frequency": "Daily; fresh home-made curd at every meal where possible; avoid antibiotic use unless medically necessary (destroys gut microbiome)"
+            },
+            {
+              "food": "Omega-3 Fatty Acids — Neuroinflammation Reduction",
+              "benefit": "EPA and DHA (long-chain omega-3) reduce neuroinflammation (elevated in anxiety disorders); improve neuronal membrane fluidity improving serotonin receptor function; RCT evidence (Su et al. 2018, JAMA Network Open): omega-3 supplementation significantly reduces anxiety; particularly EPA component most anxiolytic; Indian food sources: fatty fish (sardines/tarla — very affordable; mackerel/bangda; hilsa); flaxseed (alsi) and flaxseed oil; walnuts; chia seeds",
+              "frequency": "2-3 servings of oily fish per week; 1-2 tablespoons ground flaxseed daily; omega-3 supplement (EPA-rich 1-2 g/day) if fish not consumed"
+            },
+            {
+              "food": "Complex Carbohydrates and Blood Sugar Stability",
+              "benefit": "Blood sugar fluctuations (hypoglycaemia from skipping meals; sugar spikes from refined carbohydrates) trigger sympathetic activation mimicking and worsening anxiety; complex carbohydrates (whole grain roti, brown rice, oats, legumes) provide slow sustained glucose release maintaining stable blood sugar; also tryptophan (serotonin precursor) availability to the brain is improved by moderate carbohydrate intake; AVOID: refined sugar and high-glycaemic foods causing blood sugar spikes followed by anxiety-inducing crashes",
+              "frequency": "Three regular meals daily; never skip breakfast (breakfast skipping → fasting hypoglycaemia → afternoon anxiety spike; very common in urban Indian young adults skipping breakfast and having excessive caffeine instead)"
+            },
+            {
+              "food": "Tryptophan-Rich Foods — Serotonin Precursor",
+              "benefit": "L-tryptophan is the amino acid precursor to serotonin; brain tryptophan availability increases with high-carbohydrate, moderate-protein diet (carbohydrates trigger insulin release → competing amino acids move into muscles → relative increase in tryptophan brain entry); Indian sources: dairy (milk — particularly warm milk at bedtime, which has been shown to improve sleep and reduce anxiety through tryptophan); sesame seeds; sunflower seeds; pumpkin seeds",
+              "frequency": "Warm milk at bedtime (traditional Indian practice with evidence-based mechanism); sesame/pumpkin seeds as daily snack"
+            },
+            {
+              "food": "Herbal Teas — Chamomile, Tulsi, Ashwagandha",
+              "benefit": "Chamomile: multiple RCTs demonstrate significant GAD symptom reduction with chamomile extract (360-1500 mg/day); apigenin — a flavonoid in chamomile — binds GABA-A receptors producing mild anxiolytic effect; Tulsi (Holy Basil): adaptogenic properties; reduces cortisol; widely available in India as tulsi tea; anti-anxiety in animal models; traditional use for stress in Ayurveda; Ashwagandha tea/milk (ashwagandha with warm milk at bedtime): soothing and anxiolytic",
+              "frequency": "1-2 cups chamomile tea daily; morning tulsi tea; ashwagandha milk at bedtime"
+            }
+          ]
+        }
+      ],
+      "foods_and_substances_to_limit": [
+        {
+          "substance": "Caffeine — THE Most Important Dietary Trigger for Anxiety",
+          "reason": "Caffeine is a competitive adenosine receptor antagonist — adenosine is the brain's natural 'slow down' signal; by blocking adenosine, caffeine increases cortical arousal, sympathetic activation, heart rate, and blood pressure — directly triggering and worsening anxiety and panic symptoms. Many anxious Indian patients are drinking 4-8+ cups of strong chai daily (strong Indian chai has 60-100 mg caffeine per cup — a very high total daily dose); this is a highly significant and easily modifiable anxiety contributor. The anxiogenic effect of caffeine is dose-dependent and particularly pronounced in individuals with panic disorder and GAD; some panic disorder patients have panic attacks specifically triggered by caffeine. INDIA NOTE: reducing chai is culturally challenging (chai is deeply social and culturally integral in India); gradual reduction, switching to lighter teas (green tea — lower caffeine), herbal teas, or mixed chai (half-caf) rather than abrupt elimination",
+          "recommendation": "Limit to ≤1-2 cups of chai/coffee per day for anxious patients; caffeine-free after 2 PM (worsens insomnia); consider 2-week caffeine elimination trial to assess its contribution to anxiety symptoms"
+        },
+        {
+          "substance": "Alcohol — Rebound Anxiety Amplifier",
+          "reason": "Alcohol causes initial GABAergic sedation (anxiolytic effect — the reason many anxious people drink); but as alcohol is metabolised (typically 4-6 hours later), REBOUND EXCITATION occurs (GABAergic inhibition wears off; glutamate excitation rebounds) — causing increased anxiety, insomnia, palpitations, and shakiness — the 'next-day anxiety' or 'hangover anxiety'; chronic alcohol use physically alters GABA-A receptor composition → anxiety that only alcohol can temporarily relieve; ALCOHOL IS ONE OF THE MOST COMMON SUBSTANCES MAINTAINING ANXIETY DISORDERS in India; alcohol use disorder and anxiety disorder are tightly comorbid (each makes the other worse)",
+          "recommendation": "Complete abstinence is ideal for anxious patients; minimum: avoid using alcohol as an anxiolytic (using alcohol to 'take the edge off' is self-medicating and worsens long-term anxiety); if alcohol use disorder is comorbid — treat both simultaneously"
+        },
+        {
+          "substance": "Sugar and Refined Carbohydrates",
+          "reason": "Blood glucose spikes from refined sugar and refined carbohydrates → insulin surge → reactive hypoglycaemia → sympathetic activation mimicking anxiety → cycle repeats; particularly relevant for the 'anxiety at 3 PM' pattern common in Indian office workers (lunch of white rice or noodles → blood glucose spike → crash → anxiety and irritability); also: chronic high-sugar diet is associated with gut dysbiosis which worsens neuroinflammation and anxiety",
+          "recommendation": "Replace refined carbohydrates with whole grain alternatives; ensure protein and fat with every meal (slows glucose absorption)"
+        },
+        {
+          "substance": "Ultra-Processed Foods and Food Additives",
+          "reason": "Ultra-processed foods (biscuits, packaged noodles, chips, commercial bread, fast food, energy drinks) contain: high glycaemic sugars; additives and preservatives (linked to gut dysbiosis); artificial colours (linked to hyperactivity and anxiety in children); salt (high sodium → blood pressure elevation worsening physical anxiety symptoms); minimal fibre (worsening gut microbiome health); associated with higher rates of depression and anxiety in multiple large cohort studies (NutriNet, PREDIMED-Plus)"
+        }
+      ]
+    },
+
+    "lifestyle_management": {
+      "exercise_the_most_powerful_lifestyle_intervention": {
+        "evidence": "EXERCISE IS AS EFFECTIVE AS ANTIDEPRESSANTS FOR MILD-MODERATE ANXIETY AND DEPRESSION — multiple meta-analyses confirm this; Blumenthal et al. (1999, 2007) demonstrated aerobic exercise equivalent to sertraline for depression; Stubbs et al. (2017): systematic review of 49 studies — exercise significantly reduces anxiety across all study populations; MECHANISM: exercise acutely increases serotonin and norepinephrine (same targets as SSRIs/SNRIs); increases BDNF (neuroplasticity — hippocampal neurogenesis); reduces cortisol reactivity to stress; increases endogenous endorphins and endocannabinoids (anandamide); improves sleep quality; increases self-efficacy; provides behavioural activation counteracting avoidance; improves body image",
+        "prescription": "150 minutes of moderate-intensity aerobic exercise per week (30 minutes × 5 days) — the minimum evidence-based dose; vigorous exercise 75 minutes/week; START SLOWLY and build — walking 20 minutes daily is a legitimate starting point; ACTIVITIES culturally acceptable in India: brisk morning walk; cycling; swimming; cricket (for enjoyment — not competitive pressure); group exercise classes; badminton; dancing; yoga (see above); EXERCISE TIMING: morning exercise is preferred for anxiety (reduces cortisol peak; sets positive tone for the day; avoids interfering with sleep if done in morning)"
+      },
+      "sleep_hygiene_for_anxiety": {
+        "importance": "Inadequate sleep and anxiety are bidirectionally related — poor sleep increases amygdala reactivity by 60%; anxiety causes hyperarousal preventing sleep; breaking the vicious cycle requires deliberate sleep hygiene",
+        "recommendations": [
+          "Consistent sleep schedule (same time to bed and wake EVERY day — including weekends); the most powerful single sleep intervention",
+          "Sleep restriction initially (go to bed only when sleepy; rise at fixed time regardless) — CBT-I (Cognitive Behavioural Therapy for Insomnia) is the gold standard; more effective than sleeping tablets long-term",
+          "No screens 1 hour before bed (blue light suppresses melatonin; anxiety-provoking social media and news at night worsens anxiety and interferes with sleep); particularly relevant in India where smartphone use at bedtime is near-universal",
+          "Cool, dark, quiet bedroom (sleep hygiene fundamentals)",
+          "Relaxation routine at bedtime: guided progressive muscle relaxation; body scan meditation; warm bath or shower (temperature drop post-bath facilitates sleep onset); warm milk with ashwagandha (traditional Indian bedtime drink with evidence-based rationale)",
+          "Avoid caffeine after 2 PM; avoid alcohol as a sleep aid (disrupts sleep architecture; worsens anxiety next day)"
+        ]
+      },
+      "digital_health_and_social_media_management": {
+        "india_context": "India has 800+ million smartphone users and is one of the world's largest social media markets; social media use (Instagram, Facebook, YouTube, WhatsApp) is a major driver of anxiety — particularly through: social comparison ('everyone else's life is better than mine'); FOMO; cyberbullying; news anxiety (24-hour news cycles of catastrophic events); health anxiety from WhatsApp health forwards; notification-driven interruption of focus and relaxation",
+        "recommendations": [
+          "News diet: limit to once daily — morning (not at bedtime); unfollow anxiety-provoking accounts",
+          "Screen time limits (use smartphone's built-in screen time monitoring); phone-free mealtimes; phone-free bedroom",
+          "WhatsApp 'health forward' literacy: do not share or act on unverified health information; consult a doctor before acting on any health-related forward",
+          "Social media mindful use: set daily limits on Instagram/Facebook; unfollow accounts that increase anxiety or inadequacy feelings; follow mental health content that normalises help-seeking",
+          "Deliberate offline activities: reading physical books; cooking; gardening; social interaction without phones"
+        ]
+      },
+      "addressing_examination_anxiety_india": {
+        "overview": "Examination anxiety affects millions of Indian students preparing for JEE, NEET, UPSC, CA Foundation, Board exams, and other competitive examinations; the gap between aspirants and seats creates a high-stakes anxiety environment that is endemic in Indian society; examination anxiety ranges from mild nervousness (adaptive — improves performance) to severe incapacitating anxiety (impairing — significantly reduces performance)",
+        "evidence_based_strategies": [
+          "COGNITIVE: replace performance-focused goals with process-focused goals ('I will study for 6 focused hours today' vs 'I must rank in top 100 nationally'); challenge perfectionism; normalise difficulty and failure as part of learning; 'test-optional' self-worth (self-worth not contingent on examination results)",
+          "BEHAVIOURAL: structured study schedule with deliberate breaks; Pomodoro technique (25 min work, 5 min break); adequate sleep (sleeping consolidates learning — cramming all night before an exam worsens performance); daily exercise as anxiety management strategy; mock test practice to habitualise examination conditions",
+          "PHYSIOLOGICAL: diaphragmatic breathing before and during exams (reduces cortisol and improves cognitive performance); progressive muscle relaxation in study breaks; adequate nutrition on examination day",
+          "PROPRANOLOL: 10-20 mg taken 30-60 minutes before high-stakes examinations significantly reduces palpitations, tremor, and physical anxiety without cognitive impairment; widely used legitimately by students in India; discuss with a doctor",
+          "FAMILY INVOLVEMENT: parents play a critical role in either exacerbating examination anxiety (comparing with other children; making self-worth contingent on results) or reducing it (unconditional acceptance regardless of results; perspective-framing)"
+        ]
+      },
+      "addressing_stigma_india": {
+        "critical_importance": "Mental health stigma is THE primary barrier to treatment in India — estimated 80% of people with treatable mental health conditions never seek help; reasons: fear of being labelled 'pagal' (crazy); concern about marriage prospects ('mental illness in the family' is a marriage barrier in India's arranged marriage culture); workplace discrimination; family shame; belief that mental illness is a 'weakness' or 'character flaw' rather than a medical condition",
+        "destigmatisation_strategies": [
+          "PSYCHOEDUCATION: understanding anxiety as a brain-based condition (amygdala hyperactivation, serotonin dysregulation) — no different from hypertension or diabetes — helps normalise the experience and reduces self-blame",
+          "LANGUAGE: using non-stigmatising language ('brain health'; 'nervous system regulation'; 'stress management' rather than 'mental illness' or 'psychiatric condition') can improve help-seeking in culturally sensitive contexts",
+          "FAMILY PSYCHOEDUCATION: involving family members (who are often the gatekeepers to treatment in Indian joint families) in understanding anxiety as a medical condition",
+          "CELEBRITY AND PUBLIC DISCOURSE: increasing visibility of Indian public figures (athletes, Bollywood actors, business leaders) openly discussing anxiety and mental health treatment reduces stigma for the general public"
+        ]
+      }
+    },
+
+    "anxiety_monitoring_plan": {
+      "initial_treatment": {
+        "baseline_assessment": "GAD-7 score; PHQ-9 (depression screen — always coexist); suicidal ideation screening; brief functional assessment (work/study/relationship impact); baseline BP and weight (before starting medications)",
+        "at_2_weeks_on_ssri": "Side effect assessment (nausea, insomnia, initial anxiety increase — warn about these); adherence check; suicidal ideation (first 2 weeks on antidepressants — monitor risk particularly in young adults)",
+        "at_4_to_6_weeks": "GAD-7 reassessment; functional improvement; side effect management; dose adjustment if needed (many patients need dose increase at 4-6 weeks)",
+        "at_12_weeks": "Formal response assessment (GAD-7 score; functional domains); if <50% symptom reduction — reassess diagnosis; optimise dose; consider augmentation or switching; ensure CBT is being pursued alongside"
+      },
+      "green_zone": "GAD-7 score <10; symptoms manageable; functioning maintained; sleep adequate; no significant avoidance → continue current treatment; 3-monthly review; begin planning maintenance therapy duration",
+      "yellow_zone": "GAD-7 score 10-14; symptoms causing some impairment; sleep disrupted; emerging avoidance → psychiatry review; medication adjustment; intensify CBT; screen for depression comorbidity",
+      "red_zone": "GAD-7 score ≥15; unable to function; agoraphobic; passive suicidal ideation → urgent psychiatry referral; medication review; intensive outpatient or day programme; family support; safety planning"
+    },
+
+    "complications": [
+      {
+        "complication": "Major Depressive Disorder — Most Common Comorbidity",
+        "description": "50-60% of anxiety disorder patients develop comorbid major depression — the two conditions share neurobiological substrates and mutually worsen each other; untreated anxiety increases lifetime depression risk; combined anxiety-depression carries greater functional impairment than either alone",
+        "severity": "Moderate to Severe",
+        "management": "Simultaneous treatment of both disorders; SSRIs/SNRIs treat both; CBT adapted for comorbid anxiety-depression"
+      },
+      {
+        "complication": "Substance Use Disorder",
+        "description": "40% of people with anxiety disorders develop alcohol or substance use disorder — attempting to self-medicate anxiety with alcohol, cannabis, or benzodiazepines; substance use worsens anxiety long-term (rebound and withdrawal anxiety); creates complex comorbid presentation",
+        "severity": "Severe",
+        "management": "Integrated dual diagnosis treatment; SSRI for anxiety alongside addiction treatment; CBT addressing both; NEVER prescribe benzodiazepines to alcohol-dependent patients (cross-dependence)"
+      },
+      {
+        "complication": "Benzodiazepine Dependence",
+        "description": "Particularly prevalent in India — chronic alprazolam or clonazepam use prescribed by GPs creates physical dependence; the prescribing physician may not recognise the dependence; withdrawal causes severe anxiety, insomnia, and seizure risk",
+        "severity": "Moderate to Severe",
+        "management": "Switch from short-acting BZD (alprazolam) to long-acting (diazepam — equivalent dose conversion); very gradual tapering (10% dose reduction every 2-4 weeks); SSRI started concurrently; CBT; tolerance that the process takes months"
+      },
+      {
+        "complication": "Cardiovascular Disease",
+        "description": "Chronic anxiety → sustained cortisol and sympathetic activation → hypertension; endothelial dysfunction; atherosclerosis; increased risk of myocardial infarction and stroke; meta-analyses confirm anxiety as an independent cardiovascular risk factor",
+        "severity": "Moderate to Severe",
+        "management": "Anxiety treatment reduces cardiovascular risk; monitor BP; lifestyle (exercise, diet, smoking cessation)"
+      },
+      {
+        "complication": "Social and Occupational Dysfunction",
+        "description": "Progressive social withdrawal and occupational impairment from untreated anxiety — relationship breakdown, job loss, academic failure; creates secondary hopelessness and depression; reinforces anxiety through increasing isolation",
+        "severity": "Moderate to Severe",
+        "management": "CBT with behavioural activation and social reintegration; occupational therapy; family support; graded return to work or study"
+      },
+      {
+        "complication": "Suicidal Ideation and Self-Harm",
+        "description": "Anxiety disorders significantly increase suicide risk — particularly when comorbid with depression; the intolerable psychological pain of severe anxiety, panic attacks, and social isolation is associated with passive and active suicidal ideation; examination-related suicide among Indian students is a tragic national public health crisis",
+        "severity": "Life-threatening",
+        "management": "Suicidal ideation screening at EVERY clinical contact; safety planning; immediate psychiatry referral if active ideation; crisis helplines; remove access to means; family involvement"
+      }
+    ],
+
+    "special_populations": {
+      "anxiety_in_children_and_adolescents": {
+        "key_points": [
+          "Anxiety disorders are the most common mental health condition in children (prevalence 5-10%); most adult anxiety disorders begin in childhood",
+          "Most common in India: Separation Anxiety Disorder; Social Anxiety Disorder; examination anxiety; school refusal; Selective Mutism",
+          "First-line treatment for children: CBT (parent-child dyadic CBT — involving parents in both understanding and not reinforcing anxiety); exposure with parental support",
+          "Pharmacotherapy: SSRI (sertraline or fluoxetine — both have evidence and FDA approval for paediatric anxiety); start at very low dose (sertraline 12.5-25 mg in children)",
+          "SCHOOL REFUSAL: urgent intervention — prolonged school avoidance has severe educational, social, and long-term mental health consequences; collaborative school-family-mental health team approach",
+          "Academic pressure and examination anxiety: growing recognition that the Indian competitive examination system causes significant mental health harm; counselling, realistic expectations, and reducing examinations as sole measure of self-worth are crucial"
+        ]
+      },
+      "anxiety_in_elderly": {
+        "key_points": [
+          "Anxiety is underrecognised in elderly — often attributed to 'normal ageing' or mistaken for depression or dementia",
+          "Common presentations in elderly: health anxiety (about serious illness); death anxiety; anxiety following bereavement; worry about finances and dependency",
+          "Prescribing caution in elderly: SSRIs (start very low — 12.5 mg sertraline); AVOID benzodiazepines in elderly (fall risk; cognitive impairment; respiratory depression; paradoxical agitation)",
+          "CBT adapted for elderly is effective; physical exercise highly beneficial for elderly anxiety",
+          "Assess concurrent medical conditions (thyroid, cardiac, metabolic) carefully — physical illness is a major driver of anxiety in elderly"
+        ]
+      },
+      "anxiety_in_pregnancy_and_postpartum": {
+        "key_points": [
+          "Anxiety disorders in pregnancy are more common than postnatal depression (10-15% of pregnant women have clinical anxiety)",
+          "Untreated anxiety in pregnancy is associated with: preterm birth; low birth weight; adverse neonatal neurodevelopmental outcomes; postnatal depression",
+          "SAFE IN PREGNANCY: CBT (first-line for all severity); SSRIs after first trimester risk-benefit discussion (sertraline and escitalopram have most data; small absolute risk of neonatal adaptation syndrome — usually mild and resolves; untreated severe anxiety carries greater risk than medication); mindfulness; yoga (prenatal yoga)",
+          "AVOID: benzodiazepines (neonatal withdrawal, floppy infant syndrome); Venlafaxine (less data)",
+          "Postnatal anxiety: very common; may be missed when postnatal depression screening is focused only on PHQ-9; breastfeeding: sertraline and escitalopram are compatible with breastfeeding"
+        ]
+      },
+      "dhat_syndrome_india_specific": {
+        "description": "A culturally specific anxiety disorder predominantly affecting young Indian (and South Asian) men — characterised by intense anxiety about the perceived consequences of seminal loss through nocturnal emissions, masturbation, or urination; the cultural belief (rooted in Ayurvedic and traditional Indian concepts) that semen (dhatu) is a vital essence whose loss causes physical and mental weakness, fatigue, palpitations, and decline; this creates severe health anxiety specifically about sexual function and semen loss",
+        "clinical_features": "Excessive worry about seminal loss; physical symptoms attributed to dhatu loss (fatigue, weakness, backache, palpitations, cognitive impairment); sexual dysfunction; anxiety and depression; seeking reassurance from multiple practitioners (urologists, sexologists, Ayurvedic vaidyas)",
+        "management": "PSYCHOEDUCATION is the cornerstone — explaining that seminal emission is normal and physiologically insignificant; CBT targeting health anxiety and reassurance-seeking; addressing cultural beliefs sensitively without dismissing them; treating concurrent anxiety and depression with SSRIs; avoid unnecessary medical investigations",
+        "india_significance": "Dhat syndrome is listed in ICD-11 as a 'culture-specific disorder' of South Asia; extremely prevalent in young Indian men; most present to urologists, sexologists, or Ayurvedic practitioners rather than psychiatrists or psychologists; often associated with significant depression and suicidal ideation from shame and perceived sexual inadequacy"
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Annual Influenza Vaccine",
+        "reason": "Influenza and other acute illnesses cause or exacerbate anxiety through multiple mechanisms: systemic inflammatory cytokines directly activate the amygdala and HPA axis (the 'sickness behaviour' response — depression, anxiety, social withdrawal — is mediated by IL-1β, TNF-α, and IL-6); post-viral fatigue and weakness trigger health anxiety; febrile illness can precipitate panic attacks through physiological arousal; influenza vaccination reduces the illness burden that exacerbates anxiety; particularly relevant for Indian patients with health anxiety and panic disorder",
+        "recommendation": "All patients with anxiety disorders annually; particularly health anxiety disorder patients (reducing illness experience reduces health anxiety triggers)"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "reason": "COVID-19 infection dramatically worsens mental health outcomes — multiple studies show 2-3× increased anxiety disorder incidence post-COVID infection; long COVID neuropsychiatric syndrome includes anxiety, cognitive difficulties ('brain fog'), and PTSD-like symptoms; the pandemic itself has been the largest mass trauma event of modern times, causing population-level anxiety; vaccination reduces long COVID neuropsychiatric complications; social reintegration after vaccination reduces anxiety-driven social avoidance",
+        "recommendation": "Follow national schedule; discuss COVID vaccine anxiety specifically with anxious patients (needle phobia, health anxiety about vaccine side effects — using motivational interviewing and exposure-based approaches)"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "reason": "Anxiety patients on psychotropic medications (particularly medications metabolised hepatically) should have optimal liver health; hepatitis B infection causing liver disease can alter medication metabolism; healthcare workers with anxiety disorders who perform or undergo procedures should be protected; students in medical and nursing programmes need routine HBV vaccination",
+        "recommendation": "All unvaccinated adults; healthcare students and workers"
+      }
+    ],
+
+    "crisis_and_emergency_resources_india": {
+      "overview": "Suicidal ideation associated with anxiety disorders requires IMMEDIATE response — not waiting for the next scheduled appointment. Every MedoAir interaction involving suicidal ideation should immediately provide these resources.",
+      "resources": [
+        {"name": "iCall (TISS — Tata Institute of Social Sciences)", "number": "9152987821", "hours": "Monday-Saturday 8AM-10PM", "type": "Counselling and crisis support"},
+        {"name": "Vandrevala Foundation Mental Health Helpline", "number": "1860-2662-345", "hours": "24/7", "type": "Crisis support and counselling"},
+        {"name": "iMHAS — National Mental Health Helpline", "number": "14416", "alternate": "1800-599-0019 (toll-free)", "hours": "24/7", "type": "Government of India mental health helpline"},
+        {"name": "NIMHANS Helpline", "number": "080-46110007", "hours": "24/7", "type": "National Institute of Mental Health and Neurosciences, Bangalore"},
+        {"name": "Snehi", "number": "044-24640050", "hours": "24/7", "type": "Suicide prevention"},
+        {"name": "AASRA", "number": "9820466627", "hours": "24/7", "type": "Suicide prevention crisis line"}
+      ]
+    },
+
+    "when_to_see_doctor": [
+      "Anxiety or worry that significantly interferes with work, studies, relationships, or daily activities for more than 2-4 weeks — clinical assessment needed",
+      "Recurrent panic attacks (episodes of sudden intense fear with racing heart, breathlessness, feeling of dying) — particularly if causing avoidance of activities",
+      "Avoidance of important activities (work, social events, travel, public places) due to fear — progressive restriction of life",
+      "Sleep significantly disrupted by anxiety for more than 2 weeks — insomnia maintaining anxiety requires specific treatment",
+      "Physical symptoms (palpitations, dizziness, breathlessness, chest pain) — medical assessment to exclude cardiac or thyroid cause before accepting anxiety diagnosis",
+      "New anxiety following significant trauma (accident, bereavement, assault) — possible PTSD requiring specialist assessment",
+      "Anxiety with low mood or hopelessness for more than 2 weeks — possible comorbid depression",
+      "Any thoughts of harming yourself or not wanting to continue — URGENT mental health assessment; use crisis resources above",
+      "Child refusing to go to school for more than 1-2 weeks — school refusal anxiety requires prompt assessment and intervention",
+      "Anxiety not responding to self-help strategies (exercise, yoga, relaxation) after 4-6 weeks — consider pharmacotherapy or CBT",
+      "Taking alprazolam or other benzodiazepines daily for more than 2-4 weeks — dependence assessment and safe tapering plan needed"
+    ],
+
+    "emergency_signs": [
+      "ACTIVE SUICIDAL IDEATION WITH A PLAN — 'I am thinking of ending my life' with specific method and intent — CALL 112 or go to the nearest emergency department immediately; do not leave the person alone; contact iCall (9152987821) or Vandrevala (1860-2662-345) simultaneously; remove access to means (medications, sharp objects)",
+      "SEVERE PANIC ATTACK with first-time CHEST PAIN — cannot immediately distinguish from cardiac event; call 112; ECG in emergency to exclude cardiac cause",
+      "COMPLETE INABILITY TO FUNCTION (housebound, unable to eat, eat or self-care) from anxiety — psychiatric emergency; call 112 or go to nearest NIMHANS-affiliated hospital",
+      "ACUTE BENZODIAZEPINE WITHDRAWAL SEIZURE (in someone stopping alprazolam abruptly) — call 112 immediately; IV benzodiazepine needed urgently; NEVER stop long-term benzodiazepines abruptly",
+      "SEVERE ANXIETY WITH PSYCHOTIC FEATURES (hearing voices, believing people are persecuting you, bizarre thoughts) — not typical anxiety disorder; possible psychotic disorder or drug-induced psychosis — emergency psychiatric assessment; call 112"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "I have been anxious for 10 years. My doctor keeps prescribing alprazolam but I don't feel better. What should I do?",
+        "answer": "What you are describing is one of the most common and unfortunately most serious situations in anxiety management in India — and it is NOT your fault. Alprazolam (and other benzodiazepines) provide temporary relief of anxiety symptoms but do not treat the underlying anxiety disorder. Worse, with prolonged use, the brain adapts to the benzodiazepine, and you need increasing doses just to feel normal. When the medication wears off, the rebound anxiety is often worse than the original anxiety — creating a trap where the medication that was supposed to help is now making you worse. After 10 years of alprazolam, your brain chemistry has genuinely changed, and stopping suddenly is dangerous (risk of seizures). Here is what needs to happen: First, you need to see a PSYCHIATRIST (not a general physician for this — a specialist in mental health) who can: properly diagnose your anxiety disorder type; safely plan a very slow tapering of alprazolam (this is done by switching to a longer-acting benzodiazepine like diazepam and reducing by about 10% every 2-4 weeks — this process can take 6-12 months and that is normal); start an SSRI (like sertraline or escitalopram — these are non-addictive and treat the underlying anxiety over 6-12 weeks of use); refer you to a psychologist for Cognitive Behavioural Therapy (CBT) which will give you the tools to manage anxiety without needing medication. You are not 'weak' for being dependent on benzodiazepines — they are physiologically addictive drugs and the prescribing system in India has failed you by continuing them so long. Recovery is absolutely possible."
+      },
+      {
+        "question": "I am a student preparing for NEET and my anxiety is so bad I cannot study. What can I do right now?",
+        "answer": "First, take a breath — what you are experiencing is genuinely common among millions of Indian competitive examination aspirants, and it is treatable. Let me give you immediate and longer-term strategies. IMMEDIATELY (today): Try the 4-7-8 breathing technique: breathe in for 4 counts, hold for 7 counts, breathe out for 8 counts; repeat 4-5 times; this activates the parasympathetic nervous system (the 'calm' system) within minutes and is evidence-based for acute anxiety. NEXT FEW DAYS: Structure your day with deliberate breaks (the Pomodoro technique — 25 minutes of focused study then 5 minutes of rest); exercise daily for 30 minutes even if it means studying 30 minutes less — exercise reduces anxiety more effectively than any amount of anxious extra studying; improve your sleep rigidly — sleep consolidates memory better than night-time studying; limit caffeine (chai and coffee increase the anxiety symptoms you are experiencing). IMPORTANT PERSPECTIVE: Your anxiety is telling you that 'only NEET matters' and 'everything will be ruined if you don't succeed' — these are cognitive distortions. Many excellent doctors failed NEET multiple times and retook it. Many fulfilling careers are not dependent on NEET at all. Your value as a human being is absolutely not determined by your NEET score. If anxiety is significantly impairing your ability to study or sleep for more than 2-4 weeks, please consult a psychiatrist — a short course of medication (propranolol before exams; or an SSRI if anxiety is pervasive) combined with CBT can be transformative. iCall (9152987821) provides counselling for students."
+      },
+      {
+        "question": "Is anxiety a weakness? I am ashamed to tell my family I am seeing a psychiatrist.",
+        "answer": "Anxiety is not a weakness — it is a medical condition involving a change in how a specific part of your brain (the amygdala — the fear processing centre) regulates itself, along with changes in neurotransmitter systems (serotonin and noradrenaline). This is no different from someone having a thyroid condition (where a different gland does not work correctly) or diabetes (where insulin regulation is impaired). Would you feel ashamed to see a cardiologist for a heart condition? The same logic applies. The stigma around mental health in India is real, but it is also mistaken — it comes from misunderstanding that mental health conditions are character flaws rather than medical conditions. The bravest and most intelligent thing you can do when you are struggling is to seek help. As for your family — you have several options: you can choose not to tell them initially and seek help independently; you can bring a trusted family member (a supportive spouse, sibling, or parent) to an appointment if they are understanding; or you can frame it in terms they may find more comfortable ('I am seeing a doctor about stress' or 'I am getting help for my nerves'). Many people in your situation find that as they get better with treatment, their family notices the positive change and becomes supportive. The most important thing right now is that YOU get the help that is available and that will make a real difference to your life. Millions of people in India are in exactly the same situation — the shame belongs to the stigma, not to you."
+      },
+      {
+        "question": "Can yoga and exercise really help anxiety as much as medication?",
+        "answer": "Yes — and the scientific evidence for this is strong and growing. Multiple well-designed clinical trials and systematic reviews demonstrate that regular aerobic exercise reduces anxiety symptoms with an effect size comparable to antidepressant medications for mild-moderate anxiety. The mechanisms are well understood: exercise increases serotonin and norepinephrine (the same neurotransmitters targeted by SSRIs and SNRIs); increases BDNF (a brain growth factor that promotes neuroplasticity and literally helps grow new connections in anxiety-regulating brain circuits); reduces cortisol reactivity to stress; improves sleep quality; and increases self-efficacy. For yoga specifically: a meta-analysis by Cramer et al. (2018) confirmed significant reductions in anxiety; a landmark study by Streeter et al. from Boston University showed that yoga increases GABA levels in the brain — providing a biochemical explanation for the calming effect that Indian practitioners have known for thousands of years. The recommendation for anxiety: 30 minutes of moderate aerobic exercise (brisk walk, jogging, cycling, swimming, dancing) 5 days per week; yoga with pranayama 30-45 minutes daily or 3-4 times weekly. For MILD anxiety: exercise and yoga alone may be sufficient. For MODERATE-SEVERE anxiety: exercise and yoga should be combined with CBT and/or medication — they are powerful ADDITIONS, not necessarily replacements, for clinical treatment. The India-specific advantage: yoga is culturally native, widely practiced, and available at very low cost — it should be prescribed alongside any other anxiety treatment."
+      },
+      {
+        "question": "I keep having attacks where my heart races and I feel like I am dying. My cardiologist says my heart is normal. What is happening?",
+        "answer": "What you are describing sounds very much like PANIC ATTACKS — and the fact that your cardiologist has found a normal heart is actually very important and reassuring information (though we understand it is frustrating when there is no clear answer). Here is what is happening: During a panic attack, your brain's alarm system (the amygdala) fires intensely — releasing a surge of adrenaline that activates your heart (palpitations, rapid rate), lungs (breathlessness), and muscles (trembling) exactly as if you were in physical danger, even though there is no actual threat. The experience is genuinely terrifying — 'I feel like I am dying' is what the vast majority of panic attack patients describe. But here is what is critical: panic attacks, while intensely frightening, are NOT medically dangerous in people with normal hearts. The heart rate in a panic attack (typically 100-130 bpm) is the same as during moderate exercise — your heart can sustain this easily. The attack will always pass — typically within 10-20 minutes — without any lasting harm. The treatment for panic disorder is very effective: Cognitive Behavioural Therapy (CBT) — specifically targeting the 'catastrophic misinterpretation' of physical sensations (teaching your brain that racing heart is not a heart attack; breathlessness is not suffocation); SSRI medication (sertraline or escitalopram — taken daily, not just during attacks) which reduces the frequency and intensity of attacks over 6-12 weeks; controlled diaphragmatic breathing (not hyperventilation which worsens attacks). Please see a psychiatrist who can formally diagnose panic disorder and begin one of these treatments. Many people with panic disorder achieve complete remission with treatment."
+      },
+      {
+        "question": "My 12-year-old refuses to go to school because of anxiety. How should I handle it?",
+        "answer": "School refusal from anxiety is a serious situation that needs prompt, coordinated action — but the approach matters enormously. The most important principle is that PROLONGED school avoidance actually worsens the anxiety and creates secondary problems (falling behind academically, social isolation, reduced confidence, increased family conflict). Here is how to approach it: FIRST WEEK: acknowledge your child's distress (it is real, not 'making excuses'), but begin gradual re-exposure to school rather than keeping them home indefinitely. Complete avoidance reinforces the anxiety. SECOND: speak to the school — the class teacher, counsellor, or pastoral care coordinator — to understand if there is bullying, academic pressure, or a specific trigger at school; request a supportive re-entry plan. THIRD: take your child to a child psychiatrist or clinical psychologist trained in CBT; child anxiety is very responsive to treatment; family-based CBT (where you as a parent are involved in treatment) is particularly effective; the therapist will create a gradual re-exposure plan (starting with arriving at school for 30 minutes then building to full days). FOURTH: if anxiety is severe enough to cause significant distress or physical symptoms daily, a short course of SSRI (sertraline is approved for children from age 6 for OCD, used for anxiety) may be recommended by the psychiatrist alongside therapy. What NOT to do: do not simply keep your child home and 'wait until they feel ready' — avoidance of school gets harder and harder to reverse the longer it continues; do not force school attendance without addressing the anxiety (this can be traumatising); do not punish your child for anxiety-driven refusal."
+      }
+    ]
+  }
+}

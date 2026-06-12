@@ -1,40 +1,86 @@
 {
-  "knowledge_base": {
-    "topic": "Cystitis (Urinary Tract Infection)",
-    "definition": {
-      "summary": "Cystitis refers to inflammation or infection of the lower urinary tract, specifically the urinary bladder. It is derived from the Greek word 'kystis' meaning bladder.",
-      "types": {
-        "uncomplicated": "A lower UTI in a non-pregnant, premenopausal, otherwise healthy woman with no known urologic abnormalities or comorbidities.",
-        "complicated": "A UTI associated with risk factors that increase the likelihood of complications, virulence of infection, or chances of antibiotic treatment failure.",
-        "acute": "Characterized by sudden onset of symptoms (dysuria, frequency, urgency, suprapubic discomfort). Typically uncomplicated and responds well to antimicrobial therapy.",
-        "chronic": "Persistent or recurrent inflammation of the bladder lining, often requiring more in-depth investigation into underlying causes.",
-        "hemorrhagic": "Characterized by blood in the urine; can occur in both infectious and non-infectious forms.",
-        "radiation": "A non-infectious form induced by radiation exposure, often as part of cancer treatment.",
-        "interstitial": "A chronic, painful non-infectious form with unclear etiology, characterized by bladder wall inflammation.",
-        "catheter_associated": "UTI occurring in patients with indwelling urinary catheters with signs and symptoms of infection and no other source."
+  "disease": {
+    "id": "DIS-CYSTITIS-001",
+    "name": "Cystitis",
+    "scientific_name": "Acute Bacterial Cystitis",
+    "aliases": [
+      "Bladder Infection",
+      "Lower Urinary Tract Infection",
+      "UTI",
+      "Acute Cystitis"
+    ],
+    "category": "Urinary System Disease",
+    "overview": {
+      "definition": {
+        "summary": "Cystitis refers to inflammation or infection of the lower urinary tract, specifically the urinary bladder. It is derived from the Greek word 'kystis' meaning bladder.",
+        "types": {
+          "uncomplicated": "A lower UTI in a non-pregnant, premenopausal, otherwise healthy woman with no known urologic abnormalities or comorbidities.",
+          "complicated": "A UTI associated with risk factors that increase the likelihood of complications, virulence of infection, or chances of antibiotic treatment failure.",
+          "acute": "Characterized by sudden onset of symptoms (dysuria, frequency, urgency, suprapubic discomfort). Typically uncomplicated and responds well to antimicrobial therapy.",
+          "chronic": "Persistent or recurrent inflammation of the bladder lining, often requiring more in-depth investigation into underlying causes.",
+          "hemorrhagic": "Characterized by blood in the urine; can occur in both infectious and non-infectious forms.",
+          "radiation": "A non-infectious form induced by radiation exposure, often as part of cancer treatment.",
+          "interstitial": "A chronic, painful non-infectious form with unclear etiology, characterized by bladder wall inflammation.",
+          "catheter_associated": "UTI occurring in patients with indwelling urinary catheters with signs and symptoms of infection and no other source."
+        }
+      },
+      "epidemiology": {
+        "general": "UTIs are the most common bacterial infections in women, accounting for 8.6 million ambulatory care visits annually in the US.",
+        "women_lifetime_risk": "Approximately 50% of women will experience at least one UTI in their lifetime.",
+        "annual_incidence_women": "About 10% of women in the US have one or more symptomatic UTIs each year; estimated 0.5 to 0.7 UTIs per person-year in sexually active women.",
+        "age_group": "Young, sexually active women aged 18-24 have the highest incidence.",
+        "spontaneous_resolution": "About 25% of women have spontaneous resolution of symptoms.",
+        "men": "Incidence in men is fewer than 10 cases per 10,000 men under age 65 per year; increases with age.",
+        "economic_burden": "Approximately $1.6 billion in costs associated with acute uncomplicated cystitis in the US; $2 billion annually for ED UTI visits.",
+        "quality_of_life": "Nearly half of affected women miss work or school; up to half avoid sexual activity for an average of one week.",
+        "recurrence": "25% of women experience recurrent cystitis within 6 months after their first UTI."
       }
     },
-    "epidemiology": {
-      "general": "UTIs are the most common bacterial infections in women, accounting for 8.6 million ambulatory care visits annually in the US.",
-      "women_lifetime_risk": "Approximately 50% of women will experience at least one UTI in their lifetime.",
-      "annual_incidence_women": "About 10% of women in the US have one or more symptomatic UTIs each year; estimated 0.5 to 0.7 UTIs per person-year in sexually active women.",
-      "age_group": "Young, sexually active women aged 18-24 have the highest incidence.",
-      "spontaneous_resolution": "About 25% of women have spontaneous resolution of symptoms.",
-      "men": "Incidence in men is fewer than 10 cases per 10,000 men under age 65 per year; increases with age.",
-      "economic_burden": "Approximately $1.6 billion in costs associated with acute uncomplicated cystitis in the US; $2 billion annually for ED UTI visits.",
-      "quality_of_life": "Nearly half of affected women miss work or school; up to half avoid sexual activity for an average of one week.",
-      "recurrence": "25% of women experience recurrent cystitis within 6 months after their first UTI."
+    "anatomy_and_physiology": {
+      "mechanism": "UTIs typically begin with periurethral contamination by a uropathogen from the gut/vaginal flora, followed by colonization of the urethra, then ascending migration to the bladder (or kidneys). Bacterial adherence to uroepithelium is the key pathogenic step.",
+      "why_women_more_susceptible": "Shorter urethra, proximity of urethral meatus to the anus, and moist periurethral environment facilitate bacterial ascent.",
+      "virulence_factors": "E. coli uses type 1 and P-fimbriae (adhesins) to bind uroepithelial receptors. Biofilm formation resists host defenses and antibiotics.",
+      "pyelonephritis_mechanism": "Uropathogens ascend to the kidneys via the ureters. Hematogenous spread is rare (mainly S. aureus).",
+      "complicated_host_factors": "Diabetes impairs immune response; renal insufficiency reduces host defenses; urinary stasis (from stones, obstruction) creates infection nidus; catheter biofilms harbor pathogens."
     },
-    "etiology_and_pathogens": {
+    "causes": {
       "most_common_pathogen": "Escherichia coli (E. coli) causes 75-95% of uncomplicated UTIs.",
       "uncomplicated_uti_pathogens": [
-        { "organism": "Escherichia coli", "percentage": "75-95%", "notes": "Most common; uropathogenic strains use type 1 and P-fimbriae to adhere to uroepithelial cells." },
-        { "organism": "Staphylococcus saprophyticus", "percentage": "4-15%", "notes": "Common in young sexually active women." },
-        { "organism": "Klebsiella pneumoniae", "percentage": "3-7%", "notes": "Second most common after E. coli; can form biofilms." },
-        { "organism": "Proteus mirabilis", "percentage": "3%", "notes": "Produces urease; associated with complicated UTIs and stone formation." },
-        { "organism": "Enterococcus faecalis", "percentage": "0.5-5%", "notes": "Gram-positive; less frequent." },
-        { "organism": "Enterobacter species", "percentage": "1.4%", "notes": "" },
-        { "organism": "Citrobacter species", "percentage": "0.8%", "notes": "" }
+        {
+          "organism": "Escherichia coli",
+          "percentage": "75-95%",
+          "notes": "Most common; uropathogenic strains use type 1 and P-fimbriae to adhere to uroepithelial cells."
+        },
+        {
+          "organism": "Staphylococcus saprophyticus",
+          "percentage": "4-15%",
+          "notes": "Common in young sexually active women."
+        },
+        {
+          "organism": "Klebsiella pneumoniae",
+          "percentage": "3-7%",
+          "notes": "Second most common after E. coli; can form biofilms."
+        },
+        {
+          "organism": "Proteus mirabilis",
+          "percentage": "3%",
+          "notes": "Produces urease; associated with complicated UTIs and stone formation."
+        },
+        {
+          "organism": "Enterococcus faecalis",
+          "percentage": "0.5-5%",
+          "notes": "Gram-positive; less frequent."
+        },
+        {
+          "organism": "Enterobacter species",
+          "percentage": "1.4%",
+          "notes": ""
+        },
+        {
+          "organism": "Citrobacter species",
+          "percentage": "0.8%",
+          "notes": ""
+        }
       ],
       "complicated_uti_pathogens": [
         "Antibiotic-resistant E. coli",
@@ -91,15 +137,8 @@
       "recurrent_uti_definition": "Two or more UTIs within 6 months, OR three or more UTIs within 12 months.",
       "men_uti": "All UTIs in men are generally considered complicated until proven otherwise; evaluate for structural/functional abnormalities."
     },
-    "pathophysiology": {
-      "mechanism": "UTIs typically begin with periurethral contamination by a uropathogen from the gut/vaginal flora, followed by colonization of the urethra, then ascending migration to the bladder (or kidneys). Bacterial adherence to uroepithelium is the key pathogenic step.",
-      "why_women_more_susceptible": "Shorter urethra, proximity of urethral meatus to the anus, and moist periurethral environment facilitate bacterial ascent.",
-      "virulence_factors": "E. coli uses type 1 and P-fimbriae (adhesins) to bind uroepithelial receptors. Biofilm formation resists host defenses and antibiotics.",
-      "pyelonephritis_mechanism": "Uropathogens ascend to the kidneys via the ureters. Hematogenous spread is rare (mainly S. aureus).",
-      "complicated_host_factors": "Diabetes impairs immune response; renal insufficiency reduces host defenses; urinary stasis (from stones, obstruction) creates infection nidus; catheter biofilms harbor pathogens."
-    },
-    "clinical_presentation": {
-      "classic_symptoms": [
+    "symptoms": {
+      "common": [
         "Dysuria (pain, burning, stinging when urinating)",
         "Urinary urgency",
         "Urinary frequency (voiding small volumes often)",
@@ -107,39 +146,16 @@
         "Hematuria (occasionally)",
         "Cloudy or malodorous urine (non-specific)"
       ],
-      "differentiating_uncomplicated_from_pyelonephritis": {
-        "cystitis_only": "Lower urinary symptoms without systemic signs",
-        "pyelonephritis_warning_signs": [
-          "Fever > 38°C",
-          "Chills or rigors",
-          "Flank/costovertebral angle tenderness",
-          "Nausea and vomiting",
-          "Back or side (flank) pain",
-          "Ill-appearing patient",
-          "Tachycardia"
-        ]
-      },
-      "high_predictive_value": "New onset of frequency and dysuria with absence of vaginal discharge has a positive predictive value of 90% for UTI.",
-      "atypical_presentations": {
-        "elderly": "Confusion, behavioral changes, functional decline; classic urinary symptoms may be absent.",
-        "multiple_sclerosis": "Acute neurologic deterioration",
-        "spinal_cord_injury": "Autonomic dysfunction, increased spasticity",
-        "frail_debilitated": "Changes in mental/functional status; only acute dysuria and urinary changes (gross hematuria, color/odor changes) reliably correlate with documented UTI."
-      },
-      "notes": "Urine cloudiness or odor alone in the absence of other symptoms is generally insufficient to justify a diagnosis of cystitis."
+      "severe": [
+        "Fever > 38°C",
+        "Chills or rigors",
+        "Flank/costovertebral angle tenderness",
+        "Nausea and vomiting",
+        "Back or side (flank) pain",
+        "Ill-appearing patient",
+        "Tachycardia"
+      ]
     },
-    "differential_diagnosis": [
-      { "condition": "Vaginitis (bacterial vaginosis, trichomoniasis, candidiasis)", "differentiating_features": "Vaginal discharge, vulvovaginal itch/soreness, odor, dyspareunia; typically no urinary urgency or frequency" },
-      { "condition": "Urethritis (STI-related: chlamydia, gonorrhea)", "differentiating_features": "Pyuria without bacteriuria; risk factors for STI; abnormal discharge" },
-      { "condition": "Pyelonephritis", "differentiating_features": "Fever, chills, flank pain, costovertebral angle tenderness, nausea/vomiting" },
-      { "condition": "Interstitial cystitis / Painful bladder syndrome", "differentiating_features": "No evidence of infection (negative cultures); chronic pelvic/bladder pain; diagnosis of exclusion" },
-      { "condition": "Pelvic inflammatory disease", "differentiating_features": "Pelvic/lower abdominal pain, fever, cervical discharge, dyspareunia" },
-      { "condition": "Bladder cancer", "differentiating_features": "Hematuria, persistent symptoms, older age" },
-      { "condition": "Bladder calculi", "differentiating_features": "Hematuria, interrupted urine flow, lower abdominal pain" },
-      { "condition": "Prostatitis (in men)", "differentiating_features": "Pelvic/perineal pain, fever, malaise, soft tender prostate on exam" },
-      { "condition": "Vulvovaginal atrophy", "differentiating_features": "Post-menopausal women; vaginal dryness, dyspareunia, thin watery discharge" },
-      { "condition": "Appendicitis/Diverticulitis", "differentiating_features": "Pain worsens with movement, nausea/vomiting, fever, bowel changes" }
-    ],
     "diagnosis": {
       "clinical_diagnosis": {
         "summary": "In young, non-pregnant women with typical symptoms (dysuria + frequency) and no vaginal discharge, clinical diagnosis alone may be sufficient to initiate treatment.",
@@ -275,16 +291,36 @@
         ],
         "if_fq_resistance_over_10": "Give initial dose of ceftriaxone 1g IV or consolidated aminoglycoside (gentamicin 5-7 mg/kg once), then transition to oral based on culture.",
         "alternatives_after_susceptibility": [
-          { "drug": "TMP-SMX 160/800 mg", "duration": "14 days" },
-          { "drug": "Cefpodoxime 200 mg BID", "duration": "10-14 days" },
-          { "drug": "Amoxicillin/clavulanate 500 mg TID", "duration": "10-14 days" }
+          {
+            "drug": "TMP-SMX 160/800 mg",
+            "duration": "14 days"
+          },
+          {
+            "drug": "Cefpodoxime 200 mg BID",
+            "duration": "10-14 days"
+          },
+          {
+            "drug": "Amoxicillin/clavulanate 500 mg TID",
+            "duration": "10-14 days"
+          }
         ],
         "inpatient_management": [
-          { "drug": "Ciprofloxacin 400 mg IV q12h" },
-          { "drug": "Levofloxacin 500 mg IV q24h" },
-          { "drug": "Ceftriaxone 1g IV q24h", "duration": "14 days" },
-          { "drug": "Cefepime 1-2g IV q12h" },
-          { "drug": "Piperacillin/tazobactam 3.375g IV q6h" }
+          {
+            "drug": "Ciprofloxacin 400 mg IV q12h"
+          },
+          {
+            "drug": "Levofloxacin 500 mg IV q24h"
+          },
+          {
+            "drug": "Ceftriaxone 1g IV q24h",
+            "duration": "14 days"
+          },
+          {
+            "drug": "Cefepime 1-2g IV q12h"
+          },
+          {
+            "drug": "Piperacillin/tazobactam 3.375g IV q6h"
+          }
         ],
         "notes": "Complete course with oral antibiotics after afebrile for 48 hours. Nitrofurantoin and fosfomycin are NOT appropriate for pyelonephritis (poor renal tissue penetration)."
       },
@@ -313,12 +349,32 @@
       },
       "uti_in_pregnancy": {
         "safe_antibiotics": [
-          { "drug": "Nitrofurantoin 100 mg BID", "duration": "5-7 days", "notes": "Avoid first trimester (organogenesis) and near term (38-42 weeks; risk of neonatal hemolytic anemia)" },
-          { "drug": "Amoxicillin 500 mg TID", "duration": "3-7 days" },
-          { "drug": "Amoxicillin/clavulanate 500 mg TID", "duration": "3-7 days" },
-          { "drug": "Cephalexin 500 mg QID", "duration": "3-7 days" },
-          { "drug": "Cefpodoxime 100 mg BID", "duration": "3-7 days" },
-          { "drug": "Fosfomycin 3g", "duration": "Single dose", "notes": "FDA category B; safe" }
+          {
+            "drug": "Nitrofurantoin 100 mg BID",
+            "duration": "5-7 days",
+            "notes": "Avoid first trimester (organogenesis) and near term (38-42 weeks; risk of neonatal hemolytic anemia)"
+          },
+          {
+            "drug": "Amoxicillin 500 mg TID",
+            "duration": "3-7 days"
+          },
+          {
+            "drug": "Amoxicillin/clavulanate 500 mg TID",
+            "duration": "3-7 days"
+          },
+          {
+            "drug": "Cephalexin 500 mg QID",
+            "duration": "3-7 days"
+          },
+          {
+            "drug": "Cefpodoxime 100 mg BID",
+            "duration": "3-7 days"
+          },
+          {
+            "drug": "Fosfomycin 3g",
+            "duration": "Single dose",
+            "notes": "FDA category B; safe"
+          }
         ],
         "avoid": [
           "Fluoroquinolones (toxic effects on fetal cartilage)",
@@ -401,25 +457,99 @@
         "urinary_alkalinizers": "May relieve dysuria; unproven efficacy; contraindicated with nitrofurantoin, in renal failure, hypernatremia"
       }
     },
-    "antibiotic_stewardship": {
-      "principles": [
-        "Select antibiotics based on UTI type, severity, and local susceptibility patterns",
-        "Use narrow-spectrum agents with low collateral damage potential for uncomplicated UTIs",
-        "Avoid routine screening and treatment of asymptomatic bacteriuria",
-        "Short courses are effective for uncomplicated cystitis",
-        "Consider analgesics (ibuprofen) as initial symptomatic treatment in uncomplicated UTIs before antibiotics",
-        "Avoid fluoroquinolones as first-line for uncomplicated cystitis (preserve for more serious infections)",
-        "Consider collateral damage: broad-spectrum cephalosporins and fluoroquinolones select for resistant organisms"
+    "medications": {
+      "first_line_agents": [
+        {
+          "drug": "Nitrofurantoin (macrocrystals/monohydrate)",
+          "dose": "100 mg orally twice daily",
+          "duration": "5 days",
+          "notes": "Preferred first choice. High cure rate (79-92%). Does NOT cause collateral damage. Avoid if CrCl < 30-60 mL/min (per different guidelines), if pyelonephritis suspected, or in urine pH ≥ 8. Avoid in first trimester and near-term pregnancy.",
+          "resistance": "Only 0.9% resistance among female outpatients."
+        },
+        {
+          "drug": "Trimethoprim/Sulfamethoxazole (TMP-SMX)",
+          "dose": "160/800 mg (1 double-strength tablet) orally twice daily",
+          "duration": "3 days",
+          "notes": "Use only if local E. coli resistance < 20%. Cure rate 90-100%. Avoid if used in preceding 3 months, if sulfa allergy, or if resistance rate known to exceed 20%. Avoid in first trimester and after 32 weeks of pregnancy.",
+          "resistance": "22.2% resistance in US outpatients (2012)."
+        },
+        {
+          "drug": "Trimethoprim (alone)",
+          "dose": "100 mg orally twice daily (or 300 mg once nightly in Australian guidelines)",
+          "duration": "3 days",
+          "notes": "Alternative to TMP-SMX in sulfa-allergic patients. Similar efficacy."
+        },
+        {
+          "drug": "Fosfomycin trometamol",
+          "dose": "3 g orally as a single dose",
+          "duration": "Single dose",
+          "notes": "Convenient single-dose regimen. Lower effectiveness than some agents. Broad spectrum including ESBL producers and Enterococcus (including VRE). Less effective against Klebsiella and Pseudomonas. FDA category B in pregnancy. Avoid if pyelonephritis suspected. Increasing resistance with increased use.",
+          "resistance": "Generally low, but rising with overuse."
+        }
       ],
-      "collateral_damage_concept": "Ecological adverse effects of antibiotic therapy — selection of drug-resistant organisms, proliferation of MDR bacteria. Broad-spectrum cephalosporins linked to VRE, ESBL-producing Klebsiella, and C. difficile. Fluoroquinolones linked to MRSA and fluoroquinolone-resistant Pseudomonas.",
-      "mdr_risk_factors": [
-        "Previous MDR isolate (resistant to ≥ 3 antibiotic classes)",
-        "Recent healthcare facility stay (within 3 months)",
-        "Recent international travel (within 3 months)",
-        "Use of broad-spectrum antibiotics within preceding 3 months",
-        "TMP-SMX use within preceding 3-6 months (increases TMP-SMX resistance)"
+      "second_line_agents": [
+        {
+          "drug": "Ciprofloxacin",
+          "dose": "250 mg orally twice daily",
+          "duration": "3 days",
+          "notes": "Reserve for when first-line agents cannot be used. Risk of collateral damage (MDR organism selection). FDA safety communication: serious adverse events (tendinitis, peripheral neuropathy, CNS effects) outweigh benefits for uncomplicated cystitis when alternatives are available."
+        },
+        {
+          "drug": "Levofloxacin",
+          "dose": "250-500 mg orally once daily",
+          "duration": "3 days",
+          "notes": "Same considerations as ciprofloxacin."
+        },
+        {
+          "drug": "Ofloxacin",
+          "dose": "200 mg orally twice daily OR 400 mg single dose",
+          "duration": "3 days",
+          "notes": "Same class as above fluoroquinolones."
+        }
+      ],
+      "alternative_agents_beta_lactams": [
+        {
+          "drug": "Amoxicillin/clavulanate",
+          "dose": "500/125 mg orally every 8 hours",
+          "duration": "5-7 days",
+          "notes": "Use only when other agents cannot be used. Lower efficacy than TMP-SMX or fluoroquinolones. Clinical efficacy ~89% for oral beta-lactams used 3-5 days."
+        },
+        {
+          "drug": "Cefpodoxime proxetil",
+          "dose": "100 mg orally twice daily",
+          "duration": "5-7 days",
+          "notes": "Alternative when preferred agents unavailable."
+        },
+        {
+          "drug": "Cefdinir",
+          "dose": "300 mg orally twice daily",
+          "duration": "5-7 days"
+        },
+        {
+          "drug": "Cephalexin",
+          "dose": "500 mg orally twice daily",
+          "duration": "5-7 days",
+          "notes": "Widely used in practice but limited data; not recommended by IDSA for uncomplicated UTI but acceptable in some settings."
+        }
+      ],
+      "agents_not_recommended": [
+        "Ampicillin alone (>20% E. coli resistance)",
+        "Amoxicillin alone",
+        "Moxifloxacin (insufficient urinary excretion)"
       ]
     },
+    "complications": [
+      "Pyelonephritis (upper UTI)",
+      "Renal or perinephric abscess",
+      "Urosepsis / sepsis",
+      "Bacteremia",
+      "Renal vein thrombosis",
+      "Acute renal failure",
+      "Emphysematous pyelonephritis",
+      "Emphysematous cystitis (rare; gas in bladder wall; 2/3 have diabetes; ~10% require surgery)",
+      "Chronic cystitis / recurrent UTIs",
+      "Prostatitis (in men)"
+    ],
     "special_populations": {
       "elderly": {
         "risk_factors": "Faecal impaction, incontinence, vaginal/perineal atrophy, impaired bladder emptying, comorbidities, catheters, polypharmacy",
@@ -436,7 +566,11 @@
         "prophylaxis": "TMP-SMX prophylaxis for 6 months (primarily for Pneumocystis jiroveci also prevents UTIs)"
       },
       "lactating_women": {
-        "safe": ["Nitrofurantoin (avoid if infant < 1 month or G6PD deficient)", "TMP-SMX (observe infant for rash/vomiting/diarrhea)", "Most beta-lactams including cephalexin"],
+        "safe": [
+          "Nitrofurantoin (avoid if infant < 1 month or G6PD deficient)",
+          "TMP-SMX (observe infant for rash/vomiting/diarrhea)",
+          "Most beta-lactams including cephalexin"
+        ],
         "consult": "LactMed for current data on individual antibiotics"
       },
       "skilled_nursing_facility": {
@@ -445,19 +579,7 @@
         "recommendation": "Routine screening for ASB NOT recommended in SNF residents; treat only symptomatic patients"
       }
     },
-    "complications": [
-      "Pyelonephritis (upper UTI)",
-      "Renal or perinephric abscess",
-      "Urosepsis / sepsis",
-      "Bacteremia",
-      "Renal vein thrombosis",
-      "Acute renal failure",
-      "Emphysematous pyelonephritis",
-      "Emphysematous cystitis (rare; gas in bladder wall; 2/3 have diabetes; ~10% require surgery)",
-      "Chronic cystitis / recurrent UTIs",
-      "Prostatitis (in men)"
-    ],
-    "referral_criteria": {
+    "when_to_see_doctor": {
       "immediate_referral": [
         "Signs of pyelonephritis: fever > 38°C, chills/rigors, flank pain, nausea/vomiting",
         "Symptoms persist 48-72 hours after starting appropriate antibiotic",
@@ -473,7 +595,7 @@
         "Male patients (UTI in men generally complicated)"
       ]
     },
-    "patient_education": {
+    "prevention": {
       "key_messages": [
         "Take the full antibiotic course even if symptoms improve early",
         "Symptoms should improve within 24-48 hours of starting antibiotics",
@@ -551,6 +673,664 @@
         "question": "What is a complicated UTI?",
         "answer": "A complicated UTI occurs in patients with factors that increase infection risk, severity, or likelihood of treatment failure: pregnancy, men, urinary tract obstruction, immunosuppression, renal failure, renal transplantation, neurogenic bladder, indwelling catheters, anatomical abnormalities, diabetes (poorly controlled), or hospital-acquired infection. These require longer treatment (10-14 days) and broader antibiotic coverage."
       }
-    ]
+    ],
+    "raw_source_backup": {
+      "knowledge_base": {
+        "topic": "Cystitis (Urinary Tract Infection)",
+        "definition": {
+          "summary": "Cystitis refers to inflammation or infection of the lower urinary tract, specifically the urinary bladder. It is derived from the Greek word 'kystis' meaning bladder.",
+          "types": {
+            "uncomplicated": "A lower UTI in a non-pregnant, premenopausal, otherwise healthy woman with no known urologic abnormalities or comorbidities.",
+            "complicated": "A UTI associated with risk factors that increase the likelihood of complications, virulence of infection, or chances of antibiotic treatment failure.",
+            "acute": "Characterized by sudden onset of symptoms (dysuria, frequency, urgency, suprapubic discomfort). Typically uncomplicated and responds well to antimicrobial therapy.",
+            "chronic": "Persistent or recurrent inflammation of the bladder lining, often requiring more in-depth investigation into underlying causes.",
+            "hemorrhagic": "Characterized by blood in the urine; can occur in both infectious and non-infectious forms.",
+            "radiation": "A non-infectious form induced by radiation exposure, often as part of cancer treatment.",
+            "interstitial": "A chronic, painful non-infectious form with unclear etiology, characterized by bladder wall inflammation.",
+            "catheter_associated": "UTI occurring in patients with indwelling urinary catheters with signs and symptoms of infection and no other source."
+          }
+        },
+        "epidemiology": {
+          "general": "UTIs are the most common bacterial infections in women, accounting for 8.6 million ambulatory care visits annually in the US.",
+          "women_lifetime_risk": "Approximately 50% of women will experience at least one UTI in their lifetime.",
+          "annual_incidence_women": "About 10% of women in the US have one or more symptomatic UTIs each year; estimated 0.5 to 0.7 UTIs per person-year in sexually active women.",
+          "age_group": "Young, sexually active women aged 18-24 have the highest incidence.",
+          "spontaneous_resolution": "About 25% of women have spontaneous resolution of symptoms.",
+          "men": "Incidence in men is fewer than 10 cases per 10,000 men under age 65 per year; increases with age.",
+          "economic_burden": "Approximately $1.6 billion in costs associated with acute uncomplicated cystitis in the US; $2 billion annually for ED UTI visits.",
+          "quality_of_life": "Nearly half of affected women miss work or school; up to half avoid sexual activity for an average of one week.",
+          "recurrence": "25% of women experience recurrent cystitis within 6 months after their first UTI."
+        },
+        "etiology_and_pathogens": {
+          "most_common_pathogen": "Escherichia coli (E. coli) causes 75-95% of uncomplicated UTIs.",
+          "uncomplicated_uti_pathogens": [
+            {
+              "organism": "Escherichia coli",
+              "percentage": "75-95%",
+              "notes": "Most common; uropathogenic strains use type 1 and P-fimbriae to adhere to uroepithelial cells."
+            },
+            {
+              "organism": "Staphylococcus saprophyticus",
+              "percentage": "4-15%",
+              "notes": "Common in young sexually active women."
+            },
+            {
+              "organism": "Klebsiella pneumoniae",
+              "percentage": "3-7%",
+              "notes": "Second most common after E. coli; can form biofilms."
+            },
+            {
+              "organism": "Proteus mirabilis",
+              "percentage": "3%",
+              "notes": "Produces urease; associated with complicated UTIs and stone formation."
+            },
+            {
+              "organism": "Enterococcus faecalis",
+              "percentage": "0.5-5%",
+              "notes": "Gram-positive; less frequent."
+            },
+            {
+              "organism": "Enterobacter species",
+              "percentage": "1.4%",
+              "notes": ""
+            },
+            {
+              "organism": "Citrobacter species",
+              "percentage": "0.8%",
+              "notes": ""
+            }
+          ],
+          "complicated_uti_pathogens": [
+            "Antibiotic-resistant E. coli",
+            "Pseudomonas aeruginosa",
+            "Acinetobacter baumannii",
+            "Enterococcus spp.",
+            "Staphylococcus spp.",
+            "Klebsiella pneumoniae",
+            "Proteus mirabilis",
+            "Serratia",
+            "Enterobacter",
+            "Candida spp. (especially in catheterized patients on antibiotics)"
+          ],
+          "catheter_associated_pathogens": [
+            "Proteus mirabilis",
+            "Morganella morganii",
+            "Providencia stuartii",
+            "Corynebacterium urealyticum",
+            "Candida spp."
+          ],
+          "resistance_concern": "E. coli resistance to trimethoprim/sulfamethoxazole was 22.2% in 2012; resistance to ciprofloxacin was 11.8%; resistance to nitrofurantoin was only 0.9%. ESBL-producing E. coli is an increasing concern in community-acquired UTIs."
+        },
+        "risk_factors": {
+          "premenopausal_women": [
+            "Sexual intercourse",
+            "Spermicide use (especially with diaphragm)",
+            "New sexual partner",
+            "History of UTI or childhood UTI",
+            "Family history of UTI in first-degree female relative",
+            "Diabetes"
+          ],
+          "postmenopausal_women": [
+            "Estrogen deficiency / atrophic vaginitis",
+            "Functional or mental impairment",
+            "History of UTI before menopause",
+            "Urinary catheterization",
+            "Urinary incontinence",
+            "Urinary retention"
+          ],
+          "complicated_uti_risk_factors": [
+            "Pregnancy or postpartum",
+            "Age < 18 or > 65",
+            "Immunocompromised state (HIV/AIDS, immunosuppressant medications)",
+            "Diabetes mellitus",
+            "Renal disease or impaired renal function",
+            "Urinary tract abnormalities (vesicoureteral reflux, obstruction, neurogenic bladder, stones)",
+            "Foreign bodies (urinary catheter, stent, nephrostomy tube)",
+            "Recent urinary tract instrumentation",
+            "Recent antibiotic use (within 3 months) — increases MDR risk",
+            "Recent hospitalization or long-term care facility residence",
+            "Recent overseas travel (within 3 months)",
+            "Intrauterine device (IUD)"
+          ],
+          "recurrent_uti_definition": "Two or more UTIs within 6 months, OR three or more UTIs within 12 months.",
+          "men_uti": "All UTIs in men are generally considered complicated until proven otherwise; evaluate for structural/functional abnormalities."
+        },
+        "pathophysiology": {
+          "mechanism": "UTIs typically begin with periurethral contamination by a uropathogen from the gut/vaginal flora, followed by colonization of the urethra, then ascending migration to the bladder (or kidneys). Bacterial adherence to uroepithelium is the key pathogenic step.",
+          "why_women_more_susceptible": "Shorter urethra, proximity of urethral meatus to the anus, and moist periurethral environment facilitate bacterial ascent.",
+          "virulence_factors": "E. coli uses type 1 and P-fimbriae (adhesins) to bind uroepithelial receptors. Biofilm formation resists host defenses and antibiotics.",
+          "pyelonephritis_mechanism": "Uropathogens ascend to the kidneys via the ureters. Hematogenous spread is rare (mainly S. aureus).",
+          "complicated_host_factors": "Diabetes impairs immune response; renal insufficiency reduces host defenses; urinary stasis (from stones, obstruction) creates infection nidus; catheter biofilms harbor pathogens."
+        },
+        "clinical_presentation": {
+          "classic_symptoms": [
+            "Dysuria (pain, burning, stinging when urinating)",
+            "Urinary urgency",
+            "Urinary frequency (voiding small volumes often)",
+            "Suprapubic pain or discomfort",
+            "Hematuria (occasionally)",
+            "Cloudy or malodorous urine (non-specific)"
+          ],
+          "differentiating_uncomplicated_from_pyelonephritis": {
+            "cystitis_only": "Lower urinary symptoms without systemic signs",
+            "pyelonephritis_warning_signs": [
+              "Fever > 38°C",
+              "Chills or rigors",
+              "Flank/costovertebral angle tenderness",
+              "Nausea and vomiting",
+              "Back or side (flank) pain",
+              "Ill-appearing patient",
+              "Tachycardia"
+            ]
+          },
+          "high_predictive_value": "New onset of frequency and dysuria with absence of vaginal discharge has a positive predictive value of 90% for UTI.",
+          "atypical_presentations": {
+            "elderly": "Confusion, behavioral changes, functional decline; classic urinary symptoms may be absent.",
+            "multiple_sclerosis": "Acute neurologic deterioration",
+            "spinal_cord_injury": "Autonomic dysfunction, increased spasticity",
+            "frail_debilitated": "Changes in mental/functional status; only acute dysuria and urinary changes (gross hematuria, color/odor changes) reliably correlate with documented UTI."
+          },
+          "notes": "Urine cloudiness or odor alone in the absence of other symptoms is generally insufficient to justify a diagnosis of cystitis."
+        },
+        "differential_diagnosis": [
+          {
+            "condition": "Vaginitis (bacterial vaginosis, trichomoniasis, candidiasis)",
+            "differentiating_features": "Vaginal discharge, vulvovaginal itch/soreness, odor, dyspareunia; typically no urinary urgency or frequency"
+          },
+          {
+            "condition": "Urethritis (STI-related: chlamydia, gonorrhea)",
+            "differentiating_features": "Pyuria without bacteriuria; risk factors for STI; abnormal discharge"
+          },
+          {
+            "condition": "Pyelonephritis",
+            "differentiating_features": "Fever, chills, flank pain, costovertebral angle tenderness, nausea/vomiting"
+          },
+          {
+            "condition": "Interstitial cystitis / Painful bladder syndrome",
+            "differentiating_features": "No evidence of infection (negative cultures); chronic pelvic/bladder pain; diagnosis of exclusion"
+          },
+          {
+            "condition": "Pelvic inflammatory disease",
+            "differentiating_features": "Pelvic/lower abdominal pain, fever, cervical discharge, dyspareunia"
+          },
+          {
+            "condition": "Bladder cancer",
+            "differentiating_features": "Hematuria, persistent symptoms, older age"
+          },
+          {
+            "condition": "Bladder calculi",
+            "differentiating_features": "Hematuria, interrupted urine flow, lower abdominal pain"
+          },
+          {
+            "condition": "Prostatitis (in men)",
+            "differentiating_features": "Pelvic/perineal pain, fever, malaise, soft tender prostate on exam"
+          },
+          {
+            "condition": "Vulvovaginal atrophy",
+            "differentiating_features": "Post-menopausal women; vaginal dryness, dyspareunia, thin watery discharge"
+          },
+          {
+            "condition": "Appendicitis/Diverticulitis",
+            "differentiating_features": "Pain worsens with movement, nausea/vomiting, fever, bowel changes"
+          }
+        ],
+        "diagnosis": {
+          "clinical_diagnosis": {
+            "summary": "In young, non-pregnant women with typical symptoms (dysuria + frequency) and no vaginal discharge, clinical diagnosis alone may be sufficient to initiate treatment.",
+            "key_rule": "Combination of dysuria and urinary frequency in the absence of vaginal discharge or irritation is 90% predictive of UTI."
+          },
+          "urinalysis": {
+            "recommended": true,
+            "key_findings": [
+              "Leukocyte esterase (enzyme from WBCs — indicates pyuria)",
+              "Nitrites (indicates presence of Enterobacteriaceae; organisms convert nitrate to nitrite)",
+              "Pyuria: ≥ 10 WBC/HPF in unspun specimen"
+            ],
+            "notes": "Dipstick is cost-effective. Nitrites + leukocyte esterase together have 85% positive predictive value and 92% negative predictive value. Absence of pyuria suggests alternative diagnosis. Only Acinetobacter, Pseudomonas, and Enterococcus fail to convert nitrates to nitrites.",
+            "specimen": "Clean-catch midstream urine. No significant difference between cleansed and uncleansed specimens in contamination rates."
+          },
+          "urine_culture": {
+            "routine_uncomplicated": "NOT routinely recommended for uncomplicated cystitis.",
+            "when_indicated": [
+              "Suspected acute pyelonephritis",
+              "Symptoms not resolving or recurring within 2-4 weeks after treatment",
+              "Atypical symptoms",
+              "All men with UTI symptoms",
+              "Pregnant women",
+              "Patients with risk factors for complicated UTI",
+              "Suspected MDR organisms",
+              "Before urologic procedures"
+            ],
+            "colony_count": "≥ 100,000 CFU/mL = clinically relevant bacteriuria; ≥ 1,000 CFU/mL significant in men or straight catheter specimens; even 10-100 CFU/mL of E. coli in symptomatic women may be significant."
+          },
+          "imaging": {
+            "when": "Patients not responding after 48-72 hours of appropriate antibiotics; suspected obstruction, abscess, or stones.",
+            "modalities": "CT scan (preferred, most sensitive); renal ultrasound + KUB (for radiation-sensitive patients)."
+          },
+          "pregnancy_test": "Should be performed in women of childbearing age."
+        },
+        "treatment": {
+          "goals": "Symptom relief, eradication of bacteriuria, prevention of progression to pyelonephritis or sepsis. Clinical response expected within 24 hours (cystitis) or 48-72 hours (pyelonephritis). Prefer narrow-spectrum agents with low collateral damage potential.",
+          "acute_uncomplicated_cystitis": {
+            "first_line_agents": [
+              {
+                "drug": "Nitrofurantoin (macrocrystals/monohydrate)",
+                "dose": "100 mg orally twice daily",
+                "duration": "5 days",
+                "notes": "Preferred first choice. High cure rate (79-92%). Does NOT cause collateral damage. Avoid if CrCl < 30-60 mL/min (per different guidelines), if pyelonephritis suspected, or in urine pH ≥ 8. Avoid in first trimester and near-term pregnancy.",
+                "resistance": "Only 0.9% resistance among female outpatients."
+              },
+              {
+                "drug": "Trimethoprim/Sulfamethoxazole (TMP-SMX)",
+                "dose": "160/800 mg (1 double-strength tablet) orally twice daily",
+                "duration": "3 days",
+                "notes": "Use only if local E. coli resistance < 20%. Cure rate 90-100%. Avoid if used in preceding 3 months, if sulfa allergy, or if resistance rate known to exceed 20%. Avoid in first trimester and after 32 weeks of pregnancy.",
+                "resistance": "22.2% resistance in US outpatients (2012)."
+              },
+              {
+                "drug": "Trimethoprim (alone)",
+                "dose": "100 mg orally twice daily (or 300 mg once nightly in Australian guidelines)",
+                "duration": "3 days",
+                "notes": "Alternative to TMP-SMX in sulfa-allergic patients. Similar efficacy."
+              },
+              {
+                "drug": "Fosfomycin trometamol",
+                "dose": "3 g orally as a single dose",
+                "duration": "Single dose",
+                "notes": "Convenient single-dose regimen. Lower effectiveness than some agents. Broad spectrum including ESBL producers and Enterococcus (including VRE). Less effective against Klebsiella and Pseudomonas. FDA category B in pregnancy. Avoid if pyelonephritis suspected. Increasing resistance with increased use.",
+                "resistance": "Generally low, but rising with overuse."
+              }
+            ],
+            "second_line_agents": [
+              {
+                "drug": "Ciprofloxacin",
+                "dose": "250 mg orally twice daily",
+                "duration": "3 days",
+                "notes": "Reserve for when first-line agents cannot be used. Risk of collateral damage (MDR organism selection). FDA safety communication: serious adverse events (tendinitis, peripheral neuropathy, CNS effects) outweigh benefits for uncomplicated cystitis when alternatives are available."
+              },
+              {
+                "drug": "Levofloxacin",
+                "dose": "250-500 mg orally once daily",
+                "duration": "3 days",
+                "notes": "Same considerations as ciprofloxacin."
+              },
+              {
+                "drug": "Ofloxacin",
+                "dose": "200 mg orally twice daily OR 400 mg single dose",
+                "duration": "3 days",
+                "notes": "Same class as above fluoroquinolones."
+              }
+            ],
+            "alternative_agents_beta_lactams": [
+              {
+                "drug": "Amoxicillin/clavulanate",
+                "dose": "500/125 mg orally every 8 hours",
+                "duration": "5-7 days",
+                "notes": "Use only when other agents cannot be used. Lower efficacy than TMP-SMX or fluoroquinolones. Clinical efficacy ~89% for oral beta-lactams used 3-5 days."
+              },
+              {
+                "drug": "Cefpodoxime proxetil",
+                "dose": "100 mg orally twice daily",
+                "duration": "5-7 days",
+                "notes": "Alternative when preferred agents unavailable."
+              },
+              {
+                "drug": "Cefdinir",
+                "dose": "300 mg orally twice daily",
+                "duration": "5-7 days"
+              },
+              {
+                "drug": "Cephalexin",
+                "dose": "500 mg orally twice daily",
+                "duration": "5-7 days",
+                "notes": "Widely used in practice but limited data; not recommended by IDSA for uncomplicated UTI but acceptable in some settings."
+              }
+            ],
+            "agents_not_recommended": [
+              "Ampicillin alone (>20% E. coli resistance)",
+              "Amoxicillin alone",
+              "Moxifloxacin (insufficient urinary excretion)"
+            ]
+          },
+          "acute_uncomplicated_pyelonephritis": {
+            "outpatient_first_line": [
+              {
+                "drug": "Ciprofloxacin",
+                "dose": "500 mg orally twice daily OR 1g ER once daily",
+                "duration": "7 days",
+                "condition": "If local fluoroquinolone resistance < 10%"
+              },
+              {
+                "drug": "Levofloxacin",
+                "dose": "750 mg orally once daily",
+                "duration": "5 days",
+                "condition": "If local fluoroquinolone resistance < 10%"
+              }
+            ],
+            "if_fq_resistance_over_10": "Give initial dose of ceftriaxone 1g IV or consolidated aminoglycoside (gentamicin 5-7 mg/kg once), then transition to oral based on culture.",
+            "alternatives_after_susceptibility": [
+              {
+                "drug": "TMP-SMX 160/800 mg",
+                "duration": "14 days"
+              },
+              {
+                "drug": "Cefpodoxime 200 mg BID",
+                "duration": "10-14 days"
+              },
+              {
+                "drug": "Amoxicillin/clavulanate 500 mg TID",
+                "duration": "10-14 days"
+              }
+            ],
+            "inpatient_management": [
+              {
+                "drug": "Ciprofloxacin 400 mg IV q12h"
+              },
+              {
+                "drug": "Levofloxacin 500 mg IV q24h"
+              },
+              {
+                "drug": "Ceftriaxone 1g IV q24h",
+                "duration": "14 days"
+              },
+              {
+                "drug": "Cefepime 1-2g IV q12h"
+              },
+              {
+                "drug": "Piperacillin/tazobactam 3.375g IV q6h"
+              }
+            ],
+            "notes": "Complete course with oral antibiotics after afebrile for 48 hours. Nitrofurantoin and fosfomycin are NOT appropriate for pyelonephritis (poor renal tissue penetration)."
+          },
+          "complicated_cystitis": {
+            "duration": "5-7 days for acute complicated cystitis; 7-14 days for complicated pyelonephritis",
+            "empiric_options": [
+              "Ciprofloxacin 500 mg orally twice daily",
+              "Levofloxacin 750 mg orally once daily",
+              "Nitrofurantoin (if pyelonephritis excluded)",
+              "Fosfomycin (if pyelonephritis excluded)",
+              "TMP-SMX (if susceptibility known)",
+              "Beta-lactam + or - aminoglycoside"
+            ],
+            "esbl_producing_organisms": "Nitrofurantoin or fosfomycin are oral options; parenteral ertapenem or piperacillin/tazobactam for severe cases.",
+            "mdr_organisms": "Colistin or tigecycline may be necessary; ceftolozane/tazobactam or ceftazidime/avibactam for MDR P. aeruginosa or non-NDM CRE.",
+            "men": "Treat as complicated UTI for minimum 7 days; fluoroquinolones or TMP-SMX preferred; rule out prostatitis."
+          },
+          "catheter_associated_uti": {
+            "management": [
+              "Remove and replace catheter before/when starting antibiotics if catheter in place ≥ 7 days",
+              "Obtain urine culture from newly placed catheter",
+              "Treat similarly to acute complicated cystitis"
+            ],
+            "duration": "7 days if timely symptom resolution; 10-14 days if delayed response or bacteremia/severe sepsis",
+            "women_under_65_no_pyelonephritis": "May treat for 3 days after catheter removal"
+          },
+          "uti_in_pregnancy": {
+            "safe_antibiotics": [
+              {
+                "drug": "Nitrofurantoin 100 mg BID",
+                "duration": "5-7 days",
+                "notes": "Avoid first trimester (organogenesis) and near term (38-42 weeks; risk of neonatal hemolytic anemia)"
+              },
+              {
+                "drug": "Amoxicillin 500 mg TID",
+                "duration": "3-7 days"
+              },
+              {
+                "drug": "Amoxicillin/clavulanate 500 mg TID",
+                "duration": "3-7 days"
+              },
+              {
+                "drug": "Cephalexin 500 mg QID",
+                "duration": "3-7 days"
+              },
+              {
+                "drug": "Cefpodoxime 100 mg BID",
+                "duration": "3-7 days"
+              },
+              {
+                "drug": "Fosfomycin 3g",
+                "duration": "Single dose",
+                "notes": "FDA category B; safe"
+              }
+            ],
+            "avoid": [
+              "Fluoroquinolones (toxic effects on fetal cartilage)",
+              "TMP-SMX in first trimester (folate-sensitive birth defects)",
+              "TMP-SMX after 32 weeks (kernicterus risk)",
+              "Ceftriaxone near delivery (kernicterus)",
+              "Imipenem/cilastatin (adverse fetal effects in animals)"
+            ],
+            "asymptomatic_bacteriuria": "Screen all pregnant women at 12-16 weeks gestation; treat if positive to prevent pyelonephritis and adverse pregnancy outcomes.",
+            "pyelonephritis": "Parenteral antibiotics for 48 hours before transitioning to oral therapy."
+          },
+          "prostatitis": {
+            "acute_bacterial": {
+              "initial": "Parenteral: ceftriaxone 1-2g IV q24h, ciprofloxacin 400mg IV q12h, or levofloxacin 500mg IV q24h",
+              "follow_up": "Oral fluoroquinolones for 2-4 weeks"
+            },
+            "chronic_bacterial": {
+              "first_line": "Ciprofloxacin 500mg BID or levofloxacin 500mg daily for 4-6 weeks",
+              "alternative": "Trimethoprim 100mg BID for 4-12 weeks (good prostate penetration)",
+              "adjuncts": "Alpha-adrenergic antagonists (tamsulosin, alfuzosin) to reduce symptoms"
+            }
+          },
+          "recurrent_uti_prevention": {
+            "antibiotic_prophylaxis_options": [
+              "TMP-SMX 40/200mg (single-strength) orally once daily",
+              "Nitrofurantoin 50-100mg orally at bedtime",
+              "Ciprofloxacin 250mg post-coital (for coitus-related recurrence)"
+            ],
+            "non_antibiotic_strategies": [
+              {
+                "strategy": "D-mannose",
+                "dose": "2g orally daily",
+                "evidence": "Significantly reduces recurrent UTI risk; recurrence rates 14.6% vs 60.8% (no prophylaxis)"
+              },
+              {
+                "strategy": "Methenamine hippurate",
+                "dose": "1g twice daily",
+                "notes": "Converted to formaldehyde in acidic urine; contraindicated if CrCl < 10 mL/min"
+              },
+              {
+                "strategy": "Topical vaginal estrogen (postmenopausal women)",
+                "notes": "Normalizes vaginal flora; 0.5mg estriol cream at night x2 weeks then twice weekly x8 months significantly reduces UTI incidence"
+              },
+              {
+                "strategy": "Probiotics (Lactobacillus)",
+                "notes": "Promising; L. rhamnosus GR-1 and L. reuteri RC-14 shown to reduce UTI in postmenopausal women"
+              },
+              {
+                "strategy": "Cranberry products",
+                "notes": "Blocks P-fimbriae adhesion; meta-analysis of 24 studies showed NO significant reduction in symptomatic UTIs. Not recommended for treatment. Possibly helpful as prophylaxis capsules in pregnancy."
+              }
+            ],
+            "behavioral_modifications": [
+              "Void after sexual intercourse",
+              "Avoid spermicide-containing contraceptives",
+              "Increase fluid intake to 2-3 L daily",
+              "Wipe front to back",
+              "Double voiding to empty bladder completely",
+              "Liberal fluid intake"
+            ]
+          },
+          "asymptomatic_bacteriuria": {
+            "screen_and_treat": [
+              "Pregnant women (at 12-16 weeks gestation)",
+              "Prior to invasive urologic procedures / transurethral resection of prostate",
+              "Renal transplant recipients (controversial — guidelines vary)"
+            ],
+            "do_not_treat": [
+              "Non-pregnant women (general population)",
+              "Men (general)",
+              "Elderly / nursing home residents",
+              "Diabetic patients (unless symptomatic)",
+              "Patients with indwelling catheters (unless symptomatic)",
+              "Patients undergoing non-urologic procedures"
+            ]
+          },
+          "symptomatic_relief": {
+            "analgesics": "Paracetamol or NSAIDs (ibuprofen, naproxen) for pain and discomfort",
+            "phenazopyridine": "Urinary analgesic for short-term dysuria relief; NOT therapeutic; will not affect infection course",
+            "urinary_alkalinizers": "May relieve dysuria; unproven efficacy; contraindicated with nitrofurantoin, in renal failure, hypernatremia"
+          }
+        },
+        "antibiotic_stewardship": {
+          "principles": [
+            "Select antibiotics based on UTI type, severity, and local susceptibility patterns",
+            "Use narrow-spectrum agents with low collateral damage potential for uncomplicated UTIs",
+            "Avoid routine screening and treatment of asymptomatic bacteriuria",
+            "Short courses are effective for uncomplicated cystitis",
+            "Consider analgesics (ibuprofen) as initial symptomatic treatment in uncomplicated UTIs before antibiotics",
+            "Avoid fluoroquinolones as first-line for uncomplicated cystitis (preserve for more serious infections)",
+            "Consider collateral damage: broad-spectrum cephalosporins and fluoroquinolones select for resistant organisms"
+          ],
+          "collateral_damage_concept": "Ecological adverse effects of antibiotic therapy — selection of drug-resistant organisms, proliferation of MDR bacteria. Broad-spectrum cephalosporins linked to VRE, ESBL-producing Klebsiella, and C. difficile. Fluoroquinolones linked to MRSA and fluoroquinolone-resistant Pseudomonas.",
+          "mdr_risk_factors": [
+            "Previous MDR isolate (resistant to ≥ 3 antibiotic classes)",
+            "Recent healthcare facility stay (within 3 months)",
+            "Recent international travel (within 3 months)",
+            "Use of broad-spectrum antibiotics within preceding 3 months",
+            "TMP-SMX use within preceding 3-6 months (increases TMP-SMX resistance)"
+          ]
+        },
+        "special_populations": {
+          "elderly": {
+            "risk_factors": "Faecal impaction, incontinence, vaginal/perineal atrophy, impaired bladder emptying, comorbidities, catheters, polypharmacy",
+            "presentation": "May be typical or atypical (confusion, behavioral changes); cognitive impairment complicates assessment",
+            "recommendation": "Refer patients > 65 years to physician for further evaluation; avoid treating asymptomatic bacteriuria",
+            "nitrofurantoin_note": "Appropriate in elderly if CrCl ≥ 30 mL/min (2015 Beers Criteria update)"
+          },
+          "children": {
+            "signs": "Variable and often non-specific; urine sample required for diagnosis",
+            "recommendation": "Refer patients < 18 years to physician"
+          },
+          "renal_transplant_recipients": {
+            "note": "UTIs are the most common infectious complication post-transplant; occur in ~25% within 1 year; increase transplant failure/rejection risk 2-3 fold",
+            "prophylaxis": "TMP-SMX prophylaxis for 6 months (primarily for Pneumocystis jiroveci also prevents UTIs)"
+          },
+          "lactating_women": {
+            "safe": [
+              "Nitrofurantoin (avoid if infant < 1 month or G6PD deficient)",
+              "TMP-SMX (observe infant for rash/vomiting/diarrhea)",
+              "Most beta-lactams including cephalexin"
+            ],
+            "consult": "LactMed for current data on individual antibiotics"
+          },
+          "skilled_nursing_facility": {
+            "asb_prevalence": "15-50% of older adults in SNFs have ASB",
+            "warning": "~50% of asymptomatic SNF residents are inappropriately given broad-spectrum antibiotics for suspected UTI; ~80% of antibiotic use was based on urinalysis results alone without symptoms",
+            "recommendation": "Routine screening for ASB NOT recommended in SNF residents; treat only symptomatic patients"
+          }
+        },
+        "complications": [
+          "Pyelonephritis (upper UTI)",
+          "Renal or perinephric abscess",
+          "Urosepsis / sepsis",
+          "Bacteremia",
+          "Renal vein thrombosis",
+          "Acute renal failure",
+          "Emphysematous pyelonephritis",
+          "Emphysematous cystitis (rare; gas in bladder wall; 2/3 have diabetes; ~10% require surgery)",
+          "Chronic cystitis / recurrent UTIs",
+          "Prostatitis (in men)"
+        ],
+        "referral_criteria": {
+          "immediate_referral": [
+            "Signs of pyelonephritis: fever > 38°C, chills/rigors, flank pain, nausea/vomiting",
+            "Symptoms persist 48-72 hours after starting appropriate antibiotic",
+            "Symptoms recur within 2 weeks after completing treatment",
+            "Only one primary symptom of acute cystitis",
+            "Pregnancy or postpartum",
+            "Age < 18 or > 65",
+            "History of previous pyelonephritis",
+            "Risk factors for complicated UTI (see risk factors section)",
+            "Recurrent UTI (≥ 2 within 6 months or ≥ 3 within 12 months)",
+            "IUD in situ",
+            "Risk factors for sexually transmissible infection",
+            "Male patients (UTI in men generally complicated)"
+          ]
+        },
+        "patient_education": {
+          "key_messages": [
+            "Take the full antibiotic course even if symptoms improve early",
+            "Symptoms should improve within 24-48 hours of starting antibiotics",
+            "Increase fluid intake (2-3 liters daily)",
+            "Void after sexual intercourse to flush bacteria",
+            "Wipe from front to back after using the toilet",
+            "Avoid spermicide-containing products",
+            "Use condoms to reduce STI risk",
+            "Double voiding to empty bladder completely",
+            "Return to clinician if symptoms worsen, do not improve within 48 hours, or recur within 2 weeks"
+          ]
+        },
+        "faq": [
+          {
+            "question": "What is cystitis?",
+            "answer": "Cystitis is inflammation of the urinary bladder, usually caused by a bacterial infection. It is the most common type of urinary tract infection (UTI), particularly in women. Key symptoms include burning or painful urination (dysuria), frequent urination, urgency, and suprapubic discomfort."
+          },
+          {
+            "question": "What causes cystitis?",
+            "answer": "The most common cause is Escherichia coli (E. coli), responsible for 75-95% of cases. Other bacteria include Staphylococcus saprophyticus (especially in young women), Klebsiella pneumoniae, and Proteus mirabilis. Non-infectious causes include chemical irritants, radiation, and autoimmune reactions."
+          },
+          {
+            "question": "Who is most at risk for cystitis?",
+            "answer": "Women are at much higher risk than men due to shorter urethra and proximity to the anus. Risk is highest in sexually active women aged 18-24. Other risk factors include sexual intercourse, spermicide use, pregnancy, diabetes, urinary tract abnormalities, catheter use, and immunosuppression."
+          },
+          {
+            "question": "How is cystitis diagnosed?",
+            "answer": "In young healthy women with typical symptoms (dysuria + frequency) and no vaginal discharge, clinical diagnosis is highly accurate (90% positive predictive value). Urine dipstick testing for leukocyte esterase and nitrites supports the diagnosis. Urine culture is NOT routinely required for uncomplicated cystitis but is recommended for suspected pyelonephritis, treatment failure, recurrence, or complicated cases."
+          },
+          {
+            "question": "What are the best antibiotics for uncomplicated cystitis?",
+            "answer": "First-line options are: (1) Nitrofurantoin 100mg twice daily for 5 days — preferred choice with very low resistance; (2) Trimethoprim/sulfamethoxazole 160/800mg twice daily for 3 days — if local resistance < 20%; (3) Fosfomycin 3g single dose — convenient but slightly less effective. Fluoroquinolones (ciprofloxacin, levofloxacin) are reserved as second-line due to risk of serious side effects and resistance."
+          },
+          {
+            "question": "How long does cystitis treatment take?",
+            "answer": "Nitrofurantoin: 5 days; TMP-SMX: 3 days; Fosfomycin: single dose; Fluoroquinolones: 3 days; Beta-lactams: 5-7 days. Complicated UTIs require 10-14 days. Symptoms typically improve within 24-48 hours of starting treatment."
+          },
+          {
+            "question": "Can cystitis go away without antibiotics?",
+            "answer": "Studies show 25-42% of women with uncomplicated cystitis achieve clinical cure without antibiotic treatment. Initial symptomatic treatment with ibuprofen may be considered in mild uncomplicated UTIs. However, antibiotics remain recommended to shorten symptom duration, prevent recurrence, and reduce progression to pyelonephritis."
+          },
+          {
+            "question": "When should I see a doctor urgently?",
+            "answer": "Seek urgent medical attention if you have: fever > 38°C, chills or rigors, back or flank pain, nausea or vomiting (these suggest kidney infection/pyelonephritis), symptoms not improving after 48-72 hours of antibiotics, symptoms recurring within 2 weeks of completing treatment, or if you are pregnant."
+          },
+          {
+            "question": "What is the difference between cystitis and pyelonephritis?",
+            "answer": "Cystitis (lower UTI) involves the bladder: dysuria, frequency, urgency, suprapubic pain — WITHOUT fever or systemic symptoms. Pyelonephritis (upper UTI) involves the kidneys: fever > 38°C, chills, flank/costovertebral angle pain, nausea/vomiting — often WITH lower UTI symptoms. Pyelonephritis is more serious and requires different (often longer) treatment."
+          },
+          {
+            "question": "How can I prevent recurrent UTIs?",
+            "answer": "Key prevention strategies: void after sexual intercourse, increase fluid intake (2-3L/day), wipe front to back, avoid spermicides. Evidence-based options include D-mannose 2g daily, topical estrogen (postmenopausal women), Lactobacillus probiotics, and methenamine hippurate. Prophylactic antibiotics (low-dose nitrofurantoin or TMP-SMX) are a last resort. Cranberry products show limited evidence."
+          },
+          {
+            "question": "Is cystitis treatment different in pregnancy?",
+            "answer": "Yes. Pregnant women must be treated to prevent progression to pyelonephritis and adverse pregnancy outcomes. Safe antibiotics include: nitrofurantoin (avoid first trimester and near term), amoxicillin, amoxicillin/clavulanate, cephalexin, cefpodoxime, and fosfomycin. Avoid fluoroquinolones, TMP-SMX in first trimester and after 32 weeks, and tetracyclines. Pregnant women should also be screened for asymptomatic bacteriuria."
+          },
+          {
+            "question": "Can men get cystitis?",
+            "answer": "Yes, but it is much less common (fewer than 10 cases per 10,000 men under 65 per year). UTIs in men are always considered complicated until proven otherwise, requiring evaluation for structural/functional abnormalities and prostatitis. Treatment duration is typically 7-14 days."
+          },
+          {
+            "question": "Why are fluoroquinolones not recommended first-line for cystitis?",
+            "answer": "Fluoroquinolones (ciprofloxacin, levofloxacin) are effective but are reserved for more serious infections because: (1) they can cause serious side effects (tendinitis, peripheral neuropathy, CNS effects); (2) widespread use increases fluoroquinolone resistance; (3) they cause 'collateral damage' — selecting for resistant organisms like MRSA and MDR Pseudomonas in the gut flora. The FDA issued a safety communication in 2016 advising against routine use for uncomplicated cystitis."
+          },
+          {
+            "question": "What is asymptomatic bacteriuria (ASB)?",
+            "answer": "ASB is the presence of bacteria in urine (≥ 100,000 CFU/mL) without symptoms. It does NOT require treatment in most cases — including non-pregnant adults, elderly, diabetics, and catheterized patients. Treatment IS recommended only for pregnant women, those undergoing invasive urologic procedures, and renal transplant recipients (controversial). Treating ASB unnecessarily leads to antibiotic resistance and side effects."
+          },
+          {
+            "question": "Does cranberry juice cure or prevent UTIs?",
+            "answer": "No. Cranberry inhibits bacterial P-fimbriae adhesion, which is theoretically beneficial. However, a meta-analysis of 24 studies (4,473 participants) showed cranberry products did NOT significantly reduce symptomatic UTIs. They are not recommended for treating an active UTI. Cranberry capsules may be an option for UTI prevention in pregnancy."
+          },
+          {
+            "question": "What is a complicated UTI?",
+            "answer": "A complicated UTI occurs in patients with factors that increase infection risk, severity, or likelihood of treatment failure: pregnancy, men, urinary tract obstruction, immunosuppression, renal failure, renal transplantation, neurogenic bladder, indwelling catheters, anatomical abnormalities, diabetes (poorly controlled), or hospital-acquired infection. These require longer treatment (10-14 days) and broader antibiotic coverage."
+          }
+        ]
+      }
+    }
   }
 }

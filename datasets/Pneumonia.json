@@ -1,0 +1,1447 @@
+{
+  "disease": {
+    "id": "DIS-027",
+    "name": "Pneumonia",
+    "scientific_name": "Pneumonia / Pulmonary Consolidation / Lower Respiratory Tract Infection (LRTI)",
+    "icd_10_code": "J18 (Pneumonia, unspecified organism); J13 (Pneumococcal pneumonia); J14 (Haemophilus influenzae pneumonia); J15 (Bacterial pneumonia NEC); J12 (Viral pneumonia); J16 (Pneumonia due to other infectious organisms); J85 (Abscess of lung); J86 (Pyothorax/Empyema); J18.9 (Unspecified pneumonia)",
+    "category": "Respiratory Infectious Disease / Lower Respiratory Tract Infection",
+    "overview": {
+      "description": "Pneumonia is an acute infectious inflammation of the lung parenchyma — specifically the alveoli (air sacs), bronchioles, and interstitial tissue — caused by bacteria, viruses, fungi, or other pathogens, and occasionally by chemical aspiration. The alveoli fill with exudate (pus, fluid, or inflammatory cells), impairing gas exchange and causing the cardinal features of fever, productive cough, dyspnoea, and lobar or multilobar consolidation on chest imaging. Pneumonia is one of the leading causes of global morbidity and mortality — the single most common infectious cause of death worldwide, killing approximately 2.5 million people per year, and the leading cause of death in children under 5 years globally (accounting for 14% of all under-5 deaths).",
+      "affected_organ": "Lungs (alveoli, bronchioles, interstitium); systemically in severe cases: blood, kidneys, heart, brain, and all organs (sepsis)",
+      "prevalence": "Approximately 450 million cases of pneumonia occur globally per year; 5-10 million hospitalizations annually in the USA alone. India: estimated 43 million episodes annually, contributing significantly to global burden. Incidence peaks at age extremes: infants/children and elderly >65 years.",
+      "age_group": "All ages affected; highest mortality in children <5 years and adults >65 years; immunocompromised individuals at highest risk for severe/atypical pneumonia at any age.",
+      "is_contagious": true,
+      "is_contagious_note": "Most pneumonias are caused by organisms spread via respiratory droplets (coughing, sneezing), aerosols, or direct contact; some are aspiration-related (not person-to-person)",
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": false,
+      "is_preventable": true,
+      "key_fact": "Pneumococcal vaccination (PCV20/PPSV23) and annual influenza vaccination are the single most effective preventive measures — reducing pneumonia hospitalizations by 30-50%"
+    },
+
+    "pathophysiology": {
+      "normal_lung_defense": "The respiratory tract normally defends against pathogens through: mucociliary clearance (mucus trapping + ciliary sweeping), cough reflex, alveolar macrophages (resident phagocytes), secretory IgA (mucosal immunity), complement system, surfactant proteins (A and D — opsonise pathogens), and lymphocytes",
+      "how_pneumonia_develops": "Pneumonia develops when: (1) pathogen burden overcomes normal defenses (large inoculum); OR (2) host defenses are impaired (immunosuppression, cigarette smoking, COPD, aspiration); OR (3) pathogen has specific virulence factors that evade normal clearance. Pathogens reaching alveoli trigger activation of alveolar macrophages → inflammatory cytokine release (IL-1, IL-6, TNF-α, IL-8) → neutrophil recruitment → exudate filling alveolar spaces → consolidation (hepatisation) → impaired gas exchange (hypoxia)",
+      "stages_lobar_pneumonia": [
+        "Engorgement (12-24 hours): vascular congestion, alveolar oedema, bacteria begin multiplying in alveoli",
+        "Red Hepatisation (2-4 days): fibrinous exudate + red blood cells + neutrophils fill alveoli; lung solid and red (liver-like appearance)",
+        "Grey Hepatisation (4-8 days): red cells lyse; fibrin, neutrophils, and macrophages remain; lung grey and airless",
+        "Resolution (8-10 days): enzymatic digestion of exudate by macrophages; gradual restoration of normal alveolar architecture; lung clears"
+      ]
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Community-Acquired Pneumonia (CAP)",
+        "description": "Pneumonia acquired outside of hospital settings or within 48 hours of hospital admission in a patient who has not been in a healthcare facility recently. The most common type — affecting all age groups. Caused predominantly by Streptococcus pneumoniae (30-40%), but also Haemophilus influenzae, Mycoplasma pneumoniae, Legionella pneumophila, respiratory viruses (influenza, COVID-19, RSV), and many others.",
+        "typical_vs_atypical": {
+          "typical": "Bacterial CAP (Streptococcus pneumoniae, H. influenzae) — abrupt onset; high fever; rigors; productive cough (rusty/purulent sputum); pleuritic chest pain; lobar consolidation on CXR; responds to beta-lactam antibiotics",
+          "atypical": "Atypical/walking pneumonia (Mycoplasma, Legionella, Chlamydophila) — subacute onset; dry or minimally productive cough; extrapulmonary features (headache, diarrhoea, confusion); patchy bilateral infiltrates on CXR; responds to macrolides/doxycycline/fluoroquinolones"
+        },
+        "severity_tool": "CURB-65 score for CAP (Confusion, Urea, Respiratory rate, Blood pressure, age ≥65) guides site-of-care decisions",
+        "common_in": "All ages; peaks in elderly >65; children <5; immunocompromised; smokers; COPD patients"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Hospital-Acquired Pneumonia (HAP)",
+        "description": "Pneumonia occurring ≥48 hours after hospital admission that was NOT incubating at time of admission. Associated with more drug-resistant organisms than CAP — gram-negative bacteria (Pseudomonas aeruginosa, Klebsiella, Acinetobacter, E. coli) and MRSA (Methicillin-Resistant Staphylococcus aureus) predominate. Higher mortality than CAP (20-50%).",
+        "risk_factors_for_HAP": "Prolonged hospitalisation, immobility, surgical procedures (especially abdominal/thoracic), altered consciousness, aspiration, nasogastric tube, immunosuppression, antibiotic use (selecting resistant organisms)",
+        "treatment": "Broader-spectrum antibiotics covering gram-negatives and MRSA (piperacillin-tazobactam, ceftazidime, meropenem ± vancomycin or linezolid) — guided by local antibiogram and respiratory culture"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Ventilator-Associated Pneumonia (VAP)",
+        "description": "Pneumonia occurring ≥48-72 hours after endotracheal intubation and mechanical ventilation. One of the most serious HAI (healthcare-associated infection). Develops from micro-aspiration of oropharyngeal secretions contaminated with bacteria around the endotracheal tube cuff. High mortality (20-40%). Organisms: Pseudomonas aeruginosa, MRSA, Acinetobacter baumannii (XDR — extensively drug-resistant), Klebsiella, gram-negative enterics.",
+        "prevention": "VAP bundle: head-of-bed elevation 30-45°; oral care with chlorhexidine; daily sedation interruption; minimise ventilation days; subglottic secretion drainage; hand hygiene"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Aspiration Pneumonia and Aspiration Pneumonitis",
+        "description": "Aspiration PNEUMONITIS: chemical injury from aspiration of sterile gastric contents (acid, enzymes) into lungs — initial non-infective; may or may not progress to secondary bacterial pneumonia. Aspiration PNEUMONIA: infection from aspiration of oropharyngeal or gastric contents containing bacteria — common organisms are oropharyngeal anaerobes (Bacteroides, Fusobacterium, Prevotella, Peptostreptococcus) and gram-negatives.",
+        "risk_factors": "Altered consciousness (stroke, anaesthesia, intoxication, seizures, drug overdose), dysphagia (neurological disease, oropharyngeal tumours, achalasia), lying flat, nasogastric tube, gastroparesis, GERD",
+        "typical_location": "Right lower lobe (supine patients); right middle lobe — dependent on patient position at time of aspiration; bilateral if massive aspiration",
+        "management": "Antibiotics covering anaerobes: amoxicillin-clavulanate; clindamycin + a beta-lactam; metronidazole + amoxicillin; piperacillin-tazobactam (if hospitalised and severe)"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Atypical (Walking) Pneumonia",
+        "description": "Pneumonia caused by 'atypical' organisms — so named because they do not respond to standard beta-lactam antibiotics and have clinical and radiological features distinct from typical bacterial pneumonia. Patients are often ambulatory ('walking pneumonia'). Pathogens: Mycoplasma pneumoniae (most common in young adults and school-age children), Legionella pneumophila (environmental water sources; can cause severe Legionnaires' disease), Chlamydophila pneumoniae.",
+        "legionella_note": "Legionella pneumophila causes two distinct syndromes: (1) Legionnaires' disease — severe atypical pneumonia with high fever, confusion, diarrhoea, hyponatraemia (low sodium), elevated LFTs; mortality 5-30% (higher in immunocompromised); (2) Pontiac fever — non-pneumonic self-limiting flu-like illness. Diagnosed by urinary Legionella antigen (most practical) or culture of respiratory secretions on BCYE agar.",
+        "mycoplasma_note": "Mycoplasma pneumoniae: gradual onset (2-3 weeks); dry hacking cough persisting weeks; associated with cold agglutinins causing haemolytic anaemia; bullous myringitis; skin rashes (erythema multiforme); CNS complications (encephalitis, meningitis)"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Viral Pneumonia",
+        "description": "Pneumonia caused by viruses directly infecting lower respiratory tract — distinct from secondary bacterial pneumonia following a primary viral URTI. Viral pneumonias typically cause diffuse bilateral interstitial patterns ('ground-glass opacity' on CT) rather than lobar consolidation. Primary viral pneumonias cause substantial morbidity and mortality.",
+        "major_viral_causes": [
+          {
+            "virus": "Influenza A and B",
+            "features": "Abrupt onset; high fever; myalgia; headache; non-productive cough progressing to dyspnoea; may develop rapidly to ARDS; secondary bacterial pneumonia (Staphylococcus aureus, Streptococcus pneumoniae) common and more lethal",
+            "treatment": "Oseltamivir (Tamiflu) 75mg twice daily × 5 days — start within 48 hours of symptom onset for maximum benefit; continue beyond 48h for hospitalised or severe disease"
+          },
+          {
+            "virus": "SARS-CoV-2 (COVID-19)",
+            "features": "May cause severe bilateral pneumonitis ('COVID pneumonia') with hypoxia often preceding dyspnoea awareness ('happy hypoxia'); bilateral ground-glass opacities in peripheral and basal distribution on CT; hyperinflammatory phase (cytokine storm); PE risk; endotheliitis",
+            "treatment": "Dexamethasone 6mg daily × 10 days (RECOVERY trial — reduces mortality in patients requiring oxygen or ventilation); remdesivir (antivirals); baricitinib/tocilizumab (IL-6 inhibitor) for severe inflammatory phase; anticoagulation; oxygen/NIV/IMV"
+          },
+          {
+            "virus": "RSV (Respiratory Syncytial Virus)",
+            "features": "Leading cause of severe lower respiratory tract infection in infants and young children; bronchiolitis and pneumonia; also increasingly recognised as cause of severe pneumonia in elderly",
+            "treatment": "Supportive (oxygen, hydration); palivizumab (prophylaxis in high-risk infants); RSV vaccine now available for adults ≥60 (Abrysvo, Arexvy — approved 2023)"
+          },
+          {
+            "virus": "Adenovirus, Human Metapneumovirus (hMPV), Parainfluenza",
+            "features": "Important causes particularly in children and immunocompromised; can cause severe lower respiratory tract disease",
+            "treatment": "Primarily supportive; cidofovir (adenovirus in severe immunocompromised)"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Pneumocystis jirovecii Pneumonia (PJP / PCP)",
+        "description": "Previously called Pneumocystis carinii pneumonia (PCP) — fungal pneumonia caused by Pneumocystis jirovecii affecting immunocompromised patients, particularly those with HIV/AIDS (CD4 <200 cells/µL), organ transplant recipients, haematological malignancies, or patients on immunosuppressive therapy (corticosteroids, chemotherapy, biologics). An AIDS-defining illness.",
+        "features": "Subacute onset (weeks); progressive exertional dyspnoea; dry non-productive cough; low-grade fever; mild hypoxia disproportionate to clinical signs; bilateral perihilar or diffuse 'ground-glass' interstitial infiltrates on CXR (normal CXR in 10-25%); oxygen desaturation on exercise (characteristic); elevated serum LDH (non-specific but suggestive)",
+        "diagnosis": "Induced sputum (1,3-β-D-glucan elevated); bronchoalveolar lavage (BAL) with silver stain or immunofluorescence (most sensitive); serum β-D-glucan >80 pg/mL (suggestive)",
+        "treatment": "Co-trimoxazole (TMP-SMX) as first-line — TMP 15-20 mg/kg/day + SMX 75-100 mg/kg/day IV or oral in 3-4 divided doses × 21 days; adjunctive prednisolone if PaO2 <70 mmHg (reduces ARDS risk); alternatives: pentamidine IV, clindamycin + primaquine, atovaquone"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Fungal Pneumonia",
+        "description": "Pneumonia caused by pathogenic fungi — predominantly in immunocompromised individuals but some organisms infect immunocompetent hosts in endemic geographic areas.",
+        "major_fungi": [
+          {
+            "fungus": "Aspergillus fumigatus (Invasive Pulmonary Aspergillosis — IPA)",
+            "setting": "Severely immunocompromised (haematological malignancy, organ transplant, prolonged corticosteroid use, COVID-19-associated)",
+            "features": "Fever despite antibiotics; haemoptysis; pleuritic chest pain; CT: 'halo sign' (early — consolidation surrounded by ground-glass), 'crescent sign' (late)",
+            "treatment": "Voriconazole (first-line); isavuconazole; amphotericin B; surgical resection for haemoptysis"
+          },
+          {
+            "fungus": "Cryptococcus neoformans",
+            "setting": "HIV/AIDS (CD4 <100); organ transplant",
+            "features": "Subacute pneumonia + CNS involvement (cryptococcal meningitis); India ink stain; cryptococcal antigen (CrAg)",
+            "treatment": "Fluconazole (mild-moderate); amphotericin B + flucytosine (severe/CNS)"
+          },
+          {
+            "fungus": "Histoplasma capsulatum, Coccidioides, Blastomyces",
+            "setting": "Endemic areas (Mississippi River valley, Southwestern USA); immunocompetent hosts possible",
+            "features": "Subacute pneumonia; exposure to bat droppings (histoplasma), soil (coccidioides)",
+            "treatment": "Itraconazole (mild-moderate); amphotericin B (severe)"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-09",
+        "name": "Necrotising Pneumonia and Lung Abscess",
+        "description": "Necrotising pneumonia: a severe variant where pneumonia causes liquefaction and cavitation of lung tissue — multiple small cavities within areas of consolidation. Lung abscess: a single or multiple loculated cavities >2cm filled with pus within the lung parenchyma. Both conditions reflect more virulent pathogens (Staphylococcus aureus including PVL-positive strains, Klebsiella pneumoniae — Friedlander's type 2 — particularly in diabetics, alcoholics; anaerobes from aspiration; Streptococcus anginosus).",
+        "features": "Productive cough with purulent/foul-smelling sputum; high fever; weight loss; night sweats; haemoptysis; air-fluid level on CXR (lung abscess); multiple small cavities (necrotising)",
+        "management": "Prolonged antibiotics (4-6 weeks or until CXR resolves); anaerobic coverage (co-amoxiclav, metronidazole + beta-lactam, clindamycin); postural drainage; bronchoscopy; CT-guided drainage; surgical resection for refractory cases"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Pneumonia (CAP CURB-65: 0-1)",
+        "description": "Pneumonia with minimal physiological disturbance; manageable at home",
+        "curb65": "Score 0-1 (no confusion; urea normal; RR <30/min; BP normal; age <65)",
+        "psi_class": "PSI Class I-II",
+        "features": "Fever; productive cough; mild tachycardia; minimal dyspnoea; SpO2 ≥94% on room air; able to tolerate oral medications and fluids",
+        "site_of_care": "Outpatient/home management; oral antibiotics",
+        "mortality": "<1%",
+        "management": "Oral amoxicillin 500mg-1g three times daily × 5 days (or doxycycline as alternative); rest; adequate hydration; antipyretics; GP follow-up at 48 hours (phone or in person)"
+      },
+      {
+        "level": 2,
+        "name": "Moderate Pneumonia (CAP CURB-65: 2)",
+        "description": "Pneumonia requiring hospital admission for observation, IV antibiotics, or supplemental oxygen",
+        "curb65": "Score 2",
+        "psi_class": "PSI Class III",
+        "features": "SpO2 90-94% on room air; RR 20-30/min; moderate tachycardia; bilateral or multilobar involvement; unable to maintain oral intake; comorbidities worsening",
+        "site_of_care": "Hospital ward admission",
+        "mortality": "5-10%",
+        "management": "IV amoxicillin + clarithromycin (or ceftriaxone + azithromycin); supplemental oxygen (target SpO2 94-98%); IV fluids if dehydrated; daily review"
+      },
+      {
+        "level": 3,
+        "name": "Severe Pneumonia (CAP CURB-65: 3-5)",
+        "description": "Severe pneumonia with significant physiological compromise requiring HDU or ICU-level care",
+        "curb65": "Score 3-5; or any SMART-COP criteria met",
+        "psi_class": "PSI Class IV-V",
+        "features": "SpO2 <90% on room air or requiring FiO2 >35%; RR ≥30/min; SBP <90 mmHg; bilateral or multilobar consolidation; confusion/encephalopathy; evidence of sepsis; requiring vasopressors; acute kidney injury",
+        "site_of_care": "ICU or HDU",
+        "mortality": "15-40%",
+        "management": "IV ceftriaxone + azithromycin OR respiratory fluoroquinolone (levofloxacin); add anti-MRSA cover if risk factors (vancomycin/linezolid); high-flow nasal oxygen or non-invasive ventilation; invasive mechanical ventilation if failing; sepsis bundle; vasopressors (noradrenaline)"
+      },
+      {
+        "level": 4,
+        "name": "Critical Pneumonia / ARDS (CAP CURB-65: 5 / HAP/VAP with MOF)",
+        "description": "Life-threatening pneumonia complicated by ARDS, multi-organ failure, refractory septic shock, or requiring mechanical ventilation",
+        "curb65": "Score 5; ARDS criteria (Berlin definition); multi-organ failure",
+        "features": "PaO2/FiO2 <300 (ARDS); bilateral infiltrates not explained by heart failure; requiring invasive mechanical ventilation; vasopressor-dependent shock; AKI requiring RRT; hepatic failure; encephalopathy",
+        "site_of_care": "ICU — invasive mechanical ventilation",
+        "mortality": "30-50%+ (ARDS mortality 35-45%)",
+        "management": "Lung-protective ventilation (tidal volume 6mL/kg IBW, PEEP 5-20 cmH2O, plateau pressure <30 cmH2O, driving pressure <15 cmH2O); prone positioning ≥16 hours/day (PROSEVA trial — reduces mortality 28-day in moderate-severe ARDS by 16%); neuromuscular blockade; corticosteroids (dexamethasone for ARDS — DEXA-ARDS trial); ECMO (veno-venous) for refractory ARDS at ECMO centres"
+      }
+    ],
+
+    "causes": {
+      "by_setting": {
+        "community_acquired_CAP": {
+          "bacterial": [
+            {
+              "organism": "Streptococcus pneumoniae (Pneumococcus)",
+              "prevalence": "Most common identifiable bacterial cause — 30-40% of CAP",
+              "typical_presentation": "Sudden rigors; high fever; rust-coloured sputum; lobar consolidation; positive pneumococcal urinary antigen",
+              "virulence": "Polysaccharide capsule — 90+ serotypes; vaccine covers most disease-causing serotypes"
+            },
+            {
+              "organism": "Haemophilus influenzae",
+              "prevalence": "10-15% of CAP; especially in COPD, smokers, elderly",
+              "type": "Non-typeable H. influenzae predominant in adults; Hib (type b) in unvaccinated children — causes epiglottitis and meningitis"
+            },
+            {
+              "organism": "Mycoplasma pneumoniae",
+              "prevalence": "5-15% of CAP; most common in children and young adults (school-age children)",
+              "pattern": "Epidemic cycles every 3-5 years; clusters in closed communities (schools, military, universities)",
+              "diagnostics": "Mycoplasma IgM/IgG serology; PCR nasal/throat swab; cold agglutinins (present in 50% — titer ≥1:64 supports diagnosis)"
+            },
+            {
+              "organism": "Legionella pneumophila",
+              "prevalence": "1-5% of CAP; 10% of severe CAP",
+              "source": "Contaminated water systems: cooling towers, hospital hot water systems, whirlpool spas, air conditioning units",
+              "key_clues": "Hyponatraemia (SIADH); high fever; diarrhoea; confusion; raised LFTs and CK; negative urinary antigen for pneumococcus + positive Legionella urinary antigen",
+              "treatment": "Azithromycin or a fluoroquinolone (levofloxacin) — does NOT respond to beta-lactams"
+            },
+            {
+              "organism": "Chlamydophila (Chlamydia) pneumoniae",
+              "prevalence": "5-10% of CAP; mild atypical pneumonia",
+              "features": "Pharyngitis often precedes; gradual onset; laryngitis; mild systemic symptoms; responds to macrolides/tetracyclines/fluoroquinolones"
+            },
+            {
+              "organism": "Klebsiella pneumoniae (Friedlander's pneumonia)",
+              "prevalence": "Uncommon in CAP but important in specific populations",
+              "risk_groups": "Alcoholics; diabetics; nursing home residents; immunocompromised",
+              "features": "Lobar pneumonia; 'currant jelly' sputum (blood-tinged mucoid); upper lobe involvement; rapid destruction and cavitation; high mortality",
+              "resistance": "Hypervirulent Klebsiella (hvKP) and ESBL/KPC-producing Klebsiella are emerging global threats"
+            },
+            {
+              "organism": "Staphylococcus aureus (including MRSA)",
+              "risk_groups": "Post-influenza (secondary bacterial pneumonia); IV drug users; elderly; nosocomial",
+              "features": "Cavitation and lung abscess; pneumothorax; rapid progression; haematogenous dissemination"
+            },
+            {
+              "organism": "Moraxella catarrhalis",
+              "risk_groups": "COPD, elderly",
+              "features": "Mild-moderate pneumonia; typically follows viral URTI"
+            }
+          ],
+          "viral": ["Influenza A (H1N1, H3N2) and B", "SARS-CoV-2 (COVID-19)", "RSV (Respiratory Syncytial Virus)", "Human Metapneumovirus (hMPV)", "Adenovirus", "Parainfluenza", "Rhinovirus (increasingly recognised cause of pneumonia)", "Human coronavirus (non-COVID)", "Measles (unvaccinated populations)"]
+        },
+        "hospital_acquired_HAP_VAP": {
+          "organisms": ["Pseudomonas aeruginosa (most important gram-negative)", "Acinetobacter baumannii (XDR strains — major ICU threat)", "Klebsiella pneumoniae (including ESBL and KPC)", "Enterobacter species", "E. coli", "MRSA (Methicillin-Resistant Staphylococcus aureus)", "Stenotrophomonas maltophilia (in immunocompromised)"],
+          "note": "HAP/VAP organisms show significantly higher rates of antimicrobial resistance — treatment guided by local antibiogram data and respiratory culture with sensitivity testing"
+        }
+      },
+      "risk_factors_for_pneumonia": [
+        {
+          "factor": "Age extremes",
+          "detail": "Children <5 years (immature immune system); adults >65 years (immunosenescence, comorbidities, impaired cough reflex, reduced mucociliary clearance)"
+        },
+        {
+          "factor": "Smoking",
+          "detail": "Damages mucociliary escalator; impairs alveolar macrophage function; increases risk 2-4x; risk dramatically increases with chronic COPD"
+        },
+        {
+          "factor": "Immunosuppression",
+          "detail": "HIV/AIDS (PJP, fungal, bacterial); chemotherapy and bone marrow transplant; solid organ transplant; high-dose corticosteroids (>20mg/day prednisolone >4 weeks); biologics (TNF inhibitors, JAK inhibitors); haematological malignancy"
+        },
+        {
+          "factor": "Chronic lung disease",
+          "detail": "COPD; bronchiectasis; cystic fibrosis; interstitial lung disease — impaired mucociliary clearance; structural lung damage; retained secretions"
+        },
+        {
+          "factor": "Diabetes mellitus",
+          "detail": "Impaired neutrophil function; impaired complement activation; higher risk of Klebsiella and Staphylococcal pneumonia; higher mortality from CAP"
+        },
+        {
+          "factor": "Alcohol misuse",
+          "detail": "Impairs gag reflex (aspiration risk); suppresses neutrophil function; malnutrition; increases risk of Klebsiella, anaerobic aspiration, and pneumococcal pneumonia"
+        },
+        {
+          "factor": "Aspiration risk",
+          "detail": "Stroke; Parkinson's; dementia; dysphagia; GERD; reduced consciousness; seizures; general anaesthesia"
+        },
+        {
+          "factor": "Malnutrition",
+          "detail": "Impairs cell-mediated immunity; reduces T-cell function; impairs phagocytic activity"
+        },
+        {
+          "factor": "Previous influenza or viral URTI",
+          "detail": "Viral infection impairs mucociliary clearance and local immune defence — creates portal for secondary bacterial pneumonia (the most common cause of influenza-related death)"
+        },
+        {
+          "factor": "Unvaccinated status",
+          "detail": "Lack of pneumococcal or influenza vaccination dramatically increases susceptibility to pneumonia"
+        },
+        {
+          "factor": "Household overcrowding",
+          "detail": "Close contact facilitates respiratory droplet transmission; common in urban India"
+        }
+      ]
+    },
+
+    "symptoms": {
+      "classical_presentation": "The classic bacterial pneumonia presentation (particularly S. pneumoniae) begins with a single rigor (severe shaking chill) followed rapidly by fever, pleuritic chest pain, and productive cough with rusty or purulent sputum. Atypical pneumonias present more insidiously with dry cough and systemic features. COVID-19 pneumonia is notable for 'silent hypoxia' where patients may be severely hypoxic without feeling breathless.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-1101",
+          "name": "Fever",
+          "description": "Temperature ≥38°C — occurs in the majority of pneumonia patients. In typical bacterial pneumonia: high-grade fever (38.5-40°C) with rigors (severe shaking chills from bacteraemia). In atypical pneumonia: low-grade to moderate fever. In elderly: fever may be absent or minimal despite severe pneumonia ('afebrile pneumonia') — absent fever in the elderly is a poor prognostic sign (suggests impaired physiological response), NOT a reassuring sign.",
+          "severity": "Mild to Very High (>40°C)",
+          "onset": "Usually acute (hours in typical bacterial); subacute (days in atypical/viral)",
+          "note": "High fever with rigors (violent shaking chills) is characteristic of pneumococcal bacteraemia"
+        },
+        {
+          "id": "SYM-1102",
+          "name": "Cough",
+          "description": "A cardinal symptom — cough in pneumonia is typically PRODUCTIVE (bringing up sputum). Sputum characteristics are diagnostically important: (1) Rusty/blood-tinged sputum — classic pneumococcal pneumonia (from red cell breakdown in alveoli); (2) Yellow-green purulent sputum — any bacterial pneumonia; (3) Currant-jelly sputum (bloody, mucoid) — Klebsiella pneumoniae; (4) 'Anchovy sauce' sputum — amoebic lung abscess; (5) Dry/non-productive cough — atypical pneumonia (Mycoplasma, Legionella, Chlamydophila) and viral pneumonia; (6) Foul-smelling — anaerobic aspiration pneumonia.",
+          "severity": "Mild to Severe",
+          "onset": "Within 24-48 hours of onset"
+        },
+        {
+          "id": "SYM-1103",
+          "name": "Dyspnoea (Breathlessness)",
+          "description": "Shortness of breath on exertion progressing to rest dyspnoea as pneumonia severity increases. Results from: alveolar consolidation reducing gas exchange surface area; V/Q mismatch; reduced lung compliance; pain limiting deep breathing (pleuritic). In COVID-19 pneumonia: 'silent hypoxia' or 'happy hypoxia' — patients may be severely hypoxic (SpO2 80-85%) without subjectively feeling breathless — due to attenuated hypoxic ventilatory response. Dyspnoea at rest is an alarm sign requiring urgent hospital assessment.",
+          "severity": "Mild (on exertion) to Severe (at rest, requiring supplemental oxygen)",
+          "onset": "Progressive",
+          "alarm": "Dyspnoea at rest or SpO2 <90% = EMERGENCY"
+        },
+        {
+          "id": "SYM-1104",
+          "name": "Pleuritic Chest Pain",
+          "description": "Sharp, stabbing, unilateral chest pain worsened by deep inspiration, coughing, or sneezing — caused by inflammation of the visceral and parietal pleura overlying the pneumonic consolidation. Highly characteristic of pneumonia (particularly lobar pneumonia) and pleuritis. May restrict deep breathing causing hypoxia. Radiates to shoulder (if diaphragmatic pleura involved — phrenic nerve distribution) or referred to abdomen in lower lobe pneumonia — potentially mimicking an acute abdomen.",
+          "severity": "Mild to Severe",
+          "onset": "May be the presenting complaint"
+        },
+        {
+          "id": "SYM-1105",
+          "name": "Rigors (Shaking Chills)",
+          "description": "Violent, uncontrollable shivering with teeth chattering and muscle contractions during the abrupt rise in fever — characteristic of bacteraemia (bacteria in bloodstream). A SINGLE episode of rigors at the onset of illness is highly characteristic of pneumococcal pneumonia (Streptococcus pneumoniae). Multiple rigors suggest malaria or recurring bacteraemia. Rigors indicate the sudden massive bacteraemia characteristic of pneumococcal invasion.",
+          "severity": "Severe — distressing to patient and observers",
+          "clinical_significance": "One rigor at onset = classic pneumococcal pneumonia; multiple rigors = consider bacteraemia from another source or malaria"
+        },
+        {
+          "id": "SYM-1106",
+          "name": "Systemic Features — Malaise, Myalgia, Headache",
+          "description": "Systemic inflammatory response to infection: profound fatigue and malaise from cytokine release (TNF-α, IL-6); myalgia (muscle aches) from systemic inflammation — particularly prominent in influenza, Legionella, and Mycoplasma; headache from fever and possibly CNS involvement. In Legionella pneumonia: confusion, diarrhoea, and headache are particularly prominent extrarespiratory features.",
+          "severity": "Mild to Moderate",
+          "onset": "Concurrent with or preceding respiratory symptoms in atypical/viral pneumonia"
+        }
+      ],
+      "secondary_symptoms": [
+        "Haemoptysis (coughing blood) — frank blood from inflamed airways or cavitating pneumonia; small amounts common; large haemoptysis is an alarm sign (consider fungal, Klebsiella, TB, lung abscess)",
+        "Nausea and vomiting — systemic response; common in Legionella (diarrhoea prominently)",
+        "Loss of appetite — from systemic illness",
+        "Confusion and disorientation — important alarm feature (CURB-65 C criterion); indicates severity; particularly prominent in elderly and Legionella pneumonia",
+        "Tachycardia — proportional to fever and hypoxia; HR >100 bpm typical",
+        "Tachypnoea — respiratory rate >20/min (>30/min = CURB-65 criterion = severe); most reliable early sign of severity",
+        "Central cyanosis — blue discolouration of lips and tongue — severe hypoxia; late sign",
+        "Diarrhoea — prominent in Legionella (50%); also viral pneumonias (COVID-19)",
+        "Rash — erythema multiforme (Mycoplasma); maculopapular (measles pneumonia)",
+        "Herpes labialis (cold sore reactivation) — classic trigger with pneumococcal pneumonia"
+      ],
+      "physical_examination_findings": {
+        "inspection": "Tachypnoea; use of accessory muscles (sternocleidomastoid, intercostals); intercostal recession in children; nasal flaring; cyanosis (late); reduced chest expansion on affected side",
+        "palpation": "Increased vocal fremitus (tactile) over consolidation; tracheal deviation (tension pneumothorax — moves away from side; large effusion — moves away); reduced chest expansion",
+        "percussion": "Dullness to percussion over consolidation or pleural effusion (stony dull over fluid vs wooden dull over consolidation)",
+        "auscultation": [
+          "Bronchial breathing: hollow, tubular breath sounds heard over solid consolidation (normally only at trachea); pathological when heard in the lung periphery",
+          "Crepitations (crackles): late inspiratory fine crackles (alveolar fluid) or coarse crackles (large airway secretions) — best heard after cough or deep breath",
+          "Pleural friction rub: creaking leathery sound; synchronous with respiratory movement (not heartbeat); indicates pleuritis",
+          "Reduced or absent breath sounds: over effusion or complete consolidation",
+          "Whispering pectoriloquy: whispered sounds transmitted clearly through consolidation ('99' heard clearly)"
+        ],
+        "special_signs_severe_pneumonia": [
+          "Central cyanosis — SpO2 <85%",
+          "Confusion or drowsiness (Glasgow Coma Scale <15) — CURB-65 positive",
+          "Hypotension (SBP <90 mmHg) — CURB-65 positive; indicates septic shock",
+          "Tachypnoea >30/min — CURB-65 positive",
+          "Oxygen requirement to maintain SpO2 >92%",
+          "Bilateral or multilobar involvement on CXR"
+        ]
+      },
+      "symptoms_in_children": {
+        "key_points": [
+          "Children may not localise symptoms to the chest — young children present with non-specific features: fever, rapid breathing, poor feeding, lethargy",
+          "Tachypnoea (fast breathing) is the most sensitive sign of pneumonia in children — WHO respiratory rate thresholds: >50 breaths/min (<2 months); >40 breaths/min (2-12 months); >30 breaths/min (1-5 years)",
+          "Chest in-drawing (intercostal and subcostal recession) indicates severe respiratory distress in children",
+          "Coughing is variable — young infants may present with apnoea rather than cough",
+          "Fever without obvious focus in infants and toddlers — pneumonia must be excluded",
+          "RSV bronchiolitis (wheeze + respiratory distress, usually <2 years) and pneumonia may coexist",
+          "Signs of very severe pneumonia in children: inability to drink, central cyanosis, severe lower chest in-drawing, grunting respirations, altered consciousness, convulsions"
+        ]
+      },
+      "alarm_signs": [
+        "SpO2 <92% on room air — or requiring supplemental oxygen to maintain SpO2 ≥94%",
+        "Respiratory rate ≥30 breaths/min (adult)",
+        "Systolic blood pressure <90 mmHg (or MAP <65 mmHg) — septic shock",
+        "Confusion, disorientation, or reduced Glasgow Coma Scale — encephalopathy from hypoxia or sepsis",
+        "Heart rate >125 bpm with signs of shock",
+        "Cyanosis (peripheral or central)",
+        "Haemoptysis (coughing blood) — lung abscess, cavitation, or malignancy",
+        "Bilateral or multilobar consolidation on CXR",
+        "Evidence of empyema or large pleural effusion",
+        "Failure to improve after 48-72 hours of appropriate antibiotics — consider resistant organism, empyema, or alternative diagnosis"
+      ]
+    },
+
+    "diagnosis": {
+      "diagnostic_approach": {
+        "clinical_diagnosis": "Pneumonia is diagnosed on clinical grounds (history + examination) supported by radiological confirmation (chest X-ray). WHO clinical definition for childhood pneumonia: fast breathing ± chest in-drawing in a febrile child. For adults: new lower respiratory symptoms + fever + new radiographic infiltrate consistent with infection.",
+        "microbiological_workup": "In hospitalised patients and severe CAP: blood cultures (2 sets before antibiotics), sputum Gram stain and culture, pneumococcal urinary antigen, Legionella urinary antigen, respiratory viral PCR panel. In outpatients with mild CAP: microbiological workup not required routinely."
+      },
+      "medical_history": [
+        "Symptom onset and progression: acute (hours — typical bacterial) vs subacute (days to weeks — atypical, viral, mycobacterial, fungal)",
+        "Cough: productive or dry; sputum colour and volume; haemoptysis",
+        "Fever pattern and severity: rigors (pneumococcal bacteraemia); sweats",
+        "Dyspnoea severity: exertional or rest; progression rate",
+        "Pleuritic chest pain: laterality and radiation",
+        "Extrapulmonary features: diarrhoea (Legionella, COVID-19); rash (Mycoplasma); confusion; myalgia (atypical/viral)",
+        "Exposure history: sick contacts; travel (Legionella — hotels/cruise ships; endemic fungi — histoplasmosis, coccidioidomycosis); bird contact (psittacosis — Chlamydia psittaci); farm animal contact (Q fever — Coxiella burnetii); water exposure (Legionella)",
+        "Immunosuppression status: HIV (test if unknown); chemotherapy; biologics; organ transplant; corticosteroids",
+        "Aspiration risk: dysphagia; stroke; alcohol; consciousness level; recent anaesthesia",
+        "Comorbidities: COPD; asthma; diabetes; heart failure; chronic renal disease; liver disease",
+        "Vaccination history: pneumococcal vaccine; influenza vaccine; COVID-19 booster status",
+        "Recent antibiotic use (may affect culture results and guide resistance patterns)",
+        "Occupation: healthcare worker (TB, influenza, COVID-19 risk); farmer (zoonotic); construction (histoplasmosis, coccidioidomycosis)"
+      ],
+      "physical_examination": [
+        "Vital signs: temperature; heart rate; respiratory rate (most sensitive pneumonia severity marker); blood pressure (hypotension = septic shock); SpO2 (most critical parameter)",
+        "General: appearance, distress, able to complete sentences",
+        "Respiratory examination: inspection (breathing pattern, cyanosis, accessory muscle use, intercostal recession), palpation (expansion, vocal fremitus), percussion (dullness), auscultation (bronchial breathing, crepitations, pleural rub, reduced breath sounds)",
+        "Cardiovascular: HR, BP; signs of right heart failure (raised JVP, oedema) from severe hypoxia; pericardial rub",
+        "Abdominal examination: hepatomegaly (Legionella, hepatitis); tender RUQ (liver abscess); abdominal rigidity (referred pain from lower lobe pleuritis mimicking acute abdomen)",
+        "Neurological: confusion; meningism (pneumococcal pneumonia with meningitis); focal neurology",
+        "Skin: rash (measles, varicella, Mycoplasma erythema multiforme); herpes labialis (S. pneumoniae trigger); jaundice (Legionella, severe sepsis)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Chest X-Ray (CXR) — Posteroanterior and Lateral",
+          "type": "Imaging — First-line",
+          "description": "Mandatory first-line imaging in all suspected pneumonia. Confirms diagnosis, assesses extent, identifies complications. Findings: lobar or segmental consolidation (alveolar airspace filling — appears as opacification that obscures vascular markings but often shows air bronchograms); interstitial infiltrates (viral/atypical — bilateral; perihilar or basilar); pleural effusion; cavitation (necrotising/abscess); pneumothorax. CXR may appear normal in early pneumonia and in immunocompromised patients (negative CXR does NOT exclude pneumonia if clinical suspicion is high).",
+          "purpose": "Confirm diagnosis; assess extent and severity; identify complications (effusion, cavitation, pneumothorax); guide site-of-care decision",
+          "key_findings": {
+            "lobar_consolidation": "Homogeneous opacification of entire lobe with air bronchograms — typical of S. pneumoniae",
+            "bilateral_interstitial": "Bilateral perihilar ('butterfly') or diffuse bilateral ground-glass — viral pneumonia, PJP, COVID-19",
+            "upper_lobe_cavitation": "Suggests TB or Klebsiella (alcoholics)",
+            "air_fluid_level": "Lung abscess",
+            "patchy_bilateral": "Atypical pneumonia (Mycoplasma); COVID-19 (bilateral peripheral lower zone)"
+          }
+        },
+        {
+          "test_name": "High-Resolution CT Scan of Chest (HRCT / CT Thorax)",
+          "type": "Imaging — Second-line",
+          "description": "More sensitive than CXR — detects pneumonia in 10-15% of cases where CXR appears normal (immunocompromised, early disease). Essential for: suspected complications (empyema, abscess, necrotising), CXR-negative pneumonia with high clinical suspicion, failure to improve on treatment (look for unusual organisms, complications, alternative diagnoses such as malignancy or PE), COVID-19 pneumonia assessment (typical peripheral bilateral ground-glass with crazy-paving in severe COVID).",
+          "purpose": "Confirm pneumonia when CXR negative; detect complications; assess extent of COVID-19 pneumonitis; identify suspected malignancy or PE; evaluate non-resolving pneumonia",
+          "ct_severity_index": "CT severity scoring (CT-SS) for COVID-19: each of 5 lobes scored 0-5 based on % involvement; total 0-25; >18 predicts need for ICU"
+        },
+        {
+          "test_name": "Full Blood Count (FBC) with Differential",
+          "type": "Blood — Haematological",
+          "description": "Essential in all pneumonia patients. Leukocytosis (WBC >12,000/µL) with neutrophilia suggests bacterial pneumonia; leukopenia (<4,000/µL) indicates severe infection or viral aetiology — and carries worse prognosis. Lymphopenia is characteristic of severe COVID-19 (marker of severity). Anaemia may indicate haemolysis (Mycoplasma — cold agglutinins) or chronic disease.",
+          "purpose": "Assess severity; guide antibiotic decisions; detect haematological complications",
+          "key_metric": "WBC >15,000/µL with band forms: bacterial pneumonia; WBC <4,000/µL: severe or viral; Lymphopenia <1,000/µL: COVID-19 severity marker; Thrombocytopenia: severe sepsis"
+        },
+        {
+          "test_name": "C-Reactive Protein (CRP) and Procalcitonin (PCT)",
+          "type": "Blood — Inflammatory markers",
+          "description": "CRP: elevated in bacterial and viral pneumonia; >100 mg/L suggests significant bacterial infection; serial CRP monitors treatment response (rising CRP on antibiotics = inadequate response). Procalcitonin (PCT): most specific bacterial infection marker — elevated >0.25-0.5 ng/mL in bacterial infection; suppressed in viral pneumonia. PCT-guided protocols reduce antibiotic duration without compromising outcomes (PCT <0.25 ng/mL → withhold or discontinue antibiotics).",
+          "purpose": "Assess severity; guide antibiotic initiation (PCT); monitor treatment response; guide antibiotic discontinuation",
+          "key_metric": "CRP >200 mg/L: severe bacterial infection; PCT >2 ng/mL: severe bacterial sepsis; PCT <0.1 ng/mL: unlikely bacterial — consider withholding antibiotics if clinical picture allows"
+        },
+        {
+          "test_name": "Arterial Blood Gas (ABG) or Venous Blood Gas (VBG)",
+          "type": "Blood — Respiratory",
+          "description": "Essential in all hospitalised pneumonia patients and all patients with SpO2 <94% on pulse oximetry. Measures: PaO2 (partial pressure of oxygen); PaCO2 (partial pressure of CO2 — elevated indicates type 2 respiratory failure, exhaustion); pH (acidosis indicates severe disease); bicarbonate; lactate. PaO2/FiO2 ratio defines ARDS severity.",
+          "purpose": "Assess severity of respiratory failure; identify type 1 (low PaO2, normal/low PaCO2) vs type 2 (low PaO2, high PaCO2); guide oxygen therapy and ventilation decisions",
+          "key_metric": "PaO2 <8 kPa (60 mmHg) on room air: significant hypoxaemia; PaO2/FiO2 <300: ARDS (Berlin criteria); PaCO2 >6 kPa (45 mmHg): hypercapnia (type 2 failure — exhaustion); pH <7.35: acidosis"
+        },
+        {
+          "test_name": "Blood Cultures (2 Sets Peripheral Venous — Before Antibiotics)",
+          "type": "Microbiological",
+          "description": "Blood cultures should be taken from 2 separate peripheral venipuncture sites (NOT the same draw) before the first antibiotic dose. Each set contains an aerobic and anaerobic bottle. Positive in approximately 10-15% of CAP and 20-30% of severe CAP. A positive blood culture confirms bacteraemia, identifies the causative organism, and provides antibiotic sensitivity data — allowing targeted de-escalation. False-positive rates are low when proper aseptic technique is used.",
+          "purpose": "Identify causative bacteraemia; guide antibiotic de-escalation based on sensitivities; confirm organism in severe cases",
+          "key_metric": "Positive culture with pathogen: confirms diagnosis; antibiotic sensitivities guide de-escalation; repeat cultures 48h if fever persists (assess clearance of bacteraemia)"
+        },
+        {
+          "test_name": "Sputum Gram Stain and Culture",
+          "type": "Microbiological",
+          "description": "A GOOD QUALITY sputum sample (not saliva — must contain mucoid or purulent material; <10 squamous epithelial cells/low-power field; >25 WBCs/low-power field) is Gram-stained and cultured for bacterial identification and sensitivity. Provides organism and antibiotic sensitivity data within 24-72 hours. Sensitivity limited by prior antibiotic use and difficulty obtaining adequate sample in community practice.",
+          "purpose": "Identify causative organism and antibiotic sensitivities; guide de-escalation of empirical antibiotics",
+          "sample_collection": "Early morning sputum; deep cough into sterile pot; process within 2-4 hours of collection; if unable to expectorate — consider induced sputum (nebulised hypertonic saline) or bronchoscopy with BAL",
+          "limitation": "Poor sensitivity (40-60%); overdiagnoses commensal oral flora without interpretation against clinical picture"
+        },
+        {
+          "test_name": "Urinary Antigen Tests (Pneumococcal and Legionella)",
+          "type": "Immunoassay",
+          "description": "Rapid, non-invasive, highly specific tests detecting bacterial antigens in urine. (1) Pneumococcal urinary antigen (BinaxNOW/Sofia): detects pneumococcal C-polysaccharide antigen; result within 15 minutes; sensitivity 50-80% for CAP; remains positive for weeks even after antibiotics started. (2) Legionella urinary antigen: detects Legionella pneumophila serogroup 1 antigen (responsible for ~85% of Legionnaire's cases); sensitivity ~70-90%; result within 15 minutes; essential for all hospitalised CAP patients.",
+          "purpose": "Rapid aetiological diagnosis of two most important CAP pathogens; allows targeted therapy; does not require respiratory sampling",
+          "key_metric": "Positive pneumococcal antigen: confirms pneumococcal aetiology → narrow to penicillin/amoxicillin; Positive Legionella antigen: confirms legionellosis → switch to azithromycin or fluoroquinolone (stop beta-lactam monotherapy)"
+        },
+        {
+          "test_name": "Respiratory Viral PCR Panel (Nasopharyngeal Swab or BAL)",
+          "type": "Molecular — PCR",
+          "description": "Multiplex PCR simultaneously tests for multiple respiratory viruses (Influenza A/B, RSV, SARS-CoV-2, Adenovirus, hMPV, Parainfluenza 1-4, Rhinovirus, Coronavirus, Bocavirus) and some bacteria (Mycoplasma, Legionella, Chlamydophila) from a single respiratory sample. Results in 1-4 hours. Essential for guiding antiviral therapy and infection control decisions.",
+          "purpose": "Rapid identification of viral or atypical bacterial aetiologies; guide antiviral therapy (oseltamivir for influenza); guide infection control; support antibiotic discontinuation in viral-only pneumonia",
+          "key_metric": "Influenza positive → start oseltamivir within 48h (benefit persists up to 120h in severe/hospitalised); SARS-CoV-2 positive → dexamethasone if requiring oxygen"
+        },
+        {
+          "test_name": "CURB-65 Score Calculation",
+          "type": "Clinical scoring — Validated severity tool",
+          "description": "The CURB-65 score is the most widely used validated severity scoring tool for community-acquired pneumonia — recommended by BTS (British Thoracic Society) guidelines for site-of-care decisions. Calculated from 5 readily available clinical and biochemical parameters. Guides the decision between outpatient treatment, ward admission, or ICU.",
+          "parameters": {
+            "C_Confusion": "New onset confusion (abbreviated mental test AMT ≤8/10 or any new disorientation) — 1 point",
+            "U_Urea": "Blood urea nitrogen >7 mmol/L (>19 mg/dL) — 1 point",
+            "R_Respiratory_rate": "Respiratory rate ≥30 breaths/min — 1 point",
+            "B_Blood_pressure": "Systolic BP <90 mmHg OR diastolic BP ≤60 mmHg — 1 point",
+            "65_Age": "Age ≥65 years — 1 point"
+          },
+          "interpretation": {
+            "score_0_1": "Mild (mortality <3%): Consider outpatient treatment",
+            "score_2": "Moderate (mortality 9%): Hospital admission recommended",
+            "score_3_4": "Severe (mortality 15-25%): Consider HDU/ICU",
+            "score_5": "Very severe (mortality >40%): ICU care essential"
+          }
+        },
+        {
+          "test_name": "Renal Function (Urea, Creatinine, eGFR) and Electrolytes",
+          "type": "Blood — Biochemical",
+          "description": "Urea (BUN) is a component of CURB-65 score. Elevated urea indicates dehydration and poor prognosis. Hyponatraemia (low sodium) is strongly associated with Legionella pneumonia (SIADH). Acute kidney injury (rising creatinine, falling urine output) occurs in severe pneumonia and sepsis.",
+          "purpose": "CURB-65 calculation; detect AKI; detect hyponatraemia (Legionella); guide fluid resuscitation; dose-adjust antibiotics (gentamicin, vancomycin)",
+          "key_metric": "Urea >7 mmol/L: CURB-65 positive; Na <130: Legionella strongly suggested; Creatinine rising: AKI — urgent fluid resuscitation and review nephrotoxic drugs"
+        },
+        {
+          "test_name": "Liver Function Tests (LFTs)",
+          "type": "Blood — Biochemical",
+          "description": "Elevated transaminases and ALP in Legionella pneumonia (important diagnostic clue — LFT derangement in an atypical pneumonia strongly suggests Legionella). Also relevant for hepatic complications of severe sepsis, antibiotic hepatotoxicity monitoring (rifampicin, co-amoxiclav).",
+          "purpose": "Detect Legionella (LFT elevation); assess hepatic complication of sepsis; guide drug prescribing",
+          "key_metric": "ALT/AST >2x ULN in atypical pneumonia: Legionella; Elevated ALP and bilirubin: cholestatic pattern — consider drug reaction"
+        },
+        {
+          "test_name": "Lactate / Serum Lactate",
+          "type": "Blood — Metabolic",
+          "description": "Elevated serum lactate (>2 mmol/L) indicates tissue hypoperfusion — insufficient oxygen delivery to tissues. Essential in severe pneumonia and sepsis assessment. Lactate >4 mmol/L = septic shock regardless of blood pressure. Serial lactate monitoring guides fluid resuscitation adequacy (lactate clearance >10% in 2 hours = adequate resuscitation).",
+          "purpose": "Detect tissue hypoperfusion and septic shock; sepsis bundle trigger (Surviving Sepsis Campaign); guide resuscitation",
+          "key_metric": "Lactate >2 mmol/L: sepsis; >4 mmol/L: septic shock (start vasopressors if hypotensive); target lactate normalisation (<2 mmol/L) within 6 hours"
+        },
+        {
+          "test_name": "HIV Test",
+          "type": "Blood — Serology",
+          "description": "HIV testing should be offered to all patients with pneumonia where HIV status is unknown — particularly when: severe pneumonia not responding to standard antibiotics; bilateral interstitial infiltrates (PJP); young patients with severe pneumonia without apparent risk factors; recurrent pneumonia; low CD4 count suspected. PJP (Pneumocystis jirovecii Pneumonia) is an AIDS-defining illness — prompt HIV diagnosis enables antiretroviral therapy initiation.",
+          "purpose": "Identify HIV-positive patients who need PJP prophylaxis and treatment; enable timely ART initiation; identify immunocompromised patients needing broader antimicrobial cover"
+        },
+        {
+          "test_name": "Pleural Fluid Analysis (Diagnostic Thoracocentesis)",
+          "type": "Invasive — Pleural fluid",
+          "description": "If a pleural effusion is present, diagnostic thoracocentesis (aspiration of pleural fluid) is mandatory in hospitalised pneumonia patients to exclude empyema and exudative parapneumonic effusion. Light's criteria distinguish exudate from transudate. An empyema (pus in pleural space) is a surgical emergency requiring urgent chest drain insertion.",
+          "light_criteria": "Exudate if any of: pleural:serum protein >0.5; pleural:serum LDH >0.6; pleural LDH >2/3 upper limit serum LDH",
+          "empyema_indicators": "pH <7.2; glucose <2.2 mmol/L; frank pus; positive Gram stain or culture — ANY of these: insert chest drain urgently",
+          "purpose": "Exclude empyema (surgical emergency); characterise pleural effusion (exudate/transudate); culture pleural fluid for organism identification"
+        },
+        {
+          "test_name": "Bronchoscopy with Bronchoalveolar Lavage (BAL)",
+          "type": "Invasive — Bronchoscopic",
+          "description": "Bronchoscopy allows direct visualisation of airways and collection of bronchoalveolar lavage fluid (BAL) from the affected lobe for comprehensive microbiological analysis including: bacterial culture, fungal culture, AFB smear/culture (TB), Pneumocystis jirovecii silver stain/PCR, Legionella PCR, viral PCR. Most sensitive test for PJP (>95% sensitivity with BAL).",
+          "purpose": "Diagnosis in immunocompromised pneumonia; diagnosis of PJP; non-resolving pneumonia investigation; HAP/VAP organism identification; endobronchial obstruction (cancer, foreign body)",
+          "indications": "Immunocompromised patients with pneumonia; suspected PJP, fungal, or TB pneumonia; non-resolving pneumonia; failed empirical antibiotics"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Antibiotic selection in pneumonia is based on: (1) setting (CAP vs HAP/VAP); (2) severity (CURB-65 score); (3) suspected causative organism; (4) local antibiogram data; (5) patient allergies and comorbidities; (6) prior antibiotic exposure. Antibiotics should be started PROMPTLY in hospitalised patients — each hour delay in severe sepsis increases mortality by 7%. All medications require prescription by a licensed physician or infectious disease specialist.",
+      "empirical_antibiotic_strategies": {
+        "mild_CAP_outpatient_CURB65_0_1": "Amoxicillin 1g three times daily × 5 days (first-line UK/NICE); OR Doxycycline 200mg day 1 then 100mg daily × 5 days (penicillin allergy or atypical suspected); OR Clarithromycin 500mg twice daily × 5 days (macrolide — if penicillin-allergic and doxycycline contraindicated)",
+        "moderate_CAP_hospital_CURB65_2": "IV/oral Amoxicillin 500mg-1g TDS + Clarithromycin 500mg BD (dual therapy — beta-lactam + macrolide covers both typical and atypical); OR Doxycycline if macrolide-intolerant",
+        "severe_CAP_CURB65_3_or_more": "IV Co-amoxiclav (Augmentin) 1.2g TDS + IV Clarithromycin 500mg BD OR IV Azithromycin 500mg OD; OR IV Ceftriaxone 2g OD + IV Clarithromycin/Azithromycin; OR IV Levofloxacin 500mg BD alone (monotherapy for non-ICU severe CAP); Add IV Vancomycin or Linezolid if MRSA suspected",
+        "HAP": "IV Piperacillin-tazobactam 4.5g TDS-QDS (or TDS extended infusion over 4h); OR IV Cefepime 2g TDS; ADD Vancomycin IV (or Linezolid) if MRSA risk; ADD antifungal (anidulafungin, micafungin) in high-risk immunocompromised",
+        "VAP": "Broader-spectrum: IV Meropenem or Imipenem (carbapenem — if ESBL or MDR organism suspected); + Vancomycin/Linezolid (MRSA); + Amikacin (if Pseudomonas suspected); guided by BAL culture within 48-72h",
+        "de_escalation": "Review antibiotics at 48-72 hours: narrow based on culture results and sensitivities; switch IV to oral once patient improving and tolerating oral medication; typical total course 5-7 days (mild CAP); 5-10 days (moderate-severe); 14-21 days (complicated, necrotising, empyema)"
+      },
+      "categories": [
+        {
+          "category_id": "MED-CAT-151",
+          "category_name": "Beta-Lactam Antibiotics — First-Line for Typical Bacterial Pneumonia",
+          "purpose": "Most effective against Streptococcus pneumoniae (the most common CAP pathogen) and other gram-positive bacteria. The backbone of CAP treatment. Beta-lactams cannot cover atypical organisms — add macrolide or doxycycline for dual coverage.",
+          "medicines": [
+            {
+              "name": "Amoxicillin",
+              "brand_examples": ["Amoxil", "Mox", "Novamox", "Trimox"],
+              "form": "Capsule, Tablet, Oral suspension, IV Injection",
+              "dosage": "Mild CAP: 500mg-1g orally three times daily × 5-7 days; IV: 1g every 8 hours (hospital); High-dose: 1g TDS for severe pneumococcal or non-bacteraemic pneumonia",
+              "use_case": "FIRST-LINE treatment for mild CAP (NICE UK guidelines); outpatient mild-moderate CAP; confirmed pneumococcal pneumonia (targeted therapy after positive urinary antigen)",
+              "mechanism": "Aminopenicillin — inhibits bacterial cell wall synthesis (PBP binding — prevents peptidoglycan cross-linking); bactericidal; highly active against S. pneumoniae",
+              "side_effects": ["Rash (maculopapular — particularly if EBV mononucleosis; not a true allergy)", "Diarrhoea and GI upset", "Nausea", "Hypersensitivity (rare — anaphylaxis; ask about penicillin allergy before prescribing)"],
+              "contraindications": ["Penicillin allergy (anaphylaxis)"],
+              "note": "Does NOT cover atypical organisms (Mycoplasma, Legionella, Chlamydophila) — add macrolide or doxycycline when atypical pneumonia possible"
+            },
+            {
+              "name": "Amoxicillin-Clavulanate (Co-Amoxiclav)",
+              "brand_examples": ["Augmentin", "Amoxyclav", "Clavam"],
+              "form": "Tablet (625mg — amoxicillin 500mg + clavulanate 125mg), IV (1.2g — amoxicillin 1g + clavulanate 200mg)",
+              "dosage": "Oral: 625mg (500/125mg) three times daily × 5-7 days; IV: 1.2g every 8 hours",
+              "use_case": "Moderate-severe CAP (hospital); aspiration pneumonia (covers oropharyngeal anaerobes); beta-lactamase-producing H. influenzae or Moraxella; broad-spectrum CAP cover",
+              "mechanism": "Amoxicillin + clavulanate (beta-lactamase inhibitor) — extends amoxicillin spectrum to cover beta-lactamase-producing organisms",
+              "side_effects": ["GI upset and diarrhoea (most common)", "Liver enzyme elevation", "Cholestatic jaundice (rare but important — especially with clavulanate; avoid if prior co-amoxiclav jaundice)", "Hypersensitivity"]
+            },
+            {
+              "name": "Ceftriaxone",
+              "brand_examples": ["Rocephin", "Monocef", "Biotax"],
+              "form": "IV/IM Injection",
+              "dosage": "1-2g IV/IM once daily (OD); 2g IV OD for severe CAP",
+              "use_case": "Moderate-severe hospitalised CAP; preferred IV beta-lactam in many guidelines; excellent S. pneumoniae coverage; once-daily dosing simplifies administration",
+              "mechanism": "3rd generation cephalosporin — broad-spectrum beta-lactam; excellent CSF penetration (meningitis co-coverage if CNS involvement)",
+              "side_effects": ["Hypersensitivity (cross-reactivity with penicillin <2%)", "Biliary sludge (prolonged use)", "C. difficile (any antibiotic)"]
+            },
+            {
+              "name": "Piperacillin-Tazobactam (Pip-Tazo)",
+              "brand_examples": ["Tazobactam", "Zosyn", "Tazocin"],
+              "form": "IV Infusion",
+              "dosage": "4.5g IV every 6-8 hours (standard); extended infusion 4.5g over 4 hours every 6-8h (preferred for serious infections — improves pharmacodynamic target attainment)",
+              "use_case": "HAP; severe CAP with Pseudomonas risk (bronchiectasis, CF, immunocompromised, prior Pseudomonas); aspiration pneumonia (anaerobic cover)",
+              "mechanism": "Ureidopenicillin (piperacillin) + beta-lactamase inhibitor (tazobactam) — very broad spectrum including Pseudomonas aeruginosa, anaerobes, gram-positive and gram-negative aerobes",
+              "side_effects": ["Hypokalaemia", "Hyponatraemia (sodium load)", "Liver enzyme elevation", "C. difficile", "Neurotoxicity at very high doses (elderly/renal impairment)"]
+            },
+            {
+              "name": "Meropenem / Imipenem-Cilastatin",
+              "brand_examples": ["Meronem (meropenem)", "Tienam (imipenem-cilastatin)"],
+              "form": "IV Infusion",
+              "dosage": "Meropenem: 1-2g IV every 8 hours; Imipenem: 500mg-1g IV every 6-8 hours",
+              "use_case": "HAP/VAP with suspected MDR gram-negatives; ESBL-producing organisms; severe HAP not responding to piperacillin-tazobactam; empirical cover while awaiting MDR culture results",
+              "mechanism": "Carbapenem — broadest-spectrum beta-lactam; covers ESBL-producing organisms, anaerobes, gram-positives (not MRSA), many MDR gram-negatives",
+              "side_effects": ["Seizures (imipenem — CNS toxicity; use meropenem instead in patients with seizure history)", "C. difficile", "Hypersensitivity", "Antibiotic stewardship concern — reserve for MDR organisms; carbapenem-resistant Klebsiella (CRE) is an emerging global threat — contact infection control immediately if suspected"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-152",
+          "category_name": "Macrolide Antibiotics — Atypical Coverage",
+          "purpose": "Cover atypical pneumonia organisms (Mycoplasma pneumoniae, Legionella pneumophila, Chlamydophila pneumoniae) which do not respond to beta-lactam antibiotics. Used in combination with beta-lactams for hospitalised CAP to provide dual coverage (typical + atypical). Also have anti-inflammatory immunomodulatory effects.",
+          "medicines": [
+            {
+              "name": "Clarithromycin",
+              "brand_examples": ["Klaricid", "Klacid", "Clacee", "Clarithromycin"],
+              "form": "Tablet (250mg, 500mg), IV Infusion",
+              "dosage": "Oral: 500mg twice daily × 5-7 days; IV: 500mg twice daily (switch to oral when improving)",
+              "use_case": "Atypical CAP cover (Mycoplasma, Chlamydophila); combination with amoxicillin/ceftriaxone for hospitalised moderate-severe CAP; Legionella (IV form)",
+              "mechanism": "Macrolide — inhibits protein synthesis (50S ribosomal subunit); also inhibits H. pylori; immunomodulatory effects (reduces IL-8, TNF-α)",
+              "side_effects": ["GI upset, nausea, diarrhoea (most common)", "Metallic taste", "QT prolongation (significant — avoid with other QT-prolonging drugs)", "Liver enzyme elevation", "Drug interactions — CYP3A4 inhibitor (increases many drug levels)"],
+              "contraindications": ["QT prolongation; concurrent QT-prolonging medications; severe hepatic failure"],
+              "note": "AVOID clarithromycin in pregnancy — potentially teratogenic; use azithromycin instead"
+            },
+            {
+              "name": "Azithromycin",
+              "brand_examples": ["Zithromax", "Azee", "Azithral"],
+              "form": "Tablet (250mg, 500mg), IV Infusion, Oral suspension",
+              "dosage": "Mild CAP (outpatient): 500mg day 1 then 250mg daily × 5 days; Hospital (IV): 500mg once daily IV; Legionella: 500mg OD × 5-10 days",
+              "use_case": "Atypical CAP; combination therapy with beta-lactam for moderate-severe CAP; Legionella pneumonia (IV); safe in pregnancy; daily dosing improves adherence",
+              "mechanism": "Azalide macrolide — longer tissue half-life than clarithromycin (persists in tissues for 5-7 days after last dose); immunomodulatory",
+              "side_effects": ["GI upset (less than clarithromycin)", "QT prolongation (less than clarithromycin)", "Hearing loss with very high doses"],
+              "advantage": "Once-daily dosing; longer tissue levels (post-antibiotic effect); fewer drug interactions than clarithromycin; safe in pregnancy"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-153",
+          "category_name": "Doxycycline — Atypical and Broad Spectrum",
+          "medicines": [
+            {
+              "name": "Doxycycline",
+              "brand_examples": ["Vibramycin", "Doxrid", "Doxt-SL"],
+              "form": "Tablet, Capsule",
+              "dosage": "200mg on day 1, then 100mg once daily (or 100mg BD throughout); × 5-7 days",
+              "use_case": "Mild CAP — first-line alternative to amoxicillin (covers both typical and atypical organisms); penicillin allergy; atypical pneumonia including Mycoplasma, Chlamydophila, Legionella; Q fever (Coxiella burnetii); psittacosis",
+              "mechanism": "Tetracycline — inhibits protein synthesis (30S ribosomal subunit); bacteriostatic; covers gram-positive, gram-negative, and atypical organisms",
+              "side_effects": ["GI upset (take with food)", "Oesophageal irritation (take with large volume of water; remain upright 30 min)", "Photosensitivity (use sunscreen)", "Dental staining in children <8 years"],
+              "contraindications": ["Pregnancy (all trimesters — bone/tooth effects on fetus)", "Children <8 years", "Severe hepatic impairment"],
+              "advantage": "Single agent that covers both typical AND atypical organisms — ideal for outpatient mild CAP monotherapy"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-154",
+          "category_name": "Respiratory Fluoroquinolones — High-Potency Broad-Spectrum",
+          "purpose": "Fluoroquinolones specifically with potent activity against Streptococcus pneumoniae and atypical organisms — called 'respiratory fluoroquinolones'. Cover typical, atypical, and gram-negative organisms in one drug. Use reserved for severe CAP or when beta-lactam/macrolide combination not feasible.",
+          "note": "ANTIBIOTIC STEWARDSHIP: Respiratory fluoroquinolones should be reserved for severe/specific indications to preserve efficacy and limit resistance. They have significant side effects. Do not use for routine mild CAP.",
+          "medicines": [
+            {
+              "name": "Levofloxacin",
+              "brand_examples": ["Levaquin", "Tavanic", "Levoflox"],
+              "form": "Tablet (250mg, 500mg), IV Infusion",
+              "dosage": "Severe CAP: 500mg BD (× 5-7 days) or 750mg OD × 5 days; Legionella: 500mg BD × 10-14 days",
+              "use_case": "Severe CAP (monotherapy option); Legionella pneumonia (drug of choice with azithromycin); penicillin AND macrolide allergy; CAP with multi-drug allergy; beta-lactam-allergic severe CAP",
+              "mechanism": "Fluoroquinolone — inhibits DNA gyrase (GyrA) and topoisomerase IV (ParC); bactericidal; excellent intracellular penetration (atypical organisms); high oral bioavailability (oral = IV efficacy)",
+              "side_effects": ["Tendinopathy and tendon rupture — BLACK BOX WARNING (particularly Achilles tendon; risk higher with corticosteroids, elderly, renal disease)", "QT prolongation (significant — avoid with other QT drugs; baseline ECG)", "CNS effects: headache, dizziness, insomnia, seizures (elderly)", "Hypoglycaemia (with sulphonylureas)", "Peripheral neuropathy (prolonged use)", "C. difficile"],
+              "contraindications": ["Myasthenia gravis (worsens)", "QT prolongation", "Tendon disorders", "Children and adolescents (<18 years — cartilage)", "Pregnancy (avoid)"]
+            },
+            {
+              "name": "Moxifloxacin",
+              "brand_examples": ["Avelox", "Vigamox", "Moxif"],
+              "form": "Tablet (400mg), IV Infusion",
+              "dosage": "400mg once daily × 5-7 days (oral or IV)",
+              "use_case": "Severe CAP monotherapy; penicillin-allergic patients with severe CAP; atypical cover; aspiration pneumonia (anaerobic cover — unlike levofloxacin); once-daily dosing",
+              "advantage": "Broader anaerobic coverage than levofloxacin; once-daily dosing; high oral bioavailability",
+              "side_effects": "Similar to levofloxacin; more QT prolongation than levofloxacin; avoid in cirrhosis (hepatic elimination)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-155",
+          "category_name": "Anti-MRSA Antibiotics",
+          "purpose": "Cover MRSA (Methicillin-Resistant Staphylococcus aureus) in pneumonia — an important cause of severe necrotising pneumonia, post-influenza pneumonia, and HAP/VAP. MRSA risk factors: HAP/VAP, IV drug use, prior MRSA infection, skin wound, haemodialysis, nursing home residence.",
+          "medicines": [
+            {
+              "name": "Vancomycin",
+              "brand_examples": ["Vancocin", "Vancomycin"],
+              "form": "IV Infusion",
+              "dosage": "25-30 mg/kg/day IV divided every 8-12 hours; dose adjusted by trough levels or AUC monitoring",
+              "use_case": "HAP/VAP with MRSA risk; severe necrotising CAP post-influenza; endocarditis with pulmonary involvement; second-line for beta-lactam-allergic patients with gram-positive pneumonia",
+              "mechanism": "Glycopeptide — inhibits bacterial cell wall synthesis by binding D-Ala-D-Ala terminus of peptidoglycan precursors; bactericidal against gram-positives; does NOT penetrate gram-negatives",
+              "side_effects": ["Nephrotoxicity (AKI — monitor creatinine and vancomycin levels closely)", "Red Man Syndrome (flushing, hypotension from rapid infusion — slow infusion rate)", "Ototoxicity (tinnitus, hearing loss — high levels)", "Thrombophlebitis at IV site"],
+              "monitoring": "Vancomycin AUC/MIC monitoring (target AUC 400-600 mg·h/L); daily renal function; trough <10 mg/L = subtherapeutic; trough >20 mg/L = toxic"
+            },
+            {
+              "name": "Linezolid",
+              "brand_examples": ["Zyvox", "Linospan", "Linezolid"],
+              "form": "Tablet (600mg), IV Infusion",
+              "dosage": "600mg IV or orally every 12 hours × 10-14 days",
+              "use_case": "MRSA HAP/VAP (ADVANTAGE over vancomycin — better lung tissue penetration; comparable clinical cure rates); vancomycin failure or toxicity; complicated skin and soft tissue MRSA",
+              "mechanism": "Oxazolidinone — inhibits protein synthesis by binding to 23S ribosomal RNA of 50S subunit; bacteriostatic against gram-positives; active against vancomycin-resistant enterococci (VRE)",
+              "side_effects": ["Bone marrow suppression — thrombocytopenia (monitor FBC weekly; limit to 28 days)", "Serotonin syndrome (with SSRIs, MAOis — potentially fatal — contraindicated combination)", "Peripheral and optic neuropathy (prolonged use >4 weeks)", "Lactic acidosis"],
+              "advantage": "Oral bioavailability ~100% (IV to oral switch possible immediately); better lung tissue penetration than vancomycin; VRE active",
+              "monitoring": "FBC weekly; avoid concurrent serotonergic drugs; limit to 28-day courses; ophthalmology review if prolonged use"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-156",
+          "category_name": "Antivirals for Viral Pneumonia",
+          "purpose": "Targeted antiviral treatment for specific viral pneumonias — primarily influenza and COVID-19.",
+          "medicines": [
+            {
+              "name": "Oseltamivir (Tamiflu)",
+              "brand_examples": ["Tamiflu", "Antiflu", "Oseltamivir"],
+              "form": "Capsule (75mg), Oral suspension",
+              "dosage": "Treatment: 75mg twice daily × 5 days; Severe/ICU: 75mg BD for 10 days (or longer); Prophylaxis: 75mg once daily × 10 days",
+              "use_case": "Influenza A and B pneumonia (start within 48 hours of symptom onset for maximum benefit; still beneficial beyond 48h in hospitalised patients or severe disease); influenza prophylaxis (within 48h of exposure)",
+              "mechanism": "Neuraminidase inhibitor — prevents viral release from infected cells and viral spread; reduces influenza severity and duration by 1-2 days; reduces pneumonia risk by 50%",
+              "side_effects": ["Nausea and vomiting (most common — take with food)", "Headache", "Neuropsychiatric events (reported in children — monitor behaviour)"],
+              "dose_adjustment": "Reduce dose in renal impairment (eGFR <30: 75mg OD)",
+              "note": "Start EMPIRICALLY for all hospitalised patients with influenza-like illness during influenza season — do NOT wait for laboratory confirmation to initiate treatment"
+            },
+            {
+              "name": "Dexamethasone (for COVID-19 Pneumonia requiring oxygen)",
+              "brand_examples": ["Decadron", "Dexona", "Dexamethasone"],
+              "form": "IV Injection, Tablet",
+              "dosage": "6mg once daily for up to 10 days (IV or oral — equal efficacy); start ONLY when patient requires supplemental oxygen or mechanical ventilation",
+              "use_case": "COVID-19 pneumonia requiring supplemental oxygen (SpO2 <92% or FiO2 requirement) or mechanical ventilation — RECOVERY Trial: dexamethasone 6mg daily reduced 28-day mortality by 17-29% in this group",
+              "mechanism": "Corticosteroid — potent anti-inflammatory; reduces cytokine storm (IL-6, TNF-α, IL-1β) of COVID-19 hyperinflammatory phase; reduces lung injury progression",
+              "side_effects": ["Hyperglycaemia (monitor blood glucose — treat with insulin)", "Infection risk (mask fever — monitor carefully)", "Psychosis/mood changes", "Adrenal suppression"],
+              "critical_note": "DO NOT give dexamethasone to COVID-19 patients who do NOT require supplemental oxygen — RECOVERY trial showed harm (increased mortality) in this group; only give if requiring oxygen or ventilation"
+            },
+            {
+              "name": "Remdesivir",
+              "brand_examples": ["Veklury"],
+              "form": "IV Infusion",
+              "dosage": "200mg IV loading dose on day 1, then 100mg IV once daily × 4 days (total 5 days)",
+              "use_case": "COVID-19 pneumonia requiring supplemental oxygen but NOT mechanical ventilation; most benefit when started early in disease course; reduces hospitalisation duration by ~5 days in trials",
+              "mechanism": "Adenosine analogue — inhibits viral RNA-dependent RNA polymerase; broad antiviral spectrum (SARS-CoV-2, Ebola, hepatitis C)",
+              "side_effects": ["Nausea", "Bradycardia", "Elevated liver enzymes", "Infusion reactions"]
+            },
+            {
+              "name": "Nirmatrelvir + Ritonavir (Paxlovid)",
+              "brand_examples": ["Paxlovid"],
+              "form": "Oral tablets (nirmatrelvir 150mg + ritonavir 100mg)",
+              "dosage": "Nirmatrelvir 300mg + ritonavir 100mg twice daily × 5 days; start within 5 days of symptom onset",
+              "use_case": "Mild-moderate COVID-19 at HIGH RISK of progression to severe disease (age ≥65, immunocompromised, unvaccinated, comorbidities) — reduces hospitalisation and death by 89% in EPIC-HR trial; reduces 'COVID rebound' discussed",
+              "mechanism": "Nirmatrelvir: protease inhibitor of SARS-CoV-2 main protease (Mpro) — prevents viral replication; Ritonavir: CYP3A4 inhibitor — boosts nirmatrelvir levels (pharmacokinetic booster)",
+              "side_effects": ["Dysgeusia (altered taste)", "Diarrhoea", "Nausea", "DRUG INTERACTIONS — ritonavir strongly inhibits CYP3A4 — many significant interactions including statins, immunosuppressants, anticoagulants, sedatives"],
+              "critical_warning": "Multiple serious drug interactions with ritonavir component — check ALL concurrent medications before prescribing; may need to hold statins, immunosuppressants for 5 days"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-157",
+          "category_name": "Treatment for Pneumocystis jirovecii Pneumonia (PJP)",
+          "medicines": [
+            {
+              "name": "Co-trimoxazole (Trimethoprim-Sulfamethoxazole — TMP-SMX)",
+              "brand_examples": ["Bactrim", "Septran", "Cotrim", "Microcid"],
+              "form": "Tablet, IV Infusion",
+              "dosage": "Treatment (severe PJP): TMP 15-20 mg/kg/day + SMX 75-100 mg/kg/day IV in 3-4 divided doses × 21 days; then oral step-down. Prophylaxis (CD4 <200): Co-trimoxazole 960mg (double-strength) once daily 3x per week or daily",
+              "use_case": "FIRST-LINE treatment for PJP; also used for prophylaxis in HIV/AIDS (CD4 <200), organ transplant, and those on immunosuppressants",
+              "mechanism": "Dual sequential block: sulfamethoxazole inhibits dihydropteroate synthase; trimethoprim inhibits dihydrofolate reductase — synergistically blocks folic acid synthesis in Pneumocystis",
+              "side_effects": ["Bone marrow suppression (neutropenia, anaemia, thrombocytopenia — monitor FBC)", "Stevens-Johnson syndrome/TEN (rare but serious rash — STOP immediately)", "Hyperkalaemia", "Elevated creatinine (tubular secretion inhibition — not true AKI)", "GI intolerance", "Photosensitivity"],
+              "adjunct": "Add prednisolone 40mg BD (tapering over 21 days) when PaO2 <70 mmHg on room air — reduces mortality (NEJM 1990); prevents immune reconstitution inflammatory syndrome (IRIS) worsening"
+            },
+            {
+              "name": "Prednisolone / Methylprednisolone (Adjunct in PJP)",
+              "brand_examples": ["Omnacortil", "Prednisolone"],
+              "form": "Oral Tablet, IV Infusion",
+              "dosage": "40mg BD × 5 days → 40mg OD × 5 days → 20mg OD × 11 days (21-day tapering course); IV methylprednisolone 75% of prednisolone dose if patient cannot swallow",
+              "use_case": "Adjunct to TMP-SMX for MODERATE-SEVERE PJP (PaO2 <70 mmHg or A-a gradient >35 mmHg); significantly reduces mortality when added to TMP-SMX in severe PJP",
+              "evidence": "NEJM 1990 ACTG study: prednisolone added to co-trimoxazole reduced 84-day mortality from 37% to 11% in moderate-severe PJP; number needed to treat = 4"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-158",
+          "category_name": "Supportive Medications — Oxygen, Analgesics, Antipyretics",
+          "purpose": "Supportive care addressing hypoxia, fever, pain, and systemic illness — as important as antibiotics in pneumonia management.",
+          "medicines": [
+            {
+              "name": "Supplemental Oxygen Therapy",
+              "brand_examples": ["Medical oxygen", "Nasal prongs", "Face masks", "HFNO (high-flow)"],
+              "form": "Various delivery systems",
+              "dosage": "Target SpO2 94-98% (most patients); 88-92% (COPD/chronic hypercapnia — avoid hypercapnic drive suppression); HFNO: 20-60 L/min flow, FiO2 21-100%",
+              "use_case": "ALL pneumonia patients with SpO2 <94% (or <88% in COPD); progression from nasal prongs → simple face mask → non-rebreathe mask → HFNO → NIV → IMV based on severity",
+              "mechanisms": "Corrects hypoxaemia from V/Q mismatch and shunt; improves oxygen delivery to tissues; reduces cardiac work",
+              "HFNO_note": "High-flow nasal oxygen (HFNO — up to 60L/min heated humidified oxygen) can avoid intubation in COVID-19 and severe CAP; a 1-hour HFNO trial (ROX index monitoring) recommended before NIV or IMV",
+              "ROX_index": "ROX index = (SpO2/FiO2)/RR; ROX <3.85 at 12h on HFNO predicts failure and need for intubation"
+            },
+            {
+              "name": "Paracetamol (Acetaminophen)",
+              "brand_examples": ["Crocin", "Panadol", "Calpol"],
+              "form": "Tablet, Syrup, IV Infusion",
+              "dosage": "Adults: 1g every 4-6 hours; max 4g/day; Children: 10-15 mg/kg every 4-6 hours",
+              "use_case": "Fever and pleuritic chest pain; first-line analgesic/antipyretic; safe in most patients",
+              "side_effects": ["Hepatotoxicity at overdose; minimal at therapeutic doses"]
+            },
+            {
+              "name": "Ibuprofen (NSAIDs)",
+              "brand_examples": ["Brufen", "Nurofen"],
+              "form": "Tablet",
+              "dosage": "400-600mg three times daily with food",
+              "use_case": "Pleuritic chest pain (anti-inflammatory effect particularly beneficial); fever; avoid in renal impairment, dehydration, and peptic ulcer disease",
+              "caution": "Avoid NSAIDs in significant pneumonia (may worsen outcomes through masking fever and impairing immune response; renal impairment risk with dehydration)"
+            },
+            {
+              "name": "IV Fluid Resuscitation (Ringer's Lactate / Normal Saline)",
+              "brand_examples": ["Ringer's Lactate / Hartmann's", "Normal Saline 0.9%"],
+              "form": "IV Infusion",
+              "dosage": "Sepsis resuscitation: 30 mL/kg IV within 3 hours; then guided by response (lactate, urine output, MAP). Maintenance: 1-2 mL/kg/hr",
+              "use_case": "Dehydration from fever and reduced oral intake; septic shock (MAP <65 mmHg — vasopressors added if inadequate response to 30 mL/kg bolus)",
+              "choice": "Ringer's Lactate/Hartmann's preferred over normal saline (less hyperchloraemic acidosis with large volumes)"
+            },
+            {
+              "name": "Vasopressors (Noradrenaline / Norepinephrine)",
+              "brand_examples": ["Noradrenaline", "Levophed"],
+              "form": "IV Infusion (ICU)",
+              "dosage": "0.01-1 mcg/kg/min IV continuous infusion; titrate to MAP ≥65 mmHg",
+              "use_case": "Septic shock from pneumonia — when MAP <65 mmHg despite adequate IV fluid resuscitation (30 mL/kg); first-line vasopressor in septic shock (Surviving Sepsis Campaign)",
+              "mechanism": "Alpha-1 and beta-1 adrenergic agonist — vasoconstriction restoring systemic vascular resistance; positive inotropy",
+              "side_effects": ["Peripheral ischaemia (digital gangrene — dose-dependent)", "Bradycardia (reflex)", "Hypertension (excessive dose)"],
+              "monitoring": "Continuous arterial line blood pressure monitoring; urine output; lactate clearance"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-159",
+          "category_name": "Corticosteroids — Adjunct in Selected Pneumonia",
+          "purpose": "Anti-inflammatory corticosteroids reduce the pathological hyperinflammatory response in certain pneumonia types. Evidence is strongest for COVID-19 and PJP. For severe CAP, evidence is emerging but not universally recommended.",
+          "medicines": [
+            {
+              "name": "Dexamethasone (COVID-19 — also Severe CAP)",
+              "brand_examples": ["Decadron", "Dexona"],
+              "form": "IV Injection, Tablet",
+              "dosage": "6mg once daily × 10 days (COVID-19 requiring oxygen); For severe non-COVID CAP — 6mg daily × 4-7 days (based on CAPE COD trial 2023 — reduces 28-day mortality in severe CAP requiring ICU)",
+              "use_case": "COVID-19 requiring oxygen (RECOVERY trial); Severe CAP requiring ICU — CAPE COD trial (dexamethasone 6mg daily × 7 days reduced 28-day mortality from 26.1% to 19.3% in ICU-level severe CAP with CRP ≥150 mg/L)",
+              "evidence": "RECOVERY COVID-19 trial (NEJM 2021): 6mg dexamethasone daily reduced mortality by 29% in mechanically ventilated patients; CAPE COD trial (NEJM 2023): dexamethasone reduces mortality in severe CAP"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-160",
+          "category_name": "Antifungal Agents for Fungal Pneumonia",
+          "medicines": [
+            {
+              "name": "Voriconazole",
+              "brand_examples": ["Vfend", "Vorikonazole"],
+              "form": "Tablet (50mg, 200mg), IV Infusion",
+              "dosage": "6 mg/kg IV every 12 hours × 2 loading doses; then 4 mg/kg IV every 12 hours; oral: 200-300mg every 12 hours",
+              "use_case": "FIRST-LINE for invasive pulmonary aspergillosis (IPA); also Fusarium; some Candida species; fungal pneumonia in immunocompromised",
+              "side_effects": ["Visual disturbances (photopsia, colour changes)", "Photosensitivity and skin cancer risk (long-term)", "Liver toxicity (monitor LFTs)", "QT prolongation", "Hallucinations and encephalopathy", "Drug interactions — CYP2C19 metabolism; many significant interactions including tacrolimus, sirolimus, warfarin"]
+            },
+            {
+              "name": "Amphotericin B Liposomal (AmBisome)",
+              "brand_examples": ["AmBisome", "Abelcet"],
+              "form": "IV Infusion",
+              "dosage": "3-5 mg/kg/day IV once daily",
+              "use_case": "Severe aspergillosis (voriconazole-intolerant or refractory); cryptococcal pneumonia; mucormycosis (add isavuconazole or posaconazole); endemic fungi; broad-spectrum antifungal when organism unknown",
+              "advantage": "Liposomal formulation reduces nephrotoxicity vs conventional amphotericin B; broadest antifungal spectrum",
+              "side_effects": ["Nephrotoxicity (reduced with liposomal form)", "Infusion reactions (fever, rigors, hypotension)", "Hypokalaemia", "Hypomagnesaemia"]
+            },
+            {
+              "name": "Fluconazole",
+              "brand_examples": ["Diflucan", "Fluconazole"],
+              "form": "Capsule, Tablet, IV Infusion",
+              "dosage": "Cryptococcal meningitis/pneumonia: 400-800mg daily after amphotericin B induction; maintenance 200mg daily (lifelong in HIV until CD4 >200)",
+              "use_case": "Cryptococcal pneumonia (maintenance therapy); Candida pneumonia; fluconazole-susceptible fungal infections; not active against Aspergillus (important gap)"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Nutrition plays a critical role in pneumonia recovery and prevention. During acute pneumonia, patients are often anorexic, febrile, and hypercatabolic — increasing protein breakdown and metabolic demands. Key nutritional goals are: maintain adequate hydration (thin respiratory secretions), support immune function, promote tissue healing, and prevent malnutrition-related immunosuppression. Nutritional status before pneumonia is a major determinant of outcome — malnutrition increases pneumonia severity and risk of secondary infections.",
+      "acute_phase_nutrition": {
+        "hospitalised_patients": "Early enteral nutrition within 24-48 hours is preferred over parenteral nutrition; nasogastric (NG) tube feeding if unable to eat orally; target 25-30 kcal/kg/day and 1.2-1.5g protein/kg/day; avoid overfeeding (increases CO2 production from carbohydrate metabolism — worsens respiratory failure)",
+        "outpatients": "Encourage adequate oral intake of fluids and food; start with easily digestible foods; advance as tolerated; small frequent meals"
+      },
+      "recommended_foods": [
+        {
+          "category": "Hydration — Critical for Respiratory Secretion Management",
+          "evidence": "Strong — adequate hydration thins mucus secretions, facilitating mucociliary clearance and expectoration of infected secretions",
+          "items": [
+            {
+              "food": "Water (warm preferred)",
+              "benefit": "Adequate hydration is THE most important nutritional intervention in pneumonia. Thin mucus secretions facilitate expectoration; prevents viscous plugging; prevents dehydration from fever (600mL/day fluid loss per °C above 37°C); warm water is soothing and reduces bronchospasm",
+              "target": "Adults: 2-3 litres daily (more if significant fever); children: 50-150mL/kg depending on age and fever",
+              "frequency": "Sip consistently throughout day; every 15-20 minutes"
+            },
+            {
+              "food": "Warm broths: Chicken broth, Vegetable broth, Dal soup",
+              "benefit": "Hydration + electrolytes (sodium, potassium); protein from chicken broth (amino acids support immune function); steam inhalation effect (warm vapour moistens airways); N-acetyl cysteine-like compounds in chicken broth (mucolytic properties — documented in studies); easily digestible calories",
+              "frequency": "Multiple times daily during acute illness"
+            },
+            {
+              "food": "Warm herbal teas: Ginger, Turmeric, Honey-lemon, Tulsi (Holy Basil), Licorice root",
+              "benefit": "Ginger: anti-inflammatory (6-gingerol, 8-shogaol); expectorant; anti-nausea. Turmeric (curcumin): potent anti-inflammatory (NF-κB inhibition); antiviral; antioxidant; clinical evidence for respiratory infection reduction. Honey: antibacterial (hydrogen peroxide); soothes inflamed mucosa; antioxidant. Tulsi (Ocimum sanctum): traditional Indian respiratory herb; immunomodulatory; antiviral; antifungal; reduces respiratory inflammation",
+              "frequency": "3-4 cups daily during illness"
+            },
+            {
+              "food": "Coconut water, diluted ORS",
+              "benefit": "Electrolyte replacement (potassium, sodium, magnesium) lost through fever, sweating, and reduced intake; prevents hypokalaemia (common in febrile illness); gentle on stomach",
+              "frequency": "As needed for electrolyte replacement alongside water"
+            }
+          ]
+        },
+        {
+          "category": "Protein-Rich Foods — Immune Function and Tissue Repair",
+          "evidence": "Strong — adequate protein essential for immune cell production (antibodies, neutrophils, T-cells), tissue repair, and preventing malnutrition-associated immunosuppression",
+          "items": [
+            {
+              "food": "Eggs (boiled, scrambled, poached)",
+              "benefit": "Complete protein (all essential amino acids); easily digestible; lysozyme (antibacterial enzyme in egg white); selenium and zinc (immune minerals); Vitamin D (if fortified); B12; choline (anti-inflammatory); soft texture suitable for breathless patients",
+              "frequency": "1-2 eggs daily during and after illness"
+            },
+            {
+              "food": "Chicken, Turkey (steamed, boiled, soft-cooked)",
+              "benefit": "High-quality lean protein; carnosine and anserine (dipeptides with anti-inflammatory effects); glutamine (essential for immune cell energy); warm chicken broth provides added expectorant effect",
+              "frequency": "1-2 portions daily"
+            },
+            {
+              "food": "Fish (steamed or boiled): Salmon, Mackerel, Sardines",
+              "benefit": "EPA and DHA omega-3 — potent anti-inflammatory; reduce cytokine overproduction (IL-6, TNF-α) that causes lung injury in severe pneumonia; improve Resolution of Inflammation (resolvins, protectins); Vitamin D (reducing respiratory infection risk); complete protein",
+              "frequency": "2-3 times per week"
+            },
+            {
+              "food": "Lentils, Dal (moong dal, masoor dal), Legumes",
+              "benefit": "Plant protein; zinc and iron (immune function); glutamine (enterocyte and immune fuel); fibre (prevents gut dysbiosis from antibiotics); easily digestible when well-cooked; moong dal khichdi is an ideal recovery food in Indian context — gentle on gut, nourishing, warm",
+              "frequency": "Daily during recovery"
+            },
+            {
+              "food": "Dairy: Low-fat yogurt (curd), skimmed milk",
+              "benefit": "Protein; calcium; probiotics in yogurt (restore gut microbiome disrupted by antibiotics); Vitamin D; B12; easily digestible; probiotic Lactobacillus may reduce pneumonia severity and duration (Cochrane review evidence)",
+              "frequency": "Daily; probiotics particularly important throughout antibiotic course"
+            }
+          ]
+        },
+        {
+          "category": "Vitamin C-Rich Foods — Immune Boosting",
+          "evidence": "Strong — Vitamin C is essential for neutrophil and lymphocyte function; reduces severity and duration of respiratory infections; high-dose IV Vitamin C studied (controversially) in severe pneumonia/ARDS; deficiency dramatically impairs immunity",
+          "items": [
+            {
+              "food": "Amla (Indian Gooseberry) — highest Vitamin C content of any food (600-700mg/100g)",
+              "benefit": "Extraordinary Vitamin C content; antioxidant; anti-inflammatory; antiviral; immunomodulatory; supports collagen synthesis for tissue repair. One fresh amla daily provides several times the RDA for Vitamin C",
+              "frequency": "1 fresh amla daily or amla juice"
+            },
+            {
+              "food": "Guava, Papaya, Kiwi, Strawberries",
+              "benefit": "High Vitamin C (guava ~228mg/100g; kiwi ~92mg/100g); antioxidants; easily consumed when appetite is poor; anti-inflammatory polyphenols",
+              "frequency": "1-2 servings daily"
+            },
+            {
+              "food": "Bell peppers (capsicum), Broccoli, Tomatoes",
+              "benefit": "High Vitamin C; lycopene (tomatoes — antioxidant); sulforaphane (broccoli — activates Nrf2 antioxidant response); easily digestible when cooked",
+              "frequency": "Daily"
+            }
+          ]
+        },
+        {
+          "category": "Vitamin D-Rich and Immune-Supporting Foods",
+          "evidence": "Strong — Vitamin D deficiency is associated with 50% increased pneumonia risk; activates antimicrobial peptides (cathelicidins, defensins) in alveolar macrophages and epithelial cells; regulates inflammatory cytokine response",
+          "items": [
+            {
+              "food": "Oily fish: Salmon, Mackerel, Sardines (Vitamin D + omega-3)",
+              "benefit": "Highest dietary Vitamin D (salmon: ~600-1000 IU/100g); combined anti-inflammatory (omega-3) and immunomodulatory (Vitamin D) effects; particularly important in India where sun exposure alone may not correct deficiency",
+              "frequency": "2-3 times per week"
+            },
+            {
+              "food": "Fortified milk, plant milks (Vitamin D fortified)",
+              "benefit": "Vitamin D supplementation of milk provides significant immune support; calcium for respiratory muscle function; protein",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Mushrooms (sun-exposed): Shiitake, Button mushrooms exposed to UV",
+              "benefit": "Ergocalciferol (Vitamin D2) — mushrooms convert UV to Vitamin D2 when exposed to sunlight; beta-glucans in mushrooms (immunostimulant — activates macrophages and NK cells); available plant-based Vitamin D source",
+              "frequency": "Regular"
+            }
+          ]
+        },
+        {
+          "category": "Zinc and Selenium — Critical Immunity Minerals",
+          "evidence": "Strong — Zinc essential for T-lymphocyte function, neutrophil activity, and mucosal barrier integrity; Selenium critical for peroxidase enzymes reducing lung oxidative stress; both deficiencies associated with impaired immunity and increased pneumonia risk",
+          "items": [
+            {
+              "food": "Pumpkin seeds, Sunflower seeds (Zinc)",
+              "benefit": "Very high zinc content; antioxidant; selenium; portable snack during illness; anti-inflammatory",
+              "frequency": "Daily handful"
+            },
+            {
+              "food": "Brazil nuts (Selenium)",
+              "benefit": "Richest food source of selenium (70mcg per nut — RDA 55mcg from just 1 nut); glutathione peroxidase activation (reduces oxidative lung injury); antiviral properties",
+              "frequency": "2-3 Brazil nuts daily (do not exceed — selenium toxicity possible with excess)"
+            },
+            {
+              "food": "Lean red meat, Poultry, Shellfish (Zinc)",
+              "benefit": "Bioavailable haem zinc; complete protein; iron (prevents anaemia worsening hypoxia); B12",
+              "frequency": "Small portions 3-4 times per week"
+            }
+          ]
+        },
+        {
+          "category": "Anti-inflammatory and Mucolytic Foods",
+          "items": [
+            {
+              "food": "Garlic (raw or lightly cooked)",
+              "benefit": "Allicin: potent natural antimicrobial (active against S. pneumoniae, H. influenzae, MRSA, influenza virus); immunostimulant; antifungal; anti-inflammatory; mucolytic; sulphur compounds support glutathione (antioxidant). Evidence-based for reducing frequency and duration of respiratory infections",
+              "frequency": "1-3 raw cloves or heavy cooking use daily"
+            },
+            {
+              "food": "Turmeric (curcumin) with black pepper",
+              "benefit": "Curcumin: inhibits NF-κB (master inflammatory transcription factor); reduces IL-6, TNF-α, IL-1β (key pneumonia inflammatory mediators); antiviral; antifungal; antioxidant. Piperine in black pepper increases curcumin bioavailability by 2000%",
+              "frequency": "Daily: 1-2 tsp turmeric in warm milk (golden milk) or cooking + pinch black pepper"
+            },
+            {
+              "food": "Honey (raw, unprocessed Manuka or local)",
+              "benefit": "Broad-spectrum antimicrobial (hydrogen peroxide; methylglyoxal in Manuka); soothes inflamed throat and cough; antioxidant; anti-inflammatory; WHO recognises honey as effective cough relief in children; inhibits several respiratory pathogens",
+              "frequency": "1-2 teaspoons daily in warm water or tea; avoid in infants under 12 months (botulism risk)"
+            },
+            {
+              "food": "Ginger (fresh — in food and tea)",
+              "benefit": "6-gingerol: anti-inflammatory, expectorant (loosens mucus), bronchodilator (mild), antiviral; anti-nausea (beneficial when fever causes nausea); traditional respiratory medicine with modern pharmacological evidence",
+              "frequency": "Fresh ginger (1-2cm) in tea, food, or soup daily"
+            },
+            {
+              "food": "Steam inhalation (hot water with eucalyptus oil or plain)",
+              "benefit": "Warm steam moistens airways and loosens mucus; eucalyptus oil (1,8-cineole) has proven mucolytic, bronchodilatory, and anti-inflammatory effects; facilitates expectoration; reduces nasal congestion",
+              "frequency": "2-3 times daily during acute illness"
+            }
+          ]
+        },
+        {
+          "category": "Probiotic Foods — Gut-Lung Axis",
+          "evidence": "Moderate-strong — gut-lung axis is bidirectional; gut microbiome dysbiosis (from antibiotics) increases susceptibility to secondary respiratory infections; Lactobacillus supplementation associated with reduced pneumonia duration and severity in meta-analyses",
+          "items": [
+            {
+              "food": "Plain yogurt (curd) with live cultures, Kefir",
+              "benefit": "Probiotics restore gut microbiome disrupted by antibiotics (ampicillin, amoxicillin, clarithromycin, fluoroquinolones — all disrupt microbiome); Lactobacillus and Bifidobacterium modulate lung immunity via gut-lung axis; reduce antibiotic-associated diarrhoea; enhance secretory IgA production",
+              "frequency": "Daily throughout antibiotic course and 4-6 weeks after",
+              "note": "Take probiotics 2 hours apart from antibiotic doses — simultaneous administration may reduce probiotic survival"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Alcohol",
+          "reason": "Severely immunosuppressive; impairs alveolar macrophage function (the frontline lung defense); disrupts mucociliary clearance; promotes aspiration pneumonia (reduces gag reflex and consciousness); causes dehydration worsening viscous secretions; reduces Vitamin B1, B6, zinc absorption; alcohol misuse is an independent risk factor for pneumococcal, Klebsiella, and aspiration pneumonia",
+          "duration": "Complete abstinence during illness; long-term reduction or abstinence for prevention"
+        },
+        {
+          "food": "Smoking (tobacco and vaping)",
+          "reason": "Destroys mucociliary clearance (smokers' airways are continuously impaired); impairs alveolar macrophage function; reduces secretory IgA; damages bronchial epithelium creating portals for bacterial entry; smoking is the single most important modifiable risk factor for pneumonia; increases risk 2-4x. Vaping (e-cigarettes) causes EVALI (e-cigarette/vaping product use-associated lung injury) which mimics and worsens pneumonia",
+          "recommendation": "STOP smoking immediately and permanently; urgently during acute pneumonia"
+        },
+        {
+          "food": "Cold beverages and ice cream (acute phase)",
+          "reason": "Cold substances cause bronchospasm in airways already inflamed and hyperreactive from pneumonia; trigger coughing and chest discomfort; avoid in acute phase; warm drinks preferred for their soothing and mucolytic effects"
+        },
+        {
+          "food": "High-fat, greasy, and fried foods",
+          "reason": "Delay gastric emptying — increasing aspiration risk in breathless patients with reduced gag reflex; cause nausea and reduce appetite further; provide poor immune-supportive nutrients; pro-inflammatory arachidonic acid in large amounts",
+          "examples": ["Fried food", "Burgers and fast food", "Butter-heavy meals", "Cream-based dishes"]
+        },
+        {
+          "food": "Very spicy foods",
+          "reason": "Capsaicin irritates inflamed airways (potentially reflexly via oesophageal-tracheobronchial reflex); worsens cough; causes gastric irritation; avoid during acute illness",
+          "note": "Gentle spices with anti-inflammatory properties (turmeric, ginger, black pepper) are beneficial — avoid only very hot chilli-heavy preparations"
+        },
+        {
+          "food": "Highly processed and ultra-processed foods",
+          "reason": "Poor in immune-supporting micronutrients (zinc, Vitamin C, D, selenium); high in refined carbohydrates that promote inflammation; high in sodium; contain additives that promote gut dysbiosis; provide empty calories without nutritional support for immune recovery"
+        },
+        {
+          "food": "Excessive sugar and sugary beverages",
+          "reason": "Impairs neutrophil phagocytic activity (clinical studies show 75g glucose reduces neutrophil bacteria-killing ability for 5+ hours post-ingestion); promotes inflammatory signalling; suppresses Vitamin C uptake by white blood cells (glucose and Vitamin C compete for same GLUT transporters); worsens mucosal inflammation"
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This nutrient-dense, immune-supporting, easily digestible meal plan is designed for pneumonia recovery. Adjust based on patient's ability to eat (breathless patients need small frequent portions). Hospitalised patients may require NG tube enteral nutrition if unable to eat adequately.",
+        "early_morning": "1 cup warm ginger-turmeric tea with 1 tsp honey + 1 amla (Indian gooseberry) or 2-3 Brazil nuts",
+        "breakfast": "Moong dal khichdi (soft rice + lentil porridge) with 1 tsp ghee OR scrambled eggs (2) with whole wheat toast + 1 cup warm chicken broth + 1 glass warm water with lemon",
+        "mid_morning": "Fresh guava or papaya (1 cup) + warm tulsi-honey tea OR 1 cup low-fat yogurt with honey",
+        "lunch": "Soft-cooked moong or masoor dal + 2 chapati (whole wheat) + cooked spinach sabzi + small piece boiled fish or steamed chicken + 1 cup warm broth",
+        "evening_snack": "Warm golden milk (skimmed milk + 1/2 tsp turmeric + pinch black pepper + honey) + small handful pumpkin seeds or almonds",
+        "dinner": "Easy digestible meal: vegetable khichdi or rice + soft dal + steamed fish or egg + cooked vegetables (carrot, spinach) — small portions; avoid large meals (increases respiratory work in breathless patients)",
+        "before_bed": "Warm ginger-honey-tulsi tea or warm milk with turmeric; steam inhalation with eucalyptus if congested",
+        "hydration_throughout": "Warm water, herbal teas, broth — sip consistently; target 2-3 litres total daily fluid"
+      },
+      "special_dietary_notes": [
+        "SMALL FREQUENT MEALS are essential for breathless patients — eating requires diaphragmatic effort; large meals compete with respiratory muscles for diaphragmatic excursion; 5-6 small meals preferred",
+        "SITTING UPRIGHT while eating — reduces aspiration risk; improves diaphragmatic mechanics; avoid eating lying flat",
+        "ENTERAL NUTRITION early (within 24-48 hours) in hospitalised patients who cannot eat — nasogastric (NG) tube feeding prevents malnutrition-related immunosuppression; parenteral nutrition only if gut is non-functional",
+        "PROBIOTICS are ESSENTIAL during antibiotic treatment — take 2 hours after each antibiotic dose; continue 4-6 weeks after antibiotics completed; reduces antibiotic-associated diarrhoea and C. difficile risk",
+        "VITAMIN D supplementation: 2,000-4,000 IU daily recommended during illness and recovery (India has high prevalence of Vitamin D deficiency — a pneumonia risk factor); safe in all patients",
+        "Malnutrition is an independent mortality predictor in pneumonia — nutritional screening (MUST score in hospital) and early dietitian referral for malnourished patients reduces mortality and recovery time"
+      ]
+    },
+
+    "lifestyle_management": {
+      "acute_phase_management": {
+        "rest": {
+          "recommendation": "Complete bed rest during the febrile acute phase (first 3-5 days); gradual mobilisation when fever resolves and SpO2 stable; early mobilisation (sitting upright; walking to toilet) reduces hospital-acquired complications (VTE, deconditioning)",
+          "positioning": "Head of bed elevation 30-45° improves ventilation-perfusion matching and reduces aspiration risk; avoid prolonged supine positioning"
+        },
+        "breathing_exercises": {
+          "description": "Even during acute illness, supervised deep breathing exercises improve ventilation and reduce atelectasis (lung collapse).",
+          "techniques": [
+            "Diaphragmatic breathing — inhale deeply through nose expanding abdomen (not chest), exhale slowly through pursed lips; 10 repetitions every 1-2 hours",
+            "Incentive spirometry — encourages deep sustained inspiratory effort; reduces post-pneumonia atelectasis; reduces post-surgical pneumonia",
+            "Huffing and controlled coughing — forced exhalation ('huff') before coughing mobilises secretions more effectively than forced cough alone; reduces rib pain from coughing",
+            "Active Cycle of Breathing Technique (ACBT) — physiotherapy-directed: breathing control + thoracic expansion exercises + forced exhalation technique"
+          ]
+        },
+        "chest_physiotherapy": {
+          "description": "Percussion, postural drainage, and vibration assist secretion mobilisation in patients with productive cough who cannot expectorate effectively (COPD, elderly, cystic fibrosis)",
+          "indication": "Copious secretions not being cleared by coughing; lobar atelectasis; aspiration pneumonia with retained secretions; CF and bronchiectasis"
+        }
+      },
+      "smoking_cessation": {
+        "urgency": "CRITICAL — smoking is the most important modifiable risk factor for pneumonia. Continued smoking during and after pneumonia dramatically impairs recovery and increases recurrence risk. Smoking cessation at any point reduces pneumonia risk.",
+        "mechanisms": "Cigarette smoke destroys ciliary function (cilia beat is synchronised in smoke-free airways); impairs alveolar macrophage activity; damages bronchial epithelium; reduces Vitamin C levels (antioxidant immunity)",
+        "support": "NRT (patches, gum, lozenges); Varenicline (Champix); Bupropion; NHS Stop Smoking services; Quitline; apps (Smoke Free)"
+      },
+      "infection_control_at_home": [
+        "Respiratory hygiene: cover mouth and nose when coughing or sneezing — ideally into flexed elbow or a tissue (dispose immediately)",
+        "Handwashing: thorough soap and water for 20 seconds after coughing/sneezing; before handling food; before eating; after toilet — most effective infection control measure",
+        "Mask wearing: appropriate during illness if living with vulnerable household members (elderly, immunocompromised, young children)",
+        "Separate towels, cups, and utensils during illness — respiratory pathogens survive on surfaces",
+        "Ventilation: ensure good room ventilation; open windows when possible — dilutes airborne pathogens; reduce overcrowding (major risk factor in Indian context)",
+        "Isolate during communicable phase (typically until afebrile 24-48 hours and improving)"
+      ],
+      "recovery_phase": {
+        "return_to_work_school": "Most adults can return to work 1-2 weeks after mild-moderate pneumonia (afebrile, improving, not exhausted); physically demanding work: 3-4 weeks; severe pneumonia: 4-8 weeks",
+        "gradual_exercise": [
+          "Week 1-2: gentle walking (5-10 minutes); rest as needed",
+          "Week 2-4: progressive walking increase (15-30 minutes); gentle yoga",
+          "Week 4-6: return to moderate exercise if no breathlessness",
+          "Month 2-3: return to normal activity level; CXR review at 6 weeks"
+        ],
+        "follow_up_chest_xray": "All patients with pneumonia (especially smokers, elderly, immunocompromised, slow resolvers) should have a follow-up CXR at 6-8 weeks to confirm radiological resolution — to exclude an underlying malignancy presenting as pneumonia"
+      },
+      "prevention_lifestyle_measures": [
+        "VACCINATION: the single most effective preventive measure — see Vaccinations section",
+        "Smoking cessation: reduces pneumonia risk by 50% within 1-2 years",
+        "Alcohol moderation or abstinence: <14 units/week for men; <7 for women; abstinence in high-risk patients",
+        "Good oral hygiene: regular tooth brushing and dental care; regular dental check-ups — poor oral hygiene increases oropharyngeal bacterial load and aspiration pneumonia risk",
+        "Adequate nutrition: maintain healthy weight; prevent malnutrition (immune-suppressive)",
+        "Regular physical activity: moderate exercise (150 min/week) reduces respiratory infection risk by 35%",
+        "Adequate sleep: 7-8 hours/night; sleep deprivation significantly impairs immunity",
+        "Manage comorbidities: optimal control of diabetes (HbA1c <53), COPD (bronchodilators, inhaled steroids), heart failure — reduces pneumonia risk",
+        "Dysphagia management: patients with swallowing difficulties should be assessed by speech and language therapist; swallowing assessment and modified diet (thickened fluids) reduces aspiration pneumonia dramatically",
+        "Environmental: avoid occupational exposures (pigeon droppings — Cryptococcus; soil excavation in endemic areas — histoplasmosis); ensure hotel/hospital water system maintenance (Legionella)"
+      ]
+    },
+
+    "pneumonia_monitoring_plan": {
+      "note": "Pneumonia monitoring focuses on treatment response, complication detection, and radiological resolution. A clear trajectory of improvement is expected: fever resolution within 48-72 hours; SpO2 improvement; WBC normalising. Non-resolving pneumonia (not improving by 72 hours on appropriate antibiotics) requires urgent reassessment.",
+      "green_zone": {
+        "status": "Responding Well — Improving on Treatment",
+        "criteria": "Fever resolving or resolved by 48-72 hours; SpO2 improving and ≥94% on room air (or on reducing oxygen requirement); respiratory rate improving; WBC and CRP trending down; patient able to tolerate oral medication and fluids; less breathless; productive cough reducing",
+        "action": "Continue antibiotics for complete course (5-7 days mild; 7-10 days moderate-severe; 14-21 days complicated). Switch IV to oral antibiotics when: afebrile >24h; SpO2 ≥94% on room air; improving clinically; tolerating oral intake (STEP DOWN). Step-down oral antibiotics to continue at home. Arrange GP follow-up in 2-4 weeks. Chest X-ray at 6 weeks (all patients >50, smokers, immunocompromised, or slow responders). Ensure pneumococcal and influenza vaccination before discharge if not up to date."
+      },
+      "yellow_zone": {
+        "status": "Suboptimal Response — Needs Reassessment",
+        "criteria": "Fever persisting beyond 72 hours despite appropriate antibiotics; SpO2 not improving; CRP rising on antibiotics; new or worsening confusion; new complications (enlarging pleural effusion, worsening radiograph); SpO2 dropping on same oxygen requirement; patient deteriorating or not improving clinically",
+        "action": "Urgent medical review within hours. Consider: resistant organism (blood cultures + sputum + bronchoalveolar lavage); complications (empyema — arrange diagnostic pleural aspiration; lung abscess; non-infectious alternative diagnosis); consider CT chest (better defines complication); change or broaden antibiotics based on culture results; consider MRSA, fungal, atypical, or TB. Escalate to HDU/ICU if deteriorating. Escalate antibiotics — add anti-MRSA cover; add antifungal cover in immunocompromised."
+      },
+      "red_zone": {
+        "status": "EMERGENCY — Deteriorating or Critical",
+        "criteria": "SpO2 falling despite maximal oxygen delivery; respiratory rate >30/min and rising; hypotension (SBP <90 mmHg); rising lactate; worsening confusion or drowsiness; cyanosis; unable to maintain SpO2 >88% on non-rebreathe mask; haemoptysis (significant); rising vasopressor requirements; new multi-organ failure markers",
+        "action": "CALL CRITICAL CARE / RAPID RESPONSE TEAM IMMEDIATELY. High-flow nasal oxygen (HFNO — up to 60L/min); trial non-invasive ventilation (NIV/BiPAP) if appropriate and no contraindications; prepare for intubation and invasive mechanical ventilation (anaesthesia referral); ICU admission; broad-spectrum antibiotics covering all organisms; sepsis bundle (blood cultures → antibiotics within 1 hour; 30 mL/kg IV fluid; lactate measurement; vasopressors if MAP <65); prone positioning when intubated (≥16 hours/day); consider ECMO at specialist centre if PaO2/FiO2 <80 refractory to standard treatment."
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Parapneumonic Effusion and Empyema",
+        "description": "Fluid accumulation in the pleural space adjacent to pneumonic consolidation. Parapneumonic effusions are very common (40% of pneumonia hospitalizations). Most are simple (exudate resolving with antibiotics). Complicated parapneumonic effusion: pH <7.2, glucose <2.2 mmol/L, positive Gram stain — requires chest drain. Empyema: frank pus in pleural space — SURGICAL EMERGENCY requiring urgent chest drain (intercostal drain) insertion.",
+        "severity": "Moderate (simple effusion) to Life-threatening (large empyema with sepsis)",
+        "clinical_features": "Persistence of fever despite antibiotics; pleuritic chest pain; dullness on percussion beyond expected from pneumonia; CXR showing new or enlarging pleural effusion",
+        "management": "Diagnostic thoracocentesis (mandatory); chest drain insertion (empyema — large-bore drain); IV antibiotics (cover anaerobes — metronidazole + beta-lactam); intrapleural fibrinolytics (alteplase + DNase for loculated empyema — MIST2 trial); surgical drainage (VATS decortication) for organised/failed medical empyema"
+      },
+      {
+        "complication": "Lung Abscess",
+        "description": "Localised area of pulmonary necrosis and pus formation — appearing as a thick-walled cavity with an air-fluid level on CXR/CT. Caused by virulent pathogens (S. aureus including PVL+, Klebsiella, anaerobes) or aspiration. Presents with high-grade fever, weight loss, haemoptysis, and foul-smelling sputum.",
+        "severity": "Moderate to Severe",
+        "management": "Prolonged antibiotics (4-8 weeks or until CXR shows resolution — never shorter); anaerobic coverage (co-amoxiclav, piperacillin-tazobactam, or metronidazole + beta-lactam); postural drainage; bronchoscopy (mucus plug clearance); CT-guided drainage if not responding; surgical resection (refractory/haemoptysis)"
+      },
+      {
+        "complication": "Septic Shock and Multi-Organ Failure (MOF)",
+        "description": "Uncontrolled systemic inflammatory response from pneumonia leads to vasodilatory septic shock (hypotension, high cardiac output, low SVR) and progressive failure of multiple organs: acute kidney injury (oliguria, rising creatinine), acute liver failure, disseminated intravascular coagulation (DIC — bleeding + clotting), adrenal insufficiency.",
+        "severity": "Life-threatening — mortality 40-60%",
+        "management": "Surviving Sepsis Campaign 1-hour bundle: blood cultures → IV antibiotics → 30mL/kg fluid → vasopressors (noradrenaline) → lactate measurement; ICU admission; organ support (RRT for AKI; mechanical ventilation for respiratory failure)"
+      },
+      {
+        "complication": "Acute Respiratory Distress Syndrome (ARDS)",
+        "description": "Diffuse alveolar damage from severe pneumonia-induced cytokine storm leading to bilateral lung infiltrates, severe hypoxaemia (PaO2/FiO2 <300), and non-cardiogenic pulmonary oedema. The most feared respiratory complication of severe pneumonia — especially viral pneumonia (COVID-19, influenza). High mortality (35-45% even with optimal ventilation).",
+        "berlin_criteria": "Acute onset within 1 week; bilateral infiltrates (not fully explained by fluid overload, collapse, or nodules); PaO2/FiO2 <300 mmHg; excludes cardiac oedema (PCWP <18 mmHg or no clinical evidence)",
+        "severity": "Life-threatening",
+        "management": "Lung-protective ventilation (6mL/kg IBW tidal volume; PEEP 5-18; plateau pressure <30); prone positioning ≥16h/day (PROSEVA trial — reduces mortality 28% in moderate-severe ARDS); neuromuscular blockade; dexamethasone (DEXA-ARDS trial); ECMO for refractory ARDS"
+      },
+      {
+        "complication": "Respiratory Failure",
+        "description": "Type 1 respiratory failure: low PaO2 (<8 kPa), normal or low PaCO2 — from V/Q mismatch and shunt from alveolar flooding; most common in severe pneumonia. Type 2 respiratory failure: low PaO2 AND high PaCO2 (>6 kPa) — from ventilatory fatigue and respiratory muscle exhaustion; indicates imminent need for ventilatory support.",
+        "management": "Type 1: supplemental oxygen, HFNO, NIV; Type 2: NIV (BiPAP) if acute hypercapnic exacerbation on COPD background; invasive mechanical ventilation if NIV failing"
+      },
+      {
+        "complication": "Extrapulmonary Spread — Meningitis, Endocarditis, Pericarditis",
+        "description": "Streptococcus pneumoniae can disseminate haematogenously from pulmonary focus to cause: meningitis (0.1-0.5% of CAP — headache, photophobia, neck stiffness, confusion); endocarditis (rare — particularly in valvular heart disease); pericarditis; septic arthritis. Legionella can cause encephalitis, myocarditis, and multiorgan involvement.",
+        "management": "Pneumococcal meningitis: IV ceftriaxone 2g BD + dexamethasone 0.15mg/kg QDS × 4 days (before or with first antibiotic dose reduces mortality and neurological sequelae); neurosurgical consultation if cerebral abscess"
+      },
+      {
+        "complication": "Non-Resolving Pneumonia",
+        "description": "Failure of pneumonia to resolve radiologically or clinically within the expected timeframe (clinical improvement expected in 3-5 days; radiological resolution in 4-8 weeks). Causes: resistant organism; wrong diagnosis (malignancy, PE, vasculitis, cryptogenic organising pneumonia); complications (empyema, abscess); immunocompromise; inadequate antibiotic dose/course; mixed infection.",
+        "management": "CT chest (better defines abnormality); sputum/BAL cultures; bronchoscopy (excludes endobronchial lesion — particularly important in smokers >40 to exclude malignancy); repeat blood tests; HIV test; consider PET-CT (if malignancy suspected); consider biopsy for cryptogenic organising pneumonia (COP)"
+      },
+      {
+        "complication": "Post-Pneumonia Sequelae — Fatigue and Reduced Functional Capacity",
+        "description": "Many patients — particularly following severe pneumonia, COVID-19 pneumonia, and pneumonia requiring ICU admission — experience prolonged post-illness fatigue, reduced exercise tolerance, cognitive impairment ('post-COVID brain fog'), anxiety, depression, and reduced quality of life for months after the acute illness ('post-pneumonia syndrome' or 'long COVID'). ICU survivors may develop post-intensive care syndrome (PICS).",
+        "management": "Pulmonary rehabilitation; physiotherapy; psychological support; cognitive rehabilitation; graduated exercise programme; social support; occupational therapy (return to work planning); specialist post-COVID/post-pneumonia clinic"
+      }
+    ],
+
+    "special_populations": {
+      "pneumonia_in_children": {
+        "key_points": [
+          "Pneumonia is the leading infectious cause of death in children under 5 globally (14% of all under-5 deaths — approximately 800,000 per year)",
+          "RSV is the most common viral cause in young children; Streptococcus pneumoniae most common bacterial cause in all age groups",
+          "WHO classification for children: non-severe (fast breathing only), severe (chest indrawing), very severe (central cyanosis, grunting, unconscious, cannot drink)",
+          "Tachypnoea thresholds (WHO): >60 bpm (<2 months); >50 bpm (2-12 months); >40 bpm (1-5 years); >30 bpm (>5 years)",
+          "Antibiotic treatment: mild-moderate CAP — oral amoxicillin 40-50mg/kg/day in 3 doses × 5 days; severe — IV amoxicillin or ceftriaxone; add azithromycin if atypical suspected",
+          "Rotavirus, measles, and whooping cough vaccination prevents pneumonia secondary to these infections — ensure vaccination schedule is complete",
+          "Zinc supplementation (20mg/day × 10 days) significantly reduces CAP severity in under-5 pneumonia (WHO recommendation)",
+          "Exclusive breastfeeding for 6 months dramatically reduces pneumonia risk — breastmilk contains secretory IgA, lactoferrin, and oligosaccharides that protect respiratory mucosa",
+          "Household air pollution from biomass cooking fuels is a major preventable risk factor for childhood pneumonia in India — improved cooking stove programmes are public health priorities"
+        ]
+      },
+      "pneumonia_in_elderly": {
+        "key_points": [
+          "Atypical presentations are the rule — elderly may present without fever (30-40% afebrile despite severe pneumonia), without cough, or with predominant confusion, falls, or reduced functional status",
+          "Confusion (acute delirium) may be the presenting feature of pneumonia in elderly — assess for pneumonia when elderly patient presents with acute confusional state",
+          "Aspiration pneumonia is much more common in elderly (dysphagia, reduced cough reflex, oropharyngeal colonisation by gram-negative organisms)",
+          "Higher mortality: elderly CAP mortality 10-30% depending on comorbidities and severity; CURB-65 score applies but may underestimate severity in older patients",
+          "Frailty assessment: Clinical Frailty Score (CFS) should be assessed alongside severity scores for treatment planning and ceiling-of-care discussions",
+          "Functional decline: bed rest in elderly causes rapid muscle loss (sarcopenia); early mobilisation and physiotherapy critical; nutritional support essential",
+          "Advance care planning: consideration of treatment escalation plans (TEP) in frail elderly with severe pneumonia — discuss ICU, intubation, and resuscitation preferences",
+          "Vaccination: pneumococcal and influenza vaccination reduces CAP burden by 30-50% in elderly — essential; strongly advocate at every healthcare contact"
+        ]
+      },
+      "pneumonia_in_immunocompromised": {
+        "key_points": [
+          "Opportunistic organisms in addition to standard pathogens — must consider PJP, fungal (Aspergillus, Cryptococcus), CMV, Nocardia, Mycobacteria, bacterial (drug-resistant)",
+          "Fever and respiratory symptoms are alarm signs requiring URGENT comprehensive assessment — do not delay",
+          "Chest CT often more informative than CXR in immunocompromised — halo sign (Aspergillus), ground-glass bilateral (PJP or CMV), nodules (fungal or Nocardia)",
+          "BAL is often required for diagnosis — specimens sent for bacterial, fungal (including Pneumocystis with Gomori silver stain), mycobacterial, viral (PCR panel) cultures",
+          "Empirical therapy must cover a very broad range of organisms — caspofungin or voriconazole (if fungal risk); TMP-SMX (if CD4 <200 or PJP risk); antibacterials covering CAP organisms",
+          "PJP prophylaxis: co-trimoxazole (TMP-SMX) 960mg three times weekly in all HIV patients with CD4 <200, organ transplant recipients, patients on high-dose corticosteroids (>20mg prednisolone >4 weeks)",
+          "COVID-19 severity significantly higher in immunocompromised — aggressive early antiviral therapy and extended treatment courses"
+        ]
+      },
+      "pneumonia_in_pregnancy": {
+        "key_points": [
+          "Pneumonia in pregnancy carries higher maternal and fetal mortality than in non-pregnant women — requires hospitalisation even for moderate illness",
+          "Influenza pneumonia in pregnancy is particularly dangerous — pregnant women are 4-7x more likely to be hospitalised with influenza; higher rates of preterm birth, foetal loss",
+          "SAFE antibiotics in pregnancy: amoxicillin (all trimesters); co-amoxiclav (2nd/3rd trimester preferred); erythromycin (all trimesters); azithromycin (generally considered safe); cephalosporins",
+          "AVOID in pregnancy: quinolones (doxycycline — teratogenic; fluoroquinolones — cartilage effects); clarithromycin (teratogenic in 1st trimester)",
+          "Oseltamivir (Tamiflu) is SAFE and INDICATED in pregnancy with influenza — benefit far outweighs theoretical risk; start within 48 hours of symptoms",
+          "Oxygen targets: SpO2 ≥95% in pregnancy (higher than non-pregnant) — fetal oxygen delivery dependent on maternal oxygenation; titrate oxygen to maintain >95%",
+          "Early fetal monitoring (CTG — cardiotocograph) in any pneumonia >28 weeks gestation — maternal hypoxia, sepsis, and fever can cause fetal distress",
+          "Influenza vaccination is SAFE and RECOMMENDED in pregnancy — protects mother AND neonate (passive antibody transfer)"
+        ]
+      },
+      "pneumonia_in_copd": {
+        "key_points": [
+          "COPD patients at very high risk of pneumonia (impaired mucociliary clearance, colonised airways, immune dysfunction from corticosteroid use)",
+          "Paradox of inhaled corticosteroids (ICS) in COPD: ICS reduce COPD exacerbations but increase pneumonia risk by 25-40% — particularly higher ICS doses; balance risk-benefit; use lowest effective dose",
+          "Haemophilus influenzae and Pseudomonas aeruginosa more prevalent in COPD pneumonia vs general population — consider broader antibiotic cover",
+          "Non-invasive ventilation (BiPAP) is the treatment of choice for hypercapnic respiratory failure in COPD pneumonia — reduces intubation rate and mortality",
+          "Target SpO2 88-92% in COPD (not 94-98%) — avoid oxygen-induced hypercapnia; use Venturi mask (controlled oxygen delivery) rather than nasal prongs",
+          "Annual influenza vaccination and pneumococcal vaccination are strongly recommended in all COPD patients — proven to reduce hospitalisations"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Pneumococcal Vaccine — PCV20 (Prevnar 20) or PCV15 + PPSV23",
+        "types": ["PCV20 (Prevnar 20) — single injection protecting against 20 pneumococcal serotypes covering >85% of disease-causing serotypes in adults", "PCV15 (Vaxneuvance) + PPSV23 given 1 year later — alternative 2-step approach", "PPSV23 (Pneumovax 23) — 23-valent polysaccharide vaccine for >65 years"],
+        "frequency": "ACIP recommendation: All adults ≥65 years (PCV20 single dose — or PCV15 followed by PPSV23 after 1 year); All adults 19-64 with risk factors: asplenia, immunocompromised, CSF leak, cochlear implant, chronic heart/lung/liver/kidney disease, diabetes, smoking, alcoholism; booster 5 years later if PPSV23 given before age 65",
+        "effectiveness": "PCV13/15/20 reduce invasive pneumococcal disease by 60-75%; reduces CAP by 30-50%; reduces pneumococcal pneumonia in elderly by 60%",
+        "india_schedule": "PCV10 or PCV13 for all infants (2.5 months, 3.5 months, booster at 9 months — under Universal Immunisation Programme in many Indian states); PCV13 recommended for at-risk adults; PPSV23 for adults ≥50 years or high-risk groups",
+        "note": "HIGHEST PRIORITY vaccination for preventing pneumonia — MOST IMPACTFUL preventive intervention for pneumococcal disease"
+      },
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "types": ["Inactivated Influenza Vaccine (IIV4 — quadrivalent — 4 strains: A/H1N1, A/H3N2, B/Yamagata, B/Victoria)", "High-dose inactivated influenza vaccine (for adults ≥65 — Fluzone HD — 4x standard antigen dose; higher immunogenicity)", "Recombinant influenza vaccine (RIV — egg-free)", "Live Attenuated Influenza Vaccine (LAIV — nasal spray; NOT for immunocompromised, asthma, pregnancy)"],
+        "frequency": "ANNUALLY before flu season (October-November in Northern Hemisphere; April-May in India before monsoon season); any time during flu season is beneficial",
+        "effectiveness": "40-60% reduction in influenza illness annually (variable by strain match); 50% reduction in influenza-related hospitalisation; reduces secondary bacterial pneumonia risk; reduces deaths in elderly 50-60%",
+        "who_should_get": "ALL adults; priority groups: >65 years; children 6 months-5 years; pregnant women; healthcare workers; immunocompromised; chronic heart/lung/kidney/liver/metabolic disease; obesity",
+        "note": "Influenza vaccination in pregnancy is particularly important — protects mother AND newborn (passive maternal antibody transfer through placenta and breastmilk)"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine (Annual Updated Booster)",
+        "types": ["mRNA vaccines: Pfizer-BioNTech (Comirnaty), Moderna (Spikevax)", "Protein subunit: Novavax (Nuvaxovid)", "Adenoviral vector: AstraZeneca (Covishield in India)", "Inactivated: Covaxin (Bharat Biotech — India)"],
+        "frequency": "Updated annual booster (XBB.1.5 or JN.1-updated formulation for current variants) — particularly for >65 years, immunocompromised, and at-risk groups",
+        "effectiveness": "Annual updated booster: reduces COVID-19 hospitalisation by 50-70%; reduces COVID-19 pneumonia severity; reduces long COVID risk",
+        "note": "COVID-19 has become a significant endemic respiratory pathogen — annual updated vaccination recommended similar to influenza"
+      },
+      {
+        "vaccine": "Hib Vaccine (Haemophilus influenzae type b — PentaValent)",
+        "frequency": "Children: 3 primary doses (6, 10, 14 weeks — combined with DPT and HBV in PentaValent vaccine under India UIP); booster at 18 months",
+        "reason": "Hib was the leading cause of bacterial meningitis and severe pneumonia in children before vaccination; Hib vaccine has virtually eliminated vaccine-type Hib disease in immunised populations; primary schedule completion essential",
+        "note": "In adults, Hib vaccination recommended for those with asplenia, CSF leak, or cochlear implant"
+      },
+      {
+        "vaccine": "MMR (Measles, Mumps, Rubella) Vaccine",
+        "frequency": "Children: 2 doses (9-12 months and 15-18 months in India UIP); catch-up for unvaccinated adults (2 doses 28 days apart)",
+        "reason": "Measles causes severe viral pneumonia (measles pneumonia/pneumonitis) and significantly impairs immunity for 2-3 years after infection ('immune amnesia') increasing susceptibility to all infections including pneumonia. Measles-associated pneumonia remains a leading cause of childhood death in unvaccinated populations. Measles vaccination prevents both direct measles pneumonia and the prolonged post-measles immune deficiency",
+        "note": "Measles outbreaks in unvaccinated communities are preventable disasters — ensure all children receive 2 MMR doses"
+      },
+      {
+        "vaccine": "Pertussis (Whooping Cough) Vaccine — DTaP/Tdap",
+        "frequency": "Children: 3 primary doses (6, 10, 14 weeks) + booster at 18 months and 4-6 years; Adolescents/adults: Tdap booster (one dose); Pregnant women: Tdap at 27-36 weeks each pregnancy",
+        "reason": "Pertussis causes severe prolonged cough illness with secondary pneumonia; particularly dangerous in infants under 6 months (insufficient immune protection, not yet fully vaccinated); maternal Tdap vaccination protects newborns via passive antibody transfer",
+        "note": "Pertussis vaccination in pregnant women is strongly recommended — protects vulnerable newborns before their own primary vaccination"
+      },
+      {
+        "vaccine": "RSV Vaccine (Adults ≥60 years)",
+        "types": ["Abrysvo (Pfizer — also approved in pregnancy for neonatal protection)", "Arexvy (GSK — adults ≥60 years)", "mRESVIA (Moderna mRNA — adults ≥60 years)"],
+        "frequency": "Single dose for adults ≥60 years; Abrysvo: single dose in pregnancy (32-36 weeks gestation) for neonatal protection",
+        "reason": "RSV is a leading cause of severe lower respiratory tract infection in adults ≥60 years and children; causes approximately 180,000 hospitalisations annually in US adults; RSV vaccines approved 2023 show 82-94% efficacy against severe RSV lower respiratory tract disease",
+        "note": "RSV vaccines are a new and important addition to the adult vaccination schedule — strongly recommend for ≥60 years"
+      },
+      {
+        "vaccine": "BCG (Bacillus Calmette-Guérin) — Tuberculosis and Non-Specific Immunity",
+        "frequency": "At birth (India Universal Immunisation Programme — mandatory); not routinely given to adults in most high-income countries",
+        "reason": "BCG protects primarily against severe forms of TB (miliary TB, TB meningitis — up to 80% protection). In India: TB is a leading cause of pulmonary disease, and TB pneumonia is an important differential diagnosis for all pneumonia. Additionally, BCG provides non-specific immune training (trained innate immunity) that reduces neonatal sepsis and all-cause early childhood mortality by 30-50% beyond TB itself",
+        "note": "BCG vaccination at birth is one of the highest-impact public health interventions in high-TB-burden countries including India"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Fever above 38°C lasting more than 2-3 days, particularly with cough and breathlessness",
+      "Breathing difficulty or breathlessness that is worsening, especially at rest",
+      "Chest pain that worsens with breathing or coughing",
+      "Coughing up yellow, green, or blood-tinged sputum",
+      "SpO2 below 94% on home pulse oximeter (or any reading below 92% — go to emergency immediately)",
+      "Mild pneumonia not improving after 48-72 hours of appropriate antibiotic treatment",
+      "Confusion, unusual drowsiness, or behavioural change in an unwell patient",
+      "Failure to improve after 48 hours on antibiotic treatment started by GP",
+      "Pneumonia in a high-risk individual: elderly >65; infant or young child; pregnancy; immunocompromised; COPD or heart failure; diabetes; chronic kidney disease",
+      "Recurrent pneumonia (more than 2 episodes in 12 months) — requires investigation for underlying structural lung disease, malignancy, or immune deficiency",
+      "Suspected aspiration pneumonia in a patient with dysphagia, stroke, dementia, or chronic alcohol misuse",
+      "Any signs of deterioration after initially seeming to improve (biphasic deterioration — suggests developing empyema, abscess, or secondary bacterial superinfection)"
+    ],
+
+    "emergency_signs": [
+      "SpO2 below 92% on room air or rapidly falling — CALL EMERGENCY SERVICES IMMEDIATELY",
+      "Severe breathlessness at rest — unable to complete sentences; extreme respiratory distress",
+      "Respiratory rate above 30 breaths per minute in adults (>50/min in infants)",
+      "Signs of septic shock: blood pressure falling (SBP <90 mmHg), rapid weak pulse (>125 bpm), cold clammy skin, confusion",
+      "Cyanosis — blue discolouration of lips, tongue, or fingertips — severe oxygen deprivation",
+      "Confusion, severe drowsiness, or loss of consciousness in a febrile breathless patient",
+      "Haemoptysis — coughing significant amounts of blood",
+      "Severe pleuritic chest pain with fever — possible developing empyema",
+      "Infant or young child with severe chest in-drawing, grunting respirations, central cyanosis, or inability to feed",
+      "Very rapid deterioration from apparent mild illness to severe illness within hours — possible Panton-Valentine leucocidin (PVL) Staphylococcal or necrotising pneumonia",
+      "Symptoms of Legionella emergency: high fever + confusion + diarrhoea + hyponatraemia — Legionnaire's disease requires urgent IV treatment",
+      "Pregnant woman with severe pneumonia, high fever, and worsening breathlessness — emergency fetal and maternal monitoring"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is pneumonia and how is it different from a chest infection or bronchitis?",
+        "answer": "Pneumonia is specifically inflammation of the lung parenchyma — the alveoli (tiny air sacs) and surrounding tissue where gas exchange occurs. This makes it fundamentally different from: Bronchitis (inflammation of the bronchial tubes — the conducting airways leading to the alveoli; no gas exchange occurs there — bronchitis causes cough and mucus but does NOT impair oxygen exchange as severely). Tracheitis (windpipe inflammation — URTI). Pleurisy (pleural membrane inflammation around the lung — causes chest pain without lung parenchyma involvement). 'Chest infection' is a lay term that may encompass any of these. True pneumonia involves consolidation (solid filling of alveoli with inflammatory exudate) — diagnosable on chest X-ray and much more serious than bronchitis."
+      },
+      {
+        "question": "What is the difference between typical and atypical pneumonia?",
+        "answer": "Typical bacterial pneumonia (mainly S. pneumoniae): sudden onset with rigor (severe shaking chill), high fever (>39°C), productive cough with rusty or purulent sputum, pleuritic chest pain, lobar consolidation on CXR — responds to beta-lactam antibiotics (amoxicillin, ceftriaxone). Atypical ('walking') pneumonia (Mycoplasma, Legionella, Chlamydophila): more gradual onset over days to weeks; dry or minimally productive cough; headache, myalgia, diarrhoea prominent; patchy bilateral infiltrates on CXR — does NOT respond to beta-lactam antibiotics; requires macrolides (azithromycin), doxycycline, or fluoroquinolones. In hospital, dual coverage (beta-lactam + macrolide/doxycycline) is used to cover both."
+      },
+      {
+        "question": "When should I go to hospital for pneumonia rather than treat at home?",
+        "answer": "The CURB-65 score guides this decision — each factor scores 1 point: Confusion (new onset); Urea >7 mmol/L; Respiratory rate ≥30/min; Blood pressure <90 systolic; Age ≥65. Score 0-1: usually safe to treat at home. Score 2: hospital admission advised. Score 3-5: severe pneumonia, consider ICU. However, always seek emergency care immediately regardless of score if: SpO2 <94% (get a pulse oximeter — every home should have one); any difficulty breathing at rest; confusion; unable to drink or take medication; signs of shock (cold sweaty skin, rapid weak pulse, faintness); pregnancy."
+      },
+      {
+        "question": "Does pneumonia always need antibiotics?",
+        "answer": "Not always — it depends on the cause. Viral pneumonia (COVID-19, influenza, RSV) does NOT respond to antibiotics — treat with antivirals if available (oseltamivir for influenza within 48h; dexamethasone + remdesivir for COVID-19 requiring oxygen). However, the majority of hospitalised pneumonia cases have a bacterial cause or secondary bacterial pneumonia complicating a primary viral illness — antibiotics are typically prescribed empirically (without waiting for culture results). Procalcitonin (PCT) blood test can help guide antibiotic initiation (PCT <0.1 ng/mL suggests viral — may withhold antibiotics in stable patients) and discontinuation. Never refuse or stop antibiotics without medical advice."
+      },
+      {
+        "question": "What is 'silent hypoxia' or 'happy hypoxia' in COVID-19 pneumonia?",
+        "answer": "In COVID-19 pneumonia, some patients develop significantly low oxygen levels (SpO2 80-85%) without feeling significantly breathless — this is called 'silent' or 'happy' hypoxia. Normally, low oxygen triggers intense breathlessness, but COVID-19 appears to suppress the normal ventilatory response to hypoxaemia. This means patients may feel relatively well while their oxygen levels are dangerously low, arriving at hospital only when severely unwell. This is why HOME PULSE OXIMETRY is crucial during COVID-19 illness — check your SpO2 regularly. An SpO2 <94% warrants immediate medical assessment; <90% = EMERGENCY."
+      },
+      {
+        "question": "How long does it take to recover from pneumonia?",
+        "answer": "Recovery depends on severity and age: Mild pneumonia (CURB-65 0-1): fever resolves in 3-5 days; feel significantly better in 1-2 weeks; full energy recovery 4-6 weeks; return to work (desk job) in 1-2 weeks. Moderate pneumonia (hospitalised): hospital stay 3-7 days; feeling significantly improved in 2-4 weeks; full recovery 6-8 weeks. Severe pneumonia (ICU/ventilated): hospital stay weeks; recovery many months; full recovery may take 6-12 months; some patients have residual lung damage and 'post-intensive care syndrome'. Importantly: the CXR may not normalise for 6-8 weeks even when the patient feels well — this is normal. A follow-up chest X-ray at 6 weeks is recommended (particularly in smokers and elderly) to confirm resolution."
+      },
+      {
+        "question": "Can pneumonia be prevented?",
+        "answer": "Yes — pneumonia is substantially preventable. Most important preventive measures: (1) Pneumococcal vaccine (PCV20 or PPSV23) — covers most disease-causing serotypes; reduces CAP by 30-50% in elderly; (2) Annual influenza vaccine — reduces flu-related pneumonia by 50%; (3) COVID-19 annual booster — reduces COVID pneumonia; (4) Stop smoking — the most important behavioural change; (5) Limit alcohol — excess impairs lung immunity and aspiration reflex; (6) Good nutrition (Vitamins C, D, zinc, protein); (7) Regular exercise; (8) Manage chronic conditions (COPD, diabetes); (9) Good respiratory hygiene (handwashing, covering cough); (10) MMR, BCG, Hib, pertussis vaccination (children) — prevents secondary pneumonia from these infections."
+      },
+      {
+        "question": "I have COPD and got pneumonia. Should I worry about the inhaled steroids I use?",
+        "answer": "This is an important question. There IS an established association between inhaled corticosteroids (ICS) at higher doses and increased pneumonia risk in COPD (approximately 25-40% relative risk increase with fluticasone-containing inhalers). However: the absolute risk is still small; ICS provide significant benefits in COPD (reducing exacerbations, improving lung function); and the pneumonia-related risk should be balanced against these benefits. NICE and GOLD (Global Initiative for Obstructive Lung Disease) guidelines do not recommend stopping ICS due to pneumonia risk — instead: use the LOWEST effective dose; consider switching from higher-dose fluticasone to budesonide (lower pneumonia risk); prioritise pneumococcal and influenza vaccination; monitor closely. Discuss with your respiratory physician."
+      },
+      {
+        "question": "What is the difference between Legionella and ordinary pneumonia?",
+        "answer": "Legionella pneumophila causes 'Legionnaire's disease' — a specific, severe type of atypical pneumonia with distinctive features beyond typical pneumonia: (1) Extrapulmonary features: prominent diarrhoea (50%), headache, confusion — even before respiratory symptoms; (2) Hyponatraemia (low sodium) — from SIADH (syndrome of inappropriate ADH secretion); (3) Abnormal liver function tests (elevated ALT, AST, ALP); (4) Raised CK (muscle breakdown); (5) Bilateral patchy infiltrates (not typical lobar consolidation); (6) Exposure history: hotels, cruise ships, cooling towers, spa pools, hospital water systems; (7) Does NOT respond to beta-lactam antibiotics — requires azithromycin or levofloxacin; (8) Diagnosed by urinary Legionella antigen (rapid test at clinic). High mortality (5-30%) if diagnosed and treated late."
+      },
+      {
+        "question": "What home remedies help in pneumonia recovery?",
+        "answer": "Home remedies are ADJUNCTS to — NOT replacements for — prescribed antibiotics. Evidence-based supportive measures: (1) Ginger tea — anti-inflammatory, expectorant, anti-nausea; (2) Turmeric milk (golden milk) with black pepper — curcumin anti-inflammatory, antiviral; (3) Honey (raw) — antibacterial, soothes throat and cough; WHO recognises honey for cough relief; (4) Steam inhalation with eucalyptus — mucolytic, facilitates expectoration; (5) Amla/Indian gooseberry — exceptional Vitamin C content (600mg/100g), antioxidant, immunostimulant; (6) Warm broths — hydration, electrolytes, amino acids (chicken soup has documented mucolytic properties); (7) Garlic — allicin antimicrobial and immunostimulant; (8) Adequate hydration (2-3 litres warm fluids daily); (9) Positioning — head elevated 30-45°; (10) Deep breathing exercises — prevents atelectasis. NEVER use home remedies to delay or replace medical care — pneumonia kills."
+      },
+      {
+        "question": "How is the severity of pneumonia assessed?",
+        "answer": "The CURB-65 score is the most widely used validated tool (see earlier). Additionally: SpO2 (oxygen saturation — most important single parameter; <94% = hospital admission; <90% = emergency); Respiratory rate (>30/min = severe); Blood pressure (<90 systolic = shock); Mental status (confusion = worse prognosis). For hospitalised patients: ABG (PaO2/FiO2 ratio — <300 = ARDS); CRP (high = severe); PCT (elevated = severe bacterial); blood lactate (>2 mmol/L = sepsis); chest CT (bilateral or multilobar = severe). PSI (Pneumonia Severity Index) uses 20 variables providing mortality risk classes I-V. SMART-COP score specifically identifies patients needing intensive respiratory or vasopressor support."
+      },
+      {
+        "question": "Can I exercise while recovering from pneumonia?",
+        "answer": "During the acute febrile phase (first 5-7 days): complete rest — the body is fighting infection and needs all its energy for immunity. The heart and lungs are already under significant stress. Exercise would increase oxygen demand at a time when oxygen delivery is compromised — harmful. As you improve (afebrile, SpO2 normal): gentle deep breathing exercises (10 minutes every hour); short walks (5-10 minutes) increasing daily. Return to normal exercise is GRADUAL over 4-8 weeks for mild pneumonia; up to 3-6 months after severe pneumonia or ARDS. Follow-up chest X-ray at 6 weeks before returning to strenuous exercise. Attend pulmonary rehabilitation (supervised exercise programme) after severe pneumonia — proven to improve functional recovery significantly."
+      }
+    ]
+  }
+}

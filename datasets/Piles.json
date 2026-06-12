@@ -1,0 +1,828 @@
+{
+  "disease": {
+    "id": "DIS-033",
+    "name": "Piles",
+    "scientific_name": "Hemorrhoids / Haemorrhoids / Internal Haemorrhoids / External Haemorrhoids / Thrombosed External Haemorrhoids / Prolapsed Haemorrhoids",
+    "icd_10_code": "K64.0 (First degree haemorrhoids); K64.1 (Second degree haemorrhoids); K64.2 (Third degree haemorrhoids); K64.3 (Fourth degree haemorrhoids); K64.4 (Residual haemorrhoidal skin tags); K64.5 (Perianal venous thrombosis — thrombosed external haemorrhoids); K64.8 (Other specified haemorrhoids); K64.9 (Unspecified haemorrhoids)",
+    "category": "Colorectal Surgery / Gastroenterology / Proctology / General Surgery",
+    "overview": {
+      "description": "Piles — known medically as haemorrhoids — are among the oldest and most prevalent conditions affecting humanity, documented in ancient Egyptian papyri, Ayurvedic texts (Sushruta described anorectal surgery 2500 years ago), and Hippocratic writings. Haemorrhoids are vascular cushions — submucosal arteriovenous anastomoses embedded in connective tissue — that are NORMAL anatomical structures in every human anal canal, positioned at the 3, 7, and 11 o'clock positions (in the lithotomy position). These cushions play an important physiological role in fine anorectal continence — contributing 15-20% of resting anal canal pressure by acting as a vascular 'gasket' sealing the anal canal between bowel movements. Haemorrhoidal DISEASE — the symptomatic pathological state — arises when these normal vascular cushions become engorged, displaced downward (prolapsed), or complicated by thrombosis, causing bleeding, prolapse, pain, pruritus, or mucus discharge. The key pathological mechanism is SLIDING OF THE ANAL CUSHIONS — downward displacement of the haemorrhoidal tissue from its normal position in the anal canal due to weakening of the supporting connective tissue (Treitz's muscle fibres and the mucosal suspensory ligament of Parks) from chronic straining, constipation, and increased intra-abdominal pressure. Haemorrhoids affect an estimated 75% of people at some point in their lifetime — making this one of the most universal human ailments. In India, with a dietary culture increasingly dominated by refined carbohydrates (maida, polished rice) with declining fibre content, rampant constipation, widespread use of Western commodes rather than squatting toilets, and significant occupational risk factors (prolonged sitting among IT professionals, truck drivers, and call centre workers), haemorrhoidal disease represents a massive unmet public health burden. A critical and repeatedly emphasised clinical principle: RECTAL BLEEDING IS NEVER NORMAL — while haemorrhoids are the most common cause of bright red rectal bleeding, COLORECTAL CANCER and other serious pathologies can present identically; haemorrhoids should only be diagnosed as the bleeding source AFTER appropriate investigation has excluded malignancy, particularly in patients over 40 years, those with a family history of colorectal cancer, or those with any change in bowel habit.",
+      "affected_organ": "Anal canal (haemorrhoidal cushions — submucosal arteriovenous complexes at 3, 7, and 11 o'clock positions); perianal skin (external haemorrhoids); rectum (prolapsed internal haemorrhoids); associated structures: internal anal sphincter, external anal sphincter, dentate (pectinate) line",
+      "anatomy_key": {
+        "dentate_line": "The pectinate or dentate line — approximately 2 cm from the anal verge — is the CRITICAL ANATOMICAL LANDMARK dividing the anal canal: ABOVE (internal haemorrhoids) — covered by insensitive columnar/transitional mucosa; innervated by autonomic visceral nerves (NO SOMATIC PAIN from procedures above this line — the basis for rubber band ligation and sclerotherapy without anaesthesia); BELOW (external haemorrhoids and perianal skin) — covered by sensitive squamous epithelium; innervated by somatic pain fibres from the inferior rectal nerve — procedures below the dentate line require local or general anaesthesia",
+        "internal_sphincter": "The internal anal sphincter (IAS) — smooth muscle, involuntary — provides 70-80% of resting anal pressure; relevant in haemorrhoidal disease as chronic engorgement of haemorrhoidal cushions increases IAS pressure (explaining why fibre and laxatives — reducing straining — reduce IAS pressure and improve symptoms)",
+        "haemorrhoidal_blood_supply": "Arterial supply: superior rectal artery (branch of inferior mesenteric artery — IMA) — 3 main branches correspond to the 3 haemorrhoidal cushions; Venous drainage: internal haemorrhoidal plexus drains via superior rectal vein → inferior mesenteric vein → portal vein (relevant in portal hypertension where raised portal pressure causes haemorrhoidal engorgement); external haemorrhoidal plexus drains via inferior rectal vein → internal pudendal vein → systemic (iliac) system"
+      },
+      "prevalence": "Global: affects an estimated 75% of people at some point; symptomatic haemorrhoidal disease: 4-5% annual prevalence; India: estimated 40-50 million people with symptomatic haemorrhoidal disease; haemorrhoids constitute approximately 40% of all proctological complaints in India; the true prevalence is likely significantly higher due to cultural stigma preventing consultation",
+      "age_group": "All ages from young adults onward; peak: 45-65 years; second peak during pregnancy; children rarely affected; prevalence increases with age due to progressive weakening of anal cushion supporting ligaments",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_curable_note": "Grade I-II haemorrhoids frequently resolve with conservative management (dietary modification, stool softening, topical treatment); Grade III-IV typically require office procedures (rubber band ligation) or surgery; even surgically treated haemorrhoids can recur if the underlying dietary and lifestyle risk factors are not addressed",
+      "is_manageable": true,
+      "is_preventable": true,
+      "key_fact": "Rectal bleeding should NEVER be assumed to be from haemorrhoids without appropriate examination — colorectal cancer and other serious conditions present with identical bleeding. In India, where colorectal cancer is rising rapidly and the average age of presentation is younger than in Western countries, any rectal bleeding in a patient over 40 years, or with changes in bowel habit, unexplained weight loss, or family history of colorectal cancer, MUST be investigated with colonoscopy or sigmoidoscopy before attributing to haemorrhoids. Never self-diagnose rectal bleeding as 'just piles' without medical evaluation."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Internal Haemorrhoids — Above the Dentate Line",
+        "description": "Internal haemorrhoids arise from the internal haemorrhoidal plexus — ABOVE the dentate line — covered by insensitive columnar/transitional mucosa (autonomic innervation only). Key characteristic: PAINLESS because the overlying mucosa has no somatic pain fibres. The primary symptom is PAINLESS BRIGHT RED RECTAL BLEEDING. The Goligher Classification grades internal haemorrhoids by degree of prolapse and reduction:",
+        "goligher_classification": [
+          {
+            "grade": "Grade I (First Degree)",
+            "description": "Haemorrhoids that BLEED but do NOT prolapse outside the anal canal; confined entirely within the anal canal; visible only on proctoscopy (appear as swollen vascular cushions above the dentate line, sometimes seen to bleed on defaecation); NO prolapse; NO palpable lump",
+            "symptoms": "Painless bright red rectal bleeding (typically seen on toilet paper, in the toilet bowl as streaks of blood, or dripping after defaecation); no pain; may be incidental finding on proctoscopy",
+            "management": "Conservative — dietary fibre increase; adequate hydration; avoid straining; topical treatments; oral flavonoids (Daflon); if bleeding persistent — rubber band ligation or injection sclerotherapy"
+          },
+          {
+            "grade": "Grade II (Second Degree)",
+            "description": "Haemorrhoids that PROLAPSE through the anus on straining (defaecation) but REDUCE SPONTANEOUSLY without manual assistance when straining stops; the cushion descends below the dentate line during straining and returns above it automatically at rest",
+            "symptoms": "Painless bright red bleeding; sensation of something 'coming down' or 'a lump at the back passage' during straining, which disappears spontaneously; itching; mucus discharge (from exposed mucosa)",
+            "management": "Office procedures (rubber band ligation — most effective for Grade II); injection sclerotherapy; infrared coagulation; conservative management for mild Grade II"
+          },
+          {
+            "grade": "Grade III (Third Degree)",
+            "description": "Haemorrhoids that PROLAPSE through the anus on straining but require MANUAL REPLACEMENT — the patient must push the lump back inside with their fingers; do not reduce spontaneously",
+            "symptoms": "Bleeding; significant prolapse requiring manual reduction; discomfort and pressure; mucus discharge and soiling; pruritus ani; sensation of incomplete evacuation",
+            "management": "Rubber band ligation (multiple sessions); stapled haemorrhoidopexy (PPH — procedure for prolapse and haemorrhoids); surgical haemorrhoidectomy (Milligan-Morgan or Ferguson); DGHAL/THD (transanal haemorrhoidal dearterialization)"
+          },
+          {
+            "grade": "Grade IV (Fourth Degree)",
+            "description": "Haemorrhoids that are PERMANENTLY PROLAPSED — cannot be reduced even with manual assistance; always remain outside the anal canal; includes acutely thrombosed and strangulated internal haemorrhoids",
+            "symptoms": "Persistent prolapse; severe discomfort; mucus discharge; significant soiling and incontinence; may develop acute strangulation with severe pain (when blood supply is cut off — the prolapsed tissue becomes irreducible and ischaemic); ulceration and gangrene if severely strangulated",
+            "management": "Surgical haemorrhoidectomy (definitive); acute strangulated Grade IV may require emergency surgery if gangrenous; conservative initial management in strangulation with ice packs, elevation, osmotic agents, then elective surgery"
+          }
+        ],
+        "note": "Internal haemorrhoids ABOVE the dentate line are INSENSITIVE to pain — therefore rubber band ligation and injection sclerotherapy performed above the dentate line are well tolerated WITHOUT anaesthesia; if pain is felt during banding, the band is placed too low (close to or below the dentate line) and must be replaced"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "External Haemorrhoids — Below the Dentate Line",
+        "description": "External haemorrhoids arise from the external haemorrhoidal plexus BELOW the dentate line — covered by sensitive squamous epithelium with somatic pain innervation (inferior rectal nerve). Key characteristic: they are PAINFUL, particularly when thrombosed. External haemorrhoids appear as perianal soft tissue swellings covered by skin. When uncomplicated, they may be asymptomatic or cause only mild discomfort and pruritus. Their clinical significance is greatest when acutely THROMBOSED.",
+        "uncomplicated_external": "Soft, reducible perianal swellings; may cause: discomfort; itching (pruritus ani) from incomplete anal hygiene; soiling; rarely significant bleeding (external haemorrhoids bleed from perianal skin ulceration — less common than internal haemorrhoidal bleeding)",
+        "thrombosed_external_haemorrhoids": {
+          "description": "Sudden thrombosis (clot formation) within an external haemorrhoidal plexus — causing ACUTE ONSET of severe perianal pain and a hard, tender, non-reducible perianal lump; one of the most acutely painful anorectal conditions",
+          "aetiology": "Often precipitated by: prolonged straining; heavy lifting; violent exercise; constipation; diarrhoea; long-distance air travel; spicy food in susceptible individuals",
+          "clinical_features": "Acute onset severe anal pain (maximally intense at onset; described as 'sharp', 'throbbing', or 'tearing'); firm, tender, purple-blue perianal swelling (visible on inspection); pain maximum in first 24-48 hours then gradually subsides as clot organises; swelling may ulcerate spontaneously (with relief of pain and passage of blood and clot)",
+          "management": {
+            "acute_72_hours": "SURGICAL THROMBECTOMY — incision and evacuation of clot under local anaesthesia (in outpatient setting) provides immediate dramatic pain relief; highly effective if performed within 48-72 hours of onset; healing rapid (1-2 weeks); if >72 hours — pain already beginning to subside spontaneously, risk-benefit of surgery less clear",
+            "conservative_after_72_hours": "Sitz baths; topical local anaesthetic ointment (Lidocaine 4% or Xylocaine); NSAID analgesics (diclofenac 75 mg twice daily); stool softeners; fibulofleece (to reduce oedema); high-fibre diet; most cases resolve in 2-4 weeks conservatively; may leave a residual skin tag"
+          }
+        },
+        "perianal_skin_tags": "Residual fibrous skin folds at the anal margin — may represent residual fibrosed external haemorrhoids after thrombosis resolution; or skin tags secondary to internal haemorrhoidal prolapse; cause itching and hygiene difficulties; treat only if symptomatic (excision under local anaesthesia)"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Mixed (Internal and External) Haemorrhoids",
+        "description": "The most common clinical presentation — simultaneous internal and external haemorrhoidal disease spanning both above and below the dentate line. When an internal haemorrhoidal cushion prolapses, it may pull the corresponding external haemorrhoidal plexus downward — creating a continuous internal-external haemorrhoidal mass. Symptoms combine those of both types: painless bleeding (internal component) + perianal pain and discomfort (external component).",
+        "management": "Requires addressing both components; rubber band ligation for internal component if reducible; surgical haemorrhoidectomy when both internal and external components are significant; PPH (stapled haemorrhoidopexy) suitable for the internal prolapsing component but leaves external component largely unchanged — combined approach may be needed"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Acute Strangulated Internal Haemorrhoids",
+        "description": "A surgical emergency — Grade III or IV internal haemorrhoids that have prolapsed and become entrapped by the anal sphincter, cutting off blood supply; the prolapsed haemorrhoidal tissue becomes ischaemic, extremely oedematous, and exquisitely painful. If untreated, progresses to necrosis (gangrene) and potentially life-threatening sepsis.",
+        "clinical_features": "Extremely severe anorectal pain (the most painful presentation of haemorrhoidal disease); large purple-black prolapsed haemorrhoidal mass visible at the anus; cannot be reduced; extreme oedema; fever and systemic signs if necrosis developing",
+        "management": "URGENT SURGICAL REFERRAL: initial conservative management (analgesia — strong; ice packs wrapped in cloth applied externally for 20 minutes hourly; hypertonic saline soaks to reduce oedema; elevation of hips; nil by mouth if surgery anticipated); emergency haemorrhoidectomy if gangrenous; reduction under general anaesthesia (rare — very swollen tissue may allow gentle sustained manual reduction with anaesthesia); definitive haemorrhoidectomy once acute inflammation settles (6-10 weeks), or emergency surgery if progressing to gangrene"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Haemorrhoids in Pregnancy",
+        "description": "Extremely common during pregnancy — particularly the second and third trimesters and immediately postpartum. Three distinct mechanisms make pregnancy a major risk period: (1) MECHANICAL: the gravid uterus compresses the inferior vena cava and iliac veins → increased venous pressure in pelvic veins → haemorrhoidal plexus engorgement; (2) HORMONAL: progesterone relaxes smooth muscle walls of veins → reduced venous tone → increased engorgement; (3) CONSTIPATION: very common in pregnancy (progesterone slows gut motility; iron supplementation — universal in India — worsens constipation); (4) PUSHING DURING LABOUR: extreme Valsalva during the second stage of labour pushes haemorrhoidal cushions outward.",
+        "management": "Conservative (mainstay — most postpartum haemorrhoids improve spontaneously): high-fibre diet; adequate hydration; stool softeners (lactulose — safe in pregnancy; ispaghula husk — safe; docusate sodium — safe); sitz baths; topical preparations safe in pregnancy (zinc oxide; witch hazel; small amount of lidocaine for pain — short-term); analgesia: paracetamol (safe in all trimesters); avoid NSAIDs (third trimester); AVOID: systemic oral flavonoids (diosmin/hesperidin — limited safety data in pregnancy); most office procedures deferred until postpartum unless severe; most cases resolve after delivery; persistent Grade III-IV after 3 months postpartum → reassess for office procedure or surgery"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Haemorrhoids in Portal Hypertension",
+        "description": "Patients with portal hypertension from cirrhosis or other causes have elevated pressure in the portal venous system — raising pressure in the superior rectal vein (which connects to the portal system via the inferior mesenteric vein) → haemorrhoidal plexus engorgement; these are TRUE VARICES (porto-systemic anastomoses — the superior and inferior rectal veins form a porto-systemic shunt), not simply enlarged haemorrhoidal cushions. Porto-systemic haemorrhoidal varices are different from common haemorrhoids and require different management.",
+        "distinction_from_common_haemorrhoids": "Haemorrhoidal varices in portal hypertension: larger; extend more proximally into the rectum; may bleed massively; treatment of the underlying portal hypertension is essential; banding and injection sclerotherapy are extremely hazardous (risk of massive haemorrhage); typically managed with endoscopic band ligation only by experienced gastroenterologists; or TIPS (transjugular intrahepatic portosystemic shunt) for severe portal hypertension",
+        "india_significance": "India has very high rates of cirrhosis (from HBV, HCV, alcohol, NASH); haemorrhoidal varices are an important bleeding source in cirrhotic patients; always consider portal hypertension as underlying aetiology before any haemorrhoidal intervention"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild — Grade I-II Internal Haemorrhoids or Uncomplicated External",
+        "description": "Symptomatic haemorrhoids manageable with conservative treatment without procedures.",
+        "criteria": "Grade I (bleeding only) or Grade II (self-reducing prolapse); bright red rectal bleeding (mild, intermittent); no significant pain (internal); mild pruritus; no anaemia; no prolapse requiring manual reduction",
+        "functional_impact": "Mild inconvenience; no significant quality-of-life impairment; managed at home with lifestyle changes",
+        "management": "High-fibre diet (25-30 g/day); adequate hydration; avoid straining and prolonged toilet sitting; stool softeners (ispaghula husk — Isabgol); sitz baths; topical ointments; oral flavonoids (Daflon); reassess at 6 weeks; proctoscopy to confirm diagnosis"
+      },
+      {
+        "level": 2,
+        "name": "Moderate — Persistent Grade II-III Requiring Office Procedures",
+        "description": "Persistent or recurrent haemorrhoids not responding to conservative treatment; requires outpatient procedures.",
+        "criteria": "Grade II not responding to 4-6 weeks of conservative management; Grade III haemorrhoids requiring manual reduction; recurrent bleeding episodes; significant pruritus and discharge; lifestyle significantly impaired",
+        "functional_impact": "Significant quality-of-life impairment; affects daily activities; embarrassment; sleep disruption from pruritus",
+        "management": "GP or colorectal surgery referral; proctoscopy examination; rubber band ligation (most effective — Grade II-III); injection sclerotherapy; infrared coagulation; full blood count (exclude anaemia); sigmoidoscopy if >40 years or change in bowel habit"
+      },
+      {
+        "level": 3,
+        "name": "Severe — Grade IV, Strangulated, or Symptomatic Thrombosis",
+        "description": "Advanced haemorrhoidal disease requiring surgical intervention or acute painful emergency.",
+        "criteria": "Grade IV permanently prolapsed haemorrhoids; acute thrombosed external haemorrhoids within 72 hours; strangulated prolapsed haemorrhoids; significant anaemia (Hb <100 g/L) from chronic haemorrhoidal bleeding; multiple failed office procedures",
+        "functional_impact": "Severely impairs quality of life; constant discomfort; significant pain (thrombosis); cannot perform normal activities; social embarrassment",
+        "management": "Colorectal surgeon referral; surgical haemorrhoidectomy (Milligan-Morgan or Ferguson); PPH/stapled haemorrhoidopexy; DGHAL/THD; acute thrombectomy for thrombosed external haemorrhoids; emergency surgery if strangulation progressing to gangrene; treat anaemia"
+      },
+      {
+        "level": 4,
+        "name": "Critical — Gangrenous Prolapse, Haemorrhagic Crisis, Uncontrolled Bleeding",
+        "description": "Life-threatening haemorrhoidal complications requiring emergency surgical intervention.",
+        "criteria": "Gangrenous strangulated haemorrhoids (purple-black necrotic prolapsed mass, fever, systemic sepsis); massive rectal haemorrhage causing haemodynamic instability (tachycardia, hypotension); acute presentation in severely immunocompromised patient (HIV, neutropenia) with progressive infection; massive portal hypertensive haemorrhoidal variceal bleeding",
+        "management": "EMERGENCY: IV access; fluid resuscitation; blood transfusion if haemorrhage causing shock; emergency haemorrhoidectomy for gangrene; colonoscopy or sigmoidoscopy for massive bleeding evaluation; colorectal surgery/general surgery on-call involvement; call 102/112 for haemorrhagic shock"
+      }
+    ],
+
+    "causes": {
+      "pathogenesis": "The fundamental pathological process in haemorrhoidal disease is DOWNWARD DISPLACEMENT of the normal anal vascular cushions from their position in the anal canal — caused by weakening and disruption of the fibromuscular supporting tissue (Treitz's muscle and the Parks ligament). This displacement (sliding) exposes the cushions to increased venous pressure during straining, impairs their venous drainage (leading to engorgement), and eventually leads to prolapse. INCREASED INTRA-ABDOMINAL PRESSURE during straining and defaecation is the primary mechanical driver of haemorrhoidal sliding.",
+      "risk_factors": [
+        "Chronic constipation and straining at stool — the single most important risk factor; prolonged Valsalva during straining dramatically increases intra-abdominal and haemorrhoidal venous pressure; chronic repeated straining progressively destroys the fibromuscular supports of the anal cushions",
+        "Low dietary fibre intake — the dominant dietary driver; low fibre → small, hard, dry stools → straining; typical low-fibre Indian urban diet (excess maida/refined flour, polished rice, minimal fruits and vegetables) → very common cause of constipation → haemorrhoids",
+        "Prolonged sitting on toilet — a major and underrecognised risk factor; sitting for extended periods on a Western-style toilet (reading phone/books on the toilet — common practice) increases descent of the pelvic floor and haemorrhoidal cushions; ideally, time on toilet should be <5 minutes; the 'mobile phone on toilet' epidemic has significantly worsened haemorrhoidal disease in Indian young adults",
+        "Low fluid intake — insufficient hydration contributes to constipation (hard stools); typical Indian office worker drinking insufficient water in air-conditioned environments",
+        "Sedentary lifestyle and prolonged sitting — IT professionals, call centre workers, truck drivers, tailors, and others who sit for many consecutive hours; impairs venous return from pelvic veins",
+        "Obesity — raised intra-abdominal pressure from excess abdominal adiposity; increased venous pressure in haemorrhoidal plexus; rapidly rising obesity rates in India worsening haemorrhoidal disease burden",
+        "Pregnancy — see TYPE-05; mechanical compression + hormonal effects + pushing during labour",
+        "Portal hypertension — cirrhosis, portal vein thrombosis — see TYPE-06; haemorrhoidal varices from portal-systemic hypertension",
+        "Genetic predisposition — family history of haemorrhoids; possible inherited weakness of connective tissue in anal cushion supports",
+        "Advancing age — progressive degeneration of fibromuscular supporting tissues; natural age-related weakening",
+        "Chronic diarrhoea — repeated loose stools cause repeated perineal trauma and Valsalva; increases haemorrhoidal venous congestion",
+        "Heavy lifting and physical exertion — repeated severe Valsalva with heavy lifting; relevant in construction workers, weightlifters, heavy industrial workers",
+        "Spicy food — CAPSAICIN in chillies activates TRPV1 receptors in the anal mucosa → increased mucosal blood flow and engorgement; worsens existing haemorrhoidal symptoms; does NOT cause haemorrhoids de novo but significantly exacerbates symptoms in those with haemorrhoidal disease",
+        "Western toilet posture — squatting for defaecation (traditional Indian toilet position — 'Indian style') actually requires less straining and more complete anorectal emptying; the right angle at the anorectal junction in squatting straightens the rectum more completely than sitting; transition from squat to sit toilets in India has contributed to rising constipation and haemorrhoidal disease",
+        "Alcohol and caffeine — both have mild diuretic effects contributing to dehydration and harder stools",
+        "Ulcerative colitis and Crohn's disease — chronic inflammation of anorectal mucosa can exacerbate haemorrhoidal disease; careful distinction required as Crohn's anal disease requires separate management"
+      ]
+    },
+
+    "symptoms": {
+      "overview": "Haemorrhoidal symptoms are strongly influenced by grade and type (internal vs external). The classic presentation is PAINLESS BRIGHT RED RECTAL BLEEDING (from internal haemorrhoids above the painless dentate line). Pain, if present, suggests either: external haemorrhoids or thrombosed haemorrhoids (below the dentate line — somatic pain innervation); or prolapsed and strangulated haemorrhoids. A crucial clinical principle: NEVER assume rectal bleeding is from haemorrhoids without appropriate examination — colorectal cancer, polyps, and inflammatory bowel disease can present identically.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-2001",
+          "name": "Rectal Bleeding — The Cardinal Symptom",
+          "description": "BRIGHT RED fresh blood — the most common and diagnostically important symptom of internal haemorrhoids. Haemorrhoidal bleeding characteristically: appears as BRIGHT RED blood (contrasting with dark red or maroon blood from more proximal colonic bleeding, or dark tarry melaena from upper GI bleeding); seen ON TOILET PAPER after wiping; DRIPS or SPURTS into the toilet bowl during or after defaecation; may splash dramatically on the toilet water; typically occurs with or immediately after defaecation; DOES NOT MIX WITH STOOL (blood streaks on the surface vs mixed — internal haemorrhoidal blood typically drips separately rather than mixed throughout the stool). Painless nature of internal haemorrhoidal bleeding is a distinguishing feature — bleeding accompanied by severe pain suggests: anal fissure; thrombosed external haemorrhoid; strangulated prolapsed haemorrhoid. CRITICAL WARNING: Bright red rectal bleeding, however typical it appears for haemorrhoids, MUST be investigated to exclude colorectal cancer, particularly in: patients over 40 years; anyone with change in bowel habit; family history of colorectal cancer; any associated weight loss or anaemia; blood mixed with stools. In India, with rising colorectal cancer rates and younger age at presentation, a low threshold for colonoscopy is essential.",
+          "severity": "Mild to Severe (anaemia in chronic cases)",
+          "blood_character_distinguishing": "Haemorrhoidal: bright red; drips after stool; on paper; painless. Anal fissure: bright red; severe sharp pain with defaecation; blood on paper. Colorectal cancer: may be bright red or dark red; may mix with stool; change in bowel habit; may have mucus. Upper GI bleed: dark tarry melaena; not bright red"
+        },
+        {
+          "id": "SYM-2002",
+          "name": "Prolapse — Lump Felt at or Around the Anus",
+          "description": "The sensation of a lump or protrusion at the anal opening — the cardinal symptom of Grade II-IV internal haemorrhoids and external haemorrhoids. Internal haemorrhoidal prolapse: soft, non-tender, reducible (Grade II — spontaneously; Grade III — manually) or irreducible (Grade IV); covered by mucosa (glistening, moist appearance if visible); patient describes a 'ball coming down' or 'something coming out' during or after defaecation; associated with mucus discharge from the exposed mucosal surface. External haemorrhoidal swelling: soft, perianal skin-covered swellings; may enlarge with straining; usually reducible unless thrombosed. Post-defaecation prolapse that reduces spontaneously = Grade II. Prolapse requiring manual reduction = Grade III. Constant prolapse = Grade IV.",
+          "severity": "Moderate to Severe (depending on grade)",
+          "india_note": "Many Indian patients with prolapsing haemorrhoids initially attribute the lump to 'tumour' or cancer, causing significant anxiety; patient education is essential; however, any new perianal or rectal lump in a patient over 50 must be examined to exclude cancer"
+        },
+        {
+          "id": "SYM-2003",
+          "name": "Anal Pain",
+          "description": "Haemorrhoidal pain characteristics vary by type and complication: INTERNAL HAEMORRHOIDS ALONE are PAINLESS (no somatic pain fibres above the dentate line); Pain with internal haemorrhoids indicates: strangulation; thrombosis; secondary infection; or concurrent anal fissure (commonly coexists with haemorrhoids). EXTERNAL HAEMORRHOIDS (below dentate line): dull aching perianal discomfort; worsened by prolonged sitting; THROMBOSED EXTERNAL HAEMORRHOIDS: acute onset SEVERE PAIN (the most dramatic haemorrhoidal pain) — sudden sharp, throbbing perianal pain with tender blue-purple lump; maximally painful in first 24-48 hours then subsiding. STRANGULATED PROLAPSED HAEMORRHOIDS: severe constant anal pain; extremely tender prolapsed mass; may be associated with oedema and necrosis. Anal pain during defaecation with bleeding in a young adult = suspect ANAL FISSURE (not haemorrhoids — important differential).",
+          "severity": "None (internal) to Severe (thrombosed/strangulated)"
+        },
+        {
+          "id": "SYM-2004",
+          "name": "Pruritus Ani — Anal Itching",
+          "description": "Intense or persistent itching at or around the anal opening — extremely common in haemorrhoidal disease; one of the most distressing quality-of-life symptoms. MECHANISMS: prolapsed internal haemorrhoidal mucosa secretes mucus → perianal skin becomes macerated and irritated; incomplete anal hygiene from irregular sphincter closure due to haemorrhoidal tissue; faecal soiling. The itch-scratch cycle worsens perianal skin damage. Pruritus ani from haemorrhoids typically: worse at night; worse in hot weather; associated with mucus or perianal moisture; momentarily relieved by scratching (which damages the skin further). Important differentials for pruritus ani: threadworm (pinworm — Enterobius vermicularis — most common cause in children; look for worms in perineum at night); contact dermatitis; lichen sclerosus; psoriasis; diabetes (diabetic pruritis); STI (particularly condylomata acuminata — genital warts).",
+          "severity": "Mild to Severe (significantly impairs sleep and quality of life)"
+        },
+        {
+          "id": "SYM-2005",
+          "name": "Mucus Discharge and Soiling",
+          "description": "Mucus discharge from the anus — secreted by exposed prolapsed haemorrhoidal mucosal tissue; can cause perianal discomfort, itching, soiling of underwear, and significant embarrassment and social anxiety. In Grade III-IV haemorrhoids with significant prolapse, soiling can be problematic — the prolapsed tissue prevents complete anal sphincter closure, allowing small amounts of stool and mucus to continuously leak. Patients describe 'staining of underwear', 'never feeling clean', 'needing to wear a pad'. This social impact of soiling and pruritus frequently drives patients to seek treatment even more than the bleeding.",
+          "severity": "Mild to Moderate"
+        }
+      ],
+      "secondary_symptoms": [
+        "Sensation of incomplete defaecation or rectal fullness — from prominent internal haemorrhoidal cushions in the anal canal; the sensation that defaecation is incomplete despite an empty rectum; may lead to further straining (worsening the haemorrhoids)",
+        "Anaemia — from chronic haemorrhoidal bleeding; typically iron-deficiency microcytic anaemia; develops insidiously over months; symptoms: fatigue, breathlessness, pallor, palpitations; particularly in women with concurrent menorrhagia; a reminder that haemorrhoids can cause significant systemic morbidity",
+        "Constipation — both a cause AND a consequence of haemorrhoidal disease; fear of defaecation (because bleeding or pain follows) leads to stool withholding → harder stools → more straining → worsens haemorrhoids — the 'haemorrhoidal vicious cycle'; breaking this cycle with stool softeners and pain management is essential",
+        "Psychological impact — significant anxiety, embarrassment, and self-consciousness from bleeding, prolapse, and pruritus; avoidance of social activities, travel, and intimate relationships; important to address the psychological burden alongside physical treatment"
+      ],
+      "important_differentials": {
+        "must_exclude": [
+          "Colorectal carcinoma — presents with rectal bleeding; any rectal bleeding in >40 years; change in bowel habit; mucus in stool; weight loss; iron deficiency anaemia → COLONOSCOPY",
+          "Anal fissure — acute sharp pain ON defaecation with bright red rectal bleeding; characteristic midline posterior fissure visible on gentle parting of buttocks; different treatment from haemorrhoids",
+          "Anorectal abscess / fistula — perianal pain; swelling; purulent discharge; fever; separate pathology from haemorrhoids though may coexist",
+          "Rectal polyps — painless rectal bleeding in all ages; requires colonoscopy; most polyps are pre-malignant adenomas",
+          "Inflammatory bowel disease (UC, Crohn's) — bloody diarrhoea; mucus; urgency; abdominal pain; important to distinguish from haemorrhoids",
+          "Rectal prolapse — a full-thickness prolapse of the rectal wall vs haemorrhoidal prolapse; concentric circular folds (rectal prolapse) vs radial folds (haemorrhoids); older women; associated faecal incontinence",
+          "Condylomata acuminata (anal warts) — perianal cauliflower-like warts from HPV; may be confused with external haemorrhoids; require separate treatment (podophyllin, TCA, laser)"
+        ]
+      }
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Bleeding — character (bright red/dark red/black); volume (drips vs spurts vs large amounts on toilet paper); timing (during/after defaecation); mixed with stool vs separate; associated with pain?",
+        "Prolapse — does a lump come down? Does it reduce spontaneously or require manual reduction? Is there a permanent lump?",
+        "Pain — nature (dull ache, sharp, burning); timing (during defaecation, after, or constant); new onset of severe pain (thrombosis?)",
+        "Pruritus — itching; soiling; mucus discharge; impact on quality of life and sleep",
+        "Bowel habits — constipation; straining; frequency; stool consistency (Bristol Stool Scale); sensation of incomplete evacuation",
+        "Dietary habits — fibre intake (fruits, vegetables, whole grains, pulses); fluid intake; spicy food consumption",
+        "Toilet habits — prolonged sitting on toilet; use of mobile phone on toilet; reading habits on toilet",
+        "Lifestyle — occupation (prolonged sitting); exercise habits; heavy lifting",
+        "Medication history — iron supplements (constipating — very common cause of constipation in Indian women taking ANC iron supplements); opioid analgesics; calcium channel blockers; antidepressants; anticoagulants (relevant for procedure timing); NSAIDs (aspirin — affects clotting)",
+        "Obstetric history — pregnancies; vaginal deliveries (prolonged second stage worsens haemorrhoids); postpartum onset",
+        "ALARM FEATURES — mandate further investigation: change in bowel habit (increased frequency, looser stools, alternating constipation/diarrhoea); unexplained weight loss; abdominal pain; family history of colorectal cancer or polyps; age >40 years with new rectal bleeding; anaemia; blood mixed with stool",
+        "Previous treatments — haemorrhoidal procedures (bands, injections, surgery); response to treatment; recurrences; complications of previous treatment",
+        "Relevant medical history — liver disease (portal hypertension — haemorrhoidal varices); IBD; blood clotting disorders; HIV/AIDS (implications for procedures); diabetes (wound healing complications post-surgery)"
+      ],
+      "physical_examination": [
+        "General examination — anaemia assessment (pallor of conjunctivae, nail beds); BMI/obesity; abdominal examination (palpable abdominal mass? Liver enlarged — portal hypertension?)",
+        "PERIANAL INSPECTION — the patient in the left lateral (Sims') position or knee-chest position with knees on the examination couch; gentle parting of buttocks with both thumbs; inspect the entire perianal region:",
+        "LOOK FOR: perianal skin tags; external haemorrhoidal swellings; thrombosed perianal lump (purple-blue tender firm swelling); skin excoriation from pruritus ani; anal fissure (most commonly seen at 6 o'clock and 12 o'clock positions in the midline posterior or anterior); condylomata; fistula openings (external openings of fistula-in-ano — near the anal verge); signs of Crohn's disease (skin tags, fissures at unusual positions, multiple fistulae)",
+        "ASK PATIENT TO BEAR DOWN (Valsalva): observe for haemorrhoidal prolapse — Grade II haemorrhoids descend and reduce; Grade III-IV remain prolapsed; rectal prolapse shows concentric mucosal folds prolapsing",
+        "DIGITAL RECTAL EXAMINATION (DRE) — absolutely MANDATORY in all patients with rectal bleeding:",
+        "Check: sphincter tone (poor tone in elderly or incontinent patients); tenderness; consistency of contents; palpable mass in the rectum or anal canal (ALWAYS feel for a rectal cancer mass); tenderness; prostate in males; cervix in females; haemorrhoids are SOFT and generally NOT palpable on DRE (important: inability to feel haemorrhoids on DRE does not exclude them — only proctoscopy can reliably assess internal haemorrhoids)",
+        "PROCTOSCOPY (ANOSCOPY) — the GOLD STANDARD examination for internal haemorrhoids: a rigid proctoscope (7-9 cm long, 2-3 cm diameter, with obturator and light source) inserted after DRE; view the internal haemorrhoidal cushions as the scope is slowly withdrawn; assess: size; number; grade; presence of bleeding; any polyps or masses; the procedure is painless above the dentate line if performed correctly",
+        "RIGID SIGMOIDOSCOPY: examines to 20-25 cm from the anal verge; performed in colorectal clinic; assesses for rectal polyps, cancer, colitis, and other pathology coexisting with haemorrhoids",
+        "FLEXIBLE SIGMOIDOSCOPY / COLONOSCOPY: indicated for all patients with: age >40 years and rectal bleeding; change in bowel habit; alarm features; family history of colorectal cancer; iron deficiency anaemia with rectal bleeding; inadequate proctoscopy examination"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Proctoscopy (Anoscopy) — Gold Standard for Internal Haemorrhoids",
+          "type": "Endoscopy — Proctological Examination",
+          "description": "The definitive investigation for internal haemorrhoids — direct visualisation of the internal haemorrhoidal cushions and the anal canal mucosa. Performed in the left lateral (Sims') position; gentle per rectal lubrication; obturator-equipped proctoscope gently inserted 7-9 cm; obturator removed; scope slowly withdrawn while examining the mucosa; haemorrhoidal cushions appear at 3, 7, and 11 o'clock positions as vascular blue-red swellings of varying size; grade is determined by prolapse behaviour during the procedure (patient asked to bear down). Allows simultaneous therapeutic procedures: rubber band ligation; injection sclerotherapy.",
+          "purpose": "Diagnose internal haemorrhoids and grade them; assess haemorrhoidal bleeding; allow office procedures; examine anal canal mucosa for fissures, polyps, malignancy",
+          "key_metric": "Haemorrhoidal cushion size (Grade I: confined; Grade II-IV: prolapsing); bleeding on distension; concurrent pathology",
+          "india_availability": "Proctoscopy available at all surgical outpatient departments and colorectal surgery clinics; inexpensive (Rs 200-500); should be first investigation in all patients presenting with rectal symptoms; widely available at district hospitals and primary care levels"
+        },
+        {
+          "test_name": "Full Blood Count (FBC) — Anaemia Assessment",
+          "type": "Blood — Haematological",
+          "description": "Essential in all patients with rectal bleeding — to quantify blood loss and assess for iron-deficiency anaemia from chronic haemorrhoidal bleeding. IRON-DEFICIENCY ANAEMIA (low Hb, low MCV, low ferritin, high TIBC) in a patient with haemorrhoids: confirms significant chronic blood loss; also mandates colonoscopy to exclude concurrent colorectal malignancy as the primary cause of iron deficiency.",
+          "purpose": "Assess anaemia from bleeding; guide urgency of investigation; screen for concurrent systemic disease",
+          "key_metric": "Hb <120 g/L (women) or <130 g/L (men) = anaemia; MCV <80 fL + low ferritin = iron-deficiency (from chronic blood loss)"
+        },
+        {
+          "test_name": "Flexible Sigmoidoscopy",
+          "type": "Endoscopy",
+          "description": "Examines the rectum, sigmoid, and descending colon to approximately 60 cm from the anal verge — more comprehensive than proctoscopy/rigid sigmoidoscopy. Recommended for all patients with rectal bleeding in whom malignancy needs to be excluded, particularly those aged 40+ years. Can identify: rectal and sigmoid polyps; colorectal cancer; proctitis (UC, Crohn's, infectious); diverticular disease; can be performed without bowel preparation (enema only) or with minimal preparation.",
+          "purpose": "Exclude colorectal cancer and polyps in patients with rectal bleeding; evaluate the rectum and sigmoid colon in haemorrhoidal patients where full colonoscopy is not immediately available",
+          "india_note": "Available at all endoscopy units in India; cost Rs 2,000-5,000; shorter preparation than full colonoscopy; recommended for patients 40-50 years with rectal bleeding as minimum investigation"
+        },
+        {
+          "test_name": "Colonoscopy — Definitive Investigation for Rectal Bleeding",
+          "type": "Endoscopy",
+          "description": "Full examination of the entire colon and terminal ileum — the gold standard investigation for rectal bleeding when colorectal malignancy needs to be excluded or when the full colonic mucosa needs evaluation. Indications in haemorrhoidal patients: age >40 years with rectal bleeding; change in bowel habit; family history of colorectal cancer or polyps; iron-deficiency anaemia; any alarm features; rectal bleeding not fully explained by confirmed haemorrhoids.",
+          "purpose": "Exclude colorectal cancer; detect and polypectomise adenomatous polyps; evaluate IBD; assess the entire colon in patients at risk",
+          "india_note": "NCCN and Indian guidelines recommend colonoscopy for any patient over 40 years with rectal bleeding; colonoscopy available at all major urban hospitals; cost Rs 5,000-15,000; under Ayushman Bharat for eligible patients"
+        },
+        {
+          "test_name": "Coagulation Studies (PT/INR, APTT, Platelet Count)",
+          "type": "Blood — Haematological",
+          "description": "Important before any haemorrhoidal procedure (rubber band ligation, injection sclerotherapy, or surgery) — bleeding complications from procedures are serious. Check: PT/INR (anticoagulant therapy, liver disease); APTT; platelet count. Patients on anticoagulants (warfarin, rivaroxaban, apixaban, dabigatran) or antiplatelet agents (aspirin, clopidogrel) require specific perioperative management.",
+          "purpose": "Pre-procedure assessment; screen for bleeding disorders; guide anticoagulation bridging if needed"
+        },
+        {
+          "test_name": "Liver Function Tests (LFTs) and Ultrasound",
+          "type": "Blood and Imaging",
+          "description": "Indicated when portal hypertension is suspected (history of alcohol use, hepatitis, signs of chronic liver disease); to distinguish common haemorrhoids from haemorrhoidal varices which require completely different management.",
+          "purpose": "Exclude portal hypertension as the cause of haemorrhoidal engorgement; guide appropriate treatment selection"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Pharmacological treatment of haemorrhoids is primarily aimed at: (1) SYMPTOMATIC RELIEF — reducing pain, bleeding, itch, and inflammation; (2) ADDRESSING THE UNDERLYING CAUSE — softening stools and reducing straining (the primary driver); (3) IMPROVING VASCULAR TONE — oral flavonoids and venotonics to reduce haemorrhoidal engorgement. No medication 'cures' haemorrhoids — they only relieve symptoms; the lifestyle changes (fibre, hydration, toilet habits) are the only true disease-modifying interventions for haemorrhoidal disease. Surgical or office procedures are required for Grade III-IV disease.",
+      "treatment_principles": [
+        "1. TREAT THE CAUSE FIRST: dietary fibre, hydration, and stool softening are MORE IMPORTANT than any topical or oral medication; no ointment will cure haemorrhoids if the patient continues to strain on a low-fibre diet",
+        "2. STOOL SOFTENING is the cornerstone of conservative management — ispaghula husk (Isabgol) is the most widely used and evidence-based stool softener/bulk laxative for haemorrhoids in India",
+        "3. TOPICAL PREPARATIONS provide symptomatic relief (analgesia, anti-itch, anti-inflammatory) but do not treat the underlying haemorrhoidal disease; use as adjuncts, not primary treatment",
+        "4. ORAL FLAVONOIDS (Daflon — diosmin+hesperidin) — significant evidence for reducing bleeding and acute symptoms in Grade I-III haemorrhoids; widely used in India; start with 3-day intensive course, then maintenance",
+        "5. SITZ BATHS — evidence-based symptomatic relief for all haemorrhoidal symptoms (pain, pruritus, inflammation); simple, inexpensive, effective",
+        "6. AVOID LONG-TERM TOPICAL CORTICOSTEROIDS — steroid-containing creams used for more than 2-3 weeks cause perianal skin thinning and make pruritus ani worse"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-251",
+          "category_name": "Bulk-Forming Laxatives and Stool Softeners — The Most Important Conservative Treatment",
+          "purpose": "Soften stools, increase stool bulk, and reduce straining — addressing the primary mechanism of haemorrhoidal disease. The most evidence-based conservative pharmacological intervention for haemorrhoids.",
+          "medicines": [
+            {
+              "name": "Ispaghula Husk (Psyllium Husk) — Isabgol — First-Line Stool Softener in India",
+              "brand_examples": ["Isabgol (generic — widely available across India)", "Sat Isabgol (Hamdard)", "Metamucil", "Konsyl", "Effersyllium"],
+              "form": "Powder (mix in water); husk granules; sachets",
+              "dosage": "1-2 teaspoons (5-10 g) in a large glass (250-300 mL) of water or fruit juice; TWICE daily (morning and evening); take IMMEDIATELY after mixing before the mixture thickens to a gel; follow with an additional glass of water; take consistently for best effect; onset of stool-softening effect: 12-72 hours",
+              "mechanism": "Ispaghula husk (from Plantago ovata seeds) is a soluble dietary fibre — absorbs water in the colon forming a viscous gel that: softens stool; increases stool volume; stimulates peristalsis; reduces straining; normalises transit time; does NOT cause diarrhoea at standard doses",
+              "evidence": "Multiple RCTs demonstrate ispaghula husk significantly reduces haemorrhoidal bleeding (bleeding risk ratio ~0.5 — halves bleeding risk), pain, and prolapse compared to placebo; the most evidence-based conservative intervention for symptomatic haemorrhoids",
+              "india_significance": "Isabgol is one of India's most culturally familiar and affordable bowel regulators; used for generations in Indian households; extremely affordable (Rs 50-150 per 500g pack); widely available at all pharmacies; should be the first prescription for any haemorrhoidal patient; India is the world's largest producer of psyllium (Isabgol primarily from Gujarat)",
+              "critical_instructions": "MUST DRINK SUFFICIENT WATER with each dose (≥250 mL glass immediately); insufficient fluid with ispaghula can cause oesophageal or intestinal obstruction (the husk swells wherever it lodges); never take at bedtime without water",
+              "side_effects": "Bloating and flatulence (first 1-2 weeks — usually settles); intestinal obstruction if taken without adequate water; allergic reactions rare but documented (occupational exposure to psyllium dust)"
+            },
+            {
+              "name": "Lactulose — Osmotic Laxative",
+              "brand_examples": ["Duphalac", "Lactulol", "Laxillose", "Looz"],
+              "form": "Oral solution (3.35 g/5 mL); sachet",
+              "dosage": "Adults: 15-30 mL (10-20 g) twice daily; adjust to produce 2 soft stools per day; titrate dose",
+              "use_case": "Constipation-associated haemorrhoids where ispaghula is insufficient or not tolerated; safe in pregnancy; useful adjunct to Isabgol",
+              "mechanism": "Non-absorbable disaccharide (galactose + fructose) — osmotic laxative: not digested in small bowel; passes to colon where colonic bacteria ferment it → acidification of colonic content + increase in colonic osmotic pressure → water retained in colon → softer, easier-to-pass stools",
+              "side_effects": "Bloating, flatulence, abdominal cramps (particularly in first week — from fermentation); use lowest effective dose"
+            },
+            {
+              "name": "Docusate Sodium (Stool Softener)",
+              "brand_examples": ["Colace", "Dulcolax Stool Softener", "Docusol"],
+              "form": "Capsule (100 mg); syrup",
+              "dosage": "100-200 mg once or twice daily",
+              "use_case": "Stool softener (not a laxative — does not stimulate peristalsis); particularly useful post-haemorrhoidectomy to prevent straining; safe in pregnancy; used alongside fibre supplement"
+            },
+            {
+              "name": "Polyethylene Glycol (PEG) — Macrogol",
+              "brand_examples": ["Dulcosoft", "Movicol", "Forlax", "PEGlax"],
+              "form": "Sachet (dissolved in water)",
+              "dosage": "1-3 sachets daily dissolved in 125 mL water each",
+              "use_case": "Constipation; superior to lactulose in clinical trials (better tolerated, less bloating); excellent for post-operative constipation; OTC availability in India increasing",
+              "mechanism": "High molecular weight polymer that is not absorbed; holds water in the colon by osmosis; superior osmotic laxative"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-252",
+          "category_name": "Oral Phlebotonics (Venotonics) — Flavonoids",
+          "purpose": "Improve venous tone and reduce haemorrhoidal vascular engorgement, bleeding, and acute symptoms through anti-inflammatory and venotonic mechanisms.",
+          "medicines": [
+            {
+              "name": "Diosmin + Hesperidin (Micronised Purified Flavonoid Fraction — MPFF)",
+              "brand_examples": ["Daflon 500 mg (diosmin 450 mg + hesperidin 50 mg)", "Phlebodia 600", "Diosven", "Veinaron", "Monoket D", "Flebodia"],
+              "form": "Tablet (500 mg, 600 mg)",
+              "dosage": {
+                "acute_haemorrhoidal_episode": "INTENSIVE: 3 tablets (1500 mg) twice daily × 4 days; THEN 2 tablets (1000 mg) twice daily × 3 days; total 7-day intensive course for acute flares of bleeding or prolapse",
+                "chronic_maintenance": "1000 mg (2 tablets) once daily with evening meal; continue for 3-6 months for Grade II-III haemorrhoids; re-evaluate response"
+              },
+              "mechanism": "Micronised diosmin (flavonoid glycoside) and hesperidin: reduce venous stasis and capillary permeability; inhibit prostaglandin E2, thromboxane B2, and free radical production; increase venous tone (reduce haemorrhoidal cushion engorgement); reduce inflammation in the peri-haemorrhoidal tissues; enhance lymphatic drainage",
+              "evidence": "Multiple RCTs and meta-analyses: Daflon 500 mg twice daily significantly reduces: haemorrhoidal bleeding (50-60% reduction); pain episodes; prolapse frequency; pruritus; recurrence after office procedures; improves outcomes after haemorrhoidectomy (reduced post-operative bleeding and pain). One of the most evidence-based pharmacological haemorrhoidal treatments available.",
+              "india_significance": "Daflon is among the most widely prescribed treatments for symptomatic haemorrhoids in India; prescribed by GPs, coloproctologists, and general surgeons; cost approximately Rs 10-20 per tablet; highly acceptable to Indian patients",
+              "safety": "Generally very well tolerated; mild GI disturbance (nausea) in 5-10%; safe in pregnancy (no teratogenicity reported though routine use not recommended without specific indication); avoid in breastfeeding"
+            },
+            {
+              "name": "Troxerutin (Hydroxyethylrutosides)",
+              "brand_examples": ["Paroven", "Venoruton", "Troxerutin 300 mg capsules"],
+              "form": "Capsule (300 mg)",
+              "dosage": "300-600 mg twice to three times daily",
+              "use_case": "Venotonic for haemorrhoidal disease; reduces venous stasis; similar mechanism to diosmin; may be used when diosmin not available"
+            },
+            {
+              "name": "Calcium Dobesilate",
+              "brand_examples": ["Doxium 500 mg", "Dobesilate"],
+              "form": "Capsule (500 mg)",
+              "dosage": "500 mg twice daily with meals",
+              "use_case": "Reduces capillary permeability and platelet aggregation; used for haemorrhoidal bleeding and permeability; also used in diabetic retinopathy",
+              "mechanism": "Reduces endothelial permeability; antiplatelet; anti-inflammatory; venotonic"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-253",
+          "category_name": "Topical Treatments — Ointments, Creams, and Suppositories",
+          "purpose": "Symptomatic relief of haemorrhoidal pain, itch, bleeding, and inflammation — applied directly to the perianal area and anal canal. NOT curative but provide significant symptomatic benefit.",
+          "general_principles": "Apply sparingly (a small pea-sized amount); insert finger into anal canal for internal application if the product is designed for internal use; suppositories are inserted into the rectum/anal canal for internal haemorrhoidal symptoms; ointments for external and perianal symptoms; AVOID long-term corticosteroid-containing preparations (>2-3 weeks) — causes perianal skin atrophy",
+          "medicines": [
+            {
+              "name": "Pilex Ointment and Tablets (Himalaya) — Herbal Combination",
+              "brand_examples": ["Pilex Ointment (Himalaya)", "Pilex Tablets"],
+              "ingredients": "Contains: Neem (Azadirachta indica); Turmeric (Curcuma longa); Guggul (Commiphora mukul); Barberry (Berberis aristata); and other botanical components",
+              "dosage": "Ointment: apply liberally to the affected area 2-3 times daily after washing; Tablets: 2 tablets twice daily with meals",
+              "use_case": "Most widely used Ayurvedic/herbal haemorrhoidal treatment in India; anti-inflammatory; mild venotonic; astringent properties; anti-infective; broadly used as first-line by many Indian GPs; well-tolerated; generally safe; note: evidence base is Ayurvedic traditional use rather than large RCTs but widely accepted in Indian clinical practice",
+              "india_significance": "Pilex is one of the most recognised OTC haemorrhoidal treatments in India; deeply embedded in Indian healthcare culture; affordable; widely available at chemists and Ayurvedic pharmacies"
+            },
+            {
+              "name": "Proctosedyl Ointment / Suppository — Corticosteroid + Local Anaesthetic",
+              "brand_examples": ["Proctosedyl", "Anugesic-HC", "Proctofoam HC", "Proctyl"],
+              "ingredients": "Hydrocortisone acetate 0.5-1% + Cinchocaine (dibucaine) 0.5% local anaesthetic",
+              "form": "Ointment (for external and perianal use); Suppository (for internal use)",
+              "dosage": "Ointment: apply 2-3 times daily (morning, evening, and after each bowel movement); Suppository: insert 1 suppository rectally twice daily (morning and evening); maximum 2-3 weeks use",
+              "use_case": "Symptomatic relief of painful and pruritic haemorrhoids; the corticosteroid reduces inflammation; cinchocaine provides local anaesthetic relief of pain and itching; particularly effective for acute painful flares; widely prescribed in Indian surgical and GP practice",
+              "maximum_duration": "DO NOT USE FOR MORE THAN 2-3 WEEKS CONTINUOUSLY — hydrocortisone causes perianal skin thinning and atrophy with prolonged use; may cause worsening of pruritus ani long-term; course treatment only"
+            },
+            {
+              "name": "Faktu Ointment / Suppository — Osthole + Bismuth",
+              "brand_examples": ["Faktu Ointment", "Faktu Suppository"],
+              "ingredients": "Osthole (from Cnidium japonicum) + Bismuth subgallate",
+              "dosage": "Apply ointment 2-3 times daily; 1 suppository twice daily",
+              "use_case": "Anti-haemorrhoidal; osthole has astringent, anti-inflammatory, and mild venotonic properties; bismuth subgallate is astringent and anti-inflammatory; reduces bleeding and mucosal oedema; popular in India"
+            },
+            {
+              "name": "Lidocaine / Lignocaine Topical Preparations",
+              "brand_examples": ["Xylocaine Gel 2%", "Lidocaine 5% ointment", "Nupercainal (dibucaine)", "EMLA cream"],
+              "dosage": "Apply a thin layer to perianal area 3-4 times daily, especially before and after bowel movements",
+              "use_case": "Local anaesthetic — reduces perianal and anal pain from external haemorrhoids, thrombosed haemorrhoids, anal fissures; particularly useful for the pain and itching of thrombosed external haemorrhoids; also as preparatory analgesia before proctoscopy; apply 5-10 minutes before bowel movement for best pain relief"
+            },
+            {
+              "name": "Zinc Oxide Ointment / Cream",
+              "brand_examples": ["Anusol", "Rectogesic (with glyceryl trinitrate — for fissure)", "Zinc oxide paste", "Whitfields"],
+              "dosage": "Apply to perianal area as needed, 3-4 times daily after washing and drying the area",
+              "use_case": "Protective and mildly astringent; reduces perianal skin irritation; protects macerated perianal skin from further moisture and faecal contact; reduces pruritus ani; safe for long-term use; suitable for perianal skin protection in elderly patients; safe in pregnancy"
+            },
+            {
+              "name": "Witch Hazel (Hamamelis) — Topical Astringent",
+              "brand_examples": ["Anusol Plus (with zinc oxide + bismuth + Peru balsam)", "Thayers Witch Hazel (pads)"],
+              "dosage": "Apply to perianal area after each bowel movement; soak cotton pads and apply gently",
+              "use_case": "Natural astringent from Hamamelis virginiana bark; reduces haemorrhoidal swelling; controls minor bleeding; soothing for pruritus ani; safe in pregnancy; widely recommended as part of post-defaecation perianal hygiene in haemorrhoidal patients",
+              "india_note": "Can be purchased online; alternatives: turmeric paste application (turmeric has anti-inflammatory and astringent properties)"
+            },
+            {
+              "name": "Glyceryl Trinitrate (GTN) 0.2% Ointment — For Concurrent Anal Fissure",
+              "brand_examples": ["Rectogesic 0.4%", "GTN 0.2% ointment (compounded)"],
+              "dosage": "Apply a pea-sized amount inside the anal canal twice daily; use for 8 weeks",
+              "use_case": "Specifically for ANAL FISSURE coexisting with haemorrhoids — GTN relaxes the internal anal sphincter (reducing sphincter hypertonicity — the primary mechanism of fissure chronicity); reduces anal resting pressure; improves anodermal blood flow promoting fissure healing; headache is the most common side effect from nitrate absorption"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-254",
+          "category_name": "Analgesics — Pain Management",
+          "medicines": [
+            {
+              "name": "Paracetamol (Acetaminophen)",
+              "brand_examples": ["Crocin 500 mg", "Dolo-650", "Calpol"],
+              "dosage": "500-1000 mg every 6-8 hours; maximum 4g/day",
+              "use_case": "First-line analgesia for haemorrhoidal pain; safe in pregnancy; no anti-platelet effect; safe pre-procedure"
+            },
+            {
+              "name": "Diclofenac / Ibuprofen (NSAIDs)",
+              "brand_examples": ["Voveran (diclofenac)", "Brufen (ibuprofen)"],
+              "dosage": "Diclofenac 50 mg twice-three times daily with food; Ibuprofen 400 mg three times daily",
+              "use_case": "Moderate haemorrhoidal pain; particularly useful for thrombosed external haemorrhoids (where anti-inflammatory effect is beneficial alongside analgesia); CAUTION: NSAIDs may increase haemorrhoidal bleeding risk (anti-platelet effect) — avoid if significant bleeding; avoid in pregnancy third trimester"
+            },
+            {
+              "name": "Metronidazole (Post-Haemorrhoidectomy Pain Reduction)",
+              "brand_examples": ["Flagyl 400 mg", "Metrogyl"],
+              "dosage": "400 mg three times daily × 7 days post-haemorrhoidectomy",
+              "use_case": "Specific use: post-haemorrhoidectomy pain reduction — multiple RCTs demonstrate that oral metronidazole 400 mg three times daily for 7 days after haemorrhoidectomy significantly reduces post-operative pain (reduced bacterial overgrowth and inflammatory response in the wound); widely used in Indian colorectal surgery post-operative protocols",
+              "mechanism": "Reduces anaerobic bacterial overgrowth in the perineum post-surgery → reduced wound inflammation → reduced pain; separate from its antibiotic use — this is an anti-inflammatory/antibacterial post-surgical protocol"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-255",
+          "category_name": "Sclerosants — Injection Sclerotherapy",
+          "medicines": [
+            {
+              "name": "Phenol in Arachis Oil (5%) — Injection Sclerosant",
+              "brand_examples": ["Phenol in Almond Oil 5%", "Phenol in Arachis Oil 5% injection"],
+              "form": "Injection",
+              "dosage": "2-3 mL injected into the submucosa at the BASE of each haemorrhoidal cushion (3-5 cm above the dentate line — painless zone) through a proctoscope; maximum 3 haemorrhoidal cushions per session; can repeat at 4-6 weekly intervals",
+              "use_case": "Outpatient sclerotherapy for Grade I-II internal haemorrhoids; causes inflammation and sclerosis of the submucosal tissue → fibrosis → haemorrhoidal cushion adheres to its original position (preventing further sliding) → reduced bleeding and prolapse",
+              "mechanism": "Phenol causes submucous fibrosis; the inflammatory reaction triggers adhesion of the haemorrhoidal cushion to the underlying muscle, stopping the descent that causes haemorrhoids",
+              "note": "The gold standard sclerosant for Indian proctological practice (phenol oil); less popular in Western countries where rubber band ligation has largely replaced sclerotherapy; still very commonly used in Indian surgical clinics due to low cost and simple technique"
+            }
+          ]
+        }
+      ]
+    },
+
+    "office_and_surgical_procedures": {
+      "overview": "When conservative management fails (Grade II haemorrhoids not responding to 4-6 weeks of conservative treatment) or for Grade III-IV disease, office-based procedures or surgery are required. The stepwise approach matches treatment intensity to disease severity.",
+      "procedures": [
+        {
+          "procedure": "Rubber Band Ligation (RBL) — Most Effective Office Procedure",
+          "description": "The gold standard office-based treatment for Grade II-III internal haemorrhoids. A rubber band is applied to the base of the internal haemorrhoidal cushion (2-3 cm above the dentate line — in the painless zone) using a ligation device through a proctoscope; the band cuts off the blood supply to the haemorrhoidal tissue → ischaemic necrosis → the banded tissue sloughs off in 5-7 days → the resultant scar fixes the remaining mucosa to the underlying muscle, preventing further sliding.",
+          "effectiveness": "Single session success rate approximately 75-80% for Grade II; 50-60% for Grade III; multiple sessions often needed (maximum 3 bands per session; repeat at 4-6 weeks); 80-90% of patients treated successfully with 1-3 sessions",
+          "pain": "Should be PAINLESS if performed correctly above the dentate line; mild discomfort for 24-48 hours post-banding is normal; SEVERE PAIN during or immediately after banding indicates band placed too close to or below the dentate line (somatic pain territory) — band MUST be removed immediately",
+          "complications": "Post-banding pain (if too low); bleeding at slough (days 5-10 — can be significant); infection (rare — perineal sepsis — life-threatening; warn patients about fever with pain); vasovagal reactions during procedure",
+          "india_availability": "Widely available at colorectal surgery and general surgery outpatient units; cost Rs 500-2000 per session; office procedure — no anaesthesia or hospitalisation"
+        },
+        {
+          "procedure": "Injection Sclerotherapy",
+          "description": "Injection of 5% phenol in oil into the submucosal base of Grade I-II internal haemorrhoids above the dentate line; causes submucous fibrosis anchoring the cushion to the underlying muscle. Less effective than banding for Grade II-III but useful for Grade I haemorrhoids and elderly patients; can be performed at the same time as proctoscopy without additional setup.",
+          "effectiveness": "Grade I: 70-80% resolution; Grade II: 50-60% (inferior to banding); Grade III: not appropriate as primary treatment",
+          "india_note": "Injection sclerotherapy is very widely practiced in India — it is technically simple, requires no additional equipment beyond the proctoscope, and is inexpensive"
+        },
+        {
+          "procedure": "Stapled Haemorrhoidopexy (PPH — Procedure for Prolapse and Haemorrhoids)",
+          "description": "A surgical procedure using a circular stapling device (PPH33 or EEA stapler) to resect a ring of redundant rectal mucosa and submucosa above the haemorrhoidal cushions — repositioning the prolapsed tissue back to its normal anatomical position and interrupting the superior rectal artery blood supply to the haemorrhoids. The haemorrhoidal tissue is not excised — it is repositioned.",
+          "advantages": "Less post-operative pain compared to conventional haemorrhoidectomy (staple line is above the dentate line — in insensitive mucosa); faster return to work (average 1 week vs 3-4 weeks for conventional); shorter operating time",
+          "disadvantages": "Higher recurrence rate than conventional haemorrhoidectomy (particularly for large external components); cannot treat external haemorrhoids; rare but serious complications: staple line bleeding; rectal perforation; rectovaginal fistula; rare reports of faecal urgency and incontinence from staple line stenosis",
+          "india_use": "PPH is popular in India at tertiary care hospitals; cost Rs 25,000-60,000; increasingly available in tier-2 cities; particularly popular in Indian private sector"
+        },
+        {
+          "procedure": "Conventional Haemorrhoidectomy (Milligan-Morgan Open Method or Ferguson Closed Method)",
+          "description": "Surgical excision of haemorrhoidal cushions — the gold standard for Grade III-IV haemorrhoids, failed office procedures, and haemorrhoids with significant external components. Milligan-Morgan (open): three haemorrhoidal pedicles ligated and excised; wounds left OPEN to heal by secondary intention (takes 4-6 weeks); less risk of retention but longer healing. Ferguson (closed): wounds sutured closed; faster healing but more risk of infection. LigaSure / Harmonic haemorrhoidectomy: uses energy devices to seal and divide haemorrhoidal pedicles — less bleeding, potentially less pain.",
+          "gold_standard": "Lowest recurrence rate of all haemorrhoidal treatments (5-15% at 10 years); most appropriate for Grade III-IV disease; complications — post-operative pain is the main challenge",
+          "post_operative_pain": "Post-haemorrhoidectomy pain is the most significant morbidity — treated with: oral metronidazole (400 mg TDS × 7 days — evidence-based); sitz baths; analgesics (paracetamol + NSAIDs); laxatives; local anaesthetic applied to the wound (GTN ointment also reduces IAS spasm and pain); stool softeners (critical to prevent hard stools reopening wounds)"
+        },
+        {
+          "procedure": "Dearterialization (DGHAL/THD — Doppler-Guided Haemorrhoidal Artery Ligation)",
+          "description": "Transanal ligation of the terminal branches of the superior rectal arteries (identified by Doppler ultrasound through the proctoscope) — reduces blood supply to haemorrhoidal cushions causing them to shrink; can be combined with mucopexy (suturing prolapsed mucosa back to its original position). Minimally invasive; no wound; less post-operative pain than haemorrhoidectomy; evidence suggesting comparable to haemorrhoidectomy for Grade II-III; higher recurrence for Grade IV.",
+          "india_availability": "Available at major tertiary colorectal surgery centres; specialised equipment required (Doppler-guided proctoscope); cost Rs 30,000-80,000; growing adoption in India"
+        },
+        {
+          "procedure": "Kshar Sutra — Ayurvedic Alkali Thread Therapy",
+          "description": "An ancient Ayurvedic anorectal surgical technique using an alkaline medicated thread (made from Snuhi plant latex — Euphorbia neriifolia — and Apamarga ash — Achyranthes aspera, coated 15-21 times to achieve high pH ~9-11); the thread is tied around the haemorrhoidal base causing progressive chemical necrotisation over 7-10 days. Recognised as an effective treatment by CCRAS (Central Council for Research in Ayurvedic Sciences — Government of India) and accepted as a valid haemorrhoidal treatment by the Indian medical establishment when performed by trained practitioners.",
+          "evidence": "Government of India Ministry of AYUSH endorses Kshar Sutra for anorectal conditions; clinical trials from PGI Chandigarh, AIIMS, and Ayurvedic medical colleges demonstrate effectiveness for haemorrhoids and fistula-in-ano; accepted in Indian mainstream surgical practice at some centres",
+          "advantages": "Day procedure; no anaesthesia for Grade I-II; traditional Indian treatment culturally acceptable to many patients",
+          "india_availability": "Available at Ayurvedic hospitals and AYUSH-certified practitioners; Ministry of AYUSH hospitals; some integrative medical centres; relevant for patients who prefer traditional approaches or where conventional treatments have limited access"
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet is the MOST IMPORTANT modifiable factor in haemorrhoidal disease prevention and management. The fundamental dietary prescription for haemorrhoids is ADEQUATE DIETARY FIBRE — which softens stools, increases their bulk, reduces colonic transit time, reduces straining, and directly reduces haemorrhoidal symptoms. The optimal fibre intake is 25-30 g/day; the average Indian urban adult consumes only 10-15 g/day — approximately half the recommended amount. Every haemorrhoidal patient must receive comprehensive dietary counselling alongside any pharmacological or procedural treatment.",
+      "fibre_physiology": "Dietary fibre (soluble and insoluble): SOLUBLE FIBRE (ispaghula, oats, fruits, legumes) forms viscous gel → slows intestinal transit → softens stools; INSOLUBLE FIBRE (whole wheat, vegetables, bran) adds bulk → shortens transit time → reduces straining; COMBINED EFFECT: larger, softer stools requiring less effort to pass → reduced straining → reduced haemorrhoidal venous pressure → reduced engorgement and bleeding",
+      "recommended_foods": [
+        {
+          "category": "Highest Fibre Indian Foods — Anti-Haemorrhoidal Staples",
+          "items": [
+            {
+              "food": "Whole Grains — Whole Wheat Atta, Brown Rice, Jowar, Bajra",
+              "benefit": "Insoluble fibre from the bran layer (which is removed in polished/refined grains); whole wheat atta roti: 4-5g fibre per roti; brown rice: 3.5g per cup vs white rice: 0.6g — dramatic difference; switching from white rice and maida to whole wheat and brown rice is one of the single most impactful dietary changes for haemorrhoidal patients",
+              "india_note": "The trend toward 'maida-based foods' (bread, biscuits, noodles, pastries, bhature, naan) and polished white rice in Indian urban diets is a primary driver of constipation and haemorrhoidal disease; return to traditional whole grain rotis and coarser grains is medically essential",
+              "frequency": "Every meal; target 3-5 rotis of whole wheat atta daily"
+            },
+            {
+              "food": "Legumes and Pulses — Dal, Rajma, Chana, Moong",
+              "benefit": "Extremely high fibre (both soluble and insoluble); rajma (kidney beans): 6.4g fibre per 100g cooked; chana (chickpeas): 7.6g per 100g cooked; moong dal (whole): 7.6g per 100g; also provide plant protein; regular dal consumption at every meal is a highly effective haemorrhoidal prevention strategy",
+              "preparation_note": "Whole dals (with skin intact) have higher fibre than split and polished dals; rajma, whole moong (with green skin), and black chana are superior fibre sources to the pale skinned varieties",
+              "frequency": "Daily; 1-2 cups of cooked legumes per day provides 8-15g fibre"
+            },
+            {
+              "food": "Fresh Fruits — Papaya, Guava, Banana, Pear, Apple with Skin",
+              "benefit": "Soluble and insoluble fibre; natural sorbitol and fructose with mild laxative effect; Papaya (papita): papain enzyme aids digestion; soluble fibre softens stools; particularly effective for constipation; 1 small papaya daily = 5g fibre; Guava (amrood): 5g fibre per 100g — very high; also Vitamin C; eat WITH SEEDS for maximum fibre benefit; Banana (ripe): 2.6g fibre; potassium; relieves constipation when ripe (unripe banana is constipating); Pear (nashpati): 3.1g fibre; high in sorbitol (natural laxative); Apple WITH SKIN: 4g fibre per apple; eat the skin",
+              "frequency": "2-3 servings of fruit daily; varied choices for maximum benefit"
+            },
+            {
+              "food": "Isabgol (Psyllium Husk) as Dietary Supplement",
+              "benefit": "The most effective single fibre supplement for haemorrhoidal patients; see MED-CAT-251 above",
+              "frequency": "1-2 teaspoons twice daily in water; can also be added to roti dough, buttermilk, or mixed with water before bed"
+            },
+            {
+              "food": "Vegetables — Drumstick (Sahjan), Spinach, Methi, Beans, Sweet Potato",
+              "benefit": "Drumstick pods (sahjan/moringa): excellent fibre; Spinach (palak): 2.2g fibre per 100g cooked; Methi leaves: 2.4g per 100g; French beans: 3.4g per 100g; Sweet potato (shakarkand): 3g per 100g + prebiotic soluble fibre; BEETROOT (chukander): natural betaine and fibre aid bowel motility; fresh salad with meals adds insoluble fibre",
+              "frequency": "3-5 servings of vegetables daily; specifically at least 2 servings of dark green vegetables"
+            }
+          ]
+        },
+        {
+          "category": "Hydration — Critical Adjunct to High-Fibre Diet",
+          "items": [
+            {
+              "food": "Water — 2-3 Litres Daily",
+              "benefit": "CRITICAL: dietary fibre without adequate water can WORSEN constipation (fibre absorbs water — if intake is insufficient, fibre becomes a hard mass); must drink ≥2.5-3 litres of water daily when on a high-fibre diet; plain water is most effective; timing: 1 glass on waking (stimulates gastrocolic reflex); 1 glass before each meal; 1 glass after each meal; 1 glass before bed",
+              "india_note": "Many Indian office workers are chronically dehydrated — particularly in air-conditioned offices where thirst sensation is reduced; deliberate water intake habits must be cultivated"
+            },
+            {
+              "food": "Buttermilk (Chaas / Matha) with Jeera and Coriander",
+              "benefit": "Traditional Indian digestive aid: probiotics from curd fermentation improve gut flora and bowel regularity; Vitamin K and B vitamins; mild laxative effect; the jeera (cumin) and coriander added to chaas are carminatives reducing gas and bloating; a traditional post-meal digestive that aligns with evidence for gut microbiome support",
+              "frequency": "1 glass after lunch daily"
+            }
+          ]
+        },
+        {
+          "category": "Foods with Specific Anti-Haemorrhoidal Properties",
+          "items": [
+            {
+              "food": "Turmeric (Haldi) — Anti-Inflammatory",
+              "benefit": "Curcumin: potent anti-inflammatory inhibiting NF-κB and COX pathways; reduces haemorrhoidal mucosal inflammation; anti-oxidant reducing venous wall oxidative stress; traditionally applied topically and consumed internally for haemorrhoids in Ayurvedic medicine; topical application of turmeric paste to perianal area reduces inflammation and soothes itching; oral consumption reduces systemic inflammatory burden",
+              "frequency": "Daily in cooking; haldi doodh (turmeric milk); topical application as soothing paste"
+            },
+            {
+              "food": "Aloe Vera — Topical Soothing",
+              "benefit": "Inner gel of aloe vera: anti-inflammatory (acemannan); soothing and cooling on perianal skin; reduces pruritus ani and perianal skin irritation; mild anti-haemorrhoidal effect when applied topically; traditionally used for haemorrhoidal symptoms; extract applied to the perianal area after bowel movements reduces itching and promotes healing",
+              "preparation": "Freshly extracted inner leaf gel applied directly to perianal area; commercial pure aloe vera gel (without additives); NOT to be confused with aloe latex (outer layer — stimulant laxative)"
+            },
+            {
+              "food": "Amla (Indian Gooseberry) — Vitamin C and Flavonoids",
+              "benefit": "Vitamin C strengthens capillary walls and collagen in haemorrhoidal supporting tissues; flavonoids in amla have venotonic properties similar to Daflon; high fibre content improves bowel regularity; tannins in amla are astringent reducing mucosal bleeding",
+              "frequency": "1-2 fresh amla or amla juice daily"
+            },
+            {
+              "food": "Triphala Churna — Ayurvedic Bowel Regulator",
+              "benefit": "Combination of Amla (Emblica officinalis), Bibhitaki (Terminalia bellirica), Haritaki (Terminalia chebula) — the most widely used Ayurvedic bowel regulator; mild laxative from Haritaki (anthraquinone glycosides); astringent from Amla and Bibhitaki (reduces mucosal bleeding); anti-inflammatory; evidence from multiple Indian clinical trials showing Triphala reduces constipation, improves stool consistency, and reduces haemorrhoidal symptoms; culturally very acceptable in India",
+              "dosage": "½ to 1 teaspoon of Triphala powder in warm water at bedtime; or Triphala tablets 500 mg twice daily",
+              "note": "Gentle and safe; can be used long-term; not a stimulant laxative; appropriate for elderly constipated haemorrhoidal patients"
+            }
+          ]
+        }
+      ],
+      "foods_to_limit": [
+        {
+          "food": "Spicy Food (Excess Chilli and Pepper)",
+          "reason": "Capsaicin activates TRPV1 nociceptors in the anal mucosa increasing mucosal blood flow and engorgement; significantly worsens haemorrhoidal pruritus, pain, and bleeding in patients with existing haemorrhoids; does NOT cause haemorrhoids de novo but definitely aggravates symptoms; particularly notable that haemorrhoidal patients frequently report symptom exacerbation after very spicy meals",
+          "recommendation": "Reduce chilli levels (not eliminate — gradual reduction); use non-capsaicin spices (turmeric, cumin, coriander, black pepper — all anti-inflammatory at normal culinary doses)"
+        },
+        {
+          "food": "Refined Flour (Maida) and Processed Foods",
+          "reason": "Maida (refined wheat flour) and foods made from it (white bread, naan, bhature, biscuits, cakes, pastries, pizza base) have had the fibre-rich bran and germ removed during processing → extremely low fibre → hard small stools → straining → haemorrhoids; the single most important dietary change for Indian haemorrhoidal patients is reducing maida products and replacing with whole wheat flour",
+          "recommendation": "Switch ALL rotis and breads to whole wheat atta; replace maida snacks with whole grain alternatives; read food labels (many 'atta' products are actually mostly maida)"
+        },
+        {
+          "food": "Polished White Rice in Excess",
+          "reason": "White rice has very low fibre (0.6g per cup cooked); a predominantly white rice-based diet (common in South and East India) is a significant constipation driver; brown rice or millets are far superior alternatives",
+          "recommendation": "Switch to brown rice; reduce rice portion size; increase dal, vegetables, and whole grain side dishes proportionally"
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Diuretic effect → dehydration → harder stools → constipation → straining; alcohol relaxes the internal anal sphincter → incomplete closure → soiling and mucus leakage worsening pruritus ani; worsens haemorrhoidal engorgement acutely",
+          "recommendation": "Minimise alcohol; always compensate with extra water when drinking"
+        },
+        {
+          "food": "Red Meat in Excess",
+          "reason": "Red meat has no fibre; high in protein and fat which slow gastric emptying; associated with constipation in excess consumption; however, lean red meat in moderation is not contraindicated",
+          "recommendation": "Reduce red meat frequency; increase plant protein (dal, legumes) as substitutes"
+        }
+      ],
+      "sitz_bath_protocol": {
+        "description": "Sitz bath (from German 'sitzen' — to sit) involves sitting in a few inches of warm water in a bathtub or specially designed plastic basin — one of the most evidence-based, simple, and effective interventions for haemorrhoidal symptom relief. Evidence: multiple clinical trials demonstrate sitz baths significantly reduce haemorrhoidal pain, pruritus, and swelling; used post-haemorrhoidectomy they reduce wound pain and promote healing.",
+        "protocol": "Fill the bathtub with 15-20 cm (6-8 inches) of comfortably WARM (37-40°C — not hot) water; sit for 15-20 minutes; do 2-3 times daily — particularly AFTER each bowel movement (most important time); DO NOT add soap, salt, or chemicals — plain warm water only; some add a few drops of essential oil (tea tree, lavender) for comfort; alternative: fill a large plastic basin and sit over it (plastic sitz bath basins that fit over toilet seat are available at medical supply stores for Rs 200-500); pat dry gently with soft cloth; do not rub",
+        "mechanism": "Warm water: reduces IAS spasm (internal anal sphincter tension — directly reduces pain); promotes local blood flow and healing; gentle cleansing of the perianal area; reduces oedema of thrombosed tissue; soothing effect on pruritic skin",
+        "india_traditional_equivalent": "Warm water hip baths (kati snan) — a traditional Indian hygiene practice; many Indian families practice post-defaecation washing with water (the 'health faucet' or bidet spray) which provides some of the same benefits"
+      }
+    },
+
+    "lifestyle_management": {
+      "toilet_habits_and_posture": {
+        "time_on_toilet": "The single most important toilet habit change: MAXIMUM 5 MINUTES on the toilet; prolonged sitting (reading, using mobile phones — extremely common in India) causes the pelvic floor and haemorrhoidal tissue to prolapse beyond their normal position from the constant gravitational pull; 'No phone, no book, no newspaper on the toilet' — defaecate and leave",
+        "posture": "SQUATTING is superior to sitting for defaecation: the squatting position straightens the anorectal angle (puborectalis muscle relaxes more completely in squat than in sit) → more complete rectal emptying → less straining required; squatting naturally (the traditional Indian toilet posture) is the most physiologically ideal position for defaecation; use of a FOOTSTOOL (Squatty Potty) under the feet while sitting on a Western toilet elevates the feet to 18-25 cm and mimics the squatting position — significantly reduces straining and haemorrhoidal symptoms; affordable stools available online at Rs 500-1,500",
+        "avoid_straining": "NEVER strain at stool — if the stool is not ready to pass, leave the toilet and return later; straining is the primary mechanical driver of haemorrhoidal disease; if straining persists despite adequate fibre and fluids — investigate for underlying slow transit constipation or pelvic floor dysfunction",
+        "respond_to_urge": "RESPOND IMMEDIATELY to the urge to defaecate — do not defer; withholding allows stools to dry out further and become harder; regular meal times → regular gastrocolic reflex → predictable bowel urge → establish a toilet routine (typically 20-30 minutes after breakfast — the gastrocolic reflex peaks post-meal)"
+      },
+      "exercise_and_weight": {
+        "exercise": "Regular aerobic exercise reduces constipation (increases intestinal motility); reduces abdominal obesity (reduces intra-abdominal pressure); reduces haemorrhoidal venous congestion (improves pelvic venous return); 30 minutes of brisk walking or moderate exercise 5 days per week significantly reduces constipation and haemorrhoidal risk; specific exercises: Kegel exercises (pelvic floor strengthening) improve anal tone and support; gentle yoga (Pawanmuktasana — wind-releasing pose; Vajrasana — sitting on heels post-meal; Bhujangasana — cobra pose) improve gut motility",
+        "weight_management": "Obesity significantly worsens haemorrhoids from increased intra-abdominal pressure; even modest 5-10% weight reduction noticeably reduces haemorrhoidal symptoms in obese patients"
+      },
+      "perianal_hygiene": {
+        "importance": "Good perianal hygiene is essential for managing haemorrhoidal pruritus and preventing secondary infection; poor hygiene worsens maceration and itching",
+        "recommendations": [
+          "WASH after every bowel movement — water cleaning (health faucet, bidet) rather than dry wiping with toilet paper; pat dry gently rather than wiping (wiping inflamed perianal skin causes more irritation)",
+          "Use moistened wipes (unscented, alcohol-free) rather than dry toilet paper in interim if water not available; dry toilet paper friction worsens perianal skin",
+          "Avoid scented soaps, talcum powder, and perfumed products in the perianal area (cause contact dermatitis worsening pruritus)",
+          "Wear breathable cotton underwear (prevents perianal moisture and maceration that worsen pruritus ani)"
+        ]
+      }
+    },
+
+    "haemorrhoids_monitoring_plan": {
+      "conservative_management": {
+        "green_zone": "Reducing symptoms with fibre, hydration, sitz baths; bleeding less frequent; no prolapse or manual reduction needed; satisfied with conservative treatment → continue; review at 4-6 weeks",
+        "yellow_zone": "Persistent bleeding despite 4-6 weeks of conservative management; Grade II not improving; recurring acute episodes → GP/colorectal surgery referral for office procedure (rubber band ligation); proctoscopy to confirm grade; flexible sigmoidoscopy if >40 years",
+        "red_zone": "Acute thrombosed external haemorrhoid with severe pain → urgent colorectal surgery within 24-72 hours for thrombectomy; Grade IV strangulated prolapse → emergency surgical referral; massive rectal haemorrhage → call 102/112 emergency"
+      },
+      "post_procedure": {
+        "post_banding": "Review at 4-6 weeks; assess response; rebanding if haemorrhoids persist; colonoscopy if not already done (particularly >40 years)",
+        "post_haemorrhoidectomy": "Review at 2 weeks for wound inspection; sitz baths and metronidazole until wound healed; full healing 4-6 weeks; return to work: 1-2 weeks (office) to 3-4 weeks (physical labour)"
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Acute Thrombosis of External Haemorrhoid",
+        "description": "Acute clot formation in external haemorrhoidal plexus — causing dramatic onset severe pain and perianal swelling",
+        "severity": "Moderate to Severe (pain)",
+        "management": "Thrombectomy within 72 hours (most effective); conservative after 72 hours (spontaneous resolution over 2-4 weeks)"
+      },
+      {
+        "complication": "Strangulation and Gangrene of Prolapsed Haemorrhoids",
+        "description": "Grade IV haemorrhoids trapped by anal sphincter → ischaemia → necrosis; extremely painful; systemic sepsis if gangrene develops",
+        "severity": "Severe to Life-threatening",
+        "management": "Emergency surgical consultation; emergency haemorrhoidectomy if gangrenous; conservative reduction if possible under anaesthesia"
+      },
+      {
+        "complication": "Anaemia from Chronic Bleeding",
+        "description": "Gradual iron-deficiency anaemia from recurrent haemorrhoidal bleeding; often insidious; particularly significant in women with concurrent menorrhagia",
+        "severity": "Moderate to Severe",
+        "management": "Iron supplementation; treat haemorrhoids definitively; colonoscopy to exclude concurrent malignancy as cause of anaemia"
+      },
+      {
+        "complication": "Post-Rubber Band Ligation Haemorrhage",
+        "description": "Delayed bleeding (days 5-10 post-banding) when banded tissue sloughs off; usually minor; rarely significant haemorrhage requiring intervention",
+        "severity": "Mild to Moderate (rarely severe)",
+        "management": "Most resolve spontaneously; significant haemorrhage → urgent endoscopy and clot evacuation or re-banding"
+      },
+      {
+        "complication": "Post-Haemorrhoidectomy Pain",
+        "description": "The most common post-operative morbidity after haemorrhoidectomy; can be severe; most patients describe the 1-2 weeks post-operative period as the most painful experience",
+        "severity": "Moderate to Severe (temporary)",
+        "management": "Multimodal analgesia; oral metronidazole 400 mg TDS × 7 days (reduces pain); sitz baths; topical lidocaine; stool softeners (prevent hard stools tearing wounds); regular paracetamol + NSAID"
+      },
+      {
+        "complication": "Faecal Impaction",
+        "description": "Severe constipation leading to hard impacted stool that cannot be passed — worsens haemorrhoidal symptoms dramatically; may require manual evacuation or phosphate enema",
+        "severity": "Moderate",
+        "management": "Phosphate enema (Belix, Phosphate enema); manual evacuation under anaesthesia if severe; aggressive laxative regimen thereafter; identify and address underlying cause of constipation"
+      },
+      {
+        "complication": "Pruritus Ani — Persistent Anal Itching",
+        "description": "Chronic perianal itching from haemorrhoidal mucus discharge and soiling; leads to itch-scratch cycle further damaging the perianal skin; severely impacts quality of life",
+        "severity": "Moderate (significant quality-of-life impact)",
+        "management": "Treat underlying haemorrhoids; perianal hygiene; avoid scratching; topical zinc oxide or hydrocortisone 1% short-term; treat secondary threadworm infection (common in children); skin biopsy if persistent to exclude lichen sclerosus or Bowen's disease (very rare but important)"
+      },
+      {
+        "complication": "Portal Pyaemia — Post-Haemorrhoidal Procedure Sepsis",
+        "description": "Rare but life-threatening bacteraemia and septic thrombosis of the portal vein following injection sclerotherapy, rubber band ligation, or surgery — particularly in immunocompromised patients; organisms from the contaminated perianal area seed the portal vein via the haemorrhoidal venous drainage",
+        "severity": "Life-threatening",
+        "management": "Prevention: avoid haemorrhoidal procedures in severely immunocompromised (HIV AIDS with CD4 <100, post-chemotherapy, active inflammatory bowel disease); prophylactic antibiotics before procedures in high-risk patients; urgent IV antibiotics (broad-spectrum covering Gram-negative and anaerobes) if suspected"
+      }
+    ],
+
+    "special_populations": {
+      "haemorrhoids_in_pregnancy": {
+        "key_points": [
+          "Extremely common — affects 25-35% of pregnant women; peak in third trimester and immediately postpartum",
+          "Most resolve spontaneously within 1-3 months post-delivery; conservative management is the primary approach",
+          "Safe treatments in pregnancy: ispaghula husk (Isabgol); lactulose; paracetamol; topical zinc oxide; witch hazel; sitz baths; topical lidocaine (short-term); Pilex ointment (Himalaya — short-term for acute episodes)",
+          "AVOID in pregnancy: oral diosmin/hesperidin (Daflon) — limited safety data; NSAIDs (third trimester); topical steroids in excess",
+          "Postpartum haemorrhoids that persist beyond 3 months should be reassessed for office procedures",
+          "Prevention: high-fibre diet throughout pregnancy (constipation prevention is the best haemorrhoid prevention); adequate hydration; sitz baths post-delivery for immediate perianal relief"
+        ]
+      },
+      "haemorrhoids_in_portal_hypertension": {
+        "key_points": [
+          "Haemorrhoidal varices in cirrhosis are TRUE Porto-systemic anastomoses — not simple haemorrhoids — and can bleed massively",
+          "BANDING AND INJECTION SCLEROTHERAPY ARE DANGEROUS in portal hypertensive haemorrhoidal varices — risk of uncontrollable haemorrhage; only by experienced gastroenterologist with EMERGENCY BACKUP",
+          "Primary treatment is reducing portal pressure: propranolol (non-selective beta-blocker); TIPS (transjugular intrahepatic portosystemic shunt) for severe cases; liver transplantation for advanced cirrhosis",
+          "Always check LFTs and look for liver disease signs in any patient with haemorrhoidal varices before any procedure"
+        ]
+      },
+      "haemorrhoids_in_immunocompromised": {
+        "key_points": [
+          "HIV/AIDS, chemotherapy, organ transplant: all haemorrhoidal procedures carry higher risks of infection, impaired healing, and sepsis",
+          "Haemorrhoidectomy in HIV is associated with: prolonged wound healing; increased infection; anal stenosis; sphincter damage",
+          "CD4 count <200/mcL: avoid haemorrhoidectomy and banding; conservative management only",
+          "CD4 >200/mcL on antiretroviral therapy with good immune reconstitution: procedures can be considered with antibiotic prophylaxis; by experienced colorectal surgeon",
+          "Prophylactic antibiotics before any anorectal procedure in immunocompromised patients (co-amoxiclav 625 mg orally 1 hour before procedure)"
+        ]
+      },
+      "haemorrhoids_in_elderly": {
+        "key_points": [
+          "Increasing constipation from: reduced mobility; multiple constipating medications (opioids, anticholinergics, iron, calcium channel blockers); reduced fluid intake; reduced fibre intake",
+          "Higher prevalence of Grade III-IV haemorrhoids from longstanding constipation; greater degree of prolapse",
+          "Surgical risk higher in elderly; office procedures preferred; PPH (stapled haemorrhoidopexy) has better post-operative tolerance than conventional haemorrhoidectomy",
+          "Concurrent digital rectal examination to exclude rectal cancer in all elderly patients presenting with rectal bleeding"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Annual Influenza Vaccine",
+        "reason": "Influenza causing severe coughing increases intra-abdominal pressure significantly — repeated strong Valsalva from coughing worsens haemorrhoidal prolapse and bleeding; patients recovering from influenza with acute cough episodes frequently experience haemorrhoidal flares; vaccination reduces illness burden and the associated Valsalva stress on haemorrhoidal tissue; particularly relevant for Grade III-IV haemorrhoidal patients",
+        "recommendation": "All haemorrhoidal patients with Grade III-IV disease; elderly with haemorrhoids and limited cardiac/pulmonary reserve"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "reason": "Patients with chronic haemorrhoidal bleeding may require multiple proctoscopic procedures and potentially surgery — exposure to endoscopic instruments creates small risk of healthcare-associated hepatitis B transmission in inadequately vaccinated individuals; portal hypertension from chronic hepatitis B causes haemorrhoidal varices; hepatitis B vaccination prevents the liver disease that leads to portal hypertension and haemorrhoidal varices",
+        "recommendation": "All unvaccinated adults; all patients requiring anorectal procedures; all healthcare workers performing anorectal procedures"
+      },
+      {
+        "vaccine": "HPV Vaccine (Gardasil-9)",
+        "reason": "Human papillomavirus (HPV) causes condylomata acuminata (anal warts) — a perianal condition frequently confused with external haemorrhoids and requiring completely different treatment; HPV also causes anal squamous cell carcinoma — a risk in high-risk populations (HIV, MSM, immunocompromised); HPV vaccination prevents the HPV strains responsible for anal warts and anal cancer; relevant for young adults and immunocompromised patients with perianal conditions being evaluated",
+        "recommendation": "All young adults up to age 26 years (ideally before sexual debut); adults 27-45 years at increased risk; MSM; HIV-positive patients regardless of age"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "reason": "COVID-19 frequently causes severe constipation and bowel habit changes (due to direct gut inflammation, immobility from illness, and opioid analgesic use) — both acute COVID and long COVID-related GI symptoms worsen haemorrhoidal disease; the dehydration and reduced mobility of severe COVID illness exacerbate constipation; vaccination reduces severe COVID and the associated gut dysfunction",
+        "recommendation": "Follow national vaccination schedule"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "ANY rectal bleeding — even if it appears typical for haemorrhoids; always requires clinical examination to confirm diagnosis and exclude cancer, particularly in patients over 40 years",
+      "First episode of rectal bleeding at any age — must be examined; haemorrhoids are a clinical diagnosis requiring examination, not an assumption",
+      "Rectal bleeding with ANY change in bowel habit (increased frequency, looser stools, alternating diarrhoea and constipation) — ALARM FEATURE; requires colonoscopy urgently",
+      "Rectal bleeding with unexplained weight loss — ALARM FEATURE for colorectal cancer",
+      "Persistent prolapse requiring manual reduction (Grade III) not responding to 4-6 weeks of conservative management — office procedure needed",
+      "Permanent prolapse unable to be reduced (Grade IV) — urgent colorectal surgery referral",
+      "Acute sudden onset severe perianal pain with a lump — possible thrombosed external haemorrhoid; urgent assessment within 72 hours for possible thrombectomy",
+      "Inability to walk or sit comfortably from anal pain — possible strangulation; urgent surgical referral",
+      "Fever with anal pain or swelling — possible perianal abscess or infected haemorrhoids — URGENT; perineal sepsis can be life-threatening",
+      "Anaemia (pallor, breathlessness) with rectal bleeding — haemorrhoidal bleeding causing significant anaemia; requires treatment of haemorrhoids AND investigation to exclude concurrent colorectal cancer",
+      "Soiling or faecal incontinence associated with prolapse — Grade III-IV haemorrhoids significantly affecting continence; specialist review",
+      "Pruritus ani not responding to 2-4 weeks of simple hygiene measures — exclude threadworms, contact dermatitis, lichen sclerosus; specialist assessment"
+    ],
+
+    "emergency_signs": [
+      "MASSIVE BRIGHT RED RECTAL HAEMORRHAGE causing weakness, dizziness, lightheadedness, or collapse — HAEMORRHAGIC SHOCK — CALL EMERGENCY SERVICES (102/112) IMMEDIATELY; lie flat; IV fluid resuscitation; blood transfusion; emergency colonoscopy or surgical intervention",
+      "EXTREMELY PAINFUL PROLAPSED MASS AT THE ANUS with PURPLE-BLACK COLOUR and FEVER — STRANGULATED GANGRENOUS HAEMORRHOIDS — EMERGENCY SURGICAL REFERRAL; call 102/112; emergency haemorrhoidectomy may be required",
+      "ACUTE ONSET SEVERE PERIANAL PAIN WITH FEVER AND SYSTEMIC ILLNESS (rigors, extreme fatigue, confusion) — FOURNIER'S GANGRENE (life-threatening necrotising fasciitis of the perineum) or PERIANAL SEPSIS — CALL 102/112; emergency surgery mandatory; mortality very high without immediate debridement",
+      "POST-PROCEDURE SUDDEN BRIGHT RED RECTAL BLEEDING (after rubber band ligation, sclerotherapy, or haemorrhoidectomy) causing dizziness or cardiovascular compromise — delayed post-procedural haemorrhage — EMERGENCY; call operating surgeon immediately; call 102/112 if cardiovascular instability",
+      "SIGNS OF HAEMORRHAGIC SHOCK with rectal bleeding — tachycardia >120 bpm, systolic BP <90 mmHg, pallor, cold peripheries — CALL 102/112"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "My doctor says I have piles but I am terrified it could be cancer. How can I be sure?",
+        "answer": "Your concern is completely valid and understandable — rectal bleeding is genuinely a symptom shared by both haemorrhoids (very common and benign) and colorectal cancer (which must always be excluded). The answer depends on your age, symptoms, and examination findings. For patients under 40 years with classic haemorrhoidal symptoms (painless bright red blood on toilet paper, dripping after defaecation, not mixed with stool), confirmed haemorrhoids on proctoscopy examination (your doctor looking inside with a proctoscope), and no alarm features — haemorrhoids are the likely cause and colonoscopy is not always immediately mandatory. However, for ANYONE over 40 years with rectal bleeding; for anyone with changes in bowel habit alongside bleeding; for anyone with weight loss or anaemia; or for anyone with a family history of colorectal cancer — colonoscopy is MANDATORY to exclude colorectal cancer before assuming the bleeding is from haemorrhoids. In India, colorectal cancer is rising rapidly and presenting at younger ages than in the West. A colonoscopy provides complete reassurance by examining the entire large intestine. If you have been told you have haemorrhoids but are not fully satisfied with the investigation — it is entirely appropriate to ask for a colonoscopy or referral to a colorectal specialist. Never accept 'it's just piles' without a proper rectal examination and appropriate investigation for your age and risk profile."
+      },
+      {
+        "question": "I sit on the toilet for 20-30 minutes reading my phone every morning. Could this be causing my piles?",
+        "answer": "Yes — absolutely. This is one of the most important and underrecognised causes of haemorrhoidal disease in modern India, particularly among young urban professionals. Here's what happens: when you sit on a Western toilet, the weight of your body and the pull of gravity on the pelvic floor cause the haemorrhoidal cushions to slowly descend downward. This descent is normal for a few minutes during defaecation, but when you remain seated for 20-30 minutes — even after you have finished defaecating — this prolonged downward pressure progressively stretches and weakens the fibromuscular supports that hold the haemorrhoidal cushions in their normal position. Over months and years, this destroys the ligaments holding the cushions in place, leading to permanent descent and prolapse. The 'mobile phone on the toilet' epidemic has genuinely worsened haemorrhoidal disease in India significantly over the last decade. The rule is simple: maximum 5 minutes on the toilet; defaecate efficiently, get up, and leave; the toilet is not a reading room. Additional help: put a small footstool (18-25 cm high) under your feet while sitting on the Western toilet — this mimics the more natural squatting position, reduces straining, and makes defaecation faster and more complete, reducing the time you need to spend seated."
+      },
+      {
+        "question": "Do spicy Indian foods cause piles? Should I stop eating spicy food?",
+        "answer": "Spicy food — particularly capsaicin from chillies — does not CAUSE haemorrhoids from scratch. However, if you already have haemorrhoids, spicy food can significantly WORSEN your symptoms. Here is what happens: capsaicin (the active compound in chillies) is not fully broken down in the digestive system and reaches the anal canal where it activates TRPV1 nerve receptors in the rectal and anal mucosa — increasing local blood flow, causing mucosal inflammation, and sensitising the area. This is why many patients with haemorrhoids notice that their bleeding, pain, and itching are significantly worse the morning after a very spicy meal. The practical advice: if your haemorrhoids are symptomatic — reduce chilli levels in your food, especially during flare-ups. You do not have to eliminate spicy food entirely or permanently — once haemorrhoids are treated, most people can return to their normal spice levels. Non-chilli spices (turmeric, cumin, coriander, black pepper — used at normal culinary doses) are actually anti-inflammatory and do NOT worsen haemorrhoids; many have beneficial properties for gut health. The real dietary priorities are INCREASING FIBRE (from whole grains, fruits, vegetables, and Isabgol) and DRINKING ADEQUATE WATER — these have far more impact on haemorrhoidal disease than reducing spicy food."
+      },
+      {
+        "question": "My doctor says I need rubber band ligation. Will it be painful and how long will it take to work?",
+        "answer": "Rubber band ligation is one of the most effective office-based treatments for Grade II-III internal haemorrhoids, and when performed correctly above the dentate line (the pain threshold in the anal canal), it should be essentially PAINLESS during the procedure. Here is what to expect: the procedure itself takes 10-15 minutes in the clinic; a proctoscope is passed, and a small rubber band is placed at the base of each haemorrhoidal cushion above the dentate line using a special device; you may feel a sensation of fullness or pressure but not sharp pain. However, over the next 24-48 hours, you may feel a dull aching discomfort from the anal canal — this is normal and managed with paracetamol and a warm sitz bath. Days 5-10: the banded tissue dies and falls off — you may notice some blood at this point (usually minor; occasionally more significant). IMPORTANT IMMEDIATE WARNING: if you feel SEVERE SHARP PAIN IMMEDIATELY during the banding procedure — tell your doctor immediately; this means the band has been placed too close to the pain-sensitive dentate line and must be removed and replaced. Regarding results: most patients notice reduced bleeding within 2-4 weeks; significant reduction in prolapse symptoms over 6-8 weeks. One session treats 1-3 haemorrhoidal cushions; you may need 2-3 sessions at monthly intervals for complete resolution. Success rate for appropriate Grade II-III haemorrhoids: approximately 75-85%."
+      },
+      {
+        "question": "I am 3 months pregnant with severe piles that are bleeding a lot. What can I safely do?",
+        "answer": "Haemorrhoids during pregnancy are extremely common — the growing uterus compresses the pelvic veins, progesterone relaxes vein walls, and constipation from iron supplements and hormonal changes all combine to cause haemorrhoidal flares. The reassuring news is that most pregnancy-related haemorrhoids significantly improve or fully resolve after delivery, and there are several safe treatment options: The most important thing during pregnancy is preventing and treating constipation — which is driving your haemorrhoidal symptoms: Isabgol (ispaghula husk) 1-2 teaspoons twice daily in plenty of water is completely safe in pregnancy and is the most effective stool softener; lactulose syrup is also safe; drink 2-3 litres of water daily; high-fibre foods (fruit, vegetables, whole grain roti). For symptom relief: warm sitz baths (15-20 minutes after each bowel movement in warm water) are safe and very effective for reducing pain and swelling; topical zinc oxide ointment or Pilex ointment can be applied for itching and discomfort; paracetamol 500 mg as needed is safe for pain throughout pregnancy. AVOID during pregnancy: oral Daflon (diosmin/hesperidin) — insufficient safety data in pregnancy; NSAIDs in third trimester; topical steroids for prolonged periods. Most importantly: almost all pregnancy-related haemorrhoids are expected to improve significantly after delivery. If haemorrhoids are still significantly troublesome more than 3 months after delivery, reassess with a colorectal surgeon for office procedures — it is very safe at that point."
+      },
+      {
+        "question": "What is the difference between piles, fissure, and fistula? I am confused about which one I have.",
+        "answer": "These are three different anorectal conditions that are often confused by patients (and sometimes even by non-specialist doctors) because they all affect the anal and rectal area. Here is a simple distinction: PILES (Haemorrhoids) — internal bleeding from enlarged vascular cushions above the dentate line; the main symptom is PAINLESS BRIGHT RED BLEEDING; you may also feel a lump come out during defaecation; generally NO SEVERE PAIN during defaecation (unless thrombosed). Think: 'bleeding without pain on defaecation.' ANAL FISSURE — a small tear or crack in the anal skin (below the dentate line); the main symptom is SEVERE SHARP BURNING PAIN DURING AND AFTER DEFAECATION (described as 'passing glass' or 'razor blade'); bright red bleeding (smaller amount than haemorrhoids); pain so severe many patients dread defaecation and withhold stool; most common in young adults; usually a midline posterior crack visible on gentle parting of the buttocks; typically treated with GTN 0.2% ointment, diltiazem cream, or botulinum toxin injection. Think: 'severe pain with defaecation and small amount of blood.' ANAL FISTULA — an abnormal tunnel (tract) connecting the inside of the anal canal to the skin around the anus; usually the result of an anorectal abscess; main symptom is DISCHARGE OF PUS (and sometimes faeces) from a small opening near the anus; chronic intermittent pain; may notice intermittent swelling that bursts and settles; NO SIGNIFICANT BLEEDING; treated surgically (fistulotomy or seton placement). Think: 'discharge and intermittent swelling near the anus.' These three conditions can coexist in the same patient (haemorrhoids + fissure is particularly common). Your doctor needs to examine you to determine which (or which combination) is causing your symptoms."
+      }
+    ]
+  }
+}

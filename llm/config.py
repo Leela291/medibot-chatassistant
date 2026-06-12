@@ -7,6 +7,7 @@ load_dotenv()
 # ── Ollama settings ─────────────────────────────────────────────────────────
 OLLAMA_BASE_URL   = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 OLLAMA_LLM_MODEL  = os.getenv("OLLAMA_LLM_MODEL", "llama3.2:1b")
+OLLAMA_VISION_MODEL = os.getenv("OLLAMA_VISION_MODEL", "qwen2.5vl:3b")
 OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
 
 # ── API settings ───────────────────────────────────────────────────────
@@ -26,8 +27,8 @@ METADATA_PATH     = os.getenv("METADATA_PATH", "vector_db/db/metadata.pkl")
 DATASETS_DIR      = os.getenv("DATASETS_DIR", "datasets")
 
 # ── Session / Memory ──────────────────────────────────────────────────────────
-MAX_HISTORY_TURNS = int(os.getenv("MAX_HISTORY_TURNS", 3))
+MAX_HISTORY_TURNS = int(os.getenv("MAX_HISTORY_TURNS", 50))
 
 # ── Generation parameters ─────────────────────────────────────────────────────
-LLM_TEMPERATURE   = float(os.getenv("LLM_TEMPERATURE", 0.3))
-LLM_MAX_TOKENS    = int(os.getenv("LLM_MAX_TOKENS", 512))
+LLM_TEMPERATURE   = float(os.getenv("LLM_TEMPERATURE", 0.1))
+LLM_MAX_TOKENS    = int(os.getenv("LLM_MAX_TOKENS", 2048))

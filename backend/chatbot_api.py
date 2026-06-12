@@ -13,9 +13,8 @@ from llm.model_loader import get_model_info
 from llm.response_generator import generate_response, generate_with_rag
 from backend.file_parser import parse_uploaded_file
 from tools.fda_tool import get_fda_drug_summary
-from tools.location_tool import search_nearby_hospitals
-from services.symptom_detector import detect_symptom
-from services.triage_questions import TRIAGE_QUESTIONS
+from tools.location_tool import get_nearby_medical_facilities, format_nearby_facilities, parse_location_request
+from tools.bmi_tool import calculate_bmi
 
 health_bp  = Blueprint("health",  __name__)
 chatbot_bp = Blueprint("chatbot", __name__)
@@ -91,31 +90,40 @@ def chat():
 
     history = session.memory.get_history()
     
-    # =========================
-    # Location Tool
-    # =========================
+    import re
 
-    try:
-        location_keywords = [
-            "hospital near me",
-            "nearby hospital",
-            "find hospital",
-            "nearest hospital"
-        ]
+    if "bmi" in message.lower():
+        return jsonify({
+            "answer": (
+                "Please provide your weight and height.\n\n"
+                "Example:\n"
+                "70 kg 175 cm"
+            ),
+            "session_id": session.session_id,
+            "sources": ["BMI Calculator"],
+            "is_emergency": False
+        })
 
-        if any(k in message.lower() for k in location_keywords):
+    bmi_pattern = r"(\d+(?:\.\d+)?)\s*kg.*?(\d+(?:\.\d+)?)\s*cm"
 
-            hospitals = search_nearby_hospitals()
+    match = re.search(bmi_pattern, message.lower())
 
-            return jsonify({
-                "answer": str(hospitals),
-                "session_id": session.session_id,
-                "sources": ["Location Tool"],
-                "is_emergency": False
-            })
+    if match:
+        weight = float(match.group(1))
+        height = float(match.group(2))
 
-    except Exception as e:
-        print(f"[Location Tool Error] {e}")
+        result = calculate_bmi(weight, height)
+
+        answer = (
+            f"Your BMI is {result['bmi']}.\n"
+            f"Category: {result['category']}"
+        )
+
+        session.memory.add_user(message)
+        session.memory.add_assistant(answer)
+        session_manager.save_session(session)
+
+        return jsonify({"answer": answer, "session_id": session.session_id, "sources": ["BMI Calculator"], "is_emergency": False})
 
     # 2. Optimized Generation Routing
     if use_rag:
@@ -173,12 +181,80 @@ def new_session():
     session = session_manager.get_or_create()
     return jsonify({"session_id": session.session_id})
 
+@chatbot_bp.post("/location/nearby")
+def nearby_medical_facilities():
+    body = request.get_json(force=True)
+    lat = body.get("lat")
+    lon = body.get("lon")
+    radius = int(body.get("radius", 5000))
+    session_id = body.get("session_id")
+    user_query = (body.get("query") or "").strip()
+
+    if lat is None or lon is None:
+        return jsonify({"error": "lat and lon are required"}), 400
+
+    try:
+        lat = float(lat)
+        lon = float(lon)
+        radius = max(1000, min(radius, 15000))
+    except (TypeError, ValueError):
+        return jsonify({"error": "Invalid location coordinates"}), 400
+
+    request_info = parse_location_request(user_query)
+    facilities = get_nearby_medical_facilities(
+        lat,
+        lon,
+        radius,
+        facility_types=request_info["facility_types"],
+        specialty=request_info["specialty"],
+    )
+    if sum(len(items) for items in facilities.values()) == 0 and radius < 15000:
+        radius = 15000
+        facilities = get_nearby_medical_facilities(
+            lat,
+            lon,
+            radius,
+            facility_types=request_info["facility_types"],
+            specialty=request_info["specialty"],
+        )
+
+    if not request_info["specialty"]:
+        empty_types = [
+            facility_type
+            for facility_type in request_info["facility_types"]
+            if len(facilities.get(facility_type, [])) == 0
+        ]
+        if empty_types:
+            fallback_request = {
+                **request_info,
+                "facility_types": empty_types,
+            }
+            fallback_facilities = search_nominatim_medical_places(lat, lon, radius, fallback_request)
+            for facility_type, items in fallback_facilities.items():
+                if items:
+                    facilities[facility_type] = items
+
+    answer = format_nearby_facilities(facilities, lat=lat, lon=lon, radius=radius, request_info=request_info)
+
+    session = session_manager.get_or_create(session_id)
+    session.memory.add_user(request_info["display_query"])
+    session.memory.add_assistant(answer)
+    session_manager.save_session(session)
+
+    return jsonify({
+        "answer": answer,
+        "facilities": facilities,
+        "session_id": session.session_id,
+        "sources": ["OpenStreetMap Overpass", "OpenStreetMap Nominatim"],
+        "is_emergency": False,
+    })
+
 @chatbot_bp.get("/chat/sessions")
 def get_sessions():
     """Return all active chat sessions with descriptive titles and timestamps."""
     sessions = []
     for s_id, s in session_manager._sessions.items():
-        history = s.memory.get_history()
+        history = s.memory.get_all_history()
         title = "New Consultation"
         last_msg = ""
         if history:
@@ -208,7 +284,7 @@ def get_history():
     if not session_id:
         return jsonify({"error": "session_id required"}), 400
     session = session_manager.get_or_create(session_id)
-    return jsonify({"history": session.memory.get_history()})
+    return jsonify({"history": session.memory.get_all_history()})
 
 @chatbot_bp.delete("/chat/history")
 def clear_history():
@@ -240,6 +316,22 @@ def chat_with_file():
         return jsonify({"error": "Empty filename"}), 400
 
     parsed = parse_uploaded_file(file)
+    if (
+        parsed.get("is_image")
+        and not parsed.get("is_document", False)
+        and (
+            parsed.get("width", 0) < 300
+            or parsed.get("height", 0) < 300
+        )
+    ):
+        return jsonify({
+            "answer":
+                "The uploaded image resolution is too low for reliable analysis. "
+                "Please upload the original image or a clearer photo.",
+            "session_id": session_id,
+            "sources": [],
+            "is_emergency": False
+        })
 
     if not parsed["success"] and not parsed["content"]:
         return jsonify({
@@ -254,39 +346,81 @@ def chat_with_file():
     history = session.memory.get_history()
     
     file_context = parsed["content"]
-    user_prompt = message or "Please analyze this upload."
+    user_prompt = message or (
+    "Analyze this file and provide "
+    "diagnosis, danger level, medicines, "
+    "diet recommendations and precautions."
+    )
     images = [parsed["base64_image"]] if parsed.get("is_image") and parsed.get("base64_image") else None
+    print(
+    f"[UPLOAD] {parsed['filename']} "
+    f"is_image={parsed.get('is_image')} "
+    f"base64={parsed.get('base64_image') is not None}"
+    )
 
-    if parsed.get("is_image") and not parsed.get("content").startswith("[OCR extracted"):
+    if parsed.get("is_image") and not parsed.get("is_document", False):
         # ── Disease Photo Upload prompt ──
-        combined_message = (
-            f"The user uploaded a medical photo of a disease/condition: {parsed['filename']}\n\n"
-            f"User's question: {user_prompt}\n\n"
-            f"Please analyze this disease image and provide a comprehensive clinical response outlining:\n"
-            f"1. **Suspected Disease/Condition**: Identify what disease or skin condition this is likely to represent (offer differential diagnostics).\n"
-            f"2. **Why it Occurs**: Background causes, triggers, and pathophysiological explanation.\n"
-            f"3. **Danger Level**: Classify clearly as either [Danger Level: Low], [Danger Level: Medium], [Danger Level: High], or [Danger Level: Emergency] with a brief justification.\n"
-            f"4. **Precautions to Take**: Immediate physical care, hygiene, and emergency steps.\n"
-            f"5. **Diet & Nutrition**: List specific foods/fluids to eat and foods to strictly avoid.\n"
-            f"6. **Medications & Care**: Over-the-counter measures (anti-itch creams, soothing gels) with standard medical warnings.\n"
-            f"7. **Expected Recovery Duration**: How long the symptoms typically stay.\n\n"
-            f"Note: If you do not have vision capabilities, provide analysis based on the filename '{parsed['filename']}' and query details, and politely ask the user to describe the lesion/rash shape, color, itchiness, and size."
-        )
-        
-        search_query = f"{parsed['filename']} {user_prompt}"
-        from vector_db.retriever import retrieve
-        from rag.context_builder import build_context
-        retrieved_chunks = retrieve(search_query, top_k=2)
-        rag_context = build_context(retrieved_chunks)
-        
-        answer = generate_with_rag(
-            user_message=combined_message,
-            context=rag_context,
-            conversation_history=history,
+        combined_message = f"""
+        Analyze the uploaded medical image.
+        You are a medical image analysis assistant.
+
+        IMPORTANT RULES:
+        - Never provide a definitive diagnosis from an image alone.
+        - Rank possible conditions instead of choosing only one diagnosis.
+        - If multiple conditions fit the image, list them.
+        - Reduce confidence when clinical history is unavailable.
+        - Explain uncertainty when appropriate.
+        - Do not claim a condition is confirmed.
+        - Use phrases like "may be consistent with", "could represent", or "cannot be confirmed from the image alone".
+        - Never assign "High" confidence unless the visual findings are highly specific.
+        - For generalized rashes, confidence should usually be Low or Medium unless classic diagnostic features are present.
+        - Explain why confidence was chosen.
+        - Describe the rash pattern before suggesting conditions.
+        - If several conditions appear equally plausible, state this clearly.
+       
+        User question:
+        {user_prompt}
+
+        Provide:
+
+        1. Visible Findings
+        - Describe exactly what is visible in the image.
+
+        2. Most Likely Possibilities (Ranked)
+        - For each possibility include:
+        - Confidence (Low/Medium/High)
+        - Reasoning based on visible features
+
+        3. Possible Causes
+        - Explain common causes of the top possibilities.
+
+        4. Recommended Next Steps
+        - Include self-care and monitoring advice when appropriate.
+
+        5. When to See a Doctor
+        - Explain when medical evaluation is recommended.
+
+        6. Emergency Warning Signs
+        - List symptoms requiring urgent or emergency care.
+
+        7. Limitations
+        - Explain what cannot be determined from the image alone.
+
+        8. Information Needed For Better Accuracy
+        - List the most important symptoms or history that would improve diagnostic confidence.
+
+        Format the response in clear sections using markdown headings.
+        """
+    
+        if images:
+            print("Base64 length:", len(images[0]))
+            print("Base64 start:", images[0][:50])
+        answer = generate_response(
+            combined_message,
+            [],
             images=images
         )
-        sources = list({c["disease"]["name"] if isinstance(c["disease"], dict) else c.get("disease", "Local Docs") for c in retrieved_chunks})
-        sources.append("Disease Vision Analyzer")
+        sources = ["Vision Analysis"]
     else:
         # ── Medical Report Upload prompt ──
         combined_message = (
@@ -305,7 +439,7 @@ def chat_with_file():
         )
 
         answer = generate_response(combined_message, history, images=images)
-        sources = [f"Uploaded File: {parsed['filename']}"]
+        sources = [f"Medical Report: {parsed['filename']}"]
 
     session.memory.add_user(f"[Uploaded: {parsed['filename']}] {user_prompt}")
     session.memory.add_assistant(answer)

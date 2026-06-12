@@ -1,0 +1,1331 @@
+{
+  "disease": {
+    "id": "DIS-023",
+    "name": "Irritable Bowel Syndrome (IBS)",
+    "scientific_name": "Irritable Bowel Syndrome / Functional Bowel Disorder / Spastic Colon",
+    "icd_10_code": "K58 (Irritable bowel syndrome); K58.0 (IBS with diarrhoea); K58.1 (IBS with constipation); K58.2 (IBS with mixed bowel habits); K58.8 (Other IBS); K58.9 (IBS without diarrhoea — unspecified)",
+    "category": "Functional Gastrointestinal Disorder / Disorders of Gut-Brain Interaction (DGBI)",
+    "overview": {
+      "description": "Irritable Bowel Syndrome (IBS) is a common, chronic, relapsing functional gastrointestinal (GI) disorder characterised by recurrent abdominal pain or discomfort associated with alterations in bowel habits — diarrhoea, constipation, or an alternating pattern of both — in the absence of identifiable structural, biochemical, or organic disease to explain the symptoms. IBS is classified as a Disorder of Gut-Brain Interaction (DGBI), reflecting current understanding that symptoms arise from dysregulation of the bidirectional communication between the enteric nervous system (the 'gut brain'), the central nervous system, and gut microbiome — rather than from structural damage to the bowel. It is the most commonly diagnosed gastrointestinal condition globally and one of the leading reasons for gastroenterology outpatient referrals.",
+      "affected_organ": "Large intestine (colon) primarily; also small intestine and the gut-brain axis (enteric and central nervous systems)",
+      "prevalence": "Affects approximately 10-15% of adults globally; up to 20% in some populations. Approximately 40-50 million people in the USA; estimated 15-20 million in India (possibly higher due to underdiagnosis). Most common GI diagnosis in primary care.",
+      "age_group": "Most common in adults aged 18-50 years; peak presentation in 20s-30s; can occur at any age including children and elderly. Symptoms often begin in adolescence.",
+      "sex_ratio": "Women affected 2-3 times more frequently than men in high-income countries. In South Asian countries, male predominance has been reported in some studies — possibly reflecting healthcare-seeking behaviour differences.",
+      "is_contagious": false,
+      "is_curable": false,
+      "is_manageable": true,
+      "chronic": true,
+      "is_life_threatening": false,
+      "key_fact": "IBS does NOT cause structural damage to the intestine, does NOT increase risk of bowel cancer, and does NOT progress to inflammatory bowel disease (Crohn's or ulcerative colitis) — but it significantly impairs quality of life and is underdiagnosed and underrecognised globally."
+    },
+
+    "gut_brain_axis": {
+      "description": "The gut-brain axis is a bidirectional communication network between the enteric nervous system (ENS — over 500 million neurons in the gut wall; sometimes called the 'second brain'), the central nervous system (brain and spinal cord), the autonomic nervous system, the hypothalamic-pituitary-adrenal (HPA) axis, and the gut microbiome. In IBS, this axis is dysregulated — resulting in: altered gut motility, visceral hypersensitivity (exaggerated pain responses to normal bowel stimuli), abnormal gut secretion, and immune activation.",
+      "serotonin_role": "Over 90-95% of the body's serotonin (5-HT) is produced in the gut by enterochromaffin cells. Serotonin regulates gut motility, secretion, and pain signalling. IBS-D: excess serotonin causes rapid transit; IBS-C: serotonin deficiency causes slow transit. 5-HT3 antagonists (IBS-D) and 5-HT4 agonists (IBS-C) target this pathway.",
+      "microbiome_connection": "The gut microbiome communicates with the brain via: vagal nerve signalling, short-chain fatty acid (SCFA) production, enteroendocrine cell signalling, immune modulation, and serotonin production. IBS patients show distinct microbiome profiles — reduced diversity, altered Firmicutes:Bacteroidetes ratio, and reduced Lactobacillus and Bifidobacterium populations."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "IBS with Predominant Constipation (IBS-C)",
+        "description": "Characterised by hard, lumpy stools and infrequent bowel movements. Patients have Bristol Stool Form Scale (BSFS) type 1-2 (hard pellets or lumpy sausage) in ≥25% of bowel movements AND type 6-7 (mushy or watery) in <25%. Abdominal pain, bloating, and distension are prominent. Straining and sensation of incomplete evacuation are common.",
+        "prevalence": "Approximately 33% of IBS patients",
+        "bsfs": "Type 1 (separate hard lumps like nuts) and Type 2 (sausage-shaped but lumpy) predominate",
+        "management": "Soluble fibre, osmotic laxatives, linaclotide, lubiprostone, prucalopride, low FODMAP diet",
+        "avoid": "Antidiarrhoeal agents (loperamide)"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "IBS with Predominant Diarrhoea (IBS-D)",
+        "description": "Characterised by loose, watery, frequent stools with urgency. BSFS type 6-7 (mushy or watery) in ≥25% AND type 1-2 in <25% of bowel movements. Often associated with severe urgency, post-prandial (after eating) bowel movements, and anxiety about being near a toilet. Faecal incontinence may occur in severe cases.",
+        "prevalence": "Approximately 33% of IBS patients",
+        "bsfs": "Type 6 (fluffy pieces with ragged edges — mushy stool) and Type 7 (watery, no solid pieces) predominate",
+        "management": "Low FODMAP diet, loperamide, antispasmodics, rifaximin, 5-HT3 antagonists (alosetron, ondansetron), low-dose TCAs, bile acid sequestrants (if BAM suspected)",
+        "note": "Bile acid malabsorption (BAM) mimics IBS-D and is commonly misdiagnosed as IBS — SeHCAT test or 7alphaC4 serum test can diagnose; responds to bile acid sequestrants (cholestyramine, colesevelam)"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "IBS with Mixed Bowel Habits (IBS-M)",
+        "description": "Also called IBS-Mixed type — patients experience BOTH hard/lumpy stools (BSFS 1-2) AND loose/watery stools (BSFS 6-7) in ≥25% of bowel movements. The alternating pattern is unpredictable and particularly difficult for patients — alternating between constipation and diarrhoea within days or weeks.",
+        "prevalence": "Approximately 20-25% of IBS patients",
+        "management": "Most challenging subtype to treat; tailor treatment to predominant current symptom; low FODMAP diet; antispasmodics; neuromodulators"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "IBS Unsubtyped (IBS-U)",
+        "description": "Meets Rome IV criteria for IBS but stool consistency abnormalities are insufficient to fit IBS-C, IBS-D, or IBS-M subtypes. Patients with variable symptoms that do not clearly predominate into any category.",
+        "prevalence": "Approximately 10% of IBS patients",
+        "management": "General IBS management; symptom-directed treatment; low FODMAP diet; antispasmodics"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Post-Infectious IBS (PI-IBS)",
+        "description": "IBS developing after a clearly documented episode of acute gastroenteritis (bacterial, viral, or parasitic). Approximately 10-15% of patients who suffer gastroenteritis develop PI-IBS. Onset is acute — symptoms begin within days to weeks after the infection and persist. The most common subtype is IBS-D after infection. Campylobacter jejuni, Salmonella, Shigella, norovirus, and Giardia are the most common precipitants. Mechanisms include mucosal immune activation, increased intestinal permeability, enteric nervous system damage, and altered microbiome.",
+        "risk_factors": "Severity of initial infection, female sex, younger age, psychological comorbidity (anxiety, depression at time of infection), antibiotic exposure during infection",
+        "prognosis": "PI-IBS often improves over 1-3 years without specific treatment; recovery rate ~50% at 6 years",
+        "management": "Same as general IBS; probiotics may be particularly beneficial (microbiome restoration); rifaximin has evidence"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "IBS Overlapping with Small Intestinal Bacterial Overgrowth (SIBO)",
+        "description": "Small Intestinal Bacterial Overgrowth — excessive bacteria in the small intestine (normally near-sterile) — produces bloating, gas, diarrhoea, and abdominal pain identical to IBS. Estimated 30-84% of IBS patients have SIBO on hydrogen breath testing (though diagnostic accuracy debated). Causes: reduced gastric acid (PPIs), motility disorders, structural abnormalities, prior surgery. SIBO-IBS responds to gut-selective antibiotics (rifaximin).",
+        "diagnosis": "Lactulose or glucose hydrogen breath test; small intestinal aspirate culture (gold standard but invasive)",
+        "management": "Rifaximin 550mg TDS × 14 days (first-line for non-constipated IBS with bloating — also targets SIBO); repeat courses for recurrence; prokinetics to prevent recurrence"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "IBS with Bile Acid Malabsorption (BAM-IBS)",
+        "description": "Bile acid malabsorption (BAM) — failure of terminal ileum to reabsorb bile acids — causes them to enter the colon where they stimulate water and electrolyte secretion, accelerate transit, and cause chronic watery diarrhoea. BAM is present in 25-33% of patients diagnosed with IBS-D and is frequently misdiagnosed as functional IBS-D. Should always be considered in IBS-D patients, especially post-cholecystectomy or with prior terminal ileum disease.",
+        "diagnosis": "SeHCAT (75-selenium homocholic acid taurine) scan — most accurate test; serum 7alphaC4 (fasting); faecal bile acid measurement",
+        "management": "Bile acid sequestrants: cholestyramine (4g 1-4 times daily), colesevelam (625mg 3-6 daily), colestipol; responds dramatically to treatment — diagnosis of BAM is therefore important"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "IBS with Psychological Comorbidities (Severe IBS)",
+        "description": "A significant subset of IBS patients — particularly those with severe or refractory symptoms — have significant psychological comorbidity: depression, anxiety, somatic symptom disorder, post-traumatic stress disorder (PTSD), or history of physical or sexual abuse. These patients often have enhanced central pain sensitisation, more severe visceral hypersensitivity, more frequent healthcare utilisation, and poorer response to peripheral GI treatments alone. Central neuromodulators and psychological therapies are most effective in this group.",
+        "prevalence": "Moderate to severe anxiety: ~60% of IBS patients in clinic; depression: ~40%; PTSD: 30-40% of referred IBS patients",
+        "management": "Psychological therapies (CBT, gut-directed hypnotherapy) most evidence-based; low-dose TCAs or SSRIs; multidisciplinary approach with gastroenterologist and psychologist"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild IBS",
+        "description": "Infrequent symptoms causing mild distress; minimal impact on quality of life",
+        "ibs_sss_score": "<175 (IBS Symptom Severity Score — validated questionnaire assessing pain severity, frequency, bloating, bowel habit satisfaction, life interference)",
+        "frequency": "Symptoms <25% of days; attacks infrequent",
+        "quality_of_life": "Minor impact; able to work and socialise normally; adapts food and lifestyle without significant restriction",
+        "psychological": "No or minimal anxiety/depression about symptoms",
+        "management": "Dietary advice (low FODMAP); lifestyle education; reassurance; antispasmodics (peppermint oil, mebeverine) PRN; first consultation may not need medication"
+      },
+      {
+        "level": 2,
+        "name": "Moderate IBS",
+        "description": "Regular symptoms causing significant distress and impacting daily activities",
+        "ibs_sss_score": "175-300",
+        "frequency": "Symptoms most days; predictable triggers but still significant interference",
+        "quality_of_life": "Significant — affects work attendance, social plans, travel; avoidance behaviours developing",
+        "psychological": "Moderate health anxiety; frustration; some social anxiety related to bowel symptoms",
+        "management": "Low FODMAP diet (with dietitian); antispasmodics regularly; IBS-D: loperamide, rifaximin; IBS-C: linaclotide, lactulose; consider low-dose TCA; GP or gastroenterology review; NICE recommends 12 months of GP management before specialist referral"
+      },
+      {
+        "level": 3,
+        "name": "Severe IBS",
+        "description": "Frequent, disabling symptoms with major impact on all aspects of life — work, relationships, social activities, mental health",
+        "ibs_sss_score": ">300",
+        "frequency": "Near-daily symptoms; severe pain episodes; significant bowel urgency or constipation",
+        "quality_of_life": "Severely impaired — significant loss of work days (presenteeism and absenteeism); avoidance of social activities, travel, eating out; relationship strain",
+        "psychological": "High levels of anxiety, depression, catastrophising; significant impact on mental health; possible PTSD/abuse history",
+        "management": "Specialist gastroenterology referral; comprehensive Rome IV-based assessment; exclude organic disease fully; psychological therapy (CBT, gut-directed hypnotherapy); neuromodulators (TCAs, SNRIs, SSRIs); multidisciplinary team approach; biofeedback; consider specialist IBS nurse"
+      }
+    ],
+
+    "causes": {
+      "primary_mechanisms": {
+        "visceral_hypersensitivity": {
+          "description": "The hallmark mechanism of IBS — IBS patients have a lowered threshold for pain in response to gut stimuli that would not normally be painful. Rectal balloon distension studies show IBS patients report pain at lower volumes than healthy controls. This heightened sensitivity involves both peripheral sensitisation (enteric nervous system) and central sensitisation (altered pain processing in brain and spinal cord).",
+          "peripheral_component": "Mast cell activation in gut mucosa releases histamine and tryptase → activates sensory nerves (TRPV1 channels, PAR2 receptors) → enhanced pain signalling to spinal cord",
+          "central_component": "Descending pain inhibitory pathways are deficient; enhanced pain facilitation; increased activation of anterior cingulate cortex and limbic system on gut stimulation (neuroimaging)"
+        },
+        "altered_gut_motility": {
+          "description": "Gut transit time is significantly altered in IBS subtypes: IBS-D: accelerated small intestinal and colonic transit; IBS-C: significantly delayed colonic transit; IBS-M: variable. High-amplitude propagated contractions (HAPCs) are increased in IBS-D.",
+          "serotonin_axis": "Serotonin (5-HT) from enterochromaffin cells regulates gut motility — excess in IBS-D causes rapid transit; deficiency in IBS-C causes slow transit. Abnormal 5-HT reuptake transporter (SERT) expression found in IBS"
+        },
+        "gut_microbiome_dysbiosis": {
+          "description": "IBS patients demonstrate distinct gut microbiome profiles compared to healthy controls — reduced diversity, altered Firmicutes:Bacteroidetes ratio, reduced Lactobacillus and Bifidobacterium species, increased Proteobacteria, Ruminococcaceae, and Lachnospiraceae. This dysbiosis may precede IBS onset (PI-IBS context) or develop secondary to dietary changes.",
+          "mechanisms": ["Dysbiosis increases intestinal permeability ('leaky gut')", "Produces excess fermentation gases (hydrogen, methane, hydrogen sulphide) causing bloating and altered motility", "Bacterial metabolites activate mucosal immune cells and sensory nerves", "Altered SCFA production reduces colonocyte nutrition and mucosal integrity"]
+        },
+        "intestinal_permeability": {
+          "description": "Increased intestinal permeability ('leaky gut') — disruption of tight junctions between intestinal epithelial cells — allows bacteria, bacterial products (LPS), and food antigens to cross the mucosal barrier → activates mucosal immune system → low-grade mucosal inflammation → sensory nerve activation → visceral hypersensitivity and altered motility. Identified in PI-IBS, stress-induced IBS, and in many IBS-D patients.",
+          "triggers": "Psychological stress; prior infection; alcohol; NSAIDs; dysbiosis; food intolerances"
+        },
+        "immune_activation": {
+          "description": "Low-grade mucosal immune activation is demonstrated in many IBS patients: increased mucosal mast cells (particularly adjacent to enteric nerves — promoting visceral hypersensitivity); increased CD4+ T cells; elevated mucosal cytokines (IL-1β, IL-6, TNF-α); increased IgE-mediated food sensitisation (especially in IBS-D). Distinct from the transmural inflammation of IBD (Crohn's/UC) — the immune activation in IBS is subtle and patchy.",
+          "note": "Faecal calprotectin is typically NORMAL or mildly elevated in IBS (vs significantly elevated in IBD) — important diagnostic distinction"
+        },
+        "gut_brain_dysregulation": {
+          "description": "Bidirectional gut-brain axis dysfunction: stress → HPA axis activation → corticotropin-releasing factor (CRF) → increased gut permeability, accelerated colonic transit, mast cell activation → gut symptoms. Conversely, gut symptoms send pain signals to the brain → anxiety, hypervigilance, catastrophising → amplified pain perception → increased gut symptoms (vicious cycle).",
+          "stress_effects": "Acute stress: accelerates gut transit (IBS-D like); chronic stress: alters microbiome, increases permeability, promotes inflammation. Cortisol directly activates colonic CRF receptors causing motility changes."
+        }
+      },
+      "trigger_factors": [
+        {
+          "category": "Dietary Triggers",
+          "triggers": [
+            "FODMAPs — Fermentable Oligosaccharides, Disaccharides, Monosaccharides And Polyols: poorly absorbed short-chain carbohydrates fermented by colonic bacteria producing gas, bloating, and osmotic diarrhoea. The most clinically validated dietary trigger in IBS.",
+            "Wheat and gluten (fructans in wheat, not gluten itself, are the primary FODMAP trigger in most IBS patients; true coeliac disease must be excluded)",
+            "Lactose (milk sugar) — malabsorption causes bloating, gas, and diarrhoea; more common in South Asian populations",
+            "Fructose malabsorption (excess fructose in apples, pears, mangoes, high-fructose corn syrup)",
+            "Fatty meals — stimulate gut motility via CCK release; worsen post-prandial symptoms",
+            "Caffeine — accelerates colonic transit; stimulates gut motility",
+            "Alcohol — disrupts gut barrier; accelerates transit",
+            "Spicy foods — capsaicin activates TRPV1 receptors on gut nociceptors",
+            "Large meal volumes — gastrocolic reflex magnified in IBS (exaggerated response to gastric distension)"
+          ]
+        },
+        {
+          "category": "Psychological and Lifestyle Triggers",
+          "triggers": [
+            "Psychological stress (work pressure, relationship problems, bereavement, examinations) — most consistently reported trigger",
+            "Anxiety and worry — activates HPA axis and sympathetic nervous system → gut motility changes",
+            "Sleep deprivation — worsens gut pain sensitivity and increases inflammatory markers",
+            "Travel — change in routine, food, and water disrupts gut microbiome and function",
+            "Menstruation — cyclical hormone changes worsen IBS symptoms; progesterone slows transit (IBS-C worsening); prostaglandins worsen IBS-D"
+          ]
+        },
+        {
+          "category": "Physiological and Medical Triggers",
+          "triggers": [
+            "Prior gastroenteritis — PI-IBS (10-15% develop IBS after GI infection)",
+            "Antibiotic use — disrupts gut microbiome; promotes dysbiosis and SIBO",
+            "Physical illness or surgery — post-surgical gut function changes",
+            "Hormonal fluctuations — menstrual cycle; pregnancy; menopause",
+            "Intercurrent illness — upper respiratory infections worsen IBS",
+            "Proton pump inhibitor use — reduces gastric acid allowing bacterial overgrowth"
+          ]
+        }
+      ],
+      "risk_factors": [
+        "Female sex (2-3x higher prevalence in women)",
+        "Young to middle age (18-50 years peak)",
+        "Family history of IBS (genetic component — 2-3x increased risk in first-degree relatives)",
+        "Psychological disorders: anxiety, depression, panic disorder, PTSD (bidirectional relationship)",
+        "History of physical, sexual, or emotional abuse (childhood or adult)",
+        "Prior GI infection (PI-IBS risk — Campylobacter, Salmonella, norovirus, Giardia)",
+        "Antibiotic exposure (microbiome disruption)",
+        "Food intolerances (lactose, fructose, FODMAPs)",
+        "Sedentary lifestyle",
+        "Poor sleep quality",
+        "Low dietary fibre intake",
+        "Stressful life events",
+        "Socioeconomic disadvantage",
+        "Atopy, fibromyalgia, chronic fatigue syndrome (conditions that frequently overlap with IBS)"
+      ],
+      "genetic_factors": [
+        "Heritability estimated at 40-50% from twin studies; concordance higher in monozygotic than dizygotic twins",
+        "SERT (serotonin transporter) gene variants (SLC6A4 promoter polymorphism) — affect serotonin reuptake and transit",
+        "SCN5A gene mutations (voltage-gated sodium channel) — found in a subset of IBS-C patients; affects gut smooth muscle",
+        "Immune gene variants: IL-10 promoter, TNF-alpha, TNFSF15 — affect mucosal immune regulation",
+        "GI sensory genes: TRPV1 variants affecting visceral pain threshold"
+      ]
+    },
+
+    "symptoms": {
+      "rome_iv_diagnostic_criteria": {
+        "main_criterion": "Recurrent abdominal pain, on average at least 1 day per week in the last 3 months, associated with two or more of the following criteria:",
+        "criteria_list": [
+          "Related to defecation — pain improves (or occasionally worsens) with bowel movement",
+          "Associated with a change in frequency of stool — more or less frequent stools when pain occurs",
+          "Associated with a change in form (appearance) of stool — harder, softer, or different consistency during pain episodes"
+        ],
+        "onset": "Symptom onset at least 6 months prior to diagnosis",
+        "diagnosis_type": "POSITIVE clinical diagnosis — NOT a diagnosis of exclusion (Rome IV 2016 guidance). IBS should be diagnosed on clinical grounds once alarm features are excluded, without extensive investigation in all patients."
+      },
+      "bristol_stool_form_scale": {
+        "description": "The Bristol Stool Form Scale (BSFS) is the universally used validated clinical tool for categorising stool consistency — important for IBS subtyping.",
+        "types": [
+          "Type 1: Separate hard lumps like nuts — very constipated",
+          "Type 2: Sausage-shaped but lumpy — constipated",
+          "Type 3: Sausage-shaped with cracks on surface — normal",
+          "Type 4: Sausage or snake, smooth and soft — ideal normal",
+          "Type 5: Soft blobs with clear-cut edges — tending towards diarrhoea",
+          "Type 6: Fluffy pieces with ragged edges, mushy — diarrhoea",
+          "Type 7: Watery, no solid pieces, entirely liquid — severe diarrhoea"
+        ]
+      },
+      "primary_symptoms": [
+        {
+          "id": "SYM-1001",
+          "name": "Recurrent Abdominal Pain and Cramping",
+          "description": "The defining symptom of IBS — a mandatory requirement for Rome IV diagnosis. Characteristically described as: cramping, colicky, or aching abdominal pain. Most commonly localised to the lower abdomen (hypogastrium and left or right iliac fossae) but may occur anywhere. Classically relieved (or less commonly worsened) by defecation. Onset often post-prandial (30-60 minutes after eating — from the gastrocolic reflex). Severity ranges from dull discomfort to severe, incapacitating cramps. Typically does NOT wake patients from sleep (nocturnal symptoms are an alarm feature).",
+          "severity": "Mild to Severe (varies between patients and episodes)",
+          "onset": "Post-prandial (30-60 min after meals) or associated with bowel urgency; not typically nocturnal",
+          "characteristically_better_with": "Passage of stool or flatus; heat (hot water bottle); antispasmodics",
+          "characteristically_worse_with": "Eating (especially high FODMAP foods or fatty meals); stress and anxiety; menstruation (in women)"
+        },
+        {
+          "id": "SYM-1002",
+          "name": "Bloating and Abdominal Distension",
+          "description": "The most distressing symptom for many IBS patients — often reported as MORE bothersome than pain. Bloating is the subjective sensation of increased abdominal pressure, tightness, or fullness. Distension refers to the objective, measurable increase in abdominal girth (up to 10-12cm increase during the day). Results from: excess gas production from FODMAP fermentation; visceral hypersensitivity to normal gas volumes; altered gas handling (IBS patients cannot propel gas caudally as efficiently); abnormal abdomino-phrenic accommodation reflex (diaphragm descends and anterior abdominal wall protrudes).",
+          "severity": "Mild to Severe",
+          "pattern": "Typically worsens throughout the day; minimal in the morning; maximal by evening; improves overnight",
+          "note": "Gas volume in IBS is NOT significantly higher than normal controls — it is the inability to handle normal gas and the heightened sensitivity to it that causes symptoms"
+        },
+        {
+          "id": "SYM-1003",
+          "name": "Altered Bowel Habits — Diarrhoea (IBS-D)",
+          "description": "Loose, watery, frequent bowel movements — often BSFS type 6-7. Characteristic features: urgency (sudden compelling need to defecate — may be socially incapacitating); post-prandial urgency (need to defecate immediately after eating); multiple loose stools in the morning ('morning rush'); faecal urgency and occasionally urgency incontinence; stools typically do NOT contain blood (blood = alarm feature). Nocturnal diarrhoea is unusual in IBS and warrants investigation for IBD.",
+          "severity": "Mild to Severe",
+          "pattern": "Classically worst in morning; post-prandially; triggered by stress"
+        },
+        {
+          "id": "SYM-1004",
+          "name": "Altered Bowel Habits — Constipation (IBS-C)",
+          "description": "Hard, infrequent stools — BSFS type 1-2. Features: straining; sensation of incomplete evacuation; passage of small, hard rabbit pellets; defecation ≤3 times per week; need to use manual manoeuvres (digitation — manual evacuation). In IBS-C, the pain is the key differentiating feature from functional constipation (which has no significant abdominal pain).",
+          "severity": "Mild to Severe",
+          "distinction": "IBS-C: BOTH constipation AND significant abdominal pain — this combination distinguishes it from simple functional constipation (which lacks pain)"
+        },
+        {
+          "id": "SYM-1005",
+          "name": "Mucus in Stool",
+          "description": "Passage of white or clear mucus (not blood) per rectum — very common in IBS, particularly IBS-D and IBS-M. Results from hypersecretion of intestinal mucus from goblet cells in response to mucosal irritation. A reassuring and characteristic IBS feature — mucus alone (without blood) is benign.",
+          "severity": "Mild",
+          "note": "WHITE or CLEAR mucus = benign (IBS); BLOODY mucus = alarm feature requiring urgent investigation (IBD, colorectal cancer, infective colitis)"
+        },
+        {
+          "id": "SYM-1006",
+          "name": "Sensation of Incomplete Evacuation (Tenesmus)",
+          "description": "Feeling that the bowel has not emptied completely after defecation — a very common and distressing IBS symptom. Causes repeated return to the toilet. Results from: visceral hypersensitivity creating a false sense of rectal fullness; pelvic floor dysfunction (dyssynergia); true incomplete rectal emptying from hard stools (IBS-C). Particularly prominent in IBS-D and IBS-M.",
+          "severity": "Mild to Moderate"
+        }
+      ],
+      "secondary_symptoms": [
+        "Excessive flatulence and wind — from FODMAP fermentation; socially embarrassing; exacerbates bloating",
+        "Faecal urgency — sudden need to defecate that may be difficult to defer (especially IBS-D); fear of incontinence profoundly affects quality of life",
+        "Nausea — particularly post-prandial; associated with IBS-D; may be related to gut dysmotility",
+        "Fatigue and lethargy — disproportionate to apparent bowel symptoms; one of the most impactful symptoms for quality of life; possibly related to disrupted sleep and central sensitisation",
+        "Headache — more frequent in IBS than general population; possible central sensitisation overlap",
+        "Back pain — particularly lower back; visceral-somatic pain referral from bowel to back",
+        "Urinary symptoms — urgency, frequency, incomplete bladder emptying — from visceral hypersensitivity affecting bladder and pelvic floor; present in 50% of IBS patients",
+        "Dyspareunia (painful intercourse) — from visceral hypersensitivity and pelvic floor dysfunction; predominantly in women",
+        "Heartburn and acid reflux — GERD frequently overlaps with IBS (up to 30%); both functional GI disorders",
+        "Dyspepsia (indigestion) — IBS-dyspepsia overlap very common",
+        "Poor sleep — difficulty initiating sleep from pain anxiety; nocturnal awakening (though nocturnal BOWEL symptoms are unusual and warrant investigation)",
+        "Anxiety and low mood — highly prevalent comorbidities; worsened by chronic symptom burden and social restriction",
+        "Fibromyalgia and chronic pain — common comorbidity; shared central sensitisation mechanisms"
+      ],
+      "extraintestinal_features": {
+        "description": "IBS is associated with numerous extraintestinal symptoms reflecting its systemic nature as a disorder of the pain-processing nervous system — not purely a bowel condition.",
+        "common": ["Fatigue (50-60%)", "Headache (40%)", "Urinary urgency and frequency (50%)", "Dyspareunia (40% of women)", "Chronic pelvic pain (30-40% of women)", "Fibromyalgia (30-40%)", "Chronic fatigue syndrome (CFS/ME — 30%)", "Temporomandibular joint (TMJ) disorder", "Interstitial cystitis/painful bladder syndrome", "Depression and anxiety (40-60%)"]
+      },
+      "alarm_features_red_flags": {
+        "description": "These features in a patient with GI symptoms should PROMPT INVESTIGATION rather than empirical IBS management. They suggest possible organic disease (IBD, colorectal cancer, coeliac disease, etc.).",
+        "flags": [
+          "Rectal bleeding or blood mixed with stool",
+          "Unintentional weight loss (>5% body weight)",
+          "Iron-deficiency anaemia (unexplained)",
+          "New onset after age 50 years without prior bowel symptoms",
+          "Family history of colorectal cancer, IBD, or coeliac disease (in first-degree relative)",
+          "Nocturnal symptoms — pain or diarrhoea consistently waking from sleep",
+          "Short history with rapidly progressive symptoms (weeks, not months)",
+          "Fever (suggesting infective, inflammatory, or malignant cause)",
+          "Elevated inflammatory markers (raised CRP, ESR, elevated calprotectin)",
+          "Palpable abdominal mass",
+          "Abnormal examination findings (organomegaly, lymphadenopathy)"
+        ]
+      },
+      "symptoms_in_children": {
+        "key_points": [
+          "IBS is common in children and adolescents — onset often during school age or puberty",
+          "Recurrent abdominal pain affecting school attendance is a very common presentation (school refusal from IBS must be distinguished from anxiety-based school avoidance)",
+          "Rome IV Paediatric Criteria for IBS: abdominal pain at least 4 days/month for at least 2 months, with criteria similar to adult Rome IV",
+          "Children may report headache, nausea, and fatigue more prominently than bowel symptoms",
+          "Parental anxiety about symptoms may amplify children's symptoms — family therapy approach often needed",
+          "Psychosocial stressors (school bullying, exams, family disruption) are important triggers in children",
+          "Management: education, reassurance, dietary modification, psychological support — minimise medicalisation in children"
+        ]
+      }
+    },
+
+    "diagnosis": {
+      "diagnostic_approach": {
+        "philosophy": "IBS should be diagnosed POSITIVELY on clinical grounds using Rome IV criteria after confirming absence of alarm features — NOT as a diagnosis of exclusion. Excessive investigation in every IBS patient is expensive, generates anxiety, and creates false positives without improving outcomes. NICE (UK 2017) recommends limited targeted investigations rather than extensive exclusion.",
+        "required_blood_tests": ["Full blood count (FBC)", "Coeliac serology (TTG IgA + total IgA)", "C-reactive protein (CRP) or ESR", "Thyroid function (TSH)"],
+        "conditionally_required": ["Stool calprotectin — if any suspicion of IBD; especially if diarrhoea and raised CRP", "Colonoscopy — if alarm features present; age >50; new onset; abnormal tests"],
+        "not_routinely_required": "Abdominal imaging (CT/MRI), endoscopy, hydrogen breath tests, allergy panels, comprehensive stool panels — in uncomplicated IBS without alarm features"
+      },
+      "medical_history": [
+        "Detailed symptom characterisation: onset, duration, frequency, location, quality of pain; relationship to defecation; stool frequency and consistency (BSFS type); urgency; straining; mucus",
+        "Subtyping: predominant bowel habit (constipation, diarrhoea, mixed, unsubtyped) — using stool diary over 2 weeks",
+        "Symptom timeline: onset after gastroenteritis (PI-IBS), after antibiotics, gradual onset; lifelong pattern vs recent change",
+        "Alarm feature screening: blood PR, weight loss, nocturnal symptoms, family history colorectal cancer/IBD/coeliac",
+        "Trigger identification: dietary triggers (FODMAPs, lactose, gluten, fat, caffeine); stress; menstruation; travel; specific foods",
+        "Dietary history: FODMAP intake; fibre intake; hydration; meal regularity; eating behaviours",
+        "Psychological assessment: anxiety, depression, stress levels; major life events; childhood trauma or abuse history",
+        "Medication history: NSAIDs (worsen gut permeability), antibiotics (dysbiosis), PPIs, opioids (constipation), SSRIs, metformin (diarrhoea)",
+        "Family history: IBS (genetic component), inflammatory bowel disease, coeliac disease, colorectal cancer",
+        "Impact assessment: work, social life, sleep, relationships — helps gauge severity and directs treatment intensity",
+        "Prior investigations and previous diagnoses"
+      ],
+      "physical_examination": [
+        "General appearance: assess for weight loss, anaemia (pallor), nutritional status",
+        "Vital signs: temperature (fever excludes IBS — suggests organic disease), weight",
+        "Abdominal examination: inspection (distension, visible peristalsis), auscultation (bowel sounds — typically normal in IBS), percussion (tympany from gas), palpation (tenderness — usually mild diffuse tenderness on deep palpation; no guarding, rigidity, or peritonism which would suggest organic disease; palpable colon — especially left iliac fossa sigmoid colon may be tender)",
+        "Specific areas: RUQ (liver, gallbladder — excluded as cause); epigastrium (excluded peptic disease); suprapubic (bladder, uterus); umbilical; left iliac fossa (typically tender in IBS-D — sigmoid)",
+        "Palpation for masses: lymph nodes, abdominal mass (would prompt urgent investigation for cancer)",
+        "Anorectal examination (if constipation prominent): assess for anorectal structural abnormalities, rectal tone, prolapse, fissure",
+        "Pelvic examination in women (if pelvic pain prominent): assess for endometriosis, ovarian pathology, pelvic floor dysfunction",
+        "General: thyroid (exclude thyroid disease causing bowel symptoms), skin (Dermatitis herpetiformis — coeliac)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Full Blood Count (FBC) with Differential",
+          "type": "Blood — Haematological",
+          "description": "Mandatory first-line investigation for ALL patients with GI symptoms. Iron-deficiency anaemia (low Hb, low MCV, low ferritin) is an alarm feature requiring urgent colonoscopy to exclude colorectal cancer or IBD. Eosinophilia may suggest eosinophilic gastroenteritis or parasitic infection. Leucocytosis suggests infection or inflammation.",
+          "purpose": "Screen for iron-deficiency anaemia (alarm feature); detect infection or inflammation; baseline assessment",
+          "key_metric": "Hb <120 g/L (women) or <130 g/L (men) + low MCV + low ferritin = iron deficiency anaemia = alarm feature; MCV >100 = macrocytic (B12/folate deficiency — associated with coeliac); eosinophilia: >0.4 × 10⁹/L"
+        },
+        {
+          "test_name": "Coeliac Serology (Tissue Transglutaminase IgA — TTG IgA + Total IgA)",
+          "type": "Blood — Serology",
+          "description": "MANDATORY in all patients with IBS-D or IBS-M symptoms. Coeliac disease (gluten-sensitive enteropathy) frequently presents with diarrhoea, bloating, and abdominal pain — clinically identical to IBS-D. Prevalence of coeliac in patients with IBS-like symptoms: 4x higher than general population. Total IgA must also be measured because IgA deficiency (1 in 300) gives a false-negative TTG IgA — if IgA deficient, use TTG IgG or deamidated gliadin antibodies (DGP).",
+          "purpose": "Exclude coeliac disease — MANDATORY in IBS-D and IBS-M; also check in IBS-C with unexplained symptoms",
+          "key_metric": "TTG IgA >10 U/mL (or >3x ULN): positive — requires confirmatory duodenal biopsy; Total IgA <0.07 g/L: IgA deficient — use TTG IgG instead"
+        },
+        {
+          "test_name": "C-Reactive Protein (CRP) and Erythrocyte Sedimentation Rate (ESR)",
+          "type": "Blood — Inflammatory",
+          "description": "Elevated CRP and ESR suggest organic inflammatory disease (IBD, infection, malignancy) rather than IBS. CRP is normal (<5 mg/L) in uncomplicated IBS in the vast majority of patients. Elevated CRP in a patient with diarrhoea and abdominal pain → prioritise investigation for IBD.",
+          "purpose": "Exclude inflammatory organic disease (IBD, malignancy, infection); support IBS diagnosis when normal",
+          "key_metric": "CRP >5 mg/L with IBS symptoms: consider IBD or other organic disease — calprotectin and colonoscopy"
+        },
+        {
+          "test_name": "Thyroid Function Tests (TSH, Free T4)",
+          "type": "Blood — Endocrine",
+          "description": "Hyperthyroidism causes diarrhoea, weight loss, and abdominal discomfort — mimicking IBS-D. Hypothyroidism causes constipation, bloating, and fatigue — mimicking IBS-C. TSH screening should be performed at initial IBS assessment.",
+          "purpose": "Exclude thyroid disease as cause of GI symptoms; mandatory in initial workup",
+          "key_metric": "TSH <0.4 mIU/L: hyperthyroidism (IBS-D mimic); TSH >4 mIU/L: hypothyroidism (IBS-C mimic)"
+        },
+        {
+          "test_name": "Faecal Calprotectin",
+          "type": "Stool — Inflammatory marker",
+          "description": "Calprotectin is a protein released by neutrophils — elevated in intestinal inflammation (IBD, colorectal cancer, infection). A crucial test to DISTINGUISH IBS from inflammatory bowel disease (Crohn's/UC). In uncomplicated IBS: calprotectin is typically normal (<50 µg/g). Elevated calprotectin (>200 µg/g) in a patient with IBS-like symptoms strongly suggests IBD and warrants colonoscopy.",
+          "purpose": "Distinguish IBS from IBD (Crohn's disease, ulcerative colitis); screen for intestinal inflammation; support positive IBS diagnosis when normal",
+          "key_metric": "<50 µg/g: low risk of IBD (IBS diagnosis supported); 50-200 µg/g: borderline (repeat or further investigation); >200 µg/g: high risk of IBD — urgent colonoscopy",
+          "sensitivity_specificity": "Sensitivity for IBD ~93%; Specificity ~96% (cut-off 50 µg/g) — excellent test for IBD exclusion"
+        },
+        {
+          "test_name": "Stool Culture and Ova, Cysts and Parasites (OCP)",
+          "type": "Stool — Microbiological",
+          "description": "Stool culture for bacterial pathogens (Salmonella, Campylobacter, Shigella, Yersinia, E. coli O157:H7) and OCP examination for parasites (Giardia, Cryptosporidium, Entamoeba). Indicated when: acute onset diarrhoea, recent travel to endemic areas, history of gastroenteritis preceding IBS, or atypical IBS-D features.",
+          "purpose": "Exclude infective cause of diarrhoea; diagnose PI-IBS precipitant; detect Giardia (common chronic IBS-D mimic); mandatory in returned travellers",
+          "key_metric": "Positive Giardia antigen or trophozoites: treat with metronidazole (may resolve IBS-D symptoms completely if Giardia-driven)"
+        },
+        {
+          "test_name": "Hydrogen and Methane Breath Tests",
+          "type": "Physiological",
+          "description": "Tests for: (1) Small Intestinal Bacterial Overgrowth (SIBO): lactulose or glucose hydrogen breath test — excess hydrogen (>20 ppm rise above baseline within 90 min) suggests SIBO; methane >10 ppm on any reading suggests methane-dominant SIBO (associated with constipation). (2) Lactose intolerance: 50g lactose hydrogen breath test. (3) Fructose malabsorption: 25g fructose hydrogen breath test.",
+          "purpose": "Diagnose SIBO (significant subset of IBS-D and IBS-C); confirm lactose intolerance; confirm fructose malabsorption",
+          "clinical_relevance": "SIBO diagnosis allows targeted rifaximin treatment; lactose and fructose malabsorption confirms need for dietary restriction",
+          "limitation": "High false-positive rates with lactulose test; glucose test more specific for SIBO but misses distal SIBO; interpretation requires expertise"
+        },
+        {
+          "test_name": "Colonoscopy with Biopsies",
+          "type": "Endoscopic",
+          "description": "Not indicated in all IBS patients — reserved for those with alarm features or specific indications. Allows direct visualisation of colorectal mucosa, detection of IBD (Crohn's or UC — may have normal macroscopic appearance but microscopic colitis on biopsy), colorectal polyps and cancer, diverticular disease, and ischaemic colitis.",
+          "indications": ["Age ≥50 with new IBS-like symptoms", "Alarm features (rectal bleeding, weight loss, anaemia)", "Elevated calprotectin or CRP", "Family history of colorectal cancer", "Failure to respond to IBS treatment", "Microscopic colitis suspected (chronic watery diarrhoea in older women — NOT IBD macroscopically but biopsies show collagenous or lymphocytic colitis)"],
+          "microscopic_colitis": "Colonoscopy APPEARS NORMAL in microscopic colitis — diagnosis requires biopsies; presents identically to IBS-D in older patients; treat with budesonide"
+        },
+        {
+          "test_name": "SeHCAT Test (75-Selenium Homocholic Acid Taurine) — Bile Acid Malabsorption",
+          "type": "Nuclear medicine",
+          "description": "Most accurate test for bile acid malabsorption (BAM) — measures retention of a radiolabelled bile acid over 7 days. <15% retention: severe BAM; 15-25%: moderate; >25%: normal. BAM is a critical diagnosis to make in IBS-D patients — it responds dramatically to bile acid sequestrants and does NOT respond to typical IBS treatments. Treat if 7-day retention <15% (severe BAM).",
+          "purpose": "Diagnose bile acid malabsorption in IBS-D patients; guide use of bile acid sequestrants",
+          "key_metric": "7-day retention <10%: severe BAM (90% treatment response to cholestyramine); 10-15%: moderate; >25%: normal",
+          "alternative": "Fasting serum 7alphaC4 (7α-hydroxy-4-cholesten-3-one) — elevated in BAM; easier but less specific than SeHCAT"
+        },
+        {
+          "test_name": "IBS Symptom Severity Score (IBS-SSS) Questionnaire",
+          "type": "Validated clinical questionnaire",
+          "description": "A validated 5-item patient-reported questionnaire scoring: abdominal pain severity (0-100), abdominal pain frequency (0-100), bloating (0-100), bowel habit dissatisfaction (0-100), and life interference (0-100). Total score: 0-500. Used to quantify symptom severity, classify disease severity, and monitor treatment response.",
+          "purpose": "Quantify IBS severity; monitor treatment response; guide treatment escalation decisions",
+          "key_metric": "Score <75: in remission; 75-175: mild; 175-300: moderate; >300: severe. A decrease of ≥50 points = clinically meaningful improvement",
+          "clinical_use": "Baseline and at 4-8 weeks after treatment changes; allows objective monitoring without invasive tests"
+        },
+        {
+          "test_name": "Stool Diary (2-Week Prospective Diary)",
+          "type": "Clinical monitoring tool",
+          "description": "Patient records daily: stool frequency, BSFS type (1-7), presence of urgency, completeness of evacuation, bloating severity (0-10), pain severity (0-10), foods eaten, stress level, and medications. Essential for IBS subtyping (IBS-C vs IBS-D vs IBS-M), identifying dietary triggers, and guiding low FODMAP diet decisions.",
+          "purpose": "Accurate IBS subtyping; identify dietary and lifestyle triggers; monitor response to interventions; essential before starting low FODMAP elimination phase"
+        },
+        {
+          "test_name": "Anorectal Physiology Tests (Manometry, Defecography)",
+          "type": "Physiological",
+          "description": "For patients with severe refractory IBS-C and prominent straining/incomplete evacuation — anorectal manometry (measures sphincter pressures and rectoanal coordination) and defecating proctogram (dynamic imaging of defecation) identify pelvic floor dyssynergia (paradoxical anal sphincter contraction during straining — prevents effective evacuation). Pelvic floor physiotherapy is highly effective for dyssynergia.",
+          "purpose": "Diagnose pelvic floor dyssynergia in refractory IBS-C; guide biofeedback therapy for pelvic floor rehabilitation",
+          "clinical_importance": "Pelvic floor dyssynergia affects 25-30% of patients with severe IBS-C — biofeedback is >75% effective for this condition"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "IBS pharmacotherapy is directed by subtype (IBS-C vs IBS-D vs IBS-M) and symptom predominance. No single drug treats all IBS symptoms. Lifestyle modification and dietary intervention (low FODMAP) remain the foundation — medications are adjuncts. All medications require prescription from a licensed physician or gastroenterologist. Treatment should be individualised.",
+      "treatment_principles": [
+        "Positive diagnosis and patient education is itself therapeutic — reducing diagnostic uncertainty significantly improves symptoms",
+        "Treat predominant symptom (pain, constipation, diarrhoea, bloating) and IBS subtype",
+        "Start with lifestyle measures and dietary interventions before pharmacotherapy",
+        "Step-up treatment based on symptom severity (mild → dietary/lifestyle; moderate → first-line drugs; severe → neuromodulators + psychology)",
+        "Reassess response at 4-8 weeks; switch drugs if insufficient response after 12 weeks",
+        "Long-term drug use review — IBS is chronic; avoid unnecessary long-term medication; use lowest effective dose"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-131",
+          "category_name": "Antispasmodics (First-Line for Abdominal Pain and Cramping)",
+          "purpose": "Reduce intestinal smooth muscle spasm — the cause of cramping pain in IBS. Effective for acute pain relief and reducing post-prandial cramping. Recommended as first-line symptomatic treatment for abdominal pain by NICE (UK) and ACG (USA) guidelines.",
+          "medicines": [
+            {
+              "name": "Mebeverine",
+              "brand_examples": ["Colofac", "Duspatalin", "Mebeverine"],
+              "form": "Tablet (135mg), Modified-release capsule (200mg)",
+              "dosage": "135mg three times daily 20 minutes before meals (standard tablets); 200mg twice daily (modified-release capsules)",
+              "use_case": "First-line antispasmodic for IBS abdominal pain and cramping — ALL subtypes; PRN or regular dosing; widely used and well-tolerated; NICE first-line recommendation",
+              "mechanism": "Direct smooth muscle relaxant (not anticholinergic); acts on musculotropic sites in intestinal smooth muscle; does not cause systemic anticholinergic side effects",
+              "side_effects": ["Minimal — one of the safest antispasmodics", "Occasional allergic skin reactions (very rare)"],
+              "advantage": "No anticholinergic side effects (unlike hyoscine); safe in elderly, BPH, glaucoma, pregnancy (limited data)"
+            },
+            {
+              "name": "Hyoscine Butylbromide (Buscopan)",
+              "brand_examples": ["Buscopan", "Hyoscine Butylbromide"],
+              "form": "Tablet (10mg), IV/IM injection",
+              "dosage": "10-20mg three to four times daily PRN or regularly; maximum 80mg/day oral",
+              "use_case": "Acute IBS abdominal cramping pain (PRN use); also used for other causes of spasmodic abdominal pain (renal colic, biliary colic); rapid onset of effect",
+              "mechanism": "Anticholinergic (antimuscarinic) — blocks M3 muscarinic receptors in intestinal smooth muscle causing relaxation; poor systemic absorption after oral dosing (quaternary ammonium compound)",
+              "side_effects": ["Minimal with oral formulation due to poor absorption", "IV use: dry mouth, urinary retention, blurred vision (anticholinergic)", "Tachycardia with IV route"],
+              "note": "IV/IM buscopan provides faster relief for severe acute abdominal cramping"
+            },
+            {
+              "name": "Dicyclomine (Dicycloverine)",
+              "brand_examples": ["Dicyclomine", "Bentyl", "Mefenamic (different drug — avoid confusion)"],
+              "form": "Tablet, Oral solution",
+              "dosage": "10-20mg three times daily",
+              "use_case": "Antispasmodic for IBS pain; widely available in India; both direct smooth muscle relaxant and anticholinergic properties",
+              "side_effects": ["Dry mouth", "Constipation", "Blurred vision (anticholinergic)"],
+              "contraindications": ["Glaucoma", "BPH with urinary retention", "Myasthenia gravis"]
+            },
+            {
+              "name": "Peppermint Oil (Enteric-Coated Capsules)",
+              "brand_examples": ["Mintec", "IBgard", "Colpermin", "Elixir Health"],
+              "form": "Enteric-coated capsule",
+              "dosage": "0.2-0.4mL peppermint oil (1-2 capsules) three times daily 30-60 minutes BEFORE meals; enteric-coated releases in small intestine/colon (not stomach)",
+              "use_case": "IBS abdominal pain and cramping; bloating and gas; recommended by ACG, NICE, and BSG as first-line antispasmodic; significant meta-analysis evidence",
+              "mechanism": "L-menthol in peppermint oil — blocks calcium channels in intestinal smooth muscle → relaxes smooth muscle (calcium channel antagonist in gut); reduces visceral hypersensitivity (TRPM8 receptor agonist — counter-irritant on pain nerves); reduces TRPV1 pain receptor activation",
+              "side_effects": ["Heartburn and acid reflux (from LES relaxation — must use ENTERIC-COATED to prevent this)", "Perianal burning (menthol in stool)", "Allergic reactions (rare)"],
+              "evidence": "Meta-analysis (Ford 2014): peppermint oil significantly superior to placebo for global IBS symptoms and abdominal pain (NNT = 5); ACG Guidelines 2021: conditional recommendation",
+              "critical_note": "MUST use enteric-coated capsules — plain peppermint oil or peppermint tea WORSENS heartburn and is NOT equivalent"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-132",
+          "category_name": "Antidiarrhoeal Agents (IBS-D)",
+          "purpose": "Reduce stool frequency, improve stool consistency, and reduce urgency in IBS-D. Symptomatic relief only — do not treat the underlying disorder.",
+          "medicines": [
+            {
+              "name": "Loperamide",
+              "brand_examples": ["Imodium", "Eldoper", "Lopamide", "Loperamide"],
+              "form": "Capsule (2mg), Tablet, Oral solution",
+              "dosage": "2-4mg before anticipated diarrhoea episodes or after each loose stool; maximum 16mg/day; can take prophylactically before meals, social events, or travel",
+              "use_case": "IBS-D — most commonly used antidiarrhoeal for IBS; reduces stool frequency, improves stool consistency, reduces urgency; prophylactic use before social events, meals, or travel for symptom control",
+              "mechanism": "Mu-opioid receptor agonist in the gut (does not cross blood-brain barrier — no CNS effects at therapeutic doses); reduces intestinal motility and secretion; increases anal sphincter tone (reduces urgency incontinence risk)",
+              "side_effects": ["Constipation (dose-dependent)", "Abdominal distension and bloating", "Dry mouth", "Nausea"],
+              "contraindications": ["Active infective diarrhoea (may be harmful)", "Inflammatory bowel disease (may cause toxic megacolon)", "Children under 2 years"],
+              "clinical_tip": "Start with 2mg before a known trigger (meal, social event) — can increase to 4mg; use PRN or regular depending on symptom pattern; not for use in acute infectious diarrhoea"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-133",
+          "category_name": "Gut-Selective Non-Absorbable Antibiotics (IBS-D and SIBO)",
+          "purpose": "Target colonic and small intestinal bacterial overgrowth without systemic antibiotic effects. Rifaximin is the only antibiotic with robust Phase 3 RCT evidence for IBS without constipation.",
+          "medicines": [
+            {
+              "name": "Rifaximin",
+              "brand_examples": ["Xifaxan", "Rifagut", "Rcifax"],
+              "form": "Tablet (200mg, 550mg)",
+              "dosage": "IBS-D (non-constipated IBS): 550mg three times daily for 14 days; SIBO: 400-550mg three times daily for 14 days; may be repeated every 3-6 months for relapse",
+              "use_case": "Non-constipated IBS (IBS-D, IBS-M) with bloating — FDA approved for IBS-D; SIBO treatment; significant bloating and flatulence",
+              "mechanism": "Non-absorbable rifamycin antibiotic — acts entirely within the GI lumen; broad spectrum against gram-positive and gram-negative gut bacteria; reduces bacterial overgrowth and fermentation without systemic antibiotic effects; reduces luminal LPS; modifies gut microbiome favourably",
+              "evidence": "TARGET 1 and TARGET 2 Phase 3 trials: rifaximin 550mg TDS × 14 days achieved adequate relief of global IBS symptoms in 40% vs 31% placebo; sustained response up to 10 weeks after completing treatment course",
+              "side_effects": ["Very well tolerated (not absorbed systemically)", "Nausea (mild)", "C. difficile infection risk very low (unlike systemic antibiotics)", "No systemic antibiotic side effects"],
+              "advantage": "Non-absorbable → no systemic antibiotic side effects; no resistance to systemic antibiotics; can be repeated safely; unique in being the only antibiotic with proven IBS efficacy"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-134",
+          "category_name": "Secretagogues and Prokinetics (IBS-C)",
+          "purpose": "Increase intestinal fluid secretion and/or accelerate colonic transit, improving stool frequency and consistency in IBS-C. More effective than laxatives as they also reduce abdominal pain (distinguishing from simple constipation treatment).",
+          "medicines": [
+            {
+              "name": "Linaclotide",
+              "brand_examples": ["Linzess", "Constella"],
+              "form": "Capsule (72mcg, 145mcg, 290mcg)",
+              "dosage": "IBS-C: 290mcg once daily at least 30-60 min before breakfast; Chronic idiopathic constipation (CIC): 145mcg once daily",
+              "use_case": "FIRST-LINE treatment for moderate-severe IBS-C — FDA and EMA approved for IBS-C; reduces both constipation AND abdominal pain (unique — laxatives don't reduce pain); approved for adults ≥18",
+              "mechanism": "Guanylate cyclase-C (GC-C) receptor agonist in intestinal epithelial cells → increases intracellular cGMP → activates CFTR chloride channel → chloride and water secretion into intestinal lumen (improves stool consistency); also reduces visceral pain signals via CGMP activation of visceral nociceptors (pain-reducing mechanism independent of stool improvement)",
+              "side_effects": ["Diarrhoea (most common and dose-limiting — up to 20%; manage by dose reduction; take 30-60 min before breakfast to limit post-breakfast diarrhoea)", "Abdominal pain", "Gas"],
+              "contraindications": ["Children under 6 years (risk of dehydration; FDA black box warning)", "Known or suspected intestinal obstruction"],
+              "clinical_tip": "Take at least 30-60 minutes BEFORE breakfast (taking on empty stomach reduces transit time allowing drug to act distally before meal-stimulated motility); if diarrhoea problematic, try 145mcg dose"
+            },
+            {
+              "name": "Plecanatide",
+              "brand_examples": ["Trulance"],
+              "form": "Tablet (3mg)",
+              "dosage": "3mg once daily with or without food",
+              "use_case": "IBS-C and chronic idiopathic constipation (CIC) — FDA approved 2017; similar mechanism to linaclotide; may be better tolerated (less diarrhoea than linaclotide)",
+              "mechanism": "GC-C receptor agonist (similar to linaclotide but more selective for acidic GC-C receptor isoform — may account for improved tolerability); increases intestinal fluid secretion; reduces visceral pain",
+              "side_effects": ["Diarrhoea (less frequent than linaclotide)", "Nausea"]
+            },
+            {
+              "name": "Lubiprostone",
+              "brand_examples": ["Amitiza"],
+              "form": "Soft gel capsule (8mcg, 24mcg)",
+              "dosage": "IBS-C (women): 8mcg twice daily with food; Chronic idiopathic constipation: 24mcg twice daily",
+              "use_case": "IBS-C in women aged 18 and over — FDA approved; also for CIC and opioid-induced constipation; approved specifically in women (clinical trials predominantly in women)",
+              "mechanism": "Chloride channel (ClC-2) activator on intestinal epithelial apical surface → chloride and water secretion into intestinal lumen → softens stool and accelerates transit; also stimulates mucus secretion",
+              "side_effects": ["Nausea (most common — take with food)", "Diarrhoea", "Headache", "Abdominal discomfort"],
+              "contraindications": ["Diarrhoea predominant IBS", "Known or suspected bowel obstruction"]
+            },
+            {
+              "name": "Prucalopride",
+              "brand_examples": ["Resolor", "Motegrity"],
+              "form": "Tablet (1mg, 2mg)",
+              "dosage": "2mg once daily (1mg in elderly ≥65 years); evaluate at 4 weeks",
+              "use_case": "Chronic constipation and IBS-C not responding to laxatives; highly selective 5-HT4 agonist; most evidence in chronic constipation but used for IBS-C; accelerates colonic transit",
+              "mechanism": "Highly selective 5-HT4 receptor agonist in enteric nervous system → promotes high-amplitude propagating contractions (HAPCs) in colon → accelerated colonic transit",
+              "side_effects": ["Headache (most common first few days)", "Nausea", "Diarrhoea", "Abdominal pain"],
+              "advantage": "High selectivity for 5-HT4 (vs tegaserod which had cardiac concerns) — excellent cardiac safety profile in large clinical trials"
+            },
+            {
+              "name": "Tenapanor",
+              "brand_examples": ["Ibsrela"],
+              "form": "Tablet (50mg)",
+              "dosage": "50mg twice daily immediately before breakfast and dinner",
+              "use_case": "IBS-C — FDA approved 2019; novel mechanism; reduces abdominal pain AND improves constipation",
+              "mechanism": "NHE3 (sodium-hydrogen exchanger 3) inhibitor in intestinal epithelium → reduces sodium absorption in gut → increases intraluminal water → softer stools and faster transit; also reduces paracellular phosphate absorption (approved for hyperphosphataemia in CKD); reduces visceral hypersensitivity via reduced intracellular pH changes",
+              "side_effects": ["Diarrhoea (most common)", "Abdominal distension"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-135",
+          "category_name": "Osmotic Laxatives (IBS-C — Adjunct)",
+          "purpose": "Draw water into the intestinal lumen via osmosis, softening stools and increasing bowel frequency. Generally recommended as second-line after secretagogues in IBS-C (laxatives reduce constipation but typically do NOT reduce abdominal pain — a key IBS-C feature).",
+          "note": "Laxatives treat constipation symptoms but do NOT address visceral pain — if pain is the dominant symptom in IBS-C, secretagogues (linaclotide) or antispasmodics are preferred.",
+          "medicines": [
+            {
+              "name": "Polyethylene Glycol / Macrogol",
+              "brand_examples": ["Movicol", "Laxido", "Forlax", "Pegafreedom"],
+              "form": "Oral powder sachet dissolved in water",
+              "dosage": "1-3 sachets daily dissolved in water; titrate to achieve 1-2 soft stools daily",
+              "use_case": "IBS-C — relieves constipation; well-tolerated; can be used long-term; may be used alongside antispasmodics for combined pain and constipation treatment",
+              "mechanism": "Osmotic agent — non-absorbable PEG polymer attracts and holds water in intestinal lumen by osmosis → increases stool water content and weight → promotes defecation",
+              "side_effects": ["Bloating and flatulence (especially initial use)", "Nausea", "Diarrhoea (excessive dose)", "Abdominal cramps"],
+              "advantage": "Effective, safe, available OTC; long-term use acceptable; preferred over lactulose (less fermentation/gas)"
+            },
+            {
+              "name": "Lactulose",
+              "brand_examples": ["Duphalac", "Lactulose", "Laevolac"],
+              "form": "Oral solution (10g/15mL)",
+              "dosage": "15-45mL once or twice daily; adjust to effect; 1-3 days for full effect",
+              "use_case": "IBS-C — mild to moderate constipation; widely available and inexpensive in India; also used for hepatic encephalopathy at higher doses",
+              "mechanism": "Non-absorbable disaccharide — osmotic laxative + colonic bacterial fermentation (to lactate and acetate → acidifies colon → promotes colonic motility)",
+              "side_effects": ["Bloating and flatulence — SIGNIFICANT (from fermentation); may worsen bloating in IBS", "Nausea", "Diarrhoea (excessive dose)"],
+              "note": "Fermentation causes significant gas — may worsen bloating in IBS patients; macrogol (Movicol) preferred for IBS-C due to less bloating"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-136",
+          "category_name": "5-HT3 Antagonists (IBS-D — Severe)",
+          "purpose": "Block serotonin 5-HT3 receptors in the gut — the primary receptor mediating rapid gut transit, urgency, and pain signalling in IBS-D. Highly effective for severe IBS-D especially when urgency incontinence is present.",
+          "medicines": [
+            {
+              "name": "Alosetron",
+              "brand_examples": ["Lotronex"],
+              "form": "Tablet (0.5mg, 1mg)",
+              "dosage": "0.5mg twice daily × 4 weeks; increase to 1mg twice daily if tolerated and insufficient response; discontinue if constipation or ischaemic colitis develops",
+              "use_case": "Severe IBS-D in WOMEN — FDA approved (under Risk Evaluation and Mitigation Strategy — REMS programme in USA) for women with severe IBS-D not responding to conventional therapy",
+              "mechanism": "Selective 5-HT3 receptor antagonist — reduces colonic transit, reduces visceral hypersensitivity, reduces urgency, reduces stool frequency; most effective 5-HT3 antagonist available",
+              "side_effects": ["Constipation (most common — dose-limiting; discontinue if severe constipation or impaction)", "ISCHAEMIC COLITIS (rare but potentially serious — 0.15 per 1000 patient-years; abdominal pain + bloody diarrhoea = stop immediately; rectal ischaemia)"],
+              "availability": "USA only (REMS programme); not available in UK, India, or most other countries; prescribers must be registered",
+              "black_box_warning": "Ischaemic colitis and serious complications of constipation; prescribe only to women with severe IBS-D not responding to conventional therapy"
+            },
+            {
+              "name": "Ondansetron (Off-Label IBS-D)",
+              "brand_examples": ["Zofran", "Emeset", "Ondanset"],
+              "form": "Tablet (4mg, 8mg)",
+              "dosage": "4-8mg once daily or twice daily (off-label for IBS-D); start with 4mg and titrate",
+              "use_case": "Off-label use for IBS-D — rapidly growing evidence base; UK TARDIS trial showed significant improvement in stool consistency, urgency, and frequency without serious side effects; widely used 'off-label' in UK gastroenterology for IBS-D; safe, inexpensive, widely available",
+              "mechanism": "5-HT3 receptor antagonist — reduces colonic transit and urgency; same mechanism as alosetron but less potent and with much better safety profile",
+              "evidence": "TARDIS trial (Garsed et al. 2014): ondansetron 4-16mg/day significantly improved stool consistency (BSFS), urgency, and pain in IBS-D vs placebo; good safety profile",
+              "side_effects": ["Constipation (dose-dependent)", "Headache", "QT prolongation (at high doses — ECG monitoring in cardiac patients)"],
+              "note": "Not formally approved for IBS in any country but widely recommended off-label; safe alternative to alosetron without REMS requirements"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-137",
+          "category_name": "Bile Acid Sequestrants (IBS-D with Bile Acid Malabsorption)",
+          "purpose": "Bind bile acids in the intestine preventing them from reaching the colon where they cause secretory diarrhoea. Highly effective (80-90% response) when bile acid malabsorption (BAM) is the underlying cause of IBS-D.",
+          "medicines": [
+            {
+              "name": "Cholestyramine",
+              "brand_examples": ["Questran", "Questran Lite"],
+              "form": "Oral powder sachet (4g)",
+              "dosage": "4g once to four times daily (titrate to response); start with 4g once daily and increase",
+              "use_case": "Bile acid malabsorption (BAM) — first-line treatment; effective in 70-90% of patients with BAM on SeHCAT testing; also useful for post-cholecystectomy diarrhoea and Crohn's ileitis",
+              "mechanism": "Non-absorbable anion-exchange resin — binds bile acids in intestinal lumen preventing colonic entry; reduces bile acid-induced colonic secretion and accelerated transit",
+              "side_effects": ["Constipation (most common)", "Bloating and flatulence", "Nausea", "Gritty texture — unpleasant to take", "Reduces absorption of fat-soluble vitamins (A, D, E, K) with long-term use — supplement vitamins", "Drug interactions: binds many drugs — separate all medications by at least 1-4 hours"],
+              "note": "Take cholestyramine at least 1-4 hours apart from other medications (adsorbs drugs)"
+            },
+            {
+              "name": "Colesevelam",
+              "brand_examples": ["Cholestagel", "Welchol"],
+              "form": "Tablet (625mg)",
+              "dosage": "625mg three to six tablets daily (divided doses with meals)",
+              "use_case": "BAM — better tolerated than cholestyramine (tablet formulation, fewer GI side effects); also approved for hypercholesterolaemia and type 2 diabetes",
+              "advantage": "Better tolerated than cholestyramine; tablet formulation (not powder); fewer drug interactions"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-138",
+          "category_name": "Low-Dose Neuromodulators — Tricyclic Antidepressants (TCAs)",
+          "purpose": "At low doses (below antidepressant doses), TCAs exert central and peripheral pain-modulating effects on the gut-brain axis — reducing visceral hypersensitivity, slowing intestinal transit, and improving sleep. MOST EFFECTIVE pharmacotherapy for abdominal pain in IBS. Recommended by ACG (American College of Gastroenterology) 2021 guidelines as a strong recommendation for global IBS symptoms.",
+          "note": "Explain clearly to patients: TCAs for IBS are prescribed at MUCH LOWER doses than for depression — they are being used as pain modulators, not antidepressants. Addressing this misunderstanding upfront is crucial for treatment adherence.",
+          "medicines": [
+            {
+              "name": "Amitriptyline",
+              "brand_examples": ["Amitone", "Elavil", "Tryptizol"],
+              "form": "Tablet (10mg, 25mg)",
+              "dosage": "Starting: 10mg once daily at night; increase by 10mg every 2-4 weeks; usual therapeutic range for IBS: 25-75mg at night; maximum 150mg (antidepressant dose — rarely needed for IBS)",
+              "use_case": "IBS abdominal pain (all subtypes, particularly IBS-D where slowing of transit is beneficial); IBS with insomnia (sedating — take at night); IBS with comorbid depression/anxiety; IBS with visceral hypersensitivity; considered first-choice neuromodulator for IBS by multiple guidelines",
+              "mechanism": "Multiple mechanisms: reduces NMDA receptor-mediated central sensitisation (visceral hypersensitivity); reduces ascending pain signalling to thalamus and cortex; slows intestinal transit (anticholinergic — beneficial in IBS-D); improves sleep architecture; mild 5-HT/noradrenaline reuptake inhibition at higher doses",
+              "side_effects": ["Drowsiness/sedation — take at night (can be beneficial for sleep)", "Dry mouth (anticholinergic)", "Constipation (limits use in IBS-C)", "Urinary retention (avoid in BPH)", "Blurred vision", "Orthostatic hypotension", "QT prolongation (check ECG at baseline in cardiac patients)", "Weight gain with prolonged use"],
+              "contraindications": ["Recent MI or cardiac arrhythmia", "Severe cardiac disease", "Narrow-angle glaucoma", "Urinary retention (BPH)", "MAOi use within 14 days"],
+              "monitoring": "Baseline ECG; blood pressure; review at 4-8 weeks; if no benefit by 12 weeks at adequate dose — consider alternative neuromodulator",
+              "ibs_diarrhoea_benefit": "Anticholinergic slowing of gut motility is BENEFICIAL in IBS-D (reduces urgency and frequency)"
+            },
+            {
+              "name": "Nortriptyline",
+              "brand_examples": ["Allegron", "Pamelor"],
+              "form": "Tablet (10mg, 25mg)",
+              "dosage": "10-75mg at night",
+              "use_case": "IBS abdominal pain; alternative to amitriptyline with fewer anticholinergic side effects and less sedation; better tolerated in elderly",
+              "side_effects": "Fewer anticholinergic effects than amitriptyline; less sedation; preferred in elderly patients"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-139",
+          "category_name": "Low-Dose SSRIs and SNRIs (IBS with Comorbid Anxiety or Depression)",
+          "purpose": "SSRIs and SNRIs at low doses reduce central sensitisation and visceral hypersensitivity while treating comorbid anxiety and depression. SSRIs tend to accelerate gut transit (beneficial in IBS-C; may worsen IBS-D). ACG 2021: conditional recommendation for SSRIs for global IBS symptoms.",
+          "note": "SSRIs are particularly preferred in IBS-C (accelerate transit) and when significant comorbid anxiety or depression is present. TCAs preferred for IBS-D (slow transit beneficial).",
+          "medicines": [
+            {
+              "name": "Fluoxetine",
+              "brand_examples": ["Prozac", "Flunil", "Fludac"],
+              "form": "Capsule, Tablet",
+              "dosage": "10-20mg once daily (lower than antidepressant dose of 20-60mg; start 10mg in IBS)",
+              "use_case": "IBS with predominant constipation (IBS-C) — accelerates gut transit; IBS with comorbid depression or anxiety; IBS with somatic symptom disorder",
+              "mechanism": "Selective serotonin reuptake inhibitor — increases synaptic 5-HT; central visceral pain modulation; accelerates gut transit (5-HT in gut promotes motility — beneficial in IBS-C)",
+              "side_effects": ["Nausea (first 2-3 weeks — usually resolves)", "Diarrhoea (transit acceleration — problematic in IBS-D)", "Insomnia (activating — give in morning)", "Sexual dysfunction", "Agitation initially"]
+            },
+            {
+              "name": "Citalopram / Escitalopram",
+              "brand_examples": ["Cipralex (escitalopram)", "Celexa (citalopram)"],
+              "form": "Tablet",
+              "dosage": "10-20mg once daily (start low)",
+              "use_case": "IBS with comorbid anxiety or depression; IBS-C (transit acceleration); better GI tolerability than fluoxetine; escitalopram preferred (fewer drug interactions)",
+              "side_effects": ["Nausea", "QT prolongation (citalopram at higher doses)", "Sexual dysfunction"]
+            },
+            {
+              "name": "Duloxetine",
+              "brand_examples": ["Cymbalta", "Dulane"],
+              "form": "Delayed-release capsule",
+              "dosage": "30-60mg once daily (start 30mg for IBS)",
+              "use_case": "IBS with comorbid fibromyalgia or chronic pain (SNRI particularly effective for central sensitisation syndromes); IBS with anxiety and depression; painful IBS",
+              "mechanism": "SNRI — noradrenaline reuptake inhibition provides additional pain modulation (descending inhibitory pathway activation) vs SSRIs alone; central sensitisation reduction",
+              "side_effects": ["Nausea", "Constipation", "Dizziness", "Sweating", "Hypertension (monitor BP)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-140",
+          "category_name": "Probiotics",
+          "purpose": "Modulate the gut microbiome, reduce intestinal permeability, reduce mucosal immune activation, and alter gut-brain signalling. Meta-analyses support probiotic use in IBS for overall symptom improvement, bloating reduction, and flatulence. Effects are strain-specific — different probiotic species and strains have different effects.",
+          "note": "Probiotics generally have good safety profiles. Effects are modest and variable — some patients respond well; others do not. Trial for 4-8 weeks and continue if beneficial. Strain-specific effects are important.",
+          "medicines": [
+            {
+              "name": "Bifidobacterium longum + Lactobacillus acidophilus + Multiple Strain Combinations",
+              "brand_examples": ["VSL#3 (14 strains — highest potency)", "Alflorex / Align (Bifidobacterium 35624)", "Symprove (aqueous probiotic)", "Yakult (L. casei Shirota)", "Vizylac", "Darolac", "Econorm"],
+              "form": "Capsule, Sachet, Oral suspension",
+              "dosage": "Follow product instructions; typically 1-2 capsules or sachets daily; trial for 4-8 weeks",
+              "use_case": "IBS global symptom improvement; bloating and gas reduction; flatulence; PI-IBS (microbiome restoration); IBS during and after antibiotic treatment",
+              "mechanism": "Colonise intestinal epithelium competitively; reduce pathogenic bacteria; produce SCFAs (butyrate seals tight junctions); modulate mucosal immune response; communicate with enteric nervous system via vagal signalling; produce GABA and serotonin precursors",
+              "evidence": "Cochrane meta-analysis (Ford 2014): probiotics significantly better than placebo for IBS global symptoms (RR 0.79; NNT=7) and bloating; Bifidobacterium infantis 35624 has strongest evidence for pain, bloating, and bowel habits in IBS; VSL#3 specific evidence for bloating",
+              "side_effects": ["Generally very well tolerated", "Transient increased gas and bloating (first 1-2 weeks as microbiome adjusts)", "Avoid in severely immunocompromised patients (theoretical bacteraemia risk — extremely rare)"],
+              "best_strains_for_ibs": "Bifidobacterium longum 35624 (Align/Alflorex); Lactobacillus rhamnosus GG; VSL#3 (multi-strain for bloating); Saccharomyces boulardii (IBS-D)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-141",
+          "category_name": "Mixed Opioid Receptor Modulators (IBS-D — Severe)",
+          "medicines": [
+            {
+              "name": "Eluxadoline",
+              "brand_examples": ["Viberzi", "Truberzi"],
+              "form": "Tablet (75mg, 100mg)",
+              "dosage": "100mg twice daily with food; 75mg twice daily in patients without a gallbladder or with moderate hepatic impairment",
+              "use_case": "IBS-D — FDA approved; reduces diarrhoea and abdominal pain through combined opioid receptor actions",
+              "mechanism": "Mixed mu-opioid receptor agonist (reduces gut motility — reduces diarrhoea) / delta-opioid receptor antagonist (prevents constipation from pure mu-agonism) / kappa-opioid receptor agonist (local analgesic — reduces visceral pain)",
+              "side_effects": ["Constipation", "Nausea", "Abdominal pain", "PANCREATITIS (risk — contraindicated without a gallbladder due to sphincter of Oddi dysfunction risk; avoid in patients with history of pancreatitis or biliary tract disease)", "Elevated liver enzymes"],
+              "contraindications": ["Absence of gallbladder", "Sphincter of Oddi dysfunction", "History of pancreatitis", "Severe hepatic impairment", "Alcohol use disorder", "Opioid use disorder"]
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet is arguably the most important management strategy in IBS — up to 90% of IBS patients report that food triggers their symptoms, and dietary modification is the most impactful non-pharmacological intervention. The Low FODMAP Diet is the most evidence-based dietary intervention for IBS, with clinical trials demonstrating symptom improvement in 50-75% of patients. However, IBS dietary management is highly individualised — triggers vary significantly between patients, requiring a personalised approach ideally guided by a specialist GI dietitian.",
+      "low_fodmap_diet": {
+        "description": "The Low FODMAP Diet targets Fermentable Oligosaccharides, Disaccharides, Monosaccharides And Polyols — short-chain carbohydrates that are poorly absorbed in the small intestine, fermented rapidly by colonic bacteria, producing gas and drawing water into the bowel, causing bloating, pain, and altered stool consistency.",
+        "what_are_fodmaps": {
+          "Oligosaccharides": "Fructans (wheat, rye, garlic, onion, leek) and Galacto-oligosaccharides/GOS (legumes, chickpeas, lentils, cashews)",
+          "Disaccharides": "Lactose (milk, yoghurt, soft cheeses, ice cream)",
+          "Monosaccharides": "Excess fructose (honey, apples, pears, mango, high-fructose corn syrup)",
+          "Polyols": "Sorbitol (apples, pears, plums, apricots, diet products), Mannitol (mushrooms, cauliflower, diet products), Xylitol and other polyols in sugar-free products"
+        },
+        "three_phase_approach": {
+          "phase_1_elimination": {
+            "duration": "4-8 weeks",
+            "description": "Strict elimination of ALL high-FODMAP foods simultaneously. This phase should be done under guidance of a registered dietitian (RD) with IBS experience — the diet is complex, restricts many nutritious foods, and risks nutritional deficiency if followed without professional guidance.",
+            "goal": "Achieve symptom improvement — in responders (50-75%), significant improvement typically occurs within 2-4 weeks"
+          },
+          "phase_2_reintroduction": {
+            "duration": "6-8 weeks",
+            "description": "Systematic reintroduction of individual FODMAP groups, one at a time, every 3-4 days. Each FODMAP type is tested separately to identify which FODMAP subgroups (not all) the individual patient is sensitive to. Not all patients react to all FODMAPs.",
+            "goal": "Identify PERSONAL triggers — individual threshold amounts for each FODMAP group"
+          },
+          "phase_3_personalisation": {
+            "duration": "Long-term",
+            "description": "Based on reintroduction testing, create a personalised long-term diet that avoids only the specific FODMAPs and quantities that trigger symptoms in that individual — the most liberal diet possible while maintaining symptom control.",
+            "goal": "Sustainable long-term diet with maximum nutritional diversity while controlling symptoms"
+          }
+        },
+        "evidence": "Multiple RCTs (including Halmos 2014, Staudacher 2011, Bohn 2015): Low FODMAP diet improves global IBS symptoms in 50-75% of patients vs 20-30% on control diet; reduces bloating, pain, diarrhoea, urgency, and flatulence; NNT approximately 3-4",
+        "concerns": "Long-term strict low FODMAP diet may reduce microbiome diversity (FODMAPs are prebiotic) — Phase 3 personalisation essential; not to be followed strictly indefinitely without Phase 2-3"
+      },
+      "recommended_foods": [
+        {
+          "category": "Low-FODMAP Vegetables",
+          "note": "These vegetables are well tolerated by most IBS patients and should form the basis of vegetable intake",
+          "items": [
+            {
+              "food": "Courgette (Zucchini), Bell peppers, Carrots, Aubergine (Eggplant), Green beans, Cucumber, Lettuce, Spinach, Kale, Tomato (up to 1 medium), Olives",
+              "benefit": "Low fermentable carbohydrate content; well-tolerated; rich in vitamins, minerals, antioxidants; provide dietary fibre without significant gas production",
+              "frequency": "Daily — multiple servings"
+            },
+            {
+              "food": "Potato, Sweet potato, Parsnip, Swede (Rutabaga)",
+              "benefit": "Low FODMAP; filling; provide resistant starch (low-FODMAP amounts); vitamins; good energy source",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Broccoli (small portions — up to 75g per meal), Cabbage (common — up to 75g), Celery (up to 1 stalk)",
+              "benefit": "Nutritious; tolerated in limited portions (FODMAPs present but at sub-threshold amounts in small servings)",
+              "caution": "PORTION-SENSITIVE — exceeding threshold amounts triggers symptoms; introduce carefully"
+            }
+          ]
+        },
+        {
+          "category": "Low-FODMAP Fruits",
+          "items": [
+            {
+              "food": "Blueberries, Strawberries, Raspberries, Oranges, Mandarins, Kiwi, Grapes, Pineapple, Melon (cantaloupe, honeydew — small portion)",
+              "benefit": "Well-tolerated in normal portion sizes; antioxidants; vitamins; fibre; anti-inflammatory",
+              "frequency": "2-3 servings daily"
+            },
+            {
+              "food": "Bananas (just ripe — not over-ripe; firm yellow with no brown spots), Papaya",
+              "benefit": "Ripe bananas are low FODMAP; potassium; gentle on gut; anti-IBS nutritional profile",
+              "caution": "RIPE bananas only — unripe green bananas are low FODMAP; over-ripe bananas have higher fructose content"
+            }
+          ]
+        },
+        {
+          "category": "Protein Sources",
+          "items": [
+            {
+              "food": "Lean meats and poultry: Chicken, Turkey, Beef, Lamb, Pork (unprocessed, plain)",
+              "benefit": "Zero FODMAP; complete protein; essential amino acids; iron; B12; safe for IBS",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Fish and seafood (fresh, not marinated or breaded with FODMAP ingredients)",
+              "benefit": "Zero FODMAP; omega-3 anti-inflammatory; high-quality protein; safe for IBS",
+              "frequency": "3-4 times per week"
+            },
+            {
+              "food": "Eggs",
+              "benefit": "Zero FODMAP; complete protein; all essential amino acids; versatile; safe for IBS",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Firm tofu, Tempeh (in limited amounts)",
+              "benefit": "Low FODMAP (FIRM tofu — water content reduced; soft tofu is higher FODMAP); plant protein; good for vegetarian IBS patients",
+              "caution": "Firm/extra-firm tofu only; soft or silken tofu has higher GOS content"
+            },
+            {
+              "food": "Tinned chickpeas (drained and rinsed — up to ¼ cup), Tinned lentils (drained and rinsed — ½ cup)",
+              "benefit": "Canning and rinsing leaches FODMAPs into brine — drained and rinsed portions can be low FODMAP in small amounts; plant protein and fibre for IBS patients who are vegetarian",
+              "caution": "Portion-critical — exceeding amounts triggers symptoms; do NOT use dried and cooked legumes (higher FODMAP)"
+            }
+          ]
+        },
+        {
+          "category": "Grains and Carbohydrates",
+          "items": [
+            {
+              "food": "White rice, Brown rice, Quinoa, Oats (uncontaminated/gluten-free oats), Polenta, Buckwheat, Millet",
+              "benefit": "Low FODMAP; these grains do NOT contain fructans (unlike wheat and rye); generally well tolerated; provide energy and B vitamins",
+              "frequency": "Daily as main carbohydrate source"
+            },
+            {
+              "food": "Sourdough spelt bread or sourdough wheat bread (long-fermented — certain types)",
+              "benefit": "Long fermentation of sourdough (>12 hours) degrades fructans in wheat flour — some IBS patients tolerate small amounts of traditional sourdough bread; portion-dependent",
+              "caution": "Individual response variable; start with small amount (1 slice); commercial 'sourdough' bread is often not genuinely long-fermented"
+            },
+            {
+              "food": "Gluten-free bread, pasta, crackers (made from rice, corn, or potato flours)",
+              "benefit": "FODMAP-free; safe for IBS patients with fructan sensitivity (wheat intolerance in IBS is from fructans, not gluten); practical alternative to wheat-based products",
+              "note": "Check ingredients — some GF products contain high-FODMAP ingredients (honey, apple juice, chicory root/inulin, FOS, xylitol)"
+            }
+          ]
+        },
+        {
+          "category": "Dairy and Alternatives",
+          "items": [
+            {
+              "food": "Lactose-free milk, Lactose-free yogurt, Hard aged cheeses (cheddar, parmesan, brie, camembert — naturally low lactose)",
+              "benefit": "Well-tolerated dairy alternatives or low-lactose dairy; calcium; protein; vitamin D; important for bone health in IBS patients who restrict dairy",
+              "frequency": "Daily"
+            },
+            {
+              "food": "Almond milk (no added inulin), Rice milk, Oat milk (limited — moderate FODMAP)",
+              "benefit": "Dairy-free alternatives; useful if lactose is a trigger; almond milk is low FODMAP in 250mL serving",
+              "caution": "READ LABELS — many plant milks contain added chicory root, inulin, or FOS (high FODMAP)"
+            }
+          ]
+        },
+        {
+          "category": "Soluble Fibre (IBS-C)",
+          "evidence": "Strong — soluble fibre specifically (NOT insoluble bran) is recommended for IBS-C; forms a gel that softens stools and moderates gut transit without excessive fermentation",
+          "items": [
+            {
+              "food": "Psyllium husk (ispaghula) — Plantago ovata",
+              "benefit": "MOST EVIDENCE for IBS: soluble fibre that forms a gel; reduces constipation (IBS-C); paradoxically also reduces diarrhoea by adsorbing excess water; reduces pain and bloating more than insoluble bran; meta-analysis: NNT=6 for IBS symptom improvement",
+              "dosage": "Start 5g (1 teaspoon) once daily in 300mL water; increase to 10-20g/day over 2-4 weeks; ESSENTIAL to take with large amount of water (2+ glasses — risk of oesophageal obstruction if insufficient water)",
+              "brand_examples": "Isabgol, Metamucil, Fybogel",
+              "frequency": "Once or twice daily — take with large amount of water"
+            },
+            {
+              "food": "Oats (beta-glucan)",
+              "benefit": "Soluble fibre; beta-glucan moderates gut transit; reduces cholesterol; anti-inflammatory; gentle for IBS; well tolerated",
+              "frequency": "Daily as breakfast oatmeal"
+            }
+          ]
+        },
+        {
+          "category": "Anti-Inflammatory and Gut-Supporting Foods",
+          "items": [
+            {
+              "food": "Ginger tea (fresh ginger root)",
+              "benefit": "Anti-inflammatory (6-gingerol, 6-shogaol); antispasmodic (relaxes intestinal smooth muscle); anti-nausea; promotes gastric emptying; reduces bloating; helpful for IBS-D and IBS nausea",
+              "frequency": "2-3 cups daily; fresh ginger (1-2cm) steeped in hot water"
+            },
+            {
+              "food": "Peppermint tea (not for those with GERD)",
+              "benefit": "Menthol relaxes intestinal smooth muscle — antispasmodic; reduces bloating and cramping; beneficial for IBS",
+              "caution": "Avoid with GERD — peppermint relaxes LES; prefer peppermint OIL CAPSULES (enteric-coated) which deliver to bowel not stomach"
+            },
+            {
+              "food": "Bone broth (chicken or vegetable — plain, without high-FODMAP additions)",
+              "benefit": "Gelatine (glycine) supports intestinal epithelial integrity; reduces intestinal permeability ('leaky gut'); gut-healing; easily digestible; hydrating",
+              "frequency": "Daily as a warm drink or soup base"
+            },
+            {
+              "food": "Turmeric (curcumin)",
+              "benefit": "Anti-inflammatory (NF-κB inhibition); reduces mucosal immune activation in IBS; some trial evidence for symptom improvement; anti-spasmodic properties; small RCT: curcumin supplementation reduced IBS symptom severity",
+              "frequency": "Daily in cooking or supplement (500-1000mg curcumin with piperine)"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "High-FODMAP Foods — FRUCTANS (Wheat, Rye, Garlic, Onion, Leek)",
+          "reason": "Fructans are chains of fructose molecules that cannot be digested by human intestinal enzymes — they reach the colon intact and are rapidly fermented by bacteria producing large quantities of hydrogen and methane gas, causing bloating, pain, flatulence, and altered stool consistency. GARLIC and ONION are the MOST potent FODMAP triggers in most IBS patients — even small amounts in cooking (garlic-infused oil is LOW FODMAP as fructans are not oil-soluble).",
+          "examples": ["Garlic (any amount — extremely high fructan content; use garlic-infused oil instead)", "Onion (white, red, brown, spring onion bulb — extremely high fructan)", "Wheat-based products: regular bread, pasta, pizza dough, pastries, cakes, biscuits", "Rye bread", "Leek (white/light green part)", "Shallots", "Artichoke (globe)", "Products containing inulin or FOS (chicory root extract — added prebiotic fibre; very high FODMAP)"]
+        },
+        {
+          "food": "High-FODMAP Fruits — Excess Fructose",
+          "reason": "These fruits contain excess fructose (more fructose than glucose — excess fructose is poorly absorbed in the small intestine in many individuals; ratio of fructose to glucose >1:1 impairs absorption via GLUT5 transporter which has limited capacity)",
+          "examples": ["Apples (very high fructose)", "Pears", "Mango (high fructose)", "Watermelon (fructans + polyols)", "Cherries", "Dried fruits (raisins, sultanas, dates, figs — very concentrated FODMAP)", "Tinned fruit in apple or pear juice", "Fruit juice (concentrated FODMAPs)"]
+        },
+        {
+          "food": "High-Lactose Dairy",
+          "reason": "Lactose (milk disaccharide) requires lactase enzyme for digestion — deficiency (common in South Asians, East Asians, Africans, Middle Eastern populations — up to 80% adult prevalence of lactase persistence loss) causes osmotic and fermentative diarrhoea with gas and bloating",
+          "examples": ["Regular milk (full-fat, semi-skimmed, skimmed)", "Yogurt (regular — especially natural/plain yogurt; Greek yogurt is lower lactose)", "Soft cheeses: ricotta, cottage cheese, fresh mozzarella, cream cheese", "Cream", "Ice cream", "Custard"],
+          "alternatives": "Lactose-free milk, lactose-free yogurt, hard aged cheeses (cheddar, parmesan, brie — naturally low lactose), plant-based milks (check for added high-FODMAP ingredients)"
+        },
+        {
+          "food": "Fatty and Fried Foods",
+          "reason": "Dietary fat delays gastric emptying and stimulates the gastrocolic reflex — the post-prandial increase in colonic motility that triggers urgency and diarrhoea in IBS-D. Fat also promotes gastric acid production and CCK release which can worsen IBS symptoms. High-fat meals are a primary trigger for post-prandial cramping.",
+          "examples": ["Fast food", "Deep-fried foods", "Full-fat dairy in large amounts", "Fatty red meats", "Pastries and pies", "Heavy cream sauces"]
+        },
+        {
+          "food": "Caffeine",
+          "reason": "Caffeine stimulates colonic motility (increases HAPCs — high-amplitude propagated contractions); exacerbates urgency and diarrhoea in IBS-D; may worsen abdominal cramping; promotes anxiety (worsening gut-brain axis dysfunction)",
+          "examples": ["Coffee (regular — significant caffeine; decaffeinated coffee also stimulates gut transit to lesser degree from non-caffeine components)", "Strong black tea", "Energy drinks", "Cola beverages"],
+          "note": "Green tea (moderate caffeine) is generally better tolerated than coffee in IBS"
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Alcohol disrupts gut microbiome (dysbiosis); increases intestinal permeability (leaky gut — important in IBS pathogenesis); accelerates gut transit causing diarrhoea; is directly irritating to gut mucosa; promotes anxiety (worsening gut-brain axis)",
+          "examples": ["Beer (high in FODMAPs — fructans from barley + alcohol)", "Wine (moderate FODMAP — sorbitol)", "Spirits (alcohol alone — lower FODMAP but still gut-disruptive)"],
+          "note": "Beer is particularly problematic — fructans from barley malting + alcohol combined"
+        },
+        {
+          "food": "Sugar-Free and 'Diet' Products Containing Polyols",
+          "reason": "Artificial sweeteners — particularly polyols (sorbitol, mannitol, xylitol, erythritol, maltitol, isomalt) — are poorly absorbed in the small intestine and cause osmotic diarrhoea and bloating. Labelled as 'sugar-free', 'diet', 'diabetic', or 'low-calorie' on products.",
+          "examples": ["Sugar-free chewing gum and mints (sorbitol, mannitol, xylitol)", "Diet sweets and diabetic confectionery", "Sugar-free cough drops and lozenges", "Some protein bars and supplements (maltitol, sorbitol)", "Sugar-free jams and preserves (sorbitol)"]
+        },
+        {
+          "food": "Legumes in Large Amounts (High GOS)",
+          "reason": "Legumes contain galacto-oligosaccharides (GOS — alpha-galactosides like raffinose and stachyose) which are completely non-digestible and highly fermentable, producing enormous quantities of gas",
+          "examples": ["Regular beans: kidney beans, black beans, chickpeas (DRIED and COOKED)", "Baked beans (regular canned)", "Lentils (dried and cooked — full portions)", "Soy beans (edamame in large amounts)"],
+          "lower_FODMAP_options": "Tinned chickpeas and lentils (drained and rinsed — ¼ cup); tofu (firm); tempeh"
+        },
+        {
+          "food": "Spicy Foods",
+          "reason": "Capsaicin activates TRPV1 pain receptors in the intestinal mucosa — directly lowers visceral pain threshold and worsens abdominal cramping; also accelerates transit time in IBS-D; reduces anal sphincter relaxation pressure (may worsen urgency)",
+          "examples": ["Hot chillies and chilli-based dishes", "Very spicy curries", "Hot sauces (Tabasco, sriracha)", "Strong black pepper in large amounts"]
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This low-FODMAP IBS-friendly meal plan avoids common triggers while providing complete nutrition. Individual tolerance varies — use this as a starting point and adjust based on personal food diary. Consult a registered dietitian specialising in IBS for personalised guidance before starting the full low-FODMAP diet.",
+        "early_morning": "1 cup warm ginger tea (fresh ginger — 1-2cm in hot water) — antispasmodic; anti-nausea; settles gut before breakfast",
+        "breakfast": "Oatmeal (plain rolled oats) with strawberries (10), blueberries (handful), and 2 tablespoons maple syrup or 1 tablespoon peanut butter (no xylitol) + lactose-free milk OR scrambled eggs (2) on gluten-free toast (1-2 slices) + 1 kiwi",
+        "mid_morning": "1 medium orange or 15 grapes + small handful rice crackers with peanut butter (check no high-FODMAP additives) + 1 cup herbal tea (chamomile or peppermint — if no GERD)",
+        "lunch": "Rice (brown or white) + plain grilled chicken or firm tofu + low-FODMAP vegetable curry/stir-fry (courgette, carrot, bell pepper, spinach, tomato) cooked with garlic-infused oil (NOT garlic) and spices (cumin, coriander, turmeric — low FODMAP) + lactose-free plain yogurt (50-100g)",
+        "evening_snack": "Plain rice cakes (2-3) with a small amount of cheddar cheese or peanut butter + 1 cup ginger or peppermint herbal tea",
+        "dinner": "Grilled fish or chicken + 1 medium portion of cooked quinoa or rice + green beans, carrots, and courgette (steamed or baked) + olive oil and lemon dressing (no garlic, no onion, no HFCS)",
+        "before_bed": "Small cup warm chamomile tea or peppermint tea; avoid eating for 2-3 hours before bed"
+      },
+      "special_dietary_notes": [
+        "LOW FODMAP DIET MUST BE DONE WITH A DIETITIAN — self-implementing without professional guidance risks nutritional deficiencies, unnecessary restriction, and misidentification of triggers. The diet is complex and requires careful guidance through all 3 phases.",
+        "SOLUBLE FIBRE (psyllium husk/ispaghula) is the most evidence-based fibre supplement for IBS — improves both constipation AND diarrhoea (BRAN/INSOLUBLE FIBRE often WORSENS IBS symptoms — common clinical mistake)",
+        "GARLIC-INFUSED OIL is a low-FODMAP alternative to garlic — FODMAP fructans are not fat-soluble and do not leach into oil; frying garlic cloves in oil and removing them leaves a flavoured, low-FODMAP oil suitable for IBS",
+        "COOKING ONION with other vegetables does NOT reduce FODMAP content — FODMAPs are water-soluble and leach into any dish cooked with onions; use spring onion (scallion) GREEN TOPS only (low FODMAP) instead",
+        "REGULAR MEAL TIMES are protective for IBS — irregular meals worsen gut motility patterns; aim for 3 regular meals and 1-2 snacks at consistent times",
+        "EATING SLOWLY and not over-eating protects against triggering the gastrocolic reflex — large meals trigger more post-prandial cramping",
+        "FOOD DIARY for 2-4 weeks before dietitian appointment: record food and drink, portion sizes, and timing of symptoms — identifies personal triggers efficiently",
+        "Prebiotic FODMAPs (garlic, onion, wheat) actually feed beneficial gut bacteria — prolonged strict avoidance may reduce microbiome diversity. Phase 3 personalisation aims to reintroduce tolerated FODMAPs to restore prebiotic function"
+      ]
+    },
+
+    "lifestyle_management": {
+      "psychological_therapies": {
+        "overview": "Psychological therapies are among the MOST EFFECTIVE treatments for IBS — comparable or superior to pharmacotherapy, particularly for moderate-severe IBS. The ACG 2021 guidelines give a STRONG recommendation for psychological therapies for global IBS symptoms. The gut-brain axis is central to IBS pathophysiology — psychological therapies directly modify this axis.",
+        "therapies": [
+          {
+            "therapy": "Cognitive Behavioural Therapy (CBT) for IBS",
+            "description": "Structured psychological therapy addressing: catastrophising (exaggerated fear of symptoms), hypervigilance to gut sensations, avoidance behaviours (avoiding food, social activities, travel due to IBS fear), and maladaptive coping. Both face-to-face (most effective) and online/self-directed formats have evidence.",
+            "evidence": "Multiple RCTs demonstrate CBT reduces IBS symptom severity by 40-50% vs control; sustained benefits at 12 months; equally effective for all IBS subtypes",
+            "format": "6-12 sessions (individual or group); also accessible via online platforms (e.g., Nerva, Cara Care)"
+          },
+          {
+            "therapy": "Gut-Directed Hypnotherapy (GDH)",
+            "description": "Specialised hypnotherapy focusing specifically on the gut — induces deep relaxation and uses gut-specific visualisation and suggestions to calm the gut-brain connection, reduce visceral hypersensitivity, and alter gut motility. The 'Manchester Protocol' by Peter Whorwell is the most studied format.",
+            "evidence": "Whorwell et al. landmark studies: GDH achieved complete or near-complete remission in 80-90% of IBS patients; superior to medical therapy alone; sustained at 5-year follow-up; particularly effective for refractory IBS; NNT approximately 3-4",
+            "format": "7-12 weekly sessions (individual hypnotherapist or self-directed audio); Nerva app (evidence-based gut hypnotherapy app)"
+          },
+          {
+            "therapy": "Mindfulness-Based Stress Reduction (MBSR) / Mindfulness-Based Cognitive Therapy (MBCT)",
+            "description": "Teaches present-moment non-judgemental awareness of physical sensations including gut symptoms — reduces 'catastrophising' and hypervigilance; reduces HPA axis stress activation; improves pain tolerance and acceptance",
+            "evidence": "Multiple RCTs show significant IBS symptom improvement; particularly beneficial for IBS with comorbid anxiety and stress-related worsening"
+          },
+          {
+            "therapy": "Psychodynamic Interpersonal Therapy (PIT)",
+            "description": "Addresses underlying psychological conflicts, interpersonal difficulties, and unresolved trauma contributing to IBS — particularly relevant when history of abuse or significant life stressors are present",
+            "evidence": "Effective for severe refractory IBS and IBS with psychological comorbidities"
+          },
+          {
+            "therapy": "Biofeedback and Pelvic Floor Physiotherapy",
+            "description": "For IBS-C with pelvic floor dyssynergia — uses biofeedback equipment to teach patients to relax the pelvic floor muscles during defecation (paradoxical contraction is the abnormality). Also addresses defaecation posture (squatting vs seated position affects ano-rectal angle).",
+            "evidence": "75-80% improvement in straining and incomplete evacuation in pelvic floor dyssynergia when biofeedback is correctly targeted"
+          }
+        ]
+      },
+      "exercise": {
+        "evidence": "Multiple RCTs demonstrate regular physical activity improves global IBS symptoms, reduces psychological distress, and reduces GI transit time (beneficial in IBS-C). Exercise reduces visceral hypersensitivity via central mechanisms and improves gut microbiome diversity.",
+        "recommendations": [
+          "150-300 minutes of moderate-intensity aerobic exercise per week (walking, cycling, swimming)",
+          "Regular exercise reduces IBS symptoms by 43% in trials; improves quality of life, fatigue, and psychological wellbeing",
+          "Yoga — evidence for IBS symptom improvement through combined exercise, breathing, and stress reduction; particularly useful for IBS with anxiety",
+          "Walking after meals reduces post-prandial bloating and assists gastric emptying",
+          "Avoid intense exercise immediately after eating (increases post-prandial GI symptoms)"
+        ]
+      },
+      "sleep_hygiene": {
+        "importance": "Sleep disturbance and IBS are bidirectionally related. Poor sleep amplifies gut pain sensitivity via increased visceral hypersensitivity the following day; gut symptoms at night (discomfort, anxiety about next-day symptoms) impair sleep quality. Improving sleep reduces IBS severity.",
+        "measures": [
+          "Consistent sleep and wake times — 7-8 hours per night",
+          "Avoid large meals within 3 hours of bedtime",
+          "Establish a pre-sleep relaxation routine (avoid screens; reading; warm bath)",
+          "CBT for Insomnia (CBT-I) if insomnia is prominent — evidence-based treatment for sleep disorders in chronic pain conditions",
+          "Amitriptyline at night (when prescribed) — sedation can be harnessed to improve sleep AND treat IBS simultaneously"
+        ]
+      },
+      "stress_management_techniques": [
+        "Daily diaphragmatic (belly) breathing — 5-10 minutes: activates parasympathetic nervous system; directly reduces gut-brain axis stress reactivity; reduces HPA axis activation",
+        "Progressive muscle relaxation (PMR) — 15 minutes daily; reduces overall sympathetic nervous system tone",
+        "Regular social activity — social isolation worsens IBS through increased rumination and symptom focus; maintaining social connections is protective",
+        "Journalling — writing about symptoms and emotional experiences reduces symptom severity (expressive writing studies); reduces catastrophising",
+        "Time management and reducing work overload — occupational stress is a major IBS trigger; boundary-setting and workload management"
+      ],
+      "bowel_habit_retraining": [
+        "Establish a regular toilet time — use the natural post-breakfast gastrocolic reflex (the increase in colonic motility after waking and eating breakfast) to train a consistent morning defecation time",
+        "NEVER suppress the urge to defecate (IBS-D) — holding urges trains the bowel to be less responsive",
+        "NEVER strain at stool (IBS-C) — use a squat stool (Squatty Potty) to optimise the anorectal angle; lean forward with feet on stool",
+        "Defecation posture: knees higher than hips (squatting position) relaxes the puborectalis muscle and straightens the anorectal angle — improves evacuation efficiency",
+        "Allow adequate time in the bathroom without rushing or phone distraction"
+      ],
+      "ibs_education_and_acceptance": [
+        "Understanding IBS as a real, physiological disorder (not 'all in your head') significantly reduces health anxiety and improves outcomes — education IS treatment",
+        "Reassurance that IBS does NOT cause bowel cancer, does NOT progress to IBD (Crohn's/UC), and does NOT shorten life expectancy",
+        "Acknowledging that IBS is chronic and relapsing-remitting — good periods and flares are expected; catastrophising during flares worsens them",
+        "IBS support organisations: IBS Network (UK — theibsnetwork.org); IFFGD (USA); The Gut Health Doctor; online IBS communities provide peer support and validated information",
+        "Symptom tracking app — use a validated IBS tracking app (mySymptoms, Cara) to track symptoms, food, stress, sleep, and menstrual cycle — identifies patterns and triggers"
+      ]
+    },
+
+    "ibs_monitoring_plan": {
+      "note": "IBS monitoring tracks symptom severity, treatment response, alarm feature development, and quality of life impact. The IBS Symptom Severity Score (IBS-SSS) is the validated tool for objective monitoring — complete at baseline and 4-8 weekly intervals. Keep a symptom and food diary throughout treatment.",
+      "green_zone": {
+        "status": "Well Managed — Mild Symptoms or Remission",
+        "criteria": "IBS-SSS <175; symptoms on <25% of days; manageable with dietary modifications and PRN antispasmodics; no significant impact on work, social life, or sleep; patient feels in control of their IBS; no alarm features",
+        "action": "Continue low FODMAP diet (in Phase 3 personalisation); continue exercise and stress management; use PRN antispasmodics (mebeverine, peppermint oil) for flares; annual GP review; reassess medications annually with aim to reduce where possible. Maintain a headache diary to track triggers."
+      },
+      "yellow_zone": {
+        "status": "Moderate Symptoms — Treatment Review Needed",
+        "criteria": "IBS-SSS 175-300; symptoms affecting work or social activities; requiring regular (not just PRN) medication; anxiety about IBS increasing; low FODMAP diet inadequate alone; new or changing symptom pattern",
+        "action": "GP or gastroenterology review within 2-4 weeks. Reassess IBS subtype and current treatment. Consider: adding regular antispasmodic; IBS-D: trial loperamide or rifaximin; IBS-C: linaclotide or prucalopride; all: low-dose amitriptyline or SSRI; psychological therapy referral (CBT or gut-directed hypnotherapy). Review food diary with dietitian."
+      },
+      "red_zone": {
+        "status": "URGENT — Alarm Features or Severe Refractory IBS",
+        "criteria_urgent": "ANY of: Rectal bleeding (bright red or blood mixed with stool); Unintentional weight loss >5%; Iron-deficiency anaemia (new); Nocturnal diarrhoea consistently waking patient; Fever with GI symptoms; New symptom onset after age 50; Progressive worsening not explained by IBS; Palpable abdominal mass",
+        "criteria_specialist": "IBS-SSS >300 with failed multiple treatments; severe urgency with faecal incontinence; severe refractory constipation not responding to secretagogues; significant psychological comorbidity requiring multidisciplinary care",
+        "action": "ALARM FEATURES: Urgent GP review within days; urgent referral for colonoscopy/endoscopy; 2-week wait cancer referral if suspicion of malignancy. SEVERE REFRACTORY IBS: Gastroenterology specialist referral; psychological therapy referral; faecal calprotectin; consideration of colonoscopy with biopsies; SeHCAT test (IBS-D); anorectal physiology if IBS-C with outlet dysfunction."
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Severe Impairment of Quality of Life",
+        "description": "IBS does not cause structural bowel damage but profoundly and chronically impairs quality of life — to an extent comparable or exceeding many 'serious' organic diseases. Studies show HRQL (health-related quality of life) in severe IBS is comparable to patients on dialysis for renal failure, patients with multiple sclerosis, and patients awaiting organ transplantation. Multiple life domains affected: work productivity, social activities, travel, eating out, relationships, sexual health, and mental health.",
+        "severity": "Significant — chronic",
+        "domains_affected": ["Work absence (absenteeism) and presenteeism (at work but reduced productivity)", "Social avoidance — cancelling plans, avoiding restaurants, events, travel", "Dietary restriction — social stigma of food avoidance", "Sexual dysfunction from pelvic pain and dyspareunia", "Relationship strain from chronic illness impact", "Travel anxiety and restriction (fear of being away from toilets)"]
+      },
+      {
+        "complication": "Mental Health Comorbidities — Anxiety and Depression",
+        "description": "Anxiety and depression are both MORE COMMON in IBS and WORSEN IBS — a bidirectional relationship. Prevalence: moderate-severe anxiety in 60% of IBS clinic patients; depression in 40%. The gut-brain axis dysregulation underlying IBS shares mechanisms with anxiety and depression disorders (HPA axis, serotonin signalling, central sensitisation). Mental health disorders amplify visceral pain and worsen functional outcomes.",
+        "severity": "Significant — must be treated concurrently with GI symptoms",
+        "management": "Screen all IBS patients for depression (PHQ-9) and anxiety (GAD-7); refer to psychological therapies; CBT; low-dose antidepressants (dual benefit for GI and psychiatric symptoms)"
+      },
+      {
+        "complication": "Unnecessary Surgery and Invasive Investigations",
+        "description": "A concerning complication of IBS — particularly in women with chronic pelvic pain and IBS — is unnecessarily high rates of abdominal surgery. Studies show IBS patients have 2-3x higher rates of cholecystectomy (gallbladder removal), appendectomy, hysterectomy, and other abdominal procedures compared to non-IBS populations — many of which are performed to treat symptoms later identified as IBS-related. This represents significant unnecessary surgical risk.",
+        "prevention": "Positive IBS diagnosis BEFORE referring for surgery; second opinion from gastroenterologist before any elective abdominal surgery in patient with IBS-like symptoms; pelvic pain in women with IBS requires careful evaluation before gynaecological surgery"
+      },
+      {
+        "complication": "Nutritional Deficiencies from Dietary Restriction",
+        "description": "Overly restrictive diets in IBS — particularly self-implemented low FODMAP diets without dietitian guidance, or very restricted 'safe food' lists — can lead to: calcium deficiency (dairy avoidance), iron deficiency (meat and legume avoidance), B12 deficiency (animal product restriction), vitamin D deficiency, fibre deficiency (low FODMAP may reduce prebiotic fibre), and reduced gut microbiome diversity.",
+        "prevention": "Dietitian-guided dietary management; Phase 3 FODMAP personalisation (maximise diet liberalisation); regular nutritional review; supplementation as needed"
+      },
+      {
+        "complication": "Medication Overuse and Dependency",
+        "description": "Long-term use of opioid antidiarrhoeal agents (loperamide at high doses) can cause dependency and constipation. Laxative dependency in IBS-C is possible with stimulant laxatives. Benzodiazepine use for IBS-related anxiety creates addiction risk. Opioid analgesics prescribed for chronic IBS pain cause narcotic bowel syndrome (opioid-induced gut hypersensitivity — paradoxical worsening of pain with opioid use).",
+        "prevention": "Avoid opioid analgesics for IBS; use non-addictive antidiarrhoeals (loperamide at recommended doses); review all long-term medications annually"
+      },
+      {
+        "complication": "Overlap with Other Functional Disorders",
+        "description": "IBS frequently overlaps with other functional and chronic pain conditions — all sharing central sensitisation mechanisms: Fibromyalgia (30-40% of IBS patients), Chronic Fatigue Syndrome/ME (20-30%), Interstitial cystitis/painful bladder syndrome (30%), Chronic pelvic pain (30% women), Chronic low back pain, Temporomandibular disorder (TMD), Migraine. This overlap creates a complex clinical picture requiring multidisciplinary management.",
+        "management": "Multidisciplinary team approach; central sensitisation-targeting treatments (low-dose TCAs, SNRIs, CBT, MBCT, aerobic exercise) benefit multiple overlapping conditions simultaneously"
+      },
+      {
+        "complication": "Social Isolation and Relationship Difficulties",
+        "description": "Severe IBS patients may progressively restrict social activities, avoid eating out with friends or family, decline travel, and withdraw from relationships — due to fear of symptom flares, urgency, flatulence, or needing rapid toilet access. Social isolation worsens depression and anxiety, creating a vicious cycle. Partners may face secondary burden from caring for chronically unwell individual with invisible illness.",
+        "management": "CBT addresses avoidance behaviours specifically; IBS-specific support groups; communication strategies for explaining IBS to partners and employers; graduated exposure to feared situations (restaurants, travel, social events)"
+      }
+    ],
+
+    "special_populations": {
+      "ibs_in_women": {
+        "key_points": [
+          "IBS affects women 2-3 times more than men in high-income countries; the sex difference is driven by hormonal factors, differences in gut motility, heightened pain perception, and higher rates of healthcare-seeking behaviour",
+          "Menstrual cycle: IBS symptoms fluctuate across the menstrual cycle — premenstrual and menstrual phases cause greatest symptom worsening (prostaglandins — IBS-D worsening; progesterone — IBS-C worsening in luteal phase); track symptoms alongside menstrual cycle in IBS diary",
+          "Dysmenorrhoea and pelvic pain frequently overlap with IBS — endometriosis must be excluded in women with severe IBS-like symptoms and pelvic pain before treating as IBS (endometriosis affects 10% of women; common coexistence with IBS)",
+          "Pregnancy: IBS often improves in pregnancy (reduced stress hormones; altered gut microbiome); postpartum relapse common; treat with safe options during pregnancy (fibre, peppermint oil, limited loperamide in 2nd/3rd trimester); avoid serotonin-modulating drugs in 1st trimester",
+          "Menopause: IBS may worsen in perimenopause (oestrogen reduction affects gut motility and visceral pain threshold); HRT may modestly improve GI symptoms in some postmenopausal women",
+          "Female-specific pharmacotherapy: lubiprostone (IBS-C — approved only for women); alosetron (IBS-D — approved only for women in USA)"
+        ]
+      },
+      "ibs_in_children_and_adolescents": {
+        "key_points": [
+          "Paediatric IBS is increasingly prevalent — affects 10-20% of school-age children and adolescents",
+          "School avoidance from IBS is an important red flag — must distinguish IBS-driven school avoidance from anxiety-driven school refusal (though both often coexist)",
+          "Rome IV Paediatric Criteria: abdominal pain ≥4 days/month, ≥2 months duration, with ≥2 of: related to defecation, change in stool frequency, change in stool form; 'associated symptoms' include bloating and visible abdominal distension",
+          "Family-based approach is essential — parents' anxiety about symptoms amplifies children's symptoms; family therapy and psychoeducation alongside patient education",
+          "Dietary management: low FODMAP diet with dietitian in older children (12+); younger children benefit from simpler dietary advice (regular meals, adequate water, avoid skipping meals, limit fizzy drinks)",
+          "Medication: avoid low-dose TCAs in children under 12 (limited evidence, anticholinergic concerns); peppermint oil capsules safe from age 8; psyllium fibre safe; probiotics (Lactobacillus GG) evidence-based in paediatric IBS",
+          "Psychological therapies highly effective in children — CBT, mindfulness, gut-directed hypnotherapy; parental involvement in therapy"
+        ]
+      },
+      "ibs_in_elderly": {
+        "key_points": [
+          "New onset of IBS-like symptoms after age 50 should ALWAYS be investigated to exclude organic disease (colorectal cancer, IBD, microscopic colitis, coeliac disease, diverticular disease) — lower threshold for colonoscopy",
+          "Medication interactions more significant in elderly polypharmacy — many IBS drugs interact with common elderly medications",
+          "Anticholinergic burden: avoid hyoscine, dicyclomine, and high-dose TCAs in elderly (high anticholinergic burden worsens cognition; higher fall risk from orthostatic hypotension)",
+          "Prefer: mebeverine (no anticholinergic), peppermint oil, low-dose nortriptyline (fewer anticholinergic effects than amitriptyline), prucalopride (IBS-C)",
+          "Faecal calprotectin is particularly important in elderly new-onset GI symptoms — escalated investigation threshold",
+          "Microscopic colitis (collagenous or lymphocytic colitis) is a common cause of IBS-D in older women — requires colonoscopy with biopsies for diagnosis (endoscopy appears normal; diagnosis only on biopsy); treat with budesonide"
+        ]
+      },
+      "post_infectious_ibs": {
+        "key_points": [
+          "PI-IBS is a distinct entity with specific aetiology — Campylobacter, Salmonella, Shigella, Yersinia, norovirus, rotavirus, Giardia are the most common precipitating pathogens",
+          "Risk factors for PI-IBS after gastroenteritis: female sex, younger age, severe initial infection, anxiety/depression at time of infection, antibiotic treatment",
+          "Approximately 10-15% of patients who experience acute gastroenteritis develop PI-IBS",
+          "Prognosis: PI-IBS tends to improve over time (spontaneous resolution in ~50% at 6 years) — importantly different from non-PI-IBS which is typically a lifelong relapsing-remitting condition",
+          "Probiotics particularly rationale in PI-IBS — microbiome disruption is a proven mechanism; Lactobacillus rhamnosus GG or multi-strain probiotics",
+          "Rifaximin may be particularly effective in PI-IBS (targets SIBO which can be precipitated by gastroenteritis)",
+          "Exclude ongoing infective cause (Giardia, Cryptosporidium) before diagnosing PI-IBS — stool OCP testing essential"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Annually before flu season",
+        "reason": "Viral illnesses including influenza significantly worsen IBS through multiple mechanisms: systemic immune activation increases gut mucosal immune activity and visceral hypersensitivity; fever affects gut motility; physical stress triggers IBS flares. Influenza has been documented as a trigger for post-infectious IBS. Annual vaccination reduces both flu illness and IBS exacerbations triggered by flu. Patients with severe IBS and comorbid anxiety are particularly vulnerable to illness-triggered flares."
+      },
+      {
+        "vaccine": "COVID-19 Vaccine (Annual Updated Booster)",
+        "frequency": "As per national guidelines",
+        "reason": "COVID-19 infection causes significant gut symptoms — the GI tract expresses ACE2 receptors that SARS-CoV-2 binds directly. Post-COVID GI sequelae include new or worsened IBS-like symptoms (post-COVID IBS has been documented as a post-infectious IBS variant). COVID illness triggers major IBS flares through systemic inflammation and psychological stress. Vaccination protects against severe COVID-19 and reduces post-COVID gut dysfunction risk."
+      },
+      {
+        "vaccine": "Hepatitis A Vaccine",
+        "frequency": "2-dose course (0, 6-12 months); for travellers and at-risk individuals",
+        "reason": "IBS patients frequently travel anxiously — they are more likely to visit remote destinations to 'test' their IBS. Hepatitis A (transmitted through contaminated food and water) causes severe acute hepatitis but can also trigger post-infectious IBS after the acute illness resolves. Travellers with IBS should be up to date with Hepatitis A vaccination before international travel.",
+        "note": "Twinrix (combined Hep A + B) recommended for travellers requiring both"
+      },
+      {
+        "vaccine": "Typhoid Vaccine",
+        "frequency": "Every 3 years (oral Ty21a) or single injection (Vi polysaccharide) for travel to endemic areas",
+        "reason": "Salmonella Typhi (typhoid) is a well-documented precipitant of post-infectious IBS (PI-IBS). IBS patients who develop typhoid after travel are at higher risk of PI-IBS development than those without pre-existing IBS predisposition. Typhoid vaccination before travel to South Asia, Africa, and Southeast Asia prevents typhoid and its potential gut-brain axis sequelae."
+      },
+      {
+        "vaccine": "Rotavirus Vaccine (Paediatric — Rotarix, RotaTeq)",
+        "frequency": "Oral vaccine — 2-3 doses from 6 weeks of age per childhood immunisation schedule",
+        "reason": "Rotavirus is a common precipitant of paediatric post-infectious IBS. Children who suffer severe rotavirus gastroenteritis have increased rates of IBS development in childhood and adolescence. Rotavirus vaccination dramatically reduces severe gastroenteritis in children and thus reduces the burden of post-infectious IBS in childhood."
+      },
+      {
+        "vaccine": "HPV Vaccine (Especially Relevant for Women)",
+        "frequency": "2-3 doses per national schedule for adolescents; catch-up to age 26",
+        "reason": "Chronic pelvic pain from HPV-related cervical lesions or treatment (LLETZ) shares mechanisms with IBS-related pelvic pain and can worsen IBS. While not directly treating IBS, HPV vaccination prevents future gynaecological pathology that may overlap with and worsen pelvic IBS symptoms in women."
+      },
+      {
+        "vaccine": "Mpox (Monkeypox) Vaccine — Selected High-Risk Groups",
+        "frequency": "2-dose series for eligible high-risk individuals",
+        "reason": "Mpox causes GI symptoms and proctitis (rectal IBS-like pain and altered bowel habits) — relevant to IBS patients with rectal involvement who may misattribute mpox proctitis to their IBS. Vaccination in eligible high-risk groups prevents mpox and its GI complications that could trigger or mimic IBS exacerbations."
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "First presentation with recurrent abdominal pain, bloating, and altered bowel habits lasting more than 4-6 weeks — formal IBS diagnosis, exclusion of organic disease, and management planning required",
+      "Rectal bleeding or blood mixed in stool — ALARM FEATURE — must not be attributed to IBS without investigation (haemorrhoids are common but rectal bleeding always requires examination)",
+      "Unintentional weight loss (more than 2-3 kg without intentional dieting) — alarm feature requiring urgent investigation",
+      "Symptoms starting after age 50 years — higher index of suspicion for organic disease; colonoscopy should be considered",
+      "Nocturnal symptoms consistently waking you from sleep (diarrhoea or severe pain) — unlike typical IBS; requires investigation for IBD or other organic cause",
+      "Symptoms not responding after 4-8 weeks of dietary changes and first-line treatments (antispasmodics, loperamide, fibre)",
+      "IBS significantly impacting work attendance, social life, or mental health (IBS-SSS >175) — specialist gastroenterology or IBS nurse referral warranted",
+      "New or changing symptoms in a previously stable IBS patient — change from pattern warrants reassessment",
+      "Concern about iron deficiency (extreme tiredness, pallor, breathlessness) in a patient with IBS-D — iron deficiency anaemia is an alarm feature",
+      "Severe anxiety or depression accompanying IBS — psychological therapy and possible antidepressant treatment",
+      "Women with IBS and severe pelvic pain — endometriosis should be excluded before attributing all symptoms to IBS",
+      "Faecal incontinence — despite IBS urgency, frank incontinence requires specialist anorectal assessment",
+      "Before starting any new IBS medication — to discuss options, tailoring to subtype, and monitoring plan"
+    ],
+
+    "emergency_signs": [
+      "Sudden severe abdominal pain, rigid abdomen, or shock — possible bowel perforation, ischaemia, or another surgical emergency — IBS DOES NOT CAUSE THESE — CALL EMERGENCY SERVICES IMMEDIATELY",
+      "Frank rectal bleeding — large amounts of bright red blood per rectum — possible lower GI haemorrhage from colorectal cancer, diverticular bleed, or vascular malformation — EMERGENCY",
+      "Black tarry stools (melaena) — upper GI bleeding — EMERGENCY",
+      "Severe abdominal pain with fever and rigidity — possible peritonitis or bowel obstruction — EMERGENCY",
+      "Sudden severe worsening of IBS symptoms with fever, blood PR, and rapid deterioration over hours to days — possible new inflammatory bowel disease, infective colitis, or ischaemic colitis presenting acutely — URGENT EMERGENCY ASSESSMENT",
+      "Severe dehydration from prolonged diarrhoea (dry mouth, no urination, collapse) — seek emergency care",
+      "Confusion or altered consciousness with GI symptoms — possible metabolic disturbance (severe electrolyte loss) or alternative serious diagnosis"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is IBS and why do I get it?",
+        "answer": "IBS (Irritable Bowel Syndrome) is a chronic condition affecting how the gut works — specifically the gut-brain connection. In IBS, the communication system between your brain and gut is dysregulated, making the gut overly sensitive and reactive. This causes the gut to respond excessively to normal stimuli like food, stress, or mild bloating that most people wouldn't notice. IBS is real, physiological, and not 'all in your head' — but it is genuinely influenced by both gut function and the nervous system. Causes include: genetics, gut-brain axis dysfunction, altered gut microbiome, previous gut infections, food sensitivities (particularly to FODMAPs), and psychological stress — which is why it's considered a biopsychosocial condition."
+      },
+      {
+        "question": "Does IBS cause cancer or progress to a more serious disease like Crohn's?",
+        "answer": "No — IBS does NOT cause bowel cancer, does NOT progress to Crohn's disease or ulcerative colitis (IBD), and does NOT cause permanent structural damage to the intestine. The gut lining in IBS is functionally abnormal but structurally normal (though there may be subtle microscopic immune changes). IBS does NOT shorten life expectancy. While IBS is chronic and can be very debilitating to quality of life, it is NOT dangerous in the way that cancers or inflammatory bowel diseases are. This is an important reassurance that significantly reduces anxiety-driven symptom amplification when patients understand it."
+      },
+      {
+        "question": "What is the Low FODMAP Diet and should I try it?",
+        "answer": "The Low FODMAP Diet eliminates FODMAPs — Fermentable Oligosaccharides, Disaccharides, Monosaccharides And Polyols — short-chain carbohydrates that are poorly absorbed in the small intestine and cause bloating, gas, pain, and altered bowel habits in IBS. Common high-FODMAP foods include: garlic, onion, wheat bread, apples, pears, milk, and many legumes. The diet has three phases: elimination (4-8 weeks), reintroduction (6-8 weeks — testing each FODMAP group individually), and personalisation (long-term tailored diet). Evidence shows 50-75% of IBS patients improve significantly on it. IMPORTANT: always do this diet with a dietitian — doing it alone risks nutritional deficiency and excessive restriction."
+      },
+      {
+        "question": "Is my IBS related to stress? Can stress cause IBS?",
+        "answer": "Absolutely — stress and IBS are deeply connected through the gut-brain axis. Psychological stress activates the hypothalamic-pituitary-adrenal (HPA) axis and releases stress hormones (cortisol, adrenaline) that directly affect gut motility, gut sensitivity, and intestinal permeability. Stress is the most consistently reported IBS trigger. However, IBS is NOT 'just stress' — there are genuine physiological changes in the gut (altered motility, visceral hypersensitivity, microbiome changes) that are not simply 'in your mind'. The relationship is bidirectional: IBS symptoms cause anxiety and stress, which then worsen the symptoms. This is why psychological therapies (CBT, gut-directed hypnotherapy) are among the MOST effective IBS treatments."
+      },
+      {
+        "question": "What is the most effective treatment for IBS?",
+        "answer": "No single treatment works for everyone — IBS management is highly individual. The most effective overall approaches: (1) Low FODMAP diet with a specialist dietitian — 50-75% of patients improve significantly; (2) Psychological therapies — CBT and gut-directed hypnotherapy achieve comparable or better results than medications for moderate-severe IBS; (3) Gut-directed hypnotherapy — 80-90% improvement in clinical studies; (4) Low-dose amitriptyline (10-75mg at night) — strongest pharmacological evidence for reducing IBS pain; (5) Peppermint oil (enteric-coated capsules) — evidence-based antispasmodic. In practice, combining dietary intervention, lifestyle changes (exercise, stress management), and targeted medication gives the best outcomes. NICE recommends trying dietary measures first, then pharmacotherapy, then psychological therapies if not improving — though often all three are used simultaneously."
+      },
+      {
+        "question": "What is the difference between IBS and IBD (Crohn's or Ulcerative Colitis)?",
+        "answer": "IBS and IBD are completely different conditions despite similar-sounding abbreviations. IBS (Irritable Bowel Syndrome): a functional disorder — the bowel looks normal on endoscopy, no ulcers, no erosions; no bleeding; no significant inflammation; not associated with cancer; does not shorten life; managed mainly with diet, lifestyle, and medications. IBD (Inflammatory Bowel Disease — Crohn's disease or Ulcerative Colitis): a structural disease — visible inflammation, ulcers, and erosions on endoscopy; can cause rectal bleeding; associated with increased cancer risk in long-term disease; requires immunosuppressive medications; can shorten life if severely uncontrolled. Key distinguishing features: blood in stool (IBD, not IBS), elevated faecal calprotectin (IBD, not IBS), weight loss and anaemia (IBD), nocturnal diarrhoea (IBD more than IBS), and normal endoscopy (IBS)."
+      },
+      {
+        "question": "I have IBS-D with constant diarrhoea and urgency — what treatments specifically help?",
+        "answer": "For IBS-D (diarrhoea-predominant), the following evidence-based treatments are most helpful: (1) Low FODMAP diet — particularly restricting lactose (dairy) and fructans (wheat, garlic, onion); (2) Loperamide (Imodium) 2-4mg before anticipated trigger situations (meals, going out) — reduces urgency and stool frequency; (3) Peppermint oil enteric-coated capsules — antispasmodic for cramping and urgency; (4) Low-dose amitriptyline (10-25mg at night) — slows gut transit AND reduces visceral pain; (5) Rifaximin (550mg TDS for 14 days) if bloating is prominent; (6) Ondansetron (4-8mg daily off-label) — reduces urgency and improves stool consistency; (7) Bile acid sequestrants (cholestyramine) if bile acid malabsorption (BAM) diagnosed. Also crucially: ensure coeliac disease has been excluded (blood test) and Giardia (stool antigen test)."
+      },
+      {
+        "question": "I have IBS-C — what can I take for the constipation and pain?",
+        "answer": "For IBS-C (constipation-predominant), the key is treating BOTH constipation AND pain simultaneously — regular constipation treatments like Lactulose only address stool consistency, not pain. Evidence-based IBS-C treatments: (1) Linaclotide (Constella/Linzess) — prescription secretagogue; reduces BOTH constipation AND abdominal pain (the only treatment type to do both); take 30-60 minutes before breakfast; (2) Psyllium husk (ispaghula/Isabgol) — soluble fibre; take with lots of water; improves stool consistency and reduces pain; (3) Prucalopride — accelerates colonic transit; once daily; (4) Polyethylene glycol (Movicol) — osmotic laxative for constipation; less bloating than lactulose; (5) Peppermint oil capsules — antispasmodic for cramping; (6) Low FODMAP diet tailored for IBS-C (avoid fructans, lactose); (7) Low-dose fluoxetine or citalopram (SSRIs accelerate gut transit — beneficial in IBS-C). Adequate water intake (2 litres daily) is essential with any constipation treatment."
+      },
+      {
+        "question": "Can probiotics help IBS?",
+        "answer": "Yes — probiotics have moderate evidence for IBS symptom improvement in clinical trials. A Cochrane meta-analysis found probiotics significantly better than placebo for global IBS symptoms and bloating. The key caveat: effects are strain-specific. Not all probiotics are the same. Best-evidenced strains for IBS: (1) Bifidobacterium longum 35624 (Align/Alflorex) — strongest evidence for IBS pain, bloating, and bowel habits; (2) VSL#3 (14-strain high-potency) — evidence for bloating specifically; (3) Lactobacillus rhamnosus GG — evidence in PI-IBS and paediatric IBS; (4) Saccharomyces boulardii — IBS-D. Trial a probiotic for 4-8 weeks — if beneficial, continue; if no benefit, try a different strain. Some patients notice initial increased gas in first 1-2 weeks as microbiome adjusts — this typically settles."
+      },
+      {
+        "question": "My doctor wants to prescribe amitriptyline for IBS — I'm not depressed. Why?",
+        "answer": "This is an extremely common and important question. Amitriptyline is being prescribed for IBS at a MUCH LOWER DOSE than it is used for depression (10-75mg vs 150-300mg for depression). At this low dose, amitriptyline works as a PAIN MODULATOR and gut motility modifier — not as an antidepressant. It works by: reducing abnormal gut pain signalling (central sensitisation), slowing intestinal transit (beneficial for IBS-D), improving sleep quality, and reducing visceral hypersensitivity. Multiple clinical trials prove its effectiveness for IBS abdominal pain — it is one of the most evidence-based pharmacological treatments for IBS pain. Studies show 70-80% of IBS patients prescribed low-dose amitriptyline benefit. Please do not refuse this medication based on the assumption it means you are being diagnosed with depression — it's a fundamentally different use."
+      },
+      {
+        "question": "What foods should I definitely avoid with IBS?",
+        "answer": "The most common IBS food triggers are: (1) GARLIC and ONION — the most potent triggers for most IBS patients (high fructans); use garlic-infused oil instead; (2) Wheat-based products (bread, pasta, pizza) — fructans in wheat; try gluten-free alternatives; (3) Dairy products containing lactose (milk, soft cheese, ice cream) — use lactose-free or hard cheeses; (4) Apples, pears, mango — high fructose; replace with berries, oranges, kiwi; (5) Legumes in large amounts (chickpeas, lentils, beans) — high GOS; use rinsed tinned versions in small portions; (6) Caffeine — coffee, strong tea; (7) Alcohol (especially beer); (8) Carbonated fizzy drinks; (9) Spicy foods; (10) Large meals. Individual triggers VARY ENORMOUSLY — keep a food diary and ideally work with a dietitian to do the full Low FODMAP elimination and reintroduction programme to identify YOUR specific triggers."
+      },
+      {
+        "question": "What is gut-directed hypnotherapy and does it work for IBS?",
+        "answer": "Gut-directed hypnotherapy (GDH) is a specialised form of clinical hypnotherapy where a trained therapist (or structured audio programme) induces a deep relaxation state and uses gut-specific visualisations, suggestions, and imagery to calm the gut-brain connection, reduce visceral hypersensitivity, alter gut motility, and improve psychological wellbeing. It is NOT stage hypnosis — you are fully in control throughout. The Manchester Protocol by Peter Whorwell and colleagues at Salford Royal is the most extensively studied format. Evidence: GDH achieves complete or near-complete IBS symptom remission in 80-90% of patients in clinical trials — one of the highest success rates of any IBS treatment. Benefits are sustained at 5-year follow-up in 73% of patients. It is now recommended in UK NICE and AGA guidelines. The Nerva app provides evidence-based self-directed gut hypnotherapy and is a practical accessible option."
+      }
+    ]
+  }
+}

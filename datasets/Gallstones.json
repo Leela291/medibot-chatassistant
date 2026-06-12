@@ -1,0 +1,1013 @@
+{
+  "disease": {
+    "id": "DIS-022",
+    "name": "Gallstones (Cholelithiasis)",
+    "scientific_name": "Cholelithiasis / Cholecystolithiasis / Choledocholithiasis / Biliary Calculus Disease",
+    "icd_10_code": "K80.0 (Calculus of gallbladder with acute cholecystitis); K80.1 (Calculus of gallbladder with other cholecystitis); K80.2 (Calculus of gallbladder without cholecystitis — biliary colic); K80.3 (Calculus of bile duct with cholangitis); K80.4 (Calculus of bile duct with cholecystitis); K80.5 (Calculus of bile duct without cholangitis or cholecystitis — choledocholithiasis); K81.0 (Acute cholecystitis); K81.1 (Chronic cholecystitis); K83.0 (Cholangitis); K85.1 (Biliary acute pancreatitis); K82.2 (Perforation of gallbladder); C23 (Malignant neoplasm of gallbladder)",
+    "category": "Gastroenterology / Hepatobiliary / General Surgery",
+    "overview": {
+      "description": "Gallstones (cholelithiasis) are solid crystalline deposits that form within the gallbladder — a small pear-shaped organ beneath the liver that stores and concentrates bile (a digestive fluid produced by the liver). Gallstones form when bile becomes supersaturated with cholesterol, bilirubin, or calcium salts, which then precipitate and crystallise over months to years. They range from tiny sand-like granules to stones larger than a golf ball. Gallstone disease is one of the most prevalent and economically significant digestive disorders globally — affecting approximately 10-15% of adults in Western populations and a growing proportion in India (particularly among urban women and the Gangetic belt population). The majority of gallstones are asymptomatic ('silent stones') and require no treatment. When gallstones cause symptoms, biliary colic — episodic, severe, cramping right upper quadrant pain typically triggered by fatty meals — is the most common presentation. Complications arise when stones obstruct the cystic duct (causing acute cholecystitis), the common bile duct (choledocholithiasis — causing jaundice), or the ampulla of Vater (gallstone pancreatitis), or when the gallbladder becomes infected (cholangitis — a medical emergency). Laparoscopic cholecystectomy (keyhole gallbladder removal) is the definitive treatment for symptomatic gallstone disease and remains one of the most commonly performed surgical procedures worldwide. In India, the Gangetic belt (Uttar Pradesh, Bihar, West Bengal) carries the world's highest rates of gallbladder cancer — a devastating consequence of longstanding gallstone disease in conjunction with Salmonella typhi carrier state — making timely management of gallstones in this population critically important.",
+      "affected_organ": "Primarily the gallbladder; bile ducts (common bile duct, hepatic ducts, cystic duct); ampulla of Vater; associated organs: pancreas (biliary pancreatitis), liver (hepatic effects of biliary obstruction), duodenum",
+      "prevalence": "10-15% of adults in Western populations have gallstones; 5-10% of Indians (higher in urban areas and northern Indian women); approximately 175 million people in the USA; gallstone disease accounts for over 750,000 cholecystectomies per year in the USA alone; in India: 15-20% of urban North Indian women over 40 years; Gangetic belt (UP, Bihar) has extremely high rates of both gallstones and gallbladder cancer",
+      "age_group": "All ages; incidence increases with age; rare before 20 years; peak prevalence in women aged 40-60 years; men affected at older ages (60-70 years); 'the rule of 5 Fs': Fat, Female, Forty, Fertile, Fair",
+      "is_contagious": false,
+      "is_manageable": true,
+      "is_curable": true,
+      "is_curable_note": "Symptomatic gallstones are cured by cholecystectomy (gallbladder removal); CBD stones are treated by ERCP; asymptomatic stones may not require treatment",
+      "chronic": true,
+      "is_chronic_note": "Gallstones once formed are lifelong without treatment; biliary colic recurs in 70% within 2 years without surgery; silent stones may remain asymptomatic indefinitely",
+      "is_preventable": true,
+      "key_fact": "Gallbladder cancer is the most common biliary tract cancer in India and the 5th most common GI cancer — with the world's highest incidence in the Gangetic belt (Delhi, UP, Bihar, West Bengal). It arises almost exclusively on a background of gallstones and chronic cholecystitis. Early cholecystectomy for symptomatic gallstones in high-risk populations is therefore both therapeutic AND potentially life-saving as a cancer prevention strategy."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Cholesterol Gallstones",
+        "description": "The most common type — accounting for 80-85% of gallstones in Western countries and an increasing proportion in India (particularly in urban populations adopting Western diets). Cholesterol gallstones form when bile becomes supersaturated with cholesterol relative to bile salts and phospholipids — the solubilising components. When the cholesterol saturation index exceeds the capacity of bile salts and lecithin to keep cholesterol in solution, cholesterol precipitates into monohydrate crystals, which then nucleate and grow into macroscopic stones.",
+        "composition": "Predominantly cholesterol (>70% cholesterol by weight); may contain variable amounts of calcium carbonate, phosphate, or bilirubin",
+        "macroscopic_appearance": "Typically large (single or few), oval or round, pale yellow to light brown; often faceted when multiple (touching surfaces flatten); may be solitary (large, 'lonely stone') or multiple; floating or sinking in water (density less than or equal to bile)",
+        "radiological_appearance": "Radiolucent (not visible on plain X-ray); visible on ultrasound; 10-15% have calcified rim visible on X-ray (calcium carbonate coating)",
+        "formation_mechanisms": [
+          "Hepatic hypersecretion of cholesterol into bile — excess cholesterol production (obesity, diabetes, rapid weight loss, oestrogen therapy)",
+          "Reduced bile salt pool — impaired bile salt synthesis; terminal ileum disease or resection (reduces bile salt reabsorption in enterohepatic circulation); long-term TPN (impairs enterohepatic circulation)",
+          "Gallbladder hypomotility (stasis) — delayed gallbladder emptying allows cholesterol supersaturation time to crystallise; impaired fasting/postprandial contractions; prolonged fasting; TPN; pregnancy; vagotomy",
+          "Mucin hypersecretion — gallbladder mucin gel acts as nucleating matrix for cholesterol crystal growth; mucin hypersecretion is an early event in gallstone formation",
+          "Shortened nucleation time — impaired anti-nucleating factors in bile (apolipoprotein A-I, A-II); enhanced pro-nucleating factors (fibronectin, IgG, glycoproteins)"
+        ],
+        "risk_factors_specific": "Obesity; female sex; oestrogen (pregnancy, OCP, HRT); diabetes mellitus; rapid weight loss (>1.5 kg/week mobilises cholesterol into bile); hyperlipidaemia; Western diet (low fibre, high saturated fat); metabolic syndrome; ileal disease or resection; total parenteral nutrition"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Black Pigment Gallstones",
+        "description": "Composed primarily of insoluble calcium bilirubinate polymer with varying amounts of calcium phosphate and calcium carbonate. Black pigment stones form when there is excess unconjugated bilirubin in bile (from haemolysis) that precipitates with calcium. They are always formed within the gallbladder and are strongly associated with chronic haemolytic conditions.",
+        "composition": "Calcium bilirubinate polymer; calcium carbonate; calcium phosphate; small amounts of cholesterol (<20%); no cholesterol crystals",
+        "macroscopic_appearance": "Small (2-5 mm typically), multiple, jet black, irregular or spiculated surface; often numerous (hundreds); very hard; jet black on cut surface",
+        "radiological_appearance": "Frequently radiopaque on plain X-ray (visible in 40-50% of cases — calcium content) — important distinguishing feature from cholesterol stones; echogenic on ultrasound with posterior acoustic shadowing",
+        "associated_conditions": [
+          "Chronic haemolytic anaemia — sickle cell disease (most important; up to 70% of sickle cell patients develop pigment stones by age 30); hereditary spherocytosis; thalassaemia; G6PD deficiency; malaria (especially in India — increased RBC turnover)",
+          "Cirrhosis — impaired hepatic conjugation of bilirubin; hepatic dysfunction increases unconjugated bilirubin in bile",
+          "Ileal disease or resection — increased colonic absorption of deconjugated bilirubin",
+          "Total parenteral nutrition",
+          "Advanced age"
+        ],
+        "treatment_note": "Black pigment stones are NOT amenable to bile acid dissolution therapy (no cholesterol component) — surgery (laparoscopic cholecystectomy) is the only effective treatment"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Brown Pigment Gallstones",
+        "description": "Formed primarily in the bile ducts (intrahepatic and extrahepatic) rather than the gallbladder — an important distinguishing feature. Brown pigment stones are strongly associated with biliary tract infection and parasitic infestation. Bacteria (particularly E. coli and Klebsiella) produce beta-glucuronidase enzyme which deconjugates bilirubin diglucuronide back to insoluble unconjugated bilirubin — which then precipitates with calcium as calcium bilirubinate; bacterial phospholipases also degrade lecithin to palmitate and stearate which form calcium soaps. Brown stones are the most common primary ductal stones found in Southeast Asia and India — particularly associated with Ascaris lumbricoides (roundworm) and Clonorchis sinensis (liver fluke) biliary infestation.",
+        "composition": "Calcium bilirubinate; calcium palmitate and stearate (calcium soaps from fatty acid precipitation); mucin; bacterial ghosts (dead bacteria)",
+        "macroscopic_appearance": "Soft, crumbly, earthy brown, easily crushed between fingers; variable size; often found in intrahepatic and extrahepatic bile ducts rather than gallbladder; may be numerous",
+        "radiological_appearance": "Usually radiolucent on plain X-ray (low calcium content compared to black stones); visible on ultrasound",
+        "associated_conditions": [
+          "Biliary tract infection (E. coli, Klebsiella, Bacteroides, Clostridium)",
+          "Biliary parasitic infestation — Ascaris lumbricoides (roundworm entering common bile duct via ampulla — very common cause in India); Clonorchis sinensis (Oriental liver fluke); Opisthorchis species",
+          "Choledochal cysts (congenital bile duct cysts)",
+          "Biliary strictures (creates biliary stasis and infection)",
+          "Post-operative biliary stricture; post-anastomotic stricture",
+          "Primary sclerosing cholangitis (PSC)",
+          "Recurrent pyogenic cholangiohepatitis (RPH) — a specific syndrome in Southeast Asia and India characterised by recurrent brown stone formation, biliary strictures, and cholangitis"
+        ],
+        "india_note": "Brown pigment primary ductal stones are important in India due to high prevalence of intestinal parasitism (Ascaris migration into bile ducts) and recurrent pyogenic cholangiohepatitis; differs from Western biliary stone disease"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Asymptomatic (Silent) Gallstones",
+        "description": "The large majority (70-80%) of all people with gallstones have NO symptoms at diagnosis — the stones are found incidentally on abdominal ultrasound performed for another indication. Silent gallstones require no treatment in most cases — the annual risk of developing symptoms is approximately 1-3% per year, declining with time; cumulative 20-year risk of developing symptoms is only about 20%. However, silent gallstones are not benign in all populations — in the Gangetic belt of India (and in certain high-risk groups), the risk of gallbladder cancer complicating chronic asymptomatic gallstone disease is significantly elevated, changing the risk-benefit calculation for prophylactic cholecystectomy.",
+        "management_philosophy": "The natural history of asymptomatic gallstones is generally benign; most international guidelines recommend conservative management (watchful waiting) for truly asymptomatic stones in otherwise healthy patients; exceptions include: gallstones in high-risk areas for gallbladder cancer; specific comorbidities; patient preference after counselling",
+        "prophylactic_cholecystectomy_indications": [
+          "Gallstones in the Gangetic belt (North India, particularly UP, Bihar, Jharkhand, West Bengal) — high gallbladder cancer risk warrants early cholecystectomy; even single asymptomatic stones in young adults in this region may justify surgery",
+          "Large gallstones (>3 cm diameter) — significantly higher gallbladder cancer risk; some guidelines suggest prophylactic cholecystectomy",
+          "Gallbladder polyps >10 mm (or >6 mm with gallstones) — polyps with gallstones have higher cancer risk",
+          "Porcelain gallbladder (diffuse gallbladder wall calcification) — historical association with cancer, though selective calcification (patchy) has lower risk than complete calcification",
+          "Patients with sickle cell disease — prophylactic cholecystectomy often recommended at time of splenectomy or when undergoing other abdominal surgery",
+          "Patients undergoing bariatric surgery — concurrent cholecystectomy considered given very high post-bariatric gallstone risk",
+          "Immunocompromised patients (post-transplant, HIV) — higher risk of complicated cholecystitis; lower threshold for prophylactic surgery",
+          "Anomalous pancreatobiliary duct junction (APBDJ) — congenital anatomical variant with very high gallbladder cancer risk even without stones"
+        ]
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Biliary Colic — Symptomatic Gallstones",
+        "description": "The typical symptomatic presentation of gallstone disease — episodic pain from transient obstruction of the cystic duct by a gallstone. When a stone migrates from the gallbladder lumen into the cystic duct (the narrow tube connecting the gallbladder to the common bile duct), the gallbladder contracts vigorously against the obstruction — generating severe colicky pain. The term 'biliary colic' is a misnomer — the pain is NOT truly colicky (i.e., it does NOT come and go in waves like intestinal or ureteric colic); it is constant and sustained, lasting 30 minutes to 6 hours, then subsides when the stone either passes into the CBD or falls back into the gallbladder lumen. Recurrence is very common (70% within 2 years).",
+        "pain_characteristics": "Right upper quadrant or epigastric; constant (not colicky despite the name); severe, cramping, 'gripping' quality; typically lasts 30 minutes to 6 hours (if >6 hours, suspect acute cholecystitis); may radiate to right shoulder tip (referred via phrenic nerve — C4 dermatome) or right subscapular region (back); typically post-prandial (30-60 minutes after fatty meal); often nocturnal (wakes patient from sleep); associated with nausea and vomiting",
+        "triggers": "Fatty, fried, or rich foods (fat triggers CCK release → vigorous gallbladder contraction); large meals; alcohol; any sudden increase in CCK secretion",
+        "management": "Definitive: laparoscopic cholecystectomy (standard of care for recurrent biliary colic); Symptomatic: diclofenac (NSAID — first-line for acute biliary colic pain; reduces gallbladder smooth muscle spasm via prostaglandin inhibition); hyoscine butylbromide (Buscopan — antispasmodic); opioids for severe pain"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Acute Cholecystitis",
+        "description": "Acute inflammation of the gallbladder — the most common complication of gallstone disease, occurring when persistent obstruction of the cystic duct leads to chemical inflammation (bile stasis and concentration), mucosal injury, and secondary bacterial infection. Initially chemical (non-infectious) inflammation, evolving to bacterial superinfection within hours to days. Acute cholecystitis requires hospital admission and, in the majority of patients, surgical management.",
+        "pathogenesis": "Gallstone impacted in cystic duct → bile stasis → bile salt concentration → mucosal injury → prostaglandin-mediated inflammation → oedema and distension of gallbladder wall → secondary bacterial translocation from gut (E. coli, Klebsiella, Enterococcus, Bacteroides) → empyema (pus) or gangrene if untreated",
+        "clinical_features": "Persistent RUQ pain (unlike biliary colic — does NOT resolve within 6 hours); fever (38-39°C); nausea and vomiting; MURPHY'S SIGN (positive in 90% of acute cholecystitis): examiner presses two fingers into RUQ while patient breathes in deeply — sharp pain and inspiratory arrest when inflamed gallbladder contacts examiner's fingers — highly specific for acute cholecystitis; RUQ guarding; elevated WBC and CRP; mild elevation of LFTs (mainly ALP)",
+        "grades_tokyo_guidelines": [
+          "Grade I (Mild): Uncomplicated acute cholecystitis in healthy patient; responds to antibiotics and conservative management; early laparoscopic cholecystectomy within 72 hours preferred",
+          "Grade II (Moderate): Marked local inflammation; elevated WBC >18,000; symptoms >72 hours; pericholecystic abscess; difficult laparoscopic cholecystectomy anticipated; manage with antibiotics ± percutaneous cholecystostomy; interval cholecystectomy after 6 weeks",
+          "Grade III (Severe): Organ dysfunction (respiratory, renal, hepatic, coagulation, cardiovascular, neurological failure); septic shock; requires ICU; percutaneous cholecystostomy as bridge; delayed cholecystectomy"
+        ],
+        "acalculous_cholecystitis": "Acute cholecystitis WITHOUT gallstones — accounts for 5-10% of acute cholecystitis; occurs in critically ill patients (ICU, trauma, major surgery, burns); pathogenesis: gallbladder ischaemia, bile stasis, concentrated bile in hypoperfused gallbladder; very high mortality (30-50%); diagnosed on ultrasound (thickened gallbladder wall, pericholecystic fluid, no stones); treated with percutaneous cholecystostomy (high operative risk)"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Choledocholithiasis — Common Bile Duct Stones",
+        "description": "Presence of gallstones in the common bile duct (CBD) — either having migrated from the gallbladder (secondary CBD stones — by far the most common) or formed primarily within the bile duct (primary CBD stones from biliary infection or stasis). CBD stones cause biliary obstruction — resulting in jaundice, elevated liver enzymes, and potentially life-threatening cholangitis or biliary pancreatitis. Choledocholithiasis is present in 10-15% of patients with symptomatic gallstones at the time of cholecystectomy.",
+        "clinical_spectrum": "Asymptomatic (25% of CBD stones — may pass spontaneously); biliary colic from CBD obstruction; obstructive jaundice (cholestasis); ascending cholangitis (EMERGENCY); biliary pancreatitis",
+        "diagnosis": "Elevated serum bilirubin (>34 mcmol/L), ALP (>3× ULN), GGT; dilated CBD on ultrasound (>6 mm in patients with gallbladder; >8 mm post-cholecystectomy); MRCP (gold standard non-invasive — 95% sensitivity for CBD stones); ERCP (diagnostic and therapeutic simultaneously); EUS (endoscopic ultrasound — highly sensitive, less invasive than ERCP)",
+        "management": "ERCP with sphincterotomy and stone extraction (gold standard for CBD stones); laparoscopic CBD exploration (at time of cholecystectomy); open CBD exploration (rarely needed today)"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Ascending Cholangitis — Biliary Tract Infection",
+        "description": "A life-threatening bacterial infection of the bile ducts caused by biliary obstruction (most commonly from CBD stones) with bacterial overgrowth and translocation. Cholangitis results from the combination of bile duct obstruction (creating a closed space) and bacterial contamination — bacteria ascend from the duodenum through the ampulla of Vater. Without prompt drainage of the obstructed biliary system, cholangitis rapidly progresses to biliary sepsis, septic shock, and multi-organ failure.",
+        "charcots_triad": "The classic diagnostic triad: (1) Fever with rigors; (2) Jaundice (yellow eyes/skin); (3) Right upper quadrant pain — present in 70% of cholangitis patients; the combination is highly specific",
+        "reynolds_pentad": "Charcot's triad PLUS: (4) Hypotension (septic shock); (5) Altered mental status (confusion, obtundation) — Reynolds' pentad indicates SEVERE (Grade III) cholangitis with septic shock; mortality >25% without immediate biliary drainage",
+        "causative_organisms": "E. coli (most common — 70%); Klebsiella; Pseudomonas; Enterococcus; Bacteroides; Clostridium; polymicrobial",
+        "management": "EMERGENCY: IV antibiotics (piperacillin-tazobactam or meropenem for severe cases); IV fluids resuscitation; urgent biliary drainage by ERCP (within 24-48 hours; within 12 hours for severe cholangitis) — stone extraction and stent/nasobiliary drain placement; ICU for Grade III; percutaneous transhepatic drainage if ERCP fails or not possible",
+        "grading": "Grade I (Mild): responds to IV antibiotics; Grade II (Moderate): does not respond to antibiotics within 24 hours; Grade III (Severe): organ dysfunction — emergency drainage within 12 hours"
+      },
+      {
+        "id": "TYPE-09",
+        "name": "Gallstone Pancreatitis",
+        "description": "Acute pancreatitis triggered by a gallstone transiently or permanently impacting at the ampulla of Vater (where the CBD and pancreatic duct join before entering the duodenum) — obstructing pancreatic duct outflow and triggering pancreatic enzyme activation within the gland. The most common cause of acute pancreatitis globally (40-50% of acute pancreatitis cases); the second most common being alcohol. Gallstone pancreatitis can range from mild self-limiting to severe necrotising pancreatitis with multi-organ failure and 30% mortality.",
+        "pathogenesis": "Gallstone impacted at ampulla → pancreatic duct obstruction → intraductal hypertension → premature activation of trypsinogen to trypsin within pancreatic acinar cells → autodigestion of pancreatic parenchyma → local and systemic inflammatory response (SIRS → MOF in severe cases)",
+        "clinical_features": "Severe epigastric pain radiating straight to the back ('boring' through to back); nausea and vomiting; tachycardia; tenderness and guarding in upper abdomen; elevated serum amylase (>3× ULN) or lipase (>3× ULN — more sensitive and specific); may have jaundice if stone still impacted at ampulla",
+        "severity_assessment": "Revised Atlanta Classification: Mild (no organ failure, no local complications — 80% of cases; resolves within 1 week); Moderate severe (transient organ failure <48 hours or local complications — pancreatic/peripancreatic fluid collections); Severe (persistent organ failure >48 hours — mortality 30-40%)",
+        "management": "IV fluid resuscitation (the most critical initial treatment — aggressive early hydration reduces mortality); nil by mouth initially; IV analgesia; ERCP within 24-72 hours if CBD stone still present (biliary obstruction + cholangitis); cholecystectomy during same admission (mild gallstone pancreatitis) or after recovery (severe) to prevent recurrence; recurrence rate 25-30% without cholecystectomy"
+      },
+      {
+        "id": "TYPE-10",
+        "name": "Gallbladder Cancer (Carcinoma of the Gallbladder)",
+        "description": "The most common biliary tract malignancy and one of the most lethal GI cancers — median survival for advanced disease is 4-6 months. Gallbladder cancer arises in the setting of chronic gallstone disease and chronic cholecystitis (gallstones present in 75-90% of cases); gallstones cause chronic mucosal irritation, inflammation, metaplasia, and carcinogenesis over 10-20 years. India has the world's highest incidence of gallbladder cancer — particularly concentrated in the Gangetic belt (Delhi NCR, Uttar Pradesh, Bihar, West Bengal) where it is the most common GI malignancy. The concurrent presence of Salmonella typhi carrier state (typhoid infection) with gallstones significantly amplifies carcinogenesis — typhoid carriers have a 6× higher risk of gallbladder cancer. Surgery (radical cholecystectomy with liver resection, lymph node clearance) is the only potentially curative option — possible only in approximately 25-30% of patients at diagnosis.",
+        "risk_factors_specific": [
+          "Large gallstones (>3 cm) — 10× higher cancer risk vs small stones",
+          "Gallbladder polyp >10 mm (especially sessile with gallstones)",
+          "Anomalous pancreatobiliary junction (APBDJ) — congenital malunion of the CBD and pancreatic duct outside the duodenal wall → reflux of pancreatic juice into gallbladder → very high cancer risk",
+          "Porcelain gallbladder (calcification of gallbladder wall)",
+          "Salmonella typhi chronic carrier state (particularly important in India — Gangetic belt)",
+          "Chronic cholecystitis (longstanding inflammation)",
+          "Female sex (3-4× more common in women)",
+          "North Indian female geography (Gangetic belt — UP, Bihar, West Bengal)",
+          "Industrial chemical exposure (rubber, textile industries)",
+          "Primary sclerosing cholangitis (PSC)"
+        ],
+        "india_significance": "The Gangetic belt of India has an age-standardised incidence rate of 27 per 100,000 women — the highest in the world (10× Western rates). The region's combination of: very high H. pylori prevalence, high typhoid carrier state, high gallstone prevalence in women, poor access to timely surgery, and possible genetic factors creates a perfect storm for gallbladder carcinogenesis. Early cholecystectomy for symptomatic gallstones in this region is a critical cancer prevention strategy.",
+        "early_detection": "Early gallbladder cancer (T1/T2) discovered incidentally at cholecystectomy for 'benign' disease — increasingly common with careful pathological examination; management differs by depth of invasion; T1a (limited to mucosa) — simple cholecystectomy curative; T1b/T2 — requires radical re-resection (liver resection, lymphadenectomy)"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Asymptomatic Gallstones (Silent Cholelithiasis)",
+        "description": "Gallstones present on imaging without symptoms. The large majority of all diagnosed gallstones.",
+        "criteria": "Gallstones detected incidentally on ultrasound; no biliary colic; no jaundice; no fever; normal LFTs; no complications identified",
+        "functional_impact": "None — patient completely unaware in most cases",
+        "management": "Watchful waiting with annual clinical review in most patients; counsel on symptoms to watch for (biliary colic, jaundice, fever — when to seek urgent care); consider prophylactic cholecystectomy for high-risk groups (Gangetic belt, large stones >3 cm, polyps, porcelain GB); low-fat diet advice",
+        "criteria_for_upgrade": "Development of biliary colic; jaundice; fever; elevated LFTs"
+      },
+      {
+        "level": 2,
+        "name": "Biliary Colic — Symptomatic Uncomplicated Gallstones",
+        "description": "Episodic biliary pain from cystic duct obstruction without progression to cholecystitis.",
+        "criteria": "Episodic RUQ or epigastric pain, 30 min to 6 hours; triggered by fatty meals; no fever; no jaundice; normal or mildly elevated LFTs; ultrasound: gallstones in gallbladder, no cholecystitis features (no wall thickening, no pericholecystic fluid, no distension)",
+        "functional_impact": "Severely painful episodes disrupting daily life and food choices; significant anxiety about recurrence",
+        "management": "Acute attack: diclofenac 75 mg IM or IV (FIRST LINE for acute biliary colic pain); hyoscine butylbromide 20 mg IV/IM; opioids if uncontrolled. Definitive: elective laparoscopic cholecystectomy (standard of care); counsel patient that 70% have recurrence within 2 years without surgery; UDCA if surgery refused or not fit",
+        "criteria_for_upgrade": "Pain persisting >6 hours; fever developing; jaundice; increasing WBC or CRP"
+      },
+      {
+        "level": 3,
+        "name": "Acute Cholecystitis / Uncomplicated CBD Stones",
+        "description": "Acute gallbladder inflammation or CBD stones requiring hospital admission and planned intervention.",
+        "criteria": "Acute cholecystitis: persistent RUQ pain >6 hours; fever; positive Murphy's sign; WBC >12,000; elevated CRP; ultrasound features of cholecystitis; OR choledocholithiasis with mild jaundice (bilirubin <85 mcmol/L) and dilated CBD without systemic infection",
+        "functional_impact": "Requires hospital admission; unable to eat; pain on movement; IV medications required",
+        "management": "Hospital admission; nil by mouth initially; IV fluids; IV antibiotics (co-amoxiclav or cefuroxime); IV analgesia (diclofenac IV, opioids); early laparoscopic cholecystectomy (within 72 hours — gold standard for Grade I-II cholecystitis); ERCP for CBD stones (within 72 hours); surgical and gastroenterology team involvement",
+        "criteria_for_upgrade": "High fever with rigors; jaundice developing; hypotension; altered consciousness; failure to improve within 24 hours"
+      },
+      {
+        "level": 4,
+        "name": "Severe / Life-Threatening Complications",
+        "description": "Life-threatening biliary complications requiring emergency intervention: severe cholangitis (Grade III), gallstone pancreatitis with organ failure, gangrenous cholecystitis, gallbladder perforation, or biliary septic shock.",
+        "criteria_emergency": [
+          "Ascending cholangitis with Reynolds' pentad (fever + jaundice + RUQ pain + HYPOTENSION + CONFUSION) — biliary sepsis",
+          "Severe gallstone pancreatitis with organ dysfunction (renal failure, respiratory failure, cardiovascular compromise)",
+          "Gangrenous cholecystitis (wall necrosis) — ultrasound: thick heterogeneous wall, pericholecystic fluid, gas in wall",
+          "Gallbladder perforation with generalised peritonitis — board-like abdomen, septic shock",
+          "Empyema of gallbladder — pus-filled gallbladder under pressure",
+          "Biliary septic shock — hypotension unresponsive to initial fluid resuscitation"
+        ],
+        "management": "ICU admission; urgent ERCP within 12 hours for severe cholangitis (biliary drainage is life-saving — definitive over antibiotics alone); emergency surgery for perforation/gangrenous cholecystitis; aggressive IV fluid resuscitation; IV broad-spectrum antibiotics (piperacillin-tazobactam or meropenem); vasopressors for shock; percutaneous cholecystostomy as bridge to surgery in high-risk patients",
+        "mortality": "Severe cholangitis with septic shock: 10-30%; Severe necrotising pancreatitis: 20-40%; Gallbladder perforation with peritonitis: 20-30%"
+      }
+    ],
+
+    "causes": {
+      "causative_mechanisms_overview": {
+        "cholesterol_supersaturation": "Excess hepatic cholesterol secretion combined with reduced bile salt pool — bile becomes supersaturated with cholesterol which then crystallises",
+        "bilirubin_excess": "Excess unconjugated bilirubin (haemolysis) or bacterial deconjugation precipitates as calcium bilirubinate",
+        "gallbladder_stasis": "Reduced gallbladder contractility allows nucleation and growth of crystals into macroscopic stones",
+        "infection": "Biliary bacteria produce enzymes that deconjugate bilirubin and hydrolyse phospholipids — forming brown pigment stones in ducts"
+      },
+      "risk_factors": [
+        "Female sex — women have 2-3× higher risk than men until menopause; oestrogen increases hepatic cholesterol secretion and reduces bile salt synthesis; progesterone reduces gallbladder motility",
+        "Age — risk doubles every decade; 10-15% prevalence at age 50, rising to 20-25% by age 70; ageing increases cholesterol saturation of bile",
+        "Obesity — the single most important modifiable risk factor; BMI >30 triples gallstone risk; abdominal obesity; excess cholesterol secretion into bile",
+        "Pregnancy — multiple pregnancies; oestrogen + progesterone combined impair gallbladder contractility and increase cholesterol saturation; 30% of pregnant women develop biliary sludge; 12% develop stones",
+        "Oral contraceptive pill (OCP) and hormone replacement therapy (HRT) — oestrogen increases hepatic VLDL secretion and cholesterol output into bile; risk returns to normal after stopping",
+        "Rapid weight loss — either dietary (crash dieting, VLCD <600 kcal/day) or surgical (bariatric surgery — gastric bypass, sleeve gastrectomy); mobilises large amounts of cholesterol into bile during fat catabolism; gallstone formation in 30-40% of patients within 6 months of bariatric surgery; UDCA prophylaxis recommended",
+        "Diabetes mellitus and insulin resistance — hyperinsulinaemia increases hepatic cholesterol synthesis; diabetic autonomic neuropathy impairs gallbladder motility; dyslipidaemia",
+        "Ileal disease or resection — Crohn's disease affecting terminal ileum; ileal resection for any cause; ileostomy — impairs bile salt reabsorption (ileal enterohepatic circulation); reduced bile salt pool leads to cholesterol supersaturation",
+        "Total parenteral nutrition (TPN) — prolonged TPN (>4 weeks) causes gallbladder stasis (no enteral stimulus for CCK-driven contraction); gallbladder sludge in 50% and stones in 30% of long-term TPN patients",
+        "Haemolytic anaemia — sickle cell disease; hereditary spherocytosis; thalassaemia; G6PD deficiency; malaria — excess haemolysis increases unconjugated bilirubin load → black pigment stones",
+        "Cirrhosis — impaired hepatic conjugation; altered bile composition; portal hypertension; increased pigment stone formation",
+        "Biliary tract infection and parasitism — Ascaris lumbricoides migration into bile ducts; Clonorchis sinensis (oriental liver fluke); Salmonella typhi chronic carriage — particularly relevant in India; brown pigment stone formation",
+        "Drugs — octreotide (somatostatin analogue — inhibits CCK-stimulated gallbladder contraction → stasis; used for acromegaly, carcinoid, variceal bleeding); ceftriaxone (precipitates in bile forming calcium ceftriaxone pseudolithiasis — reversible on stopping; common in children on IV ceftriaxone); fibrates (paradoxically increase biliary cholesterol secretion despite lowering serum cholesterol)",
+        "Spinal cord injury — neurogenic gallbladder dysfunction; impaired motility; very high gallstone risk",
+        "Native American ethnicity (particularly Pima Indians) — highest cholesterol gallstone prevalence in the world; genetic ABCG5/G8 transporter variants",
+        "North Indian female geography (Gangetic belt) — highest gallbladder cancer risk globally; gallstone + typhoid carrier combination"
+      ]
+    },
+
+    "symptoms": {
+      "overview": "The spectrum of gallstone disease ranges from complete silence (the majority) to acute life-threatening emergencies. The key to diagnosis is recognising the characteristic pattern of biliary pain — episodic, severe, right upper quadrant or epigastric, radiating to the right shoulder, triggered by fatty or rich foods, lasting 30 minutes to 6 hours. Pain that persists beyond 6 hours, is accompanied by fever, or is associated with jaundice indicates complications requiring urgent hospital assessment.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-1201",
+          "name": "Biliary Colic — Right Upper Quadrant Pain",
+          "description": "The cardinal symptom of symptomatic gallstone disease. Characterised by sudden-onset, severe, constant (NOT waxing and waning) pain in the right upper quadrant (RUQ) or epigastrium (upper middle abdomen), typically beginning 30-60 minutes after a fatty or large meal. The pain is described as 'gripping', 'cramping', 'squeezing', or 'pressure-like'; it may radiate to the right shoulder tip (referred pain via the phrenic nerve — C4 dermatome from the inflamed diaphragmatic peritoneum) or the right subscapular region (back). The pain typically plateaus in severity and then subsides over 30 minutes to 6 hours — distinguishing it from cholecystitis (which persists >6 hours). Patients are restless during the episode (unlike peptic ulcer pain which is relieved by still lying). Nausea and vomiting are invariably present.",
+          "severity": "Severe — often described as 'the worst pain of my life' during acute episodes",
+          "onset": "30-60 minutes after fatty or large meals; often nocturnal",
+          "clinical_importance": "DURATION OF PAIN IS THE CRITICAL DIFFERENTIATOR: pain resolving within 6 hours = biliary colic (uncomplicated); pain persisting beyond 6 hours = suspect acute cholecystitis"
+        },
+        {
+          "id": "SYM-1202",
+          "name": "Jaundice (Obstructive/Cholestatic Pattern)",
+          "description": "Yellow discolouration of skin and sclera (whites of eyes) from conjugated hyperbilirubinaemia — indicating bile duct obstruction from a CBD stone or extrinsic compression. Obstructive jaundice from gallstones has a characteristic pattern: yellow eyes and skin; dark tea-coloured urine (bilirubin in urine); pale/clay/putty-coloured stools (absence of bile pigment in intestine); pruritus (itching from bile salt deposition in skin — often intense and diffuse, worse at night). Elevated serum bilirubin, ALP, and GGT (cholestatic liver enzyme pattern — distinguishing from hepatocellular jaundice where transaminases AST/ALT are disproportionately elevated).",
+          "severity": "Mild to Severe",
+          "onset": "Develops over hours to days as CBD obstruction develops",
+          "note": "Painless progressive jaundice (no pain, no fever) is more typical of pancreatic cancer than gallstones — distinguish by imaging"
+        },
+        {
+          "id": "SYM-1203",
+          "name": "Fever and Rigors",
+          "description": "Fever occurring in the context of gallstone disease indicates bacterial infection — either acute cholecystitis (fever 38-39°C; moderate elevation; localised to RUQ) or cholangitis (fever often >39°C; associated with rigors — violent shivering; systemic sepsis; associated with jaundice — Charcot's triad). Fever with rigors is the most alarming sign — rigors indicate bacteraemia (bacteria in the bloodstream). Any patient with jaundice AND fever has ascending cholangitis until proven otherwise — a medical emergency.",
+          "severity": "Moderate (cholecystitis) to Life-threatening (cholangitis)",
+          "onset": "Hours after biliary colic onset in cholecystitis; acute in cholangitis",
+          "clinical_importance": "Fever + Jaundice + RUQ pain = CHARCOT'S TRIAD = cholangitis = EMERGENCY ERCP/biliary drainage within 24-48 hours"
+        },
+        {
+          "id": "SYM-1204",
+          "name": "Nausea and Vomiting",
+          "description": "Universal accompanying symptoms during biliary colic episodes and acute cholecystitis. Nausea typically begins with the onset of pain; vomiting occurs in the majority of patients during acute attacks. Vomiting does NOT relieve the pain (unlike some other causes of abdominal pain) — an important distinguishing feature. In acute cholecystitis: persistent nausea prevents adequate oral intake; contributes to dehydration requiring IV fluids.",
+          "severity": "Moderate",
+          "note": "Vomiting that does not relieve abdominal pain suggests biliary colic or cholecystitis rather than gastroenteritis (where vomiting often provides temporary relief)"
+        },
+        {
+          "id": "SYM-1205",
+          "name": "Fat Intolerance and Postprandial Discomfort",
+          "description": "Many patients with gallstones describe vague, non-specific postprandial discomfort, bloating, and intolerance to fatty or fried foods even outside of frank biliary colic episodes. This 'dyspeptic' symptom complex — sometimes called biliary dyspepsia — is characteristic but not exclusive to gallstones (it overlaps significantly with functional dyspepsia, IBS, and GERD). Fat intolerance specifically (symptoms invariably triggered by fatty foods) is more suggestive of biliary disease. In India, patients often describe worsening symptoms after ghee-rich food, deep-fried snacks, or rich curries.",
+          "severity": "Mild to Moderate",
+          "note": "Simple fat intolerance and dyspepsia are very non-specific — do not necessarily indicate gallstone disease; ultrasound is the definitive investigation"
+        },
+        {
+          "id": "SYM-1206",
+          "name": "Right Upper Quadrant Tenderness — Murphy's Sign",
+          "description": "On physical examination of acute cholecystitis: deep palpation in the right upper quadrant (at the intersection of the right subcostal margin and the mid-clavicular line — the anatomical gallbladder point) during deep inspiration causes sudden sharp pain and inspiratory arrest — MURPHY'S SIGN. Pathophysiology: the inflamed gallbladder descends with diaphragmatic descent during inspiration — contacting the examiner's fingers and causing pain. Murphy's sign is POSITIVE in approximately 90% of acute cholecystitis and is one of the most clinically useful signs in medicine for this diagnosis. An ULTRASOUND MURPHY'S SIGN (pain elicited by the ultrasound probe over the gallbladder fundus) is equally diagnostic and performed during ultrasound scanning.",
+          "clinical_importance": "Positive Murphy's sign + gallstones on ultrasound = acute cholecystitis with very high diagnostic accuracy; negative Murphy's sign makes acute cholecystitis unlikely"
+        }
+      ],
+      "secondary_symptoms": [
+        "Pruritus (intense itching) — from bile salt accumulation in skin; often severe at night; worse on palms, soles, and extremities; characteristic of chronic cholestasis from CBD stones",
+        "Dark urine (bilirubinuria) — tea or cola coloured; from conjugated bilirubin overflow into urine; often the first sign patients notice in obstructive jaundice",
+        "Pale/clay/putty-coloured stools — absence of bile pigment from intestine; acholic stools; pathognomonic of biliary obstruction",
+        "Right shoulder tip pain — referred pain from diaphragmatic irritation (C4 dermatome); patients may initially complain of right shoulder pain with no abdominal symptoms",
+        "Bloating and flatulence — from dysmotility; fat malabsorption (if chronic biliary obstruction reduces bile salt concentration in intestine); often non-specific",
+        "Loss of appetite — during acute attacks; with chronic cholestasis",
+        "Weight loss — significant weight loss from fat malabsorption in chronic biliary obstruction; also from food avoidance (eating triggers pain)",
+        "Steatorrhoea (fatty diarrhoea) — pale, floating, foul-smelling, greasy stools — from fat malabsorption when chronic biliary obstruction reduces bile salt delivery to intestine",
+        "Hypotension, altered consciousness, confusion — signs of severe cholangitis (Reynolds' pentad) — EMERGENCY",
+        "Back pain (right subscapular) — referred pain from gallbladder; sometimes misdiagnosed as musculoskeletal back pain"
+      ],
+      "warning_signs_of_complications": [
+        "Pain persisting beyond 6 hours without relief — probable acute cholecystitis (not simple biliary colic)",
+        "Fever developing or worsening during a pain episode — possible cholecystitis or cholangitis",
+        "Yellow eyes or skin (jaundice) — CBD stone, cholangitis, or gallbladder cancer",
+        "Rigors (violent shivering) with fever and jaundice — ASCENDING CHOLANGITIS — EMERGENCY",
+        "Confusion, low blood pressure, or extreme weakness with biliary symptoms — BILIARY SEPTIC SHOCK (Reynolds' pentad) — CALL EMERGENCY SERVICES",
+        "Severe constant upper abdominal pain radiating to the back — GALLSTONE PANCREATITIS",
+        "Generalised abdominal rigidity ('board-like' abdomen) with severe pain — GALLBLADDER PERFORATION — SURGICAL EMERGENCY",
+        "Persistent unexplained weight loss with longstanding gallstones — POSSIBLE GALLBLADDER CANCER"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Pain characteristics — location (RUQ, epigastric, right shoulder); onset (sudden vs gradual); character (constant vs colicky); severity (NRS/10); radiation (right shoulder, back); duration (minutes vs hours — critical distinction); triggers (fatty food, large meals, specific foods); relieving factors (nothing relieves biliary colic; emptying of stomach does not help)",
+        "Previous similar episodes — number of prior attacks; progressively more frequent (suggests worsening disease); prior ultrasound results",
+        "Jaundice history — current or past yellowing of eyes/skin; dark urine; pale stools; pruritus",
+        "Fever and rigors — severity of fever; rigors during current episode",
+        "Associated symptoms — nausea, vomiting (character and frequency); fat intolerance; weight loss (alarm feature — cancer); change in stool or urine colour",
+        "Previous abdominal surgery — prior cholecystectomy (post-cholecystectomy syndrome; residual CBD stones; CBD stricture); prior ERCP or biliary procedures; prior appendectomy (altered pain perception)",
+        "Medication history — ceftriaxone (pseudolithiasis); octreotide (promotes stone formation); combined OCP or HRT; fibrates; statins (protective — reduce cholesterol secretion)",
+        "Medical history — haemolytic anaemia (sickle cell, thalassaemia, hereditary spherocytosis); cirrhosis; inflammatory bowel disease (Crohn's — ileal disease → bile salt malabsorption); diabetes; rapid weight loss history; bariatric surgery; TPN history",
+        "Pregnancy history — number of pregnancies (multiparity increases gallstone risk); current pregnancy status (critical for imaging and management choices)",
+        "Family history — gallstones (strong familial predisposition; 25% of first-degree relatives affected); gallbladder cancer (important in North Indian families from Gangetic belt)",
+        "Dietary history — high fat diet; rapid weight loss; prolonged fasting; low fibre intake",
+        "Geographic history — area of residence (Gangetic belt — very high gallbladder cancer risk); typhoid fever history or chronic typhoid carrier suspicion (significant GB cancer risk factor in India)",
+        "Occupational exposure — rubber, textile industry (GB cancer risk factors)"
+      ],
+      "physical_examination": [
+        "Vital signs — temperature (fever in cholecystitis/cholangitis); heart rate (tachycardia in sepsis); blood pressure (hypotension = severe cholangitis, septic shock); oxygen saturation; respiratory rate",
+        "General appearance — jaundice assessment (scleral icterus — yellow eyes, best in natural light; skin jaundice); pallor (haemolytic anaemia causing pigment stones); nutritional status (weight loss — cancer); distress level",
+        "Abdominal examination:",
+        "INSPECTION: abdominal distension (ileus from pancreatitis or perforation); visible peristalsis (obstruction); Cullen's sign (periumbilical bruising — severe pancreatitis); Grey Turner's sign (flank bruising — severe pancreatitis with retroperitoneal haemorrhage); surgical scars",
+        "PALPATION: RUQ tenderness — grade and localisation; MURPHY'S SIGN (see Symptom 1206 above — positive in cholecystitis); palpable gallbladder (Courvoisier's sign: painless palpable gallbladder — IMPORTANT: in GALLSTONES, the gallbladder is usually NOT palpable because it is scarred and contracted from chronic inflammation; a palpable, non-tender, distended gallbladder with jaundice [Courvoisier's law] suggests CANCER OF THE PANCREATIC HEAD or CHOLANGIOCARCINOMA rather than stones — chronic inflammation contracts the gallbladder preventing distension); epigastric tenderness (pancreatitis); guarding and rigidity (peritonitis = perforation); palpable epigastric mass (gallbladder cancer, pancreatic mass)",
+        "PERCUSSION: rebound tenderness (peritonitis); hepatomegaly (cholestatic liver disease)",
+        "AUSCULTATION: bowel sounds (reduced in ileus from peritonitis or pancreatitis; absent = peritonitis); succussion splash (gastric outlet obstruction from gallstone — Bouveret syndrome — rare)",
+        "Skin: jaundice; xanthelasma and xanthomata (chronic cholestasis); scratch marks (pruritus from chronic biliary obstruction); spider naevi (cirrhosis)",
+        "Lymph nodes: Virchow's node (left supraclavicular — gastric cancer, but may also suggest biliary malignancy metastasis)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Abdominal Ultrasound — Gold Standard for Gallstones",
+          "type": "Imaging — Ultrasound",
+          "description": "The first-line and gold standard investigation for gallstone disease. Abdominal ultrasound has >95% sensitivity and specificity for gallstones in the gallbladder. Provides information on: stone size, number, and location; gallbladder wall thickness (>3 mm = cholecystitis); pericholecystic fluid (cholecystitis); common bile duct diameter (>6 mm with gallbladder in situ; >8 mm post-cholecystectomy = CBD dilation suggesting choledocholithiasis); liver parenchyma (fatty liver, cirrhosis, hepatic metastases); pancreas (acute pancreatitis — although CT is more sensitive for pancreatitis); portal vein patency. The ULTRASOUND MURPHY'S SIGN (sonographic Murphy's) — elicited by applying the ultrasound probe over the gallbladder with the patient taking a deep breath — is highly specific for acute cholecystitis and more objective than clinical Murphy's sign.",
+          "purpose": "Detect gallstones, sludge, and polyps; diagnose cholecystitis; assess CBD; identify complications",
+          "key_metric": "Echogenic foci (stones appear bright white) with posterior acoustic shadowing = gallstones (pathognomonic); GB wall >3 mm + tenderness = cholecystitis; CBD >6 mm = suspect CBD stone; Pericholecystic fluid = cholecystitis complication",
+          "limitations": "Cannot reliably visualise CBD stones directly (30-50% sensitivity for CBD stones — MRCP or ERCP required); image quality reduced by obesity and overlying bowel gas; choledocholithiasis suggested by CBD dilation rather than direct stone visualisation",
+          "india_note": "Ultrasound is the most accessible diagnostic test for biliary disease in India; available at all levels of the healthcare system; should be the FIRST investigation for any suspected gallstone disease"
+        },
+        {
+          "test_name": "Liver Function Tests (LFTs) — Including Bilirubin, ALP, GGT, ALT, AST",
+          "type": "Blood — Biochemical",
+          "description": "Essential in all patients with symptomatic gallstone disease. The CHOLESTATIC PATTERN (elevated bilirubin + elevated ALP + elevated GGT with relatively preserved ALT/AST) indicates biliary obstruction — suggesting CBD stone, cholangitis, or biliary cancer. Transient elevation of liver enzymes (including ALT/AST) during biliary colic is common and does NOT necessarily indicate choledocholithiasis. Serial LFTs after an acute attack help determine if obstruction is resolving (suggesting spontaneously passing stone) or worsening (requiring ERCP).",
+          "purpose": "Detect biliary obstruction (cholestatic pattern); assess severity of cholestasis; differentiate from hepatocellular disease; monitor progress; screen for gallbladder cancer (CA 19-9)",
+          "key_metric": "Bilirubin >34 mcmol/L = jaundice threshold; ALP >3× ULN with elevated bilirubin = cholestatic obstruction; ALT >5× ULN = hepatocellular injury; GGT elevation confirms biliary pattern (not from bone); ALT spike >1000 U/L in biliary colic suggests CBD stone passage",
+          "cholestasis_pattern": "Elevated bilirubin (predominantly conjugated/direct) + markedly elevated ALP + elevated GGT + mildly elevated ALT/AST = CHOLESTATIC / OBSTRUCTIVE pattern"
+        },
+        {
+          "test_name": "Full Blood Count (FBC), CRP, and Inflammatory Markers",
+          "type": "Blood — Haematological / Inflammatory",
+          "description": "Essential in suspected acute cholecystitis or cholangitis. Leucocytosis with neutrophilia indicates bacterial infection. Markedly elevated CRP (>100 mg/L) supports significant inflammation. Elevated procalcitonin indicates bacteraemia (cholangitis with bacteraemia). Anaemia may indicate pigment stone disease (haemolysis — check haemoglobin, reticulocyte count, blood film, LDH).",
+          "purpose": "Confirm infection and severity in cholecystitis/cholangitis; assess haematological complications; guide antibiotic decisions",
+          "key_metric": "WBC >12,000/mcL with neutrophilia = significant infection; WBC >18,000 = moderate-severe cholecystitis (Tokyo Grade II); CRP >100 mg/L = significant inflammation; Procalcitonin >0.5 ng/mL = bacteraemia"
+        },
+        {
+          "test_name": "Serum Amylase and Lipase",
+          "type": "Blood — Biochemical / Enzymatic",
+          "description": "MANDATORY in all patients presenting with acute upper abdominal pain and suspected gallstone disease — to screen for gallstone pancreatitis. Lipase is more sensitive and specific than amylase for acute pancreatitis. Serum lipase >3× upper limit of normal combined with appropriate clinical presentation and/or imaging = acute pancreatitis. Note: mild transient elevations of amylase (<3× ULN) may occur in biliary colic without true pancreatitis.",
+          "purpose": "Screen for gallstone pancreatitis; quantify severity of pancreatic inflammation",
+          "key_metric": "Lipase >3× ULN (>225 U/L for most labs) = acute pancreatitis; Amylase >3× ULN; Lipase more sensitive and specific than amylase — preferred test",
+          "note": "The height of amylase/lipase does NOT correlate with severity of pancreatitis — a very high level can be mild pancreatitis; CT severity index (Balthazar score) predicts severity more accurately"
+        },
+        {
+          "test_name": "MRCP — Magnetic Resonance Cholangiopancreatography",
+          "type": "Imaging — MRI",
+          "description": "A non-invasive, non-radiation MRI technique specifically designed to visualise the biliary tree (intrahepatic and extrahepatic bile ducts) and pancreatic duct without contrast injection. MRCP is the GOLD STANDARD non-invasive investigation for suspected choledocholithiasis (CBD stones) — with sensitivity and specificity of 93-98% for CBD stones, comparable to diagnostic ERCP. MRCP should be performed before ERCP in most cases to confirm the presence of CBD stones (avoiding unnecessary ERCP risk in patients without stones — ERCP carries 2-10% complication rate).",
+          "purpose": "Non-invasively diagnose CBD stones before therapeutic ERCP; assess biliary and pancreatic anatomy; detect biliary strictures, hilar cholangiocarcinoma, primary sclerosing cholangitis; pre-surgical mapping of biliary anatomy",
+          "key_metric": "Filling defects (dark foci) in bright-signal bile duct = CBD stones; duct dilation; strictures; congenital anomalies",
+          "indication": "All suspected choledocholithiasis (elevated bilirubin or ALP + dilated CBD on ultrasound) — before ERCP; pre-laparoscopic cholecystectomy when CBD stones suspected; unexplained biliary dilation; suspected cholangiocarcinoma",
+          "advantages_over_ercp": "Non-invasive; no radiation; no contrast injection; no risk of pancreatitis; sedation not required; provides anatomical roadmap",
+          "limitation": "Cannot perform therapeutic intervention (stones cannot be extracted by MRCP — only diagnostic); metal implants may preclude MRI"
+        },
+        {
+          "test_name": "ERCP — Endoscopic Retrograde Cholangiopancreatography",
+          "type": "Endoscopy / Interventional",
+          "description": "A combined endoscopic and fluoroscopic procedure using a side-viewing duodenoscope passed to the duodenum to cannulate the ampulla of Vater, inject contrast into the biliary and pancreatic ducts under X-ray guidance, and perform therapeutic interventions. ERCP is both DIAGNOSTIC and THERAPEUTIC — it can image the bile ducts AND treat CBD stones in the same session. The most important biliary therapeutic procedure available. Indications: CBD stones requiring extraction; biliary strictures requiring dilation or stenting; acute cholangitis requiring urgent biliary drainage; sphincter of Oddi dysfunction; bile duct injury post-surgery.",
+          "purpose": "Diagnose and treat CBD stones (stone extraction with sphincterotomy); biliary drainage for cholangitis (stent or nasobiliary drain); biopsy of biliary strictures; stenting for malignant biliary obstruction",
+          "ercp_therapeutic_procedures": [
+            "Sphincterotomy — cutting the sphincter of Oddi (the muscular valve at the ampulla) to widen the opening for stone passage and extraction",
+            "Stone extraction — using balloon catheters or Dormia stone retrieval baskets to pull CBD stones out of the bile duct",
+            "Biliary stenting — plastic or metal stent to bypass strictures or as bridge drainage in cholangitis",
+            "Nasobiliary drain — external drainage tube from CBD through nose for temporary biliary decompression"
+          ],
+          "complications": "Post-ERCP pancreatitis (3-5% — most common complication; prevented by rectal indomethacin — suppository given at time of ERCP); haemorrhage from sphincterotomy (1-2%); perforation (0.5%); cholangitis (0.5-3%); overall serious complication rate 2-10%",
+          "when_urgent_ercp_required": "Grade II-III cholangitis — within 24-48 hours (Grade III: within 12 hours); CBD stones + acute biliary pancreatitis with cholangitis or persistent obstruction — within 24-72 hours"
+        },
+        {
+          "test_name": "CT Scan Abdomen and Pelvis (with IV Contrast)",
+          "type": "Imaging — Computed Tomography",
+          "description": "CT scan is NOT the first-line investigation for gallstones (ultrasound is superior for gallbladder stones) but is essential for: (1) Diagnosing and staging acute pancreatitis severity (CT Severity Index — Balthazar score); (2) Detecting gallbladder cancer (staging — local invasion, lymph nodes, distant metastases); (3) Evaluating complications of cholecystitis (perforation, pericholecystic abscess, gangrenous changes); (4) Detecting pneumobilia (air in bile ducts — gallstone ileus); (5) Pre-operative planning for complex biliary surgery.",
+          "purpose": "Stage acute pancreatitis; detect/stage gallbladder cancer; diagnose perforation and abscess; emergency planning",
+          "key_metric": "Modified CT Severity Index (MCTSI) in pancreatitis: 0-2 = mild; 4-6 = moderate; 8-10 = severe; >30% pancreatic necrosis = severe necrotising pancreatitis — ICU required",
+          "gallbladder_cancer_ct": "Intraluminal mass; thickened irregular gallbladder wall; invasion of adjacent liver; regional lymphadenopathy; biliary dilation; distant metastases (liver, peritoneum)"
+        },
+        {
+          "test_name": "Endoscopic Ultrasound (EUS)",
+          "type": "Endoscopy / Ultrasound",
+          "description": "A high-frequency ultrasound probe mounted on a flexible endoscope positioned in the duodenum immediately adjacent to the CBD and pancreatic head — providing ultra-high-resolution images of the biliary tree and pancreas. EUS has sensitivity of 97% for CBD stones — even small stones (<5 mm) not visible on MRCP or transabdominal ultrasound; preferred in patients with suspected microlithiasis (very small stones) and those with contraindications to MRI (pacemaker, severe claustrophobia). EUS-guided FNA (fine needle aspiration) of pancreatic or peribiliary masses provides histological diagnosis.",
+          "purpose": "Detect small CBD stones (microlithiasis) missed by MRCP; pre-ERCP assessment; FNA of periductal masses; assess gallbladder and biliary anatomy; detect ampullary lesions",
+          "note": "More operator-dependent than MRCP; requires sedation; less available than MRCP in India"
+        },
+        {
+          "test_name": "HIDA Scan (Hepatobiliary Iminodiacetic Acid Scintigraphy / Cholescintigraphy)",
+          "type": "Nuclear Medicine — Imaging",
+          "description": "A nuclear medicine scan using a Tc-99m-labelled iminodiacetic acid derivative taken up by hepatocytes and secreted into bile — imaging the biliary system dynamically. HIDA scan assesses gallbladder function (ejection fraction) and cystic duct patency. HIDA is the GOLD STANDARD for diagnosing acute acalculous cholecystitis (gallbladder disease without stones): non-filling of gallbladder on HIDA = cystic duct obstruction = acalculous cholecystitis. Also used for biliary dyskinesia (low gallbladder ejection fraction <35% = biliary dyskinesia causing RUQ pain without stones — treated with cholecystectomy).",
+          "purpose": "Diagnose acute acalculous cholecystitis; assess gallbladder ejection fraction (biliary dyskinesia); assess biliary dyskinesia causing RUQ pain without stones; assess bile duct anatomy post-surgery",
+          "key_metric": "Normal HIDA: gallbladder fills within 60 minutes; Non-visualisation of gallbladder at 4 hours = cystic duct obstruction (acute cholecystitis); Gallbladder ejection fraction <35% = biliary dyskinesia"
+        },
+        {
+          "test_name": "Tumour Markers — CA 19-9 and CEA",
+          "type": "Blood — Tumour Markers",
+          "description": "CA 19-9 (cancer antigen 19-9) is elevated in cholangiocarcinoma and gallbladder cancer but is also non-specifically elevated in benign biliary disease (cholangitis, CBD stones, hepatitis). It should be measured when gallbladder cancer or cholangiocarcinoma is suspected — used for diagnosis support, monitoring treatment response, and surveillance. IMPORTANT: CA 19-9 is not specific — a high level requires imaging confirmation; benign biliary obstruction can raise CA 19-9 to >1,000 U/mL.",
+          "purpose": "Support diagnosis of gallbladder cancer or cholangiocarcinoma; monitor treatment response; surveillance post-curative surgery; NOT a screening test (insufficient specificity)",
+          "key_metric": "CA 19-9 >37 U/mL = elevated (upper limit of normal); Very elevated CA 19-9 (>200 U/mL) with imaging suggesting mass = strong suspicion of malignancy; False positive: cholangitis, biliary obstruction, pancreatitis, cirrhosis, benign biliary disease"
+        },
+        {
+          "test_name": "Intraoperative Cholangiogram (IOC)",
+          "type": "Intraoperative Imaging",
+          "description": "A radiological procedure performed during laparoscopic cholecystectomy — contrast is injected directly into the cystic duct stump and fluoroscopy images the biliary tree before dividing the cystic duct. IOC detects unexpected CBD stones (present in 5-10% of patients undergoing cholecystectomy), delineates biliary anatomy (preventing bile duct injury — the most feared complication of cholecystectomy), and demonstrates anatomical variants.",
+          "purpose": "Detect CBD stones at time of cholecystectomy; prevent bile duct injury by delineating anatomy; identify biliary anomalies",
+          "note": "Not universally performed — 'selective IOC' (only when risk factors for CBD stones: elevated LFTs, dilated CBD on pre-op ultrasound, history of jaundice) vs 'routine IOC' (all cholecystectomies); varies by surgeon and institution preference"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "The definitive treatment for symptomatic gallstone disease is surgery (laparoscopic cholecystectomy). Medications play a critical role in: (1) managing acute biliary pain; (2) treating infections (cholecystitis, cholangitis); (3) non-surgical dissolution therapy for selected patients; and (4) preventing gallstone formation during rapid weight loss. Cholangitis is a medical emergency — IV antibiotics alone are INSUFFICIENT without biliary drainage. No medication cures established gallstones except UDCA for a very specific subset of small cholesterol stones.",
+      "treatment_principles": [
+        "1. Acute biliary colic: NSAIDs (diclofenac) are FIRST-LINE for acute biliary colic pain — superior to opioids in multiple trials; reduce gallbladder smooth muscle spasm; diclofenac 75 mg IM/IV is the drug of choice for acute attack",
+        "2. Acute cholecystitis: IV antibiotics + IV fluids + analgesia + early surgery (within 72 hours) is the Tokyo Guidelines recommended management; antibiotics alone without cholecystectomy have >50% recurrence rate",
+        "3. Cholangitis: IV antibiotics + urgent ERCP (biliary drainage) is MANDATORY — antibiotics alone without biliary drainage will fail in Grade II-III cholangitis; drainage is the definitive treatment",
+        "4. Gallstone pancreatitis: aggressive IV fluid resuscitation is the most critical intervention; ERCP only if CBD stone still present with cholangitis or persistent obstruction",
+        "5. UDCA (ursodeoxycholic acid): useful for medical dissolution in specific patients (small <10 mm, radiolucent cholesterol stones, functioning gallbladder); takes 6-24 months; stones recur in 50% within 5 years of stopping UDCA; not curative",
+        "6. No specific antibiotic is curative for gallstones — antibiotics treat bacterial complications (cholecystitis, cholangitis) not the stones themselves"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-161",
+          "category_name": "Analgesia — Acute Biliary Colic and Cholecystitis Pain Management",
+          "purpose": "Rapid pain relief during acute biliary colic episodes and management of pain in acute cholecystitis.",
+          "medicines": [
+            {
+              "name": "Diclofenac (NSAID — First-Line for Biliary Colic)",
+              "brand_examples": ["Voltaren", "Diclomol", "Voveran", "Reactine", "Diclomax"],
+              "form": "IM/IV injection (75 mg/3 mL); Oral tablet (25 mg, 50 mg); Suppository (100 mg)",
+              "dosage": "Acute biliary colic: 75 mg IM or IV (over 30-60 min) as single dose; repeat after 4-6 hours if needed (maximum 150 mg/day); oral: 50 mg three times daily for sustained analgesia during admission",
+              "use_case": "FIRST-LINE treatment for acute biliary colic — multiple RCTs demonstrate superiority over opioids and antispasmodics; the NSAID prostaglandin inhibition reduces gallbladder smooth muscle contraction and bile duct spasm — addressing the underlying mechanism; also demonstrated to reduce risk of progression from biliary colic to acute cholecystitis in hospitalised patients (by reducing prostaglandin-mediated inflammation)",
+              "mechanism": "Non-selective COX-1/COX-2 inhibitor — inhibits prostaglandin synthesis; reduces gallbladder smooth muscle tone and contractility; anti-inflammatory; analgesic",
+              "contraindications": "Renal impairment (NSAIDs reduce renal perfusion — contraindicated if eGFR <30); active peptic ulcer or GI bleeding; severe hepatic impairment; severe heart failure; allergy to NSAIDs or aspirin",
+              "note": "Diclofenac IM is the most rapidly effective non-opioid for acute biliary colic; available in most Indian emergency departments; preferred over opioids to avoid opioid-related side effects"
+            },
+            {
+              "name": "Hyoscine Butylbromide (Butylscopolamine) — Buscopan",
+              "brand_examples": ["Buscopan", "Buscopan Plus (with paracetamol)", "Spasmopriv"],
+              "form": "Tablet (10 mg); IV/IM injection (20 mg/1 mL); Suppository",
+              "dosage": "Acute colic: 20 mg IV/IM; may repeat after 30 minutes; maximum 100 mg/day; oral: 10-20 mg three to four times daily",
+              "use_case": "Antispasmodic for smooth muscle spasm in biliary colic; adjunct to NSAIDs; particularly useful for reducing colic component of pain (visceral smooth muscle spasm); widely used in India for abdominal colic of all types",
+              "mechanism": "Antimuscarinic (anticholinergic) — blocks M3 muscarinic receptors on smooth muscle of GI tract, biliary tree, and urinary tract; inhibits smooth muscle spasm; does NOT cross blood-brain barrier significantly (quaternary ammonium compound)",
+              "side_effects": ["Dry mouth", "Urinary retention (elderly men with BPH)", "Tachycardia", "Constipation (short-term OK)"]
+            },
+            {
+              "name": "Morphine and Other Opioids",
+              "brand_examples": ["Morphine sulphate IV", "Pethidine/Meperidine (Dolantin)", "Tramadol (Tramazac)"],
+              "form": "IV/IM injection (morphine 2-4 mg IV; pethidine 50-100 mg IM)",
+              "dosage": "Morphine: 2-4 mg IV every 4-6 hours (titrate to effect); Tramadol: 50-100 mg IV/IM for moderate pain",
+              "use_case": "Severe pain not adequately controlled by NSAIDs + antispasmodics; inpatient use; opioids relieve pain but DO NOT address the underlying mechanism; historical concern about opioids (particularly morphine) causing spasm of sphincter of Oddi — this effect is clinically rare and should not prevent adequate analgesia",
+              "note": "The historical teaching that morphine is contraindicated in biliary colic due to sphincter of Oddi spasm is OUTDATED — morphine is safe and should not be withheld if needed for adequate pain relief; pethidine has no advantage over morphine for biliary colic and has disadvantages (norpethidine accumulation causing seizures with repeated dosing)"
+            },
+            {
+              "name": "Paracetamol (Acetaminophen)",
+              "brand_examples": ["Crocin", "Calpol", "Dolo"],
+              "form": "IV infusion (1 g/100 mL); Tablet (500 mg, 1 g)",
+              "dosage": "1 g IV infusion over 15 minutes every 6 hours; oral 500-1000 mg every 6 hours",
+              "use_case": "IV paracetamol as adjunct analgesic in acute cholecystitis and biliary colic when IV access available; effective multimodal analgesia reducing opioid requirement; safe in hepatic disease at appropriate doses"
+            },
+            {
+              "name": "Ketorolac (IV/IM NSAID)",
+              "brand_examples": ["Toradol", "Ketorolac", "Ketanov"],
+              "form": "IV/IM injection (30 mg/mL)",
+              "dosage": "30 mg IM/IV every 6 hours; maximum 120 mg/day; maximum 5 days of parenteral use",
+              "use_case": "Parenteral NSAID for acute biliary colic when diclofenac IV not available; potent analgesic comparable to low-dose opioids without opioid side effects",
+              "note": "Maximum 5 days parenteral use (renal and GI toxicity with longer use); avoid in renal impairment, elderly, and peptic ulcer history"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-162",
+          "category_name": "Antibiotics — Cholecystitis and Cholangitis Treatment",
+          "purpose": "Treat bacterial infection in acute cholecystitis and cholangitis. Note: antibiotics are ADJUNCTIVE to surgical or endoscopic intervention — they control systemic infection but cannot definitively treat the underlying biliary obstruction or gallstone disease.",
+          "antibiotic_principles": "Cover gram-negative enteric organisms (E. coli, Klebsiella — most common) and anaerobes (Bacteroides, Clostridium — particularly in severe or postoperative cases); good biliary penetration; adjust based on culture results; de-escalate when cultures available",
+          "medicines": [
+            {
+              "name": "Co-Amoxiclav (Amoxicillin-Clavulanate) IV — Mild Cholecystitis",
+              "brand_examples": ["Augmentin IV", "Amoxyclav IV"],
+              "form": "IV injection (1.2 g: 1 g amoxicillin + 200 mg clavulanate every 8 hours)",
+              "dosage": "1.2 g IV every 8 hours; step down to oral co-amoxiclav 625 mg three times daily when tolerating orally",
+              "use_case": "First-line for mild-moderate acute cholecystitis (Tokyo Grade I); covers E. coli, Klebsiella, and some anaerobes; widely available and inexpensive in India",
+              "note": "Not adequate for severe cholangitis or septic shock — escalate to piperacillin-tazobactam or carbapenem"
+            },
+            {
+              "name": "Cefuroxime + Metronidazole — Moderate Cholecystitis",
+              "brand_examples": ["Cefuroxime: Zinacef, Furoxime; Metronidazole: Flagyl, Metrogyl"],
+              "form": "Cefuroxime 1.5 g IV every 8 hours + Metronidazole 500 mg IV every 8 hours",
+              "dosage": "Standard combination; continue until 24-48 hours post-op or 5-7 days for cholecystitis",
+              "use_case": "Standard antibiotic combination for acute cholecystitis; cefuroxime covers gram-negatives; metronidazole covers anaerobes and Bacteroides; widely used in UK practice; appropriate for India"
+            },
+            {
+              "name": "Ceftriaxone + Metronidazole — Moderate Cholecystitis/Cholangitis",
+              "brand_examples": ["Rocephin + Flagyl; Monocef + Metrogyl"],
+              "form": "Ceftriaxone 2 g IV once daily + Metronidazole 500 mg IV every 8 hours",
+              "dosage": "Ceftriaxone 2 g IV once daily + Metronidazole 500 mg IV TDS",
+              "use_case": "Moderate cholecystitis and mild-moderate cholangitis; ceftriaxone has excellent gram-negative coverage and convenient once-daily dosing; widely available in India; remember ceftriaxone itself can cause biliary pseudolithiasis — avoid prolonged courses if possible",
+              "note": "CAUTION: Ceftriaxone precipitates in bile (calcium-ceftriaxone pseudolithiasis) — use shortest course necessary; switch to oral when appropriate"
+            },
+            {
+              "name": "Piperacillin-Tazobactam (Pip-Tazo) — Severe Cholecystitis / Cholangitis",
+              "brand_examples": ["Tazocin", "Pipzo", "Piptaz"],
+              "form": "IV infusion (4.5 g every 6-8 hours)",
+              "dosage": "4.5 g IV every 6 hours for severe infection; 4.5 g every 8 hours for moderate infection",
+              "use_case": "FIRST-LINE for severe acute cholecystitis (Tokyo Grade III) and Grade II-III cholangitis; broad spectrum covering E. coli, Klebsiella, Pseudomonas aeruginosa (when risk factors present), and anaerobes; excellent biliary penetration; covers Enterococcus (important in biliary infection)",
+              "mechanism": "Broad-spectrum penicillin/beta-lactamase inhibitor — piperacillin has antipseudomonal activity; tazobactam inhibits many beta-lactamases",
+              "note": "Hospital-acquired infection, recent antibiotics, structural biliary disease — consider Pseudomonas coverage (ciprofloxacin or piperacillin-tazobactam)"
+            },
+            {
+              "name": "Meropenem — Severe Cholangitis / Septic Shock / ESBL",
+              "brand_examples": ["Meronem", "Merotax"],
+              "form": "IV infusion",
+              "dosage": "1-2 g IV every 8 hours",
+              "use_case": "Severe cholangitis with septic shock; ESBL-producing organisms (very common in India); hospital-acquired biliary infection; failure of first-line antibiotics; MDR organisms",
+              "note": "Reserve for severe infection and ESBL-confirmed organisms; antibiotic stewardship — do not use routinely; send bile cultures at ERCP to guide targeted therapy"
+            },
+            {
+              "name": "Ciprofloxacin + Metronidazole — Oral Step-Down / Mild Cholangitis",
+              "brand_examples": ["Ciplox + Flagyl; Cifran + Metrogyl"],
+              "form": "Oral tablets",
+              "dosage": "Ciprofloxacin 500 mg twice daily + Metronidazole 400-500 mg three times daily for 5-7 days",
+              "use_case": "Oral step-down antibiotics after IV therapy in cholecystitis/cholangitis; mild cholangitis managed entirely orally; community cholecystitis in well-appearing patients",
+              "note": "Ciprofloxacin resistance in E. coli is high in India (40-60%); check culture sensitivity before relying on ciprofloxacin; de-escalate to narrowest appropriate antibiotic based on culture"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-163",
+          "category_name": "Ursodeoxycholic Acid (UDCA) — Gallstone Dissolution and Prevention",
+          "purpose": "Non-surgical dissolution of small cholesterol gallstones in selected patients; prevention of gallstone formation during rapid weight loss (bariatric surgery, VLCD); treatment of primary biliary cholangitis (PBC — a separate condition).",
+          "medicines": [
+            {
+              "name": "Ursodeoxycholic Acid (UDCA / Ursodiol)",
+              "brand_examples": ["Ursocol", "UDCA", "Ursofalk", "Actigall"],
+              "form": "Tablet (150 mg, 300 mg); Capsule",
+              "dosage": "Gallstone dissolution: 8-10 mg/kg/day in divided doses (typically 250-500 mg twice daily with meals); Gallstone prevention after bariatric surgery: 500-600 mg/day for 6 months post-surgery; PBC: 13-15 mg/kg/day",
+              "use_case": "Non-surgical treatment of symptomatic cholesterol gallstones in patients who are UNFIT FOR or REFUSE surgery: small stones (<10 mm), radiolucent (cholesterol) on X-ray, functioning gallbladder (visualised on cholecystogram), mild symptoms (not recurrent severe colic); Prevention of gallstone formation in high-risk rapid weight loss situations (bariatric surgery, VLCD <600 kcal/day); Post-ERCP stone treatment adjunct",
+              "mechanism": "Hydrophilic bile acid — replaces toxic hydrophobic bile acids (chenodeoxycholic acid, deoxycholic acid) in the bile acid pool; reduces hepatic cholesterol secretion into bile; reduces cholesterol saturation of bile; reduces crystal growth and nucleation; slowly dissolves existing cholesterol stones",
+              "expected_outcomes": "Complete dissolution in 30-40% of carefully selected patients (small stones, functioning gallbladder); partial response in additional 20-30%; takes 6-24 months for complete dissolution of small stones; recurrence in 50% within 5 years of stopping UDCA (stones reform unless cause addressed)",
+              "patient_selection": "BEST CANDIDATES: small stones (<5 mm — dissolve fastest); radiolucent stones (no calcification); functioning gallbladder; mild infrequent symptoms; unfit for surgery; POOR CANDIDATES: large stones (>15 mm); calcified stones (pigment or mixed); non-functioning gallbladder; severe or frequent symptoms",
+              "side_effects": ["Diarrhoea (10% — dose-related; reduce dose or divide further)", "Nausea (mild)", "Liver enzyme elevation (rare, transient)"],
+              "monitoring": "Repeat ultrasound at 6 and 12 months to assess stone dissolution; stop if no response at 12 months or stones enlarging",
+              "note": "UDCA is NOT curative — it treats the bile supersaturation but does NOT remove the underlying risk factors; cannot dissolve pigment stones (no cholesterol component)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-164",
+          "category_name": "Anti-Pruritic Treatment — Cholestatic Itch",
+          "purpose": "Relieve severe pruritus (itching) from bile salt accumulation in skin during prolonged biliary obstruction from CBD stones or biliary stricture.",
+          "medicines": [
+            {
+              "name": "Cholestyramine (Bile Acid Sequestrant)",
+              "brand_examples": ["Questran", "Cholestyramine powder"],
+              "form": "Oral powder (4 g sachets dissolved in water)",
+              "dosage": "4 g (1 sachet) twice to three times daily before meals",
+              "use_case": "Cholestatic pruritus from biliary obstruction; binds bile salts in the intestine preventing their reabsorption — reducing bile salt load and deposition in skin",
+              "mechanism": "Ion exchange resin — binds bile acids in the gut lumen; prevents enterohepatic recirculation of bile salts; reduces systemic bile salt concentration",
+              "side_effects": ["Constipation (very common)", "Bloating and flatulence", "Nausea", "Impairs absorption of fat-soluble vitamins (A, D, E, K) and many medications — separate all medications by minimum 4 hours from cholestyramine"],
+              "note": "Effective but poorly tolerated; rifampicin (150-300 mg/day) and naltrexone (50 mg/day) are more effective alternatives for severe cholestatic pruritus; definitive treatment is biliary drainage"
+            },
+            {
+              "name": "Rifampicin (for Severe Cholestatic Pruritus)",
+              "brand_examples": ["Rifampicin", "Rifadine"],
+              "form": "Tablet (150 mg, 300 mg)",
+              "dosage": "150-300 mg once daily (anti-pruritic dose — much lower than anti-TB dose)",
+              "use_case": "Second-line for cholestatic pruritus refractory to cholestyramine; induces hepatic enzymes (CYP3A4) modifying bile salt metabolism and reducing skin deposition; effective in 60-70% of patients with chronic cholestatic pruritus",
+              "note": "Monitor liver enzymes monthly (hepatotoxicity risk); multiple drug interactions (enzyme inducer); not first-line due to hepatotoxicity potential in already-cholestatic patients"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-165",
+          "category_name": "Gallstone Prevention — Rapid Weight Loss",
+          "purpose": "Prevent gallstone formation during periods of rapid weight loss (bariatric surgery, very low calorie diet).",
+          "medicines": [
+            {
+              "name": "UDCA for Bariatric Surgery Prophylaxis",
+              "dosage": "500-600 mg/day starting immediately after bariatric surgery (within 2 weeks); continue for 6 months",
+              "use_case": "Gallstone prevention after Roux-en-Y gastric bypass, sleeve gastrectomy; 30-40% of bariatric surgery patients develop gallstones within 6 months without prophylaxis; UDCA reduces risk by 70%; fat mobilisation during rapid weight loss floods bile with cholesterol",
+              "evidence": "Sugerman et al. and other RCTs: UDCA 600 mg/day reduces gallstone formation from 32% to 2% over 6 months post-bariatric surgery"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-166",
+          "category_name": "Gallstone Pancreatitis Management",
+          "purpose": "Aggressive supportive treatment of acute pancreatitis — IV fluid resuscitation is the cornerstone.",
+          "medicines": [
+            {
+              "name": "Intravenous Fluids — Ringer's Lactate (Hartmann's Solution)",
+              "form": "IV infusion",
+              "dosage": "AGGRESSIVE early fluid resuscitation: 250-500 mL/hour IV for first 12-24 hours in moderate-severe pancreatitis; target: urine output >0.5 mL/kg/hour; reassess frequently to avoid fluid overload; total fluid requirement typically 3-6L in first 24 hours",
+              "use_case": "MOST CRITICAL initial treatment for acute gallstone pancreatitis — prevents pancreatic necrosis (caused by pancreatic microvascular ischaemia); Ringer's Lactate (Hartmann's) is preferred over normal saline (reduces systemic inflammatory response and organ failure vs normal saline — WATERFALL trial: Ringer's Lactate reduces SIRS rate and organ failure)",
+              "note": "Early aggressive IV fluid resuscitation within the first 12-24 hours is the single most important intervention in acute pancreatitis — more important than any specific medication; reassess fluid status every 2-4 hours and adjust"
+            },
+            {
+              "name": "Analgesia for Gallstone Pancreatitis",
+              "dosage": "IV diclofenac 75 mg + IV tramadol 100 mg; escalate to morphine PCA (patient-controlled analgesia) if needed; adequate pain control reduces sympathetic response and stress-induced worsening",
+              "use_case": "Adequate analgesia is important in acute pancreatitis — pain control reduces sympathetic activation; IV opioids for severe pain; no evidence that any specific opioid is superior"
+            },
+            {
+              "name": "Rectal Indomethacin — Post-ERCP Pancreatitis Prevention",
+              "brand_examples": ["Indocin suppository", "Indomethacin suppository"],
+              "form": "Suppository (100 mg)",
+              "dosage": "100 mg rectal suppository immediately after ERCP (before patient leaves the procedure room)",
+              "use_case": "Prevention of post-ERCP pancreatitis — the most common complication of ERCP (3-5%); indomethacin suppository reduces post-ERCP pancreatitis risk by 50-60% via prostaglandin inhibition and reduction of pancreatic duct pressure",
+              "evidence": "Elmunzer et al. RCT (NEJM 2012): rectal indomethacin 100 mg significantly reduced post-ERCP pancreatitis (9.2% → 4.4%); now STANDARD OF CARE at all ERCP procedures worldwide",
+              "note": "Every patient undergoing ERCP should receive rectal indomethacin unless contraindicated (NSAID allergy, renal impairment, active peptic ulcer)"
+            }
+          ]
+        }
+      ]
+    },
+
+    "surgical_and_procedural_treatments": {
+      "overview": "Surgery and endoscopic procedures are the definitive treatments for gallstone disease — medications manage symptoms and complications but do not remove the stones. The choice and timing of intervention depends on the clinical scenario.",
+      "procedures": [
+        {
+          "procedure": "Laparoscopic Cholecystectomy — Gold Standard",
+          "description": "Keyhole removal of the gallbladder through 3-4 small (5-10 mm) abdominal incisions using a camera and laparoscopic instruments. The most commonly performed abdominal operation worldwide. Performed under general anaesthesia; day surgery or overnight admission in uncomplicated cases. The gallbladder with all its stones is removed entirely — preventing recurrence of biliary colic, cholecystitis, and gallbladder cancer.",
+          "indications": "Symptomatic gallstones (biliary colic — recurrent episodes); acute cholecystitis (within 72 hours — early cholecystectomy preferred over delayed); gallstone pancreatitis (same admission for mild pancreatitis; after recovery for severe); choledocholithiasis (after ERCP stone extraction — cholecystectomy within same admission or within 2 weeks); asymptomatic stones in high-risk groups (Gangetic belt, large stones >3 cm, porcelain GB)",
+          "timing": "Early (within 72 hours) for acute cholecystitis: reduces hospital stay, conversion to open, and complications vs delayed (6 weeks); same admission for mild gallstone pancreatitis",
+          "complications": "Bile duct injury (most feared — 0.3-0.5%; requires biliary repair); haemorrhage; port site hernia; bile leak; bowel injury; conversion to open cholecystectomy (5% in elective cases; higher in emergency)",
+          "india_availability": "Laparoscopic cholecystectomy is available at all major government and private hospitals in India; waiting times at government hospitals can be long — private hospitals have shorter waits; cost approximately Rs 30,000-1,00,000 depending on facility"
+        },
+        {
+          "procedure": "Open Cholecystectomy",
+          "description": "Traditional 'open' removal of the gallbladder through a right subcostal (Kocher) incision. Now rarely performed as the primary approach — replaced by laparoscopic technique. Indications for open approach: failed laparoscopic approach (conversion); severe acute cholecystitis with gangrenous changes; suspected gallbladder cancer (requires radical resection); complex bile duct injury during laparoscopy.",
+          "recovery": "Longer recovery (5-7 days hospital; 4-6 weeks return to activity) vs laparoscopic (1-2 days hospital; 1-2 weeks return to activity)"
+        },
+        {
+          "procedure": "ERCP with Sphincterotomy and Stone Extraction",
+          "description": "Endoscopic removal of CBD stones via the duodenoscope. A sphincterotomy (cutting the sphincter of Oddi) widens the duodenal opening of the CBD; stones are then extracted using balloon catheters or Dormia baskets under fluoroscopy. Definitive treatment for choledocholithiasis and urgent management of cholangitis.",
+          "indications": "CBD stones (primary indication); ascending cholangitis (urgent drainage); biliary pancreatitis with persistent obstruction; bile duct strictures (stenting)",
+          "complications": "Post-ERCP pancreatitis (3-5% — prevented by rectal indomethacin); sphincterotomy bleeding (1-2%); perforation (0.5%); cholangitis post-ERCP (0.5-3%)"
+        },
+        {
+          "procedure": "Percutaneous Cholecystostomy",
+          "description": "Ultrasound or CT-guided placement of a drainage catheter directly into the gallbladder through the skin — decompressing an obstructed, infected gallbladder without surgery. Performed under local anaesthesia. Used as a BRIDGE to surgery in: Grade III acute cholecystitis (high-risk patients not fit for surgery); gallbladder empyema; acutely ill patients who cannot tolerate general anaesthesia. The catheter drains bile and pus, reducing sepsis while the patient is stabilised for definitive surgery 6-8 weeks later.",
+          "indications": "High-risk surgical patients with acute cholecystitis; gallbladder empyema; Grade III cholecystitis (Tokyo Guidelines); acalculous cholecystitis in ICU patients",
+          "complication": "Bile leak; haemorrhage; catheter displacement; 10-15% may not be able to proceed to interval cholecystectomy"
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet is critically important in gallstone disease at three stages: (1) PREVENTION — certain dietary patterns reduce gallstone formation risk; (2) MANAGEMENT of symptomatic gallstones — a low-fat diet reduces the frequency and severity of biliary colic attacks by minimising cholecystokinin (CCK) release and gallbladder contraction; (3) POST-CHOLECYSTECTOMY — most patients can return to a normal diet, but some experience post-cholecystectomy diarrhoea from bile salt malabsorption requiring dietary adjustments. The most important dietary principle in gallstone disease is the FAT CONTENT of meals — fat is the primary stimulus for gallbladder contraction via CCK.",
+      "fat_and_gallbladder_physiology": "When fat enters the duodenum (30-60 minutes after eating fatty food), I cells in the duodenal mucosa secrete CCK (cholecystokinin). CCK is the primary stimulus for gallbladder contraction — causing it to expel its concentrated bile into the CBD. This vigorous contraction pushes the stone into the cystic duct opening → BILIARY COLIC. Low-fat meals minimise CCK release → reduce gallbladder contraction intensity → reduce biliary colic frequency.",
+      "recommended_foods": [
+        {
+          "category": "Low-Fat, High-Fibre Diet — The Cornerstone",
+          "rationale": "Low dietary fat reduces CCK-stimulated gallbladder contractions (reducing colic frequency); high fibre reduces cholesterol absorption from the intestine and promotes bile acid binding (reducing cholesterol saturation of bile) — a primary gallstone preventive measure",
+          "items": [
+            {
+              "food": "Whole grains (brown rice, whole wheat roti, oats, daliya/broken wheat)",
+              "benefit": "Soluble fibre (beta-glucan, inulin) binds bile acids in the intestine — reduces bile acid reabsorption → liver upregulates bile acid synthesis from cholesterol → reduces hepatic cholesterol pool → reduces cholesterol secretion into bile; epidemiological evidence: high whole grain intake associated with 25-30% lower gallstone risk; low GI (reduces insulin spikes that stimulate hepatic cholesterol synthesis)",
+              "frequency": "Daily as staple carbohydrate"
+            },
+            {
+              "food": "Fruits rich in Vitamin C (amla, guava, citrus, papaya)",
+              "benefit": "Vitamin C (ascorbic acid) is required for conversion of cholesterol to bile acids by the rate-limiting enzyme 7-alpha-hydroxylase; Vitamin C deficiency impairs this conversion, increasing cholesterol levels in bile; prospective studies show higher Vitamin C intake associated with lower gallstone risk and fewer stone complications; amla (Indian gooseberry) is the richest Vitamin C source",
+              "frequency": "Daily; 1-2 amla or a guava daily provides excellent Vitamin C"
+            },
+            {
+              "food": "Legumes and pulses (moong dal, masoor dal, chana)",
+              "benefit": "Soluble fibre; plant protein (lower fat than animal protein); bile acid binding; Vitamin C (in legumes); moderate consumption reduces gallstone risk; moong dal is particularly gentle on the biliary system",
+              "frequency": "Daily as dal — a traditional Indian staple with proven biliary health benefits"
+            },
+            {
+              "food": "Coffee (2-3 cups per day)",
+              "benefit": "Multiple epidemiological studies (including large prospective cohort studies — NHS, HPFS) show coffee consumption is one of the strongest dietary protective factors against gallstone disease; 2-3 cups per day associated with 20-40% lower risk of symptomatic gallstones; mechanism: caffeine stimulates gallbladder contraction and bile flow (maintains gallbladder emptying — prevents stasis); reduces biliary cholesterol secretion; anti-inflammatory; prostaglandin E2 inhibition",
+              "frequency": "2-3 cups of caffeinated coffee daily (protective effect strongest with regular caffeinated coffee; less certain for decaffeinated)",
+              "note": "The same coffee that protects against gallstone formation may trigger biliary colic in patients who ALREADY HAVE stones (by stimulating gallbladder contraction) — use judgment in symptomatic patients"
+            },
+            {
+              "food": "Lean protein sources (chicken breast, fish, egg white, low-fat dairy)",
+              "benefit": "Adequate protein without excessive fat; egg whites provide protein without cholesterol-rich yolks; fish provides omega-3 fatty acids which reduce biliary cholesterol secretion; lean chicken without skin is an excellent low-fat protein for daily meals",
+              "frequency": "2-3 servings of lean protein daily"
+            },
+            {
+              "food": "Olive oil and healthy fats (moderate amounts)",
+              "benefit": "Monounsaturated fatty acids in olive oil STIMULATE gallbladder emptying (via CCK) — counterintuitively, moderate olive oil consumption has been associated with LOWER gallstone risk in Mediterranean populations (regular gentle gallbladder emptying prevents sludge and stone nucleation); omega-3 fatty acids (fish, walnuts) reduce biliary cholesterol secretion",
+              "note": "Paradox: adequate fat (in small amounts at each meal) stimulates regular gallbladder emptying → prevents sludge accumulation → prevents stone formation; ZERO fat diet is actually harmful — extreme low-fat diets cause gallbladder stasis and promote stone formation (important in bariatric surgery patients and crash dieters)"
+            },
+            {
+              "food": "Nuts (almonds, walnuts, pistachios) — moderate amounts",
+              "benefit": "Strong epidemiological evidence: regular nut consumption (1 serving 5+ times per week) associated with 25-30% lower cholecystectomy risk; omega-3 fatty acids; unsaturated fats reduce cholesterol in bile; fibre; Vitamin E",
+              "frequency": "Small handful (15-20 g) daily"
+            },
+            {
+              "food": "Turmeric (Haldi)",
+              "benefit": "Curcumin in turmeric stimulates bile acid synthesis (from cholesterol) and promotes bile secretion (cholagogue effect) — facilitating regular gallbladder emptying; anti-inflammatory in biliary mucosa; anti-cholesterol crystallisation properties in bile; widely available and integral to Indian cooking",
+              "frequency": "Daily in cooking; haldi doodh (turmeric milk)"
+            }
+          ]
+        },
+        {
+          "category": "Foods Reducing Gallstone Formation Risk",
+          "items": [
+            {
+              "food": "Flaxseeds (Alsi)",
+              "benefit": "Omega-3 fatty acids (alpha-linolenic acid — ALA); lignans; soluble fibre; reduces biliary cholesterol secretion; reduces inflammatory signalling in gallbladder mucosa; anti-gallstone properties in animal studies",
+              "frequency": "1-2 tablespoons ground flaxseed daily in yogurt, smoothie, or sprinkled on food"
+            },
+            {
+              "food": "Artichoke, coriander (Dhaniya), and bitter gourd (Karela)",
+              "benefit": "Artichoke leaf extract is the most studied choleretic (bile flow stimulant) — increases bile production and flow, maintaining regular gallbladder emptying and preventing bile stasis; coriander promotes biliary motility; karela (bitter gourd) has traditional bile-stimulating properties",
+              "frequency": "Regular inclusion in diet; fresh coriander/dhania used liberally in cooking"
+            }
+          ]
+        }
+      ],
+      "foods_to_limit_or_avoid": [
+        {
+          "food": "High-Fat, Fried, and Greasy Foods — THE MOST IMPORTANT RESTRICTION FOR SYMPTOMATIC GALLSTONES",
+          "reason": "Fat is the primary CCK secretagogue — stimulates vigorous gallbladder contraction; in a patient with gallstones, this contraction pushes stones into the cystic duct → biliary colic; specific high-fat trigger foods in Indian diet: ghee-laden dal makhani, butter chicken, full-fat paneer dishes, poori/puri (deep-fried bread), pakoras, samosas, bhature, parathas cooked in large amounts of oil, heavy biryanis with ghee",
+          "examples": "Deep-fried foods (samosas, pakoras, puri, bhature, bhajia); full-fat dairy (heavy cream, malai, paneer in heavy cream sauce); fatty meats (mutton with fat, lamb, pork belly, organ meats like liver and kidneys); butter and ghee in large quantities; cream-based desserts (rabri, halwa with ghee)",
+          "recommendation": "STRICT low-fat diet during active symptoms and until surgery; may MODERATE fat intake post-cholecystectomy; cooking methods: steam, bake, grill, boil — avoid deep-frying",
+          "limit": "Total fat <25-30 g/day during active symptomatic phase (vs normal recommended 60-70 g/day)"
+        },
+        {
+          "food": "Refined Carbohydrates and Sugary Foods",
+          "reason": "High refined carbohydrate and sugar intake causes insulin resistance and hyperinsulinaemia → increases hepatic cholesterol synthesis and secretion into bile → increases cholesterol saturation of bile → promotes stone formation; Indian diet high in refined carbohydrates (maida/refined flour products, white rice in excess, sweets, mithai) is associated with high gallstone risk; hypertriglyceridaemia from excess sugar also increases biliary cholesterol",
+          "examples": "Maida products (naan, paratha from maida, bread, biscuits, cakes, cookies); sweets and mithai in excess; sugary drinks; white rice in large quantities",
+          "recommendation": "Replace refined grains with whole grains; limit sweets and mithai; reduce sugar intake overall"
+        },
+        {
+          "food": "Red Meat and High Saturated Fat Animal Products",
+          "reason": "Saturated fats and dietary cholesterol increase hepatic cholesterol output into bile; red meat consumption is associated with higher gallstone risk in multiple cohort studies; organ meats (liver, kidney) have very high cholesterol content; processed meats add nitrosamines and are proinflammatory",
+          "recommendation": "Replace red meat with lean poultry (chicken without skin) and fish; limit organ meats and processed meats"
+        },
+        {
+          "food": "Very Rapid Weight Loss and Crash Dieting",
+          "reason": "Perhaps the most important dietary warning for gallstone PREVENTION: rapid weight loss (>1.5 kg/week) — whether from very low calorie diets (VLCD <600 kcal/day), prolonged fasting, liquid diets, or the first months after bariatric surgery — massively increases gallstone formation risk (30-40% of bariatric surgery patients develop stones within 6 months without prophylaxis); mechanism: rapid fat mobilisation floods bile with cholesterol; simultaneous gallbladder stasis from low-fat intake prevents emptying",
+          "recommendation": "Weight loss should be GRADUAL (<0.5-1 kg/week); avoid very low calorie diets without UDCA prophylaxis; always include some fat in the diet to stimulate regular gallbladder emptying (minimum 10 g fat per meal); UDCA 600 mg/day for 6 months post-bariatric surgery"
+        },
+        {
+          "food": "Prolonged Fasting and Skipping Meals",
+          "reason": "The gallbladder requires regular stimulation to empty — prolonged fasting (>12 hours without food) causes gallbladder stasis and bile sludge formation, which is the precursor to gallstone development; intermittent fasting regimens may increase gallstone risk by creating extended periods of gallbladder stasis; skip no meals",
+          "recommendation": "Eat regular meals — 3 main meals with 2-3 small snacks; never fast for more than 12 hours; if fasting for religious reasons (Navratri, Karwa Chauth, Ramadan) — maintain some fat intake even in liquid form to stimulate gallbladder"
+        },
+        {
+          "food": "Egg Yolks (In Excess) and High-Cholesterol Foods",
+          "reason": "Dietary cholesterol directly contributes to biliary cholesterol saturation; egg yolks, shrimp, liver, and full-fat dairy are the highest dietary cholesterol sources; moderate egg yolk consumption (1 egg/day) is acceptable but excess egg yolk may worsen biliary cholesterol supersaturation in susceptible individuals",
+          "recommendation": "Limit egg yolks to 1 per day; egg whites unlimited"
+        }
+      ],
+      "post_cholecystectomy_diet": {
+        "overview": "After cholecystectomy, bile drains continuously into the duodenum (no longer stored and concentrated in the gallbladder). Most patients tolerate a normal diet within 2-4 weeks of surgery. A small proportion (5-10%) develop POST-CHOLECYSTECTOMY DIARRHOEA from the constant drip of bile into the intestine causing bile salt malabsorption and colonic irritation.",
+        "immediate_post_op": "Days 1-7: light, low-fat, easily digestible foods (khichdi, rice, dal, boiled vegetables, plain yogurt, toast); avoid fatty, spicy, or fried foods; small frequent meals",
+        "weeks_2_to_4": "Gradually introduce more foods; most patients can eat normally; introduce fat gradually; monitor for symptoms",
+        "long_term": "Majority of patients have no dietary restrictions 4-6 weeks post-surgery; a normal healthy diet is recommended; maintain low saturated fat intake for cardiovascular health",
+        "post_cholecystectomy_diarrhoea": {
+          "management": "Low-fat diet (reduces bile output); cholestyramine (4 g sachet before meals — binds bile salts in colon preventing irritation); probiotic foods (curd, kefir — restore gut flora after surgery and antibiotics); gradual reintroduction of fat over weeks; usually resolves within 3-6 months as the body adapts"
+        }
+      },
+      "sample_meal_plan_symptomatic_gallstones": {
+        "principle": "Low fat (<25-30 g/day); high fibre; small frequent meals; no skipping meals; no deep-fried food",
+        "early_morning": "Warm water with jeera (cumin seeds); 1-2 amla (Vitamin C)",
+        "breakfast": "Plain oats porridge (no ghee or butter) with banana; or 2 egg whites (scrambled without oil); or daliya with low-fat milk; weak chai with low-fat milk",
+        "mid_morning": "Small handful of almonds and walnuts; 1 guava or orange",
+        "lunch": "Small bowl plain boiled rice + moong dal (no oil tadka) + steamed lauki or tori sabzi (no oil); small bowl of fresh low-fat curd",
+        "afternoon": "Herbal tea; fresh fruit (papaya, pear, apple); plain biscuits or rusk",
+        "dinner": "Small portion whole wheat roti (minimal or no ghee) + dal + steamed vegetable (lauki, pumpkin, French beans); or chicken soup (fat skimmed); avoid rich curries, creamy dishes, or heavy meals",
+        "avoid_completely": "Ghee in large amounts, deep-fried foods, full-fat paneer in cream sauce, biryani with ghee, heavy sweets, alcohol",
+        "hydration": "8-10 glasses of water or herbal tea daily; adequate hydration maintains bile fluidity"
+      }
+    },
+
+    "lifestyle_management": {
+      "weight_management": {
+        "overview": "Obesity is the most important modifiable risk factor for gallstone disease — but the MANNER and RATE of weight loss is as important as achieving weight loss itself. RAPID weight loss dramatically increases gallstone risk (see dietary section).",
+        "recommendations": [
+          "Target BMI 18.5-25 kg/m2; GRADUAL weight loss — maximum 0.5-1 kg/week; rapid weight loss >1.5 kg/week significantly increases gallstone risk",
+          "Exercise as the primary weight loss strategy (reduces gallstone risk by improving insulin sensitivity and reducing hepatic cholesterol secretion) — superior to very low calorie dieting alone",
+          "During weight loss: ensure minimum 10 g fat per meal to stimulate regular gallbladder emptying; add UDCA 600 mg/day if weight loss is >1 kg/week",
+          "After bariatric surgery: UDCA 500-600 mg/day for 6 months is mandatory to prevent gallstone formation during rapid weight loss phase"
+        ]
+      },
+      "physical_activity": {
+        "overview": "Regular physical activity reduces gallstone risk through multiple mechanisms: improves insulin sensitivity (reduces hyperinsulinaemia-driven hepatic cholesterol synthesis); reduces triglycerides; reduces abdominal obesity; stimulates regular intestinal bile acid metabolism; reduces inflammatory markers.",
+        "recommendation": "150 minutes moderate aerobic exercise per week (brisk walking, cycling, swimming); 2 sessions strength training per week; regular daily movement; avoid prolonged sedentary periods",
+        "evidence": "Large cohort studies (Harvard Health Professionals Follow-Up Study, Nurses' Health Study): physically active adults have 20-40% lower risk of symptomatic gallstones compared to sedentary individuals"
+      },
+      "alcohol_and_smoking": {
+        "alcohol": "Paradoxically, MODERATE alcohol consumption (1-2 units per day — not heavy drinking) is associated with LOWER gallstone risk in epidemiological studies (mechanisms: improves insulin sensitivity; increases HDL cholesterol which promotes hepatic cholesterol clearance; modest choleretic effect). However: heavy alcohol use (>3 drinks/day) is harmful to liver (cirrhosis — pigment stones) and increases pancreatitis risk; alcohol is a trigger for biliary colic in some patients. The net recommendation: moderate consumption within guidelines may have mild protective effect; heavy use is harmful.",
+        "smoking": "Smoking is associated with slightly higher gallstone risk (increases lithogenicity of bile; impairs gallbladder motility); smoking cessation recommended for overall health benefits"
+      },
+      "recognising_when_to_seek_urgent_care": {
+        "overview": "All patients with known gallstones should be educated to recognise warning signs that differentiate a typical biliary colic episode (manageable with analgesia at home) from complications requiring urgent hospital attendance.",
+        "home_management_appropriate": "Episodic RUQ pain lasting <6 hours; improves or resolves; no fever; no jaundice; previous similar episode; can take oral diclofenac with relief",
+        "hospital_same_day": "Pain persisting beyond 6 hours without relief; fever >38°C developing during pain episode; inability to take any fluids; pain uncontrolled by oral analgesia",
+        "emergency_services_call_102_112": "Fever + jaundice + severe pain (Charcot's triad — possible cholangitis); confusion or altered consciousness; severe hypotension or collapse; severe abdominal rigidity ('board-like'); very severe constant pain radiating to back (pancreatitis)"
+      }
+    },
+
+    "gallstones_monitoring_plan": {
+      "note": "Monitoring requirements differ significantly by clinical scenario — from annual watchful waiting for asymptomatic stones to urgent post-operative surveillance.",
+      "asymptomatic_gallstones": {
+        "green_zone": {
+          "status": "Watchful Waiting — Annual Review",
+          "criteria": "Truly asymptomatic; no alarm features; not in high-risk area for gallbladder cancer; stone size <3 cm; no polyps or wall changes; fit for surgery if needed",
+          "action": "Annual clinical review; counsel on warning symptoms; low-fat diet advice; annual ultrasound if stone size changes concern or polyp present; consider cholecystectomy if symptoms develop or patient moves to high-risk group"
+        }
+      },
+      "symptomatic_gallstones_awaiting_surgery": {
+        "yellow_zone": {
+          "status": "Symptomatic — Awaiting Elective Cholecystectomy",
+          "criteria": "Recurrent biliary colic; on waiting list for laparoscopic cholecystectomy; between attacks",
+          "action": "Strict low-fat diet to minimise colic frequency; avoid known triggers; keep diclofenac (available OTC as 25 mg tablet in India, or prescribed 50 mg) at hand for acute attacks; clear instruction: attend emergency if fever develops, jaundice appears, or pain lasts >6 hours; UDCA 8-10 mg/kg/day may reduce colic frequency while awaiting surgery"
+        }
+      },
+      "post_cholecystectomy_monitoring": {
+        "immediate_post_op": "Routine follow-up at 2 and 6 weeks post-surgery; assess wound healing; diet progression; symptoms",
+        "long_term": "No specific routine gallstone monitoring required after successful cholecystectomy; post-cholecystectomy diarrhoea usually resolves within 3-6 months; persistent symptoms (pain, jaundice) after cholecystectomy — investigate for retained CBD stone, bile duct injury, or post-cholecystectomy syndrome"
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Acute Cholecystitis",
+        "description": "Acute bacterial infection and inflammation of the gallbladder from persistent cystic duct obstruction. The most common complication of gallstone disease (develops in 20-30% of symptomatic patients). Risk of gangrenous transformation (necrosis of the gallbladder wall) and perforation if untreated.",
+        "severity": "Moderate to Severe",
+        "management": "IV antibiotics; IV fluids; analgesia; early laparoscopic cholecystectomy within 72 hours (Grade I-II); percutaneous cholecystostomy for Grade III (high surgical risk)"
+      },
+      {
+        "complication": "Ascending Cholangitis — Biliary Sepsis",
+        "description": "Life-threatening bacterial infection of the bile duct system from CBD stone obstruction. Presents with Charcot's triad (fever + jaundice + RUQ pain) and in severe cases Reynolds' pentad (adding hypotension + confusion). Untreated Grade III cholangitis has >25% mortality.",
+        "severity": "Life-threatening — EMERGENCY",
+        "management": "ICU admission; IV antibiotics; URGENT ERCP within 12-24 hours (biliary drainage is life-saving); fluid resuscitation; vasopressors for shock"
+      },
+      {
+        "complication": "Gallstone Pancreatitis",
+        "description": "Acute pancreatitis from gallstone impaction at the ampulla of Vater. Ranges from mild self-limiting to severe necrotising pancreatitis with multi-organ failure (30-40% mortality in severe necrotising form).",
+        "severity": "Mild to Life-threatening depending on severity",
+        "management": "Aggressive IV fluid resuscitation (Ringer's Lactate); analgesia; ERCP if CBD stone persists; cholecystectomy same admission (mild) or after recovery (severe)"
+      },
+      {
+        "complication": "Gallbladder Empyema",
+        "description": "Collection of pus within the gallbladder lumen — a progression of untreated acute cholecystitis to a frank abscess. Presents as continued or worsening features of acute cholecystitis (fever, RUQ pain, leucocytosis) not resolving with antibiotics.",
+        "severity": "Severe",
+        "management": "IV antibiotics; emergency cholecystectomy or percutaneous cholecystostomy as bridge; drain pus and remove gallbladder"
+      },
+      {
+        "complication": "Gallbladder Perforation and Bile Peritonitis",
+        "description": "Full-thickness perforation of the gallbladder wall from gangrenous cholecystitis — allowing bile and pus to spill into the peritoneal cavity causing generalised peritonitis. Three types: acute free perforation (bile peritonitis — most dangerous); subacute (pericholecystic abscess — walled off by omentum); chronic (cholecystoenteric fistula — gallstone may erode into bowel).",
+        "severity": "Life-threatening — 20-30% mortality in free perforation",
+        "management": "Emergency laparotomy (open surgery) for free perforation; peritoneal lavage; cholecystectomy; drainage; ICU"
+      },
+      {
+        "complication": "Mirizzi Syndrome",
+        "description": "An impacted stone in the cystic duct or Hartmann's pouch (the infundibulum of the gallbladder) causes extrinsic compression of the adjacent common hepatic duct — resulting in obstructive jaundice, elevated LFTs, and a clinical picture identical to choledocholithiasis or cholangiocarcinoma. Can progress to a cholecystocholedochal fistula (Type II-IV Mirizzi). An uncommon but important complication — requires preoperative MRCP or ERCP to diagnose and careful surgical planning (high risk of bile duct injury).",
+        "management": "ERCP (diagnosis and temporary drainage); cholecystectomy (technically challenging — high conversion rate to open; risk of CBD injury); hepaticojejunostomy may be needed for fistulation"
+      },
+      {
+        "complication": "Gallstone Ileus",
+        "description": "A rare but important mechanical bowel obstruction caused by a large gallstone (typically >2.5 cm) eroding through the gallbladder wall into the adjacent small intestine (usually duodenum — Bouveret syndrome) or large intestine. The stone then migrates distally and impacts at the ileocaecal valve (most common site) causing bowel obstruction. A classic imaging finding is Rigler's triad on plain X-ray: intestinal obstruction + pneumobilia (air in bile ducts) + ectopic calcified stone.",
+        "severity": "Moderate to Severe",
+        "management": "Emergency surgery (enterolithotomy — removal of stone from intestine); cholecystectomy and fistula repair at same or later operation"
+      },
+      {
+        "complication": "Gallbladder Cancer",
+        "description": "The most feared long-term complication of longstanding gallstone disease — particularly in the Indian Gangetic belt. Gallstones present in 75-90% of gallbladder cancer cases; they cause chronic mucosal irritation, metaplasia, and carcinogenesis over 10-20 years. The poor prognosis of gallbladder cancer (5-year survival only 5% for advanced disease) makes PREVENTION (early cholecystectomy) more important than treatment.",
+        "severity": "Life-threatening — poor prognosis in advanced disease",
+        "management": "Early detection (incidental finding at cholecystectomy = best prognosis; T1a = simple cholecystectomy curative); curative radical cholecystectomy (liver resection, lymphadenectomy, bile duct resection as needed) for T1b-T3; palliative chemotherapy (gemcitabine + cisplatin) for advanced disease"
+      },
+      {
+        "complication": "Post-Cholecystectomy Syndrome",
+        "description": "Persistent or new symptoms after cholecystectomy — occurring in 10-20% of patients. Causes: retained CBD stone (most important — investigate with MRCP); sphincter of Oddi dysfunction; bile salt malabsorption diarrhoea; functional bowel disorder (IBS exacerbated by surgery); bile leak or biloma; hepatic or pancreatic disease unrelated to gallstones that was masked by the gallstone diagnosis.",
+        "management": "MRCP to exclude retained CBD stone; ERCP for stone extraction if found; bile acid sequestrant (cholestyramine) for bile salt diarrhoea; gastroenterology referral for functional symptoms"
+      }
+    ],
+
+    "special_populations": {
+      "gallstones_in_pregnancy": {
+        "key_points": [
+          "Gallstones are VERY COMMON in pregnancy — 30-40% of pregnant women develop biliary sludge; 10-12% develop de novo gallstones; progesterone + oestrogen combined impair gallbladder motility and increase bile cholesterol saturation",
+          "Biliary colic in pregnancy: conservative management first — low-fat diet, IV fluids, IV analgesia; short-acting NSAIDs (diclofenac) may be used in second trimester with caution (avoid first trimester and after 28 weeks — risk of premature ductus arteriosus closure and neonatal renal effects); IV morphine is safe in pregnancy",
+          "Acute cholecystitis in pregnancy: hospitalise; IV antibiotics (co-amoxiclav or cephalosporins — safe in all trimesters); laparoscopic cholecystectomy safe in second trimester (12-28 weeks) — avoid in first and third trimesters if possible; untreated acute cholecystitis in pregnancy has significant maternal and foetal morbidity; surgery safer than repeated conservative management",
+          "ERCP in pregnancy: can be performed safely with appropriate radiation shielding (lead apron over abdomen); MRCP preferred pre-procedure (avoids radiation); fluoroscopy time minimised",
+          "Imaging in pregnancy: ultrasound is first choice (no radiation, safe in all trimesters); MRCP (MRI without contrast) is safe in second and third trimester; CT and X-ray are avoided unless absolutely necessary (radiation risk)",
+          "Cholelithiasis detected in pregnancy: if asymptomatic — watchful waiting; elective cholecystectomy typically deferred until after delivery; recurrence rate of biliary colic in pregnancy is high — second-trimester surgery preferred over repeated hospitalisations",
+          "UDCA: limited safety data in pregnancy — generally avoided in first trimester; some centres use in second/third trimester for severe cholestasis of pregnancy (PBC overlap) but not routinely for gallstone dissolution in pregnancy"
+        ]
+      },
+      "gallstones_in_elderly": {
+        "key_points": [
+          "Gallstone prevalence increases dramatically with age — 25-35% of adults over 65 years have gallstones",
+          "Elderly patients have more complicated presentations — gangrenous cholecystitis, perforation, and empyema occur more frequently (impaired immune response, slower recognition of symptoms, more comorbidities)",
+          "Atypical presentations more common in elderly — may present without fever, without leucocytosis, with non-specific malaise or confusion rather than classic RUQ pain; Murphy's sign may be absent",
+          "Surgical risk is higher in elderly — carefully assess comorbidities before cholecystectomy; however, emergency surgery for complicated cholecystitis in elderly has much higher mortality than elective surgery; early (48-72 hour) cholecystectomy for acute cholecystitis is preferred even in elderly over delayed approach (avoids repeated hospitalisation and complication risk)",
+          "Percutaneous cholecystostomy: very valuable in elderly high-risk patients with acute cholecystitis who cannot tolerate general anaesthesia — bridge to recovery and interval cholecystectomy or definitive drainage",
+          "Asymptomatic gallstones in elderly (>75 years): very strong case for watchful waiting (annual mortality risk of cholecystectomy may exceed the risk of complications from silent stones); individualised discussion"
+        ]
+      },
+      "gallstones_in_haemolytic_disorders_india": {
+        "key_points": [
+          "Sickle cell disease: 70% of sickle cell patients develop black pigment gallstones by age 30; prophylactic cholecystectomy recommended at time of splenectomy or when undergoing any abdominal surgery; laparoscopic cholecystectomy is safe between crises; pain crisis can mimic biliary colic — careful assessment needed",
+          "Thalassaemia major: regular transfusions cause haemolysis-related pigment stones; frequent monitoring with ultrasound; cholecystectomy when symptomatic",
+          "Malaria: particularly relevant in India — repeated malaria episodes cause haemolysis increasing unconjugated bilirubin → pigment stone formation; higher gallstone prevalence in malaria-endemic regions"
+        ]
+      },
+      "gallstones_in_north_india_gangetic_belt": {
+        "key_points": [
+          "The Gangetic belt (Delhi NCR, UP including Varanasi and Lucknow, Bihar, Jharkhand, West Bengal) has the world's highest rates of gallbladder cancer — both absolutely and per capita",
+          "Gallbladder cancer is the most common GI malignancy in women in this region; male:female ratio is 1:3-4",
+          "Risk factors that converge in this population: high gallstone prevalence; Salmonella typhi chronic carrier rate (typhoid is endemic); potential carcinogen exposure (industrial/agricultural chemicals); possible genetic susceptibility (ABCG5/G8 polymorphisms)",
+          "MANAGEMENT RECOMMENDATION for Gangetic belt: ALL patients with symptomatic gallstones (any age) should be offered early laparoscopic cholecystectomy — the cancer prevention benefit outweighs surgical risk; even asymptomatic stones in young adults merit discussion about prophylactic cholecystectomy; do not delay",
+          "Incidental gallbladder cancer at laparoscopic cholecystectomy: critical — if the surgical specimen shows unexpected cancer on histopathology: T1a (mucosa only) — simple cholecystectomy was curative; T1b (into muscularis) — radical re-resection recommended (segment IVb/V liver resection + portal lymphadenectomy); T2 and beyond — radical surgery; ALL cholecystectomy specimens MUST be sent for histopathological examination — even 'routine' cholecystectomies",
+          "ANOMALOUS PANCREATOBILIARY DUCT JUNCTION (APBDJ): congenital variant where CBD and pancreatic duct join outside the duodenal wall; creates a common channel allowing pancreatic juice reflux into gallbladder; very high gallbladder cancer risk even without stones; MRCP identifies this variant; prophylactic cholecystectomy recommended if APBDJ detected with gallbladder abnormality"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Typhoid Vaccine — CRITICAL in Gangetic Belt for Cancer Prevention",
+        "frequency": "Vi polysaccharide: single dose; booster every 3 years; Typhoid conjugate vaccine (TCV): single dose; may not need booster",
+        "reason": "Salmonella typhi chronic carriage (typhoid carrier state) is a major co-carcinogen for gallbladder cancer — particularly in the Gangetic belt of India where typhoid is endemic. Salmonella typhi settles in the gallbladder, forms biofilms on gallstones, and produces carcinogenic metabolites that damage gallbladder epithelium over decades; the relative risk of gallbladder cancer in typhoid carriers is 6× compared to non-carriers. Typhoid vaccination reduces acquisition of typhoid (and subsequent chronic carriage) — thereby reducing a major gallbladder cancer risk factor. Vaccinating children in endemic areas is a gallbladder cancer prevention strategy.",
+        "recommendation": "All children and adults in typhoid-endemic areas; travellers to endemic areas; food handlers; healthcare workers"
+      },
+      {
+        "vaccine": "Hepatitis A Vaccine",
+        "frequency": "2-dose series (0 and 6-18 months); lifelong protection",
+        "reason": "HAV and HEV infections acutely impair hepatic function and bile composition — potentially precipitating biliary sludge and stone formation in susceptible individuals. Patients with gallstones who develop viral hepatitis have significantly higher risk of biliary complications. More importantly, patients with pre-existing liver disease (cirrhosis — who are at high risk of pigment stones) who develop superimposed HAV have very high fulminant hepatitis risk. All patients with gallstones and those with risk factors for biliary complications should be vaccinated against HAV.",
+        "recommendation": "All patients with chronic liver disease (cirrhosis, chronic HBV/HCV); travellers to endemic areas; food handlers"
+      },
+      {
+        "vaccine": "Annual Influenza Vaccine",
+        "reason": "Influenza infection triggers systemic inflammatory response and can precipitate acute cholecystitis in patients with existing gallstones; NSAID and aspirin use for influenza myalgia can worsen biliary disease; influenza vaccine reduces illness burden and reduces incidental NSAID use",
+        "recommendation": "Annual vaccination for patients with chronic biliary disease, cirrhosis, and elderly patients with gallstone disease"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine",
+        "reason": "Patients with cirrhosis (high pigment stone risk), post-splenectomy (sickle cell disease — high pigment stone risk), and elderly with gallstone disease are at increased risk of invasive pneumococcal infection and sepsis; pneumococcal vaccination reduces infectious complications",
+        "recommendation": "All asplenic patients (sickle cell disease patients who have had splenectomy); all cirrhotic patients; all adults >65 years"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Episodic right upper quadrant or epigastric pain lasting 30 minutes to 6 hours especially after fatty meals — first suspected biliary colic episode requires GP review and abdominal ultrasound",
+      "Any yellow discolouration of eyes or skin (jaundice) — always requires same-day medical assessment and blood tests (LFTs)",
+      "Dark tea-coloured urine with or without pale stools — obstructive jaundice — same-day GP or emergency assessment",
+      "Severe upper abdominal pain that does not resolve within 6 hours — possible acute cholecystitis — hospital attendance required",
+      "Fever developing during or after abdominal pain episode — possible cholecystitis or cholangitis — hospital assessment same day",
+      "Ultrasound report showing gallstones — discuss with GP what follow-up and monitoring is required; when surgery should be considered",
+      "Gallstones in a patient from the Gangetic belt (North India) — even asymptomatic stones should be discussed with a surgeon regarding timing of prophylactic cholecystectomy",
+      "Unexplained weight loss with longstanding gallstones — possible gallbladder cancer — urgent assessment with ultrasound, CT, and CA 19-9",
+      "Persistent pruritus (itching) with or without visible jaundice — possible chronic biliary obstruction — blood tests and ultrasound",
+      "After ERCP or cholecystectomy: new symptoms — fever, jaundice, abdominal pain — possible bile leak, retained stone, or stricture",
+      "Known gallstones in a diabetic, sickle cell patient, or immunocompromised individual with any new abdominal symptoms — lower threshold for emergency assessment"
+    ],
+
+    "emergency_signs": [
+      "Fever WITH jaundice WITH right upper quadrant pain (CHARCOT'S TRIAD) — ASCENDING CHOLANGITIS — CALL EMERGENCY SERVICES (102/112); requires emergency ERCP within 12-24 hours; life-threatening if untreated",
+      "Charcot's triad PLUS confusion and/or hypotension (REYNOLDS' PENTAD) — SEVERE CHOLANGITIS WITH SEPTIC SHOCK — CALL EMERGENCY SERVICES IMMEDIATELY; ICU and emergency biliary drainage required urgently; mortality >25% without immediate intervention",
+      "Sudden severe constant epigastric pain radiating to the back — severe unrelenting (not episodic) — POSSIBLE GALLSTONE PANCREATITIS — hospital emergency attendance immediately",
+      "Sudden severe generalised abdominal pain with rigid 'board-like' abdomen — POSSIBLE GALLBLADDER PERFORATION with bile peritonitis — CALL EMERGENCY SERVICES; emergency surgery required",
+      "Jaundice developing rapidly with fever and severe upper abdominal pain within hours — possible acute cholangitis — EMERGENCY; do not wait",
+      "Hypotension (very low blood pressure, feeling faint) with abdominal pain and fever — BILIARY SEPTIC SHOCK — CALL EMERGENCY SERVICES",
+      "Confusion, extreme lethargy, or altered consciousness in a patient with known gallstones or jaundice — biliary sepsis with organ dysfunction — EMERGENCY",
+      "Vomiting blood or passing black tarry stools in a patient with gallstone disease — upper GI bleeding (possibly from gallstone eroding into bowel or haemobilia) — EMERGENCY",
+      "Known gallbladder cancer patient with sudden severe abdominal pain — tumour perforation or major complication — EMERGENCY"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "I have been told I have gallstones but have no symptoms. Do I need surgery?",
+        "answer": "Most people with gallstones have no symptoms and do not require immediate surgery. The risk of developing symptoms from asymptomatic gallstones is only about 1-3% per year — so most people with 'silent' gallstones never require intervention. Watchful waiting with annual review is the standard recommendation for truly asymptomatic stones in most patients. However, there are important exceptions: if you live in the Gangetic belt (UP, Bihar, Delhi NCR, West Bengal) — the risk of gallbladder cancer from longstanding gallstones is significantly higher than Western populations, and many surgeons recommend cholecystectomy even for asymptomatic stones in this region; if your stones are very large (>3 cm) or if your gallbladder wall has polyps (>10 mm), the cancer risk is higher; if you are about to undergo bariatric surgery or other major abdominal surgery, concurrent cholecystectomy is often recommended. Please discuss your specific situation with your doctor — the recommendation is highly individualised."
+      },
+      {
+        "question": "My gallstone pain comes after eating — what foods should I eat and what should I completely avoid?",
+        "answer": "The key principle: the FAT content of your meal — not spice or acidity — is the primary trigger for gallstone pain. Fat in the duodenum triggers the release of a hormone called CCK (cholecystokinin) which causes the gallbladder to contract vigorously — and this contraction pushes stones against the cystic duct causing pain. Foods to STRICTLY AVOID: deep-fried foods (samosas, pakoras, puri, bhature, parathas in lots of oil); full-fat paneer in cream sauce; dal makhani with heavy cream or butter; ghee in large quantities on everything; mutton with fat; full-cream milk. Foods that are SAFE and BENEFICIAL: plain boiled or steamed vegetables; moong dal; plain rice or whole wheat roti (minimal oil); low-fat curd; fruits; boiled egg whites; lean chicken without skin; fish (not deep-fried). The critical rule: eat SMALL portions and NEVER eat large heavy meals — even a small portion of the safest food can trigger colic if eaten in excess. Four to five small meals per day are safer than two or three large meals."
+      },
+      {
+        "question": "What is the difference between biliary colic and acute cholecystitis?",
+        "answer": "Both are caused by gallstones but they are very different in severity. Biliary colic is when a stone temporarily blocks the exit of the gallbladder (cystic duct) — causing severe, cramping right upper quadrant pain that typically lasts 30 minutes to 6 hours and then fully resolves on its own. There is no infection and no fever. Once the stone falls back into the gallbladder or passes through, the pain stops completely. Acute cholecystitis is what happens if that blockage persists beyond 6 hours — the gallbladder becomes inflamed and infected (like an abscess forming). Pain CONTINUES beyond 6 hours, FEVER develops (38°C or higher), and there is TENDERNESS when someone presses on the right side of the abdomen under the rib cage. Acute cholecystitis requires hospital admission and usually surgery (cholecystectomy) within 72 hours. The 6-hour mark is the critical clinical indicator: pain resolving within 6 hours = probably biliary colic; pain persisting beyond 6 hours WITH fever = acute cholecystitis = go to hospital."
+      },
+      {
+        "question": "What is cholangitis and why is it so dangerous?",
+        "answer": "Ascending cholangitis is a serious bacterial infection of the bile ducts (the tubes that carry bile from the liver to the intestine) — caused when a gallstone blocks the common bile duct and bacteria from the intestine ascend and infect the blocked bile in the duct. It is one of the most dangerous complications of gallstone disease. The classic warning signs are the three symptoms of Charcot's triad: fever (often with violent shivering/rigors), jaundice (yellow eyes and skin), and right upper quadrant pain — all occurring together. In severe cholangitis, two additional signs appear: confusion and very low blood pressure (hypotension — septic shock). The reason cholangitis is so dangerous is that bacteria multiply in the blocked bile duct under pressure and rapidly enter the bloodstream — causing septic shock and multi-organ failure within hours. Treatment requires two things urgently: (1) IV antibiotics to treat the infection, and (2) emergency ERCP (endoscopy) to drain the blocked bile duct and remove the stone — antibiotics alone without drainage are insufficient for severe cholangitis. If you or someone has yellow eyes + fever + abdominal pain — this is a medical emergency; call 102/112."
+      },
+      {
+        "question": "Is laparoscopic cholecystectomy (keyhole surgery) safe? What is the recovery like?",
+        "answer": "Laparoscopic (keyhole) cholecystectomy is one of the safest and most commonly performed operations in the world — performed over 750,000 times per year in the USA alone. It is done through 3-4 tiny incisions (5-10 mm each) under general anaesthesia. Most patients go home on the same day or after one night in hospital. Recovery is remarkably fast: most people can walk normally the day after surgery, return to light activities within 1 week, and return to full normal activity including exercise within 2-4 weeks. The main risks are: bile duct injury (0.3-0.5% — very rare; requires repair surgery if it occurs), bleeding, infection at the small incision sites (all minor). Conversion to open surgery (larger incision) is needed in about 5% of elective cases and 10-15% of emergency cases — more common with severe inflammation. The vast majority of patients feel significantly better after cholecystectomy — free from recurring painful attacks — and can return to a normal unrestricted diet. The gallbladder is not an essential organ — the liver continues to produce bile which drains directly into the intestine."
+      },
+      {
+        "question": "Why do women get gallstones more than men, and does the OCP increase the risk?",
+        "answer": "Women are 2-3 times more likely than men to develop gallstones before menopause — primarily because of oestrogen and progesterone. Oestrogen increases the liver's secretion of cholesterol into bile (making bile more saturated with cholesterol — which then crystallises into stones); progesterone reduces gallbladder motility (the gallbladder contracts less frequently — bile stagnates and cholesterol precipitates). This explains why pregnancy (very high oestrogen + progesterone) dramatically increases gallstone risk — 30-40% of women develop biliary sludge during pregnancy. The oral contraceptive pill (OCP) does modestly increase gallstone risk (approximately 1.5× in women who have not been on it long; the risk reduces after several years of OCP use as the liver adapts). Hormone replacement therapy (HRT) also modestly increases risk. After menopause, the gap between men and women narrows as oestrogen levels fall. Women who have had multiple pregnancies, are overweight, have diabetes, or have a family history of gallstones are at highest risk. The mnemonic '5 Fs' — Fat, Female, Forty, Fertile, Fair — captures the major risk factors."
+      },
+      {
+        "question": "Why is gallbladder cancer so common in UP, Bihar and Delhi? Should I get my gallstones removed as a precaution?",
+        "answer": "The Gangetic belt — including Delhi, Uttar Pradesh, Bihar, Jharkhand, and West Bengal — has the highest rates of gallbladder cancer in the world, approximately 10-20 times higher than Western countries. Gallbladder cancer is the most common GI cancer in women in this region. The reason involves multiple factors converging: high prevalence of gallstones (which chronically irritate the gallbladder lining); high rates of Salmonella typhi (typhoid) chronic carriage (typhoid bacteria settle in the gallbladder on gallstones and produce carcinogens over decades — typhoid carriers have 6× the gallbladder cancer risk); possible genetic susceptibility in certain communities; and environmental/industrial carcinogen exposure. Gallbladder cancer arises over 10-20 years of chronic gallstone disease and is almost incurable once advanced (5-year survival <5% for Stage IV). The only cure is early detection and surgery. Given this, if you have gallstones AND live in or are from the Gangetic belt, most surgeons in India strongly recommend early laparoscopic cholecystectomy — even for asymptomatic gallstones in young adults. Please discuss this specifically with a surgeon or gastroenterologist who understands this regional cancer risk."
+      }
+    ]
+  }
+}
