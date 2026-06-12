@@ -156,7 +156,45 @@
     "long_term": "Follow-up in 2–4 weeks",
     "partner_management": "Test and treat sexual partners"
   },
-
+  "chatbot_intents": [
+    {
+      "intent": "symptom_check",
+      "user_input_examples": [
+        "I have lower abdominal pain and discharge",
+        "Could this be PID?"
+      ],
+      "response_action": "Evaluate symptoms and suggest medical consultation"
+    },
+    {
+      "intent": "treatment_info",
+      "user_input_examples": [
+        "How is PID treated?",
+        "What antibiotics are used?"
+      ],
+      "response_action": "Provide treatment regimens"
+    },
+    {
+      "intent": "risk_assessment",
+      "user_input_examples": [
+        "Am I at risk for PID?",
+        "What causes PID?"
+      ],
+      "response_action": "List risk factors and causes"
+    },
+    {
+      "intent": "prevention_advice",
+      "user_input_examples": [
+        "How can I prevent PID?"
+      ],
+      "response_action": "Provide prevention tips"
+    }
+  ],
+  "source": [
+    "FOGSI Infection Practice Points – PID (pages 3–13) :contentReference[oaicite:0]{index=0}",
+    "UK National PID Guideline 2019 :contentReference[oaicite:1]{index=1}"
+  ]
+}
+{
   "chatbot_intents": [
     {
       "id": 1,
@@ -3807,8 +3845,9 @@
       "user_examples": ["Give ultimate summary of PID"],
       "response": "Pelvic Inflammatory Disease is a serious but preventable infection of female reproductive organs. Early diagnosis, proper treatment, partner involvement, and preventive practices are essential for maintaining reproductive health and avoiding complications."
     }
-  ],
-  
+  ]
+}
+{
   "knowledge_base": {
     "topic": "Pelvic Inflammatory Disease (PID)",
     "faq": [
@@ -3887,3 +3926,6 @@
     ]
   }
 }
+      
+    
+
