@@ -467,4 +467,8 @@ def format_nearby_facilities(
             lines.append(f"- [{item['name']}]({maps_url}) - {' | '.join(details)}{verified_label}")
 
     lines.append("\nFor a medical emergency, call your local emergency number immediately.")
+
     return "\n".join(lines)
+
+    return "\n".join(lines)
+

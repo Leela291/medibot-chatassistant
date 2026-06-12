@@ -13,8 +13,19 @@ from llm.model_loader import get_model_info
 from llm.response_generator import generate_response, generate_with_rag
 from backend.file_parser import parse_uploaded_file
 from tools.fda_tool import get_fda_drug_summary
+
+from tools.location_tool import (
+    get_nearby_medical_facilities,
+    format_nearby_facilities,
+    parse_location_request,
+    search_nominatim_medical_places,
+)
+from services.symptom_detector import detect_symptom
+from services.triage_questions import TRIAGE_QUESTIONS
+
 from tools.location_tool import get_nearby_medical_facilities, format_nearby_facilities, parse_location_request
 from tools.bmi_tool import calculate_bmi
+
 
 health_bp  = Blueprint("health",  __name__)
 chatbot_bp = Blueprint("chatbot", __name__)
@@ -90,6 +101,8 @@ def chat():
 
     history = session.memory.get_history()
     
+
+
     import re
 
     if "bmi" in message.lower():
@@ -124,6 +137,7 @@ def chat():
         session_manager.save_session(session)
 
         return jsonify({"answer": answer, "session_id": session.session_id, "sources": ["BMI Calculator"], "is_emergency": False})
+
 
     # 2. Optimized Generation Routing
     if use_rag:

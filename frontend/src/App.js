@@ -34,8 +34,11 @@ function App() {
   const [isToolsOpen, setIsToolsOpen] = useState(true);
   const [isTopicsOpen, setIsTopicsOpen] = useState(true);
   const [isUploadOpen, setIsUploadOpen] = useState(true);
+
+
   const [bmiWeight, setBmiWeight] = useState("");
   const [bmiHeight, setBmiHeight] = useState("");
+
   const [locating, setLocating] = useState(false);
 
   const bottomRef = useRef(null);
@@ -710,6 +713,14 @@ function App() {
 
           <div className={`collapsible-content ${isToolsOpen ? 'expanded' : 'collapsed'}`}>
             <div className="collapsible-inner">
+<<<<<
+              <div className="tools-grid">
+                <button className="new-chat-btn" style={{ margin: 0, flex: 1, padding: '8px', fontSize: '12px' }} onClick={() => setInput("Calculate BMI")}>
+                  BMI Calc
+                </button>
+                <button className="new-chat-btn" style={{ margin: 0, flex: 1, padding: '8px', fontSize: '12px' }} onClick={() => setInput("Check Drug Interactions")}>
+                  Drugs
+=====
               <div style={{ display: 'flex', gap: '8px', paddingBottom: '8px', flexDirection: 'column' }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
                   <input
@@ -746,6 +757,19 @@ function App() {
                   disabled={locating}
                   title="Allow location to find nearby medical facilities"
                 >
+                  {locating ? "Finding..." : "Nearby Care"}
+>>>>>
+                </button>
+                <button
+                  className="new-chat-btn location-tool-btn"
+                  onClick={findNearbyMedicalFacilities}
+                  disabled={locating}
+                  title="Allow location to find nearby medical facilities"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="15" height="15">
+                    <path d="M12 21s7-4.4 7-11a7 7 0 10-14 0c0 6.6 7 11 7 11z" strokeLinecap="round" strokeLinejoin="round" />
+                    <circle cx="12" cy="10" r="2.5" />
+                  </svg>
                   {locating ? "Finding..." : "Nearby Care"}
                 </button>
               </div>
