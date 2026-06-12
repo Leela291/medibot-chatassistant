@@ -28,7 +28,7 @@ class Session:
             "session_id": self.session_id,
             "created_at": self.created_at,
             "updated_at": self.updated_at,
-            "history": self.memory.get_history(),
+            "history": self.memory.get_all_history(),
         }
 
     @classmethod

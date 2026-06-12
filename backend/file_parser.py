@@ -32,7 +32,7 @@ def parse_uploaded_file(file_storage) -> dict:
     try:
         if ext == ".pdf":
             return _parse_pdf(file_storage, filename)
-        elif ext in (".png", ".jpg", ".jpeg", ".bmp", ".tiff"):
+        elif ext in (".png", ".jpg", ".jpeg", ".bmp", ".tiff", ".webp", ".heic"):
             return _parse_image(file_storage, filename)
         elif ext == ".csv":
             return _parse_csv(file_storage, filename)
@@ -134,7 +134,9 @@ def _parse_image(file_storage, filename):
         from PIL import Image
         import pytesseract
 
+        file_storage.stream.seek(0)
         img = Image.open(file_storage.stream)
+        w, h = img.size
         text = pytesseract.image_to_string(img)
 
         if text and text.strip():
@@ -150,6 +152,9 @@ def _parse_image(file_storage, filename):
                 "base64_image": base64_str,
                 "is_image": True,
                 "error": None,
+                "is_document": len(text.strip()) > 100,
+                "width": w,
+                "height": h,
             }
     except ImportError:
         pass
@@ -173,6 +178,8 @@ def _parse_image(file_storage, filename):
             "base64_image": base64_str,
             "is_image": True,
             "error": None,
+            "width": w,
+            "height": h,
         }
     except ImportError:
         return {
@@ -184,6 +191,8 @@ def _parse_image(file_storage, filename):
             "base64_image": base64_str,
             "is_image": True,
             "error": None,
+            "width": w,
+            "height": h,
         }
 
 # ── CSV Parser ───────────────────────────────────────────────────

@@ -1,0 +1,1361 @@
+{
+  "disease": {
+    "id": "DIS-020",
+    "name": "Hepatitis (A, B, and C)",
+    "scientific_name": "Hepatitis A — Hepatitis A Virus (HAV) Infection; Hepatitis B — Hepatitis B Virus (HBV) Infection; Hepatitis C — Hepatitis C Virus (HCV) Infection",
+    "icd_10_code": "B15.9 (Hepatitis A without hepatic coma); B15.0 (Hepatitis A with hepatic coma); B16.9 (Acute Hepatitis B without delta-agent); B18.1 (Chronic Hepatitis B without delta-agent); B18.2 (Chronic Hepatitis C); B17.1 (Acute Hepatitis C); K72.0 (Acute and subacute hepatic failure — fulminant hepatitis); K74.6 (Cirrhosis of liver — unspecified); C22.0 (Hepatocellular carcinoma); B19 (Unspecified viral hepatitis)",
+    "category": "Infectious Disease / Hepatology / Gastroenterology / Public Health",
+    "overview": {
+      "description": "Viral hepatitis is inflammation of the liver caused by any of five major hepatotropic viruses — Hepatitis A (HAV), Hepatitis B (HBV), Hepatitis C (HCV), Hepatitis D (HDV), and Hepatitis E (HEV). This dataset focuses on the three most clinically important and globally prevalent types: Hepatitis A, B, and C. Despite sharing the common feature of hepatic inflammation and a similar early clinical presentation (jaundice, fatigue, nausea, dark urine), these three viruses differ profoundly in their mode of transmission, natural history, treatment, and preventability. Hepatitis A is a self-limiting acute illness transmitted through contaminated food and water — completely vaccine-preventable. Hepatitis B is transmitted through blood, sexual contact, and vertically from mother to child — largely vaccine-preventable but may cause chronic disease leading to cirrhosis and liver cancer. Hepatitis C is transmitted primarily through blood — no vaccine exists, but it is now CURABLE in over 95% of cases with short-course oral direct-acting antiviral (DAA) therapy — one of the most remarkable therapeutic advances in modern medicine. Together, chronic hepatitis B and C infect approximately 354 million people globally, cause 1.1 million deaths annually, and are the leading cause of cirrhosis and hepatocellular carcinoma (liver cancer) worldwide.",
+      "affected_organ": "Primarily the liver (hepatocytes — hepatic parenchymal cells); systemically: bile ducts, immune system, kidneys (glomerulonephritis), joints, skin (extrahepatic manifestations — particularly in HBV and HCV)",
+      "prevalence": "Hepatitis A: 1.4 million symptomatic cases annually (WHO); majority in low-to-middle income countries. Hepatitis B: 296 million people living with chronic HBV globally; 3.5-4% prevalence in India (approximately 40 million people); 820,000 deaths per year from HBV-related cirrhosis and HCC. Hepatitis C: 58 million people with chronic HCV globally; approximately 6-12 million in India; 290,000 deaths per year. Combined HBV+HCV: second only to tobacco as the leading preventable cause of cancer mortality globally.",
+      "age_group": "HAV: all ages; children often asymptomatic; adults have more severe illness; HBV: vertical transmission (birth) most common in endemic regions; sexual transmission in young adults; HCV: any age; IV drug use (young adults); transfusion-acquired (older adults in pre-screening era)",
+      "is_contagious": true,
+      "is_contagious_note": "HAV and HEV: person-to-person via fecal-oral route; HBV: blood, sexual fluids, vertical transmission; HCV: blood-to-blood transmission primarily",
+      "is_curable": true,
+      "is_curable_note": "HAV: self-limiting — complete recovery in almost all cases. HBV: not curable (functional cure rare) — antiviral therapy suppresses virus but does not eradicate it from hepatocytes; treatment is usually lifelong. HCV: CURABLE in >95% of patients with 8-12 weeks of oral DAA therapy — one of the most significant medical achievements of the 21st century.",
+      "is_manageable": true,
+      "chronic": true,
+      "is_chronic_note": "HAV is never chronic — acute illness only. HBV: becomes chronic in 90% of perinatally infected infants, 25-30% of children under 5, and 5-10% of adults. HCV: becomes chronic in 75-85% of those acutely infected.",
+      "is_preventable": true,
+      "key_fact": "Hepatitis C (HCV) is now CURABLE in over 95% of patients with an 8-12 week course of oral tablets — yet the majority of people with HCV globally remain undiagnosed and untreated. Generic DAA medicines cost as little as Rs 4,000-8,000 for a complete course in India — making HCV elimination possible. Every undiagnosed person with HCV can be cured. FIND THEM, TEST THEM, TREAT THEM."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Hepatitis A (HAV)",
+        "description": "An acute, self-limiting viral liver infection caused by the Hepatitis A virus — a non-enveloped, positive-sense single-stranded RNA virus belonging to the Picornaviridae family (genus Hepatovirus). HAV is transmitted exclusively via the fecal-oral route — through consumption of contaminated food and water, or direct person-to-person contact in conditions of poor sanitation. HAV replicates in hepatocytes and is excreted in high concentrations in bile and faeces. It is one of the most common vaccine-preventable diseases globally and the most common cause of acute viral hepatitis in low-income countries. HAV NEVER causes chronic infection — the immune response clears the virus completely in all immunocompetent individuals, leaving lifelong immunity.",
+        "virology": "Single-stranded positive-sense RNA virus; non-enveloped (resistant to bile and detergents); 27-32 nm diameter; survives in environment for months (water, soil, shellfish); destroyed by heat >85°C for 1 minute, chlorination at >0.5 mg/L, UV irradiation",
+        "transmission": {
+          "routes": [
+            "Consumption of HAV-contaminated food or water — most common globally",
+            "Raw or undercooked shellfish (oysters, clams, mussels) — filter-feeders concentrate HAV from sewage-polluted water",
+            "Raw vegetables and fruits contaminated with faecally-polluted water (strawberries, raspberries, green onions, lettuce)",
+            "Food prepared by an infected food handler with poor hand hygiene",
+            "Person-to-person contact (close household contacts of infected person)",
+            "Travel to endemic areas with poor sanitation",
+            "Men who have sex with men (MSM) — sexual transmission (anal-oral contact)"
+          ],
+          "incubation_period": "15-50 days (average 28 days — approximately 4 weeks)",
+          "infectivity_period": "Maximum 1-2 weeks before symptom onset through 1 week after jaundice onset; HAV shedding in stool begins 2 weeks before symptoms and continues for 1-3 weeks after onset"
+        },
+        "natural_history": "Entirely self-limiting in immunocompetent individuals — complete recovery in 99% within 1-2 months; biphasic illness (< 15% of cases): initial improvement followed by relapse (cholestatic hepatitis or relapsing hepatitis); no chronic infection ever develops; fulminant hepatic failure rare but occurs in 0.5-1% of adults (higher in elderly and those with pre-existing liver disease); lifelong immunity after natural infection",
+        "outcomes_by_age": "Children under 6 years: 70% asymptomatic or mild illness — important source of spread without obvious illness; Older children and adults: symptomatic illness; Adults >50 years: highest risk of fulminant liver failure (1-3%)",
+        "immunity": "Natural infection: lifelong immunity (IgG anti-HAV); Vaccination: 2-dose series provides >95% protective efficacy and likely lifelong immunity after both doses"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Hepatitis B (HBV)",
+        "description": "A potentially serious viral liver infection caused by the Hepatitis B virus — a partially double-stranded circular DNA virus belonging to the Hepadnaviridae family. HBV is one of the most efficiently transmitted blood-borne pathogens — 50-100 times more infectious than HIV. HBV infects hepatocytes and uniquely integrates its genome into host hepatocyte DNA (as covalently closed circular DNA — cccDNA), establishing a viral reservoir that current antiviral drugs cannot fully eradicate. This is why HBV is currently not curable. Chronic HBV infection progresses through recognised phases and is the leading cause of cirrhosis and hepatocellular carcinoma globally.",
+        "virology": "Partially double-stranded circular DNA virus (relaxed circular DNA — rcDNA); 42 nm diameter Dane particle; enveloped (HBsAg — hepatitis B surface antigen forms the outer envelope); core contains HBcAg (core antigen) and HBeAg (e antigen — marker of high viral replication); key marker of viral persistence: cccDNA (covalently closed circular DNA) in hepatocyte nucleus — the template for new viral RNA and the reason HBV cannot be eradicated with current therapies",
+        "transmission": {
+          "routes": [
+            "Vertical (perinatal) transmission — mother to child at birth (most common globally; accounts for majority of chronic HBV in Asia and Africa); infant infected at delivery through maternal blood and secretions",
+            "Sexual transmission — unprotected sexual intercourse (most common in low-endemic high-income countries); HBV present in blood, semen, vaginal secretions",
+            "Blood and blood products — transfusion of unscreened blood (rare in countries with universal screening); occupational needlestick injury in healthcare workers",
+            "Intravenous drug use — sharing contaminated needles and injection equipment",
+            "Horizontal transmission in childhood — household contact (sharing razors, toothbrushes, nail clippers in endemic settings); transmission by biting, scratching, or skin contact with open wounds",
+            "Unsafe medical/dental procedures — reuse of needles, unsterile equipment, unscreened blood transfusion (important in India)",
+            "Tattooing and piercing with unsterilised equipment"
+          ],
+          "incubation_period": "45-160 days (average 90 days — approximately 3 months)",
+          "infectivity_period": "From 1-2 months before symptom onset through the entire period of HBsAg positivity (can be lifelong in chronic infection)"
+        },
+        "natural_history_acute": "Acute HBV: spontaneous clearance occurs in 90-95% of immunocompetent adults (vs only 10% of perinatally-infected infants); fulminant acute HBV: 0.5-1% of acute cases",
+        "natural_history_chronic": "Chronic HBV (HBsAg positive >6 months) passes through recognised phases:",
+        "chronic_phases": [
+          {
+            "phase": "1. Immune Tolerant Phase (High Replication — Tolerance)",
+            "features": "HBsAg positive; HBeAg positive; very high HBV DNA (>10^7 IU/mL); NORMAL or minimally elevated ALT; minimal liver histological inflammation; immune system tolerates virus; common in perinatally-infected Asian patients (may last 20-30 years); NOT an indication for treatment (low response to antivirals)",
+            "duration": "Decades in perinatally-infected patients; shorter in adult-acquired infection"
+          },
+          {
+            "phase": "2. Immune Active / Immune Clearance Phase (HBeAg Positive Chronic Hepatitis)",
+            "features": "HBsAg positive; HBeAg positive; HIGH HBV DNA (>20,000 IU/mL); RAISED ALT (>2× ULN); active liver inflammation and progressive fibrosis; immune system actively fighting virus; risk of cirrhosis if not treated",
+            "treatment": "ANTIVIRAL TREATMENT INDICATED — TDF, TAF, or entecavir"
+          },
+          {
+            "phase": "3. Immune Control Phase (Inactive Carrier State / Low Replication)",
+            "features": "HBsAg positive; HBeAg NEGATIVE; anti-HBe POSITIVE (seroconversion from HBeAg to anti-HBe); LOW HBV DNA (<2,000 IU/mL); NORMAL ALT; minimal liver inflammation; low risk of progression; periodic monitoring required",
+            "note": "Not all HBeAg-negative patients are in inactive carrier state — some have HBeAg-negative chronic hepatitis B (pre-core mutants producing no HBeAg despite active replication)"
+          },
+          {
+            "phase": "4. HBeAg-Negative Chronic Hepatitis B (Reactivation Phase)",
+            "features": "HBsAg positive; HBeAg NEGATIVE; anti-HBe positive; ELEVATED HBV DNA (>2,000 IU/mL — fluctuating); RAISED ALT (fluctuating); active inflammation; pre-core or core promoter mutations prevent HBeAg production despite active replication; most common phase in Mediterranean and South Asian patients; TREATMENT INDICATED",
+            "treatment": "TDF, TAF, or entecavir — lifelong"
+          },
+          {
+            "phase": "5. HBsAg Clearance (Functional Cure — Rare)",
+            "features": "HBsAg NEGATIVE; anti-HBs positive; HBV DNA undetectable; occurs spontaneously in <1% per year; represents the closest to 'cure' achievable with current therapy; cccDNA may persist in hepatocytes; HBV reactivation can occur with immunosuppression even after HBsAg loss",
+            "note": "Goal of novel HBV cure therapies currently in clinical trials"
+          }
+        ],
+        "risk_of_chronicity_by_age": "Perinatal infection (<1 year): 90% chronic; Infection at 1-5 years: 25-50% chronic; Infection >5 years (adult): 5-10% chronic; Immunocompromised adult: 30-50% chronic",
+        "cirrhosis_hcc_risk": "Without treatment: 15-40% of chronic HBV patients develop cirrhosis within 25 years; 5-year cumulative risk of HCC in HBV cirrhosis: 17%; HBV-related HCC can occur even WITHOUT cirrhosis (unique among hepatitis viruses); HBV DNA integration into oncogenes is directly carcinogenic"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Hepatitis C (HCV)",
+        "description": "A blood-borne viral infection of the liver caused by the Hepatitis C virus — an enveloped, positive-sense single-stranded RNA virus of the Flaviviridae family (genus Hepacivirus). HCV is characterised by its propensity to cause persistent chronic infection (75-85% of those infected) and by the extraordinary genetic diversity of its six major genotypes (GT1-6) and multiple subtypes (GT1a, 1b, 2a, 3a, etc.). Unlike HBV, HCV does not integrate into host DNA — it exists as replicating RNA in the cytoplasm of hepatocytes. This makes HCV curable with antiviral therapy. The development of direct-acting antiviral (DAA) drugs targeting HCV non-structural proteins (NS3/4A protease, NS5A, NS5B polymerase) has transformed HCV treatment from a gruelling 48-week pegylated interferon + ribavirin regimen with 50% cure rates and severe side effects, to an 8-12 week course of well-tolerated oral tablets achieving sustained virological response (SVR — considered cure) in over 95% of patients across all genotypes.",
+        "virology": "Positive-sense single-stranded RNA virus; 55-65 nm; highly error-prone RNA-dependent RNA polymerase (NS5B) — produces ~1 trillion viral particles per day with high mutation rate; 6 major genotypes (GT1-GT6) and over 80 subtypes; GT3 predominates in India and South Asia; GT1 predominates in Europe and North America; genotype determines baseline SVR rates with older regimens but is less relevant with pangenotypic DAAs",
+        "transmission": {
+          "routes": [
+            "Intravenous (IV) drug use — sharing needles, syringes, and drug paraphernalia — most common transmission route in high-income countries; accounts for majority of new HCV infections",
+            "Unsafe medical and dental procedures — reuse of unsterilised needles, syringes, and surgical equipment; unscreened blood transfusion — the most important route in India historically (transfusion-related HCV now rare with universal blood screening but iatrogenic transmission from unsafe injections remains significant)",
+            "Blood transfusion and blood products before universal screening — responsible for large prevalence cohort in those transfused before 1992 (when screening was introduced)",
+            "Tattooing and body piercing with non-sterile equipment",
+            "Occupational needlestick injury — healthcare workers; risk ~3% per needlestick from HCV-positive source",
+            "Vertical (mother to child) transmission — 5-10% risk during delivery; lower than HBV; no HBIG equivalent available; no preventive intervention available",
+            "Sexual transmission — much less efficient than HBV; increased risk in: HIV-coinfected patients, MSM (particularly with traumatic sexual practices), multiple partners; monogamous heterosexual couples have very low transmission risk (<1% per year)",
+            "Household transmission — sharing razors, nail clippers, toothbrushes; less common than HBV"
+          ],
+          "incubation_period": "14-180 days (average 45-60 days)",
+          "infectivity_period": "From approximately 1-2 weeks after infection throughout the period of HCV RNA positivity (years to decades in chronic infection)"
+        },
+        "genotype_distribution_india": "India: HCV Genotype 3 (GT3) is predominant (approximately 75-80% of cases) — important because GT3 is associated with more rapid progression to cirrhosis, higher HCC risk even without cirrhosis, higher rates of hepatic steatosis (fatty liver), and was historically harder to treat. GT1 and GT4 make up most remaining cases.",
+        "natural_history_acute": "Acute HCV: often asymptomatic (80-90% of acute HCV infections have NO symptoms); of those acutely infected: 15-25% spontaneously clear the virus within 6 months (more common in: symptomatic acute infection, women, young patients, favourable IL28B genotype); 75-85% develop chronic infection",
+        "natural_history_chronic": "Chronic HCV leads to progressive hepatic fibrosis over 20-30 years in most patients; progression rate highly variable: ~30% develop cirrhosis within 20 years (faster in: men, alcohol use, HIV coinfection, older age at infection, obesity, hepatic steatosis); once cirrhosis established: 1-4% per year risk of hepatic decompensation (ascites, variceal bleeding, encephalopathy) and 1-4% per year risk of HCC",
+        "svr_and_cure": "Sustained Virological Response (SVR) = undetectable HCV RNA 12 weeks after completing treatment (SVR12) — defined as CURE; once SVR achieved: liver inflammation resolves; fibrosis may regress (even early cirrhosis); HCC risk dramatically reduced (but not zero in those with established cirrhosis — continue surveillance); extrahepatic manifestations may resolve; HCV cannot come back unless re-exposed"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Hepatitis D (HDV — Delta Hepatitis)",
+        "description": "Caused by Hepatitis D virus (HDV) — a defective RNA virus that can only infect individuals who are already infected with HBV (it requires HBsAg to form its envelope). HDV occurs as: (1) Co-infection with HBV (simultaneous acute HBV + HDV — generally resolves with HBV clearance; slightly higher risk of acute liver failure); or (2) Superinfection of chronic HBV carrier with HDV (causes severe chronic hepatitis with accelerated progression to cirrhosis; very high risk of fulminant hepatitis). HDV affects approximately 5% of chronic HBV carriers globally (approximately 15-20 million people).",
+        "diagnosis": "Anti-HDV antibodies (IgM = acute; IgG = past or chronic); HDV RNA (active replication); test all HBsAg-positive patients for HDV when severe acute hepatitis, rapid progression to cirrhosis, or HBV with unexplained elevated disease activity",
+        "treatment": "Pegylated interferon alfa (48-72 weeks) — only approved treatment; SVR rates only 25-30%; bulevirtide (Myrcludex B) — first approved entry inhibitor; emerging combinations. HBV vaccination prevents HDV (as HDV requires HBsAg)",
+        "india_note": "HDV prevalence in India: 6-8% of HBsAg-positive patients; screen all HBV patients with severe or rapidly progressive disease"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Hepatitis E (HEV)",
+        "description": "An acute, usually self-limiting hepatitis caused by Hepatitis E virus — transmitted primarily through contaminated water (fecal-oral route, similar to HAV). HEV is the leading cause of acute viral hepatitis in many developing countries including India and is responsible for large-scale waterborne outbreaks. While almost always self-limiting in immunocompetent individuals, HEV causes DEVASTATING outcomes in pregnancy — a case fatality rate of 20-25% in the third trimester — making it one of the most dangerous hepatitis viruses for pregnant women. Covered briefly as context; full dataset separate.",
+        "transmission": "Contaminated drinking water (most common); rare zoonotic transmission from undercooked pork (GT3, GT4 — developed countries); blood transfusion (rare)",
+        "key_facts": [
+          "Most common cause of acute hepatitis in India — sporadic and epidemic forms",
+          "Waterborne outbreaks common in monsoon season (flooding of sewage systems)",
+          "Self-limiting in most adults (similar course to HAV)",
+          "EXTREMELY DANGEROUS in pregnancy (third trimester): 20-25% case fatality rate; causes fulminant hepatic failure, DIC, preterm delivery, foetal loss",
+          "Chronic HEV: occurs in immunocompromised patients (organ transplants, HIV) — GT3 zoonotic strain",
+          "Diagnosis: HEV IgM antibody (acute); HEV RNA (active infection)",
+          "Treatment: supportive; ribavirin for chronic HEV in immunocompromised"
+        ]
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Acute Hepatitis",
+        "description": "Symptomatic acute viral hepatitis with jaundice and elevated liver enzymes but no signs of hepatic decompensation or coagulopathy. Most acute HAV and acute HBV presentations fall here.",
+        "criteria": "Jaundice present; ALT elevated (typically 5-50× ULN); bilirubin elevated; INR normal (<1.3) — liver's synthetic function preserved; no encephalopathy; no ascites; able to eat and drink; not severely fatigued or incapacitated",
+        "functional_impact": "Significant impact on quality of life (fatigue, nausea, jaundice); unable to work for several weeks; but not life-threatening",
+        "management": "Outpatient management in most cases; supportive care — rest, adequate nutrition and hydration, complete alcohol abstinence; avoid hepatotoxic medications; monitor LFTs weekly until normalising; HAV and HEV: self-limiting — no antiviral; Acute HBV: antivirals not needed unless fulminant or prolonged; referral to hepatologist for HBV and HCV for chronic monitoring",
+        "criteria_for_upgrade": "Rising INR >1.5; confusion or altered behaviour; severe vomiting preventing hydration; bilirubin rapidly rising; signs of fluid retention"
+      },
+      {
+        "level": 2,
+        "name": "Moderate to Severe Acute Hepatitis",
+        "description": "Significant hepatitis with impaired hepatic synthetic function or severely disabling symptoms, but not meeting full criteria for acute liver failure.",
+        "criteria": "Marked jaundice (bilirubin >100 mcmol/L); ALT >50× ULN; INR 1.3-1.5 (early coagulopathy); significant nausea and vomiting; unable to maintain adequate oral intake; highly elevated inflammatory markers; no encephalopathy yet",
+        "functional_impact": "Completely incapacitated; risk of dehydration; requires hospital level monitoring",
+        "management": "Hospital admission for monitoring; IV fluids if vomiting prevents oral intake; daily LFTs, INR, bilirubin, renal function; hepatology review; acute HBV with severe course: consider tenofovir or entecavir antiviral; avoid all hepatotoxic medications including paracetamol; fetal monitoring in pregnancy",
+        "criteria_for_upgrade": "INR >1.5 with any encephalopathy; INR >2.0 regardless of encephalopathy; AKI developing; rapidly rising bilirubin"
+      },
+      {
+        "level": 3,
+        "name": "Acute Liver Failure (Fulminant Hepatitis)",
+        "description": "A rare but life-threatening complication — defined as severe acute liver injury with impaired synthetic function (coagulopathy — INR ≥1.5) AND hepatic encephalopathy in a patient WITHOUT pre-existing liver disease, occurring within 26 weeks of illness onset. Acute liver failure (ALF) carries a mortality of 20-40% without liver transplantation.",
+        "criteria": "INR ≥1.5 (coagulopathy); Hepatic encephalopathy (confusion, altered consciousness — grades 1-4); Jaundice; Often: acute kidney injury, hypoglycaemia, cerebral oedema, sepsis, multi-organ failure; HAV fulminant hepatitis: more common in elderly, those with pre-existing liver disease, and those with combined HAV + HCV or HAV + HBV; HBV fulminant hepatitis: 0.5-1% of acute HBV; HDV superinfection: higher risk",
+        "encephalopathy_grades": [
+          "Grade 1: Mild confusion, altered sleep pattern, slowed mentation",
+          "Grade 2: Lethargy, moderate confusion, asterixis (flapping tremor)",
+          "Grade 3: Marked confusion, incoherent speech, sleeping but rousable",
+          "Grade 4: Coma — unresponsive to pain"
+        ],
+        "management": "ICU admission; urgent liver transplant assessment — contact liver transplant centre immediately; IV N-acetylcysteine (NAC) — given to ALL causes of ALF (not just paracetamol); correct hypoglycaemia (10-20% glucose IV); treat cerebral oedema (head elevation 30°, mannitol); IV broad-spectrum antibiotics (prophylactic); enteral nutrition; renal replacement therapy for AKI; avoid all sedatives and hepatotoxic drugs; transplant if deteriorating despite medical therapy",
+        "mortality": "Without transplant: 20-40%; with transplant: 5-year survival >70%"
+      },
+      {
+        "level": 4,
+        "name": "Chronic Hepatitis — Compensated",
+        "description": "Chronic HBV (>6 months HBsAg positive) or chronic HCV (>6 months HCV RNA positive) without signs of advanced liver disease or hepatic decompensation. Often asymptomatic — the majority of patients with chronic viral hepatitis do not know they are infected. Compensated means the liver is still functioning adequately despite underlying inflammation and fibrosis.",
+        "criteria": "HBsAg positive >6 months (HBV) OR HCV RNA positive >6 months (HCV); ALT may be normal or elevated; liver fibrosis F0-F3 on Fibroscan/biopsy; no jaundice, ascites, variceal bleeding, or encephalopathy; normal or near-normal synthetic function (INR, albumin, bilirubin normal)",
+        "functional_impact": "Often completely asymptomatic; fatigue is common; may have non-specific RUQ discomfort; quality of life may be preserved until advanced fibrosis",
+        "management": "Regular monitoring (LFTs, HBV DNA/HCV RNA, AFP, imaging); antiviral therapy for HBV (if indicated by phase, viral load, ALT, fibrosis stage); curative DAA therapy for all patients with HCV; HCC surveillance by 6-monthly liver ultrasound + AFP in all cirrhotic patients and high-risk HBV patients; hepatology follow-up"
+      },
+      {
+        "level": 5,
+        "name": "Chronic Hepatitis — Decompensated Cirrhosis",
+        "description": "Advanced cirrhosis with loss of hepatic synthetic and metabolic reserve — manifesting as clinical complications of portal hypertension and hepatocyte failure. Decompensation markedly reduces life expectancy (5-year survival approximately 50% without transplant vs >90% for compensated cirrhosis) and significantly impairs quality of life.",
+        "decompensation_events": [
+          "Ascites — fluid accumulation in the peritoneal cavity (most common decompensation event); from portal hypertension and sodium/water retention",
+          "Spontaneous bacterial peritonitis (SBP) — infection of ascitic fluid without apparent cause; occurs in 10-30% of cirrhotic patients with ascites per year; life-threatening",
+          "Variceal haemorrhage — rupture of oesophageal or gastric varices from portal hypertension; major bleeding episode mortality 15-25%",
+          "Hepatic encephalopathy — neuropsychiatric dysfunction from accumulated nitrogenous compounds (ammonia) not cleared by failing liver; ranges from minimal (grade 1) to coma (grade 4)",
+          "Hepatorenal syndrome (HRS) — functional AKI in cirrhosis from severe renal vasoconstriction; Type 1 HRS median survival 2 weeks without treatment"
+        ],
+        "management": "Hepatology and gastroenterology specialist management; ascites: sodium restriction + diuretics (spironolactone + furosemide) ± therapeutic paracentesis; SBP: IV cefotaxime + IV albumin; variceal bleeding: terlipressin + IV octreotide + band ligation endoscopy + prophylactic antibiotics; encephalopathy: lactulose + rifaximin; HCC surveillance every 3-6 months (ultrasound + AFP); liver transplant assessment — the only definitive treatment for end-stage liver disease"
+      }
+    ],
+
+    "causes": {
+      "causative_agents_summary": {
+        "hav": "Hepatitis A virus (HAV) — Picornaviridae; RNA virus; fecal-oral transmission; acute self-limiting illness only",
+        "hbv": "Hepatitis B virus (HBV) — Hepadnaviridae; DNA virus; blood/sexual/vertical transmission; 5-10% of adult infections become chronic; most common cause of liver cancer globally",
+        "hcv": "Hepatitis C virus (HCV) — Flaviviridae; RNA virus; predominantly blood transmission; 75-85% of infections become chronic; now curable with DAA therapy"
+      },
+      "risk_factors": {
+        "hav_risk_factors": [
+          "Travel to HAV-endemic areas (South Asia including India, Southeast Asia, Africa, Middle East, Central and South America) — India is intermediate-to-high endemic",
+          "Consumption of raw or undercooked shellfish from polluted waters",
+          "Eating food prepared by infected food handlers with poor hygiene",
+          "Drinking contaminated water, ice, or beverages in endemic areas",
+          "Close household or sexual contact with an HAV-infected person",
+          "Children in daycare and nursery settings — spread within facilities common",
+          "Men who have sex with men (MSM) — anal-oral sexual contact",
+          "Homelessness and poor sanitation facilities",
+          "Not vaccinated against hepatitis A",
+          "Pre-existing chronic liver disease — if infected with HAV, higher risk of fulminant hepatitis"
+        ],
+        "hbv_risk_factors": [
+          "Birth to an HBsAg-positive mother — single most important risk globally; perinatal transmission to infant occurs in 70-90% of HBeAg-positive mothers without prophylaxis",
+          "Unprotected sexual intercourse — particularly with HBsAg-positive partners",
+          "Intravenous drug use — sharing needles and equipment",
+          "Healthcare workers — occupational needlestick injury",
+          "Household contact with chronically infected person — sharing razors, toothbrushes, nail clippers; child-to-child transmission in endemic settings",
+          "Receiving unscreened blood or blood products",
+          "Haemodialysis patients — frequent blood contact",
+          "Tattooing, piercing, or acupuncture with unsterilised equipment",
+          "MSM — sexual transmission",
+          "Travel to HBV-endemic regions (Sub-Saharan Africa, East and Southeast Asia, India)",
+          "Not vaccinated against hepatitis B",
+          "India prevalence: 3.5-4% overall; higher in tribal populations, certain states (Manipur, Arunachal Pradesh, Mizoram)"
+        ],
+        "hcv_risk_factors": [
+          "Intravenous drug use (PWID) — most common in high-income countries; sharing any injection equipment including syringes, needles, spoons, water, cotton",
+          "Receiving blood transfusion before blood donation screening was introduced (pre-1992 in India; pre-1990 in USA/UK); haemophiliacs transfused with unscreened clotting factors",
+          "Haemodialysis — repeated blood contact; historically high transmission in dialysis units",
+          "Healthcare workers — needlestick injury; risk ~3% per percutaneous HCV-positive exposure",
+          "Tattooing, piercing, barber shop practices with shared razors/blades in India — significant transmission route",
+          "Birth to HCV-positive mother — 5-10% transmission risk during delivery",
+          "Unsafe injections from reuse of needles in medical/dental settings — major problem in India",
+          "MSM with HIV coinfection — sexual transmission of HCV more efficient",
+          "Intranasal cocaine use — sharing equipment contaminates with blood",
+          "India-specific: large cohort from transfusions (older patients); barber shop blood exposure (razors); contaminated therapeutic injections in rural settings"
+        ]
+      }
+    },
+
+    "symptoms": {
+      "overview": "All three forms of viral hepatitis (A, B, C) share a similar clinical presentation when symptomatic — characterised by the classic 'hepatitis syndrome': prodromal symptoms followed by jaundice. However, many cases are ASYMPTOMATIC — particularly acute HCV (80-90%) and early chronic HBV and HCV. Symptoms when present occur in two phases: pre-icteric (before jaundice) and icteric (with jaundice).",
+      "phases": {
+        "pre_icteric_phase": {
+          "duration": "HAV: 3-10 days before jaundice; HBV: 1-2 weeks before jaundice",
+          "symptoms": "Flu-like prodrome — fatigue (most prominent), low-grade fever, nausea, vomiting, anorexia (severe loss of appetite — 'even the smell of food is nauseating'), right upper quadrant discomfort or dull ache (liver tenderness), headache, myalgia (muscle aches), arthralgia (joint pains), urticaria (hives — particularly in HBV serum sickness-like phase)",
+          "unique_hav": "Sudden and dramatic anorexia — often describes food as smelling unbearable; severe nausea; cigarette smokers often lose desire to smoke (highly suggestive of hepatitis); fever more prominent in HAV",
+          "unique_hbv": "Serum-sickness-like syndrome in 10-20% (immune complex deposition): urticaria, arthritis, angioedema — occurring before jaundice; triggered by circulating HBsAg-anti-HBs immune complexes"
+        },
+        "icteric_phase": {
+          "duration": "HAV: 1-4 weeks; HBV: 2-6 weeks; HCV: if symptomatic, 2-12 weeks",
+          "symptoms": [
+            "Jaundice — yellowish discolouration of skin and sclera (whites of eyes); first detected in sclera (usually when bilirubin >34-51 mcmol/L); scleral icterus is the most sensitive early sign; later involves skin (most visible in natural light)",
+            "Dark urine (bilirubinuria) — classic 'tea-coloured' or 'cola-coloured' urine from conjugated bilirubin excreted in urine; often the first symptom patients notice; one of the most sensitive clinical markers of hepatitis",
+            "Pale or clay-coloured stools (acholia) — from reduced bile excretion into the intestine; stools appear pale grey/white/putty-coloured",
+            "Pruritus (itching) — from bile salt deposition in skin; can be severe in cholestatic hepatitis",
+            "Hepatomegaly — enlarged, tender liver on palpation; right upper quadrant fullness and dull aching pain",
+            "Splenomegaly — enlarged spleen from portal hypertension (more prominent in chronic disease)",
+            "Weight loss — from nausea, anorexia, and reduced calorie intake during illness",
+            "Worsening fatigue — often the most debilitating symptom"
+          ]
+        },
+        "recovery_phase_hav": "Gradual improvement over 1-4 weeks; jaundice fades; urine normalises; appetite returns; fatigue may persist for weeks to months after jaundice resolution; complete recovery in almost all cases"
+      },
+      "primary_symptoms": [
+        {
+          "id": "SYM-1001",
+          "name": "Fatigue and Profound Malaise",
+          "description": "The most universal and often the most disabling symptom across all forms of hepatitis. In acute hepatitis: sudden onset of extreme fatigue and inability to function normally — patients describe it as 'the worst fatigue of their life'. In chronic hepatitis B and C: fatigue is often the only symptom for years — a persistent, low-grade but significantly impactful tiredness that does not improve with rest and impairs work, concentration, and quality of life. Fatigue from chronic hepatitis is multifactorial: direct viral effects on the central nervous system, cytokine-mediated sickness behaviour, anaemia (if cirrhotic), and depressive effect of chronic illness.",
+          "severity": "Mild to Severe",
+          "onset": "Acute hepatitis: sudden (days); Chronic: insidious (months to years)",
+          "clinical_importance": "Fatigue combined with dark urine in any patient should immediately raise suspicion for hepatitis — send LFTs urgently"
+        },
+        {
+          "id": "SYM-1002",
+          "name": "Jaundice (Icterus)",
+          "description": "Yellowish discolouration of the skin, mucous membranes, and sclera (whites of the eyes) — caused by elevated serum bilirubin (>34-51 mcmol/L). Bilirubin accumulates when hepatocyte dysfunction impairs conjugation and excretion of bilirubin from haem metabolism. Scleral icterus (yellow eyes) is the most sensitive early sign — first detected when bilirubin exceeds 34 mcmol/L; jaundice in the skin is visible when bilirubin >51 mcmol/L. Jaundice is best assessed in natural daylight — fluorescent lighting can mask or distort yellow colour. Deep jaundice (bilirubin >300 mcmol/L) indicates severe disease.",
+          "severity": "Mild to Severe",
+          "onset": "Acute hepatitis: appears 3-10 days after prodrome; Chronic: usually absent until advanced disease",
+          "note": "The combination of yellow eyes (jaundice) + dark urine + pale stools = CLASSIC hepatitis triad — requires immediate medical attention and LFTs"
+        },
+        {
+          "id": "SYM-1003",
+          "name": "Dark Urine (Tea/Cola-Coloured Urine)",
+          "description": "Dark amber, tea-coloured, or cola-brown urine — from conjugated bilirubin excreted by the kidneys when hepatocytes are unable to process bilirubin normally. Often the first symptom that patients notice and bring to medical attention — predates visible skin or eye jaundice. The urine does not clear with increased fluid intake (distinguishing it from simply concentrated urine from dehydration). Bilirubin is easily detected on urine dipstick.",
+          "severity": "Mild to Severe",
+          "onset": "Often the FIRST symptom noticed by patients — appears 1-3 days before visible jaundice"
+        },
+        {
+          "id": "SYM-1004",
+          "name": "Nausea, Vomiting, and Severe Anorexia",
+          "description": "Severe loss of appetite (anorexia) is a hallmark of acute hepatitis — often dramatic and very specific. Patients describe an inability to eat, with even the sight or smell of food causing nausea. Cigarette smokers losing their desire to smoke during an illness is historically considered highly suggestive of acute hepatitis. Vomiting is common, especially in HAV. In HCV acute infection: these symptoms are often minimal or absent (majority asymptomatic). In chronic hepatitis: nausea may occur in advanced disease from elevated ammonia in hepatic encephalopathy.",
+          "severity": "Mild to Severe"
+        },
+        {
+          "id": "SYM-1005",
+          "name": "Right Upper Quadrant Pain and Hepatomegaly",
+          "description": "Dull, aching pain or discomfort in the right upper quadrant of the abdomen (under the right rib cage) — from distension of the liver capsule (Glisson's capsule) as hepatocytes swell with inflammation. On examination: hepatomegaly (enlarged liver) is palpable in the majority of patients with acute hepatitis; the liver edge is smooth, rounded, and tender to palpation. Severe, sharp, constant right upper quadrant pain may indicate complications (pericholecystitis, abscess, hepatic vein thrombosis).",
+          "severity": "Mild to Moderate",
+          "note": "Acute hepatitis is a common cause of misdiagnosis as biliary colic or cholecystitis — always check LFTs and viral serology in any patient with RUQ pain"
+        },
+        {
+          "id": "SYM-1006",
+          "name": "Fever",
+          "description": "Low-grade to moderate fever is common in the pre-icteric phase of acute hepatitis, particularly HAV. HAV typically produces a more prominent fever (38-39°C) than HBV or HCV. High fever (>39°C) is unusual in uncomplicated acute hepatitis and should prompt investigation for a complication or alternative diagnosis. In chronic hepatitis: fever is absent unless there is an acute bacterial complication (SBP, cholangitis, HCC with tumour fever).",
+          "severity": "Mild to Moderate in acute; absent in chronic"
+        }
+      ],
+      "secondary_symptoms": [
+        "Pruritus (severe itching) — particularly in cholestatic hepatitis from bile salt deposition in skin; may be generalised; worsens at night",
+        "Pale/clay/putty-coloured stools — from reduced bile reaching intestine (acholic stools); waxy grey-white appearance",
+        "Weight loss — from nausea and anorexia; significant weight loss in decompensated cirrhosis (ascites may mask true weight loss)",
+        "Arthralgia and myalgia — joint and muscle pains in pre-icteric phase; serum-sickness-like syndrome in 10-20% of acute HBV",
+        "Urticaria (hives) and skin rash — immune complex deposition in acute HBV; palpable purpura in HCV-related mixed cryoglobulinaemia",
+        "Splenomegaly — enlarged spleen from portal hypertension in chronic hepatitis with fibrosis/cirrhosis",
+        "Peripheral oedema and ascites — from hypoalbuminaemia and portal hypertension in decompensated cirrhosis",
+        "Confusion and cognitive impairment (hepatic encephalopathy) — ammonia accumulation in advanced liver disease",
+        "Spider naevi — dilated superficial blood vessels radiating from a central arteriole on upper body; sign of cirrhosis from oestrogen metabolism failure",
+        "Palmer erythema — redness of thenar and hypothenar eminences; sign of chronic liver disease",
+        "Leuconychia (white nails) and Terry's nails — white discolouration; sign of hypoalbuminaemia in cirrhosis",
+        "Gynaecomastia (breast development in men) and testicular atrophy — from impaired oestrogen metabolism in cirrhosis",
+        "Caput medusae — dilated abdominal wall veins radiating from umbilicus; sign of portal hypertension",
+        "Haematemesis or melaena — vomiting blood or black tarry stools from oesophageal variceal bleeding in portal hypertension — EMERGENCY"
+      ],
+      "extrahepatic_manifestations": {
+        "hbv_extrahepatic": [
+          "Polyarteritis nodosa (PAN) — systemic vasculitis of medium arteries; fever, weight loss, renal disease, peripheral neuropathy, skin lesions (livedo reticularis); ~30% of PAN cases are HBV-related",
+          "Membranous nephropathy — HBV antigen-antibody complex deposition in glomeruli causing nephrotic syndrome",
+          "Mixed essential cryoglobulinaemia — similar to HCV",
+          "Guillain-Barré syndrome (rare post-acute HBV)",
+          "Aplastic anaemia (rare)"
+        ],
+        "hcv_extrahepatic": [
+          "Mixed cryoglobulinaemia — most common HCV extrahepatic manifestation (40-60% of chronic HCV patients have detectable cryoglobulins); immune complex vasculitis causing: palpable purpura (lower legs), arthralgia, peripheral neuropathy, membranoproliferative glomerulonephritis",
+          "Membranoproliferative glomerulonephritis (MPGN) — HCV immune complex deposition; proteinuria, haematuria, renal impairment",
+          "Lichen planus — white lacy patches on oral mucosa; HCV associated in 30-40% of lichen planus cases",
+          "Porphyria cutanea tarda (PCT) — blistering skin disease; HCV triggers PCT in genetically susceptible individuals",
+          "Non-Hodgkin lymphoma (B-cell) — 2-3 fold increased risk in chronic HCV; related to chronic B-lymphocyte stimulation by HCV",
+          "Sjögren's syndrome — dry eyes and dry mouth",
+          "Diabetes mellitus type 2 — HCV promotes insulin resistance; resolves with SVR in some patients",
+          "Depression and fatigue — HCV neuropsychiatric effects; independent of liver disease severity; resolves with SVR in many"
+        ]
+      },
+      "warning_signs": [
+        "Confusion, altered consciousness, or irrational behaviour in a hepatitis patient — possible hepatic encephalopathy — EMERGENCY",
+        "INR >1.5 in acute hepatitis — early coagulopathy; liver transplant assessment urgently needed",
+        "Haematemesis (vomiting blood) or melaena (black tarry stools) — variceal bleeding in portal hypertension — LIFE-THREATENING EMERGENCY — call 102/112",
+        "Rapid increase in abdominal girth or new abdominal distension — possible ascites from decompensation",
+        "Fever with abdominal pain in patient with known ascites — possible spontaneous bacterial peritonitis (SBP) — EMERGENCY",
+        "Hypoglycaemia (cold sweats, confusion, trembling) in severe acute hepatitis — liver failing to maintain blood glucose — hospital immediately",
+        "Rapidly deepening jaundice with deteriorating consciousness — fulminant hepatic failure",
+        "Pregnancy + jaundice + any hepatitis symptoms — always urgent assessment (HEV in pregnancy is life-threatening)"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Onset and duration of symptoms — acute (days-weeks) vs chronic (months-years, often asymptomatic); jaundice onset; colour of urine and stools",
+        "Travel history — recent travel to HAV/HEV-endemic areas (India rural, Southeast Asia, Africa); when did travel occur relative to symptoms (incubation period guides pathogen)",
+        "Dietary history — shellfish consumption (raw oysters, mussels, clams); food and water source during travel; street food",
+        "Vaccination history — HAV vaccination (2 doses); HBV vaccination (3 doses); were vaccinations complete?",
+        "Blood transfusion history — date, country, pre or post-screening era (pre-1992 in India = HCV/HBV risk)",
+        "Injection drug use history — IV, IM, or subcutaneous; needle sharing; current or past; non-judgmental questioning",
+        "Sexual history — HBsAg-positive partner; multiple partners; MSM; HIV status",
+        "Tattooing, body piercing, or traditional practices — dates; whether sterile equipment used; barber shop shaving in India",
+        "Healthcare exposure — recent surgery, dental procedures, endoscopy, injections in healthcare settings particularly in India",
+        "Occupation — healthcare worker (needlestick risk); food handler (HAV transmission source)",
+        "Family history — HBV in family members (perinatal or horizontal transmission in childhood); autoimmune liver disease",
+        "Alcohol consumption — quantity, frequency, duration; alcohol potentiates viral hepatitis-related fibrosis dramatically; alcohol alone can cause hepatitis (important differential)",
+        "Medications and supplements — paracetamol (acetaminophen) overdose or therapeutic doses in alcoholics (drug-induced liver injury — DILI); herbal and Ayurvedic medicines (several cause DILI — e.g., Kava, hepatotoxic Ayurvedic preparations); anti-TB drugs (isoniazid, pyrazinamide, rifampicin all hepatotoxic)",
+        "HIV status — HIV coinfection dramatically worsens HBV and HCV outcomes and requires integrated management",
+        "Contact with a known case — household contact with jaundiced person (HAV); HBsAg-positive sexual partner or family member (HBV)",
+        "Previous hepatitis testing — known HBsAg positive? Known HCV antibody positive? If so, were they followed up and treated?",
+        "Pregnancy status — critical: HEV in pregnancy is life-threatening; HBV requires PMTCT; HCV DAAs not licensed in pregnancy"
+      ],
+      "physical_examination": [
+        "Vital signs — temperature (fever in acute hepatitis); blood pressure; heart rate; weight (baseline for monitoring)",
+        "Jaundice assessment — inspect sclera (best in natural light; yellow = icterus); skin colour (yellow tinge in natural light); inspect subungual region (under fingernails); hard palate (yellow mucosa); level of jaundice correlates roughly with bilirubin level",
+        "Abdominal examination:",
+        "INSPECTION: abdominal distension (ascites); caput medusae (dilated abdominal wall veins from portal hypertension); visible peristalsis (obstruction differential)",
+        "PALPATION: hepatomegaly — liver edge smooth and tender in acute hepatitis; firm and irregular in cirrhosis; assess liver span (percussion); splenomegaly — tip palpable in portal hypertension; shifting dullness and fluid thrill for ascites detection",
+        "PERCUSSION: shifting dullness (ascites — fluid moves with position change); liver dullness (span — normally 12-15 cm); Traube's space (gastric tympany — obliterated in splenomegaly)",
+        "Skin examination: spider naevi (dilated capillaries, upper body — >5 suggests chronic liver disease); palmer erythema; scratch marks from pruritus; palpable purpura (lower limbs — HCV cryoglobulinaemia); jaundice depth; bruising or petechiae (coagulopathy); xanthelasma (cholestatic liver disease)",
+        "Nail changes: leuconychia (white nails — hypoalbuminaemia); Terry's nails (white proximal, normal distal — cirrhosis); clubbing (chronic liver disease, HCC)",
+        "Signs of chronic liver disease: gynaecomastia (breast tissue in males — oestrogen excess from impaired liver metabolism); testicular atrophy; loss of body hair; parotid enlargement (alcohol-related)",
+        "Neurological examination: asterixis (flapping tremor) — outstretched hands 'flap' — pathognomonic of hepatic encephalopathy; perform finger-nose test, cognitive assessment (mini-mental state), constructional apraxia (inability to draw a 5-pointed star)",
+        "Fetor hepaticus — characteristic sweet-musty breath from mercaptans; sign of advanced liver disease",
+        "Peripheral oedema — bilateral pitting ankle oedema from hypoalbuminaemia and portal hypertension"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Liver Function Tests (LFTs) / Hepatic Panel",
+          "type": "Blood — Biochemical",
+          "description": "The essential initial blood tests for any suspected hepatitis. Include: ALT (alanine aminotransferase — most liver-specific; rises dramatically in acute hepatocyte injury); AST (aspartate aminotransferase — less specific but elevated; AST:ALT ratio >2:1 suggests alcoholic hepatitis); ALP (alkaline phosphatase — elevated in cholestatic disease — bile duct obstruction or intrahepatic cholestasis); GGT (gamma-glutamyltransferase — sensitive marker of liver injury especially from alcohol and certain drugs); Total and direct bilirubin; Albumin (falls in chronic liver disease — reflects synthetic function); Total protein.",
+          "purpose": "Confirm hepatocyte injury; quantify severity; distinguish hepatocellular (high ALT/AST) from cholestatic (high ALP/GGT/bilirubin) pattern; monitor disease course and treatment response",
+          "key_metric": "ALT >10× ULN (Upper Limit of Normal): significant hepatitis; ALT >50× ULN (typically >1,000 U/L): severe hepatitis; ALT >200× ULN: acute liver failure risk; Bilirubin >100 mcmol/L: significant jaundice; Albumin <30 g/L: impaired synthetic function; ALP >3× ULN with high bilirubin and normal ALT: consider biliary obstruction or infiltrative disease",
+          "acute_hepatitis_pattern": "Very high ALT (often 1,000-5,000 U/L); high bilirubin; ALP relatively less elevated — HEPATOCELLULAR pattern",
+          "monitoring": "Acute hepatitis: LFTs weekly until normalising; Chronic hepatitis on treatment: 3-monthly"
+        },
+        {
+          "test_name": "Prothrombin Time / INR (Coagulation Screen)",
+          "type": "Blood — Haematological / Coagulation",
+          "description": "The prothrombin time (PT) and INR (International Normalised Ratio) measure the time taken for blood to clot via the extrinsic coagulation pathway — dependent on Vitamin K-dependent clotting factors (II, VII, IX, X) synthesised exclusively by the liver. Because the liver has a massive synthetic reserve, INR only rises when >70-80% of hepatic function is lost. Therefore, elevated INR in acute hepatitis is a critical warning sign of severe hepatic failure.",
+          "purpose": "Assess hepatic synthetic function; guide severity classification; identify patients needing liver transplant listing; monitor liver function in chronic liver disease",
+          "key_metric": "INR <1.3: normal; INR 1.3-1.5: mild coagulopathy — close monitoring; INR >1.5 + encephalopathy = Acute Liver Failure (ALF definition); INR >2.0 in acute hepatitis = severe disease — hepatology and liver transplant referral; INR >6.0 = extremely poor prognosis without transplant"
+        },
+        {
+          "test_name": "HAV Serology — Anti-HAV IgM and Anti-HAV IgG",
+          "type": "Blood — Serology / Immunological",
+          "description": "Hepatitis A serological testing — the standard diagnostic test for HAV infection and immunity assessment. Anti-HAV IgM: appears within 5-10 days of infection onset; peaks in first month; persists for 3-6 months — the DIAGNOSTIC MARKER of acute HAV infection. Anti-HAV IgG: appears weeks after IgM; persists lifelong — marker of past infection (immunity) or successful vaccination.",
+          "purpose": "Diagnose acute HAV infection; assess HAV immunity before travel or vaccination; confirm vaccination effectiveness",
+          "key_metric": "Anti-HAV IgM POSITIVE = ACUTE HEPATITIS A (current infection); Anti-HAV IgM negative + IgG positive = Past infection or successful vaccination (immune); Both negative = Never infected, never vaccinated — susceptible (vaccinate)",
+          "note": "Anti-HAV IgM may occasionally give false-positive results — always interpret in clinical context; Acute hepatitis symptoms + positive IgM = diagnose"
+        },
+        {
+          "test_name": "HBV Serology Panel — HBsAg, Anti-HBs, Anti-HBc IgM, Anti-HBc Total, HBeAg, Anti-HBe",
+          "type": "Blood — Serology / Immunological",
+          "description": "A panel of serological markers that together provide comprehensive information on HBV infection status, phase of disease, replication activity, and immune response. Interpretation requires understanding all markers in combination.",
+          "markers": [
+            {
+              "marker": "HBsAg (Hepatitis B Surface Antigen)",
+              "meaning": "MARKER OF CURRENT HBV INFECTION — the envelope protein of HBV; positive = either acute or chronic HBV; if positive for >6 months = CHRONIC HBV",
+              "clinical_use": "Screening test for HBV; first test to order when HBV suspected"
+            },
+            {
+              "marker": "Anti-HBs (Antibody to HBsAg)",
+              "meaning": "MARKER OF IMMUNITY — protective antibody; positive = immune, either from vaccination (HBsAg negative + Anti-HBs positive) or past resolved infection (anti-HBc positive + anti-HBs positive); level >10 mIU/mL = protective immunity from vaccination",
+              "clinical_use": "Confirm vaccination response; assess immunity in healthcare workers"
+            },
+            {
+              "marker": "Anti-HBc IgM (IgM Antibody to HBV Core Antigen)",
+              "meaning": "MARKER OF ACUTE OR RECENT HBV INFECTION — the immune response to the core protein; high titre IgM = acute infection; low titre IgM may persist or recur during reactivation",
+              "clinical_use": "Distinguish acute HBV (IgM positive) from chronic HBV (IgM negative, IgG positive); essential when HBsAg positive to determine if acute or chronic"
+            },
+            {
+              "marker": "Anti-HBc Total (IgG + IgM) (Total Antibody to HBV Core Antigen)",
+              "meaning": "MARKER OF PAST OR CURRENT INFECTION — positive in acute, chronic, AND resolved infection; never positive from vaccination alone (core protein not in current vaccines); anti-HBc positive + HBsAg negative + anti-HBs positive = RESOLVED PAST INFECTION; anti-HBc positive + HBsAg negative + anti-HBs negative = PAST INFECTION (window period or low-level chronic — occult HBV)",
+              "clinical_use": "Determine prior exposure; screen blood donors; diagnose occult HBV; determine need for vaccination vs treatment"
+            },
+            {
+              "marker": "HBeAg (Hepatitis B e Antigen)",
+              "meaning": "MARKER OF HIGH VIRAL REPLICATION — the secreted form of HBcAg; positive = high-level viral replication; associated with high HBV DNA levels (>10^6 IU/mL); indicates high infectivity; typically positive in immune-tolerant and immune-active phases",
+              "clinical_use": "Assess replication phase; guide treatment decisions; monitor treatment response (HBeAg seroconversion = important treatment milestone)"
+            },
+            {
+              "marker": "Anti-HBe (Antibody to HBeAg — HBe Antibody)",
+              "meaning": "MARKER OF LOWER REPLICATION — seroconversion from HBeAg to anti-HBe indicates reduction in viral replication; anti-HBe positive + low HBV DNA = inactive carrier state; anti-HBe positive + elevated HBV DNA = HBeAg-negative chronic hepatitis (pre-core mutants)",
+              "clinical_use": "Assess phase of infection; monitor HBeAg seroconversion during treatment"
+            }
+          ],
+          "key_interpretation_patterns": [
+            "HBsAg+ / Anti-HBc IgM+ / HBeAg+ / Anti-HBs- = ACUTE HEPATITIS B",
+            "HBsAg+ / Anti-HBc IgG+ / HBeAg+ / HBV DNA HIGH = CHRONIC HEPATITIS B (HBeAg positive — immune active or tolerant)",
+            "HBsAg+ / Anti-HBc IgG+ / HBeAg- / Anti-HBe+ / HBV DNA LOW = INACTIVE CARRIER (immune control)",
+            "HBsAg+ / Anti-HBc IgG+ / HBeAg- / Anti-HBe+ / HBV DNA HIGH = HBeAg-NEGATIVE CHRONIC HEPATITIS B",
+            "HBsAg- / Anti-HBs+ / Anti-HBc- = VACCINATED (immune from vaccination — never infected)",
+            "HBsAg- / Anti-HBs+ / Anti-HBc+ = RESOLVED PAST INFECTION (immune)",
+            "HBsAg- / Anti-HBs- / Anti-HBc- = NEVER INFECTED, NEVER VACCINATED — susceptible; vaccinate"
+          ]
+        },
+        {
+          "test_name": "HBV DNA (Viral Load / Quantitative PCR)",
+          "type": "Blood — Molecular / PCR",
+          "description": "Quantitative measurement of HBV DNA in serum — the direct measure of viral replication activity. HBV DNA is the most important test for determining the need for antiviral treatment, monitoring treatment response, and predicting progression risk. Reported in IU/mL (International Units) or copies/mL (1 IU ≈ 5.6 copies).",
+          "purpose": "Determine viral replication level; guide treatment initiation threshold; monitor treatment response (target: undetectable HBV DNA on therapy); detect viral resistance; predict HCC risk (HBV DNA >2,000 IU/mL associated with significantly higher HCC risk even without cirrhosis)",
+          "key_metric": "Undetectable (<20 IU/mL): inactive or on effective treatment; >2,000 IU/mL: treatment consideration threshold; >20,000 IU/mL HBeAg-negative: strong treatment indication; >200,000 IU/mL HBeAg-positive: immune-active phase; Treatment target: undetectable HBV DNA on therapy",
+          "monitoring": "At diagnosis; before treatment; 3-monthly during treatment; annually when inactive carrier"
+        },
+        {
+          "test_name": "Anti-HCV (HCV Antibody) — Screening Test",
+          "type": "Blood — Serology / Immunological",
+          "description": "Third-generation enzyme immunoassay (EIA) detecting antibodies to multiple HCV antigens (NS3, NS4, NS5 proteins, and core). Anti-HCV is the standard screening test for HCV exposure. Becomes positive 4-10 weeks after infection (antibody window period). A positive anti-HCV means the person HAS BEEN EXPOSED to HCV — but does NOT distinguish between active current infection (HCV RNA positive) and past resolved infection (HCV RNA negative). All anti-HCV-positive results MUST be confirmed with HCV RNA testing.",
+          "purpose": "Screen for HCV exposure; identify individuals who need further testing (HCV RNA); public health surveillance",
+          "key_metric": "Anti-HCV POSITIVE: further testing required (HCV RNA); Anti-HCV NEGATIVE in high-risk patient or within first 6 months of potential exposure: repeat HCV RNA testing — antibodies may not yet be detectable",
+          "important_limitation": "Anti-HCV DOES NOT confirm active infection — a positive anti-HCV test means either current infection OR past resolved infection; always confirm with HCV RNA; Anti-HCV may be negative (false negative) in severely immunocompromised patients despite active infection — test HCV RNA directly in such patients"
+        },
+        {
+          "test_name": "HCV RNA (Viral Load / HCV PCR) — Confirmatory and Monitoring Test",
+          "type": "Blood — Molecular / PCR",
+          "description": "Quantitative real-time PCR measuring HCV RNA in serum — the definitive test for active HCV infection. HCV RNA is detectable 1-2 weeks after infection (before anti-HCV becomes positive). HCV RNA is positive in active infection and negative after spontaneous clearance or successful DAA treatment (SVR). Required to confirm active infection in all anti-HCV-positive patients. Treatment monitoring: HCV RNA measured at baseline, during, and 12 weeks after treatment completion (SVR12 = undetectable = CURE).",
+          "purpose": "Confirm active HCV infection (all anti-HCV-positive patients); baseline viral load before treatment; monitor treatment response; confirm SVR12 (cure); diagnose HCV in window period before anti-HCV detectable; diagnose HCV in immunocompromised where anti-HCV may be falsely negative",
+          "key_metric": "Detectable HCV RNA: ACTIVE INFECTION — requires treatment; Undetectable HCV RNA: either early acute infection (before antibodies) OR cleared infection (past or after treatment); SVR12 = HCV RNA undetectable 12 weeks after completing DAA treatment = CURE"
+        },
+        {
+          "test_name": "HCV Genotype Testing",
+          "type": "Blood — Molecular",
+          "description": "Determines the HCV genotype (GT1-GT6) and subtype (GT1a, GT1b, GT3a, etc.) from serum HCV RNA. HCV genotype was critically important for selecting treatment with older interferon-based regimens. With modern pangenotypic DAAs (sofosbuvir/velpatasvir; glecaprevir/pibrentasvir), genotype is less critical — these regimens cure all genotypes. However, genotype remains important for: selecting optimal treatment duration (GT3 may require 12 weeks); predicting response in certain patient subgroups; determining need for ribavirin addition.",
+          "purpose": "Guide treatment regimen and duration selection; predict natural history (GT3 associated with faster fibrosis, higher HCC risk); epidemiological surveillance",
+          "key_metric": "GT1 (1a, 1b): most common globally; GT3: most common in India (75-80%), Pakistan, South Asia; GT4: Middle East, Africa; GT2: less common; GT5/6: rare",
+          "india_note": "In India, GT3 predominates (75-80% of HCV); GT3 is the most challenging genotype — associated with hepatic steatosis (fatty liver), faster fibrosis progression, and higher risk of HCC even in non-cirrhotic patients"
+        },
+        {
+          "test_name": "Liver Fibrosis Assessment — FibroScan (Transient Elastography) and APRI/FIB-4 Scores",
+          "type": "Non-Invasive Fibrosis Assessment",
+          "description": "Determining the degree of liver fibrosis is critical for deciding treatment urgency and predicting outcomes in chronic HBV and HCV. FibroScan (transient elastography — TE) measures liver stiffness in kilopascals (kPa) — stiffer liver = more fibrosis. Non-invasive, painless, immediate result, outpatient procedure. APRI (AST to Platelet Ratio Index) and FIB-4 (age × AST / platelets × ALT) are simple blood-test-based scores that estimate fibrosis — useful when FibroScan is not available (India rural settings).",
+          "purpose": "Stage liver fibrosis without biopsy (non-invasive); identify cirrhosis (F4) requiring HCC surveillance; guide treatment urgency; monitor fibrosis regression after successful treatment",
+          "fibroscan_values": "Liver stiffness <6 kPa: F0-F1 (minimal fibrosis); 6-8 kPa: F2 (moderate); 8-11 kPa: F3 (significant fibrosis); >11-13 kPa: F4 (cirrhosis); >20 kPa: severe cirrhosis; >25 kPa: portal hypertension likely",
+          "apri_score": "APRI >0.5 suggests significant fibrosis (F≥2); APRI >1.0 suggests cirrhosis (F4) — widely used in resource-limited settings",
+          "liver_biopsy": "Gold standard but invasive — now rarely needed with good non-invasive methods; reserved for: discordant non-invasive test results; suspected additional liver disease (e.g., NAFLD + HCV); atypical presentations",
+          "monitoring": "FibroScan baseline before treatment; after SVR: every 1-2 years; annually in cirrhosis"
+        },
+        {
+          "test_name": "Alpha-Fetoprotein (AFP) and Liver Ultrasound — HCC Surveillance",
+          "type": "Tumour Marker + Imaging",
+          "description": "Hepatocellular carcinoma (HCC) surveillance is mandatory in all patients with cirrhosis from chronic HBV or HCV, and in certain HBV patients even without cirrhosis. AFP is a tumour marker elevated in 60-70% of HCC cases but has low sensitivity and specificity alone. Liver ultrasound detects focal liver lesions. The combination of 6-monthly ultrasound + AFP provides the recommended HCC surveillance programme — any lesion detected requires further characterisation by multiphasic CT or MRI.",
+          "purpose": "Early detection of HCC (when curative treatment — resection or ablation — is still possible); monitor for HCC development in high-risk groups",
+          "hcc_surveillance_indications": [
+            "All patients with HBV-related or HCV-related cirrhosis (F4 on FibroScan)",
+            "HBV patients with family history of HCC",
+            "HBV patients with high HBV DNA despite therapy",
+            "Asian HBV patients: men over 40 years, women over 50 years (even without cirrhosis)",
+            "African HBsAg-positive patients over 20 years",
+            "HCV with advanced fibrosis (F3-F4)",
+            "HCV patients with GT3 (higher HCC risk even pre-cirrhosis)"
+          ],
+          "frequency": "Liver ultrasound + AFP every 6 months; multiphasic CT or MRI for suspicious lesions >1 cm",
+          "key_metric": "AFP >20 ng/mL: investigate; AFP >200 ng/mL with typical vascular liver lesion on imaging: highly suspicious for HCC; AFP >400 ng/mL: very high specificity for HCC"
+        },
+        {
+          "test_name": "Complete Blood Count (FBC), Renal Function, and Metabolic Panel",
+          "type": "Blood — Haematological / Biochemical",
+          "description": "Essential baseline and monitoring tests. FBC in cirrhosis: thrombocytopaenia (low platelets) from splenic sequestration in portal hypertension — the first sign of developing cirrhosis; anaemia (normochromic normocytic from chronic disease or macrocytic from alcohol or folate deficiency); leucopaenia (hypersplenism). Renal function: critical before and during DAA treatment; HCV-related cryoglobulinaemia causes renal impairment; cirrhotics at risk of hepatorenal syndrome.",
+          "purpose": "Assess baseline health status; detect portal hypertension markers (thrombocytopaenia, splenomegaly); guide antiviral dosing (renal function); monitor for drug toxicity",
+          "key_metric": "Platelets <150,000: investigate for cirrhosis; Platelets <100,000: likely significant portal hypertension; eGFR <30: adjust DAA dosing (sofosbuvir requires dose adjustment below eGFR 30)"
+        },
+        {
+          "test_name": "HIV, HDV, and HEV Co-Testing",
+          "type": "Blood — Serology / Molecular",
+          "description": "Co-infection testing is essential in all patients with HBV or HCV: HIV coinfection dramatically worsens outcomes of both HBV (faster fibrosis, higher HCC risk) and HCV (faster cirrhosis, reduced spontaneous clearance). HDV must be screened in all HBsAg-positive patients — HDV superinfection causes accelerated liver disease. HEV IgM should be tested in all acute hepatitis where HAV and HBV serology is negative.",
+          "purpose": "Detect clinically critical coinfections; guide integrated treatment approach; prevent missed diagnoses",
+          "testing": "HIV Ag/Ab combo test (4th generation — detects antigen and antibodies); Anti-HDV IgM + HDV RNA in all HBsAg-positive; HEV IgM in unexplained acute hepatitis"
+        },
+        {
+          "test_name": "Thyroid Function Tests (TFTs) — Pre-Treatment for Interferon",
+          "type": "Blood — Endocrine",
+          "description": "Pegylated interferon (PegIFN) — used for chronic HBV — commonly causes thyroid dysfunction (autoimmune thyroiditis, hypothyroidism or hyperthyroidism) in 4-20% of patients. Baseline TFTs (TSH, Free T4) must be measured before starting PegIFN and every 3 months during treatment. Less relevant for DAA therapy (HCV) and nucleos(t)ide analogues (HBV) which have minimal thyroid effects.",
+          "purpose": "Baseline thyroid function before interferon therapy; monitor for interferon-induced thyroiditis during treatment",
+          "key_metric": "TSH outside normal range before IFN: review suitability carefully; TSH abnormal during IFN: manage thyroid disorder; do not automatically stop IFN — can manage concurrently if mild"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Hepatitis A and uncomplicated Hepatitis E have no specific antiviral treatment — supportive care only. Hepatitis B requires long-term antiviral therapy in eligible patients — treatment suppresses but does not cure HBV. Hepatitis C is now CURABLE in >95% of cases with 8-12 weeks of oral direct-acting antiviral (DAA) therapy — no injections, minimal side effects, and widely available as affordable generic medications in India. All treatment decisions require specialist hepatology or gastroenterology input.",
+      "treatment_principles": [
+        "1. HAV and uncomplicated acute HEV: NO antivirals — supportive treatment only; complete rest, adequate nutrition, hydration, strict alcohol abstinence, no hepatotoxic medications",
+        "2. Acute HBV: antivirals not routinely needed (95% of adults spontaneously clear); consider tenofovir if: prolonged severe acute HBV, INR rising, or fulminant hepatitis",
+        "3. Chronic HBV: first-line treatment is TDF (tenofovir disoproxil fumarate) or TAF (tenofovir alafenamide) — preferred for their high barrier to resistance; entecavir is alternative; lifelong treatment in most patients; treatment goal: undetectable HBV DNA, normalise ALT, prevent cirrhosis and HCC",
+        "4. Chronic HCV: treat ALL patients with detectable HCV RNA regardless of fibrosis stage, ALT level, or symptoms — the WHO and AASLD strongly endorse test-and-treat; pangenotypic DAAs are preferred; SVR = CURE; generic formulations in India make this affordable",
+        "5. ABSOLUTE contraindications to treatment: untreated decompensated liver disease for certain DAAs; pregnancy for ribavirin; pre-existing depression or serious psychiatric illness for interferon",
+        "6. All patients with chronic HBV or HCV must have complete alcohol abstinence — alcohol accelerates fibrosis synergistically with viral hepatitis",
+        "7. HBV PMTCT (Prevention of Mother to Child Transmission): TDF from week 24-28 of pregnancy in HBeAg-positive mothers; HBIG + HBV vaccine at birth to neonate regardless of maternal status",
+        "8. Maintain full HBV vaccination (3 doses) in all unvaccinated household contacts of HBsAg-positive patients"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-141",
+          "category_name": "Supportive Treatment — Acute Hepatitis (All Types)",
+          "purpose": "Manage symptoms, prevent complications, and support hepatic recovery in acute hepatitis A, B, and E.",
+          "medicines": [
+            {
+              "name": "Oral Rehydration and IV Fluids",
+              "form": "Oral fluids; IV Ringer's Lactate or Normal Saline",
+              "dosage": "Adequate oral fluids (minimum 2.5-3L daily); IV if vomiting prevents oral intake",
+              "use_case": "Prevent dehydration from nausea and vomiting in acute hepatitis; maintain adequate urine output; electrolyte replacement if vomiting is severe",
+              "note": "ORS sachets (WHO formulation) are highly effective for mild-moderate dehydration from vomiting in acute hepatitis; IV dextrose-containing fluids (5-10% dextrose) may be needed for hypoglycaemia in severe acute hepatitis"
+            },
+            {
+              "name": "Paracetamol (Acetaminophen) — Use With Caution",
+              "brand_examples": ["Crocin", "Calpol", "Dolo"],
+              "form": "Tablet",
+              "dosage": "500 mg every 6-8 hours (MAXIMUM 2g per day in acute hepatitis — NOT the standard 4g daily maximum); reduce to 1g/day maximum in significant hepatitis; use for shortest duration needed",
+              "use_case": "Fever and discomfort in acute hepatitis; NOT first-line — prefer alternatives; SAFE at LOW doses even in hepatitis (widely feared but evidence shows safe at doses ≤2g/day in non-alcoholic hepatitis); paracetamol can be used cautiously in acute HAV at reduced doses for fever/discomfort",
+              "warning": "Paracetamol is the MOST COMMON cause of acute liver failure in Western countries at overdose or therapeutic doses in alcoholics; in ACTIVE HEPATITIS — maximum 2g/day; in alcohol-related hepatitis or alcoholics — AVOID completely; NSAIDs also contraindicated in acute hepatitis (risk of AKI and bleeding from antiplatelet effects)"
+            },
+            {
+              "name": "Antiemetics (Ondansetron, Metoclopramide)",
+              "brand_examples": ["Zofran/Emeset (ondansetron)", "Perinorm/Maxolon (metoclopramide)"],
+              "form": "Tablet, IV",
+              "dosage": "Ondansetron: 4-8 mg orally or IV every 8 hours; Metoclopramide: 10 mg orally or IV every 8 hours",
+              "use_case": "Nausea and vomiting in acute hepatitis preventing adequate nutrition and hydration; ondansetron preferred (safer in liver disease — metoclopramide may accumulate in severe hepatic impairment causing extrapyramidal effects)"
+            },
+            {
+              "name": "Ursodeoxycholic Acid (UDCA)",
+              "brand_examples": ["Ursocol", "UDCA", "Hepamerz"],
+              "form": "Capsule, Tablet",
+              "dosage": "10-15 mg/kg/day in divided doses",
+              "use_case": "Cholestatic hepatitis (prolonged or severe jaundice from intrahepatic cholestasis — particularly in cholestatic HAV or HAV relapsing form); improves bile flow; reduces pruritus; mild hepatoprotective properties; used in primary biliary cholangitis; may shorten duration of cholestatic hepatitis in HAV",
+              "mechanism": "Hydrophilic bile acid — replaces toxic hydrophobic bile acids; protects hepatocytes from bile salt toxicity; stimulates bile secretion",
+              "note": "Safe in pregnancy (unlike most other hepatic drugs); useful in cholestatic HEV in pregnancy"
+            },
+            {
+              "name": "Vitamin K (Phytomenadione) — IV",
+              "brand_examples": ["Vitamin K injection", "Phytonadione"],
+              "form": "IV injection (10 mg)",
+              "dosage": "10 mg IV once daily for 3 days",
+              "use_case": "Prolonged INR in acute hepatitis — correct any Vitamin K deficiency component of coagulopathy before concluding INR elevation is purely from hepatic synthetic failure; if INR corrects with Vitamin K — suggests cholestatic component or dietary deficiency; if INR does not correct — confirms hepatic synthetic failure (poor prognostic sign)",
+              "note": "ALWAYS give Vitamin K when INR is elevated in acute hepatitis BEFORE concluding liver failure"
+            },
+            {
+              "name": "IV N-Acetylcysteine (NAC) — For Acute Liver Failure",
+              "brand_examples": ["Parvolex", "NAC injection"],
+              "form": "IV infusion",
+              "dosage": "150 mg/kg IV in 200mL dextrose 5% over 15-60 minutes (loading dose); then 50 mg/kg in 500mL over 4 hours; then 100 mg/kg in 1L over 16 hours (paracetamol overdose regimen); for non-paracetamol ALF: continuous infusion 150 mg/kg/day",
+              "use_case": "ACUTE LIVER FAILURE from ANY CAUSE (not just paracetamol) — the King's College/ICU protocol administers IV NAC to ALL ALF patients (viral, drug-induced, HAV); improves survival in non-paracetamol ALF (O'Grady study); mechanism: replenishes glutathione stores and improves hepatic microvascular blood flow",
+              "mechanism": "Precursor to glutathione (master antioxidant); reduces oxidative stress and hepatocyte death; improves hepatic and renal microvascular flow in ALF"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-142",
+          "category_name": "Chronic Hepatitis B — Antiviral Therapy (Nucleos/tide Analogues)",
+          "purpose": "Suppress HBV replication to prevent progression of fibrosis, reduce HCC risk, and prevent decompensation. Note: these drugs suppress but do not cure HBV (the intrahepatic cccDNA reservoir persists). Treatment is usually lifelong.",
+          "treatment_indications": "HBV DNA >2,000 IU/mL with elevated ALT and/or liver fibrosis ≥F2 on FibroScan; ANY HBV DNA with decompensated cirrhosis; HBV DNA >20,000 IU/mL with any ALT in HBeAg-positive disease; preventive (PMTCT) in pregnancy; before immunosuppressive therapy",
+          "medicines": [
+            {
+              "name": "Tenofovir Disoproxil Fumarate (TDF)",
+              "brand_examples": ["Viread", "Tenof", "TDF — generic India"],
+              "form": "Tablet (300 mg)",
+              "dosage": "300 mg once daily with food",
+              "use_case": "FIRST-LINE treatment for chronic hepatitis B; preferred over entecavir in HBV/HIV coinfection (as TDF is also antiretroviral); PMTCT — from week 24-28 of pregnancy in HBeAg-positive mothers to prevent vertical transmission; most widely used HBV antiviral globally; highly effective — suppresses HBV DNA to undetectable in 95%+ by year 1; HIGH BARRIER TO RESISTANCE",
+              "mechanism": "Nucleotide analogue (prodrug of tenofovir) — inhibits HBV DNA polymerase (reverse transcriptase activity); competes with natural deoxynucleotides preventing viral DNA synthesis; also active against HIV",
+              "monitoring": "Renal function (creatinine, eGFR) and phosphate every 3-6 months — TDF causes proximal tubular nephrotoxicity (Fanconi syndrome) in a small proportion; bone mineral density in long-term use; if renal impairment develops — switch to TAF",
+              "side_effects": ["Renal tubular dysfunction (most important — Fanconi syndrome; hypophosphataemia; glycosuria without hyperglycaemia)", "Bone density loss (osteopenia/osteoporosis) with long-term use", "GI intolerance (nausea, diarrhoea) — usually mild and improves", "Lactic acidosis (rare but serious — stop if unexplained fatigue, abdominal pain, nausea)"],
+              "india_note": "Generic TDF (300 mg) widely available in India at very low cost (Rs 10-20 per tablet); affordable for long-term therapy; included in NACO HIV programme and increasingly in hepatitis B treatment guidelines"
+            },
+            {
+              "name": "Tenofovir Alafenamide (TAF)",
+              "brand_examples": ["Vemlidy", "TAF — generic emerging"],
+              "form": "Tablet (25 mg)",
+              "dosage": "25 mg once daily with food",
+              "use_case": "Chronic hepatitis B — preferred over TDF when: renal impairment (eGFR <60); osteoporosis or bone disease; elderly patients; TAF achieves higher intrahepatic drug concentrations at much lower systemic drug levels, dramatically reducing renal and bone toxicity compared to TDF; same HBV suppression efficacy as TDF",
+              "mechanism": "Novel prodrug of tenofovir — more efficiently delivered to hepatocytes with 90% lower systemic tenofovir levels than TDF; same mechanism (HBV polymerase inhibition)",
+              "advantages_over_tdf": "10-fold lower plasma tenofovir levels; significantly less renal toxicity; significantly less bone density loss; comparable HBV suppression rates",
+              "side_effects": ["Headache", "Nausea (mild)", "Fatigue", "Significantly less renal and bone toxicity than TDF"],
+              "cost_note": "More expensive than TDF; generic versions emerging; preferred when TDF nephrotoxicity is a concern"
+            },
+            {
+              "name": "Entecavir (ETV)",
+              "brand_examples": ["Baraclude", "Entavir", "Entecavir generic"],
+              "form": "Tablet (0.5 mg, 1 mg)",
+              "dosage": "Treatment-naïve: 0.5 mg once daily; Lamivudine-refractory or cirrhosis: 1 mg once daily; take on empty stomach (food reduces absorption by 50%)",
+              "use_case": "First-line chronic hepatitis B — preferred alternative to TDF/TAF in patients WITHOUT HIV coinfection; excellent potency; HIGH BARRIER TO RESISTANCE (lower than TDF/TAF if previously treated with lamivudine — in that case use TDF instead); approved in children >2 years",
+              "mechanism": "Deoxyguanosine analogue — inhibits HBV DNA polymerase at three steps: base priming of viral DNA synthesis; reverse transcription of pregenomic RNA; DNA-dependent DNA synthesis",
+              "advantages": "Very high barrier to resistance in treatment-naïve patients; excellent tolerability; once daily; no significant renal toxicity",
+              "resistance_warning": "Low barrier to resistance in lamivudine-experienced patients — entecavir resistance up to 50% by year 5 in lamivudine-resistant patients; use TDF/TAF instead in this situation",
+              "side_effects": ["Generally very well tolerated", "Headache", "Fatigue", "Nausea (mild)", "Rare: lactic acidosis (class effect of nucleosides)"]
+            },
+            {
+              "name": "Pegylated Interferon Alfa-2a (PegIFN-alfa-2a)",
+              "brand_examples": ["Pegasys"],
+              "form": "Subcutaneous injection (180 mcg/0.5 mL pre-filled syringe)",
+              "dosage": "180 mcg subcutaneously once weekly for 48 weeks (HBV)",
+              "use_case": "Finite-duration treatment option for selected chronic HBV patients: young patients wishing to avoid lifelong oral therapy; HBeAg-positive with high ALT, low-moderate HBV DNA, non-Asian genotype; does not require lifelong therapy — fixed 48-week course; higher rate of HBeAg seroconversion and HBsAg loss than NAs in selected patients; NOT suitable for cirrhosis, psychiatric history, autoimmune disease, pregnancy, or significant comorbidities",
+              "mechanism": "Immunomodulatory (stimulates innate and adaptive immune response against HBV) + direct antiviral (induces MHC expression, NK cell activation, CTL response against infected hepatocytes)",
+              "advantages": "Finite treatment duration (48 weeks); higher HBsAg loss rates in selected patients; no resistance",
+              "disadvantages": "Significant side effects; injections; requires monitoring; contraindicated in many patients",
+              "contraindications": ["Decompensated cirrhosis", "Psychiatric disorders (depression, psychosis)", "Autoimmune conditions", "Severe cytopenia", "Pregnancy (category X)", "Thyroid disease (untreated)", "Severe cardiac or renal disease"],
+              "side_effects": ["Flu-like symptoms (fever, rigors, headache, myalgia — mostly first 12 hours post-injection; paracetamol before injection prevents; improves with time)", "Fatigue (most common; can be severe)", "Depression and mood changes (up to 20%; SCREEN before starting; monitor closely; can be severe)", "Neutropaenia and thrombocytopaenia (monitor FBC monthly)", "Alopecia (temporary — reverses after treatment)", "Thyroid dysfunction (4-20% — baseline and monitoring TFTs)", "Insomnia", "Retinal changes (rare — check fundus if diabetic or hypertensive)"]
+            },
+            {
+              "name": "Lamivudine (LAM) — Now Largely Superseded",
+              "brand_examples": ["Epivir-HBV", "Heptovir", "3TC"],
+              "dosage": "100 mg once daily (HBV dose)",
+              "use_case": "Previously first-line HBV; now RARELY used for HBV monotherapy due to very high resistance rates (20-30% per year; >70% by 5 years); still used in some resource-limited settings where TDF/ETV not available; part of some HIV combination regimens (3TC 300 mg for HIV suppresses HBV as secondary benefit)",
+              "resistance": "VERY HIGH resistance rate — not suitable for long-term HBV monotherapy; if patient on lamivudine with resistance — switch to TDF (not ETV alone)",
+              "note": "If patient is already on lamivudine with undetectable HBV DNA for >12 months — can continue but consider switching to TDF or TAF for better resistance profile"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-143",
+          "category_name": "Hepatitis C — Direct-Acting Antivirals (DAAs) — CURATIVE TREATMENT",
+          "purpose": "Cure HCV infection — achieve SVR12 (Sustained Virological Response at 12 weeks post-treatment = CURE). DAAs target HCV non-structural proteins essential for viral replication. Modern pangenotypic DAA regimens achieve SVR rates >95% across all genotypes in 8-12 weeks of oral therapy with minimal side effects.",
+          "treatment_indications": "ALL patients with detectable HCV RNA (positive HCV RNA) should be offered treatment regardless of: fibrosis stage (even F0-F1); ALT level (even if normal); genotype; symptoms; duration of infection. Treatment priority historically given to advanced fibrosis but WHO and major guidelines now recommend treating everyone.",
+          "svr_definition": "SVR12 = Undetectable HCV RNA (<12-15 IU/mL) at 12 weeks after completing DAA treatment = VIROLOGICAL CURE. Once SVR12 is achieved, HCV cannot come back from the same infection (re-infection from new exposure is possible if risk behaviours continue).",
+          "medicines": [
+            {
+              "name": "Sofosbuvir/Velpatasvir (SOF/VEL) — Epclusa",
+              "brand_examples": ["Epclusa (brand)", "Velasof", "Sofosbuvir/Velpatasvir (generic India)"],
+              "form": "Tablet (400 mg sofosbuvir + 100 mg velpatasvir)",
+              "dosage": "ONE tablet once daily for 12 weeks; 24 weeks if decompensated cirrhosis (with ribavirin for 12 weeks in Child-Pugh B/C)",
+              "use_case": "PANGENOTYPIC — approved for all HCV genotypes 1-6; FIRST-LINE treatment in most guidelines; particularly important in India where GT3 predominates (GT3 is effectively treated with this combination); treatment-naïve and treatment-experienced; with or without cirrhosis (compensated — 12 weeks; decompensated with ribavirin — 12-24 weeks); WHO essential medicine; excellent SVR rates (>95% GT3; >97% GT1; >95% all genotypes)",
+              "mechanism": "Sofosbuvir: NS5B nucleotide inhibitor (HCV RNA-dependent RNA polymerase inhibitor — directly blocks HCV replication); Velpatasvir: pangenotypic NS5A inhibitor (NS5A is essential for HCV RNA replication and assembly); Dual mechanism from two drug classes",
+              "svr_rates": "GT1: 97-99%; GT2: 99-100%; GT3: 94-97%; GT4: 97-99%; GT5/6: 97-99%",
+              "generic_india": "Generic sofosbuvir/velpatasvir (400/100 mg) widely available in India at approximately Rs 200-400 per tablet; full 12-week course (84 tablets) costs approximately Rs 18,000-35,000 vs brand cost of >Rs 3 lakh; under PMGAM/Pradhan Mantri Jan Arogya Yojana and National Viral Hepatitis Control Programme (NVHCP) — free or subsidised at government hospitals",
+              "side_effects": ["Headache (10-15%)", "Fatigue (10-15%)", "Nausea (5-10%)", "Insomnia", "Generally extremely well tolerated — considered one of the safest drug regimens ever developed"],
+              "drug_interactions": "Avoid with: amiodarone (risk of severe bradycardia — case reports of fatal cardiac events); rifampicin/rifabutin (significantly reduces sofosbuvir levels — avoid); carbamazepine, phenytoin, phenobarbitone (reduce sofosbuvir/velpatasvir levels); antacids (separate by 4 hours from velpatasvir); acid-suppressive drugs (omeprazole 20 mg with food; avoid high-dose PPIs)"
+            },
+            {
+              "name": "Glecaprevir/Pibrentasvir (GLE/PIB) — Mavyret / Maviret",
+              "brand_examples": ["Mavyret", "Maviret"],
+              "form": "Tablet (100 mg glecaprevir + 40 mg pibrentasvir; 3 tablets = one dose)",
+              "dosage": "3 tablets once daily with food for 8 weeks (most treatment-naïve patients without cirrhosis); 12 weeks (compensated cirrhosis or prior treatment failure); for GT3 with cirrhosis: 16 weeks",
+              "use_case": "PANGENOTYPIC — 8-week treatment duration for most patients (non-cirrhotic, treatment-naïve) — the shortest HCV treatment duration available; preferred for: patients with moderate renal impairment (eGFR 15-30); patients on dialysis; certain drug interactions precluding sofosbuvir use; GT3 patients completing prior treatment with sofosbuvir-based regimen",
+              "mechanism": "Glecaprevir: NS3/4A protease inhibitor (prevents viral polyprotein cleavage); Pibrentasvir: pangenotypic NS5A inhibitor; Dual drug class mechanism",
+              "svr_rates": "GT1-6: 97-99% in treatment-naïve non-cirrhotic patients; 97-98% in compensated cirrhosis",
+              "advantage_over_sofvel": "8-week treatment option; no dose adjustment for renal impairment (both drugs hepatically metabolised — safe in severe renal failure and dialysis); appropriate for GT1 treatment failures",
+              "disadvantage": "Cannot be used in decompensated cirrhosis (Child-Pugh B/C); requires food with each dose; more drug interactions (protease inhibitor); 3 tablets daily",
+              "side_effects": ["Headache", "Fatigue", "Nausea", "Pruritus (itching)", "Generally well tolerated"]
+            },
+            {
+              "name": "Sofosbuvir/Ledipasvir (SOF/LED) — Harvoni",
+              "brand_examples": ["Harvoni (brand)", "Ledifos", "Sofosbuvir/Ledipasvir (generic India)"],
+              "form": "Tablet (400 mg sofosbuvir + 90 mg ledipasvir)",
+              "dosage": "ONE tablet once daily for 12 weeks (GT1, GT4, GT5, GT6); 8 weeks for GT1 treatment-naïve without cirrhosis and low viral load (<6 million IU/mL)",
+              "use_case": "Excellent for GT1, GT4, GT5, GT6; NOT recommended for GT2 or GT3 (ledipasvir has poor activity against GT3 — use SOF/VEL instead); widely available generics in India at low cost; one of the most prescribed HCV regimens globally",
+              "mechanism": "Sofosbuvir: NS5B inhibitor; Ledipasvir: NS5A inhibitor (GT1, 4, 5, 6-specific)",
+              "svr_rates": "GT1a: 94-96%; GT1b: 99%; GT4: 95%; GT5/6: 96-98%",
+              "india_note": "Generic sofosbuvir/ledipasvir widely available in India; generic manufacturers include Natco, Cipla, Sun Pharma; NVHCP programme provides free or subsidised treatment at district hospitals"
+            },
+            {
+              "name": "Sofosbuvir + Daclatasvir (SOF + DCV)",
+              "brand_examples": ["Sovaldi + Daklinza (brands)", "Sofosbuvir + Daclatasvir (generics — widely available India)"],
+              "form": "Two separate tablets — Sofosbuvir 400 mg once daily + Daclatasvir 60 mg once daily",
+              "dosage": "Both tablets once daily for 12 weeks; 24 weeks for decompensated cirrhosis or prior treatment failure (with ribavirin consideration)",
+              "use_case": "Most widely used regimen in India and many low-income countries due to very low generic cost; effective across genotypes 1, 2, 3, 4; particularly important for GT3 (the dominant genotype in India); reasonable SVR rates for GT3 (88-92%) though slightly lower than SOF/VEL for GT3",
+              "mechanism": "Sofosbuvir: NS5B inhibitor; Daclatasvir: NS5A inhibitor (pangenotypic NS5A inhibition)",
+              "svr_rates": "GT1: 96-98%; GT2: 96-99%; GT3: 88-92% (lower than SOF/VEL — particularly GT3 with cirrhosis); GT4: 95%",
+              "india_generic_cost": "Sofosbuvir + daclatasvir generic combination costs approximately Rs 4,000-10,000 for a full 12-week course (one of the most affordable HCV regimens globally); extensively produced by Indian generic manufacturers",
+              "note": "For GT3, SOF/VEL is now preferred over SOF+DCV given higher GT3 SVR rates; SOF+DCV remains important in settings where SOF/VEL is not available or affordable"
+            },
+            {
+              "name": "Ribavirin (RBV) — Used in Combination (Not Monotherapy)",
+              "brand_examples": ["Rebetol", "Ribavirin generic"],
+              "form": "Capsule / Tablet (200 mg)",
+              "dosage": "Weight-based: <75 kg: 1000 mg/day in divided doses; ≥75 kg: 1200 mg/day; take with food; duration depends on regimen and fibrosis",
+              "use_case": "Added to DAA regimens in specific high-risk scenarios: decompensated cirrhosis (SOF/VEL + RBV for 12 weeks); GT3 with cirrhosis; prior treatment failures in difficult-to-treat patients; NS5A inhibitor failures; generally reduces relapse in difficult cases",
+              "mechanism": "Guanosine nucleoside analogue — multiple mechanisms including immunomodulatory, inhibition of HCV NS5B polymerase (weak), and mutagenic effect on HCV RNA; acts as accessory drug to boost DAA effectiveness",
+              "side_effects": ["HAEMOLYTIC ANAEMIA — most common and important side effect; can be severe; monitor haemoglobin at 2 and 4 weeks", "Teratogenicity — ABSOLUTE CONTRAINDICATION in pregnancy and men whose female partner is pregnant (requires 6 months contraception after stopping RBV)", "Fatigue", "Nausea", "Rash", "Insomnia", "Depression"],
+              "monitoring": "FBC at 2 and 4 weeks after starting (haemoglobin); reduce dose if Hb falls >2 g/dL; stop if Hb <8.5 g/dL"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-144",
+          "category_name": "HBV Prevention — PMTCT (Prevention of Mother-to-Child Transmission)",
+          "purpose": "Preventing vertical transmission of HBV from HBsAg-positive mother to neonate — the most important route of chronicity acquisition globally. Combination approach: maternal antiviral therapy in late pregnancy + neonatal HBIG + immediate HBV vaccination at birth.",
+          "medicines": [
+            {
+              "name": "Hepatitis B Immunoglobulin (HBIG) — Neonatal",
+              "brand_examples": ["HepaGam B", "HyperHEP S/D", "HBIG — available through government programs India"],
+              "form": "IM injection (200 IU per mL; standard neonatal dose 100 IU/0.5 mL)",
+              "dosage": "100-200 IU IM within 12 hours of birth (ideally within 2 hours); single dose; given simultaneously with first HBV vaccine dose at different injection sites",
+              "use_case": "All neonates born to HBsAg-positive mothers; passive immunisation — provides immediate protection against HBV exposure at delivery while active immunisation from HBV vaccine develops; reduces vertical transmission risk from 90% (untreated) to <5% (HBIG + vaccine); in HBeAg-positive mothers: HBIG + vaccine + maternal antiviral TDF from week 28 reduces to <1%",
+              "mechanism": "Pre-formed anti-HBs antibodies provide immediate passive protection against HBV until infant mounts active immune response from HBV vaccine",
+              "india_note": "HBIG + birth dose HBV vaccine now recommended under India's Universal Immunisation Programme (UIP) — availability at government hospitals improving; all deliveries should provide birth dose HBV vaccine within 24 hours"
+            },
+            {
+              "name": "TDF (Tenofovir) in Pregnancy — PMTCT for High-Viral-Load Mothers",
+              "dosage": "300 mg TDF once daily from week 24-28 of pregnancy until at least 12 weeks postpartum (or delivery — depending on protocol)",
+              "use_case": "HBsAg-positive pregnant women with HIGH viral load (HBV DNA >200,000 IU/mL — typically HBeAg-positive) — maternal antiviral therapy dramatically reduces peripartum viral load and vertical transmission risk; combined with HBIG + vaccine at birth reduces transmission to <1%; safe in pregnancy (FDA category B); WHO-recommended",
+              "monitoring": "HBV DNA at baseline and at week 28-32; renal function; postpartum: monitor for HBV DNA flare after stopping TDF",
+              "note": "Lower risk HBsAg-positive mothers (low HBV DNA, HBeAg negative) may not need maternal TDF — HBIG + vaccine alone sufficient; specialist decision"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-145",
+          "category_name": "Cirrhosis Complication Management",
+          "purpose": "Management of portal hypertension complications in decompensated cirrhosis from chronic HBV/HCV.",
+          "medicines": [
+            {
+              "name": "Spironolactone + Furosemide — Ascites Management",
+              "brand_examples": ["Aldactone (spironolactone)", "Lasix (furosemide)"],
+              "form": "Tablet",
+              "dosage": "Spironolactone: 100-400 mg/day; Furosemide: 40-160 mg/day; target: weight loss 0.5 kg/day (ascites) or 1 kg/day (ascites + oedema); Na >120 mmol/L target; ratio maintained at 100:40 (spiro:furo)",
+              "use_case": "First-line treatment for ascites in cirrhosis; spironolactone blocks aldosterone (elevated in cirrhosis causing Na and water retention); furosemide provides additional diuresis",
+              "monitoring": "Daily weight; urine output; electrolytes (K+, Na+) every 1-2 weeks when adjusting dose; renal function; hyponatraemia (<120 mmol/L) and AKI are reasons to reduce or stop"
+            },
+            {
+              "name": "Lactulose — Hepatic Encephalopathy",
+              "brand_examples": ["Duphalac", "Lactihep", "Lactulose"],
+              "form": "Oral solution",
+              "dosage": "30-45 mL orally 2-3 times daily; titrate to 2-4 soft stools per day",
+              "use_case": "Prevention and treatment of hepatic encephalopathy in cirrhosis; lactulose is converted by colonic bacteria to lactic and acetic acids — acidifies the colon, traps ammonium (NH4+), and reduces ammonia absorption; also cathartic — decreases gut transit time reducing ammonia production; first-line therapy for overt hepatic encephalopathy",
+              "mechanism": "Colonic acidification: NH3 + H+ → NH4+ (trapped, cannot be absorbed); cathartic: reduces gut transit and ammonia-producing bacteria"
+            },
+            {
+              "name": "Rifaximin — Hepatic Encephalopathy (Secondary Prophylaxis)",
+              "brand_examples": ["Xifaxan", "Rifagut", "Normix"],
+              "form": "Tablet (550 mg)",
+              "dosage": "550 mg twice daily (hepatic encephalopathy prophylaxis)",
+              "use_case": "Prevention of recurrent hepatic encephalopathy episodes in patients who have had ≥2 episodes — added to lactulose (not replacing); non-absorbable rifamycin antibiotic that reduces ammonia-producing gut bacteria; significantly reduces hospitalisation from HE recurrence (RCT evidence); better tolerated than lactulose alone",
+              "evidence": "Bass et al. NEJM 2010: rifaximin significantly reduced HE recurrence vs placebo and reduced hospitalisations in cirrhotic patients"
+            },
+            {
+              "name": "Terlipressin — Variceal Bleeding and Hepatorenal Syndrome",
+              "brand_examples": ["Glypressin", "Terlipressin"],
+              "form": "IV injection",
+              "dosage": "Variceal bleeding: 1-2 mg IV every 4-6 hours until bleeding controlled, then 1 mg every 4-6 hours for 5 days; Hepatorenal Syndrome type 1: 0.5-1 mg IV every 4-6 hours; titrate up to 2 mg if creatinine not improving; with IV albumin 20-40 g/day",
+              "use_case": "Acute oesophageal variceal bleeding (alongside band ligation endoscopy + IV octreotide — triple therapy is standard of care); Hepatorenal Syndrome Type 1 — the only vasopressor combination with significant evidence for HRS reversal (terlipressin + albumin reversal rate 40-50%); reduces splanchnic blood flow and portal pressure",
+              "mechanism": "Vasopressin V1 receptor agonist — causes splanchnic vasoconstriction reducing portal venous blood flow and pressure"
+            },
+            {
+              "name": "Ceftriaxone IV — Spontaneous Bacterial Peritonitis (SBP)",
+              "brand_examples": ["Rocephin", "Monocef"],
+              "form": "IV infusion",
+              "dosage": "2 g IV once daily for 5 days (SBP treatment); IV albumin 1.5 g/kg on day 1 + 1 g/kg on day 3 (prevents SBP-induced AKI and HRS)",
+              "use_case": "Treatment of spontaneous bacterial peritonitis; E. coli and Klebsiella pneumoniae are most common causative organisms; always give with IV albumin to prevent deterioration of renal function (SORT trial)",
+              "note": "Quinolone prophylaxis: norfloxacin 400 mg once daily for secondary SBP prophylaxis"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-146",
+          "category_name": "HCC Treatment (Hepatocellular Carcinoma)",
+          "purpose": "Treatment of liver cancer developing as a complication of chronic HBV/HCV-related cirrhosis.",
+          "medicines": [
+            {
+              "name": "Sorafenib (Nexavar) — Systemic Therapy Advanced HCC",
+              "brand_examples": ["Nexavar", "Soranib (generic)"],
+              "form": "Tablet (200 mg)",
+              "dosage": "400 mg twice daily with food; dose reduce to 400 mg once daily if toxicity",
+              "use_case": "Advanced HCC (Barcelona Clinic Liver Cancer Stage C — metastatic or vascular invasion) or when local treatments (resection, ablation, TACE) have failed; first targeted therapy approved for HCC (SHARP trial); modest survival benefit (median OS 10.7 vs 7.9 months vs placebo)",
+              "mechanism": "Multi-kinase inhibitor: inhibits VEGFR1/2/3, PDGFR, RAF kinases — reduces tumour angiogenesis and tumour cell proliferation",
+              "note": "Largely superseded by lenvatinib (REFLECT trial — superior response rates) and atezolizumab + bevacizumab (immunotherapy combination — IMbrave150 trial — first to show OS superiority over sorafenib) in eligible patients"
+            },
+            {
+              "name": "Atezolizumab + Bevacizumab (Tecentriq + Avastin) — First-Line Advanced HCC",
+              "brand_examples": ["Tecentriq (atezolizumab)", "Avastin (bevacizumab)"],
+              "form": "IV infusion",
+              "dosage": "Atezolizumab 1200 mg IV + Bevacizumab 15 mg/kg IV every 3 weeks",
+              "use_case": "Advanced/unresectable HCC as first-line treatment (if no varices or recent variceal bleed — bevacizumab risk of GI bleeding; requires prior endoscopy to exclude high-risk varices); IMbrave150 trial showed superior OS and PFS vs sorafenib; standard of care in eligible patients in international guidelines",
+              "note": "Expensive; access in India limited to private sector currently; patient assistance programmes available through manufacturer"
+            },
+            {
+              "name": "Transarterial Chemoembolisation (TACE) — Locoregional Therapy",
+              "form": "Hepatic arterial intervention procedure",
+              "use_case": "Intermediate-stage HCC (BCLC B) not amenable to curative resection or ablation; delivers chemotherapy (doxorubicin or cisplatin) emulsified with Lipiodol directly into hepatic artery feeding the tumour, followed by embolisation; first-line locoregional therapy for multifocal HCC",
+              "note": "Not a medication per se — locoregional procedure; listed for completeness as major treatment modality"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet plays a critical but often underappreciated role in viral hepatitis outcomes. In ACUTE hepatitis: nutrition supports hepatocyte regeneration and immune function; adequate caloric intake is essential even when nausea and anorexia severely reduce appetite. In CHRONIC hepatitis and cirrhosis: nutrition is a life-threatening concern — malnutrition is present in 25-80% of cirrhotic patients and is an independent predictor of mortality, hospitalisation, and post-transplant outcomes. The liver is central to all metabolic processes — when it fails, nutritional requirements change dramatically. Post-SVR (after HCV cure): diet can support liver regeneration and fibrosis regression.",
+      "phase_acute_hepatitis": {
+        "priority": "Adequate caloric and protein intake despite profound anorexia and nausea — critical for hepatocyte regeneration and immune function",
+        "fluid_requirement": "2.5-3 litres per day; IV fluids if vomiting prevents adequate oral intake",
+        "caloric_requirement": "25-35 kcal/kg/day during acute hepatitis (hepatic inflammation increases metabolic rate by 10-20%)",
+        "protein_requirement": "1.0-1.2 g protein/kg/day (do NOT restrict protein in uncomplicated acute hepatitis — protein restriction is OUTDATED advice and harmful; only restrict in FRANK hepatic encephalopathy)",
+        "key_principle": "Small, frequent meals (5-6 small meals per day); eat when appetite is best (often morning); energy-dense foods; avoid large meals that distend stomach and worsen nausea"
+      },
+      "recommended_foods": [
+        {
+          "category": "High-Quality Protein for Hepatocyte Regeneration",
+          "rationale": "The liver regenerates hepatocytes using dietary amino acids; adequate protein intake is the most important nutritional principle in hepatitis; protein restriction for hepatitis is outdated and harmful (only restrict in frank encephalopathy)",
+          "items": [
+            {
+              "food": "Eggs (whole eggs)",
+              "benefit": "Complete protein (all essential amino acids); BCAA-rich (branched-chain amino acids — leucine, isoleucine, valine — most hepatoprotective amino acids; liver uses BCAAs differently from other proteins); easily digestible; Vitamin D; selenium; lecithin (phosphatidylcholine — essential for liver cell membrane integrity and bile synthesis)",
+              "frequency": "1-2 eggs daily; soft-boiled, poached or scrambled (easier to digest than fried)"
+            },
+            {
+              "food": "Paneer / Cottage cheese",
+              "benefit": "High-quality casein protein (slow-release amino acids — particularly useful as evening snack in cirrhosis to prevent overnight nitrogen catabolism — a critical nutritional strategy in advanced liver disease); calcium; phosphorus",
+              "frequency": "Small portions twice daily in cirrhosis patients"
+            },
+            {
+              "food": "Moong dal (Green gram), Masoor dal (Red lentils)",
+              "benefit": "Plant protein; BCAA content; easily digestible; low in fat; fermented/sprouted moong has prebiotic benefit (reduces gut ammonia production — important in cirrhosis); folate; iron; zinc",
+              "frequency": "Daily as dal — traditional Indian diet provides excellent hepatic nutrition"
+            },
+            {
+              "food": "Lean chicken, turkey, and fish",
+              "benefit": "High biological value complete protein; low saturated fat; tryptophan and tyrosine (precursors to neurotransmitters — important in hepatic encephalopathy); omega-3 fatty acids in oily fish (anti-inflammatory)",
+              "frequency": "3-4 times per week; steamed, baked, or boiled — not fried"
+            }
+          ]
+        },
+        {
+          "category": "Anti-Inflammatory and Hepatoprotective Foods",
+          "rationale": "Viral hepatitis involves sustained hepatic inflammation driving fibrosis; anti-inflammatory dietary compounds may slow fibrosis progression and support hepatocyte defence mechanisms",
+          "items": [
+            {
+              "food": "Coffee (2-3 cups of freshly brewed coffee per day)",
+              "benefit": "STRONGEST EVIDENCE BASE of any single dietary factor for liver health; multiple large epidemiological studies (>9 prospective cohort studies) consistently show: 2-3 cups of caffeinated coffee per day associated with: 40-65% reduction in cirrhosis risk; 40-50% reduction in HCC risk; slower fibrosis progression in chronic HCV; improved response to HCV interferon-based treatment; improved outcomes in NAFLD; reduction in liver enzyme levels (ALT, GGT). Mechanisms: caffeic acid and chlorogenic acid antioxidants; caffeine reduces TGF-beta (pro-fibrotic cytokine); inhibits stellate cell activation; anti-inflammatory and antifibrotic effects",
+              "frequency": "2-3 cups of regular caffeinated coffee per day (not decaffeinated — benefit largely from caffeinated compounds); filter or instant coffee — both effective; avoid adding sugar and large amounts of full-fat milk",
+              "note": "One of the most important dietary recommendations for all patients with chronic liver disease; coffee is actively hepatoprotective"
+            },
+            {
+              "food": "Turmeric (Haldi) with black pepper",
+              "benefit": "Curcumin — inhibits NF-κB (key transcription factor for hepatic inflammatory cytokines IL-6, TNF-alpha, IL-1β); inhibits hepatic stellate cell activation (the cells that produce liver fibrosis collagen); antioxidant; anti-viral properties (curcumin inhibits HBV and HCV replication in cell culture studies); black pepper (piperine) increases curcumin bioavailability 20-fold",
+              "frequency": "Daily in cooking; haldi doodh (turmeric golden milk); must use black pepper"
+            },
+            {
+              "food": "Garlic",
+              "benefit": "Allicin and organosulphur compounds — hepatoprotective antioxidants; S-allylmercaptocysteine induces glutathione S-transferase (phase II detoxification enzyme); reduces oxidative stress in hepatocytes; anti-inflammatory; reduces serum cholesterol (non-alcoholic fatty liver — common coexisting condition)",
+              "frequency": "2-3 raw or lightly cooked cloves daily; crush and allow to rest before cooking"
+            },
+            {
+              "food": "Green tea",
+              "benefit": "Epigallocatechin gallate (EGCG) — most studied antioxidant in liver disease; reduces hepatic lipid accumulation; anti-fibrotic (inhibits TGF-β-induced stellate cell activation); inhibits HBV and HCV replication in vitro; protects against NAFLD-related liver damage; epidemiological data: green tea consumption associated with lower HCC risk in Asian populations",
+              "frequency": "2-3 cups of unsweetened green tea daily",
+              "caution": "High-dose green tea EXTRACT supplements can be hepatotoxic (paradoxically) — use tea NOT extract supplements"
+            },
+            {
+              "food": "Beetroot (Chukandar)",
+              "benefit": "Betaine — methyl donor that protects liver cells; reduces hepatic fat accumulation; betalains (antioxidant pigments); nitrates (improve hepatic blood flow); fibre; reduces liver inflammatory markers in animal studies; commonly recommended in traditional hepatic diets",
+              "frequency": "Daily as juice, salad, or cooked vegetable"
+            },
+            {
+              "food": "Milk Thistle (Silymarin — Silybum marianum)",
+              "benefit": "Silymarin (mixture of flavonolignans — silibinin, silidianin, silicristin) is the most extensively studied natural hepatoprotective compound; antioxidant; anti-inflammatory; anti-fibrotic (inhibits stellate cell activation and collagen synthesis); membrane-stabilising (prevents hepatotoxin entry into hepatocytes); used as adjunct in alcoholic and drug-induced hepatitis; some small studies show reduction in ALT in chronic HBV; IV silibinin is approved treatment for Amanita mushroom (death cap) poisoning",
+              "evidence": "Cochrane review: insufficient evidence for silymarin in viral hepatitis specifically; widely used as complementary therapy; no major safety concerns at standard doses; AVOID in pregnancy",
+              "frequency": "Silymarin 140-200 mg three times daily (standardised extract) as adjunct; widely available in India as Silymarin / Legalon / Silybon",
+              "note": "Not a replacement for antiviral therapy — an adjunct only"
+            }
+          ]
+        },
+        {
+          "category": "High-Antioxidant Foods (Combat Oxidative Stress in Viral Hepatitis)",
+          "rationale": "Hepatitis viruses and the immune response they generate create massive oxidative stress in hepatocytes — overwhelming the liver's antioxidant defences (glutathione, superoxide dismutase, catalase); dietary antioxidants supplement these depleted defences",
+          "items": [
+            {
+              "food": "Amla (Indian Gooseberry)",
+              "benefit": "600-900 mg Vitamin C per 100g (richest Vitamin C food); tannins, ellagic acid, gallic acid; powerful free radical scavenger; regenerates Vitamin E (the primary fat-soluble antioxidant protecting hepatocyte membranes); reduces hepatic oxidative stress markers; enhances liver detoxification (induces glutathione-S-transferase); traditional Ayurvedic hepatoprotective herb with strong scientific basis",
+              "frequency": "1-3 amla daily; amla murabba, raw, or juice"
+            },
+            {
+              "food": "Pomegranate (Anar)",
+              "benefit": "Punicalagins (the most potent antioxidant polyphenols known — 3× more antioxidant capacity than red wine and green tea combined); ellagic acid (hepatoprotective, anti-fibrotic); reduces hepatic inflammation markers (CRP, IL-6) in clinical studies",
+              "frequency": "1 pomegranate or glass of fresh pomegranate juice daily"
+            },
+            {
+              "food": "Papaya (Papita)",
+              "benefit": "Papain enzyme (aids protein digestion — helpful when hepatic bile flow reduced); Vitamin C and beta-carotene (antioxidants); potassium; lycopene; gently improves liver function markers in some studies",
+              "frequency": "Daily as fruit"
+            },
+            {
+              "food": "Walnuts",
+              "benefit": "Omega-3 fatty acids (ALA — anti-inflammatory); arginine (precursor to nitric oxide — reduces ammonia; useful in hepatic encephalopathy); glutathione (direct antioxidant); polyphenols; magnesium; reduces liver fat and inflammation in NAFLD",
+              "frequency": "5-7 walnuts daily"
+            }
+          ]
+        },
+        {
+          "category": "Evening Snack — Critical for Cirrhosis (Nocturnal Nutritional Support)",
+          "rationale": "Patients with cirrhosis have a very short overnight fasting tolerance — their glycogen stores are depleted by liver failure, and they switch to protein catabolism (breaking down muscle for energy) within 4-6 hours of fasting. A LATE EVENING SNACK (200-300 kcal, carbohydrate + protein) immediately before sleep is one of the single most evidence-based nutritional interventions in cirrhosis — it reduces overnight muscle catabolism and improves nitrogen balance",
+          "items": [
+            {
+              "food": "Late evening snack for cirrhosis (200-300 kcal)",
+              "examples": "Warm milk with honey + 2 biscuits; small bowl of oats; paneer sandwich; small portion of rice with dal; banana + peanut butter; BCAA supplement + light carbohydrate",
+              "benefit": "Prevents overnight protein catabolism (a major contributor to the sarcopenia/muscle wasting of cirrhosis); improves nitrogen balance; reduces fasting hypoglycaemia risk; evidence: late evening snack significantly improves nutritional status and quality of life in cirrhotic patients",
+              "frequency": "EVERY NIGHT for all cirrhotic patients — within 30-60 minutes of going to bed"
+            }
+          ]
+        }
+      ],
+      "foods_to_strictly_avoid": [
+        {
+          "food": "ALCOHOL — ABSOLUTE, COMPLETE, LIFELONG PROHIBITION",
+          "reason": "The single most important dietary restriction in ALL viral hepatitis: acute hepatitis, chronic hepatitis, and post-SVR. Alcohol and viral hepatitis act SYNERGISTICALLY — each doubles the other's liver-damaging effect. Alcohol causes: direct hepatotoxicity (acetaldehyde — the toxic metabolite) impairing hepatocyte DNA repair; increased intestinal permeability to bacterial endotoxin (LPS — a major driver of hepatic inflammation); activation of hepatic stellate cells (fibrosis-producing cells); oxidative stress depletion of glutathione; suppression of innate and adaptive immune responses against HBV/HCV; dramatically accelerated fibrosis progression (3-5× faster in heavy drinkers with chronic hepatitis). In cirrhosis: ANY alcohol dramatically increases risk of variceal bleeding, hepatic decompensation, and HCC. SVR (HCV cure) does not restore safe drinking — the liver damage from fibrosis and the cirrhosis risk persist; alcohol remains harmful.",
+          "duration": "LIFETIME ABSTINENCE for all patients with cirrhosis; complete abstinence during any acute hepatitis and throughout antiviral treatment; strong recommendation for complete abstinence in all chronic HBV/HCV",
+          "examples": "Beer, wine, spirits, toddy/arrack, sharab — ALL forms of alcohol; no 'safe' level"
+        },
+        {
+          "food": "Raw Shellfish (Oysters, Clams, Mussels, Crabs)",
+          "reason": "Filter-feeding shellfish concentrate pathogens from polluted water — including HAV, HEV, Vibrio vulnificus, and other pathogens; raw shellfish are a major source of HAV and HEV in endemic areas. In cirrhotic patients: Vibrio vulnificus (bacteria in raw seafood) causes RAPIDLY FATAL septicaemia in patients with liver disease — mortality >50% within 48 hours; cirrhotic patients are severely immunocompromised and cannot fight Vibrio infections; this is a life-threatening prohibition for ALL cirrhotics",
+          "examples": "Raw oysters, uncooked mussels, clams, raw prawns, crab",
+          "duration": "Lifetime prohibition for cirrhosis; avoid during acute hepatitis; cook shellfish thoroughly (steam until all shells open + 5 minutes more)"
+        },
+        {
+          "food": "Herbal Medicines and Unlicensed Supplements with Hepatotoxic Potential",
+          "reason": "Drug-induced liver injury (DILI) is increasingly common from herbal, Ayurvedic, and traditional medicines — and can be catastrophic in patients with pre-existing hepatitis. The liver processes all substances — a compromised liver is at much higher risk of drug-toxicity. Known hepatotoxic Ayurvedic and herbal preparations: Kalihari/Jangli methi; Shankhpushpi (some preparations); Kutki; certain metal-containing preparations (bhasmas); Kava kava; comfrey; pyrrolizidine alkaloids; Chapparal; pennyroyal",
+          "examples": ["Certain Ayurvedic preparations containing heavy metals (mercury — parad; lead — shishe ka safeda; copper)", "Kava (hepatotoxic — banned in several countries)", "High-dose green tea extract", "Comfrey", "Jin Bu Huan", "Pennyroyal"],
+          "recommendation": "Disclose ALL herbal, traditional, and complementary medicines to your hepatologist; do not assume 'natural' = safe; many Ayurvedic preparations are hepatoprotective and appropriate (amla, turmeric) but some are seriously hepatotoxic"
+        },
+        {
+          "food": "Excessive Sodium (Salt) — Critical for Ascites Management in Cirrhosis",
+          "reason": "Cirrhosis with portal hypertension causes renal sodium retention (via activated renin-angiotensin-aldosterone system and sympathetic nervous system) — excess dietary sodium directly worsens ascites accumulation and oedema; also increases risk of hyponatraemia complications",
+          "recommendation": "Sodium restriction <2 g/day (88 mmol/day) in patients with ascites — this is the amount that allows diuretics to achieve a negative sodium balance and reduce ascites; use herbs and spices for flavouring instead of salt; avoid processed foods, pickles, papads, and packaged sauces (extremely high sodium)",
+          "note": "Strict sodium restriction ONLY in patients with active ascites; not necessary in compensated cirrhosis without ascites"
+        },
+        {
+          "food": "High-Fat, Fried, and Processed Foods",
+          "reason": "Liver is central to lipid metabolism — chronic hepatitis impairs hepatic fat processing; fatty liver (hepatic steatosis) commonly coexists with HCV (particularly GT3) and accelerates fibrosis; dietary fat overload worsens hepatic steatosis, increases oxidative stress, and impairs hepatocyte regeneration",
+          "examples": "Deep-fried foods; full-fat dairy in excess; processed meats; fast food; high-fat pastries",
+          "recommendation": "Replace with lean protein, olive oil, and healthy fats (nuts, avocado)"
+        },
+        {
+          "food": "Excess Red Meat and Processed Meats",
+          "reason": "High haem iron from red meat promotes oxidative stress (iron catalyses Fenton reaction generating hydroxyl radicals — highly hepatotoxic); elevated serum ferritin and hepatic iron are common in HCV and worsen fibrosis; dietary iron overload impairs interferon response in HCV; nitrosamines in processed meats are hepatocarcinogens",
+          "recommendation": "Moderate red meat (1-2 times per week); avoid processed/cured meats (ham, salami, sausages); prefer lean white meat and fish"
+        }
+      ],
+      "sample_meal_plan": {
+        "acute_hepatitis": {
+          "principle": "Small frequent meals; easily digestible; high-quality protein; adequate calories despite anorexia; NO alcohol; NO hepatotoxic medications",
+          "early_morning": "Warm water with honey and lemon; 1-2 fresh amla (Vitamin C)",
+          "breakfast": "Soft scrambled eggs (2) + plain white toast; OR moong dal khichdi (very soft, minimal spice); 1 glass of diluted fruit juice; weak tea",
+          "mid_morning": "Coconut water; ripe banana; 5-7 walnuts",
+          "lunch": "Plain rice + moong dal + boiled or steamed vegetable; small portion curd (probiotic); small glass of pomegranate juice",
+          "afternoon": "Warm milk with turmeric + small biscuits; amla juice",
+          "dinner": "Chicken or fish soup; plain khichdi; steamed vegetables; 1 glass of warm water",
+          "bedtime": "Warm haldi doodh (turmeric milk); no food within 2 hours of sleep",
+          "avoid_completely": "All alcohol, raw shellfish, fried food, spicy food, large portions, hepatotoxic herbs"
+        },
+        "chronic_hepatitis_compensated": {
+          "principle": "Mediterranean-style diet; high protein; coffee daily; complete alcohol abstinence; liver-supporting foods",
+          "on_waking": "2 cups of black coffee (strong evidence for hepatoprotection); 1-2 amla",
+          "breakfast": "Eggs (2) + whole grain toast + avocado; OR oats with walnuts and berries",
+          "mid_morning": "Pomegranate/beetroot juice; handful of almonds",
+          "lunch": "Dal + brown rice + cooked vegetables with haldi; curd; salad; green tea",
+          "afternoon": "Green tea; 1 cup of coffee; fruit (papaya or guava)",
+          "dinner": "Fish or chicken + dal + sabzi; roti or light rice",
+          "evening_snack_cirrhosis": "200 kcal evening snack before bed: warm milk + small bowl oats; CRITICAL for cirrhosis patients"
+        }
+      }
+    },
+
+    "lifestyle_management": {
+      "alcohol_cessation": {
+        "overview": "ABSOLUTE ALCOHOL ABSTINENCE is the single most important lifestyle modification for all patients with any form of viral hepatitis. This cannot be overstated.",
+        "strategies": ["Brief motivational intervention at every consultation (5 A's: Ask, Advise, Assess, Assist, Arrange)", "Referral to alcohol cessation programme (Alcoholics Anonymous, CBT-based addiction counselling)", "Pharmacotherapy for alcohol dependence: naltrexone 50 mg daily; acamprosate 666 mg three times daily — both reduce craving; discuss with hepatologist (hepatic safety considerations)", "Baclofen (GABA-B agonist) — one of the only anti-craving medications with evidence of safety in cirrhosis (Addolorato et al., Lancet 2007)", "In-patient alcohol rehabilitation if severe dependence"]
+      },
+      "infection_prevention_and_transmission": {
+        "hav_prevention": [
+          "HAV vaccination — 2-dose series; provides >95% protection for life after both doses; recommended for all travellers to endemic areas, food handlers, people with chronic liver disease (higher risk of fulminant HAV), MSM, household contacts of HAV cases",
+          "Safe water and food practices — boil drinking water in endemic areas; avoid raw shellfish; 'boil it, cook it, peel it, or forget it' for travel",
+          "Meticulous handwashing with soap for ≥20 seconds after toilet and before food preparation",
+          "Food handlers with HAV must be excluded from work until 7 days after jaundice onset"
+        ],
+        "hbv_prevention": [
+          "HBV vaccination — 3-dose series (0, 1, 6 months); check anti-HBs titre 4-8 weeks after completing series; >10 mIU/mL = protected; non-responders may need booster or double-dose schedule; vaccinate ALL non-immune household and sexual contacts of HBsAg-positive patients",
+          "Safe sex — condoms reduce but do not eliminate HBV transmission; discuss with HBsAg-positive patients that they should inform sexual partners and vaccinate them",
+          "Birth-dose HBV vaccine — within 24 hours of birth for ALL neonates (India UIP); HBIG for neonates born to HBsAg-positive mothers",
+          "Universal blood screening — all donated blood in India screened for HBsAg (mandatory since 2001)",
+          "Safe injection practices — single-use syringes; do not share any injection equipment",
+          "Healthcare worker protection — HBV vaccination is mandatory for all healthcare workers in India; report all needlestick injuries; post-exposure prophylaxis (HBIG + vaccination) within 24-48 hours",
+          "Do not share personal items — razors, toothbrushes, nail clippers — items potentially contaminated with blood",
+          "In India: barber shop razors should be single-use or sterilised — significant transmission route"
+        ],
+        "hcv_prevention": [
+          "No vaccine exists for HCV — all prevention is behavioural and harm reduction",
+          "Harm reduction for PWID: needle and syringe programmes (NSP); opioid substitution therapy (OST — methadone, buprenorphine); naloxone availability; non-judgemental healthcare access",
+          "Safe injection practices in healthcare: single-use syringes and needles in ALL settings; never reuse; safe disposal of sharps",
+          "Universal blood screening — HCV antibody screening of all donated blood and organs since 1992 in most countries; NAT (nucleic acid testing) further reduces window period risk",
+          "Caution with tattooing, piercing, acupuncture — only use sterile single-use equipment",
+          "Barber shop practices — single-use razors in India; major HCV transmission route",
+          "Safe sex — though HCV sexual transmission is less efficient than HBV; consistent condom use in MSM (higher transmission risk) and multiple partners; HIV-coinfected patients: higher sexual HCV transmission — use condoms",
+          "HCV-positive patients on DAA treatment: still use transmission precautions until SVR confirmed (HCV RNA undetectable)"
+        ]
+      },
+      "hcc_surveillance_and_monitoring": {
+        "overview": "Regular HCC surveillance is one of the most important ongoing management tasks for all patients with chronic HBV (especially with cirrhosis, family history of HCC, or high viral load) and all patients with HCV-related cirrhosis (even post-SVR — cirrhosis persists after viral cure and HCC risk, though reduced, remains elevated for life).",
+        "protocol": [
+          "Liver ultrasound every 6 months — essential; continues lifelong once cirrhosis established",
+          "AFP (alpha-fetoprotein) every 6 months — alongside ultrasound; though non-specific, combined with ultrasound improves early HCC detection",
+          "Any new liver lesion >1 cm on ultrasound — multiphasic contrast CT or MRI for characterisation (LI-RADS scoring system)",
+          "Post-SVR HCV: continue 6-monthly surveillance INDEFINITELY for patients with established cirrhosis — HCC risk reduced after SVR but NOT eliminated",
+          "Post-TDF/ETV for HBV: continue surveillance — virus suppressed but cccDNA and integrated viral DNA persist as carcinogens"
+        ]
+      },
+      "weight_and_metabolic_management": [
+        "Obesity and type 2 diabetes dramatically worsen fibrosis progression in HCV (particularly GT3) and HBV — metabolic syndrome co-existing with viral hepatitis acts synergistically; every 1 unit increase in BMI increases HCC risk by 17% in HBV",
+        "Target BMI 18.5-25 kg/m2; waist circumference <90 cm men, <80 cm women",
+        "Regular aerobic exercise: 150 minutes/week moderate intensity — reduces hepatic steatosis, systemic inflammation, and insulin resistance",
+        "Treat diabetes and dyslipidaemia: HbA1c target <7% in diabetic HBV/HCV patients; metformin may be hepatoprotective in HCV + diabetes (reduces fibrosis and HCC risk); statins — generally safe in well-compensated chronic hepatitis and reduce HCC risk (emerging evidence)",
+        "Treat NAFLD/NASH coexisting with viral hepatitis — extremely important as NASH + viral hepatitis accelerates cirrhosis dramatically"
+      ],
+      "mental_health_support": [
+        "Depression, anxiety, and cognitive impairment are significantly more prevalent in patients with chronic HCV (direct viral neuropsychiatric effects, independent of liver disease); depression prevalence up to 30-40% in chronic HCV",
+        "HCV cure (SVR) improves depression, fatigue, and quality of life significantly — this was a major limitation of interferon-based therapy (interferon caused/worsened depression) that no longer applies to DAA therapy",
+        "Screen all chronic HBV and HCV patients for depression — PHQ-9; refer for counselling and SSRIs if needed (SSRIs generally safe in compensated hepatitis)",
+        "Stigma: both HBV and HCV carry significant social stigma (association with IV drug use, sexual transmission) — non-judgemental, confidential care is essential; stigma is a major barrier to testing and treatment",
+        "Disclosure: support patients in discussing diagnosis with partners (important for HBV sexual transmission prevention); counselling on who to tell and how"
+      ]
+    },
+
+    "hepatitis_monitoring_plan": {
+      "note": "Monitoring requirements vary dramatically between acute hepatitis (weeks), treated and cured HCV (years of post-SVR follow-up), and lifelong chronic HBV management. This guide provides a framework.",
+      "acute_hepatitis_monitoring": {
+        "green_zone": {
+          "status": "Mild Acute Hepatitis — Outpatient Management",
+          "criteria": "INR normal (<1.3); bilirubin elevated but improving; ALT elevated but not >1000 U/L; no confusion; able to eat and drink; SpO2 and haemodynamics normal",
+          "action": "Weekly LFTs, INR, bilirubin; urine colour monitoring daily (darkening = worsening); advise return immediately if confusion develops, INR rises, or vomiting prevents hydration; complete alcohol abstinence; no paracetamol >1g/day; no NSAIDs"
+        },
+        "yellow_zone": {
+          "status": "Moderate Acute Hepatitis — Hospital Admission",
+          "criteria": "INR 1.2-1.5 (early coagulopathy); severe vomiting; bilirubin rapidly rising; inability to maintain oral hydration; significant prodrome with prostration",
+          "action": "Hospital admission; daily LFTs, INR, bilirubin, renal function, blood glucose; IV fluids + antiemetics; Vitamin K IV for elevated INR; hepatology review; transplant centre alert if INR rising"
+        },
+        "red_zone": {
+          "status": "EMERGENCY — Possible Acute Liver Failure",
+          "criteria": ["INR >1.5 with ANY confusion or altered consciousness", "INR >2.0 regardless of mental state", "Hypoglycaemia (blood glucose <3.5 mmol/L)", "Rapid mental deterioration — confusion, agitation, inappropriate behaviour", "Deeply icteric with deteriorating clinical course"],
+          "action": "IMMEDIATE hospital admission and hepatology/liver transplant centre contact; IV NAC; contact nearest liver transplant centre for assessment; patient may need emergency transfer"
+        }
+      },
+      "chronic_hbv_monitoring": {
+        "treatment_monitoring": "HBV DNA every 3 months until undetectable, then 6-monthly; ALT every 3 months; renal function and phosphate (if on TDF) every 3-6 months; annual FibroScan; 6-monthly AFP + ultrasound (HCC surveillance in cirrhosis)",
+        "inactive_carrier_monitoring": "HBsAg, HBV DNA, ALT every 6-12 months; 6-monthly ultrasound + AFP if cirrhosis; watch for reactivation if immunosuppression planned"
+      },
+      "chronic_hcv_monitoring": {
+        "during_treatment": "HCV RNA at baseline; week 4 (optional — confirms rapid virological response); end of treatment (EOT); 12 weeks post-EOT = SVR12 = CURE",
+        "post_svr": "SVR12 confirmed (undetectable HCV RNA) = CURED; LFTs at 6-monthly (should normalise); continued 6-monthly AFP + ultrasound if cirrhosis (indefinite); annual FibroScan to monitor fibrosis regression; retest HCV RNA if new exposure risk behaviour (HCV re-infection possible after SVR)"
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Acute Liver Failure (Fulminant Hepatitis)",
+        "description": "Life-threatening complication of acute viral hepatitis — INR ≥1.5 + hepatic encephalopathy in a person without prior liver disease. Most common causes in viral hepatitis: HAV in elderly or those with pre-existing liver disease; HBV (particularly HDV superinfection); rarely HEV in pregnancy. Carries 20-40% mortality without liver transplantation.",
+        "severity": "Life-threatening",
+        "management": "ICU; IV NAC; urgent liver transplant listing; treat cerebral oedema; IV glucose for hypoglycaemia; broad-spectrum antibiotics; renal support"
+      },
+      {
+        "complication": "Cirrhosis",
+        "description": "The end-result of years of hepatic inflammation and fibrosis — replacement of normal liver tissue with scar tissue (collagen) and regenerative nodules. Portal hypertension develops from increased resistance to portal blood flow through the scarred liver. Cirrhosis from HBV affects 15-40% of untreated chronic HBV patients over 25 years; from HCV: ~30% within 20 years. Cirrhosis from HCV may REGRESS after SVR — unique among chronic liver diseases.",
+        "severity": "Severe — major impact on life expectancy and quality of life",
+        "management": "Treat underlying virus (TDF/TAF/ETV for HBV; DAAs for HCV — fibrosis regression possible post-SVR); manage portal hypertension complications; HCC surveillance; liver transplant for decompensated disease"
+      },
+      {
+        "complication": "Hepatocellular Carcinoma (HCC)",
+        "description": "Primary liver cancer — the most feared long-term complication of chronic viral hepatitis. HBV and HCV combined cause 80% of HCC globally. HBV-related HCC is unique in that it can occur even WITHOUT cirrhosis — HBV DNA integrates into the host genome and can directly activate oncogenes. HCV-related HCC occurs almost exclusively in the setting of cirrhosis. Annual HCC incidence in HBV cirrhosis: 3-8%; in HCV cirrhosis: 1-4%. Prognosis depends entirely on stage at detection — early HCC (BCLC 0/A) is curable; advanced HCC (BCLC C/D) has median survival <12 months.",
+        "severity": "Often fatal — the leading cancer killer globally",
+        "management": "Surveillance: 6-monthly ultrasound + AFP in all at-risk patients; Early detection: curative options (hepatic resection, liver transplant, radiofrequency ablation); Intermediate: TACE; Advanced: atezolizumab + bevacizumab or sorafenib/lenvatinib"
+      },
+      {
+        "complication": "Portal Hypertension and Its Complications",
+        "description": "Elevated pressure in the portal venous system from cirrhosis causing: oesophageal and gastric varices (dilated vessels at gastro-oesophageal junction from portal-systemic collaterals); variceal haemorrhage (sudden, massive, life-threatening upper GI bleeding from variceal rupture — mortality 15-25% per episode); splenomegaly and hypersplenism; caput medusae.",
+        "severity": "Life-threatening (variceal bleeding); significant morbidity",
+        "management": "Non-selective beta-blockers (propranolol, carvedilol) for primary and secondary variceal prophylaxis — reduce portal pressure; endoscopic variceal band ligation; acute variceal bleeding: terlipressin + band ligation + prophylactic ceftriaxone; TIPSS (transjugular intrahepatic portosystemic shunt) for refractory variceal bleeding"
+      },
+      {
+        "complication": "Ascites and Spontaneous Bacterial Peritonitis (SBP)",
+        "description": "Ascites (fluid in peritoneal cavity) is the most common complication of cirrhotic decompensation. SBP (infection of ascitic fluid without a surgical source) occurs in 10-30% of cirrhotic patients per year and is life-threatening (in-hospital mortality 20-30%). Presents as fever, abdominal pain and tenderness, and deteriorating hepatic or renal function in a patient with ascites.",
+        "severity": "Severe (ascites); Life-threatening (SBP)",
+        "management": "Ascites: salt restriction (<2g/day) + spironolactone + furosemide; large-volume paracentesis + IV albumin for tense ascites; SBP: IV cefotaxime + IV albumin 1.5 g/kg day 1 + 1 g/kg day 3; norfloxacin prophylaxis for secondary prevention"
+      },
+      {
+        "complication": "Hepatic Encephalopathy (HE)",
+        "description": "Neuropsychiatric dysfunction in cirrhosis from accumulation of ammonia (and other neurotoxins not cleared by failing liver). Ranges from minimal HE (subtle cognitive impairment detectable only on testing) to overt HE (confusion, agitation, asterixis — grades 1-4) to coma (grade 4). Precipitants: GI bleeding (increases protein load); constipation; infection; electrolyte disturbances (hyponatraemia, hypokalaemia); sedatives/opioids; excessive protein intake.",
+        "severity": "Moderate to Life-threatening",
+        "management": "Identify and treat precipitant; lactulose (2-4 soft stools/day); rifaximin 550 mg twice daily (secondary prophylaxis); BCAA supplements; correct hyponatraemia cautiously; avoid sedatives"
+      },
+      {
+        "complication": "HBV Reactivation",
+        "description": "Reactivation of previously suppressed or even resolved HBV in patients undergoing immunosuppression (chemotherapy, biologics such as anti-CD20 [rituximab], anti-TNF agents, corticosteroids, solid organ transplantation, haematological stem cell transplantation, HIV/AIDS). HBV reactivation can be severe or fulminant — potentially fatal. Risk is highest with anti-CD20 agents (rituximab — >40% reactivation in HBsAg-positive patients without prophylaxis).",
+        "severity": "Potentially life-threatening (fulminant hepatitis)",
+        "prevention": "Screen ALL patients for HBsAg AND anti-HBc before any immunosuppressive therapy; HBsAg positive: start prophylactic TDF or entecavir before immunosuppression and continue for at least 6-12 months after stopping; anti-HBc positive (resolved HBV): monitor HBV DNA every 1-3 months during immunosuppression or give prophylactic antiviral; NEVER overlook HBV reactivation screening before immunosuppression"
+      }
+    ],
+
+    "special_populations": {
+      "hepatitis_in_pregnancy": {
+        "hav": [
+          "Acute HAV in pregnancy: self-limiting in most; slightly higher risk of preterm labour from fever and dehydration; HAV vaccine safe in pregnancy (inactivated); recommended for susceptible pregnant travellers to endemic areas; post-exposure prophylaxis: HAV vaccine or IGIM within 2 weeks of exposure"
+        ],
+        "hbv": [
+          "HBV in pregnancy: one of the most critical settings — vertical transmission is the primary driver of global HBV chronicity; perinatal transmission rate: 70-90% for HBeAg-positive mothers without intervention; reduced to <5% with HBIG + vaccine; reduced to <1% with maternal TDF + HBIG + vaccine",
+          "Screen ALL pregnant women for HBsAg at first antenatal visit — mandatory under NACO India guidelines",
+          "If HBsAg positive: test HBeAg, HBV DNA, LFTs; refer to hepatologist; PMTCT protocol",
+          "TDF (300 mg daily) from week 24-28 in HBeAg-positive or HBV DNA >200,000 IU/mL mothers — reduces perinatal transmission",
+          "Neonatal HBIG (100-200 IU IM) + HBV vaccine (first dose) within 12 hours of birth — regardless of maternal status (all HBsAg-positive mothers)",
+          "Complete 3-dose HBV vaccine series in neonate; test infant for HBsAg and anti-HBs at 9-12 months to confirm successful prophylaxis",
+          "Breastfeeding: SAFE for HBsAg-positive mothers if neonate received HBIG + vaccine at birth — no additional HBV transmission risk from breastfeeding; continue TDF during breastfeeding if maternal antiviral therapy indicated"
+        ],
+        "hcv": [
+          "HCV in pregnancy: 5-10% vertical transmission risk; no preventive intervention currently available (no HCVIG equivalent); caesarean section does NOT reduce transmission risk; breastfeeding: safe (no additional transmission risk unless nipples cracked/bleeding)",
+          "Screen ALL pregnant women for anti-HCV at first antenatal visit in high-prevalence settings (India) or in high-risk women",
+          "DAA therapy in pregnancy: currently NOT recommended — insufficient safety data in humans; treat before pregnancy (SVR reduces vertical transmission risk); treat after delivery",
+          "Infants born to HCV-positive mothers: test HCV RNA at 2 months (not antibody — maternal antibodies persist up to 18 months confounding interpretation) or anti-HCV at 18 months; if positive — refer to paediatric hepatologist; DAA therapy available for children ≥3 years in some guidelines"
+        ],
+        "hev": [
+          "HEV in pregnancy: HIGHEST RISK — case fatality rate 20-25% in third trimester (vs <0.5% in non-pregnant adults); causes fulminant hepatitis, DIC, preterm birth, foetal loss",
+          "Any pregnant woman with acute hepatitis of unknown cause — test HEV IgM as first priority in India; HEV is the most common cause of acute hepatitis in India",
+          "Hospitalise all pregnant women with HEV immediately; ICU if fulminant; obstetric monitoring; IV fluids; supportive care; consider ribavirin (limited data but being used in severe cases)"
+        ]
+      },
+      "hepatitis_in_children": {
+        "key_points": [
+          "HAV in children under 6: typically ASYMPTOMATIC — important as children become silent reservoir spreading HAV to adults; anicteric HAV in children is one of the reasons HAV is endemic in communities",
+          "Congenital/perinatal HBV: PMTCT is the most important intervention; children with perinatally acquired HBV typically enter the immune tolerant phase (high viral load, normal ALT) for 2-3 decades before developing immune-active hepatitis",
+          "Childhood HBV vaccination: Universal HBV vaccination of ALL infants from birth is the most important global HBV control strategy; India's UIP includes HBV vaccine at birth, 6 weeks, 10 weeks, and 14 weeks; in birth-dose HBV vaccination programmes: chronic HBV rates in children drop from 8-15% to <1% within one generation",
+          "HCV in children: usually asymptomatic; DAA therapy approved for children ≥3 years (sofosbuvir/ledipasvir; glecaprevir/pibrentasvir for ≥3 years; sofosbuvir/velpatasvir emerging); treat all children with confirmed HCV RNA positive",
+          "Cholestatic HAV in children: more common than adults; jaundice more prolonged; entirely self-limiting",
+          "Neonatal hepatitis: neonatal HBV — important cause of neonatal jaundice in endemic areas; GBS hepatitis; CMV; herpes simplex hepatitis — different from community-acquired adult hepatitis; require different investigations"
+        ]
+      },
+      "hepatitis_in_hiv_coinfection": {
+        "key_points": [
+          "HIV/HBV coinfection: 5-10% of HIV patients in India have chronic HBV; HIV dramatically worsens HBV outcomes (faster fibrosis, higher HCC risk, higher mortality); FIRST-LINE ART for HIV/HBV coinfection: TDF/FTC + dolutegravir (tenofovir covers both HIV and HBV simultaneously) — MUST NOT use HBV therapy without covering HIV; HBV monotherapy with entecavir or TDF alone in HIV-coinfected patients selects HIV resistance",
+          "HIV/HCV coinfection: HIV accelerates HCV fibrosis 2-3× faster; treat HCV with DAAs regardless of HIV status; DAA interactions with HIV antiretrovirals important — check specific combinations; most modern ART (dolutegravir-based) has no significant DAA interactions; avoid regimens containing ritonavir/cobicistat with certain DAAs (check interactions); SVR rates with DAAs are equivalent to HIV-negative patients",
+          "HIV-coinfected patients with HBV should never stop TDF abruptly — risk of severe HBV reactivation and fulminant hepatitis"
+        ]
+      },
+      "hepatitis_in_haemodialysis_patients": {
+        "key_points": [
+          "Haemodialysis patients have very high HBV and HCV prevalence historically (blood exposure at dialysis); universal screening before dialysis initiation; HBsAg-positive patients on dedicated dialysis machines in some centres",
+          "HBV in dialysis: entecavir preferred over TDF (TDF nephrotoxic — avoid in eGFR <30; if TDF used: dose adjustment required); TAF can be used with dose adjustment",
+          "HCV in dialysis: glecaprevir/pibrentasvir PREFERRED for dialysis patients — no sofosbuvir (renally cleared; significant accumulation at eGFR <30); full standard doses of GLE/PIB — no renal dose adjustment needed; SVR rates equivalent to non-dialysis patients; HCV cure reduces cardiovascular and mortality risk in dialysis patients"
+        ]
+      },
+      "hepatitis_in_immunocompromised_transplant": {
+        "key_points": [
+          "Liver transplantation for HBV: long-term antiviral therapy (TDF or entecavir) post-transplant; HBIG (anti-HBs immunoglobulin) infusions in high-risk period; HBV-DNA must be undetectable at transplant; HBsAg-positive donors to HBsAg-negative recipients possible with antiviral prophylaxis",
+          "Liver transplantation for HCV: pre-transplant DAA therapy if decompensation not too advanced (Child-Pugh <12); post-transplant DAA therapy achieves SVR in >95%; SVR significantly reduces graft fibrosis progression and graft loss; HCV-positive donor organs to HCV-negative recipients now used in USA (with immediate post-transplant DAA treatment) to expand organ supply",
+          "HBV reactivation in cancer chemotherapy: see complication section; prophylactic TDF or entecavir throughout chemotherapy and 12 months after in HBsAg-positive patients; monitor HBV DNA in anti-HBc-positive patients"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Hepatitis A Vaccine (HAV)",
+        "frequency": "2-dose series: dose 1 (0 months) + dose 2 (6-18 months later); lifelong protection after 2 doses (>95% efficacy)",
+        "reason": "HAV is the most common cause of acute viral hepatitis in India — intermediate-to-high endemic country with seasonal outbreaks during monsoon. HAV vaccination provides complete, lifelong protection. Particularly critical for: people with chronic HBV or HCV (superimposed HAV can cause fulminant hepatitis with >50% mortality in cirrhotic patients — HAV vaccination is urgently recommended for ALL patients with chronic liver disease); international travellers; food handlers; healthcare workers; MSM; household contacts of HAV cases.",
+        "brands_india": "Havrix (GlaxoSmithKline); Avaxim (Sanofi); Vaqta (MSD); combination hepatitis A+B vaccine (Twinrix — single series covering both); combination typhoid+hepatitis A (Vivaxim/Hepatyrix)",
+        "india_note": "HAV vaccination is NOT in India's UIP for children — available privately; cost approximately Rs 1,000-1,500 per dose; 2-dose series essential; not yet routinely given"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine (HBV)",
+        "frequency": "Standard series: 3 doses (0, 1, 6 months); accelerated: 0, 1, 2 months (complete faster) with booster at 12 months; rapid: 0, 7 days, 21 days + booster at 12 months (for urgent need — travel, exposure); check anti-HBs titre 4-8 weeks after completing series — >10 mIU/mL = protected",
+        "reason": "Hepatitis B vaccine is one of the most effective vaccines ever developed — 95%+ protective efficacy; provides lifelong protection in most vaccinated individuals; the primary prevention strategy for HBV. Recommended for: ALL unvaccinated infants (birth dose mandatory in India UIP — critical for PMTCT); all unvaccinated adults; healthcare workers (mandatory in India); household and sexual contacts of HBsAg-positive patients; PWID; MSM; haemodialysis patients; pre-transplant patients; people with chronic liver disease from any cause.",
+        "brands_india": "Engerix-B (GlaxoSmithKline); Shanvac-B (Shantha Biotechnics); BEVAC; Biovac-B; Recombivax HB; Twinrix (combined A+B)",
+        "non_responders": "5-10% of vaccinees do not respond (non-responders — anti-HBs <10 mIU/mL): check immunocompromise status; repeat 3-dose series; double-dose regimen (40 mcg vs standard 20 mcg); consider referral for specialist management; non-responders: if anti-HBc negative (never infected) — at-risk and cannot be protected by vaccine; use barrier contraception and safe practices",
+        "india_upa": "Birth dose HBV vaccine (within 24 hours of birth) is mandatory under India's Universal Immunisation Programme since 2011; 3 further doses at 6, 10, 14 weeks (pentavalent vaccine); dramatically reducing childhood HBV in vaccinated cohorts"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine — Boosters and Special Groups",
+        "haemodialysis": "Higher doses required (40 mcg per dose vs standard 20 mcg; 4-dose series); anti-HBs monitoring annually (dialysis patients lose immunity faster); booster if anti-HBs falls <10 mIU/mL",
+        "healthcare_workers": "All healthcare workers must be vaccinated against HBV under MOHFW India guidelines; post-vaccination titre check mandatory; post-exposure prophylaxis (PEP) protocol for needlestick injury",
+        "immunocompromised": "Higher doses; 4-dose series; anti-HBs monitoring; may need repeated boosters"
+      },
+      {
+        "vaccine": "Combination Hepatitis A+B Vaccine (Twinrix)",
+        "frequency": "3 doses: 0, 1, 6 months; or accelerated: 0, 7, 21 days + booster at 12 months",
+        "reason": "Practical combined vaccine providing protection against both HAV and HBV in a single series — highly recommended for: adults being vaccinated for the first time (convenience); international travellers; patients with chronic liver disease (needs protection from both); healthcare workers",
+        "brands": "Twinrix (GSK) — available in India"
+      },
+      {
+        "vaccine": "Annual Influenza Vaccine",
+        "reason": "Patients with chronic hepatitis B or C have increased susceptibility to severe infections; influenza causing decompensation of cirrhosis or hepatic encephalopathy; annual influenza vaccination recommended for all patients with cirrhosis, chronic HBV, and chronic HCV",
+        "recommendation": "Annually before flu season for all cirrhotic patients and all chronic viral hepatitis patients"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine",
+        "reason": "Cirrhotic patients have severely impaired immunity (functional asplenia, impaired complement, impaired opsonisation) — at very high risk of invasive pneumococcal disease; pneumococcal pneumonia in cirrhosis has very high mortality and can trigger acute-on-chronic liver failure",
+        "recommendation": "PCV15 or PCV20 (one dose) + PPSV23 (5 years later) for all patients with chronic liver disease and cirrhosis"
+      },
+      {
+        "vaccine": "Hepatitis E Vaccine (HEV 239 — Hecolin)",
+        "availability": "Currently approved only in China (Hecolin — Xiamen Innovax Biotech); 3-dose series; 100% efficacy in clinical trials; not yet available globally including India; WHO recommending for use in outbreak settings and pregnancy in endemic areas",
+        "reason": "HEV causes devastating outcomes in pregnancy in India; a vaccine would be transformative for maternal mortality reduction; India has a massive unmet need; clinical trials underway for international approval"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Yellow eyes or skin (jaundice) — any jaundice requires SAME DAY medical assessment and LFTs; never 'wait and see' with jaundice",
+      "Dark cola-coloured or tea-coloured urine — before jaundice is visible in the eyes; possible early hepatitis — same-day GP review",
+      "Pale/clay/putty-coloured stools with yellow eyes — classic hepatitis triad — urgent medical assessment",
+      "Severe nausea, vomiting, and loss of appetite with right upper quadrant pain — may be acute hepatitis; LFTs required",
+      "Extreme fatigue lasting weeks in a known HBV or HCV carrier — possible liver disease progression; check LFTs and viral load",
+      "Any alcohol-related concern or known heavy alcohol use with liver symptoms — urgent LFTs; possible alcoholic hepatitis",
+      "Known or suspected exposure to HBV or HCV — needlestick, unprotected sex, blood transfusion, sharing needles — get tested ASAP; post-exposure prophylaxis for HBV within 24-48 hours",
+      "All pregnant women: screen for HBsAg and HCV antibody at first antenatal visit — critical PMTCT and foetal protection",
+      "Known chronic HBV or HCV patient who has not been reviewed in >12 months — regular monitoring essential to detect when to treat",
+      "Anyone previously told they had 'hepatitis' but not sure of type or treatment received — get proper testing and assessment",
+      "New medications started in a patient with chronic liver disease — many drugs require dose adjustment or are contraindicated; check with hepatologist",
+      "Known HBsAg-positive patient starting chemotherapy, biologics (rituximab, anti-TNF), or corticosteroids — URGENT HBV reactivation risk — must start antiviral prophylaxis before immunosuppression",
+      "Abdominal swelling (ascites) or ankle oedema in a patient with chronic hepatitis — possible cirrhosis decompensation",
+      "Family member of an HBsAg-positive person — test AND vaccinate all household members who test negative"
+    ],
+
+    "emergency_signs": [
+      "Confusion, altered behaviour, or unable to rouse — possible HEPATIC ENCEPHALOPATHY in cirrhotic patient OR FULMINANT HEPATIC FAILURE in acute hepatitis — CALL EMERGENCY SERVICES (102/112)",
+      "Vomiting bright red blood or passing black tarry stools (melaena) — VARICEAL HAEMORRHAGE from portal hypertension — LIFE-THREATENING; CALL EMERGENCY SERVICES IMMEDIATELY; do NOT wait; mortality 15-25% per bleeding episode",
+      "Sudden severe abdominal pain with fever in a patient with known ascites — SPONTANEOUS BACTERIAL PERITONITIS (SBP) — EMERGENCY; IV antibiotics and albumin required immediately",
+      "INR rising above 2.0 in a patient with acute hepatitis — POSSIBLE ACUTE LIVER FAILURE — contact liver transplant centre urgently",
+      "Deep jaundice with progressive confusion in acute hepatitis — FULMINANT HEPATIC FAILURE — EMERGENCY TRANSFER to liver transplant centre",
+      "Hypoglycaemia (cold sweat, trembling, confusion) in a patient with severe jaundice — liver failing to maintain blood glucose — IV dextrose urgently; hospital emergency",
+      "Rapidly increasing abdominal distension with fever and confusion — acute-on-chronic liver failure; variceal pressure increasing",
+      "Severe breathlessness in a cirrhotic patient — hepatic hydrothorax (pleural fluid from ascites), hepatopulmonary syndrome, portopulmonary hypertension — respiratory emergency",
+      "Pregnant woman with jaundice and fever — possible HEV in third trimester — OBSTETRIC AND HEPATOLOGY EMERGENCY; mortality 20-25% without immediate management",
+      "HBsAg-positive patient who has just started chemotherapy (especially rituximab) without antiviral prophylaxis and develops jaundice or liver failure — HBV REACTIVATION — emergency antiviral therapy immediately"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is the difference between Hepatitis A, B, and C?",
+        "answer": "All three cause liver inflammation but are entirely different diseases: Hepatitis A (HAV) is a short-term, self-limiting infection spread through contaminated food and water (like typhoid); it always resolves completely and never becomes chronic; it is vaccine-preventable. Hepatitis B (HBV) spreads through blood, sex, and from mother to child at birth; most adults clear it within 6 months but 5-10% develop chronic infection leading to cirrhosis and liver cancer over decades; it is vaccine-preventable. Hepatitis C (HCV) spreads almost exclusively through blood (needle sharing, unscreened transfusions, contaminated medical equipment); 75-85% develop chronic infection; there is no vaccine — but it is now completely CURABLE in over 95% of patients with an 8-12 week course of oral tablets. The key differences: route of transmission; whether chronic disease develops; vaccine availability; and curability."
+      },
+      {
+        "question": "Hepatitis C is curable? Really? What treatment is available and how much does it cost in India?",
+        "answer": "Yes — completely curable. The development of direct-acting antiviral (DAA) medicines in the last decade has transformed hepatitis C from a difficult-to-treat lifelong infection into a curable disease. Modern DAA regimens (sofosbuvir/velpatasvir, sofosbuvir + daclatasvir, or glecaprevir/pibrentasvir) achieve 'sustained virological response' (SVR = undetectable HCV RNA) in over 95% of patients — regardless of genotype — with just 8-12 weeks of one or two tablets per day. Side effects are minimal (headache, fatigue in some). In India, generic versions of these medicines are manufactured by Indian pharmaceutical companies (Natco, Cipla, Sun Pharma) at dramatically reduced cost — a complete 12-week course of sofosbuvir + daclatasvir costs approximately Rs 5,000-10,000 from chemists or online pharmacies. The National Viral Hepatitis Control Programme (NVHCP) of the Government of India provides FREE HCV testing and treatment at government facilities — contact the nearest district hospital or government medical college hepatology department."
+      },
+      {
+        "question": "I tested positive for HBsAg — does this mean I have hepatitis B for life?",
+        "answer": "A positive HBsAg means the hepatitis B surface antigen is present in your blood, indicating you currently have HBV. Whether this becomes permanent depends on when you were infected: adults who acquire HBV clear it spontaneously in 90-95% of cases within 6 months — only 5-10% become chronic carriers (HBsAg positive >6 months). However, babies infected at birth or young children infected in early life have a 90% chance of becoming chronic carriers. The key first steps after a positive HBsAg are: consult a hepatologist; get a full HBV panel (HBeAg, anti-HBe, HBV DNA viral load, LFTs, FibroScan); get vaccinated household and sexual contacts; complete alcohol abstinence; and get HCC surveillance (liver ultrasound + AFP every 6 months) if cirrhosis is present or risk is high. Antiviral therapy (tenofovir or entecavir) can suppress the virus and prevent disease progression — though it does not cure HBV. New 'cure' therapies are in clinical trials."
+      },
+      {
+        "question": "How do I know if someone has given me hepatitis? What should I do after a possible exposure?",
+        "answer": "After possible exposure to HBV (needlestick, unprotected sex, blood splash): (1) Go immediately to a hospital emergency department — within 24-48 hours; Post-Exposure Prophylaxis (PEP) for HBV: Hepatitis B Immunoglobulin (HBIG) + HBV vaccine must be given within 24-48 hours of exposure for maximum protection; the sooner, the better. (2) Get tested for HBsAg and anti-HBs to determine your current status. After possible HCV exposure (needlestick with HCV-positive blood, IV needle sharing): no PEP vaccine or immunoglobulin exists for HCV; get an HCV RNA test at 4-6 weeks and anti-HCV at 3-6 months after exposure; if HCV RNA positive on early testing — contact a hepatologist immediately as treating acute HCV (before it becomes chronic) with 8 weeks of DAAs achieves near-100% cure rates. For HAV: post-exposure prophylaxis with HAV vaccine or IVIG within 2 weeks of exposure provides protection."
+      },
+      {
+        "question": "Is it safe to breastfeed my baby if I have hepatitis B?",
+        "answer": "Yes — breastfeeding is SAFE for HBsAg-positive mothers, provided the baby has received the standard PMTCT protocol at birth: Hepatitis B Immunoglobulin (HBIG) injection within 12 hours of birth PLUS the first dose of HBV vaccine within 12-24 hours of birth. Multiple large studies have confirmed that breastfeeding does not increase HBV transmission risk when the infant has received HBIG and the birth-dose vaccine. The benefits of breastfeeding (nutrition, immunity, bonding) significantly outweigh any theoretical risk. Complete the 3-dose HBV vaccine series and test the infant at 9-12 months to confirm successful protection. The only exception is if nipples are severely cracked and bleeding — temporarily pause breastfeeding until healed."
+      },
+      {
+        "question": "Can I drink alcohol if I have hepatitis B or C?",
+        "answer": "No — there is no safe level of alcohol consumption for patients with chronic hepatitis B or C. Alcohol and viral hepatitis act synergistically to damage the liver — the combination is far more harmful than either alone. Alcohol dramatically accelerates liver fibrosis and cirrhosis in patients with viral hepatitis (3-5 times faster progression in heavy drinkers). Alcohol also: impairs the immune response to HBV and HCV; increases HCC risk; worsens response to treatment; and in cirrhosis — ANY alcohol can trigger life-threatening complications (variceal bleeding, encephalopathy, decompensation). Post-SVR for HCV (after being cured) — alcohol remains harmful because any degree of liver damage or fibrosis persists and the liver's regenerative capacity has been impaired. The medical advice for all patients with viral hepatitis and chronic liver disease is: COMPLETE, PERMANENT ALCOHOL ABSTINENCE."
+      },
+      {
+        "question": "My doctor wants me to have a FibroScan — what is it and why is it important?",
+        "answer": "A FibroScan (transient elastography) is a completely non-invasive, painless 5-minute scan of your liver done in the outpatient clinic. A small probe is placed on the skin over your liver and sends a mild vibration — the machine measures how stiff your liver is in kilopascals (kPa). The stiffer the liver, the more scar tissue (fibrosis) is present. This is critically important because: (1) It determines how urgently you need antiviral treatment — more fibrosis = more urgent; (2) It identifies whether you have cirrhosis — which changes your management completely (HCC surveillance, varices screening, transplant assessment); (3) It monitors whether fibrosis improves after treatment — liver stiffness can decrease after successful HCV cure (SVR) or with HBV suppression; (4) It avoids the need for a liver biopsy (which is invasive and has a small risk of bleeding) in most cases. Values >11-13 kPa suggest cirrhosis — this is an important threshold that triggers additional investigations and HCC surveillance."
+      },
+      {
+        "question": "What is the National Viral Hepatitis Control Programme (NVHCP) in India and how can I access free treatment?",
+        "answer": "The National Viral Hepatitis Control Programme (NVHCP) was launched by the Government of India in 2018 as part of a national elimination strategy — with the goal of eliminating hepatitis B and C as public health threats by 2030. Key features: (1) FREE hepatitis B and C testing at government facilities; (2) FREE generic DAA treatment for hepatitis C (sofosbuvir-based regimens) at government medical colleges and district hospitals; (3) FREE HBV antiviral therapy (tenofovir) in selected facilities; (4) FREE HAV and HBV vaccination for high-risk groups; (5) Integration with PMTCT for pregnant women. To access: contact the nearest government medical college/AIIMS/PGIMER/other apex centre; district hospitals have treatment facilities; register under the Pradhan Mantri Jan Arogya Yojana (PMJAY / Ayushman Bharat) for further access. Call the national health helpline 1800-180-1104 for guidance. Private sector: generic DAA medicines from licensed pharmacies at low cost (Rs 5,000-15,000 for full course); ensure medicines are from approved WHO-prequalified manufacturers."
+      }
+    ],
+
+    "references": [
+      "World Health Organization (WHO) — Global Health Sector Strategy on Viral Hepatitis 2016-2021; WHO Global Hepatitis Report 2017 and 2024",
+      "World Health Organization — Guidelines for the Prevention, Care and Treatment of Persons with Chronic Hepatitis B Infection (2015)",
+      "World Health Organization — Guidelines for the Care and Treatment of Persons Diagnosed with Chronic Hepatitis C Virus Infection (2018, updated 2024)",
+      "American Association for the Study of Liver Diseases (AASLD) — HCV Guidance: Recommendations for Testing, Managing and Treating Hepatitis C (2024, continuously updated)",
+      "European Association for the Study of the Liver (EASL) — Clinical Practice Guidelines: Management of Hepatitis C Virus Infection (2022)",
+      "EASL Clinical Practice Guidelines — Management of Chronic Hepatitis B Virus Infection (2017)",
+      "National Institute for Health and Care Excellence (NICE) — Hepatitis B (Chronic): Diagnosis and Management (NG33, 2013, updated 2021)",
+      "National Institute for Health and Care Excellence (NICE) — Hepatitis C: Testing, Treating, and Managing (NG200, 2022)",
+      "Terrault NA et al. — AASLD 2018 Hepatitis B Guidance (Hepatology 2018)",
+      "Zeuzem S et al. — Glecaprevir/Pibrentasvir for 8 or 12 Weeks in HCV GT1-6 Infection (NEJM 2018 — ENDURANCE Trial)",
+      "Feld JJ et al. — Sofosbuvir/Velpatasvir for HCV Genotype 1, 2, 4, 5 or 6 Infection (NEJM 2015 — ASTRAL-1)",
+      "Foster GR et al. — Sofosbuvir/Velpatasvir for Genotype 2 and 3 HCV Infection (NEJM 2015 — ASTRAL-2, ASTRAL-3)",
+      "Loomba R et al. — Role of Coffee in Reduction of Hepatic Fibrosis in Chronic Liver Diseases (Hepatology, 2009)",
+      "IMbrave150 Trial — Atezolizumab + Bevacizumab vs Sorafenib in Advanced HCC (Finn RS et al., NEJM 2020)",
+      "Bass NM et al. — Rifaximin Treatment in Hepatic Encephalopathy (NEJM 2010)",
+      "Ministry of Health and Family Welfare India — National Viral Hepatitis Control Programme (NVHCP) Operational Guidelines 2018",
+      "Indian Council of Medical Research (ICMR) — Guidelines for Diagnosis and Management of Hepatitis C (2023)",
+      "National AIDS Control Organisation (NACO) India — Prevention of Parent to Child Transmission (PPTCT) Guidelines",
+      "Liver Foundation India — Position Statement on Hepatitis B and C Management in India",
+      "UpToDate — Overview of Hepatitis A; Management of Chronic Hepatitis B; Overview of the Management of Chronic Hepatitis C; Acute Liver Failure"
+    ],
+
+    "metadata": {
+      "dataset_id": "MEDOAIR-DIS-HEPATITIS-020",
+      "chatbot_name": "MedoAir",
+      "version": "1.0.0",
+      "created_date": "2026-06-05",
+      "last_updated": "2026-06-05",
+      "language": "English",
+      "reviewed_by": "Medical Content Team",
+      "disclaimer": "This dataset is for educational and informational purposes for the MedoAir chatbot only. It does not replace professional medical advice, diagnosis, or treatment. Acute liver failure, variceal haemorrhage, spontaneous bacterial peritonitis, and hepatic encephalopathy are life-threatening emergencies requiring immediate hospital care. Antiviral treatment for hepatitis B and C requires specialist hepatology assessment and should not be self-initiated. All blood test interpretations (HBsAg, HCV RNA, viral load) require clinical context from a qualified physician. The availability and cost of medications mentioned may vary by region and over time.",
+      "tags": ["hepatitis A", "hepatitis B", "hepatitis C", "HAV", "HBV", "HCV", "viral hepatitis", "jaundice", "cirrhosis", "liver cancer", "HCC", "hepatocellular carcinoma", "direct-acting antivirals", "DAA", "sofosbuvir", "tenofovir", "entecavir", "PMTCT", "HBsAg", "HCV RNA", "SVR", "liver fibrosis", "FibroScan", "NVHCP", "India", "medoair"]
+    }
+  }
+}

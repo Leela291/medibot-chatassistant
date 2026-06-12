@@ -25,7 +25,11 @@ def build_context(chunks: list[dict], max_chars: int = 1200) -> str:
         score   = chunk.get("score", 0.0)
 
         # entry = f"[{i}] Disease: {disease} (relevance: {score:.2f})\n{text}"
-        entry = f"{disease}\n{text}"
+        entry = f"""
+        Disease: {disease}
+        Medical Information:
+        {text}
+        """
         total += len(entry)
 
         if total > max_chars and sections:

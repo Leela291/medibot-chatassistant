@@ -1,0 +1,1395 @@
+{
+  "disease": {
+    "id": "DIS-021",
+    "name": "Fatty Liver Disease",
+    "scientific_name": "Hepatic Steatosis / Metabolic dysfunction-Associated Steatotic Liver Disease (MASLD) / Non-Alcoholic Fatty Liver Disease (NAFLD) / Alcoholic Liver Disease (ALD)",
+    "icd_10_code": "K76.0 (Fatty (change of) liver, not elsewhere classified — NAFLD); K70.0 (Alcoholic fatty liver); K70.1 (Alcoholic hepatitis); K70.3 (Alcoholic cirrhosis of liver); K76.89 (Other specified diseases of liver); Z71.89 (Fatty liver NEC)",
+    "category": "Hepatology / Gastrointestinal Disease / Metabolic Disease",
+    "overview": {
+      "description": "Fatty liver disease is a broad spectrum of liver conditions characterised by abnormal accumulation of triglycerides (fat) within hepatocytes (liver cells), defined as hepatic fat content exceeding 5% of liver weight or fat present in more than 5% of hepatocytes on biopsy. It encompasses two major entities: Non-Alcoholic Fatty Liver Disease (NAFLD) — recently renamed Metabolic dysfunction-Associated Steatotic Liver Disease (MASLD) in 2023 — occurring in the absence of significant alcohol consumption and driven by metabolic syndrome; and Alcoholic Liver Disease (ALD) — caused by chronic excessive alcohol consumption. NAFLD/MASLD is the most common chronic liver disease globally, affecting approximately 25-30% of adults worldwide and representing a silent epidemic closely linked to obesity, type 2 diabetes, and metabolic syndrome. The spectrum ranges from simple steatosis (benign fat accumulation) to steatohepatitis (fat + inflammation + injury), fibrosis, cirrhosis, and in some cases hepatocellular carcinoma.",
+      "affected_organ": "Liver (primary); also affects cardiovascular system, kidneys, and metabolic function systemically",
+      "global_prevalence": "NAFLD/MASLD: ~25-30% of adults globally; ~38% in Middle East and South America; ~27% in Asia; ~24% in Western Europe. India: estimated 9-32% (rising rapidly). ALD: major public health burden globally — alcohol is the third leading cause of preventable disease globally.",
+      "age_group": "NAFLD affects all ages including children; peak prevalence in adults 40-64 years; paediatric NAFLD rising alarmingly (3-10% in children, up to 35-40% in obese children). ALD peaks in 30-60 year age group.",
+      "sex_ratio": "NAFLD: similar prevalence in men and women overall; men more likely to develop NASH and advanced fibrosis; post-menopausal women see increased risk. ALD: men more commonly affected; women develop more severe disease at lower alcohol consumption levels (female vulnerability — smaller body mass, lower alcohol dehydrogenase activity).",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_curable_note": "Early-stage NAFLD (simple steatosis) is fully reversible with lifestyle changes. Advanced fibrosis and cirrhosis have limited reversibility but progression can be halted.",
+      "is_manageable": true,
+      "chronic": true,
+      "emerging_crisis": "WHO projects MASLD will become the leading cause of liver transplantation globally by 2030, overtaking viral hepatitis"
+    },
+
+    "nomenclature_update_2023": {
+      "old_name": "NAFLD (Non-Alcoholic Fatty Liver Disease)",
+      "new_name": "MASLD (Metabolic dysfunction-Associated Steatotic Liver Disease)",
+      "consensus": "Delphi Consensus 2023 — agreed by major hepatology societies globally (EASL, AASLD, ALEH, AISF)",
+      "rationale": "MASLD better reflects the metabolic pathogenesis; removes stigmatising 'non-alcoholic' label; encompasses cardiometabolic risk factors in the definition",
+      "subtypes": {
+        "MASL": "Metabolic-Associated Steatotic Liver (simple steatosis without significant inflammation) — previously NAFL",
+        "MASH": "Metabolic-Associated Steatohepatitis (steatosis + lobular inflammation + hepatocyte ballooning) — previously NASH",
+        "MetALD": "Metabolic-Associated Steatotic Liver Disease with greater than moderate alcohol consumption — new category bridging MASLD and ALD",
+        "ALD": "Alcoholic Liver Disease — retained for predominantly alcohol-driven liver disease"
+      },
+      "masld_criteria": "Hepatic steatosis + at least ONE cardiometabolic risk factor: BMI ≥25 (≥23 in Asians), OR type 2 diabetes, OR blood pressure ≥130/85, OR triglycerides ≥150 mg/dL, OR HDL <40 (men) or <50 (women) mg/dL",
+      "clinical_note": "Both NAFLD and MASLD terms used in this dataset — MASLD is the preferred current term; older literature uses NAFLD"
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Simple Hepatic Steatosis (MASL / NAFL)",
+        "description": "The earliest and most common form — fat accumulation in hepatocytes (triglycerides) exceeding 5% without significant inflammation or hepatocyte injury. Characteristically asymptomatic. Liver function tests may be normal or mildly elevated. Most patients have simple steatosis and will NOT progress to advanced disease. However, ~20-25% may progress to steatohepatitis if metabolic risk factors persist uncontrolled.",
+        "histology": "Macrovesicular steatosis in ≥5% of hepatocytes; no significant lobular inflammation; no hepatocyte ballooning; no Mallory-Denk bodies",
+        "prognosis": "Generally benign; reversible with weight loss and metabolic control; low risk of progression with lifestyle intervention",
+        "management": "Lifestyle modification (weight loss 5-7%, Mediterranean diet, exercise); treatment of metabolic comorbidities"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Metabolic-Associated Steatohepatitis (MASH / NASH)",
+        "description": "The progressive, inflammatory form of fatty liver disease — the 'dangerous' phenotype with potential for irreversible fibrosis and cirrhosis. Characterised by the histological triad of: (1) steatosis, (2) lobular inflammation (neutrophilic and mononuclear infiltration), and (3) hepatocyte ballooning (cytoplasmic swelling and injury — the pathognomonic feature). May progress to fibrosis, cirrhosis, and hepatocellular carcinoma.",
+        "histology": "Macrovesicular steatosis + lobular inflammation + hepatocyte ballooning ± pericellular fibrosis ± Mallory-Denk bodies (ubiquitinated keratin aggregates)",
+        "nas_score": "NASH Activity Score (NAS): steatosis (0-3) + lobular inflammation (0-3) + ballooning (0-2) = max 8; NAS ≥5 = definite NASH; NAS ≤2 = not NASH",
+        "prevalence": "~20-30% of NAFLD patients have NASH; ~25-37% of NASH patients will develop advanced fibrosis over 5-15 years",
+        "risk_of_progression": "Annual progression rate from NASH to cirrhosis: ~2-3% per year; HCC can occur even in non-cirrhotic NASH (unusual for other causes)",
+        "management": "Intensive lifestyle modification; weight loss ≥7-10%; FDA-approved resmetirom (2024); pioglitazone in diabetes; Vitamin E in non-diabetics; surgical evaluation for weight loss surgery in obese patients; clinical trial enrolment"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Alcoholic Fatty Liver (AFL)",
+        "description": "Fat accumulation in the liver from chronic excessive alcohol consumption. The earliest stage of alcoholic liver disease (ALD). Occurs in up to 90% of heavy drinkers. Clinically and histologically similar to non-alcoholic fatty liver but with alcohol exposure as the causative agent. Typically reversible with alcohol abstinence (within 4-6 weeks).",
+        "alcohol_threshold": "Significant alcohol consumption: >14 units/week women; >21 units/week men (WHO); some guidelines: >10g/day women; >20g/day men",
+        "histology": "Macrovesicular steatosis; centrilobular predominance (zone 3); may have perivenular fibrosis",
+        "reversibility": "Highly reversible with complete alcohol abstinence within 4-8 weeks",
+        "management": "Alcohol abstinence is the single most important intervention; nutritional support; thiamine supplementation"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Alcoholic Hepatitis (AH)",
+        "description": "An acute inflammatory syndrome superimposed on chronic alcoholic liver disease — often precipitated by continued heavy drinking. A medical emergency in severe cases. Histologically: steatosis + intense hepatocyte ballooning and injury + neutrophilic infiltration + Mallory-Denk bodies + pericellular fibrosis. Severity assessed by Maddrey's Discriminant Function (MDF) and MELD score.",
+        "severity_classification": {
+          "maddrey_discriminant_function": "MDF = 4.6 × (PT - control PT) + serum bilirubin (µmol/L)/17; MDF ≥32 = severe alcoholic hepatitis — treat with corticosteroids",
+          "meld_score": "MELD ≥21: high 90-day mortality without treatment",
+          "lille_score": "Response to corticosteroid treatment at 7 days — Lille score >0.45 = poor steroid response; consider stopping steroids; consider transplant assessment"
+        },
+        "mortality": "Severe AH: 30-40% 90-day mortality; 30-50% 6-month mortality without treatment",
+        "management": "Prednisolone 40mg/day × 28 days (MDF ≥32); Pentoxifylline if steroids contraindicated; nutritional support; alcohol abstinence; N-acetylcysteine adjuvant; liver transplant in carefully selected non-responders"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Drug-Induced Fatty Liver Disease (DIAFLD)",
+        "description": "Hepatic steatosis caused by medications — either directly injuring hepatocytes or promoting metabolic dysfunction causing fat accumulation. Important and often overlooked cause of elevated liver enzymes. The pattern may be micro- or macrovesicular steatosis depending on the drug.",
+        "causative_drugs": [
+          "Amiodarone — microvesicular steatosis; phospholipidosis; cumulative dose-dependent toxicity",
+          "Methotrexate — fibrosis risk; requires liver monitoring (FibroScan) at cumulative doses",
+          "Tamoxifen — promotes NAFLD/NASH in breast cancer patients",
+          "Corticosteroids — promote insulin resistance and de novo lipogenesis",
+          "Valproate — mitochondrial toxicity; microvesicular steatosis",
+          "Nucleoside reverse transcriptase inhibitors (NRTIs — d4T, ddI) — mitochondrial toxicity; lactic acidosis",
+          "Glucocorticoids — weight gain and insulin resistance promoting hepatic steatosis",
+          "Tetracyclines (especially IV) — mitochondrial inhibition; microvesicular steatosis",
+          "Tamoxifen and oestrogens",
+          "Nifedipine and diltiazem (CCBs)",
+          "Antipsychotics (olanzapine, clozapine) — weight gain and insulin resistance"
+        ],
+        "management": "Identify and discontinue causative drug where possible; switch to alternative; supportive liver care"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Fibrotic NAFLD/MASLD (Advanced Fibrosis — F2-F4)",
+        "description": "The critical prognostic stage of NAFLD/MASLD — hepatic fibrosis is the strongest predictor of liver-related mortality and progression to cirrhosis. Fibrosis begins pericellularly (around hepatocytes and sinusoids in zone 3), progresses to periportal, then bridging fibrosis, and finally cirrhosis. Liver-related outcomes (varices, ascites, liver failure, HCC) are directly related to fibrosis stage.",
+        "fibrosis_staging": {
+          "F0": "No fibrosis",
+          "F1": "Perisinusoidal or portal fibrosis only",
+          "F2": "Perisinusoidal + periportal fibrosis",
+          "F3": "Bridging fibrosis (septae connecting portal tracts — significant architectural disruption)",
+          "F4": "Cirrhosis (regenerative nodules; complete architectural disruption)"
+        },
+        "liver_stiffness_kPa": "F0: <5 kPa; F1: 5-7 kPa; F2: 7-9 kPa; F3: 9-13 kPa; F4/Cirrhosis: >13-15 kPa (FibroScan values — NAFLD context)",
+        "significance": "F3-F4 fibrosis associated with dramatically increased liver-related mortality; HCC risk increases exponentially with fibrosis stage"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "NAFLD/MASLD-related Cirrhosis",
+        "description": "End-stage NASH/MASH — complete hepatic architectural disruption with regenerative nodules, portal hypertension, and progressive hepatic synthetic failure. NASH-cirrhosis is the 3rd leading cause of liver transplantation in the USA (rising to 1st projected by 2030). Once cirrhosis is established, NASH activity often 'burns out' — making histological diagnosis of NASH-origin cirrhosis challenging ('cryptogenic cirrhosis' in many cases has retrospective NASH aetiology).",
+        "complications": ["Variceal bleeding", "Ascites and spontaneous bacterial peritonitis", "Hepatic encephalopathy", "Hepatorenal syndrome", "Hepatocellular carcinoma (HCC)"],
+        "management": "Portal hypertension management; hepatocellular carcinoma surveillance (6-monthly ultrasound ± AFP); liver transplantation evaluation; metabolic comorbidity management"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Acute Fatty Liver of Pregnancy (AFLP)",
+        "description": "A rare but life-threatening obstetric emergency characterised by acute microvesicular fatty infiltration of the liver developing in the 3rd trimester (weeks 30-38) or immediately postpartum. Caused by mitochondrial fatty acid oxidation defects (particularly LCHAD deficiency in mother or fetus). Presents with: jaundice, nausea and vomiting, abdominal pain, encephalopathy, hypoglycaemia, coagulopathy, and renal failure.",
+        "incidence": "Rare — 1 in 7,000-16,000 deliveries; maternal mortality 7-18%; foetal mortality up to 25% without immediate delivery",
+        "diagnosis": "Swansea criteria (≥6 of 14 criteria including jaundice, liver dysfunction, coagulopathy, hypoglycaemia, elevated ammonia, renal impairment, ultrasound changes)",
+        "management": "IMMEDIATE DELIVERY regardless of gestational age — the definitive treatment; intensive care support; coagulopathy management; hypoglycaemia correction; rarely liver transplantation; screen baby for LCHAD deficiency"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild — Simple Steatosis (Grade 1)",
+        "description": "Fat in 5-33% of hepatocytes; no significant inflammation or ballooning; no fibrosis",
+        "NAS_score": "0-2",
+        "fibrosis_stage": "F0",
+        "liver_enzymes": "Normal or up to 2x ULN (ALT slightly elevated)",
+        "ultrasound": "Mild diffuse increase in liver echogenicity",
+        "fibroscan_kPa": "<7 kPa",
+        "fib4_score": "<1.30 (low risk of advanced fibrosis)",
+        "symptoms": "Usually none; mild fatigue possible",
+        "management": "Lifestyle modification (diet + exercise); 5% weight loss target; treat metabolic risk factors; reassess at 6-12 months",
+        "prognosis": "Excellent — reversible with lifestyle changes; low progression risk"
+      },
+      {
+        "level": 2,
+        "name": "Moderate — Steatohepatitis without Fibrosis (Grade 2-3 NASH, F0-F1)",
+        "description": "Fat in 33-66% of hepatocytes; moderate to severe lobular inflammation; hepatocyte ballooning present; minimal or no fibrosis",
+        "NAS_score": "3-5",
+        "fibrosis_stage": "F0-F1",
+        "liver_enzymes": "ALT 2-5x ULN; AST commonly elevated; AST:ALT <1 in NAFLD (typically)",
+        "ultrasound": "Moderate increase in echogenicity; hepatomegaly",
+        "fibroscan_kPa": "5-9 kPa",
+        "symptoms": "Fatigue; RUQ discomfort; possible hepatomegaly on examination",
+        "management": "Intensive lifestyle modification (7-10% weight loss); pharmacotherapy consideration (resmetirom, pioglitazone, Vitamin E); 6-monthly monitoring; metabolic optimisation; consider bariatric surgery if obese",
+        "prognosis": "Moderate risk of progression; intervention can reverse or halt progression"
+      },
+      {
+        "level": 3,
+        "name": "Severe — NASH with Significant Fibrosis (F2-F3)",
+        "description": "Active NASH with perisinusoidal and periportal fibrosis progressing to bridging fibrosis; significant risk of progression to cirrhosis",
+        "NAS_score": "≥5",
+        "fibrosis_stage": "F2-F3",
+        "liver_enzymes": "ALT and AST variably elevated (may normalise with 'burnt-out' NASH); thrombocytopenia (splenomegaly); INR beginning to rise",
+        "fibroscan_kPa": "9-13 kPa",
+        "symptoms": "Persistent fatigue; RUQ pain; splenomegaly; possible early portal hypertension signs",
+        "management": "Specialist hepatology referral; pharmacotherapy (resmetirom for F2-F3 non-cirrhotic MASH — FDA 2024); aggressive weight loss including surgical consideration; HCC surveillance initiation if cirrhosis approached; cardiovascular risk management",
+        "prognosis": "Significant liver-related morbidity risk; fibrosis progression variable; lifestyle intervention can still improve outcomes"
+      },
+      {
+        "level": 4,
+        "name": "Critical — NASH-Cirrhosis (F4) / Decompensated Liver Disease",
+        "description": "Established cirrhosis ± decompensation (ascites, encephalopathy, variceal bleeding, jaundice). Hepatocellular carcinoma risk significantly elevated. Liver transplantation may be the only curative option.",
+        "fibrosis_stage": "F4",
+        "fibroscan_kPa": ">13-15 kPa",
+        "liver_enzymes": "May be normal or low ALT/AST (burnt out NASH); low albumin; prolonged PT/INR; thrombocytopenia",
+        "MELD_score": "MELD score used for transplant listing priority (score >15: consider transplant referral; >17: survival benefit from transplant)",
+        "symptoms": "Jaundice, ascites, oedema, hepatic encephalopathy (confusion, asterixis), variceal haemorrhage, muscle wasting (sarcopenia), easy bruising",
+        "management": "Hepatology and liver transplant centre referral; 6-monthly HCC surveillance (ultrasound ± AFP); variceal screening endoscopy; ascites management (diuretics; paracentesis); lactulose + rifaximin for encephalopathy; propranolol for portal hypertension; nutritional support; abstinence from all hepatotoxins",
+        "prognosis": "Liver transplantation is definitive treatment; 5-year post-transplant survival >80% for NASH-cirrhosis"
+      }
+    ],
+
+    "causes": {
+      "pathophysiology": {
+        "nafld_masld_pathogenesis": {
+          "overview": "NAFLD/MASLD pathogenesis is complex and multifactorial — the 'multiple parallel hits' model has replaced the older 'two-hit' hypothesis. Multiple simultaneous insults drive hepatic steatosis and inflammation.",
+          "hit_1_lipid_accumulation": "Insulin resistance → increased lipolysis in adipose tissue → increased free fatty acids (FFA) delivery to liver → increased de novo lipogenesis (DNL) in liver → decreased fatty acid beta-oxidation → triglyceride accumulation in hepatocytes",
+          "hit_2_inflammation": "Lipotoxicity (toxic effects of FFA and ceramides); oxidative stress (mitochondrial dysfunction, ER stress, reactive oxygen species); gut dysbiosis (increased intestinal permeability, bacterial products including LPS activating hepatic Kupffer cells via TLR4); adipokine dysregulation (increased TNF-α, IL-6, leptin; decreased adiponectin)",
+          "hit_3_fibrogenesis": "Hepatocyte injury and death activates hepatic stellate cells (HSCs) → myofibroblast differentiation → excess collagen production → fibrosis → cirrhosis",
+          "gut_liver_axis": "Dysbiosis of gut microbiome (reduced Bacteroidetes, increased Firmicutes and Proteobacteria) increases intestinal permeability and bacterial endotoxin (LPS) translocation to portal circulation → activates Kupffer cells → pro-inflammatory cytokines (TNF-α, IL-1β) → liver injury"
+        },
+        "alcoholic_ld_pathogenesis": {
+          "primary_mechanism": "Alcohol (ethanol) is metabolised in hepatocytes to acetaldehyde (by alcohol dehydrogenase — ADH) then acetate (by aldehyde dehydrogenase — ALDH). Both pathways alter NADH:NAD+ ratio → impairs fatty acid beta-oxidation → fat accumulation. Acetaldehyde forms protein and DNA adducts causing direct hepatocyte injury.",
+          "secondary_mechanisms": ["Acetaldehyde protein adducts activate immune response (Kupffer cells, T-cells)", "Gut dysbiosis and leaky gut (alcohol disrupts intestinal tight junctions)", "Endotoxin (LPS) from gut bacteria activates TLR4 on Kupffer cells", "Mitochondrial dysfunction", "Oxidative stress (CYP2E1 induction — produces reactive oxygen species)"],
+          "genetic_factors": "ALDH2 deficiency (common in East Asians — 'Asian Flush') causes acetaldehyde accumulation; ADH1B variants affect alcohol metabolism rate"
+        },
+        "genetic_factors_nafld": [
+          {
+            "gene": "PNPLA3 (rs738409 — I148M variant)",
+            "effect": "Most important genetic determinant of NAFLD. Encodes patatin-like phospholipase domain-containing protein 3 involved in lipid metabolism. I148M variant (G→A mutation) impairs VLDL secretion and increases de novo lipogenesis. 2-3x increased NASH and cirrhosis risk. Higher frequency in Hispanics (explaining higher NAFLD prevalence).",
+            "prevalence": "G allele frequency: Hispanics 49%, Europeans 23%, Africans 17%"
+          },
+          {
+            "gene": "TM6SF2 (rs58542926 — E167K variant)",
+            "effect": "Transmembrane 6 superfamily member 2 — regulates VLDL secretion. Loss-of-function variant reduces VLDL secretion → triglyceride retention in hepatocytes → increased NASH/fibrosis risk; paradoxically lower cardiovascular risk (reduced VLDL/LDL)"
+          },
+          {
+            "gene": "MBOAT7 (rs641738)",
+            "effect": "Membrane-bound O-acyltransferase domain-containing 7 — regulates phospholipid remodelling. Risk variant associated with more severe NAFLD and cirrhosis"
+          },
+          {
+            "gene": "GCKR (rs1260326)",
+            "effect": "Glucokinase regulatory protein — regulates glucose metabolism. Variant promotes de novo lipogenesis from excess glucose; higher NAFLD and NASH risk"
+          }
+        ]
+      },
+      "risk_factors_nafld_masld": [
+        {
+          "factor": "Obesity and Overweight",
+          "evidence": "Strongest risk factor — NAFLD prevalence: 60-90% in severely obese (BMI >35); 30-50% in overweight (BMI 25-30); 3-5% in lean individuals. Central adiposity (visceral fat) more important than total obesity. Each 5-unit BMI increase raises NAFLD odds by 3.5x.",
+          "mechanism": "Excess visceral adipose tissue releases FFAs and pro-inflammatory adipokines (TNF-α, IL-6, leptin); insulin resistance"
+        },
+        {
+          "factor": "Type 2 Diabetes Mellitus (T2DM)",
+          "evidence": "NAFLD prevalence ~70% in T2DM; diabetics have 2-3x higher risk of advanced fibrosis and HCC. NAFLD and T2DM bidirectionally worsen each other.",
+          "mechanism": "Hyperinsulinaemia promotes hepatic de novo lipogenesis; insulin resistance impairs hepatic fatty acid oxidation"
+        },
+        {
+          "factor": "Metabolic Syndrome",
+          "evidence": "Each component of metabolic syndrome independently increases NAFLD risk; presence of full metabolic syndrome (central obesity + diabetes/impaired glucose + hypertriglyceridaemia + low HDL + hypertension) carries 5-6x NAFLD risk",
+          "mechanism": "Insulin resistance, dyslipidaemia, and inflammatory state drive hepatic steatosis"
+        },
+        {
+          "factor": "Dyslipidaemia (Hypertriglyceridaemia, Low HDL)",
+          "evidence": "Hypertriglyceridaemia strongly associated with NAFLD; high serum triglycerides reflect excess hepatic VLDL production",
+          "mechanism": "Elevated serum FFAs from hypertriglyceridaemia → hepatic triglyceride influx"
+        },
+        {
+          "factor": "Hypothyroidism",
+          "evidence": "Hypothyroidism is an independent risk factor for NAFLD and NASH; thyroid hormone (T3) promotes hepatic fatty acid oxidation — deficiency impairs this",
+          "action": "Always check TSH in patients with unexplained fatty liver"
+        },
+        {
+          "factor": "Polycystic Ovary Syndrome (PCOS)",
+          "evidence": "NAFLD prevalence 30-70% in PCOS; driven by insulin resistance, hyperandrogenism, and metabolic syndrome features",
+          "note": "NAFLD in young women with PCOS is increasingly recognised — screen with liver ultrasound"
+        },
+        {
+          "factor": "Obstructive Sleep Apnoea (OSA)",
+          "evidence": "OSA independently associated with NAFLD and NASH (beyond shared obesity risk); intermittent hypoxia during apnoeas promotes oxidative stress and hepatic steatohepatitis",
+          "note": "CPAP therapy for OSA may modestly improve liver function"
+        }
+      ],
+      "risk_factors_ald": [
+        "Daily alcohol consumption (dose-dependent): >14 units/week women; >21 units/week men significantly increases risk",
+        "Drinking pattern: binge drinking more harmful than the same total dose consumed steadily",
+        "Female sex: women develop liver disease at lower alcohol doses and faster than men (lower first-pass metabolism, lower body water content)",
+        "Genetic factors: ALDH2*2 allele (East Asian); PNPLA3 I148M; HSD17B13 variants modulate ALD risk",
+        "Nutritional status: malnutrition worsens ALD severity",
+        "Obesity co-existing with alcohol: synergistic hepatotoxicity — combined risk is multiplicative, not additive",
+        "Concomitant HCV or HBV infection: dramatically accelerates ALD progression",
+        "Iron overload (haemochromatosis) co-exiting with ALD: accelerated fibrosis"
+      ]
+    },
+
+    "symptoms": {
+      "important_note": "Fatty liver disease — particularly in its early stages (simple steatosis and even early NASH) — is characteristically ASYMPTOMATIC. The majority of patients are diagnosed incidentally through abnormal liver function tests on routine blood tests, or abnormal hepatic echogenicity on abdominal ultrasound performed for other reasons. The absence of symptoms does NOT mean the disease is not progressing.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-901",
+          "name": "Fatigue and Lethargy",
+          "description": "The most common symptom of fatty liver disease — present in 50-75% of patients with NAFLD/NASH. A non-specific symptom that significantly impairs quality of life. Mechanisms include: mitochondrial dysfunction in hepatocytes (reduces energy production); inflammatory cytokines (TNF-α, IL-6 causing 'sickness behaviour'); sleep disturbance from associated sleep apnoea; anaemia from chronic liver disease; psychological impact of chronic illness. Fatigue in NASH does not reliably correlate with liver enzyme elevation or histological severity.",
+          "severity": "Mild to Moderate",
+          "onset": "Gradual and insidious; chronic",
+          "note": "Disproportionate fatigue out of context with other findings should trigger liver function testing"
+        },
+        {
+          "id": "SYM-902",
+          "name": "Right Upper Quadrant (RUQ) Discomfort or Dull Ache",
+          "description": "A vague, dull, non-specific ache or heaviness in the right upper quadrant of the abdomen — the anatomical location of the liver. Results from stretching of the liver capsule (Glisson's capsule) as the liver enlarges (hepatomegaly) from fat accumulation. Not typically sharp or severe — sharp or severe pain should prompt investigation for other causes (cholelithiasis, biliary colic, right-sided pleurisy).",
+          "severity": "Mild to Moderate",
+          "onset": "Gradual; may worsen after large meals (post-prandial hepatic blood flow increase)"
+        },
+        {
+          "id": "SYM-903",
+          "name": "Hepatomegaly (Enlarged Liver)",
+          "description": "Enlargement of the liver due to fat accumulation — palpable below the right costal margin on abdominal examination (normally the liver is not palpable). Present in 50-75% of patients with NAFLD on careful examination. Confirmed on ultrasound or CT. May produce a dull ache. The degree of hepatomegaly does not reliably correlate with disease severity.",
+          "severity": "Clinical sign, not symptom",
+          "onset": "Gradual",
+          "clinical_finding": "Liver palpable >2cm below right costal margin; smooth liver edge (in NAFLD; irregular nodular in cirrhosis)"
+        },
+        {
+          "id": "SYM-904",
+          "name": "Symptoms of Metabolic Syndrome (Co-existing)",
+          "description": "Most patients with NAFLD/MASLD have visible and symptomatic features of their underlying metabolic condition: central obesity (abdominal weight gain, large waist circumference), excessive thirst and urination (diabetes), hypertension headaches, and fatigue from insulin resistance. The metabolic features are often more prominent than liver-specific symptoms.",
+          "severity": "Varies with metabolic comorbidity burden",
+          "note": "Presence of metabolic features (obesity, T2DM, dyslipidaemia, hypertension) in a patient with any liver abnormality should prompt NAFLD screening"
+        },
+        {
+          "id": "SYM-905",
+          "name": "Jaundice (in Advanced Disease)",
+          "description": "Yellowing of the skin, sclerae (whites of eyes), and mucous membranes from elevated serum bilirubin (>35 µmol/L causes visible jaundice). NOT a feature of simple steatosis or early NASH. Occurs with: severe alcoholic hepatitis (acute onset jaundice + tender hepatomegaly + fever after heavy drinking); decompensated NASH-cirrhosis; acute fatty liver of pregnancy. Jaundice in a patient with known fatty liver disease is an ALARM SIGN requiring urgent evaluation.",
+          "severity": "Alarm sign — requires urgent evaluation",
+          "onset": "Acute (alcoholic hepatitis, AFLP) or gradual (decompensating cirrhosis)"
+        },
+        {
+          "id": "SYM-906",
+          "name": "Signs of Portal Hypertension and Cirrhosis (Late Stage)",
+          "description": "As NASH progresses to cirrhosis, portal hypertension develops — elevated pressure in the portal venous system from fibrotic obstruction of hepatic blood flow. Clinical features: splenomegaly (enlarged spleen — palpable in left flank); ascites (fluid accumulation in abdominal cavity — distended abdomen, shifting dullness on percussion, fluid thrill); caput medusae (dilated periumbilical veins); peripheral oedema.",
+          "severity": "Severe — indicates advanced cirrhosis and portal hypertension",
+          "specific_signs": ["Ascites — fluid wave, shifting dullness on percussion", "Splenomegaly — palpable left flank mass; thrombocytopenia from hypersplenism", "Oedema — peripheral bilateral pitting oedema", "Caput medusae — dilated veins radiating from umbilicus", "Spider naevi — cutaneous arteriovenous shunts; >5 significant; upper body and face", "Palmar erythema", "Gynaecomastia and testicular atrophy (men) — from oestrogen excess in liver failure"]
+        }
+      ],
+      "secondary_symptoms": [
+        "Nausea and reduced appetite — hepatic inflammation; elevated cytokines; gastroparesis (in diabetic NAFLD)",
+        "Weight gain — associated metabolic syndrome; rarely paradoxical weight loss in advanced cirrhosis (muscle wasting/cachexia)",
+        "Headache — associated hypertension (metabolic syndrome) or sleep apnoea",
+        "Snoring and witnessed apnoeas — obstructive sleep apnoea (very common comorbidity in NAFLD — 30-50%)",
+        "Excessive sweating and skin darkening — acanthosis nigricans (dark velvety skin in neck, axillae — sign of severe insulin resistance)",
+        "Joint pain — hyperuricaemia/gout (associated with metabolic syndrome and fructose-rich diet)",
+        "Peripheral neuropathy — in T2DM with NAFLD",
+        "Erectile dysfunction — from metabolic syndrome and vascular disease",
+        "Easy bruising — early sign of reduced hepatic clotting factor synthesis in advanced disease",
+        "Confusion and cognitive impairment — hepatic encephalopathy in cirrhosis (ammonia accumulation; Grade I-IV)",
+        "Pruritus (itching) — in cholestatic variants; with bile acid accumulation",
+        "Haematemesis (vomiting blood) — variceal bleeding in portal hypertension — EMERGENCY"
+      ],
+      "symptoms_specific_to_alcoholic_hepatitis": [
+        "Acute onset jaundice after heavy alcohol binge (characteristic presentation)",
+        "Severe right upper quadrant pain and tender hepatomegaly",
+        "High fever (bacterial infection common — must rule out SBP)",
+        "Nausea and vomiting",
+        "Rapid abdominal distension (ascites)",
+        "Confusion and encephalopathy (asterixis — flapping tremor)",
+        "Signs of coagulopathy — easy bruising, petechiae",
+        "Anorexia and significant weight loss"
+      ],
+      "warning_signs": [
+        "Jaundice appearing or worsening rapidly — URGENT evaluation",
+        "Haematemesis (vomiting blood) or melaena — variceal bleeding emergency — CALL 999/112/102",
+        "Sudden-onset confusion, disorientation, or loss of consciousness — hepatic encephalopathy emergency",
+        "Abdominal pain, fever, and ascites — spontaneous bacterial peritonitis (SBP) — life-threatening emergency",
+        "Rapid ascites development with increasing abdominal girth",
+        "Progressive jaundice, dark urine, pale stools in pregnancy (3rd trimester) — AFLP — obstetric emergency",
+        "Significant unintentional weight loss in a patient with NAFLD — possible hepatocellular carcinoma"
+      ]
+    },
+
+    "diagnosis": {
+      "diagnostic_approach": {
+        "overview": "Fatty liver disease diagnosis involves three levels: (1) Detection of hepatic steatosis (ultrasound, CT, MRI, or liver biopsy); (2) Assessment of inflammation and injury (liver function tests, biopsy); (3) Assessment of fibrosis stage (non-invasive — FibroScan, FIB-4, APRI; or invasive — liver biopsy). Liver biopsy remains the gold standard but is invasive — non-invasive tools are now widely used and recommended by guidelines for initial evaluation.",
+        "step_1_detection": "Abnormal liver enzymes (ALT/AST) or incidental ultrasound finding → confirm hepatic steatosis",
+        "step_2_aetiology": "Exclude other causes: viral hepatitis (HBsAg, anti-HCV), autoimmune (ANA, SMA, IgG), genetic (ferritin, transferrin saturation for haemochromatosis; caeruloplasmin for Wilson's), alcoholic (alcohol history, AST:ALT ratio, GGT), drug-induced",
+        "step_3_fibrosis": "Non-invasive fibrosis assessment (FIB-4, NFS, FibroScan); liver biopsy if non-invasive tests indeterminate or conflicting"
+      },
+      "medical_history": [
+        "Alcohol history: detailed quantification of alcohol consumption (type, volume, frequency, duration); AUDIT questionnaire; pattern of drinking (daily vs binge); abstinence periods",
+        "Metabolic history: obesity (BMI history, weight gain timeline), diabetes (type, duration, control — HbA1c), dyslipidaemia (cholesterol, triglycerides), hypertension, metabolic syndrome features",
+        "Medication history: all current and recent medications especially hepatotoxic drugs (amiodarone, methotrexate, tamoxifen, corticosteroids, valproate, antiretrovirals); OTC supplements and herbal medicines",
+        "Family history: liver disease, metabolic syndrome, type 2 diabetes, cardiovascular disease, haemochromatosis, Wilson's disease",
+        "Dietary history: fructose and sugar-sweetened beverage consumption, high-fat diet, ultra-processed food intake; coffee consumption (hepatoprotective)",
+        "Occupational history: chemical or solvent exposure (hepatotoxins)",
+        "Previous liver investigations: prior liver function tests, liver ultrasound results",
+        "Symptom history: fatigue severity, RUQ pain, jaundice history, abdominal swelling",
+        "Pregnancy history: AFLP in previous pregnancies; LCHAD deficiency history",
+        "Bariatric surgery history: weight loss surgery can worsen or improve NAFLD depending on type"
+      ],
+      "physical_examination": [
+        "BMI calculation and waist circumference measurement — central obesity assessment",
+        "Blood pressure measurement — hypertension (metabolic syndrome)",
+        "Abdominal examination: liver size (percuss and palpate for hepatomegaly — >2cm below right costal margin); liver texture (smooth = steatosis; nodular = cirrhosis); spleen size (splenomegaly — portal hypertension); ascites (shifting dullness, fluid thrill)",
+        "Signs of chronic liver disease: spider naevi (upper body), palmar erythema, leuconychia (white nails), Dupuytren's contracture (ALD), gynaecomastia (men), testicular atrophy (men), parotid enlargement (ALD), Dupuytren's",
+        "Signs of portal hypertension: caput medusae (periumbilical vein dilation); ascites; splenomegaly; peripheral oedema",
+        "Neurological: asterixis (flapping tremor of hands — hepatic encephalopathy — ask patient to hold arms outstretched and dorsiflex wrists; flapping indicates encephalopathy)",
+        "Skin examination: acanthosis nigricans (thick dark velvety skin at neck, axillae — insulin resistance); jaundice; scratch marks (pruritus from cholestasis)",
+        "Eyes: scleral icterus (jaundice); Kayser-Fleischer rings (Wilson's disease — seen at slit-lamp only)",
+        "Cardiovascular: signs of heart failure (oedema, raised JVP) — cardiac cause of hepatic congestion excluded"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Liver Function Tests (LFTs) — Alanine Aminotransferase (ALT), Aspartate Aminotransferase (AST)",
+          "type": "Blood — Biochemical",
+          "description": "The most common initial abnormality leading to NAFLD diagnosis. ALT is more liver-specific than AST. In NAFLD: ALT is usually mildly elevated (1-4x upper limit of normal — ULN); AST:ALT ratio typically <1 (liver-predominant ALT elevation). In ALD: AST:ALT ratio >2:1 is characteristic (alcohol preferentially affects mitochondria — elevates AST; also alcohol depletes hepatic pyridoxal phosphate required for ALT synthesis). Normal LFTs do NOT exclude NAFLD or NASH — 20-30% of NASH patients have persistently normal LFTs.",
+          "purpose": "Initial assessment of liver injury; monitor disease progression; assess treatment response",
+          "key_metric": "ALT >ULN in context of metabolic risk factors = NAFLD until excluded; AST:ALT >2:1 = suggests ALD; ALT >10x ULN or rapidly rising = acute liver injury — urgent investigation"
+        },
+        {
+          "test_name": "Gamma-Glutamyl Transferase (GGT), Alkaline Phosphatase (ALP), Bilirubin",
+          "type": "Blood — Biochemical",
+          "description": "GGT: elevated in NAFLD, ALD, and cholestasis; GGT rise is particularly sensitive for alcohol consumption (rises within days of alcohol use — useful clinical marker of recent drinking); GGT is a cardiovascular risk marker in NAFLD. ALP: elevated in cholestatic conditions; mild elevation in NAFLD. Bilirubin: usually normal in simple steatosis/early NASH; elevated in alcoholic hepatitis and decompensated cirrhosis.",
+          "purpose": "Assess cholestasis; GGT as alcohol sensitivity marker; disease severity assessment",
+          "key_metric": "GGT >3x ULN with raised AST and alcohol history: strongly suggests ALD; disproportionate ALP elevation: investigate cholestatic cause (primary biliary cholangitis — AMA antibody)"
+        },
+        {
+          "test_name": "Full Blood Count (FBC) with Differential",
+          "type": "Blood — Haematological",
+          "description": "Thrombocytopenia (low platelets) is an early sign of portal hypertension and hypersplenism from advanced fibrosis/cirrhosis. Anaemia may be present (chronic disease, iron deficiency, haemolysis in Wilson's, macrocytic from alcohol/folate deficiency). Raised WBC in alcoholic hepatitis or SBP.",
+          "purpose": "Detect thrombocytopenia (portal hypertension — advanced fibrosis marker); anaemia assessment; infection screen",
+          "key_metric": "Platelets <150,000/µL: suggests portal hypertension and F3-F4 fibrosis; Platelets <100,000: significant portal hypertension; Macrocytic anaemia: alcohol or B12/folate deficiency"
+        },
+        {
+          "test_name": "Fasting Glucose, HbA1c, Insulin Resistance (HOMA-IR)",
+          "type": "Blood — Metabolic",
+          "description": "Insulin resistance is central to NAFLD pathogenesis. HbA1c provides 3-month average glucose control. HOMA-IR (Homeostatic Model Assessment of Insulin Resistance) = fasting glucose (mmol/L) × fasting insulin (mU/L) ÷ 22.5; HOMA-IR >2.5 indicates insulin resistance.",
+          "purpose": "Assess insulin resistance (core pathophysiological mechanism); diagnose diabetes/prediabetes; guide pharmacotherapy decisions",
+          "key_metric": "HbA1c ≥48 mmol/mol (6.5%) = diabetes; 42-47 mmol/mol = prediabetes (high NASH risk); HOMA-IR >2.5 = insulin resistance"
+        },
+        {
+          "test_name": "Fasting Lipid Profile (Triglycerides, LDL, HDL, Total Cholesterol)",
+          "type": "Blood — Metabolic",
+          "description": "Dyslipidaemia is extremely common in NAFLD — particularly hypertriglyceridaemia (excess hepatic VLDL production) and low HDL. Elevated LDL/ApoB in metabolic NAFLD. Cardiovascular disease is the primary cause of death in NAFLD (more common than liver-related mortality in early NAFLD) — lipid management is critical.",
+          "purpose": "Assess cardiovascular risk (primary cause of death in NAFLD); identify dyslipidaemia (MASLD diagnostic criterion); guide statin therapy",
+          "key_metric": "Triglycerides ≥150 mg/dL (1.7 mmol/L): MASLD diagnostic criterion; HDL <40 (men) or <50 (women) mg/dL: MASLD criterion; LDL >3.0 mmol/L: treat with statin"
+        },
+        {
+          "test_name": "Viral Hepatitis Screen (HBsAg, Anti-HCV, HBeAg, HBV-DNA)",
+          "type": "Blood — Serology",
+          "description": "Viral hepatitis (HBV and HCV) must be excluded as a cause of liver disease and can coexist with NAFLD. HCV in particular causes hepatic steatosis (especially genotype 3 — direct steatogenic effect). HBV coexisting with NAFLD accelerates fibrosis. Mandatory exclusion in all patients with liver disease.",
+          "purpose": "Exclude HBV and HCV as cause or contributor to liver disease",
+          "key_metric": "HBsAg positive: active HBV infection; Anti-HCV positive: past or current HCV infection (confirm with HCV-RNA PCR)"
+        },
+        {
+          "test_name": "Thyroid Function (TSH)",
+          "type": "Blood — Endocrine",
+          "description": "Hypothyroidism is an independent risk factor for NAFLD (thyroid hormone T3 stimulates hepatic fatty acid beta-oxidation — deficiency impairs fat clearance). Thyroid screening is recommended in all NAFLD patients. Hypothyroidism treatment may modestly improve NAFLD.",
+          "purpose": "Screen for hypothyroidism as secondary cause of NAFLD",
+          "key_metric": "TSH >4 mIU/L: hypothyroidism — treat and reassess liver function"
+        },
+        {
+          "test_name": "Serum Ferritin and Transferrin Saturation",
+          "type": "Blood — Biochemical",
+          "description": "Screen for haemochromatosis (hereditary iron overload — HFE C282Y/H63D mutations) as a cause of liver disease. Ferritin is also elevated in NAFLD/NASH as an acute phase reactant (metabolic hyperferritinaemia) — does NOT always indicate iron overload. Transferrin saturation >45% warrants HFE gene testing.",
+          "purpose": "Screen for haemochromatosis (secondary cause of fatty liver); assess iron overload",
+          "key_metric": "Ferritin >300 (men) or >200 (women) µg/L + transferrin saturation >45%: investigate haemochromatosis (HFE gene testing); elevated ferritin with normal transferrin saturation: inflammatory (metabolic hyperferritinaemia)"
+        },
+        {
+          "test_name": "Autoimmune Screen (ANA, SMA, Anti-LKM1, IgG)",
+          "type": "Blood — Serology",
+          "description": "Autoimmune hepatitis (AIH) can cause fatty liver changes and elevated liver enzymes — must be excluded especially in women under 40. ANA (antinuclear antibody), SMA (smooth muscle antibody), and anti-LKM1 + elevated IgG are hallmarks of AIH.",
+          "purpose": "Exclude autoimmune hepatitis as a cause of liver disease",
+          "key_metric": "ANA or SMA >1:80 + elevated IgG: suggests autoimmune hepatitis; confirm with liver biopsy"
+        },
+        {
+          "test_name": "Serum Caeruloplasmin and 24-hour Urine Copper (Wilson's Disease)",
+          "type": "Blood / Urine",
+          "description": "Wilson's disease (autosomal recessive copper metabolism disorder) presents in young patients (<40 years) with liver disease, neuropsychiatric symptoms, and haemolytic anaemia. Should be excluded in any young patient with unexplained liver disease or fatty liver.",
+          "purpose": "Exclude Wilson's disease in patients <40 years with unexplained liver disease",
+          "key_metric": "Caeruloplasmin <0.2 g/L (low) + 24h urine copper >100 µg/day: Wilson's disease; Kayser-Fleischer rings on slit-lamp examination"
+        },
+        {
+          "test_name": "Abdominal Ultrasound",
+          "type": "Imaging",
+          "description": "First-line imaging for fatty liver disease — safe (no radiation), widely available, inexpensive. Detects hepatic steatosis as increased liver echogenicity (hyperechoic, 'bright liver') compared to renal cortex. Also assesses liver size, spleen size (splenomegaly → portal hypertension), ascites, biliary system, and portal vein.",
+          "purpose": "Detect and grade steatosis; assess liver size; detect splenomegaly and ascites; assess portal vein; exclude biliary disease",
+          "key_metric": "Increased hepatic echogenicity compared to renal cortex = steatosis; poor visualisation of diaphragm and hepatic veins = moderate-severe steatosis; nodular irregular liver edge = cirrhosis; splenomegaly = portal hypertension",
+          "sensitivity": "Sensitivity for steatosis >30%: 85-90%; for steatosis <30%: lower (~50%); cannot reliably detect fibrosis or NASH",
+          "limitation": "Cannot grade fibrosis; cannot detect NASH (inflammation); less sensitive for mild steatosis; operator-dependent"
+        },
+        {
+          "test_name": "FibroScan (Transient Elastography — TE) with CAP",
+          "type": "Imaging — Non-invasive",
+          "description": "Non-invasive point-of-care test combining transient elastography (measures liver stiffness — correlates with fibrosis stage) and Controlled Attenuation Parameter (CAP — measures hepatic steatosis grade). A brief, painless, 10-minute procedure performed in clinic. The most important non-invasive test for fibrosis staging in NAFLD. Liver stiffness measurement (LSM) in kilopascals (kPa) correlates with fibrosis stage.",
+          "purpose": "Non-invasive fibrosis staging (most important clinical application); steatosis grading via CAP; monitoring treatment response; screening for significant fibrosis",
+          "liver_stiffness_NAFLD": "F0-F1: <7.0 kPa; F2: 7-9 kPa; F3: 9-13 kPa; F4/Cirrhosis: >13-15 kPa (EASL 2016 cut-offs for NAFLD — varies by guideline and aetiology)",
+          "CAP_steatosis": "S0 (<5%): <248 dB/m; S1 (5-33%): 248-267 dB/m; S2 (34-66%): 268-279 dB/m; S3 (>66%): ≥280 dB/m",
+          "limitations": "BMI >40 or intercostal space <25mm reduces accuracy (use XL probe); unreliable in acute hepatitis (inflammation falsely raises stiffness); must fast for 2 hours before test; avoid after exercise (false elevation)",
+          "advantage": "Painless; 10-minute clinic procedure; immediate results; no radiation; reproducible"
+        },
+        {
+          "test_name": "FIB-4 Score (Fibrosis-4 Index)",
+          "type": "Calculated score",
+          "description": "A simple validated non-invasive fibrosis score calculated from age, AST, ALT, and platelet count. Recommended by NICE (UK) and EASL (Europe) as the first-line non-invasive fibrosis risk stratification tool in primary care before FibroScan. Can be calculated online or from laboratory results instantly.",
+          "formula": "FIB-4 = (Age × AST) / (Platelets × √ALT); online calculators available",
+          "interpretation": "<1.30: Low risk of advanced fibrosis (F0-F2 — reassure, lifestyle advice, 3-yearly review); 1.30-2.67: Indeterminate — FibroScan required; >2.67: High risk of advanced fibrosis (F3-F4) — urgent hepatology referral",
+          "sensitivity_specificity": "Sensitivity ~70%, Specificity ~80% for advanced fibrosis (F3-F4); validated in large NAFLD cohorts",
+          "purpose": "Primary care stratification of NAFLD patients; decide who needs FibroScan or hepatology referral; most cost-effective initial non-invasive test"
+        },
+        {
+          "test_name": "NAFLD Fibrosis Score (NFS)",
+          "type": "Calculated score",
+          "description": "Another validated non-invasive fibrosis score using: age, BMI, impaired fasting glucose/diabetes status, AST:ALT ratio, platelets, and albumin.",
+          "formula": "NFS = -1.675 + 0.037 × age + 0.094 × BMI + 1.13 × IFG/diabetes (yes=1, no=0) + 0.99 × AST/ALT ratio − 0.013 × platelets − 0.66 × albumin",
+          "interpretation": "NFS < −1.455: F0-F2 (low fibrosis risk); NFS −1.455 to 0.676: indeterminate; NFS >0.676: F3-F4 (high fibrosis risk)",
+          "purpose": "Alternative non-invasive fibrosis stratification; comparable accuracy to FIB-4"
+        },
+        {
+          "test_name": "MRI Proton Density Fat Fraction (MRI-PDFF) and MR Elastography (MRE)",
+          "type": "Imaging — Advanced",
+          "description": "The gold standard non-invasive tests for fat quantification and fibrosis assessment respectively. MRI-PDFF accurately quantifies hepatic fat content (superior to ultrasound and CT). MR Elastography measures liver stiffness via propagated shear waves — superior to FibroScan for fibrosis staging especially in obese patients. Not universally available — specialist centres.",
+          "purpose": "MRI-PDFF: accurate fat quantification (clinical trials endpoint); monitor response to therapy. MRE: superior non-invasive fibrosis staging; useful when FibroScan technically limited (morbid obesity)",
+          "MRI_PDFF_threshold": "≥5.5% = hepatic steatosis; 5.5-17.4% = mild; 17.4-22.1% = moderate; >22.1% = severe",
+          "advantage": "No radiation; excellent accuracy; MRE superior to FibroScan in obese patients",
+          "limitation": "Expensive; time-consuming; not universally available; contraindicated with some implants"
+        },
+        {
+          "test_name": "Liver Biopsy (Percutaneous or Transjugular)",
+          "type": "Histological — Gold Standard",
+          "description": "The definitive diagnostic test — remains the gold standard for grading steatosis, inflammation, and hepatocyte ballooning (NASH diagnosis) and staging fibrosis. Provides the NAS (NAFLD Activity Score) and fibrosis stage (F0-F4). Guided by ultrasound or CT. Transjugular approach when coagulopathy present.",
+          "purpose": "Definitive NASH diagnosis; accurate fibrosis staging when non-invasive tests are discordant; before antifibrotic therapy; clinical trial enrolment; unexplained liver disease",
+          "histological_features_NASH": "Steatosis (macrovesicular, acinar zone 3 predominant); lobular inflammation (neutrophilic and lymphocytic infiltration); hepatocyte ballooning (swollen pale hepatocytes — pathognomonic for NASH); pericellular fibrosis (zone 3, 'chicken wire' pattern); Mallory-Denk bodies (eosinophilic keratin aggregates in ballooned hepatocytes)",
+          "risks": "Bleeding (1 in 500-1000); pain; rare perforation; death (<1 in 10,000)",
+          "indications": "Non-invasive tests discordant; before pharmacotherapy requiring biopsy-proven NASH (resmetirom indication is biopsy-confirmed); unexplained liver disease; clinical trial requirement; assessment of other coexisting liver pathology"
+        },
+        {
+          "test_name": "Alpha-Fetoprotein (AFP) and Liver Ultrasound (HCC Surveillance)",
+          "type": "Blood + Imaging — Surveillance",
+          "description": "Six-monthly HCC surveillance ultrasound ± AFP is recommended for all patients with NASH-cirrhosis (F4). HCC can also arise in non-cirrhotic NASH (unique — most other liver cancer aetiologies require cirrhosis) — surveillance protocol for non-cirrhotic NASH with F3 fibrosis is evolving.",
+          "purpose": "Early detection of hepatocellular carcinoma (HCC) — early-stage HCC has curative treatment options; late-stage detection has poor prognosis",
+          "key_metric": "AFP >20 ng/mL + liver lesion on ultrasound: urgent CT/MRI for HCC characterisation; AFP >400 ng/mL: HCC until proven otherwise"
+        },
+        {
+          "test_name": "Upper GI Endoscopy (Oesophagogastroduodenoscopy)",
+          "type": "Endoscopic",
+          "description": "Screening for oesophageal and gastric varices — dilated veins from portal hypertension that can rupture causing potentially fatal haemorrhage. Recommended in all patients with newly diagnosed cirrhosis and all patients with signs of portal hypertension (splenomegaly, thrombocytopenia).",
+          "purpose": "Variceal screening; primary prophylaxis with beta-blocker (propranolol/carvedilol) or band ligation for medium-large varices",
+          "frequency": "At cirrhosis diagnosis: if no varices — repeat every 2-3 years; if small varices — every 1-2 years; medium-large varices — prophylactic treatment"
+        },
+        {
+          "test_name": "Liver-Specific Biomarkers (ELF Score, FibroTest, VCTE + CAP)",
+          "type": "Blood / Composite scores",
+          "description": "Enhanced Liver Fibrosis (ELF) Score: blood test combining HA (hyaluronic acid), PIIINP (procollagen III N-terminal peptide), and TIMP-1 — markers of active fibrogenesis. FibroTest (commercial): combines 6 blood markers with age/sex to estimate fibrosis. Used as second-line non-invasive tests when FIB-4 and FibroScan are indeterminate.",
+          "purpose": "Second-line non-invasive fibrosis assessment; complement FIB-4 and FibroScan in indeterminate cases",
+          "ELF_thresholds": "ELF score <7.7: no/mild fibrosis; 7.7-9.8: moderate fibrosis; >9.8: severe fibrosis/cirrhosis"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "As of 2024, resmetirom (Rezdiffra) became the FIRST FDA-approved medication specifically for non-cirrhotic MASH with moderate-to-severe fibrosis (F2-F3). The landscape of MASH pharmacotherapy is rapidly evolving. LIFESTYLE MODIFICATION REMAINS THE MOST EFFECTIVE TREATMENT — no medication matches the efficacy of ≥7-10% sustained weight loss. All medications must be prescribed by a licensed hepatologist or gastroenterologist.",
+      "treatment_priorities": [
+        "1. Lifestyle modification: diet + exercise = most effective intervention; 7-10% weight loss reduces NASH histologically",
+        "2. Management of metabolic comorbidities: treat T2DM, dyslipidaemia, hypertension, obesity",
+        "3. Pharmacotherapy for biopsy-proven MASH F2-F3: resmetirom (2024); pioglitazone; Vitamin E",
+        "4. Bariatric surgery: for obese patients with NAFLD/MASH — most effective weight loss intervention",
+        "5. Transplantation: for end-stage NASH-cirrhosis meeting criteria"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-121",
+          "category_name": "Thyroid Hormone Receptor Beta Agonist — FDA-Approved for MASH (2024)",
+          "purpose": "Resmetirom is the first and currently only FDA-approved treatment specifically targeting MASH resolution and fibrosis improvement.",
+          "medicines": [
+            {
+              "name": "Resmetirom",
+              "brand_examples": ["Rezdiffra"],
+              "form": "Tablet",
+              "dosage": "80mg once daily (weight <100 kg) or 100mg once daily (weight ≥100 kg); taken with or without food",
+              "use_case": "FDA APPROVED March 2024 for non-cirrhotic NASH/MASH with moderate to severe fibrosis (F2-F3); must have biopsy-confirmed non-cirrhotic MASH with F2-F3 fibrosis; used alongside diet and exercise",
+              "mechanism": "Selective thyroid hormone receptor beta (THR-β) agonist. THR-β is predominantly expressed in the liver — activation stimulates hepatic fatty acid oxidation, reduces de novo lipogenesis, lowers serum LDL and triglycerides, reduces liver fat. Avoids THR-α (cardiac) effects of thyroid hormone.",
+              "pivotal_trial": "MAESTRO-NASH Phase 3 trial: resmetirom achieved NASH resolution without worsening fibrosis in 25-30% vs 10% placebo; fibrosis improvement ≥1 stage in 24-26% vs 14% placebo; also significantly reduced LDL and triglycerides",
+              "side_effects": ["Nausea (most common)", "Diarrhoea", "Vomiting", "Elevated transaminases transiently", "Pruritus"],
+              "contraindications": ["Cirrhosis (F4)", "Concomitant use of strong CYP2C8 inhibitors (gemfibrozil)", "Hepatic impairment"],
+              "monitoring": "LFTs at baseline, 3 months, 6 months; repeat biopsy at 52 weeks (in trials) or FibroScan for monitoring",
+              "availability": "USA (approved 2024); regulatory submissions ongoing globally; not yet approved in EU or India as of 2025"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-122",
+          "category_name": "GLP-1 Receptor Agonists — High-Priority Emerging and Approved Agents",
+          "purpose": "GLP-1 receptor agonists are transformational for both T2DM/obesity management and MASH. Semaglutide demonstrates remarkable NASH resolution in clinical trials and is widely used off-label pending formal MASH indication approval. ESSENCE Phase 3 trial (semaglutide 2.4mg weekly) results published 2023-2024 show significant MASH resolution and fibrosis improvement.",
+          "medicines": [
+            {
+              "name": "Semaglutide",
+              "brand_examples": ["Ozempic (1mg weekly — T2DM)", "Wegovy (2.4mg weekly — obesity)", "Rybelsus (oral 14mg daily)"],
+              "form": "Subcutaneous injection (weekly), Oral tablet",
+              "dosage": "Ozempic (T2DM): 0.25mg weekly × 4 weeks → 0.5mg weekly → 1mg weekly; Wegovy (obesity): gradual titration to 2.4mg weekly over 16-20 weeks",
+              "use_case": "T2DM with NAFLD/MASH (approved for diabetes); Obesity with NAFLD (Wegovy approved for obesity); Off-label for MASH — ESSENCE trial results highly promising; cardiovascular risk reduction in T2DM with liver disease",
+              "mechanism": "GLP-1 receptor agonist — stimulates insulin secretion, suppresses glucagon, reduces appetite, slows gastric emptying, promotes weight loss. Liver-specific effects: reduces hepatic de novo lipogenesis, reduces hepatic fat, anti-inflammatory (reduces Kupffer cell activation), reduces hepatocyte apoptosis",
+              "nash_evidence": "NASH Phase 2 trial (semaglutide 0.4mg daily): NASH resolution in 59% vs 17% placebo (no significant fibrosis improvement). ESSENCE Phase 3 trial (2.4mg weekly): MASH resolution 63% vs 34% placebo; fibrosis improvement 37% vs 22% placebo — very significant; expected FDA filing for MASH indication 2024-2025",
+              "side_effects": ["Nausea and vomiting (dose-related — typically resolves at steady dose)", "Diarrhoea", "Constipation", "Injection site reactions", "Pancreatitis (rare — monitor)", "Thyroid C-cell tumours (rodent studies; contraindicated with MEN2 or medullary thyroid cancer history)"],
+              "weight_loss": "Semaglutide 2.4mg weekly: average 15-16% body weight reduction (STEP trials) — most of MASH benefit may be mediated through weight loss"
+            },
+            {
+              "name": "Tirzepatide",
+              "brand_examples": ["Mounjaro (T2DM)", "Zepbound (obesity)"],
+              "form": "Subcutaneous injection (weekly)",
+              "dosage": "2.5mg weekly escalating to 5, 10, or 15mg weekly over months",
+              "use_case": "T2DM with NAFLD; Obesity with NAFLD; MASH SYNERGY trial (Phase 3 for MASH) ongoing — highly anticipated",
+              "mechanism": "Dual GIP (glucose-dependent insulinotropic polypeptide) + GLP-1 receptor agonist; superior weight loss to semaglutide; SURMOUNT trials: 20-22% weight loss",
+              "nash_evidence": "SURPASS and SURMOUNT trials demonstrated significant hepatic fat reduction; SYNERGY-NASH Phase 3 trial (tirzepatide for MASH) — results expected 2024-2025",
+              "side_effects": "Similar to semaglutide — nausea, vomiting, diarrhoea; generally well tolerated; dose-dependent"
+            },
+            {
+              "name": "Liraglutide",
+              "brand_examples": ["Victoza (T2DM 1.8mg daily)", "Saxenda (obesity 3mg daily)"],
+              "form": "Subcutaneous injection (daily)",
+              "dosage": "T2DM: 0.6mg → 1.2 → 1.8mg once daily; Obesity: 0.6mg → 3.0mg once daily over 5 weeks",
+              "use_case": "T2DM with NAFLD (approved for T2DM); Obesity with NAFLD (Saxenda); less preferred than once-weekly semaglutide but evidence-based",
+              "nash_evidence": "LEAN trial: liraglutide 1.8mg daily — NASH resolution 39% vs 9% placebo; fibrosis improvement 26% vs 9% placebo (Phase 2)",
+              "side_effects": "Nausea, vomiting, injection site reactions; less commonly pancreatitis"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-123",
+          "category_name": "Thiazolidinediones (TZDs / PPAR-gamma Agonists)",
+          "purpose": "Reduce hepatic and peripheral insulin resistance through PPAR-gamma activation. Currently the most evidence-based pharmacological treatment for biopsy-proven NASH in diabetic patients per AASLD and EASL guidelines.",
+          "medicines": [
+            {
+              "name": "Pioglitazone",
+              "brand_examples": ["Actos", "Pioz", "Glizone", "Piocon"],
+              "form": "Tablet",
+              "dosage": "15-30mg once daily (NASH: 30-45mg; diabetes: 15-30mg); monitor LFTs",
+              "use_case": "FIRST-LINE recommended pharmacotherapy for NASH in DIABETIC adults (AASLD/EASL guidelines); biopsy-proven NASH with or without diabetes; significant evidence base from multiple RCTs",
+              "mechanism": "PPAR-gamma nuclear receptor agonist — reduces hepatic and adipose insulin resistance; redirects FFAs from liver to peripheral adipose; reduces hepatic de novo lipogenesis; anti-inflammatory (reduces TNF-α, IL-6); activates adiponectin",
+              "nash_evidence": "PIVENS trial (pioglitazone 30mg vs Vitamin E vs placebo in non-diabetic NASH): pioglitazone achieved NASH resolution in 34%; ACTiVST trial in T2DM NASH: significant NAS score reduction and fibrosis improvement",
+              "side_effects": ["Weight gain (average +3-5 kg — fluid retention and adipogenesis)", "Peripheral oedema", "Increased risk of heart failure — CONTRAINDICATED in heart failure (Class III-IV NYHA)", "Increased fracture risk (especially in women — vertebral, hip, distal arm)", "Possible increased bladder cancer risk (controversial — FDA warning; avoid if prior bladder cancer)", "Macular oedema (rare)"],
+              "contraindications": ["Heart failure (NYHA Class I-IV — significant cardiac risk)", "Hepatic impairment (ALT >2.5x ULN)", "Bladder cancer history", "Osteoporosis (relative)"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-124",
+          "category_name": "Antioxidant Therapy — Vitamin E",
+          "purpose": "Reduces hepatic oxidative stress — a key driver of NASH progression. Recommended by AASLD for non-diabetic, non-cirrhotic adults with biopsy-proven NASH.",
+          "medicines": [
+            {
+              "name": "Vitamin E (Alpha-Tocopherol)",
+              "brand_examples": ["Evion", "Aquasol E", "Evion 400", "Ephynal"],
+              "form": "Capsule, Tablet",
+              "dosage": "800 IU per day (alpha-tocopherol — natural form: RRR-alpha-tocopherol preferred)",
+              "use_case": "Biopsy-proven NASH WITHOUT diabetes and WITHOUT cirrhosis (per AASLD guidelines); antioxidant therapy for NASH",
+              "mechanism": "Potent fat-soluble antioxidant — scavenges reactive oxygen species (ROS); reduces hepatic lipid peroxidation; reduces NF-κB activation; anti-inflammatory",
+              "nash_evidence": "PIVENS trial: Vitamin E 800 IU/day achieved primary endpoint (NAS improvement ≥2 points, no worsening fibrosis) in 43% vs 19% placebo; NASH resolution in 36% vs 21%; fibrosis improvement NS (no significant improvement)",
+              "side_effects": ["Generally well tolerated at 800 IU/day", "Higher doses (>400 IU/day): possible increased all-cause mortality in meta-analyses (controversial — cardiac mortality signal in SELECT trial at 400 IU/day)", "Increased haemorrhagic stroke risk at very high doses"],
+              "contraindications": ["Diabetes mellitus (pioglitazone preferred in diabetics with NASH — Vitamin E less effective)", "Cirrhosis (insufficient evidence)", "Anticoagulant therapy (potentiates warfarin — monitor INR)"],
+              "monitoring": "No specific liver monitoring required; baseline and periodic haematology if on anticoagulants",
+              "note": "400-800 IU natural Vitamin E is widely available OTC; higher doses in NASH should be under medical supervision"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-125",
+          "category_name": "PPAR Alpha/Gamma/Delta Agonists",
+          "purpose": "Pan-PPAR and dual PPAR agonists target multiple metabolic pathways simultaneously — lipid metabolism, insulin resistance, and inflammation.",
+          "medicines": [
+            {
+              "name": "Saroglitazar (PPAR alpha/gamma dual agonist)",
+              "brand_examples": ["Lipaglyn", "Saroglitazar"],
+              "form": "Tablet",
+              "dosage": "4mg once daily before breakfast",
+              "use_case": "Approved in India for NAFLD/NASH (CDSCO approved 2020 — first NAFLD-specific drug approved in India); T2DM with dyslipidaemia; diabetic dyslipidaemia",
+              "mechanism": "Dual PPAR alpha/gamma agonist — PPAR-alpha: reduces triglycerides and hepatic lipogenesis (fibrate-like); PPAR-gamma: improves insulin sensitivity (TZD-like); combined effect addresses both steatosis and insulin resistance",
+              "nash_evidence": "NAFLD trial in India: saroglitazar 4mg reduced ALT, liver fat (MRI), and improved NAS score vs placebo; approved on basis of Indian Phase 3 data",
+              "side_effects": ["Generally well tolerated", "Weight gain (PPAR-gamma component)", "Peripheral oedema (less than pioglitazone)", "Elevated creatinine (mild)"],
+              "availability": "India, Middle East — not yet approved in USA/EU; widely prescribed in India for NAFLD"
+            },
+            {
+              "name": "Lanifibranor (Pan-PPAR agonist — PPAR alpha/gamma/delta)",
+              "brand_examples": ["Investigational — IVA337"],
+              "form": "Tablet",
+              "dosage": "800mg or 1200mg once daily (clinical trial doses)",
+              "use_case": "Phase 3 NATiV3 trial COMPLETED (2023): significant MASH resolution and fibrosis improvement; regulatory filing anticipated 2024-2025",
+              "mechanism": "Pan-PPAR agonist — simultaneously targets all three PPAR receptors: alpha (lipid metabolism), gamma (insulin resistance), delta (mitochondrial biogenesis, anti-inflammatory)",
+              "nash_evidence": "NATiV3 Phase 3: lanifibranor 1200mg — MASH resolution in 49% vs 22% placebo; fibrosis improvement ≥1 stage in 48% vs 29% placebo — impressive dual endpoint achievement",
+              "availability": "Not yet approved; anticipated EMA and FDA filing 2024-2025"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-126",
+          "category_name": "Statins — Cardiovascular Risk Reduction in NAFLD",
+          "purpose": "Statins are SAFE in NAFLD and NASH (contrary to historical concerns) and are ESSENTIAL for cardiovascular risk reduction — cardiovascular disease is the PRIMARY cause of death in NAFLD, not liver disease. Statins may have modest anti-inflammatory hepatic benefits.",
+          "note": "CRITICAL POINT: Many NAFLD patients are not prescribed statins due to fear of hepatotoxicity — this is a major clinical error. Statins are SAFE in NAFLD and NASH with mildly elevated LFTs (up to 3x ULN). The very small risk of statin-induced hepatotoxicity (<0.001%) is far outweighed by cardiovascular mortality reduction.",
+          "medicines": [
+            {
+              "name": "Atorvastatin",
+              "brand_examples": ["Lipitor", "Storvas", "Atorva", "Atorvastatin"],
+              "form": "Tablet",
+              "dosage": "10-80mg once daily (evening); dose based on LDL target",
+              "use_case": "Dyslipidaemia in NAFLD; cardiovascular risk reduction (primary cause of death in NAFLD); all NAFLD patients with elevated LDL or cardiovascular risk factors SHOULD receive statin therapy",
+              "mechanism": "HMG-CoA reductase inhibitor — reduces cholesterol synthesis; upregulates LDL receptors; additional anti-inflammatory and endothelial-stabilising 'pleiotropic' effects",
+              "safety_in_nafld": "SAFE — statin use in NASH with elevated LFTs (<3x ULN) is recommended; monitor LFTs at baseline and 3 months; discontinue if ALT >10x ULN (drug-induced hepatotoxicity)",
+              "nash_benefit": "Some observational studies show statins associated with reduced NASH progression and HCC risk; possible hepatoprotective effect beyond lipid lowering (NF-κB inhibition, antifibrotic)",
+              "side_effects": ["Myopathy and rhabdomyolysis (rare)", "Elevated CK (muscle)", "Hepatotoxicity (very rare — <0.001%; do NOT withhold due to existing elevated LFTs up to 3x ULN)", "Diabetes risk (mild increase — acceptable given cardiovascular benefit)"]
+            },
+            {
+              "name": "Rosuvastatin",
+              "brand_examples": ["Crestor", "Rozavel", "Rosulip"],
+              "form": "Tablet",
+              "dosage": "5-40mg once daily",
+              "use_case": "Dyslipidaemia; particularly useful in NAFLD with high triglycerides (modest triglyceride-lowering effect alongside strong LDL reduction)",
+              "side_effects": "Similar to atorvastatin; proteinuria reported (benign — monitor)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-127",
+          "category_name": "Antidiabetic Agents with Hepatic Benefits",
+          "purpose": "Several antidiabetic medications have beneficial effects on hepatic steatosis and NASH beyond glucose control — particularly relevant in the 70% of NAFLD patients with concurrent T2DM or prediabetes.",
+          "medicines": [
+            {
+              "name": "Metformin",
+              "brand_examples": ["Glycomet", "Glucophage", "Metformin"],
+              "form": "Tablet",
+              "dosage": "500mg twice daily increasing to 500-1000mg twice daily; max 2000-2500mg/day",
+              "use_case": "Type 2 diabetes with NAFLD; prediabetes; insulin resistance; cardiovascular risk reduction; NOT recommended as specific NASH treatment (multiple RCTs showed no improvement in liver histology) but essential for metabolic comorbidity management",
+              "mechanism": "AMPK (AMP-activated protein kinase) activation — reduces hepatic gluconeogenesis; mild reduction in de novo lipogenesis; weight neutral to modest weight loss",
+              "nash_histology": "Multiple RCTs: metformin does NOT improve NASH histology (steatosis, inflammation, fibrosis) vs placebo — NOT recommended as specific NASH pharmacotherapy by AASLD/EASL",
+              "why_prescribe": "Essential for T2DM control; reduces cardiovascular mortality; may reduce HCC risk in NAFLD patients with diabetes (observational data); first-line for T2DM with NAFLD",
+              "side_effects": ["GI: nausea, diarrhoea, abdominal cramps (most common — take with food; slow-release MR formulation reduces GI side effects)", "Lactic acidosis (very rare — avoid in eGFR <30; hold before contrast CT/IV contrast procedures)"]
+            },
+            {
+              "name": "Empagliflozin / Dapagliflozin / Canagliflozin (SGLT2 Inhibitors)",
+              "brand_examples": ["Jardiance (empagliflozin)", "Forxiga (dapagliflozin)", "Invokana (canagliflozin)"],
+              "form": "Tablet",
+              "dosage": "Empagliflozin: 10-25mg once daily; Dapagliflozin: 10mg once daily; Canagliflozin: 100-300mg once daily",
+              "use_case": "T2DM with NAFLD — dual benefit: glucose control + NAFLD improvement; cardiovascular and renal protection in T2DM with CVD/CKD; emerging evidence for NASH histological improvement",
+              "mechanism": "SGLT2 (sodium-glucose cotransporter 2) inhibition in proximal renal tubule — promotes urinary glucose excretion; caloric loss (~70g glucose/day); weight loss 2-3kg; reduces blood pressure; reduces hepatic de novo lipogenesis; anti-inflammatory; reduces liver fat",
+              "nash_evidence": "Multiple RCTs and meta-analyses: SGLT2 inhibitors reduce hepatic steatosis (MRI-PDFF reduction 3-5%), reduce ALT and AST, reduce liver stiffness; E-LIFT trial (empagliflozin vs placebo): significant reduction in liver fat and ALT; Phase 3 NASH trials ongoing",
+              "cardiovascular_benefit": "EMPA-REG OUTCOME: empagliflozin reduces cardiovascular death 38% and heart failure hospitalisation 35% in T2DM with CVD — essential in NAFLD with cardiovascular risk",
+              "renal_benefit": "Proven renoprotective — reduce CKD progression in T2DM; important as NAFLD is associated with CKD",
+              "side_effects": ["Genital mycotic infections (fungal — most common)", "UTI", "DKA (rare but serious — hold if unwell, fasting, or major surgery)", "Bone fractures (canagliflozin)", "Fournier's gangrene (very rare)"],
+              "note": "SGLT2 inhibitors are increasingly considered as preferred antidiabetic agents in T2DM with NAFLD due to dual metabolic and hepatic benefits"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-128",
+          "category_name": "Treatment for Alcoholic Liver Disease (ALD)",
+          "purpose": "Management of alcoholic liver disease — from alcoholic fatty liver to severe alcoholic hepatitis. ALCOHOL ABSTINENCE is the single most important intervention across all stages.",
+          "medicines": [
+            {
+              "name": "Prednisolone (Corticosteroids — Severe Alcoholic Hepatitis)",
+              "brand_examples": ["Omnacortil", "Prednisolone"],
+              "form": "Tablet, IV",
+              "dosage": "Prednisolone 40mg orally once daily for 28 days; then taper over 2-4 weeks; assess response with Lille score at day 7",
+              "use_case": "SEVERE ALCOHOLIC HEPATITIS (Maddrey's Discriminant Function ≥32 OR MELD ≥21); reduces short-term mortality; STOP if Lille score >0.45 at day 7 (non-responder)",
+              "mechanism": "Anti-inflammatory — reduces hepatic neutrophilic infiltration and cytokine production (TNF-α, IL-1β); reduces hepatocyte apoptosis",
+              "lille_score_interpretation": "Calculated at day 7: Lille <0.16 = complete responder (mortality <15% at 6 months); 0.16-0.45 = partial responder; >0.45 = non-responder (stop steroids — high mortality; consider liver transplant evaluation)",
+              "side_effects": ["Increased infection risk (monitor closely; avoid if active infection)", "Hyperglycaemia", "GI bleeding (add PPI)", "Thrush", "Fluid retention"],
+              "contraindications": ["Active infection (sepsis, SBP, pneumonia — treat infection first then reassess)", "GI bleeding", "Renal failure (relative)", "Uncontrolled diabetes (relative)"]
+            },
+            {
+              "name": "Pentoxifylline",
+              "brand_examples": ["Trental", "Pentoxil", "Petoxyl"],
+              "form": "Tablet",
+              "dosage": "400mg three times daily for 28 days",
+              "use_case": "Severe alcoholic hepatitis when corticosteroids are CONTRAINDICATED (infection, GI bleeding, pancreatitis, uncontrolled diabetes); anti-TNF-alpha mechanism; modest mortality benefit",
+              "mechanism": "Phosphodiesterase inhibitor + TNF-alpha inhibitor — reduces hepatic inflammation; reduces hepatorenal syndrome risk",
+              "side_effects": ["Nausea and GI upset", "Headache", "Dizziness"],
+              "note": "STOPAH trial: pentoxifylline did NOT significantly improve 28-day or 90-day mortality vs placebo; prednisolone showed modest benefit; debate continues on pentoxifylline's role"
+            },
+            {
+              "name": "N-Acetylcysteine (NAC)",
+              "brand_examples": ["Mucomyst", "Parvolex", "Fluimucil"],
+              "form": "IV Infusion, Oral",
+              "dosage": "IV: various protocols; Oral: 600mg twice to three times daily",
+              "use_case": "Adjunct to prednisolone in severe alcoholic hepatitis (improves short-term mortality when combined with prednisolone — data from Nguyen et al. trial); hepatoprotective; acetaminophen overdose (primary use)",
+              "mechanism": "Precursor to glutathione — replenishes hepatic antioxidant capacity; reduces oxidative stress and hepatocyte death",
+              "side_effects": ["IV: anaphylactoid reactions (slow infusion)", "Oral: nausea, vomiting, rash"]
+            },
+            {
+              "name": "Thiamine (Vitamin B1) + Multivitamins",
+              "brand_examples": ["Thiamine injection", "Pabrinex (UK)", "B-complex injections"],
+              "form": "IV/IM injection, Tablet",
+              "dosage": "Thiamine 100-500mg IV/IM before glucose administration; then 100mg orally three times daily; thiamine MUST be given BEFORE IV glucose in alcoholics",
+              "use_case": "MANDATORY in all patients with ALD and alcohol use disorder — prevents and treats Wernicke's encephalopathy (thiamine deficiency causes irreversible brain damage — confusion, ataxia, ophthalmoplegia)",
+              "mechanism": "Cofactor for pyruvate dehydrogenase and alpha-ketoglutarate dehydrogenase — essential for carbohydrate metabolism and neurological function",
+              "side_effects": ["IV anaphylaxis (rare)", "Generally very safe"],
+              "critical_warning": "NEVER give IV glucose/dextrose to an alcoholic patient without first giving IV thiamine — glucose consumption depletes already-low thiamine → precipitates acute Wernicke's encephalopathy"
+            },
+            {
+              "name": "Naltrexone (Alcohol Use Disorder — Relapse Prevention)",
+              "brand_examples": ["Naltrex", "Vivitrol (monthly IM)", "Revia"],
+              "form": "Tablet (50mg daily), Monthly IM injection",
+              "dosage": "Oral: 50mg once daily; Vivitrol: 380mg IM once monthly",
+              "use_case": "Alcohol use disorder — reduces craving and relapse rate; essential component of ALD management alongside hepatology care; approved and evidence-based for alcohol dependence",
+              "mechanism": "Opioid receptor antagonist — blocks opioid-mediated reward of alcohol; reduces alcohol craving and pleasurable effect",
+              "side_effects": ["Nausea (most common — take with food)", "Headache", "Liver enzyme elevation (avoid if ALT >5x ULN; ALD — use with caution; monthly IM avoids daily oral peak)"],
+              "contraindications": ["Active opioid use (precipitates opioid withdrawal)", "Opioid analgesic dependence", "Severe hepatic impairment"]
+            },
+            {
+              "name": "Acamprosate",
+              "brand_examples": ["Campral"],
+              "form": "Tablet",
+              "dosage": "333mg (2 tablets) three times daily; continue 1 year",
+              "use_case": "Alcohol use disorder — reduces post-detoxification craving; alternative to naltrexone; safe in liver disease (renal excretion, not hepatically metabolised)",
+              "mechanism": "NMDA and GABA receptor modulation — reduces neurological hyperexcitability of alcohol withdrawal and craving",
+              "side_effects": ["Diarrhoea (most common)", "Nausea", "Skin rash"],
+              "advantage": "Safe in liver disease (not hepatically metabolised) — preferred over naltrexone in decompensated cirrhosis"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-129",
+          "category_name": "Management of Cirrhosis Complications",
+          "purpose": "Treatment of portal hypertension complications in NASH-related cirrhosis and advanced alcoholic cirrhosis.",
+          "medicines": [
+            {
+              "name": "Propranolol / Carvedilol (Non-selective Beta-blockers — Varices)",
+              "brand_examples": ["Inderal (propranolol)", "Corbis (carvedilol)", "Carvil"],
+              "form": "Tablet",
+              "dosage": "Propranolol: 20-40mg twice daily; titrate to resting HR 55-60 bpm; max 160mg/day. Carvedilol: 6.25-12.5mg once daily (more potent portal pressure reduction)",
+              "use_case": "Primary prophylaxis against first variceal haemorrhage in patients with medium-large oesophageal varices; reduces portal pressure; reduces risk of first bleed by 50%",
+              "mechanism": "Non-selective beta-blockade reduces cardiac output (beta-1) and causes splanchnic vasoconstriction (beta-2) — reduces portal pressure and variceal wall tension",
+              "side_effects": ["Bradycardia", "Hypotension (especially with carvedilol — higher alpha blockade)", "Fatigue", "Bronchospasm (avoid in asthma)"],
+              "monitoring": "Target resting heart rate 55-60 bpm; BP monitoring"
+            },
+            {
+              "name": "Spironolactone + Furosemide (Ascites Management)",
+              "brand_examples": ["Aldactone (spironolactone)", "Lasix (furosemide)"],
+              "form": "Tablet",
+              "dosage": "Spironolactone 100-400mg + Furosemide 40-160mg (standard ratio 100:40 — reduces hypokalaemia risk); start: spironolactone 100mg + furosemide 40mg; titrate every 4-7 days based on response",
+              "use_case": "Ascites management in cirrhosis — first-line diuretic combination; spironolactone blocks aldosterone (which promotes Na retention in cirrhosis via RAAS activation); furosemide provides additional natriuresis",
+              "side_effects": ["Hypokalaemia (furosemide), Hyperkalaemia (spironolactone) — monitor electrolytes closely", "Gynaecomastia (spironolactone — can switch to eplerenone)", "Renal impairment (monitor creatinine/urea)"],
+              "monitoring": "Weight daily (target 0.5-1kg/day weight loss); electrolytes every 4-7 days; creatinine and urea"
+            },
+            {
+              "name": "Rifaximin + Lactulose (Hepatic Encephalopathy)",
+              "brand_examples": ["Xifaxan (rifaximin)", "Rifagut; Lactulose syrup"],
+              "form": "Tablet (rifaximin), Oral syrup (lactulose)",
+              "dosage": "Rifaximin: 550mg twice daily; Lactulose: 15-30mL 2-3 times daily (target 2-3 soft stools per day)",
+              "use_case": "Prevention and treatment of hepatic encephalopathy — ammonia-reducing strategies; lactulose promotes ammonia excretion via acidification of colonic contents; rifaximin reduces ammonia-producing gut bacteria",
+              "mechanism": "Lactulose: non-absorbable disaccharide — acidifies colon (pH<5.5) trapping ammonia as ammonium (NH4+) and promotes its excretion; cathartic. Rifaximin: non-absorbable oral antibiotic — reduces gut ammonia-producing bacteria",
+              "side_effects": ["Lactulose: bloating, flatulence, diarrhoea (excess dose), hyponatraemia (excess)", "Rifaximin: generally very well tolerated; rare GI upset; minimal systemic absorption"]
+            },
+            {
+              "name": "Terlipressin (Hepatorenal Syndrome)",
+              "brand_examples": ["Glypressin", "Terlipressin"],
+              "form": "IV Infusion / IV Injection",
+              "dosage": "1-2mg IV every 4-6 hours; continue until creatinine improves or maximum 14 days",
+              "use_case": "Hepatorenal syndrome (HRS) type 1 (acute) and type 2 — splanchnic vasoconstrictor; reduces renal vasoconstriction by increasing systemic mean arterial pressure; FDA approved 2022 for HRS-AKI",
+              "side_effects": ["Cardiovascular ischaemia (contraindicated with ischaemic heart disease)", "Hyponatraemia", "Peripheral ischaemia", "Abdominal cramps", "Pulmonary oedema"]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-130",
+          "category_name": "Hepatoprotective and Supportive Agents",
+          "purpose": "Agents with hepatoprotective, anti-inflammatory, or antifibrotic properties used as adjuncts in NAFLD management. Evidence is generally weaker than for lifestyle modification or the pharmacotherapies above.",
+          "medicines": [
+            {
+              "name": "Ursodeoxycholic Acid (UDCA / UDCA)",
+              "brand_examples": ["Ursofalk", "Udiliv", "Ursocol"],
+              "form": "Tablet, Capsule",
+              "dosage": "10-15 mg/kg/day in divided doses (for PBC/PSC); 500-1000mg/day for NAFLD adjunct",
+              "use_case": "Primary Biliary Cholangitis (PBC — first-line treatment); Primary Sclerosing Cholangitis (PSC); NAFLD — limited evidence; gallstone dissolution; some centres use as adjunct in NAFLD for cholestatic symptoms",
+              "mechanism": "Hydrophilic bile acid — replaces hydrophobic toxic bile acids; cytoprotective; immunomodulatory; anti-apoptotic",
+              "nash_evidence": "Multiple RCTs: UDCA at standard doses does NOT improve NASH histology (vs placebo); higher doses (28-35 mg/kg/day) showed some benefit in small trials — not standard therapy",
+              "side_effects": ["Generally very well tolerated", "Mild GI side effects", "Diarrhoea at high doses"]
+            },
+            {
+              "name": "Silymarin (Milk Thistle — Silybum marianum)",
+              "brand_examples": ["Legalon", "Silybon", "Silymarin", "Hepasave"],
+              "form": "Tablet, Capsule",
+              "dosage": "140-420mg three times daily (silymarin content — look for standardised extract containing 70-80% silymarin)",
+              "use_case": "Hepatoprotective adjunct in NAFLD and ALD; widely used in India and globally; some evidence for antifibrotic and anti-inflammatory effects; NOT a replacement for lifestyle modification or pharmacotherapy",
+              "mechanism": "Mixture of flavonolignans (silybin, silychristin, silydianin) — antioxidant; anti-inflammatory (reduces NF-κB, TNF-α); antifibrotic (reduces HSC activation); promotes hepatocyte protein synthesis",
+              "evidence": "Multiple small RCTs showing ALT and AST improvement; meta-analyses suggest modest benefit on liver enzymes in NAFLD; one RCT (FLORA trial) showed fibrosis improvement; not included in major guidelines but widely used clinically",
+              "side_effects": ["Very well tolerated", "Mild GI side effects", "Headache"],
+              "note": "Not recommended as monotherapy for NASH/MASH by major guidelines; can be used as adjunct alongside lifestyle modification"
+            },
+            {
+              "name": "Omega-3 Fatty Acids (Fish Oil — EPA/DHA)",
+              "brand_examples": ["Omacor (prescription EPA/DHA 4g)", "MaxEPA", "Various OTC omega-3 supplements"],
+              "form": "Capsule, Liquid",
+              "dosage": "1-4g EPA+DHA daily with meals",
+              "use_case": "Hypertriglyceridaemia in NAFLD (omega-3 approved for severe hypertriglyceridaemia); hepatic steatosis reduction (adjunct); anti-inflammatory; cardiovascular risk reduction",
+              "mechanism": "EPA and DHA — reduces hepatic de novo lipogenesis; activates PPAR-alpha (promotes fatty acid oxidation); reduces VLDL production; anti-inflammatory (resolvin and protectin synthesis); reduces triglycerides 30-50% at 4g/day",
+              "nash_evidence": "Multiple RCTs: omega-3 reduces liver fat (MRI-PDFF), reduces triglycerides, reduces ALT; conflicting data on histological NASH improvement; AASLD: not recommended as primary NASH pharmacotherapy but acceptable for coexisting hypertriglyceridaemia",
+              "side_effects": ["Fishy aftertaste and burping (take with food; refrigerate; use enteric-coated)", "Mild GI upset", "Slight antiplatelet effect — caution with warfarin at high doses"]
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Diet is the most powerful intervention for fatty liver disease. The Mediterranean diet is the most evidence-based dietary pattern for NAFLD/MASLD — associated with lower NAFLD prevalence, reduced hepatic steatosis, and improved metabolic parameters in multiple studies. The core principles are: reduce refined carbohydrates and added sugars (particularly fructose), eliminate or drastically reduce alcohol, reduce saturated fats, increase fibre and antioxidants, achieve caloric deficit for weight loss, and avoid ultra-processed foods. Coffee consumption is uniquely hepatoprotective — one of the most consistent findings in hepatology.",
+      "caloric_targets": {
+        "weight_loss": "500-1000 kcal daily deficit for 0.5-1 kg/week weight loss; 7-10% body weight reduction target for NASH resolution (takes 12-24 months with sustained effort)",
+        "maintenance": "Euocaloric Mediterranean diet once target weight achieved",
+        "very_low_calorie": "Very Low Calorie Diets (VLCD — 800 kcal/day) or low-calorie diets (LCD — 1200-1500 kcal/day) under medical supervision can achieve rapid significant weight loss — effective for NASH resolution but difficult to sustain"
+      },
+      "recommended_foods": [
+        {
+          "category": "Coffee — Uniquely Hepatoprotective",
+          "evidence": "VERY STRONG — one of the most robust findings in hepatology. Regular coffee consumption (≥2-3 cups/day) is independently and consistently associated with: 40-50% lower risk of liver fibrosis progression; 40% lower risk of hepatocellular carcinoma; lower ALT and AST; reduced liver stiffness on FibroScan; protection against progression from NAFLD to NASH. Effect appears to be from caffeine AND non-caffeine components (chlorogenic acids, diterpenes, antioxidants) — protective even with decaffeinated coffee.",
+          "items": [
+            {
+              "food": "Coffee (filtered, espresso, or instant — all types with evidence)",
+              "benefit": "Hepatoprotective through multiple mechanisms: reduces liver fibrosis (inhibits HSC activation); antioxidant (reduces ROS); reduces hepatic de novo lipogenesis; anti-inflammatory (reduces TNF-α and IL-6); reduces HCC risk (apoptosis of hepatocytes with malignant potential)",
+              "frequency": "2-3 cups daily (caffeinated or decaffeinated) — recommend as part of NAFLD management",
+              "note": "Drink without sugar and avoid with high-fat creamers or full-fat milk (negate metabolic benefits)"
+            }
+          ]
+        },
+        {
+          "category": "Mediterranean Diet Staples",
+          "evidence": "Strong — MEDINA trial and multiple observational studies show Mediterranean diet reduces hepatic steatosis, reduces NASH activity, and improves metabolic markers in NAFLD",
+          "items": [
+            {
+              "food": "Extra Virgin Olive Oil (EVOO)",
+              "benefit": "Rich in oleocanthal (anti-inflammatory — COX inhibitor similar to ibuprofen) and oleic acid (monounsaturated fat); reduces hepatic inflammation; reduces de novo lipogenesis; improves insulin sensitivity; reduces LDL oxidation. EVOO is the primary fat in Mediterranean diet — replace butter and saturated fats.",
+              "frequency": "2-3 tablespoons daily for cooking or salad dressing (moderate — high calorie density)",
+              "note": "Cold-pressed, unfiltered EVOO has highest polyphenol content; avoid heating at high temperatures (degrades polyphenols)"
+            },
+            {
+              "food": "Oily fish: Salmon, Mackerel, Sardines, Tuna, Trout",
+              "benefit": "High EPA and DHA omega-3 fatty acids — reduce hepatic triglyceride synthesis; reduce VLDL production; anti-inflammatory (reduce TNF-α, IL-6); improve insulin sensitivity; reduce cardiovascular risk (leading cause of death in NAFLD)",
+              "frequency": "2-3 servings per week (non-fried)"
+            },
+            {
+              "food": "Vegetables (all varieties — especially cruciferous and dark leafy)",
+              "benefit": "Low-calorie; high-fibre; rich in antioxidants and polyphenols; anti-inflammatory; support gut microbiome diversity; reduce hepatic inflammation. Cruciferous vegetables (broccoli, cauliflower, Brussels sprouts) contain sulforaphane — specific antifibrotic properties in animal models. Dark leafy greens provide Vitamin K, folate, magnesium.",
+              "frequency": "Minimum 5-7 servings daily; aim to fill half the plate with vegetables",
+              "specific": ["Broccoli (sulforaphane — antifibrotic)", "Artichoke (cynarin — hepatoprotective; stimulates bile flow)", "Beetroot (betaine — reduces hepatic steatosis; methyl donor)", "Spinach, kale, Swiss chard (antioxidants, Vitamin K)"]
+            },
+            {
+              "food": "Legumes: Lentils, Chickpeas, Kidney beans, Black beans, Dal",
+              "benefit": "High plant protein; low glycaemic index (reduces insulin spikes); high soluble fibre (promotes beneficial gut bacteria; reduces LPS translocation — key NASH driver); low in saturated fat; reduces postprandial triglyceridaemia",
+              "frequency": "Daily — dal, chana, rajma — excellent for Indian dietary context"
+            },
+            {
+              "food": "Whole grains: Brown rice, Whole wheat, Oats, Barley, Quinoa",
+              "benefit": "Complex carbohydrates with low glycaemic index — reduce insulin spikes and de novo lipogenesis; high fibre (especially beta-glucan in oats — reduces cholesterol and improves insulin sensitivity); B vitamins for hepatic metabolism",
+              "frequency": "3-6 servings daily; replace all refined carbohydrates with whole grain equivalents"
+            },
+            {
+              "food": "Nuts: Walnuts, Almonds, Pistachios (unsalted)",
+              "benefit": "Walnuts highest in plant omega-3 (ALA) and polyphenols — associated with lower NAFLD risk and reduced hepatic steatosis in observational studies. Almonds: Vitamin E, monounsaturated fats. All nuts: satiating, fibre, protein — support caloric control.",
+              "frequency": "Daily small handful (30g) — high calorie density; portion control essential",
+              "clinical_study": "Walnuts study (San Diego) — 1.5 oz walnuts daily × 6 months: significant liver fat reduction vs control diet"
+            },
+            {
+              "food": "Fruits (moderate portions — limit high-fructose fruits)",
+              "benefit": "Antioxidants, polyphenols, fibre; blueberries and cherries specifically associated with antifibrotic effects (anthocyanins inhibit HSC activation); pomegranate (punicalagins reduce hepatic inflammation)",
+              "frequency": "2-3 servings daily — whole fruit preferred over juice (juice = concentrated fructose without fibre)",
+              "caution": "Limit high-sugar fruits (grapes, mango, banana, ripe dates) and fruit juices; fructose directly drives hepatic de novo lipogenesis"
+            }
+          ]
+        },
+        {
+          "category": "Protein Sources Beneficial in NAFLD",
+          "items": [
+            {
+              "food": "Skinless poultry, Turkey, Lean meat",
+              "benefit": "Lean protein without saturated fat excess; supports caloric deficit; provides amino acids for hepatic protein synthesis",
+              "frequency": "3-4 servings per week (baked, grilled — not fried)"
+            },
+            {
+              "food": "Eggs (particularly egg whites)",
+              "benefit": "High-quality complete protein; sulphur amino acids (cysteine, methionine) support glutathione synthesis (hepatic antioxidant); low in saturated fat (egg white); choline in yolk important for hepatic fat export (VLDL — choline deficiency causes fatty liver paradoxically)",
+              "frequency": "3-5 whole eggs per week; unlimited egg whites; choline from eggs may actually be beneficial for NAFLD"
+            },
+            {
+              "food": "Tofu, Tempeh, Edamame (Soy protein)",
+              "benefit": "Plant protein; isoflavones may reduce hepatic steatosis; fibre; low saturated fat; alternative to red meat",
+              "frequency": "3-4 times per week as meat alternative"
+            }
+          ]
+        },
+        {
+          "category": "Specific Foods with Hepatoprotective Evidence",
+          "items": [
+            {
+              "food": "Turmeric (Curcumin)",
+              "benefit": "Curcumin: anti-inflammatory (reduces NF-κB, TNF-α, IL-6); antifibrotic (inhibits TGF-beta1, reduces HSC activation); reduces hepatic de novo lipogenesis; antioxidant; Phase 2 trials in NASH show significant ALT and AST reduction; improves insulin sensitivity",
+              "frequency": "1 tsp turmeric daily in cooking or warm milk (add piperine/black pepper to increase bioavailability 2000%)",
+              "evidence": "Multiple RCTs and meta-analyses support curcumin for NAFLD (reduces ALT, AST, liver fat, inflammatory markers)"
+            },
+            {
+              "food": "Green tea (EGCG — Epigallocatechin gallate)",
+              "benefit": "EGCG polyphenol: antioxidant; reduces hepatic fat (de novo lipogenesis suppression); anti-inflammatory; improves insulin sensitivity; reduces LDL oxidation; associated with lower NAFLD risk in cohort studies",
+              "frequency": "2-3 cups daily (without sugar); green tea extract supplements also used"
+            },
+            {
+              "food": "Garlic",
+              "benefit": "Allicin and organosulphur compounds: antioxidant; reduces hepatic inflammation; inhibits HSC activation (antifibrotic potential); reduces triglycerides and LDL cholesterol; anti-inflammatory",
+              "frequency": "1-2 raw cloves daily or in cooking; aged garlic extract supplements"
+            },
+            {
+              "food": "Grapefruit (and grapefruit juice — caution with medications)",
+              "benefit": "Naringenin (flavonoid) — reduces hepatic de novo lipogenesis; reduces VLDL synthesis; improves insulin sensitivity; reduces fasting glucose. Animal models: significant liver fat reduction.",
+              "caution": "Grapefruit STRONGLY inhibits CYP3A4 — interacts with many medications (statins, immunosuppressants, some antidiabetic drugs — check interactions); avoid if on multiple medications",
+              "frequency": "Moderate consumption if medication-free or interactions checked"
+            },
+            {
+              "food": "Beetroot (Beets)",
+              "benefit": "Betaine (trimethylglycine) — a methyl donor; reduces hepatic lipid accumulation; improves methionine metabolism; reduces oxidative stress; betaine is specifically used as a research agent in NASH studies; nitrates improve liver blood flow",
+              "frequency": "Daily cooked or as juice"
+            },
+            {
+              "food": "Artichoke (Cynara scolymus)",
+              "benefit": "Cynarin and luteolin: hepatoprotective; stimulates bile secretion; reduces cholesterol and triglycerides; improves liver function in small trials; antioxidant",
+              "frequency": "2-3 times per week; artichoke leaf extract supplement also used"
+            }
+          ]
+        },
+        {
+          "category": "Gut Microbiome-Supporting Foods (Prebiotic and Probiotic)",
+          "evidence": "Strong — gut dysbiosis is a key NAFLD pathogenesis mechanism; restoring microbiome diversity reduces LPS translocation and hepatic inflammation",
+          "items": [
+            {
+              "food": "Prebiotic fibre: Garlic, Onion, Leek, Asparagus, Jerusalem artichoke, Chicory, Oats, Barley",
+              "benefit": "Feeds beneficial gut bacteria (Lactobacillus, Bifidobacterium); increases short-chain fatty acid (SCFA — butyrate) production which seals intestinal tight junctions and reduces LPS translocation to portal circulation; reduces hepatic inflammation",
+              "frequency": "Daily in diet"
+            },
+            {
+              "food": "Probiotic foods: Plain yogurt (with live cultures), Kefir, Kimchi, Miso, Idli/Dosa",
+              "benefit": "Restores gut microbiome diversity; reduces intestinal permeability; reduces systemic LPS levels; reduces hepatic TNF-α and IL-6 activation; clinical trial evidence for VSL#3 probiotic improving NASH (reduced steatosis, ALT, fibrosis markers)",
+              "frequency": "Daily probiotic yogurt; probiotic supplement (VSL#3, Lactobacillus rhamnosus GG) alongside diet"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Added sugars — especially Fructose (MOST CRITICAL avoidance)",
+          "reason": "Fructose is THE primary dietary driver of NAFLD. Unlike glucose, fructose is exclusively metabolised by the liver — overwhelming hepatic fructose-1-phosphate pathways drives de novo lipogenesis, triglyceride synthesis, uric acid production (activates NLRP3 inflammasome), and hepatic insulin resistance. Dietary fructose from sugar-sweetened beverages (SSBs) is particularly harmful (liquid fructose absorbed very rapidly).",
+          "mechanism": "Fructokinase catalyses fructose phosphorylation in liver → depletes ATP (fructose-1-phosphate) → activates de novo lipogenesis via ChREBP and SREBP-1c → triglyceride synthesis; also activates NLRP3 inflammasome via uric acid production → hepatic inflammation",
+          "examples": ["Sugar-sweetened beverages (SSBs): cola, Pepsi, Fanta, fruit sodas — the most harmful NAFLD dietary item", "Fruit juice (including 100% fruit juice — high fructose without fibre)", "Energy drinks (Red Bull, Monster)", "Sweet lassi, packaged flavoured milk, flavoured yoghurt", "Honey and agave syrup (very high fructose)", "Sweets, confectionery, desserts", "High-fructose corn syrup (HFCS) in packaged foods — read labels"],
+          "evidence": "NHANES data: each additional SSB per day increases NAFLD odds by 56%; SSB consumption of ≥1/day associated with 2x greater hepatic steatosis"
+        },
+        {
+          "food": "Alcohol — COMPLETELY ELIMINATE",
+          "reason": "Alcohol is directly hepatotoxic at every stage of liver disease. Even 'moderate' alcohol consumption worsens NAFLD progression. In NAFLD: alcohol synergistically worsens steatosis, inflammation, and fibrosis (alcohol and metabolic steatosis share inflammatory pathways — additive damage). In ALD: any alcohol perpetuates and accelerates disease. In cirrhosis: any alcohol dramatically increases decompensation risk and mortality.",
+          "recommendation": "COMPLETE ABSTINENCE for all patients with ALD. <7 units/week for NAFLD patients (ideally abstain — the new MASLD definition allows moderate alcohol consumption, but safest recommendation is to avoid)",
+          "alcohol_synergy": "Alcohol + obesity: synergistic liver damage — each 10-unit increase in weekly alcohol in BMI>30 individuals increases cirrhosis risk far more than either alone"
+        },
+        {
+          "food": "Refined carbohydrates and ultra-processed foods",
+          "reason": "Refined carbohydrates (white rice, white bread, pasta, maida) cause rapid glucose spikes → hyperinsulinaemia → hepatic de novo lipogenesis via SREBP-1c activation. Ultra-processed foods (UPF) contain harmful additives, emulsifiers, and preservatives that disrupt gut microbiome, promote intestinal permeability, and increase hepatic inflammation.",
+          "examples": ["White bread, white rice (substitute whole grain), plain flour (maida)", "Instant noodles", "Breakfast cereals (non-whole grain, sugary)", "Ready meals and frozen processed food", "Packaged biscuits and snacks", "Commercial pastries and cakes"]
+        },
+        {
+          "food": "Saturated and trans fats",
+          "reason": "Saturated fatty acids (SFAs — palmitate especially) are lipotoxic — cause direct hepatocyte injury, ER stress, mitochondrial dysfunction, and activate TLR4 on Kupffer cells promoting inflammation. Trans fats disrupt membrane fluidity, impair insulin signalling, and cause hepatic inflammation.",
+          "examples": ["Red processed meats (salami, sausages, bacon)", "Full-fat dairy (cream, butter, full-fat cheese, ghee in excess)", "Coconut oil (very high in saturated fat — 92% — despite popular claims)", "Palm oil (high in saturated fats)", "Hydrogenated vegetable oils (trans fats — in many commercial bakery products)", "Deep-fried fast food"]
+        },
+        {
+          "food": "Red and processed meats",
+          "reason": "Haem iron in red meat promotes hepatic oxidative stress and ferroptosis; processed meats contain nitrates and advanced glycation end products (AGEs) which trigger hepatic inflammation; associated with NAFLD and HCC risk in epidemiological studies",
+          "examples": ["Processed meats: salami, sausages, hot dogs, bacon, corned beef", "Excessive red meat: beef, lamb, pork (>100g/day)"],
+          "recommendation": "Limit red meat to <2 servings per week; avoid all processed meats"
+        },
+        {
+          "food": "High-glycaemic index (GI) foods",
+          "reason": "High GI foods cause rapid glucose spikes, stimulate insulin release, activate SREBP-1c and ChREBP transcription factors, and directly promote hepatic de novo lipogenesis. In NAFLD patients with insulin resistance, high-GI foods have amplified metabolic harm.",
+          "examples": ["White bread and white rice", "Potatoes (especially mashed, boiled, chips)", "Cornflakes and refined breakfast cereals", "Fruit juices", "Watermelon and dates (very high GI)"],
+          "low_GI_alternatives": "Brown rice, whole wheat bread, oats, sweet potato, legumes, most vegetables"
+        },
+        {
+          "food": "Excessive salt and processed salty snacks",
+          "reason": "High sodium promotes hypertension (major MASLD comorbidity); excessive salt intake associated with metabolic syndrome; salt-preserved foods contain nitrites; salty ultra-processed snacks are high in refined carbohydrates and saturated fat",
+          "examples": ["Packaged salty snacks (crisps, namkeen)", "Papad and highly salted pickles", "Salty crackers", "Instant soups and ready meals"],
+          "recommendation": "<2.3g sodium (5.75g salt) per day; ideally <1.5g sodium for hypertensive NAFLD patients"
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This Mediterranean-NAFLD meal plan targets 7-10% body weight loss, reduces hepatic steatosis, and improves metabolic parameters. It is calorie-controlled (~1600-1800 kcal/day). Coffee is included for hepatoprotection. Zero alcohol, zero added sugars, zero ultra-processed foods.",
+        "early_morning": "2 glasses of water + 1 tablespoon apple cider vinegar in warm water (optional — some evidence for insulin sensitising effect) + soaked almonds (7-8) or walnuts (5-6)",
+        "breakfast": "Oatmeal with chia seeds, walnuts, and blueberries (no added sugar — use cinnamon) OR 2-egg vegetable omelette with whole wheat toast (1 slice) + 1 cup filter coffee (no sugar; skimmed milk)",
+        "mid_morning": "Green tea (2nd cup) OR herbal tea + 1 apple or pear (whole fruit — not juice) + small handful roasted pumpkin seeds",
+        "lunch": "Brown rice (small portion — 1/2 cup cooked) + moong/masoor dal + sabzi (spinach, broccoli, or mixed vegetables with minimal oil — use olive oil or mustard oil) + 1 cup plain curd + salad (cucumber, tomato, carrot, beetroot) with olive oil and lemon dressing",
+        "evening_snack": "3rd coffee or green tea (no sugar) + roasted chickpeas or edamame OR 1-2 walnuts + 1 fruit",
+        "dinner": "Grilled fish (salmon or mackerel) or tofu/paneer (small portion) + 2 chapati (whole wheat — no ghee) + sabzi (mixed vegetables) + small bowl rajma or chana + cucumber raita (low-fat curd)",
+        "post_dinner": "Warm turmeric milk (skimmed milk + 1/2 tsp turmeric + pinch black pepper) OR chamomile tea — NO eating after dinner; minimum 12-14 hours overnight fast (time-restricted eating benefits for NAFLD)",
+        "hydration": "2.5-3 litres water daily throughout; 2-3 cups coffee daily; herbal teas; avoid fruit juices, sodas, and alcohol completely"
+      },
+      "special_dietary_notes": [
+        "WEIGHT LOSS is the most important dietary outcome — even 5% weight loss reduces liver fat significantly; 7-10% achieves NASH resolution in many patients; sustained weight loss is more important than the type of diet",
+        "FRUCTOSE elimination from sugar-sweetened beverages is the single highest-impact dietary change — immediately reduces hepatic lipogenesis",
+        "COFFEE (2-3 cups/day) is the most evidence-based hepatoprotective dietary recommendation — prescribe coffee as part of NAFLD management",
+        "TIME-RESTRICTED EATING (16:8 intermittent fasting — eating within an 8-hour window) reduces hepatic steatosis independently of caloric restriction; metabolic benefits include improved insulin sensitivity and reduced de novo lipogenesis; safe and practical approach for NAFLD",
+        "KETOGENIC DIET (very low carbohydrate, high fat): rapidly reduces liver fat and improves insulin sensitivity short-term; concerns about sustainability, LDL elevation, and long-term effects; not recommended as first-line but may suit some patients short-term under supervision",
+        "CHOLINE supplementation: choline is essential for hepatic VLDL assembly and fat export from liver; deficiency promotes fatty liver; eggs, legumes, and cruciferous vegetables are good dietary sources; choline supplement 500-1000mg/day in patients with dietary deficiency",
+        "GUT MICROBIOME dietary support: prebiotic fibre (artichoke, leek, garlic, oats, chicory) and probiotic foods (yogurt, kefir) are increasingly important therapeutic targets in NAFLD management through the gut-liver axis"
+      ]
+    },
+
+    "lifestyle_management": {
+      "weight_loss": {
+        "evidence": "MOST EFFECTIVE INTERVENTION for NAFLD. Evidence from multiple trials: 5% weight loss reduces hepatic steatosis; 7% resolves NASH histologically in ~50%; 10% improves fibrosis; >10% achieves NASH resolution with fibrosis improvement in most patients. Bariatric surgery achieves the greatest sustained weight loss — most powerful intervention for severe NAFLD/NASH.",
+        "targets": {
+          "steatosis_reduction": "≥5% body weight loss",
+          "NASH_resolution": "7-10% body weight loss",
+          "fibrosis_improvement": "≥10% body weight loss (most consistently)",
+          "maintenance": "Sustained weight loss; weight regain reverses all histological improvements"
+        },
+        "weight_loss_approaches": [
+          "Calorie-restricted Mediterranean diet (500-1000 kcal/day deficit) — most evidence-based dietary approach",
+          "Low-carbohydrate diet — comparable weight loss to low-fat; particularly effective for insulin resistance and dyslipidaemia",
+          "Structured commercial weight loss programmes under dietitian supervision",
+          "GLP-1 receptor agonists (semaglutide, liraglutide) — pharmacotherapy for obesity with concurrent MASH benefit",
+          "Bariatric surgery — most effective for BMI >35 with NAFLD/NASH; sleeve gastrectomy and Roux-en-Y gastric bypass both improve NASH histologically"
+        ]
+      },
+      "physical_exercise": {
+        "evidence": "Strong — exercise reduces hepatic fat content independently of weight loss (through mechanisms including increased fatty acid oxidation, reduced de novo lipogenesis, and improved insulin sensitivity). Both aerobic and resistance exercise are beneficial.",
+        "recommended_type": {
+          "aerobic_exercise": {
+            "type": "Moderate-intensity: brisk walking, cycling, swimming, jogging, dancing",
+            "target": "150-200 minutes of moderate-intensity per week (30 min × 5 days minimum); or 75-100 min vigorous-intensity",
+            "intensity": "Moderate: 50-70% maximum heart rate; perceived exertion 5-6/10 (can talk but slightly breathless)",
+            "hepatic_fat": "Aerobic exercise alone reduces liver fat 4-10% (MRI-PDFF) even without significant weight loss — direct hepatic metabolic effect"
+          },
+          "resistance_training": {
+            "type": "Weight training, resistance bands, body weight exercises",
+            "frequency": "2-3 sessions per week; 8-10 exercises; 2-3 sets of 8-12 repetitions",
+            "benefit": "Increases skeletal muscle mass — the primary peripheral glucose disposal organ; improves insulin sensitivity; reduces liver fat independently",
+            "hepatic_fat": "Resistance exercise reduces liver fat 3-6% — comparable to aerobic exercise; combination of both superior to either alone"
+          },
+          "combined_approach": "Aerobic + resistance training combined — most effective for liver fat reduction, metabolic improvement, and cardiovascular risk reduction"
+        },
+        "practical_indian_context": [
+          "Brisk walking (30-45 min daily) — most accessible; start with 15 min and increase",
+          "Yoga — reduces insulin resistance; stress reduction beneficial for liver; specific hepatoprotective yoga asanas",
+          "Cycling (stationary or outdoor) — non-impact; good for obese patients with joint issues",
+          "Swimming — excellent for obese patients (reduced joint load); full body workout"
+        ]
+      },
+      "alcohol_management": {
+        "ALD_patients": "COMPLETE ABSTINENCE is mandatory — no safe level of alcohol in ALD, alcoholic hepatitis, or ALD-cirrhosis. Abstinence should be supported with: motivational interviewing; addiction specialist referral; pharmacotherapy (naltrexone, acamprosate, baclofen — for alcohol use disorder); psychosocial support; AA (Alcoholics Anonymous) or SMART Recovery programmes.",
+        "NAFLD_patients": "Strong recommendation to minimise or eliminate alcohol. While the new MASLD definition allows moderate alcohol (<14 units/week men; <7 units/week women), the safest recommendation for all NAFLD patients is to minimise alcohol — even moderate amounts worsen fibrosis progression in NAFLD.",
+        "withdrawal_management": "Alcohol withdrawal syndrome (seizures, delirium tremens) must be medically supervised — never abruptly withdraw from heavy alcohol use without medical support. Benzodiazepines (chlordiazepoxide reducing regimen — CIWA-Ar guided) standard of care for alcohol detoxification."
+      },
+      "sleep_and_metabolic_management": [
+        "OSA management: CPAP therapy for obstructive sleep apnoea (present in 30-50% of NAFLD patients) — may modestly improve liver function and reduces metabolic syndrome severity",
+        "Sleep hygiene: 7-8 hours quality sleep; sleep deprivation increases insulin resistance and promotes weight gain",
+        "Diabetes management: optimal glycaemic control (HbA1c <53 mmol/mol / 7%); prefer SGLT2 inhibitors or GLP-1 agonists in T2DM with NAFLD (dual metabolic and hepatic benefit)",
+        "Dyslipidaemia management: statin therapy for elevated LDL (safe in NAFLD; reduces cardiovascular mortality — primary cause of death); fibrates (fenofibrate) for hypertriglyceridaemia as adjunct to omega-3",
+        "Hypertension management: ACE inhibitors or ARBs may have modest antifibrotic benefit in NAFLD with hypertension (angiotensin II promotes HSC activation); CCBs as alternative",
+        "Thyroid optimisation: normalise TSH if hypothyroid — treats contributing cause of NAFLD",
+        "PCOS management: metformin reduces insulin resistance; GLP-1 agonists for weight and metabolic syndrome"
+      ],
+      "stress_and_psychological_support": [
+        "Psychological stress promotes cortisol release — cortisol increases hepatic de novo lipogenesis and promotes visceral fat accumulation",
+        "Depression and anxiety are prevalent in NAFLD — bidirectional relationship (fatigue and poor body image from NAFLD; depression worsening metabolic self-care)",
+        "CBT for weight management and metabolic behaviour change",
+        "Mindfulness and stress reduction improve metabolic outcomes",
+        "Address NASH-related stigma and body image; avoid stigmatising language ('fatty liver' can cause shame — prefer 'metabolic liver disease')",
+        "Support groups for NAFLD patients — NASH Patient Advocacy Foundation; NASH Education Program"
+      ]
+    },
+
+    "fatty_liver_monitoring_plan": {
+      "note": "Fatty liver disease monitoring tracks disease progression, treatment response, and complication development. The frequency and investigations depend on fibrosis stage. Non-invasive tests (FIB-4, FibroScan) are preferred for monitoring — repeat liver biopsy only when non-invasive tests are discordant or when clinical decision pivots on histological result.",
+      "green_zone": {
+        "status": "Low Risk — Simple Steatosis, Well-Controlled Metabolic Disease",
+        "criteria": "FIB-4 <1.3; FibroScan <7 kPa; Normal or near-normal ALT (<2x ULN); HbA1c <53 mmol/mol; BMI showing sustained downward trend; no alarm symptoms; metabolic risk factors well-controlled",
+        "action": "Lifestyle modification continued; metabolic comorbidity treatment; annual LFTs and metabolic panel (HbA1c, lipids, glucose); FIB-4 recalculation annually; FibroScan every 2-3 years; liver ultrasound every 2-3 years; annual cardiovascular risk review. Continue coffee, Mediterranean diet, and exercise."
+      },
+      "yellow_zone": {
+        "status": "Intermediate Risk — Indeterminate Fibrosis or Poorly Controlled Metabolic Disease",
+        "criteria": "FIB-4 1.3-2.67 (indeterminate); FibroScan 7-13 kPa; ALT persistently 2-5x ULN; weight gain or inadequate weight loss response; HbA1c >8% (uncontrolled diabetes); triglycerides >500 mg/dL; fatigue and RUQ discomfort",
+        "action": "Hepatology referral within 4-8 weeks. FibroScan if not yet performed. Consider liver biopsy if non-invasive tests discordant. Intensify lifestyle intervention (dietitian referral, structured exercise programme). Pharmacotherapy review — add pioglitazone (if T2DM), Vitamin E (if non-diabetic), or GLP-1 agonist (if obesity or T2DM). Manage metabolic comorbidities aggressively. 3-6 monthly LFTs."
+      },
+      "red_zone": {
+        "status": "URGENT — Advanced Fibrosis, Cirrhosis, or Decompensation",
+        "criteria": "Any of: FIB-4 >2.67 or FibroScan >13 kPa (possible cirrhosis); Platelets <150,000/µL (hypersplenism); ALT or AST rapidly rising; Jaundice appearing (bilirubin rising); Ascites or oedema developing; Haematemesis or melaena; Hepatic encephalopathy (confusion); HCC suspicious lesion on ultrasound (AFP rising); Acute severe alcoholic hepatitis (jaundice + fever + tender hepatomegaly after heavy drinking)",
+        "action": "URGENT hepatology referral (within 1-2 weeks for advanced fibrosis; SAME DAY for decompensation or GI bleeding). For variceal bleeding — CALL EMERGENCY SERVICES. For AH: hospital admission; Maddrey score; prednisolone if MDF ≥32. For suspected HCC: urgent multiphasic CT or MRI within 2 weeks. Six-monthly HCC surveillance if not already initiated. Transplant evaluation if MELD ≥15."
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "NASH-related Cirrhosis",
+        "description": "The most common serious complication of NASH — progressive fibrosis accumulating over 10-20 years to complete architectural disruption of the liver. NASH-cirrhosis is the 3rd leading indication for liver transplant in the USA and is rising. Once cirrhosis develops, patients have significantly increased morbidity and mortality from portal hypertension complications and HCC.",
+        "prevalence": "~20% of NASH patients develop cirrhosis over 20 years; rate accelerated by obesity, T2DM, and genetic variants",
+        "severity": "Severe — chronic; progressive",
+        "management": "Treat underlying metabolic disease; portal hypertension management; HCC surveillance; transplant evaluation"
+      },
+      {
+        "complication": "Hepatocellular Carcinoma (HCC)",
+        "description": "Liver cancer arising from hepatocytes — the most feared complication of NASH-cirrhosis. HCC risk increases dramatically with cirrhosis (1-4%/year in cirrhosis). Uniquely, NASH can cause HCC even in non-cirrhotic patients (in contrast to HBV/HCV-related HCC which almost always requires cirrhosis). The rising incidence of NAFLD is driving an epidemic of NASH-related HCC globally.",
+        "annual_risk": "Cirrhotic NAFLD: 1-4% per year; Non-cirrhotic NASH: much lower (~0.04-0.3%/year); highest with PNPLA3 I148M variant",
+        "severity": "Life-threatening",
+        "prevention": "Six-monthly ultrasound ± AFP in all NAFLD-cirrhosis patients; treat underlying metabolic disease; statins and aspirin (emerging evidence for chemoprevention); coffee consumption"
+      },
+      {
+        "complication": "Cardiovascular Disease (CVD) — Primary Cause of Mortality in Early NAFLD",
+        "description": "NAFLD is not just a liver disease — it is strongly associated with and promotes cardiovascular disease. In patients without advanced fibrosis, cardiovascular mortality is the PRIMARY cause of death (more common than liver-related death). NAFLD is an independent cardiovascular risk factor — associated with endothelial dysfunction, accelerated atherosclerosis, arterial stiffness, coronary artery disease, atrial fibrillation, and heart failure.",
+        "mechanisms": "Dyslipidaemia (elevated ApoB, triglycerides, small dense LDL); systemic inflammation (elevated CRP, IL-6, TNF-α); insulin resistance; elevated liver-derived prothrombotic factors",
+        "severity": "Severe — leading cause of death in NAFLD patients without advanced fibrosis",
+        "management": "Aggressive cardiovascular risk factor management: statin therapy (essential — not contraindicated in NAFLD); blood pressure control; glucose optimisation; weight loss; smoking cessation; antiplatelet therapy if indicated"
+      },
+      {
+        "complication": "Portal Hypertension — Variceal Haemorrhage, Ascites, Encephalopathy",
+        "description": "Elevated portal venous pressure from hepatic fibrosis and cirrhosis causes the spectrum of portal hypertension complications. Variceal haemorrhage: rupture of oesophageal or gastric varices — presents with sudden massive haematemesis; 15-20% mortality per episode. Ascites: fluid accumulation in peritoneal cavity from portal hypertension + hypoalbuminaemia — affects quality of life; risk of spontaneous bacterial peritonitis (SBP — life-threatening).",
+        "severity": "Potentially life-threatening",
+        "management": "Variceal haemorrhage: EMERGENCY (IV terlipressin; antibiotics; urgent endoscopy for banding); prophylaxis with propranolol; endoscopic variceal ligation. Ascites: sodium restriction; diuretics (spironolactone + furosemide); large-volume paracentesis; TIPSS for refractory ascites"
+      },
+      {
+        "complication": "Spontaneous Bacterial Peritonitis (SBP)",
+        "description": "Life-threatening infection of ascitic fluid — occurs without any bowel perforation or other obvious source. Common causative bacteria: E. coli, Klebsiella, Streptococcal species. Presents with fever, abdominal pain, and deteriorating liver function in a cirrhotic patient with ascites. Diagnosed by diagnostic paracentesis (PMN >250 cells/µL in ascitic fluid).",
+        "severity": "Life-threatening — mortality 20-30% per episode",
+        "management": "IV antibiotics (cefotaxime 2g every 8h × 5 days); IV albumin (reduces hepatorenal syndrome risk); long-term norfloxacin prophylaxis after first episode"
+      },
+      {
+        "complication": "Hepatic Encephalopathy",
+        "description": "Neuropsychiatric syndrome from hepatic failure to detoxify ammonia and other toxins from portal circulation — portosystemic shunting and hepatocyte dysfunction. Ranges from minimal (subtle cognitive impairment — grade I) to severe (stupor, coma — grade IV). Precipitating factors: GI bleeding, infection (SBP), constipation, dehydration, electrolyte disturbance, benzodiazepines.",
+        "severity": "Severe when advanced; significant mortality",
+        "management": "Treat precipitating cause; lactulose (2-4 times/day — target 2-3 soft stools); rifaximin (550mg twice daily) for recurrent encephalopathy prevention; dietary protein — adequate protein intake essential (malnutrition worsens encephalopathy paradoxically; restrict protein only in acute severe encephalopathy)"
+      },
+      {
+        "complication": "Chronic Kidney Disease (CKD)",
+        "description": "NAFLD is independently associated with CKD — 30-50% of NAFLD patients develop CKD. Shared pathophysiological pathways: insulin resistance, systemic inflammation, oxidative stress, endothelial dysfunction. NAFLD doubles CKD progression risk. ALD-cirrhosis frequently complicated by hepatorenal syndrome (HRS) — functional renal failure from severe portal hypertension.",
+        "severity": "Moderate to Severe — progressive",
+        "management": "Treat underlying metabolic disease; SGLT2 inhibitors (renoprotective); avoid nephrotoxic drugs; monitor eGFR and urine ACR annually"
+      },
+      {
+        "complication": "Extrahepatic Cancers",
+        "description": "NAFLD is associated with increased risk of colorectal cancer (1.8x), breast cancer (oestrogen-excess from liver dysfunction), and pancreatic cancer. Mechanisms likely include systemic hyperinsulinaemia, inflammation, and IGF-1 signalling. Important to maintain cancer screening programmes in NAFLD patients.",
+        "severity": "Significant",
+        "management": "Age-appropriate cancer screening; colonoscopy (colorectal cancer); breast screening; lifestyle modification reduces cancer risk"
+      },
+      {
+        "complication": "Coagulopathy and Thrombocytopenia",
+        "description": "Advanced liver disease impairs hepatic synthesis of clotting factors (all except von Willebrand factor and factor VIII are synthesised by the liver) → prolonged PT/INR. Portal hypertension causes hypersplenism → thrombocytopenia. Paradoxically, cirrhosis is not simply a 'bleeding disorder' — it is actually a state of rebalanced haemostasis (both pro- and anticoagulant factors reduced) with risk of BOTH bleeding AND thrombosis.",
+        "severity": "Moderate to Severe in advanced disease",
+        "management": "Vitamin K (for vitamin K-dependent factor deficiency); FFP (fresh frozen plasma) and platelets before invasive procedures; avoid unnecessary blood thinners"
+      }
+    ],
+
+    "special_populations": {
+      "nafld_with_type_2_diabetes": {
+        "key_points": [
+          "T2DM is the single strongest predictor of NASH and advanced fibrosis in NAFLD — 70% of T2DM patients have NAFLD; 30-40% have NASH",
+          "Preferred antidiabetic drugs in T2DM with NAFLD: GLP-1 receptor agonists (semaglutide, liraglutide) — dual metabolic and hepatic benefit; SGLT2 inhibitors (empagliflozin, dapagliflozin) — renoprotective, cardiovascular benefit, reduces liver fat; Pioglitazone — improves NASH histology but causes weight gain",
+          "AVOID in advanced NAFLD-cirrhosis: Metformin (lactic acidosis risk in decompensated cirrhosis — hold if MELD >10); Pioglitazone (fluid retention — worsens ascites); Sulphonylureas (hypoglycaemia risk — impaired hepatic gluconeogenesis in cirrhosis)",
+          "HbA1c may be falsely LOW in cirrhosis (reduced red cell survival, haemolysis) — use fructosamine or glucose monitoring instead",
+          "Annual retinal and renal screening essential in T2DM-NAFLD"
+        ]
+      },
+      "paediatric_nafld": {
+        "key_points": [
+          "Paediatric NAFLD is a global epidemic — rising with childhood obesity; affects 3-10% of all children; 35-40% of obese children",
+          "Presentation often at metabolic screening or incidentally on ultrasound; rarely symptomatic",
+          "Children with NAFLD have unique histological features: portal-predominant inflammation (vs centrilobular in adults)",
+          "Primary cause is obesity with insulin resistance — management focuses on lifestyle intervention (family-based intervention most effective in children)",
+          "Pharmacological treatment: limited approved options in children. Vitamin E may be used (evidence from TONIC trial — no significant histological benefit); GLP-1 agonists (liraglutide approved from 12 years for obesity — SCALE Teens trial); metformin for T2DM",
+          "Avoid pioglitazone (insufficient paediatric evidence); bariatric surgery considered in severely obese adolescents ≥16 years with severe NASH",
+          "Metabolic screening: fasting glucose, HbA1c, lipids, ALT in all overweight children (BMI ≥85th percentile)"
+        ]
+      },
+      "nafld_in_pregnancy": {
+        "key_points": [
+          "Pre-existing NAFLD worsens during pregnancy due to: pregnancy-related weight gain, insulin resistance of pregnancy, and increased metabolic demand",
+          "AFLP (Acute Fatty Liver of Pregnancy) is a distinct, life-threatening condition — not simple NAFLD — caused by LCHAD enzyme deficiency in fetus; occurs in 3rd trimester",
+          "AFLP presents with: jaundice, RUQ pain, nausea, encephalopathy, coagulopathy, hypoglycaemia — diagnosis by Swansea criteria",
+          "IMMEDIATE DELIVERY is definitive treatment for AFLP — regardless of gestational age",
+          "Pre-existing NAFLD increases risk of gestational diabetes, pre-eclampsia, and preterm birth",
+          "NAFLD medications: metformin safe; statins CONTRAINDICATED in pregnancy (teratogenic); pioglitazone CONTRAINDICATED; GLP-1 agonists CONTRAINDICATED; resmetirom CONTRAINDICATED — use lifestyle measures and insulin for diabetes",
+          "Vitamin E (food sources not high-dose supplements) and Mediterranean diet safe in pregnancy"
+        ]
+      },
+      "nafld_post_bariatric_surgery": {
+        "key_points": [
+          "Bariatric surgery is the most effective weight loss intervention for NAFLD — significant histological NASH resolution and fibrosis improvement",
+          "Roux-en-Y gastric bypass (RYGB): most liver benefit — metabolic advantages beyond weight loss (gut hormone changes improve insulin sensitivity)",
+          "Sleeve gastrectomy: good liver benefit; occasionally may worsen GERD (relative contraindication to sleeve if severe GERD)",
+          "Post-bariatric NAFLD monitoring: LFTs and liver ultrasound at 6 months and 1 year post-surgery; most patients show significant improvement",
+          "Rare: accelerated NASH progression post-bariatric surgery from rapid weight loss (protein-calorie malnutrition) — nutritional support essential; avoid very rapid weight loss"
+        ]
+      },
+      "alcoholic_liver_disease_special_considerations": {
+        "key_points": [
+          "Early liver transplantation (early LT) for severe alcoholic hepatitis non-responders to medical treatment: selected programmes transplanting patients with <6 months abstinence (historically required 6-month sobriety period); European data shows similar post-transplant outcomes with careful patient selection (RESILIENT study)",
+          "Female vulnerability: women develop ALD at lower alcohol doses, faster progression, and more severe disease — alcoholic cirrhosis at 40-60% lower cumulative dose than men",
+          "Nutritional support is critical in alcoholic hepatitis: enteral feeding (nasogastric tube if oral intake inadequate) — malnutrition is an independent mortality predictor in AH",
+          "Zinc deficiency is universal in ALD — zinc supplementation 220mg twice daily (zinc sulfate) improves liver function and reduces infection risk",
+          "Alcohol use disorder comorbidities: depression, anxiety, PTSD — address psychiatric comorbidities alongside hepatology care"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Hepatitis A Vaccine (Havrix, Vaqta)",
+        "frequency": "2-dose course (0 and 6-12 months); lifelong protection",
+        "reason": "CRITICAL for all patients with chronic liver disease including NAFLD, ALD, and cirrhosis. Superimposed HAV infection on pre-existing liver disease causes significantly higher morbidity and mortality (acute liver failure rate higher in underlying liver disease). HAV vaccination is MANDATORY recommended for all patients with any chronic liver disease per EASL, AASLD, and NICE guidelines.",
+        "efficacy": ">95% seroconversion after 2-dose course; lifelong protection",
+        "note": "All NAFLD patients should have HAV serology checked; if non-immune — vaccinate"
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine (Engerix-B, HBvaxPRO)",
+        "frequency": "3-dose series (0, 1, 6 months); check anti-HBs titre 4-8 weeks after 3rd dose; revaccinate if <10 IU/L",
+        "reason": "CRITICAL — co-infection of NAFLD with HBV dramatically accelerates fibrosis progression and HCC risk. All NAFLD patients should be screened for HBV immunity (anti-HBs) — if non-immune, vaccinate urgently. HBV superinfection on pre-existing cirrhosis can cause acute decompensation and liver failure.",
+        "note": "Combined Hepatitis A + B vaccine (Twinrix) provides protection with one 3-dose course — preferred for efficiency"
+      },
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Annually before flu season",
+        "reason": "Patients with chronic liver disease have significantly impaired hepatic immune function. Influenza causes systemic inflammation that can precipitate acute decompensation in cirrhosis. Influenza also worsens metabolic control (stress response raises glucose and triglycerides). Annual flu vaccination strongly recommended for all NAFLD/ALD patients.",
+        "note": "Use inactivated (killed) influenza vaccine — NOT live attenuated (FluMist) in immunocompromised cirrhotic patients"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV20 or PCV15 + PPSV23)",
+        "frequency": "PCV20 single dose or PCV15 then PPSV23 at 1 year; booster at 5 years for cirrhosis",
+        "reason": "Cirrhosis causes profound immune dysfunction — bacterial infections (including pneumococcal pneumonia) are a leading cause of hospitalisation and death in cirrhosis. Spontaneous bacterial peritonitis (SBP) is partly caused by gram-positive organisms. Pneumococcal vaccination significantly reduces serious pneumococcal disease risk in cirrhosis.",
+        "priority": "HIGH PRIORITY for all cirrhotic patients; strongly recommended for advanced NAFLD"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine (Annual Updated Booster)",
+        "frequency": "As per national guidelines; annual boosters in immunocompromised/cirrhosis",
+        "reason": "Patients with NAFLD (especially with obesity, T2DM, and cirrhosis) have significantly higher COVID-19 morbidity and mortality. COVID-19 causes direct hepatic injury (SARS-CoV-2 infects ACE2-expressing hepatocytes) and triggers cytokine storm worsening liver inflammation. Vaccination dramatically reduces severe COVID-19 risk.",
+        "note": "Cirrhotic patients generate lower antibody responses — may need additional doses; monitor antibody response"
+      },
+      {
+        "vaccine": "Varicella Zoster Vaccine (Shingrix — Zoster Vaccine Recombinant)",
+        "frequency": "2-dose course (0 and 2-6 months) for adults ≥50 years",
+        "reason": "Immunocompromised patients (including those with cirrhosis) have higher risk of herpes zoster (shingles) reactivation and more severe disease. Shingrix is a non-live recombinant vaccine — SAFE even in immunocompromised patients (unlike live zoster vaccine Zostavax — contraindicated in severe immunocompromise).",
+        "note": "Use Shingrix (recombinant, adjuvanted) NOT Zostavax (live-attenuated) in cirrhosis or immunocompromised NAFLD patients"
+      },
+      {
+        "vaccine": "TWINRIX (Combined Hepatitis A + B)",
+        "frequency": "3 doses at 0, 1, 6 months OR 4 doses at 0, 7 days, 21 days, 12 months (accelerated schedule for rapid protection)",
+        "reason": "Provides simultaneous protection against both hepatitis A and B — two infections that are potentially fatal in pre-existing liver disease. A single combined vaccine series improves adherence compared to two separate vaccine courses.",
+        "note": "Preferred when both HAV and HBV non-immunity identified — efficient combined approach"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Abnormal liver function tests (elevated ALT/AST) found on routine blood tests — especially in patients with obesity, diabetes, dyslipidaemia, or heavy alcohol use",
+      "Incidental finding of 'fatty liver' or increased liver echogenicity on abdominal ultrasound",
+      "Persistent unexplained fatigue and right upper quadrant discomfort",
+      "Diagnosed with metabolic syndrome (≥3 of: central obesity, high triglycerides, low HDL, high blood pressure, high fasting glucose) — liver assessment warranted",
+      "Heavy alcohol use — any alcohol-related symptoms warrant hepatology evaluation",
+      "Jaundice (yellowing of skin or eyes) — urgent evaluation required",
+      "Abdominal swelling or weight gain in abdominal area — possible ascites",
+      "ALT or AST rising trend on repeat blood tests — needs investigation",
+      "FIB-4 score >1.3 calculated from routine blood tests — hepatology or FibroScan referral needed",
+      "New onset type 2 diabetes — liver screen recommended (70% of T2DM have NAFLD)",
+      "Planning to start methotrexate, amiodarone, or tamoxifen — baseline liver assessment and monitoring plan needed",
+      "Obese child or adolescent — screening for paediatric NAFLD",
+      "Known NAFLD patient with worsening symptoms, new jaundice, swelling, confusion, or blood in vomit or stools — URGENT evaluation",
+      "Annual review for patients on established pharmacotherapy (pioglitazone — LFTs, oedema; resmetirom — LFTs; GLP-1 agonists — tolerance)"
+    ],
+
+    "emergency_signs": [
+      "Vomiting blood (haematemesis) — bright red or coffee-ground — CALL EMERGENCY SERVICES IMMEDIATELY — variceal haemorrhage in portal hypertension (up to 40% mortality per episode without treatment)",
+      "Black, tarry, foul-smelling stools (melaena) — upper GI bleeding from varices — EMERGENCY",
+      "Sudden confusion, drowsiness, or unconsciousness in a patient with liver disease — HEPATIC ENCEPHALOPATHY — CALL EMERGENCY SERVICES",
+      "Severe abdominal pain with fever and ascites — SPONTANEOUS BACTERIAL PERITONITIS (SBP) — life-threatening infection",
+      "Rapidly increasing abdominal distension with breathlessness — tense ascites or acute liver decompensation",
+      "Jaundice appearing or rapidly worsening in a patient with known liver disease or alcoholic hepatitis — acute liver decompensation",
+      "Right upper quadrant pain with high fever and jaundice after heavy alcohol use — SEVERE ALCOHOLIC HEPATITIS — hospital admission required",
+      "Jaundice, confusion, and abdominal pain in a pregnant woman in the third trimester — ACUTE FATTY LIVER OF PREGNANCY — obstetric emergency — CALL EMERGENCY SERVICES",
+      "Collapse or near-collapse with low blood pressure in a patient with liver disease — hepatorenal syndrome or septic shock",
+      "Significant unintentional weight loss (>5kg) in a patient with known NAFLD — possible hepatocellular carcinoma — urgent investigation"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What exactly is fatty liver disease and is it serious?",
+        "answer": "Fatty liver disease means abnormal fat accumulation in the liver — more than 5% of liver cells contain fat. It has a wide spectrum: at one end, simple steatosis (just fat, no damage) which is reversible with lifestyle changes and generally not serious. At the other end, NASH/MASH (fat + inflammation + injury), which can progress over 10-20 years to cirrhosis and liver cancer. The good news: the majority of people with simple fatty liver do NOT progress to serious liver disease if they make lifestyle changes early. The bad news: it is often silent — no symptoms until advanced. This is why liver function tests and ultrasounds are important screening tools."
+      },
+      {
+        "question": "What is the difference between NAFLD, MASLD, and NASH?",
+        "answer": "NAFLD (Non-Alcoholic Fatty Liver Disease) is the older term — replaced by MASLD (Metabolic dysfunction-Associated Steatotic Liver Disease) in 2023. MASLD means fatty liver linked to metabolic risk factors (obesity, diabetes, high blood pressure, abnormal lipids). NASH (Non-Alcoholic Steatohepatitis) — now called MASH — is the severe inflammatory subtype of NAFLD/MASLD. So: MASLD = the broad disease category (fatty liver + metabolic risk); MASH = the severe form with inflammation and cell injury that can progress to cirrhosis and cancer. About 25% of MASLD patients have MASH."
+      },
+      {
+        "question": "Can fatty liver be reversed?",
+        "answer": "Yes — simple fatty liver (steatosis) is fully reversible with lifestyle changes. Even NASH/MASH — the more severe inflammatory form — can be reversed if caught before advanced fibrosis. Clinical trials show: 5% weight loss reduces liver fat significantly; 7% weight loss resolves NASH histologically in ~50% of patients; 10% weight loss improves fibrosis in most patients. The key is sustained lifestyle change — the liver has remarkable regenerative capacity. Even in patients with early cirrhosis (F4), stopping alcohol or achieving significant weight loss can halt progression and occasionally improve fibrosis."
+      },
+      {
+        "question": "I was told I have fatty liver on ultrasound. What should I do?",
+        "answer": "First: don't panic — most people with fatty liver on ultrasound have simple steatosis (reversible). Your doctor should: (1) Check liver function blood tests (ALT, AST, GGT); (2) Calculate FIB-4 score from your blood tests to assess fibrosis risk; (3) Screen for underlying causes — diabetes (HbA1c, fasting glucose), cholesterol, triglycerides, thyroid function, viral hepatitis; (4) If FIB-4 >1.3 — refer for FibroScan (liver stiffness test). You should: Start a Mediterranean diet; eliminate sugary beverages (especially juices and fizzy drinks); start regular exercise; lose 5-10% body weight; stop or drastically reduce alcohol; drink 2-3 cups of coffee daily (hepatoprotective). Follow up with your doctor in 3-6 months."
+      },
+      {
+        "question": "Is fatty liver linked to diabetes?",
+        "answer": "Very strongly — the bidirectional relationship between NAFLD and type 2 diabetes is one of the most important in hepatology. Approximately 70% of type 2 diabetes patients have NAFLD; 30-40% have NASH. Conversely, NAFLD significantly increases the risk of developing T2DM through hepatic insulin resistance. Each worsens the other: diabetes accelerates NASH fibrosis progression; NAFLD worsens glycaemic control through hepatic insulin resistance. If you have T2DM and have not had your liver assessed, ask your doctor for liver function tests, FIB-4 score calculation, and a liver ultrasound. Preferred antidiabetic drugs in NAFLD with T2DM: GLP-1 agonists (semaglutide, liraglutide) and SGLT2 inhibitors (empagliflozin, dapagliflozin) — they treat both diabetes AND NAFLD."
+      },
+      {
+        "question": "Is there any medication approved for fatty liver disease?",
+        "answer": "Yes — resmetirom (Rezdiffra) was FDA-approved in March 2024 — the first ever drug specifically approved for MASH (non-alcoholic steatohepatitis). It is a thyroid hormone receptor-beta agonist taken once daily. It is approved for non-cirrhotic MASH with moderate-to-severe fibrosis (F2-F3), confirmed by liver biopsy. However, lifestyle modification (diet + exercise + weight loss of 7-10%) remains the most powerful treatment for fatty liver — more effective than any single drug. Other evidence-based treatments include: pioglitazone (for diabetics with NASH); Vitamin E (for non-diabetics with biopsy-proven NASH); GLP-1 agonists (semaglutide — significant NASH benefit in trials); SGLT2 inhibitors (reduce liver fat in T2DM-NAFLD). A number of other drugs are in late Phase 3 trials (lanifibranor, obeticholic acid)."
+      },
+      {
+        "question": "Why is coffee recommended for fatty liver?",
+        "answer": "Coffee is one of the most remarkable hepatoprotective substances ever studied. Multiple large epidemiological studies and meta-analyses consistently show: people who drink 2-3 cups of coffee daily have 40-50% lower risk of liver fibrosis progression; 40% lower risk of liver cancer (HCC); lower liver enzyme levels (ALT, AST, GGT); and lower liver stiffness on FibroScan. Both caffeinated AND decaffeinated coffee provide benefit (suggesting non-caffeine components — chlorogenic acids, polyphenols, and diterpenes — are important). Mechanisms include reducing hepatic inflammation, inhibiting liver stellate cell activation (antifibrotic), antioxidant effects, and reducing de novo lipogenesis. In a patient with fatty liver, 2-3 cups of coffee daily (without added sugar) is one of the simplest and most effective hepatoprotective interventions available."
+      },
+      {
+        "question": "What is FibroScan and when do I need it?",
+        "answer": "FibroScan (transient elastography) is a non-invasive, painless, 10-minute test performed in clinic — a probe is placed on the skin over the liver and sends low-energy waves to measure liver stiffness (in kilopascals — kPa). Stiffer liver = more fibrosis. It also measures liver fat (via CAP — Controlled Attenuation Parameter). FibroScan is the most important non-invasive test for assessing how much scarring (fibrosis) is present in the liver. Normal liver: <7 kPa; significant fibrosis: 7-13 kPa; cirrhosis: >13-15 kPa. You need FibroScan when: FIB-4 score (from your blood tests) is 1.3-2.67 (indeterminate risk); or your doctor wants to stage your fatty liver disease before treatment decisions. It must be done fasting (2 hours) and not immediately after exercise. Results are available immediately."
+      },
+      {
+        "question": "Can children get fatty liver disease?",
+        "answer": "Yes — paediatric NAFLD has become a major health concern globally. It affects 3-10% of all children and 35-40% of obese children, making it the most common chronic liver disease in children in many countries. It is closely linked to childhood obesity, sugar-sweetened beverage consumption, and sedentary lifestyle. Children often have no symptoms — it is typically found incidentally via elevated ALT or liver ultrasound. The management focuses on family-based lifestyle intervention (dietary changes for the whole family; reducing screen time; increasing physical activity). Weight loss of 7-10% of body weight significantly improves liver function in children. Medications are not routinely used in children — lifestyle intervention is primary treatment."
+      },
+      {
+        "question": "How does alcohol cause liver damage?",
+        "answer": "Alcohol (ethanol) damages the liver through multiple mechanisms simultaneously: (1) Acetaldehyde toxicity — alcohol is metabolised to acetaldehyde (highly reactive) which forms protein and DNA adducts causing hepatocyte damage; (2) Oxidative stress — CYP2E1 enzyme produces reactive oxygen species (ROS) during alcohol metabolism; (3) Mitochondrial dysfunction — impairs fatty acid oxidation, causing fat accumulation; (4) Gut dysbiosis — alcohol disrupts the intestinal barrier, allowing bacterial endotoxins (LPS) to reach the liver via portal blood, activating Kupffer cells and driving inflammation; (5) Nutritional deficiencies — particularly thiamine (B1), folate, and zinc. The combination of these effects progresses from: alcoholic fatty liver (reversible) → alcoholic hepatitis (potentially fatal) → alcoholic cirrhosis (irreversible)."
+      },
+      {
+        "question": "What diet is best for fatty liver disease?",
+        "answer": "The Mediterranean diet has the strongest evidence for NAFLD — it reduces liver fat, improves liver enzymes, and is associated with better metabolic outcomes. The core principles: (1) Eliminate sugar-sweetened beverages and added sugars completely — fructose is THE primary driver of hepatic fat; (2) Drink 2-3 cups of coffee daily (hepatoprotective); (3) Eat plenty of vegetables, legumes, and whole grains; (4) Use olive oil as the primary fat; (5) Eat fish 2-3 times/week; (6) Nuts (especially walnuts) daily; (7) Moderate amounts of lean protein; (8) Avoid refined carbohydrates, processed meats, and saturated fats; (9) Complete alcohol abstinence (or minimal). The most important dietary intervention is CALORIE REDUCTION for weight loss — any dietary pattern that achieves 7-10% weight loss significantly improves NAFLD."
+      },
+      {
+        "question": "What are the warning signs that fatty liver is getting worse?",
+        "answer": "Simple fatty liver is usually asymptomatic. As it progresses, warning signs include: Persistent fatigue disproportionate to lifestyle; Right upper quadrant (upper right abdomen) ache or heaviness; Jaundice (yellowing of eyes or skin) — URGENT sign; Swollen abdomen (ascites — fluid accumulation) or leg swelling; Easy bruising or prolonged bleeding; Confusion or disorientation (hepatic encephalopathy); Blood in vomit (haematemesis) or black stools (melaena) — EMERGENCY. On blood tests: rising AST/ALT; falling platelets (thrombocytopenia — portal hypertension); rising bilirubin; prolonged INR; rising creatinine. On FibroScan: increasing liver stiffness. See your doctor promptly for any of these features."
+      }
+    ]
+  }
+}

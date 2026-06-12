@@ -23,6 +23,29 @@ QUERY_FILLER_WORDS = [
     "we", "they", "it", "this", "that", "these", "those",
 ]
 
+import re
+
+ALIASES = {
+    "influenza": ["flu"],
+    "flu": ["influenza"],
+    "hypertension": ["high blood pressure"],
+    "gastroenteritis": ["food poisoning", "stomach flu"],
+}
+
+def disease_matches_query(disease: str, query: str) -> bool:
+    if not disease:
+        return False
+
+    disease = re.sub(r'[^a-zA-Z0-9 ]', ' ', disease.lower())
+    query = query.lower()
+
+    disease_terms = set(disease.split())
+
+    for term in list(disease_terms):
+        if term in ALIASES:
+            disease_terms.update(ALIASES[term])
+
+    return any(term in query for term in disease_terms)
 
 def build_wikipedia_query(user_query: str) -> str:
     """
@@ -102,18 +125,18 @@ def run_rag(
         chunk_disease_clean = chunk_disease.lower().strip()
         query_clean = user_query.lower()
 
-        # Reject Reason A: The math score is weak (distance > 0.85)
-        if best_score < 0.50:
+        # Reject Reason A: The math score is weak
+        if best_score < 0.45:  # Threshold for relevance (tune as needed)
             needs_wikipedia = True
             retrieved_chunks = []
             
         # Reject Reason B: The chunk is about a specific disease NOT mentioned in the query
         elif chunk_disease_clean and chunk_disease_clean != "general":
             # If the database pulled a Diabetes chunk, but the user didn't ask about Diabetes...
-            if chunk_disease_clean not in query_clean:
+            if not disease_matches_query(chunk_disease, user_query):
                 print(f"[RAG Filter] Rejected {chunk_disease} context for query about '{user_query}'.")
                 needs_wikipedia = True
-                retrieved_chunks = [] # Trash the irrelevant context!
+                retrieved_chunks = []
 
     # 3. Wikipedia Fallback
     wikipedia_context = ""
@@ -143,6 +166,15 @@ def run_rag(
     else:
         context = build_context(retrieved_chunks)
 
+    for i, c in enumerate(retrieved_chunks):
+        print(
+            f"Chunk {i+1}: "
+            f"score={c['score']} "
+            f"disease={c['disease']}"
+        )
+        print("====== CHUNK ======")
+        print(c["text"])
+        print("===================\n")
     # 5. Generate LLM response with context
     raw_answer = generate_with_rag(
         user_message=user_query,
@@ -150,6 +182,9 @@ def run_rag(
         conversation_history=conversation_history,
         stream=stream,
     )
+    print("\n=== RAG CONTEXT ===")
+    print(context)
+    print("===================\n")
 
     # 6. Collect source diseases
     sources = []

@@ -5,7 +5,7 @@ import os
 from typing import Generator
 
 from llm.config import (
-    OLLAMA_BASE_URL, OLLAMA_LLM_MODEL,
+    OLLAMA_BASE_URL, OLLAMA_LLM_MODEL, OLLAMA_VISION_MODEL,
     LLM_TEMPERATURE, LLM_MAX_TOKENS, GEMINI_MODEL
 )
 from llm.prompts import SYSTEM_PROMPT
@@ -24,9 +24,22 @@ def generate_response(
     """
     Send a chat request to Ollama FIRST. If it fails, fallback to Gemini.
     """
-    messages = [{"role": "system", "content": system_prompt}]
-    messages.extend(conversation_history)
-    messages.append({"role": "user", "content": user_message})
+    if images:
+        messages = []
+    else:
+        messages = [{"role": "system", "content": system_prompt}]
+        messages.extend(conversation_history)
+
+    user_msg = {
+        "role": "user",
+        "content": user_message
+    }
+
+    if images:
+        user_msg["images"] = images
+        print(f"[VISION] Images attached: {len(images) if images else 0}")
+
+    messages.append(user_msg)
 
     # ── Fallback Logic (Gemini) ──
     def fallback_to_gemini():
@@ -41,11 +54,19 @@ def generate_response(
             print("[Router] Ollama connection failed. Falling back to Gemini API...")
             contents = []
             for m in messages:
-                if m["role"] == "system":
-                    continue
+                part = [{"text": m["content"]}]
+
+                if images and m["role"] == "user":
+                    part.append({
+                        "inline_data": {
+                            "mime_type": "image/jpeg",
+                            "data": images[0]
+                        }
+                    })
+
                 contents.append({
                     "role": "model" if m["role"] == "assistant" else "user",
-                    "parts": [{"text": m["content"]}]
+                    "parts": part
                 })
             
             url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
@@ -57,6 +78,7 @@ def generate_response(
                     "maxOutputTokens": LLM_MAX_TOKENS,
                 }
             }
+            print(messages[-1])
             r = requests.post(url, json=payload, timeout=20)
             r.raise_for_status()
             content = r.json()["candidates"][0]["content"]["parts"][0]["text"]
@@ -71,15 +93,21 @@ def generate_response(
             return content
             
         except Exception as e:
-            err_msg = f"⚠️ **Both Local Ollama and Cloud Gemini APIs are currently unreachable.** ({e})"
+            err_msg = f"⚠️ **Both Local Ollama and Cloud Gemini APIs are currently unreachable.** Please check your Ollama server and Gemini API key."
             if stream:
                 def _fail_gen(): yield err_msg
                 return _fail_gen()
             return err_msg
 
     # ── Primary Logic (Ollama) ──
+    selected_model = (
+        OLLAMA_VISION_MODEL
+        if images
+        else OLLAMA_LLM_MODEL
+    )
+    print(f"[MODEL] Using: {selected_model}")
     payload = {
-        "model":   OLLAMA_LLM_MODEL,
+        "model":   selected_model,
         "messages": messages,
         "stream":  stream,
         "options": {
@@ -110,12 +138,35 @@ def generate_response(
             return fallback_to_gemini()
     else:
         try:
-            r = requests.post(url, json=payload, timeout=30)
+            print("\n===== OLLAMA PAYLOAD =====")
+            print("Model:", payload["model"])
+            print("Messages:", len(payload["messages"]))
+
+            if images:
+                print("Images:", len(images))
+
+            print("==========================\n")
+            r = requests.post(url, json=payload)
             r.raise_for_status()
-            return r.json()["message"]["content"]
-        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
-            return fallback_to_gemini()
-        except Exception:
+            response_json = r.json()
+
+            print("\n===== OLLAMA RESPONSE =====")
+            print(response_json)
+            print("===========================\n")
+
+            return response_json["message"]["content"]
+        except Exception as e:
+            print("\n========== OLLAMA ERROR ==========")
+            print(e)
+
+            if hasattr(e, "response"):
+                try:
+                    print(e.response.text)
+                except:
+                    pass
+
+            print("==================================\n")
+
             return fallback_to_gemini()
 
 
@@ -129,16 +180,37 @@ def generate_with_rag(
     """Generate a response augmented with RAG context."""
     from llm.prompts import RAG_PROMPT_TEMPLATE
 
-    history_text = "\n".join(
-        f"{m['role'].capitalize()}: {m['content']}"
-        for m in conversation_history[-3:]  # last 3 turns
+    FOLLOW_UP_WORDS = [
+        "continue",
+        "more",
+        "what about",
+        "and",
+        "also",
+        "still",
+        "again"
+    ]
+
+    is_followup = any(
+        user_message.lower().startswith(w)
+        for w in FOLLOW_UP_WORDS
     )
+
+    if is_followup:
+        history_text = "\n".join(
+            f"{m['role'].capitalize()}: {m['content'][:100]}"
+            for m in conversation_history[-2:]
+        )
+    else:
+        history_text = "No previous conversation."
 
     augmented_prompt = RAG_PROMPT_TEMPLATE.format(
         context=context,
         history=history_text,
         question=user_message,
     )
+    print("\n===== FINAL PROMPT =====")
+    print(augmented_prompt)
+    print("========================\n")
 
     return generate_response(
         user_message=augmented_prompt,

@@ -45,9 +45,7 @@ Add this only at the very END of personal concern responses (not informational o
 """
 
 
-RAG_PROMPT_TEMPLATE = """You are MediBot, a medical information assistant. 
-Use the provided context to answer the question accurately and helpfully.
-
+RAG_PROMPT_TEMPLATE = """
 ## Context from medical knowledge base:
 {context}
 
@@ -57,14 +55,14 @@ Use the provided context to answer the question accurately and helpfully.
 ## User's question:
 {question}
 
-## Instructions:
-- Answer the EXACT question asked. Do not switch topics.
-- Use the context above if it is relevant to the question.
-- If the context is about a different topic than the question, ignore it and answer from your own knowledge.
-- Be clear, factual, and friendly.
-- Do NOT start with "I cannot provide medical advice" for general health questions.
-- Keep your answer under 200 words for simple symptom questions.
-- Add "Please consult a doctor for persistent symptoms." only at the very end if appropriate.
+INSTRUCTIONS:
+- Answer the question directly.
+- Use the medical context when relevant.
+- Do not refuse informational medical questions.
+- Do not say "I cannot provide medical advice".
+- For prevention questions, provide prevention steps.
+- Ignore previous questions unless the user explicitly refers to them.
+- Answer ONLY the current question.
 """
 
 SYMPTOM_CHECKER_PROMPT = """Based on the symptoms provided, give a structured clinical response.
