@@ -1,0 +1,1134 @@
+{
+  "disease": {
+    "id": "DIS-025",
+    "name": "Pancreatitis",
+    "scientific_name": "Pancreatitis / Acute Pancreatitis / Chronic Pancreatitis / Necrotising Pancreatitis / Tropical Chronic Pancreatitis",
+    "icd_10_code": "K85.0 (Idiopathic acute pancreatitis); K85.1 (Biliary acute pancreatitis); K85.2 (Alcohol-induced acute pancreatitis); K85.3 (Drug-induced acute pancreatitis); K85.8 (Other acute pancreatitis); K85.9 (Acute pancreatitis, unspecified); K86.0 (Alcohol-induced chronic pancreatitis); K86.1 (Other chronic pancreatitis — including tropical, autoimmune, hereditary, idiopathic); K86.2 (Cyst of pancreas); K86.3 (Pseudocyst of pancreas); K86.81 (Exocrine pancreatic insufficiency); E13.9 (Type 3c diabetes mellitus / pancreatogenic diabetes)",
+    "category": "Gastroenterology / Hepato-Pancreato-Biliary Surgery / Endocrinology",
+    "overview": {
+      "description": "Pancreatitis is inflammation of the pancreas — a vital dual-function gland located behind the stomach in the retroperitoneum — responsible for producing digestive enzymes (exocrine function: amylase, lipase, trypsinogen, elastase, phospholipase) and hormones regulating blood glucose (endocrine function: insulin from beta cells, glucagon from alpha cells, somatostatin from delta cells). Pancreatitis occurs when the pancreas's own digestive enzymes are prematurely activated within the gland itself — rather than in the duodenum where they normally activate — causing autodigestion of the pancreatic tissue, inflammation, oedema, and in severe cases haemorrhage and necrosis. The disease presents across a clinical spectrum from mild self-limiting acute pancreatitis (resolving within days with simple supportive care) to devastating severe necrotising pancreatitis with multi-organ failure and mortality exceeding 30-40%. Chronic pancreatitis represents irreversible progressive fibrosis and destruction of both exocrine and endocrine pancreatic tissue, leading to fat malabsorption, steatorrhoea, malnutrition, and a unique form of diabetes (Type 3c pancreatogenic diabetes). Globally, the two dominant causes of pancreatitis are gallstones (40-50% of acute episodes) and alcohol (25-35%); however, India presents a uniquely important variant — Tropical Chronic Pancreatitis (TCP) — a form of chronic pancreatitis affecting young non-alcoholic individuals predominantly in Southern India (Kerala, Tamil Nadu, Karnataka) and associated with protein-calorie malnutrition, cassava consumption, and genetic susceptibility. TCP (also termed Fibrocalculous Pancreatic Diabetes — FCPD when diabetes develops) is a South Asian-specific disease largely unknown in the Western world, and it represents one of the most important and distinctive forms of pancreatitis in the Indian context. Management of pancreatitis requires a multidisciplinary team — gastroenterologist, interventional radiologist, pancreatic surgeon, endocrinologist, and dietitian — reflecting the complexity and systemic impact of this condition.",
+      "affected_organ": "Pancreas (exocrine acinar cells, ductal epithelium, islets of Langerhans); secondary involvement: retroperitoneal fat (peripancreatic necrosis), peritoneum, pleura, lungs (ARDS), kidneys, cardiovascular system, liver, biliary tree",
+      "prevalence": "Acute pancreatitis: 13-45 cases per 100,000 population annually; approximately 300,000 hospital admissions per year in India; 80% mild; 20% severe; overall mortality 2-3% (mild) rising to 30-40% in severe necrotising pancreatitis; Chronic pancreatitis: 5-12 per 100,000 in Western countries; India: estimated 125 per 100,000 in Southern India (unusually high due to Tropical Chronic Pancreatitis); Kerala has the world's highest prevalence of Tropical Chronic Pancreatitis — approximately 100-200 cases per 100,000 population in some districts",
+      "age_group": "Acute pancreatitis: all ages; gallstone pancreatitis peaks in women aged 40-60 years; alcoholic pancreatitis in men aged 30-50 years; Tropical Chronic Pancreatitis: uniquely affects young adults aged 10-30 years (onset in adolescence or early adulthood); Autoimmune pancreatitis Type 1: predominantly men over 50 years; Hereditary pancreatitis: childhood onset",
+      "is_contagious": false,
+      "is_manageable": true,
+      "is_curable": true,
+      "is_curable_note": "Acute pancreatitis is fully reversible with appropriate treatment in most cases; chronic pancreatitis causes IRREVERSIBLE structural damage — treatment manages symptoms, prevents progression, and addresses complications but cannot restore normal pancreatic architecture; autoimmune pancreatitis Type 1 is uniquely steroid-responsive and may achieve complete remission",
+      "chronic": true,
+      "is_chronic_note": "Acute pancreatitis is episodic and reversible; chronic pancreatitis is irreversible and progressive; recurrent acute pancreatitis leads to chronic pancreatitis in 30-40% of cases",
+      "is_preventable": true,
+      "key_fact": "Tropical Chronic Pancreatitis (TCP) is a disease unique to South and Southeast Asia — India accounts for more cases than any other country. Unlike Western chronic pancreatitis (which predominantly affects middle-aged alcoholic men), TCP strikes young people aged 10-30 years from low-income backgrounds in southern India, causing severe pancreatic destruction, diabetes in adolescence, and early pancreatic cancer risk. Early diagnosis, nutritional rehabilitation, alcohol and tobacco cessation, and genetic counselling are critical for this distinctive Indian disease."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Acute Pancreatitis — Revised Atlanta Classification",
+        "description": "An acute inflammatory process of the pancreas with variable involvement of regional tissues or remote organ systems. The Revised Atlanta Classification (2012) is the internationally accepted framework for defining severity, local complications, and clinical phases of acute pancreatitis.",
+        "severity_grades": [
+          {
+            "grade": "Mild Acute Pancreatitis",
+            "criteria": "No organ failure; no local or systemic complications; pancreatic and peripancreatic tissue intact",
+            "proportion": "80-85% of all acute pancreatitis episodes",
+            "clinical_course": "Self-limiting; resolves within 3-5 days; responds to supportive care (IV fluids, analgesia, early oral refeeding); very low mortality (<1%); no ICU required; may be managed in general medical ward",
+            "management": "IV Ringer's Lactate (aggressive early resuscitation); adequate analgesia; antiemetics; early oral refeeding (within 24-48 hours as tolerated); no routine antibiotics; no prophylactic antibiotics; discharge when tolerating oral diet and pain controlled"
+          },
+          {
+            "grade": "Moderately Severe Acute Pancreatitis",
+            "criteria": "Transient organ failure (resolves within 48 hours); OR local complications (acute peripancreatic fluid collections, acute necrotic collections) WITHOUT persistent organ failure",
+            "proportion": "10-15% of acute pancreatitis",
+            "clinical_course": "Prolonged hospital admission (typically 1-3 weeks); CT scan required to assess local complications; may require intensive monitoring; mortality approximately 5-10%",
+            "management": "IV fluid resuscitation; analgesia; HDU/ICU monitoring; CT scan at 48-72 hours (or earlier if deteriorating); enteral nutrition (nasogastric or nasojejunal tube feed if not tolerating oral); interventional radiology involvement if collections develop"
+          },
+          {
+            "grade": "Severe Acute Pancreatitis",
+            "criteria": "Persistent organ failure (>48 hours) in one or more organs: respiratory (PaO2/FiO2 <300 or SpO2 <90% on air), renal (creatinine >170 mcmol/L), cardiovascular (systolic BP <90 mmHg despite fluid resuscitation)",
+            "proportion": "5% of acute pancreatitis",
+            "clinical_course": "ICU admission mandatory; prolonged hospitalisation (weeks to months); high risk of infected necrosis; multiple organ failure; multiple operative interventions may be needed; mortality 30-40% (higher with infected necrosis without adequate drainage)",
+            "management": "ICU; aggressive IV resuscitation; mechanical ventilation if ARDS; vasopressors for cardiovascular failure; renal replacement therapy (dialysis) for severe AKI; enteral nutrition via NJT; antibiotics ONLY if infected necrosis confirmed (not prophylactic); minimally invasive step-up approach for necrotic collections (radiological drainage → endoscopic → surgical)"
+          }
+        ],
+        "clinical_phases": {
+          "early_phase_week_1_to_2": "Dominated by SIRS (Systemic Inflammatory Response Syndrome) and early organ failure; the patient is critically ill from systemic cytokine release; necrotising pancreatitis not yet delineated; CT scan not diagnostic of necrosis until 48-72 hours after onset (pancreatic necrosis takes time to demarcate)",
+          "late_phase_after_week_2": "Dominated by LOCAL COMPLICATIONS — necrotic collections; infected necrosis (secondary bacterial infection of devitalised pancreatic tissue); walled-off necrosis (WON — the mature form of organised necrotic collection after 4+ weeks)"
+        },
+        "local_complications": [
+          {
+            "name": "Acute Peripancreatic Fluid Collection (APFC)",
+            "description": "Homogeneous fluid collection adjacent to the pancreas, within the first 4 weeks, without a defined wall, in the setting of oedematous (interstitial) pancreatitis; majority resolve spontaneously without intervention"
+          },
+          {
+            "name": "Pancreatic Pseudocyst",
+            "description": "A well-defined fluid collection with a non-epithelised fibrous wall encapsulating pancreatic juice — forms from APFC after 4+ weeks; contains no solid material (distinguishing from walled-off necrosis); usually results from pancreatic ductal disruption; 40-50% resolve spontaneously; requires intervention if symptomatic (pain, obstruction, infection), enlarging, or causing complications"
+          },
+          {
+            "name": "Acute Necrotic Collection (ANC)",
+            "description": "A collection containing variable amounts of fluid AND necrotic pancreatic or peripancreatic tissue — occurs within the first 4 weeks in the context of necrotising pancreatitis; may be sterile or infected; distinguished from APFC by heterogeneous content and the presence of necrosis"
+          },
+          {
+            "name": "Walled-Off Necrosis (WON)",
+            "description": "The mature encapsulated form of ANC — forms after 4+ weeks with development of a well-defined wall; contains heterogeneous solid necrotic material and fluid; the most complex local complication requiring endoscopic or surgical debridement if infected or symptomatic; distinguished from pseudocyst by solid necrotic debris within the collection (visible on CT/MRI)"
+          },
+          {
+            "name": "Infected Necrosis",
+            "description": "Secondary bacterial infection of pancreatic and/or peripancreatic necrotic tissue — the most life-threatening local complication; occurs in 30-40% of necrotising pancreatitis; indicated by gas within the necrotic collection on CT (pathognomonic); confirmed by CT-guided fine needle aspiration (FNA) for Gram stain and culture; organisms: E. coli, Klebsiella, Enterococcus, Staphylococcus, Bacteroides, Candida (particularly in patients on broad-spectrum antibiotics); management: STEP-UP APPROACH (minimally invasive drainage before surgery); meropenem IV; endoscopic transluminal drainage (through gastric wall); video-assisted retroperitoneal debridement (VARD); surgical necrosectomy as last resort"
+          }
+        ],
+        "scoring_systems": [
+          {
+            "score": "BISAP Score (Bedside Index for Severity in Acute Pancreatitis)",
+            "variables": "BUN >25 mg/dL (1 point); Impaired mental status (1 point); SIRS — 2+ of: temp >38°C or <36°C; HR >90; RR >20; WBC >12,000 or <4,000 (1 point); Age >60 years (1 point); Pleural effusion on imaging (1 point); Maximum 5 points",
+            "interpretation": "Score 0-2: low mortality (<2%); Score 3: 5-10% mortality; Score 4-5: 15-20% mortality",
+            "use": "Simple bedside scoring at admission; no specialist equipment required; validated in multiple populations including India"
+          },
+          {
+            "score": "CT Severity Index (CTSI / Modified Balthazar Score)",
+            "variables": "Balthazar CT grade (A-E: 0-4 points based on degree of pancreatic/peripancreatic inflammation) + Necrosis score (0 = no necrosis; 2 = <30%; 4 = 30-50%; 6 = >50%); Maximum 10 points",
+            "interpretation": "Score 0-3: low severity (0-3% mortality); Score 4-6: intermediate (8% morbidity, 3% mortality); Score 7-10: severe (17% morbidity, 17% mortality)",
+            "use": "Performed on contrast-enhanced CT at 48-72 hours after onset; defines necrosis extent; guides management; predicts need for intervention"
+          },
+          {
+            "score": "Revised Atlanta Classification Organ Failure Assessment",
+            "variables": "Modified Marshall Scoring System: respiratory (PaO2/FiO2 ratio); renal (creatinine); cardiovascular (systolic BP); score ≥2 in any system = organ failure; persistent if >48 hours",
+            "use": "Defines severity grade; guides ICU admission; monitors clinical progress"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Necrotising Pancreatitis",
+        "description": "A subtype of severe acute pancreatitis characterised by necrosis (death) of pancreatic parenchyma and/or peripancreatic fat — occurring in approximately 20-30% of severe acute pancreatitis cases and carrying significantly higher morbidity and mortality. Pancreatic necrosis results from ischaemia of the pancreatic microcirculation from severe inflammatory vasospasm, proteolytic enzyme digestion of blood vessel walls, and pancreatic compartment syndrome. The extent of necrosis (partial vs total, sterile vs infected) determines severity and management strategy.",
+        "pathogenesis": "Severe SIRS → release of inflammatory cytokines (TNF-alpha, IL-1, IL-6, IL-8, platelet-activating factor) → vasoconstriction of pancreatic microcirculation → ischaemia → coagulation necrosis of acinar cells; secondary bacterial infection from: bacterial translocation from colon (disrupted gut barrier); haematogenous seeding; biliary organisms",
+        "diagnosis": "CONTRAST-ENHANCED CT SCAN (CECT): areas of non-enhancement after IV contrast in the pancreatic parenchyma = necrosis; cannot be performed until at least 48-72 hours after onset (early CECT overestimates or underestimates necrosis extent); MRI/MRCP superior to CT for characterising WON content (solid vs liquid); endoscopic ultrasound (EUS) guides drainage procedures",
+        "management_step_up_approach": "The 'Step-Up Approach' — progressing from less to more invasive interventions — is the internationally endorsed standard of care for infected necrotising pancreatitis: Step 1: IV antibiotics (meropenem or imipenem — penetrate pancreatic necrosis); Step 2: CT-guided percutaneous catheter drainage (PCD); Step 3: Endoscopic transluminal drainage (EUS-guided through gastric/duodenal wall — endoscopic necrosectomy); Step 4: Video-Assisted Retroperitoneal Debridement (VARD) or laparoscopic necrosectomy; Step 5: Open surgical necrosectomy (last resort — highest morbidity and mortality; reserved for failure of all minimally invasive approaches); The Dutch PANTER trial established that step-up approach has lower mortality and complications than primary open necrosectomy",
+        "antibiotic_use": "Antibiotics ONLY for CONFIRMED INFECTED NECROSIS (not prophylactic): meropenem 1-2g IV every 8 hours OR imipenem-cilastatin 500 mg IV every 6 hours (both achieve excellent pancreatic tissue penetration — unlike many antibiotics that do not penetrate the blood-pancreatic barrier); duration: 14-21 days; add fluconazole if Candida identified in cultures; send CT-FNA culture before starting if possible (though empirical antibiotics appropriate if severe sepsis)"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Chronic Pancreatitis",
+        "description": "A syndrome characterised by irreversible, progressive fibro-inflammatory destruction of both exocrine and endocrine pancreatic tissue — resulting in permanent impairment of digestive enzyme production (exocrine pancreatic insufficiency — EPI) and loss of insulin-secreting beta cells (Type 3c pancreatogenic diabetes). Unlike acute pancreatitis which is episodic and potentially fully reversible, chronic pancreatitis causes permanent structural changes (fibrosis, ductal strictures, intraductal calcifications/stones) that cannot be restored to normal.",
+        "global_causes": "Alcohol (most common globally — 60-70% in Western countries; 40-50% in India); idiopathic; tropical (South/Southeast Asia); hereditary/genetic; autoimmune; obstructive (ductal stricture, pancreas divisum, trauma); hypercalcaemia; hyperlipidaemia; TIGAR-O classification: Toxic/Metabolic; Idiopathic; Genetic; Autoimmune; Recurrent acute pancreatitis; Obstructive",
+        "subtypes": [
+          {
+            "subtype": "Alcoholic Chronic Pancreatitis",
+            "description": "The most common form in Western countries and a major form in India. Requires sustained heavy alcohol use (typically >5-10 years of drinking >80 g ethanol/day). Alcohol directly damages acinar cells, promotes ductal protein plug formation, and increases ductal pressure. SMOKING is a critical co-factor — acts synergistically with alcohol to accelerate pancreatic fibrosis and is an independent risk factor for chronic pancreatitis even without alcohol.",
+            "clinical_features": "Recurrent episodes of acute-on-chronic pancreatitis; chronic abdominal pain (cardinal symptom — upper abdominal, radiating to back; constant or episodic; often severe and debilitating); weight loss; steatorrhoea (later stages when >90% exocrine function lost); pancreatic calcifications on imaging; dilated main pancreatic duct with ductal stones",
+            "management": "ALCOHOL AND TOBACCO CESSATION (most critical interventions — the only interventions shown to slow progression); pain management; PERT; nutrition"
+          },
+          {
+            "subtype": "Tropical Chronic Pancreatitis (TCP) / Fibrocalculous Pancreatic Diabetes (FCPD) — INDIA-SPECIFIC",
+            "description": "A form of chronic pancreatitis unique to South and Southeast Asia — predominantly India (Kerala, Tamil Nadu, Karnataka, Andhra Pradesh), with lower prevalence in Bangladesh, Nigeria, and Brazil. India has the world's highest absolute number of TCP cases — with Kerala having particularly high concentration. TCP affects young non-alcoholic individuals (typically ages 10-30 years) from rural low-income backgrounds, causing severe pancreatic destruction with massive intraductal calculi, extreme ductal dilation, and rapid progression to endocrine (FCPD — pancreatogenic diabetes) and exocrine insufficiency.",
+            "epidemiology": "Estimated 125 per 100,000 population in South India; Kerala has world's highest density; predominantly young rural individuals from low-income agricultural backgrounds; male:female ratio approximately 2:1; non-alcoholic by definition",
+            "aetiology": "Multifactorial — not fully elucidated; factors implicated: PROTEIN-CALORIE MALNUTRITION (undernutrition in childhood reduces pancreatic secretory inhibitors — particularly PSTI/SPINK1 — allowing trypsinogen self-activation); CASSAVA CONSUMPTION — cyanogenic glycosides (linamarin) in inadequately processed cassava root → hydrogen cyanide → cytotoxic to pancreatic acinar cells (the cassava hypothesis); GENETIC susceptibility: SPINK1 (N34S) mutations in serine protease inhibitor Kazal type 1 — found in 25-40% of TCP patients vs 2% general population; CLDN2, CTRC, and other trypsinogen pathway gene variants; OXIDATIVE STRESS from micronutrient deficiencies (selenium, zinc, Vitamin C and E); Possibly MICROBIOME dysbiosis from nutritional poverty",
+            "clinical_features": [
+              "YOUNG AGE of presentation — typically 10-30 years (much younger than alcoholic chronic pancreatitis)",
+              "PAINFUL TCP (majority): severe intermittent upper abdominal pain radiating to back; in adolescents; nutritional failure",
+              "PAINLESS TCP (minority): presents directly with diabetes and steatorrhoea without significant pain history",
+              "MASSIVE INTRADUCTAL CALCULI — large, dense stones within the main pancreatic duct (pathognomonic); visible on plain abdominal X-ray as 'chain-like' calcifications across the epigastrium",
+              "EXTREME PANCREATIC DUCTAL DILATION — duct diameters 5-15 mm (normal <3 mm); 'chain-of-lakes' appearance on MRCP",
+              "MALNUTRITION AND GROWTH FAILURE — stunting; poor nutritional status; low BMI",
+              "FIBROCALCULOUS PANCREATIC DIABETES (FCPD) — Type 3c diabetes developing in 30-60% of TCP patients; typically requires insulin; characterized by relative ketoacidosis resistance; hypoglycaemia unawareness; prone to hypoglycaemia; no significant C-peptide despite requiring insulin; associated with higher HbA1c and diabetic complications"
+            ],
+            "imaging": "Plain X-ray abdomen: PANCREATIC CALCIFICATIONS (pathognomonic — dense speckled or 'chain-of-lakes' calcifications along pancreatic axis in epigastrium); CT: large calculi + dilated duct; MRCP: marked ductal dilation; stones as filling defects",
+            "management": "Nutritional rehabilitation (high-calorie, high-protein, low-fat diet); pancreatic enzyme replacement (PERT) — vital; insulin for FCPD; pain management (ERCP with endoscopic stone extraction, endoscopic pancreatic stenting, extracorporeal shockwave lithotripsy — ESWL; lateral pancreaticojejunostomy — Puestow procedure for large duct dilation); antioxidant supplementation (Vitamin C, E, selenium, beta-carotene, methionine); genetic counselling (SPINK1 mutation); cancer surveillance (elevated pancreatic cancer risk)",
+            "pancreatic_cancer_risk": "TCP/FCPD carries significantly elevated pancreatic cancer risk (5-10× general population); EUS and CT surveillance recommended every 1-2 years in established TCP; any new pain change, weight loss, or rising CA 19-9 in a TCP patient warrants urgent investigation",
+            "india_significance": "TCP is a disease of poverty and malnutrition in India; nutritional programmes (mid-day meal schemes, anganwadi supplementation, cassava processing education) are fundamental public health interventions; SPINK1 N34S genetic testing available at AIIMS, PGI Chandigarh, and major medical centres; the Prasad scale and Balakrishnan classification are India-specific TCP staging systems"
+          },
+          {
+            "subtype": "Autoimmune Pancreatitis (AIP)",
+            "description": "A unique steroid-responsive form of chronic pancreatitis — distinguished from other forms by its dramatic response to corticosteroids, distinct histopathological and imaging features, and frequent association with other IgG4-related diseases. Two distinct types:",
+            "type_1_AIP": {
+              "description": "IgG4-Related Disease (IgG4-RD) — part of a multisystem fibro-inflammatory disorder affecting pancreas, bile ducts (IgG4-sclerosing cholangitis), kidneys, retroperitoneum, lungs, and salivary glands; predominantly affects men over 50; often presents as obstructive jaundice (mimicking pancreatic cancer — the most important differential diagnosis)",
+              "imaging": "Diffuse sausage-like pancreatic enlargement (classic — 'sausage pancreas'); featureless margin; peripheral rim of reduced enhancement ('halo sign' on CT); capsule-like rim; strictured irregular main pancreatic duct without upstream dilation (differs from pancreatic cancer where obstruction causes upstream dilation)",
+              "diagnosis": "HISORT criteria (Histology, Imaging, Serology, Other organ involvement, Response to steroids); Serum IgG4 elevated (>2× ULN is highly specific — though elevated IgG4 found in 5-10% of pancreatic cancer); tissue biopsy for LPSP (lymphoplasmacytic sclerosing pancreatitis) with IgG4-positive plasma cells >10/HPF",
+              "treatment": "Prednisolone 40 mg/day for 4 weeks then taper over 3-6 months; dramatic complete radiological and clinical response; relapse in 30-40% requiring maintenance steroid or azathioprine",
+              "critical_differential": "AIP vs pancreatic cancer: THE MOST IMPORTANT DIFFERENTIAL in clinical practice; a middle-aged man with obstructive jaundice, pancreatic mass, and elevated CA 19-9 could have either; misdiagnosing AIP as cancer leads to unnecessary Whipple surgery; misdiagnosing cancer as AIP leads to fatal delay in surgery; empirical steroid trial (2 weeks of prednisolone) with strict monitoring is sometimes used when imaging and serology are not conclusive — cancer does not respond to steroids"
+            },
+            "type_2_AIP": {
+              "description": "Idiopathic duct-centric pancreatitis (IDCP) — granulocytic epithelial lesions (GEL) in pancreatic ducts; NOT associated with IgG4; serum IgG4 normal; associated with inflammatory bowel disease (IBD — Crohn's, UC) in 20-30%; younger age than Type 1; also steroid-responsive",
+              "treatment": "Prednisolone as for Type 1; lower relapse rate than Type 1"
+            }
+          },
+          {
+            "subtype": "Hereditary Pancreatitis",
+            "description": "Caused by gain-of-function mutations in trypsinogen genes or loss-of-function mutations in pancreatic protease inhibitor genes — resulting in premature trypsinogen activation and autodigestion from childhood. Rare but important for genetic counselling and cancer surveillance.",
+            "genetic_causes": [
+              "PRSS1 (Cationic trypsinogen) mutations — R122H and N29I are most common; autosomal dominant; high penetrance; most common cause of hereditary pancreatitis",
+              "SPINK1 (N34S) — serine protease inhibitor Kazal type 1; loss of trypsin inhibition; associated with TCP in India AND hereditary pancreatitis in West; autosomal recessive with reduced penetrance",
+              "CFTR mutations — cystic fibrosis transmembrane conductance regulator; heterozygous mutations predispose to chronic pancreatitis; also causes CFRD (cystic fibrosis-related diabetes)",
+              "CTRC (Chymotrypsin C) mutations — reduces protective trypsin degradation"
+            ],
+            "clinical_features": "Onset in childhood or early adolescence; recurrent acute pancreatitis episodes from age <20 years; family history; VERY HIGH PANCREATIC CANCER RISK (50-70× general population — lifetime cumulative risk 25-40%); requires annual EUS surveillance from age 40 years",
+            "management": "Genetic counselling; alcohol and smoking cessation mandatory; pain management; PERT; ERCP; surgery; annual pancreatic cancer surveillance; total pancreatectomy with islet autotransplantation (TP-IAT) for intractable pain in young patients with hereditary pancreatitis — prevents post-pancreatectomy diabetes"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Groove Pancreatitis",
+        "description": "A rare but distinct form of chronic pancreatitis affecting the 'groove' area between the pancreatic head, duodenum, and common bile duct — causing fibrous scar tissue in this anatomical compartment. Predominantly affects middle-aged men with heavy alcohol use. The groove fibrosis narrows the duodenum (duodenal stenosis) causing vomiting and weight loss, and may obstruct the CBD (causing jaundice). Imaging: scar-like mass with sheet-like fibrosis in the pancreatico-duodenal groove; may be indistinguishable from pancreatic cancer on CT — duodenal wall thickening with cyst-like spaces is more typical of groove pancreatitis than cancer.",
+        "management": "Alcohol cessation; PPI; conservative management; pancreaticoduodenectomy (Whipple procedure) when cannot exclude cancer or for intractable symptoms"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Drug-Induced Acute Pancreatitis",
+        "description": "Approximately 1.5-2% of acute pancreatitis cases are drug-induced. Requires clinical suspicion, temporal association (onset after drug initiation), exclusion of other causes, and resolution after drug withdrawal.",
+        "class_I_drugs_definite_causation": [
+          "Azathioprine and 6-mercaptopurine (IBD treatment — most common drug cause; dose-dependent)",
+          "Didanosine (ddI — antiretroviral for HIV)",
+          "Pentamidine (PCP prophylaxis in AIDS)",
+          "Valproic acid / Sodium valproate (anti-epileptic)",
+          "Oestrogens / combined OCP (hypertriglyceridaemia mechanism)",
+          "Tetracyclines",
+          "Sulfonamides (including co-trimoxazole)",
+          "Furosemide (loop diuretic)",
+          "ERCP contrast / post-ERCP (iatrogenic)"
+        ],
+        "class_II_drugs_probable": [
+          "GLP-1 agonists (semaglutide, liraglutide, exenatide — emerging evidence; post-marketing surveillance ongoing)",
+          "DPP-4 inhibitors (sitagliptin, vildagliptin — signal in pharmacovigilance data)",
+          "Mesalazine (5-ASA for IBD)",
+          "Metronidazole",
+          "Statins (uncommon but documented)",
+          "ACE inhibitors",
+          "Calcium channel blockers (rare)"
+        ],
+        "management": "Stop the causative drug; supportive treatment; rechallenge NOT recommended in most cases (risk of recurrence)"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Acute Pancreatitis or Controlled Chronic Pancreatitis",
+        "description": "Acute: self-limiting without organ failure or necrosis. Chronic: stable, controlled symptoms with adequate nutritional and glycaemic management.",
+        "criteria": "Acute: no organ failure (Marshall score <2); no local complications; BISAP ≤2; CRP <150 mg/L at 48h; no necrosis on CT; Chronic: pain controlled; no active acute-on-chronic episode; adequate nutrition (BMI >18.5); PERT dose optimised; HbA1c controlled; no complications",
+        "functional_impact": "Mild discomfort; able to eat; weight stable; may be managed outpatient",
+        "management": "Acute: IV Ringer's Lactate; analgesia; antiemetics; oral refeeding within 24-48h; discharge in 3-5 days; cholecystectomy before discharge or within 2 weeks if gallstone aetiology; Chronic: PERT with meals; insulin if FCPD; low-fat diet; alcohol and tobacco cessation; pain management"
+      },
+      {
+        "level": 2,
+        "name": "Moderately Severe Acute Pancreatitis or Exacerbated Chronic Pancreatitis",
+        "description": "Acute: local complications or transient organ failure <48 hours. Chronic: acute-on-chronic episode; uncontrolled pain requiring escalation.",
+        "criteria": "Acute: BISAP 3; CRP >150 mg/L; local fluid collections; CT showing peripancreatic changes; Chronic: pain uncontrolled on current regimen; active acute-on-chronic episode; malnutrition (weight loss >10%); FCPD with poor glycaemic control",
+        "functional_impact": "Unable to eat; significant pain; hospital admission required; activity severely limited",
+        "management": "Hospital admission; IV fluids; IV analgesia; CT scan at 48-72h; enteral nutrition (NG tube feed); HDU monitoring; drain collections if symptomatic; adjust pain medications; GI and nutrition specialist review"
+      },
+      {
+        "level": 3,
+        "name": "Severe Acute Pancreatitis with Persistent Organ Failure",
+        "description": "Persistent single or multi-organ failure >48 hours — the defining feature of severe acute pancreatitis.",
+        "criteria": "Persistent organ failure (respiratory: SpO2 <90% or PaO2/FiO2 <300; renal: creatinine >170 mcmol/L; cardiovascular: SBP <90 despite fluids); BISAP 4-5; CRP >300 mg/L; CT severity index ≥7; extensive necrosis on CT",
+        "functional_impact": "ICU dependent; ventilated; dialysis; TPN or NJT feeds; completely incapacitated",
+        "management": "ICU mandatory; aggressive resuscitation; vasopressors; mechanical ventilation; renal replacement therapy; enteral nutrition via NJT (superior to TPN — maintains gut barrier, reduces bacterial translocation, reduces infectious complications); CT-guided drainage if infected necrosis; step-up surgical approach; multidisciplinary team"
+      },
+      {
+        "level": 4,
+        "name": "Critical — Infected Necrosis, Septic Shock, Multi-Organ Failure",
+        "description": "Life-threatening complications with infected pancreatic necrosis, septic shock, and multiple organ failure — the most lethal presentation of pancreatitis.",
+        "criteria": "Infected necrosis (gas in necrotic collection on CT; FNA positive culture; worsening despite antibiotics); septic shock (hypotension + lactate >2 mmol/L); multi-organ failure (≥2 organ systems); APACHE II score >20",
+        "management": "EMERGENCY: ICU; IV meropenem or imipenem; source control by step-up approach (EUS-guided drainage → VARD → open necrosectomy); vasopressors; ventilation; dialysis; nutritional support; surgical team involvement; mortality 30-40%"
+      }
+    ],
+
+    "causes": {
+      "mnemonic": "I GET SMASHED — a comprehensive aetiological mnemonic for acute pancreatitis",
+      "causes_detailed": [
+        {
+          "cause": "Idiopathic",
+          "proportion": "15-25% of acute pancreatitis",
+          "details": "No identifiable cause after standard evaluation; many 'idiopathic' cases are actually due to: biliary microlithiasis (tiny stones <2 mm not visible on ultrasound — identified on EUS or biliary drainage microscopy with polarised light); sphincter of Oddi dysfunction (SOD); occult genetic mutation; small ampullary tumours; a thorough search including EUS, genetic testing, and MRCP reduces idiopathic proportion to <5%"
+        },
+        {
+          "cause": "Gallstones (Cholelithiasis)",
+          "proportion": "40-50% of acute pancreatitis — the most common cause",
+          "details": "Small stones (<5 mm) more likely to cause pancreatitis (pass through cystic duct more easily and impact at the ampulla); impacted stone at ampulla of Vater → biliary and pancreatic obstruction simultaneously → intraductal hypertension → trypsinogen activation; CHOLECYSTECTOMY should be performed during the same admission (mild pancreatitis) or within 2 weeks (moderately severe) to prevent recurrence — recurrence rate without cholecystectomy: 25-30% within 6 weeks; ERCP within 24-72 hours if concurrent cholangitis or persistent CBD obstruction"
+        },
+        {
+          "cause": "Ethanol (Alcohol)",
+          "proportion": "25-35% globally; 40-50% in India for acute pancreatitis; 60-70% for chronic pancreatitis",
+          "details": "Ethanol increases pancreatic secretion while simultaneously causing ductal protein plug formation; acetaldehyde (ethanol metabolite) is directly cytotoxic to acinar cells; alcohol sensitises the pancreas to other triggers; typically requires years of heavy drinking (>5-10 years) before chronic pancreatitis develops; acute alcoholic pancreatitis may occur at any point in this timeline; alcohol + smoking acts synergistically — together accelerate chronic pancreatitis by 5-fold"
+        },
+        {
+          "cause": "Trauma / ERCP (post-procedural)",
+          "proportion": "Trauma: 1-2%; Post-ERCP pancreatitis: 3-5% of all ERCPs (the most common serious complication of ERCP)",
+          "details": "Blunt abdominal trauma (steering wheel, handlebars — epigastric compression); post-ERCP pancreatitis: prevented by rectal indomethacin 100 mg suppository immediately post-procedure (reduces PEP by 50-60%), aggressive IV fluid resuscitation; pancreatic stent placement in high-risk ERCP; post-ERCP pancreatitis can be very severe despite relatively low doses of contrast"
+        },
+        {
+          "cause": "Steroids and other Drugs",
+          "proportion": "1.5-2%",
+          "details": "See Type 05 (Drug-induced pancreatitis) above for full drug list"
+        },
+        {
+          "cause": "Mumps and other Viruses",
+          "proportion": "<1%",
+          "details": "Mumps virus (paramyxovirus) — tropism for pancreatic acinar cells and salivary glands; pancreatitis in mumps is usually mild; other viruses: Coxsackie B; CMV (in immunocompromised); HIV (direct acinar injury + antiretrovirals); Hepatitis B; EBV; COVID-19 (acute COVID and MIS-C in children)"
+        },
+        {
+          "cause": "Autoimmune Pancreatitis",
+          "proportion": "2-5%",
+          "details": "See TYPE-03 (Autoimmune Pancreatitis) above"
+        },
+        {
+          "cause": "Scorpion Sting",
+          "proportion": "<1% globally; regionally important in India",
+          "details": "Tityus trinitatis (Trinidad); MESOBUTHUS TAMULUS (INDIAN RED SCORPION — Mesobuthus tamulus; also called Buthus tamulus) — the most medically important scorpion in India; predominantly in Maharashtra, Andhra Pradesh, Tamil Nadu, Gujarat; causes systemic envenomation including ACUTE PANCREATITIS (mechanism: massive sympathetic and parasympathetic nerve stimulation → cholecystokinin-like hyperstimulation of pancreatic acinar cells → premature enzyme activation → acute pancreatitis); also causes cardiovascular toxicity, pulmonary oedema, myocarditis; management: prazosin (alpha-blocker — reverses sympathetic overactivation; reduces pancreatitis severity if given early); antivenom; supportive care; prazosin 500 mcg repeated every 3-4 hours dramatically reduces morbidity from Mesobuthus tamulus envenomation in India"
+        },
+        {
+          "cause": "Hypertriglyceridaemia",
+          "proportion": "5-10% of acute pancreatitis",
+          "details": "Serum triglycerides >1000 mg/dL (>11 mmol/L) cause acute pancreatitis through: release of toxic free fatty acids from triglyceride hydrolysis by pancreatic lipase (direct acinar cell injury); microvascular thrombosis in pancreatic capillaries from chylomicron hyperviscosity; typically associated with: type 1 hyperlipidaemia (familial lipoprotein lipase deficiency); type 5 hyperlipidaemia; secondary causes (untreated diabetes, hypothyroidism, nephrotic syndrome, combined OCP, glucocorticoids, alcohol); management: INSULIN INFUSION (dramatically lowers triglycerides within hours — stimulates lipoprotein lipase); plasmapheresis for extreme hypertriglyceridaemia (>2000 mg/dL) resistant to insulin; fibrates and omega-3 fatty acids for secondary prevention"
+        },
+        {
+          "cause": "Hypercalcaemia",
+          "proportion": "<1%",
+          "details": "Elevated serum calcium (usually >3 mmol/L) → premature trypsinogen activation within pancreas (calcium activates trypsinogen directly); causes: primary hyperparathyroidism (most common cause of hypercalcaemia-induced pancreatitis — parathyroid adenoma or hyperplasia); malignancy-associated hypercalcaemia; sarcoidosis; vitamin D toxicity; treatment: IV fluids; bisphosphonates; treat underlying cause (parathyroidectomy for primary HPT)"
+        },
+        {
+          "cause": "ERCP and Iatrogenic",
+          "proportion": "Post-ERCP pancreatitis: 3-5% of all ERCPs",
+          "details": "Most preventable cause; prophylactic rectal indomethacin mandatory; aggressive IV fluid resuscitation peri-procedurally; pancreatic duct stenting in high-risk cases"
+        },
+        {
+          "cause": "Drugs",
+          "details": "See TYPE-05 above"
+        },
+        {
+          "cause": "Additional India-Specific Causes",
+          "details": "Tropical chronic pancreatitis (see TYPE-03); Ascaris lumbricoides (roundworm) migration into the pancreatic duct (ampullary obstruction); Clonorchis sinensis (liver fluke — biliary and pancreatic duct infestation); Typhoid fever (rare); organophosphate poisoning (acetylcholinesterase inhibition → excessive pancreatic stimulation)"
+        }
+      ]
+    },
+
+    "symptoms": {
+      "overview": "The clinical presentation of pancreatitis varies significantly between acute and chronic forms. ACUTE PANCREATITIS presents suddenly and dramatically — severe upper abdominal pain radiating to the back, nausea, vomiting, and fever. CHRONIC PANCREATITIS presents more insidiously — chronic or recurrent epigastric pain, progressive weight loss from fat malabsorption (steatorrhoea), and ultimately diabetes. The hallmark pain of pancreatitis (both acute and chronic) is its retroperitoneal character — patients describe it as 'going through' or 'boring' from the front of the abdomen to the back, as if the pain is penetrating from the epigastrium straight through to the lumbar region. Sitting forward or leaning over reduces the pain (reduces tension on the inflamed retroperitoneal pancreas) — a characteristic posture of pancreatitis patients.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-1501",
+          "name": "Epigastric Pain Radiating to the Back — Cardinal Symptom",
+          "description": "The defining symptom of pancreatitis — severe, constant (not colicky), deep boring epigastric or upper abdominal pain radiating to the BACK (mid-back, T10-L1 level) or both flanks, sometimes described as a band-like sensation encircling the upper abdomen. ONSET: sudden in acute pancreatitis — may build rapidly over 30-60 minutes to peak intensity; gradual and persistent in chronic pancreatitis. SEVERITY: severe to excruciating in acute; variable in chronic (may be constant background ache with acute-on-chronic flares). POSTURE: CLASSIC POSTURE — leaning forward (sitting hunched, 'fetal position', 'praying position') partially relieves pain — a diagnostic characteristic distinguishing pancreatitis from other abdominal conditions. Lying supine significantly worsens pain (stretches the inflamed retroperitoneal pancreas against the spine). CHARACTER: constant, not colicky (no remissions), aching, boring, may be described as 'crushing' or 'knife in the back'. In chronic pancreatitis: the pain may follow meals (particularly fatty meals — which stimulate CCK and pancreatic secretion against a stenosed duct → ductal hypertension → pain); or may be constant without meal relationship in late-stage burnt-out disease.",
+          "severity": "Severe to Excruciating (acute); Variable Mild-Severe (chronic)",
+          "onset": "Sudden (acute); Gradual chronic over months-years",
+          "clinical_importance": "The absence of abdominal rigidity (which is present in bowel perforation) and the pancreatic pain radiation pattern (back radiation) help distinguish pancreatitis from peptic ulcer perforation — though both cause severe upper abdominal pain and both can coexist"
+        },
+        {
+          "id": "SYM-1502",
+          "name": "Nausea and Vomiting",
+          "description": "Almost universal in acute pancreatitis — affecting >80% of patients. Vomiting is typically profuse, bile-stained, and does NOT relieve the pain (unlike peptic ulcer or biliary colic where vomiting may briefly reduce pain). Vomiting in pancreatitis results from: direct retroperitoneal inflammation stimulating visceral afferents; paralytic ileus from peritoneal irritation by inflammatory exudate; opiate analgesic administration; hyperacidaemia in some cases. Persistent vomiting prevents oral rehydration — central to the requirement for IV fluid therapy.",
+          "severity": "Moderate to Severe in acute; Mild to Moderate in chronic"
+        },
+        {
+          "id": "SYM-1503",
+          "name": "Fever",
+          "description": "Low to moderate fever (38-39°C) is common in acute pancreatitis — from systemic release of pro-inflammatory cytokines (IL-1, TNF-alpha, IL-6 from activated macrophages and neutrophils). HIGH FEVER (>39.5°C) with rigors in a patient with acute pancreatitis suggests: infected pancreatic necrosis; ascending cholangitis (concurrent biliary obstruction); biliary sepsis. New fever developing after initial clinical improvement (5-7+ days into illness) in severe pancreatitis = INFECTED NECROSIS until proven otherwise — CT scan and CT-guided FNA required.",
+          "severity": "Low-grade in mild; High fever indicates infected necrosis/sepsis"
+        },
+        {
+          "id": "SYM-1504",
+          "name": "Steatorrhoea — Fatty Diarrhoea (Chronic Pancreatitis)",
+          "description": "The cardinal gastrointestinal symptom of exocrine pancreatic insufficiency (EPI) — occurring in chronic pancreatitis when >90% of exocrine function is lost. Steatorrhoea presents as pale, bulky, greasy, foul-smelling stools that float in the toilet water (from fat content) and are difficult to flush (steatorrhoea — stool fat >7 g/day; normal <7 g/day). Patients may notice an oily film on the toilet water. Accompanying symptoms: bloating; flatulence; abdominal cramping; fat-soluble vitamin deficiency (Vitamins A, D, E, K — fat-soluble; malabsorption leads to night blindness, osteomalacia, neuropathy from Vitamin E deficiency, and bleeding tendency from Vitamin K deficiency).",
+          "severity": "Mild to Severe",
+          "note": "Steatorrhoea is a LATE manifestation of chronic pancreatitis — it only appears when >90% of exocrine function is destroyed; earlier signs of chronic pancreatitis (pain, duct dilation) occur long before steatorrhoea"
+        },
+        {
+          "id": "SYM-1505",
+          "name": "Weight Loss and Malnutrition",
+          "description": "Progressive and often severe weight loss in chronic pancreatitis from multiple mechanisms: (1) Reduced food intake — eating exacerbates pain (postprandial pain — 'food fear'); (2) Fat malabsorption from EPI — steatorrhoea wastes calories; (3) Glucose intolerance and diabetes (FCPD) — increased catabolism; (4) Alcohol abuse contributing to nutritional neglect. In Tropical Chronic Pancreatitis: weight loss and malnutrition are often severe; patients may be extremely underweight (BMI 14-16). Nutritional rehabilitation is a cornerstone of TCP management.",
+          "severity": "Moderate to Severe in chronic and TCP"
+        },
+        {
+          "id": "SYM-1506",
+          "name": "Jaundice (Acute or Chronic — Obstruction)",
+          "description": "Jaundice in pancreatitis results from: BILIARY OBSTRUCTION — a CBD stone causing simultaneous pancreatitis AND biliary obstruction (gallstone pancreatitis + cholangitis); the inflamed pancreatic head compressing the intrapancreatic portion of the CBD (inflammatory CBD stricture in acute pancreatitis — usually resolves); chronic fibrotic CBD stricture from chronic pancreatitis (particularly from pancreatic head inflammation); pancreatic pseudocyst or WON compressing the CBD; pancreatic cancer (important differential in chronic pancreatitis patients developing new painless jaundice — urgent investigation). Jaundice with fever and RUQ pain = cholangitis = EMERGENCY.",
+          "severity": "Variable",
+          "clinical_importance": "New onset jaundice in a patient with established chronic pancreatitis is an ALARM FEATURE for pancreatic cancer — urgent EUS and CT staging required"
+        },
+        {
+          "id": "SYM-1507",
+          "name": "Hyperglycaemia and Diabetes (Type 3c — Pancreatogenic Diabetes)",
+          "description": "Endocrine insufficiency from islet cell destruction — occurring in 20-30% of chronic pancreatitis patients and in 30-60% of Tropical Chronic Pancreatitis patients (Fibrocalculous Pancreatic Diabetes — FCPD). Type 3c diabetes (pancreatogenic diabetes) is distinct from Type 1 and Type 2 diabetes: loss of BOTH alpha cells (glucagon) AND beta cells (insulin) causes unstable, brittle glycaemia; absence of glucagon counterregulation makes hypoglycaemia particularly dangerous and difficult to detect (hypoglycaemia unawareness); patients often require insulin but have very low daily insulin requirements from concomitant malabsorption reducing glucose load; initial polyuria, polydipsia, weight loss are the presenting features.",
+          "severity": "Moderate to Severe",
+          "india_specific": "FCPD in TCP patients is often severe, brittle, and difficult to manage; ketoacidosis is uncommon (some residual C-peptide); hypoglycaemia is the more dangerous acute complication; poor glycaemic control accelerates diabetic complications (retinopathy, nephropathy, neuropathy) in young TCP patients"
+        }
+      ],
+      "secondary_symptoms": [
+        "Abdominal distension and paralytic ileus — from retroperitoneal inflammation; severe acute pancreatitis; absent bowel sounds",
+        "Grey Turner's sign (flank bruising — bluish-purple discolouration) — retroperitoneal haemorrhage tracking along fascial planes to flanks; present in <3% of acute pancreatitis; indicates haemorrhagic necrotising pancreatitis; very poor prognostic sign",
+        "Cullen's sign (periumbilical bruising — bluish discolouration around the navel) — blood tracking from retroperitoneum to umbilicus via falciform ligament; similarly rare and prognostically ominous",
+        "Tachycardia and hypotension — from systemic inflammatory response and fluid sequestration ('third spacing') into retroperitoneum and peritoneum; early sign of moderate-severe acute pancreatitis",
+        "Respiratory distress — ARDS (Acute Respiratory Distress Syndrome) complicating severe acute pancreatitis; dyspnoea; hypoxaemia; bilateral infiltrates on chest X-ray; caused by pancreatic phospholipase A2 attacking pulmonary surfactant",
+        "Pleural effusion — left-sided or bilateral; from pancreatic enzyme-rich fluid tracking superiorly via lymphatics; amylase-rich pleural fluid is pathognomonic of pancreatic pleural effusion; may indicate pancreatic duct disruption in chronic pancreatitis",
+        "Pancreatic ascites — enzyme-rich (very high amylase) peritoneal fluid from pancreatic duct disruption; indicates duct tear or pseudocyst rupture",
+        "Tetany — rare; from hypocalcaemia (calcium chelated by released fatty acids — saponification of peripancreatic fat by pancreatic lipase); low serum calcium (<2 mmol/L) in severe acute pancreatitis is a poor prognostic feature (Ranson's criterion)"
+      ],
+      "warning_signs_severe_pancreatitis": [
+        "Tachycardia >120 bpm not improving with IV fluids — possible systemic inflammatory response or occult haemorrhage",
+        "Oxygen saturation <94% on room air — early ARDS from pancreatitis",
+        "Oliguria (urine output <0.5 mL/kg/hr) despite adequate IV fluids — acute kidney injury",
+        "Rising serum creatinine >170 mcmol/L — renal failure",
+        "Confusion or altered consciousness — septic encephalopathy or severe electrolyte disturbance",
+        "New fever (>39°C) after initial improvement at 5-7 days — infected necrosis (not 'spontaneous fever from pancreatitis' — new fever always requires CT and consideration of FNA)",
+        "Gas bubbles in pancreatic area on CT — INFECTED NECROSIS — immediate antibiotics and step-up drainage",
+        "Grey Turner's or Cullen's sign — haemorrhagic pancreatitis — extreme severity"
+      ]
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Onset and character of pain — sudden vs gradual; epigastric location; back radiation; postural modification (sitting forward relieves pain — characteristic); duration; severity (NRS/10)",
+        "Dietary history immediately before onset — last meal; fatty meal? Large meal? Restaurant food? — biliary aetiology suspicion",
+        "Alcohol history — amount (g/day); frequency; duration; last drink; type of alcohol; binge drinking pattern vs sustained heavy use",
+        "Smoking history — pack-years; current or past smoker (synergistic with alcohol for chronic pancreatitis)",
+        "Medication history — ALL medications including herbal preparations; azathioprine; 6-MP; valproate; tetracyclines; GLP-1 agonists; oestrogens; diuretics; statins",
+        "Previous episodes — prior pancreatitis (acute or chronic); number of prior hospitalisations; what investigations were performed previously; cause identified?",
+        "Gallstone history — previous gallstone diagnosis; symptoms of biliary colic; previous cholecystectomy (if yes — gallstone as current cause unlikely but CBD stones still possible)",
+        "ERCP history — recent ERCP within 72 hours (post-ERCP pancreatitis)",
+        "Abdominal trauma — recent injury; steering wheel impact; sports injury",
+        "Family history — pancreatitis; pancreatic cancer; cystic fibrosis; hereditary pancreatitis (PRSS1 mutations)",
+        "Diet and nutritional history (for TCP assessment) — cassava (tapioca) consumption; malnutrition in childhood; rural South India origin; young age + non-alcoholic + pancreatic calcifications = TCP",
+        "Diabetes history — recent onset of diabetes; polyuria, polydipsia; HbA1c; insulin use (new onset diabetes in chronic pancreatitis patient = rule out pancreatic cancer)",
+        "Lipid profile — known hypertriglyceridaemia; fasting lipid history; diabetes-associated dyslipidaemia",
+        "Calcium history — hypercalcaemia symptoms (bone pain, stones, groans, moans); hyperparathyroidism; vitamin D supplements in high dose",
+        "Scorpion sting history — in Maharashtra, Gujarat, Andhra Pradesh, Tamil Nadu — ask specifically about scorpion sting 12-48 hours before onset"
+      ],
+      "physical_examination": [
+        "Vital signs — temperature (fever = infection or SIRS); heart rate (tachycardia = SIRS, dehydration, sepsis); blood pressure (hypotension = severe pancreatitis, septic shock); respiratory rate and SpO2 (hypoxaemia = ARDS, pleural effusion); urine output monitoring (oliguria = AKI)",
+        "General appearance — distress level; posture (hunched forward = characteristic pancreatitis posture); pallor (anaemia from chronic disease or haemorrhagic pancreatitis); jaundice (biliary obstruction); nutritional status (wasting in chronic pancreatitis — particularly TCP patients)",
+        "Abdominal examination:",
+        "INSPECTION: Cullen's sign (periumbilical bruising — haemorrhagic pancreatitis); Grey Turner's sign (flank bruising); abdominal distension (ileus, ascites); visible peristalsis (obstruction)",
+        "PALPATION: Epigastric tenderness (most prominent finding — often severe guarding and voluntary rigidity; peritonism indicates more severe disease; epigastric mass = pseudocyst); rebound tenderness (peritoneal irritation); hepatomegaly or splenomegaly (portal/splenic vein thrombosis in chronic pancreatitis — important complication); Courvoisier's sign: painless palpable distended gallbladder + jaundice = pancreatic head mass (cancer) NOT pancreatitis (gallstone obstruction contracts the gallbladder)",
+        "PERCUSSION: Shifting dullness (ascites — pancreatic); dullness at lung bases (pleural effusion — left > right in pancreatitis)",
+        "AUSCULTATION: Absent or markedly reduced bowel sounds (ileus from retroperitoneal inflammation); reduced air entry at left base (pleural effusion)",
+        "Skin — xanthomata or xanthelasma (hyperlipidaemia-associated pancreatitis); jaundice scleral assessment; lipemic retinalis on fundoscopy (gross hypertriglyceridaemia — milky/creamy plasma)",
+        "Signs of chronic liver disease — spider naevi, palmar erythema, caput medusae (portal hypertension from splenic vein thrombosis in chronic pancreatitis); gynaecomastia; testicular atrophy (alcoholic chronic pancreatitis)",
+        "Signs of scorpion envenomation — if relevant history: piloerection; diaphoresis; tachyarrhythmia; hypertension followed by hypotension; localised wound (often on hands/feet); sympathetic overactivation"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Serum Lipase — Gold Standard Biochemical Diagnosis",
+          "type": "Blood — Enzymatic",
+          "description": "The PREFERRED biochemical test for diagnosing acute pancreatitis — superior to serum amylase in sensitivity (80-100%) and specificity (85-99%). Serum lipase rises 4-8 hours after acute pancreatitis onset, peaks at 24 hours, and remains elevated for 7-14 days (much longer than amylase — 3-5 days). Lipase is produced almost exclusively by the pancreatic acini — making it more specific than amylase (which is produced by salivary glands, bowel, ovaries, and fallopian tubes — these non-pancreatic sources can raise amylase without pancreatitis). The diagnostic threshold is ≥3× upper limit of normal (≥3× ULN).",
+          "purpose": "Diagnose acute pancreatitis; the height of elevation does NOT correlate with disease severity",
+          "key_metric": "Lipase ≥3× ULN = acute pancreatitis diagnosis (combined with clinical features); normal: <60-80 U/L depending on laboratory; ACG guidelines: lipase >3× ULN is the biochemical diagnostic criterion for acute pancreatitis",
+          "note": "Lipase elevation does NOT correlate with severity — a mildly ill patient can have extremely high lipase; a severely ill patient with pancreatic burn-out may have nearly normal lipase"
+        },
+        {
+          "test_name": "Serum Amylase",
+          "type": "Blood — Enzymatic",
+          "description": "Rises rapidly within 2-12 hours of acute pancreatitis onset but returns to normal within 3-5 days (much earlier than lipase — thus lipase is preferred for patients presenting late). The diagnostic threshold is ≥3× ULN. FALSE POSITIVES for elevated amylase are important: bowel ischaemia; perforated peptic ulcer; salivary gland disease; parotitis; renal failure (reduced amylase clearance); macroamylasaemia; ectopic pregnancy; ovarian tumours.",
+          "purpose": "Historical gold standard for acute pancreatitis diagnosis; now superseded by lipase at most centres",
+          "key_metric": "Amylase ≥3× ULN = supports acute pancreatitis diagnosis"
+        },
+        {
+          "test_name": "Contrast-Enhanced CT Scan (CECT) Abdomen — Gold Standard for Severity Assessment",
+          "type": "Imaging — Computed Tomography",
+          "description": "The definitive imaging modality for assessing severity, local complications, and necrosis in acute pancreatitis. IV contrast is essential — areas of non-enhancement after contrast = pancreatic necrosis (areas of ischaemic acinar destruction). CT should NOT be performed within the first 48-72 hours of onset (pancreatic necrosis takes time to declare — early CT may underestimate extent of necrosis and is not useful for immediate management of mild pancreatitis). INDICATIONS for CT: all patients with moderately severe or severe pancreatitis; patients not improving at 72 hours; suspected infected necrosis (new fever, rising inflammatory markers after initial improvement); baseline prior to any intervention.",
+          "purpose": "Quantify necrosis extent (CT Severity Index / Balthazar score); identify local complications (fluid collections, pseudocysts, WON); detect complications (portal/splenic vein thrombosis, pseudoaneurysm, ascites); guide interventional drainage; detect infected necrosis (gas within collection); pancreatic cancer surveillance in chronic pancreatitis",
+          "key_metric": "Balthazar CT Grade (A-E) + Necrosis Score = CTSI 0-10; non-enhanced pancreatic parenchyma on IV contrast = necrosis; gas within collection = infected necrosis (pathognomonic)",
+          "timing": "Perform at 48-72 hours in moderate-severe pancreatitis; not routine in mild pancreatitis (adds radiation, cost, and IV contrast risk without changing management)"
+        },
+        {
+          "test_name": "Abdominal Ultrasound",
+          "type": "Imaging — Ultrasound",
+          "description": "The FIRST-LINE IMAGING INVESTIGATION for all acute pancreatitis — to assess for GALLSTONES (the most common cause) and biliary dilation. Ultrasound is NOT sensitive for detecting pancreatic necrosis or early pancreatic changes (overlying bowel gas obscures the pancreas in most acute pancreatitis patients) — CT is required for severity assessment. Ultrasound findings in acute pancreatitis: gallstones in gallbladder; dilated CBD (>6 mm = possible CBD stone causing obstruction); oedematous pancreas (when visible — appears enlarged and hypoechoic); peripancreatic fluid; pseudocysts (rounded, well-defined, anechoic).",
+          "purpose": "Identify gallstones and biliary aetiology (performed in ALL acute pancreatitis patients); screen for biliary obstruction; detect pseudocysts in chronic pancreatitis; guided aspiration of collections",
+          "key_metric": "Gallstones in GB + acute pancreatitis = gallstone pancreatitis aetiology; dilated CBD = biliary obstruction; pericholecystic fluid + thickened GB wall = concomitant acute cholecystitis"
+        },
+        {
+          "test_name": "MRCP (Magnetic Resonance Cholangiopancreatography)",
+          "type": "Imaging — MRI",
+          "description": "Detailed non-invasive visualisation of the entire biliary and pancreatic ductal system — particularly important in chronic pancreatitis evaluation. MRCP superiority over CT in pancreatitis: (1) Characterises ductal anatomy in chronic pancreatitis (strictures, dilation patterns, ductal stones, pancreas divisum); (2) Detects CBD stones before ERCP; (3) Identifies pancreatic duct disruption (causing pseudocysts or ascites); (4) Better characterisation of WON contents (solid vs liquid — guides drainage approach); (5) No radiation. In CHRONIC PANCREATITIS: MRCP shows the 'chain-of-lakes' appearance (alternating dilations and strictures) or 'beaded duct' pattern; demonstrates large intraductal stones (TCP); reveals complete ductal anatomy before surgical drainage procedures (Puestow operation).",
+          "purpose": "Evaluate pancreatic and biliary ducts; detect CBD stones; characterise chronic pancreatitis ductal changes; TCP assessment (duct dilation and stones); pre-ERCP and pre-surgical planning; pancreatic duct disruption"
+        },
+        {
+          "test_name": "Endoscopic Ultrasound (EUS)",
+          "type": "Endoscopy / Ultrasound",
+          "description": "A high-frequency ultrasound probe on an endoscope positioned in the duodenum or stomach provides ultra-high-resolution pancreatic and biliary imaging. EUS superiority: detects pancreatic microlithiasis (tiny stones <2 mm not visible on transabdominal ultrasound — the most common cause of 'idiopathic' recurrent acute pancreatitis); detects early chronic pancreatitis changes (parenchymal and ductal features — Rosemont criteria); characterises cystic lesions; guides FNA of necrotic collections; guides endoscopic drainage (EUS-guided transmural drainage of pseudocysts and WON — EUS identifies the optimal puncture site and avoids intervening blood vessels).",
+          "purpose": "Investigate 'idiopathic' acute pancreatitis (detect microlithiasis, occult CBD stones, SOD); diagnose early chronic pancreatitis (Rosemont criteria); characterise cystic pancreatic lesions; guide drainage of pseudocysts and WON; detect early pancreatic cancer in chronic pancreatitis surveillance"
+        },
+        {
+          "test_name": "Faecal Elastase-1 (FE-1) — Exocrine Insufficiency Test",
+          "type": "Stool — Enzymatic",
+          "description": "The most widely used non-invasive test for exocrine pancreatic insufficiency (EPI) — measuring the concentration of elastase-1 enzyme (produced exclusively by pancreatic acinar cells) in stool. Human pancreatic elastase-1 is stable through gut transit and concentrated approximately 5× in stool vs duodenal juice — allowing accurate measurement even without pancreatic stimulation. Sensitivity: 73-100% for moderate-severe EPI; 63% for mild EPI.",
+          "purpose": "Diagnose exocrine pancreatic insufficiency in chronic pancreatitis; determine when to start PERT; assess severity of EPI; screen for EPI in TCP patients (where it develops early due to severe ductal obstruction)",
+          "key_metric": "FE-1 >200 mcg/g stool = normal exocrine function; 100-200 mcg/g = mild-moderate EPI; <100 mcg/g = severe EPI — PERT mandatory; false low results with diarrhoea (dilution effect — collect formed stool only)",
+          "alternatives": "72-hour faecal fat quantification (gold standard for fat malabsorption — labour intensive; 7g/day = steatorrhoea); secretin-stimulated MRCP (direct ductal flow measurement — very sensitive for early EPI; used at specialist centres)"
+        },
+        {
+          "test_name": "C-Reactive Protein (CRP) at 48 Hours",
+          "type": "Blood — Inflammatory",
+          "description": "CRP is the most important PROGNOSTIC marker in acute pancreatitis at 48 hours — when the inflammatory cytokine cascade has had time to manifest. CRP >150 mg/L at 48 hours has sensitivity of 80% and specificity of 76% for predicting severe acute pancreatitis. Peak CRP at 72 hours further refines prognostication.",
+          "purpose": "Predict severity at 48-72 hours; guide ICU admission decisions; monitor response to treatment",
+          "key_metric": "CRP >150 mg/L at 48h = moderately severe/severe pancreatitis prediction; CRP <150 mg/L at 48h + BISAP ≤2 = likely mild pancreatitis"
+        },
+        {
+          "test_name": "Serum Triglycerides and Fasting Lipid Profile",
+          "type": "Blood — Biochemical",
+          "description": "MUST be measured in all acute pancreatitis patients where aetiology is unclear — hypertriglyceridaemia is a treatable cause. A sample from a hypertriglyceridaemia patient's blood typically appears MILKY or CREAMY (lipaemic serum — grossly visible when triglycerides >1000 mg/dL). Importantly, gross hypertriglyceridaemia causes FALSELY LOW serum amylase (dilution effect from icteric/lipaemic sample) — pancreatitis from hypertriglyceridaemia may have misleadingly low or near-normal amylase; USE LIPASE instead or use urine amylase.",
+          "purpose": "Identify hypertriglyceridaemia as aetiology; guide treatment (insulin infusion; fibrates); prevent recurrence",
+          "key_metric": "Triglycerides >1000 mg/dL (>11 mmol/L) = risk factor; >2000 mg/dL = high risk; consider plasmapheresis"
+        },
+        {
+          "test_name": "Serum Calcium",
+          "type": "Blood — Biochemical",
+          "description": "Hypercalcaemia (>3 mmol/L) can cause acute pancreatitis; hypocalcaemia occurs as a COMPLICATION of severe acute pancreatitis (calcium chelated by released fatty acids — saponification). Both are clinically important to detect. Low calcium <2 mmol/L in severe pancreatitis is a Ranson's prognostic criterion and requires IV calcium gluconate replacement.",
+          "purpose": "Identify hypercalcaemia as aetiology; detect hypocalcaemia complication (tetany risk); Ranson scoring"
+        },
+        {
+          "test_name": "IgG4 Level",
+          "type": "Blood — Immunological",
+          "description": "Serum IgG4 is elevated in Type 1 autoimmune pancreatitis (AIP) — an IgG4-related disease. IgG4 >2× ULN (>2.8 g/L) is highly specific (>95%) for AIP Type 1 — though false positives occur in pancreatic cancer and primary sclerosing cholangitis. IgG4 is NORMAL in Type 2 AIP. Sensitivity of IgG4 for AIP Type 1 is only 70-75% — 25-30% of confirmed AIP has normal IgG4.",
+          "purpose": "Screen for autoimmune pancreatitis Type 1; aid in differentiating AIP from pancreatic cancer (critical differential)",
+          "key_metric": "IgG4 >2× ULN (>2.8 g/L): highly specific for AIP Type 1; IgG4 >4× ULN: nearly diagnostic"
+        },
+        {
+          "test_name": "CT-Guided Fine Needle Aspiration (FNA) of Necrotic Collection",
+          "type": "Interventional Radiology",
+          "description": "CT-guided percutaneous insertion of a fine needle into a necrotic collection to aspirate material for Gram stain and culture — confirming infected vs sterile necrosis. This distinction is critical because: STERILE NECROSIS is managed conservatively without antibiotics (antibiotics provide no benefit for sterile necrosis and drive resistance); INFECTED NECROSIS requires antibiotics AND drainage. FNA should be performed when: clinical deterioration with fever 5-7+ days after onset; gas in necrotic collection on CT (pathognomonic of infection — FNA not required in this case — treat as infected); clinical suspicion of infection.",
+          "purpose": "Confirm infected vs sterile necrosis; guide antibiotic decisions; identify organisms for targeted therapy"
+        },
+        {
+          "test_name": "Genetic Testing — SPINK1, PRSS1, CFTR, CTRC",
+          "type": "Molecular Genetics",
+          "description": "Genetic testing for hereditary and tropical pancreatitis susceptibility genes — recommended in: young patients (<35 years) with recurrent acute or chronic pancreatitis without alcoholic or gallstone cause; TCP patients (SPINK1 N34S mutation testing); family history of pancreatitis; unexplained childhood pancreatitis; patients being considered for total pancreatectomy with islet autotransplantation (TP-IAT). In India: SPINK1 N34S mutation testing is available at AIIMS Delhi, PGI Chandigarh, CMC Vellore, and several major medical centres.",
+          "purpose": "Identify genetic cause of pancreatitis; guide counselling; family screening; surgical decision-making",
+          "india_note": "SPINK1 N34S is the most clinically important genetic variant for Tropical Chronic Pancreatitis in India — found in 25-40% of TCP patients; heterozygous for SPINK1 with normal CFTR represents a significant risk"
+        },
+        {
+          "test_name": "HbA1c and C-Peptide — Pancreatogenic Diabetes Assessment",
+          "type": "Blood — Endocrinological",
+          "description": "Essential in all chronic pancreatitis patients — to assess for Type 3c pancreatogenic diabetes. HbA1c reflects average glycaemia over 3 months; C-peptide measures endogenous insulin secretory capacity (produced equimolarly with insulin by beta cells). In FCPD/Type 3c diabetes: C-peptide is very LOW (but often detectable — unlike Type 1 diabetes where C-peptide is completely absent); absence of ketoacidosis in severe hyperglycaemia; very low insulin requirements with significant hypoglycaemia risk.",
+          "purpose": "Diagnose pancreatogenic diabetes; classify diabetes type (Type 3c vs Type 1 vs Type 2 — important for management); assess residual beta cell function (C-peptide); guide insulin therapy",
+          "key_metric": "HbA1c >48 mmol/mol (6.5%) = diabetes diagnostic criterion; C-peptide <0.2 nmol/L = severe beta cell deficiency"
+        },
+        {
+          "test_name": "Tumour Markers — CA 19-9 and CEA",
+          "type": "Blood — Tumour Markers",
+          "description": "CA 19-9 monitoring in chronic pancreatitis patients for pancreatic cancer surveillance — particularly in TCP and hereditary pancreatitis (very high cancer risk). CA 19-9 is NOT a screening test (insufficient sensitivity — 80% sensitivity; specificity — elevated in biliary obstruction, cholangitis, pancreatitis flares); but a rising CA 19-9 in a chronic pancreatitis patient with new symptoms (new pain, weight loss, jaundice) warrants urgent EUS and CT. Baseline CA 19-9 should be established in all chronic pancreatitis patients.",
+          "purpose": "Cancer surveillance in high-risk chronic pancreatitis; monitor for cancer development in TCP, hereditary pancreatitis, AIP"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "Treatment of pancreatitis is primarily SUPPORTIVE for acute episodes (fluid resuscitation is the most critical intervention) and SUBSTITUTIVE for chronic disease (pancreatic enzyme replacement therapy — PERT — and insulin for loss of exocrine and endocrine function). Antibiotics are used ONLY for documented infected necrosis — NOT prophylactically. The role of nutrition has shifted dramatically: early enteral nutrition (nasogastric or nasojejunal feeding within 24-48 hours) is now strongly preferred over prolonged NPO and TPN — maintaining gut barrier integrity, reducing bacterial translocation, and reducing infectious complications.",
+      "treatment_principles": [
+        "1. IV FLUID RESUSCITATION is the single most critical and most evidence-based intervention for acute pancreatitis — 'fluid is medicine'; Ringer's Lactate preferred over normal saline; aggressive early resuscitation within the first 24-48 hours reduces organ failure and mortality",
+        "2. ANALGESIA: adequate analgesia is essential — undertreated pain increases sympathetic activation, worsening outcome; opioids are appropriate and safe; NSAIDs are useful adjuncts",
+        "3. EARLY ENTERAL NUTRITION within 24-48 hours (whenever tolerated) is superior to prolonged NPO and TPN — reduces infectious complications by maintaining gut mucosal barrier; nasogastric route is safe for mild-moderate pancreatitis; nasojejunal route for patients who cannot tolerate nasogastric",
+        "4. ANTIBIOTICS ONLY FOR DOCUMENTED INFECTED NECROSIS — never prophylactic antibiotics for acute pancreatitis (no evidence of benefit; drives resistance; increases Candida risk); meropenem or imipenem for infected necrosis",
+        "5. PERT (Pancreatic Enzyme Replacement Therapy) is the cornerstone of chronic pancreatitis management for exocrine insufficiency — given WITH EVERY MEAL AND SNACK",
+        "6. INSULIN for Type 3c diabetes — handle with extreme caution given hypoglycaemia unawareness and absent glucagon counterregulation",
+        "7. ALCOHOL AND TOBACCO CESSATION are the only disease-modifying interventions for alcoholic chronic pancreatitis — no medication substitutes for complete abstinence"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-191",
+          "category_name": "IV Fluid Resuscitation — THE MOST CRITICAL ACUTE TREATMENT",
+          "purpose": "Replace massive fluid losses from vomiting and 'third spacing' (fluid sequestration into retroperitoneum, peritoneum, and bowel lumen from inflammatory vasodilation and capillary leak); maintain pancreatic microcirculation to prevent ischaemia and necrosis; reduce SIRS progression; reduce organ failure risk.",
+          "medicines": [
+            {
+              "name": "Ringer's Lactate (Hartmann's Solution) — Preferred IV Fluid",
+              "brand_examples": ["Ringer's Lactate IV", "Hartmann's IV", "RL"],
+              "form": "IV infusion",
+              "dosage": "MILD ACUTE PANCREATITIS: 250-500 mL/hour for first 12-24 hours; total 3-5 litres in first 24 hours; reassess every 4-6 hours; target: urine output >0.5 mL/kg/hour; heart rate <100 bpm; no significant thirst; BUN declining. MODERATE-SEVERE: 500 mL bolus then 250-500 mL/hour with close monitoring; may require 5-10 litres in first 24 hours; reassess every 1-2 hours in ICU",
+              "use_case": "The CORNERSTONE of acute pancreatitis treatment — aggressive early Ringer's Lactate resuscitation in the first 24-48 hours; the WATERFALL RCT (2021) and URGE TRIAL demonstrated Ringer's Lactate superiority over normal saline: reduces SIRS rate (35% → 23%), reduces moderate-severe pancreatitis rate, reduces organ failure",
+              "mechanism": "Ringer's Lactate contains lactate which is metabolised to bicarbonate — corrects metabolic acidosis from SIRS; contains potassium and calcium at physiological concentrations; anti-inflammatory property of lactate reduces NF-κB activation in acinar cells; avoids hyperchloraemic acidosis from normal saline",
+              "monitoring": "Vital signs every 1-4 hours; urine output hourly (catheterise in severe pancreatitis); BUN (trend — falling BUN = adequate resuscitation); haematocrit (falling from initial haemoconcentration = good resuscitation); clinical reassessment for fluid overload (bilateral crackles, worsening oxygenation — especially in elderly and cardiac disease)",
+              "caution": "Avoid over-resuscitation — overly aggressive fluid resuscitation in delayed presentations causes abdominal compartment syndrome, worsening ARDS, and increased mortality; reassess fluid need at 24-48 hours"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-192",
+          "category_name": "Analgesia — Acute Pancreatitis Pain Management",
+          "purpose": "Adequate pain control — essential for patient comfort, reduction of sympathetic activation, and reduction of splanchnic vasoconstriction that worsens pancreatic ischaemia.",
+          "medicines": [
+            {
+              "name": "Diclofenac / Ketorolac (IV/IM NSAIDs)",
+              "brand_examples": ["Diclofenac: Voveran, Voltaren IV; Ketorolac: Ketanov, Toradol"],
+              "form": "IV infusion or IM injection",
+              "dosage": "Diclofenac 75 mg IV over 30-60 min every 8-12 hours; Ketorolac 30 mg IV/IM every 6 hours (maximum 5 days)",
+              "use_case": "Initial analgesia for mild-moderate pancreatitis pain; anti-inflammatory component; combine with opioids for moderate-severe pain; IV paracetamol 1g every 6 hours as opioid-sparing adjunct",
+              "caution": "Avoid in AKI (renal impairment — NSAIDs reduce renal perfusion); avoid with active GI bleeding; limit to 5 days maximum"
+            },
+            {
+              "name": "Morphine (IV PCA) / Pethidine",
+              "brand_examples": ["Morphine sulphate injection", "Pethidine injection"],
+              "form": "IV infusion; IV patient-controlled analgesia (PCA); IM",
+              "dosage": "Morphine: 2-4 mg IV every 4 hours (titrate to pain control); PCA: 1 mg/actuation with 5-minute lockout; Pethidine: 50-100 mg IM every 4-6 hours",
+              "use_case": "Moderate to severe acute pancreatitis pain requiring hospital admission; the historical concern that morphine causes sphincter of Oddi spasm worsening pancreatitis is OUTDATED — morphine is safe in pancreatitis; pethidine has no proven advantage and norpethidine accumulates causing seizures with repeated dosing",
+              "note": "Opioid-sparing multimodal analgesia (IV paracetamol + NSAID + low-dose opioid) reduces opioid side effects (nausea, constipation, respiratory depression, ileus)"
+            },
+            {
+              "name": "Tramadol",
+              "brand_examples": ["Tramazac", "Ultram"],
+              "form": "IV/IM/oral",
+              "dosage": "50-100 mg IV/IM every 6-8 hours; 50-100 mg oral every 6-8 hours",
+              "use_case": "Moderate pain; useful oral agent; safer than opioids for oral analgesia in mild pancreatitis"
+            },
+            {
+              "name": "IV Paracetamol",
+              "brand_examples": ["Perfalgan", "IV paracetamol"],
+              "form": "IV infusion (1g/100 mL)",
+              "dosage": "1g IV over 15 minutes every 6 hours",
+              "use_case": "Opioid-sparing multimodal analgesia; safe in all patients including those with renal impairment (where NSAIDs are contraindicated)"
+            },
+            {
+              "name": "Epidural Analgesia (Thoracic Epidural)",
+              "description": "Thoracic epidural catheter (T6-T10 level) providing continuous infusion of local anaesthetic (bupivacaine) with or without opioid — for intractable severe acute pancreatitis pain. Provides excellent analgesia; also improves pancreatic microcirculation (sympathetic blockade causes splanchnic vasodilation); reduces SIRS response; considered in ICU patients with severe pain not controlled by IV analgesics",
+              "use_case": "Severe acute pancreatitis with refractory pain; ICU patients; reduces systemic opioid requirements"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-193",
+          "category_name": "Nutrition Support",
+          "purpose": "Provide adequate calories and protein to prevent malnutrition, support immune function, maintain gut mucosal barrier (preventing bacterial translocation), and promote pancreatic rest and healing.",
+          "nutrition_principles": "EARLY ENTERAL NUTRITION (within 24-48 hours) is now the standard of care for all acute pancreatitis requiring hospital admission — early enteral nutrition reduces: infectious complications (by maintaining gut mucosal barrier and competitive exclusion of gut bacteria); organ failure; need for surgery; length of hospital stay; vs parenteral nutrition (TPN): enteral nutrition is safer, cheaper, maintains gut integrity, and has superior outcomes",
+          "medicines": [
+            {
+              "name": "Nasogastric (NG) Tube Enteral Nutrition — Mild to Moderate AP",
+              "description": "Polymeric standard enteral feed delivered via nasogastric tube; safe for mild and moderate acute pancreatitis — the stomach can be used (nasogastric route is as safe as nasojejunal for mild-moderate pancreatitis per PYTHON trial); used when patient cannot tolerate adequate oral intake",
+              "dosage": "Start at 20-25 mL/hour; increase to target rate over 24-48 hours based on tolerance; target 25-30 kcal/kg/day; 1.2-1.5 g protein/kg/day",
+              "use_case": "Patients unable to eat adequately (pain, nausea, vomiting) who have mild-moderate pancreatitis and functioning gut"
+            },
+            {
+              "name": "Nasojejunal (NJ) Tube Enteral Nutrition — Severe AP and Gastroparesis",
+              "description": "Enteral nutrition delivered into the distal jejunum (past the Treitz ligament) via a post-pyloric feeding tube — placed endoscopically or fluoroscopically; used for: severe acute pancreatitis; patients with paralytic ileus limiting gastric tolerance; patients who do not tolerate nasogastric feeding; gastroparesis",
+              "dosage": "Semi-elemental or elemental formula (hydrolysed protein); start 10-15 mL/hour; titrate to 30-35 kcal/kg/day",
+              "note": "Post-pyloric position minimises pancreatic stimulation in severe pancreatitis (though recent evidence suggests the pancreatic stimulation difference between NG and NJ feeding is clinically not significant in mild-moderate pancreatitis)"
+            },
+            {
+              "name": "Total Parenteral Nutrition (TPN) — When Enteral Route Not Possible",
+              "description": "IV nutrition via central venous catheter — ONLY when enteral route is completely impossible (e.g., bowel obstruction, intestinal fistula, complete gut failure); associated with significantly higher infectious complications (line infections, gut bacterial translocation) and should be avoided unless absolutely necessary",
+              "use_case": "Short-gut syndrome; complete intestinal obstruction; severe WON with gastric outlet obstruction; as BRIDGE while enteral access is being established; NOT routine in acute pancreatitis"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-194",
+          "category_name": "Antibiotics — Infected Necrosis ONLY",
+          "purpose": "Targeted antibiotic therapy for CONFIRMED INFECTED PANCREATIC NECROSIS — NOT prophylactic use.",
+          "critical_evidence": "Multiple RCTs and meta-analyses have conclusively shown that PROPHYLACTIC ANTIBIOTICS in acute pancreatitis DO NOT reduce infected necrosis, organ failure, or mortality — and increase Candida infection risk; all major international guidelines (ACG, IAP, BSG, Indian guidelines) recommend AGAINST prophylactic antibiotics for acute pancreatitis",
+          "medicines": [
+            {
+              "name": "Meropenem — First-Line for Infected Pancreatic Necrosis",
+              "brand_examples": ["Meronem", "Merotax", "Meropenem generic"],
+              "form": "IV infusion",
+              "dosage": "1-2g IV every 8 hours; for infected necrosis — typically 14-21 day course guided by clinical response and culture results",
+              "use_case": "INFECTED PANCREATIC NECROSIS — confirmed by: CT showing gas within necrotic collection (pathognomonic); CT-FNA with positive Gram stain or culture; clinical deterioration with new fever >5 days into illness with rising WBC and CRP not responding to supportive care",
+              "mechanism": "Carbapenem — broadest-spectrum beta-lactam; excellent penetration into pancreatic necrotic tissue (penetration index ~40% of serum levels — superior to most other antibiotics); active against: Gram-negative enteric bacteria (E. coli, Klebsiella, Pseudomonas), Gram-positive cocci, and anaerobes",
+              "note": "Add fluconazole or micafungin if Candida identified in culture (particularly in patients on prolonged broad-spectrum antibiotics)"
+            },
+            {
+              "name": "Imipenem-Cilastatin — Alternative First-Line",
+              "brand_examples": ["Primaxin", "Imipenem generic"],
+              "form": "IV infusion",
+              "dosage": "500 mg IV every 6 hours",
+              "use_case": "Alternative to meropenem for infected pancreatic necrosis; equally effective pancreatic tissue penetration"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-195",
+          "category_name": "Pancreatic Enzyme Replacement Therapy (PERT) — Exocrine Insufficiency",
+          "purpose": "Replace the endogenous pancreatic digestive enzymes (lipase, amylase, protease) lost from exocrine pancreatic insufficiency (EPI) in chronic pancreatitis — restoring fat, protein, and carbohydrate digestion; eliminating steatorrhoea; improving caloric absorption; correcting malnutrition; improving quality of life.",
+          "key_principles": [
+            "TAKE WITH EVERY MEAL AND SNACK — NOT before or after food; capsules taken at the start of, during, or immediately after each meal/snack for maximum mixing with food in the duodenum",
+            "DOSE IS FLEXIBLE — adjust based on symptom response (stool consistency, frequency, presence of steatorrhoea, weight gain); start with standard dose and up-titrate if symptoms persist",
+            "ADD PPI (omeprazole 20 mg once daily) — gastric acid rapidly inactivates exogenous pancreatic enzymes in the duodenum; PPI reduces acid secretion and raises duodenal pH, protecting PERT enzymes and extending their activity",
+            "ADEQUATE DOSE — many patients are underdosed; insufficient PERT dose does not treat EPI; minimum 40,000 IU lipase per main meal",
+            "ENTERIC-COATED MICROSPHERES — the preferred formulation; microspheres (1-2 mm diameter) mix with food in the stomach and the enteric coating protects them from gastric acid inactivation until they reach the duodenum and dissolve at pH >5"
+          ],
+          "medicines": [
+            {
+              "name": "Pancreatin — Enteric-Coated Minimiccrospheres (Pancrelipase)",
+              "brand_examples": ["Creon 10,000 / 25,000 / 40,000", "Panzytrat 10,000 / 25,000", "Pancreatin capsules (Indian generics: Paratom, Enzynorm)"],
+              "form": "Enteric-coated microsphere capsule; capsules can be opened and microspheres sprinkled on food for patients who cannot swallow capsules",
+              "dosage": "STARTING DOSE: 25,000-40,000 IU lipase per main meal; 10,000-25,000 IU per snack. TITRATION: if steatorrhoea persists — increase dose; maximum 80,000-100,000 IU per meal (above this rarely provides additional benefit); TYPICAL DAILY DOSE for severe EPI: 50,000-80,000 IU × 3 main meals = 150,000-240,000 IU lipase per day",
+              "mechanism": "Porcine-derived pancreatin mixture containing lipase (primary enzyme for fat digestion — steatorrhoea is primarily from lipase deficiency), amylase (carbohydrate), and protease (protein); enteric coating (methacrylic acid copolymer) protects from gastric acid; dissolves in duodenum at pH >5-5.5",
+              "monitoring": "Symptom response (stool normalisation — formed, not greasy, not floating; reduced frequency); weight gain; fat-soluble vitamin levels (A, D, E, K); faecal elastase (does not change with PERT — reflects endogenous production); HbA1c for FCPD",
+              "side_effects": ["GI symptoms (nausea, abdominal discomfort) at very high doses", "Fibrosing colonopathy (rare — only at extremely high doses >10,000 IU lipase/kg/day; primarily described in cystic fibrosis children on excessively high doses)"],
+              "india_availability": "Creon and Panzytrat available at major pharmacies in India; cost Rs 15-30 per capsule; a significant cost burden for TCP patients — government-subsidised PERT procurement is urgently needed for TCP patients from low-income backgrounds"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-196",
+          "category_name": "Fat-Soluble Vitamin Supplementation",
+          "purpose": "Replace fat-soluble vitamins (A, D, E, K) malabsorbed in exocrine pancreatic insufficiency — critical to prevent serious complications of chronic deficiency.",
+          "medicines": [
+            {
+              "name": "Vitamin D3 (Cholecalciferol)",
+              "brand_examples": ["Cholecalciferol D3 60,000 IU sachets", "Calcirol", "Arachitol"],
+              "dosage": "Maintenance: 1,000-2,000 IU daily; Deficiency treatment: 60,000 IU weekly × 8-12 weeks; Monitor: serum 25-OH Vitamin D (target 30-50 ng/mL)",
+              "use_case": "Universal in chronic pancreatitis with EPI; osteomalacia and osteoporosis prevention; very high deficiency prevalence in chronic pancreatitis (80-90%) due to fat malabsorption"
+            },
+            {
+              "name": "Vitamin K (Phytomenadione)",
+              "dosage": "Oral: 10 mg weekly (monitor PT/INR); IV/IM if severe deficiency or unable to absorb orally",
+              "use_case": "Bleeding tendency from Vitamin K deficiency (coagulopathy — elevated PT/INR); Vitamin K required for clotting factors II, VII, IX, X"
+            },
+            {
+              "name": "Vitamin E (Tocopherol)",
+              "brand_examples": ["Evion"],
+              "dosage": "400 IU daily",
+              "use_case": "Deficiency causes peripheral neuropathy; antioxidant properties may reduce oxidative stress-related pancreatic inflammation"
+            },
+            {
+              "name": "Vitamin A (Retinol)",
+              "dosage": "5,000-10,000 IU daily (oral)",
+              "use_case": "Night blindness; immune function; skin; monitor levels to avoid toxicity"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-197",
+          "category_name": "Pain Management — Chronic Pancreatitis",
+          "purpose": "Chronic pancreatitis pain is one of the most difficult pain syndromes in medicine — often severe, constant, multimechanistic, and requires a multimodal pharmacological and interventional approach.",
+          "pain_mechanisms": "Ductal hypertension (obstruction from stones/strictures — relieved by drainage procedures); neuro-inflammation (activation and upregulation of pancreatic nociceptors — peripheral sensitisation); central sensitisation (spinal cord and brain sensitisation — explains pain persistence even after successful decompression); acute-on-chronic episodes",
+          "medicines": [
+            {
+              "name": "Paracetamol (Step 1 Analgesic)",
+              "brand_examples": ["Crocin", "Calpol", "Paracetamol generic"],
+              "dosage": "500-1000 mg every 6-8 hours (maximum 4g/day; 2g/day in liver impairment)",
+              "use_case": "First-line analgesic for chronic pancreatitis pain; non-opioid; minimal GI side effects; safe long-term"
+            },
+            {
+              "name": "Tramadol — Weak Opioid",
+              "brand_examples": ["Tramazac", "Ultracet (with paracetamol)"],
+              "dosage": "50-100 mg every 6-8 hours (maximum 400 mg/day); modified-release: 100-200 mg twice daily",
+              "use_case": "Step 2 analgesic for chronic pancreatitis pain not controlled by paracetamol alone; weaker opioid effect; serotonin-noradrenaline reuptake inhibition adds central analgesic benefit"
+            },
+            {
+              "name": "Pregabalin — Neuromodulator for Chronic Pain",
+              "brand_examples": ["Lyrica", "Pregabid"],
+              "dosage": "75-150 mg twice daily; titrate slowly upward over weeks; maximum 300-600 mg/day in divided doses",
+              "use_case": "Central sensitisation in chronic pancreatitis; RCT (Olesen et al., Lancet 2011): pregabalin significantly reduces chronic pancreatitis pain vs placebo; reduces opioid requirements; particularly effective for constant background pain with allodynia (sensitisation); also treats neuropathic pain from diabetic neuropathy in FCPD",
+              "mechanism": "Alpha-2-delta calcium channel subunit ligand — reduces excitatory neurotransmitter release (glutamate, substance P, CGRP) from sensitised dorsal horn neurons; reduces central sensitisation",
+              "side_effects": "Dizziness; somnolence; weight gain; oedema; cognitive effects"
+            },
+            {
+              "name": "Amitriptyline (Low-Dose Tricyclic Antidepressant)",
+              "brand_examples": ["Tryptomer", "Saroten"],
+              "dosage": "10-25 mg at bedtime; titrate to 50-75 mg maximum",
+              "use_case": "Central pain modulation in chronic pancreatitis; improves sleep (often severely disrupted by pain); opioid-sparing; also treats neuropathic pain; start low and titrate slowly"
+            },
+            {
+              "name": "Celecoxib — COX-2 NSAID",
+              "dosage": "200 mg once or twice daily",
+              "use_case": "Adjunct for inflammatory flares in chronic pancreatitis; anti-inflammatory; less GI toxicity than non-selective NSAIDs; avoid in renal impairment"
+            },
+            {
+              "name": "Opioids (Step 3 — Reserved for Severe Chronic Pain)",
+              "description": "Strong opioids (morphine, oxycodone, buprenorphine) for severe chronic pancreatitis pain uncontrolled by steps 1-2 and failing interventional approaches; opioid dependence is a significant concern in chronic pancreatitis; use lowest effective dose; modified-release formulations preferred for around-the-clock pain; maximise non-opioid treatments first; involve pain specialist",
+              "india_note": "Opioid accessibility for non-cancer chronic pain remains challenging in India due to regulatory restrictions; tramadol and buprenorphine patches are more accessible alternatives"
+            },
+            {
+              "name": "Antioxidant Combination Therapy",
+              "description": "Vitamin C 600 mg/day + Vitamin E 270 IU/day + Selenium 75 mcg/day + Beta-carotene 9 mg/day + Methionine 2 g/day — originally studied by Bhardwaj et al. for Tropical Chronic Pancreatitis at AIIMS Delhi",
+              "evidence": "RCT by Bhardwaj et al. (Gastroenterology 2009): antioxidant combination significantly reduces painful episodes, hospitalisation, and disease progression in TCP; mechanism: corrects oxidative stress deficiency contributing to tropical pancreatitis aetiopathogenesis",
+              "india_use": "Widely used in India for TCP management; standard inclusion in TCP treatment protocols at major Indian pancreatic centres (AIIMS, PGI Chandigarh, SGPGI Lucknow)"
+            },
+            {
+              "name": "Octreotide (Somatostatin Analogue)",
+              "brand_examples": ["Sandostatin", "Octreotide injection"],
+              "form": "Subcutaneous injection; depot LAR formulation (monthly)",
+              "dosage": "100-200 mcg subcutaneously three times daily; LAR 20-30 mg IM monthly",
+              "use_case": "Pancreatic fistula (duct disruption causing ascites or pleural effusion — octreotide reduces pancreatic secretion to allow fistula healing); refractory pseudocyst (reduces secretory pressure); octreotide test in chronic pancreatitis pain (reduces ductal pressure and pain in some patients); post-ERCP/pancreatic surgery prophylaxis"
+            },
+            {
+              "name": "Steroid Therapy — Autoimmune Pancreatitis",
+              "brand_examples": ["Prednisolone: Wysolone, Omnacortil"],
+              "dosage": "Prednisolone 40 mg/day × 4 weeks; taper by 5 mg/week over 3-6 months; maintenance 5-10 mg/day if relapse risk high (IgG4-RD with multiple organ involvement)",
+              "use_case": "ONLY FOR AUTOIMMUNE PANCREATITIS (AIP Type 1 and Type 2) — dramatic complete response expected; monitor response at 2-4 weeks with CT; complete resolution of 'sausage pancreas' and ductal changes; NOT for other forms of pancreatitis"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-198",
+          "category_name": "Insulin — Type 3c Pancreatogenic Diabetes",
+          "purpose": "Manage pancreatogenic diabetes (Type 3c / FCPD) arising from loss of beta cell function in chronic pancreatitis.",
+          "diabetes_management_principles": [
+            "Type 3c diabetes requires INSULIN in most cases — sulfonylureas are less effective (reduced beta cell mass); metformin can be used in mild FCPD but often insufficient",
+            "HIGH RISK OF HYPOGLYCAEMIA — absent glucagon counterregulation (alpha cell destruction) + malabsorption = unpredictable glycaemia; start with very LOW insulin doses and titrate carefully",
+            "MONITOR FREQUENTLY — due to erratic glucose variability from malabsorption; continuous glucose monitoring (CGM) is ideal where available",
+            "TREAT EPI FIRST — adequate PERT normalises nutritional absorption and stabilises glucose patterns before escalating insulin doses"
+          ],
+          "medicines": [
+            {
+              "name": "Basal Insulin — Glargine / Degludec",
+              "brand_examples": ["Lantus (glargine U100)", "Toujeo (glargine U300)", "Tresiba (degludec)"],
+              "dosage": "Start VERY LOW: 0.1-0.2 units/kg/day subcutaneous at bedtime; titrate by 2 units every 3-5 days targeting fasting glucose 5-7 mmol/L; total daily insulin dose typically much lower than Type 1 diabetes (malabsorption reduces carbohydrate load)",
+              "use_case": "Basal insulin replacement for Type 3c/FCPD; glargine (degludec has lowest hypoglycaemia risk — ideal for FCPD brittle diabetes)"
+            },
+            {
+              "name": "Bolus / Prandial Insulin — Rapid-Acting Analogues",
+              "brand_examples": ["Novorapid (aspart)", "Humalog (lispro)", "Apidra (glulisine)"],
+              "dosage": "4-6 units with main meals; reduce dose if poor oral intake; adjust based on pre- and post-meal glucose monitoring",
+              "use_case": "Postprandial hyperglycaemia in Type 3c; bolus doses must be adjusted for actual food intake (malabsorption makes dose calculation difficult)"
+            },
+            {
+              "name": "Metformin (for Mild Type 3c Without Severe Malnutrition)",
+              "dosage": "500-1000 mg twice daily with meals",
+              "use_case": "Mild FCPD without severe weight loss; reduces hepatic glucose production; avoid in severe malnutrition, alcoholism, renal impairment"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-199",
+          "category_name": "Hypertriglyceridaemia-Induced Pancreatitis Management",
+          "medicines": [
+            {
+              "name": "Insulin Infusion — Acute Treatment of Hypertriglyceridaemia",
+              "dosage": "Insulin infusion 0.1-0.3 units/kg/hour IV; dextrose simultaneously if glucose <10 mmol/L; target rapid reduction of triglycerides (from >1000 to <500 mg/dL within 24-48 hours); insulin activates lipoprotein lipase dramatically reducing circulating triglycerides",
+              "use_case": "Acute severe hypertriglyceridaemia-induced pancreatitis; insulin infusion is the most effective acute intervention to reduce triglycerides"
+            },
+            {
+              "name": "Fibrates (Secondary Prevention)",
+              "brand_examples": ["Fenofibrate: Tricor, Lipanthyl; Bezafibrate: Bezatrop"],
+              "dosage": "Fenofibrate 145 mg once daily; Bezafibrate 400 mg once daily",
+              "use_case": "Long-term prevention of recurrent hypertriglyceridaemia-induced pancreatitis; fibrates reduce triglycerides by 40-60% by activating LPL and reducing VLDL production"
+            },
+            {
+              "name": "Omega-3 Fatty Acids",
+              "dosage": "2-4 g EPA+DHA daily",
+              "use_case": "Reduce serum triglycerides by 25-50% (at high doses); adjunct to fibrates for severe hypertriglyceridaemia"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Nutritional management in pancreatitis is fundamentally different for acute and chronic disease, and requires individualisation based on disease stage, degree of exocrine/endocrine insufficiency, presence of malnutrition (particularly in TCP), and patient tolerance. The overarching principles have evolved dramatically: the old 'rest the pancreas — nothing by mouth for days to weeks' paradigm has been replaced by evidence-based early enteral nutrition; and the chronic pancreatitis dietary approach balances fat restriction (to reduce steatorrhoea) with adequate caloric density to address malnutrition.",
+      "acute_pancreatitis_nutrition": {
+        "early_phase_0_to_24_hours": {
+          "approach": "Initially nil by mouth (NBM) while severe vomiting, paralytic ileus, or haemodynamic instability is present; IV fluids (Ringer's Lactate) as primary treatment; antiemetics to control vomiting; NGO status should be as SHORT as possible",
+          "start_oral_feeding": "Resume oral intake as soon as the patient can tolerate it — typically within 24-48 hours in mild pancreatitis; oral feeding is guided by clinical improvement (reduced pain, reduced vomiting, return of bowel sounds), NOT by enzyme levels (amylase and lipase do not need to normalise before refeeding)"
+        },
+        "refeeding_progression": {
+          "low_fat_soft_diet": "Start with low-fat, soft, easily digestible foods; no strict BRAT diet required — normal soft food is well tolerated; low fat content reduces pancreatic CCK stimulation",
+          "foods_to_start_with": "Moong dal khichdi; plain rice with dal; yoghurt; boiled banana; clear soups; idli; plain toast; crackers; rice water (kanji); avoid fried, fatty, or spicy food initially",
+          "progression": "Advance diet as tolerated over 24-48 hours; most mild pancreatitis patients tolerate normal low-fat solid diet within 48-72 hours of presentation; do not prolong liquid diet unnecessarily"
+        }
+      },
+      "chronic_pancreatitis_nutrition": {
+        "fat_restriction_principles": {
+          "overview": "Low-fat diet is the cornerstone of chronic pancreatitis dietary management — reducing steatorrhoea symptoms and improving quality of life; however, severe fat restriction can paradoxically worsen caloric malnutrition (fat is the most calorically dense macronutrient); BALANCE: reduce fat while maintaining adequate calories",
+          "fat_target": "30-40 g of fat per day initially if steatorrhoea is severe; gradually liberalise with adequate PERT dose — the goal is to manage steatorrhoea with PERT, NOT by extreme fat restriction; with adequate PERT most patients can eat 40-60 g fat/day without significant steatorrhoea",
+          "medium_chain_triglycerides": "MCT oil (coconut oil, MCT oil supplements) — absorbed without pancreatic lipase (directly absorbed by intestinal epithelium via portal vein) — VERY IMPORTANT in severe EPI; MCT provides fat calories without requiring pancreatic enzymes; can be used as cooking medium or supplement to increase caloric density"
+        },
+        "small_frequent_meals": "5-6 small meals per day (every 3-4 hours) — reduces the digestive load per meal; reduces postprandial pain (smaller meals require less pancreatic secretion against the stenosed duct); improves glycaemic control in FCPD (smaller, more frequent carbohydrate loads prevent large glucose spikes)",
+        "caloric_and_protein_target": "Target 30-35 kcal/kg/day (higher than normal due to malabsorption losses); protein 1.2-1.5 g/kg/day (adequate protein for muscle mass preservation and mucosal healing); in severely malnourished TCP patients: 35-40 kcal/kg/day",
+        "recommended_foods": [
+          {
+            "category": "High-Calorie Low-Fat Indian Foods",
+            "items": [
+              {
+                "food": "Khichdi (rice + moong dal with minimal ghee)",
+                "benefit": "Easy to digest; complete protein; low fat; high caloric density when prepared with MCT oil instead of ghee; traditional Indian post-illness food with excellent nutritional rationale"
+              },
+              {
+                "food": "Idli, dosa (not fried — steamed or non-oily)",
+                "benefit": "Fermented rice and lentil — probiotic; complete protein; low fat; easily digestible; good caloric density; frequent small portions"
+              },
+              {
+                "food": "Egg whites (boiled or steamed)",
+                "benefit": "Highest quality protein (biological value 100); virtually fat-free; complete amino acid profile for tissue repair and pancreatic regeneration; affordable"
+              },
+              {
+                "food": "Fish — steamed or poached (no frying)",
+                "benefit": "High-quality protein; omega-3 fatty acids (anti-inflammatory — reduce pancreatic inflammation); low saturated fat; excellent for TCP malnutrition rehabilitation"
+              },
+              {
+                "food": "Banana (ripe)",
+                "benefit": "Easy to digest; potassium; provides readily available calories without fat; good tolerance; natural antacid properties"
+              },
+              {
+                "food": "Low-fat yogurt / Dahi (probiotics)",
+                "benefit": "Probiotics restore gut microbiome; easily digestible protein; calcium and Vitamin D (important in malabsorption from EPI); well-tolerated; probiotic bacteria produce their own lactase"
+              },
+              {
+                "food": "Coconut water",
+                "benefit": "Natural electrolyte replacement; potassium; easily absorbed; no fat; suitable during acute-on-chronic episodes"
+              }
+            ]
+          }
+        ],
+        "foods_to_avoid": [
+          {
+            "food": "Alcohol — ABSOLUTE PROHIBITION",
+            "reason": "The single most important dietary intervention in alcoholic chronic pancreatitis; alcohol is directly toxic to acinar cells; even a single heavy drinking episode can trigger acute-on-chronic pancreatitis; alcohol withdrawal requires medical supervision; complete and permanent alcohol abstinence is the ONLY intervention proven to slow progression of alcoholic chronic pancreatitis",
+            "recommendation": "ZERO ALCOHOL — no 'safe amount'; not one drink; medical detox if physical dependence; naltrexone or acamprosate for alcohol dependence management; Alcoholics Anonymous and support groups"
+          },
+          {
+            "food": "High-Fat and Fried Foods",
+            "reason": "Stimulate CCK and pancreatic secretion; worsen steatorrhoea; trigger postprandial pain; specific high-fat Indian foods to avoid: dal makhani (cream and butter); poori/bhature (deep-fried bread); samosas, pakoras, bhajias (deep-fried); very oily curries; heavy cream-based dishes; ghee in large amounts",
+            "recommendation": "Strictly limit during active disease; with adequate PERT dose, most patients can tolerate moderate amounts of dietary fat; cook with minimal oil — steaming, baking, boiling preferred"
+          },
+          {
+            "food": "Cassava / Tapioca (for TCP patients specifically)",
+            "reason": "Cyanogenic glycosides in inadequately processed cassava may contribute to tropical pancreatitis aetiopathogenesis; while the evidence is not definitive, TCP patients from communities where cassava is a staple should be counselled on proper cassava processing or switching to alternative carbohydrates",
+            "india_relevance": "Most important for Kerala, Tamil Nadu, and coastal Andhra Pradesh where tapioca (kappa in Malayalam) is a staple food; properly processed and boiled cassava has lower cyanogen content"
+          },
+          {
+            "food": "Smoking (Tobacco)",
+            "reason": "Smoking is an independent risk factor for chronic pancreatitis (independent of alcohol); approximately 2× risk; acts synergistically with alcohol to accelerate progression; significantly increases pancreatic cancer risk in chronic pancreatitis; nicotine reduces pancreatic blood flow and impairs enzyme secretion regulation",
+            "recommendation": "Absolute smoking cessation; varenicline (Champix) first-line; NRT patches; bupropion second-line"
+          },
+          {
+            "food": "Very Spicy Food (During Acute Flares)",
+            "reason": "Capsaicin stimulates gut motility and pancreatic secretion — may exacerbate pain in acute-on-chronic episodes; tolerated better in stable chronic disease"
+          },
+          {
+            "food": "High-Simple-Sugar Foods and Drinks (for FCPD/Type 3c)",
+            "reason": "Rapid glucose spikes from simple sugars (sugary drinks, sweets, mithai) cause severe hyperglycaemia in absent-insulin-counterregulation Type 3c diabetes; particular care needed with traditional Indian sweets, glucose drinks, and sweet chai"
+          }
+        ],
+        "sample_meal_plan_chronic_pancreatitis": {
+          "principle": "5-6 small meals; low-fat; high-calorie; PERT with every meal; alcohol-free; smoke-free; adequate protein",
+          "early_morning_6_30_am": "Warm water; amla juice (antioxidant); light exercise if able",
+          "breakfast_8_am": "PERT capsule + steamed idli (2-3) with thin sambar (no coconut oil excess) OR moong dal chilla (2) + low-fat curd; weak ginger tea (no milk fat excess)",
+          "mid_morning_10_am": "PERT capsule + banana or papaya; low-fat yogurt; rice crackers",
+          "lunch_12_30_pm": "PERT capsule + small bowl rice + moong dal + steamed vegetable (lauki, carrot) cooked with minimal oil + egg white (1-2) or fish (steamed); plain curd",
+          "afternoon_3_pm": "PERT capsule + plain toast or rusk + coconut water; light protein snack",
+          "dinner_6_30_pm": "PERT capsule + khichdi (rice + moong dal, MCT oil ½ tsp) + boiled vegetable + small bowl of curd; avoid large meals; stop eating by 7-8 PM",
+          "supplements_daily": "Vitamin D3 2000 IU; Vitamin E 400 IU; Vitamin C 500 mg; Selenium 75 mcg (antioxidant regimen for TCP); B12 (if deficiency); calcium citrate; PPI (omeprazole 20 mg to protect PERT enzymes)"
+        }
+      }
+    },
+
+    "lifestyle_management": {
+      "alcohol_cessation": {
+        "overview": "The single most important and evidence-based lifestyle intervention for alcoholic pancreatitis — both acute and chronic. Complete and permanent alcohol abstinence: slows progression of chronic pancreatitis fibrosis (the only disease-modifying intervention); dramatically reduces acute-on-chronic pancreatitis episodes; reduces chronic pain frequency and severity; reduces pancreatic cancer risk; improves nutrition and quality of life. There is NO safe level of alcohol in chronic pancreatitis.",
+        "support_strategies": ["Pharmacotherapy: Naltrexone 50 mg/day (reduces alcohol craving and relapse); Acamprosate 666 mg three times daily (prevents relapse by GABA modulation); Disulfiram 250 mg/day (aversion therapy — causes severe nausea with alcohol consumption); Topiramate (off-label but effective)", "Behavioural: Motivational Interviewing (evidence-based brief intervention); Alcoholics Anonymous (AA); Al-Anon (family support); Residential rehabilitation programmes for severe alcohol dependence", "Medical detoxification: in-patient alcohol detox with benzodiazepines (chlordiazepoxide reducing protocol) for physically dependent patients — prevents withdrawal seizures and Wernicke's encephalopathy (Thiamine 200 mg IM daily before any IV glucose during detox)"]
+      },
+      "smoking_cessation": {
+        "reason": "Smoking is an independent risk factor for both acute recurrent and chronic pancreatitis — independent of alcohol; the combination of smoking + alcohol increases chronic pancreatitis risk 5-fold vs neither habit; smoking independently increases pancreatic cancer risk by 2-3×; nicotine reduces pancreatic blood flow; impairs gene regulatory mechanisms in acinar cells",
+        "strategies": "Varenicline (Champix) 0.5 mg once daily for 3 days → 0.5 mg twice daily for 4 days → 1 mg twice daily × 12 weeks (most effective pharmacotherapy — 3× quit rate vs placebo); NRT (patch + gum combination); cytisine (available India — plant-derived nicotinic receptor partial agonist; lower cost than varenicline)"
+      },
+      "nutritional_rehabilitation_tcp": {
+        "overview": "For Tropical Chronic Pancreatitis patients — most of whom are from low-income backgrounds with significant malnutrition — nutritional rehabilitation is as important as any pharmacological treatment.",
+        "strategies": ["Nutritional assessment: BMI, mid-arm circumference, serum albumin, pre-albumin, transferrin — baseline and monthly; Dietitian-guided high-calorie diet (35-40 kcal/kg/day); Daily PERT with all meals; Protein-rich foods: eggs, low-fat fish, moong dal; MCT oil supplements; Government food assistance programmes (ICDS, mid-day meal, PDS ration — nutritionist liaison to access entitlements)", "Micronutrient correction: Iron (often deficient from poor diet and malabsorption), Zinc, Vitamin B12, Folate, Fat-soluble vitamins; Antioxidant regimen (Vitamin C + E + selenium + methionine + beta-carotene) — standard in Indian TCP practice (Bhardwaj regimen)"]
+      },
+      "post_acute_pancreatitis_gallstone_management": {
+        "overview": "After gallstone pancreatitis — the source must be eliminated to prevent recurrence (recurrence rate 25-30% within 6 weeks without definitive biliary management).",
+        "recommendation": "Laparoscopic cholecystectomy: performed during same admission for mild gallstone pancreatitis (reduces recurrence and complications; safe when pancreatitis has clinically resolved); within 2 weeks for moderately severe pancreatitis; delayed until full clinical recovery for severe pancreatitis (8-12 weeks after resolution of local complications); ERCP for CBD stones at the time of initial presentation if cholangitis or persistent CBD obstruction is present"
+      },
+      "monitoring_for_pancreatic_cancer": {
+        "overview": "Chronic pancreatitis significantly increases pancreatic cancer risk — particularly hereditary pancreatitis (50-70× risk), TCP (5-10× risk), and alcoholic chronic pancreatitis (3-5× risk). New symptoms in a patient with established chronic pancreatitis (new or changed pain, jaundice, new weight loss, rising CA 19-9) mandate urgent investigation to exclude cancer.",
+        "surveillance": ["Hereditary pancreatitis (PRSS1 mutations): annual EUS from age 40 years (or 15 years after onset); CT alternating with EUS every 1-2 years; consider TP-IAT consultation", "TCP/FCPD: EUS and CT every 1-2 years from age 40 or after 10+ years of TCP; baseline CA 19-9; any symptomatic change → urgent EUS/CT", "Autoimmune pancreatitis (on steroids): beware steroid-masking of early pancreatic cancer — confirm complete response at 2-4 weeks; any residual mass warrants tissue biopsy"]
+      }
+    },
+
+    "pancreatitis_monitoring_plan": {
+      "acute_pancreatitis_inpatient": {
+        "mild_ap": {
+          "green_zone": "Improving pain (NRS <5); tolerating oral fluids; HR <100; normal SpO2; urine output adequate; no fever; CRP stable or falling → advance diet; plan cholecystectomy before discharge; discharge when eating and mobilising",
+          "yellow_zone": "Persistent pain >48 hours; rising CRP at 48h >150 mg/L; unable to tolerate oral intake → CT scan; HDU monitoring; consider enteral nutrition via NGT",
+          "red_zone": "Fever >39°C developing after initial improvement; SpO2 <94%; rising creatinine; hypotension → possible infected necrosis; possible organ failure; ICU; CT scan urgently; FNA consideration"
+        }
+      },
+      "chronic_pancreatitis_outpatient": {
+        "routine_review_every_3_months": "Pain score; stool frequency and character (steatorrhoea assessment); FE-1 annually; HbA1c quarterly; weight and BMI; nutritional markers (albumin, pre-albumin); fat-soluble vitamins annually; CA 19-9 annually; alcohol and smoking status at every visit",
+        "alarm_features_urgent_assessment": "New or changed pain character in CP patient; new jaundice; significant new weight loss (>5%); new onset of diabetes in CP patient; rising CA 19-9; new palpable mass → CT and EUS urgently to exclude pancreatic cancer"
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Infected Pancreatic Necrosis",
+        "description": "Secondary bacterial infection of devitalised necrotic pancreatic tissue — the most dangerous complication of acute pancreatitis; occurs in 30-40% of necrotising pancreatitis; indicated by gas in necrotic collection on CT (pathognomonic); confirmed by FNA",
+        "severity": "Life-threatening — mortality 30-40% without adequate drainage",
+        "management": "Step-up approach: meropenem IV → CT-guided drainage → endoscopic transluminal debridement → VARD → open necrosectomy"
+      },
+      {
+        "complication": "Pancreatic Pseudocyst",
+        "description": "Walled collection of pancreatic juice (no solid debris) forming from ductal disruption; affects 5-15% of acute pancreatitis and up to 30% of chronic pancreatitis; most resolve spontaneously (<6 cm, asymptomatic); treatment when symptomatic: EUS-guided endoscopic transmural drainage (first-line) or surgical drainage",
+        "severity": "Mild to Moderate",
+        "management": "Watchful waiting if asymptomatic and small; EUS-guided transmural drainage (cystogastrostomy) for symptomatic, enlarging, or complicated pseudocysts"
+      },
+      {
+        "complication": "Exocrine Pancreatic Insufficiency (EPI) and Malnutrition",
+        "description": "Progressive destruction of exocrine acinar cells in chronic pancreatitis → fat, protein, and carbohydrate maldigestion → steatorrhoea, malnutrition, weight loss, fat-soluble vitamin deficiencies; occurs after >90% exocrine function is lost (late manifestation)",
+        "severity": "Moderate to Severe",
+        "management": "PERT (Creon/Panzytrat) with every meal and snack; fat-soluble vitamin supplementation; high-calorie diet; MCT oil; dietitian support"
+      },
+      {
+        "complication": "Type 3c Pancreatogenic Diabetes (FCPD)",
+        "description": "Endocrine insufficiency from islet cell destruction — affecting 20-60% of chronic pancreatitis patients; particularly severe in TCP (FCPD); brittle glycaemia due to absent alpha and beta cell function; high hypoglycaemia risk",
+        "severity": "Moderate to Severe",
+        "management": "Insulin (carefully titrated low doses); PERT first; frequent glucose monitoring; CGM where possible; avoid sulfonylureas"
+      },
+      {
+        "complication": "Pancreatic Ductal Obstruction — Biliary and Duodenal Stricture",
+        "description": "Chronic pancreatic head inflammation causes fibrotic stricture of the intrapancreatic portion of the CBD (obstructive jaundice; biliary cirrhosis if chronic) and of the duodenum (duodenal stenosis, vomiting, weight loss); also: biliary stricture in AIP (IgG4-sclerosing cholangitis)",
+        "severity": "Moderate to Severe",
+        "management": "Endoscopic biliary stenting (metal or plastic via ERCP); surgical biliary bypass (hepaticojejunostomy) for refractory strictures; lateral pancreaticojejunostomy (Puestow procedure) for combined ductal and biliary decompression"
+      },
+      {
+        "complication": "Portal and Splenic Vein Thrombosis",
+        "description": "Peripancreatic inflammation causing thrombosis of the splenic vein (most common) or portal vein; splenic vein thrombosis leads to left-sided (sinistral) portal hypertension with gastric varices (NOT oesophageal varices — distinguishing feature); gastric varices bleed without prior oesophageal variceal bleeding",
+        "severity": "Moderate to Severe (gastric variceal haemorrhage = life-threatening)",
+        "management": "Anticoagulation (if no contraindication) for acute portal vein thrombosis; splenectomy for symptomatic splenic vein thrombosis causing gastric varices; endoscopic treatment of gastric varices"
+      },
+      {
+        "complication": "Pancreatic Ascites and Pleural Effusion",
+        "description": "Leakage of enzyme-rich pancreatic juice from ductal disruption into peritoneal cavity (pancreatic ascites — very high amylase in ascitic fluid) or via transdiaphragmatic lymphatics into pleural space (usually left-sided pancreatic pleural effusion); DIAGNOSTIC: amylase >1000 IU/L in ascitic or pleural fluid",
+        "severity": "Moderate",
+        "management": "Octreotide (reduces pancreatic secretion); NPO + TPN for 4-6 weeks; MRCP to identify ductal disruption site; endoscopic pancreatic duct stenting across disruption; surgery (Roux-en-Y pancreaticojejunostomy) for failed conservative management"
+      },
+      {
+        "complication": "Pancreatic Pseudoaneurysm",
+        "description": "A pseudoaneurysm of the splenic, gastroduodenal, or hepatic artery from enzymatic digestion of vessel wall by leaked pancreatic enzymes; presents with sudden severe abdominal pain and haemorrhage (into pseudocyst causing rapid enlargement — 'sentinal bleed'; rupture into peritoneum; GI haemorrhage via pancreatic duct — haemosuccus pancreaticus)",
+        "severity": "Life-threatening",
+        "management": "EMERGENCY angiography and transcatheter embolisation (treatment of choice — highly effective); surgical arterial ligation as fallback"
+      },
+      {
+        "complication": "Pancreatic Cancer",
+        "description": "Significantly elevated risk in chronic pancreatitis of all types: hereditary pancreatitis (50-70× risk); TCP (5-10× risk); alcoholic chronic pancreatitis (3-5× risk); autoimmune pancreatitis (uncertain but managed with vigilance). The most feared long-term complication of chronic pancreatitis; detection is challenging because cancer-related symptoms overlap with chronic pancreatitis symptoms",
+        "severity": "Life-threatening — 5-year survival <10% for most presentations",
+        "management": "Annual surveillance (EUS alternating with CT) in high-risk chronic pancreatitis; urgent investigation of any new/changed symptoms; Whipple procedure (pancreaticoduodenectomy) for resectable head cancer; total/distal pancreatectomy for body/tail cancer; FOLFIRINOX or gemcitabine-nab paclitaxel for metastatic disease"
+      },
+      {
+        "complication": "ARDS (Acute Respiratory Distress Syndrome)",
+        "description": "Severe acute pancreatitis triggers ARDS through: circulating phospholipase A2 cleaving surfactant phospholipids in the lung → surfactant destruction → alveolar collapse; inflammatory cytokines increase pulmonary vascular permeability → non-cardiogenic pulmonary oedema; pleural effusions restrict ventilation. ARDS complicates 15-20% of severe acute pancreatitis",
+        "severity": "Life-threatening — 30-40% ARDS mortality in pancreatitis",
+        "management": "ICU; mechanical ventilation (lung-protective: low tidal volumes 6 mL/kg; PEEP; prone positioning for severe ARDS); treat underlying pancreatitis"
+      }
+    ],
+
+    "special_populations": {
+      "tropical_chronic_pancreatitis_india": {
+        "key_points": [
+          "TCP is the most important and distinctive form of chronic pancreatitis in India — occurring predominantly in South India (Kerala, Tamil Nadu, Karnataka, Andhra Pradesh) and affecting young non-alcoholic individuals aged 10-30 years",
+          "Pathognomonic imaging: large dense intraductal pancreatic calculi visible on plain X-ray (chain of calcifications across epigastrium); MRCP — extreme ductal dilation 5-15 mm with filling defects from stones",
+          "Fibrocalculous Pancreatic Diabetes (FCPD) — Type 3c diabetes in young individuals; extremely brittle and hypoglycaemia-prone; insulin always required; presents with ketoacidosis-resistant hyperglycaemia",
+          "SPINK1 N34S genetic testing available at tertiary Indian centres — screen all young TCP patients and first-degree relatives",
+          "ANTIOXIDANT REGIMEN (Bhardwaj protocol): Vitamin C + E + selenium + beta-carotene + methionine — the most evidence-based medical treatment for TCP pain in India (AIIMS RCT 2009)",
+          "Drainage procedures for large-duct TCP: ERCP with stone extraction; ESWL (extracorporeal shockwave lithotripsy) for large stones; lateral pancreaticojejunostomy (Puestow procedure) — excellent results for large-duct TCP with dilated duct; total pancreatectomy with islet autotransplantation (TP-IAT) for intractable pain in young patients (available at AIIMS Delhi, PGI Chandigarh)",
+          "FCPD nutritional management: severe malnutrition requires intensive dietary rehabilitation; MCT oil supplementation; PERT mandatory; government nutritional support programmes",
+          "Pancreatic cancer surveillance every 1-2 years (EUS + CT) from age 40 years or after 10 years of TCP"
+        ]
+      },
+      "pancreatitis_in_pregnancy": {
+        "key_points": [
+          "Acute pancreatitis in pregnancy occurs in approximately 1 in 1,000-10,000 pregnancies; most common in third trimester; gallstone pancreatitis is the predominant cause (30-50% of pregnant women develop biliary sludge; 10-12% develop gallstones)",
+          "Management: IV Ringer's Lactate (safe in pregnancy); adequate analgesia — opioids (morphine, pethidine) are safe in all trimesters; antiemetics (ondansetron — safe in 2nd/3rd trimester; limited data in 1st trimester); foetal monitoring",
+          "Imaging: Ultrasound first-line (no radiation); MRCP preferred over CT for biliary assessment (no radiation; safe in 2nd/3rd trimester); CT only if life-threatening emergency where benefits outweigh radiation risk",
+          "ERCP: can be performed safely in pregnancy with appropriate radiation shielding and minimising fluoroscopy time; indicated for severe cholangitis concurrent with pancreatitis",
+          "Cholecystectomy: best performed in the 2nd trimester (12-28 weeks) — safest window; avoid first trimester (organogenesis); avoid late third trimester (uterine size complicates laparoscopy); laparoscopic cholecystectomy is safe in 2nd trimester for severe recurrent gallstone pancreatitis",
+          "Hypertriglyceridaemia pancreatitis in pregnancy: treat with: dietary fat restriction (severely limit fat in diet); insulin infusion (safe in pregnancy; rapidly reduces triglycerides); omega-3 fatty acids (safe in pregnancy); fibrates are CONTRAINDICATED in pregnancy"
+        ]
+      },
+      "pancreatitis_in_elderly": {
+        "key_points": [
+          "Gallstones are the predominant aetiology in elderly (declining alcohol use + increasing biliary disease with age)",
+          "Drug-induced acute pancreatitis more common in elderly due to polypharmacy",
+          "Greater comorbidities (cardiac, renal, pulmonary) increase mortality from severe acute pancreatitis; APACHE II score adjusts for age",
+          "IV fluid resuscitation requires careful monitoring in elderly (cardiac and renal reserve reduced — avoid over-resuscitation causing pulmonary oedema)",
+          "Malignancy must be excluded as a cause of acute pancreatitis in elderly without other explanation — ampullary tumour, pancreatic cancer causing ductal obstruction; MRCP and EUS for any elderly patient with 'idiopathic' pancreatitis",
+          "Autoimmune pancreatitis Type 1 predominantly affects men over 50 — always consider in unexplained chronic pancreatitis in elderly male with obstructive jaundice (do not miss — dramatic steroid response vs dangerous surgery)"
+        ]
+      },
+      "hereditary_pancreatitis": {
+        "key_points": [
+          "PRSS1 gain-of-function mutations cause childhood onset recurrent acute pancreatitis progressing to chronic pancreatitis; autosomal dominant; high penetrance (80%)",
+          "SPINK1 N34S — most prevalent genetic risk variant for pancreatitis in India; heterozygous carriers in combination with other risk factors develop TCP or hereditary-like pancreatitis",
+          "Pancreatic cancer surveillance MANDATORY from age 40 (or 15 years after first episode): annual EUS is the most sensitive modality for early detection",
+          "Total pancreatectomy with islet autotransplantation (TP-IAT): removes the diseased, chronically painful pancreas; harvested islets injected into portal vein to engraft in liver — providing insulin independence in 40-70% of patients for years; prevents post-pancreatectomy diabetes; performed at AIIMS Delhi, SGPGI Lucknow for appropriate cases",
+          "Genetic counselling: autosomal dominant PRSS1 — 50% of children of affected individual will carry the mutation; discuss implications for family planning"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Annual Influenza Vaccine",
+        "frequency": "Annually in October-November",
+        "reason": "Viral pancreatitis (Coxsackie B, mumps, CMV, influenza) can trigger acute pancreatitis directly; influenza vaccination reduces viral precipitants of pancreatitis; patients with chronic pancreatitis are often nutritionally compromised with reduced immune competence — influenza can cause severe illness; reduces triggers for alcohol relapses (acute illness triggers drinking in dependent individuals)",
+        "recommendation": "All chronic pancreatitis patients; all patients with recurring acute pancreatitis; immunocompromised patients with pancreatitis"
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PPSV23 and/or PCV13)",
+        "frequency": "PPSV23 single dose; booster at 5 years for high-risk; PCV13 followed by PPSV23",
+        "reason": "Patients with chronic pancreatitis frequently have malnutrition, exocrine insufficiency, and immunological vulnerability — increased susceptibility to invasive pneumococcal pneumonia and septicaemia; surgical pancreatitis patients (particularly splenectomy for splenic vein thrombosis) are functionally asplenic and at very high risk of overwhelming post-splenectomy infection (OPSI) — pneumococcal vaccination is MANDATORY before elective splenectomy",
+        "recommendation": "All chronic pancreatitis patients with significant comorbidity; all patients undergoing splenectomy (give 2 weeks before elective splenectomy or as soon as possible after emergency splenectomy)"
+      },
+      {
+        "vaccine": "Hepatitis A and B Vaccines",
+        "frequency": "HAV: 2-dose series; HBV: 3-dose series",
+        "reason": "HAV and HBV can cause acute hepatitis which may trigger acute pancreatitis (hepatic pancreatitis — via bile duct obstruction or inflammatory cytokine release); patients with chronic pancreatitis who develop viral hepatitis have significantly higher complication rates; patients with alcoholic pancreatitis are also at risk for alcoholic liver disease — HAV or HBV superimposed on alcoholic liver disease is life-threatening; patients with chronic pancreatitis may receive blood products increasing HBV exposure risk",
+        "recommendation": "All patients with chronic pancreatitis; all patients with alcoholic pancreatitis; ensure hepatitis B vaccination in all unvaccinated adults with chronic pancreatitis or chronic liver disease"
+      },
+      {
+        "vaccine": "Typhoid Vaccine",
+        "reason": "Salmonella typhi chronic carrier state contributes to pancreatic and gallbladder disease in India; typhoid fever itself can cause acute pancreatitis through haematogenous spread to pancreas; in India: typhoid vaccination reduces overall enteric infection burden and its pancreatic complications",
+        "recommendation": "All residents of typhoid-endemic areas in India; particularly relevant for TCP patients from South India"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "reason": "COVID-19 causes acute pancreatitis directly (ACE2 receptors on pancreatic ductal cells; inflammatory cytokine storm affecting acinar cells); COVID-19 infection triggers severe multi-organ failure disproportionately in patients with chronic pancreatitis and malnutrition; long COVID-19 may worsen pre-existing pancreatic insufficiency",
+        "recommendation": "Follow national vaccination schedule; particularly important for chronic pancreatitis patients who are more susceptible to severe COVID-19 due to nutritional compromise"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Severe sudden onset upper abdominal pain radiating to the back — URGENT hospital attendance; possible acute pancreatitis; do not wait",
+      "Any upper abdominal pain with vomiting lasting more than 2-4 hours — possible pancreatitis; serum lipase and urgent assessment needed",
+      "Known chronic pancreatitis with acute exacerbation (acute-on-chronic pain flare) more severe than usual baseline pain — hospital evaluation",
+      "New onset of fatty, floating, greasy stools with weight loss — possible exocrine pancreatic insufficiency; FE-1 testing and PERT initiation needed",
+      "New onset of diabetes (polyuria, polydipsia, weight loss) in a patient with known chronic pancreatitis or TCP — Type 3c pancreatogenic diabetes; requires insulin management and specialist review",
+      "Yellow discolouration of eyes or skin (jaundice) in a pancreatitis patient — possible biliary obstruction, CBD stone, or pancreatic cancer; urgent assessment",
+      "TCP patient with change in pain pattern — previously controlled pain becoming worse, or new back pain — possible pancreatic cancer; urgent EUS/CT",
+      "Young patient aged <35 years with two or more episodes of acute pancreatitis without clear cause — genetic testing (SPINK1, PRSS1); EUS for microlithiasis; specialist pancreatology referral",
+      "Rising CA 19-9 in a patient with chronic pancreatitis — possible pancreatic cancer developing; urgent EUS and CT required",
+      "Patient with alcoholic chronic pancreatitis continuing to drink — requires urgent addiction medicine referral alongside gastroenterology; alcohol cessation support"
+    ],
+
+    "emergency_signs": [
+      "Sudden severe 'worst ever' epigastric pain radiating to the back — possible acute severe pancreatitis — CALL EMERGENCY SERVICES (102/112); hospital admission, IV fluids, analgesia, CT evaluation needed urgently",
+      "Fever >39°C with rigors developing in a patient with known pancreatitis who was previously improving — INFECTED PANCREATIC NECROSIS or CHOLANGITIS — EMERGENCY; IV antibiotics, CT scan, possible ICU admission",
+      "SpO2 <94% or increasing breathlessness in a patient with acute pancreatitis — ARDS or pleural effusion — EMERGENCY oxygen and hospital admission",
+      "Confusion, altered consciousness, extreme agitation in pancreatitis patient — septic encephalopathy, hypoglycaemia (FCPD), or hypocalcaemia — EMERGENCY blood glucose check; call 102/112",
+      "Hypotension (systolic BP <90 mmHg) with tachycardia in pancreatitis — HAEMODYNAMIC SHOCK from fluid sequestration, haemorrhagic pancreatitis, or pseudoaneurysm rupture — CALL 102/112; IV resuscitation urgently",
+      "Grey Turner's sign (flank bruising) or Cullen's sign (periumbilical bruising) — HAEMORRHAGIC NECROTISING PANCREATITIS — extremely severe; EMERGENCY ICU admission",
+      "Sudden severe haematemesis or rectal bleeding in a patient with chronic pancreatitis — GASTRIC VARICEAL BLEED from splenic vein thrombosis OR pseudoaneurysm rupture into gut — CALL 102/112",
+      "Tetany (hands and feet cramping, Trousseau's sign positive, perioral numbness) in acute pancreatitis — SEVERE HYPOCALCAEMIA — IV calcium gluconate urgently; ECG monitoring for arrhythmia",
+      "Patient with FCPD found unresponsive or in severe hypoglycaemia (glucose <3 mmol/L, confusion) — HYPOGLYCAEMIC EMERGENCY — give 20 mL of 50% dextrose IV (or sugary drink if conscious); call 102/112"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What exactly is pancreatitis and why is it so painful?",
+        "answer": "Pancreatitis is inflammation of the pancreas — a gland tucked behind the stomach in the retroperitoneum (the space behind the abdominal cavity). The pancreas produces powerful digestive enzymes (like trypsin and lipase) that are normally activated only in the small intestine. When these enzymes activate prematurely within the pancreas itself — due to gallstones blocking the exit, alcohol damage, or other triggers — they start digesting the pancreas's own tissue. This autodigestion causes intense local inflammation with massive tissue swelling, fluid release, and chemical injury to surrounding fat and organs. The pain is so severe because: the pancreas is a retroperitoneal organ (behind the peritoneum) — inflammation here stimulates very rich nerve networks supplying the upper back and flanks, causing the characteristic 'drilling through to the back' pain; the inflammatory chemicals (prostaglandins, bradykinin) directly sensitise pain receptors; the swollen pancreas pressing against the spine worsens the pain when lying flat. The characteristic relief from leaning forward (reducing tension on the inflamed retroperitoneal pancreas) is a useful bedside diagnostic sign."
+      },
+      {
+        "question": "What is Tropical Chronic Pancreatitis and why is it especially common in Kerala?",
+        "answer": "Tropical Chronic Pancreatitis (TCP) is a form of chronic pancreatitis unique to South and Southeast Asia — and India, particularly Kerala, has the world's highest prevalence. Unlike the typical Western chronic pancreatitis affecting middle-aged alcohol drinkers, TCP strikes young non-alcoholic individuals aged 10-30 years, most from rural low-income families. The pancreas develops massive stone formation within its ducts (large, hard calculi visible on plain X-ray — like a necklace of stones across the upper abdomen), extreme ductal dilation, and rapid destruction of both digestive and hormonal pancreatic function. Why Kerala? The disease is associated with a combination of: genetic susceptibility (SPINK1 N34S mutation — impairs the pancreas's natural protective mechanism against self-digestion); protein-calorie malnutrition in childhood and adolescence (reduces protective enzyme inhibitors); and possibly cassava (kappa/tapioca) consumption (cyanogenic compounds in inadequately processed cassava may damage pancreatic cells). Many TCP patients develop severe diabetes (FCPD — Fibrocalculous Pancreatic Diabetes) in their teens or twenties — a particularly dangerous form that causes unpredictable low and high blood sugars. Management requires PERT (enzyme replacement), insulin, antioxidant therapy, nutritional rehabilitation, and often endoscopic or surgical drainage procedures."
+      },
+      {
+        "question": "Can pancreatitis be caused by gallstones? How are they related?",
+        "answer": "Yes — gallstones are the single most common cause of acute pancreatitis (40-50% of all cases). The connection: the common bile duct (carrying bile from the liver) and the pancreatic duct both open into the duodenum through a shared channel — the ampulla of Vater. When a gallstone (particularly small stones less than 5 mm that can slip out of the gallbladder) migrates and becomes impacted at the ampulla, it blocks both the bile duct and pancreatic duct simultaneously. This creates back-pressure in the pancreatic duct — causing premature activation of the pancreas's own digestive enzymes inside the gland, triggering pancreatitis. The pain from gallstone pancreatitis characteristically starts 30-60 minutes after a fatty meal (fat triggers gallbladder contraction, pushing stones into the duct). The definitive treatment for gallstone pancreatitis is: ERCP (endoscopic procedure to remove the CBD stone if it hasn't passed) AND laparoscopic cholecystectomy (keyhole gallbladder removal — performed during the same hospital admission for mild pancreatitis) to prevent recurrence. Without cholecystectomy, 25-30% of patients have a recurrent attack within 6 weeks."
+      },
+      {
+        "question": "Should pancreatitis patients receive antibiotics routinely?",
+        "answer": "No — this is one of the most important and frequently misunderstood points in pancreatitis management. Antibiotics should NOT be given routinely or prophylactically for acute pancreatitis. Multiple large randomised controlled trials have conclusively demonstrated that prophylactic antibiotics in acute pancreatitis DO NOT reduce the rate of infected necrosis, organ failure, or mortality — and actually increase the risk of antibiotic-resistant organisms and fungal (Candida) infections. In India, antibiotic overuse in pancreatitis is unfortunately very common. Antibiotics ARE indicated ONLY for documented INFECTED NECROSIS — confirmed by: gas bubbles visible in the necrotic collection on CT scan (pathognomonic); positive culture from CT-guided needle aspiration; or clinical evidence of sepsis not responding to supportive care 5+ days into illness. When infected necrosis is confirmed, the antibiotic of choice is meropenem or imipenem — both penetrate necrotic pancreatic tissue effectively. Outside of infected necrosis, the mainstay of treatment is aggressive IV fluid resuscitation (Ringer's Lactate) — this is far more evidence-based and life-saving than antibiotics."
+      },
+      {
+        "question": "What is Pancreatic Enzyme Replacement Therapy (PERT) and do I need to take it with every meal?",
+        "answer": "PERT (Pancreatic Enzyme Replacement Therapy) replaces the digestive enzymes that your damaged pancreas can no longer produce — specifically lipase (for fat digestion), amylase (for carbohydrates), and proteases (for protein). Without adequate pancreatic enzymes, fat and protein pass through the gut undigested, causing: greasy, floating, foul-smelling stools (steatorrhoea); severe malnutrition and weight loss; deficiencies of fat-soluble vitamins (A, D, E, K). Yes — PERT must be taken with EVERY meal and snack (not before or after — during or at the very start of eating) to ensure the enzymes mix with food in the duodenum where digestion occurs. The dose is flexible — you or your doctor may need to adjust the number of capsules per meal to normalise your stools. TAKE WITH PLENTY OF WATER. ALWAYS combine PERT with a PPI (omeprazole 20 mg once daily) — gastric acid rapidly inactivates the enzyme capsules; the PPI reduces acid and protects them. Common formulations available in India include Creon and Panzytrat. Do NOT open the enteric-coated capsules and swallow the granules — the coating protects them from stomach acid."
+      },
+      {
+        "question": "Does drinking alcohol once in a while harm me if I have chronic pancreatitis?",
+        "answer": "Yes — significantly. There is NO safe amount of alcohol if you have chronic pancreatitis, especially if alcohol was the cause. Any alcohol intake: directly poisons pancreatic acinar cells and triggers further inflammation; can precipitate an acute-on-chronic pancreatitis attack requiring hospitalisation; worsens pancreatic fibrosis and accelerates irreversible gland destruction; increases the risk of pancreatic cancer (already elevated in chronic pancreatitis). The widely discussed concept of 'moderate drinking' in health guidelines does NOT apply to chronic pancreatitis. Even people whose pancreatitis was caused by gallstones or other non-alcoholic causes should avoid alcohol — alcohol acts synergistically with other factors to damage the already-vulnerable inflamed pancreas. Complete and permanent alcohol abstinence is the ONLY lifestyle intervention proven to slow the progression of chronic pancreatitis. If you are physically dependent on alcohol (experiencing withdrawal tremors or sweating if you stop), please see a doctor before stopping abruptly — alcohol withdrawal can be dangerous and requires medical supervision."
+      },
+      {
+        "question": "What are pseudocysts and when do they need treatment?",
+        "answer": "A pancreatic pseudocyst is a collection of pancreatic juice (the fluid produced by the pancreas, rich in digestive enzymes) enclosed in a fibrous wall — forming when a pancreatic duct is disrupted (by severe pancreatitis or chronic inflammation) and juice leaks into the surrounding tissue. Unlike a true cyst, a pseudocyst has no epithelial lining (hence 'pseudo'). On ultrasound or CT, pseudocysts appear as smooth, round, fluid-filled structures adjacent to the pancreas. The good news: the majority of pseudocysts (40-50%) resolve spontaneously over weeks without any intervention, particularly if they are small (less than 6 cm) and asymptomatic. A pseudocyst needs treatment when: it is causing pain or discomfort from pressure; it is enlarging; it has become infected (developing fever and sepsis); it is compressing the stomach, duodenum, or bile duct causing vomiting or jaundice; or it is bleeding into itself (acute expansion). The modern treatment of choice is endoscopic drainage — using an ultrasound endoscope to create a small opening between the pseudocyst and the stomach wall (EUS-guided cystogastrostomy), allowing it to drain internally without any external incisions or surgery."
+      }
+    ]
+  }
+}

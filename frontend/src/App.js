@@ -34,6 +34,11 @@ function App() {
   const [isToolsOpen, setIsToolsOpen] = useState(true);
   const [isTopicsOpen, setIsTopicsOpen] = useState(true);
   const [isUploadOpen, setIsUploadOpen] = useState(true);
+
+
+  const [bmiWeight, setBmiWeight] = useState("");
+  const [bmiHeight, setBmiHeight] = useState("");
+
   const [locating, setLocating] = useState(false);
 
   const bottomRef = useRef(null);
@@ -254,6 +259,11 @@ function App() {
       text: text || `📎 Uploaded: ${uploadedFile?.name}`,
       time: formatTime(new Date()),
       file: uploadedFile ? uploadedFile.name : null,
+      image:
+        uploadedFile &&
+        uploadedFile.type.startsWith("image/")
+          ? URL.createObjectURL(uploadedFile)
+          : null,
     };
 
     setMessages((prev) => [...prev, userMsg]);
@@ -703,12 +713,52 @@ function App() {
 
           <div className={`collapsible-content ${isToolsOpen ? 'expanded' : 'collapsed'}`}>
             <div className="collapsible-inner">
+<<<<<
               <div className="tools-grid">
                 <button className="new-chat-btn" style={{ margin: 0, flex: 1, padding: '8px', fontSize: '12px' }} onClick={() => setInput("Calculate BMI")}>
                   BMI Calc
                 </button>
                 <button className="new-chat-btn" style={{ margin: 0, flex: 1, padding: '8px', fontSize: '12px' }} onClick={() => setInput("Check Drug Interactions")}>
                   Drugs
+=====
+              <div style={{ display: 'flex', gap: '8px', paddingBottom: '8px', flexDirection: 'column' }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
+                  <input
+                    type="number"
+                    placeholder="Weight (kg)"
+                    value={bmiWeight}
+                    onChange={(e) => setBmiWeight(e.target.value)}
+                    style={{ padding: "6px" }}
+                  />
+                  <input
+                    type="number"
+                    placeholder="Height (cm)"
+                    value={bmiHeight}
+                    onChange={(e) => setBmiHeight(e.target.value)}
+                    style={{ padding: "6px" }}
+                  />
+                  <button
+                    className="new-chat-btn"
+                    style={{ margin: 0, padding: "8px", fontSize: "12px" }}
+                    onClick={() => {
+                      if (!bmiWeight || !bmiHeight) {
+                        alert("Please enter weight and height");
+                        return;
+                      }
+                      sendMessage(`${bmiWeight} kg ${bmiHeight} cm Calculate BMI`);
+                    }}
+                  >
+                    Calculate BMI
+                  </button>
+                </div>
+                <button
+                  className="new-chat-btn location-tool-btn"
+                  onClick={findNearbyMedicalFacilities}
+                  disabled={locating}
+                  title="Allow location to find nearby medical facilities"
+                >
+                  {locating ? "Finding..." : "Nearby Care"}
+>>>>>
                 </button>
                 <button
                   className="new-chat-btn location-tool-btn"
@@ -876,6 +926,22 @@ function App() {
                 )}
                 <div className="message-content">
                   <div className={`message-bubble ${m.role}`}>
+                    {m.image && (
+                      <div className="uploaded-image-preview">
+                        <img
+                          src={m.image}
+                          alt="Uploaded"
+                          style={{
+                            maxWidth: "250px",
+                            maxHeight: "250px",
+                            borderRadius: "12px",
+                            marginBottom: "8px",
+                            display: "block"
+                          }}
+                        />
+                      </div>
+                    )}
+                    
                     {m.file && (
                       <div className="file-badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14">

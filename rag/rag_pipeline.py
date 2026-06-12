@@ -24,6 +24,29 @@ QUERY_FILLER_WORDS = [
     "we", "they", "it", "this", "that", "these", "those",
 ]
 
+import re
+
+ALIASES = {
+    "influenza": ["flu"],
+    "flu": ["influenza"],
+    "hypertension": ["high blood pressure"],
+    "gastroenteritis": ["food poisoning", "stomach flu"],
+}
+
+def disease_matches_query(disease: str, query: str) -> bool:
+    if not disease:
+        return False
+
+    disease = re.sub(r'[^a-zA-Z0-9 ]', ' ', disease.lower())
+    query = query.lower()
+
+    disease_terms = set(disease.split())
+
+    for term in list(disease_terms):
+        if term in ALIASES:
+            disease_terms.update(ALIASES[term])
+
+    return any(term in query for term in disease_terms)
 
 def build_wikipedia_query(user_query: str) -> str:
     """
@@ -218,6 +241,9 @@ def run_rag(
         conversation_history=conversation_history,
         stream=stream,
     )
+    print("\n=== RAG CONTEXT ===")
+    print(context)
+    print("===================\n")
 
     # 6. Collect sources
     sources = []

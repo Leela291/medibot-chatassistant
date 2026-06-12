@@ -14,14 +14,16 @@ class ConversationMemory:
 
     def add_user(self, message: str) -> None:
         self._history.append({"role": "user", "content": message})
-        self._trim()
 
     def add_assistant(self, message: str) -> None:
         self._history.append({"role": "assistant", "content": message})
-        self._trim()
 
-    def get_history(self) -> list[dict]:
+    def get_all_history(self) -> list[dict]:
         return list(self._history)
+    
+    def get_history(self):
+        max_messages = self.max_turns * 2
+        return list(self._history[-max_messages:])
 
     def clear(self) -> None:
         self._history.clear()

@@ -1,0 +1,501 @@
+{
+  "disease": {
+    "id": "DIS-032",
+    "name": "Urinary Tract Infection",
+    "scientific_name": "Cystitis / Acute Lower Urinary Tract Infection",
+    "aliases": [
+      "UTI",
+      "Urinary Tract Infection",
+      "Cystitis",
+      "Bladder Infection"
+    ],
+    "category": "Genitourinary Infectious Disease",
+    "overview": {
+      "description": "Urinary Tract Infection (UTI), particularly cystitis, is an infection and inflammation of the bladder and lower urinary tract, most commonly caused by bacterial pathogens ascending from the periurethral area. Escherichia coli accounts for 75-95% of uncomplicated cases. It is one of the most common bacterial infections in humans, especially women, due to anatomical factors (short urethra close to anus). Symptoms include dysuria, urinary frequency, urgency, and suprapubic discomfort. While uncomplicated cases respond well to short-course antibiotics, complicated UTIs, recurrent infections, and upper tract involvement (pyelonephritis) can lead to significant morbidity including sepsis.",
+      "affected_organ": "Urinary Bladder and Urethra (Lower Urinary Tract); can ascend to ureters and kidneys (pyelonephritis)",
+      "prevalence": "Extremely common; lifetime risk approximately 50% in women. Accounts for over 8.6 million ambulatory care visits annually in the US. Annual incidence around 10% in women.",
+      "age_group": "Peak incidence in young sexually active women (18-24 years); also highly prevalent in postmenopausal women and elderly of both sexes.",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": false,
+      "is_surgical_emergency": false
+    },
+    "anatomy_and_physiology": {
+      "urinary_tract": "The urinary tract includes kidneys, ureters, urinary bladder, and urethra. Lower UTI primarily affects the bladder (cystitis). The female urethra is short (3-4 cm) and located near the anus and vagina, facilitating bacterial entry from intestinal flora.",
+      "normal_defenses": "Continuous urine flow (hydrokinetic defense), glycosaminoglycan layer on urothelium, Tamm-Horsfall protein, secretory IgA, acidic vaginal pH maintained by lactobacilli, and innate immune responses.",
+      "why_women_more_susceptible": "Short urethra, proximity to anus and vagina, sexual intercourse (mechanical introduction of bacteria), spermicides disrupting normal flora, and postmenopausal estrogen deficiency leading to atrophic changes.",
+      "mcburney_equivalent": "Suprapubic tenderness is the hallmark physical finding in cystitis, analogous to McBurney's point in appendicitis."
+    },
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Uncomplicated Cystitis",
+        "description": "Acute bacterial infection of the bladder in otherwise healthy, non-pregnant, premenopausal women without structural or functional urinary tract abnormalities.",
+        "common_in": "Young, sexually active women",
+        "pathology": "Bacterial invasion of bladder mucosa causing inflammation without upper tract involvement",
+        "management": "Short-course oral antibiotics (3-5 days)",
+        "prognosis": "Excellent with prompt treatment; low complication rate"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Complicated UTI",
+        "description": "UTI occurring in the presence of risk factors that increase the chance of therapeutic failure, recurrence, or serious complications.",
+        "common_in": "Men, pregnant women, elderly, diabetics, patients with catheters, stones, or obstruction",
+        "pathology": "Often involves resistant organisms or impaired host defenses",
+        "management": "Longer antibiotic courses (7-14 days), culture-guided therapy, investigation of underlying cause",
+        "prognosis": "Guarded; higher risk of progression to pyelonephritis or sepsis"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Recurrent UTI",
+        "description": "Two or more episodes within 6 months or three or more within 12 months.",
+        "common_in": "Women with predisposing factors",
+        "pathology": "Reinfection (new organism) or relapse (same organism)",
+        "management": "Prophylaxis (antibiotic or non-antibiotic), behavioral modifications, investigation for underlying abnormalities",
+        "prognosis": "Good with appropriate prevention strategies"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Catheter-Associated UTI (CAUTI)",
+        "description": "UTI in patients with indwelling urinary catheters, often biofilm-related.",
+        "common_in": "Hospitalized and long-term care facility residents",
+        "pathology": "Biofilm formation on catheter surface by uropathogens",
+        "management": "Catheter removal/replacement + targeted antibiotics",
+        "prognosis": "Higher morbidity; prevention through catheter care bundles is critical"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Acute Pyelonephritis",
+        "description": "Upper UTI involving the kidneys, usually ascending from cystitis.",
+        "common_in": "Untreated or complicated lower UTI",
+        "pathology": "Renal parenchymal inflammation, possible abscess formation",
+        "management": "IV antibiotics initially, hospitalization in severe cases",
+        "prognosis": "Good with timely treatment; risk of renal scarring if recurrent"
+      }
+    ],
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Uncomplicated Cystitis",
+        "description": "Isolated lower urinary symptoms without fever or systemic involvement.",
+        "clinical_features": "Dysuria, frequency, urgency, suprapubic tenderness; no fever",
+        "management": "Oral antibiotics on outpatient basis",
+        "prognosis": "Excellent"
+      },
+      {
+        "level": 2,
+        "name": "Moderate UTI",
+        "description": "Severe local symptoms or mild systemic features.",
+        "clinical_features": "Gross hematuria, significant discomfort, low-grade fever",
+        "management": "Oral antibiotics with close follow-up",
+        "prognosis": "Good"
+      },
+      {
+        "level": 3,
+        "name": "Severe / Complicated UTI or Pyelonephritis",
+        "description": "Systemic involvement or presence of complicating factors.",
+        "clinical_features": "Fever >38°C, flank pain, nausea, vomiting, hemodynamic instability",
+        "management": "Hospitalization, IV antibiotics, source control if needed",
+        "prognosis": "Guarded without prompt intervention"
+      }
+    ],
+    "causes": {
+      "primary_cause": "Bacterial infection, most commonly ascending from the periurethral region.",
+      "most_common_pathogens": [
+        "Escherichia coli (75-95% of uncomplicated cases)",
+        "Staphylococcus saprophyticus (4-15% in young women)",
+        "Klebsiella pneumoniae, Proteus mirabilis, Enterococcus faecalis"
+      ],
+      "pathophysiological_sequence": [
+        "Periurethral colonization by fecal or vaginal flora",
+        "Adherence to uroepithelial cells via bacterial adhesins (fimbriae)",
+        "Ascension into bladder facilitated by short female urethra",
+        "Colonization and biofilm formation in bladder",
+        "Invasion of mucosa causing inflammation and symptoms",
+        "In complicated cases: impaired clearance or host defenses allow deeper invasion or persistence"
+      ],
+      "risk_factors": [
+        "Female sex (anatomical predisposition)",
+        "Sexual intercourse (especially with spermicides)",
+        "New sexual partner",
+        "History of previous UTI",
+        "Postmenopausal state (estrogen deficiency)",
+        "Pregnancy",
+        "Diabetes mellitus",
+        "Urinary catheterization or recent instrumentation",
+        "Urinary tract obstruction, stones, or anatomical abnormalities",
+        "Immunosuppression"
+      ],
+      "genetic_factors": [
+        "Family history of recurrent UTIs",
+        "Genetic variations affecting bacterial adherence receptors or immune response"
+      ]
+    },
+    "symptoms": {
+      "primary_symptoms": [
+        {
+          "id": "SYM-501",
+          "name": "Dysuria",
+          "description": "Burning, stinging, or pain during urination — the hallmark symptom.",
+          "severity": "Mild to Severe",
+          "onset": "Acute"
+        },
+        {
+          "id": "SYM-502",
+          "name": "Urinary Frequency",
+          "description": "Increased frequency of urination, often small volumes.",
+          "severity": "Moderate to Severe",
+          "onset": "Acute"
+        },
+        {
+          "id": "SYM-503",
+          "name": "Urinary Urgency",
+          "description": "Sudden, compelling need to urinate.",
+          "severity": "Moderate to Severe",
+          "onset": "Acute"
+        }
+      ],
+      "secondary_symptoms": [
+        "Suprapubic pain or tenderness",
+        "Cloudy, foul-smelling, or bloody urine",
+        "Mild low-grade fever and malaise",
+        "Nocturia"
+      ],
+      "warning_signs_of_attack": [
+        "Fever >38°C with chills",
+        "Flank pain or costovertebral angle tenderness (pyelonephritis)",
+        "Nausea, vomiting, or inability to tolerate oral intake",
+        "Confusion or altered mental status (especially elderly)"
+      ],
+      "symptoms_in_children": [
+        "Fever, irritability, vomiting, poor feeding or appetite",
+        "New onset bedwetting in a previously continent child"
+      ],
+      "symptoms_in_elderly": [
+        "Atypical or absent classic symptoms",
+        "Delirium, confusion, falls, or functional decline",
+        "Generalized weakness or anorexia"
+      ],
+      "symptoms_in_pregnancy": [
+        "Same as non-pregnant but higher risk of rapid progression to pyelonephritis"
+      ],
+      "physical_examination_signs": {
+        "suprapubic_tenderness": "Localized tenderness over the bladder",
+        "costovertebral_angle_tenderness": "Flank tenderness suggesting upper tract involvement"
+      }
+    },
+    "risk_factors": [
+      "Female sex (anatomical predisposition)",
+      "Sexual intercourse (especially with spermicides)",
+      "New sexual partner",
+      "History of previous UTI",
+      "Postmenopausal state (estrogen deficiency)",
+      "Pregnancy",
+      "Diabetes mellitus",
+      "Urinary catheterization or recent instrumentation",
+      "Urinary tract obstruction, stones, or anatomical abnormalities",
+      "Immunosuppression"
+    ],
+    "diagnosis": {
+      "medical_history": [
+        "Detailed symptom onset and characteristics",
+        "Sexual and contraceptive history",
+        "Previous UTIs and treatments",
+        "Comorbidities (diabetes, pregnancy, catheter use)",
+        "Recent antibiotic exposure"
+      ],
+      "physical_examination": [
+        "Vital signs (fever, tachycardia)",
+        "Abdominal examination for suprapubic tenderness",
+        "Flank examination for costovertebral angle tenderness"
+      ],
+      "clinical_scoring_systems": [
+        {
+          "score_name": "Clinical Prediction Rules",
+          "components": "Dysuria + frequency without vaginal discharge has high positive predictive value (~90%)"
+        }
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Urine Dipstick Analysis",
+          "description": "Rapid bedside test.",
+          "purpose": "Detects pyuria and nitrites",
+          "key_metric": "Leukocyte esterase positive + nitrites positive"
+        },
+        {
+          "test_name": "Urine Microscopy and Culture",
+          "description": "Laboratory confirmation.",
+          "purpose": "Gold standard for diagnosis and guiding therapy in complicated cases"
+        },
+        {
+          "test_name": "Pregnancy Test",
+          "description": "Essential in women of reproductive age."
+        }
+      ]
+    },
+    "treatment": {
+      "medications": {
+        "note": "All medications should be taken only under the supervision of a licensed physician. Antibiotic selection must consider local resistance patterns, patient factors, and culture results when available.",
+        "categories": [
+          {
+            "category_id": "MED-CAT-61",
+            "category_name": "First-Line Antibiotics for Uncomplicated Cystitis",
+            "purpose": "Short-course therapy with minimal ecological impact",
+            "medicines": [
+              {
+                "name": "Nitrofurantoin",
+                "brand_examples": [
+                  "Macrobid",
+                  "Niftran"
+                ],
+                "form": "Capsule",
+                "dosage": "100 mg twice daily for 5 days",
+                "use_case": "Preferred first-line in most guidelines",
+                "side_effects": [
+                  "Nausea, headache, rare pulmonary toxicity with long-term use"
+                ]
+              },
+              {
+                "name": "Trimethoprim/Sulfamethoxazole",
+                "brand_examples": [
+                  "Bactrim",
+                  "Septran"
+                ],
+                "form": "Tablet",
+                "dosage": "160/800 mg twice daily for 3 days",
+                "use_case": "Effective when local resistance is low",
+                "side_effects": [
+                  "Allergic reactions, hyperkalemia"
+                ]
+              },
+              {
+                "name": "Fosfomycin",
+                "brand_examples": [
+                  "Monuril"
+                ],
+                "form": "Sachet",
+                "dosage": "3 g single oral dose",
+                "use_case": "Convenient single-dose regimen",
+                "side_effects": [
+                  "Diarrhea"
+                ]
+              }
+            ]
+          },
+          {
+            "category_id": "MED-CAT-62",
+            "category_name": "Symptomatic Relief",
+            "purpose": "Alleviate pain and discomfort while antibiotics take effect",
+            "medicines": [
+              {
+                "name": "Phenazopyridine",
+                "brand_examples": [
+                  "Pyridium",
+                  "Uristat"
+                ],
+                "form": "Tablet",
+                "dosage": "200 mg three times daily for maximum 2 days",
+                "use_case": "Urinary tract analgesic",
+                "side_effects": [
+                  "Orange-red urine discoloration"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "lifestyle_management": {
+        "trigger_avoidance": [
+          "Urinate promptly after sexual intercourse",
+          "Wipe from front to back after toileting",
+          "Avoid spermicide-containing contraceptives if recurrent",
+          "Maintain good perineal hygiene"
+        ],
+        "recurrence_prevention": [
+          "D-Mannose supplementation",
+          "Topical vaginal estrogen in postmenopausal women",
+          "Probiotic Lactobacillus strains",
+          "Adequate daily fluid intake"
+        ]
+      },
+      "uti_action_plan": {
+        "green_zone": {
+          "symptoms": "Mild symptoms improving within 24-48 hours",
+          "action": "Complete full antibiotic course; maintain hydration"
+        },
+        "yellow_zone": {
+          "symptoms": "Persistent symptoms after 48 hours",
+          "action": "Contact healthcare provider for reassessment"
+        },
+        "red_zone": {
+          "symptoms": "Fever, flank pain, vomiting, confusion",
+          "action": "Seek immediate emergency medical care"
+        }
+      }
+    },
+    "medications": {
+      "note": "All medications should be taken only under the supervision of a licensed physician. Antibiotic selection must consider local resistance patterns, patient factors, and culture results when available.",
+      "categories": [
+        {
+          "category_id": "MED-CAT-61",
+          "category_name": "First-Line Antibiotics for Uncomplicated Cystitis",
+          "purpose": "Short-course therapy with minimal ecological impact",
+          "medicines": [
+            {
+              "name": "Nitrofurantoin",
+              "brand_examples": [
+                "Macrobid",
+                "Niftran"
+              ],
+              "form": "Capsule",
+              "dosage": "100 mg twice daily for 5 days",
+              "use_case": "Preferred first-line in most guidelines",
+              "side_effects": [
+                "Nausea, headache, rare pulmonary toxicity with long-term use"
+              ]
+            },
+            {
+              "name": "Trimethoprim/Sulfamethoxazole",
+              "brand_examples": [
+                "Bactrim",
+                "Septran"
+              ],
+              "form": "Tablet",
+              "dosage": "160/800 mg twice daily for 3 days",
+              "use_case": "Effective when local resistance is low",
+              "side_effects": [
+                "Allergic reactions, hyperkalemia"
+              ]
+            },
+            {
+              "name": "Fosfomycin",
+              "brand_examples": [
+                "Monuril"
+              ],
+              "form": "Sachet",
+              "dosage": "3 g single oral dose",
+              "use_case": "Convenient single-dose regimen",
+              "side_effects": [
+                "Diarrhea"
+              ]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-62",
+          "category_name": "Symptomatic Relief",
+          "purpose": "Alleviate pain and discomfort while antibiotics take effect",
+          "medicines": [
+            {
+              "name": "Phenazopyridine",
+              "brand_examples": [
+                "Pyridium",
+                "Uristat"
+              ],
+              "form": "Tablet",
+              "dosage": "200 mg three times daily for maximum 2 days",
+              "use_case": "Urinary tract analgesic",
+              "side_effects": [
+                "Orange-red urine discoloration"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "diet_and_nutrition": {
+      "overview": "Supportive hydration and bladder-friendly diet aid symptom relief and recovery. No diet cures UTI, but adequate fluids promote bacterial flushing.",
+      "recommended_foods": [
+        {
+          "category": "Hydration and Supportive",
+          "items": [
+            {
+              "food": "Water and Oral Rehydration Solutions",
+              "benefit": "Increases urine volume to mechanically flush bacteria",
+              "frequency": "2.5–3+ liters daily"
+            },
+            {
+              "food": "Probiotic Yogurt and Fermented Foods",
+              "benefit": "Helps restore normal vaginal and gut flora disrupted by antibiotics",
+              "frequency": "Daily"
+            }
+          ]
+        }
+      ],
+      "foods_to_avoid": [
+        {
+          "food": "Caffeine, Alcohol, Carbonated drinks, Spicy and Acidic Foods",
+          "reason": "These act as bladder irritants and can worsen dysuria and urgency"
+        }
+      ]
+    },
+    "prevention": {
+      "lifestyle_management": {
+        "trigger_avoidance": [
+          "Urinate promptly after sexual intercourse",
+          "Wipe from front to back after toileting",
+          "Avoid spermicide-containing contraceptives if recurrent",
+          "Maintain good perineal hygiene"
+        ],
+        "recurrence_prevention": [
+          "D-Mannose supplementation",
+          "Topical vaginal estrogen in postmenopausal women",
+          "Probiotic Lactobacillus strains",
+          "Adequate daily fluid intake"
+        ]
+      },
+      "vaccinations_recommended": []
+    },
+    "complications": [
+      "Pyelonephritis (kidney infection)",
+      "Urosepsis and septic shock",
+      "Renal or perinephric abscess",
+      "Chronic or recurrent UTIs",
+      "Emphysematous pyelonephritis (in diabetics)"
+    ],
+    "special_populations": {
+      "uti_in_pregnancy": {
+        "key_points": [
+          "All UTIs in pregnancy are considered complicated",
+          "Screen and treat asymptomatic bacteriuria to prevent pyelonephritis",
+          "Safe antibiotics include nitrofurantoin (avoid near term), beta-lactams, and fosfomycin"
+        ]
+      },
+      "uti_in_men": {
+        "key_points": [
+          "All male UTIs are considered complicated until proven otherwise",
+          "Evaluate for prostatitis or structural abnormalities"
+        ]
+      },
+      "uti_in_elderly": {
+        "key_points": [
+          "Atypical presentations common (confusion, functional decline)",
+          "Do not treat asymptomatic bacteriuria"
+        ]
+      }
+    },
+    "when_to_see_doctor": [
+      "Dysuria with frequency or urgency",
+      "Symptoms not improving after 48 hours of treatment",
+      "Fever, flank pain, or systemic symptoms",
+      "Recurrent UTIs",
+      "Pregnancy, diabetes, or male sex"
+    ],
+    "emergency_signs": [
+      "High fever with chills and flank pain",
+      "Severe vomiting or inability to tolerate fluids",
+      "Confusion or signs of sepsis"
+    ],
+    "faq": [
+      {
+        "question": "Can a UTI go away without antibiotics?",
+        "answer": "Some mild uncomplicated cases (25-42%) may resolve spontaneously, but antibiotics are recommended to shorten duration and prevent complications like pyelonephritis."
+      },
+      {
+        "question": "How can recurrent UTIs be prevented?",
+        "answer": "Behavioral measures (post-coital voiding, hydration), D-mannose, vaginal estrogen in postmenopausal women, and probiotics are effective strategies."
+      }
+    ]
+  }
+}

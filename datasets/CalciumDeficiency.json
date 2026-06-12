@@ -1,0 +1,1426 @@
+{
+  "disease": {
+    "id": "DIS-031",
+    "name": "Calcium Deficiency",
+    "scientific_name": "Calcium Deficiency / Hypocalcaemia / Nutritional Calcium Deficiency / Osteoporosis / Osteomalacia / Rickets",
+    "icd_10_code": "E58 (Dietary calcium deficiency); E55 (Vitamin D deficiency — closely linked); E83.5 (Disorders of calcium metabolism); E55.0 (Rickets, active); M83 (Adult osteomalacia); M80-M81 (Osteoporosis); E20 (Hypoparathyroidism); E83.51 (Hypocalcaemia)",
+    "category": "Nutritional / Metabolic / Endocrine / Musculoskeletal Disease",
+    "overview": {
+      "description": "Calcium deficiency is a state of inadequate calcium in the body — encompassing a spectrum from nutritional dietary calcium deficiency, acute or chronic hypocalcaemia (low blood calcium), to the long-term skeletal consequences of calcium depletion: osteoporosis, osteomalacia (adults), and rickets (children). Calcium is the most abundant mineral in the human body (approximately 1000-1200g in adults — 99% stored in bones and teeth as hydroxyapatite crystal), and beyond its structural role, calcium is indispensable for: neuromuscular transmission, cardiac electrical conduction, muscle contraction, enzyme function, blood coagulation, and intracellular signalling. Calcium homeostasis is tightly regulated by three hormones — Parathyroid Hormone (PTH), calcitriol (active Vitamin D / 1,25-dihydroxyvitamin D3), and calcitonin — maintaining serum calcium within the narrow range of 8.5-10.5 mg/dL (2.12-2.62 mmol/L). Disruption of this regulatory system or prolonged dietary inadequacy leads to a spectrum of manifestations from subtle neurological symptoms (perioral tingling, muscle cramps) to life-threatening tetany, seizures, and cardiac arrhythmias.",
+      "affected_organ": "Bones and teeth (primary structural store); Neuromuscular system; Cardiac conduction system; Kidneys; Parathyroid-vitamin D axis",
+      "prevalence": "One of the most common nutritional deficiencies globally. Osteoporosis affects over 200 million people worldwide (1 in 3 women and 1 in 5 men over 50 will suffer an osteoporotic fracture). Vitamin D deficiency — the most common cause of calcium malabsorption — affects 40-70% of the Indian population. Rickets remains endemic in low-income tropical countries despite adequate sunlight — due to dietary calcium deficiency in low-calcium diets. Hypocalcaemia is found in 15-18% of hospitalised patients.",
+      "age_group": "All ages; highest clinical impact in: postmenopausal women (osteoporosis), elderly >65 (falls + fractures), children 6 months-5 years (rickets), pregnant/lactating women (increased demand), adolescents (peak bone mass formation).",
+      "sex_ratio": "Women significantly more affected — particularly postmenopausal women (oestrogen loss dramatically accelerates bone resorption; women have lower peak bone mass than men; longer life expectancy increases fracture risk). Men affected later and less severely but osteoporosis is significantly underdiagnosed in men.",
+      "is_contagious": false,
+      "is_curable": true,
+      "is_manageable": true,
+      "chronic": true,
+      "is_preventable": true,
+      "key_fact": "Hip fracture from osteoporosis has a 20-30% mortality in the year following the fracture — making osteoporosis-related fractures as serious as many cancers, yet calcium and Vitamin D supplementation with lifestyle measures can reduce fracture risk by up to 40%"
+    },
+    "calcium_physiology": {
+      "total_body_calcium": "1000-1200g total body calcium (adults); 99% in bones and teeth (hydroxyapatite — Ca10(PO4)6(OH)2); 1% extracellular (serum and interstitial fluid); <0.01% intracellular (critically important for signalling)",
+      "serum_calcium_forms": {
+        "total_serum_calcium": "8.5-10.5 mg/dL (2.12-2.62 mmol/L) — total measured on routine blood tests",
+        "ionised_free_calcium": "~45% of total; 4.5-5.2 mg/dL (1.12-1.30 mmol/L) — the PHYSIOLOGICALLY ACTIVE form; directly regulates PTH secretion and neuromuscular function",
+        "protein_bound": "~40-45% bound to albumin (major) and globulins; NOT physiologically active",
+        "complexed_calcium": "~10-15% complexed with citrate, phosphate, bicarbonate"
+      },
+      "albumin_correction": "When albumin is LOW (hypoalbuminaemia — common in sick patients, malnutrition, liver disease): CORRECT the measured total calcium. Corrected calcium (mg/dL) = Measured calcium + 0.8 × (4.0 − Serum albumin g/dL). Low albumin gives FALSELY LOW total calcium — corrected calcium may be normal (euCaemia).",
+      "hormonal_regulation": {
+        "PTH": "Parathyroid Hormone — secreted by chief cells of parathyroid glands when ionised calcium falls. Actions: RAISES serum calcium by: (1) Osteoclast activation (bone resorption → Ca²⁺ release); (2) Renal calcium reabsorption in DCT; (3) Renal phosphate excretion (phosphaturia); (4) Activation of Vitamin D (1α-hydroxylase stimulation in kidney → calcitriol production)",
+        "calcitriol_active_vitamin_D": "1,25-dihydroxyvitamin D3 (calcitriol) — the active form. Actions: RAISES serum calcium by: dramatically increasing intestinal calcium absorption (5-10% without Vit D → 30-40% with adequate calcitriol); bone calcium mobilisation; renal calcium reabsorption. Synthesised in skin (UV-B + cholesterol → pre-D3 → D3); 25-hydroxylation in liver → 25(OH)D (storage form, measured in blood); 1α-hydroxylation in kidney → 1,25(OH)2D3 (calcitriol — active)",
+        "calcitonin": "Secreted by parafollicular C-cells of thyroid when calcium is HIGH. Actions: LOWERS serum calcium by: inhibiting osteoclast-mediated bone resorption; increasing renal calcium excretion. Less physiologically dominant than PTH/calcitriol in humans but used therapeutically (nasal/injectable calcitonin for osteoporosis)"
+      },
+      "daily_requirements": {
+        "infants_0_6_months": "200mg/day",
+        "infants_7_12_months": "260mg/day",
+        "children_1_3_years": "700mg/day",
+        "children_4_8_years": "1000mg/day",
+        "children_9_18_years": "1300mg/day (peak bone mass building — CRITICAL period)",
+        "adults_19_50_years": "1000mg/day",
+        "women_51_plus": "1200mg/day (post-menopausal — oestrogen loss reduces absorption)",
+        "men_51_70_years": "1000mg/day",
+        "men_71_plus": "1200mg/day",
+        "pregnant_14_18_years": "1300mg/day",
+        "pregnant_19_50_years": "1000mg/day (foetal skeleton + own needs)",
+        "lactating": "1000-1300mg/day",
+        "india_rda": "ICMR-NIN RDA India: 600mg/day (lower than Western RDA — Indian diets more typically plant-based calcium with lower bioavailability; Indian guidelines account for this)"
+      }
+    },
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Nutritional Calcium Deficiency (Dietary Inadequacy)",
+        "description": "Chronic inadequate calcium intake without meeting daily requirements — the most common form globally and a major public health issue particularly in low-income countries, vegans, and those avoiding dairy. Long-term dietary calcium inadequacy does not primarily cause low serum calcium (compensated by PTH-mediated bone resorption) but depletes bone mineral density progressively, eventually causing osteoporosis, osteomalacia, or rickets.",
+        "prevalence": "India: typical Indian vegetarian diet provides 300-400mg calcium/day (well below 600mg ICMR recommendation); non-dairy vegetarian diet for vast majority of population relying primarily on grains which are low in bioavailable calcium",
+        "common_in": "Vegans; lactose-intolerant individuals avoiding all dairy; populations with low dairy intake; elderly with poor dietary variety; children with restrictive diets",
+        "consequences": "Osteopenia → Osteoporosis (adults); Rickets (children); Dental caries and enamel hypoplasia; Nutritional calcium-deficiency rickets (endemic Africa, Asia)"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "Acute Hypocalcaemia",
+        "description": "Sudden or rapidly developing fall in serum ionised calcium — a medical emergency when severe (<1.1 mmol/L ionised or corrected total calcium <7.5 mg/dL). Causes: post-surgical hypoparathyroidism (most common acute cause — after total thyroidectomy or parathyroidectomy); hungry bone syndrome (massive bone uptake post-parathyroidectomy); acute pancreatitis (calcium saponification with fat necrosis); citrate toxicity (massive blood transfusion — citrate chelates calcium); severe hypomagnesaemia; severe sepsis; rhabdomyolysis.",
+        "clinical_urgency": "MEDICAL EMERGENCY — can cause laryngospasm, tetany, cardiac arrhythmias (prolonged QT → torsades de pointes → ventricular fibrillation)",
+        "treatment": "IV calcium gluconate 10% infusion — URGENT; treat underlying cause"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Chronic Hypocalcaemia",
+        "description": "Persistently low serum calcium — most commonly from: hypoparathyroidism (post-surgical, autoimmune, genetic); pseudo-hypoparathyroidism; chronic vitamin D deficiency; chronic kidney disease (reduced calcitriol production + phosphate retention); malabsorption (coeliac, Crohn's, bariatric surgery). Chronic hypocalcaemia may be well-compensated (subtle symptoms) or cause significant neuromuscular, cardiac, and psychiatric symptoms.",
+        "most_common_causes": "Post-surgical hypoparathyroidism; autoimmune hypoparathyroidism; chronic Vitamin D deficiency; CKD-mineral bone disorder (CKD-MBD)",
+        "symptoms": "Perioral numbness, tingling of hands/feet, muscle cramps, positive Chvostek's and Trousseau's signs, cognitive changes, depression, cataracts (long-term)"
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Hypoparathyroidism",
+        "description": "Insufficient PTH production — the most important cause of chronic hypocalcaemia requiring long-term management. Without PTH: intestinal calcium absorption falls; renal calcium wasting increases; bone resorption is suppressed → serum calcium falls. PTH also stimulates Vitamin D activation — deficiency causes functional calcitriol deficiency as well. Characterised by: low calcium, HIGH phosphate (no PTH phosphaturia), and low or inappropriately normal PTH level.",
+        "causes": [
+          "Post-surgical (most common in adults) — after thyroid, parathyroid, or neck surgery",
+          "Autoimmune (isolated or as part of APS-1 — autoimmune polyendocrinopathy syndrome type 1)",
+          "Genetic (DiGeorge syndrome — 22q11.2 deletion; GCMB mutations; CASR mutations causing activating mutation of calcium-sensing receptor)",
+          "Infiltrative (haemochromatosis, Wilson's disease, sarcoidosis — rare)",
+          "Magnesium deficiency (suppresses PTH secretion and PTH action — MUST CORRECT Mg before treating hypocalcaemia)"
+        ],
+        "management": "Calcium + active Vitamin D (calcitriol or alfacalcidol); recombinant PTH (Natpara/PTH 1-84 or teriparatide) in selected refractory cases; avoid hypercalciuria (monitor 24h urinary calcium — risk of renal stones)"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Osteoporosis",
+        "description": "A chronic skeletal disease characterised by reduced bone mass and deterioration of bone microarchitecture — leading to increased bone fragility and fracture risk. The silent disease — no symptoms until a fragility fracture occurs. WHO definition: Bone Mineral Density (BMD) T-score ≤ −2.5 SD below young adult mean (by DEXA scan). Osteopenia: T-score −1.0 to −2.5. Osteoporosis is the long-term consequence of negative calcium balance, hormonal changes (oestrogen deficiency), genetic factors, and lifestyle over decades.",
+        "epidemiology": "Most common metabolic bone disease globally; 200 million women affected worldwide; 1 in 3 women and 1 in 5 men >50 will have an osteoporotic fracture; hip fracture is the most devastating complication — 20-30% mortality in the first year",
+        "types_within_osteoporosis": {
+          "primary_type_1": "Postmenopausal osteoporosis — oestrogen deficiency accelerates bone resorption; predominantly trabecular bone (vertebral, Colles' fractures); occurs 50-70 years",
+          "primary_type_2": "Age-related (senile) osteoporosis — affects both cortical and trabecular bone; men and women >70 years; hip and long bone fractures predominant",
+          "secondary": "From specific causes: glucocorticoid-induced (most common secondary), hypogonadism, hyperparathyroidism, hyperthyroidism, malabsorption, IBD, RA, CKD, medications (bisphosphonate overuse causing atypical femoral fractures)"
+        },
+        "who_dexa_criteria": "Normal: T-score > -1.0; Osteopenia: T-score -1.0 to -2.5; Osteoporosis: T-score ≤ -2.5; Severe osteoporosis: T-score ≤ -2.5 plus ≥1 fragility fracture"
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Osteomalacia (Adults) / Rickets (Children)",
+        "description": "Osteomalacia (adults) and Rickets (children) are diseases of defective bone mineralisation — the organic matrix (osteoid) is laid down but not adequately mineralised with calcium and phosphate due to Vitamin D deficiency, calcium deficiency, phosphate deficiency, or hypophosphataemia. Bones become soft, painful, deformable, and prone to fracture or deformity.",
+        "rickets_features": "Children: softening and deformity of growing bones. Clinical: bow legs (genu varum) or knock knees (genu valgum); bowing of forearms; frontal bossing; delayed dentition; Harrison's groove (horizontal depression at lower chest margin from softened ribs); costochondral junction swelling ('rickety rosary'); craniotabes (soft parietal/occipital bones in infants); widening of metaphyses on X-ray (cupping, fraying); delayed fontanelle closure; reduced height; irritability",
+        "osteomalacia_features": "Adults: bone pain (particularly back, hips, ribs, feet — worst on weight-bearing); proximal muscle weakness (particularly hip girdle — difficulty climbing stairs, rising from chair — 'waddling gait'); Looser zones (pseudofractures — pathognomonic on X-ray — radiolucent bands perpendicular to bone surface); stress fractures; bone tenderness on palpation (tibial tenderness); diffuse aches mistaken for fibromyalgia or arthritis",
+        "types_of_rickets": {
+          "vitamin_D_deficiency_rickets": "Most common globally — Vitamin D deficiency causes calcium malabsorption",
+          "calcium_deficiency_rickets": "Endemic in Nigeria, South Africa, and parts of India — adequate Vitamin D but inadequate dietary calcium; responds to calcium supplementation alone",
+          "vitamin_D_resistant_rickets": "Familial hypophosphataemia (XLH — X-linked hypophosphataemia) — PHEX gene mutations causing FGF-23 excess and phosphate wasting; does NOT respond to Vitamin D alone",
+          "vitamin_D_dependent_rickets": "Type I (VDDR-I): CYP27B1 mutations — cannot activate Vitamin D; responds to calcitriol. Type II (VDDR-II): VDR mutations — Vitamin D receptor defect; may require massive calcitriol doses or calcium infusion"
+        }
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Calcium Deficiency in Chronic Kidney Disease (CKD-MBD)",
+        "description": "Chronic Kidney Disease-Mineral Bone Disorder (CKD-MBD) — a complex mineral metabolism disorder that develops as GFR falls. Mechanisms: (1) Reduced 1α-hydroxylase activity in damaged kidneys → reduced calcitriol production → reduced calcium absorption; (2) Phosphate retention (reduced GFR → hyperphosphataemia → directly lowers calcium + stimulates PTH); (3) Secondary hyperparathyroidism (compensatory PTH excess) → bone disease (osteitis fibrosa cystica); (4) FGF-23 elevation → further reduces calcitriol.",
+        "management": "Phosphate binders (sevelamer, calcium carbonate — reduce dietary phosphate absorption); active Vitamin D (calcitriol/alfacalcidol — NOT cholecalciferol which requires renal activation); calcimimetics (cinacalcet — sensitises CaSR to calcium, reducing PTH); dialysate calcium optimisation"
+      },
+      {
+        "id": "TYPE-08",
+        "name": "Pseudo-Hypoparathyroidism (PHP)",
+        "description": "A rare group of disorders characterised by target organ resistance to PTH (rather than PTH deficiency). PTH levels are HIGH (compensatory), but the kidneys and bones fail to respond normally. Biochemically identical to hypoparathyroidism (low calcium, high phosphate) but HIGH PTH distinguishes it. PHP Type 1a (Albright's Hereditary Osteodystrophy — AHO): short stature, round face, short 4th metacarpal, subcutaneous calcifications (classic phenotype). Treatment: calcium + calcitriol (same as hypoparathyroidism); PTH replacement does not help (resistance to PTH).",
+        "diagnosis": "Low calcium + high phosphate + HIGH PTH + normal renal function = PTH resistance (PHP) vs hypoparathyroidism (low/normal PTH)"
+      }
+    ],
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Calcium Deficiency / Mild Hypocalcaemia",
+        "description": "Subclinical or minimally symptomatic; often discovered on routine blood tests or DEXA scanning",
+        "serum_calcium": "8.0-8.4 mg/dL corrected total calcium (borderline low); or Ionised calcium 1.10-1.17 mmol/L",
+        "dexa_tscore": "Osteopenia: T-score -1.0 to -2.5",
+        "symptoms": "Usually asymptomatic; possible mild tingling, muscle cramps (especially nocturnal leg cramps), mild fatigue",
+        "urgency": "Non-urgent; manage with dietary calcium, Vitamin D supplementation, lifestyle measures",
+        "management": "Dietary calcium optimisation; Vitamin D supplementation (if deficient); lifestyle modification (weight-bearing exercise); reassess blood tests and DEXA in 1-2 years"
+      },
+      {
+        "level": 2,
+        "name": "Moderate Calcium Deficiency / Moderate Hypocalcaemia",
+        "description": "Symptomatic hypocalcaemia or significant bone loss requiring active treatment",
+        "serum_calcium": "7.5-7.9 mg/dL corrected total calcium; Ionised calcium 0.90-1.10 mmol/L",
+        "dexa_tscore": "Osteoporosis: T-score ≤ -2.5",
+        "symptoms": "Perioral numbness; finger and toe tingling (paraesthesiae); muscle cramps and spasms; positive Chvostek's sign; mild cognitive effects; bone pain (osteomalacia)",
+        "urgency": "Requires active treatment; outpatient management",
+        "management": "Oral calcium supplements; Vitamin D3 supplementation (if deficient); treat underlying cause; antiresorptive therapy for osteoporosis (bisphosphonates); specialist endocrinology/rheumatology referral"
+      },
+      {
+        "level": 3,
+        "name": "Severe Hypocalcaemia",
+        "description": "Clinically significant neuromuscular and cardiac manifestations",
+        "serum_calcium": "7.0-7.4 mg/dL corrected total calcium; Ionised calcium 0.80-0.90 mmol/L",
+        "symptoms": "Tetany (carpopedal spasm, laryngospasm); positive Trousseau's sign; seizures; cardiac conduction abnormalities (prolonged QT interval on ECG); severe muscle cramps; confusion; arrhythmias",
+        "urgency": "URGENT — hospital admission for monitoring and IV calcium",
+        "management": "IV calcium gluconate infusion; cardiac monitoring (ECG); treat underlying cause; transition to oral calcium + calcitriol for long-term management"
+      },
+      {
+        "level": 4,
+        "name": "Critical / Life-Threatening Hypocalcaemia",
+        "description": "Imminent cardiac or respiratory arrest from hypocalcaemia-related complications",
+        "serum_calcium": "<7.0 mg/dL corrected total calcium; Ionised calcium <0.80 mmol/L",
+        "symptoms": "Severe tetany; laryngospasm causing respiratory distress; intractable seizures; cardiac arrhythmias (torsades de pointes, ventricular fibrillation); severe hypotension; loss of consciousness",
+        "urgency": "EMERGENCY — ICU-level care; immediate IV calcium; resuscitation team on standby",
+        "management": "EMERGENCY: IV calcium gluconate 10% (1-2 ampoules = 90-180mg elemental calcium) IV STAT over 10 minutes; then continuous calcium infusion; continuous cardiac monitoring; ICU admission; anaesthesia for laryngospasm; benzodiazepines for seizures; simultaneous correction of magnesium, phosphate, potassium"
+      }
+    ],
+    "causes": {
+      "calcium_homeostasis_disruption": {
+        "three_mechanisms": [
+          "Inadequate intake — insufficient dietary calcium to meet daily requirements",
+          "Impaired absorption — Vitamin D deficiency, malabsorption syndromes, medications",
+          "Increased loss or utilisation — blood loss, increased bone turnover, renal loss"
+        ]
+      },
+      "primary_causes": [
+        {
+          "cause": "Vitamin D Deficiency",
+          "detail": "THE MOST COMMON CAUSE of calcium malabsorption globally. Vitamin D is essential for intestinal calcium absorption — without adequate calcitriol, only 5-10% of dietary calcium is absorbed (vs 30-40% with adequate Vitamin D). Vitamin D deficiency causes rickets (children) and osteomalacia (adults) even with adequate dietary calcium intake. In India: 40-70% of the population is Vitamin D deficient despite abundant sunlight — due to: melanin (reduces UV-B skin penetration), indoor lifestyle, air pollution (blocks UV-B), modest skin coverage, fear of skin darkening.",
+          "prevalence_india": "40-70% of Indian population has Vitamin D insufficiency (<30 ng/mL 25-OH-Vitamin D); 20-30% have severe deficiency (<12 ng/mL)"
+        },
+        {
+          "cause": "Dietary Calcium Inadequacy",
+          "detail": "Insufficient calcium in daily diet below requirements. Particularly common in: vegans (no dairy or milk); lactose-intolerant individuals avoiding all dairy; populations with low dairy intake; elderly with poor appetite and dietary restriction; children and adolescents who consume few dairy products. India: average Indian diet provides 300-400mg calcium/day from predominantly vegetarian sources — significantly below the 600-1000mg recommended.",
+          "most_affected": "Vegans; lactose-intolerant; elderly; adolescents; pregnant/lactating women; post-gastrectomy patients"
+        },
+        {
+          "cause": "Hypoparathyroidism (Post-Surgical)",
+          "detail": "The most common cause of acute and chronic hypocalcaemia in adults. PTH is essential for maintaining calcium homeostasis — its loss causes calcium to fall precipitously. Post-thyroidectomy (total) and parathyroid surgery carry significant hypoparathyroidism risk from inadvertent removal or devascularisation of all four parathyroid glands. Temporary transient hypoparathyroidism is very common post-thyroidectomy (24-72 hours); permanent hypoparathyroidism occurs in 1-5% of total thyroidectomies.",
+          "other_surgical_causes": "Parathyroidectomy; radical neck dissection; head and neck cancer surgery"
+        },
+        {
+          "cause": "Magnesium Deficiency (Hypomagnesaemia)",
+          "detail": "A critically important and commonly missed cause of hypocalcaemia. Magnesium is REQUIRED for PTH secretion — hypomagnesaemia suppresses PTH release AND causes peripheral resistance to PTH action. Hypocalcaemia in the setting of hypomagnesaemia will NOT correct with calcium replacement alone — MUST CORRECT MAGNESIUM FIRST. This is one of the most common pitfalls in hypocalcaemia management.",
+          "causes_of_hypomagnesaemia": "Alcohol misuse; malabsorption; prolonged PPI use; loop diuretics; cisplatin chemotherapy; refeeding syndrome; severe diarrhoea"
+        },
+        {
+          "cause": "Chronic Kidney Disease (CKD)",
+          "detail": "Failing kidneys reduce 1α-hydroxylase activity — the enzyme that converts 25(OH)D to active calcitriol. Result: calcitriol deficiency → reduced intestinal calcium absorption → hypocalcaemia → secondary hyperparathyroidism. Phosphate retention in CKD also directly lowers calcium. Progressive CKD develops CKD-MBD (Mineral Bone Disorder) — a complex spectrum of calcium, phosphate, PTH, calcitriol, and FGF-23 dysregulation causing renal osteodystrophy.",
+          "prevalence": "CKD affects ~10% of adults globally; virtually all patients with eGFR <30 mL/min develop some degree of CKD-MBD"
+        },
+        {
+          "cause": "Malabsorption Syndromes",
+          "detail": "Conditions causing impaired absorption of calcium and fat-soluble Vitamin D from the small intestine: Coeliac disease (villous atrophy — duodenal/proximal jejunal absorption impaired); Crohn's disease involving small intestine; Bariatric surgery (gastric bypass diverts food from duodenum — primary calcium absorption site; sleeve gastrectomy reduces acid needed to solubilise calcium); Short bowel syndrome; Chronic pancreatic insufficiency (fat malabsorption → Vitamin D malabsorption); Primary biliary cholangitis.",
+          "clinical_note": "Hypocalcaemia resistant to oral calcium supplementation should always prompt investigation of malabsorption"
+        },
+        {
+          "cause": "Glucocorticoid-Induced Calcium Deficiency",
+          "detail": "Long-term corticosteroid therapy (prednisolone ≥7.5mg/day for >3 months) is the most common cause of SECONDARY OSTEOPOROSIS. Mechanisms: (1) Directly reduce intestinal calcium absorption by suppressing Vitamin D-dependent calcium transport; (2) Increase renal calcium excretion; (3) Suppress osteoblast function (bone formation); (4) Promote osteoclast activity (bone resorption); (5) Suppress gonadotropins → hypogonadism → accelerated bone loss. Fracture risk increases within 3-6 months of starting corticosteroids.",
+          "drugs_causing": "Prednisolone, dexamethasone, methylprednisolone, hydrocortisone — all at significant doses; inhaled corticosteroids at high doses (beclomethasone >1500mcg/day equivalent)"
+        },
+        {
+          "cause": "Medications Reducing Calcium Levels or Bone Density",
+          "medications": [
+            "Proton pump inhibitors (PPIs) — reduce gastric acid needed to solubilise calcium carbonate; long-term use associated with osteoporosis and hip fractures; switch to calcium citrate (absorbed independently of acid)",
+            "Anticonvulsants (phenytoin, carbamazepine, phenobarbitone) — induce CYP450 enzymes → accelerate Vitamin D catabolism → Vitamin D deficiency → calcium malabsorption",
+            "Loop diuretics (furosemide) — increase renal calcium excretion (hypercalciuria)",
+            "Bisphosphonates in excess — correct cause of hypocalcaemia; paradoxically can worsen hypocalcaemia if given without adequate calcium/Vitamin D pre-loading",
+            "Denosumab — RANK-L inhibitor; suppresses bone resorption dramatically; can cause significant hypocalcaemia, particularly in Vitamin D-deficient or CKD patients",
+            "Chemotherapy (cisplatin) — causes hypomagnesaemia → secondary hypocalcaemia",
+            "Calcineurin inhibitors (cyclosporine, tacrolimus) — used in transplant; increase bone loss",
+            "Aromatase inhibitors (letrozole, anastrozole — breast cancer treatment) — reduce oestrogen → accelerated bone loss in postmenopausal women",
+            "Androgen deprivation therapy (ADT — for prostate cancer) — testosterone deficiency → osteoporosis in men"
+          ]
+        },
+        {
+          "cause": "Post-Menopausal Oestrogen Deficiency",
+          "detail": "Oestrogen plays a critical protective role in bone health. It: (1) Suppresses osteoclast activity (via inhibiting RANK-L, promoting OPG); (2) Promotes intestinal calcium absorption; (3) Reduces renal calcium excretion. Menopause causes a dramatic 'bone remodelling uncoupling' — osteoclast activity exceeds osteoblast activity for 5-10 years post-menopause. Bone loss rate: 1-3% per year in early postmenopause (accelerated phase) vs 0.5-1%/year normal ageing. Most vertebral bone loss occurs in the first 10 years post-menopause.",
+          "magnitude": "Average woman loses 15% of trabecular bone and 10% of cortical bone in the first 10 years post-menopause"
+        },
+        {
+          "cause": "Hungry Bone Syndrome",
+          "detail": "A dramatic hypocalcaemia occurring after parathyroidectomy (for hyperparathyroidism) or after correcting hyperthyroidism. Pre-operatively, excess PTH has been causing bone resorption and high turnover. After PTH is removed, the skeleton rapidly recaptures calcium (hungry for mineralisation) — serum calcium falls precipitously within hours. May require IV calcium infusion for days to weeks post-operatively.",
+          "management": "Aggressive oral and IV calcium loading post-parathyroidectomy; pre-operative Vitamin D optimisation reduces severity"
+        }
+      ],
+      "risk_factors": [
+        "Female sex (lower peak bone mass; post-menopausal oestrogen deficiency)",
+        "Increasing age (>50 years)",
+        "Family history of osteoporosis or hip fracture in first-degree relative",
+        "White or Asian ethnicity (lower peak bone mass than Black populations)",
+        "Low body weight (BMI <19) — thin women have low oestrogen and less mechanical bone loading",
+        "Sedentary lifestyle / immobility — mechanical loading stimulates bone formation",
+        "Smoking — directly toxic to osteoblasts; increases oestrogen catabolism",
+        "Alcohol excess (>3 units/day) — directly suppresses osteoblasts; increases fall risk",
+        "Calcium-poor diet (vegan, dairy-free, low food variety)",
+        "Low sun exposure / Vitamin D deficiency — indoor lifestyle, hijab, north latitude, dark skin",
+        "Glucocorticoid use (>3 months)",
+        "Thyroid disease (hyperthyroidism; excess thyroxine therapy)",
+        "Hypogonadism (premature ovarian failure; amenorrhoea; male hypogonadism)",
+        "Prior fragility fracture (after 40 years)",
+        "Falls (elderly; reduced muscle strength; impaired balance; postural hypotension; psychoactive medications)",
+        "Malabsorption (coeliac, IBD, bariatric surgery)",
+        "CKD (eGFR <45 mL/min)",
+        "Liver disease (reduced 25-hydroxylation of Vitamin D)",
+        "Eating disorders (anorexia nervosa — low calcium intake + amenorrhoea + low body weight → severe osteoporosis in young women)",
+        "Elite athlete amenorrhoea (female athletic triad)",
+        "Lactase deficiency / lactose intolerance leading to dairy avoidance",
+        "Proton pump inhibitor long-term use"
+      ]
+    },
+    "symptoms": {
+      "note": "Symptoms depend critically on the SPEED of calcium fall (acute vs chronic) and the SEVERITY of hypocalcaemia. Chronic mild hypocalcaemia may be remarkably well-tolerated and asymptomatic. Acute hypocalcaemia (especially post-surgical) produces dramatic neuromuscular symptoms even at mild-moderate levels. Osteoporosis causes NO symptoms until a fracture occurs — the 'silent thief'.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-1301",
+          "name": "Perioral Numbness and Tingling (Perioral Paraesthesiae)",
+          "description": "Numbness and tingling around the mouth (perioral area) — classically described as a 'circle of numbness around the lips' — is the EARLIEST and MOST CHARACTERISTIC symptom of hypocalcaemia. Results from lowered threshold for spontaneous nerve depolarisation when calcium (which stabilises sodium channels) is reduced. Occurs before other symptoms and should always prompt immediate calcium measurement in at-risk patients (post-thyroidectomy, nutritional risk).",
+          "severity": "Mild",
+          "onset": "Often first symptom — occurs at borderline hypocalcaemia (8.0-8.5 mg/dL)",
+          "significance": "Highly specific early warning sign — prompt calcium measurement warranted"
+        },
+        {
+          "id": "SYM-1302",
+          "name": "Finger and Toe Tingling (Extremity Paraesthesiae)",
+          "description": "Bilateral tingling, numbness, and pins-and-needles in fingertips and toes — from peripheral nerve hyperexcitability. Usually begins in fingers (especially tips) and toes symmetrically. If unilateral or dermatomal — suggests nerve compression rather than hypocalcaemia. Worsens with hyperventilation (respiratory alkalosis reduces ionised calcium further).",
+          "severity": "Mild to Moderate",
+          "onset": "Early to moderate hypocalcaemia"
+        },
+        {
+          "id": "SYM-1303",
+          "name": "Muscle Cramps and Spasms",
+          "description": "Painful involuntary muscle contractions — most commonly in the calves (nocturnal leg cramps), forearms, hands, and feet. Calcium is required for muscle relaxation (calcium binds troponin to initiate contraction; calcium pump returns calcium to SR for relaxation — but at low extracellular calcium, muscle membranes are hyperexcitable → prolonged contraction). Hypocalcaemic muscle cramps are characteristically triggered by activity, hyperventilation, or pressure.",
+          "severity": "Mild to Severe",
+          "common_locations": "Calf muscles (nocturnal); hands and forearms; feet; facial muscles"
+        },
+        {
+          "id": "SYM-1304",
+          "name": "Tetany",
+          "description": "The hallmark of severe hypocalcaemia — sustained, painful, involuntary muscle spasms from uncontrolled peripheral nerve depolarisation. In the HANDS: classical carpopedal spasm — the hand adopts the 'obstetrician's hand' posture: thumb adducted, metacarpophalangeal joints flexed, interphalangeal joints extended, wrist flexed (also called 'main d'accoucheur'). In the FACE: Chvostek's sign (see clinical signs). In the LARYNX: laryngospasm — the most dangerous tetany manifestation, causing stridor and potentially respiratory arrest. Generalised tetany: extreme pain and fear.",
+          "severity": "Severe — medical emergency",
+          "laryngospasm_warning": "Laryngospasm is LIFE-THREATENING — harsh inspiratory stridor with respiratory distress in a hypocalcaemic patient = EMERGENCY; IV calcium gluconate STAT"
+        },
+        {
+          "id": "SYM-1305",
+          "name": "Chvostek's Sign (Clinical Sign)",
+          "description": "Tapping the facial nerve (anterior to the ear, over the parotid gland) produces ipsilateral facial muscle twitching — from facial nerve hyperexcitability in hypocalcaemia. Positive in 10-25% of normal individuals (low specificity) but highly sensitive for significant hypocalcaemia when combined with other features. Graded: Grade I — twitch at corner of mouth only; Grade II — twitching of corner of mouth + nose + eye; Grade III — full hemi-facial contraction.",
+          "clinical_use": "Bedside screening for hypocalcaemia; particularly useful post-thyroidectomy/parathyroidectomy monitoring"
+        },
+        {
+          "id": "SYM-1306",
+          "name": "Trousseau's Sign (Clinical Sign)",
+          "description": "Inflation of a blood pressure cuff on the upper arm to 20mmHg above systolic for 3 minutes produces CARPOPEDAL SPASM (obstetrician's hand posture — wrist and MCP flexion, IP extension, thumb adduction) in hypocalcaemia. Trousseau's sign is MORE SPECIFIC and SENSITIVE than Chvostek's sign. The cuff occludes arterial flow → localised hypoxia → lowers threshold for nerve depolarisation further. Trousseau's sign positive = significant hypocalcaemia even when total calcium is only borderline.",
+          "clinical_use": "More reliable than Chvostek's sign; perform when hypocalcaemia suspected but calcium borderline low"
+        },
+        {
+          "id": "SYM-1307",
+          "name": "Bone Pain, Fragility Fractures, and Bone Deformity",
+          "description": "The skeletal manifestations of calcium deficiency: Osteomalacia — diffuse dull bone pain (particularly weight-bearing areas: back, hips, shins, feet; worst on activity); point tenderness on palpation of bony prominences; proximal muscle weakness. Osteoporosis — typically NO pain until a FRACTURE occurs; fractures from minimal trauma (fragility fractures): vertebral crush fractures (sudden back pain; progressive kyphosis — 'Dowager's hump'); hip fracture (fall from standing height); Colles' fracture (wrist fracture on outstretched hand). Rickets — bow legs or knock knees; stunted growth; bossing of skull; rickety rosary (chest).",
+          "severity": "Moderate to Severe",
+          "osteoporosis_note": "Vertebral fractures are often SILENT — gradual loss of height (>2cm height loss is a clinical indicator to investigate for vertebral fractures)"
+        }
+      ],
+      "secondary_symptoms": [
+        "Neuropsychiatric symptoms — anxiety, depression, irritability, cognitive impairment, memory problems, psychosis (rare — from chronic hypocalcaemia affecting dopaminergic pathways; basal ganglia calcification visible on CT in long-standing hypoparathyroidism)",
+        "Seizures — from profound hypocalcaemia causing cortical hyperexcitability; all types (tonic-clonic, focal, absence); first presentation may be seizure without preceding tetany",
+        "Prolonged QT interval on ECG — calcium stabilises cardiac sodium channels; hypocalcaemia prolongs action potential repolarisation → QT prolongation → risk of torsades de pointes → ventricular fibrillation; monitor ECG in moderate-severe hypocalcaemia",
+        "Dental and oral abnormalities — in chronic childhood calcium/Vitamin D deficiency: enamel hypoplasia (pitting, horizontal ridges on enamel), delayed dentition, increased dental caries, dental abscess formation; adult tooth loss",
+        "Dry skin, eczema, coarse hair — from calcium's role in epidermal cell differentiation and keratinisation; poor skin turgor",
+        "Brittle nails with ridging — from impaired nail keratinisation",
+        "Hair loss (alopecia) — chronic hypoparathyroidism causes diffuse scalp hair thinning; alopecia areata associated with autoimmune hypoparathyroidism (APS-1)",
+        "Cataracts — subcapsular cataracts develop in 30-50% of patients with chronic hypoparathyroidism; from calcium-dependent lens epithelial cell dehydration and protein precipitation; bilateral; develop years after disease onset",
+        "Basal ganglia calcification — symmetrical intracranial calcification visible on CT in chronic hypoparathyroidism (Fahr's syndrome pattern); may cause parkinsonism, chorea, dystonia",
+        "Papilloedema and raised intracranial pressure — from cerebral oedema in severe acute hypocalcaemia (rare)",
+        "Cardiac failure and cardiomyopathy — chronic profound hypocalcaemia can cause reversible dilated cardiomyopathy (calcium is essential for cardiac muscle contraction); rare but important; normalises with calcium repletion",
+        "Height loss and kyphosis ('Dowager's hump') — from multiple vertebral crush fractures in osteoporosis; progressive kyphosis from posterior wedging of thoracic vertebrae; each vertebral fracture causes ~1-2cm height reduction"
+      ],
+      "symptoms_in_children": {
+        "rickets": [
+          "Delayed closure of fontanelles (in infants)",
+          "Craniotabes — softening of parietal and occipital bones (early sign in infants); skull feels like a ping-pong ball on gentle pressure",
+          "Frontal bossing — prominence of frontal bones",
+          "Rickety rosary — beading at costochondral junctions (enlarged costochondral junction knobs)",
+          "Harrison's groove — horizontal indentation at lower chest margin where diaphragm inserts into softened ribs",
+          "Delayed eruption of teeth with enamel hypoplasia",
+          "Bow legs (genu varum) or knock knees (genu valgum) — the most visible deformity",
+          "Wrist and ankle widening on examination (metaphyseal widening)",
+          "Stunted growth; short stature",
+          "Irritability, poor feeding, excessive crying",
+          "Hypotonia (poor muscle tone); delayed motor milestones"
+        ]
+      }
+    },
+    "diagnosis": {
+      "diagnostic_approach": {
+        "overview": "Diagnosis proceeds through three levels: (1) Confirm calcium deficiency/hypocalcaemia — serum calcium with albumin correction and ionised calcium; (2) Identify the cause — PTH, Vitamin D, phosphate, magnesium, renal function; (3) Assess skeletal consequences — DEXA scan (bone mineral density), X-ray (rickets/osteomalacia).",
+        "always_correct_for_albumin": "Total calcium is unreliable without albumin correction — low albumin (common in sick patients) gives a falsely low total calcium. ALWAYS correct calcium: Corrected calcium = Total calcium + 0.8 × (4.0 − Albumin). Better still, measure IONISED calcium directly."
+      },
+      "medical_history": [
+        "Calcium intake history: dairy products (how often); non-dairy calcium sources; dietary restrictions (vegan, lactose intolerance, dairy allergy); total estimated daily calcium intake",
+        "Vitamin D exposure: sun exposure frequency and duration; use of sunscreen; skin tone; indoor vs outdoor lifestyle; latitude and seasonal variation",
+        "Medication history: PPIs, corticosteroids, loop diuretics, anticonvulsants, bisphosphonates, denosumab, aromatase inhibitors, androgen deprivation therapy, calcineurin inhibitors, cisplatin, lithium",
+        "Surgical history: thyroidectomy (total or near-total); parathyroidectomy; neck dissection; bariatric surgery (gastric bypass — reduces calcium absorption); intestinal resection",
+        "Symptoms: perioral numbness; finger/toe tingling; muscle cramps; tetany; seizures; bone pain; fractures from minimal trauma; height loss; back pain",
+        "Menstrual history in women: age at menopause; regularity of periods; premature ovarian insufficiency (POI); hormonal contraception or HRT use",
+        "Falls history in elderly: number of falls; circumstances; dizziness (postural hypotension); medications causing dizziness (antihypertensives, diuretics, antidepressants)",
+        "GI symptoms: diarrhoea (malabsorption — coeliac, Crohn's, pancreatic insufficiency); bloating; fatty stools (steatorrhoea — fat-soluble Vitamin D malabsorption)",
+        "Alcohol use (suppresses osteoblasts; associated with nutritional deficiencies)",
+        "Smoking (directly reduces bone density)",
+        "Family history: osteoporosis; hip fracture in parent or sibling; early menopause; coeliac disease"
+      ],
+      "physical_examination": [
+        "Chvostek's sign: tap facial nerve anterior to tragus of ear; observe for facial twitch ipsilaterally",
+        "Trousseau's sign: inflate BP cuff 20 mmHg above systolic for 3 minutes; positive = carpopedal spasm",
+        "Assessment of tetany: observe hand and foot posture; test for laryngospasm (stridor)",
+        "Bone examination: spinal percussion (vertebral tenderness); tibial tenderness (shin bone tenderness = osteomalacia); rib cage palpation (rickety rosary, Harrison's groove); limb alignment (bow legs or knock knees in children)",
+        "Height measurement: current height vs historical maximum (>2cm reduction suggests vertebral fractures); standing versus sitting height",
+        "Postural kyphosis: Dowager's hump in osteoporotic women; measure occiput-to-wall distance (normally 0; increased in kyphosis)",
+        "Muscle strength: proximal muscle weakness (difficulty rising from chair without armrests; hip extension strength — waddling gait in osteomalacia)",
+        "Eye examination: posterior subcapsular lens opacity (cataracts — in chronic hypoparathyroidism)",
+        "Skin, hair, nails: dry skin; coarse hair; ridged or brittle nails; alopecia",
+        "Cardiac: heart rate and rhythm (arrhythmia from hypocalcaemia); blood pressure",
+        "Neurological: cognitive assessment; signs of basal ganglia involvement (tremor, rigidity, chorea) in chronic hypoparathyroidism"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "Serum Calcium (Total) with Albumin Correction",
+          "type": "Blood — Biochemical — First-Line",
+          "description": "The primary test for assessing calcium status. ALWAYS measure serum albumin simultaneously — low albumin gives falsely low total calcium. Apply correction formula: Corrected Ca (mg/dL) = Total Ca (mg/dL) + 0.8 × (4.0 − Albumin g/dL). Normal total calcium: 8.5-10.5 mg/dL. Both hypocalcaemia (<8.5 mg/dL) and hypercalcaemia (>10.5 mg/dL) require investigation.",
+          "purpose": "Screen for and confirm hypocalcaemia; basis for further investigations",
+          "key_metric": "Corrected calcium <8.5 mg/dL: hypocalcaemia; 8.0-8.4: mild; 7.5-7.9: moderate; <7.5: severe; <7.0: critical emergency",
+          "limitation": "Total calcium unreliable without albumin correction — always apply formula or measure ionised calcium"
+        },
+        {
+          "test_name": "Ionised Calcium",
+          "type": "Blood — Biochemical — Gold Standard for Hypocalcaemia",
+          "description": "Direct measurement of the physiologically active FREE calcium fraction — not affected by albumin levels, acid-base status, or binding proteins. The most accurate test for true calcium status. Normal ionised calcium: 1.12-1.30 mmol/L (4.5-5.2 mg/dL). Requires special collection (heparinised tube; kept on ice; processed rapidly) or point-of-care blood gas analyser (most ICUs and emergency departments measure it on the blood gas machine).",
+          "purpose": "Definitive measure of calcium status; most reliable in critically ill patients (low albumin, acid-base disorders); monitoring in ICU and acute hypocalcaemia",
+          "key_metric": "Ionised Ca <1.12 mmol/L: hypocalcaemia; <1.00: moderate; <0.90: severe; <0.80: critical"
+        },
+        {
+          "test_name": "Parathyroid Hormone (PTH) — Intact PTH Assay",
+          "type": "Blood — Endocrine — CRITICAL for identifying cause",
+          "description": "PTH is the KEY diagnostic test to identify the CAUSE of hypocalcaemia. PTH interpretation requires simultaneous calcium level: LOW calcium + LOW/normal PTH = hypoparathyroidism or magnesium deficiency. LOW calcium + HIGH PTH = secondary hyperparathyroidism (appropriate response to calcium deficiency — Vitamin D deficiency, malabsorption, CKD). LOW calcium + HIGH PTH in the context of PHP = PTH resistance.",
+          "purpose": "Identify cause of hypocalcaemia; differentiate hypoparathyroidism from secondary hyperparathyroidism; diagnose hyperparathyroidism if calcium is HIGH",
+          "key_metric": "Normal PTH: 10-65 pg/mL (varies by lab). Low calcium + LOW PTH (<10 pg/mL): hypoparathyroidism. Low calcium + HIGH PTH (>65 pg/mL): secondary hyperparathyroidism (Vitamin D deficiency, malabsorption, CKD). Critically important: PTH is measured with calcium — interpret together."
+        },
+        {
+          "test_name": "Serum 25-hydroxyvitamin D (25-OH Vitamin D)",
+          "type": "Blood — Biochemical — Essential",
+          "description": "The storage form of Vitamin D — the best indicator of Vitamin D status (reflects dietary intake and skin synthesis). NOT the active form (calcitriol/1,25-OH2D) — calcitriol levels fluctuate too much and are unreliable for status assessment. 25-OH Vitamin D is the standard clinical Vitamin D test.",
+          "purpose": "Diagnose Vitamin D deficiency as cause of calcium malabsorption; guide supplementation dosing; monitor treatment response",
+          "key_metric": "25-OH Vitamin D levels: <10 ng/mL (25 nmol/L): severe deficiency; 10-20 ng/mL: deficiency; 20-30 ng/mL: insufficiency; 30-80 ng/mL: sufficient (optimal); >100 ng/mL: possible toxicity risk (>150 ng/mL: toxicity)",
+          "india_note": "40-70% of Indians have levels <20 ng/mL despite abundant sunlight — melanin, indoor lifestyle, air pollution, and dietary factors all contribute"
+        },
+        {
+          "test_name": "Serum Phosphate",
+          "type": "Blood — Biochemical",
+          "description": "Phosphate levels help identify the CAUSE of hypocalcaemia. LOW calcium + HIGH phosphate: hypoparathyroidism (no PTH phosphaturia → phosphate retained) or CKD (reduced renal excretion). LOW calcium + LOW/normal phosphate: Vitamin D deficiency (intestinal phosphate absorption also reduced); malabsorption; secondary hyperparathyroidism causes phosphaturia. LOW phosphate + normal or elevated calcium: X-linked hypophosphataemia (XLH) or other phosphate-wasting conditions.",
+          "purpose": "Narrow differential diagnosis of hypocalcaemia; diagnose phosphate-wasting conditions (rickets subtypes)",
+          "key_metric": "Hypoparathyroidism: Low Ca + HIGH phosphate; Vitamin D deficiency: Low Ca + LOW-NORMAL phosphate; CKD: Low Ca + HIGH phosphate + low calcitriol"
+        },
+        {
+          "test_name": "Serum Magnesium",
+          "type": "Blood — Biochemical — CRITICAL",
+          "description": "MUST ALWAYS CHECK MAGNESIUM in any patient with hypocalcaemia. Hypomagnesaemia (<0.7 mmol/L) suppresses PTH secretion and causes PTH resistance → hypocalcaemia that CANNOT BE CORRECTED without first replacing magnesium. This is one of the most important and commonly overlooked aspects of hypocalcaemia management.",
+          "purpose": "Identify magnesium deficiency as a reversible cause of hypocalcaemia; guide treatment (must correct Mg before Ca will normalise)",
+          "key_metric": "Mg <0.7 mmol/L (<1.8 mg/dL): hypomagnesaemia — treat WITH magnesium FIRST; hypocalcaemia will not correct until Mg is normalised"
+        },
+        {
+          "test_name": "Renal Function (eGFR, Creatinine, Urea)",
+          "type": "Blood — Biochemical",
+          "description": "Renal function determines whether hypocalcaemia is from CKD (reduced calcitriol production) — the treatment is calcitriol (active form of Vitamin D) NOT cholecalciferol (requires renal 1α-hydroxylation which is impaired in CKD). CKD also determines safe dosing of calcium and Vitamin D supplements.",
+          "purpose": "Diagnose CKD as cause of hypocalcaemia; guide appropriate Vitamin D choice (calcitriol/alfacalcidol for CKD — NOT standard cholecalciferol); dose-adjust supplements",
+          "key_metric": "eGFR <30 mL/min: CKD Stage 4-5; significant impairment of calcitriol production; use active Vitamin D analogues"
+        },
+        {
+          "test_name": "DEXA Scan (Dual-Energy X-ray Absorptiometry) — Bone Mineral Density",
+          "type": "Imaging — Gold Standard for Osteoporosis Diagnosis",
+          "description": "The gold standard investigation for osteoporosis — measures Bone Mineral Density (BMD) at lumbar spine (L1-L4) and femoral neck/total hip. Results expressed as T-score (comparison to young adult peak bone mass — the diagnosis) and Z-score (comparison to age-matched peers — helps identify secondary osteoporosis). FRAX tool (WHO fracture risk assessment) combines BMD with clinical risk factors to calculate 10-year major osteoporotic fracture probability — guides treatment threshold.",
+          "purpose": "Diagnose osteoporosis (T-score ≤ −2.5); assess fracture risk (FRAX score); monitor treatment response (repeat DEXA every 1-2 years on treatment)",
+          "who_criteria": "T-score > -1.0: Normal; -1.0 to -2.5: Osteopenia; ≤ -2.5: Osteoporosis; ≤ -2.5 + fragility fracture: Severe osteoporosis",
+          "who_should_have_dexa": "All women ≥65 years; postmenopausal women <65 with ≥1 risk factor; men ≥70 years; men 50-70 with risk factors; any person with a fragility fracture after 50; patients on long-term corticosteroids (≥3 months); secondary osteoporosis causes",
+          "india_note": "DEXA is available in most tertiary centres and many tier-2 cities in India; remains underutilised — recommendation: DEXA for all postmenopausal women >50 years with any risk factor"
+        },
+        {
+          "test_name": "FRAX Score (WHO Fracture Risk Assessment Tool)",
+          "type": "Calculated Risk Score",
+          "description": "Online calculator (www.sheffield.ac.uk/FRAX) that combines BMD (if available) with clinical risk factors to estimate 10-year probability of major osteoporotic fracture (hip, vertebral, forearm, shoulder) and hip fracture specifically. Can be used WITHOUT BMD for initial risk stratification. Country-specific versions available including for India.",
+          "purpose": "Estimate 10-year fracture risk; guide treatment decisions (treat if 10-year major fracture probability >20%, or hip fracture >3% — USA thresholds; country-specific thresholds apply)",
+          "input_variables": "Age; sex; BMI; prior fragility fracture; parental hip fracture; current smoking; ≥3 units alcohol/day; glucocorticoid use; rheumatoid arthritis; secondary osteoporosis; BMD (optional)"
+        },
+        {
+          "test_name": "Spine and Hip X-Rays / Vertebral Fracture Assessment (VFA)",
+          "type": "Imaging",
+          "description": "Lateral thoracic and lumbar spine X-rays identify vertebral fractures — many are clinically silent. VFA (Vertebral Fracture Assessment): low-dose lateral spine imaging performed on DEXA machine during bone density scan — convenient, low radiation, detects vertebral deformity. A vertebral fracture on X-ray is itself an indication for osteoporosis treatment regardless of DEXA T-score.",
+          "purpose": "Detect vertebral fractures (often silent); diagnose osteomalacia (Looser zones/pseudofractures on weight-bearing bones — pathognomonic); diagnose rickets (cupping and fraying of metaphyses; widened growth plates)",
+          "looser_zones": "Looser zones (Milkman pseudofractures): PATHOGNOMONIC of osteomalacia; radiolucent bands perpendicular to bone cortex; common at medial femoral neck, pubic rami, scapular margin, ribs"
+        },
+        {
+          "test_name": "24-Hour Urine Calcium Excretion",
+          "type": "Urine",
+          "description": "Measures daily urinary calcium output. Helps distinguish: hypercalciuria (excessive urinary calcium loss — familial hypercalciuria, loop diuretic use, hyperparathyroidism) vs hypocalciuria (low urinary calcium — from dietary deficiency or malabsorption). Essential monitoring in hypoparathyroidism treatment — calcium + calcitriol treatment must be titrated to avoid hypercalciuria and renal stones.",
+          "purpose": "Diagnose familial hypercalciuria; guide calcium supplement dosing in hypoparathyroidism (target <4mg/kg/day to avoid renal stone risk); assess calcium balance",
+          "key_metric": "Normal: 100-300mg/day (women); 100-350mg/day (men); <100mg/day: hypocalciuria (dietary deficiency/malabsorption); >350mg/day: hypercalciuria (idiopathic, hyperparathyroidism, hypervitaminosis D)"
+        },
+        {
+          "test_name": "Bone Turnover Markers (BTMs) — Serum CTX, P1NP",
+          "type": "Blood — Biochemical",
+          "description": "Markers of bone remodelling activity. CTX (C-terminal telopeptide of Type I collagen): marker of bone RESORPTION (released by osteoclasts). P1NP (N-terminal propeptide of procollagen Type I): marker of bone FORMATION (released by osteoblasts). Useful for: monitoring antiresorptive treatment response (CTX falls within 3-6 months of bisphosphonate therapy); identifying high turnover osteoporosis; distinguishing osteoporosis from osteomalacia (very high P1NP and low CTX in osteomalacia — osteoid is formed but not mineralised).",
+          "purpose": "Monitor treatment response; assess bone remodelling activity; distinguish osteoporosis from osteomalacia",
+          "key_metric": "CTX >500 pg/mL (premenopausal women) or >400 pg/mL (men): high bone resorption. Successful bisphosphonate treatment: CTX falls >50-60% from baseline within 3 months."
+        },
+        {
+          "test_name": "Coeliac Disease Serology (TTG IgA, Total IgA)",
+          "type": "Blood — Serology",
+          "description": "Coeliac disease causes malabsorption of calcium, Vitamin D, and other fat-soluble vitamins through villous atrophy. Should be tested in all patients with: unexplained osteoporosis; unexplained hypocalcaemia or Vitamin D deficiency resistant to supplementation; IDA + hypocalcaemia combination.",
+          "purpose": "Exclude coeliac disease as cause of calcium and Vitamin D malabsorption"
+        },
+        {
+          "test_name": "ECG (Electrocardiogram)",
+          "type": "Cardiac",
+          "description": "Essential in moderate-severe hypocalcaemia. Calcium stabilises cardiac sodium channels — hypocalcaemia causes characteristic QT interval prolongation. QTc (corrected QT) >500ms significantly increases risk of torsades de pointes (a potentially fatal polymorphic ventricular tachycardia). Monitor ECG during IV calcium replacement to confirm improvement.",
+          "purpose": "Detect QT prolongation (cardiac risk of hypocalcaemia); guide urgency of treatment; monitor response to IV calcium",
+          "key_metric": "QTc >440ms (men) or >460ms (women): prolonged. QTc >500ms: high risk of arrhythmia — urgent IV calcium. Hypocalcaemia characteristically prolongs ST segment (flat long ST → prolonged QT)."
+        }
+      ]
+    },
+    "medicines": {
+      "note": "Treatment of calcium deficiency must address both the deficiency itself (calcium and Vitamin D supplementation) and the UNDERLYING CAUSE (malabsorption, hypoparathyroidism, CKD, medication review). Calcium supplementation ALONE is insufficient without concurrent Vitamin D to ensure absorption. For osteoporosis, treatment also requires antiresorptive or anabolic bone agents. All medications must be prescribed by a licensed physician or endocrinologist.",
+      "treatment_principles": [
+        "1. EMERGENCY hypocalcaemia (tetany, laryngospasm, arrhythmia): IV calcium gluconate STAT",
+        "2. Correct Vitamin D deficiency FIRST (or simultaneously with calcium — it is futile to supplement calcium without Vitamin D)",
+        "3. ALWAYS check and correct magnesium — hypomagnesaemia prevents calcium normalisation",
+        "4. Choose the RIGHT calcium formulation: calcium citrate if on PPIs or achlorhydria (acid-independent absorption); calcium carbonate with meals and adequate acid",
+        "5. Dose calcium throughout the day (not one large dose) — absorption is saturable at ~500mg elemental calcium per dose; split doses maximise absorption",
+        "6. Osteoporosis: calcium + Vitamin D is the FOUNDATION; add antiresorptive or anabolic therapy based on fracture risk",
+        "7. Treat underlying cause: stop offending medications where possible; treat coeliac, hypoparathyroidism, CKD-MBD appropriately"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-171",
+          "category_name": "Emergency IV Calcium — Acute Hypocalcaemia",
+          "purpose": "Rapid correction of severe or symptomatic acute hypocalcaemia — tetany, laryngospasm, seizures, QT prolongation, cardiac arrhythmia.",
+          "medicines": [
+            {
+              "name": "Calcium Gluconate 10% IV",
+              "brand_examples": [
+                "Calcium Gluconate Injection 10%"
+              ],
+              "form": "IV Injection / IV Infusion",
+              "dosage": "ACUTE TETANY/EMERGENCY: 10-20mL of 10% calcium gluconate (= 90-180mg elemental calcium) IV slowly over 10-20 minutes (NEVER BOLUS — rapid injection causes cardiac arrest); followed by continuous infusion of 0.5-2mg/kg/hour elemental calcium. POST-SURGICAL prophylaxis: 1g calcium gluconate IV over 10 min; then repeat or infuse as guided by serum calcium monitoring",
+              "use_case": "EMERGENCY treatment of acute symptomatic hypocalcaemia (tetany, laryngospasm, seizures, QTc >500ms); post-parathyroidectomy/thyroidectomy hypocalcaemia; hungry bone syndrome; severe symptomatic hypocalcaemia from any cause",
+              "mechanism": "Rapidly raises ionised calcium by providing free calcium ions; calcium gluconate is the PREFERRED IV form (less tissue necrosis than calcium chloride if extravasation occurs)",
+              "side_effects": [
+                "Bradycardia and cardiac arrest if given too rapidly — ALWAYS give slowly",
+                "Peripheral vein irritation (extravasation causes severe tissue necrosis — use central line for concentrated or high-dose infusions)",
+                "Flushing and warmth",
+                "Nausea"
+              ],
+              "monitoring": "Cardiac monitoring throughout IV infusion; ionised calcium every 1-4 hours; Mg and phosphate",
+              "note": "Calcium gluconate (9% elemental calcium) contains LESS elemental calcium per mL than calcium chloride (27% elemental) — calcium gluconate preferred peripherally due to lower tissue toxicity on extravasation"
+            },
+            {
+              "name": "Calcium Chloride 10% IV",
+              "brand_examples": [
+                "Calcium Chloride 10% Injection"
+              ],
+              "form": "IV Injection",
+              "dosage": "5-10mL 10% calcium chloride (= 136-272mg elemental calcium) IV slowly; used in CARDIAC RESUSCITATION only",
+              "use_case": "Cardiac arrest with hypocalcaemia; calcium channel blocker overdose; massive transfusion protocol (citrate-chelated calcium); hypermagnesaemia; hyperkalaemia (stabilises cardiac membrane)",
+              "side_effects": [
+                "Severe tissue necrosis on extravasation — MUST use central venous access only",
+                "Bradycardia if given rapidly",
+                "Hypotension"
+              ],
+              "note": "Use ONLY via central line — calcium chloride causes severe tissue necrosis if extravasated; calcium gluconate preferred for peripheral administration"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-172",
+          "category_name": "Oral Calcium Supplements — First-Line for Dietary Deficiency",
+          "purpose": "Correct dietary calcium inadequacy; provide calcium during Vitamin D deficiency correction; supplement calcium in osteoporosis treatment; long-term calcium replacement in hypoparathyroidism.",
+          "dosing_principle": "Absorption is SATURABLE at ~500mg elemental calcium per dose — split daily dose (e.g., 500mg with breakfast + 500mg with dinner) is significantly better absorbed than one large daily dose. Do NOT exceed 2500mg elemental calcium/day (increased cardiovascular risk at high supplemental doses; kidney stone risk). Dietary calcium is ALWAYS preferable to supplements — supplements carry mild cardiovascular risk that dietary calcium does not.",
+          "medicines": [
+            {
+              "name": "Calcium Carbonate",
+              "brand_examples": [
+                "Shelcal",
+                "Oscal",
+                "Calcimax",
+                "Calcium-Sandoz",
+                "Cal-Rite",
+                "Carbocal"
+              ],
+              "form": "Tablet (500mg, 1000mg; containing 200mg and 400mg elemental calcium respectively), Chewable tablet, Oral suspension",
+              "dosage": "1000-2000mg calcium carbonate per day (= 400-800mg elemental calcium) in divided doses; chew or take with meals (requires gastric acid for dissolution and absorption)",
+              "use_case": "First-line oral calcium supplement for dietary deficiency; osteoporosis prevention and treatment (foundation calcium supplementation); hypoparathyroidism (with calcitriol)",
+              "elemental_calcium": "40% elemental calcium — highest % of any oral calcium salt; 500mg carbonate = 200mg elemental calcium",
+              "mechanism": "Calcium carbonate requires gastric acid for dissolution and conversion to soluble CaCl2 — take WITH MEALS (maximal acid secretion) for best absorption",
+              "side_effects": [
+                "Constipation (most common — manage with adequate fluids and fibre)",
+                "Bloating and flatulence (from CO2 generated by acid-carbonate reaction)",
+                "Nausea",
+                "Rebound acid secretion (milk-alkali syndrome at very high doses: hypercalcaemia + alkalosis + renal impairment)"
+              ],
+              "contraindications": [
+                "Achlorhydria (reduced or absent gastric acid — use calcium citrate instead)",
+                "Hypercalcaemia",
+                "Hypercalciuria (renal stones)"
+              ],
+              "note": "AVOID in patients on PPIs or H2 blockers — reduced acid impairs absorption; switch to calcium citrate instead"
+            },
+            {
+              "name": "Calcium Citrate",
+              "brand_examples": [
+                "Citracal",
+                "Calcitrate",
+                "Citronate",
+                "Cal-Citrate"
+              ],
+              "form": "Tablet (950mg citrate = 200mg elemental calcium), Oral powder",
+              "dosage": "1000-2000mg calcium citrate daily in divided doses (= 200-400mg elemental calcium)",
+              "use_case": "Calcium supplementation in patients on PPIs or H2 blockers (acid-independent absorption); post-bariatric surgery (gastric bypass — reduced acid); achlorhydria; elderly with reduced acid secretion",
+              "elemental_calcium": "21% elemental calcium — calcium citrate = 200mg elemental calcium per 950mg salt",
+              "mechanism": "Calcium citrate does NOT require gastric acid for absorption — solubilised by organic acid chelation; can be taken WITHOUT food on empty stomach",
+              "advantage": "Acid-independent absorption — significantly better absorbed than calcium carbonate in patients on PPIs, H2 blockers, post-gastric bypass, or with achlorhydria. Can be taken BETWEEN MEALS.",
+              "side_effects": [
+                "Fewer GI side effects than calcium carbonate (less constipation)",
+                "Mild nausea possible"
+              ],
+              "note": "PREFERRED in elderly (often have reduced acid), PPI users, post-bariatric surgery, and patients with inflammatory bowel conditions"
+            },
+            {
+              "name": "Calcium with Vitamin D3 Combination Tablets",
+              "brand_examples": [
+                "Shelcal-HD",
+                "Calcimax-500+D3",
+                "Cal-D",
+                "Calamore",
+                "Calcium + Vitamin D3 (various brands)"
+              ],
+              "form": "Tablet (calcium 500-1000mg + Vitamin D3 200-1000 IU per tablet)",
+              "dosage": "1-2 tablets daily with meals; provides combined calcium + Vitamin D3 supplementation",
+              "use_case": "Convenient combined calcium + Vitamin D supplementation for osteoporosis prevention and treatment; dietary deficiency; most widely prescribed combination in India",
+              "note": "Most convenient form — combination ensures Vitamin D is always co-administered with calcium; widely used in Indian gynaecology, orthopaedics, and general practice; adjust dose based on individual Vitamin D status"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-173",
+          "category_name": "Vitamin D Supplements — Essential Cofactor for Calcium Absorption",
+          "purpose": "Correct Vitamin D deficiency to restore intestinal calcium absorption (Vitamin D deficiency reduces absorption from 30% to 5-10%). Vitamin D is ALWAYS required alongside calcium supplementation — supplementing calcium alone without correcting Vitamin D deficiency is largely ineffective.",
+          "important_distinction": "Vitamin D supplementation requires matching the preparation to the clinical context: Cholecalciferol (Vitamin D3) — standard supplement for dietary deficiency; requires liver 25-hydroxylation + kidney 1α-hydroxylation; NOT for CKD (kidneys cannot activate it). Calcitriol / Alfacalcidol — ACTIVE or near-active forms; for hypoparathyroidism, CKD (where renal activation is impaired); more potent; narrow therapeutic window.",
+          "medicines": [
+            {
+              "name": "Cholecalciferol (Vitamin D3)",
+              "brand_examples": [
+                "Uprise D3",
+                "D-Rise",
+                "VD3 60K",
+                "Calcirol",
+                "Nuvitad 60K",
+                "Arachitol (IM)"
+              ],
+              "form": "Oral sachet/capsule (60,000 IU — most common in India), Tablet (1000 IU, 2000 IU, 5000 IU), IM injection",
+              "dosage": "DEFICIENCY TREATMENT: 60,000 IU weekly × 8-12 weeks (India — oral 60K IU sachets widely used); then 60,000 IU monthly maintenance. MAINTENANCE (insufficiency): 1000-2000 IU daily. SEVERE DEFICIENCY: 60,000 IU twice weekly × 4-6 weeks under supervision.",
+              "use_case": "FIRST-LINE treatment for nutritional Vitamin D deficiency and insufficiency; osteoporosis foundation supplementation; rickets and osteomalacia (high-dose initially); prevention in elderly, pregnant women, dark-skinned individuals, indoor workers",
+              "mechanism": "Cholecalciferol → 25-hydroxylase (liver) → 25(OH)D3 → 1α-hydroxylase (kidney) → 1,25(OH)2D3 (calcitriol — active form); calcitriol binds VDR → increases intestinal calcium absorption, renal calcium reabsorption",
+              "side_effects": [
+                "Vitamin D TOXICITY (hypervitaminosis D) at very high doses — hypercalcaemia, hypercalciuria, renal stones, renal failure, metastatic calcification; occurs at sustained supplemental doses >4000 IU/day long-term or very high doses without monitoring; target level 30-80 ng/mL",
+                "Nausea, vomiting at toxic doses",
+                "Constipation at toxic doses"
+              ],
+              "monitoring": "Check 25-OH Vitamin D levels: at 3 months of treatment (to confirm correction); then 6-monthly maintenance; target 30-60 ng/mL",
+              "india_note": "60,000 IU oral cholecalciferol sachets (e.g., Uprise D3, D-Rise) are the most commonly prescribed Vitamin D formulation in India — practical weekly dosing with high compliance"
+            },
+            {
+              "name": "Ergocalciferol (Vitamin D2)",
+              "brand_examples": [
+                "Ergocalciferol capsules"
+              ],
+              "form": "Capsule (50,000 IU)",
+              "dosage": "50,000 IU weekly × 8-12 weeks for deficiency",
+              "use_case": "Alternative to D3 where D3 unavailable; vegan-preferred form (D3 is animal-derived — lanolin from sheep wool; D2 is plant/fungal-derived); slightly less potent than D3",
+              "note": "Vitamin D3 (cholecalciferol) is more effective than D2 (ergocalciferol) at raising serum 25-OH Vitamin D levels — D3 preferred clinically"
+            },
+            {
+              "name": "Calcitriol (1,25-dihydroxyvitamin D3 — Active Form)",
+              "brand_examples": [
+                "Rocaltrol",
+                "Calcitriol",
+                "Calcijex (IV)",
+                "Decostriol"
+              ],
+              "form": "Capsule (0.25mcg, 0.5mcg), IV Injection",
+              "dosage": "Hypoparathyroidism: 0.25-2 mcg twice daily (titrate to target calcium); CKD: 0.25-1 mcg daily; Post-parathyroidectomy: 0.5-2 mcg daily acutely; adjust based on serum calcium and urine calcium",
+              "use_case": "Hypoparathyroidism (FIRST-LINE — bypasses the need for PTH-dependent 1α-hydroxylation); CKD stages 3-5 (kidneys cannot activate cholecalciferol); post-parathyroidectomy; pseudo-hypoparathyroidism; Vitamin D-dependent rickets type I",
+              "mechanism": "Calcitriol is the ACTIVE FORM of Vitamin D — directly binds Vitamin D receptor (VDR) without requiring renal or hepatic activation; potently increases intestinal calcium absorption",
+              "side_effects": [
+                "HYPERCALCAEMIA — the primary safety concern with calcitriol (10x more potent than cholecalciferol; narrow therapeutic window)",
+                "Hypercalciuria → renal calculi (monitor 24h urine calcium)",
+                "Soft tissue calcification (eyes, blood vessels, kidneys) with excessive doses"
+              ],
+              "monitoring": "Serum calcium every 2-4 weeks during dose titration; 24h urinary calcium every 3-6 months; renal function; regular ophthalmology (cataracts in hypoparathyroidism)"
+            },
+            {
+              "name": "Alfacalcidol (1α-hydroxyvitamin D3)",
+              "brand_examples": [
+                "One-Alpha",
+                "Alfacal",
+                "Alfarol"
+              ],
+              "form": "Capsule (0.25mcg, 0.5mcg, 1mcg)",
+              "dosage": "Adults: 0.25-2 mcg once daily; CKD and hypoparathyroidism: start 0.25 mcg daily; titrate to serum calcium",
+              "use_case": "CKD stages 3-5 (widely used in Indian renal practice); hypoparathyroidism; osteomalacia with liver disease (requires only hepatic activation not renal); osteoporosis in elderly (better tolerated than calcitriol in some populations)",
+              "mechanism": "Alfacalcidol (1α-OH-D3) undergoes only HEPATIC 25-hydroxylation (not renal 1α-hydroxylation required) → active 1,25(OH)2D3; thus useful in CKD (bypasses impaired renal 1α-hydroxylase)",
+              "side_effects": "Similar to calcitriol; hypercalcaemia risk; monitor serum calcium closely"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-174",
+          "category_name": "Magnesium Replacement — Essential Co-treatment",
+          "medicines": [
+            {
+              "name": "Magnesium Sulfate (IV) / Magnesium Oxide or Glycinate (Oral)",
+              "brand_examples": [
+                "MgSO4 injection",
+                "Magnesia",
+                "Magsol",
+                "Magnesium Glycinate"
+              ],
+              "form": "IV Infusion, Oral Tablet",
+              "dosage": "Severe hypomagnesaemia: 2-4g magnesium sulfate IV over 15-30 minutes; then 1-2g/hour IV infusion until normalised. Oral maintenance: 240-480mg elemental magnesium daily (magnesium glycinate or citrate — best tolerated)",
+              "use_case": "MANDATORY in hypocalcaemia associated with hypomagnesaemia — correct MAGNESIUM before or simultaneously with calcium; hypocalcaemia will NOT normalise until magnesium is restored",
+              "side_effects": [
+                "IV: flushing; hypotension; loss of deep tendon reflexes (toxicity — stop infusion)",
+                "Oral: diarrhoea (common — use magnesium glycinate which is best tolerated)"
+              ]
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-175",
+          "category_name": "Bisphosphonates — Antiresorptive Therapy for Osteoporosis",
+          "purpose": "Bisphosphonates are first-line pharmacological treatment for osteoporosis in postmenopausal women and men at high fracture risk. They inhibit osteoclast-mediated bone resorption, reducing bone turnover and significantly increasing bone mineral density. Reduce vertebral fracture risk by 40-70% and hip fracture risk by 30-50%.",
+          "note": "MUST ensure adequate Vitamin D (>30 ng/mL) and calcium supplementation BEFORE starting bisphosphonates — prescribing bisphosphonates without correcting Vitamin D deficiency risks severe hypocalcaemia ('bisphosphonate-induced hypocalcaemia'). ALWAYS co-prescribe calcium 1000-1200mg/day + Vitamin D3 1000 IU/day with bisphosphonate therapy.",
+          "medicines": [
+            {
+              "name": "Alendronate (Alendronic Acid)",
+              "brand_examples": [
+                "Fosamax",
+                "Osteofos",
+                "Alendro",
+                "Alendronate"
+              ],
+              "form": "Tablet (70mg weekly — most common; 10mg daily)",
+              "dosage": "70mg orally once weekly (most common regimen); or 10mg daily (less convenient; same efficacy); taken FIRST THING IN THE MORNING at least 30-60 minutes before food or any other medication; with full glass of water (200-250mL); remain UPRIGHT for 30-60 minutes after taking (prevents oesophageal irritation)",
+              "use_case": "FIRST-LINE treatment for postmenopausal osteoporosis; glucocorticoid-induced osteoporosis; male osteoporosis; Paget's disease of bone",
+              "mechanism": "Nitrogen-containing bisphosphonate — inhibits farnesyl diphosphate synthase (FPP synthase) in the mevalonate pathway within osteoclasts → osteoclast apoptosis → reduced bone resorption",
+              "side_effects": [
+                "Oesophageal irritation/ulceration (MOST IMPORTANT — must take as directed; sit/stand upright 30-60 min; avoid if oesophageal disease; can cause pill-induced oesophagitis)",
+                "Musculoskeletal pain (myalgia, arthralgia, bone pain — 'flu-like' symptoms first few weeks)",
+                "Osteonecrosis of the jaw (ONJ) — very rare with oral alendronate; primarily with IV zoledronate/denosumab in cancer; dental hygiene essential",
+                "Atypical femoral fractures (AFFs) — very rare; with very long-term use (>5-10 years); prodromal thigh pain — STOP bisphosphonate immediately if AFF suspected; consider bisphosphonate holiday after 5 years",
+                "Hypocalcaemia (if Vitamin D deficient — always correct first)"
+              ],
+              "contraindications": [
+                "Oesophageal disease (achalasia, stricture, severe GERD)",
+                "Inability to sit/stand upright for 30-60 min",
+                "eGFR <35 mL/min (use alternatives)",
+                "Hypocalcaemia (correct first)",
+                "Pregnancy"
+              ],
+              "bisphosphonate_holiday": "After 3-5 years oral bisphosphonate: reassess FRAX/BMD; if stable low-moderate risk — consider drug holiday of 1-3 years (bone benefit persists after discontinuation); continue if high risk"
+            },
+            {
+              "name": "Risedronate",
+              "brand_examples": [
+                "Actonel",
+                "Reosteo",
+                "Risedronate"
+              ],
+              "form": "Tablet (35mg weekly; 150mg monthly)",
+              "dosage": "35mg once weekly OR 150mg once monthly; same administration requirements as alendronate (morning; upright; water)",
+              "use_case": "Postmenopausal osteoporosis; glucocorticoid-induced osteoporosis; similar efficacy to alendronate; possibly slightly better GI tolerability",
+              "side_effects": "Similar to alendronate; possibly fewer GI side effects"
+            },
+            {
+              "name": "Zoledronic Acid (Zoledronate)",
+              "brand_examples": [
+                "Reclast",
+                "Zometa",
+                "Aclasta",
+                "Zoledronate"
+              ],
+              "form": "IV Infusion (5mg/100mL)",
+              "dosage": "5mg IV infusion once yearly (osteoporosis); over at least 15 minutes; given by healthcare provider",
+              "use_case": "Postmenopausal osteoporosis (ONCE YEARLY infusion — highest adherence of any bisphosphonate); male osteoporosis; glucocorticoid-induced osteoporosis; hip fracture prevention (given within 90 days of hip fracture significantly reduces re-fracture and mortality); patients who cannot tolerate or comply with oral bisphosphonates",
+              "advantage": "Annual IV infusion — eliminates adherence issues; most convenient; proven hip fracture prevention (HORIZON trials); also treats Paget's disease (single 5mg dose)",
+              "side_effects": [
+                "Acute phase reaction — 'flu-like' illness (fever, myalgia, bone aches) in 30% after first infusion (paracetamol reduces this); usually only after first dose; pre-dose hydration minimises",
+                "Osteonecrosis of jaw (rare; dental care before infusion)",
+                "Atypical femoral fracture (rare; long-term use)",
+                "Renal impairment (check eGFR before each dose — AVOID if eGFR <35; infuse slowly over ≥15 min; ensure good hydration)"
+              ]
+            },
+            {
+              "name": "Ibandronate",
+              "brand_examples": [
+                "Boniva",
+                "Bonviva",
+                "Ibandronate"
+              ],
+              "form": "Tablet (150mg monthly oral), IV Infusion (3mg quarterly)",
+              "dosage": "150mg orally once monthly; or 3mg IV every 3 months",
+              "use_case": "Postmenopausal osteoporosis; particularly suitable for patients who cannot take weekly bisphosphonates; monthly oral or quarterly IV options",
+              "note": "Only proven for VERTEBRAL fracture reduction; less evidence for non-vertebral and hip fracture prevention compared to alendronate and zoledronate"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-176",
+          "category_name": "RANK-L Inhibitor — Denosumab",
+          "medicines": [
+            {
+              "name": "Denosumab",
+              "brand_examples": [
+                "Prolia (60mg — osteoporosis)",
+                "Xgeva (120mg — cancer bone disease)",
+                "Denosumab"
+              ],
+              "form": "SC Injection",
+              "dosage": "60mg SC injection every 6 months (osteoporosis); administered by healthcare provider",
+              "use_case": "Postmenopausal osteoporosis — particularly when bisphosphonates are contraindicated or poorly tolerated (eGFR <35 — safer in CKD than bisphosphonates); high fracture risk requiring rapid Hb increase; patients who cannot swallow bisphosphonate tablets; cancer patients (prostate cancer on ADT, breast cancer on aromatase inhibitors)",
+              "mechanism": "Human monoclonal antibody against RANK-L (Receptor Activator of Nuclear Factor κB Ligand) — the key osteoclast differentiation factor; blocks osteoclast formation, function, and survival → profound suppression of bone resorption",
+              "side_effects": [
+                "HYPOCALCAEMIA — can be severe (particularly in Vitamin D deficiency or CKD — ensure Vitamin D >30 ng/mL and calcium supplements started 2 weeks BEFORE denosumab)",
+                "Osteonecrosis of jaw (ONJ) — higher risk than oral bisphosphonates; dental examination before starting",
+                "Atypical femoral fractures (risk with long-term use)",
+                "Infections (cellulitis, urinary tract, respiratory)",
+                "Rebound bone loss on DISCONTINUATION — bone turnover rebounds massively after stopping denosumab causing rapid BMD loss and vertebral fracture risk; DO NOT STOP abruptly — transition to bisphosphonate before stopping denosumab"
+              ],
+              "critical_warning_stopping": "NEVER stop denosumab without transitioning to a bisphosphonate — rebound bone resorption after stopping causes multiple vertebral fractures (rebound fracture cascade). Always prescribe alendronate or zoledronate before the last denosumab dose."
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-177",
+          "category_name": "Anabolic Bone Agents (Bone Formation Stimulants)",
+          "purpose": "Unlike antiresorptive agents (which reduce bone breakdown), anabolic agents STIMULATE NEW BONE FORMATION — making them particularly valuable in severe osteoporosis, multiple fractures, or when antiresorptive therapy has failed.",
+          "medicines": [
+            {
+              "name": "Teriparatide (PTH 1-34 Analogue)",
+              "brand_examples": [
+                "Forteo",
+                "Osteorel",
+                "Teriparatide"
+              ],
+              "form": "Subcutaneous injection (20mcg/day via autoinjector pen)",
+              "dosage": "20mcg SC daily; maximum 24 months total lifetime use (oncogenicity concern — rat studies showed osteosarcoma at high doses); follow with antiresorptive therapy after course",
+              "use_case": "Severe postmenopausal osteoporosis with fractures; glucocorticoid-induced osteoporosis; osteoporosis in men; failed antiresorptive therapy; very low BMD (T-score <-3.5); multiple vertebral fractures; high fracture risk requiring rapid BMD improvement",
+              "mechanism": "Recombinant PTH(1-34) — intermittent PTH stimulates osteoblast activity > osteoclast activity → net bone formation (paradox: continuous high PTH causes bone loss; pulsatile daily injection stimulates bone formation); increases BMD most rapidly of all osteoporosis treatments (+9% at spine, +3-6% at hip at 18 months)",
+              "side_effects": [
+                "Nausea (mild)",
+                "Dizziness",
+                "Leg cramps",
+                "Transient hypercalcaemia (monitor calcium 1-4 weeks after starting)",
+                "Bone pain (initial)",
+                "Back pain",
+                "Osteosarcoma (only in animal studies at suprapharmacological doses; not shown in humans at therapeutic doses; avoid in: prior radiation, Paget's, bone metastases, hypercalcaemia, open growth plates in children)"
+              ],
+              "note": "Must be followed by antiresorptive therapy (bisphosphonate or denosumab) to consolidate anabolic gains — otherwise BMD is rapidly lost after teriparatide stops"
+            },
+            {
+              "name": "Romosozumab",
+              "brand_examples": [
+                "Evenity"
+              ],
+              "form": "Subcutaneous injection (210mg monthly — 2 × 105mg injections)",
+              "dosage": "210mg SC once monthly for 12 months only; follow with antiresorptive therapy",
+              "use_case": "Postmenopausal women at very high fracture risk; severe osteoporosis not responding to other treatments; after teriparatide course; strongest and most rapid BMD increase of any osteoporosis drug",
+              "mechanism": "Anti-sclerostin monoclonal antibody — sclerostin is a Wnt pathway inhibitor produced by osteocytes (suppresses bone formation); romosozumab blocks sclerostin → activates Wnt signalling → osteoblast activity increases AND SIMULTANEOUSLY reduces osteoclast activity (unique dual effect — only osteoporosis drug that simultaneously stimulates formation AND reduces resorption)",
+              "side_effects": [
+                "Hypocalcaemia (correct Vitamin D/calcium before starting)",
+                "Arthralgia",
+                "CARDIOVASCULAR RISK — FDA black box warning: increased myocardial infarction and stroke risk; contraindicated in patients with prior MI or stroke within 12 months",
+                "ONJ; atypical femoral fractures (long-term use)"
+              ],
+              "black_box_warning": "Increased cardiovascular events (MI, stroke) — use with caution in cardiovascular risk patients; contraindicated within 12 months of MI or stroke"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-178",
+          "category_name": "Hormone Replacement Therapy (HRT) — Oestrogen for Postmenopausal Osteoporosis",
+          "medicines": [
+            {
+              "name": "Oestrogen ± Progestogen (HRT)",
+              "brand_examples": [
+                "Climara (patch)",
+                "Femoston (combined)",
+                "Livial (tibolone)",
+                "Premarin (conjugated oestrogen)"
+              ],
+              "form": "Patch, Tablet, Gel",
+              "dosage": "Various formulations and doses — individualised; typically: oestradiol 1-2mg orally or 50mcg transdermal patch; add progestogen if uterus intact (prevents endometrial hyperplasia/cancer)",
+              "use_case": "Postmenopausal osteoporosis prevention — particularly in early postmenopause (<60 years or within 10 years of menopause); also treats menopause symptoms (flushes, sleep); effective at preventing bone loss if started early; Women's Health Initiative (WHI) trial showed significant fracture reduction",
+              "mechanism": "Oestrogen inhibits RANK-L-mediated osteoclast recruitment and activity; reduces bone turnover; maintains or increases BMD; also improves calcium absorption and reduces renal calcium loss",
+              "side_effects": [
+                "Breast cancer risk (small increase with combined HRT >5 years; much less with oestrogen-only; transdermal lower risk than oral)",
+                "Venous thromboembolism (DVT, PE) — oral HRT; transdermal HRT has minimal VTE risk",
+                "Stroke risk (oral HRT; transdermal minimal risk)",
+                "Endometrial cancer (with oestrogen alone without progestogen — protect uterus with progestogen)"
+              ],
+              "prescribing_guidance": "Transdermal HRT (patch or gel) preferred over oral (lower VTE and stroke risk); lowest effective dose; re-evaluate annually; generally used for up to 5 years for menopausal symptoms with fracture prevention benefit"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-179",
+          "category_name": "PTH Replacement for Hypoparathyroidism",
+          "medicines": [
+            {
+              "name": "Recombinant Human PTH (rhPTH 1-84 — Natpara)",
+              "brand_examples": [
+                "Natpara"
+              ],
+              "form": "Subcutaneous injection (25-100mcg daily via multi-dose device)",
+              "dosage": "50mcg SC daily; titrate 25-100mcg daily based on serum calcium; used to reduce dependence on high-dose oral calcium and calcitriol",
+              "use_case": "Hypoparathyroidism that cannot be adequately controlled with calcium + calcitriol alone; patients with frequent hypocalcaemia or hypercalciuria on conventional therapy; chronic hypoparathyroidism requiring very high oral calcium/calcitriol doses",
+              "mechanism": "Replaces missing PTH — promotes renal tubular calcium reabsorption, phosphate excretion, calcitriol synthesis; reduces need for oral calcium/calcitriol supplementation",
+              "side_effects": [
+                "Hypercalcaemia (dose-dependent)",
+                "Hypercalciuria (monitor 24h urine Ca)",
+                "Nausea, injection site reactions",
+                "Osteosarcoma (theoretical — same rat data as teriparatide; rare; avoid in bone metastases, prior radiation, Paget's)"
+              ],
+              "availability": "Available USA, EU; limited availability in India; expensive"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-180",
+          "category_name": "Calcitonin — Adjunct in Osteoporosis and Hypercalcaemia",
+          "medicines": [
+            {
+              "name": "Salmon Calcitonin (Calcitonin-Salmon)",
+              "brand_examples": [
+                "Miacalcic",
+                "Fortical",
+                "Calsynar",
+                "Tonocalcin"
+              ],
+              "form": "Nasal spray (200 IU per spray), SC/IM injection (50-200 IU)",
+              "dosage": "Osteoporosis: 200 IU nasal spray once daily (alternating nostrils); Paget's disease: 50-100 IU SC/IM daily. Acute hypercalcaemia: 4-8 IU/kg SC/IM every 6-12 hours",
+              "use_case": "Postmenopausal osteoporosis — modest BMD benefit; particularly useful for ACUTE VERTEBRAL FRACTURE PAIN (analgesic effect through endorphin release — proven in clinical trials, reduces pain acutely); Paget's disease; acute hypercalcaemia (rapid onset calcium-lowering effect within hours)",
+              "mechanism": "Binds calcitonin receptor on osteoclasts — inhibits bone resorption; also acts centrally for analgesia",
+              "side_effects": [
+                "Nasal symptoms (nasal irritation, rhinitis — nasal spray)",
+                "Nausea and vomiting (injection)",
+                "Flushing",
+                "Cancer risk concern — FDA review found marginal increase in cancer with long-term calcitonin (primarily nasal spray); EMA suspended some calcitonin products; use for shortest effective duration"
+              ],
+              "note": "No longer first-line for osteoporosis treatment (bisphosphonates are more effective); useful for acute vertebral fracture pain management and short-term hypercalcaemia"
+            }
+          ]
+        }
+      ]
+    },
+    "diet_and_nutrition": {
+      "overview": "Diet is the primary foundation of calcium sufficiency. The recommended dietary approach emphasises: maximise calcium-rich food intake; ensure adequate Vitamin D (from sun exposure and/or diet); optimise the calcium-enhancing food environment; and minimise calcium absorption inhibitors. For most people with mild deficiency, dietary optimisation can meet calcium needs without supplements. India-specific context: the predominantly vegetarian Indian diet has many excellent calcium sources — particularly dairy, sesame, ragi/finger millet, drumstick leaves, and amaranth — but cultural practices (excess tea, phytate-rich staple foods, low sun exposure) often undermine calcium nutrition.",
+      "recommended_foods": [
+        {
+          "category": "Dairy Products — Highest Bioavailability Calcium Sources",
+          "evidence": "Very strong — dairy provides highly bioavailable calcium (30-35% absorption rate); lactose in dairy further enhances absorption",
+          "items": [
+            {
+              "food": "Milk (cow's, buffalo's, goat's)",
+              "benefit": "300mg calcium per 250mL glass; highly bioavailable (30-35%); Vitamin D if fortified; protein; B12; potassium; phosphorus. Buffalo milk (widely used in India): 210mg/100mL — slightly higher than cow's milk (120mg/100mL). Warm milk before bed improves sleep and provides calcium for overnight bone maintenance",
+              "frequency": "2-3 glasses daily",
+              "india_context": "Doodh (milk) is a culturally significant food in India — widely available; affordable; should be actively promoted for calcium nutrition"
+            },
+            {
+              "food": "Paneer (Indian cottage cheese)",
+              "benefit": "208mg calcium per 100g; high protein (18g/100g); widely used in Indian vegetarian cooking; very versatile in curries, bhurji, sandwiches; one of the best vegetarian calcium sources",
+              "frequency": "3-5 times per week; 100-150g portions"
+            },
+            {
+              "food": "Curd / Dahi (plain yogurt) — whole or low-fat",
+              "benefit": "120-150mg calcium per 100g; lactose partially hydrolysed (better tolerated in lactose intolerance — many lactose-intolerant people tolerate curd well); probiotics (Lactobacillus) support gut health; Vitamin K2 (menaquinone — directs calcium to bones, away from arteries); versatile in Indian cuisine (raita, kadhi, lassi)",
+              "frequency": "Daily — 1-2 cups curd"
+            },
+            {
+              "food": "Chaach / Buttermilk",
+              "benefit": "120mg calcium per 250mL; lower fat than full milk; excellent hydration in summer; probiotics; perfect post-meal drink; widely consumed across India",
+              "frequency": "Daily as beverage"
+            },
+            {
+              "food": "Cheese: Cheddar, Parmesan, Processed cheese",
+              "benefit": "Cheddar: 720mg calcium per 100g; Parmesan: 1184mg per 100g; very concentrated calcium; small portions provide significant calcium; aged hard cheeses also contain Vitamin K2 (menaquinone-9 — bone protective)",
+              "frequency": "Small portions (30g) 2-3 times per week",
+              "note": "High in saturated fat — limit to small portions; full-fat cheese has more Vitamin K2 than reduced-fat"
+            }
+          ]
+        },
+        {
+          "category": "Plant-Based Calcium — India-Specific High-Calcium Foods",
+          "evidence": "Strong — many Indian plant foods provide significant calcium; bioavailability is generally 20-40% (lower than dairy but still meaningful for total intake)",
+          "items": [
+            {
+              "food": "Ragi / Finger Millet (Nachni) — THE Indian calcium grain",
+              "benefit": "344mg calcium per 100g (DRY) — extraordinary for a cereal; the HIGHEST calcium content of all major cereals and millets; bioavailability is lower than dairy (~20%) but given the quantity consumed as ragi roti, porridge, ladoo, or mudde (South India) it contributes significantly; also high iron, protein, fibre, B vitamins; gluten-free",
+              "frequency": "Daily as ragi roti, ragi ladoo, ragi mudde, ragi porridge; particularly popular in Karnataka, Maharashtra, Andhra, Tamil Nadu",
+              "india_context": "Ragi is a traditional staple in South India and Maharashtra; its high calcium content is why rural South Indian communities historically had lower osteoporosis rates — making it THE most important calcium-rich grain to promote in India"
+            },
+            {
+              "food": "Drumstick leaves / Moringa (Sahjan ke patte)",
+              "benefit": "185-440mg calcium per 100g fresh (highest among green leafy vegetables; varies by preparation); also Vitamin C (220mg/100g — improves calcium absorption); protein; iron; Vitamin A; moringa leaves cooked in dal, sabzi, curry, soup — the most nutrient-dense vegetable available in India",
+              "frequency": "3-4 times per week",
+              "india_context": "Sahjan/drumstick tree grows widely across India; leaves are cheap and highly nutritious; underutilised for calcium despite extraordinary nutritional density"
+            },
+            {
+              "food": "Sesame seeds (Til) — especially white til",
+              "benefit": "White sesame: 975-1000mg calcium per 100g — exceptionally high; bioavailability limited by oxalate (~21% bioavailable) but still significant at Indian consumption quantities; widely used in til chikki, til ladoo, til laddoos, til rice, til rotis; also high iron (10mg/100g), zinc, copper, Vitamin E",
+              "frequency": "Daily 1-2 tablespoons in cooking or as til ladoo/chikki/sesame bars",
+              "practical": "Til ke ladoo (sesame + jaggery balls) — a traditional Indian food that is both delicious and highly calcium-dense; perfect for children, pregnant women, and elderly"
+            },
+            {
+              "food": "Halim / Garden Cress Seeds (Aliv)",
+              "benefit": "100mg calcium per 100g (dry seeds); high iron (12-15mg/100g); Vitamin C; folate; widely used in Maharashtra, Gujarat as a post-delivery recovery food (halim kheer, halim ladoo); extremely nutritious for lactating women needing extra calcium",
+              "frequency": "1-2 tablespoons daily in milk-based preparations",
+              "india_context": "Traditional Maharashtra and Gujarat postpartum food — given to new mothers for calcium, iron, and lactation; has a strong scientific evidence base now"
+            },
+            {
+              "food": "Amaranth (Rajgira / Ramdana)",
+              "benefit": "159mg calcium per 100g (grain); amaranth leaves: 215mg/100g; gluten-free; complete protein; widely used in fasting foods (navratri — rajgira roti, rajgira khichdi); rajgira chikki; popped amaranth with jaggery",
+              "frequency": "3-4 times per week; widely available and culturally important"
+            },
+            {
+              "food": "Tofu (Calcium-set — soya bean curd)",
+              "benefit": "350-400mg calcium per 100g (calcium-set tofu using calcium sulfate as coagulant — CHECK LABEL; calcium-set tofu is MUCH higher than magnesium-set); high plant protein; isoflavones (may protect bone in postmenopausal women); completely dairy-free calcium source",
+              "frequency": "Daily for vegans and dairy-free individuals",
+              "caution": "ONLY calcium-set tofu provides high calcium; look for 'calcium sulfate' in ingredients; silken or soft tofu is lower in calcium"
+            },
+            {
+              "food": "Legumes and Pulses: White beans, Chickpeas, Lentils",
+              "benefit": "White kidney beans: 127mg/100g cooked; chickpeas: 105mg/100g; red kidney beans (rajma): 83mg/100g; lentils (masoor dal): 56mg/100g cooked; also high protein, iron, folate; widely consumed in Indian diet (rajma, chhole, dal)",
+              "frequency": "Daily — dal and legume dishes are a staple; actively good calcium contribution"
+            },
+            {
+              "food": "Green leafy vegetables: Bathua, Chaulai (Amaranth leaves), Sarson saag, Spinach (cooked)",
+              "benefit": "Bathua (Chenopodium album): 150mg calcium/100g; chaulai amaranth leaves: 215mg; sarson (mustard greens): 155mg; spinach cooked: 136mg (raw spinach higher calcium but high oxalate reduces net absorption by 95% — use cooked spinach which reduces oxalates); widely available and affordable",
+              "frequency": "Daily cooked green leafy vegetables",
+              "note": "Cooking destroys 50-80% of oxalates in spinach — always cook spinach for better calcium bioavailability"
+            },
+            {
+              "food": "Dried figs (Anjeer), Dates, Prunes",
+              "benefit": "Figs: 162mg calcium per 100g dried; dates: 64mg; prunes: 43mg; sweet, calorie-dense, good calcium; popular in Indian mithai and snacks; figs particularly useful for elderly with poor appetite",
+              "frequency": "5-10 dried figs or dates daily as snack"
+            },
+            {
+              "food": "Almonds and Chia seeds",
+              "benefit": "Almonds: 264mg calcium/100g; chia seeds: 631mg calcium/100g (extraordinary); almonds widely used in Indian cooking (soaked almonds morning ritual); chia pudding becoming popular; both also high omega-3, Vitamin E, fibre",
+              "frequency": "10-15 almonds daily; 2 tablespoons chia seeds daily"
+            },
+            {
+              "food": "Fortified Plant Milks (Soy, Almond, Oat milk — fortified)",
+              "benefit": "Fortified plant milks: 120-300mg calcium per 250mL (comparable to cow's milk when fortified with calcium carbonate); for vegans, lactose intolerant, or dairy-free individuals — an excellent dairy substitute",
+              "frequency": "2-3 glasses daily for dairy-free individuals",
+              "note": "MUST CHECK LABEL — unfortified plant milks contain very little calcium; only fortified versions provide meaningful calcium"
+            }
+          ]
+        },
+        {
+          "category": "Vitamin D from Diet and Sunlight",
+          "evidence": "Essential — without Vitamin D, only 5-10% of dietary calcium is absorbed regardless of intake",
+          "items": [
+            {
+              "food": "Oily fish: Salmon, Mackerel, Sardines, Hilsa",
+              "benefit": "Salmon: 400-1000 IU Vitamin D3 per 100g; sardines: 300 IU; mackerel: 250 IU; Hilsa fish (popular in West Bengal and Bangladesh): very high Vitamin D content; these are among the few truly Vitamin D-rich foods",
+              "frequency": "2-3 times per week"
+            },
+            {
+              "food": "Eggs (yolk)",
+              "benefit": "Egg yolk: 40-80 IU Vitamin D per yolk; also Vitamin K2 (MK-4 — directs calcium to bones); best consumed as whole egg; free-range eggs have higher Vitamin D than battery-farmed (more sun exposure)",
+              "frequency": "Daily 1-2 whole eggs"
+            },
+            {
+              "food": "UV-exposed mushrooms (Shiitake, Button — placed gill-side up in sun)",
+              "benefit": "Mushrooms convert UV-B to Vitamin D2 (ergocalciferol) when exposed to sunlight; UV-exposed shiitake mushrooms can contain up to 400-800 IU per 100g; the only plant food that naturally produces Vitamin D; place mushrooms in sunlight for 30-60 min before cooking",
+              "frequency": "3-4 times per week"
+            },
+            {
+              "food": "SUNLIGHT — primary Vitamin D source",
+              "benefit": "15-30 minutes of midday sun (10am-3pm) on face, arms, and legs (without sunscreen) produces 1000-20,000 IU Vitamin D3 in the skin (depending on skin colour, surface area, latitude, season). THE most efficient Vitamin D source — virtually all human Vitamin D historically came from sunlight. India has abundant sunlight but 40-70% of Indians are deficient due to: melanin (darker skin requires more sun exposure); indoor lifestyles; air pollution; covered clothing; cultural avoidance of sun.",
+              "frequency": "15-30 minutes daily between 10am-3pm; expose face and arms; no sunscreen during this window (sunscreen blocks UV-B/Vitamin D synthesis)",
+              "practical": "Morning walk between 10am-12pm with arms/face exposed is the optimal approach; cannot over-produce Vitamin D from sunlight (unlike supplements) — the body regulates production"
+            }
+          ]
+        },
+        {
+          "category": "Foods Rich in Vitamin K2 (Bone Calcium Direction)",
+          "evidence": "Moderate-strong — Vitamin K2 (menaquinone) activates osteocalcin and Matrix Gla Protein — directing calcium INTO bones and teeth and AWAY from arteries",
+          "items": [
+            {
+              "food": "Fermented foods: Natto (Japanese), Aged hard cheeses, Curd/yogurt",
+              "benefit": "MK-7 in natto (highest food source — 1000mcg per 100g); MK-4 in cheese and fermented dairy; MK-7 also produced in small amounts in Indian fermented foods (idli, dosa batter); Vitamin K2 redirects calcium to bone matrix (activates osteocalcin via carboxylation); reduces arterial calcification (activates Matrix Gla Protein)",
+              "frequency": "Daily fermented foods (curd, fermented pickles, buttermilk); hard aged cheeses 2-3 times per week",
+              "india_context": "Indian fermented foods (dahi, chaach, idli, dosa, kanji — fermented carrot drink, achar) naturally contain Vitamin K2; emphasising fermented traditional Indian foods supports both gut health and bone health"
+            }
+          ]
+        }
+      ],
+      "foods_to_limit_or_separate": [
+        {
+          "food": "Oxalate-rich foods (not avoid — but careful preparation reduces inhibitory effect)",
+          "reason": "Oxalates in spinach, rhubarb, beet greens, and sweet potato bind calcium forming insoluble calcium oxalate → reduces calcium absorption from those specific foods. HOWEVER: oxalates in one food do NOT significantly reduce calcium absorption from OTHER foods eaten in the same meal. Cooking vegetables reduces oxalate by 50-80% — always cook spinach and beet greens.",
+          "recommendation": "Cook oxalate-rich vegetables; separate high-oxalate foods from calcium supplements (take supplement between meals); do not restrict these foods overall — they have many health benefits",
+          "examples": [
+            "Raw spinach — COOK before eating for calcium benefit",
+            "Rhubarb",
+            "Beet greens"
+          ]
+        },
+        {
+          "food": "Excessive sodium (salt)",
+          "reason": "High sodium intake increases renal calcium excretion — for every 2.3g of sodium excreted, 24-40mg of calcium is lost in urine. Chronic high-salt diet causes significant hypercalciuria (excessive urinary calcium loss) → negative calcium balance → bone loss. Indian diet is high in salt — reduction to <2300mg sodium/day is recommended.",
+          "recommendation": "Reduce salt in cooking; avoid adding extra salt at table; reduce processed and packaged foods (very high in sodium); limit salty pickles and papad"
+        },
+        {
+          "food": "Excessive caffeine",
+          "reason": "Caffeine (coffee, tea, cola) increases renal calcium excretion transiently. Heavy caffeine consumption (>4 cups coffee per day) is associated with marginally lower BMD. Moderate caffeine (<400mg/day) has minimal clinical impact on calcium balance when dietary calcium is adequate.",
+          "recommendation": "Moderate caffeine (2-3 cups tea or coffee daily) is fine if dietary calcium is adequate; avoid adding milk to tea DURING meals (calcium from milk reduces iron absorption from food)"
+        },
+        {
+          "food": "Excessive alcohol",
+          "reason": "Alcohol directly suppresses osteoblast function; impairs Vitamin D metabolism (CYP450 induction); increases falls risk; reduces calcium and Vitamin D absorption; heavy alcohol intake (>3 units/day) is an independent osteoporosis risk factor.",
+          "recommendation": "Limit to <14 units/week for women; <21 units/week for men; ideally <7 units/week to optimise bone health"
+        },
+        {
+          "food": "Cola / Fizzy drinks",
+          "reason": "Phosphoric acid in cola beverages lowers blood pH → stimulates calcium release from bones (buffering); high phosphate also suppresses PTH action. Cola drinks specifically (not other carbonated drinks) are associated with lower BMD in women. The association may partly be from displacing milk intake.",
+          "recommendation": "Replace cola beverages with milk, curd, or calcium-fortified alternatives; limit cola to occasional consumption"
+        },
+        {
+          "food": "High-protein diet (moderate concern — only at extreme protein intake)",
+          "reason": "Very high protein intake (>2.5g/kg/day — from supplements) increases urinary calcium excretion from acid load. However, moderate dietary protein actually IMPROVES calcium absorption and reduces fracture risk (protein provides IGF-1, muscle mass for bone loading). Supplemental protein at extreme levels is the concern — normal dietary protein including meat is BENEFICIAL for bone.",
+          "recommendation": "Moderate protein intake (1.0-1.5g/kg/day) is beneficial for bones; avoid extreme protein supplement regimens"
+        }
+      ],
+      "sample_meal_plan": {
+        "note": "This calcium-optimised Indian meal plan aims for 1000-1200mg calcium from diet plus 600-1000 IU Vitamin D. Includes traditional Indian foods known for high calcium content. Supplements additional to this meal plan as needed.",
+        "early_morning": "Warm glass of milk or haldi doodh (golden milk with turmeric 1/2 tsp + 1/4 tsp black pepper) + 10 soaked almonds + 5 dried figs (anjeer)",
+        "breakfast": "Ragi roti (2-3) or ragi porridge / ragi mudde + 1 cup curd + moong sprouts chaat (sprouted moong with lemon and tomato) + 1 cup buttermilk (chaach); OR Paneer bhurji on whole wheat toast + 1 glass warm milk",
+        "mid_morning": "Sesame seed chikki (til + jaggery, 30g) OR handful of sesame seeds in snack mix + warm sun exposure (15-20 min midday walk — Vitamin D from sunlight)",
+        "lunch": "Dal (masoor or moong dal with tomatoes) + drumstick leaves sabzi (cooked with garlic and tomatoes) + 2 ragi or whole wheat chapati + 1 cup curd/dahi + small bowl chaulai (amaranth leaves sabzi) — all cooked in iron kadai",
+        "evening_snack": "Paneer tikka or chhole (chickpeas) chaat + 1 cup chaach (buttermilk) + 5 more almonds or til ladoo",
+        "dinner": "Rajma or chickpea curry + 1-2 chapati + palak paneer (spinach with paneer — calcium from both; cook spinach to reduce oxalates) + 1 cup curd OR sardine/mackerel curry with rice (for non-vegetarians — high calcium + Vitamin D combo)",
+        "before_bed": "Warm milk with pinch turmeric and cardamom; 1 Vitamin D3 supplement (1000-2000 IU cholecalciferol) if prescribed",
+        "total_estimated_calcium": "~900-1100mg from food; supplements to bridge gap to 1200mg target if needed"
+      },
+      "special_dietary_notes": [
+        "RAGI (finger millet) is the SINGLE MOST IMPORTANT food to promote for calcium in India — it is the highest calcium cereal; affordable; widely available; culturally accepted in South India and Maharashtra; daily ragi consumption could significantly reduce osteoporosis burden in India",
+        "Calcium from DAIRY has the highest bioavailability (30-35%) — lactose intolerance is NOT a reason to avoid all dairy; most lactose-intolerant people tolerate curd/dahi (lactose hydrolysed by bacteria) and hard cheeses; lactose-free milk is widely available",
+        "SPLIT CALCIUM intake throughout the day — two servings of calcium-rich food (morning + evening) absorbs better than one large meal. Intestinal calcium transport is saturable at ~500mg per meal.",
+        "Vitamin D is INSEPARABLE from calcium nutrition — ensure sunlight exposure OR supplement D3 alongside calcium; calcium supplementation without Vitamin D correction is largely ineffective",
+        "Calcium from supplements is associated with a small cardiovascular risk (weak evidence — not seen with dietary calcium); prefer dietary calcium sources; if supplements needed, take calcium citrate (safer cardiovascular profile than calcium carbonate in recent data) and keep supplemental calcium to <500-600mg/day total",
+        "VITAMIN K2 in fermented dairy (curd, aged cheese) and fermented soya (natto) activates osteocalcin — the bone matrix protein that BINDS calcium into hydroxyapatite. Traditional Indian fermented foods (dahi, chaach, fermented pickles/achar) are underappreciated sources of Vitamin K2 for bone health"
+      ]
+    },
+    "lifestyle_management": {
+      "weight_bearing_exercise": {
+        "evidence": "STRONGEST evidence-based lifestyle intervention for bone health. Mechanical loading from weight-bearing exercise stimulates osteoblast activity through multiple signalling pathways (Wnt/β-catenin, Sclerostin suppression, prostaglandin E2). Both impact exercise (running, jumping) and resistance training independently increase BMD.",
+        "recommended_types": [
+          {
+            "exercise": "Weight-bearing aerobic activities",
+            "examples": [
+              "Brisk walking (45-60 min daily)",
+              "Jogging or running (high impact — most beneficial for hip and spine)",
+              "Stair climbing",
+              "Dancing (Bharatanatyam, Zumba, folk dance — high impact; excellent for bone)",
+              "Tennis, badminton, cricket"
+            ],
+            "target": "150-300 minutes/week moderate intensity",
+            "benefit": "Hip and spine BMD; reduces fracture risk; improves balance and coordination"
+          },
+          {
+            "exercise": "Resistance / Strength training",
+            "examples": [
+              "Resistance bands",
+              "Weight machines or free weights",
+              "Yoga (especially standing poses and balances)",
+              "Bodyweight exercises (squats, lunges, push-ups, deadlifts)"
+            ],
+            "target": "2-3 sessions per week; all major muscle groups",
+            "benefit": "Progressive overload directly stimulates bone formation (Wolff's Law); maintains muscle mass (sarcopenia prevention); reduces fall risk"
+          },
+          {
+            "exercise": "Balance and flexibility exercises (fall prevention — critical in elderly)",
+            "examples": [
+              "Tai Chi (most evidence for fall prevention — reduces falls 45%)",
+              "Yoga (balance poses: tree pose, warrior pose)",
+              "Single-leg standing practice",
+              "Heel-to-toe walking"
+            ],
+            "target": "Daily 15-30 minutes",
+            "benefit": "Reduces falls (which cause fractures); improves proprioception; reduces fear of falling"
+          }
+        ],
+        "caution": "In established osteoporosis or vertebral fractures: AVOID high-impact jumping, forward bending, trunk rotation under load — risk of vertebral fracture. Gentle walking, swimming, and supervised physiotherapy are safer."
+      },
+      "sunlight_exposure": {
+        "recommendation": "15-30 minutes of midday sun (10am-3pm) on face, arms, and legs WITHOUT sunscreen, 3-5 times per week during summer; longer in winter or in those with darker skin. This is the most efficient way to achieve Vitamin D sufficiency — synthesis up to 20,000 IU per session is possible.",
+        "india_specific": "Despite abundant sunlight in India, 40-70% of Indians are Vitamin D deficient — because: (1) Melanin in darker skin requires more UV exposure to synthesise equivalent Vitamin D; (2) Air pollution in Indian cities blocks UV-B (blocks up to 70% of UV-B in major cities); (3) Cultural practices of covering skin and indoor activities; (4) Office-based urban lifestyles. Solution: early morning or late morning outdoor walk 15-30 min daily with face and arms exposed",
+        "safe_sun_practice": "The 'sunshine gap' — a brief window of midday UV-B exposure for Vitamin D is clinically harmless; sun damage (and skin cancer risk) is from CUMULATIVE, prolonged UV-A exposure — not the short daily Vitamin D window"
+      },
+      "fall_prevention_in_elderly": {
+        "importance": "Falls cause 95% of hip fractures — preventing falls in elderly is as important as preventing bone loss. Falls prevention encompasses multiple domains:",
+        "measures": [
+          "Home hazard assessment: remove loose rugs and clutter; install grab rails (bathroom, toilet, staircase); improve lighting; non-slip bathmats; bed rails if needed",
+          "Footwear: well-fitting shoes with non-slip soles; avoid slippers and flip-flops at home",
+          "Medication review: reduce polypharmacy; especially review sedatives, antidepressants, antihypertensives (postural hypotension), benzodiazepines, anticonvulsants — all increase fall risk",
+          "Vision: regular eye examination; treat cataracts; correct refractive errors; bifocal glasses cause more falls (depth perception); consider single-vision outdoor glasses for walking",
+          "Balance training: Tai Chi (proven 45% fall reduction); physiotherapy for balance improvement",
+          "Vitamin D supplementation reduces falls in Vitamin D-deficient elderly (25-OH Vitamin D <20 ng/mL) — target >30 ng/mL",
+          "Hip protectors: padded underwear that absorb hip impact energy — controversial evidence; some benefit in high-risk institutionalised elderly",
+          "Orthostatic hypotension management: rise slowly from lying/sitting; head-up tilt therapy; review antihypertensives"
+        ]
+      },
+      "smoking_cessation": {
+        "impact": "Smoking is directly toxic to osteoblasts; increases hepatic oestrogen catabolism (reducing protective effect); promotes oxidative stress in bone microenvironment; reduces Vitamin D hydroxylation. Smokers have 25-35% lower BMD and 2x fracture risk compared to non-smokers. Smoking cessation at any age improves bone health — within 5 years of quitting, BMD loss rate approaches non-smoker rates.",
+        "recommendation": "Complete cessation; NRT (patches, gum); varenicline; motivational counselling"
+      },
+      "alcohol_reduction": {
+        "impact": "Heavy alcohol (>3 units/day) suppresses osteoblast function; impairs Vitamin D activation; increases falls risk; causes secondary nutritional deficiencies; associated with liver disease (reduced 25-hydroxylation of Vitamin D).",
+        "recommendation": "<7 units/week for optimal bone health; avoid >3 units/day"
+      },
+      "dental_health": {
+        "importance": "Calcium and Vitamin D are essential for dental enamel and alveolar bone (jaw bone supporting teeth). IDA, calcium deficiency, and osteoporosis increase dental problems: caries; enamel defects; tooth loss from alveolar bone resorption.",
+        "recommendation": "Twice-daily fluoride toothpaste; regular dental check-ups every 6 months; fluoride treatments; calcium-rich diet for enamel remineralisation. Patients on bisphosphonates or denosumab: DENTAL CHECK-UP before starting (risk of ONJ — osteonecrosis of the jaw — is low but real; dental procedures during treatment require careful management)"
+      }
+    },
+    "calcium_deficiency_monitoring_plan": {
+      "note": "Monitoring targets depend on the specific condition being managed (hypocalcaemia, osteoporosis, hypoparathyroidism, rickets). The plan below integrates all calcium deficiency conditions.",
+      "green_zone": {
+        "status": "Well Controlled — Stable Calcium Parameters",
+        "criteria": "Serum calcium within normal range (8.5-10.5 mg/dL corrected) on stable treatment; 25-OH Vitamin D >30 ng/mL; no hypocalcaemic symptoms; BMD stable or improving on DEXA; no new fractures; no hypercalciuria (24h urine calcium <300mg/day on treatment)",
+        "action": "Continue current calcium + Vitamin D supplementation; continue antiresorptive therapy if on treatment for osteoporosis. Annual blood tests (calcium, Vitamin D, PTH, renal function). DEXA scan every 1-2 years (to monitor BMD trend on treatment). Continue weight-bearing exercise, sun exposure, dietary calcium. Annual dental check-up if on bisphosphonate/denosumab. Review fracture risk (FRAX) annually."
+      },
+      "yellow_zone": {
+        "status": "Suboptimal — Action Required",
+        "criteria": "Serum calcium borderline low (8.0-8.4 mg/dL) with or without mild symptoms; 25-OH Vitamin D <20 ng/mL (deficiency); BMD declining on DEXA despite treatment (>3-5% loss per year); non-adherence to supplements; new fragility fracture on treatment; hypercalciuria developing on hypoparathyroidism treatment",
+        "action": "Reassess and optimise treatment: increase calcium supplement dose; add or increase Vitamin D3; recheck compliance; investigate for malabsorption (coeliac); review medications causing calcium loss; consider stepping up osteoporosis treatment (add anabolic agent if on antiresorptive alone); adjust calcitriol/calcium in hypoparathyroidism if hypercalciuria. Endocrinology/rheumatology/metabolic bone specialist referral."
+      },
+      "red_zone": {
+        "status": "URGENT — Acute Hypocalcaemia or Severe Complication",
+        "criteria": "Any of: perioral numbness or finger tingling developing post-thyroidectomy or parathyroidectomy; positive Trousseau's sign or Chvostek's sign; corrected serum calcium <7.5 mg/dL; QTc >500ms on ECG in context of hypocalcaemia; muscle tetany or carpopedal spasm; laryngospasm (stridor); seizure with concurrent hypocalcaemia; severe hip fracture from minimal trauma",
+        "action": "EMERGENCY for tetany/laryngospasm/seizures/arrhythmia: CALL EMERGENCY SERVICES — IV calcium gluconate 10% (10-20mL IV over 10-20 minutes; NEVER rapid bolus); cardiac monitoring; simultaneous IV magnesium if hypomagnesaemia. Post-surgical hypocalcaemia: immediate IV calcium; admit for monitoring; start oral calcium + calcitriol; daily calcium checks. Hip fracture: EMERGENCY — orthopaedic admission; surgical repair; post-fracture bone protection programme (zoledronate IV within 90 days of fracture)."
+      }
+    },
+    "complications": [
+      {
+        "complication": "Tetany and Laryngospasm",
+        "description": "Sustained painful muscle spasms from neuromuscular hyperexcitability in acute/severe hypocalcaemia. Laryngospasm (vocal cord spasm causing inspiratory stridor and respiratory arrest) is the most life-threatening manifestation — a calcium deficiency emergency requiring immediate IV calcium. Generalised tetany: prolonged, exquisitely painful carpopedal spasm, facial twitching, generalised muscle contractions.",
+        "severity": "Life-threatening (laryngospasm)",
+        "management": "Immediate IV calcium gluconate 10% (10-20mL over 10 min) STAT; continuous calcium infusion; correct magnesium; establish IV access and cardiac monitoring; anaesthetics input for laryngospasm management; do not wait for lab results if clinically certain"
+      },
+      {
+        "complication": "Cardiac Arrhythmias (QT Prolongation and Torsades de Pointes)",
+        "description": "Hypocalcaemia prolongs the QT interval (extends action potential repolarisation) predisposing to torsades de pointes (TdP) — a polymorphic ventricular tachycardia that can degenerate into ventricular fibrillation and cardiac arrest. QTc >500ms = high arrhythmia risk. Particularly dangerous when hypocalcaemia coexists with hypokalaemia, hypomagnesaemia, or QT-prolonging medications.",
+        "severity": "Life-threatening",
+        "management": "Emergency IV calcium; correct concurrent electrolyte abnormalities (K+, Mg2+); continuous cardiac monitoring; ICU admission; defibrillation if VF develops"
+      },
+      {
+        "complication": "Seizures",
+        "description": "Profound hypocalcaemia causes cortical neuronal hyperexcitability — can manifest as focal or generalised seizures. Calcium deficiency is an important and reversible cause of seizures that should be excluded in all new-onset seizures, particularly in at-risk populations (post-thyroidectomy, pregnancy, malabsorption).",
+        "severity": "Severe",
+        "management": "IV calcium is the SPECIFIC treatment (unlike other seizures — antiepileptics alone are insufficient); IV benzodiazepine for seizure control; IV calcium for definitive treatment"
+      },
+      {
+        "complication": "Hip Fracture from Osteoporosis",
+        "description": "The most clinically devastating complication of osteoporosis — hip fractures cause 20-30% mortality within 1 year, predominantly from: post-operative pulmonary embolism, pneumonia, and other immobility complications. Survivors experience significant lasting disability: 50% never return to pre-fracture functional status; 30% require nursing home care. Hip fracture from osteoporosis is as clinically serious as many cancers.",
+        "severity": "Potentially life-threatening; permanently disabling",
+        "prevention": "DEXA screening and fracture risk assessment (FRAX); treat all high-risk patients with antiresorptive therapy; calcium + Vitamin D; fall prevention",
+        "post_fracture": "IV zoledronate within 90 days of hip fracture significantly reduces re-fracture risk (33%) and all-cause mortality — zoledronate post-hip fracture is one of the most evidence-based and underused interventions in medicine"
+      },
+      {
+        "complication": "Vertebral Fractures and Progressive Kyphosis",
+        "description": "Often SILENT vertebral crush fractures accumulate over years — each vertebral fracture loses 1-2cm of height and causes progressive thoracic kyphosis ('Dowager's hump'). Multiple vertebral fractures significantly impair quality of life: chronic back pain; reduced lung capacity (kyphosis restricts chest expansion); restrictive respiratory compromise; poor self-image and depression; increased risk of future fractures. A vertebral fracture doubles the 5-year re-fracture risk.",
+        "severity": "Moderate to Severe",
+        "management": "Antiresorptive therapy (bisphosphonate or denosumab); anabolic therapy for severe/multiple fractures (teriparatide); physiotherapy and back strengthening; vertebroplasty or kyphoplasty for acute painful vertebral fractures (controversial evidence)"
+      },
+      {
+        "complication": "Rickets and Permanent Bone Deformity in Children",
+        "description": "Untreated or severe rickets causes permanent bone deformities in growing children: bow legs or knock knees; spinal scoliosis or kyphosis; stunted stature; chest deformity (pigeon chest); pelvic narrowing (causing obstructed labour in women in adult life). Brain development may also be impaired from concurrent Vitamin D deficiency. Rickets is increasingly recognised in both low-income countries (dietary calcium deficiency) and high-income countries (strict vegan children; dark-skinned children with indoor lifestyles; exclusively breastfed infants without supplementation).",
+        "severity": "Severe — permanent if untreated",
+        "management": "High-dose Vitamin D3 (3000-6000 IU daily for nutritional vitamin D rickets) + calcium supplementation; surgical correction of severe deformities (tibial osteotomy for bow legs); growth monitoring; prophylaxis for all children: Vitamin D3 400-1000 IU daily from birth (UK, India guidelines)"
+      },
+      {
+        "complication": "Cataracts (Chronic Hypoparathyroidism)",
+        "description": "Bilateral posterior subcapsular cataracts develop in 30-50% of patients with chronic hypoparathyroidism from calcium-dependent lens epithelial cell dehydration and protein crystallisation. Develop years to decades after hypoparathyroidism onset. Associated with poorly controlled chronic hypocalcaemia.",
+        "severity": "Moderate",
+        "management": "Regular ophthalmological screening (annually for hypoparathyroidism); surgical cataract extraction when visually significant; optimise calcium control to reduce progression"
+      },
+      {
+        "complication": "Basal Ganglia Calcification and Neuropsychiatric Manifestations",
+        "description": "Long-standing untreated or inadequately treated hypoparathyroidism causes intracranial calcification — particularly in the basal ganglia, cerebellum, and subcortical white matter (Fahr's syndrome pattern). Calcification causes neurological symptoms: parkinsonism, chorea, dystonia, gait disturbance. Neuropsychiatric symptoms are also common: depression, anxiety, cognitive impairment, psychosis.",
+        "severity": "Moderate to Severe",
+        "management": "Optimise calcium control; treat depression/anxiety (SSRI, CBT); movement disorder specialist for parkinsonian symptoms; calcification is generally irreversible but progression halted with adequate calcium control"
+      },
+      {
+        "complication": "Renal Calculi (with Treatment)",
+        "description": "A paradoxical complication of calcium deficiency TREATMENT — particularly in hypoparathyroidism where high-dose calcium + calcitriol increases urinary calcium excretion (without PTH-mediated tubular calcium reabsorption). Calcium oxalate and calcium phosphate kidney stones form when urinary calcium exceeds renal handling capacity.",
+        "severity": "Moderate",
+        "prevention_during_treatment": "Monitor 24-hour urinary calcium every 3-6 months in hypoparathyroidism treatment (target <300mg/day women; <350mg/day men); adequate hydration (2-3L daily); thiazide diuretics (chlorthalidone, indapamide) reduce urinary calcium if hypercalciuria develops; citrate supplementation (potassium citrate) alkalinises urine reducing stone formation"
+      },
+      {
+        "complication": "Impaired Immunity and Increased Infection Susceptibility",
+        "description": "Vitamin D (which regulates calcium absorption) also has profound immune modulating effects — Vitamin D receptors are present on all immune cells; Vitamin D deficiency impairs macrophage and T-cell function. Calcium itself is required for neutrophil degranulation and bactericidal function. Calcium/Vitamin D deficiency is associated with increased respiratory infections, increased tuberculosis susceptibility (India: Vitamin D deficiency + high TB burden — important interaction), and impaired wound healing.",
+        "severity": "Mild to Moderate — indirect clinical impact",
+        "management": "Correct Vitamin D deficiency independently as immune intervention; calcium and Vitamin D sufficiency required for optimal immune function"
+      }
+    ],
+    "special_populations": {
+      "postmenopausal_women": {
+        "key_points": [
+          "Oestrogen deficiency post-menopause dramatically accelerates bone loss (2-3% per year for 5-10 years post-menopause vs 0.5-1% normal ageing) — the critical window for prevention intervention",
+          "ALL postmenopausal women should be: counselled on calcium + Vitamin D nutrition; encouraged to weight-bearing exercise; offered DEXA scan after age 65 or earlier with risk factors; assessed with FRAX tool",
+          "Women with menopausal symptoms (hot flushes, sleep disturbance): HRT (oestrogen ± progestogen) is BOTH the best treatment for menopausal symptoms AND the most physiologically natural bone protection — transdermal oestrogen preferred (lower VTE risk)",
+          "Bisphosphonate treatment threshold: 10-year FRAX probability >20% major fracture or >3% hip fracture; or T-score ≤ −2.5; or prior fragility fracture; or on corticosteroids",
+          "Female Athletic Triad: young female athletes with caloric restriction, menstrual irregularity/amenorrhoea, and low BMD — three related conditions with severe osteoporosis risk; caloric rehabilitation, bone density monitoring, and Vitamin D/calcium supplementation essential"
+        ]
+      },
+      "calcium_in_pregnancy_and_lactation": {
+        "key_points": [
+          "Calcium absorption efficiency doubles during pregnancy (from ~20-30% to ~50-60%) as a physiological adaptation; however, requirements are still increased — 1000mg/day for women 19-50 and 1300mg/day for adolescent pregnancies",
+          "Foetal skeleton accumulates 25-30g calcium in the 3rd trimester — entirely from maternal supply; maternal calcium supplementation most critical in 3rd trimester",
+          "Low calcium intake in pregnancy increases risk of: maternal osteoporosis; pre-eclampsia (calcium supplementation 1500-2000mg/day significantly reduces pre-eclampsia risk in women with low intake — WHO recommendation for areas where dietary calcium <900mg/day, which includes much of India)",
+          "India WHO recommendation: 1.5-2g elemental calcium supplement daily in pregnancy if dietary calcium is low — to reduce pre-eclampsia risk (strong evidence; Lancet 2006 WHO trial)",
+          "Lactation: bones temporarily lose up to 5-10% BMD during 6 months exclusive breastfeeding — completely and spontaneously restored after weaning; bone loss during lactation is hormonally mediated (not improved by calcium supplementation); calcium supplements still recommended for maternal nutritional status",
+          "Vitamin D supplementation: 1000-2000 IU D3 daily throughout pregnancy and lactation (breastmilk is low in Vitamin D — supplement infant separately from birth)"
+        ]
+      },
+      "calcium_in_children_and_adolescents": {
+        "key_points": [
+          "Adolescence (9-18 years) is the CRITICAL WINDOW for peak bone mass acquisition — 40% of peak bone mass is accumulated during the 2-3 year period of peak linear growth. Calcium and Vitamin D intake during this period determines osteoporosis risk decades later.",
+          "Requirements: 1300mg calcium/day for 9-18 year olds — higher than for adults",
+          "India-specific: only ~30-40% of Indian adolescents (particularly girls) meet calcium requirements; dairy consumption is lower in adolescent girls due to body weight concerns; this creates a significant public health gap",
+          "Rickets prevention: ALL breastfed infants should receive Vitamin D3 400 IU/day from birth (breast milk contains very little Vitamin D); continue until 1 year or until adequate sun exposure + dietary Vitamin D is established",
+          "Sports participation in adolescents builds bone mass — every 1% increase in adolescent BMD from exercise reduces osteoporotic fracture risk by 1% in later life; promote weight-bearing sports for all children",
+          "India National Nutritional Programme: fortified milk and fortified complementary foods under ICDS (Integrated Child Development Services) aim to address childhood calcium and Vitamin D deficiency at scale"
+        ]
+      },
+      "calcium_in_ckd": {
+        "key_points": [
+          "CKD Stage 3-5: reduced calcitriol production → calcium malabsorption → secondary hyperparathyroidism → osteitis fibrosa cystica (high-turnover bone disease) → fracture risk",
+          "ACTIVE Vitamin D (calcitriol 0.25-1 mcg/day or alfacalcidol 0.25-1 mcg/day) is required — NOT standard cholecalciferol (requires renal activation which is impaired)",
+          "Phosphate binders (sevelamer, calcium carbonate, calcium acetate, lanthanum carbonate, ferric citrate) reduce intestinal phosphate absorption — essential in dialysis patients",
+          "Calcimimetics (cinacalcet — 30-180mg/day oral; etelcalcetide IV) sensitise calcium-sensing receptor → suppress PTH → reduce parathyroid-driven bone disease",
+          "Avoid excessive calcium supplementation in CKD Stage 5 / dialysis (risk of coronary artery calcification); non-calcium phosphate binders preferred in high cardiovascular risk patients"
+        ]
+      },
+      "glucocorticoid_induced_osteoporosis": {
+        "key_points": [
+          "PREVENTION is critical — start bone protection at INITIATION of corticosteroid therapy (not after bone loss has occurred)",
+          "ALL patients starting prednisolone ≥7.5mg/day anticipated for ≥3 months: supplement calcium 1000-1200mg/day + Vitamin D3 800-1000 IU/day PLUS alendronate 70mg/week (or risedronate or zoledronate) from Day 1 of steroid therapy",
+          "FRAX underestimates fracture risk in glucocorticoid-treated patients — a correction factor should be applied; treat at lower FRAX thresholds",
+          "If fracture occurs despite antiresorptive therapy: teriparatide (anabolic) is first choice (superior to bisphosphonates for glucocorticoid-induced osteoporosis with fractures — VERO trial)",
+          "Use the lowest effective corticosteroid dose; consider steroid-sparing agents (methotrexate, azathioprine, mycophenolate) wherever possible"
+        ]
+      }
+    },
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Annually",
+        "reason": "Patients with calcium deficiency — particularly those with osteoporosis or taking immunosuppressants (corticosteroids for various conditions causing secondary osteoporosis) — have impaired immune function. Influenza causes prolonged immobility in elderly and high-risk patients, accelerating bone loss and increasing fall/fracture risk. Influenza vaccination significantly reduces morbidity, hospitalisation, and immobility-related bone loss complications in this vulnerable population."
+      },
+      {
+        "vaccine": "Pneumococcal Vaccine (PCV20 / PPSV23)",
+        "frequency": "Single dose for adults ≥65; or with risk factors",
+        "reason": "Patients on long-term corticosteroids (glucocorticoid-induced osteoporosis — most common secondary osteoporosis), immunosuppressants, or patients with CKD have significantly increased infection susceptibility. Pneumococcal pneumonia causes severe illness requiring bed rest — immobility accelerates bone loss dramatically. In patients already on the verge of osteoporosis, a pneumococcal infection requiring weeks of hospitalisation can precipitate significant bone loss and fracture."
+      },
+      {
+        "vaccine": "COVID-19 Vaccine (Annual Updated Booster)",
+        "frequency": "Annual updated booster",
+        "reason": "Severe COVID-19 requires prolonged hospitalisation and ICU immobility — immobility causes rapid bone loss (0.5-1% per week in bedridden patients; hip BMD can fall 5-10% during prolonged bed rest). Post-COVID fatigue and reduced activity reduce weight-bearing exercise. In osteoporotic patients, COVID-induced immobility dramatically increases fracture risk. COVID-19 also causes systemic inflammation that may directly impair bone metabolism."
+      },
+      {
+        "vaccine": "Hepatitis B Vaccine",
+        "frequency": "3-dose course if non-immune",
+        "reason": "Patients with CKD (a common cause of calcium deficiency) are at significantly higher risk of hepatitis B from dialysis exposure. Hepatitis B-related liver disease impairs 25-hydroxylation of Vitamin D in the liver (one of two required activation steps) — worsening calcium malabsorption. Hepatitis B vaccination is strongly recommended for all CKD patients, dialysis patients, and immunosuppressed patients."
+      },
+      {
+        "vaccine": "Herpes Zoster Vaccine (Shingrix — Recombinant)",
+        "frequency": "2 doses (0 and 2-6 months) for adults ≥50 years",
+        "reason": "Shingles (herpes zoster) causes severe pain and prolonged immobility. Patients on corticosteroids (glucocorticoid-induced osteoporosis) and immunosuppressants have dramatically higher shingles reactivation risk AND more severe disease. Shingles vaccination with Shingrix (non-live recombinant) is SAFE even in immunocompromised patients (unlike live Zostavax). Post-herpetic neuralgia from shingles causes prolonged pain and immobility — accelerating bone loss in already compromised patients."
+      },
+      {
+        "vaccine": "MMR (Measles, Mumps, Rubella)",
+        "frequency": "2 doses per standard childhood schedule; catch-up for unvaccinated adults",
+        "reason": "Mumps (parotitis) causes transient hypocalcaemia through parotid gland inflammatory effects on salivary bicarbonate and pH. Measles causes prolonged immobility and immunosuppression ('immune amnesia') for 2-3 years — worsening nutritional deficiencies including calcium and Vitamin D in already at-risk children. MMR vaccination prevents both measles-associated immune deficiency and complications that indirectly worsen calcium nutrition."
+      }
+    ],
+    "when_to_see_doctor": [
+      "Symptoms of hypocalcaemia: tingling around the mouth or in fingers and toes; muscle cramps or spasms; muscle twitching; heart palpitations",
+      "Bone pain — particularly in the back, hips, or legs, especially with activity; bone tenderness on palpation",
+      "Height loss of more than 2cm from previous measured height — possible vertebral fractures",
+      "Fracture from minimal trauma (fall from standing height or less) — fragility fracture assessment required",
+      "Starting long-term corticosteroid therapy (≥7.5mg prednisolone for ≥3 months) — bone protection plan required from Day 1",
+      "Newly diagnosed coeliac disease, Crohn's disease, or other malabsorption condition — calcium/Vitamin D screening mandatory",
+      "Post-thyroidectomy, parathyroidectomy, or neck surgery — calcium monitoring in the immediate post-operative period and beyond",
+      "Postmenopausal women: DEXA scan if any of — age ≥65; age <65 with risk factors (family history, low weight, prior fracture, smoker, early menopause); any fracture from minimal trauma",
+      "Men ≥70 years or men 50-70 with risk factors (long-term corticosteroids, hypogonadism, malabsorption, rheumatoid arthritis) — DEXA assessment",
+      "Dietary advice: follow up with a registered dietitian or nutritionist if calcium intake is chronically inadequate (vegan diet; severe lactose intolerance; eating disorders)",
+      "Serum calcium result outside normal range on routine blood tests — urgent clinical review",
+      "Children with suspected rickets — bow legs, knock knees, delayed growth, poor weight gain"
+    ],
+    "emergency_signs": [
+      "Muscle spasms of the hands — 'obstetrician's hand' posture (wrist flexed, fingers together pointing) — carpopedal spasm from tetany — CALL DOCTOR IMMEDIATELY — IV calcium needed urgently",
+      "Stridor (harsh high-pitched inspiratory breathing noise) after thyroid or parathyroid surgery — LARYNGOSPASM from acute post-surgical hypocalcaemia — CALL EMERGENCY SERVICES IMMEDIATELY (respiratory arrest imminent)",
+      "Seizure in a patient with known or suspected hypocalcaemia or recent thyroid/parathyroid surgery — EMERGENCY — IV calcium gluconate required IMMEDIATELY",
+      "Palpitations, chest pain, or feeling of impending doom in the context of low calcium — possible cardiac arrhythmia (QT prolongation / torsades de pointes) — CALL EMERGENCY SERVICES",
+      "Severe perioral tingling, hand and foot spasms, and difficulty breathing after ANY neck surgery — ACUTE POST-SURGICAL HYPOCALCAEMIA — EMERGENCY",
+      "Hip fracture from minimal trauma — complete inability to bear weight on one leg after a fall from standing height — EMERGENCY hospital admission (hip fracture 20-30% 1-year mortality; surgical repair within 36 hours reduces mortality)",
+      "Sudden onset of severe back pain after minor activity or coughing in an elderly patient with osteoporosis — possible vertebral fracture — urgent spinal imaging and orthopaedic review",
+      "Complete inability to speak or swallow normally (dysphagia) after thyroid surgery — possible haematoma compressing trachea/larynx AND hypocalcaemia — EMERGENCY BOTH SURGICAL AND MEDICAL"
+    ],
+    "frequently_asked_questions": [
+      {
+        "question": "What is calcium deficiency and how does it affect the body?",
+        "answer": "Calcium deficiency means your body has insufficient calcium to meet its needs. Calcium is the most abundant mineral in the body — 99% is stored in bones and teeth as the crystal hydroxyapatite, providing structural strength. The remaining 1% in blood and cells is essential for: nerve signal transmission, muscle contraction and relaxation, heart rhythm, blood clotting, and hundreds of enzyme reactions. Short-term calcium deficiency primarily affects neuromuscular function (tingling, muscle cramps, tetany). Long-term deficiency depletes bone calcium, causing osteoporosis (thin, fragile bones prone to fracturing), osteomalacia (soft bones from defective mineralisation), or rickets in children (bone deformity from insufficient mineralisation during growth)."
+      },
+      {
+        "question": "What are the symptoms that suggest I might have low calcium?",
+        "answer": "Acute hypocalcaemia (suddenly low blood calcium): tingling around the mouth (perioral tingling — earliest sign); tingling in fingers and toes; muscle cramps especially in calves; painful carpopedal spasm ('obstetrician's hand'); positive Chvostek's sign (facial twitch on tapping); in severe cases: tetany (sustained muscle spasms), laryngospasm (throat spasm making breathing difficult), seizures, palpitations (cardiac arrhythmia). Chronic calcium deficiency / osteoporosis: often NO symptoms until a fracture occurs ('silent disease'); back pain and height loss from vertebral fractures; hip pain or inability to walk after a minor fall (hip fracture). In children (rickets): bow legs or knock knees; delayed walking; soft skull bones in infants; rickety rosary (chest swellings); stunted growth."
+      },
+      {
+        "question": "What is osteoporosis and is it different from calcium deficiency?",
+        "answer": "Osteoporosis and calcium deficiency are related but distinct: Calcium deficiency is the inadequate supply of calcium to meet the body's needs — from diet, malabsorption, or excessive loss. Osteoporosis is the long-term consequence of negative calcium balance on the skeleton — bones become less dense and more fragile ('porous bones'). Osteoporosis has multiple causes beyond just dietary calcium: post-menopausal oestrogen loss (the most important); corticosteroid use; ageing; genetics; inactivity; and others. Calcium and Vitamin D supplementation help prevent and slow osteoporosis but may not fully reverse it — pharmacological treatment (bisphosphonates, denosumab, teriparatide) is added for those at high fracture risk."
+      },
+      {
+        "question": "How much calcium do I need daily and how can I get it from food?",
+        "answer": "Daily calcium requirements vary by age and sex: Adults 19-50 years: 1000mg/day; Women >50 and men >70: 1200mg/day; Pregnant/lactating: 1000-1300mg/day; Adolescents 9-18 years: 1300mg/day. Best food sources in India: dairy (1 glass milk = 300mg; 100g paneer = 208mg; 1 cup curd = 150mg); ragi/finger millet (344mg/100g — best Indian grain for calcium); drumstick leaves/moringa (185-440mg/100g); sesame seeds/til (975mg/100g — extraordinary amount); fortified soy or plant milk (120-300mg/glass); tofu calcium-set (350-400mg/100g); chickpeas and rajma (100-130mg/100g cooked). A practical Indian daily target: 2 glasses milk + 1 cup curd + 1 ragi roti + dal with drumstick leaves ≈ 900-1100mg calcium."
+      },
+      {
+        "question": "Should I take calcium supplements? Are they safe?",
+        "answer": "Calcium supplements are recommended when dietary calcium is genuinely inadequate: osteoporosis treatment (typically calcium 1000-1200mg/day + Vitamin D3); hypoparathyroidism; post-bariatric surgery; severe malabsorption; and when diet falls significantly short of requirements. However: dietary calcium is ALWAYS preferred over supplements — recent studies suggest high supplemental calcium (not dietary) may slightly increase cardiovascular risk (the evidence is debated but prudent to prefer food). If supplementing: choose calcium citrate if on PPIs or post-bariatric (acid-independent absorption); take no more than 500mg elemental calcium per dose (absorption is saturable); take with meals (improves tolerance); ALWAYS co-take Vitamin D (without D, calcium supplements are much less effective). Never exceed 2500mg total daily calcium."
+      },
+      {
+        "question": "What is the best calcium supplement: calcium carbonate or calcium citrate?",
+        "answer": "Calcium carbonate (40% elemental calcium; e.g., Shelcal, Oscal): most cost-effective; requires gastric acid for dissolution — take WITH meals for best absorption. Best choice when: normal stomach acid; not on PPIs; cost is a concern; taken with food consistently. Calcium citrate (21% elemental calcium; e.g., Citracal): acid-independent absorption — does NOT require gastric acid; can be taken between meals; better absorbed in: patients on PPIs or H2 blockers; elderly (often have reduced acid); post-gastric bypass surgery; achlorhydria. Best choice when: you take acid-reducing medications (PPIs like omeprazole, pantoprazole); post-bariatric surgery; elderly patients; or you have difficulty taking pills with meals. Calcium citrate is generally preferred for medical reasons even though it costs slightly more."
+      },
+      {
+        "question": "I was diagnosed with osteoporosis. Do I need medication beyond calcium and Vitamin D?",
+        "answer": "Calcium and Vitamin D are the FOUNDATION of all osteoporosis management — essential for everyone. Whether you need additional pharmacological treatment depends on your fracture risk, assessed using DEXA scan T-scores and FRAX risk calculator. Treatment is generally recommended if: T-score ≤ −2.5 at any site (spine or hip); Prior fragility fracture (vertebral, hip, wrist after 45 years); FRAX 10-year major fracture probability >20%; or on long-term corticosteroids. First-line medications: alendronate (Fosamax) 70mg weekly oral; or risedronate 35mg weekly; or zoledronate 5mg IV annually (most convenient — one infusion per year). If very severe osteoporosis with fractures: teriparatide (bone-building injection) may be preferred. Always combine pharmacotherapy with calcium 1000-1200mg/day + Vitamin D3 800-1000 IU/day + weight-bearing exercise."
+      },
+      {
+        "question": "Is ragi (finger millet) really good for calcium? How much should I eat?",
+        "answer": "Yes — ragi (Eleusine coracana / finger millet) is one of the best plant-based calcium sources available in India, containing approximately 344mg calcium per 100g of dry ragi — the highest calcium content of any cereal or millet. To put this in perspective: 100g of dry ragi used to make 2-3 rotis provides comparable calcium to a glass of milk. Additionally, ragi is: high in iron; high in fibre; low glycaemic index (excellent for diabetics); gluten-free; affordable and widely available. For IDA patients and calcium-deficient individuals: 2-3 ragi rotis per day + ragi porridge for breakfast is an excellent food-first approach. In South India, ragi mudde (balls), ragi dosa, and ragi ambali (porridge) are traditional dishes — highly recommended for calcium nutrition across all Indian populations."
+      },
+      {
+        "question": "What is the connection between Vitamin D and calcium? Can I just take Vitamin D without calcium?",
+        "answer": "Vitamin D and calcium are inseparable partners in bone health. Vitamin D is required for intestinal calcium absorption — without adequate Vitamin D, only 5-10% of dietary calcium is absorbed. With adequate Vitamin D (25-OH level >30 ng/mL), calcium absorption rises to 30-40%. Vitamin D DEFICIENCY is one of the most common causes of apparent calcium deficiency — even if dietary calcium is adequate. In India, 40-70% of the population has Vitamin D insufficiency. For bone health: take BOTH together. Vitamin D alone (without correcting dietary calcium inadequacy) is insufficient for preventing osteoporosis. Calcium alone (without correcting Vitamin D deficiency) is also largely ineffective. The gold standard: dietary calcium 1000-1200mg/day + Vitamin D3 1000-2000 IU/day. Get 15-30 minutes of midday sun daily as the most efficient natural source of Vitamin D."
+      },
+      {
+        "question": "My doctor prescribed bisphosphonate for osteoporosis. I keep hearing about 'osteonecrosis of the jaw' — should I be worried?",
+        "answer": "Osteonecrosis of the jaw (ONJ) is a concerning but RARE complication of bisphosphonate and denosumab treatment. The risk profile differs significantly between uses: HIGH RISK (1-10%): intravenous bisphosphonates (zoledronate, pamidronate) used for CANCER treatment (at much higher doses than for osteoporosis); LOW RISK (<0.01-0.1%): oral bisphosphonates (alendronate, risedronate) for osteoporosis — the risk at oral osteoporosis doses is approximately 1 in 10,000-100,000 patient-years — comparable to the risk of a road traffic accident. This is far lower than the fracture risk if osteoporosis goes untreated. To minimise risk: have a dental check-up BEFORE starting bisphosphonate; maintain good dental hygiene throughout treatment; inform your dentist you are on bisphosphonate for any invasive dental procedure; avoid bisphosphonates around the time of jaw surgery. Do not refuse osteoporosis treatment due to this very small risk."
+      },
+      {
+        "question": "I am vegan — how can I get enough calcium without dairy?",
+        "answer": "Vegans can absolutely meet calcium requirements through plant foods, but it requires more planning than dairy-based diets. The best vegan calcium sources: (1) Fortified plant milks (oat, soy, almond — look for 'calcium fortified' label, 120-300mg per glass — equivalent to cow's milk); (2) Calcium-set tofu (350-400mg per 100g — check 'calcium sulfate' in ingredients); (3) Ragi/finger millet (344mg/100g — exceptional); (4) Sesame seeds/tahini (975mg/100g sesame; 70mg per tablespoon tahini); (5) Chia seeds (631mg/100g); (6) Amaranth (159mg/100g grain; 215mg/100g leaves); (7) Drumstick/moringa leaves (185-440mg/100g fresh); (8) Fortified breakfast cereals; (9) White and kidney beans, chickpeas (100-130mg/100g cooked); (10) Almonds (264mg/100g). Also: Vitamin D3 supplement is essential for vegans (D3 is animal-derived; vegan D3 from lichen is available; alternatively use D2 ergocalciferol). Vitamin B12 supplement is essential for all vegans."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1256 @@
+{
+  "disease": {
+    "id": "DIS-019",
+    "name": "Indigestion (Dyspepsia)",
+    "scientific_name": "Dyspepsia / Functional Dyspepsia / Non-Ulcer Dyspepsia / Gastric Dyspepsia",
+    "icd_10_code": "K30 (Functional dyspepsia); K21.0 (Gastro-oesophageal reflux with oesophagitis); K21.9 (Gastro-oesophageal reflux without oesophagitis); K25 (Gastric ulcer); K26 (Duodenal ulcer); K27 (Peptic ulcer, unspecified); K29.3 (Alcoholic gastritis); K29.7 (Gastritis, unspecified); B96.81 (Helicobacter pylori as the cause of disease classified elsewhere); R10.1 (Pain localised to upper abdomen — epigastric)",
+    "category": "Gastroenterology / Upper Gastrointestinal Disease / Functional Gastrointestinal Disorder",
+    "overview": {
+      "description": "Dyspepsia — commonly known as indigestion — is a clinical syndrome defined by chronic or recurrent discomfort or pain centred in the upper abdomen (epigastrium), frequently including a constellation of symptoms such as epigastric pain or burning, postprandial fullness and heaviness, early satiety (feeling full after eating very little), nausea, belching, and bloating. Dyspepsia is one of the most prevalent gastrointestinal complaints globally, affecting 20-30% of the general population, and accounts for approximately 3-5% of all primary care consultations. It is broadly categorised as either organic dyspepsia (caused by identifiable structural or biochemical pathology — such as peptic ulcer disease, Helicobacter pylori gastritis, gastro-oesophageal reflux disease, or gastric cancer) or functional dyspepsia (no organic cause identified despite investigation — approximately 70% of cases). The distinction between these two forms requires clinical assessment, H. pylori testing, and in appropriate cases, upper gastrointestinal endoscopy. Critically, certain symptom patterns called 'alarm features' or 'red flags' — including unexplained weight loss, dysphagia, progressive vomiting, iron-deficiency anaemia, or haematemesis — indicate potentially serious underlying pathology and mandate urgent endoscopic investigation. In India, Helicobacter pylori infection is ubiquitous (prevalence ~70-80%) and is a major driver of dyspepsia, peptic ulcer disease, and gastric cancer; its eradication is a critical public health and clinical priority.",
+      "affected_organ": "Primarily the upper gastrointestinal tract: stomach (gastric body, antrum, pylorus), duodenum, and distal oesophagus; overlapping with gallbladder, pancreas, and small intestine in differential diagnosis",
+      "prevalence": "Dyspepsia affects 20-30% of adults globally; approximately 30% of adults in India experience dyspepsia regularly; accounts for 3-5% of all GP consultations; 70% of dyspepsia presentations are functional (no organic cause found at endoscopy); annual cost of dyspepsia management in high-income countries exceeds £500 million (UK alone). H. pylori, the most important single identifiable cause, infects ~70-80% of the Indian population.",
+      "age_group": "All ages, though most common in adults 25-60 years; new-onset dyspepsia over age 55 is a red flag requiring urgent investigation; H. pylori acquired in childhood in most Indian cases; elderly patients have higher risk of organic causes (cancer, NSAID ulcers)",
+      "is_contagious": false,
+      "is_contagious_note": "Dyspepsia itself is not contagious; however, H. pylori (a major cause) is transmitted person-to-person via fecal-oral route and may spread within households",
+      "is_curable": true,
+      "is_curable_note": "Functional dyspepsia has no single cure but symptoms can be fully controlled with appropriate treatment in the majority of patients. Organic dyspepsia caused by H. pylori is curable with eradication therapy. NSAID-induced dyspepsia resolves on stopping the offending drug.",
+      "is_manageable": true,
+      "chronic": true,
+      "is_chronic_note": "Functional dyspepsia is a chronic condition with waxing-and-waning symptoms over years; organic causes (ulcer, H. pylori) are treatable and potentially curable",
+      "is_preventable": true,
+      "key_fact": "Up to 70% of Indians are infected with H. pylori — a bacterium that is the single most important preventable cause of peptic ulcer disease and gastric cancer globally. A simple urea breath test can detect it and a 10-14 day antibiotic course can eradicate it — potentially preventing a lifetime of dyspepsia and reducing gastric cancer risk."
+    },
+
+    "types": [
+      {
+        "id": "TYPE-01",
+        "name": "Functional Dyspepsia (FD)",
+        "description": "The most common form — affecting approximately 70% of all patients with dyspepsia. Defined by the Rome IV criteria as the presence of bothersome postprandial fullness, early satiation, epigastric pain, or epigastric burning for at least 3 days per week, over the past 3 months, with symptom onset at least 6 months before diagnosis, in the absence of any organic, systemic, or metabolic disease that would likely explain the symptoms (i.e., upper GI endoscopy is NORMAL or shows only H. pylori gastritis). Functional dyspepsia is a genuine disorder of gut-brain interaction (DGBI) — not a diagnosis of exclusion or 'all in the head'; it involves real abnormalities in gastric motility, visceral sensation, mucosal immune function, and microbiota-gut-brain axis signalling.",
+        "rome_iv_criteria": {
+          "symptoms": "One or more of: postprandial fullness; early satiation; epigastric pain; epigastric burning",
+          "duration": "Symptoms present for ≥3 months with onset ≥6 months before diagnosis",
+          "exclusion": "No organic, systemic, or metabolic disease likely to explain symptoms on routine investigation"
+        },
+        "subtypes": [
+          {
+            "subtype": "Postprandial Distress Syndrome (PDS)",
+            "description": "Meal-induced dyspeptic symptoms — the most common FD subtype. Characterised by: bothersome postprandial fullness after ordinary-sized meals; and/or early satiation that prevents finishing a regular meal. Supportive features: upper abdominal bloating; postprandial nausea; excessive belching. Pathophysiology: impaired gastric accommodation (the normal fundal relaxation to receive a meal does not occur — reduced fundic compliance); delayed gastric emptying in some patients; abnormal duodenal lipid and acid sensitivity.",
+            "symptoms": "Fullness and heaviness after eating; feeling stuffed; early satiation; meal-induced nausea; postprandial bloating",
+            "triggers": "Large fatty meals; rich food; lying down after eating; eating too quickly"
+          },
+          {
+            "subtype": "Epigastric Pain Syndrome (EPS)",
+            "description": "Intermittent epigastric pain or burning NOT exclusively associated with meals — may be relieved OR worsened by eating; not relieved by defaecation or passage of flatus (distinguishing from IBS). Characterised by: epigastric pain (at least moderate severity, at least once per week); and/or epigastric burning. Pathophysiology: central and peripheral sensitisation of gastric afferent nociceptors — visceral hypersensitivity (the stomach is more sensitive to normal volumes, distension, and acid); altered brain-gut signalling.",
+            "symptoms": "Burning epigastric pain or discomfort; intermittent; not necessarily meal-related; may occur fasting",
+            "note": "PDS and EPS frequently overlap — up to 50% of FD patients have features of both"
+          }
+        ],
+        "pathophysiology_mechanisms": [
+          "Impaired gastric accommodation — reduced fundal relaxation to receive meals; 30-40% of FD patients; contributes to early satiety, postprandial fullness, nausea",
+          "Delayed gastric emptying — 25-35% of FD patients have objective delay on scintigraphy; correlates with postprandial fullness and nausea; more common in female FD patients",
+          "Duodenal hypersensitivity to acid and lipids — abnormal afferent signalling from duodenal acid-sensitive receptors; triggers nausea, pain, delayed gastric emptying",
+          "Visceral hypersensitivity (central sensitisation) — lower pain threshold to gastric balloon distension; magnified perception of normal physiological events; important in EPS",
+          "Duodenal mucosal immune activation — mild eosinophilia and mast cell infiltration in duodenal mucosa of FD patients; low-grade inflammation disrupting mucosal barrier and afferent nerve function",
+          "H. pylori-related FD — H. pylori gastritis fulfils Rome IV FD criteria; H. pylori eradication alleviates symptoms in ~10-15% beyond placebo, making it a minor organic component",
+          "Gut microbiome dysbiosis — altered duodenal and gastric microbiome composition; reduced Lactobacillus; increased gram-negative bacteria; contributes to mucosal inflammation and motility abnormalities",
+          "Gut-brain axis dysregulation — psychological factors (anxiety, depression, early life adversity) alter autonomic nervous system tone and corticotropin-releasing factor (CRF) signalling — directly affects gastric motility and sensory thresholds",
+          "Post-infectious FD — 10-15% of FD cases develop after an acute gastroenteritis (post-infectious FD); Giardia, Salmonella, norovirus can trigger persistent FD symptoms through mucosal immune activation"
+        ],
+        "prognosis": "Chronic and relapsing-remitting; most patients have persistent symptoms for years but with fluctuating severity; approximately 50% have symptom improvement at 12 months with appropriate management; does not progress to cancer or serious disease; quality of life can be significantly impaired"
+      },
+      {
+        "id": "TYPE-02",
+        "name": "H. pylori-Associated Dyspepsia and Gastritis",
+        "description": "Helicobacter pylori is a Gram-negative, microaerophilic, spiral-shaped bacterium that colonises the gastric mucosa — the most prevalent chronic bacterial infection globally and classified as a WHO Group 1 carcinogen (definite human carcinogen). H. pylori infects approximately 70-80% of India's population — acquired almost universally in childhood through fecal-oral transmission in conditions of overcrowding and poor sanitation. H. pylori causes chronic active gastritis in ALL infected individuals (though most are asymptomatic); it is the primary cause of peptic ulcer disease, gastric cancer (adenocarcinoma), and gastric MALT lymphoma. When dyspeptic symptoms are present in H. pylori-infected individuals, a 'test-and-treat' strategy is the first-line approach recommended by all major international and Indian guidelines.",
+        "epidemiology": "H. pylori infects 70-80% of Indians; most commonly acquired in childhood (contaminated water, food, person-to-person); higher prevalence in: lower socioeconomic groups, rural areas, overcrowded households; India has one of the highest H. pylori prevalence rates globally; paradoxically, India also has a relatively low gastric cancer rate compared to East Asian countries (the 'Indian enigma' — possibly related to dietary factors and different H. pylori virulence strains)",
+        "virulence_factors": "CagA (cytotoxin-associated gene A) — most important virulence determinant; CagA-positive strains more strongly associated with peptic ulcer and gastric cancer; VacA (vacuolating cytotoxin A) — disrupts gastric epithelium; OipA, BabA, SabA — outer membrane proteins mediating mucosal adhesion",
+        "h_pylori_disease_spectrum": [
+          "Chronic active gastritis — universal; most asymptomatic",
+          "Peptic ulcer disease — duodenal ulcer (15-20% of infected); gastric ulcer (5-10% of infected); H. pylori causes 90% of duodenal ulcers and 75% of gastric ulcers",
+          "Functional dyspepsia — H. pylori gastritis without ulcer, causing dyspeptic symptoms",
+          "Gastric adenocarcinoma (gastric cancer) — 1-3% lifetime risk in infected; H. pylori causes ~89% of non-cardia gastric cancers",
+          "Gastric MALT lymphoma (Mucosa-Associated Lymphoid Tissue) — rare; H. pylori eradication achieves complete remission in ~80% of early localised gastric MALT lymphoma",
+          "Extragastric manifestations: iron deficiency anaemia (H. pylori reduces non-haem iron absorption); idiopathic thrombocytopaenic purpura (ITP — H. pylori eradication may increase platelet count); Vitamin B12 deficiency (from gastric atrophy)"
+        ],
+        "transmission": "Fecal-oral (primary — contaminated water, unwashed food); oral-oral (saliva sharing — common in India — sharing food, drinking water vessels); iatrogenic (contaminated endoscopes historically)"
+      },
+      {
+        "id": "TYPE-03",
+        "name": "Peptic Ulcer Disease (PUD) — Gastric and Duodenal Ulcers",
+        "description": "Peptic ulcers are breaks in the gastroduodenal mucosa extending through the muscularis mucosae — caused by an imbalance between aggressive factors (gastric acid, pepsin, H. pylori, NSAIDs) and defensive factors (mucus layer, bicarbonate secretion, prostaglandins, mucosal blood flow, mucosal cell renewal). Duodenal ulcers (DU) are far more common than gastric ulcers (GU) in India; DU typically occurs in the 30-50 year age group; both H. pylori (primary cause) and NSAIDs (second most common cause) are major aetiological factors.",
+        "types_of_peptic_ulcer": [
+          {
+            "type": "Duodenal Ulcer (DU)",
+            "features": "Located in the first part of the duodenum (duodenal cap/bulb); pain classically: epigastric, burning, worse at night (wakes patient from sleep), relieved by food or antacids ('hunger pain'); H. pylori positive in ~90%; hypersecretion of gastric acid; rarely malignant (unlike gastric ulcer); occurs in younger adults",
+            "complications": "Haemorrhage (20% of DU — haematemesis or melaena); perforation (5% — sudden severe 'board-like' abdominal pain); gastric outlet obstruction (pyloric stenosis from periulcer oedema or fibrosis)"
+          },
+          {
+            "type": "Gastric Ulcer (GU)",
+            "features": "Located in the gastric body or antrum; pain: epigastric, burning, often worsened by food (unlike DU — food-provoked pain); H. pylori positive in ~75%; NSAIDs are important cause; ALWAYS biopsy gastric ulcers at endoscopy to exclude malignancy (even apparently benign-appearing); repeat endoscopy after 6-8 weeks to confirm healing",
+            "complications": "Haemorrhage; perforation; malignant transformation (rare — <1% of gastric ulcers are initially malignant but biopsy all)"
+          }
+        ],
+        "nsaid_induced_ulcer": "NSAIDs (ibuprofen, diclofenac, aspirin, naproxen, indomethacin) inhibit COX-1 enzyme — depleting gastroprotective prostaglandins (PGE2, PGI2) that normally maintain gastric mucus secretion, bicarbonate production, and mucosal blood flow. NSAID-induced mucosal injury ranges from superficial erosions to full-thickness peptic ulcers. Risk: 15-25% of chronic NSAID users develop peptic ulcers; most are gastric (vs H. pylori which more commonly causes duodenal). Risk factors: age >65, prior ulcer history, high NSAID dose, concomitant corticosteroids or anticoagulants. Prevention: add PPI (omeprazole 20 mg) to any patient on NSAIDs at high ulcer risk."
+      },
+      {
+        "id": "TYPE-04",
+        "name": "Gastro-Oesophageal Reflux Disease (GERD) — Overlapping with Dyspepsia",
+        "description": "GERD is caused by abnormal retrograde flow of gastric contents (acid, pepsin, bile) into the oesophagus from failure of the lower oesophageal sphincter (LOS) — causing heartburn (pyrosis — burning behind the sternum radiating upward), acid regurgitation (sour taste in mouth, especially on bending or lying), and sometimes water brash (excessive salivation). GERD frequently overlaps with dyspepsia — up to 40% of dyspepsia patients have significant GERD components. Distinguished from pure dyspepsia by the predominance of heartburn and regurgitation (postprandial, lying supine, bending forward) vs epigastric pain and fullness. Chronic untreated GERD leads to oesophagitis, Barrett's oesophagus (precancerous change), oesophageal stricture, and oesophageal adenocarcinoma.",
+        "prevalence": "Affects 20-30% of Western populations; 7-14% of Indian adults; rising prevalence with westernisation of diet and increasing obesity in India",
+        "risk_factors": "Obesity (most important modifiable risk — abdominal fat increases intra-abdominal pressure); pregnancy; hiatus hernia (stomach herniating through oesophageal hiatus); smoking; alcohol; large fatty meals; lying down after eating; coffee and tea; chocolate; mint; tight clothing; certain medications (nitrates, calcium channel blockers, theophylline — relax LOS)",
+        "alarm_sign_gerd": "Dysphagia (difficulty swallowing) in a GERD patient = urgent endoscopy to exclude oesophageal stricture, rings, or cancer; unexplained weight loss with GERD = urgent investigation"
+      },
+      {
+        "id": "TYPE-05",
+        "name": "Drug-Induced Dyspepsia",
+        "description": "A very common but frequently overlooked cause of dyspepsia — accounting for up to 25% of chronic dyspepsia in elderly patients on multiple medications. Upper GI irritation from medications is particularly important in India where NSAIDs (diclofenac, ibuprofen, aspirin) and traditional herbal preparations are widely used without adequate gastric protection.",
+        "major_causative_drugs": [
+          {
+            "drug": "NSAIDs and aspirin",
+            "mechanism": "COX-1 inhibition depletes prostaglandins — impairs mucosal defence; direct topical irritation",
+            "prevalence": "Most common drug cause; 30-40% of NSAID users have dyspepsia",
+            "management": "Lowest effective NSAID dose; switch to COX-2 selective NSAID (celecoxib) if available; add PPI co-prescription"
+          },
+          {
+            "drug": "Oral corticosteroids (prednisolone, dexamethasone)",
+            "mechanism": "Inhibit prostaglandin synthesis; increase acid secretion; synergistic ulcerogenic effect with NSAIDs",
+            "management": "PPI gastroprotection for anyone on corticosteroids >4 weeks; never give oral steroids + NSAIDs without PPI cover"
+          },
+          {
+            "drug": "Bisphosphonates (alendronate, risedronate)",
+            "mechanism": "Direct oesophageal and gastric mucosal irritation from tablet formulation",
+            "management": "Take with full glass of water; remain upright for 30-60 minutes after dosing; PPI if persistent symptoms; consider weekly or monthly dosing (vs daily)"
+          },
+          {
+            "drug": "Iron supplements (ferrous sulphate)",
+            "mechanism": "Direct gastric mucosal irritation from ferrous iron; nausea, epigastric pain, constipation",
+            "management": "Take with food (reduces absorption slightly but improves tolerance); switch to ferric iron (less GI irritation); reduce dose and titrate up; take every other day"
+          },
+          {
+            "drug": "Antibiotics (metronidazole, erythromycin, tetracycline)",
+            "mechanism": "Direct gastric irritation; alteration of gastric motility (erythromycin — motilin receptor agonist causes nausea and cramping)",
+            "management": "Take with food; switch to alternative antibiotic if possible"
+          },
+          {
+            "drug": "Metformin",
+            "mechanism": "GI intolerance in 30% of patients initiating metformin — nausea, vomiting, diarrhoea, metallic taste",
+            "management": "Take with food; start at low dose (500 mg once daily) and titrate slowly; switch to extended-release (XR) formulation — significantly reduces GI side effects"
+          },
+          {
+            "drug": "Potassium chloride supplements",
+            "mechanism": "Highly irritating to gastric and oesophageal mucosa",
+            "management": "Modified-release or effervescent formulation; always take with plenty of water"
+          },
+          {
+            "drug": "Digoxin",
+            "mechanism": "Narrow therapeutic index drug; GI toxicity (nausea, vomiting, anorexia) is an early sign of toxicity",
+            "management": "Check digoxin levels; ensure not toxic range"
+          },
+          {
+            "drug": "Theophylline",
+            "mechanism": "Phosphodiesterase inhibitor causing nausea, vomiting, and GI upset; also relaxes lower oesophageal sphincter worsening GERD",
+            "management": "Check serum levels; dose reduction; use as last-resort bronchodilator"
+          }
+        ]
+      },
+      {
+        "id": "TYPE-06",
+        "name": "Gastroparesis",
+        "description": "Delayed gastric emptying in the absence of mechanical obstruction — a specific cause of dyspepsia that is increasingly recognised, particularly in diabetics. The stomach fails to empty its contents normally despite the pylorus being patent, causing chronic symptoms of fullness, nausea, vomiting of undigested food hours after eating, and weight loss. Gastroparesis is a chronic, debilitating condition requiring specialist gastroenterology management.",
+        "causes": [
+          "Diabetic gastroparesis — most common secondary cause; autonomic neuropathy from longstanding poorly controlled diabetes damages the vagal nerve and enteric nervous system (Cajal interstitial cells) controlling gastric peristalsis; affects 30-50% of patients with longstanding type 1 and type 2 diabetes",
+          "Post-surgical gastroparesis — after vagotomy (no longer common), gastric bypass, Nissen fundoplication (surgery for GERD)",
+          "Idiopathic — most common overall; often post-viral (post-infectious gastroparesis after viral gastroenteritis); predominantly young women",
+          "Parkinson's disease — alpha-synuclein deposition in enteric nervous system",
+          "Scleroderma and autoimmune connective tissue diseases",
+          "Hypothyroidism — reduced gut motility",
+          "Medications — opioids (most important drug cause; severe constipation + gastroparesis); anticholinergics; GLP-1 agonists (semaglutide, exenatide — increasingly important)"
+        ],
+        "diagnosis": "Gastric emptying scintigraphy (nuclear medicine — 4-hour solid meal study) — gold standard; wireless motility capsule; gastric emptying breath test (non-radioactive C-13 octanoic acid)",
+        "management": "Glycaemic control (optimal blood glucose essential — acute hyperglycaemia further slows gastric emptying); dietary modification (small, frequent, low-fat, soft meals); prokinetics (metoclopramide, domperidone, erythromycin, prucalopride); antiemetics; surgical (gastric electrical stimulation for refractory cases)"
+      },
+      {
+        "id": "TYPE-07",
+        "name": "Dyspepsia from Biliary and Pancreatic Disease",
+        "description": "Upper abdominal discomfort from gallbladder disease (cholelithiasis — gallstones, cholecystitis) and pancreatic disease (chronic pancreatitis, pancreatic cancer) can mimic dyspepsia. These must be excluded in patients with dyspepsia, especially those with features of biliary pain (right upper quadrant, radiating to right shoulder, associated with fatty food intake, intermittent and severe — biliary colic) or those not responding to standard dyspepsia treatment.",
+        "biliary_dyspepsia": "Gallstone-related symptoms: right upper quadrant or epigastric pain post-fatty meals; nausea; diagnosis: abdominal ultrasound (investigation of choice); treatment: cholecystectomy for symptomatic gallstones",
+        "chronic_pancreatitis": "Central or left-sided epigastric pain radiating to back; worse after eating; alcohol history; malabsorption (steatorrhoea); diagnosis: CT abdomen, faecal elastase; treatment: enzyme replacement, pain management, alcohol cessation"
+      }
+    ],
+
+    "severity_levels": [
+      {
+        "level": 1,
+        "name": "Mild Dyspepsia",
+        "description": "Occasional or intermittent upper GI symptoms that are manageable with lifestyle modification and over-the-counter medications. Does not significantly impair daily activities or quality of life.",
+        "criteria": "Symptoms occur less than 3 times per week; symptoms triggered by identifiable dietary or lifestyle factors; no alarm features; no significant weight loss; able to eat normal diet with modification; NRS pain score 1-3/10; no nocturnal symptoms",
+        "functional_impact": "Mild inconvenience; does not limit activities; able to work and socialise normally",
+        "management": "Lifestyle modification (smaller meals, avoid triggers, reduce alcohol and caffeine); antacids (Gelusil, Digene, Tums, ENO) as needed; avoid NSAIDs; review and remove precipitating medications; OTC H2 blocker (famotidine) as needed; trial of dietary changes for 2-4 weeks before seeking medical review",
+        "criteria_for_upgrade": "Symptoms worsening or occurring daily; weight loss; no improvement after 4 weeks of lifestyle changes; any alarm features appearing"
+      },
+      {
+        "level": 2,
+        "name": "Moderate Dyspepsia",
+        "description": "Frequent and bothersome upper GI symptoms occurring most days, significantly affecting quality of life, eating habits, and social functioning, but without alarm features.",
+        "criteria": "Symptoms 3 or more days per week; affects food choices and meal enjoyment; interferes with work or social activities; nocturnal symptoms possible; NRS pain score 4-6/10; no weight loss exceeding 3 kg; no alarm features",
+        "functional_impact": "Noticeably impairs quality of life; modifies eating habits and social dining; may affect work performance; anxiety about symptoms",
+        "management": "GP review; H. pylori testing (urea breath test or stool antigen test) — test and treat strategy; empirical PPI trial (omeprazole 20 mg once daily for 4-8 weeks) if H. pylori negative; dietary review with dietitian; stress management; prokinetic if postprandial symptoms dominant",
+        "criteria_for_upgrade": "Any alarm features; failure to respond to H. pylori eradication + PPI therapy; unexplained weight loss; new dysphagia"
+      },
+      {
+        "level": 3,
+        "name": "Severe or Refractory Dyspepsia",
+        "description": "Daily and severe upper GI symptoms significantly impairing quality of life and function, not responding to first-line therapy, or associated with psychological comorbidities.",
+        "criteria": "Daily symptoms; significantly impairs daily function; NRS pain score 7-9/10; not responding to 8+ weeks of PPI or H. pylori eradication; associated anxiety or depression; weight loss from poor appetite; requires frequent GP or emergency consultations",
+        "functional_impact": "Significantly reduces quality of life; may cause social withdrawal; high psychological burden; nutritional compromise possible",
+        "management": "Upper GI endoscopy (if not already performed); specialist gastroenterology review; psychological assessment and management (CBT, hypnotherapy); low-dose tricyclic antidepressant or mirtazapine; prokinetics; buspirone for impaired accommodation; gastric emptying study if gastroparesis suspected",
+        "criteria_for_upgrade": "Any alarm feature development; significant weight loss; severe vomiting causing dehydration"
+      },
+      {
+        "level": 4,
+        "name": "Alarm Features — Urgent Investigation Required",
+        "description": "Dyspepsia presenting with or developing alarm ('red flag') features that indicate potentially serious underlying pathology — particularly gastric or oesophageal cancer — requiring urgent upper GI endoscopy within 2 weeks.",
+        "alarm_features": [
+          "Unintentional weight loss (>3 kg or >5% body weight over preceding 6 months)",
+          "Progressive dysphagia (worsening difficulty swallowing) — suggests oesophageal cancer, stricture, or achalasia",
+          "Odynophagia (pain on swallowing)",
+          "Persistent vomiting — especially large-volume vomiting; vomiting of undigested food hours after eating",
+          "Iron-deficiency anaemia without other explanation — possible occult GI blood loss from cancer or ulcer",
+          "Haematemesis (vomiting blood — fresh red or coffee-ground) — EMERGENCY — see Red Zone",
+          "Melaena (black tarry stools — digested blood) — EMERGENCY",
+          "Palpable epigastric mass on examination",
+          "Epigastric mass detected on imaging",
+          "Age >55 years with new onset or recently changed dyspeptic symptoms",
+          "Family history of gastric or oesophageal cancer in first-degree relative",
+          "Previous gastric surgery or gastric ulcer with new/changed symptoms",
+          "Persistent symptoms despite adequate treatment trial (8+ weeks of PPI)"
+        ],
+        "action": "Urgent 2-week-wait upper GI endoscopy (OGD/EGD); blood tests (FBC for anaemia, LFTs, albumin, B12, ferritin); CT staging if mass found; urgent gastroenterology referral",
+        "note": "Absence of alarm features does NOT exclude cancer — alarm features have low sensitivity (30-50%) for detecting cancer; age >55 years with new dyspepsia is an independent indication for endoscopy"
+      }
+    ],
+
+    "causes": {
+      "causative_agents_overview": {
+        "h_pylori": "Most important identifiable and treatable cause; infects 70-80% of Indians; causes chronic gastritis, peptic ulcer, and gastric cancer; test-and-treat strategy is first-line management",
+        "nsaids_aspirin": "Second most common cause; direct mucosal injury and prostaglandin depletion; reversible with drug withdrawal; very widely used in India without adequate gastric protection",
+        "functional": "70% of dyspepsia after investigation; related to disordered gut-brain interaction, impaired gastric accommodation, visceral hypersensitivity, and gut microbiome dysbiosis",
+        "gerd": "Acid reflux causing oesophageal and gastric mucosal irritation; frequently overlaps with dyspepsia",
+        "medications": "NSAIDs, aspirin, oral steroids, bisphosphonates, iron, metformin, antibiotics, opioids",
+        "lifestyle": "Alcohol, smoking, obesity, stress, dietary excesses (spicy, fatty, acidic foods)"
+      },
+      "risk_factors": [
+        "H. pylori infection — dominant risk factor in India; 70-80% population prevalence; acquired in childhood; associated with poverty, crowding, poor sanitation",
+        "NSAID and aspirin use — including OTC pain relievers; very common self-medication in India; lack of gastroprotection",
+        "Alcohol consumption — direct gastric mucosal irritant; increases gastric acid secretion; worsens GERD",
+        "Tobacco smoking — increases gastric acid output; impairs mucosal healing; H. pylori eradication less successful in smokers; slows gastric emptying",
+        "Obesity — increases intra-abdominal pressure causing GERD and dyspepsia; associated with delayed gastric emptying",
+        "Irregular eating habits — skipping meals; eating very late at night; eating too rapidly; irregular meal timing",
+        "Dietary patterns — excessive spicy food; very fatty or fried food; excessive tea and coffee; carbonated beverages; irregular large meals",
+        "Psychological stress, anxiety, and depression — bidirectional gut-brain axis; stress directly affects gastric motility, acid secretion, and visceral sensation",
+        "Age over 55 years — higher risk of organic pathology (cancer, atrophic gastritis); NSAID use more common",
+        "Family history of gastric cancer or peptic ulcer disease — H. pylori familial clustering; genetic predisposition",
+        "Diabetes mellitus — gastroparesis; autonomic neuropathy affecting gastric motility",
+        "Previous gastric surgery — dumping syndrome; bile reflux gastritis; afferent loop syndrome",
+        "Medications — see TYPE-05 above for full list",
+        "Low socioeconomic status — H. pylori acquisition; dietary irregularity; delayed care-seeking",
+        "Spicy and acidic food overconsumption — particularly in South Indian and street food contexts; capsaicin activates TRPV1 receptors in gastric mucosa directly causing pain and dyspepsia",
+        "Late night eating — high acid output at night with food in stomach increases mucosal exposure; gravity-dependent GERD in sleep",
+        "Low physical activity — reduced GI motility; obesity; constipation contributing to dyspeptic symptoms"
+      ]
+    },
+
+    "symptoms": {
+      "overview": "Dyspepsia encompasses a spectrum of upper GI symptoms that patients may describe variously as 'gas', 'acidity', 'gastric problem', 'indigestion', 'heaviness after eating', 'burning in stomach', or 'stomach pain'. The key upper abdominal location (epigastrium — below the sternum, above the umbilicus), association with eating, and the specific symptom character are the clinically important features. Patients presenting with these symptoms in India most commonly use the terms 'gas problem', 'acidity', or 'stomach upset'. Understanding the precise symptom pattern — whether meal-related, nocturnal, burning vs cramping, relieved or worsened by eating — guides diagnosis and treatment selection.",
+      "primary_symptoms": [
+        {
+          "id": "SYM-1101",
+          "name": "Epigastric Pain or Burning (Heartburn-like)",
+          "description": "Pain or burning discomfort localised to the epigastrium (upper middle abdomen, below the sternum/breastbone) — the cardinal symptom of dyspepsia. Must be distinguished from heartburn (retrosternal burning — behind the sternum) which is more typical of GERD. Epigastric burning in dyspepsia is typically intermittent; may be worsened by food (gastric ulcer) or relieved by food (duodenal ulcer); may be worsened by lying flat (raising suspicion for GERD overlap). Night waking from epigastric pain is characteristic of duodenal ulcer (acid hypersecretion at night unopposed by food buffer).",
+          "severity": "Mild to Severe",
+          "onset": "Functional: gradual, recurrent; Peptic ulcer: may be acute; NSAID-induced: onset after starting NSAID",
+          "clinical_importance": "Pain that is severe, constant, and radiates to the back suggests pancreatitis; pain with rigidity and rebound tenderness suggests perforation — EMERGENCY"
+        },
+        {
+          "id": "SYM-1102",
+          "name": "Postprandial Fullness and Heaviness",
+          "description": "An unpleasant sensation of fullness after eating a normal or even small meal — the stomach feels 'full', 'heavy', 'bloated', or 'distended' long after eating. Caused by impaired gastric accommodation (the normal relaxation of the gastric fundus to receive food does not occur normally) and delayed gastric emptying. Very distressing symptom — prevents patients from enjoying normal meals, affects social eating, and can cause significant weight loss when severe.",
+          "severity": "Mild to Severe",
+          "onset": "Typically begins 15-30 minutes after starting to eat",
+          "associated": "Often accompanied by nausea, belching, and upper abdominal distension"
+        },
+        {
+          "id": "SYM-1103",
+          "name": "Early Satiation (Early Satiety)",
+          "description": "An abnormally rapid sensation of fullness shortly after starting a meal — the patient cannot eat a normal-sized portion before feeling uncomfortably full. Distinct from postprandial fullness (which comes later); early satiety prevents completing a meal. Results from impaired fundic accommodation and rapid post-meal pressure rise in the gastric fundus. When severe, leads to reduced caloric intake and weight loss. Also a feature of gastroparesis and gastric outlet obstruction.",
+          "severity": "Mild to Severe",
+          "onset": "After first few mouthfuls of food",
+          "note": "Persistent early satiety with weight loss is an alarm feature requiring endoscopic investigation"
+        },
+        {
+          "id": "SYM-1104",
+          "name": "Nausea",
+          "description": "The sensation of queasiness and the urge to vomit — very common in functional dyspepsia, particularly postprandial distress syndrome. Nausea in dyspepsia is typically triggered or worsened by eating, food smells, or fatty meals. It may prevent eating and contribute to weight loss. Persistent vomiting (vs occasional nausea) is an alarm feature. In gastroparesis: nausea is the dominant symptom; vomiting of undigested food hours after eating is characteristic.",
+          "severity": "Mild to Moderate",
+          "note": "Vomiting of large volumes of food hours or days after eating = gastroparesis or gastric outlet obstruction — requires investigation"
+        },
+        {
+          "id": "SYM-1105",
+          "name": "Bloating and Abdominal Distension",
+          "description": "A sense of excess gas or pressure in the upper abdomen — described as 'gaseous', 'tight', 'distended', or 'full of air'. In Indian culture, 'gas problem' (vaayu) is the most common lay description of dyspepsia. Bloating in dyspepsia is from: aerophagia (excess air swallowing); impaired gas transit through the gut; abnormal visceral sensation (even normal gas volumes feel excessive); bacterial fermentation of undigested carbohydrates. Upper abdominal bloating is more typical of dyspepsia; lower abdominal bloating with change in bowel habit suggests IBS (irritable bowel syndrome).",
+          "severity": "Mild to Moderate",
+          "note": "Bloating and flatulence are the most common GI symptoms in India and frequently self-treated with Eno, Gelusil, ajwain water, or jeera water before seeking medical consultation"
+        },
+        {
+          "id": "SYM-1106",
+          "name": "Belching (Eructation) and Excessive Gas",
+          "description": "Frequent and bothersome passage of gas from the stomach through the mouth — either from aerophagia (swallowing excess air — most common cause) or from postprandial gastric gas production. Supragastric belching (a learned behaviour in which air is injected into the oesophagus and immediately expelled) is a recognised specific belching disorder in Rome IV — characterised by repetitive belching episodes, particularly during stress; not truly from the stomach; requires behavioural therapy (speech therapy/biofeedback) rather than medications.",
+          "severity": "Mild to Moderate",
+          "note": "Excessive belching is the second most common GI complaint in India after 'gas and acidity'"
+        },
+        {
+          "id": "SYM-1107",
+          "name": "Heartburn and Acid Regurgitation (GERD-Overlap Symptoms)",
+          "description": "Heartburn (pyrosis) — burning discomfort rising from the stomach or lower chest toward the throat — is the dominant symptom of GERD but frequently overlaps with dyspepsia. Acid regurgitation — the effortless flow of acidic or bitter fluid into the mouth or throat — also suggests GERD. Water brash (sudden mouth filling with saliva — a reflex response to oesophageal acid exposure) is a specific GERD symptom. When heartburn and regurgitation predominate, the diagnosis is GERD rather than pure dyspepsia — PPIs are the treatment of choice.",
+          "severity": "Mild to Severe",
+          "note": "Heartburn that is particularly severe on lying flat, bending forward, or after large fatty meals is typical of GERD"
+        }
+      ],
+      "secondary_symptoms": [
+        "Excessive flatulence (wind) — from fermentation of undigested carbohydrates; common complaint in Indian patients",
+        "Appetite loss and food aversion — from early satiety, nausea, and anticipatory anxiety about postprandial symptoms",
+        "Metallic or sour taste in mouth — acid reflux reaching the oropharynx",
+        "Bad breath (halitosis) — from H. pylori infection; GERD; food stagnation in gastroparesis",
+        "Upper abdominal gurgling (borborygmi) — intestinal gas movement; overlaps with IBS",
+        "Constipation or altered bowel habit — functional dyspepsia overlaps with IBS in 40% of patients",
+        "Fatigue — from chronic pain, poor sleep, anxiety, nutritional inadequacy",
+        "Insomnia — from nocturnal acid reflux, pain, or anxiety about symptoms",
+        "Anxiety and depression — highly prevalent in FD; bidirectional gut-brain relationship",
+        "Weight loss — from reduced food intake from early satiety, nausea, or food aversion (alarm feature if >3 kg unintentional)"
+      ],
+      "red_flags_alarm_features_must_investigate_urgently": [
+        "Unintentional weight loss >3 kg — possible gastric cancer or severe gastroparesis",
+        "Progressive difficulty swallowing (dysphagia) — oesophageal cancer, stricture, or achalasia — URGENT endoscopy",
+        "Vomiting blood (haematemesis) — bright red or coffee-ground — EMERGENCY",
+        "Black tarry stools (melaena) — GI bleeding from ulcer or cancer — EMERGENCY",
+        "Iron-deficiency anaemia without other explanation — possible occult GI blood loss",
+        "Persistent vomiting preventing adequate nutrition — possible gastric outlet obstruction or gastroparesis",
+        "Epigastric mass palpable on examination",
+        "New onset dyspepsia in patient over 55 years — higher cancer risk",
+        "Family history of gastric or oesophageal cancer in first-degree relative",
+        "Sudden severe 'worst ever' epigastric pain with abdominal rigidity — possible peptic ulcer perforation — SURGICAL EMERGENCY"
+      ],
+      "differentiating_symptoms": {
+        "duodenal_ulcer": "Pain worse at night; hunger pain relieved by food or antacids; epigastric; H. pylori very likely",
+        "gastric_ulcer": "Pain worsened by food (food-provoked); weight loss possible; always biopsy to exclude cancer",
+        "gerd": "Retrosternal burning; worse lying flat; acid regurgitation; relieved by PPIs",
+        "gastroparesis": "Vomiting hours after eating; undigested food; weight loss; diabetes history",
+        "biliary_colic": "Severe right upper quadrant pain post-fat meal; radiates to shoulder; spasmodic; not continuous",
+        "pancreatitis": "Severe constant epigastric pain radiating to back; worse eating; elevated lipase/amylase; alcohol history",
+        "functional_dyspepsia": "Meal-related fullness or intermittent epigastric pain; normal endoscopy; often associated with anxiety/stress"
+      }
+    },
+
+    "diagnosis": {
+      "medical_history": [
+        "Precise symptom characterisation — epigastric pain vs fullness vs nausea vs heartburn vs regurgitation; which symptom predominates (guides subtype: EPS vs PDS vs GERD-overlap)",
+        "Onset and duration — acute (days: possible ulcer, gastritis) vs chronic (months-years: functional dyspepsia); first episode vs recurrent",
+        "Relationship to food — meal-triggered (PDS, gastroparesis, biliary); empty stomach pain relieved by food (DU); meal-worsened pain (GU); post-fatty meal pain (biliary colic)",
+        "Timing — nocturnal symptoms (DU — wakes at night; GERD — lying flat); morning symptoms (coffee/tea-triggered); post-meal timing (within 30 min: PDS; 1-3 hours: possible DU)",
+        "Duration and frequency — daily vs episodic; how many days per week",
+        "Aggravating and relieving factors — food (type and timing); antacids (relief = acid-related); lying flat (worsens GERD, may relieve DU); physical activity; stress",
+        "Alarm features review — weight loss amount and duration; dysphagia; haematemesis or dark stools; anaemia symptoms (breathlessness, fatigue, pallor)",
+        "NSAID and aspirin use — type, dose, frequency, duration; over-the-counter use (often not volunteered); corticosteroid use; other listed drugs",
+        "H. pylori history — previous testing; previous eradication treatment; family members with peptic ulcer disease or gastric cancer",
+        "Alcohol consumption — type, amount, frequency; acute (gastritis) vs chronic (gastric atrophy)",
+        "Tobacco use — smoking or chewing tobacco; both worsen dyspepsia and impair H. pylori eradication",
+        "Dietary habits — meal timing and size; spicy, fatty, or acidic food intake; tea and coffee; carbonated drinks; late night eating",
+        "Occupation and stress levels — work-related stress; shift work (irregular meals); anxiety and depression assessment",
+        "Previous investigations — previous OGD (endoscopy), H. pylori test, ultrasound, CT; what were the findings?",
+        "Previous treatments — what has been tried? What worked? What didn't? PPIs, antacids, prokinetics; at what dose and duration?",
+        "Family history — gastric cancer (first-degree relative = risk factor); peptic ulcer disease; H. pylori eradication in family",
+        "Travel history — GERD and dyspepsia prevalence higher in urbanised settings; changes in diet during travel",
+        "Relevant medical history — diabetes (gastroparesis risk); thyroid disease (hypothyroidism causes dysmotility); connective tissue disease (scleroderma); previous GI surgery; Crohn's disease",
+        "Medications — full medication list including herbal preparations; Ayurvedic medicine; OTC analgesics (important not to miss)"
+      ],
+      "physical_examination": [
+        "General appearance — weight and BMI (weight loss = alarm); pallor (anaemia from GI bleeding); nutritional status",
+        "Vital signs — heart rate (tachycardia in GI haemorrhage); blood pressure (hypotension = haemodynamic compromise from major bleeding)",
+        "Abdominal examination:",
+        "INSPECTION: visible peristalsis from right to left (visible gastric waves = gastric outlet obstruction — rare but important sign); abdominal distension; surgical scars",
+        "PALPATION: epigastric tenderness (most common finding in dyspepsia — non-specific); localised guarding or rigidity (peritonitis — perforation); palpable epigastric mass (gastric cancer, pancreatic mass — alarm sign); succussion splash — patient lying supine, place stethoscope on abdomen, rock patient side to side — splashing sound = fluid in distended stomach (gastric outlet obstruction); Carnett's sign (abdominal wall tenderness worse on tensing abdominal muscles — suggests musculoskeletal pain rather than visceral)",
+        "PERCUSSION: gastric tympany (normal); shifting dullness (unusual in dyspepsia — suggests ascites from advanced malignancy)",
+        "AUSCULTATION: bowel sounds (absent = ileus or peritonitis; succussion splash — see above)",
+        "Rectal examination: stool colour (melaena — black tarry = upper GI bleeding; occult blood testing); palpable mass (unusual)",
+        "Signs of systemic disease: jaundice (hepatic disease mimicking dyspepsia); lymphadenopathy — supraclavicular (Virchow's node = gastric cancer metastasis — Troisier's sign); spider naevi, palmar erythema (chronic liver disease)",
+        "Skin: pallor of conjunctivae and nail beds (anaemia — iron deficiency from chronic GI blood loss or B12 deficiency from atrophic gastritis)",
+        "Hands: Osler's nodes, leukonychia (protein deficiency — chronic disease)"
+      ],
+      "diagnostic_tests": [
+        {
+          "test_name": "H. pylori Urea Breath Test (UBT) — Gold Standard Non-Invasive Test",
+          "type": "Biochemical / Isotopic",
+          "description": "The most accurate non-invasive test for detecting active H. pylori infection — the most important initial investigation in all patients with dyspepsia without alarm features. The patient swallows a preparation containing 13C-labelled urea (non-radioactive, safe). If H. pylori is present in the stomach, its urease enzyme breaks down the labelled urea releasing 13CO2 into the bloodstream and expelled in breath — detected by a breath sample analysed by a mass spectrometer. Highly accurate: sensitivity and specificity >95%.",
+          "purpose": "Diagnose active H. pylori infection; confirm H. pylori eradication 4-6 weeks after completing treatment (test of cure); preferred over serology (serology remains positive for years after eradication — cannot confirm cure)",
+          "key_metric": "Positive UBT = active H. pylori infection — treat with eradication therapy; Negative UBT = no current H. pylori (though may have been treated and now negative)",
+          "preparation": "Must stop: PPIs for 2 weeks before testing; H2 blockers for 24-48 hours; antibiotics and bismuth for 4 weeks before testing — otherwise false negative results",
+          "india_note": "UBT widely available in India at large hospitals and diagnostic centres; cost approximately Rs 500-1,500; ensure patient follows PPI washout instructions; most appropriate initial test for dyspepsia in Indian primary care",
+          "test_of_cure": "Repeat UBT at least 4 weeks after completing H. pylori eradication therapy (off PPIs for 2 weeks) — ESSENTIAL to confirm successful eradication; do not rely on symptom improvement alone (symptoms may improve even with failed eradication)"
+        },
+        {
+          "test_name": "H. pylori Stool Antigen Test (SAT)",
+          "type": "Immunoassay — Point of Care",
+          "description": "Monoclonal antibody-based enzyme immunoassay detecting H. pylori antigens in a fresh stool sample. Accuracy comparable to UBT (sensitivity ~94%, specificity ~97%). Increasingly used as an alternative to UBT — cheaper, no equipment needed for the patient (no breath test apparatus), particularly useful in children who cannot cooperate with breath test. Available as ELISA laboratory test or rapid point-of-care immunochromatographic test.",
+          "purpose": "Diagnose active H. pylori infection; test of cure (at least 4 weeks after treatment, off PPIs); suitable for children and elderly",
+          "key_metric": "Positive SAT = active H. pylori — treat; useful also to confirm eradication post-treatment (at least 4 weeks after completing antibiotics, off PPIs for 2 weeks)",
+          "preparation": "Stop PPIs 2 weeks before; stop antibiotics 4 weeks before; same as UBT"
+        },
+        {
+          "test_name": "H. pylori Serology (IgG antibody test)",
+          "type": "Blood — Immunological",
+          "description": "Detects IgG antibodies against H. pylori. Less useful than UBT or stool antigen test because: serology remains positive for months to years after successful H. pylori eradication — cannot be used to confirm eradication success; less sensitive (75-85%) and specific (79-90%) than UBT/stool antigen for active infection. Main role: population surveys; low-resource settings where UBT or stool antigen not available; some pre-endoscopy screening.",
+          "purpose": "Limited use — mainly population surveys; not useful for confirming eradication; do not use serology as test of cure",
+          "key_metric": "Positive IgG = past or current infection (cannot distinguish); negative IgG = never infected (in low-prevalence populations) or remote past infection",
+          "note": "In India where H. pylori prevalence is ~70-80%, a positive serology adds little diagnostic information — almost everyone has been exposed; invest in UBT or stool antigen instead"
+        },
+        {
+          "test_name": "Upper GI Endoscopy (OGD — Oesophagogastroduodenoscopy) — EGD",
+          "type": "Endoscopy / Invasive Procedure",
+          "description": "A flexible fibre-optic or video endoscope passed through the mouth, oesophagus, stomach, and duodenum — providing direct visual examination of the upper GI mucosa and the ability to take biopsies. The gold standard investigation for organic causes of dyspepsia: identifies and characterises oesophagitis (GERD-related), peptic ulcers (both gastric and duodenal), gastritis (erythema, erosions, H. pylori changes), oesophageal cancer, gastric cancer, and other pathology. Biopsies are taken from any suspicious lesion, from the antrum and corpus for H. pylori (CLO test — urease rapid test and histology), and from gastric ulcers (mandatory — to exclude malignancy).",
+          "purpose": "Diagnose organic dyspepsia; exclude gastric and oesophageal cancer; characterise peptic ulcers; detect Barrett's oesophagus; obtain biopsies for H. pylori (histology and CLO test); monitor gastric ulcer healing",
+          "indications": [
+            "Any ALARM FEATURE present (mandatory urgent investigation)",
+            "Age ≥55 years with new onset dyspepsia",
+            "Failure to respond to 8 weeks of PPI therapy",
+            "Failure of H. pylori eradication to resolve symptoms",
+            "Known gastric ulcer — repeat endoscopy after 6-8 weeks treatment to confirm healing and re-biopsy",
+            "Chronic NSAID or aspirin use with new symptoms",
+            "Patient preference for certainty of diagnosis after full counselling",
+            "Pre-bariatric surgery or major upper GI surgery"
+          ],
+          "what_is_found": "Normal endoscopy in 70% of dyspepsia patients (= functional dyspepsia diagnosis supported); peptic ulcer in 15-25%; oesophagitis/GERD in 10-20%; cancer in <1% of unselected dyspepsia patients but higher in alarm feature patients",
+          "note": "Endoscopy WITHOUT alarm features or age >55: reassuringly normal in majority; does not significantly change management in low-risk patients; reserve for indicated cases to avoid unnecessary procedures"
+        },
+        {
+          "test_name": "CLO Test (Campylobacter-Like Organism Test — Rapid Urease Test)",
+          "type": "Biochemical — Endoscopic Biopsy",
+          "description": "A rapid point-of-care test performed on gastric biopsy samples taken during endoscopy. A small gastric biopsy (from the antrum or corpus) is placed in a gel containing urea and a pH indicator. If H. pylori is present, its urease enzyme converts urea to ammonia — raising the pH and changing the indicator from yellow to pink/red. Result within 1-3 hours of endoscopy. Used routinely when endoscopy is performed.",
+          "purpose": "Rapid diagnosis of H. pylori at time of endoscopy; biopsy material also sent for histological confirmation",
+          "key_metric": "Pink/red colour change = H. pylori positive; remains yellow = negative; sensitivity 85-98%; specificity 95-100%",
+          "preparation": "Must stop PPIs 2 weeks and antibiotics 4 weeks before endoscopy to avoid false negative CLO test"
+        },
+        {
+          "test_name": "Full Blood Count (FBC) / Complete Blood Count",
+          "type": "Blood — Haematological",
+          "description": "Essential in all new dyspepsia patients. Iron-deficiency anaemia (microcytic, hypochromic — low Hb, low MCV, low ferritin, low serum iron, high TIBC) is an alarm feature suggesting chronic occult GI blood loss from peptic ulcer or cancer. Macrocytic anaemia suggests B12 deficiency — which can result from H. pylori-induced atrophic gastritis (impaired intrinsic factor secretion) or long-term PPI use (PPIs reduce gastric acid, impairing B12 absorption from food). Eosinophilia may suggest eosinophilic gastritis.",
+          "purpose": "Screen for GI blood loss anaemia (alarm feature); detect B12 or folate deficiency; baseline before H. pylori eradication therapy",
+          "key_metric": "Hb <120 g/L women / <130 g/L men = anaemia; MCV <80 fL = microcytic (iron deficiency); MCV >100 fL = macrocytic (B12/folate); ferritin <15 mcg/L = iron deficiency"
+        },
+        {
+          "test_name": "Serum Ferritin, Iron Studies, and B12/Folate",
+          "type": "Blood — Biochemical",
+          "description": "Ferritin is the gold standard test for iron deficiency (the most sensitive and specific single test). H. pylori reduces non-haem iron absorption from the duodenum and stomach (contributes to iron deficiency even without overt bleeding). Serum B12 deficiency occurs in up to 30% of long-term PPI users (>12 months) and in patients with H. pylori-induced atrophic gastritis. All patients with dyspepsia and unexplained iron deficiency or B12 deficiency should have endoscopy and H. pylori testing.",
+          "purpose": "Confirm iron deficiency (possible alarm feature from occult GI blood loss or H. pylori-related malabsorption); screen for B12 deficiency in long-term PPI users",
+          "key_metric": "Ferritin <15 mcg/L = iron deficient (absolute); Ferritin <30 mcg/L in a symptomatic patient = functional iron deficiency; B12 <200 pg/mL = deficiency"
+        },
+        {
+          "test_name": "Liver Function Tests (LFTs), Lipase, Renal Function",
+          "type": "Blood — Biochemical",
+          "description": "Part of the workup to exclude hepatic, biliary, and pancreatic causes of upper GI symptoms: elevated bilirubin and transaminases suggest hepatobiliary disease (hepatitis, cholangitis); elevated lipase (preferred over amylase) indicates pancreatitis; elevated ALP suggests biliary pathology. Thyroid function tests (TFTs) are important — hypothyroidism is a common and reversible cause of dysmotility, delayed gastric emptying, nausea, and constipation that can mimic dyspepsia.",
+          "purpose": "Exclude hepatic, pancreatic, and biliary disease mimicking dyspepsia; assess metabolic contributions",
+          "key_metric": "Lipase >3× ULN = pancreatitis; ALT/AST elevation = hepatitis; ALP elevation = biliary disease; TSH elevation = hypothyroidism causing dysmotility"
+        },
+        {
+          "test_name": "Abdominal Ultrasound",
+          "type": "Imaging",
+          "description": "First-line imaging investigation for dyspepsia — particularly when: biliary symptoms (right upper quadrant, post-fatty meal); elevated LFTs or ALP (biliary obstruction); epigastric mass; exclusion of other intra-abdominal pathology. Ultrasound identifies: gallstones (cholelithiasis) and cholecystitis; common bile duct dilation; hepatic lesions; pancreatic masses; aortic aneurysm (important differential for epigastric pain). Normal in most functional dyspepsia patients.",
+          "purpose": "Exclude biliary disease (gallstones — most common finding); hepatic and pancreatic pathology; epigastric mass",
+          "key_metric": "Echogenic foci with posterior acoustic shadowing in gallbladder = gallstones; thickened gallbladder wall + pericholecystic fluid = cholecystitis; dilated CBD = biliary obstruction",
+          "note": "Gallstones are very common (10-15% of adults in India) and frequently incidental — the presence of gallstones does NOT necessarily explain dyspepsia; only symptomatic gallstones (biliary colic) should be treated surgically"
+        },
+        {
+          "test_name": "Gastric Emptying Scintigraphy (Gastric Emptying Study)",
+          "type": "Nuclear Medicine — Imaging",
+          "description": "The gold standard investigation for gastroparesis. Patient eats a standardised meal labelled with a small amount of radioactive isotope (Tc-99m sulphur colloid); a gamma camera measures the rate at which the meal empties from the stomach over 4 hours. Normal: >90% emptied by 4 hours. Delayed gastric emptying at 4 hours = gastroparesis. Required when: suspected gastroparesis (vomiting undigested food, diabetic dyspepsia not responding to standard therapy); unexplained severe early satiety and weight loss; before prokinetic therapy.",
+          "purpose": "Diagnose and quantify gastroparesis; guide treatment selection (prokinetics, dietary modification, gastric electrical stimulation)",
+          "key_metric": "Gastric retention >10% at 4 hours = gastroparesis; >60% at 2 hours = severe delayed emptying",
+          "alternatives": "13C octanoic acid breath test (non-radioactive; available in some Indian centres); wireless motility capsule (SmartPill)"
+        },
+        {
+          "test_name": "24-Hour pH Monitoring and Impedance Study (Ambulatory)",
+          "type": "Physiological — Ambulatory Monitoring",
+          "description": "A thin probe placed in the oesophagus via the nose records pH over 24 hours, quantifying acid and non-acid reflux events. Combined impedance-pH monitoring detects both acid and weakly acidic (bile reflux) events. The gold standard investigation for diagnosing pathological GERD when endoscopy is normal or inconclusive. Required for: suspected GERD with negative endoscopy; atypical GERD symptoms (chronic cough, laryngitis, hoarseness attributed to reflux); before anti-reflux surgery; refractory symptoms on PPI.",
+          "purpose": "Quantify acid and non-acid reflux exposure; diagnose GERD objectively when clinical diagnosis is uncertain; guide management before anti-reflux surgery",
+          "key_metric": "DeMeester score >14.72 = pathological acid exposure; acid exposure time (AET) >6% = abnormal; normal acid exposure with symptoms = functional heartburn (acid hypersensitivity)"
+        },
+        {
+          "test_name": "Oesophageal Manometry and High-Resolution Manometry (HRM)",
+          "type": "Physiological — Motility",
+          "description": "Measures pressure and motility patterns in the oesophagus and lower oesophageal sphincter (LOS). Identifies: achalasia (failure of LOS to relax — causing dysphagia and regurgitation); oesophageal spasm (causing severe chest pain and dysphagia); ineffective oesophageal motility (weakly positive peristalsis — common in GERD). Required before anti-reflux surgery (to ensure adequate peristaltic function) and in unexplained dysphagia.",
+          "purpose": "Assess oesophageal motor function; diagnose achalasia and motility disorders; pre-surgical assessment"
+        }
+      ]
+    },
+
+    "medicines": {
+      "note": "The treatment of dyspepsia is targeted to the underlying cause: H. pylori eradication for H. pylori-positive dyspepsia (first-line); acid suppression (PPIs or H2 blockers) for GERD-overlap, peptic ulcer disease, and empirical acid suppression; prokinetics for gastroparesis and postprandial distress syndrome; low-dose antidepressants for refractory functional dyspepsia. Antacids provide symptomatic relief but are not curative. PPI overuse and over-prescription is a major problem in India — PPIs should not be prescribed indefinitely without indication; reassess regularly.",
+      "treatment_principles": [
+        "1. TEST AND TREAT for H. pylori: all dyspepsia patients without alarm features — test first with urea breath test or stool antigen; if positive, ERADICATE H. pylori before empirical PPI therapy; eradication resolves dyspepsia in 10-15% more patients than placebo and prevents peptic ulcer disease",
+        "2. EMPIRICAL PPI TRIAL for 4-8 weeks: appropriate when H. pylori negative, or as initial therapy while awaiting test results; use lowest effective PPI dose; review and reassess at 4-8 weeks — do not continue PPIs indefinitely without indication",
+        "3. REVIEW AND STOP NSAIDS: every patient with dyspepsia must have all NSAID and aspirin use reviewed; if NSAIDs essential — add PPI co-prescription; consider switching to paracetamol or COX-2 inhibitor",
+        "4. LIFESTYLE MODIFICATION is essential and must precede or accompany pharmacological treatment — dietary changes, meal spacing, weight loss, alcohol and smoking cessation, stress reduction",
+        "5. ANTACIDS for immediate symptom relief: appropriate as PRN (as-needed) rescue medication; not appropriate for chronic daily use as monotherapy",
+        "6. H. PYLORI ERADICATION — always confirm success with test of cure (UBT or stool antigen at least 4 weeks post-treatment, off PPIs for 2 weeks); resistance rates to clarithromycin and metronidazole are increasing in India — bismuth-based quadruple therapy increasingly preferred",
+        "7. PROKINETICS: for gastroparesis and postprandial distress syndrome with prominent fullness, early satiety, and nausea; domperidone or metoclopramide short-term; itopride for longer use",
+        "8. LOW-DOSE TRICYCLICS or MIRTAZAPINE: for refractory functional dyspepsia — small doses have central visceral analgesic and anxiolytic effects; start low (amitriptyline 10-25 mg at night); explain rationale clearly to patients (not for depression but for pain modulation)",
+        "9. AVOID UNNECESSARY LONG-TERM PPI USE: reassess at every consultation; PPI side effects with long-term use include: C. difficile colitis, community-acquired pneumonia, bone fractures, B12 deficiency, hypomagnesaemia, renal disease, dementia (controversial); step down or stop if no ongoing indication"
+      ],
+      "categories": [
+        {
+          "category_id": "MED-CAT-151",
+          "category_name": "H. pylori Eradication Therapy",
+          "purpose": "Eliminate H. pylori infection from the gastric mucosa — resolves H. pylori gastritis, heals peptic ulcers, prevents ulcer recurrence, reduces gastric cancer risk, and improves dyspepsia symptoms in a subset of patients.",
+          "treatment_duration": "10-14 days recommended; 14 days achieves higher eradication rates; do NOT use 7-day regimens (insufficient)",
+          "regimens": [
+            {
+              "name": "Standard Triple Therapy (First-Line in Low-Clarithromycin-Resistance Areas)",
+              "components": "PPI (standard dose twice daily) + Clarithromycin 500 mg twice daily + Amoxicillin 1 g twice daily for 14 days",
+              "brand_examples": "PPI: omeprazole 20 mg or pantoprazole 40 mg; Clarithromycin: Clarith, Clar; Amoxicillin: Amoxil, Mox",
+              "use_case": "First-line in regions where clarithromycin resistance is <15-20%; appropriate in many parts of India; if penicillin allergy — substitute metronidazole 400 mg twice daily for amoxicillin",
+              "eradication_rate": "70-85% (adequate in low-resistance areas; declining in areas with increasing clarithromycin resistance)",
+              "resistance_concern": "Clarithromycin resistance in India rising (15-25% in some centres); H. pylori clarithromycin resistance renders triple therapy ineffective; test for resistance if available or use bismuth quadruple therapy empirically in areas with known high resistance"
+            },
+            {
+              "name": "Bismuth-Based Quadruple Therapy (BQT) — Preferred in India and High-Resistance Areas",
+              "components": "PPI (standard dose twice daily) + Bismuth subsalicylate or bismuth subcitrate 120-240 mg four times daily + Tetracycline 500 mg four times daily + Metronidazole 400-500 mg three to four times daily for 10-14 days",
+              "brand_examples": "Bismuth subsalicylate: Pepto-Bismol, Bismuth; Tetracycline: Hostacycline, Tetracycline; Metronidazole: Flagyl, Metrogyl",
+              "use_case": "Preferred first-line in India given rising clarithromycin resistance; preferred when: previous macrolide antibiotic use; penicillin allergy; known clarithromycin resistance; second-line after triple therapy failure; highly effective even against clarithromycin and metronidazole-resistant strains (bismuth has direct bactericidal activity against H. pylori)",
+              "eradication_rate": "85-95% — higher than standard triple therapy",
+              "note": "Bismuth salts cause BLACK STOOLS AND TONGUE (benign — harmless bismuth sulphide — reassure patients); tetracycline cannot be used in pregnancy or children <12 years"
+            },
+            {
+              "name": "Sequential Therapy",
+              "components": "5 days: PPI + Amoxicillin 1g twice daily — THEN — 5 days: PPI + Clarithromycin 500 mg twice daily + Metronidazole 400 mg twice daily (total 10 days)",
+              "eradication_rate": "80-90%; slightly superior to standard triple therapy; used in some Indian centres",
+              "note": "Less commonly used now that bismuth quadruple therapy is available"
+            },
+            {
+              "name": "Concomitant Therapy",
+              "components": "PPI + Amoxicillin 1g + Clarithromycin 500 mg + Metronidazole 400 mg — all taken twice daily together for 10-14 days",
+              "eradication_rate": "85-90%; may overcome metronidazole resistance",
+              "use_case": "Alternative to bismuth quadruple when bismuth not available"
+            },
+            {
+              "name": "Second-Line (Salvage) Therapy after Initial Failure",
+              "options": [
+                "Bismuth quadruple therapy (if not used as first-line)",
+                "Levofloxacin-based triple therapy: PPI + Levofloxacin 500 mg once daily + Amoxicillin 1g twice daily for 10-14 days",
+                "Rifabutin-based therapy: PPI + Rifabutin 300 mg/day + Amoxicillin 1g twice daily (reserved for multiple eradication failures — avoid in TB-endemic area; rifabutin is an anti-TB drug)"
+              ],
+              "eradication_rate": "60-80% for second-line; after two failures — culture and sensitivity testing strongly recommended",
+              "culture_guidance": "H. pylori antimicrobial susceptibility testing should be performed when: two eradication attempts have failed; in populations with high resistance; available in some tertiary centres in India (PCR-based resistance testing increasingly available)"
+            }
+          ],
+          "individual_agents": [
+            {
+              "name": "Proton Pump Inhibitors (PPIs) — Component of H. pylori Regimens",
+              "agents": "Omeprazole 20 mg, Pantoprazole 40 mg, Esomeprazole 40 mg, Rabeprazole 20 mg, Lansoprazole 30 mg — all given TWICE daily (not once daily) during H. pylori eradication to maximise acid suppression",
+              "note": "Rabeprazole may be slightly superior to other PPIs for H. pylori eradication due to less CYP2C19 polymorphism effect; omeprazole and pantoprazole are most widely available generics in India"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-152",
+          "category_name": "Proton Pump Inhibitors (PPIs) — Acid Suppression Therapy",
+          "purpose": "Suppress gastric acid secretion by irreversibly inhibiting the H+/K+-ATPase proton pump on gastric parietal cells — the most powerful acid-suppressing agents available. First-line for: GERD, peptic ulcer disease, H. pylori eradication (as a component), NSAID gastroprotection, Zollinger-Ellison syndrome, and empirical acid suppression in dyspepsia.",
+          "medicines": [
+            {
+              "name": "Omeprazole",
+              "brand_examples": ["Prilosec", "Omez", "Omecip", "Ocid", "Omizac"],
+              "form": "Capsule, Tablet (10 mg, 20 mg, 40 mg); IV injection",
+              "dosage": "Dyspepsia/GERD: 20 mg once daily (30 min before breakfast for maximum efficacy); Peptic ulcer: 20-40 mg once daily; NSAID prophylaxis: 20 mg once daily; Severe GERD: 40 mg once daily; H. pylori eradication: 20 mg twice daily (as component of triple/quadruple therapy)",
+              "use_case": "Most widely prescribed and lowest cost PPI in India; first-line empirical acid suppression for uninvestigated dyspepsia; GERD; peptic ulcer healing; NSAID gastroprotection; component of H. pylori eradication regimens",
+              "mechanism": "Prodrug — activated in acidic environment of gastric canaliculi; active form covalently binds and irreversibly inhibits H+/K+-ATPase (proton pump) on parietal cell; reduces gastric acid output by 90-98%; takes 3-5 days to reach maximum effect (new pumps synthesised daily)",
+              "when_to_take": "30-60 MINUTES BEFORE FIRST MEAL OF THE DAY for maximum efficacy — PPIs work only on actively secreting proton pumps which are stimulated by eating; taking with food or after food significantly reduces efficacy",
+              "side_effects": ["Headache, diarrhoea, nausea (short-term — usually mild)", "Long-term risks (>12 months): C. difficile infection (2× risk), community-acquired pneumonia, hip/wrist/spine fractures (reduced calcium absorption), Vitamin B12 deficiency, hypomagnesaemia (magnesium deficiency — risk of arrhythmia at severe levels), renal disease (interstitial nephritis — rare), possible dementia association (contested)", "Fundic gland polyps — benign; common in long-term PPI users; no malignant potential"],
+              "duration": "Use for shortest appropriate duration; review indication at every consultation; many patients initiated on PPIs during hospital admission continue unnecessarily for years — 'medication inertia'",
+              "deprescription": "When stopping long-term PPIs — taper over 2-4 weeks to avoid rebound acid hypersecretion (which can cause worsening heartburn — temporarily makes patient think they still need the PPI); reduce to every other day → stop"
+            },
+            {
+              "name": "Pantoprazole",
+              "brand_examples": ["Pantocid", "Pantop", "Protonix", "Pan D (with domperidone)", "P-40"],
+              "form": "Tablet (20 mg, 40 mg); IV injection",
+              "dosage": "Dyspepsia/GERD: 40 mg once daily before breakfast; IV: 40-80 mg for bleeding peptic ulcer",
+              "use_case": "Widely used alternative to omeprazole; slightly fewer drug interactions (less CYP2C19 interaction than omeprazole — preferred in patients on clopidogrel); very widely prescribed in India; IV pantoprazole for acute upper GI bleeding from peptic ulcer",
+              "iv_use": "IV pantoprazole infusion (80 mg bolus + 8 mg/hour for 72 hours) — standard of care after endoscopic haemostasis for peptic ulcer bleeding (high-risk stigmata: visible vessel or clot); reduces re-bleeding risk from 22% to 7%"
+            },
+            {
+              "name": "Esomeprazole",
+              "brand_examples": ["Nexium", "Nexpro", "Sompraz", "Raciper"],
+              "form": "Tablet (20 mg, 40 mg); Granules for oral suspension",
+              "dosage": "GERD: 20-40 mg once daily; erosive oesophagitis: 40 mg once daily for 4-8 weeks",
+              "use_case": "The S-isomer of omeprazole; marginally superior to omeprazole for healing erosive oesophagitis in some studies; good for severe GERD; granule formulation useful for nasogastric tube administration; higher cost than generic omeprazole",
+              "note": "Brand name 'Nexium' extensively marketed but evidence for significant clinical superiority over generic omeprazole at equivalent doses is limited; generic omeprazole is equally effective for most indications"
+            },
+            {
+              "name": "Rabeprazole",
+              "brand_examples": ["Pariet", "Razo", "Rabec", "Veloz"],
+              "form": "Tablet (20 mg)",
+              "dosage": "Dyspepsia/GERD: 20 mg once daily",
+              "use_case": "PPI component of H. pylori eradication (may be slightly superior to omeprazole for eradication due to less CYP2C19 polymorphism-dependent metabolism — more consistent acid suppression across different metaboliser types); GERD, peptic ulcer",
+              "note": "Less affected by CYP2C19 genetic polymorphism — relevant for CYP2C19 poor metabolisers and in Asian populations where poor metaboliser frequency is higher"
+            },
+            {
+              "name": "Lansoprazole",
+              "brand_examples": ["Prevacid", "Lanzol", "Zoton"],
+              "form": "Capsule (15 mg, 30 mg)",
+              "dosage": "Dyspepsia/GERD: 15-30 mg once daily",
+              "use_case": "GERD, peptic ulcer, H. pylori eradication; available as dispersible tablet (useful for patients with dysphagia or via nasogastric tube)"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-153",
+          "category_name": "H2-Receptor Antagonists (H2 Blockers)",
+          "purpose": "Block histamine H2 receptors on gastric parietal cells, reducing gastric acid secretion. Less potent than PPIs (reduce acid by ~70% vs ~98% for PPIs) but faster onset, useful for PRN (as-needed) use, and appropriate for milder acid-related symptoms. Tolerance (tachyphylaxis) develops with continuous use within 2-3 weeks.",
+          "medicines": [
+            {
+              "name": "Famotidine",
+              "brand_examples": ["Famocid", "Topcid", "Famotac", "Pepcid"],
+              "form": "Tablet (20 mg, 40 mg)",
+              "dosage": "Dyspepsia/GERD: 20 mg twice daily or 40 mg once daily at night; PRN use: 10-20 mg as needed",
+              "use_case": "Mild-moderate GERD and dyspepsia; excellent safety profile; no significant drug interactions; preferred H2 blocker for PRN (as-needed) use; safe in pregnancy and renal impairment (dose reduction in severe renal failure); OTC available in many countries for PRN heartburn",
+              "mechanism": "Competitive H2 receptor antagonist on parietal cells; reduces histamine-stimulated acid secretion; faster onset than PPIs (30-60 min) but shorter duration (8-12 hours); does not significantly affect CYP enzymes",
+              "advantage_over_ppi": "Faster onset of action; appropriate for breakthrough symptoms in GERD despite PPI; no significant rebound on discontinuation; better safety profile for short-term use",
+              "note": "Ranitidine — previously the most widely used H2 blocker — was voluntarily withdrawn globally in 2020 due to contamination with NDMA (N-Nitrosodimethylamine — a probable human carcinogen); famotidine and cimetidine are the remaining approved H2 blockers"
+            },
+            {
+              "name": "Cimetidine",
+              "brand_examples": ["Tagamet", "Cimetidine"],
+              "form": "Tablet (200 mg, 400 mg, 800 mg)",
+              "dosage": "400-800 mg twice daily or 800 mg at night",
+              "use_case": "Peptic ulcer, GERD; now less preferred due to significant drug interactions (strong CYP inhibitor — affects warfarin, theophylline, phenytoin, metformin, and many others); anti-androgenic effects at high doses (gynaecomastia); older generation H2 blocker",
+              "note": "Significant drug interactions limit use; famotidine preferred"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-154",
+          "category_name": "Antacids — Symptomatic Relief",
+          "purpose": "Neutralise gastric acid on contact — providing rapid, short-lived symptomatic relief of heartburn, acid regurgitation, and mild dyspepsia. NOT curative — do not heal ulcers or eradicate H. pylori; appropriate for immediate symptom relief and mild, intermittent dyspepsia.",
+          "medicines": [
+            {
+              "name": "Aluminium Hydroxide + Magnesium Hydroxide Combination",
+              "brand_examples": ["Gelusil", "Digene", "Aludox", "Antacid suspension — various", "Mucaine (with oxethazaine — topical anaesthetic)"],
+              "form": "Tablet (chewable), Suspension (liquid)",
+              "dosage": "10-20 mL liquid or 2-4 tablets after meals and at bedtime (maximum 4 times daily); chew tablets — do not swallow whole",
+              "use_case": "Immediate relief of heartburn, acid regurgitation, and dyspepsia; most widely used OTC antacid in India; the aluminium hydroxide component tends to cause constipation, the magnesium hydroxide causes a mild laxative effect — the combination is designed to be bowel habit-neutral; Mucaine also contains oxethazaine (surface anaesthetic — provides additional pain relief from inflamed oesophageal mucosa)",
+              "mechanism": "Aluminium and magnesium hydroxides react with hydrochloric acid (HCl) to form aluminium chloride, magnesium chloride, and water — directly raising gastric pH; onset of action: 5-15 minutes; duration: 1-2 hours",
+              "limitations": "Short duration of action; must be taken frequently; aluminium hydroxide binds dietary phosphate in gut (reduces phosphate absorption — concern in long-term use; may cause hypermagnesaemia in renal failure)",
+              "note": "Antacids significantly reduce absorption of many medications — must be separated by at least 2 hours from: fluoroquinolones (ciprofloxacin), tetracyclines, iron supplements, levothyroxine, and bisphosphonates"
+            },
+            {
+              "name": "Calcium Carbonate (CaCO3)",
+              "brand_examples": ["Tums", "Calci Chew", "Rennie (CaCO3 + MgCO3)"],
+              "form": "Chewable tablet",
+              "dosage": "500-1000 mg (1-2 tablets) after meals as needed",
+              "use_case": "Fast-acting antacid with acid-neutralising and calcium supplementation benefit; often combined with magnesium carbonate for balanced bowel effects; widely available OTC",
+              "note": "Calcium carbonate can cause constipation with frequent use; acid rebound possible with large doses"
+            },
+            {
+              "name": "Sodium Bicarbonate (Baking Soda — Eno, Citrosoda)",
+              "brand_examples": ["ENO (fruit salt — sodium bicarbonate + citric acid)", "Sodamint"],
+              "form": "Powder, effervescent granules",
+              "dosage": "½-1 teaspoon in water or as directed on packaging; as needed",
+              "use_case": "Immediate rapid relief of bloating, gas, and heartburn; very popular home remedy in India; ENO (sodium bicarbonate + citric acid) produces CO2 on dissolving — temporarily relieves gas and bloating sensation; rapid onset",
+              "caution": "High sodium content — avoid in hypertension, heart failure, renal disease, or patients on sodium restriction; CO2 produced may cause belching (temporary gas relief) but also worsens GERD by increasing intragastric pressure",
+              "note": "Not suitable for long-term use; high sodium content; acid-rebound can occur"
+            },
+            {
+              "name": "Sucralfate (Cytoprotective Agent)",
+              "brand_examples": ["Sucral", "Ulsanic", "Carafate"],
+              "form": "Tablet (1 g); Suspension (1 g/5 mL)",
+              "dosage": "1 g four times daily (1 hour before meals and at bedtime) or 2 g twice daily on an empty stomach",
+              "use_case": "Peptic ulcer healing (particularly gastric ulcer); oesophagitis; NSAID-gastropathy; stress ulcer prophylaxis in ICU patients; forms a protective paste that adheres to ulcer base preventing acid penetration; safe in pregnancy",
+              "mechanism": "Polyanionic aluminium salt — binds to positively charged proteins in ulcer crater; forms protective viscous coat over ulcer protecting from acid and pepsin; stimulates prostaglandin secretion and mucus production (cytoprotection)",
+              "note": "Must be taken on an empty stomach (acid activates sucralfate); reduces absorption of fluoroquinolones, digoxin, warfarin — separate by 2 hours; rarely used in modern practice superseded by PPIs but valuable in pregnancy and where PPIs not tolerated"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-155",
+          "category_name": "Prokinetics — Gastric Motility Agents",
+          "purpose": "Accelerate gastric emptying and improve coordinated GI motility — used for gastroparesis, postprandial distress syndrome (PDS), and nausea-dominant dyspepsia.",
+          "medicines": [
+            {
+              "name": "Domperidone",
+              "brand_examples": ["Motilium", "Domstal", "Domper", "Dom-DT"],
+              "form": "Tablet (10 mg); Oral suspension; Suppository",
+              "dosage": "10-20 mg three times daily 15-30 minutes before meals (maximum 30 mg/day; use lowest effective dose for shortest time)",
+              "use_case": "Postprandial nausea and vomiting in dyspepsia; gastroparesis; domperidone promotes coordinated antroduodenal contractions and accelerates gastric emptying; preferred prokinetic in patients who cannot tolerate metoclopramide (fewer CNS side effects as domperidone does not cross the blood-brain barrier significantly)",
+              "mechanism": "Dopamine D2/D3 receptor antagonist in GI tract and chemoreceptor trigger zone (CTZ); antiemetic and prokinetic; does NOT significantly cross blood-brain barrier (unlike metoclopramide) — fewer extrapyramidal side effects",
+              "side_effects": ["QT prolongation — most important cardiac side effect; dose-dependent and more common at higher doses and in elderly; check ECG before prescribing in high-risk patients; avoid with QT-prolonging drugs", "Galactorrhoea (milk production outside pregnancy) and gynaecomastia — hyperprolactinaemia from limited D2 blockade at pituitary (outside blood-brain barrier)", "Dry mouth"],
+              "caution": "EMA and MHRA (2014): limit to 10 mg three times daily (or 30 mg/day total); use for maximum 1 week for acute nausea/vomiting; cardiac risk with higher doses; avoid in patients with liver impairment, electrolyte disturbances, or cardiac disease",
+              "india_note": "One of the most widely prescribed drugs in India, often in combination with PPIs (e.g., Nexpro-D, Pantop-D, Rabec-DSR); frequently overused; reassess regularly"
+            },
+            {
+              "name": "Metoclopramide",
+              "brand_examples": ["Maxolon", "Perinorm", "Reglan", "Emequell"],
+              "form": "Tablet (10 mg); IV/IM injection; Syrup",
+              "dosage": "10 mg orally, IV, or IM three times daily (15-30 minutes before meals); maximum 0.5 mg/kg/day",
+              "use_case": "Gastroparesis (IV/IM most effective); nausea and vomiting from any GI cause; enhances gastric emptying; antiemetic; broadly useful in acute dyspeptic episodes particularly when vomiting predominates",
+              "mechanism": "Central and peripheral dopamine D2 antagonist AND 5-HT4 agonist — prokinetic (enhances acetylcholine release); antiemetic (CTZ D2 blockade); CROSSES blood-brain barrier significantly — causes CNS effects",
+              "side_effects": ["Extrapyramidal reactions — ACUTE DYSTONIA (particularly young women and children; oculogyric crisis — eyes deviated upward; torticollis — neck twisted; opisthotonus — arched back): treat with IV/IM benztropine or procyclidine or diazepam; common and distressing", "Tardive dyskinesia — irreversible involuntary movements with prolonged use (months); risk increases with total cumulative dose", "Drowsiness, fatigue", "Galactorrhoea (hyperprolactinaemia)"],
+              "caution": "Maximum 5 days continuous use (FDA 2009 black box warning: prolonged use causes irreversible tardive dyskinesia); avoid in children under 18 years for dyspepsia (EMA guidance); use short-term only; ondansetron preferred as antiemetic"
+            },
+            {
+              "name": "Itopride",
+              "brand_examples": ["Ganaton", "Itoprex", "Ganaton OD"],
+              "form": "Tablet (50 mg; 150 mg OD)",
+              "dosage": "50 mg three times daily before meals; or 150 mg once daily (OD formulation)",
+              "use_case": "Functional dyspepsia with predominant postprandial fullness and early satiety; gastroparesis; widely used in India for chronic dyspepsia with motility component; dual mechanism combines prokinetic and antiemetic benefits with a better safety profile than metoclopramide (lower CNS effects)",
+              "mechanism": "D2 receptor antagonist AND acetylcholinesterase inhibitor — dual mechanism enhances gastric motility without significant CNS dopamine blockade (lower extrapyramidal risk than metoclopramide); does not significantly cross blood-brain barrier",
+              "evidence": "RCTs: itopride significantly reduces FD symptoms (fullness, early satiety, upper abdominal discomfort) vs placebo; comparable to domperidone",
+              "side_effects": ["Generally well tolerated", "Mild GI symptoms (diarrhoea, abdominal pain)", "Headache", "Lower extrapyramidal risk than metoclopramide"]
+            },
+            {
+              "name": "Mosapride",
+              "brand_examples": ["Mosapride", "Mosaflo", "Mosamil"],
+              "form": "Tablet (2.5 mg, 5 mg)",
+              "dosage": "5 mg three times daily before meals",
+              "use_case": "Functional dyspepsia; GERD (improves LOS tone and gastric emptying); postprandial fullness; widely used in India and Asia for functional GI disorders; highly selective 5-HT4 agonist with no D2 antagonism — no extrapyramidal or cardiac QT effects",
+              "mechanism": "Selective 5-HT4 (serotonin type 4) receptor agonist in GI tract — stimulates enteric nervous system to enhance acetylcholine release and GI peristalsis; accelerates gastric and intestinal transit; no cardiac or CNS effects",
+              "side_effects": ["Generally very well tolerated", "Mild diarrhoea", "Headache"],
+              "note": "Probably the safest prokinetic currently available for long-term use in functional dyspepsia"
+            },
+            {
+              "name": "Erythromycin (Low-Dose) — Motilin Receptor Agonist for Gastroparesis",
+              "brand_examples": ["Erythromycin — various"],
+              "form": "IV infusion; Tablet",
+              "dosage": "Gastroparesis (IV): 1-3 mg/kg IV every 8 hours (prokinetic dose — much lower than antibiotic dose); oral: 125-250 mg three times daily",
+              "use_case": "Severe gastroparesis — particularly useful IV for acute gastroparesis or before procedures; erythromycin at low (subantimicrobial) doses acts as a powerful motilin receptor agonist — stimulating strong gastric antral contractions and markedly accelerating gastric emptying",
+              "mechanism": "Motilin receptor agonist — mimics the hormone motilin which triggers powerful migrating motor complexes (MMC — gastric 'housekeeping' contractions) during fasting; dramatically accelerates gastric emptying",
+              "limitation": "Tachyphylaxis develops rapidly (receptor desensitisation) within days of continuous use — limiting long-term utility; useful short-term for acute gastroparesis or to facilitate gastric emptying for procedures"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-156",
+          "category_name": "Antiflatulents — Gas Relief",
+          "medicines": [
+            {
+              "name": "Simethicone (Dimethicone)",
+              "brand_examples": ["Dimethicone drops", "Phazyme", "Gas-X", "Infacol (paediatric)"],
+              "form": "Tablet, Drops, Suspension",
+              "dosage": "Adults: 40-80 mg after meals and at bedtime; Infants: 20-40 mg with each feeding",
+              "use_case": "Symptomatic relief of gas, bloating, and flatulence in dyspepsia and functional gut disorders; commonly included in combination antacid preparations in India; infant colic",
+              "mechanism": "Silicone polymer — surface tension reducer (anti-foaming agent); causes small gas bubbles in GI tract to coalesce into larger bubbles that can be expelled more easily; does NOT reduce gas production — only facilitates its expulsion",
+              "note": "Does not affect gas production or absorption — purely symptomatic gas-relief agent; safe in pregnancy and infants; no drug interactions"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-157",
+          "category_name": "Neuromodulators — Refractory Functional Dyspepsia",
+          "purpose": "Used for refractory functional dyspepsia not responding to acid suppression, H. pylori eradication, and prokinetics — targeting visceral hypersensitivity and gut-brain axis dysregulation through central and peripheral mechanisms. Small doses are used for their pain-modulating and GI effects — NOT for psychiatric indications (explain this clearly to patients).",
+          "medicines": [
+            {
+              "name": "Amitriptyline (Low-Dose TCA)",
+              "brand_examples": ["Tryptomer", "Saroten", "Elavil"],
+              "form": "Tablet (10 mg, 25 mg)",
+              "dosage": "Start: 10 mg at bedtime; titrate slowly every 2-4 weeks up to 25-50 mg at bedtime if needed; DO NOT use antidepressant doses (150+ mg) for dyspepsia",
+              "use_case": "Refractory functional dyspepsia — particularly epigastric pain syndrome (EPS) with visceral hypersensitivity; not responding to PPI or H. pylori eradication; evidence: ACTIGAST trial (Talley et al., BMJ 2015) — amitriptyline 50 mg significantly improved adequate relief in FD vs placebo (particularly in EPS subtype); also useful for nausea and sleep disturbance in FD",
+              "mechanism": "Tricyclic antidepressant — at LOW doses: blocks visceral afferent pain signalling (peripheral and central); 5-HT reuptake inhibition; anticholinergic effect reduces gastric secretion and slows transit (may help crampy pain); antihistaminic (sedating — beneficial at night for sleep disruption from pain)",
+              "side_effects": ["Sedation (take at bedtime)", "Dry mouth, constipation, urinary retention (anticholinergic)", "Cardiac arrhythmia risk at higher doses (QTc prolongation)", "Postural hypotension"],
+              "patient_explanation": "Explain explicitly: 'This medication is being used at a very low dose specifically to reduce the sensitivity of the nerves in your stomach that are over-signalling pain — not for depression. The dose is much lower than psychiatric doses.'"
+            },
+            {
+              "name": "Mirtazapine",
+              "brand_examples": ["Remeron", "Mirtaz", "Mirtin"],
+              "form": "Tablet (7.5 mg, 15 mg, 30 mg)",
+              "dosage": "7.5-15 mg at bedtime (start low; increase if needed)",
+              "use_case": "Functional dyspepsia with: significant nausea, weight loss, poor appetite, early satiety; mirtazapine is the only neuromodulator with evidence specifically for nausea, nausea-related weight loss, and impaired gastric accommodation in FD; also improves sleep (highly sedating); 5-HT3 antagonism (antiemetic effect); appetite stimulation",
+              "mechanism": "NaSSA (noradrenaline and specific serotonin antidepressant); 5-HT3 and 5-HT2 antagonist; H1 antagonist (sedation, appetite stimulation); alpha-2 antagonist; antiemetic, anxiolytic, orexigenic (appetite stimulant), antidepressant",
+              "side_effects": ["Significant sedation (take at bedtime; use as advantage for sleep)", "Weight gain and increased appetite (desired effect in weight-losing FD patients)", "Dry mouth"]
+            },
+            {
+              "name": "Buspirone",
+              "brand_examples": ["Buspar", "Buspimin", "Anxiset"],
+              "form": "Tablet (5 mg, 10 mg)",
+              "dosage": "5-10 mg three times daily",
+              "use_case": "Functional dyspepsia with impaired gastric accommodation — buspirone acts on gastric fundic 5-HT1A receptors promoting fundic relaxation (accommodation); evidence: RCT by Tack et al. (Clinical Gastroenterology and Hepatology 2012) — buspirone significantly improved meal-related symptoms (fullness, early satiety, nausea) vs placebo in FD",
+              "mechanism": "5-HT1A partial agonist — in the gastric fundus, 5-HT1A receptor activation promotes nitrergic-mediated fundic relaxation (accommodation to food); anxiolytic (serotonergic) at the CNS level",
+              "note": "Primarily used as anxiolytic in most markets; being repurposed for FD accommodation disorder; well tolerated; not sedating; no dependence potential"
+            },
+            {
+              "name": "Escitalopram / Low-dose SSRIs",
+              "brand_examples": ["Lexapro", "Cipralex", "Nexito"],
+              "dosage": "5-10 mg daily (low dose for FD — start at 5 mg)",
+              "use_case": "Functional dyspepsia with prominent anxiety or depression component; SSRIs may improve FD symptoms via central modulation of gut-brain axis; may help with co-morbid anxiety improving somatisation and amplification of GI symptoms",
+              "note": "Evidence for SSRIs specifically in FD is weaker than for TCAs; use when anxiety/depression is a prominent comorbidity"
+            }
+          ]
+        },
+        {
+          "category_id": "MED-CAT-158",
+          "category_name": "NSAID Gastroprotection — Prevention of NSAID-Induced Ulcer",
+          "purpose": "All patients requiring chronic NSAID therapy for conditions such as osteoarthritis, rheumatoid arthritis, ankylosing spondylitis, or chronic pain must have gastroprotection assessed — a critically important preventive measure particularly in India where NSAID use is extremely common and often without gastric protection.",
+          "risk_stratification": {
+            "high_risk": "Previous peptic ulcer or GI bleeding; age >65; high-dose NSAID; concurrent anticoagulant, corticosteroid, or antiplatelet; serious comorbidity — MUST have PPI",
+            "moderate_risk": "2+ risk factors — PPI recommended",
+            "low_risk": "No risk factors — PPI not mandatory but consider"
+          },
+          "medicines": [
+            {
+              "name": "PPI (Omeprazole, Pantoprazole) + NSAID combination",
+              "dosage": "Omeprazole 20 mg or Pantoprazole 20-40 mg once daily taken WITH ongoing NSAID",
+              "use_case": "Gastroprotection for all high-risk or moderate-risk NSAID users; reduces NSAID-induced peptic ulcer complications by ~75%",
+              "note": "Must be continued for AS LONG AS NSAID is continued; not just initial prescription"
+            },
+            {
+              "name": "Misoprostol (Prostaglandin E1 analogue)",
+              "brand_examples": ["Cytotec", "Misoprost"],
+              "dosage": "200 mcg four times daily with food",
+              "use_case": "NSAID gastroprotection; cytoprotective — replaces prostaglandins depleted by COX-1 inhibition; prevents NSAID-induced gastric and duodenal ulcers; equivalent efficacy to PPIs for gastroprotection",
+              "side_effects": ["Diarrhoea and abdominal cramps (most common — affects compliance)", "Uterotonic — ABSOLUTE CONTRAINDICATION in pregnancy (risk of miscarriage and preterm labour)"],
+              "note": "Poor tolerability from GI side effects; largely superseded by PPIs which are better tolerated and easier to prescribe"
+            },
+            {
+              "name": "COX-2 Selective NSAIDs (Celecoxib — Celebrex)",
+              "brand_examples": ["Celebrex", "Celoxx", "Xelex"],
+              "dosage": "100-200 mg once or twice daily",
+              "use_case": "Patients requiring NSAID therapy with high GI risk — COX-2 selective inhibition spares COX-1 (which protects gastric mucosa) — significantly less GI ulceration and bleeding than non-selective NSAIDs; cardiovascular safety similar to non-selective NSAIDs at equivalent doses",
+              "note": "Still requires PPI addition in very high GI risk patients (prior ulcer history, anticoagulant use); contraindicated in significant cardiac disease (all NSAIDs increase CV risk)"
+            }
+          ]
+        }
+      ]
+    },
+
+    "diet_and_nutrition": {
+      "overview": "Dietary management is foundational in dyspepsia — many patients achieve significant symptom improvement through dietary modifications alone, without requiring medication. However, dietary triggers are highly individual — what worsens symptoms in one patient may not affect another. The approach should be PERSONALISED and based on a careful symptom diary identifying individual triggers. In Indian dietary culture, specific foods, cooking methods, spice levels, eating patterns, and meal timing are all critical considerations. The gut-brain axis means that eating under stress, eating rapidly, and irregular meal patterns are as important as food choice.",
+      "dietary_principles": {
+        "meal_size_and_frequency": "MOST IMPORTANT dietary change — small, frequent meals (5-6 small meals per day instead of 2-3 large meals) dramatically reduces dyspepsia for most patients. Large meals distend the stomach, trigger the gastrocolic reflex, increase acid output, and overwhelm impaired gastric accommodation. Half-fill the stomach at each meal — the stomach should never feel completely full.",
+        "eating_speed": "Eat slowly and chew thoroughly — rapid eating leads to aerophagia (swallowing air), poor mechanical digestion, and overwhelms the stomach's grinding function; take at least 20 minutes per meal; put the fork down between bites",
+        "meal_timing": "Regular meal times — avoid skipping meals (an empty stomach produces acid that irritates the mucosa); last meal at least 2-3 hours before bedtime (prevents nocturnal acid reflux and gastroparesis-related symptoms); avoid eating at irregular or very late hours",
+        "posture_after_eating": "Remain upright for at least 1-2 hours after eating; avoid lying down immediately after meals (allows gravity to keep stomach contents down); sleeping position: elevate head of bed by 15-20 cm using bed blocks or use a foam wedge pillow (better than adding extra pillows — pillows collapse and fold the abdomen)"
+      },
+      "recommended_foods": [
+        {
+          "category": "BRAT-like Bland Diet During Symptom Flares",
+          "items": [
+            {
+              "food": "Plain white rice (soft-cooked)",
+              "benefit": "Easily digestible; low fat; minimal acid production; calming for inflamed gastric mucosa; easily tolerated during acute dyspepsia flares; rice water (kanji) soothes irritated stomach lining",
+              "frequency": "Main staple during flares; small portions every 3-4 hours"
+            },
+            {
+              "food": "Moong dal (Yellow split mung bean) — khichdi",
+              "benefit": "Most easily digestible legume; low in gas-producing oligosaccharides (unlike chana, rajma, urad dal); excellent protein without gas; anti-inflammatory properties; traditional Indian 'get well' food with very strong logic — combines easily digestible protein and carbohydrate in soft, non-irritating form; a small amount of ghee aids fat-soluble vitamin absorption and provides gut lining protection",
+              "frequency": "2-3 times daily during acute flares"
+            },
+            {
+              "food": "Banana (ripe)",
+              "benefit": "Natural antacid properties (contains pectin which thickens the mucous membrane layer in the stomach — providing a protective coating against acid); potassium; easily digestible; no gastric acid stimulation; particularly useful for dyspepsia and peptic ulcers",
+              "frequency": "1-2 ripe bananas daily"
+            },
+            {
+              "food": "Plain yogurt / Curd (fresh, room temperature)",
+              "benefit": "Probiotics (Lactobacillus acidophilus, L. bulgaricus) reduce H. pylori colonisation density and improve GI mucosal health; alkaline buffering reduces gastric acidity; easily digestible protein; lactic acid promotes mucosal healing; fresh curd (not sour) is particularly soothing; the cooling effect (sheetala guna in Ayurveda) is also relevant",
+              "frequency": "1-2 small bowls of fresh, unsweetened curd daily — not on empty stomach; at room temperature (cold curd may trigger GERD in sensitive individuals)"
+            },
+            {
+              "food": "Cooked or steamed vegetables (low-acid, non-gas-forming)",
+              "examples": "Lauki (bottle gourd), tinda (round gourd), turai (ridge gourd), carrots, sweet potato, pumpkin, beans (French beans — not rajma)",
+              "benefit": "Gentle on stomach; low acid, low gas; lauki is particularly recommended in Ayurveda for pitta (acidic) conditions — contains cooling properties, high water content, anti-inflammatory compounds; alkalinising",
+              "frequency": "Daily as vegetable component of meals"
+            }
+          ]
+        },
+        {
+          "category": "Herbal and Traditional Remedies with Scientific Evidence",
+          "rationale": "Several traditional Indian herbal remedies for 'gas and acidity' have legitimate pharmacological mechanisms supported by evidence; these are appropriate as adjuncts or first-line for mild-moderate dyspepsia",
+          "items": [
+            {
+              "food": "Ginger (Adrak — fresh or dry)",
+              "benefit": "6-gingerol and shogaols: (1) Prokinetic — accelerates gastric emptying (clinically comparable to metoclopramide in some studies); (2) Anti-nausea — 5-HT3 antagonism (same mechanism as ondansetron); (3) Anti-inflammatory — inhibits COX and 5-LOX; (4) H. pylori inhibition (in vitro); (5) Reduces postprandial fullness and early satiety in FD patients (clinical evidence). One of the most evidence-based herbal interventions for dyspepsia.",
+              "preparation": "Fresh ginger (½-1 inch piece) in 200 mL boiling water for 5-10 minutes; adrak chai (ginger tea); ginger powder capsules (500 mg-1 g twice daily); add to food during cooking",
+              "frequency": "1-3 cups of ginger tea daily; particularly effective 15-30 minutes before meals to stimulate gastric motility"
+            },
+            {
+              "food": "Ajwain (Carom Seeds — Trachyspermum ammi)",
+              "benefit": "Thymol (the active component of ajwain essential oil) — powerful antispasmodic, carminative (relieves gas), and digestive stimulant; reduces intestinal spasm; anti-H. pylori activity (thymol has bactericidal properties against H. pylori at high concentrations); widely used in traditional Indian medicine for indigestion, gas, bloating, and colic; one of the most evidence-supported traditional Indian digestive remedies",
+              "preparation": "½ teaspoon of ajwain seeds chewed raw or with black salt after meals (most traditional method); OR boiled in water to make ajwain water (ajwain ka pani); OR dry-roasted ajwain with rock salt",
+              "frequency": "After each main meal; ajwain water sip before meals as digestive stimulant"
+            },
+            {
+              "food": "Saunf (Fennel Seeds — Foeniculum vulgare)",
+              "benefit": "Anethole (main constituent of fennel essential oil) — antispasmodic (relaxes intestinal smooth muscle — relieves cramping and spasm); carminative (reduces gas production and facilitates expulsion); anti-inflammatory; mild acid-buffering; fennel reduces intestinal spasm and relieves bloating; widely available and culturally accepted in India (served after meals in restaurants)",
+              "preparation": "½ teaspoon of dry-roasted saunf after meals (extremely common Indian tradition — now supported by evidence); saunf tea (1 tsp saunf in boiling water, steeped 5-10 min); fennel seed decoction",
+              "frequency": "After each meal; particularly after heavy or spicy meals"
+            },
+            {
+              "food": "Jeera (Cumin Seeds — Cuminum cyminum) Water",
+              "benefit": "Active compounds: cuminaldehyde and cymene — stimulate salivary and digestive enzyme secretion; carminative (reduces gas); improves fat digestion (stimulates lipase enzyme secretion); anti-H. pylori activity in vitro; jeera water is one of India's most widely used home remedies for 'gas and stomach problems' — now with scientific backing",
+              "preparation": "1 teaspoon of jeera seeds boiled in 1 glass of water for 5-10 minutes; strain; sip warm throughout the day; alternatively soak jeera overnight and drink the soaking water in the morning",
+              "frequency": "1-2 glasses of jeera water daily; particularly effective in the morning on empty stomach and before meals"
+            },
+            {
+              "food": "Triphala (Ayurvedic formulation — Amla + Bibhitaki + Haritaki)",
+              "benefit": "Combination of three fruits: (1) Amla (Emblica officinalis): Vitamin C, antioxidant, gastroprotective, anti-H. pylori; (2) Bibhitaki (Terminalia bellirica): antispasmodic, laxative, anti-inflammatory; (3) Haritaki (Terminalia chebula): prokinetic (stimulates GI motility), anti-H. pylori, astringent. Evidence: triphala significantly reduces constipation and overall dyspeptic symptoms in clinical trials; improves gastric motility; reduces H. pylori density",
+              "preparation": "1-2 g Triphala powder (½ tsp) in warm water at bedtime; Triphala tablets available",
+              "frequency": "Once daily at bedtime",
+              "caution": "Mild laxative effect — start with ¼ tsp and increase gradually"
+            },
+            {
+              "food": "Coconut water",
+              "benefit": "Near-isotonic natural electrolyte solution; gentle on inflamed gastric mucosa; alkalinising effect on urine and mild gastric buffer; potassium, magnesium; reduces dehydration from vomiting; cooling and soothing; particularly useful when vomiting limits fluid intake",
+              "frequency": "1-2 glasses daily; helpful during acute dyspeptic episodes"
+            },
+            {
+              "food": "Licorice root (Mulethi — Glycyrrhiza glabra) — DGL form preferred",
+              "benefit": "Deglycyrrhizinated licorice (DGL) has been studied in peptic ulcer disease — stimulates mucus secretion in stomach (cytoprotective), anti-H. pylori activity (inhibits H. pylori urease), anti-inflammatory, promotes ulcer healing; evidence from multiple small RCTs showing DGL comparable to antacids for dyspepsia symptom relief",
+              "preparation": "DGL (deglycyrrhizinated licorice) tablets or chewable — standard extract (DGL removes glycyrrhizin which causes hypertension and fluid retention in whole licorice); chew before meals",
+              "frequency": "Before main meals as directed",
+              "caution": "Only use DGL form — whole licorice can cause hypertension and hypokalaemia from glycyrrhizin; DGL is safe"
+            }
+          ]
+        },
+        {
+          "category": "Foods and Drinks That Buffer and Soothe Gastric Acid",
+          "items": [
+            {
+              "food": "Milk (warm, low-fat)",
+              "benefit": "Initially buffers gastric acid (momentary relief from proteins and calcium); traditional Indian remedy for acidity; however: NOTE that milk protein and calcium subsequently STIMULATE gastric acid secretion (protein is a potent acid secretagogue) — providing only short-term relief followed by rebound acid; use in moderation for acute relief, not as a long-term strategy",
+              "note": "Cold milk is particularly popular in India for acidity; warm milk may be marginally more effective; very cold milk may worsen GERD by increasing LOS relaxation"
+            },
+            {
+              "food": "Papaya (Papita) — fresh, ripe",
+              "benefit": "Papain enzyme (proteolytic — helps digest proteins, reducing gastric workload); alkalinising; high water content; reduces postprandial discomfort; mild prokinetic effect in some studies; Vitamin C; gently soothing for inflamed gastric mucosa",
+              "frequency": "Daily as fruit after meals"
+            },
+            {
+              "food": "Aloe vera juice (fresh, inner gel — diluted)",
+              "benefit": "Anti-inflammatory polysaccharides (acemannan) — reduces gastric mucosal inflammation; anti-H. pylori activity in vitro; antacid-like buffering; promotes healing of eroded gastric mucosa; RCT: aloe vera syrup significantly reduced GERD symptoms; widely available in India",
+              "preparation": "30 mL fresh aloe vera inner leaf gel (avoid outer latex — laxative) diluted in 200 mL water; drink before meals",
+              "frequency": "1-2 times daily before meals",
+              "caution": "Use only inner gel (aloin in outer layer is a harsh laxative); do not use in pregnancy (uterotonic in large amounts)"
+            }
+          ]
+        }
+      ],
+      "foods_to_limit_or_avoid": [
+        {
+          "food": "Spicy Foods — Particularly Excess Chilli (Mirch)",
+          "reason": "Capsaicin (active compound in chillies) activates TRPV1 (transient receptor potential vanilloid 1) nociceptors in the gastric mucosa — directly stimulating pain signalling, increasing mucosal sensitivity, and worsening visceral hypersensitivity in FD; also stimulates gastric acid secretion; worsens GERD by relaxing lower oesophageal sphincter. However: capsaicin DESENSITISES TRPV1 with chronic regular exposure (explains why those accustomed to very spicy food tolerate it — they have 'tachyphylaxis' of TRPV1 receptors). For patients with dyspepsia: reduce chilli gradually; extreme avoidance may paradoxically increase TRPV1 sensitivity upon re-exposure.",
+          "recommendation": "Gradually reduce (not suddenly eliminate) chilli levels; use non-chilli spices (cumin, coriander, turmeric — anti-inflammatory) instead for flavour"
+        },
+        {
+          "food": "Fatty and Fried Foods (Tele Hua Khana)",
+          "reason": "Dietary fat is the most potent trigger of delayed gastric emptying (fat slows gastric emptying dramatically); high-fat foods also relax the lower oesophageal sphincter (LOS) causing GERD; fat stimulates cholecystokinin (CCK) release which inhibits gastric emptying; fatty meals trigger postprandial fullness, early satiety, and nausea; deep-fried foods (samosas, pakoras, bhature, puri) are the most common dyspepsia triggers in the Indian diet",
+          "recommendation": "Replace deep-frying with steaming, baking, or shallow frying in minimal oil; reduce ghee and butter in cooking; avoid heavy rich curries during flares"
+        },
+        {
+          "food": "Tea and Coffee (Chai aur Coffee) — Excessive Consumption",
+          "reason": "Caffeine: stimulates gastric acid secretion (parietal cell activation); relaxes lower oesophageal sphincter (worsens GERD); increases gastric motility (can worsen cramping); dehydrating (diuretic effect). Tannins in strong black tea: astringent, reduce digestive enzyme activity. Chai (Indian spiced tea with milk): the milk buffers some acidity and the spices (ginger — beneficial) modify effects; strong chai on empty stomach is a very common Indian dyspepsia trigger",
+          "recommendation": "Limit to 1-2 cups of tea/coffee per day; avoid on empty stomach; add milk; prefer weak chai with ginger; never drink strong black tea or espresso on empty stomach; switch to herbal teas (ginger, fennel, chamomile)"
+        },
+        {
+          "food": "Carbonated Drinks (Fizzy Drinks, Soft Drinks)",
+          "reason": "Carbon dioxide gas in fizzy drinks distends the stomach; increases intragastric pressure causing GERD; acid (phosphoric acid in cola; citric acid in lemonade) directly irritates oesophageal mucosa; high sugar content promotes osmotic gastric distension; the combination of acid + gas + sugar worsens dyspepsia significantly",
+          "recommendation": "Avoid carbonated beverages entirely during active dyspepsia; replace with plain water, coconut water, jeera water, or herbal tea"
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Direct gastric mucosal irritant (disrupts gastric mucosal barrier); stimulates gastric acid secretion; delays gastric emptying; relaxes lower oesophageal sphincter (causing GERD); worsens gastroparesis; promotes H. pylori virulence; impairs gastric mucosal healing; heavy alcohol use causes haemorrhagic gastritis and Mallory-Weiss tears (longitudinal mucosal tears at gastro-oesophageal junction from forceful vomiting after drinking)",
+          "recommendation": "Complete abstinence is ideal during active dyspepsia; during maintenance: limit to very moderate intake (if at all); always take with food; avoid on empty stomach"
+        },
+        {
+          "food": "Large, High-Fat Meals — Particularly Late at Night",
+          "reason": "Large meals overwhelm gastric capacity and motility; fat delays gastric emptying; late-night large meals result in full stomach during sleep (highest GERD risk); nocturnal acid exposure most damaging to oesophageal mucosa; late-night heavy Indian meals (biryani, dal makhani, butter chicken at 10 PM) are a common and important dyspepsia trigger",
+          "recommendation": "Dinner should be the lightest meal of the day; eat by 7-8 PM if possible; maximum 2-3 hours before bedtime; small, easily digestible dinner"
+        },
+        {
+          "food": "Raw Onions and Garlic (Raw form — not cooked)",
+          "reason": "Raw onions contain fructooligosaccharides (FOS) which are fermented by colonic bacteria producing gas; raw garlic and onion can directly irritate gastric mucosa in sensitive individuals; both relax the lower oesophageal sphincter; COOKED onion and garlic are generally well tolerated and have anti-inflammatory benefits (including anti-H. pylori for garlic)",
+          "recommendation": "Use cooked onion and garlic in food; avoid raw in salads during flares"
+        },
+        {
+          "food": "Certain Pulses and Legumes — Urad Dal, Rajma, Chole",
+          "reason": "Contain raffinose, stachyose, and verbascose (non-digestible oligosaccharides) — fermented by colonic bacteria producing copious gas (hydrogen, methane, CO2); urad dal (black lentil) is particularly gas-forming and is a common trigger of bloating and flatulence; rajma (kidney beans) and chole (chickpeas) also highly gas-forming",
+          "recommendation": "Soak overnight and discard soaking water before cooking (reduces oligosaccharide content by 50-70%); add ajwain or hing (asafoetida) during cooking (reduces gas production); replace with moong dal (lowest gas-producing legume) during flares; cook very well"
+        },
+        {
+          "food": "Eating Under Stress or While Rushing",
+          "reason": "Stress activates the hypothalamic-pituitary-adrenal (HPA) axis and sympathetic nervous system — directly impairs gastric accommodation, delays gastric emptying, increases visceral sensitivity, and reduces mucosal blood flow; eating rapidly increases aerophagia; stress eating promotes overeating; the gut-brain axis is bidirectional — psychological stress profoundly disrupts gastric function",
+          "recommendation": "Eat in a calm, relaxed environment; no screens during meals; sit for meals; mindful eating practices; even 2-3 slow deep breaths before eating activates the parasympathetic nervous system and improves digestive function"
+        }
+      ],
+      "sample_meal_plan": {
+        "principle": "Small, frequent, low-fat, easily digestible meals; no skipping meals; last meal 2-3 hours before bed; ajwain, saunf, ginger incorporated",
+        "early_morning_6_to_7_am": "Warm water with honey and lemon (activates digestive system gently); 1 glass jeera water (soaked overnight); 1 amla (Vitamin C, antioxidant)",
+        "breakfast_8_am": "Small bowl of soft oats/daliya with milk OR moong dal khichdi (soft); weak ginger chai with milk; 1 ripe banana; eat slowly in seated position",
+        "mid_morning_10_am": "Saunf water (fennel tea); small quantity of dry roasted chivda or 2-3 plain biscuits; ajwain water",
+        "lunch_12_to_1_pm": "Small portion plain rice + moong dal + lauki or tori sabzi (low-gas vegetable, minimal oil and spice) + small bowl fresh curd; chew saunf (fennel) after meal; walk slowly for 5-10 minutes after eating",
+        "afternoon_3_to_4_pm": "Small portion of papaya or ripe banana; ginger tea or coconut water",
+        "dinner_6_to_7_pm": "Small bowl of khichdi or plain rice + dal + steamed vegetable + minimal spice and oil; avoid heavy creamy/fatty/spicy preparation; chew ajwain after meal",
+        "bedtime_routine": "No food after 8-9 PM; warm milk with turmeric (haldi doodh) if hungry; head elevation while sleeping"
+      }
+    },
+
+    "lifestyle_management": {
+      "weight_management": {
+        "overview": "Obesity is the single most modifiable lifestyle risk factor for GERD and dyspepsia. Abdominal adiposity increases intra-abdominal pressure — mechanically pushing gastric contents upward against the lower oesophageal sphincter; obesity is associated with delayed gastric emptying, impaired gastric accommodation, hiatus hernia (5× more common in obese patients), and increased acid exposure time.",
+        "targets": "Target BMI 18.5-25 kg/m2; waist circumference <90 cm (men), <80 cm (women — Indian-specific cutoffs); even 5-10% weight loss in obese dyspepsia patients significantly reduces GERD severity and frequency",
+        "strategies": "Aerobic exercise; portion control; low-fat, high-fibre diet; behavioural weight management programme"
+      },
+      "smoking_cessation": {
+        "reason": "Smoking worsens dyspepsia through multiple mechanisms: nicotine relaxes the lower oesophageal sphincter (promotes GERD); smoking reduces bicarbonate secretion in the duodenum (impairs duodenal defence); impairs mucosal healing; increases gastric acid output; worsens H. pylori infection severity and reduces eradication success rates; smoking is a significant risk factor for peptic ulcer disease and gastric cancer",
+        "cessation_strategies": "Varenicline (Champix) first-line; NRT patches + gum; avoid bupropion in patients with active peptic ulcer (rare seizure risk); smoking cessation improves dyspepsia significantly within weeks of quitting"
+      },
+      "stress_management_and_gut_brain_axis": {
+        "overview": "The gut-brain axis is central to functional dyspepsia pathophysiology — psychological stress is a known trigger and perpetuating factor for FD. The vagal nerve provides bidirectional communication between the brain and enteric nervous system; CRF (corticotropin-releasing factor) secreted during stress directly delays gastric emptying and increases visceral hypersensitivity. Addressing psychological factors is essential for refractory FD.",
+        "strategies": [
+          "Cognitive Behavioural Therapy (CBT) — the most evidence-based psychological treatment for functional GI disorders; CBT addresses catastrophising, symptom hypervigilance, and maladaptive illness behaviours; available individually or in group format; 8-12 sessions typically recommended",
+          "Gut-directed hypnotherapy — very strong evidence for IBS and emerging evidence for FD; hypnosis specific to gut function reduces visceral hypersensitivity and improves gastric accommodation; multiple RCTs support benefit",
+          "Mindfulness-Based Stress Reduction (MBSR) — reduces stress-related gastric hyperacidity; improves gut-brain signalling; 8-week programme",
+          "Progressive muscle relaxation and diaphragmatic breathing — directly activates the parasympathetic nervous system, suppressing stress-induced gastric hypersecretion and motility dysfunction",
+          "Regular aerobic exercise — reduces anxiety and depression (gut-brain); improves gastric motility and transit; reduces bloating; even 20-30 minutes of brisk walking improves GI symptoms",
+          "Yoga and pranayama — Specific yoga poses (Pawanmuktasana — wind-releasing pose; Uttanpadasana; Vajrasana — sitting on heels after meals: a traditional Indian practice shown to improve gastric emptying and reduce postprandial discomfort; Balasana — child's pose; gentle abdominal twists) promote GI motility and reduce gas accumulation; Pranayama (diaphragmatic breathing) reduces sympathetic tone",
+          "Biofeedback therapy — for supragastric belching (a specific belching disorder requiring behavioural retraining); reduces aerophagia"
+        ]
+      },
+      "positional_and_lifestyle_modifications_for_gerd": [
+        "Elevate head of bed by 15-20 cm using bed blocks or foam wedge — reduces nocturnal oesophageal acid exposure; more effective than using extra pillows (which flex the abdomen increasing intra-abdominal pressure)",
+        "Sleep on LEFT side — reduces GERD (anatomy: lying on left side positions the gastro-oesophageal junction above the gastric pool of acid — reduces acid reflux into oesophagus); lying on right side worsens GERD",
+        "Remain upright for minimum 1-2 hours after meals; avoid lying down; a gentle walk (10-15 minutes) after meals improves gastric emptying and reduces reflux",
+        "Avoid tight clothing and tight waistbands — increases intra-abdominal pressure worsening GERD",
+        "Avoid exercise immediately after large meals — intense exercise diverts blood away from GI tract and increases intra-abdominal pressure; exercise ≥2 hours after meals"
+      ],
+      "h_pylori_hygiene_prevention": [
+        "Clean water — drink only filtered, boiled, or bottled water in areas with uncertain water quality; H. pylori is waterborne",
+        "Proper handwashing — soap and water for ≥20 seconds before eating and after toilet; H. pylori spreads fecal-orally",
+        "Food hygiene — wash fruits and vegetables; avoid street food prepared with uncertain water quality during outbreaks",
+        "Avoid sharing utensils, drinking vessels, or pre-chewing food for children (common in some Indian households) — H. pylori oral-oral transmission",
+        "Test and treat family members if one member has H. pylori and peptic ulcer disease — H. pylori clusters in families"
+      ]
+    },
+
+    "dyspepsia_monitoring_plan": {
+      "initial_management": {
+        "green_zone": {
+          "status": "Mild Dyspepsia — No Alarm Features — Home/OTC Management",
+          "criteria": "Symptoms <3 times per week; no alarm features; <6 months duration in age <55; identifiable dietary triggers; responds to antacids; no weight loss",
+          "action": "4-week trial of lifestyle modification + OTC antacids or H2 blocker; food and symptom diary; reduce NSAIDs if in use; reassess at 4 weeks — if not improving, see GP"
+        },
+        "yellow_zone": {
+          "status": "Moderate Dyspepsia — GP Review — Test and Treat",
+          "criteria": "Symptoms ≥3 days per week; not responding to OTC management; significantly affecting quality of life; no alarm features; age <55",
+          "action": "GP assessment; H. pylori urea breath test or stool antigen test; if H. pylori positive — eradicate (14-day triple or quadruple therapy); if H. pylori negative — empirical PPI 4-8 weeks (omeprazole 20 mg once daily); review medications (NSAID use); referral if no response after 8 weeks"
+        },
+        "red_zone": {
+          "status": "ALARM FEATURES — URGENT 2-WEEK-WAIT REFERRAL FOR ENDOSCOPY",
+          "criteria": [
+            "Unintentional weight loss >3 kg",
+            "Progressive dysphagia (difficulty swallowing)",
+            "Persistent vomiting",
+            "Iron deficiency anaemia",
+            "Haematemesis (vomiting blood) — EMERGENCY; call 102/112",
+            "Melaena (black tarry stools) — EMERGENCY; call 102/112",
+            "Palpable epigastric mass",
+            "Age ≥55 years with new onset dyspepsia",
+            "Family history of gastric cancer",
+            "Sudden severe epigastric pain with rigid abdomen — possible perforation — EMERGENCY SURGERY"
+          ],
+          "action": "For haematemesis/melaena/perforation: CALL EMERGENCY SERVICES IMMEDIATELY (102/112). For other alarm features: urgent gastroenterology referral for 2-week-wait upper GI endoscopy; blood tests (FBC, LFTs, ferritin); CT imaging if mass suspected"
+        }
+      },
+      "follow_up_monitoring": {
+        "h_pylori_eradication": "Confirm eradication with UBT or stool antigen at minimum 4 weeks after completing antibiotics (2 weeks off PPIs); if eradication confirmed and symptoms resolved — no further routine investigation required; if symptoms persist — functional dyspepsia management",
+        "ppi_therapy_review": "Reassess at 4-8 weeks; if responding, consider step-down or PPI holiday; do not continue PPIs indefinitely without documented indication; annual review of PPI prescription",
+        "long_term_monitoring": "Patients with confirmed peptic ulcer: endoscopy to confirm healing (especially gastric ulcer — mandatory biopsy and healing confirmation at 6-8 weeks); patients with severe oesophagitis or Barrett's oesophagus — surveillance endoscopy as per gastroenterology guidelines"
+      }
+    },
+
+    "complications": [
+      {
+        "complication": "Peptic Ulcer Disease (Gastric or Duodenal Ulcer)",
+        "description": "The most important complication of untreated H. pylori gastritis and unprotected NSAID use. Full-thickness mucosal defect penetrating through the muscularis mucosae. Can cause: chronic pain; GI haemorrhage (20% of peptic ulcers); perforation (5%); gastric outlet obstruction (pyloric stenosis — 2%).",
+        "severity": "Moderate to Severe (pain, anaemia); Life-threatening (haemorrhage, perforation)",
+        "management": "H. pylori eradication (heals 95% of DU without recurrence); PPI 4-8 weeks; stop NSAIDs; endoscopy to confirm healing of gastric ulcers (mandatory biopsies)"
+      },
+      {
+        "complication": "Upper GI Haemorrhage (Haematemesis and Melaena)",
+        "description": "Life-threatening complication of peptic ulcer disease — rupture of a blood vessel in the ulcer base. Haematemesis (vomiting fresh blood or coffee-ground material) and melaena (black, tarry, foul-smelling stools from digested blood — at least 50-100 mL of blood in upper GI tract). Mortality 10% overall; higher in elderly, comorbid patients, and large bleeds.",
+        "severity": "LIFE-THREATENING — medical emergency",
+        "management": "EMERGENCY — call 102/112; IV access × 2; IV fluid resuscitation; urgent upper GI endoscopy (OGD) for diagnosis and haemostasis (injection, thermal coagulation, haemostatic clips, Hemospray); IV PPI (pantoprazole 80 mg bolus + 8 mg/hour infusion for 72 hours post-haemostasis); H. pylori eradication; stop all NSAIDs; blood transfusion; surgical or radiological (angio-embolisation) intervention for failed endoscopic haemostasis"
+      },
+      {
+        "complication": "Peptic Ulcer Perforation",
+        "description": "Full-thickness perforation of the gastric or duodenal wall — allows GI contents to spill into the peritoneal cavity causing generalised peritonitis. Presents as SUDDEN, SEVERE, 'worst ever' epigastric pain — the patient describes it as 'like something tearing' or 'like being stabbed'; the abdomen becomes board-like rigid (peritonism). Perforation is a surgical emergency — mortality 10-15% if treated within 12 hours, rising rapidly with delay.",
+        "severity": "LIFE-THREATENING SURGICAL EMERGENCY",
+        "management": "EMERGENCY surgery; nil-by-mouth; IV antibiotics; IV fluids; erect chest X-ray or CT scan (free air under diaphragm = perforation); emergency laparoscopic or open repair (Graham patch — omentum patching the perforation hole)"
+      },
+      {
+        "complication": "Gastric Cancer (Adenocarcinoma)",
+        "description": "The most feared long-term complication of untreated chronic H. pylori infection and the final common pathway of the Correa cascade (H. pylori gastritis → chronic atrophic gastritis → intestinal metaplasia → dysplasia → gastric adenocarcinoma). Gastric cancer is the 5th most common cancer globally and 3rd leading cause of cancer death. H. pylori causes 89% of non-cardia gastric cancers. In India: gastric cancer is more common in southern India (especially Kerala, Karnataka) and northeastern states. Early gastric cancer is curable; advanced gastric cancer has poor prognosis.",
+        "severity": "Life-threatening",
+        "prevention": "H. pylori eradication significantly reduces gastric cancer risk (particularly in pre-malignant gastritis stages); benefits greatest when eradicated before atrophic gastritis develops; mass eradication programmes are being debated as public health intervention in high-prevalence countries"
+      },
+      {
+        "complication": "Barrett's Oesophagus",
+        "description": "Metaplastic change in the distal oesophageal epithelium from normal squamous to specialised intestinal-type columnar epithelium (goblet cells) — a consequence of chronic gastro-oesophageal reflux (GERD). Barrett's oesophagus is a precancerous condition — 0.3-0.5% per year risk of progression to oesophageal adenocarcinoma. Detected on endoscopy and confirmed by biopsy. Requires endoscopic surveillance every 3-5 years (longer interval for non-dysplastic Barrett's); 2-yearly for low-grade dysplasia; immediate treatment for high-grade dysplasia.",
+        "severity": "Moderate (premalignant) — requiring surveillance; High (oesophageal adenocarcinoma) — if untreated",
+        "management": "PPI therapy (reduces acid exposure — may slow progression); endoscopic surveillance; radiofrequency ablation (RFA) for dysplastic Barrett's — highly effective (>90% complete eradication of dysplasia)"
+      },
+      {
+        "complication": "Nutritional Deficiencies from Long-Term PPI Use",
+        "description": "Chronic PPI therapy (>12 months) significantly impairs absorption of several micronutrients: (1) Vitamin B12 — gastric acid is required to liberate B12 from food proteins; PPI use causes food-cobalamin malabsorption (crystalline cyanocobalamin in supplements is still absorbed — dietary B12 is the problem); B12 deficiency causes megaloblastic anaemia, peripheral neuropathy, and subacute combined degeneration of the spinal cord. (2) Magnesium — severe hypomagnesaemia with PPI use (rare but potentially fatal arrhythmia); check Mg in patients on long-term PPIs developing tetany, seizures, or arrhythmia. (3) Iron — gastric acid required for ferric-to-ferrous conversion (absorption-ready form). (4) Calcium — reduced calcium absorption increases fracture risk with long-term PPI.",
+        "severity": "Mild to Moderate (usually) — serious if neurological B12 deficiency missed",
+        "management": "Annual FBC and B12 in long-term PPI users (>12 months); B12 supplementation if deficient (cyanocobalamin 1000 mcg/day oral is effective even without intrinsic factor); check Mg in those on PPIs with muscle cramps or arrhythmia"
+      },
+      {
+        "complication": "Psychological Burden and Quality of Life Impact",
+        "description": "Chronic dyspepsia — particularly functional dyspepsia — significantly impairs quality of life (comparable to other chronic conditions like inflammatory bowel disease and diabetes in some measures). Anxiety and depression are both causes and consequences of FD — the gut-brain axis is bidirectional. The impaired quality of life manifests as: reduced ability to socialise (food-centered social activity avoidance); work impairment (from pain and fatigue); sleep disruption; sexual dysfunction; and significant healthcare utilisation. Untreated psychological comorbidity perpetuates the chronic pain cycle.",
+        "severity": "Moderate — significantly affects wellbeing",
+        "management": "Screen for depression and anxiety (PHQ-9, GAD-7); CBT; gut-directed hypnotherapy; low-dose neuromodulators; gastroenterology-psychology liaison"
+      }
+    ],
+
+    "special_populations": {
+      "dyspepsia_in_pregnancy": {
+        "key_points": [
+          "Dyspepsia and heartburn are EXTREMELY common in pregnancy — affecting 60-80% of pregnant women; the most frequent GI complaint in pregnancy",
+          "Causes: progesterone (relaxes lower oesophageal sphincter — direct pharmacological mechanism); relaxin (loosens GI smooth muscle); growing uterus displacing and compressing the stomach (particularly third trimester); delayed gastric emptying from progesterone; elevated oestrogen worsening nausea",
+          "Management — pregnancy-safe first: small, frequent meals; avoid trigger foods; head elevation; left lateral decubitus position; weight gain within recommended limits",
+          "Safe antacids in pregnancy: calcium carbonate (Tums — also provides calcium supplementation); magnesium hydroxide (after first trimester — avoid large amounts near delivery); aluminium hydroxide (short-term OK, avoid long-term — Al toxicity concerns)",
+          "H2 blockers in pregnancy: Famotidine — limited safety data but widely used in second/third trimester; preferred over PPIs if antacids insufficient",
+          "PPIs in pregnancy: omeprazole and esomeprazole — generally considered safe based on large registry data; use only if H2 blockers insufficient and symptoms severe; avoid in first trimester if possible (limited data)",
+          "AVOID in pregnancy: misoprostol (abortifacient); bismuth subsalicylate; domperidone (limited data); metoclopramide (first trimester — limit to short-term use for severe nausea/vomiting; Category B in USA)",
+          "H. pylori in pregnancy: test and treat can be delayed until after delivery — H. pylori eradication antibiotics (clarithromycin, tetracycline) are not recommended in pregnancy; bismuth contraindicated; amoxicillin is safe in pregnancy but not used in single agent treatment; DEFER H. pylori eradication until postpartum",
+          "Hyperemesis gravidarum: severe, intractable nausea and vomiting causing >5% weight loss, ketonaemia, and dehydration in pregnancy; requires hospitalisation; IV ondansetron; IV fluids; metoclopramide; thiamine supplementation"
+        ]
+      },
+      "dyspepsia_in_elderly": {
+        "key_points": [
+          "Prevalence of organic dyspepsia (peptic ulcer, gastric cancer) is significantly higher in the elderly — lower threshold for investigation",
+          "NSAID use is more common in elderly (osteoarthritis, cardiovascular aspirin) — NSAID-induced gastropathy is the leading cause of dyspepsia in elderly; ALWAYS check NSAID use; add PPI if NSAIDs necessary",
+          "Age ≥55 years with NEW onset dyspepsia is an ALARM FEATURE — mandatory endoscopy",
+          "Alarm features may be subtle or absent in elderly patients with gastric cancer (anorexia, anaemia, weight loss); maintain high index of suspicion",
+          "Polypharmacy in elderly: multiple medications causing dyspepsia simultaneously (NSAIDs + corticosteroids + bisphosphonates + iron + metformin + antibiotics); medication review is diagnostic and therapeutic",
+          "H. pylori eradication in elderly: same regimens, same outcomes; important to prevent peptic ulcer complications; check antibiotic interactions with other medications",
+          "PPI use in elderly: be aware of side effects (C. difficile, fractures, B12 deficiency, hypomagnesaemia) — particularly important with polypharmacy; review indication at every prescription",
+          "Dysphagia in elderly: new dysphagia is NEVER a normal feature of ageing — always investigate (Zenker's diverticulum, oesophageal web, cancer, motility disorder)"
+        ]
+      },
+      "dyspepsia_in_diabetics": {
+        "key_points": [
+          "Gastroparesis is very common in longstanding type 1 and type 2 diabetes (30-50%) — a specific and underdiagnosed complication of diabetic autonomic neuropathy affecting the vagus nerve",
+          "Gastroparesis presents as: postprandial nausea, vomiting of undigested food hours after eating, severe early satiety, weight loss, and erratic blood glucose control (food absorption is unpredictable causing glycaemic swings)",
+          "Diagnosis: 4-hour solid gastric emptying scintigraphy — the gold standard; recommended in all diabetics with unexplained vomiting or difficult glycaemic control",
+          "Management: optimise glycaemia (acute hyperglycaemia directly inhibits gastric motility); dietary modification (low-fat, small, frequent liquid/semi-liquid meals); prokinetics (metoclopramide IV for acute; domperidone or mosapride oral for maintenance); erythromycin short-term; consider gastric electrical stimulation (Enterra device) for severe refractory gastroparesis",
+          "SGLT2 inhibitors (dapagliflozin, empagliflozin) — recently recognised to delay gastric emptying; consider contribution to gastroparesis symptoms; GLP-1 agonists (semaglutide, liraglutide) also significantly delay gastric emptying",
+          "Metformin GI side effects: nausea, diarrhoea, metallic taste — very common on initiation; switch to extended-release (XR) formulation to reduce GI intolerance significantly; take with food"
+        ]
+      },
+      "dyspepsia_in_nsaid_users": {
+        "key_points": [
+          "15-30% of chronic NSAID users develop peptic ulcers; 1-2% per year experience serious complications (haemorrhage, perforation)",
+          "Risk stratification essential: HIGH RISK (must have PPI gastroprotection): age >65; prior peptic ulcer or GI bleed; high-dose NSAID; concurrent corticosteroids or anticoagulants; significant comorbidity",
+          "Test for H. pylori before starting long-term NSAID therapy — H. pylori + NSAID combination has multiplicative (not additive) risk for peptic ulcer complications; eradicate H. pylori before continuing NSAID",
+          "Lowest effective NSAID dose for shortest duration; regular reassessment of NSAID need",
+          "COX-2 selective NSAID (celecoxib) reduces GI risk by 50% vs non-selective NSAIDs; still requires PPI in very high-risk patients",
+          "Topical NSAIDs (diclofenac gel) for localised pain — significantly lower systemic GI risk than oral NSAIDs",
+          "Paracetamol: preferred over NSAIDs for mild-moderate pain in patients at GI risk — no direct gastric mucosal toxicity"
+        ]
+      }
+    },
+
+    "vaccinations_recommended": [
+      {
+        "vaccine": "Hepatitis A Vaccine",
+        "frequency": "2-dose series (0 and 6-18 months); lifelong protection after both doses",
+        "reason": "Hepatitis A causes acute hepatitis with jaundice and elevated liver enzymes that mimics severe dyspepsia in the pre-icteric phase. More importantly, patients with pre-existing chronic liver disease (cirrhosis, hepatitis B/C) who develop superimposed HAV have very high risk of fulminant hepatic failure. All patients with chronic dyspepsia from any cause who have chronic liver disease or are immunocompromised should be vaccinated. Also important for food handlers (dyspepsia is a common occupational health issue in food service workers).",
+        "recommendation": "Vaccinate all patients with chronic liver disease; food handlers; international travellers"
+      },
+      {
+        "vaccine": "Influenza Vaccine (Annual)",
+        "frequency": "Annually",
+        "reason": "Influenza infection frequently causes GI symptoms (nausea, vomiting, abdominal pain) that exacerbate underlying dyspepsia; influenza illness triggers NSAID and aspirin use for myalgia and fever — worsening drug-induced gastropathy; annual influenza vaccination reduces illness burden and reduces the need for pain-related NSAID use in dyspepsia patients",
+        "recommendation": "Annual vaccination for all patients with significant comorbidities or in whom influenza-related NSAID use would be harmful"
+      },
+      {
+        "vaccine": "COVID-19 Vaccine",
+        "frequency": "Primary series and boosters per national schedule",
+        "reason": "COVID-19 causes significant upper GI symptoms (nausea, vomiting, abdominal pain, diarrhoea) in 30-40% of infected individuals and can exacerbate chronic dyspepsia. Post-COVID GI symptoms (functional dyspepsia, IBS-like symptoms) are recognised in Long COVID syndrome. COVID-19 infection triggers increased NSAID and analgesic use, worsening drug-induced gastropathy in susceptible patients.",
+        "recommendation": "Follow national vaccination schedule; important for those with co-existing GI comorbidities"
+      },
+      {
+        "vaccine": "Rotavirus Vaccine (Infants)",
+        "frequency": "2-dose (Rotarix) or 3-dose (RotaTeq) oral series from 6 weeks of age",
+        "reason": "Rotavirus gastroenteritis in infancy can trigger post-infectious functional dyspepsia and IBS in childhood and adulthood. Post-infectious FD after childhood viral gastroenteritis has been documented — early prevention of severe rotavirus may reduce lifetime functional GI disorder burden.",
+        "recommendation": "Universal infant vaccination per national immunisation schedule"
+      }
+    ],
+
+    "when_to_see_doctor": [
+      "Dyspepsia not improving after 4 weeks of lifestyle changes and OTC antacids — GP review required",
+      "Any alarm feature present — same-day or urgent medical evaluation: unexplained weight loss, dysphagia, persistent vomiting, iron deficiency anaemia, blood in stools",
+      "Haematemesis (vomiting blood, even a small amount) — EMERGENCY; call 102/112 immediately",
+      "Black tarry stools (melaena) — possible upper GI bleeding — EMERGENCY",
+      "New or changed dyspepsia in anyone over 55 years — endoscopy required; do not wait",
+      "Dyspepsia persisting despite 8 weeks of PPI treatment — referral for endoscopy and gastroenterology evaluation",
+      "Family history of gastric or oesophageal cancer with new dyspepsia symptoms at any age",
+      "Severe or rapidly worsening epigastric pain — possible peptic ulcer, pancreatitis, or biliary colic — same-day evaluation",
+      "Sudden severe 'worst ever' epigastric pain with abdomen becoming rigid — possible peptic ulcer perforation — EMERGENCY surgery",
+      "Diabetic patient with worsening nausea and vomiting of undigested food — possible gastroparesis — needs gastric emptying study",
+      "Dyspepsia starting or worsening after beginning a new medication (especially NSAIDs, aspirin, steroids, bisphosphonates, metformin, iron) — discuss medication change with prescriber",
+      "Dyspepsia in a patient with known chronic liver disease (hepatitis B/C, cirrhosis) — any new GI symptoms can indicate complications; do not delay",
+      "Confirmed H. pylori infection — needs eradication therapy and test of cure; do not leave untreated",
+      "Pregnant woman with severe, persistent vomiting affecting nutrition — hyperemesis gravidarum — GP or obstetric team same day"
+    ],
+
+    "emergency_signs": [
+      "Haematemesis — vomiting fresh red blood or dark coffee-ground material — upper GI haemorrhage from peptic ulcer or varix — CALL EMERGENCY SERVICES (102/112) IMMEDIATELY; IV access, blood transfusion, urgent endoscopy required",
+      "Melaena — black, tarry, foul-smelling stools — upper GI bleeding — EMERGENCY; even in the absence of vomiting blood — call 102/112",
+      "Sudden severe epigastric pain — the worst pain of their life; described as 'tearing', 'knife-like', or 'explosion' — with abdominal rigidity (board-like abdomen) — POSSIBLE PEPTIC ULCER PERFORATION — EMERGENCY SURGERY; call 102/112",
+      "Severe vomiting leading to severe dehydration — rapid heart rate (>120 bpm), dry mouth, not passing urine, extreme weakness — EMERGENCY IV fluids needed",
+      "Confusion or altered consciousness in a patient with known chronic liver disease who presents with worsening GI symptoms — possible hepatic encephalopathy from GI haemorrhage precipitating decompensation — EMERGENCY",
+      "Iron deficiency anaemia in a patient over 55 years with dyspepsia — possible gastric cancer — urgent endoscopy within 2 weeks",
+      "Progressive dysphagia (worsening difficulty swallowing) over weeks — possible oesophageal or gastric cancer — urgent 2-week referral for endoscopy",
+      "Rapidly deteriorating general condition with epigastric pain, fever, and rigidity — possible peritonitis from perforated ulcer — EMERGENCY",
+      "Severe constant epigastric pain radiating to the back with elevated serum lipase — possible acute pancreatitis — EMERGENCY hospitalisation"
+    ],
+
+    "frequently_asked_questions": [
+      {
+        "question": "What is the difference between indigestion, acidity, gas problem, and GERD?",
+        "answer": "These terms are often used interchangeably in India but have distinct medical meanings: 'Indigestion' (dyspepsia) is an umbrella term for upper abdominal discomfort — including fullness, early satiety, pain, bloating, and nausea — originating from the stomach and duodenum. 'Acidity' colloquially refers to the burning sensation from gastric acid — this can be from GERD (reflux into the oesophagus) or from gastric acid irritating the stomach lining. 'Gas problem' (vayu problem) describes bloating, excessive belching, and flatulence from gas in the upper GI tract — often from swallowed air (aerophagia) or fermentation. 'GERD' (Gastro-oesophageal Reflux Disease) is specifically the condition where acid from the stomach flows backward into the oesophagus — causing heartburn (burning behind the breastbone) and acid regurgitation (sour taste in the mouth). In practice, these conditions frequently overlap and a patient may have elements of all four — careful history-taking helps distinguish the dominant problem."
+      },
+      {
+        "question": "What is H. pylori and why is it so important in India?",
+        "answer": "Helicobacter pylori (H. pylori) is a bacterium that lives in the stomach lining — infecting approximately 70-80% of people in India, usually acquired in childhood through contaminated water and food. It causes chronic inflammation of the stomach (gastritis) in everyone infected, though most people have no symptoms. H. pylori is critically important because it is: the primary cause of peptic ulcers (stomach and duodenal ulcers); a WHO Group 1 carcinogen — the most important preventable cause of gastric cancer; and a major contributor to iron deficiency anaemia. The good news: it can be completely detected with a simple 15-minute urea breath test and cured with a 10-14 day course of two antibiotics and a PPI (acid-reducing medication). After H. pylori eradication, peptic ulcers heal without recurrence in 95% of patients, and gastric cancer risk significantly decreases."
+      },
+      {
+        "question": "Should I take a PPI (acid tablet like omeprazole or pantoprazole) every day for my acidity?",
+        "answer": "PPIs (proton pump inhibitors like omeprazole, pantoprazole, esomeprazole) are excellent for treating acid-related conditions — but only when genuinely needed, at the lowest effective dose, for the shortest appropriate duration. Unfortunately, in India, PPIs are among the most overused and over-prescribed medications — many people take them daily for years without any documented indication. Long-term daily PPI use is not harmless — it can cause: Vitamin B12 deficiency (leading to anaemia and nerve damage), magnesium deficiency (muscle cramps, arrhythmia), increased risk of C. difficile diarrhoea, reduced calcium absorption (increased fracture risk), and possible kidney and cognitive effects. PPIs are appropriate for: active peptic ulcer (4-8 weeks); GERD with oesophagitis (ongoing); H. pylori eradication (as part of the regimen); NSAID gastroprotection (as long as NSAID continues). If you have been on a PPI for more than 3-6 months without a documented diagnosis, ask your doctor whether you still need it — in many cases, the PPI can be safely stepped down or stopped."
+      },
+      {
+        "question": "My endoscopy was completely normal but I still have stomach pain and fullness. Why?",
+        "answer": "You most likely have functional dyspepsia (FD) — a genuine disorder where the stomach is hypersensitive and has abnormal motility (the stomach muscle doesn't relax properly when food arrives or empties too slowly), even though the stomach looks structurally normal on endoscopy. Think of it like chronic back pain — a normal X-ray doesn't mean there's no pain. Functional dyspepsia is the most common cause of dyspepsia — affecting 70% of all dyspepsia patients. A normal endoscopy is actually reassuring — it means there's no cancer, ulcer, or serious structural disease. FD is best managed with: identifying and avoiding your personal food triggers (food diary); eating small, frequent meals; managing stress (the gut-brain connection is very real — psychological stress directly affects stomach sensitivity and emptying); prokinetic medications (domperidone, itopride, mosapride) if fullness and early satiety predominate; and sometimes low-dose neuromodulators (amitriptyline, mirtazapine) for refractory pain."
+      },
+      {
+        "question": "Are home remedies like jeera water, ajwain, saunf, and adrak chai actually helpful for indigestion?",
+        "answer": "Yes — many traditional Indian home remedies for indigestion have well-documented pharmacological mechanisms. Ginger (adrak): contains 6-gingerol which is a natural 5-HT3 antagonist (antiemetic) and prokinetic — clinically shown to accelerate gastric emptying and reduce nausea; one of the most evidence-supported natural remedies for indigestion globally. Ajwain (carom seeds): contains thymol which is a powerful antispasmodic and carminative — relieves intestinal cramps and gas; multiple scientific studies confirm its efficacy. Saunf (fennel): contains anethole — antispasmodic, carminative, and gas-relieving; reduces intestinal smooth muscle spasm. Jeera (cumin) water: stimulates digestive enzyme secretion and has carminative properties. These remedies are not just cultural traditions — they have real pharmacological activity. For mild dyspepsia, trying these natural approaches first (along with dietary modification) is entirely reasonable before resorting to medication. They can also be used alongside prescribed medicines."
+      },
+      {
+        "question": "When should I be worried about my indigestion — when does it become serious?",
+        "answer": "Most indigestion is benign — it is the alarm features (red flags) that distinguish potentially serious causes. ALWAYS see a doctor urgently if you experience: (1) Vomiting blood (haematemesis) or noticing black tarry stools (melaena) — signs of GI bleeding; (2) Unexplained weight loss of >3 kg without trying — possible cancer or serious disease; (3) Increasing difficulty swallowing (dysphagia) — possible oesophageal or stomach cancer or stricture; (4) Persistent vomiting that doesn't resolve; (5) Iron deficiency anaemia without clear explanation; (6) You are over 55 years old and symptoms are new or have changed recently; (7) A family member had stomach or oesophageal cancer. Additionally: sudden severe 'worst ever' stomach pain with a rigid, board-like abdomen = possible perforated ulcer — CALL 102/112 immediately. Routine indigestion without these features is almost never serious — but if symptoms persist beyond 4-8 weeks without responding to basic treatment, a GP review is appropriate."
+      },
+      {
+        "question": "What is the best way to sit or sleep to reduce my acid reflux at night?",
+        "answer": "Several positional strategies significantly reduce nocturnal acid reflux: (1) HEAD OF BED ELEVATION: Place bed blocks (15-20 cm) under the legs at the head of your bed — or use a foam wedge pillow beneath the mattress. This keeps the oesophagus above the stomach level using gravity to keep acid down. Simply adding extra pillows is NOT effective — it bends you at the waist, actually increasing stomach pressure; (2) SLEEP ON YOUR LEFT SIDE: Anatomy matters — on the left side, the gastro-oesophageal junction is positioned above the gastric acid pool; on the right side, the acid pool is right against the junction. Multiple studies confirm left-side sleeping significantly reduces acid reflux time and oesophageal acid exposure. (3) Do NOT eat within 2-3 hours of bedtime — your stomach needs to be at least partially empty before lying down. (4) Avoid tight pyjamas or trousers that constrict the abdomen."
+      }
+    ]
+  }
+}
