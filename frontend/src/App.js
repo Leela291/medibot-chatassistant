@@ -301,19 +301,44 @@ function App() {
         ]);
         setLoading(false);
       } else {
+        const isBMI = /\d+(\.\d+)?\s*kg.*\d+(\.\d+)?\s*cm/i.test(text);
         const res = await fetch(`${API}/chat`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             message: text,
             session_id: sessionId,
-            stream: true,
+            stream: !isBMI,
           }),
           signal: abortControllerRef.current.signal,
         });
 
         setLoading(false);
 
+        if (isBMI) {
+          const data = await res.json();
+
+          if (data.session_id) {
+            setSessionId(data.session_id);
+          }
+
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "bot",
+              text: data.answer || "No response received.",
+              time: formatTime(new Date()),
+              sources: data.sources,
+              isEmergency: data.is_emergency,
+              id: Date.now(),
+            },
+          ]);
+
+          fetchSessions();
+          setLoading(false);
+          return;
+        }
+        
         const botMsgId = Date.now();
         const initialBotMsg = {
           role: "bot",

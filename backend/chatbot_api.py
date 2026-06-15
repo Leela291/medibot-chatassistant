@@ -92,6 +92,37 @@ def chat():
     
     import re
 
+    bmi_pattern = r"(\d+(?:\.\d+)?)\s*kg.*?(\d+(?:\.\d+)?)\s*cm"
+    
+    match = re.search(bmi_pattern, message.lower())
+
+    if match:
+        weight = float(match.group(1))
+        height = float(match.group(2))
+
+        result = calculate_bmi(weight, height)
+
+        answer = f"""
+        # BMI Result
+        Weight: {weight} kg
+        Height: {height} cm
+
+        BMI: {result['bmi']}
+        Category: {result['category']}
+
+        Reference:
+        - Underweight: Below 18.5
+        - Normal Weight: 18.5 - 24.9
+        - Overweight: 25.0 - 29.9
+        - Obese: 30 or above
+        """
+
+        session.memory.add_user(message)
+        session.memory.add_assistant(answer)
+        session_manager.save_session(session)
+
+        return jsonify({"answer": answer, "session_id": session.session_id, "sources": ["BMI Calculator"], "is_emergency": False})
+    
     if "bmi" in message.lower():
         return jsonify({
             "answer": (
@@ -103,28 +134,7 @@ def chat():
             "sources": ["BMI Calculator"],
             "is_emergency": False
         })
-
-    bmi_pattern = r"(\d+(?:\.\d+)?)\s*kg.*?(\d+(?:\.\d+)?)\s*cm"
-
-    match = re.search(bmi_pattern, message.lower())
-
-    if match:
-        weight = float(match.group(1))
-        height = float(match.group(2))
-
-        result = calculate_bmi(weight, height)
-
-        answer = (
-            f"Your BMI is {result['bmi']}.\n"
-            f"Category: {result['category']}"
-        )
-
-        session.memory.add_user(message)
-        session.memory.add_assistant(answer)
-        session_manager.save_session(session)
-
-        return jsonify({"answer": answer, "session_id": session.session_id, "sources": ["BMI Calculator"], "is_emergency": False})
-
+    
     # 2. Optimized Generation Routing
     if use_rag:
         if fda_context:
