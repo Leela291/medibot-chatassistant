@@ -16,7 +16,7 @@ function App() {
   const [messages, setMessages] = useState([
     {
       role: "bot",
-      text: "Hello! I'm **MedoAir** — your AI-powered clinical assistant.\n\nI can answer medical inquiries, explain drugs, analyze lab results, and provide research insights from official clinical databases.\n\nYou can also **upload patient records** (PDF, images, CSV) and I'll analyze them for you.",
+      text: "Hi, I'm MediBot.\nHow are you feeling today?\n\nYou can describe your symptoms, ask health-related questions, upload a medical report, or search for nearby hospitals, clinics, labs, and pharmacies.\n\n How can I assist you?\n",
       time: formatTime(new Date()),
     },
   ]);
@@ -25,17 +25,11 @@ function App() {
   const [sessionId, setSessionId] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [uploadedFile, setUploadedFile] = useState(null);
-  const [dragOver, setDragOver] = useState(false);
   const [speakingMessageId, setSpeakingMessageId] = useState(null);
   const [sessionsList, setSessionsList] = useState([]);
   const [sessionToDelete, setSessionToDelete] = useState(null);
   const [isListening, setIsListening] = useState(false);
   const [isSessionsOpen, setIsSessionsOpen] = useState(true);
-  const [isToolsOpen, setIsToolsOpen] = useState(true);
-  const [isTopicsOpen, setIsTopicsOpen] = useState(true);
-  const [isUploadOpen, setIsUploadOpen] = useState(true);
-  const [bmiWeight, setBmiWeight] = useState("");
-  const [bmiHeight, setBmiHeight] = useState("");
   const [locating, setLocating] = useState(false);
 
   const bottomRef = useRef(null);
@@ -55,17 +49,17 @@ function App() {
       }
       const osc = sharedAudioCtx.createOscillator();
       const gainNode = sharedAudioCtx.createGain();
-      
+
       osc.connect(gainNode);
       gainNode.connect(sharedAudioCtx.destination);
-      
+
       osc.type = "sine";
       osc.frequency.setValueAtTime(600, sharedAudioCtx.currentTime);
       osc.frequency.exponentialRampToValueAtTime(1200, sharedAudioCtx.currentTime + 0.05);
-      
+
       gainNode.gain.setValueAtTime(0.04, sharedAudioCtx.currentTime);
       gainNode.gain.exponentialRampToValueAtTime(0.001, sharedAudioCtx.currentTime + 0.08);
-      
+
       osc.start(sharedAudioCtx.currentTime);
       osc.stop(sharedAudioCtx.currentTime + 0.08);
     } catch (e) {
@@ -203,7 +197,7 @@ function App() {
     utterance.rate = 1.4;
     utterance.pitch = 1.0;
 
-    utterance.onend  = () => setSpeakingMessageId(null);
+    utterance.onend = () => setSpeakingMessageId(null);
     utterance.onerror = () => setSpeakingMessageId(null);
 
     synth.speak(utterance);
@@ -258,7 +252,7 @@ function App() {
       file: uploadedFile ? uploadedFile.name : null,
       image:
         uploadedFile &&
-        uploadedFile.type.startsWith("image/")
+          uploadedFile.type.startsWith("image/")
           ? URL.createObjectURL(uploadedFile)
           : null,
     };
@@ -338,7 +332,7 @@ function App() {
           setLoading(false);
           return;
         }
-        
+
         const botMsgId = Date.now();
         const initialBotMsg = {
           role: "bot",
@@ -400,9 +394,9 @@ function App() {
           }
         }
       }
-      
+
       fetchSessions();
-      
+
     } catch (err) {
       setLoading(false);
       if (err.name === "AbortError") {
@@ -546,52 +540,6 @@ function App() {
     setUploadedFile(null);
   };
 
-  /* ── File handling ── */
-  const handleFileSelect = (e) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      const validTypes = [
-        "application/pdf",
-        "image/png",
-        "image/jpeg",
-        "image/jpg",
-        "text/csv",
-        "application/vnd.ms-excel",
-        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-      ];
-      if (validTypes.includes(file.type) || file.name.endsWith(".csv")) {
-        setUploadedFile(file);
-      } else {
-        alert("Please upload PDF, Image (PNG/JPG), or CSV/Excel files only.");
-      }
-    }
-    e.target.value = "";
-  };
-
-  const handleDrop = (e) => {
-    e.preventDefault();
-    setDragOver(false);
-
-    const file = e.dataTransfer.files?.[0];
-    if (!file) return;
-
-    const validTypes = [
-      "application/pdf",
-      "image/png",
-      "image/jpeg",
-      "image/jpg",
-      "text/csv",
-      "application/vnd.ms-excel",
-      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    ];
-
-    if (validTypes.includes(file.type) || file.name.match(/\.(csv|xls|xlsx)$/i)) {
-      setUploadedFile(file);
-    } else {
-      alert("Please upload PDF, Image (PNG/JPG), or CSV/Excel files only.");
-    }
-  };
-
   /* ── Render markdown-lite and extract Danger Level Banners ── */
   const extractDangerLevel = (text) => {
     if (!text) return { cleanText: "", level: null };
@@ -641,22 +589,22 @@ function App() {
         <div className="sidebar-header">
           <div className="logo-section">
             <div className="logo-icon">
-                <img src={logo} alt="MedoAir Logo" className="logo-image" />
+              <img src={logo} alt="MedoAir Logo" className="logo-image" />
             </div>
             <div>
               <h1 className="logo-text">MedoAir</h1>
               <span className="logo-sub">AI Medical Assistant</span>
             </div>
           </div>
-          <button 
-            className="sidebar-close-btn" 
-            onClick={() => { 
-              playClickSound(); 
-              setSidebarOpen(false); 
+          <button
+            className="sidebar-close-btn"
+            onClick={() => {
+              playClickSound();
+              setSidebarOpen(false);
             }}
             title="Close Sidebar"
           >
-            ᯓ➤
+            🗙
           </button>
         </div>
 
@@ -667,21 +615,30 @@ function App() {
           New Consultation
         </button>
 
+        <button
+          className="new-chat-btn location-tool-btn"
+          onClick={findNearbyMedicalFacilities}
+          disabled={locating}
+          title="Allow location to find nearby medical facilities"
+        >
+          {locating ? "Finding..." : "Nearby Care"}
+        </button>
+
         {/* ── Consultation History list ── */}
         <div className="sidebar-section history-section">
           <div className="section-header-clickable" onClick={() => setIsSessionsOpen(!isSessionsOpen)}>
             <h3 className="section-title">Consultation Sessions</h3>
-            <svg 
-              className={`chevron-icon ${isSessionsOpen ? 'open' : ''}`} 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
+            <svg
+              className={`chevron-icon ${isSessionsOpen ? 'open' : ''}`}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
               strokeWidth="2"
             >
               <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          
+
           <div className={`collapsible-content ${isSessionsOpen ? 'expanded' : 'collapsed'}`}>
             <div className="collapsible-inner">
               <div className="session-history-list">
@@ -701,9 +658,9 @@ function App() {
                       </div>
                       <button
                         className="delete-session-btn"
-                        onClick={(e) => { 
-                          e.stopPropagation(); 
-                          playClickSound(); 
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          playClickSound();
                           setSessionToDelete(s.session_id); // This triggers the modal
                         }}
                         title="Delete conversation"
@@ -713,158 +670,6 @@ function App() {
                     </div>
                   ))
                 )}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* ── Tools (Sidebar) ── */}
-        <div className="sidebar-section">
-          <div className="section-header-clickable" onClick={() => setIsToolsOpen(!isToolsOpen)}>
-            <h3 className="section-title">Tools</h3>
-            <svg 
-              className={`chevron-icon ${isToolsOpen ? 'open' : ''}`} 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2"
-            >
-              <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
-
-          <div className={`collapsible-content ${isToolsOpen ? 'expanded' : 'collapsed'}`}>
-            <div className="collapsible-inner">
-              <div style={{ display: 'flex', gap: '8px', paddingBottom: '8px', flexDirection: 'column' }}>
-                <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
-                  <input
-                    type="number"
-                    placeholder="Weight (kg)"
-                    value={bmiWeight}
-                    onChange={(e) => setBmiWeight(e.target.value)}
-                    style={{ padding: "6px" }}
-                  />
-                  <input
-                    type="number"
-                    placeholder="Height (cm)"
-                    value={bmiHeight}
-                    onChange={(e) => setBmiHeight(e.target.value)}
-                    style={{ padding: "6px" }}
-                  />
-                  <button
-                    className="new-chat-btn"
-                    style={{ margin: 0, padding: "8px", fontSize: "12px" }}
-                    onClick={() => {
-                      if (!bmiWeight || !bmiHeight) {
-                        alert("Please enter weight and height");
-                        return;
-                      }
-                      sendMessage(`${bmiWeight} kg ${bmiHeight} cm Calculate BMI`);
-                    }}
-                  >
-                    Calculate BMI
-                  </button>
-                </div>
-                <button
-                  className="new-chat-btn location-tool-btn"
-                  onClick={findNearbyMedicalFacilities}
-                  disabled={locating}
-                  title="Allow location to find nearby medical facilities"
-                >
-                  {locating ? "Finding..." : "Nearby Care"}
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* ── Quick Topics (Sidebar) ── */}
-        <div className="sidebar-section">
-          <div className="section-header-clickable" onClick={() => setIsTopicsOpen(!isTopicsOpen)}>
-            <h3 className="section-title">Quick Topics</h3>
-            <svg 
-              className={`chevron-icon ${isTopicsOpen ? 'open' : ''}`} 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2"
-            >
-              <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
-
-          <div className={`collapsible-content ${isTopicsOpen ? 'expanded' : 'collapsed'}`}>
-            <div className="collapsible-inner">
-              <div className="topics-slider">
-                {topics.map((t) => (
-                  <div key={t.label} className="topic-btn" style={{ border: `1px solid ${t.color}` }}>
-                    <div className="topic-icon" style={{ background: `${t.color}20`, color: t.color }}>
-                      {t.icon}
-                    </div>
-                    <span className="topic-label">{t.label}</span>
-                    <div className="topic-actions">
-                      {quickActions.map((act) => (
-                        <button
-                          key={act.label}
-                          className="quick-action-btn"
-                          onClick={(e) => {
-                            e.stopPropagation(); 
-                            playClickSound();
-                            setInput(act.query(t.label));
-                            inputRef.current?.focus();
-                          }}
-                        >
-                          {act.label}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* ── Upload Records (Sidebar) ── */}
-        <div className="sidebar-section">
-          <div className="section-header-clickable" onClick={() => setIsUploadOpen(!isUploadOpen)}>
-            <h3 className="section-title">Upload Records</h3>
-            <svg 
-              className={`chevron-icon ${isUploadOpen ? 'open' : ''}`} 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2"
-            >
-              <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
-
-          <div className={`collapsible-content ${isUploadOpen ? 'expanded' : 'collapsed'}`}>
-            <div className="collapsible-inner">
-              <div
-                className={`upload-zone ${dragOver ? "drag-over" : ""}`}
-                style={{ marginBottom: '8px' }}
-                onDragOver={(e) => {
-                  e.preventDefault();
-                  setDragOver(true);
-                }}
-                onDragLeave={() => setDragOver(false)}
-                onDrop={handleDrop}
-                onClick={() => { playClickSound(); fileInputRef.current?.click(); }}
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="32" height="32">
-                  <path d="M12 16V4m0 0L8 8m4-4l4 4M4 14v4a2 2 0 002 2h12a2 2 0 002-2v-4" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <span>Drop files/pics or click</span>
-                <span className="upload-hint">PDF, Images, CSV, Excel</span>
-                <input
-                  ref={fileInputRef}
-                  type="file"
-                  accept=".pdf,.png,.jpg,.jpeg,.csv,.xls,.xlsx"
-                  onChange={handleFileSelect}
-                  hidden
-                />
               </div>
             </div>
           </div>
@@ -942,7 +747,7 @@ function App() {
                         />
                       </div>
                     )}
-                    
+
                     {m.file && (
                       <div className="file-badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14">
@@ -1007,15 +812,15 @@ function App() {
                         <>
                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="13" height="13">
                             <polygon points="11,5 6,9 2,9 2,15 6,15 11,19" />
-                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" strokeLinecap="round"/>
-                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" strokeLinecap="round"/>
+                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" strokeLinecap="round" />
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" strokeLinecap="round" />
                           </svg>
                           Read aloud
                         </>
                       )}
                     </button>
                   )}
-                  
+
                   <span className="message-time">{m.time}</span>
                 </div>
                 {m.role === "user" && (
@@ -1093,11 +898,11 @@ function App() {
             </div>
             <button
               className="remove-file-btn"
-              onClick={() => { 
-                playClickSound(); 
-                setUploadedFile(null); 
+              onClick={() => {
+                playClickSound();
+                setUploadedFile(null);
                 if (fileInputRef.current) {
-                  fileInputRef.current.value = ""; 
+                  fileInputRef.current.value = "";
                 }
               }}
             >
@@ -1172,7 +977,7 @@ function App() {
           </div>
         </div>
       </main>
-      
+
       {/* ── Custom Delete Confirmation Modal ── */}
       {sessionToDelete && (
         <div className="custom-modal-overlay">
@@ -1180,14 +985,14 @@ function App() {
             <h3>Delete Consultation?</h3>
             <p>Are you sure you want to permanently delete this history? This action cannot be undone.</p>
             <div className="modal-actions">
-              <button 
-                className="modal-btn cancel" 
+              <button
+                className="modal-btn cancel"
                 onClick={() => { playClickSound(); setSessionToDelete(null); }}
               >
                 Cancel
               </button>
-              <button 
-                className="modal-btn delete" 
+              <button
+                className="modal-btn delete"
                 onClick={() => { playClickSound(); confirmDeleteSession(); }}
               >
                 Yes, Delete
