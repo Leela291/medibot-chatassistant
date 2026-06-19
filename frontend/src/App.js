@@ -540,6 +540,20 @@ function App() {
     setUploadedFile(null);
   };
 
+    /* ── File handling ── */
+  const handleFileSelect = (e) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const validTypes = ["application/pdf", "image/png", "image/jpeg", "image/jpg", "text/csv", "application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"];
+      if (validTypes.includes(file.type) || file.name.endsWith(".csv")) {
+        setUploadedFile(file);
+      } else {
+        alert("Please upload PDF, Image (PNG/JPG), or CSV/Excel files only.");
+      }
+    }
+    e.target.value = "";
+  };
+
   /* ── Render markdown-lite and extract Danger Level Banners ── */
   const extractDangerLevel = (text) => {
     if (!text) return { cleanText: "", level: null };
@@ -615,12 +629,11 @@ function App() {
           New Consultation
         </button>
 
-        <button
-          className="new-chat-btn location-tool-btn"
-          onClick={findNearbyMedicalFacilities}
-          disabled={locating}
-          title="Allow location to find nearby medical facilities"
-        >
+        <button className="new-chat-btn location-tool-btn" onClick={findNearbyMedicalFacilities} disabled={locating} title="Allow location to find nearby medical facilities">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="15" height="15">
+            <path d="M12 21s7-4.4 7-11a7 7 0 10-14 0c0 6.6 7 11 7 11z" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
           {locating ? "Finding..." : "Nearby Care"}
         </button>
 
@@ -884,6 +897,7 @@ function App() {
         </div>
 
         {/* Uploaded file preview */}
+        <input ref={fileInputRef} type="file" accept=".pdf,.png,.jpg,.jpeg,.csv,.xls,.xlsx" onChange={handleFileSelect} hidden />
         {uploadedFile && (
           <div className="file-preview-bar">
             <div className="file-preview-info">
